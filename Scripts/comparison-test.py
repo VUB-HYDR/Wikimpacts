@@ -4,7 +4,7 @@ if __name__ == "__main__":
     """ Comparison test. Usage: python comparison-test.py """
 
     v = {"Event_Type": "Drought",
-         "Event_Name": "Don",
+         "Event_Name": None,
          "Insured_Damage_Units": "EUR",
          "Total_Damage_Units": "EUR",
          "Location": "Mariehamn&Åland",
@@ -45,7 +45,29 @@ if __name__ == "__main__":
          "Insured_Damage_Inflation_Adjusted": False,
          "Total_Damage_Inflation_Adjusted": False}
 
+    weights = {
+         "Event_Type": 0,
+         "Event_Name": 1,
+         "Insured_Damage_Units": 1,
+         "Total_Damage_Units": 0,
+         "Location": 1,
+         "Single_Date": 0,
+         "Start_Date": 0.5,
+         "End_Date": 0.5,
+         "Total_Deaths": 1,
+         "Num_Injured": 1,
+         "Displaced_People": 0.3,
+         "Num_Homeless": 0,
+         "Total_Affected": 0,
+         "Insured_Damage": 1,
+         "Insured_Damage_Inflation_Adjusted_Year": 0,
+         "Total_Damage": 0,
+         "Total_Damage_Inflation_Adjusted_Year": 0,
+         "Buildings_Damaged": 1,
+         "Insured_Damage_Inflation_Adjusted": 0,
+         "Total_Damage_Inflation_Adjusted": 0}
+
     comp = comparer.Comparer()
     print("Individual scores:")
     for p in comp.all(v, w).items(): print(p)
-    print("Average score:\n", comp.averaged(v, w))
+    print("Weighted score:\n", comp.weighted(v, w, weights))
