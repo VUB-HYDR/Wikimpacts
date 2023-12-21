@@ -11,7 +11,7 @@ class Comparer():
     def string(self, v, w):
         """ Compare strings. Return 0 if identical, 1 otherwise. """
         if v == None or w == None: return None
-        return 1-int(self.norm.string(v) == self.norm.string(w))
+        return 1 - int(self.norm.string(v) == self.norm.string(w))
 
     def integer(self, v, w):
         """ Compare integers. Note: assumes non-negative input. """
@@ -20,7 +20,7 @@ class Comparer():
         return 0.0 if v+w == 0 else abs(v-w)/(v+w)
 
     def boolean(self, v, w):
-        """ Compare booleans. Returns 0 if equal, 0 otherwise. """
+        """ Compare booleans. Returns 0 if equal, 1 otherwise. """
         if v == None or w == None: return None
         return int(not (self.norm.boolean(v) == self.norm.boolean(w)))
 
@@ -29,12 +29,12 @@ class Comparer():
             Note: ordering is not taken into consideration. """
         if v == None or w == None: return None
         v, w = set(self.norm.sequence(v)), set(self.norm.sequence(w))
-        return 1.0-len(v.intersection(w))/len(v.union(w))
+        return 1.0 - len(v.intersection(w))/len(v.union(w))
 
     def date(self, v, w):
         """ Compare dates. Returns 0 if identical, 1 othewise. """
         if v == None or w == None: return None
-        return 1-int(self.norm.date(v) == self.norm.date(w))
+        return 1 - int(self.norm.date(v) == self.norm.date(w))
 
     def all(self, v, w):
         """ Compare all fields. """
@@ -69,10 +69,17 @@ class Comparer():
         for k in ["Insured_Damage_Inflation_Adjusted",
                   "Total_Damage_Inflation_Adjusted"]:
             score[k] = self.boolean(v[k], w[k])
-
+        # Return score dictionary
         return score
 
     def averaged(self, v, w):
-        """ Average score of all field scores. """
+        """ Return fraction of null comparisons (Nones) and mean of remaining scores. """
         u = [s for s in self.all(v, w).values() if s != None]
-        return sum(u)/len(u)
+        return 1.0 - len(u)/len(v), sum(u)/len(u)
+
+    def weighted(self, v, w, weights):
+        """ Return fraction of null comparisons (Nones) and weighted mean of remaining scores.
+            Items with weight 0 are ignored. """
+        p = dict([(k, s) for (k, s) in self.all(v, w).items() if weights[k] != 0])
+        u = [weights[k] * s for (k, s) in p.items() if s != None]
+        return 1.0 - len(u)/len(p) if len(p) != 0 else None, sum(u)/len(u) if len(u) != 0 else None
