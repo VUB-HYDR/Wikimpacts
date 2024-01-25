@@ -1,5 +1,6 @@
 import re
 import dateparser
+from text_to_num import text2num
 
 class Normaliser():
     """ Normalisation module """
@@ -12,10 +13,12 @@ class Normaliser():
     def integer(self, v):
         """ Normalise integer. Integer inputs are returned as is, floats are rounded to integers,
             and string inputs are converted to integers. Ill-defined inputs are returned
-            as None. Note: Spelled out numerals, such as "Thousand", are considered ill-defined.
-            Examples: 100 -> 100, "100" -> 100, 10.7 => 11, "10 000" -> None, "Ten" -> None. """
+            as None. Examples: 100 -> 100, "100" -> 100, 10.7 => 11, "10 000" -> None,
+            "Ten" -> 10, "two billion" -> 2000000000. """
         try: return round(float(v))
-        except ValueError: return None
+        except ValueError:
+            try: return text2num(v, lang="en", relaxed=True)
+            except ValueError: return None
 
     def boolean(self, v):
         """ Normalise boolean value. Return None if ill-defined.
