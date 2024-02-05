@@ -6,7 +6,7 @@ if __name__ == "__main__":
     v = {"Event_Type": "Drought",
          "Event_Name": None,
          "Insured_Damage_Units": "EUR",
-         "Total_Damage_Units": "EUR",
+         "Total_Damage_Units": None,
          "Location": "Mariehamn&Åland",
          "Single_Date": None,
          "Start_Date": "2022-10-12",
@@ -27,7 +27,7 @@ if __name__ == "__main__":
     w = {"Event_Type": "Windstorm",
          "Event_Name": "Wanda",
          "Insured_Damage_Units": "USD",
-         "Total_Damage_Units": "USD",
+         "Total_Damage_Units": None,
          "Location": "Eckerö&Åland",
          "Single_Date": None,
          "Start_Date": "2012-10-14",
@@ -49,7 +49,7 @@ if __name__ == "__main__":
          "Event_Type": 0,
          "Event_Name": 1,
          "Insured_Damage_Units": 1,
-         "Total_Damage_Units": 0,
+         "Total_Damage_Units": 1,
          "Location": 1,
          "Single_Date": 0,
          "Start_Date": 0.5,
@@ -67,7 +67,12 @@ if __name__ == "__main__":
          "Insured_Damage_Inflation_Adjusted": 0,
          "Total_Damage_Inflation_Adjusted": 0}
 
-    comp = comparer.Comparer()
+    null_penalty = 1
+
+    comp = comparer.Comparer(null_penalty)
     print("Individual scores:")
     for p in comp.all(v, w).items(): print(p)
     print("Weighted score:\n", comp.weighted(v, w, weights))
+    p, r = comp.events([v, w], [w, w, w], weights)
+    print("Precision:\n", p)
+    print("Recall:\n", r)
