@@ -18,6 +18,7 @@ class Comparer():
 
     def integer(self, v, w):
         """ Compare integers. Note: assumes non-negative input. """
+        # TODO: validate input
         if v == None and w == None: return None
         if v == None and w != None or v != None and w == None: return self.null_penalty
         v, w = self.norm.integer(v), self.norm.integer(w)
@@ -32,11 +33,16 @@ class Comparer():
     def sequence(self, v, w):
         """ Compare sequences. Returns Jaccard distance between sets of elements in sequences.
             Note: ordering is not taken into consideration. """
+        # TODO: for location, use GIS distance instead for sublocations
         if v == None and w == None: return None
         if v == None and w != None or v != None and w == None: return self.null_penalty
         v, w = set(self.norm.sequence(v)), set(self.norm.sequence(w))
         return 1.0 - len(v.intersection(w))/len(v.union(w))
 
+    # TODO: for countries, exact match, possibly with the help of a library
+    # like this one: https://pypi.org/project/pycountry/ (see fuzzy country search, could
+    # replace having to normalize or to use jaccard distance)
+    
     def date(self, v, w):
         """ Compare dates. Returns 0 if identical, 1 othewise. """
         if v == None and w == None: return None
