@@ -6,12 +6,15 @@ CREATE TABLE Events (
     Main_Event TEXT NOT NULL, /* COMMENT 'Categorical', */
     Perils OBJECT, /* COMMENT 'Array', */
     Location OBJECT, /* COMMENT 'Array', */
+    Single_Date DATE,
     Single_Date_Day INTEGER CHECK (Single_Date_Day <= 31),
     Single_Date_Month INTEGER CHECK (Single_Date_Month <= 12),
     Single_Date_Year INTEGER CHECK (length(Single_Date_Year) = 4),
+    Start_Date DATE,
     Start_Date_Day INTEGER CHECK (Start_Date_Day <= 31),
     Start_Date_Month INTEGER CHECK (Start_Date_Month <= 12),
     Start_Date_Year INTEGER CHECK (length(Start_Date_Year) = 4),
+    End_Date DATE,
     End_Date_Day INTEGER CHECK (End_Date_Day <= 31),
     End_Date_Month INTEGER CHECK (End_Date_Month <= 12),
     End_Date_Year INTEGER CHECK (length(End_Date_Year) = 4),
@@ -38,6 +41,7 @@ CREATE TABLE Specific_Instance_Per_Country_Death (
     Country TEXT NOT NULL, /* COMMENT 'Country Code', */
     Location_Death TEXT,
     Location_GCS OBJECT, /* COMMENT 'GCS', */
+    Time_Death DATE,
     Time_Death_Day INTEGER CHECK (Time_Death_Day <= 31),
     Time_Death_Month INTEGER CHECK (Time_Death_Month <= 12),
     Time_Death_Year INTEGER CHECK (length(Time_Death_Year) = 4),
@@ -50,6 +54,7 @@ CREATE TABLE Specific_Instance_Per_Country_Injuries (
     Country TEXT NOT NULL, /* COMMENT 'Country Code', */
     Location_Injuries TEXT,
     Location_GCS OBJECT, /* COMMENT 'GCS', */
+    Time_Injuries DATE,
     Time_Injuries_Day INTEGER CHECK (Time_Injuries_Day <= 31),
     Time_Injuries_Month INTEGER CHECK (Time_Injuries_Month <= 12),
     Time_Injuries_Year INTEGER CHECK (length(Time_Injuries_Year) = 4),
@@ -62,6 +67,7 @@ CREATE TABLE Specific_Instance_Per_Country_Displacement (
     Country TEXT NOT NULL, /* COMMENT 'Country Code', */
     Location_Displace TEXT,
     Location_GCS OBJECT, /* COMMENT 'GCS', */
+    Time_Displaced DATE,
     Time_Displaced_Day INTEGER CHECK (Time_Displaced_Day <= 31),
     Time_Displaced_Month INTEGER CHECK (Time_Displaced_Month <= 12),
     Time_Displaced_Year INTEGER CHECK (length(Time_Displaced_Year) = 4),
@@ -74,6 +80,7 @@ CREATE TABLE Specific_Instance_Per_Country_Homelessness (
     Country TEXT NOT NULL, /* COMMENT 'Country Code', */
     Location_Homeless TEXT,
     Location_GCS OBJECT, /* COMMENT 'GCS', */
+    Time_Homeless DATE,
     Time_Homeless_Day INTEGER CHECK (Time_Homeless_Day <= 31),
     Time_Homeless_Month INTEGER CHECK (Time_Homeless_Month <= 12),
     Time_Homeless_Year INTEGER CHECK (length(Time_Homeless_Year) = 4),
@@ -112,6 +119,7 @@ CREATE TABLE Specific_Instance_Per_Country_Building_Damage (
     Country TEXT NOT NULL, /* COMMENT 'Country Code', */
     Location_Building TEXT,
     Location_GCS OBJECT, /* COMMENT 'GCS', */
+    Time_Building DATE,
     Time_Building_Day INTEGER CHECK (Time_Building_Day <= 31),
     Time_Building_Month INTEGER CHECK (Time_Building_Month <= 12),
     Time_Building_Year INTEGER CHECK (length(Time_Building_Year) = 4),
