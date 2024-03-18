@@ -1,9 +1,5 @@
 import sqlite3
 
-connection = sqlite3.connect("Database/impact.db")
-cursor = connection.cursor()
-
-
 def generate_db(sql_path="Database/schema.sql"):
     with open(sql_path, "r") as f:
         generate_database_command = f.read()
@@ -17,4 +13,8 @@ def generate_db(sql_path="Database/schema.sql"):
             print("Done")
             print()
 
-generate_db()
+if __name__ == "__main__":
+    connection = sqlite3.connect("Database/impact.db")
+    cursor = connection.cursor()
+    generate_db()
+    connection.close()
