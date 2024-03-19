@@ -8,7 +8,7 @@ Prequisite:
 
 Then activate a virtual environment and install the dependencies:
 
-    ```shell
-    poetry shell # activates a venv
-    poetry install  # installs all dependencies from the lockfile
-    ```
+```shell
+poetry shell # activates a venv
+poetry install  # installs all dependencies from the lockfile
+```
