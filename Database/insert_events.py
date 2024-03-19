@@ -44,12 +44,12 @@ if __name__ == "__main__":
         #"Total_Building_Damage_with_annotation"]
         ]]
     
-    print(data.columns)
-    print(data.Total_Insured_Damage_Inflation_Adjusted_Year)
-
-    data = data.replace({"nan": None})
-
-    # use "replace" for a fresh insert
-    data.to_sql("Events", con=connection, if_exists="append", index=False)
+    # clean out any leftover nones, nans, nulls, etc
+    data = data.replace({"nan": None, "NULL": None, "NaN": None, "null": None, "None": None})
+    data = data.astype(object).where(pd.notnull(data), None)
+    
+    # instert into database
+    # change if_exists to "append" to avoid overwriting the database
+    data.to_sql("Events", con=connection, if_exists="replace", index=False)
 
     connection.close()
