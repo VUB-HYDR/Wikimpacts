@@ -8,8 +8,8 @@ pd.set_option("display.max_columns", 30)
 pd.set_option("display.max_colwidth", 30)
 pd.set_option("display.max_rows", None)
 
-def random_short_uuid(x):
-    return shortuuid.ShortUUID().random(length=6)
+def random_short_uuid(x, length: int = 7):
+    return shortuuid.ShortUUID().random(length=length)
 
 def parse_basic_info(basic_series: pd.Series) -> pd.DataFrame:
     output = []
