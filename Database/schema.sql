@@ -7,17 +7,17 @@ CREATE TABLE Events (
     Perils OBJECT, /* COMMENT 'Array', */
     Location OBJECT, /* COMMENT 'Array', */
     Single_Date DATE,
-    Single_Date_Day INTEGER CHECK (Single_Date_Day <= 31),
-    Single_Date_Month INTEGER CHECK (Single_Date_Month <= 12),
-    Single_Date_Year INTEGER CHECK (length(Single_Date_Year) = 4),
+    /* Single_Date_Day INTEGER CHECK (Single_Date_Day <= 31), */
+    /* Single_Date_Month INTEGER CHECK (Single_Date_Month <= 12), */
+    /* Single_Date_Year INTEGER CHECK (length(Single_Date_Year) = 4), */
     Start_Date DATE,
-    Start_Date_Day INTEGER CHECK (Start_Date_Day <= 31),
-    Start_Date_Month INTEGER CHECK (Start_Date_Month <= 12),
-    Start_Date_Year INTEGER CHECK (length(Start_Date_Year) = 4),
+    /* Start_Date_Day INTEGER CHECK (Start_Date_Day <= 31), */
+    /* Start_Date_Month INTEGER CHECK (Start_Date_Month <= 12), */
+    /* Start_Date_Year INTEGER CHECK (length(Start_Date_Year) = 4), */
     End_Date DATE,
-    End_Date_Day INTEGER CHECK (End_Date_Day <= 31),
-    End_Date_Month INTEGER CHECK (End_Date_Month <= 12),
-    End_Date_Year INTEGER CHECK (length(End_Date_Year) = 4),
+    /* End_Date_Day INTEGER CHECK (End_Date_Day <= 31), */
+    /* End_Date_Month INTEGER CHECK (End_Date_Month <= 12), */
+    /* End_Date_Year INTEGER CHECK (length(End_Date_Year) = 4), */
     Total_Deaths INTEGER,
     Total_Injuries INTEGER,
     Total_Displaced INTEGER,
