@@ -16,7 +16,10 @@ def parse_basic_info(basic_series: pd.Series) -> pd.DataFrame:
     for i in basic_series:
         entry = {}
         for x in range(len(i)):
-            entry.update(json.loads(i[x]))
+            try:
+                entry.update(json.loads(i[x]))
+            except BaseException as err:
+                print(f"Parsing error\n{err}\n")
         output.append(entry)
     return pd.DataFrame(output)
 
@@ -26,9 +29,12 @@ def parse_basic_info(basic_series: pd.Series) -> pd.DataFrame:
 
 def normalize_dates(row) -> datetime: # tuple[datetime, tuple]:
     if row is not None:
-        dt = parse(str(row), fuzzy_with_tokens=False)
-        return dt.strftime("%d-%m-%Y")
-    return None
+        try:
+            dt = parse(str(row), fuzzy_with_tokens=False)
+            return dt.strftime("%d-%m-%Y")
+        except BaseException as err:
+            print(f"Date parsing error\n{err}\n")
+            return None
 
 def parse_json(x):
     try:
@@ -53,7 +59,8 @@ def flatten_dicts(json_dict_list: list[str]) -> dict:
     return output
 
 if __name__  == "__main__":
-    data_path = "Database/raw/response_wiki_GPT4_20240315_13events.json"
+    # data_path = "Database/raw/response_wiki_GPT4_20240315_13events.json"
+    data_path = "Database/raw/response_wiki_GPT4_20240317_No1_79.json"
     df = pd.read_json(data_path)
 
     # add short uids for each event
@@ -85,7 +92,7 @@ if __name__  == "__main__":
     for i in range(impact_data.Event_ID.nunique()):
         total_rows.append(flatten_dicts(impact_data.loc[i].impact.to_list()))
 
-    print(total_rows)
+    # print(total_rows)
     total_rows = pd.DataFrame(total_rows)
     flat_data = pd.concat([data, total_rows], axis=1)
 
@@ -94,15 +101,15 @@ if __name__  == "__main__":
 
     flat_data.drop("impact", inplace=True, axis=1)
     
-    print(flat_data.columns)
-    print(flat_data.shape)
-    print(flat_data)
+    # print(flat_data.columns)
+    # print(flat_data.shape)
+    # print(flat_data)
 
     # cast annotation fields as str
     flat_data = flat_data.astype(str)
 
-    print(flat_data.dtypes)
-    flat_data.to_parquet("Database/output/flat_basic_and_impact.parquet",)
-    flat_data = pd.read_parquet("Database/output/flat_basic_and_impact.parquet")
+    # print(flat_data.dtypes)
+    flat_data.to_parquet("Database/output/flat_basic_and_impact_79.parquet",)
+    flat_data = pd.read_parquet("Database/output/flat_basic_and_impact_79.parquet")
 
     print(flat_data.dtypes)
