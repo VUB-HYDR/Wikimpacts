@@ -122,17 +122,6 @@ traitlets = ">=4"
 test = ["pytest"]
 
 [[package]]
-name = "dataparser"
-version = "0.0.2"
-description = "A simple data storing file writer using JSON"
-optional = false
-python-versions = ">=3.6"
-files = [
-    {file = "dataparser-0.0.2-py3-none-any.whl", hash = "sha256:c01d17bf668ccc2e9eb2c973c388f29eaaa66cc86d63c58ee2d300d0b7479008"},
-    {file = "dataparser-0.0.2.tar.gz", hash = "sha256:374ab88d5619e0da180897ec8990982c8dc7dde318a50cfc5ec5792bb1130a84"},
-]
-
-[[package]]
 name = "dateparser"
 version = "1.2.0"
 description = "Date parsing library designed to parse dates from HTML pages"
@@ -1104,4 +1093,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.12"
-content-hash = "ec98013772c486c413ce9c936fc2af4476f2f8ff89bafb1b86c2b6d55a0da105"
+content-hash = "7a7a3b9107060fa4ef0600c5c67e447914ac0e761ae86dfec3693d1f9b28ea46"
