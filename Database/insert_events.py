@@ -6,7 +6,9 @@ if __name__ == "__main__":
     connection = sqlite3.connect("Database/impact.db")
     cursor = connection.cursor()
     # run insert commands
-    data = pd.read_parquet("Database/output/flat_basic_and_impact.parquet")
+    # data = pd.read_parquet("Database/output/flat_basic_and_impact.parquet")
+    data = pd.read_parquet("Database/output/flat_basic_and_impact_79.parquet")
+
     data = data[[
         "Event_ID",
         "Event_Name",
