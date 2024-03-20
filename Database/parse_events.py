@@ -1,6 +1,6 @@
 import pandas as pd
 import shortuuid
-from  dateutil.parser import parse
+from dateparser.date import DateDataParser
 from datetime import datetime
 import json 
 
@@ -27,15 +27,34 @@ def parse_basic_info(basic_series: pd.Series) -> pd.DataFrame:
 # TODO: a problem for later, parse each part of the date individually
 # might have to combine datetime with dateutil or maybe even modify the function
 
-def normalize_dates(row) -> datetime: # tuple[datetime, tuple]:
-    if row is not None:
-        try:
-            dt = parse(str(row), fuzzy_with_tokens=False)
-            return dt.strftime("%d-%m-%Y")
-        except BaseException as err:
-            print(f"Date parsing error\n{err}\n")
-            return None
+def normalize_dates(row) -> tuple[int, int, int]: # tuple[datetime, tuple]:
+    """
+    See https://github.com/scrapinghub/dateparser/issues/700
+    and https://dateparser.readthedocs.io/en/latest/dateparser.html#dateparser.date.DateDataParser.get_date_data
 
+    Returns a tuple: (day, month, year) with None for missing values
+    """
+    if row is not None:
+        # TODO: we assume we need at least a month and a year, talk to Ni about this
+        ddp = DateDataParser(settings={'REQUIRE_PARTS': ["month", "year"], "NORMALIZE": True})
+        format_date = None
+
+        try:
+            date = ddp.get_date_data(row)
+            try: 
+                format_date = date.date_obj.strftime("%Y-%m-%d")
+            except: 
+                return (None, None, None)
+            
+            if date.period == "month":
+                return (None, date.date_obj.strftime("%m"), date.date_obj.strftime("%Y"))
+            elif date.period == "day":
+                return (date.date_obj.strftime("%d"), date.date_obj.strftime("%m"), date.date_obj.strftime("%Y"))
+
+        except BaseException as err:
+            print(f"Date parsing error in {row} with date '{format_date}'\n{err}\n")
+            return (None, None, None)
+        
 def parse_json(x):
     try:
         return json.loads(x)
