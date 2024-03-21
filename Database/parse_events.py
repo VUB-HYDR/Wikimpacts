@@ -35,6 +35,9 @@ def normalize_date(row) -> tuple[int, int, int]:  # tuple[datetime, tuple]:
     if row is not None:
         # TODO: we assume we need at least a month and a year, talk to Ni about this
         ddp = DateDataParser(settings={"REQUIRE_PARTS": ["year"], "NORMALIZE": True, "PREFER_DATES_FROM": "past"})
+
+        year, month, day = "%Y", "%m", "%d"
+
         try:
             date = ddp.get_date_data(row)
             try:
@@ -43,13 +46,13 @@ def normalize_date(row) -> tuple[int, int, int]:  # tuple[datetime, tuple]:
                 return (None, None, None)
 
             if date.period == "year":
-                return (None, None, date.date_obj.strftime("%Y"))
+                return (None, None, date.date_obj.strftime(year))
 
             elif date.period == "month":
-                return (None, date.date_obj.strftime("%m"), date.date_obj.strftime("%Y"))
+                return (None, date.date_obj.strftime(month), date.date_obj.strftime(year))
 
             elif date.period == "day":
-                return (date.date_obj.strftime("%d"), date.date_obj.strftime("%m"), date.date_obj.strftime("%Y"))
+                return (date.date_obj.strftime(day), date.date_obj.strftime(month), date.date_obj.strftime(year))
 
         except BaseException as err:
             print(f"Date parsing error in {row} with date\n{err}\n")
