@@ -3,7 +3,7 @@ Wikimapcts is the first version of climate impact dataset creating by generative
 
 
 ### Dependencies
-Prequisite: 
+Prequisite:
 - Install [`poetry`](https://python-poetry.org/docs/#installation)
 
 Then activate a virtual environment and install the dependencies:
