@@ -14,6 +14,7 @@ text2num = "^2.5.0"
 pandas = "^2.2.1"
 shortuuid = "^1.0.13"
 pyarrow = "^15.0.2"
+pre-commit = "^3.6.2"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.3"
