@@ -25,12 +25,6 @@ def parse_basic_info(basic_series: pd.Series) -> pd.DataFrame:
         output.append(entry)
     return pd.DataFrame(output)
 
-
-# TODO: maybe return this without the fuzzy matching, this depends on how many funny dates there will be
-# TODO: a problem for later, parse each part of the date individually
-# might have to combine datetime with dateutil or maybe even modify the function
-
-
 def normalize_date(row) -> tuple[int, int, int]:  # tuple[datetime, tuple]:
     """
     See https://github.com/scrapinghub/dateparser/issues/700
