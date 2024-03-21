@@ -27,7 +27,7 @@ def parse_basic_info(basic_series: pd.Series) -> pd.DataFrame:
 # TODO: a problem for later, parse each part of the date individually
 # might have to combine datetime with dateutil or maybe even modify the function
 
-def normalize_dates(row) -> tuple[int, int, int]: # tuple[datetime, tuple]:
+def normalize_date(row) -> tuple[int, int, int]: # tuple[datetime, tuple]:
     """
     See https://github.com/scrapinghub/dateparser/issues/700
     and https://dateparser.readthedocs.io/en/latest/dateparser.html#dateparser.date.DateDataParser.get_date_data
@@ -36,23 +36,28 @@ def normalize_dates(row) -> tuple[int, int, int]: # tuple[datetime, tuple]:
     """
     if row is not None:
         # TODO: we assume we need at least a month and a year, talk to Ni about this
-        ddp = DateDataParser(settings={'REQUIRE_PARTS': ["month", "year"], "NORMALIZE": True})
-        format_date = None
-
+        ddp = DateDataParser(settings={
+            "REQUIRE_PARTS": ["year"],
+            "NORMALIZE": True,
+            "PREFER_DATES_FROM": "past"})
         try:
             date = ddp.get_date_data(row)
             try: 
-                format_date = date.date_obj.strftime("%Y-%m-%d")
+                date.date_obj.strftime("%Y-%m-%d")
             except: 
                 return (None, None, None)
             
-            if date.period == "month":
+            if date.period == "year":
+                return (None, None, date.date_obj.strftime("%Y"))
+
+            elif date.period == "month":
                 return (None, date.date_obj.strftime("%m"), date.date_obj.strftime("%Y"))
+        
             elif date.period == "day":
                 return (date.date_obj.strftime("%d"), date.date_obj.strftime("%m"), date.date_obj.strftime("%Y"))
 
         except BaseException as err:
-            print(f"Date parsing error in {row} with date '{format_date}'\n{err}\n")
+            print(f"Date parsing error in {row} with date\n{err}\n")
             return (None, None, None)
         
 def parse_json(x):
@@ -95,12 +100,14 @@ if __name__  == "__main__":
     data.replace("NULL", None, inplace=True)
 
     # normalize dates
-    data.Start_Date = data.Start_Date.apply(normalize_dates)
-    data.End_Date =  data.End_Date.apply(normalize_dates)
-    data.Single_Date = data.Single_Date.apply(normalize_dates)
+    Start_Dates = data.Start_Date.apply(normalize_date)
+    End_Dates = data.End_Date.apply(normalize_date)
 
+    Start_Date_Cols = pd.DataFrame(Start_Dates.to_list(), columns = ["Start_Date_Day", "Start_Date_Month", "Start_Date_Year"])
+    End_Date_Cols = pd.DataFrame(End_Dates.to_list(), columns = ["End_Date_Day", "End_Date_Month", "End_Date_Year"])
 
-    # flatten impact totals
+    data = pd.concat([data, Start_Date_Cols, End_Date_Cols], axis=1)
+
     impact_data = data[["Event_ID", "impact"]]
     impact_data = impact_data.explode("impact")
 
@@ -128,7 +135,6 @@ if __name__  == "__main__":
     flat_data = flat_data.astype(str)
 
     # print(flat_data.dtypes)
-    flat_data.to_parquet("Database/output/flat_basic_and_impact_79.parquet",)
-    flat_data = pd.read_parquet("Database/output/flat_basic_and_impact_79.parquet")
+    flat_data.to_parquet("Database/output/flat_basic_and_impact_79_dmy.parquet",)
+    flat_data = pd.read_parquet("Database/output/flat_basic_and_impact_79_dmy.parquet")
 
-    print(flat_data.dtypes)
