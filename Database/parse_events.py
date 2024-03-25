@@ -154,7 +154,7 @@ if __name__ == "__main__":
 
     # save data
     # df = df.astype(str)
-    parquet_filename = f"{filename.split('.json')[0]}.parquet"
+    parquet_filename = f"output/{filename.split('.json')[0]}.parquet"
     df.to_parquet(parquet_filename)
 
     # check that the parquet was stored correctly
