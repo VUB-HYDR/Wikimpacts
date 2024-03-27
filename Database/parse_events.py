@@ -1,4 +1,3 @@
-import json
 import re
 
 import pandas as pd
@@ -21,23 +20,6 @@ def replace_nulls(df: pd.DataFrame) -> pd.DataFrame:
     df = df.replace(any_NULL, None)
     df = df.astype(object).where(pd.notnull(df), None)
     return df
-
-
-def parse_basic_info(basic_series: pd.Series) -> pd.DataFrame:
-    output = []
-    for i in basic_series:
-        entry = {}
-        for x in range(len(i)):
-            try:
-                entry.update(json.loads(i[x]))
-            except BaseException as err:
-                print(f"Parsing error\n{err}\n")
-        output.append(entry)
-    return pd.DataFrame(output)
-
-
-def parse_specific_info():
-    pass
 
 
 def normalize_date(row) -> tuple[int, int, int]:  # tuple[datetime, tuple]:
@@ -85,25 +67,6 @@ def normalize_date(row) -> tuple[int, int, int]:  # tuple[datetime, tuple]:
         except BaseException as err:
             print(f"Date parsing error in {row} with date\n{err}\n")
             return (None, None, None)
-
-
-def flatten_dicts(json_dict_list: list[str]) -> dict:
-    output = {}
-    for i in json_dict_list:
-        try:
-            # i = json.loads(i) TODO: no need for this, already json dict
-            for k in i.keys():
-                if "summary" in k.lower():
-                    for total_key, total_value in i[k].items():
-                        total_value = (
-                            None
-                            if (isinstance(total_value, str) and total_value.lower() in ["null", "nan"])
-                            else total_value
-                        )
-                        output.update({total_key: total_value})
-        except BaseException as err:
-            print("ERROR:", err, "Could not parse:\n", i, "\n")
-    return output
 
 
 def unpack_col(df, columns: list = []):
