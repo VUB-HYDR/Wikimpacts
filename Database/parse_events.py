@@ -143,8 +143,8 @@ if __name__ == "__main__":
         r"^(no)$|^(n)$|^(false)$", re.IGNORECASE | re.MULTILINE
     )
 
-    total_summary.Total_Insured_Damage_Inflation_Adjusted = total_summary.Total_Insured_Damage_Inflation_Adjusted.replace(
-        {_no: False, _yes: True}, regex=True
+    total_summary.Total_Insured_Damage_Inflation_Adjusted = (
+        total_summary.Total_Insured_Damage_Inflation_Adjusted.replace({_no: False, _yes: True}, regex=True)
     )
     total_summary.Total_Damage_Inflation_Adjusted = total_summary.Total_Damage_Inflation_Adjusted.replace(
         {_no: False, _yes: True}, regex=True
@@ -161,18 +161,33 @@ if __name__ == "__main__":
     # get specific impact summaries
     specific_summary_cols = [col for col in total_summary if col.startswith("Specific_")]
 
-    specifc_summary_dfs = []
+    specifc_summary_dfs = {}
 
+    # normalize the json columns to extract subevents tables
     for col in specific_summary_cols:
         assert df[col].shape == (1,), "Bad shape, not a list; check the data"
         normalized_df = pd.json_normalize(df[col][0])
-        specifc_summary_dfs.append(normalized_df)
-        
-    for col_name, data in zip(specific_summary_cols, specifc_summary_dfs):
-        data.to_parquet(f"{output_path}/{col_name}.parquet")
+        specifc_summary_dfs[col] = normalized_df
 
-    # check that the parquet was stored correctly
-    # flat_data = pd.read_parquet(total_summary_parquet_filename)
-    # print(flat_data)
-    # specific_data = pd.read_parquet(f"{output_path}/{specific_summary_cols[0]}.parquet")
-    # print(specific_data)
+    # normalize dates
+    specific_summary_with_dates = (
+        ("Specific_Instance_Per_Country_Death", "Time_Death"),
+        ("Specific_Instance_Per_Country_Injuries", "Time_Injuries"),
+        ("Specific_Instance_Per_Country_Displacement", "Time_Displace"),
+        ("Specific_Instance_Per_Country_Homelessness", "Time_Homeless"),
+        ("Specific_Instance_Per_Country_Building_Damage", "Time_Building"),
+    )
+
+    for table_name, col_name in specific_summary_with_dates:
+        date = specifc_summary_dfs[table_name][col_name].apply(normalize_date)
+        date_col = pd.DataFrame(
+            date.to_list(),
+            columns=[f"{col_name}_Day", f"{col_name}_Month", f"{col_name}_Year"],
+        )
+
+        specifc_summary_dfs[table_name] = pd.concat([specifc_summary_dfs[table_name], date_col], axis=1)
+
+    # store subevents in parquet
+    for col_name, data in specifc_summary_dfs.items():
+        data = replace_nulls(data)
+        data.to_parquet(f"{output_path}/{col_name}.parquet")
