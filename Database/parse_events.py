@@ -9,7 +9,7 @@ pd.set_option("display.max_colwidth", 30)
 pd.set_option("display.max_rows", None)
 
 
-def random_short_uuid(length: int = 7):
+def random_short_uuid(length: int = 7) -> str:
     """Generates a short alpha-numerical UID"""
     return shortuuid.ShortUUID().random(length=length)
 
@@ -22,7 +22,7 @@ def replace_nulls(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def normalize_date(row) -> tuple[int, int, int]:  # tuple[datetime, tuple]:
+def normalize_date(row: str | None) -> tuple[int, int, int]:
     """
     See https://github.com/scrapinghub/dateparser/issues/700
     and https://dateparser.readthedocs.io/en/latest/dateparser.html#dateparser.date.DateDataParser.get_date_data
@@ -69,7 +69,8 @@ def normalize_date(row) -> tuple[int, int, int]:  # tuple[datetime, tuple]:
             return (None, None, None)
 
 
-def unpack_col(df, columns: list = []):
+def unpack_col(df: pd.DataFrame, columns: list = []) -> pd.DataFrame:
+    """Unpacks Total_Summary_* columns"""
     for c in columns:
         df = pd.concat([pd.json_normalize(df[c]), df], axis=1)
         df.drop(columns=[c], inplace=True)
@@ -102,6 +103,7 @@ if __name__ == "__main__":
 
     total_summary = pd.concat([total_summary, Start_Date_Cols, End_Date_Cols], axis=1)
 
+    # normalize binary categories into booleans
     _yes, _no = re.compile(r"^(yes)$|^(y)$|^(true)$", re.IGNORECASE | re.MULTILINE), re.compile(
         r"^(no)$|^(n)$|^(false)$", re.IGNORECASE | re.MULTILINE
     )
@@ -116,14 +118,11 @@ if __name__ == "__main__":
     # clean out NaNs and Nulls
     total_summary = replace_nulls(total_summary)
 
-    # save data
-    # total_summary = total_summary.astype(str)
     total_summary_parquet_filename = f"{output_path}/{filename.split('.json')[0]}.parquet"
     total_summary.to_parquet(total_summary_parquet_filename)
 
     # get specific impact summaries
     specific_summary_cols = [col for col in total_summary if col.startswith("Specific_")]
-
     specifc_summary_dfs = {}
 
     # normalize the json columns to extract subevents tables
@@ -132,7 +131,7 @@ if __name__ == "__main__":
         normalized_df = pd.json_normalize(df[col][0])
         specifc_summary_dfs[col] = normalized_df
 
-    # normalize dates
+    # normalize dates (only for subevent data tables that have a Time_* field)
     specific_summary_with_dates = (
         ("Specific_Instance_Per_Country_Death", "Time_Death"),
         ("Specific_Instance_Per_Country_Injuries", "Time_Injuries"),
@@ -147,7 +146,6 @@ if __name__ == "__main__":
             date.to_list(),
             columns=[f"{col_name}_Day", f"{col_name}_Month", f"{col_name}_Year"],
         )
-
         specifc_summary_dfs[table_name] = pd.concat([specifc_summary_dfs[table_name], date_col], axis=1)
 
     # store subevents in parquet
