@@ -73,7 +73,7 @@ CREATE TABLE Specific_Instance_Per_Country_Injuries (
 CREATE TABLE Specific_Instance_Per_Country_Displacement (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) = 7), /* COMMENT 'UID', */
     Country TEXT NOT NULL, /* COMMENT 'Country Code', */
-    Location_Displace TEXT,
+    Location_Displacement TEXT,
     Location_GCS OBJECT, /* COMMENT 'GCS', */
     Start_Date_Displacement DATE,
     Start_Date_Displacement_Day INTEGER CHECK (Start_Date_Displacementd_Day <= 31),
@@ -90,7 +90,7 @@ CREATE TABLE Specific_Instance_Per_Country_Displacement (
 CREATE TABLE Specific_Instance_Per_Country_Homelessness (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) = 7), /* COMMENT 'UID', */
     Country TEXT NOT NULL, /* COMMENT 'Country Code', */
-    Location_Homeless TEXT,
+    Location_Homelessness TEXT,
     Location_GCS OBJECT, /* COMMENT 'GCS', */
     Start_Date_Homelessness DATE,
     Start_Date_Homelessness_Day INTEGER CHECK (Start_Date_Homelessness_Day <= 31),
