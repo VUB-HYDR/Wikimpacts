@@ -76,13 +76,13 @@ CREATE TABLE Specific_Instance_Per_Country_Displacement (
     Location_Displacement TEXT,
     Location_GCS OBJECT, /* COMMENT 'GCS', */
     Start_Date_Displacement DATE,
-    Start_Date_Displacement_Day INTEGER CHECK (Start_Date_Displacementd_Day <= 31),
-    Start_Date_Displacement_Month INTEGER CHECK (Start_Date_Displacementd_Month <= 12),
-    Start_Date_Displacement_Year INTEGER CHECK (length(Start_Date_Displacementd_Year) = 4),
+    Start_Date_Displacement_Day INTEGER CHECK (Start_Date_Displacement_Day <= 31),
+    Start_Date_Displacement_Month INTEGER CHECK (Start_Date_Displacement_Month <= 12),
+    Start_Date_Displacement_Year INTEGER CHECK (length(Start_Date_Displacement_Year) = 4),
     End_Date_Displacement DATE,
-    End_Date_Displacement_Day INTEGER CHECK (End_Date_Displacementd_Day <= 31),
-    End_Date_Displacement_Month INTEGER CHECK (End_Date_Displacementd_Month <= 12),
-    End_Date_Displacement_Year INTEGER CHECK (length(End_Date_Displacementd_Year) = 4),
+    End_Date_Displacement_Day INTEGER CHECK (End_Date_Displacement_Day <= 31),
+    End_Date_Displacement_Month INTEGER CHECK (End_Date_Displacement_Month <= 12),
+    End_Date_Displacement_Year INTEGER CHECK (length(End_Date_Displacement_Year) = 4),
     Num_Displaced INTEGER,
     FOREIGN KEY(Event_ID) REFERENCES Events(Event_ID)
 );
