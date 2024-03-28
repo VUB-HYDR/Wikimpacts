@@ -30,6 +30,9 @@ def normalize_date(row: str | None) -> tuple[int, int, int]:
 
     Returns a tuple: (day, month, year) with None for missing values
     """
+    if not row:
+        return (None, None, None)
+
     if row is not None:
         ddp = DateDataParser(
             settings={
@@ -89,7 +92,7 @@ if __name__ == "__main__":
     df["Event_ID"] = [random_short_uuid() for _ in df.index]
 
     # unpack Total_Summary_* columns
-    total_summary_cols = [col for col in df if col.startswith("Total_")]
+    total_summary_cols = [col for col in df.columns if col.startswith("Total_")]
     events = unpack_col(df, columns=total_summary_cols)
 
     del df
@@ -134,6 +137,7 @@ if __name__ == "__main__":
     events_parquet_filename = f"{output_path}/{filename.split('.json')[0]}.parquet"
     events.to_parquet(events_parquet_filename)
 
+    # parse subevents
     specific_summary_cols = [col for col in events if col.startswith("Specific_")]
     specifc_summary_dfs = {}
 
@@ -151,18 +155,27 @@ if __name__ == "__main__":
 
         # clean out nulls
         sub_event = replace_nulls(sub_event)
+        start_date_col, end_date_col = [c for c in sub_event.columns if c.startswith("Start_Date_")], [
+            c for c in sub_event.columns if c.startswith("End_Date_")
+        ]
+        assert len(start_date_col) == len(end_date_col), "Check the start and end date columns"
+        assert len(start_date_col) <= 1, "Check the start and end date columns, there might be too many"
 
-        # normalize start and end dates
-        start_dates = sub_event.Start_Date.apply(normalize_date)
-        end_dates = sub_event.End_Date.apply(normalize_date)
+        if start_date_col and end_date_col:
+            start_date_col, end_date_col = start_date_col[0], end_date_col[0]
 
-        start_date_cols = pd.DataFrame(
-            start_dates.to_list(),
-            columns=["Start_Date_Day", "Start_Date_Month", "Start_Date_Year"],
-        )
-        end_date_cols = pd.DataFrame(end_dates.to_list(), columns=["End_Date_Day", "End_Date_Month", "End_Date_Year"])
-
-        sub_event = pd.concat([sub_event, start_date_cols, end_date_cols], axis=1)
+            # normalize start and end dates
+            start_dates = sub_event[start_date_col].apply(normalize_date)
+            end_dates = sub_event[end_date_col].apply(normalize_date)
+            start_date_cols = pd.DataFrame(
+                start_dates.to_list(),
+                columns=[f"{start_date_col}_Day", f"{start_date_col}_Month", f"{start_date_col}_Year"],
+            )
+            end_date_cols = pd.DataFrame(
+                end_dates.to_list(), columns=[f"{end_date_col}_Day", f"{end_date_col}_Month", f"{end_date_col}_Year"]
+            )
+            sub_event.reset_index(inplace=True, drop=True)
+            sub_event = pd.concat([sub_event, start_date_cols, end_date_cols], axis=1)
 
         # store as parquet
         sub_event.to_parquet(f"{output_path}/{col}.parquet")
