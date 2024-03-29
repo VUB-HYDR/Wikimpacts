@@ -20,8 +20,8 @@ CREATE TABLE Events (
     End_Date_Year INTEGER CHECK (length(End_Date_Year) = 4),
     Total_Deaths INTEGER,
     Total_Injuries INTEGER,
-    Total_Displaced INTEGER,
-    Total_Homeless INTEGER,
+    Total_Displacement INTEGER,
+    Total_Homelessness INTEGER,
     Total_Insured_Damage REAL,
     Total_Insured_Damage_Units TEXT, /* COMMENT 'currency', */
     Total_Insured_Damage_Inflation_Adjusted INTEGER, /* COMMENT 'Boolean', */
@@ -32,7 +32,7 @@ CREATE TABLE Events (
     Total_Damage_Units TEXT, /* COMMENT 'currency', */
     Total_Damage_Inflation_Adjusted INTEGER, /* COMMENT 'Boolean', */
     Total_Damage_Inflation_Adjusted_Year INTEGER CHECK (length(Total_Damage_Inflation_Adjusted_Year) = 4),
-    Total_Buildings_Damaged INTEGER,
+    Total_Buildings_Damage INTEGER,
     FOREIGN KEY(Event_ID) REFERENCES Events(Event_ID)
 );
 
