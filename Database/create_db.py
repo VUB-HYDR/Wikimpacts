@@ -11,8 +11,7 @@ def generate_db(sql_path="Database/schema.sql"):
             print("Executing:")
             print(i)
             cursor.execute(i)
-            print("Done")
-            print()
+            print("Done\n")
 
 
 if __name__ == "__main__":
