@@ -5,7 +5,6 @@ import pandas as pd
 if __name__ == "__main__":
     data_path = "Database/output"
     data = pd.read_parquet(f"{data_path}/response_wiki_GPT4_20240327_eventNo_1_8_all_category.parquet")
-
     data = data[
         [
             "Event_ID",
@@ -56,6 +55,6 @@ if __name__ == "__main__":
 
     # change if_exists to "append" to avoid overwriting the database
     # choose "replace" to overwrite the database with a fresh copy of the data
-    data.to_sql("Events", con=connection, if_exists="append", index=False)
+    data.to_sql("Events", con=connection, if_exists="replace", index=False)
 
     connection.close()
