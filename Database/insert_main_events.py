@@ -3,10 +3,8 @@ import sqlite3
 import pandas as pd
 
 if __name__ == "__main__":
-
-    # run insert commands
-    # data = pd.read_parquet("Database/output/flat_basic_and_impact.parquet")
-    data = pd.read_parquet("Database/output/response_wiki_GPT4_20240327_eventNo_1_8_all_category.parquet")
+    data_path = "Database/output"
+    data = pd.read_parquet(f"{data_path}/response_wiki_GPT4_20240327_eventNo_1_8_all_category.parquet")
 
     data = data[
         [
@@ -53,15 +51,11 @@ if __name__ == "__main__":
         ]
     ]
 
-    # clean out any leftover nones, nans, nulls, etc
-    # data = data.replace({"nan": None, "NULL": None, "NaN": None, "null": None, "None": None})
-    # data = data.astype(object).where(pd.notnull(data), None)
-
-    connection = sqlite3.connect("Database/output/impact.db")
+    connection = sqlite3.connect(f"{data_path}/impact.db")
     cursor = connection.cursor()
-    
-    # instert into database
+
     # change if_exists to "append" to avoid overwriting the database
-    data.to_sql("Events", con=connection, if_exists="replace", index=False)
+    # choose "replace" to overwrite the database with a fresh copy of the data
+    data.to_sql("Events", con=connection, if_exists="append", index=False)
 
     connection.close()
