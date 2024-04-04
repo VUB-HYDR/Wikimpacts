@@ -6,6 +6,7 @@ CREATE TABLE Events (
     Main_Event TEXT NOT NULL, /* COMMENT 'Categorical', */
     Perils OBJECT, /* COMMENT 'Array', */
     Location OBJECT, /* COMMENT 'Array', */
+    Country OBJECT, /* COMMENT 'Array', */
     /*  Single_Date DATE, */
     /* Single_Date_Day INTEGER CHECK (Single_Date_Day <= 31), */
     /* Single_Date_Month INTEGER CHECK (Single_Date_Month <= 12), */
