@@ -16,6 +16,14 @@
             "Queensland": "Monica made landfall in Far North Queensland, near Lockhart River, on 19 April 2006. Little damage was recorded in Queensland, despite Cyclone Monica being a Category 3 cyclone, as the storm impacted a sparsely populated region of the Cape York peninsula.",
             "Northern Territory": "The remnants of Monica persisted for several more days, tracking near Darwin on 25 April before turning south-east and accelerating over the Northern Territory. Wind gusts up to 148 km/h (92 mph) felled power lines in Maningrida; 12 homes sustained damage from fallen trees in Jabiru; and extensive damage was reported in Gunbalanya (formerly known as Oenpelli)."
         },
+        "Country": [
+            "Papua New Guinea",
+            "Australia"
+        ],
+        "Country_with_Annotation": {
+            "Papua New Guinea": "Severe Tropical Cyclone Monica was the most intense tropical cyclone, in terms of maximum sustained winds, on record to impact Australia. The 17th and final storm of the 2005\u201306 Australian region cyclone season, Monica originated from an area of low pressure off the coast of Papua New Guinea on 16 April 2006.",
+            "Australia": "Severe Tropical Cyclone Monica was the most intense tropical cyclone, in terms of maximum sustained winds, on record to impact Australia. The storm quickly developed into a Category 1 cyclone the next day, at which time it was given the name Monica. Travelling towards the west, the storm intensified into a severe tropical cyclone before making landfall in Far North Queensland, near Lockhart River, on 19 April 2006."
+        },
         "Start_Date": "16 April 2006",
         "End_Date": "28 April 2006",
         "Time_with_Annotation": "Severe Tropical Cyclone Monica originated from an area of low pressure that formed early on 16 April 2006 off the coast of Papua New Guinea. The remnants of the former-Category 5 cyclone persisted until 28 April 2006 over northern Australia.",
@@ -191,6 +199,12 @@
             "North Fork of the Mokelumne River": "The fire\u2014dubbed the Electra Fire due to its ignition source being close in proximity to Electra Road along the North Fork of the Mokelumne River and Vaught's Beach\u2014was first reported at 75 acres in size and burning at a dangerous rate of spread in dry grass had ballooned to 959 acres in size by 7 PM.",
             "Vaught's Beach": "The fire\u2014dubbed the Electra Fire due to its ignition source being close in proximity to Electra Road along the North Fork of the Mokelumne River and Vaught's Beach\u2014was first reported at 75 acres in size and burning at a dangerous rate of spread in dry grass had ballooned to 959 acres in size by 7 PM."
         },
+        "Country": [
+            "United States"
+        ],
+        "Country_with_Annotation": {
+            "United States": "The Electra Fire was a wildfire that burned northeast of Mokelumne Hill in Amador and Calaveras Counties, California that started on July 4, 2022."
+        },
         "Start_Date": "2022-07-04",
         "End_Date": "2022-07-28",
         "Time_with_Annotation": "The wildfire burned a total of 4,478 acres (1,812 ha) and was fully contained on July 28, 2022.[1][3]",
@@ -326,6 +340,12 @@
             "Blackwater": "Blackwater, near Emerald in Central Queensland, was hit hard by the third storm, with 20 houses sustaining roof damage and up to 100 more were damaged in some way. Hail was described as the size of golf balls and witnesses saw a lot of damage.",
             "Emerald": "Blackwater, near Emerald in Central Queensland, was hit hard by the third storm, with 20 houses sustaining roof damage and up to 100 more were damaged in some way. Gregory MP Vaughan Johnson said the storm was terrifying. He said he was driving to an appointment when the storm slammed into Blackwater, forcing him to turn back to Emerald."
         },
+        "Country": [
+            "Australia"
+        ],
+        "Country_with_Annotation": {
+            "Australia": "The 2008 Queensland storms were a series of three thunderstorms that struck South East Queensland, Australia. The first storm hit on 16 November 2008 and was followed by two further storms on 19 and 20 November. The storms resulted in 2 fatalities."
+        },
         "Start_Date": "16 November 2008",
         "End_Date": "20 November 2008",
         "Time_with_Annotation": "The first storm hit on 16 November 2008 and was followed by two further storms on 19 and 20 November.",
@@ -333,14 +353,16 @@
             "Total_Deaths": "2",
             "Total_Death_Annotation": "The storms resulted in 2 fatalities."
         },
-        "Specific_Instance_Per_Country_Death": [{
-            "Country": "Australia",
-            "Location_Death": "South East Queensland",
-            "Start_Date_Death": "16 November 2008",
-            "End_Date_Death": "20 November 2008",
-            "Num_Death": "2",
-            "Death_with_annotation": "The 2008 Queensland storms were a series of three thunderstorms that struck South East Queensland, Australia. The first storm hit on 16 November 2008 and was followed by two further storms on 19 and 20 November. The storms resulted in 2 fatalities."
-        }],
+        "Specific_Instance_Per_Country_Death": [
+            {
+                "Country": "Australia",
+                "Location_Death": "South East Queensland",
+                "Start_Date_Death": "16 November 2008",
+                "End_Date_Death": "20 November 2008",
+                "Num_Death": "2",
+                "Death_with_annotation": "The 2008 Queensland storms were a series of three thunderstorms that struck South East Queensland, Australia. The first storm hit on 16 November 2008 and was followed by two further storms on 19 and 20 November. The storms resulted in 2 fatalities."
+            }
+        ],
         "Total_Summary_Injuries": {
             "Total_Injuries": "NULL",
             "Total_Injuries_Annotation": "The article does not provide specific information on the total number of injuries from the 2008 Queensland storms."
@@ -604,6 +626,16 @@
             "Zhejiang": "A tornado was reported in Zhejiang, killing 13 people and injuring at least 60 more.",
             "Jiangxi": "Damage was also reported in Jiangxi and Hunan, and damage in the four provinces was estimated at 5 billion yuan (US$658 million).",
             "Hunan": "Damage was also reported in Jiangxi and Hunan, and damage in the four provinces was estimated at 5 billion yuan (US$658 million)."
+        },
+        "Country": [
+            "Philippines",
+            "Taiwan",
+            "China"
+        ],
+        "Country_with_Annotation": {
+            "Philippines": "More than 43 deaths were directly blamed on Sepat; 3 out of the 43 were from the Philippines due to drowning brought on by heavy rains from the southwest monsoon enhanced by Sepat.",
+            "Taiwan": "It made landfall in eastern Taiwan between Taitung and Hualien on the morning of August 18 local time at around 5 a.m. (2100 UTC August 17) and weakened to a minimal typhoon.",
+            "China": "It made a second landfall, in China, about 24 hours after landfall on Taiwan and was downgraded to a tropical storm the next morning."
         },
         "Start_Date": "August 11, 2007",
         "End_Date": "August 24, 2007",
@@ -910,6 +942,14 @@
             "Southern California": "The heat wave also affected inland regions of Central and Southern California.",
             "Montana": "At this stage, the heat was kept between the warm and cold fronts of the low-pressure area that formed over southern Northwest Territories and was transported eastward towards Hudson Bay. Sweltering conditions were observed as far east as Montana.",
             "Labrador": "By July 04\u20135, the remnants of the heat dome crossed Hudson Bay and, weakened somewhat by the cool waters, entered Quebec, and after that, Labrador, briefly triggering temperatures of around 30\u00b0C (86\u00b0F)."
+        },
+        "Country": [
+            "United States",
+            "Canada"
+        ],
+        "Country_with_Annotation": {
+            "United States": "The heat wave affected Northern California, Idaho, Western Nevada, Oregon, and Washington in the United States, as well as British Columbia, and in its latter phase, Alberta, Manitoba, the Northwest Territories, Saskatchewan, and Yukon, all in Canada.",
+            "Canada": "The heat wave affected Northern California, Idaho, Western Nevada, Oregon, and Washington in the United States, as well as British Columbia, and in its latter phase, Alberta, Manitoba, the Northwest Territories, Saskatchewan, and Yukon, all in Canada."
         },
         "Start_Date": "June 25, 2021",
         "End_Date": "July 7, 2021",
@@ -1334,6 +1374,16 @@
                 "Vermont": "Rainfall directly associated with Ophelia reached 1.84 in in Vermont."
             }
         ],
+        "Country": [
+            "Bahamas",
+            "United States",
+            "Canada"
+        ],
+        "Country_with_Annotation": {
+            "Bahamas": "An area of low pressure consolidated near the Bahamas and was classified as Tropical Depression Sixteen on September 6. Stuck in a region of meager steering currents, largely dominated by a lull between two ridges to the north and east, this system moved along a looping course with a general northward trajectory.",
+            "United States": "Hurricane Ophelia was a long-lived tropical cyclone in September 2005 that moved along an erratic path off the East Coast of the United States for much of its existence. The greatest impacts were felt in North Carolina, where more than 240,000 people lost power and more than 1,500 homes were damaged.",
+            "Canada": "Becoming embedded within the westerlies, Ophelia transitioned into an extratropical cyclone the next day. Remaining on a steady east-northeast to northeast path for the next week, Ophelia traversed Atlantic Canada and the northern Atlantic Ocean before dissipating on September 23 over the Norwegian Sea."
+        },
         "Start_Date": "September 6, 2005",
         "End_Date": "September 23, 2005",
         "Time_with_Annotation": "Formed: September 6, 2005\nExtratropical: September 18, 2005\nDissipated: September 23, 2005\n",
@@ -1649,6 +1699,12 @@
             "Arambagh": "In Hooghly district, embankments along the Darakeswar river were washed away and flood water gushed towards Arambagh town. In the 14 flood-hit districts in West Bengal, 27 lakh (2.7 million) people had been affected by flood. The government had set up 311 relief camps where over 47,000 people have taken shelter, adding it has also set up 131 medical camps. Over 16,000 animals were sheltered in relief camps for animals and veterinary doctors were looking after them. The government had also sent medicines, water pouches and other items to all the districts.[12]\n",
             "Darakeswar river": "In Hooghly district, embankments along the Darakeswar river were washed away and flood water gushed towards Arambagh town. In the 14 flood-hit districts in West Bengal, 27 lakh (2.7 million) people had been affected by flood. The government had set up 311 relief camps where over 47,000 people have taken shelter, adding it has also set up 131 medical camps. Over 16,000 animals were sheltered in relief camps for animals and veterinary doctors were looking after them. The government had also sent medicines, water pouches and other items to all the districts.[12]\n"
         },
+        "Country": [
+            "India"
+        ],
+        "Country_with_Annotation": {
+            "India": "Following heavy rain in July and August 2017, the Indian state of West Bengal was affected by severe flooding. The floods were reported to have caused 50 deaths since 1 August and 8 deaths in the neighbouring state of Jharkhand."
+        },
         "Start_Date": "July 2017",
         "End_Date": "30 August 2017",
         "Time_with_Annotation": "Following heavy rain in July and August 2017, the Indian state of West Bengal was affected by severe flooding.[2] The floods were reported to have caused 50 deaths since 1 August and 8 deaths in the neighbouring state of Jharkhand.",
@@ -1951,6 +2007,64 @@
             "Spain": "A special heat warning was activated by the AEMET on 10 June, but only for 12 provinces and with yellow alerts in Aragon, Castilla-La Mancha, Catalonia, Extremadura and Madrid, with an orange alert for Andalusia. In this first stage, the unusual heat did not affect the Canary Islands, Galicia, the western Cantabrian coast and points of the peninsular Mediterranean coast. Initially, the AEMET predicted that the heatwave would last until 15 June, although it speculated that the heat might continue for the rest of the week.",
             "Switzerland": "On 16 June, the Federal Office for Meteorology and Climatology (MeteoSwiss) reported that temperatures of 31\u00e2\u20ac\u201c33\u00c2\u00b0C (88\u00e2\u20ac\u201c91\u00c2\u00b0F) had been measured in the southern Alps, central Valais and the Lake Geneva region, but had only exceeded the threshold to be considered a heatwave (average temperature of 25\u00c2\u00b0C (77\u00c2\u00b0F) throughout the day) at the local level.",
             "United Kingdom": "On 14 June, in view of the Met Office's forecast of high temperatures, the UK Health Security Agency (UKHSA) issued level 2 'alert and readiness' alerts in several regions for the period between midnight on 16 June and midnight on 18 June. The affected regions were London, the East Midlands, the East, South East and South West England."
+        },
+        "Country": [
+            "Andorra",
+            "Austria",
+            "Belgium",
+            "Croatia",
+            "Denmark",
+            "Finland",
+            "France",
+            "Germany",
+            "Greece",
+            "Hungary",
+            "Iceland",
+            "Ireland",
+            "Italy",
+            "Luxembourg",
+            "Malta",
+            "Netherlands",
+            "Norway",
+            "Poland",
+            "Portugal",
+            "San Marino",
+            "Serbia",
+            "Slovakia",
+            "Slovenia",
+            "Spain",
+            "Switzerland",
+            "United Kingdom",
+            "Vatican"
+        ],
+        "Country_with_Annotation": {
+            "Andorra": "On 15 June, Andorra's weather agency, the National Meteorological Service of Andorra, issued a 'significant danger weather warning' due to heat.",
+            "Austria": "On 30 June, a temperature of 36.7\u00c2\u00b0C (98.1\u00c2\u00b0F) was recorded in Bad Deutsch-Altenburg, this was also Austria's heat record for June.",
+            "Belgium": "On 19 July, the temperature reached 38.1\u00c2\u00b0C (100.6\u00c2\u00b0F) in Uccle, with the highest temperature that day being 40.0\u00c2\u00b0C (104.0\u00c2\u00b0F) in Kapelle-op-den-Bos.",
+            "Croatia": "The heat dome which caused extreme temperatures in north-west Europe was expected to affect Croatia from 21 to 24 July.",
+            "Denmark": "On 20 July, it reached 35.9\u00c2\u00b0C (96.6\u00c2\u00b0F) in Abed, Stokkemarke Parish, Lolland Municipality, breaking the all-time temperature record for that month.",
+            "Finland": "Finland was hit by the heatwaves in late June and early July. The highest temperature of 32.5\u00c2\u00b0C (90.5\u00c2\u00b0F) was measured on 29 June in Utsjoki.",
+            "France": "On 16 June, M\u00e9t\u00e9o-France activated its red alert in 12 departments and its orange alert in another 25 because of the heatwave.",
+            "Germany": "From 14 to 20 June, Germany saw 1,636 probable heat-related deaths attributed to temperatures reaching 39.2\u00c2\u00b0C (102.6\u00c2\u00b0F).",
+            "Greece": "From mid\u2013June to mid\u2013August, Greece experienced one of its biggest heatwaves.",
+            "Hungary": "On 22 July, a temperature of 38.5\u00c2\u00b0C (101.3\u00c2\u00b0F) was reported at \u00dajpest in Budapest, which broke the maximum temperature record for that day in the city.",
+            "Iceland": "On 15 August 2022 the temperature reached 30.1\u00c2\u00b0C (86.2\u00c2\u00b0F) in Neskaupstadur. It was Iceland's warmest day since 22 June 1939.",
+            "Ireland": "Met \u00c9ireann issued a high-temperature advisory on 13 July, with temperatures forecast to reach the high 20s and possibly exceeding 30\u00c2\u00b0C (86\u00c2\u00b0F) from 17 to 19 July.",
+            "Italy": "In Italy, the number of wildfires was three times the historical average by the end of June.",
+            "Luxembourg": "On 18 June, the temperature reached 33.8\u00c2\u00b0C (92.8\u00c2\u00b0F) in Luxembourg City.",
+            "Malta": "June was record warm for Malta, and the temperature reached a record high for June with 39.0\u00c2\u00b0C (102.2\u00c2\u00b0F) on 28 June.",
+            "Netherlands": "On 18 July, the Royal Netherlands Meteorological Institute issued a code orange heat warning for the central and southern provinces.",
+            "Norway": "In July, the Norwegian Meteorological Institute reported that several areas may reach temperatures higher than 30\u00c2\u00b0C (86\u00c2\u00b0F).",
+            "Poland": "On 19 June, temperatures in western Poland exceeded 36\u00c2\u00b0C (97\u00c2\u00b0F). In S\u0142ubice, the highest temperature was 38.3\u00c2\u00b0C (100.9\u00c2\u00b0F).",
+            "Portugal": "According to Instituto Portugu\u00eas do Mar e da Atmosfera (IPMA), the heatwave was the longest and had the greatest area extension of any July heatwave in Portugal since 1941.",
+            "San Marino": "In late July, San Marino experienced a heatwave. On 24 July the temperature reached 39.6\u00c2\u00b0C (103.3\u00c2\u00b0F) in Dogana.",
+            "Serbia": "On 23 July the temperature reached 40.0\u00c2\u00b0C (104.0\u00c2\u00b0F) in Ni\u0161, only 4.9\u00c2\u00b0C under the record from 2007.",
+            "Slovakia": "The first tropical day (Slovak: tropick\u00fd de\u0148), a day with a temperature of over 30\u00c2\u00b0C (86\u00c2\u00b0F) as defined by the Slovak Hydrometeorological Institute, was recorded in Doln\u00e9 Plachtince on 22 June.",
+            "Slovenia": "On 28 June, the Slovenian Environment Agency (ARSO) recorded a temperature of 38.0\u00c2\u00b0C (100.4\u00c2\u00b0F) in Podnanos.",
+            "Spain": "A special heat warning was activated by the AEMET on 10 June, but only for 12 provinces and with yellow alerts in Aragon, Castilla-La Mancha, Catalonia, Extremadura and Madrid.",
+            "Switzerland": "On 15 June, a heat-wave alert was activated in the canton of Ticino.",
+            "United Kingdom": "On 14 June, in view of the Met Office's forecast of high temperatures, the UK Health Security Agency (UKHSA) issued level 2 'alert and readiness' alerts in several regions.",
+            "Vatican": "The Vatican was also affected by the heatwave like surrounding Italy. On 28 June 2022, the Vatican measured its highest temperature ever recorded when the temperature reached 40.8\u00c2\u00b0C (105.4\u00c2\u00b0F)."
         },
         "Start_Date": "10 June 2022",
         "End_Date": "12 September 2022",
@@ -2351,413 +2465,429 @@
             "Massachusetts": "Strong winds felled trees and numerous limbs in Massachusetts, causing power outages and property damage in the western and central portions of the state.",
             "New Hampshire": "Similar conditions occurred in New Hampshire, albeit effects were lesser."
         },
-        "Start_Date": "June 14, 1972",
-        "End_Date": "July 6, 1972",
-        "Time_with_Annotation": "Formed: June 14, 1972 (June 14, 1972)\nExtratropical: June 23, 1972\nDissipated: July 6, 1972 (July 6, 1972)",
-        "Total_Summary_Death": {
-            "Total_Deaths": "128 direct",
-            "Total_Death_Annotation": "The hurricane's death toll was 128."
-        },
-        "Specific_Instance_Per_Country_Death": [
-            {
-                "Country": "United States",
-                "Location_Death": "Pennsylvania",
-                "Start_Date_Death": "NULL",
-                "End_Date_Death": "NULL",
-                "Num_Death": "50",
-                "Death_with_annotation": "The damage and death toll was the highest in Pennsylvania, with 50 fatalities and $2.3 billion in losses in that state alone."
-            },
-            {
-                "Country": "United States",
-                "Location_Death": "Virginia",
-                "Start_Date_Death": "NULL",
-                "End_Date_Death": "NULL",
-                "Num_Death": "13",
-                "Death_with_annotation": "In Virginia alone, 13 fatalities and $125.9 million in losses were reported."
-            },
-            {
-                "Country": "United States",
-                "Location_Death": "Maryland",
-                "Start_Date_Death": "NULL",
-                "End_Date_Death": "NULL",
-                "Num_Death": "19",
-                "Death_with_annotation": "In the state of Maryland, damage totaled to $110 million and 19 fatalities were reported."
-            },
-            {
-                "Country": "United States",
-                "Location_Death": "Delaware",
-                "Start_Date_Death": "NULL",
-                "End_Date_Death": "NULL",
-                "Num_Death": "1",
-                "Death_with_annotation": "One fatality occurred in that state."
-            },
-            {
-                "Country": "Cuba",
-                "Location_Death": "NULL",
-                "Start_Date_Death": "NULL",
-                "End_Date_Death": "NULL",
-                "Num_Death": "7",
-                "Death_with_annotation": "Overall, seven fatalities occurred in Cuba, though the damage toll is unknown."
-            },
-            {
-                "Country": "Canada",
-                "Location_Death": "Maniwaki, Quebec",
-                "Start_Date_Death": "NULL",
-                "End_Date_Death": "NULL",
-                "Num_Death": "2",
-                "Death_with_annotation": "In Canada, a mobile home was toppled, killing two people."
-            }
+        "Country": [
+            "Mexico",
+            "Cuba",
+            "United States",
+            "Canada",
+            "Iceland",
+            "British Isles"
         ],
-        "Total_Summary_Injuries": {
-            "Total_Injuries": "23",
-            "Total_Injuries_Annotation": "The tornadoes and two initially unconfirmed tornadoes in Florida alone resulted in over $4.5 million (1972 USD) in damage and six fatalities. At least 2,082 structures in Florida suffered either major damage or were destroyed. About 1,355 other dwellings experienced minor losses. Though Agnes made landfall as a hurricane, no hurricane-force winds were reported. Along the coast abnormally high tides resulted in extensive damage, especially between Apalachicola and Cedar Key. Light to moderate rainfall was reported in Florida, though no significant flooding occurred. In Georgia, damage was limited to two tornadoes, which caused approximately $275,000 in losses. Minimal effects were also recorded in Alabama, Connecticut, Delaware, Rhode Island, South Carolina, and Tennessee; though one fatality was reported in Delaware. The most significant effects, by far, occurred in Pennsylvania, mostly due to intense flooding. The hurricane severely flooded the Susquehanna River and the Lackawanna River causing major damage to the Wilkes-Barre/Scranton metropolitan area. In both Pennsylvania and New Jersey combined, about 43,594 structures were either destroyed or significantly damaged. In Canada, a mobile home was toppled, killing two people."
+        "Country_with_Annotation": {
+            "Mexico": "Though it moved slowly across the Yucat\u00e1n Peninsula, the damage Agnes caused in Mexico is unknown.",
+            "Cuba": "Although the storm bypassed the tip of Cuba, heavy rainfall occurred, killing seven people.",
+            "United States": "In the United States, Agnes affected 15 states and the capital area of Washington D.C. Almost 110,000 houses were ruined by Agnes, 3,351 of which were destroyed.",
+            "Canada": "In Canada, a mobile home was toppled, killing two people.",
+            "Iceland": "A stronger system moving in from the west finally absorbed Agnes on July 6, while located to the southeast of Iceland.",
+            "British Isles": "The system turned northeast, strengthening one more time while accelerating across the Hebrides on July 4 through 5."
         },
-        "Specific_Instance_Per_Country_Injuries": [
-            {
-                "Country": "United States",
-                "Location_Injuries": "Florida",
-                "Start_Date_Injuries": "NULL",
-                "End_Date_Injuries": "NULL",
-                "Num_Injuries": "23",
-                "Injuries_with_annotation": "Initially referred to as a 'windstorm', one of those twisters destroyed 50 mobile homes and a fishing camp in Okeechobee, as well as caused six fatalities. Another significant tornado occurred in Cape Canaveral, which destroyed two homes and 30 trailers; it also damaged 20 houses and the Port Canaveral Coast Guard station. Overall, more than 100 people were left homeless and caused 23 injuries and over $500,000 in damage."
-            },
-            {
-                "Country": "Canada",
-                "Location_Injuries": "Maniwaki, Quebec",
-                "Start_Date_Injuries": "NULL",
-                "End_Date_Injuries": "NULL",
-                "Num_Injuries": "11",
-                "Injuries_with_annotation": "The cyclone sped east-northeast, reaching Cape Breton Island on June 27 before intensifying as it re-entered the North Atlantic. After moving as far north as the 61st parallel while crossing the 25th meridian west on the morning of June 29, Agnes turned southeastward. Its central pressure bottomed out near 980 millibars (29 inHg) towards 0000 UTC on June 30. Between July 1 and July 3, the long-lived system looped between Ireland and Iceland while weakening once more. The system turned northeast, strengthening one more time while accelerating across the Hebrides on July 4 through 5. A stronger system moving in from the west finally absorbed Agnes on July 6, while located to the southeast of Iceland. The system looped across south-central Pennsylvania on June 23 and then looped across southern Ontario on June 25. It spawned a tornado in Maniwaki, Qu\u00e9bec, early that day, which killed two and injured 11 people."
-            }
-        ],
-        "Total_Summary_Displacement": {
-            "Total_Displacement": "At least 220,000 people",
-            "Total_Displacement_Annotation": "Throughout the state of Pennsylvania, Agnes demolished more than 3,000 businesses and 68,000 homes, while damaging numerous others. Consequently, at least 220,000 people were left homeless."
+    "Start_Date": "June 14, 1972",
+    "End_Date": "July 6, 1972",
+    "Time_with_Annotation": "Formed: June 14, 1972 (June 14, 1972)\nExtratropical: June 23, 1972\nDissipated: July 6, 1972 (July 6, 1972)",
+    "Total_Summary_Death": {
+        "Total_Deaths": "128 direct",
+        "Total_Death_Annotation": "The hurricane's death toll was 128."
+    },
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "United States",
+            "Location_Death": "Pennsylvania",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "50",
+            "Death_with_annotation": "The damage and death toll was the highest in Pennsylvania, with 50 fatalities and $2.3 billion in losses in that state alone."
         },
-        "Specific_Instance_Per_Country_Displacement": [
-            {
-                "Country": "United States",
-                "Location_Displacement": "Pennsylvania",
-                "Start_Date_Displacement": "NULL",
-                "End_Date_Displacement": "NULL",
-                "Num_Displacement": "At least 220,000 people",
-                "Displacement_with_annotation": "Throughout the state of Pennsylvania, Agnes demolished more than 3,000 businesses and 68,000 homes, while damaging numerous others. Consequently, at least 220,000 people were left homeless."
-            },
-            {
-                "Country": "United States",
-                "Location_Displacement": "Virginia",
-                "Start_Date_Displacement": "NULL",
-                "End_Date_Displacement": "NULL",
-                "Num_Displacement": "704 county residents",
-                "Displacement_with_annotation": "In Howard County, a total of 704 county residents were left homeless."
-            },
-            {
-                "Country": "United States",
-                "Location_Displacement": "Washington, D.C.",
-                "Start_Date_Displacement": "NULL",
-                "End_Date_Displacement": "NULL",
-                "Num_Displacement": "At least 100 people",
-                "Displacement_with_annotation": "As a result, at least 100 cars were abandoned and several motorists required rescuing by police."
-            },
-            {
-                "Country": "United States",
-                "Location_Displacement": "West Virginia",
-                "Start_Date_Displacement": "NULL",
-                "End_Date_Displacement": "NULL",
-                "Num_Displacement": "NULL",
-                "Displacement_with_annotation": "108 houses were destroyed and 1,558 others suffered damage. Furthermore, 118 mobile homes were destroyed and 91 were significantly affected."
-            },
-            {
-                "Country": "Cuba",
-                "Location_Displacement": "Western Cuba",
-                "Start_Date_Displacement": "NULL",
-                "End_Date_Displacement": "NULL",
-                "Num_Displacement": "Hundreds of people",
-                "Displacement_with_annotation": "In western Cuba, Agnes dropped heavy rainfall, peaking at 16.76 inches (426 mm) on Isla de la Juventud. At Cape San Antonio, the westernmost point in Cuba, precipitation reached 15.32 inches (389 mm). Due to high winds and flooding, at least 97 houses were destroyed and another 270 were damaged."
-            },
-            {
-                "Country": "Canada",
-                "Location_Displacement": "Maniwaki, Quebec",
-                "Start_Date_Displacement": "NULL",
-                "End_Date_Displacement": "NULL",
-                "Num_Displacement": "NULL",
-                "Displacement_with_annotation": "In the town of Maniwaki, Quebec, the storm toppled a mobile home, killing two people."
-            }
-        ],
-        "Total_Summary_Homelessness": {
-            "Total_Homelessness": "220,000",
-            "Total_Homelessness_Annotation": "Throughout the state of Pennsylvania, Agnes demolished more than 3,000 businesses and 68,000 homes, while damaging numerous others. Consequently, at least 220,000 people were left homeless."
+        {
+            "Country": "United States",
+            "Location_Death": "Virginia",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "13",
+            "Death_with_annotation": "In Virginia alone, 13 fatalities and $125.9 million in losses were reported."
         },
-        "Specific_Instance_Per_Country_Homelessness": [
-            {
-                "Country": "United States",
-                "Location_Homelessness": "Pennsylvania",
-                "Start_Date_Homelessness": "NULL",
-                "End_Date_Homelessness": "NULL",
-                "Num_Homelessness": "220,000",
-                "Homelessness_with_annotation": "Throughout the state of Pennsylvania, Agnes demolished more than 3,000 businesses and 68,000 homes, while damaging numerous others. Consequently, at least 220,000 people were left homeless."
-            },
-            {
-                "Country": "United States",
-                "Location_Homelessness": "Virginia",
-                "Start_Date_Homelessness": "NULL",
-                "End_Date_Homelessness": "NULL",
-                "Num_Homelessness": "NULL",
-                "Homelessness_with_annotation": "In Richmond, four people drowned after their car plunged into the swollen James River. A train bound for Washington D.C. stopped due to flooding in Richmond, which temporarily stranded 537 passengers. The Peak Creek in western Virginia overflowed its banks, flooding a low-income housing area of Pulaski with water up to rooftops."
-            },
-            {
-                "Country": "United States",
-                "Location_Homelessness": "Maryland",
-                "Start_Date_Homelessness": "NULL",
-                "End_Date_Homelessness": "NULL",
-                "Num_Homelessness": "NULL",
-                "Homelessness_with_annotation": "In Baltimore, a woman's car was swept off a highway; firemen in rowboats were able to rescue her, but her three children drowned. In the state of Maryland, damage totaled to $110 million and 19 fatalities were reported."
-            },
-            {
-                "Country": "United States",
-                "Location_Homelessness": "Howard County",
-                "Start_Date_Homelessness": "NULL",
-                "End_Date_Homelessness": "NULL",
-                "Num_Homelessness": "704",
-                "Homelessness_with_annotation": "In Howard County, a total of 704 county residents were left homeless. More than 80 homes in the Ellicott City area were damaged and 72 homes in Elkridge were affected."
-            },
-            {
-                "Country": "United States",
-                "Location_Homelessness": "West Virginia",
-                "Start_Date_Homelessness": "NULL",
-                "End_Date_Homelessness": "NULL",
-                "Num_Homelessness": "NULL",
-                "Homelessness_with_annotation": "Rainfall in West Virginia was generally light, though heavier in the Eastern and Northern Panhandles of the state. 108 houses were destroyed and 1,558 others suffered damage. Furthermore, 118 mobile homes were destroyed and 91 were significantly affected."
-            },
-            {
-                "Country": "United States",
-                "Location_Homelessness": "Washington, D.C.",
-                "Start_Date_Homelessness": "NULL",
-                "End_Date_Homelessness": "NULL",
-                "Num_Homelessness": "NULL",
-                "Homelessness_with_annotation": "In the Washington, D.C. area, moderate rainfall was reported, with precipitation amounts peaking at 13.65 inches at the Washington Dulles International Airport. Significant flooding occurred and it was described as the worst in at least 44 years. In the Georgetown section, waterfront streets along the Potomac River were submerged in as much as 7 feet of water. The Rock Creek also overflowed its banks, which sent about 10 feet of water onto the Rock Creek Parkway. As a result, at least 100 cars were abandoned and several motorists required rescuing by police."
-            }
-        ],
-        "Total_Summary_Affected": {
-            "Total_Affected": "220,000+",
-            "Total_Affected_Annotation": "Throughout the state of Pennsylvania, Agnes demolished more than 3,000 businesses and 68,000 homes, while damaging numerous others. Consequently, at least 220,000 people were left homeless."
+        {
+            "Country": "United States",
+            "Location_Death": "Maryland",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "19",
+            "Death_with_annotation": "In the state of Maryland, damage totaled to $110 million and 19 fatalities were reported."
         },
-        "Specific_Instance_Per_Country_Affected": [
-            {
-                "Country": "United States",
-                "Location_Affected": "Pennsylvania",
-                "Start_Date_Affected": "NULL",
-                "End_Date_Affected": "NULL",
-                "Num_Affected": "220,000+",
-                "Affected_with_annotation": "Throughout the state of Pennsylvania, Agnes demolished more than 3,000 businesses and 68,000 homes, while damaging numerous others. Consequently, at least 220,000 people were left homeless."
-            },
-            {
-                "Country": "United States",
-                "Location_Affected": "Wilkes-Barre/Scranton metropolitan area",
-                "Start_Date_Affected": "NULL",
-                "End_Date_Affected": "NULL",
-                "Num_Affected": "NULL",
-                "Affected_with_annotation": "The hurricane severely flooded the Susquehanna River and the Lackawanna River causing major damage to the Wilkes-Barre/Scranton metropolitan area."
-            },
-            {
-                "Country": "United States",
-                "Location_Affected": "Washington D.C.",
-                "Start_Date_Affected": "NULL",
-                "End_Date_Affected": "NULL",
-                "Num_Affected": "NULL",
-                "Affected_with_annotation": "In the United States, Agnes affected 15 states and the capital area of Washington D.C."
-            },
-            {
-                "Country": "United States",
-                "Location_Affected": "Florida",
-                "Start_Date_Affected": "NULL",
-                "End_Date_Affected": "NULL",
-                "Num_Affected": "NULL",
-                "Affected_with_annotation": "In Florida, Agnes caused a significant tornado outbreak, with at least 26 confirmed twisters."
-            },
-            {
-                "Country": "Cuba",
-                "Location_Affected": "western Cuba",
-                "Start_Date_Affected": "NULL",
-                "End_Date_Affected": "NULL",
-                "Num_Affected": "NULL",
-                "Affected_with_annotation": "In western Cuba, Agnes dropped heavy rainfall, peaking at 16.76 inches (426 mm) on Isla de la Juventud. At Cape San Antonio, the westernmost point in Cuba, precipitation reached 15.32 inches (389 mm). Due to high winds and flooding, at least 97 houses were destroyed and another 270 were damaged."
-            },
-            {
-                "Country": "Canada",
-                "Location_Affected": "southern Ontario and southern Quebec",
-                "Start_Date_Affected": "NULL",
-                "End_Date_Affected": "NULL",
-                "Num_Affected": "NULL",
-                "Affected_with_annotation": "In Canada, Hurricane Agnes gave heavy rains and winds over southern Ontario and southern Quebec, causing numerous floodings around Lake Erie and Lake Ontario."
-            }
-        ],
-        "Total_Summary_Insured_Damage": {
-            "Total_Insured_Damage": "NULL",
-            "Total_Insured_Damage_Units": "NULL",
-            "Total_Insured_Damage_Inflation_Adjusted": "No",
-            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-            "Total_Insured_Damage_Assessment_with_annotation": "The article does not provide specific information regarding the total insured damage caused by Hurricane Agnes."
+        {
+            "Country": "United States",
+            "Location_Death": "Delaware",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "1",
+            "Death_with_annotation": "One fatality occurred in that state."
         },
-        "Specific_Instance_Per_Country_Insured_Damage": [],
-        "Total_Summary_Damage": {
-            "Total_Damage": "$2.1 billion",
-            "Total_Damage_Units": "USD",
-            "Total_Damage_Inflation_Adjusted": "No",
-            "Total_Damage_Inflation_Adjusted_Year": "NULL",
-            "Economic_Impact_with_annotation": "Hurricane Agnes was the costliest hurricane to hit the United States at the time, causing an estimated $2.1 billion in damage."
+        {
+            "Country": "Cuba",
+            "Location_Death": "NULL",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "7",
+            "Death_with_annotation": "Overall, seven fatalities occurred in Cuba, though the damage toll is unknown."
         },
-        "Specific_Instance_Per_Country_Damage": [
-            {
-                "Country": "United States",
-                "Location_Damage": "Pennsylvania",
-                "Damage": "$2.3 billion",
-                "Damage_Units": "USD",
-                "Damage_Inflation_Adjusted": "No",
-                "Damage_Inflation_Adjusted_Year": "NULL",
-                "Impact_Assessment_with_annotation": "The damage and death toll was the highest in Pennsylvania, with 50 fatalities and $2.3 billion in losses in that state alone."
-            },
-            {
-                "Country": "United States",
-                "Location_Damage": "Maryland",
-                "Damage": "$110 million",
-                "Damage_Units": "USD",
-                "Damage_Inflation_Adjusted": "No",
-                "Damage_Inflation_Adjusted_Year": "NULL",
-                "Impact_Assessment_with_annotation": "In the state of Maryland, damage totaled to $110 million and 19 fatalities were reported."
-            },
-            {
-                "Country": "United States",
-                "Location_Damage": "Virginia",
-                "Damage": "$125.9 million",
-                "Damage_Units": "USD",
-                "Damage_Inflation_Adjusted": "No",
-                "Damage_Inflation_Adjusted_Year": "NULL",
-                "Impact_Assessment_with_annotation": "In Virginia alone, 13 fatalities and $125.9 million in losses were reported."
-            },
-            {
-                "Country": "United States",
-                "Location_Damage": "Florida",
-                "Damage": "At least $39 million",
-                "Damage_Units": "USD",
-                "Damage_Inflation_Adjusted": "No",
-                "Damage_Inflation_Adjusted_Year": "NULL",
-                "Impact_Assessment_with_annotation": "Although the damage toll estimated by the National Hurricane Center was at $8.243 million, the National Climatic Data Center noted that at least $39 million in losses were reported."
-            },
-            {
-                "Country": "United States",
-                "Location_Damage": "West Virginia",
-                "Damage": "More than $7.7 million",
-                "Damage_Units": "USD",
-                "Damage_Inflation_Adjusted": "No",
-                "Damage_Inflation_Adjusted_Year": "NULL",
-                "Impact_Assessment_with_annotation": "In the state of West Virginia, no fatalities were reported and damage was slightly more than $7.7 million."
-            },
-            {
-                "Country": "United States",
-                "Location_Damage": "Ohio",
-                "Damage": "At least $4 million",
-                "Damage_Units": "USD",
-                "Damage_Inflation_Adjusted": "No",
-                "Damage_Inflation_Adjusted_Year": "NULL",
-                "Impact_Assessment_with_annotation": "Overall, losses in Ohio totaled to at least $4 million."
-            },
-            {
-                "Country": "Cuba",
-                "Location_Damage": "Cuba",
-                "Damage": "Unknown",
-                "Damage_Units": "NULL",
-                "Damage_Inflation_Adjusted": "No",
-                "Damage_Inflation_Adjusted_Year": "NULL",
-                "Impact_Assessment_with_annotation": "Although the storm bypassed the tip of Cuba, heavy rainfall occurred, killing seven people. ... the damage Agnes caused in Mexico is unknown."
-            },
-            {
-                "Country": "Canada",
-                "Location_Damage": "Quebec",
-                "Damage": "Unknown",
-                "Damage_Units": "NULL",
-                "Damage_Inflation_Adjusted": "No",
-                "Damage_Inflation_Adjusted_Year": "NULL",
-                "Impact_Assessment_with_annotation": "In Canada, a mobile home was toppled, killing two people."
-            }
-        ],
-        "Total_Summary_Building_Damage": {
-            "Total_Buildings_Damage": "NULL",
-            "Total_Building_Damage_with_annotation": "The article does not provide a specific total number of buildings reported as damaged due to Hurricane Agnes."
+        {
+            "Country": "Canada",
+            "Location_Death": "Maniwaki, Quebec",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "2",
+            "Death_with_annotation": "In Canada, a mobile home was toppled, killing two people."
+        }
+    ],
+    "Total_Summary_Injuries": {
+        "Total_Injuries": "23",
+        "Total_Injuries_Annotation": "The tornadoes and two initially unconfirmed tornadoes in Florida alone resulted in over $4.5 million (1972 USD) in damage and six fatalities. At least 2,082 structures in Florida suffered either major damage or were destroyed. About 1,355 other dwellings experienced minor losses. Though Agnes made landfall as a hurricane, no hurricane-force winds were reported. Along the coast abnormally high tides resulted in extensive damage, especially between Apalachicola and Cedar Key. Light to moderate rainfall was reported in Florida, though no significant flooding occurred. In Georgia, damage was limited to two tornadoes, which caused approximately $275,000 in losses. Minimal effects were also recorded in Alabama, Connecticut, Delaware, Rhode Island, South Carolina, and Tennessee; though one fatality was reported in Delaware. The most significant effects, by far, occurred in Pennsylvania, mostly due to intense flooding. The hurricane severely flooded the Susquehanna River and the Lackawanna River causing major damage to the Wilkes-Barre/Scranton metropolitan area. In both Pennsylvania and New Jersey combined, about 43,594 structures were either destroyed or significantly damaged. In Canada, a mobile home was toppled, killing two people."
+    },
+    "Specific_Instance_Per_Country_Injuries": [
+        {
+            "Country": "United States",
+            "Location_Injuries": "Florida",
+            "Start_Date_Injuries": "NULL",
+            "End_Date_Injuries": "NULL",
+            "Num_Injuries": "23",
+            "Injuries_with_annotation": "Initially referred to as a 'windstorm', one of those twisters destroyed 50 mobile homes and a fishing camp in Okeechobee, as well as caused six fatalities. Another significant tornado occurred in Cape Canaveral, which destroyed two homes and 30 trailers; it also damaged 20 houses and the Port Canaveral Coast Guard station. Overall, more than 100 people were left homeless and caused 23 injuries and over $500,000 in damage."
         },
-        "Specific_Instance_Per_Country_Building_Damage": [
-            {
-                "Country": "United States",
-                "Location_Building_Damage": "Pennsylvania",
-                "Start_Date_Building_Damage": "NULL",
-                "End_Date_Building_Damage": "NULL",
-                "Building_Damage": "43,594",
-                "Building_Damage_with_annotation": "In both Pennsylvania and New Jersey combined, about 43,594 structures were either destroyed or significantly damaged."
-            },
-            {
-                "Country": "United States",
-                "Location_Building_Damage": "Florida",
-                "Start_Date_Building_Damage": "NULL",
-                "End_Date_Building_Damage": "NULL",
-                "Building_Damage": "2,082",
-                "Building_Damage_with_annotation": "At least 2,082 structures in Florida suffered either major damage or were destroyed."
-            },
-            {
-                "Country": "Canada",
-                "Location_Building_Damage": "Maniwaki, Quebec",
-                "Start_Date_Building_Damage": "NULL",
-                "End_Date_Building_Damage": "NULL",
-                "Building_Damage": "NULL",
-                "Building_Damage_with_annotation": "In Canada, a mobile home was toppled, killing two people."
-            },
-            {
-                "Country": "United States",
-                "Location_Building_Damage": "Virginia",
-                "Start_Date_Building_Damage": "NULL",
-                "End_Date_Building_Damage": "NULL",
-                "Building_Damage": "NULL",
-                "Building_Damage_with_annotation": "95 houses were destroyed and 4,393 others were damaged, while 125 mobile homes were destroyed and another 450 were significantly affected."
-            },
-            {
-                "Country": "United States",
-                "Location_Building_Damage": "Maryland",
-                "Start_Date_Building_Damage": "NULL",
-                "End_Date_Building_Damage": "NULL",
-                "Building_Damage": "NULL",
-                "Building_Damage_with_annotation": "In the state of Maryland, damage totaled to $110 million."
-            },
-            {
-                "Country": "United States",
-                "Location_Building_Damage": "West Virginia",
-                "Start_Date_Building_Damage": "NULL",
-                "End_Date_Building_Damage": "NULL",
-                "Building_Damage": "1,666",
-                "Building_Damage_with_annotation": "108 houses were destroyed and 1,558 others suffered damage. Furthermore, 118 mobile homes were destroyed and 91 were significantly affected."
-            },
-            {
-                "Country": "United States",
-                "Location_Building_Damage": "Ohio",
-                "Start_Date_Building_Damage": "NULL",
-                "End_Date_Building_Damage": "NULL",
-                "Building_Damage": "NULL",
-                "Building_Damage_with_annotation": "The storm caused minor damage to about 302 dwellings and severely affected at least three houses."
-            },
-            {
-                "Country": "United States",
-                "Location_Building_Damage": "Washington, D.C.",
-                "Start_Date_Building_Damage": "NULL",
-                "End_Date_Building_Damage": "NULL",
-                "Building_Damage": "350",
-                "Building_Damage_with_annotation": "About 350 dwellings in Washington, D.C. suffered minor damage."
-            },
-            {
-                "Country": "Cuba",
-                "Location_Building_Damage": "Western Cuba",
-                "Start_Date_Building_Damage": "NULL",
-                "End_Date_Building_Damage": "NULL",
-                "Building_Damage": "NULL",
-                "Building_Damage_with_annotation": "Due to high winds and flooding, at least 97 houses were destroyed and another 270 were damaged."
-            }
-        ]
-    }
+        {
+            "Country": "Canada",
+            "Location_Injuries": "Maniwaki, Quebec",
+            "Start_Date_Injuries": "NULL",
+            "End_Date_Injuries": "NULL",
+            "Num_Injuries": "11",
+            "Injuries_with_annotation": "The cyclone sped east-northeast, reaching Cape Breton Island on June 27 before intensifying as it re-entered the North Atlantic. After moving as far north as the 61st parallel while crossing the 25th meridian west on the morning of June 29, Agnes turned southeastward. Its central pressure bottomed out near 980 millibars (29 inHg) towards 0000 UTC on June 30. Between July 1 and July 3, the long-lived system looped between Ireland and Iceland while weakening once more. The system turned northeast, strengthening one more time while accelerating across the Hebrides on July 4 through 5. A stronger system moving in from the west finally absorbed Agnes on July 6, while located to the southeast of Iceland. The system looped across south-central Pennsylvania on June 23 and then looped across southern Ontario on June 25. It spawned a tornado in Maniwaki, Qu\u00e9bec, early that day, which killed two and injured 11 people."
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "At least 220,000 people",
+        "Total_Displacement_Annotation": "Throughout the state of Pennsylvania, Agnes demolished more than 3,000 businesses and 68,000 homes, while damaging numerous others. Consequently, at least 220,000 people were left homeless."
+    },
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "United States",
+            "Location_Displacement": "Pennsylvania",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "At least 220,000 people",
+            "Displacement_with_annotation": "Throughout the state of Pennsylvania, Agnes demolished more than 3,000 businesses and 68,000 homes, while damaging numerous others. Consequently, at least 220,000 people were left homeless."
+        },
+        {
+            "Country": "United States",
+            "Location_Displacement": "Virginia",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "704 county residents",
+            "Displacement_with_annotation": "In Howard County, a total of 704 county residents were left homeless."
+        },
+        {
+            "Country": "United States",
+            "Location_Displacement": "Washington, D.C.",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "At least 100 people",
+            "Displacement_with_annotation": "As a result, at least 100 cars were abandoned and several motorists required rescuing by police."
+        },
+        {
+            "Country": "United States",
+            "Location_Displacement": "West Virginia",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "108 houses were destroyed and 1,558 others suffered damage. Furthermore, 118 mobile homes were destroyed and 91 were significantly affected."
+        },
+        {
+            "Country": "Cuba",
+            "Location_Displacement": "Western Cuba",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "Hundreds of people",
+            "Displacement_with_annotation": "In western Cuba, Agnes dropped heavy rainfall, peaking at 16.76 inches (426 mm) on Isla de la Juventud. At Cape San Antonio, the westernmost point in Cuba, precipitation reached 15.32 inches (389 mm). Due to high winds and flooding, at least 97 houses were destroyed and another 270 were damaged."
+        },
+        {
+            "Country": "Canada",
+            "Location_Displacement": "Maniwaki, Quebec",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "In the town of Maniwaki, Quebec, the storm toppled a mobile home, killing two people."
+        }
+    ],
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "220,000",
+        "Total_Homelessness_Annotation": "Throughout the state of Pennsylvania, Agnes demolished more than 3,000 businesses and 68,000 homes, while damaging numerous others. Consequently, at least 220,000 people were left homeless."
+    },
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "United States",
+            "Location_Homelessness": "Pennsylvania",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "220,000",
+            "Homelessness_with_annotation": "Throughout the state of Pennsylvania, Agnes demolished more than 3,000 businesses and 68,000 homes, while damaging numerous others. Consequently, at least 220,000 people were left homeless."
+        },
+        {
+            "Country": "United States",
+            "Location_Homelessness": "Virginia",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "In Richmond, four people drowned after their car plunged into the swollen James River. A train bound for Washington D.C. stopped due to flooding in Richmond, which temporarily stranded 537 passengers. The Peak Creek in western Virginia overflowed its banks, flooding a low-income housing area of Pulaski with water up to rooftops."
+        },
+        {
+            "Country": "United States",
+            "Location_Homelessness": "Maryland",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "In Baltimore, a woman's car was swept off a highway; firemen in rowboats were able to rescue her, but her three children drowned. In the state of Maryland, damage totaled to $110 million and 19 fatalities were reported."
+        },
+        {
+            "Country": "United States",
+            "Location_Homelessness": "Howard County",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "704",
+            "Homelessness_with_annotation": "In Howard County, a total of 704 county residents were left homeless. More than 80 homes in the Ellicott City area were damaged and 72 homes in Elkridge were affected."
+        },
+        {
+            "Country": "United States",
+            "Location_Homelessness": "West Virginia",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "Rainfall in West Virginia was generally light, though heavier in the Eastern and Northern Panhandles of the state. 108 houses were destroyed and 1,558 others suffered damage. Furthermore, 118 mobile homes were destroyed and 91 were significantly affected."
+        },
+        {
+            "Country": "United States",
+            "Location_Homelessness": "Washington, D.C.",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "In the Washington, D.C. area, moderate rainfall was reported, with precipitation amounts peaking at 13.65 inches at the Washington Dulles International Airport. Significant flooding occurred and it was described as the worst in at least 44 years. In the Georgetown section, waterfront streets along the Potomac River were submerged in as much as 7 feet of water. The Rock Creek also overflowed its banks, which sent about 10 feet of water onto the Rock Creek Parkway. As a result, at least 100 cars were abandoned and several motorists required rescuing by police."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "220,000+",
+        "Total_Affected_Annotation": "Throughout the state of Pennsylvania, Agnes demolished more than 3,000 businesses and 68,000 homes, while damaging numerous others. Consequently, at least 220,000 people were left homeless."
+    },
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "United States",
+            "Location_Affected": "Pennsylvania",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "220,000+",
+            "Affected_with_annotation": "Throughout the state of Pennsylvania, Agnes demolished more than 3,000 businesses and 68,000 homes, while damaging numerous others. Consequently, at least 220,000 people were left homeless."
+        },
+        {
+            "Country": "United States",
+            "Location_Affected": "Wilkes-Barre/Scranton metropolitan area",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "The hurricane severely flooded the Susquehanna River and the Lackawanna River causing major damage to the Wilkes-Barre/Scranton metropolitan area."
+        },
+        {
+            "Country": "United States",
+            "Location_Affected": "Washington D.C.",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "In the United States, Agnes affected 15 states and the capital area of Washington D.C."
+        },
+        {
+            "Country": "United States",
+            "Location_Affected": "Florida",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "In Florida, Agnes caused a significant tornado outbreak, with at least 26 confirmed twisters."
+        },
+        {
+            "Country": "Cuba",
+            "Location_Affected": "western Cuba",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "In western Cuba, Agnes dropped heavy rainfall, peaking at 16.76 inches (426 mm) on Isla de la Juventud. At Cape San Antonio, the westernmost point in Cuba, precipitation reached 15.32 inches (389 mm). Due to high winds and flooding, at least 97 houses were destroyed and another 270 were damaged."
+        },
+        {
+            "Country": "Canada",
+            "Location_Affected": "southern Ontario and southern Quebec",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "In Canada, Hurricane Agnes gave heavy rains and winds over southern Ontario and southern Quebec, causing numerous floodings around Lake Erie and Lake Ontario."
+        }
+    ],
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "NULL",
+        "Total_Insured_Damage_Units": "NULL",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "The article does not provide specific information regarding the total insured damage caused by Hurricane Agnes."
+    },
+    "Specific_Instance_Per_Country_Insured_Damage": [],
+    "Total_Summary_Damage": {
+        "Total_Damage": "$2.1 billion",
+        "Total_Damage_Units": "USD",
+        "Total_Damage_Inflation_Adjusted": "No",
+        "Total_Damage_Inflation_Adjusted_Year": "NULL",
+        "Economic_Impact_with_annotation": "Hurricane Agnes was the costliest hurricane to hit the United States at the time, causing an estimated $2.1 billion in damage."
+    },
+    "Specific_Instance_Per_Country_Damage": [
+        {
+            "Country": "United States",
+            "Location_Damage": "Pennsylvania",
+            "Damage": "$2.3 billion",
+            "Damage_Units": "USD",
+            "Damage_Inflation_Adjusted": "No",
+            "Damage_Inflation_Adjusted_Year": "NULL",
+            "Impact_Assessment_with_annotation": "The damage and death toll was the highest in Pennsylvania, with 50 fatalities and $2.3 billion in losses in that state alone."
+        },
+        {
+            "Country": "United States",
+            "Location_Damage": "Maryland",
+            "Damage": "$110 million",
+            "Damage_Units": "USD",
+            "Damage_Inflation_Adjusted": "No",
+            "Damage_Inflation_Adjusted_Year": "NULL",
+            "Impact_Assessment_with_annotation": "In the state of Maryland, damage totaled to $110 million and 19 fatalities were reported."
+        },
+        {
+            "Country": "United States",
+            "Location_Damage": "Virginia",
+            "Damage": "$125.9 million",
+            "Damage_Units": "USD",
+            "Damage_Inflation_Adjusted": "No",
+            "Damage_Inflation_Adjusted_Year": "NULL",
+            "Impact_Assessment_with_annotation": "In Virginia alone, 13 fatalities and $125.9 million in losses were reported."
+        },
+        {
+            "Country": "United States",
+            "Location_Damage": "Florida",
+            "Damage": "At least $39 million",
+            "Damage_Units": "USD",
+            "Damage_Inflation_Adjusted": "No",
+            "Damage_Inflation_Adjusted_Year": "NULL",
+            "Impact_Assessment_with_annotation": "Although the damage toll estimated by the National Hurricane Center was at $8.243 million, the National Climatic Data Center noted that at least $39 million in losses were reported."
+        },
+        {
+            "Country": "United States",
+            "Location_Damage": "West Virginia",
+            "Damage": "More than $7.7 million",
+            "Damage_Units": "USD",
+            "Damage_Inflation_Adjusted": "No",
+            "Damage_Inflation_Adjusted_Year": "NULL",
+            "Impact_Assessment_with_annotation": "In the state of West Virginia, no fatalities were reported and damage was slightly more than $7.7 million."
+        },
+        {
+            "Country": "United States",
+            "Location_Damage": "Ohio",
+            "Damage": "At least $4 million",
+            "Damage_Units": "USD",
+            "Damage_Inflation_Adjusted": "No",
+            "Damage_Inflation_Adjusted_Year": "NULL",
+            "Impact_Assessment_with_annotation": "Overall, losses in Ohio totaled to at least $4 million."
+        },
+        {
+            "Country": "Cuba",
+            "Location_Damage": "Cuba",
+            "Damage": "Unknown",
+            "Damage_Units": "NULL",
+            "Damage_Inflation_Adjusted": "No",
+            "Damage_Inflation_Adjusted_Year": "NULL",
+            "Impact_Assessment_with_annotation": "Although the storm bypassed the tip of Cuba, heavy rainfall occurred, killing seven people. ... the damage Agnes caused in Mexico is unknown."
+        },
+        {
+            "Country": "Canada",
+            "Location_Damage": "Quebec",
+            "Damage": "Unknown",
+            "Damage_Units": "NULL",
+            "Damage_Inflation_Adjusted": "No",
+            "Damage_Inflation_Adjusted_Year": "NULL",
+            "Impact_Assessment_with_annotation": "In Canada, a mobile home was toppled, killing two people."
+        }
+    ],
+    "Total_Summary_Building_Damage": {
+        "Total_Buildings_Damage": "NULL",
+        "Total_Building_Damage_with_annotation": "The article does not provide a specific total number of buildings reported as damaged due to Hurricane Agnes."
+    },
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "United States",
+            "Location_Building_Damage": "Pennsylvania",
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Building_Damage": "43,594",
+            "Building_Damage_with_annotation": "In both Pennsylvania and New Jersey combined, about 43,594 structures were either destroyed or significantly damaged."
+        },
+        {
+            "Country": "United States",
+            "Location_Building_Damage": "Florida",
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Building_Damage": "2,082",
+            "Building_Damage_with_annotation": "At least 2,082 structures in Florida suffered either major damage or were destroyed."
+        },
+        {
+            "Country": "Canada",
+            "Location_Building_Damage": "Maniwaki, Quebec",
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "In Canada, a mobile home was toppled, killing two people."
+        },
+        {
+            "Country": "United States",
+            "Location_Building_Damage": "Virginia",
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "95 houses were destroyed and 4,393 others were damaged, while 125 mobile homes were destroyed and another 450 were significantly affected."
+        },
+        {
+            "Country": "United States",
+            "Location_Building_Damage": "Maryland",
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "In the state of Maryland, damage totaled to $110 million."
+        },
+        {
+            "Country": "United States",
+            "Location_Building_Damage": "West Virginia",
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Building_Damage": "1,666",
+            "Building_Damage_with_annotation": "108 houses were destroyed and 1,558 others suffered damage. Furthermore, 118 mobile homes were destroyed and 91 were significantly affected."
+        },
+        {
+            "Country": "United States",
+            "Location_Building_Damage": "Ohio",
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "The storm caused minor damage to about 302 dwellings and severely affected at least three houses."
+        },
+        {
+            "Country": "United States",
+            "Location_Building_Damage": "Washington, D.C.",
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Building_Damage": "350",
+            "Building_Damage_with_annotation": "About 350 dwellings in Washington, D.C. suffered minor damage."
+        },
+        {
+            "Country": "Cuba",
+            "Location_Building_Damage": "Western Cuba",
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "Due to high winds and flooding, at least 97 houses were destroyed and another 270 were damaged."
+        }
+    ]
+}
 ]

@@ -17,6 +17,8 @@ if __name__ == "__main__":
             # "Perils_Assessment_With_Annotation",
             "Location",
             # "Location_with_Annotation",
+            "Country",
+            # "Country_with_Annotation",
             # "Single_Date",
             "Start_Date_Day",
             "Start_Date_Month",
