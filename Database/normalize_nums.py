@@ -6,7 +6,17 @@ from num2words import num2words
 from text_to_num import alpha2digit, text2num
 
 locale.setlocale(locale.LC_ALL, "en_US.UTF-8")
-nlp = spacy.load("en_core_web_trf", enable=["transformer", "ner", "tagger"])
+spacy_model = "en_core_web_trf"
+
+try:
+    nlp = spacy.load(spacy_model, enable=["transformer", "ner", "tagger"])
+    print(f"SpaCy model '{spacy_model}' has been loaded")
+except OSError:
+    print(f"SpaCy model '{spacy_model}' is not downloaded. Dowloading now - this might take a minute")
+    from spacy.cli import download
+
+    download(spacy_model)
+    nlp = spacy.load(spacy_model)
 
 
 def extract_single_number(text: str) -> list[float] | None:
