@@ -6,17 +6,17 @@ from num2words import num2words
 from text_to_num import alpha2digit, text2num
 
 locale.setlocale(locale.LC_ALL, "en_US.UTF-8")
-spacy_model = "en_core_web_trf"
 
-try:
-    nlp = spacy.load(spacy_model, enable=["transformer", "ner", "tagger"])
-    print(f"SpaCy model '{spacy_model}' has been loaded")
-except OSError:
-    print(f"SpaCy model '{spacy_model}' is not downloaded. Dowloading now - this might take a minute")
-    from spacy.cli import download
-
-    download(spacy_model)
-    nlp = spacy.load(spacy_model)
+def load_spacy_model(spacy_model: str = "en_core_web_trf") -> spacy.language:
+    try:
+        nlp = spacy.load(spacy_model, enable=["transformer", "ner", "tagger"])
+        print(f"SpaCy model '{spacy_model}' has been loaded")
+    except OSError:
+        print(f"SpaCy model '{spacy_model}' is not downloaded. Dowloading now - this might take a minute")
+        from spacy.cli import download
+        download(spacy_model)
+        nlp = spacy.load(spacy_model)
+    return nlp
 
 
 def extract_single_number(text: str) -> list[float] | None:
@@ -202,6 +202,8 @@ if __name__ == "__main__":
         "one death in Idaho",
         "12 missing",
     ]
+
+    nlp = load_spacy_model("en_core_web_trf")
 
     print("MIN", "MAX", "APPROX?")
     for i in examples:
