@@ -18,26 +18,25 @@ def load_spacy_model(spacy_model: str = "en_core_web_trf") -> spacy.language:
         nlp = spacy.load(spacy_model)
     return nlp
 
-
-def extract_single_number(text: str) -> list[float] | None:
+def extract_single_number(text: str) -> list[float]:
     try:
-        # try extracting the number (in digits) directly
+        # try extracting the number (in digits) directly (eg. "1,222")
         number = locale.atof(text)
-        return [number]
     except:
         try:
-            # try extracting the number from words
+            # try extracting the number from words (eg. "two million")
             number = text2num(text, lang="en", relaxed=True)
             return [number]
         except BaseException as err:
             try:
                 # try normalizing the numbers to words, then extract the numbers
+                # (eg. "2 million" -> "two million" -> 2000000.0)
                 text = normalize_num_to_words(nlp(text))
                 number = text2num(text, lang="en", relaxed=True)
-                return [number]
             except BaseException as err:
-                # print("SINGLE: Could not parse numbers,", err)
+                print("SINGLE: Could not parse numbers,", err)
                 raise BaseException
+    return [number]
 
 
 def extract_numbers_from_tokens(doc: spacy.tokens.doc.Doc) -> list[float]:
@@ -72,7 +71,7 @@ def normalize_num_to_words(doc) -> str:
     return new
 
 
-def extract_numbers_from_entities(doc: spacy.tokens.doc.Doc, labels: list[str] = ["CARDINAL", "MONEY", "QUANTITY"]):
+def extract_numbers_from_entities(doc: spacy.tokens.doc.Doc, labels: list[str] = ["CARDINAL", "MONEY", "QUANTITY"]) -> list[float]:
     numbers = []
     if not doc.ents:
         raise BaseException
@@ -91,9 +90,9 @@ def extract_numbers_from_entities(doc: spacy.tokens.doc.Doc, labels: list[str] =
                 number = locale.atof(transcribed_text)
                 numbers.append(number)
             except BaseException as err:
-                # print("ENT: Could not parse numbers,", err)
-                raise BaseException
-
+                pass
+                #raise BaseException
+    assert numbers != [], "No numbers extracted from entities"
     return numbers
 
 
@@ -108,7 +107,7 @@ def check_for_inequality_symbol(doc) -> bool:
     return True if "NFP" in tags else False
 
 
-def extract_numbers(text: str):
+def extract_numbers(text: str) -> tuple[float|None, float|None, float|None]:
     print(text)
     approx = None
     text = text.strip().lower()
