@@ -96,15 +96,15 @@ def extract_numbers_from_entities(doc: spacy.tokens.doc.Doc, labels: list[str] =
     return numbers
 
 
-def check_for_inequality_symbol(doc) -> bool:
+def check_for_approximation(doc) -> bool:
     # TODO: the assumption now is that inequality symbols and other math symbols are extracted as NFP by spaCy
     # But I think the name of the function should change (check for comparatives or inequalities) or something 
     # and it should grab whatever is before and after the CD block (for robustness, maybe whatever is before the 
     # first CD and after the last CD, since there are often multiple numbers or a number over a longer span - or potentially
     # using the spaCy ent span instead)
     # Then, if any JJR/JJS/NFP exists, it's most likely an estimation 
-    tags = [token.tag_ for token in doc]
-    return True if "NFP" in tags else False
+    tags = " ".join([token.tag_ for token in doc])
+    return True if "NFP" in tags or "IN CD" in tags else False
 
 
 def extract_numbers(text: str) -> tuple[float|None, float|None, float|None]:
@@ -127,7 +127,7 @@ def extract_numbers(text: str) -> tuple[float|None, float|None, float|None]:
             numbers = extract_numbers_from_entities(doc)
 
             # an approx if an inequality symbol exists (>=, ~, etc)
-            approx = check_for_inequality_symbol(doc)
+            approx = check_for_approximation(doc)
             # print("extract_numbers_from_entities", numbers, approx)
         except BaseException:
             try:
@@ -147,7 +147,7 @@ def extract_numbers(text: str) -> tuple[float|None, float|None, float|None]:
 
                     # an approx if an inequality symbol exists (>=, ~, etc)
                     # TODO: this could probably be refactored to be done at an earlier stage and determine the approx based on it 
-                    approx = check_for_inequality_symbol(doc)
+                    approx = check_for_approximation(doc)
                     # print("EXTRACTED NUMBERS (BaseException)")
                 except BaseException:
                     return (None, None, None)
