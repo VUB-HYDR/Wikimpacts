@@ -5,8 +5,6 @@ import spacy
 from num2words import num2words
 from text_to_num import alpha2digit, text2num
 
-locale.setlocale(locale.LC_ALL, "en_US.UTF-8")
-
 
 def load_spacy_model(spacy_model: str = "en_core_web_trf") -> spacy.language:
     try:
@@ -92,9 +90,7 @@ def normalize_num(doc, to_word=False) -> str:
     return new.strip()
 
 
-def extract_numbers_from_entities(
-    doc: spacy.tokens.doc.Doc, labels: list[str] = ["CARDINAL", "MONEY", "QUANTITY"]
-) -> list[float]:
+def extract_numbers_from_entities(doc: spacy.tokens.doc.Doc, labels: list[str]) -> list[float]:
     numbers = []
     if not doc.ents:
         raise BaseException
@@ -135,18 +131,19 @@ def _extract_spans(
     return [(span["start"], span["end"]) for span in spans]
 
 
-def check_for_approximation(doc) -> bool:
+def check_for_approximation(doc, labels: list[str]) -> bool:
     tags = " ".join([token.tag_ for token in doc])
-    labels = [ent.label_ for ent in doc.ents]
+    ent_labels = [ent.label_ for ent in doc.ents]
     if "NFP" in tags or "IN JJS CD" in tags:
         return True
     elif all([token.like_num or token.tag_ == "$" for token in doc]):
         return False
-    elif not doc.ents or ("CARDINAL" not in labels and "MONEY" not in labels):
+
+    elif not doc.ents or (len(set(ent_labels).intersection(labels)) != 0):
         return False
     # only in this case
     if "RB CD" == tags:
-        ent_spans = _extract_spans([ent for ent in doc.to_json()["ents"] if ent["label"] in ["CARDINAL", "MONEY"]])
+        ent_spans = _extract_spans([ent for ent in doc.to_json()["ents"] if ent["label"] in labels])
         num_spans = _extract_spans([token for token in doc.to_json()["tokens"] if token["tag"] in ["CD"]])
         # if ent spans are the same as num spans, it's not an approx
         # otherwise, it is
@@ -154,10 +151,12 @@ def check_for_approximation(doc) -> bool:
     return False
 
 
-def extract_numbers(text: str) -> tuple[float | None, float | None, float | None]:
+def extract_numbers(
+    text: str, labels: list[str] = ["CARDINAL", "MONEY", "QUANTITY"]
+) -> tuple[float | None, float | None, float | None]:
     text = text.strip().lower()
     doc = nlp(text)
-    approx = check_for_approximation(doc)
+    approx = check_for_approximation(doc, labels)
 
     try:
         # simplest approach, attempt to extract a single number
@@ -165,7 +164,7 @@ def extract_numbers(text: str) -> tuple[float | None, float | None, float | None
     except:
         try:
             # try extraction by spaCy NERs
-            numbers = extract_numbers_from_entities(doc)
+            numbers = extract_numbers_from_entities(doc, labels)
         except BaseException:
             try:
                 # if no NERs were extacted or no NERs were useful, try extracting by token instead
@@ -174,7 +173,7 @@ def extract_numbers(text: str) -> tuple[float | None, float | None, float | None
                 try:
                     # if all fails, try by normalizing the numbers to words
                     doc = nlp(normalize_num(doc), to_words=True)
-                    numbers = extract_numbers_from_entities(doc)
+                    numbers = extract_numbers_from_entities(doc, labels)
                 except BaseException:
                     return (None, None, None)
 
@@ -229,7 +228,7 @@ if __name__ == "__main__":
         "one death in Idaho",
         "12 missing",
     ]
-
+    locale.setlocale(locale.LC_ALL, "en_US.UTF-8")
     nlp = load_spacy_model("en_core_web_trf")
 
     for i in examples:
