@@ -134,19 +134,25 @@ def _extract_spans(
 def check_for_approximation(doc, labels: list[str]) -> bool:
     tags = " ".join([token.tag_ for token in doc])
     ent_labels = [ent.label_ for ent in doc.ents]
+
+    # check for any math symbols (>=, ~, etc)
+    # or for combinations of a preposition, superlative, and number
     if "NFP" in tags or "IN JJS CD" in tags:
         return True
+
+    # check if all tokens in the string are number/money-related
     elif all([token.like_num or token.tag_ == "$" for token in doc]):
         return False
 
+    # check if there are no entities in the specified labels
     elif not doc.ents or (len(set(ent_labels).intersection(labels)) != 0):
         return False
-    # only in this case
+
+    # check the spans only if the text contains an adverb followed by a number
+    # if ent spans are the same as num spans, it's not an approx
     if "RB CD" == tags:
         ent_spans = _extract_spans([ent for ent in doc.to_json()["ents"] if ent["label"] in labels])
         num_spans = _extract_spans([token for token in doc.to_json()["tokens"] if token["tag"] in ["CD"]])
-        # if ent spans are the same as num spans, it's not an approx
-        # otherwise, it is
         return False if ent_spans and ent_spans == num_spans else True
     return False
 
