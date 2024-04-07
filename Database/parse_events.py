@@ -4,6 +4,7 @@ import re
 import pandas as pd
 import shortuuid
 from dateparser.date import DateDataParser
+from normalize_nums import NormalizeNum, load_spacy_model
 
 pd.set_option("display.max_columns", 30)
 pd.set_option("display.max_colwidth", 30)
@@ -82,6 +83,10 @@ def unpack_col(df: pd.DataFrame, columns: list = []) -> pd.DataFrame:
 
 
 if __name__ == "__main__":
+    # initiate locale and spaCy model for extracting numbers
+    nlp = load_spacy_model("en_core_web_trf")
+    extract = NormalizeNum(nlp, locale_config="en_US.UTF-8")
+
     # load raw file
     filename = "response_wiki_GPT4_20240327_eventNo_1_8_all_category.json"
     raw_path = "Database/raw"
@@ -96,8 +101,6 @@ if __name__ == "__main__":
     events = unpack_col(df, columns=total_summary_cols)
 
     del df
-    # add short uids for each event
-    # total_summary["Event_ID"] = random_short_uuid(length=7)
 
     # normalize dates
     start_dates = events.Start_Date.apply(normalize_date)
@@ -123,6 +126,23 @@ if __name__ == "__main__":
     events.Total_Damage_Inflation_Adjusted = events.Total_Damage_Inflation_Adjusted.replace(
         {_no: False, _yes: True}, regex=True
     )
+
+    # clean out NaNs and Nulls
+    events = replace_nulls(events)
+
+    # get min, max, and approx numerals from relevant Total_* fields
+    total_cols = [
+        col
+        for col in events.columns
+        if col.startswith("Total_")
+        and not col.endswith(("_with_annotation", "_Units", "_Year", "_Annotation", "_Adjusted"))
+    ]
+    for i in total_cols:
+        events[[f"{i}_Min", f"{i}_Max", f"{i}_Approx"]] = (
+            events[i]
+            .apply(lambda x: extract.extract_numbers(x) if x is not None else (None, None, None))
+            .apply(pd.Series)
+        )
 
     # normalize Perils into a list
     events.Perils = events.Perils.apply(lambda x: x.split("|"))
@@ -154,6 +174,22 @@ if __name__ == "__main__":
         sub_event = pd.concat([sub_event.Event_ID, sub_event[col].apply(pd.Series)], axis=1)
 
         # clean out nulls
+        sub_event = replace_nulls(sub_event)
+
+        # get min, max, and approx nums from relevant Num_* & *Damage fields
+        specific_total_cols = [
+            col
+            for col in sub_event.columns
+            if col.startswith("Num_") or col.endswith("Damage") and "Date" not in col and "Location" not in col
+        ]
+        for i in specific_total_cols:
+            sub_event[[f"{i}_Min", f"{i}_Max", f"{i}_Approx"]] = (
+                sub_event[i]
+                .apply(lambda x: extract.extract_numbers(x) if x is not None else (None, None, None))
+                .apply(pd.Series)
+            )
+
+        # clean out nulls after normalizing nums
         sub_event = replace_nulls(sub_event)
         start_date_col, end_date_col = [c for c in sub_event.columns if c.startswith("Start_Date_")], [
             c for c in sub_event.columns if c.startswith("End_Date_")
