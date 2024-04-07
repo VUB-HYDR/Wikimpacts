@@ -31,11 +31,20 @@ def extract_single_number(text: str) -> list[float]:
             try:
                 # try normalizing the numbers to words, then extract the numbers
                 # (eg. "2 million" -> "two million" -> 2000000.0)
-                if len(regex.findall(r"[0-9]+", text)) == 1:
-                    text = normalize_num(nlp(text), to_word=True)
-                    number = text2num(text, lang="en", relaxed=True)
-            except BaseException:
-                raise BaseException
+                if len(regex.findall(r"[0-9]+[,.]a?[0-9]*|[0-9]+", text)) == 1:
+                    normalized_text = normalize_num(nlp(text), to_word=True)
+                    number = text2num(normalized_text, lang="en", relaxed=True)
+            except:
+                # handle decimals:
+                # if there is a decimal followed by a million/billion, etc
+                scales = ["hundred", "thousand", "million", "billion", "trillion"]
+                if len(regex.findall(r"[0-9]+[.]{1}[0-9]+", text)) == 1:
+                    numbers = [token.text for token in nlp(text) if token.like_num]
+                    if len(numbers) == 2 and len(set(numbers[1].split(" ")).intersection(scales)) != 0:
+                        try:
+                            return [locale.atof(numbers[0]) * text2num(numbers[1], lang="en")]
+                        except BaseException:
+                            raise BaseException
     return [number]
 
 
@@ -131,13 +140,12 @@ def _extract_spans(
     return [(span["start"], span["end"]) for span in spans]
 
 
-def check_for_approximation(doc, labels: list[str]) -> bool:
+def check_for_approximation(doc: spacy.tokens.doc.Doc, labels: list[str]) -> bool:
     tags = " ".join([token.tag_ for token in doc])
     ent_labels = [ent.label_ for ent in doc.ents]
-
-    # check for any math symbols (>=, ~, etc)
+    # check for any math symbols (>=, ~, etc) or if a number ends with a plus/plus-minus sign
     # or for combinations of a preposition, superlative, and number
-    if "NFP" in tags or "IN JJS CD" in tags:
+    if "NFP" in tags or "IN JJS CD" in tags or regex.findall(r"[0-9]+(\+|±)", doc.text):
         return True
 
     # check if all tokens in the string are number/money-related
@@ -159,10 +167,11 @@ def check_for_approximation(doc, labels: list[str]) -> bool:
 
 
 def extract_numbers(
-    text: str, labels: list[str] = ["CARDINAL", "MONEY", "QUANTITY"]
+    doc: spacy.tokens.doc.Doc, labels: list[str] = ["CARDINAL", "MONEY", "QUANTITY"]
 ) -> tuple[float | None, float | None, float | None]:
-    text = text.strip().lower()
-    doc = nlp(text)
+    # text = text.strip().lower()
+    # doc = nlp(text)
+    text = doc.text.strip()
     approx = check_for_approximation(doc, labels)
 
     try:
@@ -193,8 +202,17 @@ def extract_numbers(
     return (None, None, approx)
 
 
+def space_out_currency(text: str):
+    return " ".join(regex.sub(r"\p{Sc}|(~)", " \g<0> ", text).split())
+
+
 if __name__ == "__main__":
+    nlp = load_spacy_model("en_core_web_trf")
+    print(extract_numbers(nlp(space_out_currency("$5.1 million"))))
+
     examples = [
+        "$5.1 million",
+        "200,000+",
         "At least 60",
         "exactly 100",
         "just 2",
@@ -239,7 +257,7 @@ if __name__ == "__main__":
     nlp = load_spacy_model("en_core_web_trf")
 
     for i in examples:
-        i = " ".join(regex.sub(r"\p{Sc}|(~)", " \g<0> ", i).split())
+        i = space_out_currency(i)
         print(i)
-        print(extract_numbers(i))
+        print(extract_numbers(nlp(i)))
         print("--------------------------")
