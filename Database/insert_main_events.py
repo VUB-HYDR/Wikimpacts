@@ -1,10 +1,49 @@
+import argparse
 import sqlite3
 
 import pandas as pd
 
 if __name__ == "__main__":
-    data_path = "Database/output"
-    data = pd.read_parquet(f"{data_path}/response_wiki_GPT4_20240327_eventNo_1_8_all_category.parquet")
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+            "-m",
+            "--method",
+            dest="method",
+            default="append",
+            choices=["append", "replace"],
+            help="Choose whether to append data to the exisitng db or to replace it",
+            type=str,
+        )
+
+    parser.add_argument(
+        "-d",
+        "--data_path",
+        dest="data_path",
+        default="Database/output",
+        help="The directory where .parquet files exist so they can be inserted into the db",
+        type=str,
+    )
+
+    parser.add_argument(
+        "-f",
+        "--filename",
+        dest="filename",
+        default="response_wiki_GPT4_20240327_eventNo_1_8_all_category.parquet",
+        help="The name of the parquet file in the <DATA_PATH> directory",
+        type=str,
+    )
+
+    parser.add_argument(
+        "-db",
+        "--database_name",
+        dest="database_name",
+        default="impact.db",
+        help="The name of your database (follwed by `.db`)",
+        type=str,
+    )
+
+    args = parser.parse_args()
+    data = pd.read_parquet(f"{args.data_path}/{args.filename}")
     data = data[
         [
             "Event_ID",
@@ -73,11 +112,11 @@ if __name__ == "__main__":
         ]
     ]
 
-    connection = sqlite3.connect(f"{data_path}/impact.db")
+    connection = sqlite3.connect(f"{args.data_path}/{args.database_name}")
     cursor = connection.cursor()
 
     # change if_exists to "append" to avoid overwriting the database
     # choose "replace" to overwrite the database with a fresh copy of the data
-    data.to_sql("Events", con=connection, if_exists="replace", index=False)
+    data.to_sql("Events", con=connection, if_exists=args.method, index=False)
 
     connection.close()

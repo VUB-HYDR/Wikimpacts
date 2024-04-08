@@ -1,3 +1,4 @@
+import argparse
 import ast
 import re
 from typing import Tuple, Union
@@ -6,10 +7,6 @@ import pandas as pd
 import shortuuid
 from dateparser.date import DateDataParser
 from normalize_nums import NormalizeNum, load_spacy_model
-
-pd.set_option("display.max_columns", 30)
-pd.set_option("display.max_colwidth", 30)
-pd.set_option("display.max_rows", None)
 
 
 def random_short_uuid(length: int = 7) -> str:
@@ -84,15 +81,52 @@ def unpack_col(df: pd.DataFrame, columns: list = []) -> pd.DataFrame:
 
 
 if __name__ == "__main__":
-    # initiate locale and spaCy model for extracting numbers
-    nlp = load_spacy_model("en_core_web_trf")
-    extract = NormalizeNum(nlp, locale_config="en_US.UTF-8")
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "-sm",
+        "--spaCy_model",
+        dest="spaCy_model_name",
+        default="en_core_web_trf",
+        help="Choose a valid spaCy language model (https://spacy.io/models)",
+        type=str,
+    )
+    parser.add_argument(
+        "-f",
+        "--filename",
+        dest="filename",
+        default="response_wiki_GPT4_20240327_eventNo_1_8_all_category.json",
+        help="The name of the json file in the <RAW_PATH> directory",
+        type=str,
+    )
+    parser.add_argument(
+        "-r",
+        "--raw_path",
+        dest="raw_path",
+        default="Database/raw",
+        help="The directory containing raw json files to be parsed",
+        type=str,
+    )
+    parser.add_argument(
+        "-p",
+        "--output_path",
+        dest="output_path",
+        default="Database/output",
+        help="The directory where the parsed events will land (as .parquet)",
+        type=str,
+    )
+    parser.add_argument(
+        "-l",
+        "--locale",
+        dest="locale_config",
+        default="en_US.UTF-8",
+        help="The locale encoding to localize numbers (eg. '32 000' -> `32000` or '1.000.000 (sv)' -> `1000000`). Run `import locale; locale.locale_alias` to get a full list of available locales",
+        type=str,
+    )
+    args = parser.parse_args()
 
-    # load raw file
-    filename = "response_wiki_GPT4_20240327_eventNo_1_8_all_category.json"
-    raw_path = "Database/raw"
-    output_path = "Database/output"
-    df = pd.read_json(f"{raw_path}/{filename}")
+    nlp = load_spacy_model(args.spaCy_model_name)
+    extract = NormalizeNum(nlp, locale_config=args.locale_config)
+    df = pd.read_json(f"{args.raw_path}/{args.filename}")
 
     # add short uids for each event
     df["Event_ID"] = [random_short_uuid() for _ in df.index]
@@ -155,7 +189,7 @@ if __name__ == "__main__":
     events = events.astype(str)
 
     # store as parquet
-    events_parquet_filename = f"{output_path}/{filename.split('.json')[0]}.parquet"
+    events_parquet_filename = f"{args.output_path}/{args.filename.split('.json')[0]}.parquet"
     events.to_parquet(events_parquet_filename)
 
     # parse subevents
@@ -206,13 +240,22 @@ if __name__ == "__main__":
             end_dates = sub_event[end_date_col].apply(normalize_date)
             start_date_cols = pd.DataFrame(
                 start_dates.to_list(),
-                columns=[f"{start_date_col}_Day", f"{start_date_col}_Month", f"{start_date_col}_Year"],
+                columns=[
+                    f"{start_date_col}_Day",
+                    f"{start_date_col}_Month",
+                    f"{start_date_col}_Year",
+                ],
             )
             end_date_cols = pd.DataFrame(
-                end_dates.to_list(), columns=[f"{end_date_col}_Day", f"{end_date_col}_Month", f"{end_date_col}_Year"]
+                end_dates.to_list(),
+                columns=[
+                    f"{end_date_col}_Day",
+                    f"{end_date_col}_Month",
+                    f"{end_date_col}_Year",
+                ],
             )
             sub_event.reset_index(inplace=True, drop=True)
             sub_event = pd.concat([sub_event, start_date_cols, end_date_cols], axis=1)
 
         # store as parquet
-        sub_event.to_parquet(f"{output_path}/{col}.parquet")
+        sub_event.to_parquet(f"{args.output_path}/{col}.parquet")
