@@ -2,6 +2,7 @@ import regex
 import spacy
 from num2words import num2words
 from text_to_num import alpha2digit, text2num
+from typing import List
 
 
 def load_spacy_model(spacy_model: str = "en_core_web_trf") -> spacy.language:
@@ -41,7 +42,7 @@ class NormalizeNum:
         text = regex.split(r"(?:[A-Z]{3})(\d+)|(\d+)(?:[A-Z]{3})", text)
         return " ".join(t for t in text if t)
 
-    def extract_single_number(self, text: str) -> list[float]:
+    def extract_single_number(self, text: str) -> List[float]:
         try:
             # try extracting the number (in digits) directly (eg. "1,222")
             number = self.atof(text)
@@ -69,7 +70,7 @@ class NormalizeNum:
                                 raise BaseException
         return [number]
 
-    def extract_numbers_from_tokens(self, doc: spacy.tokens.doc.Doc) -> list[float]:
+    def extract_numbers_from_tokens(self, doc: spacy.tokens.doc.Doc) -> List[float]:
         numbers = []
         tmp_num = ""
         num_ranges = []
@@ -119,7 +120,7 @@ class NormalizeNum:
         new = regex.sub(r"\p{Sc}", "", new)
         return new.strip()
 
-    def extract_numbers_from_entities(self, doc: spacy.tokens.doc.Doc, labels: list[str]) -> list[float]:
+    def extract_numbers_from_entities(self, doc: spacy.tokens.doc.Doc, labels: list[str]) -> List[float]:
         numbers = []
         if not doc.ents:
             raise BaseException
