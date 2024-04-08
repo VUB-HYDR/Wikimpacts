@@ -120,7 +120,7 @@ class NormalizeNum:
         new = regex.sub(r"\p{Sc}", "", new)
         return new.strip()
 
-    def extract_numbers_from_entities(self, doc: spacy.tokens.doc.Doc, labels: list[str]) -> List[float]:
+    def extract_numbers_from_entities(self, doc: spacy.tokens.doc.Doc, labels: List[str]) -> List[float]:
         numbers = []
         if not doc.ents:
             raise BaseException
@@ -156,11 +156,11 @@ class NormalizeNum:
 
     @staticmethod
     def _extract_spans(
-        spans: list[dict[str, str | int]],
+        spans: List[dict[str, str | int]],
     ):
         return [(span["start"], span["end"]) for span in spans]
 
-    def check_for_approximation(self, doc: spacy.tokens.doc.Doc, labels: list[str]) -> bool:
+    def check_for_approximation(self, doc: spacy.tokens.doc.Doc, labels: List[str]) -> bool:
         tags = " ".join([token.tag_ for token in doc])
         ent_labels = [ent.label_ for ent in doc.ents]
         # check for any math symbols (>=, ~, etc) or if a number ends with a plus/plus-minus sign
@@ -197,7 +197,7 @@ class NormalizeNum:
     def extract_numbers(
         self,
         text: str,
-        labels: list[str] = ["CARDINAL", "MONEY", "QUANTITY"],
+        labels: List[str] = ["CARDINAL", "MONEY", "QUANTITY"],
     ) -> tuple[float | None, float | None, bool | None]:
         # text = text.strip().lower()
         # doc = nlp(text)
