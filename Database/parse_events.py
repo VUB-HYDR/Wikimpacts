@@ -1,5 +1,6 @@
 import ast
 import re
+from typing import Tuple, Union
 
 import pandas as pd
 import shortuuid
@@ -24,7 +25,7 @@ def replace_nulls(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def normalize_date(row: str | None) -> tuple[int, int, int]:
+def normalize_date(row: Union[str, None]) -> Tuple[int, int, int]:
     """
     See https://github.com/scrapinghub/dateparser/issues/700
     and https://dateparser.readthedocs.io/en/latest/dateparser.html#dateparser.date.DateDataParser.get_date_data
@@ -140,7 +141,7 @@ if __name__ == "__main__":
     for i in total_cols:
         events[[f"{i}_Min", f"{i}_Max", f"{i}_Approx"]] = (
             events[i]
-            .apply(lambda x: extract.extract_numbers(x) if x is not None else (None, None, None))
+            .apply(lambda x: (extract.extract_numbers(x) if x is not None else (None, None, None)))
             .apply(pd.Series)
         )
 
@@ -185,7 +186,7 @@ if __name__ == "__main__":
         for i in specific_total_cols:
             sub_event[[f"{i}_Min", f"{i}_Max", f"{i}_Approx"]] = (
                 sub_event[i]
-                .apply(lambda x: extract.extract_numbers(x) if x is not None else (None, None, None))
+                .apply(lambda x: (extract.extract_numbers(x) if x is not None else (None, None, None)))
                 .apply(pd.Series)
             )
 

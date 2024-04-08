@@ -1,8 +1,9 @@
+from typing import Dict, List, NoReturn, Tuple, Union
+
 import regex
 import spacy
 from num2words import num2words
 from text_to_num import alpha2digit, text2num
-from typing import List
 
 
 def load_spacy_model(spacy_model: str = "en_core_web_trf") -> spacy.language:
@@ -156,7 +157,7 @@ class NormalizeNum:
 
     @staticmethod
     def _extract_spans(
-        spans: List[dict[str, str | int]],
+        spans: List[Dict[str, Union[str, int]]],
     ):
         return [(span["start"], span["end"]) for span in spans]
 
@@ -185,7 +186,7 @@ class NormalizeNum:
 
         return 0
 
-    def extract_range(self, text: str) -> tuple[float]:
+    def extract_range(self, text: str) -> Tuple[float]:
         text = self.normalize_num(self.nlp(text), to_word=False)
         nums = text.split("-")
         if len(nums) == 2:
@@ -198,7 +199,7 @@ class NormalizeNum:
         self,
         text: str,
         labels: List[str] = ["CARDINAL", "MONEY", "QUANTITY"],
-    ) -> tuple[float | None, float | None, bool | None]:
+    ) -> Tuple[Union[float, None], Union[float, None], Union[bool, None]]:
         # text = text.strip().lower()
         # doc = nlp(text)
         text = self.preprocess(text)
@@ -241,7 +242,7 @@ class NormalizeNum:
                 return (numbers[0], numbers[1], approx)
         return (None, None, approx)
 
-    def print_stats(self) -> None:
+    def print_stats(self) -> NoReturn:
         import pprint
 
         pprint.pprint(self.stats, indent=3)
@@ -301,6 +302,7 @@ if __name__ == "__main__":
         "30-400",
     ]
 
+    normalize = NormalizeNum()
     for i in examples:
         print(i)
         print(normalize.extract_numbers(i))
