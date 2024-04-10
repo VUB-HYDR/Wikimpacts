@@ -1,15 +1,18 @@
 from geopy.geocoders import Bing
 
 
-def normalize_locations(text: str, service: Bing) -> str | None:
-    if not isinstance(text, str) or not text:
-        return
-    try:
-        l = service.geocode(text, include_country_code=True)
-        return l.raw["name"]
-    except BaseException:
-        return
+class NormalizeLoc:
+    def __init__(self, service: Bing):
+        self.service = service
 
+    def normalize_locations(self, text: str) -> str | None:
+        if not isinstance(text, str) or not text:
+            return
+        try:
+            l = self.service.geocode(text, include_country_code=True)
+            return l.raw["name"]
+        except BaseException:
+            return
 
 def extract_locations(
     text: str,
@@ -32,23 +35,26 @@ def extract_locations(
     except BaseException:
         return
 
-def debug(response):
-    print(type(response))
-    return True
+
+def debug(response, _print: bool = False):
+    if response:
+        if _print: print(type(response))
+        return True
 
 
 if __name__ == "__main__":
     # run an example
     import requests_cache
+
     requests_cache.install_cache("Database/geopy_cache", filter_fn=debug)
 
     from dotenv import load_dotenv
     import os
 
     load_dotenv()
-
     api_key = os.getenv("BING_MAPS_API_KEY")
     geolocator = Bing(api_key=api_key, user_agent="shorouq.zahra@ri.se")
+    norm = NormalizeLoc(geolocator)
 
     examples = [
         "Papua New Guinea|Queensland & Northern Territory & Australia",
@@ -76,9 +82,9 @@ if __name__ == "__main__":
     for i in examples:
         print(i)
         country, location = extract_locations(i)
-        country_norm = [normalize_locations(i, geolocator) for i in country]
+        country_norm = [norm.normalize_locations(i, geolocator) for i in country]
         location_norm = [
-            [normalize_locations(x, geolocator) for x in i] for i in location
+            [norm.normalize_locations(x, geolocator) for x in i] for i in location
         ]
         print("countries:", country)
         print("NORMALIZED:", country_norm)
