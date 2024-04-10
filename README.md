@@ -5,7 +5,6 @@ Wikimapcts is the first version of climate impact dataset creating by generative
 ### Dependencies
 Prerequisite:
 - Install [`poetry`](https://python-poetry.org/docs/#installation)
-
 Then activate a virtual environment and install the dependencies:
 
 ```shell
@@ -13,6 +12,11 @@ poetry shell # activates a venv
 poetry install  # installs all dependencies from the lockfile
 ```
 
+- [Create a Bing Maps Account](https://learn.microsoft.com/en-us/bingmaps/getting-started/bing-maps-dev-center-help/creating-a-bing-maps-account), then (generate an api key)[https://learn.microsoft.com/en-us/bingmaps/getting-started/bing-maps-dev-center-help/getting-a-bing-maps-key]. Place the key in a `.env` file:
+
+```shell
+BING_MAPS_API_KEY=my-long-api-key-fr    om-bing-maps
+```
 
 ### Quickstart
 
