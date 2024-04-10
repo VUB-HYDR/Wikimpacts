@@ -14,10 +14,10 @@ class NormalizeLoc:
         except BaseException:
             return
 
+
 def extract_locations(
     text: str,
 ) -> tuple[list] | dict[str:list] | None:
-
     countries, locations = [], []
     try:
         split_by_pipe = text.split("|")
@@ -38,7 +38,8 @@ def extract_locations(
 
 def debug(response, _print: bool = False):
     if response:
-        if _print: print(type(response))
+        if _print:
+            print(type(response))
         return True
 
 
@@ -48,8 +49,9 @@ if __name__ == "__main__":
 
     requests_cache.install_cache("Database/geopy_cache", filter_fn=debug)
 
-    from dotenv import load_dotenv
     import os
+
+    from dotenv import load_dotenv
 
     load_dotenv()
     api_key = os.getenv("BING_MAPS_API_KEY")
@@ -83,9 +85,7 @@ if __name__ == "__main__":
         print(i)
         country, location = extract_locations(i)
         country_norm = [norm.normalize_locations(i, geolocator) for i in country]
-        location_norm = [
-            [norm.normalize_locations(x, geolocator) for x in i] for i in location
-        ]
+        location_norm = [[norm.normalize_locations(x, geolocator) for x in i] for i in location]
         print("countries:", country)
         print("NORMALIZED:", country_norm)
         print()
