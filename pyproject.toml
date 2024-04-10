@@ -18,6 +18,9 @@ pre-commit = "^3.2.0"
 spacy = "^3.7.4"
 regex = "^2023.12.25"
 num2words = "^0.5.13"
+geopy = "^2.4.1"
+python-dotenv = "^1.0.1"
+requests-cache = "^1.2.0"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.3"
