@@ -1,11 +1,15 @@
 import argparse
 import ast
+import os
 import re
 from typing import Tuple, Union
 
 import pandas as pd
-import shortuuid
-from dateparser.date import DateDataParser
+import requests_cache
+from dotenv import load_dotenv
+from geopy.geocoders import Bing
+from norm_utils import normalize_date, random_short_uuid, replace_nulls, unpack_col
+from normalize_locs import NormalizeLoc
 from normalize_nums import NormalizeNum, load_spacy_model
 
 
@@ -123,9 +127,18 @@ if __name__ == "__main__":
         type=str,
     )
     args = parser.parse_args()
-
     nlp = load_spacy_model(args.spaCy_model_name)
+
     extract = NormalizeNum(nlp, locale_config=args.locale_config)
+
+    requests_cache.install_cache("Database/geopy_cache")
+
+    load_dotenv()
+
+    api_key = os.getenv("BING_MAPS_API_KEY")
+    geolocator = Bing(api_key=api_key, user_agent="shorouq.zahra@ri.se")
+    norm_loc = NormalizeLoc(geolocator)
+
     df = pd.read_json(f"{args.raw_path}/{args.filename}")
 
     # add short uids for each event
@@ -182,6 +195,14 @@ if __name__ == "__main__":
     # normalize Perils into a list
     events.Perils = events.Perils.apply(lambda x: x.split("|"))
 
+    # normalize location names
+    events["Country_Norm"] = events.Country.apply(
+        lambda countries: [norm_loc.normalize_locations(c) for c in countries] if countries else None
+    )
+    events["Location_Norm"] = events.Location.apply(
+        lambda locations: [norm_loc.normalize_locations(l) for l in locations] if locations else None
+    )
+
     # clean out NaNs and Nulls
     events = replace_nulls(events)
 
@@ -196,6 +217,7 @@ if __name__ == "__main__":
     specific_summary_cols = [col for col in events if col.startswith("Specific_")]
     specifc_summary_dfs = {}
 
+    print(specific_summary_cols)
     for col in specific_summary_cols:
         # evaluate string bytes to dict
         events[col] = events[col].astype(str)
@@ -257,5 +279,28 @@ if __name__ == "__main__":
             sub_event.reset_index(inplace=True, drop=True)
             sub_event = pd.concat([sub_event, start_date_cols, end_date_cols], axis=1)
 
+        # normalize location names
+        print("normalizing countries")
+        location_col = col.split("Specific_Instance_Per_Country_")[-1]
+        print(location_col)
+
+        sub_event["Country_Norm"] = sub_event["Country"].apply(
+            lambda countries: [norm_loc.normalize_locations(c) for c in countries] if countries else None
+        )
+        print("done")
+        print("normalizing locations")
+        sub_event[f"Location_{location_col}_Norm"] = sub_event[f"Location_{location_col}"].apply(
+            lambda locations: [norm_loc.normalize_locations(l) for l in locations] if locations else None
+        )
+        print("done")
+
         # store as parquet
         sub_event.to_parquet(f"{args.output_path}/{col}.parquet")
+
+    # TODO: fix annoying requests cache error
+    # Traceback (most recent call last):
+    # File "/Users/me/Library/Caches/pypoetry/virtualenvs/wikimpacts-1uvlbl-K-py3.11/lib/python3.11/site-packages/geopy/adapters.py", line 457, in __del__
+    # File "/Users/me/Library/Caches/pypoetry/virtualenvs/wikimpacts-1uvlbl-K-py3.11/lib/python3.11/site-packages/requests_cache/session.py", line 341, in close
+    # File "/Users/me/Library/Caches/pypoetry/virtualenvs/wikimpacts-1uvlbl-K-py3.11/lib/python3.11/site-packages/requests_cache/backends/base.py", line 114, in close
+    # AttributeError: 'NoneType' object has no attribute 'debug'
+    requests_cache.uninstall_cache()
