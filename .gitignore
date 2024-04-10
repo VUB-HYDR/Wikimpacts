@@ -1,4 +1,12 @@
+# ignore dev files
 results
+.env
+
+# ignore pycache
 */__pycache__
+
+# ignore mac-related files
 .DS_Store
+
+# ignore geopy cache (used for normalizing locations faster)
 geopy_cache.sqlite
