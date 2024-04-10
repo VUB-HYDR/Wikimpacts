@@ -204,6 +204,7 @@ class NormalizeNum:
         # doc = nlp(text)
         text = self.preprocess(text)
         doc = self.nlp(text.strip())
+        # print(doc.to_json())
         approx = self.check_for_approximation(doc, labels)
 
         try:
@@ -302,7 +303,9 @@ if __name__ == "__main__":
         "30-400",
     ]
 
-    normalize = NormalizeNum()
+    nlp = load_spacy_model("en_core_web_trf")
+    normalize = NormalizeNum(nlp, "en_US.UTF-8")
+    
     for i in examples:
         print(i)
         print(normalize.extract_numbers(i))
