@@ -166,25 +166,29 @@ class NormalizeNum:
         ent_labels = [ent.label_ for ent in doc.ents]
         # check for any math symbols (>=, ~, etc) or if a number ends with a plus/plus-minus sign
         # or for combinations of a preposition, superlative, and number
-        if "NFP" in tags or "IN JJS CD" in tags or ":" in tags or regex.findall(r"[0-9]+(\+|±)", doc.text):
-            return 1
-
-        # check if all tokens in the string are number/money-related
-        elif all([token.like_num or token.tag_ == "$" for token in doc]):
+        try:
+            self.atof(doc.text)
             return 0
+        except:
+            if "NFP" in tags or "IN JJS CD" in tags or ":" in tags or regex.findall(r"[0-9]+(\+|±)", doc.text):
+                return 1
 
-        # check the spans only if the text contains an adverb followed by a number
-        # if ent spans are the same as num spans, it's not an approx
-        elif "RB CD" == tags:
-            ent_spans = self._extract_spans([ent for ent in doc.to_json()["ents"] if ent["label"] in labels])
-            num_spans = self._extract_spans([token for token in doc.to_json()["tokens"] if token["tag"] in ["CD"]])
-            return 0 if ent_spans and ent_spans == num_spans else 1
+            # check if all tokens in the string are number/money-related
+            elif all([token.like_num or token.tag_ == "$" for token in doc]):
+                return 0
 
-        # check if there are no entities in the specified labels
-        elif not doc.ents or (len(set(ent_labels).intersection(labels)) != 0):
+            # check the spans only if the text contains an adverb followed by a number
+            # if ent spans are the same as num spans, it's not an approx
+            elif "RB CD" == tags:
+                ent_spans = self._extract_spans([ent for ent in doc.to_json()["ents"] if ent["label"] in labels])
+                num_spans = self._extract_spans([token for token in doc.to_json()["tokens"] if token["tag"] in ["CD"]])
+                return 0 if ent_spans and ent_spans == num_spans else 1
+
+            # check if there are no entities in the specified labels
+            elif not doc.ents or (len(set(ent_labels).intersection(labels)) != 0):
+                return 0
+
             return 0
-
-        return 0
 
     def extract_range(self, text: str) -> Tuple[float]:
         text = self.normalize_num(self.nlp(text), to_word=False)
