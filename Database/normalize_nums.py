@@ -32,6 +32,7 @@ class NormalizeNum:
             "from tokens": 0,
             "after normalization": 0,
             "from a range": 0,
+            "from approximate quantifiers": 0
         }
 
     @staticmethod
@@ -214,6 +215,20 @@ class NormalizeNum:
             except:
                 return None
 
+    def extract_approximate_quantifiers(self, text: str) -> Tuple[float]:
+        scales = {
+            "hundreds of": 100,
+            "thousands of": 1000,
+            "millions of": 1000000
+        }
+        lower_scale = 2
+        upper_scale = 7
+
+        for phrase, scale in scales.items():
+            if phrase in text.lower():
+                return (scale*lower_scale, scale*upper_scale)
+        return None
+
     def extract_numbers(
         self,
         text: str,
@@ -237,22 +252,29 @@ class NormalizeNum:
                 assert numbers, BaseException
             except BaseException:
                 try:
-                    # try extraction by spaCy NERs
-                    self.stats["from entities"] += 1
-                    numbers = self.extract_numbers_from_entities(doc, labels)
+                    self.stats["from approximate quantifiers"] += 1
+                    numbers = self.extract_approximate_quantifiers(text)
+                    if numbers:
+                        approx = 1
+                    else: raise BaseException
                 except BaseException:
                     try:
-                        # if no NERs were extacted or no NERs were useful, try extracting by token instead
-                        self.stats["from tokens"] += 1
-                        numbers = self.extract_numbers_from_tokens(doc)
+                        # try extraction by spaCy NERs
+                        self.stats["from entities"] += 1
+                        numbers = self.extract_numbers_from_entities(doc, labels)
                     except BaseException:
                         try:
-                            # if all fails, try by normalizing the numbers to words
-                            self.stats["after normalization"] += 1
-                            doc = self.nlp(self.normalize_num(doc), to_words=True)
-                            numbers = self.extract_numbers_from_entities(doc, labels)
+                            # if no NERs were extacted or no NERs were useful, try extracting by token instead
+                            self.stats["from tokens"] += 1
+                            numbers = self.extract_numbers_from_tokens(doc)
                         except BaseException:
-                            return (None, None, None)
+                            try:
+                                # if all fails, try by normalizing the numbers to words
+                                self.stats["after normalization"] += 1
+                                doc = self.nlp(self.normalize_num(doc), to_words=True)
+                                numbers = self.extract_numbers_from_entities(doc, labels)
+                            except BaseException:
+                                return (None, None, None)
 
         if numbers:
             numbers = sorted(numbers)
