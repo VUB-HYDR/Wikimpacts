@@ -121,7 +121,8 @@ class NormalizeNum:
     def normalize_num(doc, to_word=False) -> str:
         new = ""
         for token in doc:
-            if token.tag_ in ["CD", "SYM"]:
+            # some times wrong tags are assigned, so we need to check both the tags and if the token is a number by regex
+            if (token.tag_ in ["CD", "SYM"] and token.text not in ["<", ">", "<=", ">="]) or (regex.match(r"\b(?<!\.)\d+(?:,\d+)*(?:\.\d+)?\b", token.text)):
                 try:
                     new += num2words(token.text) if to_word else token.text
                     if token.whitespace_:
