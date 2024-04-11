@@ -37,7 +37,7 @@ class NormalizeNum:
     @staticmethod
     def preprocess(text: str):
         # remove currency
-        text = " ".join(regex.sub(r"\p{Sc}|(~)", " \g<0> ", text).split())
+        text = " ".join(regex.sub(r"\p{Sc}|(~)|Rs\.|Rs", " \g<0> ", text).split())
         # split any numbers attached to digits ("EUR19" -> "EUR 19")
         # return " ".join(regex.sub(r"(?:[A-Z]{3})(\d+)|(\d+)(?:[A-Z]{3})", " \g<0> ", text))
         text = regex.split(r"(?:[A-Z]{3})(\d+)|(\d+)(?:[A-Z]{3})", text)
@@ -52,23 +52,38 @@ class NormalizeNum:
                 # try extracting the number from words (eg. "two million")
                 number = text2num(text, lang="en", relaxed=True)
             except:
-                try:
-                    # try normalizing the numbers to words, then extract the numbers
-                    # (eg. "2 million" -> "two million" -> 2000000.0)
-                    assert len(regex.findall(r"[0-9]+[,.]a?[0-9]*|[0-9]+", text)) == 1, BaseException
-                    normalized_text = self.normalize_num(self.nlp(text), to_word=True)
-                    number = text2num(normalized_text, lang="en", relaxed=True)
-                except:
-                    # handle decimals:
-                    # if there is a decimal followed by a million/billion, etc
-                    scales = ["hundred", "thousand", "million", "billion", "trillion"]
-                    if len(regex.findall(r"[0-9]+[.]{1}[0-9]+", text)) == 1:
-                        numbers = [token.text for token in self.nlp(text) if token.like_num]
-                        if len(numbers) == 2 and len(set(numbers[1].split(" ")).intersection(scales)) != 0:
-                            try:
-                                return [self.atof(numbers[0]) * text2num(numbers[1], lang="en", relaxed=True)]
-                            except BaseException:
-                                raise BaseException
+                # first process the case where a number followed by any exception scales
+                if len(regex.findall(r"\b(?<!\.)\d+(?:,\d+)*(?:\.\d+)?\b", text)) == 1:
+                    other_scales = ["crore", "lakh", "crores", "lakhs"]
+                    matches = regex.findall(
+                        r"\b(?<!\.)\d+(?:,\d+)*(?:\.\d+)?\b\s+(?:" + "|".join(other_scales) + ")", text)
+                    if len(matches):
+                        numbers = [token.text for token in self.nlp(matches[0])]
+                        try:
+                            other_scales_2_num = {"crore": 1e7, "crores": 1e7, "lakh": 1e5, "lakhs": 1e5}
+                            return [self.atof(numbers[0]) * other_scales_2_num[numbers[1]]]
+                        except BaseException:
+                            raise BaseException
+                        
+                    else:
+                        try:
+                            # try normalizing the numbers to words, then extract the numbers
+                            # (eg. "2 million" -> "two million" -> 2000000.0)
+                            assert len(regex.findall(r"[0-9]+[,.]a?[0-9]*|[0-9]+", text)) == 1, BaseException
+                            normalized_text = self.normalize_num(self.nlp(text), to_word=True)
+                            number = text2num(normalized_text, lang="en", relaxed=True)
+                        except:
+                            # handle decimals:
+                            # if there is a decimal followed by a million/billion, etc
+                            scales = ["hundred", "thousand", "million", "billion", "trillion"]
+                            if len(regex.findall(r"[0-9]+[.]{1}[0-9]+", text)) == 1:
+                                numbers = [token.text for token in self.nlp(text) if token.like_num]
+                                if len(numbers) == 2 and len(set(numbers[1].split(" ")).intersection(scales)) != 0:
+                                    try:
+                                        return [self.atof(numbers[0]) * text2num(numbers[1], lang="en", relaxed=True)]
+                                    except BaseException:
+                                        raise BaseException
+
         return [number]
 
     def extract_numbers_from_tokens(self, doc: spacy.tokens.doc.Doc) -> List[float]:
