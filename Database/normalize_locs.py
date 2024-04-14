@@ -53,7 +53,7 @@ if __name__ == "__main__":
     # run an example
     import requests_cache
 
-    requests_cache.install_cache("Database/geopy_cache", filter_fn=debug)
+    requests_cache.install_cache("Database/data/geopy_cache", filter_fn=debug)
 
     import os
 

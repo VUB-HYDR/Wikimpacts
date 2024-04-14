@@ -58,7 +58,7 @@ if __name__ == "__main__":
 
     extract = NormalizeNum(nlp, locale_config=args.locale_config)
 
-    requests_cache.install_cache("Database/geopy_cache")
+    requests_cache.install_cache("Database/data/geopy_cache")
 
     load_dotenv()
 
