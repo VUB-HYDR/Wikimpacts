@@ -14,26 +14,32 @@ class NormalizeLoc:
         except BaseException:
             return
 
-
-def extract_locations(
-    text: str,
-) -> tuple[list] | dict[str:list] | None:
-    countries, locations = [], []
-    try:
-        split_by_pipe = text.split("|")
-    except BaseException:
-        return
-    try:
-        if split_by_pipe:
-            for s in split_by_pipe:
-                split_by_ampersand = s.split("&")
-                locations_tmp = split_by_ampersand[:-1]
-                locations_tmp = [i.strip() for i in locations_tmp]
-                countries.append(split_by_ampersand[-1].strip())
-                locations.extend([locations_tmp])
-        return countries, locations
-    except BaseException:
-        return
+    @staticmethod
+    def extract_locations(
+        text: str,
+    ) -> tuple[list] | None:
+        """
+        Extracts countries and sublocations from the '|, &' string format
+        Example:
+        Input: "southern France&France|Spain|Paris&France"
+        Output: (['France', 'Spain', 'France'], [['southern France'], [], ['Paris']])
+        """
+        countries, locations = [], []
+        try:
+            split_by_pipe = text.split("|")
+        except BaseException:
+            return
+        try:
+            if split_by_pipe:
+                for s in split_by_pipe:
+                    split_by_ampersand = s.split("&")
+                    locations_tmp = split_by_ampersand[:-1]
+                    locations_tmp = [i.strip() for i in locations_tmp]
+                    countries.append(split_by_ampersand[-1].strip())
+                    locations.extend([locations_tmp])
+            return countries, locations
+        except BaseException:
+            return
 
 
 def debug(response, _print: bool = False):
@@ -83,7 +89,7 @@ if __name__ == "__main__":
 
     for i in examples:
         print(i)
-        country, location = extract_locations(i)
+        country, location = norm.extract_locations(i)
         country_norm = [norm.normalize_locations(i, geolocator) for i in country]
         location_norm = [[norm.normalize_locations(x, geolocator) for x in i] for i in location]
         print("countries:", country)
