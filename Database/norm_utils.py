@@ -13,8 +13,8 @@ def random_short_uuid(length: int = 7) -> str:
 
 def replace_nulls(df: pd.DataFrame) -> pd.DataFrame:
     """Normalizes all variations of NULL, NaN, nan, null either as data types or as strings"""
-    any_NULL = re.compile(r"^(null)$|^(nan)$", re.IGNORECASE | re.MULTILINE)
-    df = df.replace(any_NULL, None)
+    any_NULL = re.compile(r"^\s*(null)\s*$|^\s*(nan)\s*$", re.IGNORECASE | re.MULTILINE)
+    df = df.replace(any_NULL, None, regex=True)
     df = df.astype(object).where(pd.notnull(df), None)
     return df
 
