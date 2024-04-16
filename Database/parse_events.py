@@ -38,7 +38,7 @@ if __name__ == "__main__":
         type=str,
     )
     parser.add_argument(
-        "-p",
+        "-o",
         "--output_path",
         dest="output_path",
         default="Database/output",
@@ -88,29 +88,36 @@ if __name__ == "__main__":
     del df
     if args.event_type in ["main", "all"]:
         # normalize dates
-        start_dates = events.Start_Date.apply(normalize_date)
-        end_dates = events.End_Date.apply(normalize_date)
+        if all([c in events.columns for c in ["Start_Date", "End_Date"]]):
+            start_dates = events.Start_Date.apply(normalize_date)
+            end_dates = events.End_Date.apply(normalize_date)
 
-        start_date_cols = pd.DataFrame(
-            start_dates.to_list(),
-            columns=["Start_Date_Day", "Start_Date_Month", "Start_Date_Year"],
-        )
-        end_date_cols = pd.DataFrame(end_dates.to_list(), columns=["End_Date_Day", "End_Date_Month", "End_Date_Year"])
+            start_date_cols = pd.DataFrame(
+                start_dates.to_list(),
+                columns=["Start_Date_Day", "Start_Date_Month", "Start_Date_Year"],
+            )
+            end_date_cols = pd.DataFrame(
+                end_dates.to_list(), columns=["End_Date_Day", "End_Date_Month", "End_Date_Year"]
+            )
 
-        events = pd.concat([events, start_date_cols, end_date_cols], axis=1)
-        del start_dates, end_dates, start_date_cols, end_date_cols
+            events = pd.concat([events, start_date_cols, end_date_cols], axis=1)
+            del start_dates, end_dates, start_date_cols, end_date_cols
 
         # normalize binary categories into booleans
         _yes, _no = re.compile(r"^(yes)$|^(y)$|^(true)$", re.IGNORECASE | re.MULTILINE), re.compile(
             r"^(no)$|^(n)$|^(false)$", re.IGNORECASE | re.MULTILINE
         )
 
-        events.Total_Insured_Damage_Inflation_Adjusted = events.Total_Insured_Damage_Inflation_Adjusted.replace(
-            {_no: False, _yes: True}, regex=True
-        )
-        events.Total_Damage_Inflation_Adjusted = events.Total_Damage_Inflation_Adjusted.replace(
-            {_no: False, _yes: True}, regex=True
-        )    # clean out NaNs and Nulls
+        if "Total_Insured_Damage_Inflation_Adjusted" in events.columns:
+            events.Total_Insured_Damage_Inflation_Adjusted = events.Total_Insured_Damage_Inflation_Adjusted.replace(
+                {_no: False, _yes: True}, regex=True
+            )
+
+        if "Total_Damage_Inflation_Adjusted" in events.columns:
+            events.Total_Damage_Inflation_Adjusted = events.Total_Damage_Inflation_Adjusted.replace(
+                {_no: False, _yes: True}, regex=True
+            )
+        # clean out NaNs and Nulls
         events = replace_nulls(events)
 
         # get min, max, and approx numerals from relevant Total_* fields
@@ -128,29 +135,32 @@ if __name__ == "__main__":
             )
 
         # normalize Perils into a list
-        events.Perils = events.Perils.apply(lambda x: x.split("|"))
+        if "Perils" in events.columns:
+            events.Perils = events.Perils.apply(lambda x: x.split("|"))
 
         # normalize location names
-        events["Country_Norm"] = events.Country.apply(
-            lambda countries: [norm_loc.normalize_locations(c) for c in countries] if countries else None
-        )
-        events["Location_Norm"] = events.Location.apply(
-            lambda locations: [norm_loc.normalize_locations(l) for l in locations] if locations else None
-        )
+        if "Country" in events.columns:
+            events["Country_Norm"] = events.Country.apply(
+                lambda countries: [norm_loc.normalize_locations(c) for c in countries] if countries else None
+            )
+
+        if "Location" in events.columns:
+            events["Location_Norm"] = events.Location.apply(
+                lambda locations: [norm_loc.normalize_locations(l) for l in locations] if locations else None
+            )
 
         # clean out NaNs and Nulls
         events = replace_nulls(events)
 
-        annotation_cols = [
-            col for col in events.columns if col.endswith(("_with_annotation", "_Annotation"))
-        ]
+        annotation_cols = [col for col in events.columns if col.endswith(("_with_annotation", "_Annotation"))]
 
         for col in annotation_cols:
             events[col] = events[col].astype(str)
 
-        # store as parquet
-        events_parquet_filename = f"{args.output_path}/{args.filename.split('.json')[0]}.parquet"
-        events.to_parquet(events_parquet_filename)
+        # store as parquet and csv
+        events_filename = f"{args.output_path}/{args.filename.split('.json')[0]}"
+        events.to_parquet(f"{events_filename}.parquet")
+        events.to_csv(f"{events_filename}.csv")
 
     if args.event_type in ["sub", "all"]:
         # parse subevents
@@ -179,63 +189,64 @@ if __name__ == "__main__":
                 if col.startswith("Num_") or col.endswith("Damage") and "Date" not in col and "Location" not in col
             ]
             for i in specific_total_cols:
-                 sub_event[[f"{i}_Min", f"{i}_Max", f"{i}_Approx"]] = (
-                     sub_event[i]
-                     .apply(lambda x: (extract.extract_numbers(x) if x is not None else (None, None, None)))
-                     .apply(pd.Series)
-                 )
-    
-             # clean out nulls after normalizing nums
+                sub_event[[f"{i}_Min", f"{i}_Max", f"{i}_Approx"]] = (
+                    sub_event[i]
+                    .apply(lambda x: (extract.extract_numbers(x) if x is not None else (None, None, None)))
+                    .apply(pd.Series)
+                )
+
+            # clean out nulls after normalizing nums
             sub_event = replace_nulls(sub_event)
             start_date_col, end_date_col = [c for c in sub_event.columns if c.startswith("Start_Date_")], [
-                 c for c in sub_event.columns if c.startswith("End_Date_")
-             ]
+                c for c in sub_event.columns if c.startswith("End_Date_")
+            ]
             assert len(start_date_col) == len(end_date_col), "Check the start and end date columns"
             assert len(start_date_col) <= 1, "Check the start and end date columns, there might be too many"
-    
+
             if start_date_col and end_date_col:
                 start_date_col, end_date_col = start_date_col[0], end_date_col[0]
-    
-                 # normalize start and end dates
+
+                # normalize start and end dates
                 start_dates = sub_event[start_date_col].apply(normalize_date)
                 end_dates = sub_event[end_date_col].apply(normalize_date)
                 start_date_cols = pd.DataFrame(
-                     start_dates.to_list(),
-                     columns=[
-                         f"{start_date_col}_Day",
-                         f"{start_date_col}_Month",
-                         f"{start_date_col}_Year",
-                     ],
+                    start_dates.to_list(),
+                    columns=[
+                        f"{start_date_col}_Day",
+                        f"{start_date_col}_Month",
+                        f"{start_date_col}_Year",
+                    ],
                 )
                 end_date_cols = pd.DataFrame(
                     end_dates.to_list(),
-                     columns=[
-                         f"{end_date_col}_Day",
-                         f"{end_date_col}_Month",
-                         f"{end_date_col}_Year",
-                     ],
-                 )
+                    columns=[
+                        f"{end_date_col}_Day",
+                        f"{end_date_col}_Month",
+                        f"{end_date_col}_Year",
+                    ],
+                )
                 sub_event.reset_index(inplace=True, drop=True)
                 sub_event = pd.concat([sub_event, start_date_cols, end_date_cols], axis=1)
-    
+
             # normalize location names
             location_col = col.split("Specific_Instance_Per_Country_")[-1]
-    
+
             sub_event["Country_Norm"] = sub_event["Country"].apply(
-                 lambda country: norm_loc.normalize_locations(country) if country else None
-             )
+                lambda country: norm_loc.normalize_locations(country) if country else None
+            )
             sub_event[f"Location_{location_col}_Norm"] = sub_event[f"Location_{location_col}"].apply(
-                 lambda location: norm_loc.normalize_locations(location) if location else None
-             )
-            
-            # store as parquet
+                lambda location: norm_loc.normalize_locations(location) if location else None
+            )
+
+            # store as parquet and csv
             sub_event.to_parquet(f"{args.output_path}/{col}.parquet")
-    
-         # TODO: fix annoying requests cache error
-         # Traceback (most recent call last):
-         # File "/Users/me/Library/Caches/pypoetry/virtualenvs/wikimpacts-1uvlbl-K-py3.11/lib/python3.11/site-packages/geopy/adapters.py", line 457, in __del__
-         # File "/Users/me/Library/Caches/pypoetry/virtualenvs/wikimpacts-1uvlbl-K-py3.11/lib/python3.11/site-packages/requests_cache/session.py", line 341, in close
-         # File "/Users/me/Library/Caches/pypoetry/virtualenvs/wikimpacts-1uvlbl-K-py3.11/lib/python3.11/site-packages/requests_cache/backends/base.py", line 114, in close
-         # AttributeError: 'NoneType' object has no attribute 'debug'
-    
-    requests_cache.uninstall_cache() 
+            sub_event.to_csv(f"{args.output_path}/{col}.csv")
+
+        # TODO: fix annoying requests cache error
+        # Traceback (most recent call last):
+        # File "/Users/me/Library/Caches/pypoetry/virtualenvs/wikimpacts-1uvlbl-K-py3.11/lib/python3.11/site-packages/geopy/adapters.py", line 457, in __del__
+        # File "/Users/me/Library/Caches/pypoetry/virtualenvs/wikimpacts-1uvlbl-K-py3.11/lib/python3.11/site-packages/requests_cache/session.py", line 341, in close
+        # File "/Users/me/Library/Caches/pypoetry/virtualenvs/wikimpacts-1uvlbl-K-py3.11/lib/python3.11/site-packages/requests_cache/backends/base.py", line 114, in close
+        # AttributeError: 'NoneType' object has no attribute 'debug'
+
+    requests_cache.uninstall_cache()
