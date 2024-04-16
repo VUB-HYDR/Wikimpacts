@@ -7,9 +7,10 @@ import pandas as pd
 import requests_cache
 from dotenv import load_dotenv
 from geopy.geocoders import Bing
-from norm_utils import normalize_date, random_short_uuid, replace_nulls, unpack_col
 from normalize_locs import NormalizeLoc
 from normalize_nums import NormalizeNum, load_spacy_model
+
+from Database.normalize_utils import NormalizeUtils as utils
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -79,18 +80,18 @@ if __name__ == "__main__":
     df = pd.read_json(f"{args.raw_path}/{args.filename}")
 
     # add short uids for each event
-    df["Event_ID"] = [random_short_uuid() for _ in df.index]
+    df["Event_ID"] = [utils.random_short_uuid() for _ in df.index]
 
     # unpack Total_Summary_* columns
     total_summary_cols = [col for col in df.columns if col.startswith("Total_")]
-    events = unpack_col(df, columns=total_summary_cols)
+    events = utils.unpack_col(df, columns=total_summary_cols)
 
     del df
     if args.event_type in ["main", "all"]:
         # normalize dates
         if all([c in events.columns for c in ["Start_Date", "End_Date"]]):
-            start_dates = events.Start_Date.apply(normalize_date)
-            end_dates = events.End_Date.apply(normalize_date)
+            start_dates = events.Start_Date.apply(utils.normalize_date)
+            end_dates = events.End_Date.apply(utils.normalize_date)
 
             start_date_cols = pd.DataFrame(
                 start_dates.to_list(),
@@ -118,7 +119,7 @@ if __name__ == "__main__":
                 {_no: False, _yes: True}, regex=True
             )
         # clean out NaNs and Nulls
-        events = replace_nulls(events)
+        events = utils.replace_nulls(events)
 
         # get min, max, and approx numerals from relevant Total_* fields
         total_cols = [
@@ -150,7 +151,7 @@ if __name__ == "__main__":
             )
 
         # clean out NaNs and Nulls
-        events = replace_nulls(events)
+        events = utils.replace_nulls(events)
 
         annotation_cols = [col for col in events.columns if col.endswith(("_with_annotation", "_Annotation"))]
 
@@ -180,7 +181,7 @@ if __name__ == "__main__":
             sub_event = pd.concat([sub_event.Event_ID, sub_event[col].apply(pd.Series)], axis=1)
 
             # clean out nulls
-            sub_event = replace_nulls(sub_event)
+            sub_event = utils.replace_nulls(sub_event)
 
             # get min, max, and approx nums from relevant Num_* & *Damage fields
             specific_total_cols = [
@@ -196,7 +197,7 @@ if __name__ == "__main__":
                 )
 
             # clean out nulls after normalizing nums
-            sub_event = replace_nulls(sub_event)
+            sub_event = utils.replace_nulls(sub_event)
             start_date_col, end_date_col = [c for c in sub_event.columns if c.startswith("Start_Date_")], [
                 c for c in sub_event.columns if c.startswith("End_Date_")
             ]
@@ -207,8 +208,8 @@ if __name__ == "__main__":
                 start_date_col, end_date_col = start_date_col[0], end_date_col[0]
 
                 # normalize start and end dates
-                start_dates = sub_event[start_date_col].apply(normalize_date)
-                end_dates = sub_event[end_date_col].apply(normalize_date)
+                start_dates = sub_event[start_date_col].apply(utils.normalize_date)
+                end_dates = sub_event[end_date_col].apply(utils.normalize_date)
                 start_date_cols = pd.DataFrame(
                     start_dates.to_list(),
                     columns=[
