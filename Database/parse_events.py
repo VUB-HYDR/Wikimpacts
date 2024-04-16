@@ -9,8 +9,7 @@ from dotenv import load_dotenv
 from geopy.geocoders import Bing
 from normalize_locs import NormalizeLoc
 from normalize_nums import NormalizeNum, load_spacy_model
-
-from Database.normalize_utils import NormalizeUtils as utils
+from normalize_utils import NormalizeUtils as utils
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -153,10 +152,15 @@ if __name__ == "__main__":
         # clean out NaNs and Nulls
         events = utils.replace_nulls(events)
 
+        # convert annotation cols to strings
         annotation_cols = [col for col in events.columns if col.endswith(("_with_annotation", "_Annotation"))]
-
         for col in annotation_cols:
             events[col] = events[col].astype(str)
+
+        # convert list columns to strings to store in sqlite3
+        for col in ["Perils", "Location", "Location_Norm", "Country", "Country_Norm"]:
+            if col in events.columns:
+                events[col] = events[col].astype(str)
 
         # store as parquet and csv
         events_filename = f"{args.output_path}/{args.filename.split('.json')[0]}"
