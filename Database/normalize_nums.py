@@ -45,6 +45,8 @@ class NormalizeNum:
         return " ".join(t for t in text if t)
 
     def extract_single_number(self, text: str) -> List[float]:
+        if text.lower().strip() == "none":
+            return [0]
         try:
             # try extracting the number (in digits) directly (eg. "1,222")
             number = self.atof(text)
@@ -218,6 +220,7 @@ class NormalizeNum:
 
     def extract_approximate_quantifiers(self, text: str) -> Tuple[float]:
         scales = {
+            "tens of": 10,
             "hundreds of": 100,
             "thousands of": 1000,
             "millions of": 1000000
