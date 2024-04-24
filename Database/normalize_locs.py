@@ -1,4 +1,6 @@
-from geopy.geocoders import Bing
+import pandas as pd
+import us
+from pprint import pprint
 
 
 class NormalizeLoc:
@@ -48,6 +50,63 @@ class NormalizeLoc:
                 err,
             )
             return
+
+    def get_gadm_gid(self, area: str = None, country: str = None) -> str:
+        region, subregion, intermediateregion, iso, united_states = (
+            "Region Name",
+            "Sub-region Name",
+            "Intermediate Region Name",
+            "ISO-alpha3 Code",
+            "United States",
+        )
+        if area in self.unsd[region].unique():
+            return self.unsd.loc[self.unsd[region] == area][iso].unique().tolist()
+        if area in self.unsd[subregion].unique():
+            return self.unsd.loc[self.unsd[subregion] == area][iso].unique().tolist()
+        if area in self.unsd[intermediateregion].unique():
+            return (
+                self.unsd.loc[self.unsd[intermediateregion] == area][iso]
+                .unique()
+                .tolist()
+            )
+
+        gadm_df = (
+            self.gadm.loc[self.gadm["COUNTRY"] == country] if country else self.gadm
+        )
+
+        # handle American States
+        us_state = None
+        if country == united_states:
+            try:
+                state = area.split(",")[-1].strip()
+                if len(state) == 2:
+                    us_state = us.states.lookup(state)
+            except:
+                us_state = None
+        if us_state:
+            areas = (
+                self.gadm.loc[
+                    (self.gadm.COUNTRY == united_states)
+                    & (self.gadm.NAME_1 == us_state.name)
+                ]["GID_1"]
+                .unique()
+                .tolist()
+            )
+            return [f"{i}:{area.split(',')[0].strip()}" for i in areas]
+
+        # handle countries
+        if area in gadm_df["COUNTRY"].to_list():
+            return gadm_df.loc[gadm_df["COUNTRY"] == area]["GID_0"].unique().tolist()
+
+        # handle rest of GADM
+        deepest = []
+        for i in range(1, 6):
+            name_col, gid_col = f"NAME_{i}", f"GID_{i}"
+            if area in gadm_df[name_col].to_list():
+                deepest = (
+                    gadm_df.loc[gadm_df[name_col] == area][gid_col].unique().tolist()
+                )
+        return deepest
 
     @staticmethod
     def extract_locations(
