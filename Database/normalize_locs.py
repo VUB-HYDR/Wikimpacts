@@ -1,6 +1,5 @@
 import pandas as pd
 import us
-from pprint import pprint
 
 
 class NormalizeLoc:
@@ -30,7 +29,6 @@ class NormalizeLoc:
                 if is_country
                 else text
             )
-            pprint(query)
             l = self.service(query, exactly_one=True, namedetails=True)
 
             return (
