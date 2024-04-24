@@ -37,7 +37,7 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    sub_events = [f for f in os.listdir(args.data_path) if f.startswith("Specific_")]
+    sub_events = [f for f in os.listdir(args.data_path) if (f.startswith("Specific_") and f.endswith(".parquet"))]
     connection = sqlite3.connect(f"{args.data_path}/{args.database_name}")
     cursor = connection.cursor()
 
