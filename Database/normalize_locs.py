@@ -2,16 +2,51 @@ from geopy.geocoders import Bing
 
 
 class NormalizeLoc:
-    def __init__(self, service: Bing):
-        self.service = service
+    def __init__(
+        self,
+        geocode: any,
+        gadm_path: str,
+        unsd_path: str,
+    ):
+        self.service = geocode
+        self.gadm = pd.read_csv(gadm_path, sep=None)
+        self.unsd = pd.read_csv(unsd_path, sep=None)
 
-    def normalize_locations(self, text: str) -> str | None:
+    def normalize_locations(self, text: str, is_country: bool = False) -> str | None:
+        """Queries a geocode service for a location (country or smaller) and returns the top result"""
         if not isinstance(text, str) or not text:
             return
         try:
-            l = self.service.geocode(text, include_country_code=True)
-            return l.raw["name"]
-        except BaseException:
+            text = text.lower().strip()
+            # Open Street Map has an issue with "united" countries. "The UK" and "The US" return no results, but "UK" and "US" do.
+            query = (
+                {
+                    "country": (
+                        text.replace("the ", "") if text.startswith("the u") else text
+                    )
+                }
+                if is_country
+                else text
+            )
+            pprint(query)
+            l = self.service(query, exactly_one=True, namedetails=True)
+
+            return (
+                # return the english name only if a country (due to GADM's format)
+                l.raw["namedetails"]["name:en"]
+                if is_country
+                else (
+                    # return the international name if present (only for sublocations, due to GADM's format)
+                    l.raw["namedetails"]["int_name"]
+                    if "int_name" in l.raw["namedetails"].keys()
+                    else l.raw["namedetails"]["name"]
+                )
+            )
+        except BaseException as err:
+            print(
+                f"Could not find location {text} (is country? {is_country}). Error message",
+                err,
+            )
             return
 
     @staticmethod
@@ -41,60 +76,9 @@ class NormalizeLoc:
         except BaseException:
             return
 
-
-def debug(response, _print: bool = False):
-    if response:
-        if _print:
-            print(type(response))
-        return True
-
-
-if __name__ == "__main__":
-    # run an example
-    import requests_cache
-
-    requests_cache.install_cache("Database/data/geopy_cache", filter_fn=debug)
-
-    import os
-
-    from dotenv import load_dotenv
-
-    load_dotenv()
-    api_key = os.getenv("BING_MAPS_API_KEY")
-    geolocator = Bing(api_key=api_key, user_agent="shorouq.zahra@ri.se")
-    norm = NormalizeLoc(geolocator)
-
-    examples = [
-        "Papua New Guinea|Queensland & Northern Territory & Australia",
-        "Sichuan&Guangdong&Jiangxi&Guangxi&Guizhou&Yunnan&Hong Kong&China",
-        "Florida&Outer Banks&Virginia&New England&the United States|London&United Kingdom|Paris&France",
-        "Florida&Outer Banks&Virginia&New England&the United States|London&United Kingdom|Paris&France",
-        "Florida&Outer Banks&Virginia&New England&the United States|London&United Kingdom|Paris&France",
-        "Florida&Outer Banks&Virginia&New England&the United States|London&United Kingdom|Paris&France",
-        "Florida&Outer Banks&Virginia&New England&the United States|London&United Kingdom|Paris&France",
-        "Florida&Outer Banks&Virginia&New England&the United States|London&United Kingdom|Paris&France",
-        # "Florida&Outer Banks&Virginia&New England&the United States",
-        # "Russia|Alaska&the United States|Canada|Mexico|United Kingdom|Denmark|Estonia|Finland|Ireland|Latvia|Lithuania|Norway|Sweden",
-        # "Hubei&Hunan&Zhejiang&Guizhou&Guangdong&Jiangxi&Guangxi&Fujian&Henan&Shandong&Jiangsu&Anhui&Shanghai&Chongqing&Shanxi&Sichuan&China",
-        # "Greece|Cyprus|Israel",
-        # "Uttarakhand&Himachal Pradesh&Uttar Pradesh&India|Sudurpashchim Pradesh&Karnali Pradesh&Nepal|Tibet&China",
-        # "Interior Division of Sabah&Kota Kinabalu&Penampang&Tuaran&Malaysia",
-        # "Windward Islands|Leeward Antilles|Venezuela|Colombia|Hispaniola|Puerto Rico| Cuba|Jamaica|Turks and Caicos Islands|The Bahamas|the United States|Atlantic Canada&Canada",
-        # "Hawaii",
-        # "Hyōgo Prefecture&Japan",
-        # "Leeward Islands|Puerto Rico|Dominican Republic|Lucayan Archipelago|Bermuda|Canada|Saint Pierre and Miquelon|Greenland",
-        # "Lesser Antilles|Puerto Rico|New England&the United States|Atlantic Canada&Canada",
-        # "Sri Lanka|India",
-    ]  #
-
-    for i in examples:
-        print(i)
-        country, location = norm.extract_locations(i)
-        country_norm = [norm.normalize_locations(i, geolocator) for i in country]
-        location_norm = [[norm.normalize_locations(x, geolocator) for x in i] for i in location]
-        print("countries:", country)
-        print("NORMALIZED:", country_norm)
-        print()
-
-        print("locations:", location)
-        print("NORMALIZED:", location_norm)
+    @staticmethod
+    def _debug(response, _print: bool = True):
+        if response:
+            if _print:
+                print(type(response))
+            return True
