@@ -9,9 +9,9 @@ class NormalizeLoc:
         gadm_path: str,
         unsd_path: str,
     ):
-        self.service = geocode
-        self.gadm = pd.read_csv(gadm_path, sep=None)
-        self.unsd = pd.read_csv(unsd_path, sep=None)
+        self.geocode = geocode
+        self.gadm = pd.read_csv(gadm_path, sep=None, engine="python")
+        self.unsd = pd.read_csv(unsd_path, sep=None, engine="python")
 
     def normalize_locations(self, text: str, is_country: bool = False) -> str | None:
         """Queries a geocode service for a location (country or smaller) and returns the top result"""
@@ -29,7 +29,7 @@ class NormalizeLoc:
                 if is_country
                 else text
             )
-            l = self.service(query, exactly_one=True, namedetails=True)
+            l = self.geocode(query, exactly_one=True, namedetails=True)
 
             return (
                 # return the english name only if a country (due to GADM's format)
