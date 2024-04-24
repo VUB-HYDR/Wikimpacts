@@ -62,3 +62,14 @@ If you have new events to add to the database, first parse them and insert them.
     ```shell
     poetry run python3 Database/create_db.py
     ```
+
+
+#### Sources & Citations
+- GADM world data | `Database/data/gadm_world.csv`
+
+    https://gadm.org/license.html
+
+- Regions by UNSD | `Database/data/UNSD — Methodology.csv`
+
+    United Nations Standard Country Code, Series M: Miscellaneous Statistical Papers, No. 49, New York: United Nations. ST/ESA/STAT/SER.M/49
+    https://unstats.un.org/unsd/classifications/Family/Detail/12
