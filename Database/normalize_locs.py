@@ -1,3 +1,6 @@
+import difflib
+import re
+
 import pandas as pd
 import us
 import difflib
@@ -15,6 +18,21 @@ class NormalizeLoc:
         self.geocode = geocode
         self.gadm = pd.read_csv(gadm_path, sep=None, engine="python")
         self.unsd = pd.read_csv(unsd_path, sep=None, engine="python")
+
+        # unsd specific variables
+        self.region, self.subregion, self.intermediateregion, self.iso, self.united_states = (
+            "Region Name",
+            "Sub-region Name",
+            "Intermediate Region Name",
+            "ISO-alpha3 Code",
+            "United States",
+        )
+
+        self.unsd_regions, self.unsd_subregions, self.unsd_intermediateregions = (
+            self.unsd[self.region].dropna().unique(),
+            self.unsd[self.subregion].dropna().unique(),
+            self.unsd[self.intermediateregion].dropna().unique(),
+        )
 
     def normalize_locations(self, text: str, is_country: bool = False) -> str | None:
         """Queries a geocode service for a location (country or smaller) and returns the top result"""
@@ -55,41 +73,36 @@ class NormalizeLoc:
             )
             return
 
-    def get_gadm_gid(
-        self,
-        area: str = None,
-        country: str = None,
-        row: list = None,
-        area_col: str = None,
-        country_col: str = None,
-    ) -> str:
-        if not area and area_col and row: area = row[area_col] 
-        if not country and country_col and row: country = row[country_col]
-
-        region, subregion, intermediateregion, iso, united_states = (
-            "Region Name",
-            "Sub-region Name",
-            "Intermediate Region Name",
-            "ISO-alpha3 Code",
-            "United States",
-        )
-        if area in self.unsd[region].unique():
-            return self.unsd.loc[self.unsd[region] == area][iso].unique().tolist()
-        if area in self.unsd[subregion].unique():
-            return self.unsd.loc[self.unsd[subregion] == area][iso].unique().tolist()
-        if area in self.unsd[intermediateregion].unique():
-            return (
-                self.unsd.loc[self.unsd[intermediateregion] == area][iso]
-                .unique()
-                .tolist()
+    def _get_unsd_region(self, area, fuzzy_match_n: int = 1, fuzzy_match_cuttoff: float = 0.8) -> list | None:
+        if area in self.unsd_regions:
+            return self.unsd.loc[self.unsd[self.region] == area][self.iso].unique().tolist()
+        else:
+            fuzzy_area_match = difflib.get_close_matches(
+                area, self.unsd_regions, n=fuzzy_match_n, cutoff=fuzzy_match_cuttoff
             )
-        
-        # limit GADM search to one country
-        gadm_df = (
-            self.gadm.loc[self.gadm["COUNTRY"] == country] if country else self.gadm
-        )
+            if fuzzy_area_match:
+                return self.unsd.loc[self.unsd[self.region] == fuzzy_area_match[0]][self.iso].unique().tolist()
 
-        # handle American States
+        if area in self.unsd_subregions:
+            return self.unsd.loc[self.unsd[self.subregion] == area][self.iso].unique().tolist()
+        else:
+            fuzzy_area_match = difflib.get_close_matches(
+                area, self.unsd_subregions, n=fuzzy_match_n, cutoff=fuzzy_match_cuttoff
+            )
+            if fuzzy_area_match:
+                return self.unsd.loc[self.unsd[self.subregion] == fuzzy_area_match[0]][self.iso].unique().tolist()
+
+        if area in self.unsd_intermediateregions:
+            return self.unsd.loc[self.unsd[self.intermediateregion] == area][self.iso].unique().tolist()
+        else:
+            fuzzy_area_match = difflib.get_close_matches(
+                area, self.unsd_intermediateregions, n=fuzzy_match_n, cutoff=fuzzy_match_cuttoff
+            )
+            if fuzzy_area_match:
+                return (
+                    self.unsd.loc[self.unsd[self.intermediateregion] == fuzzy_area_match[0]][self.iso].unique().tolist()
+                )
+
         us_state = None
         if country == united_states:
             try:
