@@ -17,7 +17,13 @@ class NormalizeLoc:
         self.unsd = pd.read_csv(unsd_path, sep=None, engine="python")
 
         # unsd specific variables
-        self.region, self.subregion, self.intermediateregion, self.iso, self.united_states = (
+        (
+            self.region,
+            self.subregion,
+            self.intermediateregion,
+            self.iso,
+            self.united_states,
+        ) = (
             "Region Name",
             "Sub-region Name",
             "Intermediate Region Name",
@@ -65,10 +71,7 @@ class NormalizeLoc:
             )
             return
 
-    def _get_unsd_region(
-        self, area, fuzzy_match_n: int = 1, fuzzy_match_cuttoff: float = 0.8
-    ) -> list | None:
-
+    def _get_unsd_region(self, area, fuzzy_match_n: int = 1, fuzzy_match_cuttoff: float = 0.8) -> list | None:
         regions = {
             self.region: self.unsd_regions,
             self.subregion: self.unsd_subregions,
@@ -77,19 +80,13 @@ class NormalizeLoc:
 
         for level, region_list in regions.items():
             if area in region_list:
-                return (
-                    self.unsd.loc[self.unsd[level] == area][self.iso].unique().tolist()
-                )
+                return self.unsd.loc[self.unsd[level] == area][self.iso].unique().tolist()
             else:
                 fuzzy_area_match = difflib.get_close_matches(
                     area, region_list, n=fuzzy_match_n, cutoff=fuzzy_match_cuttoff
                 )
                 if fuzzy_area_match:
-                    return (
-                        self.unsd.loc[self.unsd[level] == fuzzy_area_match[0]][self.iso]
-                        .unique()
-                        .tolist()
-                    )
+                    return self.unsd.loc[self.unsd[level] == fuzzy_area_match[0]][self.iso].unique().tolist()
 
     def _get_american_area(self, area: str, country: str) -> list | None:
         us_state = None
