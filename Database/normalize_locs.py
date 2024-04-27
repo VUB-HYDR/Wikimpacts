@@ -3,9 +3,6 @@ import re
 
 import pandas as pd
 import us
-import difflib
-import pprint
-import re
 
 
 class NormalizeLoc:
@@ -42,12 +39,7 @@ class NormalizeLoc:
             text = text.lower().strip()
             # Open Street Map has an issue with "united" countries. "The UK" and "The US" return no results, but "UK" and "US" do.
             query = (
-                {
-                    "country": 
-                    (
-                        re.sub(r"(the)", "", text).strip() if text.startswith("the u") else text
-                    )
-                }
+                {"country": (re.sub(r"(the)", "", text).strip() if text.startswith("the u") else text)}
                 if is_country
                 else text
             )
