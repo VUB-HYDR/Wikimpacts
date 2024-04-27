@@ -120,40 +120,56 @@ class NormalizeLoc:
             )
             return [f"{i}:{area.split(',')[0].strip()}" for i in areas]
 
+    def get_gadm_gid(
+        self,
+        area: str = None,
+        country: str = None,
+        row: list = None,
+        area_col: str = None,
+        country_col: str = None,
+    ) -> str:
+        if not area and area_col and row:
+            area = row[area_col]
+        if not country and country_col and row:
+            country = row[country_col]
+
+        # find regions in unsd
+        unsd_search_output = self._get_unsd_region(area) if area and not country else None
+        if unsd_search_output:
+            return unsd_search_output
+
+        # limit GADM search to one country
+        gadm_df = self.gadm.loc[self.gadm["COUNTRY"] == country] if country else self.gadm
+
+        # handle American States
+        us_search_output = self._get_american_area(area, country) if area and country == self.united_states else None
+        if us_search_output:
+            return us_search_output
+
         # handle countries
         if country in gadm_df["COUNTRY"].to_list() and not area:
             return gadm_df.loc[gadm_df["COUNTRY"] == country]["GID_0"].unique().tolist()
 
-        # if trying to get matches in a single country, do fuzzy search 
+        # if trying to get matches in a single country, do fuzzy search
         if country and area:
-            unique_area_sets = [
-                gadm_df[f"NAME_{i}"].dropna().unique().tolist()
-                for i in range(1, 6)
-            ]
+            unique_area_sets = [gadm_df[f"NAME_{i}"].dropna().unique().tolist() for i in range(1, 6)]
             i = 1
             for area_set in unique_area_sets:
                 closest_match = difflib.get_close_matches(area, area_set, n=1, cutoff=0.65)
                 print(closest_match)
-                if closest_match: return gadm_df.loc[gadm_df[f"NAME_{i}"] == closest_match[0]][f"GID_{i}"].unique().tolist()
+                if closest_match:
+                    return gadm_df.loc[gadm_df[f"NAME_{i}"] == closest_match[0]][f"GID_{i}"].unique().tolist()
                 i += 1
 
-        # handle rest by getting the deepest area GADM (TODO: maybe it should be the largest instead)
-        #deepest = []
         for i in range(1, 6):
             name_col, gid_col = f"NAME_{i}", f"GID_{i}"
             if area in gadm_df[name_col].to_list():
                 return gadm_df.loc[gadm_df[name_col] == area][gid_col].unique().tolist()
-            
+
             # clean out additional parts of a location name (like "county" or "city")
             alt_name = re.sub(r"(county)|(city)", "", area, flags=re.IGNORECASE).strip()
             if alt_name in gadm_df[name_col].to_list():
                 return gadm_df.loc[gadm_df[name_col] == alt_name][gid_col].unique().tolist()
-                
-                #deepest = (
-                #    gadm_df.loc[gadm_df[name_col] == area][gid_col].unique().tolist()
-                #)
-                #print(deepest)
-        #return deepest
 
     @staticmethod
     def extract_locations(
