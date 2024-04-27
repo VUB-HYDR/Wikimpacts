@@ -103,8 +103,9 @@ class NormalizeLoc:
                     self.unsd.loc[self.unsd[self.intermediateregion] == fuzzy_area_match[0]][self.iso].unique().tolist()
                 )
 
+    def _get_american_area(self, area: str, country: str) -> list | None:
         us_state = None
-        if country == united_states:
+        if country == self.united_states:
             try:
                 state = area.split(",")[-1].strip()
                 if len(state) == 2:
@@ -113,10 +114,7 @@ class NormalizeLoc:
                 us_state = None
         if us_state:
             areas = (
-                self.gadm.loc[
-                    (self.gadm.COUNTRY == united_states)
-                    & (self.gadm.NAME_1 == us_state.name)
-                ]["GID_1"]
+                self.gadm.loc[(self.gadm.COUNTRY == self.united_states) & (self.gadm.NAME_1 == us_state.name)]["GID_1"]
                 .unique()
                 .tolist()
             )
