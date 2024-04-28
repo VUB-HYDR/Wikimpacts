@@ -32,7 +32,7 @@ class NormalizeNum:
             "from tokens": 0,
             "after normalization": 0,
             "from a range": 0,
-            "from approximate quantifiers": 0
+            "from approximate quantifiers": 0,
         }
 
     @staticmethod
@@ -59,7 +59,8 @@ class NormalizeNum:
                 if len(regex.findall(r"\b(?<!\.)\d+(?:,\d+)*(?:\.\d+)?\b", text)) == 1:
                     other_scales = ["crore", "lakh", "crores", "lakhs"]
                     matches = regex.findall(
-                        r"\b(?<!\.)\d+(?:,\d+)*(?:\.\d+)?\b\s+(?:" + "|".join(other_scales) + ")", text)
+                        r"\b(?<!\.)\d+(?:,\d+)*(?:\.\d+)?\b\s+(?:" + "|".join(other_scales) + ")", text
+                    )
                     if len(matches):
                         numbers = [token.text for token in self.nlp(matches[0])]
                         try:
@@ -67,7 +68,7 @@ class NormalizeNum:
                             return [self.atof(numbers[0]) * other_scales_2_num[numbers[1]]]
                         except BaseException:
                             raise BaseException
-                        
+
                     else:
                         try:
                             # try normalizing the numbers to words, then extract the numbers
@@ -124,7 +125,9 @@ class NormalizeNum:
         new = ""
         for token in doc:
             # some times wrong tags are assigned, so we need to check both the tags and if the token is a number by regex
-            if (token.tag_ in ["CD", "SYM"] and token.text not in ["<", ">", "<=", ">="]) or (regex.match(r"\b(?<!\.)\d+(?:,\d+)*(?:\.\d+)?\b", token.text)):
+            if (token.tag_ in ["CD", "SYM"] and token.text not in ["<", ">", "<=", ">="]) or (
+                regex.match(r"\b(?<!\.)\d+(?:,\d+)*(?:\.\d+)?\b", token.text)
+            ):
                 try:
                     new += num2words(token.text) if to_word else token.text
                     if token.whitespace_:
@@ -219,18 +222,13 @@ class NormalizeNum:
                 return None
 
     def extract_approximate_quantifiers(self, text: str) -> Tuple[float]:
-        scales = {
-            "tens of": 10,
-            "hundreds of": 100,
-            "thousands of": 1000,
-            "millions of": 1000000
-        }
+        scales = {"tens of": 10, "hundreds of": 100, "thousands of": 1000, "millions of": 1000000}
         lower_scale = 2
         upper_scale = 7
 
         for phrase, scale in scales.items():
             if phrase in text.lower():
-                return (scale*lower_scale, scale*upper_scale)
+                return (scale * lower_scale, scale * upper_scale)
         return None
 
     def extract_numbers(
@@ -260,7 +258,8 @@ class NormalizeNum:
                     numbers = self.extract_approximate_quantifiers(text)
                     if numbers:
                         approx = 1
-                    else: raise BaseException
+                    else:
+                        raise BaseException
                 except BaseException:
                     try:
                         # try extraction by spaCy NERs
@@ -350,7 +349,7 @@ if __name__ == "__main__":
 
     nlp = load_spacy_model("en_core_web_trf")
     normalize = NormalizeNum(nlp, "en_US.UTF-8")
-    
+
     for i in examples:
         print(i)
         print(normalize.extract_numbers(i))

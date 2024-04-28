@@ -21,7 +21,7 @@ if __name__ == "__main__":
         "--data_path",
         dest="data_path",
         default="Database/output",
-        help="""The directory where .parquet files exist so they can be inserted into the db. 
+        help="""The directory where .parquet files exist so they can be inserted into the db.
         IMPORTANT: Specific event files should start with a 'Specific_' prefix""",
         type=str,
     )

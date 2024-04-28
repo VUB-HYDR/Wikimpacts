@@ -6,14 +6,14 @@ import pandas as pd
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
-            "-m",
-            "--method",
-            dest="method",
-            default="append",
-            choices=["append", "replace"],
-            help="Choose whether to append data to the exisitng db or to replace it",
-            type=str,
-        )
+        "-m",
+        "--method",
+        dest="method",
+        default="append",
+        choices=["append", "replace"],
+        help="Choose whether to append data to the exisitng db or to replace it",
+        type=str,
+    )
 
     parser.add_argument(
         "-d",
