@@ -19,21 +19,44 @@ CREATE TABLE Events (
     End_Date_Day INTEGER CHECK (End_Date_Day <= 31),
     End_Date_Month INTEGER CHECK (End_Date_Month <= 12),
     End_Date_Year INTEGER CHECK (length(End_Date_Year) = 4),
-    Total_Deaths INTEGER,
+    Total_Deaths TEXT,
+    Total_Deaths_Min REAL
+    Total_Deaths_Max REAL
+    Total_Deaths_Approx INTEGER, /* COMMENT 'Boolean', */
     Total_Injuries INTEGER,
+    Total_Injuries_Min REAL
+    Total_Injuries_Max REAL
+    Total_Injuries_Approx INTEGER, /* COMMENT 'Boolean', */
     Total_Displacement INTEGER,
+    Total_Displacement_Min REAL
+    Total_Displacement_Max REAL
+    Total_Displacement_Approx INTEGER, /* COMMENT 'Boolean', */
     Total_Homelessness INTEGER,
+    Total_Homelessness_Min REAL
+    Total_Homelessness_Max REAL
+    Total_Homelessness_Approx INTEGER, /* COMMENT 'Boolean', */
     Total_Insured_Damage REAL,
+    Total_Insured_Damage_Min REAL
+    Total_Insured_Damage_Max REAL
+    Total_Insured_Damage_Approx INTEGER, /* COMMENT 'Boolean', */
     Total_Insured_Damage_Units TEXT, /* COMMENT 'currency', */
     Total_Insured_Damage_Inflation_Adjusted INTEGER, /* COMMENT 'Boolean', */
     Total_Insured_Damage_Inflation_Adjusted_Year INTEGER CHECK (
         length(Total_Insured_Damage_Inflation_Adjusted_Year) = 4
     ),
     Total_Damage REAL,
+    Total_Damage_Min REAL
+    Total_Damage_Max REAL
+    Total_Damage_Approx INTEGER, /* COMMENT 'Boolean', */
+
     Total_Damage_Units TEXT, /* COMMENT 'currency', */
     Total_Damage_Inflation_Adjusted INTEGER, /* COMMENT 'Boolean', */
     Total_Damage_Inflation_Adjusted_Year INTEGER CHECK (length(Total_Damage_Inflation_Adjusted_Year) = 4),
     Total_Buildings_Damage INTEGER,
+    Total_Buildings_Damage_Min REAL
+    Total_Buildings_Damage_Max REAL
+    Total_Buildings_Damage_Approx INTEGER, /* COMMENT 'Boolean', */
+
     FOREIGN KEY(Event_ID) REFERENCES Events(Event_ID)
 );
 
@@ -51,6 +74,9 @@ CREATE TABLE Specific_Instance_Per_Country_Death (
     End_Date_Death_Month INTEGER CHECK (End_Date_Death_Month <= 12),
     End_Date_Death_Year INTEGER CHECK (length(End_Date_Death_Year) = 4),
     Num_Death INTEGER,
+    Num_Death_Min REAL
+    Num_Death_Max REAL
+    Num_Death_Approx INTEGER, /* COMMENT 'Boolean', */
     FOREIGN KEY(Event_ID) REFERENCES Events(Event_ID)
 );
 
@@ -68,6 +94,10 @@ CREATE TABLE Specific_Instance_Per_Country_Injuries (
     End_Date_Injuries_Month INTEGER CHECK (End_Date_Injuries_Month <= 12),
     End_Date_Injuries_Year INTEGER CHECK (length(End_Date_Injuries_Year) = 4),
     Num_Injuries INTEGER,
+    Num_Injuries_Min REAL
+    Num_Injuries_Max REAL
+    Num_Injuries_Approx INTEGER, /* COMMENT 'Boolean', */
+
     FOREIGN KEY(Event_ID) REFERENCES Events(Event_ID)
 );
 
@@ -85,6 +115,9 @@ CREATE TABLE Specific_Instance_Per_Country_Displacement (
     End_Date_Displacement_Month INTEGER CHECK (End_Date_Displacement_Month <= 12),
     End_Date_Displacement_Year INTEGER CHECK (length(End_Date_Displacement_Year) = 4),
     Num_Displaced INTEGER,
+    Num_Displaced_Min REAL
+    Num_Displaced_Max REAL
+    Num_Displaced_Approx INTEGER, /* COMMENT 'Boolean', */
     FOREIGN KEY(Event_ID) REFERENCES Events(Event_ID)
 );
 
@@ -102,6 +135,10 @@ CREATE TABLE Specific_Instance_Per_Country_Homelessness (
     End_Date_Homelessness_Month INTEGER CHECK (End_Date_Homelessness_Month <= 12),
     End_Date_Homelessness_Year INTEGER CHECK (length(End_Date_Homelessness_Year) = 4),
     Num_Homeless INTEGER,
+    Num_Homeless_Min REAL
+    Num_Homeless_Max REAL
+    Num_Homeless_Approx INTEGER, /* COMMENT 'Boolean', */
+
     FOREIGN KEY(Event_ID) REFERENCES Events(Event_ID)
 );
 
@@ -111,6 +148,9 @@ CREATE TABLE Specific_Instance_Per_Country_Insured_Damage (
     Location_Insured_Damage TEXT,
     Location_GCS OBJECT, /* COMMENT 'GCS', */
     Insured_Damage REAL,
+    Insured_Damage_Min REAL
+    Insured_Damage_Max REAL
+    Insured_Damage_Approx INTEGER, /* COMMENT 'Boolean', */
     Insured_Damage_Units TEXT, /* COMMENT 'currency', */
     Insured_Damage_Inflation_Adjusted INTEGER, /* COMMENT 'Boolean', */
     Insured_Damage_Inflation_Adjusted_Year INTEGER CHECK (
@@ -125,6 +165,9 @@ CREATE TABLE Specific_Instance_Per_Country_Economic_Damage (
     Location_Damage TEXT,
     Location_GCS OBJECT, /* COMMENT 'GCS', */
     Damage REAL,
+    Damage_Min REAL
+    Damage_Max REAL
+    Damage_Approx INTEGER, /* COMMENT 'Boolean', */
     Damage_Units TEXT, /* COMMENT 'currency', */
     Damage_Inflation_Adjusted INTEGER,/* COMMENT 'Boolean', */Damage_Inflation_Adjusted_Year INTEGER CHECK (length(Damage_Inflation_Adjusted_Year) = 4),FOREIGN KEY(Event_ID) REFERENCES Events(Event_ID)
 );
@@ -143,5 +186,8 @@ CREATE TABLE Specific_Instance_Per_Country_Building_Damage (
     End_Date_Building_Month INTEGER CHECK (End_Date_Building_Month <= 12),
     End_Date_Building_Year INTEGER CHECK (length(End_Date_Building_Year) = 4),
     Buildings_Damaged REAL,
+    Buildings_Damaged_Min REAL
+    Buildings_Damaged_Max REAL
+    Buildings_Damaged_Approx INTEGER, /* COMMENT 'Boolean', */
     FOREIGN KEY(Event_ID) REFERENCES Events(Event_ID)
 );
