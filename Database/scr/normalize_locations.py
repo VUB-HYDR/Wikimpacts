@@ -1,5 +1,6 @@
 import difflib
 import re
+
 import pandas as pd
 
 
@@ -56,13 +57,7 @@ class NormalizeLoc:
             text = text.lower().strip()
             # Open Street Map has an issue with "united" countries. "The UK" and "The US" return no results, but "UK" and "US" do.
             query = (
-                {
-                    self.country: (
-                        re.sub(r"(the)", "", text).strip()
-                        if text.startswith("the u")
-                        else text
-                    )
-                }
+                {self.country: (re.sub(r"(the)", "", text).strip() if text.startswith("the u") else text)}
                 if is_country
                 else text
             )
@@ -98,9 +93,7 @@ class NormalizeLoc:
             )
             return
 
-    def _get_unsd_region(
-        self, area, fuzzy_match_n: int = 1, fuzzy_match_cuttoff: float = 0.8
-    ) -> list | None:
+    def _get_unsd_region(self, area, fuzzy_match_n: int = 1, fuzzy_match_cuttoff: float = 0.8) -> list | None:
         regions = {
             self.region: self.unsd_regions,
             self.subregion: self.unsd_subregions,
@@ -109,19 +102,13 @@ class NormalizeLoc:
 
         for level, region_list in regions.items():
             if area in region_list:
-                return (
-                    self.unsd.loc[self.unsd[level] == area][self.iso].unique().tolist()
-                )
+                return self.unsd.loc[self.unsd[level] == area][self.iso].unique().tolist()
             else:
                 fuzzy_area_match = difflib.get_close_matches(
                     area, region_list, n=fuzzy_match_n, cutoff=fuzzy_match_cuttoff
                 )
                 if fuzzy_area_match:
-                    return (
-                        self.unsd.loc[self.unsd[level] == fuzzy_area_match[0]][self.iso]
-                        .unique()
-                        .tolist()
-                    )
+                    return self.unsd.loc[self.unsd[level] == fuzzy_area_match[0]][self.iso].unique().tolist()
 
     def _get_american_area(self, area: str, country: str = None) -> list | None:
         # TODO: slim down
@@ -144,24 +131,16 @@ class NormalizeLoc:
             us_county = address[-3]
 
             areas = (
-                self.us_gadm.loc[
-                    (self.us_gadm.NAME_1 == us_state)
-                    & (self.us_gadm.NAME_2 == us_county)
-                ]
+                self.us_gadm.loc[(self.us_gadm.NAME_1 == us_state) & (self.us_gadm.NAME_2 == us_county)]
                 .GID_2.unique()
                 .tolist()
             )
 
             # if not found, clean out surplus names like "county"
             if not areas:
-                us_county = re.sub(
-                    r"(county)", "", us_county, flags=re.IGNORECASE
-                ).strip()
+                us_county = re.sub(r"(county)", "", us_county, flags=re.IGNORECASE).strip()
                 areas = (
-                    self.us_gadm.loc[
-                        (self.us_gadm.NAME_1 == us_state)
-                        & (self.us_gadm.NAME_2 == us_county)
-                    ]
+                    self.us_gadm.loc[(self.us_gadm.NAME_1 == us_state) & (self.us_gadm.NAME_2 == us_county)]
                     .GID_2.unique()
                     .tolist()
                 )
@@ -170,11 +149,7 @@ class NormalizeLoc:
         elif len(address) == 2:
             us_state = address[-2]
 
-            areas = (
-                self.us_gadm.loc[(self.us_gadm.NAME_1 == us_state)]
-                .GID_1.unique()
-                .tolist()
-            )
+            areas = self.us_gadm.loc[(self.us_gadm.NAME_1 == us_state)].GID_1.unique().tolist()
 
         # deeper address
         elif len(address) > 3:
@@ -182,24 +157,16 @@ class NormalizeLoc:
             us_county = address[-3]
 
             areas = (
-                self.us_gadm.loc[
-                    (self.us_gadm.NAME_1 == us_state)
-                    & (self.us_gadm.NAME_2 == us_county)
-                ]
+                self.us_gadm.loc[(self.us_gadm.NAME_1 == us_state) & (self.us_gadm.NAME_2 == us_county)]
                 .GID_2.unique()
                 .tolist()
             )
 
             # if not found, clean out surplus names like "county"
             if not areas:
-                us_county = re.sub(
-                    r"(county)", "", us_county, flags=re.IGNORECASE
-                ).strip()
+                us_county = re.sub(r"(county)", "", us_county, flags=re.IGNORECASE).strip()
                 areas = (
-                    self.us_gadm.loc[
-                        (self.us_gadm.NAME_1 == us_state)
-                        & (self.us_gadm.NAME_2 == us_county)
-                    ]
+                    self.us_gadm.loc[(self.us_gadm.NAME_1 == us_state) & (self.us_gadm.NAME_2 == us_county)]
                     .GID_2.unique()
                     .tolist()
                 )
@@ -222,22 +189,17 @@ class NormalizeLoc:
             country = row[country_col]
 
         # find regions in unsd
-        unsd_search_output = (
-            self._get_unsd_region(area) if area and not country else None
-        )
+        unsd_search_output = self._get_unsd_region(area) if area and not country else None
         if unsd_search_output:
             return unsd_search_output
 
         # limit GADM search to one country
-        gadm_df = (
-            self.gadm.loc[self.gadm["COUNTRY"] == country] if country else self.gadm
-        )
+        gadm_df = self.gadm.loc[self.gadm["COUNTRY"] == country] if country else self.gadm
 
         # handle American States
         us_search_output = (
             self._get_american_area(area, country)
-            if country == self.united_states
-            or area.split(",")[-1].strip() == self.united_states
+            if country == self.united_states or area.split(",")[-1].strip() == self.united_states
             else None
         )
         if us_search_output:
@@ -249,23 +211,13 @@ class NormalizeLoc:
 
         # if trying to get matches in a single country, do fuzzy search
         if country and area:
-            unique_area_sets = [
-                gadm_df[f"NAME_{i}"].dropna().unique().tolist() for i in range(1, 6)
-            ]
+            unique_area_sets = [gadm_df[f"NAME_{i}"].dropna().unique().tolist() for i in range(1, 6)]
             i = 1
             for area_set in unique_area_sets:
-                closest_match = difflib.get_close_matches(
-                    area, area_set, n=1, cutoff=0.65
-                )
+                closest_match = difflib.get_close_matches(area, area_set, n=1, cutoff=0.65)
                 print(closest_match)
                 if closest_match:
-                    return (
-                        gadm_df.loc[gadm_df[f"NAME_{i}"] == closest_match[0]][
-                            f"GID_{i}"
-                        ]
-                        .unique()
-                        .tolist()
-                    )
+                    return gadm_df.loc[gadm_df[f"NAME_{i}"] == closest_match[0]][f"GID_{i}"].unique().tolist()
                 i += 1
 
         for i in range(1, 6):
@@ -276,11 +228,7 @@ class NormalizeLoc:
             # clean out additional parts of a location name (like "county" or "city")
             alt_name = re.sub(r"(county)|(city)", "", area, flags=re.IGNORECASE).strip()
             if alt_name in gadm_df[name_col].to_list():
-                return (
-                    gadm_df.loc[gadm_df[name_col] == alt_name][gid_col]
-                    .unique()
-                    .tolist()
-                )
+                return gadm_df.loc[gadm_df[name_col] == alt_name][gid_col].unique().tolist()
 
     @staticmethod
     def extract_locations(
@@ -315,3 +263,89 @@ class NormalizeLoc:
             if _print:
                 print(type(response))
             return True
+
+
+if __name__ == "__main__":
+    from geopy.extra.rate_limiter import RateLimiter
+    from geopy.geocoders import Nominatim
+
+    geolocator = Nominatim(user_agent="wikimpacts - impactdb; beta. Github: VUB-HYDR/Wikimpacts")
+    geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1)
+    norm = NormalizeLoc(
+        geocode=geocode,
+        gadm_path="Database/data/gadm_world.csv",
+        unsd_path="Database/data/UNSD — Methodology.csv",
+    )
+
+    # print("Normalized:", norm.normalize_locations("Dallas County, United states", is_country=False))
+    # print("Normalized:", norm.normalize_locations("Texas", is_country=False))
+    # print(
+    #     "Normalized:",
+    #     norm.normalize_locations("springfield, Massachusetts", is_country=False),
+    # )
+
+    # print(norm.normalize_locations("The US", is_country=True))
+    # print(norm.normalize_locations("The United Kingdom", is_country=True))
+
+    examples = [
+        ("Texas, United States", None),
+        ("Dallas, Texas, United States", None),
+        ("Dallas City, Dallas County, Texas, United States", None),
+        ("Dallas City, Dallas County, Texas, United States", None),
+        ("Wolfe County", None),
+        ("Wolfe County, Kentucky", "United States"),
+        ("Springfield, Massachusetts, United States", None),
+        ("Springfield, Massachusetts", "United States"),
+        (
+            "Springfield, West Springfield, Hampden County, Massachusetts, United States",
+            None,
+        ),
+        (
+            "Springfield, West Springfield, Hampden County, Massachusetts",
+            "United States",
+        ),
+    ]
+    _ = [
+        ("Dallas, TX", "United States"),
+        ("North America", None),
+        ("Northern America", None),
+        ("Eastern Europe", None),
+        ("East Europe", None),
+        ("United States of America", None),
+        ("Pilipinas", None),
+        ("Malda", "India"),
+        ("Maryland", "United States"),
+        ("Calaveras County", "United States"),
+        ("Calavras County", "United States"),
+        ("København", None),
+        ("New York City", "United States"),
+        ("Maryland", None),
+        ("Dallas", "United States"),
+        ("Dallas County", "United States"),
+        ("Howard County, IA", "United States"),
+        ("West Virginia", "United States"),
+        ("Maniwaki", "Canada"),
+        ("Maniwaki", None),
+        ("Karst Plateau", "Slovenia"),
+        ("Karst", "Slovenia"),
+        ("København", None),
+        ("British Columbia", None),
+        ("El Pont de Vilomara, Catalonia", "Spain"),
+    ]
+    for a, c in examples:
+        print(a, c)
+        print(norm.get_gadm_gid(area=a, country=c))
+        print()
+        print()
+
+# TODO:
+# X# when searching for a sublocation, limit the gadm rows to that country only
+# X# Malda > ['EST.8.2.14_1'] but Malda is in India (not the village in Estonia!)
+### Kras (Karst Plateau) is in Slovenia, not the one in Indonesia!
+
+# X# fuzzy-match the UNSD
+# X# "North Europe" should return "Northern Europe" countries
+# X# Maldah is in India, but our data says Malda
+
+## natural areas
+### https://www.openstreetmap.org/relation/11801461 (Karst Plateau)

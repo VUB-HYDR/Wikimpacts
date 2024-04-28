@@ -6,19 +6,6 @@ from num2words import num2words
 from text_to_num import alpha2digit, text2num
 
 
-def load_spacy_model(spacy_model: str = "en_core_web_trf") -> spacy.language:
-    try:
-        nlp = spacy.load(spacy_model, enable=["transformer", "ner", "tagger"])
-        print(f"SpaCy model '{spacy_model}' has been loaded")
-    except OSError:
-        print(f"SpaCy model '{spacy_model}' is not downloaded. Dowloading now - this might take a minute")
-        from spacy.cli import download
-
-        download(spacy_model)
-        nlp = spacy.load(spacy_model)
-    return nlp
-
-
 class NormalizeNum:
     def __init__(self, nlp: spacy.language, locale_config: str):
         import locale

@@ -4,9 +4,25 @@ from typing import Tuple, Union
 import pandas as pd
 import shortuuid
 from dateparser.date import DateDataParser
+from spacy import language as spacy_language
 
 
 class NormalizeUtils:
+    @staticmethod
+    def load_spacy_model(spacy_model: str = "en_core_web_trf") -> spacy_language:
+        import spacy
+
+        try:
+            nlp = spacy.load(spacy_model, enable=["transformer", "ner", "tagger"])
+            print(f"SpaCy model '{spacy_model}' has been loaded")
+        except OSError:
+            print(f"SpaCy model '{spacy_model}' is not downloaded. Dowloading now - this might take a minute")
+            from spacy.cli import download
+
+            download(spacy_model)
+            nlp = spacy.load(spacy_model)
+        return nlp
+
     @staticmethod
     def random_short_uuid(length: int = 7) -> str:
         """Generates a short alpha-numerical UID"""

@@ -1,16 +1,15 @@
 import argparse
 import ast
-import os
 import re
 
 import pandas as pd
 import requests_cache
 from dotenv import load_dotenv
-from geopy.geocoders import Nominatim
 from geopy.extra.rate_limiter import RateLimiter
-from normalize_locs import NormalizeLoc
-from normalize_nums import NormalizeNum, load_spacy_model
-from normalize_utils import NormalizeUtils as utils
+from geopy.geocoders import Nominatim
+from scr.normalize_locations import NormalizeLoc
+from scr.normalize_numbers import NormalizeNum
+from scr.normalize_utils import NormalizeUtils as utils
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -65,7 +64,7 @@ if __name__ == "__main__":
         type=str,
     )
     args = parser.parse_args()
-    nlp = load_spacy_model(args.spaCy_model_name)
+    nlp = utils.load_spacy_model(args.spaCy_model_name)
 
     extract = NormalizeNum(nlp, locale_config=args.locale_config)
 
@@ -75,7 +74,9 @@ if __name__ == "__main__":
 
     geolocator = Nominatim(user_agent="wikimpacts - impactdb; beta. Github: VUB-HYDR/Wikimpacts")
     geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1)
-    norm_loc = NormalizeLoc(geocode=geocode, gadm_path="Database/data/gadm_world.csv", unsd_path="Database/data/UNSD — Methodology.csv")
+    norm_loc = NormalizeLoc(
+        geocode=geocode, gadm_path="Database/data/gadm_world.csv", unsd_path="Database/data/UNSD — Methodology.csv"
+    )
 
     df = pd.read_json(f"{args.raw_path}/{args.filename}")
 
@@ -142,7 +143,9 @@ if __name__ == "__main__":
         # normalize location names
         if "Country" in events.columns:
             events["Country_Norm"] = events.Country.apply(
-                lambda countries: [norm_loc.normalize_locations(c, is_country=True) for c in countries] if countries else None
+                lambda countries: [norm_loc.normalize_locations(c, is_country=True) for c in countries]
+                if countries
+                else None
             )
 
         if "Location" in events.columns:
