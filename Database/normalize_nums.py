@@ -1,4 +1,4 @@
-from typing import Dict, List, NoReturn, Tuple, Union
+from typing import Dict, List, Tuple, Union
 
 import regex
 import spacy
@@ -26,21 +26,12 @@ class NormalizeNum:
         locale.setlocale(locale.LC_ALL, locale_config)
         self.nlp = nlp
         self.atof = locale.atof
-        self.stats = {
-            "from a single number": 0,
-            "from entities": 0,
-            "from tokens": 0,
-            "after normalization": 0,
-            "from a range": 0,
-            "from approximate quantifiers": 0,
-        }
 
     @staticmethod
     def preprocess(text: str):
         # remove currency
         text = " ".join(regex.sub(r"\p{Sc}|(~)|Rs\.|Rs", " \g<0> ", text).split())
         # split any numbers attached to digits ("EUR19" -> "EUR 19")
-        # return " ".join(regex.sub(r"(?:[A-Z]{3})(\d+)|(\d+)(?:[A-Z]{3})", " \g<0> ", text))
         text = regex.split(r"(?:[A-Z]{3})(\d+)|(\d+)(?:[A-Z]{3})", text)
         return " ".join(t for t in text if t)
 
@@ -242,16 +233,13 @@ class NormalizeNum:
 
         try:
             # simplest approach, attempt to extract a single number
-            self.stats["from a single number"] += 1
             numbers = self.extract_single_number(text)
         except BaseException:
             try:
-                self.stats["from a range"] += 1
                 numbers = self.extract_range(text)
                 assert numbers, BaseException
             except BaseException:
                 try:
-                    self.stats["from approximate quantifiers"] += 1
                     numbers = self.extract_approximate_quantifiers(text)
                     if numbers:
                         approx = 1
@@ -260,17 +248,14 @@ class NormalizeNum:
                 except BaseException:
                     try:
                         # try extraction by spaCy NERs
-                        self.stats["from entities"] += 1
                         numbers = self.extract_numbers_from_entities(doc, labels)
                     except BaseException:
                         try:
                             # if no NERs were extacted or no NERs were useful, try extracting by token instead
-                            self.stats["from tokens"] += 1
                             numbers = self.extract_numbers_from_tokens(doc)
                         except BaseException:
                             try:
                                 # if all fails, try by normalizing the numbers to words
-                                self.stats["after normalization"] += 1
                                 doc = self.nlp(self.normalize_num(doc), to_words=True)
                                 numbers = self.extract_numbers_from_entities(doc, labels)
                             except BaseException:
@@ -283,8 +268,3 @@ class NormalizeNum:
             elif len(numbers) == 2:
                 return (numbers[0], numbers[1], approx)
         return (None, None, approx)
-
-    def print_stats(self) -> NoReturn:
-        import pprint
-
-        pprint.pprint(self.stats, indent=3)
