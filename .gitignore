@@ -1,7 +1,7 @@
 # ignore dev files
 results
 .env
-
+Database/raw/*.xlsx
 # ignore pycache
 */__pycache__
 
@@ -10,4 +10,3 @@ results
 
 # ignore geopy cache (used for normalizing locations faster)
 geopy_cache.sqlite
-gadm*
