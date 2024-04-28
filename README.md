@@ -9,7 +9,14 @@ Then activate a virtual environment and install the dependencies:
 
 ```shell
 poetry shell # activates a venv
-poetry install  # installs all dependencies from the lockfile
+poetry install # installs all dependencies from the lockfile
+```
+
+- Install pre-commit
+
+```shell
+$ pre-commit install
+pre-commit installed at .git/hooks/pre-commit
 ```
 
 ### Quickstart
@@ -57,6 +64,9 @@ If you have new events to add to the database, first parse them and insert them.
     poetry run python3 Database/create_db.py
     ```
 
+#### Develop
+
+To develop a new feature, checkout a new branch from `main`.
 
 #### Sources & Citations
 - GADM world data | `Database/data/gadm_world.csv`
