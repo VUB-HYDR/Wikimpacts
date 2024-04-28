@@ -132,6 +132,7 @@ class NormalizeNum:
 
         # remove leftover currency not detected by spaCy
         new = regex.sub(r"\p{Sc}", "", new)
+
         return new.strip()
 
     def extract_numbers_from_entities(self, doc: spacy.tokens.doc.Doc, labels: List[str]) -> List[float]:
@@ -177,13 +178,17 @@ class NormalizeNum:
     def check_for_approximation(self, doc: spacy.tokens.doc.Doc, labels: List[str]) -> bool:
         tags = " ".join([token.tag_ for token in doc])
         ent_labels = [ent.label_ for ent in doc.ents]
-        # check for any math symbols (>=, ~, etc) or if a number ends with a plus/plus-minus sign
+
         # or for combinations of a preposition, superlative, and number
         try:
             self.atof(doc.text)
             return 0
         except:
-            if "NFP" in tags or "IN JJS CD" in tags or ":" in tags or regex.findall(r"[0-9]+(\+|±)", doc.text):
+            # check for common POS tag combinations (example: "About 200 people" -> "RB CD NNS")
+            # check for any math symbols (>=, ~, etc) or if a number ends with a plus/plus-minus sign
+            if any([x in tags for x in ["NFP", "IN JJS CD", "RB CD NNS", "IN CD NNS", ":"]]) or regex.findall(
+                r"[0-9]+(\+|±)|(=)*(>|<)(=)*|(~)", doc.text
+            ):
                 return 1
 
             # check if all tokens in the string are number/money-related
