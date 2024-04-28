@@ -12,15 +12,9 @@ poetry shell # activates a venv
 poetry install  # installs all dependencies from the lockfile
 ```
 
-- [Create a Bing Maps Account](https://learn.microsoft.com/en-us/bingmaps/getting-started/bing-maps-dev-center-help/creating-a-bing-maps-account), then (generate an api key)[https://learn.microsoft.com/en-us/bingmaps/getting-started/bing-maps-dev-center-help/getting-a-bing-maps-key]. Place the key in a `.env` file:
-
-```shell
-BING_MAPS_API_KEY=my-long-api-key-fr    om-bing-maps
-```
-
 ### Quickstart
 
-If you have new events to add to the database, first parse them and insert them. 
+If you have new events to add to the database, first parse them and insert them.
 
 #### Parsing and normalization
 - To parse events (and normalize their values) from a json file with the right schema (adding schema validation soon), run:
