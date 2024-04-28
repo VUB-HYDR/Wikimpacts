@@ -6,7 +6,8 @@ import re
 import pandas as pd
 import requests_cache
 from dotenv import load_dotenv
-from geopy.geocoders import Bing
+from geopy.geocoders import Nominatim
+from geopy.extra.rate_limiter import RateLimiter
 from normalize_locs import NormalizeLoc
 from normalize_nums import NormalizeNum, load_spacy_model
 from normalize_utils import NormalizeUtils as utils
@@ -72,9 +73,9 @@ if __name__ == "__main__":
 
     load_dotenv()
 
-    api_key = os.getenv("BING_MAPS_API_KEY")
-    geolocator = Bing(api_key=api_key, user_agent="shorouq.zahra@ri.se")
-    norm_loc = NormalizeLoc(geolocator)
+    geolocator = Nominatim(user_agent="wikimpacts - impactdb; beta. Github: VUB-HYDR/Wikimpacts")
+    geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1)
+    norm_loc = NormalizeLoc(geocode=geocode, gadm_path="Database/data/gadm_world.csv", unsd_path="Database/data/UNSD — Methodology.csv")
 
     df = pd.read_json(f"{args.raw_path}/{args.filename}")
 
@@ -141,7 +142,7 @@ if __name__ == "__main__":
         # normalize location names
         if "Country" in events.columns:
             events["Country_Norm"] = events.Country.apply(
-                lambda countries: [norm_loc.normalize_locations(c) for c in countries] if countries else None
+                lambda countries: [norm_loc.normalize_locations(c, is_country=True) for c in countries] if countries else None
             )
 
         if "Location" in events.columns:
