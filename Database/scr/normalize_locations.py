@@ -1,7 +1,9 @@
 import difflib
 import re
-import pycountry
+
 import pandas as pd
+import pycountry
+
 
 class NormalizeLoc:
     def __init__(
@@ -67,13 +69,7 @@ class NormalizeLoc:
             # Open Street Map has an issue with "united" countries. "The UK" and "The US" return no results, but "UK" and "US" do.
 
             if is_country:
-                query = {
-                    self.country: (
-                        re.sub(r"(the)", "", area).strip()
-                        if area.startswith("the u")
-                        else area
-                    )
-                }
+                query = {self.country: (re.sub(r"(the)", "", area).strip() if area.startswith("the u") else area)}
             elif in_country:
                 query = area
                 print(in_country)
@@ -89,7 +85,6 @@ class NormalizeLoc:
                 namedetails=True,
                 geometry="geojson",
                 country_codes=country_codes,
-                
             )
             location = None
             l = sorted(l, key=lambda x: x.raw["importance"], reverse=True)
@@ -117,8 +112,7 @@ class NormalizeLoc:
                 location.raw["display_name"]
                 if (
                     location.raw["addresstype"] in [self.county, self.state, self.city]
-                    and location.raw["display_name"].split(",")[-1].strip()
-                    == "United States"
+                    and location.raw["display_name"].split(",")[-1].strip() == "United States"
                 )
                 else None
             )
@@ -136,8 +130,7 @@ class NormalizeLoc:
                         if "int_name" in location.raw["namedetails"].keys()
                         else (
                             location.raw["namedetails"]["name"]
-                            if location.raw["namedetails"]["name"]
-                            not in [None, "None", "none"]
+                            if location.raw["namedetails"]["name"] not in [None, "None", "none"]
                             else location.raw["display_name"]
                         )
                     )
