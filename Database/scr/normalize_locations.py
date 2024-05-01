@@ -1,8 +1,7 @@
 import difflib
 import re
-
+import pycountry
 import pandas as pd
-
 
 class NormalizeLoc:
     def __init__(
@@ -48,50 +47,113 @@ class NormalizeLoc:
 
         self.us_gadm = self.gadm.loc[self.gadm.COUNTRY == self.united_states]
 
-    def normalize_locations(self, text: str, is_country: bool = False) -> str | None:
+    def normalize_locations(
+        self, area: str, is_country: bool = False, in_country: str = None
+    ) -> tuple[str, dict] | None:
         """Queries a geocode service for a location (country or smaller) and returns the top result"""
 
-        if not isinstance(text, str) or not text:
-            return
+        if not isinstance(area, str) or not area:
+            return (None, None)
+
+        if is_country and in_country:
+            return (None, None)
+
         try:
-            text = text.lower().strip()
+            area = area.lower().strip()
+            if isinstance(in_country, str):
+                in_country = in_country.lower().strip()
+
+            country_codes = None
             # Open Street Map has an issue with "united" countries. "The UK" and "The US" return no results, but "UK" and "US" do.
-            query = (
-                {self.country: (re.sub(r"(the)", "", text).strip() if text.startswith("the u") else text)}
-                if is_country
-                else text
+
+            if is_country:
+                query = {
+                    self.country: (
+                        re.sub(r"(the)", "", area).strip()
+                        if area.startswith("the u")
+                        else area
+                    )
+                }
+            elif in_country:
+                query = area
+                print(in_country)
+                country_codes = pycountry.countries.search_fuzzy(in_country)[0].alpha_2
+                print(country_codes)
+
+            else:
+                query = area
+
+            l = self.geocode(
+                query,
+                exactly_one=False,
+                namedetails=True,
+                geometry="geojson",
+                country_codes=country_codes,
+                
             )
-            l = self.geocode(query, exactly_one=True, namedetails=True)
+            location = None
+            l = sorted(l, key=lambda x: x.raw["importance"], reverse=True)
+
+            for result in l:
+                if result.raw["geojson"]["type"].strip().lower() != "point":
+                    print(result.raw["geojson"]["type"])
+                    if result.raw["type"] == "administrive":
+                        location = result
+                        break
+
+                    elif result.raw["type"] != "commercial":
+                        location = result
+                        break
+                    else:
+                        location = result
+                        break
+                else:
+                    location = None
+
+            if location is None:
+                location = l[0]
 
             us_area = (
-                l.raw["display_name"]
+                location.raw["display_name"]
                 if (
-                    l.raw["addresstype"] in [self.county, self.state, self.city]
-                    and l.raw["display_name"].split(",")[-1].strip() == "United States"
+                    location.raw["addresstype"] in [self.county, self.state, self.city]
+                    and location.raw["display_name"].split(",")[-1].strip()
+                    == "United States"
                 )
                 else None
             )
             if us_area:
                 # retuns US addresses as (area (if present), city (if present), county (if present), state, country)
-                return l.raw["display_name"]
-
-            return (
+                normalized_area_name = location.raw["display_name"]
+            else:
                 # return the english name only if a country (due to GADM's format)
-                l.raw["namedetails"]["name:en"]
-                if (is_country or l.raw["addresstype"] == self.country)
-                else (
-                    # return the international name if present (only for sublocations, due to GADM's format)
-                    l.raw["namedetails"]["int_name"]
-                    if "int_name" in l.raw["namedetails"].keys()
-                    else l.raw["namedetails"]["name"]
+                normalized_area_name = (
+                    location.raw["namedetails"]["name:en"]
+                    if (is_country or location.raw["addresstype"] == self.country)
+                    else (
+                        # return the international name if present (only for sublocations, due to GADM's format)
+                        location.raw["namedetails"]["int_name"]
+                        if "int_name" in location.raw["namedetails"].keys()
+                        else (
+                            location.raw["namedetails"]["name"]
+                            if location.raw["namedetails"]["name"]
+                            not in [None, "None", "none"]
+                            else location.raw["display_name"]
+                        )
+                    )
                 )
-            )
+            try:
+                geojson = location.raw["geojson"]
+            except:
+                geojson = None
+
+            return (normalized_area_name, geojson)
         except BaseException as err:
             print(
-                f"Could not find location {text} (is country? {is_country}). Error message",
+                f"Could not find location {area} (is country? {is_country}; in_country {in_country}). Error message",
                 err,
             )
-            return
+            return (None, None)
 
     def _get_unsd_region(self, area, fuzzy_match_n: int = 1, fuzzy_match_cuttoff: float = 0.8) -> list | None:
         regions = {
