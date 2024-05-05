@@ -199,7 +199,17 @@ if __name__ == "__main__":
             events[col] = events[col].astype(str)
 
         logger.info("Converting list columns to strings to store in sqlite3")
-        for col in ["Perils", "Location", "Location_Norm", "Country", "Country_Norm"]:
+        for col in [
+            "Perils",
+            "Location",
+            "Location_Norm",
+            "Location_Type",
+            "Location_GID",
+            "Country",
+            "Country_Norm",
+            "Country_Type",
+            "Country_GID",
+        ]:
             if col in events.columns:
                 events[col] = events[col].astype(str)
 
