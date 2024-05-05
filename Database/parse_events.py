@@ -3,12 +3,8 @@ import ast
 import re
 
 import pandas as pd
-import requests_cache
-from dotenv import load_dotenv
-from geopy.extra.rate_limiter import RateLimiter
-from geopy.geocoders import Nominatim
-from scr.normalize_locations import NormalizeLoc
-from scr.normalize_numbers import NormalizeNum
+from scr.normalize_locations import NormalizeLocation
+from scr.normalize_numbers import NormalizeNumber
 from scr.normalize_utils import NormalizeUtils as utils
 
 if __name__ == "__main__":
@@ -66,16 +62,9 @@ if __name__ == "__main__":
     args = parser.parse_args()
     nlp = utils.load_spacy_model(args.spaCy_model_name)
 
-    extract = NormalizeNum(nlp, locale_config=args.locale_config)
+    norm_num = NormalizeNumber(nlp, locale_config=args.locale_config)
 
-    requests_cache.install_cache("Database/data/geopy_cache")
-
-    load_dotenv()
-
-    geolocator = Nominatim(user_agent="wikimpacts - impactdb; beta. Github: VUB-HYDR/Wikimpacts")
-    geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1)
-    norm_loc = NormalizeLoc(
-        geocode=geocode,
+    norm_loc = NormalizeLocation(
         gadm_path="Database/data/gadm_world.csv",
         unsd_path="Database/data/UNSD — Methodology.csv",
     )

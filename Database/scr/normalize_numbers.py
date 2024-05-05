@@ -6,7 +6,7 @@ from num2words import num2words
 from text_to_num import alpha2digit, text2num
 
 
-class NormalizeNum:
+class NormalizeNumber:
     def __init__(self, nlp: spacy.language, locale_config: str):
         import locale
 
@@ -15,14 +15,14 @@ class NormalizeNum:
         self.atof = locale.atof
 
     @staticmethod
-    def preprocess(text: str):
+    def _preprocess(text: str):
         # remove currency
         text = " ".join(regex.sub(r"\p{Sc}|(~)|Rs\.|Rs", " \g<0> ", text).split())
         # split any numbers attached to digits ("EUR19" -> "EUR 19")
         text = regex.split(r"(?:[A-Z]{3})(\d+)|(\d+)(?:[A-Z]{3})", text)
         return " ".join(t for t in text if t)
 
-    def extract_single_number(self, text: str) -> List[float]:
+    def _extract_single_number(self, text: str) -> List[float]:
         if text.lower().strip() == "none":
             return [0]
         try:
@@ -52,7 +52,7 @@ class NormalizeNum:
                             # try normalizing the numbers to words, then extract the numbers
                             # (eg. "2 million" -> "two million" -> 2000000.0)
                             assert len(regex.findall(r"[0-9]+[,.]a?[0-9]*|[0-9]+", text)) == 1, BaseException
-                            normalized_text = self.normalize_num(self.nlp(text), to_word=True)
+                            normalized_text = self._normalize_num(self.nlp(text), to_word=True)
                             number = text2num(normalized_text, lang="en", relaxed=True)
                         except:
                             # handle decimals:
@@ -68,7 +68,7 @@ class NormalizeNum:
 
         return [number]
 
-    def extract_numbers_from_tokens(self, doc: spacy.tokens.doc.Doc) -> List[float]:
+    def _extract_numbers_from_tokens(self, doc: spacy.tokens.doc.Doc) -> List[float]:
         numbers = []
         tmp_num = ""
         num_ranges = []
@@ -76,7 +76,7 @@ class NormalizeNum:
             for i, token in enumerate(doc):
                 if token.tag_ == "CD":
                     try:
-                        num = self.normalize_num(token.text, to_word=True)
+                        num = self._normalize_num(token.text, to_word=True)
                     except:
                         num = token.text
                     tmp_num += num
@@ -99,7 +99,7 @@ class NormalizeNum:
             raise BaseException
 
     @staticmethod
-    def normalize_num(doc, to_word=False) -> str:
+    def _normalize_num(doc, to_word=False) -> str:
         new = ""
         for token in doc:
             # some times wrong tags are assigned, so we need to check both the tags and if the token is a number by regex
@@ -122,7 +122,7 @@ class NormalizeNum:
 
         return new.strip()
 
-    def extract_numbers_from_entities(self, doc: spacy.tokens.doc.Doc, labels: List[str]) -> List[float]:
+    def _extract_numbers_from_entities(self, doc: spacy.tokens.doc.Doc, labels: List[str]) -> List[float]:
         numbers = []
         if not doc.ents:
             raise BaseException
@@ -140,16 +140,16 @@ class NormalizeNum:
                 transcribed_text = alpha2digit(new if new else ent.text, lang="en", ordinal_threshold=0, relaxed=True)
                 if "MONEY" in labels and ent.label_ == "MONEY":
                     try:
-                        return self.extract_numbers_from_tokens(doc)
+                        return self._extract_numbers_from_tokens(doc)
                     except:
-                        return self.extract_numbers_from_tokens(self.nlp(transcribed_text))
+                        return self._extract_numbers_from_tokens(self.nlp(transcribed_text))
 
                 try:
                     number = self.atof(transcribed_text)
                     numbers.append(number)
                 except:
                     try:
-                        normalized_num = self.normalize_num(self.nlp(transcribed_text), to_word=False)
+                        normalized_num = self._normalize_num(self.nlp(transcribed_text), to_word=False)
                         numbers.append(self.atof(normalized_num))
                     except BaseException:
                         raise BaseException
@@ -162,7 +162,7 @@ class NormalizeNum:
     ):
         return [(span["start"], span["end"]) for span in spans]
 
-    def check_for_approximation(self, doc: spacy.tokens.doc.Doc, labels: List[str]) -> bool:
+    def _check_for_approximation(self, doc: spacy.tokens.doc.Doc, labels: List[str]) -> bool:
         tags = " ".join([token.tag_ for token in doc])
         ent_labels = [ent.label_ for ent in doc.ents]
 
@@ -195,8 +195,8 @@ class NormalizeNum:
 
             return 0
 
-    def extract_range(self, text: str) -> Tuple[float]:
-        text = self.normalize_num(self.nlp(text), to_word=False)
+    def _extract_range(self, text: str) -> Tuple[float]:
+        text = self._normalize_num(self.nlp(text), to_word=False)
         nums = text.split("-")
         if len(nums) == 2:
             try:
@@ -204,7 +204,7 @@ class NormalizeNum:
             except:
                 return None
 
-    def extract_approximate_quantifiers(self, text: str) -> Tuple[float]:
+    def _extract_approximate_quantifiers(self, text: str) -> Tuple[float]:
         scales = {"tens of": 10, "hundreds of": 100, "thousands of": 1000, "millions of": 1000000}
         lower_scale = 2
         upper_scale = 7
@@ -219,20 +219,20 @@ class NormalizeNum:
         text: str,
         labels: List[str] = ["CARDINAL", "MONEY", "QUANTITY"],
     ) -> Tuple[Union[float, None], Union[float, None], Union[bool, None]]:
-        text = self.preprocess(text)
+        text = self._preprocess(text)
         doc = self.nlp(text.strip())
-        approx = self.check_for_approximation(doc, labels)
+        approx = self._check_for_approximation(doc, labels)
 
         try:
             # simplest approach, attempt to extract a single number
-            numbers = self.extract_single_number(text)
+            numbers = self._extract_single_number(text)
         except BaseException:
             try:
-                numbers = self.extract_range(text)
+                numbers = self._extract_range(text)
                 assert numbers, BaseException
             except BaseException:
                 try:
-                    numbers = self.extract_approximate_quantifiers(text)
+                    numbers = self._extract_approximate_quantifiers(text)
                     if numbers:
                         approx = 1
                     else:
@@ -244,11 +244,11 @@ class NormalizeNum:
                     except BaseException:
                         try:
                             # if no NERs were extacted or no NERs were useful, try extracting by token instead
-                            numbers = self.extract_numbers_from_tokens(doc)
+                            numbers = self._extract_numbers_from_tokens(doc)
                         except BaseException:
                             try:
                                 # if all fails, try by normalizing the numbers to words
-                                doc = self.nlp(self.normalize_num(doc), to_words=True)
+                                doc = self.nlp(self._normalize_num(doc), to_words=True)
                                 numbers = self.extract_numbers_from_entities(doc, labels)
                             except BaseException:
                                 return (None, None, None)

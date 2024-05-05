@@ -6,7 +6,7 @@ import pandas as pd
 import pycountry
 
 
-class NormalizeLoc:
+class NormalizeLocation:
     def __init__(
         self,
         geocode: any,
