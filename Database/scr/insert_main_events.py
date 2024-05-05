@@ -114,7 +114,7 @@ if __name__ == "__main__":
         ]
     ]
 
-    connection = sqlite3.connect(f"{args.data_path}/{args.database_name}")
+    connection = sqlite3.connect(args.database_name)
     cursor = connection.cursor()
 
     # change if_exists to "append" to avoid overwriting the database

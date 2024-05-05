@@ -15,7 +15,7 @@ def generate_db(sql_path="Database/schema.sql"):
 
 
 if __name__ == "__main__":
-    connection = sqlite3.connect("Database/output/impact.db")
+    connection = sqlite3.connect("Database/impact.db")
     cursor = connection.cursor()
     generate_db()
     connection.close()
