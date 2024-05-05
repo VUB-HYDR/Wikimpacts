@@ -59,6 +59,7 @@ class NormalizeLocation:
 
         self.us_gadm = self.gadm.loc[self.gadm.COUNTRY == self.united_states]
 
+    @staticmethod
     def uninstall_cache():
         requests_cache.uninstall_cache()
 
