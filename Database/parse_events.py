@@ -75,7 +75,9 @@ if __name__ == "__main__":
     geolocator = Nominatim(user_agent="wikimpacts - impactdb; beta. Github: VUB-HYDR/Wikimpacts")
     geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1)
     norm_loc = NormalizeLoc(
-        geocode=geocode, gadm_path="Database/data/gadm_world.csv", unsd_path="Database/data/UNSD — Methodology.csv"
+        geocode=geocode,
+        gadm_path="Database/data/gadm_world.csv",
+        unsd_path="Database/data/UNSD — Methodology.csv",
     )
 
     df = pd.read_json(f"{args.raw_path}/{args.filename}")
@@ -99,7 +101,8 @@ if __name__ == "__main__":
                 columns=["Start_Date_Day", "Start_Date_Month", "Start_Date_Year"],
             )
             end_date_cols = pd.DataFrame(
-                end_dates.to_list(), columns=["End_Date_Day", "End_Date_Month", "End_Date_Year"]
+                end_dates.to_list(),
+                columns=["End_Date_Day", "End_Date_Month", "End_Date_Year"],
             )
 
             events = pd.concat([events, start_date_cols, end_date_cols], axis=1)
@@ -142,15 +145,38 @@ if __name__ == "__main__":
 
         # normalize location names
         if "Country" in events.columns:
-            events["Country_Norm"] = events.Country.apply(
+            events["Country_Tmp"] = events["Country"].apply(
                 lambda countries: [norm_loc.normalize_locations(c, is_country=True) for c in countries]
-                if countries
-                else None
+            )
+
+            events[["Country_Norm", "Country_Type", "Country_GeoJson"]] = (
+                events["Country_Tmp"]
+                .apply(lambda x: ([i[0] for i in x], [i[1] for i in x], [i[2] for i in x]))
+                .apply(pd.Series)
+            )
+            events.drop(columns=["Country_Tmp"], inplace=True)
+            print(events[["Country_Norm", "Country_Type", "Country_GeoJson"]])
+
+            events["Country_GID"] = events.Country_Norm.apply(
+                lambda countries: ([norm_loc.get_gadm_gid(country=c) for c in countries] if countries else None),
             )
 
         if "Location" in events.columns:
-            events["Location_Norm"] = events.Location.apply(
-                lambda locations: [norm_loc.normalize_locations(l) for l in locations] if locations else None
+            events["Location_Tmp"] = events["Location"].apply(
+                lambda locations: (
+                    [[norm_loc.normalize_locations(area) for area in l] for l in locations] if locations else None
+                )
+            )
+
+            events[["Location_Norm", "Location_Type", "Location_GeoJson"]] = (
+                events["Location_Tmp"]
+                .apply(lambda x: ([i[0] for i in x], [i[1] for i in x], [i[2] for i in x]))
+                .apply(pd.Series)
+            )
+            events.drop(columns=["Location_Tmp"], inplace=True)
+
+            events["Location_GID"] = events.Location_Norm.apply(
+                lambda locations: ([norm_loc.get_gadm_gid(area=area) for area in locations] if locations else None)
             )
 
         # clean out NaNs and Nulls
@@ -240,11 +266,41 @@ if __name__ == "__main__":
             # normalize location names
             location_col = col.split("Specific_Instance_Per_Country_")[-1]
 
-            sub_event["Country_Norm"] = sub_event["Country"].apply(
-                lambda country: norm_loc.normalize_locations(country) if country else None
+            # sub_event["Country_Norm"] = sub_event["Country"].apply(
+            #     lambda country: norm_loc.normalize_locations(country) if country else None
+            # )
+
+            # sub_event[f"Location_{location_col}_Norm"] = sub_event[f"Location_{location_col}"].apply(
+            #     lambda location: norm_loc.normalize_locations(location) if location else None
+            # )
+
+            sub_event[["Country_Norm", "Country_Type", "Country_GeoJson"]] = (
+                sub_event["Country"]
+                .apply(lambda country: norm_loc.normalize_locations(country, is_country=True))
+                .apply(pd.Series)
             )
-            sub_event[f"Location_{location_col}_Norm"] = sub_event[f"Location_{location_col}"].apply(
-                lambda location: norm_loc.normalize_locations(location) if location else None
+
+            sub_event["Country_GID"] = sub_event["Country_Norm"].apply(
+                lambda country: (norm_loc.get_gadm_gid(country=country) if country else None)
+            )
+
+            sub_event[
+                [
+                    f"Location_{location_col}_Norm",
+                    f"Location_{location_col}_Type",
+                    f"Location_{location_col}_GeoJson",
+                ]
+            ] = sub_event.apply(
+                lambda row: [
+                    norm_loc.normalize_locations(area=area, country=country)
+                    for area, country in row[[f"Location_{location_col}", "Country_Norm"]]
+                ]
+            ).apply(
+                pd.Series
+            )
+
+            sub_event["Location_GID"] = sub_event.Location_Norm.apply(
+                lambda location: (norm_loc.get_gadm_gid(area=location) if location else None)
             )
 
             # store as parquet and csv

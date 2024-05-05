@@ -21,6 +21,7 @@ num2words = "^0.5.13"
 geopy = "^2.4.1"
 python-dotenv = "^1.0.1"
 requests-cache = "^1.2.0"
+pycountry = "22.3.5"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.3"

@@ -1,4 +1,5 @@
 import difflib
+import json
 import re
 
 import pandas as pd
@@ -51,16 +52,22 @@ class NormalizeLoc:
 
     def normalize_locations(
         self, area: str, is_country: bool = False, in_country: str = None
-    ) -> tuple[str, dict] | None:
+    ) -> tuple[str, str, dict] | None:
         """Queries a geocode service for a location (country or smaller) and returns the top result"""
-
-        if not isinstance(area, str) or not area:
-            return (None, None)
-
-        if is_country and in_country:
-            return (None, None)
-
         try:
+            try:
+                assert isinstance(area, str), f"Area is not a string {area}"
+            except BaseException as err:
+                print(err)
+                return (None, None, None)
+            try:
+                assert not (
+                    is_country and in_country
+                ), f"An area cannot be a country (is_country={is_country}) and in a country (in_country={in_country}) simultaneously"
+            except BaseException as err:
+                print(err)
+                return (None, None, None)
+
             area = area.lower().strip()
             if isinstance(in_country, str):
                 in_country = in_country.lower().strip()
@@ -72,9 +79,7 @@ class NormalizeLoc:
                 query = {self.country: (re.sub(r"(the)", "", area).strip() if area.startswith("the u") else area)}
             elif in_country:
                 query = area
-                print(in_country)
                 country_codes = pycountry.countries.search_fuzzy(in_country)[0].alpha_2
-                print(country_codes)
 
             else:
                 query = area
@@ -90,21 +95,20 @@ class NormalizeLoc:
             l = sorted(l, key=lambda x: x.raw["importance"], reverse=True)
 
             for result in l:
+                # prefer areas that are a multigon/polygon (aka not "point")
                 if result.raw["geojson"]["type"].strip().lower() != "point":
-                    print(result.raw["geojson"]["type"])
-                    if result.raw["type"] == "administrive":
+                    # prefer administrative locations
+                    if result.raw["type"].lower().strip() == "administrative":
                         location = result
                         break
-
-                    elif result.raw["type"] != "commercial":
-                        location = result
-                        break
-                    else:
+                    # prefer non-commercial locations (avoid matching shops/stores/offices)
+                    elif result.raw["type"].lower().strip() not in ["commercial", "industrial", "company"]:
                         location = result
                         break
                 else:
                     location = None
 
+            # if all matched locations are points and/or commercial, grab the one with the highest importance
             if location is None:
                 location = l[0]
 
@@ -135,18 +139,15 @@ class NormalizeLoc:
                         )
                     )
                 )
-            try:
-                geojson = location.raw["geojson"]
-            except:
-                geojson = None
+            geojson = json.dumps(location.raw["geojson"]) if isinstance(location.raw["geojson"], dict) else None
 
-            return (normalized_area_name, geojson)
+            return (normalized_area_name, location.raw["type"], geojson)
         except BaseException as err:
             print(
                 f"Could not find location {area} (is country? {is_country}; in_country {in_country}). Error message",
                 err,
             )
-            return (None, None)
+            return (None, None, None)
 
     def _get_unsd_region(self, area, fuzzy_match_n: int = 1, fuzzy_match_cuttoff: float = 0.8) -> list | None:
         regions = {
@@ -167,13 +168,14 @@ class NormalizeLoc:
 
     def _get_american_area(self, area: str, country: str = None) -> list | None:
         # TODO: slim down
-
         areas = []
+        if not area:
+            return None
+
         if area == self.united_states and not country:
             return [self.USA_GID]
 
-        address = [x.strip() for x in area.split(",")]
-        assert address
+        address = [x.strip() for x in area.split(",")] if area else [x.strip() for x in country.split(",")]
 
         if country == self.united_states and address[-1] != self.united_states:
             address.append(country)
@@ -234,15 +236,7 @@ class NormalizeLoc:
         self,
         area: str = None,
         country: str = None,
-        row: list = None,
-        area_col: str = None,
-        country_col: str = None,
     ) -> str:
-        if not area and area_col and row:
-            area = row[area_col]
-        if not country and country_col and row:
-            country = row[country_col]
-
         # find regions in unsd
         unsd_search_output = self._get_unsd_region(area) if area and not country else None
         if unsd_search_output:
@@ -252,9 +246,10 @@ class NormalizeLoc:
         gadm_df = self.gadm.loc[self.gadm["COUNTRY"] == country] if country else self.gadm
 
         # handle American States
+        us_address_split = area.split(",")[-1].strip() if area else None
         us_search_output = (
             self._get_american_area(area, country)
-            if country == self.united_states or area.split(",")[-1].strip() == self.united_states
+            if area and (country == self.united_states or us_address_split == self.united_states)
             else None
         )
         if us_search_output:
@@ -266,17 +261,17 @@ class NormalizeLoc:
 
         # if trying to get matches in a single country, do fuzzy search
         if country and area:
-            unique_area_sets = [gadm_df[f"NAME_{i}"].dropna().unique().tolist() for i in range(1, 6)]
-            i = 1
+            unique_area_sets = [gadm_df[f"NAME_{l}"].dropna().unique().tolist() for l in range(1, 6)]
+            level = 1
             for area_set in unique_area_sets:
                 closest_match = difflib.get_close_matches(area, area_set, n=1, cutoff=0.65)
-                print(closest_match)
                 if closest_match:
-                    return gadm_df.loc[gadm_df[f"NAME_{i}"] == closest_match[0]][f"GID_{i}"].unique().tolist()
-                i += 1
+                    return gadm_df.loc[gadm_df[f"NAME_{level}"] == closest_match[0]][f"GID_{level}"].unique().tolist()
+                level += 1
 
-        for i in range(1, 6):
-            name_col, gid_col = f"NAME_{i}", f"GID_{i}"
+        area = country if (country and not area) else area
+        for level in range(1, 6):
+            name_col, gid_col = f"NAME_{level}", f"GID_{level}"
             if area in gadm_df[name_col].to_list():
                 return gadm_df.loc[gadm_df[name_col] == area][gid_col].unique().tolist()
 
@@ -318,89 +313,3 @@ class NormalizeLoc:
             if _print:
                 print(type(response))
             return True
-
-
-if __name__ == "__main__":
-    from geopy.extra.rate_limiter import RateLimiter
-    from geopy.geocoders import Nominatim
-
-    geolocator = Nominatim(user_agent="wikimpacts - impactdb; beta. Github: VUB-HYDR/Wikimpacts")
-    geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1)
-    norm = NormalizeLoc(
-        geocode=geocode,
-        gadm_path="Database/data/gadm_world.csv",
-        unsd_path="Database/data/UNSD — Methodology.csv",
-    )
-
-    # print("Normalized:", norm.normalize_locations("Dallas County, United states", is_country=False))
-    # print("Normalized:", norm.normalize_locations("Texas", is_country=False))
-    # print(
-    #     "Normalized:",
-    #     norm.normalize_locations("springfield, Massachusetts", is_country=False),
-    # )
-
-    # print(norm.normalize_locations("The US", is_country=True))
-    # print(norm.normalize_locations("The United Kingdom", is_country=True))
-
-    examples = [
-        ("Texas, United States", None),
-        ("Dallas, Texas, United States", None),
-        ("Dallas City, Dallas County, Texas, United States", None),
-        ("Dallas City, Dallas County, Texas, United States", None),
-        ("Wolfe County", None),
-        ("Wolfe County, Kentucky", "United States"),
-        ("Springfield, Massachusetts, United States", None),
-        ("Springfield, Massachusetts", "United States"),
-        (
-            "Springfield, West Springfield, Hampden County, Massachusetts, United States",
-            None,
-        ),
-        (
-            "Springfield, West Springfield, Hampden County, Massachusetts",
-            "United States",
-        ),
-    ]
-    _ = [
-        ("Dallas, TX", "United States"),
-        ("North America", None),
-        ("Northern America", None),
-        ("Eastern Europe", None),
-        ("East Europe", None),
-        ("United States of America", None),
-        ("Pilipinas", None),
-        ("Malda", "India"),
-        ("Maryland", "United States"),
-        ("Calaveras County", "United States"),
-        ("Calavras County", "United States"),
-        ("København", None),
-        ("New York City", "United States"),
-        ("Maryland", None),
-        ("Dallas", "United States"),
-        ("Dallas County", "United States"),
-        ("Howard County, IA", "United States"),
-        ("West Virginia", "United States"),
-        ("Maniwaki", "Canada"),
-        ("Maniwaki", None),
-        ("Karst Plateau", "Slovenia"),
-        ("Karst", "Slovenia"),
-        ("København", None),
-        ("British Columbia", None),
-        ("El Pont de Vilomara, Catalonia", "Spain"),
-    ]
-    for a, c in examples:
-        print(a, c)
-        print(norm.get_gadm_gid(area=a, country=c))
-        print()
-        print()
-
-# TODO:
-# X# when searching for a sublocation, limit the gadm rows to that country only
-# X# Malda > ['EST.8.2.14_1'] but Malda is in India (not the village in Estonia!)
-### Kras (Karst Plateau) is in Slovenia, not the one in Indonesia!
-
-# X# fuzzy-match the UNSD
-# X# "North Europe" should return "Northern Europe" countries
-# X# Maldah is in India, but our data says Malda
-
-## natural areas
-### https://www.openstreetmap.org/relation/11801461 (Karst Plateau)
