@@ -8,6 +8,7 @@ from scr.normalize_numbers import NormalizeNumber
 from scr.normalize_utils import NormalizeUtils as utils
 
 if __name__ == "__main__":
+    logger = utils.get_logger("parse_events")
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "-sm",
@@ -60,6 +61,8 @@ if __name__ == "__main__":
         type=str,
     )
     args = parser.parse_args()
+    logger.info(f"Passed args: {args}")
+
     nlp = utils.load_spacy_model(args.spaCy_model_name)
 
     norm_num = NormalizeNumber(nlp, locale_config=args.locale_config)
@@ -70,6 +73,7 @@ if __name__ == "__main__":
     )
 
     df = pd.read_json(f"{args.raw_path}/{args.filename}")
+    logger.info("JSON datafile loaded")
 
     # add short uids for each event
     df["Event_ID"] = [utils.random_short_uuid() for _ in df.index]
@@ -77,11 +81,14 @@ if __name__ == "__main__":
     # unpack Total_Summary_* columns
     total_summary_cols = [col for col in df.columns if col.startswith("Total_")]
     events = utils.unpack_col(df, columns=total_summary_cols)
+    logger.info(f"Total summary columns: {total_summary_cols}")
 
     del df
+
     if args.event_type in ["main", "all"]:
         # normalize dates
         if all([c in events.columns for c in ["Start_Date", "End_Date"]]):
+            logger.info("Normalizing dates")
             start_dates = events.Start_Date.apply(utils.normalize_date)
             end_dates = events.End_Date.apply(utils.normalize_date)
 
@@ -98,6 +105,7 @@ if __name__ == "__main__":
             del start_dates, end_dates, start_date_cols, end_date_cols
 
         # normalize binary categories into booleans
+        logger.info("Normalizing booleans")
         _yes, _no = re.compile(r"^(yes)$|^(y)$|^(true)$", re.IGNORECASE | re.MULTILINE), re.compile(
             r"^(no)$|^(n)$|^(false)$", re.IGNORECASE | re.MULTILINE
         )
@@ -112,6 +120,7 @@ if __name__ == "__main__":
                 {_no: False, _yes: True}, regex=True
             )
         # clean out NaNs and Nulls
+        logger.info("Normalizing nulls")
         events = utils.replace_nulls(events)
 
         # get min, max, and approx numerals from relevant Total_* fields
@@ -121,19 +130,27 @@ if __name__ == "__main__":
             if col.startswith("Total_")
             and not col.endswith(("_with_annotation", "_Units", "_Year", "_Annotation", "_Adjusted"))
         ]
+        logger.info(
+            f"""Normalizing numbers to ranges and determining whether or
+                    not they are an approximate (min, max, approx). Columns: {total_cols}"""
+        )
+
         for i in total_cols:
             events[[f"{i}_Min", f"{i}_Max", f"{i}_Approx"]] = (
                 events[i]
-                .apply(lambda x: (extract.extract_numbers(x) if x is not None else (None, None, None)))
+                .apply(lambda x: (norm_num.extract_numbers(x) if x is not None else (None, None, None)))
                 .apply(pd.Series)
             )
 
         # normalize Perils into a list
         if "Perils" in events.columns:
+            logger.info("Normalizing Perils to list")
             events.Perils = events.Perils.apply(lambda x: x.split("|"))
 
         # normalize location names
         if "Country" in events.columns:
+            logger.info("Normalizing Countries")
+
             events["Country_Tmp"] = events["Country"].apply(
                 lambda countries: [norm_loc.normalize_locations(c, is_country=True) for c in countries]
             )
@@ -143,17 +160,20 @@ if __name__ == "__main__":
                 .apply(lambda x: ([i[0] for i in x], [i[1] for i in x], [i[2] for i in x]))
                 .apply(pd.Series)
             )
-            events.drop(columns=["Country_Tmp"], inplace=True)
-            print(events[["Country_Norm", "Country_Type", "Country_GeoJson"]])
 
-            events["Country_GID"] = events.Country_Norm.apply(
+            # TODO: Countries with no location can be searched again without the is_country flag
+            events.drop(columns=["Country_Tmp"], inplace=True)
+
+            logger.info("Getting GID from GADM for Countries")
+            events["Country_GID"] = events["Country_Norm"].apply(
                 lambda countries: ([norm_loc.get_gadm_gid(country=c) for c in countries] if countries else None),
             )
 
         if "Location" in events.columns:
+            logger.info("Normalizing Locations")
             events["Location_Tmp"] = events["Location"].apply(
                 lambda locations: (
-                    [[norm_loc.normalize_locations(area) for area in l] for l in locations] if locations else None
+                    [norm_loc.normalize_locations(area=area) for area in locations] if locations else None
                 )
             )
 
@@ -164,24 +184,27 @@ if __name__ == "__main__":
             )
             events.drop(columns=["Location_Tmp"], inplace=True)
 
+            logger.info("Getting GID from GADM for Locations")
             events["Location_GID"] = events.Location_Norm.apply(
                 lambda locations: ([norm_loc.get_gadm_gid(area=area) for area in locations] if locations else None)
             )
 
         # clean out NaNs and Nulls
+        logger.info("Normalizing nulls")
         events = utils.replace_nulls(events)
 
-        # convert annotation cols to strings
+        logger.info("Converting annotation columns to strings to store in sqlite3")
         annotation_cols = [col for col in events.columns if col.endswith(("_with_annotation", "_Annotation"))]
         for col in annotation_cols:
             events[col] = events[col].astype(str)
 
-        # convert list columns to strings to store in sqlite3
+        logger.info("Converting list columns to strings to store in sqlite3")
         for col in ["Perils", "Location", "Location_Norm", "Country", "Country_Norm"]:
             if col in events.columns:
                 events[col] = events[col].astype(str)
 
         # store as parquet and csv
+        logger.info(f"Storing parsed results")
         events_filename = f"{args.output_path}/{args.filename.split('.json')[0]}"
         events.to_parquet(f"{events_filename}.parquet")
         events.to_csv(f"{events_filename}.csv")
@@ -189,6 +212,7 @@ if __name__ == "__main__":
     if args.event_type in ["sub", "all"]:
         # parse subevents
         specific_summary_cols = [col for col in events if col.startswith("Specific_")]
+        logger.info(f"Parsing suevenets. Columns: {specific_summary_cols}")
         specifc_summary_dfs = {}
 
         for col in specific_summary_cols:
@@ -204,6 +228,7 @@ if __name__ == "__main__":
             sub_event = pd.concat([sub_event.Event_ID, sub_event[col].apply(pd.Series)], axis=1)
 
             # clean out nulls
+            logger.info(f"Normalizing nulls for subevent {col}")
             sub_event = utils.replace_nulls(sub_event)
 
             # get min, max, and approx nums from relevant Num_* & *Damage fields
@@ -212,15 +237,23 @@ if __name__ == "__main__":
                 for col in sub_event.columns
                 if col.startswith("Num_") or col.endswith("Damage") and "Date" not in col and "Location" not in col
             ]
+            logger.info(
+                f"""Normalizing numbers to ranges in subenet {col} and determining whether or
+                not they are an approximate (min, max, approx). Columns: {specific_total_cols}"""
+            )
+
             for i in specific_total_cols:
                 sub_event[[f"{i}_Min", f"{i}_Max", f"{i}_Approx"]] = (
                     sub_event[i]
-                    .apply(lambda x: (extract.extract_numbers(x) if x is not None else (None, None, None)))
+                    .apply(lambda x: (norm_num.extract_numbers(x) if x is not None else (None, None, None)))
                     .apply(pd.Series)
                 )
 
             # clean out nulls after normalizing nums
+            logger.info(f"Normalizing nulls for subevent {col}")
             sub_event = utils.replace_nulls(sub_event)
+
+            logger.info(f"Normalizing Dates for subevet {col}")
             start_date_col, end_date_col = [c for c in sub_event.columns if c.startswith("Start_Date_")], [
                 c for c in sub_event.columns if c.startswith("End_Date_")
             ]
@@ -255,13 +288,7 @@ if __name__ == "__main__":
             # normalize location names
             location_col = col.split("Specific_Instance_Per_Country_")[-1]
 
-            # sub_event["Country_Norm"] = sub_event["Country"].apply(
-            #     lambda country: norm_loc.normalize_locations(country) if country else None
-            # )
-
-            # sub_event[f"Location_{location_col}_Norm"] = sub_event[f"Location_{location_col}"].apply(
-            #     lambda location: norm_loc.normalize_locations(location) if location else None
-            # )
+            logger.info(f"Normalizing country names for subevent {col}")
 
             sub_event[["Country_Norm", "Country_Type", "Country_GeoJson"]] = (
                 sub_event["Country"]
@@ -269,10 +296,13 @@ if __name__ == "__main__":
                 .apply(pd.Series)
             )
 
+            # TODO: Countries with no location can be searched again without the is_country flag
+            logger.info(f"Getting GID from GADM for countries in subevent {col}")
             sub_event["Country_GID"] = sub_event["Country_Norm"].apply(
                 lambda country: (norm_loc.get_gadm_gid(country=country) if country else None)
             )
 
+            logger.info(f"Normalizing location names for subevent {col}")
             sub_event[
                 [
                     f"Location_{location_col}_Norm",
@@ -280,27 +310,22 @@ if __name__ == "__main__":
                     f"Location_{location_col}_GeoJson",
                 ]
             ] = sub_event.apply(
-                lambda row: [
-                    norm_loc.normalize_locations(area=area, country=country)
-                    for area, country in row[[f"Location_{location_col}", "Country_Norm"]]
-                ]
+                lambda row: norm_loc.normalize_locations(
+                    area=row[f"Location_{location_col}"], in_country=row["Country_Norm"]
+                ),
+                axis=1,
             ).apply(
                 pd.Series
             )
 
-            sub_event["Location_GID"] = sub_event.Location_Norm.apply(
+            logger.info(f"Getting GID from GADM for locations in subevent {col}")
+            sub_event["Location_GID"] = sub_event[f"Location_{location_col}_Norm"].apply(
                 lambda location: (norm_loc.get_gadm_gid(area=location) if location else None)
             )
 
             # store as parquet and csv
+            logger.info(f"Storing parsed results for sunevent {col}")
             sub_event.to_parquet(f"{args.output_path}/{col}.parquet")
             sub_event.to_csv(f"{args.output_path}/{col}.csv")
 
-        # TODO: fix annoying requests cache error
-        # Traceback (most recent call last):
-        # File "/Users/me/Library/Caches/pypoetry/virtualenvs/wikimpacts-1uvlbl-K-py3.11/lib/python3.11/site-packages/geopy/adapters.py", line 457, in __del__
-        # File "/Users/me/Library/Caches/pypoetry/virtualenvs/wikimpacts-1uvlbl-K-py3.11/lib/python3.11/site-packages/requests_cache/session.py", line 341, in close
-        # File "/Users/me/Library/Caches/pypoetry/virtualenvs/wikimpacts-1uvlbl-K-py3.11/lib/python3.11/site-packages/requests_cache/backends/base.py", line 114, in close
-        # AttributeError: 'NoneType' object has no attribute 'debug'
-
-    requests_cache.uninstall_cache()
+    norm_loc.uninstall_cache()

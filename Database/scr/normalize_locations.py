@@ -4,19 +4,28 @@ import re
 
 import pandas as pd
 import pycountry
+import requests_cache
+from geopy.extra.rate_limiter import RateLimiter
+from geopy.geocoders import Nominatim
+
+from .normalize_utils import NormalizeUtils
 
 
 class NormalizeLocation:
     def __init__(
         self,
-        geocode: any,
         gadm_path: str,
         unsd_path: str,
     ):
-        self.geocode = geocode
+        requests_cache.install_cache("Database/data/geopy_cache", filter_fn=self._debug)
+
+        geolocator = Nominatim(user_agent="wikimpacts - impactdb; beta. Github: VUB-HYDR/Wikimpacts")
+        self.geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1)
         self.gadm = pd.read_csv(gadm_path, sep=None, engine="python")
         self.unsd = pd.read_csv(unsd_path, sep=None, engine="python")
+        self.logger = NormalizeUtils.get_logger("normalize_locations")
 
+        self.logger.info("Installed GeoPy cache")
         # frequently used literals
         (
             self.city,
@@ -50,22 +59,27 @@ class NormalizeLocation:
 
         self.us_gadm = self.gadm.loc[self.gadm.COUNTRY == self.united_states]
 
+    def uninstall_cache():
+        requests_cache.uninstall_cache()
+
     def normalize_locations(
         self, area: str, is_country: bool = False, in_country: str = None
     ) -> tuple[str, str, dict] | None:
         """Queries a geocode service for a location (country or smaller) and returns the top result"""
+
+        # print(area, type(area), "is_country", is_country, "in_country", in_country)
         try:
             try:
                 assert isinstance(area, str), f"Area is not a string {area}"
             except BaseException as err:
-                print(err)
+                self.logger.error(err)
                 return (None, None, None)
             try:
                 assert not (
                     is_country and in_country
                 ), f"An area cannot be a country (is_country={is_country}) and in a country (in_country={in_country}) simultaneously"
             except BaseException as err:
-                print(err)
+                self.logger.error(err)
                 return (None, None, None)
 
             area = area.lower().strip()
@@ -143,9 +157,8 @@ class NormalizeLocation:
 
             return (normalized_area_name, location.raw["type"], geojson)
         except BaseException as err:
-            print(
-                f"Could not find location {area} (is country? {is_country}; in_country {in_country}). Error message",
-                err,
+            self.logger.error(
+                f"Could not find location {area} (is country? {is_country}; in_country {in_country}). Error message {err}"
             )
             return (None, None, None)
 
@@ -307,9 +320,6 @@ class NormalizeLocation:
         except BaseException:
             return
 
-    @staticmethod
-    def _debug(response, _print: bool = True):
-        if response:
-            if _print:
-                print(type(response))
-            return True
+    def _debug(self, response):
+        self.logger.debug(type(response))
+        return True
