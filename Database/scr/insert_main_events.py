@@ -63,7 +63,7 @@ if __name__ == "__main__":
             "Country",
             "Country_Norm",
             "Country_Type",
-            "Country_Gid",
+            "Country_GID",
             "Country_GeoJson",
             # "Country_with_Annotation",
             # "Single_Date",
