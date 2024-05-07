@@ -7,7 +7,7 @@ import pycountry
 import requests_cache
 from geopy.extra.rate_limiter import RateLimiter
 from geopy.geocoders import Nominatim
-
+from functools import cache
 from .normalize_utils import NormalizeUtils
 
 
@@ -29,6 +29,8 @@ class NormalizeLocation:
         # frequently used literals
         (
             self.city,
+            self.national_park,
+            self.protected_area,
             self.county,
             self.state,
             self.country,
@@ -40,6 +42,8 @@ class NormalizeLocation:
             self.USA_GID,
         ) = (
             "city",
+            "national_park",
+            "protected_area",
             "county",
             "state",
             "country",
@@ -50,6 +54,8 @@ class NormalizeLocation:
             "United States",
             "USA",
         )
+        
+        self.unwanted_location_types = ["commercial", "industrial", "company", "clinic", "hospital", "university"]
 
         self.unsd_regions, self.unsd_subregions, self.unsd_intermediateregions = (
             self.unsd[self.region].dropna().unique(),
@@ -59,19 +65,30 @@ class NormalizeLocation:
 
         self.us_gadm = self.gadm.loc[self.gadm.COUNTRY == self.united_states]
 
+        self.cardinals = ["north", "south", "east", "west"]
+        self.cardinals.extend(f"{i}ern" for i in ["north", "south", "east", "west"])
+
     @staticmethod
     def uninstall_cache():
         requests_cache.uninstall_cache()
 
+    def _clean_cardinal_directions(self, area: str) -> tuple[str, list[str]]:
+        area = area.split()
+        area = [i.strip() for i in area if i.lower().strip() not in self.cardinals]
+        cardinals = [i.strip() for i in area if i.lower().strip() in self.cardinals]
+        return " ".join(area), cardinals
+
+    @cache
     def normalize_locations(
         self, area: str, is_country: bool = False, in_country: str = None
     ) -> tuple[str, str, dict] | None:
         """Queries a geocode service for a location (country or smaller) and returns the top result"""
-
-        # print(area, type(area), "is_country", is_country, "in_country", in_country)
         try:
             try:
-                assert isinstance(area, str), f"Area is not a string {area}"
+                if area:
+                    assert isinstance(area, str), f"Area is not a string: {area}"
+                if in_country:
+                    assert isinstance(in_country, str), f"Country is not a string: {in_country}"
             except BaseException as err:
                 self.logger.error(err)
                 return (None, None, None)
@@ -83,6 +100,12 @@ class NormalizeLocation:
                 self.logger.error(err)
                 return (None, None, None)
 
+            # attempt to find region name in unsd if an area is passed as a country 
+            unsd_search_output = self._get_unsd_region(area, return_name=True) if area and is_country else None
+            if unsd_search_output:
+                # TODO: add geojson for unsd regions
+                return [unsd_search_output, "UNSD region", None]
+        
             area = area.lower().strip()
             if isinstance(in_country, str):
                 in_country = in_country.lower().strip()
@@ -104,9 +127,36 @@ class NormalizeLocation:
                 exactly_one=False,
                 namedetails=True,
                 geometry="geojson",
+                extratags=True,
                 country_codes=country_codes,
             )
             location = None
+
+            # if no results are found if the area is_country, attempt again without the country constraint
+            if not l and is_country:
+                l = self.geocode(
+                    area,
+                    exactly_one=False,
+                    namedetails=True,
+                    geometry="geojson",
+                    extratags=True,
+                    country_codes=country_codes,
+                )
+
+            # if results fail again, attempt removing cardinal directions from the name
+            if not l:
+                area_no_cardinals, cardinals = self._clean_cardinal_directions(area)
+                l = self.geocode(
+                    area_no_cardinals,
+                    exactly_one=False,
+                    namedetails=True,
+                    geometry="geojson",
+                    extratags=True,
+                    country_codes=country_codes,
+                )
+            else:
+                cardinals = None
+
             l = sorted(l, key=lambda x: x.raw["importance"], reverse=True)
 
             for result in l:
@@ -117,7 +167,7 @@ class NormalizeLocation:
                         location = result
                         break
                     # prefer non-commercial locations (avoid matching shops/stores/offices)
-                    elif result.raw["type"].lower().strip() not in ["commercial", "industrial", "company"]:
+                    elif result.raw["type"].lower().strip() not in self.unwanted_location_types:
                         location = result
                         break
                 else:
@@ -130,30 +180,39 @@ class NormalizeLocation:
             us_area = (
                 location.raw["display_name"]
                 if (
-                    location.raw["addresstype"] in [self.county, self.state, self.city]
+                    location.raw["addresstype"]
+                    in [self.county, self.state, self.city, self.national_park, self.protected_area]
                     and location.raw["display_name"].split(",")[-1].strip() == "United States"
                 )
                 else None
             )
+
+            normalized_area_name = None
+
             if us_area:
                 # retuns US addresses as (area (if present), city (if present), county (if present), state, country)
                 normalized_area_name = location.raw["display_name"]
             else:
                 # return the english name only if a country (due to GADM's format)
-                normalized_area_name = (
-                    location.raw["namedetails"]["name:en"]
-                    if (is_country or location.raw["addresstype"] == self.country)
-                    else (
-                        # return the international name if present (only for sublocations, due to GADM's format)
-                        location.raw["namedetails"]["int_name"]
-                        if "int_name" in location.raw["namedetails"].keys()
-                        else (
-                            location.raw["namedetails"]["name"]
-                            if location.raw["namedetails"]["name"] not in [None, "None", "none"]
-                            else location.raw["display_name"]
-                        )
+                if is_country or location.raw["addresstype"] == self.country and "name:en" in location.raw["namedetails"].keys():
+                        normalized_area_name = location.raw["namedetails"]["name:en"]
+                # return the international name or wikipedia title if present (only for sublocations, due to GADM's format)
+                elif "int_name" in location.raw["namedetails"].keys():
+                    normalized_area_name = location.raw["namedetails"]["int_name"]
+                elif (
+                    "wikipedia" in location.raw["extratags"].keys() and "en:" in location.raw["extratags"]["wikipedia"]
+                ):
+                    normalized_area_name = location.raw["extratags"]["wikipedia"].replace("en:", "").strip()
+                else:
+                    normalized_area_name = (
+                        location.raw["namedetails"]["name"]
+                        if location.raw["namedetails"]["name"] not in [None, "None", "none"]
+                        else location.raw["display_name"]
                     )
-                )
+
+            # if the location had any cardinal directions attached, add them here
+            if cardinals:
+                normalized_area_name = f"{normalized_area_name}:<{cardinals}>"
             geojson = json.dumps(location.raw["geojson"]) if isinstance(location.raw["geojson"], dict) else None
 
             return (normalized_area_name, location.raw["type"], geojson)
@@ -163,7 +222,7 @@ class NormalizeLocation:
             )
             return (None, None, None)
 
-    def _get_unsd_region(self, area, fuzzy_match_n: int = 1, fuzzy_match_cuttoff: float = 0.8) -> list | None:
+    def _get_unsd_region(self, area, fuzzy_match_n: int = 1, fuzzy_match_cuttoff: float = 0.8, return_name: bool = False) -> list | None:
         regions = {
             self.region: self.unsd_regions,
             self.subregion: self.unsd_subregions,
@@ -172,12 +231,14 @@ class NormalizeLocation:
 
         for level, region_list in regions.items():
             if area in region_list:
+                return area if return_name else self.unsd.loc[self.unsd[level] == area][self.iso].unique().tolist() 
                 return self.unsd.loc[self.unsd[level] == area][self.iso].unique().tolist()
             else:
                 fuzzy_area_match = difflib.get_close_matches(
                     area, region_list, n=fuzzy_match_n, cutoff=fuzzy_match_cuttoff
                 )
                 if fuzzy_area_match:
+                    return fuzzy_area_match[0] if return_name else self.unsd.loc[self.unsd[level] == fuzzy_area_match[0]][self.iso].unique().tolist()
                     return self.unsd.loc[self.unsd[level] == fuzzy_area_match[0]][self.iso].unique().tolist()
 
     def _get_american_area(self, area: str, country: str = None) -> list | None:
@@ -190,6 +251,8 @@ class NormalizeLocation:
             return [self.USA_GID]
 
         address = [x.strip() for x in area.split(",")] if area else [x.strip() for x in country.split(",")]
+        # remove postal codes from the address list (common on OSM)
+        address = [i for i in address if not re.match(r"^\d{5}(?:[-\s]\d{4})?$", i)]
 
         if country == self.united_states and address[-1] != self.united_states:
             address.append(country)
@@ -252,7 +315,9 @@ class NormalizeLocation:
         country: str = None,
     ) -> str:
         # find regions in unsd
+        unsd_loc = area if area and not country else country
         unsd_search_output = self._get_unsd_region(area) if area and not country else None
+        unsd_search_output = self._get_unsd_region(unsd_loc, return_name=False)
         if unsd_search_output:
             return unsd_search_output
 
