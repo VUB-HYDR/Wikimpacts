@@ -1,13 +1,14 @@
 import difflib
 import json
 import re
+from functools import cache
 
 import pandas as pd
 import pycountry
 import requests_cache
 from geopy.extra.rate_limiter import RateLimiter
 from geopy.geocoders import Nominatim
-from functools import cache
+
 from .normalize_utils import NormalizeUtils
 
 
@@ -54,7 +55,7 @@ class NormalizeLocation:
             "United States",
             "USA",
         )
-        
+
         self.unwanted_location_types = ["commercial", "industrial", "company", "clinic", "hospital", "university"]
 
         self.unsd_regions, self.unsd_subregions, self.unsd_intermediateregions = (
@@ -74,9 +75,9 @@ class NormalizeLocation:
 
     def _clean_cardinal_directions(self, area: str) -> tuple[str, list[str]]:
         area = area.split()
-        area = [i.strip() for i in area if i.lower().strip() not in self.cardinals]
+        output = [i.strip() for i in area if i.lower().strip() not in self.cardinals]
         cardinals = [i.strip() for i in area if i.lower().strip() in self.cardinals]
-        return " ".join(area), cardinals
+        return " ".join(output), " ".join(cardinals) if cardinals else None
 
     @cache
     def normalize_locations(
@@ -100,12 +101,12 @@ class NormalizeLocation:
                 self.logger.error(err)
                 return (None, None, None)
 
-            # attempt to find region name in unsd if an area is passed as a country 
+            # attempt to find region name in unsd if an area is passed as a country
             unsd_search_output = self._get_unsd_region(area, return_name=True) if area and is_country else None
             if unsd_search_output:
                 # TODO: add geojson for unsd regions
                 return [unsd_search_output, "UNSD region", None]
-        
+
             area = area.lower().strip()
             if isinstance(in_country, str):
                 in_country = in_country.lower().strip()
@@ -143,8 +144,8 @@ class NormalizeLocation:
                     country_codes=country_codes,
                 )
 
-            # if results fail again, attempt removing cardinal directions from the name
-            if not l:
+            # if results fail again or no suitable location type is found, attempt removing cardinal directions from the name
+            if not l or any([r.raw["type"].lower().strip() in self.unwanted_location_types for r in l]):
                 area_no_cardinals, cardinals = self._clean_cardinal_directions(area)
                 l = self.geocode(
                     area_no_cardinals,
@@ -194,8 +195,12 @@ class NormalizeLocation:
                 normalized_area_name = location.raw["display_name"]
             else:
                 # return the english name only if a country (due to GADM's format)
-                if is_country or location.raw["addresstype"] == self.country and "name:en" in location.raw["namedetails"].keys():
-                        normalized_area_name = location.raw["namedetails"]["name:en"]
+                if (
+                    is_country
+                    or location.raw["addresstype"] == self.country
+                    and "name:en" in location.raw["namedetails"].keys()
+                ):
+                    normalized_area_name = location.raw["namedetails"]["name:en"]
                 # return the international name or wikipedia title if present (only for sublocations, due to GADM's format)
                 elif "int_name" in location.raw["namedetails"].keys():
                     normalized_area_name = location.raw["namedetails"]["int_name"]
@@ -222,7 +227,9 @@ class NormalizeLocation:
             )
             return (None, None, None)
 
-    def _get_unsd_region(self, area, fuzzy_match_n: int = 1, fuzzy_match_cuttoff: float = 0.8, return_name: bool = False) -> list | None:
+    def _get_unsd_region(
+        self, area, fuzzy_match_n: int = 1, fuzzy_match_cuttoff: float = 0.8, return_name: bool = False
+    ) -> list | None:
         regions = {
             self.region: self.unsd_regions,
             self.subregion: self.unsd_subregions,
@@ -231,15 +238,17 @@ class NormalizeLocation:
 
         for level, region_list in regions.items():
             if area in region_list:
-                return area if return_name else self.unsd.loc[self.unsd[level] == area][self.iso].unique().tolist() 
-                return self.unsd.loc[self.unsd[level] == area][self.iso].unique().tolist()
+                return area if return_name else self.unsd.loc[self.unsd[level] == area][self.iso].unique().tolist()
             else:
                 fuzzy_area_match = difflib.get_close_matches(
                     area, region_list, n=fuzzy_match_n, cutoff=fuzzy_match_cuttoff
                 )
                 if fuzzy_area_match:
-                    return fuzzy_area_match[0] if return_name else self.unsd.loc[self.unsd[level] == fuzzy_area_match[0]][self.iso].unique().tolist()
-                    return self.unsd.loc[self.unsd[level] == fuzzy_area_match[0]][self.iso].unique().tolist()
+                    return (
+                        fuzzy_area_match[0]
+                        if return_name
+                        else self.unsd.loc[self.unsd[level] == fuzzy_area_match[0]][self.iso].unique().tolist()
+                    )
 
     def _get_american_area(self, area: str, country: str = None) -> list | None:
         # TODO: slim down
@@ -314,9 +323,13 @@ class NormalizeLocation:
         area: str = None,
         country: str = None,
     ) -> str:
+        # remove cardinals when getting gid
+        # TODO: this should probably be handled by something other than symbols in strings, fix
+        country = country.split(":")[0] if country and ":" in country else country
+        area = area.split(":")[0] if area and ":" in area else area
+
         # find regions in unsd
         unsd_loc = area if area and not country else country
-        unsd_search_output = self._get_unsd_region(area) if area and not country else None
         unsd_search_output = self._get_unsd_region(unsd_loc, return_name=False)
         if unsd_search_output:
             return unsd_search_output
