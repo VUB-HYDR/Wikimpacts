@@ -60,6 +60,7 @@ if __name__ == "__main__":
         help="Choose which events to parse: main, sub, or all?",
         type=str,
     )
+
     args = parser.parse_args()
     logger.info(f"Passed args: {args}")
 
@@ -166,10 +167,12 @@ if __name__ == "__main__":
 
             logger.info("Getting GID from GADM for Countries")
             events["Country_GID"] = events["Country_Norm"].apply(
-                lambda countries: ([norm_loc.get_gadm_gid(country=c) for c in countries] if countries else None),
+                lambda countries: (
+                    [norm_loc.get_gadm_gid(country=c) if c else None for c in countries] if countries else None
+                ),
             )
 
-        if "Location" in events.columns:
+        if "Location" in events.columns and "Country" in events.columns:
             logger.info("Normalizing Locations")
             events["Location_Tmp"] = events["Location"].apply(
                 lambda locations: (
@@ -185,10 +188,36 @@ if __name__ == "__main__":
             events.drop(columns=["Location_Tmp"], inplace=True)
 
             logger.info("Getting GID from GADM for Locations")
-            events["Location_GID"] = events.Location_Norm.apply(
-                lambda locations: ([norm_loc.get_gadm_gid(area=area) for area in locations] if locations else None)
+
+            events["Location_GID"] = events.apply(
+                lambda row: (
+                    [
+                        # removes "countries" from the location column
+                        # preserves order
+                        # TODO: if location is added to main events, pass country param to get_gadm_gid func
+                        (norm_loc.get_gadm_gid(area=area) if area not in row["Country_Norm"] else "COUNTRY")
+                        for area in row["Location_Norm"]
+                    ]
+                    if row["Location_Norm"]
+                    else None
+                ),
+                axis=1,
             )
 
+            # removes "countries" from the location column
+            # preserves order
+            logger.info("Removing countries from normalized location list.")
+            for loc_col in ["Location_Norm", "Location_Type", "Location_GeoJson"]:
+                events[loc_col] = events.apply(
+                    lambda row: [
+                        row[loc_col][i] for i in range(len(row["Location_GID"])) if row["Location_GID"][i] != "COUNTRY"
+                    ],
+                    axis=1,
+                )
+
+            events["Location_GID"] = events["Location_GID"].apply(
+                lambda locations: [l for l in locations if l != "COUNTRY"]
+            )
         # clean out NaNs and Nulls
         logger.info("Normalizing nulls")
         events = utils.replace_nulls(events)
@@ -205,10 +234,12 @@ if __name__ == "__main__":
             "Location_Norm",
             "Location_Type",
             "Location_GID",
+            "Location_GeoJson",
             "Country",
             "Country_Norm",
             "Country_Type",
             "Country_GID",
+            "Country_GeoJson",
         ]:
             if col in events.columns:
                 events[col] = events[col].astype(str)
@@ -220,6 +251,9 @@ if __name__ == "__main__":
         events.to_csv(f"{events_filename}.csv")
 
     if args.event_type in ["sub", "all"]:
+        # clean out NaNs and Nulls
+        events = utils.replace_nulls(events)
+
         # parse subevents
         specific_summary_cols = [col for col in events if col.startswith("Specific_")]
         logger.info(f"Parsing suevenets. Columns: {specific_summary_cols}")
@@ -248,8 +282,7 @@ if __name__ == "__main__":
                 if col.startswith("Num_") or col.endswith("Damage") and "Date" not in col and "Location" not in col
             ]
             logger.info(
-                f"""Normalizing numbers to ranges in subenet {col} and determining whether or
-                not they are an approximate (min, max, approx). Columns: {specific_total_cols}"""
+                f"""Normalizing numbers to ranges in subenet {col} and determining whether or not they are an approximate (min, max, approx). Columns: {specific_total_cols}"""
             )
 
             for i in specific_total_cols:
@@ -263,7 +296,7 @@ if __name__ == "__main__":
             logger.info(f"Normalizing nulls for subevent {col}")
             sub_event = utils.replace_nulls(sub_event)
 
-            logger.info(f"Normalizing Dates for subevet {col}")
+            logger.info(f"Normalizing dates for subevet {col}")
             start_date_col, end_date_col = [c for c in sub_event.columns if c.startswith("Start_Date_")], [
                 c for c in sub_event.columns if c.startswith("End_Date_")
             ]
@@ -306,7 +339,6 @@ if __name__ == "__main__":
                 .apply(pd.Series)
             )
 
-            # TODO: Countries with no location can be searched again without the is_country flag
             logger.info(f"Getting GID from GADM for countries in subevent {col}")
             sub_event["Country_GID"] = sub_event["Country_Norm"].apply(
                 lambda country: (norm_loc.get_gadm_gid(country=country) if country else None)
@@ -319,19 +351,33 @@ if __name__ == "__main__":
                     f"Location_{location_col}_Type",
                     f"Location_{location_col}_GeoJson",
                 ]
+                # Sometimes, subevents can have a location and country that are the same
+                # (meaning the sub-event occurred in the same country), so the right params
+                # are passed to the function (it's better to search for locations with the advanced OSM query search)
             ] = sub_event.apply(
                 lambda row: norm_loc.normalize_locations(
                     area=row[f"Location_{location_col}"], in_country=row["Country_Norm"]
-                ),
+                )
+                if row[f"Location_{location_col}"] != row["Country_Norm"]
+                else norm_loc.normalize_locations(area=row["Country_Norm"], is_country=True),
                 axis=1,
             ).apply(
                 pd.Series
             )
 
             logger.info(f"Getting GID from GADM for locations in subevent {col}")
-            sub_event["Location_GID"] = sub_event[f"Location_{location_col}_Norm"].apply(
-                lambda location: (norm_loc.get_gadm_gid(area=location) if location else None)
+            sub_event[f"Location_{location_col}_GID"] = sub_event.apply(
+                lambda row: (
+                    norm_loc.get_gadm_gid(
+                        area=row[f"Location_{location_col}_Norm"],
+                        country=row["Country_Norm"],
+                    )
+                    if row[f"Location_{location_col}_Norm"]
+                    else None
+                ),
+                axis=1,
             )
+            sub_event[f"Location_{location_col}_GID"] = sub_event[f"Location_{location_col}_GID"].astype(str)
 
             # store as parquet and csv
             logger.info(f"Storing parsed results for sunevent {col}")
