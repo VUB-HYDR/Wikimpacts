@@ -282,6 +282,8 @@ class NormalizeLocation:
                 # return the international name or wikipedia title if present (only for sublocations, due to GADM's format)
                 elif "int_name" in location.raw["namedetails"].keys():
                     normalized_area_name = location.raw["namedetails"]["int_name"]
+                elif "name" in location.raw["namedetails"].keys():
+                    normalized_area_name = location.raw["namedetails"]["name"]
                 elif (
                     "wikipedia" in location.raw["extratags"].keys() and "en:" in location.raw["extratags"]["wikipedia"]
                 ):
