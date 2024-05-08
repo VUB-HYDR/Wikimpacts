@@ -24,6 +24,11 @@ class NormalizeLocation:
         self.geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1)
         self.gadm = pd.read_csv(gadm_path, sep=None, engine="python")
         self.unsd = pd.read_csv(unsd_path, sep=None, engine="python")
+
+        for col in self.unsd.columns:
+            if "Code" not in col:
+                self.unsd[col] = self.unsd[col].apply(lambda s: s.lower() if type(s) == str else s)
+
         self.logger = NormalizeUtils.get_logger("normalize_locations")
 
         self.logger.info("Installed GeoPy cache")
