@@ -308,7 +308,7 @@ class NormalizeLocation:
 
         except BaseException as err:
             self.logger.error(
-                f"Could not find location {area}; is_country: {is_country}; in_country: {in_country}. Error message {err}."
+                f"Could not find location {area}; is_country: {is_country}; in_country: {in_country}. Error message: {err}."
             )
             # return un-normalized area name
             return (area, None, None)
