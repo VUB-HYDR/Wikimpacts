@@ -301,6 +301,10 @@ class NormalizeLocation:
                     .tolist()
                 )
 
+            # if not found, generalize to the state
+            if not areas:
+                areas = self.us_gadm.loc[(self.us_gadm.NAME_1 == us_state)].GID_1.unique().tolist()
+
         # state level
         elif len(address) == 2:
             us_state = address[-2]
