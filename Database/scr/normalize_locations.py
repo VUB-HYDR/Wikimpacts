@@ -278,12 +278,11 @@ class NormalizeLocation:
                 normalized_area_name = location.raw["display_name"]
             else:
                 # return the english name only if a country (due to GADM's format)
-                if (
-                    is_country
-                    or location.raw["addresstype"] == self.country
-                    and "name:en" in location.raw["namedetails"].keys()
-                ):
-                    normalized_area_name = location.raw["namedetails"]["name:en"]
+                if is_country or location.raw["addresstype"] == self.country:
+                    if "name:en" in location.raw["namedetails"].keys():
+                        normalized_area_name = location.raw["namedetails"]["name:en"]
+                    elif "name" in location.raw["namedetails"].keys():
+                        normalized_area_name = location.raw["namedetails"]["name"]
                 # return the international name or wikipedia title if present (only for sublocations, due to GADM's format)
                 elif "int_name" in location.raw["namedetails"].keys():
                     normalized_area_name = location.raw["namedetails"]["int_name"]
