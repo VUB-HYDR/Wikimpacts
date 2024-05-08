@@ -150,6 +150,7 @@ class NormalizeLocation:
                 # if area is None, replace by country name
                 area = in_country if not area and in_country else area
                 assert isinstance(area, str), f"Area is {area}; in_country: {in_country}"
+
             except BaseException as err:
                 self.logger.error(err)
                 return (None, None, None)
@@ -230,7 +231,6 @@ class NormalizeLocation:
                         )
                     )
             l = sorted(l, key=lambda x: x.raw["place_rank"], reverse=False)
-
             for result in l:
                 # prefer areas that are a multigon/polygon (aka not "point")
                 if result.raw["geojson"]["type"].strip().lower() != "point":
