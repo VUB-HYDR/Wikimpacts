@@ -94,6 +94,29 @@ class NormalizeLocation:
         cardinals = [i.strip() for i in area if i.lower().strip() in self.cardinals]
         return " ".join(output), " ".join(cardinals) if cardinals else None
 
+    def geocode_api_request(
+        self,
+        query: str,
+        exactly_one: bool,
+        namedetails: bool,
+        geometry: str,
+        extratags: bool,
+        country_codes: list[str] | None = None,
+    ) -> list:
+        try:
+            l = self.geocode(
+                query=query,
+                exactly_one=exactly_one,
+                namedetails=namedetails,
+                geometry=geometry,
+                extratags=extratags,
+                country_codes=country_codes,
+            )
+            return l if l else []
+        except BaseException as err:
+            self.logger.error(f"API call unsuccessful. Error message {err}")
+            return []
+
     @cache
     def normalize_locations(
         self, area: str, is_country: bool = False, in_country: str = None
@@ -111,7 +134,7 @@ class NormalizeLocation:
 
                 # if area is None, replace by country name
                 area = in_country if not area and in_country else area
-                assert isinstance(area, str), f"Area is {area} and is not in_country: {in_country}"
+                assert isinstance(area, str), f"Area is {area}; in_country: {in_country}"
             except BaseException as err:
                 self.logger.error(err)
                 return (None, None, None)
@@ -138,7 +161,7 @@ class NormalizeLocation:
             else:
                 query = area
 
-            l = self.geocode(
+            l = self.geocode_api_request(
                 query,
                 exactly_one=False,
                 namedetails=True,
@@ -150,7 +173,7 @@ class NormalizeLocation:
 
             # if no results are found if the area is_country, attempt again without the country constraint
             if not l and is_country:
-                l = self.geocode(
+                l = self.geocode_api_request(
                     area,
                     exactly_one=False,
                     namedetails=True,
@@ -162,7 +185,7 @@ class NormalizeLocation:
             # if results fail again or no suitable location type is found, attempt removing cardinal directions from the name
             if not l or any([r.raw["type"].lower().strip() in self.unwanted_location_types for r in l]):
                 area_no_cardinals, cardinals = self._clean_cardinal_directions(area)
-                l = self.geocode(
+                l = self.geocode_api_request(
                     area_no_cardinals,
                     exactly_one=False,
                     namedetails=True,
@@ -179,7 +202,7 @@ class NormalizeLocation:
                 area_segments = area.split(" ")
                 for a in area_segments:
                     l.extend(
-                        self.geocode(
+                        self.geocode_api_request(
                             a,
                             exactly_one=False,
                             namedetails=True,
@@ -187,7 +210,6 @@ class NormalizeLocation:
                             extratags=True,
                         )
                     )
-
             l = sorted(l, key=lambda x: x.raw["place_rank"], reverse=False)
 
             for result in l:
