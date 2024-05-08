@@ -227,8 +227,20 @@ class NormalizeLocation:
                     location = None
 
             # if all matched locations are points and/or commercial, grab the one with the lowest rank
-            if location is None:
-                location = l[0]
+            if not location:
+                if l:
+                    location = l[0]
+                # otherwise, generalize to the country
+                elif not l and in_country:
+                    l = self.geocode_api_request(
+                        {"country": in_country},
+                        exactly_one=False,
+                        namedetails=True,
+                        geometry="geojson",
+                        extratags=True,
+                    )
+                    l = sorted(l, key=lambda x: x.raw["place_rank"], reverse=False)
+                    location = l[0]
 
             us_area = (
                 location.raw["display_name"]
