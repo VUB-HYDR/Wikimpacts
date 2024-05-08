@@ -150,14 +150,14 @@ class NormalizeLocation:
                 in_country = in_country.lower().strip()
 
             country_codes = None
-            # Open Street Map has an issue with "united" countries. "The UK" and "The US" return no results, but "UK" and "US" do.
+            location = None
 
+            # Open Street Map has an issue with "united" countries. "The UK" and "The US" return no results, but "UK" and "US" do.
             if is_country:
                 query = {self.country: (re.sub(r"(the)", "", area).strip() if area.startswith("the u") else area)}
             elif in_country:
                 query = area
                 country_codes = pycountry.countries.search_fuzzy(in_country)[0].alpha_2
-
             else:
                 query = area
 
@@ -169,7 +169,6 @@ class NormalizeLocation:
                 extratags=True,
                 country_codes=country_codes,
             )
-            location = None
 
             # if no results are found if the area is_country, attempt again without the country constraint
             if not l and is_country:
@@ -285,11 +284,11 @@ class NormalizeLocation:
             geojson = json.dumps(location.raw["geojson"]) if isinstance(location.raw["geojson"], dict) else None
 
             return (normalized_area_name, location.raw["type"], geojson)
+
         except BaseException as err:
             self.logger.error(
-                f"Could not find location {area}; is_country: {is_country}; in_country: {in_country}. Error message {err}"
+                f"Could not find location {area}; is_country: {is_country}; in_country: {in_country}. Error message {err}."
             )
-
             # return un-normalized area name
             return (area, None, None)
 
