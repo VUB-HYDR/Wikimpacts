@@ -56,7 +56,17 @@ class NormalizeLocation:
             "USA",
         )
 
-        self.unwanted_location_types = ["commercial", "industrial", "company", "clinic", "hospital", "university"]
+        self.unwanted_location_types = [
+            "commercial",
+            "industrial",
+            "company",
+            "clinic",
+            "hospital",
+            "university",
+            "residential",
+            "retail",
+            "university",
+        ]
 
         self.unsd_regions, self.unsd_subregions, self.unsd_intermediateregions = (
             self.unsd[self.region].dropna().unique(),
@@ -90,10 +100,6 @@ class NormalizeLocation:
                     assert isinstance(area, str), f"Area is not a string: {area}"
                 if in_country:
                     assert isinstance(in_country, str), f"Country is not a string: {in_country}"
-            except BaseException as err:
-                self.logger.error(err)
-                return (None, None, None)
-            try:
                 assert not (
                     is_country and in_country
                 ), f"An area cannot be a country (is_country={is_country}) and in a country (in_country={in_country}) simultaneously"
