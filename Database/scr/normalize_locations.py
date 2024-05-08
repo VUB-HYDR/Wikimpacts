@@ -172,7 +172,12 @@ class NormalizeLocation:
                 query = {self.country: (re.sub(r"(the)", "", area).strip() if area.startswith("the u") else area)}
             elif in_country:
                 query = area
-                country_codes = pycountry.countries.search_fuzzy(in_country)[0].alpha_2
+                try:
+                    country_codes = pycountry.countries.search_fuzzy(in_country)[0].alpha_2
+                except BaseException as err:
+                    self.logger.debug(
+                        f"Could not extract country code. Country {in_country} may be incorrect. Error message {err}"
+                    )
             else:
                 query = area
 
