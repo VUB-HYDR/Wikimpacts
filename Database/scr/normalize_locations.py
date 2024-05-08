@@ -204,7 +204,7 @@ class NormalizeLocation:
                 else:
                     location = None
 
-            # if all matched locations are points and/or commercial, grab the one with the highest importance
+            # if all matched locations are points and/or commercial, grab the one with the lowest rank
             if location is None:
                 location = l[0]
 
