@@ -345,15 +345,13 @@ class NormalizeLocation:
         # TODO: this should probably be handled by something other than symbols in strings, fix
         country = country.split(":")[0] if country and ":" in country else country
         area = area.split(":")[0] if area and ":" in area else area
+        country_cols = ["COUNTRY", "NAME_0", "VARNAME_0"]
 
         # find regions in unsd
         unsd_loc = area if area and not country else country
         unsd_search_output = self._get_unsd_region(unsd_loc, return_name=False)
         if unsd_search_output:
             return unsd_search_output
-
-        # limit GADM search to one country
-        gadm_df = self.gadm.loc[self.gadm["COUNTRY"] == country] if country else self.gadm
 
         # handle American States
         us_address_split = area.split(",")[-1].strip() if area else None
@@ -365,9 +363,20 @@ class NormalizeLocation:
         if us_search_output:
             return us_search_output
 
-        # handle countries
-        if country in gadm_df["COUNTRY"].to_list() and not area:
-            return gadm_df.loc[gadm_df["COUNTRY"] == country].GID_0.unique().tolist()
+        # limit GADM search to one country
+        gadm_df = pd.DataFrame()
+        for col in country_cols:
+            if country in self.gadm[col].unique().tolist() and not area:
+                gadm_df = self.gadm.loc[self.gadm[col] == country]
+                if gadm_df.shape != (0, 0):
+                    break
+
+        gadm_df = self.gadm if gadm_df.shape == (0, 0) else gadm_df
+
+        # handle countries, match in order by country column, name at level 0, or alternative names at level 0
+        for col in country_cols:
+            if country in gadm_df[col].to_list() and not area:
+                return gadm_df.loc[gadm_df[col] == country].GID_0.unique().tolist()
 
         # if trying to get matches in a single country, do fuzzy search
         if country and area:
