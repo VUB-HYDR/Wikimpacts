@@ -129,7 +129,7 @@ class NormalizeLocation:
             )
             return l if l else []
         except BaseException as err:
-            self.logger.error(f"API call unsuccessful. Error message {err}")
+            self.logger.error(f"API call unsuccessful. Error message: {err}")
             return []
 
     @cache
