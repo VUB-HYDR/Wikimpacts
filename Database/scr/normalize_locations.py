@@ -289,7 +289,9 @@ class NormalizeLocation:
             self.logger.error(
                 f"Could not find location {area}; is_country: {is_country}; in_country: {in_country}. Error message {err}"
             )
-            return (None, None, None)
+
+            # return un-normalized area name
+            return (area, None, None)
 
     def _get_unsd_region(
         self, area, fuzzy_match_n: int = 1, fuzzy_match_cuttoff: float = 0.8, return_name: bool = False
