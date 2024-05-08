@@ -61,6 +61,7 @@ class NormalizeLocation:
             "USA",
         )
 
+        # See location types at https://wiki.openstreetmap.org/wiki/TMC/Location_Code_List/Location_Types
         self.unwanted_location_types = [
             "commercial",
             "industrial",
@@ -71,6 +72,20 @@ class NormalizeLocation:
             "residential",
             "retail",
             "university",
+            "restaurant",
+            "car park",
+            "motel",
+            "petrol stration with kiosk",
+            "petrol station",
+            "retail park",
+            "hospital",
+            "church",
+            "exhibition/convention centre",
+            "underground parking garage",
+            "car park",
+            "carpool point",
+            "car park area",
+            "kiosk with WC",
         ]
 
         self.unsd_regions, self.unsd_subregions, self.unsd_intermediateregions = (
