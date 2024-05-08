@@ -108,6 +108,10 @@ class NormalizeLocation:
                 assert not (
                     is_country and in_country
                 ), f"An area cannot be a country (is_country={is_country}) and in a country (in_country={in_country}) simultaneously"
+
+                # if area is None, replace by country name
+                area = in_country if not area and in_country else area
+                assert isinstance(area, str), f"Area is {area} and is not in_country: {in_country}"
             except BaseException as err:
                 self.logger.error(err)
                 return (None, None, None)
@@ -169,7 +173,22 @@ class NormalizeLocation:
             else:
                 cardinals = None
 
-            l = sorted(l, key=lambda x: x.raw["importance"], reverse=True)
+            # if results fail again, get results for each possible segment and sort by rank without country restraints
+            if not l:
+                l = []
+                area_segments = area.split(" ")
+                for a in area_segments:
+                    l.extend(
+                        self.geocode(
+                            a,
+                            exactly_one=False,
+                            namedetails=True,
+                            geometry="geojson",
+                            extratags=True,
+                        )
+                    )
+
+            l = sorted(l, key=lambda x: x.raw["place_rank"], reverse=False)
 
             for result in l:
                 # prefer areas that are a multigon/polygon (aka not "point")
