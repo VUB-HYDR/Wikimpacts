@@ -101,8 +101,10 @@ if __name__ == "__main__":
                 end_dates.to_list(),
                 columns=["End_Date_Day", "End_Date_Month", "End_Date_Year"],
             )
-
             events = pd.concat([events, start_date_cols, end_date_cols], axis=1)
+            logger.info(f"Dropping columns with event year")
+            events.dropna(subset=["Start_Date_Year", "End_Date_Year"], how="all", inplace=True)
+
             del start_dates, end_dates, start_date_cols, end_date_cols
 
         # normalize binary categories into booleans
@@ -173,6 +175,9 @@ if __name__ == "__main__":
             )
 
         if "Location" in events.columns and "Country" in events.columns:
+            logger.info(f"Dropping columns with no country or sublocation")
+            events.dropna(subset=["Location", "Country"], how="all", inplace=True)
+
             logger.info("Normalizing Locations")
             events["Location_Tmp"] = events["Location"].apply(
                 lambda locations: (
@@ -343,6 +348,8 @@ if __name__ == "__main__":
             sub_event["Country_GID"] = sub_event["Country_Norm"].apply(
                 lambda country: (norm_loc.get_gadm_gid(country=country) if country else None)
             )
+            logger.info(f"Dropping columns with no locations for subevent {col}")
+            sub_event.dropna(subset=[f"Location_{location_col}"], how="all", inplace=True)
 
             logger.info(f"Normalizing location names for subevent {col}")
             sub_event[
