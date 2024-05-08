@@ -253,7 +253,7 @@ class NormalizeLocation:
             return (normalized_area_name, location.raw["type"], geojson)
         except BaseException as err:
             self.logger.error(
-                f"Could not find location {area} (is country? {is_country}; in_country {in_country}). Error message {err}"
+                f"Could not find location {area}; is_country: {is_country}; in_country: {in_country}. Error message {err}"
             )
             return (None, None, None)
 
