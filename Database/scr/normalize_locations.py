@@ -256,6 +256,7 @@ class NormalizeLocation:
                         else self.unsd.loc[self.unsd[level] == fuzzy_area_match[0]][self.iso].unique().tolist()
                     )
 
+    @cache
     def _get_american_area(self, area: str, country: str = None) -> list | None:
         # TODO: slim down
         areas = []
@@ -266,6 +267,7 @@ class NormalizeLocation:
             return [self.USA_GID]
 
         address = [x.strip() for x in area.split(",")] if area else [x.strip() for x in country.split(",")]
+
         # remove postal codes from the address list (common on OSM)
         address = [i for i in address if not re.match(r"^\d{5}(?:[-\s]\d{4})?$", i)]
 
@@ -324,6 +326,7 @@ class NormalizeLocation:
 
         return areas
 
+    @cache
     def get_gadm_gid(
         self,
         area: str = None,
