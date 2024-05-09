@@ -400,8 +400,8 @@ if __name__ == "__main__":
             )
             sub_event = sub_event.apply(lambda row: normalize_location_rows_if_country(row), axis=1)
 
-            # TODO: do other location columns need to be converted as well?
             sub_event[f"Location_{location_col}_GID"] = sub_event[f"Location_{location_col}_GID"].astype(str)
+            sub_event["Country_GID"] = sub_event["Country_GID"].astype(str)
 
             # store as parquet and csv
             logger.info(f"Storing parsed results for sunevent {col}")
