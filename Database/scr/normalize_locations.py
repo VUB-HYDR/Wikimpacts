@@ -506,34 +506,3 @@ class NormalizeLocation:
     def _debug(self, response):
         self.logger.debug(type(response))
         return True
-
-
-if __name__ == "__main__":
-    norm_loc = NormalizeLocation(
-        gadm_path="Database/data/gadm_world.csv",
-        unsd_path="Database/data/UNSD — Methodology.csv",
-    )
-    print("area", norm_loc.get_gadm_gid(area="Puerto Rico"))
-    print("country", norm_loc.get_gadm_gid(country="Puerto Rico"))
-
-    res = norm_loc.normalize_locations("atlantic canada", is_country=True)
-    print(res[0], res[1], res[2] is not None)
-    for area, country in [
-        # ("fujian, zhejiang, jiangxi & anhui provinces", "China"),
-        # (None, None),
-        # (None, "Tuvalu"),
-        # (None, "Fiji"),
-        # (None, "New Zealand"),
-        # ("Micronesia (Chuuk, Yap)", None),
-        # (None, "Micronesia (Chuuk, Yap)"),
-        # ("shanghai and fujian-zhejiang area", "China"),
-        # ("acapulco", "Mexico"),
-        # ("petén department", "guatemala"),
-        # problematic
-        ("florida straits", "straits of florida"),
-        ("trinidad", None),
-        (None, "trinidad"),
-        # salinas; is_country: False; in_country: puerto rico, united states. Error message puerto rico, united states.
-    ]:
-        res = norm_loc.normalize_locations(area, in_country=country)
-        print(res[0], res[1], res[2] is not None)
