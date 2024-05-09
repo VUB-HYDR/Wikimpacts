@@ -78,7 +78,9 @@ if __name__ == "__main__":
     logger.info("JSON datafile loaded")
 
     # add short uids for each event
-    df["Event_ID"] = [utils.random_short_uuid() for _ in df.index]
+    if "Event_ID" not in df.columns:
+        logger.info("Event ids missing... generating random short uuids for col Event_ID")
+        df["Event_ID"] = [utils.random_short_uuid() for _ in df.index]
 
     # unpack Total_Summary_* columns
     total_summary_cols = [col for col in df.columns if col.startswith("Total_")]
