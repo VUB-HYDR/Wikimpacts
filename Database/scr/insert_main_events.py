@@ -42,10 +42,7 @@ if __name__ == "__main__":
         type=str,
     )
 
-    args = parser.parse_args()
-    data = pd.read_parquet(f"{args.data_path}/{args.filename}")
-    data = data[
-        [
+    possible_cols = [
             "Event_ID",
             "Event_Name",
             "Source",
@@ -118,7 +115,11 @@ if __name__ == "__main__":
             "Total_Buildings_Damage_Approx",
             # "Total_Building_Damage_with_annotation"]
         ]
-    ]
+
+    args = parser.parse_args()
+    data = pd.read_parquet(f"{args.data_path}/{args.filename}")
+    
+    data = data[list(set(data.columns).intersection(possible_cols))]
 
     connection = sqlite3.connect(args.database_name)
     cursor = connection.cursor()
