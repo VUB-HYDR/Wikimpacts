@@ -39,8 +39,7 @@ if __name__ == "__main__":
         "-o",
         "--output_path",
         dest="output_path",
-        # default="Database/output",
-        default="Database/output/Ni",
+        default="Database/output/dev",
         help="The directory where the parsed events will land (as .parquet)",
         type=str,
     )

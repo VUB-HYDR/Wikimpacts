@@ -2,6 +2,10 @@
 results
 .env
 Database/raw/*.xlsx
+Database/output/*.csv
+Database/output/Ni/*.csv
+Database/output/dev/*
+
 # ignore pycache
 **/__pycache__
 

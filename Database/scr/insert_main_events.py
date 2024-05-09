@@ -19,7 +19,7 @@ if __name__ == "__main__":
         "-d",
         "--data_path",
         dest="data_path",
-        default="Database/output",
+        default="Database/output/dev",
         help="The directory where .parquet files exist so they can be inserted into the db",
         type=str,
     )
