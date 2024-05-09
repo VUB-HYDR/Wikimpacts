@@ -5,18 +5,30 @@ Wikimapcts is the first version of climate impact dataset creating by generative
 ### Dependencies
 Prerequisite:
 - Install [`poetry`](https://python-poetry.org/docs/#installation)
-
 Then activate a virtual environment and install the dependencies:
 
 ```shell
 poetry shell # activates a venv
-poetry install  # installs all dependencies from the lockfile
+poetry install # installs all dependencies from the lockfile
 ```
 
+- Install pre-commit
+
+```shell
+$ pre-commit install
+pre-commit installed at .git/hooks/pre-commit
+```
+
+- Install [Git Large File Storage](https://git-lfs.com/) to enable pushing large files to the repository
+
+```
+# install after downloading from https://git-lfs.com
+git lfs install
+```
 
 ### Quickstart
 
-If you have new events to add to the database, first parse them and insert them. 
+If you have new events to add to the database, first parse them and insert them.
 
 #### Parsing and normalization
 - To parse events (and normalize their values) from a json file with the right schema (adding schema validation soon), run:
@@ -58,3 +70,17 @@ If you have new events to add to the database, first parse them and insert them.
     ```shell
     poetry run python3 Database/create_db.py
     ```
+
+#### Develop
+
+To develop a new feature, checkout a new branch from `main`.
+
+#### Sources & Citations
+- GADM world data | `Database/data/gadm_world.csv`
+
+    https://gadm.org/license.html
+
+- Regions by UNSD | `Database/data/UNSD — Methodology.csv`
+
+    United Nations Standard Country Code, Series M: Miscellaneous Statistical Papers, No. 49, New York: United Nations. ST/ESA/STAT/SER.M/49
+    https://unstats.un.org/unsd/classifications/Family/Detail/12
