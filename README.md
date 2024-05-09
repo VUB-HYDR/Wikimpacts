@@ -19,6 +19,13 @@ $ pre-commit install
 pre-commit installed at .git/hooks/pre-commit
 ```
 
+- Install [Git Large File Storage](https://git-lfs.com/) to enable pushing large files to the repository
+
+```
+# install after downloading from https://git-lfs.com
+git lfs install
+```
+
 ### Quickstart
 
 If you have new events to add to the database, first parse them and insert them.
