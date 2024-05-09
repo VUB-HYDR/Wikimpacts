@@ -22,7 +22,8 @@ if __name__ == "__main__":
         "-f",
         "--filename",
         dest="filename",
-        default="response_wiki_GPT4_20240327_eventNo_1_8_all_category.json",
+        # default="response_wiki_GPT4_20240327_eventNo_1_8_all_category.json",
+        default="response_wiki_GPT4_20240408_100events_validation.json",
         help="The name of the json file in the <RAW_PATH> directory",
         type=str,
     )
@@ -38,7 +39,8 @@ if __name__ == "__main__":
         "-o",
         "--output_path",
         dest="output_path",
-        default="Database/output",
+        # default="Database/output",
+        default="Database/output/Ni",
         help="The directory where the parsed events will land (as .parquet)",
         type=str,
     )
@@ -57,7 +59,7 @@ if __name__ == "__main__":
         dest="event_type",
         default="all",
         choices=["all", "main", "sub"],
-        help="Choose which events to parse: main, sub, or all?",
+        help="Choose which events to parse. Possible values: main, sub, all",
         type=str,
     )
 
@@ -287,7 +289,7 @@ if __name__ == "__main__":
                 if col.startswith("Num_") or col.endswith("Damage") and "Date" not in col and "Location" not in col
             ]
             logger.info(
-                f"""Normalizing numbers to ranges in subenet {col} and determining whether or not they are an approximate (min, max, approx). Columns: {specific_total_cols}"""
+                f"""Normalizing numbers to ranges in subevent {col} and determining whether or not they are an approximate (min, max, approx). Columns: {specific_total_cols}"""
             )
 
             for i in specific_total_cols:
@@ -371,7 +373,6 @@ if __name__ == "__main__":
             ).apply(
                 pd.Series
             )
-
             logger.info(f"Getting GID from GADM for locations in subevent {col}")
             sub_event[f"Location_{location_col}_GID"] = sub_event.apply(
                 lambda row: (
@@ -384,6 +385,22 @@ if __name__ == "__main__":
                 ),
                 axis=1,
             )
+
+            # if location and country are identical in subevents, generalize country normalization
+            def normalize_location_rows_if_country(row):
+                if row[f"Location_{location_col}"] == row["Country"]:
+                    for i in ["Norm", "Type", "GeoJson", "GID"]:
+                        row[f"Location_{location_col}_{i}"] = row[f"Country_{i}"]
+                    return row
+                else:
+                    return row
+
+            logger.info(
+                "Cleaning locations and countries that are identical (a subevent where the smallest location is a country)"
+            )
+            sub_event = sub_event.apply(lambda row: normalize_location_rows_if_country(row), axis=1)
+
+            # TODO: do other location columns need to be converted as well?
             sub_event[f"Location_{location_col}_GID"] = sub_event[f"Location_{location_col}_GID"].astype(str)
 
             # store as parquet and csv
