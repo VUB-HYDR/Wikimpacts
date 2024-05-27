@@ -15,6 +15,8 @@ class Normaliser:
         and string inputs are converted to integers. Ill-defined inputs are returned
         as None. Examples: 100 -> 100, "100" -> 100, 10.7 => 11, "10 000" -> None,
         "Ten" -> 10, "two billion" -> 2000000000."""
+        if v == None:
+            return None
         try:
             return round(float(v))
         except ValueError:
@@ -33,7 +35,8 @@ class Normaliser:
         """Normalise a string of elements separated by "&" or "|". Return an ordered list of
         normalised strings. Examples: "Normandy &France" -> ['normandy', 'france'],
         "France|Germany|Poland|Belgium" -> ['france', 'germany', 'poland', 'belgium']"""
-        return [self.string(s) for s in v.replace("&", "|").split("|")]
+        # return [self.string(s) for s in v.replace("&", "|").split("|")]
+        return v
 
     def date(self, v):
         """Normalise date expression. Return in format year-month-day. Non-parsable inputs

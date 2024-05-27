@@ -1,14 +1,14 @@
 import argparse
-import ast
 import re
 
 import pandas as pd
 from scr.normalize_locations import NormalizeLocation
 from scr.normalize_numbers import NormalizeNumber
-from scr.normalize_utils import NormalizeUtils as utils
+from scr.normalize_utils import Logging, NormalizeUtils
 
 if __name__ == "__main__":
-    logger = utils.get_logger("parse_events")
+    logger = Logging.get_logger("parse_events")
+
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "-sm",
@@ -62,9 +62,28 @@ if __name__ == "__main__":
         type=str,
     )
 
+    parser.add_argument(
+        "-con",
+        "--country-column",
+        dest="country_column",
+        default="Country",
+        help="Name of the column containing a list of countries",
+        type=str,
+    )
+
+    parser.add_argument(
+        "-loc",
+        "--location-column",
+        dest="location_column",
+        default="Location",
+        help="Name of the column containing a list of countries",
+        type=str,
+    )
+
     args = parser.parse_args()
     logger.info(f"Passed args: {args}")
 
+    utils = NormalizeUtils()
     nlp = utils.load_spacy_model(args.spaCy_model_name)
 
     norm_num = NormalizeNumber(nlp, locale_config=args.locale_config)
@@ -84,6 +103,8 @@ if __name__ == "__main__":
 
     # unpack Total_Summary_* columns
     total_summary_cols = [col for col in df.columns if col.startswith("Total_")]
+    for i in total_summary_cols:
+        df[i] = df[i].apply(utils.eval)
     events = utils.unpack_col(df, columns=total_summary_cols)
     logger.info(f"Total summary columns: {total_summary_cols}")
 
@@ -105,8 +126,9 @@ if __name__ == "__main__":
                 columns=["End_Date_Day", "End_Date_Month", "End_Date_Year"],
             )
             events = pd.concat([events, start_date_cols, end_date_cols], axis=1)
-            logger.info(f"Dropping columns with event year")
-            events.dropna(subset=["Start_Date_Year", "End_Date_Year"], how="all", inplace=True)
+
+            # logger.info(f"Dropping columns with event year")
+            # events.dropna(subset=["Start_Date_Year", "End_Date_Year"], how="all", inplace=True)
 
             del start_dates, end_dates, start_date_cols, end_date_cols
 
@@ -144,21 +166,32 @@ if __name__ == "__main__":
         for i in total_cols:
             events[[f"{i}_Min", f"{i}_Max", f"{i}_Approx"]] = (
                 events[i]
-                .apply(lambda x: (norm_num.extract_numbers(x) if x is not None else (None, None, None)))
+                .apply(lambda x: (norm_num.extract_numbers(x) if isinstance(x, str) else (None, None, None)))
                 .apply(pd.Series)
             )
-
         # normalize Perils into a list
         if "Perils" in events.columns:
             logger.info("Normalizing Perils to list")
             events.Perils = events.Perils.apply(lambda x: x.split("|"))
 
         # normalize location names
-        if "Country" in events.columns:
-            logger.info("Normalizing Countries")
+        if args.country_column in events.columns:
+            logger.info("Ensuring that all country data is of type <list>")
 
-            events["Country_Tmp"] = events["Country"].apply(
+            events[args.country_column] = events[args.country_column].apply(
+                lambda x: utils.eval(x) if x is not None else []
+            )
+
+            logger.info(f"Removing non-country areas from country column {args.country_column}")
+            events[args.country_column] = events[args.country_column].apply(
+                lambda countries: [c for c in countries if utils.simple_country_check(c)] if countries else []
+            )
+
+            logger.info("Normalizing Countries")
+            events["Country_Tmp"] = events[args.country_column].apply(
                 lambda countries: [norm_loc.normalize_locations(c, is_country=True) for c in countries]
+                if countries
+                else []
             )
 
             events[["Country_Norm", "Country_Type", "Country_GeoJson"]] = (
@@ -177,9 +210,9 @@ if __name__ == "__main__":
                 ),
             )
 
-        if "Location" in events.columns and "Country" in events.columns:
-            logger.info(f"Dropping columns with no country or sublocation")
-            events.dropna(subset=["Location", "Country"], how="all", inplace=True)
+        if args.location_column in events.columns and args.country_column in events.columns:
+            # logger.info(f"Dropping columns with no country or sublocation")
+            # events.dropna(subset=["Location", "Country"], how="all", inplace=True)
 
             logger.info("Normalizing Locations")
             events["Location_Tmp"] = events["Location"].apply(
@@ -236,26 +269,37 @@ if __name__ == "__main__":
             events[col] = events[col].astype(str)
 
         logger.info("Converting list columns to strings to store in sqlite3")
-        for col in [
+
+        col_to_str = [
             "Perils",
-            "Location",
+            args.location_column,
             "Location_Norm",
             "Location_Type",
             "Location_GID",
             "Location_GeoJson",
-            "Country",
+            args.country_column,
             "Country_Norm",
             "Country_Type",
             "Country_GID",
             "Country_GeoJson",
-        ]:
+            "Total_Deaths",
+            "Total_Damage",
+            "Total_Damage_Inflation_Adjusted",
+            "Total_Damage_Inflation_Adjusted_Year",
+        ]
+        col_to_str.extend([col for col in events if col.startswith("Specific_")])
+
+        for col in col_to_str:
             if col in events.columns:
                 events[col] = events[col].astype(str)
 
+        # drop "Countries_Affected" if present
+        if "Countries_Affected" in events.columns:
+            events.drop(columns=["Countries_Affected"], inplace=True)
         # store as parquet and csv
         logger.info(f"Storing parsed results")
         events_filename = f"{args.output_path}/{args.filename.split('.json')[0]}"
-        events.to_parquet(f"{events_filename}.parquet")
+        events.to_parquet(f"{events_filename}.parquet", engine="pyarrow")
         events.to_csv(f"{events_filename}.csv")
 
     if args.event_type in ["sub", "all"]:
@@ -270,7 +314,7 @@ if __name__ == "__main__":
         for col in specific_summary_cols:
             # evaluate string bytes to dict
             events[col] = events[col].astype(str)
-            events[col] = events[col].apply(ast.literal_eval)
+            events[col] = events[col].apply(utils.eval)
 
             # unpack subevents
             sub_event = events[["Event_ID", col]].explode(col)
@@ -287,7 +331,10 @@ if __name__ == "__main__":
             specific_total_cols = [
                 col
                 for col in sub_event.columns
-                if col.startswith("Num_") or col.endswith("Damage") and "Date" not in col and "Location" not in col
+                if col.startswith("Num_")
+                or col.endswith("Damage")
+                and "Date" not in col
+                and args.location_column not in col
             ]
             logger.info(
                 f"""Normalizing numbers to ranges in subevent {col} and determining whether or not they are an approximate (min, max, approx). Columns: {specific_total_cols}"""
@@ -342,7 +389,7 @@ if __name__ == "__main__":
             logger.info(f"Normalizing country names for subevent {col}")
 
             sub_event[["Country_Norm", "Country_Type", "Country_GeoJson"]] = (
-                sub_event["Country"]
+                sub_event[args.country_column]
                 .apply(lambda country: norm_loc.normalize_locations(country, is_country=True))
                 .apply(pd.Series)
             )
@@ -351,8 +398,8 @@ if __name__ == "__main__":
             sub_event["Country_GID"] = sub_event["Country_Norm"].apply(
                 lambda country: (norm_loc.get_gadm_gid(country=country) if country else None)
             )
-            logger.info(f"Dropping columns with no locations for subevent {col}")
-            sub_event.dropna(subset=[f"Location_{location_col}"], how="all", inplace=True)
+            # logger.info(f"Dropping columns with no locations for subevent {col}")
+            # sub_event.dropna(subset=[f"Location_{location_col}"], how="all", inplace=True)
 
             logger.info(f"Normalizing location names for subevent {col}")
             sub_event[
@@ -389,7 +436,7 @@ if __name__ == "__main__":
 
             # if location and country are identical in subevents, generalize country normalization
             def normalize_location_rows_if_country(row):
-                if row[f"Location_{location_col}"] == row["Country"]:
+                if row[f"Location_{location_col}"] == row[args.country_column]:
                     for i in ["Norm", "Type", "GeoJson", "GID"]:
                         row[f"Location_{location_col}_{i}"] = row[f"Country_{i}"]
                     return row
@@ -404,9 +451,28 @@ if __name__ == "__main__":
             sub_event[f"Location_{location_col}_GID"] = sub_event[f"Location_{location_col}_GID"].astype(str)
             sub_event["Country_GID"] = sub_event["Country_GID"].astype(str)
 
+            sub_event[
+                [
+                    f"Location_{location_col}_Norm",
+                    f"Location_{location_col}_Type",
+                    f"Location_{location_col}_GeoJson",
+                ]
+            ] = sub_event[
+                [
+                    f"Location_{location_col}_Norm",
+                    f"Location_{location_col}_Type",
+                    f"Location_{location_col}_GeoJson",
+                ]
+            ].astype(
+                str
+            )
+
+            if "Death_with_annotation" in sub_event.columns:
+                sub_event["Death_with_annotation"] = sub_event["Death_with_annotation"].astype(str)
+
             # store as parquet and csv
-            logger.info(f"Storing parsed results for sunevent {col}")
-            sub_event.to_parquet(f"{args.output_path}/{col}.parquet")
+            logger.info(f"Storing parsed results for sunbvent {col}")
             sub_event.to_csv(f"{args.output_path}/{col}.csv")
+            sub_event.to_parquet(f"{args.output_path}/{col}.parquet")
 
     norm_loc.uninstall_cache()

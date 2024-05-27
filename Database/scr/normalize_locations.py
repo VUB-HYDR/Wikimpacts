@@ -9,7 +9,7 @@ import requests_cache
 from geopy.extra.rate_limiter import RateLimiter
 from geopy.geocoders import Nominatim
 
-from .normalize_utils import NormalizeUtils
+from .normalize_utils import Logging
 
 
 class NormalizeLocation:
@@ -29,8 +29,7 @@ class NormalizeLocation:
             if "Code" not in col:
                 self.unsd[col] = self.unsd[col].apply(lambda s: s.lower() if type(s) == str else s)
 
-        self.logger = NormalizeUtils.get_logger("normalize_locations")
-
+        self.logger = Logging.get_logger("normalize_locations")
         self.logger.info("Installed GeoPy cache")
         # frequently used literals
         (
@@ -162,6 +161,9 @@ class NormalizeLocation:
                 return [unsd_search_output, "UNSD region", None]
 
             area = area.lower().strip()
+            if "_" in area:
+                area = area.replace("_", " ")
+
             if isinstance(in_country, str):
                 in_country = in_country.lower().strip()
 
@@ -300,7 +302,8 @@ class NormalizeLocation:
                     )
 
             # if the location had any cardinal directions attached, add them here
-            if cardinals:
+            # only if the location is smaller than a country
+            if cardinals and not is_country:
                 normalized_area_name = f"{normalized_area_name}:<{cardinals}>"
             geojson = json.dumps(location.raw["geojson"]) if isinstance(location.raw["geojson"], dict) else None
 

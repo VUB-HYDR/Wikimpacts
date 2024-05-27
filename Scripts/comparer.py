@@ -4,34 +4,39 @@ import normaliser
 class Comparer:
     """Comparison module"""
 
-    def __init__(self, null_penalty):
+    def __init__(self, null_penalty: bool, target_columns: list[str]):
         """Initialisation."""
         # Penalty score if one field is None, but not the other
         self.null_penalty = null_penalty
         self.norm = normaliser.Normaliser()
+        self.target_columns = target_columns
+
+    def target_col(self, l) -> list:
+        """Returns a list of columns if they are in the set of specified target columns"""
+        return list(set(l) & set(self.target_columns))
 
     def string(self, v, w):
         """Compare strings. Return 0 if identical, 1 otherwise."""
         if v == None and w == None:
-            return None
+            return 0
         if v == None and w != None or v != None and w == None:
             return self.null_penalty
         return 1 - int(self.norm.string(v) == self.norm.string(w))
 
     def integer(self, v, w):
         """Compare integers. Note: assumes non-negative input."""
-        # TODO: validate input
+        v, w = self.norm.integer(v), self.norm.integer(w)
+
         if v == None and w == None:
-            return None
+            return 0
         if v == None and w != None or v != None and w == None:
             return self.null_penalty
-        v, w = self.norm.integer(v), self.norm.integer(w)
         return 0.0 if v + w == 0 else abs(v - w) / (v + w)
 
     def boolean(self, v, w):
         """Compare booleans. Returns 0 if equal, 1 otherwise."""
         if v == None and w == None:
-            return None
+            return 0
         if v == None and w != None or v != None and w == None:
             return self.null_penalty
         return int(not (self.norm.boolean(v) == self.norm.boolean(w)))
@@ -39,22 +44,17 @@ class Comparer:
     def sequence(self, v, w):
         """Compare sequences. Returns Jaccard distance between sets of elements in sequences.
         Note: ordering is not taken into consideration."""
-        # TODO: for location, use GIS distance instead for sublocations
         if v == None and w == None:
-            return None
+            return 0
         if v == None and w != None or v != None and w == None:
             return self.null_penalty
         v, w = set(self.norm.sequence(v)), set(self.norm.sequence(w))
         return 1.0 - len(v.intersection(w)) / len(v.union(w))
 
-    # TODO: for countries, exact match, possibly with the help of a library
-    # like this one: https://pypi.org/project/pycountry/ (see fuzzy country search, could
-    # replace having to normalize or to use jaccard distance)
-
     def date(self, v, w):
         """Compare dates. Returns 0 if identical, 1 othewise."""
         if v == None and w == None:
-            return None
+            return 0
         if v == None and w != None or v != None and w == None:
             return self.null_penalty
         return 1 - int(self.norm.date(v) == self.norm.date(w))
@@ -63,33 +63,41 @@ class Comparer:
         """Compare all fields."""
         score = {}
         # Strings
-        for k in ["Event_Type", "Event_Name", "Insured_Damage_Units", "Total_Damage_Units"]:
+        for k in self.target_col(["Main_Event", "Event_ID", "Event_Name", "Total_Damage_Units"]):
             score[k] = self.string(v[k], w[k])
+
         # Sequences
-        for k in ["Location"]:
+        for k in self.target_col(["Country_Norm"]):
             score[k] = self.sequence(v[k], w[k])
+
         # Dates
-        for k in ["Single_Date", "Start_Date", "End_Date"]:
+        for k in []:
             score[k] = self.date(v[k], w[k])
+
         # Integers
-        for k in [
-            "Total_Deaths",
-            "Num_Injured",
-            "Displaced_People",
-            "Num_Homeless",
-            "Total_Affected",
-            "Insured_Damage",
-            "Insured_Damage_Inflation_Adjusted_Year",
-            "Total_Damage",
-            "Total_Damage_Inflation_Adjusted_Year",
-            "Buildings_Damaged",
-        ]:
+        for k in self.target_col(
+            [
+                "Total_Deaths_Min",
+                "Total_Deaths_Max",
+                "Start_Date_Day",
+                "Start_Date_Month",
+                "Start_Date_Year",
+                "End_Date_Day",
+                "End_Date_Month",
+                "End_Date_Year",
+                "Total_Damage_Min",
+                "Total_Damage_Max",
+            ]
+        ):
             score[k] = self.integer(v[k], w[k])
+
         # Booleans
-        for k in ["Insured_Damage_Inflation_Adjusted", "Total_Damage_Inflation_Adjusted"]:
+        for k in self.target_col([]):
             score[k] = self.boolean(v[k], w[k])
-        # Return score dictionary
-        return score
+
+        # Return score dictionary after ordering by target columns order
+        ordered_score = {k: score[k] for k in self.target_columns}
+        return ordered_score
 
     def averaged(self, v, w):
         """Return fraction of null comparisons (Nones) and mean of remaining scores."""
@@ -101,7 +109,7 @@ class Comparer:
         Items with weight 0 are ignored."""
         p = dict([(k, s) for (k, s) in self.all(v, w).items() if weights[k] != 0])
         u = [weights[k] * s for (k, s) in p.items() if s != None]
-        return 1.0 - len(u) / len(p) if len(p) != 0 else None, sum(u) / len(u) if len(u) != 0 else None
+        return 1.0 - len(u) / len(p) if len(p) != 0 else None, (sum(u) / len(u) if len(u) != 0 else None)
 
     def relevance(self, vv, ww, weights):
         """Measure how events in vv are represented by events in ww.
