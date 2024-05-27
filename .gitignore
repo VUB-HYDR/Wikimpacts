@@ -1,10 +1,13 @@
-# ignore dev files
+# ignore raw files
+Database/raw/*/*/dev
+Database/raw/*/*/test
 results
-.env
-Database/raw/*.xlsx
-Database/output/*.csv
-Database/output/Ni/*.csv
-Database/output/dev/*
+
+# ignore notebooks
+**.ipynb
+
+# ignore excel files
+**.xlsx
 
 # ignore pycache
 **/__pycache__

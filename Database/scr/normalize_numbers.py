@@ -23,7 +23,7 @@ class NormalizeNumber:
         return " ".join(t for t in text if t)
 
     def _extract_single_number(self, text: str) -> List[float]:
-        if text.lower().strip() == "none":
+        if text.lower().strip() in ["none", "none reported", "none reported"]:
             return [0]
         try:
             # try extracting the number (in digits) directly (eg. "1,222")
@@ -207,7 +207,7 @@ class NormalizeNumber:
     def _extract_approximate_quantifiers(self, text: str) -> Tuple[float]:
         scales = {"tens of": 10, "hundreds of": 100, "thousands of": 1000, "millions of": 1000000}
         lower_scale = 2
-        upper_scale = 7
+        upper_scale = 9
 
         for phrase, scale in scales.items():
             if phrase in text.lower():

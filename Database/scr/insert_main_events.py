@@ -114,6 +114,7 @@ if __name__ == "__main__":
         "Total_Buildings_Damage_Max",
         "Total_Buildings_Damage_Approx",
         # "Total_Building_Damage_with_annotation"]
+        "execution_time",
     ]
 
     args = parser.parse_args()
