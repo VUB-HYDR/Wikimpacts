@@ -73,7 +73,18 @@ If you have new events to add to the database, first parse them and insert them.
 
 #### Develop
 
-To develop a new feature, checkout a new branch from `main`.
+Always pull a fresh copy of the `main` branch first! To add a new feature, check out a new branch from the `main` branch, make changes there, and push the new branch upstream to open a PR. PRs should result in a **squash commit** in the `main` branch. It is recommended to code responsibly and ask someone to review your code. 
+
+Make sure any new dependencies are handled by `poetry`.You should be tracking and pushing both `poetry.lock` and `pyproject.toml` files. 
+There is no need to manually add dependencies to the `pyproject.toml` file. Instead, use `poetry` commands:
+
+```shell
+# add pandas as a main dependency
+poetry add pandas -G main 
+
+# add a specific version of ipykernel as a dev dependency
+poetry add ipykernel@6.29.4 -G dev
+```
 
 #### Sources & Citations
 - GADM world data | `Database/data/gadm_world.csv`
