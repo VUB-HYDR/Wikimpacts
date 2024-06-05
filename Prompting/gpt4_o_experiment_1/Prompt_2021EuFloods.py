@@ -2,7 +2,7 @@ import json
 import time
 
 # This file is only to share the prompts
-_Wiki_text = ""
+Wiki_text = ""
 
 # Initialize an empty list to store execution times
 execution_times = []
