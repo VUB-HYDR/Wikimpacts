@@ -28,8 +28,6 @@ git lfs install
 
 ### Quickstart
 
-If you have new events to add to the database, first parse them and insert them.
-
 #### Parsing and evaluation pipeline
 
 If you have generated some LLM output and would like to test it against the dev and test gold sets, here is a list of command to enable you to experiment with this yourself.
@@ -58,7 +56,7 @@ If you have generated some LLM output and would like to test it against the dev 
 > ```
 
 2. Once all system output files are merged into a single JSON file (**or if this was already the case, such as with GPT4 output**), you can parse them so they are ready to be evaluated. 
-    The parsing script (`Database/parse_events.py`)[Database/parse_events.py] will normalize numbers (to min and max) and locations (using OpenStreetMap) and output a JSON file. 
+    The parsing script [`Database/parse_events.py`](Database/parse_events.py) will normalize numbers (to min and max) and locations (using OpenStreetMap) and output a JSON file. 
 
     ```shell
 
@@ -84,12 +82,12 @@ If you have generated some LLM output and would like to test it against the dev 
 3. Evaluate against the dev and test sets 
 
 ##### (A) Choose your config and columns
-The python dictionary in <a href="Evaluation/weights.py"><code>weights.py</code></a> contains different weight configs.For example, the experiments nlp4climate weighs all the column types equally but excludes the "Event_Name" from evaluation.
-    
+The python dictionary in <a href="Evaluation/weights.py"><code>weights.py</code></a> contains different weight configs. For example, the experiments nlp4climate weighs all the column types equally but excludes the "Event_Name" from evaluation.
+
 Also, this config will result in evaluating only on this smaller set of columns, so this list also functions as a set of columns that will be included in the evaluation script for this experiment.
 
 > [!NOTE]
-> if any of these columns are not found in your gold file, they will be ignored
+> If any of these columns are not found in your gold file, they will be ignored
 
 ```python
     "weights" = {
@@ -129,6 +127,8 @@ poetry run python3 Evaluation/evaluator.py --sys-file  Database/output/nlp4clima
 ```
 
 #### Parsing and normalization
+
+If you have new events to add to the database, first parse them and insert them.
 
 - To parse events (and normalize their values) from a json file with the right schema (adding schema validation soon), run:
 
