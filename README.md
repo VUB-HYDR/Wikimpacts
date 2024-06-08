@@ -47,17 +47,15 @@ If you have generated some LLM output and would like to test it against the dev 
     ```
 
 
-    > [!WARNING]  
-    > Your raw system output files should always land in the [`Database/raw/<EXPERIMENT_NAME>`] directory!
+> [!WARNING]  
+> Your raw system output files should always land in the [`Database/raw/<EXPERIMENT_NAME>`] directory!
 
-
-    > [!TIP]
-    >     💡 JSON files can be formatted easily with pre-commit:
-
-    > ```shell
-    > pre-commit run --files Database/raw/<EXPERIMENT_NAME>/> <JSON_FILE_THAT_NEEDS_FORMATTING>
-    > ```
-
+> [!TIP]
+>     💡 JSON files can be formatted easily with pre-commit:
+> 
+> ```shell
+> pre-commit run --files Database/raw/<EXPERIMENT_NAME>/> <JSON_FILE_THAT_NEEDS_FORMATTING>
+> ```
 
 2. Once all system output files are merged into a single JSON file (**or if this was already the case, such as with GPT4 output**), you can parse them so they are ready to be evaluated. 
     The parsing script (`Database/parse_events.py`)[Database/parse_events.py] will normalize numbers (to min and max) and locations (using OpenStreetMap) and output a JSON file. 
