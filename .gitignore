@@ -9,6 +9,9 @@ results
 # ignore excel files
 **.xlsx
 
+# ... except for this excel file (gold flat-format annotation table)
+!Database/gold/ImpactDB_DataTable_Validation.xlsx
+
 # ignore pycache
 **/__pycache__
 
