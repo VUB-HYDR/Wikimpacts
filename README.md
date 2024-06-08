@@ -51,7 +51,7 @@ If you have generated some LLM output and would like to test it against the dev 
 > Your raw system output files should always land in the [`Database/raw/<EXPERIMENT_NAME>`] directory!
 
 > [!TIP]
->     💡 JSON files can be formatted easily with pre-commit:
+>  JSON files can be formatted easily with pre-commit:
 > 
 > ```shell
 > pre-commit run --files Database/raw/<EXPERIMENT_NAME>/> <JSON_FILE_THAT_NEEDS_FORMATTING>
@@ -77,7 +77,8 @@ If you have generated some LLM output and would like to test it against the dev 
         --location_column "Locations" 
     ```
 
-    :warning: Normalizing countries will go slow the first time. This is because we are using a free API (currently!). However, each time this script is run locally, geopy will cache the results, meaning that it will go faster the next time you run it on your local branch. Allow for 15-20 minutes the first time. 
+> [!WARNING]
+> Normalizing countries will go slow the first time. This is because we are using a free API (currently!). However, each time this script is run locally, geopy will cache the results, meaning that it will go faster the next time you run it on your local branch. Allow for 15-20 minutes the first time. 
 
 
 3. Evaluate against the dev and test sets 
@@ -88,7 +89,8 @@ If you have generated some LLM output and would like to test it against the dev 
     
     Also, this config will result in evaluating only on this smaller set of columns, so this list also functions as a set of columns that will be included in the evaluation script for this experiment.
 
-    💡 if any of these columns are not found in your gold file, they will be ignored
+> [!NOTE]
+> if any of these columns are not found in your gold file, they will be ignored
 
      ```python
     "weights" = {
@@ -201,7 +203,8 @@ poetry add ipykernel@6.29.4 -G dev
 Start an Issue on GitHub if you find a bug in the code or have suggestions for a feature you need. 
 If you run into an error or problem, please include the error trace or logs! :D 
 
-💡 [Github Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
+> [!TIP]
+> [Github Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
 #### Sources & Citations
 - GADM world data | `Database/data/gadm_world.csv`
