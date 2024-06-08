@@ -84,15 +84,16 @@ If you have generated some LLM output and would like to test it against the dev 
 3. Evaluate against the dev and test sets 
 
     <ol type="A">
-    <li>First, choose your weights and columns in [`weights.py`](Evaluation/weights.py)
-    The python dictionary in [`weights.py`](Evaluation/weights.py) contains different weight configs.For example, the experiments nlp4climate weighs all the column types equally but excludes the "Event_Name" from evaluation.
+    <li>First, choose your weights and columns in 
+    <a href="Evaluation/weights.py"><code>weights.py</code></a>
+    The python dictionary in <a href="Evaluation/weights.py"><code>weights.py</code></a> contains different weight configs.For example, the experiments nlp4climate weighs all the column types equally but excludes the "Event_Name" from evaluation.
     
     Also, this config will result in evaluating only on this smaller set of columns, so this list also functions as a set of columns that will be included in the evaluation script for this experiment.
 
 > [!NOTE]
 > if any of these columns are not found in your gold file, they will be ignored
 
-     ```python
+```python
     "weights" = {
         "nlp4climate": {
             "Event_ID": 1,
@@ -113,11 +114,11 @@ If you have generated some LLM output and would like to test it against the dev 
             
         },
     }
-    ```
-
+```
     </li>
 
-    <li>When your config is ready, run the evaluation script:
+    <li>
+    When your config is ready, run the evaluation script:
 
     ```shell
     poetry run python3 Evaluation/evaluator.py --sys-file  Database/output/<EXPERIMENT_NAME>/dev/<EXPERIMENT.PARQUET> --gold-file Database/gold/<EXPERIMENT_GOLD.PARQUET> --model-name "<EXPERIMENT_NAME>/<DATA_SPLIT>" --null-penalty 1 --score all --weights_config <EXPERIMENT_NAME>
