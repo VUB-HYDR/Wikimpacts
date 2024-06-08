@@ -91,42 +91,42 @@ Also, this config will result in evaluating only on this smaller set of columns,
 > [!NOTE]
 > if any of these columns are not found in your gold file, they will be ignored
 
-    ```python
-        "weights" = {
-            "nlp4climate": {
-                "Event_ID": 1,
-                "Main_Event": 1,
-                "Event_Name": 0,
-                "Total_Deaths_Min": 1,
-                "Total_Deaths_Max": 1,
-                "Total_Damage_Min": 1,
-                "Total_Damage_Max": 1,
-                "Total_Damage_Units": 1,
-                "Start_Date_Day": 1,
-                "Start_Date_Month": 1,
-                "Start_Date_Year": 1,
-                "End_Date_Day": 1,
-                "End_Date_Month": 1,
-                "End_Date_Year": 1,
-                "Country_Norm": 1,
-                
-            },
-        }
-    ```
+```python
+    "weights" = {
+        "nlp4climate": {
+            "Event_ID": 1,
+            "Main_Event": 1,
+            "Event_Name": 0,
+            "Total_Deaths_Min": 1,
+            "Total_Deaths_Max": 1,
+            "Total_Damage_Min": 1,
+            "Total_Damage_Max": 1,
+            "Total_Damage_Units": 1,
+            "Start_Date_Day": 1,
+            "Start_Date_Month": 1,
+            "Start_Date_Year": 1,
+            "End_Date_Day": 1,
+            "End_Date_Month": 1,
+            "End_Date_Year": 1,
+            "Country_Norm": 1,
+            
+        },
+    }
+```
  
 
 ##### (B) Evaluate
  When your config is ready, run the evaluation script:
 
-    ```shell
-    poetry run python3 Evaluation/evaluator.py --sys-file  Database/output/<EXPERIMENT_NAME>/dev/<EXPERIMENT.PARQUET> --gold-file Database/gold/<EXPERIMENT_GOLD.PARQUET> --model-name "<EXPERIMENT_NAME>/<DATA_SPLIT>" --null-penalty 1 --score all --weights_config <EXPERIMENT_NAME>
-    ```
+```shell
+poetry run python3 Evaluation/evaluator.py --sys-file  Database/output/<EXPERIMENT_NAME>/dev/<EXPERIMENT.PARQUET> --gold-file Database/gold/<EXPERIMENT_GOLD.PARQUET> --model-name "<EXPERIMENT_NAME>/<DATA_SPLIT>" --null-penalty 1 --score all --weights_config <EXPERIMENT_NAME>
+```
     
 For example, the script below runs the evaluation on the output from mixtral-8x7b-insctruct agains the dev set gold file, and saves the results in `Database/evaluation_results/example/dev`:
 
-    ```shell
-    poetry run python3 Evaluation/evaluator.py --sys-file  Database/output/nlp4climate/dev/mixtral-8x7b-instruct-source.parquet --gold-file Database/gold/gold_dev_20240515.parquet --model-name "example/dev" --null-penalty 1 --score all --weights_config nlp4climate
-    ```
+```shell
+poetry run python3 Evaluation/evaluator.py --sys-file  Database/output/nlp4climate/dev/mixtral-8x7b-instruct-source.parquet --gold-file Database/gold/gold_dev_20240515.parquet --model-name "example/dev" --null-penalty 1 --score all --weights_config nlp4climate
+```
 
 #### Parsing and normalization
 
