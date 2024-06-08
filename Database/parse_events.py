@@ -426,8 +426,8 @@ if __name__ == "__main__":
                 axis=1,
             )
 
-            # if location and country are identical in subevents, generalize country normalization
             def normalize_location_rows_if_country(row):
+            # if location and country are identical in subevents, generalize country normalization
                 if row[f"Location_{location_col}"] == row[args.country_column]:
                     for i in ["Norm", "Type", "GeoJson", "GID"]:
                         row[f"Location_{location_col}_{i}"] = row[f"Country_{i}"]
@@ -464,8 +464,8 @@ if __name__ == "__main__":
 
             logger.info(f"Storing parsed results for sunbvent {col}")
 
-            for col in sub_event.columns:
-                sub_event[col] = sub_event[col].astype(str)
+            for c in sub_event.columns:
+                sub_event[c] = sub_event[c].astype(str)
 
             sub_event.to_parquet(f"{args.output_dir}/{col}.parquet", engine="fastparquet")
 
