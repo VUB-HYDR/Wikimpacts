@@ -1,5 +1,5 @@
 import argparse
-
+import pathlib
 from scr.normalize_utils import Logging, NormalizeJsonOutput
 
 if __name__ == "__main__":
@@ -33,6 +33,10 @@ if __name__ == "__main__":
     args = parser.parse_args()
     logger.info(args)
 
+    logger.info(f"Creating {args.output_dir} if it does not exist!")
+    pathlib.Path(args.output_dir).mkdir(parents=True, exist_ok=True) 
+
     json_utils = NormalizeJsonOutput()
     dfs = json_utils.merge_json(args.input_dir)
-    json_utils.save_json(dfs, model_name=args.model_name, output_dir=args.output_dir)
+    filename = json_utils.save_json(dfs, model_name=args.model_name, output_dir=args.output_dir)
+    logger.info(f"JSON files merged and normalzied. Find the file in {filename}")
