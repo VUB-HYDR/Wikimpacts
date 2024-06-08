@@ -1,3 +1,4 @@
+import pathlib
 import argparse
 import re
 
@@ -122,7 +123,7 @@ if __name__ == "__main__":
 
     parser.add_argument(
         "-i",
-        "--input_file",
+        "--input-file",
         dest="input_file",
         help="The path to the excel file",
         type=str,
@@ -130,7 +131,7 @@ if __name__ == "__main__":
 
     parser.add_argument(
         "-s",
-        "--sheet_name",
+        "--sheet-name",
         dest="sheet_name",
         help="The name of the target sheet in the excel file",
         type=str,
@@ -138,13 +139,16 @@ if __name__ == "__main__":
 
     parser.add_argument(
         "-o",
-        "--output_dir",
+        "--output-dir",
         dest="output_dir",
         help="A dir to output main and specific impact events",
         type=str,
     )
 
     args = parser.parse_args()
+
+    logger.info(f"Creating {args.output_dir} if it does not exist!")
+    pathlib.Path(args.output_dir).mkdir(parents=True, exist_ok=True)
 
     logger.info("Loading excel file...")
     data_table = pd.read_excel(args.input_file, sheet_name=args.sheet_name, engine="openpyxl", na_filter=False)
