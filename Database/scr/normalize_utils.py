@@ -130,13 +130,15 @@ class NormalizeUtils:
                     return ast.literal_eval(x)
                 else:
                     return x
-            elif isinstance(x, list) or isinstance(x, dict):
+            elif isinstance(x, list) or isinstance(x, dict) or x == None or x == float("nan"):
                 return x
             else:
                 raise BaseException
         except BaseException as err:
-            self.logger.error(f"Literal Eval Error for {x} of type {type(x)}.\nError message: {err}")
-            return x
+            self.logger.debug(
+                f"Literal Eval Error for {x} of type {type(x)}.\nError trace: {err}. Returning {None} of type {type(None)}"
+            )
+            return None
 
     @staticmethod
     def simple_country_check(c: str):
@@ -246,22 +248,23 @@ class NormalizeJsonOutput:
                 if country_col:
                     try:
                         if len(json_file[country_col]) >= 1 and isinstance(json_file[country_col][0], str):
-                            json_file["Country_Merge"] = json_file[country_col]
+                            json_file["Country"] = json_file[country_col]
                         elif len(json_file[country_col]) >= 1 and isinstance(json_file[country_col], list):
                             if isinstance(json_file[country_col][0], dict) and (
                                 "Country" in json_file[country_col][0] or "country" in json_file[country_col][0]
                             ):
-                                json_file["Country_Merge"] = [d["Country"] for d in json_file[country_col]]
+                                json_file["Country"] = [d["Country"] for d in json_file[country_col]]
                             elif isinstance(json_file[country_col][0], dict) and (
                                 "Country" not in json_file[country_col][0]
                                 and "country" not in json_file[country_col][0]
                             ):
-                                json_file["Country_Merge"] = list(json_file[country_col].keys())
+                                json_file["Country"] = list(json_file[country_col].keys())
                     except:
-                        json_file["Country_Merge"] = []
+                        json_file["Country"] = []
 
                 # todo: normalize location column in a similar way to country (probably?) when we start parsing locations
-
+                # todo: normalize "n/a" as NULL
+                # todo: normalize "Nationwide" for Location to be the same for Country column
                 # normalize dates
                 json_file["Event_Name"] = file_list[idx].split(".json")[0]
                 if "Start_Date" in json_file.keys():
@@ -296,7 +299,7 @@ class NormalizeJsonOutput:
             "Start_Date",
             "End_Date",
             "Time_with_Annotation",
-            "Country_Merge",
+            "Country",
             "Countries_Affected",
             "Country_with_Annotation",
             "Total_Summary_Death",
@@ -307,14 +310,15 @@ class NormalizeJsonOutput:
             "Total_Damage_Inflation_Adjusted",
             "Total_Damage_Inflation_Adjusted_Year",
         ],
-    ) -> None:
+    ) -> str:
         """
         Takes a list of dataframes, merges it into a single file, and stores file in output_dir with the correct set and model names
         """
-
-        model_output = pd.DataFrame(dfs, columns=columns)
-
+        captured_columns = set([x for xs in [df.columns for df in dfs] for x in xs])
+        model_output = pd.DataFrame(dfs, columns=[c for c in columns if c in captured_columns])
+        filename = f"{output_dir}/{model_name}.json"
         model_output.to_json(
-            f"{output_dir}/{model_name}.json",
+            filename,
             orient="records",
         )
+        return filename
