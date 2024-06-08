@@ -83,63 +83,50 @@ If you have generated some LLM output and would like to test it against the dev 
 
 3. Evaluate against the dev and test sets 
 
-    <ol type="A">
-    <li>First, choose your weights and columns in 
-    <a href="Evaluation/weights.py"><code>weights.py</code></a>
-    The python dictionary in <a href="Evaluation/weights.py"><code>weights.py</code></a> contains different weight configs.For example, the experiments nlp4climate weighs all the column types equally but excludes the "Event_Name" from evaluation.
+##### (A) Choose your config and columns
+The python dictionary in <a href="Evaluation/weights.py"><code>weights.py</code></a> contains different weight configs.For example, the experiments nlp4climate weighs all the column types equally but excludes the "Event_Name" from evaluation.
     
-    Also, this config will result in evaluating only on this smaller set of columns, so this list also functions as a set of columns that will be included in the evaluation script for this experiment.
+Also, this config will result in evaluating only on this smaller set of columns, so this list also functions as a set of columns that will be included in the evaluation script for this experiment.
 
 > [!NOTE]
 > if any of these columns are not found in your gold file, they will be ignored
 
-```python
-    "weights" = {
-        "nlp4climate": {
-            "Event_ID": 1,
-            "Main_Event": 1,
-            "Event_Name": 0,
-            "Total_Deaths_Min": 1,
-            "Total_Deaths_Max": 1,
-            "Total_Damage_Min": 1,
-            "Total_Damage_Max": 1,
-            "Total_Damage_Units": 1,
-            "Start_Date_Day": 1,
-            "Start_Date_Month": 1,
-            "Start_Date_Year": 1,
-            "End_Date_Day": 1,
-            "End_Date_Month": 1,
-            "End_Date_Year": 1,
-            "Country_Norm": 1,
-            
-        },
-    }
-```
-    </li>
+    ```python
+        "weights" = {
+            "nlp4climate": {
+                "Event_ID": 1,
+                "Main_Event": 1,
+                "Event_Name": 0,
+                "Total_Deaths_Min": 1,
+                "Total_Deaths_Max": 1,
+                "Total_Damage_Min": 1,
+                "Total_Damage_Max": 1,
+                "Total_Damage_Units": 1,
+                "Start_Date_Day": 1,
+                "Start_Date_Month": 1,
+                "Start_Date_Year": 1,
+                "End_Date_Day": 1,
+                "End_Date_Month": 1,
+                "End_Date_Year": 1,
+                "Country_Norm": 1,
+                
+            },
+        }
+    ```
+ 
 
-    <li>
-    When your config is ready, run the evaluation script:
+##### (B) Evaluate
+ When your config is ready, run the evaluation script:
 
     ```shell
     poetry run python3 Evaluation/evaluator.py --sys-file  Database/output/<EXPERIMENT_NAME>/dev/<EXPERIMENT.PARQUET> --gold-file Database/gold/<EXPERIMENT_GOLD.PARQUET> --model-name "<EXPERIMENT_NAME>/<DATA_SPLIT>" --null-penalty 1 --score all --weights_config <EXPERIMENT_NAME>
     ```
     
-    For example, the script below runs the evaluation on the output from mixtral-8x7b-insctruct agains the dev set gold file, and saves the results in `Database/evaluation_results/example/dev`:
+For example, the script below runs the evaluation on the output from mixtral-8x7b-insctruct agains the dev set gold file, and saves the results in `Database/evaluation_results/example/dev`:
 
     ```shell
     poetry run python3 Evaluation/evaluator.py --sys-file  Database/output/nlp4climate/dev/mixtral-8x7b-instruct-source.parquet --gold-file Database/gold/gold_dev_20240515.parquet --model-name "example/dev" --null-penalty 1 --score all --weights_config nlp4climate
-
     ```
-
-    </li>
-
-    </ol>
-
-    
-
-    
-
-            
 
 #### Parsing and normalization
 
