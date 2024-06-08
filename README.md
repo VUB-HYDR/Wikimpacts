@@ -180,9 +180,11 @@ If you have new events to add to the database, first parse them and insert them.
 1. Download the latest copy of the excel sheet (write one of the contributors of the repository if you do not have the link)
 2. Choose the correct excel sheet and run the script:
 
-```
+```shell
 # Change DDMMYYY to the datestamp of the excel sheet to parse
-poetry run python3 Database/gold_from_excel.py --input-file "Database/gold/ImpactDB_DataTable_Validation.xlsx"  --sheet-name ImpactDB_manual_copy_<DDMMYYY>  --output-dir Database/gold/gold_from_excel
+poetry run python3 Database/gold_from_excel.py --input-file "Database/gold/ImpactDB_DataTable_Validation.xlsx" \
+--sheet-name ImpactDB_manual_copy_MDMMYYY  \
+--output-dir Database/gold/gold_from_excel
 ```
 
 These results are not split to test/dev.
