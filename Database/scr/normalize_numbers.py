@@ -22,7 +22,8 @@ class NormalizeNumber:
         text = regex.split(r"(?:[A-Z]{3})(\d+)|(\d+)(?:[A-Z]{3})", text)
         return " ".join(t for t in text if t)
 
-    def _extract_single_number(self, text: str) -> List[float]:
+    def _extract_single_number(self, text: str) -> List[float] | BaseException:
+        number = None
         if text.lower().strip() in ["none", "none reported", "none reported"]:
             return [0]
         try:
@@ -65,10 +66,13 @@ class NormalizeNumber:
                                         return [self.atof(numbers[0]) * text2num(numbers[1], lang="en", relaxed=True)]
                                     except BaseException:
                                         raise BaseException
-
+        try:
+            assert number is not None
+        except:
+            raise BaseException()
         return [number]
 
-    def _extract_numbers_from_tokens(self, doc: spacy.tokens.doc.Doc) -> List[float]:
+    def _extract_numbers_from_tokens(self, doc: spacy.tokens.doc.Doc) -> List[float] | BaseException:
         numbers = []
         tmp_num = ""
         num_ranges = []
@@ -171,6 +175,12 @@ class NormalizeNumber:
             self.atof(doc.text)
             return 0
         except:
+    
+            # check for common keywords
+            keywords = ["over", "under", "approxinately", "nearly", "fewer than", "greater than", "more than", "less than"]
+            if any([k in doc.text for k in keywords]):
+                return 1
+            
             # check for common POS tag combinations (example: "About 200 people" -> "RB CD NNS")
             # check for any math symbols (>=, ~, etc) or if a number ends with a plus/plus-minus sign
             if any([x in tags for x in ["NFP", "IN JJS CD", "RB CD NNS", "IN CD NNS", ":"]]) or regex.findall(
@@ -192,17 +202,26 @@ class NormalizeNumber:
             # check if there are no entities in the specified labels
             elif not doc.ents or (len(set(ent_labels).intersection(labels)) != 0):
                 return 0
-
+    
             return 0
 
     def _extract_range(self, text: str) -> Tuple[float]:
-        text = self._normalize_num(self.nlp(text), to_word=False)
-        nums = text.split("-")
-        if len(nums) == 2:
-            try:
-                return (self.atof(nums[0]), self.atof(nums[1]))
-            except:
-                return None
+        try:
+            nums = text.split("-")
+            if len(nums) == 2:
+                try:
+                    return (self.atof(nums[0]), self.atof(nums[1]))
+                except:
+                    return None
+        except:
+            # try again but first normalize the number first
+            text = self._normalize_num(self.nlp(text), to_word=False)
+            nums = text.split("-")
+            if len(nums) == 2:
+                try:
+                    return (self.atof(nums[0]), self.atof(nums[1]))
+                except:
+                    return None
 
     def _extract_approximate_quantifiers(self, text: str) -> Tuple[float]:
         scales = {"tens of": 10, "hundreds of": 100, "thousands of": 1000, "millions of": 1000000}
