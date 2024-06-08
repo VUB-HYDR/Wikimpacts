@@ -117,39 +117,7 @@ for i in ["Insured_Damage", "Damage"]:
 
 convert_to_float = ["Event_ID"]
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    logger = Logging.get_logger("import gold data from excel")
-
-    parser.add_argument(
-        "-i",
-        "--input-file",
-        dest="input_file",
-        help="The path to the excel file",
-        type=str,
-    )
-
-    parser.add_argument(
-        "-s",
-        "--sheet-name",
-        dest="sheet_name",
-        help="The name of the target sheet in the excel file",
-        type=str,
-    )
-
-    parser.add_argument(
-        "-o",
-        "--output-dir",
-        dest="output_dir",
-        help="A dir to output main and specific impact events",
-        type=str,
-    )
-
-    args = parser.parse_args()
-
-    logger.info(f"Creating {args.output_dir} if it does not exist!")
-    pathlib.Path(args.output_dir).mkdir(parents=True, exist_ok=True)
-
+def flatten_data_table():
     logger.info("Loading excel file...")
     data_table = pd.read_excel(args.input_file, sheet_name=args.sheet_name, engine="openpyxl", na_filter=False)
     logger.info(f"Shape: {data_table.shape}")
@@ -232,9 +200,6 @@ if __name__ == "__main__":
     data_table["main"] = data_table.Event_ID.apply(lambda x: float(x).is_integer())
     data_table["main"].value_counts()
 
-    # data_table.replace({None: np.nan}, inplace=True)
-    # data_table = data_table.replace({np.nan: None})
-
     logger.info("Storing Main Events table")
     Events = data_table[data_table["main"] == True][target_columns]
     Events.to_parquet(
@@ -271,3 +236,39 @@ if __name__ == "__main__":
         if "_target_columns" not in name:
             logger.info(f"Storing {name} table")
             df.to_parquet(f"{args.output_dir}/{name}.parquet", engine="fastparquet")
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    logger = Logging.get_logger("import gold data from excel")
+
+    parser.add_argument(
+        "-i",
+        "--input-file",
+        dest="input_file",
+        help="The path to the excel file",
+        type=str,
+    )
+
+    parser.add_argument(
+        "-s",
+        "--sheet-name",
+        dest="sheet_name",
+        help="The name of the target sheet in the excel file",
+        type=str,
+    )
+
+    parser.add_argument(
+        "-o",
+        "--output-dir",
+        dest="output_dir",
+        help="A dir to output main and specific impact events",
+        type=str,
+    )
+
+    args = parser.parse_args()
+
+    logger.info(f"Creating {args.output_dir} if it does not exist!")
+    pathlib.Path(args.output_dir).mkdir(parents=True, exist_ok=True)
+
+    flatten_data_table()
