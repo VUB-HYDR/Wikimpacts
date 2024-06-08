@@ -1,0 +1,105 @@
+from Database.scr.normalize_utils import NormalizeUtils
+from Database.scr.normalize_numbers import NormalizeNumber
+import pytest
+import logging
+
+
+def refresh_fixture():
+    utils = NormalizeUtils()
+    nlp = utils.load_spacy_model("en_core_web_trf")
+    norm = NormalizeNumber(nlp, locale_config="en_US.UTF-8")
+    return nlp, norm
+
+
+class TestNormalizeNumbers:
+    @pytest.mark.parametrize(
+        "test_input, expected",
+        [
+            ("EUR19", "19"),
+            ("$355 million", "$ 355 million"),
+            ("£23 billion", "£ 23 billion"),
+        ],
+    )
+    def test__preprocess(self, test_input, expected):
+        _, norm = refresh_fixture()
+        assert norm._preprocess(test_input) == expected
+
+    @pytest.mark.parametrize(
+        "test_input, expected",
+        [
+            ("19", [19]),
+            ("$ 355 million", [355000000]),
+            ("£ 23 billion", [23000000000]),
+            ("23 were killed", [23]),
+            ("100 thousand", [100000]),
+            ("one hundred", [100]),
+            # cases meant to fail
+            ("23 were injured and 11 are missing", None),
+        ],
+    )
+    def test__extract_single_number(self, test_input, expected):
+        _, norm = refresh_fixture()
+        if isinstance(expected, list) and len(expected) == 1:
+            assert norm._extract_single_number(test_input) == expected
+        else:
+            with pytest.raises(BaseException):
+                norm._extract_single_number(test_input)
+
+    @pytest.mark.parametrize(
+        "test_input, expected",
+        [
+            ("23 were injured and 11 are missing", [23, 11]),
+            ("115 are still missing", [115]),
+            ("Losses between $11 million and $12 million", None),
+        ],
+    )
+    def test__extract_numbers_from_tokens(self, test_input, expected):
+        nlp, norm = refresh_fixture()
+
+        if isinstance(expected, list):
+            assert norm._extract_numbers_from_tokens(nlp(test_input)) == expected
+        else:
+            with pytest.raises(BaseException):
+                norm._extract_numbers_from_tokens(nlp(test_input))
+
+    @pytest.mark.parametrize(
+        "test_input, expected",
+        [(">=12", "12"), ("one hundred and ten", "one hundred ten")],
+    )
+    def test__normalize_num(self, test_input, expected):
+        nlp, norm = refresh_fixture()
+        assert norm._normalize_num(nlp(test_input)) == expected
+
+    @pytest.mark.parametrize(
+        "test_input, expected",
+        [(">=12", "twelve"), ("200 million", "two hundred million")],
+    )
+    def test__normalize_num_to_words(self, test_input, expected):
+        nlp, norm = refresh_fixture()
+        assert norm._normalize_num(nlp(test_input), to_word=True) == expected
+
+    @pytest.mark.parametrize(
+        "test_input, expected",
+        [
+            (">=12", 1),
+            ("200 million", 0),
+            ("exactly 200", 0),
+            ("more than 200", 1),
+            ("2,000", 0),
+        ],
+    )
+    def test__check_for_approximation(self, test_input, expected):
+        nlp, norm = refresh_fixture()
+        output = norm._check_for_approximation(
+            nlp(test_input), labels=["CARDINAL", "MONEY", "QUANTITY"]
+        )
+        assert output == expected
+
+    @pytest.mark.parametrize(
+        "test_input, expected",
+        [("110-352", (110, 352)), ("110 - 352", (110, 352))],
+    )
+    def test__extract_range(self, test_input, expected):
+        _, norm = refresh_fixture()
+        output = norm._extract_range(test_input)
+        assert output == expected

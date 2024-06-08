@@ -2,9 +2,10 @@
 name = "wikimpacts"
 version = "0.1.0"
 description = "Dependencies for parsing and normalizing environmental impact data"
-authors = ["shorouq.zahra@ri.se"]
+authors = ["Shorouq Zahra <shorouq.zahra@ri.se>"]
 readme = "README.md"
-package-mode = false
+package-mode = true
+packages = [{include = "Database/scr"}]
 
 [tool.poetry.dependencies]
 python = ">=3.8,<3.12"
@@ -27,6 +28,10 @@ pytest = "^8.2.2"
 ipykernel = "^6.29.3"
 openpyxl = "^3.1.2"
 numpy = "1.24"
+
+
+[tool.poetry.group.tests.dependencies]
+pytest = "^8.2.2"
 
 [build-system]
 requires = ["poetry-core"]
