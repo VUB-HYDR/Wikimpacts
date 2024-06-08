@@ -1,7 +1,8 @@
 import argparse
 import re
-
+import pathlib
 import pandas as pd
+
 from scr.normalize_locations import NormalizeLocation
 from scr.normalize_numbers import NormalizeNumber
 from scr.normalize_utils import Logging, NormalizeUtils
@@ -22,24 +23,20 @@ if __name__ == "__main__":
         "-f",
         "--filename",
         dest="filename",
-        # default="response_wiki_GPT4_20240327_eventNo_1_8_all_category.json",
-        default="response_wiki_GPT4_20240408_100events_validation.json",
-        help="The name of the json file in the <RAW_PATH> directory",
+        help="The name of the json file in the <raw_dir> directory",
         type=str,
     )
     parser.add_argument(
         "-r",
-        "--raw_path",
-        dest="raw_path",
-        default="Database/raw",
+        "--raw_dir",
+        dest="raw_dir",
         help="The directory containing raw json files to be parsed",
         type=str,
     )
     parser.add_argument(
         "-o",
-        "--output_path",
-        dest="output_path",
-        default="Database/output/dev",
+        "--output_dir",
+        dest="output_dir",
         help="The directory where the parsed events will land (as .parquet)",
         type=str,
     )
@@ -64,7 +61,7 @@ if __name__ == "__main__":
 
     parser.add_argument(
         "-con",
-        "--country-column",
+        "--country_column",
         dest="country_column",
         default="Country",
         help="Name of the column containing a list of countries",
@@ -73,7 +70,7 @@ if __name__ == "__main__":
 
     parser.add_argument(
         "-loc",
-        "--location-column",
+        "--location_column",
         dest="location_column",
         default="Location",
         help="Name of the column containing a list of countries",
@@ -82,6 +79,9 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     logger.info(f"Passed args: {args}")
+
+    logger.info(f"Creating {args.output_dir} if it does not exist!")
+    pathlib.Path(args.output_dir).mkdir(parents=True, exist_ok=True) 
 
     utils = NormalizeUtils()
     nlp = utils.load_spacy_model(args.spaCy_model_name)
@@ -93,10 +93,10 @@ if __name__ == "__main__":
         unsd_path="Database/data/UNSD — Methodology.csv",
     )
 
-    df = pd.read_json(f"{args.raw_path}/{args.filename}")
+    df = pd.read_json(f"{args.raw_dir}/{args.filename}")
     logger.info("JSON datafile loaded")
 
-    # add short uids for each event
+    # add short uids for each event if missing
     if "Event_ID" not in df.columns:
         logger.info("Event ids missing... generating random short uuids for col Event_ID")
         df["Event_ID"] = [utils.random_short_uuid() for _ in df.index]
@@ -111,9 +111,8 @@ if __name__ == "__main__":
     del df
 
     if args.event_type in ["main", "all"]:
-        # normalize dates
         if all([c in events.columns for c in ["Start_Date", "End_Date"]]):
-            logger.info("Normalizing dates")
+            logger.info("Normalizing dates for main events")
             start_dates = events.Start_Date.apply(utils.normalize_date)
             end_dates = events.End_Date.apply(utils.normalize_date)
 
@@ -127,9 +126,6 @@ if __name__ == "__main__":
             )
             events = pd.concat([events, start_date_cols, end_date_cols], axis=1)
 
-            # logger.info(f"Dropping columns with event year")
-            # events.dropna(subset=["Start_Date_Year", "End_Date_Year"], how="all", inplace=True)
-
             del start_dates, end_dates, start_date_cols, end_date_cols
 
         # normalize binary categories into booleans
@@ -138,43 +134,39 @@ if __name__ == "__main__":
             r"^(no)$|^(n)$|^(false)$", re.IGNORECASE | re.MULTILINE
         )
 
-        if "Total_Insured_Damage_Inflation_Adjusted" in events.columns:
-            events.Total_Insured_Damage_Inflation_Adjusted = events.Total_Insured_Damage_Inflation_Adjusted.replace(
+        for inflation_adjusted_col in [col for col in events.columns if col.endswith("_Inflation_Adjusted")]:
+            logger.info(f"Normalizing boolean column {inflation_adjusted_col}")
+            events[inflation_adjusted_col] = events[inflation_adjusted_col].replace(
                 {_no: False, _yes: True}, regex=True
-            )
+                )
 
-        if "Total_Damage_Inflation_Adjusted" in events.columns:
-            events.Total_Damage_Inflation_Adjusted = events.Total_Damage_Inflation_Adjusted.replace(
-                {_no: False, _yes: True}, regex=True
-            )
-        # clean out NaNs and Nulls
         logger.info("Normalizing nulls")
         events = utils.replace_nulls(events)
 
-        # get min, max, and approx numerals from relevant Total_* fields
         total_cols = [
             col
             for col in events.columns
             if col.startswith("Total_")
             and not col.endswith(("_with_annotation", "_Units", "_Year", "_Annotation", "_Adjusted"))
         ]
-        logger.info(
-            f"""Normalizing numbers to ranges and determining whether or
-                    not they are an approximate (min, max, approx). Columns: {total_cols}"""
-        )
 
-        for i in total_cols:
-            events[[f"{i}_Min", f"{i}_Max", f"{i}_Approx"]] = (
-                events[i]
-                .apply(lambda x: (norm_num.extract_numbers(x) if isinstance(x, str) else (None, None, None)))
-                .apply(pd.Series)
+        if total_cols:
+            logger.info(
+                f"""Normalizing numbers to ranges and determining whether or
+                        not they are an approximate (min, max, approx). Columns: {total_cols}"""
             )
-        # normalize Perils into a list
+
+            for i in total_cols:
+                events[[f"{i}_Min", f"{i}_Max", f"{i}_Approx"]] = (
+                    events[i]
+                    .apply(lambda x: (norm_num.extract_numbers(x) if isinstance(x, str) else (None, None, None)))
+                    .apply(pd.Series)
+                )
+
         if "Perils" in events.columns:
             logger.info("Normalizing Perils to list")
             events.Perils = events.Perils.apply(lambda x: x.split("|"))
 
-        # normalize location names
         if args.country_column in events.columns:
             logger.info("Ensuring that all country data is of type <list>")
 
@@ -211,8 +203,6 @@ if __name__ == "__main__":
             )
 
         if args.location_column in events.columns and args.country_column in events.columns:
-            # logger.info(f"Dropping columns with no country or sublocation")
-            # events.dropna(subset=["Location", "Country"], how="all", inplace=True)
 
             logger.info("Normalizing Locations")
             events["Location_Tmp"] = events["Location"].apply(
@@ -259,7 +249,6 @@ if __name__ == "__main__":
             events["Location_GID"] = events["Location_GID"].apply(
                 lambda locations: [l for l in locations if l != "COUNTRY"]
             )
-        # clean out NaNs and Nulls
         logger.info("Normalizing nulls")
         events = utils.replace_nulls(events)
 
@@ -293,14 +282,14 @@ if __name__ == "__main__":
             if col in events.columns:
                 events[col] = events[col].astype(str)
 
-        # drop "Countries_Affected" if present
-        if "Countries_Affected" in events.columns:
-            events.drop(columns=["Countries_Affected"], inplace=True)
-        # store as parquet and csv
+        for i in ["Countries_Affected"]:
+            if i in events.columns:
+                logger.info(f"Dropping unwanted column {i}")
+                events.drop(columns=[i], inplace=True)
+
         logger.info(f"Storing parsed results")
-        events_filename = f"{args.output_path}/{args.filename.split('.json')[0]}"
-        events.to_parquet(f"{events_filename}.parquet", engine="pyarrow")
-        events.to_csv(f"{events_filename}.csv")
+        events_filename = f"{args.output_dir}/{args.filename.split('.json')[0]}"
+        events.to_parquet(f"{events_filename}.parquet", engine="fastparquet")
 
     if args.event_type in ["sub", "all"]:
         # clean out NaNs and Nulls
@@ -308,60 +297,62 @@ if __name__ == "__main__":
 
         # parse subevents
         specific_summary_cols = [col for col in events if col.startswith("Specific_")]
-        logger.info(f"Parsing suevenets. Columns: {specific_summary_cols}")
+        logger.info(f"Parsing subevents. Columns: {specific_summary_cols}")
         specifc_summary_dfs = {}
 
         for col in specific_summary_cols:
-            # evaluate string bytes to dict
-            events[col] = events[col].astype(str)
+            # evaluate string bytes to python datatype (hopefully dict, str, or list)
             events[col] = events[col].apply(utils.eval)
 
             # unpack subevents
             sub_event = events[["Event_ID", col]].explode(col)
 
             # drop any events that have no subevents (aka [] exploded into NaN)
-            sub_event.dropna(inplace=True)
+            sub_event.dropna(how="all", inplace=True)
+
             sub_event = pd.concat([sub_event.Event_ID, sub_event[col].apply(pd.Series)], axis=1)
 
-            # clean out nulls
+            logger.info(f"Dropping any columns with non-str column names due to None types in the dicts {[c for c in sub_event.columns if not isinstance(c, str)]}")
+            sub_event = sub_event[[c for c in sub_event.columns if isinstance(c, str)]]
+            
             logger.info(f"Normalizing nulls for subevent {col}")
             sub_event = utils.replace_nulls(sub_event)
 
-            # get min, max, and approx nums from relevant Num_* & *Damage fields
             specific_total_cols = [
                 col
                 for col in sub_event.columns
                 if col.startswith("Num_")
-                or col.endswith("Damage")
+                or col.endswith("_Damage")
                 and "Date" not in col
                 and args.location_column not in col
             ]
-            logger.info(
-                f"""Normalizing numbers to ranges in subevent {col} and determining whether or not they are an approximate (min, max, approx). Columns: {specific_total_cols}"""
-            )
 
-            for i in specific_total_cols:
-                sub_event[[f"{i}_Min", f"{i}_Max", f"{i}_Approx"]] = (
-                    sub_event[i]
-                    .apply(lambda x: (norm_num.extract_numbers(x) if x is not None else (None, None, None)))
-                    .apply(pd.Series)
+            if specific_total_cols:
+                logger.info(
+                    f"""Normalizing numbers to ranges in subevent {col} and determining whether or not they are an approximate (min, max, approx). Columns: {specific_total_cols}"""
                 )
 
-            # clean out nulls after normalizing nums
+                for i in specific_total_cols:
+                    sub_event[[f"{i}_Min", f"{i}_Max", f"{i}_Approx"]] = (
+                        sub_event[i]
+                        .apply(lambda x: (norm_num.extract_numbers(str(x)) if x is not None else (None, None, None)))
+                        .apply(pd.Series)
+                    )
+
             logger.info(f"Normalizing nulls for subevent {col}")
             sub_event = utils.replace_nulls(sub_event)
 
             logger.info(f"Normalizing dates for subevet {col}")
-            start_date_col, end_date_col = [c for c in sub_event.columns if c.startswith("Start_Date_")], [
-                c for c in sub_event.columns if c.startswith("End_Date_")
+            start_date_col, end_date_col = [col for col in sub_event.columns if col.startswith("Start_Date_")], [
+                col for col in sub_event.columns if col.startswith("End_Date_")
             ]
             assert len(start_date_col) == len(end_date_col), "Check the start and end date columns"
             assert len(start_date_col) <= 1, "Check the start and end date columns, there might be too many"
 
             if start_date_col and end_date_col:
+                logger.info(f"Normalizing start and end date in columns {start_date_col} and {end_date_col}")
                 start_date_col, end_date_col = start_date_col[0], end_date_col[0]
 
-                # normalize start and end dates
                 start_dates = sub_event[start_date_col].apply(utils.normalize_date)
                 end_dates = sub_event[end_date_col].apply(utils.normalize_date)
                 start_date_cols = pd.DataFrame(
@@ -383,7 +374,6 @@ if __name__ == "__main__":
                 sub_event.reset_index(inplace=True, drop=True)
                 sub_event = pd.concat([sub_event, start_date_cols, end_date_cols], axis=1)
 
-            # normalize location names
             location_col = col.split("Specific_Instance_Per_Country_")[-1]
 
             logger.info(f"Normalizing country names for subevent {col}")
@@ -398,9 +388,11 @@ if __name__ == "__main__":
             sub_event["Country_GID"] = sub_event["Country_Norm"].apply(
                 lambda country: (norm_loc.get_gadm_gid(country=country) if country else None)
             )
-            # logger.info(f"Dropping columns with no locations for subevent {col}")
-            # sub_event.dropna(subset=[f"Location_{location_col}"], how="all", inplace=True)
 
+            '''
+            logger.info(f"Dropping columns with no locations for subevent {col}")
+            sub_event.dropna(subset=[f"Location_{location_col}"], how="all", inplace=True)
+            '''
             logger.info(f"Normalizing location names for subevent {col}")
             sub_event[
                 [
@@ -434,8 +426,8 @@ if __name__ == "__main__":
                 axis=1,
             )
 
-            # if location and country are identical in subevents, generalize country normalization
             def normalize_location_rows_if_country(row):
+            # if location and country are identical in subevents, generalize country normalization
                 if row[f"Location_{location_col}"] == row[args.country_column]:
                     for i in ["Norm", "Type", "GeoJson", "GID"]:
                         row[f"Location_{location_col}_{i}"] = row[f"Country_{i}"]
@@ -470,9 +462,11 @@ if __name__ == "__main__":
             if "Death_with_annotation" in sub_event.columns:
                 sub_event["Death_with_annotation"] = sub_event["Death_with_annotation"].astype(str)
 
-            # store as parquet and csv
             logger.info(f"Storing parsed results for sunbvent {col}")
-            sub_event.to_csv(f"{args.output_path}/{col}.csv")
-            sub_event.to_parquet(f"{args.output_path}/{col}.parquet")
+
+            for c in sub_event.columns:
+                sub_event[c] = sub_event[c].astype(str)
+
+            sub_event.to_parquet(f"{args.output_dir}/{col}.parquet", engine="fastparquet")
 
     norm_loc.uninstall_cache()
