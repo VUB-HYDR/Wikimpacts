@@ -37,4 +37,4 @@ jobs:
           poetry install --no-interaction
       - name: Run tests
         run: |
-          poetry run pytest -ra -s -o log_cli=true Database/tests
+          poetry run pytest -ra -s Database/tests
