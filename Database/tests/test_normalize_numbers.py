@@ -21,7 +21,6 @@ class TestNormalizeNumbers:
     )
     def test__preprocess(self, test_input, expected):
         _, norm = refresh_fixture()
-        print(norm._preprocess(test_input), type(norm._preprocess(test_input)))
         assert norm._preprocess(test_input) == expected
 
     @pytest.mark.parametrize(
