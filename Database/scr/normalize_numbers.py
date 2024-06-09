@@ -1,3 +1,4 @@
+from math import isnan
 from typing import Dict, List, Tuple, Union
 
 import regex
@@ -325,9 +326,12 @@ class NormalizeNumber:
 
     def extract_numbers(
         self,
-        text: str,
+        text: Union[str, float, int],
         labels: List[str] = ["CARDINAL", "MONEY", "QUANTITY"],
     ) -> Tuple[Union[float, None], Union[float, None], Union[bool, None]]:
+        if (isinstance(text, float) and not isnan(text)) or isinstance(text, int):
+            return (text, text, 0)
+
         text = self._preprocess(text)
         doc = self.nlp(text.strip())
         approx = self._check_for_approximation(doc, labels)

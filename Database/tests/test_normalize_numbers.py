@@ -142,6 +142,12 @@ class TestNormalizeNumbers:
             ("between 11 and 17 people were affected", (11, 17, 1)),
             ("Nearly 300 homes were destroyed", (300, 300, 1)),
             ("Nearly 300 homes were destroyed", (300, 300, 1)),
+            ("$3.6 million", (3600000, 3600000, 0)),
+            ("$3.6 million", (3600000, 3600000, 0)),
+            ("Damage: At least $129 million", (129000000, 129000000, 1)),
+            ("At least 73", (73, 73, 1)),
+            ("925000000", (925000000, 925000000, 0)),
+            (925000000, (925000000, 925000000, 0)),
         ],
     )
     def test_extract_numbers(self, test_input, expected):
