@@ -46,7 +46,7 @@ class NormalizeNumber:
         style_1_match_any = f"({'|'.join(lookup['style_1'].keys())}){{1}}"
         text = regex.sub(
             (r"(\d+){pattern}($|\s)".format(pattern=style_1_match_any)),
-            lambda ele: f"{ele[1]} {lookup['style_1'][ele[2].lower()]}",
+            lambda ele: f"{ele[1]} {lookup['style_1'][ele[2].lower()]} ",
             text,
             flags=regex.IGNORECASE,
         ).strip()
@@ -62,13 +62,13 @@ class NormalizeNumber:
                     f" {ele[0]} " if ele[0] not in lookup["style_2"].keys() else f' {lookup["style_2"][ele[0]]} '
                 ),
                 text,
-            ).strip(),
+            ),
         )
 
         # remove any iso-4217 currency codes
         text = regex.sub(
             "[A-Z]{3}\s+",
-            lambda ele: ("" if self._check_currency(ele[0].strip()) == True else f" {ele[0]}"),
+            lambda ele: ("" if self._check_currency(ele[0].strip()) == True else f" {ele[0]} "),
             text,
         ).strip()
 
