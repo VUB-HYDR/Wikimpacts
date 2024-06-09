@@ -127,7 +127,7 @@ class TestNormalizeNumbers:
 
     @pytest.mark.parametrize(
         "test_input, expected",
-        [("110-352", (110, 352)), ("110 - 352", (110, 352))],
+        [("110-352", (110, 352)), ("0 - 352", (0, 352)), ("23- 55", (23, 55))],
     )
     def test__extract_range(self, test_input, expected):
         _, norm = refresh_fixture()
