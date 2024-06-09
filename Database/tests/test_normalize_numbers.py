@@ -19,6 +19,11 @@ class TestNormalizeNumbers:
             ("$355 billion", "355 billion"),
             ("£23M", "23 million"),
             ("20k", "20 thousand"),
+            (
+                "Nearly 300 victims were discovered dead",
+                "Nearly 300 victims were discovered dead",
+            ),
+            ("Almost $3B in losses", "Almost 3 billion in losses"),
         ],
     )
     def test__preprocess(self, test_input, expected):
