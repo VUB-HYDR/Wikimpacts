@@ -123,9 +123,7 @@ class TestNormalizeNumbers:
     )
     def test__check_for_approximation(self, test_input, expected):
         nlp, norm = refresh_fixture()
-        assert norm._check_for_approximation(
-            nlp(test_input), labels=["CARDINAL", "MONEY", "QUANTITY"]
-        ) == expected
+        assert norm._check_for_approximation(nlp(test_input), labels=["CARDINAL", "MONEY", "QUANTITY"]) == expected
 
     @pytest.mark.parametrize(
         "test_input, expected",
@@ -139,7 +137,7 @@ class TestNormalizeNumbers:
         "test_input, expected",
         [
             # ("23mil dollars", (23000000, 23000000, 0)), # fails!
-            ("23mil", (23000000, 23000000, 0)), # fails!
+            ("23mil", (23000000, 23000000, 0)),  # fails!
             ("110 - 352", (110, 352, 0)),
             ("between 11 and 17 people were affected", (11, 17, 1)),
             ("Nearly 300 homes were destroyed", (300, 300, 1)),
