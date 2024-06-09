@@ -61,7 +61,9 @@ class TestNormalizeNumbers:
         [
             ("23 were injured and 11 are missing", [23, 11]),
             ("115 are still missing", [115]),
+            # cases meant to fail
             ("Losses between $11 million and $12 million", None),
+            ("Losses between 11 million and 12 million", None),  # todo: investigate
         ],
     )
     def test__extract_numbers_from_tokens(self, test_input, expected):
