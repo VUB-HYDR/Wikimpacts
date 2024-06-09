@@ -39,12 +39,12 @@ class NormalizeNumber:
         }
 
         # remove currency
-        text = " ".join(regex.sub(r"\p{Sc}|(~)|Rs\.|Rs", " \g<1> ", text).split())
+        text = " ".join(regex.sub(r"\p{Sc}|(~)|Rs\.|Rs", " \\g<1> ", text).split())
 
         # normalize shorthand style_1
         style_1_match_any = f"({'|'.join(lookup['style_1'].keys())}){{1}}"
         text = regex.sub(
-            str(f"(\d+){style_1_match_any}($|\s)"),
+            (r"(\d+){pattern}($|\s)".format(pattern=style_1_match_any)),
             lambda ele: f"{ele[1]} {lookup['style_1'][ele[2].lower()]}",
             text,
             flags=regex.IGNORECASE,
