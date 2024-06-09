@@ -209,7 +209,10 @@ class NormalizeNumber:
 
         return new.strip()
 
-    def _extract_numbers_from_entities(self, doc: spacy.tokens.doc.Doc, labels: List[str]) -> List[float]:
+    # deprecate! not in use?
+    def _extract_numbers_from_entities(
+        self, doc: spacy.tokens.doc.Doc, labels: List[str]
+    ) -> List[float] | BaseException:
         numbers = []
         if not doc.ents:
             raise BaseException
@@ -320,7 +323,7 @@ class NormalizeNumber:
                 except:
                     return None
 
-    def _extract_approximate_quantifiers(self, text: str) -> Tuple[float]:
+    def _extract_approximate_quantifiers(self, text: str) -> Tuple[float] | None:
         scales = {
             "tens of": 10,
             "hundreds of": 100,
