@@ -9,8 +9,8 @@ on:
       - main
 
 jobs:
-  deploy:
-    name: Create Release
+  test:
+    name: Run Tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2.4.0
