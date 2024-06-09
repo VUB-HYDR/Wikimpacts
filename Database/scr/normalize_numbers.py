@@ -2,6 +2,7 @@ from typing import Dict, List, Tuple, Union
 
 import regex
 import spacy
+from iso4217 import Currency
 from num2words import num2words
 from text_to_num import alpha2digit, text2num
 
@@ -14,13 +15,63 @@ class NormalizeNumber:
         self.nlp = nlp
         self.atof = locale.atof
 
-    @staticmethod
-    def _preprocess(text: str):
+    def _check_currency(self, currency_text):
+        try:
+            Currency(currency_text)
+            return True
+        except ValueError:
+            return False
+
+    def _preprocess(self, text: str):
+        lookup = {
+            # case insensitive
+            "style_1": {
+                "k": "thousand",
+                "m": "million",
+                "b": "billion",
+                "t": "trillion",
+            },
+            "style_2": {
+                "mil": "million",
+                "bil": "billion",
+                "tril": "trillion",
+            },
+        }
+
         # remove currency
-        text = " ".join(regex.sub(r"\p{Sc}|(~)|Rs\.|Rs", " \g<0> ", text).split())
-        # split any numbers attached to digits ("EUR19" -> "EUR 19")
-        text = regex.split(r"(?:[A-Z]{3})(\d+)|(\d+)(?:[A-Z]{3})", text)
-        return " ".join(t for t in text if t)
+        text = " ".join(regex.sub(r"\p{Sc}|(~)|Rs\.|Rs", " \g<1> ", text).split())
+
+        # normalize shorthand style_1
+        style_1_match_any = f"({'|'.join(lookup['style_1'].keys())}){{1}}"
+        text = regex.sub(
+            str(f"(\d+){style_1_match_any}($|\s)"),
+            lambda ele: f"{ele[1]} {lookup['style_1'][ele[2].lower()]}",
+            text,
+            flags=regex.IGNORECASE,
+        ).strip()
+
+        # normalize shorthand style_2
+        # otherwise, put spaces between words and digits
+        text = regex.sub(
+            r"\s+",
+            " ",
+            regex.sub(
+                "[A-Za-z]+",
+                lambda ele: (
+                    f" {ele[0]} " if ele[0] not in lookup["style_2"].keys() else f' {lookup["style_2"][ele[0]]} '
+                ),
+                text,
+            ).strip(),
+        )
+
+        # remove any iso-4217 currency codes
+        text = regex.sub(
+            "[A-Z]{3}\s+",
+            lambda ele: ("" if self._check_currency(ele[0].strip()) == True else f" {ele[0]}"),
+            text,
+        ).strip()
+
+        return text
 
     def _extract_single_number(self, text: str) -> List[float] | BaseException:
         number = None
@@ -175,7 +226,6 @@ class NormalizeNumber:
             self.atof(doc.text)
             return 0
         except:
-    
             # check for common keywords
             keywords = ["over", "under", "approxinately", "nearly", "fewer than", "greater than", "more than", "less than"]
             if any([k in doc.text for k in keywords]):
