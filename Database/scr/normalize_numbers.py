@@ -15,6 +15,7 @@ class NormalizeNumber:
         locale.setlocale(locale.LC_ALL, locale_config)
         self.nlp = nlp
         self.atof = locale.atof
+        self.lang = locale_config.split("_")[0]
 
     def _check_currency(self, currency_text):
         try:
@@ -103,7 +104,7 @@ class NormalizeNumber:
         except:
             try:
                 # try extracting the number from words (eg. "two million")
-                number = text2num(text, lang="en", relaxed=True)
+                number = text2num(text, lang=self.lang, relaxed=True)
             except:
                 # first process the case where a number followed by any exception scales
                 if len(regex.findall(r"\b(?<!\.)\d+(?:,\d+)*(?:\.\d+)?\b", text)) == 1:
@@ -131,7 +132,7 @@ class NormalizeNumber:
                             # (eg. "2 million" -> "two million" -> 2000000.0)
                             assert len(regex.findall(r"[0-9]+[,.]a?[0-9]*|[0-9]+", text)) == 1, BaseException
                             normalized_text = self._normalize_num(self.nlp(text), to_word=True)
-                            number = text2num(normalized_text, lang="en", relaxed=True)
+                            number = text2num(normalized_text, lang=self.lang, relaxed=True)
                         except:
                             # handle decimals:
                             # if there is a decimal followed by a million/billion, etc
@@ -146,7 +147,9 @@ class NormalizeNumber:
                                 numbers = [token.text for token in self.nlp(text) if token.like_num]
                                 if len(numbers) == 2 and len(set(numbers[1].split(" ")).intersection(scales)) != 0:
                                     try:
-                                        return [self.atof(numbers[0]) * text2num(numbers[1], lang="en", relaxed=True)]
+                                        return [
+                                            self.atof(numbers[0]) * text2num(numbers[1], lang=self.lang, relaxed=True)
+                                        ]
                                     except BaseException:
                                         raise BaseException
         try:
@@ -178,7 +181,7 @@ class NormalizeNumber:
                     try:
                         number = self.atof(n)
                     except:
-                        number = text2num(n, lang="en", relaxed=True)
+                        number = text2num(n, lang=self.lang, relaxed=True)
                     numbers.append(number)
 
             return numbers
@@ -229,7 +232,7 @@ class NormalizeNumber:
                 # if an entity is mixed, convert digits to words first
                 transcribed_text = alpha2digit(
                     new if new else ent.text,
-                    lang="en",
+                    lang=self.lang,
                     ordinal_threshold=0,
                     relaxed=True,
                 )
