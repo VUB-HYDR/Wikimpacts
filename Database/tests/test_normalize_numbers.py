@@ -107,3 +107,17 @@ class TestNormalizeNumbers:
         _, norm = refresh_fixture()
         assert norm._extract_range(test_input) == expected
 
+    @pytest.mark.parametrize(
+        "test_input, expected",
+        [
+            # ("23mil dollars", (23000000, 23000000, 0)), # fails!
+            ("23mil", (23000000, 23000000, 0)), # fails!
+            ("110 - 352", (110, 352, 0)),
+            ("between 11 and 17 people were affected", (11, 17, 1)),
+            ("Nearly 300 homes were destroyed", (300, 300, 1)),
+            ("Nearly 300 homes were destroyed", (300, 300, 1)),
+        ],
+    )
+    def test_extract_numbers(self, test_input, expected):
+        _, norm = refresh_fixture()
+        assert norm.extract_numbers(test_input) == expected
