@@ -307,7 +307,7 @@ class NormalizeNumber:
             nums = text.split("-")
             if len(nums) == 2:
                 try:
-                    return (self.atof(nums[0]), self.atof(nums[1]))
+                    return (self.atof(nums[0].strip()), self.atof(nums[1].strip()))
                 except:
                     return None
         except:
@@ -316,7 +316,7 @@ class NormalizeNumber:
             nums = text.split("-")
             if len(nums) == 2:
                 try:
-                    return (self.atof(nums[0]), self.atof(nums[1]))
+                    return (self.atof(nums[0].strip()), self.atof(nums[1].strip()))
                 except:
                     return None
 
