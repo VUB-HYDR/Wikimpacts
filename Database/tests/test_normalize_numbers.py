@@ -1,6 +1,8 @@
-from Database.scr.normalize_utils import NormalizeUtils
-from Database.scr.normalize_numbers import NormalizeNumber
 import pytest
+
+from Database.scr.normalize_numbers import NormalizeNumber
+from Database.scr.normalize_utils import NormalizeUtils
+
 
 def refresh_fixture():
     utils = NormalizeUtils()
