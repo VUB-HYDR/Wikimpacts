@@ -77,7 +77,18 @@ class NormalizeNumber:
     def _extract_single_number(self, text: str) -> List[float] | BaseException:
         number = None
         zero_phrases = ["none", "no one", "no known", "zero", "no injuries", "no casualties", "no deaths", "minimal"]
-        unknown_phrases = ["unknown", "not clear", "unclear", "n/a", "na", "not available", "null"]
+        unknown_phrases = [
+            "unknown",
+            "not clear",
+            "unclear",
+            "n/a",
+            "na",
+            "not available",
+            "null",
+            "not known",
+            "does not mention",
+            "not mentioned",
+        ]
 
         for z in zero_phrases:
             if z in text.lower().strip():
