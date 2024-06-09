@@ -97,12 +97,18 @@ class NormalizeNumber:
                 if len(regex.findall(r"\b(?<!\.)\d+(?:,\d+)*(?:\.\d+)?\b", text)) == 1:
                     other_scales = ["crore", "lakh", "crores", "lakhs"]
                     matches = regex.findall(
-                        r"\b(?<!\.)\d+(?:,\d+)*(?:\.\d+)?\b\s+(?:" + "|".join(other_scales) + ")", text
+                        r"\b(?<!\.)\d+(?:,\d+)*(?:\.\d+)?\b\s+(?:" + "|".join(other_scales) + ")",
+                        text,
                     )
                     if len(matches):
                         numbers = [token.text for token in self.nlp(matches[0])]
                         try:
-                            other_scales_2_num = {"crore": 1e7, "crores": 1e7, "lakh": 1e5, "lakhs": 1e5}
+                            other_scales_2_num = {
+                                "crore": 1e7,
+                                "crores": 1e7,
+                                "lakh": 1e5,
+                                "lakhs": 1e5,
+                            }
                             return [self.atof(numbers[0]) * other_scales_2_num[numbers[1]]]
                         except BaseException:
                             raise BaseException
@@ -117,7 +123,13 @@ class NormalizeNumber:
                         except:
                             # handle decimals:
                             # if there is a decimal followed by a million/billion, etc
-                            scales = ["hundred", "thousand", "million", "billion", "trillion"]
+                            scales = [
+                                "hundred",
+                                "thousand",
+                                "million",
+                                "billion",
+                                "trillion",
+                            ]
                             if len(regex.findall(r"[0-9]+[.]{1}[0-9]+", text)) == 1:
                                 numbers = [token.text for token in self.nlp(text) if token.like_num]
                                 if len(numbers) == 2 and len(set(numbers[1].split(" ")).intersection(scales)) != 0:
@@ -200,7 +212,12 @@ class NormalizeNumber:
                         except:
                             new += i + " "
                 # if an entity is mixed, convert digits to words first
-                transcribed_text = alpha2digit(new if new else ent.text, lang="en", ordinal_threshold=0, relaxed=True)
+                transcribed_text = alpha2digit(
+                    new if new else ent.text,
+                    lang="en",
+                    ordinal_threshold=0,
+                    relaxed=True,
+                )
                 if "MONEY" in labels and ent.label_ == "MONEY":
                     try:
                         return self._extract_numbers_from_tokens(doc)
@@ -292,7 +309,12 @@ class NormalizeNumber:
                     return None
 
     def _extract_approximate_quantifiers(self, text: str) -> Tuple[float]:
-        scales = {"tens of": 10, "hundreds of": 100, "thousands of": 1000, "millions of": 1000000}
+        scales = {
+            "tens of": 10,
+            "hundreds of": 100,
+            "thousands of": 1000,
+            "millions of": 1000000,
+        }
         lower_scale = 2
         upper_scale = 9
 
