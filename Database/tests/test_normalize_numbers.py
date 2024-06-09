@@ -153,3 +153,17 @@ class TestNormalizeNumbers:
     def test_extract_numbers(self, test_input, expected):
         _, norm = refresh_fixture()
         assert norm.extract_numbers(test_input) == expected
+
+    @pytest.mark.parametrize(
+        "test_input, expected",
+        [
+            ("there were tens of victims after the tornadoe", (20, 90)),
+            (
+                "Millions of kronoers were paid in damages",
+                (2000000, 9000000),
+            ),
+        ],
+    )
+    def test__extract_approximate_quantifiers(self, test_input, expected):
+        _, norm = refresh_fixture()
+        assert norm._extract_approximate_quantifiers(test_input) == expected
