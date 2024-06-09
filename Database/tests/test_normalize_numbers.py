@@ -133,7 +133,10 @@ class TestNormalizeNumbers:
             ("110-352", (110, 352)),
             ("0 - 352", (0, 352)),
             ("23- 55", (23, 55)),
+            ("24,501-61,672", (24501, 61672)),
             # not meant to handle this case
+            (">=12", None),
+            ("12", None),
             ("twelve and one hundred", None),
         ],
     )
@@ -151,6 +154,7 @@ class TestNormalizeNumbers:
             ("Nearly 300 homes were destroyed", (300, 300, 1)),
             ("Nearly 300 homes were destroyed", (300, 300, 1)),
             ("$3.6 million", (3600000, 3600000, 0)),
+            ("$35.63 million", (35630000, 35630000, 0)),
             ("$3.6 million", (3600000, 3600000, 0)),
             ("Damage: At least $129 million", (129000000, 129000000, 1)),
             ("At least 73", (73, 73, 1)),
