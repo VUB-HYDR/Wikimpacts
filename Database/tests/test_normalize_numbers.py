@@ -1,8 +1,6 @@
 from Database.scr.normalize_utils import NormalizeUtils
 from Database.scr.normalize_numbers import NormalizeNumber
 import pytest
-import logging
-
 
 def refresh_fixture():
     utils = NormalizeUtils()
@@ -16,12 +14,14 @@ class TestNormalizeNumbers:
         "test_input, expected",
         [
             ("EUR19", "19"),
-            ("$355 million", "$ 355 million"),
-            ("£23 billion", "£ 23 billion"),
+            ("$355 billion", "355 billion"),
+            ("£23M", "23 million"),
+            ("20k", "20 thousand"),
         ],
     )
     def test__preprocess(self, test_input, expected):
         _, norm = refresh_fixture()
+        print(norm._preprocess(test_input), type(norm._preprocess(test_input)))
         assert norm._preprocess(test_input) == expected
 
     @pytest.mark.parametrize(
@@ -29,10 +29,15 @@ class TestNormalizeNumbers:
         [
             ("19", [19]),
             ("$ 355 million", [355000000]),
+            ("5 million", [5000000]),
+            ("13 injuries", [13]),
             ("£ 23 billion", [23000000000]),
             ("23 were killed", [23]),
             ("100 thousand", [100000]),
             ("one hundred", [100]),
+            ("none reported", [0]),
+            ("no casualties were reported", [0]),
+            ("unknown!", [None]),
             # cases meant to fail
             ("23 were injured and 11 are missing", None),
         ],
@@ -90,10 +95,9 @@ class TestNormalizeNumbers:
     )
     def test__check_for_approximation(self, test_input, expected):
         nlp, norm = refresh_fixture()
-        output = norm._check_for_approximation(
+        assert norm._check_for_approximation(
             nlp(test_input), labels=["CARDINAL", "MONEY", "QUANTITY"]
-        )
-        assert output == expected
+        ) == expected
 
     @pytest.mark.parametrize(
         "test_input, expected",
@@ -101,5 +105,5 @@ class TestNormalizeNumbers:
     )
     def test__extract_range(self, test_input, expected):
         _, norm = refresh_fixture()
-        output = norm._extract_range(test_input)
-        assert output == expected
+        assert norm._extract_range(test_input) == expected
+
