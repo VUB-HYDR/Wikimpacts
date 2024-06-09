@@ -170,6 +170,12 @@ class TestNormalizeNumbers:
                 "Millions of kronoers were paid in damages",
                 (2000000, 9000000),
             ),
+            ("a few billion dollars", (2000000000, 6000000000)),
+            ("a couple of hundreds", (200, 300)),
+            ("there were several reported injuries", (2, 6)),
+            ("there were several thousand reported injuries", (2000, 6000)),
+            ("a dozen deaths were reported", (12, 12)),
+            ("dozens of hundreds of homes were completely destroyed", (2 * 12 * 100, 6 * 12 * 100)),
         ],
     )
     def test__extract_approximate_quantifiers(self, test_input, expected):

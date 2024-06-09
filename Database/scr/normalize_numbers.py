@@ -327,18 +327,115 @@ class NormalizeNumber:
                     return None
 
     def _extract_approximate_quantifiers(self, text: str) -> Tuple[float] | None:
-        scales = {
-            "tens of": 10,
-            "hundreds of": 100,
-            "thousands of": 1000,
-            "millions of": 1000000,
+        one, ten, hun, tho, mil, bil, tri = (
+            1,
+            10,
+            100,
+            1000,
+            1000000,
+            1000000000,
+            1000000000000,
+        )
+        phrases = {
+            "scales": {
+                "tens of": ten,
+                "hundreds": hun,
+                "thousands": tho,
+                "tens of thousands": tho * ten,
+                "hundreds of thousands": hun * tho,
+                "millions": mil,
+                "tens of millions": ten * mil,
+                "hundreds of millions": hun * mil,
+                "billions": bil,
+                "tens of billions": ten * bil,
+                "hundreds of billions": hun * bil,
+                "trillions": tri,
+                "tens of tillions": ten * tri,
+                "hundreds of tillions": hun * tri,
+            },
+            "few": {
+                "a few dozen": one * 12,
+                "a group of": one,
+                "a number of": one,
+                "a few hundred": hun,
+                "several hundred": hun,
+                "a few thousand": tho,
+                "several thousand": tho,
+                "a few million": mil,
+                "several million": mil,
+                "a few billion": bil,
+                "several billion": bil,
+            },
+            "single_dozen": {
+                "a dozen hundred": hun * 12,
+                "a dozen thousand": tho * 12,
+                "a dozen million": mil * 12,
+                "a dozen billion": bil * 12,
+            },
         }
-        lower_scale = 2
-        upper_scale = 9
 
-        for phrase, scale in scales.items():
-            if phrase in text.lower():
-                return (scale * lower_scale, scale * upper_scale)
+        check_first = {
+            "couple": {
+                "couple of hundred": hun,
+                "couple hundred": hun,
+                "couple of thousand": tho,
+                "couple thousand": tho,
+                "couple of million": mil,
+                "couple million": mil,
+                "couple of billion": bil,
+                "couple billion": bil,
+            },
+            "dozen": {
+                "dozen hundred": hun * 12,
+                "dozen thousand": tho * 12,
+                "dozen million": mil * 12,
+                "dozen billion": bil * 12,
+                "dozens of hundred": hun * 12,
+                "dozens of thousand": tho * 12,
+                "dozens of million": mil * 12,
+                "dozens of billion": bil * 12,
+            },
+        }
+
+        check_last = {
+            "few": {
+                # keep last!
+                "a few": one,
+                "several": one,
+            },
+            "couple": {
+                "a couple": one,
+            },
+            "single_dozen": {
+                "a dozen": one * 12,
+            },
+        }
+
+        ranges = {"scales": (2, 9), "few": (2, 6), "couple": (2, 3), "dozen": (2, 6), "single_dozen": (1, 1)}
+
+        def _check(_dict, key, text):
+            for phrase, degree in _dict[key].items():
+                lower_range, upper_range = ranges[key]
+                if phrase in text.lower():
+                    return (degree * lower_range, degree * upper_range)
+
+        # check these first to avoid rule conflics
+        for k in check_first.keys():
+            output = _check(check_first, k, text)
+            if output:
+                return output
+
+        for k in phrases.keys():
+            output = _check(phrases, k, text)
+            if output:
+                return output
+
+        # do a last sweep
+        for k in check_last.keys():
+            output = _check(check_last, k, text)
+            if output:
+                return output
+
         return None
 
     def extract_numbers(
