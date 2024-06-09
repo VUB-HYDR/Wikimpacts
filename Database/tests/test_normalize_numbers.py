@@ -75,6 +75,28 @@ class TestNormalizeNumbers:
 
     @pytest.mark.parametrize(
         "test_input, expected",
+        [
+            ("23 were injured and 11 are missing", [23, 11]),
+            ("115 are still missing", [115]),
+            # cases meant to fail
+            # ("Losses between $11 million and $12 million", [11000000, 12000000]),
+            # ("Losses between 11 million and 12 million",  [11000000, 12000000]), # todo: investigate
+        ],
+    )
+    def test__extract_numbers_from_entities(self, test_input, expected):
+        nlp, norm = refresh_fixture()
+
+        if isinstance(expected, list):
+            assert (
+                norm._extract_numbers_from_entities(nlp(test_input), labels=["CARDINAL", "MONEY", "QUANTITY"])
+                == expected
+            )
+        else:
+            with pytest.raises(BaseException):
+                norm._extract_numbers_from_entities(nlp(test_input), labels=["CARDINAL", "MONEY", "QUANTITY"])
+
+    @pytest.mark.parametrize(
+        "test_input, expected",
         [(">=12", "12"), ("one hundred and ten", "one hundred ten")],
     )
     def test__normalize_num(self, test_input, expected):
