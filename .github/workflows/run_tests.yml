@@ -1,0 +1,38 @@
+name: Run Unit Tests via Pytest
+
+on:
+  push:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Create Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.4.0
+        with:
+          fetch-depth: 0
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v2.3.1
+        with:
+          python-version: 3.11
+      - id: cache-dependencies
+        name: Cache dependencies
+        uses: actions/cache@v2.1.7
+        with:
+          path: ${{ github.workspace }}/.venv
+          key: dependencies-${{ hashFiles('**/poetry.lock') }}
+          restore-keys: dependencies-
+      - name: Install dependencies
+        if: steps.cache-dependencies.cache-hit != 'true'
+        run: |
+          python3 -m pip install -U pip poetry
+          poetry --version
+          poetry check --no-interaction
+          poetry config virtualenvs.in-project true
+          poetry install --no-interaction
+      - name: Run tests
+        run: |
+          poetry run pytest -ra -s -o log_cli=true Database/tests
