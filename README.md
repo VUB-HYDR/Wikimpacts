@@ -32,9 +32,9 @@ git lfs install
 
 If you have generated some LLM output and would like to test it against the dev and test gold sets, here is a list of command to enable you to experiment with this yourself.
 
-1. Choose a new experiment name! You will use this <EXPERIMENT_NAME> for the whole pipeline
+1. Choose a new experiment name! You will use this <EXPERIMENT_NAME> for the whole pipeline.
 
-    **PRESTEP**:  
+**PRESTEP**:  
     If the system output is split across several files (such as Mixtral and Mistral system outputs), then first merge it:
 
     ```shell
@@ -46,7 +46,7 @@ If you have generated some LLM output and would like to test it against the dev 
 
 
 > [!WARNING]  
-> Your raw system output files should always land in the [`Database/raw/<EXPERIMENT_NAME>`] directory!
+> Your raw system output files should always land in the `Database/raw/<EXPERIMENT_NAME>` directory!
 
 > [!TIP]
 >  JSON files can be formatted easily with pre-commit:
