@@ -37,12 +37,12 @@ If you have generated some LLM output and would like to test it against the dev 
 **PRESTEP**:  
     If the system output is split across several files (such as Mixtral and Mistral system outputs), then first merge it:
 
-    ```shell
-        poetry run python3 Database/merge_json_output.py \
-        --input_dir Database/raw/<EXPERIMENT_NAME>/<RAW_JSON_FILES> \
-        --output_dir Database/raw/<EXPERIMENT_NAME> \
-        --model_name <MY_MODEL>
-    ```
+```shell
+poetry run python3 Database/merge_json_output.py \
+--input_dir Database/raw/<EXPERIMENT_NAME>/<RAW_JSON_FILES> \
+--output_dir Database/raw/<EXPERIMENT_NAME> \
+--model_name <MY_MODEL>
+```
 
 
 > [!WARNING]  
