@@ -4,7 +4,6 @@ version = "0.1.0"
 description = "Dependencies for parsing and normalizing environmental impact data"
 authors = ["shorouq.zahra@ri.se"]
 readme = "README.md"
-package-mode = false
 
 [tool.poetry.dependencies]
 python = ">=3.8,<3.12"

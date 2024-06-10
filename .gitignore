@@ -20,3 +20,6 @@ results
 
 # ignore geopy cache (used for normalizing locations faster)
 geopy_cache.sqlite
+
+#ignore pycharm files
+.idea
