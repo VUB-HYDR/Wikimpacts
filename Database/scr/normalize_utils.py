@@ -285,8 +285,8 @@ class NormalizeJsonOutput:
 
         return dfs
 
-    @staticmethod
     def save_json(
+        self,
         dfs: list[pd.DataFrame],
         model_name: str,
         output_dir: str,
@@ -314,7 +314,8 @@ class NormalizeJsonOutput:
         """
         Takes a list of dataframes, merges it into a single file, and stores file in output_dir with the correct set and model names
         """
-        captured_columns = set([x for xs in [df.columns for df in dfs] for x in xs])
+        captured_columns = set([x for xs in [df.keys() for df in dfs] for x in xs])
+        self.logger.info(f"Captured Columns: {captured_columns}")
         model_output = pd.DataFrame(dfs, columns=[c for c in columns if c in captured_columns])
         filename = f"{output_dir}/{model_name}.json"
         model_output.to_json(
