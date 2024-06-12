@@ -2,7 +2,7 @@
 Wikimapcts is the first version of climate impact dataset creating by generative AI GPT4.0
 
 
-### Dependencies
+## Dependencies
 Prerequisite:
 - Install [`poetry`](https://python-poetry.org/docs/#installation)
 Then activate a virtual environment and install the dependencies:
@@ -26,16 +26,18 @@ pre-commit installed at .git/hooks/pre-commit
 git lfs install
 ```
 
-### Quickstart
+## Quickstart
 
-#### Parsing and evaluation pipeline
+### Parsing and evaluation pipeline
 
 If you have generated some LLM output and would like to test it against the dev and test gold sets, here is a list of command to enable you to experiment with this yourself.
 
-1. Choose a new experiment name! You will use this <EXPERIMENT_NAME> for the whole pipeline.
+#### (Step 1) Experiment name
 
-**PRESTEP**:  
-    If the system output is split across several files (such as Mixtral and Mistral system outputs), then first merge it:
+Choose a new experiment name! You will use this <EXPERIMENT_NAME> for the whole pipeline.
+
+#### PRESTEP (before Step 2):  
+If the system output is split across several files (such as Mixtral and Mistral system outputs), then first merge it:
 
 ```shell
 poetry run python3 Database/merge_json_output.py \
@@ -43,7 +45,6 @@ poetry run python3 Database/merge_json_output.py \
 --output_dir Database/raw/<EXPERIMENT_NAME> \
 --model_name <MY_MODEL>
 ```
-
 
 > [!WARNING]  
 > Your raw system output files should always land in the `Database/raw/<EXPERIMENT_NAME>` directory!
@@ -55,7 +56,9 @@ poetry run python3 Database/merge_json_output.py \
 > pre-commit run --files Database/raw/<EXPERIMENT_NAME>/> <JSON_FILE_THAT_NEEDS_FORMATTING>
 > ```
 
-2. Once all system output files are merged into a single JSON file (**or if this was already the case, such as with GPT4 output**), you can parse them so they are ready to be evaluated. 
+#### (Step 2) Parsing events and subevents
+
+Once all system output files are merged into a single JSON file (**or if this was already the case, such as with GPT4 output**), you can parse them so they are ready to be evaluated. 
     The parsing script [`Database/parse_events.py`](Database/parse_events.py) will normalize numbers (to min and max) and locations (using OpenStreetMap) and output a JSON file. 
 
     ```shell
@@ -79,7 +82,7 @@ poetry run python3 Database/merge_json_output.py \
 > Normalizing countries will go slow the first time. This is because we are using a free API (currently!). However, each time this script is run locally, geopy will cache the results, meaning that it will go faster the next time you run it on your local branch. Allow for 15-20 minutes the first time. 
 
 
-3. Evaluate against the dev and test sets 
+#### (Step 2) Evaluate against the dev and test sets 
 
 ##### (A) Choose your config and columns
 The python dictionary in <a href="Evaluation/weights.py"><code>weights.py</code></a> contains different weight configs. For example, the experiments nlp4climate weighs all the column types equally but excludes the "Event_Name" from evaluation.
@@ -131,7 +134,7 @@ poetry run python3 Evaluation/evaluator.py --sys-file  Database/output/nlp4clima
 --weights_config nlp4climate
 ```
 
-#### Parsing and normalization
+### Parsing and normalization
 
 If you have new events to add to the database, first parse them and insert them.
 
@@ -145,7 +148,7 @@ If you have new events to add to the database, first parse them and insert them.
     poetry run python3 Database/parse_events.py --help
     ```
 
-#### Inserting
+### Inserting
 - To insert new main events:
 
     ```shell
@@ -168,7 +171,7 @@ If you have new events to add to the database, first parse them and insert them.
     poetry run python3 Database/parse_events.py --help
     ```
 
-#### Database-related
+### Database-related
 - To generate the database according to [`Database/schema.sql`](Database/schema.sql):
 
     ```shell
@@ -201,7 +204,7 @@ To be implemented:
 > Please don't track or push excel sheets into the repository
 > The file `Database/gold/ImpactDB_DataTable_Validation.xlsx` has the latest gold annotations from 01/06/2024 and will be updated in the future. 
 
-#### Develop
+### Develop
 
 Always pull a fresh copy of the `main` branch first! To add a new feature, check out a new branch from the `main` branch, make changes there, and push the new branch upstream to open a PR. PRs should result in a **squash commit** in the `main` branch. **It is recommended to code responsibly and ask someone to review your code. You can always tag @i-be-snek as a reviewer.** 
 
@@ -226,7 +229,7 @@ poetry add pandas -G main
 poetry add ipykernel@6.29.4 -G dev
 ```
 
-#### Problems?
+### Problems?
 
 Start an Issue on GitHub if you find a bug in the code or have suggestions for a feature you need. 
 If you run into an error or problem, please include the error trace or logs! :D 
@@ -234,7 +237,7 @@ If you run into an error or problem, please include the error trace or logs! :D
 > [!TIP]
 > Consult this [Github Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
-#### Sources & Citations
+### Sources & Citations
 - GADM world data | `Database/data/gadm_world.csv`
 
     https://gadm.org/license.html
