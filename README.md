@@ -61,22 +61,21 @@ poetry run python3 Database/merge_json_output.py \
 Once all system output files are merged into a single JSON file (**or if this was already the case, such as with GPT4 output**), you can parse them so they are ready to be evaluated. 
     The parsing script [`Database/parse_events.py`](Database/parse_events.py) will normalize numbers (to min and max) and locations (using OpenStreetMap) and output a JSON file. 
 
-    ```shell
+```shell
+poetry run python3 Database/parse_events.py \
+--raw_dir Database/raw/<EXPERIMENT_NAME> \
+--filename <JSON_FILE> \
+--output_dir Database/output/<EXPERIMENT_NAME> \
 
-        poetry run python3 Database/parse_events.py \
-        --raw_dir Database/raw/<EXPERIMENT_NAME> \
-        --filename <JSON_FILE> \
-        --output_dir Database/output/<EXPERIMENT_NAME> \
+# "sub", "main" or "all"
+--event_type all \
 
-        # "sub", "main" or "all"
-        --event_type all \
-
-        # if your country and location columns have a different name
-        # you can specify it here (otherwise, defaults to 
-        # "Country" and "Location" (respectively)):
-        --country_column "Custom_Country_Column"  \
-        --location_column "Locations" 
-    ```
+# if your country and location columns have a different name
+# you can specify it here (otherwise, defaults to 
+# "Country" and "Location" (respectively)):
+--country_column "Custom_Country_Column"  \
+--location_column "Locations" 
+```
 
 > [!WARNING]
 > Normalizing countries will go slow the first time. This is because we are using a free API (currently!). However, each time this script is run locally, geopy will cache the results, meaning that it will go faster the next time you run it on your local branch. Allow for 15-20 minutes the first time. 
