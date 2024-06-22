@@ -27,17 +27,32 @@ if __name__ == "__main__":
     )
 
     parser.add_argument(
+        "-f",
+        "--filename",
+        dest="filename",
+        help="The name of the parquet file in the <DATA_PATH> directory",
+        type=str,
+        required=False,
+    )
+
+    parser.add_argument(
         "-db",
         "--database_name",
         dest="database_name",
         default="impact.db",
-        help="The name of your database (follwed by `.db`)",
+        help="The name of your database (followed by the extension name, such as ´.db´)",
         type=str,
     )
 
+    print("+++++++++++++++++++++++++++++++")
     args = parser.parse_args()
+    print("filename", args.filename)
+    if args.filename:
+        sub_events = [args.filename]
+    else:
+        sub_events = [f for f in os.listdir(args.data_path) if (f.startswith("Specific_") and f.endswith(".parquet"))]
 
-    sub_events = [f for f in os.listdir(args.data_path) if (f.startswith("Specific_") and f.endswith(".parquet"))]
+    print(sub_events)
     connection = sqlite3.connect(args.database_name)
     cursor = connection.cursor()
 
@@ -45,8 +60,8 @@ if __name__ == "__main__":
         df = pd.read_parquet(f"{args.data_path}/{i}")
         sub_event_name = i.split(".")[0]
         # drop _annotation columns
-        annotation_colums = [col for col in df.columns if col.endswith("annotation")]
-        df = df.drop(columns=annotation_colums)
+        annotation_columns = [col for col in df.columns if col.endswith("annotation")]
+        df = df.drop(columns=annotation_columns)
         # change if_exists to "append" to avoid overwriting the database
         # choose "replace" to overwrite the database with a fresh copy of the data
         df.to_sql(sub_event_name, con=connection, if_exists=args.method, index=False)
