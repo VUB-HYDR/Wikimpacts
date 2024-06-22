@@ -44,15 +44,12 @@ if __name__ == "__main__":
         type=str,
     )
 
-    print("+++++++++++++++++++++++++++++++")
     args = parser.parse_args()
-    print("filename", args.filename)
     if args.filename:
         sub_events = [args.filename]
     else:
         sub_events = [f for f in os.listdir(args.data_path) if (f.startswith("Specific_") and f.endswith(".parquet"))]
 
-    print(sub_events)
     connection = sqlite3.connect(args.database_name)
     cursor = connection.cursor()
 
