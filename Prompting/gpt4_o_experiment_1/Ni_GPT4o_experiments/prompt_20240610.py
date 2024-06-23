@@ -1,3 +1,15 @@
+# Check and remove the specified entry
+
+duplicate_name = "Tropical Storm Matthew (2010)    ( duplicate with number 82)"
+
+# Find and remove the entry with the specified event name
+dev_json = [item for item in dev_json if item.get("Event_Name") != duplicate_name]
+
+# Print the updated JSON data to verify
+for item in dev_json:
+    print(item.get("Event_Name"))
+
+# before processing, pls delete the duplicate event like above
 response_gpt4o=[]
 for item in dev_json: 
     Event_ID = str(item.get('Event_ID'))
