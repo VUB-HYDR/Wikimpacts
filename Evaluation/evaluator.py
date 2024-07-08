@@ -126,6 +126,9 @@ if __name__ == "__main__":
     comp = comparer.Comparer(null_penalty, target_columns=weights.keys())
     logger.info(f"Target columns: {comp.target_columns}")
 
+    sys = sys.sort_values("Event_ID")
+    gold = gold.sort_values("Event_ID")
+
     for col in ["Country_Norm"]:
         sys[col] = sys[col].apply(ast.literal_eval)
         gold[col] = gold[col].apply(ast.literal_eval)
