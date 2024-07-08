@@ -1,7 +1,7 @@
 import argparse
 import ast
 import json
-from weights import weights
+from weights import weights as weights_dict
 import comparer
 import numpy as np
 import pandas as pd
@@ -61,7 +61,7 @@ if __name__ == "__main__":
         "--weights_config",
         dest="weights_config",
         default="all_columns",
-        choices=weights.keys(),
+        choices=weights_dict.keys(),
         help="Which weights configuration to use. Weight configs are found in `weights.py` in this same directory",
         type=str,
     )
@@ -112,7 +112,7 @@ if __name__ == "__main__":
     null_penalty = args.null_penalty
 
     # Specify item weights
-    _weights = weights[args.weights_config]
+    _weights = weights_dict[args.weights_config]
     weights = {}
     for k, v in _weights.items():
         if k in gold.columns:
