@@ -3,7 +3,6 @@ import ast
 import json
 import pathlib
 from pprint import pformat
-
 import comparer
 import numpy as np
 import pandas as pd
