@@ -134,8 +134,9 @@ if __name__ == "__main__":
         gold[col] = gold[col].apply(ast.literal_eval)
 
     logger.info("Parsed strings to lists or dicts")
-    sys_data = sys.to_dict(orient="records")
-    gold_data = gold.to_dict(orient="records")
+
+    sys_data = sys[weights.keys()].to_dict(orient="records")
+    gold_data = gold[weights.keys()].to_dict(orient="records")
 
     pairs = zip(sys_data, gold_data)
     logger.info(f"Prepared {len(sys_data)} events for evaluation")
