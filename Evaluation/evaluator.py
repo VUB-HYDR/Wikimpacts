@@ -1,13 +1,14 @@
 import argparse
 import ast
 import json
-from weights import weights as weights_dict
+import pathlib
+from pprint import pformat
+
 import comparer
 import numpy as np
 import pandas as pd
-import pathlib
-from pprint import pformat
 from utils import Logging
+from weights import weights as weights_dict
 
 if __name__ == "__main__":
     logger = Logging.get_logger("evaluator")
@@ -70,12 +71,14 @@ if __name__ == "__main__":
 
     output_dir = f"Database/evaluation_results/{args.model_name}"
     logger.info(f"Creating {output_dir} if it does not exist!")
-    pathlib.Path(output_dir).mkdir(parents=True, exist_ok=True) 
+    pathlib.Path(output_dir).mkdir(parents=True, exist_ok=True)
 
     gold = pd.read_parquet(args.gold_set_filepath, engine="fastparquet").replace(
         {np.nan: None, "NULL ": None, "NULL": None}
     )
-    sys = pd.read_parquet(args.sys_set_filepath, engine="fastparquet").replace({np.nan: None, "NULL ": None, "NULL": None})
+    sys = pd.read_parquet(args.sys_set_filepath, engine="fastparquet").replace(
+        {np.nan: None, "NULL ": None, "NULL": None}
+    )
 
     logger.info("Only including events in the gold file")
     sys = sys[sys.Event_ID.isin(gold["Event_ID"].to_list())]
@@ -151,15 +154,12 @@ if __name__ == "__main__":
     ).replace({np.nan: None})
 
     all_comps.sort_values("Weighted_Score")
-    all_comps.to_csv(
-        f"{output_dir}/{args.score}_{len(sys_data)}_results.csv", index=False
-    )
+    all_comps.to_csv(f"{output_dir}/{args.score}_{len(sys_data)}_results.csv", index=False)
 
     averages = {}
     for i in all_comps.columns:
         if not i.startswith("Event_ID"):
             averages[i] = all_comps.loc[:, i].mean()
-
 
     avg_result_filename = f"{output_dir}/{args.score}_{len(sys_data)}_avg_results.json"
     with open(avg_result_filename, "w") as f:
