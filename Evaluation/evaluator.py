@@ -113,7 +113,6 @@ if __name__ == "__main__":
     if missing_ids:
         logger.info(f"Missing events! {missing_ids}. The columns in these events will be constructed with `NoneType` objects. The system output will be penalized for missing events with the selected null penalty ({args.null_penalty})")
         gold_cols = list(gold.columns)
-        missing_rows = pd.DataFrame(columns=gold_cols)
         rows_to_add = []
         for event_id in missing_ids:
             # Create a dictionary for the new row with all columns set to "" except Country_Norm which excepts a list
