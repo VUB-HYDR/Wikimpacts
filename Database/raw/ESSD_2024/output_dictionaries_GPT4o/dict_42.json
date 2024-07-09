@@ -1,0 +1,593 @@
+{
+    "Event_ID": "107.0",
+    "Source": "https://en.wikipedia.org/wiki/2008_Chinese_winter_storms",
+    "Event_Name": "2008 Chinese winter storms   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "223,000 homes were destroyed and 862,000 others were damaged.",
+        "Total_Homelessness_Annotation": "It was estimated that about 223,000 homes were destroyed and 862,000 others were damaged."
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "China",
+            "Start_Date_Homelessness": "25 January 2008",
+            "End_Date_Homelessness": "6 February 2008",
+            "Num_Homelessness": "223,000 homes were destroyed and 862,000 others were damaged.",
+            "Homelessness_with_annotation": "It was estimated that about 223,000 homes were destroyed and 862,000 others were damaged."
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "China",
+            "Location_Homelessness": [
+                "Xiangtan"
+            ],
+            "Start_Date_Homelessness": "25 January 2008",
+            "End_Date_Homelessness": "6 February 2008",
+            "Num_Homelessness": "500 meter-long auto plant in Xiangtan had its entire roof collapse.",
+            "Homelessness_with_annotation": "CNN also reported that a 500 meter-long auto plant in Xiangtan had its entire roof collapse."
+        },
+        {
+            "Country": "China",
+            "Location_Homelessness": [
+                "Chenzhou"
+            ],
+            "Start_Date_Homelessness": "25 January 2008",
+            "End_Date_Homelessness": "6 February 2008",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "In Chenzhou, which has a population of 4.6 million, it was reported that the entire city had no power or water for nearly two weeks, including government buildings and hospitals, while telecommunications cables and Internet networks were also damaged."
+        },
+        {
+            "Country": "China",
+            "Location_Homelessness": [
+                "Fuzhou"
+            ],
+            "Start_Date_Homelessness": "25 January 2008",
+            "End_Date_Homelessness": "6 February 2008",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "In Fuzhou, Jiangxi, it was reported that the city lost power for about 3 weeks."
+        },
+        {
+            "Country": "China",
+            "Location_Homelessness": [
+                "Wuhan"
+            ],
+            "Start_Date_Homelessness": "25 January 2008",
+            "End_Date_Homelessness": "6 February 2008",
+            "Num_Homelessness": "100,000 people were out of running water.",
+            "Homelessness_with_annotation": "For instance, in Wuhan, up to 100,000 people were out of running water when several water pipes burst, cutting the supply to local households."
+        },
+        {
+            "Country": "China",
+            "Location_Homelessness": [
+                "Guangxi"
+            ],
+            "Start_Date_Homelessness": "25 January 2008",
+            "End_Date_Homelessness": "6 February 2008",
+            "Num_Homelessness": "239,000 were also having problems accessing drinking water.",
+            "Homelessness_with_annotation": "In the Guangxi region, about 239,000 were also having problems accessing drinking water."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "200,000",
+        "Total_Injury_Annotation": "Chinese officials mentioned that medical teams treated about 200 000 sick and injured people while 60 died from the cold."
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "China",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "200,000",
+            "Injury_with_annotation": "Chinese officials mentioned that medical teams treated about 200 000 sick and injured people while 60 died from the cold."
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "China",
+            "Location_Injury": [
+                "NULL"
+            ],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "200,000",
+            "Injury_with_annotation": "Chinese officials mentioned that medical teams treated about 200 000 sick and injured people while 60 died from the cold."
+        }
+    ],
+    "Main_Event": "Extreme Temperature",
+    "Main_Event_Assessment_With_Annotation": "The 2008 Chinese winter storms (2008\u5e74\u4e2d\u56fd\u96ea\u707e\u30012008\u5e74\u4e2d\u56fd\u5357\u65b9\u96ea\u707e) were a series of winter storm events that affected large portions of southern and central China, where it does not usually snow severely or extensively, starting from 25 January 2008, until 6 February 2008. The systems affected most of the area with heavy snows, ice, and cold temperatures causing extensive damage and transportation disruption for several thousand travelers. It became China's worst winter weather in half a century.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "at least 129",
+        "Total_Death_Annotation": "According to some media sources, the storms were directly responsible for at least 129 deaths."
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "China",
+            "Start_Date_Death": "10 January 2008",
+            "End_Date_Death": "6 February 2008",
+            "Num_Death": "at least 129",
+            "Death_with_annotation": "According to some media sources, the storms were directly responsible for at least 129 deaths."
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "China",
+            "Location_Death": [
+                "Anhui"
+            ],
+            "Start_Date_Death": "21 January 2008",
+            "End_Date_Death": "21 January 2008",
+            "Num_Death": "11",
+            "Death_with_annotation": "Among the fatalities, 11 were killed in a bus accident in Anhui in which the bus flipped into a ditch on January 21."
+        },
+        {
+            "Country": "China",
+            "Location_Death": [
+                "Zunyi City"
+            ],
+            "Start_Date_Death": "28 January 2008",
+            "End_Date_Death": "28 January 2008",
+            "Num_Death": "at least 25",
+            "Death_with_annotation": "Another crash on 28 January killed at least 25 when a bus plunged into an icy road near Zunyi City."
+        },
+        {
+            "Country": "China",
+            "Location_Death": [
+                "Hunan"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "3",
+            "Death_with_annotation": "Three electricians were killed in Hunan while attempting to remove snow and ice from power lines and were named 'revolutionary martyrs' by the government."
+        },
+        {
+            "Country": "China",
+            "Location_Death": [
+                "Guangzhou"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "at least 1",
+            "Death_with_annotation": "As there was a gradual restoration of train services, stampedes killed at least one person in Guangzhou."
+        },
+        {
+            "Country": "China",
+            "Location_Death": [
+                "NULL"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "60",
+            "Death_with_annotation": "Chinese officials mentioned that medical teams treated about 200 000 sick and injured people while 60 died from the cold."
+        },
+        {
+            "Country": "China",
+            "Location_Death": [
+                "NULL"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "11",
+            "Death_with_annotation": "11 electricians were also killed while restoring power across the country, but it wasn't clear if they were included in the official death toll of 60 people killed in accidents and building collapses blamed on the storms."
+        }
+    ],
+    "Start_Date": "25 January 2008",
+    "End_Date": "6 February 2008",
+    "Time_with_Annotation": "The 2008 Chinese winter storms (2008\u5e74\u4e2d\u56fd\u96ea\u707e\u30012008\u5e74\u4e2d\u56fd\u5357\u65b9\u96ea\u707e) were a series of winter storm events that affected large portions of southern and central China, where it does not usually snow severely or extensively, starting from 25 January 2008, until 6 February 2008.",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "NULL",
+        "Total_Insured_Damage_Units": "NULL",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "Insurance companies across the country received tens of thousands of compensation cases including half a million from the hardest-hit regions."
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "China",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "Insurance companies across the country received tens of thousands of compensation cases including half a million from the hardest-hit regions."
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "China",
+            "Location_Insured_Damage": [
+                "hardest-hit regions"
+            ],
+            "Num_Insured_Damage": "half a million",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Insurance companies across the country received tens of thousands of compensation cases including half a million from the hardest-hit regions."
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "1.8 million",
+        "Total_Displacement_Annotation": "Over two weeks, according to Xinhua, 1.8 million residents were relocated elsewhere."
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "China",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "1.8 million",
+            "Displacement_with_annotation": "Over two weeks, according to Xinhua, 1.8 million residents were relocated elsewhere."
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "China",
+            "Location_Displacement": [
+                "NULL"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "827,000",
+            "Displacement_with_annotation": "Moreover, during the first week, there were significant mandatory evacuations, and an estimated 827,000 people were evacuated across fourteen provinces, affecting a total population of about 78 million."
+        },
+        {
+            "Country": "China",
+            "Location_Displacement": [
+                "NULL"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "1.8 million",
+            "Displacement_with_annotation": "Over two weeks, according to Xinhua, 1.8 million residents were relocated elsewhere."
+        }
+    ],
+    "Location": [
+        "Hubei",
+        "Hunan",
+        "Zhejiang",
+        "Guizhou",
+        "Guangdong",
+        "Jiangxi",
+        "Guangxi",
+        "Fujian",
+        "Henan",
+        "Shandong",
+        "Jiangsu",
+        "Anhui",
+        "Shanghai",
+        "Chongqing",
+        "Shanxi",
+        "Sichuan",
+        "Taklamakan Desert",
+        "Xiangtan",
+        "Chenzhou",
+        "Fuzhou",
+        "Wuhan",
+        "Guangzhou",
+        "Zunyi City"
+    ],
+    "Location_with_Annotation": {
+        "Hubei": "The provinces of Hunan, Hubei, Henan, Shandong, Jiangsu, Anhui, and the municipality of Shanghai were hardest hit.",
+        "Hunan": "The provinces of Hunan, Hubei, Henan, Shandong, Jiangsu, Anhui, and the municipality of Shanghai were hardest hit.",
+        "Zhejiang": "Areas affected: Hubei, Hunan, Zhejiang, Guizhou, Guangdong, Jiangxi, Guangxi, Fujian, Henan, Shandong, Jiangsu, Anhui, Shanghai, Chongqing, Shanxi, Sichuan",
+        "Guizhou": "Areas affected: Hubei, Hunan, Zhejiang, Guizhou, Guangdong, Jiangxi, Guangxi, Fujian, Henan, Shandong, Jiangsu, Anhui, Shanghai, Chongqing, Shanxi, Sichuan",
+        "Guangdong": "Areas affected: Hubei, Hunan, Zhejiang, Guizhou, Guangdong, Jiangxi, Guangxi, Fujian, Henan, Shandong, Jiangsu, Anhui, Shanghai, Chongqing, Shanxi, Sichuan",
+        "Jiangxi": "Areas affected: Hubei, Hunan, Zhejiang, Guizhou, Guangdong, Jiangxi, Guangxi, Fujian, Henan, Shandong, Jiangsu, Anhui, Shanghai, Chongqing, Shanxi, Sichuan",
+        "Guangxi": "Areas affected: Hubei, Hunan, Zhejiang, Guizhou, Guangdong, Jiangxi, Guangxi, Fujian, Henan, Shandong, Jiangsu, Anhui, Shanghai, Chongqing, Shanxi, Sichuan",
+        "Fujian": "Areas affected: Hubei, Hunan, Zhejiang, Guizhou, Guangdong, Jiangxi, Guangxi, Fujian, Henan, Shandong, Jiangsu, Anhui, Shanghai, Chongqing, Shanxi, Sichuan",
+        "Henan": "The provinces of Hunan, Hubei, Henan, Shandong, Jiangsu, Anhui, and the municipality of Shanghai were hardest hit.",
+        "Shandong": "The provinces of Hunan, Hubei, Henan, Shandong, Jiangsu, Anhui, and the municipality of Shanghai were hardest hit.",
+        "Jiangsu": "The provinces of Hunan, Hubei, Henan, Shandong, Jiangsu, Anhui, and the municipality of Shanghai were hardest hit.",
+        "Anhui": "The provinces of Hunan, Hubei, Henan, Shandong, Jiangsu, Anhui, and the municipality of Shanghai were hardest hit.",
+        "Shanghai": "The provinces of Hunan, Hubei, Henan, Shandong, Jiangsu, Anhui, and the municipality of Shanghai were hardest hit.",
+        "Chongqing": "Areas affected: Hubei, Hunan, Zhejiang, Guizhou, Guangdong, Jiangxi, Guangxi, Fujian, Henan, Shandong, Jiangsu, Anhui, Shanghai, Chongqing, Shanxi, Sichuan",
+        "Shanxi": "Areas affected: Hubei, Hunan, Zhejiang, Guizhou, Guangdong, Jiangxi, Guangxi, Fujian, Henan, Shandong, Jiangsu, Anhui, Shanghai, Chongqing, Shanxi, Sichuan",
+        "Sichuan": "Areas affected: Hubei, Hunan, Zhejiang, Guizhou, Guangdong, Jiangxi, Guangxi, Fujian, Henan, Shandong, Jiangsu, Anhui, Shanghai, Chongqing, Shanxi, Sichuan",
+        "Taklamakan Desert": "Snow was even reported in the country's largest true desert, the Taklamakan, where the snow and record low temperatures near \u221225 \u00b0C (\u221213 \u00b0F) lasted 11 consecutive days and killed livestock.",
+        "Xiangtan": "CNN also reported that a 500 meter-long auto plant in Xiangtan had its entire roof collapse.",
+        "Chenzhou": "In Chenzhou, which has a population of 4.6 million, it was reported that the entire city had no power or water for nearly two weeks, including government buildings and hospitals, while telecommunications cables and Internet networks were also damaged.",
+        "Fuzhou": "In Fuzhou, Jiangxi, it was reported that the city lost power for about 3 weeks.",
+        "Wuhan": "For instance, in Wuhan, up to 100,000 people were out of running water when several water pipes burst, cutting the supply to local households.",
+        "Guangzhou": "Tens of thousands of people (on occasion as many as 500,000 to 800,000 at once) were left stranded at several railway stations across southern China, including Guangzhou railway station.",
+        "Zunyi City": "Another crash on 28 January killed at least 25 when a bus plunged into an icy road near Zunyi City."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "At least 151.65 billion Chinese yuan ($21.94 billion US$)",
+        "Total_Economic_Damage_Units": "Chinese yuan",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "Damage: At least 151.65 billion Chinese yuan ($21.94 billion US$)"
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "China",
+            "Total_Economic_Damage": "At least 151.65 billion Chinese yuan ($21.94 billion US$)",
+            "Total_Economic_Damage_Units": "Chinese yuan",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Damage: At least 151.65 billion Chinese yuan ($21.94 billion US$)"
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "China",
+            "Location_Economic_Damage": [
+                "Chenzhou"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "NULL",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "In Chenzhou, which has a population of 4.6 million, it was reported that the entire city had no power or water for nearly two weeks, including government buildings and hospitals, while telecommunications cables and Internet networks were also damaged."
+        },
+        {
+            "Country": "China",
+            "Location_Economic_Damage": [
+                "Fuzhou"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "NULL",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "In Fuzhou, Jiangxi, it was reported that the city lost power for about 3 weeks."
+        },
+        {
+            "Country": "China",
+            "Location_Economic_Damage": [
+                "Guizhou"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "NULL",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "In Guizhou, officials said it could take up to five months to mend the power grid fully."
+        },
+        {
+            "Country": "China",
+            "Location_Economic_Damage": [
+                "Wuhan"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "NULL",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "In Wuhan, up to 100,000 people were out of running water when several water pipes burst, cutting the supply to local households."
+        },
+        {
+            "Country": "China",
+            "Location_Economic_Damage": [
+                "Guangxi"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "NULL",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "In the Guangxi region, about 239,000 were also having problems accessing drinking water."
+        },
+        {
+            "Country": "China",
+            "Location_Economic_Damage": [
+                "Hunan"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "NULL",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "In Hunan, three electricians were killed while attempting to remove snow and ice from power lines and were named 'revolutionary martyrs' by the government."
+        },
+        {
+            "Country": "China",
+            "Location_Economic_Damage": [
+                "Guangzhou"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "NULL",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "In Guangzhou, at Baiyun Airport, 10,000 were stranded after 55 flights were cancelled."
+        },
+        {
+            "Country": "China",
+            "Location_Economic_Damage": [
+                "Xiangtan"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "NULL",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "CNN also reported that a 500 meter-long auto plant in Xiangtan had its entire roof collapse."
+        }
+    ],
+    "Perils": "Cold Spell/Cold Snap|Blizzard",
+    "Perils_Assessment_With_Annotation": {
+        "Cold Spell/Cold Snap": "The severe winter events started on 10 January when a large dome of cold air enveloped most parts of China, causing much precipitation in the form of heavy snow west of the coastal areas, where the temperature dropped to slightly below 0 \u00b0C (32 \u00b0F).",
+        "Blizzard": "The 2008 Chinese winter storms (2008\u5e74\u4e2d\u56fd\u96ea\u707e\u30012008\u5e74\u4e2d\u56fd\u5357\u65b9\u96ea\u707e) were a series of winter storm events that affected large portions of southern and central China, where it does not usually snow severely or extensively, starting from 25 January 2008, until 6 February 2008. The systems affected most of the area with heavy snows, ice, and cold temperatures causing extensive damage and transportation disruption for several thousand travelers."
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "862,000",
+        "Total_Building_Damage_Annotation": "It was estimated that about 223,000 homes were destroyed and 862,000 others were damaged."
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "China",
+            "Start_Date_Building_Damage": "25 January 2008",
+            "End_Date_Building_Damage": "6 February 2008",
+            "Num_Building_Damage": "862,000",
+            "Building_Damage_with_annotation": "It was estimated that about 223,000 homes were destroyed and 862,000 others were damaged."
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "China",
+            "Location_Building_Damage": [
+                "Xiangtan"
+            ],
+            "Start_Date_Building_Damage": "25 January 2008",
+            "End_Date_Building_Damage": "6 February 2008",
+            "Num_Building_Damage": "1",
+            "Building_Damage_with_annotation": "CNN also reported that a 500 meter-long auto plant in Xiangtan had its entire roof collapse."
+        },
+        {
+            "Country": "China",
+            "Location_Building_Damage": [
+                "Chenzhou"
+            ],
+            "Start_Date_Building_Damage": "25 January 2008",
+            "End_Date_Building_Damage": "6 February 2008",
+            "Num_Building_Damage": "1",
+            "Building_Damage_with_annotation": "In Chenzhou, which has a population of 4.6 million, it was reported that the entire city had no power or water for nearly two weeks, including government buildings and hospitals."
+        },
+        {
+            "Country": "China",
+            "Location_Building_Damage": [
+                "Fuzhou"
+            ],
+            "Start_Date_Building_Damage": "25 January 2008",
+            "End_Date_Building_Damage": "6 February 2008",
+            "Num_Building_Damage": "1",
+            "Building_Damage_with_annotation": "In Fuzhou, Jiangxi, it was reported that the city lost power for about 3 weeks."
+        },
+        {
+            "Country": "China",
+            "Location_Building_Damage": [
+                "Wuhan"
+            ],
+            "Start_Date_Building_Damage": "25 January 2008",
+            "End_Date_Building_Damage": "6 February 2008",
+            "Num_Building_Damage": "1",
+            "Building_Damage_with_annotation": "For instance, in Wuhan, up to 100,000 people were out of running water when several water pipes burst, cutting the supply to local households."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "78 million",
+        "Total_Affected_Annotation": "Moreover, during the first week, there were significant mandatory evacuations, and an estimated 827,000 people were evacuated across fourteen provinces, affecting a total population of about 78 million."
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "China",
+            "Start_Date_Affected": "25 January 2008",
+            "End_Date_Affected": "6 February 2008",
+            "Num_Affected": "78 million",
+            "Affected_with_annotation": "Moreover, during the first week, there were significant mandatory evacuations, and an estimated 827,000 people were evacuated across fourteen provinces, affecting a total population of about 78 million."
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "Chenzhou"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "4.6 million",
+            "Affected_with_annotation": "In Chenzhou, which has a population of 4.6 million, it was reported that the entire city had no power or water for nearly two weeks, including government buildings and hospitals, while telecommunications cables and Internet networks were also damaged."
+        },
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "Fuzhou",
+                "Jiangxi"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "In Fuzhou, Jiangxi, it was reported that the city lost power for about 3 weeks."
+        },
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "Guangxi"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "239,000",
+            "Affected_with_annotation": "In the Guangxi region, about 239,000 were also having problems accessing drinking water."
+        },
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "Guangdong"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "11 million",
+            "Affected_with_annotation": "Xinhua reported that 11 million migrant workers in the Guangdong area received ticket refunds."
+        },
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "Guangzhou"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "10,000",
+            "Affected_with_annotation": "10,000 at Baiyun Airport in Guangzhou were stranded after 55 flights were cancelled."
+        },
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "Guangzhou"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "As there was a gradual restoration of train services, stampedes killed at least one person in Guangzhou."
+        },
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "Hunan"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "3",
+            "Affected_with_annotation": "Three electricians were killed in Hunan while attempting to remove snow and ice from power lines and were named 'revolutionary martyrs' by the government."
+        },
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "Hunan"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Most of the rail service resumed on 31 January, but heavy fog on 3 February caused further delays, particularly in Hunan."
+        },
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "Anhui"
+            ],
+            "Start_Date_Affected": "21 January 2008",
+            "End_Date_Affected": "21 January 2008",
+            "Num_Affected": "11",
+            "Affected_with_annotation": "Among the fatalities, 11 were killed in a bus accident in Anhui in which the bus flipped into a ditch on January 21."
+        },
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "Zunyi City"
+            ],
+            "Start_Date_Affected": "28 January 2008",
+            "End_Date_Affected": "28 January 2008",
+            "Num_Affected": "25",
+            "Affected_with_annotation": "Another crash on 28 January killed at least 25 when a bus plunged into an icy road near Zunyi City."
+        },
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "NULL"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "200,000",
+            "Affected_with_annotation": "Chinese officials mentioned that medical teams treated about 200 000 sick and injured people while 60 died from the cold."
+        },
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "NULL"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "11",
+            "Affected_with_annotation": "11 electricians were also killed while restoring power across the country, but it wasn't clear if they were included in the official death toll of 60 people killed in accidents and building collapses blamed on the storms."
+        }
+    ]
+}

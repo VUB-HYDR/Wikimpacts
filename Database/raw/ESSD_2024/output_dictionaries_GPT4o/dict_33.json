@@ -1,0 +1,435 @@
+{
+    "Event_ID": "93.0",
+    "Source": "https://en.wikipedia.org/wiki/Tropical_Storm_Usagi_(2018)",
+    "Event_Name": "Tropical Storm Usagi (2018)   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "21,224 people",
+        "Total_Homelessness_Annotation": "124,226 people were affected, 21,224 people were displaced, 4,967 people were evacuated, and 2,746 houses were damaged."
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Homelessness": "November 20, 2018",
+            "End_Date_Homelessness": "November 21, 2018",
+            "Num_Homelessness": "21,224 people",
+            "Homelessness_with_annotation": "124,226 people were affected, 21,224 people were displaced, 4,967 people were evacuated, and 2,746 houses were damaged."
+        },
+        {
+            "Country": "Vietnam",
+            "Start_Date_Homelessness": "November 25, 2018",
+            "End_Date_Homelessness": "November 27, 2018",
+            "Num_Homelessness": "300 families",
+            "Homelessness_with_annotation": "300 families on the island of B\u00ecnh L\u1eadp were stranded after the bridge connecting the island to the mainland washed away."
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "Philippines",
+            "Location_Homelessness": [
+                "Iloilo City",
+                "Samar"
+            ],
+            "Start_Date_Homelessness": "November 20, 2018",
+            "End_Date_Homelessness": "November 21, 2018",
+            "Num_Homelessness": "21,224 people",
+            "Homelessness_with_annotation": "124,226 people were affected, 21,224 people were displaced, 4,967 people were evacuated, and 2,746 houses were damaged."
+        },
+        {
+            "Country": "Vietnam",
+            "Location_Homelessness": [
+                "B\u00ecnh L\u1eadp"
+            ],
+            "Start_Date_Homelessness": "November 25, 2018",
+            "End_Date_Homelessness": "November 27, 2018",
+            "Num_Homelessness": "300 families",
+            "Homelessness_with_annotation": "300 families on the island of B\u00ecnh L\u1eadp were stranded after the bridge connecting the island to the mainland washed away."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "NULL",
+        "Total_Injury_Annotation": "NULL"
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "Vietnam",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "Philippines",
+            "Location_Injury": [
+                "Iloilo City"
+            ],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "Vietnam",
+            "Location_Injury": [
+                "Ho Chi Minh City"
+            ],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Assessment_With_Annotation": "Severe Tropical Storm Usagi, known in the Philippines as Tropical Storm Samuel, was a tropical cyclone that affected the Philippines and Southern Vietnam in late November 2018, causing severe damage around the Visayas region and Ho Chi Minh City.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "4",
+        "Total_Death_Annotation": "Usagi caused one death in the Philippines,[32] with agricultural damages being estimated at \u20b152.2 million (US$992,000). Usagi caused 3 deaths and \u20ab925 billion (US$39.8 million) in damages in Vietnam."
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "1",
+            "Death_with_annotation": "Usagi caused one death in the Philippines,[32] with agricultural damages being estimated at \u20b152.2 million (US$992,000)."
+        },
+        {
+            "Country": "Vietnam",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "3",
+            "Death_with_annotation": "Usagi caused 3 deaths and \u20ab925 billion (US$39.8 million) in damages in Vietnam."
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "Philippines",
+            "Location_Death": [
+                "NULL"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "1",
+            "Death_with_annotation": "Usagi caused one death in the Philippines,[32] with agricultural damages being estimated at \u20b152.2 million (US$992,000)."
+        },
+        {
+            "Country": "Vietnam",
+            "Location_Death": [
+                "NULL"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "3",
+            "Death_with_annotation": "Usagi caused 3 deaths and \u20ab925 billion (US$39.8 million) in damages in Vietnam."
+        }
+    ],
+    "Start_Date": "November 13, 2018",
+    "End_Date": "November 27, 2018",
+    "Time_with_Annotation": "Formed: November 13, 2018\nDissipated: November 27, 2018",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "NULL",
+        "Total_Insured_Damage_Units": "NULL",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Total_Insured_Damage": "\u20b152.2 million",
+            "Total_Insured_Damage_Units": "PHP",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "\"Usagi caused one death and \u20b152.2 million (US$992,000) in damages in the Philippines, most of which came from agriculture.\""
+        },
+        {
+            "Country": "Vietnam",
+            "Total_Insured_Damage": "\u20ab925 billion",
+            "Total_Insured_Damage_Units": "VND",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "\"Usagi caused 3 deaths and \u20ab925 billion (US$39.8 million) in damages in Vietnam.\""
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "Philippines",
+            "Location_Insured_Damage": [
+                "Visayas"
+            ],
+            "Num_Insured_Damage": "\u20b152.2 million",
+            "Insured_Damage_Units": "PHP",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "\"Usagi caused one death and \u20b152.2 million (US$992,000) in damages in the Philippines, most of which came from agriculture.\""
+        },
+        {
+            "Country": "Vietnam",
+            "Location_Insured_Damage": [
+                "Ho Chi Minh City"
+            ],
+            "Num_Insured_Damage": "\u20ab925 billion",
+            "Insured_Damage_Units": "VND",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "\"Usagi caused 3 deaths and \u20ab925 billion (US$39.8 million) in damages in Vietnam.\""
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "160,000",
+        "Total_Displacement_Annotation": "A total of 160 thousand people were evacuated from several localities."
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "21,224",
+            "Displacement_with_annotation": "124,226 people were affected, 21,224 people were displaced, 4,967 people were evacuated, and 2,746 houses were damaged."
+        },
+        {
+            "Country": "Vietnam",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "160,000",
+            "Displacement_with_annotation": "A total of 160 thousand people were evacuated from several localities."
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "Philippines",
+            "Location_Displacement": [
+                "NULL"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "21,224",
+            "Displacement_with_annotation": "124,226 people were affected, 21,224 people were displaced, 4,967 people were evacuated, and 2,746 houses were damaged."
+        },
+        {
+            "Country": "Vietnam",
+            "Location_Displacement": [
+                "NULL"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "160,000",
+            "Displacement_with_annotation": "A total of 160 thousand people were evacuated from several localities."
+        }
+    ],
+    "Location": [
+        "Marshall Islands",
+        "Caroline Islands",
+        "Philippines",
+        "Vietnam",
+        "Visayas",
+        "Ho Chi Minh City",
+        "Eastern Samar",
+        "Cebu",
+        "Negros Occidental",
+        "Iloilo",
+        "Sulu Sea",
+        "Araceli",
+        "Palawan",
+        "V\u0169ng T\u00e0u",
+        "Cambodia",
+        "Iloilo City",
+        "Basco",
+        "Cuyo",
+        "Samar",
+        "C\u1ea7n Gi\u1edd District",
+        "Kh\u00e1nh H\u00f2a",
+        "Central Highlands",
+        "B\u00ecnh Thu\u1eadn",
+        "Th\u1eeba Thi\u00ean Hu\u1ebf",
+        "Qu\u1ea3ng Tr\u1ecb",
+        "T\u00e2n B\u00ecnh District",
+        "C\u00f4ng H\u1ea3i",
+        "B\u00ecnh L\u1eadp"
+    ],
+    "Location_with_Annotation": {
+        "Marshall Islands": "On November 13, at 00:00 UTC, the Japan Meteorological Agency (JMA) assessed that the system had developed into a tropical depression near the Marshall Islands.",
+        "Caroline Islands": "On November 13, at 00:00 UTC, the Japan Meteorological Agency (JMA) assessed that the system had developed into a tropical depression near the Marshall Islands.",
+        "Philippines": "Usagi caused one death and \u20b152.2 million (US$992,000) in damages in the Philippines, most of which came from agriculture.",
+        "Vietnam": "Usagi caused 3 deaths and \u20ab925 billion (US$39.8 million) in damages in Vietnam.",
+        "Visayas": "Severe Tropical Storm Usagi, known in the Philippines as Tropical Storm Samuel, was a tropical cyclone that affected the Philippines and Southern Vietnam in late November 2018, causing severe damage around the Visayas region and Ho Chi Minh City.",
+        "Ho Chi Minh City": "Severe Tropical Storm Usagi, known in the Philippines as Tropical Storm Samuel, was a tropical cyclone that affected the Philippines and Southern Vietnam in late November 2018, causing severe damage around the Visayas region and Ho Chi Minh City.",
+        "Eastern Samar": "33W made landfall on Hernani, Eastern Samar on November 20, at 17:00 UTC.",
+        "Cebu": "After turning west-southwestward, 33W made 4 more landfalls over Cebu, Negros Occidental, and Iloilo between 22:00 UTC and 02:00 UTC on the next day.",
+        "Negros Occidental": "After turning west-southwestward, 33W made 4 more landfalls over Cebu, Negros Occidental, and Iloilo between 22:00 UTC and 02:00 UTC on the next day.",
+        "Iloilo": "After turning west-southwestward, 33W made 4 more landfalls over Cebu, Negros Occidental, and Iloilo between 22:00 UTC and 02:00 UTC on the next day.",
+        "Sulu Sea": "Now in the Sulu Sea, the system's low-level circulation moved closer to convection.",
+        "Araceli": "33W made landfall on Araceli, Palawan at 13:00 UTC and moved into the South China Sea afterwards.",
+        "Palawan": "33W made landfall on Araceli, Palawan at 13:00 UTC and moved into the South China Sea afterwards.",
+        "V\u0169ng T\u00e0u": "Usagi made landfall on V\u0169ng T\u00e0u at 07:00 UTC.",
+        "Cambodia": "Usagi dissipated over Cambodia at 00:00 UTC on November 27.",
+        "Iloilo City": "Flooding was reported in Iloilo City, with over 7,800 passengers being stranded throughout various ports throughout the country.",
+        "Basco": "Basco recorded a gust of 18 metres per second (65 km/h; 40 mph).",
+        "Cuyo": "Cuyo recording 291.4 millimetres (11.47 in) of rain in 24 hours and 314 millimetres (12.4 in) of rain in total.",
+        "Samar": "Several landslides were reported during the storm's passage, all of which were in the island of Samar.",
+        "C\u1ea7n Gi\u1edd District": "1 thousand police officers and officials being prepared in C\u1ea7n Gi\u1edd District.",
+        "Kh\u00e1nh H\u00f2a": "270 thousand students were affected after Kh\u00e1nh H\u00f2a suspended classes.",
+        "Central Highlands": "A heavy rain warning was issued for the Central Highlands and the provinces between B\u00ecnh Thu\u1eadn and Th\u1eeba Thi\u00ean Hu\u1ebf.",
+        "B\u00ecnh Thu\u1eadn": "A heavy rain warning was issued for the Central Highlands and the provinces between B\u00ecnh Thu\u1eadn and Th\u1eeba Thi\u00ean Hu\u1ebf.",
+        "Th\u1eeba Thi\u00ean Hu\u1ebf": "A heavy rain warning was issued for the Central Highlands and the provinces between B\u00ecnh Thu\u1eadn and Th\u1eeba Thi\u00ean Hu\u1ebf.",
+        "Qu\u1ea3ng Tr\u1ecb": "A flood warning was also issued for the Central Highlands, the Southeast, and the provinces between Qu\u1ea3ng Tr\u1ecb and B\u00ecnh Thu\u1eadn.",
+        "T\u00e2n B\u00ecnh District": "T\u00e2n B\u00ecnh District recorded 407.6 millimetres (16 in) of rain, surpassing the district's record of most rainfall.",
+        "C\u00f4ng H\u1ea3i": "A 300 metres (980 ft) stretch of the North\u2013South railway was washed away in C\u00f4ng H\u1ea3i.",
+        "B\u00ecnh L\u1eadp": "300 families on the island of B\u00ecnh L\u1eadp were stranded after the bridge connecting the island to the mainland washed away."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "40.8 million",
+        "Total_Economic_Damage_Units": "USD",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "Usagi caused one death and \u20b152.2 million (US$992,000) in damages in the Philippines, most of which came from agriculture. Usagi caused 3 deaths and \u20ab925 billion (US$39.8 million) in damages in Vietnam."
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Total_Economic_Damage": "52.2 million",
+            "Total_Economic_Damage_Units": "PHP",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Usagi caused one death and \u20b152.2 million (US$992,000) in damages in the Philippines, most of which came from agriculture."
+        },
+        {
+            "Country": "Vietnam",
+            "Total_Economic_Damage": "925 billion",
+            "Total_Economic_Damage_Units": "VND",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Usagi caused 3 deaths and \u20ab925 billion (US$39.8 million) in damages in Vietnam."
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "Philippines",
+            "Location_Economic_Damage": [
+                "Visayas"
+            ],
+            "Num_Economic_Damage": "52.2 million",
+            "Economic_Damage_Units": "PHP",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Usagi caused one death and \u20b152.2 million (US$992,000) in damages in the Philippines, most of which came from agriculture."
+        },
+        {
+            "Country": "Vietnam",
+            "Location_Economic_Damage": [
+                "Ho Chi Minh City"
+            ],
+            "Num_Economic_Damage": "925 billion",
+            "Economic_Damage_Units": "VND",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Usagi caused 3 deaths and \u20ab925 billion (US$39.8 million) in damages in Vietnam."
+        }
+    ],
+    "Perils": "Wind|Rainfall|Flood|Landfall|Landslide",
+    "Perils_Assessment_With_Annotation": {
+        "Wind": "Basco recorded a gust of 18 metres per second (65 km/h; 40 mph)",
+        "Rainfall": "Cuyo recording 291.4 millimetres (11.47 in) of rain in 24 hours and 314 millimetres (12.4 in) of rain in total",
+        "Flood": "Flooding was reported in Iloilo City|A flood warning was also issued for the Central Highlands, the Southeast, and the provinces between Qu\u1ea3ng Tr\u1ecb and B\u00ecnh Thu\u1eadn|60 roads were flooded in Ho Chi Minh City|Flooding on some roads reached 1 metre (3.3 ft) deep",
+        "Landfall": "33W made landfall on Hernani, Eastern Samar on November 20|33W made 4 more landfalls over Cebu, Negros Occidental, and Iloilo|33W made landfall on Araceli, Palawan|Usagi made landfall on V\u0169ng T\u00e0u at 07:00 UTC",
+        "Landslide": "Several landslides were reported during the storm's passage, all of which were in the island of Samar"
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "NULL",
+        "Total_Building_Damage_Annotation": "NULL"
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "2,746",
+            "Building_Damage_with_annotation": "\"2,746 houses were damaged.\""
+        },
+        {
+            "Country": "Vietnam",
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "51",
+            "Building_Damage_with_annotation": "\"51 houses were damaged.\""
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "Philippines",
+            "Location_Building_Damage": [
+                "NULL"
+            ],
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "2,746",
+            "Building_Damage_with_annotation": "\"2,746 houses were damaged.\""
+        },
+        {
+            "Country": "Vietnam",
+            "Location_Building_Damage": [
+                "NULL"
+            ],
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "51",
+            "Building_Damage_with_annotation": "\"51 houses were damaged.\""
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "284,226",
+        "Total_Affected_Annotation": "124,226 people were affected, 21,224 people were displaced, 4,967 people were evacuated, and 2,746 houses were damaged. 160,000 thousand people were evacuated."
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Affected": "November 20, 2018",
+            "End_Date_Affected": "November 21, 2018",
+            "Num_Affected": "124,226",
+            "Affected_with_annotation": "124,226 people were affected, 21,224 people were displaced, 4,967 people were evacuated, and 2,746 houses were damaged."
+        },
+        {
+            "Country": "Vietnam",
+            "Start_Date_Affected": "November 25, 2018",
+            "End_Date_Affected": "November 27, 2018",
+            "Num_Affected": "160,000",
+            "Affected_with_annotation": "160,000 thousand people were evacuated."
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "Philippines",
+            "Location_Affected": [
+                "Iloilo City",
+                "Samar"
+            ],
+            "Start_Date_Affected": "November 20, 2018",
+            "End_Date_Affected": "November 21, 2018",
+            "Num_Affected": "124,226",
+            "Affected_with_annotation": "124,226 people were affected, 21,224 people were displaced, 4,967 people were evacuated, and 2,746 houses were damaged. Several landslides were reported during the storm's passage, all of which were in the island of Samar."
+        },
+        {
+            "Country": "Vietnam",
+            "Location_Affected": [
+                "Ho Chi Minh City",
+                "C\u1ea7n Gi\u1edd District",
+                "Kh\u00e1nh H\u00f2a",
+                "T\u00e2n B\u00ecnh District",
+                "C\u00f4ng H\u1ea3i",
+                "B\u00ecnh L\u1eadp"
+            ],
+            "Start_Date_Affected": "November 25, 2018",
+            "End_Date_Affected": "November 27, 2018",
+            "Num_Affected": "160,000",
+            "Affected_with_annotation": "160,000 thousand people were evacuated. 270 thousand students were affected after Kh\u00e1nh H\u00f2a suspended classes. 300 families on the island of B\u00ecnh L\u1eadp were stranded after the bridge connecting the island to the mainland washed away."
+        }
+    ]
+}

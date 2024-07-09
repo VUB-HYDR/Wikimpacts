@@ -1,0 +1,442 @@
+{
+    "Event_ID": "103.0",
+    "Source": "https://en.wikipedia.org/wiki/2014_Bulgarian_floods",
+    "Event_Name": "2014 Bulgarian floods   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "NULL",
+        "Total_Homelessness_Annotation": "NULL"
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "Bulgaria",
+            "Start_Date_Homelessness": "June 24, 2014",
+            "End_Date_Homelessness": "June 27, 2014",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "Starting from June 24, officials in Varna began evacuating around 250 Asparuhovo residents from 85 buildings deemed too dangerous to live in, including at least 11 that would be demolished immediately. By June 27, the number of evacuation orders in Asparuhovo had risen to 132, covering more than 1,000 residents of the neighborhood."
+        },
+        {
+            "Country": "Romania",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "Bulgaria",
+            "Location_Homelessness": [
+                "Asparuhovo"
+            ],
+            "Start_Date_Homelessness": "June 24, 2014",
+            "End_Date_Homelessness": "June 27, 2014",
+            "Num_Homelessness": "1,000 residents",
+            "Homelessness_with_annotation": "Starting from June 24, officials in Varna began evacuating around 250 Asparuhovo residents from 85 buildings deemed too dangerous to live in, including at least 11 that would be demolished immediately. By June 27, the number of evacuation orders in Asparuhovo had risen to 132, covering more than 1,000 residents of the neighborhood."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "NULL",
+        "Total_Injury_Annotation": "NULL"
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "Bulgaria",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "Romania",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "Bulgaria",
+            "Location_Injury": [
+                "Varna",
+                "Dobrich",
+                "Veliko Tarnovo",
+                "Shumen",
+                "Pazardzhik"
+            ],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "Romania",
+            "Location_Injury": [
+                "Constan\u021ba County"
+            ],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        }
+    ],
+    "Main_Event": "Flood",
+    "Main_Event_Assessment_With_Annotation": "On June 19, 2014, torrential rains caused severe flash flooding across northeastern Bulgaria leaving dozens of villages without electricity and submerging large parts of several cities in the region.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "16",
+        "Total_Death_Annotation": "At least 16 people were reported killed \u2013 13 (4 of which children) in the Asparuhovo district of Varna, one in Dobrich and two in the village of Tsani Ganchevo in Shumen Province."
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "Bulgaria",
+            "Start_Date_Death": "June 19, 2014",
+            "End_Date_Death": "June 26, 2014",
+            "Num_Death": "16",
+            "Death_with_annotation": "At least 16 people were reported killed \u2013 13 (4 of which children) in the Asparuhovo district of Varna, one in Dobrich and two in the village of Tsani Ganchevo in Shumen Province."
+        },
+        {
+            "Country": "Romania",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "NULL",
+            "Death_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "Bulgaria",
+            "Location_Death": [
+                "Asparuhovo",
+                "Varna"
+            ],
+            "Start_Date_Death": "June 19, 2014",
+            "End_Date_Death": "June 26, 2014",
+            "Num_Death": "13",
+            "Death_with_annotation": "At least 16 people were reported killed \u2013 13 (4 of which children) in the Asparuhovo district of Varna."
+        },
+        {
+            "Country": "Bulgaria",
+            "Location_Death": [
+                "Dobrich"
+            ],
+            "Start_Date_Death": "June 19, 2014",
+            "End_Date_Death": "June 19, 2014",
+            "Num_Death": "1",
+            "Death_with_annotation": "At least 16 people were reported killed \u2013 one in Dobrich."
+        },
+        {
+            "Country": "Bulgaria",
+            "Location_Death": [
+                "Tsani Ganchevo",
+                "Shumen Province"
+            ],
+            "Start_Date_Death": "June 19, 2014",
+            "End_Date_Death": "June 19, 2014",
+            "Num_Death": "2",
+            "Death_with_annotation": "At least 16 people were reported killed \u2013 two in the village of Tsani Ganchevo in Shumen Province."
+        }
+    ],
+    "Start_Date": "June 19, 2014",
+    "End_Date": "June 20, 2014",
+    "Time_with_Annotation": "On June 19, 2014, torrential rains caused severe flash flooding across northeastern Bulgaria... On June 20 the NIMH warned that further rains up to 20 L/m2 could be expected throughout the weekend.",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "311,000,000+",
+        "Total_Insured_Damage_Units": "EUR",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "Property damage: 311,000,000+ Euros"
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "Bulgaria",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Romania",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "Bulgaria",
+            "Location_Insured_Damage": [
+                "Veliko Tarnovo Province"
+            ],
+            "Num_Insured_Damage": "5,1 million",
+            "Insured_Damage_Units": "EUR",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "On June 24, officials announced that preliminary damage estimates in Veliko Tarnovo Province alone were over 10 million leva (5,1 million Euros)."
+        },
+        {
+            "Country": "Bulgaria",
+            "Location_Insured_Damage": [
+                "Road infrastructure"
+            ],
+            "Num_Insured_Damage": "7,7 million",
+            "Insured_Damage_Units": "EUR",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Damage to the country's road infrastructure was estimated at around 15 million leva (7,7 million Euros), including about 1.5 million leva to reopen the Pass of the Republic."
+        },
+        {
+            "Country": "Bulgaria",
+            "Location_Insured_Damage": [
+                "Varna Province"
+            ],
+            "Num_Insured_Damage": "15,25 million",
+            "Insured_Damage_Units": "EUR",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "On June 27, Varna Province officials announced that damage to local infrastructure there was estimated to be at least 30 million leva (15.25 million Euros)."
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "more than 1,000 residents",
+        "Total_Displacement_Annotation": "By June 27, the number of evacuation orders in Asparuhovo had risen to 132, covering more than 1,000 residents of the neighborhood."
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "Bulgaria",
+            "Start_Date_Displacement": "June 24, 2014",
+            "End_Date_Displacement": "June 27, 2014",
+            "Num_Displacement": "more than 1,000 residents",
+            "Displacement_with_annotation": "By June 27, the number of evacuation orders in Asparuhovo had risen to 132, covering more than 1,000 residents of the neighborhood."
+        },
+        {
+            "Country": "Romania",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "Bulgaria",
+            "Location_Displacement": [
+                "Asparuhovo"
+            ],
+            "Start_Date_Displacement": "June 24, 2014",
+            "End_Date_Displacement": "June 27, 2014",
+            "Num_Displacement": "more than 1,000 residents",
+            "Displacement_with_annotation": "By June 27, the number of evacuation orders in Asparuhovo had risen to 132, covering more than 1,000 residents of the neighborhood."
+        },
+        {
+            "Country": "Bulgaria",
+            "Location_Displacement": [
+                "Asparuhovo"
+            ],
+            "Start_Date_Displacement": "June 24, 2014",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "250 residents",
+            "Displacement_with_annotation": "Starting from June 24, officials in Varna began evacuating around 250 Asparuhovo residents from 85 buildings deemed too dangerous to live in."
+        }
+    ],
+    "Location": [
+        "Varna Province",
+        "Dobrich Province",
+        "Veliko Tarnovo Province",
+        "Shumen Province",
+        "Pazardzhik Province",
+        "Constan\u021ba County",
+        "Asparuhovo",
+        "Tsani Ganchevo",
+        "Albena",
+        "Adamclisi",
+        "Abrud",
+        "Urluia",
+        "Zorile",
+        "Mangalia",
+        "Mamaia"
+    ],
+    "Location_with_Annotation": {
+        "Varna Province": "On June 19, 2014, torrential rains caused severe flash flooding across northeastern Bulgaria leaving dozens of villages without electricity and submerging large parts of several cities in the region.",
+        "Dobrich Province": "On June 19, 2014, torrential rains caused severe flash flooding across northeastern Bulgaria leaving dozens of villages without electricity and submerging large parts of several cities in the region.",
+        "Veliko Tarnovo Province": "On June 20 the government declared a state of emergency in the provinces of Varna, Shumen, Dobrich, Veliko Tarnovo and Pazardzhik.",
+        "Shumen Province": "On June 20 the government declared a state of emergency in the provinces of Varna, Shumen, Dobrich, Veliko Tarnovo and Pazardzhik.",
+        "Pazardzhik Province": "On June 20 the government declared a state of emergency in the provinces of Varna, Shumen, Dobrich, Veliko Tarnovo and Pazardzhik.",
+        "Constan\u021ba County": "Abundant rainfall, the result of a Mediterranean cyclone, also caused damage on the Romanian shore of the Black Sea, especially in Constan\u021ba County.",
+        "Asparuhovo": "At least 16 people were reported killed \u2013 13 (4 of which children) in the Asparuhovo district of Varna.",
+        "Tsani Ganchevo": "At least 16 people were reported killed \u2013 13 (4 of which children) in the Asparuhovo district of Varna, one in Dobrich and two in the village of Tsani Ganchevo in Shumen Province.",
+        "Albena": "The Batova river burst its banks near the Black Sea resort of Albena, prompting the evacuation of six hotels.",
+        "Adamclisi": "According to data presented by the Inspectorate for Emergency Situations of Constan\u021ba County, the most affected areas in the county were Brebeni, wherein the amount of water was 92 L/m2, Adamclisi \u2013 80.2 L/m2.",
+        "Abrud": "Tens of kilometers of roads were flooded, disrupting traffic in the localities of Adamclisi, Abrud, Urluia and Zorile.",
+        "Urluia": "Tens of kilometers of roads were flooded, disrupting traffic in the localities of Adamclisi, Abrud, Urluia and Zorile.",
+        "Zorile": "Tens of kilometers of roads were flooded, disrupting traffic in the localities of Adamclisi, Abrud, Urluia and Zorile.",
+        "Mangalia": "According to data presented by the Inspectorate for Emergency Situations of Constan\u021ba County, the most affected areas in the county were Brebeni, wherein the amount of water was 92 L/m2, Adamclisi \u2013 80.2 L/m2, Deleni \u2013 60 L/m2, Albe\u0219ti \u2013 64 L/m2 and the municipality of Mangalia, with 31 L/m2.",
+        "Mamaia": "In Mamaia, the rain destroyed a cafe on the seafront."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "311,000,000+",
+        "Total_Economic_Damage_Units": "EUR",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "Property damage: 311,000,000+ Euros[1][2][3][4]"
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "Bulgaria",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Romania",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "Bulgaria",
+            "Location_Economic_Damage": [
+                "Veliko Tarnovo Province"
+            ],
+            "Num_Economic_Damage": "5,1 million",
+            "Economic_Damage_Units": "EUR",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "On June 24, officials announced that preliminary damage estimates in Veliko Tarnovo Province alone were over 10 million leva (5,1 million Euros)."
+        },
+        {
+            "Country": "Bulgaria",
+            "Location_Economic_Damage": [
+                "Country's road infrastructure"
+            ],
+            "Num_Economic_Damage": "7,7 million",
+            "Economic_Damage_Units": "EUR",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Damage to the country's road infrastructure was estimated at around 15 million leva (7,7 million Euros), including about 1.5 million leva to reopen the Pass of the Republic."
+        },
+        {
+            "Country": "Bulgaria",
+            "Location_Economic_Damage": [
+                "Varna Province"
+            ],
+            "Num_Economic_Damage": "15,25 million",
+            "Economic_Damage_Units": "EUR",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "On June 27, Varna Province officials announced that damage to local infrastructure there was estimated to be at least 30 million leva (15.25 million Euros)."
+        }
+    ],
+    "Perils": "Rainfall|Flood|Wind|Landslide|Hail",
+    "Perils_Assessment_With_Annotation": {
+        "Rainfall": "On June 19, 2014, torrential rains caused severe flash flooding across northeastern Bulgaria... Abundant rainfall, the result of a Mediterranean cyclone, also caused damage on the Romanian shore of the Black Sea, especially in Constan\u021ba County.",
+        "Flood": "On June 19, 2014, torrential rains caused severe flash flooding across northeastern Bulgaria... The Batova river burst its banks near the Black Sea resort of Albena, prompting the evacuation of six hotels.",
+        "Wind": "Wind gusts of 94 km/h caused significant damage in the summer resorts.",
+        "Landslide": "Due to the extreme amount of precipitation, measures were taken to stabilize parts of the hillside in the area for fears it might collapse in a landslide.",
+        "Hail": "In the days leading up to the event, large parts of the country had been battered by heavy rain and hailstorms."
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "NULL",
+        "Total_Building_Damage_Annotation": "NULL"
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "Bulgaria",
+            "Start_Date_Building_Damage": "June 19, 2014",
+            "End_Date_Building_Damage": "June 27, 2014",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "NULL"
+        },
+        {
+            "Country": "Romania",
+            "Start_Date_Building_Damage": "June 19, 2014",
+            "End_Date_Building_Damage": "June 20, 2014",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "Bulgaria",
+            "Location_Building_Damage": [
+                "Asparuhovo"
+            ],
+            "Start_Date_Building_Damage": "June 19, 2014",
+            "End_Date_Building_Damage": "June 27, 2014",
+            "Num_Building_Damage": "85",
+            "Building_Damage_with_annotation": "Starting from June 24, officials in Varna began evacuating around 250 Asparuhovo residents from 85 buildings deemed too dangerous to live in, including at least 11 that would be demolished immediately."
+        },
+        {
+            "Country": "Bulgaria",
+            "Location_Building_Damage": [
+                "Albena"
+            ],
+            "Start_Date_Building_Damage": "June 19, 2014",
+            "End_Date_Building_Damage": "June 20, 2014",
+            "Num_Building_Damage": "6 hotels",
+            "Building_Damage_with_annotation": "The Batova river burst its banks near the Black Sea resort of Albena, prompting the evacuation of six hotels."
+        },
+        {
+            "Country": "Romania",
+            "Location_Building_Damage": [
+                "Constan\u021ba"
+            ],
+            "Start_Date_Building_Damage": "June 19, 2014",
+            "End_Date_Building_Damage": "June 20, 2014",
+            "Num_Building_Damage": "dozens of houses",
+            "Building_Damage_with_annotation": "Likewise, dozens of houses and 70 hectares of pasture were affected by floods."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "around 800 families",
+        "Total_Affected_Annotation": "Authorities estimated the total numbers of families that would require long-term help at around 800, spread across Varna, Dobrich and Veliko Tarnovo provinces."
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "Bulgaria",
+            "Start_Date_Affected": "June 19, 2014",
+            "End_Date_Affected": "June 27, 2014",
+            "Num_Affected": "around 800 families",
+            "Affected_with_annotation": "Authorities estimated the total numbers of families that would require long-term help at around 800, spread across Varna, Dobrich and Veliko Tarnovo provinces."
+        },
+        {
+            "Country": "Romania",
+            "Start_Date_Affected": "June 19, 2014",
+            "End_Date_Affected": "June 20, 2014",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "Bulgaria",
+            "Location_Affected": [
+                "Varna",
+                "Dobrich",
+                "Veliko Tarnovo"
+            ],
+            "Start_Date_Affected": "June 19, 2014",
+            "End_Date_Affected": "June 27, 2014",
+            "Num_Affected": "around 800 families",
+            "Affected_with_annotation": "Authorities estimated the total numbers of families that would require long-term help at around 800, spread across Varna, Dobrich and Veliko Tarnovo provinces."
+        },
+        {
+            "Country": "Romania",
+            "Location_Affected": [
+                "Constan\u021ba County"
+            ],
+            "Start_Date_Affected": "June 19, 2014",
+            "End_Date_Affected": "June 20, 2014",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "NULL"
+        }
+    ]
+}

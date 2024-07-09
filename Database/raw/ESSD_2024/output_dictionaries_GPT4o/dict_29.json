@@ -1,0 +1,398 @@
+{
+    "Event_ID": "87.0",
+    "Source": "https://en.wikipedia.org/wiki/Hurricane_Erick_(2013)",
+    "Event_Name": "Hurricane Erick (2013)   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "Dozens of families",
+        "Total_Homelessness_Annotation": "Dozens of families were directly affected by the storm."
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "Mexico",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "Dozens of families",
+            "Homelessness_with_annotation": "Dozens of families were directly affected by the storm."
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "Mexico",
+            "Location_Homelessness": [
+                "Xalisco"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "Dozens of families",
+            "Homelessness_with_annotation": "Dozens of families were directly affected by the storm. Substantial amounts of debris piled up on streets. Residents reported severe economical losses, especially in Xalisco, where a disaster declaration was necessary."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "NULL",
+        "Total_Injury_Annotation": "NULL"
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "Mexico",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "Mexico",
+            "Location_Injury": [
+                "Acapulco",
+                "Puerto Marques"
+            ],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "Mexico",
+            "Location_Injury": [
+                "Nayarit"
+            ],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "Mexico",
+            "Location_Injury": [
+                "Xalisco"
+            ],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "Mexico",
+            "Location_Injury": [
+                "Tepic"
+            ],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Assessment_With_Annotation": "Hurricane Erick brought minor impacts to the western coastline of Mexico in July 2013, and was the last of a succession of four Category 1 hurricanes to affect the Pacific coast of Mexico early in the 2013 Pacific hurricane season.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "2",
+        "Total_Death_Annotation": "In all, two people were killed while two others were missing."
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "Mexico",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "2",
+            "Death_with_annotation": "In all, two people were killed while two others were missing."
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "Mexico",
+            "Location_Death": [
+                "Nayarit"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "1",
+            "Death_with_annotation": "A 74-year-old woman died while trying to escape her flooded house."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Death": [
+                "Nayarit"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "1",
+            "Death_with_annotation": "A man was killed after being swept away by the river."
+        }
+    ],
+    "Start_Date": "July 4, 2013",
+    "End_Date": "July 9, 2013",
+    "Time_with_Annotation": "Formed: July 4, 2013\nDissipated: July 9, 2013",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "Minimal",
+        "Total_Insured_Damage_Units": "NULL",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "Damage: Minimal"
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "Mexico",
+            "Total_Insured_Damage": "Minimal",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "Damage: Minimal"
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "Mexico",
+            "Location_Insured_Damage": [
+                "Acapulco",
+                "Puerto Marques",
+                "Nayarit",
+                "Xalisco",
+                "Tepic"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": [
+                "In Guerrero, minor flooding was reported in the cities of Acapulco and Puerto Marques.",
+                "A river overflowed its banks in Nayarit, flooding several cities in the state. Numerous cars, streets, and homes were damaged by flooding.",
+                "Substantial amounts of debris piled up on streets. Residents reported severe economical losses, especially in Xalisco, where a disaster declaration was necessary.",
+                "In Tepic, Governor Roberto Sandoval ordered a state of emergency."
+            ]
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "hundreds of",
+        "Total_Displacement_Annotation": "Officials in Nayarit attempted to rescue hundreds of people affected by Hurricane Erick."
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "Mexico",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "hundreds of",
+            "Displacement_with_annotation": "Officials in Nayarit attempted to rescue hundreds of people affected by Hurricane Erick."
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "Mexico",
+            "Location_Displacement": [
+                "Acapulco"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "In fear of flash flooding, residents along low-lying areas of Acapulco were urged to evacuate."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Displacement": [
+                "Nayarit"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "hundreds of",
+            "Displacement_with_annotation": "Officials in Nayarit attempted to rescue hundreds of people affected by Hurricane Erick."
+        }
+    ],
+    "Location": [
+        "Southwestern Mexico",
+        "Western Mexico",
+        "Baja California Peninsula",
+        "Guerrero",
+        "Acapulco",
+        "Puerto Marques",
+        "Nayarit",
+        "Baja California Sur",
+        "L\u00e1zaro C\u00e1rdenas",
+        "Manzanillo",
+        "La Fortuna",
+        "Cabo Corrientes",
+        "Zihuatanejo",
+        "Santa Fe",
+        "La Paz",
+        "Colima",
+        "Jalisco",
+        "Cabo San Lucas",
+        "San Jose del Cabo",
+        "Xalisco",
+        "Tepic"
+    ],
+    "Location_with_Annotation": {
+        "Southwestern Mexico": "Hurricane Erick brought minor impacts to the western coastline of Mexico in July 2013",
+        "Western Mexico": "Hurricane Erick brought minor impacts to the western coastline of Mexico in July 2013",
+        "Baja California Peninsula": "Across Baja California Sur, the storm produced widespread precipitation, leading to flooding.",
+        "Guerrero": "In Guerrero, minor flooding was reported in the cities of Acapulco and Puerto Marques.",
+        "Acapulco": "In Guerrero, minor flooding was reported in the cities of Acapulco and Puerto Marques.",
+        "Puerto Marques": "In Guerrero, minor flooding was reported in the cities of Acapulco and Puerto Marques.",
+        "Nayarit": "A river overflowed its banks in Nayarit, flooding several cities in the state.",
+        "Baja California Sur": "Across Baja California Sur, the storm produced widespread precipitation, leading to flooding.",
+        "L\u00e1zaro C\u00e1rdenas": "A central dense overcast formed by the daylight hours of July 5, with tight banding noted on satellite. In addition, microwave imagery indicated the formative stages of an eyewall. Initially vertically decoupled, the storm became more vertically aligned throughout the following hours. A ragged eye became intermittently visible on satellite, and Erick was upgraded to Category 1 hurricane status at 0600 UTC, located approximately 105 mi (170 km) west-southwest of L\u00e1zaro C\u00e1rdenas, Mexico.",
+        "Manzanillo": "By 0300 UTC on July 5, the watch was extended from Acapulco to Manzanillo, while a tropical storm warning was issued from L\u00e1zaro C\u00e1rdenas to Manzanillo.",
+        "La Fortuna": "Following the system's designation, a tropical storm watch was issued for the southwestern coastline of Mexico stretching from Acapulco to La Fortuna.",
+        "Cabo Corrientes": "After being upgraded to a hurricane, Erick prompted the issuance of hurricane watches stretching from Punta San Telmo to Cabo Corrientes.",
+        "Zihuatanejo": "Meanwhile, the warning from L\u00e1zaro C\u00e1rdenas to Manzanillo was discontinued, with a new warning issued from Zihuatanejo to La Fortuna.",
+        "Santa Fe": "At 1500 UTC on July 6, a tropical storm watch was issued from Santa Fe to La Paz, though this was upgraded to a warning several hours later.",
+        "La Paz": "At 1500 UTC on July 6, a tropical storm watch was issued from Santa Fe to La Paz, though this was upgraded to a warning several hours later.",
+        "Colima": "In preparation for the tropical cyclone, an \"orange\" alert was issued for southern Michoac\u00e1n, southern Jalisco, and the entire state of Colima, while a \"yellow\" alert was posted for the rest of the Jalisco coastline.",
+        "Jalisco": "In preparation for the tropical cyclone, an \"orange\" alert was issued for southern Michoac\u00e1n, southern Jalisco, and the entire state of Colima, while a \"yellow\" alert was posted for the rest of the Jalisco coastline.",
+        "Cabo San Lucas": "The ports of La Paz, Cabo San Lucas, and San Jose del Cabo were closed due to high waves.",
+        "San Jose del Cabo": "The ports of La Paz, Cabo San Lucas, and San Jose del Cabo were closed due to high waves.",
+        "Xalisco": "Residents reported severe economical losses, especially in Xalisco, where a disaster declaration was necessary.",
+        "Tepic": "In Tepic, Governor Roberto Sandoval ordered a state of emergency."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "Minimal",
+        "Total_Economic_Damage_Units": "NULL",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "Damage: Minimal"
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "Mexico",
+            "Total_Economic_Damage": "Minimal",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Damage: Minimal"
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "Mexico",
+            "Location_Economic_Damage": [
+                "Acapulco",
+                "Puerto Marques"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "In Acapulco and Puerto Marques, the storm was responsible for minor flooding."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Economic_Damage": [
+                "Nayarit"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Further north, Erick brought extensive flood damage to Nayarit."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Economic_Damage": [
+                "Xalisco"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Residents reported severe economical losses, especially in Xalisco, where a disaster declaration was necessary."
+        }
+    ],
+    "Perils": "Wind|Rainfall|Flood|Landslide",
+    "Perils_Assessment_With_Annotation": {
+        "Wind": "Despite remaining offshore, the outer rainbands of the storm affected the southwestern coastline with gusty winds and heavy rainfall.",
+        "Rainfall": "Despite remaining offshore, the outer rainbands of the storm affected the southwestern coastline with gusty winds and heavy rainfall.",
+        "Flood": "In Guerrero, minor flooding was reported in the cities of Acapulco and Puerto Marques. A river overflowed its banks in Nayarit, flooding several cities in the state. Numerous cars, streets, and homes were damaged by flooding. A woman died as she attempted to flee her house, while a man was killed after being swept away by the river. Hundreds of people were rescued by the Mexican military and Nayarit officials. Across Baja California Sur, the storm produced widespread precipitation, leading to flooding.",
+        "Landslide": "Elsewhere across the state, damage was minor and mostly due to landslides."
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "several",
+        "Total_Building_Damage_Annotation": "Numerous cars, streets, and homes were damaged by flooding."
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "Mexico",
+            "Start_Date_Building_Damage": "July 4, 2013",
+            "End_Date_Building_Damage": "July 9, 2013",
+            "Num_Building_Damage": "several",
+            "Building_Damage_with_annotation": "Numerous cars, streets, and homes were damaged by flooding."
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "Mexico",
+            "Location_Building_Damage": [
+                "Acapulco",
+                "Puerto Marques"
+            ],
+            "Start_Date_Building_Damage": "July 4, 2013",
+            "End_Date_Building_Damage": "July 9, 2013",
+            "Num_Building_Damage": "minor",
+            "Building_Damage_with_annotation": "In Acapulco and Puerto Marques, the storm was responsible for minor flooding."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Building_Damage": [
+                "Nayarit"
+            ],
+            "Start_Date_Building_Damage": "July 4, 2013",
+            "End_Date_Building_Damage": "July 9, 2013",
+            "Num_Building_Damage": "several",
+            "Building_Damage_with_annotation": "A river overflowed its banks in Nayarit, flooding several cities in the state. Numerous cars, streets, and homes were damaged by flooding."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Building_Damage": [
+                "Colima"
+            ],
+            "Start_Date_Building_Damage": "July 4, 2013",
+            "End_Date_Building_Damage": "July 9, 2013",
+            "Num_Building_Damage": "minor",
+            "Building_Damage_with_annotation": "Although some flooding was reported across the state, damage was considered minor."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "hundreds of",
+        "Total_Affected_Annotation": "Officials in Nayarit attempted to rescue hundreds of people affected by Hurricane Erick."
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "Mexico",
+            "Start_Date_Affected": "July 4, 2013",
+            "End_Date_Affected": "July 9, 2013",
+            "Num_Affected": "hundreds of",
+            "Affected_with_annotation": "Officials in Nayarit attempted to rescue hundreds of people affected by Hurricane Erick."
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "Mexico",
+            "Location_Affected": [
+                "Acapulco",
+                "Puerto Marques"
+            ],
+            "Start_Date_Affected": "July 4, 2013",
+            "End_Date_Affected": "July 9, 2013",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "In Acapulco and Puerto Marques, the storm was responsible for minor flooding."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Affected": [
+                "Nayarit"
+            ],
+            "Start_Date_Affected": "July 4, 2013",
+            "End_Date_Affected": "July 9, 2013",
+            "Num_Affected": "hundreds of",
+            "Affected_with_annotation": "Officials in Nayarit attempted to rescue hundreds of people affected by Hurricane Erick."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Affected": [
+                "Xalisco"
+            ],
+            "Start_Date_Affected": "July 4, 2013",
+            "End_Date_Affected": "July 9, 2013",
+            "Num_Affected": "Dozens of families",
+            "Affected_with_annotation": "Dozens of families were directly affected by the storm. Substantial amounts of debris piled up on streets. Residents reported severe economical losses, especially in Xalisco, where a disaster declaration was necessary."
+        }
+    ]
+}

@@ -1,0 +1,569 @@
+{
+    "Event_ID": "102.0",
+    "Source": "https://en.wikipedia.org/wiki/Hurricane_Fred_(2015)",
+    "Event_Name": "Hurricane Fred (2015)   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "NULL",
+        "Total_Homelessness_Annotation": "NULL"
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "Cape Verde",
+            "Start_Date_Homelessness": "August 31, 2015",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "Cape Verde",
+            "Location_Homelessness": [
+                "Ribeira Brava"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "In Ribeira Brava, S\u00e3o Nicolau's most populous town, the storm damaged 70 homes, destroyed greenhouses, and leveled a farmhouse, leaving some families homeless and others without a source of income."
+        },
+        {
+            "Country": "Cape Verde",
+            "Location_Homelessness": [
+                "Porto Novo"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "35",
+            "Homelessness_with_annotation": "In Porto Novo, 35 people were relocated as floods swept through neighborhoods."
+        },
+        {
+            "Country": "Cape Verde",
+            "Location_Homelessness": [
+                "Terra Boa",
+                "Espargos"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "130",
+            "Homelessness_with_annotation": "At the height of the storm, floods forced nearly 130 people living in the impoverished outskirts of Terra Boa and Espargos to relocate to shelters."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "NULL",
+        "Total_Injury_Annotation": "NULL"
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "Cape Verde",
+            "Start_Date_Injury": "August 31, 2015",
+            "End_Date_Injury": "August 31, 2015",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "Cape Verde",
+            "Location_Injury": [
+                "Boa Vista"
+            ],
+            "Start_Date_Injury": "August 31, 2015",
+            "End_Date_Injury": "August 31, 2015",
+            "Num_Injury": "2",
+            "Injury_with_annotation": "Two inhabitants were taken to hospital for non-critical injuries after their home had partially collapsed."
+        },
+        {
+            "Country": "Cape Verde",
+            "Location_Injury": [
+                "S\u00e3o Vicente"
+            ],
+            "Start_Date_Injury": "August 31, 2015",
+            "End_Date_Injury": "August 31, 2015",
+            "Num_Injury": "1",
+            "Injury_with_annotation": "Gusts toppled two trees, one striking a car and lightly injuring the driver."
+        }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Assessment_With_Annotation": "Hurricane Fred was the easternmost Atlantic hurricane to form in the tropics, and the first to move through Cape Verde since 1892. The second hurricane and sixth named storm of the 2015 Atlantic hurricane season, Fred originated from a well-defined tropical wave over West Africa in late August 2015.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "9",
+        "Total_Death_Annotation": "Between the coasts of West Africa and Cape Verde, maritime incidents related to Fred resulted in nine deaths."
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "West Africa",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "7",
+            "Death_with_annotation": "Offshore, waves as high as 23 feet (7 m) capsized a fishing boat with a crew of 19; twelve members were rescued, but the remaining seven disappeared at sea and were presumed dead."
+        },
+        {
+            "Country": "Cape Verde",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "2",
+            "Death_with_annotation": "Although there were no casualties on land, two fishermen navigating through the storm never returned to port in Boa Vista and were presumed dead."
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "West Africa",
+            "Location_Death": [
+                "offshore"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "7",
+            "Death_with_annotation": "Offshore, waves as high as 23 feet (7 m) capsized a fishing boat with a crew of 19; twelve members were rescued, but the remaining seven disappeared at sea and were presumed dead."
+        },
+        {
+            "Country": "Cape Verde",
+            "Location_Death": [
+                "Boa Vista"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "2",
+            "Death_with_annotation": "Although there were no casualties on land, two fishermen navigating through the storm never returned to port in Boa Vista and were presumed dead."
+        }
+    ],
+    "Start_Date": "August 30, 2015",
+    "End_Date": "September 6, 2015",
+    "Time_with_Annotation": "Formed: August 30, 2015\nDissipated: September 6, 2015",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "2.5 million",
+        "Total_Insured_Damage_Units": "USD",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "Material damage across Cape Verde totaled US$2.5 million."
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "Cape Verde",
+            "Total_Insured_Damage": "2.5 million",
+            "Total_Insured_Damage_Units": "USD",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "Material damage across Cape Verde totaled US$2.5 million."
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "Cape Verde",
+            "Location_Insured_Damage": [
+                "Boa Vista"
+            ],
+            "Num_Insured_Damage": "760,000",
+            "Insured_Damage_Units": "USD",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Throughout Boa Vista, estimated losses from Fred totaled CVE$76 million ($760,000)."
+        },
+        {
+            "Country": "Cape Verde",
+            "Location_Insured_Damage": [
+                "Sal"
+            ],
+            "Num_Insured_Damage": "300,000",
+            "Insured_Damage_Units": "USD",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Overall, the hurricane left CVE$30 million ($300,000) in damage across Sal."
+        },
+        {
+            "Country": "Cape Verde",
+            "Location_Insured_Damage": [
+                "S\u00e3o Nicolau"
+            ],
+            "Num_Insured_Damage": "500,000",
+            "Insured_Damage_Units": "USD",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Damage to agriculture\u2014primarily banana and sugarcane\u2014and private property on the island reached CVE$50 million ($500,000)."
+        },
+        {
+            "Country": "Cape Verde",
+            "Location_Insured_Damage": [
+                "S\u00e3o Vicente",
+                "Santo Ant\u00e3o"
+            ],
+            "Num_Insured_Damage": "160,000",
+            "Insured_Damage_Units": "USD",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Hurricane-related costs for the two islands, mainly infrastructural repair, totaled CVE$16 million ($160,000)."
+        },
+        {
+            "Country": "Cape Verde",
+            "Location_Insured_Damage": [
+                "Santiago"
+            ],
+            "Num_Insured_Damage": "860,000",
+            "Insured_Damage_Units": "USD",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Structural damage across Santiago, mostly due to urban flooding, reached CVE$87 million ($860,000)."
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "NULL",
+        "Total_Displacement_Annotation": "NULL"
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "Cape Verde",
+            "Start_Date_Displacement": "August 31, 2015",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "50 families",
+            "Displacement_with_annotation": "Throughout Cape Verde, Hurricane Fred displaced more than 50 families."
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "Cape Verde",
+            "Location_Displacement": [
+                "Porto Novo",
+                "Santo Ant\u00e3o"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "35 people",
+            "Displacement_with_annotation": "In Porto Novo, 35 people were relocated as floods swept through neighborhoods."
+        },
+        {
+            "Country": "Cape Verde",
+            "Location_Displacement": [
+                "Terra Boa",
+                "Espargos",
+                "Sal"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "130 people",
+            "Displacement_with_annotation": "At the height of the storm, floods forced nearly 130 people living in the impoverished outskirts of Terra Boa and Espargos to relocate to shelters."
+        }
+    ],
+    "Location": [
+        "West Africa",
+        "Senegal",
+        "Guinea-Bissau",
+        "Cape Verde",
+        "Boa Vista",
+        "Sal",
+        "S\u00e3o Nicolau",
+        "Santo Ant\u00e3o",
+        "S\u00e3o Vicente",
+        "Santiago",
+        "Fogo"
+    ],
+    "Location_with_Annotation": {
+        "West Africa": "Swells from the hurricane produced violent seas along the West African shoreline, destroying fishing villages and submerging swaths of residential areas in Senegal.",
+        "Senegal": "Swells from the hurricane produced violent seas along the West African shoreline, destroying fishing villages and submerging swaths of residential areas in Senegal.",
+        "Guinea-Bissau": "Farther south, in Guinea-Bissau, a storm surge flooded roads and low-lying establishments, such as offices and military barracks.",
+        "Cape Verde": "Under threat from the hurricane, all of Cape Verde was placed under a hurricane warning for the first time in the nation's history.",
+        "Boa Vista": "On the easternmost islands of Boa Vista and Sal, Fred leveled roofs and left villages without power or phone services for a few days.",
+        "Sal": "On the easternmost islands of Boa Vista and Sal, Fred leveled roofs and left villages without power or phone services for a few days.",
+        "S\u00e3o Nicolau": "Across the northernmost islands, rainstorms flooded homes, washed out roads, and ruined farmland; S\u00e3o Nicolau endured great losses of crops and livestock.",
+        "Santo Ant\u00e3o": "After passing Boa Vista and moving away from Santo Ant\u00e3o, it entered a phase of steady weakening, dropping below hurricane status by September 1.",
+        "S\u00e3o Vicente": "On the neighboring islands of S\u00e3o Vicente and Santo Ant\u00e3o, the storm's impact was limited to power outages, floods, and damaged crops.",
+        "Santiago": "The storm's outer bands dropped heavy rain on the islands of Santiago and Fogo, peaking at 13 in (330 mm) in the mountains of Santiago and causing flood damage to roads, sidewalks, and walls.",
+        "Fogo": "The storm's outer bands dropped heavy rain on the islands of Santiago and Fogo, peaking at 13 in (330 mm) in the mountains of Santiago and causing flood damage to roads, sidewalks, and walls."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "2.5 million",
+        "Total_Economic_Damage_Units": "USD",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "Material damage across Cape Verde totaled US$2.5 million."
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "Cape Verde",
+            "Total_Economic_Damage": "2.5 million",
+            "Total_Economic_Damage_Units": "USD",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Material damage across Cape Verde totaled US$2.5 million."
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "Cape Verde",
+            "Location_Economic_Damage": [
+                "Boa Vista"
+            ],
+            "Num_Economic_Damage": "760,000",
+            "Economic_Damage_Units": "USD",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Throughout Boa Vista, estimated losses from Fred totaled CVE$76 million ($760,000)."
+        },
+        {
+            "Country": "Cape Verde",
+            "Location_Economic_Damage": [
+                "Sal"
+            ],
+            "Num_Economic_Damage": "300,000",
+            "Economic_Damage_Units": "USD",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Overall, the hurricane left CVE$30 million ($300,000) in damage across Sal."
+        },
+        {
+            "Country": "Cape Verde",
+            "Location_Economic_Damage": [
+                "S\u00e3o Nicolau"
+            ],
+            "Num_Economic_Damage": "500,000",
+            "Economic_Damage_Units": "USD",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Damage to agriculture\u2014primarily banana and sugarcane\u2014and private property on the island reached CVE$50 million ($500,000)."
+        },
+        {
+            "Country": "Cape Verde",
+            "Location_Economic_Damage": [
+                "S\u00e3o Vicente",
+                "Santo Ant\u00e3o"
+            ],
+            "Num_Economic_Damage": "160,000",
+            "Economic_Damage_Units": "USD",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Hurricane-related costs for the two islands, mainly infrastructural repair, totaled CVE$16 million ($160,000)."
+        },
+        {
+            "Country": "Cape Verde",
+            "Location_Economic_Damage": [
+                "Santiago"
+            ],
+            "Num_Economic_Damage": "860,000",
+            "Economic_Damage_Units": "USD",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Structural damage across Santiago, mostly due to urban flooding, reached CVE$87 million ($860,000)."
+        }
+    ],
+    "Perils": "Wind|Rainfall|Flood|Landslide",
+    "Perils_Assessment_With_Annotation": {
+        "Wind": "Gale-force winds battered much of the Barlavento region throughout August 31, downing trees and utility poles. On the easternmost islands of Boa Vista and Sal, Fred leveled roofs and left villages without power or phone services for a few days. About 70 percent of the houses in Povoa\u00e7\u00e3o Velha suffered light to moderate damage. Across the northernmost islands, rainstorms flooded homes, washed out roads, and ruined farmland; S\u00e3o Nicolau endured great losses of crops and livestock.",
+        "Rainfall": "Across the northernmost islands, rainstorms flooded homes, washed out roads, and ruined farmland; S\u00e3o Nicolau endured great losses of crops and livestock. Material damage across Cape Verde totaled US$2.5 million, though the rain's overall impact on agriculture was positive and replenishing.",
+        "Flood": "Swells from the hurricane produced violent seas along the West African shoreline, destroying fishing villages and submerging swaths of residential areas in Senegal. About 200 houses were demolished in the district of Hann, many of which experienced total wall collapse; dwellings in the town of Bargny endured similar destruction. In the suburb of Rufisque, the waves overtopped dams, entered homes and cemeteries, and destroyed a mosque. Several villages outside the capital area were completely cut off from their surroundings. Farther south, in Guinea-Bissau, a storm surge flooded roads and low-lying establishments, such as offices and military barracks. The sea water submerged vast amounts of cropland in the Tombali Region, resulting in great losses of rice.",
+        "Landslide": "The blustery weather uprooted many old trees, triggered landslides, and left the villages on the island without power."
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "NULL",
+        "Total_Building_Damage_Annotation": "NULL"
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "Senegal",
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "NULL"
+        },
+        {
+            "Country": "Guinea-Bissau",
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "NULL"
+        },
+        {
+            "Country": "Cape Verde",
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "Senegal",
+            "Location_Building_Damage": [
+                "Hann",
+                "Bargny",
+                "Rufisque"
+            ],
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "200 houses",
+            "Building_Damage_with_annotation": "About 200 houses were demolished in the district of Hann, many of which experienced total wall collapse; dwellings in the town of Bargny endured similar destruction."
+        },
+        {
+            "Country": "Cape Verde",
+            "Location_Building_Damage": [
+                "Boa Vista",
+                "Sal",
+                "S\u00e3o Nicolau",
+                "Santo Ant\u00e3o",
+                "S\u00e3o Vicente",
+                "Santiago"
+            ],
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "NULL"
+        },
+        {
+            "Country": "Cape Verde",
+            "Location_Building_Damage": [
+                "Povoa\u00e7\u00e3o Velha"
+            ],
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "70 percent of the houses",
+            "Building_Damage_with_annotation": "The southern village of Povoa\u00e7\u00e3o Velha bore the brunt of the storm; about 70 percent of the houses there experienced some degree of damage, from broken tiles and windows to crumbled walls."
+        },
+        {
+            "Country": "Cape Verde",
+            "Location_Building_Damage": [
+                "Santa Maria"
+            ],
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "Along the island's southern shore, Fred's storm surge sunk or stranded dozens of vessels and destroyed the island's main tourist pier in Santa Maria."
+        },
+        {
+            "Country": "Cape Verde",
+            "Location_Building_Damage": [
+                "Sal"
+            ],
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "Hotels, restaurants, and beach facilities were flooded, and roads in the town became impassable. Gusts leveled the roof of a high school gym."
+        },
+        {
+            "Country": "Cape Verde",
+            "Location_Building_Damage": [
+                "Ribeira Brava"
+            ],
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "70 homes",
+            "Building_Damage_with_annotation": "In Ribeira Brava, S\u00e3o Nicolau's most populous town, the storm damaged 70 homes, destroyed greenhouses, and leveled a farmhouse, leaving some families homeless and others without a source of income."
+        },
+        {
+            "Country": "Cape Verde",
+            "Location_Building_Damage": [
+                "Cabe\u00e7alinho"
+            ],
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "The strong winds downed power poles and wrecked the roof of a church in the village of Cabe\u00e7alinho."
+        },
+        {
+            "Country": "Cape Verde",
+            "Location_Building_Damage": [
+                "Carri\u00e7al"
+            ],
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "In Carri\u00e7al, the torrential rainfall flooded homes, washed out roads, and ruined fruit and hydroponic crops."
+        },
+        {
+            "Country": "Cape Verde",
+            "Location_Building_Damage": [
+                "Porto Novo"
+            ],
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "In Porto Novo, 35 people were relocated as floods swept through neighborhoods."
+        },
+        {
+            "Country": "Cape Verde",
+            "Location_Building_Damage": [
+                "Laginha"
+            ],
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "On S\u00e3o Vicente, roads were closed in and around Laginha. Gusts toppled two trees, one striking a car and lightly injuring the driver."
+        },
+        {
+            "Country": "Cape Verde",
+            "Location_Building_Damage": [
+                "S\u00e3o Miguel"
+            ],
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "In S\u00e3o Miguel, on the former island, flood waters and fallen trees led to major traffic obstructions."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "NULL",
+        "Total_Affected_Annotation": "NULL"
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "Senegal",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "NULL"
+        },
+        {
+            "Country": "Guinea-Bissau",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "NULL"
+        },
+        {
+            "Country": "Cape Verde",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "Senegal",
+            "Location_Affected": [
+                "Dakar",
+                "M'Bour",
+                "Hann",
+                "Bargny",
+                "Rufisque"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Swells from Fred reached wide stretches of the West African coastline, stirring up high seas as far north as Senegal. Along the shorelines between Dakar and M'Bour, rough surf devastated entire fishing districts and harbor towns, stranding boats and damaging roads and bridges. About 200 houses were demolished in the district of Hann, many of which experienced total wall collapse; dwellings in the town of Bargny endured similar destruction. In the suburb of Rufisque, the waves overtopped dams, entered homes and cemeteries, and destroyed a mosque. Several villages outside the capital area were completely cut off from their surroundings."
+        },
+        {
+            "Country": "Guinea-Bissau",
+            "Location_Affected": [
+                "Tombali Region"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Farther south, in Guinea-Bissau, a storm surge flooded roads and low-lying establishments, such as offices and military barracks. The sea water submerged vast amounts of cropland in the Tombali Region, resulting in great losses of rice."
+        },
+        {
+            "Country": "Cape Verde",
+            "Location_Affected": [
+                "Boa Vista",
+                "Sal",
+                "S\u00e3o Nicolau",
+                "Santo Ant\u00e3o",
+                "S\u00e3o Vicente",
+                "Santiago",
+                "Fogo"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Throughout Cape Verde, Hurricane Fred displaced more than 50 families and caused CVE$250 million ($2.5 million) in damage, primarily to the agricultural and private sectors of the Barlavento Islands. Traversing the eastern islands on the afternoon of August 31, Fred brought strong thunderstorms with 60 mph (100 km/h) winds and 3.8 inches (96 mm) of rain to Boa Vista, uprooting trees, damaging roofs and plaster, and knocking out power to most of the population. The winds toppled a transmission tower in Sal Rei, disrupting cellphone services. Two inhabitants were taken to hospital for non-critical injuries after their home had partially collapsed. Floods swept through low-lying areas of Rabil and cut off the main road to surrounding towns, hampering emergency workers. The southern village of Povoa\u00e7\u00e3o Velha bore the brunt of the storm; about 70 percent of the houses there experienced some degree of damage, from broken tiles and windows to crumbled walls, with repair costs of CVE$3 million (US$30,000). A compromised infrastructure left the village without power and telephone services for five days. Throughout Boa Vista, estimated losses from Fred totaled CVE$76 million ($760,000), including CVE$26 million ($260,000) in restoration costs. Similar conditions occurred in parts of Sal. Along the island's southern shore, Fred's storm surge sunk or stranded dozens of vessels and destroyed the island's main tourist pier in Santa Maria. Restoration efforts had not yet been completed by May 2017, about 1.5 years after the hurricane; the delay led to concerns over the island's precarious, tourism-reliant economy. Hotels, restaurants, and beach facilities were flooded, and roads in the town became impassable. Gusts leveled the roof of a high school gym, which had initially been set up as a storm shelter to 100 citizens. Elsewhere on the island, the winds knocked out power to homes in Palmeira, and caused minor structural damage to Sal International Airport. At the height of the storm, floods forced nearly 130 people living in the impoverished outskirts of Terra Boa and Espargos to relocate to shelters. Fred destroyed 80 percent of the Loggerhead sea turtle nests on the beaches of Sal, crucial nesting sites for the species. Overall, the hurricane left CVE$30 million ($300,000) in damage across Sal. Fred produced strong winds and downpours across the mountainous northern islands of Barlavento. S\u00e3o Nicolau experienced sustained hurricane-force winds of 80 mph (130 km/h)\u2014the highest official wind speed recorded during hurricane. Rainfall there was moderate, peaking at 3.5 in (90 mm) at Juncalinho. The blustery weather uprooted many old trees, triggered landslides, and left the villages on the island without power. The strong winds downed power poles and wrecked the roof of a church in the village of Cabe\u00e7alinho. In Ribeira Brava, S\u00e3o Nicolau's most populous town, the storm damaged 70 homes, destroyed greenhouses, and leveled a farmhouse, leaving some families homeless and others without a source of income. In Carri\u00e7al, the torrential rainfall flooded homes, washed out roads, and ruined fruit and hydroponic crops. Much of S\u00e3o Nicolau's livestock, including cattle from Hortel\u00e3, was lost in the storm. Damage to agriculture\u2014primarily banana and sugarcane\u2014and private property on the island reached CVE$50 million ($500,000). On the neighboring islands of S\u00e3o Vicente and Santo Ant\u00e3o, the storm's impact was limited to power outages, floods, and damaged crops. Santo Ant\u00e3o recorded light winds and 8 in (200 mm) of rain, although higher elevations received greater quantities. In Porto Novo, 35 people were relocated as floods swept through neighborhoods. The rain washed out the island's carrot, cabbage, and tomato plantations, especially in the vicinity of Alto Mira. On S\u00e3o Vicente, roads were closed in and around Laginha. Gusts toppled two trees, one striking a car and lightly injuring the driver. Hurricane-related costs for the two islands, mainly infrastructural repair, totaled CVE$16 million ($160,000). The impact of Fred on the Sotavento region was relatively minor. The storm's outer bands dropped heavy rain on the islands of Santiago and Fogo, peaking at 13 in (330 mm) in the mountains of Santiago and causing flood damage to roads, sidewalks, and walls. In S\u00e3o Miguel, on the former island, flood waters and fallen trees led to major traffic obstructions. Structural damage across Santiago, mostly due to urban flooding, reached CVE$87 million ($860,000). Conversely, the rains replenished dried-up water resources; a large reservoir in S\u00e3o Salvador do Mundo was filled to maximum capacity, irrigating adjacent arable lands."
+        }
+    ]
+}

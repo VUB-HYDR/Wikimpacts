@@ -1,0 +1,719 @@
+{
+    "Event_ID": "124.0",
+    "Source": "https://en.wikipedia.org/wiki/Cyclone_Pam",
+    "Event_Name": "Cyclone Pam   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "NULL",
+        "Total_Homelessness_Annotation": "NULL"
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "Vanuatu",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "3,300 people",
+            "Homelessness_with_annotation": "Thousands of homes, schools and buildings were damaged or destroyed, with an estimated 3,300 people displaced as a result."
+        },
+        {
+            "Country": "Tuvalu",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "71 families (40 percent of the population) of Nui; 76 people (13 percent of the population) of Nukufetau",
+            "Homelessness_with_annotation": "As of 22 March 71 families (40 percent of the population) of Nui remain displaced and were living in 3 evacuation centres or with other families and on Nukufetau, 76 people (13 percent of the population) remain displaced and were living in 2 evacuation centres."
+        },
+        {
+            "Country": "Solomon Islands",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "1,500 homes",
+            "Homelessness_with_annotation": "Approximately 1,500 homes were damaged or destroyed in the region and 5,000 people were directly."
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "Vanuatu",
+            "Location_Homelessness": [
+                "Efate",
+                "Port Vila",
+                "Tafea islands",
+                "Erromango",
+                "Tanna"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "3,300 people",
+            "Homelessness_with_annotation": "Thousands of homes, schools and buildings were damaged or destroyed, with an estimated 3,300 people displaced as a result."
+        },
+        {
+            "Country": "Tuvalu",
+            "Location_Homelessness": [
+                "Nui",
+                "Nukufetau"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "71 families (40 percent of the population) of Nui; 76 people (13 percent of the population) of Nukufetau",
+            "Homelessness_with_annotation": "As of 22 March 71 families (40 percent of the population) of Nui remain displaced and were living in 3 evacuation centres or with other families and on Nukufetau, 76 people (13 percent of the population) remain displaced and were living in 2 evacuation centres."
+        },
+        {
+            "Country": "Solomon Islands",
+            "Location_Homelessness": [
+                "Anuta",
+                "Tikopia"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "1,500 homes",
+            "Homelessness_with_annotation": "Approximately 1,500 homes were damaged or destroyed in the region and 5,000 people were directly."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "several",
+        "Total_Injury_Annotation": "Several injuries were reported, though exact numbers are unknown."
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "Solomon Islands",
+            "Start_Date_Injury": "12 March 2015",
+            "End_Date_Injury": "12 March 2015",
+            "Num_Injury": "several",
+            "Injury_with_annotation": "Several injuries were reported, though exact numbers are unknown."
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "Solomon Islands",
+            "Location_Injury": [
+                "Tikopia"
+            ],
+            "Start_Date_Injury": "12 March 2015",
+            "End_Date_Injury": "12 March 2015",
+            "Num_Injury": "several",
+            "Injury_with_annotation": "Several injuries were reported, though exact numbers are unknown."
+        }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Assessment_With_Annotation": "Severe Tropical Cyclone Pam was the second most intense tropical cyclone of the South Pacific Ocean in terms of sustained winds and is regarded as one of the worst natural disasters in the history of Vanuatu.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "15-16",
+        "Total_Death_Annotation": "A total of 15\u201316 people died either directly or indirectly as a result of Pam with many others injured."
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "Vanuatu",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "NULL",
+            "Death_with_annotation": "NULL"
+        },
+        {
+            "Country": "Solomon Islands",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "NULL",
+            "Death_with_annotation": "NULL"
+        },
+        {
+            "Country": "New Zealand",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "NULL",
+            "Death_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "Solomon Islands",
+            "Location_Death": [
+                "Santa Cruz Islands"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "NULL",
+            "Death_with_annotation": "Rainfall was particularly intense over the Santa Cruz Islands, where a 24\u2011hour total of 495 mm (19.5 in) was observed."
+        },
+        {
+            "Country": "Solomon Islands",
+            "Location_Death": [
+                "West Guadalcanal"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "NULL",
+            "Death_with_annotation": "Continuous heavy rain prompted the evacuation of 500 students in West Guadalcanal."
+        },
+        {
+            "Country": "Solomon Islands",
+            "Location_Death": [
+                "Anuta",
+                "Tikopia"
+            ],
+            "Start_Date_Death": "12 March 2015",
+            "End_Date_Death": "NULL",
+            "Num_Death": "NULL",
+            "Death_with_annotation": "The storm later struck the remote islands of Anuta and Tikopia on 12 March, causing extensive damage."
+        }
+    ],
+    "Start_Date": "6 March 2015",
+    "End_Date": "20 March 2015",
+    "Time_with_Annotation": "Formed: 6 March 2015 (6 March 2015)\nDissipated: 20 March 2015 (20 March 2015)",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "$692 million",
+        "Total_Insured_Damage_Units": "USD",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "Damage: $692 million (Costliest in Vanuatu history)"
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "Vanuatu",
+            "Total_Insured_Damage": "$692 million",
+            "Total_Insured_Damage_Units": "USD",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "Damage: $692 million (Costliest in Vanuatu history)"
+        },
+        {
+            "Country": "Tuvalu",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Solomon Islands",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "New Zealand",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "Vanuatu",
+            "Location_Insured_Damage": [
+                "Efate",
+                "Port Vila",
+                "Tafea",
+                "Erromango",
+                "Tanna"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Catastrophic damage occurred as the storm moved through the archipelago, particularly in Efate, the location of the Ni-Vanuatu capital of Port Vila; and the Tafea islands of Erromango and Tanna."
+        },
+        {
+            "Country": "Tuvalu",
+            "Location_Insured_Damage": [
+                "Nui",
+                "Nukufetau",
+                "Vaitupu",
+                "Nanumanga",
+                "Niutao",
+                "Nanumea"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Nui suffered the most damage of the three central islands (Nui, Nukufetau and Vaitupu); with both Nui and Nukufetau suffering the loss of 90% of the crops. Of the three northern islands (Nanumanga, Niutao, Nanumea), Nanumanga suffered the most damage, with 60\u2013100 houses flooded and damage to the health facility."
+        },
+        {
+            "Country": "Solomon Islands",
+            "Location_Insured_Damage": [
+                "Malaita",
+                "Makira-Ulawa",
+                "Temotu",
+                "Santa Cruz Islands",
+                "Anuta",
+                "Tikopia"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Early in the Cyclone Pam's development, it produced torrential rains and gale-force winds over the Solomon Provinces of Malaita, Makira-Ulawa, and Temotu. Trees and crops were flattened, and residents sheltered in schools and in caves after their homes were destroyed. Rainfall was particularly intense over the Santa Cruz Islands, where a 24\u2011hour total of 495 mm (19.5 in) was observed. Continuous heavy rain prompted the evacuation of 500 students in West Guadalcanal. The storm later struck the remote islands of Anuta and Tikopia on 12 March, causing extensive damage."
+        },
+        {
+            "Country": "New Zealand",
+            "Location_Insured_Damage": [
+                "North Island",
+                "Chatham Islands"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Civil Defense officials in New Zealand issued severe weather warnings, that the remnants of Cyclone Pam could bring unprecedented damage to much of the northeastern coastal areas of the North Island. Swells of 6\u20138 m (20\u201326 ft) were forecast with potential for damage exceeding that of Cyclone Bola \u2013 which struck New Zealand's North Island in 1988. The storm later brought winds up to 140 km/h (87 mph) to the Chatham Islands (pop: 650), prompting the declaration of a civil defence emergency. Downed trees cut power to portions of the islands, though no major damage was reported."
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "NULL",
+        "Total_Displacement_Annotation": "NULL"
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "Tuvalu",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "45 percent of the nation's residents",
+            "Displacement_with_annotation": "Early in Pam's history, a damaging storm surge was felt in Tuvalu, forcing a state of emergency declaration after 45 percent of the nation's residents were displaced."
+        },
+        {
+            "Country": "Vanuatu",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "3,300 people",
+            "Displacement_with_annotation": "Thousands of homes, schools and buildings were damaged or destroyed, with an estimated 3,300 people displaced as a result."
+        },
+        {
+            "Country": "Solomon Islands",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "Early in the Cyclone Pam's development, it produced torrential rains and gale-force winds over the Solomon Provinces of Malaita, Makira-Ulawa, and Temotu. Trees and crops were flattened, and residents sheltered in schools and in caves after their homes were destroyed."
+        },
+        {
+            "Country": "Solomon Islands",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "500 students",
+            "Displacement_with_annotation": "Continuous heavy rain prompted the evacuation of 500 students in West Guadalcanal."
+        },
+        {
+            "Country": "Solomon Islands",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "5,000 people",
+            "Displacement_with_annotation": "Approximately 1,500 homes were damaged or destroyed in the region and 5,000 people were directly."
+        },
+        {
+            "Country": "Tuvalu",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "71 families",
+            "Displacement_with_annotation": "As of 22 March 71 families (40 percent of the population) of Nui remain displaced and were living in 3 evacuation centres or with other families and on Nukufetau, 76 people (13 percent of the population) remain displaced and were living in 2 evacuation centres."
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "Tuvalu",
+            "Location_Displacement": [
+                "Nui"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "71 families",
+            "Displacement_with_annotation": "As of 22 March 71 families (40 percent of the population) of Nui remain displaced and were living in 3 evacuation centres or with other families and on Nukufetau, 76 people (13 percent of the population) remain displaced and were living in 2 evacuation centres."
+        },
+        {
+            "Country": "Solomon Islands",
+            "Location_Displacement": [
+                "West Guadalcanal"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "500 students",
+            "Displacement_with_annotation": "Continuous heavy rain prompted the evacuation of 500 students in West Guadalcanal."
+        },
+        {
+            "Country": "Solomon Islands",
+            "Location_Displacement": [
+                "Malaita",
+                "Makira-Ulawa",
+                "Temotu"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "Early in the Cyclone Pam's development, it produced torrential rains and gale-force winds over the Solomon Provinces of Malaita, Makira-Ulawa, and Temotu. Trees and crops were flattened, and residents sheltered in schools and in caves after their homes were destroyed."
+        },
+        {
+            "Country": "Solomon Islands",
+            "Location_Displacement": [
+                "Anuta",
+                "Tikopia"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "5,000 people",
+            "Displacement_with_annotation": "Approximately 1,500 homes were damaged or destroyed in the region and 5,000 people were directly."
+        }
+    ],
+    "Location": [
+        "Fiji",
+        "Kiribati",
+        "Solomon Islands",
+        "Tuvalu",
+        "Vanuatu",
+        "New Caledonia",
+        "New Zealand"
+    ],
+    "Location_with_Annotation": {
+        "Fiji": "Although not in the direct path of Pam, officials in Fiji warned residents in low-lying areas of potential flooding from the system's outer rain bands.",
+        "Kiribati": "Bavi and Pam caused severe weather including swells, heavy rain and strong winds to be reported within Kiribati between 8\u201311 March.",
+        "Solomon Islands": "Early in the Cyclone Pam's development, it produced torrential rains and gale-force winds over the Solomon Provinces of Malaita, Makira-Ulawa, and Temotu.",
+        "Tuvalu": "Early in Pam's history, a damaging storm surge was felt in Tuvalu, forcing a state of emergency declaration after 45 percent of the nation's residents were displaced.",
+        "Vanuatu": "Catastrophic damage occurred as the storm moved through the archipelago, particularly in Efate, the location of the Ni-Vanuatu capital of Port Vila; and the Tafea islands of Erromango and Tanna.",
+        "New Caledonia": "A pre-cyclone alert was raised in New Caledonia as a precaution.",
+        "New Zealand": "Pam later brought heavy winds and rough surf to New Zealand's North Island during its weakening stages."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "$692 million",
+        "Total_Economic_Damage_Units": "USD",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "Damage: $692 million (Costliest in Vanuatu history)"
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "Vanuatu",
+            "Total_Economic_Damage": "$692 million",
+            "Total_Economic_Damage_Units": "USD",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Damage: $692 million (Costliest in Vanuatu history)"
+        },
+        {
+            "Country": "Tuvalu",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Owing to the severity of damage in the nation, the local chapter of the Red Cross enacted an emergency operation plan on 16 March which would focus on the needs of 3,000 people."
+        },
+        {
+            "Country": "Solomon Islands",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Approximately 1,500 homes were damaged or destroyed in the region and 5,000 people were directly."
+        },
+        {
+            "Country": "New Caledonia",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "On the whole, material damages were relatively light, with a few fallen trees, a few roofs blown out, and only 26 people in need of emergency housing (18 on Mar\u00e9 and 8 on Lifou)."
+        },
+        {
+            "Country": "New Zealand",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Civil Defense officials in New Zealand issued severe weather warnings, that the remnants of Cyclone Pam could bring unprecedented damage to much of the northeastern coastal areas of the North Island."
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "Vanuatu",
+            "Location_Economic_Damage": [
+                "Efate",
+                "Port Vila",
+                "Tafea",
+                "Erromango",
+                "Tanna"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Catastrophic damage occurred as the storm moved through the archipelago, particularly in Efate, the location of the Ni-Vanuatu capital of Port Vila; and the Tafea islands of Erromango and Tanna."
+        },
+        {
+            "Country": "Tuvalu",
+            "Location_Economic_Damage": [
+                "Nui",
+                "Nukufetau",
+                "Vaitupu",
+                "Nanumanga",
+                "Niutao",
+                "Nanumea"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Nui suffered the most damage of the three central islands (Nui, Nukufetau and Vaitupu); with both Nui and Nukufetau suffering the loss of 90% of the crops. Of the three northern islands (Nanumanga, Niutao, Nanumea), Nanumanga suffered the most damage, with 60\u2013100 houses flooded and damage to the health facility."
+        },
+        {
+            "Country": "Solomon Islands",
+            "Location_Economic_Damage": [
+                "Malaita",
+                "Makira-Ulawa",
+                "Temotu",
+                "Santa Cruz Islands",
+                "West Guadalcanal",
+                "Anuta",
+                "Tikopia"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Early in the Cyclone Pam's development, it produced torrential rains and gale-force winds over the Solomon Provinces of Malaita, Makira-Ulawa, and Temotu. Trees and crops were flattened, and residents sheltered in schools and in caves after their homes were destroyed. Rainfall was particularly intense over the Santa Cruz Islands, where a 24\u2011hour total of 495 mm (19.5 in) was observed. Continuous heavy rain prompted the evacuation of 500 students in West Guadalcanal. The storm later struck the remote islands of Anuta and Tikopia on 12 March, causing extensive damage."
+        },
+        {
+            "Country": "New Caledonia",
+            "Location_Economic_Damage": [
+                "Mar\u00e9",
+                "Lifou"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "On the whole, material damages were relatively light, with a few fallen trees, a few roofs blown out, and only 26 people in need of emergency housing (18 on Mar\u00e9 and 8 on Lifou)."
+        },
+        {
+            "Country": "New Zealand",
+            "Location_Economic_Damage": [
+                "North Island",
+                "Whangarei District",
+                "Chatham Islands"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Civil Defense officials in New Zealand issued severe weather warnings, that the remnants of Cyclone Pam could bring unprecedented damage to much of the northeastern coastal areas of the North Island. Power outages took place in the Whangarei District. The storm later brought winds up to 140 km/h (87 mph) to the Chatham Islands (pop: 650), prompting the declaration of a civil defence emergency. Downed trees cut power to portions of the islands, though no major damage was reported."
+        }
+    ],
+    "Perils": "Wind|Rainfall|Flood",
+    "Perils_Assessment_With_Annotation": "Wind: 'The next day, Pam's sustained winds peaked at 250 km/h (155 mph) as the storm moved through Vanuatu' | Rainfall: 'Torrential rainfall occurred in the southeastern Solomon Islands, particularly in the Santa Cruz Islands' | Flood: 'Early in Pam's history, a damaging storm surge was felt in Tuvalu, forcing a state of emergency declaration after 45 percent of the nation's residents were displaced'",
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "thousands",
+        "Total_Building_Damage_Annotation": "Thousands of homes, schools and buildings were damaged or destroyed, with an estimated 3,300 people displaced as a result."
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "Vanuatu",
+            "Start_Date_Building_Damage": "13 March 2015",
+            "End_Date_Building_Damage": "14 March 2015",
+            "Num_Building_Damage": "90 percent of the nation's buildings",
+            "Building_Damage_with_annotation": "Catastrophic damage occurred as the storm moved through the archipelago, particularly in Efate, the location of the Ni-Vanuatu capital of Port Vila; and the Tafea islands of Erromango and Tanna. The cyclone crippled Vanuatu's infrastructure: an estimated 90 percent of the nation's buildings were impacted by the storm's effects, telecommunications were paralysed, and water shortages continue to plague the small nation."
+        },
+        {
+            "Country": "Solomon Islands",
+            "Start_Date_Building_Damage": "12 March 2015",
+            "End_Date_Building_Damage": "12 March 2015",
+            "Num_Building_Damage": "1,500 homes",
+            "Building_Damage_with_annotation": "Approximately 1,500 homes were damaged or destroyed in the region and 5,000 people were directly."
+        },
+        {
+            "Country": "Tuvalu",
+            "Start_Date_Building_Damage": "14 March 2015",
+            "End_Date_Building_Damage": "22 March 2015",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "As of 22 March 71 families (40 percent of the population) of Nui remain displaced and were living in 3 evacuation centres or with other families and on Nukufetau, 76 people (13 percent of the population) remain displaced and were living in 2 evacuation centres."
+        },
+        {
+            "Country": "New Caledonia",
+            "Start_Date_Building_Damage": "14 March 2015",
+            "End_Date_Building_Damage": "15 March 2015",
+            "Num_Building_Damage": "few",
+            "Building_Damage_with_annotation": "On the whole, material damages were relatively light, with a few fallen trees, a few roofs blown out, and only 26 people in need of emergency housing (18 on Mar\u00e9 and 8 on Lifou)."
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "Vanuatu",
+            "Location_Building_Damage": [
+                "Efate",
+                "Port Vila",
+                "Tafea",
+                "Erromango",
+                "Tanna"
+            ],
+            "Start_Date_Building_Damage": "13 March 2015",
+            "End_Date_Building_Damage": "14 March 2015",
+            "Num_Building_Damage": "90 percent of the nation's buildings",
+            "Building_Damage_with_annotation": "Catastrophic damage occurred as the storm moved through the archipelago, particularly in Efate, the location of the Ni-Vanuatu capital of Port Vila; and the Tafea islands of Erromango and Tanna. The cyclone crippled Vanuatu's infrastructure: an estimated 90 percent of the nation's buildings were impacted by the storm's effects, telecommunications were paralysed, and water shortages continue to plague the small nation."
+        },
+        {
+            "Country": "Solomon Islands",
+            "Location_Building_Damage": [
+                "Anuta",
+                "Tikopia"
+            ],
+            "Start_Date_Building_Damage": "12 March 2015",
+            "End_Date_Building_Damage": "12 March 2015",
+            "Num_Building_Damage": "1,500 homes",
+            "Building_Damage_with_annotation": "Approximately 1,500 homes were damaged or destroyed in the region and 5,000 people were directly."
+        },
+        {
+            "Country": "Tuvalu",
+            "Location_Building_Damage": [
+                "Nui",
+                "Nukufetau"
+            ],
+            "Start_Date_Building_Damage": "14 March 2015",
+            "End_Date_Building_Damage": "22 March 2015",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "As of 22 March 71 families (40 percent of the population) of Nui remain displaced and were living in 3 evacuation centres or with other families and on Nukufetau, 76 people (13 percent of the population) remain displaced and were living in 2 evacuation centres."
+        },
+        {
+            "Country": "New Caledonia",
+            "Location_Building_Damage": [
+                "Mar\u00e9",
+                "Lifou"
+            ],
+            "Start_Date_Building_Damage": "14 March 2015",
+            "End_Date_Building_Damage": "15 March 2015",
+            "Num_Building_Damage": "few",
+            "Building_Damage_with_annotation": "On the whole, material damages were relatively light, with a few fallen trees, a few roofs blown out, and only 26 people in need of emergency housing (18 on Mar\u00e9 and 8 on Lifou)."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "NULL",
+        "Total_Affected_Annotation": "NULL"
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "Vanuatu",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "NULL"
+        },
+        {
+            "Country": "Tuvalu",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "NULL"
+        },
+        {
+            "Country": "Solomon Islands",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "NULL"
+        },
+        {
+            "Country": "New Zealand",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "Vanuatu",
+            "Location_Affected": [
+                "Moso Island"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Residents on Moso Island, located just north of Efate, were forced to drink saltwater. Survivors stated that no aid had reached them as of 17 March, and most were forced to scavenge for food."
+        },
+        {
+            "Country": "Vanuatu",
+            "Location_Affected": [
+                "Port Vila"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "The Adventist Development and Relief Agency responded by distributing shelter kits, water filtration kits and food packages, as well as setting up 10 evacuation centres in Port Vila."
+        },
+        {
+            "Country": "Vanuatu",
+            "Location_Affected": [
+                "Tongoa"
+            ],
+            "Start_Date_Affected": "24 March",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "On 24 March, IsraAid reached Tongoa in the Shepherds Islands group by boat, and distributed over 40 tons of rice, flour and water to twelve villages and eight schools on two islands levelled by the cyclone."
+        },
+        {
+            "Country": "Tuvalu",
+            "Location_Affected": [
+                "Nui"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "71 families (40 percent of the population)",
+            "Affected_with_annotation": "As of 22 March 71 families (40 percent of the population) of Nui remain displaced and were living in 3 evacuation centres or with other families."
+        },
+        {
+            "Country": "Tuvalu",
+            "Location_Affected": [
+                "Nukufetau"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "22 March",
+            "Num_Affected": "76 people (13 percent of the population)",
+            "Affected_with_annotation": "On Nukufetau, 76 people (13 percent of the population) remain displaced and were living in 2 evacuation centres."
+        },
+        {
+            "Country": "Solomon Islands",
+            "Location_Affected": [
+                "Santa Cruz Islands"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Rainfall was particularly intense over the Santa Cruz Islands, where a 24\u2011hour total of 495 mm (19.5 in) was observed."
+        },
+        {
+            "Country": "Solomon Islands",
+            "Location_Affected": [
+                "West Guadalcanal"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "500 students",
+            "Affected_with_annotation": "Continuous heavy rain prompted the evacuation of 500 students in West Guadalcanal."
+        },
+        {
+            "Country": "Solomon Islands",
+            "Location_Affected": [
+                "Anuta",
+                "Tikopia"
+            ],
+            "Start_Date_Affected": "12 March",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "1,500 homes",
+            "Affected_with_annotation": "The storm later struck the remote islands of Anuta and Tikopia on 12 March, causing extensive damage. Approximately 1,500 homes were damaged or destroyed in the region and 5,000 people were directly."
+        },
+        {
+            "Country": "New Zealand",
+            "Location_Affected": [
+                "Whangarei District"
+            ],
+            "Start_Date_Affected": "15 March",
+            "End_Date_Affected": "16 March",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Power outages took place in the Whangarei District."
+        },
+        {
+            "Country": "New Zealand",
+            "Location_Affected": [
+                "Chatham Islands"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "12 people",
+            "Affected_with_annotation": "The storm later brought winds up to 140 km/h (87 mph) to the Chatham Islands (pop: 650), prompting the declaration of a civil defence emergency. Downed trees cut power to portions of the islands, though no major damage was reported. Twelve people sought refuge in a public shelter."
+        }
+    ]
+}

@@ -1,0 +1,559 @@
+{
+    "Event_ID": "82.0",
+    "Source": "https://en.wikipedia.org/wiki/Tropical_Storm_Matthew_(2010)",
+    "Event_Name": "Tropical Storm Matthew (2010)   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "More than 1,000 families, some 6,200 people",
+        "Total_Homelessness_Annotation": "More than 1,000 families, some 6,200 people fled dangerous situations because of the rains in Nicaragua alone, seeking refuge in 72 active shelters."
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "Nicaragua",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "More than 1,000 families, some 6,200 people",
+            "Homelessness_with_annotation": "More than 1,000 families, some 6,200 people fled dangerous situations because of the rains in Nicaragua alone, seeking refuge in 72 active shelters."
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "Nicaragua",
+            "Location_Homelessness": [
+                "NULL"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "More than 1,000 families, some 6,200 people",
+            "Homelessness_with_annotation": "More than 1,000 families, some 6,200 people fled dangerous situations because of the rains in Nicaragua alone, seeking refuge in 72 active shelters."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "NULL",
+        "Total_Injury_Annotation": "NULL"
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "Honduras",
+            "Start_Date_Injury": "September 24, 2010",
+            "End_Date_Injury": "September 24, 2010",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "Several power lines were toppled due to strong gusts; thousands of residents were left without power for hours, and forecasters warned that heavy rains threaten could cause flooding and mudslides in disaster-prone parts of several Central American nations. In Olanchito, near the northern coast, a creek overflowed and flooded a house, but firefighters were able to rescue its 10 occupants."
+        },
+        {
+            "Country": "Guatemala",
+            "Start_Date_Injury": "September 25, 2010",
+            "End_Date_Injury": "September 25, 2010",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "Retaining tropical depression status as it crossed the country, Matthew produced heavy rainfalls that hit Guatemala on September 25, causing scattered flooding across certain parts of the country. Authorities from Puerto Barrios\u2014presumably the hardest-hit Guatemalan city\u2014reported heavy flooding and several knocked-down trees caused by potent winds."
+        },
+        {
+            "Country": "Mexico",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "The Mexican military has attempted to reach the town, alongside hundreds of rescue workers that had been sent in to assist the victims. However, difficulties arose due to floods and landslides along the way while attempting to reach the area. Mexican Red Cross stated that it was sending 40 health specialists, rescue dogs and 15 emergency vehicles to the area."
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "Honduras",
+            "Location_Injury": [
+                "Olanchito"
+            ],
+            "Start_Date_Injury": "September 24, 2010",
+            "End_Date_Injury": "September 24, 2010",
+            "Num_Injury": "10",
+            "Injury_with_annotation": "In Olanchito, near the northern coast, a creek overflowed and flooded a house, but firefighters were able to rescue its 10 occupants."
+        },
+        {
+            "Country": "Guatemala",
+            "Location_Injury": [
+                "Puerto Barrios"
+            ],
+            "Start_Date_Injury": "September 25, 2010",
+            "End_Date_Injury": "September 25, 2010",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "Authorities from Puerto Barrios\u2014presumably the hardest-hit Guatemalan city\u2014reported heavy flooding and several knocked-down trees caused by potent winds."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Injury": [
+                "Santa Mar\u00eda Tlahuitoltepec"
+            ],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "The Mexican military has attempted to reach the town, alongside hundreds of rescue workers that had been sent in to assist the victims. However, difficulties arose due to floods and landslides along the way while attempting to reach the area. Mexican Red Cross stated that it was sending 40 health specialists, rescue dogs and 15 emergency vehicles to the area."
+        }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Assessment_With_Annotation": "Tropical Storm Matthew (2010): Tropical Storm Matthew was a weak but deadly and destructive tropical cyclone which made landfall in Central America during the 2010 Atlantic hurricane season.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "126",
+        "Total_Death_Annotation": "Eight people were killed by the storm in Venezuela, and at least 100 people have been confirmed dead throughout Central America and southern Mexico. Throughout the country, 66 people were reported dead as a result of heavy rainfalls associated with Matthew. Throughout Mexico, at least 32 people have died due to several mudslides."
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "Venezuela",
+            "Start_Date_Death": "September 23, 2010",
+            "End_Date_Death": "September 23, 2010",
+            "Num_Death": "8",
+            "Death_with_annotation": "In Caracas, Venezuela, heavy rains associated with Matthew triggered significant flooding that destroyed several homes, killing at least seven people. Another person, a 70-year-old man, was swept away by a swollen river in the northeastern state of Sucre later that day."
+        },
+        {
+            "Country": "Nicaragua",
+            "Start_Date_Death": "September 24, 2010",
+            "End_Date_Death": "September 25, 2010",
+            "Num_Death": "66",
+            "Death_with_annotation": "Nicaragua reported at least 66 fatalities. Throughout the country, 66 people were reported dead as a result of heavy rainfalls associated with Matthew."
+        },
+        {
+            "Country": "El Salvador",
+            "Start_Date_Death": "September 24, 2010",
+            "End_Date_Death": "September 25, 2010",
+            "Num_Death": "3",
+            "Death_with_annotation": "Nicaragua reported at least 66 fatalities, while three people were confirmed dead in El Salvador."
+        },
+        {
+            "Country": "Mexico",
+            "Start_Date_Death": "September 26, 2010",
+            "End_Date_Death": "September 28, 2010",
+            "Num_Death": "32",
+            "Death_with_annotation": "Throughout Mexico, at least 32 people have died due to several mudslides."
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "Venezuela",
+            "Location_Death": [
+                "Caracas",
+                "Sucre"
+            ],
+            "Start_Date_Death": "September 23, 2010",
+            "End_Date_Death": "September 23, 2010",
+            "Num_Death": "8",
+            "Death_with_annotation": "In Caracas, Venezuela, heavy rains associated with Matthew triggered significant flooding that destroyed several homes, killing at least seven people. Another person, a 70-year-old man, was swept away by a swollen river in the northeastern state of Sucre later that day."
+        },
+        {
+            "Country": "Nicaragua",
+            "Location_Death": [
+                "Various locations"
+            ],
+            "Start_Date_Death": "September 24, 2010",
+            "End_Date_Death": "September 25, 2010",
+            "Num_Death": "66",
+            "Death_with_annotation": "Nicaragua reported at least 66 fatalities. Throughout the country, 66 people were reported dead as a result of heavy rainfalls associated with Matthew."
+        },
+        {
+            "Country": "El Salvador",
+            "Location_Death": [
+                "Various locations"
+            ],
+            "Start_Date_Death": "September 24, 2010",
+            "End_Date_Death": "September 25, 2010",
+            "Num_Death": "3",
+            "Death_with_annotation": "Nicaragua reported at least 66 fatalities, while three people were confirmed dead in El Salvador."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Death": [
+                "Various locations"
+            ],
+            "Start_Date_Death": "September 26, 2010",
+            "End_Date_Death": "September 28, 2010",
+            "Num_Death": "32",
+            "Death_with_annotation": "Throughout Mexico, at least 32 people have died due to several mudslides."
+        }
+    ],
+    "Start_Date": "September 23, 2010",
+    "End_Date": "September 28, 2010",
+    "Time_with_Annotation": "Formed: September 23, 2010\nDissipated: September 28, 2010",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "NULL",
+        "Total_Insured_Damage_Units": "NULL",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "Nicaragua",
+            "Total_Insured_Damage": "$10.2 million",
+            "Total_Insured_Damage_Units": "USD",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "Throughout the country, the storm wrought roughly 207 million c\u00f3rdoba ($10.2 million, 2010 USD) in damage."
+        },
+        {
+            "Country": "Mexico",
+            "Total_Insured_Damage": "US$161 million",
+            "Total_Insured_Damage_Units": "USD",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "Throughout Oaxaca, damage from the storm was estimated to be at least 2 billion MXN (US$161 million)."
+        },
+        {
+            "Country": "Mexico",
+            "Total_Insured_Damage": "US$8 billion",
+            "Total_Insured_Damage_Units": "USD",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "In Veracruz, Mexico, the combined damage from Matthew and earlier Hurricane Karl wrought roughly 100 billion MXN (US$8 billion) in damage; it is unknown exactly how much of the total is due to Matthew."
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "Nicaragua",
+            "Location_Insured_Damage": [
+                "country"
+            ],
+            "Num_Insured_Damage": "$10.2 million",
+            "Insured_Damage_Units": "USD",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Throughout the country, the storm wrought roughly 207 million c\u00f3rdoba ($10.2 million, 2010 USD) in damage."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Insured_Damage": [
+                "Oaxaca"
+            ],
+            "Num_Insured_Damage": "US$161 million",
+            "Insured_Damage_Units": "USD",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Throughout Oaxaca, damage from the storm was estimated to be at least 2 billion MXN (US$161 million)."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Insured_Damage": [
+                "Veracruz"
+            ],
+            "Num_Insured_Damage": "US$8 billion",
+            "Insured_Damage_Units": "USD",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "In Veracruz, Mexico, the combined damage from Matthew and earlier Hurricane Karl wrought roughly 100 billion MXN (US$8 billion) in damage; it is unknown exactly how much of the total is due to Matthew."
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "NULL",
+        "Total_Displacement_Annotation": "NULL"
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "Honduras",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "300 people",
+            "Displacement_with_annotation": "On the border with Nicaragua, small communities in the Gracias a Dios province were evacuated, forcing at least 300 people out of their homes."
+        },
+        {
+            "Country": "Nicaragua",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "6,200 people",
+            "Displacement_with_annotation": "More than 1,000 families, some 6,200 people fled dangerous situations because of the rains in Nicaragua alone, seeking refuge in 72 active shelters."
+        },
+        {
+            "Country": "Belize",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "In neighboring Belize, officials began evacuating three towns near the border with Guatemala after flood waters rose."
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "Honduras",
+            "Location_Displacement": [
+                "Gracias a Dios province"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "300 people",
+            "Displacement_with_annotation": "On the border with Nicaragua, small communities in the Gracias a Dios province were evacuated, forcing at least 300 people out of their homes."
+        },
+        {
+            "Country": "Nicaragua",
+            "Location_Displacement": [
+                "NULL"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "6,200 people",
+            "Displacement_with_annotation": "More than 1,000 families, some 6,200 people fled dangerous situations because of the rains in Nicaragua alone, seeking refuge in 72 active shelters."
+        },
+        {
+            "Country": "Belize",
+            "Location_Displacement": [
+                "three towns near the border with Guatemala"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "In neighboring Belize, officials began evacuating three towns near the border with Guatemala after flood waters rose."
+        }
+    ],
+    "Location": [
+        "Venezuela",
+        "Central America",
+        "Mexico",
+        "Jamaica",
+        "Saint Lucia",
+        "ABC Islands",
+        "Colombia",
+        "Nicaragua",
+        "Honduras",
+        "Belize",
+        "Guatemala",
+        "El Salvador",
+        "Oaxaca",
+        "Veracruz",
+        "Santa Mar\u00eda Tlahuitoltepec"
+    ],
+    "Location_with_Annotation": {
+        "Venezuela": "Eight people were killed by the storm in Venezuela, and at least 100 people have been confirmed dead throughout Central America and southern Mexico.",
+        "Central America": "Eight people were killed by the storm in Venezuela, and at least 100 people have been confirmed dead throughout Central America and southern Mexico.",
+        "Mexico": "Eight people were killed by the storm in Venezuela, and at least 100 people have been confirmed dead throughout Central America and southern Mexico.",
+        "Jamaica": "Areas affected: Venezuela, Central America, Mexico, Jamaica",
+        "Saint Lucia": "The precursor tropical wave produced showers and thunderstorms across the Leeward Islands on September 22, and a station on Saint Lucia reported a wind gust of 48 mph (77 km/h).",
+        "ABC Islands": "The next day, squally weather spread into the ABC Islands, Venezuela, and Colombia.",
+        "Colombia": "The next day, squally weather spread into the ABC Islands, Venezuela, and Colombia.",
+        "Nicaragua": "Matthew made landfall 23 mi (37 km) south of the border of Nicaragua and Honduras on September 24 with winds of 60 mph (97 km/h).",
+        "Honduras": "Matthew made landfall 23 mi (37 km) south of the border of Nicaragua and Honduras on September 24 with winds of 60 mph (97 km/h).",
+        "Belize": "Heading west-northwestward toward Belize, Matthew made landfall near Monkey River Town with winds of 40 mph (64 km/h).",
+        "Guatemala": "Guatemalan authorities ordered evacuations in Izabal between the mouth of the Motagua River and Punta de Manabique.",
+        "El Salvador": "Nicaragua reported at least 66 fatalities, while three people were confirmed dead in El Salvador.",
+        "Oaxaca": "Throughout Oaxaca, damage from the storm was estimated to be at least 2 billion MXN (US$161 million).",
+        "Veracruz": "In Veracruz, Mexico, the combined damage from Matthew and earlier Hurricane Karl wrought roughly 100 billion MXN (US$8 billion) in damage; it is unknown exactly how much of the total is due to Matthew.",
+        "Santa Mar\u00eda Tlahuitoltepec": "The city of Santa Mar\u00eda Tlahuitoltepec, in which one of the landslides occurred, has a population of 9,000, majority of whom are Mixe Indians."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "$171 million",
+        "Total_Economic_Damage_Units": "USD",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "Damage: $171 million (2010 USD)"
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "Nicaragua",
+            "Total_Economic_Damage": "207 million c\u00f3rdoba",
+            "Total_Economic_Damage_Units": "NIO",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Throughout the country, the storm wrought roughly 207 million c\u00f3rdoba ($10.2 million, 2010 USD) in damage."
+        },
+        {
+            "Country": "Mexico",
+            "Total_Economic_Damage": "2 billion MXN",
+            "Total_Economic_Damage_Units": "MXN",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Throughout Oaxaca, damage from the storm was estimated to be at least 2 billion MXN (US$161 million)."
+        },
+        {
+            "Country": "Mexico",
+            "Total_Economic_Damage": "100 billion MXN",
+            "Total_Economic_Damage_Units": "MXN",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "In Veracruz, Mexico, the combined damage from Matthew and earlier Hurricane Karl wrought roughly 100 billion MXN (US$8 billion) in damage; it is unknown exactly how much of the total is due to Matthew."
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "Nicaragua",
+            "Location_Economic_Damage": [
+                "country"
+            ],
+            "Num_Economic_Damage": "207 million c\u00f3rdoba",
+            "Economic_Damage_Units": "NIO",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Throughout the country, the storm wrought roughly 207 million c\u00f3rdoba ($10.2 million, 2010 USD) in damage."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Economic_Damage": [
+                "Oaxaca"
+            ],
+            "Num_Economic_Damage": "2 billion MXN",
+            "Economic_Damage_Units": "MXN",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Throughout Oaxaca, damage from the storm was estimated to be at least 2 billion MXN (US$161 million)."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Economic_Damage": [
+                "Veracruz"
+            ],
+            "Num_Economic_Damage": "100 billion MXN",
+            "Economic_Damage_Units": "MXN",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "In Veracruz, Mexico, the combined damage from Matthew and earlier Hurricane Karl wrought roughly 100 billion MXN (US$8 billion) in damage; it is unknown exactly how much of the total is due to Matthew."
+        }
+    ],
+    "Perils": "Rainfall|Flood|Landslide|Wind",
+    "Perils_Assessment_With_Annotation": {
+        "Rainfall": "Throughout Central and South America, torrential rain produced by Matthew triggered widespread flooding and landslides.",
+        "Flood": "Throughout Central and South America, torrential rain produced by Matthew triggered widespread flooding and landslides.",
+        "Landslide": "In Mexico, a massive landslide, roughly 200 ft (61 m) long, buried nearly 300 homes.",
+        "Wind": "Tropical Storm Matthew attained its peak intensity on September 24, 18:00, UTC, with maximum sustained winds of 60 mph (97 km/h) and a minimum barometric pressure of 998 mbar (998 hPa; 29.5 inHg)."
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "NULL",
+        "Total_Building_Damage_Annotation": "NULL"
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "Honduras",
+            "Start_Date_Building_Damage": "September 24, 2010",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "several",
+            "Building_Damage_with_annotation": "Several homes and roads were damaged and made inaccessible, as well as at least nine bridges."
+        },
+        {
+            "Country": "Guatemala",
+            "Start_Date_Building_Damage": "September 25, 2010",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "several",
+            "Building_Damage_with_annotation": "Authorities from Puerto Barrios\u2014presumably the hardest-hit Guatemalan city\u2014reported heavy flooding and several knocked-down trees caused by potent winds."
+        },
+        {
+            "Country": "Mexico",
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "more than 300",
+            "Building_Damage_with_annotation": "Part of a hill collapsed on a length of 656 ft (200 m), destroying more than 300 houses."
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "Honduras",
+            "Location_Building_Damage": [
+                "Olanchito"
+            ],
+            "Start_Date_Building_Damage": "September 24, 2010",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "1",
+            "Building_Damage_with_annotation": "In Olanchito, near the northern coast, a creek overflowed and flooded a house, but firefighters were able to rescue its 10 occupants."
+        },
+        {
+            "Country": "Honduras",
+            "Location_Building_Damage": [
+                "NULL"
+            ],
+            "Start_Date_Building_Damage": "September 24, 2010",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "several",
+            "Building_Damage_with_annotation": "Several homes and roads were damaged and made inaccessible, as well as at least nine bridges."
+        },
+        {
+            "Country": "Guatemala",
+            "Location_Building_Damage": [
+                "Puerto Barrios"
+            ],
+            "Start_Date_Building_Damage": "September 25, 2010",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "several",
+            "Building_Damage_with_annotation": "Authorities from Puerto Barrios\u2014presumably the hardest-hit Guatemalan city\u2014reported heavy flooding and several knocked-down trees caused by potent winds."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Building_Damage": [
+                "Santa Mar\u00eda Tlahuitoltepec"
+            ],
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "more than 300",
+            "Building_Damage_with_annotation": "Part of a hill collapsed on a length of 656 ft (200 m), destroying more than 300 houses."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "NULL",
+        "Total_Affected_Annotation": "NULL"
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "Venezuela",
+            "Start_Date_Affected": "September 23, 2010",
+            "End_Date_Affected": "September 23, 2010",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "In Caracas, Venezuela, heavy rains associated with Matthew triggered significant flooding that destroyed several homes, killing at least seven people."
+        },
+        {
+            "Country": "Honduras",
+            "Start_Date_Affected": "September 24, 2010",
+            "End_Date_Affected": "September 24, 2010",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Matthew hit Honduras as a tropical storm on September 24, with maximum sustained winds of over 50 mph (80 km/h). Several power lines were toppled due to strong gusts; thousands of residents were left without power for hours."
+        },
+        {
+            "Country": "Guatemala",
+            "Start_Date_Affected": "September 25, 2010",
+            "End_Date_Affected": "September 25, 2010",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Retaining tropical depression status as it crossed the country, Matthew produced heavy rainfalls that hit Guatemala on September 25, causing scattered flooding across certain parts of the country."
+        },
+        {
+            "Country": "Nicaragua",
+            "Start_Date_Affected": "September 24, 2010",
+            "End_Date_Affected": "September 26, 2010",
+            "Num_Affected": "6,200 people",
+            "Affected_with_annotation": "More than 1,000 families, some 6,200 people fled dangerous situations because of the rains in Nicaragua alone, seeking refuge in 72 active shelters."
+        },
+        {
+            "Country": "Mexico",
+            "Start_Date_Affected": "September 26, 2010",
+            "End_Date_Affected": "September 28, 2010",
+            "Num_Affected": "thousands",
+            "Affected_with_annotation": "Thousands were forced from their homes in southern part of the country due to the rains."
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "Venezuela",
+            "Location_Affected": [
+                "Caracas"
+            ],
+            "Start_Date_Affected": "September 23, 2010",
+            "End_Date_Affected": "September 23, 2010",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "In Caracas, Venezuela, heavy rains associated with Matthew triggered significant flooding that destroyed several homes, killing at least seven people."
+        },
+        {
+            "Country": "Honduras",
+            "Location_Affected": [
+                "Olanchito"
+            ],
+            "Start_Date_Affected": "September 24, 2010",
+            "End_Date_Affected": "September 24, 2010",
+            "Num_Affected": "10 occupants",
+            "Affected_with_annotation": "In Olanchito, near the northern coast, a creek overflowed and flooded a house, but firefighters were able to rescue its 10 occupants."
+        },
+        {
+            "Country": "Nicaragua",
+            "Location_Affected": [
+                "NULL"
+            ],
+            "Start_Date_Affected": "September 24, 2010",
+            "End_Date_Affected": "September 26, 2010",
+            "Num_Affected": "6,200 people",
+            "Affected_with_annotation": "More than 1,000 families, some 6,200 people fled dangerous situations because of the rains in Nicaragua alone, seeking refuge in 72 active shelters."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Affected": [
+                "Santa Mar\u00eda Tlahuitoltepec"
+            ],
+            "Start_Date_Affected": "September 26, 2010",
+            "End_Date_Affected": "September 28, 2010",
+            "Num_Affected": "thousands",
+            "Affected_with_annotation": "Thousands were forced from their homes in southern part of the country due to the rains."
+        }
+    ]
+}

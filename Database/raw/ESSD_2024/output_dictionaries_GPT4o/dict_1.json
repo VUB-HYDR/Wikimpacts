@@ -1,0 +1,790 @@
+{
+    "Event_ID": "1.0",
+    "Source": "https://en.wikipedia.org/wiki?curid=68241636",
+    "Event_Name": "2021 European Floods",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "NULL",
+        "Total_Homelessness_Annotation": "NULL"
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "Belgium",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "NULL"
+        },
+        {
+            "Country": "Germany",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "NULL"
+        },
+        {
+            "Country": "Netherlands",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "NULL"
+        },
+        {
+            "Country": "United Kingdom",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "Belgium",
+            "Location_Homelessness": [
+                "Verviers"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "more than 10,000",
+            "Homelessness_with_annotation": "The town of Verviers was also badly affected and has more than 10,000 of its residents having to be moved because of homes having become uninhabitable."
+        },
+        {
+            "Country": "Belgium",
+            "Location_Homelessness": [
+                "Pepinster"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "In the town of Pepinster on the banks of the river Vesder, at least 20 houses collapsed."
+        },
+        {
+            "Country": "Netherlands",
+            "Location_Homelessness": [
+                "Valkenburg aan de Geul"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "21 July 2021",
+            "Num_Homelessness": "2,300 families",
+            "Homelessness_with_annotation": "2,300 families were affected in the town, 700 homes were rendered uninhabitable, and a bridge had collapsed. As of 21 July, the town was still subject to an evacuation order."
+        },
+        {
+            "Country": "United Kingdom",
+            "Location_Homelessness": [
+                "Royal Borough of Kensington and Chelsea"
+            ],
+            "Start_Date_Homelessness": "12 July 2021",
+            "End_Date_Homelessness": "13 July 2021",
+            "Num_Homelessness": "more than 120",
+            "Homelessness_with_annotation": "Overnight into 13 July, more than 120 residents of the Royal Borough of Kensington and Chelsea were placed into emergency accommodation due to severe flooding in the borough."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "NULL",
+        "Total_Injury_Annotation": "NULL"
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "Romania",
+            "Start_Date_Injury": "19 July 2021",
+            "End_Date_Injury": "19 July 2021",
+            "Num_Injury": "two",
+            "Injury_with_annotation": "A hailstorm also affected Cluj-Napoca on the night of 19 July. The Heroes' Avenue was completely flooded, cars were damaged by falling trees, some neighborhoods were left without electricity and two people were injured by flying debris."
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "Romania",
+            "Location_Injury": [
+                "Cluj-Napoca"
+            ],
+            "Start_Date_Injury": "19 July 2021",
+            "End_Date_Injury": "19 July 2021",
+            "Num_Injury": "two",
+            "Injury_with_annotation": "A hailstorm also affected Cluj-Napoca on the night of 19 July. The Heroes' Avenue was completely flooded, cars were damaged by falling trees, some neighborhoods were left without electricity and two people were injured by flying debris."
+        }
+    ],
+    "Main_Event": "Flood",
+    "Main_Event_Assessment_With_Annotation": "In July 2021, several European countries were affected by severe floods. Some were catastrophic, causing deaths and widespread damage. The floods started in the United Kingdom as flash floods causing some property damage and inconvenience. Later floods affected several river basins across Europe including Austria, Belgium, Croatia, Germany, Italy, Luxembourg, the Netherlands, and Switzerland.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "243",
+        "Total_Death_Annotation": "At least 243 people died in the floods, including 196 in Germany, 43 in Belgium, two in Romania, one in Italy and one in Austria."
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "Germany",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "196",
+            "Death_with_annotation": "At least 243 people died in the floods, including 196 in Germany."
+        },
+        {
+            "Country": "Belgium",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "43",
+            "Death_with_annotation": "At least 243 people died in the floods, including 43 in Belgium."
+        },
+        {
+            "Country": "Romania",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "2",
+            "Death_with_annotation": "At least 243 people died in the floods, including two in Romania."
+        },
+        {
+            "Country": "Italy",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "1",
+            "Death_with_annotation": "At least 243 people died in the floods, including one in Italy."
+        },
+        {
+            "Country": "Austria",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "1",
+            "Death_with_annotation": "At least 243 people died in the floods, including one in Austria."
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "Germany",
+            "Location_Death": [
+                "Rhineland-Palatinate"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "135",
+            "Death_with_annotation": "During the floods, 135 people died in Rhineland-Palatinate (all of whom were in the district of Ahrweiler)."
+        },
+        {
+            "Country": "Germany",
+            "Location_Death": [
+                "North Rhine-Westphalia"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "47",
+            "Death_with_annotation": "During the floods, 47 in North Rhine-Westphalia (twenty-seven of whom in Euskirchen)."
+        },
+        {
+            "Country": "Germany",
+            "Location_Death": [
+                "Bavaria"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "2",
+            "Death_with_annotation": "During the floods, two in Bavaria."
+        },
+        {
+            "Country": "Belgium",
+            "Location_Death": [
+                "Pepinster"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "23",
+            "Death_with_annotation": "In the town of Pepinster on the banks of the river Vesder, at least 20 houses collapsed and 23 of the 31 casualties as of 18 July were found here."
+        },
+        {
+            "Country": "Belgium",
+            "Location_Death": [
+                "Verviers"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "NULL",
+            "Death_with_annotation": "The town of Verviers was also badly affected and has more than 10,000 of its residents having to be moved because of homes having become uninhabitable."
+        },
+        {
+            "Country": "Austria",
+            "Location_Death": [
+                "Saalbach-Hinterglemm"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "1",
+            "Death_with_annotation": "A man died in Saalbach-Hinterglemm during the floods."
+        },
+        {
+            "Country": "Italy",
+            "Location_Death": [
+                "Veneto"
+            ],
+            "Start_Date_Death": "14 July 2021",
+            "End_Date_Death": "14 July 2021",
+            "Num_Death": "1",
+            "Death_with_annotation": "In Veneto one person died."
+        },
+        {
+            "Country": "Romania",
+            "Location_Death": [
+                "Satu Mare"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "1",
+            "Death_with_annotation": "Two people were killed by floods in Satu Mare and Ia\u0219i."
+        },
+        {
+            "Country": "Romania",
+            "Location_Death": [
+                "Ia\u0219i"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "1",
+            "Death_with_annotation": "Two people were killed by floods in Satu Mare and Ia\u0219i."
+        }
+    ],
+    "Start_Date": "12 July 2021",
+    "End_Date": "25 July 2021",
+    "Time_with_Annotation": "In July 2021, several European countries were affected by severe floods. The floods started in the United Kingdom as flash floods causing some property damage and inconvenience. Later floods affected several river basins across Europe including Austria, Belgium, Croatia, Germany, Italy, Luxembourg, the Netherlands, and Switzerland. Between 12 and 15 July 2021, heavy rain fell across the United Kingdom, western Germany, and neighbouring Netherlands, Belgium, and Luxembourg. On 25 July, London was again hit by thunderstorms and flash floods.",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "\u20ac2.55 billion",
+        "Total_Insured_Damage_Units": "EUR",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "The floods are estimated to have cost up to \u20ac2.55 billion (US$3 billion) in insured losses, with the total damage costs being much higher."
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "Germany",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Belgium",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Austria",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Italy",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Luxembourg",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Netherlands",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Romania",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Switzerland",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "United Kingdom",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "Belgium",
+            "Location_Insured_Damage": [
+                "Li\u00e8ge",
+                "Pepinster",
+                "Verviers"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Foundations of buildings near rivers became eroded and buildings collapsed. In the town of Pepinster on the banks of the river Vesder, at least 20 houses collapsed and 23 of the 31 casualties as of 18 July were found here. The town of Verviers was also badly affected and has more than 10,000 of its residents having to be moved because of homes having become uninhabitable."
+        },
+        {
+            "Country": "Germany",
+            "Location_Insured_Damage": [
+                "Ahrweiler",
+                "Hagen",
+                "Kordel",
+                "Blessem",
+                "Euskirchen",
+                "Rheinbach",
+                "Swisttal",
+                "Ophoven",
+                "Eschweiler"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Some of the worst damage from the flood was in the district of Ahrweiler, Rhineland-Palatinate, where the river Ahr rose, destroying many buildings and causing at least 110 deaths. The topography of Ahr valley in western Germany, with some sections resembling gorges, may have exacerbated the effects of the heavy rainfall."
+        },
+        {
+            "Country": "Netherlands",
+            "Location_Insured_Damage": [
+                "Valkenburg aan de Geul",
+                "Venlo",
+                "Belfeld",
+                "Steyl",
+                "Arcen"
+            ],
+            "Num_Insured_Damage": "\u20ac400 million",
+            "Insured_Damage_Units": "EUR",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "After the floodwaters had receded, damage was assessed at \u20ac400 million, half of which was physical damage and half being business losses. 2,300 families were affected in the town, 700 homes were rendered uninhabitable, and a bridge had collapsed."
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "NULL",
+        "Total_Displacement_Annotation": "NULL"
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "Austria",
+            "Start_Date_Displacement": "17 July",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "Rescue workers in the states of Salzburg and Tyrol were placed on high alert for flooding."
+        },
+        {
+            "Country": "Belgium",
+            "Start_Date_Displacement": "15 July",
+            "End_Date_Displacement": "24 July",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "On 15 July, all residents of the city of Li\u00e8ge with a population of approximately 200,000 were urged to evacuate... In the town of Verviers... more than 10,000 of its residents having to be moved... On 24 July, southern and central parts of Belgium were hit again by severe flash floods."
+        },
+        {
+            "Country": "Croatia",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "None reported",
+            "Displacement_with_annotation": "No deaths were reported."
+        },
+        {
+            "Country": "Czech Republic",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "Heavy rainfall led to flooding especially in North Bohemia, and several communities near \u010cesk\u00e1 L\u00edpa had to be evacuated."
+        },
+        {
+            "Country": "France",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "None reported",
+            "Displacement_with_annotation": "No deaths were reported."
+        },
+        {
+            "Country": "Germany",
+            "Start_Date_Displacement": "14 July",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "The village of Kordel in Trier-Saarburg, which has around 2,000 residents, has been completely cut off... 4,500 people were preemptively evacuated from parts of Euskirchen... several thousand more from parts of Rheinbach and Swisttal... Around 360 inmates had to be evacuated from a prison near Euskirchen... In Eschweiler, all of the more than 300 patients of the St.-Antonius-Hospital Eschweiler had to be evacuated."
+        },
+        {
+            "Country": "Italy",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        },
+        {
+            "Country": "Luxembourg",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "In Luxembourg, hundreds of people were evacuated from their homes in Echternach and Rosport."
+        },
+        {
+            "Country": "Netherlands",
+            "Start_Date_Displacement": "14 July",
+            "End_Date_Displacement": "25 July",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "In the Netherlands, the southern town of Valkenburg aan de Geul and other areas in the valley of the river Geul were worst affected... 2,300 families were affected in the town, 700 homes were rendered uninhabitable... More than 10,000 people were evacuated in Venlo and the neighbouring communities Belfeld, Steyl and Arcen... The VieCuri Hospital in Venlo was also evacuated... Heavy rain in the early hours of 25 July caused flooding in the north west of Friesland."
+        },
+        {
+            "Country": "Romania",
+            "Start_Date_Displacement": "15 July",
+            "End_Date_Displacement": "20 July",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "Between 15 and 20 July, heavy rains caused flooding in 80 localities in 20 counties."
+        },
+        {
+            "Country": "Switzerland",
+            "Start_Date_Displacement": "15 July",
+            "End_Date_Displacement": "20 July",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "On 15 July, Switzerland's weather service warned that flooding in the country would worsen over the next few days... While water levels on most lakes were receding by 20 July, Lake Neuch\u00e2tel still remained on the highest level since 1954."
+        },
+        {
+            "Country": "United Kingdom",
+            "Start_Date_Displacement": "12 July",
+            "End_Date_Displacement": "25 July",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "The cut-off low that caused the severe flooding across western Europe first moved over the United Kingdom on 12 July... Overnight into 13 July, more than 120 residents of the Royal Borough of Kensington and Chelsea were placed into emergency accommodation... On 25 July, London was again hit by thunderstorms and flash floods."
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "Austria",
+            "Location_Displacement": [
+                "Hallein"
+            ],
+            "Start_Date_Displacement": "17 July",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "On 17 July, a flash flood swept through Hallein, a town close to the German border."
+        },
+        {
+            "Country": "Belgium",
+            "Location_Displacement": [
+                "Li\u00e8ge",
+                "Verviers",
+                "Dinant"
+            ],
+            "Start_Date_Displacement": "15 July",
+            "End_Date_Displacement": "24 July",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "On 15 July, all residents of the city of Li\u00e8ge with a population of approximately 200,000 were urged to evacuate... In the town of Verviers... more than 10,000 of its residents having to be moved... On 24 July, southern and central parts of Belgium were hit again by severe flash floods."
+        },
+        {
+            "Country": "Czech Republic",
+            "Location_Displacement": [
+                "North Bohemia",
+                "\u010cesk\u00e1 L\u00edpa"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "Heavy rainfall led to flooding especially in North Bohemia, and several communities near \u010cesk\u00e1 L\u00edpa had to be evacuated."
+        },
+        {
+            "Country": "Germany",
+            "Location_Displacement": [
+                "Kordel",
+                "Euskirchen",
+                "Rheinbach",
+                "Swisttal",
+                "Eschweiler"
+            ],
+            "Start_Date_Displacement": "14 July",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "The village of Kordel in Trier-Saarburg, which has around 2,000 residents, has been completely cut off... 4,500 people were preemptively evacuated from parts of Euskirchen... several thousand more from parts of Rheinbach and Swisttal... Around 360 inmates had to be evacuated from a prison near Euskirchen... In Eschweiler, all of the more than 300 patients of the St.-Antonius-Hospital Eschweiler had to be evacuated."
+        },
+        {
+            "Country": "Luxembourg",
+            "Location_Displacement": [
+                "Echternach",
+                "Rosport",
+                "Mersch",
+                "Beringen",
+                "Rollingen"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "hundreds of",
+            "Displacement_with_annotation": "In Luxembourg, hundreds of people were evacuated from their homes in Echternach and Rosport... Many homes in Mersch, Beringen and Rollingen lost electricity."
+        },
+        {
+            "Country": "Netherlands",
+            "Location_Displacement": [
+                "Valkenburg aan de Geul",
+                "Venlo",
+                "Belfeld",
+                "Steyl",
+                "Arcen",
+                "VieCuri Hospital",
+                "Friesland"
+            ],
+            "Start_Date_Displacement": "14 July",
+            "End_Date_Displacement": "25 July",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "In the Netherlands, the southern town of Valkenburg aan de Geul and other areas in the valley of the river Geul were worst affected... 2,300 families were affected in the town, 700 homes were rendered uninhabitable... More than 10,000 people were evacuated in Venlo and the neighbouring communities Belfeld, Steyl and Arcen... The VieCuri Hospital in Venlo was also evacuated... Heavy rain in the early hours of 25 July caused flooding in the north west of Friesland."
+        },
+        {
+            "Country": "Romania",
+            "Location_Displacement": [
+                "Ocoli\u0219",
+                "Cluj-Napoca"
+            ],
+            "Start_Date_Displacement": "15 July",
+            "End_Date_Displacement": "20 July",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "In Alba County, rains and storms destroyed three houses and severely damaged another 20 in Ocoli\u0219... A hailstorm also affected Cluj-Napoca on the night of 19 July... Between 15 and 20 July, heavy rains caused flooding in 80 localities in 20 counties."
+        },
+        {
+            "Country": "Switzerland",
+            "Location_Displacement": [
+                "Lake Biel",
+                "Lake Thun",
+                "Lake Lucerne",
+                "Lake Neuch\u00e2tel"
+            ],
+            "Start_Date_Displacement": "15 July",
+            "End_Date_Displacement": "20 July",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "On 15 July, Switzerland's weather service warned that flooding in the country would worsen over the next few days... While water levels on most lakes were receding by 20 July, Lake Neuch\u00e2tel still remained on the highest level since 1954."
+        },
+        {
+            "Country": "United Kingdom",
+            "Location_Displacement": [
+                "London",
+                "Royal Borough of Kensington and Chelsea"
+            ],
+            "Start_Date_Displacement": "12 July",
+            "End_Date_Displacement": "25 July",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "The cut-off low that caused the severe flooding across western Europe first moved over the United Kingdom on 12 July... Overnight into 13 July, more than 120 residents of the Royal Borough of Kensington and Chelsea were placed into emergency accommodation... On 25 July, London was again hit by thunderstorms and flash floods."
+        }
+    ],
+    "Location": [
+        "Austria",
+        "Belgium",
+        "Croatia",
+        "Czech Republic",
+        "France",
+        "Germany",
+        "Italy",
+        "Luxembourg",
+        "Netherlands",
+        "Romania",
+        "Switzerland",
+        "United Kingdom"
+    ],
+    "Location_with_Annotation": {
+        "Austria": "On 17 July, a flash flood swept through Hallein, a town close to the German border.",
+        "Belgium": "On 15 July, all residents of the city of Li\u00e8ge with a population of approximately 200,000 were urged to evacuate amidst fears that the Meuse river was on the verge of bursting its banks and that a dam bridge could collapse.",
+        "Croatia": "The Slavonia region was affected by floods. Communities such as Na\u0161ice, \u017dupanja, Nova Gradi\u0161ka, and Osijek were flooded and heavy rain caused serious damage, especially for farmers.",
+        "Czech Republic": "Heavy rainfall led to flooding especially in North Bohemia, and several communities near \u010cesk\u00e1 L\u00edpa had to be evacuated.",
+        "France": "According to M\u00e9t\u00e9o-France, between 12 July, 8:00 and 16 July, 12:00, 199 millimetres (7.8 in) of rain fell in Ch\u00e2tel-de-Joux (Jura), 160 millimetres (6.3 in) in Plainfaing (Vosges), 159 millimetres (6.3 in) in Le Fied (Jura) and 158 millimetres (6.2 in) in Villiers-la-Ch\u00e8vre (Meurthe-et-Moselle).",
+        "Germany": "With at least 184 deaths, the floods are the deadliest natural disaster in Germany since the North Sea flood of 1962.",
+        "Italy": "On 14 July, the storms reached Northeastern Italy and caused damage to agricultural crops. In Trentino-Alto Adige, a fallen tree damaged a cable car and several roads were damaged, and in Veneto one person died.",
+        "Luxembourg": "In Luxembourg, hundreds of people were evacuated from their homes in Echternach and Rosport.",
+        "Netherlands": "In the Netherlands, the southern town of Valkenburg aan de Geul and other areas in the valley of the river Geul were worst affected.",
+        "Romania": "In Alba County, rains and storms destroyed three houses and severely damaged another 20 in Ocoli\u0219.",
+        "Switzerland": "On 15 July, Switzerland's weather service warned that flooding in the country would worsen over the next few days, potentially equalling the levels of the 2005 'flood of the century' and that there was a particularly high risk of flooding on Lake Biel, Lake Thun and Lake Lucerne, as well as a risk of landslides.",
+        "United Kingdom": "The cut-off low that caused the severe flooding across western Europe first moved over the United Kingdom on 12 July, resulting in more than the average monthly rainfall total to be recorded in a 24-hour period across parts of the country."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "EUR54 billion",
+        "Total_Economic_Damage_Units": "EUR",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "The floods are estimated to have cost up to \u20ac2.55 billion (US$3 billion) in insured losses, with the total damage costs being much higher, at a minimum of \u20ac10 billion (US$11.8 billion). Direct damage caused by the flooding in Germany was estimated at \u20ac33.4 billion with further \u20ac7.1 billion in indirect damage."
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "Germany",
+            "Total_Economic_Damage": "EUR40.5 billion",
+            "Total_Economic_Damage_Units": "EUR",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Direct damage caused by the flooding in Germany was estimated at \u20ac33.4 billion with further \u20ac7.1 billion in indirect damage."
+        },
+        {
+            "Country": "Belgium",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Early estimates also pointed to severe damage to the agricultural sector of the country, including long-term effects like soil erosion."
+        },
+        {
+            "Country": "Netherlands",
+            "Total_Economic_Damage": "EUR400 million",
+            "Total_Economic_Damage_Units": "EUR",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "After the floodwaters had receded, damage was assessed at \u20ac400 million, half of which was physical damage and half being business losses."
+        },
+        {
+            "Country": "Czech Republic",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "The country promised emergency aid to those affected by the floods of up to 57,900 koruna (2270 euro)."
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "Belgium",
+            "Location_Economic_Damage": [
+                "Li\u00e8ge",
+                "Namur",
+                "Wallonia",
+                "Pepinster",
+                "Verviers"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "In addition, due to the heavy flooding and because tens of home fuel tanks had broken loose and started leaking into rivers, a number of municipalities in Li\u00e8ge and Namur provinces were left without potable tap water. Around 41,000 households were left without electricity in Wallonia. Foundations of buildings near rivers became eroded and buildings collapsed. In the town of Pepinster on the banks of the river Vesder, at least 20 houses collapsed and 23 of the 31 casualties as of 18 July were found here. The town of Verviers was also badly affected and has more than 10,000 of its residents having to be moved because of homes having become uninhabitable."
+        },
+        {
+            "Country": "Germany",
+            "Location_Economic_Damage": [
+                "North Rhine-Westphalia",
+                "Rhineland-Palatinate",
+                "Ahrweiler",
+                "Hagen",
+                "Kordel",
+                "Trier-Saarburg",
+                "Blessem",
+                "Euskirchen",
+                "Rheinbach",
+                "Swisttal",
+                "Wassenberg",
+                "Ophoven",
+                "Eschweiler",
+                "Baden-W\u00fcrttemberg",
+                "Saxony",
+                "Berchtesgadener Ache",
+                "K\u00f6nigssee"
+            ],
+            "Num_Economic_Damage": "EUR40.5 billion",
+            "Economic_Damage_Units": "EUR",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Direct damage caused by the flooding in Germany was estimated at \u20ac33.4 billion with further \u20ac7.1 billion in indirect damage."
+        },
+        {
+            "Country": "Netherlands",
+            "Location_Economic_Damage": [
+                "Valkenburg aan de Geul",
+                "Venlo",
+                "Belfeld",
+                "Steyl",
+                "Arcen",
+                "VieCuri Hospital",
+                "Friesland",
+                "De Westereen"
+            ],
+            "Num_Economic_Damage": "EUR400 million",
+            "Economic_Damage_Units": "EUR",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "After the floodwaters had receded, damage was assessed at \u20ac400 million, half of which was physical damage and half being business losses."
+        },
+        {
+            "Country": "Czech Republic",
+            "Location_Economic_Damage": [
+                "North Bohemia",
+                "\u010cesk\u00e1 L\u00edpa"
+            ],
+            "Num_Economic_Damage": "57,900 koruna",
+            "Economic_Damage_Units": "koruna",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "The country promised emergency aid to those affected by the floods of up to 57,900 koruna (2270 euro)."
+        }
+    ],
+    "Perils": "Rainfall|Flood|Landslide|Hail|Thunderstorm",
+    "Perils_Assessment_With_Annotation": {
+        "Rainfall": "Between 12 and 15 July 2021, heavy rain fell across the United Kingdom, western Germany, and neighbouring Netherlands, Belgium, and Luxembourg.",
+        "Flood": "In July 2021, several European countries were affected by severe floods. Some were catastrophic, causing deaths and widespread damage.",
+        "Landslide": "In Blessem, floodwaters of the Erft river inundated a quarry on 16 July, leading to a major landslide with several people possibly dead.",
+        "Hail": "A hailstorm also affected Cluj-Napoca on the night of 19 July.",
+        "Thunderstorm": "In the evening of 24 July, southern and central parts of Belgium were hit again by severe flash floods as a result of intense but shorter thunderstorms."
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "NULL",
+        "Total_Building_Damage_Annotation": "NULL"
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "Belgium",
+            "Start_Date_Building_Damage": "15 July 2021",
+            "End_Date_Building_Damage": "24 July 2021",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "Foundations of buildings near rivers became eroded and buildings collapsed. In the town of Pepinster on the banks of the river Vesder, at least 20 houses collapsed and 23 of the 31 casualties as of 18 July were found here. The town of Verviers was also badly affected and has more than 10,000 of its residents having to be moved because of homes having become uninhabitable."
+        },
+        {
+            "Country": "Germany",
+            "Start_Date_Building_Damage": "14 July 2021",
+            "End_Date_Building_Damage": "16 July 2021",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "Some of the worst damage from the flood was in the district of Ahrweiler, Rhineland-Palatinate, where the river Ahr rose, destroying many buildings and causing at least 110 deaths."
+        },
+        {
+            "Country": "Netherlands",
+            "Start_Date_Building_Damage": "14 July 2021",
+            "End_Date_Building_Damage": "21 July 2021",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "After the floodwaters had receded, damage was assessed at \u20ac400 million, half of which was physical damage and half being business losses. 2,300 families were affected in the town, 700 homes were rendered uninhabitable, and a bridge had collapsed."
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "Belgium",
+            "Location_Building_Damage": [
+                "Pepinster",
+                "Verviers"
+            ],
+            "Start_Date_Building_Damage": "15 July 2021",
+            "End_Date_Building_Damage": "24 July 2021",
+            "Num_Building_Damage": "20 houses in Pepinster; more than 10,000 residents' homes in Verviers",
+            "Building_Damage_with_annotation": "Foundations of buildings near rivers became eroded and buildings collapsed. In the town of Pepinster on the banks of the river Vesder, at least 20 houses collapsed and 23 of the 31 casualties as of 18 July were found here. The town of Verviers was also badly affected and has more than 10,000 of its residents having to be moved because of homes having become uninhabitable."
+        },
+        {
+            "Country": "Germany",
+            "Location_Building_Damage": [
+                "Ahrweiler"
+            ],
+            "Start_Date_Building_Damage": "14 July 2021",
+            "End_Date_Building_Damage": "16 July 2021",
+            "Num_Building_Damage": "many buildings",
+            "Building_Damage_with_annotation": "Some of the worst damage from the flood was in the district of Ahrweiler, Rhineland-Palatinate, where the river Ahr rose, destroying many buildings and causing at least 110 deaths."
+        },
+        {
+            "Country": "Netherlands",
+            "Location_Building_Damage": [
+                "Valkenburg aan de Geul"
+            ],
+            "Start_Date_Building_Damage": "14 July 2021",
+            "End_Date_Building_Damage": "21 July 2021",
+            "Num_Building_Damage": "700 homes",
+            "Building_Damage_with_annotation": "After the floodwaters had receded, damage was assessed at \u20ac400 million, half of which was physical damage and half being business losses. 2,300 families were affected in the town, 700 homes were rendered uninhabitable, and a bridge had collapsed."
+        }
+    ],
+    "Json_Error": "{\n  \"Total_Summary_Affected\": {\n    \"Total_Affected\": \"NULL\",\n    \"Total_Affected_Annotation\": \"NULL\"\n  },\n  \"Total_Affected_Per_Country\": [\n    {\n      \"Country\": \"Austria\",\n      \"Start_Date_Affected\": \"17 July 2021\",\n      \"End_Date_Affected\": \"17 July 2021\",\n      \"Num_Affected\": \"NULL\",\n      \"Affected_with_annotation\": \"Rescue workers in the states of Salzburg and Tyrol were placed on high alert for flooding.\"\n    },\n    {\n      \"Country\": \"Belgium\",\n      \"Start_Date_Affected\": \"15 July 2021\",\n      \"End_Date_Affected\": \"24 July 2021\",\n      \"Num_Affected\": \"NULL\",\n      \"Affected_with_annotation\": \"On 15 July, all residents of the city of Li\u00e8ge with a population of approximately 200,000 were urged to evacuate.\"\n    },\n    {\n      \"Country\": \"Croatia\",\n      \"Start_Date_Affected\": \"NULL\",\n      \"End_Date_Affected\": \"NULL\",\n      \"Num_Affected\": \"NULL\",\n      \"Affected_with_annotation\": \"Communities such as Na\u0161ice, \u017dupanja, Nova Gradi\u0161ka, and Osijek were flooded and heavy rain caused serious damage, especially for farmers.\"\n    },\n    {\n      \"Country\": \"Czech Republic\",\n      \"Start_Date_Affected\": \"NULL\",\n      \"End_Date_Affected\": \"NULL\",\n      \"Num_Affected\": \"NULL\",\n      \"Affected_with_annotation\": \"Heavy rainfall led to flooding especially in North Bohemia, and several communities near \u010cesk\u00e1 L\u00edpa had to be evacuated.\"\n    },\n    {\n      \"Country\": \"France\",\n      \"Start_Date_Affected\": \"12 July 2021\",\n      \"End_Date_Affected\": \"16 July 2021\",\n      \"Num_Affected\": \"NULL\",\n      \"Affected_with_annotation\": \"According to M\u00e9t\u00e9o-France, between 12 July, 8:00 and 16 July, 12:00, 199 millimetres (7.8 in) of rain fell in Ch\u00e2tel-de-Joux (Jura), 160 millimetres (6.3 in) in Plainfaing (Vosges), 159 millimetres (6.3 in) in Le Fied (Jura) and 158 millimetres (6.2 in) in Villiers-la-Ch\u00e8vre (Meurthe-et-Moselle).\"\n    },\n    {\n      \"Country\": \"Germany\",\n      \"Start_Date_Affected\": \"14 July 2021\",\n      \"End_Date_Affected\": \"19 July 2021\",\n      \"Num_Affected\": \"NULL\",\n      \"Affected_with_annotation\": \"1,300 people had been initially reported as missing on 16 July, but mostly due to mobile networks being down in some regions which made it difficult to call people.\"\n    },\n    {\n      \"Country\": \"Italy\",\n      \"Start_Date_Affected\": \"14 July 2021\",\n      \"End_Date_Affected\": \"14 July 2021\",\n      \"Num_Affected\": \"NULL\",\n      \"Affected_with_annotation\": \"On 14 July, the storms reached Northeastern Italy and caused damage to agricultural crops.\"\n    },\n    {\n      \"Country\": \"Luxembourg\",\n      \"Start_Date_Affected\": \"NULL\",\n      \"End_Date_Affected\": \"NULL\",\n      \"Num_Affected\": \"NULL\",\n      \"Affected_with_annotation\": \"In Luxembourg, hundreds of people were evacuated from their homes in Echternach and Rosport.\"\n    },\n    {\n      \"Country\": \"Netherlands\",\n      \"Start_Date_Affected\": \"14 July 2021\",\n      \"End_Date_Affected\": \"25 July 2021\",\n      \"Num_Affected\": \"NULL\",\n      \"Affected_with_annotation\": \"In the Netherlands, the southern town of Valkenburg aan de Geul and other areas in the valley of the river Geul were worst affected.\"\n    },\n    {\n      \"Country\": \"Romania\",\n      \"Start_Date_Affected\": \"15 July 2021\",\n      \"End_Date_Affected\": \"20 July 2021\",\n      \"Num_Affected\": \"NULL\",\n      \"Affected_with_annotation\": \"Between 15 and 20 July, heavy rains caused flooding in 80 localities in 20 counties.\"\n    },\n    {\n      \"Country\": \"Switzerland\",\n      \"Start_Date_Affected\": \"15 July 2021\",\n      \"End_Date_Affected\": \"20 July 2021\",\n      \"Num_Affected\": \"NULL\",\n      \"Affected_with_annotation\": \"On 15 July, Switzerland's weather service warned that flooding in the country would worsen over the next few days.\"\n    },\n    {\n      \"Country\": \"United Kingdom\",\n      \"Start_Date_Affected\": \"12 July 2021\",\n      \"End_Date_Affected\": \"25 July 2021\",\n      \"Num_Affected\": \"NULL\",\n      \"Affected_with_annotation\": \"The cut-off low that caused the severe flooding across western Europe first moved over the United Kingdom on 12 July, resulting in more than the average monthly rainfall total to be recorded in a 24-hour period across parts of the country.\"\n    }\n  ],\n  \"Specific_Instance_Per_Country_Affected\": [\n    {\n      \"Country\": \"Austria\",\n      \"Location_Affected\": [\"Hallein\", \"Saalbach-Hinterglemm\"],\n      \"Start_Date_Affected\": \"17 July 2021\",\n      \"End_Date_Affected\": \"17 July 2021\",\n      \"Num_Affected\": \"NULL\",\n      \"Affected_with_annotation\": \"On 17 July, a flash flood swept through Hallein, a town close to the German border. A man died in Saalbach-Hinterglemm during the floods.\"\n    },\n    {\n      \"Country\": \"Belgium\",\n      \"Location_Affected\": [\"Li\u00e8ge\", \"Limburg Province\", \"Wallonia\", \"Pepinster\", \"Verviers\", \"Grupont\", \"Dinant\"],\n      \"Start_Date_Affected\": \"15 July 2021\",\n      \"End_Date_Affected\": \"24 July 2021\",\n      \"Num_Affected\": \"NULL\",\n      \"Affected_with_annotation\": \"On 15 July, all residents of the city of Li\u00e8ge with a population of approximately 200,000 were urged to evacuate. By 16 July, several smaller municipalities in Limburg Province were also given the order to evacuate. Around 41,000 households were left without electricity in Wallonia. In the town of Pepinster on the banks of the river Vesder, at least 20 houses collapsed and 23 of the 31 casualties as of 18 July were found here. The town of Verviers was also badly affected and has more than 10,000 of its residents having to be moved because of homes having become uninhabitable. An empty passenger train derailed at Grupont when the track bed was washed out by floodwater. In the evening of 24 July, southern and central parts of Belgium were hit again by severe flash floods as a result of intense but shorter thunderstorms. Particularly the city of Dinant and its surroundings in the province of Namur were badly hit.\"\n    },\n    {\n      \"Country\": \"Croatia\",\n      \"Location_Affected\": [\"Na\u0161ice\", \"\u017dupanja\", \"Nova Gradi\u0161ka\", \"Osijek\"],\n      \"Start_Date_Affected\": \"NULL\",\n      \"End_Date_Affected\": \"NULL\",\n      \"Num_Affected\": \"NULL\",\n      \"Affected_with_annotation\": \"Communities such as Na\u0161ice, \u017dupanja, Nova Gradi\u0161ka, and Osijek were flooded and heavy rain caused serious damage, especially for farmers.\"\n    },\n    {\n      \"Country\": \"Czech Republic\",\n      \"Location_Affected\": [\"North Bohemia\", \"\u010cesk\u00e1 L\u00edpa\"],\n      \"Start_Date_Affected\": \"NULL\",\n      \"End_Date_Affected\": \"NULL\",\n      \"Num_Affected\": \"NULL\",\n      \"Affected_with_annotation\": \"Heavy rainfall led to flooding especially in North Bohemia, and several communities near \u010cesk\u00e1 L\u00edpa had to be evacuated.\"\n    },\n    {\n      \"Country\": \"France\",\n      \"Location_Affected\": [\"Ch\u00e2tel-de-Joux\", \"Plainfaing\", \"Le Fied\", \"Villiers-la-Ch\u00e8vre\"],\n      \"Start_Date_Affected\": \"12 July 2021\",\n      \"End_Date_Affected\": \"16 July 2021\",\n      \"Num_Affected\": \"NULL\",\n      \"Affected_with_annotation\": \"According to M\u00e9t\u00e9o-France, between 12 July, 8:00 and 16 July, 12:00, 199 millimetres (7.8 in) of rain fell in Ch\u00e2tel-de-Joux (Jura), 160 millimetres (6.3 in) in Plainfaing (Vosges), 159 millimetres (6.3 in) in Le Fied (Jura) and 158 millimetres (6.2 in) in Villiers-la-Ch\u00e8vre (Meurthe-et-Moselle).\"\n    },\n    {\n      \"Country\": \"Germany\",\n      \"Location_Affected\": [\"Rhineland-Palatinate\", \"North Rhine-Westphalia\", \"Bavaria\", \"Ahrweiler\", \"Hagen\", \"Kordel\", \"Trier-Saarburg\", \"Cologne\", \"Wuppertal\", \"Hagen\", \"Dortmund\", \"Bonn\", \"Koblenz\", \"Blessem\", \"Euskirchen\", \"Rheinbach\", \"Swisttal\", \"Ophoven\", \"Eschweiler\", \"Baden-W\u00fcrttemberg\", \"Saxony\", \"Berchtesgadener Ache\"],\n      \"Start_Date_Affected\": \"14 July 2021\",\n      \"End_Date_Affected\": \"19 July 2021\",\n      \"Num_Affected\": \"NULL\",\n      \"Affected_with_annotation\": \"1,300 people had been initially reported as missing on 16 July, but mostly due to mobile networks being down in some regions which made it difficult to call people. Some of the worst damage from the flood was in the district of Ahrweiler, Rhineland-Palatinate, where the river Ahr rose, destroying many buildings and causing at least 110 deaths. On 14 July, the city of Hagen declared a state of emergency, after the Volme river started overflowing its banks. The village of Kordel in Trier-Saarburg, which has around 2,000 residents, has been completely cut off. Several rivers reached their highest water level to date, including the Kyll, which rose from an average level of 1 metre (3.3 ft) to 7.85 metres (25.8 ft). On 15 July, Thalys train services to Germany were suspended, and Deutsche Bahn stated that many rail services in North Rhine-Westphalia were also cancelled. Deutsche Bahn reported that over 600 kilometres (370 mi) of track was affected in North Rhine-Westphalia. The Cologne\u2013Wuppertal\u2013Hagen\u2013Dortmund and Cologne\u2013Bonn (Main Central Station)\u2013Koblenz lines were closed. The Cologne\u2013Bonn Beuel\u2013Koblenz line remained open, but trains were subject to delay and cancellation. Customers were asked to avoid travel within and to North Rhine-Westphalia by train. The train connection from Dresden to Prague was also suspended after mudslides buried the tracks. Along the Ahr Valley Railway, at least seven railway bridges have been destroyed. In Blessem, floodwaters of the Erft river inundated a quarry on 16 July, leading to a major landslide with several people possibly dead. Several buildings collapsed including parts of Burg Blessem. Around 40 meters of the nearby Bundesautobahn 1 broke away and fell into the Erft, but no cars were on the highway since it was closed. Experts voiced concerns on 15 July that the Steinbachtal Dam was unstable and could burst, and 4,500 people were preemptively evacuated from parts of Euskirchen, and later several thousand more from parts of Rheinbach and Swisttal. Drones were deployed to inspect the dam; while no cracks were found, local politicians said the situation as of 16 July remained 'critical'. Several other dams in North Rhine-Westphalia, such as the Rur Dam, were also overflowing, but there were no concerns about their structural integrity. Regardless, on 16 July a dam of the Rur burst near Wassenberg, prompting the evacuation of Ophoven. Around 360 inmates had to be evacuated from a prison near Euskirchen due to a failing supply of water and electricity. In Eschweiler, all of the more than 300 patients of the St.-Antonius-Hospital Eschweiler had to be evacuated. On 14 July, in Hagen, a veteran soldier rescued a 13-year-old girl who required mechanical ventilation as well as two elderly people using a MAN KAT1 which was usually exhibited in a local museum, after regular rescue vehicles were unable to get there in time. Strong rainfall also led to flooding in the states of Baden-W\u00fcrttemberg and Saxony. As of 15 July, one person in Saxony remains missing. Further strong rainfall on 17 July caused flooding in Saxony and Bavaria e.g. Berchtesgadener Ache, where at least one person died.\"\n    },\n    {\n      \"Country\": \"Italy\",\n      \"Location_Affected\": [\"Trentino-Alto Adige\", \"Veneto\"],\n      \"Start_Date_Affected\": \"14 July 2021\",\n      \"End_Date_Affected\": \"14 July 2021\",\n      \"Num_Affected\": \"NULL\",\n      \"Affected_with_annotation\": \"On 14 July, the storms reached Northeastern Italy and caused damage to agricultural crops. In Trentino-Alto Adige, a fallen tree damaged a cable car and several roads were damaged, and in Veneto one person died.\"\n    },\n    {\n      \"Country\": \"Luxembourg\",\n      \"Location_Affected\": [\"Echternach\", \"Rosport\", \"Mersch\", \"Beringen\", \"Rollingen\"],\n      \"Start_Date_Affected\": \"NULL\",\n      \"End_Date_Affected\": \"NULL\",\n      \"Num_Affected\": \"NULL\",\n      \"Affected_with_annotation\": \"In Luxembourg, hundreds of people were evacuated from their homes in Echternach and Rosport. Many homes in Mersch, Beringen and Rollingen lost electricity.\"\n    },\n    {\n      \"Country\": \"Netherlands\",\n      \"Location_Affected\": [\"Valkenburg aan de Geul\", \"Venlo\", \"Belfeld\", \"Steyl\", \"Arcen\", \"VieCuri Hospital\", \"De Westereen\"],\n      \"Start_Date_Affected\": \"14 July 2021\",\n      \"End_Date_Affected\": \"25 July 2021\",\n      \"Num_Affected\": \"NULL\",\n      \"Affected_with_annotation\": \"In the Netherlands, the southern town of Valkenburg aan de Geul and other areas in the valley of the river Geul were worst affected. More than 10,000 people were evacuated in Venlo and the neighbouring communities Belfeld, Steyl and Arcen on the same evening. The VieCuri Hospital in Venlo was also evacuated as a precaution against flooding from the Maas. A total of 240 patients were transferred to other hospitals in the region. It reopened on 21 July. Heavy rain in the early hours of 25 July caused flooding in the north west of Friesland. In De Westereen, 104.7 millimetres (4.12 in) of rain fell. A nursing home was flooded and evacuated.\"\n    },\n    {\n      \"Country\": \"Romania\",\n      \"Location_Affected\": [\"Alba County\", \"Cluj-Napoca\", \"Satu Mare\", \"Ia\u0219i\"],\n      \"Start_Date_Affected\": \"15 July 2021\",\n      \"End_Date_Affected\": \"20 July 2021\",\n      \"Num_Affected\": \"NULL\",\n      \"Affected_with_annotation\": \"In Alba County, rains and storms destroyed three houses and severely damaged another 20 in Ocoli\u0219. More than 220 liters of precipitation per square meter fell in this area in five hours. A hailstorm also affected Cluj-Napoca on the night of 19 July. The Heroes' Avenue was completely flooded, cars were damaged by falling trees, some neighborhoods were left without electricity and two people were injured by flying debris. Two people were killed by floods in Satu Mare and Ia\u0219i. Between 15 and 20 July, heavy rains caused flooding in 80 localities in 20 counties.\"\n    },\n    {\n      \"Country\": \"Switzerland\",\n      \"Location_Affected\": [\"Lake Biel\", \"Lake Thun\", \"Lake Lucerne\", \"Lake Neuch\u00e2tel\"],\n      \"Start_Date_Affected\": \"15 July 2021\",\n      \"End_Date_Affected\": \"20 July 2021\",\n      \"Num_Affected\": \"NULL\",\n      \"Affected_with_annotation\": \"On 15 July, Switzerland's weather service warned that flooding in the country would worsen over the next few days, potentially equalling the levels of the 2005 'flood of the century' and that there was a particularly high risk of flooding on Lake Biel, Lake Thun and Lake Lucerne, as well as a risk of landslides. That day, the water level in Lake Lucerne reached the highest warning level. While water levels on most lakes were receding by 20 July, Lake Neuch\u00e2tel still remained on the highest level since 1954.\"\n    },\n    {\n      \"Country\": \"United Kingdom\",\n      \"Location_Affected\": [\"London\", \"Putney\", \"Chipstead\", \"Notting Hill\", \"Sloane Square\", \"Chalk Farm\", \"Hampstead\", \"Wimbledon\", \"Euston\", \"Southampton\", \"Camberwell\", \"Clapham\", \"Hackney Wick\", \"Woodford\", \"Nine Elms\"],\n      \"Start_Date_Affected\": \"12 July 2021\",\n      \"End_Date_Affected\": \"25 July 2021\",\n      \"Num_Affected\": \"NULL\",\n      \"Affected_with_annotation\": \"The cut-off low that caused the severe flooding across western Europe first moved over the United Kingdom on 12 July, resulting in more than the average monthly rainfall total to be recorded in a 24-hour period across parts of the country. Particularly severe flash flooding was reported in the London area, where 47.8 mm (1.88 in) of rainfall was recorded on 12 July at Kew, marking the third-wettest day on record for that weather station and the wettest since 6 July 1983. Both Putney in London and Chipstead in Surrey recorded more than 31 mm (1.2 in) of rainfall in a one-hour period, while other areas of London recorded over 76.2 mm (3.00 in) of rain in 90 minutes. The London Fire Brigade received more than 1,000 calls relating to flooding incidents, as houses were evacuated and cars were submerged by quickly rising floodwaters. Heavy rainfall caused sewer systems to overflow, unable to handle the sudden intensity of the rainfall, resulting in streets and buildings being flooded by sewage. Thames Water received more than 2,500 calls relating to overflowing sewage, stating that the rainfall had surpassed the design capability of their sewage system; the heaviest"
+}

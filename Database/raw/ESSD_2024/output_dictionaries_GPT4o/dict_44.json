@@ -1,0 +1,304 @@
+{
+    "Event_ID": "111.0",
+    "Source": "https://en.wikipedia.org/wiki/Hurricane_Ignacio_(2003)",
+    "Event_Name": "Hurricane Ignacio (2003)   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "50,000",
+        "Total_Homelessness_Annotation": "The combined damage from the two hurricanes totaled about $1 billion (2003 USD, $1.1 billion 2006 USD), and the effects from the two storms left at least 50,000 homeless."
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "Mexico",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "50,000",
+            "Homelessness_with_annotation": "The combined damage from the two hurricanes totaled about $1 billion (2003 USD, $1.1 billion 2006 USD), and the effects from the two storms left at least 50,000 homeless."
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "Mexico",
+            "Location_Homelessness": [
+                "Baja California Peninsula"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "50,000",
+            "Homelessness_with_annotation": "The combined damage from the two hurricanes totaled about $1 billion (2003 USD, $1.1 billion 2006 USD), and the effects from the two storms left at least 50,000 homeless."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "NULL",
+        "Total_Injury_Annotation": "NULL"
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "Mexico",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "United States",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "Mexico",
+            "Location_Injury": [
+                "La Paz"
+            ],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "United States",
+            "Location_Injury": [
+                "Merced County"
+            ],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Assessment_With_Annotation": "Hurricane Ignacio (2003): Hurricane Ignacio was the latest-forming first hurricane of a Pacific hurricane season since reliable satellite observation began in 1966. The ninth tropical storm of the 2003 Pacific hurricane season, Ignacio developed out of a tropical wave on August 22 a short distance off the coast of Mexico.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "4",
+        "Total_Death_Annotation": "Statewide, four people were killed, and damage was estimated at $21.2 million."
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "Mexico",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "4",
+            "Death_with_annotation": "Statewide, four people were killed, and damage was estimated at $21.2 million."
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "Mexico",
+            "Location_Death": [
+                "Baja California Sur"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "2",
+            "Death_with_annotation": "Two rescue workers died when they were swept away by the floodwaters."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Death": [
+                "Baja California Sur"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "2",
+            "Death_with_annotation": "Two rescue workers drowned in the flood waters brought by the storm and some 10,000 people were evacuated to shelters."
+        }
+    ],
+    "Start_Date": "August 22, 2003",
+    "End_Date": "August 27, 2003",
+    "Time_with_Annotation": "Formed: August 22, 2003\nDissipated: August 27, 2003",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "$21.2 million",
+        "Total_Insured_Damage_Units": "USD",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "Due to the storm's slow movement, rainfall was high and the resulting flooding was severe, and Ignacio was responsible for approximately US$21.2 million of damage."
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "Mexico",
+            "Total_Insured_Damage": "$21.2 million",
+            "Total_Insured_Damage_Units": "USD",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "Due to the storm's slow movement, rainfall was high and the resulting flooding was severe, and Ignacio was responsible for approximately US$21.2 million of damage."
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "Mexico",
+            "Location_Insured_Damage": [
+                "Baja California Sur"
+            ],
+            "Num_Insured_Damage": "$21.2 million",
+            "Insured_Damage_Units": "USD",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Due to the storm's slow movement, rainfall was high and the resulting flooding was severe, and Ignacio was responsible for approximately US$21.2 million of damage."
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "10,500",
+        "Total_Displacement_Annotation": "The Civil Protection agency for the state of Baja California Sur ordered for the evacuation for 10,000 residents in flood-prone areas near La Paz. Officials also moved 700 people in areas near rivers to shelters in Los Cabos. About 500 people in Sinaloa were evacuated, as well."
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "Mexico",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "10,500",
+            "Displacement_with_annotation": "The Civil Protection agency for the state of Baja California Sur ordered for the evacuation for 10,000 residents in flood-prone areas near La Paz. Officials also moved 700 people in areas near rivers to shelters in Los Cabos. About 500 people in Sinaloa were evacuated, as well."
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "Mexico",
+            "Location_Displacement": [
+                "La Paz"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "10,000",
+            "Displacement_with_annotation": "The Civil Protection agency for the state of Baja California Sur ordered for the evacuation for 10,000 residents in flood-prone areas near La Paz."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Displacement": [
+                "Los Cabos"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "700",
+            "Displacement_with_annotation": "Officials also moved 700 people in areas near rivers to shelters in Los Cabos."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Displacement": [
+                "Sinaloa"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "500",
+            "Displacement_with_annotation": "About 500 people in Sinaloa were evacuated, as well."
+        }
+    ],
+    "Location": [
+        "Baja California Peninsula",
+        "Sonora",
+        "California",
+        "La Paz",
+        "Los Cabos",
+        "Ciudad Constituci\u00f3n",
+        "Todos Santos",
+        "Cabo San Lucas",
+        "Sinaloa",
+        "Merced County"
+    ],
+    "Location_with_Annotation": {
+        "Baja California Peninsula": "The hurricane produced heavy rainfall across Baja California Sur, which resulted in flooding.",
+        "Sonora": "Areas affected: Baja California Peninsula, Sonora, California",
+        "California": "Areas affected: Baja California Peninsula, Sonora, California",
+        "La Paz": "On August 25 Ignacio made landfall just east of La Paz with winds of 80 mph (130 km/h).",
+        "Los Cabos": "Officials also moved 700 people in areas near rivers to shelters in Los Cabos.",
+        "Ciudad Constituci\u00f3n": "The slow motion of Ignacio produced heavy rainfall across the southern portion of the Baja California Peninsula, including a peak 24\u2011hour total of 7.25 inches (184 mm) in Ciudad Constituci\u00f3n.",
+        "Todos Santos": "The passage of the hurricane left citizens in Todos Santos without power for around 24 hours.",
+        "Cabo San Lucas": "In Cabo San Lucas, effects were minimal, amounting to light winds and rain of less than 2 inches (51 mm).",
+        "Sinaloa": "Heavy rainfall was also reported in Sinaloa on the Mexican mainland.",
+        "Merced County": "The remnants of Ignacio produced thunderstorm activity in high terrain areas of central interior California. Over 300 lightning strikes from the remnant moisture was recorded in a one-hour period. The lightning caused 14 forest fires in Merced County, resulting in a loss of power to over 3,500 customers in and around the Atwater area."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "21.2 million",
+        "Total_Economic_Damage_Units": "USD",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "Due to the storm's slow movement, rainfall was high and the resulting flooding was severe, and Ignacio was responsible for approximately US$21.2 million of damage."
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "Mexico",
+            "Total_Economic_Damage": "21.2 million",
+            "Total_Economic_Damage_Units": "USD",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Due to the storm's slow movement, rainfall was high and the resulting flooding was severe, and Ignacio was responsible for approximately US$21.2 million of damage."
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "Mexico",
+            "Location_Economic_Damage": [
+                "Baja California Sur"
+            ],
+            "Num_Economic_Damage": "21.2 million",
+            "Economic_Damage_Units": "USD",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Due to the storm's slow movement, rainfall was high and the resulting flooding was severe, and Ignacio was responsible for approximately US$21.2 million of damage."
+        }
+    ],
+    "Perils": "Wind|Rainfall|Flood|Landslide|Lightning|Thunderstorm|Wildfire",
+    "Perils_Assessment_With_Annotation": {
+        "Wind": "Hurricane-force winds blew down trees, signs, and power lines in and around La Paz",
+        "Rainfall": "The slow motion of Ignacio produced heavy rainfall across the southern portion of the Baja California Peninsula, including a peak 24\u2011hour total of 7.25 inches (184 mm) in Ciudad Constituci\u00f3n",
+        "Flood": "Heavy rainfall caused severe inland flooding",
+        "Landslide": "destroying bridges and multiple mudslides, some of which blocked roads",
+        "Lightning": "Over 300 lightning strikes from the remnant moisture was recorded in a one-hour period",
+        "Thunderstorm": "The remnants of Ignacio produced thunderstorm activity in high terrain areas of central interior California",
+        "Wildfire": "The lightning caused 14 forest fires in Merced County"
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "1,198 homes, one school",
+        "Total_Building_Damage_Annotation": "Statewide, four people were killed, 1,198 homes were damaged, 4,146 ha (10,240 acres) of crops were destroyed, and one school was also destroyed."
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "Mexico",
+            "Start_Date_Building_Damage": "August 25, 2003",
+            "End_Date_Building_Damage": "August 28, 2003",
+            "Num_Building_Damage": "1,198 homes, one school",
+            "Building_Damage_with_annotation": "Statewide, four people were killed, 1,198 homes were damaged, 4,146 ha (10,240 acres) of crops were destroyed, and one school was also destroyed."
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "Mexico",
+            "Location_Building_Damage": [
+                "La Paz",
+                "Todos Santos"
+            ],
+            "Start_Date_Building_Damage": "August 25, 2003",
+            "End_Date_Building_Damage": "August 28, 2003",
+            "Num_Building_Damage": "Multiple beach huts, power lines, bridges",
+            "Building_Damage_with_annotation": "Hurricane-force winds blew down trees, signs, and power lines in and around La Paz, while closer to the beach the hurricane destroyed multiple beach huts. Heavy rainfall caused severe inland flooding, destroying bridges and multiple mudslides, some of which blocked roads."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "10,000 people",
+        "Total_Affected_Annotation": "Due to the storm's slow movement, rainfall was high and the resulting flooding was severe,[1] and Ignacio was responsible for approximately US$21.2 million of damage.[26] Two rescue workers drowned in the flood waters brought by the storm and some 10,000 people were evacuated to shelters.[27]"
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "Mexico",
+            "Start_Date_Affected": "August 22, 2003",
+            "End_Date_Affected": "August 27, 2003",
+            "Num_Affected": "10,000 people",
+            "Affected_with_annotation": "Due to the storm's slow movement, rainfall was high and the resulting flooding was severe,[1] and Ignacio was responsible for approximately US$21.2 million of damage.[26] Two rescue workers drowned in the flood waters brought by the storm and some 10,000 people were evacuated to shelters.[27]"
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "Mexico",
+            "Location_Affected": [
+                "La Paz",
+                "Los Cabos",
+                "Sinaloa"
+            ],
+            "Start_Date_Affected": "August 22, 2003",
+            "End_Date_Affected": "August 27, 2003",
+            "Num_Affected": "10,000 people",
+            "Affected_with_annotation": "The Civil Protection agency for the state of Baja California Sur ordered for the evacuation for 10,000 residents in flood-prone areas near La Paz. Officials also moved 700 people in areas near rivers to shelters in Los Cabos.[10] 32 emergency shelters were set up in and around La Paz.[11] About 500 people in Sinaloa were evacuated, as well.[13]"
+        }
+    ]
+}

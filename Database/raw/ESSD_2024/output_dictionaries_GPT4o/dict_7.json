@@ -1,0 +1,513 @@
+{
+    "Event_ID": "57.0",
+    "Source": "https://en.wikipedia.org/wiki/Typhoon_Sepat",
+    "Event_Name": "Typhoon Sepat   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "NULL",
+        "Total_Homelessness_Annotation": "NULL"
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Homelessness": "August 15, 2007",
+            "End_Date_Homelessness": "August 17, 2007",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "About 200 people were evacuated from Manila due to flooding."
+        },
+        {
+            "Country": "Taiwan",
+            "Start_Date_Homelessness": "August 18, 2007",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "Nearly 2,000 people had to be evacuated."
+        },
+        {
+            "Country": "China",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "Over 900,000 people were evacuated in eastern China."
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "Philippines",
+            "Location_Homelessness": [
+                "Manila"
+            ],
+            "Start_Date_Homelessness": "August 15, 2007",
+            "End_Date_Homelessness": "August 17, 2007",
+            "Num_Homelessness": "About 200 people",
+            "Homelessness_with_annotation": "About 200 people were evacuated from Manila due to flooding."
+        },
+        {
+            "Country": "Taiwan",
+            "Location_Homelessness": [
+                "NULL"
+            ],
+            "Start_Date_Homelessness": "August 18, 2007",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "Nearly 2,000 people",
+            "Homelessness_with_annotation": "Nearly 2,000 people had to be evacuated."
+        },
+        {
+            "Country": "China",
+            "Location_Homelessness": [
+                "eastern China"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "Over 900,000 people",
+            "Homelessness_with_annotation": "Over 900,000 people were evacuated in eastern China."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "at least 60",
+        "Total_Injury_Annotation": "a tornado was reported in Zhejiang, killing 13 people and injuring at least 60 more."
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "China",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "at least 60",
+            "Injury_with_annotation": "a tornado was reported in Zhejiang, killing 13 people and injuring at least 60 more."
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "China",
+            "Location_Injury": [
+                "Zhejiang"
+            ],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "at least 60",
+            "Injury_with_annotation": "a tornado was reported in Zhejiang, killing 13 people and injuring at least 60 more."
+        }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Assessment_With_Annotation": "Typhoon Sepat, known in the Philippines as Super Typhoon Egay, was the eighth named tropical storm and the strongest tropical cyclone of the 2007 Pacific typhoon season, that affected the Philippines and made landfall in Taiwan and Fujian.",
+    "Total_Summary_Death": {
+        "Total_Deaths": ">43 total",
+        "Total_Death_Annotation": "More than 43 deaths were directly blamed on Sepat"
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Death": "August 15",
+            "End_Date_Death": "August 17",
+            "Num_Death": "3",
+            "Death_with_annotation": "At least three people drowned."
+        },
+        {
+            "Country": "Taiwan",
+            "Start_Date_Death": "August 18",
+            "End_Date_Death": "NULL",
+            "Num_Death": "1",
+            "Death_with_annotation": "One person was reported killed in Taiwan."
+        },
+        {
+            "Country": "China",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "39",
+            "Death_with_annotation": "Landslides were the cause of at least half the 39 deaths in China."
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "Philippines",
+            "Location_Death": [
+                "Metro Manila"
+            ],
+            "Start_Date_Death": "August 15",
+            "End_Date_Death": "August 17",
+            "Num_Death": "3",
+            "Death_with_annotation": "At least three people drowned."
+        },
+        {
+            "Country": "Taiwan",
+            "Location_Death": [
+                "Taiwan"
+            ],
+            "Start_Date_Death": "August 18",
+            "End_Date_Death": "NULL",
+            "Num_Death": "1",
+            "Death_with_annotation": "One person was reported killed in Taiwan."
+        },
+        {
+            "Country": "China",
+            "Location_Death": [
+                "Fujian Province"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "2",
+            "Death_with_annotation": "In Fujian Province, Sepat's winds felled billboards and ripped roofs off houses and two people were killed."
+        },
+        {
+            "Country": "China",
+            "Location_Death": [
+                "Zhejiang"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "13",
+            "Death_with_annotation": "A tornado was reported in Zhejiang, killing 13 people and injuring at least 60 more."
+        },
+        {
+            "Country": "China",
+            "Location_Death": [
+                "Fujian Province"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "12",
+            "Death_with_annotation": "Sepat caused landslides in Fujian, leaving 12 people missing."
+        }
+    ],
+    "Start_Date": "August 12, 2007",
+    "End_Date": "August 24, 2007",
+    "Time_with_Annotation": "Formed: August 12, 2007\nDissipated: August 24, 2007",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": ">$693 million",
+        "Total_Insured_Damage_Units": "USD",
+        "Total_Insured_Damage_Inflation_Adjusted": "Yes",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "2020",
+        "Total_Insured_Damage_Assessment_with_annotation": "More than 43 deaths were directly blamed on Sepat; 3 out of the 43 were from the Philippines due to drowning brought on by heavy rains from the southwest monsoon enhanced by Sepat, with total insured losses estimated at $692 million (2007 USD), or $869.66 million (2020 USD; adjusted for inflation)."
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "Taiwan",
+            "Total_Insured_Damage": "$34.5 million",
+            "Total_Insured_Damage_Units": "USD",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "Heavy rainfall in Taiwan, which reached 984 mm (38.7 in) at Tianhsiang in Hualien, resulted in numerous mudslides, especially in mountain regions and in the south while the combination of the precipitation and winds caused an estimated $1.14 billion (2007 NT$, $34.5 million 2007 USD) in agricultural damage."
+        },
+        {
+            "Country": "China",
+            "Total_Insured_Damage": "$658 million",
+            "Total_Insured_Damage_Units": "USD",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "Damage was also reported in Jiangxi and Hunan, and damage in the four provinces was estimated at 5 billion yuan (US$658 million)."
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "Taiwan",
+            "Location_Insured_Damage": [
+                "Tianhsiang",
+                "Hualien"
+            ],
+            "Num_Insured_Damage": "$34.5 million",
+            "Insured_Damage_Units": "USD",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Heavy rainfall in Taiwan, which reached 984 mm (38.7 in) at Tianhsiang in Hualien, resulted in numerous mudslides, especially in mountain regions and in the south while the combination of the precipitation and winds caused an estimated $1.14 billion (2007 NT$, $34.5 million 2007 USD) in agricultural damage."
+        },
+        {
+            "Country": "China",
+            "Location_Insured_Damage": [
+                "Jiangxi",
+                "Hunan"
+            ],
+            "Num_Insured_Damage": "$658 million",
+            "Insured_Damage_Units": "USD",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Damage was also reported in Jiangxi and Hunan, and damage in the four provinces was estimated at 5 billion yuan (US$658 million)."
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "Over 902,000 people",
+        "Total_Displacement_Annotation": "Over 900,000 people were evacuated in eastern China, and over 100 flights had to be cancelled. In Taiwan, nearly 2,000 people had to be evacuated."
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "China",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "Over 900,000 people",
+            "Displacement_with_annotation": "Over 900,000 people were evacuated in eastern China, and over 100 flights had to be cancelled."
+        },
+        {
+            "Country": "Taiwan",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "Nearly 2,000 people",
+            "Displacement_with_annotation": "In Taiwan, nearly 2,000 people had to be evacuated."
+        },
+        {
+            "Country": "Philippines",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "About 200 people",
+            "Displacement_with_annotation": "About 200 people were evacuated from Manila due to flooding."
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "China",
+            "Location_Displacement": [
+                "eastern China"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "Over 900,000 people",
+            "Displacement_with_annotation": "Over 900,000 people were evacuated in eastern China, and over 100 flights had to be cancelled."
+        },
+        {
+            "Country": "Taiwan",
+            "Location_Displacement": [
+                "Taiwan"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "Nearly 2,000 people",
+            "Displacement_with_annotation": "In Taiwan, nearly 2,000 people had to be evacuated."
+        },
+        {
+            "Country": "Philippines",
+            "Location_Displacement": [
+                "Manila"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "About 200 people",
+            "Displacement_with_annotation": "About 200 people were evacuated from Manila due to flooding."
+        }
+    ],
+    "Location": [
+        "Philippines",
+        "Taiwan",
+        "China",
+        "Fujian Province",
+        "Zhejiang",
+        "Jiangxi",
+        "Hunan"
+    ],
+    "Location_with_Annotation": {
+        "Philippines": "3 out of the 43 were from the Philippines due to drowning brought on by heavy rains from the southwest monsoon enhanced by Sepat",
+        "Taiwan": "Sepat makes landfall in Taiwan on August 17 (+21:00 UTC) as a Category 3-equivalent typhoon",
+        "China": "made a second landfall in China on August 18, 2007",
+        "Fujian Province": "In Fujian Province, Sepat's winds felled billboards and ripped roofs off houses and two people were killed",
+        "Zhejiang": "a tornado was reported in Zhejiang, killing 13 people and injuring at least 60 more",
+        "Jiangxi": "Damage was also reported in Jiangxi and Hunan",
+        "Hunan": "Damage was also reported in Jiangxi and Hunan"
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": ">$693 million",
+        "Total_Economic_Damage_Units": "USD",
+        "Total_Economic_Damage_Inflation_Adjusted": "Yes",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "2020",
+        "Total_Economic_Damage_Assessment_with_annotation": "More than 43 deaths were directly blamed on Sepat; 3 out of the 43 were from the Philippines due to drowning brought on by heavy rains from the southwest monsoon enhanced by Sepat, with total insured losses estimated at $692 million (2007 USD), or $869.66 million (2020 USD; adjusted for inflation)."
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "Taiwan",
+            "Total_Economic_Damage": "$34.5 million",
+            "Total_Economic_Damage_Units": "USD",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Heavy rainfall in Taiwan, which reached 984 mm (38.7 in) at Tianhsiang in Hualien, resulted in numerous mudslides, especially in mountain regions and in the south while the combination of the precipitation and winds caused an estimated $1.14 billion (2007 NT$, $34.5 million 2007 USD) in agricultural damage."
+        },
+        {
+            "Country": "China",
+            "Total_Economic_Damage": "$658 million",
+            "Total_Economic_Damage_Units": "USD",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Damage was also reported in Jiangxi and Hunan, and damage in the four provinces was estimated at 5 billion yuan (US$658 million)."
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "Taiwan",
+            "Location_Economic_Damage": [
+                "Tianhsiang",
+                "Hualien"
+            ],
+            "Num_Economic_Damage": "$34.5 million",
+            "Economic_Damage_Units": "USD",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Heavy rainfall in Taiwan, which reached 984 mm (38.7 in) at Tianhsiang in Hualien, resulted in numerous mudslides, especially in mountain regions and in the south while the combination of the precipitation and winds caused an estimated $1.14 billion (2007 NT$, $34.5 million 2007 USD) in agricultural damage."
+        },
+        {
+            "Country": "China",
+            "Location_Economic_Damage": [
+                "Fujian",
+                "Zhejiang",
+                "Jiangxi",
+                "Hunan"
+            ],
+            "Num_Economic_Damage": "$658 million",
+            "Economic_Damage_Units": "USD",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Damage was also reported in Jiangxi and Hunan, and damage in the four provinces was estimated at 5 billion yuan (US$658 million)."
+        }
+    ],
+    "Perils": "Wind|Rainfall|Flood|Landslide",
+    "Perils_Assessment_With_Annotation": {
+        "Wind": "Sustained winds of 126 km/h (78 mph) were recorded off the Taiwanese coast on August 18 as Sepat moved through the country.",
+        "Rainfall": "Heavy rainfall in Taiwan, which reached 984 mm (38.7 in) at Tianhsiang in Hualien.",
+        "Flood": "On August 15, monsoon rains brought by Typhoon Sepat flooded and paralyzed traffic in Metro Manila.",
+        "Landslide": "Sepat caused landslides in Fujian, leaving 12 people missing."
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "NULL",
+        "Total_Building_Damage_Annotation": "NULL"
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "Taiwan",
+            "Start_Date_Building_Damage": "August 18, 2007",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "NULL"
+        },
+        {
+            "Country": "Mainland China",
+            "Start_Date_Building_Damage": "August 18, 2007",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "Taiwan",
+            "Location_Building_Damage": [
+                "Suao-Hualien Highway"
+            ],
+            "Start_Date_Building_Damage": "August 18, 2007",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "The Suao-Hualien Highway was also closed due to landslides brought by the typhoon."
+        },
+        {
+            "Country": "Mainland China",
+            "Location_Building_Damage": [
+                "Fujian Province"
+            ],
+            "Start_Date_Building_Damage": "August 18, 2007",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "In Fujian Province, Sepat's winds felled billboards and ripped roofs off houses and two people were killed."
+        },
+        {
+            "Country": "Mainland China",
+            "Location_Building_Damage": [
+                "Zhejiang"
+            ],
+            "Start_Date_Building_Damage": "August 18, 2007",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "A tornado was reported in Zhejiang, killing 13 people and injuring at least 60 more."
+        },
+        {
+            "Country": "Mainland China",
+            "Location_Building_Damage": [
+                "Fujian Province"
+            ],
+            "Start_Date_Building_Damage": "August 18, 2007",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "Sepat caused landslides in Fujian, leaving 12 people missing."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "NULL",
+        "Total_Affected_Annotation": "NULL"
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Affected": "August 15, 2007",
+            "End_Date_Affected": "August 17, 2007",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "On August 15, monsoon rains brought by Typhoon Sepat flooded and paralyzed traffic in Metro Manila. Classes and services in government offices were suspended until August 17. At least three people drowned. About 200 people were evacuated from Manila due to flooding."
+        },
+        {
+            "Country": "Taiwan",
+            "Start_Date_Affected": "August 18, 2007",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Sustained winds of 126 km/h (78 mph) were recorded off the Taiwanese coast on August 18 as Sepat moved through the country. Heavy rainfall in Taiwan, which reached 984 mm (38.7 in) at Tianhsiang in Hualien, resulted in numerous mudslides, especially in mountain regions and in the south while the combination of the precipitation and winds caused an estimated $1.14 billion (2007 NT$, $34.5 million 2007 USD) in agricultural damage. More than 70,000 homes lost power, and nearly a week after the storm passed through 9,000 people remained without electricity. The Suao-Hualien Highway was also closed due to landslides brought by the typhoon. One person was reported killed in Taiwan."
+        },
+        {
+            "Country": "China",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "In Fujian Province, Sepat's winds felled billboards and ripped roofs off houses and two people were killed, while a tornado was reported in Zhejiang, killing 13 people and injuring at least 60 more. Most counties received almost 200 mm (7.9 in) of rainfall. Sepat caused landslides in Fujian, leaving 12 people missing. Landslides were the cause of at least half the 39 deaths in China. Damage was also reported in Jiangxi and Hunan, and damage in the four provinces was estimated at 5 billion yuan (US$658 million)."
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "Philippines",
+            "Location_Affected": [
+                "Metro Manila"
+            ],
+            "Start_Date_Affected": "August 15, 2007",
+            "End_Date_Affected": "August 17, 2007",
+            "Num_Affected": "200",
+            "Affected_with_annotation": "About 200 people were evacuated from Manila due to flooding."
+        },
+        {
+            "Country": "Taiwan",
+            "Location_Affected": [
+                "Tianhsiang",
+                "Hualien"
+            ],
+            "Start_Date_Affected": "August 18, 2007",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Heavy rainfall in Taiwan, which reached 984 mm (38.7 in) at Tianhsiang in Hualien, resulted in numerous mudslides, especially in mountain regions and in the south."
+        },
+        {
+            "Country": "Taiwan",
+            "Location_Affected": [
+                "Suao-Hualien Highway"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "The Suao-Hualien Highway was also closed due to landslides brought by the typhoon."
+        },
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "Fujian Province"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "In Fujian Province, Sepat's winds felled billboards and ripped roofs off houses and two people were killed."
+        },
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "Zhejiang"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "73",
+            "Affected_with_annotation": "A tornado was reported in Zhejiang, killing 13 people and injuring at least 60 more."
+        },
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "Fujian"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "12",
+            "Affected_with_annotation": "Sepat caused landslides in Fujian, leaving 12 people missing."
+        }
+    ]
+}

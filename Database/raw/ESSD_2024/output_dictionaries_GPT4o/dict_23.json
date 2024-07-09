@@ -1,0 +1,443 @@
+{
+    "Event_ID": "80.0",
+    "Source": "https://en.wikipedia.org/wiki/Typhoon_Xangsane_(2000)",
+    "Event_Name": "Typhoon Xangsane (2000)   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "100,000 homes",
+        "Total_Homelessness_Annotation": "The storm killed 40 people, lost 100,000 homes, and caused damage of $27.45 million."
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Homelessness": "October 27, 2000",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "100,000 homes",
+            "Homelessness_with_annotation": "The storm killed 40 people, lost 100,000 homes, and caused damage of $27.45 million."
+        },
+        {
+            "Country": "Taiwan",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "NULL"
+        },
+        {
+            "Country": "Japan",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "Philippines",
+            "Location_Homelessness": [
+                "Quezon",
+                "Bulacan",
+                "Zambales",
+                "Pangasinan",
+                "Bicol region"
+            ],
+            "Start_Date_Homelessness": "October 27, 2000",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "100,000 homes",
+            "Homelessness_with_annotation": "The storm killed 40 people, lost 100,000 homes, and caused damage of $27.45 million."
+        },
+        {
+            "Country": "Taiwan",
+            "Location_Homelessness": [
+                "NULL"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "NULL"
+        },
+        {
+            "Country": "Japan",
+            "Location_Homelessness": [
+                "NULL"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "NULL"
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "65",
+        "Total_Injury_Annotation": "In Taiwan, the storm killed 64 and injured 65 people, and 25 were declared missing"
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "Taiwan",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "65",
+            "Injury_with_annotation": "In Taiwan, the storm killed 64 and injured 65 people, and 25 were declared missing"
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "Taiwan",
+            "Location_Injury": [
+                "Taiwan"
+            ],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "65",
+            "Injury_with_annotation": "In Taiwan, the storm killed 64 and injured 65 people, and 25 were declared missing"
+        }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Assessment_With_Annotation": "Typhoon Xangsane, known in the Philippines as Typhoon Reming, was a typhoon that made landfall in the Philippines and Taiwan. The 30th named storm and 12th typhoon of the 2000 Pacific typhoon season.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "187",
+        "Total_Death_Annotation": "Xangsane was responsible for 187 casualties, including 83 possibly indirectly from the crash of Singapore Airlines Flight 006 on October 31, 2000."
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Death": "October 27, 2000",
+            "End_Date_Death": "NULL",
+            "Num_Death": "40",
+            "Death_with_annotation": "The storm killed 40 people, lost 100,000 homes, and caused damage of $27.45 million."
+        },
+        {
+            "Country": "Taiwan",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "64",
+            "Death_with_annotation": "In Taiwan, the storm killed 64 and injured 65 people, and 25 were declared missing."
+        },
+        {
+            "Country": "Taiwan",
+            "Start_Date_Death": "October 31, 2000",
+            "End_Date_Death": "NULL",
+            "Num_Death": "83",
+            "Death_with_annotation": "Xangsane was responsible for 187 casualties, including 83 possibly indirectly from the crash of Singapore Airlines Flight 006 on October 31, 2000."
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "Philippines",
+            "Location_Death": [
+                "NULL"
+            ],
+            "Start_Date_Death": "October 27, 2000",
+            "End_Date_Death": "NULL",
+            "Num_Death": "40",
+            "Death_with_annotation": "The storm killed 40 people, lost 100,000 homes, and caused damage of $27.45 million."
+        },
+        {
+            "Country": "Taiwan",
+            "Location_Death": [
+                "NULL"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "64",
+            "Death_with_annotation": "In Taiwan, the storm killed 64 and injured 65 people, and 25 were declared missing."
+        },
+        {
+            "Country": "Taiwan",
+            "Location_Death": [
+                "Chiang Kai-shek International Airport"
+            ],
+            "Start_Date_Death": "October 31, 2000",
+            "End_Date_Death": "NULL",
+            "Num_Death": "83",
+            "Death_with_annotation": "Xangsane was responsible for 187 casualties, including 83 possibly indirectly from the crash of Singapore Airlines Flight 006 on October 31, 2000."
+        }
+    ],
+    "Start_Date": "October 24, 2000",
+    "End_Date": "November 2, 2000",
+    "Time_with_Annotation": "Formed: October 24, 2000\nDissipated: November 2, 2000",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "$527 million",
+        "Total_Insured_Damage_Units": "USD",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "Damage: $527 million (2000 USD)"
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Total_Insured_Damage": "$27.45 million",
+            "Total_Insured_Damage_Units": "USD",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "The storm killed 40 people, lost 100,000 homes, and caused damage of $27.45 million."
+        },
+        {
+            "Country": "Taiwan",
+            "Total_Insured_Damage": "$500 million",
+            "Total_Insured_Damage_Units": "USD",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "In Taiwan, the storm killed 64 and injured 65 people, and 25 were declared missing and caused $500 million in damages."
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "Philippines",
+            "Location_Insured_Damage": [
+                "Quezon",
+                "Bulacan",
+                "Zambales",
+                "Pangasinan",
+                "Bicol region"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Strong winds and heavy rains occurred in Quezon, Bulacan, Zambales and Pangasinan, as well as in the Bicol region of southern Luzon."
+        },
+        {
+            "Country": "Philippines",
+            "Location_Insured_Damage": [
+                "Tayabas"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "In Tayabas, Quezon, rainfall amount of 312.3 mm was observed in 24 hours."
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "NULL",
+        "Total_Displacement_Annotation": "NULL"
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        },
+        {
+            "Country": "Taiwan",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "Philippines",
+            "Location_Displacement": [
+                "Manila metropolitan area",
+                "Quezon",
+                "Bulacan",
+                "Zambales",
+                "Pangasinan",
+                "Bicol region"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        },
+        {
+            "Country": "Taiwan",
+            "Location_Displacement": [
+                "NULL"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        }
+    ],
+    "Location": [
+        "Caroline Islands",
+        "Philippines",
+        "Taiwan",
+        "Japan"
+    ],
+    "Location_with_Annotation": {
+        "Caroline Islands": "Areas affected: Caroline Islands, Philippines, Taiwan, Japan",
+        "Philippines": "Xangsane made landfall in southern Luzon in the Philippines, on October 27.",
+        "Taiwan": "The storm paralleled the eastern coast of Taiwan, the next day.",
+        "Japan": "Xangsane was the 15th storm that approached Japan in 2000."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "527 million",
+        "Total_Economic_Damage_Units": "USD",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "Damage: $527 million (2000 USD)"
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Total_Economic_Damage": "27.45 million",
+            "Total_Economic_Damage_Units": "USD",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "The storm killed 40 people, lost 100,000 homes, and caused damage of $27.45 million."
+        },
+        {
+            "Country": "Taiwan",
+            "Total_Economic_Damage": "500 million",
+            "Total_Economic_Damage_Units": "USD",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "In Taiwan, the storm killed 64 and injured 65 people, and 25 were declared missing and caused $500 million in damages."
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "Philippines",
+            "Location_Economic_Damage": [
+                "Quezon",
+                "Bulacan",
+                "Zambales",
+                "Pangasinan",
+                "Bicol region"
+            ],
+            "Num_Economic_Damage": "27.45 million",
+            "Economic_Damage_Units": "USD",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "The storm killed 40 people, lost 100,000 homes, and caused damage of $27.45 million."
+        },
+        {
+            "Country": "Taiwan",
+            "Location_Economic_Damage": [
+                "NULL"
+            ],
+            "Num_Economic_Damage": "500 million",
+            "Economic_Damage_Units": "USD",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "In Taiwan, the storm killed 64 and injured 65 people, and 25 were declared missing and caused $500 million in damages."
+        }
+    ],
+    "Perils": "Wind|Rainfall",
+    "Perils_Assessment_With_Annotation": "Strong winds and heavy rains occurred in Quezon, Bulacan, Zambales and Pangasinan, as well as in the Bicol region of southern Luzon.",
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "100,000 homes",
+        "Total_Building_Damage_Annotation": "The storm killed 40 people, lost 100,000 homes, and caused damage of $27.45 million."
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Building_Damage": "October 27, 2000",
+            "End_Date_Building_Damage": "October 27, 2000",
+            "Num_Building_Damage": "100,000 homes",
+            "Building_Damage_with_annotation": "The storm killed 40 people, lost 100,000 homes, and caused damage of $27.45 million."
+        },
+        {
+            "Country": "Taiwan",
+            "Start_Date_Building_Damage": "October 30, 2000",
+            "End_Date_Building_Damage": "October 30, 2000",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "In Taiwan, the storm killed 64 and injured 65 people, and 25 were declared missing and caused $500 million in damages."
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "Philippines",
+            "Location_Building_Damage": [
+                "Quezon",
+                "Bulacan",
+                "Zambales",
+                "Pangasinan",
+                "Bicol region"
+            ],
+            "Start_Date_Building_Damage": "October 27, 2000",
+            "End_Date_Building_Damage": "October 27, 2000",
+            "Num_Building_Damage": "100,000 homes",
+            "Building_Damage_with_annotation": "The storm killed 40 people, lost 100,000 homes, and caused damage of $27.45 million."
+        },
+        {
+            "Country": "Taiwan",
+            "Location_Building_Damage": [
+                "NULL"
+            ],
+            "Start_Date_Building_Damage": "October 30, 2000",
+            "End_Date_Building_Damage": "October 30, 2000",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "In Taiwan, the storm killed 64 and injured 65 people, and 25 were declared missing and caused $500 million in damages."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "NULL",
+        "Total_Affected_Annotation": "NULL"
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Affected": "October 27, 2000",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "40",
+            "Affected_with_annotation": "\"The storm killed 40 people, lost 100,000 homes, and caused damage of $27.45 million.\""
+        },
+        {
+            "Country": "Taiwan",
+            "Start_Date_Affected": "October 30, 2000",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "64",
+            "Affected_with_annotation": "\"In Taiwan, the storm killed 64 and injured 65 people, and 25 were declared missing and caused $500 million in damages.\""
+        },
+        {
+            "Country": "Taiwan",
+            "Start_Date_Affected": "October 31, 2000",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "83",
+            "Affected_with_annotation": "\"Xangsane was responsible for 187 casualties, including 83 possibly indirectly from the crash of Singapore Airlines Flight 006 on October 31, 2000.\""
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "Philippines",
+            "Location_Affected": [
+                "Quezon",
+                "Bulacan",
+                "Zambales",
+                "Pangasinan",
+                "Bicol region"
+            ],
+            "Start_Date_Affected": "October 27, 2000",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "\"Strong winds and heavy rains occurred in Quezon, Bulacan, Zambales and Pangasinan, as well as in the Bicol region of southern Luzon.\""
+        },
+        {
+            "Country": "Philippines",
+            "Location_Affected": [
+                "Tayabas"
+            ],
+            "Start_Date_Affected": "October 27, 2000",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "\"In Tayabas, Quezon, rainfall amount of 312.3 mm was observed in 24 hours.\""
+        },
+        {
+            "Country": "Taiwan",
+            "Location_Affected": [
+                "Taiwan"
+            ],
+            "Start_Date_Affected": "October 30, 2000",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "64",
+            "Affected_with_annotation": "\"In Taiwan, the storm killed 64 and injured 65 people, and 25 were declared missing and caused $500 million in damages.\""
+        },
+        {
+            "Country": "Taiwan",
+            "Location_Affected": [
+                "Chiang Kai-shek International Airport"
+            ],
+            "Start_Date_Affected": "October 31, 2000",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "83",
+            "Affected_with_annotation": "\"Xangsane was responsible for 187 casualties, including 83 possibly indirectly from the crash of Singapore Airlines Flight 006 on October 31, 2000.\""
+        }
+    ]
+}

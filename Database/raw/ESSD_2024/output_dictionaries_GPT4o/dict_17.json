@@ -1,0 +1,584 @@
+{
+    "Event_ID": "71.0",
+    "Source": "https://en.wikipedia.org/wiki/Tropical_Storm_Erika",
+    "Event_Name": "Tropical Storm Erika   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "574 people",
+        "Total_Homelessness_Annotation": "A total of 30 people were killed, 20 others were injured, and 574 people were left homeless."
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "Dominica",
+            "Start_Date_Homelessness": "August 27, 2015",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "574 people",
+            "Homelessness_with_annotation": "A total of 30 people were killed, 20 others were injured, and 574 people were left homeless."
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "Dominica",
+            "Location_Homelessness": [
+                "Petite Savanne"
+            ],
+            "Start_Date_Homelessness": "August 27, 2015",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "823 people",
+            "Homelessness_with_annotation": "The destruction of Petite Savanne forced the evacuation of 823 people; the village was later deemed uninhabitable and a new town needed to be built elsewhere."
+        },
+        {
+            "Country": "Dominica",
+            "Location_Homelessness": [
+                "Dubique"
+            ],
+            "Start_Date_Homelessness": "August 27, 2015",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "Similarly, all residents of Dubique were forced to evacuate; they were relocated to temporary homes in Grand Bay provided by Venezuela."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "20 others were injured",
+        "Total_Injury_Annotation": "A total of 30 people were killed, 20 others were injured, and 574 people were left homeless."
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "Dominica",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "20 others were injured",
+            "Injury_with_annotation": "A total of 30 people were killed, 20 others were injured, and 574 people were left homeless."
+        },
+        {
+            "Country": "Haiti",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "11 others were hospitalized",
+            "Injury_with_annotation": "Four persons died and eleven others were hospitalized in L\u00e9og\u00e2ne, when a truck crashed into a bus on rain-slicked roads and exploded."
+        },
+        {
+            "Country": "Haiti",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "Two people in the area were injured",
+            "Injury_with_annotation": "A fifth death occurred during a landslide in Port-au-Prince. Two people in the area were injured after a house collapsed."
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "Dominica",
+            "Location_Injury": [
+                "NULL"
+            ],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "20 others were injured",
+            "Injury_with_annotation": "A total of 30 people were killed, 20 others were injured, and 574 people were left homeless."
+        },
+        {
+            "Country": "Haiti",
+            "Location_Injury": [
+                "L\u00e9og\u00e2ne"
+            ],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "11 others were hospitalized",
+            "Injury_with_annotation": "Four persons died and eleven others were hospitalized in L\u00e9og\u00e2ne, when a truck crashed into a bus on rain-slicked roads and exploded."
+        },
+        {
+            "Country": "Haiti",
+            "Location_Injury": [
+                "Port-au-Prince"
+            ],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "Two people in the area were injured",
+            "Injury_with_annotation": "A fifth death occurred during a landslide in Port-au-Prince. Two people in the area were injured after a house collapsed."
+        }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Assessment_With_Annotation": "Tropical Storm Erika: Tropical Storm Erika was one of the deadliest and most destructive natural disasters in Dominica since Hurricane David in 1979. The fifth named storm of the 2015 Atlantic hurricane season, Erika developed from a westward-moving tropical wave while well east of the Lesser Antilles.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "35",
+        "Total_Death_Annotation": "Total damage from Erika is estimated to be over US$500 million, with US$482.8 million in Dominica alone."
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "Dominica",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "30",
+            "Death_with_annotation": "All told, 30 people died across the island in the nation's worst disaster since Hurricane David."
+        },
+        {
+            "Country": "Haiti",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "5",
+            "Death_with_annotation": "Five people died in Haiti, four from a weather-related traffic accident and one from a landslide."
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "Dominica",
+            "Location_Death": [
+                "Petite Savanne"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "20",
+            "Death_with_annotation": "Twenty people died or were presumed dead in the village, accounting for two-thirds of the deaths attributed to Erika in Dominica."
+        },
+        {
+            "Country": "Dominica",
+            "Location_Death": [
+                "Roseau"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "1",
+            "Death_with_annotation": "One person was killed during a mudslide and one building collapsed in the city."
+        },
+        {
+            "Country": "Haiti",
+            "Location_Death": [
+                "L\u00e9og\u00e2ne"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "4",
+            "Death_with_annotation": "Four persons died and eleven others were hospitalized in L\u00e9og\u00e2ne, when a truck crashed into a bus on rain-slicked roads and exploded."
+        },
+        {
+            "Country": "Haiti",
+            "Location_Death": [
+                "Port-au-Prince"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "1",
+            "Death_with_annotation": "A fifth death occurred during a landslide in Port-au-Prince."
+        }
+    ],
+    "Start_Date": "August 24, 2015",
+    "End_Date": "September 3, 2015",
+    "Time_with_Annotation": "Formed: August 24, 2015\nDissipated: September 3, 2015",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "over US$500 million",
+        "Total_Insured_Damage_Units": "USD",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "Total damage from Erika is estimated to be over US$500 million, with US$482.8 million in Dominica alone."
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "Dominica",
+            "Total_Insured_Damage": "US$482.8 million",
+            "Total_Insured_Damage_Units": "USD",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "Total damage from Erika is estimated to be over US$500 million, with US$482.8 million in Dominica alone."
+        },
+        {
+            "Country": "Puerto Rico",
+            "Total_Insured_Damage": "US$17.37 million",
+            "Total_Insured_Damage_Units": "USD",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "The island experienced US$17.37 million in agricultural damage."
+        },
+        {
+            "Country": "Dominican Republic",
+            "Total_Insured_Damage": "US$8.91 million",
+            "Total_Insured_Damage_Units": "USD",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "Winds gusts of 50 mph (80 km/h) in Azua caused at least RD$400 million (US$8.91 million) in damage to the banana crop."
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "Dominica",
+            "Location_Insured_Damage": [
+                "Petite Savanne"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "The small community of Petite Savanne was virtually destroyed, with 217 homes leveled and all residents forced to evacuate."
+        },
+        {
+            "Country": "Puerto Rico",
+            "Location_Insured_Damage": [
+                "NULL"
+            ],
+            "Num_Insured_Damage": "US$17.37 million",
+            "Insured_Damage_Units": "USD",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "The island experienced US$17.37 million in agricultural damage."
+        },
+        {
+            "Country": "Dominican Republic",
+            "Location_Insured_Damage": [
+                "Azua"
+            ],
+            "Num_Insured_Damage": "US$8.91 million",
+            "Insured_Damage_Units": "USD",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Winds gusts of 50 mph (80 km/h) in Azua caused at least RD$400 million (US$8.91 million) in damage to the banana crop."
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "thousands of",
+        "Total_Displacement_Annotation": "Hundreds of homes were left uninhabitable and thousands of people were displaced; the entire town of Petite Savanne was evacuated and subsequently abandoned as a result of the storm."
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "Dominica",
+            "Start_Date_Displacement": "August 27, 2015",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "7,345",
+            "Displacement_with_annotation": "Throughout the country, 823 homes suffered damage and 7,345 people were displaced."
+        },
+        {
+            "Country": "Haiti",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "60,000",
+            "Displacement_with_annotation": "Heavy rainfall also impacted Haiti, which was still recovering from a catastrophic earthquake in 2010; an estimated 60,000 people remained in emergency housing."
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "Dominica",
+            "Location_Displacement": [
+                "Petite Savanne"
+            ],
+            "Start_Date_Displacement": "August 27, 2015",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "823",
+            "Displacement_with_annotation": "The destruction of Petite Savanne forced the evacuation of 823 people; the village was later deemed uninhabitable and a new town needed to be built elsewhere."
+        },
+        {
+            "Country": "Dominica",
+            "Location_Displacement": [
+                "Boetica",
+                "Delices"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "Boetica and Delices remained cut-off by ground for more than three weeks."
+        },
+        {
+            "Country": "Dominica",
+            "Location_Displacement": [
+                "Dubique"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "Similarly, all residents of Dubique were forced to evacuate; they were relocated to temporary homes in Grand Bay provided by Venezuela."
+        }
+    ],
+    "Location": [
+        "Antilles",
+        "Dominica",
+        "The Bahamas",
+        "Florida",
+        "Guadeloupe",
+        "Puerto Rico",
+        "Dominican Republic",
+        "Haiti",
+        "Cuba",
+        "Georgia",
+        "Carolinas",
+        "Miami Metropolitan Area",
+        "Flagler County",
+        "Jacksonville",
+        "Cherokee County",
+        "Polk County",
+        "Troup County"
+    ],
+    "Location_with_Annotation": {
+        "Antilles": "Several islands experienced heavy rainfall during the passage of Erika, especially Dominica.",
+        "Dominica": "Tropical Storm Erika was one of the deadliest and most destructive natural disasters in Dominica since Hurricane David in 1979.",
+        "The Bahamas": "Areas affected: Antilles (particularly Dominica), The Bahamas, Florida",
+        "Florida": "Areas affected: Antilles (particularly Dominica), The Bahamas, Florida",
+        "Guadeloupe": "In Guadeloupe, heavy rainfall in the vicinity of Basse-Terre caused flooding and mudslides, forcing roads to temporarily close.",
+        "Puerto Rico": "Approximately 250,000 people in Puerto Rico were left without electricity.",
+        "Dominican Republic": "In the Dominican Republic, a weather station in Barahona measured 24.26 in (616 mm) of rain, including 8.8 in (220 mm) in a single hour.",
+        "Haiti": "Five people died in Haiti, four from a weather-related traffic accident and one from a landslide.",
+        "Cuba": "The remnants of Erika later brought much needed rains to Cuba, which was suffering from its worst drought since 1901.",
+        "Georgia": "Turning northward, the disturbance eventually crossed northern Florida on September 2, before dissipating over Georgia on the following day.",
+        "Carolinas": "Additional rainfall extended north through the Carolinas.",
+        "Miami Metropolitan Area": "Later, Erika's remnants dropped locally heavy rainfall across Florida, particularly in the Miami Metropolitan Area.",
+        "Flagler County": "Farther north in Flagler County, scattered thunderstorms produced isolated instances of heavy rain; 2.2 in (56 mm) fell within one hour in Palm Coast.",
+        "Jacksonville": "In the greater Jacksonville area, lightning struck the Sally B. Mathis Elementary School, resulting in damage to the air conditioning unit and evacuation of students.",
+        "Cherokee County": "Strong winds gusting up to 60 mph (97 km/h) accompanied these storms, downing trees and power lines in Cherokee, Polk, and Troup counties.",
+        "Polk County": "Strong winds gusting up to 60 mph (97 km/h) accompanied these storms, downing trees and power lines in Cherokee, Polk, and Troup counties.",
+        "Troup County": "Strong winds gusting up to 60 mph (97 km/h) accompanied these storms, downing trees and power lines in Cherokee, Polk, and Troup counties."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "over US$500 million",
+        "Total_Economic_Damage_Units": "USD",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "Total damage from Erika is estimated to be over US$500 million, with US$482.8 million in Dominica alone."
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "Dominica",
+            "Total_Economic_Damage": "US$482.8 million",
+            "Total_Economic_Damage_Units": "USD",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Total damage from Erika is estimated to be over US$500 million, with US$482.8 million in Dominica alone."
+        },
+        {
+            "Country": "Puerto Rico",
+            "Total_Economic_Damage": "US$17.37 million",
+            "Total_Economic_Damage_Units": "USD",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "The island experienced US$17.37 million in agricultural damage."
+        },
+        {
+            "Country": "Dominican Republic",
+            "Total_Economic_Damage": "US$8.91 million",
+            "Total_Economic_Damage_Units": "USD",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Winds gusts of 50 mph (80 km/h) in Azua caused at least RD$400 million (US$8.91 million) in damage to the banana crop."
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "Dominica",
+            "Location_Economic_Damage": [
+                "Petite Savanne",
+                "Roseau",
+                "Boetica",
+                "Delices",
+                "Canefield Airport",
+                "Douglas\u2013Charles Airport"
+            ],
+            "Num_Economic_Damage": "EC$1.3 billion",
+            "Economic_Damage_Units": "USD",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Total losses amounted to EC$1.3 billion (US$482.8 million), roughly 90 percent of Dominica's gross domestic product."
+        },
+        {
+            "Country": "Puerto Rico",
+            "Location_Economic_Damage": [
+                "Adjuntas",
+                "Maricao"
+            ],
+            "Num_Economic_Damage": "US$17.37 million",
+            "Economic_Damage_Units": "USD",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "The island experienced US$17.37 million in agricultural damage."
+        },
+        {
+            "Country": "Dominican Republic",
+            "Location_Economic_Damage": [
+                "Azua"
+            ],
+            "Num_Economic_Damage": "US$8.91 million",
+            "Economic_Damage_Units": "USD",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Winds gusts of 50 mph (80 km/h) in Azua caused at least RD$400 million (US$8.91 million) in damage to the banana crop."
+        }
+    ],
+    "Perils": "Wind|Rainfall|Flood|Landslide|Lightning|Drought",
+    "Perils_Assessment_With_Annotation": {
+        "Wind": "Hostile conditions, including dry air and wind shear, inhibited significant development, and Erika failed to acquire sustained winds beyond 50 mph (80 km/h).",
+        "Rainfall": "Several islands experienced heavy rainfall during the passage of Erika, especially Dominica. The storm's asymmetric structure, coupled with the mountainous terrain of the island and ample moisture aloft, led to rainfall accumulations up to 33 in (850 mm).",
+        "Flood": "Tremendous runoff quickly overwhelmed river basins and triggered catastrophic floods. Accompanying mudslides worsened the situation, temporarily damming the rivers before collapsing.",
+        "Landslide": "Accompanying mudslides worsened the situation, temporarily damming the rivers before collapsing.",
+        "Lightning": "In the greater Jacksonville area, lightning struck the Sally B. Mathis Elementary School, resulting in damage to the air conditioning unit and evacuation of students.",
+        "Drought": "The remnants of Erika later brought much needed rains to Cuba, which was suffering from its worst drought since 1901."
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "NULL",
+        "Total_Building_Damage_Annotation": "NULL"
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "Dominica",
+            "Start_Date_Building_Damage": "August 27, 2015",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "More than 890 homes were destroyed or rendered uninhabitable."
+        },
+        {
+            "Country": "Dominican Republic",
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "823 homes",
+            "Building_Damage_with_annotation": "Throughout the country, 823 homes suffered damage and 7,345 people were displaced."
+        },
+        {
+            "Country": "Puerto Rico",
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "36 homes",
+            "Building_Damage_with_annotation": "Thirty-six homes sustained roof damage across interior locations of the territory."
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "Dominica",
+            "Location_Building_Damage": [
+                "Petite Savanne"
+            ],
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "217 homes",
+            "Building_Damage_with_annotation": "The small community of Petite Savanne was virtually destroyed, with 217 homes leveled and all residents forced to evacuate."
+        },
+        {
+            "Country": "Dominican Republic",
+            "Location_Building_Damage": [
+                "Barahona"
+            ],
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "A weather station in Barahona, Dominican Republic, measured 24.26 in (616 mm) of rain during Erika's passage, including 8.8 in (220 mm) in a single hour."
+        },
+        {
+            "Country": "Puerto Rico",
+            "Location_Building_Damage": [
+                "Interior locations"
+            ],
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "36 homes",
+            "Building_Damage_with_annotation": "Thirty-six homes sustained roof damage across interior locations of the territory."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "NULL",
+        "Total_Affected_Annotation": "NULL"
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "Dominica",
+            "Start_Date_Affected": "August 27, 2015",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "Nearly 17,000",
+            "Affected_with_annotation": "Nearly 17,000 of the nation's 71,293 people were severely impacted by the storm."
+        },
+        {
+            "Country": "Puerto Rico",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "250,000",
+            "Affected_with_annotation": "Approximately 250,000 people in Puerto Rico were left without electricity."
+        },
+        {
+            "Country": "Dominican Republic",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "7,345",
+            "Affected_with_annotation": "Throughout the country, 823 homes suffered damage and 7,345 people were displaced."
+        },
+        {
+            "Country": "Haiti",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "60,000",
+            "Affected_with_annotation": "Heavy rainfall also impacted Haiti, which was still recovering from a catastrophic earthquake in 2010; an estimated 60,000 people remained in emergency housing."
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "Dominica",
+            "Location_Affected": [
+                "Petite Savanne"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "217 homes",
+            "Affected_with_annotation": "The small community of Petite Savanne was virtually destroyed, with 217 homes leveled and all residents forced to evacuate."
+        },
+        {
+            "Country": "Dominica",
+            "Location_Affected": [
+                "Boetica",
+                "Delices"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Boetica and Delices remained cut-off by ground for more than three weeks."
+        },
+        {
+            "Country": "Dominica",
+            "Location_Affected": [
+                "Roseau"
+            ],
+            "Start_Date_Affected": "August 26, 2015",
+            "End_Date_Affected": "August 27, 2015",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "The main river running through Roseau, the nation's capital, burst its banks during the overnight of August 26\u201327, flooding surrounding areas."
+        },
+        {
+            "Country": "Dominica",
+            "Location_Affected": [
+                "Roseau"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Many were temporarily relocated to the Dominica Grammar School in Roseau; however, members of the public looked upon the evacuees with scorn and insulted them for disrupting their daily lives."
+        },
+        {
+            "Country": "Dominica",
+            "Location_Affected": [
+                "Dubique"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Similarly, all residents of Dubique were forced to evacuate; they were relocated to temporary homes in Grand Bay provided by Venezuela."
+        },
+        {
+            "Country": "Puerto Rico",
+            "Location_Affected": [
+                "NULL"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "250,000",
+            "Affected_with_annotation": "Approximately 250,000 people in Puerto Rico were left without electricity."
+        },
+        {
+            "Country": "Dominican Republic",
+            "Location_Affected": [
+                "NULL"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "7,345",
+            "Affected_with_annotation": "Throughout the country, 823 homes suffered damage and 7,345 people were displaced."
+        },
+        {
+            "Country": "Haiti",
+            "Location_Affected": [
+                "NULL"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "60,000",
+            "Affected_with_annotation": "Heavy rainfall also impacted Haiti, which was still recovering from a catastrophic earthquake in 2010; an estimated 60,000 people remained in emergency housing."
+        }
+    ]
+}

@@ -1,0 +1,598 @@
+{
+    "Event_ID": "119.0",
+    "Source": "https://en.wikipedia.org/wiki/Hurricane_Iris",
+    "Event_Name": "Hurricane Iris   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "15,000",
+        "Total_Homelessness_Annotation": "Iris left about 15,000 people homeless, many receiving assistance from the government and the local Red Cross chapter."
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "Belize",
+            "Start_Date_Homelessness": "October 9, 2001",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "15,000",
+            "Homelessness_with_annotation": "Iris left about 15,000 people homeless, many receiving assistance from the government and the local Red Cross chapter."
+        },
+        {
+            "Country": "Guatemala",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "27,500",
+            "Homelessness_with_annotation": "An estimated 27,500 people were affected by the storm throughout Guatemala."
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "Belize",
+            "Location_Homelessness": [
+                "Toledo district",
+                "Stann Creek district"
+            ],
+            "Start_Date_Homelessness": "October 9, 2001",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "15,000",
+            "Homelessness_with_annotation": "Iris left about 15,000 people homeless, many receiving assistance from the government and the local Red Cross chapter."
+        },
+        {
+            "Country": "Guatemala",
+            "Location_Homelessness": [
+                "Pet\u00e9n Department"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "27,500",
+            "Homelessness_with_annotation": "An estimated 27,500 people were affected by the storm throughout Guatemala."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "NULL",
+        "Total_Injury_Annotation": "NULL"
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "Dominican Republic",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "2",
+            "Injury_with_annotation": "The rains triggered a landslide outside of Santo Domingo that destroyed a home, killing a family of three. There was another landslide in the region that injured two people."
+        },
+        {
+            "Country": "Jamaica",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "1",
+            "Injury_with_annotation": "Iris's passage near Jamaica destroyed two houses and damaged the roofs of two others, causing one injury."
+        },
+        {
+            "Country": "Guatemala",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "Nearly 100",
+            "Injury_with_annotation": "In the former, the hurricane's rainfall generally amounted to 3 to 4 in (76 to 102 mm), triggering flash flooding and landslides that injured nearly 100 people."
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "Dominican Republic",
+            "Location_Injury": [
+                "Santo Domingo"
+            ],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "2",
+            "Injury_with_annotation": "The rains triggered a landslide outside of Santo Domingo that destroyed a home, killing a family of three. There was another landslide in the region that injured two people."
+        },
+        {
+            "Country": "Jamaica",
+            "Location_Injury": [
+                "NULL"
+            ],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "1",
+            "Injury_with_annotation": "Iris's passage near Jamaica destroyed two houses and damaged the roofs of two others, causing one injury."
+        },
+        {
+            "Country": "Guatemala",
+            "Location_Injury": [
+                "NULL"
+            ],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "Nearly 100",
+            "Injury_with_annotation": "In the former, the hurricane's rainfall generally amounted to 3 to 4 in (76 to 102 mm), triggering flash flooding and landslides that injured nearly 100 people."
+        }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Assessment_With_Annotation": "Hurricane Iris was a small, but powerful Category 4 hurricane that caused widespread destruction in Belize. Iris was the second-strongest storm of the 2001 Atlantic hurricane season, behind Hurricane Michelle.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "36",
+        "Total_Death_Annotation": "Iris killed 24 people in Belize, including 20 who died when a scuba diving boat capsized near Big Creek. The storm also killed eight people and damaged about 2,500 homes in neighboring Guatemala, and later dropped heavy rainfall in southern Mexico, where two people died."
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "Belize",
+            "Start_Date_Death": "October 9, 2001",
+            "End_Date_Death": "October 9, 2001",
+            "Num_Death": "24",
+            "Death_with_annotation": "Iris killed 24 people in Belize, including 20 who died when a scuba diving boat capsized near Big Creek."
+        },
+        {
+            "Country": "Guatemala",
+            "Start_Date_Death": "October 9, 2001",
+            "End_Date_Death": "October 9, 2001",
+            "Num_Death": "8",
+            "Death_with_annotation": "The storm also killed eight people and damaged about 2,500 homes in neighboring Guatemala."
+        },
+        {
+            "Country": "Mexico",
+            "Start_Date_Death": "October 9, 2001",
+            "End_Date_Death": "October 9, 2001",
+            "Num_Death": "2",
+            "Death_with_annotation": "The remnants of Iris dropped heavy rainfall over southern Mexico, accumulating 4.80 in (122 mm) in the southern state of Chiapas. In Oaxaca, the storm produced heavy rains and damaged a total of 120 houses. A mudslide in one village demolished 20 homes and killed a child, while elsewhere in the state a man drowned after being swept away in a flooded river."
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "Belize",
+            "Location_Death": [
+                "Big Creek"
+            ],
+            "Start_Date_Death": "October 9, 2001",
+            "End_Date_Death": "October 9, 2001",
+            "Num_Death": "20",
+            "Death_with_annotation": "Iris killed 24 people in Belize, including 20 who died when a scuba diving boat capsized near Big Creek."
+        },
+        {
+            "Country": "Belize",
+            "Location_Death": [
+                "Monkey River Town"
+            ],
+            "Start_Date_Death": "October 9, 2001",
+            "End_Date_Death": "October 9, 2001",
+            "Num_Death": "4",
+            "Death_with_annotation": "Iris killed 24 people in Belize, including 20 who died when a scuba diving boat capsized near Big Creek."
+        },
+        {
+            "Country": "Guatemala",
+            "Location_Death": [
+                "Pet\u00e9n Department"
+            ],
+            "Start_Date_Death": "October 9, 2001",
+            "End_Date_Death": "October 9, 2001",
+            "Num_Death": "8",
+            "Death_with_annotation": "The storm also killed eight people and damaged about 2,500 homes in neighboring Guatemala."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Death": [
+                "Oaxaca"
+            ],
+            "Start_Date_Death": "October 9, 2001",
+            "End_Date_Death": "October 9, 2001",
+            "Num_Death": "2",
+            "Death_with_annotation": "A mudslide in one village demolished 20 homes and killed a child, while elsewhere in the state a man drowned after being swept away in a flooded river."
+        }
+    ],
+    "Start_Date": "October 4, 2001",
+    "End_Date": "October 9, 2001",
+    "Time_with_Annotation": "Formed: October 4, 2001\nDissipated: October 9, 2001",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "$250 million",
+        "Total_Insured_Damage_Units": "USD",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "The hurricane caused severe damage\u2014destroying homes, flooding streets, and leveling trees\u2014in coastal towns south of Belize City. Destruction was heaviest in Belize and totaled $250 million (2001 USD)."
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "Belize",
+            "Total_Insured_Damage": "$250 million",
+            "Total_Insured_Damage_Units": "USD",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "The hurricane caused severe damage\u2014destroying homes, flooding streets, and leveling trees\u2014in coastal towns south of Belize City. Destruction was heaviest in Belize and totaled $250 million (2001 USD)."
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "Belize",
+            "Location_Insured_Damage": [
+                "Placencia",
+                "Seine Bight",
+                "Monkey River Town"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "At Placencia near the coast, about 80% of the homes were destroyed and many of the remaining buildings had roof damage, with downed power poles in the streets. About 90% of the houses in nearby Seine Bight were destroyed, and where Iris made landfall, over 90% of the homes were destroyed throughout Monkey River Town."
+        },
+        {
+            "Country": "Belize",
+            "Location_Insured_Damage": [
+                "Toledo district",
+                "Stann Creek district"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Because Iris was compact, the damage was largely confined to 72% of the houses in the Toledo district and 50% of the houses in the Stann Creek district."
+        },
+        {
+            "Country": "Belize",
+            "Location_Insured_Damage": [
+                "Belize City"
+            ],
+            "Num_Insured_Damage": "$37 million",
+            "Insured_Damage_Units": "USD",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Iris also damaged tourism facilities, including minor impact to the Maya ruins of Belize, and damaged 20% of the hotel rooms in the country, accounting for $37 million in losses."
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "27,500",
+        "Total_Displacement_Annotation": "An estimated 27,500 people were affected by the storm throughout Guatemala."
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "Belize",
+            "Start_Date_Displacement": "October 8, 2001",
+            "End_Date_Displacement": "October 9, 2001",
+            "Num_Displacement": "11,380",
+            "Displacement_with_annotation": "Overall, 11,380 people evacuated their homes in Belize, including many in Belize City."
+        },
+        {
+            "Country": "Guatemala",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "27,500",
+            "Displacement_with_annotation": "An estimated 27,500 people were affected by the storm throughout Guatemala."
+        },
+        {
+            "Country": "Honduras",
+            "Start_Date_Displacement": "October 8, 2001",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "5,000",
+            "Displacement_with_annotation": "About 5,000 people in the country evacuated from their homes."
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "Belize",
+            "Location_Displacement": [
+                "Stann Creek",
+                "Toledo",
+                "Belize City"
+            ],
+            "Start_Date_Displacement": "October 8, 2001",
+            "End_Date_Displacement": "October 9, 2001",
+            "Num_Displacement": "11,380",
+            "Displacement_with_annotation": "Overall, 11,380 people evacuated their homes in Belize, including many in Belize City."
+        },
+        {
+            "Country": "Guatemala",
+            "Location_Displacement": [
+                "Pet\u00e9n Department"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "27,500",
+            "Displacement_with_annotation": "An estimated 27,500 people were affected by the storm throughout Guatemala."
+        },
+        {
+            "Country": "Honduras",
+            "Location_Displacement": [
+                "Northern regions"
+            ],
+            "Start_Date_Displacement": "October 8, 2001",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "5,000",
+            "Displacement_with_annotation": "About 5,000 people in the country evacuated from their homes."
+        }
+    ],
+    "Location": [
+        "Windward Islands",
+        "Hispaniola",
+        "Jamaica",
+        "Honduras",
+        "Belize",
+        "Guatemala",
+        "Eastern Mexico",
+        "Saint Thomas",
+        "Dominican Republic",
+        "Puerto Rico",
+        "St. Vincent",
+        "St. Lucia",
+        "Cayman Islands",
+        "Yucat\u00e1n Peninsula",
+        "Granma",
+        "Santiago de Cuba"
+    ],
+    "Location_with_Annotation": {
+        "Windward Islands": "forming from a tropical wave on October 4 just southeast of Barbados. It moved westward through the Caribbean, intensifying into a tropical storm on October 5 south of Puerto Rico",
+        "Hispaniola": "While passing south of the Dominican Republic, Iris dropped heavy rainfall that caused landslides, killing eight people.",
+        "Jamaica": "Later, the hurricane passed south of Jamaica, where it destroyed two houses.",
+        "Honduras": "The storm also killed eight people and damaged about 2,500 homes in neighboring Guatemala, and later dropped heavy rainfall in southern Mexico, where two people died.",
+        "Belize": "Iris reached peak winds of 145 mph (233 km/h) before making landfall in southern Belize near Monkey River Town on October 9.",
+        "Guatemala": "The storm also killed eight people and damaged about 2,500 homes in neighboring Guatemala, and later dropped heavy rainfall in southern Mexico, where two people died.",
+        "Eastern Mexico": "The storm also killed eight people and damaged about 2,500 homes in neighboring Guatemala, and later dropped heavy rainfall in southern Mexico, where two people died.",
+        "Saint Thomas": "While Iris was in its development stages, residents as far north as Saint Thomas reported rain and thunderstorms.",
+        "Dominican Republic": "While passing south of the Dominican Republic, Iris dropped heavy rainfall that caused landslides, killing eight people.",
+        "Puerto Rico": "It moved westward through the Caribbean, intensifying into a tropical storm on October 5 south of Puerto Rico",
+        "St. Vincent": "In its early stages, the depression moved west-northwestward between the islands of St. Vincent and St. Lucia under the influence of a strong ridge to its north.",
+        "St. Lucia": "In its early stages, the depression moved west-northwestward between the islands of St. Vincent and St. Lucia under the influence of a strong ridge to its north.",
+        "Cayman Islands": "Over a stretch of four days, sixteen tropical cyclone watches and warnings were issued in association with Iris, affecting the Dominican Republic, the Cuban provinces of Granma and Santiago de Cuba, Jamaica, Cayman Islands, the Yucat\u00e1n Peninsula, Guatemala, Honduras and Belize.",
+        "Yucat\u00e1n Peninsula": "Over a stretch of four days, sixteen tropical cyclone watches and warnings were issued in association with Iris, affecting the Dominican Republic, the Cuban provinces of Granma and Santiago de Cuba, Jamaica, Cayman Islands, the Yucat\u00e1n Peninsula, Guatemala, Honduras and Belize.",
+        "Granma": "Over a stretch of four days, sixteen tropical cyclone watches and warnings were issued in association with Iris, affecting the Dominican Republic, the Cuban provinces of Granma and Santiago de Cuba, Jamaica, Cayman Islands, the Yucat\u00e1n Peninsula, Guatemala, Honduras and Belize.",
+        "Santiago de Cuba": "Over a stretch of four days, sixteen tropical cyclone watches and warnings were issued in association with Iris, affecting the Dominican Republic, the Cuban provinces of Granma and Santiago de Cuba, Jamaica, Cayman Islands, the Yucat\u00e1n Peninsula, Guatemala, Honduras and Belize."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "250 million",
+        "Total_Economic_Damage_Units": "USD",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "The hurricane caused severe damage\u2014destroying homes, flooding streets, and leveling trees\u2014in coastal towns south of Belize City. Destruction was heaviest in Belize and totaled $250 million (2001 USD)."
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "Belize",
+            "Total_Economic_Damage": "250 million",
+            "Total_Economic_Damage_Units": "USD",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "The hurricane caused severe damage\u2014destroying homes, flooding streets, and leveling trees\u2014in coastal towns south of Belize City. Destruction was heaviest in Belize and totaled $250 million (2001 USD)."
+        },
+        {
+            "Country": "Guatemala",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "The storm damaged 26 schools and 2,500 homes in the country's interior. An estimated 27,500 people were affected by the storm throughout Guatemala."
+        },
+        {
+            "Country": "Mexico",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "The remnants of Iris dropped heavy rainfall over southern Mexico, accumulating 4.80 in (122 mm) in the southern state of Chiapas. In Oaxaca, the storm produced heavy rains and damaged a total of 120 houses."
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "Belize",
+            "Location_Economic_Damage": [
+                "Placencia",
+                "Seine Bight",
+                "Monkey River Town"
+            ],
+            "Num_Economic_Damage": "37 million",
+            "Economic_Damage_Units": "USD",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Iris also damaged tourism facilities, including minor impact to the Maya ruins of Belize, and damaged 20% of the hotel rooms in the country, accounting for $37 million in losses."
+        },
+        {
+            "Country": "Belize",
+            "Location_Economic_Damage": [
+                "Toledo district",
+                "Stann Creek district"
+            ],
+            "Num_Economic_Damage": "103 million",
+            "Economic_Damage_Units": "USD",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "About 5,000 acres (2,000 ha) of bananas were destroyed, along with over 3,500 acres (1,400 ha) of rice, 3,000 acres (1,200 ha) of corn, and other crops to a lesser degree. Crop damage in Belize was estimated at $103 million, mostly from banana losses."
+        },
+        {
+            "Country": "Guatemala",
+            "Location_Economic_Damage": [
+                "Pet\u00e9n Department"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "NULL",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "The damage was heaviest in Pet\u00e9n Department in the northern portion of the country."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Economic_Damage": [
+                "Oaxaca"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "NULL",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "In Oaxaca, the storm produced heavy rains and damaged a total of 120 houses. A mudslide in one village demolished 20 homes and killed a child, while elsewhere in the state a man drowned after being swept away in a flooded river."
+        }
+    ],
+    "Perils": "Wind|Rainfall|Flood|Landslide",
+    "Perils_Assessment_With_Annotation": {
+        "Wind": "Iris rapidly intensified into a Category 4 on the Saffir\u2013Simpson scale. A small hurricane with an eye of only 7 mi (11 km) in diameter, Iris reached peak winds of 145 mph (233 km/h) before making landfall in southern Belize near Monkey River Town on October 9.",
+        "Rainfall": "While passing south of the Dominican Republic, Iris dropped heavy rainfall that caused landslides, killing eight people.",
+        "Flood": "The hurricane caused severe damage\u2014destroying homes, flooding streets, and leveling trees\u2014in coastal towns south of Belize City.",
+        "Landslide": "While passing south of the Dominican Republic, Iris dropped heavy rainfall that caused landslides, killing eight people."
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "3,718",
+        "Total_Building_Damage_Annotation": "Nationwide, Iris damaged or destroyed 3,718 homes."
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "Belize",
+            "Start_Date_Building_Damage": "October 9, 2001",
+            "End_Date_Building_Damage": "October 9, 2001",
+            "Num_Building_Damage": "3,718",
+            "Building_Damage_with_annotation": "Nationwide, Iris damaged or destroyed 3,718 homes."
+        },
+        {
+            "Country": "Guatemala",
+            "Start_Date_Building_Damage": "October 9, 2001",
+            "End_Date_Building_Damage": "October 9, 2001",
+            "Num_Building_Damage": "2,500",
+            "Building_Damage_with_annotation": "The storm damaged 26 schools and 2,500 homes in the country's interior."
+        },
+        {
+            "Country": "Mexico",
+            "Start_Date_Building_Damage": "October 9, 2001",
+            "End_Date_Building_Damage": "October 9, 2001",
+            "Num_Building_Damage": "120",
+            "Building_Damage_with_annotation": "In Oaxaca, the storm produced heavy rains and damaged a total of 120 houses."
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "Belize",
+            "Location_Building_Damage": [
+                "Placencia",
+                "Seine Bight",
+                "Monkey River Town",
+                "Toledo district",
+                "Stann Creek district"
+            ],
+            "Start_Date_Building_Damage": "October 9, 2001",
+            "End_Date_Building_Damage": "October 9, 2001",
+            "Num_Building_Damage": "80%",
+            "Building_Damage_with_annotation": "At Placencia near the coast, about 80% of the homes were destroyed and many of the remaining buildings had roof damage, with downed power poles in the streets."
+        },
+        {
+            "Country": "Belize",
+            "Location_Building_Damage": [
+                "Seine Bight"
+            ],
+            "Start_Date_Building_Damage": "October 9, 2001",
+            "End_Date_Building_Damage": "October 9, 2001",
+            "Num_Building_Damage": "90%",
+            "Building_Damage_with_annotation": "About 90% of the houses in nearby Seine Bight were destroyed."
+        },
+        {
+            "Country": "Belize",
+            "Location_Building_Damage": [
+                "Monkey River Town"
+            ],
+            "Start_Date_Building_Damage": "October 9, 2001",
+            "End_Date_Building_Damage": "October 9, 2001",
+            "Num_Building_Damage": "90%",
+            "Building_Damage_with_annotation": "Where Iris made landfall, over 90% of the homes were destroyed throughout Monkey River Town."
+        },
+        {
+            "Country": "Belize",
+            "Location_Building_Damage": [
+                "Toledo district"
+            ],
+            "Start_Date_Building_Damage": "October 9, 2001",
+            "End_Date_Building_Damage": "October 9, 2001",
+            "Num_Building_Damage": "72%",
+            "Building_Damage_with_annotation": "The percentage of damaged houses was 72% in Toledo district."
+        },
+        {
+            "Country": "Belize",
+            "Location_Building_Damage": [
+                "Stann Creek district"
+            ],
+            "Start_Date_Building_Damage": "October 9, 2001",
+            "End_Date_Building_Damage": "October 9, 2001",
+            "Num_Building_Damage": "50%",
+            "Building_Damage_with_annotation": "The percentage of damaged houses was about 50% in Stann Creek."
+        },
+        {
+            "Country": "Guatemala",
+            "Location_Building_Damage": [
+                "Pet\u00e9n Department"
+            ],
+            "Start_Date_Building_Damage": "October 9, 2001",
+            "End_Date_Building_Damage": "October 9, 2001",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "The damage was heaviest in Pet\u00e9n Department in the northern portion of the country."
+        },
+        {
+            "Country": "Guatemala",
+            "Location_Building_Damage": [
+                "Interior"
+            ],
+            "Start_Date_Building_Damage": "October 9, 2001",
+            "End_Date_Building_Damage": "October 9, 2001",
+            "Num_Building_Damage": "2,500",
+            "Building_Damage_with_annotation": "The storm damaged 26 schools and 2,500 homes in the country's interior."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Building_Damage": [
+                "Oaxaca"
+            ],
+            "Start_Date_Building_Damage": "October 9, 2001",
+            "End_Date_Building_Damage": "October 9, 2001",
+            "Num_Building_Damage": "120",
+            "Building_Damage_with_annotation": "In Oaxaca, the storm produced heavy rains and damaged a total of 120 houses."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "27,500 people",
+        "Total_Affected_Annotation": "An estimated 27,500 people were affected by the storm throughout Guatemala."
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "Belize",
+            "Start_Date_Affected": "October 9, 2001",
+            "End_Date_Affected": "October 9, 2001",
+            "Num_Affected": "21,568 people",
+            "Affected_with_annotation": "Nationwide, Iris damaged or destroyed 3,718 homes, directly affecting a total of 21,568 people, or 8.5% of the total population."
+        },
+        {
+            "Country": "Guatemala",
+            "Start_Date_Affected": "October 9, 2001",
+            "End_Date_Affected": "October 9, 2001",
+            "Num_Affected": "27,500 people",
+            "Affected_with_annotation": "An estimated 27,500 people were affected by the storm throughout Guatemala."
+        },
+        {
+            "Country": "Mexico",
+            "Start_Date_Affected": "October 9, 2001",
+            "End_Date_Affected": "October 9, 2001",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "The remnants of Iris dropped heavy rainfall over southern Mexico, accumulating 4.80 in (122 mm) in the southern state of Chiapas."
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "Belize",
+            "Location_Affected": [
+                "Toledo district",
+                "Stann Creek district",
+                "Placencia",
+                "Seine Bight",
+                "Monkey River Town"
+            ],
+            "Start_Date_Affected": "October 9, 2001",
+            "End_Date_Affected": "October 9, 2001",
+            "Num_Affected": "15,000 people",
+            "Affected_with_annotation": "The percentage of damaged houses was 72% in Toledo district and about 50% in Stann Creek, leaving about 15,000 people homeless."
+        },
+        {
+            "Country": "Guatemala",
+            "Location_Affected": [
+                "Pet\u00e9n Department"
+            ],
+            "Start_Date_Affected": "October 9, 2001",
+            "End_Date_Affected": "October 9, 2001",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "The damage was heaviest in Pet\u00e9n Department in the northern portion of the country."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Affected": [
+                "Oaxaca"
+            ],
+            "Start_Date_Affected": "October 9, 2001",
+            "End_Date_Affected": "October 9, 2001",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "In Oaxaca, the storm produced heavy rains and damaged a total of 120 houses."
+        }
+    ]
+}

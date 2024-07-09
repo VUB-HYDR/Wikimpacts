@@ -1,0 +1,390 @@
+{
+    "Event_ID": "121.0",
+    "Source": "https://en.wikipedia.org/wiki/Bond_Fire",
+    "Event_Name": "Bond Fire   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "NULL",
+        "Total_Homelessness_Annotation": "NULL"
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "United States",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "United States",
+            "Location_Homelessness": [
+                "Silverado Canyon"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "NULL"
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "2",
+        "Total_Injury_Annotation": "The fire caused evacuations of 25,000 residents and injured 2 firefighters."
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "United States",
+            "Start_Date_Injury": "December 4, 2020",
+            "End_Date_Injury": "December 4, 2020",
+            "Num_Injury": "2",
+            "Injury_with_annotation": "On December 4, two firefighters from the Cleveland National Forest division of the United States Forest Service suffered injuries while battling the blaze."
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "United States",
+            "Location_Injury": [
+                "Cleveland National Forest"
+            ],
+            "Start_Date_Injury": "December 4, 2020",
+            "End_Date_Injury": "December 4, 2020",
+            "Num_Injury": "2",
+            "Injury_with_annotation": "On December 4, two firefighters from the Cleveland National Forest division of the United States Forest Service suffered injuries while battling the blaze."
+        }
+    ],
+    "Main_Event": "Wildfire",
+    "Main_Event_Assessment_With_Annotation": "The Bond Fire was a wildfire that burned 6,686 acres (2,706 ha) in the Santiago Canyon area of Orange County, California in December 2020.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "None",
+        "Total_Death_Annotation": "The article does not mention any deaths caused by the Bond Fire."
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "NULL",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "None",
+            "Death_with_annotation": "The article does not mention any deaths caused by the Bond Fire."
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "NULL",
+            "Location_Death": [
+                "NULL"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "None",
+            "Death_with_annotation": "The article does not mention any deaths caused by the Bond Fire."
+        }
+    ],
+    "Start_Date": "2020-12-02",
+    "End_Date": "2020-12-10",
+    "Time_with_Annotation": "The fire was first reported on December 2, 2020... The fire was fully contained on December 10, 2020.",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "NULL",
+        "Total_Insured_Damage_Units": "NULL",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "United States",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "United States",
+            "Location_Insured_Damage": [
+                "Rancho So\u00f1ado",
+                "Silverado Canyon"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Rancho So\u00f1ado, home of the Orange County Department of Education's 'Inside the Outdoors' learning program, was mostly destroyed by the wildfire."
+        },
+        {
+            "Country": "United States",
+            "Location_Insured_Damage": [
+                "Silverado Canyon"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "The day after the storm, five houses in Silverado Canyon were red-tagged, several cars were damaged, and many trees were uprooted."
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "25,000",
+        "Total_Displacement_Annotation": "The fire forced the evacuations of 25,000 people and caused the air quality to be very poor."
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "United States",
+            "Start_Date_Displacement": "December 3, 2020",
+            "End_Date_Displacement": "December 6, 2020",
+            "Num_Displacement": "25,000",
+            "Displacement_with_annotation": "The fire forced the evacuations of 25,000 people and caused the air quality to be very poor."
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "United States",
+            "Location_Displacement": [
+                "Silverado Canyon",
+                "Williams Canyon",
+                "Modjeska Canyon",
+                "Portola Hills"
+            ],
+            "Start_Date_Displacement": "December 3, 2020",
+            "End_Date_Displacement": "December 6, 2020",
+            "Num_Displacement": "25,000",
+            "Displacement_with_annotation": "The communities of Silverado Canyon, Williams Canyon, and Modjeska Canyon were placed under mandatory evacuation in the early morning of December 3, and nearby Portola Hills was also evacuated later on."
+        },
+        {
+            "Country": "United States",
+            "Location_Displacement": [
+                "Silverado Canyon"
+            ],
+            "Start_Date_Displacement": "January 28, 2021",
+            "End_Date_Displacement": "January 28, 2021",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "On January 28, 2021, a voluntary evacuation order was issued in anticipation of a rain storm that posed a threat of mudflows."
+        },
+        {
+            "Country": "United States",
+            "Location_Displacement": [
+                "Silverado Canyon",
+                "Williams Canyon",
+                "Modjeska Canyon"
+            ],
+            "Start_Date_Displacement": "March 10, 2021",
+            "End_Date_Displacement": "March 10, 2021",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "The mudflows prompted the mandatory evacuations of residents in Silverado, Williams, and Modjeska Canyons, all as a result of their Bond Fire burn scar proximity."
+        },
+        {
+            "Country": "United States",
+            "Location_Displacement": [
+                "Silverado Canyon"
+            ],
+            "Start_Date_Displacement": "December 14, 2021",
+            "End_Date_Displacement": "December 14, 2021",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "The three communities near the fire burn scar were mandatorily evacuated, but firefighters still had to rescue several residents."
+        },
+        {
+            "Country": "United States",
+            "Location_Displacement": [
+                "Silverado Canyon"
+            ],
+            "Start_Date_Displacement": "December 23, 2021",
+            "End_Date_Displacement": "December 23, 2021",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "Silverado Canyon experienced more mudflows related to the winter rain frequent in the region's Mediterranean (Csa) climate."
+        },
+        {
+            "Country": "United States",
+            "Location_Displacement": [
+                "Silverado Canyon"
+            ],
+            "Start_Date_Displacement": "December 30, 2021",
+            "End_Date_Displacement": "December 30, 2021",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "Another mandatory evacuation order was issued on December 30 but ultimately was downgraded to voluntary status as the rain was not as severe as expected."
+        }
+    ],
+    "Location": [
+        "Santiago Canyon",
+        "Silverado",
+        "Silverado Canyon",
+        "Williams Canyon",
+        "Modjeska Canyon",
+        "Portola Hills",
+        "Rancho So\u00f1ado",
+        "Santa Ana mountain range"
+    ],
+    "Location_with_Annotation": {
+        "Santiago Canyon": "The Bond Fire was a wildfire that burned 6,686 acres (2,706 ha) in the Santiago Canyon area of Orange County, California in December 2020.",
+        "Silverado": "The fire was first reported on December 2, 2020, in the unincorporated community of Silverado.",
+        "Silverado Canyon": "The communities of Silverado Canyon, Williams Canyon, and Modjeska Canyon were placed under mandatory evacuation in the early morning of December 3.",
+        "Williams Canyon": "The communities of Silverado Canyon, Williams Canyon, and Modjeska Canyon were placed under mandatory evacuation in the early morning of December 3.",
+        "Modjeska Canyon": "The communities of Silverado Canyon, Williams Canyon, and Modjeska Canyon were placed under mandatory evacuation in the early morning of December 3.",
+        "Portola Hills": "Nearby Portola Hills was also evacuated later on.",
+        "Rancho So\u00f1ado": "Rancho So\u00f1ado, home of the Orange County Department of Education's 'Inside the Outdoors' learning program, was mostly destroyed by the wildfire.",
+        "Santa Ana mountain range": "An eight-year-old female mountain lion tagged as F121, one of approximately 15 to 20 known to live in the Santa Ana mountain range, was killed by the wildfire."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "NULL",
+        "Total_Economic_Damage_Units": "NULL",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "NULL"
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "United States",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "United States",
+            "Location_Economic_Damage": [
+                "Rancho So\u00f1ado"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Rancho So\u00f1ado, home of the Orange County Department of Education's 'Inside the Outdoors' learning program, was mostly destroyed by the wildfire."
+        },
+        {
+            "Country": "United States",
+            "Location_Economic_Damage": [
+                "Silverado Canyon"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "The day after the storm, five houses in Silverado Canyon were red-tagged, several cars were damaged, and many trees were uprooted."
+        }
+    ],
+    "Perils": "Wildfire|Mudflow",
+    "Perils_Assessment_With_Annotation": {
+        "Wildfire": "The Bond Fire was a wildfire that burned 6,686 acres (2,706 ha) in the Santiago Canyon area of Orange County, California in December 2020.",
+        "Mudflow": "The Bond Fire left much of the vegetation in its path burned, depriving the soil of stability. On January 28, 2021, a voluntary evacuation order was issued in anticipation of a rain storm that posed a threat of mudflows. Heavy rain that night caused mudflows that blocked some roads in Silverado Canyon, rendering them impassible. A second series of mudflows occurred in Silverado Canyon on the morning of March 10, 2021. On December 14, 2021, a large storm swept through the Southern California area, triggering mudflows in Silverado Canyon for the third time since the Bond Fire. On December 23, 2021, Silverado Canyon experienced more mudflows related to the winter rain frequent in the region's Mediterranean (Csa) climate."
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "31",
+        "Total_Building_Damage_Annotation": "By December 7, the fire was at 70% containment, which at that time, already destroyed 31 structures."
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "United States",
+            "Start_Date_Building_Damage": "December 2, 2020",
+            "End_Date_Building_Damage": "December 7, 2020",
+            "Num_Building_Damage": "31",
+            "Building_Damage_with_annotation": "By December 7, the fire was at 70% containment, which at that time, already destroyed 31 structures."
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "United States",
+            "Location_Building_Damage": [
+                "Santiago Canyon",
+                "Orange County",
+                "California"
+            ],
+            "Start_Date_Building_Damage": "December 2, 2020",
+            "End_Date_Building_Damage": "December 7, 2020",
+            "Num_Building_Damage": "31",
+            "Building_Damage_with_annotation": "By December 7, the fire was at 70% containment, which at that time, already destroyed 31 structures."
+        },
+        {
+            "Country": "United States",
+            "Location_Building_Damage": [
+                "Rancho So\u00f1ado"
+            ],
+            "Start_Date_Building_Damage": "December 2, 2020",
+            "End_Date_Building_Damage": "December 10, 2020",
+            "Num_Building_Damage": "mostly destroyed",
+            "Building_Damage_with_annotation": "Rancho So\u00f1ado, home of the Orange County Department of Education's 'Inside the Outdoors' learning program, was mostly destroyed by the wildfire."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "25,000",
+        "Total_Affected_Annotation": "The fire forced the evacuations of 25,000 people and caused the air quality to be very poor."
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "United States",
+            "Start_Date_Affected": "December 2, 2020",
+            "End_Date_Affected": "December 10, 2020",
+            "Num_Affected": "25,000",
+            "Affected_with_annotation": "The fire forced the evacuations of 25,000 people and caused the air quality to be very poor."
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "United States",
+            "Location_Affected": [
+                "Silverado Canyon",
+                "Williams Canyon",
+                "Modjeska Canyon",
+                "Portola Hills"
+            ],
+            "Start_Date_Affected": "December 3, 2020",
+            "End_Date_Affected": "December 6, 2020",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "The communities of Silverado Canyon, Williams Canyon, and Modjeska Canyon were placed under mandatory evacuation in the early morning of December 3, and nearby Portola Hills was also evacuated later on."
+        },
+        {
+            "Country": "United States",
+            "Location_Affected": [
+                "Silverado Canyon"
+            ],
+            "Start_Date_Affected": "January 28, 2021",
+            "End_Date_Affected": "January 28, 2021",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "On January 28, 2021, a voluntary evacuation order was issued in anticipation of a rain storm that posed a threat of mudflows."
+        },
+        {
+            "Country": "United States",
+            "Location_Affected": [
+                "Silverado Canyon",
+                "Williams Canyon",
+                "Modjeska Canyon"
+            ],
+            "Start_Date_Affected": "March 10, 2021",
+            "End_Date_Affected": "March 10, 2021",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "The mudflows prompted the mandatory evacuations of residents in Silverado, Williams, and Modjeska Canyons, all as a result of their Bond Fire burn scar proximity."
+        },
+        {
+            "Country": "United States",
+            "Location_Affected": [
+                "Silverado Canyon"
+            ],
+            "Start_Date_Affected": "December 14, 2021",
+            "End_Date_Affected": "December 14, 2021",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "On December 14, 2021, a large storm swept through the Southern California area, triggering mudflows in Silverado Canyon for the third time since the Bond Fire."
+        },
+        {
+            "Country": "United States",
+            "Location_Affected": [
+                "Silverado Canyon"
+            ],
+            "Start_Date_Affected": "December 23, 2021",
+            "End_Date_Affected": "December 23, 2021",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "On December 23, 2021, Silverado Canyon experienced more mudflows related to the winter rain frequent in the region's Mediterranean (Csa) climate."
+        },
+        {
+            "Country": "United States",
+            "Location_Affected": [
+                "Silverado Canyon"
+            ],
+            "Start_Date_Affected": "December 30, 2021",
+            "End_Date_Affected": "December 30, 2021",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Another mandatory evacuation order was issued on December 30 but ultimately was downgraded to voluntary status as the rain was not as severe as expected."
+        }
+    ]
+}

@@ -1,0 +1,572 @@
+{
+    "Event_ID": "61.0",
+    "Source": "https://en.wikipedia.org/wiki/2022_European_heat_waves",
+    "Event_Name": "2022 European heat waves   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "NULL",
+        "Total_Homelessness_Annotation": "NULL"
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "Portugal",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "NULL"
+        },
+        {
+            "Country": "Italy",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "NULL"
+        },
+        {
+            "Country": "Slovenia",
+            "Start_Date_Homelessness": "17 July 2022",
+            "End_Date_Homelessness": "25 July 2022",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "By 25 July, the spread of the wildfires in the Karst Plateau was largely stopped, but minor fires were still appearing in the affected areas. It was initially estimated that 3,500 ha (8,600 acres) of land were burnt and the estimate was updated to 3,600 ha (8,900 acres) on 1 August, following a few minor spreads that were quickly stopped."
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "Portugal",
+            "Location_Homelessness": [
+                "Leiria",
+                "Faro",
+                "Quinta do Lago",
+                "Vila Nova de Foz C\u00f4a"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "In July, a total of 30,000 ha (74,000 acres) were burnt by wildfires in Leiria, blocking a part of the A1 motorway that runs from Porto to Lisbon. In Algarve, a fire began in the city of Faro that spread to the Quinta do Lago resort. According to the Civil Protection Authority, at least 135 people were injured since the wildfires began. A pilot died when his waterbombing plane crashed in Vila Nova de Foz C\u00f4a while combating wildfires in the region."
+        },
+        {
+            "Country": "Italy",
+            "Location_Homelessness": [
+                "Massarosa",
+                "Lucca",
+                "Pisa",
+                "Trieste",
+                "Carso"
+            ],
+            "Start_Date_Homelessness": "18 July 2022",
+            "End_Date_Homelessness": "19 July 2022",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "On the evening of 18 July, a large fire began in Massarosa, Lucca, which has destroyed 900 ha (2,200 acres) as of 21 July 2022, reaching the province of Pisa. On 19 July in Trieste, there was a blackout caused by a fire in Carso."
+        },
+        {
+            "Country": "Slovenia",
+            "Location_Homelessness": [
+                "Karst Plateau"
+            ],
+            "Start_Date_Homelessness": "17 July 2022",
+            "End_Date_Homelessness": "25 July 2022",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "Along with periods of wind, long-lasting and severe droughts were mentioned as one of the key factors that facilitated the spread of the wildfires that broke out in the Karst Plateau around the southern part of the Italy\u2013Slovenia border on 17 July and became the most extensive spread of wildfires ever recorded in Slovenia three days later, when it was reported that an estimated 1,900 ha (4,700 acres) of land were burnt. By 25 July, the spread of the wildfires in the Karst Plateau was largely stopped, but minor fires were still appearing in the affected areas. It was initially estimated that 3,500 ha (8,600 acres) of land were burnt and the estimate was updated to 3,600 ha (8,900 acres) on 1 August, following a few minor spreads that were quickly stopped."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "187",
+        "Total_Injury_Annotation": "According to the Portuguese Health Ministry, the heatwave killed 1,063 people between 7 and 18 July. A further three people \u2013 two firefighters and a civilian \u2013 were killed in wildfires.[33] At least 238 people died because of the heat,[127] with 187 injuries.[128]"
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "Portugal",
+            "Start_Date_Injury": "7 July 2022",
+            "End_Date_Injury": "18 July 2022",
+            "Num_Injury": "187",
+            "Injury_with_annotation": "According to the Portuguese Health Ministry, the heatwave killed 1,063 people between 7 and 18 July. A further three people \u2013 two firefighters and a civilian \u2013 were killed in wildfires.[33] At least 238 people died because of the heat,[127] with 187 injuries.[128]"
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "Portugal",
+            "Location_Injury": [
+                "Portugal"
+            ],
+            "Start_Date_Injury": "7 July 2022",
+            "End_Date_Injury": "18 July 2022",
+            "Num_Injury": "187",
+            "Injury_with_annotation": "According to the Portuguese Health Ministry, the heatwave killed 1,063 people between 7 and 18 July. A further three people \u2013 two firefighters and a civilian \u2013 were killed in wildfires.[33] At least 238 people died because of the heat,[127] with 187 injuries.[128]"
+        }
+    ],
+    "Main_Event": "Extreme Temperature",
+    "Main_Event_Assessment_With_Annotation": "From June to August 2022, persistent heatwaves affected parts of Europe, causing evacuations and killing tens of thousands. These heat waves were the deadliest meteorological events in 2022. The highest temperature recorded was 47.0 \u00c2\u00b0C (116.6 \u00c2\u00b0F) in Pinh\u00c3\u00a3o, Portugal, on 14 July.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "24,501",
+        "Total_Death_Annotation": "The total number of deaths confirmed was 24,501 reported by the respective countries."
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "Austria",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "419",
+            "Death_with_annotation": "There were an estimated 419 excess deaths across Austria."
+        },
+        {
+            "Country": "United Kingdom",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "3,200",
+            "Death_with_annotation": "In total, there were about 3,200 heat-related deaths in the UK, 2,800 of whom were above the age of 65."
+        },
+        {
+            "Country": "Germany",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "4,500",
+            "Death_with_annotation": "The Robert Koch Institute put the death toll of the heatwaves at over 4,500."
+        },
+        {
+            "Country": "Italy",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "18,010",
+            "Death_with_annotation": "In total, an estimated 18,010 excess deaths were reported due to the heat wave."
+        },
+        {
+            "Country": "Portugal",
+            "Start_Date_Death": "7 July 2022",
+            "End_Date_Death": "18 July 2022",
+            "Num_Death": "1,063",
+            "Death_with_annotation": "According to the Portuguese Health Ministry, the heatwave killed 1,063 people between 7 and 18 July."
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "Poland",
+            "Location_Death": [
+                "Szczecin"
+            ],
+            "Start_Date_Death": "22 June 2022",
+            "End_Date_Death": "22 June 2022",
+            "Num_Death": "1",
+            "Death_with_annotation": "On 22 June, a one-year-old boy mistakenly left in a car died in Szczecin."
+        },
+        {
+            "Country": "Poland",
+            "Location_Death": [
+                "Polish-Ukrainian border"
+            ],
+            "Start_Date_Death": "24 June 2022",
+            "End_Date_Death": "24 June 2022",
+            "Num_Death": "1",
+            "Death_with_annotation": "On 24 June, a man died in the queue of cars at the Polish-Ukrainian border by suspected overheating."
+        },
+        {
+            "Country": "Poland",
+            "Location_Death": [
+                "P\u0142o\u0144sk"
+            ],
+            "Start_Date_Death": "26 June 2022",
+            "End_Date_Death": "26 June 2022",
+            "Num_Death": "1",
+            "Death_with_annotation": "On 26 June in P\u0142o\u0144sk, a man died from suspected sunstroke."
+        },
+        {
+            "Country": "Portugal",
+            "Location_Death": [
+                "Vila Nova de Foz C\u00f4a"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "1",
+            "Death_with_annotation": "A pilot died when his waterbombing plane crashed in Vila Nova de Foz C\u00f4a while combating wildfires in the region."
+        },
+        {
+            "Country": "Portugal",
+            "Location_Death": [
+                "NULL"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "3",
+            "Death_with_annotation": "A further three people \u2013 two firefighters and a civilian \u2013 were killed in wildfires."
+        }
+    ],
+    "Start_Date": "2022-06-10",
+    "End_Date": "2022-09-12",
+    "Time_with_Annotation": "Start date: 10 June 2022 (2022-06-10)\nEnd date: 12 September 2022 (2022-09-12)",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "EUR19 billion",
+        "Total_Insured_Damage_Units": "EUR",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "Damages: EUR19 billion[2]"
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "Portugal",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Italy",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "France",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Spain",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "United Kingdom",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "Portugal",
+            "Location_Insured_Damage": [
+                "Leiria",
+                "Faro",
+                "Vila Nova de Foz C\u00f4a"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "NULL",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "In July, a total of 30,000 ha (74,000 acres) were burnt by wildfires in Leiria, blocking a part of the A1 motorway that runs from Porto to Lisbon. In Algarve, a fire began in the city of Faro that spread to the Quinta do Lago resort. According to the Civil Protection Authority, at least 135 people were injured since the wildfires began. A pilot died when his waterbombing plane crashed in Vila Nova de Foz C\u00f4a while combating wildfires in the region."
+        },
+        {
+            "Country": "Italy",
+            "Location_Insured_Damage": [
+                "Massarosa",
+                "Lucca",
+                "Pisa",
+                "Trieste"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "NULL",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "On the evening of 18 July, a large fire began in Massarosa, Lucca, which has destroyed 900 ha (2,200 acres) as of 21 July 2022, reaching the province of Pisa. On 19 July in Trieste, there was a blackout caused by a fire in Carso."
+        },
+        {
+            "Country": "France",
+            "Location_Insured_Damage": [
+                "NULL"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "NULL",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Spain",
+            "Location_Insured_Damage": [
+                "NULL"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "NULL",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "United Kingdom",
+            "Location_Insured_Damage": [
+                "London"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "NULL",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "At least ten people died in water-related incidents and the London Fire Brigade declared a major incident after several fires broke out across the capital as a result of the heatwave. 19 July was the brigade's busiest day since World War II."
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "NULL",
+        "Total_Displacement_Annotation": "NULL"
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "Portugal",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "In July, a total of 30,000 ha (74,000 acres) were burnt by wildfires in Leiria, blocking a part of the A1 motorway that runs from Porto to Lisbon. In Algarve, a fire began in the city of Faro that spread to the Quinta do Lago resort. According to the Civil Protection Authority, at least 135 people were injured since the wildfires began."
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "Portugal",
+            "Location_Displacement": [
+                "Leiria",
+                "Faro",
+                "Quinta do Lago"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "In July, a total of 30,000 ha (74,000 acres) were burnt by wildfires in Leiria, blocking a part of the A1 motorway that runs from Porto to Lisbon. In Algarve, a fire began in the city of Faro that spread to the Quinta do Lago resort. According to the Civil Protection Authority, at least 135 people were injured since the wildfires began."
+        }
+    ],
+    "Location": [
+        "Andorra",
+        "Austria",
+        "Belgium",
+        "Croatia",
+        "Denmark",
+        "Finland",
+        "France",
+        "Germany",
+        "Greece",
+        "Hungary",
+        "Ireland",
+        "Italy",
+        "Luxembourg",
+        "Malta",
+        "Netherlands",
+        "Norway",
+        "Poland",
+        "Portugal",
+        "San Marino",
+        "Serbia",
+        "Slovakia",
+        "Slovenia",
+        "Spain",
+        "Switzerland",
+        "United Kingdom",
+        "Vatican"
+    ],
+    "Location_with_Annotation": {
+        "Andorra": "On 15 June, Andorra's weather agency, the National Meteorological Service of Andorra, issued a 'significant danger weather warning' due to heat.",
+        "Austria": "On 30 June, a temperature of 36.7 \u00b0C (98.1 \u00b0F) was recorded in Bad Deutsch-Altenburg, this was also Austria's heat record for June.",
+        "Belgium": "On 19 July, the temperature reached 38.1 \u00b0C (100.6 \u00b0F) in Uccle, with the highest temperature that day being 40.0 \u00b0C (104.0 \u00b0F) in Kapelle-op-den-Bos.",
+        "Croatia": "Temperatures peaked on 23 July, reaching 38\u201339 \u00b0C (100\u2013102 \u00b0F) in cities including Zagreb, Osijek, Karlovac, Slavonski Brod, Knin.",
+        "Denmark": "On 20 July, it reached 35.9 \u00b0C (96.6 \u00b0F) in Abed, Stokkemarke Parish, Lolland Municipality, breaking the all-time temperature record for that month.",
+        "Finland": "Finland was hit by the heatwaves in late June and early July. The highest temperature of 32.5 \u00b0C (90.5 \u00b0F) was measured on 29 June in Utsjoki.",
+        "France": "A second more severe heatwave occurred in mid-July, extending north to the United Kingdom where temperatures surpassing 40 \u00b0C (104 \u00b0F) were recorded for the first time.",
+        "Germany": "The Robert Koch Institute put the death toll of the heatwaves at over 4,500.",
+        "Greece": "From mid\u2013June to mid\u2013August, Greece experienced one of its biggest heatwaves.",
+        "Hungary": "On 8 August the UK Health Security Agency issued a level 3 heat health alert for central and southern England effective from 9 to 13 August, which was later extended to 14 August.",
+        "Ireland": "On 15 August 2022 the temperature reached 30.1 \u00b0C (86.2 \u00b0F) in Neskaupstadur.",
+        "Italy": "In Italy, the number of wildfires was three times the historical average by the end of June.",
+        "Luxembourg": "On 18 June, the temperature reached 33.8 \u00b0C (92.8 \u00b0F) in Luxembourg City.",
+        "Malta": "June was record warm for Malta, and the temperature reached a record high for June with 39.0 \u00b0C (102.2 \u00b0F) on 28 June.",
+        "Netherlands": "On 18 July, the Royal Netherlands Meteorological Institute issued a code orange heat warning for the central and southern provinces, with forecasted temperatures of 36 \u00b0C (97 \u00b0F) in central provinces and 38\u201339 \u00b0C (100\u2013102 \u00b0F) in the south on 19 July.",
+        "Norway": "On 19 June, temperatures in western Poland exceeded 36 \u00b0C (97 \u00b0F).",
+        "Poland": "On 19 June, temperatures in western Poland exceeded 36 \u00b0C (97 \u00b0F).",
+        "Portugal": "Pinh\u00e3o, a town situated in Northern Portugal's Douro Valley, recorded 47.0 \u00b0C (116.6 \u00b0F), the highest temperature ever recorded in the month of July.",
+        "San Marino": "In late July, San Marino experienced a heatwave. On 24 July the temperature reached 39.6 \u00b0C (103.3 \u00b0F) in Dogana.",
+        "Serbia": "On 23 July the temperature reached 40.0 \u00b0C (104.0 \u00b0F) in Ni\u0161, only 4.9 \u00b0C under the record from 2007.",
+        "Slovakia": "The first tropical day (Slovak: tropick\u00fd de\u0148), a day with a temperature of over 30 \u00b0C (86 \u00b0F) as defined by the Slovak Hydrometeorological Institute, was recorded in Doln\u00e9 Plachtince on 22 June.",
+        "Slovenia": "On 28 June, the Slovenian Environment Agency (ARSO) recorded a temperature of 38.0 \u00b0C (100.4 \u00b0F) in Podnanos.",
+        "Spain": "In June 2022, temperatures of 40\u201343 \u00b0C (104\u2013109 \u00b0F) were recorded in parts of Europe, with most severe temperature anomalies in France, where several records were broken.",
+        "Switzerland": "On 15 June, a heat-wave alert was activated in the canton of Ticino.",
+        "United Kingdom": "A second more severe heatwave occurred in mid-July, extending north to the United Kingdom where temperatures surpassing 40 \u00b0C (104 \u00b0F) were recorded for the first time.",
+        "Vatican": "On 28 June 2022, the Vatican measured its highest temperature ever recorded when the temperature reached 40.8 \u00b0C (105.4 \u00b0F)."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "EUR19 billion",
+        "Total_Economic_Damage_Units": "EUR",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "Damages: EUR19 billion[2]"
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "Portugal",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "Portugal",
+            "Location_Economic_Damage": [
+                "Leiria",
+                "Faro",
+                "Vila Nova de Foz C\u00f4a"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "In July, a total of 30,000 ha (74,000 acres) were burnt by wildfires in Leiria, blocking a part of the A1 motorway that runs from Porto to Lisbon. In Algarve, a fire began in the city of Faro that spread to the Quinta do Lago resort. According to the Civil Protection Authority, at least 135 people were injured since the wildfires began. A pilot died when his waterbombing plane crashed in Vila Nova de Foz C\u00f4a while combating wildfires in the region."
+        }
+    ],
+    "Perils": "Heatwave|Drought|Wildfire",
+    "Perils_Assessment_With_Annotation": {
+        "Heatwave": "From June to August 2022, persistent heatwaves affected parts of Europe, causing evacuations and killing tens of thousands. These heat waves were the deadliest meteorological events in 2022.",
+        "Drought": "As a result of the heatwaves, widespread droughts occurred across the continent.",
+        "Wildfire": "In July, a total of 30,000 ha (74,000 acres) were burnt by wildfires in Leiria, blocking a part of the A1 motorway that runs from Porto to Lisbon. In Algarve, a fire began in the city of Faro that spread to the Quinta do Lago resort."
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "NULL",
+        "Total_Building_Damage_Annotation": "NULL"
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "Portugal",
+            "Start_Date_Building_Damage": "July 2022",
+            "End_Date_Building_Damage": "July 2022",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "In July, a total of 30,000 ha (74,000 acres) were burnt by wildfires in Leiria, blocking a part of the A1 motorway that runs from Porto to Lisbon. In Algarve, a fire began in the city of Faro that spread to the Quinta do Lago resort."
+        },
+        {
+            "Country": "Italy",
+            "Start_Date_Building_Damage": "18 July 2022",
+            "End_Date_Building_Damage": "21 July 2022",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "On the evening of 18 July, a large fire began in Massarosa, Lucca, which has destroyed 900 ha (2,200 acres) as of 21 July 2022, reaching the province of Pisa."
+        },
+        {
+            "Country": "Slovenia",
+            "Start_Date_Building_Damage": "17 July 2022",
+            "End_Date_Building_Damage": "25 July 2022",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "Along with periods of wind, long-lasting and severe droughts were mentioned as one of the key factors that facilitated the spread of the wildfires that broke out in the Karst Plateau around the southern part of the Italy\u2013Slovenia border on 17 July and became the most extensive spread of wildfires ever recorded in Slovenia three days later, when it was reported that an estimated 1,900 ha (4,700 acres) of land were burnt. By 25 July, the spread of the wildfires in the Karst Plateau was largely stopped, but minor fires were still appearing in the affected areas. It was initially estimated that 3,500 ha (8,600 acres) of land were burnt and the estimate was updated to 3,600 ha (8,900 acres) on 1 August, following a few minor spreads that were quickly stopped."
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "Portugal",
+            "Location_Building_Damage": [
+                "Leiria",
+                "Faro",
+                "Quinta do Lago"
+            ],
+            "Start_Date_Building_Damage": "July 2022",
+            "End_Date_Building_Damage": "July 2022",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "In July, a total of 30,000 ha (74,000 acres) were burnt by wildfires in Leiria, blocking a part of the A1 motorway that runs from Porto to Lisbon. In Algarve, a fire began in the city of Faro that spread to the Quinta do Lago resort."
+        },
+        {
+            "Country": "Italy",
+            "Location_Building_Damage": [
+                "Massarosa",
+                "Lucca",
+                "Pisa"
+            ],
+            "Start_Date_Building_Damage": "18 July 2022",
+            "End_Date_Building_Damage": "21 July 2022",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "On the evening of 18 July, a large fire began in Massarosa, Lucca, which has destroyed 900 ha (2,200 acres) as of 21 July 2022, reaching the province of Pisa."
+        },
+        {
+            "Country": "Slovenia",
+            "Location_Building_Damage": [
+                "Karst Plateau"
+            ],
+            "Start_Date_Building_Damage": "17 July 2022",
+            "End_Date_Building_Damage": "25 July 2022",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "Along with periods of wind, long-lasting and severe droughts were mentioned as one of the key factors that facilitated the spread of the wildfires that broke out in the Karst Plateau around the southern part of the Italy\u2013Slovenia border on 17 July and became the most extensive spread of wildfires ever recorded in Slovenia three days later, when it was reported that an estimated 1,900 ha (4,700 acres) of land were burnt. By 25 July, the spread of the wildfires in the Karst Plateau was largely stopped, but minor fires were still appearing in the affected areas. It was initially estimated that 3,500 ha (8,600 acres) of land were burnt and the estimate was updated to 3,600 ha (8,900 acres) on 1 August, following a few minor spreads that were quickly stopped."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "NULL",
+        "Total_Affected_Annotation": "NULL"
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "Austria",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "419",
+            "Affected_with_annotation": "There were an estimated 419 excess deaths across Austria."
+        },
+        {
+            "Country": "United Kingdom",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "3,200",
+            "Affected_with_annotation": "In total, there were about 3,200 heat-related deaths in the UK, 2,800 of whom were above the age of 65."
+        },
+        {
+            "Country": "Italy",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "18,010",
+            "Affected_with_annotation": "In total, an estimated 18,010 excess deaths were reported due to the heat wave."
+        },
+        {
+            "Country": "Germany",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "4,500",
+            "Affected_with_annotation": "The Robert Koch Institute put the death toll of the heatwaves at over 4,500."
+        },
+        {
+            "Country": "Portugal",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "1,063",
+            "Affected_with_annotation": "According to the Portuguese Health Ministry, the heatwave killed 1,063 people between 7 and 18 July."
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "Poland",
+            "Location_Affected": [
+                "Szczecin"
+            ],
+            "Start_Date_Affected": "22 June 2022",
+            "End_Date_Affected": "22 June 2022",
+            "Num_Affected": "1",
+            "Affected_with_annotation": "On 22 June, a one-year-old boy mistakenly left in a car died in Szczecin."
+        },
+        {
+            "Country": "Poland",
+            "Location_Affected": [
+                "Polish-Ukrainian border"
+            ],
+            "Start_Date_Affected": "24 June 2022",
+            "End_Date_Affected": "24 June 2022",
+            "Num_Affected": "1",
+            "Affected_with_annotation": "On 24 June, a man died in the queue of cars at the Polish-Ukrainian border by suspected overheating."
+        },
+        {
+            "Country": "Poland",
+            "Location_Affected": [
+                "P\u0142o\u0144sk"
+            ],
+            "Start_Date_Affected": "26 June 2022",
+            "End_Date_Affected": "26 June 2022",
+            "Num_Affected": "1",
+            "Affected_with_annotation": "On 26 June in P\u0142o\u0144sk, a man died from suspected sunstroke."
+        },
+        {
+            "Country": "Portugal",
+            "Location_Affected": [
+                "Portugal"
+            ],
+            "Start_Date_Affected": "7 July 2022",
+            "End_Date_Affected": "18 July 2022",
+            "Num_Affected": "1,063",
+            "Affected_with_annotation": "According to the Portuguese Health Ministry, the heatwave killed 1,063 people between 7 and 18 July."
+        }
+    ]
+}

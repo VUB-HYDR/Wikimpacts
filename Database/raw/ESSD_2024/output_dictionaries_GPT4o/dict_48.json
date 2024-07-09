@@ -1,0 +1,551 @@
+{
+    "Event_ID": "117.0",
+    "Source": "https://en.wikipedia.org/wiki/Hurricane_Linda_(2015)",
+    "Event_Name": "Hurricane Linda (2015)   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "NULL",
+        "Total_Homelessness_Annotation": "NULL"
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "Mexico",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "NULL"
+        },
+        {
+            "Country": "United States",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "Mexico",
+            "Location_Homelessness": [
+                "Angostura",
+                "Culiac\u00e1n",
+                "Mazatl\u00e1n",
+                "Rosario",
+                "Salvador Alvarado"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "hundreds",
+            "Homelessness_with_annotation": "Flooding affected approximately 1,000 homes in the state with hundreds damaged, prompting dozens of families to evacuate."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Homelessness": [
+                "Oaxaca"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "more than a dozen",
+            "Homelessness_with_annotation": "Scattered thunderstorms in Oaxaca resulted in multiple landslides and flooding, prompting closure of several highways and damaging more than a dozen homes."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Homelessness": [
+                "Zacatecas"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "25",
+            "Homelessness_with_annotation": "Localized flooding attributed to Linda in Zacatecas damaged crops and 25 homes; losses reached MXN$500,000 (US$27,000)."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "NULL",
+        "Total_Injury_Annotation": "NULL"
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "United States",
+            "Start_Date_Injury": "September 8, 2015",
+            "End_Date_Injury": "September 14, 2015",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "Mexico",
+            "Start_Date_Injury": "September 5, 2015",
+            "End_Date_Injury": "September 14, 2015",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "United States",
+            "Location_Injury": [
+                "San Bernardino National Forest"
+            ],
+            "Start_Date_Injury": "September 8, 2015",
+            "End_Date_Injury": "September 8, 2015",
+            "Num_Injury": "1",
+            "Injury_with_annotation": "One person drowned in the San Bernardino National Forest."
+        },
+        {
+            "Country": "United States",
+            "Location_Injury": [
+                "Hildale",
+                "Zion National Park"
+            ],
+            "Start_Date_Injury": "September 14, 2015",
+            "End_Date_Injury": "September 14, 2015",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "Mexico",
+            "Location_Injury": [
+                "Oaxaca"
+            ],
+            "Start_Date_Injury": "September 5, 2015",
+            "End_Date_Injury": "September 14, 2015",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "Mexico",
+            "Location_Injury": [
+                "Sinaloa"
+            ],
+            "Start_Date_Injury": "September 5, 2015",
+            "End_Date_Injury": "September 14, 2015",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "Mexico",
+            "Location_Injury": [
+                "Zacatecas"
+            ],
+            "Start_Date_Injury": "September 5, 2015",
+            "End_Date_Injury": "September 14, 2015",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Assessment_With_Annotation": "Hurricane Linda was a strong tropical cyclone in September 2015 that resulted in heavy rains across portions of Mexico and the Southwestern United States.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "22",
+        "Total_Death_Annotation": "Fatalities: 22 total"
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "United States",
+            "Start_Date_Death": "September 14, 2015",
+            "End_Date_Death": "September 14, 2015",
+            "Num_Death": "21",
+            "Death_with_annotation": "Utah was impacted by major flash flooding incidents\u2014with rainfall amounting to 1-in-100 year levels\u2014which left 21 deaths in the state: 14 near Hildale and 7 in Zion National Park."
+        },
+        {
+            "Country": "United States",
+            "Start_Date_Death": "September 8, 2015",
+            "End_Date_Death": "September 8, 2015",
+            "Num_Death": "1",
+            "Death_with_annotation": "One fatality in the state occurred from a drowning at San Bernardino National Forest."
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "United States",
+            "Location_Death": [
+                "Hildale",
+                "Utah"
+            ],
+            "Start_Date_Death": "September 14, 2015",
+            "End_Date_Death": "September 14, 2015",
+            "Num_Death": "14",
+            "Death_with_annotation": "The second flood swept away two vehicles carrying a collective 16 people while they were observing the rising waters. Thirteen people were killed and three children were rescued."
+        },
+        {
+            "Country": "United States",
+            "Location_Death": [
+                "Zion National Park",
+                "Utah"
+            ],
+            "Start_Date_Death": "September 14, 2015",
+            "End_Date_Death": "September 14, 2015",
+            "Num_Death": "7",
+            "Death_with_annotation": "The second flash flood incident occurred in Keyhole Canyon at Zion National Park after 0.63 in (16 mm) of rain fell between 22:30 and 23:30 UTC (4:30 and 5:30 p.m. MDT). All seven people were swept away by the ensuing flood and died."
+        },
+        {
+            "Country": "United States",
+            "Location_Death": [
+                "San Bernardino National Forest",
+                "California"
+            ],
+            "Start_Date_Death": "September 8, 2015",
+            "End_Date_Death": "September 8, 2015",
+            "Num_Death": "1",
+            "Death_with_annotation": "One person drowned in the San Bernardino National Forest."
+        }
+    ],
+    "Start_Date": "September 5, 2015",
+    "End_Date": "September 14, 2015",
+    "Time_with_Annotation": "Formed: September 5, 2015\nDissipated: September 14, 2015",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "NULL",
+        "Total_Insured_Damage_Units": "NULL",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "United States",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "United States",
+            "Location_Insured_Damage": [
+                "California"
+            ],
+            "Num_Insured_Damage": "$1.2 million",
+            "Insured_Damage_Units": "USD",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Strong winds from a thunderstorm on September 14 knocked five rail cars off their track, costing insurance companies $1.2 million."
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "Dozens of families",
+        "Total_Displacement_Annotation": "Flooding affected approximately 1,000 homes in the state with hundreds damaged, prompting dozens of families to evacuate."
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "Mexico",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "Dozens of families",
+            "Displacement_with_annotation": "Flooding affected approximately 1,000 homes in the state with hundreds damaged, prompting dozens of families to evacuate."
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "Mexico",
+            "Location_Displacement": [
+                "Sinaloa"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "Dozens of families",
+            "Displacement_with_annotation": "Flooding affected approximately 1,000 homes in the state with hundreds damaged, prompting dozens of families to evacuate."
+        }
+    ],
+    "Location": [
+        "Sinaloa",
+        "Oaxaca",
+        "Zacatecas",
+        "Revillagigedo Islands",
+        "Southwestern United States",
+        "Baja California",
+        "Baja California Sur",
+        "Colima",
+        "Jalisco",
+        "Nayarit",
+        "Sonora",
+        "Victorville",
+        "Hesperia",
+        "Los Angeles",
+        "San Diego",
+        "San Bernardino National Forest",
+        "Utah",
+        "Hildale",
+        "Zion National Park",
+        "Washington County",
+        "Colorado City",
+        "Arizona",
+        "Hurricane",
+        "Utah County",
+        "American Fork Canyon"
+    ],
+    "Location_with_Annotation": {
+        "Sinaloa": "Flooding in Sinola affected approximately 1,000 homes with hundreds damaged, prompting dozens of families to evacuate.",
+        "Oaxaca": "In Oaxaca, mudslides resulted in the closure of multiple highways and damage to over a dozen homes.",
+        "Zacatecas": "Localized flooding in Zacatecas damaged crops and 25 dwellings; damage reached approximately 500,000 pesos (US$30,000).",
+        "Revillagigedo Islands": "Due to a slight increase in wind shear and possibly an intrusion from dry air, Linda temporarily remained steady in intensity while passing between Socorro Island and Clarion Island.",
+        "Southwestern United States": "Moisture from the storm was pulled northeast into the Southwestern United States and enhanced the local monsoon.",
+        "Baja California": "The outer bands of Linda brought rainfall to nine states across Mexico: Baja California, Baja California Sur, Colima, Jalisco, Nayarit, Sinaloa, Sonora and Zacatecas.",
+        "Baja California Sur": "The outer bands of Linda brought rainfall to nine states across Mexico: Baja California, Baja California Sur, Colima, Jalisco, Nayarit, Sinaloa, Sonora and Zacatecas.",
+        "Colima": "The outer bands of Linda brought rainfall to nine states across Mexico: Baja California, Baja California Sur, Colima, Jalisco, Nayarit, Sinaloa, Sonora and Zacatecas.",
+        "Jalisco": "The outer bands of Linda brought rainfall to nine states across Mexico: Baja California, Baja California Sur, Colima, Jalisco, Nayarit, Sinaloa, Sonora and Zacatecas.",
+        "Nayarit": "The outer bands of Linda brought rainfall to nine states across Mexico: Baja California, Baja California Sur, Colima, Jalisco, Nayarit, Sinaloa, Sonora and Zacatecas.",
+        "Sonora": "The outer bands of Linda brought rainfall to nine states across Mexico: Baja California, Baja California Sur, Colima, Jalisco, Nayarit, Sinaloa, Sonora and Zacatecas.",
+        "Victorville": "Monsoonal moisture pulled north from Linda to produce thunderstorms across portions of California starting on September 8. Victorville and Hesperia, started on September 8 had knocked out electricity.",
+        "Hesperia": "Monsoonal moisture pulled north from Linda to produce thunderstorms across portions of California starting on September 8. Victorville and Hesperia, started on September 8 had knocked out electricity.",
+        "Los Angeles": "On September 15, Los Angeles received 2.39 in (61 mm) of rain, contributing to the city's second-wettest September day since records began in 1877.",
+        "San Diego": "Rainfall of 1 to 2 in (25 to 51 mm) was common around San Diego; an underground parking lot in the Midway neighborhood was flooded.",
+        "San Bernardino National Forest": "One person drowned in the San Bernardino National Forest.",
+        "Utah": "Utah was impacted by major flash flooding incidents\u2014with rainfall amounting to 1-in-100 year levels\u2014which left 21 deaths in the state: 14 near Hildale and 7 in Zion National Park.",
+        "Hildale": "Utah was impacted by major flash flooding incidents\u2014with rainfall amounting to 1-in-100 year levels\u2014which left 21 deaths in the state: 14 near Hildale and 7 in Zion National Park.",
+        "Zion National Park": "Utah was impacted by major flash flooding incidents\u2014with rainfall amounting to 1-in-100 year levels\u2014which left 21 deaths in the state: 14 near Hildale and 7 in Zion National Park.",
+        "Washington County": "Flash floods occur annually in Washington County, Utah, with an average of one to two flash flood days per year since 1950.",
+        "Colorado City": "The first storm resulted in a 3.42 ft (1.04 m) rise along the Short Creek, as measured by a stream gauge in Colorado City, Arizona, in 19 minutes around 21:18 UTC (3:18 p.m. MDT), with residents gathering nearby to observe.",
+        "Arizona": "Flooding continued downstream into Arizona, rendering multiple roads impassible and damaging bridges around Colorado City; losses in the city amounted to $500,000.",
+        "Hurricane": "Elsewhere, a man from Hurricane, Utah, 15 mi (24 km) west of Hildale, died on September 14 after being swept away by floods while traveling remote dirt roads.",
+        "Utah County": "In Utah County, Utah, the rain resulted in traffic accidents and mudslides, including several at American Fork Canyon that shut down parts of State Route 92 and State Route 144.",
+        "American Fork Canyon": "In Utah County, Utah, the rain resulted in traffic accidents and mudslides, including several at American Fork Canyon that shut down parts of State Route 92 and State Route 144."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "3.6 million",
+        "Total_Economic_Damage_Units": "USD",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "Damage across the Southwest amounted to US$3.6 million."
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "Mexico",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "United States",
+            "Total_Economic_Damage": "3.6 million",
+            "Total_Economic_Damage_Units": "USD",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Damage across the Southwest amounted to US$3.6 million."
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "Mexico",
+            "Location_Economic_Damage": [
+                "Oaxaca"
+            ],
+            "Num_Economic_Damage": "500,000 pesos",
+            "Economic_Damage_Units": "MXN",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Localized flooding in Zacatecas damaged crops and 25 dwellings; damage reached approximately 500,000 pesos (US$30,000)."
+        },
+        {
+            "Country": "United States",
+            "Location_Economic_Damage": [
+                "California"
+            ],
+            "Num_Economic_Damage": "912,000",
+            "Economic_Damage_Units": "USD",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Flood-related losses throughout the state reached $912,000."
+        },
+        {
+            "Country": "United States",
+            "Location_Economic_Damage": [
+                "Utah"
+            ],
+            "Num_Economic_Damage": "750,000",
+            "Economic_Damage_Units": "USD",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Total losses in Washington County reached $750,000."
+        },
+        {
+            "Country": "United States",
+            "Location_Economic_Damage": [
+                "Arizona"
+            ],
+            "Num_Economic_Damage": "206,000",
+            "Economic_Damage_Units": "USD",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Scattered thunderstorms caused sporadic damage across Arizona, leaving $206,000 in losses."
+        }
+    ],
+    "Perils": "Rainfall|Flood|Landslide|Thunderstorm",
+    "Perils_Assessment_With_Annotation": {
+        "Rainfall": "Hurricane Linda was a strong tropical cyclone in September 2015 that resulted in heavy rains across portions of Mexico and the Southwestern United States.",
+        "Flood": "In Mexico, the storm brought rainfall to nine states, causing flooding, especially in Oaxaca, Sinaloa, and Zacatecas. In Oaxaca, mudslides resulted in the closure of multiple highways and damage to over a dozen homes. Flooding in Sinola affected approximately 1,000 homes with hundreds damaged, prompting dozens of families to evacuate. Several small communities were temporarily isolated after flood waters covered bridges. Localized flooding in Zacatecas damaged crops and 25 dwellings; damage reached approximately 500,000 pesos (US$30,000).",
+        "Landslide": "In Oaxaca, mudslides resulted in the closure of multiple highways and damage to over a dozen homes.",
+        "Thunderstorm": "Monsoonal moisture pulled north from Linda to produce thunderstorms across portions of California starting on September 8."
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "hundreds",
+        "Total_Building_Damage_Annotation": "Flooding affected approximately 1,000 homes in the state with hundreds damaged, prompting dozens of families to evacuate."
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "Mexico",
+            "Start_Date_Building_Damage": "September 5, 2015",
+            "End_Date_Building_Damage": "September 14, 2015",
+            "Num_Building_Damage": "hundreds",
+            "Building_Damage_with_annotation": "Flooding affected approximately 1,000 homes in the state with hundreds damaged, prompting dozens of families to evacuate."
+        },
+        {
+            "Country": "United States",
+            "Start_Date_Building_Damage": "September 8, 2015",
+            "End_Date_Building_Damage": "September 14, 2015",
+            "Num_Building_Damage": "several",
+            "Building_Damage_with_annotation": "Several homes sustained water and mud damage. Total losses in Washington County reached $750,000."
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "Mexico",
+            "Location_Building_Damage": [
+                "Oaxaca"
+            ],
+            "Start_Date_Building_Damage": "September 5, 2015",
+            "End_Date_Building_Damage": "September 14, 2015",
+            "Num_Building_Damage": "more than a dozen",
+            "Building_Damage_with_annotation": "Scattered thunderstorms in Oaxaca resulted in multiple landslides and flooding, prompting closure of several highways and damaging more than a dozen homes."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Building_Damage": [
+                "Sinaloa"
+            ],
+            "Start_Date_Building_Damage": "September 5, 2015",
+            "End_Date_Building_Damage": "September 14, 2015",
+            "Num_Building_Damage": "hundreds",
+            "Building_Damage_with_annotation": "Flooding affected approximately 1,000 homes in the state with hundreds damaged, prompting dozens of families to evacuate."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Building_Damage": [
+                "Zacatecas"
+            ],
+            "Start_Date_Building_Damage": "September 5, 2015",
+            "End_Date_Building_Damage": "September 14, 2015",
+            "Num_Building_Damage": "25",
+            "Building_Damage_with_annotation": "Localized flooding attributed to Linda in Zacatecas damaged crops and 25 homes; losses reached MXN$500,000 (US$27,000)."
+        },
+        {
+            "Country": "United States",
+            "Location_Building_Damage": [
+                "Washington County",
+                "Hildale"
+            ],
+            "Start_Date_Building_Damage": "September 8, 2015",
+            "End_Date_Building_Damage": "September 14, 2015",
+            "Num_Building_Damage": "several",
+            "Building_Damage_with_annotation": "Several homes sustained water and mud damage. Total losses in Washington County reached $750,000."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "NULL",
+        "Total_Affected_Annotation": "NULL"
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "Mexico",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "NULL"
+        },
+        {
+            "Country": "United States",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "Mexico",
+            "Location_Affected": [
+                "Angostura",
+                "Culiac\u00e1n",
+                "Mazatl\u00e1n",
+                "Rosario",
+                "Salvador Alvarado"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "approximately 1,000 homes with hundreds damaged",
+            "Affected_with_annotation": "Flooding affected approximately 1,000 homes in the state with hundreds damaged, prompting dozens of families to evacuate."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Affected": [
+                "Oaxaca"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "more than a dozen homes",
+            "Affected_with_annotation": "Scattered thunderstorms in Oaxaca resulted in multiple landslides and flooding, prompting closure of several highways and damaging more than a dozen homes."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Affected": [
+                "Zacatecas"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "25 homes",
+            "Affected_with_annotation": "Localized flooding attributed to Linda in Zacatecas damaged crops and 25 homes; losses reached MXN$500,000 (US$27,000)."
+        },
+        {
+            "Country": "United States",
+            "Location_Affected": [
+                "San Bernardino National Forest"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "1 person",
+            "Affected_with_annotation": "One person drowned in the San Bernardino National Forest."
+        },
+        {
+            "Country": "United States",
+            "Location_Affected": [
+                "Hildale",
+                "Zion National Park"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "21 people",
+            "Affected_with_annotation": "Utah was impacted by major flash flooding incidents\u2014with rainfall amounting to 1-in-100 year levels\u2014which left 21 deaths in the state: 14 near Hildale and 7 in Zion National Park."
+        },
+        {
+            "Country": "United States",
+            "Location_Affected": [
+                "Hildale"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "13 people",
+            "Affected_with_annotation": "The second flood swept away two vehicles carrying a collective 16 people while they were observing the rising waters. Thirteen people were killed and three children were rescued."
+        },
+        {
+            "Country": "United States",
+            "Location_Affected": [
+                "Zion National Park"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "7 people",
+            "Affected_with_annotation": "All seven people were swept away by the ensuing flood and died."
+        },
+        {
+            "Country": "United States",
+            "Location_Affected": [
+                "Hurricane, Utah"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "1 person",
+            "Affected_with_annotation": "Elsewhere, a man from Hurricane, Utah, 15 mi (24 km) west of Hildale, died on September 14 after being swept away by floods while traveling remote dirt roads."
+        }
+    ]
+}

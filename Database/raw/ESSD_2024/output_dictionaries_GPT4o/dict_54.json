@@ -1,0 +1,365 @@
+{
+    "Event_ID": "126.0",
+    "Source": "https://en.wikipedia.org/wiki/Tropical_Storm_Talas_(2017)",
+    "Event_Name": "Tropical Storm Talas (2017)   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "2,700 houses damaged",
+        "Total_Homelessness_Annotation": "Throughout Vietnam, the storm killed 14 people and damaged around 2,700 houses."
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "Vietnam",
+            "Start_Date_Homelessness": "July 16, 2017",
+            "End_Date_Homelessness": "July 17, 2017",
+            "Num_Homelessness": "2,700 houses damaged",
+            "Homelessness_with_annotation": "Throughout Vietnam, the storm killed 14 people and damaged around 2,700 houses."
+        },
+        {
+            "Country": "China",
+            "Start_Date_Homelessness": "July 22, 2017",
+            "End_Date_Homelessness": "July 22, 2017",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "About 22,901 fishing boats were moved while 39,425 people working at sea farms evacuated to Guangdong province."
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "Vietnam",
+            "Location_Homelessness": [
+                "Nghe An Province"
+            ],
+            "Start_Date_Homelessness": "July 16, 2017",
+            "End_Date_Homelessness": "July 17, 2017",
+            "Num_Homelessness": "2,700 houses damaged",
+            "Homelessness_with_annotation": "According to the Central Steering Committee for Natural Disaster Prevention and Rescue, more than 2,700 homes were damaged in Nghe An Province."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "NULL",
+        "Total_Injury_Annotation": "NULL"
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "Vietnam",
+            "Start_Date_Injury": "July 16, 2017",
+            "End_Date_Injury": "July 17, 2017",
+            "Num_Injury": "7",
+            "Injury_with_annotation": "In the Qu\u1ea3ng B\u00ecnh Province, fishing boats were washed ashore by waves as high as 5 m (16 ft); there, seven people were injured."
+        },
+        {
+            "Country": "China",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "Vietnam",
+            "Location_Injury": [
+                "Qu\u1ea3ng B\u00ecnh Province"
+            ],
+            "Start_Date_Injury": "July 16, 2017",
+            "End_Date_Injury": "July 17, 2017",
+            "Num_Injury": "7",
+            "Injury_with_annotation": "In the Qu\u1ea3ng B\u00ecnh Province, fishing boats were washed ashore by waves as high as 5 m (16 ft); there, seven people were injured."
+        }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Assessment_With_Annotation": "Severe Tropical Storm Talas was a tropical cyclone that impacted Vietnam during mid July 2017.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "14",
+        "Total_Death_Annotation": "Throughout Vietnam, the storm killed 14 people and damaged around 2,700 houses."
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "Vietnam",
+            "Start_Date_Death": "July 16, 2017",
+            "End_Date_Death": "July 17, 2017",
+            "Num_Death": "14",
+            "Death_with_annotation": "Throughout Vietnam, the storm killed 14 people and damaged around 2,700 houses."
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "Vietnam",
+            "Location_Death": [
+                "Nghe An Province"
+            ],
+            "Start_Date_Death": "July 16, 2017",
+            "End_Date_Death": "July 17, 2017",
+            "Num_Death": "NULL",
+            "Death_with_annotation": "According to the Central Steering Committee for Natural Disaster Prevention and Rescue, more than 2,700 homes were damaged in Nghe An Province."
+        },
+        {
+            "Country": "Vietnam",
+            "Location_Death": [
+                "Qu\u1ea3ng B\u00ecnh Province"
+            ],
+            "Start_Date_Death": "July 16, 2017",
+            "End_Date_Death": "July 17, 2017",
+            "Num_Death": "NULL",
+            "Death_with_annotation": "In the Qu\u1ea3ng B\u00ecnh Province, fishing boats were washed ashore by waves as high as 5 m (16 ft); there, seven people were injured."
+        },
+        {
+            "Country": "Vietnam",
+            "Location_Death": [
+                "Hanoi"
+            ],
+            "Start_Date_Death": "July 17, 2017",
+            "End_Date_Death": "July 17, 2017",
+            "Num_Death": "NULL",
+            "Death_with_annotation": "During July 17, flooded streets and disrupted train services stranded more than 4,000 passengers in the capital. Railway services from Hanoi to Vinh were canceled while trains from Hanoi to Saigon were delayed by five to seven hours."
+        }
+    ],
+    "Start_Date": "July 14, 2017",
+    "End_Date": "July 17, 2017",
+    "Time_with_Annotation": "Formed: July 14, 2017\nDissipated: July 17, 2017",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "NULL",
+        "Total_Insured_Damage_Units": "NULL",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "Vietnam",
+            "Total_Insured_Damage": "1.6 trillion\u20ab",
+            "Total_Insured_Damage_Units": "VND",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "Total damage in Vietnam reached 1.6 trillion\u20ab (US$70.4 million)."
+        },
+        {
+            "Country": "China",
+            "Total_Insured_Damage": "CNY 60 million",
+            "Total_Insured_Damage_Units": "CNY",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "In total, damage by Talas in China reached CNY 60 million (US$8.8 million)."
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "Vietnam",
+            "Location_Insured_Damage": [
+                "Nghe An Province"
+            ],
+            "Num_Insured_Damage": "993 billion\u20ab",
+            "Insured_Damage_Units": "VND",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Damages in Nghe An were reported to reach up to 993 billion\u20ab (US$43.7 million)."
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "39,425 people",
+        "Total_Displacement_Annotation": "About 22,901 fishing boats were moved while 39,425 people working at sea farms evacuated to Guangdong province."
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "China",
+            "Start_Date_Displacement": "July 22",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "39,425 people",
+            "Displacement_with_annotation": "About 22,901 fishing boats were moved while 39,425 people working at sea farms evacuated to Guangdong province."
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "China",
+            "Location_Displacement": [
+                "Hainan province",
+                "Beibu Gulf"
+            ],
+            "Start_Date_Displacement": "July 22",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "39,425 people",
+            "Displacement_with_annotation": "About 22,901 fishing boats were moved while 39,425 people working at sea farms evacuated to Guangdong province."
+        }
+    ],
+    "Location": [
+        "Vietnam",
+        "South China",
+        "Laos",
+        "Thailand",
+        "Myanmar",
+        "Nghe An Province",
+        "Thanh H\u00f3a Province",
+        "Ha Tinh Province",
+        "Hanoi",
+        "Qu\u1ea3ng B\u00ecnh Province",
+        "Hainan Province",
+        "Lingshui Li Autonomous County",
+        "Guangdong Province"
+    ],
+    "Location_with_Annotation": {
+        "Vietnam": "Severe Tropical Storm Talas was a tropical cyclone that impacted Vietnam during mid July 2017.",
+        "South China": "Areas affected: Vietnam, South China, Laos, Thailand, Myanmar",
+        "Laos": "Areas affected: Vietnam, South China, Laos, Thailand, Myanmar",
+        "Thailand": "Areas affected: Vietnam, South China, Laos, Thailand, Myanmar",
+        "Myanmar": "Areas affected: Vietnam, South China, Laos, Thailand, Myanmar",
+        "Nghe An Province": "According to the Central Steering Committee for Natural Disaster Prevention and Rescue, more than 2,700 homes were damaged in Nghe An Province.",
+        "Thanh H\u00f3a Province": "Vietnam's National Center for Hydro-Meteorological Forecasting recorded wind gusts up to 100 km/h (62 mph) with wind damage being reported in Nghe An, Thanh H\u00f3a and Ha Tinh provinces.",
+        "Ha Tinh Province": "Vietnam's National Center for Hydro-Meteorological Forecasting recorded wind gusts up to 100 km/h (62 mph) with wind damage being reported in Nghe An, Thanh H\u00f3a and Ha Tinh provinces.",
+        "Hanoi": "During July 17, flooded streets and disrupted train services stranded more than 4,000 passengers in the capital. Railway services from Hanoi to Vinh were canceled while trains from Hanoi to Saigon were delayed by five to seven hours.",
+        "Qu\u1ea3ng B\u00ecnh Province": "In the Qu\u1ea3ng B\u00ecnh Province, fishing boats were washed ashore by waves as high as 5 m (16 ft); there, seven people were injured.",
+        "Hainan Province": "During July 22, China's National Observatory issued a \"blue alert\" to Hainan province and the Beibu Gulf.",
+        "Lingshui Li Autonomous County": "Winds of 62\u201374 km/h (39\u201346 mph) were recorded over in some places, especially in areas around the Lingshui Li Autonomous County, as the storm neared the coast.",
+        "Guangdong Province": "About 22,901 fishing boats were moved while 39,425 people working at sea farms evacuated to Guangdong province."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "$118 million",
+        "Total_Economic_Damage_Units": "USD",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "Damage: $118 million (2017 USD)"
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "Vietnam",
+            "Total_Economic_Damage": "1.6 trillion\u20ab (US$70.4 million)",
+            "Total_Economic_Damage_Units": "VND, USD",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Total damage in Vietnam reached 1.6 trillion\u20ab (US$70.4 million)."
+        },
+        {
+            "Country": "China",
+            "Total_Economic_Damage": "CNY 60 million (US$8.8 million)",
+            "Total_Economic_Damage_Units": "CNY, USD",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "In total, damage by Talas in China reached CNY 60 million (US$8.8 million)."
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "Vietnam",
+            "Location_Economic_Damage": [
+                "Nghe An"
+            ],
+            "Num_Economic_Damage": "993 billion\u20ab (US$43.7 million)",
+            "Economic_Damage_Units": "VND, USD",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Damages in Nghe An were reported to reach up to 993 billion\u20ab (US$43.7 million)."
+        },
+        {
+            "Country": "China",
+            "Location_Economic_Damage": [
+                "Hainan Province"
+            ],
+            "Num_Economic_Damage": "CNY 24 million (US$3.5 million)",
+            "Economic_Damage_Units": "CNY, USD",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Total economic losses in Hainan Province reached CNY 24 million (US$3.5 million)."
+        }
+    ],
+    "Perils": "Wind|Rainfall|Flood",
+    "Perils_Assessment_With_Annotation": {
+        "Wind": "The Vietnam's National Center for Hydro-Meteorological Forecasting recorded wind gusts up to 100 km/h (62 mph) with wind damage being reported in Nghe An, Thanh H\u00f3a and Ha Tinh provinces.",
+        "Rainfall": "Over 400 mm (16 in) of rain fell in the central and northern parts of the country in the two days following up to landfall, while the capital, Hanoi, received 100 mm (3.9 in).",
+        "Flood": "During July 17, flooded streets and disrupted train services stranded more than 4,000 passengers in the capital."
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "around 2,700 houses",
+        "Total_Building_Damage_Annotation": "Throughout Vietnam, the storm killed 14 people and damaged around 2,700 houses."
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "Vietnam",
+            "Start_Date_Building_Damage": "July 16, 2017",
+            "End_Date_Building_Damage": "July 17, 2017",
+            "Num_Building_Damage": "around 2,700 houses",
+            "Building_Damage_with_annotation": "Throughout Vietnam, the storm killed 14 people and damaged around 2,700 houses."
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "Vietnam",
+            "Location_Building_Damage": [
+                "Nghe An Province"
+            ],
+            "Start_Date_Building_Damage": "July 16, 2017",
+            "End_Date_Building_Damage": "July 17, 2017",
+            "Num_Building_Damage": "more than 2,700 homes",
+            "Building_Damage_with_annotation": "According to the Central Steering Committee for Natural Disaster Prevention and Rescue, more than 2,700 homes were damaged in Nghe An Province."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "NULL",
+        "Total_Affected_Annotation": "NULL"
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "Vietnam",
+            "Start_Date_Affected": "July 16, 2017",
+            "End_Date_Affected": "July 17, 2017",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "NULL"
+        },
+        {
+            "Country": "China",
+            "Start_Date_Affected": "July 22, 2017",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "39,425",
+            "Affected_with_annotation": "About 22,901 fishing boats were moved while 39,425 people working at sea farms evacuated to Guangdong province."
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "Vietnam",
+            "Location_Affected": [
+                "Nghe An Province"
+            ],
+            "Start_Date_Affected": "July 16, 2017",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "According to the Central Steering Committee for Natural Disaster Prevention and Rescue, more than 2,700 homes were damaged in Nghe An Province."
+        },
+        {
+            "Country": "Vietnam",
+            "Location_Affected": [
+                "Qu\u1ea3ng B\u00ecnh Province"
+            ],
+            "Start_Date_Affected": "July 16, 2017",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "7",
+            "Affected_with_annotation": "In the Qu\u1ea3ng B\u00ecnh Province, fishing boats were washed ashore by waves as high as 5 m (16 ft); there, seven people were injured."
+        },
+        {
+            "Country": "Vietnam",
+            "Location_Affected": [
+                "Hanoi"
+            ],
+            "Start_Date_Affected": "July 17, 2017",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "4,000",
+            "Affected_with_annotation": "During July 17, flooded streets and disrupted train services stranded more than 4,000 passengers in the capital."
+        },
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "Guangdong province"
+            ],
+            "Start_Date_Affected": "July 22, 2017",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "39,425",
+            "Affected_with_annotation": "About 22,901 fishing boats were moved while 39,425 people working at sea farms evacuated to Guangdong province."
+        },
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "Guangdong province"
+            ],
+            "Start_Date_Affected": "July 22, 2017",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "49",
+            "Affected_with_annotation": "About 49 tourists were stranded from an island off the coast of Guandong."
+        }
+    ]
+}

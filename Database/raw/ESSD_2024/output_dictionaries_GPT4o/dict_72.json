@@ -1,0 +1,323 @@
+{
+    "Event_ID": "97.0",
+    "Source": "https://en.wikipedia.org/wiki/Tropical_Storm_Fran_(1984)",
+    "Event_Name": "Tropical Storm Fran (1984)   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "2,100",
+        "Total_Homelessness_Annotation": "The storm caused severe damage to at least 1,094 houses, which left at least 2,100 people homeless."
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "Cape Verde",
+            "Start_Date_Homelessness": "September 15, 1984",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "2,100",
+            "Homelessness_with_annotation": "The storm caused severe damage to at least 1,094 houses, which left at least 2,100 people homeless."
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "Cape Verde",
+            "Location_Homelessness": [
+                "Santo Ant\u00e3o",
+                "S\u00e3o Nicolau",
+                "Santiago"
+            ],
+            "Start_Date_Homelessness": "September 15, 1984",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "On Santo Ant\u00e3o, S\u00e3o Nicolau, and Santiago, agriculture also suffered losses, totaling to $1.84 million (1984 USD)."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "None reported",
+        "Total_Injury_Annotation": "The storm caused no impact outside of Cape Verde."
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "Cape Verde",
+            "Start_Date_Injury": "September 15, 1984",
+            "End_Date_Injury": "September 20, 1984",
+            "Num_Injury": "None reported",
+            "Injury_with_annotation": "The storm caused no impact outside of Cape Verde."
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "Cape Verde",
+            "Location_Injury": [
+                "Santo Ant\u00e3o",
+                "S\u00e3o Nicolau",
+                "Santiago",
+                "S\u00e3o Vicente",
+                "Fogo",
+                "Maio"
+            ],
+            "Start_Date_Injury": "September 15, 1984",
+            "End_Date_Injury": "September 20, 1984",
+            "Num_Injury": "None reported",
+            "Injury_with_annotation": "The storm caused no impact outside of Cape Verde."
+        }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Assessment_With_Annotation": "Tropical Storm Fran was one of the deadliest tropical cyclones in the history of Cape Verde. The sixth named storm and eleventh tropical cyclone of the 1984 Atlantic hurricane season, Fran developed from a tropical wave near Cape Verde on September 15.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "29-32",
+        "Total_Death_Annotation": "At least 29 people were killed, though some sources claim there were as many as 32 fatalities."
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "Cape Verde",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "29-32",
+            "Death_with_annotation": "At least 29 people were killed, though some sources claim there were as many as 32 fatalities."
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "Cape Verde",
+            "Location_Death": [
+                "NULL"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "29-32",
+            "Death_with_annotation": "At least 29 people were killed, though some sources claim there were as many as 32 fatalities."
+        }
+    ],
+    "Start_Date": "September 15, 1984",
+    "End_Date": "September 20, 1984",
+    "Time_with_Annotation": "Formed: September 15, 1984\nDissipated: September 20, 1984",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "$2.84 million",
+        "Total_Insured_Damage_Units": "USD",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "Overall, the storm caused at least $2.84 million (1984 USD) in damage."
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "Cape Verde",
+            "Total_Insured_Damage": "$2.84 million",
+            "Total_Insured_Damage_Units": "USD",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "Overall, the storm caused at least $2.84 million (1984 USD) in damage."
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "Cape Verde",
+            "Location_Insured_Damage": [
+                "Santo Ant\u00e3o",
+                "S\u00e3o Nicolau",
+                "Santiago"
+            ],
+            "Num_Insured_Damage": "$1.84 million",
+            "Insured_Damage_Units": "USD",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "On Santo Ant\u00e3o, S\u00e3o Nicolau, and Santiago, agriculture also suffered losses, totaling to $1.84 million (1984 USD)."
+        },
+        {
+            "Country": "Cape Verde",
+            "Location_Insured_Damage": [
+                "Santo Ant\u00e3o",
+                "Santiago",
+                "S\u00e3o Nicolau",
+                "S\u00e3o Vicente",
+                "Fogo",
+                "Maio"
+            ],
+            "Num_Insured_Damage": "$1 million",
+            "Insured_Damage_Units": "USD",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "The hydraulic infrastructure on Santo Ant\u00e3o, Santiago, S\u00e3o Nicolau, S\u00e3o Vicente, Fogo, and Maio was destroyed and cost about $1 million (1984 USD) to repair."
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "2,100 people",
+        "Total_Displacement_Annotation": "The storm caused severe damage to at least 1,094 houses, which left at least 2,100 people homeless."
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "Cape Verde",
+            "Start_Date_Displacement": "September 15, 1984",
+            "End_Date_Displacement": "September 20, 1984",
+            "Num_Displacement": "2,100 people",
+            "Displacement_with_annotation": "The storm caused severe damage to at least 1,094 houses, which left at least 2,100 people homeless."
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "Cape Verde",
+            "Location_Displacement": [
+                "Santo Ant\u00e3o",
+                "S\u00e3o Nicolau",
+                "Santiago"
+            ],
+            "Start_Date_Displacement": "September 15, 1984",
+            "End_Date_Displacement": "September 20, 1984",
+            "Num_Displacement": "2,100 people",
+            "Displacement_with_annotation": "The storm caused severe damage to at least 1,094 houses, which left at least 2,100 people homeless."
+        }
+    ],
+    "Location": [
+        "Cape Verde",
+        "Santo Ant\u00e3o",
+        "S\u00e3o Nicolau",
+        "Santiago",
+        "S\u00e3o Vicente",
+        "Fogo",
+        "Maio"
+    ],
+    "Location_with_Annotation": {
+        "Cape Verde": "Tropical Storm Fran was one of the deadliest tropical cyclones in the history of Cape Verde.",
+        "Santo Ant\u00e3o": "On Santo Ant\u00e3o, S\u00e3o Nicolau, and Santiago, agriculture also suffered losses, totaling to $1.84 million (1984 USD).",
+        "S\u00e3o Nicolau": "On Santo Ant\u00e3o, S\u00e3o Nicolau, and Santiago, agriculture also suffered losses, totaling to $1.84 million (1984 USD).",
+        "Santiago": "On Santo Ant\u00e3o, S\u00e3o Nicolau, and Santiago, agriculture also suffered losses, totaling to $1.84 million (1984 USD).",
+        "S\u00e3o Vicente": "The hydraulic infrastructure on Santo Ant\u00e3o, Santiago, S\u00e3o Nicolau, S\u00e3o Vicente, Fogo, and Maio was destroyed and cost about $1 million (1984 USD) to repair.",
+        "Fogo": "The hydraulic infrastructure on Santo Ant\u00e3o, Santiago, S\u00e3o Nicolau, S\u00e3o Vicente, Fogo, and Maio was destroyed and cost about $1 million (1984 USD) to repair.",
+        "Maio": "The hydraulic infrastructure on Santo Ant\u00e3o, Santiago, S\u00e3o Nicolau, S\u00e3o Vicente, Fogo, and Maio was destroyed and cost about $1 million (1984 USD) to repair."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "2.84 million",
+        "Total_Economic_Damage_Units": "USD",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "Overall, the storm caused about $2.84 million (1984 USD) in damage and between 29 and 32 fatalities."
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "Cape Verde",
+            "Total_Economic_Damage": "2.84 million",
+            "Total_Economic_Damage_Units": "USD",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Overall, the storm caused about $2.84 million (1984 USD) in damage and between 29 and 32 fatalities."
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "Cape Verde",
+            "Location_Economic_Damage": [
+                "Santo Ant\u00e3o",
+                "S\u00e3o Nicolau",
+                "Santiago"
+            ],
+            "Num_Economic_Damage": "1.84 million",
+            "Economic_Damage_Units": "USD",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "On Santo Ant\u00e3o, S\u00e3o Nicolau, and Santiago, agriculture also suffered losses, totaling to $1.84 million (1984 USD)."
+        },
+        {
+            "Country": "Cape Verde",
+            "Location_Economic_Damage": [
+                "Santo Ant\u00e3o",
+                "Santiago",
+                "S\u00e3o Nicolau",
+                "S\u00e3o Vicente",
+                "Fogo",
+                "Maio"
+            ],
+            "Num_Economic_Damage": "1 million",
+            "Economic_Damage_Units": "USD",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "The hydraulic infrastructure on Santo Ant\u00e3o, Santiago, S\u00e3o Nicolau, S\u00e3o Vicente, Fogo, and Maio was destroyed and cost about $1 million (1984 USD) to repair."
+        }
+    ],
+    "Perils": "Wind|Rainfall|Flood",
+    "Perils_Assessment_With_Annotation": {
+        "Wind": "Light winds were reported in Cape Verde; some weather stations recorded winds of 35 miles per hour (56 km/h). As a result, wind damage was minimal.",
+        "Rainfall": "While passing southeast of Cape Verde, Fran dropped torrential rainfall on the islands, which caused significant flooding.",
+        "Flood": "While passing southeast of Cape Verde, Fran dropped torrential rainfall on the islands, which caused significant flooding."
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "at least 1,094 houses",
+        "Total_Building_Damage_Annotation": "The storm caused severe damage to at least 1,094 houses, which left at least 2,100 people homeless."
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "Cape Verde",
+            "Start_Date_Building_Damage": "September 15, 1984",
+            "End_Date_Building_Damage": "September 20, 1984",
+            "Num_Building_Damage": "at least 1,094 houses",
+            "Building_Damage_with_annotation": "The storm caused severe damage to at least 1,094 houses, which left at least 2,100 people homeless."
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "Cape Verde",
+            "Location_Building_Damage": [
+                "Santo Ant\u00e3o",
+                "S\u00e3o Nicolau",
+                "Santiago"
+            ],
+            "Start_Date_Building_Damage": "September 15, 1984",
+            "End_Date_Building_Damage": "September 20, 1984",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "On Santo Ant\u00e3o, S\u00e3o Nicolau, and Santiago, agriculture also suffered losses, totaling to $1.84 million (1984 USD)."
+        },
+        {
+            "Country": "Cape Verde",
+            "Location_Building_Damage": [
+                "Santo Ant\u00e3o",
+                "Santiago",
+                "S\u00e3o Nicolau",
+                "S\u00e3o Vicente",
+                "Fogo",
+                "Maio"
+            ],
+            "Start_Date_Building_Damage": "September 15, 1984",
+            "End_Date_Building_Damage": "September 20, 1984",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "The hydraulic infrastructure on Santo Ant\u00e3o, Santiago, S\u00e3o Nicolau, S\u00e3o Vicente, Fogo, and Maio was destroyed and cost about $1 million (1984 USD) to repair."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "at least 2,100 people",
+        "Total_Affected_Annotation": "The storm caused severe damage to at least 1,094 houses, which left at least 2,100 people homeless."
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "Cape Verde",
+            "Start_Date_Affected": "September 15, 1984",
+            "End_Date_Affected": "September 20, 1984",
+            "Num_Affected": "at least 2,100 people",
+            "Affected_with_annotation": "The storm caused severe damage to at least 1,094 houses, which left at least 2,100 people homeless."
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "Cape Verde",
+            "Location_Affected": [
+                "Santo Ant\u00e3o",
+                "S\u00e3o Nicolau",
+                "Santiago"
+            ],
+            "Start_Date_Affected": "September 15, 1984",
+            "End_Date_Affected": "September 20, 1984",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "On Santo Ant\u00e3o, S\u00e3o Nicolau, and Santiago, agriculture also suffered losses, totaling to $1.84 million (1984 USD)."
+        },
+        {
+            "Country": "Cape Verde",
+            "Location_Affected": [
+                "Santo Ant\u00e3o",
+                "Santiago",
+                "S\u00e3o Nicolau",
+                "S\u00e3o Vicente",
+                "Fogo",
+                "Maio"
+            ],
+            "Start_Date_Affected": "September 15, 1984",
+            "End_Date_Affected": "September 20, 1984",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "The hydraulic infrastructure on Santo Ant\u00e3o, Santiago, S\u00e3o Nicolau, S\u00e3o Vicente, Fogo, and Maio was destroyed and cost about $1 million (1984 USD) to repair."
+        }
+    ]
+}

@@ -1,0 +1,453 @@
+{
+    "Event_ID": "77.0",
+    "Source": "https://en.wikipedia.org/wiki/Tropical_Storm_Delfina",
+    "Event_Name": "Tropical Storm Delfina   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "thousands",
+        "Total_Homelessness_Annotation": "In both Mozambique and Malawi, Delfina dropped heavy rainfall that caused flooding. In the former country, over 18,000 houses were severely damaged or destroyed, leaving thousands homeless."
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "Mozambique",
+            "Start_Date_Homelessness": "December 31, 2002",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "thousands",
+            "Homelessness_with_annotation": "In both Mozambique and Malawi, Delfina dropped heavy rainfall that caused flooding. In the former country, over 18,000 houses were severely damaged or destroyed, leaving thousands homeless."
+        },
+        {
+            "Country": "Malawi",
+            "Start_Date_Homelessness": "January 2, 2003",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "30,000",
+            "Homelessness_with_annotation": "The storm destroyed about 3,600 houses; which forced about 30,000 people to leave their homes."
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "Mozambique",
+            "Location_Homelessness": [
+                "Nampula"
+            ],
+            "Start_Date_Homelessness": "December 31, 2002",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "22,000",
+            "Homelessness_with_annotation": "The cyclone destroyed or severely damaged over 18,000 houses, which directly affected about 133,000 people, mostly in Nampula where 22,000 people were displaced."
+        },
+        {
+            "Country": "Mozambique",
+            "Location_Homelessness": [
+                "Ligonha River"
+            ],
+            "Start_Date_Homelessness": "December 31, 2002",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "1,800",
+            "Homelessness_with_annotation": "Floods along the Ligonha River forced 1,800 people to leave their homes."
+        },
+        {
+            "Country": "Malawi",
+            "Location_Homelessness": [
+                "Balaka District"
+            ],
+            "Start_Date_Homelessness": "January 2, 2003",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "Delfina damaged roads, and destroyed one rail bridge in Balaka District."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "NULL",
+        "Total_Injury_Annotation": "NULL"
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "Mozambique",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "Malawi",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "Mozambique",
+            "Location_Injury": [
+                "Nampula"
+            ],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "Mozambique",
+            "Location_Injury": [
+                "Monapo"
+            ],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Assessment_With_Annotation": "Severe Tropical Storm Delfina was a damaging tropical cyclone that affected southeastern Africa in January 2003.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "54",
+        "Total_Death_Annotation": "Fatalities: 54 direct"
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "Mozambique",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "47",
+            "Death_with_annotation": "The storm caused 47 deaths in the country"
+        },
+        {
+            "Country": "Malawi",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "8",
+            "Death_with_annotation": "Delfina killed eight people in Malawi"
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "Mozambique",
+            "Location_Death": [
+                "Nampula",
+                "Zambezia"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "19",
+            "Death_with_annotation": "at least 19 due to flooding"
+        },
+        {
+            "Country": "Mozambique",
+            "Location_Death": [
+                "Nampula",
+                "Zambezia"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "12",
+            "Death_with_annotation": "By January 27, 12 people had died from the disease"
+        },
+        {
+            "Country": "Mozambique",
+            "Location_Death": [
+                "Nampula",
+                "Zambezia"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "45",
+            "Death_with_annotation": "Flooding also caused a malaria outbreak that killed 45 people in the country"
+        },
+        {
+            "Country": "Malawi",
+            "Location_Death": [
+                "Balaka District"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "8",
+            "Death_with_annotation": "Delfina killed eight people in Malawi"
+        }
+    ],
+    "Start_Date": "December 30, 2002",
+    "End_Date": "January 1, 2003",
+    "Time_with_Annotation": "Formed: December 30, 2002\nDissipated: January 1, 2003",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "$3.5 million",
+        "Total_Insured_Damage_Units": "USD",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "Overall, Delfina resulted in $3.5 million in damage (2003 USD)."
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "Mozambique",
+            "Total_Insured_Damage": "$3.5 million",
+            "Total_Insured_Damage_Units": "USD",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "Overall, Delfina resulted in $3.5 million in damage (2003 USD)."
+        },
+        {
+            "Country": "Malawi",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "Mozambique",
+            "Location_Insured_Damage": [
+                "Nampula",
+                "Zambezia"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "NULL",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Delfina washed out roads and bridges in Nampula and Zambezia provinces, which isolated towns and disrupted the transportation network."
+        },
+        {
+            "Country": "Malawi",
+            "Location_Insured_Damage": [
+                "Balaka District"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "NULL",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Delfina damaged roads, and destroyed one rail bridge in Balaka District."
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "NULL",
+        "Total_Displacement_Annotation": "NULL"
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "Mozambique",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        },
+        {
+            "Country": "Malawi",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "Mozambique",
+            "Location_Displacement": [
+                "Nampula"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "22,000",
+            "Displacement_with_annotation": "The cyclone destroyed or severely damaged over 18,000 houses, which directly affected about 133,000 people, mostly in Nampula where 22,000 people were displaced."
+        },
+        {
+            "Country": "Mozambique",
+            "Location_Displacement": [
+                "Ligonha River"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "1,800",
+            "Displacement_with_annotation": "Floods along the Ligonha River forced 1,800 people to leave their homes."
+        },
+        {
+            "Country": "Malawi",
+            "Location_Displacement": [
+                "NULL"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "30,000",
+            "Displacement_with_annotation": "The storm destroyed about 3,600 houses; which forced about 30,000 people to leave their homes."
+        }
+    ],
+    "Location": [
+        "Mozambique",
+        "Malawi",
+        "Nampula",
+        "Zambezia",
+        "Monapo",
+        "Angoche",
+        "Balaka District"
+    ],
+    "Location_with_Annotation": {
+        "Mozambique": "Severe Tropical Storm Delfina was a damaging tropical cyclone that affected southeastern Africa in January 2003.",
+        "Malawi": "In both Mozambique and Malawi, Delfina dropped heavy rainfall that caused flooding.",
+        "Nampula": "A station in Nampula reported 281 mm (11.1 in) in a 48\u2011hour period.",
+        "Zambezia": "Delfina washed out roads and bridges in Nampula and Zambezia provinces.",
+        "Monapo": "In Monapo, there were water shortages after the storm.",
+        "Angoche": "At about 2130 UTC, Delfina made landfall near Angoche in eastern Mozambique.",
+        "Balaka District": "The storm destroyed one rail bridge in Balaka District."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "3.5 million",
+        "Total_Economic_Damage_Units": "USD",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "Overall, Delfina resulted in $3.5 million in damage (2003 USD)."
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "Mozambique",
+            "Total_Economic_Damage": "3.5 million",
+            "Total_Economic_Damage_Units": "USD",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Overall, Delfina resulted in $3.5 million in damage (2003 USD)."
+        },
+        {
+            "Country": "Malawi",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "Mozambique",
+            "Location_Economic_Damage": [
+                "Nampula",
+                "Zambezia",
+                "Monapo"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "NULL",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": [
+                "Delfina washed out roads and bridges in Nampula and Zambezia provinces.",
+                "The cyclone destroyed or severely damaged over 18,000 houses.",
+                "The storm caused a power outage in Nampula for several days, and in Monapo, there were water shortages after the storm.",
+                "The cyclone destroyed over 2,000 ha (4,900 acres) of beans and cassava crops and knocked down thousands of cashew trees."
+            ]
+        },
+        {
+            "Country": "Malawi",
+            "Location_Economic_Damage": [
+                "Balaka District"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "NULL",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": [
+                "Delfina damaged roads, and destroyed one rail bridge in Balaka District.",
+                "The storm destroyed about 3,600 houses; which forced about 30,000 people to leave their homes.",
+                "The floods affected 57,000 properties, damaging 23,500 ha (58,000 acres) in the midst of a food shortage."
+            ]
+        }
+    ],
+    "Perils": "Wind|Rainfall|Flood",
+    "Perils_Assessment_With_Annotation": {
+        "Wind": "Upon striking Mozambique, Delfina produced strong winds and heavy rains",
+        "Rainfall": "Upon striking Mozambique, Delfina produced strong winds and heavy rains",
+        "Flood": "Delfina dropped heavy rainfall that caused flooding. In the former country, over 18,000 houses were severely damaged or destroyed, leaving thousands homeless. The storm damaged roads and bridges, which disrupted relief efforts in the aftermath, and floods destroyed widespread areas of crops in the midst of an ongoing food shortage. Lingering flooding caused an outbreak of cholera and malaria in Mozambique, and 47 people were killed by Delfina. In Malawi, flooding was not widespread, although the storm destroyed about 3,600 houses and killed eight people."
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "over 21,600",
+        "Total_Building_Damage_Annotation": "The cyclone destroyed or severely damaged over 18,000 houses... In neighboring Malawi, the storm's remnants... destroyed about 3,600 houses."
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "Mozambique",
+            "Start_Date_Building_Damage": "December 31, 2002",
+            "End_Date_Building_Damage": "January 1, 2003",
+            "Num_Building_Damage": "over 18,000",
+            "Building_Damage_with_annotation": "The cyclone destroyed or severely damaged over 18,000 houses."
+        },
+        {
+            "Country": "Malawi",
+            "Start_Date_Building_Damage": "January 2, 2003",
+            "End_Date_Building_Damage": "January 9, 2003",
+            "Num_Building_Damage": "about 3,600",
+            "Building_Damage_with_annotation": "In neighboring Malawi, the storm's remnants... destroyed about 3,600 houses."
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "Mozambique",
+            "Location_Building_Damage": [
+                "Nampula",
+                "Zambezia",
+                "Monapo"
+            ],
+            "Start_Date_Building_Damage": "December 31, 2002",
+            "End_Date_Building_Damage": "January 1, 2003",
+            "Num_Building_Damage": "over 18,000",
+            "Building_Damage_with_annotation": "The cyclone destroyed or severely damaged over 18,000 houses... mostly in Nampula where 22,000 people were displaced... In Nampula and Zambezia, Delfina damaged four health facilities and 376 schools... in Monapo, there were water shortages after the storm."
+        },
+        {
+            "Country": "Malawi",
+            "Location_Building_Damage": [
+                "Balaka District"
+            ],
+            "Start_Date_Building_Damage": "January 2, 2003",
+            "End_Date_Building_Damage": "January 9, 2003",
+            "Num_Building_Damage": "about 3,600",
+            "Building_Damage_with_annotation": "In neighboring Malawi, the storm's remnants... destroyed about 3,600 houses... Delfina damaged roads, and destroyed one rail bridge in Balaka District."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "163,000",
+        "Total_Affected_Annotation": "The cyclone destroyed or severely damaged over 18,000 houses, which directly affected about 133,000 people, mostly in Nampula where 22,000 people were displaced. The floods affected 57,000 properties, damaging 23,500 ha (58,000 acres) in the midst of a food shortage."
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "Mozambique",
+            "Start_Date_Affected": "December 31, 2002",
+            "End_Date_Affected": "January 1, 2003",
+            "Num_Affected": "133,000",
+            "Affected_with_annotation": "The cyclone destroyed or severely damaged over 18,000 houses, which directly affected about 133,000 people, mostly in Nampula where 22,000 people were displaced."
+        },
+        {
+            "Country": "Malawi",
+            "Start_Date_Affected": "January 2, 2003",
+            "End_Date_Affected": "January 11, 2003",
+            "Num_Affected": "30,000",
+            "Affected_with_annotation": "The storm destroyed about 3,600 houses; which forced about 30,000 people to leave their homes."
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "Mozambique",
+            "Location_Affected": [
+                "Nampula",
+                "Zambezia",
+                "Monapo"
+            ],
+            "Start_Date_Affected": "December 31, 2002",
+            "End_Date_Affected": "January 1, 2003",
+            "Num_Affected": "22,000",
+            "Affected_with_annotation": "The cyclone destroyed or severely damaged over 18,000 houses, which directly affected about 133,000 people, mostly in Nampula where 22,000 people were displaced."
+        },
+        {
+            "Country": "Mozambique",
+            "Location_Affected": [
+                "Ligonha River"
+            ],
+            "Start_Date_Affected": "December 31, 2002",
+            "End_Date_Affected": "January 1, 2003",
+            "Num_Affected": "1,800",
+            "Affected_with_annotation": "Floods along the Ligonha River forced 1,800 people to leave their homes."
+        },
+        {
+            "Country": "Malawi",
+            "Location_Affected": [
+                "Balaka District"
+            ],
+            "Start_Date_Affected": "January 2, 2003",
+            "End_Date_Affected": "January 11, 2003",
+            "Num_Affected": "30,000",
+            "Affected_with_annotation": "The storm destroyed about 3,600 houses; which forced about 30,000 people to leave their homes."
+        }
+    ]
+}

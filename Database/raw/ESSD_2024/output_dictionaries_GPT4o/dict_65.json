@@ -1,0 +1,356 @@
+{
+    "Event_ID": "73.0",
+    "Source": "https://en.wikipedia.org/wiki/2003_Canberra_bushfires",
+    "Event_Name": "2003 Canberra bushfires   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "470 homes were destroyed or severely damaged",
+        "Total_Homelessness_Annotation": "Over the next ten hours, four people died, over 490 were injured, and 470 homes were destroyed or severely damaged, requiring a significant relief and reconstruction effort."
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "Australia",
+            "Start_Date_Homelessness": "18 January 2003",
+            "End_Date_Homelessness": "22 January 2003",
+            "Num_Homelessness": "470 homes were destroyed or severely damaged",
+            "Homelessness_with_annotation": "Over the next ten hours, four people died, over 490 were injured, and 470 homes were destroyed or severely damaged, requiring a significant relief and reconstruction effort."
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "Australia",
+            "Location_Homelessness": [
+                "Duffy",
+                "Chapman",
+                "Kambah",
+                "Holder",
+                "Rivett",
+                "Uriarra",
+                "Torrens",
+                "Weston"
+            ],
+            "Start_Date_Homelessness": "18 January 2003",
+            "End_Date_Homelessness": "22 January 2003",
+            "Num_Homelessness": "200+ residences were destroyed in Duffy",
+            "Homelessness_with_annotation": "By the evening of 19 January, it was clear that the worst-hit suburb was Duffy, where 200+ residences were destroyed."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "435",
+        "Total_Injury_Annotation": "Over the next ten hours, four people died, over 490 were injured, and 470 homes were destroyed or severely damaged, requiring a significant relief and reconstruction effort."
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "Australia",
+            "Start_Date_Injury": "18 January 2003",
+            "End_Date_Injury": "22 January 2003",
+            "Num_Injury": "435",
+            "Injury_with_annotation": "Over the next ten hours, four people died, over 490 were injured, and 470 homes were destroyed or severely damaged, requiring a significant relief and reconstruction effort."
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "Australia",
+            "Location_Injury": [
+                "Canberra"
+            ],
+            "Start_Date_Injury": "18 January 2003",
+            "End_Date_Injury": "22 January 2003",
+            "Num_Injury": "435",
+            "Injury_with_annotation": "Over the next ten hours, four people died, over 490 were injured, and 470 homes were destroyed or severely damaged, requiring a significant relief and reconstruction effort."
+        },
+        {
+            "Country": "Australia",
+            "Location_Injury": [
+                "Bendora Dam"
+            ],
+            "Start_Date_Injury": "13 January 2003",
+            "End_Date_Injury": "13 January 2003",
+            "Num_Injury": "1",
+            "Injury_with_annotation": "On 13 January, a Bell Jet Ranger helicopter that had been waterbombing the fires in the forests west of Canberra crashed into Bendora Dam with one person, pilot Duncan Patrick, injured."
+        }
+    ],
+    "Main_Event": "Wildfire",
+    "Main_Event_Assessment_With_Annotation": "The 2003 Canberra bushfires caused severe damage to the suburbs and outer areas of Canberra, the capital city of Australia, during 18\u201322 January 2003. Almost 70% of the Australian Capital Territory's (ACT) pastures, pine plantations, and nature parks were severely damaged, and most of the Mount Stromlo Observatory was destroyed.",
+    "Total_Summary_Death": {
+        "Total_Deaths": 4,
+        "Total_Death_Annotation": "Over the next ten hours, four people died, over 490 were injured, and 470 homes were destroyed or severely damaged, requiring a significant relief and reconstruction effort."
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "Australia",
+            "Start_Date_Death": "18 January 2003",
+            "End_Date_Death": "19 January 2003",
+            "Num_Death": 4,
+            "Death_with_annotation": "Over the next ten hours, four people died, over 490 were injured, and 470 homes were destroyed or severely damaged, requiring a significant relief and reconstruction effort."
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "Australia",
+            "Location_Death": [
+                "Mount Stromlo Forestry Settlement"
+            ],
+            "Start_Date_Death": "18 January 2003",
+            "End_Date_Death": "19 January 2003",
+            "Num_Death": 1,
+            "Death_with_annotation": "It was later found that the first casualty of the fires, an elderly woman named Dorothy McGrath, had died at the nearby Stromlo Forestry Settlement."
+        },
+        {
+            "Country": "Australia",
+            "Location_Death": [
+                "Duffy"
+            ],
+            "Start_Date_Death": "18 January 2003",
+            "End_Date_Death": "19 January 2003",
+            "Num_Death": 3,
+            "Death_with_annotation": "By the evening of 19 January, it was clear that the worst-hit suburb was Duffy, where 200+ residences were destroyed, and that four people had died: Alison Tener, 38, Peter Brooke, 74, and Douglas Fraser, 60, and Dorothy McGrath, 76, of the Mount Stromlo Forestry Settlement."
+        }
+    ],
+    "Start_Date": "2003-01-08",
+    "End_Date": "2003-01-22",
+    "Time_with_Annotation": "The 2003 Canberra bushfires caused severe damage to the suburbs and outer areas of Canberra, the capital city of Australia, during 18\u201322 January 2003. On 8 January 2003, lightning strikes started four fires in New South Wales, over the border but in close proximity to Canberra.",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "75 million",
+        "Total_Insured_Damage_Units": "AUD",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "The insurance payment sought by the Australian National University (ANU), amounting to 75 million Australian dollars, could have become the largest insurance claim in Australian history."
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "Australia",
+            "Total_Insured_Damage": "75 million",
+            "Total_Insured_Damage_Units": "AUD",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "The insurance payment sought by the Australian National University (ANU), amounting to 75 million Australian dollars, could have become the largest insurance claim in Australian history."
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "Australia",
+            "Location_Insured_Damage": [
+                "Mount Stromlo Observatory"
+            ],
+            "Num_Insured_Damage": "75 million",
+            "Insured_Damage_Units": "AUD",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "The insurance payment sought by the Australian National University (ANU), amounting to 75 million Australian dollars, could have become the largest insurance claim in Australian history."
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "NULL",
+        "Total_Displacement_Annotation": "NULL"
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "Australia",
+            "Start_Date_Displacement": "18 January 2003",
+            "End_Date_Displacement": "19 January 2003",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "By 10 pm, one of the four evacuation centres in Canberra was completely full, and the others were filling up quickly."
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "Australia",
+            "Location_Displacement": [
+                "Canberra"
+            ],
+            "Start_Date_Displacement": "18 January 2003",
+            "End_Date_Displacement": "19 January 2003",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "By 10 pm, one of the four evacuation centres in Canberra was completely full, and the others were filling up quickly."
+        },
+        {
+            "Country": "Australia",
+            "Location_Displacement": [
+                "Tharwa"
+            ],
+            "Start_Date_Displacement": "18 January 2003",
+            "End_Date_Displacement": "18 January 2003",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "At around 2 pm, police evacuated the township of Tharwa to the south of Canberra."
+        }
+    ],
+    "Location": [
+        "Canberra",
+        "Weston Creek",
+        "Kambah",
+        "Tuggeranong",
+        "Duffy",
+        "Chapman",
+        "Holder",
+        "Rivett",
+        "Uriarra",
+        "Stromlo",
+        "Tharwa",
+        "Lanyon Homestead",
+        "Michelago",
+        "Giralang",
+        "Mount Taylor",
+        "Torrens",
+        "Weston",
+        "Curtin",
+        "Lower Molonglo Water Quality Control Centre",
+        "Mount Stromlo Observatory"
+    ],
+    "Location_with_Annotation": {
+        "Canberra": "The 2003 Canberra bushfires caused severe damage to the suburbs and outer areas of Canberra, the capital city of Australia, during 18\u201322 January 2003.",
+        "Weston Creek": "By 9 am on the morning of Saturday 18 January, burned leaves appeared on lawns in houses in the Weston Creek, Kambah, and Tuggeranong suburbs bordering the western extremity of Canberra.",
+        "Kambah": "By 9 am on the morning of Saturday 18 January, burned leaves appeared on lawns in houses in the Weston Creek, Kambah, and Tuggeranong suburbs bordering the western extremity of Canberra.",
+        "Tuggeranong": "By 9 am on the morning of Saturday 18 January, burned leaves appeared on lawns in houses in the Weston Creek, Kambah, and Tuggeranong suburbs bordering the western extremity of Canberra.",
+        "Duffy": "By 5 pm, houses were reported destroyed in Duffy, Chapman, Kambah, Holder, and Rivett, as well as in the small forestry settlement of Uriarra.",
+        "Chapman": "By 5 pm, houses were reported destroyed in Duffy, Chapman, Kambah, Holder, and Rivett, as well as in the small forestry settlement of Uriarra.",
+        "Holder": "By 5 pm, houses were reported destroyed in Duffy, Chapman, Kambah, Holder, and Rivett, as well as in the small forestry settlement of Uriarra.",
+        "Rivett": "By 5 pm, houses were reported destroyed in Duffy, Chapman, Kambah, Holder, and Rivett, as well as in the small forestry settlement of Uriarra.",
+        "Uriarra": "By 5 pm, houses were reported destroyed in Duffy, Chapman, Kambah, Holder, and Rivett, as well as in the small forestry settlement of Uriarra.",
+        "Stromlo": "By mid-afternoon, it had become apparent that the fires posed an immediate threat to the settlements near Canberra, such as Uriarra and Stromlo, as well as to the houses on the city's urban-bushland interface.",
+        "Tharwa": "At around 2 pm, police evacuated the township of Tharwa to the south of Canberra.",
+        "Lanyon Homestead": "By now, the fire had reached the fringes of many suburbs, was surrounding Tharwa, and threatened the historic Lanyon Homestead, which was hosting a wedding and protected by only a single fire truck.",
+        "Michelago": "Fires in the Michelago area forced the closure of the Monaro Highway into Canberra.",
+        "Giralang": "Fires also started in Giralang because of powerline problems.",
+        "Mount Taylor": "Fire spread through parkland, crossing the Tuggeranong Parkway and Sulwood Drive finally engulfing Mount Taylor.",
+        "Torrens": "Within an hour, houses were also burning in Torrens, on the slopes of Mount Taylor, and in Weston.",
+        "Weston": "Within an hour, houses were also burning in Torrens, on the slopes of Mount Taylor, and in Weston.",
+        "Curtin": "In Curtin, the ESA headquarters was in danger from the fires.",
+        "Lower Molonglo Water Quality Control Centre": "The fires impacted part of the Lower Molonglo Water Quality Control Centre (LMWQCC), responsible for treating the city's sewage and waste water before its release into the Molonglo River.",
+        "Mount Stromlo Observatory": "Perhaps the most notable cultural and scientific loss caused by the fires was the damage to the scenic and renowned Mount Stromlo Observatory (headquarters of the Research School of Astronomy & Astrophysics of the Australian National University), which is estimated to be the source of a third of Australia's astronomical research."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "350 million",
+        "Total_Economic_Damage_Units": "AUD",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "Damage: $350 million"
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "Australia",
+            "Total_Economic_Damage": "350 million",
+            "Total_Economic_Damage_Units": "AUD",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Damage: $350 million"
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "Australia",
+            "Location_Economic_Damage": [
+                "Canberra",
+                "Mount Stromlo Observatory"
+            ],
+            "Num_Economic_Damage": "75 million",
+            "Economic_Damage_Units": "AUD",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "The insurance payment sought by the Australian National University (ANU), amounting to 75 million Australian dollars, could have become the largest insurance claim in Australian history."
+        }
+    ],
+    "Perils": "Lightning|Wildfire|Heatwave|Wind",
+    "Perils_Assessment_With_Annotation": {
+        "Lightning": "On 8 January 2003, lightning strikes started four fires in New South Wales, over the border but in close proximity to Canberra.",
+        "Wildfire": "The 2003 Canberra bushfires caused severe damage to the suburbs and outer areas of Canberra, the capital city of Australia, during 18\u201322 January 2003.",
+        "Heatwave": "The morning of Saturday 18 January 2003 was hot, windy and dry. Temperatures as high as 40 \u00b0C (104 \u00b0F)...",
+        "Wind": "The morning of Saturday 18 January 2003 was hot, windy and dry. Temperatures as high as 40 \u00b0C (104 \u00b0F) and winds exceeding 80 kilometres per hour (50 miles per hour)..."
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "488",
+        "Total_Building_Damage_Annotation": "Structures destroyed: 488"
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "Australia",
+            "Start_Date_Building_Damage": "18 January 2003",
+            "End_Date_Building_Damage": "22 January 2003",
+            "Num_Building_Damage": "488",
+            "Building_Damage_with_annotation": "The 2003 Canberra bushfires caused severe damage to the suburbs and outer areas of Canberra, the capital city of Australia, during 18\u201322 January 2003. Structures destroyed: 488"
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "Australia",
+            "Location_Building_Damage": [
+                "Duffy",
+                "Chapman",
+                "Kambah",
+                "Holder",
+                "Rivett",
+                "Uriarra",
+                "Torrens",
+                "Weston"
+            ],
+            "Start_Date_Building_Damage": "18 January 2003",
+            "End_Date_Building_Damage": "22 January 2003",
+            "Num_Building_Damage": "470",
+            "Building_Damage_with_annotation": "Over the next ten hours, four people died, over 490 were injured, and 470 homes were destroyed or severely damaged, requiring a significant relief and reconstruction effort."
+        },
+        {
+            "Country": "Australia",
+            "Location_Building_Damage": [
+                "Mount Stromlo Observatory"
+            ],
+            "Start_Date_Building_Damage": "18 January 2003",
+            "End_Date_Building_Damage": "22 January 2003",
+            "Num_Building_Damage": "5",
+            "Building_Damage_with_annotation": "Five historically significant telescopes were destroyed. Instrumentation and engineering workshops, the observatory's library, and the main administration buildings were consumed."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "NULL",
+        "Total_Affected_Annotation": "NULL"
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "Australia",
+            "Start_Date_Affected": "18 January 2003",
+            "End_Date_Affected": "22 January 2003",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "Australia",
+            "Location_Affected": [
+                "Canberra"
+            ],
+            "Start_Date_Affected": "18 January 2003",
+            "End_Date_Affected": "22 January 2003",
+            "Num_Affected": "4 deaths",
+            "Affected_with_annotation": "Over the next ten hours, four people died."
+        },
+        {
+            "Country": "Australia",
+            "Location_Affected": [
+                "Canberra"
+            ],
+            "Start_Date_Affected": "18 January 2003",
+            "End_Date_Affected": "22 January 2003",
+            "Num_Affected": "435 non-fatal injuries",
+            "Affected_with_annotation": "Over 490 were injured."
+        },
+        {
+            "Country": "Australia",
+            "Location_Affected": [
+                "Canberra"
+            ],
+            "Start_Date_Affected": "18 January 2003",
+            "End_Date_Affected": "22 January 2003",
+            "Num_Affected": "470 homes destroyed or severely damaged",
+            "Affected_with_annotation": "470 homes were destroyed or severely damaged."
+        },
+        {
+            "Country": "Australia",
+            "Location_Affected": [
+                "Canberra"
+            ],
+            "Start_Date_Affected": "18 January 2003",
+            "End_Date_Affected": "22 January 2003",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "The loss of life, damage to property, and destruction of forests to the west of the city caused not just economic loss but significant social impacts."
+        }
+    ]
+}

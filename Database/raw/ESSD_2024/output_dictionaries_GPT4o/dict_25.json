@@ -1,0 +1,609 @@
+{
+    "Event_ID": "83.0",
+    "Source": "https://en.wikipedia.org/wiki/Typhoon_Dot_(1985)",
+    "Event_Name": "Typhoon Dot (1985)   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "125,000",
+        "Total_Homelessness_Annotation": "Overall, 42 towns were flooded, forcing a total of 125,000 people to flee their homes, 35,000 of which were homeless."
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Homelessness": "October 18, 1985",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "125,000",
+            "Homelessness_with_annotation": "Overall, 42 towns were flooded, forcing a total of 125,000 people to flee their homes, 35,000 of which were homeless."
+        },
+        {
+            "Country": "China",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "NULL"
+        },
+        {
+            "Country": "Vietnam",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "Philippines",
+            "Location_Homelessness": [
+                "Nueva Ecija"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "35,000",
+            "Homelessness_with_annotation": "Overall, 42 towns were flooded, forcing a total of 125,000 people to flee their homes, 35,000 of which were homeless."
+        },
+        {
+            "Country": "Philippines",
+            "Location_Homelessness": [
+                "Cabanatuan"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "Seven fatalities occurred in Cabanatuan, where 2,500 homes were demolished and 22,000 were damaged."
+        },
+        {
+            "Country": "Philippines",
+            "Location_Homelessness": [
+                "Manila"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "29,000",
+            "Homelessness_with_annotation": "Flooding in low-lying areas of Manila forced the evacuation of 29,000."
+        },
+        {
+            "Country": "Philippines",
+            "Location_Homelessness": [
+                "Pampanga",
+                "Tarlac",
+                "Nueva Ecija"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "69,000",
+            "Homelessness_with_annotation": "Elsewhere, 69,000 houses were flooded in Pampanga, Tarlac, and Nueva Ecija."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "58",
+        "Total_Injury_Annotation": "Nationwide, 24 were hurt. There, two casualties occurred while 34 others suffered injuries."
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Injury": "October 13, 1985",
+            "End_Date_Injury": "October 22, 1985",
+            "Num_Injury": "24",
+            "Injury_with_annotation": "Nationwide, 24 were hurt."
+        },
+        {
+            "Country": "China",
+            "Start_Date_Injury": "October 13, 1985",
+            "End_Date_Injury": "October 22, 1985",
+            "Num_Injury": "34",
+            "Injury_with_annotation": "There, two casualties occurred while 34 others suffered injuries."
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "Philippines",
+            "Location_Injury": [
+                "Nationwide"
+            ],
+            "Start_Date_Injury": "October 13, 1985",
+            "End_Date_Injury": "October 22, 1985",
+            "Num_Injury": "24",
+            "Injury_with_annotation": "Nationwide, 24 were hurt."
+        },
+        {
+            "Country": "China",
+            "Location_Injury": [
+                "Hainan Island"
+            ],
+            "Start_Date_Injury": "October 13, 1985",
+            "End_Date_Injury": "October 22, 1985",
+            "Num_Injury": "34",
+            "Injury_with_annotation": "There, two casualties occurred while 34 others suffered injuries."
+        }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Assessment_With_Annotation": "Typhoon Dot, known in the Philippines as Typhoon Saling, was the strongest storm of the 1985 season. Dot originated from a small area of thunderstorm activity in early to mid October. The system was first classified on October 11, and steadily intensified over the next few days. Dot attained typhoon strength on October 15, and subsequently entered a period of explosive deepening, which was not anticipated by forecasters.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "90",
+        "Total_Death_Annotation": "In all, Dot was responsible for 90 deaths and $104.9 million (1985 USD) in damage."
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "88",
+            "Death_with_annotation": "Throughout the Philippines, 24 people were hurt, and 88 perished, and over 1 million people were directly affected."
+        },
+        {
+            "Country": "China",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "2",
+            "Death_with_annotation": "After passing the Philippines, Typhoon Dot skirted Hainan Island, leaving two dead."
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "Philippines",
+            "Location_Death": [
+                "Davao Del Sur"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "10",
+            "Death_with_annotation": "In Davao Del Sur, 10 people were killed and several homes were destroyed due to mudslides."
+        },
+        {
+            "Country": "Philippines",
+            "Location_Death": [
+                "Legaspi"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "1",
+            "Death_with_annotation": "A man was swept away in a landslide in Legaspi, which also forced the evacuation of 165 families."
+        },
+        {
+            "Country": "Philippines",
+            "Location_Death": [
+                "Offshore"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "3",
+            "Death_with_annotation": "Offshore, three people were killed and 16 others were rendered missing when a cargo ship sunk."
+        },
+        {
+            "Country": "Philippines",
+            "Location_Death": [
+                "Cabanatuan"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "7",
+            "Death_with_annotation": "Seven fatalities occurred in Cabanatuan, where 2,500 homes were demolished and 22,000 were damaged."
+        },
+        {
+            "Country": "China",
+            "Location_Death": [
+                "Hainan Island"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "2",
+            "Death_with_annotation": "After passing the Philippines, Typhoon Dot skirted Hainan Island, leaving two dead."
+        }
+    ],
+    "Start_Date": "October 13, 1985",
+    "End_Date": "October 22, 1985",
+    "Time_with_Annotation": "Formed: October 13, 1985\nDissipated: October 22, 1985",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "$104.9 million",
+        "Total_Insured_Damage_Units": "USD",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "In all, Dot was responsible for 90 deaths and $104.9 million (1985 USD) in damage."
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Total_Insured_Damage": "$104.9 million",
+            "Total_Insured_Damage_Units": "USD",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "Throughout the Philippines, 24 people were hurt, and 88 perished, and over 1 million people were directly affected. Nationwide, damage totaled $104.9 million."
+        },
+        {
+            "Country": "China",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "Philippines",
+            "Location_Insured_Damage": [
+                "Nueva Ecija",
+                "Cabanatuan",
+                "Manila",
+                "Pampanga",
+                "Tarlac"
+            ],
+            "Num_Insured_Damage": "$5.3 million",
+            "Insured_Damage_Units": "USD",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "The worst effects of the storm were felt in Nueva. There, 202,345 ha (500,000 acres) of crops and 90% of all buildings were damaged, totaling to $5.3 million (1985 USD)."
+        },
+        {
+            "Country": "China",
+            "Location_Insured_Damage": [
+                "Hainan Island"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "NULL",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "125,000",
+        "Total_Displacement_Annotation": "Overall, 42 towns were flooded, forcing a total of 125,000 people to flee their homes, 35,000 of which were homeless."
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "125,000",
+            "Displacement_with_annotation": "Overall, 42 towns were flooded, forcing a total of 125,000 people to flee their homes, 35,000 of which were homeless."
+        },
+        {
+            "Country": "China",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        },
+        {
+            "Country": "Vietnam",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "Philippines",
+            "Location_Displacement": [
+                "Davao Del Sur"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "In Davao Del Sur, 10 people were killed and several homes were destroyed due to mudslides."
+        },
+        {
+            "Country": "Philippines",
+            "Location_Displacement": [
+                "Legaspi"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "165 families",
+            "Displacement_with_annotation": "A man was swept away in a landslide in Legaspi, which also forced the evacuation of 165 families."
+        },
+        {
+            "Country": "Philippines",
+            "Location_Displacement": [
+                "Manila"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "29,000",
+            "Displacement_with_annotation": "Flooding in low-lying areas of Manila forced the evacuation of 29,000."
+        },
+        {
+            "Country": "Philippines",
+            "Location_Displacement": [
+                "Pampanga",
+                "Tarlac",
+                "Nueva Ecija"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "69,000",
+            "Displacement_with_annotation": "Elsewhere, 69,000 houses were flooded in Pampanga, Tarlac, and Nueva Ecija."
+        },
+        {
+            "Country": "Philippines",
+            "Location_Displacement": [
+                "NULL"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "125,000",
+            "Displacement_with_annotation": "Overall, 42 towns were flooded, forcing a total of 125,000 people to flee their homes, 35,000 of which were homeless."
+        }
+    ],
+    "Location": [
+        "Philippines",
+        "Nueva Ecija",
+        "Cabanatuan",
+        "Manila",
+        "Davao Del Sur",
+        "Legaspi",
+        "Pampanga",
+        "Tarlac",
+        "Hainan Island",
+        "Sanya",
+        "Vietnam"
+    ],
+    "Location_with_Annotation": {
+        "Philippines": "Although damage across the Philippines was less than initially expected, the typhoon lashed the nation with heavy rains.",
+        "Nueva Ecija": "Province of Nueva Ecija suffered the worst effects from Dot. There, 500,000 acres (200,000 ha) of crops and 90% of all buildings were damaged.",
+        "Cabanatuan": "In Cabanatuan, 2,500 homes and 90% of structures were destroyed.",
+        "Manila": "Flooding in low-lying areas of Manila forced the evacuation of 29,000.",
+        "Davao Del Sur": "In Davao Del Sur, 10 people were killed and several homes were destroyed due to mudslides.",
+        "Legaspi": "A man was swept away in a landslide in Legaspi, which also forced the evacuation of 165 families.",
+        "Pampanga": "Elsewhere, 69,000 houses were flooded in Pampanga, Tarlac, and Nueva Ecija.",
+        "Tarlac": "Elsewhere, 69,000 houses were flooded in Pampanga, Tarlac, and Nueva Ecija.",
+        "Hainan Island": "While tracking through the South China Sea, Dot passed through Hainan Island. There, two casualties occurred while 34 others suffered injuries.",
+        "Sanya": "Communications were lost in Sanya, the southernmost city in the island.",
+        "Vietnam": "On October 21, Dot struck Vietnam while still a typhoon, but dissipated the next day over the high terrain of the nation."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "104.9 million",
+        "Total_Economic_Damage_Units": "USD",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "In all, Dot was responsible for 90 deaths and $104.9 million (1985 USD) in damage."
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Total_Economic_Damage": "104.9 million",
+            "Total_Economic_Damage_Units": "USD",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Throughout the Philippines, 24 people were hurt, and 88 perished, and over 1 million people were directly affected. Nationwide, damage totaled $104.9 million."
+        },
+        {
+            "Country": "Hainan",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Typhoon Dot skirted Hainan Island, leaving two dead. Communications were lost in Sanya, the southernmost city in the island. Thirty-four were hurt. A total of 50,000 homes and 83,000 acres of farmland were flooded. More than 2,300 houses also collapsed."
+        },
+        {
+            "Country": "Vietnam",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Early on October 21, Dot moved ashore in northern Vietnam, around 240 km (150 mi) south of Hanoi. Land interaction with the high terrain of the nation resulted in rapid weakening."
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "Philippines",
+            "Location_Economic_Damage": [
+                "Nueva Ecija",
+                "Cabanatuan",
+                "Manila",
+                "Pampanga",
+                "Tarlac"
+            ],
+            "Num_Economic_Damage": "5.3 million",
+            "Economic_Damage_Units": "USD",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "The worst effects of the storm were felt in Nueva. There, 202,345 ha (500,000 acres) of crops and 90% of all buildings were damaged, totaling to $5.3 million (1985 USD)."
+        },
+        {
+            "Country": "Philippines",
+            "Location_Economic_Damage": [
+                "Cabanatuan"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Seven fatalities occurred in Cabanatuan, where 2,500 homes were demolished and 22,000 were damaged. Ninety percent of all infrastructure was destroyed."
+        },
+        {
+            "Country": "Philippines",
+            "Location_Economic_Damage": [
+                "Manila"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Flooding in low-lying areas of Manila forced the evacuation of 29,000."
+        },
+        {
+            "Country": "Philippines",
+            "Location_Economic_Damage": [
+                "Pampanga",
+                "Tarlac",
+                "Nueva Ecija"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Elsewhere, 69,000 houses were flooded in Pampanga, Tarlac, and Nueva Ecija."
+        },
+        {
+            "Country": "Hainan",
+            "Location_Economic_Damage": [
+                "Sanya"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Communications were lost in Sanya, the southernmost city in the island."
+        },
+        {
+            "Country": "Hainan",
+            "Location_Economic_Damage": [
+                "Hainan Island"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "A total of 50,000 homes and 83,000 acres of farmland were flooded. More than 2,300 houses also collapsed."
+        }
+    ],
+    "Perils": "Wind|Rainfall|Flood|Landslide",
+    "Perils_Assessment_With_Annotation": {
+        "Wind": "Typhoon Dot, known in the Philippines as Typhoon Saling, was the strongest storm of the 1985 season. Dot attained typhoon strength on October 15, and subsequently entered a period of explosive deepening... Dot attained its maximum intensity... Dot struck Vietnam while still a typhoon.",
+        "Rainfall": "Although damage across the Philippines was less than initially expected, the typhoon lashed the nation with heavy rains.",
+        "Flood": "Overall, 42 towns were flooded, forcing a total of 125,000 people to flee their homes... Flooding in low-lying areas of Manila forced the evacuation of 29,000. Elsewhere, 69,000 houses were flooded in Pampanga, Tarlac, and Nueva Ecija.",
+        "Landslide": "In Davao Del Sur, 10 people were killed and several homes were destroyed due to mudslides. A man was swept away in a landslide in Legaspi."
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "255,683",
+        "Total_Building_Damage_Annotation": "Overall, 52,933 homes were destroyed while an additional 200,450 were damaged."
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Building_Damage": "October 18, 1985",
+            "End_Date_Building_Damage": "October 18, 1985",
+            "Num_Building_Damage": "253,383",
+            "Building_Damage_with_annotation": "Overall, 52,933 homes were destroyed while an additional 200,450 were damaged."
+        },
+        {
+            "Country": "Hainan",
+            "Start_Date_Building_Damage": "October 21, 1985",
+            "End_Date_Building_Damage": "October 21, 1985",
+            "Num_Building_Damage": "2,300",
+            "Building_Damage_with_annotation": "More than 2,300 houses also collapsed."
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "Philippines",
+            "Location_Building_Damage": [
+                "Nueva Ecija",
+                "Cabanatuan",
+                "Pampanga",
+                "Tarlac"
+            ],
+            "Start_Date_Building_Damage": "October 18, 1985",
+            "End_Date_Building_Damage": "October 18, 1985",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": [
+                "In Nueva Ecija, 202,345 ha (500,000 acres) of crops and 90% of all buildings were damaged.",
+                "In Cabanatuan, 2,500 homes were demolished and 22,000 were damaged. Ninety percent of all infrastructure was destroyed.",
+                "Flooding in low-lying areas of Manila forced the evacuation of 29,000. Elsewhere, 69,000 houses were flooded in Pampanga, Tarlac, and Nueva Ecija."
+            ]
+        },
+        {
+            "Country": "Hainan",
+            "Location_Building_Damage": [
+                "Sanya"
+            ],
+            "Start_Date_Building_Damage": "October 21, 1985",
+            "End_Date_Building_Damage": "October 21, 1985",
+            "Num_Building_Damage": "2,300",
+            "Building_Damage_with_annotation": "More than 2,300 houses also collapsed."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "over 1 million people",
+        "Total_Affected_Annotation": "Throughout the Philippines, 24 people were hurt, and 88 perished, and over 1 million people were directly affected."
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Affected": "October 18, 1985",
+            "End_Date_Affected": "October 22, 1985",
+            "Num_Affected": "over 1 million people",
+            "Affected_with_annotation": "Throughout the Philippines, 24 people were hurt, and 88 perished, and over 1 million people were directly affected."
+        },
+        {
+            "Country": "China (Hainan Island)",
+            "Start_Date_Affected": "October 20, 1985",
+            "End_Date_Affected": "October 21, 1985",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "After passing the Philippines, Typhoon Dot skirted Hainan Island, leaving two dead. Communications were lost in Sanya, the southernmost city in the island. Thirty-four were hurt. A total of 50,000 homes and 83,000 acres of farmland were flooded. More than 2,300 houses also collapsed."
+        },
+        {
+            "Country": "Vietnam",
+            "Start_Date_Affected": "October 21, 1985",
+            "End_Date_Affected": "October 22, 1985",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Early on October 21, Dot moved ashore in northern Vietnam, around 240 km (150 mi) south of Hanoi. Land interaction with the high terrain of the nation resulted in rapid weakening, and by 0000 UTC October 22, the JTWC ceased tracking Dot."
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "Philippines",
+            "Location_Affected": [
+                "Nueva Ecija"
+            ],
+            "Start_Date_Affected": "October 18, 1985",
+            "End_Date_Affected": "October 22, 1985",
+            "Num_Affected": "125,000 people",
+            "Affected_with_annotation": "In all, 42 towns were flooded, which forced a total of 125,000 people to flee their homes, 35,000 of which were homeless."
+        },
+        {
+            "Country": "Philippines",
+            "Location_Affected": [
+                "Cabanatuan"
+            ],
+            "Start_Date_Affected": "October 18, 1985",
+            "End_Date_Affected": "October 22, 1985",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Seven fatalities occurred in Cabanatuan, where 2,500 homes were demolished and 22,000 were damaged. Ninety percent of all infrastructure was destroyed."
+        },
+        {
+            "Country": "Philippines",
+            "Location_Affected": [
+                "Manila"
+            ],
+            "Start_Date_Affected": "October 18, 1985",
+            "End_Date_Affected": "October 22, 1985",
+            "Num_Affected": "29,000 people",
+            "Affected_with_annotation": "Flooding in low-lying areas of Manila forced the evacuation of 29,000."
+        },
+        {
+            "Country": "Philippines",
+            "Location_Affected": [
+                "Pampanga",
+                "Tarlac",
+                "Nueva Ecija"
+            ],
+            "Start_Date_Affected": "October 18, 1985",
+            "End_Date_Affected": "October 22, 1985",
+            "Num_Affected": "69,000 houses",
+            "Affected_with_annotation": "Elsewhere, 69,000 houses were flooded in Pampanga, Tarlac, and Nueva Ecija."
+        },
+        {
+            "Country": "China (Hainan Island)",
+            "Location_Affected": [
+                "Sanya"
+            ],
+            "Start_Date_Affected": "October 20, 1985",
+            "End_Date_Affected": "October 21, 1985",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "After passing the Philippines, Typhoon Dot skirted Hainan Island, leaving two dead. Communications were lost in Sanya, the southernmost city in the island."
+        },
+        {
+            "Country": "China (Hainan Island)",
+            "Location_Affected": [
+                "Hainan Island"
+            ],
+            "Start_Date_Affected": "October 20, 1985",
+            "End_Date_Affected": "October 21, 1985",
+            "Num_Affected": "34 people",
+            "Affected_with_annotation": "Thirty-four were hurt. A total of 50,000 homes and 83,000 acres of farmland were flooded. More than 2,300 houses also collapsed."
+        }
+    ]
+}

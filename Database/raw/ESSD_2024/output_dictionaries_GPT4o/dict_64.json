@@ -1,0 +1,252 @@
+{
+    "Event_ID": "70.0",
+    "Source": "https://en.wikipedia.org/wiki/Palmer_Fire",
+    "Event_Name": "Palmer Fire   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "NULL",
+        "Total_Homelessness_Annotation": "NULL"
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "United States",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "United States",
+            "Location_Homelessness": [
+                "Beaumont"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "NULL"
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "NULL",
+        "Total_Injury_Annotation": "NULL"
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "United States",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "United States",
+            "Location_Injury": [
+                "Beaumont",
+                "California"
+            ],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        }
+    ],
+    "Main_Event": "Wildfire",
+    "Main_Event_Assessment_With_Annotation": "The Palmer Fire was a wildfire in Beaumont, California in the United States. The fire was reported on September 2, 2017, and was 100% contained by September 6 at 11:53 AM. The cause of the fire was fireworks. The Palmer Fire burned a total of 3,874 acres (16 km2).",
+    "Total_Summary_Death": {
+        "Total_Deaths": "None reported",
+        "Total_Death_Annotation": "The article does not mention any deaths caused by the Palmer Fire."
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "United States",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "None reported",
+            "Death_with_annotation": "The article does not mention any deaths caused by the Palmer Fire."
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "United States",
+            "Location_Death": [
+                "Beaumont",
+                "California"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "None reported",
+            "Death_with_annotation": "The article does not mention any deaths caused by the Palmer Fire."
+        }
+    ],
+    "Start_Date": "September 2, 2017",
+    "End_Date": "September 6, 2017",
+    "Time_with_Annotation": "The Palmer Fire was reported on September 2, 2017, and was 100% contained by September 6 at 11:53 AM.",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "NULL",
+        "Total_Insured_Damage_Units": "NULL",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "United States",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "United States",
+            "Location_Insured_Damage": [
+                "Beaumont",
+                "California"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "450 people",
+        "Total_Displacement_Annotation": "Approximately 450 people were evacuated from their homes."
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "United States",
+            "Start_Date_Displacement": "September 2, 2017",
+            "End_Date_Displacement": "September 3, 2017",
+            "Num_Displacement": "450 people",
+            "Displacement_with_annotation": "Approximately 450 people were evacuated from their homes."
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "United States",
+            "Location_Displacement": [
+                "Oak Canyon Road",
+                "San Timoteo Canyon Road",
+                "Interstate 10"
+            ],
+            "Start_Date_Displacement": "September 2, 2017",
+            "End_Date_Displacement": "September 3, 2017",
+            "Num_Displacement": "450 people",
+            "Displacement_with_annotation": "At 3:30 pm evacuation orders were in place for Oak Canyon Road between San Timoteo Canyon Road and Interstate 10. Approximately 450 people were evacuated from their homes."
+        }
+    ],
+    "Location": [
+        "Beaumont, California",
+        "San Timoteo Canyon Road",
+        "Fisherman's Retreat",
+        "Oak Canyon Road",
+        "Interstate 10",
+        "Redlands Boulevard",
+        "Redlands",
+        "Yucaipa"
+    ],
+    "Location_with_Annotation": {
+        "Beaumont, California": "The Palmer Fire was a wildfire in Beaumont, California in the United States.",
+        "San Timoteo Canyon Road": "The Palmer Fire was reported on September 2, 2017, at 1:33 PM, in Beaumont, California near San Timoteo Canyon Road and Fisherman's Retreat.",
+        "Fisherman's Retreat": "The Palmer Fire was reported on September 2, 2017, at 1:33 PM, in Beaumont, California near San Timoteo Canyon Road and Fisherman's Retreat.",
+        "Oak Canyon Road": "At 3:30 pm evacuation orders were in place for Oak Canyon Road between San Timoteo Canyon Road and Interstate 10.",
+        "Interstate 10": "At 3:30 pm evacuation orders were in place for Oak Canyon Road between San Timoteo Canyon Road and Interstate 10.",
+        "Redlands Boulevard": "Redlands Boulevard, south of San Timoteo Canyon Road, was closed and evacuation centers were opened in Redlands and Yucaipa.",
+        "Redlands": "Redlands Boulevard, south of San Timoteo Canyon Road, was closed and evacuation centers were opened in Redlands and Yucaipa.",
+        "Yucaipa": "Redlands Boulevard, south of San Timoteo Canyon Road, was closed and evacuation centers were opened in Redlands and Yucaipa."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "NULL",
+        "Total_Economic_Damage_Units": "NULL",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "NULL"
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "United States",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "United States",
+            "Location_Economic_Damage": [
+                "Beaumont",
+                "California"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Perils": "Wildfire",
+    "Perils_Assessment_With_Annotation": "The Palmer Fire was a wildfire in Beaumont, California in the United States. The cause of the fire was fireworks. The Palmer Fire burned a total of 3,874 acres (16 km2).",
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "NULL",
+        "Total_Building_Damage_Annotation": "NULL"
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "United States",
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "United States",
+            "Location_Building_Damage": [
+                "Beaumont",
+                "California"
+            ],
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "NULL"
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "450 people",
+        "Total_Affected_Annotation": "Approximately 450 people were evacuated from their homes."
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "United States",
+            "Start_Date_Affected": "September 2, 2017",
+            "End_Date_Affected": "September 3, 2017",
+            "Num_Affected": "450 people",
+            "Affected_with_annotation": "Approximately 450 people were evacuated from their homes."
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "United States",
+            "Location_Affected": [
+                "Beaumont",
+                "Oak Canyon Road",
+                "Redlands",
+                "Yucaipa"
+            ],
+            "Start_Date_Affected": "September 2, 2017",
+            "End_Date_Affected": "September 3, 2017",
+            "Num_Affected": "450 people",
+            "Affected_with_annotation": "Approximately 450 people were evacuated from their homes."
+        }
+    ]
+}

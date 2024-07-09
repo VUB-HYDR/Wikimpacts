@@ -1,0 +1,413 @@
+{
+    "Event_ID": "66.0",
+    "Source": "https://en.wikipedia.org/wiki/Tropical_Storm_Ampil",
+    "Event_Name": "Tropical Storm Ampil   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "Approximately 500 houses collapsed and another 6,700 were damaged",
+        "Total_Homelessness_Annotation": "According to statistics from the National Disaster Reduction Center, about 169,200 hectares (418,000 acres) of cropland were damaged, of which 6,300 hectares (16,000 acres) were completely lost. Approximately 500 houses collapsed and another 6,700 were damaged, while roughly 1,000 people required emergency assistance."
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "China",
+            "Start_Date_Homelessness": "July 22, 2018",
+            "End_Date_Homelessness": "July 25, 2018",
+            "Num_Homelessness": "Approximately 500 houses collapsed and another 6,700 were damaged",
+            "Homelessness_with_annotation": "According to statistics from the National Disaster Reduction Center, about 169,200 hectares (418,000 acres) of cropland were damaged, of which 6,300 hectares (16,000 acres) were completely lost. Approximately 500 houses collapsed and another 6,700 were damaged, while roughly 1,000 people required emergency assistance."
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "China",
+            "Location_Homelessness": [
+                "Shanghai",
+                "Jiangsu",
+                "Zhejiang"
+            ],
+            "Start_Date_Homelessness": "July 22, 2018",
+            "End_Date_Homelessness": "July 25, 2018",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "A total of 387,100 people across Shanghai, Jiangsu, and Zhejiang were evacuated, including 192,700 in Shanghai."
+        },
+        {
+            "Country": "China",
+            "Location_Homelessness": [
+                "Shandong"
+            ],
+            "Start_Date_Homelessness": "July 22, 2018",
+            "End_Date_Homelessness": "July 25, 2018",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "Elsewhere, warnings were issued in Shandong in anticipation of geologic hazards resulting from heavy rainfall."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "NULL",
+        "Total_Injury_Annotation": "NULL"
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "Japan",
+            "Start_Date_Injury": "July 20",
+            "End_Date_Injury": "July 21",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "China",
+            "Start_Date_Injury": "July 22",
+            "End_Date_Injury": "July 25",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "Japan",
+            "Location_Injury": [
+                "Fukuoka"
+            ],
+            "Start_Date_Injury": "July 20",
+            "End_Date_Injury": "July 21",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "China",
+            "Location_Injury": [
+                "Shandong"
+            ],
+            "Start_Date_Injury": "July 22",
+            "End_Date_Injury": "July 25",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Assessment_With_Annotation": "Severe Tropical Storm Ampil, known in the Philippines as Severe Tropical Storm Inday, was a tropical cyclone that caused moderate damage in the Ryukyu Islands and East and Northeast China in late July 2018.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "1",
+        "Total_Death_Annotation": "A person in Shandong was killed by a fallen tree."
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "China",
+            "Start_Date_Death": "July 22, 2018",
+            "End_Date_Death": "July 25, 2018",
+            "Num_Death": "1",
+            "Death_with_annotation": "A person in Shandong was killed by a fallen tree."
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "China",
+            "Location_Death": [
+                "Shandong"
+            ],
+            "Start_Date_Death": "July 22, 2018",
+            "End_Date_Death": "July 25, 2018",
+            "Num_Death": "1",
+            "Death_with_annotation": "A person in Shandong was killed by a fallen tree."
+        }
+    ],
+    "Start_Date": "July 17, 2018",
+    "End_Date": "July 26, 2018",
+    "Time_with_Annotation": "Formed: July 17, 2018\nDissipated: July 26, 2018",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "\u00a51.63 billion",
+        "Total_Insured_Damage_Units": "CNY",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "Direct economic losses reached \u00a51.63 billion (US$246 million)."
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "China",
+            "Total_Insured_Damage": "\u00a51.63 billion",
+            "Total_Insured_Damage_Units": "CNY",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "Direct economic losses reached \u00a51.63 billion (US$246 million)."
+        },
+        {
+            "Country": "Japan",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "China",
+            "Location_Insured_Damage": [
+                "Shanghai",
+                "Jiangsu",
+                "Zhejiang",
+                "Shandong"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "NULL",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "A total of 387,100 people across Shanghai, Jiangsu, and Zhejiang were evacuated, including 192,700 in Shanghai. Throughout the country, Ampil affected 2.334 million people, killing one person in Shandong with a fallen tree and causing direct economic losses of \u00a51.63 billion (US$246 million)."
+        },
+        {
+            "Country": "Japan",
+            "Location_Insured_Damage": [
+                "Okinawa Prefecture",
+                "Fukuoka"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "NULL",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "A total of 29 people were evacuated in Okinawa Prefecture. Adverse weather conditions caused 106 flights and 112 sailings to be canceled from July 20 to 21, affecting almost 15,000 people. A lightning strike damaged the runway at Fukuoka Airport, forcing it to close for an hour and resulting in 70 flights being canceled."
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "387,129",
+        "Total_Displacement_Annotation": "A total of 387,100 people across Shanghai, Jiangsu, and Zhejiang were evacuated,[29] including 192,700 in Shanghai,[30] and 29 people were evacuated in Okinawa Prefecture.[18]"
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "Japan",
+            "Start_Date_Displacement": "July 20",
+            "End_Date_Displacement": "July 21",
+            "Num_Displacement": "29",
+            "Displacement_with_annotation": "A total of 29 people were evacuated in Okinawa Prefecture.[18]"
+        },
+        {
+            "Country": "China",
+            "Start_Date_Displacement": "July 20",
+            "End_Date_Displacement": "July 21",
+            "Num_Displacement": "387,100",
+            "Displacement_with_annotation": "A total of 387,100 people across Shanghai, Jiangsu, and Zhejiang were evacuated,[29] including 192,700 in Shanghai,[30]"
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "Japan",
+            "Location_Displacement": [
+                "Okinawa Prefecture"
+            ],
+            "Start_Date_Displacement": "July 20",
+            "End_Date_Displacement": "July 21",
+            "Num_Displacement": "29",
+            "Displacement_with_annotation": "A total of 29 people were evacuated in Okinawa Prefecture.[18]"
+        },
+        {
+            "Country": "China",
+            "Location_Displacement": [
+                "Shanghai",
+                "Jiangsu",
+                "Zhejiang"
+            ],
+            "Start_Date_Displacement": "July 20",
+            "End_Date_Displacement": "July 21",
+            "Num_Displacement": "387,100",
+            "Displacement_with_annotation": "A total of 387,100 people across Shanghai, Jiangsu, and Zhejiang were evacuated,[29] including 192,700 in Shanghai,[30]"
+        },
+        {
+            "Country": "China",
+            "Location_Displacement": [
+                "Shanghai"
+            ],
+            "Start_Date_Displacement": "July 20",
+            "End_Date_Displacement": "July 21",
+            "Num_Displacement": "192,700",
+            "Displacement_with_annotation": "including 192,700 in Shanghai,[30]"
+        }
+    ],
+    "Location": [
+        "Ryukyu Islands",
+        "East China",
+        "Northeast China",
+        "Okinawa Island",
+        "Shanghai",
+        "Jiangsu",
+        "Zhejiang",
+        "Shandong",
+        "Fukuoka",
+        "Rizhao",
+        "Tianjin",
+        "Chengde",
+        "Qinhuangdao",
+        "Qinglong County",
+        "Songhua River",
+        "Hulan River",
+        "Chaohe River"
+    ],
+    "Location_with_Annotation": {
+        "Ryukyu Islands": "Tropical Storm Ampil: Severe Tropical Storm Ampil, known in the Philippines as Severe Tropical Storm Inday, was a tropical cyclone that caused moderate damage in the Ryukyu Islands and East and Northeast China in late July 2018.",
+        "East China": "Tropical Storm Ampil: Severe Tropical Storm Ampil, known in the Philippines as Severe Tropical Storm Inday, was a tropical cyclone that caused moderate damage in the Ryukyu Islands and East and Northeast China in late July 2018.",
+        "Northeast China": "Tropical Storm Ampil: Severe Tropical Storm Ampil, known in the Philippines as Severe Tropical Storm Inday, was a tropical cyclone that caused moderate damage in the Ryukyu Islands and East and Northeast China in late July 2018.",
+        "Okinawa Island": "Maintaining its strength, Ampil passed over Okinawa Island from July 20 to 21.",
+        "Shanghai": "Ampil weakened slightly while crossing the East China Sea, before making landfall in Shanghai, China, on July 22.",
+        "Jiangsu": "About 387,000 people were evacuated from coastal areas in Shanghai, Jiangsu, and Zhejiang.",
+        "Zhejiang": "About 387,000 people were evacuated from coastal areas in Shanghai, Jiangsu, and Zhejiang.",
+        "Shandong": "A person in Shandong was killed by a fallen tree.",
+        "Fukuoka": "Moisture extending from Ampil also caused thunderstorms in Fukuoka.",
+        "Rizhao": "Rainfall totals exceeded 200 mm (7.9 in) in Rizhao, Tianjin, Chengde, and Qinhuangdao, with a peak accumulation of 324 mm (12.8 in) recorded in Qinglong County.",
+        "Tianjin": "Rainfall totals exceeded 200 mm (7.9 in) in Rizhao, Tianjin, Chengde, and Qinhuangdao, with a peak accumulation of 324 mm (12.8 in) recorded in Qinglong County.",
+        "Chengde": "Rainfall totals exceeded 200 mm (7.9 in) in Rizhao, Tianjin, Chengde, and Qinhuangdao, with a peak accumulation of 324 mm (12.8 in) recorded in Qinglong County.",
+        "Qinhuangdao": "Rainfall totals exceeded 200 mm (7.9 in) in Rizhao, Tianjin, Chengde, and Qinhuangdao, with a peak accumulation of 324 mm (12.8 in) recorded in Qinglong County.",
+        "Qinglong County": "Rainfall totals exceeded 200 mm (7.9 in) in Rizhao, Tianjin, Chengde, and Qinhuangdao, with a peak accumulation of 324 mm (12.8 in) recorded in Qinglong County.",
+        "Songhua River": "Ampil generated heavy rains across much of East and Northeast China, affecting more than 2.3 million people and causing record-breaking flooding within the watershed of the Songhua River.",
+        "Hulan River": "Flooding along the Hulan River reached an all-time high; the Chaohe River recorded its largest floods since 1998.",
+        "Chaohe River": "Flooding along the Hulan River reached an all-time high; the Chaohe River recorded its largest floods since 1998."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "1.63 billion",
+        "Total_Economic_Damage_Units": "CNY",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "Direct economic losses reached \u00a51.63 billion (US$246 million)."
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "China",
+            "Total_Economic_Damage": "1.63 billion",
+            "Total_Economic_Damage_Units": "CNY",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Direct economic losses reached \u00a51.63 billion (US$246 million)."
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "China",
+            "Location_Economic_Damage": [
+                "Shanghai",
+                "Jiangsu",
+                "Zhejiang"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "387,000 people were evacuated from coastal areas in Shanghai, Jiangsu, and Zhejiang."
+        },
+        {
+            "Country": "China",
+            "Location_Economic_Damage": [
+                "Shandong"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "A person in Shandong was killed by a fallen tree."
+        },
+        {
+            "Country": "China",
+            "Location_Economic_Damage": [
+                "NULL"
+            ],
+            "Num_Economic_Damage": "169,200 hectares of cropland damaged, 6,300 hectares completely lost",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "About 169,200 hectares (418,000 acres) of cropland were damaged, of which 6,300 hectares (16,000 acres) were completely lost."
+        },
+        {
+            "Country": "China",
+            "Location_Economic_Damage": [
+                "NULL"
+            ],
+            "Num_Economic_Damage": "500 houses collapsed, 6,700 houses damaged",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Approximately 500 houses collapsed and another 6,700 were damaged."
+        }
+    ],
+    "Perils": "Wind|Rainfall|Flood|Lightning|Thunderstorm",
+    "Perils_Assessment_With_Annotation": {
+        "Wind": "Kitadait\u014djima recorded wind gusts of 113 km/h (70 mph).",
+        "Rainfall": "As Ampil tracked further inland from July 22 to 25, it produced a large swath of heavy rain across East and Northeast China.",
+        "Flood": "The heavy rains caused water levels along 17 tributaries of the Songhua River to rise up to 2.01 m (6.59 ft) above the ordinary high water mark. Flooding along the Hulan River reached an all-time high; the Chaohe River recorded its largest floods since 1998.",
+        "Lightning": "A lightning strike damaged the runway at Fukuoka Airport, forcing it to close for an hour and resulting in 70 flights being canceled. Lightning also disrupted signaling along the Kagoshima Main Line and Kashii Line.",
+        "Thunderstorm": "Further northeast, moist air from Ampil generated thunderstorms in and around Fukuoka."
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "about 7,200 houses",
+        "Total_Building_Damage_Annotation": "About 7,200 houses were damaged or destroyed, while 169,000 hectares (420,000 acres) of cropland were damaged."
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "China",
+            "Start_Date_Building_Damage": "July 22, 2018",
+            "End_Date_Building_Damage": "July 25, 2018",
+            "Num_Building_Damage": "about 7,200 houses",
+            "Building_Damage_with_annotation": "About 7,200 houses were damaged or destroyed, while 169,000 hectares (420,000 acres) of cropland were damaged."
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "China",
+            "Location_Building_Damage": [
+                "Shanghai",
+                "Jiangsu",
+                "Zhejiang"
+            ],
+            "Start_Date_Building_Damage": "July 22, 2018",
+            "End_Date_Building_Damage": "July 25, 2018",
+            "Num_Building_Damage": "approximately 500 houses collapsed and another 6,700 were damaged",
+            "Building_Damage_with_annotation": "Approximately 500 houses collapsed and another 6,700 were damaged, while roughly 1,000 people required emergency assistance."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "2.334 million",
+        "Total_Affected_Annotation": "Throughout the country, Ampil affected 2.334 million people, killing one person in Shandong with a fallen tree and causing direct economic losses of \u00a51.63 billion (US$246 million)."
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "Japan",
+            "Start_Date_Affected": "July 20, 2018",
+            "End_Date_Affected": "July 21, 2018",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "A total of 29 people were evacuated in Okinawa Prefecture."
+        },
+        {
+            "Country": "China",
+            "Start_Date_Affected": "July 22, 2018",
+            "End_Date_Affected": "July 25, 2018",
+            "Num_Affected": "2.334 million",
+            "Affected_with_annotation": "Throughout the country, Ampil affected 2.334 million people, killing one person in Shandong with a fallen tree and causing direct economic losses of \u00a51.63 billion (US$246 million)."
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "Japan",
+            "Location_Affected": [
+                "Okinawa Prefecture"
+            ],
+            "Start_Date_Affected": "July 20, 2018",
+            "End_Date_Affected": "July 21, 2018",
+            "Num_Affected": "29",
+            "Affected_with_annotation": "A total of 29 people were evacuated in Okinawa Prefecture."
+        },
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "Shanghai",
+                "Jiangsu",
+                "Zhejiang"
+            ],
+            "Start_Date_Affected": "July 22, 2018",
+            "End_Date_Affected": "July 25, 2018",
+            "Num_Affected": "387,100",
+            "Affected_with_annotation": "A total of 387,100 people across Shanghai, Jiangsu, and Zhejiang were evacuated."
+        },
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "Shandong"
+            ],
+            "Start_Date_Affected": "July 22, 2018",
+            "End_Date_Affected": "July 25, 2018",
+            "Num_Affected": "1",
+            "Affected_with_annotation": "killing one person in Shandong with a fallen tree"
+        }
+    ]
+}

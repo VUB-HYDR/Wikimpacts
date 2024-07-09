@@ -1,0 +1,379 @@
+{
+    "Event_ID": "72.0",
+    "Source": "https://en.wikipedia.org/wiki/2008_South_China_floods",
+    "Event_Name": "2008 South China floods   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "1.3 million",
+        "Total_Homelessness_Annotation": "A new round of floods began on 6 June and swept nine provinces in southern China killing 55 people with 7 missing and forcing 1.3 million to evacuate as of 14 June."
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "China",
+            "Start_Date_Homelessness": "2008-06-06",
+            "End_Date_Homelessness": "2008-06-14",
+            "Num_Homelessness": "1.3 million",
+            "Homelessness_with_annotation": "A new round of floods began on 6 June and swept nine provinces in southern China killing 55 people with 7 missing and forcing 1.3 million to evacuate as of 14 June."
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "China",
+            "Location_Homelessness": [
+                "Sichuan",
+                "Guangdong",
+                "Jiangxi",
+                "Guangxi",
+                "Guizhou",
+                "Yunnan",
+                "Hong Kong"
+            ],
+            "Start_Date_Homelessness": "2008-06-06",
+            "End_Date_Homelessness": "2008-06-14",
+            "Num_Homelessness": "1.3 million",
+            "Homelessness_with_annotation": "A new round of floods began on 6 June and swept nine provinces in southern China killing 55 people with 7 missing and forcing 1.3 million to evacuate as of 14 June."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "NULL",
+        "Total_Injury_Annotation": "NULL"
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "China",
+            "Start_Date_Injury": "26 May 2008",
+            "End_Date_Injury": "14 June 2008",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "China",
+            "Location_Injury": [
+                "Tuen Mun"
+            ],
+            "Start_Date_Injury": "7 June 2008",
+            "End_Date_Injury": "7 June 2008",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "One of the landslides killed two people in Tuen Mun."
+        }
+    ],
+    "Main_Event": "Flood",
+    "Main_Event_Assessment_With_Annotation": "The 2008 South China floods began on 26 May 2008. Four rounds of torrential rains with landslides and flooding lasted for 20 days and affected fifteen provinces in Eastern and Southern China.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "more than 200 dead or missing",
+        "Total_Death_Annotation": "Fatalities: more than 200 dead or missing"
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "China",
+            "Start_Date_Death": "2008-05-26",
+            "End_Date_Death": "2008-06-14",
+            "Num_Death": "more than 200 dead or missing",
+            "Death_with_annotation": "Fatalities: more than 200 dead or missing"
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "China",
+            "Location_Death": [
+                "South China"
+            ],
+            "Start_Date_Death": "2008-05-26",
+            "End_Date_Death": "2008-05-30",
+            "Num_Death": "93",
+            "Death_with_annotation": "The first round of floods affected twelve provinces in South China and killed 93 people as of 30 May."
+        },
+        {
+            "Country": "China",
+            "Location_Death": [
+                "southern China"
+            ],
+            "Start_Date_Death": "2008-06-06",
+            "End_Date_Death": "2008-06-14",
+            "Num_Death": "55",
+            "Death_with_annotation": "A new round of floods began on 6 June and swept nine provinces in southern China killing 55 people with 7 missing and forcing 1.3 million to evacuate as of 14 June."
+        },
+        {
+            "Country": "China",
+            "Location_Death": [
+                "southern provinces"
+            ],
+            "Start_Date_Death": "2008-05-01",
+            "End_Date_Death": "2008-05-31",
+            "Num_Death": "64",
+            "Death_with_annotation": "China Daily that torrential rains caused by Cloud seeding in the southern provinces killed 64 people in May."
+        },
+        {
+            "Country": "China",
+            "Location_Death": [
+                "Tuen Mun"
+            ],
+            "Start_Date_Death": "2008-06-07",
+            "End_Date_Death": "2008-06-07",
+            "Num_Death": "2",
+            "Death_with_annotation": "One of the landslides killed two people in Tuen Mun."
+        }
+    ],
+    "Start_Date": "2008-05-26",
+    "End_Date": "2008-06-14",
+    "Time_with_Annotation": "Duration: 26 May 2008 (2008-05-26)-14 June 2008 (2008-06-14)",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "NULL",
+        "Total_Insured_Damage_Units": "NULL",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "China",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "China",
+            "Location_Insured_Damage": [
+                "Lantau Island",
+                "Hong Kong Island",
+                "Tsim Sha Tsui",
+                "North Lantau Highway",
+                "Tai O",
+                "Tuen Mun"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "1.3 million",
+        "Total_Displacement_Annotation": "A new round of floods began on 6 June and swept nine provinces in southern China killing 55 people with 7 missing and forcing 1.3 million to evacuate as of 14 June."
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "China",
+            "Start_Date_Displacement": "2008-06-06",
+            "End_Date_Displacement": "2008-06-14",
+            "Num_Displacement": "1.3 million",
+            "Displacement_with_annotation": "A new round of floods began on 6 June and swept nine provinces in southern China killing 55 people with 7 missing and forcing 1.3 million to evacuate as of 14 June."
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "China",
+            "Location_Displacement": [
+                "southern China"
+            ],
+            "Start_Date_Displacement": "2008-06-06",
+            "End_Date_Displacement": "2008-06-14",
+            "Num_Displacement": "1.3 million",
+            "Displacement_with_annotation": "A new round of floods began on 6 June and swept nine provinces in southern China killing 55 people with 7 missing and forcing 1.3 million to evacuate as of 14 June."
+        }
+    ],
+    "Location": [
+        "Sichuan",
+        "Guangdong",
+        "Jiangxi",
+        "Guangxi",
+        "Guizhou",
+        "Yunnan",
+        "Hong Kong",
+        "Anhui",
+        "Hunan",
+        "Fujian"
+    ],
+    "Location_with_Annotation": {
+        "Sichuan": "China's National Meteorological Centre has said that heavy rain would continue and that precipitation in the provinces of Guizhou, Sichuan and Yunnan would be 30 to 70% greater than in the same period last year.",
+        "Guangdong": "Mainland provinces affected include Anhui, Hunan, Jiangxi, Fujian and Guangdong.",
+        "Jiangxi": "Mainland provinces affected include Anhui, Hunan, Jiangxi, Fujian and Guangdong.",
+        "Guangxi": "Four rounds of torrential rains with landslides and flooding lasted for 20 days and affected fifteen provinces in Eastern and Southern China.",
+        "Guizhou": "China's National Meteorological Centre has said that heavy rain would continue and that precipitation in the provinces of Guizhou, Sichuan and Yunnan would be 30 to 70% greater than in the same period last year.",
+        "Yunnan": "China's National Meteorological Centre has said that heavy rain would continue and that precipitation in the provinces of Guizhou, Sichuan and Yunnan would be 30 to 70% greater than in the same period last year.",
+        "Hong Kong": "On 7 June, more than 400 mm (16 in) of rain fell on Lantau Island and more than 300 mm (12 in) fell on Hong Kong Island.",
+        "Anhui": "Mainland provinces affected include Anhui, Hunan, Jiangxi, Fujian and Guangdong.",
+        "Hunan": "Mainland provinces affected include Anhui, Hunan, Jiangxi, Fujian and Guangdong.",
+        "Fujian": "Mainland provinces affected include Anhui, Hunan, Jiangxi, Fujian and Guangdong."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "$2.2 billion",
+        "Total_Economic_Damage_Units": "USD",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "Damage: $2.2 billion[1][2]"
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "China",
+            "Total_Economic_Damage": "$2.2 billion",
+            "Total_Economic_Damage_Units": "USD",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Damage: $2.2 billion[1][2]"
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "China",
+            "Location_Economic_Damage": [
+                "Sichuan",
+                "Guangdong",
+                "Jiangxi",
+                "Guangxi",
+                "Guizhou",
+                "Yunnan",
+                "Hong Kong"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Areas affected: Sichuan, Guangdong, Jiangxi, Guangxi, Guizhou, Yunnan, Hong Kong"
+        }
+    ],
+    "Perils": "Rainfall|Flood|Landslide",
+    "Perils_Assessment_With_Annotation": {
+        "Rainfall": "Four rounds of torrential rains with landslides and flooding lasted for 20 days and affected fifteen provinces in Eastern and Southern China.",
+        "Flood": "Four rounds of torrential rains with landslides and flooding lasted for 20 days and affected fifteen provinces in Eastern and Southern China.",
+        "Landslide": "Four rounds of torrential rains with landslides and flooding lasted for 20 days and affected fifteen provinces in Eastern and Southern China."
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "NULL",
+        "Total_Building_Damage_Annotation": "NULL"
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "China",
+            "Start_Date_Building_Damage": "26 May 2008",
+            "End_Date_Building_Damage": "14 June 2008",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "China",
+            "Location_Building_Damage": [
+                "Lantau Island",
+                "Hong Kong Island",
+                "Tsim Sha Tsui",
+                "North Lantau Highway",
+                "Tai O",
+                "Tuen Mun"
+            ],
+            "Start_Date_Building_Damage": "7 June 2008",
+            "End_Date_Building_Damage": "7 June 2008",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "On 7 June, more than 400 mm (16 in) of rain fell on Lantau Island and more than 300 mm (12 in) fell on Hong Kong Island. By noon, almost 40 landslides and 156 floods were reported. In Tsim Sha Tsui, the 124-year record of rainfall per hour was smashed, with 145.5 mm (5.73 inches) of rainfall being recorded. The North Lantau Highway was blocked, for the first and so far the only time since its opening in 1997, by a landslide. Land traffic to the villages of Tai O was cut off, forcing the government to increase the frequency of ferries to and from the villages. Newspaper vendors in the streets reported that the water came very fast, flooding the area within five minutes to thigh-deep level (over-the-knee). One of the landslides killed two people in Tuen Mun."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "NULL",
+        "Total_Affected_Annotation": "NULL"
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "China",
+            "Start_Date_Affected": "26 May 2008",
+            "End_Date_Affected": "14 June 2008",
+            "Num_Affected": "1.3 million",
+            "Affected_with_annotation": "A new round of floods began on 6 June and swept nine provinces in southern China killing 55 people with 7 missing and forcing 1.3 million to evacuate as of 14 June."
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "Sichuan",
+                "Guangdong",
+                "Jiangxi",
+                "Guangxi",
+                "Guizhou",
+                "Yunnan",
+                "Hong Kong"
+            ],
+            "Start_Date_Affected": "26 May 2008",
+            "End_Date_Affected": "14 June 2008",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "The 2008 South China floods began on 26 May 2008. Four rounds of torrential rains with landslides and flooding lasted for 20 days and affected fifteen provinces in Eastern and Southern China."
+        },
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "South China"
+            ],
+            "Start_Date_Affected": "26 May 2008",
+            "End_Date_Affected": "30 May 2008",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "The first round of floods affected twelve provinces in South China and killed 93 people as of 30 May."
+        },
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "Southern China"
+            ],
+            "Start_Date_Affected": "6 June 2008",
+            "End_Date_Affected": "14 June 2008",
+            "Num_Affected": "1.3 million",
+            "Affected_with_annotation": "A new round of floods began on 6 June and swept nine provinces in southern China killing 55 people with 7 missing and forcing 1.3 million to evacuate as of 14 June."
+        },
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "Guizhou",
+                "Sichuan",
+                "Yunnan"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "China's National Meteorological Centre has said that heavy rain would continue and that precipitation in the provinces of Guizhou, Sichuan and Yunnan would be 30 to 70% greater than in the same period last year."
+        },
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "Anhui",
+                "Hunan",
+                "Jiangxi",
+                "Fujian",
+                "Guangdong"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Mainland provinces affected include Anhui, Hunan, Jiangxi, Fujian and Guangdong."
+        },
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "Southern provinces"
+            ],
+            "Start_Date_Affected": "May 2008",
+            "End_Date_Affected": "May 2008",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "China Daily that torrential rains caused by Cloud seeding in the southern provinces killed 64 people in May."
+        },
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "Lantau Island",
+                "Hong Kong Island",
+                "Tsim Sha Tsui",
+                "North Lantau Highway",
+                "Tai O",
+                "Tuen Mun"
+            ],
+            "Start_Date_Affected": "7 June 2008",
+            "End_Date_Affected": "7 June 2008",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "On 7 June, more than 400 mm (16 in) of rain fell on Lantau Island and more than 300 mm (12 in) fell on Hong Kong Island. By noon, almost 40 landslides and 156 floods were reported. In Tsim Sha Tsui, the 124-year record of rainfall per hour was smashed, with 145.5 mm (5.73 inches) of rainfall being recorded. The North Lantau Highway was blocked, for the first and so far the only time since its opening in 1997, by a landslide. Land traffic to the villages of Tai O was cut off, forcing the government to increase the frequency of ferries to and from the villages. Newspaper vendors in the streets reported that the water came very fast, flooding the area within five minutes to thigh-deep level (over-the-knee). One of the landslides killed two people in Tuen Mun. The Hong Kong Observatory thus changed the 'amber rainstorm' warning to a 'black rainstorm' warning."
+        }
+    ]
+}

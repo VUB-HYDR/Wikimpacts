@@ -1,0 +1,433 @@
+{
+    "Event_ID": "69.0",
+    "Source": "https://en.wikipedia.org/wiki/Cyclone_Luban",
+    "Event_Name": "Cyclone Luban   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "8,000 people",
+        "Total_Homelessness_Annotation": "About 8,000 people were left homeless because of Luban."
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "Yemen",
+            "Start_Date_Homelessness": "October 14, 2018",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "8,000 people",
+            "Homelessness_with_annotation": "About 8,000 people were left homeless because of Luban."
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "Yemen",
+            "Location_Homelessness": [
+                "Al Mahrah Governorate"
+            ],
+            "Start_Date_Homelessness": "October 14, 2018",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "2,203 families",
+            "Homelessness_with_annotation": "Storm damage forced 2,203 families to leave their houses, using 38 schools for shelter."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "124",
+        "Total_Injury_Annotation": "The storm killed 14 people in the country, and 124 people were injured, with 10 people missing."
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "Yemen",
+            "Start_Date_Injury": "October 14, 2018",
+            "End_Date_Injury": "October 15, 2018",
+            "Num_Injury": "124",
+            "Injury_with_annotation": "The storm killed 14 people in the country, and 124 people were injured, with 10 people missing."
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "Yemen",
+            "Location_Injury": [
+                "Al Mahrah Governorate"
+            ],
+            "Start_Date_Injury": "October 14, 2018",
+            "End_Date_Injury": "October 15, 2018",
+            "Num_Injury": "124",
+            "Injury_with_annotation": "The storm killed 14 people in the country, and 124 people were injured, with 10 people missing."
+        }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Assessment_With_Annotation": "Cyclone Luban: Very Severe Cyclonic Storm Luban was the third tropical cyclone to affect the Arabian Peninsula during the 2018 North Indian Ocean cyclone season, after cyclones Sagar and Mekunu in May. Luban developed on October 6 in the central Arabian Sea, and for much of its duration, maintained a general west-northwestward trajectory. On October 10, the India Meteorological Department (IMD) upgraded Luban to a very severe cyclonic storm \u2013 equivalent to a Category 1 hurricane \u2013 and estimated maximum sustained winds of 140 km/h (85 mph). The storm made landfall on October 14 in eastern Yemen, as a cyclonic storm.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "14",
+        "Total_Death_Annotation": "The cyclone killed 14 people in Yemen, when heavy rainfall cut off villages and damaged roads."
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "Yemen",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "14",
+            "Death_with_annotation": "The cyclone killed 14 people in Yemen, when heavy rainfall cut off villages and damaged roads."
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "Yemen",
+            "Location_Death": [
+                "Al Mahrah Governorate"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "14",
+            "Death_with_annotation": "The cyclone killed 14 people in Yemen, when heavy rainfall cut off villages and damaged roads."
+        }
+    ],
+    "Start_Date": "October 6, 2018",
+    "End_Date": "October 15, 2018",
+    "Time_with_Annotation": "Formed: October 6, 2018\nDissipated: October 15, 2018",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "NULL",
+        "Total_Insured_Damage_Units": "NULL",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "Yemen",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Oman",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Somalia",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "Yemen",
+            "Location_Insured_Damage": [
+                "Al Mahrah Governorate"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "\u201cLuban caused about US$1 billion in damage in Yemen, with the worst effects in Al Mahrah Governorate, where about 90% of the infrastructure was damaged.\u201d"
+        },
+        {
+            "Country": "Yemen",
+            "Location_Insured_Damage": [
+                "Al-Masilah"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "\u201cIn Al-Masilah, flooding damaged or destroyed 62 houses.\u201d"
+        },
+        {
+            "Country": "Yemen",
+            "Location_Insured_Damage": [
+                "Qishn District"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "\u201cThe storm damaged the hospital in Qishn District, forcing all workers to evacuate, and shutting down the facility for at least a week.\u201d"
+        },
+        {
+            "Country": "Yemen",
+            "Location_Insured_Damage": [
+                "Al Ghaydah"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "\u201cThe storm damaged about 90% of the power grid in Al Ghaydah.\u201d"
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "2,203 families",
+        "Total_Displacement_Annotation": "Storm damage forced 2,203 families to leave their houses, using 38 schools for shelter."
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "Yemen",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "2,203 families",
+            "Displacement_with_annotation": "Storm damage forced 2,203 families to leave their houses, using 38 schools for shelter."
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "Yemen",
+            "Location_Displacement": [
+                "Al Mahrah Governorate"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "2,203 families",
+            "Displacement_with_annotation": "Storm damage forced 2,203 families to leave their houses, using 38 schools for shelter."
+        }
+    ],
+    "Location": [
+        "Oman",
+        "Somalia",
+        "Yemen"
+    ],
+    "Location_with_Annotation": {
+        "Oman": "As Luban made landfall, the storm dropped heavy rainfall in southern Oman that caused flash flooding. Dalkout reported a 24-hour precipitation total of 145 mm (5.71 in) and Salalah of 138 mm (5.43 in). The rains created temporary lakes between desert dunes, which produced a small locust outbreak.",
+        "Somalia": "To the south of the center, the outer rainbands of Luban dropped rains in Puntland, Somalia.",
+        "Yemen": "Cyclone Luban struck Yemen in the midst of a civil war and a cholera outbreak. Luban dropped heavy rainfall upon moving ashore, reaching 290 mm (11 in) in Al Ghaydah; there, wind gusts reached 102 km/h (63 mph). Luban caused about US$1 billion in damage in Yemen, with the worst effects in Al Mahrah Governorate, where about 90% of the infrastructure was damaged. The storm killed 14 people in the country, and 124 people were injured, with 10 people missing. About 8,000 people were left homeless because of Luban."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "US$1 billion",
+        "Total_Economic_Damage_Units": "USD",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "Damage in the country was estimated at US$1 billion."
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "Yemen",
+            "Total_Economic_Damage": "US$1 billion",
+            "Total_Economic_Damage_Units": "USD",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Damage in the country was estimated at US$1 billion."
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "Yemen",
+            "Location_Economic_Damage": [
+                "Al Mahrah Governorate"
+            ],
+            "Num_Economic_Damage": "90% of the infrastructure was damaged",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "with the worst effects in Al Mahrah Governorate, where about 90% of the infrastructure was damaged."
+        },
+        {
+            "Country": "Yemen",
+            "Location_Economic_Damage": [
+                "Al-Masilah"
+            ],
+            "Num_Economic_Damage": "62 houses damaged or destroyed",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "In Al-Masilah, flooding damaged or destroyed 62 houses."
+        },
+        {
+            "Country": "Yemen",
+            "Location_Economic_Damage": [
+                "Qishn District"
+            ],
+            "Num_Economic_Damage": "Hospital damaged",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "The storm damaged the hospital in Qishn District, forcing all workers to evacuate, and shutting down the facility for at least a week."
+        },
+        {
+            "Country": "Yemen",
+            "Location_Economic_Damage": [
+                "Al Ghaydah"
+            ],
+            "Num_Economic_Damage": "90% of the power grid damaged",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "The storm damaged about 90% of the power grid in Al Ghaydah."
+        }
+    ],
+    "Perils": "Wind|Rainfall|Flood",
+    "Perils_Assessment_With_Annotation": {
+        "Wind": "Luban made landfall in eastern Yemen, about 30 km (20 mi) south of Al Ghaydah, with winds of 75 km/h (45 mph).",
+        "Rainfall": "As Luban made landfall, the storm dropped heavy rainfall in southern Oman that caused flash flooding. Dalkout reported a 24-hour precipitation total of 145 mm (5.71 in) and Salalah of 138 mm (5.43 in).",
+        "Flood": "Cyclone Luban produced flooding rains in Somalia, Oman, and Yemen. The cyclone killed 14 people in Yemen, when heavy rainfall cut off villages and damaged roads. Flooding washed away thousands of livestock, and damaged Yemen's coastal roads and bridges, which disrupted relief efforts."
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "NULL",
+        "Total_Building_Damage_Annotation": "NULL"
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "Yemen",
+            "Start_Date_Building_Damage": "October 14, 2018",
+            "End_Date_Building_Damage": "October 15, 2018",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "Yemen",
+            "Location_Building_Damage": [
+                "Al-Masilah"
+            ],
+            "Start_Date_Building_Damage": "October 14, 2018",
+            "End_Date_Building_Damage": "October 15, 2018",
+            "Num_Building_Damage": "62",
+            "Building_Damage_with_annotation": "\"In Al-Masilah, flooding damaged or destroyed 62 houses.\""
+        },
+        {
+            "Country": "Yemen",
+            "Location_Building_Damage": [
+                "Qishn District"
+            ],
+            "Start_Date_Building_Damage": "October 14, 2018",
+            "End_Date_Building_Damage": "October 15, 2018",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "\"The storm damaged the hospital in Qishn District, forcing all workers to evacuate, and shutting down the facility for at least a week.\""
+        },
+        {
+            "Country": "Yemen",
+            "Location_Building_Damage": [
+                "Al Ghaydah"
+            ],
+            "Start_Date_Building_Damage": "October 14, 2018",
+            "End_Date_Building_Damage": "October 15, 2018",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "\"The storm damaged about 90% of the power grid in Al Ghaydah.\""
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "NULL",
+        "Total_Affected_Annotation": "NULL"
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "Yemen",
+            "Start_Date_Affected": "October 14, 2018",
+            "End_Date_Affected": "October 15, 2018",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "NULL"
+        },
+        {
+            "Country": "Oman",
+            "Start_Date_Affected": "October 14, 2018",
+            "End_Date_Affected": "October 15, 2018",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "NULL"
+        },
+        {
+            "Country": "Somalia",
+            "Start_Date_Affected": "October 14, 2018",
+            "End_Date_Affected": "October 15, 2018",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "Yemen",
+            "Location_Affected": [
+                "Al Mahrah Governorate"
+            ],
+            "Start_Date_Affected": "October 14, 2018",
+            "End_Date_Affected": "October 15, 2018",
+            "Num_Affected": "90% of the infrastructure",
+            "Affected_with_annotation": "Luban caused about US$1 billion in damage in Yemen, with the worst effects in Al Mahrah Governorate, where about 90% of the infrastructure was damaged."
+        },
+        {
+            "Country": "Yemen",
+            "Location_Affected": [
+                "Al Mahrah Governorate"
+            ],
+            "Start_Date_Affected": "October 14, 2018",
+            "End_Date_Affected": "October 15, 2018",
+            "Num_Affected": "14 people killed, 124 people injured, 10 people missing, 8,000 people homeless",
+            "Affected_with_annotation": "The storm killed 14 people in the country, and 124 people were injured, with 10 people missing. About 8,000 people were left homeless because of Luban."
+        },
+        {
+            "Country": "Yemen",
+            "Location_Affected": [
+                "Al Mahrah Governorate"
+            ],
+            "Start_Date_Affected": "October 14, 2018",
+            "End_Date_Affected": "October 15, 2018",
+            "Num_Affected": "2,203 families",
+            "Affected_with_annotation": "Storm damage forced 2,203 families to leave their houses, using 38 schools for shelter."
+        },
+        {
+            "Country": "Yemen",
+            "Location_Affected": [
+                "Al Mahrah Governorate"
+            ],
+            "Start_Date_Affected": "October 14, 2018",
+            "End_Date_Affected": "October 15, 2018",
+            "Num_Affected": "3,000 people",
+            "Affected_with_annotation": "Dirt roads were washed away, isolating seven villages and about 3,000 people."
+        },
+        {
+            "Country": "Yemen",
+            "Location_Affected": [
+                "Al-Masilah"
+            ],
+            "Start_Date_Affected": "October 14, 2018",
+            "End_Date_Affected": "October 15, 2018",
+            "Num_Affected": "62 houses",
+            "Affected_with_annotation": "In Al-Masilah, flooding damaged or destroyed 62 houses."
+        },
+        {
+            "Country": "Yemen",
+            "Location_Affected": [
+                "Qishn District"
+            ],
+            "Start_Date_Affected": "October 14, 2018",
+            "End_Date_Affected": "October 15, 2018",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "The storm damaged the hospital in Qishn District, forcing all workers to evacuate, and shutting down the facility for at least a week."
+        },
+        {
+            "Country": "Yemen",
+            "Location_Affected": [
+                "Al Ghaydah"
+            ],
+            "Start_Date_Affected": "October 14, 2018",
+            "End_Date_Affected": "October 15, 2018",
+            "Num_Affected": "90% of the power grid",
+            "Affected_with_annotation": "The storm damaged about 90% of the power grid in Al Ghaydah."
+        },
+        {
+            "Country": "Oman",
+            "Location_Affected": [
+                "Dalkout",
+                "Salalah"
+            ],
+            "Start_Date_Affected": "October 14, 2018",
+            "End_Date_Affected": "October 15, 2018",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "As Luban made landfall, the storm dropped heavy rainfall in southern Oman that caused flash flooding. Dalkout reported a 24-hour precipitation total of 145 mm (5.71 in) and Salalah of 138 mm (5.43 in)."
+        },
+        {
+            "Country": "Somalia",
+            "Location_Affected": [
+                "Puntland"
+            ],
+            "Start_Date_Affected": "October 14, 2018",
+            "End_Date_Affected": "October 15, 2018",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "To the south of the center, the outer rainbands of Luban dropped rains in Puntland, Somalia."
+        }
+    ]
+}

@@ -1,0 +1,360 @@
+{
+    "Event_ID": "123.0",
+    "Source": "https://en.wikipedia.org/wiki/Mangum_Fire",
+    "Event_Name": "Mangum Fire   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "None",
+        "Total_Homelessness_Annotation": "The fire destroyed two cabins and two outbuildings at Mangum Camp."
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "United States",
+            "Start_Date_Homelessness": "June 11, 2020",
+            "End_Date_Homelessness": "July 7, 2020",
+            "Num_Homelessness": "None",
+            "Homelessness_with_annotation": "The fire destroyed two cabins and two outbuildings at Mangum Camp."
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "United States",
+            "Location_Homelessness": [
+                "Mangum Camp"
+            ],
+            "Start_Date_Homelessness": "June 11, 2020",
+            "End_Date_Homelessness": "July 7, 2020",
+            "Num_Homelessness": "None",
+            "Homelessness_with_annotation": "The fire destroyed two cabins and two outbuildings at Mangum Camp."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "None",
+        "Total_Injury_Annotation": "Non-fatal injuries: 0"
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "United States",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "None",
+            "Injury_with_annotation": "Non-fatal injuries: 0"
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "United States",
+            "Location_Injury": [
+                "Kaibab National Forest"
+            ],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "None",
+            "Injury_with_annotation": "Non-fatal injuries: 0"
+        }
+    ],
+    "Main_Event": "Wildfire",
+    "Main_Event_Assessment_With_Annotation": "The Mangum Fire was a wildfire in Kaibab National Forest in Arizona in the United States. The fire, which started on June 8, 2020 approximately 16 miles north of the North Rim of Grand Canyon National Park, burned a total of 71,450 acres (28,915 ha).",
+    "Total_Summary_Death": {
+        "Total_Deaths": "None",
+        "Total_Death_Annotation": "Deaths: 0"
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "United States",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "None",
+            "Death_with_annotation": "Deaths: 0"
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "United States",
+            "Location_Death": [
+                "Kaibab National Forest"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "None",
+            "Death_with_annotation": "Deaths: 0"
+        }
+    ],
+    "Start_Date": "2020-06-08",
+    "End_Date": "2020-07-07",
+    "Time_with_Annotation": "The fire, which started on June 8, 2020... As of July 7, the fire has burned 71,450 acres (28,915 ha) and was 88 percent contained.",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "NULL",
+        "Total_Insured_Damage_Units": "NULL",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "United States",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "United States",
+            "Location_Insured_Damage": [
+                "Mangum Camp"
+            ],
+            "Num_Insured_Damage": "4",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "The fire destroyed two cabins and two outbuildings at Mangum Camp."
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "NULL",
+        "Total_Displacement_Annotation": "NULL"
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "United States",
+            "Start_Date_Displacement": "June 12, 2020",
+            "End_Date_Displacement": "June 29, 2020",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "Evacuations were ordered for Jacob Lake, Arizona starting June 12. [...] Evacuation orders were lifted for Jacob Lake and White Sage."
+        },
+        {
+            "Country": "United States",
+            "Start_Date_Displacement": "June 17, 2020",
+            "End_Date_Displacement": "June 29, 2020",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "Three homes were evacuated on Houserock Road due to the fire moving northeast towards the area. [...] Evacuation orders were lifted for the two houses on House Rock Valley Road."
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "United States",
+            "Location_Displacement": [
+                "Jacob Lake",
+                "White Sage"
+            ],
+            "Start_Date_Displacement": "June 12, 2020",
+            "End_Date_Displacement": "June 29, 2020",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "Evacuations were ordered for Jacob Lake, Arizona starting June 12. [...] Evacuation orders were lifted for Jacob Lake and White Sage."
+        },
+        {
+            "Country": "United States",
+            "Location_Displacement": [
+                "Houserock Road"
+            ],
+            "Start_Date_Displacement": "June 17, 2020",
+            "End_Date_Displacement": "June 29, 2020",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "Three homes were evacuated on Houserock Road due to the fire moving northeast towards the area. [...] Evacuation orders were lifted for the two houses on House Rock Valley Road."
+        }
+    ],
+    "Location": [
+        "Kaibab National Forest",
+        "Fredonia, Arizona",
+        "Jacob Lake, Arizona",
+        "Big Springs, Arizona",
+        "North Rim of Grand Canyon National Park",
+        "Paria Canyon-Vermilion Cliffs Wilderness",
+        "Mangum Camp",
+        "Marble Canyon",
+        "Tuba City, Arizona",
+        "Houserock Road",
+        "House Rock Valley Road",
+        "Coyote Buttes",
+        "White Pockets",
+        "St. George Regional Airport",
+        "Page, Arizona",
+        "Kanab, Utah",
+        "Kayenta, Arizona",
+        "Chinle, Arizona"
+    ],
+    "Location_with_Annotation": {
+        "Kaibab National Forest": "The Mangum Fire was a wildfire in Kaibab National Forest in Arizona in the United States.",
+        "Fredonia, Arizona": "Smoke was reported as visible from Fredonia, Arizona, a small town that serves as the gateway to the North Rim of the Grand Canyon.",
+        "Jacob Lake, Arizona": "The fire threatened the community of Jacob Lake, Arizona, resulting in its evacuation.",
+        "Big Springs, Arizona": "Crews dropped fire retardant on the south side, with the intention of keeping the fire from spreading towards Big Springs.",
+        "North Rim of Grand Canyon National Park": "The fire, which started on June 8, 2020 approximately 16 miles north of the North Rim of Grand Canyon National Park, burned a total of 71,450 acres (28,915 ha).",
+        "Paria Canyon-Vermilion Cliffs Wilderness": "Additionally, areas of the Paria Canyon-Vermilion Cliffs Wilderness were inaccessible due to closures.",
+        "Mangum Camp": "The Mangum Fire was reported at approximately 3 PM on June 8, 2020 on the Kaibab Plateau near Mangum Camp about 1 3/4 miles north of Big Springs, Arizona in Kaibab National Forest.",
+        "Marble Canyon": "State Route 89A was closed from Marble Canyon to Fredonia, Arizona and Highway 67 to the Grand Canyon.",
+        "Tuba City, Arizona": "Winds from the fire began affecting air quality, with residents in Tuba City, Arizona and areas west of the fire being told to limit outdoor activities if they are sensitive to smoke.",
+        "Houserock Road": "The next day, three homes were evacuated on Houserock Road due to the fire moving northeast towards the area.",
+        "House Rock Valley Road": "Due to the closure of the Arizona portion of House Rock Valley Road, parts of Paria Canyon-Vermilion Cliffs Wilderness, specifically Coyote Buttes and White Pockets became inaccessible.",
+        "Coyote Buttes": "Due to the closure of the Arizona portion of House Rock Valley Road, parts of Paria Canyon-Vermilion Cliffs Wilderness, specifically Coyote Buttes and White Pockets became inaccessible.",
+        "White Pockets": "Due to the closure of the Arizona portion of House Rock Valley Road, parts of Paria Canyon-Vermilion Cliffs Wilderness, specifically Coyote Buttes and White Pockets became inaccessible.",
+        "St. George Regional Airport": "Air support continues, with tankers flying out of St. George Regional Airport.",
+        "Page, Arizona": "Smoke was visible from the north and south rims of Grand Canyon National Park, Highway 67, U.S. Route 89A, and the Arizona communities of Jacob Lake, Fredonia, Page, and Utah town of Kanab.",
+        "Kanab, Utah": "Smoke was visible from the north and south rims of Grand Canyon National Park, Highway 67, U.S. Route 89A, and the Arizona communities of Jacob Lake, Fredonia, Page, and Utah town of Kanab.",
+        "Kayenta, Arizona": "Air quality was impacted in the Arizona towns and cities of Tuba City, Kayenta, and Chinle.",
+        "Chinle, Arizona": "Air quality was impacted in the Arizona towns and cities of Tuba City, Kayenta, and Chinle."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "NULL",
+        "Total_Economic_Damage_Units": "NULL",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "NULL"
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "United States",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "United States",
+            "Location_Economic_Damage": [
+                "Mangum Camp"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "The fire destroyed two cabins and two outbuildings at Mangum Camp."
+        },
+        {
+            "Country": "United States",
+            "Location_Economic_Damage": [
+                "Jacob Lake"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "The fire threatened the community of Jacob Lake, Arizona, resulting in its evacuation."
+        },
+        {
+            "Country": "United States",
+            "Location_Economic_Damage": [
+                "North Rim of Grand Canyon National Park"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "The fire caused the entrance to the North Rim of Grand Canyon National Park and lands operated by the Bureau of Land Management, east of Fredonia, to be closed."
+        },
+        {
+            "Country": "United States",
+            "Location_Economic_Damage": [
+                "Paria Canyon-Vermilion Cliffs Wilderness"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Due to the closure of House Rock Valley Road, parts of Paria Canyon-Vermilion Cliffs Wilderness, including Coyote Buttes South and White Pockets were made inaccessible."
+        }
+    ],
+    "Perils": "Wildfire",
+    "Perils_Assessment_With_Annotation": "The Mangum Fire was a wildfire in Kaibab National Forest in Arizona in the United States. The fire, which started on June 8, 2020 approximately 16 miles north of the North Rim of Grand Canyon National Park, burned a total of 71,450 acres (28,915 ha).",
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "4",
+        "Total_Building_Damage_Annotation": "The fire destroyed two cabins and two outbuildings at Mangum Camp."
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "United States",
+            "Start_Date_Building_Damage": "June 11, 2020",
+            "End_Date_Building_Damage": "June 11, 2020",
+            "Num_Building_Damage": "4",
+            "Building_Damage_with_annotation": "The fire destroyed two cabins and two outbuildings at Mangum Camp."
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "United States",
+            "Location_Building_Damage": [
+                "Mangum Camp",
+                "Kaibab National Forest",
+                "Arizona"
+            ],
+            "Start_Date_Building_Damage": "June 11, 2020",
+            "End_Date_Building_Damage": "June 11, 2020",
+            "Num_Building_Damage": "4",
+            "Building_Damage_with_annotation": "The fire destroyed two cabins and two outbuildings at Mangum Camp."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "NULL",
+        "Total_Affected_Annotation": "NULL"
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "United States",
+            "Start_Date_Affected": "June 8, 2020",
+            "End_Date_Affected": "July 7, 2020",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "United States",
+            "Location_Affected": [
+                "Jacob Lake",
+                "Arizona"
+            ],
+            "Start_Date_Affected": "June 12, 2020",
+            "End_Date_Affected": "June 29, 2020",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Evacuations were ordered for Jacob Lake, Arizona starting June 12... evacuation orders were lifted for Jacob Lake and White Sage."
+        },
+        {
+            "Country": "United States",
+            "Location_Affected": [
+                "Houserock Road",
+                "Arizona"
+            ],
+            "Start_Date_Affected": "June 17, 2020",
+            "End_Date_Affected": "June 29, 2020",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Three homes were evacuated on Houserock Road due to the fire moving northeast towards the area... Evacuation orders were lifted for the two houses on House Rock Valley Road."
+        },
+        {
+            "Country": "United States",
+            "Location_Affected": [
+                "Tuba City",
+                "Arizona"
+            ],
+            "Start_Date_Affected": "June 16, 2020",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Winds from the fire began affecting air quality, with residents in Tuba City, Arizona and areas west of the fire being told to limit outdoor activities if they are sensitive to smoke."
+        },
+        {
+            "Country": "United States",
+            "Location_Affected": [
+                "Kayenta",
+                "Arizona"
+            ],
+            "Start_Date_Affected": "June 16, 2020",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Air quality was impacted in the Arizona towns and cities of Tuba City, Kayenta, and Chinle."
+        },
+        {
+            "Country": "United States",
+            "Location_Affected": [
+                "Chinle",
+                "Arizona"
+            ],
+            "Start_Date_Affected": "June 16, 2020",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Air quality was impacted in the Arizona towns and cities of Tuba City, Kayenta, and Chinle."
+        }
+    ]
+}

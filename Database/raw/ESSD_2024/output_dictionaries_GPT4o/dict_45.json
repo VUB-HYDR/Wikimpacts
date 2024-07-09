@@ -1,0 +1,711 @@
+{
+    "Event_ID": "114.0",
+    "Source": "https://en.wikipedia.org/wiki/Hurricane_Cristobal",
+    "Event_Name": "Hurricane Cristobal   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "about 640 families",
+        "Total_Homelessness_Annotation": "In neighboring Haiti, flooding totally destroyed four homes and heavily damaged 28 others, with a total of about 640 families left temporarily homeless."
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "Haiti",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "about 640 families",
+            "Homelessness_with_annotation": "In neighboring Haiti, flooding totally destroyed four homes and heavily damaged 28 others, with a total of about 640 families left temporarily homeless."
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "Haiti",
+            "Location_Homelessness": [
+                "NULL"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "about 640 families",
+            "Homelessness_with_annotation": "In neighboring Haiti, flooding totally destroyed four homes and heavily damaged 28 others, with a total of about 640 families left temporarily homeless."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "NULL",
+        "Total_Injury_Annotation": "NULL"
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "Dominican Republic",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "Haiti",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "Dominican Republic",
+            "Location_Injury": [
+                "Santo Domingo Province"
+            ],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "3",
+            "Injury_with_annotation": "In Santo Domingo Province, three people required rescue from their car after trying to cross the swollen Isabela River."
+        },
+        {
+            "Country": "Haiti",
+            "Location_Injury": [
+                "NULL"
+            ],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "many",
+            "Injury_with_annotation": "At least two people in the country were swept away by rushing waters, and many others sustained injuries."
+        }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Assessment_With_Annotation": "Hurricane Cristobal was a moderately strong Atlantic tropical cyclone that affected multiple landmasses from Puerto Rico to Iceland in late August and early September 2014.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "7",
+        "Total_Death_Annotation": "Fatalities: 7"
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "Haiti",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "2",
+            "Death_with_annotation": "At least two people in the country were swept away by rushing waters"
+        },
+        {
+            "Country": "Dominican Republic",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "2",
+            "Death_with_annotation": "Two people were killed in the Dominican Republic"
+        },
+        {
+            "Country": "Turks and Caicos",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "1",
+            "Death_with_annotation": "one person drowned in the ensuing floods"
+        },
+        {
+            "Country": "United States",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "2",
+            "Death_with_annotation": "A teenaged male Virginia resident died in a drowning incident at Ocean City, Maryland... Another young male drowned at Sandy Hook, New Jersey"
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "Haiti",
+            "Location_Death": [
+                "NULL"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "2",
+            "Death_with_annotation": "At least two people in the country were swept away by rushing waters"
+        },
+        {
+            "Country": "Dominican Republic",
+            "Location_Death": [
+                "Hato Mayor Province"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "1",
+            "Death_with_annotation": "one of them after attempting to drive across a flooded river in the Hato Mayor Province"
+        },
+        {
+            "Country": "Dominican Republic",
+            "Location_Death": [
+                "NULL"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "1",
+            "Death_with_annotation": "Two people were killed in the Dominican Republic"
+        },
+        {
+            "Country": "Turks and Caicos",
+            "Location_Death": [
+                "Providenciales"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "1",
+            "Death_with_annotation": "one person drowned in the ensuing floods"
+        },
+        {
+            "Country": "United States",
+            "Location_Death": [
+                "Ocean City",
+                "Maryland"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "1",
+            "Death_with_annotation": "A teenaged male Virginia resident died in a drowning incident at Ocean City, Maryland"
+        },
+        {
+            "Country": "United States",
+            "Location_Death": [
+                "Sandy Hook",
+                "New Jersey"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "1",
+            "Death_with_annotation": "Another young male drowned at Sandy Hook, New Jersey"
+        }
+    ],
+    "Start_Date": "August 23, 2014",
+    "End_Date": "September 2, 2014",
+    "Time_with_Annotation": "Formed: August 23, 2014\nDissipated: September 2, 2014",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "Unknown",
+        "Total_Insured_Damage_Units": "NULL",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "Puerto Rico",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Dominican Republic",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Haiti",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Turks and Caicos Islands",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "United States",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Iceland",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "Puerto Rico",
+            "Location_Insured_Damage": [
+                "Tibes",
+                "San Juan"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "The heavy rainfall triggered multiple landslides, at least one of which forced a family to evacuate. The floods cut electricity to nearly 17,000 customers and left 7,000 without clean drinking water after putting some 18 filtration plants out of service."
+        },
+        {
+            "Country": "Dominican Republic",
+            "Location_Insured_Damage": [
+                "La Romana",
+                "Santo Domingo Province",
+                "Hato Mayor Province"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "The floods isolated 23 towns from the outside world and damaged or destroyed more than 800 dwellings, especially in eastern and northeastern parts of the nation. Just over 4,100 individuals were forced to evacuate their homes."
+        },
+        {
+            "Country": "Haiti",
+            "Location_Insured_Damage": [
+                "NULL"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "In neighboring Haiti, flooding totally destroyed four homes and heavily damaged 28 others, with a total of about 640 families left temporarily homeless."
+        },
+        {
+            "Country": "Turks and Caicos Islands",
+            "Location_Insured_Damage": [
+                "Providenciales",
+                "North Caicos"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Heavy rain fell over the region, reaching 10.9 in (280 mm) on the island of Providenciales, where one person drowned in the ensuing floods. Floodwaters on North Caicos ran 5 ft (1.5 m) deep, blocking access to some communities."
+        },
+        {
+            "Country": "United States",
+            "Location_Insured_Damage": [
+                "Ocean City, Maryland",
+                "Sandy Hook, New Jersey"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "A teenaged male Virginia resident died in a drowning incident at Ocean City, Maryland, less than an hour after lifeguards went off-duty. Another young male drowned at Sandy Hook, New Jersey; a wave reportedly knocked him down in shallow water before a rip current pulled the inexperienced swimmer farther out."
+        },
+        {
+            "Country": "Iceland",
+            "Location_Insured_Damage": [
+                "Reykjav\u00edk",
+                "Reykjav\u00edk Airport",
+                "Keflav\u00edk International Airport"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "In southern Iceland, the extratropical remnants of Cristobal produced gusty winds and heavy rainfall, leading to extensive flooding in the capital city of Reykjav\u00edk. The fire department there responded to 37 calls for flooded buildings."
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "About 4,740 families",
+        "Total_Displacement_Annotation": "The system went on to douse the island of Hispaniola with torrential rain, leading to at least four drowning deaths in Haiti and the Dominican Republic. Floodwaters damaged or destroyed over 800 houses and temporarily isolated 23 communities in the Dominican Republic, while about 640 families were displaced in Haiti."
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "Dominican Republic",
+            "Start_Date_Displacement": "August 23, 2014",
+            "End_Date_Displacement": "August 24, 2014",
+            "Num_Displacement": "Just over 4,100 individuals",
+            "Displacement_with_annotation": "The floods isolated 23 towns from the outside world and damaged or destroyed more than 800 dwellings, especially in eastern and northeastern parts of the nation. Just over 4,100 individuals were forced to evacuate their homes."
+        },
+        {
+            "Country": "Haiti",
+            "Start_Date_Displacement": "August 23, 2014",
+            "End_Date_Displacement": "August 24, 2014",
+            "Num_Displacement": "About 640 families",
+            "Displacement_with_annotation": "In neighboring Haiti, flooding totally destroyed four homes and heavily damaged 28 others, with a total of about 640 families left temporarily homeless."
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "Dominican Republic",
+            "Location_Displacement": [
+                "eastern parts",
+                "northeastern parts"
+            ],
+            "Start_Date_Displacement": "August 23, 2014",
+            "End_Date_Displacement": "August 24, 2014",
+            "Num_Displacement": "Just over 4,100 individuals",
+            "Displacement_with_annotation": "The floods isolated 23 towns from the outside world and damaged or destroyed more than 800 dwellings, especially in eastern and northeastern parts of the nation. Just over 4,100 individuals were forced to evacuate their homes."
+        },
+        {
+            "Country": "Haiti",
+            "Location_Displacement": [
+                "NULL"
+            ],
+            "Start_Date_Displacement": "August 23, 2014",
+            "End_Date_Displacement": "August 24, 2014",
+            "Num_Displacement": "About 640 families",
+            "Displacement_with_annotation": "In neighboring Haiti, flooding totally destroyed four homes and heavily damaged 28 others, with a total of about 640 families left temporarily homeless."
+        }
+    ],
+    "Location": [
+        "Puerto Rico",
+        "Hispaniola",
+        "Turks and Caicos Islands",
+        "East Coast of the United States",
+        "Bermuda",
+        "Iceland"
+    ],
+    "Location_with_Annotation": {
+        "Puerto Rico": "Before its classification as a tropical cyclone, the disturbance that would become Cristobal dropped heavy rain over Puerto Rico, locally reaching 13.21 in (336 mm). Widespread flooding and scattered landslides affected the territory, with 19 large rivers exceeding minor flood stage.",
+        "Hispaniola": "The system went on to douse the island of Hispaniola with torrential rain, leading to at least four drowning deaths in Haiti and the Dominican Republic. Floodwaters damaged or destroyed over 800 houses and temporarily isolated 23 communities in the Dominican Republic, while about 640 families were displaced in Haiti.",
+        "Turks and Caicos Islands": "Another person was killed by floodwaters in the Turks and Caicos.",
+        "East Coast of the United States": "The hurricane generated strong surf and dangerous rip currents along the U.S. East Coast, killing two swimmers in Maryland and New Jersey and leading to many lifeguard rescues.",
+        "Bermuda": "A tropical storm watch was issued for Bermuda on August 25, and ultimately discontinued about three days later.",
+        "Iceland": "Later, the extratropical remnants of Cristobal buffeted Iceland with heavy rain and gusty winds, causing flooding around the capital city of Reykjav\u00edk."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "Unknown",
+        "Total_Economic_Damage_Units": "NULL",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "The total economic loss or damage information is not explicitly mentioned in the article."
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "Puerto Rico",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "The article does not provide a total economic damage figure for Puerto Rico."
+        },
+        {
+            "Country": "Dominican Republic",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "The article does not provide a total economic damage figure for the Dominican Republic."
+        },
+        {
+            "Country": "Haiti",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "The article does not provide a total economic damage figure for Haiti."
+        },
+        {
+            "Country": "Turks and Caicos Islands",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "The article does not provide a total economic damage figure for the Turks and Caicos Islands."
+        },
+        {
+            "Country": "United States",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "The article does not provide a total economic damage figure for the United States."
+        },
+        {
+            "Country": "Iceland",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "The article does not provide a total economic damage figure for Iceland."
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "Puerto Rico",
+            "Location_Economic_Damage": [
+                "Tibes",
+                "San Juan"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "The article mentions heavy rainfall and flooding in Puerto Rico but does not provide specific economic damage figures."
+        },
+        {
+            "Country": "Dominican Republic",
+            "Location_Economic_Damage": [
+                "La Romana",
+                "Santo Domingo Province",
+                "Hato Mayor Province"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "The article mentions flooding and damage to over 800 houses in the Dominican Republic but does not provide specific economic damage figures."
+        },
+        {
+            "Country": "Haiti",
+            "Location_Economic_Damage": [
+                "NULL"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "The article mentions flooding and damage to homes in Haiti but does not provide specific economic damage figures."
+        },
+        {
+            "Country": "Turks and Caicos Islands",
+            "Location_Economic_Damage": [
+                "Providenciales",
+                "North Caicos"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "The article mentions flooding and property damage in the Turks and Caicos Islands but does not provide specific economic damage figures."
+        },
+        {
+            "Country": "United States",
+            "Location_Economic_Damage": [
+                "Ocean City, Maryland",
+                "Sandy Hook, New Jersey"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "The article mentions dangerous swimming conditions and rescues but does not provide specific economic damage figures."
+        },
+        {
+            "Country": "Iceland",
+            "Location_Economic_Damage": [
+                "Reykjav\u00edk",
+                "Reykjav\u00edk Airport",
+                "Keflav\u00edk International Airport"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "The article mentions flooding and wind damage in Iceland but does not provide specific economic damage figures."
+        }
+    ],
+    "Perils": "Rainfall|Flood|Landslide|Wind",
+    "Perils_Assessment_With_Annotation": {
+        "Rainfall": "Before its classification as a tropical cyclone, the disturbance that would become Cristobal dropped heavy rain over Puerto Rico, locally reaching 13.21 in (336 mm).",
+        "Flood": "Widespread flooding and scattered landslides affected the territory, with 19 large rivers exceeding minor flood stage.",
+        "Landslide": "The heavy rainfall triggered multiple landslides, at least one of which forced a family to evacuate.",
+        "Wind": "The extratropical remnants of Cristobal produced gusty winds and heavy rainfall, leading to extensive flooding in the capital city of Reykjav\u00edk."
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "over 800",
+        "Total_Building_Damage_Annotation": "Floodwaters damaged or destroyed over 800 houses and temporarily isolated 23 communities in the Dominican Republic, while about 640 families were displaced in Haiti."
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "Dominican Republic",
+            "Start_Date_Building_Damage": "August 23, 2014",
+            "End_Date_Building_Damage": "August 24, 2014",
+            "Num_Building_Damage": "over 800",
+            "Building_Damage_with_annotation": "Floodwaters damaged or destroyed over 800 houses and temporarily isolated 23 communities in the Dominican Republic."
+        },
+        {
+            "Country": "Haiti",
+            "Start_Date_Building_Damage": "August 23, 2014",
+            "End_Date_Building_Damage": "August 24, 2014",
+            "Num_Building_Damage": "32",
+            "Building_Damage_with_annotation": "In neighboring Haiti, flooding totally destroyed four homes and heavily damaged 28 others, with a total of about 640 families left temporarily homeless."
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "Dominican Republic",
+            "Location_Building_Damage": [
+                "La Romana",
+                "Santo Domingo Province",
+                "Hato Mayor Province"
+            ],
+            "Start_Date_Building_Damage": "August 23, 2014",
+            "End_Date_Building_Damage": "August 24, 2014",
+            "Num_Building_Damage": "over 800",
+            "Building_Damage_with_annotation": "Floodwaters damaged or destroyed over 800 houses and temporarily isolated 23 communities in the Dominican Republic."
+        },
+        {
+            "Country": "Haiti",
+            "Location_Building_Damage": [
+                "NULL"
+            ],
+            "Start_Date_Building_Damage": "August 23, 2014",
+            "End_Date_Building_Damage": "August 24, 2014",
+            "Num_Building_Damage": "32",
+            "Building_Damage_with_annotation": "In neighboring Haiti, flooding totally destroyed four homes and heavily damaged 28 others, with a total of about 640 families left temporarily homeless."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "NULL",
+        "Total_Affected_Annotation": "NULL"
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "Puerto Rico",
+            "Start_Date_Affected": "August 24, 2014",
+            "End_Date_Affected": "August 24, 2014",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "The floods cut electricity to nearly 17,000 customers and left 7,000 without clean drinking water after putting some 18 filtration plants out of service."
+        },
+        {
+            "Country": "Dominican Republic",
+            "Start_Date_Affected": "August 23, 2014",
+            "End_Date_Affected": "August 24, 2014",
+            "Num_Affected": "4,100 individuals",
+            "Affected_with_annotation": "Just over 4,100 individuals were forced to evacuate their homes."
+        },
+        {
+            "Country": "Haiti",
+            "Start_Date_Affected": "August 23, 2014",
+            "End_Date_Affected": "August 24, 2014",
+            "Num_Affected": "640 families",
+            "Affected_with_annotation": "In neighboring Haiti, flooding totally destroyed four homes and heavily damaged 28 others, with a total of about 640 families left temporarily homeless."
+        },
+        {
+            "Country": "Turks and Caicos Islands",
+            "Start_Date_Affected": "August 23, 2014",
+            "End_Date_Affected": "August 25, 2014",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Governor Peter Beckingham reported 'extensive damage to peoples' property and possessions' throughout the overseas territory."
+        },
+        {
+            "Country": "United States",
+            "Start_Date_Affected": "August 27, 2014",
+            "End_Date_Affected": "August 28, 2014",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "The offshore hurricane lashed the East Coast of the United States with high swells and rip currents, prompting widespread swimming restrictions and bans."
+        },
+        {
+            "Country": "Iceland",
+            "Start_Date_Affected": "September 1, 2014",
+            "End_Date_Affected": "September 1, 2014",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "In southern Iceland, the extratropical remnants of Cristobal produced gusty winds and heavy rainfall, leading to extensive flooding in the capital city of Reykjav\u00edk."
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "Puerto Rico",
+            "Location_Affected": [
+                "Tibes"
+            ],
+            "Start_Date_Affected": "August 24, 2014",
+            "End_Date_Affected": "August 24, 2014",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "A rain gauge near Tibes recorded a peak total of 13.21 in (336 mm), the majority of which fell on August 24."
+        },
+        {
+            "Country": "Puerto Rico",
+            "Location_Affected": [
+                "San Juan"
+            ],
+            "Start_Date_Affected": "August 24, 2014",
+            "End_Date_Affected": "August 24, 2014",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Luis Mu\u00f1oz Mar\u00edn International Airport near San Juan reported 5.52 in (140 mm) of precipitation."
+        },
+        {
+            "Country": "Puerto Rico",
+            "Location_Affected": [
+                "Puerto Rico"
+            ],
+            "Start_Date_Affected": "August 24, 2014",
+            "End_Date_Affected": "August 24, 2014",
+            "Num_Affected": "17,000 customers",
+            "Affected_with_annotation": "The floods cut electricity to nearly 17,000 customers and left 7,000 without clean drinking water after putting some 18 filtration plants out of service."
+        },
+        {
+            "Country": "Dominican Republic",
+            "Location_Affected": [
+                "La Romana"
+            ],
+            "Start_Date_Affected": "August 23, 2014",
+            "End_Date_Affected": "August 24, 2014",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "La Romana, Dominican Republic, recorded 5.04 in (128 mm) of rain in 24 hours on August 23 and 24, the result being destructive flooding."
+        },
+        {
+            "Country": "Dominican Republic",
+            "Location_Affected": [
+                "Dominican Republic"
+            ],
+            "Start_Date_Affected": "August 23, 2014",
+            "End_Date_Affected": "August 24, 2014",
+            "Num_Affected": "4,100 individuals",
+            "Affected_with_annotation": "Just over 4,100 individuals were forced to evacuate their homes."
+        },
+        {
+            "Country": "Haiti",
+            "Location_Affected": [
+                "Haiti"
+            ],
+            "Start_Date_Affected": "August 23, 2014",
+            "End_Date_Affected": "August 24, 2014",
+            "Num_Affected": "640 families",
+            "Affected_with_annotation": "In neighboring Haiti, flooding totally destroyed four homes and heavily damaged 28 others, with a total of about 640 families left temporarily homeless."
+        },
+        {
+            "Country": "Turks and Caicos Islands",
+            "Location_Affected": [
+                "Providenciales"
+            ],
+            "Start_Date_Affected": "August 23, 2014",
+            "End_Date_Affected": "August 25, 2014",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Heavy rain fell over the region, reaching 10.9 in (280 mm) on the island of Providenciales, where one person drowned in the ensuing floods."
+        },
+        {
+            "Country": "Turks and Caicos Islands",
+            "Location_Affected": [
+                "North Caicos"
+            ],
+            "Start_Date_Affected": "August 23, 2014",
+            "End_Date_Affected": "August 25, 2014",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Floodwaters on North Caicos ran 5 ft (1.5 m) deep, blocking access to some communities."
+        },
+        {
+            "Country": "United States",
+            "Location_Affected": [
+                "Ocean City",
+                "Maryland"
+            ],
+            "Start_Date_Affected": "August 27, 2014",
+            "End_Date_Affected": "August 27, 2014",
+            "Num_Affected": "120 people",
+            "Affected_with_annotation": "In a 24-hour period, the Ocean City Beach Patrol rescued about 120 people caught in rip currents."
+        },
+        {
+            "Country": "United States",
+            "Location_Affected": [
+                "Sandy Hook",
+                "New Jersey"
+            ],
+            "Start_Date_Affected": "August 27, 2014",
+            "End_Date_Affected": "August 27, 2014",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Another young male drowned at Sandy Hook, New Jersey; a wave reportedly knocked him down in shallow water before a rip current pulled the inexperienced swimmer farther out."
+        },
+        {
+            "Country": "Iceland",
+            "Location_Affected": [
+                "Reykjav\u00edk"
+            ],
+            "Start_Date_Affected": "September 1, 2014",
+            "End_Date_Affected": "September 1, 2014",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "In southern Iceland, the extratropical remnants of Cristobal produced gusty winds and heavy rainfall, leading to extensive flooding in the capital city of Reykjav\u00edk."
+        }
+    ]
+}

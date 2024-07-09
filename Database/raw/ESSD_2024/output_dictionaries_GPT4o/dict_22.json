@@ -1,0 +1,1295 @@
+{
+    "Event_ID": "79.0",
+    "Source": "https://en.wikipedia.org/wiki/2020_East_Africa_floods",
+    "Event_Name": "2020 East Africa floods   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "64,000 in Democratic Republic of the Congo; 2,700 households in Tanzania; hundreds of families in Somalia; 500 families in Uganda; NULL for other countries",
+        "Total_Homelessness_Annotation": "44 people died, 200 were injured, while 64,000 were homeless in flooding in South Kivu Province. More than 2,700 households in Moshi district have been made homeless by floods. Hundreds of families have reportedly lost their homes. About 500 families in Nakapiripirit district have been displaced and their crops destroyed following flood triggered by heavy rain on 2 May."
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "Democratic Republic of the Congo",
+            "Start_Date_Homelessness": "16 April 2020",
+            "End_Date_Homelessness": "17 April 2020",
+            "Num_Homelessness": "64,000",
+            "Homelessness_with_annotation": "44 people died, 200 were injured, while 64,000 were homeless in flooding in South Kivu Province."
+        },
+        {
+            "Country": "Tanzania",
+            "Start_Date_Homelessness": "April 2020",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "2,700 households",
+            "Homelessness_with_annotation": "More than 2,700 households in Moshi district have been made homeless by floods."
+        },
+        {
+            "Country": "Somalia",
+            "Start_Date_Homelessness": "20 April 2020",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "hundreds of families",
+            "Homelessness_with_annotation": "Hundreds of families have reportedly lost their homes."
+        },
+        {
+            "Country": "Uganda",
+            "Start_Date_Homelessness": "2 May 2020",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "500 families",
+            "Homelessness_with_annotation": "About 500 families in Nakapiripirit district have been displaced and their crops destroyed following flood triggered by heavy rain on 2 May."
+        },
+        {
+            "Country": "Rwanda",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "NULL"
+        },
+        {
+            "Country": "Kenya",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "NULL"
+        },
+        {
+            "Country": "Burundi",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "NULL"
+        },
+        {
+            "Country": "Djibouti",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "NULL"
+        },
+        {
+            "Country": "Ethiopia",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "Democratic Republic of the Congo",
+            "Location_Homelessness": [
+                "South Kivu Province"
+            ],
+            "Start_Date_Homelessness": "16 April 2020",
+            "End_Date_Homelessness": "17 April 2020",
+            "Num_Homelessness": "64,000",
+            "Homelessness_with_annotation": "44 people died, 200 were injured, while 64,000 were homeless in flooding in South Kivu Province."
+        },
+        {
+            "Country": "Tanzania",
+            "Location_Homelessness": [
+                "Moshi district"
+            ],
+            "Start_Date_Homelessness": "April 2020",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "2,700 households",
+            "Homelessness_with_annotation": "More than 2,700 households in Moshi district have been made homeless by floods."
+        },
+        {
+            "Country": "Somalia",
+            "Location_Homelessness": [
+                "Gardo"
+            ],
+            "Start_Date_Homelessness": "27 April 2020",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "hundreds of families",
+            "Homelessness_with_annotation": "Hundreds of families have reportedly lost their homes."
+        },
+        {
+            "Country": "Uganda",
+            "Location_Homelessness": [
+                "Nakapiripirit district"
+            ],
+            "Start_Date_Homelessness": "2 May 2020",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "500 families",
+            "Homelessness_with_annotation": "About 500 families in Nakapiripirit district have been displaced and their crops destroyed following flood triggered by heavy rain on 2 May."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "213",
+        "Total_Injury_Annotation": "A total of 13 people were injured and 42 houses destroyed. Roads and bridges were also damaged or destroyed. 44 people died, 200 were injured, while 64,000 were homeless in flooding in South Kivu Province."
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "Rwanda",
+            "Start_Date_Injury": "2 March 2020",
+            "End_Date_Injury": "3 May 2020",
+            "Num_Injury": "13",
+            "Injury_with_annotation": "A total of 13 people were injured and 42 houses destroyed. Roads and bridges were also damaged or destroyed."
+        },
+        {
+            "Country": "Democratic Republic of the Congo",
+            "Start_Date_Injury": "16 April 2020",
+            "End_Date_Injury": "17 April 2020",
+            "Num_Injury": "200",
+            "Injury_with_annotation": "44 people died, 200 were injured, while 64,000 were homeless in flooding in South Kivu Province."
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "Rwanda",
+            "Location_Injury": [
+                "Ruhango district",
+                "Gasabo District",
+                "Rulindo district",
+                "Nyanza District"
+            ],
+            "Start_Date_Injury": "2 March 2020",
+            "End_Date_Injury": "4 March 2020",
+            "Num_Injury": "13",
+            "Injury_with_annotation": "A total of 13 people were injured and 42 houses destroyed. Roads and bridges were also damaged or destroyed."
+        },
+        {
+            "Country": "Democratic Republic of the Congo",
+            "Location_Injury": [
+                "South Kivu Province"
+            ],
+            "Start_Date_Injury": "16 April 2020",
+            "End_Date_Injury": "17 April 2020",
+            "Num_Injury": "200",
+            "Injury_with_annotation": "44 people died, 200 were injured, while 64,000 were homeless in flooding in South Kivu Province."
+        }
+    ],
+    "Main_Event": "Flood",
+    "Main_Event_Assessment_With_Annotation": "The 2020 East Africa floods were a natural disaster in Rwanda, Kenya, Somalia, Burundi, Ethiopia, Uganda, Democratic Republic of Congo, Djibouti and Tanzania, affecting at least 700,000 people. They began when excessive rains began falling in March, leading to massive flooding and landslides.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "453",
+        "Total_Death_Annotation": "They caused more than 430 deaths, notably in Kenya and Rwanda."
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "Kenya",
+            "Start_Date_Death": "April 2020",
+            "End_Date_Death": "May 2020",
+            "Num_Death": "237",
+            "Death_with_annotation": "237 people have died in flooding in Kenya in April and May while over 100,000 have been displaced."
+        },
+        {
+            "Country": "Rwanda",
+            "Start_Date_Death": "2 March 2020",
+            "End_Date_Death": "7 May 2020",
+            "Num_Death": "97",
+            "Death_with_annotation": "70 people have died in floods and landslides after torrential rain."
+        },
+        {
+            "Country": "Democratic Republic of the Congo",
+            "Start_Date_Death": "16 April 2020",
+            "End_Date_Death": "17 April 2020",
+            "Num_Death": "44",
+            "Death_with_annotation": "44 people died, 200 were injured, while 64,000 were homeless in flooding in South Kivu Province."
+        },
+        {
+            "Country": "Ethiopia",
+            "Start_Date_Death": "11 April 2020",
+            "End_Date_Death": "29 May 2020",
+            "Num_Death": "34",
+            "Death_with_annotation": "As many as 12 people are thought to have died in a landslide triggered by heavy rain in Ethiopia."
+        },
+        {
+            "Country": "Somalia",
+            "Start_Date_Death": "20 April 2020",
+            "End_Date_Death": "11 May 2020",
+            "Num_Death": "21",
+            "Death_with_annotation": "16 people have died, 546,103 affected and 216,895 displaced."
+        },
+        {
+            "Country": "Uganda",
+            "Start_Date_Death": "1 May 2020",
+            "End_Date_Death": "21 May 2020",
+            "Num_Death": "11",
+            "Death_with_annotation": "Thousands of people have been affected by flash flooding and landslides in Western and Northern Regions after heavy rainfall from around 1 May."
+        },
+        {
+            "Country": "Djibouti",
+            "Start_Date_Death": "21 April 2020",
+            "End_Date_Death": "21 April 2020",
+            "Num_Death": "8",
+            "Death_with_annotation": "8 people have died in flash flooding in Djibouti."
+        },
+        {
+            "Country": "Burundi",
+            "Start_Date_Death": "2 March 2020",
+            "End_Date_Death": "8 March 2020",
+            "Num_Death": "1",
+            "Death_with_annotation": "1 person died and 280 were displaced after severe weather in Burundi during the period 2 to 8 March."
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "Rwanda",
+            "Location_Death": [
+                "Ruhango district",
+                "Gasabo District",
+                "Rulindo district",
+                "Nyanza District",
+                "Nyamagabe district",
+                "Gicumbi district",
+                "Gatsibo district"
+            ],
+            "Start_Date_Death": "2 March 2020",
+            "End_Date_Death": "7 May 2020",
+            "Num_Death": "97",
+            "Death_with_annotation": "Heavy rain, lighting and thunderstorms affected the country between 2 and 4 March, causing 5 fatalities, with floods reported in Kigali and Southern provinces."
+        },
+        {
+            "Country": "Kenya",
+            "Location_Death": [
+                "Busia",
+                "Siaya",
+                "Budalangi Constituency",
+                "West Pokot",
+                "Elgeyo Marakwet"
+            ],
+            "Start_Date_Death": "April 2020",
+            "End_Date_Death": "May 2020",
+            "Num_Death": "237",
+            "Death_with_annotation": "237 people have died in flooding in Kenya in April and May while over 100,000 have been displaced."
+        },
+        {
+            "Country": "Somalia",
+            "Location_Death": [
+                "Gardo",
+                "Bari region"
+            ],
+            "Start_Date_Death": "20 April 2020",
+            "End_Date_Death": "11 May 2020",
+            "Num_Death": "21",
+            "Death_with_annotation": "16 people have died, 546,103 affected and 216,895 displaced."
+        },
+        {
+            "Country": "Burundi",
+            "Location_Death": [
+                "Burundi"
+            ],
+            "Start_Date_Death": "2 March 2020",
+            "End_Date_Death": "8 March 2020",
+            "Num_Death": "1",
+            "Death_with_annotation": "1 person died and 280 were displaced after severe weather in Burundi during the period 2 to 8 March."
+        },
+        {
+            "Country": "Djibouti",
+            "Location_Death": [
+                "Djibouti city",
+                "Balbala"
+            ],
+            "Start_Date_Death": "21 April 2020",
+            "End_Date_Death": "21 April 2020",
+            "Num_Death": "8",
+            "Death_with_annotation": "8 people have died in flash flooding in Djibouti."
+        },
+        {
+            "Country": "Ethiopia",
+            "Location_Death": [
+                "Ale Special Woreda",
+                "Gamo zone",
+                "Jinka town",
+                "Dire Dawa"
+            ],
+            "Start_Date_Death": "11 April 2020",
+            "End_Date_Death": "29 May 2020",
+            "Num_Death": "34",
+            "Death_with_annotation": "As many as 12 people are thought to have died in a landslide triggered by heavy rain in Ethiopia."
+        },
+        {
+            "Country": "Uganda",
+            "Location_Death": [
+                "Western Region",
+                "Northern Region",
+                "Rubanda District",
+                "Kabale District",
+                "Nakapiripirit district",
+                "Mayuge District"
+            ],
+            "Start_Date_Death": "1 May 2020",
+            "End_Date_Death": "21 May 2020",
+            "Num_Death": "11",
+            "Death_with_annotation": "Thousands of people have been affected by flash flooding and landslides in Western and Northern Regions after heavy rainfall from around 1 May."
+        },
+        {
+            "Country": "Democratic Republic of the Congo",
+            "Location_Death": [
+                "South Kivu Province",
+                "Uvira"
+            ],
+            "Start_Date_Death": "16 April 2020",
+            "End_Date_Death": "17 April 2020",
+            "Num_Death": "44",
+            "Death_with_annotation": "44 people died, 200 were injured, while 64,000 were homeless in flooding in South Kivu Province."
+        }
+    ],
+    "Start_Date": "March 2020",
+    "End_Date": "May 2020",
+    "Time_with_Annotation": "They began when excessive rains began falling in March, leading to massive flooding and landslides. [...] Heavy rain across the country from 1 to 3 May caused severe damages and 8 fatalities.",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "NULL",
+        "Total_Insured_Damage_Units": "NULL",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "Rwanda",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Kenya",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Somalia",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Burundi",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Ethiopia",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Uganda",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Democratic Republic of the Congo",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Djibouti",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Tanzania",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "Rwanda",
+            "Location_Insured_Damage": [
+                "Kigali",
+                "Southern provinces",
+                "Ruhango district",
+                "Gasabo District",
+                "Rulindo district",
+                "Nyanza District",
+                "Nyamagabe district",
+                "Gicumbi district",
+                "Nyankenke",
+                "Kageyo Sectors",
+                "Eastern province",
+                "Gatsibo district",
+                "Byimana weather station"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Kenya",
+            "Location_Insured_Damage": [
+                "Busia",
+                "Siaya counties",
+                "Nzoia river",
+                "Budalangi Constituency",
+                "West Pokot",
+                "Elgeyo Marakwet Counties"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Somalia",
+            "Location_Insured_Damage": [
+                "Gardo",
+                "Bari region",
+                "Puntland state"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Burundi",
+            "Location_Insured_Damage": [
+                "NULL"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Ethiopia",
+            "Location_Insured_Damage": [
+                "Ale Special Woreda",
+                "Southern Nations Nationalities and Peoples Region",
+                "Gamo zone",
+                "Jinka town",
+                "Dire Dawa"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Uganda",
+            "Location_Insured_Damage": [
+                "Western and Northern Regions",
+                "Rubanda District",
+                "Kabale District",
+                "Nakapiripirit district",
+                "Lake Victoria",
+                "Mayuge District"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Democratic Republic of the Congo",
+            "Location_Insured_Damage": [
+                "South Kivu Province",
+                "Uvira"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Djibouti",
+            "Location_Insured_Damage": [
+                "Djibouti city",
+                "Balbala"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Tanzania",
+            "Location_Insured_Damage": [
+                "Arusha",
+                "Kilimanjaro",
+                "Arumeru District",
+                "Moshi district",
+                "Hai District"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "at least 700,000",
+        "Total_Displacement_Annotation": "The 2020 East Africa floods were a natural disaster in Rwanda, Kenya, Somalia, Burundi, Ethiopia, Uganda, Democratic Republic of Congo, Djibouti and Tanzania, affecting at least 700,000 people."
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "Kenya",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "over 100,000",
+            "Displacement_with_annotation": "237 people have died in flooding in Kenya in April and May while over 100,000 have been displaced."
+        },
+        {
+            "Country": "Somalia",
+            "Start_Date_Displacement": "20 April",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "216,895",
+            "Displacement_with_annotation": "Heavy rain has affected wide areas of Somalia from 20 April, causing rivers to rise and flash flooding. On 27 April, massive flash flooding swept through the city of Gardo in the northeastern Bari region, part of the autonomous Puntland state. 16 people have died, 546,103 affected and 216,895 displaced."
+        },
+        {
+            "Country": "Burundi",
+            "Start_Date_Displacement": "2 March",
+            "End_Date_Displacement": "8 March",
+            "Num_Displacement": "280",
+            "Displacement_with_annotation": "1 person died and 280 were displaced after severe weather in Burundi during the period 2 to 8 March."
+        },
+        {
+            "Country": "Djibouti",
+            "Start_Date_Displacement": "21 April",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "18,000 households (approximately 110,000 persons)",
+            "Displacement_with_annotation": "8 people have died in flash flooding in Djibouti. Djibouti city and surrounding areas were the worst affected after flash flooding struck on 21 April after overnight heavy rain. The UN in Djibouti said initial estimates indicate that some 18,000 households (approximately 110,000 persons) were affected across Djibouti city and its suburb of Balbala."
+        },
+        {
+            "Country": "Uganda",
+            "Start_Date_Displacement": "1 May",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "around 5,000",
+            "Displacement_with_annotation": "Thousands of people have been affected by flash flooding and landslides in Western and Northern Regions after heavy rainfall from around 1 May. Homes were destroyed and around 5,000 people displaced."
+        },
+        {
+            "Country": "Uganda",
+            "Start_Date_Displacement": "2 May",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "500 families",
+            "Displacement_with_annotation": "About 500 families in Nakapiripirit district have been displaced and their crops destroyed following flood triggered by heavy rain on 2 May."
+        },
+        {
+            "Country": "Uganda",
+            "Start_Date_Displacement": "May",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "more than 3,800",
+            "Displacement_with_annotation": "Heavy rain over recent weeks has increased levels of Lake Victoria where more than 3,800 people on lake islands in Mayuge District, were told to evacuate as levels of the lake rose."
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "Kenya",
+            "Location_Displacement": [
+                "Busia",
+                "Siaya"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "Wide areas of land are under water in Busia and Siaya counties, western Kenya, after the Nzoia river overflowed."
+        },
+        {
+            "Country": "Kenya",
+            "Location_Displacement": [
+                "Budalangi Constituency"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "Some of the effects of the 2020 floods in the country lead to displacements of people in Budalangi Constituency in Western part of Kenya who live at the shores of Nzoia River."
+        },
+        {
+            "Country": "Somalia",
+            "Location_Displacement": [
+                "Gardo",
+                "Bari region",
+                "Puntland state"
+            ],
+            "Start_Date_Displacement": "27 April",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "On 27 April, massive flash flooding swept through the city of Gardo in the northeastern Bari region, part of the autonomous Puntland state."
+        },
+        {
+            "Country": "Burundi",
+            "Location_Displacement": [
+                "NULL"
+            ],
+            "Start_Date_Displacement": "2 March",
+            "End_Date_Displacement": "8 March",
+            "Num_Displacement": "280",
+            "Displacement_with_annotation": "1 person died and 280 were displaced after severe weather in Burundi during the period 2 to 8 March."
+        },
+        {
+            "Country": "Djibouti",
+            "Location_Displacement": [
+                "Djibouti city",
+                "Balbala"
+            ],
+            "Start_Date_Displacement": "21 April",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "18,000 households (approximately 110,000 persons)",
+            "Displacement_with_annotation": "The UN in Djibouti said initial estimates indicate that some 18,000 households (approximately 110,000 persons) were affected across Djibouti city and its suburb of Balbala."
+        },
+        {
+            "Country": "Uganda",
+            "Location_Displacement": [
+                "Western Region",
+                "Northern Region"
+            ],
+            "Start_Date_Displacement": "1 May",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "around 5,000",
+            "Displacement_with_annotation": "Thousands of people have been affected by flash flooding and landslides in Western and Northern Regions after heavy rainfall from around 1 May. Homes were destroyed and around 5,000 people displaced."
+        },
+        {
+            "Country": "Uganda",
+            "Location_Displacement": [
+                "Nakapiripirit district"
+            ],
+            "Start_Date_Displacement": "2 May",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "500 families",
+            "Displacement_with_annotation": "About 500 families in Nakapiripirit district have been displaced and their crops destroyed following flood triggered by heavy rain on 2 May."
+        },
+        {
+            "Country": "Uganda",
+            "Location_Displacement": [
+                "Mayuge District"
+            ],
+            "Start_Date_Displacement": "May",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "more than 3,800",
+            "Displacement_with_annotation": "Heavy rain over recent weeks has increased levels of Lake Victoria where more than 3,800 people on lake islands in Mayuge District, were told to evacuate as levels of the lake rose."
+        }
+    ],
+    "Location": [
+        "Rwanda",
+        "Kenya",
+        "Somalia",
+        "Burundi",
+        "Ethiopia",
+        "Uganda",
+        "Democratic Republic of the Congo",
+        "Djibouti",
+        "Tanzania"
+    ],
+    "Location_with_Annotation": {
+        "Rwanda": "The 2020 East Africa floods were a natural disaster in Rwanda, Kenya, Somalia, Burundi, Ethiopia, Uganda, Democratic Republic of Congo, Djibouti and Tanzania, affecting at least 700,000 people.",
+        "Kenya": "237 people have died in flooding in Kenya in April and May while over 100,000 have been displaced.",
+        "Somalia": "Heavy rain has affected wide areas of Somalia from 20 April, causing rivers to rise and flash flooding.",
+        "Burundi": "1 person died and 280 were displaced after severe weather in Burundi during the period 2 to 8 March.",
+        "Ethiopia": "As many as 12 people are thought to have died in a landslide triggered by heavy rain in Ethiopia.",
+        "Uganda": "Thousands of people have been affected by flash flooding and landslides in Western and Northern Regions after heavy rainfall from around 1 May.",
+        "Democratic Republic of the Congo": "44 people died, 200 were injured, while 64,000 were homeless in flooding in South Kivu Province.",
+        "Djibouti": "8 people have died in flash flooding in Djibouti. Djibouti city and surrounding areas were the worst affected after flash flooding struck on 21 April after overnight heavy rain.",
+        "Tanzania": "In April, thousands of people have been affected by flooding and mudslides in Arusha and Kilimanjaro, northern Tanzania."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "NULL",
+        "Total_Economic_Damage_Units": "NULL",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "NULL"
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "Rwanda",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Kenya",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Somalia",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Burundi",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Djibouti",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Ethiopia",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Uganda",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Democratic Republic of the Congo",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Tanzania",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "Rwanda",
+            "Location_Economic_Damage": [
+                "Kigali",
+                "Southern provinces",
+                "Ruhango district",
+                "Gasabo District",
+                "Rulindo district",
+                "Nyanza District",
+                "Nyamagabe district",
+                "Gicumbi district",
+                "Nyankenke",
+                "Kageyo Sectors",
+                "Eastern province",
+                "Gatsibo district",
+                "Ruhango District"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Heavy rain, lighting and thunderstorms affected the country between 2 and 4 March, causing 5 fatalities, with floods reported in Kigali and Southern provinces. Two people died in flooding in Ruhango district, Southern Province and one person in Gasabo District, Kigali Province. One person also died as a result of lightning strikes in Rulindo district, Northern Province and another one in Nyanza District, Southern Province. A total of 13 people were injured and 42 houses destroyed. Roads and bridges were also damaged or destroyed. On 7 March 5 people died after heavy rain caused a river to overflow and flood a cave in Nyamagabe district in Southern Province. In April, 6 people died after heavy rain triggered landslides in Gicumbi district in Northern Province. The worst affected areas are Nyankenke and Kageyo Sectors. Property, infrastructure and livestock have all been damaged or destroyed. Authorities urged residents in high-risk zones to relocate to safer areas. Heavy rain also affected parts of Eastern province 19 and 20 April where media said at least 3 people had died in separate flood incidents in Gatsibo district. Flooding has also caused damage to crops in the district. Heavy rain across the country from 1 to 3 May caused severe damages and 8 fatalities. 70 people have died in floods and landslides after torrential rain. The Byimana weather station in Ruhango District recorded 140 mm of rainfall in 24 hours on 7 May. The rain and floods also destroyed 91 houses, 5 bridges, and washed away crops."
+        },
+        {
+            "Country": "Kenya",
+            "Location_Economic_Damage": [
+                "Busia",
+                "Siaya counties",
+                "Nzoia river",
+                "Budalangi Constituency",
+                "West Pokot",
+                "Elgeyo Marakwet Counties"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "237 people have died in flooding in Kenya in April and May while over 100,000 have been displaced. Flooding has affected 29 of the country's 47 counties. Wide areas of land are under water in Busia and Siaya counties, western Kenya, after the Nzoia river overflowed. More than 800,000 Kenyans in 161,000 households have been adversely affected by the effects of the ongoing heavy rains. Some of the effects of the 2020 floods in the country lead to displacements of people in Budalangi Constituency in Western part of Kenya who live at the shores of Nzoia River. In April 2020, extreme heavy rains caused landslide in West Pokot and Elgeyo Marakwet Counties which lead to death of 19 people, missing people, homes destroyed and dead of livestock."
+        },
+        {
+            "Country": "Somalia",
+            "Location_Economic_Damage": [
+                "Gardo",
+                "Bari region",
+                "Puntland state"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Heavy rain has affected wide areas of Somalia from 20 April, causing rivers to rise and flash flooding. On 27 April, massive flash flooding swept through the city of Gardo in the northeastern Bari region, part of the autonomous Puntland state. 16 people have died, 546,103 affected and 216,895 displaced. Hundreds of families have reportedly lost their homes. In addition five people died when the rain caused a house to collapse on 11 May."
+        },
+        {
+            "Country": "Burundi",
+            "Location_Economic_Damage": [
+                "NULL"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "1 person died and 280 were displaced after severe weather in Burundi during the period 2 to 8 March."
+        },
+        {
+            "Country": "Djibouti",
+            "Location_Economic_Damage": [
+                "Djibouti city",
+                "Balbala"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "8 people have died in flash flooding in Djibouti. Djibouti city and surrounding areas were the worst affected after flash flooding struck on 21 April after overnight heavy rain. The UN in Djibouti said initial estimates indicate that some 18,000 households (approximately 110,000 persons) were affected across Djibouti city and its suburb of Balbala."
+        },
+        {
+            "Country": "Ethiopia",
+            "Location_Economic_Damage": [
+                "Ale Special Woreda",
+                "Southern Nations Nationalities and Peoples Region (SNNP)",
+                "Gamo zone",
+                "Jinka town",
+                "Dire Dawa",
+                "Gamo Zone"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "As many as 12 people are thought to have died in a landslide triggered by heavy rain in Ethiopia. The landslide struck in Ale Special Woreda in Southern Nations Nationalities and Peoples Region (SNNP). Six houses were completely destroyed and several families displaced. Seven bodies have been found, with 5 still missing. Search operations were continuing but has been hindered by unstable terrain. Eight people died in Gamo zone in a period 11 to 18 April. Flooding in Jinka town on 25 April damaged infrastructure and livestock. Other areas of the country have also seen heavy rain since late April. Flash floods on 24 April left at least 4 people dead in Dire Dawa. On 29 May landslide killed 10 people in Gamo Zone."
+        },
+        {
+            "Country": "Uganda",
+            "Location_Economic_Damage": [
+                "Western and Northern Regions",
+                "Rubanda District",
+                "Kabale District",
+                "Nakapiripirit district",
+                "Lake Victoria",
+                "Mayuge District"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Thousands of people have been affected by flash flooding and landslides in Western and Northern Regions after heavy rainfall from around 1 May. Homes were destroyed and around 5,000 people displaced. Four people are thought to have died in the floods, with a further 3 people missing. Severe flooding and landslides occurred in Rubanda District, where 2 people have died and 31 houses have been destroyed. The landslides struck after hours of heavy rain on 2 May. Flooding in Kabale District in Western Uganda on 1 May damaged roads and homes. At least person reportedly died in the floods. About 500 families in Nakapiripirit district have been displaced and their crops destroyed following flood triggered by heavy rain on 2 May. Heavy rain over recent weeks has increased levels of Lake Victoria where more than 3,800 people on lake islands in Mayuge District, were told to evacuate as levels of the lake rose. On 21 May, 8 persons perished in new flash floods."
+        },
+        {
+            "Country": "Democratic Republic of the Congo",
+            "Location_Economic_Damage": [
+                "South Kivu Province",
+                "Uvira"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "44 people died, 200 were injured, while 64,000 were homeless in flooding in South Kivu Province. Torrential rain fell in the city of Uvira and surrounding areas in South Kivu, from 16 to 17 April."
+        },
+        {
+            "Country": "Tanzania",
+            "Location_Economic_Damage": [
+                "Arusha",
+                "Kilimanjaro",
+                "Arumeru District",
+                "Arusha Region",
+                "Moshi district",
+                "Hai District"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "In April, thousands of people have been affected by flooding and mudslides in Arusha and Kilimanjaro, northern Tanzania. Two fatalities were reported in Arumeru District, Arusha Region, where at least 50 homes have been destroyed. Flooding has also blocked the important Arusha-Moshi road in Arumeru District, stranding hundreds of passengers. In Kilimanjaro region, more than 2,700 households in Moshi district have been made homeless by floods. Dozens of homes have been swept away by flash floods in Hai District."
+        }
+    ],
+    "Perils": "Rainfall|Flood|Landslide|Lightning|Thunderstorm",
+    "Perils_Assessment_With_Annotation": {
+        "Rainfall": "They began when excessive rains began falling in March, leading to massive flooding and landslides.",
+        "Flood": "They began when excessive rains began falling in March, leading to massive flooding and landslides.",
+        "Landslide": "They began when excessive rains began falling in March, leading to massive flooding and landslides.",
+        "Lightning": "Heavy rain, lighting and thunderstorms affected the country between 2 and 4 March, causing 5 fatalities.",
+        "Thunderstorm": "Heavy rain, lighting and thunderstorms affected the country between 2 and 4 March, causing 5 fatalities."
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "NULL",
+        "Total_Building_Damage_Annotation": "NULL"
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "Rwanda",
+            "Start_Date_Building_Damage": "2 March 2020",
+            "End_Date_Building_Damage": "7 May 2020",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "NULL"
+        },
+        {
+            "Country": "Kenya",
+            "Start_Date_Building_Damage": "April 2020",
+            "End_Date_Building_Damage": "May 2020",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "NULL"
+        },
+        {
+            "Country": "Somalia",
+            "Start_Date_Building_Damage": "20 April 2020",
+            "End_Date_Building_Damage": "11 May 2020",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "NULL"
+        },
+        {
+            "Country": "Burundi",
+            "Start_Date_Building_Damage": "2 March 2020",
+            "End_Date_Building_Damage": "8 March 2020",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "NULL"
+        },
+        {
+            "Country": "Djibouti",
+            "Start_Date_Building_Damage": "21 April 2020",
+            "End_Date_Building_Damage": "21 April 2020",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "NULL"
+        },
+        {
+            "Country": "Ethiopia",
+            "Start_Date_Building_Damage": "April 2020",
+            "End_Date_Building_Damage": "29 May 2020",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "NULL"
+        },
+        {
+            "Country": "Uganda",
+            "Start_Date_Building_Damage": "1 May 2020",
+            "End_Date_Building_Damage": "21 May 2020",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "NULL"
+        },
+        {
+            "Country": "Democratic Republic of the Congo",
+            "Start_Date_Building_Damage": "16 April 2020",
+            "End_Date_Building_Damage": "17 April 2020",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "NULL"
+        },
+        {
+            "Country": "Tanzania",
+            "Start_Date_Building_Damage": "April 2020",
+            "End_Date_Building_Damage": "April 2020",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "Rwanda",
+            "Location_Building_Damage": [
+                "Ruhango district",
+                "Gasabo District",
+                "Rulindo district",
+                "Nyanza District",
+                "Nyamagabe district",
+                "Gicumbi district",
+                "Gatsibo district"
+            ],
+            "Start_Date_Building_Damage": "2 March 2020",
+            "End_Date_Building_Damage": "7 May 2020",
+            "Num_Building_Damage": "42 houses; 91 houses; 5 bridges",
+            "Building_Damage_with_annotation": "A total of 13 people were injured and 42 houses destroyed. Roads and bridges were also damaged or destroyed. The rain and floods also destroyed 91 houses, 5 bridges, and washed away crops."
+        },
+        {
+            "Country": "Kenya",
+            "Location_Building_Damage": [
+                "Busia and Siaya counties",
+                "Budalangi Constituency",
+                "West Pokot and Elgeyo Marakwet Counties"
+            ],
+            "Start_Date_Building_Damage": "April 2020",
+            "End_Date_Building_Damage": "May 2020",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "NULL"
+        },
+        {
+            "Country": "Somalia",
+            "Location_Building_Damage": [
+                "Gardo"
+            ],
+            "Start_Date_Building_Damage": "20 April 2020",
+            "End_Date_Building_Damage": "11 May 2020",
+            "Num_Building_Damage": "Hundreds of families have reportedly lost their homes.",
+            "Building_Damage_with_annotation": "Hundreds of families have reportedly lost their homes."
+        },
+        {
+            "Country": "Burundi",
+            "Location_Building_Damage": [
+                "NULL"
+            ],
+            "Start_Date_Building_Damage": "2 March 2020",
+            "End_Date_Building_Damage": "8 March 2020",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "NULL"
+        },
+        {
+            "Country": "Djibouti",
+            "Location_Building_Damage": [
+                "Djibouti city",
+                "Balbala"
+            ],
+            "Start_Date_Building_Damage": "21 April 2020",
+            "End_Date_Building_Damage": "21 April 2020",
+            "Num_Building_Damage": "18,000 households",
+            "Building_Damage_with_annotation": "The UN in Djibouti said initial estimates indicate that some 18,000 households (approximately 110,000 persons) were affected across Djibouti city and its suburb of Balbala."
+        },
+        {
+            "Country": "Ethiopia",
+            "Location_Building_Damage": [
+                "Ale Special Woreda",
+                "Gamo zone",
+                "Jinka town",
+                "Dire Dawa"
+            ],
+            "Start_Date_Building_Damage": "April 2020",
+            "End_Date_Building_Damage": "29 May 2020",
+            "Num_Building_Damage": "Six houses",
+            "Building_Damage_with_annotation": "The landslide struck in Ale Special Woreda in Southern Nations Nationalities and Peoples Region (SNNP). Six houses were completely destroyed and several families displaced."
+        },
+        {
+            "Country": "Uganda",
+            "Location_Building_Damage": [
+                "Rubanda District",
+                "Kabale District",
+                "Nakapiripirit district",
+                "Mayuge District"
+            ],
+            "Start_Date_Building_Damage": "1 May 2020",
+            "End_Date_Building_Damage": "21 May 2020",
+            "Num_Building_Damage": "31 houses",
+            "Building_Damage_with_annotation": "Severe flooding and landslides occurred in Rubanda District, where 2 people have died and 31 houses have been destroyed."
+        },
+        {
+            "Country": "Democratic Republic of the Congo",
+            "Location_Building_Damage": [
+                "South Kivu Province"
+            ],
+            "Start_Date_Building_Damage": "16 April 2020",
+            "End_Date_Building_Damage": "17 April 2020",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "NULL"
+        },
+        {
+            "Country": "Tanzania",
+            "Location_Building_Damage": [
+                "Arumeru District",
+                "Kilimanjaro region",
+                "Hai District"
+            ],
+            "Start_Date_Building_Damage": "April 2020",
+            "End_Date_Building_Damage": "April 2020",
+            "Num_Building_Damage": "50 homes; 2,700 households; Dozens of homes",
+            "Building_Damage_with_annotation": "Two fatalities were reported in Arumeru District, Arusha Region, where at least 50 homes have been destroyed. In Kilimanjaro region, more than 2,700 households in Moshi district have been made homeless by floods. Dozens of homes have been swept away by flash floods in Hai District."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "at least 700,000 people",
+        "Total_Affected_Annotation": "The 2020 East Africa floods were a natural disaster in Rwanda, Kenya, Somalia, Burundi, Ethiopia, Uganda, Democratic Republic of Congo, Djibouti and Tanzania, affecting at least 700,000 people."
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "Kenya",
+            "Start_Date_Affected": "April 2020",
+            "End_Date_Affected": "May 2020",
+            "Num_Affected": "more than 800,000 Kenyans in 161,000 households",
+            "Affected_with_annotation": "More than 800,000 Kenyans in 161,000 households have been adversely affected by the effects of the ongoing heavy rains."
+        },
+        {
+            "Country": "Somalia",
+            "Start_Date_Affected": "20 April 2020",
+            "End_Date_Affected": "11 May 2020",
+            "Num_Affected": "546,103 affected",
+            "Affected_with_annotation": "Heavy rain has affected wide areas of Somalia from 20 April, causing rivers to rise and flash flooding. On 27 April, massive flash flooding swept through the city of Gardo in the northeastern Bari region, part of the autonomous Puntland state. 16 people have died, 546,103 affected and 216,895 displaced."
+        },
+        {
+            "Country": "Burundi",
+            "Start_Date_Affected": "2 March 2020",
+            "End_Date_Affected": "8 March 2020",
+            "Num_Affected": "280",
+            "Affected_with_annotation": "1 person died and 280 were displaced after severe weather in Burundi during the period 2 to 8 March."
+        },
+        {
+            "Country": "Djibouti",
+            "Start_Date_Affected": "21 April 2020",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "approximately 110,000 persons",
+            "Affected_with_annotation": "The UN in Djibouti said initial estimates indicate that some 18,000 households (approximately 110,000 persons) were affected across Djibouti city and its suburb of Balbala."
+        },
+        {
+            "Country": "Uganda",
+            "Start_Date_Affected": "1 May 2020",
+            "End_Date_Affected": "21 May 2020",
+            "Num_Affected": "around 5,000 people",
+            "Affected_with_annotation": "Thousands of people have been affected by flash flooding and landslides in Western and Northern Regions after heavy rainfall from around 1 May. Homes were destroyed and around 5,000 people displaced."
+        },
+        {
+            "Country": "Democratic Republic of the Congo",
+            "Start_Date_Affected": "16 April 2020",
+            "End_Date_Affected": "17 April 2020",
+            "Num_Affected": "64,000",
+            "Affected_with_annotation": "44 people died, 200 were injured, while 64,000 were homeless in flooding in South Kivu Province."
+        },
+        {
+            "Country": "Tanzania",
+            "Start_Date_Affected": "April 2020",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "thousands of people",
+            "Affected_with_annotation": "In April, thousands of people have been affected by flooding and mudslides in Arusha and Kilimanjaro, northern Tanzania."
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "Rwanda",
+            "Location_Affected": [
+                "Kigali",
+                "Southern provinces",
+                "Ruhango district",
+                "Gasabo District",
+                "Rulindo district",
+                "Nyanza District",
+                "Nyamagabe district",
+                "Gicumbi district",
+                "Nyankenke",
+                "Kageyo Sectors",
+                "Eastern province",
+                "Gatsibo district",
+                "Byimana weather station"
+            ],
+            "Start_Date_Affected": "2 March 2020",
+            "End_Date_Affected": "7 May 2020",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Heavy rain, lighting and thunderstorms affected the country between 2 and 4 March, causing 5 fatalities, with floods reported in Kigali and Southern provinces. Two people died in flooding in Ruhango district, Southern Province and one person in Gasabo District, Kigali Province. One person also died as a result of lightning strikes in Rulindo district, Northern Province and another one in Nyanza District, Southern Province. A total of 13 people were injured and 42 houses destroyed. Roads and bridges were also damaged or destroyed. On 7 March 5 people died after heavy rain caused a river to overflow and flood a cave in Nyamagabe district in Southern Province. In April, 6 people died after heavy rain triggered landslides in Gicumbi district in Northern Province. The worst affected areas are Nyankenke and Kageyo Sectors. Property, infrastructure and livestock have all been damaged or destroyed. Authorities urged residents in high-risk zones to relocate to safer areas. Heavy rain also affected parts of Eastern province 19 and 20 April where media said at least 3 people had died in separate flood incidents in Gatsibo district. Flooding has also caused damage to crops in the district. Heavy rain across the country from 1 to 3 May caused severe damages and 8 fatalities. 70 people have died in floods and landslides after torrential rain. The Byimana weather station in Ruhango District recorded 140 mm of rainfall in 24 hours on 7 May. The rain and floods also destroyed 91 houses, 5 bridges, and washed away crops."
+        },
+        {
+            "Country": "Kenya",
+            "Location_Affected": [
+                "Busia",
+                "Siaya counties",
+                "Budalangi Constituency",
+                "West Pokot",
+                "Elgeyo Marakwet Counties"
+            ],
+            "Start_Date_Affected": "April 2020",
+            "End_Date_Affected": "May 2020",
+            "Num_Affected": "more than 800,000 Kenyans in 161,000 households",
+            "Affected_with_annotation": "237 people have died in flooding in Kenya in April and May while over 100,000 have been displaced. Flooding has affected 29 of the country's 47 counties. Wide areas of land are under water in Busia and Siaya counties, western Kenya, after the Nzoia river overflowed. More than 800,000 Kenyans in 161,000 households have been adversely affected by the effects of the ongoing heavy rains. Some of the effects of the 2020 floods in the country lead to displacements of people in Budalangi Constituency in Western part of Kenya who live at the shores of Nzoia River. In April 2020, extreme heavy rains caused landslide in West Pokot and Elgeyo Marakwet Counties which lead to death of 19 people, missing people, homes destroyed and dead of livestock."
+        },
+        {
+            "Country": "Somalia",
+            "Location_Affected": [
+                "Gardo",
+                "Bari region",
+                "Puntland state"
+            ],
+            "Start_Date_Affected": "20 April 2020",
+            "End_Date_Affected": "11 May 2020",
+            "Num_Affected": "546,103 affected",
+            "Affected_with_annotation": "Heavy rain has affected wide areas of Somalia from 20 April, causing rivers to rise and flash flooding. On 27 April, massive flash flooding swept through the city of Gardo in the northeastern Bari region, part of the autonomous Puntland state. 16 people have died, 546,103 affected and 216,895 displaced. Hundreds of families have reportedly lost their homes. In addition five people died when the rain caused a house to collapse on 11 May."
+        },
+        {
+            "Country": "Burundi",
+            "Location_Affected": [
+                "NULL"
+            ],
+            "Start_Date_Affected": "2 March 2020",
+            "End_Date_Affected": "8 March 2020",
+            "Num_Affected": "280",
+            "Affected_with_annotation": "1 person died and 280 were displaced after severe weather in Burundi during the period 2 to 8 March."
+        },
+        {
+            "Country": "Djibouti",
+            "Location_Affected": [
+                "Djibouti city",
+                "Balbala"
+            ],
+            "Start_Date_Affected": "21 April 2020",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "approximately 110,000 persons",
+            "Affected_with_annotation": "8 people have died in flash flooding in Djibouti. Djibouti city and surrounding areas were the worst affected after flash flooding struck on 21 April after overnight heavy rain. The UN in Djibouti said initial estimates indicate that some 18,000 households (approximately 110,000 persons) were affected across Djibouti city and its suburb of Balbala."
+        },
+        {
+            "Country": "Ethiopia",
+            "Location_Affected": [
+                "Ale Special Woreda",
+                "Southern Nations Nationalities and Peoples Region (SNNP)",
+                "Gamo zone",
+                "Jinka town",
+                "Dire Dawa"
+            ],
+            "Start_Date_Affected": "11 April 2020",
+            "End_Date_Affected": "29 May 2020",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "As many as 12 people are thought to have died in a landslide triggered by heavy rain in Ethiopia. The landslide struck in Ale Special Woreda in Southern Nations Nationalities and Peoples Region (SNNP). Six houses were completely destroyed and several families displaced. Seven bodies have been found, with 5 still missing. Search operations were continuing but has been hindered by unstable terrain. Eight people died in Gamo zone in a period 11 to 18 April. Flooding in Jinka town on 25 April damaged infrastructure and livestock. Other areas of the country have also seen heavy rain since late April. Flash floods on 24 April left at least 4 people dead in Dire Dawa. On 29 May landslide killed 10 people in Gamo Zone."
+        },
+        {
+            "Country": "Uganda",
+            "Location_Affected": [
+                "Western and Northern Regions",
+                "Rubanda District",
+                "Kabale District",
+                "Nakapiripirit district",
+                "Lake Victoria",
+                "Mayuge District"
+            ],
+            "Start_Date_Affected": "1 May 2020",
+            "End_Date_Affected": "21 May 2020",
+            "Num_Affected": "around 5,000 people",
+            "Affected_with_annotation": "Thousands of people have been affected by flash flooding and landslides in Western and Northern Regions after heavy rainfall from around 1 May. Homes were destroyed and around 5,000 people displaced. Four people are thought to have died in the floods, with a further 3 people missing. Severe flooding and landslides occurred in Rubanda District, where 2 people have died and 31 houses have been destroyed. The landslides struck after hours of heavy rain on 2 May. Flooding in Kabale District in Western Uganda on 1 May damaged roads and homes. At least person reportedly died in the floods. About 500 families in Nakapiripirit district have been displaced and their crops destroyed following flood triggered by heavy rain on 2 May. Heavy rain over recent weeks has increased levels of Lake Victoria where more than 3,800 people on lake islands in Mayuge District, were told to evacuate as levels of the lake rose. On 21 May, 8 persons perished in new flash floods."
+        },
+        {
+            "Country": "Democratic Republic of the Congo",
+            "Location_Affected": [
+                "South Kivu Province",
+                "Uvira"
+            ],
+            "Start_Date_Affected": "16 April 2020",
+            "End_Date_Affected": "17 April 2020",
+            "Num_Affected": "64,000",
+            "Affected_with_annotation": "44 people died, 200 were injured, while 64,000 were homeless in flooding in South Kivu Province. Torrential rain fell in the city of Uvira and surrounding areas in South Kivu, from 16 to 17 April."
+        },
+        {
+            "Country": "Tanzania",
+            "Location_Affected": [
+                "Arusha",
+                "Kilimanjaro",
+                "Arumeru District",
+                "Moshi district",
+                "Hai District"
+            ],
+            "Start_Date_Affected": "April 2020",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "thousands of people",
+            "Affected_with_annotation": "In April, thousands of people have been affected by flooding and mudslides in Arusha and Kilimanjaro, northern Tanzania. Two fatalities were reported in Arumeru District, Arusha Region, where at least 50 homes have been destroyed. Flooding has also blocked the important Arusha-Moshi road in Arumeru District, stranding hundreds of passengers. In Kilimanjaro region, more than 2,700 households in Moshi district have been made homeless by floods. Dozens of homes have been swept away by flash floods in Hai District."
+        }
+    ]
+}

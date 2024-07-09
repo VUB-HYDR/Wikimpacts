@@ -1,0 +1,657 @@
+{
+    "Event_ID": "116.0",
+    "Source": "https://en.wikipedia.org/wiki/Hurricane_Earl_(2022)",
+    "Event_Name": "Hurricane Earl (2022)   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "None reported",
+        "Total_Homelessness_Annotation": "The storm struck Newfoundland with hurricane-force winds and significant rainfall, but overall damage from the storm was minor."
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "Puerto Rico",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "None reported",
+            "Homelessness_with_annotation": "In Salinas, Puerto Rico, 2 people died after being struck by lightning while riding a jet ski."
+        },
+        {
+            "Country": "United States",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "None reported",
+            "Homelessness_with_annotation": "Two people drowned off the coast of New Jersey due to rip currents: one in Ocean City and the other in Loveladies."
+        },
+        {
+            "Country": "Bermuda",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "None reported",
+            "Homelessness_with_annotation": "Bermuda was hit with sustained winds of 35 mph (60 km/h) as Hurricane Earl passed within about 90 mi (145 km) away from the island's eastern coast; much higher gusts were reported, including one of 67 mph (108 km/h) at the National Museum of Bermuda. There were localized power outages across the archipelago but no major damage was reported."
+        },
+        {
+            "Country": "Canada",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "None reported",
+            "Homelessness_with_annotation": "During a 36-hour period on September 10\u201312, 7\u20138 in (175\u2013200 mm) of rain fell in the St. Johns area, causing overflowing along the Waterford River which led to a large amount of urban flooding. Similar rainfall amounts were also observed in communities throughout the Avalon Peninsula. Hurricane-force winds hit Grand Bank. Additionally, the cyclone caused rough surf which damaged the breakwater on the coast near Trepassey, Newfoundland and Labrador, bringing localized flooding to the area."
+        },
+        {
+            "Country": "United Kingdom",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "None reported",
+            "Homelessness_with_annotation": "Despite being far away from the United Kingdom and Ireland, the countries still saw heavy rainfall and rough surf from its outer bands."
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "Puerto Rico",
+            "Location_Homelessness": [
+                "Salinas"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "None reported",
+            "Homelessness_with_annotation": "In Salinas, Puerto Rico, 2 people died after being struck by lightning while riding a jet ski."
+        },
+        {
+            "Country": "United States",
+            "Location_Homelessness": [
+                "Ocean City",
+                "Loveladies"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "None reported",
+            "Homelessness_with_annotation": "Two people drowned off the coast of New Jersey due to rip currents: one in Ocean City and the other in Loveladies."
+        },
+        {
+            "Country": "Bermuda",
+            "Location_Homelessness": [
+                "Bermuda"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "None reported",
+            "Homelessness_with_annotation": "Bermuda was hit with sustained winds of 35 mph (60 km/h) as Hurricane Earl passed within about 90 mi (145 km) away from the island's eastern coast; much higher gusts were reported, including one of 67 mph (108 km/h) at the National Museum of Bermuda. There were localized power outages across the archipelago but no major damage was reported."
+        },
+        {
+            "Country": "Canada",
+            "Location_Homelessness": [
+                "St. Johns",
+                "Avalon Peninsula",
+                "Grand Bank",
+                "Trepassey",
+                "St. Anthony"
+            ],
+            "Start_Date_Homelessness": "September 10, 2022",
+            "End_Date_Homelessness": "September 12, 2022",
+            "Num_Homelessness": "None reported",
+            "Homelessness_with_annotation": "During a 36-hour period on September 10\u201312, 7\u20138 in (175\u2013200 mm) of rain fell in the St. Johns area, causing overflowing along the Waterford River which led to a large amount of urban flooding. Similar rainfall amounts were also observed in communities throughout the Avalon Peninsula. Hurricane-force winds hit Grand Bank. Additionally, the cyclone caused rough surf which damaged the breakwater on the coast near Trepassey, Newfoundland and Labrador, bringing localized flooding to the area."
+        },
+        {
+            "Country": "United Kingdom",
+            "Location_Homelessness": [
+                "United Kingdom",
+                "Ireland"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "None reported",
+            "Homelessness_with_annotation": "Despite being far away from the United Kingdom and Ireland, the countries still saw heavy rainfall and rough surf from its outer bands."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "None reported",
+        "Total_Injury_Annotation": "If the information is missing, assign 'NULL'."
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "Puerto Rico",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "None reported",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "United States",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "None reported",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "Bermuda",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "None reported",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "Canada",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "None reported",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "United Kingdom",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "None reported",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "Ireland",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "None reported",
+            "Injury_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "Puerto Rico",
+            "Location_Injury": [],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "None reported",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "United States",
+            "Location_Injury": [],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "None reported",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "Bermuda",
+            "Location_Injury": [],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "None reported",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "Canada",
+            "Location_Injury": [],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "None reported",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "United Kingdom",
+            "Location_Injury": [],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "None reported",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "Ireland",
+            "Location_Injury": [],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "None reported",
+            "Injury_with_annotation": "NULL"
+        }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Assessment_With_Annotation": "Hurricane Earl was a large, long-lived Category 2 hurricane that brought heavy rain to Puerto Rico and Newfoundland in September 2022 despite remaining mostly out to sea.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "4",
+        "Total_Death_Annotation": "Four fatalities were related to Hurricane Earl: two from lightning in Puerto Rico and two from rip currents in New Jersey."
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "Puerto Rico",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "2",
+            "Death_with_annotation": "In Salinas, Puerto Rico, 2 people died after being struck by lightning while riding a jet ski."
+        },
+        {
+            "Country": "United States",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "2",
+            "Death_with_annotation": "Two people drowned off the coast of New Jersey due to rip currents: one in Ocean City and the other in Loveladies."
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "Puerto Rico",
+            "Location_Death": [
+                "Salinas"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "2",
+            "Death_with_annotation": "In Salinas, Puerto Rico, 2 people died after being struck by lightning while riding a jet ski."
+        },
+        {
+            "Country": "United States",
+            "Location_Death": [
+                "Ocean City",
+                "Loveladies"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "1",
+            "Death_with_annotation": "Two people drowned off the coast of New Jersey due to rip currents: one in Ocean City and the other in Loveladies."
+        },
+        {
+            "Country": "United States",
+            "Location_Death": [
+                "Ocean City",
+                "Loveladies"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "1",
+            "Death_with_annotation": "Two people drowned off the coast of New Jersey due to rip currents: one in Ocean City and the other in Loveladies."
+        }
+    ],
+    "Start_Date": "September 2, 2022",
+    "End_Date": "September 15, 2022",
+    "Time_with_Annotation": "Formed: September 2, 2022\nDissipated: September 15, 2022",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "Minimal",
+        "Total_Insured_Damage_Units": "NULL",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "overall damage from the storm was minor"
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "Puerto Rico",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Bermuda",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Newfoundland",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "British Isles",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "Puerto Rico",
+            "Location_Insured_Damage": [
+                "Salinas"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "2 people died after being struck by lightning while riding a jet ski."
+        },
+        {
+            "Country": "New Jersey",
+            "Location_Insured_Damage": [
+                "Ocean City",
+                "Loveladies"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Two people drowned off the coast of New Jersey due to rip currents: one in Ocean City and the other in Loveladies."
+        },
+        {
+            "Country": "Bermuda",
+            "Location_Insured_Damage": [
+                "National Museum of Bermuda",
+                "L.F. Wade International Airport"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Bermuda was hit with sustained winds of 35 mph (60 km/h) as Hurricane Earl passed within about 90 mi (145 km) away from the island's eastern coast; much higher gusts were reported, including one of 67 mph (108 km/h) at the National Museum of Bermuda. There were localized power outages across the archipelago but no major damage was reported. L.F. Wade International Airport reported gusts of 50\u201360 mph (80\u201397 km/h). Other parts of the island saw 1\u20133 in (25\u201376 mm) of rainfall."
+        },
+        {
+            "Country": "Newfoundland and Labrador",
+            "Location_Insured_Damage": [
+                "St. Johns",
+                "Avalon Peninsula",
+                "Grand Bank",
+                "Trepassey",
+                "St. Anthony"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "During a 36-hour period on September 10\u201312, 7\u20138 in (175\u2013200 mm) of rain fell in the St. Johns area, causing overflowing along the Waterford River which led to a large amount of urban flooding. Similar rainfall amounts were also observed in communities throughout the Avalon Peninsula. Hurricane-force winds hit Grand Bank. Additionally, the cyclone caused rough surf which damaged the breakwater on the coast near Trepassey, Newfoundland and Labrador, bringing localized flooding to the area. A wall holding out water was destroyed in Trepassey after large waves from Earl hit it. As far out as St. Anthony, Newfoundland and Labrador saw heavy rains associated with Earl."
+        },
+        {
+            "Country": "British Isles",
+            "Location_Insured_Damage": [
+                "United Kingdom",
+                "Ireland"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Despite being far away from the United Kingdom and Ireland, the countries still saw heavy rainfall and rough surf from its outer bands."
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "NULL",
+        "Total_Displacement_Annotation": "NULL"
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "Puerto Rico",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        },
+        {
+            "Country": "United States",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        },
+        {
+            "Country": "Bermuda",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        },
+        {
+            "Country": "Canada",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        },
+        {
+            "Country": "United Kingdom",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        },
+        {
+            "Country": "Ireland",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "Bermuda",
+            "Location_Displacement": [
+                "Bermuda"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "All travel to the territory was cancelled as Earl passed, including bus travel on the island."
+        }
+    ],
+    "Location": [
+        "Puerto Rico",
+        "Bermuda",
+        "Newfoundland",
+        "British Isles",
+        "Florida",
+        "North Carolina",
+        "New Jersey",
+        "New England",
+        "Nova Scotia",
+        "St. Johns",
+        "Avalon Peninsula",
+        "Grand Bank",
+        "Trepassey",
+        "St. Anthony"
+    ],
+    "Location_with_Annotation": {
+        "Puerto Rico": "In Salinas, Puerto Rico, 2 people died after being struck by lightning while riding a jet ski.",
+        "Bermuda": "Bermuda was hit with sustained winds of 35 mph (60 km/h) as Hurricane Earl passed within about 90 mi (145 km) away from the island's eastern coast; much higher gusts were reported, including one of 67 mph (108 km/h) at the National Museum of Bermuda.",
+        "Newfoundland": "During a 36-hour period on September 10\u201312, 7\u20138 in (175\u2013200 mm) of rain fell in the St. Johns area, causing overflowing along the Waterford River which led to a large amount of urban flooding.",
+        "British Isles": "Despite being far away from the United Kingdom and Ireland, the countries still saw heavy rainfall and rough surf from its outer bands.",
+        "Florida": "As Earl passed east of Florida, strong swells hit the eastern coast of the state.",
+        "North Carolina": "A large swell caused by Earl hit Cape Hatteras, North Carolina. Rip currents hit Surf City, North Carolina.",
+        "New Jersey": "Two people drowned off the coast of New Jersey due to rip currents: one in Ocean City and the other in Loveladies.",
+        "New England": "Rip currents also hit many areas of New England.",
+        "Nova Scotia": "Nova Scotia saw 'life-threatening' swells.",
+        "St. Johns": "During a 36-hour period on September 10\u201312, 7\u20138 in (175\u2013200 mm) of rain fell in the St. Johns area, causing overflowing along the Waterford River which led to a large amount of urban flooding.",
+        "Avalon Peninsula": "Similar rainfall amounts were also observed in communities throughout the Avalon Peninsula.",
+        "Grand Bank": "Hurricane-force winds hit Grand Bank.",
+        "Trepassey": "Additionally, the cyclone caused rough surf which damaged the breakwater on the coast near Trepassey, Newfoundland and Labrador, bringing localized flooding to the area.",
+        "St. Anthony": "As far out as St. Anthony, Newfoundland and Labrador saw heavy rains associated with Earl."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "Minimal",
+        "Total_Economic_Damage_Units": "NULL",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "overall damage from the storm was minor."
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "Bermuda",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "There were localized power outages across the archipelago but no major damage was reported."
+        },
+        {
+            "Country": "Newfoundland and Labrador",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Hurricane-force winds hit Grand Bank. Additionally, the cyclone caused rough surf which damaged the breakwater on the coast near Trepassey, Newfoundland and Labrador, bringing localized flooding to the area."
+        },
+        {
+            "Country": "United Kingdom and Ireland",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Despite being far away from the United Kingdom and Ireland, the countries still saw heavy rainfall and rough surf from its outer bands."
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "Newfoundland and Labrador",
+            "Location_Economic_Damage": [
+                "Grand Bank",
+                "Trepassey"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Hurricane-force winds hit Grand Bank. Additionally, the cyclone caused rough surf which damaged the breakwater on the coast near Trepassey, Newfoundland and Labrador, bringing localized flooding to the area."
+        }
+    ],
+    "Perils": "Wind|Rainfall|Flood|Lightning",
+    "Perils_Assessment_With_Annotation": {
+        "Wind": "The storm struck Newfoundland with hurricane-force winds and significant rainfall, but overall damage from the storm was minor.",
+        "Rainfall": "During a 36-hour period on September 10\u201312, 7\u20138 in (175\u2013200 mm) of rain fell in the St. Johns area, causing overflowing along the Waterford River which led to a large amount of urban flooding.",
+        "Flood": "During a 36-hour period on September 10\u201312, 7\u20138 in (175\u2013200 mm) of rain fell in the St. Johns area, causing overflowing along the Waterford River which led to a large amount of urban flooding.",
+        "Lightning": "In Salinas, Puerto Rico, 2 people died after being struck by lightning while riding a jet ski."
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "None reported",
+        "Total_Building_Damage_Annotation": "There were localized power outages across the archipelago but no major damage was reported."
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "Bermuda",
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "None reported",
+            "Building_Damage_with_annotation": "There were localized power outages across the archipelago but no major damage was reported."
+        },
+        {
+            "Country": "Newfoundland and Labrador",
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "None reported",
+            "Building_Damage_with_annotation": "Additionally, the cyclone caused rough surf which damaged the breakwater on the coast near Trepassey, Newfoundland and Labrador, bringing localized flooding to the area."
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "Newfoundland and Labrador",
+            "Location_Building_Damage": [
+                "Trepassey"
+            ],
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "None reported",
+            "Building_Damage_with_annotation": "Additionally, the cyclone caused rough surf which damaged the breakwater on the coast near Trepassey, Newfoundland and Labrador, bringing localized flooding to the area."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "NULL",
+        "Total_Affected_Annotation": "NULL"
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "Puerto Rico",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "2",
+            "Affected_with_annotation": "In Salinas, Puerto Rico, 2 people died after being struck by lightning while riding a jet ski."
+        },
+        {
+            "Country": "United States",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "2",
+            "Affected_with_annotation": "Two people drowned off the coast of New Jersey due to rip currents: one in Ocean City and the other in Loveladies."
+        },
+        {
+            "Country": "Bermuda",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Bermuda was hit with sustained winds of 35 mph (60 km/h) as Hurricane Earl passed within about 90 mi (145 km) away from the island's eastern coast; much higher gusts were reported, including one of 67 mph (108 km/h) at the National Museum of Bermuda. There were localized power outages across the archipelago but no major damage was reported."
+        },
+        {
+            "Country": "Canada",
+            "Start_Date_Affected": "September 10",
+            "End_Date_Affected": "September 12",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "During a 36-hour period on September 10\u201312, 7\u20138 in (175\u2013200 mm) of rain fell in the St. Johns area, causing overflowing along the Waterford River which led to a large amount of urban flooding. Similar rainfall amounts were also observed in communities throughout the Avalon Peninsula. Hurricane-force winds hit Grand Bank."
+        },
+        {
+            "Country": "United Kingdom",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Despite being far away from the United Kingdom and Ireland, the countries still saw heavy rainfall and rough surf from its outer bands."
+        },
+        {
+            "Country": "Ireland",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Despite being far away from the United Kingdom and Ireland, the countries still saw heavy rainfall and rough surf from its outer bands."
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "Puerto Rico",
+            "Location_Affected": [
+                "Salinas"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "2",
+            "Affected_with_annotation": "In Salinas, Puerto Rico, 2 people died after being struck by lightning while riding a jet ski."
+        },
+        {
+            "Country": "United States",
+            "Location_Affected": [
+                "Ocean City",
+                "Loveladies"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "2",
+            "Affected_with_annotation": "Two people drowned off the coast of New Jersey due to rip currents: one in Ocean City and the other in Loveladies."
+        },
+        {
+            "Country": "Bermuda",
+            "Location_Affected": [
+                "National Museum of Bermuda"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Bermuda was hit with sustained winds of 35 mph (60 km/h) as Hurricane Earl passed within about 90 mi (145 km) away from the island's eastern coast; much higher gusts were reported, including one of 67 mph (108 km/h) at the National Museum of Bermuda. There were localized power outages across the archipelago but no major damage was reported."
+        },
+        {
+            "Country": "Canada",
+            "Location_Affected": [
+                "St. Johns",
+                "Avalon Peninsula",
+                "Grand Bank"
+            ],
+            "Start_Date_Affected": "September 10",
+            "End_Date_Affected": "September 12",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "During a 36-hour period on September 10\u201312, 7\u20138 in (175\u2013200 mm) of rain fell in the St. Johns area, causing overflowing along the Waterford River which led to a large amount of urban flooding. Similar rainfall amounts were also observed in communities throughout the Avalon Peninsula. Hurricane-force winds hit Grand Bank."
+        },
+        {
+            "Country": "United Kingdom",
+            "Location_Affected": [
+                "NULL"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Despite being far away from the United Kingdom and Ireland, the countries still saw heavy rainfall and rough surf from its outer bands."
+        },
+        {
+            "Country": "Ireland",
+            "Location_Affected": [
+                "NULL"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Despite being far away from the United Kingdom and Ireland, the countries still saw heavy rainfall and rough surf from its outer bands."
+        }
+    ]
+}

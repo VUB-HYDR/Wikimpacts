@@ -1,0 +1,527 @@
+{
+    "Event_ID": "64.0",
+    "Source": "https://en.wikipedia.org/wiki/Typhoon_Alex_(1987)",
+    "Event_Name": "Typhoon Alex (1987)   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "700 homes were demolished",
+        "Total_Homelessness_Annotation": "Close to 700 homes were demolished while roughly 200 fishing boats were damaged."
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "China",
+            "Start_Date_Homelessness": "July 27, 1987",
+            "End_Date_Homelessness": "August 2, 1987",
+            "Num_Homelessness": "700 homes were demolished",
+            "Homelessness_with_annotation": "Close to 700 homes were demolished while roughly 200 fishing boats were damaged."
+        },
+        {
+            "Country": "Taiwan",
+            "Start_Date_Homelessness": "July 25, 1987",
+            "End_Date_Homelessness": "July 26, 1987",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "The typhoon first caused slight damage in Taiwan, becoming the second typhoon to affect the country in 1987."
+        },
+        {
+            "Country": "South Korea",
+            "Start_Date_Homelessness": "July 28, 1987",
+            "End_Date_Homelessness": "August 2, 1987",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "The storm deluged the country with up to 300 mm (12 in) of rainfall in a single day. This resulted in serious flooding, landslides, and loss of life."
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "China",
+            "Location_Homelessness": [
+                "Wenzhou",
+                "Jiaxing",
+                "Shanghai"
+            ],
+            "Start_Date_Homelessness": "July 27, 1987",
+            "End_Date_Homelessness": "August 2, 1987",
+            "Num_Homelessness": "400 homes were damaged or destroyed in Shanghai",
+            "Homelessness_with_annotation": "Throughout the suburbs of Shanghai, north of where the storm moved ashore 32 individuals sustained injuries and 400 homes were damaged or destroyed."
+        },
+        {
+            "Country": "China",
+            "Location_Homelessness": [
+                "Wenzhou"
+            ],
+            "Start_Date_Homelessness": "July 27, 1987",
+            "End_Date_Homelessness": "August 2, 1987",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "The cities of Wenzhou and Jiaxing were the hardest hit, with as much as 290 mm (11.4 in) of rain falling."
+        },
+        {
+            "Country": "China",
+            "Location_Homelessness": [
+                "Jiaxing"
+            ],
+            "Start_Date_Homelessness": "July 27, 1987",
+            "End_Date_Homelessness": "August 2, 1987",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "In Jiaxing, a minimum of 121,405 ha (300,000 acres) of farmland were flooded."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "roughly 200",
+        "Total_Injury_Annotation": "Overall, 125 people were killed and roughly 200 were wounded."
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "China",
+            "Start_Date_Injury": "July 27, 1987",
+            "End_Date_Injury": "July 28, 1987",
+            "Num_Injury": "32",
+            "Injury_with_annotation": "Throughout the suburbs of Shanghai, north of where the storm moved ashore 32 individuals sustained injuries."
+        },
+        {
+            "Country": "South Korea",
+            "Start_Date_Injury": "July 28, 1987",
+            "End_Date_Injury": "August 2, 1987",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "This resulted in serious flooding, landslides, and loss of life."
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "China",
+            "Location_Injury": [
+                "Shanghai"
+            ],
+            "Start_Date_Injury": "July 27, 1987",
+            "End_Date_Injury": "July 28, 1987",
+            "Num_Injury": "32",
+            "Injury_with_annotation": "Throughout the suburbs of Shanghai, north of where the storm moved ashore 32 individuals sustained injuries."
+        }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Assessment_With_Annotation": "Typhoon Alex, known in the Philippines as Typhoon Etang, affected the Taiwan, China, and South Korea during July 1987. Typhoon Alex developed from the monsoon trough that spawned a tropical disturbance late on July 21 southwest of Guam which organized into a tropical depression shortly thereafter. The system steadily became better organized, and the next day, a tropical depression had developed. Satellite intensity estimates gradually increased, and on July 23, the depression intensified into Tropical Storm Alex. After initially tracking west-northwest, Tropical Storm Alex started tracking northwest. An eye developed on July 24, and on the next day, Alex was classified as a typhoon, when Alex attained its peak intensity of 120 km/h (75 mph) and a minimum barometric pressure of 970 mbar (29 inHg).",
+    "Total_Summary_Death": {
+        "Total_Deaths": "126",
+        "Total_Death_Annotation": "Nation-wide, 125 people were killed and roughly 200 were wounded. One person was killed in a tornado spawned by the typhoon in Shanghai."
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "Taiwan",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "1",
+            "Death_with_annotation": "A 35-year-old man was crushed to death by a falling wall in Keelung due to strong winds."
+        },
+        {
+            "Country": "China",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "125",
+            "Death_with_annotation": "Nation-wide, 125 people were killed and roughly 200 were wounded."
+        },
+        {
+            "Country": "South Korea",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "NULL",
+            "Death_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "Taiwan",
+            "Location_Death": [
+                "Keelung"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "1",
+            "Death_with_annotation": "A 35-year-old man was crushed to death by a falling wall in Keelung due to strong winds."
+        },
+        {
+            "Country": "China",
+            "Location_Death": [
+                "Wenzhou"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "34",
+            "Death_with_annotation": "In the former, 34 people were killed."
+        },
+        {
+            "Country": "China",
+            "Location_Death": [
+                "Shanghai"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "1",
+            "Death_with_annotation": "One person was killed in a tornado spawned by the typhoon in Shanghai."
+        }
+    ],
+    "Start_Date": "July 21, 1987",
+    "End_Date": "August 2, 1987",
+    "Time_with_Annotation": "Formed: July 21, 1987 (July 21, 1987)\nDissipated: August 2, 1987 (August 2, 1987)",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": ">$1.8 million",
+        "Total_Insured_Damage_Units": "USD",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "Damage there exceeded US$1.8 million."
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "China",
+            "Total_Insured_Damage": ">$1.8 million",
+            "Total_Insured_Damage_Units": "USD",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "Damage there exceeded US$1.8 million."
+        },
+        {
+            "Country": "Taiwan",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "Across Taiwan, the storm inflicted minor damage and one person was killed."
+        },
+        {
+            "Country": "South Korea",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "Across South Korea, the storm dumped heavy rainfall, with daily totals of 300 mm (12 in) in some places, triggering flooding and landslides."
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "China",
+            "Location_Insured_Damage": [
+                "Zhejiang",
+                "Wenzhou",
+                "Jiaxing",
+                "Shanghai"
+            ],
+            "Num_Insured_Damage": ">$1.8 million",
+            "Insured_Damage_Units": "USD",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Damage there exceeded US$1.8 million."
+        },
+        {
+            "Country": "Taiwan",
+            "Location_Insured_Damage": [
+                "Keelung"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "NULL",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "A 35-year-old man was crushed to death by a falling wall in Keelung due to strong winds."
+        },
+        {
+            "Country": "South Korea",
+            "Location_Insured_Damage": [
+                "NULL"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "NULL",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "The storm deluged the country with up to 300 mm (12 in) of rainfall in a single day. This resulted in serious flooding, landslides, and loss of life."
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "NULL",
+        "Total_Displacement_Annotation": "NULL"
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "Taiwan",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        },
+        {
+            "Country": "China",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        },
+        {
+            "Country": "South Korea",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "Taiwan",
+            "Location_Displacement": [],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        },
+        {
+            "Country": "China",
+            "Location_Displacement": [],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        },
+        {
+            "Country": "South Korea",
+            "Location_Displacement": [],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        }
+    ],
+    "Location": [
+        "Taiwan",
+        "central China",
+        "South Korea",
+        "Zhejiang",
+        "Jiaxing",
+        "Shanghai",
+        "Wenzhou",
+        "Keelung"
+    ],
+    "Location_with_Annotation": {
+        "Taiwan": "The typhoon first caused slight damage in Taiwan, becoming the second typhoon to affect the country in 1987.",
+        "central China": "Typhoon Alex, known in the Philippines as Typhoon Etang, affected the Taiwan, China, and South Korea during July 1987.",
+        "South Korea": "Across South Korea, the storm dumped heavy rainfall, with daily totals of 300 mm (12 in) in some places, triggering flooding and landslides.",
+        "Zhejiang": "Typhoon Alex lashed the Chinese province of Zhejiang for fourteen hours. The storm damaged or demolished more than 200 fishing boats, wiped out 22 bridges, snapped 32 power lines, and flooded four reservoirs.",
+        "Jiaxing": "In Jiaxing, a minimum of 121,405 ha (300,000 acres) of farmland were flooded.",
+        "Shanghai": "Throughout the suburbs of Shanghai, north of where the storm moved ashore 32 individuals sustained injuries and 400 homes were damaged or destroyed.",
+        "Wenzhou": "Interaction with the high terrain of Taiwan caused Alex to deflect west, striking Wenzhou as a weakening tropical storm on the evening of July 27.",
+        "Keelung": "A 35-year-old man was crushed to death by a falling wall in Keelung due to strong winds."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": ">$1.8 million",
+        "Total_Economic_Damage_Units": "USD",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "Damage there exceeded US$1.8 million."
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "China",
+            "Total_Economic_Damage": ">$1.8 million",
+            "Total_Economic_Damage_Units": "USD",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Damage there exceeded US$1.8 million."
+        },
+        {
+            "Country": "Taiwan",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Across Taiwan, the storm inflicted minor damage."
+        },
+        {
+            "Country": "South Korea",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Across South Korea, the storm dumped heavy rainfall, with daily totals of 300 mm (12 in) in some places, triggering flooding and landslides."
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "China",
+            "Location_Economic_Damage": [
+                "Zhejiang",
+                "Wenzhou",
+                "Jiaxing",
+                "Shanghai"
+            ],
+            "Num_Economic_Damage": ">$1.8 million",
+            "Economic_Damage_Units": "USD",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "The storm damaged or demolished more than 200 fishing boats, wiped out 22 bridges, snapped 32 power lines, and flooded four reservoirs. Damage in the area exceeded US$1.8 million."
+        },
+        {
+            "Country": "China",
+            "Location_Economic_Damage": [
+                "Wenzhou"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "In the former, 34 people were killed."
+        },
+        {
+            "Country": "China",
+            "Location_Economic_Damage": [
+                "Jiaxing"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "In Jiaxing, a minimum of 121,405 ha (300,000 acres) of farmland were flooded."
+        },
+        {
+            "Country": "China",
+            "Location_Economic_Damage": [
+                "Shanghai"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Throughout the suburbs of Shanghai, north of where the storm moved ashore 32 individuals sustained injuries and 400 homes were damaged or destroyed. More than 100 pigs were killed there. One person was killed in a tornado spawned by the typhoon in Shanghai."
+        }
+    ],
+    "Perils": "Wind|Rainfall|Flood|Landslide|Tornado",
+    "Perils_Assessment_With_Annotation": {
+        "Wind": "A 35-year-old man was crushed to death by a falling wall in Keelung due to strong winds.",
+        "Rainfall": "The storm deluged the country with up to 300 mm (12 in) of rainfall in a single day.",
+        "Flood": "The storm struck near Shanghai as a tropical storm, and weakened over land, although it remained identifiable through August 2. Across Taiwan, the storm inflicted minor damage and one person was killed. In the province of Zhejiang, Alex damaged or destroyed over 200 fishing boats, wiped out 22 bridges, snapped 32 power lines, and flooded four reservoirs. Damage there exceeded US$1.8 million. In Jiaxing, at least 121,405 hectares (300,000 acres) of farmland were flooded. Nation-wide, 125 people were killed and roughly 200 were wounded. Close to 700 homes were demolished while roughly 200 fishing boats were damaged. Across South Korea, the storm dumped heavy rainfall, with daily totals of 300 mm (12 in) in some places, triggering flooding and landslides.",
+        "Landslide": "Across South Korea, the storm dumped heavy rainfall, with daily totals of 300 mm (12 in) in some places, triggering flooding and landslides.",
+        "Tornado": "One person was killed in a tornado spawned by the typhoon in Shanghai."
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "approximately 700 homes",
+        "Total_Building_Damage_Annotation": "Overall, 125 people were killed and roughly 200 were wounded. Approximately 700 homes were destroyed along with 27,000 ha (66,720 acres) of crops."
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "Taiwan",
+            "Start_Date_Building_Damage": "July 21, 1987",
+            "End_Date_Building_Damage": "August 2, 1987",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "The typhoon first caused slight damage in Taiwan, becoming the second typhoon to affect the country in 1987."
+        },
+        {
+            "Country": "China",
+            "Start_Date_Building_Damage": "July 21, 1987",
+            "End_Date_Building_Damage": "August 2, 1987",
+            "Num_Building_Damage": "approximately 700 homes",
+            "Building_Damage_with_annotation": "Overall, 125 people were killed and roughly 200 were wounded. Approximately 700 homes were destroyed along with 27,000 ha (66,720 acres) of crops."
+        },
+        {
+            "Country": "South Korea",
+            "Start_Date_Building_Damage": "July 21, 1987",
+            "End_Date_Building_Damage": "August 2, 1987",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "The storm deluged the country with up to 300 mm (12 in) of rainfall in a single day. This resulted in serious flooding, landslides, and loss of life."
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "Taiwan",
+            "Location_Building_Damage": [
+                "Keelung"
+            ],
+            "Start_Date_Building_Damage": "July 21, 1987",
+            "End_Date_Building_Damage": "August 2, 1987",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "A 35-year-old man was crushed to death by a falling wall in Keelung due to strong winds."
+        },
+        {
+            "Country": "China",
+            "Location_Building_Damage": [
+                "Zhejiang",
+                "Wenzhou",
+                "Jiaxing",
+                "Shanghai"
+            ],
+            "Start_Date_Building_Damage": "July 21, 1987",
+            "End_Date_Building_Damage": "August 2, 1987",
+            "Num_Building_Damage": "more than 200 fishing boats, 22 bridges, 32 power lines, 4 reservoirs, 400 homes",
+            "Building_Damage_with_annotation": "The storm damaged or demolished more than 200 fishing boats, wiped out 22 bridges, snapped 32 power lines, and flooded four reservoirs. The cities of Wenzhou and Jiaxing were the hardest hit, with as much as 290 mm (11.4 in) of rain falling. Damage in the area exceeded US$1.8 million. In the former, 34 people were killed. In Jiaxing, a minimum of 121,405 ha (300,000 acres) of farmland were flooded. Throughout the suburbs of Shanghai, north of where the storm moved ashore 32 individuals sustained injuries and 400 homes were damaged or destroyed. More than 100 pigs were killed there. One person was killed in a tornado spawned by the typhoon in Shanghai."
+        },
+        {
+            "Country": "South Korea",
+            "Location_Building_Damage": [
+                "NULL"
+            ],
+            "Start_Date_Building_Damage": "July 21, 1987",
+            "End_Date_Building_Damage": "August 2, 1987",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "The storm deluged the country with up to 300 mm (12 in) of rainfall in a single day. This resulted in serious flooding, landslides, and loss of life."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "125 people killed and roughly 200 wounded",
+        "Total_Affected_Annotation": "Overall, 125 people were killed and roughly 200 were wounded."
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "Taiwan",
+            "Start_Date_Affected": "July 1987",
+            "End_Date_Affected": "July 1987",
+            "Num_Affected": "1 person killed",
+            "Affected_with_annotation": "A 35-year-old man was crushed to death by a falling wall in Keelung due to strong winds."
+        },
+        {
+            "Country": "China",
+            "Start_Date_Affected": "July 1987",
+            "End_Date_Affected": "July 1987",
+            "Num_Affected": "125 people killed and roughly 200 wounded",
+            "Affected_with_annotation": "Overall, 125 people were killed and roughly 200 were wounded."
+        },
+        {
+            "Country": "South Korea",
+            "Start_Date_Affected": "July 1987",
+            "End_Date_Affected": "July 1987",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "This resulted in serious flooding, landslides, and loss of life."
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "Taiwan",
+            "Location_Affected": [
+                "Keelung"
+            ],
+            "Start_Date_Affected": "July 1987",
+            "End_Date_Affected": "July 1987",
+            "Num_Affected": "1 person killed",
+            "Affected_with_annotation": "A 35-year-old man was crushed to death by a falling wall in Keelung due to strong winds."
+        },
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "Wenzhou"
+            ],
+            "Start_Date_Affected": "July 1987",
+            "End_Date_Affected": "July 1987",
+            "Num_Affected": "34 people killed",
+            "Affected_with_annotation": "In the former, 34 people were killed."
+        },
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "Jiaxing"
+            ],
+            "Start_Date_Affected": "July 1987",
+            "End_Date_Affected": "July 1987",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "In Jiaxing, a minimum of 121,405 ha (300,000 acres) of farmland were flooded."
+        },
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "Shanghai"
+            ],
+            "Start_Date_Affected": "July 1987",
+            "End_Date_Affected": "July 1987",
+            "Num_Affected": "32 individuals sustained injuries and 1 person killed",
+            "Affected_with_annotation": "Throughout the suburbs of Shanghai, north of where the storm moved ashore 32 individuals sustained injuries and 400 homes were damaged or destroyed. One person was killed in a tornado spawned by the typhoon in Shanghai."
+        }
+    ]
+}

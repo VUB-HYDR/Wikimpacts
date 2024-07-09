@@ -1,0 +1,440 @@
+{
+    "Event_ID": "118.0",
+    "Source": "https://en.wikipedia.org/wiki/1775_Newfoundland_hurricane",
+    "Event_Name": "1775 Newfoundland hurricane   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "NULL",
+        "Total_Homelessness_Annotation": "NULL"
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "United States",
+            "Start_Date_Homelessness": "August 27, 1775",
+            "End_Date_Homelessness": "September 2, 1775",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "NULL"
+        },
+        {
+            "Country": "Canada",
+            "Start_Date_Homelessness": "September 9, 1775",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "United States",
+            "Location_Homelessness": [
+                "Outer Banks",
+                "North Carolina",
+                "Matamuskeet"
+            ],
+            "Start_Date_Homelessness": "August 27, 1775",
+            "End_Date_Homelessness": "September 2, 1775",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "NULL"
+        },
+        {
+            "Country": "Canada",
+            "Location_Homelessness": [
+                "Newfoundland"
+            ],
+            "Start_Date_Homelessness": "September 9, 1775",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "NULL"
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "NULL",
+        "Total_Injury_Annotation": "NULL"
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "United States",
+            "Start_Date_Injury": "August 27, 1775",
+            "End_Date_Injury": "September 2, 1775",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "Canada",
+            "Start_Date_Injury": "September 9, 1775",
+            "End_Date_Injury": "September 9, 1775",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "United States",
+            "Location_Injury": [
+                "Outer Banks",
+                "North Carolina"
+            ],
+            "Start_Date_Injury": "August 27, 1775",
+            "End_Date_Injury": "September 2, 1775",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "United States",
+            "Location_Injury": [
+                "southeastern Virginia"
+            ],
+            "Start_Date_Injury": "August 27, 1775",
+            "End_Date_Injury": "September 2, 1775",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "Canada",
+            "Location_Injury": [
+                "eastern coast of Newfoundland"
+            ],
+            "Start_Date_Injury": "September 9, 1775",
+            "End_Date_Injury": "September 9, 1775",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Assessment_With_Annotation": "The 1775 Newfoundland hurricane, also known as the Independence Hurricane, was a hurricane that struck the Thirteen Colonies and the Colony of Newfoundland in August and September, 1775, at the outset of the American War of Independence.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "at least 4,000",
+        "Total_Death_Annotation": "It is believed to have killed at least 4,000 people,[1] making it one of the deadliest Atlantic hurricanes of all time.[2]"
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "United States",
+            "Start_Date_Death": "August 27, 1775",
+            "End_Date_Death": "September 2, 1775",
+            "Num_Death": "at least 163",
+            "Death_with_annotation": "On August 27, 1775, a hurricane hit the Outer Banks of North Carolina... At least 163 people were killed.[3]"
+        },
+        {
+            "Country": "Canada",
+            "Start_Date_Death": "September 9, 1775",
+            "End_Date_Death": "NULL",
+            "Num_Death": "4,000",
+            "Death_with_annotation": "A storm struck the eastern coast of Newfoundland on September 9, 1775... A total of 4,000 sailors, mostly from England and Ireland, were reported to have been drowned.[3]"
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "United States",
+            "Location_Death": [
+                "Outer Banks",
+                "Matamuskeet"
+            ],
+            "Start_Date_Death": "August 27, 1775",
+            "End_Date_Death": "September 2, 1775",
+            "Num_Death": "150",
+            "Death_with_annotation": "We had a violent hurricane... near 150 lives being lost at the Bar, and 15 in one neighborhood at Matamuskeet."
+        },
+        {
+            "Country": "United States",
+            "Location_Death": [
+                "Matamuskeet"
+            ],
+            "Start_Date_Death": "August 27, 1775",
+            "End_Date_Death": "September 2, 1775",
+            "Num_Death": "15",
+            "Death_with_annotation": "We had a violent hurricane... near 150 lives being lost at the Bar, and 15 in one neighborhood at Matamuskeet."
+        },
+        {
+            "Country": "Canada",
+            "Location_Death": [
+                "eastern coast of Newfoundland"
+            ],
+            "Start_Date_Death": "September 9, 1775",
+            "End_Date_Death": "NULL",
+            "Num_Death": "4,000",
+            "Death_with_annotation": "A storm struck the eastern coast of Newfoundland on September 9, 1775... A total of 4,000 sailors, mostly from England and Ireland, were reported to have been drowned.[3]"
+        }
+    ],
+    "Start_Date": "August 29, 1775",
+    "End_Date": "September 9, 1775",
+    "Time_with_Annotation": "Formed: August 29, 1775\nDissipated: September 9, 1775",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "NULL",
+        "Total_Insured_Damage_Units": "NULL",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "United States",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Canada",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "United States",
+            "Location_Insured_Damage": [
+                "Outer Banks",
+                "North Carolina",
+                "Virginia",
+                "Norfolk",
+                "Hampton",
+                "York"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "The shocking accounts of damage done by the rains last week are numerous: Most of the mill-dams are broke, the corn laid almost level with the ground, and fodder destroyed; many ships and other vessels drove ashore and damaged, at Norfolk, Hampton, and York."
+        },
+        {
+            "Country": "Canada",
+            "Location_Insured_Damage": [
+                "Newfoundland"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Newfoundland's fisheries 'received a very severe stroke from the violence of a storm of wind, which almost swept everything before it,' Commodore Governor Robert Duff wrote shortly after it struck. 'A considerable number of boats, with their crews, have been totally lost, several vessels wrecked on the shores,' he said."
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "NULL",
+        "Total_Displacement_Annotation": "NULL"
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "United States",
+            "Start_Date_Displacement": "August 27, 1775",
+            "End_Date_Displacement": "September 2, 1775",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        },
+        {
+            "Country": "Canada",
+            "Start_Date_Displacement": "September 9, 1775",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "United States",
+            "Location_Displacement": [
+                "Outer Banks",
+                "North Carolina"
+            ],
+            "Start_Date_Displacement": "August 27, 1775",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        },
+        {
+            "Country": "United States",
+            "Location_Displacement": [
+                "southeastern Virginia"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "September 2, 1775",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        },
+        {
+            "Country": "Canada",
+            "Location_Displacement": [
+                "eastern coast of Newfoundland"
+            ],
+            "Start_Date_Displacement": "September 9, 1775",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        }
+    ],
+    "Location": [
+        "North Carolina",
+        "Virginia",
+        "Newfoundland"
+    ],
+    "Location_with_Annotation": {
+        "North Carolina": "A letter from New Bern, North Carolina, recounted, \"We had a violent hurricane...which has done a vast deal of damage here, at the Bar, and at Matamuskeet, near 150 lives being lost at the Bar, and 15 in one neighborhood at Matamuskeet.\"",
+        "Virginia": "The September 9, 1775, edition of The Virginia Gazette reported: \"The shocking accounts of damage done by the rains last week are numerous: Most of the mill-dams are broke, the corn laid almost level with the ground, and fodder destroyed; many ships and other vessels drove ashore and damaged, at Norfolk, Hampton, and York.\"",
+        "Newfoundland": "A storm struck the eastern coast of Newfoundland on September 9, 1775. Newfoundland's fisheries \"received a very severe stroke from the violence of a storm of wind, which almost swept everything before it,\" Commodore Governor Robert Duff wrote shortly after it struck. \"A considerable number of boats, with their crews, have been totally lost, several vessels wrecked on the shores,\" he said."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "NULL",
+        "Total_Economic_Damage_Units": "NULL",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "NULL"
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "United States",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Canada",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "United States",
+            "Location_Economic_Damage": [
+                "Outer Banks",
+                "North Carolina",
+                "Matamuskeet",
+                "Norfolk",
+                "Hampton",
+                "York"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "The September 9, 1775, edition of The Virginia Gazette reported: 'The shocking accounts of damage done by the rains last week are numerous: Most of the mill-dams are broke, the corn laid almost level with the ground, and fodder destroyed; many ships and other vessels drove ashore and damaged, at Norfolk, Hampton, and York.'"
+        },
+        {
+            "Country": "Canada",
+            "Location_Economic_Damage": [
+                "Newfoundland"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Newfoundland's fisheries 'received a very severe stroke from the violence of a storm of wind, which almost swept everything before it,' Commodore Governor Robert Duff wrote shortly after it struck. 'A considerable number of boats, with their crews, have been totally lost, several vessels wrecked on the shores,' he said."
+        }
+    ],
+    "Perils": "Wind|Rainfall|Flood|Landfall",
+    "Perils_Assessment_With_Annotation": {
+        "Wind": "Newfoundland's fisheries 'received a very severe stroke from the violence of a storm of wind, which almost swept everything before it,'",
+        "Rainfall": "The shocking accounts of damage done by the rains last week are numerous: Most of the mill-dams are broke, the corn laid almost level with the ground, and fodder destroyed; many ships and other vessels drove ashore and damaged, at Norfolk, Hampton, and York.",
+        "Flood": "Ocean levels rose to heights 'scarcely ever known before' and caused great devastation, Duff reported.",
+        "Landfall": "On August 27, 1775, a hurricane hit the Outer Banks of North Carolina. It turned northeastward and left the state on September 2, bringing heavy wind and rain to southeastern Virginia."
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "NULL",
+        "Total_Building_Damage_Annotation": "NULL"
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "United States",
+            "Start_Date_Building_Damage": "August 27, 1775",
+            "End_Date_Building_Damage": "September 2, 1775",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "The shocking accounts of damage done by the rains last week are numerous: Most of the mill-dams are broke, the corn laid almost level with the ground, and fodder destroyed; many ships and other vessels drove ashore and damaged, at Norfolk, Hampton, and York."
+        },
+        {
+            "Country": "Canada",
+            "Start_Date_Building_Damage": "September 9, 1775",
+            "End_Date_Building_Damage": "September 9, 1775",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "Newfoundland's fisheries \"received a very severe stroke from the violence of a storm of wind, which almost swept everything before it,\" Commodore Governor Robert Duff wrote shortly after it struck. \"A considerable number of boats, with their crews, have been totally lost, several vessels wrecked on the shores,\" he said."
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "United States",
+            "Location_Building_Damage": [
+                "Outer Banks",
+                "Norfolk",
+                "Hampton",
+                "York"
+            ],
+            "Start_Date_Building_Damage": "August 27, 1775",
+            "End_Date_Building_Damage": "September 2, 1775",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "The shocking accounts of damage done by the rains last week are numerous: Most of the mill-dams are broke, the corn laid almost level with the ground, and fodder destroyed; many ships and other vessels drove ashore and damaged, at Norfolk, Hampton, and York."
+        },
+        {
+            "Country": "Canada",
+            "Location_Building_Damage": [
+                "Newfoundland"
+            ],
+            "Start_Date_Building_Damage": "September 9, 1775",
+            "End_Date_Building_Damage": "September 9, 1775",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "Newfoundland's fisheries \"received a very severe stroke from the violence of a storm of wind, which almost swept everything before it,\" Commodore Governor Robert Duff wrote shortly after it struck. \"A considerable number of boats, with their crews, have been totally lost, several vessels wrecked on the shores,\" he said."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "at least 4,000",
+        "Total_Affected_Annotation": "It is believed to have killed at least 4,000 people,[1] making it one of the deadliest Atlantic hurricanes of all time.[2]"
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "United States",
+            "Start_Date_Affected": "August 27, 1775",
+            "End_Date_Affected": "September 2, 1775",
+            "Num_Affected": "at least 163",
+            "Affected_with_annotation": "On August 27, 1775, a hurricane hit the Outer Banks of North Carolina... At least 163 people were killed.[3]"
+        },
+        {
+            "Country": "Canada",
+            "Start_Date_Affected": "September 9, 1775",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "4,000",
+            "Affected_with_annotation": "A storm struck the eastern coast of Newfoundland on September 9, 1775... A total of 4,000 sailors, mostly from England and Ireland, were reported to have been drowned.[3]"
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "United States",
+            "Location_Affected": [
+                "Outer Banks",
+                "Matamuskeet",
+                "Norfolk",
+                "Hampton",
+                "York"
+            ],
+            "Start_Date_Affected": "August 27, 1775",
+            "End_Date_Affected": "September 2, 1775",
+            "Num_Affected": "at least 163",
+            "Affected_with_annotation": "On August 27, 1775, a hurricane hit the Outer Banks of North Carolina... At least 163 people were killed.[3]"
+        },
+        {
+            "Country": "United States",
+            "Location_Affected": [
+                "Bar",
+                "Matamuskeet"
+            ],
+            "Start_Date_Affected": "August 27, 1775",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "165",
+            "Affected_with_annotation": "We had a violent hurricane... near 150 lives being lost at the Bar, and 15 in one neighborhood at Matamuskeet."
+        },
+        {
+            "Country": "Canada",
+            "Location_Affected": [
+                "eastern coast of Newfoundland"
+            ],
+            "Start_Date_Affected": "September 9, 1775",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "4,000",
+            "Affected_with_annotation": "A storm struck the eastern coast of Newfoundland on September 9, 1775... A total of 4,000 sailors, mostly from England and Ireland, were reported to have been drowned.[3]"
+        }
+    ]
+}

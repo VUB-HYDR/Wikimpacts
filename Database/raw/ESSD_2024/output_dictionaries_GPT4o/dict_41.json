@@ -1,0 +1,359 @@
+{
+    "Event_ID": "106.0",
+    "Source": "https://en.wikipedia.org/wiki/Hurricane_Brenda_(1973)",
+    "Event_Name": "Hurricane Brenda (1973)   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "2,000",
+        "Total_Homelessness_Annotation": "An estimated 2,000 people were left homeless as a direct result of Brenda throughout Mexico."
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "Mexico",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "2,000",
+            "Homelessness_with_annotation": "An estimated 2,000 people were left homeless as a direct result of Brenda throughout Mexico."
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "Mexico",
+            "Location_Homelessness": [
+                "Campeche"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "Two of the fatalities occurred in Campeche after 80% of the city was flooded."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Homelessness": [
+                "Veracruz"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "Two more of these deaths occurred in the coastal city of Veracruz."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "NULL",
+        "Total_Injury_Annotation": "NULL"
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "Mexico",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "Mexico",
+            "Location_Injury": [
+                "Campeche"
+            ],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        },
+        {
+            "Country": "Mexico",
+            "Location_Injury": [
+                "Veracruz"
+            ],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Assessment_With_Annotation": "Hurricane Brenda of August 1973 was the first tropical cyclone on record to make landfall in the Mexican state of Campeche.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "10",
+        "Total_Death_Annotation": "Brenda caused a total of 10 deaths."
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "Mexico",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "10",
+            "Death_with_annotation": "Brenda caused a total of 10 deaths."
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "Mexico",
+            "Location_Death": [
+                "Campeche"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "2",
+            "Death_with_annotation": "Two of the fatalities occurred in Campeche after 80% of the city was flooded."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Death": [
+                "Veracruz"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "2",
+            "Death_with_annotation": "Two more of these deaths occurred in the coastal city of Veracruz."
+        }
+    ],
+    "Start_Date": "August 18, 1973",
+    "End_Date": "August 22, 1973",
+    "Time_with_Annotation": "Formed: August 18, 1973\nDissipated: August 22, 1973",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "NULL",
+        "Total_Insured_Damage_Units": "NULL",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "Mexico",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "Mexico",
+            "Location_Insured_Damage": [
+                "Campeche"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Two of the fatalities occurred in Campeche after 80% of the city was flooded."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Insured_Damage": [
+                "Veracruz"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Two more of these deaths occurred in the coastal city of Veracruz."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Insured_Damage": [
+                "NULL"
+            ],
+            "Num_Insured_Damage": "452 homes and the local docks were destroyed",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "According to officials, 452 homes and the local docks were destroyed in the region."
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "over 2,000",
+        "Total_Displacement_Annotation": "An estimated 2,000 people were left homeless as a direct result of Brenda throughout Mexico."
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "Mexico",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "over 2,000",
+            "Displacement_with_annotation": "An estimated 2,000 people were left homeless as a direct result of Brenda throughout Mexico."
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "Mexico",
+            "Location_Displacement": [
+                "Campeche"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "Two of the fatalities occurred in Campeche after 80% of the city was flooded."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Displacement": [
+                "Veracruz"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "Two more of these deaths occurred in the coastal city of Veracruz."
+        }
+    ],
+    "Location": [
+        "Cayman Islands",
+        "Mexico",
+        "Cozumel",
+        "M\u00e9rida, Yucat\u00e1n",
+        "Ciudad del Carmen",
+        "Veracruz",
+        "Campeche"
+    ],
+    "Location_with_Annotation": {
+        "Cayman Islands": "The tropical wave that spawned Brenda produced significant amounts of rainfall in the Cayman Islands as it became better organized. Upwards of 4 in (100 mm) was recorded on Grand Cayman on August 17.",
+        "Mexico": "Brenda made two landfalls in Mexico: first in the Yucatan and later in Campeche.",
+        "Cozumel": "The storm moved inland roughly 30 mi (48 km) north of Cozumel at the northern edge of the Yucatan Peninsula on August 19.",
+        "M\u00e9rida, Yucat\u00e1n": "Roughly 24 hours after landfall, the center of Brenda passed directly over the city of M\u00e9rida, Yucat\u00e1n.",
+        "Ciudad del Carmen": "The storm made landfall later that day near Ciudad del Carmen, Mexico at this intensity, becoming the first hurricane to strike the region on record.",
+        "Veracruz": "Two more of these deaths occurred in the coastal city of Veracruz.",
+        "Campeche": "Two of the fatalities occurred in Campeche after 80% of the city was flooded."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "NULL",
+        "Total_Economic_Damage_Units": "NULL",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "NULL"
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "Mexico",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "Mexico",
+            "Location_Economic_Damage": [
+                "Campeche"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Two of the fatalities occurred in Campeche after 80% of the city was flooded."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Economic_Damage": [
+                "Veracruz"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Two more of these deaths occurred in the coastal city of Veracruz."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Economic_Damage": [
+                "NULL"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "According to officials, 452 homes and the local docks were destroyed in the region."
+        }
+    ],
+    "Perils": "Wind|Rainfall|Flood|Landfall",
+    "Perils_Assessment_With_Annotation": {
+        "Wind": "Following its first landfall in the northern Yucatan, Brenda produced heavy rainfall and high winds,[4] gusting near 70 mph (110 km/h). Winds on land gusted up to 112 mph (180 km/h), leading to severe wind damage.[7][9]",
+        "Rainfall": "The tropical wave that spawned Brenda produced significant amounts of rainfall in the Cayman Islands as it became better organized. Upwards of 4 in (100 mm) was recorded on Grand Cayman on August 17.[1] Following its first landfall in the northern Yucatan, Brenda produced heavy rainfall and high winds,[4] gusting near 70 mph (110 km/h). Already suffering from severe flooding that killed at least 18 people and left 200,000 homeless, Hurricane Brenda worsened the situation with torrential rainfall and additional flooding.[1][7]",
+        "Flood": "Already suffering from severe flooding that killed at least 18 people and left 200,000 homeless, Hurricane Brenda worsened the situation with torrential rainfall and additional flooding.[1][7] Two of the fatalities occurred in Campeche after 80% of the city was flooded.[5] This was considered to be the worst flooding in the city in over 25 years.[1]",
+        "Landfall": "Hurricane Brenda of August 1973 was the first tropical cyclone on record to make landfall in the Mexican state of Campeche.[1] Brenda made two landfalls in Mexico: first in the Yucatan and later in Campeche. The storm made landfall later that day near Ciudad del Carmen, Mexico at this intensity, becoming the first hurricane to strike the region on record."
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "452 homes and the local docks",
+        "Total_Building_Damage_Annotation": "According to officials, 452 homes and the local docks were destroyed in the region."
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "Mexico",
+            "Start_Date_Building_Damage": "August 19, 1973",
+            "End_Date_Building_Damage": "August 22, 1973",
+            "Num_Building_Damage": "452 homes and the local docks",
+            "Building_Damage_with_annotation": "According to officials, 452 homes and the local docks were destroyed in the region."
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "Mexico",
+            "Location_Building_Damage": [
+                "Campeche"
+            ],
+            "Start_Date_Building_Damage": "August 21, 1973",
+            "End_Date_Building_Damage": "August 22, 1973",
+            "Num_Building_Damage": "80% of the city",
+            "Building_Damage_with_annotation": "Two of the fatalities occurred in Campeche after 80% of the city was flooded."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Building_Damage": [
+                "Veracruz"
+            ],
+            "Start_Date_Building_Damage": "August 21, 1973",
+            "End_Date_Building_Damage": "August 22, 1973",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "Two more of these deaths occurred in the coastal city of Veracruz. This was considered to be the worst flooding in the city in over 25 years."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "over 2,000",
+        "Total_Affected_Annotation": "An estimated 2,000 people were left homeless as a direct result of Brenda throughout Mexico."
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "Mexico",
+            "Start_Date_Affected": "August 19, 1973",
+            "End_Date_Affected": "August 22, 1973",
+            "Num_Affected": "over 2,000",
+            "Affected_with_annotation": "An estimated 2,000 people were left homeless as a direct result of Brenda throughout Mexico."
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "Mexico",
+            "Location_Affected": [
+                "Campeche"
+            ],
+            "Start_Date_Affected": "August 21, 1973",
+            "End_Date_Affected": "August 22, 1973",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Two of the fatalities occurred in Campeche after 80% of the city was flooded."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Affected": [
+                "Veracruz"
+            ],
+            "Start_Date_Affected": "August 21, 1973",
+            "End_Date_Affected": "August 22, 1973",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "Two more of these deaths occurred in the coastal city of Veracruz."
+        },
+        {
+            "Country": "Mexico",
+            "Location_Affected": [
+                "NULL"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "452 homes",
+            "Affected_with_annotation": "According to officials, 452 homes and the local docks were destroyed in the region."
+        }
+    ]
+}

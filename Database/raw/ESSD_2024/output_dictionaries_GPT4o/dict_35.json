@@ -1,0 +1,434 @@
+{
+    "Event_ID": "100.0",
+    "Source": "https://en.wikipedia.org/wiki/Typhoon_Agnes_(1984)",
+    "Event_Name": "Typhoon Agnes (1984)   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "Over 224,000 people",
+        "Total_Homelessness_Annotation": "Across the Philippines, 895 people died due to Agnes, with 272 people listed missing and 2,526 others wounded. A total of 491,968 people were evacuated to shelter in 27 provinces. More than 200,000 homes were destroyed while 163,056 other dwellings were damaged."
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Homelessness": "November 4, 1984",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "Over 224,000 people",
+            "Homelessness_with_annotation": "Across the Philippines, 895 people died due to Agnes, with 272 people listed missing and 2,526 others wounded. A total of 491,968 people were evacuated to shelter in 27 provinces. More than 200,000 homes were destroyed while 163,056 other dwellings were damaged."
+        },
+        {
+            "Country": "Vietnam",
+            "Start_Date_Homelessness": "November 7, 1984",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "The B\u00ecnh \u0110\u1ecbnh Province suffered the brunt of the typhoon, where 134 people died and 289 sustained injuries. There, 400 schools and 230 nurseries were flattened. Throughout the country, the storm destroyed 271,000 hectares (670,000 acres) of farmland."
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "Philippines",
+            "Location_Homelessness": [
+                "Iloilo"
+            ],
+            "Start_Date_Homelessness": "November 4, 1984",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "1,326 people",
+            "Homelessness_with_annotation": "In the Iloilo province, 230 people were killed and four others were injured. Provincewide, a total of 21 homes were flattened, resulting in 1,326 homeless people."
+        },
+        {
+            "Country": "Philippines",
+            "Location_Homelessness": [
+                "Panay Island"
+            ],
+            "Start_Date_Homelessness": "November 4, 1984",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "Over 24,000 people",
+            "Homelessness_with_annotation": "Throughout Panay Island, four hundred forty-eight fatalities were reported, at least eight people were injured, five bridges were destroyed, and thirty-five schools were demolished. A total of 4,014 homes were destroyed; consequently, over 24,000 people lost their homes."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "2,815",
+        "Total_Injury_Annotation": "Across the Philippines, 895 people died due to Agnes, with 272 people listed missing and 2,526 others wounded. In the B\u00ecnh \u0110\u1ecbnh Province suffered the brunt of the typhoon, where 134 people died and 289 sustained injuries."
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "2,526",
+            "Injury_with_annotation": "Across the Philippines, 895 people died due to Agnes, with 272 people listed missing and 2,526 others wounded."
+        },
+        {
+            "Country": "Vietnam",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "289",
+            "Injury_with_annotation": "The B\u00ecnh \u0110\u1ecbnh Province suffered the brunt of the typhoon, where 134 people died and 289 sustained injuries."
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "Philippines",
+            "Location_Injury": [
+                "NULL"
+            ],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "2,526",
+            "Injury_with_annotation": "Across the Philippines, 895 people died due to Agnes, with 272 people listed missing and 2,526 others wounded."
+        },
+        {
+            "Country": "Vietnam",
+            "Location_Injury": [
+                "B\u00ecnh \u0110\u1ecbnh Province"
+            ],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "289",
+            "Injury_with_annotation": "The B\u00ecnh \u0110\u1ecbnh Province suffered the brunt of the typhoon, where 134 people died and 289 sustained injuries."
+        }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Assessment_With_Annotation": "Typhoon Agnes, known in the Philippines as Typhoon Undang, was the fourth final tropical cyclone to affect the Philippines during the 1984 Pacific typhoon season.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "1,029",
+        "Total_Death_Annotation": "Fatalities: 1,029 total"
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "895",
+            "Death_with_annotation": "Across the Philippines, 895 people died due to Agnes"
+        },
+        {
+            "Country": "Vietnam",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "134",
+            "Death_with_annotation": "The B\u00ecnh \u0110\u1ecbnh Province suffered the brunt of the typhoon, where 134 people died"
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "Philippines",
+            "Location_Death": [
+                "Iloilo"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "230",
+            "Death_with_annotation": "In the Iloilo province, 230 people were killed"
+        },
+        {
+            "Country": "Philippines",
+            "Location_Death": [
+                "Capiz"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "265",
+            "Death_with_annotation": "In the Capiz province, 265 people died"
+        },
+        {
+            "Country": "Philippines",
+            "Location_Death": [
+                "Panay Island"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "448",
+            "Death_with_annotation": "Throughout Panay Island, four hundred forty-eight fatalities were reported"
+        },
+        {
+            "Country": "Vietnam",
+            "Location_Death": [
+                "B\u00ecnh \u0110\u1ecbnh Province"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "134",
+            "Death_with_annotation": "The B\u00ecnh \u0110\u1ecbnh Province suffered the brunt of the typhoon, where 134 people died"
+        }
+    ],
+    "Start_Date": "October 30, 1984",
+    "End_Date": "November 9, 1984",
+    "Time_with_Annotation": "Formed: October 30, 1984\nDissipated: November 9, 1984",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "NULL",
+        "Total_Insured_Damage_Units": "NULL",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Vietnam",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "Philippines",
+            "Location_Insured_Damage": [
+                "Iloilo"
+            ],
+            "Num_Insured_Damage": "$5 million",
+            "Insured_Damage_Units": "USD",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Damage in the province amounted to at least $5 million."
+        },
+        {
+            "Country": "Philippines",
+            "Location_Insured_Damage": [
+                "Capiz"
+            ],
+            "Num_Insured_Damage": "$25 million",
+            "Insured_Damage_Units": "USD",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "In the Capiz province, 265 people died and property damage amounted $25 million (1984 USD)."
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "491,968",
+        "Total_Displacement_Annotation": "Across the Philippines, 895 people died due to Agnes, with 272 people listed missing and 2,526 others wounded. A total of 491,968 people were evacuated to shelter in 27 provinces."
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "491,968",
+            "Displacement_with_annotation": "Across the Philippines, 895 people died due to Agnes, with 272 people listed missing and 2,526 others wounded. A total of 491,968 people were evacuated to shelter in 27 provinces."
+        },
+        {
+            "Country": "Vietnam",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "Philippines",
+            "Location_Displacement": [
+                "27 provinces"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "491,968",
+            "Displacement_with_annotation": "Across the Philippines, 895 people died due to Agnes, with 272 people listed missing and 2,526 others wounded. A total of 491,968 people were evacuated to shelter in 27 provinces."
+        }
+    ],
+    "Location": [
+        "Philippines",
+        "Vietnam",
+        "Thailand",
+        "Samar Island",
+        "Iloilo province",
+        "Capiz province",
+        "Panay Island",
+        "Roxas",
+        "B\u00ecnh \u0110\u1ecbnh Province",
+        "Borongan",
+        "Qui Nh\u01a1n",
+        "Leyte",
+        "Aklan",
+        "Antique",
+        "Tacloban"
+    ],
+    "Location_with_Annotation": {
+        "Philippines": "Typhoon Agnes, known in the Philippines as Typhoon Undang, was the fourth final tropical cyclone to affect the Philippines during the 1984 Pacific typhoon season.",
+        "Vietnam": "The next day, Typhoon Agnes moved ashore Vietnam while still at typhoon intensity.",
+        "Thailand": "The storm rapidly deteriorated over land and dissipated by November 8 over Thailand.",
+        "Samar Island": "The storm then made landfall on Samar Island, part of the Philippines, at that intensity.",
+        "Iloilo province": "In the Iloilo province, 230 people were killed and four others were injured.",
+        "Capiz province": "In the Capiz province, 265 people died and property damage amounted $25 million (1984 USD).",
+        "Panay Island": "Throughout Panay Island, four hundred forty-eight fatalities were reported, at least eight people were injured, five bridges were destroyed, and thirty-five schools were demolished.",
+        "Roxas": "Around 80% of houses in Roxas, located in Capiz, were damaged and 100 people were killed.",
+        "B\u00ecnh \u0110\u1ecbnh Province": "The B\u00ecnh \u0110\u1ecbnh Province suffered the brunt of the typhoon, where 134 people died and 289 sustained injuries.",
+        "Borongan": "Shortly after attaining maximum intensity, the typhoon continued west-northwest and made landfall 10 km (6.2 mi) south of Borongan on Samar Island.",
+        "Qui Nh\u01a1n": "Agnes made its second landfall on November 7 40 km (25 mi) north of Qui Nh\u01a1n in Vietnam.",
+        "Leyte": "President Ferdinand Marcos declared a state of emergency for the provinces of Capiz, Iloilo, Aklan, Antique, Leyte, and eastern Samar.",
+        "Aklan": "President Ferdinand Marcos declared a state of emergency for the provinces of Capiz, Iloilo, Aklan, Antique, Leyte, and eastern Samar.",
+        "Antique": "President Ferdinand Marcos declared a state of emergency for the provinces of Capiz, Iloilo, Aklan, Antique, Leyte, and eastern Samar.",
+        "Tacloban": "This area also covered the cities of Roxas and Tacloban."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "90.7 million",
+        "Total_Economic_Damage_Units": "USD",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "Damage in the country totaled $90.7 million, with $19.1 million from crops and $56.9 million from public infrastructure."
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Total_Economic_Damage": "90.7 million",
+            "Total_Economic_Damage_Units": "USD",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Damage in the country totaled $90.7 million, with $19.1 million from crops and $56.9 million from public infrastructure."
+        },
+        {
+            "Country": "Vietnam",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "In Vietnam, the typhoon severely affected the rice harvest and winter crop cultivation. The B\u00ecnh \u0110\u1ecbnh Province suffered the brunt of the typhoon, where 134 people died and 289 sustained injuries. There, 400 schools and 230 nurseries were flattened. Throughout the country, the storm destroyed 271,000 hectares (670,000 acres) of farmland."
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "Philippines",
+            "Location_Economic_Damage": [
+                "Iloilo"
+            ],
+            "Num_Economic_Damage": "5 million",
+            "Economic_Damage_Units": "USD",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Damage in the province amounted to at least $5 million."
+        },
+        {
+            "Country": "Philippines",
+            "Location_Economic_Damage": [
+                "Capiz"
+            ],
+            "Num_Economic_Damage": "25 million",
+            "Economic_Damage_Units": "USD",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "In the Capiz province, 265 people died and property damage amounted $25 million (1984 USD)."
+        }
+    ],
+    "Perils": "Wind|Rainfall|Flood|Landfall",
+    "Perils_Assessment_With_Annotation": {
+        "Wind": "Typhoon Agnes, known in the Philippines as Typhoon Undang, was the fourth final tropical cyclone to affect the Philippines during the 1984 Pacific typhoon season.",
+        "Rainfall": "An area of disturbed weather developed near the equator and the Caroline Islands on October 28. Following an increase in organization, the cyclone was designated a tropical storm on October 31.",
+        "Flood": "Agnes brought widespread damage to several provinces across the central section of the archipelago. In the Iloilo province, 230 people were killed and four others were injured. Provincewide, a total of 21 homes were flattened, resulting in 1,326 homeless people.",
+        "Landfall": "The storm then made landfall on Samar Island, part of the Philippines, at that intensity."
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "More than 200,000 homes destroyed, 163,056 other dwellings damaged, 400 schools, 230 nurseries, 35 schools demolished",
+        "Total_Building_Damage_Annotation": "More than 200,000 homes were destroyed while 163,056 other dwellings were damaged. Damage in the country totaled $90.7 million, with $19.1 million from crops and $56.9 million from public infrastructure. The B\u00ecnh \u0110\u1ecbnh Province suffered the brunt of the typhoon, where 134 people died and 289 sustained injuries. There, 400 schools and 230 nurseries were flattened. Throughout Panay Island, four hundred forty-eight fatalities were reported, at least eight people were injured, five bridges were destroyed, and thirty-five schools were demolished."
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Building_Damage": "November 4, 1984",
+            "End_Date_Building_Damage": "November 9, 1984",
+            "Num_Building_Damage": "More than 200,000 homes destroyed, 163,056 other dwellings damaged",
+            "Building_Damage_with_annotation": "More than 200,000 homes were destroyed while 163,056 other dwellings were damaged. Damage in the country totaled $90.7 million, with $19.1 million from crops and $56.9 million from public infrastructure."
+        },
+        {
+            "Country": "Vietnam",
+            "Start_Date_Building_Damage": "November 7, 1984",
+            "End_Date_Building_Damage": "November 8, 1984",
+            "Num_Building_Damage": "400 schools, 230 nurseries",
+            "Building_Damage_with_annotation": "The B\u00ecnh \u0110\u1ecbnh Province suffered the brunt of the typhoon, where 134 people died and 289 sustained injuries. There, 400 schools and 230 nurseries were flattened."
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "Philippines",
+            "Location_Building_Damage": [
+                "Iloilo province",
+                "Capiz province",
+                "Roxas",
+                "Panay Island"
+            ],
+            "Start_Date_Building_Damage": "November 4, 1984",
+            "End_Date_Building_Damage": "November 9, 1984",
+            "Num_Building_Damage": "21 homes flattened in Iloilo province, 80% of houses in Roxas damaged, 4,014 homes destroyed in Panay Island",
+            "Building_Damage_with_annotation": "In the Iloilo province, 230 people were killed and four others were injured. Provincewide, a total of 21 homes were flattened, resulting in 1,326 homeless people. Damage in the province amounted to at least $5 million. Approximately 20% of the rice crop was destroyed in Iloilo. In the Capiz province, 265 people died and property damage amounted $25 million (1984 USD). Around 80% of houses in Roxas, located in Capiz, were damaged and 100 people were killed. Throughout Panay Island, four hundred forty-eight fatalities were reported, at least eight people were injured, five bridges were destroyed, and thirty-five schools were demolished. A total of 4,014 homes were destroyed; consequently, over 24,000 people lost their homes."
+        },
+        {
+            "Country": "Vietnam",
+            "Location_Building_Damage": [
+                "B\u00ecnh \u0110\u1ecbnh Province"
+            ],
+            "Start_Date_Building_Damage": "November 7, 1984",
+            "End_Date_Building_Damage": "November 8, 1984",
+            "Num_Building_Damage": "400 schools, 230 nurseries",
+            "Building_Damage_with_annotation": "The B\u00ecnh \u0110\u1ecbnh Province suffered the brunt of the typhoon, where 134 people died and 289 sustained injuries. There, 400 schools and 230 nurseries were flattened."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "NULL",
+        "Total_Affected_Annotation": "NULL"
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "491,968 people",
+            "Affected_with_annotation": "Across the Philippines, 895 people died due to Agnes, with 272 people listed missing and 2,526 others wounded. A total of 491,968 people were evacuated to shelter in 27 provinces."
+        },
+        {
+            "Country": "Vietnam",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "In Vietnam, the typhoon severely affected the rice harvest and winter crop cultivation. The B\u00ecnh \u0110\u1ecbnh Province suffered the brunt of the typhoon, where 134 people died and 289 sustained injuries. There, 400 schools and 230 nurseries were flattened. Throughout the country, the storm destroyed 271,000 hectares (670,000 acres) of farmland."
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "Philippines",
+            "Location_Affected": [
+                "Iloilo"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "1,326 homeless people",
+            "Affected_with_annotation": "In the Iloilo province, 230 people were killed and four others were injured. Provincewide, a total of 21 homes were flattened, resulting in 1,326 homeless people."
+        },
+        {
+            "Country": "Philippines",
+            "Location_Affected": [
+                "Capiz"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "In the Capiz province, 265 people died and property damage amounted $25 million (1984 USD). Around 80% of houses in Roxas, located in Capiz, were damaged and 100 people were killed."
+        },
+        {
+            "Country": "Philippines",
+            "Location_Affected": [
+                "Panay Island"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "24,000 people",
+            "Affected_with_annotation": "Throughout Panay Island, four hundred forty-eight fatalities were reported, at least eight people were injured, five bridges were destroyed, and thirty-five schools were demolished. A total of 4,014 homes were destroyed; consequently, over 24,000 people lost their homes."
+        },
+        {
+            "Country": "Vietnam",
+            "Location_Affected": [
+                "B\u00ecnh \u0110\u1ecbnh Province"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "134 people",
+            "Affected_with_annotation": "The B\u00ecnh \u0110\u1ecbnh Province suffered the brunt of the typhoon, where 134 people died and 289 sustained injuries. There, 400 schools and 230 nurseries were flattened."
+        }
+    ]
+}

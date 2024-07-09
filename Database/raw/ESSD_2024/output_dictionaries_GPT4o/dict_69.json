@@ -1,0 +1,312 @@
+{
+    "Event_ID": "90.0",
+    "Source": "https://en.wikipedia.org/wiki/Typhoon_Kujira_(2009)",
+    "Event_Name": "Typhoon Kujira (2009)   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "3757",
+        "Total_Homelessness_Annotation": "In the aftermath of Kujira moving away from the Philippines, a state of calamity was declared in Albay, Camarines Sur and Sorsogon after 28 people had been killed and 8 had been injured. Over 3757 houses were damaged with 297 fully damaged."
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "3757",
+            "Homelessness_with_annotation": "In the aftermath of Kujira moving away from the Philippines, a state of calamity was declared in Albay, Camarines Sur and Sorsogon after 28 people had been killed and 8 had been injured. Over 3757 houses were damaged with 297 fully damaged."
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "Philippines",
+            "Location_Homelessness": [
+                "Albay",
+                "Camarines Sur",
+                "Sorsogon"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "3757",
+            "Homelessness_with_annotation": "In the aftermath of Kujira moving away from the Philippines, a state of calamity was declared in Albay, Camarines Sur and Sorsogon after 28 people had been killed and 8 had been injured. Over 3757 houses were damaged with 297 fully damaged."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "5",
+        "Total_Injury_Annotation": "The NDCC damage report update as of 6am PST May 12 declared 28 dead, one missing and 5 injured."
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "5",
+            "Injury_with_annotation": "The NDCC damage report update as of 6am PST May 12 declared 28 dead, one missing and 5 injured."
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "Philippines",
+            "Location_Injury": [
+                "Region V"
+            ],
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "5",
+            "Injury_with_annotation": "The NDCC damage report update as of 6am PST May 12 declared 28 dead, one missing and 5 injured."
+        }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Assessment_With_Annotation": "Typhoon Kujira, known in the Philippines as Typhoon Dante, was first reported by the Joint Typhoon Warning Center (JTWC) on April 28. It was the fourth depression and the first typhoon of the season.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "28",
+        "Total_Death_Annotation": "Torrential rains produced by Typhoon Kujira in the Bicol Peninsula triggered severe flooding and mudslides which killed 28 people and one missing."
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "28",
+            "Death_with_annotation": "Torrential rains produced by Typhoon Kujira in the Bicol Peninsula triggered severe flooding and mudslides which killed 28 people and one missing."
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "Philippines",
+            "Location_Death": [
+                "Bicol Peninsula"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "28",
+            "Death_with_annotation": "Torrential rains produced by Typhoon Kujira in the Bicol Peninsula triggered severe flooding and mudslides which killed 28 people and one missing."
+        }
+    ],
+    "Start_Date": "May 1, 2009",
+    "End_Date": "May 13, 2009",
+    "Time_with_Annotation": "Formed: May 1, 2009\nDissipated: May 13, 2009",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": ">= $27 million",
+        "Total_Insured_Damage_Units": "USD",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "Damage: >=$27 million (2009 USD)"
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Total_Insured_Damage": "PhP1,228,422,344",
+            "Total_Insured_Damage_Units": "PHP",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "Damages are worth PhP1,228,422,344 Million or PhP1.228 billion of which PhP625,709,464 were in agriculture and PhP529,525,000 in infrastructure."
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "Philippines",
+            "Location_Insured_Damage": [
+                "Albay",
+                "Camarines Norte",
+                "Masbate",
+                "Sorsogon"
+            ],
+            "Num_Insured_Damage": "PhP625,709,464",
+            "Insured_Damage_Units": "PHP",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "While in the Philippine area of responsibility, Kujira caused some 625,709,464 worth of damage to crops and livestock in Albay, Camarines Norte, Masbate and Sorsogon."
+        },
+        {
+            "Country": "Philippines",
+            "Location_Insured_Damage": [
+                "Region V"
+            ],
+            "Num_Insured_Damage": "PhP102 million",
+            "Insured_Damage_Units": "PHP",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "It also caused some 102 million pesos worth of damage to communal irrigation systems in the region."
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "NULL",
+        "Total_Displacement_Annotation": "NULL"
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        },
+        {
+            "Country": "Russian Far East",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "Philippines",
+            "Location_Displacement": [
+                "Albay",
+                "Camarines Norte",
+                "Masbate",
+                "Sorsogon"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        },
+        {
+            "Country": "Philippines",
+            "Location_Displacement": [
+                "Region V"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        }
+    ],
+    "Location": [
+        "Philippines",
+        "Bicol Peninsula",
+        "Russian Far East",
+        "Puerto Real",
+        "Luzon",
+        "Camarines Norte",
+        "Camarines Sur",
+        "Albay",
+        "Sorsogon",
+        "Catanduanes",
+        "Masbate",
+        "Burias Island",
+        "Southern Quezon",
+        "Northern Samar"
+    ],
+    "Location_with_Annotation": {
+        "Philippines": "Typhoon Kujira, known in the Philippines as Typhoon Dante, was first reported by the Joint Typhoon Warning Center (JTWC) on April 28.",
+        "Bicol Peninsula": "Torrential rains produced by Typhoon Kujira in the Bicol Peninsula triggered severe flooding and mudslides which killed 28 people and one missing.",
+        "Russian Far East": "Areas affected: Philippines, Russian Far East",
+        "Puerto Real": "On April 28, the Joint Typhoon Warning Center reported that an area of convection had persisted about 230 km (140 mi) to the northeast of Puerto Real in the Philippines.",
+        "Luzon": "The disturbance then regenerated early on April 30, with a broad low level circulation center and was nestled within the islands of southern Luzon.",
+        "Camarines Norte": "Early on May 1, PAGASA placed Camarines Norte, Camarines Sur, Albay, Sorsogon, Catanduanes, Masbate, Burias Island and Southern Quezon in Luzon and Northern Samar in Visayas, under Public Storm Warning Signal number 1",
+        "Camarines Sur": "Early on May 1, PAGASA placed Camarines Norte, Camarines Sur, Albay, Sorsogon, Catanduanes, Masbate, Burias Island and Southern Quezon in Luzon and Northern Samar in Visayas, under Public Storm Warning Signal number 1",
+        "Albay": "Early on May 1, PAGASA placed Camarines Norte, Camarines Sur, Albay, Sorsogon, Catanduanes, Masbate, Burias Island and Southern Quezon in Luzon and Northern Samar in Visayas, under Public Storm Warning Signal number 1",
+        "Sorsogon": "Early on May 1, PAGASA placed Camarines Norte, Camarines Sur, Albay, Sorsogon, Catanduanes, Masbate, Burias Island and Southern Quezon in Luzon and Northern Samar in Visayas, under Public Storm Warning Signal number 1",
+        "Catanduanes": "Early on May 1, PAGASA placed Camarines Norte, Camarines Sur, Albay, Sorsogon, Catanduanes, Masbate, Burias Island and Southern Quezon in Luzon and Northern Samar in Visayas, under Public Storm Warning Signal number 1",
+        "Masbate": "Early on May 1, PAGASA placed Camarines Norte, Camarines Sur, Albay, Sorsogon, Catanduanes, Masbate, Burias Island and Southern Quezon in Luzon and Northern Samar in Visayas, under Public Storm Warning Signal number 1",
+        "Burias Island": "Early on May 1, PAGASA placed Camarines Norte, Camarines Sur, Albay, Sorsogon, Catanduanes, Masbate, Burias Island and Southern Quezon in Luzon and Northern Samar in Visayas, under Public Storm Warning Signal number 1",
+        "Southern Quezon": "Early on May 1, PAGASA placed Camarines Norte, Camarines Sur, Albay, Sorsogon, Catanduanes, Masbate, Burias Island and Southern Quezon in Luzon and Northern Samar in Visayas, under Public Storm Warning Signal number 1",
+        "Northern Samar": "Early on May 1, PAGASA placed Camarines Norte, Camarines Sur, Albay, Sorsogon, Catanduanes, Masbate, Burias Island and Southern Quezon in Luzon and Northern Samar in Visayas, under Public Storm Warning Signal number 1"
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": ">= $27 million",
+        "Total_Economic_Damage_Units": "USD",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "Damage: >=$27 million (2009 USD)"
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Total_Economic_Damage": "PhP1,228,422,344",
+            "Total_Economic_Damage_Units": "PHP",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Damages are worth PhP1,228,422,344 Million or PhP1.228 billion of which PhP625,709,464 were in agriculture and PhP529,525,000 in infrastructure."
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "Philippines",
+            "Location_Economic_Damage": [
+                "Albay",
+                "Camarines Norte",
+                "Masbate",
+                "Sorsogon"
+            ],
+            "Num_Economic_Damage": "625,709,464",
+            "Economic_Damage_Units": "PHP",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "While in the Philippine area of responsibility, Kujira caused some 625,709,464 worth of damage to crops and livestock in Albay, Camarines Norte, Masbate and Sorsogon."
+        },
+        {
+            "Country": "Philippines",
+            "Location_Economic_Damage": [
+                "Region V"
+            ],
+            "Num_Economic_Damage": "102 million",
+            "Economic_Damage_Units": "PHP",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "It also caused some 102 million pesos worth of damage to communal irrigation systems in the region."
+        }
+    ],
+    "Perils": "Wind|Rainfall|Flood|Landslide|Landfall",
+    "Perils_Assessment_With_Annotation": {
+        "Wind": "winds of 60\u2013100 km/h (35-60 mph), were expected to affect the Catanduanes within 24 hours.",
+        "Rainfall": "Torrential rains produced by Typhoon Kujira in the Bicol Peninsula",
+        "Flood": "Torrential rains produced by Typhoon Kujira in the Bicol Peninsula triggered severe flooding",
+        "Landslide": "Torrential rains produced by Typhoon Kujira in the Bicol Peninsula triggered severe flooding and mudslides",
+        "Landfall": "Later that day PAGASA declared that Dante had made landfall on the Bicol Region in Southeastern Luzon."
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "3,757",
+        "Total_Building_Damage_Annotation": "In the aftermath of Kujira moving away from the Philippines, a state of calamity was declared in Albay, Camarines Sur and Sorsogon after 28 people had been killed and 8 had been injured. Over 3757 houses were damaged with 297 fully damaged."
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "3,757",
+            "Building_Damage_with_annotation": "In the aftermath of Kujira moving away from the Philippines, a state of calamity was declared in Albay, Camarines Sur and Sorsogon after 28 people had been killed and 8 had been injured. Over 3757 houses were damaged with 297 fully damaged."
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "Philippines",
+            "Location_Building_Damage": [
+                "Albay",
+                "Camarines Sur",
+                "Sorsogon"
+            ],
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "3,757",
+            "Building_Damage_with_annotation": "In the aftermath of Kujira moving away from the Philippines, a state of calamity was declared in Albay, Camarines Sur and Sorsogon after 28 people had been killed and 8 had been injured. Over 3757 houses were damaged with 297 fully damaged."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "383,457",
+        "Total_Affected_Annotation": "Further, 383,457 people in 609 barangays of 60 municipalities and 4 cities in 5 provinces of Region V were affected by the storm."
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "Philippines",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "383,457",
+            "Affected_with_annotation": "Further, 383,457 people in 609 barangays of 60 municipalities and 4 cities in 5 provinces of Region V were affected by the storm."
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "Philippines",
+            "Location_Affected": [
+                "Region V"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "383,457",
+            "Affected_with_annotation": "Further, 383,457 people in 609 barangays of 60 municipalities and 4 cities in 5 provinces of Region V were affected by the storm."
+        }
+    ]
+}

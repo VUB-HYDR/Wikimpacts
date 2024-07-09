@@ -1,0 +1,303 @@
+{
+    "Event_ID": "122.0",
+    "Source": "https://en.wikipedia.org/wiki/Cyclone_Ernest",
+    "Event_Name": "Cyclone Ernest   RENAME??",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "32,191",
+        "Total_Homelessness_Annotation": "The storms damaged 5,792 buildings, and there were 32,191 people left homeless."
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "Madagascar",
+            "Start_Date_Homelessness": "January 23, 2005",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "32,191",
+            "Homelessness_with_annotation": "The storms damaged 5,792 buildings, and there were 32,191 people left homeless."
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "Madagascar",
+            "Location_Homelessness": [
+                "southern Madagascar"
+            ],
+            "Start_Date_Homelessness": "January 23, 2005",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "32,191",
+            "Homelessness_with_annotation": "The storms damaged 5,792 buildings, and there were 32,191 people left homeless."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "104",
+        "Total_Injury_Annotation": "The combined effects of Ernest and Felapi killed 39 people, injured 104, and left 214 people missing as of February 25, 2005."
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "Madagascar",
+            "Start_Date_Injury": "January 23, 2005",
+            "End_Date_Injury": "February 25, 2005",
+            "Num_Injury": "104",
+            "Injury_with_annotation": "The combined effects of Ernest and Felapi killed 39 people, injured 104, and left 214 people missing as of February 25, 2005."
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "Madagascar",
+            "Location_Injury": [
+                "southern Madagascar"
+            ],
+            "Start_Date_Injury": "January 23, 2005",
+            "End_Date_Injury": "February 25, 2005",
+            "Num_Injury": "104",
+            "Injury_with_annotation": "The combined effects of Ernest and Felapi killed 39 people, injured 104, and left 214 people missing as of February 25, 2005."
+        }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Assessment_With_Annotation": "Intense Tropical Cyclone Ernest was one of two intense tropical cyclones in the 2004\u201305 South-West Indian Ocean cyclone season.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "78",
+        "Total_Death_Annotation": "The combined effects of the storms killed 78 people and left over 32,000 homeless."
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "Madagascar",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "78",
+            "Death_with_annotation": "The combined effects of the storms killed 78 people and left over 32,000 homeless."
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "Madagascar",
+            "Location_Death": [
+                "southern Madagascar"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "several",
+            "Death_with_annotation": "Many fishermen in the area were not aware of the storm's approach, and several of them died as a result."
+        },
+        {
+            "Country": "Madagascar",
+            "Location_Death": [
+                "general area"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "February 25, 2005",
+            "Num_Death": "39",
+            "Death_with_annotation": "The combined effects of Ernest and Felapi killed 39 people, injured 104, and left 214 people missing as of February 25, 2005."
+        }
+    ],
+    "Start_Date": "January 16, 2005",
+    "End_Date": "January 25, 2005",
+    "Time_with_Annotation": "Formed: January 16, 2005 (2005-01-16)\nDissipated: January 25, 2005 (2005-01-26)",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "NULL",
+        "Total_Insured_Damage_Units": "NULL",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "Mayotte",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Madagascar",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "Mayotte",
+            "Location_Insured_Damage": [
+                "NULL"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "NULL"
+        },
+        {
+            "Country": "Madagascar",
+            "Location_Insured_Damage": [
+                "Toliara"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "The highest rainfall was a 24\u2011hour total of 237.2 mm (9.34 in), and the highest wind gust was 180 km/h (110 mph), both of which observed in Toliara."
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "32,191",
+        "Total_Displacement_Annotation": "The storms damaged 5,792 buildings, and there were 32,191 people left homeless."
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "Madagascar",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "32,191",
+            "Displacement_with_annotation": "The storms damaged 5,792 buildings, and there were 32,191 people left homeless."
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "Madagascar",
+            "Location_Displacement": [
+                "southern Madagascar"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "32,191",
+            "Displacement_with_annotation": "The storms damaged 5,792 buildings, and there were 32,191 people left homeless."
+        }
+    ],
+    "Location": [
+        "Mayotte",
+        "Madagascar",
+        "Malawi",
+        "Comoros"
+    ],
+    "Location_with_Annotation": {
+        "Mayotte": "The storm first struck Mayotte, affecting the island with gale-force gusts for about six hours. Sustained winds reached 78 km/h (48 mph), and wind gusts peaked at 98 km/h (61 mph).",
+        "Madagascar": "In southern Madagascar, the cyclone produced high winds and heavy rainfall. The highest rainfall was a 24\u2011hour total of 237.2 mm (9.34 in), and the highest wind gust was 180 km/h (110 mph), both of which observed in Toliara.",
+        "Malawi": "Cyclone Ernest indirectly affected Malawi, located inland in southeast Africa. The storm's circulation removed moisture from the country and prevented any rainfall from occurring in the southern part of the country during a nine-day period.",
+        "Comoros": "While strengthening, Ernest moved over Mayotte and passed southeast of Comoros."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "NULL",
+        "Total_Economic_Damage_Units": "NULL",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "NULL"
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "Madagascar",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "The storms damaged 5,792 buildings, and there were 32,191 people left homeless. The floods damaged about 4,483 hectares (11,078 acres) of crop fields in southern Madagascar."
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "Madagascar",
+            "Location_Economic_Damage": [
+                "southern Madagascar"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "The floods damaged about 4,483 hectares (11,078 acres) of crop fields in southern Madagascar."
+        }
+    ],
+    "Perils": "Wind|Rainfall|Flood|Landfall|Drought",
+    "Perils_Assessment_With_Annotation": {
+        "Wind": "In southern Madagascar, the cyclone produced high winds and heavy rainfall. The highest rainfall was a 24\u2011hour total of 237.2 mm (9.34 in), and the highest wind gust was 180 km/h (110 mph), both of which observed in Toliara.",
+        "Rainfall": "In southern Madagascar, the cyclone produced high winds and heavy rainfall. The highest rainfall was a 24\u2011hour total of 237.2 mm (9.34 in), and the highest wind gust was 180 km/h (110 mph), both of which observed in Toliara.",
+        "Flood": "About five days after Cyclone Ernest struck Madagascar, Tropical Storm Felapi struck the same general area, causing additional flooding. The combined effects of Ernest and Felapi killed 39 people, injured 104, and left 214 people missing as of February 25, 2005.",
+        "Landfall": "On January 23, Ernest made landfall on the southwest coast of Madagascar at Itampolo, with winds estimated at 130 km/h (80 mph).",
+        "Drought": "Cyclone Ernest indirectly affected Malawi, located inland in southeast Africa. The storm's circulation removed moisture from the country and prevented any rainfall from occurring in the southern part of the country during a nine-day period."
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "5,792",
+        "Total_Building_Damage_Annotation": "The storms damaged 5,792 buildings, and there were 32,191 people left homeless."
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "Madagascar",
+            "Start_Date_Building_Damage": "January 23, 2005",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "5,792",
+            "Building_Damage_with_annotation": "The storms damaged 5,792 buildings, and there were 32,191 people left homeless."
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "Madagascar",
+            "Location_Building_Damage": [
+                "southern Madagascar"
+            ],
+            "Start_Date_Building_Damage": "January 23, 2005",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "In southern Madagascar, the cyclone produced high winds and heavy rainfall."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "32,191 people",
+        "Total_Affected_Annotation": "The combined effects of the storms killed 78 people and left over 32,000 homeless."
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "Madagascar",
+            "Start_Date_Affected": "January 23, 2005",
+            "End_Date_Affected": "January 25, 2005",
+            "Num_Affected": "32,191 people",
+            "Affected_with_annotation": "The combined effects of the storms killed 78 people, injured 104, and left 214 people missing as of February 25, 2005. Later, the death toll was finalized at 78 in the International Disaster Database. The storms damaged 5,792 buildings, and there were 32,191 people left homeless."
+        },
+        {
+            "Country": "Mayotte",
+            "Start_Date_Affected": "January 20, 2005",
+            "End_Date_Affected": "January 20, 2005",
+            "Num_Affected": "None",
+            "Affected_with_annotation": "Effects on the island were minimal."
+        },
+        {
+            "Country": "Malawi",
+            "Start_Date_Affected": "January 20, 2005",
+            "End_Date_Affected": "January 29, 2005",
+            "Num_Affected": "None",
+            "Affected_with_annotation": "Cyclone Ernest indirectly affected Malawi, located inland in southeast Africa. The storm's circulation removed moisture from the country and prevented any rainfall from occurring in the southern part of the country during a nine-day period."
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "Madagascar",
+            "Location_Affected": [
+                "southern Madagascar"
+            ],
+            "Start_Date_Affected": "January 23, 2005",
+            "End_Date_Affected": "January 25, 2005",
+            "Num_Affected": "32,191 people",
+            "Affected_with_annotation": "The combined effects of the storms killed 78 people, injured 104, and left 214 people missing as of February 25, 2005. Later, the death toll was finalized at 78 in the International Disaster Database. The storms damaged 5,792 buildings, and there were 32,191 people left homeless."
+        },
+        {
+            "Country": "Mayotte",
+            "Location_Affected": [
+                "Mayotte"
+            ],
+            "Start_Date_Affected": "January 20, 2005",
+            "End_Date_Affected": "January 20, 2005",
+            "Num_Affected": "None",
+            "Affected_with_annotation": "Effects on the island were minimal."
+        },
+        {
+            "Country": "Malawi",
+            "Location_Affected": [
+                "southern Malawi"
+            ],
+            "Start_Date_Affected": "January 20, 2005",
+            "End_Date_Affected": "January 29, 2005",
+            "Num_Affected": "None",
+            "Affected_with_annotation": "Cyclone Ernest indirectly affected Malawi, located inland in southeast Africa. The storm's circulation removed moisture from the country and prevented any rainfall from occurring in the southern part of the country during a nine-day period."
+        }
+    ]
+}

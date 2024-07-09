@@ -1,0 +1,308 @@
+{
+    "Event_ID": "41.0",
+    "Source": "https://en.wikipedia.org/wiki?curid=30855389",
+    "Event_Name": "2010-2011 China Drought",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "3,234",
+        "Total_Homelessness_Annotation": "Some lakes, including Lake Hong in Hubei province, dried up significantly, with the Hubei lake shrinking to one-eighth of its normal surface area and one-fifth its usual depth, forcing 3,234 local residents to relocate."
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "China",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "3,234",
+            "Homelessness_with_annotation": "Some lakes, including Lake Hong in Hubei province, dried up significantly, with the Hubei lake shrinking to one-eighth of its normal surface area and one-fifth its usual depth, forcing 3,234 local residents to relocate."
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "China",
+            "Location_Homelessness": [
+                "Lake Hong",
+                "Hubei province"
+            ],
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "3,234",
+            "Homelessness_with_annotation": "Some lakes, including Lake Hong in Hubei province, dried up significantly, with the Hubei lake shrinking to one-eighth of its normal surface area and one-fifth its usual depth, forcing 3,234 local residents to relocate."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "NULL",
+        "Total_Injury_Annotation": "NULL"
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "China",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "China",
+            "Location_Injury": "NULL",
+            "Start_Date_Injury": "NULL",
+            "End_Date_Injury": "NULL",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        }
+    ],
+    "Main_Event": "Drought",
+    "Main_Event_Assessment_With_Annotation": "The 2010\u20132011 China drought was a drought that began in late 2010 and impacted eight provinces in the northern part of the People's Republic of China (PRC). It was the worst drought to hit the country in 60 years, and it affected most of wheat-producing regions in the PRC.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "None reported",
+        "Total_Death_Annotation": "The article does not mention any deaths directly caused by the 2010-2011 China Drought."
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "China",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "None reported",
+            "Death_with_annotation": "The article does not mention any deaths directly caused by the 2010-2011 China Drought."
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "China",
+            "Location_Death": [
+                "NULL"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "None reported",
+            "Death_with_annotation": "The article does not mention any deaths directly caused by the 2010-2011 China Drought."
+        }
+    ],
+    "Start_Date": "September 2010",
+    "End_Date": "20 June 2011",
+    "Time_with_Annotation": "The drought began as early as September 2010 in some regions,[1] though widespread lack of rain and snow began in October.[2] Despite flooding in many regions by 20 June 2011, a government minister reported that drought was still affecting 72.19 million mu (4.81 million hectares) in unflooded parts of Hubei, Anhui, and Jiangsu provinces and some northern provinces.[8]",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "NULL",
+        "Total_Insured_Damage_Units": "NULL",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "China",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "China",
+            "Location_Insured_Damage": [
+                "Anhui",
+                "Gansu",
+                "Henan",
+                "Hubei",
+                "Jiangsu",
+                "Shaanxi",
+                "Shandong",
+                "Shanxi"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "The provinces of Anhui, Gansu, Henan, Hubei, Jiangsu, Shaanxi, Shandong, and Shanxi were impacted by the drought."
+        },
+        {
+            "Country": "China",
+            "Location_Insured_Damage": [
+                "Inner Mongolia",
+                "Ningxia"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "On 24 June, 3.65 million people and 3.47 million heads of livestock were short of drinking water in the autonomous regions of Inner Mongolia and Ningxia and the provinces of Gansu and Shanxi despite the flooding in other parts of China."
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "3,234",
+        "Total_Displacement_Annotation": "Some lakes, including Lake Hong in Hubei province, dried up significantly, with the Hubei lake shrinking to one-eighth of its normal surface area and one-fifth its usual depth, forcing 3,234 local residents to relocate."
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "China",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "3,234",
+            "Displacement_with_annotation": "Some lakes, including Lake Hong in Hubei province, dried up significantly, with the Hubei lake shrinking to one-eighth of its normal surface area and one-fifth its usual depth, forcing 3,234 local residents to relocate."
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "China",
+            "Location_Displacement": [
+                "Lake Hong",
+                "Hubei province"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "3,234",
+            "Displacement_with_annotation": "Some lakes, including Lake Hong in Hubei province, dried up significantly, with the Hubei lake shrinking to one-eighth of its normal surface area and one-fifth its usual depth, forcing 3,234 local residents to relocate."
+        }
+    ],
+    "Location": [
+        "Anhui",
+        "Gansu",
+        "Henan",
+        "Hubei",
+        "Jiangsu",
+        "Shaanxi",
+        "Shandong",
+        "Shanxi",
+        "Inner Mongolia",
+        "Ningxia"
+    ],
+    "Location_with_Annotation": {
+        "Anhui": "The provinces of Anhui, Gansu, Henan, Hubei, Jiangsu, Shaanxi, Shandong, and Shanxi were impacted by the drought.[3]",
+        "Gansu": "The provinces of Anhui, Gansu, Henan, Hubei, Jiangsu, Shaanxi, Shandong, and Shanxi were impacted by the drought.[3]",
+        "Henan": "The provinces of Anhui, Gansu, Henan, Hubei, Jiangsu, Shaanxi, Shandong, and Shanxi were impacted by the drought.[3]",
+        "Hubei": "The provinces of Anhui, Gansu, Henan, Hubei, Jiangsu, Shaanxi, Shandong, and Shanxi were impacted by the drought.[3]",
+        "Jiangsu": "The provinces of Anhui, Gansu, Henan, Hubei, Jiangsu, Shaanxi, Shandong, and Shanxi were impacted by the drought.[3]",
+        "Shaanxi": "The provinces of Anhui, Gansu, Henan, Hubei, Jiangsu, Shaanxi, Shandong, and Shanxi were impacted by the drought.[3]",
+        "Shandong": "The provinces of Anhui, Gansu, Henan, Hubei, Jiangsu, Shaanxi, Shandong, and Shanxi were impacted by the drought.[3]",
+        "Shanxi": "The provinces of Anhui, Gansu, Henan, Hubei, Jiangsu, Shaanxi, Shandong, and Shanxi were impacted by the drought.[3]",
+        "Inner Mongolia": "On 24 June, 3.65 million people and 3.47 million heads of livestock were short of drinking water in the autonomous regions of Inner Mongolia and Ningxia and the provinces of Gansu and Shanxi despite the flooding in other parts of China.[6]",
+        "Ningxia": "On 24 June, 3.65 million people and 3.47 million heads of livestock were short of drinking water in the autonomous regions of Inner Mongolia and Ningxia and the provinces of Gansu and Shanxi despite the flooding in other parts of China.[6]"
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "15 billion",
+        "Total_Economic_Damage_Units": "yuan",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "Direct economic damage had reached 15 billion yuan (about 2.3 billion USD), while several provinces resorted to using cloud seeding to induce artificial rain."
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "China",
+            "Total_Economic_Damage": "15 billion",
+            "Total_Economic_Damage_Units": "yuan",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Direct economic damage had reached 15 billion yuan (about 2.3 billion USD), while several provinces resorted to using cloud seeding to induce artificial rain."
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "China",
+            "Location_Economic_Damage": [
+                "Inner Mongolia",
+                "Ningxia",
+                "Gansu",
+                "Shanxi"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "On 24 June, 3.65 million people and 3.47 million heads of livestock were short of drinking water in the autonomous regions of Inner Mongolia and Ningxia and the provinces of Gansu and Shanxi despite the flooding in other parts of China."
+        },
+        {
+            "Country": "China",
+            "Location_Economic_Damage": [
+                "Hubei",
+                "Anhui",
+                "Jiangsu"
+            ],
+            "Num_Economic_Damage": "NULL",
+            "Economic_Damage_Units": "NULL",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Despite flooding in many regions by 20 June 2011, a government minister reported that drought was still affecting 72.19 million mu (4.81 million hectares) in unflooded parts of Hubei, Anhui, and Jiangsu provinces and some northern provinces."
+        }
+    ],
+    "Perils": "Drought|Flood|Cold Spell/Cold Snap",
+    "Perils_Assessment_With_Annotation": {
+        "Drought": "The 2010\u20132011 China drought was a drought that began in late 2010 and impacted eight provinces in the northern part of the People's Republic of China (PRC).",
+        "Flood": "Despite flooding in many regions by 20 June 2011, a government minister reported that drought was still affecting 72.19 million mu (4.81 million hectares) in unflooded parts of Hubei, Anhui, and Jiangsu provinces and some northern provinces.",
+        "Cold Spell/Cold Snap": "The lack of precipitation caused lower than normal snow cover, putting wheat crops at risk of being killed by frost as well as reducing the amount of moisture in the ground."
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "None reported",
+        "Total_Building_Damage_Annotation": "The article does not mention any specific number of damaged buildings caused by the 2010-2011 China Drought."
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "China",
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "None reported",
+            "Building_Damage_with_annotation": "The article does not mention any specific number of damaged buildings caused by the 2010-2011 China Drought."
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "China",
+            "Location_Building_Damage": [
+                "NULL"
+            ],
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "None reported",
+            "Building_Damage_with_annotation": "The article does not mention any specific number of damaged buildings caused by the 2010-2011 China Drought."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "35 million",
+        "Total_Affected_Annotation": "By the start of June, the drought had affected 35 million people, including 4.2 million facing a drinking water shortage."
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "China",
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "35 million",
+            "Affected_with_annotation": "By the start of June, the drought had affected 35 million people, including 4.2 million facing a drinking water shortage."
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "Inner Mongolia",
+                "Ningxia",
+                "Gansu",
+                "Shanxi"
+            ],
+            "Start_Date_Affected": "24 June",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "3.65 million",
+            "Affected_with_annotation": "On 24 June, 3.65 million people and 3.47 million heads of livestock were short of drinking water in the autonomous regions of Inner Mongolia and Ningxia and the provinces of Gansu and Shanxi despite the flooding in other parts of China."
+        },
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "Hubei"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "3,234",
+            "Affected_with_annotation": "Some lakes, including Lake Hong in Hubei province, dried up significantly, with the Hubei lake shrinking to one-eighth of its normal surface area and one-fifth its usual depth, forcing 3,234 local residents to relocate."
+        },
+        {
+            "Country": "China",
+            "Location_Affected": [
+                "NULL"
+            ],
+            "Start_Date_Affected": "NULL",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "4.2 million",
+            "Affected_with_annotation": "By the start of June, the drought had affected 35 million people, including 4.2 million facing a drinking water shortage."
+        }
+    ]
+}

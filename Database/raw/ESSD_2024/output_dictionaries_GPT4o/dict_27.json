@@ -1,0 +1,493 @@
+{
+    "Event_ID": "85.0",
+    "Source": "https://en.wikipedia.org/wiki/Tropical_Storm_Helene_(2000)",
+    "Event_Name": "Tropical Storm Helene (2000)   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "NULL",
+        "Total_Homelessness_Annotation": "NULL"
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "Puerto Rico",
+            "Start_Date_Homelessness": "September 17, 2000",
+            "End_Date_Homelessness": "September 18, 2000",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "One house was destroyed and more than 100 houses were affected in Ponce, forcing several families to evacuate."
+        },
+        {
+            "Country": "United States",
+            "Start_Date_Homelessness": "September 22, 2000",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "About 100 homes were flooded in Leon County, and 70 streets were flooded in Tallahassee. Portions of U.S. Highway 98 were flooded in Port St. Joe and near Carrabelle. About 70 people had to evacuate their homes due to the flooding. In Leon County, the storm destroyed two homes and six mobile homes, and damaged more than 120 homes in Wakulla County."
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "Puerto Rico",
+            "Location_Homelessness": [
+                "Ponce"
+            ],
+            "Start_Date_Homelessness": "September 17, 2000",
+            "End_Date_Homelessness": "September 18, 2000",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "One house was destroyed and more than 100 houses were affected in Ponce, forcing several families to evacuate."
+        },
+        {
+            "Country": "United States",
+            "Location_Homelessness": [
+                "Leon County",
+                "Tallahassee",
+                "Port St. Joe",
+                "Carrabelle",
+                "Wakulla County"
+            ],
+            "Start_Date_Homelessness": "September 22, 2000",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "About 100 homes were flooded in Leon County, and 70 streets were flooded in Tallahassee. Portions of U.S. Highway 98 were flooded in Port St. Joe and near Carrabelle. About 70 people had to evacuate their homes due to the flooding. In Leon County, the storm destroyed two homes and six mobile homes, and damaged more than 120 homes in Wakulla County."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "7",
+        "Total_Injury_Annotation": "In South Carolina, Helene spawned a tornado that killed one person and injured six others; heavy rainfall in the state also led to a death when a driver hydroplaned into a tree."
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "United States",
+            "Start_Date_Injury": "September 22, 2000",
+            "End_Date_Injury": "September 25, 2000",
+            "Num_Injury": "7",
+            "Injury_with_annotation": "In South Carolina, Helene spawned a tornado that killed one person and injured six others; heavy rainfall in the state also led to a death when a driver hydroplaned into a tree."
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "United States",
+            "Location_Injury": [
+                "Martin",
+                "South Carolina"
+            ],
+            "Start_Date_Injury": "September 22, 2000",
+            "End_Date_Injury": "September 25, 2000",
+            "Num_Injury": "6",
+            "Injury_with_annotation": "In South Carolina, Helene spawned a tornado that killed one person and injured six others."
+        },
+        {
+            "Country": "United States",
+            "Location_Injury": [
+                "Berkeley County",
+                "South Carolina"
+            ],
+            "Start_Date_Injury": "September 22, 2000",
+            "End_Date_Injury": "September 25, 2000",
+            "Num_Injury": "1",
+            "Injury_with_annotation": "In Berkeley County, a woman died after hydroplaning and driving her car into a tree."
+        }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Assessment_With_Annotation": "Tropical Storm Helene was a long-lived tropical cyclone that oscillated for ten days between a tropical wave and a 70 mph (110 km/h) tropical storm.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "2",
+        "Total_Death_Annotation": "Fatalities: 1 direct, 1 indirect"
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "United States",
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "2",
+            "Death_with_annotation": "In South Carolina, Helene spawned a tornado that killed one person and injured six others; heavy rainfall in the state also led to a death when a driver hydroplaned into a tree."
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "United States",
+            "Location_Death": [
+                "Martin",
+                "Berkeley County"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "1",
+            "Death_with_annotation": "As Helene moved through South Carolina, it spawned an F2 tornado in Martin that killed one person, injured six, and damaged 12 houses."
+        },
+        {
+            "Country": "United States",
+            "Location_Death": [
+                "Berkeley County"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "1",
+            "Death_with_annotation": "In Berkeley County, a woman died after hydroplaning and driving her car into a tree."
+        }
+    ],
+    "Start_Date": "September 15, 2000",
+    "End_Date": "September 25, 2000",
+    "Time_with_Annotation": "Formed: September 15, 2000\nDissipated: September 25, 2000",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": "$16 million",
+        "Total_Insured_Damage_Units": "USD",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "Despite being a weak tropical cyclone at landfall, Tropical Storm Helene caused $16 million in damage (2000 USD)."
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "United States",
+            "Total_Insured_Damage": "$16 million",
+            "Total_Insured_Damage_Units": "USD",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "Despite being a weak tropical cyclone at landfall, Tropical Storm Helene caused $16 million in damage (2000 USD)."
+        },
+        {
+            "Country": "Puerto Rico",
+            "Total_Insured_Damage": "$100,000",
+            "Total_Insured_Damage_Units": "USD",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "Damage on the island was estimated at $100,000 (2000 USD)."
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "United States",
+            "Location_Insured_Damage": [
+                "Leon County",
+                "Wakulla County",
+                "Tallahassee",
+                "Port St. Joe",
+                "Carrabelle",
+                "Cape San Blas",
+                "Franklin County",
+                "Okaloosa",
+                "Walton",
+                "Santa Rosa",
+                "Mobile",
+                "Dauphin Island",
+                "Georgia",
+                "Dunwoody",
+                "Sandersville",
+                "Tennessee",
+                "Copperhill",
+                "South Carolina",
+                "Martin",
+                "Bamberg",
+                "Orangeburg County",
+                "Berkeley County",
+                "North Carolina",
+                "Longwood",
+                "Jacksonville",
+                "Virginia",
+                "Delaware"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Despite being a weak tropical cyclone at landfall, Tropical Storm Helene caused $16 million in damage (2000 USD)."
+        },
+        {
+            "Country": "Puerto Rico",
+            "Location_Insured_Damage": [
+                "Ponce",
+                "Guayama"
+            ],
+            "Num_Insured_Damage": "$100,000",
+            "Insured_Damage_Units": "USD",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "Damage on the island was estimated at $100,000 (2000 USD)."
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "NULL",
+        "Total_Displacement_Annotation": "NULL"
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "United States",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "United States",
+            "Location_Displacement": [
+                "Ponce"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "several families",
+            "Displacement_with_annotation": "One house was destroyed and more than 100 houses were affected in Ponce, forcing several families to evacuate."
+        },
+        {
+            "Country": "United States",
+            "Location_Displacement": [
+                "Tallahassee"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "130 people",
+            "Displacement_with_annotation": "About 130 people evacuated to shelters in the western portion of the Florida panhandle."
+        },
+        {
+            "Country": "United States",
+            "Location_Displacement": [
+                "Leon County"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "70 people",
+            "Displacement_with_annotation": "About 70 people had to evacuate their homes due to the flooding."
+        }
+    ],
+    "Location": [
+        "Lesser Antilles",
+        "Puerto Rico",
+        "Hispaniola",
+        "Jamaica",
+        "Cuba",
+        "Isle of Youth",
+        "Eastern United States",
+        "Atlantic Canada",
+        "Guadeloupe",
+        "Antigua",
+        "Ponce",
+        "Guayama",
+        "Fort Walton Beach",
+        "Florida Panhandle",
+        "South Carolina",
+        "Delaware",
+        "North Carolina",
+        "Georgia",
+        "Tennessee",
+        "Alabama",
+        "Virginia",
+        "Nova Scotia",
+        "Newfoundland"
+    ],
+    "Location_with_Annotation": {
+        "Lesser Antilles": "As a tropical wave, Helene moved through the Lesser Antilles with strong winds; gusts on Guadeloupe reached 55 mph (89 km/h).",
+        "Puerto Rico": "The wave passed to the south of Puerto Rico on September 17 and 18. Across the southern and eastern portion of the island, the system produced 6 to 12 in (150 to 300 mm) of rainfall, which resulted in flash flooding and mudslides.",
+        "Hispaniola": "Areas affected: Lesser Antilles, Puerto Rico, Hispaniola, Jamaica, Cuba, Isle of Youth, Eastern United States, Atlantic Canada",
+        "Jamaica": "Areas affected: Lesser Antilles, Puerto Rico, Hispaniola, Jamaica, Cuba, Isle of Youth, Eastern United States, Atlantic Canada",
+        "Cuba": "After the system redeveloped into a tropical depression, the government of Cuba issued a tropical storm warning for the provinces of Isla de la Juventud, Havana, and Pinar del R\u00edo, as well as for the city of Havana.",
+        "Isle of Youth": "After the system redeveloped into a tropical depression, the government of Cuba issued a tropical storm warning for the provinces of Isla de la Juventud, Havana, and Pinar del R\u00edo, as well as for the city of Havana.",
+        "Eastern United States": "Areas affected: Lesser Antilles, Puerto Rico, Hispaniola, Jamaica, Cuba, Isle of Youth, Eastern United States, Atlantic Canada",
+        "Atlantic Canada": "Areas affected: Lesser Antilles, Puerto Rico, Hispaniola, Jamaica, Cuba, Isle of Youth, Eastern United States, Atlantic Canada",
+        "Guadeloupe": "As a tropical wave, Helene moved through the Lesser Antilles with strong winds; gusts on Guadeloupe reached 55 mph (89 km/h).",
+        "Antigua": "The system also produced heavy rainfall, reaching 3.14 in (80 mm) on Antigua.",
+        "Ponce": "One house was destroyed and more than 100 houses were affected in Ponce, forcing several families to evacuate.",
+        "Guayama": "The flooding also destroyed a bridge in Guayama and made many roads impassable.",
+        "Fort Walton Beach": "The storm made landfall near Fort Walton Beach, Florida at 1200 UTC on September 22 after weakening from its peak intensity to winds of 40 mph (64 km/h).",
+        "Florida Panhandle": "In neighboring Florida, the storm dropped heavy rainfall along the panhandle, peaking at 9.56 in (243 mm) in Apalachicola.",
+        "South Carolina": "As Helene moved through South Carolina, it spawned an F2 tornado in Martin that killed one person, injured six, and damaged 12 houses.",
+        "Delaware": "Rainfall from the storm extended through Virginia and into Delaware.",
+        "North Carolina": "Rainfall in North Carolina peaked at 8.31 in (211 mm) in Longwood; in Jacksonville, the precipitation caused street flooding.",
+        "Georgia": "When Helene moved through Georgia, it had sustained winds of around 30 mph (48 km/h), with higher gusts.",
+        "Tennessee": "To the northwest of Georgia, rainfall spread into Tennessee, reaching 3.12 in (79 mm) in Copperhill.",
+        "Alabama": "In Alabama, wind gusts reached 36 mph (58 km/h) at Brookley Air Force Base in Mobile; the same station recorded the highest rainfall in the state, with a total of 1.08 in (27 mm).",
+        "Virginia": "Rainfall from the storm extended through Virginia and into Delaware.",
+        "Nova Scotia": "Although its strongest winds remained offshore, the outer rainbands dropped light precipitation, peaking at 0.89 in (22.5 mm) in eastern Nova Scotia.",
+        "Newfoundland": "Although its strongest winds remained offshore, the outer rainbands dropped light precipitation, peaking at 0.89 in (22.5 mm) in eastern Nova Scotia, and 1.18 in (30 mm) in southeastern Newfoundland."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": "$16 million",
+        "Total_Economic_Damage_Units": "USD",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "Despite being a weak tropical cyclone at landfall, Tropical Storm Helene caused $16 million in damage (2000 USD)."
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "United States",
+            "Total_Economic_Damage": "$16 million",
+            "Total_Economic_Damage_Units": "USD",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Despite being a weak tropical cyclone at landfall, Tropical Storm Helene caused $16 million in damage (2000 USD)."
+        },
+        {
+            "Country": "Puerto Rico",
+            "Total_Economic_Damage": "$100,000",
+            "Total_Economic_Damage_Units": "USD",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "Damage on the island was estimated at $100,000 (2000 USD)."
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "Puerto Rico",
+            "Location_Economic_Damage": [
+                "Ponce",
+                "Guayama"
+            ],
+            "Num_Economic_Damage": "$100,000",
+            "Economic_Damage_Units": "USD",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "Damage on the island was estimated at $100,000 (2000 USD)."
+        },
+        {
+            "Country": "United States",
+            "Location_Economic_Damage": [
+                "Cape San Blas"
+            ],
+            "Num_Economic_Damage": "$100,000",
+            "Economic_Damage_Units": "USD",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "At that location, there was over $100,000 in road damage and beach loss."
+        }
+    ],
+    "Perils": "Wind|Rainfall|Flood|Landslide|Tornado",
+    "Perils_Assessment_With_Annotation": {
+        "Wind": "gusts on Guadeloupe reached 55 mph (89 km/h) | wind gusts reached 36 mph (58 km/h) at Brookley Air Force Base in Mobile | Sustained winds across the state peaked at 30 mph (48 km/h), though gusts reached 45 mph (72 km/h) at Cape San Blas | Off the shore of North Carolina, a station at Diamond Shoal Light reported wind gusts of 70 mph (110 km/h) while Helene was re-intensifying into a tropical storm. Along the coast, the highest gusts were 52 mph (84 km/h), reported at both Cape Lookout and Duck",
+        "Rainfall": "The system also produced heavy rainfall, reaching 3.14 in (80 mm) on Antigua | Across the southern and eastern portion of the island, the system produced 6 to 12 in (150 to 300 mm) of rainfall | In neighboring Florida, the storm dropped heavy rainfall along the panhandle, peaking at 9.56 in (243 mm) in Apalachicola | Rainfall in North Carolina peaked at 8.31 in (211 mm) in Longwood | The highest rainfall in the United States associated with Helene was a total of 9.60 in (244 mm) in Bamberg",
+        "Flood": "The rains caused flooding, notably in Franklin, Wakulla, and Leon counties, all of which closed schools and public buildings | The rains caused flooding along Highway 47, in nearby Orangeburg County where 5.3 in (130 mm) were recorded | The rainfall alleviated persistent drought conditions across the state. However, the combination of winds and rainfall downed trees and power lines; one falling tree damaged a car in Sandersville | The rains caused the Sopchoppy River to exceed its banks and reach a record crest of 34.9 ft (10.6 m), breaking the previous record set in 1970. Several homes and nearby roads were flooded near the river. About 100 homes were flooded in Leon County, and 70 streets were flooded in Tallahassee. Portions of U.S. Highway 98 were flooded in Port St. Joe and near Carrabelle. About 70 people had to evacuate their homes due to the flooding",
+        "Landslide": "Across the southern and eastern portion of the island, the system produced 6 to 12 in (150 to 300 mm) of rainfall, which resulted in flash flooding and mudslides",
+        "Tornado": "In South Carolina, Helene spawned a tornado that killed one person and injured six others | The storm spawned 6 tornadoes along the panhandle, one of which destroyed several mobile homes in Wakulla"
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "NULL",
+        "Total_Building_Damage_Annotation": "NULL"
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "Puerto Rico",
+            "Start_Date_Building_Damage": "September 17",
+            "End_Date_Building_Damage": "September 18",
+            "Num_Building_Damage": "more than 100 houses",
+            "Building_Damage_with_annotation": "One house was destroyed and more than 100 houses were affected in Ponce, forcing several families to evacuate."
+        },
+        {
+            "Country": "United States",
+            "Start_Date_Building_Damage": "September 22",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "Puerto Rico",
+            "Location_Building_Damage": [
+                "Ponce"
+            ],
+            "Start_Date_Building_Damage": "September 17",
+            "End_Date_Building_Damage": "September 18",
+            "Num_Building_Damage": "more than 100 houses",
+            "Building_Damage_with_annotation": "One house was destroyed and more than 100 houses were affected in Ponce, forcing several families to evacuate."
+        },
+        {
+            "Country": "United States",
+            "Location_Building_Damage": [
+                "Leon County"
+            ],
+            "Start_Date_Building_Damage": "September 22",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "100 homes",
+            "Building_Damage_with_annotation": "About 100 homes were flooded in Leon County."
+        },
+        {
+            "Country": "United States",
+            "Location_Building_Damage": [
+                "Tallahassee"
+            ],
+            "Start_Date_Building_Damage": "September 22",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "70 streets",
+            "Building_Damage_with_annotation": "70 streets were flooded in Tallahassee."
+        },
+        {
+            "Country": "United States",
+            "Location_Building_Damage": [
+                "Port St. Joe",
+                "Carrabelle"
+            ],
+            "Start_Date_Building_Damage": "September 22",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "Portions of U.S. Highway 98 were flooded in Port St. Joe and near Carrabelle."
+        },
+        {
+            "Country": "United States",
+            "Location_Building_Damage": [
+                "Cape San Blas"
+            ],
+            "Start_Date_Building_Damage": "September 22",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "over $100,000 in road damage and beach loss",
+            "Building_Damage_with_annotation": "At that location, there was over $100,000 in road damage and beach loss."
+        },
+        {
+            "Country": "United States",
+            "Location_Building_Damage": [
+                "Wakulla"
+            ],
+            "Start_Date_Building_Damage": "September 22",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "more than 120 homes",
+            "Building_Damage_with_annotation": "In Leon County, the storm destroyed two homes and six mobile homes, and damaged more than 120 homes in Wakulla County."
+        },
+        {
+            "Country": "United States",
+            "Location_Building_Damage": [
+                "Martin"
+            ],
+            "Start_Date_Building_Damage": "September 22",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "12 houses",
+            "Building_Damage_with_annotation": "As Helene moved through South Carolina, it spawned an F2 tornado in Martin that killed one person, injured six, and damaged 12 houses."
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "NULL",
+        "Total_Affected_Annotation": "NULL"
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "Puerto Rico",
+            "Start_Date_Affected": "September 17",
+            "End_Date_Affected": "September 18",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "The wave passed to the south of Puerto Rico on September 17 and 18. Across the southern and eastern portion of the island, the system produced 6 to 12 in (150 to 300 mm) of rainfall, which resulted in flash flooding and mudslides. One house was destroyed and more than 100 houses were affected in Ponce, forcing several families to evacuate."
+        },
+        {
+            "Country": "United States",
+            "Start_Date_Affected": "September 22",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "NULL",
+            "Affected_with_annotation": "About 130 people evacuated to shelters in the western portion of the Florida panhandle and planes evacuated military bases in the region. Government buildings were closed in Okaloosa, and schools were closed in Okaloosa, Walton, and Santa Rosa counties."
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "Puerto Rico",
+            "Location_Affected": [
+                "Ponce"
+            ],
+            "Start_Date_Affected": "September 17",
+            "End_Date_Affected": "September 18",
+            "Num_Affected": "several families",
+            "Affected_with_annotation": "One house was destroyed and more than 100 houses were affected in Ponce, forcing several families to evacuate."
+        },
+        {
+            "Country": "United States",
+            "Location_Affected": [
+                "western portion of the Florida panhandle"
+            ],
+            "Start_Date_Affected": "September 22",
+            "End_Date_Affected": "NULL",
+            "Num_Affected": "130 people",
+            "Affected_with_annotation": "About 130 people evacuated to shelters in the western portion of the Florida panhandle and planes evacuated military bases in the region."
+        }
+    ]
+}

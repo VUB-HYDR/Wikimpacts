@@ -1,0 +1,634 @@
+{
+    "Event_ID": "58.0",
+    "Source": "https://en.wikipedia.org/wiki/2021_Western_North_America_heat_wave",
+    "Event_Name": "2021 Western North America heat wave   ",
+    "Total_Summary_Homelessness": {
+        "Total_Homelessness": "NULL",
+        "Total_Homelessness_Annotation": "NULL"
+    },
+    "Total_Homelessness_Per_Country": [
+        {
+            "Country": "Canada",
+            "Start_Date_Homelessness": "June 30, 2021",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "90%",
+            "Homelessness_with_annotation": "The town was eventually overrun by the fire, where it caused widespread destruction to the buildings. A local MP, Brad Vis, estimated damage to the settlement at 90%."
+        },
+        {
+            "Country": "United States",
+            "Start_Date_Homelessness": "NULL",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "NULL",
+            "Homelessness_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Homelessness": [
+        {
+            "Country": "Canada",
+            "Location_Homelessness": [
+                "Lytton"
+            ],
+            "Start_Date_Homelessness": "June 30, 2021",
+            "End_Date_Homelessness": "NULL",
+            "Num_Homelessness": "90%",
+            "Homelessness_with_annotation": "The town was eventually overrun by the fire, where it caused widespread destruction to the buildings. A local MP, Brad Vis, estimated damage to the settlement at 90%."
+        }
+    ],
+    "Total_Summary_Injury": {
+        "Total_Injury": "almost 2,800",
+        "Total_Injury_Annotation": "The heat wave caused a surge in 9-1-1 calls and emergency department visits, with later analysis finding almost 2,800 heat-related emergency department visits made on July 25\u201330."
+    },
+    "Total_Injury_Per_Country": [
+        {
+            "Country": "United States",
+            "Start_Date_Injury": "June 25, 2021",
+            "End_Date_Injury": "July 7, 2021",
+            "Num_Injury": "almost 2,800",
+            "Injury_with_annotation": "The heat wave caused a surge in 9-1-1 calls and emergency department visits, with later analysis finding almost 2,800 heat-related emergency department visits made on July 25\u201330."
+        },
+        {
+            "Country": "Canada",
+            "Start_Date_Injury": "June 25, 2021",
+            "End_Date_Injury": "July 7, 2021",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Injury": [
+        {
+            "Country": "United States",
+            "Location_Injury": [
+                "Portland",
+                "Oregon"
+            ],
+            "Start_Date_Injury": "June 25, 2021",
+            "End_Date_Injury": "July 7, 2021",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "In Portland, the number of calls and the response times doubled, setting a record for the area."
+        },
+        {
+            "Country": "United States",
+            "Location_Injury": [
+                "Seattle",
+                "Washington"
+            ],
+            "Start_Date_Injury": "June 25, 2021",
+            "End_Date_Injury": "July 7, 2021",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "Public transportation also deteriorated in the sweltering conditions. Trains on Link light rail and Sounder commuter rail in Seattle operated at reduced speeds as a precaution against possible deformation of railroad tracks and overhead lines."
+        },
+        {
+            "Country": "United States",
+            "Location_Injury": [
+                "Eugene",
+                "Oregon"
+            ],
+            "Start_Date_Injury": "June 25, 2021",
+            "End_Date_Injury": "July 7, 2021",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "In Eugene, where the qualifiers for the 2020 Summer Olympics were held, the heat caused evacuation of the stadium in the afternoon and postponement of some events to the evening hours, as the temperature of the stadium's track exceeded 150 \u00b0F (66 \u00b0C)."
+        },
+        {
+            "Country": "United States",
+            "Location_Injury": [
+                "Seattle",
+                "Washington"
+            ],
+            "Start_Date_Injury": "June 25, 2021",
+            "End_Date_Injury": "July 7, 2021",
+            "Num_Injury": "nearly a hundred",
+            "Injury_with_annotation": "In Seattle, nearly a hundred juvenile terns, whose nests were on top of an industrial building, died when they plunged to the pavement below, presumably trying to escape the heat - those that survived were treated for burns."
+        },
+        {
+            "Country": "Canada",
+            "Location_Injury": [
+                "British Columbia"
+            ],
+            "Start_Date_Injury": "June 25, 2021",
+            "End_Date_Injury": "July 7, 2021",
+            "Num_Injury": "NULL",
+            "Injury_with_annotation": "NULL"
+        }
+    ],
+    "Main_Event": "Extreme Temperature",
+    "Main_Event_Assessment_With_Annotation": "The 2021 Western North America heat wave was an extreme heat wave that affected much of Western North America from late June through mid-July 2021.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "1,400 deaths (estimated), 914 (confirmed)",
+        "Total_Death_Annotation": "The death toll exceeded 1,400 people, with at least 808 estimated in western Canada."
+    },
+    "Total_Death_Per_Country": [
+        {
+            "Country": "Canada",
+            "Start_Date_Death": "June 25, 2021",
+            "End_Date_Death": "July 1, 2021",
+            "Num_Death": "800 excess deaths (685 confirmed)",
+            "Death_with_annotation": "800 excess deaths (685 confirmed) in Canada"
+        },
+        {
+            "Country": "United States",
+            "Start_Date_Death": "June 25, 2021",
+            "End_Date_Death": "July 7, 2021",
+            "Num_Death": "~600 excess deaths (229 confirmed)",
+            "Death_with_annotation": "~600 excess deaths (229 confirmed) in the United States"
+        }
+    ],
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "Canada",
+            "Location_Death": [
+                "British Columbia"
+            ],
+            "Start_Date_Death": "June 25, 2021",
+            "End_Date_Death": "July 1, 2021",
+            "Num_Death": "619",
+            "Death_with_annotation": "The Chief Coroner of British Columbia reported that 619 deaths were recorded due to heat exposure in the week from June 25 to July 1."
+        },
+        {
+            "Country": "Canada",
+            "Location_Death": [
+                "British Columbia"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "569",
+            "Death_with_annotation": "the Chief Coroner of British Columbia stated that 569 casualties could be attributed to heat, and that in the prior five years, only three heat-related casualties had been registered."
+        },
+        {
+            "Country": "Canada",
+            "Location_Death": [
+                "British Columbia"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "47",
+            "Death_with_annotation": "Of the total heat-wave-related deaths, 47 people died in community living, assisted living or long-term care facilities."
+        },
+        {
+            "Country": "Canada",
+            "Location_Death": [
+                "British Columbia"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "62",
+            "Death_with_annotation": "Further, 62 people died from heat exposure in social housing run or funded by the provincial government."
+        },
+        {
+            "Country": "Canada",
+            "Location_Death": [
+                "British Columbia"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "8",
+            "Death_with_annotation": "Eight individuals who lived at Vancouver Mental Health and Substance use housing died."
+        },
+        {
+            "Country": "Canada",
+            "Location_Death": [
+                "British Columbia"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "NULL",
+            "Death_with_annotation": "Records show indoor air temperatures in some long-term care facilities rose to over 30\u00b0C during the heat wave. Some hospitals were also unable to keep temperatures in a comfortable range for patients and staff. At least two Lower Mainland and one Northern hospital recorded indoor temperatures of over 32\u00b0C in the emergency department, while an acute care floor at Lions Gate Hospital got as hot as 38\u00b0C."
+        },
+        {
+            "Country": "United States",
+            "Location_Death": [
+                "Oregon"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "116",
+            "Death_with_annotation": "Confirmed deaths in the United States include at least 116 in Oregon (of which 72 are in Multnomah County, which includes Portland)"
+        },
+        {
+            "Country": "United States",
+            "Location_Death": [
+                "Washington"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "112",
+            "Death_with_annotation": "at least 112 in Washington"
+        },
+        {
+            "Country": "United States",
+            "Location_Death": [
+                "Idaho"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "1",
+            "Death_with_annotation": "and one death in Idaho"
+        },
+        {
+            "Country": "United States",
+            "Location_Death": [
+                "Washington",
+                "Oregon"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "600",
+            "Death_with_annotation": "An analysis by The New York Times suggests that around 600 excess deaths occurred the week the heat wave passed through Washington and Oregon."
+        },
+        {
+            "Country": "United States",
+            "Location_Death": [
+                "Oregon"
+            ],
+            "Start_Date_Death": "June 25, 2021",
+            "End_Date_Death": "June 30, 2021",
+            "Num_Death": "NULL",
+            "Death_with_annotation": "On July 13, 2021, Multnomah County, Oregon published an analysis which found that a majority of deaths occurred in households which had no air conditioning or had only fans."
+        },
+        {
+            "Country": "United States",
+            "Location_Death": [
+                "Washington"
+            ],
+            "Start_Date_Death": "June 25, 2021",
+            "End_Date_Death": "June 30, 2021",
+            "Num_Death": "NULL",
+            "Death_with_annotation": "The heat wave caused a surge in 9-1-1 calls and emergency department visits, with later analysis finding almost 2,800 heat-related emergency department visits made on July 25\u201330."
+        },
+        {
+            "Country": "United States",
+            "Location_Death": [
+                "Salem",
+                "Willamette River"
+            ],
+            "Start_Date_Death": "June 25, 2021",
+            "End_Date_Death": "June 30, 2021",
+            "Num_Death": "2",
+            "Death_with_annotation": "Two swimmers in Salem, who were trying to escape the heat, went missing in the Willamette River"
+        },
+        {
+            "Country": "United States",
+            "Location_Death": [
+                "Portland",
+                "Willamette River"
+            ],
+            "Start_Date_Death": "June 25, 2021",
+            "End_Date_Death": "June 30, 2021",
+            "Num_Death": "1",
+            "Death_with_annotation": "another did so in Portland"
+        },
+        {
+            "Country": "United States",
+            "Location_Death": [
+                "Washington"
+            ],
+            "Start_Date_Death": "June 25, 2021",
+            "End_Date_Death": "June 30, 2021",
+            "Num_Death": "3",
+            "Death_with_annotation": "while in Washington, three people drowned."
+        },
+        {
+            "Country": "United States",
+            "Location_Death": [
+                "St. Paul",
+                "Oregon"
+            ],
+            "Start_Date_Death": "NULL",
+            "End_Date_Death": "NULL",
+            "Num_Death": "1",
+            "Death_with_annotation": "After Sebastian Francisco Perez, an outdoor farm worker in St. Paul, Oregon, died while at work, Oregon OSHA faced calls to enforce safety rules for dealing with the heat wave, which had been first drafted in May."
+        },
+        {
+            "Country": "Canada",
+            "Location_Death": [
+                "Lytton",
+                "British Columbia"
+            ],
+            "Start_Date_Death": "June 30, 2021",
+            "End_Date_Death": "NULL",
+            "Num_Death": "2",
+            "Death_with_annotation": "The fire in the settlement forced the closure of a section of British Columbia Highway 1, part of Trans-Canada Highway, as well as Highway 12, which ends in Lytton. Despite deployment of more than 17,000 firefighters by mid-July, the size and number of the fires grew. Almost 1,000,000 acres (4,050 km2) of forest were consumed by large wildfires, and more than 2,250,000 acres (9,110 km2) were burnt in the United States as of July 15. The intensity of the fires moved the US fire preparedness alert level to 5 (highest) by July 14, which was an early start of the wildfire season. In addition to that, the Governors of Oregon, Washington, and Idaho declared states of emergency due to the extreme risk of wildfires. The Canadian army officials set up a coordination center in Edmonton in order to assist wildfire actions in British Columbia, which would be directed until July 19. As the extreme heat and dry conditions persisted, scientists, firefighters and various politicians urged residents not to use fireworks during Independence Day celebrations in the Western United States and on Canada Day in Alberta. In addition to that, Washington and British Columbia enacted state-/provincewide bans on most open fires. Other areas such as Idaho and Manitoba used more localized approaches to burn restrictions. As of September 14, 2021, the National Interagency Fire Center (NIFC) reported that 44,647 wildfires in the United States had burned 5.6 million acres of land. Similarly, the Canadian Interagency Forest Fire Centre (CIFFC) announced that 6,317 wildfires burned 10.34 million acres. Due to the earliness and severity of the wildfire season, the United States and Canada were unable to provide each other with aid to jointly combat fires. Initially, the NIFC declared that the United States and Canada had a preparedness level of 5, meaning it had the potential to exhaust firefighting resources. However, by September 20, 2021, the national preparedness level was reduced to 4 and 1 for the United States and Canada, respectively. Prior to the start of the extreme heat wave, wildfire risk was greatly elevated by existing weather conditions. In April 2021, the North American wildfire season was predicted to be severe due to record drought conditions and high spring temperatures in the West. In May, more than 75% of the western United States experienced drought conditions, with 21% of these conditions being deemed as 'exceptional drought', which is the most extreme level of drought. These extreme conditions result in a lack of moisture on the ground that is imperative for combating wildfires. In Arizona, there were 311 early wildfires in the first four months of the year, compared to 127 in the same period in 2020. In July 2021, haze from West Coast fires resulted in air quality alerts in East Coast cities. In Montana, evacuation orders had displaced around 600 people by early August. On October 21, the national preparedness level was lowered to 1, while by November 5, a total of 48,725 wildfires had burned more than 6.5 million acres across the United States, according to the National Interagency Fire Center (NIFC). Glacier melt[edit]: Extreme temperatures were also noted for mountain regions, which accelerated the melting of glaciers. Extensive melting occurred in the snowcaps of Banff National Park, which a glaciologist estimated that the Albertan snow from the mountains melted three times faster than usual. On Mount Rainier, the heat wave caused the mass of the snow cap to shrink by 30%, and Washington's glaciers in general have come through what glaciologists say to be the strongest melting episode in 100 years. Additionally, the increased melting of glaciers caused high amounts of runoff to be present within some rivers. The unexpected snowmelt resulted in extensive flash flooding down the creeks and rivers fed by the glaciers, triggering evacuation orders. Wildlife and fisheries[edit]: As the surrounding air was extremely hot, water temperatures rose, which proved to be a hazard for aquatic wildlife. On the Pacific shore, temperatures in the intertidal zone reached up to 122 \u00b0F (50 \u00b0C) and more than a billion seashore animals, like clams, barnacles and oysters, died as a result of heat wave, impacting water quality. The deaths also impacted seafood producers, who faced losses of produce as it baked in the heatwave and started rotting. Inland, the population of sockeye salmon in Idaho rivers was preventatively caught out of water as increasing temperatures made it prone to disease; some salmon was also transported to cooler waters in the Columbia River. Fish kill, however, was not prevented in Alberta and appeared earlier than expected. The heat wave caused an increase in vibrio bacteria levels in oysters in the Pacific Northwest, causing a record number of people to be sickened from vibriosis, an intestinal disease caused by the bacteria. As a result, the Washington State Department of Health urged people not to eat raw oysters and other shellfish from the region. On the land, trees in Metro Vancouver dried up and started shedding leaves; the same happened to the fir canopy in Oregon on the side where the trees faced the sun. In Seattle, nearly a hundred juvenile terns, whose nests were on top of an industrial building, died when they plunged to the pavement below, presumably trying to escape the heat - those that survived were treated for burns. Scores of British Columbian raptors, apart from heat exhaustion, suffered from dehydration and starvation. See also[edit]: References[edit]: Further reading[edit]: External links[edit]:"
+        }
+    ],
+    "Start_Date": "2021-06-25",
+    "End_Date": "2021-07-07",
+    "Time_with_Annotation": "Start date: June 25, 2021 (2021-06-25)\nEnd date: July 7, 2021 (2021-07-07)",
+    "Total_Summary_Insured_Damage": {
+        "Total_Insured_Damage": ">=8.9 billion",
+        "Total_Insured_Damage_Units": "USD",
+        "Total_Insured_Damage_Inflation_Adjusted": "No",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Insured_Damage_Assessment_with_annotation": "The National Oceanic and Atmospheric Administration (NOAA) estimated that the heatwave caused at least $8.9 billion (2021 USD) in damages in the USA."
+    },
+    "Total_Insured_Damage_Per_Country": [
+        {
+            "Country": "United States",
+            "Total_Insured_Damage": ">=8.9 billion",
+            "Total_Insured_Damage_Units": "USD",
+            "Total_Insured_Damage_Inflation_Adjusted": "No",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "The National Oceanic and Atmospheric Administration (NOAA) estimated that the heatwave caused at least $8.9 billion (2021 USD) in damages in the USA."
+        },
+        {
+            "Country": "Canada",
+            "Total_Insured_Damage": "NULL",
+            "Total_Insured_Damage_Units": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+            "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Insured_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Insured_Damage": [
+        {
+            "Country": "United States",
+            "Location_Insured_Damage": [
+                "NULL"
+            ],
+            "Num_Insured_Damage": ">=8.9 billion",
+            "Insured_Damage_Units": "USD",
+            "Insured_Damage_Inflation_Adjusted": "No",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "The National Oceanic and Atmospheric Administration (NOAA) estimated that the heatwave caused at least $8.9 billion (2021 USD) in damages in the USA."
+        },
+        {
+            "Country": "Canada",
+            "Location_Insured_Damage": [
+                "NULL"
+            ],
+            "Num_Insured_Damage": "NULL",
+            "Insured_Damage_Units": "NULL",
+            "Insured_Damage_Inflation_Adjusted": "NULL",
+            "Insured_Damage_Inflation_Adjusted_Year": "NULL",
+            "Insured_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Total_Summary_Displacement": {
+        "Total_Displacement": "NULL",
+        "Total_Displacement_Annotation": "NULL"
+    },
+    "Total_Displacement_Per_Country": [
+        {
+            "Country": "Canada",
+            "Start_Date_Displacement": "June 30, 2021",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "The city of Lytton, which had beaten national heat records in the previous days, was ordered to be evacuated alongside several First Nations reserves."
+        },
+        {
+            "Country": "United States",
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Displacement": [
+        {
+            "Country": "Canada",
+            "Location_Displacement": [
+                "Lytton",
+                "First Nations reserves"
+            ],
+            "Start_Date_Displacement": "June 30, 2021",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "The city of Lytton, which had beaten national heat records in the previous days, was ordered to be evacuated alongside several First Nations reserves."
+        },
+        {
+            "Country": "United States",
+            "Location_Displacement": [
+                "Medford"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "NULL",
+            "Displacement_with_annotation": "The winds were so strong that residents of Medford, Oregon, c. 80 mi (130 km) north of the fires, reported having seen ash falling from the sky."
+        },
+        {
+            "Country": "United States",
+            "Location_Displacement": [
+                "Montana"
+            ],
+            "Start_Date_Displacement": "NULL",
+            "End_Date_Displacement": "NULL",
+            "Num_Displacement": "600",
+            "Displacement_with_annotation": "In Montana, evacuation orders had displaced around 600 people by early August."
+        }
+    ],
+    "Location": [
+        "Northern California",
+        "Idaho",
+        "Western Nevada",
+        "Oregon",
+        "Washington",
+        "British Columbia",
+        "Alberta",
+        "Manitoba",
+        "Northwest Territories",
+        "Saskatchewan",
+        "Yukon",
+        "Central California",
+        "Southern California",
+        "Nevada",
+        "Montana",
+        "Labrador"
+    ],
+    "Location_with_Annotation": {
+        "Northern California": "The heat wave affected Northern California, Idaho, Western Nevada, Oregon, and Washington in the United States, as well as British Columbia...",
+        "Idaho": "The heat wave affected Northern California, Idaho, Western Nevada, Oregon, and Washington in the United States, as well as British Columbia...",
+        "Western Nevada": "The heat wave affected Northern California, Idaho, Western Nevada, Oregon, and Washington in the United States, as well as British Columbia...",
+        "Oregon": "The heat wave affected Northern California, Idaho, Western Nevada, Oregon, and Washington in the United States, as well as British Columbia...",
+        "Washington": "The heat wave affected Northern California, Idaho, Western Nevada, Oregon, and Washington in the United States, as well as British Columbia...",
+        "British Columbia": "The heat wave affected Northern California, Idaho, Western Nevada, Oregon, and Washington in the United States, as well as British Columbia...",
+        "Alberta": "The heat wave affected Northern California, Idaho, Western Nevada, Oregon, and Washington in the United States, as well as British Columbia, and in its latter phase, Alberta, Manitoba, the Northwest Territories, Saskatchewan, and Yukon, all in Canada.",
+        "Manitoba": "The heat wave affected Northern California, Idaho, Western Nevada, Oregon, and Washington in the United States, as well as British Columbia, and in its latter phase, Alberta, Manitoba, the Northwest Territories, Saskatchewan, and Yukon, all in Canada.",
+        "Northwest Territories": "The heat wave affected Northern California, Idaho, Western Nevada, Oregon, and Washington in the United States, as well as British Columbia, and in its latter phase, Alberta, Manitoba, the Northwest Territories, Saskatchewan, and Yukon, all in Canada.",
+        "Saskatchewan": "The heat wave affected Northern California, Idaho, Western Nevada, Oregon, and Washington in the United States, as well as British Columbia, and in its latter phase, Alberta, Manitoba, the Northwest Territories, Saskatchewan, and Yukon, all in Canada.",
+        "Yukon": "The heat wave affected Northern California, Idaho, Western Nevada, Oregon, and Washington in the United States, as well as British Columbia, and in its latter phase, Alberta, Manitoba, the Northwest Territories, Saskatchewan, and Yukon, all in Canada.",
+        "Central California": "It also affected inland regions of Central and Southern California, Nevada, and Montana, though the temperature anomalies were not as extreme as in the regions farther north.",
+        "Southern California": "It also affected inland regions of Central and Southern California, Nevada, and Montana, though the temperature anomalies were not as extreme as in the regions farther north.",
+        "Nevada": "It also affected inland regions of Central and Southern California, Nevada, and Montana, though the temperature anomalies were not as extreme as in the regions farther north.",
+        "Montana": "It also affected inland regions of Central and Southern California, Nevada, and Montana, though the temperature anomalies were not as extreme as in the regions farther north.",
+        "Labrador": "The record-high temperatures associated with the heat wave stretched from Oregon to northern Manitoba, and daily highs were set as far east as Labrador and as far southwest as Southern California."
+    },
+    "Total_Summary_Damage": {
+        "Total_Economic_Damage": ">= $8.9 billion",
+        "Total_Economic_Damage_Units": "USD",
+        "Total_Economic_Damage_Inflation_Adjusted": "No",
+        "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+        "Total_Economic_Damage_Assessment_with_annotation": "The National Oceanic and Atmospheric Administration (NOAA) estimated that the heatwave caused at least $8.9 billion (2021 USD) in damages in the USA."
+    },
+    "Total_Economic_Damage_Per_Country": [
+        {
+            "Country": "United States",
+            "Total_Economic_Damage": ">= $8.9 billion",
+            "Total_Economic_Damage_Units": "USD",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "The National Oceanic and Atmospheric Administration (NOAA) estimated that the heatwave caused at least $8.9 billion (2021 USD) in damages in the USA."
+        },
+        {
+            "Country": "Canada",
+            "Total_Economic_Damage": "NULL",
+            "Total_Economic_Damage_Units": "NULL",
+            "Total_Economic_Damage_Inflation_Adjusted": "No",
+            "Total_Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Total_Economic_Damage_Assessment_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Economic_Damage": [
+        {
+            "Country": "United States",
+            "Location_Economic_Damage": [
+                "NULL"
+            ],
+            "Num_Economic_Damage": ">= $8.9 billion",
+            "Economic_Damage_Units": "USD",
+            "Economic_Damage_Inflation_Adjusted": "No",
+            "Economic_Damage_Inflation_Adjusted_Year": "NULL",
+            "Economic_Damage_Assessment_with_annotation": "The National Oceanic and Atmospheric Administration (NOAA) estimated that the heatwave caused at least $8.9 billion (2021 USD) in damages in the USA."
+        }
+    ],
+    "Perils": "Heatwave|Wildfire|Flood|Drought|Lightning",
+    "Perils_Assessment_With_Annotation": {
+        "Heatwave": "The 2021 Western North America heat wave was an extreme heat wave that affected much of Western North America from late June through mid-July 2021.",
+        "Wildfire": "The extreme heat sparked numerous, extensive wildfires, some reaching hundreds of square kilometers in area.",
+        "Flood": "Extreme heat also damaged road and rail infrastructure, forced closures of businesses, disrupted cultural events, and melted snowcaps, in some cases resulting in flooding.",
+        "Drought": "At the same time, the Southwestern United States was enduring an intense drought which caused higher-than-average temperatures, leading to a similar heat wave earlier in June.",
+        "Lightning": "Pyrocumulonimbus clouds formed due to such extensive burning, producing several hundred thousand lightning strikes in one day and further complicating efforts to contain fires."
+    },
+    "Total_Summary_Building_Damage": {
+        "Total_Building_Damage": "NULL",
+        "Total_Building_Damage_Annotation": "NULL"
+    },
+    "Total_Building_Damage_Per_Country": [
+        {
+            "Country": "Canada",
+            "Start_Date_Building_Damage": "June 30, 2021",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "The eponymous Lytton wildfire destroyed the village of Lytton, British Columbia, the day after the city set the record high temperature for Canada."
+        },
+        {
+            "Country": "United States",
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "NULL"
+        }
+    ],
+    "Specific_Instance_Per_Country_Building_Damage": [
+        {
+            "Country": "Canada",
+            "Location_Building_Damage": [
+                "Lytton",
+                "British Columbia"
+            ],
+            "Start_Date_Building_Damage": "June 30, 2021",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "The eponymous Lytton wildfire destroyed the village of Lytton, British Columbia, the day after the city set the record high temperature for Canada."
+        },
+        {
+            "Country": "United States",
+            "Location_Building_Damage": [
+                "NULL"
+            ],
+            "Start_Date_Building_Damage": "NULL",
+            "End_Date_Building_Damage": "NULL",
+            "Num_Building_Damage": "NULL",
+            "Building_Damage_with_annotation": "NULL"
+        }
+    ],
+    "Total_Summary_Affected": {
+        "Total_Affected": "1,400 deaths (estimated), 914 (confirmed)",
+        "Total_Affected_Annotation": "The death toll exceeded 1,400 people, with at least 808 estimated in western Canada."
+    },
+    "Total_Affected_Per_Country": [
+        {
+            "Country": "Canada",
+            "Start_Date_Affected": "June 25, 2021",
+            "End_Date_Affected": "July 7, 2021",
+            "Num_Affected": "800 excess deaths (685 confirmed)",
+            "Affected_with_annotation": "800 excess deaths (685 confirmed) in Canada"
+        },
+        {
+            "Country": "United States",
+            "Start_Date_Affected": "June 25, 2021",
+            "End_Date_Affected": "July 7, 2021",
+            "Num_Affected": "~600 excess deaths (229 confirmed)",
+            "Affected_with_annotation": "~600 excess deaths (229 confirmed) in the United States"
+        }
+    ],
+    "Specific_Instance_Per_Country_Affected": [
+        {
+            "Country": "Canada",
+            "Location_Affected": [
+                "British Columbia"
+            ],
+            "Start_Date_Affected": "June 25, 2021",
+            "End_Date_Affected": "July 1, 2021",
+            "Num_Affected": "619 deaths",
+            "Affected_with_annotation": "The Chief Coroner of British Columbia reported that 619 deaths were recorded due to heat exposure in the week from June 25 to July 1."
+        },
+        {
+            "Country": "Canada",
+            "Location_Affected": [
+                "British Columbia"
+            ],
+            "Start_Date_Affected": "June 25, 2021",
+            "End_Date_Affected": "July 7, 2021",
+            "Num_Affected": "47 deaths in community living, assisted living or long-term care facilities",
+            "Affected_with_annotation": "Of the total heat-wave-related deaths, 47 people died in community living, assisted living or long-term care facilities."
+        },
+        {
+            "Country": "Canada",
+            "Location_Affected": [
+                "British Columbia"
+            ],
+            "Start_Date_Affected": "June 25, 2021",
+            "End_Date_Affected": "July 7, 2021",
+            "Num_Affected": "62 deaths in social housing",
+            "Affected_with_annotation": "Further, 62 people died from heat exposure in social housing run or funded by the provincial government."
+        },
+        {
+            "Country": "Canada",
+            "Location_Affected": [
+                "British Columbia"
+            ],
+            "Start_Date_Affected": "June 25, 2021",
+            "End_Date_Affected": "July 7, 2021",
+            "Num_Affected": "8 deaths in Vancouver Mental Health and Substance use housing",
+            "Affected_with_annotation": "Eight individuals who lived at Vancouver Mental Health and Substance use housing died."
+        },
+        {
+            "Country": "United States",
+            "Location_Affected": [
+                "Oregon"
+            ],
+            "Start_Date_Affected": "June 25, 2021",
+            "End_Date_Affected": "July 7, 2021",
+            "Num_Affected": "116 deaths",
+            "Affected_with_annotation": "Confirmed deaths in the United States include at least 116 in Oregon."
+        },
+        {
+            "Country": "United States",
+            "Location_Affected": [
+                "Washington"
+            ],
+            "Start_Date_Affected": "June 25, 2021",
+            "End_Date_Affected": "July 7, 2021",
+            "Num_Affected": "112 deaths",
+            "Affected_with_annotation": "Confirmed deaths in the United States include at least 112 in Washington."
+        },
+        {
+            "Country": "United States",
+            "Location_Affected": [
+                "Idaho"
+            ],
+            "Start_Date_Affected": "June 25, 2021",
+            "End_Date_Affected": "July 7, 2021",
+            "Num_Affected": "1 death",
+            "Affected_with_annotation": "Confirmed deaths in the United States include one death in Idaho."
+        }
+    ]
+}
