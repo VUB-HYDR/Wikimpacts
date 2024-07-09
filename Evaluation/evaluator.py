@@ -1,13 +1,14 @@
 import argparse
 import ast
 import json
-from weights import weights
+import pathlib
+from pprint import pformat
+
 import comparer
 import numpy as np
 import pandas as pd
-import pathlib
-from pprint import pformat
 from utils import Logging
+from weights import weights as weights_dict
 
 if __name__ == "__main__":
     logger = Logging.get_logger("evaluator")
@@ -61,7 +62,7 @@ if __name__ == "__main__":
         "--weights_config",
         dest="weights_config",
         default="all_columns",
-        choices=weights.keys(),
+        choices=weights_dict.keys(),
         help="Which weights configuration to use. Weight configs are found in `weights.py` in this same directory",
         type=str,
     )
@@ -70,12 +71,14 @@ if __name__ == "__main__":
 
     output_dir = f"Database/evaluation_results/{args.model_name}"
     logger.info(f"Creating {output_dir} if it does not exist!")
-    pathlib.Path(output_dir).mkdir(parents=True, exist_ok=True) 
+    pathlib.Path(output_dir).mkdir(parents=True, exist_ok=True)
 
     gold = pd.read_parquet(args.gold_set_filepath, engine="fastparquet").replace(
         {np.nan: None, "NULL ": None, "NULL": None}
     )
-    sys = pd.read_parquet(args.sys_set_filepath, engine="fastparquet").replace({np.nan: None, "NULL ": None, "NULL": None})
+    sys = pd.read_parquet(args.sys_set_filepath, engine="fastparquet").replace(
+        {np.nan: None, "NULL ": None, "NULL": None}
+    )
 
     logger.info("Only including events in the gold file")
     sys = sys[sys.Event_ID.isin(gold["Event_ID"].to_list())]
@@ -112,7 +115,7 @@ if __name__ == "__main__":
     null_penalty = args.null_penalty
 
     # Specify item weights
-    _weights = weights[args.weights_config]
+    _weights = weights_dict[args.weights_config]
     weights = {}
     for k, v in _weights.items():
         if k in gold.columns:
@@ -126,13 +129,17 @@ if __name__ == "__main__":
     comp = comparer.Comparer(null_penalty, target_columns=weights.keys())
     logger.info(f"Target columns: {comp.target_columns}")
 
+    sys = sys.sort_values("Event_ID")
+    gold = gold.sort_values("Event_ID")
+
     for col in ["Country_Norm"]:
         sys[col] = sys[col].apply(ast.literal_eval)
         gold[col] = gold[col].apply(ast.literal_eval)
 
     logger.info("Parsed strings to lists or dicts")
-    sys_data = sys.to_dict(orient="records")
-    gold_data = gold.to_dict(orient="records")
+
+    sys_data = sys[weights.keys()].to_dict(orient="records")
+    gold_data = gold[weights.keys()].to_dict(orient="records")
 
     pairs = zip(sys_data, gold_data)
     logger.info(f"Prepared {len(sys_data)} events for evaluation")
@@ -147,15 +154,12 @@ if __name__ == "__main__":
     ).replace({np.nan: None})
 
     all_comps.sort_values("Weighted_Score")
-    all_comps.to_csv(
-        f"{output_dir}/{args.score}_{len(sys_data)}_results.csv", index=False
-    )
+    all_comps.to_csv(f"{output_dir}/{args.score}_{len(sys_data)}_results.csv", index=False)
 
     averages = {}
     for i in all_comps.columns:
         if not i.startswith("Event_ID"):
             averages[i] = all_comps.loc[:, i].mean()
-
 
     avg_result_filename = f"{output_dir}/{args.score}_{len(sys_data)}_avg_results.json"
     with open(avg_result_filename, "w") as f:
