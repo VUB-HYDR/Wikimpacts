@@ -1,0 +1,29 @@
+{
+    "URL": "https://en.wikipedia.org/wiki/Substation_Fire",
+    "Event_ID": "UwaYAGq",
+    "Event_Name": "Substation Fire",
+    "prompt": "\n        Based on the provided article, which includes the information box {'Date(s)': 'July 17, 2018 (2018-07-17) - August 2, 2018 (2018-08-02)', 'Location': 'Private land, The Dalles, Oregon, United States', 'Coordinates': \"45deg34'34''N 121deg06'11''W / 45.576degN 121.103degW / 45.576; -121.103\", 'Burned area': '78,425 acres (317 km2)', 'Land use': 'Private', 'Cause': 'Unknown'} and the full text The Substation Fire was a wildfire in the U.S. state of Oregon near The Dalles. The fire was first reported on July 17, 2018, and had burned 78,425 acres(317 km2).\n-Incidents-\nThe Substation Fire was reported, burning on private land, in the late afternoon on July 17, 2018, five miles south of The Dalles, two miles west of Moro and near the border of Grass Valley. Strong winds caused the fire to grow rapidly, with the fire moving over 18 miles in days. Agricultural and recreational areas suffered heavy damage and by July 18 Oregon Governor Kate Brown had declared a state of emergency, which included calling the Oregon National Guard to assist with fighting the fire and the communities of Moro, Grass Valley and Kent were evacuated. The next day, evacuation orders were lifted, however a temporary flight restriction was put in place in the area.\nAs of July 23, the fire had destroyed 78,425 acres(317 km2) and was 92 percent contained. related to Substation Fire,\n        first extract and summarize detailed information about the total economic loss or damage caused by Substation Fire, focusing specifically on the economic impact in the mentioned regions. The information should be organized in JSON format as follows:\n        - \"Total_Summary_Damage\": {\n        - \"Total_Damage\": \"Specify the economic loss or damage reported. If this information is not mentioned, assign 'NULL'.\"\n        - \"Total_Damage_Units\": \"Indicate the currency of the reported damage (e.g., USD, EUR). If the currency is not specified, assign 'NULL'.\"\n        - \"Total_Damage_Inflation_Adjusted\": \"State 'Yes' if the reported damage amount has been adjusted for inflation; otherwise, indicate 'No'. If this aspect is not mentioned, provide your best judgment based on the context.\"\n        - \"Total_Damage_Inflation_Adjusted_Year\": \"Mention the year used for inflation adjustment, if applicable. If the amount is not adjusted for inflation or this detail is not provided, assign 'NULL'.\"\n        - \"Economic_Impact_with_annotation\": \"Directly quote portions of the text that substantiate your findings on the total economic loss or damage. This should directly quote the original text.\"\n        }\n        If the \"Total_Damage\" is not \"NULL\" or \"0\", then, delve deeper to provide a detailed breakdown of economic damages by country. \n        For the first instance in the \"Specific_Instance_Per_Country_Economic_Damage\" section for each country, provide a summary of the total economic damage within that country and the \"Location_Damage\" is the country name, \n        followed by a breakdown into specific cities, towns, or regions where possible.\n        Organize this information in JSON format as follows:\n        - \"Specific_Instance_Per_Country_Damage\":[ {\n        - \"Country\": \"Name of the country.\",\n        - \"Location_Damage\": \"The specific place within the country where the economic impact occurred, including towns, cities, or regions.\"\n        - \"Damage\": \"The amount of economic damage.\"\n        - \"Damage_Units\": \"The currency of the economic damage, like USD, EUR. If not specified, assign 'NULL'.\"\n        - \"Damage_Inflation_Adjusted\": \"Indicate 'Yes' if the damage amount has been adjusted for inflation; otherwise, 'No'.\"\n        - \"Damage_Inflation_Adjusted_Year\": \"The year of inflation adjustment, if applicable. If not adjusted or not applicable, assign 'NULL'.\"\n        - \"Damage_Assessment_with_annotation\": \"Include text from the original article that supports your findings on the economic impact amount and details for each specific instance. This should directly quote the original text.\"\n          }]\n        Ensure to capture all instances of economic loss or damage mentioned in the article, including direct and indirect causes, and organize them in the JSON format output.\n        Please produce the response strictly in JSON format. Ensure the JSON is correctly formatted, closely following the described field names, without any extra text, comments, or explanations outside the JSON structure.\n        ",
+    "Main_Event": "Wildfire",
+    "Main_Event_Assessment_With_Annotation": "The Substation Fire was a wildfire in the U.S. state of Oregon near The Dalles. The fire was first reported on July 17, 2018, and had burned 78,425 acres(317 km2).",
+    "Country": [
+        "United States"
+    ],
+    "Country_with_Annotation": [
+        "The Substation Fire was a wildfire in the U.S. state of Oregon near The Dalles."
+    ],
+    "Start_Date": "July 17, 2018",
+    "End_Date": "August 2, 2018",
+    "Time_with_Annotation": "The Substation Fire was reported, burning on private land, in the late afternoon on July 17, 2018, and had burned 78,425 acres(317 km2).",
+    "Total_Summary_Death": {
+        "Total_Deaths": "NULL",
+        "Total_Death_Annotation": ""
+    },
+    "Total_Summary_Damage": {
+        "Total_Damage": "NULL",
+        "Total_Damage_Units": "NULL",
+        "Total_Damage_Inflation_Adjusted": "No",
+        "Total_Damage_Inflation_Adjusted_Year": "NULL",
+        "Economic_Impact_with_annotation": "No economic loss or damage reported in the article."
+    },
+    "Specific_Instance_Per_Country_Damage": []
+}

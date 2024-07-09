@@ -1,0 +1,96 @@
+{
+    "URL": "https://en.wikipedia.org/wiki/1775_Newfoundland_hurricane",
+    "Event_ID": "NKjNgKy",
+    "Event_Name": "1775 Newfoundland hurricane",
+    "prompt": "\n        Based on the provided article, which includes the information box {'Formed': 'August 29, 1775', 'Dissipated': 'September 9, 1775', 'Fatalities': '4,000<-4,163 + (8th deadliest Atlantic-basin hurricane in recorded history)', 'Areas affected': 'North Carolina, Virginia, Newfoundland'} and the full text The 1775 Newfoundland hurricane, also known as the Independence Hurricane, was a hurricane that struck the Thirteen Colonies and the Colony of Newfoundland in August and September, 1775, at the outset of the American War of Independence. It is believed to have killed at least 4,000 people, making it one of the deadliest Atlantic hurricanes of all time. There is disagreement among historians and meteorologists whether the events were one storm or two distinct storms.\n-Impact-\n--North Carolina and Virginia--\nOn August 27, 1775, a hurricane hit the Outer Banks of North Carolina. It turned northeastward and left the state on September 2, bringing heavy wind and rain to southeastern Virginia. A letter from New Bern, North Carolina, recounted, \"We had a violent hurricane...which has done a vast deal of damage here, at the Bar, and at Matamuskeet, near 150 lives being lost at the Bar, and 15 in one neighborhood at Matamuskeet.\"\nThe September 9, 1775, edition of The Virginia Gazette reported: \"The shocking accounts of damage done by the rains last week are numerous: Most of the mill-dams are broke, the corn laid almost level with the ground, and fodder destroyed; many ships and other vessels drove ashore and damaged, at Norfolk, Hampton, and York. In the heavy storm of wind and rain, which came on last Saturday, and continued most part of the night, the Mercury man of war as drove from her station abreast of the town of Norfolk, and stuck flat aground in shoal water.\"\nAt least 163 people were killed.\n--Newfoundland--\nA storm struck the eastern coast of Newfoundland on September 9, 1775. It is uncertain if this storm was the remnants of the hurricane that had crossed the Outer Banks over a week earlier.\nNewfoundland's fisheries \"received a very severe stroke from the violence of a storm of wind, which almost swept everything before it,\" Commodore Governor Robert Duff wrote shortly after it struck. \"A considerable number of boats, with their crews, have been totally lost, several vessels wrecked on the shores,\" he said. Ocean levels rose to heights \"scarcely ever known before\" and caused great devastation, Duff reported.\nA total of 4,000 sailors, mostly from England and Ireland, were reported to have been drowned.  A localized storm surge is reported to have reached heights of between 20 and 30 feet. Losses from the hurricane include two armed schooners of the Royal Navy, which were on the Grand Banks of Newfoundland to enforce Britain's fishing rights.\nThe hurricane is Atlantic Canada's first recorded hurricane and Canada's deadliest natural disaster(and by far the deadliest hurricane to ever hit territory of present-day Canada), as well as the eighth-deadliest Atlantic hurricane in history. related to 1775 Newfoundland hurricane,\n        first extract and summarize detailed information about the total economic loss or damage caused by 1775 Newfoundland hurricane, focusing specifically on the economic impact in the mentioned regions. The information should be organized in JSON format as follows:\n        - \"Total_Summary_Damage\": {\n        - \"Total_Damage\": \"Specify the economic loss or damage reported. If this information is not mentioned, assign 'NULL'.\"\n        - \"Total_Damage_Units\": \"Indicate the currency of the reported damage (e.g., USD, EUR). If the currency is not specified, assign 'NULL'.\"\n        - \"Total_Damage_Inflation_Adjusted\": \"State 'Yes' if the reported damage amount has been adjusted for inflation; otherwise, indicate 'No'. If this aspect is not mentioned, provide your best judgment based on the context.\"\n        - \"Total_Damage_Inflation_Adjusted_Year\": \"Mention the year used for inflation adjustment, if applicable. If the amount is not adjusted for inflation or this detail is not provided, assign 'NULL'.\"\n        - \"Economic_Impact_with_annotation\": \"Directly quote portions of the text that substantiate your findings on the total economic loss or damage. This should directly quote the original text.\"\n        }\n        If the \"Total_Damage\" is not \"NULL\" or \"0\", then, delve deeper to provide a detailed breakdown of economic damages by country. \n        For the first instance in the \"Specific_Instance_Per_Country_Economic_Damage\" section for each country, provide a summary of the total economic damage within that country and the \"Location_Damage\" is the country name, \n        followed by a breakdown into specific cities, towns, or regions where possible.\n        Organize this information in JSON format as follows:\n        - \"Specific_Instance_Per_Country_Damage\":[ {\n        - \"Country\": \"Name of the country.\",\n        - \"Location_Damage\": \"The specific place within the country where the economic impact occurred, including towns, cities, or regions.\"\n        - \"Damage\": \"The amount of economic damage.\"\n        - \"Damage_Units\": \"The currency of the economic damage, like USD, EUR. If not specified, assign 'NULL'.\"\n        - \"Damage_Inflation_Adjusted\": \"Indicate 'Yes' if the damage amount has been adjusted for inflation; otherwise, 'No'.\"\n        - \"Damage_Inflation_Adjusted_Year\": \"The year of inflation adjustment, if applicable. If not adjusted or not applicable, assign 'NULL'.\"\n        - \"Damage_Assessment_with_annotation\": \"Include text from the original article that supports your findings on the economic impact amount and details for each specific instance. This should directly quote the original text.\"\n          }]\n        Ensure to capture all instances of economic loss or damage mentioned in the article, including direct and indirect causes, and organize them in the JSON format output.\n        Please produce the response strictly in JSON format. Ensure the JSON is correctly formatted, closely following the described field names, without any extra text, comments, or explanations outside the JSON structure.\n        ",
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Assessment_With_Annotation": "The 1775 Newfoundland hurricane, also known as the Independence Hurricane, was a hurricane that struck the Thirteen Colonies and the Colony of Newfoundland in August and September, 1775, at the outset of the American War of Independence.",
+    "Country": [
+        "North Carolina",
+        "Virginia",
+        "England",
+        "Ireland",
+        "Newfoundland"
+    ],
+    "Country_with_Annotation": [
+        "North Carolina",
+        "The hurricane hit the Outer Banks of North Carolina. It turned northeastward and left the state on September 2, bringing heavy wind and rain to southeastern Virginia.",
+        "Virginia",
+        "The shocking accounts of damage done by the rains last week are numerous: Most of the mill-dams are broke, the corn laid almost level with the ground, and fodder destroyed; many ships and other vessels drove ashore and damaged, at Norfolk, Hampton, and York.",
+        "England",
+        "A total of 4,000 sailors, mostly from England and Ireland, were reported to have been drowned.",
+        "Ireland",
+        "A total of 4,000 sailors, mostly from England and Ireland, were reported to have been drowned.",
+        "Newfoundland",
+        "A storm struck the eastern coast of Newfoundland on September 9, 1775. It is uncertain if this storm was the remnants of the hurricane that had crossed the Outer Banks over a week earlier."
+    ],
+    "Start_Date": "August 29, 1775",
+    "End_Date": "September 9, 1775",
+    "Time_with_Annotation": "Formed: 'August 29, 1775', Dissipated: 'September 9, 1775'",
+    "Total_Summary_Death": {
+        "Total_Deaths": "4,000",
+        "Total_Death_Annotation": "It is believed to have killed at least 4,000 people, making it one of the deadliest Atlantic hurricanes of all time."
+    },
+    "Specific_Instance_Per_Country_Death": [
+        {
+            "Country": "North Carolina",
+            "Location_Death": "Outer Banks",
+            "Start_Date_Death": "August 27, 1775",
+            "End_Date_Death": "September 2, 1775",
+            "Num_Death": "150",
+            "Death_with_annotation": "A letter from New Bern, North Carolina, recounted, 'We had a violent hurricane...which has done a vast deal of damage here, at the Bar, and at Matamuskeet, near 150 lives being lost at the Bar, and 15 in one neighborhood at Matamuskeet.'"
+        },
+        {
+            "Country": "Virginia",
+            "Location_Death": "Southeastern Virginia",
+            "Start_Date_Death": "September 2, 1775",
+            "End_Date_Death": "September 9, 1775",
+            "Num_Death": "163",
+            "Death_with_annotation": "At least 163 people were killed."
+        },
+        {
+            "Country": "Newfoundland",
+            "Location_Death": "Eastern coast of Newfoundland",
+            "Start_Date_Death": "September 9, 1775",
+            "End_Date_Death": "September 9, 1775",
+            "Num_Death": "4,000",
+            "Death_with_annotation": "A total of 4,000 sailors, mostly from England and Ireland, were reported to have been drowned."
+        }
+    ],
+    "Total_Summary_Damage": {
+        "Total_Damage": "NULL",
+        "Total_Damage_Units": "NULL",
+        "Total_Damage_Inflation_Adjusted": "No",
+        "Total_Damage_Inflation_Adjusted_Year": "NULL",
+        "Economic_Impact_with_annotation": "No specific economic loss or damage reported."
+    },
+    "Specific_Instance_Per_Country_Damage": [
+        {
+            "Country": "North Carolina",
+            "Location_Damage": "Outer Banks",
+            "Damage": "150 lives lost",
+            "Damage_Units": "NULL",
+            "Damage_Inflation_Adjusted": "No",
+            "Damage_Inflation_Adjusted_Year": "NULL",
+            "Damage_Assessment_with_annotation": "We had a violent hurricane...which has done a vast deal of damage here, at the Bar, and at Matamuskeet, near 150 lives being lost at the Bar, and 15 in one neighborhood at Matamuskeet."
+        },
+        {
+            "Country": "Virginia",
+            "Location_Damage": "Norfolk, Hampton, and York",
+            "Damage": "Many ships and other vessels driven ashore and damaged",
+            "Damage_Units": "NULL",
+            "Damage_Inflation_Adjusted": "No",
+            "Damage_Inflation_Adjusted_Year": "NULL",
+            "Damage_Assessment_with_annotation": "The shocking accounts of damage done by the rains last week are numerous: Most of the mill-dams are broke, the corn laid almost level with the ground, and fodder destroyed; many ships and other vessels driven ashore and damaged, at Norfolk, Hampton, and York."
+        },
+        {
+            "Country": "Newfoundland",
+            "Location_Damage": "Eastern coast",
+            "Damage": "4,000 sailors drowned",
+            "Damage_Units": "NULL",
+            "Damage_Inflation_Adjusted": "No",
+            "Damage_Inflation_Adjusted_Year": "NULL",
+            "Damage_Assessment_with_annotation": "A considerable number of boats, with their crews, have been totally lost, several vessels wrecked on the shores...A total of 4,000 sailors, mostly from England and Ireland, were reported to have been drowned."
+        }
+    ]
+}

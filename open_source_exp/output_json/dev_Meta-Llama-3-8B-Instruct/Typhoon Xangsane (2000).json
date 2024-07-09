@@ -1,0 +1,62 @@
+{
+    "URL": "https://en.wikipedia.org/wiki/Typhoon_Xangsane_(2000)",
+    "Event_ID": "C4J4mo6",
+    "Event_Name": "Typhoon Xangsane (2000)",
+    "prompt": "\n        Based on the provided article, which includes the information box {'Formed': 'October 24, 2000', 'Extratropical': 'November 1, 2000', 'Dissipated': 'November 2, 2000', 'Highest winds': '165 km/h (105 mph)', 'Lowest pressure': '960 hPa (mbar); 28.35 inHg', 'Fatalities': '187 total', 'Damage': '$527 million (2000 USD)', 'Areas affected': 'Caroline Islands, Philippines, Taiwan, Japan'} and the full text Typhoon Xangsane, known in the Philippines as Typhoon Reming, was a typhoon that made landfall in the Philippines and Taiwan. The 30th named storm and 12th typhoon of the 2000 Pacific typhoon season. Xangsane made landfall in southern Luzon in the Philippines, on October 27. The storm  then turned north, heading northeastward over the South China Sea. On October 29, Xangsane reached its peak intensity, with 10-minute sustained winds of 140 km/h(87 mph), 1-minute sustained winds of 165 km/h(103 mph) and a minimum barometric pressure of 960 hPa(28 inHg). The storm paralleled the eastern coast of Taiwan, the next day. After leaving the vicinity of Taiwan, Xangsane started to weaken as it continued to move northeastward over the East China Sea and subsequently transitioned to an extratropical cyclone, midway between the eastern coast of China and the northern Okinawa Islands, on November 1. Xangsane was responsible for 187 casualties, including 83 possibly indirectly from the crash of Singapore Airlines Flight 006 on October 31, 2000.\n-Meteorological history-\nOn October 24, the formation of a tropical cyclone began in the waters near Palau, and on October 25, the Joint Typhoon Warning Center(JTWC), designated it 30W. The tropical cyclone then reached the surveillance area of the Philippines, so it was given the Philippine name \"Reming\" by PAGASA. After that, 30W(Reming) was named \"Xangsane\". Xangsane made landfall in Luzon, Philippines, on October 27. After leaving the Philippines, it proceeded northward and than northeastward over the South China Sea, on October 29. Over the next two days, the storm strengthened and reached its peak intensity, with 10- minute sustained winds of 140 km/h(87 mph), 1- minute sustained winds of 165 km/h(103 mph) and a minimum barometric pressure of 960 hPa(28 inHg). Before brushing past Taiwan to its east, with Taiwan getting a direct hit by the western eyewall. On November 1, Xangsane started to weaken, as it continued to move northeastward before transitioning into an extratropical cyclone in the East China Sea, at 12:00(UTC), the same day.\n-Impact-\nXangsane brought impacts to the Manila metropolitan area. Strong winds and heavy rains occurred in Quezon, Bulacan, Zambales and Pangasinan, as well as in the Bicol region of southern Luzon. In Tayabas, Quezon, rainfall amount of 312.3 mm was observed in 24 hours. The storm killed 40 people, lost 100,000 homes, and caused damage of $27.45 million. In Taiwan, the storm killed 64 and injured 65 people, and 25 were declared missing and caused $500 million in damages.\nXangsane was the 15th storm that approached Japan in 2000. 2000 was a rare year when the number of storms approached Japan was relatively high, even though there were no storms that made landfall in Japan.\n--Singapore Airlines Flight 006--\nOn October 31, when Xangsane was approaching Taiwan, Singapore Airlines Flight 006 crashed at Chiang Kai-shek International Airport(now Taoyuan International Airport). Initially, it was suspected that the accident was due to the effect of Xangsane, but it was later discovered that the accident was due to a pilot error. However, some argue that this pilot error was due to poor visibility from Xangsane. related to Typhoon Xangsane (2000),\n        first extract and summarize detailed information about the total economic loss or damage caused by Typhoon Xangsane (2000), focusing specifically on the economic impact in the mentioned regions. The information should be organized in JSON format as follows:\n        - \"Total_Summary_Damage\": {\n        - \"Total_Damage\": \"Specify the economic loss or damage reported. If this information is not mentioned, assign 'NULL'.\"\n        - \"Total_Damage_Units\": \"Indicate the currency of the reported damage (e.g., USD, EUR). If the currency is not specified, assign 'NULL'.\"\n        - \"Total_Damage_Inflation_Adjusted\": \"State 'Yes' if the reported damage amount has been adjusted for inflation; otherwise, indicate 'No'. If this aspect is not mentioned, provide your best judgment based on the context.\"\n        - \"Total_Damage_Inflation_Adjusted_Year\": \"Mention the year used for inflation adjustment, if applicable. If the amount is not adjusted for inflation or this detail is not provided, assign 'NULL'.\"\n        - \"Economic_Impact_with_annotation\": \"Directly quote portions of the text that substantiate your findings on the total economic loss or damage. This should directly quote the original text.\"\n        }\n        If the \"Total_Damage\" is not \"NULL\" or \"0\", then, delve deeper to provide a detailed breakdown of economic damages by country. \n        For the first instance in the \"Specific_Instance_Per_Country_Economic_Damage\" section for each country, provide a summary of the total economic damage within that country and the \"Location_Damage\" is the country name, \n        followed by a breakdown into specific cities, towns, or regions where possible.\n        Organize this information in JSON format as follows:\n        - \"Specific_Instance_Per_Country_Damage\":[ {\n        - \"Country\": \"Name of the country.\",\n        - \"Location_Damage\": \"The specific place within the country where the economic impact occurred, including towns, cities, or regions.\"\n        - \"Damage\": \"The amount of economic damage.\"\n        - \"Damage_Units\": \"The currency of the economic damage, like USD, EUR. If not specified, assign 'NULL'.\"\n        - \"Damage_Inflation_Adjusted\": \"Indicate 'Yes' if the damage amount has been adjusted for inflation; otherwise, 'No'.\"\n        - \"Damage_Inflation_Adjusted_Year\": \"The year of inflation adjustment, if applicable. If not adjusted or not applicable, assign 'NULL'.\"\n        - \"Damage_Assessment_with_annotation\": \"Include text from the original article that supports your findings on the economic impact amount and details for each specific instance. This should directly quote the original text.\"\n          }]\n        Ensure to capture all instances of economic loss or damage mentioned in the article, including direct and indirect causes, and organize them in the JSON format output.\n        Please produce the response strictly in JSON format. Ensure the JSON is correctly formatted, closely following the described field names, without any extra text, comments, or explanations outside the JSON structure.\n        ",
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Assessment_With_Annotation": "Typhoon Xangsane, known in the Philippines as Typhoon Reming, was a typhoon that made landfall in the Philippines and Taiwan. The storm then turned north, heading northeastward over the South China Sea. On October 29, Xangsane reached its peak intensity, with 10-minute sustained winds of 140 km/h(87 mph), 1-minute sustained winds of 165 km/h(103 mph) and a minimum barometric pressure of 960 hPa(28 inHg).",
+    "Country": [
+        "Philippines",
+        "Taiwan",
+        "Japan",
+        "Caroline Islands"
+    ],
+    "Country_with_Annotation": [
+        {
+            "Country": "Philippines",
+            "Country_with_Annotation": "Xangsane made landfall in southern Luzon in the Philippines, on October 27."
+        },
+        {
+            "Country": "Taiwan",
+            "Country_with_Annotation": "The storm paralleled the eastern coast of Taiwan, the next day."
+        },
+        {
+            "Country": "Japan",
+            "Country_with_Annotation": "Xangsane was the 15th storm that approached Japan in 2000."
+        },
+        {
+            "Country": "Caroline Islands",
+            "Country_with_Annotation": "Typhoon Xangsane, known in the Philippines as Typhoon Reming, was a typhoon that made landfall in the Philippines and Taiwan, and also affected the Caroline Islands."
+        }
+    ],
+    "Start_Date": "October 24, 2000",
+    "End_Date": "November 2, 2000",
+    "Time_with_Annotation": "On October 24, the formation of a tropical cyclone began in the waters near Palau, and on October 25, the Joint Typhoon Warning Center(JTWC), designated it 30W. The tropical cyclone then reached the surveillance area of the Philippines, so it was given the Philippine name \"Reming\" by PAGASA. After that, 30W(Reming) was named \"Xangsane\".",
+    "Total_Summary_Damage": {
+        "Total_Damage": "$527 million",
+        "Total_Damage_Units": "USD",
+        "Total_Damage_Inflation_Adjusted": "No",
+        "Total_Damage_Inflation_Adjusted_Year": "NULL",
+        "Economic_Impact_with_annotation": "Xangsane was responsible for $527 million in damages."
+    },
+    "Specific_Instance_Per_Country_Damage": [
+        {
+            "Country": "Philippines",
+            "Location_Damage": "Manila metropolitan area, Quezon, Bulacan, Zambales, Pangasinan, and Bicol region",
+            "Damage": "$27.45 million",
+            "Damage_Units": "USD",
+            "Damage_Inflation_Adjusted": "No",
+            "Damage_Inflation_Adjusted_Year": "NULL",
+            "Damage_Assessment_with_annotation": "The storm killed 40 people, lost 100,000 homes, and caused damage of $27.45 million."
+        },
+        {
+            "Country": "Taiwan",
+            "Location_Damage": "Taiwan",
+            "Damage": "$500 million",
+            "Damage_Units": "USD",
+            "Damage_Inflation_Adjusted": "No",
+            "Damage_Inflation_Adjusted_Year": "NULL",
+            "Damage_Assessment_with_annotation": "The storm killed 64 and injured 65 people, and 25 were declared missing, and caused $500 million in damages."
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "URL": "https://en.wikipedia.org/wiki/Tropical_Storm_Talas_(2017)",
+    "Event_ID": "rbnHB4x",
+    "Event_Name": "Tropical Storm Talas (2017)",
+    "prompt": "\n        Based on the provided article, which includes the information box {'Formed': 'July 14, 2017', 'Dissipated': 'July 17, 2017', 'Highest winds': '95 km/h (60 mph)', 'Lowest pressure': '985 hPa (mbar); 29.09 inHg', 'Fatalities': '14 total', 'Damage': '$118 million (2017 USD)', 'Areas affected': 'Vietnam, South China, Laos, Thailand, Myanmar'} and the full text Severe Tropical Storm Talas was a tropical cyclone that impacted Vietnam during mid July 2017. Talas was first tracked as a tropical disturbance over in the South China Sea on July 13, and was upgraded to a tropical depression during the next day. The depression intensified into the fourth named storm of the 2017 Pacific typhoon season during July 15. Before making landfall in Vietnam, Talas reached its peak intensity as a severe tropical storm during July 16. Talas weakened to an area of low pressure on July 17 inland.\nThroughout Vietnam, the storm killed 14 people and damaged around 2,700 houses. Rough seas sunk about 50 boats. Nearly 50,000 hectares(120,000 acres) of vegetable fields, about 800 hectares(2,000 acres) of aquaculture, and 47,600 hectares(118,000 acres) of rice and subsidiary crops were damaged. Damage was estimated at 2.52 trillion₫(US$109 million).\n-Meteorological history-\nDuring July 13, the Joint Typhoon Warning Center(JTWC) began to monitor a tropical disturbance located about 648 km(403 mi) to the southeast of Hanoi, Vietnam. By the next day, at around 06:00 UTC, the Japan Meteorological Agency(JMA) classified the system as a weak tropical depression, as it started to move slowly towards the northwest. Six hours later, the JMA began issuing advisories, noting that the system was producing 10-minute sustained winds of at least 55 km/h(34 mph). The JTWC issued a Tropical Cyclone Formation Alert at 02:30 UTC on July 15 after satellite imagery depicted deep convection wrapping into its developing low-level circulation center. With the system continuing to develop, the JMA upgraded it to a tropical storm, assigning it the name Talas. As convective banding improved, the JTWC upgraded the disturbance to a tropical depression by midday on July 15. Several hours later, the JTWC further upgraded Talas to a tropical storm after recording Dvorak estimates of T2.5, indicating 1-minute sustained winds of 65 km/h(40 mph).\nOn July 16, Talas gradually intensified as it became better organized in response to being located in a favorable environment, consisting of low to moderate northeasterly vertical wind shear as well as good outflow to the south. At 09:00 UTC, the JMA upgraded Talas into a severe tropical storm after the storm attained 10-minute sustained winds of 95 km/h(59 mph) and a minimum barometric pressure of 985 hPa(29.1 inHg); this constituted its peak intensity. At the same time, the JTWC also recorded 1-minute sustained peak winds of 95 km/h(59 mph). Shortly thereafter, Talas began to weaken due to land interaction and the JMA soon downgraded the system back to a tropical storm. Around 18:00 UTC, Talas made landfall in Central Vietnam, near the city of Vinh. Three hours later, the JTWC issued their final advisory on Talas as it continued to degrade while progressing inland. The JMA soon followed suit with their final advisory at 09:00 UTC on July 17 while the weakening Talas was located over the northern portion of Laos.\n-Preparations and impact-\n--Vietnam--\nTalas made landfall near Vinh at around 18:00 UTC on July 16 as a moderate tropical storm. According to the Central Steering Committee for Natural Disaster Prevention and Rescue, more than 2,700 homes were damaged in Nghe An Province. The Vietnam's National Center for Hydro-Meteorological Forecasting recorded wind gusts up to 100 km/h(62 mph) with wind damage being reported in Nghe An, Thanh Hóa and Ha Tinh provinces. Over 400 mm(16 in) of rain fell in the central and northern parts of the country in the two days following up to landfall, while the capital, Hanoi, received 100 mm(3.9 in). The storm sank a coal ship late on July 16; only three of the people on board were rescued while another ten remained missing. In the Quảng Bình Province, fishing boats were washed ashore by waves as high as 5 m(16 ft); there, seven people were injured. During July 17, flooded streets and disrupted train services stranded more than 4,000 passengers in the capital. Railway services from Hanoi to Vinh were canceled while trains from Hanoi to Saigon were delayed by five to seven hours.\nOverall, in Vietnam, the storm left 14 people dead and damaged around 2,700 houses. About 50 boats sank. Around 50,000 ha(123,555 acres) of vegetable fields, about 801 ha(1,980 acres) of aquaculture farms, and 47,632 ha(117,700 acres) of rice and subsidiary crops were damaged. Damages in Nghe An were reported to reach up to 993 billion₫(US$43.7 million). Total damage in Vietnam reached 1.6 trillion₫(US$70.4 million).\n--Hainan--\nDuring July 22, China's National Observatory issued a \"blue alert\" to Hainan province and the Beibu Gulf. About 22,901 fishing boats were moved while 39,425 people working at sea farms evacuated to Guangdong province. Winds of 62–74 km/h(39–46 mph) were recorded over in some places, especially in areas around the Lingshui Li Autonomous County, as the storm neared the coast. Southern portions of the province received rainfall of 3–6 in(8–15 cm). About 49 tourists were stranded from an island off the coast of Guandong. Total economic losses in Hainan Province reached CNY 24 million(US$3.5 million). In total, damage by Talas in China reached CNY 60 million(US$8.8 million). related to Tropical Storm Talas (2017),\n        first extract and summarize detailed information about the total economic loss or damage caused by Tropical Storm Talas (2017), focusing specifically on the economic impact in the mentioned regions. The information should be organized in JSON format as follows:\n        - \"Total_Summary_Damage\": {\n        - \"Total_Damage\": \"Specify the economic loss or damage reported. If this information is not mentioned, assign 'NULL'.\"\n        - \"Total_Damage_Units\": \"Indicate the currency of the reported damage (e.g., USD, EUR). If the currency is not specified, assign 'NULL'.\"\n        - \"Total_Damage_Inflation_Adjusted\": \"State 'Yes' if the reported damage amount has been adjusted for inflation; otherwise, indicate 'No'. If this aspect is not mentioned, provide your best judgment based on the context.\"\n        - \"Total_Damage_Inflation_Adjusted_Year\": \"Mention the year used for inflation adjustment, if applicable. If the amount is not adjusted for inflation or this detail is not provided, assign 'NULL'.\"\n        - \"Economic_Impact_with_annotation\": \"Directly quote portions of the text that substantiate your findings on the total economic loss or damage. This should directly quote the original text.\"\n        }\n        If the \"Total_Damage\" is not \"NULL\" or \"0\", then, delve deeper to provide a detailed breakdown of economic damages by country. \n        For the first instance in the \"Specific_Instance_Per_Country_Economic_Damage\" section for each country, provide a summary of the total economic damage within that country and the \"Location_Damage\" is the country name, \n        followed by a breakdown into specific cities, towns, or regions where possible.\n        Organize this information in JSON format as follows:\n        - \"Specific_Instance_Per_Country_Damage\":[ {\n        - \"Country\": \"Name of the country.\",\n        - \"Location_Damage\": \"The specific place within the country where the economic impact occurred, including towns, cities, or regions.\"\n        - \"Damage\": \"The amount of economic damage.\"\n        - \"Damage_Units\": \"The currency of the economic damage, like USD, EUR. If not specified, assign 'NULL'.\"\n        - \"Damage_Inflation_Adjusted\": \"Indicate 'Yes' if the damage amount has been adjusted for inflation; otherwise, 'No'.\"\n        - \"Damage_Inflation_Adjusted_Year\": \"The year of inflation adjustment, if applicable. If not adjusted or not applicable, assign 'NULL'.\"\n        - \"Damage_Assessment_with_annotation\": \"Include text from the original article that supports your findings on the economic impact amount and details for each specific instance. This should directly quote the original text.\"\n          }]\n        Ensure to capture all instances of economic loss or damage mentioned in the article, including direct and indirect causes, and organize them in the JSON format output.\n        Please produce the response strictly in JSON format. Ensure the JSON is correctly formatted, closely following the described field names, without any extra text, comments, or explanations outside the JSON structure.\n        ",
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Assessment_With_Annotation": "Talas was a tropical cyclone that impacted Vietnam during mid July 2017. It made landfall in Central Vietnam, near the city of Vinh, as a moderate tropical storm.",
+    "Country": [
+        "Vietnam",
+        "South China",
+        "Laos",
+        "Thailand",
+        "Myanmar"
+    ],
+    "Country_with_Annotation": [
+        "Myanmar",
+        ""
+    ],
+    "Start_Date": "July 13, 2017",
+    "End_Date": "July 17, 2017",
+    "Time_with_Annotation": "During July 13, the Joint Typhoon Warning Center(JTWC) began to monitor a tropical disturbance located about 648 km(403 mi) to the southeast of Hanoi, Vietnam. By the next day, at around 06:00 UTC, the Japan Meteorological Agency(JMA) classified the system as a weak tropical depression, as it started to move slowly towards the northwest.",
+    "Total_Summary_Damage": {
+        "Total_Damage": "$118 million (2017 USD)",
+        "Total_Damage_Units": "USD",
+        "Total_Damage_Inflation_Adjusted": "No",
+        "Total_Damage_Inflation_Adjusted_Year": "NULL",
+        "Economic_Impact_with_annotation": "According to the article, the total damage caused by Tropical Storm Talas (2017) was estimated at $118 million (2017 USD)."
+    },
+    "Specific_Instance_Per_Country_Damage": [
+        {
+            "Country": "Vietnam",
+            "Location_Damage": "Nghe An Province",
+            "Damage": "993 billion₫ (US$43.7 million)",
+            "Damage_Units": "VND",
+            "Damage_Inflation_Adjusted": "No",
+            "Damage_Inflation_Adjusted_Year": "NULL",
+            "Damage_Assessment_with_annotation": "According to the article, damages in Nghe An were reported to reach up to 993 billion₫ (US$43.7 million)."
+        },
+        {
+            "Country": "Vietnam",
+            "Location_Damage": "Central Vietnam",
+            "Damage": "1.6 trillion₫ (US$70.4 million)",
+            "Damage_Units": "VND",
+            "Damage_Inflation_Adjusted": "No",
+            "Damage_Inflation_Adjusted_Year": "NULL",
+            "Damage_Assessment_with_annotation": "According to the article, total damage in Vietnam reached 1.6 trillion₫ (US$70.4 million)."
+        },
+        {
+            "Country": "China",
+            "Location_Damage": "Hainan Province",
+            "Damage": "CNY 24 million (US$3.5 million)",
+            "Damage_Units": "CNY",
+            "Damage_Inflation_Adjusted": "No",
+            "Damage_Inflation_Adjusted_Year": "NULL",
+            "Damage_Assessment_with_annotation": "According to the article, total economic losses in Hainan Province reached CNY 24 million (US$3.5 million)."
+        }
+    ]
+}

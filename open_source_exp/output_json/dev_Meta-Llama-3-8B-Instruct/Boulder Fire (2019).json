@@ -1,0 +1,28 @@
+{
+    "URL": "https://en.wikipedia.org/wiki/Boulder_Fire",
+    "Event_ID": "8xqeAzd",
+    "Event_Name": "Boulder Fire (2019)",
+    "prompt": "\n        Based on the provided article, which includes the information box {'Date(s)': 'July 8, 2023 (2023-07-08) - present', 'Location': 'Mount Hood, Wasco County, Oregon', 'Burned area': '233 acres (94 ha)', 'Cause': 'under investigation'} and the full text The Boulder Fire was a wildfire that burned near Mount Hood, Oregon in Wasco County. Ignited on July 8, 2023, the cause of the fire is still under investigation.\n-History-\nThe fire began near Mount Hood, Oregon on July 8, 2023. It was contained by August 31, 2003 and burned approximately 233 acres\n-Cause-\nThe cause of the fire is currently unknown and under investigation.\n-Impact-\nBoulder Lake campground, Little Boulder Lake, Bonney Meadow campground, Badger Lake campground, Camp Windy, and Post Camp campground near Mount Hood were under Level 3 Go Now evacuations.\n\n== References == related to Boulder Fire (2019),\n        first extract and summarize detailed information about the total economic loss or damage caused by Boulder Fire (2019), focusing specifically on the economic impact in the mentioned regions. The information should be organized in JSON format as follows:\n        - \"Total_Summary_Damage\": {\n        - \"Total_Damage\": \"Specify the economic loss or damage reported. If this information is not mentioned, assign 'NULL'.\"\n        - \"Total_Damage_Units\": \"Indicate the currency of the reported damage (e.g., USD, EUR). If the currency is not specified, assign 'NULL'.\"\n        - \"Total_Damage_Inflation_Adjusted\": \"State 'Yes' if the reported damage amount has been adjusted for inflation; otherwise, indicate 'No'. If this aspect is not mentioned, provide your best judgment based on the context.\"\n        - \"Total_Damage_Inflation_Adjusted_Year\": \"Mention the year used for inflation adjustment, if applicable. If the amount is not adjusted for inflation or this detail is not provided, assign 'NULL'.\"\n        - \"Economic_Impact_with_annotation\": \"Directly quote portions of the text that substantiate your findings on the total economic loss or damage. This should directly quote the original text.\"\n        }\n        If the \"Total_Damage\" is not \"NULL\" or \"0\", then, delve deeper to provide a detailed breakdown of economic damages by country. \n        For the first instance in the \"Specific_Instance_Per_Country_Economic_Damage\" section for each country, provide a summary of the total economic damage within that country and the \"Location_Damage\" is the country name, \n        followed by a breakdown into specific cities, towns, or regions where possible.\n        Organize this information in JSON format as follows:\n        - \"Specific_Instance_Per_Country_Damage\":[ {\n        - \"Country\": \"Name of the country.\",\n        - \"Location_Damage\": \"The specific place within the country where the economic impact occurred, including towns, cities, or regions.\"\n        - \"Damage\": \"The amount of economic damage.\"\n        - \"Damage_Units\": \"The currency of the economic damage, like USD, EUR. If not specified, assign 'NULL'.\"\n        - \"Damage_Inflation_Adjusted\": \"Indicate 'Yes' if the damage amount has been adjusted for inflation; otherwise, 'No'.\"\n        - \"Damage_Inflation_Adjusted_Year\": \"The year of inflation adjustment, if applicable. If not adjusted or not applicable, assign 'NULL'.\"\n        - \"Damage_Assessment_with_annotation\": \"Include text from the original article that supports your findings on the economic impact amount and details for each specific instance. This should directly quote the original text.\"\n          }]\n        Ensure to capture all instances of economic loss or damage mentioned in the article, including direct and indirect causes, and organize them in the JSON format output.\n        Please produce the response strictly in JSON format. Ensure the JSON is correctly formatted, closely following the described field names, without any extra text, comments, or explanations outside the JSON structure.\n        ",
+    "Main_Event": "Wildfire",
+    "Main_Event_Assessment_With_Annotation": "The Boulder Fire was a wildfire that burned near Mount Hood, Oregon in Wasco County. Ignited on July 8, 2023, the cause of the fire is still under investigation.",
+    "Country": [
+        "Oregon"
+    ],
+    "Country_with_Annotation": [
+        "The fire began near Mount Hood, Oregon on July 8, 2023."
+    ],
+    "Start_Date": "July 8, 2023",
+    "End_Date": "present",
+    "Time_with_Annotation": "Ignited on July 8, 2023, the cause of the fire is still under investigation.",
+    "Total_Summary_Death": {
+        "Total_Deaths": "NULL",
+        "Total_Death_Annotation": ""
+    },
+    "Total_Summary_Damage": {
+        "Total_Damage": "NULL",
+        "Total_Damage_Units": "NULL",
+        "Total_Damage_Inflation_Adjusted": "No",
+        "Total_Damage_Inflation_Adjusted_Year": "NULL",
+        "Economic_Impact_with_annotation": "The cause of the fire is currently unknown and under investigation."
+    }
+}
