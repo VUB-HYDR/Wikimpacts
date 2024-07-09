@@ -121,7 +121,7 @@ if __name__ == "__main__":
         rows_to_add = []
         for event_id in missing_ids:
             # Create a dictionary for the new row with all columns set to "" except Country_Norm which excepts a list
-            new_row = {col: "" for col in gold_cols}
+            new_row = {col: None for col in gold_cols}
             new_row["Country_Norm"] = "[]"
             new_row['Event_ID'] = event_id  # Set the 'Event_ID'
             rows_to_add.append(new_row)
