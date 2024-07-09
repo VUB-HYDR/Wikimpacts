@@ -1,8 +1,8 @@
 import sqlite3
 
-from normalize_utils import NormalizeUtils
+from normalize_utils import Logging
 
-logger = NormalizeUtils.get_logger("create_db")
+logger = Logging.get_logger("create_db")
 
 
 def generate_db(sql_path="Database/schema.sql"):
