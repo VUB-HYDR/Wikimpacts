@@ -107,11 +107,7 @@ if __name__ == "__main__":
         gold = gold[gold["Article_From"] == args.score]
 
         logger.info(f"Evaluation limited to {sys.shape} events from source {args.score}")
-    '''
-    assert len(sys.sort_values("Event_ID")["Event_ID"].to_list()) == len(
-        gold.sort_values("Event_ID")["Event_ID"].to_list()
-    ), f"Missing events! {set(sys.sort_values('Event_ID')['Event_ID'].to_list()) ^ set(gold.sort_values('Event_ID')['Event_ID'].to_list())}"
-    '''
+
     # Add dummy rows for missing events
     missing_ids = set(sys['Event_ID'].to_list()) ^ set(gold['Event_ID'].to_list())
     if missing_ids:
