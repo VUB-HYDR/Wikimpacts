@@ -115,6 +115,7 @@ if __name__ == "__main__":
     # Add dummy rows for missing events
     missing_ids = set(sys['Event_ID'].to_list()) ^ set(gold['Event_ID'].to_list())
     if missing_ids:
+        logger.info(f"Missing events! {missing_ids}. The columns in these events will be constructed with `NoneType` objects. The system output will be penalized for missing events with the selected null penalty ({args.null_penalty})")
         gold_cols = list(gold.columns)
         missing_rows = pd.DataFrame(columns=gold_cols)
         rows_to_add = []
