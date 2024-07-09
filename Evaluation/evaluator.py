@@ -125,6 +125,7 @@ if __name__ == "__main__":
 
         missing_rows = pd.DataFrame(rows_to_add)
         sys = pd.concat([sys, missing_rows], ignore_index=True).sort_values('Event_ID')
+        sys.replace({np.nan: None}, inplace=True)
 
     # Specify null penalty
     null_penalty = args.null_penalty
