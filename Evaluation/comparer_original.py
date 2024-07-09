@@ -63,13 +63,7 @@ class Comparer:
         """Compare all fields."""
         score = {}
         # Strings
-        for k in self.target_col(["Main_Event", 
-                                  "Event_ID", 
-                                  "Event_Name", 
-                                  "Total_Damage_Units",
-                                  "Total_Insured_Damage_Units"
-                                  
-                                  ]):
+        for k in self.target_col(["Main_Event", "Event_ID", "Event_Name", "Total_Damage_Units"]):
             score[k] = self.string(v[k], w[k])
 
         # Sequences
@@ -93,31 +87,12 @@ class Comparer:
                 "End_Date_Year",
                 "Total_Damage_Min",
                 "Total_Damage_Max",
-                # Injuries
-                "Total_Injuries_Max",
-                "Total_Injuries_Min",
-                # Buildings_Damage
-                "Total_Buildings_Min",
-                "Total_Buildings_Max",
-                # Affected
-                "Total_Affected_Min",
-                "Total_Affected_Max",
-                # Homeless
-                "Total_Homeless_Min",
-                "Total_Homeless_Max",
-                # Displace 
-                "Total_Displace_Min",
-                "Total_Displace_Max",
-                "Total_Insured_Damage_Min",
-                "Total_Insured_Damage_Max",
-               "Total_Damage_Inflation_Adjusted_Year",
-               "Total_Insured_Damage_Inflation_Adjusted_Year"
             ]
         ):
             score[k] = self.integer(v[k], w[k])
 
         # Booleans
-        for k in self.target_col(["Total_Damage_Inflation_Adjusted", "Total_Insured_Damage_Inflation_Adjusted"]):
+        for k in self.target_col([]):
             score[k] = self.boolean(v[k], w[k])
 
         # Return score dictionary after ordering by target columns order

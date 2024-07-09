@@ -117,7 +117,7 @@ class NormalizeUtils:
         for c in columns:
             json_normalized_df = pd.json_normalize(df[c])
             json_normalized_df = json_normalized_df[
-                [x for x in json_normalized_df.columns if not x.startswith("Specific_")]
+                [x for x in json_normalized_df.columns if not str(x).startswith("Specific_")] # in case the x is not string 
             ]
             df = pd.concat([json_normalized_df, df], axis=1)
             df.drop(columns=[c], inplace=True)

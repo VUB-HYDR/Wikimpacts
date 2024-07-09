@@ -23,6 +23,7 @@ class NormalizeNumber:
         return " ".join(t for t in text if t)
 
     def _extract_single_number(self, text: str) -> List[float]:
+        # need to add a few more like no death, no reported comment from Ni 0627
         if text.lower().strip() in ["none", "none reported", "none reported"]:
             return [0]
         try:

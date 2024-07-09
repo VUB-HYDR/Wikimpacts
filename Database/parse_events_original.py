@@ -1,6 +1,6 @@
 import argparse
 import re
-import json # for case where the pd.read_json not working 
+import pathlib
 import pandas as pd
 
 from scr.normalize_locations import NormalizeLocation
@@ -92,14 +92,8 @@ if __name__ == "__main__":
         gadm_path="Database/data/gadm_world.csv",
         unsd_path="Database/data/UNSD — Methodology.csv",
     )
-    '''
-    # check if the problem is from the json structure 
-    with open(f"{args.raw_path}/{args.filename}", 'r') as file:
-        data = json.load(file)
-        normalized_data = pd.json_normalize(data)
-    df= pd.DataFrame(normalized_data)'''
-    df = pd.read_json(f"{args.raw_path}/{args.filename}")
-    #df =   pd.read_json(f"{args.raw_path}/{args.filename}",  orient='index').T
+
+    df = pd.read_json(f"{args.raw_dir}/{args.filename}")
     logger.info("JSON datafile loaded")
 
     # add short uids for each event if missing
@@ -152,8 +146,8 @@ if __name__ == "__main__":
         total_cols = [
             col
             for col in events.columns
-            if str(col).startswith("Total_") # add string column because the error message 0625
-            and not str(col).endswith(("_with_annotation", "_Units", "_Year", "_Annotation", "_Adjusted"))
+            if col.startswith("Total_")
+            and not col.endswith(("_with_annotation", "_Units", "_Year", "_Annotation", "_Adjusted"))
         ]
 
         if total_cols:
@@ -208,7 +202,7 @@ if __name__ == "__main__":
                 ),
             )
 
-        if args.location_column in events.columns and args.country_column in events.columns:
+        if args.location_column in events.columns: #and args.country_column in events.columns:
 
             logger.info("Normalizing Locations")
             events["Location_Tmp"] = events["Location"].apply(
@@ -259,7 +253,7 @@ if __name__ == "__main__":
         events = utils.replace_nulls(events)
 
         logger.info("Converting annotation columns to strings to store in sqlite3")
-        annotation_cols = [col for col in events.columns if str(col).endswith(("_with_annotation", "_Annotation"))]
+        annotation_cols = [col for col in events.columns if col.endswith(("_with_annotation", "_Annotation"))]
         for col in annotation_cols:
             events[col] = events[col].astype(str)
 
@@ -282,7 +276,7 @@ if __name__ == "__main__":
             "Total_Damage_Inflation_Adjusted",
             "Total_Damage_Inflation_Adjusted_Year",
         ]
-        col_to_str.extend([col for col in events if str(col).startswith("Specific_")])
+        col_to_str.extend([col for col in events if col.startswith("Specific_")])
 
         for col in col_to_str:
             if col in events.columns:
@@ -302,8 +296,8 @@ if __name__ == "__main__":
         events = utils.replace_nulls(events)
 
         # parse subevents
-        specific_summary_cols = [col for col in events if str(col).startswith("Specific_")]
-        logger.info(f"Parsing suevenets. Columns: {specific_summary_cols}")
+        specific_summary_cols = [col for col in events if col.startswith("Specific_")]
+        logger.info(f"Parsing subevents. Columns: {specific_summary_cols}")
         specifc_summary_dfs = {}
 
         for col in specific_summary_cols:
@@ -327,8 +321,8 @@ if __name__ == "__main__":
             specific_total_cols = [
                 col
                 for col in sub_event.columns
-                if str(col).startswith("Num_")
-                or str(col).endswith("Damage")
+                if col.startswith("Num_")
+                or col.endswith("_Damage")
                 and "Date" not in col
                 and args.location_column not in col
             ]
