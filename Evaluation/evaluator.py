@@ -149,9 +149,11 @@ if __name__ == "__main__":
     sys = sys.sort_values("Event_ID")
     gold = gold.sort_values("Event_ID")
 
-    for col in ["Country_Norm"]:
-        sys[col] = sys[col].apply(ast.literal_eval)
-        gold[col] = gold[col].apply(ast.literal_eval)
+    for col in ["Country_Norm", "Location_Norm"]:
+        if col in sys.columns:
+            sys[col] = sys[col].apply(ast.literal_eval)
+        if col in gold.columns:
+            gold[col] = gold[col].apply(ast.literal_eval)
 
     logger.info("Parsed strings to lists or dicts")
 
