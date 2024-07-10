@@ -1,5 +1,5 @@
-import pathlib
 import argparse
+import pathlib
 import re
 
 import pandas as pd
@@ -58,6 +58,7 @@ specific_impacts_columns = {
 # main and specific impact events have these three column sets in common
 shared_cols = [
     "Event_ID",
+    "Event_ID_decimal",
     "Source",
     "Event_Name",
 ]
@@ -115,7 +116,8 @@ convert_to_boolean = []
 for i in ["Insured_Damage", "Damage"]:
     convert_to_boolean.extend([x for x in specific_impacts_columns[i] if "_Adjusted" in x and "_Year" not in x])
 
-convert_to_float = ["Event_ID"]
+convert_to_float = ["Event_ID_decimal"]
+
 
 def flatten_data_table():
     logger.info("Loading excel file...")
@@ -197,7 +199,7 @@ def flatten_data_table():
         )
 
     logger.info("Splitting main events from specific impact")
-    data_table["main"] = data_table.Event_ID.apply(lambda x: float(x).is_integer())
+    data_table["main"] = data_table.Event_ID_decimal.apply(lambda x: float(x).is_integer())
     data_table["main"].value_counts()
 
     logger.info("Storing Main Events table")
