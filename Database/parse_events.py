@@ -322,7 +322,7 @@ if __name__ == "__main__":
                 col
                 for col in sub_event.columns
                 if col.startswith("Num_")
-                or col.endswith("_Damage")
+                or col.endswith("Damage")
                 and "Date" not in col
                 and args.location_column not in col
             ]
