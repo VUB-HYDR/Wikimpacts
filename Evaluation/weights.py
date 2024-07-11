@@ -59,8 +59,11 @@ weights = {
         "End_Date_Year": 1,
         "Country_Norm": 1,
     },
-    "Homeless":{
+    "Homeless":
+    {
     # Homeless
+         "Event_ID": 0,
         "Total_Homeless_Min": 1,
-        "Total_Homeless_Max": 1
-}}
+        "Total_Homeless_Max": 1,
+       }
+}

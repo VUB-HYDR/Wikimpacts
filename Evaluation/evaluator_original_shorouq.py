@@ -76,19 +76,12 @@ if __name__ == "__main__":
     gold = pd.read_parquet(args.gold_set_filepath, engine="fastparquet").replace(
         {np.nan: None, "NULL ": None, "NULL": None}
     )
-   
     sys = pd.read_parquet(args.sys_set_filepath, engine="fastparquet").replace(
         {np.nan: None, "NULL ": None, "NULL": None}
     )
-    #print("Sys columns: " + ", ".join(sys.columns))
-    #print("Gold columns: " + ", ".join(gold.columns))
-    
+
     logger.info("Only including events in the gold file")
     sys = sys[sys.Event_ID.isin(gold["Event_ID"].to_list())]
-    #print("Sys length: " + str(len(sys)))
-    #print("Sys type: " + str(type(sys)))
-    for event_id in gold["Event_ID"]:
-       print(event_id)
 
     if args.score in ("wikipedia", "artemis"):
         # get article from source
@@ -151,7 +144,7 @@ if __name__ == "__main__":
     # Instantiate comparer
     comp = comparer.Comparer(null_penalty, target_columns=weights.keys())
     logger.info(f"Target columns: {comp.target_columns}")
- 
+
     sys = sys.sort_values("Event_ID")
     gold = gold.sort_values("Event_ID")
 
@@ -167,7 +160,6 @@ if __name__ == "__main__":
     gold_data = gold[weights.keys()].to_dict(orient="records")
 
     pairs = zip(sys_data, gold_data)
-    
     logger.info(f"Prepared {len(sys_data)} events for evaluation")
     
     comps = [

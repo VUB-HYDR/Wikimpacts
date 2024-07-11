@@ -87,6 +87,8 @@ class Comparer:
                 "End_Date_Year",
                 "Total_Damage_Min",
                 "Total_Damage_Max",
+                "Total_Homeless_Min",
+                "Total_Homeless_Max",
             ]
         ):
             score[k] = self.integer(v[k], w[k])
