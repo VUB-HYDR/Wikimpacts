@@ -1,8 +1,8 @@
 import argparse
-import re
 import pathlib
-import pandas as pd
+import re
 
+import pandas as pd
 from scr.normalize_locations import NormalizeLocation
 from scr.normalize_numbers import NormalizeNumber
 from scr.normalize_utils import Logging, NormalizeUtils
@@ -81,7 +81,7 @@ if __name__ == "__main__":
     logger.info(f"Passed args: {args}")
 
     logger.info(f"Creating {args.output_dir} if it does not exist!")
-    pathlib.Path(args.output_dir).mkdir(parents=True, exist_ok=True) 
+    pathlib.Path(args.output_dir).mkdir(parents=True, exist_ok=True)
 
     utils = NormalizeUtils()
     nlp = utils.load_spacy_model(args.spaCy_model_name)
@@ -138,7 +138,7 @@ if __name__ == "__main__":
             logger.info(f"Normalizing boolean column {inflation_adjusted_col}")
             events[inflation_adjusted_col] = events[inflation_adjusted_col].replace(
                 {_no: False, _yes: True}, regex=True
-                )
+            )
 
         logger.info("Normalizing nulls")
         events = utils.replace_nulls(events)
@@ -203,7 +203,6 @@ if __name__ == "__main__":
             )
 
         if args.location_column in events.columns and args.country_column in events.columns:
-
             logger.info("Normalizing Locations")
             events["Location_Tmp"] = events["Location"].apply(
                 lambda locations: (
@@ -312,9 +311,11 @@ if __name__ == "__main__":
 
             sub_event = pd.concat([sub_event.Event_ID, sub_event[col].apply(pd.Series)], axis=1)
 
-            logger.info(f"Dropping any columns with non-str column names due to None types in the dicts {[c for c in sub_event.columns if not isinstance(c, str)]}")
+            logger.info(
+                f"Dropping any columns with non-str column names due to None types in the dicts {[c for c in sub_event.columns if not isinstance(c, str)]}"
+            )
             sub_event = sub_event[[c for c in sub_event.columns if isinstance(c, str)]]
-            
+
             logger.info(f"Normalizing nulls for subevent {col}")
             sub_event = utils.replace_nulls(sub_event)
 
@@ -389,10 +390,10 @@ if __name__ == "__main__":
                 lambda country: (norm_loc.get_gadm_gid(country=country) if country else None)
             )
 
-            '''
+            """
             logger.info(f"Dropping columns with no locations for subevent {col}")
             sub_event.dropna(subset=[f"Location_{location_col}"], how="all", inplace=True)
-            '''
+            """
             logger.info(f"Normalizing location names for subevent {col}")
             sub_event[
                 [
@@ -427,7 +428,7 @@ if __name__ == "__main__":
             )
 
             def normalize_location_rows_if_country(row):
-            # if location and country are identical in subevents, generalize country normalization
+                # if location and country are identical in subevents, generalize country normalization
                 if row[f"Location_{location_col}"] == row[args.country_column]:
                     for i in ["Norm", "Type", "GeoJson", "GID"]:
                         row[f"Location_{location_col}_{i}"] = row[f"Country_{i}"]
