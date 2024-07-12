@@ -205,7 +205,9 @@ To be implemented:
 
 ### Develop
 
-Always pull a fresh copy of the `main` branch first! To add a new feature, check out a new branch from the `main` branch, make changes there, and push the new branch upstream to open a PR. PRs should result in a **squash commit** in the `main` branch. **It is recommended to code responsibly and ask someone to review your code. You can always tag @i-be-snek as a reviewer.** 
+Always pull a fresh copy of the `main` branch first! To add a new feature, check out a new branch from the `main` branch, make changes there, and push the new branch upstream to open a PR. PRs should result in a **squash commit** in the `main` branch. **It is recommended to code responsibly and ask someone to review your code. You can always tag [i-be-snek](https://github.com/i-be-snek) as a reviewer.** 
+
+Always _**rebase**_ your branch on the latest changes in `main` instead of merging using `git rebase main`. If you are having trouble with resolving merge conflicts when rebasing, consult [i-be-snek](https://github.com/i-be-snek).
 
 And don't forget to pull large files from Git Large File Storage!
 
@@ -213,9 +215,16 @@ And don't forget to pull large files from Git Large File Storage!
 # always pull first 
 git pull main
 
-# fetch all large files
-git lfs fetch --all
+# fetch and merge all files for your current branch
+git lfs pull
+
+# fetch and merge all files for ALL branches
+git lfs pull --all
 ```
+
+> [!TIP]
+> Consult this [StackOverflow answer on how to use `git lfs`](https://stackoverflow.com/a/72610495/14123992)
+
 
 Make sure any new dependencies are handled by `poetry`.You should be tracking and pushing both `poetry.lock` and `pyproject.toml` files. 
 There is no need to manually add dependencies to the `pyproject.toml` file. Instead, use `poetry` commands:
