@@ -9,6 +9,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 import torch
 from prompts_original_updated import prompts
 from config import key
+
 login(token=key)
 device = "cuda"  # the device to load the model onto
 
@@ -21,7 +22,7 @@ def load_model(model_name):
         )
         model = AutoModelForCausalLM.from_pretrained(model_name, quantization_config=bnb_config, device_map="auto")
         return tokenizer, model
-    else: # model_name == "mistralai/Mistral-7B-Instruct-v0.2":
+    else:
         model = AutoModelForCausalLM.from_pretrained(
             model_name,
             torch_dtype=torch.bfloat16,
@@ -64,17 +65,16 @@ def run_prompt(article_path, tokenizer, model, prompts):
             ]
             generated_ids = model.generate(
                 input_ids,
-                max_new_tokens=2000,
+                max_new_tokens=4000,
                 eos_token_id=terminators,
                 do_sample=False,
             )
-            decoded = tokenizer.batch_decode(generated_ids, skip_special_tokens= True)
+            decoded = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)
             decoded = decoded[0].split("<|end_header_id|>")[-1].strip("<|eot_id|").strip()
         else:
-
-            generated_ids = model.generate(input_ids, max_new_tokens=2000, do_sample=False)
-            decoded = tokenizer.batch_decode(generated_ids, skip_special_tokens= True)
-            decoded = decoded[0].split("[/INST]")[-1].strip("</s>").strip()
+            generated_ids = model.generate(input_ids, max_new_tokens=4000, do_sample=False)
+            decoded = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)
+            decoded = decoded[0]
         results["prompt"] = prompt
         results[prompt_name] = decoded
     return results
@@ -83,18 +83,20 @@ def run_prompt(article_path, tokenizer, model, prompts):
 if __name__ == "__main__":
     model_option = sys.argv[1]
     split = sys.argv[2]
-    if "mistral" in model_option:
-        print("No Mistral!")
-        exit()
-    elif "gemma9b" in model_option:
-        model_name = "google/gemma-2-9b-it"
-    elif "gemma7b" in model_option:
-        model_name = "google/gemma-2-27b-it"
-    elif "llama8" in model_option:
-        model_name = "meta-llama/Meta-Llama-3-8B-Instruct"
-    elif "llama70" in model_option:
-        model_name = "meta-llama/Meta-Llama-3-70B-Instruct"
-    else:
+    model_map = {
+        "gemma9b": "google/gemma-2-9b-it",
+        "gemma27b": "google/gemma-2-27b-it",
+        "llama8": "meta-llama/Meta-Llama-3-8B-Instruct",
+        "llama70": "meta-llama/Meta-Llama-3-70B-Instruct",
+        "climate7": "eci-io/climategpt-7b",
+        "llama2-7": "meta-llama/Llama-2-7b-chat",
+        "climate13": "eci-io/climategpt-13b",
+        "llama2-13": "meta-llama/Llama-2-13b-chat",
+    }
+
+    model_name = model_map.get(model_option)
+
+    if model_name is None:
         print("Wrong model ID")
         exit()
     model_basename = model_name.split("/")[-1]
