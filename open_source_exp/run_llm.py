@@ -7,8 +7,7 @@ import time
 from huggingface_hub import login
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 import torch
-
-from prompts_original_updated import prompts_original_dictionary_updated
+from prompts_original_updated import prompts
 from config import key
 login(token=key)
 device = "cuda"  # the device to load the model onto
@@ -49,38 +48,32 @@ def run_prompt(article_path, tokenizer, model, prompts):
     results = {"Event_Name": event_name, "URL": url, "Event_ID": event_id}
     for prompt_name, prompt_template in prompts.items():
         prompt = prompt_template.format_map(data_for_prompt)
-
         messages = [
             {"role": "user", "content": prompt},
         ]
+        input_ids = tokenizer.apply_chat_template(
+            messages,
+            add_generation_prompt=True,
+            return_tensors="pt"
+        ).to(model.device)
 
         if "llama" in model.name_or_path:
-            input_ids = tokenizer.apply_chat_template(
-                messages,
-                add_generation_prompt=True,
-                return_tensors="pt"
-            ).to(model.device)
-
             terminators = [
                 tokenizer.eos_token_id,
                 tokenizer.convert_tokens_to_ids("<|eot_id|>")
             ]
-
             generated_ids = model.generate(
                 input_ids,
                 max_new_tokens=2000,
                 eos_token_id=terminators,
-                do_sample=True,
-                temperature=0.00000001,
+                do_sample=False,
             )
-            decoded = tokenizer.batch_decode(generated_ids)
+            decoded = tokenizer.batch_decode(generated_ids, skip_special_tokens= True)
             decoded = decoded[0].split("<|end_header_id|>")[-1].strip("<|eot_id|").strip()
-            print(decoded)
         else:
-            encodeds = tokenizer.apply_chat_template(messages, return_tensors="pt")
-            model_inputs = encodeds.to(device)
-            generated_ids = model.generate(model_inputs, max_new_tokens=2000, do_sample=True, temperature=0.00000001)
-            decoded = tokenizer.batch_decode(generated_ids)
+
+            generated_ids = model.generate(input_ids, max_new_tokens=2000, do_sample=False)
+            decoded = tokenizer.batch_decode(generated_ids, skip_special_tokens= True)
             decoded = decoded[0].split("[/INST]")[-1].strip("</s>").strip()
         results["prompt"] = prompt
         results[prompt_name] = decoded
@@ -90,18 +83,26 @@ def run_prompt(article_path, tokenizer, model, prompts):
 if __name__ == "__main__":
     model_option = sys.argv[1]
     split = sys.argv[2]
-    if "mixtral" in model_option:
-        model_name = "mistralai/Mixtral-8x7B-Instruct-v0.1"
-    elif "llama" in model_option:
+    if "mistral" in model_option:
+        print("No Mistral!")
+        exit()
+    elif "gemma9b" in model_option:
+        model_name = "google/gemma-2-9b-it"
+    elif "gemma7b" in model_option:
+        model_name = "google/gemma-2-27b-it"
+    elif "llama8" in model_option:
         model_name = "meta-llama/Meta-Llama-3-8B-Instruct"
+    elif "llama70" in model_option:
+        model_name = "meta-llama/Meta-Llama-3-70B-Instruct"
     else:
-        model_name = "mistralai/Mistral-7B-Instruct-v0.2"
+        print("Wrong model ID")
+        exit()
     model_basename = model_name.split("/")[-1]
 
     tokenizer, model = load_model(model_name)
 
     articles_directory = f'preprocessed_articles/{split}'
-    prompt_dict = prompts_original_dictionary_updated
+    prompt_dict = prompts
     save_dir = f"output/{split}_{model_basename}"
     try:
         shutil.rmtree(save_dir)
