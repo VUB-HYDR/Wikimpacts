@@ -38,29 +38,29 @@ Choose a new experiment name! You will use this <EXPERIMENT_NAME> for the whole 
 
 #### PRESTEPS
 
-##### Normalizing JSON output for Mistral/Mixtral
-If the system output is split across several files (such as Mixtral and Mistral system outputs), then first merge it:
+- Normalizing JSON output for Mistral/Mixtral
+    If the system output is split across several files (such as Mixtral and Mistral system outputs), then first merge it:
 
-```shell
-poetry run python3 Database/merge_json_output.py \
---input_dir Database/raw/<EXPERIMENT_NAME>/<RAW_JSON_FILES> \
---output_dir Database/raw/<EXPERIMENT_NAME> \
---model_name <MY_MODEL>
-```
+    ```shell
+    poetry run python3 Database/merge_json_output.py \
+    --input_dir Database/raw/<EXPERIMENT_NAME>/<RAW_JSON_FILES> \
+    --output_dir Database/raw/<EXPERIMENT_NAME> \
+    --model_name <MY_MODEL>
+    ```
 
 > [!WARNING]
 > Your raw system output files should always land in the `Database/raw/<EXPERIMENT_NAME>` directory!
 
-##### Normalizing JSON output for GPT4o
+- Normalizing JSON output for GPT4o
 
-GPT4o sometimes produces inconsistent JSON where it nests keys like "Location" under "Location_Information" and start and end date under the key "Time_Information". In this case, you need to unnest these using the script below:
+    GPT4o sometimes produces inconsistent JSON where it nests keys like "Location" under "Location_Information" and start and end date under the key "Time_Information". In this case, you need to unnest these using the script below:
 
 
-```shell
-poetry run python3 Database/scr/fix_nested_json.py \
--i "Database/raw/<EXPERIMENT_NAME>/<INPUT_FILE.JSON>" \
--o "Database/raw/<EXPERIMENT_NAME>/<OUTPUT_FILE.JSON>"
-```
+    ```shell
+    poetry run python3 Database/scr/fix_nested_json.py \
+    -i "Database/raw/<EXPERIMENT_NAME>/<INPUT_FILE.JSON>" \
+    -o "Database/raw/<EXPERIMENT_NAME>/<OUTPUT_FILE.JSON>"
+    ```
 
 > [!TIP]
 >  JSON files can be formatted easily with pre-commit:
