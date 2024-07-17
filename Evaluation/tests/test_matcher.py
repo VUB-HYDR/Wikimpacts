@@ -146,6 +146,12 @@ class TestSpecificInstanceMatcher:
             ),
             # corner case
             ([], [], [], []),
+            (
+                [{"Num_Min": 1}],
+                [{"Num_Min": 1000}],
+                [{"Num_Min": 1}, {"Num_Min": None}],
+                [{"Num_Min": None}, {"Num_Min": 1000}],
+            ),
         ],
     )
     def test_matcher(self, test_gold_list, test_sys_list, expected_gold, expected_sys):
