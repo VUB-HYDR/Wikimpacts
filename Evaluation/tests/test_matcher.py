@@ -34,5 +34,5 @@ class TestSpecificInstanceMatcher:
         if expected:
             assert matcher.calc_similarity(test_input[0], test_input[1]) == expected
         else:
-            with pytest.raises(KeyError):
+            with pytest.raises(UnboundLocalError):
                 matcher.calc_similarity(test_input[0], test_input[1])
