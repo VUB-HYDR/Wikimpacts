@@ -1,6 +1,6 @@
 from statistics import mean
 
-# from Evaluation.comparer import Comparer
+import Evaluation.comparer as comparer
 
 
 class SpecificInstanceMatcher:
@@ -24,6 +24,8 @@ class SpecificInstanceMatcher:
         self.str_cat: list[str] = ["Country_Norm", "Specific_Instance_Unit"]
         self.list_cat: list[str] = ["Location_Norm"]
 
+        self.comp = comparer.Comparer(1, [])
+
     @staticmethod
     def create_pad(specific_instance: dict) -> dict:
         padded = {}
@@ -38,7 +40,15 @@ class SpecificInstanceMatcher:
         for si in sys_list:
             scores = []
             for k in gold_instance.keys():
-                scores.append(1) if gold_instance[k] == si[k] else scores.append(0)
+                if k in self.int_cat:
+                    r = self.comp.integer(gold_instance[k], si[k])
+                elif k in self.bool_cat:
+                    r = self.comp.boolean(gold_instance[k], si[k])
+                elif k in self.str_cat:
+                    r = self.comp.string(gold_instance[k], si[k])
+                elif k in self.list_cat:
+                    r = self.comp.sequence(gold_instance[k], si[k])
+                scores.append(1 - r)
 
             score_list.append(mean(scores))
             del scores  # avoid this leaking, may remove later
