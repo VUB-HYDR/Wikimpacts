@@ -36,3 +36,119 @@ class TestSpecificInstanceMatcher:
         else:
             with pytest.raises(UnboundLocalError):
                 matcher.calc_similarity(test_input[0], test_input[1])
+
+    @pytest.mark.parametrize(
+        "test_gold_list, test_sys_list, expected_gold, expected_sys",
+        [
+            (
+                # gold_list
+                [
+                    {
+                        "Num_Min": 2,
+                        "Num_Max": 82,
+                        "Start_Date_Year": 2030,
+                        "Location_Norm": ["Amman", "Zarqa"],
+                    },
+                    {
+                        "Num_Min": 2,
+                        "Num_Max": 91,
+                        "Start_Date_Year": 2030,
+                        "Location_Norm": ["Uppsala", "Stockholm"],
+                    },
+                    {
+                        "Num_Min": 0,
+                        "Num_Max": 10,
+                        "Start_Date_Year": 2031,
+                        "Location_Norm": ["Paris", "Lyon"],
+                    },
+                ],
+                # sys_list
+                [
+                    {
+                        "Num_Min": 0,
+                        "Num_Max": 11,
+                        "Start_Date_Year": 2031,
+                        "Location_Norm": ["Lyon"],
+                    },
+                    {
+                        "Num_Min": 1,
+                        "Num_Max": 84,
+                        "Start_Date_Year": 2029,
+                        "Location_Norm": ["Uppsala", "Zarqa"],
+                    },
+                    {
+                        "Num_Min": 2,
+                        "Num_Max": 91,
+                        "Start_Date_Year": 2030,
+                        "Location_Norm": ["Stockholm"],
+                    },
+                    {
+                        "Num_Min": 7,
+                        "Num_Max": 30,
+                        "Start_Date_Year": 2030,
+                        "Location_Norm": ["Uppsala", "Linköping"],
+                    },
+                ],
+                # gold
+                [
+                    {
+                        "Num_Min": 2,
+                        "Num_Max": 82,
+                        "Start_Date_Year": 2030,
+                        "Location_Norm": ["Amman", "Zarqa"],
+                    },
+                    {
+                        "Num_Min": 2,
+                        "Num_Max": 91,
+                        "Start_Date_Year": 2030,
+                        "Location_Norm": ["Uppsala", "Stockholm"],
+                    },
+                    {
+                        "Num_Min": 0,
+                        "Num_Max": 10,
+                        "Start_Date_Year": 2031,
+                        "Location_Norm": ["Paris", "Lyon"],
+                    },
+                    {
+                        "Num_Min": None,
+                        "Num_Max": None,
+                        "Start_Date_Year": None,
+                        "Location_Norm": None,
+                    },
+                ],
+                # sys
+                [
+                    {
+                        "Num_Min": 1,
+                        "Num_Max": 84,
+                        "Start_Date_Year": 2029,
+                        "Location_Norm": ["Uppsala", "Zarqa"],
+                    },
+                    {
+                        "Num_Min": 2,
+                        "Num_Max": 91,
+                        "Start_Date_Year": 2030,
+                        "Location_Norm": ["Stockholm"],
+                    },
+                    {
+                        "Num_Min": 0,
+                        "Num_Max": 11,
+                        "Start_Date_Year": 2031,
+                        "Location_Norm": ["Lyon"],
+                    },
+                    {
+                        "Num_Min": 7,
+                        "Num_Max": 30,
+                        "Start_Date_Year": 2030,
+                        "Location_Norm": ["Uppsala", "Linköping"],
+                    },
+                ],
+            ),
+            # corner case
+            ([], [], [], []),
+        ],
+    )
+    def test_matcher(self, test_gold_list, test_sys_list, expected_gold, expected_sys):
+        matcher = SpecificInstanceMatcher()
+
+        assert matcher.match(gold_list=test_gold_list, sys_list=test_sys_list) == (expected_gold, expected_sys)
