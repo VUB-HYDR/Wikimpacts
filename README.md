@@ -48,9 +48,6 @@ Choose a new experiment name! You will use this <EXPERIMENT_NAME> for the whole 
     --model_name <MY_MODEL>
     ```
 
-> [!WARNING]
-> Your raw system output files should always land in the `Database/raw/<EXPERIMENT_NAME>` directory!
-
 - Normalizing JSON output for GPT4o
 
     GPT4o sometimes produces inconsistent JSON where it nests keys like "Location" under "Location_Information" and start and end date under the key "Time_Information". In this case, you need to unnest these using the script below:
@@ -61,6 +58,9 @@ Choose a new experiment name! You will use this <EXPERIMENT_NAME> for the whole 
     -i "Database/raw/<EXPERIMENT_NAME>/<INPUT_FILE.JSON>" \
     -o "Database/raw/<EXPERIMENT_NAME>/<OUTPUT_FILE.JSON>"
     ```
+
+> [!WARNING]
+> Your raw system output files should always land in the `Database/raw/<EXPERIMENT_NAME>` directory!
 
 > [!TIP]
 >  JSON files can be formatted easily with pre-commit:
