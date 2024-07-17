@@ -56,7 +56,6 @@ class SpecificInstanceMatcher:
                 scores.append(1 - r)
 
             score_list.append(mean(scores))
-            del scores  # avoid this leaking, may remove later
 
         # index of mean score corresponds to sys_list item
         return score_list
