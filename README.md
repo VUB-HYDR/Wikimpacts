@@ -36,7 +36,9 @@ If you have generated some LLM output and would like to test it against the dev 
 
 Choose a new experiment name! You will use this <EXPERIMENT_NAME> for the whole pipeline.
 
-#### PRESTEP (before Step 2):  
+#### PRESTEPS
+
+##### Normalizing JSON output for Mistral/Mixtral
 If the system output is split across several files (such as Mixtral and Mistral system outputs), then first merge it:
 
 ```shell
@@ -46,12 +48,23 @@ poetry run python3 Database/merge_json_output.py \
 --model_name <MY_MODEL>
 ```
 
-> [!WARNING]  
+> [!WARNING]
 > Your raw system output files should always land in the `Database/raw/<EXPERIMENT_NAME>` directory!
+
+##### Normalizing JSON output for GPT4o
+
+GPT4o sometimes produces inconsistent JSON where it nests keys like "Location" under "Location_Information" and start and end date under the key "Time_Information". In this case, you need to unnest these using the script below:
+
+
+```shell
+poetry run python3 Database/scr/fix_nested_json.py \
+-i "Database/raw/<EXPERIMENT_NAME>/<INPUT_FILE.JSON>" \
+-o "Database/raw/<EXPERIMENT_NAME>/<OUTPUT_FILE.JSON>"
+```
 
 > [!TIP]
 >  JSON files can be formatted easily with pre-commit:
-> 
+>
 > ```shell
 > pre-commit run --files Database/raw/<EXPERIMENT_NAME>/> <JSON_FILE_THAT_NEEDS_FORMATTING>
 > ```
