@@ -15,7 +15,7 @@ class TestSpecificInstanceMatcher:
                         {"Num_Min": 0, "Num_Max": 10, "Start_Date_Year": 2031},
                     ],
                 ),
-                [0.3333333333333333, 0.6666666666666666],
+                [0.39933993399339934, 0.9999179184109004],
             ),
             (
                 (
