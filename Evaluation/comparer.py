@@ -1,4 +1,4 @@
-import normaliser
+from Evaluation.normaliser import Normaliser
 
 
 class Comparer:
@@ -8,7 +8,7 @@ class Comparer:
         """Initialisation."""
         # Penalty score if one field is None, but not the other
         self.null_penalty = null_penalty
-        self.norm = normaliser.Normaliser()
+        self.norm = Normaliser()
         self.target_columns = target_columns
 
     def target_col(self, l) -> list:
