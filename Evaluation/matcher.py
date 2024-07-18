@@ -1,6 +1,7 @@
 from statistics import mean
 
 import Evaluation.comparer as comparer
+from Evaluation.utils import Logging
 
 
 class SpecificInstanceMatcher:
@@ -8,6 +9,8 @@ class SpecificInstanceMatcher:
     'Padded' specific instances will have NoneType objects as values"""
 
     def __init__(self, threshold: float = 0.6):
+        self.logger = Logging.get_logger("specific instance matcher")
+
         self.threshold = threshold
         self.int_cat: list[str] = [
             "Num_Min",
