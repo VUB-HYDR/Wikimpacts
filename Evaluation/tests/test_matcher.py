@@ -153,4 +153,7 @@ class TestSpecificInstanceMatcher:
     def test_matcher(self, test_gold_list, test_sys_list, expected_gold, expected_sys):
         matcher = SpecificInstanceMatcher()
 
-        assert matcher.match(gold_list=test_gold_list, sys_list=test_sys_list) == (expected_gold, expected_sys)
+        assert matcher.match(gold_list=test_gold_list, sys_list=test_sys_list) == (
+            expected_gold,
+            expected_sys,
+        )
