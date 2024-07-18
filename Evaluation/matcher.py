@@ -61,7 +61,29 @@ class SpecificInstanceMatcher:
         # index of mean score corresponds to sys_list item
         return score_list
 
+    def schema_checker(self, gold_list: list[dict], sys_list: list[dict]) -> bool:
+        for g in range(len(gold_list)):
+            if sorted(gold_list[0].keys()) != sorted(gold_list[g].keys()):
+                self.logger.error(
+                    f"Gold file contains entries with inconsistent column names at specific instance #{g}: {gold_list[g]}. Expected columns: {gold_list[0]}"
+                )
+                return False
+
+        for s in range(len(sys_list)):
+            try:
+                assert all([e in sys_list[s].keys() for e in gold_list[0].keys()])
+                return True
+            except:
+                self.logger.error(
+                    f"Inconsistent columns found in sys file!: {[e for e in sys_list[s].keys() if e not in gold_list[0].keys()]}"
+                )
+                return False
+
     def match(self, gold_list: list[dict], sys_list: list[dict]) -> tuple[list[dict]]:
+        if self.schema_checker(gold_list, sys_list) != True:
+            self.logger.error("Please check the column names in your gold and sys files.")
+            raise BaseException
+
         gold, sys, already_matched = [], [], []
 
         for si in gold_list:
