@@ -52,11 +52,9 @@ class SpecificInstanceMatcher:
                 elif k in self.list_cat:
                     r = self.comp.sequence(gold_instance[k], si[k])
                 try:
-                    r
-                except UnboundLocalError:
-                    print(f"Unsupported column name: {k}")
-                    raise UnboundLocalError
-                scores.append(1 - r)
+                    scores.append(1 - r)
+                except UserWarning as err:
+                    self.logger.warning(f"Unsupported column name: {k}. Error message: {err}")
 
             score_list.append(mean(scores))
 
