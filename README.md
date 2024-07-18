@@ -54,7 +54,7 @@ Choose a new experiment name! You will use this <EXPERIMENT_NAME> for the whole 
 
 
     ```shell
-    poetry run python3 Database/scr/fix_nested_json.py \
+    poetry run python3 Database/fix_nested_json.py \
     -i "Database/raw/<EXPERIMENT_NAME>/<INPUT_FILE.JSON>" \
     -o "Database/raw/<EXPERIMENT_NAME>/<OUTPUT_FILE.JSON>"
     ```
