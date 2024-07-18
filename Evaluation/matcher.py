@@ -111,7 +111,3 @@ class SpecificInstanceMatcher:
                 gold.append(self.create_pad(si))
 
         return (gold, sys)
-
-
-if __name__ == "__main__":
-    matcher = SpecificInstanceMatcher()
