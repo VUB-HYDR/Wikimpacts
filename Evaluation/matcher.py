@@ -12,16 +12,16 @@ class SpecificInstanceMatcher:
         self.int_cat: list[str] = [
             "Num_Min",
             "Num_Max",
-            "Specific_Instance_Year",  # check name for year
+            "Adjusted_Year",
             "Start_Date_Day",
             "Start_Date_Month",
             "Start_Date_Year",
             "End_Date_Day",
             "End_Date_Month",
             "End_Date_Year",
-        ]  # consider day or not?
-        self.bool_cat: list[str] = ["Specific_Instance_Adjusted"]  # check name for adjusted
-        self.str_cat: list[str] = ["Country_Norm", "Specific_Instance_Unit"]
+        ]
+        self.bool_cat: list[str] = ["Adjusted"]
+        self.str_cat: list[str] = ["Country_Norm", "Unit"]
         self.list_cat: list[str] = ["Location_Norm"]
 
         self.comp = comparer.Comparer(1, [])
@@ -88,3 +88,7 @@ class SpecificInstanceMatcher:
                 gold.append(self.create_pad(si))
 
         return (gold, sys)
+
+
+if __name__ == "__main__":
+    matcher = SpecificInstanceMatcher()
