@@ -9,7 +9,7 @@ import requests_cache
 from geopy.extra.rate_limiter import RateLimiter
 from geopy.geocoders import Nominatim
 
-from .normalize_utils import Logging
+from Database.scr.normalize_utils import Logging
 
 
 class NormalizeLocation:
