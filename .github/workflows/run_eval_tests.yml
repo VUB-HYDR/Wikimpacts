@@ -37,4 +37,4 @@ jobs:
           poetry install --no-interaction
       - name: Run tests
         run: |
-          poetry run pytest -ra -s Evaluation/tests
+          poetry run pytest -ra -s tests
