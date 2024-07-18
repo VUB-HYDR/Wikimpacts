@@ -1,6 +1,6 @@
 import pytest
 
-from .Evaluation.matcher import SpecificInstanceMatcher
+from ..Evaluation.matcher import SpecificInstanceMatcher
 
 
 class TestSpecificInstanceMatcher:
