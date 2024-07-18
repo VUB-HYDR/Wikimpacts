@@ -1,6 +1,6 @@
 from statistics import mean
 
-import Evaluation.comparer as comparer
+from Evaluation.comparer import Comparer
 from Evaluation.utils import Logging
 
 
@@ -27,7 +27,7 @@ class SpecificInstanceMatcher:
         self.str_cat: list[str] = ["Country_Norm", "Unit"]
         self.list_cat: list[str] = ["Location_Norm"]
 
-        self.comp = comparer.Comparer(1, [])
+        self.comp = Comparer(1, [])
 
     @staticmethod
     def create_pad(specific_instance: dict) -> dict:

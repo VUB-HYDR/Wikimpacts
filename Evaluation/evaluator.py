@@ -4,11 +4,12 @@ import json
 import pathlib
 from pprint import pformat, pprint
 
-import comparer
 import numpy as np
 import pandas as pd
-from utils import Logging
-from weights import weights as weights_dict
+
+from Evaluation.comparer import Comparer
+from Evaluation.utils import Logging
+from Evaluation.weights import weights as weights_dict
 
 if __name__ == "__main__":
     logger = Logging.get_logger("evaluator")
@@ -147,7 +148,7 @@ if __name__ == "__main__":
     logger.info(f"Chosen weights:\n {pformat(weights)}")
 
     # Instantiate comparer
-    comp = comparer.Comparer(null_penalty, target_columns=weights.keys())
+    comp = Comparer(null_penalty, target_columns=weights.keys())
     logger.info(f"Target columns: {comp.target_columns}")
 
     sys = sys.sort_values("Event_ID")
@@ -167,6 +168,8 @@ if __name__ == "__main__":
     pairs = zip(sys_data, gold_data)
 
     logger.info(f"Prepared {len(sys_data)} events for evaluation")
+
+    print(sys, gold)
 
     comps = [
         [sys["Event_ID"], gold["Event_ID"], comp.weighted(sys, gold, weights), comp.all(sys, gold)]

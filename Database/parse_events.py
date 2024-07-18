@@ -3,9 +3,10 @@ import pathlib
 import re
 
 import pandas as pd
-from scr.normalize_locations import NormalizeLocation
-from scr.normalize_numbers import NormalizeNumber
-from scr.normalize_utils import Logging, NormalizeUtils
+
+from Database.scr.normalize_locations import NormalizeLocation
+from Database.scr.normalize_numbers import NormalizeNumber
+from Database.scr.normalize_utils import Logging, NormalizeUtils
 
 if __name__ == "__main__":
     logger = Logging.get_logger("parse_events")
