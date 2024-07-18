@@ -30,8 +30,8 @@ class SpecificInstanceMatcher:
     def create_pad(specific_instance: dict) -> dict:
         padded = {}
         for k in specific_instance.keys():
-            padded[k] = None
-
+            # preserve "Event_D"
+            padded[k] = specific_instance[k] if k == "Event_ID" else None
         return padded
 
     def calc_similarity(self, gold_instance: dict, sys_list: list) -> list[float]:
