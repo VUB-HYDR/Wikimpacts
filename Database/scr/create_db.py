@@ -1,6 +1,6 @@
 import sqlite3
 
-from normalize_utils import Logging
+from Database.scr.normalize_utils import Logging
 
 logger = Logging.get_logger("create_db")
 
