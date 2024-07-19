@@ -323,3 +323,40 @@ class NormalizeJsonOutput:
             orient="records",
         )
         return filename
+
+    def normalize_column_names(self, json_file_path: str, output_file_path: str) -> None:
+        """Normalizes column names when an LLM hallucinates alternative column names for a category.
+
+        Handles cases:
+            - "time_information" nesting: ["start_date", "end_date", "time_with_annotation"]
+            - "location_information" nesting: ["location", "location_with_annotation"]
+
+        """
+
+        # output from the llm system that needs fixing
+        raw_sys_output = json.load(open(json_file_path))
+
+        target_keys = ["time_information", "location_information"]
+        output_json = []
+        for entry in raw_sys_output:
+            output = {}
+            for k in entry.keys():
+                if k.lower() in target_keys and isinstance(entry[k], dict):
+                    if any(
+                        [
+                            x in [y.lower() for y in entry[k].keys()]
+                            for x in ["start_date", "end_date", "time_with_annotation"]
+                        ]
+                    ) or any(
+                        [x in [y.lower() for y in entry[k].keys()] for x in ["location", "location_with_annotation"]]
+                    ):
+                        for _k in entry[k]:
+                            output[_k] = entry[k][_k]
+                else:
+                    output[k] = entry[k]
+            output_json.append(output)
+
+        with open(output_file_path, "w") as fp:
+            json.dump(output_json, fp)
+
+        self.logger.info(f"Stored output in {output_file_path}")
