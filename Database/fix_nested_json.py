@@ -1,8 +1,10 @@
 import argparse
 import pathlib
 
-from Database.scr.normalize_utils import Logging, NormalizeJsonOutput
-
+#from Database.scr.normalize_utils import Logging, NormalizeJsonOutput
+# this one works tested by Ni 20240719
+from scr.normalize_utils import Logging, NormalizeJsonOutput
+#from .scr.normalize_utils import Logging, NormalizeJsonOutput
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     logger = Logging.get_logger("fix nested json sys output")
