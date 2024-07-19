@@ -53,7 +53,7 @@ class SpecificInstanceMatcher:
                     r = self.comp.sequence(gold_instance[k], si[k])
                 try:
                     scores.append(1 - r)
-                except UserWarning as err:
+                except Exception as err:
                     self.logger.warning(f"Unsupported column name: {k}. Error message: {err}")
 
             score_list.append(mean(scores))
@@ -65,7 +65,7 @@ class SpecificInstanceMatcher:
         for g in range(len(gold_list)):
             if sorted(gold_list[0].keys()) != sorted(gold_list[g].keys()):
                 self.logger.error(
-                    f"Gold file contains entries with inconsistent column names at specific instance #{g}: {gold_list[g]}. Expected columns: {gold_list[0]}"
+                    f"Gold file contains entries with inconsistent column names at specific instance #{g}: {gold_list[g].keys()}. Expected columns: {gold_list[0].keys()}"
                 )
                 return False
 
@@ -73,7 +73,7 @@ class SpecificInstanceMatcher:
             try:
                 assert all([e in sys_list[s].keys() for e in gold_list[0].keys()])
                 return True
-            except:
+            except Exception:
                 self.logger.error(
                     f"Inconsistent columns found in sys file!: {[e for e in sys_list[s].keys() if e not in gold_list[0].keys()]}"
                 )
