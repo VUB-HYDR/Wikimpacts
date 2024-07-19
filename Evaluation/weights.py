@@ -89,6 +89,10 @@ weights = {
         # Homeless
         "Total_Homeless_Min": 1,
         "Total_Homeless_Max": 1,
+        #Displace
+        "Total_Displace_Min": 1,
+        "Total_Displace_Max": 1,
+        # Damage
         # Damage
         "Total_Damage_Min": 1,
         "Total_Damage_Max": 1,
