@@ -36,30 +36,43 @@ If you have generated some LLM output and would like to test it against the dev 
 
 Choose a new experiment name! You will use this <EXPERIMENT_NAME> for the whole pipeline.
 
-#### PRESTEP (before Step 2):  
-If the system output is split across several files (such as Mixtral and Mistral system outputs), then first merge it:
+#### PRESTEPS
 
-```shell
-poetry run python3 Database/merge_json_output.py \
---input_dir Database/raw/<EXPERIMENT_NAME>/<RAW_JSON_FILES> \
---output_dir Database/raw/<EXPERIMENT_NAME> \
---model_name <MY_MODEL>
-```
+- Normalizing JSON output for Mistral/Mixtral
+    If the system output is split across several files (such as Mixtral and Mistral system outputs), then first merge it:
 
-> [!WARNING]  
+    ```shell
+    poetry run python3 Database/merge_json_output.py \
+    --input_dir Database/raw/<EXPERIMENT_NAME>/<RAW_JSON_FILES> \
+    --output_dir Database/raw/<EXPERIMENT_NAME> \
+    --model_name <MY_MODEL>
+    ```
+
+- Normalizing JSON output for GPT4o
+
+    GPT4o sometimes produces inconsistent JSON where it nests keys like "Location" under "Location_Information" and start and end date under the key "Time_Information". In this case, you need to unnest these using the script below:
+
+
+    ```shell
+    poetry run python3 Database/fix_nested_json.py \
+    -i "Database/raw/<EXPERIMENT_NAME>/<INPUT_FILE.JSON>" \
+    -o "Database/raw/<EXPERIMENT_NAME>/<OUTPUT_FILE.JSON>"
+    ```
+
+> [!WARNING]
 > Your raw system output files should always land in the `Database/raw/<EXPERIMENT_NAME>` directory!
 
 > [!TIP]
 >  JSON files can be formatted easily with pre-commit:
-> 
+>
 > ```shell
 > pre-commit run --files Database/raw/<EXPERIMENT_NAME>/> <JSON_FILE_THAT_NEEDS_FORMATTING>
 > ```
 
 #### (Step 2) Parsing events and subevents
 
-Once all system output files are merged into a single JSON file (**or if this was already the case, such as with GPT4 output**), you can parse them so they are ready to be evaluated. 
-    The parsing script [`Database/parse_events.py`](Database/parse_events.py) will normalize numbers (to min and max) and locations (using OpenStreetMap) and output a JSON file. 
+Once all system output files are merged into a single JSON file (**or if this was already the case, such as with GPT4 output**), you can parse them so they are ready to be evaluated.
+    The parsing script [`Database/parse_events.py`](Database/parse_events.py) will normalize numbers (to min and max) and locations (using OpenStreetMap) and output a JSON file.
 
 ```shell
 poetry run python3 Database/parse_events.py \
@@ -71,17 +84,17 @@ poetry run python3 Database/parse_events.py \
 --event_type all \
 
 # if your country and location columns have a different name
-# you can specify it here (otherwise, defaults to 
+# you can specify it here (otherwise, defaults to
 # "Country" and "Location" (respectively)):
 --country_column "Custom_Country_Column"  \
---location_column "Locations" 
+--location_column "Locations"
 ```
 
 > [!WARNING]
-> Normalizing countries will go slow the first time. This is because we are using a free API (currently!). However, each time this script is run locally, geopy will cache the results, meaning that it will go faster the next time you run it on your local branch. Allow for 15-20 minutes the first time. 
+> Normalizing countries will go slow the first time. This is because we are using a free API (currently!). However, each time this script is run locally, geopy will cache the results, meaning that it will go faster the next time you run it on your local branch. Allow for 15-20 minutes the first time.
 
 
-#### (Step 2) Evaluate against the dev and test sets 
+#### (Step 2) Evaluate against the dev and test sets
 
 ##### (A) Choose your config and columns
 The python dictionary in <a href="Evaluation/weights.py"><code>weights.py</code></a> contains different weight configs. For example, the experiments nlp4climate weighs all the column types equally but excludes the "Event_Name" from evaluation.
@@ -109,11 +122,11 @@ Also, this config will result in evaluating only on this smaller set of columns,
             "End_Date_Month": 1,
             "End_Date_Year": 1,
             "Country_Norm": 1,
-            
+
         },
     }
 ```
- 
+
 
 ##### (B) Evaluate
  When your config is ready, run the evaluation script:
@@ -121,7 +134,7 @@ Also, this config will result in evaluating only on this smaller set of columns,
 ```shell
 poetry run python3 Evaluation/evaluator.py --sys-file  Database/output/<EXPERIMENT_NAME>/dev/<EXPERIMENT.PARQUET> --gold-file Database/gold/<EXPERIMENT_GOLD.PARQUET> --model-name "<EXPERIMENT_NAME>/<DATA_SPLIT>" --null-penalty 1 --score all --weights_config <EXPERIMENT_NAME>
 ```
-    
+
 For example, the script below runs the evaluation on the output from mixtral-8x7b-insctruct agains the dev set gold file, and saves the results in `Database/evaluation_results/example/dev`:
 
 ```shell
@@ -177,7 +190,7 @@ If you have new events to add to the database, first parse them and insert them.
     poetry run python3 Database/create_db.py
     ```
 
-#### SPECIAL USECASE: Converting the manual annotation table from a flat format to Events and Specific Impacts 
+#### SPECIAL USECASE: Converting the manual annotation table from a flat format to Events and Specific Impacts
 
 1. Download the latest copy of the excel sheet (write one of the contributors of the repository if you do not have the link)
 2. Choose the correct excel sheet and run the script:
@@ -192,8 +205,8 @@ poetry run python3 Database/gold_from_excel.py --input-file "Database/gold/Impac
 These results are not split to test/dev.
 The plan is to expand this functionality further and evaluate subevents
 
-To be implemented: 
-- [ ] How to evaluate subevents when the gold may contain more/less than the system output? Maybe subevents can be matched by location and timestamp and evaluated accordingly -- finding too many could be penalized. 
+To be implemented:
+- [ ] How to evaluate subevents when the gold may contain more/less than the system output? Maybe subevents can be matched by location and timestamp and evaluated accordingly -- finding too many could be penalized.
 - [ ] Match the short uuids (generated by [Database/scr/normalize_utils.pyrandom_short_uuid](Database/scr/normalize_utils.pyrandom_short_uuid)) in the excel sheet for the ones that already exist in the dev and test sets.
 - [ ] Make any edits (if needed) to the evaluation script so it can handle subevents
 
@@ -201,7 +214,7 @@ To be implemented:
 
 > [!IMPORTANT]
 > Please don't track or push excel sheets into the repository
-> The file `Database/gold/ImpactDB_DataTable_Validation.xlsx` has the latest gold annotations from 01/06/2024 and will be updated in the future. 
+> The file `Database/gold/ImpactDB_DataTable_Validation.xlsx` has the latest gold annotations from 01/06/2024 and will be updated in the future.
 
 ### Develop
 
@@ -212,7 +225,7 @@ Always _**rebase**_ your branch on the latest changes in `main` instead of mergi
 And don't forget to pull large files from Git Large File Storage!
 
 ```
-# always pull first 
+# always pull first
 git pull main
 
 # fetch and merge all files for your current branch
@@ -226,12 +239,12 @@ git lfs pull --all
 > Consult this [StackOverflow answer on how to use `git lfs`](https://stackoverflow.com/a/72610495/14123992)
 
 
-Make sure any new dependencies are handled by `poetry`.You should be tracking and pushing both `poetry.lock` and `pyproject.toml` files. 
+Make sure any new dependencies are handled by `poetry`.You should be tracking and pushing both `poetry.lock` and `pyproject.toml` files.
 There is no need to manually add dependencies to the `pyproject.toml` file. Instead, use `poetry` commands:
 
 ```shell
 # add pandas as a main dependency
-poetry add pandas -G main 
+poetry add pandas -G main
 
 # add a specific version of ipykernel as a dev dependency
 poetry add ipykernel@6.29.4 -G dev
@@ -239,8 +252,8 @@ poetry add ipykernel@6.29.4 -G dev
 
 ### Problems?
 
-Start an Issue on GitHub if you find a bug in the code or have suggestions for a feature you need. 
-If you run into an error or problem, please include the error trace or logs! :D 
+Start an Issue on GitHub if you find a bug in the code or have suggestions for a feature you need.
+If you run into an error or problem, please include the error trace or logs! :D
 
 > [!TIP]
 > Consult this [Github Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
