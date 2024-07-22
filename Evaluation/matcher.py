@@ -87,22 +87,22 @@ class SpecificInstanceMatcher:
         gold, sys, already_matched = [], [], []
 
         for si in gold_list:
-            gold.append(si)
             similarity = self.calc_similarity(si, sys_list)
 
             # create a list of indices of the matches sorted by value (best matches first)
             top_matches_sorted_indices = [i for i, x in sorted(enumerate(similarity), key=lambda x: x[1], reverse=True)]
-
+            gold.append(si)
             for i in top_matches_sorted_indices:
                 # inspect the best matches from the top
                 # match if a specific instance meets the threshold & has not already been matched by another specific instance
-                if similarity[i] >= self.threshold and similarity[i] not in already_matched:
-                    already_matched.append(similarity[i])
+                if similarity[i] >= self.threshold and i not in already_matched:
+                    already_matched.append(i)
                     sys.append(sys_list[i])
                     break
                 else:
                     # otherwise, create a "padded" match
                     sys.append(self.create_pad(si))
+                    break
 
         # if any events in the sys output remain unmatched, create a "padded" match for them
         for si in sys_list:
