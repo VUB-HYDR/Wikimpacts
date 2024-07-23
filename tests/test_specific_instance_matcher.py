@@ -161,6 +161,20 @@ class TestSpecificInstanceMatcher:
             ),
             # empty lists as input
             ([], [], [], []),
+            # empty sys_list as input
+            (
+                [{"Event_ID": "aA3B4", "Start_Date_Year": 2030}],
+                [],
+                [{"Event_ID": "aA3B4-0", "Start_Date_Year": 2030}],
+                [{"Event_ID": "aA3B4-0", "Start_Date_Year": None}],
+            ),
+            # empty gold_list as input
+            (
+                [],
+                [{"Event_ID": "aA3C4", "Start_Date_Year": 2030}],
+                [{"Event_ID": "aA3C4-0", "Start_Date_Year": None}],
+                [{"Event_ID": "aA3C4-0", "Start_Date_Year": 2030}],
+            ),
             # inconsistent schema
             (
                 [
@@ -192,7 +206,7 @@ class TestSpecificInstanceMatcher:
     )
     def test_matcher(self, test_gold_list, test_sys_list, expected_gold, expected_sys):
         matcher = SpecificInstanceMatcher(threshold=0.6, null_penalty=0.5)
-        if expected_gold and expected_sys:
+        if expected_gold is not None and expected_sys is not None:
             assert matcher.match(gold_list=test_gold_list, sys_list=test_sys_list) == (
                 expected_gold,
                 expected_sys,
