@@ -53,8 +53,12 @@ class SpecificInstanceMatcher:
                     r = self.comp.sequence(gold_instance[k], si[k])
                 try:
                     scores.append(1 - r)
+                    del r
                 except Exception:
-                    self.logger.warning(f"Unsupported column name: {k} will be ignored during matching.")
+                    if k != "Event_ID":
+                        self.logger.warning(
+                            f"Unsupported column name: {k} will be ignored during matching."
+                        )
 
             score_list.append(mean(scores))
 
