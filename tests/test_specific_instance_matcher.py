@@ -191,7 +191,7 @@ class TestSpecificInstanceMatcher:
         ],
     )
     def test_matcher(self, test_gold_list, test_sys_list, expected_gold, expected_sys):
-        matcher = SpecificInstanceMatcher()
+        matcher = SpecificInstanceMatcher(threshold=0.6, null_penalty=1)
         if expected_gold and expected_sys:
             assert matcher.match(gold_list=test_gold_list, sys_list=test_sys_list) == (
                 expected_gold,
