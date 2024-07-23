@@ -218,7 +218,7 @@ To be implemented:
 
 ### Develop
 
-Always pull a fresh copy of the `main` branch first! To add a new feature, check out a new branch from the `main` branch, make changes there, and push the new branch upstream to open a PR. PRs should result in a **squash commit** in the `main` branch. **It is recommended to code responsibly and ask someone to review your code. You can always tag [i-be-snek](https://github.com/i-be-snek) as a reviewer.** 
+Always pull a fresh copy of the `main` branch first! To add a new feature, check out a new branch from the `main` branch, make changes there, and push the new branch upstream to open a PR. PRs should result in a **squash commit** in the `main` branch. **It is recommended to code responsibly and ask someone to review your code. You can always tag [i-be-snek](https://github.com/i-be-snek) as a reviewer.**
 
 Always _**rebase**_ your branch on the latest changes in `main` instead of merging using `git rebase main`. If you are having trouble with resolving merge conflicts when rebasing, consult [i-be-snek](https://github.com/i-be-snek).
 
