@@ -89,10 +89,9 @@ class Comparer:
                 "Total_Damage_Max",
                 "Total_Homeless_Min",
                 "Total_Homeless_Max",
-                        # Injuries
+                # Injuries
                 "Total_Injuries_Max",
                 "Total_Injuries_Min",
-            
                 # Buildings_Damage
                 "Total_Buildings_Min",
                 "Total_Buildings_Max",
@@ -109,7 +108,7 @@ class Comparer:
                 "Total_Insured_Damage_Units",
                 "Total_Insured_Damage_Inflation_Adjusted",
                 "Total_Insured_Damage_Inflation_Adjusted_Year",
-               #Displace
+                # Displace
                 "Total_Displace_Min",
                 "Total_Displace_Max",
             ]

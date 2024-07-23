@@ -109,9 +109,11 @@ if __name__ == "__main__":
         logger.info(f"Evaluation limited to {sys.shape} events from source {args.score}")
 
     # Add dummy rows for missing events
-    missing_ids = set(sys['Event_ID'].to_list()) ^ set(gold['Event_ID'].to_list())
+    missing_ids = set(sys["Event_ID"].to_list()) ^ set(gold["Event_ID"].to_list())
     if missing_ids:
-        logger.info(f"Missing events! {missing_ids}. The columns in these events will be constructed with `NoneType` objects. The system output will be penalized for missing events with the selected null penalty ({args.null_penalty})")
+        logger.info(
+            f"Missing events! {missing_ids}. The columns in these events will be constructed with `NoneType` objects. The system output will be penalized for missing events with the selected null penalty ({args.null_penalty})"
+        )
         gold_cols = list(gold.columns)
         rows_to_add = []
         for event_id in missing_ids:
@@ -120,11 +122,11 @@ if __name__ == "__main__":
             for col in ["Country_Norm", "Location_Norm"]:
                 if col in gold_cols:
                     new_row[col] = "[]"
-            new_row['Event_ID'] = event_id  # Set the 'Event_ID'
+            new_row["Event_ID"] = event_id  # Set the 'Event_ID'
             rows_to_add.append(new_row)
 
         missing_rows = pd.DataFrame(rows_to_add)
-        sys = pd.concat([sys, missing_rows], ignore_index=True).sort_values('Event_ID')
+        sys = pd.concat([sys, missing_rows], ignore_index=True).sort_values("Event_ID")
         sys.replace({np.nan: None}, inplace=True)
 
     # Specify null penalty
@@ -161,7 +163,7 @@ if __name__ == "__main__":
 
     pairs = zip(sys_data, gold_data)
     logger.info(f"Prepared {len(sys_data)} events for evaluation")
-    
+
     comps = [
         [sys["Event_ID"], gold["Event_ID"], comp.weighted(sys, gold, weights), comp.all(sys, gold)]
         for (sys, gold) in pairs

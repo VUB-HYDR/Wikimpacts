@@ -18,7 +18,7 @@ weights = {
         # Homeless
         "Total_Homeless_Min": 1,
         "Total_Homeless_Max": 1,
-        #Displace
+        # Displace
         "Total_Displace_Min": 1,
         "Total_Displace_Max": 1,
         # Damage
@@ -44,7 +44,6 @@ weights = {
         "Country_Norm": 1,
         "Location_Norm": 1,
     },
-
     "nlp4climate": {
         "Event_ID": 1,
         "Main_Event": 1,
@@ -62,14 +61,12 @@ weights = {
         "End_Date_Year": 1,
         "Country_Norm": 1,
     },
-    "Homeless":
-    {
-    # Homeless
-         "Event_ID": 0,
+    "Homeless": {
+        # Homeless
+        "Event_ID": 0,
         "Total_Homeless_Min": 1,
         "Total_Homeless_Max": 1,
-       },
-
+    },
     "ESSD_2024": {
         "Event_ID": 1,
         "Main_Event": 1,
@@ -89,7 +86,7 @@ weights = {
         # Homeless
         "Total_Homeless_Min": 1,
         "Total_Homeless_Max": 1,
-        #Displace
+        # Displace
         "Total_Displace_Min": 1,
         "Total_Displace_Max": 1,
         # Damage
@@ -113,8 +110,7 @@ weights = {
         "End_Date_Month": 1,
         "End_Date_Year": 1,
         # Location
-        #"Country_Norm": 1,
-        #"Location_Norm": 1,
+        # "Country_Norm": 1,
+        # "Location_Norm": 1,
     },
-    
 }
