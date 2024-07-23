@@ -2,7 +2,7 @@ import argparse
 import ast
 import json
 import pathlib
-from pprint import pformat
+from pprint import pformat, pprint
 
 import comparer
 import numpy as np
@@ -81,12 +81,10 @@ if __name__ == "__main__":
         {np.nan: None, "NULL ": None, "NULL": None}
     )
 
-
     logger.info("Only including events in the gold file")
     sys = sys[sys.Event_ID.isin(gold["Event_ID"].to_list())]
-  
-    for event_id in gold["Event_ID"]:
-        print(event_id)
+
+    logger.info(f"The following events exist in gold: {pprint(list(gold['Event_ID'].unique()), indent=10)}")
 
     if args.score in ("wikipedia", "artemis"):
         # get article from source
