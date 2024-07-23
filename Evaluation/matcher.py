@@ -8,7 +8,7 @@ class SpecificInstanceMatcher:
     """Matches and pads specific instances (subevents) from two separate lists.
     'Padded' specific instances will have NoneType objects as values"""
 
-    def __init__(self, threshold: float = 0.6):
+    def __init__(self, threshold: float = 0.6, null_penalty: float = 0.5):
         self.logger = Logging.get_logger("specific instance matcher")
 
         self.threshold = threshold
@@ -27,7 +27,7 @@ class SpecificInstanceMatcher:
         self.str_cat: list[str] = ["Country_Norm", "Unit"]
         self.list_cat: list[str] = ["Location_Norm"]
 
-        self.comp = Comparer(0.5, [])
+        self.comp = Comparer(null_penalty, [])
 
     @staticmethod
     def create_pad(specific_instance: dict) -> dict:
