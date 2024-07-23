@@ -40,7 +40,7 @@ class TestSpecificInstanceMatcher:
                     },
                     {
                         "Event_ID": "aA3",
-                        "Num_Min": 2,
+                        "Num_Min": None,
                         "Num_Max": 91,
                         "Start_Date_Year": 2030,
                         "Location_Norm": ["Uppsala", "Stockholm"],
@@ -95,7 +95,7 @@ class TestSpecificInstanceMatcher:
                     },
                     {
                         "Event_ID": "aA3-1",
-                        "Num_Min": 2,
+                        "Num_Min": None,
                         "Num_Max": 91,
                         "Start_Date_Year": 2030,
                         "Location_Norm": ["Uppsala", "Stockholm"],
@@ -191,7 +191,7 @@ class TestSpecificInstanceMatcher:
         ],
     )
     def test_matcher(self, test_gold_list, test_sys_list, expected_gold, expected_sys):
-        matcher = SpecificInstanceMatcher(threshold=0.6, null_penalty=1)
+        matcher = SpecificInstanceMatcher(threshold=0.6, null_penalty=0.5)
         if expected_gold and expected_sys:
             assert matcher.match(gold_list=test_gold_list, sys_list=test_sys_list) == (
                 expected_gold,
