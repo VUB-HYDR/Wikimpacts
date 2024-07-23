@@ -129,7 +129,7 @@ Also, this config will result in evaluating only on this smaller set of columns,
 ```
 
 
-##### (B) Evaluate
+##### (B) Evaluate main events
  When your config is ready, run the evaluation script:
 
 ```shell
@@ -146,6 +146,36 @@ poetry run python3 Evaluation/evaluator.py --sys-file  Database/output/nlp4clima
 --score all \
 --weights_config nlp4climate
 ```
+
+#### Evaluate sub events (ie. specific instances)
+
+Specific instances can be evaluated using the same script. The same script (`Evaluation/evalutor.py`) will automatically match specific instances from the gold data with the system output. If no match exists for a specific instance, it will be matched up with a "padded" example with NULL values so that the system is penalized for not having been able to find a particular specific instance or for finding extra specific instances not found in the gold dataset.
+
+Below is a scipt that evaluates two dummy sets (gold and sys) to showcase a working example and the correct schema for the `.parquet` files. Sub events are evaluated separately from main events.
+
+```shell
+poetry run python3 Evaluation/evaluator.py \
+--sys-file tests/specific_instance_eval/test_sys_list_death.parquet \
+--gold-file tests/specific_instance_eval/test_gold_list_death.parquet \
+--model-name "specific_instance_eval_test/dev/deaths" \
+--event_type sub \
+--weights_config specific_instance \
+--specific_instance_type deaths
+```
+If run properly, you should see the results in `Database/evaluation_results/specific_instance_eval_test`:
+
+```shell
+Database/evaluation_results/specific_instance_eval_test
+└── dev
+    └── deaths
+        ├── all_27_deaths_avg_results.json
+        ├── all_27_deaths_results.csv
+        ├── gold_deaths.parquet
+        └── sys_deaths.parquet
+```
+
+> [!WARNING]
+> Do not commit these files to your branch or to `main`, big thanks!
 
 ### Parsing and normalization
 
