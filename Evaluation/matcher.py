@@ -110,4 +110,14 @@ class SpecificInstanceMatcher:
                 sys.append(si)
                 gold.append(self.create_pad(si))
 
+        assert len(gold) == len(sys), AssertionError(
+            f"Something went wrong! number of specific instances in gold: {len(gold)}; in sys: {len(sys)}"
+        )
+
+        for ds in [gold, sys]:
+            counter = 0
+            for si in ds:
+                si["Event_ID"] = f"{si['Event_ID']}-{counter}"
+                counter += 1
+
         return (gold, sys)

@@ -32,18 +32,21 @@ class TestSpecificInstanceMatcher:
                 # gold_list
                 [
                     {
+                        "Event_ID": "aA3",
                         "Num_Min": 2,
                         "Num_Max": 82,
                         "Start_Date_Year": 2030,
                         "Location_Norm": ["Amman", "Zarqa"],
                     },
                     {
+                        "Event_ID": "aA3",
                         "Num_Min": 2,
                         "Num_Max": 91,
                         "Start_Date_Year": 2030,
                         "Location_Norm": ["Uppsala", "Stockholm"],
                     },
                     {
+                        "Event_ID": "aA3",
                         "Num_Min": 0,
                         "Num_Max": 10,
                         "Start_Date_Year": 2031,
@@ -53,24 +56,28 @@ class TestSpecificInstanceMatcher:
                 # sys_list
                 [
                     {
+                        "Event_ID": "aA3",
                         "Num_Min": 0,
                         "Num_Max": 11,
                         "Start_Date_Year": 2031,
                         "Location_Norm": ["Lyon"],
                     },
                     {
+                        "Event_ID": "aA3",
                         "Num_Min": 1,
                         "Num_Max": 84,
                         "Start_Date_Year": 2029,
                         "Location_Norm": ["Uppsala", "Zarqa"],
                     },
                     {
+                        "Event_ID": "aA3",
                         "Num_Min": 2,
                         "Num_Max": 91,
                         "Start_Date_Year": 2030,
                         "Location_Norm": ["Stockholm"],
                     },
                     {
+                        "Event_ID": "aA3",
                         "Num_Min": 7,
                         "Num_Max": 30,
                         "Start_Date_Year": 2030,
@@ -80,24 +87,28 @@ class TestSpecificInstanceMatcher:
                 # gold
                 [
                     {
+                        "Event_ID": "aA3-0",
                         "Num_Min": 2,
                         "Num_Max": 82,
                         "Start_Date_Year": 2030,
                         "Location_Norm": ["Amman", "Zarqa"],
                     },
                     {
+                        "Event_ID": "aA3-1",
                         "Num_Min": 2,
                         "Num_Max": 91,
                         "Start_Date_Year": 2030,
                         "Location_Norm": ["Uppsala", "Stockholm"],
                     },
                     {
+                        "Event_ID": "aA3-2",
                         "Num_Min": 0,
                         "Num_Max": 10,
                         "Start_Date_Year": 2031,
                         "Location_Norm": ["Paris", "Lyon"],
                     },
                     {
+                        "Event_ID": "aA3-3",
                         "Num_Min": None,
                         "Num_Max": None,
                         "Start_Date_Year": None,
@@ -107,24 +118,28 @@ class TestSpecificInstanceMatcher:
                 # sys
                 [
                     {
+                        "Event_ID": "aA3-0",
                         "Num_Min": 1,
                         "Num_Max": 84,
                         "Start_Date_Year": 2029,
                         "Location_Norm": ["Uppsala", "Zarqa"],
                     },
                     {
+                        "Event_ID": "aA3-1",
                         "Num_Min": 2,
                         "Num_Max": 91,
                         "Start_Date_Year": 2030,
                         "Location_Norm": ["Stockholm"],
                     },
                     {
+                        "Event_ID": "aA3-2",
                         "Num_Min": 0,
                         "Num_Max": 11,
                         "Start_Date_Year": 2031,
                         "Location_Norm": ["Lyon"],
                     },
                     {
+                        "Event_ID": "aA3-3",
                         "Num_Min": 7,
                         "Num_Max": 30,
                         "Start_Date_Year": 2030,
@@ -133,19 +148,42 @@ class TestSpecificInstanceMatcher:
                 ],
             ),
             (
-                [{"Num_Min": 1}],
-                [{"Num_Min": 1000}],
-                [{"Num_Min": 1}, {"Num_Min": None}],
-                [{"Num_Min": None}, {"Num_Min": 1000}],
+                [{"Event_ID": "aA3", "Num_Min": 1}],
+                [{"Event_ID": "aA3", "Num_Min": 1000}],
+                [
+                    {"Event_ID": "aA3-0", "Num_Min": 1},
+                    {"Event_ID": "aA3-1", "Num_Min": None},
+                ],
+                [
+                    {"Event_ID": "aA3-0", "Num_Min": None},
+                    {"Event_ID": "aA3-1", "Num_Min": 1000},
+                ],
             ),
             # empty lists as input
             ([], [], [], []),
             # inconsistent schema
             (
-                [{"Num_Min": 0, "Num_Max": 10, "Start_Date_Year": 2030}],
                 [
-                    {"Num_Mix": 2, "Num_Max": 91, "Start_Date_Year": 2030},
-                    {"Num_Min": 0, "Num_Max": 10, "Start_Date_Year": 2031},
+                    {
+                        "Event_ID": "aA3",
+                        "Num_Min": 0,
+                        "Num_Max": 10,
+                        "Start_Date_Year": 2030,
+                    }
+                ],
+                [
+                    {
+                        "Event_ID": "aA3-0",
+                        "Num_Mix": 2,
+                        "Num_Max": 91,
+                        "Start_Date_Year": 2030,
+                    },
+                    {
+                        "Event_ID": "aA3-1",
+                        "Num_Min": 0,
+                        "Num_Max": 10,
+                        "Start_Date_Year": 2031,
+                    },
                 ],
                 None,
                 None,
