@@ -90,7 +90,6 @@ weights = {
         "Total_Displace_Min": 1,
         "Total_Displace_Max": 1,
         # Damage
-        # Damage
         "Total_Damage_Min": 1,
         "Total_Damage_Max": 1,
         "Total_Damage_Units": 1,
