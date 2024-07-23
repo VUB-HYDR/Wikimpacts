@@ -63,7 +63,12 @@ class SpecificInstanceMatcher:
         return score_list
 
     def schema_checker(self, gold_list: list[dict], sys_list: list[dict]) -> bool:
+        # in case the sys output or gold is an empty list
+        if len(gold_list) == 0 or len(sys_list) == 0:
+            return True
+
         for g in range(len(gold_list)):
+            # check that all column names in the gold are consistent
             if sorted(gold_list[0].keys()) != sorted(gold_list[g].keys()):
                 self.logger.error(
                     f"Gold file contains entries with inconsistent column names at specific instance #{g}: {gold_list[g].keys()}. Expected columns: {gold_list[0].keys()}"
@@ -71,6 +76,7 @@ class SpecificInstanceMatcher:
                 return False
 
         for s in range(len(sys_list)):
+            # if all gold columns are consistent, check that they are consistent with the sys_list ones
             try:
                 assert all([e in sys_list[s].keys() for e in gold_list[0].keys()])
                 return True
@@ -92,18 +98,22 @@ class SpecificInstanceMatcher:
 
             # create a list of indices of the matches sorted by value (best matches first)
             top_matches_sorted_indices = [i for i, x in sorted(enumerate(similarity), key=lambda x: x[1], reverse=True)]
-            gold.append(si)
-            for i in top_matches_sorted_indices:
-                # inspect the best matches from the top
-                # match if a specific instance meets the threshold & has not already been matched by another specific instance
-                if similarity[i] >= self.threshold and i not in already_matched:
-                    already_matched.append(i)
-                    sys.append(sys_list[i])
-                    break
-                else:
-                    # otherwise, create a "padded" match
-                    sys.append(self.create_pad(si))
-                    break
+            if len(sys_list) > 0:
+                gold.append(si)
+                for i in top_matches_sorted_indices:
+                    # inspect the best matches from the top
+                    # match if a specific instance meets the threshold & has not already been matched by another specific instance
+                    if similarity[i] >= self.threshold and i not in already_matched:
+                        already_matched.append(i)
+                        sys.append(sys_list[i])
+                        break
+                    else:
+                        # otherwise, create a "padded" match
+                        sys.append(self.create_pad(si))
+                        break
+            else:
+                gold.append(si)
+                sys.append(self.create_pad(si))
 
         # if any events in the sys output remain unmatched, create a "padded" match for them
         for si in sys_list:
