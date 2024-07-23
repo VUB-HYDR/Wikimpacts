@@ -266,4 +266,12 @@ if __name__ == "__main__":
     with open(avg_result_filename, "w") as f:
         json.dump(averages, f)
 
+    # get average per event_ID when evaluating specific instances
+    if args.event_type == "sub":
+        all_comps["Event_ID"] = all_comps["Event_ID1"].apply(lambda x: x.split("-")[0])
+        all_comps.groupby("Event_ID")[[c for c in all_comps.columns if not c.startswith("Event_ID")]].mean().to_csv(
+            f"{output_dir}/{args.score}_{len(sys_data)}_{args.specific_instance_type}_avg_per_event_id_results.csv",
+            index=False,
+        )
+
     logger.info(f"Done! Results in {avg_result_filename}")
