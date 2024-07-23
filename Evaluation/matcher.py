@@ -27,7 +27,7 @@ class SpecificInstanceMatcher:
         self.str_cat: list[str] = ["Country_Norm", "Unit"]
         self.list_cat: list[str] = ["Location_Norm"]
 
-        self.comp = Comparer(1, [])
+        self.comp = Comparer(0.5, [])
 
     @staticmethod
     def create_pad(specific_instance: dict) -> dict:
