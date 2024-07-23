@@ -168,10 +168,11 @@ If run properly, you should see the results in `Database/evaluation_results/spec
 Database/evaluation_results/specific_instance_eval_test
 └── dev
     └── deaths
-        ├── all_27_deaths_avg_results.json
-        ├── all_27_deaths_results.csv
-        ├── gold_deaths.parquet
-        └── sys_deaths.parquet
+        ├── all_27_deaths_avg_per_event_id_results.csv # <- average error rate grouped by event_id
+        ├── all_27_deaths_avg_results.json # <- overall average results
+        ├── all_27_deaths_results.csv # <- results for each pair of gold/sys
+        ├── gold_deaths.parquet # <- modified gold file with matches + padded specific instances
+        └── sys_deaths.parquet # <- modified sys file with matches + padded specific instances
 ```
 
 > [!WARNING]
