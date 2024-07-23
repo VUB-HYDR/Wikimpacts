@@ -80,13 +80,11 @@ if __name__ == "__main__":
     sys = pd.read_parquet(args.sys_set_filepath, engine="fastparquet").replace(
         {np.nan: None, "NULL ": None, "NULL": None}
     )
-    # print("Sys columns: " + ", ".join(sys.columns))
-    # print("Gold columns: " + ", ".join(gold.columns))
+
 
     logger.info("Only including events in the gold file")
     sys = sys[sys.Event_ID.isin(gold["Event_ID"].to_list())]
-    # print("Sys length: " + str(len(sys)))
-    # print("Sys type: " + str(type(sys)))
+  
     for event_id in gold["Event_ID"]:
         print(event_id)
 
