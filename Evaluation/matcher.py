@@ -39,7 +39,6 @@ class SpecificInstanceMatcher:
 
     def calc_similarity(self, gold_instance: dict, sys_list: list) -> list[float]:
         score_list: float = []
-
         for si in sys_list:
             scores = []
             for k in gold_instance.keys():
@@ -56,9 +55,7 @@ class SpecificInstanceMatcher:
                     del r
                 except Exception:
                     if k != "Event_ID":
-                        self.logger.warning(
-                            f"Unsupported column name: {k} will be ignored during matching."
-                        )
+                        self.logger.warning(f"Unsupported column name: {k} will be ignored during matching.")
 
             score_list.append(mean(scores))
 
