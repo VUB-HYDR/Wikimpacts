@@ -27,6 +27,7 @@ def load_model(model_name):
             model_name,
             torch_dtype=torch.bfloat16,
             device_map="auto",
+            attn_implementation="flash_attention_2"
         )
         return tokenizer, model
 
@@ -45,7 +46,7 @@ def run_prompt(article_path, tokenizer, model, prompts):
         "Whole_text": text,
         "Event_Name": event_name
     }
-
+    max_new_tokens=8192
     results = {"Event_Name": event_name, "URL": url, "Event_ID": event_id}
     for prompt_name, prompt_template in prompts.items():
         prompt = prompt_template.format_map(data_for_prompt)
@@ -65,14 +66,14 @@ def run_prompt(article_path, tokenizer, model, prompts):
             ]
             generated_ids = model.generate(
                 input_ids,
-                max_new_tokens=4000,
+                max_new_tokens=max_new_tokens,
                 eos_token_id=terminators,
                 do_sample=False,
             )
             decoded = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)
             decoded = decoded[0].split("<|end_header_id|>")[-1].strip("<|eot_id|").strip()
         else:
-            generated_ids = model.generate(input_ids, max_new_tokens=4000, do_sample=False)
+            generated_ids = model.generate(input_ids, max_new_tokens=max_new_tokens, do_sample=False)
             decoded = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)
             decoded = decoded[0]
         results["prompt"] = prompt
@@ -92,16 +93,34 @@ if __name__ == "__main__":
         "llama2-7": "meta-llama/Llama-2-7b-chat",
         "climate13": "eci-io/climategpt-13b",
         "llama2-13": "meta-llama/Llama-2-13b-chat",
+        "llama3.1-8": "meta-llama/Meta-Llama-3.1-8B-Instruct",
     }
 
     model_name = model_map.get(model_option)
-
     if model_name is None:
         print("Wrong model ID")
         exit()
     model_basename = model_name.split("/")[-1]
 
     tokenizer, model = load_model(model_name)
+    print(f"Running the model {model_name} on {split} split")
+
+    exclude_files = [
+        "2014 Southeast Europe floods.pickle",
+        "2021 Western North America heat wave.pickle",
+        "2022 European heatwaves.pickle",
+        "Hurricane Agnes.pickle",
+        "Hurricane_Danielle_(2022).pickle",
+        "Hurricane Elsa.pickle",
+        "Hurricane Floyd.pickle",
+        "Hurricane Ophelia (2005).pickle",
+        "Hurricane_Polo_(2014).pickle",
+        "southeast Australia Bushfires.pickle",
+        "Tropical Storm Erika.pickle",
+        "Tropical_Storm_Haiyan_(2007).pickle",
+        "Tropical_Storm_Jerry_(2001).pickle",
+        "Typhoon_Mawar_(2005).pickle"
+    ]
 
     articles_directory = f'preprocessed_articles/{split}'
     prompt_dict = prompts
@@ -115,8 +134,14 @@ if __name__ == "__main__":
     for filename in sorted(os.listdir(articles_directory)):
         start_time = time.time()
         print(filename)
+        if filename not in exclude_files:
+            continue
         if filename.endswith('.pickle'):
             article_path = os.path.join(articles_directory, filename)
+            output_path = os.path.join(save_dir, filename)
+            if os.path.exists(output_path):
+                print(f"Skipping {output_path} as it exists!")
+                continue
             # Process the article with each prompt
             try:
                 processed_results = run_prompt(article_path, tokenizer, model, prompt_dict)
@@ -124,8 +149,6 @@ if __name__ == "__main__":
                 print("Exception", e)
                 continue
             # Save the results to a JSON file
-            output_filename = filename.replace('.txt', '.pickle')
-            output_path = os.path.join(save_dir, output_filename)
             with open(output_path, 'wb') as json_file:
                 pickle.dump(processed_results, json_file)
             print(f'Processed and saved results for {filename} . it took {time.time() - start_time} seconds. \n')
