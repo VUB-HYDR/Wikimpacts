@@ -18,6 +18,9 @@ weights = {
         # Homeless
         "Total_Homeless_Min": 1,
         "Total_Homeless_Max": 1,
+        # Displace
+        "Total_Displace_Min": 1,
+        "Total_Displace_Max": 1,
         # Damage
         "Total_Damage_Min": 1,
         "Total_Damage_Max": 1,
@@ -41,7 +44,6 @@ weights = {
         "Country_Norm": 1,
         "Location_Norm": 1,
     },
-
     "nlp4climate": {
         "Event_ID": 1,
         "Main_Event": 1,
@@ -58,5 +60,56 @@ weights = {
         "End_Date_Month": 1,
         "End_Date_Year": 1,
         "Country_Norm": 1,
+    },
+    "Homeless": {
+        # Homeless
+        "Event_ID": 0,
+        "Total_Homeless_Min": 1,
+        "Total_Homeless_Max": 1,
+    },
+    "ESSD_2024": {
+        "Event_ID": 1,
+        "Main_Event": 1,
+        "Event_Name": 0,
+        # Deaths
+        "Total_Deaths_Min": 1,
+        "Total_Deaths_Max": 1,
+        # Injuries
+        "Total_Injuries_Max": 1,
+        "Total_Injuries_Min": 1,
+        # Buildings_Damage
+        "Total_Buildings_Min": 1,
+        "Total_Buildings_Max": 1,
+        # Affected
+        "Total_Affected_Min": 1,
+        "Total_Affected_Max": 1,
+        # Homeless
+        "Total_Homeless_Min": 1,
+        "Total_Homeless_Max": 1,
+        # Displace
+        "Total_Displace_Min": 1,
+        "Total_Displace_Max": 1,
+        # Damage
+        "Total_Damage_Min": 1,
+        "Total_Damage_Max": 1,
+        "Total_Damage_Units": 1,
+        "Total_Damage_Inflation_Adjusted": 1,
+        "Total_Damage_Inflation_Adjusted_Year": 1,
+        # Insured Damage
+        "Total_Insured_Damage_Min": 1,
+        "Total_Insured_Damage_Max": 1,
+        "Total_Insured_Damage_Units": 1,
+        "Total_Insured_Damage_Inflation_Adjusted": 1,
+        "Total_Insured_Damage_Inflation_Adjusted_Year": 1,
+        # Date
+        "Start_Date_Day": 1,
+        "Start_Date_Month": 1,
+        "Start_Date_Year": 1,
+        "End_Date_Day": 1,
+        "End_Date_Month": 1,
+        "End_Date_Year": 1,
+        # Location
+        # "Country_Norm": 1,
+        # "Location_Norm": 1,
     },
 }

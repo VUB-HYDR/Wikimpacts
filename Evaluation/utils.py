@@ -1,5 +1,6 @@
 import logging
 
+
 class Logging:
     @staticmethod
     def get_logger(name: str, level: str = logging.INFO) -> logging.Logger:

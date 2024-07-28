@@ -2,7 +2,7 @@ import argparse
 import ast
 import json
 import pathlib
-from pprint import pformat
+from pprint import pformat, pprint
 
 import comparer
 import numpy as np
@@ -76,12 +76,15 @@ if __name__ == "__main__":
     gold = pd.read_parquet(args.gold_set_filepath, engine="fastparquet").replace(
         {np.nan: None, "NULL ": None, "NULL": None}
     )
+
     sys = pd.read_parquet(args.sys_set_filepath, engine="fastparquet").replace(
         {np.nan: None, "NULL ": None, "NULL": None}
     )
 
     logger.info("Only including events in the gold file")
     sys = sys[sys.Event_ID.isin(gold["Event_ID"].to_list())]
+
+    logger.info(f"The following events exist in gold: {pprint(list(gold['Event_ID'].unique()), indent=10)}")
 
     if args.score in ("wikipedia", "artemis"):
         # get article from source
@@ -109,9 +112,11 @@ if __name__ == "__main__":
         logger.info(f"Evaluation limited to {sys.shape} events from source {args.score}")
 
     # Add dummy rows for missing events
-    missing_ids = set(sys['Event_ID'].to_list()) ^ set(gold['Event_ID'].to_list())
+    missing_ids = set(sys["Event_ID"].to_list()) ^ set(gold["Event_ID"].to_list())
     if missing_ids:
-        logger.info(f"Missing events! {missing_ids}. The columns in these events will be constructed with `NoneType` objects. The system output will be penalized for missing events with the selected null penalty ({args.null_penalty})")
+        logger.info(
+            f"Missing events! {missing_ids}. The columns in these events will be constructed with `NoneType` objects. The system output will be penalized for missing events with the selected null penalty ({args.null_penalty})"
+        )
         gold_cols = list(gold.columns)
         rows_to_add = []
         for event_id in missing_ids:
@@ -120,11 +125,11 @@ if __name__ == "__main__":
             for col in ["Country_Norm", "Location_Norm"]:
                 if col in gold_cols:
                     new_row[col] = "[]"
-            new_row['Event_ID'] = event_id  # Set the 'Event_ID'
+            new_row["Event_ID"] = event_id  # Set the 'Event_ID'
             rows_to_add.append(new_row)
 
         missing_rows = pd.DataFrame(rows_to_add)
-        sys = pd.concat([sys, missing_rows], ignore_index=True).sort_values('Event_ID')
+        sys = pd.concat([sys, missing_rows], ignore_index=True).sort_values("Event_ID")
         sys.replace({np.nan: None}, inplace=True)
 
     # Specify null penalty
@@ -160,6 +165,7 @@ if __name__ == "__main__":
     gold_data = gold[weights.keys()].to_dict(orient="records")
 
     pairs = zip(sys_data, gold_data)
+
     logger.info(f"Prepared {len(sys_data)} events for evaluation")
 
     comps = [
