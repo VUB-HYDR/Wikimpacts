@@ -87,6 +87,30 @@ class Comparer:
                 "End_Date_Year",
                 "Total_Damage_Min",
                 "Total_Damage_Max",
+                "Total_Homeless_Min",
+                "Total_Homeless_Max",
+                # Injuries
+                "Total_Injuries_Max",
+                "Total_Injuries_Min",
+                # Buildings_Damage
+                "Total_Buildings_Min",
+                "Total_Buildings_Max",
+                # Affected
+                "Total_Affected_Min",
+                "Total_Affected_Max",
+                # Homeless
+                "Total_Damage_Units",
+                "Total_Damage_Inflation_Adjusted",
+                "Total_Damage_Inflation_Adjusted_Year",
+                # Insured Damage
+                "Total_Insured_Damage_Min",
+                "Total_Insured_Damage_Max",
+                "Total_Insured_Damage_Units",
+                "Total_Insured_Damage_Inflation_Adjusted",
+                "Total_Insured_Damage_Inflation_Adjusted_Year",
+                # Displace
+                "Total_Displace_Min",
+                "Total_Displace_Max",
             ]
         ):
             score[k] = self.integer(v[k], w[k])
