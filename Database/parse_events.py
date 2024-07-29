@@ -174,10 +174,10 @@ if __name__ == "__main__":
                 lambda x: utils.eval(x) if x is not None else []
             )
 
-            logger.info(f"Removing non-country areas from country column {args.country_column}")
-            events[args.country_column] = events[args.country_column].apply(
-                lambda countries: [c for c in countries if utils.simple_country_check(c)] if countries else []
-            )
+            #logger.info(f"Removing non-country areas from country column {args.country_column}")
+            #events[args.country_column] = events[args.country_column].apply(
+            #    lambda countries: [c for c in countries if utils.simple_country_check(c)] if countries else []
+            #)
 
             logger.info("Normalizing Countries")
             events["Country_Tmp"] = events[args.country_column].apply(
