@@ -88,10 +88,10 @@ class TestSpecificInstanceMatcher:
                 [
                     {
                         "Event_ID": "aA3-0",
-                        "Num_Min": 2,
-                        "Num_Max": 82,
-                        "Start_Date_Year": 2030,
-                        "Location_Norm": ["Amman", "Zarqa"],
+                        "Num_Min": 0,
+                        "Num_Max": 10,
+                        "Start_Date_Year": 2031,
+                        "Location_Norm": ["Paris", "Lyon"],
                     },
                     {
                         "Event_ID": "aA3-1",
@@ -102,10 +102,10 @@ class TestSpecificInstanceMatcher:
                     },
                     {
                         "Event_ID": "aA3-2",
-                        "Num_Min": 0,
-                        "Num_Max": 10,
-                        "Start_Date_Year": 2031,
-                        "Location_Norm": ["Paris", "Lyon"],
+                        "Num_Min": 2,
+                        "Num_Max": 82,
+                        "Start_Date_Year": 2030,
+                        "Location_Norm": ["Amman", "Zarqa"],
                     },
                     {
                         "Event_ID": "aA3-3",
@@ -119,10 +119,10 @@ class TestSpecificInstanceMatcher:
                 [
                     {
                         "Event_ID": "aA3-0",
-                        "Num_Min": 1,
-                        "Num_Max": 84,
-                        "Start_Date_Year": 2029,
-                        "Location_Norm": ["Uppsala", "Zarqa"],
+                        "Num_Min": 0,
+                        "Num_Max": 11,
+                        "Start_Date_Year": 2031,
+                        "Location_Norm": ["Lyon"],
                     },
                     {
                         "Event_ID": "aA3-1",
@@ -133,10 +133,10 @@ class TestSpecificInstanceMatcher:
                     },
                     {
                         "Event_ID": "aA3-2",
-                        "Num_Min": 0,
-                        "Num_Max": 11,
-                        "Start_Date_Year": 2031,
-                        "Location_Norm": ["Lyon"],
+                        "Num_Min": 1,
+                        "Num_Max": 84,
+                        "Start_Date_Year": 2029,
+                        "Location_Norm": ["Uppsala", "Zarqa"],
                     },
                     {
                         "Event_ID": "aA3-3",
