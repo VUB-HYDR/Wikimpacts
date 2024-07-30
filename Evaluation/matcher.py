@@ -91,35 +91,35 @@ class SpecificInstanceMatcher:
             self.logger.error("Please check the column names in your gold and sys files.")
             raise BaseException
 
-        gold, sys, already_matched = [], [], []
+        gold, sys, similarity, gold_matched, sys_matched = [], [], [], [], []
+        similarity_matrix = [self.calc_similarity(si, sys_list) for si in gold_list]
+        best_matches = [
+            (gi, si, similarity_matrix[gi][si])
+            for gi in range(len(similarity_matrix))
+            for si in range(len(similarity_matrix[gi]))
+            if similarity_matrix[gi][si] > self.threshold
+        ]
+        best_matches.sort(key=lambda x: x[2], reverse=True)
 
-        for si in gold_list:
-            similarity = self.calc_similarity(si, sys_list)
+        # find the best matches in the similarity matrix
+        for gi, si, sim in best_matches:
+            if gi not in gold_matched and si not in sys_matched:
+                gold.append(gold_list[gi])
+                sys.append(sys_list[si])
+                gold_matched.append(gi)
+                sys_matched.append(si)
+                similarity.append(sim)
 
-            # create a list of indices of the matches sorted by value (best matches first)
-            top_matches_sorted_indices = [i for i, x in sorted(enumerate(similarity), key=lambda x: x[1], reverse=True)]
-            if len(sys_list) > 0:
-                gold.append(si)
-                for i in top_matches_sorted_indices:
-                    # inspect the best matches from the top
-                    # match if a specific instance meets the threshold & has not already been matched by another specific instance
-                    if similarity[i] >= self.threshold and i not in already_matched:
-                        already_matched.append(i)
-                        sys.append(sys_list[i])
-                        break
-                    else:
-                        # otherwise, create a "padded" match
-                        sys.append(self.create_pad(si))
-                        break
-            else:
-                gold.append(si)
-                sys.append(self.create_pad(si))
+        # pad remaining unmatched specific instances
+        for gi in range(len(gold_list)):
+            if gi not in gold_matched:
+                gold.append(gold_list[gi])
+                sys.append(self.create_pad(gold_list[gi]))
 
-        # if any events in the sys output remain unmatched, create a "padded" match for them
-        for si in sys_list:
-            if si not in sys:
-                sys.append(si)
-                gold.append(self.create_pad(si))
+        for si in range(len(sys_list)):
+            if si not in sys_matched:
+                sys.append(sys_list[si])
+                gold.append(self.create_pad(sys_list[si]))
 
         assert len(gold) == len(sys), AssertionError(
             f"Something went wrong! number of specific instances in gold: {len(gold)}; in sys: {len(sys)}"
