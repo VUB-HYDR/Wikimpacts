@@ -121,6 +121,7 @@ class TestNormalizeNumbers:
             ("exactly 200", 0),
             ("more than 200", 1),
             ("2,000", 0),
+            ("Greater than 700", 1),
         ],
     )
     def test__check_for_approximation(self, test_input, expected):
@@ -157,9 +158,17 @@ class TestNormalizeNumbers:
             ("$35.63 million", (35630000, 35630000, 0)),
             ("$3.6 million", (3600000, 3600000, 0)),
             ("Damage: At least $129 million", (129000000, 129000000, 1)),
-            ("At least 73", (73, 73, 1)),
+            ("At least 73", (73, 73, 1)),  # guidelines v2 -> (73, 79, 1)
             ("925000000", (925000000, 925000000, 0)),
             (925000000, (925000000, 925000000, 0)),
+            (23.4, (23.4, 23.4, 0)),
+            # fails!
+            ("Greater than 7010 were killed", (7010, 7010, 1)),  # guidelines v2 -> (7010, 7999, 1)),
+            ("Less than 400", (400, 400, 1)),  # guidelines v2 ->  (300, 399, 1)
+            (
+                "a minimum of 410 billion",
+                (410000000000, 410000000000, 1),
+            ),  # guidelines v2 -> (410000000000, 499999999999, 1)),
         ],
     )
     def test_extract_numbers(self, test_input, expected):
