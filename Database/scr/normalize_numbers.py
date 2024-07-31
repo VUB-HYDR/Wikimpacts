@@ -17,6 +17,105 @@ class NormalizeNumber:
         self.atof = locale.atof
         self.lang = locale_config.split("_")[0]
 
+        # synonym lists
+        self.approximately = [
+            "approximately",
+            "approx",
+            "nearly",
+            "between",
+            "almost",
+            "roughly",
+            "closely",
+            "about",
+            "in range",
+            "ranging between",
+            "approaching",
+            "roundly",
+            "circa",
+            "ca.",
+            "c.",
+            "cca",
+            "within",
+            "more or less",
+            "within the range of",
+            "in the range of",
+            "close to",
+            "in the vicinity of",
+            "bordering on",
+            "ballpark",
+            "in the neighborhood of",
+            "proximately",
+            "not far from",
+            "within sight of",
+            "bordering on",
+            "near to",
+            "on the edge of",
+            "in the direction of",
+        ]
+
+        self.over = [
+            "over",
+            "upwards of",
+            "approaching",
+            "greater than",
+            "more than",
+            "at least",
+            "above",
+            "a minimum of",
+        ]
+        self.under = [
+            "under",
+            "downwards of",
+            "fewer than",
+            "below",
+            "less than",
+            "at most",
+            "downwards of",
+            "a maximum of",
+        ]
+
+        self.scales = [
+            "hundred",
+            "thousand",
+            "million",
+            "billion",
+            "trillion",
+        ]
+
+        self.exactly = {
+            "exactly",
+            "precisely",
+            "a total of",
+            "only",
+            "no more than",
+            "no less than",
+            "strictly",
+        }
+
+        self.zero_phrases = [
+            "none",
+            "no one",
+            "no known",
+            "zero",
+            "no injuries",
+            "no casualties",
+            "no deaths",
+            "minimal",
+            "no fatalities",
+        ]
+        self.unknown_phrases = [
+            "unknown",
+            "not clear",
+            "unclear",
+            "n/a",
+            "na",
+            "not available",
+            "null",
+            "not known",
+            "does not mention",
+            "not mentioned",
+        ]
+
     def _check_currency(self, currency_text):
         try:
             Currency(currency_text)
@@ -77,35 +176,12 @@ class NormalizeNumber:
 
     def _extract_single_number(self, text: str) -> List[float] | BaseException:
         number = None
-        zero_phrases = [
-            "none",
-            "no one",
-            "no known",
-            "zero",
-            "no injuries",
-            "no casualties",
-            "no deaths",
-            "minimal",
-            "no fatalities",
-        ]
-        unknown_phrases = [
-            "unknown",
-            "not clear",
-            "unclear",
-            "n/a",
-            "na",
-            "not available",
-            "null",
-            "not known",
-            "does not mention",
-            "not mentioned",
-        ]
 
-        for z in zero_phrases:
+        for z in self.zero_phrases:
             if z in text.lower().strip():
                 return [0]
 
-        for u in unknown_phrases:
+        for u in self.unknown_phrases:
             if u in text.lower().strip():
                 return [None]
         try:
@@ -146,16 +222,9 @@ class NormalizeNumber:
                         except:
                             # handle decimals:
                             # if there is a decimal followed by a million/billion, etc
-                            scales = [
-                                "hundred",
-                                "thousand",
-                                "million",
-                                "billion",
-                                "trillion",
-                            ]
                             if len(regex.findall(r"[0-9]+[.]{1}[0-9]+", text)) == 1:
                                 numbers = [token.text for token in self.nlp(text) if token.like_num]
-                                if len(numbers) == 2 and len(set(numbers[1].split(" ")).intersection(scales)) != 0:
+                                if len(numbers) == 2 and len(set(numbers[1].split(" ")).intersection(self.scales)) != 0:
                                     try:
                                         return [
                                             self.atof(numbers[0]) * text2num(numbers[1], lang=self.lang, relaxed=True)
@@ -279,20 +348,17 @@ class NormalizeNumber:
             self.atof(doc.text)
             return 0
         except:
-            # check for common keywords
-            keywords = [
-                "over",
-                "under",
-                "approxinately",
-                "nearly",
-                "fewer than",
-                "greater than",
-                "more than",
-                "less than",
-                "between",
-            ]
-            if any([k.lower() in doc.text for k in keywords]):
+            # check for common keywords that suggest an approximation
+            approx_phrases = []
+            approx_phrases.extend(self.approximately)
+            approx_phrases.extend(self.over)
+            approx_phrases.extend(self.under)
+
+            if any([k in doc.text.lower() for k in approx_phrases]):
                 return 1
+
+            if any([k in doc.text.lower() for k in self.exactly]):
+                return 0
 
             # check for common POS tag combinations (example: "About 200 people" -> "RB CD NNS")
             # check for any math symbols (>=, ~, etc) or if a number ends with a plus/plus-minus sign
@@ -337,6 +403,7 @@ class NormalizeNumber:
                     return None
 
     def _extract_approximate_quantifiers(self, text: str) -> Tuple[float] | None:
+    def _extract_approximate_quantifiers(self, text: str) -> Tuple[float, float] | None:
         one, ten, hun, tho, mil, bil, tri = (
             1,
             10,
@@ -421,7 +488,13 @@ class NormalizeNumber:
             },
         }
 
-        ranges = {"scales": (2, 9), "few": (2, 6), "couple": (2, 3), "dozen": (2, 6), "single_dozen": (1, 1)}
+        ranges = {
+            "scales": (2, 9),
+            "few": (2, 6),
+            "couple": (2, 3),
+            "dozen": (2, 6),
+            "single_dozen": (1, 1),
+        }
 
         def _check(_dict, key, text):
             for phrase, degree in _dict[key].items():
