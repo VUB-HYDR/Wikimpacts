@@ -485,7 +485,7 @@ class NormalizeLocation:
     @staticmethod
     def extract_locations(
         text: str,
-    ) -> tuple[list] | None:
+    ) -> tuple[list[str]]:
         """
         Extracts countries and sublocations from the '|, &' string format
         Example:
@@ -496,7 +496,7 @@ class NormalizeLocation:
         try:
             split_by_pipe = text.split("|")
         except BaseException:
-            return
+            return [], []
         try:
             if split_by_pipe:
                 for s in split_by_pipe:
@@ -507,7 +507,7 @@ class NormalizeLocation:
                     locations.extend([locations_tmp])
             return countries, locations
         except BaseException:
-            return
+            return [], []
 
     def _debug(self, response):
         self.logger.debug(type(response))

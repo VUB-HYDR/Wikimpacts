@@ -1,6 +1,7 @@
 import argparse
 import pathlib
-from scr.normalize_utils import Logging, NormalizeJsonOutput
+
+from Database.scr.normalize_utils import Logging, NormalizeJsonOutput
 
 if __name__ == "__main__":
     logger = Logging.get_logger("merge-mixtral-or-mistral-output")
@@ -34,7 +35,7 @@ if __name__ == "__main__":
     logger.info(args)
 
     logger.info(f"Creating {args.output_dir} if it does not exist!")
-    pathlib.Path(args.output_dir).mkdir(parents=True, exist_ok=True) 
+    pathlib.Path(args.output_dir).mkdir(parents=True, exist_ok=True)
 
     json_utils = NormalizeJsonOutput()
     dfs = json_utils.merge_json(args.input_dir)
