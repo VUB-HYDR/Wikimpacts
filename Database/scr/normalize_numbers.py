@@ -402,7 +402,6 @@ class NormalizeNumber:
                 except:
                     return None
 
-    def _extract_approximate_quantifiers(self, text: str) -> Tuple[float] | None:
     def _extract_approximate_quantifiers(self, text: str) -> Tuple[float, float] | None:
         one, ten, hun, tho, mil, bil, tri = (
             1,
