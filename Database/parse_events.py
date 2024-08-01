@@ -3,10 +3,9 @@ import pathlib
 import re
 
 import pandas as pd
-
-from Database.scr.normalize_locations import NormalizeLocation
-from Database.scr.normalize_numbers import NormalizeNumber
-from Database.scr.normalize_utils import Logging, NormalizeUtils
+from scr.normalize_locations import NormalizeLocation
+from scr.normalize_numbers import NormalizeNumber
+from scr.normalize_utils import Logging, NormalizeUtils
 
 if __name__ == "__main__":
     logger = Logging.get_logger("parse_events")
@@ -95,6 +94,42 @@ if __name__ == "__main__":
     )
 
     df = pd.read_json(f"{args.raw_dir}/{args.filename}")
+
+    # update the columns names from raw output
+    # Function to update keys based on the prefix
+    def update_keys(sub_dict, prefix):
+        if "Annotation" in sub_dict:
+            sub_dict[f"{prefix}_Annotation"] = sub_dict.pop("Annotation")
+        if "Units" in sub_dict:
+            sub_dict[f"{prefix}_Units"] = sub_dict.pop("Units")
+        if "Inflation_Adjusted" in sub_dict:
+            sub_dict[f"{prefix}_Inflation_Adjusted"] = sub_dict.pop("Inflation_Adjusted")
+        if "Inflation_Adjusted_Year" in sub_dict:
+            sub_dict[f"{prefix}_Inflation_Adjusted_Year"] = sub_dict.pop("Inflation_Adjusted_Year")
+
+    # Iterate through each row in the DataFrame
+    for index, row in df.iterrows():
+        for key in list(row.keys()):
+            if key.startswith("Total_Summary_"):
+                sub_dict = row[key]
+                # Identify the specific Total_* key (excluding Total_Summary_)
+                prefix = None
+                for sub_key in sub_dict.keys():
+                    if sub_key.startswith("Total_") and sub_key not in [
+                        "Annotation",
+                        "Units",
+                        "Inflation_Adjusted",
+                        "Inflation_Adjusted_Year",
+                    ]:
+                        prefix = sub_key
+                        break
+
+                if prefix:
+                    update_keys(sub_dict, prefix)
+                    # Update the DataFrame with the modified dictionary
+                    df.at[index, key] = sub_dict
+
+    logger.info("JSON datafile column names updated")
     logger.info("JSON datafile loaded")
 
     # add short uids for each event if missing
@@ -163,10 +198,10 @@ if __name__ == "__main__":
                     .apply(lambda x: (norm_num.extract_numbers(x) if isinstance(x, str) else (None, None, None)))
                     .apply(pd.Series)
                 )
-
-        if "Perils" in events.columns:
-            logger.info("Normalizing Perils to list")
-            events.Perils = events.Perils.apply(lambda x: x.split("|"))
+        # add hazard to parsing
+        if "Hazard" in events.columns:
+            logger.info("Normalizing Hazard to list")
+            events.Hazard = events.Hazard.apply(lambda x: x.split("|") if x is not None else [])
 
         if args.country_column in events.columns:
             logger.info("Ensuring that all country data is of type <list>")
@@ -260,7 +295,7 @@ if __name__ == "__main__":
         logger.info("Converting list columns to strings to store in sqlite3")
 
         col_to_str = [
-            "Perils",
+            "Hazard",
             args.location_column,
             "Location_Norm",
             "Location_Type",
@@ -275,9 +310,30 @@ if __name__ == "__main__":
             "Total_Damage",
             "Total_Damage_Inflation_Adjusted",
             "Total_Damage_Inflation_Adjusted_Year",
+            # Injuries
+            "Total_Injuries",
+            # Buildings_Damage
+            "Total_Buildings",
+            # Affected
+            "Total_Affected",
+            # Homeless
+            "Total_Homeless",
+            "Total_Displace",
+            # Insured Damage
+            "Total_Insured_Damage",
+            "Total_Insured_Damage_Units",
+            "Total_Insured_Damage_Inflation_Adjusted",
+            "Total_Insured_Damage_Inflation_Adjusted_Year",
+            "Main_Event",
+            "Start_Date_Day",
+            "Start_Date_Month",
+            "Start_Date_Year",
+            "End_Date_Day",
+            "End_Date_Month",
+            "End_Date_Year",
         ]
         col_to_str.extend([col for col in events if col.startswith("Specific_")])
-
+        col_to_str.extend([col for col in events if col.endswith("Per_Country")])
         for col in col_to_str:
             if col in events.columns:
                 events[col] = events[col].astype(str)
@@ -294,10 +350,12 @@ if __name__ == "__main__":
     if args.event_type in ["sub", "all"]:
         # clean out NaNs and Nulls
         events = utils.replace_nulls(events)
-
+        # TODO: add *_per_country level parsing and merge them together with specific_*
         # parse subevents
-        specific_summary_cols = [col for col in events if col.startswith("Specific_")]
+        specific_summary_cols = [col for col in events if col.startswith("Specific_") or col.endswith("Per_Country")]
+        # country_summary_cols = [col for col in events if ]
         logger.info(f"Parsing subevents. Columns: {specific_summary_cols}")
+
         specifc_summary_dfs = {}
 
         for col in specific_summary_cols:
@@ -323,7 +381,8 @@ if __name__ == "__main__":
             specific_total_cols = [
                 col
                 for col in sub_event.columns
-                if col.startswith("Num_")
+                # the raw output from sub-event have changed to "Num" for all impact categories
+                if col.startswith("Num")
                 or col.endswith("Damage")
                 and "Date" not in col
                 and args.location_column not in col
@@ -345,8 +404,8 @@ if __name__ == "__main__":
             sub_event = utils.replace_nulls(sub_event)
 
             logger.info(f"Normalizing dates for subevet {col}")
-            start_date_col, end_date_col = [col for col in sub_event.columns if col.startswith("Start_Date_")], [
-                col for col in sub_event.columns if col.startswith("End_Date_")
+            start_date_col, end_date_col = [col for col in sub_event.columns if col.startswith("Start_Date")], [
+                col for col in sub_event.columns if col.startswith("End_Date")
             ]
             assert len(start_date_col) == len(end_date_col), "Check the start and end date columns"
             assert len(start_date_col) <= 1, "Check the start and end date columns, there might be too many"
@@ -375,8 +434,8 @@ if __name__ == "__main__":
                 )
                 sub_event.reset_index(inplace=True, drop=True)
                 sub_event = pd.concat([sub_event, start_date_cols, end_date_cols], axis=1)
-
-            location_col = col.split("Specific_Instance_Per_Country_")[-1]
+            # the row output contains the Location in the sub event, and it's the same name for each impact category
+            # location_col = col.split("Specific_Instance_Per_Country_")[-1]
 
             logger.info(f"Normalizing country names for subevent {col}")
 
@@ -396,75 +455,74 @@ if __name__ == "__main__":
             sub_event.dropna(subset=[f"Location_{location_col}"], how="all", inplace=True)
             """
             logger.info(f"Normalizing location names for subevent {col}")
-            sub_event[
-                [
-                    f"Location_{location_col}_Norm",
-                    f"Location_{location_col}_Type",
-                    f"Location_{location_col}_GeoJson",
-                ]
-                # Sometimes, subevents can have a location and country that are the same
-                # (meaning the sub-event occurred in the same country), so the right params
-                # are passed to the function (it's better to search for locations with the advanced OSM query search)
-            ] = sub_event.apply(
-                lambda row: norm_loc.normalize_locations(
-                    area=row[f"Location_{location_col}"], in_country=row["Country_Norm"]
+            # for the
+            if "Location" in sub_event.columns:
+                # location is processed as string
+                sub_event["Location"] = sub_event["Location"].astype("str")
+                sub_event[
+                    [
+                        f"Location_Norm",
+                        f"Location_Type",
+                        f"Location_GeoJson",
+                    ]
+                    # Sometimes, subevents can have a location and country that are the same
+                    # (meaning the sub-event occurred in the same country), so the right params
+                    # are passed to the function (it's better to search for locations with the advanced OSM query search)
+                ] = sub_event.apply(
+                    lambda row: norm_loc.normalize_locations(area=row[f"Location"], in_country=row["Country_Norm"])
+                    if row[f"Location"] != row["Country_Norm"]
+                    else norm_loc.normalize_locations(area=row["Country_Norm"], is_country=True),
+                    axis=1,
+                ).apply(
+                    pd.Series
                 )
-                if row[f"Location_{location_col}"] != row["Country_Norm"]
-                else norm_loc.normalize_locations(area=row["Country_Norm"], is_country=True),
-                axis=1,
-            ).apply(
-                pd.Series
-            )
-            logger.info(f"Getting GID from GADM for locations in subevent {col}")
-            sub_event[f"Location_{location_col}_GID"] = sub_event.apply(
-                lambda row: (
-                    norm_loc.get_gadm_gid(
-                        area=row[f"Location_{location_col}_Norm"],
-                        country=row["Country_Norm"],
-                    )
-                    if row[f"Location_{location_col}_Norm"]
-                    else None
-                ),
-                axis=1,
-            )
+                logger.info(f"Getting GID from GADM for locations in subevent {col}")
+                sub_event[f"Location_GID"] = sub_event.apply(
+                    lambda row: (
+                        norm_loc.get_gadm_gid(
+                            area=row[f"Location_Norm"],
+                            country=row["Country_Norm"],
+                        )
+                        if row[f"Location_Norm"]
+                        else None
+                    ),
+                    axis=1,
+                )
 
-            def normalize_location_rows_if_country(row):
-                # if location and country are identical in subevents, generalize country normalization
-                if row[f"Location_{location_col}"] == row[args.country_column]:
-                    for i in ["Norm", "Type", "GeoJson", "GID"]:
-                        row[f"Location_{location_col}_{i}"] = row[f"Country_{i}"]
-                    return row
-                else:
-                    return row
+                def normalize_location_rows_if_country(row):
+                    # if location and country are identical in subevents, generalize country normalization
+                    if row[f"Location"] == row[args.country_column]:
+                        for i in ["Norm", "Type", "GeoJson", "GID"]:
+                            row[f"Location_{i}"] = row[f"Country_{i}"]
+                        return row
+                    else:
+                        return row
 
-            logger.info(
-                "Cleaning locations and countries that are identical (a subevent where the smallest location is a country)"
-            )
-            sub_event = sub_event.apply(lambda row: normalize_location_rows_if_country(row), axis=1)
+                logger.info(
+                    "Cleaning locations and countries that are identical (a subevent where the smallest location is a country)"
+                )
+                sub_event = sub_event.apply(lambda row: normalize_location_rows_if_country(row), axis=1)
 
-            sub_event[f"Location_{location_col}_GID"] = sub_event[f"Location_{location_col}_GID"].astype(str)
+                sub_event[f"Location_GID"] = sub_event[f"Location_GID"].astype(str)
+                sub_event[
+                    [
+                        f"Location__Norm",
+                        f"Location__Type",
+                        f"Location_GeoJson",
+                    ]
+                ] = sub_event[
+                    [
+                        f"Location_Norm",
+                        f"Location_Type",
+                        f"Location_GeoJson",
+                    ]
+                ].astype(str)
             sub_event["Country_GID"] = sub_event["Country_GID"].astype(str)
+            # all annotation columns use the same name as "Annotation"
+            if "Annotation" in sub_event.columns:
+                sub_event["Annotation"] = sub_event["Annotation"].astype(str)
 
-            sub_event[
-                [
-                    f"Location_{location_col}_Norm",
-                    f"Location_{location_col}_Type",
-                    f"Location_{location_col}_GeoJson",
-                ]
-            ] = sub_event[
-                [
-                    f"Location_{location_col}_Norm",
-                    f"Location_{location_col}_Type",
-                    f"Location_{location_col}_GeoJson",
-                ]
-            ].astype(
-                str
-            )
-
-            if "Death_with_annotation" in sub_event.columns:
-                sub_event["Death_with_annotation"] = sub_event["Death_with_annotation"].astype(str)
-
-            logger.info(f"Storing parsed results for sunbvent {col}")
+            logger.info(f"Storing parsed results for subevent {col}")
 
             for c in sub_event.columns:
                 sub_event[c] = sub_event[c].astype(str)
