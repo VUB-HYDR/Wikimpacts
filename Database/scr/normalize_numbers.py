@@ -507,10 +507,10 @@ class NormalizeNumber:
 
         check_last = {
             "few": {
-                # keep last!
                 "a few": one,
                 "several": one,
             },
+            "many": {"many": one},
             "couple": {
                 "a couple": one,
             },
@@ -525,6 +525,7 @@ class NormalizeNumber:
             "couple": (2, 3),
             "dozen": (2, 6),
             "single_dozen": (1, 1),
+            "many": (20, 60),
         }
 
         def _check(_dict, key, text):

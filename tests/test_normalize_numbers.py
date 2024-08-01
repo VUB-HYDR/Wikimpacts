@@ -189,6 +189,7 @@ class TestNormalizeNumbers:
             ("there were several thousand reported injuries", (2000, 6000)),
             ("a dozen deaths were reported", (12, 12)),
             ("dozens of hundreds of homes were completely destroyed", (2 * 12 * 100, 6 * 12 * 100)),
+            ("many were killed!", (20, 60))
         ],
     )
     def test__extract_approximate_quantifiers(self, test_input, expected):
