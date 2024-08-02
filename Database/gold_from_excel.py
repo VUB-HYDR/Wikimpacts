@@ -4,7 +4,8 @@ import re
 
 import pandas as pd
 
-from Database.scr.normalize_utils import Logging
+# delete Database.
+from scr.normalize_utils import Logging
 
 pd.set_option("display.max_rows", None)
 pd.set_option("display.max_columns", None)
@@ -32,8 +33,8 @@ specific_impacts_columns = {
         "Displaced_Max",
     ],
     "Homeless": [
-        "Homeless_Min",
-        "Homeless_Max",
+        "Homelessness_Min",
+        "Homelessness_Max",
     ],
     "Buildings_Damaged": [
         "Buildings_Damaged_Min",
@@ -120,9 +121,10 @@ for i in ["Insured_Damage", "Damage"]:
 convert_to_float = ["Event_ID_decimal"]
 
 
+# change the excel input to csv format
 def flatten_data_table():
-    logger.info("Loading excel file...")
-    data_table = pd.read_excel(args.input_file, sheet_name=args.sheet_name, engine="openpyxl", na_filter=False)
+    logger.info("Loading csv file...")
+    data_table = pd.read_csv(args.input_file, encoding="ISO-8859-1", delimiter=";", na_filter=False)
     logger.info(f"Shape: {data_table.shape}")
 
     logger.info("Dropping blank cells...")
@@ -249,10 +251,10 @@ if __name__ == "__main__":
         "-i",
         "--input-file",
         dest="input_file",
-        help="The path to the excel file",
+        help="The path to the csv file",
         type=str,
     )
-
+    """
     parser.add_argument(
         "-s",
         "--sheet-name",
@@ -260,6 +262,7 @@ if __name__ == "__main__":
         help="The name of the target sheet in the excel file",
         type=str,
     )
+    """
 
     parser.add_argument(
         "-o",
