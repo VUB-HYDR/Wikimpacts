@@ -445,6 +445,11 @@ class NormalizeNumber:
             1000000000000,
         )
         phrases = {
+            "single": {
+                "a single": one,
+                "only one": one,
+                "no more than one": one,
+            },
             "scales": {
                 "tens of": ten,
                 "hundreds": hun,
@@ -462,23 +467,23 @@ class NormalizeNumber:
                 "hundreds of tillions": hun * tri,
             },
             "few": {
-                "a few dozen": one * 12,
-                "a group of": one,
-                "a number of": one,
-                "a few hundred": hun,
+                "few dozen": one * 12,
+                "group of": one,
+                "number of": one,
+                "few hundred": hun,
                 "several hundred": hun,
-                "a few thousand": tho,
+                "few thousand": tho,
                 "several thousand": tho,
-                "a few million": mil,
+                "few million": mil,
                 "several million": mil,
-                "a few billion": bil,
+                "few billion": bil,
                 "several billion": bil,
             },
             "single_dozen": {
-                "a dozen hundred": hun * 12,
-                "a dozen thousand": tho * 12,
-                "a dozen million": mil * 12,
-                "a dozen billion": bil * 12,
+                "dozen hundred": hun * 12,
+                "dozen thousand": tho * 12,
+                "dozen million": mil * 12,
+                "dozen billion": bil * 12,
             },
         }
 
@@ -503,6 +508,9 @@ class NormalizeNumber:
                 "dozens of million": mil * 12,
                 "dozens of billion": bil * 12,
             },
+            "many": {
+                "large group of": ten,
+            },
         }
 
         check_last = {
@@ -510,7 +518,9 @@ class NormalizeNumber:
                 "a few": one,
                 "several": one,
             },
-            "many": {"many": one},
+            "many": {
+                "many": one,
+            },
             "couple": {
                 "a couple": one,
             },
@@ -521,6 +531,7 @@ class NormalizeNumber:
 
         ranges = {
             "scales": (2, 9),
+            "single": (1, 1),
             "few": (2, 6),
             "couple": (2, 3),
             "dozen": (2, 6),
@@ -531,26 +542,15 @@ class NormalizeNumber:
         def _check(_dict, key, text):
             for phrase, degree in _dict[key].items():
                 lower_range, upper_range = ranges[key]
+                lower_mod, upper_mod = (3, 5) if any([x in text.lower() for x in self.family_synonyms]) else (1, 1)
                 if phrase in text.lower():
-                    return (degree * lower_range, degree * upper_range)
+                    return (degree * lower_range * lower_mod, degree * upper_range * upper_mod)
 
-        # check these first to avoid rule conflics
-        for k in check_first.keys():
-            output = _check(check_first, k, text)
-            if output:
-                return output
-
-        for k in phrases.keys():
-            output = _check(phrases, k, text)
-            if output:
-                return output
-
-        # do a last sweep
-        for k in check_last.keys():
-            output = _check(check_last, k, text)
-            if output:
-                return output
-
+        for check_dict in (check_first, phrases, check_last):  # PLEASE MAINTAIN THE ORDER OF THESE LISTS!
+            for k in check_dict.keys():
+                output = _check(check_dict, k, text)
+                if output:
+                    return output
         return None
 
     def extract_numbers(
