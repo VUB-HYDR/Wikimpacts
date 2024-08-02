@@ -416,7 +416,7 @@ class NormalizeNumber:
 
             return 0
 
-    def _extract_range(self, text: str) -> Tuple[float]:
+    def _extract_simple_range(self, text: str) -> Tuple[float]:
         try:
             nums = text.split("-")
             if len(nums) == 2:
@@ -570,7 +570,7 @@ class NormalizeNumber:
             numbers = self._extract_single_number(text)
         except BaseException:
             try:
-                numbers = self._extract_range(text)
+                numbers = self._extract_simple_range(text)
                 assert numbers, BaseException
             except BaseException:
                 try:

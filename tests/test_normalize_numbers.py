@@ -141,9 +141,9 @@ class TestNormalizeNumbers:
             ("twelve and one hundred", None),
         ],
     )
-    def test__extract_range(self, test_input, expected):
+    def test__extract_simple_range(self, test_input, expected):
         _, norm = refresh_fixture()
-        assert norm._extract_range(test_input) == expected
+        assert norm._extract_simple_range(test_input) == expected
 
     @pytest.mark.parametrize(
         "test_input, expected",
