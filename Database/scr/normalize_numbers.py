@@ -21,13 +21,22 @@ class NormalizeNumber:
         self.approximately = [
             "about",
             "almost",
+            "around",
+            "approach",
+            "approached",
+            "approaches",
             "approaching",
             "approx",
-            "approximately",
             "as good as",
+            "as many as",
+            "as little as",
+            "as much as",
+            "as few as",
             "ballpark",
             "between",
             "bordering on",
+            "bordered on",
+            "borders on",
             "give or take",
             "c.",
             "ca.",
@@ -65,25 +74,56 @@ class NormalizeNumber:
             "virtually",
         ]
 
+        self.family_synonyms = ["family", "families", "household"]
+
         self.over = [
-            "a minimum of",
+            "a min of",
             "above",
             "approaching",
-            "at least",
+            "approaches",
+            "approched",
+            "approach",
             "greater than",
             "more than",
             "over",
             "upwards of",
+            "exceed",
+            "exceeds",
+            "exceeded",
+            "exceeding,",
+        ]
+
+        self.over_inclusive = [
+            "at least",
+            "no less than",
+            "not less than",
+            "a minimum of",
+        ]
+
+        self.under_inclusive = [
+            "at most",
+            "no more than",
+            "not more than",
+            "up to",
         ]
 
         self.under = [
             "a maximum of",
+            "a max of",
             "at most",
             "below",
             "downwards of",
             "fewer than",
             "less than",
             "under",
+            "no more than",
+            "not more than",
+        ]
+
+        self.between = [
+            "ranging between",
+            "between",
+            "spanning from",
         ]
 
         self.scales = [
@@ -144,7 +184,7 @@ class NormalizeNumber:
             "unknown",
             "unpredicted",
             "unsettled",
-            "unspecified"
+            "unspecified",
             # "null", ##???
         ]
 
