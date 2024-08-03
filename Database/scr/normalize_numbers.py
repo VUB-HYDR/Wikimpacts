@@ -1,4 +1,4 @@
-from math import isnan
+from math import floor, isnan
 from typing import Dict, List, Tuple, Union
 
 import regex
@@ -38,8 +38,8 @@ class NormalizeNumber:
             "bordered on",
             "borders on",
             "give or take",
-            "c.",
-            "ca.",
+            "c\.",
+            "ca\.",
             "cca",
             "circa",
             "close to",
@@ -62,7 +62,7 @@ class NormalizeNumber:
             "on the edge of",
             "proximately",
             "practically",
-            "ranging between",
+            # "ranging between",
             "roughly",
             "roundly",
             "speculated",
@@ -77,12 +77,7 @@ class NormalizeNumber:
         self.family_synonyms = ["family", "families", "household"]
 
         self.over = [
-            "a min of",
             "above",
-            "approaching",
-            "approaches",
-            "approched",
-            "approach",
             "greater than",
             "more than",
             "over",
@@ -93,35 +88,40 @@ class NormalizeNumber:
             "exceeding,",
         ]
 
-        self.over_inclusive = [
+        self.over_inclusive = [  # first
             "at least",
             "no less than",
             "not less than",
             "a minimum of",
+            "a min of",
         ]
 
         self.under_inclusive = [
-            "at most",
-            "no more than",
-            "not more than",
             "up to",
+            "at most",
+            "not more than",
+            "a maximum of",
+            "a max of",
+            "no more than",
         ]
 
         self.under = [
-            "a maximum of",
-            "a max of",
-            "at most",
             "below",
             "downwards of",
             "fewer than",
-            "less than",
             "under",
-            "no more than",
-            "not more than",
+            "less than",
+            "approaching",
+            "approaches",
+            "approched",
+            "approach",
+            "under",
         ]
 
         self.between = [
             "ranging between",
+            # "from", reconsider
+            # "to",
             "between",
             "spanning from",
         ]
@@ -139,8 +139,7 @@ class NormalizeNumber:
             "precisely",
             "a total of",
             "only",
-            "no more than",
-            "no less than",
+            # "no less than",
             "strictly",
         }
 
@@ -185,7 +184,6 @@ class NormalizeNumber:
             "unpredicted",
             "unsettled",
             "unspecified",
-            # "null", ##???
         ]
 
     def _check_currency(self, currency_text):
@@ -473,6 +471,80 @@ class NormalizeNumber:
                     return (self.atof(nums[0].strip()), self.atof(nums[1].strip()))
                 except:
                     return None
+
+    def _extract_complex_range(self, text: str) -> Tuple[float, float] | None:
+        phrases = {
+            "approx": {"list": sorted(self.approximately, reverse=True)},
+            "over_inclusive": {"list": sorted(self.over_inclusive, reverse=True)},
+            "under_inclusive": {"list": sorted(self.under_inclusive, reverse=True)},
+            "over": {"list": sorted(self.over, reverse=True)},
+            "under": {"list": sorted(self.under, reverse=True)},
+        }
+
+        for k, v in phrases.items():
+            # if k in ("approx", "over", "over_inclusive", "under"):
+            expression = "(\s*\d+\s+)*({phrases})[:,;]*\s(\d+\S*)*\s*({scales})*"
+            # elif k in ("family"):
+            #    expression = "(\s*\d+\s+)*({phrases})*"
+
+            expression = expression.format(phrases="|".join(v["list"]), scales="|".join(self.scales))
+            matches = regex.findall(expression, text, flags=regex.IGNORECASE | regex.MULTILINE)
+
+            for i in range(len(matches)):
+                matches[i] = [x.strip() for x in matches[i] if x != ""]
+            matches = [x for x in matches if x]
+
+            phrases[k]["matches"] = matches
+
+        for k, v in phrases.items():
+            if v["matches"]:
+                if len(v["matches"]) == 1:
+                    digits = [float(x.replace(",", "")) for x in v["matches"][0] if x.replace(",", "").isdigit()]
+
+                    if any([x in self.scales for x in v["matches"][0]]):
+                        try:
+                            num = self._extract_single_number(" ".join(v["matches"][0]))[0]
+                        except BaseException as err:
+                            self.logger.error(f"Could not infer number from {text}. Error: {err}")
+                            return
+                    else:
+                        num = digits[0]
+
+                    # self.scales
+                    lower_mod, upper_mod = (
+                        (3, 5)
+                        if any([x in [y.lower() for y in text.split()] for x in self.family_synonyms])
+                        else (1, 1)
+                    )
+                    if len(digits) == 1:
+                        scale = pow(10, len(str(int(num))) - 1)
+                        multip = int(str(int(num))[0])
+                        if k == "approx":
+                            return (
+                                floor(num * 0.95) * lower_mod,
+                                floor(num * 1.05) * upper_mod,
+                            )
+                        if "over" in k:
+                            inc = 0 if "inclusive" in k else 1
+                            return (
+                                (num + inc) * lower_mod,
+                                ((scale * (multip + 1)) - 1) * upper_mod,
+                                #   (num + inc) * lower_mod,
+                                #    ((scale * (multip + 1)) - 1) * upper_mod,
+                            )
+                        if "under" in k:
+                            inc = 0 if "inclusive" in k else 1
+                            if (num - (scale * multip)) / num > 0.08:
+                                _min, _max = (
+                                    ((scale * multip) + 1) * upper_mod,
+                                    (num - inc) * lower_mod,
+                                )
+                            else:
+                                _min, _max = (
+                                    ((scale * (multip - 1)) + 1) * upper_mod,
+                                    (num - inc) * lower_mod,
+                                )
+                            return (_min, _max)
 
     def _extract_approximate_quantifiers(self, text: str) -> Tuple[float, float] | None:
         one, ten, hun, tho, mil, bil, tri = (
