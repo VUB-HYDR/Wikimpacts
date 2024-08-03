@@ -149,26 +149,24 @@ class TestNormalizeNumbers:
         "test_input, expected",
         [
             # ("23mil dollars", (23000000, 23000000, 0)), # fails!
-            ("23mil", (23000000, 23000000, 0)),  # fails!
-            ("110 - 352", (110, 352, 0)),
+            ("23mil", (23000000, 23000000, 0)),
+            ("110 - 352", (110, 352, 1)),
             ("between 11 and 17 people were affected", (11, 17, 1)),
-            ("Nearly 300 homes were destroyed", (300, 300, 1)),
-            ("Nearly 300 homes were destroyed", (300, 300, 1)),
+            ("Nearly 300 homes were destroyed", (285, 315, 1)),
             ("$3.6 million", (3600000, 3600000, 0)),
             ("$35.63 million", (35630000, 35630000, 0)),
             ("$3.6 million", (3600000, 3600000, 0)),
-            ("Damage: At least $129 million", (129000000, 129000000, 1)),
-            ("At least 73", (73, 73, 1)),  # guidelines v2 -> (73, 79, 1)
+            ("Damage: At least $129 million", (129000000, 199999999, 1)),
+            ("At least 73", (73, 79, 1)),
             ("925000000", (925000000, 925000000, 0)),
             (925000000, (925000000, 925000000, 0)),
             (23.4, (23.4, 23.4, 0)),
-            # fails!
-            ("Greater than 7010 were killed", (7010, 7010, 1)),  # guidelines v2 -> (7010, 7999, 1)),
-            ("Less than 400", (400, 400, 1)),  # guidelines v2 ->  (300, 399, 1)
+            ("More than 7010 were killed", (7011, 7999, 1)),
+            ("Less than 400", (301, 399, 1)),
             (
                 "a minimum of 410 billion",
-                (410000000000, 410000000000, 1),
-            ),  # guidelines v2 -> (410000000000, 499999999999, 1)),
+                (410000000000, 499999999999, 1),
+            ),
         ],
     )
     def test_extract_numbers(self, test_input, expected):
