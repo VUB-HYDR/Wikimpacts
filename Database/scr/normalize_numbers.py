@@ -584,9 +584,16 @@ class NormalizeNumber:
                 lower_range, upper_range = ranges[key]
                 lower_mod, upper_mod = (3, 5) if any([x in text.lower() for x in self.family_synonyms]) else (1, 1)
                 if phrase in text.lower():
-                    return (degree * lower_range * lower_mod, degree * upper_range * upper_mod)
+                    return (
+                        degree * lower_range * lower_mod,
+                        degree * upper_range * upper_mod,
+                    )
 
-        for check_dict in (check_first, phrases, check_last):  # PLEASE MAINTAIN THE ORDER OF THESE LISTS!
+        for check_dict in (
+            check_first,
+            phrases,
+            check_last,
+        ):  # PLEASE MAINTAIN THE ORDER OF THESE LISTS!
             for k in check_dict.keys():
                 output = _check(check_dict, k, text)
                 if output:
