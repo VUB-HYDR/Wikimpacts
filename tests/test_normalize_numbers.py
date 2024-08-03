@@ -199,3 +199,32 @@ class TestNormalizeNumbers:
     def test__extract_approximate_quantifiers(self, test_input, expected):
         _, norm = refresh_fixture()
         assert norm._extract_approximate_quantifiers(test_input) == expected
+
+    @pytest.mark.parametrize(
+        "test_input, expected",
+        [
+            # approx
+            ("Almost 30", (28, 31)),  # rounded down! (floor(30*0.95), floor(30*1.05))
+            ("approximately 7000000000 dollars", (6650000000, 7350000000)),
+            ("Around 7000 homes were destroyed", (6650, 7350)),
+            ("roughly, 4 injuries had been reported", (3, 4)),  # rounded down! (floor(4*0.95), floor(4*1.05))
+            # over
+            ("Greater than 300", (301, 399)),
+            ("The number of deaths certainly exceeded 66", (67, 69)),
+            ("more than 6 families were displaced", ((6 + 1) * 3, 6 * 5)),
+            ("at least 3600 were reported missing", (3600, 3999)),
+            ("no less than 55 injuries were reported in the media", (55, 59)),
+            # under
+            ("less than 230000000 dollars were paid out in insurance costs", (200000001, 229999999)),
+            ("No more than 23 million dollars", (20000001, 23000000)),
+            ("Up to 7 billion dollars", (6000000001, 7000000000)),
+            ("at most 3284 casualties were reported", (3001, 3284)),
+            ("Up to 7000000 dollars", (6000001, 7000000)),
+            ("Up to 7,000,000 dollars", (6000001, 7000000)),
+            # cases this function does not handle; meant to raise BaseException
+            ("six families were displaced", None),
+        ],
+    )
+    def test__extract_complex_range(self, test_input, expected):
+        _, norm = refresh_fixture()
+        assert norm._extract_complex_range(test_input) == expected
