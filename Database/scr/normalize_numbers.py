@@ -33,7 +33,6 @@ class NormalizeNumber:
             "as much as",
             "as few as",
             "ballpark",
-            "between",
             "bordering on",
             "bordered on",
             "borders on",
@@ -685,34 +684,41 @@ class NormalizeNumber:
         approx = self._check_for_approximation(doc, labels)
 
         try:
-            # simplest approach, attempt to extract a single number
-            numbers = self._extract_single_number(text)
+            numbers = self._extract_simple_range(text)
+            assert numbers, BaseException
+            approx = 1
         except BaseException:
             try:
-                numbers = self._extract_simple_range(text)
+                numbers = self._extract_complex_range(text)
                 assert numbers, BaseException
+                approx = 1
             except BaseException:
                 try:
-                    numbers = self._extract_approximate_quantifiers(text)
-                    if numbers:
-                        approx = 1
-                    else:
-                        raise BaseException
-                except BaseException:
+                    numbers = self._extract_single_number(text)
+                    assert numbers, BaseException
+                except:
                     try:
-                        # try extraction by spaCy NERs
-                        numbers = self.extract_numbers_from_entities(doc, labels)
+                        numbers = self._extract_approximate_quantifiers(text)
+                        assert numbers, BaseException
+                        approx = 1
                     except BaseException:
                         try:
-                            # if no NERs were extacted or no NERs were useful, try extracting by token instead
-                            numbers = self._extract_numbers_from_tokens(doc)
+                            # try extraction by spaCy NERs
+                            numbers = self.extract_numbers_from_entities(doc, labels)
+                            assert numbers, BaseException
                         except BaseException:
                             try:
-                                # if all fails, try by normalizing the numbers to words
-                                doc = self.nlp(self._normalize_num(doc), to_words=True)
-                                numbers = self.extract_numbers_from_entities(doc, labels)
+                                # if no NERs were extacted or no NERs were useful, try extracting by token instead
+                                numbers = self._extract_numbers_from_tokens(doc)
+                                assert numbers, BaseException
+                                approx = 1 if len(numbers) == 2 else approx
                             except BaseException:
-                                return (None, None, None)
+                                try:
+                                    # if all fails, try by normalizing the numbers to words
+                                    doc = self.nlp(self._normalize_num(doc), to_words=True)
+                                    numbers = self.extract_numbers_from_entities(doc, labels)
+                                except BaseException:
+                                    return (None, None, None)
 
         if numbers:
             numbers = sorted(numbers)
