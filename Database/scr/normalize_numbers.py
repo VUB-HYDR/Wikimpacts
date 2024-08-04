@@ -481,11 +481,7 @@ class NormalizeNumber:
         }
 
         for k, v in phrases.items():
-            # if k in ("approx", "over", "over_inclusive", "under"):
             expression = "(\s*\d+\s+)*({phrases})[:,;]*\s(\d+\S*)*\s*({scales})*"
-            # elif k in ("family"):
-            #    expression = "(\s*\d+\s+)*({phrases})*"
-
             expression = expression.format(phrases="|".join(v["list"]), scales="|".join(self.scales))
             matches = regex.findall(expression, text, flags=regex.IGNORECASE | regex.MULTILINE)
 
@@ -528,8 +524,6 @@ class NormalizeNumber:
                             return (
                                 (num + inc) * lower_mod,
                                 ((scale * (multip + 1)) - 1) * upper_mod,
-                                #   (num + inc) * lower_mod,
-                                #    ((scale * (multip + 1)) - 1) * upper_mod,
                             )
                         if "under" in k:
                             inc = 0 if "inclusive" in k else 1
