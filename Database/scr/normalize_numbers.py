@@ -19,6 +19,7 @@ class NormalizeNumber:
 
         # synonym lists
         self.approximately = [
+            "\~",
             "about",
             "almost",
             "around",
@@ -26,6 +27,8 @@ class NormalizeNumber:
             "approached",
             "approaches",
             "approaching",
+            "approx.",
+            "approximately",
             "approx",
             "as good as",
             "as many as",
@@ -61,7 +64,6 @@ class NormalizeNumber:
             "on the edge of",
             "proximately",
             "practically",
-            # "ranging between",
             "roughly",
             "roundly",
             "speculated",
@@ -76,6 +78,7 @@ class NormalizeNumber:
         self.family_synonyms = ["family", "families", "household"]
 
         self.over = [
+            "\>",
             "above",
             "greater than",
             "more than",
@@ -88,20 +91,31 @@ class NormalizeNumber:
         ]
 
         self.over_inclusive = [  # first
+            "\+",
+            "\>\=",
+            "or more",
             "at least",
             "no less than",
             "not less than",
             "a minimum of",
             "a min of",
+            "\≥",
+            "greater than or equal to",
+            "more than or equal to",
         ]
 
         self.under_inclusive = [
             "up to",
             "at most",
+            "or less",
             "not more than",
             "a maximum of",
             "a max of",
             "no more than",
+            "less than or equal to",
+            "fewer than or equal to",
+            "\≤",
+            "\<\=",
         ]
 
         self.under = [
@@ -115,8 +129,9 @@ class NormalizeNumber:
             "approched",
             "approach",
             "under",
+            "\<",
         ]
-
+        # TODO: implement this
         self.between = [
             "ranging between",
             # "from", reconsider
@@ -341,7 +356,7 @@ class NormalizeNumber:
         new = ""
         for token in doc:
             # some times wrong tags are assigned, so we need to check both the tags and if the token is a number by regex
-            if (token.tag_ in ["CD", "SYM"] and token.text not in ["<", ">", "<=", ">="]) or (
+            if (token.tag_ in ["CD", "SYM"] and token.text not in ["<", ">", "<=", ">=", "≥", "≤", "+"]) or (
                 regex.match(r"\b(?<!\.)\d+(?:,\d+)*(?:\.\d+)?\b", token.text)
             ):
                 try:
@@ -481,7 +496,7 @@ class NormalizeNumber:
         }
 
         for k, v in phrases.items():
-            expression = "(\s*\d+\s+)*({phrases})[:,;]*\s(\d+\S*)*\s*({scales})*"
+            expression = "(\d*)(\s*\d+\s+)*({phrases})[:,;]*\s*(\d+\S*)*\s*({scales})*"
             expression = expression.format(phrases="|".join(v["list"]), scales="|".join(self.scales))
             matches = regex.findall(expression, text, flags=regex.IGNORECASE | regex.MULTILINE)
 
@@ -495,7 +510,6 @@ class NormalizeNumber:
             if v["matches"]:
                 if len(v["matches"]) == 1:
                     digits = [float(x.replace(",", "")) for x in v["matches"][0] if x.replace(",", "").isdigit()]
-
                     if any([x in self.scales for x in v["matches"][0]]):
                         try:
                             num = self._extract_single_number(" ".join(v["matches"][0]))[0]
@@ -503,8 +517,10 @@ class NormalizeNumber:
                             self.logger.error(f"Could not infer number from {text}. Error: {err}")
                             return
                     else:
-                        num = digits[0]
-
+                        if len(digits) == 1:
+                            num = digits[0]
+                        else:
+                            return
                     # self.scales
                     lower_mod, upper_mod = (
                         (3, 5)
@@ -523,18 +539,20 @@ class NormalizeNumber:
                             inc = 0 if "inclusive" in k else 1
                             return (
                                 (num + inc) * lower_mod,
-                                ((scale * (multip + 1)) - 1) * upper_mod,
+                                num + 5
+                                if (scale == 1 and upper_mod == 1)
+                                else ((scale * (multip + 1)) - 1) * upper_mod,
                             )
                         if "under" in k:
                             inc = 0 if "inclusive" in k else 1
                             if (num - (scale * multip)) / num > 0.08:
                                 _min, _max = (
-                                    ((scale * multip) + 1) * upper_mod,
+                                    0 if (scale == 1 and multip == 1) else ((scale * multip) + 1) * upper_mod,
                                     (num - inc) * lower_mod,
                                 )
                             else:
                                 _min, _max = (
-                                    ((scale * (multip - 1)) + 1) * upper_mod,
+                                    0 if (scale == 1 and multip == 1) else ((scale * (multip - 1)) + 1) * upper_mod,
                                     (num - inc) * lower_mod,
                                 )
                             return (_min, _max)
