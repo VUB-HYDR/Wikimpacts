@@ -1,4 +1,5 @@
-from Evaluation.normaliser import Normaliser
+# delete evaluation
+from normaliser import Normaliser
 
 
 class Comparer:
@@ -63,11 +64,13 @@ class Comparer:
         """Compare all fields."""
         score = {}
         # Strings
-        for k in self.target_col(["Main_Event", "Event_ID", "Event_Name", "Total_Damage_Units"]):
+        for k in self.target_col(
+            ["Main_Event", "Event_ID", "Event_Name", "Total_Damage_Units", "Total_Insured_Damage_Units"]
+        ):
             score[k] = self.string(v[k], w[k])
 
         # Sequences
-        for k in self.target_col(["Country_Norm"]):
+        for k in self.target_col(["Country_Norm", "Location_Norm", "Hazard"]):
             score[k] = self.sequence(v[k], w[k])
 
         # Dates
@@ -77,16 +80,17 @@ class Comparer:
         # Integers
         for k in self.target_col(
             [
+                # death
                 "Total_Deaths_Min",
                 "Total_Deaths_Max",
+                # time
                 "Start_Date_Day",
                 "Start_Date_Month",
                 "Start_Date_Year",
                 "End_Date_Day",
                 "End_Date_Month",
                 "End_Date_Year",
-                "Total_Damage_Min",
-                "Total_Damage_Max",
+                # homeless
                 "Total_Homeless_Min",
                 "Total_Homeless_Max",
                 # Injuries
@@ -98,15 +102,13 @@ class Comparer:
                 # Affected
                 "Total_Affected_Min",
                 "Total_Affected_Max",
-                # Homeless
-                "Total_Damage_Units",
-                "Total_Damage_Inflation_Adjusted",
+                # total damage
+                "Total_Damage_Min",
+                "Total_Damage_Max",
                 "Total_Damage_Inflation_Adjusted_Year",
                 # Insured Damage
                 "Total_Insured_Damage_Min",
                 "Total_Insured_Damage_Max",
-                "Total_Insured_Damage_Units",
-                "Total_Insured_Damage_Inflation_Adjusted",
                 "Total_Insured_Damage_Inflation_Adjusted_Year",
                 # Displace
                 "Total_Displace_Min",
@@ -116,7 +118,7 @@ class Comparer:
             score[k] = self.integer(v[k], w[k])
 
         # Booleans
-        for k in self.target_col([]):
+        for k in self.target_col(["Total_Insured_Damage_Inflation_Adjusted", "Total_Damage_Inflation_Adjusted"]):
             score[k] = self.boolean(v[k], w[k])
 
         # Return score dictionary after ordering by target columns order

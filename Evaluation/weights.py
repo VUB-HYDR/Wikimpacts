@@ -71,6 +71,7 @@ weights = {
         "Event_ID": 1,
         "Main_Event": 1,
         "Event_Name": 0,
+        "Hazard": 1,
         # Deaths
         "Total_Deaths_Min": 1,
         "Total_Deaths_Max": 1,

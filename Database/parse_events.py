@@ -345,6 +345,25 @@ if __name__ == "__main__":
 
         logger.info(f"Storing parsed results")
         events_filename = f"{args.output_dir}/{args.filename.split('.json')[0]}"
+        # Map the old columns to the new columns
+        new_columns_mapping_sys = {
+            "Total_Deaths_Min": "Total_Death_Min",
+            "Total_Deaths_Max": "Total_Death_Max",
+            "Total_Injuries_Min": "Total_Injury_Min",
+            "Total_Injuries_Max": "Total_Injury_Max",
+            "Total_Buildings_Min": "Total_Building_Damage_Min",
+            "Total_Buildings_Max": "Total_Building_Damage_Max",
+            "Total_Damage_Min": "Total_Economic_Damage_Min",
+            "Total_Damage_Max": "Total_Economic_Damage_Max",
+            "Total_Damage_Units": "Total_Economic_Damage_Units",
+            "Total_Damage_Inflation_Adjusted": "Total_Economic_Damage_Inflation_Adjusted",
+            "Total_Damage_Inflation_Adjusted_Year": "Total_Economic_Damage_Inflation_Adjusted_Year",
+        }
+
+        # Add new columns and assign values from existing columns
+        for new_col, old_col in new_columns_mapping_sys.items():
+            events[new_col] = events[old_col]
+
         events.to_parquet(f"{events_filename}.parquet", engine="fastparquet")
 
     if args.event_type in ["sub", "all"]:

@@ -65,9 +65,7 @@ shared_cols = [
     "Event_Name",
 ]
 
-location_cols = [
-    "Location",
-]
+location_cols = ["Location", "Country_Norm (Last update: 15th of May, 2024)"]
 
 date_cols = [
     "Start_Date_Month",
@@ -104,10 +102,7 @@ for i in ["Insured_Damage", "Damage"]:
 # get "list" type columns with pipe separator
 split_by_pipe = flatten(
     [
-        [
-            "Event_Name",
-            "Source",
-        ],
+        ["Event_Name", "Source", "Hazard"],
         specific_impacts_columns["Insured_Damage"],
         specific_impacts_columns["Damage"],
     ]
@@ -124,7 +119,7 @@ convert_to_float = ["Event_ID_decimal"]
 # change the excel input to csv format
 def flatten_data_table():
     logger.info("Loading csv file...")
-    data_table = pd.read_csv(args.input_file, encoding="ISO-8859-1", delimiter=";", na_filter=False)
+    data_table = pd.read_csv(args.input_file, encoding="ISO-8859-1", na_filter=False)
     logger.info(f"Shape: {data_table.shape}")
 
     logger.info("Dropping blank cells...")
@@ -207,6 +202,35 @@ def flatten_data_table():
 
     logger.info("Storing Main Events table")
     Events = data_table[data_table["main"] == True][target_columns]
+    # change the column name of main gold data for evaluation
+    # Map the old columns to the new columns with default values
+    new_columns_mapping_gold = {
+        "Total_Deaths_Min": "Deaths_Min",
+        "Total_Deaths_Max": "Deaths_Max",
+        "Total_Injuries_Max": "Injured_Max",
+        "Total_Injuries_Min": "Injured_Min",
+        "Total_Displace_Min": "Displaced_Min",
+        "Total_Displace_Max": "Displaced_Max",
+        "Total_Affected_Min": "Affected_Min",
+        "Total_Affected_Max": "Affected_Max",
+        "Total_Homeless_Min": "Homelessness_Min",
+        "Total_Homeless_Max": "Homelessness_Max",
+        "Total_Buildings_Min": "Buildings_Damaged_Min",
+        "Total_Buildings_Max": "Buildings_Damaged_Max",
+        "Total_Damage_Min": "Damage_Min",
+        "Total_Damage_Max": "Damage_Max",
+        "Total_Damage_Units": "Damage_Units",
+        "Total_Damage_Inflation_Adjusted": "Damage_Inflation_Adjusted",
+        "Total_Damage_Inflation_Adjusted_Year": "Damage_Inflation_Adjusted_Year",
+        "Country_Norm": "Country_Norm (Last update: 15th of May, 2024)",
+        "Total_Insured_Damage_Min": "Insured_Damage_Min",
+        "Total_Insured_Damage_Max": "Insured_Damage_Max",
+        "Total_Insured_Damage_Units": "Insured_Damage_Unit",
+        "Total_Insured_Damage_Inflation_Adjusted": "Insured_Damage_Inflation_Adjusted",
+        "Total_Insured_Damage_Inflation_Adjusted_Year": "Insured_Damage_Inflation_Adjusted_Year",
+    }
+    for new_col, old_col in new_columns_mapping_gold.items():
+        Events[new_col] = Events[old_col]
     Events.to_parquet(
         f"{args.output_dir}/Events.parquet",
         engine="fastparquet",

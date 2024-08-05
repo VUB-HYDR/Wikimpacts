@@ -7,10 +7,11 @@ from pprint import pformat, pprint
 import numpy as np
 import pandas as pd
 
-from Evaluation.comparer import Comparer
-from Evaluation.matcher import SpecificInstanceMatcher
-from Evaluation.utils import Logging
-from Evaluation.weights import weights as weights_dict
+# delete Evaluation
+from comparer import Comparer
+from matcher import SpecificInstanceMatcher
+from utils import Logging
+from weights import weights as weights_dict
 
 if __name__ == "__main__":
     logger = Logging.get_logger("evaluator")

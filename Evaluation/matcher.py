@@ -1,7 +1,8 @@
 from statistics import mean
 
-from Evaluation.comparer import Comparer
-from Evaluation.utils import Logging
+# delete Evaluation
+from comparer import Comparer
+from utils import Logging
 
 
 class SpecificInstanceMatcher:
