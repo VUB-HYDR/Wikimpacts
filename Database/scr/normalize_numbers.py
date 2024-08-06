@@ -7,6 +7,8 @@ from iso4217 import Currency
 from num2words import num2words
 from text_to_num import alpha2digit, text2num
 
+from .normalize_utils import Logging
+
 
 class NormalizeNumber:
     def __init__(self, nlp: spacy.language, locale_config: str):
@@ -16,6 +18,7 @@ class NormalizeNumber:
         self.nlp = nlp
         self.atof = locale.atof
         self.lang = locale_config.split("_")[0]
+        self.logger = Logging.get_logger("normalize_numbers")
 
         # synonym lists
         self.approximately = [
@@ -514,7 +517,7 @@ class NormalizeNumber:
                         try:
                             num = self._extract_single_number(" ".join(v["matches"][0]))[0]
                         except BaseException as err:
-                            self.logger.error(f"Could not infer number from {text}. Error: {err}")
+                            self.logger.error(f"Could not infer number from {norm_text}. Error: {err}")
                             return
                     else:
                         if len(digits) == 1:
