@@ -9,10 +9,7 @@ import requests_cache
 from geopy.extra.rate_limiter import RateLimiter
 from geopy.geocoders import Nominatim
 
-# have the error:
-# ModuleNotFoundError: No module named 'Database'
-# change to scr.normalize_utils 20240726 Ni
-from scr.normalize_utils import Logging
+from .normalize_utils import Logging
 
 
 class NormalizeLocation:
