@@ -58,14 +58,10 @@ specific_impacts_columns = {
 }
 
 # main and specific impact events have these three column sets in common
-shared_cols = [
-    "Event_ID",
-    "Event_ID_decimal",
-    "Source",
-    "Event_Name",
-]
+shared_cols = ["Event_ID", "Event_ID_decimal", "Source", "Event_Name", "Main_Event", "Hazard"]
 
 location_cols = ["Location", "Country_Norm (Last update: 15th of May, 2024)"]
+# Basic_cols=[]
 
 date_cols = [
     "Start_Date_Month",
@@ -91,20 +87,23 @@ convert_to_str = flatten([shared_cols, location_cols])
 for i in ["Insured_Damage", "Damage"]:
     convert_to_str.extend([x for x in specific_impacts_columns[i] if "_Min" not in x or "_Max" not in x])
 
-# get int type columns
+# get int type columns, for damage, use the int type
 convert_to_int = flatten([date_cols, range_only_col])
+for i in ["Insured_Damage", "Damage"]:
+    convert_to_int.extend([x for x in specific_impacts_columns[i] if "_Min" in x or "_Max" in x or "_Year" in x])
 
-# get "list" type columns with a list of integers
+# get "list" type columns with a list of integers, not applicable in current evaluation process
+"""
 convert_to_int_list = []
 for i in ["Insured_Damage", "Damage"]:
     convert_to_int_list.extend([x for x in specific_impacts_columns[i] if "_Min" in x or "_Max" in x or "_Year" in x])
-
+"""
 # get "list" type columns with pipe separator
 split_by_pipe = flatten(
     [
         ["Event_Name", "Source", "Hazard"],
-        specific_impacts_columns["Insured_Damage"],
-        specific_impacts_columns["Damage"],
+        # specific_impacts_columns["Insured_Damage"],
+        # specific_impacts_columns["Damage"],
     ]
 )
 
@@ -168,14 +167,14 @@ def flatten_data_table():
     for col in convert_to_float:
         logger.debug(col)
         data_table[col] = data_table[col].apply(lambda x: float(x) if isinstance(x, str) else None)
-
+    """
     logger.info(f"Converting list values to ints in {convert_to_int_list}")
     for col in convert_to_int_list:
         logger.debug(col)
         data_table[col] = data_table[col].apply(
             lambda x: (None if x is None else [int(y.strip()) for y in x if str(y).isdigit()])
         )
-
+    """
     yes_pattern = re.compile(r"^[\s|.|,]*(yes|true)[\s|.|,]*$", flags=re.IGNORECASE | re.MULTILINE)
     no_pattern = re.compile(r"^[\s|.|,]*(No|false)[\s|.|,]*$", flags=re.IGNORECASE | re.MULTILINE)
 
