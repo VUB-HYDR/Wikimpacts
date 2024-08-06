@@ -178,6 +178,8 @@ class TestNormalizeNumbers:
             ("over USD 1.0 billion", (1000000001, 1999999999, 1)),
             ("15 billion yuan", (15000000000, 15000000000, 0)),
             ("100 million pesos", (100000000, 100000000, 0)),
+            ("between 20.2 and 30.4", (20.2, 30.4, 1)),
+            ("3,000 to 4,320", (3000, 4320, 1)),
         ],
     )
     def test_extract_numbers(self, test_input, expected):
