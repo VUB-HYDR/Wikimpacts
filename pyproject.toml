@@ -2,7 +2,7 @@
 name = "wikimpacts"
 version = "0.1.0"
 description = "Dependencies for parsing and normalizing environmental impact data"
-authors = ["Shorouq Zahra <shorouq.zahra@ri.se>" "Ni Li <ni.li@vub.be>" "Murathan Kurfali <murathan.kurfali@ri.se>"]
+authors = ["Shorouq Zahra <shorouq.zahra@ri.se>", "Ni Li <ni.li@vub.be>", "Murathan Kurfali <murathan.kurfali@ri.se>"]
 readme = "README.md"
 package-mode = true
 packages = [{include = "Database/scr"}]
