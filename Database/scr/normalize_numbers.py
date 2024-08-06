@@ -30,7 +30,7 @@ class NormalizeNumber:
             "approached",
             "approaches",
             "approaching",
-            "approx.",
+            "approx\.",
             "approximately",
             "approx",
             "as good as",
@@ -203,14 +203,21 @@ class NormalizeNumber:
             "unspecified",
         ]
 
-    def _check_currency(self, currency_text):
+    def _check_currency(self, currency_text: str) -> bool:
         try:
             Currency(currency_text)
             return True
         except ValueError:
             return False
 
-    def _preprocess(self, text: str):
+    def _isfloat(self, text: str) -> bool:
+        try:
+            float(text)
+            return True
+        except ValueError:
+            return False
+
+    def _preprocess(self, text: str) -> str:
         lookup = {
             # case insensitive
             "style_1": {
@@ -499,23 +506,28 @@ class NormalizeNumber:
         }
 
         for k, v in phrases.items():
-            expression = "(\d*)(\s*\d+\s+)*({phrases})[:,;]*\s*(\d+\S*)*\s*({scales})*"
-            expression = expression.format(phrases="|".join(v["list"]), scales="|".join(self.scales))
+            any_digit = "[\d,.]*"
+            expression = "({any_digit})\s*({scales})*\s*({phrases})[,.]*\s*({any_digit})\s*({scales})*"
+            expression = expression.format(
+                phrases="|".join(v["list"]), scales="|".join(self.scales), any_digit=any_digit
+            )
             matches = regex.findall(expression, text, flags=regex.IGNORECASE | regex.MULTILINE)
 
             for i in range(len(matches)):
-                matches[i] = [x.strip() for x in matches[i] if x != ""]
+                matches[i] = [x.strip().replace(",", "") for x in matches[i] if x != ""]
             matches = [x for x in matches if x]
-
             phrases[k]["matches"] = matches
 
         for k, v in phrases.items():
             if v["matches"]:
                 if len(v["matches"]) == 1:
-                    digits = [float(x.replace(",", "")) for x in v["matches"][0] if x.replace(",", "").isdigit()]
+                    digits = [float(x) for x in v["matches"][0] if (x.isdigit() or self._isfloat(x))]
                     if any([x in self.scales for x in v["matches"][0]]):
                         try:
-                            num = self._extract_single_number(" ".join(v["matches"][0]))[0]
+                            norm_text = [
+                                x for x in v["matches"][0] if x in self.scales or (x.isdigit() or self._isfloat(x))
+                            ]
+                            num = self._extract_single_number(" ".join(norm_text))[0]
                         except BaseException as err:
                             self.logger.error(f"Could not infer number from {norm_text}. Error: {err}")
                             return
@@ -524,41 +536,37 @@ class NormalizeNumber:
                             num = digits[0]
                         else:
                             return
-                    # self.scales
                     lower_mod, upper_mod = (
                         (3, 5)
                         if any([x in [y.lower() for y in text.split()] for x in self.family_synonyms])
                         else (1, 1)
                     )
-                    if len(digits) == 1:
-                        scale = pow(10, len(str(int(num))) - 1)
-                        multip = int(str(int(num))[0])
-                        if k == "approx":
-                            return (
-                                floor(num * 0.95) * lower_mod,
-                                floor(num * 1.05) * upper_mod,
+                    scale = pow(10, len(str(int(num))) - 1)
+                    multip = int(str(int(num))[0])
+                    if k == "approx":
+                        return (
+                            floor(num * 0.95) * lower_mod,
+                            floor(num * 1.05) * upper_mod,
+                        )
+                    if "over" in k:
+                        inc = 0 if "inclusive" in k else 1
+                        return (
+                            (num + inc) * lower_mod,
+                            num + 5 if (scale == 1 and upper_mod == 1) else ((scale * (multip + 1)) - 1) * upper_mod,
+                        )
+                    if "under" in k:
+                        inc = 0 if "inclusive" in k else 1
+                        if (num - (scale * multip)) / num > 0.08:
+                            _min, _max = (
+                                0 if (scale == 1 and multip == 1) else ((scale * multip) + 1) * upper_mod,
+                                (num - inc) * lower_mod,
                             )
-                        if "over" in k:
-                            inc = 0 if "inclusive" in k else 1
-                            return (
-                                (num + inc) * lower_mod,
-                                num + 5
-                                if (scale == 1 and upper_mod == 1)
-                                else ((scale * (multip + 1)) - 1) * upper_mod,
+                        else:
+                            _min, _max = (
+                                0 if (scale == 1 and multip == 1) else ((scale * (multip - 1)) + 1) * upper_mod,
+                                (num - inc) * lower_mod,
                             )
-                        if "under" in k:
-                            inc = 0 if "inclusive" in k else 1
-                            if (num - (scale * multip)) / num > 0.08:
-                                _min, _max = (
-                                    0 if (scale == 1 and multip == 1) else ((scale * multip) + 1) * upper_mod,
-                                    (num - inc) * lower_mod,
-                                )
-                            else:
-                                _min, _max = (
-                                    0 if (scale == 1 and multip == 1) else ((scale * (multip - 1)) + 1) * upper_mod,
-                                    (num - inc) * lower_mod,
-                                )
-                            return (_min, _max)
+                        return (_min, _max)
 
     def _extract_approximate_quantifiers(self, text: str) -> Tuple[float, float] | None:
         one, ten, hun, tho, mil, bil, tri = (
@@ -709,31 +717,44 @@ class NormalizeNumber:
                 approx = 1
             except BaseException:
                 try:
-                    numbers = self._extract_single_number(text)
+                    clean_text = " ".join(regex.sub(r"\s+[A-Z]{1,3}\s+", " ", text).split())
+                    numbers = self._extract_complex_range(clean_text)
                     assert numbers, BaseException
-                except:
+                    approx = 1
+                except BaseException:
                     try:
-                        numbers = self._extract_approximate_quantifiers(text)
+                        numbers = self._extract_single_number(text)
                         assert numbers, BaseException
-                        approx = 1
-                    except BaseException:
+                    except:
+                        cleaned_text = " ".join(
+                            [x for x in text.split() if (self._isfloat(x) or x.isdigit() or (x in self.scales))]
+                        )
                         try:
-                            # try extraction by spaCy NERs
-                            numbers = self.extract_numbers_from_entities(doc, labels)
+                            numbers = self._extract_single_number(cleaned_text)
                             assert numbers, BaseException
-                        except BaseException:
+                        except:
                             try:
-                                # if no NERs were extacted or no NERs were useful, try extracting by token instead
-                                numbers = self._extract_numbers_from_tokens(doc)
+                                numbers = self._extract_approximate_quantifiers(text)
                                 assert numbers, BaseException
-                                approx = 1 if len(numbers) == 2 else approx
+                                approx = 1
                             except BaseException:
                                 try:
-                                    # if all fails, try by normalizing the numbers to words
-                                    doc = self.nlp(self._normalize_num(doc), to_words=True)
+                                    # try extraction by spaCy NERs
                                     numbers = self.extract_numbers_from_entities(doc, labels)
+                                    assert numbers, BaseException
                                 except BaseException:
-                                    return (None, None, None)
+                                    try:
+                                        # if no NERs were extacted or no NERs were useful, try extracting by token instead
+                                        numbers = self._extract_numbers_from_tokens(doc)
+                                        assert numbers, BaseException
+                                        approx = 1 if len(numbers) == 2 else approx
+                                    except BaseException:
+                                        try:
+                                            # if all fails, try by normalizing the numbers to words
+                                            doc = self.nlp(self._normalize_num(doc), to_words=True)
+                                            numbers = self.extract_numbers_from_entities(doc, labels)
+                                        except BaseException:
+                                            return (None, None, None)
 
         if numbers:
             numbers = sorted(numbers)
