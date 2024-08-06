@@ -180,6 +180,7 @@ class TestNormalizeNumbers:
             ("100 million pesos", (100000000, 100000000, 0)),
             ("between 20.2 and 30.4", (20.2, 30.4, 1)),
             ("3,000 to 4,320", (3000, 4320, 1)),
+            ("5,235 were killed", (5235, 5235, 0)),
         ],
     )
     def test_extract_numbers(self, test_input, expected):

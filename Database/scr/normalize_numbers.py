@@ -731,8 +731,9 @@ class NormalizeNumber:
                         numbers = self._extract_single_number(text)
                         assert numbers, BaseException
                     except:
+                        cleaned_text = regex.sub(r"(\d+),(\d+)", r"\1\2", text)
                         cleaned_text = " ".join(
-                            [x for x in text.split() if (self._isfloat(x) or x.isdigit() or (x in self.scales))]
+                            [x for x in cleaned_text.split() if (self._isfloat(x) or x.isdigit() or (x in self.scales))]
                         )
                         try:
                             numbers = self._extract_single_number(cleaned_text)
