@@ -87,7 +87,7 @@ class NormalizeNumber:
             "exceed",
             "exceeds",
             "exceeded",
-            "exceeding,",
+            "exceeding",
         ]
 
         self.over_inclusive = [  # first
