@@ -36,6 +36,7 @@ class TestNormalizeNumbers:
             ("19", [19]),
             ("$ 355 million", [355000000]),
             ("5 million", [5000000]),
+            ("100 million", [100000000]),
             ("13 injuries", [13]),
             ("£ 23 billion", [23000000000]),
             ("23 were killed", [23]),
@@ -170,6 +171,13 @@ class TestNormalizeNumbers:
             ("603+", (603, 699, 1)),
             (">=293", (293, 299, 1)),
             ("~293", (278, 307, 1)),
+            (">= $27 million", (27000000, 29999999, 1)),
+            ("$27 million or more", (27000000, 29999999, 1)),
+            ("about A$500 million", (475000000, 525000000, 1)),
+            ("over US$500 million", (500000001, 599999999, 1)),
+            ("over USD 1.0 billion", (1000000001, 1999999999, 1)),
+            ("15 billion yuan", (15000000000, 15000000000, 0)),
+            ("100 million pesos", (100000000, 100000000, 0)),
         ],
     )
     def test_extract_numbers(self, test_input, expected):
@@ -220,6 +228,8 @@ class TestNormalizeNumbers:
             (">=5", (5, 10)),  # created range by adding 5 since scale == 1
             ("greater than or equal to 9", (9, 14)),  # created range by adding 5 since scale == 1
             ("45+ deaths were reported by the news", (45, 49)),
+            ("311,000,000+ Euros", (311000000, 399999999)),
+            (">693 million", (693000001, 699999999)),
             # under
             ("less than 230000000 dollars were paid out in insurance costs", (200000001, 229999999)),
             ("No more than 23 million dollars", (20000001, 23000000)),
