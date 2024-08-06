@@ -479,8 +479,13 @@ class NormalizeNumber:
             return 0
 
     def _extract_simple_range(self, text: str) -> Tuple[float]:
+        sep = "-"
+        for i in ("and", "to", "&"):
+            if i in text:
+                sep = i
+                break
         try:
-            nums = text.split("-")
+            nums = [x.replace(",", "") for x in text.split(sep)]
             if len(nums) == 2:
                 try:
                     return (self.atof(nums[0].strip()), self.atof(nums[1].strip()))
@@ -489,7 +494,7 @@ class NormalizeNumber:
         except:
             # try again but first normalize the number first
             text = self._normalize_num(self.nlp(text), to_word=False)
-            nums = text.split("-")
+            nums = text.split(sep)
             if len(nums) == 2:
                 try:
                     return (self.atof(nums[0].strip()), self.atof(nums[1].strip()))
