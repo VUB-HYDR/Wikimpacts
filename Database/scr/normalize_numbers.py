@@ -722,8 +722,8 @@ class NormalizeNumber:
                 approx = 1
             except BaseException:
                 try:
-                    clean_text = " ".join(regex.sub(r"\s+[A-Z]{1,3}\s+", " ", text).split())
-                    numbers = self._extract_complex_range(clean_text)
+                    cleaned_text = " ".join(regex.sub(r"\s+[A-Z]{1,3}\s+", " ", text).split())
+                    numbers = self._extract_complex_range(cleaned_text)
                     assert numbers, BaseException
                     approx = 1
                 except BaseException:
