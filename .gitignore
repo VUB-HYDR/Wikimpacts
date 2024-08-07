@@ -8,8 +8,8 @@ Database/output/*/**/testing_dev
 Database/output/*/**/dev_*
 Database/output/*/**/test_*
 Database/output/*/**/fullrun_*
-Database/gold/V*
-Database/gold/ESSD*
+Database/gold/*/**/V*
+Database/gold/*/**/ESSD*
 
 # ignore notebooks
 **.ipynb
