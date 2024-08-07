@@ -17,6 +17,23 @@ def flatten(xss):
     return [x for xs in xss for x in xs]
 
 
+def fix_column_names(df):
+    mapper = {
+        "_Min": "Num_Min",
+        "_Max": "Num_Max",
+        "_Unit": "Unit",
+        "_Units": "Unit",
+        "_Adjusted": "Inflation_Adjusted",
+        "_Adjusted_Year": "Adjusted_Year",
+    }
+
+    for k, v in mapper.items():
+        for col in df.columns:
+            if col.endswith(k):
+                df.rename(columns={col: v}, inplace=True)
+    return df
+
+
 # set specific impact columns
 specific_impacts_columns = {
     "Injured": [
@@ -176,12 +193,7 @@ def flatten_data_table():
     data_table["main"] = data_table.Event_ID_decimal.apply(lambda x: float(x).is_integer())
     data_table["main"].value_counts()
 
-    logger.info("Storing Main Events table")
     Events = data_table[data_table["main"] == True][target_columns]
-    Events.to_parquet(
-        f"{args.output_dir}/Events.parquet",
-        engine="fastparquet",
-    )
 
     specific_impacts_dfs = {}
     for spec in specific_impacts_columns.keys():
@@ -208,10 +220,7 @@ def flatten_data_table():
         del spec_target_columns
         del df
 
-    for name, df in specific_impacts_dfs.items():
-        if "_target_columns" not in name:
-            logger.info(f"Storing {name} table")
-            df.to_parquet(f"{args.output_dir}/{name}.parquet", engine="fastparquet")
+    return Events, specific_impacts_dfs
 
 
 if __name__ == "__main__":
@@ -247,4 +256,18 @@ if __name__ == "__main__":
     logger.info(f"Creating {args.output_dir} if it does not exist!")
     pathlib.Path(args.output_dir).mkdir(parents=True, exist_ok=True)
 
-    flatten_data_table()
+    Events, specific_impacts_dfs = flatten_data_table()
+
+    logger.info("Storing Main Events table")
+    Events.to_parquet(
+        f"{args.output_dir}/Events.parquet",
+        engine="fastparquet",
+    )
+
+    for name, df in specific_impacts_dfs.items():
+        if "_target_columns" not in name:
+            logger.info(f"Storing {name} table")
+            logger.info("Fixing column names")
+
+            df = fix_column_names(df)
+            df.to_parquet(f"{args.output_dir}/{name}.parquet", engine="fastparquet")
