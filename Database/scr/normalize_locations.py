@@ -9,10 +9,7 @@ import requests_cache
 from geopy.extra.rate_limiter import RateLimiter
 from geopy.geocoders import Nominatim
 
-# have the error:
-# ModuleNotFoundError: No module named 'Database'
-# change to scr.normalize_utils 20240726 Ni
-from scr.normalize_utils import Logging
+from .normalize_utils import Logging
 
 
 class NormalizeLocation:
@@ -70,7 +67,6 @@ class NormalizeLocation:
             "company",
             "clinic",
             "hospital",
-            "university",
             "residential",
             "retail",
             "university",
@@ -80,14 +76,14 @@ class NormalizeLocation:
             "petrol stration with kiosk",
             "petrol station",
             "retail park",
-            "hospital",
-            "church",
             "exhibition/convention centre",
             "underground parking garage",
             "car park",
             "carpool point",
             "car park area",
             "kiosk with WC",
+            "cemetery",
+            "church",
         ]
 
         self.unsd_regions, self.unsd_subregions, self.unsd_intermediateregions = (

@@ -2,9 +2,10 @@
 name = "wikimpacts"
 version = "0.1.0"
 description = "Dependencies for parsing and normalizing environmental impact data"
-authors = ["shorouq.zahra@ri.se"]
+authors = ["Shorouq Zahra <shorouq.zahra@ri.se>", "Ni Li <ni.li@vub.be>", "Murathan Kurfali <murathan.kurfali@ri.se>"]
 readme = "README.md"
-package-mode = false
+package-mode = true
+packages = [{include = "Database/scr"}]
 
 [tool.poetry.dependencies]
 python = ">=3.8,<3.12"
@@ -22,11 +23,16 @@ requests-cache = "^1.2.0"
 pycountry = "22.3.5"
 fastparquet = "2023.10.1"
 pytest = "^8.2.2"
+iso4217 = "^1.11.20220401"
+en-core-web-trf = {url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_trf-3.7.3/en_core_web_trf-3.7.3-py3-none-any.whl"}
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.3"
 openpyxl = "^3.1.2"
 numpy = "1.24"
+
+[tool.poetry.group.tests.dependencies]
+pytest = "^8.2.2"
 
 [build-system]
 requires = ["poetry-core"]
