@@ -1,7 +1,11 @@
 # ignore raw files
 Database/raw/*/**/dev
 Database/raw/*/**/test
-results
+
+#ignore testing files
+Database/raw/*/**/testing
+Database/output/*/**/testing_dev
+
 
 # ignore notebooks
 **.ipynb
