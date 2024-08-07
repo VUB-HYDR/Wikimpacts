@@ -242,7 +242,7 @@ if __name__ == "__main__":
                 ),
             )
 
-            # this condition is for main event level where only location exist but the country information will capture from the location
+        # this condition is for main event level where only location exist but the country information will capture from the location
         if args.location_column in events.columns and args.country_column not in events.columns:
             logger.info("Normalizing Locations in Main Event Level")
             events["Location_Tmp"] = events["Location"].apply(
