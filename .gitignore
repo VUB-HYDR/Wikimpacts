@@ -5,7 +5,9 @@ Database/raw/*/**/test
 #ignore testing files
 Database/raw/*/**/testing
 Database/output/*/**/testing_dev
-
+Database/output/*/**/dev_*
+Database/output/*/**/test_*
+Database/output/*/**/fullrun_*
 
 # ignore notebooks
 **.ipynb
