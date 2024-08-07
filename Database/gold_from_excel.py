@@ -62,6 +62,7 @@ shared_cols = [
     "Event_ID_decimal",
     "Source",
     "Event_Name",
+    "Hazard",
 ]
 
 location_cols = [
@@ -95,22 +96,8 @@ for i in ["Insured_Damage", "Damage"]:
 # get int type columns
 convert_to_int = flatten([date_cols, range_only_col])
 
-# get "list" type columns with a list of integers
-convert_to_int_list = []
-for i in ["Insured_Damage", "Damage"]:
-    convert_to_int_list.extend([x for x in specific_impacts_columns[i] if "_Min" in x or "_Max" in x or "_Year" in x])
-
 # get "list" type columns with pipe separator
-split_by_pipe = flatten(
-    [
-        [
-            "Event_Name",
-            "Source",
-        ],
-        specific_impacts_columns["Insured_Damage"],
-        specific_impacts_columns["Damage"],
-    ]
-)
+split_by_pipe = ["Event_Name", "Source", "Hazard"]
 
 # get bool type columns
 convert_to_boolean = []
@@ -172,31 +159,17 @@ def flatten_data_table():
         logger.debug(col)
         data_table[col] = data_table[col].apply(lambda x: float(x) if isinstance(x, str) else None)
 
-    logger.info(f"Converting list values to ints in {convert_to_int_list}")
-    for col in convert_to_int_list:
-        logger.debug(col)
-        data_table[col] = data_table[col].apply(
-            lambda x: (None if x is None else [int(y.strip()) for y in x if str(y).isdigit()])
-        )
-
     yes_pattern = re.compile(r"^[\s|.|,]*(yes|true)[\s|.|,]*$", flags=re.IGNORECASE | re.MULTILINE)
     no_pattern = re.compile(r"^[\s|.|,]*(No|false)[\s|.|,]*$", flags=re.IGNORECASE | re.MULTILINE)
 
+    logger.info(f"Converting to bools: {convert_to_boolean}")
     for col in convert_to_boolean:
         logger.debug(col)
         data_table[col] = data_table[col].apply(
-            lambda bool_list: (
-                [False if not isinstance(x, bool) and re.match(no_pattern, x) else x for x in bool_list]
-                if bool_list
-                else None
-            )
+            lambda text: True if text and not isinstance(text, bool) and re.match(yes_pattern, text) else text
         )
         data_table[col] = data_table[col].apply(
-            lambda bool_list: (
-                [True if not isinstance(x, bool) and re.match(yes_pattern, x) else x for x in bool_list]
-                if bool_list
-                else None
-            )
+            lambda text: False if text and not isinstance(text, bool) and re.match(no_pattern, text) else text
         )
 
     logger.info("Splitting main events from specific impact")
