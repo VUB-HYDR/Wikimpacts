@@ -114,20 +114,24 @@ if __name__ == "__main__":
                 sub_dict = row[key]
                 # Identify the specific Total_* key (excluding Total_Summary_)
                 prefix = None
-                for sub_key in sub_dict.keys():
-                    if sub_key.startswith("Total_") and sub_key not in [
-                        "Annotation",
-                        "Units",
-                        "Inflation_Adjusted",
-                        "Inflation_Adjusted_Year",
-                    ]:
-                        prefix = sub_key
-                        break
+                # check if the key exist
+                if isinstance(sub_dict, dict):
+                    for sub_key in sub_dict.keys():
+                        if sub_key.startswith("Total_") and sub_key not in [
+                            "Annotation",
+                            "Units",
+                            "Inflation_Adjusted",
+                            "Inflation_Adjusted_Year",
+                        ]:
+                            prefix = sub_key
+                            break
 
-                if prefix:
-                    update_keys(sub_dict, prefix)
-                    # Update the DataFrame with the modified dictionary
-                    df.at[index, key] = sub_dict
+                    if prefix:
+                        update_keys(sub_dict, prefix)
+                        # Update the DataFrame with the modified dictionary
+                        df.at[index, key] = sub_dict
+                else:
+                    print(f"Expected a dictionary, but got {type(sub_dict).__name__}")
 
     logger.info("JSON datafile column names updated")
     logger.info("JSON datafile loaded")
@@ -202,7 +206,7 @@ if __name__ == "__main__":
         if "Hazard" in events.columns:
             logger.info("Normalizing Hazard to list")
             events.Hazard = events.Hazard.apply(lambda x: x.split("|") if x is not None else [])
-
+        # this condition is suitable for the sub-event level where only country exist
         if args.country_column in events.columns:
             logger.info("Ensuring that all country data is of type <list>")
 
@@ -238,6 +242,50 @@ if __name__ == "__main__":
                 ),
             )
 
+            # this condition is for main event level where only location exist but the country information will capture from the location
+        if args.location_column in events.columns and args.country_column not in events.columns:
+            logger.info("Normalizing Locations in Main Event Level")
+            events["Location_Tmp"] = events["Location"].apply(
+                lambda locations: (
+                    [norm_loc.normalize_locations(area=area) for area in locations] if locations else None
+                )
+            )
+
+            events[["Location_Norm", "Location_Type", "Location_GeoJson"]] = (
+                events["Location_Tmp"]
+                .apply(lambda x: ([i[0] for i in x], [i[1] for i in x], [i[2] for i in x]))
+                .apply(pd.Series)
+            )
+            events.drop(columns=["Location_Tmp"], inplace=True)
+
+            logger.info("Getting GID from GADM for Locations")
+
+            # get the GID of the location
+            events["Location_GID"] = events.apply(
+                lambda row: (
+                    [norm_loc.get_gadm_gid(area=area) for area in row["Location_Norm"]]
+                    if row["Location_Norm"]
+                    else None
+                ),
+                axis=1,
+            )
+
+            logger.info("Save countries from normalized location list.")
+
+            # save the country from location, and if the location only contain cities or other lower admin places, trace back to country
+            for loc_col in ["Location_Norm", "Location_Type", "Location_GeoJson"]:
+                events[loc_col] = events.apply(
+                    lambda row: [
+                        row[loc_col][i] for i in range(len(row["Location_GID"])) if row["Location_GID"][i] == "COUNTRY"
+                    ],
+                    axis=1,
+                )
+
+            # Correcting the final filtering of Location_GID
+            events["Location_GID"] = events["Location_GID"].apply(
+                lambda locations: [l for l in locations if l == "COUNTRY"] if locations else []
+            )
+        # this condition is suitable for sub-event level where both country and location exist
         if args.location_column in events.columns and args.country_column in events.columns:
             logger.info("Normalizing Locations")
             events["Location_Tmp"] = events["Location"].apply(
@@ -345,7 +393,8 @@ if __name__ == "__main__":
 
         logger.info(f"Storing parsed results")
         events_filename = f"{args.output_dir}/{args.filename.split('.json')[0]}"
-        # Map the old columns to the new columns
+        # Map the old columns to the new columns, no need in the full run parsing
+        """
         new_columns_mapping_sys = {
             "Total_Deaths_Min": "Total_Death_Min",
             "Total_Deaths_Max": "Total_Death_Max",
@@ -363,6 +412,7 @@ if __name__ == "__main__":
         # Add new columns and assign values from existing columns
         for new_col, old_col in new_columns_mapping_sys.items():
             events[new_col] = events[old_col]
+            """
 
         events.to_parquet(f"{events_filename}.parquet", engine="fastparquet")
 
