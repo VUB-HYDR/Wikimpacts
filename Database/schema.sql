@@ -78,7 +78,7 @@ CREATE TABLE Specific_Instance_Per_Administrative_Area_Deaths (
 );
 
 
-CREATE TABLE Deaths_Per_Administrative_Area (
+CREATE TABLE Impact_Per_Administrative_Area_Deaths (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) = 7), /* COMMENT 'UID' */
     Hazard OBJECT, /* COMMENT 'Array' */
     Administrative_Area TEXT NOT NULL,
@@ -122,7 +122,7 @@ CREATE TABLE Specific_Instance_Per_Administrative_Area_Injuries (
     FOREIGN KEY(Event_ID) REFERENCES Events(Event_ID)
 );
 
-CREATE TABLE Injuries_Per_Administrative_Area (
+CREATE TABLE Impact_Per_Administrative_Area_Injuries (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) = 7), /* COMMENT 'UID' */
     Hazard OBJECT, /* COMMENT 'Array' */
     Administrative_Area TEXT NOT NULL,
@@ -167,7 +167,7 @@ CREATE TABLE Specific_Instance_Per_Administrative_Area_Displacement (
 );
 
 
-CREATE TABLE Injuries_Per_Displacement (
+CREATE TABLE Impact_Per_Administrative_Area_Displacement (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) = 7), /* COMMENT 'UID' */
     Hazard OBJECT, /* COMMENT 'Array' */
     Administrative_Area TEXT NOT NULL,
@@ -213,7 +213,7 @@ CREATE TABLE Specific_Instance_Per_Administrative_Area_Homeless (
     FOREIGN KEY(Event_ID) REFERENCES Events(Event_ID)
 );
 
-CREATE TABLE Injuries_Per_Homeless (
+CREATE TABLE Impact_Per_Administrative_Area_Homeless (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) = 7), /* COMMENT 'UID' */
     Hazard OBJECT, /* COMMENT 'Array' */
     Administrative_Area TEXT NOT NULL,
@@ -257,7 +257,7 @@ CREATE TABLE Specific_Instance_Per_Administrative_Area_Insured_Damage (
     FOREIGN KEY(Event_ID) REFERENCES Events(Event_ID)
 );
 
-CREATE TABLE Injuries_Per_Insured_Damage (
+CREATE TABLE Impact_Per_Administrative_Area_Insured_Damage (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) = 7), /* COMMENT 'UID' */
     Hazard OBJECT, /* COMMENT 'Array' */
     Administrative_Area TEXT NOT NULL,
@@ -288,7 +288,6 @@ CREATE TABLE Specific_Instance_Per_Administrative_Area_Damage (
     Administrative_Area_Norm TEXT,
     Administrative_Area_Type TEXT,
     Administrative_Area_GeoJson TEXT, /* COMMENT GeoJSON object */
-    Location_Damage TEXT,
     Location_GID OBJECT, /* COMMENT 'Array' of TEXT */
     Location_Norm OBJECT, /* COMMENT 'Array' of TEXT */
     Location_Type OBJECT, /* COMMENT 'Array' of TEXT */
@@ -302,7 +301,7 @@ CREATE TABLE Specific_Instance_Per_Administrative_Area_Damage (
     FOREIGN KEY(Event_ID) REFERENCES Events(Event_ID)
 );
 
-CREATE TABLE Injuries_Per_Damage (
+CREATE TABLE Impact_Per_Administrative_Area_Damage (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) = 7), /* COMMENT 'UID' */
     Hazard OBJECT, /* COMMENT 'Array' */
     Administrative_Area TEXT NOT NULL,
@@ -327,7 +326,7 @@ CREATE TABLE Injuries_Per_Damage (
     FOREIGN KEY(Event_ID) REFERENCES Events(Event_ID)
 );
 
-CREATE TABLE Specific_Instance_Per_Administrative_Area_Building_Damaged (
+CREATE TABLE Specific_Instance_Per_Administrative_Area_Buildings_Damaged (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) = 7), /* COMMENT 'UID' */
     Hazard OBJECT, /* COMMENT 'Array' */
     Administrative_Area TEXT NOT NULL,
@@ -351,7 +350,7 @@ CREATE TABLE Specific_Instance_Per_Administrative_Area_Building_Damaged (
     FOREIGN KEY(Event_ID) REFERENCES Events(Event_ID)
 );
 
-CREATE TABLE Injuries_Per_Building_Damaged (
+CREATE TABLE Impact_Per_Administrative_Area_Buildings_Damaged (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) = 7), /* COMMENT 'UID' */
     Hazard OBJECT, /* COMMENT 'Array' */
     Administrative_Area TEXT NOT NULL,
