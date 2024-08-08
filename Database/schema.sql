@@ -20,42 +20,35 @@ CREATE TABLE Events (
     End_Date_Day INTEGER CHECK (End_Date_Day <= 31),
     End_Date_Month INTEGER CHECK (End_Date_Month <= 12),
     End_Date_Year INTEGER CHECK (length(End_Date_Year) = 4),
-    Total_Deaths TEXT,
-    Total_Deaths_Min REAL,
-    Total_Deaths_Max REAL,
-    Total_Deaths_Approx INTEGER, /* COMMENT 'Boolean' */
-    Total_Injuries INTEGER,
-    Total_Injuries_Min REAL,
-    Total_Injuries_Max REAL,
-    Total_Injuries_Approx INTEGER, /* COMMENT 'Boolean' */
-    Total_Displacement INTEGER,
-    Total_Displacement_Min REAL,
-    Total_Displacement_Max REAL,
-    Total_Displacement_Approx INTEGER, /* COMMENT 'Boolean' */
-    Total_Homeless INTEGER,
-    Total_Homeless_Min REAL,
-    Total_Homeless_Max REAL,
-    Total_Homeless_Approx INTEGER, /* COMMENT 'Boolean' */
-    Total_Insured_Damage REAL,
-    Total_Insured_Damage_Min REAL,
-    Total_Insured_Damage_Max REAL,
-    Total_Insured_Damage_Approx INTEGER, /* COMMENT 'Boolean' */
+    Total_Deaths_Min REAL CHECK (Total_Deaths_Min > 0),
+    Total_Deaths_Max REAL CHECK (Total_Deaths_Max > 0),,
+    Total_Deaths_Approx INTEGER CHECK (Total_Deaths_Approx == 1 OR Total_Deaths_Approx ==  0), /* COMMENT 'Boolean' */
+    Total_Injuries_Min  REAL CHECK (Total_Injuries_Min > 0),
+    Total_Injuries_Max REAL CHECK (Total_Injuries_Max > 0),
+    Total_Injuries_Approx INTEGER CHECK (Total_Injuries_Approx == 1 OR Total_Injuries_Approx ==  0), /* COMMENT 'Boolean' */
+    Total_Displacement_Min REAL CHECK (Total_Displacement_Min > 0),
+    Total_Displacement_Max REAL CHECK (Total_Displacement_Max > 0),
+    Total_Displacement_Approx INTEGER CHECK (Total_Displacement_Approx == 1 OR Total_Displacement_Approx ==  0), /* COMMENT 'Boolean' */
+    Total_Homeless_Min REAL CHECK (Total_Homeless_Min > 0),
+    Total_Homeless_Max REAL CHECK (Total_Homeless_Max > 0),
+    Total_Homeless_Approx INTEGER CHECK (Total_Homeless_Approx == 1 OR Total_Homeless_Approx ==  0), /* COMMENT 'Boolean' */
+    Total_Insured_Damage_Min REAL CHECK (Total_Insured_Damage_Min > 0),
+    Total_Insured_Damage_Max REAL CHECK (Total_Insured_Damage_Max > 0),
+    Total_Insured_Damage_Approx INTEGER CHECK (Total_Insured_Damage_Approx == 1 OR Total_Insured_Damage_Approx ==  0), /* COMMENT 'Boolean' */
     Total_Insured_Damage_Units TEXT, /* COMMENT 'currency' */
     Total_Insured_Damage_Inflation_Adjusted INTEGER, /* COMMENT 'Boolean' */
     Total_Insured_Damage_Inflation_Adjusted_Year INTEGER CHECK (
         length(Total_Insured_Damage_Inflation_Adjusted_Year) = 4
     ),
-    Total_Damage REAL,
-    Total_Damage_Min REAL,
-    Total_Damage_Max REAL,
-    Total_Damage_Approx INTEGER, /* COMMENT 'Boolean' */
+    Total_Damage_Min REAL CHECK (Total_Damage_Min > 0),
+    Total_Damage_Max REAL CHECK (Total_Damage_Max > 0),
+    Total_Damage_Approx INTEGER CHECK (Total_Damage_Approx == 1 OR Total_Damage_Approx ==  0), /* COMMENT 'Boolean' */
     Total_Damage_Units TEXT, /* COMMENT 'currency' */
     Total_Damage_Inflation_Adjusted INTEGER, /* COMMENT 'Boolean' */
     Total_Damage_Inflation_Adjusted_Year INTEGER CHECK (length(Total_Damage_Inflation_Adjusted_Year) = 4),
-    Total_Buildings_Damaged INTEGER,
-    Total_Buildings_Damaged_Min REAL,
-    Total_Buildings_Damaged_Max REAL,
-    Total_Buildings_Damaged_Approx INTEGER, /* COMMENT 'Boolean' */
+    Total_Buildings_Damaged_Min REAL CHECK (Total_Buildings_Damaged_Min > 0),
+    Total_Buildings_Damaged_Max REAL CHECK (Total_Buildings_Damaged_Max > 0),
+    Total_Buildings_Damaged_Approx INTEGER CHECK (Total_Buildings_Damaged_Approx == 1 OR Total_Buildings_Damaged_Approx ==  0), /* COMMENT 'Boolean' */
 
     FOREIGN KEY(Event_ID) REFERENCES Events(Event_ID)
 );
@@ -78,9 +71,9 @@ CREATE TABLE Specific_Instance_Per_Administrative_Area_Deaths (
     End_Date_Day INTEGER CHECK (End_Date_Day <= 31),
     End_Date_Month INTEGER NOT NULL CHECK (End_Date_Month <= 12),
     End_Date_Year INTEGER NOT NULL CHECK (length(End_Date_Year) = 4),
-    Num_Min REAL,
-    Num_Max REAL,
-    Num_Approx INTEGER, /* COMMENT 'Boolean' */
+    Num_Min REAL CHECK (Num_Min > 0),
+    Num_Max REAL CHECK (Num_Max > 0),
+    Num_Approx INTEGER CHECK (Num_Approx == 1 OR Num_Approx ==  0), /* COMMENT 'Boolean' */
     FOREIGN KEY(Event_ID) REFERENCES Events(Event_ID)
 );
 
@@ -99,9 +92,9 @@ CREATE TABLE Deaths_Per_Administrative_Area (
     End_Date_Day INTEGER CHECK (End_Date_Day <= 31),
     End_Date_Month INTEGER NOT NULL CHECK (End_Date_Month <= 12),
     End_Date_Year INTEGER NOT NULL CHECK (length(End_Date_Year) = 4),
-    Num_Min REAL,
-    Num_Max REAL,
-    Num_Approx INTEGER, /* COMMENT 'Boolean' */
+    Num_Min REAL CHECK (Num_Min > 0),
+    Num_Max REAL CHECK (Num_Max > 0),
+    Num_Approx INTEGER CHECK (Num_Approx == 1 OR Num_Approx ==  0), /* COMMENT 'Boolean' */
     FOREIGN KEY(Event_ID) REFERENCES Events(Event_ID)
 );
 
@@ -123,9 +116,9 @@ CREATE TABLE Specific_Instance_Per_Administrative_Area_Injuries (
     End_Date_Day INTEGER CHECK (End_Date_Day <= 31),
     End_Date_Month INTEGER NOT NULL CHECK (End_Date_Month <= 12),
     End_Date_Year INTEGER NOT NULL CHECK (length(End_Date_Year) = 4),
-    Num_Min REAL,
-    Num_Max REAL,
-    Num_Approx INTEGER, /* COMMENT 'Boolean' */
+    Num_Min REAL CHECK (Num_Min > 0),
+    Num_Max REAL CHECK (Num_Max > 0),
+    Num_Approx INTEGER CHECK (Num_Approx == 1 OR Num_Approx ==  0), /* COMMENT 'Boolean' */
     FOREIGN KEY(Event_ID) REFERENCES Events(Event_ID)
 );
 
@@ -143,9 +136,9 @@ CREATE TABLE Injuries_Per_Administrative_Area (
     End_Date_Day INTEGER CHECK (End_Date_Day <= 31),
     End_Date_Month INTEGER NOT NULL CHECK (End_Date_Month <= 12),
     End_Date_Year INTEGER NOT NULL CHECK (length(End_Date_Year) = 4),
-    Num_Min REAL,
-    Num_Max REAL,
-    Num_Approx INTEGER, /* COMMENT 'Boolean' */
+    Num_Min REAL CHECK (Num_Min > 0),
+    Num_Max REAL CHECK (Num_Max > 0),
+    Num_Approx INTEGER CHECK (Num_Approx == 1 OR Num_Approx ==  0), /* COMMENT 'Boolean' */
     FOREIGN KEY(Event_ID) REFERENCES Events(Event_ID)
 );
 
@@ -167,9 +160,9 @@ CREATE TABLE Specific_Instance_Per_Administrative_Area_Displacement (
     End_Date_Day INTEGER CHECK (End_Date_Day <= 31),
     End_Date_Month INTEGER NOT NULL CHECK (End_Date_Month <= 12),
     End_Date_Year INTEGER NOT NULL CHECK (length(End_Date_Year) = 4),
-    Num_Min REAL,
-    Num_Max REAL,
-    Num_Approx INTEGER, /* COMMENT 'Boolean' */
+    Num_Min REAL CHECK (Num_Min > 0),
+    Num_Max REAL CHECK (Num_Max > 0),
+    Num_Approx INTEGER CHECK (Num_Approx == 1 OR Num_Approx ==  0), /* COMMENT 'Boolean' */
     FOREIGN KEY(Event_ID) REFERENCES Events(Event_ID)
 );
 
@@ -188,9 +181,9 @@ CREATE TABLE Injuries_Per_Displacement (
     End_Date_Day INTEGER CHECK (End_Date_Day <= 31),
     End_Date_Month INTEGER NOT NULL CHECK (End_Date_Month <= 12),
     End_Date_Year INTEGER NOT NULL CHECK (length(End_Date_Year) = 4),
-    Num_Min REAL,
-    Num_Max REAL,
-    Num_Approx INTEGER, /* COMMENT 'Boolean' */
+    Num_Min REAL CHECK (Num_Min > 0),
+    Num_Max REAL CHECK (Num_Max > 0),
+    Num_Approx INTEGER CHECK (Num_Approx == 1 OR Num_Approx ==  0), /* COMMENT 'Boolean' */
     FOREIGN KEY(Event_ID) REFERENCES Events(Event_ID)
 );
 
@@ -213,9 +206,9 @@ CREATE TABLE Specific_Instance_Per_Administrative_Area_Homeless (
     End_Date_Day INTEGER CHECK (End_Date_Day <= 31),
     End_Date_Month INTEGER NOT NULL CHECK (End_Date_Month <= 12),
     End_Date_Year INTEGER NOT NULL CHECK (length(End_Date_Year) = 4),
-    Num_Min REAL,
-    Num_Max REAL,
-    Num_Approx INTEGER, /* COMMENT 'Boolean' */
+    Num_Min REAL CHECK (Num_Min > 0),
+    Num_Max REAL CHECK (Num_Max > 0),
+    Num_Approx INTEGER CHECK (Num_Approx == 1 OR Num_Approx ==  0), /* COMMENT 'Boolean' */
 
     FOREIGN KEY(Event_ID) REFERENCES Events(Event_ID)
 );
@@ -234,9 +227,9 @@ CREATE TABLE Injuries_Per_Homeless (
     End_Date_Day INTEGER CHECK (End_Date_Day <= 31),
     End_Date_Month INTEGER NOT NULL CHECK (End_Date_Month <= 12),
     End_Date_Year INTEGER NOT NULL CHECK (length(End_Date_Year) = 4),
-    Num_Min REAL,
-    Num_Max REAL,
-    Num_Approx INTEGER, /* COMMENT 'Boolean' */
+    Num_Min REAL CHECK (Num_Min > 0),
+    Num_Max REAL CHECK (Num_Max > 0),
+    Num_Approx INTEGER CHECK (Num_Approx == 1 OR Num_Approx ==  0), /* COMMENT 'Boolean' */
     FOREIGN KEY(Event_ID) REFERENCES Events(Event_ID)
 );
 
@@ -253,9 +246,9 @@ CREATE TABLE Specific_Instance_Per_Administrative_Area_Insured_Damage (
     Location_Norm OBJECT, /* COMMENT 'Array' of TEXT */
     Location_Type OBJECT, /* COMMENT 'Array' of TEXT */
     Location_GeoJson OBJECT, /* COMMENT 'Array' of TEXT */
-    Num_Min REAL,
-    Num_Max REAL,
-    Num_Approx INTEGER, /* COMMENT 'Boolean' */
+    Num_Min REAL CHECK (Num_Min > 0),
+    Num_Max REAL CHECK (Num_Max > 0),
+    Num_Approx INTEGER CHECK (Num_Approx == 1 OR Num_Approx ==  0), /* COMMENT 'Boolean' */
     Units TEXT, /* COMMENT 'currency' */
     Inflation_Adjusted INTEGER, /* COMMENT 'Boolean' */
     Inflation_Adjusted_Year INTEGER CHECK (
@@ -278,9 +271,9 @@ CREATE TABLE Injuries_Per_Insured_Damage (
     End_Date_Day INTEGER CHECK (End_Date_Day <= 31),
     End_Date_Month INTEGER NOT NULL CHECK (End_Date_Month <= 12),
     End_Date_Year INTEGER NOT NULL CHECK (length(End_Date_Year) = 4),
-    Num_Min REAL,
-    Num_Max REAL,
-    Num_Approx INTEGER, /* COMMENT 'Boolean' */
+    Num_Min REAL CHECK (Num_Min > 0),
+    Num_Max REAL CHECK (Num_Max > 0),
+    Num_Approx INTEGER CHECK (Num_Approx == 1 OR Num_Approx ==  0), /* COMMENT 'Boolean' */
     Units TEXT, /* COMMENT 'currency' */
     Inflation_Adjusted INTEGER, /* COMMENT 'Boolean' */
     Inflation_Adjusted_Year INTEGER CHECK (length(Inflation_Adjusted_Year) = 4),
@@ -300,9 +293,9 @@ CREATE TABLE Specific_Instance_Per_Administrative_Area_Damage (
     Location_Norm OBJECT, /* COMMENT 'Array' of TEXT */
     Location_Type OBJECT, /* COMMENT 'Array' of TEXT */
     Location_GeoJson OBJECT, /* COMMENT 'Array' of TEXT */
-    Num_Min REAL,
-    Num_Max REAL,
-    Num_Approx INTEGER, /* COMMENT 'Boolean' */
+    Num_Min REAL CHECK (Num_Min > 0),
+    Num_Max REAL CHECK (Num_Max > 0),
+    Num_Approx INTEGER CHECK (Num_Approx == 1 OR Num_Approx ==  0), /* COMMENT 'Boolean' */
     Units TEXT, /* COMMENT 'currency' */
     Inflation_Adjusted INTEGER, /* COMMENT 'Boolean' */
     Inflation_Adjusted_Year INTEGER CHECK (length(Inflation_Adjusted_Year) = 4),
@@ -323,9 +316,9 @@ CREATE TABLE Injuries_Per_Damage (
     End_Date_Day INTEGER CHECK (End_Date_Day <= 31),
     End_Date_Month INTEGER NOT NULL CHECK (End_Date_Month <= 12),
     End_Date_Year INTEGER NOT NULL CHECK (length(End_Date_Year) = 4),
-    Num_Min REAL,
-    Num_Max REAL,
-    Num_Approx INTEGER, /* COMMENT 'Boolean' */
+    Num_Min REAL CHECK (Num_Min > 0),
+    Num_Max REAL CHECK (Num_Max > 0),
+    Num_Approx INTEGER CHECK (Num_Approx == 1 OR Num_Approx ==  0), /* COMMENT 'Boolean' */
     Units TEXT, /* COMMENT 'currency' */
     Inflation_Adjusted INTEGER, /* COMMENT 'Boolean' */
     Inflation_Adjusted_Year INTEGER CHECK (
@@ -352,9 +345,9 @@ CREATE TABLE Specific_Instance_Per_Administrative_Area_Building_Damaged (
     End_Date_Day INTEGER CHECK (End_Date_Day <= 31),
     End_Date_Month INTEGER NOT NULL CHECK (End_Date_Month <= 12),
     End_Date_Year INTEGER NOT NULL CHECK (length(End_Date_Year) = 4),
-    Num_Min REAL,
-    Num_Max REAL,
-    Num_Approx INTEGER, /* COMMENT 'Boolean' */
+    Num_Min REAL CHECK (Num_Min > 0),
+    Num_Max REAL CHECK (Num_Max > 0),
+    Num_Approx INTEGER CHECK (Num_Approx == 1 OR Num_Approx ==  0), /* COMMENT 'Boolean' */
     FOREIGN KEY(Event_ID) REFERENCES Events(Event_ID)
 );
 
@@ -372,8 +365,8 @@ CREATE TABLE Injuries_Per_Building_Damaged (
     End_Date_Day INTEGER CHECK (End_Date_Day <= 31),
     End_Date_Month INTEGER NOT NULL CHECK (End_Date_Month <= 12),
     End_Date_Year INTEGER NOT NULL CHECK (length(End_Date_Year) = 4),
-    Num_Min REAL,
-    Num_Max REAL,
-    Num_Approx INTEGER, /* COMMENT 'Boolean' */
+    Num_Min REAL CHECK (Num_Min > 0),
+    Num_Max REAL CHECK (Num_Max > 0),
+    Num_Approx INTEGER CHECK (Num_Approx == 1 OR Num_Approx ==  0), /* COMMENT 'Boolean' */
     FOREIGN KEY(Event_ID) REFERENCES Events(Event_ID)
 );
