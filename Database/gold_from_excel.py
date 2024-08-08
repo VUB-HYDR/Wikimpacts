@@ -4,6 +4,7 @@ import re
 
 import pandas as pd
 
+from Database.scr.normalize_locations import NormalizeLocation
 from Database.scr.normalize_utils import Logging
 
 pd.set_option("display.max_rows", None)
@@ -82,9 +83,7 @@ shared_cols = [
     "Hazard",
 ]
 
-location_cols = [
-    "Location",
-]
+location_cols = ["Administrative_Area_Norm", "Location_Norm"]
 
 date_cols = [
     "Start_Date_Month",
@@ -96,7 +95,12 @@ date_cols = [
 
 # set main events output target columns
 target_columns = flatten(
-    [shared_cols, location_cols, date_cols, flatten([x for x in specific_impacts_columns.values()])]
+    [
+        shared_cols,
+        location_cols,
+        date_cols,
+        flatten([x for x in specific_impacts_columns.values()]),
+    ]
 )
 
 # get min,max range columns
@@ -106,7 +110,7 @@ for i in specific_impacts_columns.keys():
         range_only_col.extend(specific_impacts_columns[i])
 
 # get string type columns
-convert_to_str = flatten([shared_cols, location_cols])
+convert_to_str = flatten([shared_cols])
 for i in ["Insured_Damage", "Damage"]:
     convert_to_str.extend([x for x in specific_impacts_columns[i] if "_Min" not in x or "_Max" not in x])
 
@@ -134,10 +138,8 @@ def flatten_data_table():
         how="all",
         inplace=True,
     )
+    # data_table = data_table[target_columns]
     logger.info(f"Shape: {data_table.shape}")
-
-    logger.info("Fixing column names...")
-    data_table = data_table[target_columns]
 
     logger.info("Normalizing all NULLs")  # to python NoneType...")
     for col in data_table.columns:
@@ -183,16 +185,47 @@ def flatten_data_table():
     for col in convert_to_boolean:
         logger.debug(col)
         data_table[col] = data_table[col].apply(
-            lambda text: True if text and not isinstance(text, bool) and re.match(yes_pattern, text) else text
+            lambda text: (True if text and not isinstance(text, bool) and re.match(yes_pattern, text) else text)
         )
         data_table[col] = data_table[col].apply(
-            lambda text: False if text and not isinstance(text, bool) and re.match(no_pattern, text) else text
+            lambda text: (False if text and not isinstance(text, bool) and re.match(no_pattern, text) else text)
         )
+
+    norm_loc = NormalizeLocation(
+        gadm_path="Database/data/gadm_world.csv",
+        unsd_path="Database/data/UNSD — Methodology.csv",
+    )
+
+    logger.info("Extracting list of administrative areas and locations")
+    data_table[["_Administrative_Area", "_Location"]] = (
+        data_table["Location"].apply(norm_loc.extract_locations).apply(pd.Series)
+    )
+
+    logger.info("Normalizing administrative areas")
+    data_table["Administrative_Area_Norm"] = data_table["_Administrative_Area"].apply(
+        lambda admin_areas: [norm_loc.normalize_locations(area=c, is_country=True)[0] for c in admin_areas]
+        if admin_areas
+        else []
+    )
+
+    logger.info("Normalizing locations")
+    data_table["Location_Norm"] = data_table.apply(
+        lambda row: [
+            [norm_loc.normalize_locations(area=a) if a else None for a in area_list] if area_list else None
+            for area_list in row["_Location"]
+        ],
+        axis=1,
+    )
+    data_table["Location_Norm"] = data_table["Location_Norm"].apply(
+        lambda location_list: [[x[0] if x else None for x in area] if area else [] for area in location_list]
+        if location_list
+        else []
+    )
 
     logger.info("Splitting main events from specific impact")
     data_table["main"] = data_table.Event_ID_decimal.apply(lambda x: float(x).is_integer())
-    data_table["main"].value_counts()
 
+    logger.info("Fixing column names for 'Events'")
     Events = data_table[data_table["main"] == True][target_columns]
 
     specific_impacts_dfs = {}
@@ -215,6 +248,8 @@ def flatten_data_table():
 
         logger.debug(f"Dropping rows missing specific impacts: {df.shape}")
         df = df[~missing_spec_impact_msk]
+
+        logger.info("Normalizing locations")
 
         specific_impacts_dfs[spec] = df[df["main"] == False][spec_target_columns]
         del spec_target_columns
@@ -267,7 +302,7 @@ if __name__ == "__main__":
     for name, df in specific_impacts_dfs.items():
         if "_target_columns" not in name:
             logger.info(f"Storing {name} table")
-            logger.info("Fixing column names")
+            logger.info(f"Fixing column names for {name}")
 
             df = fix_column_names(df)
             df.to_parquet(f"{args.output_dir}/{name}.parquet", engine="fastparquet")
