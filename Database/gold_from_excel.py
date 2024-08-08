@@ -12,8 +12,6 @@ pd.set_option("display.max_columns", None)
 pd.set_option("display.width", None)
 
 
-# prepare columns
-# if new columns become part of the schema, edit them to this file
 def flatten(xss):
     return [x for xs in xss for x in xs]
 
@@ -36,7 +34,7 @@ def fix_column_names(df):
 
 
 # set specific impact columns
-specific_impacts_columns = {
+event_breakdown_columns = {
     "Injured": [
         "Injured_Min",
         "Injured_Max",
@@ -74,7 +72,7 @@ specific_impacts_columns = {
     ],
 }
 
-# main and specific impact events have these three column sets in common
+# main events, impact per country events, and specific instance events have these three column sets in common
 shared_cols = [
     "Event_ID",
     "Event_ID_decimal",
@@ -86,6 +84,7 @@ shared_cols = [
 location_cols = ["Administrative_Area_Norm", "Location_Norm"]
 
 date_cols = [
+    "Start_Date_Year",
     "Start_Date_Month",
     "Start_Date_Day",
     "End_Date_Year",
@@ -99,20 +98,20 @@ target_columns = flatten(
         shared_cols,
         location_cols,
         date_cols,
-        flatten([x for x in specific_impacts_columns.values()]),
+        flatten([x for x in event_breakdown_columns.values()]),
     ]
 )
 
 # get min,max range columns
 range_only_col = []
-for i in specific_impacts_columns.keys():
-    if len(specific_impacts_columns[i]) == 2:
-        range_only_col.extend(specific_impacts_columns[i])
+for i in event_breakdown_columns.keys():
+    if len(event_breakdown_columns[i]) == 2:
+        range_only_col.extend(event_breakdown_columns[i])
 
 # get string type columns
 convert_to_str = flatten([shared_cols])
 for i in ["Insured_Damage", "Damage"]:
-    convert_to_str.extend([x for x in specific_impacts_columns[i] if "_Min" not in x or "_Max" not in x])
+    convert_to_str.extend([x for x in event_breakdown_columns[i] if "_Min" not in x or "_Max" not in x])
 
 # get int type columns
 convert_to_int = flatten([date_cols, range_only_col])
@@ -123,7 +122,7 @@ split_by_pipe = ["Event_Name", "Source", "Hazard"]
 # get bool type columns
 convert_to_boolean = []
 for i in ["Insured_Damage", "Damage"]:
-    convert_to_boolean.extend([x for x in specific_impacts_columns[i] if "_Adjusted" in x and "_Year" not in x])
+    convert_to_boolean.extend([x for x in event_breakdown_columns[i] if "_Adjusted" in x and "_Year" not in x])
 
 convert_to_float = ["Event_ID_decimal"]
 
@@ -201,6 +200,11 @@ def flatten_data_table():
         data_table["Location"].apply(norm_loc.extract_locations).apply(pd.Series)
     )
 
+    logger.info("Extracting list of administrative areas and locations")
+    data_table[["_Administrative_Area", "_Location"]] = (
+        data_table["Location"].apply(norm_loc.extract_locations).apply(pd.Series)
+    )
+
     logger.info("Normalizing administrative areas")
     data_table["Administrative_Area_Norm"] = data_table["_Administrative_Area"].apply(
         lambda admin_areas: [norm_loc.normalize_locations(area=c, is_country=True)[0] for c in admin_areas]
@@ -221,41 +225,49 @@ def flatten_data_table():
         if location_list
         else []
     )
-
     logger.info("Splitting main events from specific impact")
     data_table["main"] = data_table.Event_ID_decimal.apply(lambda x: float(x).is_integer())
 
-    logger.info("Fixing column names for 'Events'")
+    # Level 1 -- "Main Events"
     Events = data_table[data_table["main"] == True][target_columns]
 
-    specific_impacts_dfs = {}
-    for spec in specific_impacts_columns.keys():
-        logger.info(f"Processing {spec}")
-        spec_target_columns = shared_cols.copy()
-        spec_target_columns.extend(location_cols)
-        spec_target_columns.extend(date_cols)
-        spec_target_columns.extend(specific_impacts_columns[spec])
-        specific_impacts_dfs[f"{spec}_target_columns"] = spec_target_columns
+    # Level 3 -- "Impacts Per country-level Administrative Area"
+    Impacts = data_table[data_table["Location_Norm"].apply(lambda x: flatten(x) == [])]
 
-        logger.info(f"Target columns: {spec_target_columns}")
-        df = data_table[flatten([spec_target_columns, ["main"]])].copy()
+    # Level 2 -- "Specific Instances per country-level Administrative Area"
+    Specific_Instances = data_table[~data_table["Location_Norm"].apply(lambda x: flatten(x) == [])]
 
-        missing_date_msk = df[date_cols].isna().all(axis=1)
-        missing_spec_impact_msk = df[date_cols].isna().all(axis=1)
-        logger.debug(f"Dropping rows missing dates: {df.shape}")
+    event_breakdown_dfs = {}
+    for name, df_lvl in {"Impacts": Impacts, "Specific_Instances": Specific_Instances}.items():
+        for e in event_breakdown_columns.keys():
+            logger.info(f"Processing {e}")
+            event_breakdown_target_columns = shared_cols.copy()
+            event_breakdown_target_columns.extend(location_cols)
+            event_breakdown_target_columns.extend(date_cols)
+            event_breakdown_target_columns.extend(event_breakdown_columns[e])
+            event_breakdown_dfs[f"{name}_{e}_target_columns"] = event_breakdown_target_columns
 
-        df = df[~missing_date_msk]
+            logger.info(f"Target columns: {event_breakdown_target_columns}")
+            df = df_lvl[flatten([event_breakdown_target_columns, ["main"]])].copy()
 
-        logger.debug(f"Dropping rows missing specific impacts: {df.shape}")
-        df = df[~missing_spec_impact_msk]
+            missing_date_msk = df[date_cols].isna().all(axis=1)
+            missing_spec_impact_msk = df[event_breakdown_columns[e]].isna().all(axis=1)
+            logger.debug(f"Dropping rows missing dates: {df.shape}")
+            df = df[~missing_date_msk]
 
-        logger.info("Normalizing locations")
+            logger.debug(f"Dropping rows missing specific impacts: {df.shape}")
+            df = df[~missing_spec_impact_msk]
 
-        specific_impacts_dfs[spec] = df[df["main"] == False][spec_target_columns]
-        del spec_target_columns
-        del df
-
-    return Events, specific_impacts_dfs
+            if name == "Impacts":
+                df.Administrative_Area_Norm = df.Administrative_Area_Norm.apply(lambda x: x[0])
+                event_breakdown_dfs[f"{e}_Per_Country"] = df[df["main"] == False][
+                    [x for x in event_breakdown_target_columns if x != "Location_Norm"]
+                ]
+            else:
+                event_breakdown_dfs[f"{name}_{e}_Per_Country"] = df[df["main"] == False][event_breakdown_target_columns]
+            del event_breakdown_target_columns
+            del df
+    return Events, event_breakdown_dfs
 
 
 if __name__ == "__main__":
@@ -291,7 +303,7 @@ if __name__ == "__main__":
     logger.info(f"Creating {args.output_dir} if it does not exist!")
     pathlib.Path(args.output_dir).mkdir(parents=True, exist_ok=True)
 
-    Events, specific_impacts_dfs = flatten_data_table()
+    Events, event_breakdown_dfs = flatten_data_table()
 
     logger.info("Storing Main Events table")
     Events.to_parquet(
@@ -299,7 +311,7 @@ if __name__ == "__main__":
         engine="fastparquet",
     )
 
-    for name, df in specific_impacts_dfs.items():
+    for name, df in event_breakdown_dfs.items():
         if "_target_columns" not in name:
             logger.info(f"Storing {name} table")
             logger.info(f"Fixing column names for {name}")
