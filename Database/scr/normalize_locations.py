@@ -157,7 +157,7 @@ class NormalizeLocation:
             unsd_search_output = self._get_unsd_region(area, return_name=True) if area and is_country else None
             if unsd_search_output:
                 # TODO: add geojson for unsd regions
-                return [unsd_search_output, "UNSD region", None]
+                return (unsd_search_output, "UNSD region", None)
 
             area = area.lower().strip()
             if "_" in area:
@@ -259,6 +259,7 @@ class NormalizeLocation:
                         geometry="geojson",
                         extratags=True,
                     )
+                    # TODO: what if nothing is found here?
                     l = sorted(l, key=lambda x: x.raw["place_rank"], reverse=False)
                     location = l[0]
 
@@ -268,7 +269,7 @@ class NormalizeLocation:
                     location.raw["addresstype"]
                     in [self.county, self.state, self.city, self.national_park, self.protected_area]
                     and location.raw["display_name"].split(",")[-1].strip() == "United States"
-                )
+                )  # thows exception here, so skips straight to the exception clause
                 else None
             )
 
