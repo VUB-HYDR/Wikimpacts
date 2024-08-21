@@ -1,7 +1,7 @@
 CREATE TABLE L1 (
     Event_ID TEXT PRIMARY KEY NOT NULL CHECK (length(Event_ID) = 7), /* COMMENT 'UID' */
     Event_Names OBJECT NOT NULL, /* COMMENT 'Array' */
-    Source OBJECT NOT NULL, /* COMMENT 'Array' */
+    Sources OBJECT NOT NULL, /* COMMENT 'Array' */
     Main_Event TEXT NOT NULL, /* COMMENT 'Categorical' */
     Hazards OBJECT NOT NULL, /* COMMENT 'Array', categorical */
 

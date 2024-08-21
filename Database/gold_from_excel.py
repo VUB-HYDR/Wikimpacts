@@ -35,17 +35,17 @@ def fix_column_names(df):
 
 # set specific impact columns
 event_breakdown_columns = {
-    "Injured": [
-        "Injured_Min",
-        "Injured_Max",
+    "Injuries": [
+        "Injuries_Min",
+        "Injuries_Max",
     ],
     "Deaths": [
         "Deaths_Min",
         "Deaths_Max",
     ],
-    "Displaced": [
-        "Displaced_Min",
-        "Displaced_Max",
+    "Displacement": [
+        "Displacement_Min",
+        "Displacement_Max",
     ],
     "Homeless": [
         "Homeless_Min",
