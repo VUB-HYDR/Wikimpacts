@@ -113,3 +113,567 @@ with open(
     Result_DIR + "response_wiki_GPT4o_20240729_test_set_affected.json", "w"
 ) as json_file:  # this output is general and robust, compare to only ask the all the information per location, this capture more information
     json.dump(response_gpt4o, json_file, indent=4)
+from json.decoder import JSONDecodeError
+
+response_gpt4o = []
+for item in data:
+    Event_ID = str(item.get("Event_ID"))
+    Source = str(item.get("Source"))
+    Event_Name = str(item.get("Event_Name"))
+    info_box = str(item.get("Info_Box"))
+    Whole_text = process_whole_text(item)
+
+    prompt_building_damage_country_0715 = f"""Based on the provided article {info_box} {Whole_text},
+      extract the number of damaged buildings associated with the {Event_Name},
+      covering a wide range of building types such as structures, homes, houses, households, apartments, office buildings, retail stores, hotels, schools, hospitals, and more,
+      along with supporting annotations from the article. The number of damaged buildings information can be splited into 3 parts,
+      the first is the total number of damaged buildings caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Total_Summary_Building_Damage":{{
+      - "Total_Building_Damage": "The total number of damaged buildings in the {Event_Name}.
+          Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., "hundreds of, "few houses", "several homes").
+          Do not sum the number of damaged buildings in the article to present the total number of damaged buildings,
+          and if no total number of damaged buildings explicitly mentioned or the information is missing, assign 'NULL'."
+      - "Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total number of damaged buildings. The output should only include "Info_Box" or the header name."
+        }}
+      the second is the total number of damaged buildings in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Building_Damage_Per_Country":[{{
+      - "Country": "Name of the country where the building damage occured, and no matter the building damage is in one or several countries, please order them in a list like [Country1, Country2, Country3].."
+      - "Start_Date": "The start date when the damaged buildings occurred, if mentioned."
+      - "End_Date":"The end date when the damaged buildings occurred, if mentioned."
+      - "Num": ""The total number of damaged buildings in this level related to the {Event_Name}.
+         Do not sum the number of damaged buildings in specific locations from the country to present the total number of damaged buildings for this level information.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., "hundreds of, "few houses", "several homes").
+         If the information is missing or if no total number of damaged buildings in this level is mentioned, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the total building damage in this level. The output should only include the header name."
+            }}]
+      the third is the specific instance of damaged buildings within each country caused by the {Event_Name}, make sure to capture all locations with damaged buildings information and organize this information in JSON format as follows:
+      - "Specific_Instance_Per_Country_Building_Damage":[{{
+      - "Country": "Name of the country."
+      - "Location": "The specific place/places within the country where the damaged buildings occurred, and no matter the building damage is in one or several places, order it/them in a list like ["city1";"city2";"city3"]."
+      - "Start_Date": "The start date when the damaged buildings occurred, if mentioned."
+      - "End_Date":"The end date when the damaged buildings occurred, if mentioned."
+      - "Num": "The number of damaged buildings in the specific location/locations related to the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., "hundreds of, "few houses", "several homes"). If the information is missing, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the building damage in this location. The output should only include the header name."
+            }}]
+      Ensure to capture all instances of damaged buildings mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """
+
+    event_info = {"Event_ID": Event_ID, "Source": Source, "Event_Name": Event_Name}
+    answer_str = completion_4(prompt_building_damage_country_0715)  # This returns a JSON format
+    try:
+        answer_dict = json.loads(answer_str)
+        # print(answer_dict)
+        event_info.update(answer_dict)
+
+    except JSONDecodeError as e:
+        event_info["Json_error_Building"] = str(e)
+
+    response_gpt4o.append(event_info)
+
+
+# Saving the results for all events to a JSON file
+with open(
+    Result_DIR + "response_wiki_GPT4o_20240729_test_set_Building.json", "w"
+) as json_file:  # this output is general and robust, compare to only ask the all the information per location, this capture more information
+    json.dump(response_gpt4o, json_file, indent=4)
+    # skip the multi events
+response_gpt4o = []
+
+for item in data:
+    Event_ID = str(item.get("Event_ID"))
+    Source = str(item.get("Source"))
+    Event_Name = str(item.get("Event_Name"))
+    info_box = str(item.get("Info_Box"))
+    Whole_text = process_whole_text(item)
+    # print(Whole_text)
+    prompt_death_country_0715 = f"""Based on information box {info_box} and header-content pair article {Whole_text}, extract the number of deaths associated with the {Event_Name},
+      along with supporting annotations from the article. The death information can be splited into 3 parts,
+      the first is the total number of deaths caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Total_Summary_Death":{{
+      - "Total_Death": "The total number of people who died in the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         Do not sum the number of death in the article to present the total number of death, and if no total number of death explicitly mentioned or the information is missing, assign 'NULL'."
+      - "Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total death. The output should only include "Info_Box" or the header name."
+      }}
+      the second is the total number of deaths in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Death_Per_Country":[{{
+      - "Country": "Name of the country where the death occurred, and no matter the deaths are in one or several countries, please order them in a list like [Country1, Country2, Country3]."
+      - "Start_Date": "The start date when the deaths occurred, if mentioned."
+      - "End_Date":"The end date when the deaths occurred, if mentioned."
+      - "Num": "The total number of people who died in this level related to the {Event_Name}.
+         Do not sum the number of death in specific locations from the country to present the total number of death for this level information.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         If the information is missing or if no total number of death in this level is mentioned, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the total death in this level. The output should only include the header name."
+            }}]
+      the third is the specific instance of deaths in the sub-national level caused by the {Event_Name}, make sure to capture all locations with death information and organize this information in JSON format as follows:
+      - "Specific_Instance_Per_Country_Death":[{{
+      - "Country": "Name of the country."
+      - "Location": "The specific place within the country where the deaths occurred, and no matter the deaths are in one or several places, order them in a list like ["Location1";"Location2";"Location3"]."
+      - "Start_Date": "The start date when the deaths occurred, if mentioned."
+      - "End_Date":"The end date when the deaths occurred, if mentioned."
+      - "Num": "The number of people who died in the specific location/locations related to the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people'). If the information is missing, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the death in this location. The output should only include the header name."
+       }}]
+      Ensure to capture all instances of death mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """
+
+    event_info = {"Event_ID": Event_ID, "Source": Source, "Event_Name": Event_Name}
+
+    answer_str = completion_4(prompt_death_country_0715)  # This returns a JSON format
+    answer_dict = json.loads(answer_str)
+    # print(answer_dict)
+    event_info.update(answer_dict)
+    response_gpt4o.append(event_info)
+
+# Saving the results for all events to a JSON file
+with open(
+    Result_DIR + "response_wiki_GPT4o_20240729_test_set_death.json", "w"
+) as json_file:  # this output is general and robust, compare to only ask the all the information per location, this capture more information
+    json.dump(response_gpt4o, json_file, indent=4)
+
+
+# skip the multi events
+
+from json.decoder import JSONDecodeError
+
+response_gpt4o = []
+for item in data:
+    Event_ID = str(item.get("Event_ID"))
+    Source = str(item.get("Source"))
+    Event_Name = str(item.get("Event_Name"))
+    info_box = str(item.get("Info_Box"))
+    Whole_text = process_whole_text(item)
+    # print(Whole_text)
+    prompt_displace_country_0715 = f"""Based on information box {info_box} and header-content pair article {Whole_text},
+      extract the number of displacement associated with the {Event_Name}, along with supporting annotations from the article.
+      The displacement information can be splited into 3 parts,
+      the first is the total number of displacement caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Total_Summary_Displace":{{
+      - "Total_Displace": "The total number of people who were displaced, evacuated, transfered/moved to the shelter, relocated or fleed in the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         Do not sum the number of displacement in the article to present the total number of displacement,
+         and if no total number of displacement explicitly mentioned or the information is missing, assign 'NULL'."
+      - "Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total displacement. The output should only include "Info_Box" or the header name."
+      }}
+      the second is the total number of displacement in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Displace_Per_Country":[{{
+      - "Country": "Name of the country where the displacement occurred, and no matter the displacement is in one or several countries, please order them in a list like [Country1, Country2, Country3]."
+      - "Start_Date": "The start date when the displacement occurred, if mentioned."
+      - "End_Date":"The end date when the displacement occurred, if mentioned."
+      - "Num": "The total number of people who were displaced, evacuated, transfered/moved to the shelter, relocated or fleed in this level related to the {Event_Name}.
+         Do not sum the number of displacement in specific locations from the country to present the total number of displacement for this level information.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         If the information is missing or if no total number of displacement in this level is mentioned, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the total displacement in this level. The output should only include the header name."
+            }}]
+      the third is the specific instance of displacement in the sub-national level caused by the {Event_Name}, make sure to capture all locations with displacement information and organize this information in JSON format as follows:
+      - "Specific_Instance_Per_Country_Displace":[{{
+      - "Country": "Name of the country."
+      - "Location": "The specific place within the country where the displacement occurred, and no matter the displacement is in one or several places, order them in a list like ["Location1";"Location2";"Location3"]."
+      - "Start_Date": "The start date when the displacement occurred, if mentioned."
+      - "End_Date":"The end date when the displacement occurred, if mentioned."
+      - "Num": "The number of people who were displaced, evacuated, transfered/moved to the shelter, relocated or fleed in the specific location/locations related to the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people'). If the information is missing, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the displacement in this location. The output should only include the header name."
+       }}]
+      Ensure to capture all instances of displacement mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """
+
+    event_info = {"Event_ID": Event_ID, "Source": Source, "Event_Name": Event_Name}
+
+    answer_str = completion_4(prompt_displace_country_0715)  # This returns a JSON format
+    try:
+        answer_dict = json.loads(answer_str)
+        # print(answer_dict)
+        event_info.update(answer_dict)
+
+    except JSONDecodeError as e:
+        event_info["Json_error_Displace"] = str(e)
+
+    response_gpt4o.append(event_info)
+
+
+# Saving the results for all events to a JSON file
+with open(
+    Result_DIR + "response_wiki_GPT4o_20240729_test_set_displace.json", "w"
+) as json_file:  # this output is general and robust, compare to only ask the all the information per location, this capture more information
+    json.dump(response_gpt4o, json_file, indent=4)
+# skip the multi events
+response_gpt4o = []
+for item in data:
+    Event_ID = str(item.get("Event_ID"))
+    Source = str(item.get("Source"))
+    Event_Name = str(item.get("Event_Name"))
+    info_box = str(item.get("Info_Box"))
+    Whole_text = process_whole_text(item)
+    # print(Whole_text)
+    prompt_homeless_country_0715 = f"""Based on information box {info_box} and header-content pair article {Whole_text},
+      extract the number of homelessness associated with the {Event_Name}, along with supporting annotations from the article.
+      The homelessness information can be splited into 3 parts,
+      the first is the total number of homelessness caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Total_Summary_Homeless":{{
+      - "Total_Homeless": "The total number of people who were homeless, lost their homes, experienced house damage, had their homes destroyed, were unhoused, without shelter, houseless, or shelterless in the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         Do not sum the number of homelessness in the article to present the total number of homelessness,
+         and if no total number of homelessness explicitly mentioned or the information is missing, assign 'NULL'."
+      - "Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total homelessness. The output should only include "Info_Box" or the header name."
+      }}
+      the second is the total number of homelessness in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Homeless_Per_Country":[{{
+      - "Country": "Name of the country where the homelessness occurred, and no matter the homelessness is in one or several countries, please order them in a list like [Country1, Country2, Country3]."
+      - "Start_Date": "The start date when the homelessness occurred, if mentioned."
+      - "End_Date":"The end date when the homelessness occurred, if mentioned."
+      - "Num": "The total number of people who were homeless, lost their homes, experienced house damage, had their homes destroyed, were unhoused, without shelter, houseless, or shelterless in this level related to the {Event_Name}.
+         Do not sum the number of homelessness in specific locations from the country to present the total number of homelessness for this level information.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         If the information is missing or if no total number of homelessness in this level is mentioned, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the total homelessness in this level. The output should only include the header name."
+            }}]
+      the third is the specific instance of homelessness in the sub-national level caused by the {Event_Name}, make sure to capture all locations with homelessness information and organize this information in JSON format as follows:
+      - "Specific_Instance_Per_Country_Homeless":[{{
+      - "Country": "Name of the country."
+      - "Location": "The specific place within the country where the homelessness occurred, and no matter the homelessness is in one or several places, order them in a list like ["Location1";"Location2";"Location3"]."
+      - "Start_Date": "The start date when the homelessness occurred, if mentioned."
+      - "End_Date":"The end date when the homelessness occurred, if mentioned."
+      - "Num": "The number of people who were homeless, lost their homes, experienced house damage, had their homes destroyed, were unhoused, without shelter, houseless, or shelterless in the specific location/locations related to the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people'). If the information is missing, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the homelessness in this location. The output should only include the header name."
+       }}]
+      Ensure to capture all instances of homelessness mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """
+
+    event_info = {"Event_ID": Event_ID, "Source": Source, "Event_Name": Event_Name}
+
+    answer_str = completion_4(prompt_homeless_country_0715)  # This returns a JSON format
+    answer_dict = json.loads(answer_str)
+    # print(answer_dict)
+    event_info.update(answer_dict)
+    response_gpt4o.append(event_info)
+
+# Saving the results for all events to a JSON file
+with open(
+    Result_DIR + "response_wiki_GPT4o_20240729_test_set_homeless.json", "w"
+) as json_file:  # this output is general and robust, compare to only ask the all the information per location, this capture more information
+    json.dump(response_gpt4o, json_file, indent=4)
+
+# skip the multi events
+response_gpt4o = []
+for item in data:
+    Event_ID = str(item.get("Event_ID"))
+    Source = str(item.get("Source"))
+    Event_Name = str(item.get("Event_Name"))
+    info_box = str(item.get("Info_Box"))
+    Whole_text = process_whole_text(item)
+    # print(Whole_text)
+    prompt_injury_country_0715 = f"""Based on information box {info_box} and header-content pair article {Whole_text},
+      extract the number of non-fatal injuries associated with the {Event_Name}, along with supporting annotations from the article.
+      The non-fatal injuries information can be splited into 3 parts,
+      the first is the total number of non-fatal injuries caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Total_Summary_Injury":{{
+      - "Total_Injury": "The total number of people who got injured, hurt, wound, or hospitalized (excluding death) in the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         Do not sum the number of non-fatal injuries in the article to present the total number of non-fatal injuries,
+         and if no total number of non-fatal injuries explicitly mentioned or the information is missing, assign 'NULL'."
+      - "Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total non-fatal injuries. The output should only include "Info_Box" or the header name."
+      }}
+      the second is the total number of non-fatal injuries in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Injury_Per_Country":[{{
+      - "Country": "Name of the country where the non-fatal injuries occurred, and no matter the non-fatal injuries are in one or several countries, please order them in a list like [Country1, Country2, Country3]."
+      - "Start_Date": "The start date when the non-fatal injuries occurred, if mentioned."
+      - "End_Date":"The end date when the non-fatal injuries occurred, if mentioned."
+      - "Num": "The total number of people who got injured, hurt, wound, or hospitalized (excluding death) in this level related to the {Event_Name}.
+         Do not sum the number of non-fatal injuries in specific locations from the country to present the total number of non-fatal injuries for this level information.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         If the information is missing or if no total number of non-fatal injuries in this level is mentioned, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the total non-fatal injuries in this level. The output should only include the header name."
+            }}]
+      the third is the specific instance of non-fatal injuries in the sub-national level caused by the {Event_Name}, make sure to capture all locations with non-fatal injuries information and organize this information in JSON format as follows:
+      - "Specific_Instance_Per_Country_Injury":[{{
+      - "Country": "Name of the country."
+      - "Location": "The specific place within the country where the non-fatal injuries occurred, and no matter the non-fatal injuries are in one or several places, order them in a list like ["Location1";"Location2";"Location3"]."
+      - "Start_Date": "The start date when the non-fatal injuries occurred, if mentioned."
+      - "End_Date":"The end date when the non-fatal injuries occurred, if mentioned."
+      - "Num": "The number of people who got injured, hurt, wound, or hospitalized (excluding death) in the specific location/locations related to the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people'). If the information is missing, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the non-fatal injuries in this location. The output should only include the header name."
+       }}]
+      Ensure to capture all instances of non-fatal injuries mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """
+
+    event_info = {"Event_ID": Event_ID, "Source": Source, "Event_Name": Event_Name}
+
+    answer_str = completion_4(prompt_injury_country_0715)  # This returns a JSON format
+    answer_dict = json.loads(answer_str)
+    # print(answer_dict)
+    event_info.update(answer_dict)
+    response_gpt4o.append(event_info)
+
+# Saving the results for all events to a JSON file
+with open(
+    Result_DIR + "response_wiki_GPT4o_20240729_test_set_injury.json", "w"
+) as json_file:  # this output is general and robust, compare to only ask the all the information per location, this capture more information
+    json.dump(response_gpt4o, json_file, indent=4)
+
+from json.decoder import JSONDecodeError
+
+response_gpt4o = []
+for item in data:
+    Event_ID = str(item.get("Event_ID"))
+    Source = str(item.get("Source"))
+    Event_Name = str(item.get("Event_Name"))
+    info_box = str(item.get("Info_Box"))
+    Whole_text = process_whole_text(item)
+
+    prompt_insure_per_country_0715 = f"""
+            Based on information box {info_box} and header-content pair article {Whole_text},
+            extract the insured damage information associated with the {Event_Name}, along with supporting annotations from the article.
+            The insured damage information can be splited into 3 parts,
+            the first is the total insured damage caused by the {Event_Name}, including damage or loss to property, belongings, or persons covered under the terms of an insurance policy,
+            and organize this information in JSON format as follows:
+            - "Total_Summary_Insured_Damage": {{
+            - "Total_Insured_Damage": "The total amount of insured damage and make sure the information extracted for this containing the keyword "insured" or "insurance".
+               Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion', "minimal").
+               Do not sum the number of insured damage in the article to present the total number of insured damage,
+               and if no total number of insured damage explicitly mentioned or the information is missing, assign 'NULL'."
+            - "Units": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+            - "Inflation_Adjusted": "Indicate 'Yes' if the total insured damage amount has been adjusted for inflation; otherwise "No", If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+            - "Inflation_Adjusted_Year": "The year of inflation adjustment for the total insured damage, if applicable; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+            - "Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total insured damage. The output should only include "Info_Box" or the header name."
+              }}
+            the second is the total insured damage in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
+             - "Insured_Damage_Per_Country":[{{
+              - "Country": "Name of the country where the insured damage occured, and no matter the total insured damage is in one or several countries, please order them in a list like [Country1, Country2, Country3]."
+              - "Start_Date": "The start date when the insured damage occurred, if mentioned."
+              - "End_Date":"The end date when the insured damage occurred, if mentioned."
+              - "Total_Insured_Damage": "The total amount of insured damage in this level related to the {Event_Name} and make sure the information extracted for this containing the keyword "insured" or "insurance".
+                 Do not sum the insured damage in specific locations from the country to present the total insured damage for this level information.
+                 Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion').
+                 If the information is missing or if no total insured damage in this level is mentioned, assign 'NULL'."
+              - "Units": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+              - "Inflation_Adjusted": "Indicate 'Yes' if the total insured damage amount has been adjusted for inflation; otherwise "No", and if Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+              - "Adjusted_Year": "The year of inflation adjustment for the total insured damage, if applicable; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+              - "Annotation": "Cite the header name from the article provided where you find the information about the total insured damage in this level. The output should only include the header name."
+                  }}]
+              the third is the specific instance of insured damage in the sub-national level caused by the {Event_Name}, make sure to capture all locations with insured damage information and organize this information in JSON format as follows:
+              - "Specific_Instance_Per_Country_Insured_Damage":[{{
+              - "Country": "Name of the country."
+              - "Location": "The specific place/places within the country where the insured damage occurred, and no matter the insured damage is in one or several places, order it/them in a list like ["Location1";"Location2";"Location3"]."
+              - "Start_Date": "The start date when the insured damage occurred, if mentioned."
+              - "End_Date":"The end date when the insured damage occurred, if mentioned."
+              - "Insured_Damage": "The amount of insured damage in the specific location/locations related to the {Event_Name} and make sure the information extracted for this containing the keyword "insured" or "insurance".
+                 Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion'). If the information is missing, assign 'NULL'."
+              - "Units": "The currency of the insured damage, like USD, EUR. If Insured_Damage is missing from the previous step, assign 'NULL'."
+              - "Inflation_Adjusted": "Indicate 'Yes' if the insured damage amount has been adjusted for inflation; otherwise "No", If Insured_Damage is missing from the previous step, assign 'NULL'."
+              - "Inflation_Adjusted_Year": "The year of inflation adjustment for the insured damage, if applicable; If Insured_Damage is missing from the previous step, assign 'NULL'."
+              - "Annotation": "Cite the header name from the article provided where you find the information about the insured damage in this location. The output should only include the header name."
+
+                 }}]
+            Ensure to capture all instances of insured damage mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """
+
+    event_info = {"Event_ID": Event_ID, "Source": Source, "Event_Name": Event_Name}
+
+    answer_str = completion_4(prompt_insure_per_country_0715)  # This returns a JSON format
+    try:
+        answer_dict = json.loads(answer_str)
+        # print(answer_dict)
+        event_info.update(answer_dict)
+
+    except JSONDecodeError as e:
+        event_info["Json_error_Insured"] = str(e)
+
+    response_gpt4o.append(event_info)
+
+
+# Saving the results for all events to a JSON file
+with open(
+    Result_DIR + "response_wiki_GPT4o_20240729_test_set_insured.json", "w"
+) as json_file:  # this output is general and robust, compare to only ask the all the information per location, this capture more information
+    json.dump(response_gpt4o, json_file, indent=4)
+
+from json.decoder import JSONDecodeError
+
+response_gpt4o = []
+for item in data:
+    Event_ID = str(item.get("Event_ID"))
+    Source = str(item.get("Source"))
+    Event_Name = str(item.get("Event_Name"))
+    info_box = str(item.get("Info_Box"))
+    Whole_text = process_whole_text(item)
+
+    prompt_economic_per_country_0715 = f"""
+            Based on information box {info_box} and header-content pair article {Whole_text},
+            extract the economic damage information associated with the {Event_Name}, along with supporting annotations from the article.
+            The economic damage information can be splited into 3 parts,
+            the first is the total economic damage caused by the {Event_Name},
+            and organize this information in JSON format as follows:
+            - "Total_Summary_Economic_Damage": {{
+            - "Total_Economic_Damage": "The total amount of economic damage.
+               Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion', "minimal").
+               Do not sum the number of economic damage in the article to present the total number of economic damage,
+               and if no total number of economic damage explicitly mentioned or the information is missing, assign 'NULL'."
+            - "Units": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+            - "Inflation_Adjusted": "Indicate 'Yes' if the total economic damage amount has been adjusted for inflation; otherwise "No", If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+            - "Inflation_Adjusted_Year": "The year of inflation adjustment for the total economic damage, if applicable; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+            - "Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total economic damage. The output should only include "Info_Box" or the header name."
+              }}
+            the second is the total economic damage in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
+             - "Economic_Damage_Per_Country":[{{
+              - "Country": "Name of the country where the economic damage occured, and no matter the total economic damage is in one or several countries, please order them in a list like [Country1, Country2, Country3]."
+              - "Start_Date": "The start date when the economic damage occurred, if mentioned."
+              - "End_Date":"The end date when the economic damage occurred, if mentioned."
+              - "Total_Economic_Damage": "The total amount of economic damage in this level related to the {Event_Name}.
+                 Do not sum the economic damage in specific locations from the country to present the total economic damage for this level information.
+                 Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion').
+                 If the information is missing or if no total economic damage in this level is mentioned, assign 'NULL'."
+              - "Units": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+              - "Inflation_Adjusted": "Indicate 'Yes' if the total economic damage amount has been adjusted for inflation; otherwise "No", and if Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+              - "Adjusted_Year": "The year of inflation adjustment for the total economic damage, if applicable; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+              - "Annotation": "Cite the header name from the article provided where you find the information about the total economic damage in this level. The output should only include the header name."
+                  }}]
+              the third is the specific instance of economic damage in the sub-national level caused by the {Event_Name}, make sure to capture all locations with economic damage information and organize this information in JSON format as follows:
+              - "Specific_Instance_Per_Country_Economic_Damage":[{{
+              - "Country": "Name of the country."
+              - "Location": "The specific place/places within the country where the economic damage occurred, and no matter the economic damage is in one or several places, order it/them in a list like ["Location1";"Location2";"Location3"]."
+              - "Start_Date": "The start date when the economic damage occurred, if mentioned."
+              - "End_Date":"The end date when the economic damage occurred, if mentioned."
+              - "Economic_Damage": "The amount of economic damage in the specific location/locations related to the {Event_Name}.
+                 Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion'). If the information is missing, assign 'NULL'."
+              - "Units": "The currency of the economic damage, like USD, EUR. If Economic_Damage is missing from the previous step, assign 'NULL'."
+              - "Inflation_Adjusted": "Indicate 'Yes' if the economic damage amount has been adjusted for inflation; otherwise "No", If Economic_Damage is missing from the previous step, assign 'NULL'."
+              - "Inflation_Adjusted_Year": "The year of inflation adjustment for the economic damage, if applicable; If Economic_Damage is missing from the previous step, assign 'NULL'."
+              - "Annotation": "Cite the header name from the article provided where you find the information about the economic damage in this location. The output should only include the header name."
+
+                 }}]
+            Ensure to capture all instances of economic damage mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """
+
+    event_info = {"Event_ID": Event_ID, "Source": Source, "Event_Name": Event_Name}
+
+    answer_str = completion_4(prompt_economic_per_country_0715)  # This returns a JSON format
+    try:
+        answer_dict = json.loads(answer_str)
+        # print(answer_dict)
+        event_info.update(answer_dict)
+
+    except JSONDecodeError as e:
+        event_info["Json_error_Economic"] = str(e)
+
+    response_gpt4o.append(event_info)
+
+
+# Saving the results for all events to a JSON file
+with open(
+    Result_DIR + "response_wiki_GPT4o_20240729_test_set_total_damage.json", "w"
+) as json_file:  # this output is general and robust, compare to only ask the all the information per location, this capture more information
+    json.dump(response_gpt4o, json_file, indent=4)
+
+# for basic information
+
+# Set the API key for the OpenAI client
+openai.api_key = api_key
+
+
+def completion_4(prompt):
+    response = openai.chat.completions.create(
+        # gpt4 model gpt-4-1106-preview training data upto 2023
+        response_format={"type": "json_object"},
+        model="gpt-4o",
+        messages=[
+            {
+                "role": "system",
+                "content": "You are a climate scientist. You will be provided with an article to analyze the basic information of a disaster event. Please take your time to read the text thoroughly and conduct the analysis step by step.",
+            },
+            {"role": "user", "content": prompt},
+        ],
+        temperature=0,  # randomness
+        max_tokens=4096,  # This model supports at most 4096 completion tokens
+        n=1,
+        top_p=1,  # return the max probility result
+        stop=None,
+    )
+    message = response.choices[0].message.content
+    return message
+
+
+from json.decoder import JSONDecodeError
+
+response_gpt4o = []
+for item in data:
+    Event_ID = str(item.get("Event_ID"))
+    Source = str(item.get("Source"))
+    Event_Name = str(item.get("Event_Name"))
+    info_box = str(item.get("Info_Box"))
+    Whole_text = process_whole_text(item)
+
+    prompt_main_event_hazard_0715 = f"""
+         Based on information box {info_box} and header-content pair article {Whole_text},
+         extract main_event category and hazard information associated with the {Event_Name}, along with supporting annotations from the article.
+         Below is the Main_Event--Hazard association table,
+         Main Event: Flood; Hazard: Flood
+         Main Event: Extratropical Storm/Cyclone; Hazards: Wind; Flood; Blizzard; Hail
+         Main Event: Tropical Storm/Cyclone; Hazards: Wind; Flood; Lightning
+         Main Event: Extreme Temperature; Hazards: Heatwave; Cold Spell
+         Main Event: Drought; Hazard: Drought
+         Main Event: Wildfire; Hazard: Wildfire
+         Main Event: Tornado; Hazard: Wind
+         first identify the Main_Event category information from the text, and organize this information in JSON format as follows:
+           - "Main_Event": "identify the event category of the {Event_Name} referring the Main_Event--Hazard table, and only one Main_Event category should be assigned."
+           - "Main_Event_Assessment_With_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the Main_Event category. The output should only include "Info_Box" or the header name."
+         based on the result of the Main_Event category from the previous step and the Main_Event--Hazard table, identify the hazard information and organize this information in JSON format as follows:
+           - "Hazard": "Identify the hazard of the {Event_Name}, make sure the hazard is associated with the Main_Event category from the table, and if more than one hazard is detected from the text, separate them with '|'. "
+           - "Hazard_Assessment_With_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the hazard information. The output should only include "Info_Box" or the header name."
+          Only Give Json output, no extra explanation needed."""
+    event_info = {"Event_ID": Event_ID, "Source": Source, "Event_Name": Event_Name}
+    answer_str = completion_4(prompt_main_event_hazard_0715)  # This returns a JSON format
+    try:
+        answer_dict = json.loads(answer_str)
+        # print(answer_dict)
+        event_info.update(answer_dict)
+
+    except JSONDecodeError as e:
+        event_info["Json_error_main_hazard"] = str(e)
+
+    response_gpt4o.append(event_info)
+
+
+# Saving the results for all events to a JSON file
+with open(
+    Result_DIR + "response_wiki_GPT4o_20240729_test_set_main_hazard.json", "w"
+) as json_file:  # this output is general and robust, compare to only ask the all the information per location, this capture more information
+    json.dump(response_gpt4o, json_file, indent=4)
+
+from json.decoder import JSONDecodeError
+
+response_gpt4o = []
+for item in data:
+    Event_ID = str(item.get("Event_ID"))
+    Source = str(item.get("Source"))
+    Event_Name = str(item.get("Event_Name"))
+    info_box = str(item.get("Info_Box"))
+    Whole_text = process_whole_text(item)
+    prompt_location_time_0715 = f"""
+        Based on information box {info_box} and header-content pair article {Whole_text}, extract time and location information associated with the {Event_Name}, along with supporting annotations from the article.
+        the first is to identify the time information of the event {Event_Name}, and organize this information in JSON format as follows:
+        - "Start_Date": "The start date of the event. If the specific day or month is not known, include at least the year if it's available. If no time information is available, enter 'NULL'. If the exact date is not clear (e.g., "summer of 2021", "June 2020"), please retain the text as mentioned."
+        - "End_Date": "The end date of the event. If the specific day or month is not known, include at least the year if it's available. If no time information is available, enter 'NULL'. If the exact date is not clear (e.g., "summer of 2021", "June 2020"), please retain the text as mentioned."
+        - "Time_with_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the time. The output should only include "Info_Box" or the header name."
+        the second is to identify all locations affected by {Event_Name} and organize this information in JSON format as follows:
+        - "Location": "List all places mentioned in the text, including cities, regions, countries, and other administrative locations affected by {Event_Name}. The list should be formatted as ["location1", "location2"]."
+        - "Location_with_Annotation":  "Cite "Info_Box" or the header name from the article provided where you find the information about the affected locations. The output should only include "Info_Box" or the header name."
+         Only Give Json output, no extra explanation needed."""
+
+    event_info = {"Event_ID": Event_ID, "Source": Source, "Event_Name": Event_Name}
+    answer_str = completion_4(prompt_location_time_0715)  # This returns a JSON format
+    try:
+        answer_dict = json.loads(answer_str)
+        # print(answer_dict)
+        event_info.update(answer_dict)
+
+    except JSONDecodeError as e:
+        event_info["Json_error_location_time"] = str(e)
+
+    response_gpt4o.append(event_info)
+
+
+# Saving the results for all events to a JSON file
+with open(
+    Result_DIR + "response_wiki_GPT4o_20240729_test_set_location_time.json", "w"
+) as json_file:  # this output is general and robust, compare to only ask the all the information per location, this capture more information
+    json.dump(response_gpt4o, json_file, indent=4)
