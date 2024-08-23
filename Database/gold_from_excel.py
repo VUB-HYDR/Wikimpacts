@@ -111,7 +111,13 @@ for i in event_breakdown_columns.keys():
 
 # get string type columns
 convert_to_str = flatten([shared_cols])
+# TODO: these columns have multiple values, store as a LIST!
+# may not be "norlamized" with an excel formula
 for i in ["Insured_Damage", "Damage"]:
+    # split by pipe
+    event_breakdown_columns[i].split("|")
+    # normalize ranges (to min/max)
+    #
     convert_to_str.extend([x for x in event_breakdown_columns[i] if "_Min" not in x or "_Max" not in x])
 
 # get int type columns
