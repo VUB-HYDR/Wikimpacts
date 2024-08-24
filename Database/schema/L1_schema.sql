@@ -1,4 +1,4 @@
-CREATE TABLE L1 (
+CREATE TABLE Total_Summary_Events (
     Event_ID TEXT PRIMARY KEY NOT NULL CHECK (length(Event_ID) = 7), /* COMMENT 'UID' */
     Event_Names OBJECT NOT NULL, /* COMMENT 'Array' */
     Sources OBJECT NOT NULL, /* COMMENT 'Array' */
@@ -62,5 +62,5 @@ CREATE TABLE L1 (
         length(Total_Damage_Inflation_Adjusted_Year) = 4
     ),
 
-    FOREIGN KEY(Event_ID) REFERENCES L1(Event_ID)
+    FOREIGN KEY(Event_ID) REFERENCES Total_Summary_Events(Event_ID)
 );

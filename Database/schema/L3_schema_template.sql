@@ -1,6 +1,4 @@
-
-
-CREATE TABLE L3_type_numerical (
+CREATE TABLE Specific_Instance_Per_Country_type_numerical (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) = 7), /* COMMENT 'UID' */
 
     Administrative_Area_Norm TEXT NOT NULL,
@@ -23,11 +21,11 @@ CREATE TABLE L3_type_numerical (
     Num_Min REAL CHECK (Num_Min > 0),
     Num_Max REAL CHECK (Num_Max > 0),
     Num_Approx INTEGER CHECK (Num_Approx == 1 OR Num_Approx ==  0), /* COMMENT 'Boolean' */
-    FOREIGN KEY(Event_ID) REFERENCES L1(Event_ID)
+    FOREIGN KEY(Event_ID) REFERENCES Total_Summary_Events(Event_ID)
 );
 
 
-CREATE TABLE L3_type_monetary (
+CREATE TABLE Specific_Instance_Per_Country_type_monetary (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) = 7), /* COMMENT 'UID' */
 
     Administrative_Area_Norm TEXT NOT NULL,
@@ -56,5 +54,5 @@ CREATE TABLE L3_type_monetary (
         length(Num_Inflation_Adjusted_Year) = 4
     ),
 
-    FOREIGN KEY(Event_ID) REFERENCES L1(Event_ID)
+    FOREIGN KEY(Event_ID) REFERENCES Total_Summary_Events(Event_ID)
 );
