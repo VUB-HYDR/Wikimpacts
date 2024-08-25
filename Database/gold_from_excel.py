@@ -177,19 +177,7 @@ def flatten_data_table():
             data_table[col] = data_table[col].apply(
                 lambda x: (None if x is None else (int(x.strip()) if str(x).isdigit() else None))
             )
-    """
-    logger.info(f"Converting to lists: {convert_to_list}")
-    for col in convert_to_list:
-        logger.debug(col)
-        if col in data_table.columns:
-            data_table[col] = data_table[col].apply(
-                lambda x: (
-                    None
-                    if x is None
-                    else x.split("|")
-                )
-            )
-    """
+
     logger.info("Dropping bad dates or rows with missing dates...")
     # TODO: this may be a step we want to skip with gold data imports
     for col in date_cols:
