@@ -9,7 +9,7 @@ def generate_db(
     l1_schema: str = "Database/schema/L1_schema.sql",
     l2_schema: str = None,
     l3_schema: str = None,
-    type_numerical_cat: list[str] = ["Injuries", "Deaths", "Displacement", "Homeless", "Buildings_Damaged", "Affected"],
+    type_numerical_cat: list[str] = ["Injuries", "Deaths", "Displaced", "Homeless", "Buildings_Damaged", "Affected"],
     type_monetary_cat: list[str] = ["Insured_Damage", "Damage"],
 ):
     commands = []

@@ -27,10 +27,15 @@ CREATE TABLE Total_Summary_Events (
     Total_Injuries_Max REAL CHECK (Total_Injuries_Max > 0),
     Total_Injuries_Approx INTEGER CHECK (Total_Injuries_Approx == 1 OR Total_Injuries_Approx ==  0), /* COMMENT 'Boolean' */
 
-    /* Numerical: Displacement */
-    Total_Displacement_Min REAL CHECK (Total_Displacement_Min > 0),
-    Total_Displacement_Max REAL CHECK (Total_Displacement_Max > 0),
-    Total_Displacement_Approx INTEGER CHECK (Total_Displacement_Approx == 1 OR Total_Displacement_Approx ==  0), /* COMMENT 'Boolean' */
+    /* Numerical: Affected */
+    Total_Affected_Min REAL CHECK (Total_Affected_Min > 0),
+    Total_Affected_Max REAL CHECK (Total_Affected_Max > 0),
+    Total_Affected_Approx INTEGER CHECK (Total_Affected_Approx == 1 OR Total_Affected_Approx ==  0), /* COMMENT 'Boolean' */
+
+    /* Numerical: Displaced */
+    Total_Displaced_Min REAL CHECK (Total_Displaced_Min > 0),
+    Total_Displaced_Max REAL CHECK (Total_Displaced_Max > 0),
+    Total_Displaced_Approx INTEGER CHECK (Total_Displaced_Approx == 1 OR Total_Displaced_Approx ==  0), /* COMMENT 'Boolean' */
 
     /* Numerical: Homeless */
     Total_Homeless_Min REAL CHECK (Total_Homeless_Min > 0),
