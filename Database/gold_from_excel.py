@@ -373,8 +373,8 @@ def flatten_data_table():
     event_breakdown_dfs = {}
 
     for name, df_lvl in {
-        "Impact_Per_Country": Impact_Per_Country,
-        "Specific_Instance_Per_Country": Specific_Instance_Per_Country,
+        "Impact_Per_Country": Impact_Per_Country,  # l2
+        "Specific_Instance_Per_Country": Specific_Instance_Per_Country,  # l3
     }.items():
         for col_type in event_breakdown_columns.keys():
             logger.info(
