@@ -468,7 +468,7 @@ if __name__ == "__main__":
             logger.info(f"Creating {args.output_dir}/{i} if it does not exist!")
             pathlib.Path(f"{args.output_dir}/{i}").mkdir(parents=True, exist_ok=True)
 
-            Events[Events["split"] == i].to_parquet(
+            Events[Events["split"] == i][[x for x in Events.columns if x != "split"]].to_parquet(
                 f"{args.output_dir}/{i}/Events.parquet",
                 engine="fastparquet",
             )
@@ -489,7 +489,7 @@ if __name__ == "__main__":
                     logger.info(f"Creating {args.output_dir}/{i} if it does not exist!")
                     pathlib.Path(f"{args.output_dir}/{i}").mkdir(parents=True, exist_ok=True)
 
-                    df[df["split"] == i].to_parquet(
+                    df[df["split"] == i][[x for x in df.columns if x != "split"]].to_parquet(
                         f"{args.output_dir}/{i}/{name}.parquet",
                         engine="fastparquet",
                     )
