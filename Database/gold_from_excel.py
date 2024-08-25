@@ -4,7 +4,6 @@ import re
 
 import pandas as pd
 
-from Database.scr.normalize_locations import NormalizeLocation
 from Database.scr.normalize_utils import Logging
 
 pd.set_option("display.max_rows", None)
@@ -17,11 +16,11 @@ def flatten(xss):
 
 
 def fix_column_names(df):
+    # TODO: L2 and L3 differ here!
     mapper = {
         "_Min": "Num_Min",
         "_Max": "Num_Max",
-        "_Unit": "Num_Unit",
-        "_Units": "Num_Unit",
+        "_Units": "Num_Units",
         "_Adjusted": "Num_Inflation_Adjusted",
         "_Adjusted_Year": "Num_Adjusted_Year",
     }
@@ -33,56 +32,62 @@ def fix_column_names(df):
     return df
 
 
+## OUTPUT COLUMN SCHEMA ##
+
 # set specific impact columns
 event_breakdown_columns = {
-    "Injuries": [
-        "Injuries_Min",
-        "Injuries_Max",
-    ],
-    "Deaths": [
-        "Deaths_Min",
-        "Deaths_Max",
-    ],
-    "Displacement": [
-        "Displacement_Min",
-        "Displacement_Max",
-    ],
-    "Homeless": [
-        "Homeless_Min",
-        "Homeless_Max",
-    ],
-    "Buildings_Damaged": [
-        "Buildings_Damaged_Min",
-        "Buildings_Damaged_Max",
-    ],
-    "Affected": ["Affected_Min", "Affected_Max"],
-    "Insured_Damage": [
-        "Insured_Damage_Min",
-        "Insured_Damage_Max",
-        "Insured_Damage_Unit",
-        "Insured_Damage_Inflation_Adjusted",
-        "Insured_Damage_Inflation_Adjusted_Year",
-    ],
-    "Damage": [
-        "Damage_Min",
-        "Damage_Max",
-        "Damage_Units",
-        "Damage_Inflation_Adjusted",
-        "Damage_Inflation_Adjusted_Year",
-    ],
+    "numerical": {
+        "Injuries": [
+            "Injuries_Min",
+            "Injuries_Max",
+        ],
+        "Deaths": [
+            "Deaths_Min",
+            "Deaths_Max",
+        ],
+        "Displaced": [
+            "Displaced_Min",
+            "Displaced_Max",
+        ],
+        "Homeless": [
+            "Homeless_Min",
+            "Homeless_Max",
+        ],
+        "Buildings_Damaged": [
+            "Buildings_Damaged_Min",
+            "Buildings_Damaged_Max",
+        ],
+        "Affected": ["Affected_Min", "Affected_Max"],
+    },
+    "monetary": {
+        "Insured_Damage": [
+            "Insured_Damage_Min",
+            "Insured_Damage_Max",
+            "Insured_Damage_Units",
+            "Insured_Damage_Inflation_Adjusted",
+            "Insured_Damage_Inflation_Adjusted_Year",
+        ],
+        "Damage": [
+            "Damage_Min",
+            "Damage_Max",
+            "Damage_Units",
+            "Damage_Inflation_Adjusted",
+            "Damage_Inflation_Adjusted_Year",
+        ],
+    },
 }
 
-# main events, impact per country events, and specific instance events have these three column sets in common
+# L1, L2, and L3 have these three column sets in common
 shared_cols = [
     "Event_ID",
     "Event_ID_decimal",
     "Sources",
     "Event_Names",
     "Hazards",
+    "split",  # dataset split; example: dev/test
 ]
 
-# TODO: add plural 's' for L1-2 for admin_area and for L3 for location
-location_cols = ["Administrative_Area_Norm", "Location_Norm"]
+location_cols = []  # ["Administrative_Area_Norm", "Location_Norm"]
 
 date_cols = [
     "Start_Date_Year",
@@ -93,78 +98,102 @@ date_cols = [
     "End_Date_Day",
 ]
 
-# set main events output target columns
+# set L1 output target columns
 target_columns = flatten(
     [
         shared_cols,
         location_cols,
         date_cols,
-        flatten([x for x in event_breakdown_columns.values()]),
+        flatten([x for x in event_breakdown_columns["monetary"].values()]),
+        flatten([x for x in event_breakdown_columns["numerical"].values()]),
     ]
 )
 
-# get min,max range columns
-range_only_col = []
-for i in event_breakdown_columns.keys():
-    if len(event_breakdown_columns[i]) == 2:
-        range_only_col.extend(event_breakdown_columns[i])
+## SETTINGS TO NORMALIZE COLUMNS ##
+
+# get numeric type columns
+numeric_type_col = []
+for i in event_breakdown_columns["numerical"].keys():
+    numeric_type_col.extend(event_breakdown_columns["numerical"][i])
 
 # get string type columns
 convert_to_str = flatten([shared_cols])
-# TODO: these columns have multiple values, store as a LIST!
-# may not be "norlamized" with an excel formula
-for i in ["Insured_Damage", "Damage"]:
-    # split by pipe
-    event_breakdown_columns[i].split("|")
-    # normalize ranges (to min/max)
-    #
-    convert_to_str.extend([x for x in event_breakdown_columns[i] if "_Min" not in x or "_Max" not in x])
+convert_to_int = flatten([date_cols, numeric_type_col])
+convert_to_list = [
+    "Sources",
+    "Event_Names",
+    "Hazards",
+]
 
-# get int type columns
-convert_to_int = flatten([date_cols, range_only_col])
+# get monetary type columns
+monetary_type_col = []
+for i in event_breakdown_columns["monetary"].keys():
+    monetary_type_col.extend(
+        [col for col in event_breakdown_columns["monetary"][i] if not col.endswith("_Min") or not col.endswith("_Max")]
+    )
+    monetary_type_col.append(i)
 
 # get "list" type columns with pipe separator
 split_by_pipe = ["Event_Names", "Sources", "Hazards"]
+# split_by_pipe.extend(event_breakdown_columns["monetary"].keys())
+for i in event_breakdown_columns["monetary"].keys():
+    split_by_pipe.append(i)
+    split_by_pipe.extend(
+        [x for x in event_breakdown_columns["monetary"][i] if not x.endswith("_Min") and not x.endswith("_Max")]
+    )
 
 # get bool type columns
 convert_to_boolean = []
-for i in ["Insured_Damage", "Damage"]:
-    convert_to_boolean.extend([x for x in event_breakdown_columns[i] if "_Adjusted" in x and "_Year" not in x])
+for i in event_breakdown_columns["monetary"].keys():
+    convert_to_boolean.extend(
+        [x for x in event_breakdown_columns["monetary"][i] if "_Adjusted" in x and "_Year" not in x]
+    )
 
 convert_to_float = ["Event_ID_decimal"]
 
 
 def flatten_data_table():
-    logger.info("Loading excel file...")
+    logger.info(f"Loading excel file {args.input_file}, sheet {args.sheet_name}")
     data_table = pd.read_excel(args.input_file, sheet_name=args.sheet_name, engine="openpyxl", na_filter=False)
-    logger.info(f"Shape: {data_table.shape}")
+    logger.info(f"Shape before dropping blanks: {data_table.shape}")
 
-    logger.info("Dropping blank cells...")
+    logger.info("Dropping blank cells if the entire row is missing...")
     data_table.dropna(
         how="all",
         inplace=True,
     )
-    # data_table = data_table[target_columns]
-    logger.info(f"Shape: {data_table.shape}")
+    logger.info(f"Shape after dropping blanks: {data_table.shape}")
 
-    logger.info("Normalizing all NULLs")  # to python NoneType...")
+    logger.info("Normalizing all NULLs")
+    null_pattern = re.compile(r"^[\s|.|,]*(null|nul)[\s|.|,]*$", flags=re.IGNORECASE | re.MULTILINE)
     for col in data_table.columns:
-        pattern = re.compile(r"^[\s|.|,]*(null|nul)[\s|.|,]*$", flags=re.IGNORECASE | re.MULTILINE)
         data_table[col] = data_table[col].astype(str)
-        data_table[col] = data_table[col].replace(pattern, None, regex=True)
-
-    logger.info("Fixing data types")
+        data_table[col] = data_table[col].replace(null_pattern, None, regex=True)
 
     logger.info(f"Converting to integers: {convert_to_int}")
     for col in convert_to_int:
         logger.debug(col)
-        data_table[col] = data_table[col].apply(
-            lambda x: (None if x is None else (int(x.strip()) if str(x).isdigit() else None))
-        )
-    logger.info("Dropping bad dates...")
+        if col in data_table.columns:
+            data_table[col] = data_table[col].apply(
+                lambda x: (None if x is None else (int(x.strip()) if str(x).isdigit() else None))
+            )
+    """
+    logger.info(f"Converting to lists: {convert_to_list}")
+    for col in convert_to_list:
+        logger.debug(col)
+        if col in data_table.columns:
+            data_table[col] = data_table[col].apply(
+                lambda x: (
+                    None
+                    if x is None
+                    else x.split("|")
+                )
+            )
+    """
+    logger.info("Dropping bad dates or rows with missing dates...")
+    # TODO: this may be a step we want to skip with gold data imports
     for col in date_cols:
         data_table[col] = data_table[col].replace(0.0, None)
-
     data_table.dropna(how="all", inplace=True, subset=date_cols)
 
     logger.info(f"Converting to strings: {convert_to_str}")
@@ -172,12 +201,27 @@ def flatten_data_table():
         logger.debug(col)
         data_table[col] = data_table[col].apply(lambda x: None if x is None else str(x).strip())
 
-    logger.info(f"Splitting by pipes: {split_by_pipe}")
+    logger.info(f"Splitting by pipes: {split_by_pipe} and normalizing NULLs in the output lists")
     for col in split_by_pipe:
         logger.debug(col)
+        data_table[col] = data_table[col].apply(lambda x: [y for y in x.split("|")] if isinstance(x, str) else None)
         data_table[col] = data_table[col].apply(
-            lambda x: [y.strip() for y in x.split("|")] if isinstance(x, str) else None
+            lambda x: ([None if re.match(null_pattern, text) else text for text in x] if x else None)
         )
+
+    logger.info(f"Extracting ranges from monetary_type columns")
+    for col in event_breakdown_columns["monetary"].keys():
+        logger.debug(col)
+        data_table[col] = data_table[col].apply(
+            lambda x: (
+                [tuple(y.split("-")) if (len(y.split("-")) == 2) else (y, y) for y in x]
+                if isinstance(x, list)
+                else None
+            )
+        )
+        logger.info(f"Normalizing ranges for {col}")
+        data_table[f"{col}_Min"] = data_table[col].apply(lambda x: [y[0] for y in x] if isinstance(x, list) else None)
+        data_table[f"{col}_Max"] = data_table[col].apply(lambda x: [y[1] for y in x] if isinstance(x, list) else None)
 
     logger.info(f"Converting to floats: {convert_to_float}")
     for col in convert_to_float:
@@ -190,13 +234,31 @@ def flatten_data_table():
     logger.info(f"Converting to bools: {convert_to_boolean}")
     for col in convert_to_boolean:
         logger.debug(col)
-        data_table[col] = data_table[col].apply(
-            lambda text: (True if text and not isinstance(text, bool) and re.match(yes_pattern, text) else text)
-        )
-        data_table[col] = data_table[col].apply(
-            lambda text: (False if text and not isinstance(text, bool) and re.match(no_pattern, text) else text)
-        )
+        if col in split_by_pipe:
+            data_table[col] = data_table[col].apply(
+                lambda x: (
+                    [
+                        (
+                            True
+                            if text and not isinstance(text, bool) and re.match(yes_pattern, text)
+                            else (False if text and not isinstance(text, bool) and re.match(no_pattern, text) else text)
+                        )
+                        for text in x
+                    ]
+                    if x
+                    else None
+                )
+            )
 
+        else:
+            data_table[col] = data_table[col].apply(
+                lambda text: (
+                    True
+                    if text and not isinstance(text, bool) and re.match(yes_pattern, text)
+                    else (False if text and not isinstance(text, bool) and re.match(no_pattern, text) else text)
+                )
+            )
+    """
     norm_loc = NormalizeLocation(
         gadm_path="Database/data/gadm_world.csv",
         unsd_path="Database/data/UNSD — Methodology.csv",
@@ -204,88 +266,125 @@ def flatten_data_table():
 
     logger.info("Extracting list of administrative areas and locations")
     data_table[["_Administrative_Area", "_Location"]] = (
-        data_table["Location"].apply(norm_loc.extract_locations).apply(pd.Series)
+        data_table["Location_raw"].apply(norm_loc.extract_locations).apply(pd.Series)
     )
 
     logger.info("Extracting list of administrative areas and locations")
     data_table[["_Administrative_Area", "_Location"]] = (
-        data_table["Location"].apply(norm_loc.extract_locations).apply(pd.Series)
+        data_table["Location_raw"].apply(norm_loc.extract_locations).apply(pd.Series)
     )
 
     logger.info("Normalizing administrative areas")
     data_table["Administrative_Area_Norm"] = data_table["_Administrative_Area"].apply(
-        lambda admin_areas: [norm_loc.normalize_locations(area=c, is_country=True)[0] for c in admin_areas]
-        if admin_areas
-        else []
+        lambda admin_areas: (
+            [
+                norm_loc.normalize_locations(area=c, is_country=True)[0]
+                for c in admin_areas
+            ]
+            if admin_areas
+            else []
+        )
     )
+
 
     logger.info("Normalizing locations")
     data_table["Location_Norm"] = data_table.apply(
         lambda row: [
-            [norm_loc.normalize_locations(area=a) if a else None for a in area_list] if area_list else None
+            (
+                [norm_loc.normalize_locations(area=a) if a else None for a in area_list]
+                if area_list
+                else None
+            )
             for area_list in row["_Location"]
         ],
         axis=1,
     )
     data_table["Location_Norm"] = data_table["Location_Norm"].apply(
-        lambda location_list: [[x[0] if x else None for x in area] if area else [] for area in location_list]
-        if location_list
-        else []
+        lambda location_list: (
+            [
+                [x[0] if x else None for x in area] if area else []
+                for area in location_list
+            ]
+            if location_list
+            else []
+        )
     )
+    """
     logger.info("Splitting main events from specific impact")
     data_table["main"] = data_table.Event_ID_decimal.apply(lambda x: float(x).is_integer())
 
+    data_table["Location_Norm"] = data_table["Location_raw"].apply(lambda x: [])
     # Level 1 -- "Main Events"
-    Events = data_table[data_table["main"] == True][target_columns]
+    Events = data_table[data_table["main"] == True][[x for x in target_columns if x in data_table.columns]]
 
     # Level 3 -- "Impacts Per country-level Administrative Area"
-    Impacts = data_table[data_table["Location_Norm"].apply(lambda x: flatten(x) == [])]
+    Impact_Per_Country = data_table[data_table["Location_Norm"].apply(lambda x: flatten(x) == [])]
 
     # Level 2 -- "Specific Instances per country-level Administrative Area"
-    Specific_Instances = data_table[~data_table["Location_Norm"].apply(lambda x: flatten(x) == [])]
+    Specific_Instance_Per_Country = data_table[~data_table["Location_Norm"].apply(lambda x: flatten(x) == [])]
 
     event_breakdown_dfs = {}
-    for name, df_lvl in {"Impacts": Impacts, "Specific_Instances": Specific_Instances}.items():
-        for e in event_breakdown_columns.keys():
-            logger.info(f"Processing {e}")
-            event_breakdown_target_columns = shared_cols.copy()
-            event_breakdown_target_columns.extend(location_cols)
-            event_breakdown_target_columns.extend(date_cols)
-            event_breakdown_target_columns.extend(event_breakdown_columns[e])
-            event_breakdown_dfs[f"{name}_{e}_target_columns"] = event_breakdown_target_columns
 
-            logger.info(f"Target columns: {event_breakdown_target_columns}")
-            df = df_lvl[flatten([event_breakdown_target_columns, ["main"]])].copy()
+    for name, df_lvl in {
+        "Impact_Per_Country": Impact_Per_Country,
+        "Specific_Instance_Per_Country": Specific_Instance_Per_Country,
+    }.items():
+        for col_type in event_breakdown_columns.keys():
+            logger.info(
+                f"Processing {col_type}: {[event_breakdown_columns[col_type][x] for x in event_breakdown_columns[col_type].keys()]}"
+            )
+            event_breakdown_target_columns_base = shared_cols.copy()
+            event_breakdown_target_columns_base.extend(location_cols)
+            event_breakdown_target_columns_base.extend(date_cols)
 
-            missing_date_msk = df[date_cols].isna().all(axis=1)
-            missing_spec_impact_msk = df[event_breakdown_columns[e]].isna().all(axis=1)
-            logger.debug(f"Dropping rows missing dates: {df.shape}")
-            df = df[~missing_date_msk]
+            for cat in event_breakdown_columns[col_type]:
+                event_breakdown_target_columns = event_breakdown_target_columns_base.copy()
+                event_breakdown_target_columns.extend(event_breakdown_columns[col_type][cat])
+                event_breakdown_dfs[f"{name}_{cat}_target_columns"] = event_breakdown_target_columns
+                if not any([True for x in event_breakdown_columns[col_type][cat] if x in data_table.columns]):
+                    break
+                else:
+                    logger.debug("Only store available columns")
+                    availble_col = [x for x in event_breakdown_target_columns if x in data_table.columns]
+                    logger.debug(
+                        f"Desired columns: {event_breakdown_target_columns}.\nAvailable columns: {availble_col}"
+                    )
 
-            logger.debug(f"Dropping rows missing specific impacts: {df.shape}")
-            df = df[~missing_spec_impact_msk]
+                    event_breakdown_target_columns = availble_col
+                    df = df_lvl[flatten([event_breakdown_target_columns, ["main"]])].copy()
 
-            if name == "Impacts":
-                df.Administrative_Area_Norm = df.Administrative_Area_Norm.apply(lambda x: x[0])
-                event_breakdown_dfs[f"{e}_Per_Country"] = df[df["main"] == False][
-                    [x for x in event_breakdown_target_columns if x != "Location_Norm"]
-                ]
-            else:
-                event_breakdown_dfs[f"{name}_{e}_Per_Country"] = df[df["main"] == False][event_breakdown_target_columns]
-            del event_breakdown_target_columns
-            del df
+                    logger.debug(f"Dropping rows missing dates: {df.shape}")
+                    missing_date_msk = df[date_cols].isna().all(axis=1)
+                    df = df[~missing_date_msk]
+
+                    logger.debug(f"Dropping rows missing specific impacts: {df.shape}")
+                    missing_spec_impact_msk = df[event_breakdown_columns[col_type][cat]].isna().all(axis=1)
+                    df = df[~missing_spec_impact_msk]
+                    if name == "Impact_Per_Country":
+                        # df.Administrative_Area_Norm = df.Administrative_Area_Norm.apply(
+                        #    lambda x: x[0]
+                        # )
+                        event_breakdown_dfs[f"{cat}_{name}"] = df[df["main"] == False][
+                            [x for x in event_breakdown_target_columns if x != "Location_Norm"]
+                        ]
+                    else:
+                        event_breakdown_dfs[f"{cat}_{name}"] = df[df["main"] == False][event_breakdown_target_columns]
+                    del event_breakdown_target_columns
+                    del df
+
     return Events, event_breakdown_dfs
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    logger = Logging.get_logger("import gold data from excel")
+    logger = Logging.get_logger("import gold data from excel", level="DEBUG")
 
     parser.add_argument(
         "-i",
         "--input-file",
         dest="input_file",
         help="The path to the excel file",
+        default="Database/gold/ImpactDB_DataTable_Validation.xlsx",
         type=str,
     )
 
@@ -294,6 +393,7 @@ if __name__ == "__main__":
         "--sheet-name",
         dest="sheet_name",
         help="The name of the target sheet in the excel file",
+        default="ImpactDB_v2_gold_template",
         type=str,
     )
 
@@ -302,6 +402,7 @@ if __name__ == "__main__":
         "--output-dir",
         dest="output_dir",
         help="A dir to output main and specific impact events",
+        default="Database/gold/impactdbv2",
         type=str,
     )
 
@@ -313,10 +414,20 @@ if __name__ == "__main__":
     Events, event_breakdown_dfs = flatten_data_table()
 
     logger.info("Storing Main Events table")
-    Events.to_parquet(
-        f"{args.output_dir}/Events.parquet",
-        engine="fastparquet",
-    )
+    if "split" in Events.columns:
+        for i in Events["split"].unique():
+            logger.info(f"Creating {args.output_dir}/{i} if it does not exist!")
+            pathlib.Path(f"{args.output_dir}/{i}").mkdir(parents=True, exist_ok=True)
+
+            Events[Events["split"] == i].to_parquet(
+                f"{args.output_dir}/{i}/Events.parquet",
+                engine="fastparquet",
+            )
+    else:
+        Events.to_parquet(
+            f"{args.output_dir}/Events.parquet",
+            engine="fastparquet",
+        )
 
     for name, df in event_breakdown_dfs.items():
         if "_target_columns" not in name:
@@ -324,4 +435,17 @@ if __name__ == "__main__":
             logger.info(f"Fixing column names for {name}")
 
             df = fix_column_names(df)
-            df.to_parquet(f"{args.output_dir}/{name}.parquet", engine="fastparquet")
+            if "split" in df.columns:
+                for i in df["split"].unique():
+                    logger.info(f"Creating {args.output_dir}/{i} if it does not exist!")
+                    pathlib.Path(f"{args.output_dir}/{i}").mkdir(parents=True, exist_ok=True)
+
+                    df[df["split"] == i].to_parquet(
+                        f"{args.output_dir}/{i}/{name}.parquet",
+                        engine="fastparquet",
+                    )
+            else:
+                df.to_parquet(
+                    f"{args.output_dir}/{name}.parquet",
+                    engine="fastparquet",
+                )
