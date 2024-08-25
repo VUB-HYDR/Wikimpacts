@@ -1,8 +1,10 @@
 import argparse
 import pathlib
 import re
+from datetime import datetime
 
 import pandas as pd
+from iso4217 import Currency
 
 from Database.scr.normalize_utils import Logging
 
@@ -30,6 +32,32 @@ def fix_column_names(df):
             if col.endswith(k):
                 df.rename(columns={col: v}, inplace=True)
     return df
+
+
+def _check_currency(currency_text: str) -> bool:
+    try:
+        Currency(currency_text)
+        return True
+    except ValueError:
+        return False
+
+
+def _check_date(year: int, month: int, day: int) -> bool:
+    try:
+        datetime(year, month, day)
+        return True
+    except ValueError:
+        return False
+
+
+def _split_range(text: str) -> tuple[float, None]:
+    r = text.split("-")
+    if len(r) == 1:
+        return (r[0], r[0])
+    elif len(r) == 2:
+        return r
+    else:
+        return (None, None)
 
 
 ## OUTPUT COLUMN SCHEMA ##
@@ -125,17 +153,8 @@ convert_to_list = [
     "Hazards",
 ]
 
-# get monetary type columns
-monetary_type_col = []
-for i in event_breakdown_columns["monetary"].keys():
-    monetary_type_col.extend(
-        [col for col in event_breakdown_columns["monetary"][i] if not col.endswith("_Min") or not col.endswith("_Max")]
-    )
-    monetary_type_col.append(i)
-
 # get "list" type columns with pipe separator
 split_by_pipe = ["Event_Names", "Sources", "Hazards"]
-# split_by_pipe.extend(event_breakdown_columns["monetary"].keys())
 for i in event_breakdown_columns["monetary"].keys():
     split_by_pipe.append(i)
     split_by_pipe.extend(
@@ -150,6 +169,11 @@ for i in event_breakdown_columns["monetary"].keys():
     )
 
 convert_to_float = ["Event_ID_decimal"]
+
+# get monetary type columns
+currency_unit_cols = []
+for i in event_breakdown_columns["monetary"].keys():
+    currency_unit_cols.extend([col for col in event_breakdown_columns["monetary"][i] if col.endswith("_Units")])
 
 
 def flatten_data_table():
@@ -170,19 +194,22 @@ def flatten_data_table():
         data_table[col] = data_table[col].astype(str)
         data_table[col] = data_table[col].replace(null_pattern, None, regex=True)
 
+    logger.info("Dropping bad dates or rows with missing dates...")
+    # TODO: this may be a step we want to skip with gold data imports
+    # TODO: does this remove l2/l3 that are 'automatically filled' but missing dates?
+    for col in date_cols:
+        data_table[col] = data_table[col].replace(0.0, None)
+        data_table = data_table.replace(float("nan"), None)
+    data_table.dropna(how="all", inplace=True, subset=date_cols)
+
     logger.info(f"Converting to integers: {convert_to_int}")
     for col in convert_to_int:
-        logger.debug(col)
+        logger.debug(f"Casting column {col} as int")
         if col in data_table.columns:
             data_table[col] = data_table[col].apply(
                 lambda x: (None if x is None else (int(x.strip()) if str(x).isdigit() else None))
             )
-
-    logger.info("Dropping bad dates or rows with missing dates...")
-    # TODO: this may be a step we want to skip with gold data imports
-    for col in date_cols:
-        data_table[col] = data_table[col].replace(0.0, None)
-    data_table.dropna(how="all", inplace=True, subset=date_cols)
+    data_table = data_table.replace(float("nan"), None)
 
     logger.info(f"Converting to strings: {convert_to_str}")
     for col in convert_to_str:
@@ -191,25 +218,58 @@ def flatten_data_table():
 
     logger.info(f"Splitting by pipes: {split_by_pipe} and normalizing NULLs in the output lists")
     for col in split_by_pipe:
-        logger.debug(col)
+        logger.debug(f"Casting column {col} as list")
         data_table[col] = data_table[col].apply(lambda x: [y for y in x.split("|")] if isinstance(x, str) else None)
         data_table[col] = data_table[col].apply(
             lambda x: ([None if re.match(null_pattern, text) else text for text in x] if x else None)
         )
-
-    logger.info(f"Extracting ranges from monetary_type columns")
-    for col in event_breakdown_columns["monetary"].keys():
-        logger.debug(col)
-        data_table[col] = data_table[col].apply(
-            lambda x: (
-                [tuple(y.split("-")) if (len(y.split("-")) == 2) else (y, y) for y in x]
-                if isinstance(x, list)
-                else None
-            )
+    logger.info(f"Validating Units for monetary type columns...")
+    for col in currency_unit_cols:
+        data_table[f"{col}_valid_currency"] = data_table[col].apply(
+            lambda x: all([_check_currency(y) for y in x]) if x else True
         )
-        logger.info(f"Normalizing ranges for {col}")
-        data_table[f"{col}_Min"] = data_table[col].apply(lambda x: [y[0] for y in x] if isinstance(x, list) else None)
-        data_table[f"{col}_Max"] = data_table[col].apply(lambda x: [y[1] for y in x] if isinstance(x, list) else None)
+        assert all(data_table[f"{col}_valid_currency"])
+        data_table.drop(columns=[f"{col}_valid_currency"], inplace=True)
+
+    logger.info(f"Validating Dates...")
+
+    for col in date_cols:
+        if col.endswith("Year"):
+            data_table[f"{col}_valid_year"] = data_table[col].apply(
+                lambda x: (len(str(x).split(".")[0]) == 4 and x > 0 and x <= datetime.now().year if x else True)
+            )
+            assert all(data_table[f"{col}_valid_year"])
+            data_table.drop(columns=[f"{col}_valid_year"], inplace=True)
+
+        if col.endswith("Month"):
+            data_table[f"{col}_valid_month"] = data_table[col].apply(lambda x: x <= 12 and x > 0 if x else True)
+            assert all(data_table[f"{col}_valid_month"])
+            data_table.drop(columns=[f"{col}_valid_month"], inplace=True)
+
+    for date_type in ["Start", "End"]:
+        logger.info(f"Validating {date_type} date type")
+        data_table[f"{date_type}_valid_date"] = data_table[
+            [
+                f"{date_type}_Date_Year",
+                f"{date_type}_Date_Month",
+                f"{date_type}_Date_Day",
+            ]
+        ].apply(lambda x: _check_date(x[0], x[1], x[2]) if all(x) else True)
+
+        assert all(data_table[f"{date_type}_valid_date"])
+        data_table.drop(columns=[f"{date_type}_valid_date"], inplace=True)
+
+    # ranges need to be extracted from monetary column types, but not from the numerical column types
+    for col_type in event_breakdown_columns["monetary"]:
+        logger.info(f"Extracting ranges from {col_type} columns")
+        for col in event_breakdown_columns["monetary"].keys():
+            logger.info(f"Normalizing ranges for {col}")
+            data_table[f"{col}_Min"] = data_table[col].apply(
+                lambda x: [_split_range(y)[0] for y in x] if isinstance(x, list) else None
+            )
+            data_table[f"{col}_Max"] = data_table[col].apply(
+                lambda x: [_split_range(y)[1] for y in x] if isinstance(x, list) else None
+            )
 
     logger.info(f"Converting to floats: {convert_to_float}")
     for col in convert_to_float:
@@ -274,7 +334,6 @@ def flatten_data_table():
         )
     )
 
-
     logger.info("Normalizing locations")
     data_table["Location_Norm"] = data_table.apply(
         lambda row: [
@@ -329,7 +388,7 @@ def flatten_data_table():
                 event_breakdown_target_columns = event_breakdown_target_columns_base.copy()
                 event_breakdown_target_columns.extend(event_breakdown_columns[col_type][cat])
                 event_breakdown_dfs[f"{name}_{cat}_target_columns"] = event_breakdown_target_columns
-                if not any([True for x in event_breakdown_columns[col_type][cat] if x in data_table.columns]):
+                if not any([x in data_table.columns for x in event_breakdown_columns[col_type][cat]]):
                     break
                 else:
                     logger.debug("Only store available columns")
@@ -349,9 +408,11 @@ def flatten_data_table():
                     missing_spec_impact_msk = df[event_breakdown_columns[col_type][cat]].isna().all(axis=1)
                     df = df[~missing_spec_impact_msk]
                     if name == "Impact_Per_Country":
-                        # df.Administrative_Area_Norm = df.Administrative_Area_Norm.apply(
-                        #    lambda x: x[0]
-                        # )
+                        """
+                        df.Administrative_Area_Norm = df.Administrative_Area_Norm.apply(
+                            lambda x: x.split("|") if x else None #???#
+                        )
+                        """
                         event_breakdown_dfs[f"{cat}_{name}"] = df[df["main"] == False][
                             [x for x in event_breakdown_target_columns if x != "Location_Norm"]
                         ]
