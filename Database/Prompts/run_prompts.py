@@ -1,6 +1,4 @@
 import argparse
-import asyncio
-import json
 import os
 import pathlib
 from pathlib import Path
@@ -40,6 +38,7 @@ if __name__ == "__main__":
         "-m",
         "--model_name",
         dest="model_name",
+        default="gpt-4o-2024-05-13",  # This model supports at most 4096 completion tokens
         help="The model version applied in the experiment, like gpt-4o-mini. ",
         type=str,
     )
@@ -49,6 +48,14 @@ if __name__ == "__main__":
         dest="api_env",
         help="The env file that contains the API keys.",
         type=str,
+    )
+    parser.add_argument(
+        "-p",
+        "--prompt_list",
+        dest="prompt_list",
+        default="V_3",
+        help="The list of prompts for information extraction, choosing from V_0 to V_X",
+        type=dict,
     )
     args = parser.parse_args()
     logger.info(f"Passed args: {args}")
@@ -62,44 +69,65 @@ if __name__ == "__main__":
     load_dotenv(dotenv_path=env_path)
     api_key = os.getenv("API_KEY")
     openai.api_key = api_key
-    API_ENDPOINT = "https://api.openai.com/v1/chat/completions"
+    # API_ENDPOINT = "https://api.openai.com/v1/chat/completions"
+    # notice that due to the different version of prompts applied, the key may a bit different, below is the version V_3
+    # list of keys for prompt of basic and impact information
+    prompt_basic_list = ["location_time", "main_event_hazard"]
+    prompt_impact_list = [
+        "Deaths",
+        "Homeless",
+        "Injuries",
+        "Buildings_Damaged",
+        "Displaced",
+        "Affected",
+        "Damage",
+        "Insured_Damage",
+    ]
 
-    async def get_gpt_response_basic(model_name, prompt):
-        response = await openai.chat.completions.create(
-            model=args.model_name,
-            messages=[
-                {
-                    "role": "system",
-                    "content": "You are a climate scientist. You will be provided with an article to analyze the basic information of a disaster event. Please take your time to read the text thoroughly and conduct the analysis step by step.",
-                },
-                {"role": "user", "content": prompt},
-            ],
-            temperature=0,  # randomness
-            max_tokens=4096,  # This model supports at most 4096 completion tokens
-            n=1,
-            top_p=1,  # return the max probility result
-            stop=None,
-        )
-        for choice in response.choices:
-            if choice.message.role == "assistant":
-                gpt_output = choice.message.content.strip()
-                gpt_output = gpt_output.replace("```json", "").replace("```", "").strip('"').strip()
-                try:
-                    return json.loads(gpt_output)
-                except:
-                    try:
-                        ## an ugly hack for a persistent json error with main events
-                        gpt_output = gpt_output.replace("\n}\n\n\n{", ",")
-                        return json.loads(gpt_output)
-                    except:
-                        return {"error": gpt_output}
-        raise Exception  # or raise an Exception
+    # generate batch file in .jsonl file
+    def batch_gpt_basic(model_name, prompt, event_id):
+        df = {
+            "custom_id": event_id,
+            "method": "POST",
+            "url": "/v1/chat/completions",
+            "body": {
+                "model": args.model_name,
+                "messages": [
+                    {
+                        "role": "system",
+                        "content": "You are a climate scientist. You will be provided with an article to analyze the basic information of a disaster event. Please take your time to read the text thoroughly and conduct the analysis step by step.",
+                    },
+                    {"role": "user", "content": prompt},
+                ],
+                "temperature": 0,  # randomness
+                "max_tokens": 4096,
+                "n": 1,
+                "top_p": 1,  # default
+                "stop": None,
+            },
+        }
+        return df
 
-    async def process_batch(event_prompts, output_file):
-        meta_dict, prompts = event_prompts
-        gpt_tasks = [get_gpt_response_basic(args.model_name, prompt) for prompt in prompts]
-        gpt_output = await asyncio.gather(*gpt_tasks, return_exceptions=True)
-        final_output = meta_dict
-        for o in gpt_output:
-            final_output.update(o)
-        return final_output
+    # the system role is differ from the basic
+    def batch_gpt_impact(model_name, prompt, event_id):
+        df = {
+            "custom_id": event_id,
+            "method": "POST",
+            "url": "/v1/chat/completions",
+            "body": {
+                "model": args.model_name,
+                "messages": [
+                    {
+                        "role": "system",
+                        "content": "You are a climate impact analyst. You will be provided with an article to analyze the detailed impact of a disaster event. Please take your time to read the text thoroughly and conduct the analysis step by step.",
+                    },
+                    {"role": "user", "content": prompt},
+                ],
+                "temperature": 0,  # randomness
+                "max_tokens": 4096,
+                "n": 1,
+                "top_p": 1,  # default
+                "stop": None,
+            },
+        }
+        return df
