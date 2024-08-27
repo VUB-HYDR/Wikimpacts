@@ -1,4 +1,5 @@
 import argparse
+import json
 import os
 import pathlib
 from pathlib import Path
@@ -70,7 +71,12 @@ if __name__ == "__main__":
     api_key = os.getenv("API_KEY")
     openai.api_key = api_key
     # API_ENDPOINT = "https://api.openai.com/v1/chat/completions"
-    # notice that due to the different version of prompts applied, the key may a bit different, below is the version V_3
+    # input the raw articles for processing
+    with open(f"{args.raw_dir}/{args.filename}", "r") as file:
+        # Step 2: Load the JSON data into a Python dictionary
+        raw_text = json.load(file)
+
+    # notice that due to the different version of prompts applied, the keys may a bit different, below is the version V_3
     # list of keys for prompt of basic and impact information
     prompt_basic_list = ["location_time", "main_event_hazard"]
     prompt_impact_list = [
@@ -84,8 +90,8 @@ if __name__ == "__main__":
         "Insured_Damage",
     ]
 
-    # generate batch file in .jsonl file
-    def batch_gpt_basic(model_name, prompt, event_id):
+    # define the gpt setting
+    def batch_gpt_basic(prompt, event_id):
         df = {
             "custom_id": event_id,
             "method": "POST",
@@ -109,7 +115,7 @@ if __name__ == "__main__":
         return df
 
     # the system role is differ from the basic
-    def batch_gpt_impact(model_name, prompt, event_id):
+    def batch_gpt_impact(prompt, event_id):
         df = {
             "custom_id": event_id,
             "method": "POST",
@@ -131,3 +137,8 @@ if __name__ == "__main__":
             },
         }
         return df
+
+        # generate the batch file
+        for key, value in args.prompt_list:
+            if key in prompt_basic_list:
+                batch_gpt_impact()
