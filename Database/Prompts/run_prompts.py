@@ -6,6 +6,7 @@ from pathlib import Path
 
 import openai
 from dotenv import load_dotenv
+from prompts import V_3  # change here to choose the version of prompts
 
 from Database.scr.normalize_utils import Logging
 
@@ -36,6 +37,13 @@ if __name__ == "__main__":
         type=str,
     )
     parser.add_argument(
+        "-b",
+        "--batch_dir",
+        dest="batch_dir",
+        help="The directory where the batch file will land (as .jsonl)",
+        type=str,
+    )
+    parser.add_argument(
         "-m",
         "--model_name",
         dest="model_name",
@@ -50,14 +58,7 @@ if __name__ == "__main__":
         help="The env file that contains the API keys.",
         type=str,
     )
-    parser.add_argument(
-        "-p",
-        "--prompt_list",
-        dest="prompt_list",
-        default="V_3",
-        help="The list of prompts for information extraction, choosing from V_0 to V_X",
-        type=dict,
-    )
+
     args = parser.parse_args()
     logger.info(f"Passed args: {args}")
 
@@ -91,8 +92,9 @@ if __name__ == "__main__":
     ]
 
     # define the gpt setting
-    def batch_gpt_basic(prompt, event_id):
+    def batch_gpt_basic(prompt, event_id, category):
         df = {
+            "Category": category,  # define the experiment category, like deaths, injuries etc
             "custom_id": event_id,
             "method": "POST",
             "url": "/v1/chat/completions",
@@ -115,8 +117,9 @@ if __name__ == "__main__":
         return df
 
     # the system role is differ from the basic
-    def batch_gpt_impact(prompt, event_id):
+    def batch_gpt_impact(prompt, event_id, category):
         df = {
+            "Category": category,  # define the experiment category, like deaths, injuries etc
             "custom_id": event_id,
             "method": "POST",
             "url": "/v1/chat/completions",
@@ -138,7 +141,38 @@ if __name__ == "__main__":
         }
         return df
 
-        # generate the batch file
-        for key, value in args.prompt_list:
-            if key in prompt_basic_list:
-                batch_gpt_impact()
+    # Function to process the raw article
+    def process_whole_text(data):
+        filtered_data = [item for item in data["Whole_Text"] if item["content"] not in [None, ""]]
+        result = " ".join([f"header: {item['header']}, content: {item['content']}" for item in filtered_data])
+        return result
+
+    # generate the batch file
+    basic_data = []
+    impact_data = []
+    for key, value in V_3:
+        if key in prompt_basic_list:
+            for item in raw_text:
+                event_id = str(item.get("Event_ID"))
+                event_name = str(item.get("Event_Name"))
+                info_box = str(item.get("Info_Box"))
+                wholt_text = process_whole_text(item)
+                prompt = V_3[key].format(Info_Box=info_box, Whole_Text=wholt_text, Event_Name=event_name)
+                line = batch_gpt_basic(prompt, event_id, key)  # define the line of api request
+                basic_data.append(line)
+        if key in prompt_impact_list:
+            for item in raw_text:
+                event_id = str(item.get("Event_ID"))
+                event_name = str(item.get("Event_Name"))
+                info_box = str(item.get("Info_Box"))
+                wholt_text = process_whole_text(item)
+                prompt = V_3[key].format(Info_Box=info_box, Whole_Text=wholt_text, Event_Name=event_name)
+                line = batch_gpt_impact(prompt, event_id, key)  # define the line of api request
+                impact_data.append(line)
+
+    with open(f"{args.batch_dir}/{args.filename.replace('.json', '')}_basic.jsonl", "w") as jsonl_file:
+        for entry in basic_data:
+            jsonl_file.write(json.dumps(entry) + "\n")
+    with open(f"{args.batch_dir}/{args.filename.replace('.json', '')}_impact.jsonl", "w") as jsonl_file:
+        for entry in impact_data:
+            jsonl_file.write(json.dumps(entry) + "\n")
