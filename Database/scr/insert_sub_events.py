@@ -4,6 +4,7 @@ import sqlite3
 
 import pandas as pd
 
+# TODO: adapt for inserting L2 and L3
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
