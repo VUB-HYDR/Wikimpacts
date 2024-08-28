@@ -168,14 +168,14 @@ class NormalizeNumber:
             "no injuries",
             "no casualties",
             "no deaths",
-            "minimal",
             "no fatalities",
+        ]
+        self.unknown_phrases = [
+            "minimal",
             "negligible",
             "inconsequential",
             "minor",
             "limited",
-        ]
-        self.unknown_phrases = [
             "absent",
             "does not mention",
             "indefinite",
