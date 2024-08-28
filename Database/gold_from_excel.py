@@ -310,6 +310,7 @@ def flatten_data_table():
     norm_loc = NormalizeLocation(
         gadm_path="Database/data/gadm_world.csv",
         unsd_path="Database/data/UNSD — Methodology.csv",
+        rate_limiter=False if args.no_rate_limiter else True
     )
 
     logger.info("Extracting list of administrative areas and locations")
@@ -456,6 +457,14 @@ if __name__ == "__main__":
         help="A dir to output main and specific impact events",
         default="Database/gold/impactdbv2",
         type=str,
+    )
+
+    parser.add_argument(
+        "-n",
+        "--no-rate-limiter",
+        dest="no_rate_limiter",
+        help="Pass to disable limiting API calls (to comply with Nominatim) with RateLimiter",
+        action="store_true",
     )
 
     args = parser.parse_args()
