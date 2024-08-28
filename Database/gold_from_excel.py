@@ -310,7 +310,7 @@ def flatten_data_table():
     norm_loc = NormalizeLocation(
         gadm_path="Database/data/gadm_world.csv",
         unsd_path="Database/data/UNSD — Methodology.csv",
-        rate_limiter=False if args.no_rate_limiter else True
+        rate_limiter=False if args.no_rate_limiter else True,
     )
 
     logger.info("Extracting list of administrative areas and locations")
