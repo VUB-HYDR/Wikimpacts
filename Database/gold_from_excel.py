@@ -349,6 +349,7 @@ def flatten_data_table():
     Events = data_table[data_table["main"] == True][[x for x in target_columns if x in data_table.columns]]
     Events["Administrative_Area_Norm"] = Events["Administrative_Area_Norm"].apply(lambda x: list(set(x)) if x else None)
     Events.rename(columns={"Administrative_Area_Norm": "Administrative_Areas_Norm"}, inplace=True)
+    Events.drop(columns=["Location_Norm"], inplace=True)
 
     # Level 2 -- "Impacts Per country-level Administrative Area"
     # multiple administrative areas, the lenght of this list is the same or smaller than that in "Events" (L1)
