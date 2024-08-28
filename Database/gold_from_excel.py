@@ -261,10 +261,11 @@ def flatten_data_table():
     # ranges need to be extracted from monetary column types, but not from the numerical column types
     for col_type in event_breakdown_columns["monetary"].keys():
         logger.info(f"Normalizing ranges for {col_type}")
-        data_table[f"{col_type}_Min"] = data_table[col].apply(
+
+        data_table[f"{col_type}_Min"] = data_table[col_type].apply(
             lambda x: [_split_range(y)[0] for y in x] if isinstance(x, list) else None
         )
-        data_table[f"{col_type}_Max"] = data_table[col].apply(
+        data_table[f"{col_type}_Max"] = data_table[col_type].apply(
             lambda x: [_split_range(y)[1] for y in x] if isinstance(x, list) else None
         )
 
