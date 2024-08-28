@@ -216,33 +216,33 @@ class TestNormalizeNumbers:
         "test_input, expected",
         [
             # approx
-            ("Almost 30", (28, 31)),  # rounded down! (floor(30*0.95), floor(30*1.05))
-            ("approximately 7000000000 dollars", (6650000000, 7350000000)),
-            ("Around 7000 homes were destroyed", (6650, 7350)),
-            ("roughly, 4 injuries had been reported", (3, 4)),  # rounded down! (floor(4*0.95), floor(4*1.05))
-            ("~45", (42, 47)),
+            ("Almost 30", (20, 40)),
+            ("approximately 7000000000 dollars", (6000000000, 8000000000)),
+            ("Around 7000 homes were destroyed", (6000, 8000)),
+            ("roughly, 4 injuries had been reported", (3, 5)),
+            ("~45", (44, 46)),
             # over
-            ("Greater than 300", (301, 399)),
-            ("The number of deaths certainly exceeded 66", (67, 69)),
-            ("more than 6 families were displaced", ((6 + 1) * 3, 6 * 5)),
-            ("at least 3600 were reported missing", (3600, 3999)),
-            ("no less than 55 injuries were reported in the media", (55, 59)),
-            ("> 45", (46, 49)),
-            (">=5", (5, 10)),  # created range by adding 5 since scale == 1
-            ("greater than or equal to 9", (9, 14)),  # created range by adding 5 since scale == 1
-            ("45+ deaths were reported by the news", (45, 49)),
-            ("311,000,000+ Euros", (311000000, 399999999)),
-            (">693 million", (693000001, 699999999)),
+            ("Greater than 300", (301, 400)),
+            ("The number of deaths certainly exceeded 66", (67, 69)),  # 67, 67
+            ("more than 6 families were displaced", ((6 + 1) * 3, 6 * 5)),  # 7*3, 7*5
+            ("at least 3600 were reported missing", (3600, 3700)),
+            ("no less than 55 injuries were reported in the media", (55, 56)),
+            ("> 45", (46, 49)),  # 46, 46
+            (">=5", (5, 6)),
+            ("greater than or equal to 9", (9, 10)),
+            ("45+ deaths were reported by the news", (45, 46)),
+            ("311,000,000+ Euros", (311000000, 312000000)),
+            (">693 million", (693000001, 694000000)),
             # under
-            ("less than 230000000 dollars were paid out in insurance costs", (200000001, 229999999)),
-            ("No more than 23 million dollars", (20000001, 23000000)),
-            ("Up to 7 billion dollars", (6000000001, 7000000000)),
-            ("at most 3284 casualties were reported", (3001, 3284)),
-            ("Up to 7000000 dollars", (6000001, 7000000)),
-            ("Up to 7,000,000 dollars", (6000001, 7000000)),
-            ("less than 1", (0, 0)),
-            ("no more than 1 was injured", (0, 1)),
-            ("≤7000000", (6000001, 7000000)),
+            ("less than 230000000 dollars were paid out in insurance costs", (220000000, 229999999)),
+            ("No more than 23 million dollars", (22000000, 23000000)),
+            ("Up to 7 billion dollars", (6000000000, 7000000000)),
+            ("at most 3284 casualties were reported", (3283, 3284)),
+            ("Up to 7000000 dollars", (6000000, 7000000)),
+            ("Up to 7,000,000 dollars", (6000000, 7000000)),
+            ("less than 1", (0, 0)),  # 1,1
+            ("no more than 1 was injured", (0, 1)),  # 1,1
+            ("≤7000000", (6000000, 7000000)),
             # cases this function does not handle; meant to raise BaseException
             ("six families were displaced", None),
         ],
