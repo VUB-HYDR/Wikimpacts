@@ -6,6 +6,7 @@ from datetime import datetime
 import pandas as pd
 from iso4217 import Currency
 
+from Database.scr.normalize_locations import NormalizeLocation
 from Database.scr.normalize_utils import Logging
 
 pd.set_option("display.max_rows", None)
@@ -38,7 +39,8 @@ def _check_currency(currency_text: str) -> bool:
     try:
         Currency(currency_text)
         return True
-    except ValueError:
+    except ValueError as err:
+        logger.error(err)
         return False
 
 
@@ -46,7 +48,8 @@ def _check_date(year: int, month: int, day: int) -> bool:
     try:
         datetime(year, month, day)
         return True
-    except ValueError:
+    except ValueError as err:
+        logger.error(err)
         return False
 
 
@@ -115,7 +118,7 @@ shared_cols = [
     "split",  # dataset split; example: dev/test
 ]
 
-location_cols = []  # ["Administrative_Area_Norm", "Location_Norm"]
+location_cols = ["Administrative_Area_Norm", "Location_Norm"]
 
 date_cols = [
     "Start_Date_Year",
@@ -260,16 +263,14 @@ def flatten_data_table():
         data_table.drop(columns=[f"{date_type}_valid_date"], inplace=True)
 
     # ranges need to be extracted from monetary column types, but not from the numerical column types
-    for col_type in event_breakdown_columns["monetary"]:
-        logger.info(f"Extracting ranges from {col_type} columns")
-        for col in event_breakdown_columns["monetary"].keys():
-            logger.info(f"Normalizing ranges for {col}")
-            data_table[f"{col}_Min"] = data_table[col].apply(
-                lambda x: [_split_range(y)[0] for y in x] if isinstance(x, list) else None
-            )
-            data_table[f"{col}_Max"] = data_table[col].apply(
-                lambda x: [_split_range(y)[1] for y in x] if isinstance(x, list) else None
-            )
+    for col_type in event_breakdown_columns["monetary"].keys():
+        logger.info(f"Normalizing ranges for {col_type}")
+        data_table[f"{col_type}_Min"] = data_table[col].apply(
+            lambda x: [_split_range(y)[0] for y in x] if isinstance(x, list) else None
+        )
+        data_table[f"{col_type}_Max"] = data_table[col].apply(
+            lambda x: [_split_range(y)[1] for y in x] if isinstance(x, list) else None
+        )
 
     logger.info(f"Converting to floats: {convert_to_float}")
     for col in convert_to_float:
@@ -306,7 +307,6 @@ def flatten_data_table():
                     else (False if text and not isinstance(text, bool) and re.match(no_pattern, text) else text)
                 )
             )
-    """
     norm_loc = NormalizeLocation(
         gadm_path="Database/data/gadm_world.csv",
         unsd_path="Database/data/UNSD — Methodology.csv",
@@ -316,59 +316,52 @@ def flatten_data_table():
     data_table[["_Administrative_Area", "_Location"]] = (
         data_table["Location_raw"].apply(norm_loc.extract_locations).apply(pd.Series)
     )
-
-    logger.info("Extracting list of administrative areas and locations")
-    data_table[["_Administrative_Area", "_Location"]] = (
-        data_table["Location_raw"].apply(norm_loc.extract_locations).apply(pd.Series)
-    )
+    for i in ["_Administrative_Area", "_Location"]:
+        data_table[i] = data_table[i].replace(float("nan"), None)
 
     logger.info("Normalizing administrative areas")
     data_table["Administrative_Area_Norm"] = data_table["_Administrative_Area"].apply(
         lambda admin_areas: (
-            [
-                norm_loc.normalize_locations(area=c, is_country=True)[0]
-                for c in admin_areas
-            ]
-            if admin_areas
-            else []
+            [norm_loc.normalize_locations(area=c, is_country=True)[0] for c in admin_areas] if admin_areas else []
         )
     )
 
     logger.info("Normalizing locations")
     data_table["Location_Norm"] = data_table.apply(
-        lambda row: [
-            (
-                [norm_loc.normalize_locations(area=a) if a else None for a in area_list]
-                if area_list
-                else None
-            )
-            for area_list in row["_Location"]
-        ],
+        lambda row: (
+            [
+                ([norm_loc.normalize_locations(area=a) if a else None for a in area_list] if area_list else None)
+                for area_list in row["_Location"]
+            ]
+            if row["_Location"]
+            else None
+        ),
         axis=1,
     )
     data_table["Location_Norm"] = data_table["Location_Norm"].apply(
         lambda location_list: (
-            [
-                [x[0] if x else None for x in area] if area else []
-                for area in location_list
-            ]
-            if location_list
-            else []
+            [[x[0] if x else None for x in area] if area else [] for area in location_list] if location_list else []
         )
     )
-    """
+
     logger.info("Splitting main events from specific impact")
     data_table["main"] = data_table.Event_ID_decimal.apply(lambda x: float(x).is_integer())
 
-    data_table["Location_Norm"] = data_table["Location_raw"].apply(lambda x: [])
+    # data_table["Location_Norm"] = data_table["Location_raw"].apply(lambda x: [])
     # Level 1 -- "Main Events"
     Events = data_table[data_table["main"] == True][[x for x in target_columns if x in data_table.columns]]
+    Events["Administrative_Area_Norm"] = Events["Administrative_Area_Norm"].apply(lambda x: list(set(x)) if x else None)
+    Events.rename(columns={"Administrative_Area_Norm": "Administrative_Areas_Norm"}, inplace=True)
 
-    # Level 3 -- "Impacts Per country-level Administrative Area"
+    # Level 2 -- "Impacts Per country-level Administrative Area"
+    # multiple administrative areas, the lenght of this list is the same or smaller than that in "Events" (L1)
     Impact_Per_Country = data_table[data_table["Location_Norm"].apply(lambda x: flatten(x) == [])]
+    Impact_Per_Country = Impact_Per_Country[Impact_Per_Country["main"] == False]
 
-    # Level 2 -- "Specific Instances per country-level Administrative Area"
+    # Level 3 -- "Specific Instances per country-level Administrative Area"
+    # single administrative area with multiple sub locations
     Specific_Instance_Per_Country = data_table[~data_table["Location_Norm"].apply(lambda x: flatten(x) == [])]
+    Specific_Instance_Per_Country = Specific_Instance_Per_Country[Specific_Instance_Per_Country["main"] == False]
 
     event_breakdown_dfs = {}
 
@@ -397,8 +390,7 @@ def flatten_data_table():
                         f"Desired columns: {event_breakdown_target_columns}.\nAvailable columns: {availble_col}"
                     )
 
-                    event_breakdown_target_columns = availble_col
-                    df = df_lvl[flatten([event_breakdown_target_columns, ["main"]])].copy()
+                    df = df_lvl[flatten([availble_col, ["main"]])].copy()
 
                     logger.debug(f"Dropping rows missing dates: {df.shape}")
                     missing_date_msk = df[date_cols].isna().all(axis=1)
@@ -407,19 +399,30 @@ def flatten_data_table():
                     logger.debug(f"Dropping rows missing specific impacts: {df.shape}")
                     missing_spec_impact_msk = df[event_breakdown_columns[col_type][cat]].isna().all(axis=1)
                     df = df[~missing_spec_impact_msk]
-                    if name == "Impact_Per_Country":
-                        """
-                        df.Administrative_Area_Norm = df.Administrative_Area_Norm.apply(
-                            lambda x: x.split("|") if x else None #???#
+                    if name == "Impact_Per_Country":  # L2
+                        df["Administrative_Area_Norm"] = df["Administrative_Area_Norm"].apply(
+                            lambda x: [y.split("|") if y else None for y in x]
                         )
-                        """
-                        event_breakdown_dfs[f"{cat}_{name}"] = df[df["main"] == False][
-                            [x for x in event_breakdown_target_columns if x != "Location_Norm"]
-                        ]
+                        df["Location_Norm"] = df["Location_Norm"].apply(lambda x: flatten(x) if x else None)
+                        event_breakdown_dfs[f"{name}_{cat}"] = df[availble_col]
+                        event_breakdown_dfs[f"{name}_{cat}"].rename(
+                            columns={"Administrative_Area_Norm": "Administrative_Areas_Norm"},
+                            inplace=True,
+                        )
+                        event_breakdown_dfs[f"{name}_{cat}"].drop(columns=["Location_Norm"])
+
+                    if name == "Specific_Instance_Per_Country":  # L3
+                        df["Administrative_Area_Norm"] = df["Administrative_Area_Norm"].apply(
+                            lambda x: (x[0] if isinstance(x, list) and len(x) == 1 else None)
+                        )
+                        event_breakdown_dfs[f"{name}_{cat}"] = df[availble_col]
+                        event_breakdown_dfs[f"{name}_{cat}"].rename(
+                            columns={"Location_Norm": "Locations_Norm"}, inplace=True
+                        )
+
                     else:
-                        event_breakdown_dfs[f"{cat}_{name}"] = df[df["main"] == False][event_breakdown_target_columns]
-                    del event_breakdown_target_columns
-                    del df
+                        event_breakdown_dfs[f"{name}_{cat}"] = df[availble_col]
+                    del event_breakdown_target_columns, availble_col, df
 
     return Events, event_breakdown_dfs
 
@@ -477,18 +480,17 @@ if __name__ == "__main__":
             f"{args.output_dir}/Events.parquet",
             engine="fastparquet",
         )
-
     for name, df in event_breakdown_dfs.items():
         if "_target_columns" not in name:
-            logger.info(f"Storing {name} table")
             logger.info(f"Fixing column names for {name}")
-
             df = fix_column_names(df)
+
+            logger.info(f"Storing {name} table")
             if "split" in df.columns:
                 for i in df["split"].unique():
                     logger.info(f"Creating {args.output_dir}/{i} if it does not exist!")
                     pathlib.Path(f"{args.output_dir}/{i}").mkdir(parents=True, exist_ok=True)
-
+                    print(f"{args.output_dir}/{i}/{name}.parquet")
                     df[df["split"] == i][[x for x in df.columns if x != "split"]].to_parquet(
                         f"{args.output_dir}/{i}/{name}.parquet",
                         engine="fastparquet",
