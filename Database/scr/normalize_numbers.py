@@ -1,4 +1,4 @@
-from math import floor, isnan
+from math import isnan
 from typing import Dict, List, Tuple, Union
 
 import regex
@@ -501,6 +501,25 @@ class NormalizeNumber:
                 except:
                     return None
 
+    def _get_scale(self, n_init: float | int):
+        """
+        Determine the scale of a number
+        """
+        n = int(n_init) if isinstance(n_init, float) and n_init.is_integer() else n_init
+        abs_n = abs(n)
+        n_str = str(abs_n)
+
+        if isinstance(n, int):
+            # Check if the last digit is zero
+            trailing_zeros = len(n_str) - len(n_str.rstrip("0"))
+            scale = 10**trailing_zeros
+
+        elif isinstance(n, float):
+            _, part_dec = n_str.split(".")
+            scale = 10 ** (-len(part_dec))
+
+        return n, scale
+
     def _extract_complex_range(self, text: str) -> Tuple[float, float] | None:
         phrases = {
             "approx": {"list": sorted(self.approximately, reverse=True)},
@@ -514,7 +533,9 @@ class NormalizeNumber:
             any_digit = "[\d,.]*"
             expression = "({any_digit})\s*({scales})*\s*({phrases})[,.]*\s*({any_digit})\s*({scales})*"
             expression = expression.format(
-                phrases="|".join(v["list"]), scales="|".join(self.scales), any_digit=any_digit
+                phrases="|".join(v["list"]),
+                scales="|".join(self.scales),
+                any_digit=any_digit,
             )
             matches = regex.findall(expression, text, flags=regex.IGNORECASE | regex.MULTILINE)
 
@@ -546,32 +567,20 @@ class NormalizeNumber:
                         if any([x in [y.lower() for y in text.split()] for x in self.family_synonyms])
                         else (1, 1)
                     )
-                    scale = pow(10, len(str(int(num))) - 1)
-                    multip = int(str(int(num))[0])
+                    n, scale = self._get_scale(num)
+
                     if k == "approx":
-                        return (
-                            floor(num * 0.95) * lower_mod,
-                            floor(num * 1.05) * upper_mod,
-                        )
+                        return ((max(1, n - scale) * lower_mod), (n + scale) * upper_mod)
                     if "over" in k:
                         inc = 0 if "inclusive" in k else 1
-                        return (
-                            (num + inc) * lower_mod,
-                            num + 5 if (scale == 1 and upper_mod == 1) else ((scale * (multip + 1)) - 1) * upper_mod,
-                        )
+                        return ((n + inc) * lower_mod, (n + scale) * upper_mod)
+
                     if "under" in k:
                         inc = 0 if "inclusive" in k else 1
-                        if (num - (scale * multip)) / num > 0.08:
-                            _min, _max = (
-                                0 if (scale == 1 and multip == 1) else ((scale * multip) + 1) * upper_mod,
-                                (num - inc) * lower_mod,
-                            )
-                        else:
-                            _min, _max = (
-                                0 if (scale == 1 and multip == 1) else ((scale * (multip - 1)) + 1) * upper_mod,
-                                (num - inc) * lower_mod,
-                            )
-                        return (_min, _max)
+                        return (
+                            max(1, n - scale - inc) * lower_mod,
+                            max(1, n - inc) * upper_mod,
+                        )
 
     def _extract_approximate_quantifiers(self, text: str) -> Tuple[float, float] | None:
         one, ten, hun, tho, mil, bil, tri = (
