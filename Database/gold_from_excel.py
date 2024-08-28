@@ -402,24 +402,24 @@ def flatten_data_table():
                             lambda x: [y.split("|") if y else None for y in x]
                         )
                         df["Location_Norm"] = df["Location_Norm"].apply(lambda x: flatten(x) if x else None)
-                        event_breakdown_dfs[f"{name}_{cat}"] = df[availble_col]
-                        event_breakdown_dfs[f"{name}_{cat}"].rename(
+                        df = df[availble_col]
+                        df.rename(
                             columns={"Administrative_Area_Norm": "Administrative_Areas_Norm"},
                             inplace=True,
                         )
-                        event_breakdown_dfs[f"{name}_{cat}"].drop(columns=["Location_Norm"])
+                        df.drop(columns=["Location_Norm"], inplace=True)
+                        event_breakdown_dfs[f"{name}_{cat}"] = df
 
-                    if name == "Specific_Instance_Per_Country":  # L3
+                    elif name == "Specific_Instance_Per_Country":  # L3
                         df["Administrative_Area_Norm"] = df["Administrative_Area_Norm"].apply(
                             lambda x: (x[0] if isinstance(x, list) and len(x) == 1 else None)
                         )
-                        event_breakdown_dfs[f"{name}_{cat}"] = df[availble_col]
-                        event_breakdown_dfs[f"{name}_{cat}"].rename(
-                            columns={"Location_Norm": "Locations_Norm"}, inplace=True
+                        df = df[availble_col]
+                        df.rename(
+                            columns={"Location_Norm": "Locations_Norm"},
+                            inplace=True,
                         )
-
-                    else:
-                        event_breakdown_dfs[f"{name}_{cat}"] = df[availble_col]
+                        event_breakdown_dfs[f"{name}_{cat}"] = df
                     del event_breakdown_target_columns, availble_col, df
 
     return Events, event_breakdown_dfs
