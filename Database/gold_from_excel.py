@@ -9,10 +9,6 @@ from iso4217 import Currency
 from Database.scr.normalize_locations import NormalizeLocation
 from Database.scr.normalize_utils import Logging
 
-pd.set_option("display.max_rows", None)
-pd.set_option("display.max_columns", None)
-pd.set_option("display.width", None)
-
 
 def flatten(xss):
     return [x for xs in xss for x in xs]
