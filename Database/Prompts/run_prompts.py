@@ -7,9 +7,7 @@ from pathlib import Path
 import openai
 from dotenv import load_dotenv
 
-# from Database.Prompts import prompts, this line will be deleted by the pre-commit command, pls help to check
-from prompts import V_3  # change here to choose the version of prompts
-
+from Database.Prompts.prompts import V_3  # change here to choose the version of prompts
 from Database.scr.normalize_utils import Logging
 
 if __name__ == "__main__":
