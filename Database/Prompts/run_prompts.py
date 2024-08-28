@@ -6,6 +6,8 @@ from pathlib import Path
 
 import openai
 from dotenv import load_dotenv
+
+# from Database.Prompts import prompts, this line will be deleted by the pre-commit command, pls help to check
 from prompts import V_3  # change here to choose the version of prompts
 
 from Database.scr.normalize_utils import Logging
@@ -22,6 +24,7 @@ if __name__ == "__main__":
         help="The name of the json file in the <Wikipedia articles> directory",
         type=str,
     )
+
     parser.add_argument(
         "-r",
         "--raw_dir",
@@ -29,13 +32,7 @@ if __name__ == "__main__":
         help="The directory containing Wikipedia json files to be run",
         type=str,
     )
-    parser.add_argument(
-        "-o",
-        "--output_dir",
-        dest="output_dir",
-        help="The directory where the LLM outputs will land (as .json)",
-        type=str,
-    )
+
     parser.add_argument(
         "-b",
         "--batch_dir",
@@ -62,16 +59,15 @@ if __name__ == "__main__":
     args = parser.parse_args()
     logger.info(f"Passed args: {args}")
 
-    logger.info(f"Creating {args.output_dir} if it does not exist!")
-    pathlib.Path(args.output_dir).mkdir(parents=True, exist_ok=True)
+    logger.info(f"Creating {args.batch_dir} if it does not exist!")
 
+    pathlib.Path(args.batch_dir).mkdir(parents=True, exist_ok=True)
     # load openai models
     # Explicitly set the path to the .env file
     env_path = Path(args.api_env)
     load_dotenv(dotenv_path=env_path)
-    api_key = os.getenv("API_KEY")
-    openai.api_key = api_key
-    # API_ENDPOINT = "https://api.openai.com/v1/chat/completions"
+    client = openai.OpenAI(api_key=os.getenv("API_KEY"))
+
     # input the raw articles for processing
     with open(f"{args.raw_dir}/{args.filename}", "r") as file:
         # Step 2: Load the JSON data into a Python dictionary
@@ -81,20 +77,19 @@ if __name__ == "__main__":
     # list of keys for prompt of basic and impact information
     prompt_basic_list = ["location_time", "main_event_hazard"]
     prompt_impact_list = [
-        "Deaths",
-        "Homeless",
-        "Injuries",
-        "Buildings_Damaged",
-        "Displaced",
-        "Affected",
-        "Damage",
-        "Insured_Damage",
+        "deaths",
+        "homeless",
+        "injuries",
+        "buildings_damaged",
+        "displaced",
+        "affected",
+        "damage",
+        "insured_Damage",
     ]
 
     # define the gpt setting
-    def batch_gpt_basic(prompt, event_id, category):
+    def batch_gpt_basic(prompt, event_id):
         df = {
-            "Category": category,  # define the experiment category, like deaths, injuries etc
             "custom_id": event_id,
             "method": "POST",
             "url": "/v1/chat/completions",
@@ -117,9 +112,8 @@ if __name__ == "__main__":
         return df
 
     # the system role is differ from the basic
-    def batch_gpt_impact(prompt, event_id, category):
+    def batch_gpt_impact(prompt, event_id):
         df = {
-            "Category": category,  # define the experiment category, like deaths, injuries etc
             "custom_id": event_id,
             "method": "POST",
             "url": "/v1/chat/completions",
@@ -150,29 +144,62 @@ if __name__ == "__main__":
     # generate the batch file
     basic_data = []
     impact_data = []
-    for key, value in V_3:
+    for key, value in V_3.items():
         if key in prompt_basic_list:
             for item in raw_text:
-                event_id = str(item.get("Event_ID"))
+                event_id = (
+                    str(item.get("Event_ID")) + "_" + str(key)
+                )  # each event id will append with the prompt category, like deaths, injuries, etc to retrive in the output, and make the id unique
                 event_name = str(item.get("Event_Name"))
                 info_box = str(item.get("Info_Box"))
                 wholt_text = process_whole_text(item)
                 prompt = V_3[key].format(Info_Box=info_box, Whole_Text=wholt_text, Event_Name=event_name)
-                line = batch_gpt_basic(prompt, event_id, key)  # define the line of api request
+                line = batch_gpt_basic(prompt, event_id)  # define the line of api request
                 basic_data.append(line)
         if key in prompt_impact_list:
             for item in raw_text:
-                event_id = str(item.get("Event_ID"))
+                event_id = (
+                    str(item.get("Event_ID")) + "_" + str(key)
+                )  # each event id will append with the prompt category, like deaths, injuries, etc to retrive in the output, and make the id unique
                 event_name = str(item.get("Event_Name"))
                 info_box = str(item.get("Info_Box"))
                 wholt_text = process_whole_text(item)
                 prompt = V_3[key].format(Info_Box=info_box, Whole_Text=wholt_text, Event_Name=event_name)
-                line = batch_gpt_impact(prompt, event_id, key)  # define the line of api request
+                line = batch_gpt_impact(prompt, event_id)  # define the line of api request
                 impact_data.append(line)
-
-    with open(f"{args.batch_dir}/{args.filename.replace('.json', '')}_basic.jsonl", "w") as jsonl_file:
+    logger.info(f"Saving the batch file for basic information")
+    # Define the file path for the JSONL file
+    jsonl_file_path_basic = f"{args.batch_dir}/{args.filename.replace('.json', '')}_basic.jsonl"
+    jsonl_file_path_impact = f"{args.batch_dir}/{args.filename.replace('.json', '')}_impact.jsonl"
+    with open(jsonl_file_path_basic, "w") as jsonl_file:
         for entry in basic_data:
             jsonl_file.write(json.dumps(entry) + "\n")
-    with open(f"{args.batch_dir}/{args.filename.replace('.json', '')}_impact.jsonl", "w") as jsonl_file:
+    logger.info(f"Saving the batch file for impact information")
+    with open(jsonl_file_path_impact, "w") as jsonl_file:
         for entry in impact_data:
             jsonl_file.write(json.dumps(entry) + "\n")
+
+    # upload the batch file to openai
+    # basic information
+    logger.info(f"Uploaoding the batch file for basic information")
+    batch_input_file_basic = client.files.create(file=open(jsonl_file_path_basic, "rb"), purpose="batch")
+    batch_input_file_basic_id = batch_input_file_basic.id
+
+    client.batches.create(
+        input_file_id=batch_input_file_basic_id,
+        endpoint="/v1/chat/completions",
+        completion_window="24h",
+        metadata={"description": "batch job for basic information"},
+    )
+
+    # impact information
+    logger.info(f"Uploading the batch file for impact information")
+    batch_input_file_impact = client.files.create(file=open(jsonl_file_path_impact, "rb"), purpose="batch")
+    batch_input_file_impact_id = batch_input_file_impact.id
+
+    client.batches.create(
+        input_file_id=batch_input_file_impact_id,
+        endpoint="/v1/chat/completions",
+        completion_window="24h",
+        metadata={"description": "batch job for impact information"},
+    )

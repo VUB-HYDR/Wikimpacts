@@ -772,7 +772,7 @@ V_3: dict = {
       - "Annotation": "Cite the header name from the article provided where you find the information about the affected people in this location. The output should only include the header name."
        }}]
       Ensure to capture all instances of affected people mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
-    "damaged_buildings": """Based on the provided article {Info_Box} {Whole_Text},
+    "buildings_damaged": """Based on the provided article {Info_Box} {Whole_Text},
       extract the number of damaged buildings associated with the {Event_Name},
       covering a wide range of building types such as structures, homes, houses, households, apartments, office buildings, retail stores, hotels, schools, hospitals, and more,
       along with supporting annotations from the article. The number of damaged buildings information can be splited into 3 parts,
