@@ -573,7 +573,7 @@ class NormalizeNumber:
                         return ((max(1, n - scale) * lower_mod), (n + scale) * upper_mod)
                     if "over" in k:
                         inc = 0 if "inclusive" in k else 1
-                        return ((n + inc) * lower_mod, (n + scale) * upper_mod)
+                        return ((n + inc) * lower_mod, (n + scale + inc) * upper_mod)
 
                     if "under" in k:
                         inc = 0 if "inclusive" in k else 1
