@@ -136,7 +136,7 @@ class TestNormalizeNumbers:
             ("0 - 352", (0, 352)),
             ("23- 55", (23, 55)),
             ("24,501-61,672", (24501, 61672)),
-            # not meant to handle this case
+            # cases meant to fail
             (">=12", None),
             ("12", None),
             ("twelve and one hundred", None),
@@ -153,29 +153,29 @@ class TestNormalizeNumbers:
             ("23mil", (23000000, 23000000, 0)),
             ("110 - 352", (110, 352, 1)),
             ("between 11 and 17 people were affected", (11, 17, 1)),
-            ("Nearly 300 homes were destroyed", (285, 315, 1)),
+            ("Nearly 300 homes were destroyed", (200, 400, 1)),
             ("$3.6 million", (3600000, 3600000, 0)),
             ("$35.63 million", (35630000, 35630000, 0)),
             ("$3.6 million", (3600000, 3600000, 0)),
             ("Damage: At least $129 million", (129000000, 199999999, 1)),
-            ("At least 73", (73, 79, 1)),
+            ("At least 73", (73, 75, 1)),
             ("925000000", (925000000, 925000000, 0)),
             (925000000, (925000000, 925000000, 0)),
             (23.4, (23.4, 23.4, 0)),
-            ("More than 7010 were killed", (7011, 7999, 1)),
-            ("Less than 400", (301, 399, 1)),
+            ("More than 7010 were killed", (7011, 7021, 1)),
+            ("Less than 400", (300, 399, 1)),
             (
                 "a minimum of 410 billion",
-                (410000000000, 499999999999, 1),
+                (410000000000, 420000000001, 1),
             ),
-            ("603+", (603, 699, 1)),
-            (">=293", (293, 299, 1)),
-            ("~293", (278, 307, 1)),
-            (">= $27 million", (27000000, 29999999, 1)),
-            ("$27 million or more", (27000000, 29999999, 1)),
-            ("about A$500 million", (475000000, 525000000, 1)),
-            ("over US$500 million", (500000001, 599999999, 1)),
-            ("over USD 1.0 billion", (1000000001, 1999999999, 1)),
+            ("603+", (603, 604, 1)),
+            (">=293", (293, 294, 1)),
+            ("~293", (292, 294, 1)),
+            (">= $27 million", (27000000, 28000001, 1)),
+            ("$27 million or more", (27000000, 28000001, 1)),
+            ("about A$500 million", (400000000, 600000000, 1)),
+            ("over US$500 million", (500000001, 600000001, 1)),
+            ("over USD 1.0 billion", (1000000001, 2000000001, 1)),
             ("15 billion yuan", (15000000000, 15000000000, 0)),
             ("100 million pesos", (100000000, 100000000, 0)),
             ("between 20.2 and 30.4", (20.2, 30.4, 1)),
@@ -222,15 +222,15 @@ class TestNormalizeNumbers:
             ("roughly, 4 injuries had been reported", (3, 5)),
             ("~45", (44, 46)),
             # over
-            ("Greater than 300", (301, 400)),
-            ("The number of deaths certainly exceeded 66", (67, 69)),  # 67, 67
-            ("more than 6 families were displaced", ((6 + 1) * 3, 6 * 5)),  # 7*3, 7*5
-            ("at least 3600 were reported missing", (3600, 3700)),
-            ("no less than 55 injuries were reported in the media", (55, 56)),
-            ("> 45", (46, 49)),  # 46, 46
-            (">=5", (5, 6)),
-            ("greater than or equal to 9", (9, 10)),
-            ("45+ deaths were reported by the news", (45, 46)),
+            ("Greater than 300", (301, 401)),
+            ("The number of deaths certainly exceeded 66", (67, 68)),
+            ("more than 6 families were displaced", (7 * 3, 8 * 5)),  # 7*3, 7*5
+            ("at least 3600 were reported missing", (3600, 3701)),
+            ("no less than 55 injuries were reported in the media", (55, 57)),
+            ("> 45", (46, 47)),
+            (">=5", (5, 7)),
+            ("greater than or equal to 9", (9, 11)),
+            ("45+ deaths were reported by the news", (45, 47)),
             ("311,000,000+ Euros", (311000000, 312000000)),
             (">693 million", (693000001, 694000000)),
             # under
@@ -243,7 +243,7 @@ class TestNormalizeNumbers:
             ("less than 1", (0, 0)),  # 1,1
             ("no more than 1 was injured", (0, 1)),  # 1,1
             ("≤7000000", (6000000, 7000000)),
-            # cases this function does not handle; meant to raise BaseException
+            # cases meant to fail
             ("six families were displaced", None),
         ],
     )
