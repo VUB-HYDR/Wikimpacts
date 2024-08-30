@@ -1,4 +1,4 @@
-CREATE TABLE Specific_Instance_Per_Country_type_numerical (
+CREATE TABLE Specific_Instance_Per_Administrative_Area_type_numerical (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) = 7), /* COMMENT 'UID' */
 
     Administrative_Area_Norm TEXT NOT NULL,
@@ -25,7 +25,7 @@ CREATE TABLE Specific_Instance_Per_Country_type_numerical (
 );
 
 
-CREATE TABLE Specific_Instance_Per_Country_type_monetary (
+CREATE TABLE Specific_Instance_Per_Administrative_Area_type_monetary (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) = 7), /* COMMENT 'UID' */
 
     Administrative_Area_Norm TEXT NOT NULL,
