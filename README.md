@@ -224,17 +224,16 @@ If you have new events to add to the database, first parse them and insert them.
 
 #### SPECIAL USECASE: Converting the manual annotation table from a flat format to Events and Specific Impacts
 
-1. Download the latest copy of the excel sheet (write one of the contributors of the repository if you do not have the link)
+1. Download the latest copy of the excel sheet. *The excel sheet must have the column names described in `Database/gold/ImpactDB_DataTable_Validation.xlsx` sheet `ImpactDB_v2_gold_template`.*
 2. Choose the correct excel sheet and run the script:
 
 ```shell
 # Change DDMMYYY to the datestamp of the excel sheet to parse
-poetry run python3 Database/gold_from_excel.py --input-file "Database/gold/ImpactDB_DataTable_Validation.xlsx" \
+poetry run python3 Database/gold_from_excel.py \
+--input-file "Database/gold/ImpactDB_DataTable_Validation.xlsx" \
 --sheet-name ImpactDB_manual_copy_MDMMYYY  \
---output-dir Database/gold/gold_from_excel
+--output-dir Database/gold/gold_from_excel \
 ```
-
-These results are not split to test/dev.
 
 > [!IMPORTANT]
 > Please don't track or push excel sheets into the repository
