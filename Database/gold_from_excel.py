@@ -342,7 +342,7 @@ def flatten_data_table():
         )
     )
 
-    logger.info("Splitting main events from specific impact")
+    logger.info("Splitting main events (L1) from instances (L2) and specific instabnces (L3)")
     data_table["main"] = data_table.Event_ID_decimal.apply(lambda x: float(x).is_integer())
 
     # data_table["Location_Norm"] = data_table["Location_raw"].apply(lambda x: [])
@@ -354,8 +354,10 @@ def flatten_data_table():
 
     # Level 2 -- "Impacts Per country-level Administrative Area"
     # multiple administrative areas, the lenght of this list is the same or smaller than that in "Events" (L1)
-    Impact_Per_Administrative_Area = data_table[data_table["Location_Norm"].apply(lambda x: flatten(x) == [])]
-    Impact_Per_Administrative_Area = Impact_Per_Administrative_Area[Impact_Per_Administrative_Area["main"] == False]
+    Instance_Per_Administrative_Areas = data_table[data_table["Location_Norm"].apply(lambda x: flatten(x) == [])]
+    Instance_Per_Administrative_Areas = Instance_Per_Administrative_Areas[
+        Instance_Per_Administrative_Areas["main"] == False
+    ]
 
     # Level 3 -- "Specific Instances per country-level Administrative Area"
     # single administrative area with multiple sub locations
@@ -369,7 +371,7 @@ def flatten_data_table():
     event_breakdown_dfs = {}
 
     for name, df_lvl in {
-        "Impact_Per_Administrative_Area": Impact_Per_Administrative_Area,  # l2
+        "Instance_Per_Administrative_Areas": Instance_Per_Administrative_Areas,  # l2
         "Specific_Instance_Per_Administrative_Area": Specific_Instance_Per_Administrative_Area,  # l3
     }.items():
         for col_type in event_breakdown_columns.keys():
@@ -402,7 +404,7 @@ def flatten_data_table():
                     logger.debug(f"Dropping rows missing specific impacts: {df.shape}")
                     missing_spec_impact_msk = df[event_breakdown_columns[col_type][cat]].isna().all(axis=1)
                     df = df[~missing_spec_impact_msk]
-                    if name == "Impact_Per_Administrative_Area":  # L2
+                    if name == "Instance_Per_Administrative_Areas":  # L2
                         df["Administrative_Area_Norm"] = df["Administrative_Area_Norm"].apply(
                             lambda x: [y.split("|") if y else None for y in x]
                         )
@@ -483,12 +485,12 @@ if __name__ == "__main__":
             pathlib.Path(f"{args.output_dir}/{i}").mkdir(parents=True, exist_ok=True)
 
             Events[Events["split"] == i][[x for x in Events.columns if x != "split"]].to_parquet(
-                f"{args.output_dir}/{i}/Events.parquet",
+                f"{args.output_dir}/{i}/Total_Summary.parquet",
                 engine="fastparquet",
             )
     else:
         Events.to_parquet(
-            f"{args.output_dir}/Events.parquet",
+            f"{args.output_dir}/Total_Summary.parquet",
             engine="fastparquet",
         )
     for name, df in event_breakdown_dfs.items():

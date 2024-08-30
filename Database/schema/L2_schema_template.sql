@@ -1,4 +1,4 @@
-CREATE TABLE Impact_Per_Administrative_Area_type_numerical (
+CREATE TABLE Instance_Per_Administrative_Areas_type_numerical (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) = 7), /* COMMENT 'UID' */
     Administrative_Areas_Norm OBJECT NOT NULL, /* COMMENT 'Array' of TEXT/NULL */
     Administrative_Areas_GID OBJECT, /* COMMENT 'Array' */
@@ -18,7 +18,7 @@ CREATE TABLE Impact_Per_Administrative_Area_type_numerical (
     FOREIGN KEY(Event_ID) REFERENCES Total_Summary_Events(Event_ID)
 );
 
-CREATE TABLE Impact_Per_Administrative_Area_type_monetary (
+CREATE TABLE Instance_Per_Administrative_Areas_type_monetary (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) = 7), /* COMMENT 'UID' */
 
     Administrative_Areas_Norm OBJECT NOT NULL, /* COMMENT 'Array' of TEXT/NULL */

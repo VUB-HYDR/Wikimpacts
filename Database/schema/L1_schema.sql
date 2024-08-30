@@ -1,4 +1,4 @@
-CREATE TABLE Total_Summary_Events (
+CREATE TABLE Total_Summary (
     Event_ID TEXT PRIMARY KEY NOT NULL CHECK (length(Event_ID) = 7), /* COMMENT 'UID' */
     Event_Names OBJECT NOT NULL, /* COMMENT 'Array' */
     Sources OBJECT NOT NULL, /* COMMENT 'Array' */
