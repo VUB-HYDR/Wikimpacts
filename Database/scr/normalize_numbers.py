@@ -570,7 +570,7 @@ class NormalizeNumber:
                     n, scale = self._get_scale(num)
 
                     if k == "approx":
-                        return ((max(1, n - scale) * lower_mod), (n + scale) * upper_mod)
+                        return ((max(0, n - scale) * lower_mod), (n + scale) * upper_mod)
                     if "over" in k:
                         inc = 0 if "inclusive" in k else 1
                         return ((n + inc) * lower_mod, (n + scale + inc) * upper_mod)
@@ -578,8 +578,8 @@ class NormalizeNumber:
                     if "under" in k:
                         inc = 0 if "inclusive" in k else 1
                         return (
-                            max(1, n - scale - inc) * lower_mod,
-                            max(1, n - inc) * upper_mod,
+                            max(0, n - scale - inc) * lower_mod,
+                            max(0, n - inc) * upper_mod,
                         )
 
     def _extract_approximate_quantifiers(self, text: str) -> Tuple[float, float] | None:
