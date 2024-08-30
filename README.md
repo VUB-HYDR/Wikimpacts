@@ -84,10 +84,10 @@ poetry run python3 Database/parse_events.py \
 # "sub", "main" or "all"
 --event_type all \
 
-# if your country and location columns have a different name
+# if your country-level administrative area and location columns have a different name
 # you can specify it here (otherwise, defaults to
-# "Country" and "Location" (respectively)):
---country_column "Custom_Country_Column"  \
+# "Administrative_Area" and "Location" (respectively)):
+--admin_area_column "Custom_Admin_Area_Column"  \
 --location_column "Locations"
 ```
 

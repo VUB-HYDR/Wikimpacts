@@ -62,10 +62,10 @@ if __name__ == "__main__":
 
     parser.add_argument(
         "-con",
-        "--country_column",
-        dest="country_column",
-        default="Country",
-        help="Name of the column containing a list of countries",
+        "--admin_area_column",
+        dest="admin_area_column",
+        default="Administrative_Area",
+        help="Name of the column containing a list of country-level locationss",
         type=str,
     )
 
@@ -74,7 +74,7 @@ if __name__ == "__main__":
         "--location_column",
         dest="location_column",
         default="Location",
-        help="Name of the column containing a list of countries",
+        help="Name of the column containing a list of sub-locations found inside a country or administrative area",
         type=str,
     )
 
@@ -168,42 +168,44 @@ if __name__ == "__main__":
             logger.info("Normalizing Perils to list")
             events.Perils = events.Perils.apply(lambda x: x.split("|"))
 
-        if args.country_column in events.columns:
-            logger.info("Ensuring that all country data is of type <list>")
+        if args.admin_area_column in events.columns:
+            logger.info("Ensuring that all administrative area data is of type <list>")
 
-            events[args.country_column] = events[args.country_column].apply(
+            events[args.admin_area_column] = events[args.admin_area_column].apply(
                 lambda x: utils.eval(x) if x is not None else []
             )
 
-            logger.info(f"Removing non-country areas from country column {args.country_column}")
-            events[args.country_column] = events[args.country_column].apply(
-                lambda countries: [c for c in countries if utils.simple_country_check(c)] if countries else []
+            logger.info(
+                f"Removing areas that are smaller than an administrative area from column {args.admin_area_column}"
+            )
+            events[args.admin_area_column] = events[args.admin_area_column].apply(
+                lambda admin_areas: [c for c in admin_areas if utils.simple_country_check(c)] if admin_areas else []
             )
 
             logger.info("Normalizing Countries")
-            events["Country_Tmp"] = events[args.country_column].apply(
-                lambda countries: [norm_loc.normalize_locations(c, is_country=True) for c in countries]
-                if countries
+            events["Administrative_Area_Tmp"] = events[args.admin_area_column].apply(
+                lambda admin_areas: [norm_loc.normalize_locations(c, is_country=True) for c in admin_areas]
+                if admin_areas
                 else []
             )
 
-            events[["Country_Norm", "Country_Type", "Country_GeoJson"]] = (
-                events["Country_Tmp"]
+            events[["Administrative_Area_Norm", "Administrative_Area_Type", "Administrative_Area_GeoJson"]] = (
+                events["Administrative_Area_Tmp"]
                 .apply(lambda x: ([i[0] for i in x], [i[1] for i in x], [i[2] for i in x]))
                 .apply(pd.Series)
             )
 
             # TODO: Countries with no location can be searched again without the is_country flag
-            events.drop(columns=["Country_Tmp"], inplace=True)
+            events.drop(columns=["Administrative_Area_Tmp"], inplace=True)
 
             logger.info("Getting GID from GADM for Countries")
-            events["Country_GID"] = events["Country_Norm"].apply(
-                lambda countries: (
-                    [norm_loc.get_gadm_gid(country=c) if c else None for c in countries] if countries else None
+            events["Administrative_Area_GID"] = events["Administrative_Area_Norm"].apply(
+                lambda admin_areas: (
+                    [norm_loc.get_gadm_gid(country=a) if a else None for a in admin_areas] if admin_areas else None
                 ),
             )
 
-        if args.location_column in events.columns and args.country_column in events.columns:
+        if args.location_column in events.columns and args.admin_area_column in events.columns:
             logger.info("Normalizing Locations")
             events["Location_Tmp"] = events["Location"].apply(
                 lambda locations: (
@@ -223,10 +225,14 @@ if __name__ == "__main__":
             events["Location_GID"] = events.apply(
                 lambda row: (
                     [
-                        # removes "countries" from the location column
+                        # removes "admin_areas" from the location column
                         # preserves order
                         # TODO: if location is added to main events, pass country param to get_gadm_gid func
-                        (norm_loc.get_gadm_gid(area=area) if area not in row["Country_Norm"] else "COUNTRY")
+                        (
+                            norm_loc.get_gadm_gid(area=area)
+                            if area not in row["Administrative_Area_Norm"]
+                            else "ADMIN_AREA"
+                        )
                         for area in row["Location_Norm"]
                     ]
                     if row["Location_Norm"]
@@ -235,19 +241,21 @@ if __name__ == "__main__":
                 axis=1,
             )
 
-            # removes "countries" from the location column
+            # removes "admin_areas" from the location column
             # preserves order
-            logger.info("Removing countries from normalized location list.")
+            logger.info("Removing country-level administrative areas from normalized location list.")
             for loc_col in ["Location_Norm", "Location_Type", "Location_GeoJson"]:
                 events[loc_col] = events.apply(
                     lambda row: [
-                        row[loc_col][i] for i in range(len(row["Location_GID"])) if row["Location_GID"][i] != "COUNTRY"
+                        row[loc_col][i]
+                        for i in range(len(row["Location_GID"]))
+                        if row["Location_GID"][i] != "ADMIN_AREA"
                     ],
                     axis=1,
                 )
 
             events["Location_GID"] = events["Location_GID"].apply(
-                lambda locations: [l for l in locations if l != "COUNTRY"]
+                lambda locations: [l for l in locations if l != "ADMIN_AREA"]
             )
         logger.info("Normalizing nulls")
         events = utils.replace_nulls(events)
@@ -266,11 +274,11 @@ if __name__ == "__main__":
             "Location_Type",
             "Location_GID",
             "Location_GeoJson",
-            args.country_column,
-            "Country_Norm",
-            "Country_Type",
-            "Country_GID",
-            "Country_GeoJson",
+            args.administrative_area,
+            "Administrative_Area_Norm",
+            "Administrative_Area_Type",
+            "Administrative_Area_GID",
+            "Administrative_Area_GeoJson",
             "Total_Deaths",
             "Total_Damage",
             "Total_Damage_Inflation_Adjusted",
@@ -376,19 +384,19 @@ if __name__ == "__main__":
                 sub_event.reset_index(inplace=True, drop=True)
                 sub_event = pd.concat([sub_event, start_date_cols, end_date_cols], axis=1)
 
-            location_col = col.split("Specific_Instance_Per_Country_")[-1]
+            location_col = col.split("Specific_Instance_Per_Administrative_Area_")[-1]
 
-            logger.info(f"Normalizing country names for subevent {col}")
+            logger.info(f"Normalizing administrative area names for subevent {col}")
 
-            sub_event[["Country_Norm", "Country_Type", "Country_GeoJson"]] = (
-                sub_event[args.country_column]
-                .apply(lambda country: norm_loc.normalize_locations(country, is_country=True))
+            sub_event[["Administrative_Area_Norm", "Administrative_Area_Type", "Administrative_Area_GeoJson"]] = (
+                sub_event[args.admin_area_column]
+                .apply(lambda admin_area: norm_loc.normalize_locations(admin_area, is_country=True))
                 .apply(pd.Series)
             )
 
-            logger.info(f"Getting GID from GADM for countries in subevent {col}")
-            sub_event["Country_GID"] = sub_event["Country_Norm"].apply(
-                lambda country: (norm_loc.get_gadm_gid(country=country) if country else None)
+            logger.info(f"Getting GID from GADM for country-level administrative areas in subevent {col}")
+            sub_event["Administrative_Area_GID"] = sub_event["Administrative_Area_Norm"].apply(
+                lambda admin_area: (norm_loc.get_gadm_gid(country=admin_area) if admin_area else None)
             )
 
             logger.info(f"Normalizing location names for subevent {col}")
@@ -403,10 +411,10 @@ if __name__ == "__main__":
                 # are passed to the function (it's better to search for locations with the advanced OSM query search)
             ] = sub_event.apply(
                 lambda row: norm_loc.normalize_locations(
-                    area=row[f"Location_{location_col}"], in_country=row["Country_Norm"]
+                    area=row[f"Location_{location_col}"], in_country=row["Administrative_Area_Norm"]
                 )
-                if row[f"Location_{location_col}"] != row["Country_Norm"]
-                else norm_loc.normalize_locations(area=row["Country_Norm"], is_country=True),
+                if row[f"Location_{location_col}"] != row["Administrative_Area_Norm"]
+                else norm_loc.normalize_locations(area=row["Administrative_Area_Norm"], is_country=True),
                 axis=1,
             ).apply(
                 pd.Series
@@ -416,7 +424,7 @@ if __name__ == "__main__":
                 lambda row: (
                     norm_loc.get_gadm_gid(
                         area=row[f"Location_{location_col}_Norm"],
-                        country=row["Country_Norm"],
+                        country=row["Administrative_Area_Norm"],
                     )
                     if row[f"Location_{location_col}_Norm"]
                     else None
@@ -425,21 +433,21 @@ if __name__ == "__main__":
             )
 
             def normalize_location_rows_if_country(row):
-                # if location and country are identical in subevents, generalize country normalization
-                if row[f"Location_{location_col}"] == row[args.country_column]:
+                # if location and admin area are identical in subevents, generalize to the admin area normalization
+                if row[f"Location_{location_col}"] == row[args.admin_area_column]:
                     for i in ["Norm", "Type", "GeoJson", "GID"]:
-                        row[f"Location_{location_col}_{i}"] = row[f"Country_{i}"]
+                        row[f"Location_{location_col}_{i}"] = row[f"Administrative_Area_{i}"]
                     return row
                 else:
                     return row
 
             logger.info(
-                "Cleaning locations and countries that are identical (a subevent where the smallest location is a country)"
+                "Cleaning locations and country-level administrative areas that are identical (a subevent where the smallest location is a country-level administrative area)"
             )
             sub_event = sub_event.apply(lambda row: normalize_location_rows_if_country(row), axis=1)
 
             sub_event[f"Location_{location_col}_GID"] = sub_event[f"Location_{location_col}_GID"].astype(str)
-            sub_event["Country_GID"] = sub_event["Country_GID"].astype(str)
+            sub_event["Administrative_Area_GID"] = sub_event["Administrative_Area_GID"].astype(str)
 
             sub_event[
                 [
