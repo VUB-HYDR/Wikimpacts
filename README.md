@@ -285,7 +285,6 @@ poetry run python3 Database/gold_from_excel.py \
 --output-dir Database/gold/gold_from_excel \
 ```
 
-
 > [!IMPORTANT]
 > Please don't track or push excel sheets into the repository
 > The file `Database/gold/ImpactDB_DataTable_Validation.xlsx` has the latest gold annotations from 01/06/2024 and will be updated in the future.

@@ -472,6 +472,14 @@ if __name__ == "__main__":
         type=str,
     )
 
+    parser.add_argument(
+        "-n",
+        "--no-rate-limiter",
+        dest="no_rate_limiter",
+        help="Pass to disable limiting API calls (to comply with Nominatim) with RateLimiter",
+        action="store_true",
+    )
+
     args = parser.parse_args()
 
     logger.info(f"Creating {args.output_dir} if it does not exist!")
