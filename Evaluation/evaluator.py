@@ -74,15 +74,15 @@ if __name__ == "__main__":
         "--event_type",
         dest="event_type",
         default="main",
-        choices=["main", "sub"],
+        choices=["l1", "l2", "l3"],
         help="Choose which events to parse. Possible values: main or sub",
         type=str,
     )
 
     parser.add_argument(
         "-si",
-        "--specific_instance_type",
-        dest="specific_instance_type",
+        "--impact_type",
+        dest="impact_type",
         default="specific_instance",
         help="""Supply the specific instance type/category (example: 'deaths', 'insurance_damage')
             to store matched specific instances for gold and sys""",
@@ -106,8 +106,12 @@ if __name__ == "__main__":
         {np.nan: None, "NULL ": None, "NULL": None}
     )
 
-    if args.event_type == "sub":
-        logger.info("Pairing up specific instances ('sub-events')")
+    admin_area_columns = ["Administrative_Area_Norm", "Administrative_Areas_Norm"]
+    location_columns = ["Location_Norm", "Locations_Norm"]
+    any_area_columns = admin_area_columns + location_columns
+
+    if args.event_type in ["l2", "l3"]:
+        logger.info(f"Pairing up {args.event_type} events")
         event_ids = set(list(gold.Event_ID.unique()) + list(sys.Event_ID.unique()))
         si_gold, si_sys = [], []
 
@@ -135,10 +139,10 @@ if __name__ == "__main__":
             si_sys
         ).replace({np.nan: None, "NULL ": None, "NULL": None})
 
-        gold.to_parquet(f"{output_dir}/gold_{args.specific_instance_type}.parquet")
-        sys.to_parquet(f"{output_dir}/sys_{args.specific_instance_type}.parquet")
+        gold.to_parquet(f"{output_dir}/gold_{args.impact_type}.parquet")
+        sys.to_parquet(f"{output_dir}/sys_{args.impact_type}.parquet")
 
-    if args.event_type == "main":
+    elif args.event_type in ["l1"]:
         logger.info("Only including events in the gold file!")
         sys = sys[sys.Event_ID.isin(gold["Event_ID"].to_list())]
 
@@ -169,7 +173,7 @@ if __name__ == "__main__":
 
         logger.info(f"Evaluation limited to {sys.shape} events from source {args.score}")
 
-    if args.event_type == "main":
+    if args.event_type in "l1":
         # Add dummy rows for missing events (for main event evaluation only)
         missing_ids = set(sys["Event_ID"].to_list()) ^ set(gold["Event_ID"].to_list())
         if missing_ids:
@@ -179,9 +183,9 @@ if __name__ == "__main__":
             gold_cols = list(gold.columns)
             rows_to_add = []
             for event_id in missing_ids:
-                # Create a dictionary for the new row with all columns set to "" except Country_Norm which excepts a list
+                # Create a dictionary for the new row with all columns set to "" except Administrative_AreaNorm which excepts a list
                 new_row = {col: None for col in gold_cols}
-                for col in ["Country_Norm", "Location_Norm"]:
+                for col in any_area_columns:
                     if col in gold_cols:
                         new_row[col] = "[]"
                 new_row["Event_ID"] = event_id  # Set the 'Event_ID'
@@ -209,12 +213,12 @@ if __name__ == "__main__":
     comp = Comparer(null_penalty, target_columns=weights.keys())
     logger.info(f"Target columns: {comp.target_columns}")
 
-    if args.event_type == "main":
+    if args.event_type == "l1":
         # sort by "Event_ID" only for main event evaluation
         sys = sys.sort_values("Event_ID")
         gold = gold.sort_values("Event_ID")
 
-    list_type_cols = ["Country_Norm", "Location_Norm"] if args.event_type == "main" else ["Location_Norm"]
+    list_type_cols = [x for x in any_area_columns if "Areas_" in x or "Locations_" in x]
     for col in list_type_cols:
         if col in sys.columns:
             sys[col] = sys[col].apply(lambda x: ast.literal_eval(x) if isinstance(x, str) else x)
@@ -245,32 +249,32 @@ if __name__ == "__main__":
     ).replace({np.nan: None})
 
     all_comps.sort_values("Weighted_Score")
-    if args.event_type == "main":
-        all_comps.to_csv(f"{output_dir}/{args.score}_{len(sys_data)}_results.csv", index=False)
-    elif args.event_type == "sub":
+    if args.event_type == "l1":
+        all_comps.to_csv(f"{output_dir}/{args.event_type}_{args.score}_{len(sys_data)}_results.csv", index=False)
+    elif args.event_type in ["l2", "l3"]:
         all_comps.to_csv(
-            f"{output_dir}/{args.score}_{len(sys_data)}_{args.specific_instance_type}_results.csv", index=False
+            f"{output_dir}/{args.event_type}_{args.score}_{len(sys_data)}_{args.impact_type}_results.csv", index=False
         )
     averages = {}
     for i in all_comps.columns:
         if not i.startswith("Event_ID"):
             averages[i] = all_comps.loc[:, i].mean()
 
-    if args.event_type == "main":
-        avg_result_filename = f"{output_dir}/{args.score}_{len(sys_data)}_avg_results.json"
-    elif args.event_type == "sub":
+    if args.event_type == "l1":
+        avg_result_filename = f"{output_dir}/{args.event_type}_{args.score}_{len(sys_data)}_avg_results.json"
+    elif args.event_type in ["l2", "l3"]:
         avg_result_filename = (
-            f"{output_dir}/{args.score}_{len(sys_data)}_{args.specific_instance_type}_avg_results.json"
+            f"{output_dir}/{args.event_type}_{args.score}_{len(sys_data)}_{args.impact_type}_avg_results.json"
         )
 
     with open(avg_result_filename, "w") as f:
         json.dump(averages, f)
 
     # get average per event_ID when evaluating specific instances
-    if args.event_type == "sub":
+    if args.event_type in ["l2", "l3"]:
         all_comps["Event_ID"] = all_comps["Event_ID1"].apply(lambda x: x.split("-")[0])
         all_comps.groupby("Event_ID")[[c for c in all_comps.columns if not c.startswith("Event_ID")]].mean().to_csv(
-            f"{output_dir}/{args.score}_{len(sys_data)}_{args.specific_instance_type}_avg_per_event_id_results.csv",
+            f"{output_dir}/{args.event_type}_{args.score}_{len(sys_data)}_{args.impact_type}_avg_per_event_id_results.csv",
             index=False,
         )
 
