@@ -391,10 +391,6 @@ if __name__ == "__main__":
                 lambda country: (norm_loc.get_gadm_gid(country=country) if country else None)
             )
 
-            """
-            logger.info(f"Dropping columns with no locations for subevent {col}")
-            sub_event.dropna(subset=[f"Location_{location_col}"], how="all", inplace=True)
-            """
             logger.info(f"Normalizing location names for subevent {col}")
             sub_event[
                 [
