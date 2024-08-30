@@ -42,7 +42,7 @@ if __name__ == "__main__":
         "-m",
         "--model_name",
         dest="model_name",
-        default="gpt-4o-2024-05-13",  # This model supports at most 4096 completion tokens
+        default="gpt-4o-2024-05-13",  # This model supports at most 4096 completion tokens, and need to specify json-output
         help="The model version applied in the experiment, like gpt-4o-mini. ",
         type=str,
     )
@@ -92,6 +92,7 @@ if __name__ == "__main__":
             "method": "POST",
             "url": "/v1/chat/completions",
             "body": {
+                "response_format": {"type": "json_object"},
                 "model": args.model_name,
                 "messages": [
                     {
@@ -116,6 +117,7 @@ if __name__ == "__main__":
             "method": "POST",
             "url": "/v1/chat/completions",
             "body": {
+                "response_format": {"type": "json_object"},
                 "model": args.model_name,
                 "messages": [
                     {

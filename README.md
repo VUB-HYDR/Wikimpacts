@@ -28,6 +28,18 @@ git lfs install
 
 ## Quickstart
 
+### Run prompt experiments on OpenAI models
+If you use OpenAI models, there is a way to save your cost with running experiment in batch, and we design the pipeline below.
+#### (Step 1) Raw file
+Choose the raw file contains the text you need to process.
+
+#### (Step 2) GPT models
+Choose the model you want to apply. The default model is "gpt-4o-2024-05-13"
+- below is a command example you can refer to run the script:
+```shell
+poetry run python3 Database/Prompts/run_prompts.py --filename wiki_dev_whole_infobox_20240729_70single_events.json --raw_dir Database/Wiki_dev_test_articles --batch_dir Database/Prompts/batch --api_env Database/API_KEYS/API_KEY.env
+```
+
 ### Parsing and evaluation pipeline
 
 If you have generated some LLM output and would like to test it against the dev and test gold sets, here is a list of command to enable you to experiment with this yourself.

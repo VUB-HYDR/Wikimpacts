@@ -736,6 +736,7 @@ V_2: dict = {
          Only Give Json output, no extra explanation needed.""",
 }
 
+# V_3 is a version based on V2, but with freezed variable names as the schema we confirmed, 20240830
 # V_3 is a version based on V2, but with freezed variable names as the schema we confirmed, 20240823
 V_3: dict = {
     "affected": """Based on information box {Info_Box} and header-content pair article {Whole_Text},
@@ -750,7 +751,7 @@ V_3: dict = {
       - "Total_Affected_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total affected people. The output should only include "Info_Box" or the header name."
       }}
       the second is the total number of affected people in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
-      - "Per_Country_Affected":[{{
+      - "Instance_Per_Administrative_Areas_Affected":[{{
       - "Administrative_Areas": "Name of the country where the affected people located, and no matter the affected people are in one or several countries, please order them in a list like [Country1, Country2, Country3]."
       - "Start_Date": "The start date when the people were affected, if mentioned."
       - "End_Date":"The end date when the people were affected, if mentioned."
@@ -761,7 +762,7 @@ V_3: dict = {
       - "Annotation": "Cite the header name from the article provided where you find the information about the total affected people in this level. The output should only include the header name."
             }}]
       the third is the specific instance of affected people in the sub-national level caused by the {Event_Name}, make sure to capture all locations with affected people information and organize this information in JSON format as follows:
-      - "Specific_Instance_Per_Country_Affected":[{{
+      - "Specific_Instance_Per_Administrative_Area_Affected":[{{
       - "Administrative_Area": "Name of the country."
       - "Locations": "The specific place within the country where the affected people located, and no matter the affected people are in one or several places, order them in a list like ["Location1";"Location2";"Location3"]."
       - "Start_Date": "The start date when the people were affected, if mentioned."
@@ -785,7 +786,7 @@ V_3: dict = {
       - "Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total number of damaged buildings. The output should only include "Info_Box" or the header name."
         }}
       the second is the total number of damaged buildings in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
-      - "Per_Country_Buildings_Damaged":[{{
+      - "Instance_Per_Administrative_Areas_Buildings_Damaged":[{{
       - "Administrative_Areas": "Name of the country where the building damage occured, and no matter the building damage is in one or several countries, please order them in a list like [Country1, Country2, Country3].."
       - "Start_Date": "The start date when the damaged buildings occurred, if mentioned."
       - "End_Date":"The end date when the damaged buildings occurred, if mentioned."
@@ -796,7 +797,7 @@ V_3: dict = {
       - "Annotation": "Cite the header name from the article provided where you find the information about the total building damage in this level. The output should only include the header name."
             }}]
       the third is the specific instance of damaged buildings within each country caused by the {Event_Name}, make sure to capture all locations with damaged buildings information and organize this information in JSON format as follows:
-      - "Specific_Instance_Per_Country_Buildings_Damaged":[{{
+      - "Specific_Instance_Per_Administrative_Area_Buildings_Damaged":[{{
       - "Administrative_Area": "Name of the country."
       - "Locations": "The specific place/places within the country where the damaged buildings occurred, and no matter the building damage is in one or several places, order it/them in a list like ["city1";"city2";"city3"]."
       - "Start_Date": "The start date when the damaged buildings occurred, if mentioned."
@@ -816,7 +817,7 @@ V_3: dict = {
       - "Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total death. The output should only include "Info_Box" or the header name."
       }}
       the second is the total number of deaths in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
-      - "Per_Country_Deaths":[{{
+      - "Instance_Per_Administrative_Areas_Deaths":[{{
       - "Administrative_Areas": "Name of the country where the death occurred, and no matter the deaths are in one or several countries, please order them in a list like [Country1, Country2, Country3]."
       - "Start_Date": "The start date when the deaths occurred, if mentioned."
       - "End_Date":"The end date when the deaths occurred, if mentioned."
@@ -827,7 +828,7 @@ V_3: dict = {
       - "Annotation": "Cite the header name from the article provided where you find the information about the total death in this level. The output should only include the header name."
             }}]
       the third is the specific instance of deaths in the sub-national level caused by the {Event_Name}, make sure to capture all locations with death information and organize this information in JSON format as follows:
-      - "Specific_Instance_Per_Country_Deaths":[{{
+      - "Specific_Instance_Per_Administrative_Area_Deaths":[{{
       - "Administrative_Area": "Name of the country."
       - "Locations": "The specific place within the country where the deaths occurred, and no matter the deaths are in one or several places, order them in a list like ["Location1";"Location2";"Location3"]."
       - "Start_Date": "The start date when the deaths occurred, if mentioned."
@@ -849,7 +850,7 @@ V_3: dict = {
       - "Total_Displaced_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total displacement. The output should only include "Info_Box" or the header name."
       }}
       the second is the total number of displacement in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
-      - "Per_Country_Displaced":[{{
+      - "Instance_Per_Administrative_Areas_Displaced":[{{
       - "Administrative_Areas": "Name of the country where the displacement occurred, and no matter the displacement is in one or several countries, please order them in a list like [Country1, Country2, Country3]."
       - "Start_Date": "The start date when the displacement occurred, if mentioned."
       - "End_Date":"The end date when the displacement occurred, if mentioned."
@@ -860,7 +861,7 @@ V_3: dict = {
       - "Annotation": "Cite the header name from the article provided where you find the information about the total displacement in this level. The output should only include the header name."
             }}]
       the third is the specific instance of displacement in the sub-national level caused by the {Event_Name}, make sure to capture all locations with displacement information and organize this information in JSON format as follows:
-      - "Specific_Instance_Per_Country_Displaced":[{{
+      - "Specific_Instance_Per_Administrative_Area_Displaced":[{{
       - "Administrative_Area": "Name of the country."
       - "Locations": "The specific place within the country where the displacement occurred, and no matter the displacement is in one or several places, order them in a list like ["Location1";"Location2";"Location3"]."
       - "Start_Date": "The start date when the displacement occurred, if mentioned."
@@ -882,7 +883,7 @@ V_3: dict = {
       - "Total_Homeless_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total homelessness. The output should only include "Info_Box" or the header name."
       }}
       the second is the total number of homelessness in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
-      - "Per_Country_Homeless":[{{
+      - "Instance_Per_Administrative_Areas_Homeless":[{{
       - "Administrative_Areas": "Name of the country where the homelessness occurred, and no matter the homelessness is in one or several countries, please order them in a list like [Country1, Country2, Country3]."
       - "Start_Date": "The start date when the homelessness occurred, if mentioned."
       - "End_Date":"The end date when the homelessness occurred, if mentioned."
@@ -893,7 +894,7 @@ V_3: dict = {
       - "Annotation": "Cite the header name from the article provided where you find the information about the total homelessness in this level. The output should only include the header name."
             }}]
       the third is the specific instance of homelessness in the sub-national level caused by the {Event_Name}, make sure to capture all locations with homelessness information and organize this information in JSON format as follows:
-      - "Specific_Instance_Per_Country_Homeless":[{{
+      - "Specific_Instance_Per_Administrative_Area_Homeless":[{{
       - "Administrative_Area": "Name of the country."
       - "Locations": "The specific place within the country where the homelessness occurred, and no matter the homelessness is in one or several places, order them in a list like ["Location1";"Location2";"Location3"]."
       - "Start_Date": "The start date when the homelessness occurred, if mentioned."
@@ -915,7 +916,7 @@ V_3: dict = {
       - "Total_Injuries_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total non-fatal injuries. The output should only include "Info_Box" or the header name."
       }}
       the second is the total number of non-fatal injuries in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
-      - "Per_Country_Injuries":[{{
+      - "Instance_Per_Administrative_Areas_Injuries":[{{
       - "Administrative_Areas": "Name of the country where the non-fatal injuries occurred, and no matter the non-fatal injuries are in one or several countries, please order them in a list like [Country1, Country2, Country3]."
       - "Start_Date": "The start date when the non-fatal injuries occurred, if mentioned."
       - "End_Date":"The end date when the non-fatal injuries occurred, if mentioned."
@@ -926,7 +927,7 @@ V_3: dict = {
       - "Annotation": "Cite the header name from the article provided where you find the information about the total non-fatal injuries in this level. The output should only include the header name."
             }}]
       the third is the specific instance of non-fatal injuries in the sub-national level caused by the {Event_Name}, make sure to capture all locations with non-fatal injuries information and organize this information in JSON format as follows:
-      - "Specific_Instance_Per_Country_Injuries":[{{
+      - "Specific_Instance_Per_Administrative_Area_Injuries":[{{
       - "Administrative_Area": "Name of the country."
       - "Locations": "The specific place within the country where the non-fatal injuries occurred, and no matter the non-fatal injuries are in one or several places, order them in a list like ["Location1";"Location2";"Location3"]."
       - "Start_Date": "The start date when the non-fatal injuries occurred, if mentioned."
@@ -953,7 +954,7 @@ V_3: dict = {
             - "Total_Insured_Damage_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total insured damage. The output should only include "Info_Box" or the header name."
               }}
             the second is the total insured damage in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
-             - "Per_Country_Insured_Damage":[{{
+             - "Instance_Per_Administrative_Areas_Insured_Damage":[{{
               - "Administrative_Areas": "Name of the country where the insured damage occured, and no matter the total insured damage is in one or several countries, please order them in a list like [Country1, Country2, Country3]."
               - "Start_Date": "The start date when the insured damage occurred, if mentioned."
               - "End_Date":"The end date when the insured damage occurred, if mentioned."
@@ -967,7 +968,7 @@ V_3: dict = {
               - "Annotation": "Cite the header name from the article provided where you find the information about the total insured damage in this level. The output should only include the header name."
                   }}]
               the third is the specific instance of insured damage in the sub-national level caused by the {Event_Name}, make sure to capture all locations with insured damage information and organize this information in JSON format as follows:
-              - "Specific_Instance_Per_Country_Insured_Damage":[{{
+              - "Specific_Instance_Per_Administrative_Area_Insured_Damage":[{{
               - "Administrative_Area": "Name of the country."
               - "Locations": "The specific place/places within the country where the insured damage occurred, and no matter the insured damage is in one or several places, order it/them in a list like ["Location1";"Location2";"Location3"]."
               - "Start_Date": "The start date when the insured damage occurred, if mentioned."
@@ -998,7 +999,7 @@ V_3: dict = {
             - "Total_Damage_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total economic damage. The output should only include "Info_Box" or the header name."
               }}
             the second is the total economic damage in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
-             - "Per_Country_Damage":[{{
+             - "Instance_Per_Administrative_Areas_Damage":[{{
               - "Administrative_Areas": "Name of the country where the economic damage occured, and no matter the total economic damage is in one or several countries, please order them in a list like [Country1, Country2, Country3]."
               - "Start_Date": "The start date when the economic damage occurred, if mentioned."
               - "End_Date":"The end date when the economic damage occurred, if mentioned."
@@ -1012,7 +1013,7 @@ V_3: dict = {
               - "Annotation": "Cite the header name from the article provided where you find the information about the total economic damage in this level. The output should only include the header name."
                   }}]
               the third is the specific instance of economic damage in the sub-national level caused by the {Event_Name}, make sure to capture all locations with economic damage information and organize this information in JSON format as follows:
-              - "Specific_Instance_Per_Country_Damage":[{{
+              - "Specific_Instance_Per_Administrative_Area_Damage":[{{
               - "Administrative_Area": "Name of the country."
               - "Locations": "The specific place/places within the country where the economic damage occurred, and no matter the economic damage is in one or several places, order it/them in a list like ["Location1";"Location2";"Location3"]."
               - "Start_Date": "The start date when the economic damage occurred, if mentioned."

@@ -1,4 +1,3 @@
-# checking the status of batch and retrive the results
 import argparse
 import json
 import os
@@ -25,44 +24,36 @@ if __name__ == "__main__":
         "-o",
         "--output_dir",
         dest="output_dir",
-        help="The directory where the LLM outputs will land (as .json)",
+        help="The directory where the retrieved LLM outputs will land (as .json)",
         type=str,
     )
     parser.add_argument(
         "-f",
-        "--batch_filename",
-        dest="batch_filename",
-        help="The name of the jsonl file in the batch folder",
+        "--file_name",
+        dest="file_name",
+        help="The name of the json file in the original article folder",
         type=str,
     )
     parser.add_argument(
         "-b",
-        "--batch_dir",
-        dest="batch_dir",
-        help="The directory where the batch file lands (as .jsonl)",
+        "--raw_dir",
+        dest="raw_dir",
+        help="The directory where the original file lands (as .json)",
         type=str,
     )
     args = parser.parse_args()
     logger.info(f"Passed args: {args}")
-    logger.info(f"Loading {args.batch_dir}")
-    pathlib.Path(args.batch_dir).mkdir(parents=True, exist_ok=True)
-    file_path = f"{args.batch_dir}/{args.filename}"
+    logger.info(f"Loading {args.raw_dir}")
+    pathlib.Path(args.raw_dir).mkdir(parents=True, exist_ok=True)
+    file_path = f"{args.raw_dir}/{args.file_name}"
     with open(file_path, "r") as file:
-        # Process each line in the file
-        for line in file:
-            # Parse the JSON object from the line
-            data = json.loads(line)
-    """
+        data = json.load(file)
+
     logger.info(f"Creating {args.output_dir} if it does not exist!")
     pathlib.Path(args.output_dir).mkdir(parents=True, exist_ok=True)
-    """
-
     env_path = Path(args.api_env)
     load_dotenv(dotenv_path=env_path)
     client = openai.OpenAI(api_key=os.getenv("API_KEY"))
-    # return the batches information, and access the ids, only when the task is completed
-    # the custom id with the prompt category, and append them together
-    # metadata={'description': 'batch job for basic information'}
 
     # Function to extract message content based on custom_id
     def get_message_by_custom_id(batch_responses, custom_id):
@@ -92,20 +83,27 @@ if __name__ == "__main__":
 
         # Retrieve the file content associated with the output_file_id
         file_response = client.files.content(output_file_id)
-        batch_responses = file_response.json()
+        batch_responses = (
+            file_response.json()
+        )  # get the json error, add the json output in the model setting, and need to check the result /Ni 20240830
 
         # Iterate over the batch responses and extract relevant details
-        for item in batch_responses:  # Assuming batch_responses is a list of response objects
-            custom_id = item.get("custom_id")
-            message_content = get_message_by_custom_id(batch_responses, custom_id)
-
+        for item in data:
             # Collect data from each item and append to the response list
-            Event_ID = str(item.get("Event_ID", "N/A"))  # Replace with actual key if different
-            Source = str(item.get("Source", "N/A"))  # Replace with actual key if different
-            Event_Name = str(item.get("Event_Name", "N/A"))  # Replace with actual key if different
-
-            # Create a dictionary with the extracted information
-            df = {"Event_ID": Event_ID, "Source": Source, "Event_Name": Event_Name, "Message_Content": message_content}
+            Event_ID = str(item.get("Event_ID"))
+            Source = str(item.get("Source"))
+            Event_Name = str(item.get("Event_Name"))
+            for i in batch_responses:  # Assuming batch_responses is a list of response objects
+                custom_id = i.custom_id
+                if Event_ID in custom_id:
+                    message_content = get_message_by_custom_id(batch_responses, custom_id)
+                    # Create a dictionary with the extracted information
+                    df = {"Event_ID": Event_ID, "Sources": Source, "Event_Names": Event_Name}
+                    df.update(message_content)
 
             # Append the dictionary to the response list
             response.append(df)
+
+    out_file_path = f"{args.output_dir}/{args.filename.replace('.json', '')}_rawoutput.json"
+    with open(out_file_path, "w") as json_file:
+        json.dump(response, json_file, indent=4)
