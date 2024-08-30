@@ -354,19 +354,23 @@ def flatten_data_table():
 
     # Level 2 -- "Impacts Per country-level Administrative Area"
     # multiple administrative areas, the lenght of this list is the same or smaller than that in "Events" (L1)
-    Impact_Per_Country = data_table[data_table["Location_Norm"].apply(lambda x: flatten(x) == [])]
-    Impact_Per_Country = Impact_Per_Country[Impact_Per_Country["main"] == False]
+    Impact_Per_Administrative_Area = data_table[data_table["Location_Norm"].apply(lambda x: flatten(x) == [])]
+    Impact_Per_Administrative_Area = Impact_Per_Administrative_Area[Impact_Per_Administrative_Area["main"] == False]
 
     # Level 3 -- "Specific Instances per country-level Administrative Area"
     # single administrative area with multiple sub locations
-    Specific_Instance_Per_Country = data_table[~data_table["Location_Norm"].apply(lambda x: flatten(x) == [])]
-    Specific_Instance_Per_Country = Specific_Instance_Per_Country[Specific_Instance_Per_Country["main"] == False]
+    Specific_Instance_Per_Administrative_Area = data_table[
+        ~data_table["Location_Norm"].apply(lambda x: flatten(x) == [])
+    ]
+    Specific_Instance_Per_Administrative_Area = Specific_Instance_Per_Administrative_Area[
+        Specific_Instance_Per_Administrative_Area["main"] == False
+    ]
 
     event_breakdown_dfs = {}
 
     for name, df_lvl in {
-        "Impact_Per_Country": Impact_Per_Country,  # l2
-        "Specific_Instance_Per_Country": Specific_Instance_Per_Country,  # l3
+        "Impact_Per_Administrative_Area": Impact_Per_Administrative_Area,  # l2
+        "Specific_Instance_Per_Administrative_Area": Specific_Instance_Per_Administrative_Area,  # l3
     }.items():
         for col_type in event_breakdown_columns.keys():
             logger.info(
@@ -398,7 +402,7 @@ def flatten_data_table():
                     logger.debug(f"Dropping rows missing specific impacts: {df.shape}")
                     missing_spec_impact_msk = df[event_breakdown_columns[col_type][cat]].isna().all(axis=1)
                     df = df[~missing_spec_impact_msk]
-                    if name == "Impact_Per_Country":  # L2
+                    if name == "Impact_Per_Administrative_Area":  # L2
                         df["Administrative_Area_Norm"] = df["Administrative_Area_Norm"].apply(
                             lambda x: [y.split("|") if y else None for y in x]
                         )
@@ -411,7 +415,7 @@ def flatten_data_table():
                         df.drop(columns=["Location_Norm"], inplace=True)
                         event_breakdown_dfs[f"{name}_{cat}"] = df
 
-                    elif name == "Specific_Instance_Per_Country":  # L3
+                    elif name == "Specific_Instance_Per_Administrative_Area":  # L3
                         df["Administrative_Area_Norm"] = df["Administrative_Area_Norm"].apply(
                             lambda x: (x[0] if isinstance(x, list) and len(x) == 1 else None)
                         )
