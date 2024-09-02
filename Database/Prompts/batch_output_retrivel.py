@@ -30,7 +30,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "-f",
         "--file_name",
-        dest="file_name",
+        dest="filename",
         help="The name of the json file in the original article folder",
         type=str,
     )
@@ -45,7 +45,7 @@ if __name__ == "__main__":
     logger.info(f"Passed args: {args}")
     logger.info(f"Loading {args.raw_dir}")
     pathlib.Path(args.raw_dir).mkdir(parents=True, exist_ok=True)
-    file_path = f"{args.raw_dir}/{args.file_name}"
+    file_path = f"{args.raw_dir}/{args.filename}"
     with open(file_path, "r") as file:
         data = json.load(file)
 
@@ -62,7 +62,16 @@ if __name__ == "__main__":
                 # Extract the message content from the response
                 try:
                     message = response["response"]["body"]["choices"][0]["message"]["content"]
-                    return message
+                    message = message.replace("```json", "").replace("```", "").strip('"').strip()
+                    try:
+                        return json.loads(message)
+                    except:
+                        try:
+                            ## an ugly hack for a persistent json error
+                            message = message.replace("\n}\n\n\n{", ",")
+                            return json.loads(message)
+                        except:
+                            return {"Json_Error": message}
                 except (KeyError, IndexError) as e:
                     return f"Error retrieving message: {str(e)}"
         return f"No response found for custom_id: {custom_id}"
@@ -72,37 +81,40 @@ if __name__ == "__main__":
 
     # Retrieve the list of batches
     batches = client.batches.list()
+    # Iterate over the provided data
+    for item in data:
+        # Extract relevant details from each item in the data
+        Event_ID = str(item.get("Event_ID"))
+        Source = str(item.get("Source"))
+        Event_Name = str(item.get("Event_Name"))
 
-    # Iterate over each batch
-    for batch in batches:
-        batch_id = batch.id
-        output_file_id = batch.output_file_id
-
-        # Retrieve the batch details (if needed)
-        client.batches.retrieve(batch_id)
-
-        # Retrieve the file content associated with the output_file_id
-        file_response = client.files.content(output_file_id)
-        batch_responses = (
-            file_response.json()
-        )  # get the json error, add the json output in the model setting, and need to check the result /Ni 20240830
-
-        # Iterate over the batch responses and extract relevant details
-        for item in data:
-            # Collect data from each item and append to the response list
-            Event_ID = str(item.get("Event_ID"))
-            Source = str(item.get("Source"))
-            Event_Name = str(item.get("Event_Name"))
-            for i in batch_responses:  # Assuming batch_responses is a list of response objects
-                custom_id = i.custom_id
+        # Initialize the base dictionary for each event
+        df = {"Event_ID": Event_ID, "Sources": Source, "Event_Names": Event_Name}
+        # Iterate over each batch
+        for batch in batches:
+            batch_id = batch.id
+            output_file_id = batch.output_file_id
+            # Retrieve the batch details (if needed)
+            client.batches.retrieve(batch_id)
+            # Retrieve the file content associated with the output_file_id
+            file_response = client.files.content(output_file_id)
+            batch_responses = file_response.text
+            # Iterate over the parsed JSON lines and find all matching custom_ids
+            res = [json.loads(line) for line in batch_responses.strip().splitlines()]
+            for i in res:
+                custom_id = i.get("custom_id", "")
                 if Event_ID in custom_id:
-                    message_content = get_message_by_custom_id(batch_responses, custom_id)
-                    # Create a dictionary with the extracted information
-                    df = {"Event_ID": Event_ID, "Sources": Source, "Event_Names": Event_Name}
-                    df.update(message_content)
+                    try:
+                        # Retrieve the message content for the matching custom_id
+                        message_content = get_message_by_custom_id(res, custom_id)
 
-            # Append the dictionary to the response list
-            response.append(df)
+                        # Update the df dictionary with the message content directly
+                        df.update(message_content)
+                    except json.JSONDecodeError as e:
+                        # If a JSONDecodeError occurs, log the error in the df
+                        df["Json_Error"] = str(e)
+                # Append the dictionary to the response list
+        response.append(df)
 
     out_file_path = f"{args.output_dir}/{args.filename.replace('.json', '')}_rawoutput.json"
     with open(out_file_path, "w") as json_file:
