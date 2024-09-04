@@ -92,29 +92,33 @@ if __name__ == "__main__":
         df = {"Event_ID": Event_ID, "Sources": Source, "Event_Names": Event_Name}
         # Iterate over each batch
         for batch in batches:
-            batch_id = batch.id
-            output_file_id = batch.output_file_id
-            # Retrieve the batch details (if needed)
-            client.batches.retrieve(batch_id)
-            # Retrieve the file content associated with the output_file_id
-            file_response = client.files.content(output_file_id)
-            batch_responses = file_response.text
-            # Iterate over the parsed JSON lines and find all matching custom_ids
-            res = [json.loads(line) for line in batch_responses.strip().splitlines()]
-            for i in res:
-                custom_id = i.get("custom_id", "")
-                if Event_ID in custom_id:
-                    try:
-                        # Retrieve the message content for the matching custom_id
-                        message_content = get_message_by_custom_id(res, custom_id)
+            des = batch.metadata
+            # only return the result with the same file name in the metadata description
+            if str(args.filename) in des:
+                batch_id = batch.id
+                output_file_id = batch.output_file_id
+                # Retrieve the batch details (if needed)
+                client.batches.retrieve(batch_id)
+                # Retrieve the file content associated with the output_file_id
+                file_response = client.files.content(output_file_id)
+                batch_responses = file_response.text
 
-                        # Update the df dictionary with the message content directly
-                        df.update(message_content)
-                    except json.JSONDecodeError as e:
-                        # If a JSONDecodeError occurs, log the error in the df
-                        df["Json_Error"] = str(e)
-                # Append the dictionary to the response list
-        response.append(df)
+                # Iterate over the parsed JSON lines and find all matching custom_ids
+                res = [json.loads(line) for line in batch_responses.strip().splitlines()]
+                for i in res:
+                    custom_id = i.get("custom_id", "")
+                    if Event_ID in custom_id:
+                        try:
+                            # Retrieve the message content for the matching custom_id
+                            message_content = get_message_by_custom_id(res, custom_id)
+
+                            # Update the df dictionary with the message content directly
+                            df.update(message_content)
+                        except json.JSONDecodeError as e:
+                            # If a JSONDecodeError occurs, log the error in the df
+                            df["Json_Error"] = str(e)
+                    # Append the dictionary to the response list
+            response.append(df)
 
     out_file_path = f"{args.output_dir}/{args.filename.replace('.json', '')}_rawoutput.json"
     with open(out_file_path, "w") as json_file:
