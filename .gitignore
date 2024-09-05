@@ -9,6 +9,9 @@ results
 # ignore excel files
 **.xlsx
 
+# ignore openai api keys
+**/*.env
+
 # ... except for this excel file (gold flat-format annotation table)
 !Database/gold/ImpactDB_DataTable_Validation.xlsx
 
