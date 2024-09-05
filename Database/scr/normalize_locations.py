@@ -2,23 +2,22 @@ import difflib
 import json
 import re
 from functools import cache
+from time import sleep
 
 import pandas as pd
 import pycountry
 import requests_cache
-from geopy.extra.rate_limiter import RateLimiter
 from geopy.geocoders import Nominatim
 
 from .normalize_utils import Logging
 
 
 class NormalizeLocation:
-    def __init__(self, gadm_path: str, unsd_path: str, rate_limiter: bool = True):
-        requests_cache.install_cache("Database/data/geopy_cache", filter_fn=self._debug)
+    def __init__(self, gadm_path: str, unsd_path: str):
+        requests_cache.install_cache("Database/data/geopy_cache", filter_fn=self._limit_rate)
 
         geolocator = Nominatim(user_agent="wikimpacts - impactdb; beta. Github: VUB-HYDR/Wikimpacts")
-        self.geocode = geolocator.geocode  # RateLimiter(geolocator.geocode, min_delay_seconds=1)
-        self.geocode = geolocator.geocode if not rate_limiter else RateLimiter(geolocator.geocode, min_delay_seconds=1)
+        self.geocode = geolocator.geocode
         self.gadm = pd.read_csv(gadm_path, sep=None, engine="python")
         self.unsd = pd.read_csv(unsd_path, sep=None, engine="python")
 
@@ -502,6 +501,12 @@ class NormalizeLocation:
         except BaseException:
             return [], []
 
-    def _debug(self, response):
+    def _limit_rate(
+        self,
+        response,
+    ):
         self.logger.debug(type(response))
-        return True
+        if type(response) == requests_cache.models.response.CachedResponse:
+            return True
+        else:
+            sleep(1)
