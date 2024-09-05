@@ -90,14 +90,14 @@ event_breakdown_columns = {
         "Insured_Damage": [
             "Insured_Damage_Min",
             "Insured_Damage_Max",
-            "Insured_Damage_Units",
+            "Insured_Damage_Unit",
             "Insured_Damage_Inflation_Adjusted",
             "Insured_Damage_Inflation_Adjusted_Year",
         ],
         "Damage": [
             "Damage_Min",
             "Damage_Max",
-            "Damage_Units",
+            "Damage_Unit",
             "Damage_Inflation_Adjusted",
             "Damage_Inflation_Adjusted_Year",
         ],
@@ -138,14 +138,14 @@ target_columns = flatten(
 
 ## SETTINGS TO NORMALIZE COLUMNS ##
 
-# get numeric type columns
-numeric_type_col = []
+# get numerical type columns
+numerical_type_col = []
 for i in event_breakdown_columns["numerical"].keys():
-    numeric_type_col.extend(event_breakdown_columns["numerical"][i])
+    numerical_type_col.extend(event_breakdown_columns["numerical"][i])
 
 # get string type columns
 convert_to_str = flatten([shared_cols])
-convert_to_int = flatten([date_cols, numeric_type_col])
+convert_to_int = flatten([date_cols, numerical_type_col])
 convert_to_list = [
     "Sources",
     "Event_Names",
