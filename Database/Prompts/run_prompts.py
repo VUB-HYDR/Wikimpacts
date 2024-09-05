@@ -8,7 +8,7 @@ import openai
 from dotenv import load_dotenv
 
 # the newest version of prompts are applied
-from Database.Prompts.prompts import V_3
+from Database.Prompts.prompts import V_3 as target_prompts
 from Database.scr.normalize_utils import Logging
 
 if __name__ == "__main__":
@@ -148,7 +148,7 @@ if __name__ == "__main__":
     # generate the batch file
     basic_data = []
     impact_data = []
-    for key, value in V_3.items():
+    for key, value in target_prompts.items():
         if key in prompt_basic_list:
             for item in raw_text:
                 event_id = (
@@ -157,7 +157,7 @@ if __name__ == "__main__":
                 event_name = str(item.get("Event_Name"))
                 info_box = str(item.get("Info_Box"))
                 wholt_text = process_whole_text(item)
-                prompt = V_3[key].format(Info_Box=info_box, Whole_Text=wholt_text, Event_Name=event_name)
+                prompt = target_prompts[key].format(Info_Box=info_box, Whole_Text=wholt_text, Event_Name=event_name)
                 line = batch_gpt_basic(prompt, event_id)  # define the line of api request
                 basic_data.append(line)
         if key in prompt_impact_list:
@@ -168,9 +168,10 @@ if __name__ == "__main__":
                 event_name = str(item.get("Event_Name"))
                 info_box = str(item.get("Info_Box"))
                 wholt_text = process_whole_text(item)
-                prompt = V_3[key].format(Info_Box=info_box, Whole_Text=wholt_text, Event_Name=event_name)
+                prompt = target_prompts[key].format(Info_Box=info_box, Whole_Text=wholt_text, Event_Name=event_name)
                 line = batch_gpt_impact(prompt, event_id)  # define the line of api request
                 impact_data.append(line)
+
     logger.info(f"Saving the batch file for basic information")
     with open(jsonl_file_path_basic, "w") as jsonl_file:
         for entry in basic_data:
