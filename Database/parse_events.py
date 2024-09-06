@@ -13,26 +13,24 @@ from Database.scr.normalize_utils import Logging, NormalizeUtils
 tqdm.pandas()
 
 
-def parse_main_events(df: pd.DataFrame):
-    logger.info("PARSING MAIN LEVEL EVENTS (L1)")
+def parse_main_events(df: pd.DataFrame, target_columns: list):
+    logger.info("Step: Parsing main level events (L1)")
 
-    # add short uids for each event if missing
     if "Event_ID" not in df.columns:
         logger.info("Event ids missing... generating random short uuids for col Event_ID")
         df["Event_ID"] = [utils.random_short_uuid() for _ in df.index]
 
-    # unpack Total_Summary_* columns
+    logger.info("Unpacking Total_Summary_* columns")
     total_summary_cols = [col for col in df.columns if col.startswith("Total_")]
     for i in total_summary_cols:
         df[i] = df[i].progress_apply(utils.eval)
     events = utils.unpack_col(df, columns=total_summary_cols)
 
-    # total summary columns contain data on each impact category; example: Total_Summary_Deaths
     logger.info(f"Total summary columns: {total_summary_cols}")
     del df
 
     if any([c in events.columns for c in ["Start_Date", "End_Date"]]):
-        logger.info("NORMALIZING DATES")
+        logger.info("Step: normalizing start and end dates if present")
         for d_col in ["Start_Date", "End_Date"]:
             logger.info(f"Normalizing date column: {d_col}")
             dates = events[d_col].progress_apply(utils.normalize_date)
@@ -43,14 +41,14 @@ def parse_main_events(df: pd.DataFrame):
             events = pd.concat([events, date_cols], axis=1)
             del date_cols
 
-    logger.info("NORMALIZING BOOLEANS IF PRESENT")
+    logger.info("Step: normalizing booleans if present")
     _yes, _no = re.compile(r"^(yes)$|^(y)$|^(true)$", re.IGNORECASE | re.MULTILINE), re.compile(
         r"^(no)$|^(n)$|^(false)$", re.IGNORECASE | re.MULTILINE
     )
     for inflation_adjusted_col in [col for col in events.columns if col.endswith("_Adjusted")]:
         logger.info(f"Normalizing boolean column {inflation_adjusted_col}")
         events[inflation_adjusted_col] = events[inflation_adjusted_col].replace({_no: False, _yes: True}, regex=True)
-    logger.info("NORMALIZING NULLS")
+    logger.info("Step: normalizing nulls")
     events = utils.replace_nulls(events)
     total_cols = [
         col
@@ -59,15 +57,18 @@ def parse_main_events(df: pd.DataFrame):
         and not col.endswith(("_with_annotation", "_Unit", "_Year", "_Annotation", "_Adjusted"))
     ]
 
-    logger.info("NORMALIZING RANGES IF TOTAL_SUMMARY COLUMNS PRESENT")
+    logger.info("Step: normalizing ranges if present")
     if total_cols:
         for i in total_cols:
-            logger.info(f"Normalizing ranges in {i}")
-            events[[f"{i}_Min", f"{i}_Max", f"{i}_Approx"]] = (
-                events[i]
-                .progress_apply(lambda x: (norm_num.extract_numbers(x) if isinstance(x, str) else (None, None, None)))
-                .progress_apply(pd.Series)
-            )
+            if i in events.columns:
+                logger.info(f"Normalizing ranges in {i}")
+                events[[f"{i}_Min", f"{i}_Max", f"{i}_Approx"]] = (
+                    events[i]
+                    .progress_apply(
+                        lambda x: (norm_num.extract_numbers(x) if isinstance(x, str) else (None, None, None))
+                    )
+                    .progress_apply(pd.Series)
+                )
 
     logger.info("SPLIT COLUMNS BY PIPE IF PRESENT")
     for str_col in [x for x in events.columns if x in ["Hazards"]]:
@@ -75,16 +76,16 @@ def parse_main_events(df: pd.DataFrame):
             lambda x: (x.split("|") if isinstance(x, str) else (x if isinstance(x, str) else None))
         )
 
-    logger.info("NORMALIZING ADMINISTATIVE AREAS IF PRESENT")
+    logger.info("Step: Normalizing country-level administrative areas if present")
 
-    if args.administrative_area_column in events.columns:
-        logger.info(f"Ensuring that all admin area data in {args.administrative_area_column} is of type <list>")
-        events[args.administrative_area_column] = events[args.administrative_area_column].progress_apply(
+    if "Administrative_Areas" in events.columns:
+        logger.info(f"Ensuring that all admin area data in Administrative_Areas is of type <list>")
+        events["Administrative_Areas"] = events["Administrative_Areas"].progress_apply(
             lambda x: utils.eval(x) if x is not None else []
         )
 
-        logger.info("Normalizing admin areas...")
-        events["Administrative_Area_Tmp"] = events[args.administrative_area_column].progress_apply(
+        logger.info("Normalizing administrative areas...")
+        events["Administrative_Area_Tmp"] = events["Administrative_Areas"].progress_apply(
             lambda admin_areas: (
                 [norm_loc.normalize_locations(c, is_country=True) for c in admin_areas] if admin_areas else []
             )
@@ -117,7 +118,7 @@ def parse_main_events(df: pd.DataFrame):
             ),
         )
 
-    logger.info("PERFORM CLEANUP")
+    logger.info("Step: cleanup")
     logger.info("Normalizing nulls")
     events = utils.replace_nulls(events)
     logger.info("Converting annotation columns to strings to store in sqlite3")
@@ -129,29 +130,45 @@ def parse_main_events(df: pd.DataFrame):
     for col in events.columns:
         events[col] = events[col].astype(str)
 
-    # TODO: how do we determine what to drop?
-    for i in ["Administrative_Areas_Affected", "Location"]:
-        if i in events.columns:
-            logger.info(f"Dropping unwanted column {i}")
-            events.drop(columns=[i], inplace=True)
-
-    del total_summary_cols, annotation_cols, col_to_str, total_cols
+    logger.info(f"Storing parsed results for L1 events")
+    df_to_parquet(events[[x for x in target_columns if x in events.columns]], args.output_dir, "Total_Summary", 200)
+    del total_summary_cols, annotation_cols, total_cols
     return events
 
 
-def parse_sub_level_event(column_pattern: str):
-    """
-    Parses sub-level events (events of a type smaller than "Main Event").
-    column_pattern (str): the prefix of the column.  (eg. "Specific_" to capture sperific instance events per adminstrative areas).
-    administrative_area_column_type (type): the type of the data in the administrative area column (str or list).
-    has_location_column (bool): False to ignore the Location column -- the location column is assumed to be of type list[list[str|GeoJson]].
-    """
-    # clean out NaNs and Nulls
+def parse_sub_level_event(level: str):
+    available_subevent_levels = {
+        "l2": {
+            "prefix": "Instance",
+            "administrative_area_col": "Administrative_Areas",
+            "administrative_area_type": list,
+            "location_col": None,
+        },
+        "l3": {
+            "prefix": "Specific",
+            "administrative_area_col": "Administrative_Area",
+            "administrative_area_type": str,
+            "location_col": "Locations",
+        },
+    }
+    try:
+        assert level in available_subevent_levels
+        column_pattern = available_subevent_levels[level]["prefix"]
+        administrative_area_col = available_subevent_levels[level]["administrative_area_col"]
+        location_col = available_subevent_levels[level]["location_col"]
+
+        logger.info(f"Parsing level {level} with column prefix {column_pattern}")
+    except AssertionError as err:
+        logger.error(
+            f"Level {level} unavailable. Available subevent levels: {list(available_subevent_levels.keys())}. Error: {err}"
+        )
+        raise AssertionError
+
+    logger.info("Normalizing nulls and NaNs")
     events = utils.replace_nulls(events)
 
-    # parse subevents
     specific_summary_cols = [col for col in events if col.startswith(column_pattern)]
-    logger.info(f"Parsing subevents. Columns: {specific_summary_cols}")
+    logger.info(f"Parsing {level}. Columns: {specific_summary_cols}")
 
     for col in specific_summary_cols:
         # evaluate string bytes to python datatype (hopefully dict, str, or list)
@@ -173,9 +190,7 @@ def parse_sub_level_event(column_pattern: str):
         sub_event = utils.replace_nulls(sub_event)
 
         specific_total_cols = [
-            col
-            for col in sub_event.columns
-            if col.startswith("Num_") and "Date" not in col and args.location_column not in col
+            col for col in sub_event.columns if col.startswith("Num_") and "Date" not in col and "Locations" not in col
         ]
         if specific_total_cols:
             logger.info(
@@ -197,6 +212,7 @@ def parse_sub_level_event(column_pattern: str):
         ]
         assert len(start_date_col) == len(end_date_col), "Check the start and end date columns"
         assert len(start_date_col) <= 1, "Check the start and end date columns, there might be too many"
+
         if start_date_col and end_date_col:
             logger.info(f"Normalizing start and end date in columns {start_date_col} and {end_date_col}")
             start_date_col, end_date_col = start_date_col[0], end_date_col[0]
@@ -220,79 +236,109 @@ def parse_sub_level_event(column_pattern: str):
             )
             sub_event.reset_index(inplace=True, drop=True)
             sub_event = pd.concat([sub_event, start_date_cols, end_date_cols], axis=1)
+
         logger.info(f"Normalizing administrative area names for subevent {col}")
-        sub_event[
-            [
-                "Administrative_Area_Norm",
-                "Administrative_Area_Type",
-                "Administrative_Area_GeoJson",
-            ]
-        ] = (
-            sub_event[args.administrative_area_column]
-            .progress_apply(lambda admin_area: norm_loc.normalize_locations(admin_area, is_country=True))
-            .progress_apply(pd.Series)
-        )
-        logger.info(f"Getting GID from GADM for Administrative Areas in subevent {col}")
-        sub_event["Administrative_Area_GID"] = sub_event["Administrative_Area_Norm"].progress_apply(
-            lambda admin_area: (norm_loc.get_gadm_gid(country=admin_area) if admin_area else None)
-        )
-        logger.info(f"Normalizing location names for subevent {col}")
-        sub_event[
-            [
-                "Location_Norm",
-                "Location_Type",
-                "Location_GeoJson",
-            ]
-            # Sometimes, subevents can have a location and admin area that are the same
-            # (meaning the sub-event occurred in the same admin area), so the right params
-            # are passed to the function (it's better to search for locations with the advanced OSM query search)
-        ] = sub_event.progress_apply(
-            lambda row: (
-                norm_loc.normalize_locations(area=row[f"Location"], in_country=row["Administrative_Area_Norm"])
-                if row[f"Location"] != row["Administrative_Area_Norm"]
-                else norm_loc.normalize_locations(area=row["Administrative_Area_Norm"], is_country=True)
-            ),
-            axis=1,
-        ).progress_apply(
-            pd.Series
-        )
-        logger.info(f"Getting GID from GADM for locations in subevent {col}")
-        sub_event[f"Location_GID"] = sub_event.progress_apply(
-            lambda row: (
-                norm_loc.get_gadm_gid(
-                    area=row[f"Location_Norm"],
-                    country=row["Administrative_Area_Norm"],
+
+        if level == "l2":
+            sub_event[
+                [
+                    f"{administrative_area_col}_Norm",
+                    f"{administrative_area_col}_Type",
+                    f"{administrative_area_col}_GeoJson",
+                ]
+            ] = (
+                sub_event[administrative_area_col]
+                .progress_apply(lambda admin_area: norm_loc.normalize_locations(admin_area, is_country=True))
+                .progress_apply(pd.Series)
+            )
+            logger.info(f"Getting GID from GADM for Administrative Areas in subevent {col}")
+            sub_event[f"{administrative_area_col}_GID"] = sub_event[f"{administrative_area_col}_Norm"].progress_apply(
+                lambda admin_area: [norm_loc.normalize_locations(c, is_country=True) for c in admin_area]
+                if isinstance(admin_area, available_subevent_levels[level]["administrative_area_type"])
+                else []
+            )
+
+        elif level == "l3":
+            sub_event[
+                [
+                    f"{administrative_area_col}_Norm",
+                    f"{administrative_area_col}_Type",
+                    f"{administrative_area_col}_GeoJson",
+                ]
+            ] = (
+                sub_event[administrative_area_col]
+                .progress_apply(
+                    lambda admin_area: norm_loc.normalize_locations(admin_area, is_country=True)
+                    if isinstance(admin_area, available_subevent_levels[level]["administrative_area_type"])
+                    else None
                 )
-                if row[f"Location_Norm"]
-                else None
-            ),
-            axis=1,
-        )
-        logger.info(
-            "Cleaning locations and administrative areas that are identical (a subevent where the smallest location is a country-level admin area)"
-        )
-        sub_event = sub_event.progress_apply(lambda row: normalize_location_rows_if_country(row), axis=1)
-        sub_event["Location_GID"] = sub_event["Location_GID"].astype(str)
-        sub_event["Administrative_Area_GID"] = sub_event["Administrative_Area_GID"].astype(str)
+                .progress_apply(pd.Series)
+            )
+            logger.info(f"Getting GID from GADM for Administrative Areas in subevent {col}")
+            sub_event[f"{administrative_area_col}_GID"] = sub_event[f"{administrative_area_col}_Norm"].progress_apply(
+                lambda admin_area: (norm_loc.get_gadm_gid(country=admin_area) if admin_area else None)
+            )
+            logger.info(f"Normalizing location names for subevent {col}")
+            sub_event[
+                [
+                    f"{location_col}_Norm",
+                    f"{location_col}_Type",
+                    f"{location_col}_GeoJson",
+                ]
+            ] = sub_event.progress_apply(
+                lambda row: (
+                    norm_loc.normalize_locations(
+                        area=row[location_col], in_country=row[f"{administrative_area_col}_Norm"]
+                    )
+                    if isinstance(row[location_col], list)
+                    else []
+                ),
+                axis=1,
+            ).progress_apply(
+                pd.Series
+            )
+
+            logger.info(f"Getting GID from GADM for locations in subevent {col}")
+
+            sub_event[f"{location_col}_GID"] = sub_event.progress_apply(
+                lambda row: (
+                    [
+                        norm_loc.get_gadm_gid(
+                            area=row[f"{location_col}_Norm"][i],
+                            country=row[f"{administrative_area_col}_Norm"],
+                        )
+                        for i in f"{location_col}_Norm"
+                    ]
+                    if isinstance(row[f"{location_col}_Norm"], list)
+                    else None
+                ),
+                axis=1,
+            )
+
+        sub_event[f"{location_col}_GID"] = sub_event[f"{location_col}_GID"].astype(str)
+        sub_event[f"{administrative_area_col}_GID"] = sub_event[f"{administrative_area_col}_GID"].astype(str)
         sub_event[
             [
-                "Location_Norm",
-                "Location_Type",
-                "Location_GeoJson",
+                f"{location_col}_Norm",
+                f"{location_col}_Type",
+                f"{location_col}_GeoJson",
             ]
         ] = sub_event[
             [
-                "Location_Norm",
-                "Location_Type",
-                "Location_GeoJson",
+                f"{location_col}_Norm",
+                f"{location_col}_Type",
+                f"{location_col}_GeoJson",
             ]
         ].astype(str)
-        if "Death_with_annotation" in sub_event.columns:
-            sub_event["Death_with_annotation"] = sub_event["Death_with_annotation"].astype(str)
         logger.info(f"Storing parsed results for sunbvent {col}")
         for c in sub_event.columns:
             sub_event[c] = sub_event[c].astype(str)
-        sub_event.to_parquet(f"{args.output_dir}/{col}.parquet", engine="fastparquet")
+        df_to_parquet(
+            target_dir=f"{args.output_dir}/{col}.parquet",
+            target_file_prefix=available_subevent_levels[level]["prefix"],
+            chunk_size=200,
+            engine="fastparquet",
+        )
 
 
 def df_to_parquet(
@@ -318,7 +364,7 @@ def df_to_parquet(
 
 if __name__ == "__main__":
     logger = Logging.get_logger("parse_events", level="INFO")
-    available_event_types = ["main", "specific_instance", "impact_per_country"]
+    available_event_types = ["l1", "l2", "l3"]
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "-sm",
@@ -363,25 +409,7 @@ if __name__ == "__main__":
         "--event_type",
         dest="event_type",
         default=",".join(available_event_types),
-        help=f'Choose which events to parse (choices: {",".join(available_event_types)}). Pass as string and sepatate each choice with a comma; example: "main,impact_per_country". Irrelevant texts are ignored.',
-        type=str,
-    )
-
-    parser.add_argument(
-        "-aa",
-        "--administrative_area_column",
-        dest="administrative_area_column",
-        default="Administrative_Area",
-        help="Name of the column containing a list of aministrative areas -- will be renamed to Administrative_Area_* after parsing",
-        type=str,
-    )
-
-    parser.add_argument(
-        "-loc",
-        "--location_column",
-        dest="location_column",
-        default="Location",
-        help="Name of the column containing a list of locations smaller than a 'country-level' administrative area -- will be renamed to Location_* after parsing",
+        help=f'Choose which events to parse (choices: {",".join(available_event_types)}). Pass as string and sepatate each choice with a comma; example: "l1,l2". Irrelevant levels are ignored.',
         type=str,
     )
 
@@ -439,6 +467,7 @@ if __name__ == "__main__":
     ]
     l1_target_columns.extend([f"Total_{x}" for x in event_breakdown_columns["numerical"]])
     l1_target_columns.extend([f"Total_{x}" for x in event_breakdown_columns["monetary"]])
+
     args = parser.parse_args()
     args.event_type = args.event_type.split(",")
     assert all(
@@ -462,8 +491,12 @@ if __name__ == "__main__":
     df = pd.read_json(f"{args.raw_dir}/{args.filename}")
     logger.info("JSON datafile loaded")
 
-    norm_loc.uninstall_cache()
-    events = parse_main_events(df)[[x for x in l1_target_columns if x in events.columns]]
+    if "l1" in args.event_type:
+        parse_main_events(df, l1_target_columns)
 
-    logger.info(f"Storing parsed results")
-    df_to_parquet(events, args.output_dir, "Total_Summary", 200)
+    for lvl in ["l2", "l3"]:
+        if lvl in args.event_type:
+            # TODO: add target columns when saving
+            parse_sub_level_event(lvl)
+
+    norm_loc.uninstall_cache()
