@@ -8,7 +8,7 @@ import openai
 from dotenv import load_dotenv
 
 # the prompt list need to use the same variable names in our schema, and each key contains 1+ prompts
-from Database.Prompts.prompts import V_4_impact as target_prompts
+from Database.Prompts.prompts import V_5 as target_prompts
 from Database.scr.normalize_utils import Logging
 
 if __name__ == "__main__":
@@ -157,8 +157,8 @@ if __name__ == "__main__":
     ]
 
     # Define the file path for the JSONL file
-    jsonl_file_path_basic = f"{args.batch_dir}/{args.filename.replace('.json', '')}_basic.jsonl"
-    jsonl_file_path_impact = f"{args.batch_dir}/{args.filename.replace('.json', '')}_impact.jsonl"
+    jsonl_file_path_basic = f"{args.batch_dir}/{args.filename.replace('.json', '')}_{args.description}_basic.jsonl"
+    jsonl_file_path_impact = f"{args.batch_dir}/{args.filename.replace('.json', '')}_{args.description}_impact.jsonl"
 
     def generate_batch_data(raw_text, target_prompts, prompt_basic_list, prompt_impact_list):
         """

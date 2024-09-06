@@ -41,6 +41,15 @@ if __name__ == "__main__":
         help="The directory where the original file lands (as .json)",
         type=str,
     )
+
+    parser.add_argument(
+        "-d",
+        "--description",
+        dest="description",
+        help="The description of the experiment",
+        type=str,
+    )
+
     args = parser.parse_args()
     logger.info(f"Passed args: {args}")
     logger.info(f"Loading {args.raw_dir}")
@@ -93,8 +102,8 @@ if __name__ == "__main__":
         # Iterate over each batch
         for batch in batches:
             des = batch.metadata
-            # only return the result with the same file name in the metadata description
-            if str(args.filename) in des:
+            # only return the result with the same file name and the defined experiment description in the metadata description
+            if str(args.filename) and str(args.description) in des:
                 batch_id = batch.id
                 output_file_id = batch.output_file_id
                 # Retrieve the batch details (if needed)

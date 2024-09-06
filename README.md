@@ -43,7 +43,7 @@ poetry run python3 Database/Prompts/run_prompts.py --filename wiki_dev_whole_inf
 Choose the same raw file as you run the experiment, the same api env to access your remote OpenAI server and the output directory to store your result.
 - below is a command example you can refer to run the script:
 ```shell
-poetry run python3  Database/Prompts/batch_output_retrivel.py  --api_env .env  --output_dir  Database/raw/batch_test  --file_name wiki_dev_whole_infobox_20240729_70single_events.json  --raw_dir  Database/Wiki_dev_test_articles
+poetry run python3  Database/Prompts/batch_output_retrivel.py  --api_env .env  --output_dir  Database/raw/batch_test  --file_name wiki_dev_whole_infobox_20240729_70single_events.json  --raw_dir  Database/Wiki_dev_test_articles --description the_impact_V4
 ```
 ### Parsing and evaluation pipeline
 
