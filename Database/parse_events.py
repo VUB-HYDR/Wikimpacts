@@ -14,23 +14,21 @@ tqdm.pandas()
 
 
 def parse_main_events(df: pd.DataFrame, target_columns: list):
-    logger.info("Step: Parsing main level events (L1)")
+    logger.info("STEP: Parsing main level events (L1)")
 
     if "Event_ID" not in df.columns:
         logger.info("Event ids missing... generating random short uuids for col Event_ID")
         df["Event_ID"] = [utils.random_short_uuid() for _ in df.index]
-
     logger.info("Unpacking Total_Summary_* columns")
-    total_summary_cols = [col for col in df.columns if col.startswith("Total_")]
+    total_summary_cols = [col for col in df.columns if col.startswith("Total_Summary_")]
     for i in total_summary_cols:
         df[i] = df[i].progress_apply(utils.eval)
     events = utils.unpack_col(df, columns=total_summary_cols)
-
     logger.info(f"Total summary columns: {total_summary_cols}")
     del df
 
     if any([c in events.columns for c in ["Start_Date", "End_Date"]]):
-        logger.info("Step: normalizing start and end dates if present")
+        logger.info("STEP: Normalizing start and end dates if present")
         for d_col in ["Start_Date", "End_Date"]:
             logger.info(f"Normalizing date column: {d_col}")
             dates = events[d_col].progress_apply(utils.normalize_date)
@@ -41,15 +39,17 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
             events = pd.concat([events, date_cols], axis=1)
             del date_cols
 
-    logger.info("Step: normalizing booleans if present")
+    logger.info("STEP: Normalizing booleans if present")
     _yes, _no = re.compile(r"^(yes)$|^(y)$|^(true)$", re.IGNORECASE | re.MULTILINE), re.compile(
         r"^(no)$|^(n)$|^(false)$", re.IGNORECASE | re.MULTILINE
     )
     for inflation_adjusted_col in [col for col in events.columns if col.endswith("_Adjusted")]:
         logger.info(f"Normalizing boolean column {inflation_adjusted_col}")
         events[inflation_adjusted_col] = events[inflation_adjusted_col].replace({_no: False, _yes: True}, regex=True)
-    logger.info("Step: normalizing nulls")
+
+    logger.info("STEP: Normalizing nulls")
     events = utils.replace_nulls(events)
+
     total_cols = [
         col
         for col in events.columns
@@ -57,7 +57,7 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
         and not col.endswith(("_with_annotation", "_Unit", "_Year", "_Annotation", "_Adjusted"))
     ]
 
-    logger.info("Step: normalizing ranges if present")
+    logger.info("STEP: Normalizing ranges if present")
     if total_cols:
         for i in total_cols:
             if i in events.columns:
@@ -70,13 +70,13 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
                     .progress_apply(pd.Series)
                 )
 
-    logger.info("SPLIT COLUMNS BY PIPE IF PRESENT")
     for str_col in [x for x in events.columns if x in ["Hazards"]]:
+        logger.info(f"Splitting column {str_col} by pipe")
         events[str_col] = events[str_col].progress_apply(
             lambda x: (x.split("|") if isinstance(x, str) else (x if isinstance(x, str) else None))
         )
 
-    logger.info("Step: Normalizing country-level administrative areas if present")
+    logger.info("STEP: Normalizing country-level administrative areas if present")
 
     if "Administrative_Areas" in events.columns:
         logger.info(f"Ensuring that all admin area data in Administrative_Areas is of type <list>")
@@ -104,21 +104,23 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
                     [i[1] for i in x],
                     [i[2] for i in x],
                 )
+                if isinstance(x, list)
+                else None
             )
             .progress_apply(pd.Series)
         )
 
-        # TODO: Administrative Areas with no location can be searched again without the is_country flag
-        # TODO: change this when splitting the location function
         events.drop(columns=["Administrative_Area_Tmp"], inplace=True)
         logger.info("Getting GID from GADM for Administrative Areas")
         events["Administrative_Area_GID"] = events["Administrative_Area_Norm"].progress_apply(
             lambda admin_areas: (
-                [norm_loc.get_gadm_gid(country=c) if c else None for c in admin_areas] if admin_areas else None
+                [norm_loc.get_gadm_gid(country=c) if c else None for c in admin_areas]
+                if isinstance(admin_areas, list)
+                else None
             ),
         )
 
-    logger.info("Step: cleanup")
+    logger.info("STEP: Cleanup")
     logger.info("Normalizing nulls")
     events = utils.replace_nulls(events)
     logger.info("Converting annotation columns to strings to store in sqlite3")
@@ -136,7 +138,7 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
     return events
 
 
-def parse_sub_level_event(level: str):
+def parse_sub_level_event(df, level: str):
     available_subevent_levels = {
         "l2": {
             "prefix": "Instance",
@@ -165,17 +167,17 @@ def parse_sub_level_event(level: str):
         raise AssertionError
 
     logger.info("Normalizing nulls and NaNs")
-    events = utils.replace_nulls(events)
+    df = utils.replace_nulls(df)
 
-    specific_summary_cols = [col for col in events if col.startswith(column_pattern)]
+    specific_summary_cols = [col for col in df if col.startswith(column_pattern)]
     logger.info(f"Parsing {level}. Columns: {specific_summary_cols}")
 
     for col in specific_summary_cols:
         # evaluate string bytes to python datatype (hopefully dict, str, or list)
-        events[col] = events[col].progress_apply(utils.eval)
+        df[col] = df[col].progress_apply(utils.eval)
 
         # unpack subevents
-        sub_event = events[["Event_ID", col]].explode(col)
+        sub_event = df[["Event_ID", col]].explode(col)
 
         # drop any events that have no subevents (aka [] exploded into NaN)
         sub_event.dropna(how="all", inplace=True)
@@ -412,6 +414,14 @@ if __name__ == "__main__":
         help=f'Choose which events to parse (choices: {",".join(available_event_types)}). Pass as string and sepatate each choice with a comma; example: "l1,l2". Irrelevant levels are ignored.',
         type=str,
     )
+    parser.add_argument(
+        "-rl1",
+        "--raw_l1",
+        dest="raw_l1",
+        default=None,
+        help="Pass a filename (.json) to store the raw output from l1.",
+        type=str,
+    )
 
     event_breakdown_columns = {
         "numerical": {
@@ -488,15 +498,32 @@ if __name__ == "__main__":
         unsd_path="Database/data/UNSD — Methodology.csv",
     )
 
-    df = pd.read_json(f"{args.raw_dir}/{args.filename}")
-    logger.info("JSON datafile loaded")
+    events = None
+    tmp_dir = f"{args.output_dir}/tmp"
+
+    if args.raw_l1:
+        try:
+            events = pd.read_json(f"{tmp_dir}/{args.raw_l1}")
+            logger.info(f"Loaded events DataFrame from {args.raw_l1}")
+        except BaseException as err:
+            logger.error(f"Cannot find {args.raw_l1}. Error: {err}.")
 
     if "l1" in args.event_type:
-        parse_main_events(df, l1_target_columns)
+        if events is None:
+            df = pd.read_json(f"{args.raw_dir}/{args.filename}")
+            logger.info("JSON datafile loaded")
+            events = parse_main_events(df, l1_target_columns)
+        if args.raw_l1:
+            # store raw events
+            pathlib.Path(tmp_dir).mkdir(parents=True, exist_ok=True)
+            events.to_json(f"{tmp_dir}/{args.raw_l1}", orient="records")
+            logger.info("Raw events file stored")
 
     for lvl in ["l2", "l3"]:
-        if lvl in args.event_type:
-            # TODO: add target columns when saving
-            parse_sub_level_event(lvl)
-
-    norm_loc.uninstall_cache()
+        if events is not None and lvl in args.event_type:
+            parse_sub_level_event(events, lvl)
+        else:
+            if lvl in args.event_type:
+                logger.error(f"Could not parse level {lvl}")
+            else:
+                logger.error(f"Not a valid subevent level: {lvl}")
