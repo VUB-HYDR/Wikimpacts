@@ -198,7 +198,7 @@ def parse_sub_level_event(df, level: str, target_columns: list | None = None):
         sub_event = utils.replace_nulls(sub_event)
 
         specific_total_cols = [
-            col for col in sub_event.columns if col.startswith("Num_") and "Date" not in col and "Locations" not in col
+            col for col in sub_event.columns if col.startswith("Num") and "Date" not in col and "Locations" not in col
         ]
         if specific_total_cols:
             logger.info(
@@ -323,7 +323,7 @@ def parse_sub_level_event(df, level: str, target_columns: list | None = None):
                     else []
                 ),
                 axis=1,
-            ).progress_apply(pd.Series)
+            )
 
             sub_event[
                 [
@@ -357,7 +357,7 @@ def parse_sub_level_event(df, level: str, target_columns: list | None = None):
                             area=row[f"{location_col}_Norm"][i],
                             country=row[f"{administrative_area_col}_Norm"],
                         )
-                        for i in f"{location_col}_Norm"
+                        for i in range(len(row[f"{location_col}_Norm"]))
                     ]
                     if isinstance(row[f"{location_col}_Norm"], list)
                     else None
