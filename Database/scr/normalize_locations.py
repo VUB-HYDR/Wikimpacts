@@ -1,6 +1,7 @@
 import difflib
 import json
 import re
+from functools import cache
 from time import sleep
 
 import pandas as pd
@@ -331,6 +332,7 @@ class NormalizeLocation:
                         else self.unsd.loc[self.unsd[level] == fuzzy_area_match[0]][self.iso].unique().tolist()
                     )
 
+    @cache
     def _get_american_area(self, area: str, country: str = None) -> list | None:
         # TODO: slim down
         areas = []
@@ -404,6 +406,7 @@ class NormalizeLocation:
 
         return areas
 
+    @cache
     def get_gadm_gid(
         self,
         area: str = None,
