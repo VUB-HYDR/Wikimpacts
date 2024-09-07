@@ -14,7 +14,7 @@ tqdm.pandas()
 
 
 def parse_main_events(df: pd.DataFrame, target_columns: list):
-    logger.info("STEP: Parsing main level events (L1)")
+    logger.info("STEP: Parsing main level events (l1)")
 
     if "Event_ID" not in df.columns:
         logger.info("Event ids missing... generating random short uuids for col Event_ID")
@@ -87,7 +87,9 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
         logger.info("Normalizing administrative areas...")
         events["Administrative_Area_Tmp"] = events["Administrative_Areas"].progress_apply(
             lambda admin_areas: (
-                [norm_loc.normalize_locations(c, is_country=True) for c in admin_areas] if admin_areas else []
+                [norm_loc.normalize_locations(c, is_country=True) for c in admin_areas]
+                if isinstance(admin_areas, list)
+                else []
             )
         )
         events[
@@ -133,7 +135,7 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
         events[col] = events[col].astype(str)
 
     logger.info(f"Storing parsed results for L1 events")
-    df_to_parquet(events[[x for x in target_columns if x in events.columns]], args.output_dir, "Total_Summary", 200)
+    df_to_parquet(events[[x for x in target_columns if x in events.columns]], f"{args.output_dir}\l1", 200)
     del total_summary_cols, annotation_cols, total_cols
     return events
 
@@ -159,18 +161,18 @@ def parse_sub_level_event(df, level: str):
         administrative_area_col = available_subevent_levels[level]["administrative_area_col"]
         location_col = available_subevent_levels[level]["location_col"]
 
-        logger.info(f"Parsing level {level} with column prefix {column_pattern}")
+        logger.info(f"STEP: Parsing level {level} with column prefix {column_pattern}")
     except AssertionError as err:
         logger.error(
             f"Level {level} unavailable. Available subevent levels: {list(available_subevent_levels.keys())}. Error: {err}"
         )
         raise AssertionError
 
-    logger.info("Normalizing nulls and NaNs")
+    logger.info("STEP: Normalizing nulls and NaNs")
     df = utils.replace_nulls(df)
 
     specific_summary_cols = [col for col in df if col.startswith(column_pattern)]
-    logger.info(f"Parsing {level}. Columns: {specific_summary_cols}")
+    logger.info(f"STEP: Parsing {level}. Columns: {specific_summary_cols}")
 
     for col in specific_summary_cols:
         # evaluate string bytes to python datatype (hopefully dict, str, or list)
@@ -188,7 +190,7 @@ def parse_sub_level_event(df, level: str):
         )
         sub_event = sub_event[[c for c in sub_event.columns if isinstance(c, str)]]
 
-        logger.info(f"Normalizing nulls for subevent {col}")
+        logger.info(f"Normalizing nulls for {level} {col}")
         sub_event = utils.replace_nulls(sub_event)
 
         specific_total_cols = [
@@ -239,9 +241,15 @@ def parse_sub_level_event(df, level: str):
             sub_event.reset_index(inplace=True, drop=True)
             sub_event = pd.concat([sub_event, start_date_cols, end_date_cols], axis=1)
 
-        logger.info(f"Normalizing administrative area names for subevent {col}")
-
         if level == "l2":
+            logger.info(f"Normalizing administrative area names for {level} {col}")
+            sub_event[f"{administrative_area_col}_Tmp"] = sub_event[administrative_area_col].progress_apply(
+                lambda admin_areas: (
+                    [norm_loc.normalize_locations(c, is_country=True) for c in admin_areas]
+                    if isinstance(admin_areas, list)
+                    else []
+                )
+            )
             sub_event[
                 [
                     f"{administrative_area_col}_Norm",
@@ -249,15 +257,27 @@ def parse_sub_level_event(df, level: str):
                     f"{administrative_area_col}_GeoJson",
                 ]
             ] = (
-                sub_event[administrative_area_col]
-                .progress_apply(lambda admin_area: norm_loc.normalize_locations(admin_area, is_country=True))
+                sub_event[f"{administrative_area_col}_Tmp"]
+                .progress_apply(
+                    lambda x: (
+                        [i[0] for i in x],
+                        [i[1] for i in x],
+                        [i[2] for i in x],
+                    )
+                    if isinstance(x, list)
+                    else None
+                )
                 .progress_apply(pd.Series)
             )
+
+            sub_event.drop(columns=[f"{administrative_area_col}_Tmp"], inplace=True)
             logger.info(f"Getting GID from GADM for Administrative Areas in subevent {col}")
             sub_event[f"{administrative_area_col}_GID"] = sub_event[f"{administrative_area_col}_Norm"].progress_apply(
-                lambda admin_area: [norm_loc.normalize_locations(c, is_country=True) for c in admin_area]
-                if isinstance(admin_area, available_subevent_levels[level]["administrative_area_type"])
-                else []
+                lambda admin_areas: (
+                    [norm_loc.get_gadm_gid(country=c) if c else None for c in admin_areas]
+                    if isinstance(admin_areas, list)
+                    else None
+                ),
             )
 
         elif level == "l3":
@@ -271,14 +291,14 @@ def parse_sub_level_event(df, level: str):
                 sub_event[administrative_area_col]
                 .progress_apply(
                     lambda admin_area: norm_loc.normalize_locations(admin_area, is_country=True)
-                    if isinstance(admin_area, available_subevent_levels[level]["administrative_area_type"])
+                    if isinstance(admin_area, str)
                     else None
                 )
                 .progress_apply(pd.Series)
             )
             logger.info(f"Getting GID from GADM for Administrative Areas in subevent {col}")
             sub_event[f"{administrative_area_col}_GID"] = sub_event[f"{administrative_area_col}_Norm"].progress_apply(
-                lambda admin_area: (norm_loc.get_gadm_gid(country=admin_area) if admin_area else None)
+                lambda admin_area: (norm_loc.get_gadm_gid(country=admin_area) if isinstance(admin_area, str) else None)
             )
             logger.info(f"Normalizing location names for subevent {col}")
             sub_event[
@@ -316,37 +336,19 @@ def parse_sub_level_event(df, level: str):
                 ),
                 axis=1,
             )
-
-        sub_event[f"{location_col}_GID"] = sub_event[f"{location_col}_GID"].astype(str)
-        sub_event[f"{administrative_area_col}_GID"] = sub_event[f"{administrative_area_col}_GID"].astype(str)
-        sub_event[
-            [
-                f"{location_col}_Norm",
-                f"{location_col}_Type",
-                f"{location_col}_GeoJson",
-            ]
-        ] = sub_event[
-            [
-                f"{location_col}_Norm",
-                f"{location_col}_Type",
-                f"{location_col}_GeoJson",
-            ]
-        ].astype(str)
         logger.info(f"Storing parsed results for sunbvent {col}")
         for c in sub_event.columns:
             sub_event[c] = sub_event[c].astype(str)
         df_to_parquet(
-            target_dir=f"{args.output_dir}/{col}.parquet",
-            target_file_prefix=available_subevent_levels[level]["prefix"],
+            sub_event,
+            target_dir=f"{args.output_dir}/{level}/{col}.parquet",
             chunk_size=200,
-            engine="fastparquet",
         )
 
 
 def df_to_parquet(
     df: pd.DataFrame,
     target_dir: str,
-    target_file_prefix: str,
     chunk_size: int = 2000,
     **parquet_wargs,
 ):
@@ -360,7 +362,8 @@ def df_to_parquet(
     for i in range(0, len(df), chunk_size):
         slc = df.iloc[i : i + chunk_size]
         chunk = int(i / chunk_size)
-        fname = os.path.join(target_dir, f"{target_file_prefix}_{chunk:04d}.parquet")
+        fname = os.path.join(target_dir, f"{chunk:04d}.parquet")
+        pathlib.Path(target_dir).mkdir(parents=True, exist_ok=True)
         slc.to_parquet(fname, engine="fastparquet", **parquet_wargs)
 
 
@@ -525,5 +528,3 @@ if __name__ == "__main__":
         else:
             if lvl in args.event_type:
                 logger.error(f"Could not parse level {lvl}")
-            else:
-                logger.error(f"Not a valid subevent level: {lvl}")
