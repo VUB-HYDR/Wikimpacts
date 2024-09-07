@@ -1,7 +1,6 @@
 import difflib
 import json
 import re
-from functools import cache
 from time import sleep
 
 import pandas as pd
@@ -14,7 +13,10 @@ from .normalize_utils import Logging
 
 class NormalizeLocation:
     def __init__(self, gadm_path: str, unsd_path: str):
-        requests_cache.install_cache("Database/data/geopy_cache", filter_fn=self._limit_rate)
+        self.geopy_cache_path = "Database/data/geopy_cache"
+        requests_cache.install_cache(
+            self.geopy_cache_path, allowable_methods=("GET", "POST"), filter_fn=self._rate_limiter
+        )
 
         geolocator = Nominatim(user_agent="wikimpacts - impactdb; beta. Github: VUB-HYDR/Wikimpacts")
         self.geocode = geolocator.geocode
@@ -25,7 +27,7 @@ class NormalizeLocation:
             if "Code" not in col:
                 self.unsd[col] = self.unsd[col].apply(lambda s: s.lower() if type(s) == str else s)
 
-        self.logger = Logging.get_logger("normalize_locations")
+        self.logger = Logging.get_logger("normalize_locations", level="INFO")
         self.logger.info("Installed GeoPy cache")
         # frequently used literals
         (
@@ -93,10 +95,6 @@ class NormalizeLocation:
         self.cardinals = ["north", "south", "east", "west"]
         self.cardinals.extend(f"{i}ern" for i in ["north", "south", "east", "west"])
 
-    @staticmethod
-    def uninstall_cache():
-        requests_cache.uninstall_cache()
-
     def _clean_cardinal_directions(self, area: str) -> tuple[str, list[str]]:
         area = area.split()
         output = [i.strip() for i in area if i.lower().strip() not in self.cardinals]
@@ -126,7 +124,6 @@ class NormalizeLocation:
             self.logger.error(f"API call unsuccessful. Error message: {err}")
             return []
 
-    @cache
     def normalize_locations(
         self, area: str, is_country: bool = False, in_country: str = None
     ) -> tuple[str, str, dict] | None:
@@ -334,7 +331,6 @@ class NormalizeLocation:
                         else self.unsd.loc[self.unsd[level] == fuzzy_area_match[0]][self.iso].unique().tolist()
                     )
 
-    @cache
     def _get_american_area(self, area: str, country: str = None) -> list | None:
         # TODO: slim down
         areas = []
@@ -408,7 +404,6 @@ class NormalizeLocation:
 
         return areas
 
-    @cache
     def get_gadm_gid(
         self,
         area: str = None,
@@ -501,12 +496,14 @@ class NormalizeLocation:
         except BaseException:
             return [], []
 
-    def _limit_rate(
+    def _rate_limiter(
         self,
         response,
     ):
         self.logger.debug(type(response))
         if type(response) == requests_cache.models.response.CachedResponse:
-            return True
+            self.logger.debug("Response cached!")
         else:
+            self.logger.debug(f"Ratelimiting by 1 second. Response type: {type(response)}")
             sleep(1)
+        return True
