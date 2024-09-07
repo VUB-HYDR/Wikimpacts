@@ -146,11 +146,17 @@ class NormalizeUtils:
     @staticmethod
     def simple_country_check(c: str):
         try:
-            exists = pycountry.countries.get(name=c)
-            if exists:
-                return True
+            exists = pycountry.countries.search_fuzzy(c)[0].official_name
         except:
-            return False
+            try:
+                exists = pycountry.countries.search_fuzzy(c)[0].name
+            except:
+                try:
+                    exists = pycountry.historic_countries.search_fuzzy(c)[0].name
+                except:
+                    # TODO: fuzzy-match from GADM
+                    return False
+        return True if exists else False
 
 
 class NormalizeJsonOutput:
