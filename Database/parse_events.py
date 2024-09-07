@@ -370,8 +370,9 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                             area=row[f"{location_col}_Norm"][i],
                             country=row[f"{administrative_area_col}_Norm"],
                         )
-                        for i in range(len(row[f"{location_col}_Norm"]))
                         if isinstance(i, str)
+                        else None
+                        for i in range(len(row[f"{location_col}_Norm"]))
                     ]
                     if isinstance(row[f"{location_col}_Norm"], list)
                     else None
