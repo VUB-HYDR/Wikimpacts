@@ -18,7 +18,6 @@ def flatten(xss):
 
 
 def fix_column_names(df):
-    # TODO: L2 and L3 differ here!
     mapper = {
         "_Min": "Num_Min",
         "_Max": "Num_Max",
@@ -107,7 +106,7 @@ event_breakdown_columns = {
     },
 }
 
-# L1, L2, and L3 have these three column sets in common
+# l1, l2, and l3 have these three column sets in common
 shared_cols = [
     "Event_ID",
     "Event_ID_decimal",
@@ -128,7 +127,7 @@ date_cols = [
     "End_Date_Day",
 ]
 
-# set L1 output target columns
+# set l1 output target columns
 target_columns = flatten(
     [
         shared_cols,
@@ -348,7 +347,7 @@ def flatten_data_table():
         )
     )
 
-    logger.info("Splitting main events (L1) from instances (L2) and specific instabnces (L3)")
+    logger.info("Splitting main events (l1) from instances (l2) and specific instabnces (l3)")
     data_table["main"] = data_table.Event_ID_decimal.progress_apply(lambda x: float(x).is_integer())
 
     # data_table["Location_Norm"] = data_table["Location_raw"].progress_apply(lambda x: [])
@@ -361,7 +360,7 @@ def flatten_data_table():
     Events.drop(columns=["Location_Norm"], inplace=True)
 
     # Level 2 -- "Impacts Per country-level Administrative Area"
-    # multiple administrative areas, the lenght of this list is the same or smaller than that in "Events" (L1)
+    # multiple administrative areas, the lenght of this list is the same or smaller than that in "Events" (l1)
     Instance_Per_Administrative_Areas = data_table[
         data_table["Location_Norm"].progress_apply(lambda x: flatten(x) == [])
     ]
@@ -427,7 +426,7 @@ def flatten_data_table():
                         df.drop(columns=["Location_Norm"], inplace=True)
                         event_breakdown_dfs[f"{name}_{cat}"] = df
 
-                    elif name == "Specific_Instance_Per_Administrative_Area":  # L3
+                    elif name == "Specific_Instance_Per_Administrative_Area":  # l3
                         df["Administrative_Area_Norm"] = df["Administrative_Area_Norm"].progress_apply(
                             lambda x: (x[0] if isinstance(x, list) and len(x) == 1 else None)
                         )

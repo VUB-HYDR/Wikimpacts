@@ -134,7 +134,7 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
     for col in events.columns:
         events[col] = events[col].astype(str)
 
-    logger.info(f"Storing parsed results for L1 events. Target columns: {target_columns}")
+    logger.info(f"Storing parsed results for l1 events. Target columns: {target_columns}")
     df_to_parquet(
         events[[x for x in target_columns if x in events.columns]],
         f"{args.output_dir}/l1",
