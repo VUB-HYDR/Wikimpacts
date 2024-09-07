@@ -116,9 +116,12 @@ class NormalizeUtils:
         """Unpacks Total_Summary_* columns"""
         for c in columns:
             json_normalized_df = pd.json_normalize(df[c])
-            json_normalized_df = json_normalized_df[
-                [x for x in json_normalized_df.columns if not x.startswith("Specific_")]
-            ]
+            cat = c.split("Total_Summary_")[1]
+            bad_columns = [x for x in json_normalized_df.columns if not x.startswith(f"Total_{cat}")]
+            for bad_col_name in bad_columns:
+                fix_col_name = f"Total_{cat}_{bad_col_name}"
+                json_normalized_df.rename(columns={bad_col_name: fix_col_name}, inplace=True)
+
             df = pd.concat([json_normalized_df, df], axis=1)
             df.drop(columns=[c], inplace=True)
         return df
