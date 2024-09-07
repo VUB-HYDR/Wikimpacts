@@ -144,7 +144,7 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
     return events
 
 
-def parse_sub_level_event(df, level: str, target_columns: list | None = None):
+def parse_sub_level_event(df, level: str, target_columns: list = []):
     available_subevent_levels = {
         "l2": {
             "prefix": "Instance",
@@ -198,7 +198,10 @@ def parse_sub_level_event(df, level: str, target_columns: list | None = None):
         sub_event = utils.replace_nulls(sub_event)
 
         specific_total_cols = [
-            col for col in sub_event.columns if col.startswith("Num") and "Date" not in col and "Locations" not in col
+            # keep as list in case more are added in the future
+            col
+            for col in sub_event.columns
+            if col == "Num"
         ]
         if specific_total_cols:
             logger.info(
@@ -214,6 +217,16 @@ def parse_sub_level_event(df, level: str, target_columns: list | None = None):
                 )
         logger.info(f"Normalizing nulls for subevent {col}")
         sub_event = utils.replace_nulls(sub_event)
+
+        _yes, _no = re.compile(r"^(yes)$|^(y)$|^(true)$", re.IGNORECASE | re.MULTILINE), re.compile(
+            r"^(no)$|^(n)$|^(false)$", re.IGNORECASE | re.MULTILINE
+        )
+        for inflation_adjusted_col in [col for col in sub_event.columns if col.endswith("_Adjusted")]:
+            logger.info(f"Normalizing boolean column {inflation_adjusted_col} for subevent {col}")
+            sub_event[inflation_adjusted_col] = sub_event[inflation_adjusted_col].replace(
+                {_no: False, _yes: True}, regex=True
+            )
+
         logger.info(f"Normalizing dates for subevet {col}")
         start_date_col, end_date_col = [col for col in sub_event.columns if col.startswith("Start_Date")], [
             col for col in sub_event.columns if col.startswith("End_Date")
@@ -358,6 +371,7 @@ def parse_sub_level_event(df, level: str, target_columns: list | None = None):
                             country=row[f"{administrative_area_col}_Norm"],
                         )
                         for i in range(len(row[f"{location_col}_Norm"]))
+                        if isinstance(i, str)
                     ]
                     if isinstance(row[f"{location_col}_Norm"], list)
                     else None
@@ -371,7 +385,7 @@ def parse_sub_level_event(df, level: str, target_columns: list | None = None):
             sub_event = sub_event[[x for x in target_columns if x in sub_event.columns]]
         df_to_parquet(
             sub_event,
-            target_dir=f"{args.output_dir}/{level}/{col}.parquet",
+            target_dir=f"{args.output_dir}/{level}/{col}",
             chunk_size=200,
         )
 
@@ -397,9 +411,101 @@ def df_to_parquet(
         slc.to_parquet(fname, engine="fastparquet", **parquet_wargs)
 
 
+def get_target_cols() -> tuple[list]:
+    event_breakdown_columns = {
+        "numerical": {
+            "Injuries": [
+                "Injuries_Min",
+                "Injuries_Max",
+                "Injuries_Approx",
+            ],
+            "Deaths": ["Deaths_Min", "Deaths_Max", "Deaths_Approx"],
+            "Displaced": ["Displaced_Min", "Displaced_Max", "Displaced_Approx"],
+            "Homeless": ["Homeless_Min", "Homeless_Max", "Homeless_Approx"],
+            "Buildings_Damaged": [
+                "Buildings_Damaged_Min",
+                "Buildings_Damaged_Max",
+                "Buildings_Damaged_Approx",
+            ],
+            "Affected": ["Affected_Min", "Affected_Max", "Affected_Approx"],
+        },
+        "monetary": {
+            "Insured_Damage": [
+                "Insured_Damage_Min",
+                "Insured_Damage_Max",
+                "Insured_Damage_Approx",
+                "Insured_Damage_Units",
+                "Insured_Damage_Inflation_Adjusted",
+                "Insured_Damage_Inflation_Adjusted_Year",
+            ],
+            "Damage": [
+                "Damage_Min",
+                "Damage_Max",
+                "Damage_Approx",
+                "Damage_Units",
+                "Damage_Inflation_Adjusted",
+                "Damage_Inflation_Adjusted_Year",
+            ],
+        },
+    }
+
+    l1_target_columns = [
+        "Event_ID",
+        "Hazards",
+        "Event_Name",
+        "Source",
+        "Administrative_Area_Norm",
+        "Administrative_Area_Type",
+        "Administrative_Area_GID",
+        "Administrative_Area_GeoJson",
+    ]
+
+    for cat in ["numerical", "monetary"]:
+        impacts = event_breakdown_columns[cat].keys()
+        for im in impacts:
+            l1_target_columns.extend([f"Total_{x}" for x in event_breakdown_columns[cat][im]])
+
+    basic_subevent_cols = [
+        "Event_ID",
+        "Hazards",
+        "Num_Min",
+        "Num_Max",
+        "Num_Approx",
+        "Num_Inflation_Adjusted",
+        "Num_Inflation_Adjusted_Year",
+    ]
+    l2_target_columns = basic_subevent_cols.copy()
+    l2_target_columns.extend(
+        [
+            "Administrative_Areas_Norm",
+            "Administrative_Areas_Type",
+            "Administrative_Areas_GID",
+            "Administrative_Areas_GeoJson",
+        ]
+    )
+
+    l3_target_columns = basic_subevent_cols.copy()
+    l3_target_columns.extend(
+        [
+            "Administrative_Area_Norm",
+            "Administrative_Area_Type",
+            "Administrative_Area_GID",
+            "Administrative_Area_GeoJson",
+            "Locations_Norm",
+            "Locations_Type",
+            "Locations_GID",
+            "Locations_GeoJson",
+        ]
+    )
+
+    return l1_target_columns, l2_target_columns, l3_target_columns
+
+
 if __name__ == "__main__":
     logger = Logging.get_logger("parse_events", level="INFO")
     available_event_types = ["l1", "l2", "l3"]
+    l1_target_columns, l2_target_columns, l3_target_columns = get_target_cols()
+
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "-sm",
@@ -464,59 +570,6 @@ if __name__ == "__main__":
         required=False,
     )
 
-    event_breakdown_columns = {
-        "numerical": {
-            "Injuries": [
-                "Injuries_Min",
-                "Injuries_Max",
-                "Injuries_Approx",
-            ],
-            "Deaths": ["Deaths_Min", "Deaths_Max", "Deaths_Approx"],
-            "Displaced": ["Displaced_Min", "Displaced_Max", "Displaced_Approx"],
-            "Homeless": ["Homeless_Min", "Homeless_Max", "Homeless_Approx"],
-            "Buildings_Damaged": [
-                "Buildings_Damaged_Min",
-                "Buildings_Damaged_Max",
-                "Buildings_Damaged_Approx",
-            ],
-            "Affected": ["Affected_Min", "Affected_Max", "Affected_Approx"],
-        },
-        "monetary": {
-            "Insured_Damage": [
-                "Insured_Damage_Min",
-                "Insured_Damage_Max",
-                "Insured_Damage_Approx",
-                "Insured_Damage_Units",
-                "Insured_Damage_Inflation_Adjusted",
-                "Insured_Damage_Inflation_Adjusted_Year",
-            ],
-            "Damage": [
-                "Damage_Min",
-                "Damage_Max",
-                "Damage_Approx",
-                "Damage_Units",
-                "Damage_Inflation_Adjusted",
-                "Damage_Inflation_Adjusted_Year",
-            ],
-        },
-    }
-
-    l1_target_columns = [
-        "Event_ID",
-        "Hazards",
-        "Event_Name",
-        "Source",
-        "Administrative_Area_Norm",
-        "Administrative_Area_Type",
-        "Administrative_Area_GID",
-        "Administrative_Area_GeoJson",
-    ]
-
-    for cat in ["numerical", "monetary"]:
-        impacts = event_breakdown_columns[cat].keys()
-        for im in impacts:
-            l1_target_columns.extend([f"Total_{x}" for x in event_breakdown_columns[cat][im]])
-
     args = parser.parse_args()
     args.event_type = args.event_type.split(",")
     assert all(
@@ -551,18 +604,17 @@ if __name__ == "__main__":
         if events is None:
             df = pd.read_json(f"{args.raw_dir}/{args.filename}")
             logger.info("JSON datafile loaded")
-            print("TARGET!!!", l1_target_columns)
             events = parse_main_events(df, l1_target_columns)
-            print("EVENTS!!!", events.columns)
         if args.store_raw_l1 and args.raw_l1:
             # store raw events to extract l2 and l3 without having to reparse l1
             pathlib.Path(tmp_dir).mkdir(parents=True, exist_ok=True)
             events.to_json(f"{tmp_dir}/{args.raw_l1}", orient="records")
-            logger.info("Raw events file stored")
+            logger.info(f"Raw events file stored in {tmp_dir}/{args.raw_l1}")
 
-    for lvl in ["l2", "l3"]:
+    target_cols_by_level = {"l2": l2_target_columns, "l3": l3_target_columns}
+    for lvl in target_cols_by_level.keys():
         if events is not None and lvl in args.event_type:
-            parse_sub_level_event(events, lvl)
+            parse_sub_level_event(events, lvl, target_columns=target_cols_by_level[lvl])
         else:
             if lvl in args.event_type:
                 logger.error(f"Could not parse level {lvl}")
