@@ -135,7 +135,7 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
         events[col] = events[col].astype(str)
 
     logger.info(f"Storing parsed results for L1 events")
-    df_to_parquet(events[[x for x in target_columns if x in events.columns]], f"{args.output_dir}\l1", 200)
+    df_to_parquet(events[[x for x in target_columns if x in events.columns]], f"{args.output_dir}/l1", 200)
     del total_summary_cols, annotation_cols, total_cols
     return events
 
