@@ -37,7 +37,7 @@ if __name__ == "__main__":
         "-db",
         "--database_name",
         dest="database_name",
-        default="impact.db",
+        default="impact.v0.db",
         help="The name of your database (followed by the extension name, such as ´.db´)",
         type=str,
     )
