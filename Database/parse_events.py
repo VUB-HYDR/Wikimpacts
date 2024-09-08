@@ -474,7 +474,7 @@ def get_target_cols() -> tuple[list]:
         "Event_ID",
         "Hazards",
         "Event_Names",
-        "Source",
+        "Sources",
         "Administrative_Areas_Norm",
         "Administrative_Areas_Type",
         "Administrative_Areas_GID",

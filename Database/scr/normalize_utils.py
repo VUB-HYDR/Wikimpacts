@@ -302,7 +302,7 @@ class NormalizeJsonOutput:
             "Specific_Instance_Per_Country_Death",
             "Total_Summary_Damage",
             "Total_Damage",
-            "Total_Damage_Units",
+            "Total_Damage_Unit",
             "Total_Damage_Inflation_Adjusted",
             "Total_Damage_Inflation_Adjusted_Year",
         ],

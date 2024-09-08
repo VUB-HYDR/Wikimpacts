@@ -25,13 +25,13 @@ default_weights = {
         # Damage
         "Total_Damage_Min": 1,
         "Total_Damage_Max": 1,
-        "Total_Damage_Units": 1,
+        "Total_Damage_Unit": 1,
         "Total_Damage_Inflation_Adjusted": 1,
         "Total_Damage_Inflation_Adjusted_Year": 1,
         # Insured Damage
         "Total_Insured_Damage_Min": 1,
         "Total_Insured_Damage_Max": 1,
-        "Total_Insured_Damage_Units": 1,
+        "Total_Insured_Damage_Unit": 1,
         "Total_Insured_Damage_Inflation_Adjusted": 1,
         "Total_Insured_Damage_Inflation_Adjusted_Year": 1,
         # Date
