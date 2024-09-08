@@ -64,14 +64,14 @@ class Comparer:
         score = {}
         # Strings
         # TODO: name or names?
-        string_cols = ["Main_Event", "Event_ID", "Event_Names", "Event_Name", "Administrative_Area_Norm"]
+        string_cols = ["Main_Event", "Event_ID", "Administrative_Area_Norm"]
         string_cols.extend([x for x in self.target_columns if "_Unit" in x])
 
-        for k in self.target_col(["Main_Event", "Event_ID", "Event_Names", "Event_Name", "Administrative_Area_Norm"]):
+        for k in self.target_col(string_cols):
             score[k] = self.string(v[k], w[k])
 
         # Sequences
-        for k in self.target_col(["Administrative_Areas_Norm", "Locations_Norm"]):
+        for k in self.target_col(["Administrative_Areas_Norm", "Locations_Norm", "Event_Names"]):
             score[k] = self.sequence(v[k], w[k])
 
         # Dates

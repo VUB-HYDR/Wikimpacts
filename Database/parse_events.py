@@ -127,6 +127,13 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
     logger.info("STEP: Cleanup")
     logger.info("Normalizing nulls")
     events = utils.replace_nulls(events)
+    logger.info("Cleaning event names...")
+    event_name_col = [x for x in events.columns if "Event_Name" in x]
+    if len(event_name_col) == 1:
+        event_name_col = event_name_col[0]
+        events["Event_Names"] = events[event_name_col].progress_apply(
+            lambda x: ([x.strip()] if isinstance(x, str) else ([y.strip() for y in x]) if isinstance(x, list) else None)
+        )
     logger.info("Converting annotation columns to strings to store in sqlite3")
     annotation_cols = [col for col in events.columns if col.endswith(("_with_annotation", "_Annotation"))]
     for col in annotation_cols:
@@ -368,12 +375,14 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
             sub_event[f"{location_col}_GID"] = sub_event.progress_apply(
                 lambda row: (
                     [
-                        norm_loc.get_gadm_gid(
-                            area=row[f"{location_col}_Norm"][i],
-                            country=row[f"{administrative_area_col}_Norm"],
+                        (
+                            norm_loc.get_gadm_gid(
+                                area=row[f"{location_col}_Norm"][i],
+                                country=row[f"{administrative_area_col}_Norm"],
+                            )
+                            if isinstance(row[f"{location_col}_Norm"][i], str)
+                            else None
                         )
-                        if isinstance(row[f"{location_col}_Norm"][i], str)
-                        else None
                         for i in range(len(row[f"{location_col}_Norm"]))
                     ]
                     if isinstance(row[f"{location_col}_Norm"], list)
@@ -464,7 +473,7 @@ def get_target_cols() -> tuple[list]:
     l1_target_columns = [
         "Event_ID",
         "Hazards",
-        "Event_Name",
+        "Event_Names",
         "Source",
         "Administrative_Areas_Norm",
         "Administrative_Areas_Type",
