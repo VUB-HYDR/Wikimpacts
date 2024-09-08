@@ -51,7 +51,7 @@ CREATE TABLE Total_Summary (
     Total_Insured_Damage_Min REAL CHECK (Total_Insured_Damage_Min > 0),
     Total_Insured_Damage_Max REAL CHECK (Total_Insured_Damage_Max > 0),
     Total_Insured_Damage_Approx INTEGER CHECK (Total_Insured_Damage_Approx == 1 OR Total_Insured_Damage_Approx ==  0), /* COMMENT 'Boolean' */
-    Total_Insured_Damage_Units TEXT, /* COMMENT 'currency' */
+    Total_Insured_Damage_Unit TEXT, /* COMMENT 'currency' */
     Total_Insured_Damage_Inflation_Adjusted INTEGER, /* COMMENT 'Boolean' */
     Total_Insured_Damage_Inflation_Adjusted_Year INTEGER CHECK (
         length(Total_Insured_Damage_Inflation_Adjusted_Year) = 4
@@ -61,7 +61,7 @@ CREATE TABLE Total_Summary (
     Total_Damage_Min REAL CHECK (Total_Damage_Min > 0),
     Total_Damage_Max REAL CHECK (Total_Damage_Max > 0),
     Total_Damage_Approx INTEGER CHECK (Total_Damage_Approx == 1 OR Total_Damage_Approx ==  0), /* COMMENT 'Boolean' */
-    Total_Damage_Units TEXT, /* COMMENT 'currency' */
+    Total_Damage_Unit TEXT, /* COMMENT 'currency' */
     Total_Damage_Inflation_Adjusted INTEGER, /* COMMENT 'Boolean' */
     Total_Damage_Inflation_Adjusted_Year INTEGER CHECK (
         length(Total_Damage_Inflation_Adjusted_Year) = 4
