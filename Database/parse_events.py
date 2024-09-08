@@ -473,6 +473,7 @@ def get_target_cols() -> tuple[list]:
     l1_target_columns = [
         "Event_ID",
         "Hazards",
+        "Main_Event",
         "Event_Names",
         "Sources",
         "Administrative_Areas_Norm",
