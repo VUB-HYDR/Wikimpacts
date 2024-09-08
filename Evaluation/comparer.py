@@ -63,11 +63,15 @@ class Comparer:
         """Compare all fields."""
         score = {}
         # Strings
-        for k in self.target_col(["Main_Event", "Event_ID", "Event_Name", "Total_Damage_Units"]):
+        # TODO: name or names?
+        string_cols = ["Main_Event", "Event_ID", "Event_Names", "Event_Name", "Administrative_Area_Norm"]
+        string_cols.extend([x for x in self.target_columns if "_Unit" in x])
+
+        for k in self.target_col(["Main_Event", "Event_ID", "Event_Names", "Event_Name", "Administrative_Area_Norm"]):
             score[k] = self.string(v[k], w[k])
 
         # Sequences
-        for k in self.target_col(["Country_Norm"]):
+        for k in self.target_col(["Administrative_Areas_Norm", "Locations_Norm"]):
             score[k] = self.sequence(v[k], w[k])
 
         # Dates
@@ -75,48 +79,16 @@ class Comparer:
             score[k] = self.date(v[k], w[k])
 
         # Integers
-        for k in self.target_col(
-            [
-                "Total_Deaths_Min",
-                "Total_Deaths_Max",
-                "Start_Date_Day",
-                "Start_Date_Month",
-                "Start_Date_Year",
-                "End_Date_Day",
-                "End_Date_Month",
-                "End_Date_Year",
-                "Total_Damage_Min",
-                "Total_Damage_Max",
-                "Total_Homeless_Min",
-                "Total_Homeless_Max",
-                # Injuries
-                "Total_Injuries_Max",
-                "Total_Injuries_Min",
-                # Buildings_Damage
-                "Total_Buildings_Min",
-                "Total_Buildings_Max",
-                # Affected
-                "Total_Affected_Min",
-                "Total_Affected_Max",
-                # Homeless
-                "Total_Damage_Units",
-                "Total_Damage_Inflation_Adjusted",
-                "Total_Damage_Inflation_Adjusted_Year",
-                # Insured Damage
-                "Total_Insured_Damage_Min",
-                "Total_Insured_Damage_Max",
-                "Total_Insured_Damage_Units",
-                "Total_Insured_Damage_Inflation_Adjusted",
-                "Total_Insured_Damage_Inflation_Adjusted_Year",
-                # Displace
-                "Total_Displace_Min",
-                "Total_Displace_Max",
-            ]
-        ):
+        # Dates and all _Min/_Max values for the monetary impact type
+        for k in [
+            x
+            for x in self.target_columns
+            if x.endswith("_Date") or x.endswith("_Min") or x.endswith("_Max") or x.endswith("_Inflation_Adjusted_Year")
+        ]:
             score[k] = self.integer(v[k], w[k])
 
         # Booleans
-        for k in self.target_col([]):
+        for k in [x for x in self.target_columns if x.endswith("_Inflation_Adjusted")]:
             score[k] = self.boolean(v[k], w[k])
 
         # Return score dictionary after ordering by target columns order
