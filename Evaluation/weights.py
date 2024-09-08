@@ -1,8 +1,8 @@
 default_weights = {
     "l1_columns": {
-        "Event_ID": 1,
+        "Event_ID": 0,
         "Main_Event": 1,
-        "Event_Name": 0,
+        "Event_Names": 0,
         "Hazards": 1,
         # Deaths
         "Total_Deaths_Min": 1,
@@ -45,7 +45,7 @@ default_weights = {
         "Administrative_Areas_Norm": 1,  # list
     },
     "l2_columns": {
-        "Event_ID": 1,
+        "Event_ID": 0,
         "Hazards": 1,
         # Date
         "Start_Date_Day": 1,
@@ -64,7 +64,7 @@ default_weights = {
         "Num_Inflation_Adjusted_Year": 1,
     },
     "l3_columns": {
-        "Event_ID": 1,
+        "Event_ID": 0,
         "Hazards": 1,
         # Date
         "Start_Date_Day": 1,
@@ -109,7 +109,7 @@ weights = {
         "Total_Homeless_Min": 1,
         "Total_Homeless_Max": 1,
     },
-    "ESSD_2024_l1": default_weights["l1"],
-    "ESSD_2024_l2": default_weights["l2"],
-    "ESSD_2024_l3": default_weights["l3"],
+    "ESSD_2024_l1": default_weights["l1"],  # default weights
+    "ESSD_2024_l2": default_weights["l2"],  # default weights
+    "ESSD_2024_l3": default_weights["l3"],  # default weights
 }
