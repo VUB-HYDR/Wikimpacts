@@ -16,9 +16,8 @@ class NormalizeLocation:
     def __init__(self, gadm_path: str, unsd_path: str):
         self.geopy_cache_path = "Database/data/geopy_cache"
         requests_cache.install_cache(
-            self.geopy_cache_path, allowable_methods=("GET", "POST"), filter_fn=self._rate_limiter
+            self.geopy_cache_path, allowable_methods=["GET"], allowable_codes=[200], filter_fn=self._rate_limiter
         )
-
         geolocator = Nominatim(user_agent="wikimpacts - impactdb; beta. Github: VUB-HYDR/Wikimpacts")
         self.geocode = geolocator.geocode
         self.gadm = pd.read_csv(gadm_path, sep=None, engine="python")
