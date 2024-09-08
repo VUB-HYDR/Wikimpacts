@@ -518,7 +518,7 @@ def get_target_cols() -> tuple[list]:
 
 if __name__ == "__main__":
     logger = Logging.get_logger("parse_events", level="INFO")
-    available_event_types = ["l1", "l2", "l3"]
+    available_event_levels = ["l1", "l2", "l3"]
     l1_target_columns, l2_target_columns, l3_target_columns = get_target_cols()
 
     parser = argparse.ArgumentParser()
@@ -561,11 +561,11 @@ if __name__ == "__main__":
     )
 
     parser.add_argument(
-        "-t",
-        "--event_type",
-        dest="event_type",
-        default=",".join(available_event_types),
-        help=f'Choose which events to parse (choices: {",".join(available_event_types)}). Pass as string and sepatate each choice with a comma; example: "l1,l2". Irrelevant levels are ignored.',
+        "-lvl",
+        "--event_levels",
+        dest="event_levels",
+        default=",".join(available_event_levels),
+        help=f'Choose which events to parse (choices: {",".join(available_event_levels)}). Pass as string and sepatate each choice with a comma; example: "l1,l2". Irrelevant levels are ignored.',
         type=str,
     )
     parser.add_argument(
@@ -586,10 +586,10 @@ if __name__ == "__main__":
     )
 
     args = parser.parse_args()
-    args.event_type = args.event_type.split(",")
+    args.event_levels = args.event_levels.split(",")
     assert all(
-        [True if x in available_event_types else False for x in args.event_type]
-    ), f"Event type not available: {[x for x in args.event_type if x not in available_event_types]}.\nAvailable types: {available_event_types}"
+        [True if x in available_event_levels else False for x in args.event_levels]
+    ), f"Event type not available: {[x for x in args.event_levels if x not in available_event_levels]}.\nAvailable types: {available_event_levels}"
     logger.info(f"Passed args: {args}")
 
     logger.info(f"Creating {args.output_dir} if it does not exist!")
@@ -615,7 +615,7 @@ if __name__ == "__main__":
         except BaseException as err:
             logger.error(f"Cannot find {args.raw_l1}. Error: {err}.")
 
-    if "l1" in args.event_type:
+    if "l1" in args.event_levels:
         if events is None:
             df = pd.read_json(f"{args.raw_dir}/{args.filename}")
             logger.info("JSON datafile loaded")
@@ -628,8 +628,8 @@ if __name__ == "__main__":
 
     target_cols_by_level = {"l2": l2_target_columns, "l3": l3_target_columns}
     for lvl in target_cols_by_level.keys():
-        if events is not None and lvl in args.event_type:
+        if events is not None and lvl in args.event_levels:
             parse_sub_level_event(events, lvl, target_columns=target_cols_by_level[lvl])
         else:
-            if lvl in args.event_type:
+            if lvl in args.event_levels:
                 logger.error(f"Could not parse level {lvl}")

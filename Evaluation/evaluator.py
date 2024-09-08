@@ -70,9 +70,9 @@ if __name__ == "__main__":
     )
 
     parser.add_argument(
-        "-t",
-        "--event_type",
-        dest="event_type",
+        "-lvl",
+        "--event_level",
+        dest="event_level",
         default="main",
         choices=["l1", "l2", "l3"],
         help="Choose which events to parse. Possible values: main or sub",
@@ -110,8 +110,8 @@ if __name__ == "__main__":
     location_columns = ["Location_Norm", "Locations_Norm"]
     any_area_columns = admin_area_columns + location_columns
 
-    if args.event_type in ["l2", "l3"]:
-        logger.info(f"Pairing up {args.event_type} events")
+    if args.event_level in ["l2", "l3"]:
+        logger.info(f"Pairing up {args.event_level} events")
         event_ids = set(list(gold.Event_ID.unique()) + list(sys.Event_ID.unique()))
         si_gold, si_sys = [], []
 
@@ -142,7 +142,7 @@ if __name__ == "__main__":
         gold.to_parquet(f"{output_dir}/gold_{args.impact_type}.parquet")
         sys.to_parquet(f"{output_dir}/sys_{args.impact_type}.parquet")
 
-    elif args.event_type in ["l1"]:
+    elif args.event_level in ["l1"]:
         logger.info("Only including events in the gold file!")
         sys = sys[sys.Event_ID.isin(gold["Event_ID"].to_list())]
 
@@ -173,8 +173,8 @@ if __name__ == "__main__":
 
         logger.info(f"Evaluation limited to {sys.shape} events from source {args.score}")
 
-    if args.event_type in "l1":
-        # Add dummy rows for missing events (for main event evaluation only)
+    if args.event_level in "l1":
+        # Add dummy rows for missing events (for l1 event evaluation only)
         missing_ids = set(sys["Event_ID"].to_list()) ^ set(gold["Event_ID"].to_list())
         if missing_ids:
             logger.info(
@@ -213,7 +213,7 @@ if __name__ == "__main__":
     comp = Comparer(null_penalty, target_columns=weights.keys())
     logger.info(f"Target columns: {comp.target_columns}")
 
-    if args.event_type == "l1":
+    if args.event_level == "l1":
         # sort by "Event_ID" only for main event evaluation
         sys = sys.sort_values("Event_ID")
         gold = gold.sort_values("Event_ID")
@@ -249,32 +249,32 @@ if __name__ == "__main__":
     ).replace({np.nan: None})
 
     all_comps.sort_values("Weighted_Score")
-    if args.event_type == "l1":
-        all_comps.to_csv(f"{output_dir}/{args.event_type}_{args.score}_{len(sys_data)}_results.csv", index=False)
-    elif args.event_type in ["l2", "l3"]:
+    if args.event_level == "l1":
+        all_comps.to_csv(f"{output_dir}/{args.event_level}_{args.score}_{len(sys_data)}_results.csv", index=False)
+    elif args.event_level in ["l2", "l3"]:
         all_comps.to_csv(
-            f"{output_dir}/{args.event_type}_{args.score}_{len(sys_data)}_{args.impact_type}_results.csv", index=False
+            f"{output_dir}/{args.event_level}_{args.score}_{len(sys_data)}_{args.impact_type}_results.csv", index=False
         )
     averages = {}
     for i in all_comps.columns:
         if not i.startswith("Event_ID"):
             averages[i] = all_comps.loc[:, i].mean()
 
-    if args.event_type == "l1":
-        avg_result_filename = f"{output_dir}/{args.event_type}_{args.score}_{len(sys_data)}_avg_results.json"
-    elif args.event_type in ["l2", "l3"]:
+    if args.event_level == "l1":
+        avg_result_filename = f"{output_dir}/{args.event_level}_{args.score}_{len(sys_data)}_avg_results.json"
+    elif args.event_level in ["l2", "l3"]:
         avg_result_filename = (
-            f"{output_dir}/{args.event_type}_{args.score}_{len(sys_data)}_{args.impact_type}_avg_results.json"
+            f"{output_dir}/{args.event_level}_{args.score}_{len(sys_data)}_{args.impact_type}_avg_results.json"
         )
 
     with open(avg_result_filename, "w") as f:
         json.dump(averages, f)
 
     # get average per event_ID when evaluating specific instances
-    if args.event_type in ["l2", "l3"]:
+    if args.event_level in ["l2", "l3"]:
         all_comps["Event_ID"] = all_comps["Event_ID1"].apply(lambda x: x.split("-")[0])
         all_comps.groupby("Event_ID")[[c for c in all_comps.columns if not c.startswith("Event_ID")]].mean().to_csv(
-            f"{output_dir}/{args.event_type}_{args.score}_{len(sys_data)}_{args.impact_type}_avg_per_event_id_results.csv",
+            f"{output_dir}/{args.event_level}_{args.score}_{len(sys_data)}_{args.impact_type}_avg_per_event_id_results.csv",
             index=False,
         )
 
