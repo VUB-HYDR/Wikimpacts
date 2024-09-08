@@ -211,6 +211,20 @@ class NormalizeLocation:
             else:
                 cardinals = None
 
+            # if results fail again, clean out additional parts of a location name (like "county" or "city")
+            if not l:
+                alt_name = re.sub(
+                    r"(county)|(city)|(prefecture)|(district)|(city of)|(region)", "", area, flags=re.IGNORECASE
+                ).strip()
+                l = self.geocode_api_request(
+                    alt_name,
+                    exactly_one=False,
+                    namedetails=True,
+                    geometry="geojson",
+                    extratags=True,
+                    country_codes=country_codes,
+                )
+
             # if results fail again, get results for each possible segment and sort by rank without country restraints
             if not l:
                 l = []
