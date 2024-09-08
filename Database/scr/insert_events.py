@@ -1,8 +1,11 @@
 import argparse
 import os
+import pathlib
 import sqlite3
 
 import pandas as pd
+
+from Database.scr.normalize_utils import Logging
 
 if __name__ == "__main__":
     event_levels = {
@@ -42,7 +45,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "-lvl",
         "--event_level",
-        dest="--event_level",
+        dest="event_level",
         required=True,
         help="The event level to parse. Pass only 1",
         choices=event_levels.keys(),
@@ -60,22 +63,38 @@ if __name__ == "__main__":
     )
 
     args = parser.parse_args()
+    logger = Logging.get_logger(f"insert {args.event_level} to {args.database_name}", level="INFO")
+
     connection = sqlite3.connect(args.database_name)
     cursor = connection.cursor()
     files = os.listdir(args.file_dir)
+    errors = pd.DataFrame()
 
     # levels
     main_level = "l1"
     sub_levels = [x for x in event_levels.keys() if x != "l1"]
 
     if args.event_level == main_level:
+        logger.info(f"Inserting {main_level}...")
         for f in files:
-            data = pd.read_parquet(f, engine="fastparquet")
+            data = pd.read_parquet(f"{args.file_dir}/{f}", engine="fastparquet")
             # change if_exists to "append" to avoid overwriting the database
             # choose "replace" to overwrite the database with a fresh copy of the data
-            data.to_sql("Total_Summary", con=connection, if_exists=args.method, index=False)
+        for i in range(len(data)):
+            try:
+                data.iloc[i : i + 1].to_sql(name="Total_Summary", con=connection, if_exists=args.method, index=False)
+            except sqlite3.IntegrityError as err:
+                logger.error(
+                    f"""Could not insert event for level {args.event_level}. Error {err}.
+                             The problematic row will be stored in /tmp/ with the error. GeoJson columns will not be included."""
+                )
+                logger.debug(data.iloc[i : i + 1])
+                err_row = data.iloc[i : i + 1][[x for x in data.columns if "GeoJson" not in x]].copy()
+                err_row["ERROR"] = err
+                errors = pd.concat([errors, err_row], ignore_index=True)
 
     elif args.event_level in sub_levels:
+        logger.info(f"Inserting {args.event_level}...")
         assert args.target_table, f"When inserting sublevels ({sub_levels}), the target table must be specified!"
 
         check_table = cursor.execute(
@@ -86,9 +105,29 @@ if __name__ == "__main__":
         assert len(check_table) == 1, f"Table name {args.target_table} incorrect! Found {check_table} instead."
 
         for f in files:
-            data = pd.read_parquet(f, engine="fastparquet")
+            data = pd.read_parquet(f"{args.file_dir}/{f}", engine="fastparquet")
             # change if_exists to "append" to avoid overwriting the database
             # choose "replace" to overwrite the database with a fresh copy of the data
-            data.to_sql(args.target_table, con=connection, if_exists=args.method, index=False)
+            for i in range(len(data)):
+                try:
+                    data.iloc[i : i + 1].to_sql(
+                        name=args.target_table, con=connection, if_exists=args.method, index=False
+                    )
+                except sqlite3.IntegrityError as err:
+                    logger.error(
+                        f"""Could not insert event for level {args.event_level}. Error {err}.
+                                The problematic row will be stored in /tmp/ with the error. GeoJson columns will not be included."""
+                    )
+                    logger.debug(data.iloc[i : i + 1])
+                    err_row = data.iloc[i : i + 1][[x for x in data.columns if "GeoJson" not in x]].copy()
+                    err_row["ERROR"] = err
+                    errors = pd.concat([errors, err_row], ignore_index=True)
 
+    if errors.shape != (0, 0):
+        from time import time
+
+        tmp_errors_filename = f"tmp/db_insert_errors_{args.event_level}_{int(time())}.json"
+        logger.info(f"Found errors! These rows WERE NOT INSERTED!! Storing in {tmp_errors_filename}")
+        pathlib.Path("tmp").mkdir(parents=True, exist_ok=True)
+        errors.to_json(tmp_errors_filename, orient="records")
     connection.close()
