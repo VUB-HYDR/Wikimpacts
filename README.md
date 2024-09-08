@@ -28,6 +28,23 @@ git lfs install
 
 ## Quickstart
 
+### Run prompt experiments on OpenAI models
+If you use OpenAI models, there is a way to save your cost with running experiments in batch.
+#### (Step 1) Raw output
+Choose the raw file contains the text you need to process, please use the clear raw file name to indicate your experiment, this name will be used as the output file, the api env you want to use, and the batch file location you want to store the batch file ( this is not mandatory, but it's good to check if you create correct batch file)
+
+#### (Step 2) GPT models
+Choose the model you want to apply. The default model is "gpt-4o-2024-05-13"
+- below is a command example you can refer to run the script:
+```shell
+poetry run python3 Database/Prompts/run_prompts.py --filename wiki_dev_whole_infobox_20240729_70single_events.json --raw_dir Database/Wiki_dev_test_articles --batch_dir Database/Prompts/batch --api_env .env
+```
+#### (Step 3) Retrieve results
+Choose the same raw file as you run the experiment, the same api env to access your remote OpenAI server and the output directory to store your result.
+- below is a command example you can refer to run the script:
+```shell
+poetry run python3  Database/Prompts/batch_output_retrivel.py  --api_env .env  --output_dir  Database/raw/batch_test  --file_name wiki_dev_whole_infobox_20240729_70single_events.json  --raw_dir  Database/Wiki_dev_test_articles
+```
 ### Parsing and evaluation pipeline
 
 If you have generated some LLM output and would like to test it against the dev and test gold sets, here is a list of command to enable you to experiment with this yourself.
