@@ -76,19 +76,44 @@ Once all system output files are merged into a single JSON file (**or if this wa
     The parsing script [`Database/parse_events.py`](Database/parse_events.py) will normalize numbers (to min and max) and locations (using OpenStreetMap) and output a JSON file.
 
 ```shell
+# parse events
 poetry run python3 Database/parse_events.py \
 --raw_dir Database/raw/<EXPERIMENT_NAME> \
 --filename <JSON_FILE> \
 --output_dir Database/output/<EXPERIMENT_NAME> \
+--event_type l1,l3 # list of events to parse, separated by a comma. Case sensitive!
 
-# "sub", "main" or "all"
---event_type all \
+# explore more options
+poetry run python3 Database/parse_events.py --help
 
-# if your country-level administrative area and location columns have a different name
-# you can specify it here (otherwise, defaults to
-# "Administrative_Area" and "Location" (respectively)):
---admin_area_column "Custom_Admin_Area_Column"  \
---location_column "Locations"
+```
+
+
+You can also parse l1 first and store a row file. Later on, you can parse l2 or l3 from the same file without having to re-tun all of the parsing for l1. This allows splitting jobs. You can try the example below on dummy data. It's best to delete the contents of [Database/output/dummy](Database/output/dummy) first to re-run the example!
+
+```shell
+# first, clear the dummy output directory
+rm -rv Database/output/dummy
+
+# then, parse l1 and store the raw files in json (by setting the flag "--store_raw_l1")
+# make sure to specify the name of the raw_l1 file
+poetry run python3 Database/parse_events.py \
+--raw_dir Database/raw/dummy \
+--filename dummy_llm_output_l1_l2_l3.json \
+--output_dir Database/output/dummy \
+--event_type l1 \
+--store_raw_l1 \
+--raw_l1 "l1.raw.json"
+
+# at a later time, parse l3 or l2 or both from the same file using the raw_l1 file
+# NOTE: if you pass a value to the "--raw_l1" paramater, it means that l1 data
+# will always be loaded from this raw file, even if passed in "--event_type"
+poetry run python3 Database/parse_events.py \
+--raw_dir Database/raw/dummy \
+--filename dummy_llm_output_l1_l2_l3.json \
+--output_dir Database/output/dummy \
+--event_type l3,l2 \
+--raw_l1 "l1.raw.json"
 ```
 
 > [!WARNING]
@@ -178,20 +203,6 @@ Database/evaluation_results/specific_instance_eval_test
 > [!WARNING]
 > Do not commit these files to your branch or to `main`, big thanks!
 
-### Parsing and normalization
-
-If you have new events to add to the database, first parse them and insert them.
-
-- To parse events (and normalize their values) from a json file with the right schema (adding schema validation soon), run:
-
-    ```shell
-    # an example
-    poetry run python3 Database/parse_events.py --spaCy_model "en_core_web_trf" --filename "some_json_file.json" --raw_path "Database/raw" --locale "en_US.UTF-8"
-
-    # for help
-    poetry run python3 Database/parse_events.py --help
-    ```
-
 ### Inserting
 - To insert new main events:
 
@@ -203,7 +214,7 @@ If you have new events to add to the database, first parse them and insert them.
     poetry run python3 Database/insert_main_event.py -m "replace"
 
     # explore more options
-    poetry run python3 Database/parse_events.py --help
+    poetry run python3 Database/insert_main_event.py --help
     ```
 
 - To insert new subevents:
@@ -211,8 +222,8 @@ If you have new events to add to the database, first parse them and insert them.
     ```shell
     poetry run python3 Database/insert_sub_events.py [options]
 
-    # see options
-    poetry run python3 Database/parse_events.py --help
+    # explore more options
+    poetry run python3 Database/insert_sub_events.py --help
     ```
 
 ### Database-related
@@ -234,6 +245,7 @@ poetry run python3 Database/gold_from_excel.py \
 --sheet-name ImpactDB_manual_copy_MDMMYYY  \
 --output-dir Database/gold/gold_from_excel \
 ```
+
 
 > [!IMPORTANT]
 > Please don't track or push excel sheets into the repository
