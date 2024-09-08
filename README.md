@@ -109,7 +109,7 @@ If the system output is split across several files (such as Mixtral and Mistral 
 > pre-commit run --files Database/raw/<EXPERIMENT_NAME>/> <JSON_FILE_THAT_NEEDS_FORMATTING>
 > ```
 
-#### (Step 2) Parsing events and subevents
+#### (Step 2) Parsing l1, l2, and l3 events
 
 Once all system output files are merged into a single JSON file (**or if this was already the case, such as with GPT4 output**), you can parse them so they are ready to be evaluated.
     The parsing script [`Database/parse_events.py`](Database/parse_events.py) will normalize numbers (to min and max) and locations (using OpenStreetMap) and output a JSON file.
@@ -120,7 +120,7 @@ poetry run python3 Database/parse_events.py \
 --raw_dir Database/raw/<EXPERIMENT_NAME> \
 --filename <JSON_FILE> \
 --output_dir Database/output/<EXPERIMENT_NAME> \
---event_type l1,l3 # list of events to parse, separated by a comma. Case sensitive!
+--event_levels l1,l3 # list of events to parse, separated by a comma. Case sensitive!
 
 # explore more options
 poetry run python3 Database/parse_events.py --help
@@ -140,18 +140,18 @@ poetry run python3 Database/parse_events.py \
 --raw_dir Database/raw/dummy \
 --filename dummy_llm_output_l1_l2_l3.json \
 --output_dir Database/output/dummy \
---event_type l1 \
+--event_levels l1 \
 --store_raw_l1 \
 --raw_l1 "l1.raw.json"
 
 # at a later time, parse l3 or l2 or both from the same file using the raw_l1 file
 # NOTE: if you pass a value to the "--raw_l1" paramater, it means that l1 data
-# will always be loaded from this raw file, even if passed in "--event_type"
+# will always be loaded from this raw file, even if passed in "--event_levels"
 poetry run python3 Database/parse_events.py \
 --raw_dir Database/raw/dummy \
 --filename dummy_llm_output_l1_l2_l3.json \
 --output_dir Database/output/dummy \
---event_type l3,l2 \
+--event_levels l3,l2 \
 --raw_l1 "l1.raw.json"
 ```
 
@@ -193,7 +193,7 @@ Also, this config will result in evaluating only on this smaller set of columns,
 ```
 
 
-##### (B) Evaluate main events
+##### (B) Evaluate L1 (Total Summary) events
  When your config is ready, run the evaluation script:
 
 ```shell
@@ -211,18 +211,19 @@ poetry run python3 Evaluation/evaluator.py --sys-file  Database/output/nlp4clima
 --weights_config nlp4climate
 ```
 
-#### Evaluate sub events (ie. specific instances)
+#### Evaluate l2 (Instance per Administrative Area) and l3 (Specific Instance Per Administrative Area) events
 
-Specific instances can be evaluated using the same script. The same script (`Evaluation/evalutor.py`) will automatically match specific instances from the gold data with the system output. If no match exists for a specific instance, it will be matched up with a "padded" example with NULL values so that the system is penalized for not having been able to find a particular specific instance or for finding extra specific instances not found in the gold dataset.
+Specific instances (l2 and l3) can be evaluated using the same script. The same script (`Evaluation/evalutor.py`) will automatically match specific instances from the gold data with the system output. If no match exists for a specific instance, it will be matched up with a "padded" example with NULL values so that the system is penalized for not having been able to find a particular specific instance or for finding extra specific instances not found in the gold dataset.
 
-Below is a scipt that evaluates two dummy sets (gold and sys) to showcase a working example and the correct schema for the `.parquet` files. Sub events are evaluated separately from main events.
+Below is a scipt that evaluates two dummy sets (gold and sys) to showcase a working example and the correct schema for the `.parquet` files. Note that l2 and l3 are evaluated separately from l1 events.
 
 ```shell
 poetry run python3 Evaluation/evaluator.py \
 --sys-file tests/specific_instance_eval/test_sys_list_death.parquet \
 --gold-file tests/specific_instance_eval/test_gold_list_death.parquet \
 --model-name "specific_instance_eval_test/dev/deaths" \
---event_type sub \
+# TODO: update this!
+--event_level sub \
 --weights_config specific_instance \
 --specific_instance_type deaths
 ```
@@ -242,28 +243,20 @@ Database/evaluation_results/specific_instance_eval_test
 > [!WARNING]
 > Do not commit these files to your branch or to `main`, big thanks!
 
-### Inserting
-- To insert new main events:
+### Inserting events to the database
 
-    ```shell
-    # to append
-    poetry run python3 Database/insert_main_event.py -m "append"
+Insertion is done by event level (l1, l2, or l3)
 
-    # to replace
-    poetry run python3 Database/insert_main_event.py -m "replace"
+```shell
+# to append
+poetry run python3 Database/insert_main_event.py -m "append" --event_level l1
 
-    # explore more options
-    poetry run python3 Database/insert_main_event.py --help
-    ```
+# to replace
+poetry run python3 Database/insert_main_event.py -m "replace" --event_level l1
 
-- To insert new subevents:
-
-    ```shell
-    poetry run python3 Database/insert_sub_events.py [options]
-
-    # explore more options
-    poetry run python3 Database/insert_sub_events.py --help
-    ```
+# explore more options
+poetry run python3 Database/insert_main_event.py --help
+```
 
 ### Database-related
 - To generate the database according to [`Database/schema.sql`](Database/schema.sql):
