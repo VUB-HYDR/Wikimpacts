@@ -6,10 +6,17 @@ logger = Logging.get_logger("create_db")
 
 
 def generate_db(
-    l1_schema: str = "Database/schema/L1_schema.sql",
+    l1_schema: str = None,
     l2_schema: str = None,
     l3_schema: str = None,
-    type_numerical_cat: list[str] = ["Injuries", "Deaths", "Displaced", "Homeless", "Buildings_Damaged", "Affected"],
+    type_numerical_cat: list[str] = [
+        "Injuries",
+        "Deaths",
+        "Displaced",
+        "Homeless",
+        "Buildings_Damaged",
+        "Affected",
+    ],
     type_monetary_cat: list[str] = ["Insured_Damage", "Damage"],
 ):
     commands = []
@@ -55,8 +62,8 @@ if __name__ == "__main__":
     connection = sqlite3.connect("impact.v1.db")
     cursor = connection.cursor()
     generate_db(
-        l1_schema="Database/schema/L1_schema.sql",
-        l2_schema="Database/schema/L2_schema_template.sql",
-        l3_schema="Database/schema/L3_schema_template.sql",
+        l1_schema="Database/schema/l1_schema.sql",
+        l2_schema="Database/schema/l2_schema_template.sql",
+        l3_schema="Database/schema/l3_schema_template.sql",
     )
     connection.close()

@@ -5,9 +5,12 @@ from datetime import datetime
 
 import pandas as pd
 from iso4217 import Currency
+from tqdm import tqdm
 
 from Database.scr.log_utils import Logging
 from Database.scr.normalize_locations import NormalizeLocation
+
+tqdm.pandas()
 
 
 def flatten(xss):
@@ -15,7 +18,6 @@ def flatten(xss):
 
 
 def fix_column_names(df):
-    # TODO: L2 and L3 differ here!
     mapper = {
         "_Min": "Num_Min",
         "_Max": "Num_Max",
@@ -45,7 +47,7 @@ def _check_date(year: int, month: int, day: int) -> bool:
         datetime(year, month, day)
         return True
     except ValueError as err:
-        logger.error(err)
+        logger.error(f"Y: {year}; M: {month}; D: {day}. Error: {err}")
         return False
 
 
@@ -90,21 +92,21 @@ event_breakdown_columns = {
         "Insured_Damage": [
             "Insured_Damage_Min",
             "Insured_Damage_Max",
-            "Insured_Damage_Units",
+            "Insured_Damage_Unit",
             "Insured_Damage_Inflation_Adjusted",
             "Insured_Damage_Inflation_Adjusted_Year",
         ],
         "Damage": [
             "Damage_Min",
             "Damage_Max",
-            "Damage_Units",
+            "Damage_Unit",
             "Damage_Inflation_Adjusted",
             "Damage_Inflation_Adjusted_Year",
         ],
     },
 }
 
-# L1, L2, and L3 have these three column sets in common
+# l1, l2, and l3 have these three column sets in common
 shared_cols = [
     "Event_ID",
     "Event_ID_decimal",
@@ -125,7 +127,7 @@ date_cols = [
     "End_Date_Day",
 ]
 
-# set L1 output target columns
+# set l1 output target columns
 target_columns = flatten(
     [
         shared_cols,
@@ -138,14 +140,14 @@ target_columns = flatten(
 
 ## SETTINGS TO NORMALIZE COLUMNS ##
 
-# get numeric type columns
-numeric_type_col = []
+# get numerical type columns
+numerical_type_col = []
 for i in event_breakdown_columns["numerical"].keys():
-    numeric_type_col.extend(event_breakdown_columns["numerical"][i])
+    numerical_type_col.extend(event_breakdown_columns["numerical"][i])
 
 # get string type columns
 convert_to_str = flatten([shared_cols])
-convert_to_int = flatten([date_cols, numeric_type_col])
+convert_to_int = flatten([date_cols, numerical_type_col])
 convert_to_list = [
     "Sources",
     "Event_Names",
@@ -205,7 +207,7 @@ def flatten_data_table():
     for col in convert_to_int:
         logger.debug(f"Casting column {col} as int")
         if col in data_table.columns:
-            data_table[col] = data_table[col].apply(
+            data_table[col] = data_table[col].progress_apply(
                 lambda x: (None if x is None else (int(x.strip()) if str(x).isdigit() else None))
             )
     data_table = data_table.replace(float("nan"), None)
@@ -213,18 +215,20 @@ def flatten_data_table():
     logger.info(f"Converting to strings: {convert_to_str}")
     for col in convert_to_str:
         logger.debug(col)
-        data_table[col] = data_table[col].apply(lambda x: None if x is None else str(x).strip())
+        data_table[col] = data_table[col].progress_apply(lambda x: None if x is None else str(x).strip())
 
     logger.info(f"Splitting by pipes: {split_by_pipe} and normalizing NULLs in the output lists")
     for col in split_by_pipe:
         logger.debug(f"Casting column {col} as list")
-        data_table[col] = data_table[col].apply(lambda x: [y for y in x.split("|")] if isinstance(x, str) else None)
-        data_table[col] = data_table[col].apply(
+        data_table[col] = data_table[col].progress_apply(
+            lambda x: [y for y in x.split("|")] if isinstance(x, str) else None
+        )
+        data_table[col] = data_table[col].progress_apply(
             lambda x: ([None if re.match(null_pattern, text) else text for text in x] if x else None)
         )
     logger.info(f"Validating Units for monetary type columns...")
     for col in currency_unit_cols:
-        data_table[f"{col}_valid_currency"] = data_table[col].apply(
+        data_table[f"{col}_valid_currency"] = data_table[col].progress_apply(
             lambda x: all([_check_currency(y) for y in x]) if x else True
         )
         assert all(data_table[f"{col}_valid_currency"])
@@ -234,14 +238,16 @@ def flatten_data_table():
 
     for col in date_cols:
         if col.endswith("Year"):
-            data_table[f"{col}_valid_year"] = data_table[col].apply(
+            data_table[f"{col}_valid_year"] = data_table[col].progress_apply(
                 lambda x: (len(str(x).split(".")[0]) == 4 and x > 0 and x <= datetime.now().year if x else True)
             )
             assert all(data_table[f"{col}_valid_year"])
             data_table.drop(columns=[f"{col}_valid_year"], inplace=True)
 
         if col.endswith("Month"):
-            data_table[f"{col}_valid_month"] = data_table[col].apply(lambda x: x <= 12 and x > 0 if x else True)
+            data_table[f"{col}_valid_month"] = data_table[col].progress_apply(
+                lambda x: x <= 12 and x > 0 if x else True
+            )
             assert all(data_table[f"{col}_valid_month"])
             data_table.drop(columns=[f"{col}_valid_month"], inplace=True)
 
@@ -253,7 +259,7 @@ def flatten_data_table():
                 f"{date_type}_Date_Month",
                 f"{date_type}_Date_Day",
             ]
-        ].apply(lambda x: _check_date(x[0], x[1], x[2]) if all(x) else True)
+        ].progress_apply(lambda x: _check_date(x[0], x[1], x[2]) if all(x) else True)
 
         assert all(data_table[f"{date_type}_valid_date"])
         data_table.drop(columns=[f"{date_type}_valid_date"], inplace=True)
@@ -262,17 +268,17 @@ def flatten_data_table():
     for col_type in event_breakdown_columns["monetary"].keys():
         logger.info(f"Normalizing ranges for {col_type}")
 
-        data_table[f"{col_type}_Min"] = data_table[col_type].apply(
+        data_table[f"{col_type}_Min"] = data_table[col_type].progress_apply(
             lambda x: [_split_range(y)[0] for y in x] if isinstance(x, list) else None
         )
-        data_table[f"{col_type}_Max"] = data_table[col_type].apply(
+        data_table[f"{col_type}_Max"] = data_table[col_type].progress_apply(
             lambda x: [_split_range(y)[1] for y in x] if isinstance(x, list) else None
         )
 
     logger.info(f"Converting to floats: {convert_to_float}")
     for col in convert_to_float:
         logger.debug(col)
-        data_table[col] = data_table[col].apply(lambda x: float(x) if isinstance(x, str) else None)
+        data_table[col] = data_table[col].progress_apply(lambda x: float(x) if isinstance(x, str) else None)
 
     yes_pattern = re.compile(r"^[\s|.|,]*(yes|true)[\s|.|,]*$", flags=re.IGNORECASE | re.MULTILINE)
     no_pattern = re.compile(r"^[\s|.|,]*(No|false)[\s|.|,]*$", flags=re.IGNORECASE | re.MULTILINE)
@@ -281,7 +287,7 @@ def flatten_data_table():
     for col in convert_to_boolean:
         logger.debug(col)
         if col in split_by_pipe:
-            data_table[col] = data_table[col].apply(
+            data_table[col] = data_table[col].progress_apply(
                 lambda x: (
                     [
                         (
@@ -297,7 +303,7 @@ def flatten_data_table():
             )
 
         else:
-            data_table[col] = data_table[col].apply(
+            data_table[col] = data_table[col].progress_apply(
                 lambda text: (
                     True
                     if text and not isinstance(text, bool) and re.match(yes_pattern, text)
@@ -307,25 +313,24 @@ def flatten_data_table():
     norm_loc = NormalizeLocation(
         gadm_path="Database/data/gadm_world.csv",
         unsd_path="Database/data/UNSD — Methodology.csv",
-        rate_limiter=False if args.no_rate_limiter else True,
     )
 
     logger.info("Extracting list of administrative areas and locations")
     data_table[["_Administrative_Area", "_Location"]] = (
-        data_table["Location_raw"].apply(norm_loc.extract_locations).apply(pd.Series)
+        data_table["Location_raw"].progress_apply(norm_loc.extract_locations).progress_apply(pd.Series)
     )
     for i in ["_Administrative_Area", "_Location"]:
         data_table[i] = data_table[i].replace(float("nan"), None)
 
     logger.info("Normalizing administrative areas")
-    data_table["Administrative_Area_Norm"] = data_table["_Administrative_Area"].apply(
+    data_table["Administrative_Area_Norm"] = data_table["_Administrative_Area"].progress_apply(
         lambda admin_areas: (
             [norm_loc.normalize_locations(area=c, is_country=True)[0] for c in admin_areas] if admin_areas else []
         )
     )
 
     logger.info("Normalizing locations")
-    data_table["Location_Norm"] = data_table.apply(
+    data_table["Location_Norm"] = data_table.progress_apply(
         lambda row: (
             [
                 ([norm_loc.normalize_locations(area=a) if a else None for a in area_list] if area_list else None)
@@ -336,25 +341,29 @@ def flatten_data_table():
         ),
         axis=1,
     )
-    data_table["Location_Norm"] = data_table["Location_Norm"].apply(
+    data_table["Location_Norm"] = data_table["Location_Norm"].progress_apply(
         lambda location_list: (
             [[x[0] if x else None for x in area] if area else [] for area in location_list] if location_list else []
         )
     )
 
-    logger.info("Splitting main events (L1) from instances (L2) and specific instabnces (L3)")
-    data_table["main"] = data_table.Event_ID_decimal.apply(lambda x: float(x).is_integer())
+    logger.info("Splitting main events (l1) from instances (l2) and specific instabnces (l3)")
+    data_table["main"] = data_table.Event_ID_decimal.progress_apply(lambda x: float(x).is_integer())
 
-    # data_table["Location_Norm"] = data_table["Location_raw"].apply(lambda x: [])
+    # data_table["Location_Norm"] = data_table["Location_raw"].progress_apply(lambda x: [])
     # Level 1 -- "Main Events"
     Events = data_table[data_table["main"] == True][[x for x in target_columns if x in data_table.columns]]
-    Events["Administrative_Area_Norm"] = Events["Administrative_Area_Norm"].apply(lambda x: list(set(x)) if x else None)
+    Events["Administrative_Area_Norm"] = Events["Administrative_Area_Norm"].progress_apply(
+        lambda x: list(set(x)) if x else None
+    )
     Events.rename(columns={"Administrative_Area_Norm": "Administrative_Areas_Norm"}, inplace=True)
     Events.drop(columns=["Location_Norm"], inplace=True)
 
     # Level 2 -- "Impacts Per country-level Administrative Area"
-    # multiple administrative areas, the lenght of this list is the same or smaller than that in "Events" (L1)
-    Instance_Per_Administrative_Areas = data_table[data_table["Location_Norm"].apply(lambda x: flatten(x) == [])]
+    # multiple administrative areas, the lenght of this list is the same or smaller than that in "Events" (l1)
+    Instance_Per_Administrative_Areas = data_table[
+        data_table["Location_Norm"].progress_apply(lambda x: flatten(x) == [])
+    ]
     Instance_Per_Administrative_Areas = Instance_Per_Administrative_Areas[
         Instance_Per_Administrative_Areas["main"] == False
     ]
@@ -362,7 +371,7 @@ def flatten_data_table():
     # Level 3 -- "Specific Instances per country-level Administrative Area"
     # single administrative area with multiple sub locations
     Specific_Instance_Per_Administrative_Area = data_table[
-        ~data_table["Location_Norm"].apply(lambda x: flatten(x) == [])
+        ~data_table["Location_Norm"].progress_apply(lambda x: flatten(x) == [])
     ]
     Specific_Instance_Per_Administrative_Area = Specific_Instance_Per_Administrative_Area[
         Specific_Instance_Per_Administrative_Area["main"] == False
@@ -405,10 +414,10 @@ def flatten_data_table():
                     missing_spec_impact_msk = df[event_breakdown_columns[col_type][cat]].isna().all(axis=1)
                     df = df[~missing_spec_impact_msk]
                     if name == "Instance_Per_Administrative_Areas":  # L2
-                        df["Administrative_Area_Norm"] = df["Administrative_Area_Norm"].apply(
+                        df["Administrative_Area_Norm"] = df["Administrative_Area_Norm"].progress_apply(
                             lambda x: [y.split("|") if y else None for y in x]
                         )
-                        df["Location_Norm"] = df["Location_Norm"].apply(lambda x: flatten(x) if x else None)
+                        df["Location_Norm"] = df["Location_Norm"].progress_apply(lambda x: flatten(x) if x else None)
                         df = df[availble_col]
                         df.rename(
                             columns={"Administrative_Area_Norm": "Administrative_Areas_Norm"},
@@ -417,8 +426,8 @@ def flatten_data_table():
                         df.drop(columns=["Location_Norm"], inplace=True)
                         event_breakdown_dfs[f"{name}_{cat}"] = df
 
-                    elif name == "Specific_Instance_Per_Administrative_Area":  # L3
-                        df["Administrative_Area_Norm"] = df["Administrative_Area_Norm"].apply(
+                    elif name == "Specific_Instance_Per_Administrative_Area":  # l3
+                        df["Administrative_Area_Norm"] = df["Administrative_Area_Norm"].progress_apply(
                             lambda x: (x[0] if isinstance(x, list) and len(x) == 1 else None)
                         )
                         df = df[availble_col]
@@ -434,7 +443,7 @@ def flatten_data_table():
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    logger = Logging.get_logger("import gold data from excel", level="DEBUG")
+    logger = Logging.get_logger("import gold data from excel", level="INFO")
 
     parser.add_argument(
         "-i",
@@ -463,14 +472,6 @@ if __name__ == "__main__":
         type=str,
     )
 
-    parser.add_argument(
-        "-n",
-        "--no-rate-limiter",
-        dest="no_rate_limiter",
-        help="Pass to disable limiting API calls (to comply with Nominatim) with RateLimiter",
-        action="store_true",
-    )
-
     args = parser.parse_args()
 
     logger.info(f"Creating {args.output_dir} if it does not exist!")
@@ -479,18 +480,21 @@ if __name__ == "__main__":
     Events, event_breakdown_dfs = flatten_data_table()
 
     logger.info("Storing Main Events table")
+    lvl = "l1"
     if "split" in Events.columns:
         for i in Events["split"].unique():
-            logger.info(f"Creating {args.output_dir}/{i} if it does not exist!")
-            pathlib.Path(f"{args.output_dir}/{i}").mkdir(parents=True, exist_ok=True)
+            l1_output = f"{args.output_dir}/{i}/{lvl}"
+            logger.info(f"Creating {l1_output} if it does not exist!")
+            pathlib.Path(f"{l1_output}").mkdir(parents=True, exist_ok=True)
 
             Events[Events["split"] == i][[x for x in Events.columns if x != "split"]].to_parquet(
-                f"{args.output_dir}/{i}/Total_Summary.parquet",
+                f"{l1_output}/Total_Summary.parquet",
                 engine="fastparquet",
             )
     else:
+        pathlib.Path(f"{args.output_dir}/{lvl}").mkdir(parents=True, exist_ok=True)
         Events.to_parquet(
-            f"{args.output_dir}/Total_Summary.parquet",
+            f"{args.output_dir}/{lvl}/Total_Summary.parquet",
             engine="fastparquet",
         )
     for name, df in event_breakdown_dfs.items():
@@ -501,11 +505,13 @@ if __name__ == "__main__":
             logger.info(f"Storing {name} table")
             if "split" in df.columns:
                 for i in df["split"].unique():
-                    logger.info(f"Creating {args.output_dir}/{i} if it does not exist!")
-                    pathlib.Path(f"{args.output_dir}/{i}").mkdir(parents=True, exist_ok=True)
-                    print(f"{args.output_dir}/{i}/{name}.parquet")
+                    lvl = "l3" if "Specific_" in name else "l2"
+                    lvl_output = f"{args.output_dir}/{i}/{lvl}"
+                    logger.info(f"Creating {lvl_output} if it does not exist!")
+                    pathlib.Path(lvl_output).mkdir(parents=True, exist_ok=True)
+                    print(f"{lvl_output}/{name}.parquet")
                     df[df["split"] == i][[x for x in df.columns if x != "split"]].to_parquet(
-                        f"{args.output_dir}/{i}/{name}.parquet",
+                        f"{lvl_output}/{name}.parquet",
                         engine="fastparquet",
                     )
             else:
