@@ -30,8 +30,6 @@ tqdm = "^4.66.5"
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.3"
 openpyxl = "^3.1.2"
-pandarallel = "^1.6.5"
-python-snappy = "^0.7.3"
 
 [tool.poetry.group.tests.dependencies]
 pytest = "^8.2.2"
