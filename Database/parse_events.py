@@ -15,6 +15,7 @@ tqdm.pandas()
 
 
 def parse_main_events(df: pd.DataFrame, target_columns: list):
+    admin_area_col = "Administrative_Areas_Norm"
     logger.info("STEP: Parsing main level events (l1)")
 
     if "Event_ID" not in df.columns:
@@ -84,7 +85,7 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
         )
 
         logger.info("Normalizing administrative areas...")
-        events["Administrative_Area_Tmp"] = events["Administrative_Areas"].progress_apply(
+        events[f"{admin_area_col}_Tmp"] = events["Administrative_Areas"].progress_apply(
             lambda admin_areas: (
                 [norm_loc.normalize_locations(c, is_country=True) for c in admin_areas]
                 if isinstance(admin_areas, list)
@@ -93,12 +94,12 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
         )
         events[
             [
-                "Administrative_Area_Norm",
-                "Administrative_Area_Type",
-                "Administrative_Area_GeoJson",
+                f"{admin_area_col}_Norm",
+                f"{admin_area_col}_Type",
+                f"{admin_area_col}_GeoJson",
             ]
         ] = (
-            events["Administrative_Area_Tmp"]
+            events[f"{admin_area_col}_Tmp"]
             .progress_apply(
                 lambda x: (
                     (
@@ -113,9 +114,9 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
             .progress_apply(pd.Series)
         )
 
-        events.drop(columns=["Administrative_Area_Tmp"], inplace=True)
+        events.drop(columns=[f"{admin_area_col}_Tmp"], inplace=True)
         logger.info("Getting GID from GADM for Administrative Areas")
-        events["Administrative_Area_GID"] = events["Administrative_Area_Norm"].progress_apply(
+        events[f"{admin_area_col}_GID"] = events[f"{admin_area_col}_Norm"].progress_apply(
             lambda admin_areas: (
                 [norm_loc.get_gadm_gid(country=c) if c else None for c in admin_areas]
                 if isinstance(admin_areas, list)
@@ -465,10 +466,10 @@ def get_target_cols() -> tuple[list]:
         "Hazards",
         "Event_Name",
         "Source",
-        "Administrative_Area_Norm",
-        "Administrative_Area_Type",
-        "Administrative_Area_GID",
-        "Administrative_Area_GeoJson",
+        "Administrative_Areas_Norm",
+        "Administrative_Areas_Type",
+        "Administrative_Areas_GID",
+        "Administrative_Areas_GeoJson",
     ]
 
     l1_target_columns.extend(date_cols)
