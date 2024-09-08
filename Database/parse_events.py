@@ -414,9 +414,9 @@ def df_to_parquet(
 
 def get_target_cols() -> tuple[list]:
     date_cols = [
-        "Star_Date_Day",
-        "Star_Date_Month",
-        "Star_Date_Year",
+        "Start_Date_Day",
+        "Start_Date_Month",
+        "Start_Date_Year",
         "End_Date_Day",
         "End_Date_Month",
         "End_Date_Year",
