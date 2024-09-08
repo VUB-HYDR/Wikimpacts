@@ -413,6 +413,15 @@ def df_to_parquet(
 
 
 def get_target_cols() -> tuple[list]:
+    date_cols = [
+        "Star_Date_Day",
+        "Star_Date_Month",
+        "Star_Date_Year",
+        "End_Date_Day",
+        "End_Date_Month",
+        "End_Date_Year",
+    ]
+
     event_breakdown_columns = {
         "numerical": {
             "Injuries": [
@@ -461,6 +470,8 @@ def get_target_cols() -> tuple[list]:
         "Administrative_Area_GeoJson",
     ]
 
+    l1_target_columns.extend(date_cols)
+
     for cat in ["numerical", "monetary"]:
         impacts = event_breakdown_columns[cat].keys()
         for im in impacts:
@@ -476,6 +487,7 @@ def get_target_cols() -> tuple[list]:
         "Num_Inflation_Adjusted_Year",
     ]
     l2_target_columns = basic_subevent_cols.copy()
+    l2_target_columns.extend(date_cols)
     l2_target_columns.extend(
         [
             "Administrative_Areas_Norm",
@@ -486,6 +498,7 @@ def get_target_cols() -> tuple[list]:
     )
 
     l3_target_columns = basic_subevent_cols.copy()
+    l3_target_columns.extend(date_cols)
     l3_target_columns.extend(
         [
             "Administrative_Area_Norm",
