@@ -15,7 +15,7 @@ tqdm.pandas()
 
 
 def parse_main_events(df: pd.DataFrame, target_columns: list):
-    admin_area_col = "Administrative_Areas_Norm"
+    admin_area_col = "Administrative_Areas"
     logger.info("STEP: Parsing main level events (l1)")
 
     if "Event_ID" not in df.columns:
