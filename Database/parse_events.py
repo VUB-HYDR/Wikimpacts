@@ -585,7 +585,7 @@ if __name__ == "__main__":
         "--raw_l1",
         dest="raw_l1",
         default=None,
-        help="Pass a filename (.json) to store the raw output from l1.",
+        help="Pass a filename (.json) to store or retrieve the raw output from l1.",
         type=str,
     )
 
