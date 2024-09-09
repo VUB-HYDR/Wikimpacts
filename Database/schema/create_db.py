@@ -44,8 +44,8 @@ def generate_db(
 
     for i in commands:
         if i:
+            logger.info(f"Executing DB command:\n{i}")
             try:
-                logger.info(f"Executing DB command:\n{i}")
                 cursor.execute(i)
             except sqlite3.Error as err:
                 logger.error(f"Could not create table. {type(err).__name__}: {err}")
