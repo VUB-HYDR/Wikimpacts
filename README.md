@@ -245,17 +245,28 @@ Database/evaluation_results/specific_instance_eval_test
 
 ### Inserting events to the database
 
-Insertion is done by event level (l1, l2, or l3)
+Insertion is done by event level (l1, l2, or l3). Examples:
 
 ```shell
-# to append
-poetry run python3 Database/insert_main_event.py -m "append" --event_level l1
+# to append l1 events
+poetry run python3 Database/insert_events.py -m "append" --event_level l1
 
-# to replace
-poetry run python3 Database/insert_main_event.py -m "replace" --event_level l1
+# to replace l2 events ⚠️ WILL replace all entries! ⚠️
+poetry run python3 Database/insert_events.py -m "replace" --event_level l2
 
 # explore more options
 poetry run python3 Database/insert_main_event.py --help
+
+# on dummy events ⚠️ please don't push these insertions in the database! ⚠️
+poetry run python3 Database/scr/insert_events.py -m append -f Database/output/dummy/l1 -db impact.v1.db -lvl l1
+```
+
+To insert a large number of events in the database all at once (supports chunked .parquet files), the files need to be in a specific format described in [Database/scr/insert_full_run.sh](Database/scr/insert_full_run.sh). The directory structure in [Database/output/dummy](Database/output/dummy) follows this format.
+
+To perform this on the existing dummy data:
+
+```shell
+source Database/scr/insert_full_run.sh Database/output/dummy
 ```
 
 ### Database-related
