@@ -21,7 +21,7 @@ CREATE TABLE Specific_Instance_Per_Administrative_Area_type_numerical (
 
     Num_Min REAL CHECK (Num_Min > 0),
     Num_Max REAL CHECK (Num_Max > 0),
-    Num_Approx INTEGER CHECK (Num_Approx == 1 OR Num_Approx ==  0), /* COMMENT 'Boolean' */
+    Num_Approx INTEGER CHECK (Num_Approx == 1 OR Num_Approx == 0 OR Num_Approx == NULL), /* COMMENT 'Boolean' */
     FOREIGN KEY(Event_ID) REFERENCES Total_Summary_Events(Event_ID)
 );
 
@@ -48,7 +48,7 @@ CREATE TABLE Specific_Instance_Per_Administrative_Area_type_monetary (
 
     Num_Min REAL NOT NULL CHECK (Num_Min > 0),
     Num_Max REAL NOT NULL CHECK (Num_Max > 0),
-    Num_Approx INTEGER NOT NULL CHECK (Num_Approx == 1 OR Num_Approx ==  0), /* COMMENT 'Boolean' */
+    Num_Approx INTEGER NOT NULL CHECK (Num_Approx == 1 OR Num_Approx == 0 OR Num_Approx == NULL), /* COMMENT 'Boolean' */
     Num_Unit TEXT NOT NULL, /* COMMENT 'currency' */
     Num_Inflation_Adjusted INTEGER, /* COMMENT 'Boolean' */
     Num_Inflation_Adjusted_Year INTEGER CHECK (
