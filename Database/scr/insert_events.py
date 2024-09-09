@@ -4,6 +4,7 @@ import pathlib
 import sqlite3
 
 import pandas as pd
+from tqdm import tqdm
 
 from Database.scr.normalize_utils import Logging
 
@@ -55,7 +56,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "-t",
         "--target_table",
-        dest="--target_table",
+        dest="target_table",
         default=None,
         required=False,
         help="Must be a table in the target database. Example: `Instance_Per_Administrative_Areas_Deaths`. For l2 and l3 only!",
@@ -80,7 +81,7 @@ if __name__ == "__main__":
             data = pd.read_parquet(f"{args.file_dir}/{f}", engine="fastparquet")
             # change if_exists to "append" to avoid overwriting the database
             # choose "replace" to overwrite the database with a fresh copy of the data
-        for i in range(len(data)):
+        for i in tqdm(range(len(data))):
             try:
                 data.iloc[i : i + 1].to_sql(name="Total_Summary", con=connection, if_exists=args.method, index=False)
             except sqlite3.IntegrityError as err:
@@ -98,8 +99,8 @@ if __name__ == "__main__":
         assert args.target_table, f"When inserting sublevels ({sub_levels}), the target table must be specified!"
 
         check_table = cursor.execute(
-            f"""SELECT tableName FROM sqlite_master WHERE type='table'
-                AND tableName='{args.target_table}'; """
+            f"""SELECT name FROM sqlite_master WHERE type='table'
+                AND name='{args.target_table}'; """
         ).fetchall()
 
         assert len(check_table) == 1, f"Table name {args.target_table} incorrect! Found {check_table} instead."
@@ -108,7 +109,7 @@ if __name__ == "__main__":
             data = pd.read_parquet(f"{args.file_dir}/{f}", engine="fastparquet")
             # change if_exists to "append" to avoid overwriting the database
             # choose "replace" to overwrite the database with a fresh copy of the data
-            for i in range(len(data)):
+            for i in tqdm(range(len(data))):
                 try:
                     data.iloc[i : i + 1].to_sql(
                         name=args.target_table, con=connection, if_exists=args.method, index=False
@@ -127,7 +128,7 @@ if __name__ == "__main__":
         from time import time
 
         tmp_errors_filename = f"tmp/db_insert_errors_{args.event_level}_{int(time())}.json"
-        logger.info(f"Found errors! These rows WERE NOT INSERTED!! Storing in {tmp_errors_filename}")
+        logger.info(f"Found errors! THIS ROW WAS NOT INSERTED!! Storing in {tmp_errors_filename}")
         pathlib.Path("tmp").mkdir(parents=True, exist_ok=True)
         errors.to_json(tmp_errors_filename, orient="records")
     connection.close()
