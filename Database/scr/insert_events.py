@@ -127,7 +127,7 @@ if __name__ == "__main__":
     if errors.shape != (0, 0):
         from time import time
 
-        tmp_errors_filename = f"tmp/db_insert_errors_{args.event_level}_{int(time())}.json"
+        tmp_errors_filename = f"tmp/db_insert_errors_{args.event_level}_{args.target_table}_{int(time())}.json"
         logger.info(f"Found errors! THIS ROW WAS NOT INSERTED!! Storing in {tmp_errors_filename}")
         pathlib.Path("tmp").mkdir(parents=True, exist_ok=True)
         errors.to_json(tmp_errors_filename, orient="records")
