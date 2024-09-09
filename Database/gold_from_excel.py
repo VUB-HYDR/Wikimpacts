@@ -21,9 +21,10 @@ def fix_column_names(df):
     mapper = {
         "_Min": "Num_Min",
         "_Max": "Num_Max",
-        "_Units": "Num_Units",
+        "_Unit": "Num_Unit",
+        "_Units": "Num_Unit",
         "_Adjusted": "Num_Inflation_Adjusted",
-        "_Adjusted_Year": "Num_Adjusted_Year",
+        "_Adjusted_Year": "Num_Inflation_Adjusted_Year",
     }
 
     for k, v in mapper.items():
