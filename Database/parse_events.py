@@ -602,6 +602,11 @@ if __name__ == "__main__":
     assert all(
         [True if x in available_event_levels else False for x in args.event_levels]
     ), f"Event type not available: {[x for x in args.event_levels if x not in available_event_levels]}.\nAvailable types: {available_event_levels}"
+    if args.store_raw_l1:
+        assert (
+            args.raw_l1
+        ), "If the `--store_raw_l1` flag is set, the `--raw_l1` param must be passed to give the raw json output for l1 a filename!"
+
     logger.info(f"Passed args: {args}")
 
     logger.info(f"Creating {args.output_dir} if it does not exist!")

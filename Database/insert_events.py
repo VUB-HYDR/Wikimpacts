@@ -76,6 +76,7 @@ if __name__ == "__main__":
     sub_levels = [x for x in event_levels.keys() if x != "l1"]
 
     if args.event_level == main_level:
+        args.target_table = "Total_Summary"
         logger.info(f"Inserting {main_level}...\n")
         for f in files:
             data = pd.read_parquet(f"{args.file_dir}/{f}", engine="fastparquet")
@@ -83,7 +84,7 @@ if __name__ == "__main__":
             # choose "replace" to overwrite the database with a fresh copy of the data
         for i in tqdm(range(len(data))):
             try:
-                data.iloc[i : i + 1].to_sql(name="Total_Summary", con=connection, if_exists=args.method, index=False)
+                data.iloc[i : i + 1].to_sql(name=args.target_table, con=connection, if_exists=args.method, index=False)
             except sqlite3.IntegrityError as err:
                 logger.debug(
                     f"""Could not insert event for level {args.event_level}. Error {err}.

@@ -41,7 +41,7 @@
 #     └── Specific_Instance_Per_Administrative_Area_Injuries
 #         └── 0000.parquet
 #
-# Note 1: All categories are supported!
+# Note 1: All categories are supported! Any other directories are ignroed!
 # Note 2: Rows that could not be inserted due to some Integrity Error are stored in /tmp/
 ###################
 
@@ -56,7 +56,7 @@ echo Inserting into ${dbName}
 for lvl in "${levels[@]}"; do
     if [[ ${lvl} == "l1" ]]
     then
-        poetry run python3 Database/scr/insert_events.py -m append -f ${inputFilesDir}/${lvl} -db ${dbName} -lvl l1
+        poetry run python3 Database/insert_events.py -m append -f ${inputFilesDir}/${lvl} -db ${dbName} -lvl l1
         echo Inserting ${lvl}
 
     else
@@ -65,7 +65,7 @@ for lvl in "${levels[@]}"; do
             echo File Path ${filePath}
             tblName=$(basename $filePath)
             echo Table Name ${tblName}
-            poetry run python3 Database/scr/insert_events.py -m "append" -f ${filePath}  -db ${dbName} -lvl l2 -t ${tblName}
+            poetry run python3 Database/insert_events.py -m "append" -f ${filePath}  -db ${dbName} -lvl l2 -t ${tblName}
         done
     fi
 done

@@ -255,10 +255,10 @@ poetry run python3 Database/insert_events.py -m "append" --event_level l1
 poetry run python3 Database/insert_events.py -m "replace" --event_level l2
 
 # explore more options
-poetry run python3 Database/insert_main_event.py --help
+poetry run python3 Database/insert_events.py --help
 
-# on dummy events ⚠️ please don't push these insertions in the database! ⚠️
-poetry run python3 Database/scr/insert_events.py -m append -f Database/output/dummy/l1 -db impact.v1.db -lvl l1
+# on dummy events ⚠️ please don't push these database insertions to github! ⚠️
+poetry run python3 Database/insert_events.py -m append -f Database/output/dummy/l1 -db impact.v1.db -lvl l1
 ```
 
 To insert a large number of events in the database all at once (supports chunked .parquet files), the files need to be in a specific format described in [Database/scr/insert_full_run.sh](Database/scr/insert_full_run.sh). The directory structure in [Database/output/dummy](Database/output/dummy) follows this format.
@@ -266,7 +266,7 @@ To insert a large number of events in the database all at once (supports chunked
 To perform this on the existing dummy data:
 
 ```shell
-source Database/scr/insert_full_run.sh Database/output/dummy
+source Database/insert_full_run.sh Database/output/dummy
 ```
 
 ### Database-related
