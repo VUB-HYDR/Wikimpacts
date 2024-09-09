@@ -495,6 +495,7 @@ def get_target_cols() -> tuple[list]:
         "Num_Min",
         "Num_Max",
         "Num_Approx",
+        "Num_Unit",
         "Num_Inflation_Adjusted",
         "Num_Inflation_Adjusted_Year",
     ]

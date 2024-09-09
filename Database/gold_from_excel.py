@@ -29,7 +29,7 @@ def fix_column_names(df):
 
     for k, v in mapper.items():
         for col in df.columns:
-            if col.endswith(k):
+            if col.endswith(k) and not col.startswith("Num_"):
                 df.rename(columns={col: v}, inplace=True)
     return df
 
