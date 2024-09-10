@@ -97,7 +97,7 @@ if __name__ == "__main__":
         raw_text = json.load(file)
 
     # define the gpt setting for "gpt-4o-2024-05-13", because the setting in the "gpt-4o-2024-08-06" is different, we divide two functions to run them
-    def batch_gpt_basic(prompt, event_id, response_format):
+    def batch_gpt_basic(prompt, event_id):
         df = {
             "custom_id": event_id,
             "method": "POST",

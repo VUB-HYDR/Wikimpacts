@@ -37,7 +37,7 @@ Choose the raw file contains the text you need to process, please use the clear 
 Choose the model you want to apply. The default model is "gpt-4o-2024-05-13"
 - below is a command example you can refer to run the script:
 ```shell
-poetry run python3 Database/Prompts/run_prompts.py --filename wiki_dev_whole_infobox_20240729_70single_events.json --raw_dir Database/Wiki_dev_test_articles  --batch_dir  Database/Prompts/batch  --api_env .env  --description all_categories_V3  --prompt_category impact
+poetry run python3 Database/Prompts/run_prompts.py --filename wiki_dev_whole_infobox_20240729_70single_events.json --raw_dir Database/Wiki_dev_test_articles --batch_dir Database/Prompts/batch --api_env .env --description all_categories_V3  --model_name gpt-4o-2024-08-06 --max_tokens 16384  --prompt_category all
 ```
 #### (Step 3) Retrieve results
 Choose the same raw file as you run the experiment, the same api env to access your remote OpenAI server and the output directory to store your result.
