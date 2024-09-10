@@ -7,8 +7,6 @@ from pathlib import Path
 import openai
 from dotenv import load_dotenv
 
-from Database.Prompts import prompts_V3_format as target_prompts_format
-
 # the prompt list need to use the same variable names in our schema, and each key contains 1+ prompts
 from Database.Prompts.prompts import V_3 as target_prompts
 from Database.scr.normalize_utils import Logging
@@ -105,7 +103,7 @@ if __name__ == "__main__":
             "method": "POST",
             "url": "/v1/chat/completions",
             "body": {
-                "response_format": response_format,
+                "response_format": {"type": "json_object"},
                 "model": args.model_name,
                 "messages": [
                     {
@@ -124,13 +122,13 @@ if __name__ == "__main__":
         return df
 
     # the system role is differ from the basic
-    def batch_gpt_impact(prompt, event_id, response_format):
+    def batch_gpt_impact(prompt, event_id):
         df = {
             "custom_id": event_id,
             "method": "POST",
             "url": "/v1/chat/completions",
             "body": {
-                "response_format": response_format,
+                "response_format": {"type": "json_object"},
                 "model": args.model_name,
                 "messages": [
                     {
@@ -226,14 +224,9 @@ if __name__ == "__main__":
                     for idx, prompt_template in enumerate(prompt_list_for_key, start=1):
                         event_id = f"{event_id_base}_{key}_{idx}"  # unique event id with key and index
                         prompt = prompt_template.format(Info_Box=info_box, Whole_Text=whole_text, Event_Name=event_name)
-                        if args.model_name == "gpt-4o-2024-08-06":
-                            response_format = getattr(target_prompts_format, key, None)
-                            line = batch_function(prompt, event_id, response_format)  # define the line of API request
-                            data.append(line)
-                        else:
-                            response_format = {"type": "json_object"}
-                            line = batch_function(prompt, event_id, response_format)  # define the line of API request
-                            data.append(line)
+
+                        line = batch_function(prompt, event_id)  # define the line of API request
+                        data.append(line)
 
         return data
 
@@ -290,24 +283,45 @@ if __name__ == "__main__":
             metadata_description=metadata_description,  # metadata description
         )
 
-    # Define the description for the batch file
-    description = args.description
-
     if args.prompt_category == "impact":
         # Process data for impact
         impact_data = process_data(raw_text, target_prompts, prompt_impact_list, batch_gpt_impact)
-        process_save_upload(impact_data, jsonl_file_path_impact, description, client, f"{description} {args.filename}")
+        process_save_upload(
+            impact_data,
+            jsonl_file_path_impact,
+            args.description,
+            client,
+            f"{args.description} {args.model_name} {args.filename}",
+        )
 
     elif args.prompt_category == "basic":
         # Process data for basic
         basic_data = process_data(raw_text, target_prompts, prompt_basic_list, batch_gpt_basic)
-        process_save_upload(basic_data, jsonl_file_path_basic, description, client, f"{description} {args.filename}")
+        process_save_upload(
+            basic_data,
+            jsonl_file_path_basic,
+            args.description,
+            client,
+            f"{args.description} {args.model_name} {args.filename}",
+        )
 
     elif args.prompt_category == "all":
         # Process and upload basic data
         basic_data = process_data(raw_text, target_prompts, prompt_basic_list, batch_gpt_basic)
-        process_save_upload(basic_data, jsonl_file_path_basic, description, client, f"{description} {args.filename}")
+        process_save_upload(
+            basic_data,
+            jsonl_file_path_basic,
+            args.description,
+            client,
+            f"{args.description} {args.model_name} {args.filename}",
+        )
 
         # Process and upload impact data
         impact_data = process_data(raw_text, target_prompts, prompt_impact_list, batch_gpt_impact)
-        process_save_upload(impact_data, jsonl_file_path_impact, description, client, f"{description} {args.filename}")
+        process_save_upload(
+            impact_data,
+            jsonl_file_path_impact,
+            args.description,
+            client,
+            f"{args.description} {args.model_name} {args.filename}",
+        )

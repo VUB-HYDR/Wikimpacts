@@ -794,7 +794,7 @@ V_2: dict = {
 }
 
 # V_3 is a version based on V2, but with freezed variable names as the schema we confirmed, 20240830
-# V_3 is a version based on V2, but with freezed variable names as the schema we confirmed, 20240823
+
 V_3: dict = {
     "affected": [
         """Based on information box {Info_Box} and header-content pair article {Whole_Text},

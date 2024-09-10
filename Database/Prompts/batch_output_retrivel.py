@@ -49,6 +49,14 @@ if __name__ == "__main__":
         help="The description of the experiment",
         type=str,
     )
+    parser.add_argument(
+        "-m",
+        "--model_name",
+        dest="model_name",
+        default="gpt-4o-2024-05-13",  # This model supports at most 4096 completion tokens, and need to specify json-output
+        help="The model version applied in the experiment, like gpt-4o-mini. ",
+        type=str,
+    )
 
     args = parser.parse_args()
     logger.info(f"Passed args: {args}")
@@ -103,7 +111,7 @@ if __name__ == "__main__":
         for batch in batches:
             des = batch.metadata
             # only return the result with the same file name and the defined experiment description in the metadata description
-            if str(args.filename) and str(args.description) in des.get("description"):
+            if str(args.filename) and str(args.description) and str(args.model_name) in des.get("description"):
                 batch_id = batch.id
                 output_file_id = batch.output_file_id
                 # Retrieve the batch details
@@ -129,6 +137,8 @@ if __name__ == "__main__":
                     # Append the dictionary to the response list
         response.append(df)
 
-    out_file_path = f"{args.output_dir}/{args.filename.replace('.json', '')}_{args.description}_rawoutput.json"
+    out_file_path = (
+        f"{args.output_dir}/{args.filename.replace('.json', '')}_{args.description}_{args.model_name}_rawoutput.json"
+    )
     with open(out_file_path, "w") as json_file:
         json.dump(response, json_file, indent=4)
