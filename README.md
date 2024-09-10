@@ -249,10 +249,10 @@ Insertion is done by event level (l1, l2, or l3). Examples:
 
 ```shell
 # to append l1 events
-poetry run python3 Database/insert_events.py -m "append" --event_level l1
+poetry run python3 Database/insert_events.py -m "append" -lvl l1 -db impact.v1.db
 
 # to replace l2 events ⚠️ WILL replace all entries! ⚠️
-poetry run python3 Database/insert_events.py -m "replace" --event_level l2
+poetry run python3 Database/insert_events.py -m "replace" -lvl l2 -db impact.v1.db
 
 # explore more options
 poetry run python3 Database/insert_events.py --help
@@ -266,14 +266,14 @@ To insert a large number of events in the database all at once (supports chunked
 To perform this on the existing dummy data:
 
 ```shell
-source Database/insert_full_run.sh Database/output/dummy
+source Database/insert_full_run.sh Database/output/dummy impact.v1.db
 ```
 
 ### Database-related
 - To generate the database according to [`Database/schema.sql`](Database/schema.sql):
 
     ```shell
-    poetry run python3 Database/create_db.py
+    poetry run python3 Database/create_db.py -db impact.v1.db
     ```
 
 #### SPECIAL USECASE: Converting the manual annotation table from a flat format to Events and Specific Impacts

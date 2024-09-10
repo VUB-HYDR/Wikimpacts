@@ -52,7 +52,22 @@ def generate_db(
 
 
 if __name__ == "__main__":
-    connection = sqlite3.connect("impact.v1.db")
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "-db",
+        "--database",
+        dest="database",
+        default="impact.v1.db",
+        help="Path to sqlite database",
+        required=True,
+        type=str,
+    )
+
+    args = parser.parse_args()
+    parser = argparse.ArgumentParser()
+    connection = sqlite3.connect(args.database)
     cursor = connection.cursor()
     generate_db(
         l1_schema="Database/schema/L1_schema.sql",
