@@ -37,13 +37,13 @@ Choose the raw file contains the text you need to process, please use the clear 
 Choose the model you want to apply. The default model is "gpt-4o-2024-05-13"
 - below is a command example you can refer to run the script:
 ```shell
-poetry run python3 Database/Prompts/run_prompts.py --filename wiki_dev_whole_infobox_20240729_70single_events.json --raw_dir Database/Wiki_dev_test_articles  --batch_dir  Database/Prompts/batch  --api_env .env  --description the_impact_categories_V4  --prompt_category impact
+poetry run python3 Database/Prompts/run_prompts.py --filename wiki_dev_whole_infobox_20240729_70single_events.json --raw_dir Database/Wiki_dev_test_articles  --batch_dir  Database/Prompts/batch  --api_env .env  --description all_categories_V3  --prompt_category impact
 ```
 #### (Step 3) Retrieve results
 Choose the same raw file as you run the experiment, the same api env to access your remote OpenAI server and the output directory to store your result.
 - below is a command example you can refer to run the script:
 ```shell
-poetry run python3  Database/Prompts/batch_output_retrivel.py  --api_env .env  --output_dir  Database/raw/batch_test  --file_name wiki_dev_whole_infobox_20240729_70single_events.json  --raw_dir  Database/Wiki_dev_test_articles --description the_impact_V4
+poetry run python3  Database/Prompts/batch_output_retrivel.py  --api_env .env  --output_dir  Database/raw/batch_test  --file_name wiki_dev_whole_infobox_20240729_70single_events.json  --raw_dir  Database/Wiki_dev_test_articles --description all_categories_V3
 ```
 ### Parsing and evaluation pipeline
 
