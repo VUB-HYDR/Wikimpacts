@@ -126,7 +126,7 @@ V_0: dict = {
     - "Total_Summary_Damage": {{
     - "Total_Damage": "Specify the economic loss or damage reported.
     If this information is not mentioned, assign 'NULL'."
-    - "Total_Damage_Units": "Indicate the currency of the reported damage
+    - "Total_Damage_Unit": "Indicate the currency of the reported damage
     (e.g., USD, EUR). If the currency is not specified, assign 'NULL'."
     - "Total_Damage_Inflation_Adjusted": "State 'Yes' if the reported
     damage amount has been adjusted for inflation; otherwise, indicate
@@ -153,7 +153,7 @@ V_0: dict = {
     - "Location_Damage": "The specific place within the country where the
     economic impact occurred, including towns, cities, or regions."
     - "Damage": "The amount of economic damage."
-    - "Damage_Units": "The currency of the economic damage, like USD, EUR.
+    - "Damage_Unit": "The currency of the economic damage, like USD, EUR.
     If not specified, assign 'NULL'."
     - "Damage_Inflation_Adjusted": "Indicate 'Yes' if the damage amount
     has been adjusted for inflation; otherwise, 'No'."
@@ -358,7 +358,7 @@ V_1: dict = {
         the first is the total insured damage caused by the {Event_Name}, including damage or loss to property, belongings, or persons covered under the terms of an insurance policy, and organize this information in JSON format as follows:
         - "Total_Summary_Insured_Damage": {{
         - "Total_Insured_Damage": "The total amount of insured damage. Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion'). If the information is missing, assign 'NULL'."
-        - "Total_Insured_Damage_Units": "The currency of the total insured damage, like USD, EUR. If not specified, assign 'NULL'."
+        - "Total_Insured_Damage_Unit": "The currency of the total insured damage, like USD, EUR. If not specified, assign 'NULL'."
         - "Total_Insured_Damage_Inflation_Adjusted": "Indicate 'Yes' if the total insured damage amount has been adjusted for inflation; otherwise, 'No'."
         - "Total_Insured_Damage_Inflation_Adjusted_Year": "The year of inflation adjustment for the total insured damage, if applicable. If not adjusted or not applicable, assign 'NULL'."
         - "Total_Insured_Damage_Assessment_with_annotation": "Provide excerpts from the article that support your findings on the total amount of insured damage. This should directly quote the original text."
@@ -368,7 +368,7 @@ V_1: dict = {
           - "Country": "Name of the country."
           - "Total_Insured_Damage": "The total amount of insured damage in this country related to the {Event_Name}. Do not sum the insured damage in specific locations within this country unless the article explicitly mentions a total insured damage in this country.
              Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion'). If the information is missing or if no total insured damage in this country is mentioned, assign 'NULL'."
-          - "Total_Insured_Damage_Units": "The currency of the total insured damage, like USD, EUR. If not specified, assign 'NULL'."
+          - "Total_Insured_Damage_Unit": "The currency of the total insured damage, like USD, EUR. If not specified, assign 'NULL'."
           - "Total_Insured_Damage_Inflation_Adjusted": "Indicate 'Yes' if the total insured damage amount has been adjusted for inflation; otherwise, 'No'."
           - "Total_Insured_Damage_Inflation_Adjusted_Year": "The year of inflation adjustment for the total insured damage, if applicable. If not adjusted or not applicable, assign 'NULL'."
           - "Total_Insured_Damage_Assessment_with_annotation": "Provide excerpts from the article that support your findings on the total amount of insured damage. This should directly quote the original text."
@@ -379,7 +379,7 @@ V_1: dict = {
           - "Location_Insured_Damage": "The specific place/places within the country where the insured damage occurred, including towns, cities, or regions. Order it/them in a list like ["town";"city";"region"]."
           - "Num_Insured_Damage": "The amount of insured damage in the specific location/locations related to the {Event_Name}.
              Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion'). If the information is missing, assign 'NULL'."
-          - "Insured_Damage_Units": "The currency of the insured damage, like USD, EUR. If not specified, assign 'NULL'."
+          - "Insured_Damage_Unit": "The currency of the insured damage, like USD, EUR. If not specified, assign 'NULL'."
           - "Insured_Damage_Inflation_Adjusted": "Indicate 'Yes' if the insured damage amount has been adjusted for inflation; otherwise, 'No'."
           - "Insured_Damage_Inflation_Adjusted_Year": "The year of inflation adjustment for the insured damage, if applicable. If not adjusted or not applicable, assign 'NULL'."
           - "Insured_Damage_Assessment_with_annotation": "Provide excerpts from the article that support your findings on the amount of insured damage. This should directly quote the original text."
@@ -393,7 +393,7 @@ V_1: dict = {
         the first is the total economic loss or damage caused by the {Event_Name}, and organize this information in JSON format as follows:
         - "Total_Summary_Damage": {{
         - "Total_Economic_Damage": "The total amount of economic loss or damage. Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion'). If the information is missing, assign 'NULL'."
-        - "Total_Economic_Damage_Units": "The currency of the total economic loss or damage, like USD, EUR. If not specified, assign 'NULL'."
+        - "Total_Economic_Damage_Unit": "The currency of the total economic loss or damage, like USD, EUR. If not specified, assign 'NULL'."
         - "Total_Economic_Damage_Inflation_Adjusted": "Indicate 'Yes' if the total economic loss or damage amount has been adjusted for inflation; otherwise, 'No'."
         - "Total_Economic_Damage_Inflation_Adjusted_Year": "The year of inflation adjustment for the total economic loss or damage, if applicable. If not adjusted or not applicable, assign 'NULL'."
         - "Total_Economic_Damage_Assessment_with_annotation": "Provide excerpts from the article that support your findings on the total amount of economic loss or damage. This should directly quote the original text."
@@ -403,7 +403,7 @@ V_1: dict = {
           - "Country": "Name of the country."
           - "Total_Economic_Damage": "The total amount of economic loss or damage in this country related to the {Event_Name}. Do not sum the total economic damage in specific locations within this country unless the article explicitly mentions a total economic damage in this country.
              Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion'). If the information is missing or if no total economic damage in this country is mentioned, assign 'NULL'."
-          - "Total_Economic_Damage_Units": "The currency of the total economic damage, like USD, EUR. If not specified, assign 'NULL'."
+          - "Total_Economic_Damage_Unit": "The currency of the total economic damage, like USD, EUR. If not specified, assign 'NULL'."
           - "Total_Economic_Damage_Inflation_Adjusted": "Indicate 'Yes' if the total economic damage amount has been adjusted for inflation; otherwise, 'No'."
           - "Total_Economic_Damage_Inflation_Adjusted_Year": "The year of inflation adjustment for the total economic damage, if applicable. If not adjusted or not applicable, assign 'NULL'."
           - "Total_Economic_Damage_Assessment_with_annotation": "Provide excerpts from the article that support your findings on the total amount of economic damage. This should directly quote the original text."
@@ -414,7 +414,7 @@ V_1: dict = {
           - "Location_Economic_Damage": "The specific place/places within the country where the economic damage occurred, including towns, cities, or regions. Order it/them in a list like ["town";"city";"region"]."
           - "Num_Economic_Damage": "The amount of economic damage in the specific location/locations related to the {Event_Name}.
              Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion'). If the information is missing, assign 'NULL'."
-          - "Economic_Damage_Units": "The currency of the economic damage, like USD, EUR. If not specified, assign 'NULL'."
+          - "Economic_Damage_Unit": "The currency of the economic damage, like USD, EUR. If not specified, assign 'NULL'."
           - "Economic_Damage_Inflation_Adjusted": "Indicate 'Yes' if the economic damage amount has been adjusted for inflation; otherwise, 'No'."
           - "Economic_Damage_Inflation_Adjusted_Year": "The year of inflation adjustment for the economic damage, if applicable. If not adjusted or not applicable, assign 'NULL'."
           - "Economic_Damage_Assessment_with_annotation": "Provide excerpts from the article that support your findings on the amount of economic damage. This should directly quote the original text."
@@ -677,7 +677,7 @@ V_2: dict = {
                Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion', "minimal").
                Do not sum the number of insured damage in the article to present the total number of insured damage,
                and if no total number of insured damage explicitly mentioned or the information is missing, assign 'NULL'."
-            - "Units": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+            - "Unit": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
             - "Inflation_Adjusted": "Indicate 'Yes' if the total insured damage amount has been adjusted for inflation; otherwise "No", If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
             - "Inflation_Adjusted_Year": "The year of inflation adjustment for the total insured damage, if applicable; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
             - "Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total insured damage. The output should only include "Info_Box" or the header name."
@@ -691,7 +691,7 @@ V_2: dict = {
                  Do not sum the insured damage in specific locations from the country to present the total insured damage for this level information.
                  Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion').
                  If the information is missing or if no total insured damage in this level is mentioned, assign 'NULL'."
-              - "Units": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+              - "Unit": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Inflation_Adjusted": "Indicate 'Yes' if the total insured damage amount has been adjusted for inflation; otherwise "No", and if Total_Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Adjusted_Year": "The year of inflation adjustment for the total insured damage, if applicable; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Annotation": "Cite the header name from the article provided where you find the information about the total insured damage in this level. The output should only include the header name."
@@ -704,7 +704,7 @@ V_2: dict = {
               - "End_Date":"The end date when the insured damage occurred, if mentioned."
               - "Insured_Damage": "The amount of insured damage in the specific location/locations related to the {Event_Name} and make sure the information extracted for this containing the keyword "insured" or "insurance".
                  Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion'). If the information is missing, assign 'NULL'."
-              - "Units": "The currency of the insured damage, like USD, EUR. If Insured_Damage is missing from the previous step, assign 'NULL'."
+              - "Unit": "The currency of the insured damage, like USD, EUR. If Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Inflation_Adjusted": "Indicate 'Yes' if the insured damage amount has been adjusted for inflation; otherwise "No", If Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Inflation_Adjusted_Year": "The year of inflation adjustment for the insured damage, if applicable; If Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Annotation": "Cite the header name from the article provided where you find the information about the insured damage in this location. The output should only include the header name."
@@ -724,7 +724,7 @@ V_2: dict = {
                Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion', "minimal").
                Do not sum the number of economic damage in the article to present the total number of economic damage,
                and if no total number of economic damage explicitly mentioned or the information is missing, assign 'NULL'."
-            - "Units": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+            - "Unit": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
             - "Inflation_Adjusted": "Indicate 'Yes' if the total economic damage amount has been adjusted for inflation; otherwise "No", If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
             - "Inflation_Adjusted_Year": "The year of inflation adjustment for the total economic damage, if applicable; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
             - "Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total economic damage. The output should only include "Info_Box" or the header name."
@@ -738,7 +738,7 @@ V_2: dict = {
                  Do not sum the economic damage in specific locations from the country to present the total economic damage for this level information.
                  Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion').
                  If the information is missing or if no total economic damage in this level is mentioned, assign 'NULL'."
-              - "Units": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+              - "Unit": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Inflation_Adjusted": "Indicate 'Yes' if the total economic damage amount has been adjusted for inflation; otherwise "No", and if Total_Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Adjusted_Year": "The year of inflation adjustment for the total economic damage, if applicable; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Annotation": "Cite the header name from the article provided where you find the information about the total economic damage in this level. The output should only include the header name."
@@ -751,7 +751,7 @@ V_2: dict = {
               - "End_Date":"The end date when the economic damage occurred, if mentioned."
               - "Economic_Damage": "The amount of economic damage in the specific location/locations related to the {Event_Name}.
                  Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion'). If the information is missing, assign 'NULL'."
-              - "Units": "The currency of the economic damage, like USD, EUR. If Economic_Damage is missing from the previous step, assign 'NULL'."
+              - "Unit": "The currency of the economic damage, like USD, EUR. If Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Inflation_Adjusted": "Indicate 'Yes' if the economic damage amount has been adjusted for inflation; otherwise "No", If Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Inflation_Adjusted_Year": "The year of inflation adjustment for the economic damage, if applicable; If Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Annotation": "Cite the header name from the article provided where you find the information about the economic damage in this location. The output should only include the header name."
@@ -843,7 +843,7 @@ V_3: dict = {
           Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., "hundreds of, "few houses", "several homes").
           Do not sum the number of damaged buildings in the article to present the total number of damaged buildings,
           and if no total number of damaged buildings explicitly mentioned or the information is missing, assign 'NULL'."
-      - "Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total number of damaged buildings. The output should only include "Info_Box" or the header name."
+      - "Total_Buildings_Damaged_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total number of damaged buildings. The output should only include "Info_Box" or the header name."
         }}
       the second is the total number of damaged buildings in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
       - "Instance_Per_Administrative_Areas_Buildings_Damaged":[{{
@@ -876,7 +876,7 @@ V_3: dict = {
       - "Total_Deaths": "The total number of people who died in the {Event_Name}.
          Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
          Do not sum the number of death in the article to present the total number of death, and if no total number of death explicitly mentioned or the information is missing, assign 'NULL'."
-      - "Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total death. The output should only include "Info_Box" or the header name."
+      - "Total_Deaths_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total death. The output should only include "Info_Box" or the header name."
       }}
       the second is the total number of deaths in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
       - "Instance_Per_Administrative_Areas_Deaths":[{{
@@ -1018,7 +1018,7 @@ V_3: dict = {
                Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion', "minimal").
                Do not sum the number of insured damage in the article to present the total number of insured damage,
                and if no total number of insured damage explicitly mentioned or the information is missing, assign 'NULL'."
-            - "Total_Insured_Damage_Units": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Insured_Damage_Unit": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
             - "Total_Insured_Damage_Inflation_Adjusted": "Indicate 'Yes' if the total insured damage amount has been adjusted for inflation; otherwise "No", If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
             - "Total_Insured_Damage_Inflation_Adjusted_Year": "The year of inflation adjustment for the total insured damage, if applicable; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
             - "Total_Insured_Damage_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total insured damage. The output should only include "Info_Box" or the header name."
@@ -1032,7 +1032,7 @@ V_3: dict = {
                  Do not sum the insured damage in specific locations from the country to present the total insured damage for this level information.
                  Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion').
                  If the information is missing or if no total insured damage in this level is mentioned, assign 'NULL'."
-              - "Num_Units": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Unit": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted": "Indicate 'Yes' if the total insured damage amount has been adjusted for inflation; otherwise "No", and if Total_Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted_Year": "The year of inflation adjustment for the total insured damage, if applicable; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Annotation": "Cite the header name from the article provided where you find the information about the total insured damage in this level. The output should only include the header name."
@@ -1045,7 +1045,7 @@ V_3: dict = {
               - "End_Date":"The end date when the insured damage occurred, if mentioned."
               - "Num": "The amount of insured damage in the specific location/locations related to the {Event_Name} and make sure the information extracted for this containing the keyword "insured" or "insurance".
                  Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion'). If the information is missing, assign 'NULL'."
-              - "Num_Units": "The currency of the insured damage, like USD, EUR. If Insured_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Unit": "The currency of the insured damage, like USD, EUR. If Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted": "Indicate 'Yes' if the insured damage amount has been adjusted for inflation; otherwise "No", If Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted_Year": "The year of inflation adjustment for the insured damage, if applicable; If Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Annotation": "Cite the header name from the article provided where you find the information about the insured damage in this location. The output should only include the header name."
@@ -1065,7 +1065,7 @@ V_3: dict = {
                Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion', "minimal").
                Do not sum the number of economic damage in the article to present the total number of economic damage,
                and if no total number of economic damage explicitly mentioned or the information is missing, assign 'NULL'."
-            - "Total_Damage_Units": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Damage_Unit": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
             - "Total_Damage_Inflation_Adjusted": "Indicate 'Yes' if the total economic damage amount has been adjusted for inflation; otherwise "No", If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
             - "Total_Damage_Inflation_Adjusted_Year": "The year of inflation adjustment for the total economic damage, if applicable; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
             - "Total_Damage_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total economic damage. The output should only include "Info_Box" or the header name."
@@ -1079,7 +1079,7 @@ V_3: dict = {
                  Do not sum the economic damage in specific locations from the country to present the total economic damage for this level information.
                  Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion').
                  If the information is missing or if no total economic damage in this level is mentioned, assign 'NULL'."
-              - "Num_Units": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Unit": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted": "Indicate 'Yes' if the total economic damage amount has been adjusted for inflation; otherwise "No", and if Total_Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted_Year": "The year of inflation adjustment for the total economic damage, if applicable; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Annotation": "Cite the header name from the article provided where you find the information about the total economic damage in this level. The output should only include the header name."
@@ -1092,7 +1092,7 @@ V_3: dict = {
               - "End_Date":"The end date when the economic damage occurred, if mentioned."
               - "Num": "The amount of economic damage in the specific location/locations related to the {Event_Name}.
                  Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion'). If the information is missing, assign 'NULL'."
-              - "Num_Units": "The currency of the economic damage, like USD, EUR. If Economic_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Unit": "The currency of the economic damage, like USD, EUR. If Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted": "Indicate 'Yes' if the economic damage amount has been adjusted for inflation; otherwise "No", If Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted_Year": "The year of inflation adjustment for the economic damage, if applicable; If Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Annotation": "Cite the header name from the article provided where you find the information about the economic damage in this location. The output should only include the header name."
@@ -1187,7 +1187,7 @@ V_4_impact: dict = {
           Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., "hundreds of, "few houses", "several homes").
           Do not sum the number of damaged buildings in the article to present the total number of damaged buildings,
           and if no total number of damaged buildings explicitly mentioned or the information is missing, assign 'NULL'."
-      - "Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total number of damaged buildings. The output should only include "Info_Box" or the header name."
+      - "Total_Buildings_Damaged_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total number of damaged buildings. The output should only include "Info_Box" or the header name."
         }}
       the second is the total number of damaged buildings in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
       - "Instance_Per_Administrative_Areas_Buildings_Damaged":[{{
@@ -1224,7 +1224,7 @@ V_4_impact: dict = {
       - "Total_Deaths": "The total number of people who died in the {Event_Name}.
          Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
          Do not sum the number of death in the article to present the total number of death, and if no total number of death explicitly mentioned or the information is missing, assign 'NULL'."
-      - "Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total death. The output should only include "Info_Box" or the header name."
+      - "Total_Deaths_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total death. The output should only include "Info_Box" or the header name."
       }}
       the second is the total number of deaths in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
       - "Instance_Per_Administrative_Areas_Deaths":[{{
@@ -1373,7 +1373,7 @@ V_4_impact: dict = {
                Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion', "minimal").
                Do not sum the number of insured damage in the article to present the total number of insured damage,
                and if no total number of insured damage explicitly mentioned or the information is missing, assign 'NULL'."
-            - "Total_Insured_Damage_Units": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Insured_Damage_Unit": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
             - "Total_Insured_Damage_Inflation_Adjusted": "Indicate 'Yes' if the total insured damage amount has been adjusted for inflation; otherwise "No", If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
             - "Total_Insured_Damage_Inflation_Adjusted_Year": "The year of inflation adjustment for the total insured damage, if applicable; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
             - "Total_Insured_Damage_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total insured damage. The output should only include "Info_Box" or the header name."
@@ -1387,7 +1387,7 @@ V_4_impact: dict = {
                  Do not sum the insured damage in specific locations from the country to present the total insured damage for this level information.
                  Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion').
                  If the information is missing or if no total insured damage in this level is mentioned, assign 'NULL'."
-              - "Num_Units": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Unit": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted": "Indicate 'Yes' if the total insured damage amount has been adjusted for inflation; otherwise "No", and if Total_Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted_Year": "The year of inflation adjustment for the total insured damage, if applicable; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Annotation": "Cite the header name from the article provided where you find the information about the total insured damage in this level. The output should only include the header name."
@@ -1402,7 +1402,7 @@ V_4_impact: dict = {
               - "End_Date":"The end date when the insured damage occurred, if mentioned."
               - "Num": "The amount of insured damage in the specific location/locations related to the {Event_Name} and make sure the information extracted for this containing the keyword "insured" or "insurance".
                  Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion'). If the information is missing, assign 'NULL'."
-              - "Num_Units": "The currency of the insured damage, like USD, EUR. If Insured_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Unit": "The currency of the insured damage, like USD, EUR. If Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted": "Indicate 'Yes' if the insured damage amount has been adjusted for inflation; otherwise "No", If Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted_Year": "The year of inflation adjustment for the insured damage, if applicable; If Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Annotation": "Cite the header name from the article provided where you find the information about the insured damage in this location. The output should only include the header name."
@@ -1422,7 +1422,7 @@ V_4_impact: dict = {
                Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion', "minimal").
                Do not sum the number of economic damage in the article to present the total number of economic damage,
                and if no total number of economic damage explicitly mentioned or the information is missing, assign 'NULL'."
-            - "Total_Damage_Units": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Damage_Unit": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
             - "Total_Damage_Inflation_Adjusted": "Indicate 'Yes' if the total economic damage amount has been adjusted for inflation; otherwise "No", If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
             - "Total_Damage_Inflation_Adjusted_Year": "The year of inflation adjustment for the total economic damage, if applicable; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
             - "Total_Damage_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total economic damage. The output should only include "Info_Box" or the header name."
@@ -1436,7 +1436,7 @@ V_4_impact: dict = {
                  Do not sum the economic damage in specific locations from the country to present the total economic damage for this level information.
                  Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion').
                  If the information is missing or if no total economic damage in this level is mentioned, assign 'NULL'."
-              - "Num_Units": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Unit": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted": "Indicate 'Yes' if the total economic damage amount has been adjusted for inflation; otherwise "No", and if Total_Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted_Year": "The year of inflation adjustment for the total economic damage, if applicable; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Annotation": "Cite the header name from the article provided where you find the information about the total economic damage in this level. The output should only include the header name."
@@ -1451,7 +1451,7 @@ V_4_impact: dict = {
               - "End_Date":"The end date when the economic damage occurred, if mentioned."
               - "Num": "The amount of economic damage in the specific location/locations related to the {Event_Name}.
                  Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion'). If the information is missing, assign 'NULL'."
-              - "Num_Units": "The currency of the economic damage, like USD, EUR. If Economic_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Unit": "The currency of the economic damage, like USD, EUR. If Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted": "Indicate 'Yes' if the economic damage amount has been adjusted for inflation; otherwise "No", If Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted_Year": "The year of inflation adjustment for the economic damage, if applicable; If Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Annotation": "Cite the header name from the article provided where you find the information about the economic damage in this location. The output should only include the header name."
@@ -1517,7 +1517,7 @@ V_5: dict = {
           Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., "hundreds of, "few houses", "several homes").
           Do not sum the number of damaged buildings in the article to present the total number of damaged buildings,
           and if no total number of damaged buildings explicitly mentioned or the information is missing, assign 'NULL'."
-      - "Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total number of damaged buildings. The output should only include "Info_Box" or the header name."
+      - "Total_Buildings_Damaged_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total number of damaged buildings. The output should only include "Info_Box" or the header name."
         }} Only Give Json output, no extra explanation needed.""",
         """Based on the provided article {Info_Box} {Whole_Text},
       extract the number of damaged buildings associated with the {Event_Name},
@@ -1557,7 +1557,7 @@ V_5: dict = {
       - "Total_Deaths": "The total number of people who died in the {Event_Name}.
          Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
          Do not sum the number of death in the article to present the total number of death, and if no total number of death explicitly mentioned or the information is missing, assign 'NULL'."
-      - "Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total death. The output should only include "Info_Box" or the header name."
+      - "Total_Deaths_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total death. The output should only include "Info_Box" or the header name."
       }} Only Give Json output, no extra explanation needed.""",
         """Based on information box {Info_Box} and header-content pair article {Whole_Text}, extract the number of deaths associated with the {Event_Name},
       along with supporting annotations from the article. The information is the total number of deaths in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
@@ -1710,7 +1710,7 @@ V_5: dict = {
                Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion', "minimal").
                Do not sum the number of insured damage in the article to present the total number of insured damage,
                and if no total number of insured damage explicitly mentioned or the information is missing, assign 'NULL'."
-            - "Total_Insured_Damage_Units": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Insured_Damage_Unit": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
             - "Total_Insured_Damage_Inflation_Adjusted": "Indicate 'Yes' if the total insured damage amount has been adjusted for inflation; otherwise "No", If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
             - "Total_Insured_Damage_Inflation_Adjusted_Year": "The year of inflation adjustment for the total insured damage, if applicable; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
             - "Total_Insured_Damage_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total insured damage. The output should only include "Info_Box" or the header name."
@@ -1727,7 +1727,7 @@ V_5: dict = {
                  Do not sum the insured damage in specific locations from the country to present the total insured damage for this level information.
                  Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion').
                  If the information is missing or if no total insured damage in this level is mentioned, assign 'NULL'."
-              - "Num_Units": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Unit": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted": "Indicate 'Yes' if the total insured damage amount has been adjusted for inflation; otherwise "No", and if Total_Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted_Year": "The year of inflation adjustment for the total insured damage, if applicable; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Annotation": "Cite the header name from the article provided where you find the information about the total insured damage in this level. The output should only include the header name."
@@ -1742,7 +1742,7 @@ V_5: dict = {
               - "End_Date":"The end date when the insured damage occurred, if mentioned."
               - "Num": "The amount of insured damage in the specific location/locations related to the {Event_Name} and make sure the information extracted for this containing the keyword "insured" or "insurance".
                  Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion'). If the information is missing, assign 'NULL'."
-              - "Num_Units": "The currency of the insured damage, like USD, EUR. If Insured_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Unit": "The currency of the insured damage, like USD, EUR. If Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted": "Indicate 'Yes' if the insured damage amount has been adjusted for inflation; otherwise "No", If Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted_Year": "The year of inflation adjustment for the insured damage, if applicable; If Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Annotation": "Cite the header name from the article provided where you find the information about the insured damage in this location. The output should only include the header name."
@@ -1762,7 +1762,7 @@ V_5: dict = {
                Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion', "minimal").
                Do not sum the number of economic damage in the article to present the total number of economic damage,
                and if no total number of economic damage explicitly mentioned or the information is missing, assign 'NULL'."
-            - "Total_Damage_Units": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Damage_Unit": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
             - "Total_Damage_Inflation_Adjusted": "Indicate 'Yes' if the total economic damage amount has been adjusted for inflation; otherwise "No", If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
             - "Total_Damage_Inflation_Adjusted_Year": "The year of inflation adjustment for the total economic damage, if applicable; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
             - "Total_Damage_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total economic damage. The output should only include "Info_Box" or the header name."
@@ -1779,7 +1779,7 @@ V_5: dict = {
                  Do not sum the economic damage in specific locations from the country to present the total economic damage for this level information.
                  Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion').
                  If the information is missing or if no total economic damage in this level is mentioned, assign 'NULL'."
-              - "Num_Units": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Unit": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted": "Indicate 'Yes' if the total economic damage amount has been adjusted for inflation; otherwise "No", and if Total_Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted_Year": "The year of inflation adjustment for the total economic damage, if applicable; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Annotation": "Cite the header name from the article provided where you find the information about the total economic damage in this level. The output should only include the header name."
@@ -1794,7 +1794,7 @@ V_5: dict = {
               - "End_Date":"The end date when the economic damage occurred, if mentioned."
               - "Num": "The amount of economic damage in the specific location/locations related to the {Event_Name}.
                  Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion'). If the information is missing, assign 'NULL'."
-              - "Num_Units": "The currency of the economic damage, like USD, EUR. If Economic_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Unit": "The currency of the economic damage, like USD, EUR. If Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted": "Indicate 'Yes' if the economic damage amount has been adjusted for inflation; otherwise "No", If Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted_Year": "The year of inflation adjustment for the economic damage, if applicable; If Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Annotation": "Cite the header name from the article provided where you find the information about the economic damage in this location. The output should only include the header name."

@@ -103,10 +103,10 @@ if __name__ == "__main__":
         for batch in batches:
             des = batch.metadata
             # only return the result with the same file name and the defined experiment description in the metadata description
-            if str(args.filename) and str(args.description) in des:
+            if str(args.filename) and str(args.description) in des.get("description"):
                 batch_id = batch.id
                 output_file_id = batch.output_file_id
-                # Retrieve the batch details (if needed)
+                # Retrieve the batch details
                 client.batches.retrieve(batch_id)
                 # Retrieve the file content associated with the output_file_id
                 file_response = client.files.content(output_file_id)
@@ -127,8 +127,8 @@ if __name__ == "__main__":
                             # If a JSONDecodeError occurs, log the error in the df
                             df["Json_Error"] = str(e)
                     # Append the dictionary to the response list
-            response.append(df)
+        response.append(df)
 
-    out_file_path = f"{args.output_dir}/{args.filename.replace('.json', '')}_rawoutput.json"
+    out_file_path = f"{args.output_dir}/{args.filename.replace('.json', '')}_{args.description}_rawoutput.json"
     with open(out_file_path, "w") as json_file:
         json.dump(response, json_file, indent=4)

@@ -7,8 +7,10 @@ from pathlib import Path
 import openai
 from dotenv import load_dotenv
 
+from Database.Prompts import prompts_V3_format as target_prompts_format
+
 # the prompt list need to use the same variable names in our schema, and each key contains 1+ prompts
-from Database.Prompts.prompts import V_5 as target_prompts
+from Database.Prompts.prompts import V_3 as target_prompts
 from Database.scr.normalize_utils import Logging
 
 if __name__ == "__main__":
@@ -47,6 +49,15 @@ if __name__ == "__main__":
         help="The model version applied in the experiment, like gpt-4o-mini. ",
         type=str,
     )
+    parser.add_argument(
+        "-t",
+        "--max_tokens",
+        dest="max_tokens",
+        default=4096,  # This default model supports at most 4096 completion tokens
+        help="The max tokens of the model selected",
+        type=int,
+    )
+
     parser.add_argument(
         "-e",
         "--api_env",
@@ -87,14 +98,14 @@ if __name__ == "__main__":
         # Step 2: Load the JSON data into a Python dictionary
         raw_text = json.load(file)
 
-    # define the gpt setting
-    def batch_gpt_basic(prompt, event_id):
+    # define the gpt setting for "gpt-4o-2024-05-13", because the setting in the "gpt-4o-2024-08-06" is different, we divide two functions to run them
+    def batch_gpt_basic(prompt, event_id, response_format):
         df = {
             "custom_id": event_id,
             "method": "POST",
             "url": "/v1/chat/completions",
             "body": {
-                "response_format": {"type": "json_object"},
+                "response_format": response_format,
                 "model": args.model_name,
                 "messages": [
                     {
@@ -104,7 +115,7 @@ if __name__ == "__main__":
                     {"role": "user", "content": prompt},
                 ],
                 "temperature": 0,  # randomness
-                "max_tokens": 4096,
+                "max_tokens": args.max_tokens,
                 "n": 1,
                 "top_p": 1,  # default
                 "stop": None,
@@ -113,13 +124,13 @@ if __name__ == "__main__":
         return df
 
     # the system role is differ from the basic
-    def batch_gpt_impact(prompt, event_id):
+    def batch_gpt_impact(prompt, event_id, response_format):
         df = {
             "custom_id": event_id,
             "method": "POST",
             "url": "/v1/chat/completions",
             "body": {
-                "response_format": {"type": "json_object"},
+                "response_format": response_format,
                 "model": args.model_name,
                 "messages": [
                     {
@@ -129,7 +140,7 @@ if __name__ == "__main__":
                     {"role": "user", "content": prompt},
                 ],
                 "temperature": 0,  # randomness
-                "max_tokens": 4096,
+                "max_tokens": args.max_tokens,
                 "n": 1,
                 "top_p": 1,  # default
                 "stop": None,
@@ -153,12 +164,16 @@ if __name__ == "__main__":
         "displaced",
         "affected",
         "damage",
-        "insured_Damage",
+        "insured_damage",
     ]
 
     # Define the file path for the JSONL file
-    jsonl_file_path_basic = f"{args.batch_dir}/{args.filename.replace('.json', '')}_{args.description}_basic.jsonl"
-    jsonl_file_path_impact = f"{args.batch_dir}/{args.filename.replace('.json', '')}_{args.description}_impact.jsonl"
+    jsonl_file_path_basic = (
+        f"{args.batch_dir}/{args.filename.replace('.json', '')}_{args.description}_{args.model_name}_basic.jsonl"
+    )
+    jsonl_file_path_impact = (
+        f"{args.batch_dir}/{args.filename.replace('.json', '')}_{args.description}_{args.model_name}_impact.jsonl"
+    )
 
     def generate_batch_data(raw_text, target_prompts, prompt_basic_list, prompt_impact_list):
         """
@@ -211,8 +226,14 @@ if __name__ == "__main__":
                     for idx, prompt_template in enumerate(prompt_list_for_key, start=1):
                         event_id = f"{event_id_base}_{key}_{idx}"  # unique event id with key and index
                         prompt = prompt_template.format(Info_Box=info_box, Whole_Text=whole_text, Event_Name=event_name)
-                        line = batch_function(prompt, event_id)  # define the line of API request
-                        data.append(line)
+                        if args.model_name == "gpt-4o-2024-08-06":
+                            response_format = getattr(target_prompts_format, key, None)
+                            line = batch_function(prompt, event_id, response_format)  # define the line of API request
+                            data.append(line)
+                        else:
+                            response_format = {"type": "json_object"}
+                            line = batch_function(prompt, event_id, response_format)  # define the line of API request
+                            data.append(line)
 
         return data
 
