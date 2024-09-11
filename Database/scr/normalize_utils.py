@@ -356,8 +356,6 @@ class NormalizeJsonOutput:
                     ):
                         for _k in entry[k]:
                             output[_k] = entry[k][_k]
-                else:
-                    output[k] = entry[k]
 
                 if k in incorrect_type_keys and isinstance(entry[k], str):
                     output[k] = [entry[k]]
@@ -370,6 +368,8 @@ class NormalizeJsonOutput:
                     for item in entry[k]:
                         if isinstance(item, dict) and isinstance(item.get("Administrative_Areas"), str):
                             item["Administrative_Areas"] = [item.get("Administrative_Areas")]
+                    output[k] = entry[k]
+                else:
                     output[k] = entry[k]
 
             output_json.append(output)
