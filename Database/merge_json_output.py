@@ -1,7 +1,8 @@
 import argparse
 import pathlib
 
-from Database.scr.normalize_utils import Logging, NormalizeJsonOutput
+from Database.scr.log_utils import Logging
+from Database.scr.normalize_utils import NormalizeJsonOutput
 
 if __name__ == "__main__":
     logger = Logging.get_logger("merge-mixtral-or-mistral-output")

@@ -7,7 +7,7 @@ from pathlib import Path
 import openai
 from dotenv import load_dotenv
 
-from Database.scr.normalize_utils import Logging
+from Database.scr.log_utils import Logging
 
 if __name__ == "__main__":
     logger = Logging.get_logger("get results from batch processing")

@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 
 # the prompt list need to use the same variable names in our schema, and each key contains 1+ prompts
 from Database.Prompts.prompts import V_3 as target_prompts
-from Database.scr.normalize_utils import Logging
+from Database.scr.log_utils import Logging
 
 if __name__ == "__main__":
     logger = Logging.get_logger("run prompts")

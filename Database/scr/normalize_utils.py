@@ -1,6 +1,5 @@
 import ast
 import json
-import logging
 import os
 import re
 from typing import Tuple, Union
@@ -12,20 +11,8 @@ from dateparser.date import DateDataParser
 from dateparser.search import search_dates
 from spacy import language as spacy_language
 
-
-class Logging:
-    @staticmethod
-    def get_logger(name: str, level: str = logging.INFO) -> logging.Logger:
-        """
-        A function that handles logging in all database src functions.
-        Change the level to logging.DEBUG when debugging.
-        """
-        logging.basicConfig(
-            format="%(name)s: %(asctime)s %(levelname)-8s %(message)s",
-            level=level,
-            datefmt="%Y-%m-%d %H:%M:%S",
-        )
-        return logging.getLogger(name)
+from .log_utils import Logging
+from .normalize_numbers import NormalizeNumber
 
 
 class NormalizeUtils:
