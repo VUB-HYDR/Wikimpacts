@@ -345,30 +345,37 @@ class NormalizeJsonOutput:
         for entry in raw_sys_output:
             output = {}
             for k in entry.keys():
-                if k.lower() in target_keys and isinstance(entry[k], dict):
-                    if any(
-                        [
-                            x in [y.lower() for y in entry[k].keys()]
-                            for x in ["start_date", "end_date", "time_with_annotation"]
-                        ]
-                    ) or any(
-                        [x in [y.lower() for y in entry[k].keys()] for x in ["location", "location_with_annotation"]]
-                    ):
-                        for _k in entry[k]:
-                            output[_k] = entry[k][_k]
+                if k.lower() in target_keys:
+                    if isinstance(entry[k], dict):
+                        if any(
+                            [
+                                x in [y.lower() for y in entry[k].keys()]
+                                for x in ["start_date", "end_date", "time_with_annotation"]
+                            ]
+                        ) or any(
+                            [
+                                x in [y.lower() for y in entry[k].keys()]
+                                for x in ["location", "location_with_annotation"]
+                            ]
+                        ):
+                            for _k in entry[k]:
+                                output[_k] = entry[k][_k]
 
-                if k in incorrect_type_keys and isinstance(entry[k], str):
-                    output[k] = [entry[k]]
-                if "Specific_Instance_Per_Administrative_Area" in k and isinstance(entry[k], list):
-                    for item in entry[k]:
-                        if isinstance(item, dict) and isinstance(item.get("Locations"), str):
-                            item["Locations"] = [item.get("Locations")]
-                    output[k] = entry[k]
-                if "Instance_Per_Administrative_Areas" in k and isinstance(entry[k], list):
-                    for item in entry[k]:
-                        if isinstance(item, dict) and isinstance(item.get("Administrative_Areas"), str):
-                            item["Administrative_Areas"] = [item.get("Administrative_Areas")]
-                    output[k] = entry[k]
+                if k in incorrect_type_keys:
+                    if isinstance(entry[k], str):
+                        output[k] = [entry[k]]
+                if "Specific_Instance_Per_Administrative_Area" in k:
+                    if isinstance(entry[k], list):
+                        for item in entry[k]:
+                            if isinstance(item, dict) and isinstance(item.get("Locations"), str):
+                                item["Locations"] = [item.get("Locations")]
+                        output[k] = entry[k]
+                if "Instance_Per_Administrative_Areas" in k:
+                    if isinstance(entry[k], list):
+                        for item in entry[k]:
+                            if isinstance(item, dict) and isinstance(item.get("Administrative_Areas"), str):
+                                item["Administrative_Areas"] = [item.get("Administrative_Areas")]
+                        output[k] = entry[k]
                 else:
                     output[k] = entry[k]
 
