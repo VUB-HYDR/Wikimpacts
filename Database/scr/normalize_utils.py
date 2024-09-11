@@ -1,6 +1,7 @@
 import ast
 import json
 import os
+import pathlib
 import re
 from typing import Tuple, Union
 
@@ -421,3 +422,24 @@ class NormalizeJsonOutput:
             json.dump(output_json, fp)
 
         self.logger.info(f"Stored output in {output_file_path}")
+
+class GeoJsonUtils:
+    def __init__(self):
+        self.logger = Logging.get_logger("normalize-utils-json", level="DEBUG")
+
+    @staticmethod
+    def uuid_json_filename(length: int = 12) -> str:
+        """Generates a long alpha-numerical UID"""
+        return shortuuid.ShortUUID().random(length=length)
+
+    def geojson_to_file(self, geojson_obj: str, output_dir: str = "tmp/geojson"):
+        pathlib.Path(output_dir).mkdir(parents=True, exist_ok=True)
+        filename = GeoJsonUtils.uuid_json_filename()
+        try:
+            geojson_obj = ast.literal_eval(geojson_obj)
+            with open(f"{output_dir}/{filename}.json", "w") as f:
+                json.dump(geojson_obj, f)
+        except BaseException as err:
+            self.logger.debug(f"Could not process GeoJson to file. Error: {err}")
+            return None
+        return filename

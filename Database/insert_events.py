@@ -1,4 +1,5 @@
 import argparse
+import ast
 import os
 import pathlib
 import sqlite3
@@ -6,13 +7,26 @@ import sqlite3
 import pandas as pd
 from tqdm import tqdm
 
-from Database.scr.normalize_utils import Logging
+tqdm.pandas()
+from Database.scr.normalize_utils import GeoJsonUtils, Logging
 
 if __name__ == "__main__":
     event_levels = {
-        "l1": "Total_Summary",
-        "l2": "Instance_Per_Administrative_Areas_",
-        "l3": "Specific_Instance_Per_Administrative_Area_",
+        "l1": {
+            "prefix": "Total_Summary",
+            "location_columns": {"Administrative_Areas_GeoJson": list},
+        },
+        "l2": {
+            "prefix": "Instance_Per_Administrative_Areas_",
+            "location_columns": {"Administrative_Areas_GeoJson": list},
+        },
+        "l3": {
+            "prefix": "Specific_Instance_Per_Administrative_Area_",
+            "location_columns": {
+                "Administrative_Area_GeoJson": str,
+                "Locations_GeoJson": list,
+            },
+        },
     }
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -63,8 +77,17 @@ if __name__ == "__main__":
         type=str,
     )
 
+    parser.add_argument(
+        "-gj",
+        "--dump_geojson_to_file",
+        dest="dump_geojson_to_file",
+        action="store_true",
+        help="Pass to replace geojson columns to filenames where the geojson object is stored.",
+        required=False,
+    )
+
     args = parser.parse_args()
-    logger = Logging.get_logger(f"insert {args.event_level} to {args.database_name}", level="INFO")
+    logger = Logging.get_logger(f"database-insertion", level="INFO")
 
     connection = sqlite3.connect(args.database_name)
     cursor = connection.cursor()
@@ -80,11 +103,34 @@ if __name__ == "__main__":
         logger.info(f"Inserting {main_level}...\n")
         for f in files:
             data = pd.read_parquet(f"{args.file_dir}/{f}", engine="fastparquet")
+            # geojson in l1 is always of type list
+            if args.dump_geojson_to_file:
+                geojson_utils = GeoJsonUtils()
+                logger.info(f"Popping GeoJson files out of {args.database_name} and onto disk")
+                for col in event_levels[args.event_level]["location_columns"].keys():
+                    logger.info(f"Processing GeoJson column {col} in {args.event_level}")
+                    data[col] = data[col].progress_apply(
+                        lambda x: (
+                            [
+                                geojson_utils.geojson_to_file(gj, output_dir=f"tmp/geojson/{args.event_level}")
+                                for gj in ast.literal_eval(x)
+                            ]
+                            if isinstance(x, str)
+                            else None
+                        )
+                    )
+                    data[col] = data[col].astype(str)
+
             # change if_exists to "append" to avoid overwriting the database
             # choose "replace" to overwrite the database with a fresh copy of the data
         for i in tqdm(range(len(data))):
             try:
-                data.iloc[i : i + 1].to_sql(name=args.target_table, con=connection, if_exists=args.method, index=False)
+                data.iloc[i : i + 1].to_sql(
+                    name=args.target_table,
+                    con=connection,
+                    if_exists=args.method,
+                    index=False,
+                )
             except sqlite3.IntegrityError as err:
                 logger.debug(
                     f"""Could not insert event for level {args.event_level}. Error {err}.
@@ -107,12 +153,48 @@ if __name__ == "__main__":
 
         for f in files:
             data = pd.read_parquet(f"{args.file_dir}/{f}", engine="fastparquet")
+
+            # geojson in l2 and l3 may be a string or list!
+            logger.info(f"Popping GeoJson files out of {args.database_name} and onto disk")
+            geojson_utils = GeoJsonUtils()
+            if args.dump_geojson_to_file:
+                for col, _type in event_levels[args.event_level]["location_columns"].items():
+                    logger.info(f"Processing GeoJson column {col} in {args.event_level}; File: {f}")
+                    print()
+                    print(data.columns)
+                    print(f)
+                    print()
+                    if _type == list:
+                        data[col] = data[col].progress_apply(
+                            lambda x: (
+                                [
+                                    geojson_utils.geojson_to_file(gj, output_dir=f"tmp/geojson/{args.event_level}")
+                                    for gj in ast.literal_eval(x)
+                                ]
+                                if isinstance(x, str)
+                                else None
+                            )
+                        )
+                        data[col] = data[col].astype(str)
+                    elif _type == str:
+                        data[col] = data[col].progress_apply(
+                            lambda gj: (
+                                geojson_utils.geojson_to_file(gj, output_dir=f"tmp/geojson/{args.event_level}")
+                                if isinstance(gj, str)
+                                else None
+                            )
+                        )
+                        data[col] = data[col].astype(str)
+
             # change if_exists to "append" to avoid overwriting the database
             # choose "replace" to overwrite the database with a fresh copy of the data
             for i in tqdm(range(len(data))):
                 try:
                     data.iloc[i : i + 1].to_sql(
-                        name=args.target_table, con=connection, if_exists=args.method, index=False
+                        name=args.target_table,
+                        con=connection,
+                        if_exists=args.method,
+                        index=False,
                     )
                 except sqlite3.IntegrityError as err:
                     logger.debug(

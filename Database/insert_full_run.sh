@@ -47,8 +47,7 @@
 
 levels=("l1" "l2" "l3")
 inputFilesDir=${1}
-outputDir=${2}
-dbName="impact.v1.db"
+dbName=${2}
 
 echo Input: ${inputFilesDir}
 echo Inserting into ${dbName}
@@ -56,7 +55,7 @@ echo Inserting into ${dbName}
 for lvl in "${levels[@]}"; do
     if [[ ${lvl} == "l1" ]]
     then
-        poetry run python3 Database/insert_events.py -m append -f ${inputFilesDir}/${lvl} -db ${dbName} -lvl l1
+        poetry run python3 Database/insert_events.py -m append -f ${inputFilesDir}/${lvl} -db ${dbName} -lvl ${lvl} -gj
         echo Inserting ${lvl}
 
     else
@@ -65,7 +64,7 @@ for lvl in "${levels[@]}"; do
             echo File Path ${filePath}
             tblName=$(basename $filePath)
             echo Table Name ${tblName}
-            poetry run python3 Database/insert_events.py -m "append" -f ${filePath}  -db ${dbName} -lvl l2 -t ${tblName}
+            poetry run python3 Database/insert_events.py -m "append" -f ${filePath}  -db ${dbName} -lvl ${lvl} -t ${tblName} -gj
         done
     fi
 done
