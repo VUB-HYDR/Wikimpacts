@@ -34,6 +34,7 @@ if __name__ == "__main__":
     )
 
     args = parser.parse_args()
+    logger.info(f"Correcting: {args.normalize}")
 
     directory = args.output_file_path.split("/")
     if len(directory) > 1:
