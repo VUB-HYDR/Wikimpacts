@@ -1,7 +1,7 @@
 import argparse
 import pathlib
 
-from scr.normalize_utils import Logging, NormalizeJsonOutput
+from Database.scr.normalize_utils import Logging, NormalizeJsonOutput
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
