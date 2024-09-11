@@ -326,7 +326,7 @@ class NormalizeJsonOutput:
 
     def normalize_column_names(self, json_file_path: str, output_file_path: str) -> None:
         """Normalizes column names when an LLM hallucinates alternative column names for a category.
-           Solve the inconsistency of data type of some categories.
+           Solves the inconsistency of data type of some categories.
 
         Handles cases:
             - "time_information" nesting: ["start_date", "end_date", "time_with_annotation"]
@@ -340,7 +340,7 @@ class NormalizeJsonOutput:
         raw_sys_output = json.load(open(json_file_path))
 
         target_keys = ["time_information", "location_information"]
-        target_variables = ["Administrative_Areas"]
+        incorrect_type_keys = ["Administrative_Areas"]
         output_json = []
         for entry in raw_sys_output:
             output = {}
@@ -359,20 +359,18 @@ class NormalizeJsonOutput:
                 else:
                     output[k] = entry[k]
 
-                if k in target_variables and isinstance(entry[k], str):
+                if k in incorrect_type_keys and isinstance(entry[k], str):
                     output[k] = [entry[k]]
                 if "Specific_Instance_Per_Administrative_Area" in k and isinstance(entry[k], list):
                     for item in entry[k]:
                         if isinstance(item, dict) and isinstance(item.get("Locations"), str):
-                            item["Locations"] = [item.get("Locations")]  # Modify the actual dictionary entry
-                    output[k] = entry[k]  # Store the updated entry in the output
+                            item["Locations"] = [item.get("Locations")]
+                    output[k] = entry[k]
                 if "Instance_Per_Administrative_Areas" in k and isinstance(entry[k], list):
                     for item in entry[k]:
                         if isinstance(item, dict) and isinstance(item.get("Administrative_Areas"), str):
-                            item["Administrative_Areas"] = [
-                                item.get("Administrative_Areas")
-                            ]  # Modify the actual dictionary entry
-                    output[k] = entry[k]  # Store the updated entry in the output
+                            item["Administrative_Areas"] = [item.get("Administrative_Areas")]
+                    output[k] = entry[k]
 
             output_json.append(output)
 
