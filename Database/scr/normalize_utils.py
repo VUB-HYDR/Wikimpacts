@@ -339,7 +339,7 @@ class NormalizeJsonOutput:
         # output from the llm system that needs fixing
         raw_sys_output = json.load(open(json_file_path))
 
-        target_keys = ["time_information", "location_information"]
+        nested_keys = ["time_information", "location_information"]
         incorrect_type_keys = ["Administrative_Areas"]
         output_json = []
         for entry in raw_sys_output:
@@ -385,3 +385,6 @@ class NormalizeJsonOutput:
             json.dump(output_json, fp)
 
         self.logger.info(f"Stored output in {output_file_path}")
+
+    def normalize_lists_of_num(self, json_file_path: str, output_file_path: str) -> None:
+        pass
