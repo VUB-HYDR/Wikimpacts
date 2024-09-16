@@ -11,6 +11,7 @@ import shortuuid
 from dateparser.date import DateDataParser
 from dateparser.search import search_dates
 from spacy import language as spacy_language
+from unidecode import unidecode
 
 from .log_utils import Logging
 from .normalize_numbers import NormalizeNumber
@@ -424,22 +425,102 @@ class NormalizeJsonOutput:
         self.logger.info(f"Stored output in {output_file_path}")
 
 class GeoJsonUtils:
-    def __init__(self):
+    def __init__(self, nid_path: str = "/tmp/geojson") -> None:
         self.logger = Logging.get_logger("normalize-utils-json", level="DEBUG")
+        self.logger.info(f"Loading nids from {nid_path}")
+        self.nid_path = f"{nid_path}/geojson"
+        self.non_english_nids_path = f"{nid_path}/non-english-locations.csv"
+        self.non_english_nids_columns = ["location_name", "nid"]
+        pathlib.Path(self.nid_path).mkdir(parents=True, exist_ok=True)
+        self.nid_list = self.update_nid_list()
+        try:
+            self.non_english_nids_df = pd.read_csv(
+                self.non_english_nids_path,
+                sep=",",
+            )
+        except BaseException as err:
+            self.non_english_nids_df = pd.DataFrame(columns=self.non_english_nids_columns)
+            self.logger.debug(f"Could not load nids csv. Error: {err}")
 
-    @staticmethod
-    def uuid_json_filename(length: int = 12) -> str:
-        """Generates a long alpha-numerical UID"""
+    def update_nid_list(self) -> None:
+        self.nid_list = os.listdir(self.nid_path)
+        self.logger.debug(f"Found {len(self.nid_list)} nids in {self.nid_path}")
+        if not self.nid_list:
+            self.logger.warning(
+                f"Could not load nids! Directory may be empty. Using the empty directory {self.nid_path}"
+            )
+        self.nid_list = []
+
+    def random_nid(self, length: int = 5) -> str:
+        """Generates a short lowercase UID"""
         return shortuuid.ShortUUID().random(length=length)
 
-    def geojson_to_file(self, geojson_obj: str, output_dir: str = "tmp/geojson"):
-        pathlib.Path(output_dir).mkdir(parents=True, exist_ok=True)
-        filename = GeoJsonUtils.uuid_json_filename()
+    def generate_nid(self, text: str) -> tuple[str, None]:
+        nid = None
+        try:
+            assert text
+            text = unidecode(text)
+            text.encode(encoding="utf-8").decode("ascii")
+            nid = text
+        except AssertionError as err:
+            self.logger.error(f"`{text}` not valid: {type(text)}. Error: {err}")
+        except UnicodeDecodeError as err:
+            self.logger.error(f"`{text}` could not be decoded to ascii. Error: {err}")
+
+        if not nid:
+            if text in self.non_english_nids_df["location_name"]:
+                nid = self.non_english_nids_df[self.non_english_nids_df["location_name"] == text].tolist()[-1]
+            else:
+                nid = self.random_nid(length=12)
+                self.non_english_nids_df = pd.concat(
+                    [
+                        self.non_english_nids_df,
+                        pd.DataFrame([[nid, text]], columns=self.non_english_nids_columns),
+                    ],
+                    ignore_index=True,
+                )
+        return re.sub("\W|^(?=\d)", "-", nid.lower())
+
+    def store_non_english_nids(self) -> None:
+        self.logger.info(f"Storing non english location names and their generated nids to {self.non_english_nids_path}")
+        self.non_english_nids_df.to_csv(self.non_english_nids_path, sep=",", index=False, mode="w")
+
+    def check_duplicate(self, nid: str, obj: json) -> tuple[str, bool]:
+        nid_path = f"{self.nid_path}/{nid}"
+        self.update_nid_list()
+
+        if nid_path in self.nid_list or nid in self.non_english_nids_df["location_name"].tolist():
+            try:
+                assert obj == json.load(nid_path)
+                return nid, True
+            except AssertionError as err:
+                self.logger.error(f"Duplicate name but different content for {nid_path}")
+                self.logger.debug(f"Error: {err}")
+                alt_nid = self.generate_nid(f"{nid}-{self.random_nid(5)}" if nid else self.random_nid(length=12))
+                return alt_nid, False
+        return nid, False
+
+    def geojson_to_file(self, geojson_obj: str, area_name: str) -> str:
+        """Checks if a GeoJson object is stored by a specific nid. Handles three cases:
+        - If the nid and file content match, nothing is written to file.
+        - If the there is no record of the nid in self.nid_path, a new file is written.
+
+        # the last one would reveal problems with this approach, but gotta test first to see
+        - If the nid matches a file name but the content is different, create an extended nid name and store it.
+
+        Returns the nid used to store to file
+        """
+        if not area_name or not geojson_obj:
+            return None
+
+        nid = self.generate_nid(area_name)
         try:
             geojson_obj = ast.literal_eval(geojson_obj)
-            with open(f"{output_dir}/{filename}.json", "w") as f:
-                json.dump(geojson_obj, f)
+            nid, dup = self.check_duplicate(nid, geojson_obj)
+            if not dup:
+                with open(f"{self.nid_path}/{nid}.json", "w") as f:
+                    json.dump(geojson_obj, f)
         except BaseException as err:
             self.logger.debug(f"Could not process GeoJson to file. Error: {err}")
             return None
-        return filename
+        return nid

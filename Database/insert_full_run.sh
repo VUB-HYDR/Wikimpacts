@@ -48,6 +48,8 @@
 levels=("l1" "l2" "l3")
 inputFilesDir=${1}
 dbName=${2}
+nidPath=${3}
+errorPath=${4}
 
 echo Input: ${inputFilesDir}
 echo Inserting into ${dbName}
@@ -55,7 +57,7 @@ echo Inserting into ${dbName}
 for lvl in "${levels[@]}"; do
     if [[ ${lvl} == "l1" ]]
     then
-        poetry run python3 Database/insert_events.py -m append -f ${inputFilesDir}/${lvl} -db ${dbName} -lvl ${lvl} -gj
+        poetry run python3 Database/insert_events.py -m append -f ${inputFilesDir}/${lvl} -db ${dbName} -lvl ${lvl} -gj -nid ${nidPath}
         echo Inserting ${lvl}
 
     else
@@ -64,7 +66,10 @@ for lvl in "${levels[@]}"; do
             echo File Path ${filePath}
             tblName=$(basename $filePath)
             echo Table Name ${tblName}
-            poetry run python3 Database/insert_events.py -m "append" -f ${filePath}  -db ${dbName} -lvl ${lvl} -t ${tblName} -gj
+            poetry run python3 Database/insert_events.py -m "append" -f ${filePath}  -db ${dbName} -lvl ${lvl} -t ${tblName} -gj -nid ${nidPath}
         done
     fi
 done
+
+echo Inserting geojson to table GeoJson_Obj
+poetry run python3 Database/schema/populate_geojson_table.py -db ${dbName} -tbl Database/schema/geojson_tbl.sql -f ${nidPath}/geojson
