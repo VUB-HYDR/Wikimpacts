@@ -49,7 +49,6 @@ levels=("l1" "l2" "l3")
 inputFilesDir=${1}
 dbName=${2}
 nidPath=${3}
-errorPath=${4}
 
 echo Input: ${inputFilesDir}
 echo Inserting into ${dbName}
