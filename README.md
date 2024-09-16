@@ -266,7 +266,10 @@ To insert a large number of events in the database all at once (supports chunked
 To perform this on the existing dummy data:
 
 ```shell
-source Database/insert_full_run.sh Database/output/dummy impact.v1.db
+# format:
+# source Database/insert_full_run.sh Database/output/dummy SQL_DB PATH_TO_STORE_NIDs
+
+source Database/insert_full_run.sh Database/output/dummy impact.v1.db tmp/files
 ```
 
 ### Database-related
