@@ -4,9 +4,10 @@ import re
 
 import pandas as pd
 
+from Database.scr.log_utils import Logging
 from Database.scr.normalize_locations import NormalizeLocation
 from Database.scr.normalize_numbers import NormalizeNumber
-from Database.scr.normalize_utils import Logging, NormalizeUtils
+from Database.scr.normalize_utils import NormalizeUtils
 
 if __name__ == "__main__":
     logger = Logging.get_logger("parse_events")

@@ -1,6 +1,5 @@
 import ast
 import json
-import logging
 import os
 import re
 from typing import Tuple, Union
@@ -12,20 +11,8 @@ from dateparser.date import DateDataParser
 from dateparser.search import search_dates
 from spacy import language as spacy_language
 
-
-class Logging:
-    @staticmethod
-    def get_logger(name: str, level: str = logging.INFO) -> logging.Logger:
-        """
-        A function that handles logging in all database src functions.
-        Change the level to logging.DEBUG when debugging.
-        """
-        logging.basicConfig(
-            format="%(name)s: %(asctime)s %(levelname)-8s %(message)s",
-            level=level,
-            datefmt="%Y-%m-%d %H:%M:%S",
-        )
-        return logging.getLogger(name)
+from .log_utils import Logging
+from .normalize_numbers import NormalizeNumber
 
 
 class NormalizeUtils:
@@ -336,10 +323,9 @@ class NormalizeJsonOutput:
 
         """
 
-        # output from the llm system that needs fixing
         raw_sys_output = json.load(open(json_file_path))
 
-        target_keys = ["time_information", "location_information"]
+        nested_keys = ["time_information", "location_information"]
         incorrect_type_keys = ["Administrative_Areas"]
         output_json = []
         for entry in raw_sys_output:
@@ -381,6 +367,47 @@ class NormalizeJsonOutput:
 
             output_json.append(output)
 
+        with open(output_file_path, "w") as fp:
+            json.dump(output_json, fp)
+
+        self.logger.info(f"Stored output in {output_file_path}")
+
+    def normalize_lists_of_num(self, json_file_path: str, output_file_path: str, locale_config: str) -> None:
+        raw_sys_output = json.load(open(json_file_path))
+        output_json = []
+        norm_utils = NormalizeUtils()
+        nlp = norm_utils.load_spacy_model()
+        norm_num = NormalizeNumber(nlp, locale_config=locale_config)
+        for entry in raw_sys_output:
+            output = {}
+            target_keys = [x for x in entry.keys() if x.startswith("Specific_Instance_") or x.startswith("Instance_")]
+
+            for k in entry.keys():
+                if k in target_keys:
+                    for rec in range(len(entry[k])):
+                        records = []
+                        if "Num" in entry[k][rec]:
+                            if isinstance(entry[k][rec]["Num"], list):
+                                normalized = []
+                                for n in entry[k][rec]["Num"]:
+                                    _min, _max, _ = norm_num.extract_numbers(n)
+                                    if _min and _max:
+                                        normalized.append((_min, _max))
+                                nomralized_num = (
+                                    f"{sum([x[0] for x in normalized if isinstance(x[0], (int, float))])}-{sum([x[1] for x in normalized if isinstance(x[1], (int, float))])}"
+                                    if normalized
+                                    else "NULL"
+                                )
+                                entry[k][rec]["Num"] = nomralized_num
+                                records.append(entry[k][rec])
+
+                            elif isinstance(entry[k][rec]["Num"], str):
+                                records.append(entry[k][rec])
+                    output[k] = entry[k]
+                else:
+                    output[k] = entry[k]
+
+            output_json.append(output)
         with open(output_file_path, "w") as fp:
             json.dump(output_json, fp)
 

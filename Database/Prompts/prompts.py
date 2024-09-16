@@ -2,8 +2,12 @@
 # V_1 is the list of prompts used for L1-3 and the annotation is directly quoted from the article finalized in 20240610
 # V_2 is the list of prompts for L1-3 with annotation gives the header names, finalized in 20240715
 # V_3 is a version based on V2, but with freezed variable names as the schema we confirmed, 20240823
+# V_4 is the one with two prompts for each impact category, one prompt for L1/2 and one for L3
+# V_5 is the one with three prompts for each impact category
+
 V_0: dict = {
-    "deaths": """Based on the provided article, which includes the information
+    "deaths": [
+        """Based on the provided article, which includes the information
     box {Info_Box} and the full text {Whole_Text}, first extract
     and summarize the total number of deaths associated with
     {Event_Name}, along with supporting annotations from the article.
@@ -49,8 +53,10 @@ V_0: dict = {
     }}]
 
     Ensure to capture all instances of death mentioned in the
-    article, including direct and indirect causes. """,
-    "Main_Event": """ Based on the provided article {Info_Box} {Whole_Text},
+    article, including direct and indirect causes. """
+    ],
+    "Main_Event": [
+        """ Based on the provided article {Info_Box} {Whole_Text},
         please extract information about the main event {Event_Name},
         and assign the details as follows:
 
@@ -63,8 +69,10 @@ V_0: dict = {
         the original text that supports your findings on the Main_Event."
         please give the json format output of these two items above,
         and please make sure that your annotation text is explicitly
-        from the original text provided.""",
-    "Time": """   Based on the provided article {Info_Box} {Whole_Text},
+        from the original text provided."""
+    ],
+    "Time": [
+        """   Based on the provided article {Info_Box} {Whole_Text},
     identify the time infomation {Event_Name} described,
     and assign the appropriate details:
 
@@ -86,8 +94,10 @@ V_0: dict = {
 
     Please give the json format output of these three items above,
     and please make sure that your annotation text is explicitly
-    from the original text provided.""",
-    "Country": """  Based on the provided article {Info_Box} {Whole_Text},
+    from the original text provided."""
+    ],
+    "Country": [
+        """  Based on the provided article {Info_Box} {Whole_Text},
     identify all countries affected by {Event_Name},
     and assign the appropriate details:
 
@@ -102,8 +112,10 @@ V_0: dict = {
 
     Please give the json format output of these two items above,
     and please make sure that your annotation text is explicitly
-    from the original text provided.""",
-    "damage": """ Based on the provided article, which includes the information
+    from the original text provided."""
+    ],
+    "damage": [
+        """ Based on the provided article, which includes the information
     box {Info_Box} and the full text {Whole_Text} related to
     {Event_Name}, first extract and summarize detailed information
     about the total economic loss or damage caused by {Event_Name},
@@ -114,7 +126,7 @@ V_0: dict = {
     - "Total_Summary_Damage": {{
     - "Total_Damage": "Specify the economic loss or damage reported.
     If this information is not mentioned, assign 'NULL'."
-    - "Total_Damage_Units": "Indicate the currency of the reported damage
+    - "Total_Damage_Unit": "Indicate the currency of the reported damage
     (e.g., USD, EUR). If the currency is not specified, assign 'NULL'."
     - "Total_Damage_Inflation_Adjusted": "State 'Yes' if the reported
     damage amount has been adjusted for inflation; otherwise, indicate
@@ -141,7 +153,7 @@ V_0: dict = {
     - "Location_Damage": "The specific place within the country where the
     economic impact occurred, including towns, cities, or regions."
     - "Damage": "The amount of economic damage."
-    - "Damage_Units": "The currency of the economic damage, like USD, EUR.
+    - "Damage_Unit": "The currency of the economic damage, like USD, EUR.
     If not specified, assign 'NULL'."
     - "Damage_Inflation_Adjusted": "Indicate 'Yes' if the damage amount
     has been adjusted for inflation; otherwise, 'No'."
@@ -155,33 +167,43 @@ V_0: dict = {
 
     Ensure to capture all instances of economic loss or damage mentioned
     in the article, including direct and indirect causes, and organize
-    them in the JSON format output.""",
+    them in the JSON format output."""
+    ],
 }
 
 # V_1 is the list of prompts used for L1-3 and the annotation is directly quoted from the article finalized in 20240610
 V_1: dict = {
-    "main_event": """Based on the provided article {Info_Box} {Whole_Text}, please extract information about the main event {Event_Name} , and assign the details in JSON format as follows:
+    "main_event": [
+        """Based on the provided article {Info_Box} {Whole_Text}, please extract information about the main event {Event_Name} , and assign the details in JSON format as follows:
                 - "Main_Event": "identify the event category referring to "Flood; Extratropical Storm/Cyclone; Tropical Storm/Cyclone; Extreme Temperature;
                   Drought; Wildfire; Tornado". Only one category should be assigned."
                 - "Main_Event_Assessment_With_Annotation": "Include text from the original text that supports your findings on the Main_Event."
-                Please make sure that your annotation text is explicitly from the original text provided. Only Give Json output, no extra explanation needed.""",
-    "perils": """Based on the provided article {Info_Box} {Whole_Text}, please extract information about the perils {Event_Name} , and assign the details in JSON format as follows:
+                Please make sure that your annotation text is explicitly from the original text provided. Only Give Json output, no extra explanation needed."""
+    ],
+    "perils": [
+        """Based on the provided article {Info_Box} {Whole_Text}, please extract information about the perils {Event_Name} , and assign the details in JSON format as follows:
         - "Perils": "identify the perils referring to "Wind; Rainfall; Flood; Landfall; Landslide; Blizzard; Hail; Lightning; Thunderstorm; Heatwave; Cold Spell/Cold Snap; Drought; Wildfire".
         If more than one peril is detected from the text, separate them with "|". "
         - "Perils_Assessment_With_Annotation": "Include text from the original text that supports your findings on the perils. "
-         Ensure to capture all perils mentioned, and please make sure that your annotation text is explicitly from the original text provided. Only Give Json output, no extra explanation needed. """,
-    "location": """
+         Ensure to capture all perils mentioned, and please make sure that your annotation text is explicitly from the original text provided. Only Give Json output, no extra explanation needed. """
+    ],
+    "location": [
+        """
         Based on the provided article {Info_Box} {Whole_Text}, identify all locations affected by {Event_Name} and assign the appropriate details in JSON format as follows.
         - "Location": "All places mentioned in the text as being affected by {Event_Name} in a list like ["location1";"location2"]."
         - "Location_with_Annotation": "For each location listed, include a snippet from the article that supports why you consider it affected by  {Event_Name} . This annotation should help illustrate how you determined the location was impacted. This should directly quote the original text."
-         Ensure to capture all locations affected, and please make sure that your annotation text is explicitly from the original text provided. Only Give Json output, no extra explanation needed.""",
-    "time": """
+         Ensure to capture all locations affected, and please make sure that your annotation text is explicitly from the original text provided. Only Give Json output, no extra explanation needed."""
+    ],
+    "time": [
+        """
         Based on the provided article {Info_Box} {Whole_Text}, identify the time infomation {Event_Name} described, and assign the appropriate details in JSON format as follows..
         - "Start_Date": "The start date of the event. If the specific day or month is not known, include at least the year if it's available. If no time information is available, enter 'NULL'. If the exact date is not clear (e.g., "summer of 2021", "June 2020"), please retain the text as mentioned."
         - "End_Date": "The end date of the event. If the specific day or month is not known, include at least the year if it's available. If no time information is available, enter 'NULL'. If the exact date is not clear (e.g., "summer of 2021", "June 2020"), please retain the text as mentioned."
         - "Time_with_Annotation": "Include text from the original text that supports your findings on the start date and end date. This should directly quote the original text."
-         Please make sure that your annotation text is explicitly from the original text provided. Only Give Json output, no extra explanation needed.""",
-    "deaths": """Based on the provided article {Info_Box} {Whole_Text}, extract the number of deaths associated with the {Event_Name}, along with supporting annotations from the article. The death information can be splited into 3 parts,
+         Please make sure that your annotation text is explicitly from the original text provided. Only Give Json output, no extra explanation needed."""
+    ],
+    "deaths": [
+        """Based on the provided article {Info_Box} {Whole_Text}, extract the number of deaths associated with the {Event_Name}, along with supporting annotations from the article. The death information can be splited into 3 parts,
           the first is the total number of deaths caused by the {Event_Name}, and organize this information in JSON format as follows:
           - "Total_Summary_Death":{{
           - "Total_Deaths": "The total number of people who died in the {Event_Name}.
@@ -208,8 +230,10 @@ V_1: dict = {
              Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'thousands of,' '300-500 people', 'No death", "None", "None reported"). If the information is missing, assign 'NULL'."
           - "Death_with_annotation": "Excerpts from the article that support your findings on the location, time, number of deaths. This should directly quote the original text."
                 }}]
-          Ensure to capture all instances of death mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
-    "injuries": """Based on the provided article {Info_Box} {Whole_Text}, extract the number of non-fatal injuries associated with the {Event_Name}, along with supporting annotations from the article. The non-fatal injuries information can be splited into 3 parts,
+          Ensure to capture all instances of death mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """
+    ],
+    "injuries": [
+        """Based on the provided article {Info_Box} {Whole_Text}, extract the number of non-fatal injuries associated with the {Event_Name}, along with supporting annotations from the article. The non-fatal injuries information can be splited into 3 parts,
           the first is the total number of non-fatal injuries caused by the {Event_Name}, and organize this information in JSON format as follows:
           - "Total_Summary_Injury":{{
           - "Total_Injury": "The total number of people who got injured, hurt, wound, or hospitalized (excluding death) in the {Event_Name}.
@@ -236,8 +260,10 @@ V_1: dict = {
              Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'thousands of,' '300-500 people', 'No injuries", "None", "None reported"). If the information is missing, assign 'NULL'."
           - "Injury_with_annotation": "Excerpts from the article that support your findings on the location, time, number of non-fatal injuries. This should directly quote the original text."
                 }}]
-          Ensure to capture all instances of non-fatal injuries mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
-    "displaced": """Based on the provided article {Info_Box} {Whole_Text}, extract the number of displacement associated with the {Event_Name}, along with supporting annotations from the article. The displacement information can be splited into 3 parts,
+          Ensure to capture all instances of non-fatal injuries mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """
+    ],
+    "displaced": [
+        """Based on the provided article {Info_Box} {Whole_Text}, extract the number of displacement associated with the {Event_Name}, along with supporting annotations from the article. The displacement information can be splited into 3 parts,
           the first is the total number of displacement caused by the {Event_Name}, and organize this information in JSON format as follows:
           - "Total_Summary_Displacement":{{
           - "Total_Displacement": "The total number of people who were displaced, evacuated, transfered/moved to the shelter, relocated or fleed in the {Event_Name}.
@@ -264,8 +290,10 @@ V_1: dict = {
              Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'thousands of,' '300-500 people', 'No displacement", "None", "None reported"). If the information is missing, assign 'NULL'."
           - "Displacement_with_annotation": "Excerpts from the article that support your findings on the location, time, number of displacement. This should directly quote the original text."
                 }}]
-          Ensure to capture all instances of displacement mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
-    "homeless": """Based on the provided article {Info_Box} {Whole_Text}, extract the number of homelessness associated with the {Event_Name}, along with supporting annotations from the article. The homelessness information can be splited into 3 parts,
+          Ensure to capture all instances of displacement mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """
+    ],
+    "homeless": [
+        """Based on the provided article {Info_Box} {Whole_Text}, extract the number of homelessness associated with the {Event_Name}, along with supporting annotations from the article. The homelessness information can be splited into 3 parts,
           the first is the total number of homelessness caused by the {Event_Name}, and organize this information in JSON format as follows:
           - "Total_Summary_Homelessness":{{
           - "Total_Homelessness": "The total number of people who were homeless, lost their homes, experienced house damage, had their homes destroyed, are unhoused, without shelter, houseless, or shelterless in the {Event_Name}.
@@ -292,8 +320,10 @@ V_1: dict = {
              Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'thousands of,' '300-500 people', 'No homelessness", "None", "None reported"). If the information is missing, assign 'NULL'."
           - "Homelessness_with_annotation": "Excerpts from the article that support your findings on the location, time, number of homelessness. This should directly quote the original text."
                 }}]
-          Ensure to capture all instances of homelessness mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
-    "affected": """Based on the provided article {Info_Box} {Whole_Text}, extract the number of affected people associated with the {Event_Name}, along with supporting annotations from the article. The number of affected people information can be splited into 3 parts,
+          Ensure to capture all instances of homelessness mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """
+    ],
+    "affected": [
+        """Based on the provided article {Info_Box} {Whole_Text}, extract the number of affected people associated with the {Event_Name}, along with supporting annotations from the article. The number of affected people information can be splited into 3 parts,
           the first is the total number of affected people caused by the {Event_Name}, and organize this information in JSON format as follows:
           - "Total_Summary_Affected":{{
           - "Total_Affected": "The total number of people who were affected, impacted, or influenced in the {Event_Name}.
@@ -320,13 +350,15 @@ V_1: dict = {
              Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'thousands of,' '300-500 people', 'No affected people", "None", "None reported"). If the information is missing, assign 'NULL'."
           - "Affected_with_annotation": "Excerpts from the article that support your findings on the location, time, number of affected people. This should directly quote the original text."
                 }}]
-          Ensure to capture all instances of affected people mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
-    "insured_damage": """
+          Ensure to capture all instances of affected people mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """
+    ],
+    "insured_damage": [
+        """
         Based on the provided article, which includes the information box {Info_Box} and the full text {Whole_Text} related to {Event_Name}, extract the insured damage information associated with the {Event_Name}, along with supporting annotations from the article. The insured damage information can be splited into 3 parts,
         the first is the total insured damage caused by the {Event_Name}, including damage or loss to property, belongings, or persons covered under the terms of an insurance policy, and organize this information in JSON format as follows:
         - "Total_Summary_Insured_Damage": {{
         - "Total_Insured_Damage": "The total amount of insured damage. Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion'). If the information is missing, assign 'NULL'."
-        - "Total_Insured_Damage_Units": "The currency of the total insured damage, like USD, EUR. If not specified, assign 'NULL'."
+        - "Total_Insured_Damage_Unit": "The currency of the total insured damage, like USD, EUR. If not specified, assign 'NULL'."
         - "Total_Insured_Damage_Inflation_Adjusted": "Indicate 'Yes' if the total insured damage amount has been adjusted for inflation; otherwise, 'No'."
         - "Total_Insured_Damage_Inflation_Adjusted_Year": "The year of inflation adjustment for the total insured damage, if applicable. If not adjusted or not applicable, assign 'NULL'."
         - "Total_Insured_Damage_Assessment_with_annotation": "Provide excerpts from the article that support your findings on the total amount of insured damage. This should directly quote the original text."
@@ -336,7 +368,7 @@ V_1: dict = {
           - "Country": "Name of the country."
           - "Total_Insured_Damage": "The total amount of insured damage in this country related to the {Event_Name}. Do not sum the insured damage in specific locations within this country unless the article explicitly mentions a total insured damage in this country.
              Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion'). If the information is missing or if no total insured damage in this country is mentioned, assign 'NULL'."
-          - "Total_Insured_Damage_Units": "The currency of the total insured damage, like USD, EUR. If not specified, assign 'NULL'."
+          - "Total_Insured_Damage_Unit": "The currency of the total insured damage, like USD, EUR. If not specified, assign 'NULL'."
           - "Total_Insured_Damage_Inflation_Adjusted": "Indicate 'Yes' if the total insured damage amount has been adjusted for inflation; otherwise, 'No'."
           - "Total_Insured_Damage_Inflation_Adjusted_Year": "The year of inflation adjustment for the total insured damage, if applicable. If not adjusted or not applicable, assign 'NULL'."
           - "Total_Insured_Damage_Assessment_with_annotation": "Provide excerpts from the article that support your findings on the total amount of insured damage. This should directly quote the original text."
@@ -347,19 +379,21 @@ V_1: dict = {
           - "Location_Insured_Damage": "The specific place/places within the country where the insured damage occurred, including towns, cities, or regions. Order it/them in a list like ["town";"city";"region"]."
           - "Num_Insured_Damage": "The amount of insured damage in the specific location/locations related to the {Event_Name}.
              Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion'). If the information is missing, assign 'NULL'."
-          - "Insured_Damage_Units": "The currency of the insured damage, like USD, EUR. If not specified, assign 'NULL'."
+          - "Insured_Damage_Unit": "The currency of the insured damage, like USD, EUR. If not specified, assign 'NULL'."
           - "Insured_Damage_Inflation_Adjusted": "Indicate 'Yes' if the insured damage amount has been adjusted for inflation; otherwise, 'No'."
           - "Insured_Damage_Inflation_Adjusted_Year": "The year of inflation adjustment for the insured damage, if applicable. If not adjusted or not applicable, assign 'NULL'."
           - "Insured_Damage_Assessment_with_annotation": "Provide excerpts from the article that support your findings on the amount of insured damage. This should directly quote the original text."
 
              }}]
-        Ensure to capture all instances of insured damage mentioned in the article, including direct and indirect causes, and organize them in the JSON format output. Only Give Json output, no extra explanation needed. """,
-    "damage": """
+        Ensure to capture all instances of insured damage mentioned in the article, including direct and indirect causes, and organize them in the JSON format output. Only Give Json output, no extra explanation needed. """
+    ],
+    "damage": [
+        """
         Based on the provided article, which includes the information box {Info_Box} and the full text {Whole_Text} related to {Event_Name}, extract the total economic loss or damage information associated with the {Event_Name}, along with supporting annotations from the article. The total economic loss or damage  information can be splited into 3 parts,
         the first is the total economic loss or damage caused by the {Event_Name}, and organize this information in JSON format as follows:
         - "Total_Summary_Damage": {{
         - "Total_Economic_Damage": "The total amount of economic loss or damage. Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion'). If the information is missing, assign 'NULL'."
-        - "Total_Economic_Damage_Units": "The currency of the total economic loss or damage, like USD, EUR. If not specified, assign 'NULL'."
+        - "Total_Economic_Damage_Unit": "The currency of the total economic loss or damage, like USD, EUR. If not specified, assign 'NULL'."
         - "Total_Economic_Damage_Inflation_Adjusted": "Indicate 'Yes' if the total economic loss or damage amount has been adjusted for inflation; otherwise, 'No'."
         - "Total_Economic_Damage_Inflation_Adjusted_Year": "The year of inflation adjustment for the total economic loss or damage, if applicable. If not adjusted or not applicable, assign 'NULL'."
         - "Total_Economic_Damage_Assessment_with_annotation": "Provide excerpts from the article that support your findings on the total amount of economic loss or damage. This should directly quote the original text."
@@ -369,7 +403,7 @@ V_1: dict = {
           - "Country": "Name of the country."
           - "Total_Economic_Damage": "The total amount of economic loss or damage in this country related to the {Event_Name}. Do not sum the total economic damage in specific locations within this country unless the article explicitly mentions a total economic damage in this country.
              Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion'). If the information is missing or if no total economic damage in this country is mentioned, assign 'NULL'."
-          - "Total_Economic_Damage_Units": "The currency of the total economic damage, like USD, EUR. If not specified, assign 'NULL'."
+          - "Total_Economic_Damage_Unit": "The currency of the total economic damage, like USD, EUR. If not specified, assign 'NULL'."
           - "Total_Economic_Damage_Inflation_Adjusted": "Indicate 'Yes' if the total economic damage amount has been adjusted for inflation; otherwise, 'No'."
           - "Total_Economic_Damage_Inflation_Adjusted_Year": "The year of inflation adjustment for the total economic damage, if applicable. If not adjusted or not applicable, assign 'NULL'."
           - "Total_Economic_Damage_Assessment_with_annotation": "Provide excerpts from the article that support your findings on the total amount of economic damage. This should directly quote the original text."
@@ -380,13 +414,15 @@ V_1: dict = {
           - "Location_Economic_Damage": "The specific place/places within the country where the economic damage occurred, including towns, cities, or regions. Order it/them in a list like ["town";"city";"region"]."
           - "Num_Economic_Damage": "The amount of economic damage in the specific location/locations related to the {Event_Name}.
              Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion'). If the information is missing, assign 'NULL'."
-          - "Economic_Damage_Units": "The currency of the economic damage, like USD, EUR. If not specified, assign 'NULL'."
+          - "Economic_Damage_Unit": "The currency of the economic damage, like USD, EUR. If not specified, assign 'NULL'."
           - "Economic_Damage_Inflation_Adjusted": "Indicate 'Yes' if the economic damage amount has been adjusted for inflation; otherwise, 'No'."
           - "Economic_Damage_Inflation_Adjusted_Year": "The year of inflation adjustment for the economic damage, if applicable. If not adjusted or not applicable, assign 'NULL'."
           - "Economic_Damage_Assessment_with_annotation": "Provide excerpts from the article that support your findings on the amount of economic damage. This should directly quote the original text."
              }}]
-        Ensure to capture all instances of economic loss or damage mentioned in the article, including direct and indirect cause. Only Give Json output, no extra explanation needed. """,
-    "damaged_buildings": """Based on the provided article {Info_Box} {Whole_Text}, extract the number of damaged buildings associated with the {Event_Name}, covering a wide range of building types such as homes, houses, households, apartments, office buildings, retail stores, hotels, schools, hospitals, and more, along with supporting annotations from the article. The number of damaged buildings information can be splited into 3 parts,
+        Ensure to capture all instances of economic loss or damage mentioned in the article, including direct and indirect cause. Only Give Json output, no extra explanation needed. """
+    ],
+    "damaged_buildings": [
+        """Based on the provided article {Info_Box} {Whole_Text}, extract the number of damaged buildings associated with the {Event_Name}, covering a wide range of building types such as homes, houses, households, apartments, office buildings, retail stores, hotels, schools, hospitals, and more, along with supporting annotations from the article. The number of damaged buildings information can be splited into 3 parts,
       the first is the total number of damaged buildings caused by the {Event_Name}, and organize this information in JSON format as follows:
       - "Total_Summary_Building_Damage":{{
       - "Total_Building_Damage": "The total number of damaged buildings in the {Event_Name}.
@@ -413,12 +449,14 @@ V_1: dict = {
          Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., "hundreds of, "few", "several", "None", "None reported"). If the information is missing, assign 'NULL'."
       - "Building_Damage_with_annotation": "Excerpts from the article that support your findings on the location, time, number of damaged buildings. This should directly quote the original text."
             }}]
-      Ensure to capture all instances of damaged buildings mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
+      Ensure to capture all instances of damaged buildings mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """
+    ],
 }
 
 # V_2 is the list of prompts for L1-3 with annotation gives the header names, finalized in 20240715
 V_2: dict = {
-    "affected": """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+    "affected": [
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
       extract the number of affected people associated with the {Event_Name}, along with supporting annotations from the article.
       The affected people information can be splited into 3 parts,
       the first is the total number of affected people caused by the {Event_Name}, and organize this information in JSON format as follows:
@@ -451,8 +489,10 @@ V_2: dict = {
          If the information is missing, assign 'NULL'."
       - "Annotation": "Cite the header name from the article provided where you find the information about the affected people in this location. The output should only include the header name."
        }}]
-      Ensure to capture all instances of affected people mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
-    "damaged_buildings": """Based on the provided article {Info_Box} {Whole_Text},
+      Ensure to capture all instances of affected people mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """
+    ],
+    "damaged_buildings": [
+        """Based on the provided article {Info_Box} {Whole_Text},
       extract the number of damaged buildings associated with the {Event_Name},
       covering a wide range of building types such as structures, homes, houses, households, apartments, office buildings, retail stores, hotels, schools, hospitals, and more,
       along with supporting annotations from the article. The number of damaged buildings information can be splited into 3 parts,
@@ -485,8 +525,10 @@ V_2: dict = {
          Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., "hundreds of, "few houses", "several homes"). If the information is missing, assign 'NULL'."
       - "Annotation": "Cite the header name from the article provided where you find the information about the building damage in this location. The output should only include the header name."
             }}]
-      Ensure to capture all instances of damaged buildings mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
-    "deaths": """Based on information box {Info_Box} and header-content pair article {Whole_Text}, extract the number of deaths associated with the {Event_Name},
+      Ensure to capture all instances of damaged buildings mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """
+    ],
+    "deaths": [
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text}, extract the number of deaths associated with the {Event_Name},
       along with supporting annotations from the article. The death information can be splited into 3 parts,
       the first is the total number of deaths caused by the {Event_Name}, and organize this information in JSON format as follows:
       - "Total_Summary_Death":{{
@@ -516,8 +558,10 @@ V_2: dict = {
          Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people'). If the information is missing, assign 'NULL'."
       - "Annotation": "Cite the header name from the article provided where you find the information about the death in this location. The output should only include the header name."
        }}]
-      Ensure to capture all instances of death mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
-    "displaced": """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+      Ensure to capture all instances of death mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """
+    ],
+    "displaced": [
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
       extract the number of displacement associated with the {Event_Name}, along with supporting annotations from the article.
       The displacement information can be splited into 3 parts,
       the first is the total number of displacement caused by the {Event_Name}, and organize this information in JSON format as follows:
@@ -549,8 +593,10 @@ V_2: dict = {
          Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people'). If the information is missing, assign 'NULL'."
       - "Annotation": "Cite the header name from the article provided where you find the information about the displacement in this location. The output should only include the header name."
        }}]
-      Ensure to capture all instances of displacement mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
-    "homeless": """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+      Ensure to capture all instances of displacement mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """
+    ],
+    "homeless": [
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
       extract the number of homelessness associated with the {Event_Name}, along with supporting annotations from the article.
       The homelessness information can be splited into 3 parts,
       the first is the total number of homelessness caused by the {Event_Name}, and organize this information in JSON format as follows:
@@ -582,8 +628,10 @@ V_2: dict = {
          Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people'). If the information is missing, assign 'NULL'."
       - "Annotation": "Cite the header name from the article provided where you find the information about the homelessness in this location. The output should only include the header name."
        }}]
-      Ensure to capture all instances of homelessness mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
-    "injuries": """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+      Ensure to capture all instances of homelessness mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """
+    ],
+    "injuries": [
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
       extract the number of non-fatal injuries associated with the {Event_Name}, along with supporting annotations from the article.
       The non-fatal injuries information can be splited into 3 parts,
       the first is the total number of non-fatal injuries caused by the {Event_Name}, and organize this information in JSON format as follows:
@@ -615,8 +663,10 @@ V_2: dict = {
          Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people'). If the information is missing, assign 'NULL'."
       - "Annotation": "Cite the header name from the article provided where you find the information about the non-fatal injuries in this location. The output should only include the header name."
        }}]
-      Ensure to capture all instances of non-fatal injuries mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
-    "insured_damage": """
+      Ensure to capture all instances of non-fatal injuries mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """
+    ],
+    "insured_damage": [
+        """
             Based on information box {Info_Box} and header-content pair article {Whole_Text},
             extract the insured damage information associated with the {Event_Name}, along with supporting annotations from the article.
             The insured damage information can be splited into 3 parts,
@@ -627,7 +677,7 @@ V_2: dict = {
                Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion', "minimal").
                Do not sum the number of insured damage in the article to present the total number of insured damage,
                and if no total number of insured damage explicitly mentioned or the information is missing, assign 'NULL'."
-            - "Units": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+            - "Unit": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
             - "Inflation_Adjusted": "Indicate 'Yes' if the total insured damage amount has been adjusted for inflation; otherwise "No", If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
             - "Inflation_Adjusted_Year": "The year of inflation adjustment for the total insured damage, if applicable; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
             - "Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total insured damage. The output should only include "Info_Box" or the header name."
@@ -641,7 +691,7 @@ V_2: dict = {
                  Do not sum the insured damage in specific locations from the country to present the total insured damage for this level information.
                  Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion').
                  If the information is missing or if no total insured damage in this level is mentioned, assign 'NULL'."
-              - "Units": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+              - "Unit": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Inflation_Adjusted": "Indicate 'Yes' if the total insured damage amount has been adjusted for inflation; otherwise "No", and if Total_Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Adjusted_Year": "The year of inflation adjustment for the total insured damage, if applicable; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Annotation": "Cite the header name from the article provided where you find the information about the total insured damage in this level. The output should only include the header name."
@@ -654,14 +704,16 @@ V_2: dict = {
               - "End_Date":"The end date when the insured damage occurred, if mentioned."
               - "Insured_Damage": "The amount of insured damage in the specific location/locations related to the {Event_Name} and make sure the information extracted for this containing the keyword "insured" or "insurance".
                  Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion'). If the information is missing, assign 'NULL'."
-              - "Units": "The currency of the insured damage, like USD, EUR. If Insured_Damage is missing from the previous step, assign 'NULL'."
+              - "Unit": "The currency of the insured damage, like USD, EUR. If Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Inflation_Adjusted": "Indicate 'Yes' if the insured damage amount has been adjusted for inflation; otherwise "No", If Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Inflation_Adjusted_Year": "The year of inflation adjustment for the insured damage, if applicable; If Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Annotation": "Cite the header name from the article provided where you find the information about the insured damage in this location. The output should only include the header name."
 
                  }}]
-            Ensure to capture all instances of insured damage mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
-    "damage": """
+            Ensure to capture all instances of insured damage mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """
+    ],
+    "damage": [
+        """
             Based on information box {Info_Box} and header-content pair article {Whole_Text},
             extract the economic damage information associated with the {Event_Name}, along with supporting annotations from the article.
             The economic damage information can be splited into 3 parts,
@@ -672,7 +724,7 @@ V_2: dict = {
                Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion', "minimal").
                Do not sum the number of economic damage in the article to present the total number of economic damage,
                and if no total number of economic damage explicitly mentioned or the information is missing, assign 'NULL'."
-            - "Units": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+            - "Unit": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
             - "Inflation_Adjusted": "Indicate 'Yes' if the total economic damage amount has been adjusted for inflation; otherwise "No", If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
             - "Inflation_Adjusted_Year": "The year of inflation adjustment for the total economic damage, if applicable; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
             - "Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total economic damage. The output should only include "Info_Box" or the header name."
@@ -686,7 +738,7 @@ V_2: dict = {
                  Do not sum the economic damage in specific locations from the country to present the total economic damage for this level information.
                  Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion').
                  If the information is missing or if no total economic damage in this level is mentioned, assign 'NULL'."
-              - "Units": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+              - "Unit": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Inflation_Adjusted": "Indicate 'Yes' if the total economic damage amount has been adjusted for inflation; otherwise "No", and if Total_Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Adjusted_Year": "The year of inflation adjustment for the total economic damage, if applicable; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Annotation": "Cite the header name from the article provided where you find the information about the total economic damage in this level. The output should only include the header name."
@@ -699,14 +751,16 @@ V_2: dict = {
               - "End_Date":"The end date when the economic damage occurred, if mentioned."
               - "Economic_Damage": "The amount of economic damage in the specific location/locations related to the {Event_Name}.
                  Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion'). If the information is missing, assign 'NULL'."
-              - "Units": "The currency of the economic damage, like USD, EUR. If Economic_Damage is missing from the previous step, assign 'NULL'."
+              - "Unit": "The currency of the economic damage, like USD, EUR. If Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Inflation_Adjusted": "Indicate 'Yes' if the economic damage amount has been adjusted for inflation; otherwise "No", If Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Inflation_Adjusted_Year": "The year of inflation adjustment for the economic damage, if applicable; If Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Annotation": "Cite the header name from the article provided where you find the information about the economic damage in this location. The output should only include the header name."
 
                  }}]
-            Ensure to capture all instances of economic damage mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
-    "main_event_hazard": """
+            Ensure to capture all instances of economic damage mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """
+    ],
+    "main_event_hazard": [
+        """
          Based on information box {Info_Box} and header-content pair article {Whole_Text},
          extract main_event category and hazard information associated with the {Event_Name}, along with supporting annotations from the article.
          Below is the Main_Event--Hazard association table,
@@ -723,8 +777,10 @@ V_2: dict = {
          based on the result of the Main_Event category from the previous step and the Main_Event--Hazard table, identify the hazard information and organize this information in JSON format as follows:
            - "Hazard": "Identify the hazard of the {Event_Name}, make sure the hazard is associated with the Main_Event category from the table, and if more than one hazard is detected from the text, separate them with '|'. "
            - "Hazard_Assessment_With_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the hazard information. The output should only include "Info_Box" or the header name."
-          Only Give Json output, no extra explanation needed.""",
-    "location_time": """
+          Only Give Json output, no extra explanation needed."""
+    ],
+    "location_time": [
+        """
         Based on information box {Info_Box} and header-content pair article {Whole_Text}, extract time and location information associated with the {Event_Name}, along with supporting annotations from the article.
         the first is to identify the time information of the event {Event_Name}, and organize this information in JSON format as follows:
         - "Start_Date": "The start date of the event. If the specific day or month is not known, include at least the year if it's available. If no time information is available, enter 'NULL'. If the exact date is not clear (e.g., "summer of 2021", "June 2020"), please retain the text as mentioned."
@@ -733,13 +789,15 @@ V_2: dict = {
         the second is to identify all locations affected by {Event_Name} and organize this information in JSON format as follows:
         - "Location": "List all places mentioned in the text, including cities, regions, countries, and other administrative locations affected by {Event_Name}. The list should be formatted as ["location1", "location2"]."
         - "Location_with_Annotation":  "Cite "Info_Box" or the header name from the article provided where you find the information about the affected locations. The output should only include "Info_Box" or the header name."
-         Only Give Json output, no extra explanation needed.""",
+         Only Give Json output, no extra explanation needed."""
+    ],
 }
 
 # V_3 is a version based on V2, but with freezed variable names as the schema we confirmed, 20240830
-# V_3 is a version based on V2, but with freezed variable names as the schema we confirmed, 20240823
+
 V_3: dict = {
-    "affected": """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+    "affected": [
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
       extract the number of affected people associated with the {Event_Name}, along with supporting annotations from the article.
       The affected people information can be splited into 3 parts,
       the first is the total number of affected people caused by the {Event_Name}, and organize this information in JSON format as follows:
@@ -772,8 +830,10 @@ V_3: dict = {
          If the information is missing, assign 'NULL'."
       - "Annotation": "Cite the header name from the article provided where you find the information about the affected people in this location. The output should only include the header name."
        }}]
-      Ensure to capture all instances of affected people mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
-    "buildings_damaged": """Based on the provided article {Info_Box} {Whole_Text},
+      Ensure to capture all instances of affected people mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """
+    ],
+    "buildings_damaged": [
+        """Based on the provided article {Info_Box} {Whole_Text},
       extract the number of damaged buildings associated with the {Event_Name},
       covering a wide range of building types such as structures, homes, houses, households, apartments, office buildings, retail stores, hotels, schools, hospitals, and more,
       along with supporting annotations from the article. The number of damaged buildings information can be splited into 3 parts,
@@ -783,7 +843,7 @@ V_3: dict = {
           Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., "hundreds of, "few houses", "several homes").
           Do not sum the number of damaged buildings in the article to present the total number of damaged buildings,
           and if no total number of damaged buildings explicitly mentioned or the information is missing, assign 'NULL'."
-      - "Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total number of damaged buildings. The output should only include "Info_Box" or the header name."
+      - "Total_Buildings_Damaged_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total number of damaged buildings. The output should only include "Info_Box" or the header name."
         }}
       the second is the total number of damaged buildings in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
       - "Instance_Per_Administrative_Areas_Buildings_Damaged":[{{
@@ -806,15 +866,17 @@ V_3: dict = {
          Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., "hundreds of, "few houses", "several homes"). If the information is missing, assign 'NULL'."
       - "Annotation": "Cite the header name from the article provided where you find the information about the building damage in this location. The output should only include the header name."
             }}]
-      Ensure to capture all instances of damaged buildings mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
-    "deaths": """Based on information box {Info_Box} and header-content pair article {Whole_Text}, extract the number of deaths associated with the {Event_Name},
+      Ensure to capture all instances of damaged buildings mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """
+    ],
+    "deaths": [
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text}, extract the number of deaths associated with the {Event_Name},
       along with supporting annotations from the article. The death information can be splited into 3 parts,
       the first is the total number of deaths caused by the {Event_Name}, and organize this information in JSON format as follows:
       - "Total_Summary_Deaths":{{
       - "Total_Deaths": "The total number of people who died in the {Event_Name}.
          Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
          Do not sum the number of death in the article to present the total number of death, and if no total number of death explicitly mentioned or the information is missing, assign 'NULL'."
-      - "Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total death. The output should only include "Info_Box" or the header name."
+      - "Total_Deaths_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total death. The output should only include "Info_Box" or the header name."
       }}
       the second is the total number of deaths in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
       - "Instance_Per_Administrative_Areas_Deaths":[{{
@@ -837,8 +899,10 @@ V_3: dict = {
          Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people'). If the information is missing, assign 'NULL'."
       - "Annotation": "Cite the header name from the article provided where you find the information about the death in this location. The output should only include the header name."
        }}]
-      Ensure to capture all instances of death mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
-    "displaced": """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+      Ensure to capture all instances of death mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """
+    ],
+    "displaced": [
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
       extract the number of displacement associated with the {Event_Name}, along with supporting annotations from the article.
       The displacement information can be splited into 3 parts,
       the first is the total number of displacement caused by the {Event_Name}, and organize this information in JSON format as follows:
@@ -870,8 +934,10 @@ V_3: dict = {
          Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people'). If the information is missing, assign 'NULL'."
       - "Annotation": "Cite the header name from the article provided where you find the information about the displacement in this location. The output should only include the header name."
        }}]
-      Ensure to capture all instances of displacement mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
-    "homeless": """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+      Ensure to capture all instances of displacement mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """
+    ],
+    "homeless": [
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
       extract the number of homelessness associated with the {Event_Name}, along with supporting annotations from the article.
       The homelessness information can be splited into 3 parts,
       the first is the total number of homelessness caused by the {Event_Name}, and organize this information in JSON format as follows:
@@ -903,8 +969,10 @@ V_3: dict = {
          Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people'). If the information is missing, assign 'NULL'."
       - "Annotation": "Cite the header name from the article provided where you find the information about the homelessness in this location. The output should only include the header name."
        }}]
-      Ensure to capture all instances of homelessness mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
-    "injuries": """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+      Ensure to capture all instances of homelessness mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """
+    ],
+    "injuries": [
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
       extract the number of non-fatal injuries associated with the {Event_Name}, along with supporting annotations from the article.
       The non-fatal injuries information can be splited into 3 parts,
       the first is the total number of non-fatal injuries caused by the {Event_Name}, and organize this information in JSON format as follows:
@@ -936,8 +1004,10 @@ V_3: dict = {
          Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people'). If the information is missing, assign 'NULL'."
       - "Annotation": "Cite the header name from the article provided where you find the information about the non-fatal injuries in this location. The output should only include the header name."
        }}]
-      Ensure to capture all instances of non-fatal injuries mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
-    "insured_damage": """
+      Ensure to capture all instances of non-fatal injuries mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """
+    ],
+    "insured_damage": [
+        """
             Based on information box {Info_Box} and header-content pair article {Whole_Text},
             extract the insured damage information associated with the {Event_Name}, along with supporting annotations from the article.
             The insured damage information can be splited into 3 parts,
@@ -948,7 +1018,7 @@ V_3: dict = {
                Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion', "minimal").
                Do not sum the number of insured damage in the article to present the total number of insured damage,
                and if no total number of insured damage explicitly mentioned or the information is missing, assign 'NULL'."
-            - "Total_Insured_Damage_Units": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Insured_Damage_Unit": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
             - "Total_Insured_Damage_Inflation_Adjusted": "Indicate 'Yes' if the total insured damage amount has been adjusted for inflation; otherwise "No", If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
             - "Total_Insured_Damage_Inflation_Adjusted_Year": "The year of inflation adjustment for the total insured damage, if applicable; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
             - "Total_Insured_Damage_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total insured damage. The output should only include "Info_Box" or the header name."
@@ -962,7 +1032,7 @@ V_3: dict = {
                  Do not sum the insured damage in specific locations from the country to present the total insured damage for this level information.
                  Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion').
                  If the information is missing or if no total insured damage in this level is mentioned, assign 'NULL'."
-              - "Num_Units": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Unit": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted": "Indicate 'Yes' if the total insured damage amount has been adjusted for inflation; otherwise "No", and if Total_Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted_Year": "The year of inflation adjustment for the total insured damage, if applicable; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Annotation": "Cite the header name from the article provided where you find the information about the total insured damage in this level. The output should only include the header name."
@@ -975,14 +1045,16 @@ V_3: dict = {
               - "End_Date":"The end date when the insured damage occurred, if mentioned."
               - "Num": "The amount of insured damage in the specific location/locations related to the {Event_Name} and make sure the information extracted for this containing the keyword "insured" or "insurance".
                  Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion'). If the information is missing, assign 'NULL'."
-              - "Num_Units": "The currency of the insured damage, like USD, EUR. If Insured_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Unit": "The currency of the insured damage, like USD, EUR. If Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted": "Indicate 'Yes' if the insured damage amount has been adjusted for inflation; otherwise "No", If Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted_Year": "The year of inflation adjustment for the insured damage, if applicable; If Insured_Damage is missing from the previous step, assign 'NULL'."
               - "Annotation": "Cite the header name from the article provided where you find the information about the insured damage in this location. The output should only include the header name."
 
                  }}]
-            Ensure to capture all instances of insured damage mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
-    "damage": """
+            Ensure to capture all instances of insured damage mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """
+    ],
+    "damage": [
+        """
             Based on information box {Info_Box} and header-content pair article {Whole_Text},
             extract the economic damage information associated with the {Event_Name}, along with supporting annotations from the article.
             The economic damage information can be splited into 3 parts,
@@ -993,7 +1065,7 @@ V_3: dict = {
                Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion', "minimal").
                Do not sum the number of economic damage in the article to present the total number of economic damage,
                and if no total number of economic damage explicitly mentioned or the information is missing, assign 'NULL'."
-            - "Total_Damage_Units": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Damage_Unit": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
             - "Total_Damage_Inflation_Adjusted": "Indicate 'Yes' if the total economic damage amount has been adjusted for inflation; otherwise "No", If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
             - "Total_Damage_Inflation_Adjusted_Year": "The year of inflation adjustment for the total economic damage, if applicable; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
             - "Total_Damage_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total economic damage. The output should only include "Info_Box" or the header name."
@@ -1007,7 +1079,7 @@ V_3: dict = {
                  Do not sum the economic damage in specific locations from the country to present the total economic damage for this level information.
                  Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion').
                  If the information is missing or if no total economic damage in this level is mentioned, assign 'NULL'."
-              - "Num_Units": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Unit": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted": "Indicate 'Yes' if the total economic damage amount has been adjusted for inflation; otherwise "No", and if Total_Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted_Year": "The year of inflation adjustment for the total economic damage, if applicable; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Annotation": "Cite the header name from the article provided where you find the information about the total economic damage in this level. The output should only include the header name."
@@ -1020,14 +1092,16 @@ V_3: dict = {
               - "End_Date":"The end date when the economic damage occurred, if mentioned."
               - "Num": "The amount of economic damage in the specific location/locations related to the {Event_Name}.
                  Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion'). If the information is missing, assign 'NULL'."
-              - "Num_Units": "The currency of the economic damage, like USD, EUR. If Economic_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Unit": "The currency of the economic damage, like USD, EUR. If Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted": "Indicate 'Yes' if the economic damage amount has been adjusted for inflation; otherwise "No", If Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Num_Inflation_Adjusted_Year": "The year of inflation adjustment for the economic damage, if applicable; If Economic_Damage is missing from the previous step, assign 'NULL'."
               - "Annotation": "Cite the header name from the article provided where you find the information about the economic damage in this location. The output should only include the header name."
 
                  }}]
-            Ensure to capture all instances of economic damage mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
-    "main_event_hazard": """
+            Ensure to capture all instances of economic damage mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """
+    ],
+    "main_event_hazard": [
+        """
          Based on information box {Info_Box} and header-content pair article {Whole_Text},
          extract main_event category and hazard information associated with the {Event_Name}, along with supporting annotations from the article.
          Below is the Main_Event--Hazard association table,
@@ -1044,9 +1118,11 @@ V_3: dict = {
          based on the result of the Main_Event category from the previous step and the Main_Event--Hazard table, identify the hazard information and organize this information in JSON format as follows:
            - "Hazards": "Identify the hazards of the {Event_Name}, make sure the hazards are associated with the Main_Event category from the table, and if more than one hazard is detected from the text, separate them with '|'. "
            - "Hazards_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the hazard information. The output should only include "Info_Box" or the header name."
-          Only Give Json output, no extra explanation needed.""",
+          Only Give Json output, no extra explanation needed."""
+    ],
     # in this version, we ask the model to extract all the affected locations in L1, but in the post-processing, only extract the countries in this field.
-    "location_time": """
+    "location_time": [
+        """
         Based on information box {Info_Box} and header-content pair article {Whole_Text}, extract time and location information associated with the {Event_Name}, along with supporting annotations from the article.
         the first is to identify the time information of the event {Event_Name}, and organize this information in JSON format as follows:
         - "Start_Date": "The start date of the event. If the specific day or month is not known, include at least the year if it's available. If no time information is available, enter 'NULL'. If the exact date is not clear (e.g., "summer of 2021", "June 2020"), please retain the text as mentioned."
@@ -1055,5 +1131,675 @@ V_3: dict = {
         the second is to identify all locations affected by {Event_Name} and organize this information in JSON format as follows:
         - "Administrative_Areas": "List all places mentioned in the text, including cities, regions, countries, and other administrative locations affected by {Event_Name}. The list should be formatted as ["location1", "location2"]."
         - "Administrative_Areas_Annotation":  "Cite "Info_Box" or the header name from the article provided where you find the information about the affected locations. The output should only include "Info_Box" or the header name."
-         Only Give Json output, no extra explanation needed.""",
+         Only Give Json output, no extra explanation needed."""
+    ],
+}
+# V_4 is the one with two prompts for each impact category
+V_4_impact: dict = {
+    "affected": [
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+      extract the number of affected people associated with the {Event_Name}, along with supporting annotations from the article.
+      The affected people information can be splited into 2 parts,
+      the first is the total number of affected people caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Total_Summary_Affected":{{
+      - "Total_Affected": "The total number of people who were affected, impacted, or influenced in the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         Do not sum the number of affected people in the article to present the total number of affected people,
+         and if no total number of affected people explicitly mentioned or the information is missing, assign 'NULL'."
+      - "Total_Affected_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total affected people. The output should only include "Info_Box" or the header name."
+      }}
+      the second is the total number of affected people in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Instance_Per_Administrative_Areas_Affected":[{{
+      - "Administrative_Areas": "Name of the country where the affected people located, and no matter the affected people are in one or several countries, please order them in a list like [Country1, Country2, Country3]."
+      - "Start_Date": "The start date when the people were affected, if mentioned."
+      - "End_Date":"The end date when the people were affected, if mentioned."
+      - "Num": "The total number of people who were affected, impacted, or influenced in this level related to the {Event_Name}.
+         Do not sum the number of affected people in specific locations from the country to present the total number of affected people for this level information.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         If the information is missing or if no total number of affected people in this level is mentioned, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the total affected people in this level. The output should only include the header name."
+            }}]
+         Ensure to capture all instances of affected people mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed.""",
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+      extract the number of affected people associated with the {Event_Name}, along with supporting annotations from the article.
+      The information is the specific instance of affected people in the sub-national level caused by the {Event_Name},
+        make sure to capture all locations with affected people information and organize this information in JSON format as follows:
+      - "Specific_Instance_Per_Administrative_Area_Affected":[{{
+      - "Administrative_Area": "Name of the country."
+      - "Locations": "The specific place within the country where the affected people located, and no matter the affected people are in one or several places, order them in a list like ["Location1";"Location2";"Location3"]."
+      - "Start_Date": "The start date when the people were affected, if mentioned."
+      - "End_Date":"The end date when the people were affected, if mentioned."
+      - "Num": "The number of people who were affected, impacted, or influenced in the specific location/locations related to the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         If the information is missing, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the affected people in this location. The output should only include the header name."
+       }}]
+      Ensure to capture all instances of affected people mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
+    ],
+    "buildings_damaged": [
+        """Based on the provided article {Info_Box} {Whole_Text},
+      extract the number of damaged buildings associated with the {Event_Name},
+      covering a wide range of building types such as structures, homes, houses, households, apartments, office buildings, retail stores, hotels, schools, hospitals, and more,
+      along with supporting annotations from the article. The number of damaged buildings information can be splited into 2 parts,
+      the first is the total number of damaged buildings caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Total_Summary_Buildings_Damaged":{{
+      - "Total_Buildings_Damaged": "The total number of damaged buildings in the {Event_Name}.
+          Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., "hundreds of, "few houses", "several homes").
+          Do not sum the number of damaged buildings in the article to present the total number of damaged buildings,
+          and if no total number of damaged buildings explicitly mentioned or the information is missing, assign 'NULL'."
+      - "Total_Buildings_Damaged_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total number of damaged buildings. The output should only include "Info_Box" or the header name."
+        }}
+      the second is the total number of damaged buildings in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Instance_Per_Administrative_Areas_Buildings_Damaged":[{{
+      - "Administrative_Areas": "Name of the country where the building damage occured, and no matter the building damage is in one or several countries, please order them in a list like [Country1, Country2, Country3].."
+      - "Start_Date": "The start date when the damaged buildings occurred, if mentioned."
+      - "End_Date":"The end date when the damaged buildings occurred, if mentioned."
+      - "Num": ""The total number of damaged buildings in this level related to the {Event_Name}.
+         Do not sum the number of damaged buildings in specific locations from the country to present the total number of damaged buildings for this level information.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., "hundreds of, "few houses", "several homes").
+         If the information is missing or if no total number of damaged buildings in this level is mentioned, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the total building damage in this level. The output should only include the header name."
+            }}]
+         Ensure to capture all instances of damaged buildings mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
+        """ Based on the provided article {Info_Box} {Whole_Text},
+      extract the number of damaged buildings associated with the {Event_Name},
+      covering a wide range of building types such as structures, homes, houses, households, apartments, office buildings, retail stores, hotels, schools, hospitals, and more,
+      along with supporting annotations from the article. The information is the specific instance of damaged buildings within each country caused by the {Event_Name}, make sure to capture all locations with damaged buildings information and organize this information in JSON format as follows:
+      - "Specific_Instance_Per_Administrative_Area_Buildings_Damaged":[{{
+      - "Administrative_Area": "Name of the country."
+      - "Locations": "The specific place/places within the country where the damaged buildings occurred, and no matter the building damage is in one or several places, order it/them in a list like ["city1";"city2";"city3"]."
+      - "Start_Date": "The start date when the damaged buildings occurred, if mentioned."
+      - "End_Date":"The end date when the damaged buildings occurred, if mentioned."
+      - "Num": "The number of damaged buildings in the specific location/locations related to the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., "hundreds of, "few houses", "several homes"). If the information is missing, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the building damage in this location. The output should only include the header name."
+            }}]
+      Ensure to capture all instances of damaged buildings mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
+    ],
+    "deaths": [
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text}, extract the number of deaths associated with the {Event_Name},
+      along with supporting annotations from the article. The death information can be splited into 2 parts ,
+      the first is the total number of deaths caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Total_Summary_Deaths":{{
+      - "Total_Deaths": "The total number of people who died in the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         Do not sum the number of death in the article to present the total number of death, and if no total number of death explicitly mentioned or the information is missing, assign 'NULL'."
+      - "Total_Deaths_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total death. The output should only include "Info_Box" or the header name."
+      }}
+      the second is the total number of deaths in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Instance_Per_Administrative_Areas_Deaths":[{{
+      - "Administrative_Areas": "Name of the country where the death occurred, and no matter the deaths are in one or several countries, please order them in a list like [Country1, Country2, Country3]."
+      - "Start_Date": "The start date when the deaths occurred, if mentioned."
+      - "End_Date":"The end date when the deaths occurred, if mentioned."
+      - "Num": "The total number of people who died in this level related to the {Event_Name}.
+         Do not sum the number of death in specific locations from the country to present the total number of death for this level information.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         If the information is missing or if no total number of death in this level is mentioned, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the total death in this level. The output should only include the header name."
+            }}]
+         Ensure to capture all instances of death mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed.""",
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text}, extract the number of deaths associated with the {Event_Name},
+      along with supporting annotations from the article. The information is the specific instance of deaths in the sub-national level caused by the {Event_Name}, make sure to capture all locations with death information and organize this information in JSON format as follows:
+      - "Specific_Instance_Per_Administrative_Area_Deaths":[{{
+      - "Administrative_Area": "Name of the country."
+      - "Locations": "The specific place within the country where the deaths occurred, and no matter the deaths are in one or several places, order them in a list like ["Location1";"Location2";"Location3"]."
+      - "Start_Date": "The start date when the deaths occurred, if mentioned."
+      - "End_Date":"The end date when the deaths occurred, if mentioned."
+      - "Num": "The number of people who died in the specific location/locations related to the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people'). If the information is missing, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the death in this location. The output should only include the header name."
+       }}]
+      Ensure to capture all instances of death mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
+    ],
+    "displaced": [
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+      extract the number of displacement associated with the {Event_Name}, along with supporting annotations from the article.
+      The displacement information can be splited into 2 parts ,
+      the first is the total number of displacement caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Total_Summary_Displaced":{{
+      - "Total_Displaced": "The total number of people who were displaced, evacuated, transfered/moved to the shelter, relocated or fleed in the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         Do not sum the number of displacement in the article to present the total number of displacement,
+         and if no total number of displacement explicitly mentioned or the information is missing, assign 'NULL'."
+      - "Total_Displaced_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total displacement. The output should only include "Info_Box" or the header name."
+      }}
+      the second is the total number of displacement in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Instance_Per_Administrative_Areas_Displaced":[{{
+      - "Administrative_Areas": "Name of the country where the displacement occurred, and no matter the displacement is in one or several countries, please order them in a list like [Country1, Country2, Country3]."
+      - "Start_Date": "The start date when the displacement occurred, if mentioned."
+      - "End_Date":"The end date when the displacement occurred, if mentioned."
+      - "Num": "The total number of people who were displaced, evacuated, transfered/moved to the shelter, relocated or fleed in this level related to the {Event_Name}.
+         Do not sum the number of displacement in specific locations from the country to present the total number of displacement for this level information.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         If the information is missing or if no total number of displacement in this level is mentioned, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the total displacement in this level. The output should only include the header name."
+            }}]
+         Ensure to capture all instances of displacement mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed.""",
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+      extract the number of displacement associated with the {Event_Name}, along with supporting annotations from the article. The information is the specific instance of displacement in the sub-national level caused by the {Event_Name}, make sure to capture all locations with displacement information and organize this information in JSON format as follows:
+      - "Specific_Instance_Per_Administrative_Area_Displaced":[{{
+      - "Administrative_Area": "Name of the country."
+      - "Locations": "The specific place within the country where the displacement occurred, and no matter the displacement is in one or several places, order them in a list like ["Location1";"Location2";"Location3"]."
+      - "Start_Date": "The start date when the displacement occurred, if mentioned."
+      - "End_Date":"The end date when the displacement occurred, if mentioned."
+      - "Num": "The number of people who were displaced, evacuated, transfered/moved to the shelter, relocated or fleed in the specific location/locations related to the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people'). If the information is missing, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the displacement in this location. The output should only include the header name."
+       }}]
+      Ensure to capture all instances of displacement mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
+    ],
+    "homeless": [
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+      extract the number of homelessness associated with the {Event_Name}, along with supporting annotations from the article.
+      The homelessness information can be splited into 2 parts ,
+      the first is the total number of homelessness caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Total_Summary_Homeless":{{
+      - "Total_Homeless": "The total number of people who were homeless, lost their homes, experienced house damage, had their homes destroyed, were unhoused, without shelter, houseless, or shelterless in the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         Do not sum the number of homelessness in the article to present the total number of homelessness,
+         and if no total number of homelessness explicitly mentioned or the information is missing, assign 'NULL'."
+      - "Total_Homeless_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total homelessness. The output should only include "Info_Box" or the header name."
+      }}
+      the second is the total number of homelessness in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Instance_Per_Administrative_Areas_Homeless":[{{
+      - "Administrative_Areas": "Name of the country where the homelessness occurred, and no matter the homelessness is in one or several countries, please order them in a list like [Country1, Country2, Country3]."
+      - "Start_Date": "The start date when the homelessness occurred, if mentioned."
+      - "End_Date":"The end date when the homelessness occurred, if mentioned."
+      - "Num": "The total number of people who were homeless, lost their homes, experienced house damage, had their homes destroyed, were unhoused, without shelter, houseless, or shelterless in this level related to the {Event_Name}.
+         Do not sum the number of homelessness in specific locations from the country to present the total number of homelessness for this level information.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         If the information is missing or if no total number of homelessness in this level is mentioned, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the total homelessness in this level. The output should only include the header name."
+            }}]
+         Ensure to capture all instances of homelessness mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+      extract the number of homelessness associated with the {Event_Name}, along with supporting annotations from the article. The information is the specific instance of homelessness in the sub-national level caused by the {Event_Name}, make sure to capture all locations with homelessness information and organize this information in JSON format as follows:
+      - "Specific_Instance_Per_Administrative_Area_Homeless":[{{
+      - "Administrative_Area": "Name of the country."
+      - "Locations": "The specific place within the country where the homelessness occurred, and no matter the homelessness is in one or several places, order them in a list like ["Location1";"Location2";"Location3"]."
+      - "Start_Date": "The start date when the homelessness occurred, if mentioned."
+      - "End_Date":"The end date when the homelessness occurred, if mentioned."
+      - "Num": "The number of people who were homeless, lost their homes, experienced house damage, had their homes destroyed, were unhoused, without shelter, houseless, or shelterless in the specific location/locations related to the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people'). If the information is missing, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the homelessness in this location. The output should only include the header name."
+       }}]
+      Ensure to capture all instances of homelessness mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
+    ],
+    "injuries": [
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+      extract the number of non-fatal injuries associated with the {Event_Name}, along with supporting annotations from the article.
+      The non-fatal injuries information can be splited into 2 parts ,
+      the first is the total number of non-fatal injuries caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Total_Summary_Injuries":{{
+      - "Total_Injuries": "The total number of people who got injured, hurt, wound, or hospitalized (excluding death) in the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         Do not sum the number of non-fatal injuries in the article to present the total number of non-fatal injuries,
+         and if no total number of non-fatal injuries explicitly mentioned or the information is missing, assign 'NULL'."
+      - "Total_Injuries_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total non-fatal injuries. The output should only include "Info_Box" or the header name."
+      }}
+      the second is the total number of non-fatal injuries in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Instance_Per_Administrative_Areas_Injuries":[{{
+      - "Administrative_Areas": "Name of the country where the non-fatal injuries occurred, and no matter the non-fatal injuries are in one or several countries, please order them in a list like [Country1, Country2, Country3]."
+      - "Start_Date": "The start date when the non-fatal injuries occurred, if mentioned."
+      - "End_Date":"The end date when the non-fatal injuries occurred, if mentioned."
+      - "Num": "The total number of people who got injured, hurt, wound, or hospitalized (excluding death) in this level related to the {Event_Name}.
+         Do not sum the number of non-fatal injuries in specific locations from the country to present the total number of non-fatal injuries for this level information.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         If the information is missing or if no total number of non-fatal injuries in this level is mentioned, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the total non-fatal injuries in this level. The output should only include the header name."}}]
+         Ensure to capture all instances of non-fatal injuries mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed.""",
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+      extract the number of non-fatal injuries associated with the {Event_Name}, along with supporting annotations from the article. The information is the specific instance of non-fatal injuries in the sub-national level caused by the {Event_Name}, make sure to capture all locations with non-fatal injuries information and organize this information in JSON format as follows:
+      - "Specific_Instance_Per_Administrative_Area_Injuries":[{{
+      - "Administrative_Area": "Name of the country."
+      - "Locations": "The specific place within the country where the non-fatal injuries occurred, and no matter the non-fatal injuries are in one or several places, order them in a list like ["Location1";"Location2";"Location3"]."
+      - "Start_Date": "The start date when the non-fatal injuries occurred, if mentioned."
+      - "End_Date":"The end date when the non-fatal injuries occurred, if mentioned."
+      - "Num": "The number of people who got injured, hurt, wound, or hospitalized (excluding death) in the specific location/locations related to the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people'). If the information is missing, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the non-fatal injuries in this location. The output should only include the header name."
+       }}]
+      Ensure to capture all instances of non-fatal injuries mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
+    ],
+    "insured_damage": [
+        """
+            Based on information box {Info_Box} and header-content pair article {Whole_Text},
+            extract the insured damage information associated with the {Event_Name}, along with supporting annotations from the article.
+            The insured damage information can be splited into 2 parts ,
+            the first is the total insured damage caused by the {Event_Name}, including damage or loss to property, belongings, or persons covered under the terms of an insurance policy,
+            and organize this information in JSON format as follows:
+            - "Total_Summary_Insured_Damage": {{
+            - "Total_Insured_Damage": "The total amount of insured damage and make sure the information extracted for this containing the keyword "insured" or "insurance".
+               Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion', "minimal").
+               Do not sum the number of insured damage in the article to present the total number of insured damage,
+               and if no total number of insured damage explicitly mentioned or the information is missing, assign 'NULL'."
+            - "Total_Insured_Damage_Unit": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Insured_Damage_Inflation_Adjusted": "Indicate 'Yes' if the total insured damage amount has been adjusted for inflation; otherwise "No", If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Insured_Damage_Inflation_Adjusted_Year": "The year of inflation adjustment for the total insured damage, if applicable; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Insured_Damage_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total insured damage. The output should only include "Info_Box" or the header name."
+              }}
+            the second is the total insured damage in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
+             - "Instance_Per_Administrative_Areas_Insured_Damage":[{{
+              - "Administrative_Areas": "Name of the country where the insured damage occured, and no matter the total insured damage is in one or several countries, please order them in a list like [Country1, Country2, Country3]."
+              - "Start_Date": "The start date when the insured damage occurred, if mentioned."
+              - "End_Date":"The end date when the insured damage occurred, if mentioned."
+              - "Num": "The total amount of insured damage in this level related to the {Event_Name} and make sure the information extracted for this containing the keyword "insured" or "insurance".
+                 Do not sum the insured damage in specific locations from the country to present the total insured damage for this level information.
+                 Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion').
+                 If the information is missing or if no total insured damage in this level is mentioned, assign 'NULL'."
+              - "Num_Unit": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Inflation_Adjusted": "Indicate 'Yes' if the total insured damage amount has been adjusted for inflation; otherwise "No", and if Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Inflation_Adjusted_Year": "The year of inflation adjustment for the total insured damage, if applicable; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+              - "Annotation": "Cite the header name from the article provided where you find the information about the total insured damage in this level. The output should only include the header name."
+                  }}]
+                   Ensure to capture all instances of insured damage mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed.""",
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+                extract the insured damage information associated with the {Event_Name}, along with supporting annotations from the article. The information is the specific instance of insured damage in the sub-national level caused by the {Event_Name}, make sure to capture all locations with insured damage information, including damage or loss to property, belongings, or persons covered under the terms of an insurance policy, and organize this information in JSON format as follows:
+              - "Specific_Instance_Per_Administrative_Area_Insured_Damage":[{{
+              - "Administrative_Area": "Name of the country."
+              - "Locations": "The specific place/places within the country where the insured damage occurred, and no matter the insured damage is in one or several places, order it/them in a list like ["Location1";"Location2";"Location3"]."
+              - "Start_Date": "The start date when the insured damage occurred, if mentioned."
+              - "End_Date":"The end date when the insured damage occurred, if mentioned."
+              - "Num": "The amount of insured damage in the specific location/locations related to the {Event_Name} and make sure the information extracted for this containing the keyword "insured" or "insurance".
+                 Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion'). If the information is missing, assign 'NULL'."
+              - "Num_Unit": "The currency of the insured damage, like USD, EUR. If Insured_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Inflation_Adjusted": "Indicate 'Yes' if the insured damage amount has been adjusted for inflation; otherwise "No", If Insured_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Inflation_Adjusted_Year": "The year of inflation adjustment for the insured damage, if applicable; If Insured_Damage is missing from the previous step, assign 'NULL'."
+              - "Annotation": "Cite the header name from the article provided where you find the information about the insured damage in this location. The output should only include the header name."
+
+                 }}]
+            Ensure to capture all instances of insured damage mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
+    ],
+    "damage": [
+        """
+            Based on information box {Info_Box} and header-content pair article {Whole_Text},
+            extract the economic damage information associated with the {Event_Name}, along with supporting annotations from the article.
+            The economic damage information can be splited into 2 parts ,
+            the first is the total economic damage caused by the {Event_Name},
+            and organize this information in JSON format as follows:
+            - "Total_Summary_Damage": {{
+            - "Total_Damage": "The total amount of economic damage.
+               Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion', "minimal").
+               Do not sum the number of economic damage in the article to present the total number of economic damage,
+               and if no total number of economic damage explicitly mentioned or the information is missing, assign 'NULL'."
+            - "Total_Damage_Unit": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Damage_Inflation_Adjusted": "Indicate 'Yes' if the total economic damage amount has been adjusted for inflation; otherwise "No", If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Damage_Inflation_Adjusted_Year": "The year of inflation adjustment for the total economic damage, if applicable; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Damage_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total economic damage. The output should only include "Info_Box" or the header name."
+              }}
+            the second is the total economic damage in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
+             - "Instance_Per_Administrative_Areas_Damage":[{{
+              - "Administrative_Areas": "Name of the country where the economic damage occured, and no matter the total economic damage is in one or several countries, please order them in a list like [Country1, Country2, Country3]."
+              - "Start_Date": "The start date when the economic damage occurred, if mentioned."
+              - "End_Date":"The end date when the economic damage occurred, if mentioned."
+              - "Num": "The total amount of economic damage in this level related to the {Event_Name}.
+                 Do not sum the economic damage in specific locations from the country to present the total economic damage for this level information.
+                 Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion').
+                 If the information is missing or if no total economic damage in this level is mentioned, assign 'NULL'."
+              - "Num_Unit": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Inflation_Adjusted": "Indicate 'Yes' if the total economic damage amount has been adjusted for inflation; otherwise "No", and if Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Inflation_Adjusted_Year": "The year of inflation adjustment for the total economic damage, if applicable; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+              - "Annotation": "Cite the header name from the article provided where you find the information about the total economic damage in this level. The output should only include the header name."
+                  }}]
+               Ensure to capture all instances of economic damage mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed.""",
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+            extract the economic damage information associated with the {Event_Name}, along with supporting annotations from the article. The information is the specific instance of economic damage in the sub-national level caused by the {Event_Name}, make sure to capture all locations with economic damage information and organize this information in JSON format as follows:
+              - "Specific_Instance_Per_Administrative_Area_Damage":[{{
+              - "Administrative_Area": "Name of the country."
+              - "Locations": "The specific place/places within the country where the economic damage occurred, and no matter the economic damage is in one or several places, order it/them in a list like ["Location1";"Location2";"Location3"]."
+              - "Start_Date": "The start date when the economic damage occurred, if mentioned."
+              - "End_Date":"The end date when the economic damage occurred, if mentioned."
+              - "Num": "The amount of economic damage in the specific location/locations related to the {Event_Name}.
+                 Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion'). If the information is missing, assign 'NULL'."
+              - "Num_Unit": "The currency of the economic damage, like USD, EUR. If Economic_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Inflation_Adjusted": "Indicate 'Yes' if the economic damage amount has been adjusted for inflation; otherwise "No", If Economic_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Inflation_Adjusted_Year": "The year of inflation adjustment for the economic damage, if applicable; If Economic_Damage is missing from the previous step, assign 'NULL'."
+              - "Annotation": "Cite the header name from the article provided where you find the information about the economic damage in this location. The output should only include the header name."
+
+                 }}]
+            Ensure to capture all instances of economic damage mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
+    ],
+}
+
+
+# V_5 is the one with three prompts for each impact category, can only feed the L1 and L2, because L3 is feeded in the V_4, but make things easy, just feed all of them, and for testing
+V_5: dict = {
+    "affected": [
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+      extract the number of affected people associated with the {Event_Name}, along with supporting annotations from the article.
+      The information is the total number of affected people caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Total_Summary_Affected":{{
+      - "Total_Affected": "The total number of people who were affected, impacted, or influenced in the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         Do not sum the number of affected people in the article to present the total number of affected people,
+         and if no total number of affected people explicitly mentioned or the information is missing, assign 'NULL'."
+      - "Total_Affected_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total affected people. The output should only include "Info_Box" or the header name."
+      }}
+      Only Give Json output, no extra explanation needed.""",
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+      extract the number of affected people associated with the {Event_Name}, along with supporting annotations from the article.
+      The information is the total number of affected people in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Instance_Per_Administrative_Areas_Affected":[{{
+      - "Administrative_Areas": "Name of the country where the affected people located, and no matter the affected people are in one or several countries, please order them in a list like [Country1, Country2, Country3]."
+      - "Start_Date": "The start date when the people were affected, if mentioned."
+      - "End_Date":"The end date when the people were affected, if mentioned."
+      - "Num": "The total number of people who were affected, impacted, or influenced in this level related to the {Event_Name}.
+         Do not sum the number of affected people in specific locations from the country to present the total number of affected people for this level information.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         If the information is missing or if no total number of affected people in this level is mentioned, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the total affected people in this level. The output should only include the header name."
+            }}]
+         Ensure to capture all instances of affected people mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed.""",
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+      extract the number of affected people associated with the {Event_Name}, along with supporting annotations from the article.
+      The information is the specific instance of affected people in the sub-national level caused by the {Event_Name},
+        make sure to capture all locations with affected people information and organize this information in JSON format as follows:
+      - "Specific_Instance_Per_Administrative_Area_Affected":[{{
+      - "Administrative_Area": "Name of the country."
+      - "Locations": "The specific place within the country where the affected people located, and no matter the affected people are in one or several places, order them in a list like ["Location1";"Location2";"Location3"]."
+      - "Start_Date": "The start date when the people were affected, if mentioned."
+      - "End_Date":"The end date when the people were affected, if mentioned."
+      - "Num": "The number of people who were affected, impacted, or influenced in the specific location/locations related to the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         If the information is missing, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the affected people in this location. The output should only include the header name."
+       }}]
+      Ensure to capture all instances of affected people mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
+    ],
+    "buildings_damaged": [
+        """Based on the provided article {Info_Box} {Whole_Text},
+      extract the number of damaged buildings associated with the {Event_Name},
+      covering a wide range of building types such as structures, homes, houses, households, apartments, office buildings, retail stores, hotels, schools, hospitals, and more,
+      along with supporting annotations from the article. The number of damaged buildings information can be splited into 2 parts,
+      The information is the total number of damaged buildings caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Total_Summary_Buildings_Damaged":{{
+      - "Total_Buildings_Damaged": "The total number of damaged buildings in the {Event_Name}.
+          Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., "hundreds of, "few houses", "several homes").
+          Do not sum the number of damaged buildings in the article to present the total number of damaged buildings,
+          and if no total number of damaged buildings explicitly mentioned or the information is missing, assign 'NULL'."
+      - "Total_Buildings_Damaged_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total number of damaged buildings. The output should only include "Info_Box" or the header name."
+        }} Only Give Json output, no extra explanation needed.""",
+        """Based on the provided article {Info_Box} {Whole_Text},
+      extract the number of damaged buildings associated with the {Event_Name},
+      covering a wide range of building types such as structures, homes, houses, households, apartments, office buildings, retail stores, hotels, schools, hospitals, and more,
+      along with supporting annotations from the article.The information is the total number of damaged buildings in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Instance_Per_Administrative_Areas_Buildings_Damaged":[{{
+      - "Administrative_Areas": "Name of the country where the building damage occured, and no matter the building damage is in one or several countries, please order them in a list like [Country1, Country2, Country3].."
+      - "Start_Date": "The start date when the damaged buildings occurred, if mentioned."
+      - "End_Date":"The end date when the damaged buildings occurred, if mentioned."
+      - "Num": ""The total number of damaged buildings in this level related to the {Event_Name}.
+         Do not sum the number of damaged buildings in specific locations from the country to present the total number of damaged buildings for this level information.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., "hundreds of, "few houses", "several homes").
+         If the information is missing or if no total number of damaged buildings in this level is mentioned, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the total building damage in this level. The output should only include the header name."
+            }}]
+         Ensure to capture all instances of damaged buildings mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
+        """ Based on the provided article {Info_Box} {Whole_Text},
+      extract the number of damaged buildings associated with the {Event_Name},
+      covering a wide range of building types such as structures, homes, houses, households, apartments, office buildings, retail stores, hotels, schools, hospitals, and more,
+      along with supporting annotations from the article. The information is the specific instance of damaged buildings within each country caused by the {Event_Name}, make sure to capture all locations with damaged buildings information and organize this information in JSON format as follows:
+      - "Specific_Instance_Per_Administrative_Area_Buildings_Damaged":[{{
+      - "Administrative_Area": "Name of the country."
+      - "Locations": "The specific place/places within the country where the damaged buildings occurred, and no matter the building damage is in one or several places, order it/them in a list like ["city1";"city2";"city3"]."
+      - "Start_Date": "The start date when the damaged buildings occurred, if mentioned."
+      - "End_Date":"The end date when the damaged buildings occurred, if mentioned."
+      - "Num": "The number of damaged buildings in the specific location/locations related to the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., "hundreds of, "few houses", "several homes"). If the information is missing, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the building damage in this location. The output should only include the header name."
+            }}]
+      Ensure to capture all instances of damaged buildings mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
+    ],
+    "deaths": [
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text}, extract the number of deaths associated with the {Event_Name},
+      along with supporting annotations from
+      The information is the total number of deaths caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Total_Summary_Deaths":{{
+      - "Total_Deaths": "The total number of people who died in the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         Do not sum the number of death in the article to present the total number of death, and if no total number of death explicitly mentioned or the information is missing, assign 'NULL'."
+      - "Total_Deaths_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total death. The output should only include "Info_Box" or the header name."
+      }} Only Give Json output, no extra explanation needed.""",
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text}, extract the number of deaths associated with the {Event_Name},
+      along with supporting annotations from the article. The information is the total number of deaths in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Instance_Per_Administrative_Areas_Deaths":[{{
+      - "Administrative_Areas": "Name of the country where the death occurred, and no matter the deaths are in one or several countries, please order them in a list like [Country1, Country2, Country3]."
+      - "Start_Date": "The start date when the deaths occurred, if mentioned."
+      - "End_Date":"The end date when the deaths occurred, if mentioned."
+      - "Num": "The total number of people who died in this level related to the {Event_Name}.
+         Do not sum the number of death in specific locations from the country to present the total number of death for this level information.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         If the information is missing or if no total number of death in this level is mentioned, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the total death in this level. The output should only include the header name."
+            }}]
+         Ensure to capture all instances of death mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed.""",
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text}, extract the number of deaths associated with the {Event_Name},
+      along with supporting annotations from the article. The information is the specific instance of deaths in the sub-national level caused by the {Event_Name}, make sure to capture all locations with death information and organize this information in JSON format as follows:
+      - "Specific_Instance_Per_Administrative_Area_Deaths":[{{
+      - "Administrative_Area": "Name of the country."
+      - "Locations": "The specific place within the country where the deaths occurred, and no matter the deaths are in one or several places, order them in a list like ["Location1";"Location2";"Location3"]."
+      - "Start_Date": "The start date when the deaths occurred, if mentioned."
+      - "End_Date":"The end date when the deaths occurred, if mentioned."
+      - "Num": "The number of people who died in the specific location/locations related to the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people'). If the information is missing, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the death in this location. The output should only include the header name."
+       }}]
+      Ensure to capture all instances of death mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
+    ],
+    "displaced": [
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+      extract the number of displacement associated with the {Event_Name}, along with supporting annotations from the article.
+
+      The information is the total number of displacement caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Total_Summary_Displaced":{{
+      - "Total_Displaced": "The total number of people who were displaced, evacuated, transfered/moved to the shelter, relocated or fleed in the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         Do not sum the number of displacement in the article to present the total number of displacement,
+         and if no total number of displacement explicitly mentioned or the information is missing, assign 'NULL'."
+      - "Total_Displaced_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total displacement. The output should only include "Info_Box" or the header name."
+      }}Only Give Json output, no extra explanation needed.""",
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+      extract the number of displacement associated with the {Event_Name}, along with supporting annotations from the article. The information is the total number of displacement in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Instance_Per_Administrative_Areas_Displaced":[{{
+      - "Administrative_Areas": "Name of the country where the displacement occurred, and no matter the displacement is in one or several countries, please order them in a list like [Country1, Country2, Country3]."
+      - "Start_Date": "The start date when the displacement occurred, if mentioned."
+      - "End_Date":"The end date when the displacement occurred, if mentioned."
+      - "Num": "The total number of people who were displaced, evacuated, transfered/moved to the shelter, relocated or fleed in this level related to the {Event_Name}.
+         Do not sum the number of displacement in specific locations from the country to present the total number of displacement for this level information.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         If the information is missing or if no total number of displacement in this level is mentioned, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the total displacement in this level. The output should only include the header name."
+            }}]
+         Ensure to capture all instances of displacement mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed.""",
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+      extract the number of displacement associated with the {Event_Name}, along with supporting annotations from the article. The information is the specific instance of displacement in the sub-national level caused by the {Event_Name}, make sure to capture all locations with displacement information and organize this information in JSON format as follows:
+      - "Specific_Instance_Per_Administrative_Area_Displaced":[{{
+      - "Administrative_Area": "Name of the country."
+      - "Locations": "The specific place within the country where the displacement occurred, and no matter the displacement is in one or several places, order them in a list like ["Location1";"Location2";"Location3"]."
+      - "Start_Date": "The start date when the displacement occurred, if mentioned."
+      - "End_Date":"The end date when the displacement occurred, if mentioned."
+      - "Num": "The number of people who were displaced, evacuated, transfered/moved to the shelter, relocated or fleed in the specific location/locations related to the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people'). If the information is missing, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the displacement in this location. The output should only include the header name."
+       }}]
+      Ensure to capture all instances of displacement mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
+    ],
+    "homeless": [
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+      extract the number of homelessness associated with the {Event_Name}, along with supporting annotations from the article.
+
+      The information is the total number of homelessness caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Total_Summary_Homeless":{{
+      - "Total_Homeless": "The total number of people who were homeless, lost their homes, experienced house damage, had their homes destroyed, were unhoused, without shelter, houseless, or shelterless in the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         Do not sum the number of homelessness in the article to present the total number of homelessness,
+         and if no total number of homelessness explicitly mentioned or the information is missing, assign 'NULL'."
+      - "Total_Homeless_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total homelessness. The output should only include "Info_Box" or the header name."
+      }}Only Give Json output, no extra explanation needed.""",
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+      extract the number of homelessness associated with the {Event_Name}, along with supporting annotations from the article.The information is the total number of homelessness in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Instance_Per_Administrative_Areas_Homeless":[{{
+      - "Administrative_Areas": "Name of the country where the homelessness occurred, and no matter the homelessness is in one or several countries, please order them in a list like [Country1, Country2, Country3]."
+      - "Start_Date": "The start date when the homelessness occurred, if mentioned."
+      - "End_Date":"The end date when the homelessness occurred, if mentioned."
+      - "Num": "The total number of people who were homeless, lost their homes, experienced house damage, had their homes destroyed, were unhoused, without shelter, houseless, or shelterless in this level related to the {Event_Name}.
+         Do not sum the number of homelessness in specific locations from the country to present the total number of homelessness for this level information.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         If the information is missing or if no total number of homelessness in this level is mentioned, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the total homelessness in this level. The output should only include the header name."
+            }}]
+         Ensure to capture all instances of homelessness mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+      extract the number of homelessness associated with the {Event_Name}, along with supporting annotations from the article. The information is the specific instance of homelessness in the sub-national level caused by the {Event_Name}, make sure to capture all locations with homelessness information and organize this information in JSON format as follows:
+      - "Specific_Instance_Per_Administrative_Area_Homeless":[{{
+      - "Administrative_Area": "Name of the country."
+      - "Locations": "The specific place within the country where the homelessness occurred, and no matter the homelessness is in one or several places, order them in a list like ["Location1";"Location2";"Location3"]."
+      - "Start_Date": "The start date when the homelessness occurred, if mentioned."
+      - "End_Date":"The end date when the homelessness occurred, if mentioned."
+      - "Num": "The number of people who were homeless, lost their homes, experienced house damage, had their homes destroyed, were unhoused, without shelter, houseless, or shelterless in the specific location/locations related to the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people'). If the information is missing, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the homelessness in this location. The output should only include the header name."
+       }}]
+      Ensure to capture all instances of homelessness mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
+    ],
+    "injuries": [
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+      extract the number of non-fatal injuries associated with the {Event_Name}, along with supporting annotations from the article.
+
+      The information is the total number of non-fatal injuries caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Total_Summary_Injuries":{{
+      - "Total_Injuries": "The total number of people who got injured, hurt, wound, or hospitalized (excluding death) in the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         Do not sum the number of non-fatal injuries in the article to present the total number of non-fatal injuries,
+         and if no total number of non-fatal injuries explicitly mentioned or the information is missing, assign 'NULL'."
+      - "Total_Injuries_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total non-fatal injuries. The output should only include "Info_Box" or the header name."
+      }}Only Give Json output, no extra explanation needed.""",
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+      extract the number of non-fatal injuries associated with the {Event_Name}, along with supporting annotations from the article. The information is the total number of non-fatal injuries in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Instance_Per_Administrative_Areas_Injuries":[{{
+      - "Administrative_Areas": "Name of the country where the non-fatal injuries occurred, and no matter the non-fatal injuries are in one or several countries, please order them in a list like [Country1, Country2, Country3]."
+      - "Start_Date": "The start date when the non-fatal injuries occurred, if mentioned."
+      - "End_Date":"The end date when the non-fatal injuries occurred, if mentioned."
+      - "Num": "The total number of people who got injured, hurt, wound, or hospitalized (excluding death) in this level related to the {Event_Name}.
+         Do not sum the number of non-fatal injuries in specific locations from the country to present the total number of non-fatal injuries for this level information.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         If the information is missing or if no total number of non-fatal injuries in this level is mentioned, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the total non-fatal injuries in this level. The output should only include the header name."}}]
+         Ensure to capture all instances of non-fatal injuries mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed.""",
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+      extract the number of non-fatal injuries associated with the {Event_Name}, along with supporting annotations from the article. The information is the specific instance of non-fatal injuries in the sub-national level caused by the {Event_Name}, make sure to capture all locations with non-fatal injuries information and organize this information in JSON format as follows:
+      - "Specific_Instance_Per_Administrative_Area_Injuries":[{{
+      - "Administrative_Area": "Name of the country."
+      - "Locations": "The specific place within the country where the non-fatal injuries occurred, and no matter the non-fatal injuries are in one or several places, order them in a list like ["Location1";"Location2";"Location3"]."
+      - "Start_Date": "The start date when the non-fatal injuries occurred, if mentioned."
+      - "End_Date":"The end date when the non-fatal injuries occurred, if mentioned."
+      - "Num": "The number of people who got injured, hurt, wound, or hospitalized (excluding death) in the specific location/locations related to the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people'). If the information is missing, assign 'NULL'."
+      - "Annotation": "Cite the header name from the article provided where you find the information about the non-fatal injuries in this location. The output should only include the header name."
+       }}]
+      Ensure to capture all instances of non-fatal injuries mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
+    ],
+    "insured_damage": [
+        """
+            Based on information box {Info_Box} and header-content pair article {Whole_Text},
+            extract the insured damage information associated with the {Event_Name}, along with supporting annotations from the article.
+
+            The information is the total insured damage caused by the {Event_Name}, including damage or loss to property, belongings, or persons covered under the terms of an insurance policy,
+            and organize this information in JSON format as follows:
+            - "Total_Summary_Insured_Damage": {{
+            - "Total_Insured_Damage": "The total amount of insured damage and make sure the information extracted for this containing the keyword "insured" or "insurance".
+               Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion', "minimal").
+               Do not sum the number of insured damage in the article to present the total number of insured damage,
+               and if no total number of insured damage explicitly mentioned or the information is missing, assign 'NULL'."
+            - "Total_Insured_Damage_Unit": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Insured_Damage_Inflation_Adjusted": "Indicate 'Yes' if the total insured damage amount has been adjusted for inflation; otherwise "No", If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Insured_Damage_Inflation_Adjusted_Year": "The year of inflation adjustment for the total insured damage, if applicable; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Insured_Damage_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total insured damage. The output should only include "Info_Box" or the header name."
+              }} Only Give Json output, no extra explanation needed.""",
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+            extract the insured damage information associated with the {Event_Name}, along with supporting annotations from the article.
+            The information is the total insured damage in the country level caused by the {Event_Name}, including damage or loss to property, belongings, or persons covered under the terms of an insurance policy,
+            and organize this information in JSON format as follows:
+             - "Instance_Per_Administrative_Areas_Insured_Damage":[{{
+              - "Administrative_Areas": "Name of the country where the insured damage occured, and no matter the total insured damage is in one or several countries, please order them in a list like [Country1, Country2, Country3]."
+              - "Start_Date": "The start date when the insured damage occurred, if mentioned."
+              - "End_Date":"The end date when the insured damage occurred, if mentioned."
+              - "Num": "The total amount of insured damage in this level related to the {Event_Name} and make sure the information extracted for this containing the keyword "insured" or "insurance".
+                 Do not sum the insured damage in specific locations from the country to present the total insured damage for this level information.
+                 Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion').
+                 If the information is missing or if no total insured damage in this level is mentioned, assign 'NULL'."
+              - "Num_Unit": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Inflation_Adjusted": "Indicate 'Yes' if the total insured damage amount has been adjusted for inflation; otherwise "No", and if Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Inflation_Adjusted_Year": "The year of inflation adjustment for the total insured damage, if applicable; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+              - "Annotation": "Cite the header name from the article provided where you find the information about the total insured damage in this level. The output should only include the header name."
+                  }}]
+                   Ensure to capture all instances of insured damage mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed.""",
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+                extract the insured damage information associated with the {Event_Name}, along with supporting annotations from the article. The information is the specific instance of insured damage in the sub-national level caused by the {Event_Name}, make sure to capture all locations with insured damage information, including damage or loss to property, belongings, or persons covered under the terms of an insurance policy, and organize this information in JSON format as follows:
+              - "Specific_Instance_Per_Administrative_Area_Insured_Damage":[{{
+              - "Administrative_Area": "Name of the country."
+              - "Locations": "The specific place/places within the country where the insured damage occurred, and no matter the insured damage is in one or several places, order it/them in a list like ["Location1";"Location2";"Location3"]."
+              - "Start_Date": "The start date when the insured damage occurred, if mentioned."
+              - "End_Date":"The end date when the insured damage occurred, if mentioned."
+              - "Num": "The amount of insured damage in the specific location/locations related to the {Event_Name} and make sure the information extracted for this containing the keyword "insured" or "insurance".
+                 Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion'). If the information is missing, assign 'NULL'."
+              - "Num_Unit": "The currency of the insured damage, like USD, EUR. If Insured_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Inflation_Adjusted": "Indicate 'Yes' if the insured damage amount has been adjusted for inflation; otherwise "No", If Insured_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Inflation_Adjusted_Year": "The year of inflation adjustment for the insured damage, if applicable; If Insured_Damage is missing from the previous step, assign 'NULL'."
+              - "Annotation": "Cite the header name from the article provided where you find the information about the insured damage in this location. The output should only include the header name."
+
+                 }}]
+            Ensure to capture all instances of insured damage mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
+    ],
+    "damage": [
+        """
+            Based on information box {Info_Box} and header-content pair article {Whole_Text},
+            extract the economic damage information associated with the {Event_Name}, along with supporting annotations from the article.
+
+            The information is the total economic damage caused by the {Event_Name},
+            and organize this information in JSON format as follows:
+            - "Total_Summary_Damage": {{
+            - "Total_Damage": "The total amount of economic damage.
+               Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion', "minimal").
+               Do not sum the number of economic damage in the article to present the total number of economic damage,
+               and if no total number of economic damage explicitly mentioned or the information is missing, assign 'NULL'."
+            - "Total_Damage_Unit": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Damage_Inflation_Adjusted": "Indicate 'Yes' if the total economic damage amount has been adjusted for inflation; otherwise "No", If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Damage_Inflation_Adjusted_Year": "The year of inflation adjustment for the total economic damage, if applicable; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Damage_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total economic damage. The output should only include "Info_Box" or the header name."
+              }} Only Give Json output, no extra explanation needed.""",
+        """
+            Based on information box {Info_Box} and header-content pair article {Whole_Text},
+            extract the economic damage information associated with the {Event_Name}, along with supporting annotations from the article.
+            The information is the total economic damage in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
+             - "Instance_Per_Administrative_Areas_Damage":[{{
+              - "Administrative_Areas": "Name of the country where the economic damage occured, and no matter the total economic damage is in one or several countries, please order them in a list like [Country1, Country2, Country3]."
+              - "Start_Date": "The start date when the economic damage occurred, if mentioned."
+              - "End_Date":"The end date when the economic damage occurred, if mentioned."
+              - "Num": "The total amount of economic damage in this level related to the {Event_Name}.
+                 Do not sum the economic damage in specific locations from the country to present the total economic damage for this level information.
+                 Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion').
+                 If the information is missing or if no total economic damage in this level is mentioned, assign 'NULL'."
+              - "Num_Unit": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Inflation_Adjusted": "Indicate 'Yes' if the total economic damage amount has been adjusted for inflation; otherwise "No", and if Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Inflation_Adjusted_Year": "The year of inflation adjustment for the total economic damage, if applicable; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+              - "Annotation": "Cite the header name from the article provided where you find the information about the total economic damage in this level. The output should only include the header name."
+                  }}]
+               Ensure to capture all instances of economic damage mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed.""",
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
+            extract the economic damage information associated with the {Event_Name}, along with supporting annotations from the article. The information is the specific instance of economic damage in the sub-national level caused by the {Event_Name}, make sure to capture all locations with economic damage information and organize this information in JSON format as follows:
+              - "Specific_Instance_Per_Administrative_Area_Damage":[{{
+              - "Administrative_Area": "Name of the country."
+              - "Locations": "The specific place/places within the country where the economic damage occurred, and no matter the economic damage is in one or several places, order it/them in a list like ["Location1";"Location2";"Location3"]."
+              - "Start_Date": "The start date when the economic damage occurred, if mentioned."
+              - "End_Date":"The end date when the economic damage occurred, if mentioned."
+              - "Num": "The amount of economic damage in the specific location/locations related to the {Event_Name}.
+                 Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion'). If the information is missing, assign 'NULL'."
+              - "Num_Unit": "The currency of the economic damage, like USD, EUR. If Economic_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Inflation_Adjusted": "Indicate 'Yes' if the economic damage amount has been adjusted for inflation; otherwise "No", If Economic_Damage is missing from the previous step, assign 'NULL'."
+              - "Num_Inflation_Adjusted_Year": "The year of inflation adjustment for the economic damage, if applicable; If Economic_Damage is missing from the previous step, assign 'NULL'."
+              - "Annotation": "Cite the header name from the article provided where you find the information about the economic damage in this location. The output should only include the header name."
+
+                 }}]
+            Ensure to capture all instances of economic damage mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """,
+    ],
 }

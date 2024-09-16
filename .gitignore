@@ -12,6 +12,10 @@ results
 # ignore openai api keys
 **/*.env
 
+#ignore .jsonl file for batch process
+**/*basic.jsonl
+**/*impact.jsonl
+
 # ... except for this excel file (gold flat-format annotation table)
 !Database/gold/ImpactDB_DataTable_Validation.xlsx
 

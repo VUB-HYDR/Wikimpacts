@@ -7,7 +7,7 @@ from pathlib import Path
 import openai
 from dotenv import load_dotenv
 
-from Database.scr.normalize_utils import Logging
+from Database.scr.log_utils import Logging
 
 if __name__ == "__main__":
     logger = Logging.get_logger("get results from batch processing")
@@ -41,6 +41,23 @@ if __name__ == "__main__":
         help="The directory where the original file lands (as .json)",
         type=str,
     )
+
+    parser.add_argument(
+        "-d",
+        "--description",
+        dest="description",
+        help="The description of the experiment",
+        type=str,
+    )
+    parser.add_argument(
+        "-m",
+        "--model_name",
+        dest="model_name",
+        default="gpt-4o-2024-05-13",  # This model supports at most 4096 completion tokens, and need to specify json-output
+        help="The model version applied in the experiment, like gpt-4o-mini. ",
+        type=str,
+    )
+
     args = parser.parse_args()
     logger.info(f"Passed args: {args}")
     logger.info(f"Loading {args.raw_dir}")
@@ -93,11 +110,11 @@ if __name__ == "__main__":
         # Iterate over each batch
         for batch in batches:
             des = batch.metadata
-            # only return the result with the same file name in the metadata description
-            if str(args.filename) in des:
+            # only return the result with the same file name and the defined experiment description in the metadata description
+            if str(args.filename) and str(args.description) and str(args.model_name) in des.get("description"):
                 batch_id = batch.id
                 output_file_id = batch.output_file_id
-                # Retrieve the batch details (if needed)
+                # Retrieve the batch details
                 client.batches.retrieve(batch_id)
                 # Retrieve the file content associated with the output_file_id
                 file_response = client.files.content(output_file_id)
@@ -118,8 +135,10 @@ if __name__ == "__main__":
                             # If a JSONDecodeError occurs, log the error in the df
                             df["Json_Error"] = str(e)
                     # Append the dictionary to the response list
-            response.append(df)
+        response.append(df)
 
-    out_file_path = f"{args.output_dir}/{args.filename.replace('.json', '')}_rawoutput.json"
+    out_file_path = (
+        f"{args.output_dir}/{args.filename.replace('.json', '')}_{args.description}_{args.model_name}_rawoutput.json"
+    )
     with open(out_file_path, "w") as json_file:
         json.dump(response, json_file, indent=4)
