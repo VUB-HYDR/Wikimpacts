@@ -113,6 +113,7 @@ shared_cols = [
     "Event_ID_decimal",
     "Sources",
     "Event_Names",
+    "Main_Event",
     "Hazards",
     "split",  # dataset split; example: dev/test
 ]
@@ -279,7 +280,7 @@ def flatten_data_table():
     logger.info(f"Converting to floats: {convert_to_float}")
     for col in convert_to_float:
         logger.debug(col)
-        data_table[col] = data_table[col].progress_apply(lambda x: float(x) if isinstance(x, str) else None)
+        data_table[col] = data_table[col].progress_apply(lambda x: float(x) if isinstance(x, str) and x else None)
 
     yes_pattern = re.compile(r"^[\s|.|,]*(yes|true)[\s|.|,]*$", flags=re.IGNORECASE | re.MULTILINE)
     no_pattern = re.compile(r"^[\s|.|,]*(No|false)[\s|.|,]*$", flags=re.IGNORECASE | re.MULTILINE)
@@ -360,6 +361,20 @@ def flatten_data_table():
     Events.rename(columns={"Administrative_Area_Norm": "Administrative_Areas_Norm"}, inplace=True)
     Events.drop(columns=["Location_Norm"], inplace=True)
 
+    total_columns_rename_keys = [
+        x
+        for x in Events.columns
+        if any([x.endswith(y) for y in ["_Min", "_Max", "_Unit", "_Adjusted_Year", "_Adjusted"]])
+        and not x.startswith("Total_")
+    ]
+    total_columns_rename_values = [f"Total_{x}" for x in total_columns_rename_keys]
+    total_columns_map = {
+        total_columns_rename_keys[i]: total_columns_rename_values[i] for i in range(len(total_columns_rename_keys))
+    }
+    logger.info(f"Renaming columns to 'Total_...`. Mapping: {total_columns_map}")
+
+    Events.rename(columns=total_columns_map, inplace=True)
+
     # Level 2 -- "Impacts Per country-level Administrative Area"
     # multiple administrative areas, the lenght of this list is the same or smaller than that in "Events" (l1)
     Instance_Per_Administrative_Areas = data_table[
@@ -414,6 +429,7 @@ def flatten_data_table():
                     logger.debug(f"Dropping rows missing specific impacts: {df.shape}")
                     missing_spec_impact_msk = df[event_breakdown_columns[col_type][cat]].isna().all(axis=1)
                     df = df[~missing_spec_impact_msk]
+
                     if name == "Instance_Per_Administrative_Areas":  # L2
                         df["Administrative_Area_Norm"] = df["Administrative_Area_Norm"].progress_apply(
                             lambda x: [y.split("|") if y else None for y in x]

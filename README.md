@@ -197,18 +197,19 @@ Also, this config will result in evaluating only on this smaller set of columns,
  When your config is ready, run the evaluation script:
 
 ```shell
-poetry run python3 Evaluation/evaluator.py --sys-file  Database/output/<EXPERIMENT_NAME>/dev/<EXPERIMENT.PARQUET> --gold-file Database/gold/<EXPERIMENT_GOLD.PARQUET> --model-name "<EXPERIMENT_NAME>/<DATA_SPLIT>" --null-penalty 1 --score all --weights_config <EXPERIMENT_NAME>
+poetry run python3 Evaluation/evaluator.py --sys_file  Database/output/<EXPERIMENT_NAME>/dev/<EXPERIMENT.PARQUET> --gold_file Database/gold/<EXPERIMENT_GOLD.PARQUET> --model_name "<EXPERIMENT_NAME>/<DATA_SPLIT>" --null_penalty 1 --score all --weights_config <EXPERIMENT_NAME> --event_level <L1,L2,L3>
 ```
 
 For example, the script below runs the evaluation on the output from mixtral-8x7b-insctruct agains the dev set gold file, and saves the results in `Database/evaluation_results/example/dev`:
 
 ```shell
-poetry run python3 Evaluation/evaluator.py --sys-file  Database/output/nlp4climate/dev/mixtral-8x7b-instruct-source.parquet \
---gold-file Database/gold/gold_dev_20240515.parquet \
---model-name "example/dev" \
---null-penalty 1 \
+poetry run python3 Evaluation/evaluator.py --sys_file  Database/output/nlp4climate/dev/mixtral-8x7b-instruct-source.parquet \
+--gold_file Database/gold/gold_dev_20240515.parquet \
+--model_name "example/dev" \
+--null_penalty 1 \
 --score all \
---weights_config nlp4climate
+--weights_config nlp4climate \
+--event_level l1 # for the nlp4climate experiments, only l1 is avaiable and backwards compatible
 ```
 
 #### Evaluate l2 (Instance per Administrative Area) and l3 (Specific Instance Per Administrative Area) events
@@ -219,11 +220,11 @@ Below is a scipt that evaluates two dummy sets (gold and sys) to showcase a work
 
 ```shell
 poetry run python3 Evaluation/evaluator.py \
---sys-file tests/specific_instance_eval/test_sys_list_death.parquet \
---gold-file tests/specific_instance_eval/test_gold_list_death.parquet \
---model-name "specific_instance_eval_test/dev/deaths" \
+--sys_file tests/specific_instance_eval/test_sys_list_death.parquet \
+--gold_file tests/specific_instance_eval/test_gold_list_death.parquet \
+--model_name "specific_instance_eval_test/dev/deaths" \
 # TODO: update this!
---event_level sub \
+--event_level l2 \
 --weights_config specific_instance \
 --specific_instance_type deaths
 ```
@@ -289,7 +290,7 @@ source Database/insert_full_run.sh Database/output/dummy impact.v1.db tmp/files
 poetry run python3 Database/gold_from_excel.py \
 --input-file "Database/gold/ImpactDB_DataTable_Validation.xlsx" \
 --sheet-name ImpactDB_manual_copy_MDMMYYY  \
---output-dir Database/gold/gold_from_excel \
+--output-dir Database/gold/gold_from_excel
 ```
 
 > [!IMPORTANT]
