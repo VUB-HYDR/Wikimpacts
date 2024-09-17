@@ -11,6 +11,47 @@ class Comparer:
         self.norm = Normaliser()
         self.target_columns = target_columns
 
+        # Strings
+        string_cols = [
+            "Main_Event",
+            "Event_ID",
+            "Administrative_Area_Norm",
+            "Country_Norm",
+            "Location_Norm",
+            "Event_Name",
+        ]
+        string_cols.extend([x for x in self.target_columns if "_Unit" in x])
+        self.string_columns: list = self.target_col(string_cols)
+
+        # Sequences
+        self.sequence_columns: list = self.target_col(
+            ["Administrative_Areas_Norm", "Locations_Norm", "Event_Names", "Hazards"]
+        )
+
+        # Dates
+        self.date_columns: list = self.target_col([])
+
+        # Integers
+        # Dates and all _Min/_Max values for the numerical and monetary impact types and all inflation adjustment years
+        self.integer_columns: list = self.target_col(
+            [
+                k
+                for k in [
+                    x
+                    for x in self.target_columns
+                    if "_Date_" in x
+                    or x.endswith("_Min")
+                    or x.endswith("_Max")
+                    or x.endswith("_Inflation_Adjusted_Year")
+                ]
+            ]
+        )
+
+        # Booleans
+        self.boolean_columns: list = [
+            k for k in self.target_col([x for x in self.target_columns if x.endswith("_Inflation_Adjusted")])
+        ]
+
     def target_col(self, l) -> list:
         """Returns a list of columns if they are in the set of specified target columns"""
         return list(set(l) & set(self.target_columns))
@@ -44,6 +85,7 @@ class Comparer:
     def sequence(self, v, w):
         """Compare sequences. Returns Jaccard distance between sets of elements in sequences.
         Note: ordering is not taken into consideration."""
+        print(v, w)
         if v == None and w == None:
             return 0
         if v == None and w != None or v != None and w == None:
@@ -63,32 +105,25 @@ class Comparer:
         """Compare all fields."""
         score = {}
         # Strings
-        # TODO: name or names?
-        string_cols = ["Main_Event", "Event_ID", "Administrative_Area_Norm"]
-        string_cols.extend([x for x in self.target_columns if "_Unit" in x])
-
-        for k in self.target_col(string_cols):
+        for k in self.string_columns:
             score[k] = self.string(v[k], w[k])
 
         # Sequences
-        for k in self.target_col(["Administrative_Areas_Norm", "Locations_Norm", "Event_Names"]):
+        for k in self.sequence_columns:
+            print(k)
             score[k] = self.sequence(v[k], w[k])
 
         # Dates
-        for k in []:
+        for k in self.date_columns:
             score[k] = self.date(v[k], w[k])
 
         # Integers
-        # Dates and all _Min/_Max values for the monetary impact type
-        for k in [
-            x
-            for x in self.target_columns
-            if x.endswith("_Date") or x.endswith("_Min") or x.endswith("_Max") or x.endswith("_Inflation_Adjusted_Year")
-        ]:
+        # Dates and all _Min/_Max values for the numerical and monetary impact types and all inflation adjustment years
+        for k in self.integer_columns:
             score[k] = self.integer(v[k], w[k])
 
         # Booleans
-        for k in [x for x in self.target_columns if x.endswith("_Inflation_Adjusted")]:
+        for k in self.boolean_columns:
             score[k] = self.boolean(v[k], w[k])
 
         # Return score dictionary after ordering by target columns order

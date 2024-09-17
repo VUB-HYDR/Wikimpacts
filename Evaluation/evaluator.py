@@ -18,7 +18,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "-sys",
-        "--sys-file",
+        "--sys_file",
         dest="sys_set_filepath",
         help="The full path to the system output in parquet",
         type=str,
@@ -26,7 +26,7 @@ if __name__ == "__main__":
 
     parser.add_argument(
         "-gold",
-        "--gold-file",
+        "--gold_file",
         dest="gold_set_filepath",
         help="The full path to the gold set in parquet",
         type=str,
@@ -34,7 +34,7 @@ if __name__ == "__main__":
 
     parser.add_argument(
         "-m",
-        "--model-name",
+        "--model_name",
         dest="model_name",
         help="A model name to store the results",
         type=str,
@@ -42,11 +42,11 @@ if __name__ == "__main__":
 
     parser.add_argument(
         "-null",
-        "--null-penalty",
+        "--null_penalty",
         dest="null_penalty",
         default=1,
         help="Null penalty, defaults to 1",
-        type=int,
+        type=float,
     )
 
     parser.add_argument(
@@ -73,17 +73,17 @@ if __name__ == "__main__":
         "-lvl",
         "--event_level",
         dest="event_level",
-        default="main",
         choices=["l1", "l2", "l3"],
         help="Choose which events to parse. Possible values: main or sub",
         type=str,
+        required=True,
     )
 
     parser.add_argument(
         "-si",
         "--impact_type",
         dest="impact_type",
-        default="specific_instance",
+        default="deaths",
         help="""Supply the specific instance type/category (example: 'deaths', 'insurance_damage')
             to store matched specific instances for gold and sys""",
         type=str,
@@ -106,7 +106,7 @@ if __name__ == "__main__":
         {np.nan: None, "NULL ": None, "NULL": None}
     )
 
-    admin_area_columns = ["Administrative_Area_Norm", "Administrative_Areas_Norm"]
+    admin_area_columns = ["Administrative_Area_Norm", "Administrative_Areas_Norm", "Country_Norm"]
     location_columns = ["Location_Norm", "Locations_Norm"]
     any_area_columns = admin_area_columns + location_columns
 

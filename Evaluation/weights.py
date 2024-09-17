@@ -1,5 +1,5 @@
 default_weights = {
-    "l1_columns": {
+    "l1": {
         "Event_ID": 0,
         "Main_Event": 1,
         "Event_Names": 0,
@@ -23,17 +23,17 @@ default_weights = {
         "Total_Displaced_Min": 1,
         "Total_Displaced_Max": 1,
         # Damage
-        "Total_Damage_Min": 1,
-        "Total_Damage_Max": 1,
-        "Total_Damage_Unit": 1,
-        "Total_Damage_Inflation_Adjusted": 1,
-        "Total_Damage_Inflation_Adjusted_Year": 1,
+        # "Total_Damage_Min": 1,
+        # "Total_Damage_Max": 1,
+        # "Total_Damage_Unit": 1,
+        # "Total_Damage_Inflation_Adjusted": 1,
+        # "Total_Damage_Inflation_Adjusted_Year": 1,
         # Insured Damage
-        "Total_Insured_Damage_Min": 1,
-        "Total_Insured_Damage_Max": 1,
-        "Total_Insured_Damage_Unit": 1,
-        "Total_Insured_Damage_Inflation_Adjusted": 1,
-        "Total_Insured_Damage_Inflation_Adjusted_Year": 1,
+        # "Total_Insured_Damage_Min": 1,
+        # "Total_Insured_Damage_Max": 1,
+        # "Total_Insured_Damage_Unit": 1,
+        # "Total_Insured_Damage_Inflation_Adjusted": 1,
+        # "Total_Insured_Damage_Inflation_Adjusted_Year": 1,
         # Date
         "Start_Date_Day": 1,
         "Start_Date_Month": 1,
@@ -44,9 +44,9 @@ default_weights = {
         # Area
         "Administrative_Areas_Norm": 1,  # list
     },
-    "l2_columns": {
+    "l2_monetary": {
         "Event_ID": 0,
-        "Hazards": 1,
+        # "Hazards": 1,
         # Date
         "Start_Date_Day": 1,
         "Start_Date_Month": 1,
@@ -55,7 +55,7 @@ default_weights = {
         "End_Date_Month": 1,
         "End_Date_Year": 1,
         # Area
-        "Administrative_Areas_Norm": 1,  # list
+        # "Administrative_Areas_Norm": 1,  # list
         # Impact
         "Num_Min": 1,
         "Num_Max": 1,
@@ -63,9 +63,9 @@ default_weights = {
         "Num_Inflation_Adjusted": 1,
         "Num_Inflation_Adjusted_Year": 1,
     },
-    "l3_columns": {
+    "l2_numerical": {
         "Event_ID": 0,
-        "Hazards": 1,
+        # "Hazards": 1,
         # Date
         "Start_Date_Day": 1,
         "Start_Date_Month": 1,
@@ -74,14 +74,47 @@ default_weights = {
         "End_Date_Month": 1,
         "End_Date_Year": 1,
         # Area
-        "Administrative_Area_Norm": 1,  # str
-        "Locations_Norm": 1,  # list
+        # "Administrative_Areas_Norm": 1,  # list
+        # Impact
+        "Num_Min": 1,
+        "Num_Max": 1,
+    },
+    "l3_monetary": {
+        "Event_ID": 0,
+        # "Hazards": 1,
+        # Date
+        "Start_Date_Day": 1,
+        "Start_Date_Month": 1,
+        "Start_Date_Year": 1,
+        "End_Date_Day": 1,
+        "End_Date_Month": 1,
+        "End_Date_Year": 1,
+        # Area
+        # "Administrative_Area_Norm": 1,  # str
+        # "Locations_Norm": 1,  # list
         # Impact
         "Num_Min": 1,
         "Num_Max": 1,
         "Num_Unit": 1,
         "Num_Inflation_Adjusted": 1,
         "Num_Inflation_Adjusted_Year": 1,
+    },
+    "l3_numerical": {
+        "Event_ID": 0,
+        # "Hazards": 1,
+        # Date
+        "Start_Date_Day": 1,
+        "Start_Date_Month": 1,
+        "Start_Date_Year": 1,
+        "End_Date_Day": 1,
+        "End_Date_Month": 1,
+        "End_Date_Year": 1,
+        # Area
+        # "Administrative_Area_Norm": 1,  # str
+        # "Locations_Norm": 1,  # list
+        # Impact
+        "Num_Min": 1,
+        "Num_Max": 1,
     },
 }
 
@@ -110,6 +143,8 @@ weights = {
         "Total_Homeless_Max": 1,
     },
     "ESSD_2024_l1": default_weights["l1"],  # default weights
-    "ESSD_2024_l2": default_weights["l2"],  # default weights
-    "ESSD_2024_l3": default_weights["l3"],  # default weights
+    "ESSD_2024_l2_numerical": default_weights["l2_numerical"],  # default weights
+    "ESSD_2024_l2_monetary": default_weights["l2_monetary"],  # default weights
+    "ESSD_2024_l3_numerical": default_weights["l3_numerical"],  # default weights
+    "ESSD_2024_l3_monetary": default_weights["l3_monetary"],  # default weights
 }
