@@ -28,7 +28,9 @@ git lfs install
 
 ## Quickstart
 
-### Run prompt experiments on OpenAI models
+#### (Step 0) Run your experiments!
+
+##### Run prompt experiments on OpenAI models
 If you use OpenAI models, there is a way to save your cost with running experiments in batch.
 We developed a series of prompts for our database as follows
 - V_0 is a list of prompts used in the NLP2024 paper
@@ -39,9 +41,11 @@ We developed a series of prompts for our database as follows
 - V_4 is the one with two prompts for each impact category, one prompt for L1/2 and one for L3
 - V_5 is the one with three prompts for each impact category
 Before you run our pipeline, please choose a version of prompts to proceed, which can be revised in the beginning of **run_prompts.py**
+
 ```shell
 from Database.Prompts.prompts import V_3 as target_prompts
 ```
+
 #### (Step 1) Raw output
 Choose the raw file contains the text you need to process, please use the clear raw file name to indicate your experiment, this name will be used as the output file, the api env you want to use, the decription of the experiment, the prompt category, and the batch file location you want to store the batch file (this is not mandatory, but it's good to check if you create correct batch file)
 
@@ -197,14 +201,14 @@ Also, this config will result in evaluating only on this smaller set of columns,
  When your config is ready, run the evaluation script:
 
 ```shell
-poetry run python3 Evaluation/evaluator.py --sys_file  Database/output/<EXPERIMENT_NAME>/dev/<EXPERIMENT.PARQUET> --gold_file Database/gold/<EXPERIMENT_GOLD.PARQUET> --model_name "<EXPERIMENT_NAME>/<DATA_SPLIT>" --null_penalty 1 --score all --weights_config <EXPERIMENT_NAME> --event_level <L1,L2,L3>
+poetry run python3 Evaluation/evaluator.py --sys_output  Database/output/<EXPERIMENT_NAME>/dev/<EXPERIMENT.PARQUET> --gold_set Database/gold/<EXPERIMENT_GOLD.PARQUET> --model_name "<EXPERIMENT_NAME>/<DATA_SPLIT>" --null_penalty 1 --score all --weights_config <EXPERIMENT_NAME> --event_level <L1,L2,L3>
 ```
 
 For example, the script below runs the evaluation on the output from mixtral-8x7b-insctruct agains the dev set gold file, and saves the results in `Database/evaluation_results/example/dev`:
 
 ```shell
-poetry run python3 Evaluation/evaluator.py --sys_file  Database/output/nlp4climate/dev/mixtral-8x7b-instruct-source.parquet \
---gold_file Database/gold/gold_dev_20240515.parquet \
+poetry run python3 Evaluation/evaluator.py --sys_output  Database/output/nlp4climate/dev/mixtral-8x7b-instruct-source.parquet \
+--gold_set Database/gold/gold_dev_20240515.parquet \
 --model_name "example/dev" \
 --null_penalty 1 \
 --score all \
@@ -221,12 +225,11 @@ Below is a scipt that evaluates two dummy sets (gold and sys) to showcase a work
 ```shell
 poetry run python3 Evaluation/evaluator.py \
 --sys_file tests/specific_instance_eval/test_sys_list_death.parquet \
---gold_file tests/specific_instance_eval/test_gold_list_death.parquet \
---model_name "specific_instance_eval_test/dev/deaths" \
-# TODO: update this!
+--gold_set tests/specific_instance_eval/test_gold_list_death.parquet \
+--model_name "example/dev/deaths" \
 --event_level l2 \
 --weights_config specific_instance \
---specific_instance_type deaths
+--impact_type deaths
 ```
 If run properly, you should see the results in `Database/evaluation_results/specific_instance_eval_test`:
 
@@ -243,6 +246,21 @@ Database/evaluation_results/specific_instance_eval_test
 
 > [!WARNING]
 > Do not commit these files to your branch or to `main`, big thanks!
+
+
+### Evaluating L1, L2, and L3 in a single run
+
+To evaluate all event levels and categories, **make sure your gold files and sys output files are in the correct structure as described in [Evaluation/evaluate_full_run.sh](Evaluation/evaluate_full_run.sh)**, then run this script:
+
+```shell
+# dataSplit can be dev or test
+source Evaluation/evaluate_full_run.sh goldFileDir sysFileDir dataSplit
+```
+
+```shell
+# example using ESDD_2024 data
+source Evaluation/evaluate_full_run.sh Database/gold/ESSD_2024 Database/output/ESSD_2024 dev
+```
 
 ### Inserting events to the database
 
