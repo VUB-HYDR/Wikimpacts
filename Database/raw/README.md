@@ -15,8 +15,3 @@ Suggested breakdown:
         ├── test_sys2_7B.json
         └── test_sys2_30B.json
 ```
-
-----
-#### TODO: add schema
-#### TODO: add schema + json validator
-#### TODO: add script to merge mixtral models (or model outputs over several files)
