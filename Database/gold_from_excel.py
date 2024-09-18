@@ -534,7 +534,6 @@ if __name__ == "__main__":
                     lvl_output = f"{args.output_dir}/{i}/{lvl}"
                     logger.info(f"Creating {lvl_output} if it does not exist!")
                     pathlib.Path(lvl_output).mkdir(parents=True, exist_ok=True)
-                    print(f"{lvl_output}/{name}.parquet")
                     df[df["split"] == i][[x for x in df.columns if x != "split"]].to_parquet(
                         f"{lvl_output}/{name}.parquet",
                         engine="fastparquet",

@@ -85,7 +85,6 @@ class Comparer:
     def sequence(self, v, w):
         """Compare sequences. Returns Jaccard distance between sets of elements in sequences.
         Note: ordering is not taken into consideration."""
-        print(v, w)
         if v == None and w == None:
             return 0
         if v == None and w != None or v != None and w == None:
@@ -110,7 +109,6 @@ class Comparer:
 
         # Sequences
         for k in self.sequence_columns:
-            print(k)
             score[k] = self.sequence(v[k], w[k])
 
         # Dates
