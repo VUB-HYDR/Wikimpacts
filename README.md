@@ -28,7 +28,9 @@ git lfs install
 
 ## Quickstart
 
-### Run prompt experiments on OpenAI models
+#### (Step 0) Run your experiments!
+
+##### Run prompt experiments on OpenAI models
 If you use OpenAI models, there is a way to save your cost with running experiments in batch.
 We developed a series of prompts for our database as follows
 - V_0 is a list of prompts used in the NLP2024 paper
@@ -39,9 +41,11 @@ We developed a series of prompts for our database as follows
 - V_4 is the one with two prompts for each impact category, one prompt for L1/2 and one for L3
 - V_5 is the one with three prompts for each impact category
 Before you run our pipeline, please choose a version of prompts to proceed, which can be revised in the beginning of **run_prompts.py**
+
 ```shell
 from Database.Prompts.prompts import V_3 as target_prompts
 ```
+
 #### (Step 1) Raw output
 Choose the raw file contains the text you need to process, please use the clear raw file name to indicate your experiment, this name will be used as the output file, the api env you want to use, the decription of the experiment, the prompt category, and the batch file location you want to store the batch file (this is not mandatory, but it's good to check if you create correct batch file)
 
@@ -109,25 +113,50 @@ If the system output is split across several files (such as Mixtral and Mistral 
 > pre-commit run --files Database/raw/<EXPERIMENT_NAME>/> <JSON_FILE_THAT_NEEDS_FORMATTING>
 > ```
 
-#### (Step 2) Parsing events and subevents
+#### (Step 2) Parsing l1, l2, and l3 events
 
 Once all system output files are merged into a single JSON file (**or if this was already the case, such as with GPT4 output**), you can parse them so they are ready to be evaluated.
     The parsing script [`Database/parse_events.py`](Database/parse_events.py) will normalize numbers (to min and max) and locations (using OpenStreetMap) and output a JSON file.
 
 ```shell
+# parse events
 poetry run python3 Database/parse_events.py \
 --raw_dir Database/raw/<EXPERIMENT_NAME> \
 --filename <JSON_FILE> \
 --output_dir Database/output/<EXPERIMENT_NAME> \
+--event_levels l1,l3 # list of events to parse, separated by a comma. Case sensitive!
 
-# "sub", "main" or "all"
---event_type all \
+# explore more options
+poetry run python3 Database/parse_events.py --help
 
-# if your country and location columns have a different name
-# you can specify it here (otherwise, defaults to
-# "Country" and "Location" (respectively)):
---country_column "Custom_Country_Column"  \
---location_column "Locations"
+```
+
+
+You can also parse l1 first and store a row file. Later on, you can parse l2 or l3 from the same file without having to re-tun all of the parsing for l1. This allows splitting jobs. You can try the example below on dummy data. It's best to delete the contents of [Database/output/dummy](Database/output/dummy) first to re-run the example!
+
+```shell
+# first, clear the dummy output directory
+rm -rv Database/output/dummy
+
+# then, parse l1 and store the raw files in json (by setting the flag "--store_raw_l1")
+# make sure to specify the name of the raw_l1 file
+poetry run python3 Database/parse_events.py \
+--raw_dir Database/raw/dummy \
+--filename dummy_llm_output_l1_l2_l3.json \
+--output_dir Database/output/dummy \
+--event_levels l1 \
+--store_raw_l1 \
+--raw_l1 "l1.raw.json"
+
+# at a later time, parse l3 or l2 or both from the same file using the raw_l1 file
+# NOTE: if you pass a value to the "--raw_l1" paramater, it means that l1 data
+# will always be loaded from this raw file, even if passed in "--event_levels"
+poetry run python3 Database/parse_events.py \
+--raw_dir Database/raw/dummy \
+--filename dummy_llm_output_l1_l2_l3.json \
+--output_dir Database/output/dummy \
+--event_levels l3,l2 \
+--raw_l1 "l1.raw.json"
 ```
 
 > [!WARNING]
@@ -168,38 +197,39 @@ Also, this config will result in evaluating only on this smaller set of columns,
 ```
 
 
-##### (B) Evaluate main events
+##### (B) Evaluate L1 (Total Summary) events
  When your config is ready, run the evaluation script:
 
 ```shell
-poetry run python3 Evaluation/evaluator.py --sys-file  Database/output/<EXPERIMENT_NAME>/dev/<EXPERIMENT.PARQUET> --gold-file Database/gold/<EXPERIMENT_GOLD.PARQUET> --model-name "<EXPERIMENT_NAME>/<DATA_SPLIT>" --null-penalty 1 --score all --weights_config <EXPERIMENT_NAME>
+poetry run python3 Evaluation/evaluator.py --sys_output  Database/output/<EXPERIMENT_NAME>/dev/<EXPERIMENT.PARQUET> --gold_set Database/gold/<EXPERIMENT_GOLD.PARQUET> --model_name "<EXPERIMENT_NAME>/<DATA_SPLIT>" --null_penalty 1 --score all --weights_config <EXPERIMENT_NAME> --event_level <L1,L2,L3>
 ```
 
 For example, the script below runs the evaluation on the output from mixtral-8x7b-insctruct agains the dev set gold file, and saves the results in `Database/evaluation_results/example/dev`:
 
 ```shell
-poetry run python3 Evaluation/evaluator.py --sys-file  Database/output/nlp4climate/dev/mixtral-8x7b-instruct-source.parquet \
---gold-file Database/gold/gold_dev_20240515.parquet \
---model-name "example/dev" \
---null-penalty 1 \
+poetry run python3 Evaluation/evaluator.py --sys_output  Database/output/nlp4climate/dev/mixtral-8x7b-instruct-source.parquet \
+--gold_set Database/gold/gold_dev_20240515.parquet \
+--model_name "example/dev" \
+--null_penalty 1 \
 --score all \
---weights_config nlp4climate
+--weights_config nlp4climate \
+--event_level l1 # for the nlp4climate experiments, only l1 is avaiable and backwards compatible
 ```
 
-#### Evaluate sub events (ie. specific instances)
+#### Evaluate l2 (Instance per Administrative Area) and l3 (Specific Instance Per Administrative Area) events
 
-Specific instances can be evaluated using the same script. The same script (`Evaluation/evalutor.py`) will automatically match specific instances from the gold data with the system output. If no match exists for a specific instance, it will be matched up with a "padded" example with NULL values so that the system is penalized for not having been able to find a particular specific instance or for finding extra specific instances not found in the gold dataset.
+Specific instances (l2 and l3) can be evaluated using the same script. The same script (`Evaluation/evalutor.py`) will automatically match specific instances from the gold data with the system output. If no match exists for a specific instance, it will be matched up with a "padded" example with NULL values so that the system is penalized for not having been able to find a particular specific instance or for finding extra specific instances not found in the gold dataset.
 
-Below is a scipt that evaluates two dummy sets (gold and sys) to showcase a working example and the correct schema for the `.parquet` files. Sub events are evaluated separately from main events.
+Below is a scipt that evaluates two dummy sets (gold and sys) to showcase a working example and the correct schema for the `.parquet` files. Note that l2 and l3 are evaluated separately from l1 events.
 
 ```shell
 poetry run python3 Evaluation/evaluator.py \
---sys-file tests/specific_instance_eval/test_sys_list_death.parquet \
---gold-file tests/specific_instance_eval/test_gold_list_death.parquet \
---model-name "specific_instance_eval_test/dev/deaths" \
---event_type sub \
+--sys_file tests/specific_instance_eval/test_sys_list_death.parquet \
+--gold_set tests/specific_instance_eval/test_gold_list_death.parquet \
+--model_name "example/dev/deaths" \
+--event_level l2 \
 --weights_config specific_instance \
---specific_instance_type deaths
+--impact_type deaths
 ```
 If run properly, you should see the results in `Database/evaluation_results/specific_instance_eval_test`:
 
@@ -217,48 +247,55 @@ Database/evaluation_results/specific_instance_eval_test
 > [!WARNING]
 > Do not commit these files to your branch or to `main`, big thanks!
 
-### Parsing and normalization
 
-If you have new events to add to the database, first parse them and insert them.
+### Evaluating L1, L2, and L3 in a single run
 
-- To parse events (and normalize their values) from a json file with the right schema (adding schema validation soon), run:
+To evaluate all event levels and categories, **make sure your gold files and sys output files are in the correct structure as described in [Evaluation/evaluate_full_run.sh](Evaluation/evaluate_full_run.sh)**, then run this script:
 
-    ```shell
-    # an example
-    poetry run python3 Database/parse_events.py --spaCy_model "en_core_web_trf" --filename "some_json_file.json" --raw_path "Database/raw" --locale "en_US.UTF-8"
+```shell
+# dataSplit can be dev or test
+source Evaluation/evaluate_full_run.sh goldFileDir sysFileDir dataSplit
+```
 
-    # for help
-    poetry run python3 Database/parse_events.py --help
-    ```
+```shell
+# example using ESDD_2024 data
+source Evaluation/evaluate_full_run.sh Database/gold/ESSD_2024 Database/output/ESSD_2024 dev
+```
 
-### Inserting
-- To insert new main events:
+### Inserting events to the database
 
-    ```shell
-    # to append
-    poetry run python3 Database/insert_main_event.py -m "append"
+Insertion is done by event level (l1, l2, or l3). Examples:
 
-    # to replace
-    poetry run python3 Database/insert_main_event.py -m "replace"
+```shell
+# to append l1 events
+poetry run python3 Database/insert_events.py -m "append" -lvl l1 -db impact.v1.db
 
-    # explore more options
-    poetry run python3 Database/parse_events.py --help
-    ```
+# to replace l2 events ⚠️ WILL replace all entries! ⚠️
+poetry run python3 Database/insert_events.py -m "replace" -lvl l2 -db impact.v1.db
 
-- To insert new subevents:
+# explore more options
+poetry run python3 Database/insert_events.py --help
 
-    ```shell
-    poetry run python3 Database/insert_sub_events.py [options]
+# on dummy events ⚠️ please don't push these database insertions to github! ⚠️
+poetry run python3 Database/insert_events.py -m append -f Database/output/dummy/l1 -db impact.v1.db -lvl l1
+```
 
-    # see options
-    poetry run python3 Database/parse_events.py --help
-    ```
+To insert a large number of events in the database all at once (supports chunked .parquet files), the files need to be in a specific format described in [Database/scr/insert_full_run.sh](Database/scr/insert_full_run.sh). The directory structure in [Database/output/dummy](Database/output/dummy) follows this format.
+
+To perform this on the existing dummy data:
+
+```shell
+# format:
+# source Database/insert_full_run.sh Database/output/dummy SQL_DB PATH_TO_STORE_NIDs
+
+source Database/insert_full_run.sh Database/output/dummy impact.v1.db tmp/files
+```
 
 ### Database-related
 - To generate the database according to [`Database/schema.sql`](Database/schema.sql):
 
     ```shell
-    poetry run python3 Database/create_db.py
+    poetry run python3 Database/create_db.py -db impact.v1.db
     ```
 
 #### SPECIAL USECASE: Converting the manual annotation table from a flat format to Events and Specific Impacts
@@ -271,7 +308,7 @@ If you have new events to add to the database, first parse them and insert them.
 poetry run python3 Database/gold_from_excel.py \
 --input-file "Database/gold/ImpactDB_DataTable_Validation.xlsx" \
 --sheet-name ImpactDB_manual_copy_MDMMYYY  \
---output-dir Database/gold/gold_from_excel \
+--output-dir Database/gold/gold_from_excel
 ```
 
 > [!IMPORTANT]

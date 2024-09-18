@@ -2,9 +2,8 @@ import argparse
 import ast
 import json
 import pathlib
-from pprint import pformat, pprint
+from pprint import pformat
 
-import numpy as np
 import pandas as pd
 
 from Evaluation.comparer import Comparer
@@ -18,23 +17,23 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "-sys",
-        "--sys-file",
-        dest="sys_set_filepath",
+        "--sys_output",
+        dest="system_output",
         help="The full path to the system output in parquet",
         type=str,
     )
 
     parser.add_argument(
         "-gold",
-        "--gold-file",
-        dest="gold_set_filepath",
+        "--gold_set",
+        dest="gold_set",
         help="The full path to the gold set in parquet",
         type=str,
     )
 
     parser.add_argument(
         "-m",
-        "--model-name",
+        "--model_name",
         dest="model_name",
         help="A model name to store the results",
         type=str,
@@ -42,11 +41,11 @@ if __name__ == "__main__":
 
     parser.add_argument(
         "-null",
-        "--null-penalty",
+        "--null_penalty",
         dest="null_penalty",
         default=1,
         help="Null penalty, defaults to 1",
-        type=int,
+        type=float,
     )
 
     parser.add_argument(
@@ -70,20 +69,20 @@ if __name__ == "__main__":
     )
 
     parser.add_argument(
-        "-t",
-        "--event_type",
-        dest="event_type",
-        default="main",
-        choices=["main", "sub"],
+        "-lvl",
+        "--event_level",
+        dest="event_level",
+        choices=["l1", "l2", "l3"],
         help="Choose which events to parse. Possible values: main or sub",
         type=str,
+        required=True,
     )
 
     parser.add_argument(
         "-si",
-        "--specific_instance_type",
-        dest="specific_instance_type",
-        default="specific_instance",
+        "--impact_type",
+        dest="impact_type",
+        default="deaths",
         help="""Supply the specific instance type/category (example: 'deaths', 'insurance_damage')
             to store matched specific instances for gold and sys""",
         type=str,
@@ -98,19 +97,29 @@ if __name__ == "__main__":
 
     matcher = SpecificInstanceMatcher()
 
-    gold = pd.read_parquet(args.gold_set_filepath, engine="fastparquet").replace(
-        {np.nan: None, "NULL ": None, "NULL": None}
+    gold = pd.read_parquet(args.gold_set, engine="fastparquet").replace(
+        {float("nan"): None, "NULL ": None, "NULL": None}
     )
 
-    sys = pd.read_parquet(args.sys_set_filepath, engine="fastparquet").replace(
-        {np.nan: None, "NULL ": None, "NULL": None}
+    sys_f = pathlib.Path(args.system_output)
+    if sys_f.is_dir():
+        logger.info(
+            f"The provided system output path is to a directory `{args.system_output}`. If .parquet files are present, they will be pulled and concatenated into a single file."
+        )
+        logger.info(f"Files in {args.system_output}: {list(sys_f.iterdir())}")
+
+    sys = pd.read_parquet(args.system_output, engine="fastparquet").replace(
+        {float("nan"): None, "NULL ": None, "NULL": None}
     )
 
-    if args.event_type == "sub":
-        logger.info("Pairing up specific instances ('sub-events')")
+    admin_area_columns = ["Administrative_Area_Norm", "Administrative_Areas_Norm", "Country_Norm"]
+    location_columns = ["Location_Norm", "Locations_Norm"]
+    any_area_columns = admin_area_columns + location_columns
+
+    if args.event_level in ["l2", "l3"]:
+        logger.info(f"Pairing up {args.event_level} events")
         event_ids = set(list(gold.Event_ID.unique()) + list(sys.Event_ID.unique()))
         si_gold, si_sys = [], []
-
         for gold_list, sys_list in zip(
             [
                 gold[gold.Event_ID == e_id][weights_dict[args.weights_config].keys()].to_dict(orient="records")
@@ -131,18 +140,17 @@ if __name__ == "__main__":
             )
             exit()
 
-        gold, sys = pd.DataFrame(si_gold).replace({np.nan: None, "NULL ": None, "NULL": None}), pd.DataFrame(
+        gold, sys = pd.DataFrame(si_gold).replace({float("nan"): None, "NULL ": None, "NULL": None}), pd.DataFrame(
             si_sys
-        ).replace({np.nan: None, "NULL ": None, "NULL": None})
+        ).replace({float("nan"): None, "NULL ": None, "NULL": None})
 
-        gold.to_parquet(f"{output_dir}/gold_{args.specific_instance_type}.parquet")
-        sys.to_parquet(f"{output_dir}/sys_{args.specific_instance_type}.parquet")
+        gold.to_parquet(f"{output_dir}/gold_{args.impact_type}.parquet")
+        sys.to_parquet(f"{output_dir}/sys_{args.impact_type}.parquet")
 
-    if args.event_type == "main":
+    elif args.event_level in ["l1"]:
         logger.info("Only including events in the gold file!")
         sys = sys[sys.Event_ID.isin(gold["Event_ID"].to_list())]
-
-    logger.info(f"The following events exist in gold: {pprint(list(gold['Event_ID'].unique()), indent=10)}")
+    logger.info(f"The following events exist in gold:\n{pformat(gold['Event_ID'].unique())}")
 
     if args.score in ("wikipedia", "artemis"):
         # get article from source
@@ -169,8 +177,8 @@ if __name__ == "__main__":
 
         logger.info(f"Evaluation limited to {sys.shape} events from source {args.score}")
 
-    if args.event_type == "main":
-        # Add dummy rows for missing events (for main event evaluation only)
+    if args.event_level in "l1":
+        # Add dummy rows for missing events (for l1 event evaluation only)
         missing_ids = set(sys["Event_ID"].to_list()) ^ set(gold["Event_ID"].to_list())
         if missing_ids:
             logger.info(
@@ -179,9 +187,9 @@ if __name__ == "__main__":
             gold_cols = list(gold.columns)
             rows_to_add = []
             for event_id in missing_ids:
-                # Create a dictionary for the new row with all columns set to "" except Country_Norm which excepts a list
+                # Create a dictionary for the new row with all columns set to "" except Administrative_AreaNorm which excepts a list
                 new_row = {col: None for col in gold_cols}
-                for col in ["Country_Norm", "Location_Norm"]:
+                for col in any_area_columns:
                     if col in gold_cols:
                         new_row[col] = "[]"
                 new_row["Event_ID"] = event_id  # Set the 'Event_ID'
@@ -189,7 +197,7 @@ if __name__ == "__main__":
 
             missing_rows = pd.DataFrame(rows_to_add)
             sys = pd.concat([sys, missing_rows], ignore_index=True).sort_values("Event_ID")
-            sys.replace({np.nan: None}, inplace=True)
+            sys.replace({float("nan"): None}, inplace=True)
 
     # Specify null penalty
     null_penalty = args.null_penalty
@@ -209,12 +217,12 @@ if __name__ == "__main__":
     comp = Comparer(null_penalty, target_columns=weights.keys())
     logger.info(f"Target columns: {comp.target_columns}")
 
-    if args.event_type == "main":
+    if args.event_level == "l1":
         # sort by "Event_ID" only for main event evaluation
         sys = sys.sort_values("Event_ID")
         gold = gold.sort_values("Event_ID")
 
-    list_type_cols = ["Country_Norm", "Location_Norm"] if args.event_type == "main" else ["Location_Norm"]
+    list_type_cols = [x for x in any_area_columns if "Areas_" in x or "Locations_" in x]
     for col in list_type_cols:
         if col in sys.columns:
             sys[col] = sys[col].apply(lambda x: ast.literal_eval(x) if isinstance(x, str) else x)
@@ -242,35 +250,35 @@ if __name__ == "__main__":
     all_comps = pd.DataFrame(
         [[i, j, c, d] + list(a.values()) for [i, j, (c, d), a] in comps],
         columns=["Event_ID1", "Event_ID2", "Coverage", "Weighted_Score"] + list(weights.keys()),
-    ).replace({np.nan: None})
+    ).replace({float("nan"): None})
 
     all_comps.sort_values("Weighted_Score")
-    if args.event_type == "main":
-        all_comps.to_csv(f"{output_dir}/{args.score}_{len(sys_data)}_results.csv", index=False)
-    elif args.event_type == "sub":
+    if args.event_level == "l1":
+        all_comps.to_csv(f"{output_dir}/{args.event_level}_{args.score}_{len(sys_data)}_results.csv", index=False)
+    elif args.event_level in ["l2", "l3"]:
         all_comps.to_csv(
-            f"{output_dir}/{args.score}_{len(sys_data)}_{args.specific_instance_type}_results.csv", index=False
+            f"{output_dir}/{args.event_level}_{args.score}_{len(sys_data)}_{args.impact_type}_results.csv", index=False
         )
     averages = {}
     for i in all_comps.columns:
         if not i.startswith("Event_ID"):
             averages[i] = all_comps.loc[:, i].mean()
 
-    if args.event_type == "main":
-        avg_result_filename = f"{output_dir}/{args.score}_{len(sys_data)}_avg_results.json"
-    elif args.event_type == "sub":
+    if args.event_level == "l1":
+        avg_result_filename = f"{output_dir}/{args.event_level}_{args.score}_{len(sys_data)}_avg_results.json"
+    elif args.event_level in ["l2", "l3"]:
         avg_result_filename = (
-            f"{output_dir}/{args.score}_{len(sys_data)}_{args.specific_instance_type}_avg_results.json"
+            f"{output_dir}/{args.event_level}_{args.score}_{len(sys_data)}_{args.impact_type}_avg_results.json"
         )
 
     with open(avg_result_filename, "w") as f:
-        json.dump(averages, f)
+        json.dump(averages, f, indent=3)
 
     # get average per event_ID when evaluating specific instances
-    if args.event_type == "sub":
+    if args.event_level in ["l2", "l3"]:
         all_comps["Event_ID"] = all_comps["Event_ID1"].apply(lambda x: x.split("-")[0])
         all_comps.groupby("Event_ID")[[c for c in all_comps.columns if not c.startswith("Event_ID")]].mean().to_csv(
-            f"{output_dir}/{args.score}_{len(sys_data)}_{args.specific_instance_type}_avg_per_event_id_results.csv",
+            f"{output_dir}/{args.event_level}_{args.score}_{len(sys_data)}_{args.impact_type}_avg_per_event_id_results.csv",
             index=False,
         )
 

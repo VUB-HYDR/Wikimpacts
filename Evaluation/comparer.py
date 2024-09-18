@@ -11,6 +11,47 @@ class Comparer:
         self.norm = Normaliser()
         self.target_columns = target_columns
 
+        # Strings
+        string_cols = [
+            "Main_Event",
+            "Event_ID",
+            "Administrative_Area_Norm",
+            "Country_Norm",
+            "Location_Norm",
+            "Event_Name",
+        ]
+        string_cols.extend([x for x in self.target_columns if "_Unit" in x])
+        self.string_columns: list = self.target_col(string_cols)
+
+        # Sequences
+        self.sequence_columns: list = self.target_col(
+            ["Administrative_Areas_Norm", "Locations_Norm", "Event_Names", "Hazards"]
+        )
+
+        # Dates
+        self.date_columns: list = self.target_col([])
+
+        # Integers
+        # Dates and all _Min/_Max values for the numerical and monetary impact types and all inflation adjustment years
+        self.integer_columns: list = self.target_col(
+            [
+                k
+                for k in [
+                    x
+                    for x in self.target_columns
+                    if "_Date_" in x
+                    or x.endswith("_Min")
+                    or x.endswith("_Max")
+                    or x.endswith("_Inflation_Adjusted_Year")
+                ]
+            ]
+        )
+
+        # Booleans
+        self.boolean_columns: list = [
+            k for k in self.target_col([x for x in self.target_columns if x.endswith("_Inflation_Adjusted")])
+        ]
+
     def target_col(self, l) -> list:
         """Returns a list of columns if they are in the set of specified target columns"""
         return list(set(l) & set(self.target_columns))
@@ -63,60 +104,24 @@ class Comparer:
         """Compare all fields."""
         score = {}
         # Strings
-        for k in self.target_col(["Main_Event", "Event_ID", "Event_Name", "Total_Damage_Units"]):
+        for k in self.string_columns:
             score[k] = self.string(v[k], w[k])
 
         # Sequences
-        for k in self.target_col(["Country_Norm"]):
+        for k in self.sequence_columns:
             score[k] = self.sequence(v[k], w[k])
 
         # Dates
-        for k in []:
+        for k in self.date_columns:
             score[k] = self.date(v[k], w[k])
 
         # Integers
-        for k in self.target_col(
-            [
-                "Total_Deaths_Min",
-                "Total_Deaths_Max",
-                "Start_Date_Day",
-                "Start_Date_Month",
-                "Start_Date_Year",
-                "End_Date_Day",
-                "End_Date_Month",
-                "End_Date_Year",
-                "Total_Damage_Min",
-                "Total_Damage_Max",
-                "Total_Homeless_Min",
-                "Total_Homeless_Max",
-                # Injuries
-                "Total_Injuries_Max",
-                "Total_Injuries_Min",
-                # Buildings_Damage
-                "Total_Buildings_Min",
-                "Total_Buildings_Max",
-                # Affected
-                "Total_Affected_Min",
-                "Total_Affected_Max",
-                # Homeless
-                "Total_Damage_Units",
-                "Total_Damage_Inflation_Adjusted",
-                "Total_Damage_Inflation_Adjusted_Year",
-                # Insured Damage
-                "Total_Insured_Damage_Min",
-                "Total_Insured_Damage_Max",
-                "Total_Insured_Damage_Units",
-                "Total_Insured_Damage_Inflation_Adjusted",
-                "Total_Insured_Damage_Inflation_Adjusted_Year",
-                # Displace
-                "Total_Displace_Min",
-                "Total_Displace_Max",
-            ]
-        ):
+        # Dates and all _Min/_Max values for the numerical and monetary impact types and all inflation adjustment years
+        for k in self.integer_columns:
             score[k] = self.integer(v[k], w[k])
 
         # Booleans
-        for k in self.target_col([]):
+        for k in self.boolean_columns:
             score[k] = self.boolean(v[k], w[k])
 
         # Return score dictionary after ordering by target columns order
