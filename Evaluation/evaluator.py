@@ -2,7 +2,7 @@ import argparse
 import ast
 import json
 import pathlib
-from pprint import pformat, pprint
+from pprint import pformat
 
 import numpy as np
 import pandas as pd
@@ -18,16 +18,16 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "-sys",
-        "--sys_file",
-        dest="sys_set_filepath",
+        "--sys_output",
+        dest="system_output",
         help="The full path to the system output in parquet",
         type=str,
     )
 
     parser.add_argument(
         "-gold",
-        "--gold_file",
-        dest="gold_set_filepath",
+        "--gold_set",
+        dest="gold_set",
         help="The full path to the gold set in parquet",
         type=str,
     )
@@ -98,13 +98,16 @@ if __name__ == "__main__":
 
     matcher = SpecificInstanceMatcher()
 
-    gold = pd.read_parquet(args.gold_set_filepath, engine="fastparquet").replace(
-        {np.nan: None, "NULL ": None, "NULL": None}
-    )
+    gold = pd.read_parquet(args.gold_set, engine="fastparquet").replace({np.nan: None, "NULL ": None, "NULL": None})
 
-    sys = pd.read_parquet(args.sys_set_filepath, engine="fastparquet").replace(
-        {np.nan: None, "NULL ": None, "NULL": None}
-    )
+    sys_f = pathlib.Path(args.system_output)
+    if sys_f.is_dir():
+        logger.info(
+            f"The provided system output path is to a directory `{args.system_output}`. If .parquet files are present, they will be pulled and concatenated into a single file."
+        )
+        logger.info(f"Files in {args.system_output}: {list(sys_f.iterdir())}")
+
+    sys = pd.read_parquet(args.system_output, engine="fastparquet").replace({np.nan: None, "NULL ": None, "NULL": None})
 
     admin_area_columns = ["Administrative_Area_Norm", "Administrative_Areas_Norm", "Country_Norm"]
     location_columns = ["Location_Norm", "Locations_Norm"]
@@ -114,7 +117,6 @@ if __name__ == "__main__":
         logger.info(f"Pairing up {args.event_level} events")
         event_ids = set(list(gold.Event_ID.unique()) + list(sys.Event_ID.unique()))
         si_gold, si_sys = [], []
-
         for gold_list, sys_list in zip(
             [
                 gold[gold.Event_ID == e_id][weights_dict[args.weights_config].keys()].to_dict(orient="records")
@@ -145,8 +147,7 @@ if __name__ == "__main__":
     elif args.event_level in ["l1"]:
         logger.info("Only including events in the gold file!")
         sys = sys[sys.Event_ID.isin(gold["Event_ID"].to_list())]
-
-    logger.info(f"The following events exist in gold: {pprint(list(gold['Event_ID'].unique()), indent=10)}")
+    logger.info(f"The following events exist in gold:\n{pformat(gold['Event_ID'].unique())}")
 
     if args.score in ("wikipedia", "artemis"):
         # get article from source
@@ -268,7 +269,7 @@ if __name__ == "__main__":
         )
 
     with open(avg_result_filename, "w") as f:
-        json.dump(averages, f)
+        json.dump(averages, f, indent=3)
 
     # get average per event_ID when evaluating specific instances
     if args.event_level in ["l2", "l3"]:
