@@ -342,7 +342,7 @@ class NormalizeJsonOutput:
         for entry in raw_sys_output:
             output = {}
             for k in entry.keys():
-                if k.lower() in target_keys:
+                if k.lower() in nested_keys:
                     if isinstance(entry[k], dict):
                         if any(
                             [
@@ -423,6 +423,7 @@ class NormalizeJsonOutput:
             json.dump(output_json, fp)
 
         self.logger.info(f"Stored output in {output_file_path}")
+
 
 class GeoJsonUtils:
     def __init__(self, nid_path: str = "/tmp/geojson") -> None:
