@@ -91,7 +91,7 @@ If the system output is split across several files (such as Mixtral and Mistral 
     poetry run python3 Database/fix_json_inconsistencies.py \
     -i "Database/raw/<EXPERIMENT_NAME>/<INPUT_FILE.JSON>" \
     -o "Database/raw/<EXPERIMENT_NAME>/<OUTPUT_FILE.JSON>" \
-    -n "nested time fields"
+    -n "data types and nested fields"
     ```
 
     Another case discovered is that the LLM might sometimes return `"Num"` in l2 and l3 as a list rather than an int. This can be corrected with the same script:
