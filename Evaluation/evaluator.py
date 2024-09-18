@@ -4,7 +4,6 @@ import json
 import pathlib
 from pprint import pformat
 
-import numpy as np
 import pandas as pd
 
 from Evaluation.comparer import Comparer
@@ -98,7 +97,9 @@ if __name__ == "__main__":
 
     matcher = SpecificInstanceMatcher()
 
-    gold = pd.read_parquet(args.gold_set, engine="fastparquet").replace({np.nan: None, "NULL ": None, "NULL": None})
+    gold = pd.read_parquet(args.gold_set, engine="fastparquet").replace(
+        {float("nan"): None, "NULL ": None, "NULL": None}
+    )
 
     sys_f = pathlib.Path(args.system_output)
     if sys_f.is_dir():
@@ -107,7 +108,9 @@ if __name__ == "__main__":
         )
         logger.info(f"Files in {args.system_output}: {list(sys_f.iterdir())}")
 
-    sys = pd.read_parquet(args.system_output, engine="fastparquet").replace({np.nan: None, "NULL ": None, "NULL": None})
+    sys = pd.read_parquet(args.system_output, engine="fastparquet").replace(
+        {float("nan"): None, "NULL ": None, "NULL": None}
+    )
 
     admin_area_columns = ["Administrative_Area_Norm", "Administrative_Areas_Norm", "Country_Norm"]
     location_columns = ["Location_Norm", "Locations_Norm"]
@@ -137,9 +140,9 @@ if __name__ == "__main__":
             )
             exit()
 
-        gold, sys = pd.DataFrame(si_gold).replace({np.nan: None, "NULL ": None, "NULL": None}), pd.DataFrame(
+        gold, sys = pd.DataFrame(si_gold).replace({float("nan"): None, "NULL ": None, "NULL": None}), pd.DataFrame(
             si_sys
-        ).replace({np.nan: None, "NULL ": None, "NULL": None})
+        ).replace({float("nan"): None, "NULL ": None, "NULL": None})
 
         gold.to_parquet(f"{output_dir}/gold_{args.impact_type}.parquet")
         sys.to_parquet(f"{output_dir}/sys_{args.impact_type}.parquet")
@@ -194,7 +197,7 @@ if __name__ == "__main__":
 
             missing_rows = pd.DataFrame(rows_to_add)
             sys = pd.concat([sys, missing_rows], ignore_index=True).sort_values("Event_ID")
-            sys.replace({np.nan: None}, inplace=True)
+            sys.replace({float("nan"): None}, inplace=True)
 
     # Specify null penalty
     null_penalty = args.null_penalty
@@ -247,7 +250,7 @@ if __name__ == "__main__":
     all_comps = pd.DataFrame(
         [[i, j, c, d] + list(a.values()) for [i, j, (c, d), a] in comps],
         columns=["Event_ID1", "Event_ID2", "Coverage", "Weighted_Score"] + list(weights.keys()),
-    ).replace({np.nan: None})
+    ).replace({float("nan"): None})
 
     all_comps.sort_values("Weighted_Score")
     if args.event_level == "l1":
