@@ -28,7 +28,7 @@ if __name__ == "__main__":
         "--normalize",
         dest="normalize",
         help="Which inconsistency type to normalize",
-        choices=["nested time fields", "list of nums"],
+        choices=["data types and nested fields", "list of nums"],
         required=True,
         type=str,
     )
@@ -42,7 +42,7 @@ if __name__ == "__main__":
         pathlib.Path("/".join(directory[:-1])).mkdir(parents=True, exist_ok=True)
 
     norm = NormalizeJsonOutput()
-    if args.normalize == "nested time fields":
+    if args.normalize == "data types and nested fields":
         norm.normalize_column_names(args.json_file_path, args.output_file_path)
     if args.normalize == "list of nums":
         norm.normalize_lists_of_num(args.json_file_path, args.output_file_path, locale_config="en_US.UTF-8")
