@@ -19,6 +19,8 @@ class TestNormalizeLocations:
             ("United States", None, ["USA"]),
             ("Kings, California", "United States", ["USA.5.16_1"]),
             ("Amman", "United States", []),
+            ("Kansas, United States", "United States", ["USA.17_1"]),
+            ("Kansas", "United States", ["USA.17_1"]),
         ],
     )
     def test__get_american_area(self, area, country, expected):
