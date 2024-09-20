@@ -450,33 +450,51 @@ class NormalizeLocation:
         # limit GADM search to one country
         gadm_df = pd.DataFrame()
         for col in country_cols:
-            if country in self.gadm[col].unique().tolist() and not area:
+            if country in self.gadm[col].unique().tolist():  # and not area:
                 gadm_df = self.gadm.loc[self.gadm[col] == country]
-                if gadm_df.shape != (0, 0):
+                if gadm_df.shape[0] != 0:
                     break
 
-        gadm_df = self.gadm if gadm_df.shape == (0, 0) else gadm_df
+        gadm_df = self.gadm if gadm_df.shape[0] == 0 else gadm_df
 
         # handle countries, match in order by country column, name at level 0, or alternative names at level 0
         for col in country_cols:
-            if country in gadm_df[col].to_list() and not area:
+            if country in gadm_df[col].unique().tolist() and not area:
                 return gadm_df.loc[gadm_df[col] == country].GID_0.unique().tolist()
 
         # if trying to get matches in a single country, do fuzzy search
         if country and area:
             unique_area_sets = [gadm_df[f"NAME_{l}"].dropna().unique().tolist() for l in range(1, 6)]
-            level = 1
-            for area_set in unique_area_sets:
-                closest_match = difflib.get_close_matches(area, area_set, n=1, cutoff=0.65)
-                if closest_match:
-                    return gadm_df.loc[gadm_df[f"NAME_{level}"] == closest_match[0]][f"GID_{level}"].unique().tolist()
-                level += 1
+            for cutoff in [0.75, 0.70]:
+                level = 1
+                for area_set in unique_area_sets:
+                    closest_match = difflib.get_close_matches(area, area_set, n=1, cutoff=cutoff)
+                    if closest_match:
+                        return (
+                            gadm_df.loc[gadm_df[f"NAME_{level}"] == closest_match[0]][f"GID_{level}"].unique().tolist()
+                        )
+                    level += 1
 
         area = country if (country and not area) else area
         for level in range(1, 6):
             name_col, gid_col = f"NAME_{level}", f"GID_{level}"
             if area in gadm_df[name_col].to_list():
                 return gadm_df.loc[gadm_df[name_col] == area][gid_col].unique().tolist()
+
+        for level in range(1, 6):
+            varname_col, gid_col = f"VARNAME_{level}", f"GID_{level}"
+            varnames_list = [x for x in gadm_df[varname_col].to_list() if isinstance(x, str)]
+            varnames_list = list(set(varnames_list))
+            varnames_list = [x.split("|") for x in varnames_list]
+            for varnames in varnames_list:
+                if area in varnames:
+                    return (
+                        gadm_df.loc[
+                            gadm_df[varname_col].apply(lambda x: True if isinstance(x, str) and area in x else False)
+                        ][gid_col]
+                        .unique()
+                        .tolist()
+                    )
 
             # clean out additional parts of a location name (like "county" or "city")
             alt_name = re.sub(
