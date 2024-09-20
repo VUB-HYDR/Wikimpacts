@@ -352,7 +352,7 @@ class NormalizeLocation:
         if not area:
             return None
 
-        if area == self.united_states and not country:
+        if area == self.united_states and (not country or country == self.united_states):
             return [self.USA_GID]
 
         address = [x.strip() for x in area.split(",")] if area else [x.strip() for x in country.split(",")]

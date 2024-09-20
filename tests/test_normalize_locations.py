@@ -17,6 +17,7 @@ class TestNormalizeLocations:
         [
             ("Arizona", "United States", ["USA.3_1"]),
             ("United States", None, ["USA"]),
+            ("United States", "United States", ["USA"]),
             ("Kings, California", "United States", ["USA.5.16_1"]),
             ("Amman", "United States", []),
             ("Kansas, United States", "United States", ["USA.17_1"]),
