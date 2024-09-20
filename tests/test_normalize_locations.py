@@ -36,6 +36,7 @@ class TestNormalizeLocations:
             ("Amman", "Jordan", ["JOR.2_1"]),
             ("Kansas, United States", "United States", ["USA.17_1"]),
             ("Kansas", "United States", ["USA.17_1"]),
+            ("Kansas", None, ["USA.17_1"]),
             ("Dijon", None, ["FRA.2.1.2_1"]),
             ("Amajyaruguru", None, ["RWA.1_1"]),
             ("Geumgwa", "South Korea", ["KOR.13.13.3_2"]),
