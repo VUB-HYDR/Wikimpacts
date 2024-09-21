@@ -312,8 +312,7 @@ class NormalizeLocation:
             if cardinals and not is_country:
                 normalized_area_name = f"{normalized_area_name}:<{cardinals}>"
             geojson = json.dumps(location.raw["geojson"]) if isinstance(location.raw["geojson"], dict) else None
-
-            return (normalized_area_name, location.raw["type"], geojson)
+            return (normalized_area_name, f'{location.raw["type"]}:{location.raw["addresstype"]}', geojson)
 
         except BaseException as err:
             self.logger.error(
@@ -481,7 +480,14 @@ class NormalizeLocation:
             if area in gadm_df[name_col].to_list():
                 return gadm_df.loc[gadm_df[name_col] == area][gid_col].unique().tolist()
 
-        for level in range(1, 6):
+            # clean out additional parts of a location name (like "county" or "city")
+            alt_name = re.sub(
+                r"(county)|(city)|(prefecture)|(district)|(city of)|(region)", "", area, flags=re.IGNORECASE
+            ).strip()
+            if alt_name in gadm_df[name_col].to_list():
+                return gadm_df.loc[gadm_df[name_col] == alt_name][gid_col].unique().tolist()
+
+        for level in range(1, 5):
             varname_col, gid_col = f"VARNAME_{level}", f"GID_{level}"
             varnames_list = [x for x in gadm_df[varname_col].to_list() if isinstance(x, str)]
             varnames_list = list(set(varnames_list))
@@ -495,13 +501,6 @@ class NormalizeLocation:
                         .unique()
                         .tolist()
                     )
-
-            # clean out additional parts of a location name (like "county" or "city")
-            alt_name = re.sub(
-                r"(county)|(city)|(prefecture)|(district)|(city of)|(region)", "", area, flags=re.IGNORECASE
-            ).strip()
-            if alt_name in gadm_df[name_col].to_list():
-                return gadm_df.loc[gadm_df[name_col] == alt_name][gid_col].unique().tolist()
 
     @staticmethod
     def extract_locations(
