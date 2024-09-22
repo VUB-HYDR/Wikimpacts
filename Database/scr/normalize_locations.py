@@ -92,8 +92,22 @@ class NormalizeLocation:
 
         self.us_gadm = self.gadm.loc[self.gadm.COUNTRY == self.united_states]
 
-        self.cardinals = ["north", "south", "east", "west"]
-        self.cardinals.extend(f"{i}ern" for i in ["north", "south", "east", "west"])
+        self.cardinals = ["north", "south", "east", "west", "north east", "north west", "south east", "south west"]
+        self.cardinals.extend([f"{i}ern" for i in self.cardinals])
+        self.cardinals.extend(
+            [
+                "central",
+                "centre",
+                "center",
+                "downtown",
+                "remote",
+                "isolated",
+                "distant",
+                "urban",
+                "suburban",
+                "regional",
+            ]
+        )
 
     def _clean_cardinal_directions(self, area: str) -> tuple[str, list[str]]:
         area = area.split()
@@ -213,7 +227,10 @@ class NormalizeLocation:
             # if results fail again, clean out additional parts of a location name (like "county" or "city")
             if not l:
                 alt_name = re.sub(
-                    r"(county)|(city)|(prefecture)|(district)|(city of)|(region)", "", area, flags=re.IGNORECASE
+                    r"(county)|(prefecture)|(district)|(district of)|(city)|(city of)|(region)|(region of)",
+                    "",
+                    area,
+                    flags=re.IGNORECASE,
                 ).strip()
                 l = self.geocode_api_request(
                     alt_name,
