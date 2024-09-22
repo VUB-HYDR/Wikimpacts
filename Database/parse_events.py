@@ -243,7 +243,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
         logger.info(f"STEP: Parsing level {level} with column prefix {column_pattern}")
     except AssertionError as err:
         logger.error(
-            f"Level {level} unavailable. Available subevent levels: {list(available_subevent_levels.keys())}. Error: {err}"
+            f"Level {level} unavailable. Available levels: {list(available_subevent_levels.keys())}. Error: {err}"
         )
         raise AssertionError
 
@@ -280,7 +280,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
         ]
         if specific_total_cols:
             logger.info(
-                f"""Normalizing numbers to ranges in subevent {col} and determining whether or not they are an approximate (min, max, approx). Columns: {specific_total_cols}"""
+                f"""Normalizing numbers to ranges in {level} {col} and determining whether or not they are an approximate (min, max, approx). Columns: {specific_total_cols}"""
             )
             for i in specific_total_cols:
                 sub_event[[f"{i}_Min", f"{i}_Max", f"{i}_Approx"]] = (
@@ -290,14 +290,14 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                     )
                     .progress_apply(pd.Series)
                 )
-        logger.info(f"Normalizing nulls for subevent {col}")
+        logger.info(f"Normalizing nulls for {level} {col}")
         sub_event = utils.replace_nulls(sub_event)
 
         _yes, _no = re.compile(r"^(yes)$|^(y)$|^(true)$", re.IGNORECASE | re.MULTILINE), re.compile(
             r"^(no)$|^(n)$|^(false)$", re.IGNORECASE | re.MULTILINE
         )
         for inflation_adjusted_col in [col for col in sub_event.columns if col.endswith("_Adjusted")]:
-            logger.info(f"Normalizing boolean column {inflation_adjusted_col} for subevent {col}")
+            logger.info(f"Normalizing boolean column {inflation_adjusted_col} for {level} {col}")
             sub_event[inflation_adjusted_col] = sub_event[inflation_adjusted_col].replace(
                 {_no: False, _yes: True}, regex=True
             )
@@ -365,7 +365,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
             )
 
             sub_event.drop(columns=[f"{administrative_area_col}_Tmp"], inplace=True)
-            logger.info(f"Getting GID from GADM for Administrative Areas in subevent {col}")
+            logger.info(f"Getting GID from GADM for Administrative Areas in {level} {col}")
             sub_event[f"{administrative_area_col}_GID"] = sub_event[f"{administrative_area_col}_Norm"].progress_apply(
                 lambda admin_areas: (
                     [
@@ -409,7 +409,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                 )
             )
 
-            logger.info(f"Normalizing location names for subevent {col}")
+            logger.info(f"Normalizing location names for {level} {col}")
             sub_event[f"{location_col}_Tmp"] = sub_event.progress_apply(
                 lambda row: (
                     [
@@ -448,7 +448,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
             )
 
             sub_event.drop(columns=[f"{location_col}_Tmp"], inplace=True)
-            logger.info(f"Getting GID from GADM for locations in subevent {col}")
+            logger.info(f"Getting GID from GADM for locations in {level} {col}")
 
             sub_event[f"{location_col}_GID"] = sub_event.progress_apply(
                 lambda row: (
