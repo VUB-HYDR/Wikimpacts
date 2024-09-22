@@ -8,24 +8,24 @@ class SpecificInstanceMatcher:
     """Matches and pads specific instances (subevents) from two separate lists.
     'Padded' specific instances will have NoneType objects as values"""
 
-    def __init__(self, threshold: float = 0.6, null_penalty: float = 0.5):
+    def __init__(self, threshold: float = 0.6, null_penalty: float = 1):
         self.logger = Logging.get_logger("specific instance matcher")
 
         self.threshold = threshold
-        self.int_cat: list[str] = [
-            "Num_Min",
-            "Num_Max",
-            "Adjusted_Year",
-            "Start_Date_Day",
-            "Start_Date_Month",
-            "Start_Date_Year",
-            "End_Date_Day",
-            "End_Date_Month",
-            "End_Date_Year",
-        ]
-        self.bool_cat: list[str] = ["Adjusted"]
-        self.str_cat: list[str] = ["Country_Norm", "Unit"]
-        self.list_cat: list[str] = ["Location_Norm"]
+        self.int_cat: dict[str, int] = {
+            "Num_Min": 1,
+            "Num_Max": 1,
+            "Adjusted_Year": 0.125,
+            "Start_Date_Day": 0.125,
+            "Start_Date_Month": 0.125,
+            "Start_Date_Year": 0.125,
+            "End_Date_Day": 0.125,
+            "End_Date_Month": 0.125,
+            "End_Date_Year": 0.125,
+        }
+        self.bool_cat: dict[str, int] = {"Adjusted": 0.125}
+        self.str_cat: dict[str, int] = {"Administrative_Area_Norm": 1, "Unit": 1}
+        self.list_cat: dict[str, int] = {"Locations_Norm": 1, "Administrative_Areas_Norm": 1}
 
         self.comp = Comparer(null_penalty, [])
 
@@ -42,16 +42,16 @@ class SpecificInstanceMatcher:
         for si in sys_list:
             scores = []
             for k in gold_instance.keys():
-                if k in self.int_cat:
+                if k in self.int_cat.keys():
                     r = self.comp.integer(gold_instance[k], si[k])
-                elif k in self.bool_cat:
+                elif k in self.bool_cat.keys():
                     r = self.comp.boolean(gold_instance[k], si[k])
-                elif k in self.str_cat:
+                elif k in self.str_cat.keys():
                     r = self.comp.string(gold_instance[k], si[k])
-                elif k in self.list_cat:
+                elif k in self.list_cat.keys():
                     r = self.comp.sequence(gold_instance[k], si[k])
                 try:
-                    scores.append(1 - r)
+                    scores.append(1 - (r * self.int_cat[k]))
                     del r
                 except Exception:
                     if k != "Event_ID":

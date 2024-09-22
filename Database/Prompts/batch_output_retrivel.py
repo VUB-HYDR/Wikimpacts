@@ -111,7 +111,7 @@ if __name__ == "__main__":
         for batch in batches:
             des = batch.metadata
             # only return the result with the same file name and the defined experiment description in the metadata description
-            if str(args.filename) and str(args.description) and str(args.model_name) in des.get("description"):
+            if str(f"{args.description} {args.model_name} {args.filename}") == des.get("description"):
                 batch_id = batch.id
                 output_file_id = batch.output_file_id
                 # Retrieve the batch details
@@ -138,7 +138,8 @@ if __name__ == "__main__":
         response.append(df)
 
     out_file_path = (
-        f"{args.output_dir}/{args.filename.replace('.json', '')}_{args.description}_{args.model_name}_rawoutput.json"
+        f"{args.output_dir}/{args.description}_{args.model_name}_{args.filename.replace('.json', '')}_rawoutput.json"
     )
+
     with open(out_file_path, "w") as json_file:
         json.dump(response, json_file, indent=4)
