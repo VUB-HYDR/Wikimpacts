@@ -14,6 +14,18 @@ from Database.scr.normalize_utils import NormalizeUtils
 tqdm.pandas()
 
 
+def infer_countries(
+    row: dict,
+    admin_area_col: str,
+) -> list:
+    countries = []
+    for gids in row[f"{admin_area_col}_GID"]:
+        countries.extend([gd.split(".")[0] for gd in gids if len(gd.split(".")[0]) == 3])
+    countries = list(set(countries))
+
+    return [norm_loc.get_gid_0(c) for c in countries if norm_loc.get_gid_0(c)]
+
+
 def parse_main_events(df: pd.DataFrame, target_columns: list):
     admin_area_col = "Administrative_Areas"
     logger.info("STEP: Parsing main level events (l1)")
@@ -119,14 +131,62 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
         events[f"{admin_area_col}_GID"] = events[f"{admin_area_col}_Norm"].progress_apply(
             lambda admin_areas: (
                 [
-                    norm_loc.get_gadm_gid(country=c)
-                    if norm_loc.get_gadm_gid(country=c)
-                    else norm_loc.get_gadm_gid(area=c)
+                    (
+                        norm_loc.get_gadm_gid(country=c)
+                        if norm_loc.get_gadm_gid(country=c)
+                        else norm_loc.get_gadm_gid(area=c)
+                    )
                     for c in admin_areas
                     if c
                 ]
                 if isinstance(admin_areas, list)
                 else []
+            ),
+        )
+
+        logger.info(f"""STEP: Infer country from list of locations""")
+
+        events[f"{admin_area_col}_GID_0_Tmp"] = events.progress_apply(
+            lambda x: infer_countries(x, admin_area_col=admin_area_col), axis=1
+        )
+
+        logger.info("Normalizing administrative areas after purging areas above GID_0 level...")
+
+        events[f"{admin_area_col}_GID_0_Tmp"] = events[f"{admin_area_col}_GID_0_Tmp"].progress_apply(
+            lambda admin_areas: (
+                [norm_loc.normalize_locations(c, is_country=True) for c in admin_areas]
+                if isinstance(admin_areas, list)
+                else []
+            )
+        )
+
+        events[
+            [
+                f"{admin_area_col}_Norm",
+                f"{admin_area_col}_Type",
+                f"{admin_area_col}_GeoJson",
+            ]
+        ] = (
+            events[f"{admin_area_col}_GID_0_Tmp"]
+            .progress_apply(
+                lambda x: (
+                    (
+                        [i[0] for i in x],
+                        [i[1] for i in x],
+                        [i[2] for i in x],
+                    )
+                    if isinstance(x, list)
+                    else None
+                )
+            )
+            .progress_apply(pd.Series)
+        )
+
+        events.drop(columns=[f"{admin_area_col}_GID_0_Tmp"], inplace=True)
+        logger.info("Getting GID from GADM for Administrative Areas after purging areas above GID_0 level...")
+        events[f"{admin_area_col}_GID"] = events[f"{admin_area_col}_Norm"].progress_apply(
+            lambda admin_areas: (
+                [(norm_loc.get_gadm_gid(country=c)) for c in admin_areas if c] if isinstance(admin_areas, list) else []
             ),
         )
 
@@ -309,14 +369,16 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
             sub_event[f"{administrative_area_col}_GID"] = sub_event[f"{administrative_area_col}_Norm"].progress_apply(
                 lambda admin_areas: (
                     [
-                        norm_loc.get_gadm_gid(country=c)
-                        if norm_loc.get_gadm_gid(country=c)
-                        else norm_loc.get_gadm_gid(area=c)
+                        (
+                            norm_loc.get_gadm_gid(country=c)
+                            if norm_loc.get_gadm_gid(country=c)
+                            else norm_loc.get_gadm_gid(area=c)
+                        )
                         for c in admin_areas
                         if c
                     ]
                     if isinstance(admin_areas, list)
-                    else []
+                    else [[] for _ in admin_areas]
                 ),
             )
 
@@ -340,7 +402,11 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
             )
             logger.info(f"Getting GID from GADM for Administrative Areas in subevent {col}")
             sub_event[f"{administrative_area_col}_GID"] = sub_event[f"{administrative_area_col}_Norm"].progress_apply(
-                lambda admin_area: (norm_loc.get_gadm_gid(country=admin_area) if isinstance(admin_area, str) else [])
+                lambda admin_area: (
+                    norm_loc.get_gadm_gid(country=admin_area)
+                    if isinstance(admin_area, str)
+                    else norm_loc.get_gadm_gid(area=admin_area)
+                )
             )
 
             logger.info(f"Normalizing location names for subevent {col}")
@@ -393,7 +459,9 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                                 country=row[f"{administrative_area_col}_Norm"],
                             )
                             if isinstance(row[f"{location_col}_Norm"][i], str)
-                            else []
+                            else norm_loc.get_gadm_gid(
+                                area=row[f"{location_col}_Norm"][i],
+                            )
                         )
                         for i in range(len(row[f"{location_col}_Norm"]))
                     ]
@@ -640,6 +708,7 @@ if __name__ == "__main__":
     if args.raw_l1:
         try:
             events = pd.read_json(f"{tmp_dir}/{args.raw_l1}")
+            # TODO: literal eval!
             logger.info(f"Loaded events DataFrame from {args.raw_l1}")
         except BaseException as err:
             logger.error(f"Cannot find {args.raw_l1}. Error: {err}.")
