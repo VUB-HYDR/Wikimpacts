@@ -36,6 +36,5 @@ jobs:
           poetry config virtualenvs.in-project true
           poetry install --no-interaction
       - name: Run tests
-        working-directory: .
         run: |
           poetry run pytest -ra -s tests
