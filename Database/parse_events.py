@@ -404,9 +404,11 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
             sub_event[f"{administrative_area_col}_GID"] = sub_event[f"{administrative_area_col}_Norm"].progress_apply(
                 lambda admin_area: (
                     norm_loc.get_gadm_gid(country=admin_area)
-                    if isinstance(admin_area, str)
+                    if norm_loc.get_gadm_gid(country=admin_area)
                     else norm_loc.get_gadm_gid(area=admin_area)
                 )
+                if isinstance(admin_area, str)
+                else []
             )
 
             logger.info(f"Normalizing location names for {level} {col}")
@@ -458,11 +460,16 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                                 area=row[f"{location_col}_Norm"][i],
                                 country=row[f"{administrative_area_col}_Norm"],
                             )
-                            if isinstance(row[f"{location_col}_Norm"][i], str)
+                            if norm_loc.get_gadm_gid(
+                                area=row[f"{location_col}_Norm"][i],
+                                country=row[f"{administrative_area_col}_Norm"],
+                            )
                             else norm_loc.get_gadm_gid(
                                 area=row[f"{location_col}_Norm"][i],
                             )
                         )
+                        if i
+                        else []
                         for i in range(len(row[f"{location_col}_Norm"]))
                     ]
                     if isinstance(row[f"{location_col}_Norm"], list)
