@@ -36,6 +36,8 @@ jobs:
           poetry config virtualenvs.in-project true
           poetry install --no-interaction
       - name: Pull LFS files for testing
-        run: git lfs pull --include Database/data/*.csv
+        run: git lfs pull --include "Database/data/*"
+        env:
+          GIT_TRACE: 1
       - name: Run tests
         run: poetry run pytest -ra -s tests
