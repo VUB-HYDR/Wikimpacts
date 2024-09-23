@@ -16,6 +16,7 @@ jobs:
       - uses: actions/checkout@v2.4.0
         with:
           fetch-depth: 0
+          lfs: true
       - name: Set up Python 3.11
         uses: actions/setup-python@v2.3.1
         with:
@@ -35,7 +36,7 @@ jobs:
           poetry check --no-interaction
           poetry config virtualenvs.in-project true
           poetry install --no-interaction
+      - name: Pull LFS files for testing
+        run: git lfs pull Database/data/*.csv
       - name: Run tests
-        run: |
-          git lfs pull Database/data/*.csv
-          && poetry run pytest -ra -s tests
+        run: poetry run pytest -ra -s tests
