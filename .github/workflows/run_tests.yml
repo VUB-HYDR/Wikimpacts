@@ -35,6 +35,8 @@ jobs:
           poetry check --no-interaction
           poetry config virtualenvs.in-project true
           poetry install --no-interaction
+      - name: Check out LFS objects
+        run: git lfs checkout Database/data/*.csv
       - name: Run tests
         run: |
           poetry run pytest -ra -s tests
