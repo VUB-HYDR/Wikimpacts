@@ -23,13 +23,6 @@ class NormalizeLocation:
         self.gadm = pd.read_csv(gadm_path, sep=None, engine="python")
         self.unsd = pd.read_csv(unsd_path, sep=None, engine="python")
 
-        print("GADM")
-        print(self.gadm.head(3))
-        print()
-
-        print("UNSD")
-        print(self.unsd.head(3))
-        print()
         for col in self.unsd.columns:
             if "Code" not in col:
                 self.unsd[col] = self.unsd[col].apply(lambda s: s.lower() if type(s) == str else s)
