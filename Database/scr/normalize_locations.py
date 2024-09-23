@@ -84,6 +84,9 @@ class NormalizeLocation:
             "church",
         ]
 
+        print("------UNSD COLUMNS-------")
+        print(self.unsd.columns)
+        print("-------UNSD COLUMNS------")
         self.unsd_regions, self.unsd_subregions, self.unsd_intermediateregions = (
             self.unsd[self.region].dropna().unique(),
             self.unsd[self.subregion].dropna().unique(),
