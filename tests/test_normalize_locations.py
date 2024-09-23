@@ -7,6 +7,8 @@ from Database.scr.normalize_locations import NormalizeLocation
 
 def refresh_fixture():
     print("CWD", os.getcwd())
+    print("CWD list", os.listdir(os.getcwd()))
+    print("Data", os.listdir("Database/data"))
     norm = NormalizeLocation(
         gadm_path="Database/data/gadm_world.csv",
         unsd_path="Database/data/UNSD — Methodology.csv",
