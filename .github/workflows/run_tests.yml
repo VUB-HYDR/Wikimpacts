@@ -38,7 +38,7 @@ jobs:
       - name: Check out LFS objects
         run: git lfs checkout Database/data/*.csv
       - name: Run tests
+        with:
+          lfs: "true"
         run: |
           poetry run pytest -ra -s tests
-        with:
-          lfs: true
