@@ -1,14 +1,9 @@
-import os
-
 import pytest
 
 from Database.scr.normalize_locations import NormalizeLocation
 
 
 def refresh_fixture():
-    print("CWD", os.getcwd())
-    print("CWD list", os.listdir(os.getcwd()))
-    print("Data", os.listdir("Database/data"))
     norm = NormalizeLocation(
         gadm_path="Database/data/gadm_world.csv",
         unsd_path="Database/data/UNSD — Methodology.csv",
@@ -30,7 +25,6 @@ class TestNormalizeLocations:
         ],
     )
     def test__get_american_area(self, area, country, expected):
-        print("CWD", os.getcwd())
         norm = refresh_fixture()
         assert norm._get_american_area(area, country) == expected
 
