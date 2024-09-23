@@ -19,6 +19,7 @@ jobs:
         tool-cache: false
   test:
     name: Run Tests
+    needs: [free-disk-space]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2.4.0
