@@ -40,3 +40,5 @@ jobs:
       - name: Run tests
         run: |
           poetry run pytest -ra -s tests
+        with:
+          lfs: true
