@@ -37,7 +37,5 @@ jobs:
           poetry install --no-interaction
       - name: Run tests
         run: |
-            git lfs checkout Database/data/*.csv
-            && poetry run pytest -ra -s tests
-        with:
-          lfs: 'true'
+          git lfs pull Database/data/*.csv
+          && poetry run pytest -ra -s tests
