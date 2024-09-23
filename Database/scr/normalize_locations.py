@@ -21,7 +21,7 @@ class NormalizeLocation:
         geolocator = Nominatim(user_agent="wikimpacts - impactdb; beta. Github: VUB-HYDR/Wikimpacts")
         self.geocode = geolocator.geocode
         self.gadm = pd.read_csv(gadm_path, sep=None, engine="python")
-        self.unsd = pd.read_csv(unsd_path, sep=None, engine="python")
+        self.unsd = pd.read_csv(unsd_path, sep=";", engine="python")
 
         for col in self.unsd.columns:
             if "Code" not in col:
@@ -85,7 +85,7 @@ class NormalizeLocation:
         ]
 
         print("------UNSD COLUMNS-------")
-        print(self.unsd.columns)
+        print("Columns", type(self.unsd), self.unsd.columns)
         print("-------UNSD COLUMNS------")
         self.unsd_regions, self.unsd_subregions, self.unsd_intermediateregions = (
             self.unsd[self.region].dropna().unique(),
