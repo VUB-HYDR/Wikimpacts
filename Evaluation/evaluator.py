@@ -6,6 +6,7 @@ from pprint import pformat
 
 import pandas as pd
 
+from Database.scr.normalize_utils import NormalizeUtils
 from Evaluation.comparer import Comparer
 from Evaluation.matcher import SpecificInstanceMatcher
 from Evaluation.utils import Logging
@@ -90,7 +91,7 @@ if __name__ == "__main__":
     )
 
     args = parser.parse_args()
-
+    utils = NormalizeUtils()
     output_dir = f"Database/evaluation_results/{args.model_name}"
     logger.info(f"Creating {output_dir} if it does not exist!")
     pathlib.Path(output_dir).mkdir(parents=True, exist_ok=True)
@@ -111,6 +112,10 @@ if __name__ == "__main__":
     sys = pd.read_parquet(args.system_output, engine="fastparquet").replace(
         {float("nan"): None, "NULL ": None, "NULL": None}
     )
+
+    for _set in [gold, sys]:
+        for c in [_c for _c in _set.columns if "Areas" in _c or "Locations" in _c]:
+            _set[c] = _set[c].apply(utils.eval)
 
     admin_area_columns = ["Administrative_Area_Norm", "Administrative_Areas_Norm", "Country_Norm"]
     location_columns = ["Location_Norm", "Locations_Norm"]
@@ -144,8 +149,8 @@ if __name__ == "__main__":
             si_sys
         ).replace({float("nan"): None, "NULL ": None, "NULL": None})
 
-        gold.to_parquet(f"{output_dir}/gold_{args.impact_type}.parquet")
-        sys.to_parquet(f"{output_dir}/sys_{args.impact_type}.parquet")
+        gold.to_parquet(f"{output_dir}/gold_{args.impact_type}.parquet", engine="fastparquet")
+        sys.to_parquet(f"{output_dir}/sys_{args.impact_type}.parquet", engine="fastparquet")
 
     elif args.event_level in ["l1"]:
         logger.info("Only including events in the gold file!")

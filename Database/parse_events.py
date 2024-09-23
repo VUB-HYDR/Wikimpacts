@@ -206,9 +206,6 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
         events[col] = events[col].astype(str)
     logger.info("Converting list columns to strings to store in sqlite3")
 
-    for col in events.columns:
-        events[col] = events[col].astype(str)
-
     logger.info(f"Storing parsed results for l1 events. Target columns: {target_columns}")
     df_to_parquet(
         events[[x for x in target_columns if x in events.columns]],
