@@ -88,7 +88,7 @@ if __name__ == "__main__":
                 index=False,
             )
         except sqlite3.IntegrityError as err:
-            logger.info(
+            logger.error(
                 f"""Could not insert event for level {args.event_level}. Error {err}.
                              The problematic row will be stored in /tmp/ with the error. GeoJson columns will not be included."""
             )
