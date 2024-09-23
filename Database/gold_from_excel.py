@@ -451,9 +451,6 @@ def flatten_data_table():
                             lambda x: (x[0] if isinstance(x, list) and len(x) == 1 else None)
                         )
                         df["Location_Norm"] = df["Location_Norm"].apply(lambda x: flatten(x) if x else [])
-                        df["Administrative_Area_Norm"] = df["Administrative_Area_Norm"].apply(
-                            lambda x: flatten(x) if x else []
-                        )
                         df = df[availble_col]
                         df.rename(
                             columns={"Location_Norm": "Locations_Norm"},
