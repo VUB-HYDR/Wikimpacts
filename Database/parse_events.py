@@ -20,7 +20,8 @@ def infer_countries(
 ) -> list:
     countries = []
     for gids in row[f"{admin_area_col}_GID"]:
-        countries.extend([gd.split(".")[0] for gd in gids if len(gd.split(".")[0]) == 3])
+        if gids:
+            countries.extend([gd.split(".")[0] for gd in gids if len(gd.split(".")[0]) == 3])
     countries = list(set(countries))
 
     return [norm_loc.get_gid_0(c) for c in countries if norm_loc.get_gid_0(c)]
