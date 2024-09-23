@@ -24,8 +24,8 @@ class SpecificInstanceMatcher:
             "End_Date_Year",
         ]
         self.bool_cat: list[str] = ["Adjusted"]
-        self.str_cat: list[str] = ["Country_Norm", "Unit"]
-        self.list_cat: list[str] = ["Location_Norm"]
+        self.str_cat: list[str] = ["Administrative_Area_Norm", "Location_Norm", "Unit"]
+        self.list_cat: list[str] = ["Administrative_Areas_Norm", "Locations_Norm"]
 
         self.comp = Comparer(null_penalty, [])
 

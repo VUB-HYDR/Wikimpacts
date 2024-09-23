@@ -434,7 +434,10 @@ def flatten_data_table():
                         df["Administrative_Area_Norm"] = df["Administrative_Area_Norm"].progress_apply(
                             lambda x: [y.split("|") if y else None for y in x]
                         )
-                        df["Location_Norm"] = df["Location_Norm"].progress_apply(lambda x: flatten(x) if x else None)
+                        df["Location_Norm"] = df["Location_Norm"].progress_apply(lambda x: flatten(x) if x else [])
+                        df["Administrative_Area_Norm"] = df["Administrative_Area_Norm"].apply(
+                            lambda x: flatten(x) if x else []
+                        )
                         df = df[availble_col]
                         df.rename(
                             columns={"Administrative_Area_Norm": "Administrative_Areas_Norm"},
@@ -446,6 +449,10 @@ def flatten_data_table():
                     elif name == "Specific_Instance_Per_Administrative_Area":  # l3
                         df["Administrative_Area_Norm"] = df["Administrative_Area_Norm"].progress_apply(
                             lambda x: (x[0] if isinstance(x, list) and len(x) == 1 else None)
+                        )
+                        df["Location_Norm"] = df["Location_Norm"].apply(lambda x: flatten(x) if x else [])
+                        df["Administrative_Area_Norm"] = df["Administrative_Area_Norm"].apply(
+                            lambda x: flatten(x) if x else []
                         )
                         df = df[availble_col]
                         df.rename(

@@ -55,7 +55,7 @@ default_weights = {
         "End_Date_Month": 1,
         "End_Date_Year": 1,
         # Area
-        # "Administrative_Areas_Norm": 1,  # list
+        "Administrative_Areas_Norm": 1,  # list
         # Impact
         "Num_Min": 1,
         "Num_Max": 1,
@@ -74,7 +74,7 @@ default_weights = {
         "End_Date_Month": 1,
         "End_Date_Year": 1,
         # Area
-        # "Administrative_Areas_Norm": 1,  # list
+        "Administrative_Areas_Norm": 1,  # list
         # Impact
         "Num_Min": 1,
         "Num_Max": 1,
@@ -90,8 +90,8 @@ default_weights = {
         "End_Date_Month": 1,
         "End_Date_Year": 1,
         # Area
-        # "Administrative_Area_Norm": 1,  # str
-        # "Locations_Norm": 1,  # list
+        "Administrative_Area_Norm": 1,  # str
+        "Locations_Norm": 1,  # list
         # Impact
         "Num_Min": 1,
         "Num_Max": 1,
@@ -110,8 +110,8 @@ default_weights = {
         "End_Date_Month": 1,
         "End_Date_Year": 1,
         # Area
-        # "Administrative_Area_Norm": 1,  # str
-        # "Locations_Norm": 1,  # list
+        "Administrative_Area_Norm": 1,  # str
+        "Locations_Norm": 1,  # list
         # Impact
         "Num_Min": 1,
         "Num_Max": 1,

@@ -71,6 +71,7 @@ numerical_impacts=("Deaths" "Injuries" "Affected" "Buildings_Damaged" "Homeless"
 goldFileDir=${1}
 sysFileDir=${2}
 dataSplit=${3}
+outputDir=${4}
 
 echo Gold Directory: ${goldFileDir}
 echo System Output Directory: ${sysFileDir}
@@ -81,7 +82,7 @@ for lvl in "${levels[@]}"; do
         poetry run python3 Evaluation/evaluator.py \
             --sys_output ${sysFileDir}/${dataSplit}/${lvl} \
             --gold_set ${goldFileDir}/${dataSplit}/${lvl} \
-            --model_name essd/${dataSplit}/${lvl} \
+            --model_name ${outputDir}/${dataSplit}/${lvl} \
             --null_penalty 1 \
             --score all \
             --weights_config ESSD_2024_${lvl} \
@@ -102,7 +103,7 @@ for lvl in "${levels[@]}"; do
                 # poetry run python3 Evaluation/evaluator.py \
                 #     --sys_output ${sysFileDir}/${dataSplit}/${lvl}/${targetImpact} \
                 #     --gold_set ${goldFileDir}/${dataSplit}/${lvl}/${targetImpact}.parquet \
-                #     --model_name essd/${dataSplit}/${lvl} \
+                #     --model_name ${outputDir}/${dataSplit}/${lvl} \
                 #     --null_penalty 1 \
                 #     --score all \
                 #     --weights_config ESSD_2024_${lvl}_monetary \
@@ -120,7 +121,7 @@ for lvl in "${levels[@]}"; do
                 poetry run python3 Evaluation/evaluator.py \
                     --sys_output ${sysFileDir}/${dataSplit}/${lvl}/${targetImpact} \
                     --gold_set ${goldFileDir}/${dataSplit}/${lvl}/${targetImpact}.parquet \
-                    --model_name essd/${dataSplit}/${lvl} \
+                    --model_name ${outputDir}/${dataSplit}/${lvl} \
                     --null_penalty 1 \
                     --score all \
                     --weights_config ESSD_2024_${lvl}_numerical \
