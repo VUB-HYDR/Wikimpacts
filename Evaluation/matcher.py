@@ -10,7 +10,7 @@ class SpecificInstanceMatcher:
 
     def __init__(self, threshold: float = 0.6, null_penalty: float = 0.5):
         self.logger = Logging.get_logger("specific instance matcher")
-
+        self.logger.info(f"Null penalty: {null_penalty}; Threshold: {threshold}")
         self.threshold = threshold
         self.int_cat: list[str] = [
             "Num_Min",

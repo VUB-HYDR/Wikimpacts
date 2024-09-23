@@ -90,13 +90,33 @@ if __name__ == "__main__":
         required=False,
     )
 
+    parser.add_argument(
+        "-mn",
+        "--matcher_null_penalty",
+        dest="matcher_null_penalty",
+        default=0.5,
+        help="""Specify the null penalty for matching l2 and l3 events""",
+        type=float,
+        required=True,
+    )
+
+    parser.add_argument(
+        "-mt",
+        "--matcher_threshold",
+        dest="matcher_threshold",
+        default=0.6,
+        help="""Specify the threshold for matching l2 and l3 events""",
+        type=float,
+        required=True,
+    )
+
     args = parser.parse_args()
     utils = NormalizeUtils()
     output_dir = f"Database/evaluation_results/{args.model_name}"
     logger.info(f"Creating {output_dir} if it does not exist!")
     pathlib.Path(output_dir).mkdir(parents=True, exist_ok=True)
 
-    matcher = SpecificInstanceMatcher()
+    matcher = SpecificInstanceMatcher(null_penalty=args.matcher_null_penalty, threshold=args.matcher_threshold)
 
     gold = pd.read_parquet(args.gold_set, engine="fastparquet").replace(
         {float("nan"): None, "NULL ": None, "NULL": None}
