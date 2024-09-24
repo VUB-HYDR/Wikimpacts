@@ -125,6 +125,11 @@ if __name__ == "__main__":
         logger.info(f"Inserting {main_level}...\n")
         for f in files:
             data = pd.read_parquet(f"{args.file_dir}/{f}", engine="fastparquet")
+
+            logger.info("Converting everything to strings...")
+            for c in data.columns:
+                data[c] = data[c].astype(str)
+
             # geojson in l1 is always of type list
             if args.dump_geojson_to_file:
                 logger.info(f"Popping GeoJson files out of {args.database_name} and onto disk")
@@ -184,6 +189,10 @@ if __name__ == "__main__":
 
         for f in files:
             data = pd.read_parquet(f"{args.file_dir}/{f}", engine="fastparquet")
+
+            logger.info("Converting everything to strings...")
+            for c in data.columns:
+                data[c] = data[c].astype(str)
 
             logger.info(f"Popping GeoJson files out of {args.database_name} and onto disk")
             if args.dump_geojson_to_file:

@@ -352,7 +352,12 @@ class NormalizeJsonOutput:
                         ) or any(
                             [
                                 x in [y.lower() for y in entry[k].keys()]
-                                for x in ["location", "location_with_annotation"]
+                                for x in [
+                                    "location",
+                                    "location_with_annotation",
+                                    "administrative_areas",
+                                    "administrative_areas_annotation",
+                                ]
                             ]
                         ):
                             for _k in entry[k]:

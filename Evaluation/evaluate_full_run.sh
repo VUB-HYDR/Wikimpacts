@@ -71,6 +71,9 @@ numerical_impacts=("Deaths" "Injuries" "Affected" "Buildings_Damaged" "Homeless"
 goldFileDir=${1}
 sysFileDir=${2}
 dataSplit=${3}
+outputDir=${4}
+matcherNullPenalty=0.5
+matcherThreshold=0.6
 
 echo Gold Directory: ${goldFileDir}
 echo System Output Directory: ${sysFileDir}
@@ -81,11 +84,13 @@ for lvl in "${levels[@]}"; do
         poetry run python3 Evaluation/evaluator.py \
             --sys_output ${sysFileDir}/${dataSplit}/${lvl} \
             --gold_set ${goldFileDir}/${dataSplit}/${lvl} \
-            --model_name essd/${dataSplit}/${lvl} \
+            --model_name ${outputDir}/${dataSplit}/${lvl} \
             --null_penalty 1 \
             --score all \
             --weights_config ESSD_2024_${lvl} \
-            --event_level ${lvl}
+            --event_level ${lvl} \
+            --matcher_null_penalty ${matcherNullPenalty} \
+            --matcher_threshold ${matcherThreshold}
 
 
     else
@@ -102,12 +107,14 @@ for lvl in "${levels[@]}"; do
                 # poetry run python3 Evaluation/evaluator.py \
                 #     --sys_output ${sysFileDir}/${dataSplit}/${lvl}/${targetImpact} \
                 #     --gold_set ${goldFileDir}/${dataSplit}/${lvl}/${targetImpact}.parquet \
-                #     --model_name essd/${dataSplit}/${lvl} \
+                #     --model_name ${outputDir}/${dataSplit}/${lvl} \
                 #     --null_penalty 1 \
                 #     --score all \
                 #     --weights_config ESSD_2024_${lvl}_monetary \
                 #     --event_level ${lvl} \
                 #     --impact_type ${targetImpact}
+                #     --matcher_null_penalty ${matcherNullPenalty} \
+                #     --matcher_threshold ${matcherThreshold}
             done
             for ni in "${numerical_impacts[@]}"; do
                 if [[ ${lvl} == "l2" ]]; then
@@ -120,12 +127,14 @@ for lvl in "${levels[@]}"; do
                 poetry run python3 Evaluation/evaluator.py \
                     --sys_output ${sysFileDir}/${dataSplit}/${lvl}/${targetImpact} \
                     --gold_set ${goldFileDir}/${dataSplit}/${lvl}/${targetImpact}.parquet \
-                    --model_name essd/${dataSplit}/${lvl} \
+                    --model_name ${outputDir}/${dataSplit}/${lvl} \
                     --null_penalty 1 \
                     --score all \
                     --weights_config ESSD_2024_${lvl}_numerical \
                     --event_level ${lvl} \
-                    --impact_type ${targetImpact}
+                    --impact_type ${targetImpact} \
+                    --matcher_null_penalty ${matcherNullPenalty} \
+                    --matcher_threshold ${matcherThreshold}
             done
         done
     fi

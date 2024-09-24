@@ -10,7 +10,7 @@ class SpecificInstanceMatcher:
 
     def __init__(self, threshold: float = 0.6, null_penalty: float = 0.5):
         self.logger = Logging.get_logger("specific instance matcher")
-
+        self.logger.info(f"Null penalty: {null_penalty}; Threshold: {threshold}")
         self.threshold = threshold
         self.int_cat: list[str] = [
             "Num_Min",
@@ -24,8 +24,8 @@ class SpecificInstanceMatcher:
             "End_Date_Year",
         ]
         self.bool_cat: list[str] = ["Adjusted"]
-        self.str_cat: list[str] = ["Country_Norm", "Unit"]
-        self.list_cat: list[str] = ["Location_Norm"]
+        self.str_cat: list[str] = ["Administrative_Area_Norm", "Location_Norm", "Unit"]
+        self.list_cat: list[str] = ["Administrative_Areas_Norm", "Locations_Norm"]
 
         self.comp = Comparer(null_penalty, [])
 

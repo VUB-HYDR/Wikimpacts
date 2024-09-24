@@ -47,6 +47,7 @@ if __name__ == "__main__":
     connection = sqlite3.connect(args.database)
     cursor = connection.cursor()
 
+    logger.info(f"Database {args.database}")
     # create table if it does not exist (does not affect existing data)
     with open(args.table_schema, "r") as f:
         generate_database_command = f.read()
@@ -66,6 +67,7 @@ if __name__ == "__main__":
     files = [f"{args.file_path}/{x}" for x in os.listdir(args.file_path) if x.endswith(".json")]
     filenames = [x.split(".json")[0].split("/")[-1] for x in files]
     data = pd.DataFrame(columns=["nid", "geojson_obj"])
+    logger.info(f"Found {len(filenames)} files")
 
     for i in tqdm(range(len(files))):
         with open(files[i]) as f:
@@ -82,11 +84,11 @@ if __name__ == "__main__":
             data.iloc[i : i + 1].to_sql(
                 name="GeoJson_Obj",
                 con=connection,
-                if_exists="replace",
+                if_exists="append",
                 index=False,
             )
         except sqlite3.IntegrityError as err:
-            logger.debug(
+            logger.error(
                 f"""Could not insert event for level {args.event_level}. Error {err}.
                              The problematic row will be stored in /tmp/ with the error. GeoJson columns will not be included."""
             )
