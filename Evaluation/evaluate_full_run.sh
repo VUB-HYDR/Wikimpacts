@@ -71,7 +71,8 @@ numerical_impacts=("Deaths" "Injuries" "Affected" "Buildings_Damaged" "Homeless"
 goldFileDir=${1}
 sysFileDir=${2}
 dataSplit=${3}
-outputDir=${4}
+dataSplit_sys=${4}
+outputDir=${5}
 matcherNullPenalty=0.5
 matcherThreshold=0.6
 
@@ -82,7 +83,7 @@ for lvl in "${levels[@]}"; do
     if [[ ${lvl} == "l1" ]]; then
         echo Evaluating ${lvl}
         poetry run python3 Evaluation/evaluator.py \
-            --sys_output ${sysFileDir}/${dataSplit}/${lvl} \
+            --sys_output ${sysFileDir}/${dataSplit_sys}/${lvl} \
             --gold_set ${goldFileDir}/${dataSplit}/${lvl} \
             --model_name ${outputDir}/${dataSplit}/${lvl} \
             --null_penalty 1 \
@@ -125,7 +126,7 @@ for lvl in "${levels[@]}"; do
 
                 echo Evaluating impact ${targetImpact}
                 poetry run python3 Evaluation/evaluator.py \
-                    --sys_output ${sysFileDir}/${dataSplit}/${lvl}/${targetImpact} \
+                    --sys_output ${sysFileDir}/${dataSplit_sys}/${lvl}/${targetImpact} \
                     --gold_set ${goldFileDir}/${dataSplit}/${lvl}/${targetImpact}.parquet \
                     --model_name ${outputDir}/${dataSplit}/${lvl} \
                     --null_penalty 1 \
