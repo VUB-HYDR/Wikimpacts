@@ -254,12 +254,12 @@ To evaluate all event levels and categories, **make sure your gold files and sys
 
 ```shell
 # dataSplit can be dev or test
-source Evaluation/evaluate_full_run.sh goldFileDir sysFileDir dataSplit
+source Evaluation/evaluate_full_run.sh goldFileDir sysFileDir dataSplit dataSplit_sys outputdir
 ```
 
 ```shell
 # example using ESDD_2024 data
-source Evaluation/evaluate_full_run.sh Database/gold/ESSD_2024 Database/output/ESSD_2024 dev
+source Evaluation/evaluate_full_run.sh Database/gold/ESSD_2024 Database/output/ESSD_2024 dev dev/V3  ESSD_2024/dev_default
 ```
 
 ### Inserting events to the database
