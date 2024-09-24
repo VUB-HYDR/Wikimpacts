@@ -9,6 +9,6 @@ And we evaluate the settings above using V3 output. Since in the dev set, we onl
 
 Next, we have 3 versions of prompts test in the process, and we test them using the 54 events for L1/L2/L3
  Prompt version  & Description \\
-       V1  & For the impact categories, all questions in the one prompt \\
-       V2 & For the impact categories, L1 and L2 related questions in the one prompt, and L3 related questions in one prompt \\
-       V3 & For the impact categories, L1, L2 and L3 related questions in three prompts respectively. \\
+       V3  & For the impact categories, all questions in the one prompt \\
+       V4 & For the impact categories, L1 and L2 related questions in the one prompt, and L3 related questions in one prompt \\
+       V5 & For the impact categories, L1, L2 and L3 related questions in three prompts respectively. \\
