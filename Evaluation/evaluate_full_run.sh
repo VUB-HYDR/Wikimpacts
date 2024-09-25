@@ -102,19 +102,18 @@ for lvl in "${levels[@]}"; do
                 else
                     targetImpact=Specific_Instance_Per_Administrative_Area_${mi}
                 fi
-                echo Skipping impact ${targetImpact}
-                # TODO: implement this after fixing evalution of monetary impact categories
-                # poetry run python3 Evaluation/evaluator.py \
-                #     --sys_output ${sysFileDir}/${dataSplit}/${lvl}/${targetImpact} \
-                #     --gold_set ${goldFileDir}/${dataSplit}/${lvl}/${targetImpact}.parquet \
-                #     --model_name ${outputDir}/${dataSplit}/${lvl} \
-                #     --null_penalty 1 \
-                #     --score all \
-                #     --weights_config ESSD_2024_${lvl}_monetary \
-                #     --event_level ${lvl} \
-                #     --impact_type ${targetImpact}
-                #     --matcher_null_penalty ${matcherNullPenalty} \
-                #     --matcher_threshold ${matcherThreshold}
+                echo Evaluating monetary impact ${targetImpact}
+                poetry run python3 Evaluation/evaluator.py \
+                    --sys_output ${sysFileDir}/${dataSplit}/${lvl}/${targetImpact} \
+                    --gold_set ${goldFileDir}/${dataSplit}/${lvl}/${targetImpact}.parquet \
+                    --model_name ${outputDir}/${dataSplit}/${lvl} \
+                    --null_penalty 1 \
+                    --score all \
+                    --weights_config ESSD_2024_${lvl}_monetary \
+                    --event_level ${lvl} \
+                    --impact_type ${targetImpact} \
+                    --matcher_null_penalty ${matcherNullPenalty} \
+                    --matcher_threshold ${matcherThreshold}
             done
             for ni in "${numerical_impacts[@]}"; do
                 if [[ ${lvl} == "l2" ]]; then
@@ -123,7 +122,7 @@ for lvl in "${levels[@]}"; do
                     targetImpact=Specific_Instance_Per_Administrative_Area_${ni}
                 fi
 
-                echo Evaluating impact ${targetImpact}
+                echo Evaluating numerical impact ${targetImpact}
                 poetry run python3 Evaluation/evaluator.py \
                     --sys_output ${sysFileDir}/${dataSplit}/${lvl}/${targetImpact} \
                     --gold_set ${goldFileDir}/${dataSplit}/${lvl}/${targetImpact}.parquet \

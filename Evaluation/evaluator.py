@@ -8,7 +8,7 @@ import pandas as pd
 
 from Database.scr.normalize_utils import NormalizeUtils
 from Evaluation.comparer import Comparer
-from Evaluation.matcher import SpecificInstanceMatcher
+from Evaluation.matcher import CurrencyMatcher, SpecificInstanceMatcher
 from Evaluation.utils import Logging
 from Evaluation.weights import weights as weights_dict
 
@@ -202,7 +202,7 @@ if __name__ == "__main__":
 
         logger.info(f"Evaluation limited to {sys.shape} events from source {args.score}")
 
-    if args.event_level in "l1":
+    if args.event_level == "l1":
         # Add dummy rows for missing events (for l1 event evaluation only)
         missing_ids = set(sys["Event_ID"].to_list()) ^ set(gold["Event_ID"].to_list())
         if missing_ids:
@@ -223,6 +223,50 @@ if __name__ == "__main__":
             missing_rows = pd.DataFrame(rows_to_add)
             sys = pd.concat([sys, missing_rows], ignore_index=True).sort_values("Event_ID")
             sys.replace({float("nan"): None}, inplace=True)
+
+    # Align Monetary Categories
+    logger.info("Aligning monetary columns")
+
+    monetary_categories = ["Damage", "Insured_Damage"]
+
+    gold.to_json("control.json", orient="records", indent=3)
+    for mc in monetary_categories:
+        if args.event_level == "l1":
+            unit_col, adjusted_col, year_col, min_col, max_col = (
+                f"Total_{mc}_Unit",
+                f"Total_{mc}_Inflation_Adjusted",
+                f"Total_{mc}_Inflation_Adjusted_Year",
+                f"Total_{mc}_Min",
+                f"Total_{mc}_Max",
+            )
+        else:
+            unit_col, adjusted_col, year_col, min_col, max_col = (
+                "Num_Unit",
+                "Num_Inflation_Adjusted",
+                "Num_Inflation_Adjusted_Year",
+                "Num_Min",
+                "Num_Max",
+            )
+
+        currency = CurrencyMatcher()
+        sys_unit_col, aliged_col = f"sys_unit_col_{mc}", f"aligned_{mc}"
+
+        gold[sys_unit_col] = sys[unit_col]
+        gold[aliged_col] = gold.apply(
+            lambda row: currency.get_best_currency_match(row[sys_unit_col], row[unit_col])
+            if row[unit_col] and row[sys_unit_col]
+            else -2,
+            axis=1,
+        )
+
+        gold.to_json("test_1.json", orient="records", indent=3)
+
+        for col in [unit_col, adjusted_col, year_col, min_col, max_col]:
+            gold[col] = gold.apply(
+                lambda row: row[col][row[aliged_col]] if row[aliged_col] >= 0 and row[col] is not None else None, axis=1
+            )
+
+        gold.to_json("test_2.json", orient="records", indent=3)
 
     # Specify null penalty
     null_penalty = args.null_penalty
