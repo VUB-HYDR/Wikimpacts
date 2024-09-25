@@ -83,7 +83,6 @@ if __name__ == "__main__":
         "-si",
         "--impact_type",
         dest="impact_type",
-        default="deaths",
         help="""Supply the specific instance type/category (example: 'deaths', 'insurance_damage')
             to store matched specific instances for gold and sys""",
         type=str,
@@ -118,26 +117,35 @@ if __name__ == "__main__":
 
     matcher = SpecificInstanceMatcher(null_penalty=args.matcher_null_penalty, threshold=args.matcher_threshold)
 
-    gold = pd.read_parquet(args.gold_set, engine="fastparquet").replace(
-        {float("nan"): None, "NULL ": None, "NULL": None}
-    )
-
-    sys_f = pathlib.Path(args.system_output)
-    if sys_f.is_dir():
-        logger.info(
-            f"The provided system output path is to a directory `{args.system_output}`. If .parquet files are present, they will be pulled and concatenated into a single file."
+    try:
+        gold = pd.read_parquet(args.gold_set, engine="fastparquet").replace(
+            {float("nan"): None, "NULL ": None, "NULL": None}
         )
-        logger.info(f"Files in {args.system_output}: {list(sys_f.iterdir())}")
 
-    sys = pd.read_parquet(args.system_output, engine="fastparquet").replace(
-        {float("nan"): None, "NULL ": None, "NULL": None}
-    )
+        sys_f = pathlib.Path(args.system_output)
+        if sys_f.is_dir():
+            logger.info(
+                f"""The provided system output path is to a directory `{args.system_output}`.
+                If .parquet files are present, they will be pulled and concatenated into a single file."""
+            )
+            logger.info(f"Files in {args.system_output}: {list(sys_f.iterdir())}")
+
+        sys = pd.read_parquet(args.system_output, engine="fastparquet").replace(
+            {float("nan"): None, "NULL ": None, "NULL": None}
+        )
+    except BaseException as err:
+        logger.error(f"Loading the gold or sys files unsuccessful. Error: {err}")
+        exit()
 
     for _set in [gold, sys]:
         for c in [_c for _c in _set.columns if "Areas" in _c or "Locations" in _c]:
             _set[c] = _set[c].apply(utils.eval)
 
-    admin_area_columns = ["Administrative_Area_Norm", "Administrative_Areas_Norm", "Country_Norm"]
+    admin_area_columns = [
+        "Administrative_Area_Norm",
+        "Administrative_Areas_Norm",
+        "Country_Norm",
+    ]
     location_columns = ["Location_Norm", "Locations_Norm"]
     any_area_columns = admin_area_columns + location_columns
 
@@ -224,13 +232,22 @@ if __name__ == "__main__":
             sys = pd.concat([sys, missing_rows], ignore_index=True).sort_values("Event_ID")
             sys.replace({float("nan"): None}, inplace=True)
 
-    # Align Monetary Categories
-    logger.info("Aligning monetary columns")
+    # Align Monetary Categories by currency unit
+    logger.info("Checking for monetary categories that need alignment.")
+    monetary_categories = []
+    if args.event_level == "l1":
+        monetary_categories = ["Insured_Damage", "Damage"]
+    elif "Damage".lower() in args.impact_type.lower() and args.event_level in [
+        "l2",
+        "l3",
+    ]:
+        if "Insured" in args.impact_type:
+            monetary_categories = ["Insured_Damage"]
+        elif "Damage" in args.impact_type and not "Insured" in args.impact_type and not "Buildings" in args.impact_type:
+            monetary_categories = ["Damage"]
 
-    monetary_categories = ["Damage", "Insured_Damage"]
-
-    gold.to_json("control.json", orient="records", indent=3)
     for mc in monetary_categories:
+        logger.info(f"Aligning monetary columns for category {mc}")
         if args.event_level == "l1":
             unit_col, adjusted_col, year_col, min_col, max_col = (
                 f"Total_{mc}_Unit",
@@ -247,26 +264,26 @@ if __name__ == "__main__":
                 "Num_Min",
                 "Num_Max",
             )
-
         currency = CurrencyMatcher()
-        sys_unit_col, aliged_col = f"sys_unit_col_{mc}", f"aligned_{mc}"
-
+        sys_unit_col, aliged_col = (
+            f"sys_unit_col_{mc}",
+            f"aligned_{mc}",
+        )
         gold[sys_unit_col] = sys[unit_col]
         gold[aliged_col] = gold.apply(
-            lambda row: currency.get_best_currency_match(row[sys_unit_col], row[unit_col])
-            if row[unit_col] and row[sys_unit_col]
-            else -2,
+            lambda row: (
+                currency.get_best_currency_match(row[sys_unit_col], row[unit_col])
+                if row[unit_col] and row[sys_unit_col]
+                else -1
+            ),
             axis=1,
         )
-
-        gold.to_json("test_1.json", orient="records", indent=3)
-
         for col in [unit_col, adjusted_col, year_col, min_col, max_col]:
             gold[col] = gold.apply(
-                lambda row: row[col][row[aliged_col]] if row[aliged_col] >= 0 and row[col] is not None else None, axis=1
+                lambda row: (row[col][row[aliged_col]] if row[aliged_col] >= 0 and row[col] is not None else None),
+                axis=1,
             )
-
-        gold.to_json("test_2.json", orient="records", indent=3)
+        gold.drop(columns=[sys_unit_col, aliged_col], inplace=True)
 
     # Specify null penalty
     null_penalty = args.null_penalty
@@ -303,6 +320,14 @@ if __name__ == "__main__":
     sys_data = sys[weights.keys()].to_dict(orient="records")
     gold_data = gold[weights.keys()].to_dict(orient="records")
 
+    if args.event_level == "l1" and monetary_categories:
+        logger.info("Storing gold and sys files with matched currencies")
+        gold[weights.keys()].to_parquet(
+            f"{output_dir}/gold_matched_currencies_{args.event_level}.parquet", engine="fastparquet"
+        )
+        sys[weights.keys()].to_parquet(
+            f"{output_dir}/sys_matched_currencies_{args.event_level}.parquet", engine="fastparquet"
+        )
     pairs = zip(sys_data, gold_data)
 
     logger.info(f"Prepared {len(sys_data)} events for evaluation")
@@ -323,10 +348,14 @@ if __name__ == "__main__":
 
     all_comps.sort_values("Weighted_Score")
     if args.event_level == "l1":
-        all_comps.to_csv(f"{output_dir}/{args.event_level}_{args.score}_{len(sys_data)}_results.csv", index=False)
+        all_comps.to_csv(
+            f"{output_dir}/{args.event_level}_{args.score}_{len(sys_data)}_results.csv",
+            index=False,
+        )
     elif args.event_level in ["l2", "l3"]:
         all_comps.to_csv(
-            f"{output_dir}/{args.event_level}_{args.score}_{len(sys_data)}_{args.impact_type}_results.csv", index=False
+            f"{output_dir}/{args.event_level}_{args.score}_{len(sys_data)}_{args.impact_type}_results.csv",
+            index=False,
         )
     averages = {}
     for i in all_comps.columns:

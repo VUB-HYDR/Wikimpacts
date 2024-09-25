@@ -67,7 +67,7 @@
 
 levels=("l1" "l2" "l3")
 monetary_impacts=("Damage" "Insured_Damage")
-numerical_impacts=() #"Deaths" "Injuries" "Affected" "Buildings_Damaged" "Homeless" "Displaced")
+numerical_impacts=("Deaths" "Injuries" "Affected" "Buildings_Damaged" "Homeless" "Displaced")
 goldFileDir=${1}
 sysFileDir=${2}
 dataSplit=${3}

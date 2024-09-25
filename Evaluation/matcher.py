@@ -146,7 +146,6 @@ class CurrencyMatcher:
 
     @staticmethod
     def get_best_currency_match(sys_str: str, gold_list: list) -> int:
-        print(sys_str, "<--", gold_list)
         for i in range(len(gold_list)):
             if gold_list[i] == sys_str:
                 return i
