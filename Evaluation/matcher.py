@@ -15,7 +15,6 @@ class SpecificInstanceMatcher:
         self.int_cat: list[str] = [
             "Num_Min",
             "Num_Max",
-            "Adjusted_Year",
             "Start_Date_Day",
             "Start_Date_Month",
             "Start_Date_Year",
@@ -23,8 +22,8 @@ class SpecificInstanceMatcher:
             "End_Date_Month",
             "End_Date_Year",
         ]
-        self.bool_cat: list[str] = ["Adjusted"]
-        self.str_cat: list[str] = ["Administrative_Area_Norm", "Location_Norm", "Unit"]
+        self.bool_cat: list[str] = []
+        self.str_cat: list[str] = ["Administrative_Area_Norm", "Location_Norm"]
         self.list_cat: list[str] = ["Administrative_Areas_Norm", "Locations_Norm"]
 
         self.comp = Comparer(null_penalty, [])
@@ -43,7 +42,14 @@ class SpecificInstanceMatcher:
             scores = []
             for k in gold_instance.keys():
                 if k in self.int_cat:
-                    r = self.comp.integer(gold_instance[k], si[k])
+                    # Only include gold_instance[k] from numerical categories
+                    # For monetary categories, gold_instance[k] is a list
+                    # For numerical caterogies, it is always an int (or can be cast to an int)
+                    try:
+                        if isinstance(int(gold_instance[k]), int):
+                            r = self.comp.integer(gold_instance[k], si[k])
+                    except:
+                        pass
                 elif k in self.bool_cat:
                     r = self.comp.boolean(gold_instance[k], si[k])
                 elif k in self.str_cat:
@@ -55,7 +61,7 @@ class SpecificInstanceMatcher:
                     del r
                 except Exception:
                     if k != "Event_ID":
-                        self.logger.warning(f"Unsupported column name: {k} will be ignored during matching.")
+                        self.logger.debug(f"Unsupported column name: {k} will be ignored during matching.")
 
             score_list.append(mean(scores))
 
@@ -132,3 +138,15 @@ class SpecificInstanceMatcher:
                 counter += 1
 
         return (gold, sys)
+
+
+class CurrencyMatcher:
+    def __init__(self):
+        pass
+
+    @staticmethod
+    def get_best_currency_match(sys_str: str, gold_list: list) -> int:
+        for i in range(len(gold_list)):
+            if gold_list[i] == sys_str:
+                return i
+        return -1

@@ -46,7 +46,6 @@ default_weights = {
     },
     "l2_monetary": {
         "Event_ID": 0,
-        # "Hazards": 1,
         # Date
         "Start_Date_Day": 1,
         "Start_Date_Month": 1,
@@ -65,7 +64,6 @@ default_weights = {
     },
     "l2_numerical": {
         "Event_ID": 0,
-        # "Hazards": 1,
         # Date
         "Start_Date_Day": 1,
         "Start_Date_Month": 1,
@@ -81,7 +79,6 @@ default_weights = {
     },
     "l3_monetary": {
         "Event_ID": 0,
-        # "Hazards": 1,
         # Date
         "Start_Date_Day": 1,
         "Start_Date_Month": 1,
@@ -101,7 +98,6 @@ default_weights = {
     },
     "l3_numerical": {
         "Event_ID": 0,
-        # "Hazards": 1,
         # Date
         "Start_Date_Day": 1,
         "Start_Date_Month": 1,
