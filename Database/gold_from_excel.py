@@ -197,14 +197,6 @@ def flatten_data_table():
         data_table[col] = data_table[col].astype(str)
         data_table[col] = data_table[col].replace(null_pattern, None, regex=True)
 
-    logger.info("Dropping bad dates or rows with missing dates...")
-    # TODO: this may be a step we want to skip with gold data imports
-    # TODO: does this remove l2/l3 that are 'automatically filled' but missing dates?
-    for col in date_cols:
-        data_table[col] = data_table[col].replace(0.0, None)
-        data_table = data_table.replace(float("nan"), None)
-    data_table.dropna(how="all", inplace=True, subset=date_cols)
-
     logger.info(f"Converting to integers: {convert_to_int}")
     for col in convert_to_int:
         logger.debug(f"Casting column {col} as int")
@@ -421,10 +413,6 @@ def flatten_data_table():
                     )
 
                     df = df_lvl[flatten([availble_col, ["main"]])].copy()
-
-                    logger.debug(f"Dropping rows missing dates: {df.shape}")
-                    missing_date_msk = df[date_cols].isna().all(axis=1)
-                    df = df[~missing_date_msk]
 
                     logger.debug(f"Dropping rows missing specific impacts: {df.shape}")
                     missing_spec_impact_msk = df[event_breakdown_columns[col_type][cat]].isna().all(axis=1)
