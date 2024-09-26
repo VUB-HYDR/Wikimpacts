@@ -19,6 +19,6 @@ Suggested breakdown:
 
 For ESSD_2024, we have different folders for storing the parsed output
 
-ESSD_2024_V3, is the folder for the result from V3 prompts, so as V4 and V5
+ESSD_2024_V3 is the folder for the result from V3 prompts and other versions (V4, V5, etc).
 
 ESSD_2024_V3_filter, is the folder for the result from V3 prompts except that we filter out the events without L2/L3 annotations. We do the same for other versions (V4, V5, etc)
