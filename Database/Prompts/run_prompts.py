@@ -291,7 +291,7 @@ if __name__ == "__main__":
             jsonl_file_path_impact,
             args.description,
             client,
-            f"{args.description} {args.model_name} {args.filename}",
+            f"{args.description}_{args.model_name}_{args.filename}",
         )
 
     elif args.prompt_category == "basic":
@@ -302,7 +302,7 @@ if __name__ == "__main__":
             jsonl_file_path_basic,
             args.description,
             client,
-            f"{args.description} {args.model_name} {args.filename}",
+            f"{args.description}_{args.model_name}_{args.filename}",
         )
 
     elif args.prompt_category == "all":
@@ -313,7 +313,7 @@ if __name__ == "__main__":
             jsonl_file_path_basic,
             args.description,
             client,
-            f"{args.description} {args.model_name} {args.filename}",
+            f"{args.description}_{args.model_name}_{args.filename}",
         )
 
         # Process and upload impact data
@@ -323,5 +323,5 @@ if __name__ == "__main__":
             jsonl_file_path_impact,
             args.description,
             client,
-            f"{args.description} {args.model_name} {args.filename}",
+            f"{args.description}_{args.model_name}_{args.filename}",
         )
