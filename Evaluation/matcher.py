@@ -15,7 +15,6 @@ class SpecificInstanceMatcher:
         self.int_cat: dict[str, int] = {
             "Num_Min": 1,
             "Num_Max": 1,
-            "Adjusted_Year": 0.125,
             "Start_Date_Day": 0.125,
             "Start_Date_Month": 0.125,
             "Start_Date_Year": 0.125,
@@ -23,8 +22,7 @@ class SpecificInstanceMatcher:
             "End_Date_Month": 0.125,
             "End_Date_Year": 0.125,
         }
-        self.bool_cat: dict[str, int] = {"Adjusted": 0.125}
-        self.str_cat: dict[str, int] = {"Administrative_Area_Norm": 1, "Unit": 0.125}
+        self.str_cat: dict[str, int] = {"Administrative_Area_Norm": 1}
         self.list_cat: dict[str, int] = {"Locations_Norm": 1, "Administrative_Areas_Norm": 1}
 
         self.comp = Comparer(null_penalty, [])
@@ -51,8 +49,6 @@ class SpecificInstanceMatcher:
                             r = self.comp.integer(gold_instance[k], si[k])
                     except:
                         pass
-                elif k in self.bool_cat:
-                    r = self.comp.boolean(gold_instance[k], si[k])
                 elif k in self.str_cat:
                     r = self.comp.string(gold_instance[k], si[k])
                 elif k in self.list_cat:
