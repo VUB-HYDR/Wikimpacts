@@ -111,7 +111,7 @@ if __name__ == "__main__":
         for batch in batches:
             des = batch.metadata
             # only return the result with the same file name and the defined experiment description in the metadata description
-            if all([x in des.get("description") for x in [args.description, args.model_name, args.filename]]):
+            if str(f"{args.description}_{args.model_name}_{args.filename}") == des.get("description"):
                 batch_id = batch.id
                 output_file_id = batch.output_file_id
                 # Retrieve the batch details
