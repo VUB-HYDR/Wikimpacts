@@ -5,6 +5,8 @@
 # V_4 is the one with two prompts for each impact category, one prompt for L1/2 and one for L3
 # V_5 is the one with three prompts for each impact category
 # V_6 is a version based on V3 but force the model not to generate null for non-nullable items, and also for the L1 only ask for country information
+# V_3_Country is the version that only run prompt to extract the country in L1
+
 
 V_0: dict = {
     "deaths": [
@@ -1132,6 +1134,19 @@ V_3: dict = {
         the second is to identify all locations affected by {Event_Name} and organize this information in JSON format as follows:
         - "Administrative_Areas": "List all places mentioned in the text, including cities, regions, countries, and other administrative locations affected by {Event_Name}. The list should be formatted as ["location1", "location2"]."
         - "Administrative_Areas_Annotation":  "Cite "Info_Box" or the header name from the article provided where you find the information about the affected locations. The output should only include "Info_Box" or the header name."
+         Only Give Json output, no extra explanation needed."""
+    ],
+}
+
+
+V_3_Country: dict = {
+    # in this version, we ask the model to extract all the affected countries in L1.
+    "location_time": [
+        """
+        Based on information box {Info_Box} and header-content pair article {Whole_Text}, extract affected countries information associated with the {Event_Name}, along with supporting annotations from the article.
+          the task is to identify all countries affected by {Event_Name} and organize this information in JSON format as follows:
+        - "Administrative_Areas": "List all countries mentioned in the text affected by {Event_Name}. The list should be formatted as ["Country1", "Country2"]."
+        - "Administrative_Areas_Annotation":  "Cite "Info_Box" or the header name from the article provided where you find the information about the affected countries. The output should only include "Info_Box" or the header name."
          Only Give Json output, no extra explanation needed."""
     ],
 }
