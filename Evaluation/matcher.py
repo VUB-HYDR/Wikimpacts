@@ -22,6 +22,7 @@ class SpecificInstanceMatcher:
             "End_Date_Month": 0.125,
             "End_Date_Year": 0.125,
         }
+        self.bool_cat: list[str] = []
         self.str_cat: dict[str, int] = {"Administrative_Area_Norm": 1}
         self.list_cat: dict[str, int] = {"Locations_Norm": 1, "Administrative_Areas_Norm": 1}
 
