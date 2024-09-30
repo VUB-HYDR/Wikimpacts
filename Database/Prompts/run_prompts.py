@@ -8,7 +8,9 @@ import openai
 from dotenv import load_dotenv
 
 # the prompt list need to use the same variable names in our schema, and each key contains 1+ prompts
+
 from Database.Prompts.prompts import V_3_3 as target_prompts
+
 from Database.scr.log_utils import Logging
 
 if __name__ == "__main__":
