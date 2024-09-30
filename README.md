@@ -54,7 +54,7 @@ Choose the raw file contains the text you need to process, please use the clear 
 #### (Step 2) GPT models
 Choose the model you want to apply. The default model is "gpt-4o-2024-05-13"
 - below is a command example you can refer to run the script:
-```shell
+```json 
 poetry run python3 Database/Prompts/run_prompts.py
 --filename wiki_dev_whole_infobox_20240729_70single_events.json
 --raw_dir Database/Wiki_dev_test_articles
@@ -68,7 +68,7 @@ poetry run python3 Database/Prompts/run_prompts.py
 #### (Step 3) Retrieve results
 Choose the same raw file as you run the experiment, the same api env to access your remote OpenAI server, since you may run several batch process to test your prompts, it's really important to make sure your description in this step must be same with the one you run the prompting process. We use three components to match the batch output, the raw file name, the description and the model name, so please make sure in this step, you define the correct items mentioned above, and no extra space, tab, and case sensitive! We recommend to use a clear and identical output directory to store your result.
 - below is a command example you can refer to run the script:
-```shell
+```json
 poetry run python3  Database/Prompts/batch_output_retrivel.py
  --api_env .env
 --output_dir  Database/raw/ESSD_2024_V_3_1
