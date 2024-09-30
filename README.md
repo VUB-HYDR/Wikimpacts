@@ -26,11 +26,14 @@ pre-commit installed at .git/hooks/pre-commit
 git lfs install
 ```
 
-## Quickstart
+## Pipeline Docs
+
+The process below describes crucial parts of our pipeline.
+
+### Running prompts and experiments on OpenAI models
 
 #### (Step 0) Run your experiments!
 
-##### Run prompt experiments on OpenAI models
 If you use OpenAI models, there is a way to save your cost with running experiments in batch.
 We developed a series of prompts for our database as follows
 - V_0 is a list of prompts used in the NLP2024 paper
@@ -41,6 +44,7 @@ We developed a series of prompts for our database as follows
 - V_3_2 is a version based on V3, but in L1, we prompt the model to only capture affected countries
 - V_4 is the one with two prompts for each impact category, one prompt for L1/2 and one for L3
 - V_5 is the one with three prompts for each impact category
+
 Before you run our pipeline, please choose a version of prompts to proceed, which can be revised in the beginning of **run_prompts.py**
 
 ```shell
@@ -48,17 +52,21 @@ from Database.Prompts.prompts import V_3 as target_prompts
 ```
 
 #### (Step 1) Raw output
-Choose the raw file contains the text you need to process, please use the clear raw file name to indicate your experiment, this name will be used as the output file, the api env you want to use, the decription of the experiment, the prompt category, and the batch file location you want to store the batch file (this is not mandatory, but it's good to check if you create correct batch file)
+Choose the raw file that contains the text you need to process. Please use clear raw file names to indicate your experiment. This name will be used as the output file, the api env you want to use, the decription of the experiment, the prompt category, and the batch file location you want to store the batch file (this is not mandatory, but it's good to check if you create correct batch file)
 
 #### (Step 2) GPT models
-Choose the model you want to apply. The default model is "gpt-4o-2024-05-13"
-- below is a command example you can refer to run the script:
+Choose the model you want to apply. The default model is `gpt-4o-2024-05-13`
+
+Below is a command example you can refer to run the script:
+
 ```shell
 poetry run python3 Database/Prompts/run_prompts.py --filename wiki_dev_whole_infobox_20240729_70single_events.json --raw_dir Database/Wiki_dev_test_articles --batch_dir Database/Prompts/batch --api_env .env --description all_categories_V3  --model_name gpt-4o-2024-08-06 --max_tokens 16384  --prompt_category all
 ```
 #### (Step 3) Retrieve results
 Choose the same raw file as you run the experiment, the same api env to access your remote OpenAI server and the output directory to store your result.
-- below is a command example you can refer to run the script:
+
+Below is a command example you can refer to run the script:
+
 ```shell
 poetry run python3  Database/Prompts/batch_output_retrivel.py  --api_env .env  --output_dir  Database/raw/batch_test  --file_name wiki_dev_whole_infobox_20240729_70single_events.json  --raw_dir  Database/Wiki_dev_test_articles --description all_categories_V3
 ```
@@ -70,7 +78,7 @@ If you have generated some LLM output and would like to test it against the dev 
 
 Choose a new experiment name! You will use this <EXPERIMENT_NAME> for the whole pipeline.
 
-#### PRESTEP (before Step 2):
+#### (Step 2-a (Optional prestep!))
 If the system output is split across several files (such as Mixtral and Mistral system outputs), then first merge it:
 
 - Normalizing JSON output for Mistral/Mixtral
@@ -114,7 +122,7 @@ If the system output is split across several files (such as Mixtral and Mistral 
 > pre-commit run --files Database/raw/<EXPERIMENT_NAME>/> <JSON_FILE_THAT_NEEDS_FORMATTING>
 > ```
 
-#### (Step 2) Parsing l1, l2, and l3 events
+#### (Step 2-b) Parsing l1, l2, and l3 events
 
 Once all system output files are merged into a single JSON file (**or if this was already the case, such as with GPT4 output**), you can parse them so they are ready to be evaluated.
     The parsing script [`Database/parse_events.py`](Database/parse_events.py) will normalize numbers (to min and max) and locations (using OpenStreetMap) and output a JSON file.
