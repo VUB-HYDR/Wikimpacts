@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 def print_csv_columns(file_path):
     try:
         # Read only the first row of the CSV to get the columns
