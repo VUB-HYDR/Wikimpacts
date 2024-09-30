@@ -33,12 +33,13 @@ git lfs install
 ##### Run prompt experiments on OpenAI models
 If you use OpenAI models, there is a way to save your cost with running experiments in batch.
 We developed a series of prompts for our database as follows
-- V_0 is a list of prompts used in the NLP2024 paper
+- V_0 is a list of prompts used in the NLP2024 paper (Please use this in https://github.com/VUB-HYDR/Wikimpacts/releases/tag/v0.1)
 - V_1 is the list of prompts used for L1-3 and the annotation is directly quoted from the article
 - V_2 is the list of prompts for L1-3 with annotation gives the header names
-**(V_0-2 are not recommanded, because the variable names are not matched with following pipeline)**
+**(V_1-2 are not recommanded, because the variable names are not matched with following pipeline)**
 - V_3_1 is a version based on V2, but with freezed variable names as the schema we confirmed
-- V_3_2 is a version based on V3, but in L1, we prompt the model to only capture affected countries
+- V_3_2 is a version based on V_3_1, but in L1, we prompt the model to only capture affected countries
+- V_3_3 is a version based on V_3_2, but we put the infobox and the whole article in the end of each prompt
 - V_4 is the one with two prompts for each impact category, one prompt for L1/2 and one for L3
 - V_5 is the one with three prompts for each impact category
 Before you run our pipeline, please choose a version of prompts to proceed, which can be revised in the beginning of **run_prompts.py**
@@ -47,8 +48,8 @@ Before you run our pipeline, please choose a version of prompts to proceed, whic
 from Database.Prompts.prompts import V_3 as target_prompts
 ```
 
-#### (Step 1) Raw output
-Choose the raw file contains the text you need to process, please use the clear raw file name to indicate your experiment, this name will be used as the output file, the api env you want to use, the decription of the experiment, the prompt category, and the batch file location you want to store the batch file (this is not mandatory, but it's good to check if you create correct batch file)
+#### (Step 1) Raw input 
+Choose the raw file contains the text you need to process, please use the clear raw file name, for example "wiki_dev_whole_infobox_20240729_70single_events" which indicates the article resource (wiki), the experiment set (dev), the article structure (whole_infobox), the generation date (20240729) and the number of events (70single_events); the api env you want to use, specially for OpenAI models, it's mandatory; the decription of the experiment such as "all_categories_V3", the prompt category such as "all", and the batch file location you want to store the batch file (this is not mandatory, but it's good to check if you create correct batch file)
 
 #### (Step 2) GPT models
 Choose the model you want to apply. The default model is "gpt-4o-2024-05-13"
@@ -57,7 +58,7 @@ Choose the model you want to apply. The default model is "gpt-4o-2024-05-13"
 poetry run python3 Database/Prompts/run_prompts.py --filename wiki_dev_whole_infobox_20240729_70single_events.json --raw_dir Database/Wiki_dev_test_articles --batch_dir Database/Prompts/batch --api_env .env --description all_categories_V3  --model_name gpt-4o-2024-08-06 --max_tokens 16384  --prompt_category all
 ```
 #### (Step 3) Retrieve results
-Choose the same raw file as you run the experiment, the same api env to access your remote OpenAI server and the output directory to store your result.
+Choose the same raw file as you run the experiment, the same api env to access your remote OpenAI server, since you may run several batch process to test your prompts, it's really important to make sure your description in this step must be same with the one you run the prompting process. We use three components to match the batch output, the raw file name, the description and the model name, so please make sure in this step, you define the correct items mentioned above, and no extra space, tab, and case sensitive! We recommend to use a clear and identical output directory to store your result.
 - below is a command example you can refer to run the script:
 ```shell
 poetry run python3  Database/Prompts/batch_output_retrivel.py  --api_env .env  --output_dir  Database/raw/batch_test  --file_name wiki_dev_whole_infobox_20240729_70single_events.json  --raw_dir  Database/Wiki_dev_test_articles --description all_categories_V3
