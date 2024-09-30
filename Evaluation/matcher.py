@@ -12,19 +12,19 @@ class SpecificInstanceMatcher:
         self.logger = Logging.get_logger("specific instance matcher")
         self.logger.info(f"Null penalty: {null_penalty}; Threshold: {threshold}")
         self.threshold = threshold
-        self.int_cat: list[str] = [
-            "Num_Min",
-            "Num_Max",
-            "Start_Date_Day",
-            "Start_Date_Month",
-            "Start_Date_Year",
-            "End_Date_Day",
-            "End_Date_Month",
-            "End_Date_Year",
-        ]
+        self.int_cat: dict[str, int] = {
+            "Num_Min": 1,
+            "Num_Max": 1,
+            "Start_Date_Day": 0.125,
+            "Start_Date_Month": 0.125,
+            "Start_Date_Year": 0.125,
+            "End_Date_Day": 0.125,
+            "End_Date_Month": 0.125,
+            "End_Date_Year": 0.125,
+        }
         self.bool_cat: list[str] = []
-        self.str_cat: list[str] = ["Administrative_Area_Norm", "Location_Norm"]
-        self.list_cat: list[str] = ["Administrative_Areas_Norm", "Locations_Norm"]
+        self.str_cat: dict[str, int] = {"Administrative_Area_Norm": 1}
+        self.list_cat: dict[str, int] = {"Locations_Norm": 1, "Administrative_Areas_Norm": 1}
 
         self.comp = Comparer(null_penalty, [])
 
@@ -50,14 +50,12 @@ class SpecificInstanceMatcher:
                             r = self.comp.integer(gold_instance[k], si[k])
                     except:
                         pass
-                elif k in self.bool_cat:
-                    r = self.comp.boolean(gold_instance[k], si[k])
                 elif k in self.str_cat:
                     r = self.comp.string(gold_instance[k], si[k])
                 elif k in self.list_cat:
                     r = self.comp.sequence(gold_instance[k], si[k])
                 try:
-                    scores.append(1 - r)
+                    scores.append(1 - (r * self.int_cat[k]))
                     del r
                 except Exception:
                     if k != "Event_ID":

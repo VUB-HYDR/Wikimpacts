@@ -72,7 +72,7 @@ goldFileDir=${1}
 sysFileDir=${2}
 dataSplit=${3}
 outputDir=${4}
-matcherNullPenalty=0.5
+matcherNullPenalty=1.0
 matcherThreshold=0.6
 
 echo Gold Directory: ${goldFileDir}
