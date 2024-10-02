@@ -1,5 +1,4 @@
 import argparse
-import os
 import pathlib
 import re
 
@@ -208,7 +207,7 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
     logger.info("Converting list columns to strings to store in sqlite3")
 
     logger.info(f"Storing parsed results for l1 events. Target columns: {target_columns}")
-    df_to_parquet(
+    utils.df_to_parquet(
         events[[x for x in target_columns if x in events.columns]],
         f"{args.output_dir}/l1",
         200,
@@ -480,32 +479,11 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
             sub_event[c] = sub_event[c].astype(str)
         if target_columns:
             sub_event = sub_event[[x for x in target_columns if x in sub_event.columns]]
-        df_to_parquet(
+        utils.df_to_parquet(
             sub_event,
             target_dir=f"{args.output_dir}/{level}/{col}",
             chunk_size=200,
         )
-
-
-def df_to_parquet(
-    df: pd.DataFrame,
-    target_dir: str,
-    chunk_size: int = 2000,
-    **parquet_wargs,
-):
-    """Writes pandas DataFrame to parquet format with pyarrow.
-        Credit: https://stackoverflow.com/a/72010262/14123992
-    Args:
-        df: DataFrame
-        target_dir: local directory where parquet files are written to
-        chunk_size: number of rows stored in one chunk of parquet file. Defaults to 2000.
-    """
-    for i in range(0, len(df), chunk_size):
-        slc = df.iloc[i : i + chunk_size]
-        chunk = int(i / chunk_size)
-        fname = os.path.join(target_dir, f"{chunk:04d}.parquet")
-        pathlib.Path(target_dir).mkdir(parents=True, exist_ok=True)
-        slc.to_parquet(fname, engine="fastparquet", **parquet_wargs)
 
 
 def get_target_cols() -> tuple[list]:
