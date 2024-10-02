@@ -518,7 +518,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                 sub_event[c] = sub_event[c].astype(str)
             if target_columns:
                 sub_event = sub_event[[x for x in target_columns if x in sub_event.columns]]
-            df_to_parquet(
+            utils.df_to_parquet(
                 sub_event,
                 target_dir=f"{args.output_dir}/{level}/{col}",
                 chunk_size=200,
