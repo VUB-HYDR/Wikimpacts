@@ -252,10 +252,6 @@
     "Administrative_Areas_Annotation": "header: 2006\u20132008 Southeastern United States drought"
   },
   {
-    "Administrative_Areas": [
-      "Australia"
-    ],
-    "Administrative_Areas_Annotation": "Info_Box",
     "Event_ID": "eqc9AFv",
     "Sources": "https://en.wikipedia.org/wiki?curid=5589427",
     "Event_Names": "Tropical Cyclone Steve",
@@ -635,6 +631,10 @@
       "End_Date": "11 March 2000",
       "Time_Annotation": "Info_Box"
     },
+    "Administrative_Areas": [
+      "Australia"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box",
     "Location_Information": {
       "Administrative_Areas": [
         "Australia"
@@ -1491,14 +1491,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas": [
-      "Philippines",
-      "Japan",
-      "Taiwan",
-      "China",
-      "Korea"
-    ],
-    "Administrative_Areas_Annotation": "Info_Box",
     "Event_ID": "CfJEH6g",
     "Sources": "https://en.wikipedia.org/wiki/Typhoon_Morakot",
     "Event_Names": "Typhoon Morakot   ",
@@ -2257,6 +2249,14 @@
       "End_Date": "August 11, 2009",
       "Time_Annotation": "Info_Box"
     },
+    "Administrative_Areas": [
+      "Philippines",
+      "Japan",
+      "Taiwan",
+      "China",
+      "Korea"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box",
     "Location_Information": {
       "Administrative_Areas": [
         "Philippines",
@@ -2554,8 +2554,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas": [],
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "65kkjdy",
     "Sources": "https://en.wikipedia.org/wiki/Hurricane_Irma",
     "Event_Names": "Hurricane Irma   ",
@@ -4068,11 +4066,11 @@
     "Hazards_Annotation": "Info_Box|header: Hurricane Irma",
     "Start_Date": "August 30, 2017",
     "End_Date": "September 13, 2017",
-    "Time_Annotation": "Info_Box"
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [],
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
-    "Administrative_Areas": [],
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "tppGXy6",
     "Sources": "https://en.wikipedia.org/wiki/Hurricane_Ginny",
     "Event_Names": "Hurricane Ginny   ",
@@ -4551,7 +4549,9 @@
     "Hazards_Annotation": "header: Hurricane Ginny|header: Impact",
     "Start_Date": "October 16, 1963",
     "End_Date": "October 29, 1963",
-    "Time_Annotation": "Info_Box"
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [],
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
     "Event_ID": "095mlYn",
@@ -6877,7 +6877,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "5Yt9Ogw",
     "Sources": "https://en.wikipedia.org/wiki/Hurricane_Ike",
     "Event_Names": "Hurricane Ike   ",
@@ -7859,7 +7858,8 @@
         "Canada"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
     "Event_ID": "LBM4y65",
@@ -9210,10 +9210,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas": [
-      "United States"
-    ],
-    "Administrative_Areas_Annotation": "Info_Box",
     "Event_ID": "Q7yoZXl",
     "Sources": "https://en.wikipedia.org/wiki/Hurricane_Bob_(1979)",
     "Event_Names": "Hurricane Bob (1979)   ",
@@ -9531,6 +9527,10 @@
       "End_Date": "July 16, 1979",
       "Time_Annotation": "Info_Box"
     },
+    "Administrative_Areas": [
+      "United States"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box",
     "Location_Information": {
       "Administrative_Areas": [
         "United States"
@@ -9539,7 +9539,6 @@
     }
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "ikokrVG",
     "Sources": "https://en.wikipedia.org/wiki/Cyclone_Idai",
     "Event_Names": "Cyclone Idai   ",
@@ -10245,7 +10244,8 @@
         "Zimbabwe"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
     "Event_ID": "8TbtsTR",
@@ -11370,16 +11370,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas": [
-      "Lesser Antilles",
-      "Saint Barth\u00e9lemy",
-      "Saba",
-      "Anguilla",
-      "Sint Eustatius",
-      "Saint Kitts",
-      "Puerto Rico"
-    ],
-    "Administrative_Areas_Annotation": "Impact, naming and records",
     "Event_ID": "2Kcz2jF",
     "Sources": "https://en.wikipedia.org/wiki/Hurricane_Alice_(December_1954)",
     "Event_Names": "Hurricane Alice (December 1954)   ",
@@ -11654,6 +11644,16 @@
       "End_Date": "January 6, 1955",
       "Time_Annotation": "Info_Box"
     },
+    "Administrative_Areas": [
+      "Lesser Antilles",
+      "Saint Barth\u00e9lemy",
+      "Saba",
+      "Anguilla",
+      "Sint Eustatius",
+      "Saint Kitts",
+      "Puerto Rico"
+    ],
+    "Administrative_Areas_Annotation": "Impact, naming and records",
     "Location_Information": {
       "Administrative_Areas": [
         "Lesser Antilles",
@@ -13065,7 +13065,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "fEgQmBS",
     "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Norman_(2006)",
     "Event_Names": "Tropical Storm Norman (2006)   ",
@@ -13373,7 +13372,8 @@
         "Mexico"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
     "Event_ID": "xVcuiZw",
@@ -15580,13 +15580,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas": [
-      "Philippines",
-      "China",
-      "Vietnam",
-      "Thailand"
-    ],
-    "Administrative_Areas_Annotation": "Info_Box",
     "Event_ID": "LQYh1uO",
     "Sources": "https://en.wikipedia.org/wiki/Typhoon_Nalgae_(2011)",
     "Event_Names": "Typhoon Nalgae (2011)   ",
@@ -16033,6 +16026,13 @@
       "End_Date": "October 5, 2011",
       "Time_Annotation": "Info_Box"
     },
+    "Administrative_Areas": [
+      "Philippines",
+      "China",
+      "Vietnam",
+      "Thailand"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box",
     "Location_Information": {
       "Administrative_Areas": [
         "Philippines",
@@ -16044,7 +16044,6 @@
     }
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "yPcdzsx",
     "Sources": "https://en.wikipedia.org/wiki/Typhoon_Billie_(1959)",
     "Event_Names": "Typhoon Billie (1959)   ",
@@ -16691,7 +16690,8 @@
         "South Korea"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
     "Event_ID": "VRMPsTM",
@@ -17104,7 +17104,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "hVZkkPj",
     "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Doria",
     "Event_Names": "Tropical Storm Doria   ",
@@ -17689,7 +17688,8 @@
         "Canada"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
     "Event_ID": "Eig7R0i",
@@ -19669,7 +19669,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "hreoQkL",
     "Sources": "https://en.wikipedia.org/wiki/January_2013_Northwest_Pacific_cyclone",
     "Event_Names": "January 2013 Northwest Pacific cyclone   ",
@@ -19938,7 +19937,8 @@
         "Russian Far East"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
     "Event_ID": "pfjmKpN",
@@ -20233,7 +20233,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "hrLmcVI",
     "Sources": "https://en.wikipedia.org/wiki/Hurricane_Rick_(2021)",
     "Event_Names": "Hurricane Rick (2021)   ",
@@ -20521,7 +20520,8 @@
         "Mexico"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
     "Event_ID": "5vw0aEa",
@@ -20780,11 +20780,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas": [
-      "United States",
-      "Mexico"
-    ],
-    "Administrative_Areas_Annotation": "Info_Box",
     "Event_ID": "HsaDe7f",
     "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Charley_(1998)",
     "Event_Names": "Tropical Storm Charley (1998)   ",
@@ -21177,6 +21172,11 @@
       "End_Date": "August 24, 1998",
       "Time_Annotation": "Info_Box"
     },
+    "Administrative_Areas": [
+      "United States",
+      "Mexico"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box",
     "Location_Information": {
       "Administrative_Areas": [
         "United States",
@@ -22284,7 +22284,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "P5Nj9y0",
     "Sources": "https://en.wikipedia.org/wiki/Hurricane_Martha",
     "Event_Names": "Hurricane Martha   ",
@@ -22702,7 +22701,8 @@
         "Costa Rica"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
     "Event_ID": "GrGoJze",
@@ -26122,7 +26122,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "2vhY0qt",
     "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Warren_(1984)",
     "Event_Names": "Tropical Storm Warren (1984)   ",
@@ -26432,7 +26431,8 @@
         "Vietnam"
       ],
       "Administrative_Areas_Annotation": "Article"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
     "Event_ID": "yhRHcvX",
@@ -27617,7 +27617,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "KE71yKK",
     "Sources": "https://en.wikipedia.org/wiki/Typhoon_Nina_(1987)",
     "Event_Names": "Typhoon Nina (1987)   ",
@@ -28342,7 +28341,8 @@
         "Macau"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
     "Event_ID": "ZNXFyzb",
@@ -29575,7 +29575,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "aQTK1eq",
     "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Laura_(2008)",
     "Event_Names": "Tropical Storm Laura (2008)   ",
@@ -30006,7 +30005,8 @@
         "British Isles"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
     "Event_ID": "4t8LN9r",
@@ -33065,8 +33065,6 @@
     "Administrative_Areas_Annotation": "Article"
   },
   {
-    "Administrative_Areas": [],
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "6bF8WTg",
     "Sources": "https://en.wikipedia.org/wiki/Hurricane_Gustav",
     "Event_Names": "Hurricane Gustav   ",
@@ -33857,10 +33855,11 @@
     "Hazards_Annotation": "Info_Box|header: Hispaniola|header: Jamaica|header: Cuba|header: United States",
     "Start_Date": "August 25, 2008",
     "End_Date": "September 7, 2008",
-    "Time_Annotation": "Info_Box"
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [],
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "paJ1JuK",
     "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Danielle_(1992)",
     "Event_Names": "Tropical Storm Danielle (1992)   ",
@@ -34389,10 +34388,10 @@
         "United States"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "y7GGRDh",
     "Sources": "https://en.wikipedia.org/wiki/Boundary_Waters%E2%80%93Canadian_derecho",
     "Event_Names": "Boundary Waters\u0096Canadian derecho   ",
@@ -34935,7 +34934,8 @@
         "Canada"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
     "Event_ID": "kzZNAmo",
@@ -35282,7 +35282,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "SWl7FHl",
     "Sources": "https://en.wikipedia.org/wiki/Typhoon_Nari_(2013)",
     "Event_Names": "Typhoon Nari (2013)   ",
@@ -35743,7 +35742,8 @@
         "Cambodia"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
     "Event_ID": "jwVzTmu",
@@ -36431,7 +36431,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "4pEI2tu",
     "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Linda_(1997)",
     "Event_Names": "Tropical Storm Linda (1997)   ",
@@ -36796,7 +36795,8 @@
         "Burma"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
     "Event_ID": "kwR5ji5",
@@ -37049,7 +37049,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "nlqrVCX",
     "Sources": "https://en.wikipedia.org/wiki/Typhoon_Nock-ten",
     "Event_Names": "Typhoon Nock-ten   ",
@@ -37337,7 +37336,8 @@
         "Vietnam"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
     "Event_ID": "H0q0j64",
@@ -37619,7 +37619,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "SghAWDC",
     "Sources": "https://en.wikipedia.org/wiki/Typhoon_Nora_(1973)",
     "Event_Names": "Typhoon Nora (1973)   ",
@@ -38073,7 +38072,8 @@
         "Hong Kong"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
     "Event_ID": "ZGGgoE9",
@@ -38555,7 +38555,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "wxFBVrW",
     "Sources": "https://en.wikipedia.org/wiki/Hurricane_Beatriz_(2011)",
     "Event_Names": "Hurricane Beatriz (2011)   ",
@@ -39002,16 +39001,10 @@
         "Mexico"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
-    "Administrative_Areas": [
-      "Philippines",
-      "Vietnam",
-      "Thailand",
-      "Laos"
-    ],
-    "Administrative_Areas_Annotation": "Info_Box",
     "Event_ID": "BUxCDoH",
     "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Sinlaku_(2020)",
     "Event_Names": "Tropical Storm Sinlaku (2020)   ",
@@ -39524,6 +39517,13 @@
       "End_Date": "August 3, 2020",
       "Time_Annotation": "Info_Box"
     },
+    "Administrative_Areas": [
+      "Philippines",
+      "Vietnam",
+      "Thailand",
+      "Laos"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box",
     "Location_Information": {
       "Administrative_Areas": [
         "Philippines",
@@ -41840,7 +41840,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "VwzR1JR",
     "Sources": "https://en.wikipedia.org/wiki/2015_Northern_Chile_floods_and_mudflow",
     "Event_Names": "2015 Northern Chile floods and mudflow   ",
@@ -42153,7 +42152,8 @@
         "Peru"
       ],
       "Administrative_Areas_Annotation": "Article"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
     "Event_ID": "s1DSNpD",
@@ -43262,7 +43262,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "sUGs4wg",
     "Sources": "https://en.wikipedia.org/wiki/Hurricane_Betsy_(1956)",
     "Event_Names": "Hurricane Betsy (1956)   ",
@@ -43763,7 +43762,8 @@
         "East Coast of the United States"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
     "Event_ID": "tz3XUC0",
@@ -44529,10 +44529,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas": [
-      "Argentina"
-    ],
-    "Administrative_Areas_Annotation": "Info_Box",
     "Event_ID": "GjREUaO",
     "Sources": "https://en.wikipedia.org/wiki/2013_Argentina_floods",
     "Event_Names": "2013 Argentina floods   ",
@@ -44854,6 +44850,10 @@
       "End_Date": "3 April 2013",
       "Time_Annotation": "Info_Box"
     },
+    "Administrative_Areas": [
+      "Argentina"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box",
     "Location_Information": {
       "Administrative_Areas": [
         "Argentina"
@@ -46944,7 +46944,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "7cERnDt",
     "Sources": "https://en.wikipedia.org/wiki/Cyclone_Monty",
     "Event_Names": "Cyclone Monty   ",
@@ -47209,7 +47208,8 @@
         "Australia"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
     "Event_ID": "eJL4TO6",
@@ -48259,13 +48259,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas": [
-      "Argentina",
-      "Brazil",
-      "Paraguay",
-      "Uruguay"
-    ],
-    "Administrative_Areas_Annotation": "Info_Box",
     "Event_ID": "RIqcZkX",
     "Sources": "https://en.wikipedia.org/wiki/2022_Southern_Cone_heat_wave",
     "Event_Names": "2022 Southern Cone heat wave   ",
@@ -48707,6 +48700,13 @@
       "End_Date": "2022-01-26",
       "Time_Annotation": "Info_Box"
     },
+    "Administrative_Areas": [
+      "Argentina",
+      "Brazil",
+      "Paraguay",
+      "Uruguay"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box",
     "Location_Information": {
       "Administrative_Areas": [
         "Argentina",
@@ -48718,7 +48718,6 @@
     }
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "aa9q9F",
     "Sources": "https://en.wikipedia.org/wiki/January_2012_Pacific_Northwest_snowstorm",
     "Event_Names": "January 2012 Pacific Northwest snowstorm   ",
@@ -49003,7 +49002,8 @@
         "Canada"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
     "Event_ID": "Kv8MIZP",
@@ -49623,7 +49623,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "5xkPCnd",
     "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Nestor_(2019)",
     "Event_Names": "Tropical Storm Nestor (2019)   ",
@@ -49965,10 +49964,10 @@
         "Southeastern United States"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "hug3UA8",
     "Sources": "https://en.wikipedia.org/wiki/Hurricane_Orlene_(2022)",
     "Event_Names": "Hurricane Orlene (2022)   ",
@@ -50248,7 +50247,8 @@
         "Mexico"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
     "Event_ID": "Y59tdBO",
@@ -51828,15 +51828,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas": [
-      "Antigua",
-      "St. Kitts",
-      "Virgin Islands",
-      "Puerto Rico",
-      "Hispaniola",
-      "the Carolinas"
-    ],
-    "Administrative_Areas_Annotation": "Info_Box",
     "Event_ID": "DKfa93Y",
     "Sources": "https://en.wikipedia.org/wiki/1876_San_Felipe_hurricane",
     "Event_Names": "1876 San Felipe hurricane   ",
@@ -52235,6 +52226,15 @@
       "End_Date": "September 19, 1876",
       "Time_Annotation": "Info_Box"
     },
+    "Administrative_Areas": [
+      "Antigua",
+      "St. Kitts",
+      "Virgin Islands",
+      "Puerto Rico",
+      "Hispaniola",
+      "the Carolinas"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box",
     "Location_Information": {
       "Administrative_Areas": [
         "Antigua",
@@ -53158,7 +53158,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "tgbfifX",
     "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Etau_(2009)",
     "Event_Names": "Tropical Storm Etau (2009)   ",
@@ -53542,7 +53541,8 @@
         "Japan"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
     "Event_ID": "prkMvaZ",
@@ -53818,10 +53818,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas": [
-      "Mexico"
-    ],
-    "Administrative_Areas_Annotation": "Info_Box",
     "Event_ID": "YZnDrWm",
     "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Kiko_(2007)",
     "Event_Names": "Tropical Storm Kiko (2007)   ",
@@ -54079,6 +54075,10 @@
       "End_Date": "October 23, 2007",
       "Time_Annotation": "Info_Box"
     },
+    "Administrative_Areas": [
+      "Mexico"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box",
     "Location_Information": {
       "Administrative_Areas": [
         "Mexico"
@@ -54087,7 +54087,6 @@
     }
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "wzly2wH",
     "Sources": "https://en.wikipedia.org/wiki/Typhoon_Talim_(2017)",
     "Event_Names": "Typhoon Talim (2017)   ",
@@ -54496,10 +54495,10 @@
         "Kamchatka Peninsula"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "CmEFoAQ",
     "Sources": "https://en.wikipedia.org/wiki/Typhoon_Neoguri_(2014)",
     "Event_Names": "Typhoon Neoguri (2014)   ",
@@ -55061,11 +55060,10 @@
         "South Korea"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
-    "Administrative_Areas": [],
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "LWK7vy4",
     "Sources": "https://en.wikipedia.org/wiki/Typhoon_Skip",
     "Event_Names": "Typhoon Skip   ",
@@ -55544,10 +55542,11 @@
     "Hazards_Annotation": "header: Typhoon Skip|header: Impact and aftermath",
     "Start_Date": "November 3, 1988",
     "End_Date": "November 12, 1988",
-    "Time_Annotation": "Info_Box"
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [],
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "t4SmFmZ",
     "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Abby_(1964)",
     "Event_Names": "Tropical Storm Abby (1964)   ",
@@ -55847,10 +55846,10 @@
         "United States"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "h3mjA9U",
     "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Hermine_(2010)",
     "Event_Names": "Tropical Storm Hermine (2010)   ",
@@ -56509,7 +56508,8 @@
         "Mississippi"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
     "Event_ID": "GO3FY71",
@@ -58052,7 +58052,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "vuajwNz",
     "Sources": "https://en.wikipedia.org/wiki/Hurricane_Hilary_(1993)",
     "Event_Names": "Hurricane Hilary (1993)   ",
@@ -58386,7 +58385,8 @@
         "United States"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
     "Event_ID": "JMgTZJI",
@@ -60760,7 +60760,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "Uv1NZFL",
     "Sources": "https://en.wikipedia.org/wiki/1998_Gujarat_cyclone",
     "Event_Names": "1998 Gujarat cyclone   ",
@@ -61065,7 +61064,8 @@
         "Pakistan"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
     "Event_ID": "hJGnmsO",
@@ -61802,11 +61802,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas": [
-      "United States",
-      "Canada"
-    ],
-    "Administrative_Areas_Annotation": "header: Columbus Day storm of 1962",
     "Event_ID": "HSF66rk",
     "Sources": "https://en.wikipedia.org/wiki/Columbus_Day_Storm_of_1962",
     "Event_Names": "Columbus Day Storm of 1962   ",
@@ -62225,6 +62220,11 @@
       "End_Date": "October 17, 1962",
       "Time_Annotation": "Info_Box"
     },
+    "Administrative_Areas": [
+      "United States",
+      "Canada"
+    ],
+    "Administrative_Areas_Annotation": "header: Columbus Day storm of 1962",
     "Location_Information": {
       "Administrative_Areas": [
         "United States",
@@ -62581,16 +62581,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas": [
-      "Barbados",
-      "Windward Islands",
-      "Guadeloupe",
-      "Saint Lucia",
-      "Saint Vincent and the Grenadines",
-      "Martinique",
-      "Dominica"
-    ],
-    "Administrative_Areas_Annotation": "Info_Box",
     "Event_ID": "Q5slMN0",
     "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Kirk_(2018)",
     "Event_Names": "Tropical Storm Kirk (2018)   ",
@@ -63167,6 +63157,16 @@
       "End_Date": "September 28, 2018",
       "Time_Annotation": "Info_Box"
     },
+    "Administrative_Areas": [
+      "Barbados",
+      "Windward Islands",
+      "Guadeloupe",
+      "Saint Lucia",
+      "Saint Vincent and the Grenadines",
+      "Martinique",
+      "Dominica"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box",
     "Location_Information": {
       "Administrative_Areas": [
         "Barbados",
@@ -65952,8 +65952,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas": [],
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "NdPW8RX",
     "Sources": "https://en.wikipedia.org/wiki/Hurricane_Laura",
     "Event_Names": "Hurricane Laura   ",
@@ -66586,7 +66584,9 @@
     "Hazards_Annotation": "Info_Box|Hurricane Laura",
     "Start_Date": "August 20, 2020",
     "End_Date": "August 29, 2020",
-    "Time_Annotation": "Info_Box"
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [],
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
     "Event_ID": "XCCsjpj",
@@ -67177,12 +67177,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas": [
-      "United States",
-      "Canada",
-      "Puerto Rico"
-    ],
-    "Administrative_Areas_Annotation": "Info_Box",
     "Event_ID": "ANZIhQy",
     "Sources": "https://en.wikipedia.org/wiki/1991_Perfect_Storm",
     "Event_Names": "1991 Perfect Storm   ",
@@ -67962,6 +67956,12 @@
       "End_Date": "November 2, 1991",
       "Time_Annotation": "Info_Box"
     },
+    "Administrative_Areas": [
+      "United States",
+      "Canada",
+      "Puerto Rico"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box",
     "Location_Information": {
       "Administrative_Areas": [
         "United States",
@@ -68243,11 +68243,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas": [
-      "United States",
-      "Canada"
-    ],
-    "Administrative_Areas_Annotation": "Info_Box",
     "Event_ID": "izMFMd7",
     "Sources": "https://en.wikipedia.org/wiki/Hurricane_Gladys_(1975)",
     "Event_Names": "Hurricane Gladys (1975)   ",
@@ -68625,6 +68620,11 @@
       "End_Date": "October 4, 1975",
       "Time_Annotation": "Info_Box"
     },
+    "Administrative_Areas": [
+      "United States",
+      "Canada"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box",
     "Location_Information": {
       "Administrative_Areas": [
         "United States",
@@ -68634,7 +68634,6 @@
     }
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "zKd4dKT",
     "Sources": "https://en.wikipedia.org/wiki/1944_Great_Atlantic_hurricane",
     "Event_Names": "1944 Great Atlantic hurricane   ",
@@ -69129,10 +69128,10 @@
         "Canada"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "D44YH5P",
     "Sources": "https://en.wikipedia.org/wiki/Cyclone_Hikaa",
     "Event_Names": "Cyclone Hikaa   ",
@@ -69403,7 +69402,8 @@
         "Oman"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
     "Event_ID": "W925ehj",
@@ -69948,7 +69948,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "3qqYPtZ",
     "Sources": "https://en.wikipedia.org/wiki/2015_Southeast_Africa_floods",
     "Event_Names": "2015 Southeast Africa floods   ",
@@ -70331,7 +70330,8 @@
         "Zimbabwe"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
     "Event_ID": "I3OTcd5",
@@ -70968,7 +70968,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas_Annotation": null,
     "Event_ID": "0GKsGy7",
     "Sources": "https://en.wikipedia.org/wiki/August_2020_Midwest_derecho",
     "Event_Names": "August 2020 Midwest derecho   ",
@@ -71391,7 +71390,8 @@
         "United States"
       ],
       "Administrative_Areas_Annotation": "Info_Box"
-    }
+    },
+    "Administrative_Areas_Annotation": "NULL"
   },
   {
     "Event_ID": "HFyhziQ",
@@ -72042,12 +72042,6 @@
     "Administrative_Areas_Annotation": "Info_Box"
   },
   {
-    "Administrative_Areas": [
-      "Pohnpei",
-      "Guam",
-      "Rota"
-    ],
-    "Administrative_Areas_Annotation": "Info_Box",
     "Event_ID": "Gm0HsHZ",
     "Sources": "https://en.wikipedia.org/wiki/Typhoon_Isa",
     "Event_Names": "Typhoon Isa   ",
@@ -72368,6 +72362,12 @@
       "End_Date": "April 24, 1997",
       "Time_Annotation": "Info_Box"
     },
+    "Administrative_Areas": [
+      "Pohnpei",
+      "Guam",
+      "Rota"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box",
     "Location_Information": {
       "Administrative_Areas": [
         "Pohnpei",
