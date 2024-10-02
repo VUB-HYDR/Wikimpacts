@@ -23,8 +23,13 @@ def infer_countries(
 
     if isinstance(gids_list, list):
         for gids in gids_list:
-            if isinstance(gids, str) and gids:
-                countries.extend([gd.split(".")[0] for gd in gids.split(",") if len(gd.split(".")[0]) == 3])
+            if isinstance(gids, list) and gids:
+                for gd in gids:
+                    if isinstance(gd, str) and gd:
+                        # Perform the split and check for length 3 before extending
+                        split_value = gd.split(".")[0]
+                        if len(split_value) == 3:
+                            countries.append(split_value)
 
     countries = list(set(countries))
 
