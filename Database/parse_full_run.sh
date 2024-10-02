@@ -9,6 +9,9 @@ echo Parsing files to output dir: ${outputFilesDir}
 
 jsonChunks=(${inputFilesDir}/*)
 
+lenJsonChunks=${#jsonChunks[@]}
+echo "Found ${lenJsonChunks} chunks"
+
 for chunk in "${jsonChunks[@]}"; do
     echo "Parsing ${chunk}"
     poetry run python3 Database/parse_events.py \
