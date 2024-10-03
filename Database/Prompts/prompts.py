@@ -2895,3 +2895,17 @@ V_6: dict = {
          Only Give Json output, no extra explanation needed."""
     ],
 }
+
+V_7: dict = {
+    "affected": [
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text}, extract the impacts associated with the {Event_Name}, along with supporting annotations from the article.
+The information is the impacts (including deaths, injuries, homeless, displaced people, affected, buildings damaged, economic damage and insured damage) in the country level caused by the {Event_Name}, and organize this information in JSON format as follows:
+      - "Impact_Countries":[{{
+      - "Administrative_Areas": "Name of the country or countries where the impact located”
+      - "Start_Date": "The start date when the impacts occurred, if mentioned."
+      - "End_Date":"The end date when the impacts occurred, if mentioned."
+-	“Impact_value” : “ the value of the impact, using the whole sentence to present the impact, like 20 people dead in Germany”  }}]
+       }}]
+      Ensure to capture all instances of impacts mentioned in the article, one record of output only contain one impact information, don't put all kind of impacts together, including direct and indirect causes. Only Give Json output, no extra explanation needed. """
+    ],
+}
