@@ -331,7 +331,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
             sub_event.reset_index(inplace=True, drop=True)
             sub_event = pd.concat([sub_event, start_date_cols, end_date_cols], axis=1)
 
-        if level == "l2":
+        if level == "l2" and administrative_area_col in sub_event.columns:
             logger.info(f"Normalizing administrative area names for {level} {col}")
             sub_event[f"{administrative_area_col}_Tmp"] = sub_event[administrative_area_col].progress_apply(
                 lambda admin_areas: (
@@ -380,7 +380,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                 ),
             )
 
-        elif level == "l3":
+        elif level == "l3" and administrative_area_col in sub_event.columns:
             sub_event[
                 [
                     f"{administrative_area_col}_Norm",
