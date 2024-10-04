@@ -393,7 +393,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                     lambda admin_area: (
                         norm_loc.normalize_locations(admin_area, is_country=True)
                         if isinstance(admin_area, str)
-                        else None
+                        else (None, None, None)
                     )
                 )
                 .progress_apply(pd.Series)
