@@ -5,14 +5,14 @@
     "Event_Names": "Hurricane Floyd",
     "Main_Event": "Tropical Storm Cyclone",
     "Hazards": "Wind|Flood|Lighting",
+    "Start_Date": "7 September, 1999",
+    "End_Date": "19 September, 1999",
     "Administrative_Areas": [
       "United States",
       "caribbean",
       "Bahamas",
       "Canada"
     ],
-    "Start_Date": "7 September, 1999",
-    "End_Date": "19 September, 1999",
     "Total_Summary_Affected": {
       "Total_Affected": "15000"
     },
@@ -43,6 +43,52 @@
       "Total_Damage_Inflation_Adjusted": "No",
       "Total_Damage_Inflation_Adjusted_Year": "NULL"
     },
+    "Instance_Per_Administrative_Areas_Affected": [],
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [],
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas_Norm": [
+          "United States"
+        ],
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "84"
+      },
+      {
+        "Administrative_Areas_Norm": [
+          "Bahamas"
+        ],
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "1"
+      }
+    ],
+    "Instance_Per_Administrative_Areas_Displaced": [],
+    "Instance_Per_Administrative_Areas_Homeless": [],
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas_Norm": [
+          "Bahamas"
+        ],
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "2-6"
+      }
+    ],
+    "Instance_Per_Administrative_Areas_Insured_Damage": [],
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas_Norm": [
+          "United States"
+        ],
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "6500000000"
+      }
+    ],
     "Specific_Instance_Per_Administrative_Area_Affected": [],
     "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
       {
@@ -229,7 +275,6 @@
         "Num": "4000"
       }
     ],
-    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [],
     "Specific_Instance_Per_Administrative_Area_Injuries": [
       {
         "Administrative_Area": "United States",
@@ -250,6 +295,7 @@
         "Num": "40"
       }
     ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [],
     "Specific_Instance_Per_Administrative_Area_Damage": [
       {
         "Administrative_Area": "United States",
@@ -360,52 +406,6 @@
         "End_Date": "1999/9/19",
         "Num": "14600000"
       }
-    ],
-    "Instance_Per_Administrative_Areas_Affected": [],
-    "Instance_Per_Administrative_Areas_Buildings_Damaged": [],
-    "Instance_Per_Administrative_Areas_Displaced": [],
-    "Instance_Per_Administrative_Areas_Homeless": [],
-    "Instance_Per_Administrative_Areas_Insured_Damage": [],
-    "Instance_Per_Administrative_Areas_Damage": [
-      {
-        "Administrative_Areas_Norm": [
-          "United States"
-        ],
-        "Num_Unit": "USD",
-        "Num_Inflation_Adjusted": "No",
-        "Num_Inflation_Adjusted_Year": "NULL",
-        "Start_Date": "1999/9/7",
-        "End_Date": "1999/9/19",
-        "Num": "6500000000"
-      }
-    ],
-    "Instance_Per_Administrative_Areas_Deaths": [
-      {
-        "Administrative_Areas_Norm": [
-          "United States"
-        ],
-        "Start_Date": "1999/9/7",
-        "End_Date": "1999/9/19",
-        "Num": "84"
-      },
-      {
-        "Administrative_Areas_Norm": [
-          "Bahamas"
-        ],
-        "Start_Date": "1999/9/7",
-        "End_Date": "1999/9/19",
-        "Num": "1"
-      }
-    ],
-    "Instance_Per_Administrative_Areas_Injuries": [
-      {
-        "Administrative_Areas_Norm": [
-          "Bahamas"
-        ],
-        "Start_Date": "1999/9/7",
-        "End_Date": "1999/9/19",
-        "Num": "2-6"
-      }
     ]
   },
   {
@@ -414,11 +414,11 @@
     "Event_Names": "2010-2011 China Drought",
     "Main_Event": "Drought",
     "Hazards": "Drought",
+    "Start_Date": "September, 2010",
+    "End_Date": "30 June, 2011",
     "Administrative_Areas": [
       "China"
     ],
-    "Start_Date": "September, 2010",
-    "End_Date": "30 June, 2011",
     "Total_Summary_Affected": {
       "Total_Affected": "35000000"
     },
@@ -484,6 +484,7 @@
       }
     ],
     "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [],
     "Specific_Instance_Per_Administrative_Area_Displaced": [
       {
         "Administrative_Area": "China",
@@ -497,6 +498,7 @@
       }
     ],
     "Specific_Instance_Per_Administrative_Area_Homeless": [],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [],
     "Specific_Instance_Per_Administrative_Area_Insured_Damage": [],
     "Specific_Instance_Per_Administrative_Area_Damage": [
       {

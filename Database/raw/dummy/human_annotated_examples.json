@@ -1,127 +1,5 @@
 [
   {
-    "Event_ID": "euvNjqT",
-    "Sources": "https://en.wikipedia.org/wiki?curid=30855389",
-    "Event_Names": "2010-2011 China Drought",
-    "Main_Event": "Drought",
-    "Hazards": "Drought",
-    "Start_Date": "September 2010",
-    "End_Date": "2011",
-    "Administrative_Areas": [
-      "China"
-    ],
-    "Total_Summary_Affected": {
-      "Total_Affected": "35 million people"
-    },
-    "Instance_Per_Administrative_Areas_Affected": [
-      {
-        "Administrative_Areas": [
-          "China"
-        ],
-        "Start_Date": "June 2010",
-        "End_Date": "NULL",
-        "Num": "35 million people"
-      }
-    ],
-    "Specific_Instance_Per_Administrative_Area_Affected": [
-      {
-        "Administrative_Area": "China",
-        "Locations": [
-          "Anhui",
-          "Gansu",
-          "Henan",
-          "Hubei",
-          "Jiangsu",
-          "Shaanxi",
-          "Shandong",
-          "Shanxi"
-        ],
-        "Start_Date": "NULL",
-        "End_Date": "NULL",
-        "Num": "2.31 million people"
-      },
-      {
-        "Administrative_Area": "China",
-        "Locations": [
-          "Inner Mongolia",
-          "Ningxia",
-          "Gansu",
-          "Shanxi"
-        ],
-        "Start_Date": "24 June",
-        "End_Date": "NULL",
-        "Num": "3.65 million people"
-      }
-    ],
-    "Total_Summary_Buildings_Damaged": {
-      "Total_Buildings_Damaged": "NULL"
-    },
-    "Instance_Per_Administrative_Areas_Buildings_Damaged": [],
-    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [],
-    "Total_Summary_Deaths": {
-      "Total_Deaths": "NULL"
-    },
-    "Instance_Per_Administrative_Areas_Deaths": [
-      {
-        "Administrative_Areas": [],
-        "Start_Date": "NULL",
-        "End_Date": "NULL",
-        "Num": "NULL"
-      }
-    ],
-    "Specific_Instance_Per_Administrative_Area_Deaths": [],
-    "Total_Summary_Displaced": {
-      "Total_Displaced": "NULL"
-    },
-    "Instance_Per_Administrative_Areas_Displaced": [
-      {
-        "Administrative_Areas": [
-          "China"
-        ],
-        "Start_Date": "NULL",
-        "End_Date": "NULL",
-        "Num": "3,234 local residents"
-      }
-    ],
-    "Specific_Instance_Per_Administrative_Area_Displaced": [
-      {
-        "Administrative_Area": "China",
-        "Locations": [
-          "Hubei"
-        ],
-        "Start_Date": "NULL",
-        "End_Date": "NULL",
-        "Num": "3,234 local residents"
-      }
-    ],
-    "Total_Summary_Homeless": {
-      "Total_Homeless": "NULL"
-    },
-    "Instance_Per_Administrative_Areas_Homeless": [],
-    "Specific_Instance_Per_Administrative_Area_Homeless": [],
-    "Total_Summary_Injuries": {
-      "Total_Injuries": "NULL"
-    },
-    "Instance_Per_Administrative_Areas_Injuries": [],
-    "Specific_Instance_Per_Administrative_Area_Injuries": [],
-    "Total_Summary_Insured_Damage": {
-      "Total_Insured_Damage": "NULL",
-      "Total_Insured_Damage_Unit": "NULL",
-      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL"
-    },
-    "Instance_Per_Administrative_Areas_Insured_Damage": [],
-    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [],
-    "Total_Summary_Damage": {
-      "Total_Damage": "2.3 billion",
-      "Total_Damage_Unit": "USD",
-      "Total_Damage_Inflation_Adjusted": "NULL",
-      "Total_Damage_Inflation_Adjusted_Year": "NULL"
-    },
-    "Instance_Per_Administrative_Areas_Damage": [],
-    "Specific_Instance_Per_Administrative_Area_Damage": []
-  },
-  {
     "Event_ID": "JmaKdfZ",
     "Sources": "https://en.wikipedia.org/wiki/Hurricane_Floyd",
     "Event_Names": "Hurricane Floyd",
@@ -141,6 +19,33 @@
     "Total_Summary_Affected": {
       "Total_Affected": "NULL"
     },
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL"
+    },
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "85"
+    },
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "2.6 million"
+    },
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL"
+    },
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL"
+    },
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL"
+    },
+    "Total_Summary_Damage": {
+      "Total_Damage": "6.5 billion",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "Yes",
+      "Total_Damage_Inflation_Adjusted_Year": "1999"
+    },
     "Instance_Per_Administrative_Areas_Affected": [
       {
         "Administrative_Areas": [
@@ -149,6 +54,130 @@
         "Start_Date": "NULL",
         "End_Date": "NULL",
         "Num": "tens of thousands"
+      }
+    ],
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [],
+    "Instance_Per_Administrative_Areas_Deaths": [],
+    "Instance_Per_Administrative_Areas_Displaced": [],
+    "Instance_Per_Administrative_Areas_Homeless": [],
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "Maryland, United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Two people"
+      },
+      {
+        "Administrative_Areas": [
+          "Pennsylvania, United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "40 people"
+      }
+    ],
+    "Instance_Per_Administrative_Areas_Insured_Damage": [],
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "South Carolina, United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$17 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL"
+      },
+      {
+        "Administrative_Areas": [
+          "North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "billions",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL"
+      },
+      {
+        "Administrative_Areas": [
+          "North Carolina, United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$7.02 billion",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "Yes",
+        "Num_Inflation_Adjusted_Year": "2022"
+      },
+      {
+        "Administrative_Areas": [
+          "Virginia, United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$101 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL"
+      },
+      {
+        "Administrative_Areas": [
+          "Maryland, United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "estimated at 7.9 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL"
+      },
+      {
+        "Administrative_Areas": [
+          "Deleware, United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$8.42 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL"
+      },
+      {
+        "Administrative_Areas": [
+          "New Jersey, United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$250 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "Yes",
+        "Num_Inflation_Adjusted_Year": "1999"
+      },
+      {
+        "Administrative_Areas": [
+          "Pennsylvania, United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$60 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL"
+      },
+      {
+        "Administrative_Areas": [
+          "New York, United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$14.6 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL"
       }
     ],
     "Specific_Instance_Per_Administrative_Area_Affected": [
@@ -341,10 +370,6 @@
         "Num": "11 students"
       }
     ],
-    "Total_Summary_Buildings_Damaged": {
-      "Total_Buildings_Damaged": "NULL"
-    },
-    "Instance_Per_Administrative_Areas_Buildings_Damaged": [],
     "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
       {
         "Administrative_Area": "the Bahamas",
@@ -614,10 +639,6 @@
         "Num": "caused 33 homes to be condemned"
       }
     ],
-    "Total_Summary_Deaths": {
-      "Total_Deaths": "85"
-    },
-    "Instance_Per_Administrative_Areas_Deaths": [],
     "Specific_Instance_Per_Administrative_Area_Deaths": [
       {
         "Administrative_Area": "United States",
@@ -765,10 +786,6 @@
         "Num": "1"
       }
     ],
-    "Total_Summary_Displaced": {
-      "Total_Displaced": "2.6 million"
-    },
-    "Instance_Per_Administrative_Areas_Displaced": [],
     "Specific_Instance_Per_Administrative_Area_Displaced": [
       {
         "Administrative_Area": "United States",
@@ -884,10 +901,6 @@
         "Num": "about 1,000"
       }
     ],
-    "Total_Summary_Homeless": {
-      "Total_Homeless": "NULL"
-    },
-    "Instance_Per_Administrative_Areas_Homeless": [],
     "Specific_Instance_Per_Administrative_Area_Homeless": [
       {
         "Administrative_Area": "United States",
@@ -897,27 +910,6 @@
         "Start_Date": "NULL",
         "End_Date": "NULL",
         "Num": "More than 4,000"
-      }
-    ],
-    "Total_Summary_Injuries": {
-      "Total_Injuries": "NULL"
-    },
-    "Instance_Per_Administrative_Areas_Injuries": [
-      {
-        "Administrative_Areas": [
-          "Maryland, United States"
-        ],
-        "Start_Date": "NULL",
-        "End_Date": "NULL",
-        "Num": "Two people"
-      },
-      {
-        "Administrative_Areas": [
-          "Pennsylvania, United States"
-        ],
-        "Start_Date": "NULL",
-        "End_Date": "NULL",
-        "Num": "40 people"
       }
     ],
     "Specific_Instance_Per_Administrative_Area_Injuries": [
@@ -931,121 +923,7 @@
         "Num": "few injuries reported"
       }
     ],
-    "Total_Summary_Insured_Damage": {
-      "Total_Insured_Damage": "NULL",
-      "Total_Insured_Damage_Unit": "NULL",
-      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL"
-    },
-    "Instance_Per_Administrative_Areas_Insured_Damage": [],
     "Specific_Instance_Per_Administrative_Area_Insured_Damage": [],
-    "Total_Summary_Damage": {
-      "Total_Damage": "6.5 billion",
-      "Total_Damage_Unit": "USD",
-      "Total_Damage_Inflation_Adjusted": "Yes",
-      "Total_Damage_Inflation_Adjusted_Year": "1999"
-    },
-    "Instance_Per_Administrative_Areas_Damage": [
-      {
-        "Administrative_Areas": [
-          "South Carolina, United States"
-        ],
-        "Start_Date": "NULL",
-        "End_Date": "NULL",
-        "Num": "$17 million",
-        "Num_Unit": "USD",
-        "Num_Inflation_Adjusted": "NULL",
-        "Num_Inflation_Adjusted_Year": "NULL"
-      },
-      {
-        "Administrative_Areas": [
-          "North Carolina"
-        ],
-        "Start_Date": "NULL",
-        "End_Date": "NULL",
-        "Num": "billions",
-        "Num_Unit": "NULL",
-        "Num_Inflation_Adjusted": "NULL",
-        "Num_Inflation_Adjusted_Year": "NULL"
-      },
-      {
-        "Administrative_Areas": [
-          "North Carolina, United States"
-        ],
-        "Start_Date": "NULL",
-        "End_Date": "NULL",
-        "Num": "$7.02 billion",
-        "Num_Unit": "USD",
-        "Num_Inflation_Adjusted": "Yes",
-        "Num_Inflation_Adjusted_Year": "2022"
-      },
-      {
-        "Administrative_Areas": [
-          "Virginia, United States"
-        ],
-        "Start_Date": "NULL",
-        "End_Date": "NULL",
-        "Num": "$101 million",
-        "Num_Unit": "USD",
-        "Num_Inflation_Adjusted": "NULL",
-        "Num_Inflation_Adjusted_Year": "NULL"
-      },
-      {
-        "Administrative_Areas": [
-          "Maryland, United States"
-        ],
-        "Start_Date": "NULL",
-        "End_Date": "NULL",
-        "Num": "estimated at 7.9 million",
-        "Num_Unit": "USD",
-        "Num_Inflation_Adjusted": "NULL",
-        "Num_Inflation_Adjusted_Year": "NULL"
-      },
-      {
-        "Administrative_Areas": [
-          "Deleware, United States"
-        ],
-        "Start_Date": "NULL",
-        "End_Date": "NULL",
-        "Num": "$8.42 million",
-        "Num_Unit": "USD",
-        "Num_Inflation_Adjusted": "NULL",
-        "Num_Inflation_Adjusted_Year": "NULL"
-      },
-      {
-        "Administrative_Areas": [
-          "New Jersey, United States"
-        ],
-        "Start_Date": "NULL",
-        "End_Date": "NULL",
-        "Num": "$250 million",
-        "Num_Unit": "USD",
-        "Num_Inflation_Adjusted": "Yes",
-        "Num_Inflation_Adjusted_Year": "1999"
-      },
-      {
-        "Administrative_Areas": [
-          "Pennsylvania, United States"
-        ],
-        "Start_Date": "NULL",
-        "End_Date": "NULL",
-        "Num": "$60 million",
-        "Num_Unit": "USD",
-        "Num_Inflation_Adjusted": "NULL",
-        "Num_Inflation_Adjusted_Year": "NULL"
-      },
-      {
-        "Administrative_Areas": [
-          "New York, United States"
-        ],
-        "Start_Date": "NULL",
-        "End_Date": "NULL",
-        "Num": "$14.6 million",
-        "Num_Unit": "USD",
-        "Num_Inflation_Adjusted": "NULL",
-        "Num_Inflation_Adjusted_Year": "NULL"
-      }
-    ],
     "Specific_Instance_Per_Administrative_Area_Damage": [
       {
         "Administrative_Area": "Florida, United States",
@@ -1072,5 +950,127 @@
         "Num_Inflation_Adjusted_Year": "2022"
       }
     ]
+  },
+  {
+    "Event_ID": "euvNjqT",
+    "Sources": "https://en.wikipedia.org/wiki?curid=30855389",
+    "Event_Names": "2010-2011 China Drought",
+    "Main_Event": "Drought",
+    "Hazards": "Drought",
+    "Start_Date": "September 2010",
+    "End_Date": "2011",
+    "Administrative_Areas": [
+      "China"
+    ],
+    "Total_Summary_Affected": {
+      "Total_Affected": "35 million people"
+    },
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL"
+    },
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "NULL"
+    },
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL"
+    },
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL"
+    },
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL"
+    },
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL"
+    },
+    "Total_Summary_Damage": {
+      "Total_Damage": "2.3 billion",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "China"
+        ],
+        "Start_Date": "June 2010",
+        "End_Date": "NULL",
+        "Num": "35 million people"
+      }
+    ],
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [],
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL"
+      }
+    ],
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "China"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3,234 local residents"
+      }
+    ],
+    "Instance_Per_Administrative_Areas_Homeless": [],
+    "Instance_Per_Administrative_Areas_Injuries": [],
+    "Instance_Per_Administrative_Areas_Insured_Damage": [],
+    "Instance_Per_Administrative_Areas_Damage": [],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Anhui",
+          "Gansu",
+          "Henan",
+          "Hubei",
+          "Jiangsu",
+          "Shaanxi",
+          "Shandong",
+          "Shanxi"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2.31 million people"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Inner Mongolia",
+          "Ningxia",
+          "Gansu",
+          "Shanxi"
+        ],
+        "Start_Date": "24 June",
+        "End_Date": "NULL",
+        "Num": "3.65 million people"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Hubei"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3,234 local residents"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [],
+    "Specific_Instance_Per_Administrative_Area_Damage": []
   }
 ]
