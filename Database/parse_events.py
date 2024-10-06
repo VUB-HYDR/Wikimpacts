@@ -268,7 +268,9 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
         sub_event = sub_event[[c for c in sub_event.columns if isinstance(c, str)]]
 
         # ignore empty categories
-        if sub_event.shape[1] < 2:
+        if sub_event.empty:
+            logger.warning(f"No data found in {col}! Level: {level}")
+        elif sub_event.shape[1] < 2:
             logger.warning(f"No data found in {col}! Level: {level}")
         else:
             logger.info(f"Normalizing nulls for {level} {col}")
@@ -299,10 +301,13 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                 r"^(no)$|^(n)$|^(false)$", re.IGNORECASE | re.MULTILINE
             )
             for inflation_adjusted_col in [col for col in sub_event.columns if col.endswith("_Adjusted")]:
-                logger.info(f"Normalizing boolean column {inflation_adjusted_col} for {level} {col}")
-                sub_event[inflation_adjusted_col] = sub_event[inflation_adjusted_col].replace(
-                    {_no: False, _yes: True}, regex=True
-                )
+                try:
+                    logger.info(f"Normalizing boolean column {inflation_adjusted_col} for {level} {col}")
+                    sub_event[inflation_adjusted_col] = sub_event[inflation_adjusted_col].replace(
+                        {_no: False, _yes: True}, regex=True
+                    )
+                except:
+                    logger.warning(f"Could not normalize boolean column {inflation_adjusted_col} for {level} {col}")
 
             logger.info(f"Normalizing dates for subevet {col}")
             start_date_col, end_date_col = [col for col in sub_event.columns if col.startswith("Start_Date")], [
