@@ -87,7 +87,7 @@ for lvl in "${levels[@]}"; do
             --model_name ${outputDir}/${dataSplit}/${lvl} \
             --null_penalty 1 \
             --score all \
-            --weights_config ESSD_2024_${lvl} \
+            --weights_config ESSD_2024_${lvl}_test \
             --event_level ${lvl} \
             --matcher_null_penalty ${matcherNullPenalty} \
             --matcher_threshold ${matcherThreshold}
