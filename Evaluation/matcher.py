@@ -143,7 +143,7 @@ class CurrencyMatcher:
         pass
 
     @staticmethod
-    def clean_currency(value):
+    def decoding(value):
         # Check if the value is a byte-encoded string
         if isinstance(value, bytes):
             value = value.decode("utf-8")  # Decode to string
@@ -152,8 +152,8 @@ class CurrencyMatcher:
     def get_best_currency_match(sys_str: str, gold_list: list) -> str:
         # Loop through the gold list, cleaning each entry, and compare with the clean sys_str
         for i in range(len(gold_list)):
-            clean_gold = CurrencyMatcher.clean_currency(gold_list[i])
+            clean_gold = CurrencyMatcher.decoding(gold_list[i])
             print(clean_gold)
-            if clean_gold == CurrencyMatcher.clean_currency(sys_str):
+            if clean_gold == CurrencyMatcher.decoding(sys_str):
                 return i
         return -1
