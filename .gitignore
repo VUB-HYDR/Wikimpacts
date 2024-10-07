@@ -4,6 +4,11 @@
 # ignore notebooks
 **.ipynb
 
+#ignore draft figures
+Visualizations/**.pdf
+Visualizations/**.png
+Visualizations/earth_data
+
 # ignore excel files
 **.xlsx
 
