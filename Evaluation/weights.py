@@ -173,7 +173,7 @@ weights = {
         "Total_Homeless_Max": 1,
     },
     "ESSD_2024_l1": default_weights["l1"],  # default weights
-    "ESSD_2024_l1_test": default_weights["l1_test"],  # default weights
+    "ESSD_2024_l1_test": default_weights["l1_test"],  # for V4 and V5 prompts evaluation only
     "ESSD_2024_l2_numerical": default_weights["l2_numerical"],  # default weights
     "ESSD_2024_l2_monetary": default_weights["l2_monetary"],  # default weights
     "ESSD_2024_l3_numerical": default_weights["l3_numerical"],  # default weights
