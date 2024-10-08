@@ -5,9 +5,8 @@
 **.ipynb
 
 #ignore draft figures
-Visualizations/**.pdf
-Visualizations/**.png
-Visualizations/earth_data
+Visualizations/**/plots
+
 
 # ignore excel files
 **.xlsx
