@@ -11,6 +11,7 @@ from Evaluation.comparer import Comparer
 from Evaluation.matcher import CurrencyMatcher, SpecificInstanceMatcher
 from Evaluation.utils import Logging
 from Evaluation.weights import weights as weights_dict
+
 pd.options.display.max_rows = 999
 
 if __name__ == "__main__":
@@ -131,7 +132,9 @@ if __name__ == "__main__":
             )
             logger.info(f"Files in {args.system_output}: {list(sys_f.iterdir())}")
 
-        sys = pd.read_parquet(args.system_output,  engine="fastparquet").replace({float("nan"): None, "NULL ": None, "NULL": None})
+        sys = pd.read_parquet(args.system_output, engine="fastparquet").replace(
+            {float("nan"): None, "NULL ": None, "NULL": None}
+        )
 
     except BaseException as err:
         logger.error(f"Loading the gold or sys files unsuccessful. Error: {err}")
