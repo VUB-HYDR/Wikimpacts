@@ -130,9 +130,8 @@ if __name__ == "__main__":
             )
             logger.info(f"Files in {args.system_output}: {list(sys_f.iterdir())}")
 
-        sys = pd.read_parquet(args.system_output, engine="fastparquet").replace(
-            {float("nan"): None, "NULL ": None, "NULL": None}
-        )
+        sys = pd.read_parquet(args.system_output).replace({float("nan"): None, "NULL ": None, "NULL": None})
+
     except BaseException as err:
         logger.error(f"Loading the gold or sys files unsuccessful. Error: {err}")
         exit()
@@ -183,6 +182,7 @@ if __name__ == "__main__":
     elif args.event_level in ["l1"]:
         logger.info("Only including events in the gold file!")
         sys = sys[sys.Event_ID.isin(gold["Event_ID"].to_list())]
+
     logger.info(f"The following events exist in gold:\n{pformat(gold['Event_ID'].unique())}")
 
     if args.score in ("wikipedia", "artemis"):
@@ -269,6 +269,11 @@ if __name__ == "__main__":
             f"sys_unit_col_{mc}",
             f"aligned_{mc}",
         )
+
+        # Reset indices if they don't match, to align them for direct assignment
+        sys = sys.reset_index(drop=True)
+        gold = gold.reset_index(drop=True)
+        # Now assign
         gold[sys_unit_col] = sys[unit_col]
         gold[aliged_col] = gold.apply(
             lambda row: (
@@ -283,6 +288,7 @@ if __name__ == "__main__":
                 lambda row: (row[col][row[aliged_col]] if row[aliged_col] >= 0 and row[col] is not None else None),
                 axis=1,
             )
+
         gold.drop(columns=[sys_unit_col, aliged_col], inplace=True)
 
     # Specify null penalty
