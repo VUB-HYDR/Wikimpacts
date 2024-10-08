@@ -270,12 +270,7 @@ if __name__ == "__main__":
             f"sys_unit_col_{mc}",
             f"aligned_{mc}",
         )
-
-        # Reset indices if they don't match, to align them for direct assignment
-        sys = sys.reset_index(drop=True)
-        gold = gold.reset_index(drop=True)
-        # Now assign
-        gold[sys_unit_col] = sys[unit_col]
+        gold[sys_unit_col] = sys[unit_col].to_numpy()
         gold[aliged_col] = gold.apply(
             lambda row: (
                 currency.get_best_currency_match(row[sys_unit_col], row[unit_col])
