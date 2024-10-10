@@ -1,0 +1,354 @@
+{
+  "Event_ID": "4thUjkx",
+  "Sources": "https://en.wikipedia.org/wiki/2020_Sudan_floods",
+  "Event_Names": "2020 Sudan floods",
+  "Total_Summary_Affected": {
+    "Total_Affected": "more than 3,000,000 people",
+    "Total_Affected_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Affected": [
+    {
+      "Administrative_Areas": [
+        "Sudan"
+      ],
+      "Start_Date": "September 2020",
+      "End_Date": "15 November 2020",
+      "Num": "more than 3,000,000 people",
+      "Annotation": "Info_Box"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Affected": [
+    {
+      "Administrative_Area": "Sudan",
+      "Locations": [
+        "at least 16 states"
+      ],
+      "Start_Date": "late July 2020",
+      "End_Date": "NULL",
+      "Num": "more than 500,000 people",
+      "Annotation": "State of emergency"
+    },
+    {
+      "Administrative_Area": "Sudan",
+      "Locations": [
+        "Khartoum"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "over 1.4 million people",
+      "Annotation": "State of emergency"
+    },
+    {
+      "Administrative_Area": "Sudan",
+      "Locations": [
+        "agricultural households"
+      ],
+      "Start_Date": "30 September 2020",
+      "End_Date": "NULL",
+      "Num": "about 3 million people",
+      "Annotation": "State of emergency"
+    },
+    {
+      "Administrative_Area": "Sudan",
+      "Locations": [
+        "refugees and displaced people"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "about 150,000 people",
+      "Annotation": "State of emergency"
+    }
+  ],
+  "Total_Summary_Buildings_Damaged": {
+    "Total_Buildings_Damaged": "more than 100,000 homes",
+    "Total_Buildings_Damaged_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+    {
+      "Administrative_Areas": [
+        "Sudan"
+      ],
+      "Start_Date": "2020-09",
+      "End_Date": "2020-11-15",
+      "Num": "more than 100,000 homes",
+      "Annotation": "Event"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+    {
+      "Administrative_Area": "Sudan",
+      "Locations": [
+        "North Darfur",
+        "Khartoum",
+        "Blue Nile",
+        "West Darfur",
+        "Sennar"
+      ],
+      "Start_Date": "2020-09",
+      "End_Date": "2020-11-15",
+      "Num": "NULL",
+      "Annotation": "State of emergency"
+    }
+  ],
+  "Total_Summary_Deaths": {
+    "Total_Deaths": "about 100-500 deaths",
+    "Total_Deaths_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Deaths": [
+    {
+      "Administrative_Areas": [
+        "Sudan"
+      ],
+      "Start_Date": "September 2020",
+      "End_Date": "15 November 2020",
+      "Num": "about 100 deaths",
+      "Annotation": "Event"
+    },
+    {
+      "Administrative_Areas": [
+        "Sudan"
+      ],
+      "Start_Date": "late July 2020",
+      "End_Date": "September 2020",
+      "Num": "about 100 people",
+      "Annotation": "State of emergency"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Deaths": [
+    {
+      "Administrative_Area": "Sudan",
+      "Locations": [
+        "North Darfur",
+        "Khartoum",
+        "Blue Nile",
+        "West Darfur",
+        "Sennar"
+      ],
+      "Start_Date": "September 2020",
+      "End_Date": "15 November 2020",
+      "Num": "NULL",
+      "Annotation": "Response"
+    }
+  ],
+  "Total_Summary_Displaced": {
+    "Total_Displaced": "NULL",
+    "Total_Displaced_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Displaced": [
+    {
+      "Administrative_Areas": [
+        "Sudan"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "hundreds of thousands",
+      "Annotation": "State of emergency"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Displaced": [
+    {
+      "Administrative_Area": "Sudan",
+      "Locations": [
+        "Khartoum"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "thousands",
+      "Annotation": "State of emergency"
+    },
+    {
+      "Administrative_Area": "Sudan",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "150,000 refugees and displaced people",
+      "Annotation": "State of emergency"
+    }
+  ],
+  "Total_Summary_Homeless": {
+    "Total_Homeless": "NULL",
+    "Total_Homeless_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Homeless": [
+    {
+      "Administrative_Areas": [
+        "Sudan"
+      ],
+      "Start_Date": "September 2020",
+      "End_Date": "15 November 2020",
+      "Num": "NULL",
+      "Annotation": "State of emergency"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Homeless": [
+    {
+      "Administrative_Area": "Sudan",
+      "Locations": [
+        "Khartoum"
+      ],
+      "Start_Date": "September 2020",
+      "End_Date": "15 November 2020",
+      "Num": "thousands of people",
+      "Annotation": "State of emergency"
+    },
+    {
+      "Administrative_Area": "Sudan",
+      "Locations": [
+        "North Darfur",
+        "Khartoum",
+        "Blue Nile",
+        "West Darfur",
+        "Sennar"
+      ],
+      "Start_Date": "September 2020",
+      "End_Date": "15 November 2020",
+      "Num": "NULL",
+      "Annotation": "State of emergency"
+    },
+    {
+      "Administrative_Area": "Sudan",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "September 2020",
+      "End_Date": "15 November 2020",
+      "Num": "150,000 refugees and displaced people",
+      "Annotation": "State of emergency"
+    }
+  ],
+  "Total_Summary_Injuries": {
+    "Total_Injuries": "over 50",
+    "Total_Injuries_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Injuries": [
+    {
+      "Administrative_Areas": [
+        "Sudan"
+      ],
+      "Start_Date": "September 2020",
+      "End_Date": "15 November 2020",
+      "Num": "NULL",
+      "Annotation": "Event"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Injuries": [
+    {
+      "Administrative_Area": "Sudan",
+      "Locations": [
+        "Khartoum"
+      ],
+      "Start_Date": "September 2020",
+      "End_Date": "15 November 2020",
+      "Num": "NULL",
+      "Annotation": "State of emergency"
+    }
+  ],
+  "Total_Summary_Insured_Damage": {
+    "Total_Insured_Damage": "NULL",
+    "Total_Insured_Damage_Unit": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Insured_Damage_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Insured_Damage": [
+    {
+      "Administrative_Areas": [
+        "Sudan"
+      ],
+      "Start_Date": "2020-09",
+      "End_Date": "2020-11-15",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+    {
+      "Administrative_Area": "Sudan",
+      "Locations": [
+        "North Darfur",
+        "Khartoum",
+        "Blue Nile",
+        "West Darfur",
+        "Sennar"
+      ],
+      "Start_Date": "2020-09",
+      "End_Date": "2020-11-15",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Total_Summary_Damage": {
+    "Total_Damage": "NULL",
+    "Total_Damage_Unit": "NULL",
+    "Total_Damage_Inflation_Adjusted": "NULL",
+    "Total_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Damage_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Damage": [
+    {
+      "Administrative_Areas": [
+        "Sudan"
+      ],
+      "Start_Date": "2020-09",
+      "End_Date": "2020-11-15",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "State of emergency"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Damage": [
+    {
+      "Administrative_Area": "Sudan",
+      "Locations": [
+        "North Darfur",
+        "Khartoum",
+        "Blue Nile",
+        "West Darfur",
+        "Sennar"
+      ],
+      "Start_Date": "2020-09",
+      "End_Date": "2020-11-15",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "State of emergency"
+    },
+    {
+      "Administrative_Area": "Sudan",
+      "Locations": [
+        "Khartoum"
+      ],
+      "Start_Date": "2020-09",
+      "End_Date": "2020-11-15",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Response"
+    }
+  ],
+  "Main_Event": "Flood",
+  "Main_Event_Annotation": "Info_Box",
+  "Hazards": "Flood",
+  "Hazards_Annotation": "Info_Box",
+  "Start_Date": "September 2020",
+  "End_Date": "15 November 2020",
+  "Time_Annotation": "Info_Box",
+  "Administrative_Areas": [
+    "Sudan",
+    "South Sudan",
+    "Ethiopia"
+  ],
+  "Administrative_Areas_Annotation": "Event"
+}

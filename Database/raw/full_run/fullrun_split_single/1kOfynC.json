@@ -1,0 +1,660 @@
+{
+  "Event_ID": "1kOfynC",
+  "Sources": "https://en.wikipedia.org/wiki/Tornado_outbreak_sequence_of_May_1896",
+  "Event_Names": "Tornado outbreak sequence of May 1896",
+  "Total_Summary_Affected": {
+    "Total_Affected": ">=501 fatalities, >=1914 injuries",
+    "Total_Affected_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Affected": [
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "May 15, 1896",
+      "End_Date": "May 28, 1896",
+      "Num": "NULL",
+      "Annotation": "Info_Box"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Affected": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Sherman, Texas"
+      ],
+      "Start_Date": "May 15, 1896",
+      "End_Date": "May 15, 1896",
+      "Num": "73 fatalities, at least 200 injuries",
+      "Annotation": "Sherman, Texas"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Seneca, Kansas",
+        "Oneida, Kansas",
+        "Reserve, Kansas",
+        "Sabetha, Kansas",
+        "Falls City, Nebraska"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "4 fatalities, at least 200 injuries",
+      "Annotation": "Seneca\u2013Oneida, Kansas/Falls City, Nebraska"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Ortonville, Michigan",
+        "Thomas, Michigan",
+        "Oakwood, Michigan",
+        "Whigville, Michigan"
+      ],
+      "Start_Date": "May 25, 1896",
+      "End_Date": "May 25, 1896",
+      "Num": "47 fatalities, at least 100 injuries",
+      "Annotation": "Ortonville\u2013Thomas\u2013Oakwood, Michigan"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "St. Louis, Missouri",
+        "East St. Louis, Illinois"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "at least 255 fatalities, at least 1,000 injuries",
+      "Annotation": "St. Louis, Missouri/East St. Louis, Illinois"
+    }
+  ],
+  "Total_Summary_Buildings_Damaged": {
+    "Total_Buildings_Damaged": "NULL",
+    "Total_Buildings_Damaged_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "May 15, 1896",
+      "End_Date": "May 28, 1896",
+      "Num": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Sherman, Texas"
+      ],
+      "Start_Date": "May 15, 1896",
+      "End_Date": "May 15, 1896",
+      "Num": "50 homes",
+      "Annotation": "Sherman, Texas"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Seneca, Kansas"
+      ],
+      "Start_Date": "May 17, 1896",
+      "End_Date": "May 17, 1896",
+      "Num": "most of the homes, the fairgrounds and other small structures",
+      "Annotation": "Seneca\u2013Oneida, Kansas/Falls City, Nebraska"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Reserve, Kansas"
+      ],
+      "Start_Date": "May 17, 1896",
+      "End_Date": "May 17, 1896",
+      "Num": "only three buildings were left undamaged",
+      "Annotation": "Seneca\u2013Oneida, Kansas/Falls City, Nebraska"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Sabetha, Kansas"
+      ],
+      "Start_Date": "May 17, 1896",
+      "End_Date": "May 17, 1896",
+      "Num": "50 homes and destroyed 20 others",
+      "Annotation": "Seneca\u2013Oneida, Kansas/Falls City, Nebraska"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Falls City, Nebraska"
+      ],
+      "Start_Date": "May 17, 1896",
+      "End_Date": "May 17, 1896",
+      "Num": "NULL",
+      "Annotation": "Seneca\u2013Oneida, Kansas/Falls City, Nebraska"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Ortonville, Michigan"
+      ],
+      "Start_Date": "May 25, 1896",
+      "End_Date": "May 25, 1896",
+      "Num": "NULL",
+      "Annotation": "Ortonville\u2013Thomas\u2013Oakwood, Michigan"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Thomas, Michigan"
+      ],
+      "Start_Date": "May 25, 1896",
+      "End_Date": "May 25, 1896",
+      "Num": "NULL",
+      "Annotation": "Ortonville\u2013Thomas\u2013Oakwood, Michigan"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Oakwood, Michigan"
+      ],
+      "Start_Date": "May 25, 1896",
+      "End_Date": "May 25, 1896",
+      "Num": "NULL",
+      "Annotation": "Ortonville\u2013Thomas\u2013Oakwood, Michigan"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Whigville, Michigan"
+      ],
+      "Start_Date": "May 25, 1896",
+      "End_Date": "May 25, 1896",
+      "Num": "NULL",
+      "Annotation": "Ortonville\u2013Thomas\u2013Oakwood, Michigan"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Mount Clemens, Michigan"
+      ],
+      "Start_Date": "May 25, 1896",
+      "End_Date": "May 25, 1896",
+      "Num": "30 homes",
+      "Annotation": "Ortonville\u2013Thomas\u2013Oakwood, Michigan"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "St. Louis, Missouri"
+      ],
+      "Start_Date": "May 27, 1896",
+      "End_Date": "May 27, 1896",
+      "Num": "homes, schools, saloons, factories, mills, churches, parks, and railroad yards",
+      "Annotation": "St. Louis, Missouri/East St. Louis, Illinois"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "East St. Louis, Illinois"
+      ],
+      "Start_Date": "May 27, 1896",
+      "End_Date": "May 27, 1896",
+      "Num": "a quarter of the buildings",
+      "Annotation": "St. Louis, Missouri/East St. Louis, Illinois"
+    }
+  ],
+  "Total_Summary_Deaths": {
+    "Total_Deaths": ">=501 fatalities",
+    "Total_Deaths_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Deaths": [
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "May 15, 1896",
+      "End_Date": "May 28, 1896",
+      "Num": ">=501 fatalities",
+      "Annotation": "Info_Box"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Deaths": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Sherman, Texas"
+      ],
+      "Start_Date": "May 15, 1896",
+      "End_Date": "May 15, 1896",
+      "Num": "73",
+      "Annotation": "Sherman, Texas"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Seneca, Kansas",
+        "Oneida, Kansas",
+        "Reserve, Kansas",
+        "Sabetha, Kansas",
+        "Falls City, Nebraska"
+      ],
+      "Start_Date": "May 17, 1896",
+      "End_Date": "May 17, 1896",
+      "Num": "NULL",
+      "Annotation": "Seneca\u2013Oneida, Kansas/Falls City, Nebraska"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Ortonville, Michigan",
+        "Thomas, Michigan",
+        "Oakwood, Michigan",
+        "Whigville, Michigan"
+      ],
+      "Start_Date": "May 25, 1896",
+      "End_Date": "May 25, 1896",
+      "Num": "47",
+      "Annotation": "Ortonville\u2013Thomas\u2013Oakwood, Michigan"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "St. Louis, Missouri",
+        "East St. Louis, Illinois"
+      ],
+      "Start_Date": "May 27, 1896",
+      "End_Date": "May 27, 1896",
+      "Num": ">=255",
+      "Annotation": "St. Louis, Missouri/East St. Louis, Illinois"
+    }
+  ],
+  "Total_Summary_Displaced": {
+    "Total_Displaced": "NULL",
+    "Total_Displaced_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Displaced": [
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "May 15, 1896",
+      "End_Date": "May 28, 1896",
+      "Num": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Displaced": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Sherman, Texas"
+      ],
+      "Start_Date": "May 15, 1896",
+      "End_Date": "May 15, 1896",
+      "Num": "at least 200",
+      "Annotation": "Sherman, Texas"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Seneca, Kansas",
+        "Oneida, Kansas",
+        "Reserve, Kansas",
+        "Sabetha, Kansas",
+        "Falls City, Nebraska"
+      ],
+      "Start_Date": "May 17, 1896",
+      "End_Date": "May 17, 1896",
+      "Num": "at least 200",
+      "Annotation": "Seneca\u2013Oneida, Kansas/Falls City, Nebraska"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Ortonville, Michigan",
+        "Thomas, Michigan",
+        "Oakwood, Michigan",
+        "Whigville, Michigan"
+      ],
+      "Start_Date": "May 25, 1896",
+      "End_Date": "May 25, 1896",
+      "Num": "at least 100",
+      "Annotation": "Ortonville\u2013Thomas\u2013Oakwood, Michigan"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "St. Louis, Missouri",
+        "East St. Louis, Illinois"
+      ],
+      "Start_Date": "May 27, 1896",
+      "End_Date": "May 27, 1896",
+      "Num": "at least 1,000",
+      "Annotation": "St. Louis, Missouri/East St. Louis, Illinois"
+    }
+  ],
+  "Total_Summary_Homeless": {
+    "Total_Homeless": "NULL",
+    "Total_Homeless_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Homeless": [
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "May 15, 1896",
+      "End_Date": "May 28, 1896",
+      "Num": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Homeless": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Sherman, Texas"
+      ],
+      "Start_Date": "May 15, 1896",
+      "End_Date": "May 15, 1896",
+      "Num": "50 homes were destroyed in town, 20 of which were obliterated and swept away",
+      "Annotation": "Sherman, Texas"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Seneca, Kansas"
+      ],
+      "Start_Date": "May 17, 1896",
+      "End_Date": "May 17, 1896",
+      "Num": "most of the homes, the fairgrounds and other small structures sustained at least heavy damage, if not complete destruction",
+      "Annotation": "Seneca\u2013Oneida, Kansas/Falls City, Nebraska"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Reserve, Kansas"
+      ],
+      "Start_Date": "May 17, 1896",
+      "End_Date": "May 17, 1896",
+      "Num": "only three buildings were left undamaged",
+      "Annotation": "Seneca\u2013Oneida, Kansas/Falls City, Nebraska"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Sabetha, Kansas"
+      ],
+      "Start_Date": "May 17, 1896",
+      "End_Date": "May 17, 1896",
+      "Num": "The tornado damaged 50 homes and destroyed 20 others",
+      "Annotation": "Seneca\u2013Oneida, Kansas/Falls City, Nebraska"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Thomas, Michigan"
+      ],
+      "Start_Date": "May 25, 1896",
+      "End_Date": "May 25, 1896",
+      "Num": "Homes were leveled or swept away",
+      "Annotation": "Ortonville\u2013Thomas\u2013Oakwood, Michigan"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Ortonville, Michigan"
+      ],
+      "Start_Date": "May 25, 1896",
+      "End_Date": "May 25, 1896",
+      "Num": "Homes were leveled or swept away",
+      "Annotation": "Ortonville\u2013Thomas\u2013Oakwood, Michigan"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Oakwood, Michigan"
+      ],
+      "Start_Date": "May 25, 1896",
+      "End_Date": "May 25, 1896",
+      "Num": "Homes were leveled or swept away",
+      "Annotation": "Ortonville\u2013Thomas\u2013Oakwood, Michigan"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Whigville, Michigan"
+      ],
+      "Start_Date": "May 25, 1896",
+      "End_Date": "May 25, 1896",
+      "Num": "Homes were leveled or swept away",
+      "Annotation": "Ortonville\u2013Thomas\u2013Oakwood, Michigan"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "St. Louis, Missouri"
+      ],
+      "Start_Date": "May 27, 1896",
+      "End_Date": "May 27, 1896",
+      "Num": "a continuous, one-mile-wide (1.6 km) swath of destroyed homes, schools, saloons, factories, mills, churches, parks, and railroad yards",
+      "Annotation": "St. Louis, Missouri/East St. Louis, Illinois"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "East St. Louis, Illinois"
+      ],
+      "Start_Date": "May 27, 1896",
+      "End_Date": "May 27, 1896",
+      "Num": "Homes and buildings along the river were completely swept away and a quarter of the buildings there were damaged or destroyed",
+      "Annotation": "St. Louis, Missouri/East St. Louis, Illinois"
+    }
+  ],
+  "Total_Summary_Injuries": {
+    "Total_Injuries": ">=1914",
+    "Total_Injuries_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Injuries": [
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "May 15, 1896",
+      "End_Date": "May 28, 1896",
+      "Num": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Injuries": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Sherman, Texas"
+      ],
+      "Start_Date": "May 15, 1896",
+      "End_Date": "May 15, 1896",
+      "Num": "at least 200",
+      "Annotation": "Sherman, Texas"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Seneca, Kansas",
+        "Oneida, Kansas",
+        "Reserve, Kansas",
+        "Sabetha, Kansas",
+        "Falls City, Nebraska"
+      ],
+      "Start_Date": "May 17, 1896",
+      "End_Date": "May 17, 1896",
+      "Num": "at least 200",
+      "Annotation": "Seneca\u2013Oneida, Kansas/Falls City, Nebraska"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Ortonville, Michigan",
+        "Thomas, Michigan",
+        "Oakwood, Michigan",
+        "Whigville, Michigan"
+      ],
+      "Start_Date": "May 25, 1896",
+      "End_Date": "May 25, 1896",
+      "Num": "at least 100",
+      "Annotation": "Ortonville\u2013Thomas\u2013Oakwood, Michigan"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "St. Louis, Missouri",
+        "East St. Louis, Illinois"
+      ],
+      "Start_Date": "May 27, 1896",
+      "End_Date": "May 27, 1896",
+      "Num": "at least 1000",
+      "Annotation": "St. Louis, Missouri/East St. Louis, Illinois"
+    }
+  ],
+  "Total_Summary_Insured_Damage": {
+    "Total_Insured_Damage": "NULL",
+    "Total_Insured_Damage_Unit": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Insured_Damage_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Insured_Damage": [
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "May 15, 1896",
+      "End_Date": "May 28, 1896",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Seneca",
+        "Oneida",
+        "Reserve",
+        "Sabetha"
+      ],
+      "Start_Date": "May 15, 1896",
+      "End_Date": "May 28, 1896",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Seneca\u2013Oneida, Kansas/Falls City, Nebraska"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Sherman"
+      ],
+      "Start_Date": "May 15, 1896",
+      "End_Date": "May 28, 1896",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Sherman, Texas"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Ortonville",
+        "Thomas",
+        "Oakwood"
+      ],
+      "Start_Date": "May 15, 1896",
+      "End_Date": "May 28, 1896",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Ortonville\u2013Thomas\u2013Oakwood, Michigan"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "St. Louis",
+        "East St. Louis"
+      ],
+      "Start_Date": "May 15, 1896",
+      "End_Date": "May 28, 1896",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "St. Louis, Missouri/East St. Louis, Illinois"
+    }
+  ],
+  "Total_Summary_Damage": {
+    "Total_Damage": "NULL",
+    "Total_Damage_Unit": "NULL",
+    "Total_Damage_Inflation_Adjusted": "NULL",
+    "Total_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Damage_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Damage": [
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "May 15, 1896",
+      "End_Date": "May 28, 1896",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Damage": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Seneca",
+        "Oneida",
+        "Reserve",
+        "Sabetha"
+      ],
+      "Start_Date": "May 15, 1896",
+      "End_Date": "May 28, 1896",
+      "Num": "$250,000",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Seneca\u2013Oneida, Kansas/Falls City, Nebraska"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "St. Louis, Missouri",
+        "East St. Louis, Illinois"
+      ],
+      "Start_Date": "May 27, 1896",
+      "End_Date": "May 27, 1896",
+      "Num": "$10 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "St. Louis, Missouri/East St. Louis, Illinois"
+    }
+  ],
+  "Main_Event": "Tornado",
+  "Main_Event_Annotation": "Info_Box",
+  "Hazards": "Wind",
+  "Hazards_Annotation": "Info_Box",
+  "Start_Date": "May 15, 1896",
+  "End_Date": "May 28, 1896",
+  "Time_Annotation": "Info_Box",
+  "Administrative_Areas": [
+    "United States"
+  ],
+  "Administrative_Areas_Annotation": "Info_Box"
+}

@@ -1,0 +1,780 @@
+{
+  "Event_ID": "E6hYQ4K",
+  "Sources": "https://en.wikipedia.org/wiki/Hurricane_Heather",
+  "Event_Names": "Hurricane Heather",
+  "Total_Summary_Affected": {
+    "Total_Affected": "NULL",
+    "Total_Affected_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Affected": [
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "NULL",
+      "Annotation": "Arizona"
+    },
+    {
+      "Administrative_Areas": [
+        "Mexico"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "NULL",
+      "Annotation": "Elsewhere"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Affected": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Nogales, Arizona"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "600 people, including 170 families",
+      "Annotation": "Arizona"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "San Pedro River"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "100 more people",
+      "Annotation": "Arizona"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Winkelman, Arizona"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "20 people",
+      "Annotation": "Arizona"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Riverside, Arizona"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "20 families, roughly 150 people",
+      "Annotation": "Arizona"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Rio Rico, Arizona"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "700 families",
+      "Annotation": "Arizona"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Nogales, Sonora"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "NULL",
+      "Annotation": "Elsewhere"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Hermosillo and surrounding areas"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "100 families",
+      "Annotation": "Elsewhere"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Cibuta"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "45 families",
+      "Annotation": "Elsewhere"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Agua Zarca"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "40 families",
+      "Annotation": "Elsewhere"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Cibuta River"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "20 families",
+      "Annotation": "Elsewhere"
+    }
+  ],
+  "Total_Summary_Buildings_Damaged": {
+    "Total_Buildings_Damaged": "NULL",
+    "Total_Buildings_Damaged_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "NULL",
+      "Annotation": "Arizona"
+    },
+    {
+      "Administrative_Areas": "Mexico",
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "NULL",
+      "Annotation": "Elsewhere"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Nogales"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "at least 90 homes",
+      "Annotation": "Impact"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Tucson"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "several bridges",
+      "Annotation": "Arizona"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Winkelman"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "one bridge",
+      "Annotation": "Arizona"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Riverside"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "one bridge",
+      "Annotation": "Arizona"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Rio Rico"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "NULL",
+      "Annotation": "Arizona"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Hermosillo"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "roughly 100 families",
+      "Annotation": "Elsewhere"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Cibuta"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "45 families",
+      "Annotation": "Elsewhere"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Agua Zarca"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "40 families",
+      "Annotation": "Elsewhere"
+    }
+  ],
+  "Total_Summary_Deaths": {
+    "Total_Deaths": "None reported",
+    "Total_Deaths_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Deaths": [
+    {
+      "Administrative_Areas": [
+        "United States",
+        "Mexico"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "None reported",
+      "Annotation": "Impact"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Deaths": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Arizona",
+        "California",
+        "New Mexico"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "None reported",
+      "Annotation": "Impact"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Sonora"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "None reported",
+      "Annotation": "Impact"
+    }
+  ],
+  "Total_Summary_Displaced": {
+    "Total_Displaced": "NULL",
+    "Total_Displaced_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Displaced": [
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "October 6",
+      "End_Date": "October 10",
+      "Num": "NULL",
+      "Annotation": "Arizona"
+    },
+    {
+      "Administrative_Areas": [
+        "Mexico"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Elsewhere"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Displaced": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Nogales, Arizona"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "Approximately 600 people, including 170 families",
+      "Annotation": "Arizona"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Downstream along the San Pedro River"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "100 more people",
+      "Annotation": "Arizona"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Winkelman, Arizona"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "Twenty people",
+      "Annotation": "Arizona"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Riverside, Arizona"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "Twenty families",
+      "Annotation": "Arizona"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Riverside, Arizona"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "Roughly 150 people",
+      "Annotation": "Arizona"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Rio Rico, Arizona"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "700 families",
+      "Annotation": "Arizona"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Nogales, Sonora"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "An unknown number of people",
+      "Annotation": "Elsewhere"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Hermosillo and surrounding areas"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "Roughly 100 families",
+      "Annotation": "Elsewhere"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Cibuta"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "45 families",
+      "Annotation": "Elsewhere"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Agua Zarca"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "40 more",
+      "Annotation": "Elsewhere"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Cibuta River"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "20 families",
+      "Annotation": "Elsewhere"
+    }
+  ],
+  "Total_Summary_Homeless": {
+    "Total_Homeless": "NULL",
+    "Total_Homeless_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Homeless": [
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "NULL"
+    },
+    {
+      "Administrative_Areas": [
+        "Mexico"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Homeless": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Nogales, Arizona"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "600 people, including 170 families",
+      "Annotation": "Arizona"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Nogales, Arizona"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "100 more people evacuated downstream along the San Pedro River",
+      "Annotation": "Arizona"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Winkelman, Arizona"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "twenty people",
+      "Annotation": "Arizona"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Riverside, Arizona"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "twenty families",
+      "Annotation": "Arizona"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Riverside, Arizona"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "roughly 150 people moved uphill to escape floodwaters",
+      "Annotation": "Arizona"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Rio Rico, Arizona"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "700 families",
+      "Annotation": "Arizona"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Hermosillo and surrounding areas"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "roughly 100 families",
+      "Annotation": "Elsewhere"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Cibuta"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "45 families",
+      "Annotation": "Elsewhere"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Agua Zarca"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "40 families",
+      "Annotation": "Elsewhere"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Cibuta River"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "20 families",
+      "Annotation": "Elsewhere"
+    }
+  ],
+  "Total_Summary_Injuries": {
+    "Total_Injuries": "NULL",
+    "Total_Injuries_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Injuries": [
+    {
+      "Administrative_Areas": "NULL",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Injuries": [
+    {
+      "Administrative_Area": "NULL",
+      "Locations": "NULL",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Total_Summary_Insured_Damage": {
+    "Total_Insured_Damage": "NULL",
+    "Total_Insured_Damage_Unit": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Insured_Damage_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Insured_Damage": [
+    {
+      "Administrative_Areas": [
+        "United States",
+        "Mexico"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Impact"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Tucson",
+        "Santa Cruz County",
+        "Pima County",
+        "Pinal County"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Impact"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Nogales",
+        "Hermosillo",
+        "Cibuta",
+        "Agua Zarca"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Impact"
+    }
+  ],
+  "Total_Summary_Damage": {
+    "Total_Damage": "$15 million",
+    "Total_Damage_Unit": "USD",
+    "Total_Damage_Inflation_Adjusted": "No",
+    "Total_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Damage_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Damage": [
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "$15 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Impact"
+    },
+    {
+      "Administrative_Areas": [
+        "Mexico"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Elsewhere"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Damage": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Tucson, Arizona"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "$9 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Impact"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Santa Cruz County, Arizona"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "$3.2 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Impact"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Tucson, Arizona"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "$2.7 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Impact"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Tucson, Arizona"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "$1 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Impact"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Santa Cruz County, Arizona"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "$4 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Impact"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Tucson, Arizona"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "$1 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Impact"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Tucson, Arizona"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "$2 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Impact"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Hermosillo",
+        "Cibuta",
+        "Agua Zarca"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Elsewhere"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Cotton Crops"
+      ],
+      "Start_Date": "October 6, 1977",
+      "End_Date": "October 10, 1977",
+      "Num": "98,000 acres damaged",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Elsewhere"
+    }
+  ],
+  "Main_Event": "Tropical Storm/Cyclone",
+  "Main_Event_Annotation": "Info_Box",
+  "Hazards": "Wind|Flood",
+  "Hazards_Annotation": "Info_Box|Impact",
+  "Start_Date": "October 4, 1977",
+  "End_Date": "October 7, 1977",
+  "Time_Annotation": "Info_Box",
+  "Administrative_Areas": [
+    "United States",
+    "Mexico"
+  ],
+  "Administrative_Areas_Annotation": "Info_Box"
+}

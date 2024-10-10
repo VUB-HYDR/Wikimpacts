@@ -1,0 +1,806 @@
+{
+  "Event_ID": "46DNi41",
+  "Sources": "https://en.wikipedia.org/wiki/Hubei",
+  "Event_Names": "Hubei",
+  "Total_Summary_Affected": {
+    "Total_Affected": "NULL",
+    "Total_Affected_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Affected": [
+    {
+      "Administrative_Areas": [
+        "China"
+      ],
+      "Start_Date": "October 18, 2009",
+      "End_Date": "NULL",
+      "Num": "330,000",
+      "Annotation": "Demographics"
+    },
+    {
+      "Administrative_Areas": [
+        "China"
+      ],
+      "Start_Date": "December 1, 2019",
+      "End_Date": "March 2020",
+      "Num": "57 million",
+      "Annotation": "History"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Affected": [
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei",
+        "Henan"
+      ],
+      "Start_Date": "October 18, 2009",
+      "End_Date": "NULL",
+      "Num": "330,000",
+      "Annotation": "Demographics"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Wuhan",
+        "15 cities in Hubei"
+      ],
+      "Start_Date": "December 1, 2019",
+      "End_Date": "March 2020",
+      "Num": "57 million",
+      "Annotation": "History"
+    }
+  ],
+  "Total_Summary_Buildings_Damaged": {
+    "Total_Buildings_Damaged": "NULL",
+    "Total_Buildings_Damaged_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+    {
+      "Administrative_Areas": [
+        "China"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Wuhan"
+      ],
+      "Start_Date": "July 1967",
+      "End_Date": "July 1967",
+      "Num": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Wuhan"
+      ],
+      "Start_Date": "1954",
+      "End_Date": "1954",
+      "Num": "NULL",
+      "Annotation": "History"
+    }
+  ],
+  "Total_Summary_Deaths": {
+    "Total_Deaths": "NULL",
+    "Total_Deaths_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Deaths": [
+    {
+      "Administrative_Areas": [
+        "China"
+      ],
+      "Start_Date": "1331",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "History"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Deaths": [
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "1331",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "History"
+    }
+  ],
+  "Total_Summary_Displaced": {
+    "Total_Displaced": "330,000",
+    "Total_Displaced_Annotation": "Demographics"
+  },
+  "Instance_Per_Administrative_Areas_Displaced": [
+    {
+      "Administrative_Areas": [
+        "China"
+      ],
+      "Start_Date": "October 18, 2009",
+      "End_Date": "NULL",
+      "Num": "330,000",
+      "Annotation": "Demographics"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Displaced": [
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei",
+        "Henan"
+      ],
+      "Start_Date": "October 18, 2009",
+      "End_Date": "NULL",
+      "Num": "330,000",
+      "Annotation": "Demographics"
+    }
+  ],
+  "Total_Summary_Homeless": {
+    "Total_Homeless": "NULL",
+    "Total_Homeless_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Homeless": [
+    {
+      "Administrative_Areas": [
+        "China"
+      ],
+      "Start_Date": "October 18, 2009",
+      "End_Date": "NULL",
+      "Num": "330,000",
+      "Annotation": "Demographics"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Homeless": [
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei",
+        "Henan"
+      ],
+      "Start_Date": "October 18, 2009",
+      "End_Date": "NULL",
+      "Num": "330,000",
+      "Annotation": "Demographics"
+    }
+  ],
+  "Total_Summary_Injuries": {
+    "Total_Injuries": "NULL",
+    "Total_Injuries_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Injuries": [
+    {
+      "Administrative_Areas": [
+        "China"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Injuries": [
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Wuhan"
+      ],
+      "Start_Date": "July 1967",
+      "End_Date": "July 1967",
+      "Num": "NULL",
+      "Annotation": "History"
+    }
+  ],
+  "Total_Summary_Insured_Damage": {
+    "Total_Insured_Damage": "NULL",
+    "Total_Insured_Damage_Unit": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Insured_Damage_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Insured_Damage": [
+    {
+      "Administrative_Areas": [
+        "China"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Wuhan"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    }
+  ],
+  "Total_Summary_Damage": {
+    "Total_Damage": "NULL",
+    "Total_Damage_Unit": "NULL",
+    "Total_Damage_Inflation_Adjusted": "NULL",
+    "Total_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Damage_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Damage": [
+    {
+      "Administrative_Areas": [
+        "China"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Damage": [
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Hubei"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "History"
+    }
+  ],
+  "Main_Event": "Flood",
+  "Main_Event_Annotation": "History",
+  "Hazards": "Flood",
+  "Hazards_Annotation": "History",
+  "Time_Information": [
+    {
+      "Start_Date": "770 BC",
+      "End_Date": "476 BC",
+      "Time_Annotation": "History"
+    },
+    {
+      "Start_Date": "475 BC",
+      "End_Date": "221 BC",
+      "Time_Annotation": "History"
+    },
+    {
+      "Start_Date": "221 BC",
+      "End_Date": "206 BC",
+      "Time_Annotation": "History"
+    },
+    {
+      "Start_Date": "206 BC",
+      "End_Date": "NULL",
+      "Time_Annotation": "History"
+    },
+    {
+      "Start_Date": "3rd century",
+      "End_Date": "NULL",
+      "Time_Annotation": "History"
+    },
+    {
+      "Start_Date": "4th century",
+      "End_Date": "589",
+      "Time_Annotation": "History"
+    },
+    {
+      "Start_Date": "589",
+      "End_Date": "617",
+      "Time_Annotation": "History"
+    },
+    {
+      "Start_Date": "617",
+      "End_Date": "NULL",
+      "Time_Annotation": "History"
+    },
+    {
+      "Start_Date": "982",
+      "End_Date": "1279",
+      "Time_Annotation": "History"
+    },
+    {
+      "Start_Date": "1279",
+      "End_Date": "1368",
+      "Time_Annotation": "History"
+    },
+    {
+      "Start_Date": "1368",
+      "End_Date": "1644",
+      "Time_Annotation": "History"
+    },
+    {
+      "Start_Date": "1644",
+      "End_Date": "1911",
+      "Time_Annotation": "History"
+    },
+    {
+      "Start_Date": "1911",
+      "End_Date": "NULL",
+      "Time_Annotation": "History"
+    },
+    {
+      "Start_Date": "1927",
+      "End_Date": "NULL",
+      "Time_Annotation": "History"
+    },
+    {
+      "Start_Date": "1960s",
+      "End_Date": "NULL",
+      "Time_Annotation": "History"
+    },
+    {
+      "Start_Date": "July 1967",
+      "End_Date": "NULL",
+      "Time_Annotation": "History"
+    },
+    {
+      "Start_Date": "late 1960s",
+      "End_Date": "NULL",
+      "Time_Annotation": "History"
+    },
+    {
+      "Start_Date": "1970",
+      "End_Date": "1988",
+      "Time_Annotation": "History"
+    },
+    {
+      "Start_Date": "1993",
+      "End_Date": "NULL",
+      "Time_Annotation": "History"
+    },
+    {
+      "Start_Date": "2010",
+      "End_Date": "2018",
+      "Time_Annotation": "History"
+    },
+    {
+      "Start_Date": "1 December 2019",
+      "End_Date": "NULL",
+      "Time_Annotation": "History"
+    },
+    {
+      "Start_Date": "January 2020",
+      "End_Date": "March 2020",
+      "Time_Annotation": "History"
+    },
+    {
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Time_Annotation": "Info_Box"
+    }
+  ],
+  "Administrative_Areas": {
+    "Administrative_Areas": [
+      "China",
+      "England",
+      "Belgium",
+      "Italy",
+      "Japan"
+    ],
+    "Administrative_Areas_Annotation": "History"
+  }
+}

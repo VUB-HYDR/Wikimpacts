@@ -1,0 +1,395 @@
+{
+  "Event_ID": "q0ZVCyI",
+  "Sources": "https://en.wikipedia.org/wiki/Typhoon_Surigae",
+  "Event_Names": "Typhoon Surigae",
+  "Total_Summary_Affected": {
+    "Total_Affected": "NULL",
+    "Total_Affected_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Affected": [
+    {
+      "Administrative_Areas": "Palau",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "The entire population of Palau, consisting of approximately 18,008 people",
+      "Annotation": "Micronesia and Palau"
+    },
+    {
+      "Administrative_Areas": "Philippines",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "169,072 people were evacuated",
+      "Annotation": "Preparations"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Affected": [
+    {
+      "Administrative_Area": "Palau",
+      "Locations": [
+        "Entire country"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "The entire population of Palau, consisting of approximately 18,008 people",
+      "Annotation": "Micronesia and Palau"
+    },
+    {
+      "Administrative_Area": "Philippines",
+      "Locations": [
+        "Cagayan Valley",
+        "Bicol Region",
+        "Eastern Visayas",
+        "Caraga"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "169,072 people were evacuated",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Area": "Philippines",
+      "Locations": [
+        "Bicol Region"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "109,815 people were displaced by flooding and landslides",
+      "Annotation": "Philippines"
+    }
+  ],
+  "Total_Summary_Buildings_Damaged": {
+    "Total_Buildings_Damaged": "NULL",
+    "Total_Buildings_Damaged_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+    {
+      "Administrative_Areas": "Palau",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "125 homes",
+      "Annotation": "Micronesia and Palau"
+    },
+    {
+      "Administrative_Areas": "Philippines",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "3,385 houses",
+      "Annotation": "Philippines"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+    {
+      "Administrative_Area": "Palau",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "125 homes",
+      "Annotation": "Micronesia and Palau"
+    },
+    {
+      "Administrative_Area": "Philippines",
+      "Locations": [
+        "Bicol Region",
+        "Eastern Visayas",
+        "Caraga"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "3,385 houses",
+      "Annotation": "Philippines"
+    }
+  ],
+  "Total_Summary_Deaths": {
+    "Total_Deaths": "10",
+    "Total_Deaths_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Deaths": [
+    {
+      "Administrative_Areas": "Philippines",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "10",
+      "Annotation": "Philippines"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Deaths": [
+    {
+      "Administrative_Area": "Philippines",
+      "Locations": [
+        "Southern Leyte",
+        "Cebu",
+        "Province of Surigao del Norte",
+        "Northern Samar"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "10",
+      "Annotation": "Philippines"
+    }
+  ],
+  "Total_Summary_Displaced": {
+    "Total_Displaced": "NULL",
+    "Total_Displaced_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Displaced": [
+    {
+      "Administrative_Areas": "Philippines",
+      "Start_Date": "April 17, 2021",
+      "End_Date": "April 21, 2021",
+      "Num": "169,072",
+      "Annotation": "Preparations"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Displaced": [
+    {
+      "Administrative_Area": "Philippines",
+      "Locations": [
+        "Bicol Region",
+        "Samar province"
+      ],
+      "Start_Date": "April 17, 2021",
+      "End_Date": "April 21, 2021",
+      "Num": "169,072",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Area": "Philippines",
+      "Locations": [
+        "Bicol Region"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "109,815",
+      "Annotation": "Philippines"
+    }
+  ],
+  "Total_Summary_Homeless": {
+    "Total_Homeless": "NULL",
+    "Total_Homeless_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Homeless": [
+    {
+      "Administrative_Areas": "Palau",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "125 homes destroyed, 1,500 sustained minor damage",
+      "Annotation": "Micronesia and Palau"
+    },
+    {
+      "Administrative_Areas": "Philippines",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "3,385 houses damaged, 158 totally destroyed",
+      "Annotation": "Philippines"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Homeless": [
+    {
+      "Administrative_Area": "Palau",
+      "Locations": [
+        "Entire country"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "125 homes destroyed, 1,500 sustained minor damage",
+      "Annotation": "Micronesia and Palau"
+    },
+    {
+      "Administrative_Area": "Philippines",
+      "Locations": [
+        "Bicol Region",
+        "Eastern Visayas",
+        "Caraga"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "3,385 houses damaged, 158 totally destroyed",
+      "Annotation": "Philippines"
+    }
+  ],
+  "Total_Summary_Injuries": {
+    "Total_Injuries": "13",
+    "Total_Injuries_Annotation": "Philippines"
+  },
+  "Instance_Per_Administrative_Areas_Injuries": [
+    {
+      "Administrative_Areas": [
+        "Philippines"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "13",
+      "Annotation": "Philippines"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Injuries": [
+    {
+      "Administrative_Area": "Philippines",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "13",
+      "Annotation": "Philippines"
+    }
+  ],
+  "Total_Summary_Insured_Damage": {
+    "Total_Insured_Damage": "NULL",
+    "Total_Insured_Damage_Unit": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Insured_Damage_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Insured_Damage": [
+    {
+      "Administrative_Areas": [
+        "Palau"
+      ],
+      "Start_Date": "April 14, 2021",
+      "End_Date": "April 18, 2021",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Micronesia and Palau"
+    },
+    {
+      "Administrative_Areas": [
+        "Philippines"
+      ],
+      "Start_Date": "April 16, 2021",
+      "End_Date": "April 21, 2021",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Philippines"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+    {
+      "Administrative_Area": "Palau",
+      "Locations": [
+        "Koror",
+        "Kayangel"
+      ],
+      "Start_Date": "April 14, 2021",
+      "End_Date": "April 18, 2021",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Micronesia and Palau"
+    },
+    {
+      "Administrative_Area": "Philippines",
+      "Locations": [
+        "Eastern Visayas",
+        "Bicol Region",
+        "Caraga"
+      ],
+      "Start_Date": "April 16, 2021",
+      "End_Date": "April 21, 2021",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Philippines"
+    }
+  ],
+  "Total_Summary_Damage": {
+    "Total_Damage": "$10.5 million",
+    "Total_Damage_Unit": "USD",
+    "Total_Damage_Inflation_Adjusted": "No",
+    "Total_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Damage_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Damage": [
+    {
+      "Administrative_Areas": "Palau",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$4.8 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Micronesia and Palau"
+    },
+    {
+      "Administrative_Areas": "Philippines",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "\u20b1272.8 million",
+      "Num_Unit": "PHP",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Info_Box"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Damage": [
+    {
+      "Administrative_Area": "Palau",
+      "Locations": [
+        "Palau"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$2 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Micronesia and Palau"
+    },
+    {
+      "Administrative_Area": "Philippines",
+      "Locations": [
+        "Bicol Region",
+        "Eastern Visayas"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "\u20b1261.9 million",
+      "Num_Unit": "PHP",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Philippines"
+    },
+    {
+      "Administrative_Area": "Philippines",
+      "Locations": [
+        "Bicol Region",
+        "Eastern Visayas",
+        "Caraga"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "\u20b110.87 million",
+      "Num_Unit": "PHP",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Philippines"
+    }
+  ],
+  "Main_Event": "Tropical Storm/Cyclone",
+  "Main_Event_Annotation": "Info_Box",
+  "Hazards": "Wind|Flood",
+  "Hazards_Annotation": "Info_Box|Philippines|Micronesia and Palau",
+  "Start_Date": "April 12, 2021",
+  "End_Date": "May 2, 2021",
+  "Time_Annotation": "Info_Box",
+  "Administrative_Areas": [
+    "Caroline Islands",
+    "Palau",
+    "Sulawesi",
+    "Philippines",
+    "Taiwan",
+    "Ryukyu Islands",
+    "Kuril Islands",
+    "Russian Far East",
+    "Alaska"
+  ],
+  "Administrative_Areas_Annotation": "Info_Box"
+}

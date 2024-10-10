@@ -1,0 +1,381 @@
+{
+  "Event_ID": "fDSKX5q",
+  "Sources": "https://en.wikipedia.org/wiki/Typhoon_Tembin_(2012)",
+  "Event_Names": "Typhoon Tembin (2012)",
+  "Total_Summary_Affected": {
+    "Total_Affected": "NULL",
+    "Total_Affected_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Affected": [
+    {
+      "Administrative_Areas": "Philippines",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Philippines"
+    },
+    {
+      "Administrative_Areas": "Taiwan",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Taiwan"
+    },
+    {
+      "Administrative_Areas": "South Korea",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "South Korea"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Affected": [
+    {
+      "Administrative_Area": "Philippines",
+      "Locations": [
+        "Luzon"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "8 people killed, 3 others went missing",
+      "Annotation": "Philippines"
+    },
+    {
+      "Administrative_Area": "Taiwan",
+      "Locations": [
+        "Yilan",
+        "Hualien",
+        "Taitung",
+        "Pingtung",
+        "Hengchun"
+      ],
+      "Start_Date": "August 21",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Taiwan"
+    },
+    {
+      "Administrative_Area": "South Korea",
+      "Locations": [
+        "Cheonan",
+        "Yeongam"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "1 person killed in Cheonan, 1 person killed in Yeongam",
+      "Annotation": "South Korea"
+    }
+  ],
+  "Total_Summary_Buildings_Damaged": {
+    "Total_Buildings_Damaged": "NULL",
+    "Total_Buildings_Damaged_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+    {
+      "Administrative_Areas": "Taiwan",
+      "Start_Date": "August 23, 2012",
+      "End_Date": "August 24, 2012",
+      "Num": "NULL",
+      "Annotation": "Taiwan"
+    },
+    {
+      "Administrative_Areas": "South Korea",
+      "Start_Date": "August 30, 2012",
+      "End_Date": "August 30, 2012",
+      "Num": "NULL",
+      "Annotation": "South Korea"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+    {
+      "Administrative_Area": "Taiwan",
+      "Locations": [
+        "Hengchun",
+        "Pingtung"
+      ],
+      "Start_Date": "August 23, 2012",
+      "End_Date": "August 24, 2012",
+      "Num": "NULL",
+      "Annotation": "Taiwan"
+    }
+  ],
+  "Total_Summary_Deaths": {
+    "Total_Deaths": "10",
+    "Total_Deaths_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Deaths": [
+    {
+      "Administrative_Areas": "Philippines",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "8",
+      "Annotation": "Philippines"
+    },
+    {
+      "Administrative_Areas": "South Korea",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "2",
+      "Annotation": "South Korea"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Deaths": [
+    {
+      "Administrative_Area": "Philippines",
+      "Locations": [
+        "Luzon"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "8",
+      "Annotation": "Philippines"
+    },
+    {
+      "Administrative_Area": "South Korea",
+      "Locations": [
+        "Cheonan",
+        "Yeongam"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "1",
+      "Annotation": "South Korea"
+    },
+    {
+      "Administrative_Area": "South Korea",
+      "Locations": [
+        "Yeongam"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "1",
+      "Annotation": "South Korea"
+    }
+  ],
+  "Total_Summary_Displaced": {
+    "Total_Displaced": "NULL",
+    "Total_Displaced_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Displaced": [
+    {
+      "Administrative_Areas": "Taiwan",
+      "Start_Date": "August 21",
+      "End_Date": "August 23",
+      "Num": "NULL",
+      "Annotation": "Taiwan"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Displaced": [
+    {
+      "Administrative_Area": "Taiwan",
+      "Locations": [
+        "Yilan",
+        "Hualien",
+        "Taitung"
+      ],
+      "Start_Date": "August 21",
+      "End_Date": "August 23",
+      "Num": "NULL",
+      "Annotation": "Taiwan"
+    },
+    {
+      "Administrative_Area": "Taiwan",
+      "Locations": [
+        "typhoon-prone areas"
+      ],
+      "Start_Date": "August 22",
+      "End_Date": "August 23",
+      "Num": "several residents",
+      "Annotation": "Taiwan"
+    },
+    {
+      "Administrative_Area": "Taiwan",
+      "Locations": [
+        "military camps"
+      ],
+      "Start_Date": "August 22",
+      "End_Date": "August 23",
+      "Num": "53,000 evacuees",
+      "Annotation": "Taiwan"
+    },
+    {
+      "Administrative_Area": "Taiwan",
+      "Locations": [
+        "mountainous areas"
+      ],
+      "Start_Date": "August 23",
+      "End_Date": "August 23",
+      "Num": "3000 residents",
+      "Annotation": "Taiwan"
+    }
+  ],
+  "Total_Summary_Homeless": {
+    "Total_Homeless": "NULL",
+    "Total_Homeless_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Homeless": [
+    {
+      "Administrative_Areas": "Philippines",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Philippines"
+    },
+    {
+      "Administrative_Areas": "Taiwan",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Taiwan"
+    },
+    {
+      "Administrative_Areas": "South Korea",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "South Korea"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Homeless": [
+    {
+      "Administrative_Area": "Taiwan",
+      "Locations": [
+        "Hengchun"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Taiwan"
+    }
+  ],
+  "Total_Summary_Injuries": {
+    "Total_Injuries": "NULL",
+    "Total_Injuries_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Injuries": [
+    {
+      "Administrative_Areas": "Taiwan",
+      "Start_Date": "August 23, 2012",
+      "End_Date": "August 24, 2012",
+      "Num": "at least 5",
+      "Annotation": "Taiwan"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Injuries": [
+    {
+      "Administrative_Area": "Taiwan",
+      "Locations": [
+        "Hengchun"
+      ],
+      "Start_Date": "August 23, 2012",
+      "End_Date": "August 24, 2012",
+      "Num": "NULL",
+      "Annotation": "Taiwan"
+    }
+  ],
+  "Total_Summary_Insured_Damage": {
+    "Total_Insured_Damage": "NULL",
+    "Total_Insured_Damage_Unit": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Insured_Damage_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Insured_Damage": [
+    {
+      "Administrative_Areas": "NULL",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+    {
+      "Administrative_Area": "NULL",
+      "Locations": "NULL",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Total_Summary_Damage": {
+    "Total_Damage": "6.67 million",
+    "Total_Damage_Unit": "USD",
+    "Total_Damage_Inflation_Adjusted": "No",
+    "Total_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Damage_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Damage": [
+    {
+      "Administrative_Areas": "Philippines",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "PHP4.09 million",
+      "Num_Unit": "PHP",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Philippines"
+    },
+    {
+      "Administrative_Areas": "Taiwan",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NT$196.87 million",
+      "Num_Unit": "NT$",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Taiwan"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Damage": [
+    {
+      "Administrative_Area": "Philippines",
+      "Locations": [
+        "Luzon"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "PHP4.09 million",
+      "Num_Unit": "PHP",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Philippines"
+    },
+    {
+      "Administrative_Area": "Taiwan",
+      "Locations": [
+        "Pingtung",
+        "Hengchun"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NT$196.87 million",
+      "Num_Unit": "NT$",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Taiwan"
+    }
+  ],
+  "Main_Event": "Tropical Storm/Cyclone",
+  "Main_Event_Annotation": "Info_Box",
+  "Hazards": "Wind|Flood",
+  "Hazards_Annotation": "Info_Box|Philippines|Taiwan|South Korea",
+  "Start_Date": "August 17, 2012",
+  "End_Date": "September 1, 2012",
+  "Time_Annotation": "Info_Box",
+  "Administrative_Areas": [
+    "Philippines",
+    "Taiwan",
+    "China",
+    "Japan",
+    "South Korea"
+  ],
+  "Administrative_Areas_Annotation": "Info_Box"
+}

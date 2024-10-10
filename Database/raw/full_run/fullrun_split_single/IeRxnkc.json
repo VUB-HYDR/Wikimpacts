@@ -1,0 +1,663 @@
+{
+  "Event_ID": "IeRxnkc",
+  "Sources": "https://en.wikipedia.org/wiki/2023_Pacific_typhoon_season",
+  "Event_Names": "2023 Pacific typhoon season",
+  "Total_Summary_Affected": {
+    "Total_Affected": "NULL",
+    "Total_Affected_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Affected": [
+    {
+      "Administrative_Areas": "Malaysia",
+      "Start_Date": "March 4, 2023",
+      "End_Date": "March 7, 2023",
+      "Num": "about 50,000 people",
+      "Annotation": "Early season activity"
+    },
+    {
+      "Administrative_Areas": "Philippines",
+      "Start_Date": "April 11, 2023",
+      "End_Date": "April 13, 2023",
+      "Num": "1,569 farmers",
+      "Annotation": "Tropical Depression Amang"
+    },
+    {
+      "Administrative_Areas": "Philippines",
+      "Start_Date": "December 17, 2023",
+      "End_Date": "December 20, 2023",
+      "Num": "nearly 90,000 people",
+      "Annotation": "Tropical Storm Jelawat (Kabayan)"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Affected": [
+    {
+      "Administrative_Area": "Philippines",
+      "Locations": [
+        "Bicol Region"
+      ],
+      "Start_Date": "April 11, 2023",
+      "End_Date": "April 13, 2023",
+      "Num": "1,918 passengers",
+      "Annotation": "Tropical Depression Amang"
+    },
+    {
+      "Administrative_Area": "Philippines",
+      "Locations": [
+        "Mindanao",
+        "Visayas"
+      ],
+      "Start_Date": "December 17, 2023",
+      "End_Date": "December 20, 2023",
+      "Num": "nearly 90,000 people",
+      "Annotation": "Tropical Storm Jelawat (Kabayan)"
+    }
+  ],
+  "Total_Summary_Buildings_Damaged": {
+    "Total_Buildings_Damaged": "NULL",
+    "Total_Buildings_Damaged_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+    {
+      "Administrative_Areas": "Philippines",
+      "Start_Date": "April 11, 2023",
+      "End_Date": "April 13, 2023",
+      "Num": "NULL",
+      "Annotation": "Tropical Depression Amang"
+    },
+    {
+      "Administrative_Areas": "Philippines",
+      "Start_Date": "July 26, 2023",
+      "End_Date": "July 27, 2023",
+      "Num": "NULL",
+      "Annotation": "Typhoon Doksuri (Egay)"
+    },
+    {
+      "Administrative_Areas": "China",
+      "Start_Date": "July 28, 2023",
+      "End_Date": "July 29, 2023",
+      "Num": "NULL",
+      "Annotation": "Typhoon Doksuri (Egay)"
+    },
+    {
+      "Administrative_Areas": "South Korea",
+      "Start_Date": "August 10, 2023",
+      "End_Date": "August 11, 2023",
+      "Num": "160,000 homes",
+      "Annotation": "Typhoon Khanun (Falcon)"
+    },
+    {
+      "Administrative_Areas": "Japan",
+      "Start_Date": "August 14, 2023",
+      "End_Date": "August 17, 2023",
+      "Num": "100,000 homes",
+      "Annotation": "Typhoon Lan"
+    },
+    {
+      "Administrative_Areas": "Hong Kong",
+      "Start_Date": "September 7, 2023",
+      "End_Date": "September 7, 2023",
+      "Num": "NULL",
+      "Annotation": "Typhoon Haikui (Hanna)"
+    },
+    {
+      "Administrative_Areas": "Macau",
+      "Start_Date": "September 7, 2023",
+      "End_Date": "September 7, 2023",
+      "Num": "NULL",
+      "Annotation": "Typhoon Haikui (Hanna)"
+    },
+    {
+      "Administrative_Areas": "China",
+      "Start_Date": "September 7, 2023",
+      "End_Date": "September 7, 2023",
+      "Num": "NULL",
+      "Annotation": "Typhoon Haikui (Hanna)"
+    },
+    {
+      "Administrative_Areas": "Guam",
+      "Start_Date": "October 10, 2023",
+      "End_Date": "October 10, 2023",
+      "Num": "NULL",
+      "Annotation": "Typhoon Bolaven"
+    },
+    {
+      "Administrative_Areas": "Northern Mariana Islands",
+      "Start_Date": "October 10, 2023",
+      "End_Date": "October 10, 2023",
+      "Num": "NULL",
+      "Annotation": "Typhoon Bolaven"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+    {
+      "Administrative_Area": "Philippines",
+      "Locations": [
+        "Bicol Region"
+      ],
+      "Start_Date": "April 11, 2023",
+      "End_Date": "April 13, 2023",
+      "Num": "NULL",
+      "Annotation": "Tropical Depression Amang"
+    },
+    {
+      "Administrative_Area": "Philippines",
+      "Locations": [
+        "Ilocos Region",
+        "Northern Luzon"
+      ],
+      "Start_Date": "July 26, 2023",
+      "End_Date": "July 27, 2023",
+      "Num": "NULL",
+      "Annotation": "Typhoon Doksuri (Egay)"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Jinjiang, Fujian"
+      ],
+      "Start_Date": "July 28, 2023",
+      "End_Date": "July 29, 2023",
+      "Num": "NULL",
+      "Annotation": "Typhoon Doksuri (Egay)"
+    },
+    {
+      "Administrative_Area": "South Korea",
+      "Locations": [
+        "Geojedo Islands"
+      ],
+      "Start_Date": "August 10, 2023",
+      "End_Date": "August 11, 2023",
+      "Num": "160,000 homes",
+      "Annotation": "Typhoon Khanun (Falcon)"
+    },
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Cape Shionomisaki"
+      ],
+      "Start_Date": "August 14, 2023",
+      "End_Date": "August 17, 2023",
+      "Num": "100,000 homes",
+      "Annotation": "Typhoon Lan"
+    },
+    {
+      "Administrative_Area": "Hong Kong",
+      "Locations": [
+        "Hong Kong"
+      ],
+      "Start_Date": "September 7, 2023",
+      "End_Date": "September 7, 2023",
+      "Num": "NULL",
+      "Annotation": "Typhoon Haikui (Hanna)"
+    },
+    {
+      "Administrative_Area": "Macau",
+      "Locations": [
+        "Macau"
+      ],
+      "Start_Date": "September 7, 2023",
+      "End_Date": "September 7, 2023",
+      "Num": "NULL",
+      "Annotation": "Typhoon Haikui (Hanna)"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Shenzhen"
+      ],
+      "Start_Date": "September 7, 2023",
+      "End_Date": "September 7, 2023",
+      "Num": "NULL",
+      "Annotation": "Typhoon Haikui (Hanna)"
+    },
+    {
+      "Administrative_Area": "Guam",
+      "Locations": [
+        "Inal\u00e5han"
+      ],
+      "Start_Date": "October 10, 2023",
+      "End_Date": "October 10, 2023",
+      "Num": "NULL",
+      "Annotation": "Typhoon Bolaven"
+    },
+    {
+      "Administrative_Area": "Northern Mariana Islands",
+      "Locations": [
+        "Tinian",
+        "Rota",
+        "Saipan"
+      ],
+      "Start_Date": "October 10, 2023",
+      "End_Date": "October 10, 2023",
+      "Num": "NULL",
+      "Annotation": "Typhoon Bolaven"
+    }
+  ],
+  "Total_Summary_Deaths": {
+    "Total_Deaths": "191 total",
+    "Total_Deaths_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Deaths": [
+    {
+      "Administrative_Areas": "China",
+      "Start_Date": "July 28",
+      "End_Date": "July 29",
+      "Num": "NULL",
+      "Annotation": "Typhoon Doksuri (Egay)"
+    },
+    {
+      "Administrative_Areas": "Philippines",
+      "Start_Date": "July 24",
+      "End_Date": "July 27",
+      "Num": "NULL",
+      "Annotation": "Typhoon Doksuri (Egay)"
+    },
+    {
+      "Administrative_Areas": "South Korea",
+      "Start_Date": "August 10",
+      "End_Date": "August 11",
+      "Num": "13",
+      "Annotation": "Typhoon Khanun (Falcon)"
+    },
+    {
+      "Administrative_Areas": "Hong Kong",
+      "Start_Date": "September 7",
+      "End_Date": "September 7",
+      "Num": "4",
+      "Annotation": "Typhoon Haikui (Hanna)"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Deaths": [
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Jinjiang, Fujian"
+      ],
+      "Start_Date": "July 28",
+      "End_Date": "July 29",
+      "Num": "NULL",
+      "Annotation": "Typhoon Doksuri (Egay)"
+    },
+    {
+      "Administrative_Area": "Philippines",
+      "Locations": [
+        "Camiguin Island",
+        "Fuga Island",
+        "Dalupiri Island"
+      ],
+      "Start_Date": "July 24",
+      "End_Date": "July 27",
+      "Num": "NULL",
+      "Annotation": "Typhoon Doksuri (Egay)"
+    },
+    {
+      "Administrative_Area": "Philippines",
+      "Locations": [
+        "MB Aya Express"
+      ],
+      "Start_Date": "July 24",
+      "End_Date": "July 27",
+      "Num": "27",
+      "Annotation": "Typhoon Doksuri (Egay)"
+    },
+    {
+      "Administrative_Area": "South Korea",
+      "Locations": [
+        "Geojedo Islands"
+      ],
+      "Start_Date": "August 10",
+      "End_Date": "August 11",
+      "Num": "13",
+      "Annotation": "Typhoon Khanun (Falcon)"
+    },
+    {
+      "Administrative_Area": "Hong Kong",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "September 7",
+      "End_Date": "September 7",
+      "Num": "4",
+      "Annotation": "Typhoon Haikui (Hanna)"
+    }
+  ],
+  "Total_Summary_Displaced": {
+    "Total_Displaced": "NULL",
+    "Total_Displaced_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Displaced": [
+    {
+      "Administrative_Areas": [
+        "Philippines"
+      ],
+      "Start_Date": "December 17, 2023",
+      "End_Date": "NULL",
+      "Num": "nearly 90,000 people",
+      "Annotation": "Tropical Storm Jelawat (Kabayan)"
+    },
+    {
+      "Administrative_Areas": [
+        "Japan"
+      ],
+      "Start_Date": "August 14, 2023",
+      "End_Date": "NULL",
+      "Num": "more than 237,000 individuals",
+      "Annotation": "Typhoon Lan"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Displaced": [
+    {
+      "Administrative_Area": "Philippines",
+      "Locations": [
+        "Mindanao",
+        "Visayas"
+      ],
+      "Start_Date": "December 17, 2023",
+      "End_Date": "NULL",
+      "Num": "nearly 90,000 people",
+      "Annotation": "Tropical Storm Jelawat (Kabayan)"
+    },
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Kyoto Prefecture",
+        "Iwate Prefecture"
+      ],
+      "Start_Date": "August 14, 2023",
+      "End_Date": "NULL",
+      "Num": "more than 237,000 individuals",
+      "Annotation": "Typhoon Lan"
+    }
+  ],
+  "Total_Summary_Homeless": {
+    "Total_Homeless": "NULL",
+    "Total_Homeless_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Homeless": [
+    {
+      "Administrative_Areas": [
+        "Japan"
+      ],
+      "Start_Date": "August 14, 2023",
+      "End_Date": "NULL",
+      "Num": "more than 237,000 individuals",
+      "Annotation": "Typhoon Lan"
+    },
+    {
+      "Administrative_Areas": [
+        "Philippines"
+      ],
+      "Start_Date": "December 17, 2023",
+      "End_Date": "NULL",
+      "Num": "nearly 90,000 people",
+      "Annotation": "Tropical Storm Jelawat (Kabayan)"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Homeless": [
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Kyoto Prefecture",
+        "Iwate Prefecture"
+      ],
+      "Start_Date": "August 14, 2023",
+      "End_Date": "NULL",
+      "Num": "more than 237,000 individuals",
+      "Annotation": "Typhoon Lan"
+    },
+    {
+      "Administrative_Area": "Philippines",
+      "Locations": [
+        "Mindanao",
+        "Visayas"
+      ],
+      "Start_Date": "December 17, 2023",
+      "End_Date": "NULL",
+      "Num": "nearly 90,000 people",
+      "Annotation": "Tropical Storm Jelawat (Kabayan)"
+    }
+  ],
+  "Total_Summary_Injuries": {
+    "Total_Injuries": "NULL",
+    "Total_Injuries_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Injuries": [
+    {
+      "Administrative_Areas": "South Korea",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "115",
+      "Annotation": "Typhoon Khanun (Falcon)"
+    },
+    {
+      "Administrative_Areas": "Japan",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "64",
+      "Annotation": "Typhoon Lan"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Injuries": [
+    {
+      "Administrative_Area": "South Korea",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "115",
+      "Annotation": "Typhoon Khanun (Falcon)"
+    },
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "64",
+      "Annotation": "Typhoon Lan"
+    }
+  ],
+  "Total_Summary_Insured_Damage": {
+    "Total_Insured_Damage": "NULL",
+    "Total_Insured_Damage_Unit": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Insured_Damage_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Insured_Damage": [
+    {
+      "Administrative_Areas": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+    {
+      "Administrative_Area": "NULL",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Total_Summary_Damage": {
+    "Total_Damage": "$37.5 billion",
+    "Total_Damage_Unit": "USD",
+    "Total_Damage_Inflation_Adjusted": "No",
+    "Total_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Damage_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Damage": [
+    {
+      "Administrative_Areas": [
+        "China"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$28.4 billion",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Typhoon Doksuri (Egay)"
+    },
+    {
+      "Administrative_Areas": [
+        "Philippines"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "\u20b1299 million",
+      "Num_Unit": "PHP",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Severe Tropical Storm Talim (Dodong)"
+    },
+    {
+      "Administrative_Areas": [
+        "Vietnam"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "20.7 billion \u0111\u1ed3ng",
+      "Num_Unit": "VND",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Severe Tropical Storm Talim (Dodong)"
+    },
+    {
+      "Administrative_Areas": [
+        "Hong Kong"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "US$2.31 billion",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Typhoon Haikui (Hanna)"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Damage": [
+    {
+      "Administrative_Area": "Philippines",
+      "Locations": [
+        "Bicol Region"
+      ],
+      "Start_Date": "April 11, 2023",
+      "End_Date": "April 13, 2023",
+      "Num": "\u20b150.84 million",
+      "Num_Unit": "PHP",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Tropical Depression Amang"
+    },
+    {
+      "Administrative_Area": "Philippines",
+      "Locations": [
+        "Luzon"
+      ],
+      "Start_Date": "July 12, 2023",
+      "End_Date": "July 17, 2023",
+      "Num": "\u20b1299 million",
+      "Num_Unit": "PHP",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Severe Tropical Storm Talim (Dodong)"
+    },
+    {
+      "Administrative_Area": "China",
+      "Locations": [
+        "Jinjiang, Fujian"
+      ],
+      "Start_Date": "July 28, 2023",
+      "End_Date": "July 29, 2023",
+      "Num": "$28.4 billion",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Typhoon Doksuri (Egay)"
+    },
+    {
+      "Administrative_Area": "Vietnam",
+      "Locations": [
+        "Da Nang",
+        "Qu\u1ea3ng Tr\u1ecb",
+        "Qu\u1ea3ng B\u00ecnh",
+        "B\u00ecnh \u0110\u1ecbnh",
+        "Thanh H\u00f3a",
+        "Ngh\u1ec7 An",
+        "H\u00e0 T\u0129nh"
+      ],
+      "Start_Date": "September 24, 2023",
+      "End_Date": "September 27, 2023",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Tropical Depression 13W"
+    },
+    {
+      "Administrative_Area": "Hong Kong",
+      "Locations": [
+        "Hong Kong"
+      ],
+      "Start_Date": "September 7, 2023",
+      "End_Date": "September 8, 2023",
+      "Num": "US$2.31 billion",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Typhoon Haikui (Hanna)"
+    },
+    {
+      "Administrative_Area": "Philippines",
+      "Locations": [
+        "Mindanao",
+        "Visayas"
+      ],
+      "Start_Date": "December 17, 2023",
+      "End_Date": "December 20, 2023",
+      "Num": "$43,200",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Tropical Storm Jelawat (Kabayan)"
+    }
+  ],
+  "Main_Event": "Tropical Storm/Cyclone",
+  "Main_Event_Annotation": "Info_Box",
+  "Hazards": "Wind|Flood",
+  "Hazards_Annotation": "Info_Box|Typhoon Doksuri (Egay)",
+  "Start_Date": "March 4, 2023",
+  "End_Date": "December 18, 2023",
+  "Time_Annotation": "Info_Box",
+  "Administrative_Areas": [
+    "Philippines",
+    "Taiwan",
+    "China",
+    "Hong Kong",
+    "Vietnam",
+    "Japan",
+    "South Korea",
+    "Guam",
+    "Northern Mariana Islands",
+    "Malaysia",
+    "Micronesia"
+  ],
+  "Administrative_Areas_Annotation": "Info_Box"
+}

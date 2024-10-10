@@ -1,0 +1,397 @@
+{
+  "Event_ID": "4aPK1ob",
+  "Sources": "https://en.wikipedia.org/wiki/Hurricane_Fabian",
+  "Event_Names": "Hurricane Fabian",
+  "Total_Summary_Affected": {
+    "Total_Affected": "NULL",
+    "Total_Affected_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Affected": [
+    {
+      "Administrative_Areas": "Bermuda",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Bermuda"
+    },
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Atlantic coast"
+    },
+    {
+      "Administrative_Areas": "Canada",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Atlantic coast"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Affected": [
+    {
+      "Administrative_Area": "Bermuda",
+      "Locations": [
+        "Causeway between St. George's Parish and St. David's Island"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "4",
+      "Annotation": "Bermuda"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Cape Hatteras"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "1",
+      "Annotation": "Atlantic coast"
+    },
+    {
+      "Administrative_Area": "Canada",
+      "Locations": [
+        "Grand Banks"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "3",
+      "Annotation": "Atlantic coast"
+    }
+  ],
+  "Total_Summary_Buildings_Damaged": {
+    "Total_Buildings_Damaged": "NULL",
+    "Total_Buildings_Damaged_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+    {
+      "Administrative_Areas": "Bermuda",
+      "Start_Date": "September 5, 2003",
+      "End_Date": "September 5, 2003",
+      "Num": "NULL",
+      "Annotation": "Bermuda"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+    {
+      "Administrative_Area": "Bermuda",
+      "Locations": [
+        "Hamilton",
+        "Warwick",
+        "Devonshire",
+        "Southampton",
+        "St. George's"
+      ],
+      "Start_Date": "September 5, 2003",
+      "End_Date": "September 5, 2003",
+      "Num": "numerous buildings",
+      "Annotation": "Bermuda"
+    },
+    {
+      "Administrative_Area": "Bermuda",
+      "Locations": [
+        "Hamilton"
+      ],
+      "Start_Date": "September 5, 2003",
+      "End_Date": "September 5, 2003",
+      "Num": "several landmark buildings",
+      "Annotation": "Bermuda"
+    },
+    {
+      "Administrative_Area": "Bermuda",
+      "Locations": [
+        "Bermuda International Airport"
+      ],
+      "Start_Date": "September 5, 2003",
+      "End_Date": "September 5, 2003",
+      "Num": "NULL",
+      "Annotation": "Bermuda"
+    },
+    {
+      "Administrative_Area": "Bermuda",
+      "Locations": [
+        "major hotels"
+      ],
+      "Start_Date": "September 5, 2003",
+      "End_Date": "September 5, 2003",
+      "Num": "several",
+      "Annotation": "Bermuda"
+    },
+    {
+      "Administrative_Area": "Bermuda",
+      "Locations": [
+        "golf courses"
+      ],
+      "Start_Date": "September 5, 2003",
+      "End_Date": "September 5, 2003",
+      "Num": "one club house",
+      "Annotation": "Bermuda"
+    }
+  ],
+  "Total_Summary_Deaths": {
+    "Total_Deaths": "8",
+    "Total_Deaths_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Deaths": [
+    {
+      "Administrative_Areas": "Bermuda",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "4",
+      "Annotation": "Bermuda"
+    },
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "4",
+      "Annotation": "Atlantic coast"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Deaths": [
+    {
+      "Administrative_Area": "Bermuda",
+      "Locations": [
+        "Causeway between St. George's Parish and St. David's Island"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "4",
+      "Annotation": "Bermuda"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Cape Hatteras",
+        "Grand Banks"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "4",
+      "Annotation": "Atlantic coast"
+    }
+  ],
+  "Total_Summary_Displaced": {
+    "Total_Displaced": "NULL",
+    "Total_Displaced_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Displaced": [
+    {
+      "Administrative_Areas": [
+        "Dominican Republic"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "Several families",
+      "Annotation": "Caribbean"
+    },
+    {
+      "Administrative_Areas": [
+        "Bermuda"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "2,000 low-lying residents",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Areas": [
+        "Bermuda"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "Dozens of people",
+      "Annotation": "Aftermath"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Displaced": [
+    {
+      "Administrative_Area": "Dominican Republic",
+      "Locations": [
+        "Nagua"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "Several families",
+      "Annotation": "Caribbean"
+    },
+    {
+      "Administrative_Area": "Bermuda",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "2,000 low-lying residents",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Area": "Bermuda",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "Dozens of people",
+      "Annotation": "Aftermath"
+    }
+  ],
+  "Total_Summary_Homeless": {
+    "Total_Homeless": "NULL",
+    "Total_Homeless_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Homeless": [
+    {
+      "Administrative_Areas": [
+        "Bermuda"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Bermuda"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Homeless": [
+    {
+      "Administrative_Area": "Bermuda",
+      "Locations": [
+        "Rec View Hill",
+        "Devonshire"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Bermuda"
+    }
+  ],
+  "Total_Summary_Injuries": {
+    "Total_Injuries": "nine people sought medical attention for minor injuries",
+    "Total_Injuries_Annotation": "Bermuda"
+  },
+  "Instance_Per_Administrative_Areas_Injuries": [
+    {
+      "Administrative_Areas": [
+        "Bermuda"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "nine people sought medical attention for minor injuries",
+      "Annotation": "Bermuda"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Injuries": [
+    {
+      "Administrative_Area": "Bermuda",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "nine people sought medical attention for minor injuries",
+      "Annotation": "Bermuda"
+    }
+  ],
+  "Total_Summary_Insured_Damage": {
+    "Total_Insured_Damage": "NULL",
+    "Total_Insured_Damage_Unit": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Insured_Damage_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Insured_Damage": [
+    {
+      "Administrative_Areas": [
+        "Bermuda"
+      ],
+      "Start_Date": "September 5, 2003",
+      "End_Date": "September 5, 2003",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Impact"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+    {
+      "Administrative_Area": "Bermuda",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Total_Summary_Damage": {
+    "Total_Damage": "US$300 million",
+    "Total_Damage_Unit": "USD",
+    "Total_Damage_Inflation_Adjusted": "No",
+    "Total_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Damage_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Damage": [
+    {
+      "Administrative_Areas": "Bermuda",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "US$300 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Impact"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Damage": [
+    {
+      "Administrative_Area": "Puerto Rico",
+      "Locations": [
+        "Ocean Park"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "US$30,000",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Caribbean"
+    },
+    {
+      "Administrative_Area": "Bermuda",
+      "Locations": [
+        "Bermuda International Airport"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "US$15 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Bermuda"
+    }
+  ],
+  "Main_Event": "Tropical Storm/Cyclone",
+  "Main_Event_Annotation": "Info_Box",
+  "Hazards": "Wind|Flood",
+  "Hazards_Annotation": "Info_Box|Bermuda",
+  "Start_Date": "August 27, 2003",
+  "End_Date": "September 10, 2003",
+  "Time_Annotation": "Info_Box",
+  "Administrative_Areas": [
+    "Leeward Islands",
+    "Bermuda",
+    "Eastern Canada",
+    "Iceland",
+    "Antigua and Barbuda",
+    "Puerto Rico",
+    "Dominican Republic",
+    "United States"
+  ],
+  "Administrative_Areas_Annotation": "Info_Box"
+}

@@ -1,0 +1,672 @@
+{
+  "Event_ID": "Kwq7g4Z",
+  "Sources": "https://en.wikipedia.org/wiki/1961_Atlantic_hurricane_season",
+  "Event_Names": "1961 Atlantic hurricane season",
+  "Total_Summary_Affected": {
+    "Total_Affected": "NULL",
+    "Total_Affected_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Affected": [
+    {
+      "Administrative_Areas": [
+        "Belize"
+      ],
+      "Start_Date": "October 31",
+      "End_Date": "November 1",
+      "Num": "over 10,000 people homeless",
+      "Annotation": "Hurricane Hattie"
+    },
+    {
+      "Administrative_Areas": [
+        "Honduras"
+      ],
+      "Start_Date": "July 24",
+      "End_Date": "July 24",
+      "Num": "hundreds of people homeless",
+      "Annotation": "Hurricane Anna"
+    },
+    {
+      "Administrative_Areas": [
+        "Ireland"
+      ],
+      "Start_Date": "September 16",
+      "End_Date": "September 16",
+      "Num": "NULL",
+      "Annotation": "Hurricane Debbie"
+    },
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "September 26",
+      "End_Date": "September 26",
+      "Num": "over 300,000 power outages",
+      "Annotation": "Hurricane Esther"
+    },
+    {
+      "Administrative_Areas": [
+        "Jamaica"
+      ],
+      "Start_Date": "October 17",
+      "End_Date": "October 17",
+      "Num": "many people evacuated",
+      "Annotation": "Tropical Storm Gerda"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Affected": [
+    {
+      "Administrative_Area": "Belize",
+      "Locations": [
+        "Belize City"
+      ],
+      "Start_Date": "October 31",
+      "End_Date": "November 1",
+      "Num": "over 10,000 people homeless",
+      "Annotation": "Hurricane Hattie"
+    },
+    {
+      "Administrative_Area": "Honduras",
+      "Locations": [
+        "Gracias a Dios Department"
+      ],
+      "Start_Date": "July 24",
+      "End_Date": "July 24",
+      "Num": "hundreds of people homeless",
+      "Annotation": "Hurricane Anna"
+    },
+    {
+      "Administrative_Area": "Ireland",
+      "Locations": [
+        "Republic of Ireland",
+        "Northern Ireland"
+      ],
+      "Start_Date": "September 16",
+      "End_Date": "September 16",
+      "Num": "NULL",
+      "Annotation": "Hurricane Debbie"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "New York"
+      ],
+      "Start_Date": "September 26",
+      "End_Date": "September 26",
+      "Num": "over 300,000 power outages",
+      "Annotation": "Hurricane Esther"
+    },
+    {
+      "Administrative_Area": "Jamaica",
+      "Locations": [
+        "Western Kingston"
+      ],
+      "Start_Date": "October 17",
+      "End_Date": "October 17",
+      "Num": "many people evacuated",
+      "Annotation": "Tropical Storm Gerda"
+    }
+  ],
+  "Total_Summary_Buildings_Damaged": {
+    "Total_Buildings_Damaged": "NULL",
+    "Total_Buildings_Damaged_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "September 11",
+      "End_Date": "September 16",
+      "Num": "NULL",
+      "Annotation": "Hurricane Carla"
+    },
+    {
+      "Administrative_Areas": "Belize",
+      "Start_Date": "October 31",
+      "End_Date": "November 1",
+      "Num": "NULL",
+      "Annotation": "Hurricane Hattie"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Port Lavaca",
+        "Galveston",
+        "Texas",
+        "Louisiana"
+      ],
+      "Start_Date": "September 11",
+      "End_Date": "September 16",
+      "Num": "1,915 homes, 568 farm buildings, 415 other buildings destroyed; 50,723 homes, 5,620 farm buildings, 10,487 other buildings damaged",
+      "Annotation": "Hurricane Carla"
+    },
+    {
+      "Administrative_Area": "Belize",
+      "Locations": [
+        "Belize City"
+      ],
+      "Start_Date": "October 31",
+      "End_Date": "November 1",
+      "Num": "70% of the buildings in the city",
+      "Annotation": "Hurricane Hattie"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "New York",
+        "Massachusetts"
+      ],
+      "Start_Date": "September 26",
+      "End_Date": "September 27",
+      "Num": "NULL",
+      "Annotation": "Hurricane Esther"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Rhode Island",
+        "Massachusetts",
+        "Maine"
+      ],
+      "Start_Date": "September 14",
+      "End_Date": "September 15",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Six"
+    }
+  ],
+  "Total_Summary_Deaths": {
+    "Total_Deaths": "437",
+    "Total_Deaths_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Deaths": [
+    {
+      "Administrative_Areas": "Belize",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "307",
+      "Annotation": "Hurricane Hattie"
+    },
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "46",
+      "Annotation": "Hurricane Carla"
+    },
+    {
+      "Administrative_Areas": "Ireland",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "18",
+      "Annotation": "Hurricane Debbie"
+    },
+    {
+      "Administrative_Areas": "Jamaica",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "5",
+      "Annotation": "Tropical Storm Gerda"
+    },
+    {
+      "Administrative_Areas": "Cuba",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "7",
+      "Annotation": "Tropical Storm Gerda"
+    },
+    {
+      "Administrative_Areas": "Guatemala",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "11",
+      "Annotation": "Hurricane Hattie"
+    },
+    {
+      "Administrative_Areas": "Honduras",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "1",
+      "Annotation": "Hurricane Hattie"
+    },
+    {
+      "Administrative_Areas": "Cape Verde",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "60",
+      "Annotation": "Hurricane Debbie"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Deaths": [
+    {
+      "Administrative_Area": "Belize",
+      "Locations": [
+        "Belize City"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "307",
+      "Annotation": "Hurricane Hattie"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Texas"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "34",
+      "Annotation": "Hurricane Carla"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Louisiana"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "6",
+      "Annotation": "Hurricane Carla"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Kansas"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "5",
+      "Annotation": "Hurricane Carla"
+    },
+    {
+      "Administrative_Area": "Ireland",
+      "Locations": [
+        "Republic of Ireland",
+        "Northern Ireland"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "18",
+      "Annotation": "Hurricane Debbie"
+    },
+    {
+      "Administrative_Area": "Jamaica",
+      "Locations": [
+        "Western Kingston"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "5",
+      "Annotation": "Tropical Storm Gerda"
+    },
+    {
+      "Administrative_Area": "Cuba",
+      "Locations": [
+        "Eastern Cuba"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "7",
+      "Annotation": "Tropical Storm Gerda"
+    },
+    {
+      "Administrative_Area": "Guatemala",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "11",
+      "Annotation": "Hurricane Hattie"
+    },
+    {
+      "Administrative_Area": "Honduras",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "1",
+      "Annotation": "Hurricane Hattie"
+    },
+    {
+      "Administrative_Area": "Cape Verde",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "60",
+      "Annotation": "Hurricane Debbie"
+    }
+  ],
+  "Total_Summary_Displaced": {
+    "Total_Displaced": "NULL",
+    "Total_Displaced_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Displaced": [
+    {
+      "Administrative_Areas": "Belize",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "over 10,000 people",
+      "Annotation": "Hurricane Hattie"
+    },
+    {
+      "Administrative_Areas": "Jamaica",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "many",
+      "Annotation": "Tropical Storm Gerda"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Displaced": [
+    {
+      "Administrative_Area": "Belize",
+      "Locations": [
+        "Belize City"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "over 10,000 people",
+      "Annotation": "Hurricane Hattie"
+    },
+    {
+      "Administrative_Area": "Jamaica",
+      "Locations": [
+        "western Kingston"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "many",
+      "Annotation": "Tropical Storm Gerda"
+    }
+  ],
+  "Total_Summary_Homeless": {
+    "Total_Homeless": "NULL",
+    "Total_Homeless_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Homeless": [
+    {
+      "Administrative_Areas": [
+        "Honduras"
+      ],
+      "Start_Date": "July 22",
+      "End_Date": "July 24",
+      "Num": "hundreds of people",
+      "Annotation": "Hurricane Anna"
+    },
+    {
+      "Administrative_Areas": [
+        "Belize"
+      ],
+      "Start_Date": "October 31",
+      "End_Date": "November 1",
+      "Num": "over 10,000 people",
+      "Annotation": "Hurricane Hattie"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Homeless": [
+    {
+      "Administrative_Area": "Honduras",
+      "Locations": [
+        "Gracias a Dios Department"
+      ],
+      "Start_Date": "July 22",
+      "End_Date": "July 24",
+      "Num": "hundreds of people",
+      "Annotation": "Hurricane Anna"
+    },
+    {
+      "Administrative_Area": "Belize",
+      "Locations": [
+        "Belize City"
+      ],
+      "Start_Date": "October 31",
+      "End_Date": "November 1",
+      "Num": "over 10,000 people",
+      "Annotation": "Hurricane Hattie"
+    }
+  ],
+  "Total_Summary_Injuries": {
+    "Total_Injuries": "NULL",
+    "Total_Injuries_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Injuries": [
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "200",
+      "Annotation": "Hurricane Carla"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Injuries": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Galveston, Texas"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "200",
+      "Annotation": "Hurricane Carla"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Maine"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "1",
+      "Annotation": "Tropical Storm Six"
+    }
+  ],
+  "Total_Summary_Insured_Damage": {
+    "Total_Insured_Damage": "NULL",
+    "Total_Insured_Damage_Unit": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Insured_Damage_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Insured_Damage": [
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    },
+    {
+      "Administrative_Areas": [
+        "Belize"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Texas"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Louisiana"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    },
+    {
+      "Administrative_Area": "Belize",
+      "Locations": [
+        "Belize City"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Total_Summary_Damage": {
+    "Total_Damage": "$392.34 million",
+    "Total_Damage_Unit": "USD",
+    "Total_Damage_Inflation_Adjusted": "No",
+    "Total_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Damage_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Damage": [
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$325.74 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Carla"
+    },
+    {
+      "Administrative_Areas": [
+        "Belize"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$60.3 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Hattie"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Damage": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Texas"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$300 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Carla"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Louisiana"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$25 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Carla"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "New York"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$6 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Esther"
+    },
+    {
+      "Administrative_Area": "Belize",
+      "Locations": [
+        "Belize City"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$60 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Hattie"
+    },
+    {
+      "Administrative_Area": "Jamaica",
+      "Locations": [
+        "Western Kingston"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Tropical Storm Gerda"
+    },
+    {
+      "Administrative_Area": "Cuba",
+      "Locations": [
+        "Eastern Cuba"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Tropical Storm Gerda"
+    },
+    {
+      "Administrative_Area": "Puerto Rico",
+      "Locations": [
+        "Indiera Baja barrio of Maricao"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Frances"
+    }
+  ],
+  "Main_Event": "Tropical Storm/Cyclone",
+  "Main_Event_Annotation": "Info_Box",
+  "Hazards": "Wind|Flood",
+  "Hazards_Annotation": "Info_Box|Season summary|Hurricane Anna|Hurricane Carla|Hurricane Debbie|Hurricane Esther|Hurricane Hattie",
+  "Start_Date": "June 10, 1961",
+  "End_Date": "November 20, 1961",
+  "Time_Annotation": "Info_Box"
+}

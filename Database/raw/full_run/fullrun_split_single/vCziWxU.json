@@ -1,0 +1,370 @@
+{
+  "Event_ID": "vCziWxU",
+  "Sources": "https://en.wikipedia.org/wiki/Hurricane_Bonnie_(2022)",
+  "Event_Names": "Hurricane Bonnie (2022)",
+  "Total_Summary_Affected": {
+    "Total_Affected": "NULL",
+    "Total_Affected_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Affected": [
+    {
+      "Administrative_Areas": "Costa Rica",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "3,572",
+      "Annotation": "Elsewhere"
+    },
+    {
+      "Administrative_Areas": "Costa Rica",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "8,593 homes",
+      "Annotation": "Elsewhere"
+    },
+    {
+      "Administrative_Areas": "Trinidad and Tobago",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "200,000 customers",
+      "Annotation": "Trinidad and Tobago"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Affected": [
+    {
+      "Administrative_Area": "Trinidad and Tobago",
+      "Locations": [
+        "Tobago",
+        "Grande Riviere",
+        "Monte Video",
+        "Matelot"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "40 homes",
+      "Annotation": "Trinidad and Tobago"
+    },
+    {
+      "Administrative_Area": "Costa Rica",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "3,572",
+      "Annotation": "Elsewhere"
+    },
+    {
+      "Administrative_Area": "Costa Rica",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "8,593 homes",
+      "Annotation": "Elsewhere"
+    },
+    {
+      "Administrative_Area": "Trinidad and Tobago",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "200,000 customers",
+      "Annotation": "Trinidad and Tobago"
+    }
+  ],
+  "Total_Summary_Buildings_Damaged": {
+    "Total_Buildings_Damaged": "NULL",
+    "Total_Buildings_Damaged_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+    {
+      "Administrative_Areas": "Trinidad and Tobago",
+      "Start_Date": "June 28, 2022",
+      "End_Date": "June 29, 2022",
+      "Num": "NULL",
+      "Annotation": "Trinidad and Tobago"
+    },
+    {
+      "Administrative_Areas": "Costa Rica",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Elsewhere"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+    {
+      "Administrative_Area": "Trinidad and Tobago",
+      "Locations": [
+        "Tobago"
+      ],
+      "Start_Date": "June 28, 2022",
+      "End_Date": "June 29, 2022",
+      "Num": "two reports of roof damage, four of downed trees, one of a vehicle accident, and a collapsed home",
+      "Annotation": "Trinidad and Tobago"
+    },
+    {
+      "Administrative_Area": "Trinidad and Tobago",
+      "Locations": [
+        "Grande Riviere"
+      ],
+      "Start_Date": "June 28, 2022",
+      "End_Date": "June 29, 2022",
+      "Num": "At least 40 homes",
+      "Annotation": "Trinidad and Tobago"
+    }
+  ],
+  "Total_Summary_Deaths": {
+    "Total_Deaths": "5",
+    "Total_Deaths_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Deaths": [
+    {
+      "Administrative_Areas": "Nicaragua",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "four",
+      "Annotation": "Elsewhere"
+    },
+    {
+      "Administrative_Areas": "El Salvador",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "one",
+      "Annotation": "Elsewhere"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Deaths": [
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "four",
+      "Annotation": "Elsewhere"
+    },
+    {
+      "Administrative_Area": "El Salvador",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "one",
+      "Annotation": "Elsewhere"
+    }
+  ],
+  "Total_Summary_Displaced": {
+    "Total_Displaced": "NULL",
+    "Total_Displaced_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Displaced": [
+    {
+      "Administrative_Areas": "Costa Rica",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "3,572",
+      "Annotation": "Elsewhere"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Displaced": [
+    {
+      "Administrative_Area": "Costa Rica",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "3,572",
+      "Annotation": "Elsewhere"
+    }
+  ],
+  "Total_Summary_Homeless": {
+    "Total_Homeless": "NULL",
+    "Total_Homeless_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Homeless": [
+    {
+      "Administrative_Areas": "Trinidad and Tobago",
+      "Start_Date": "June 28, 2022",
+      "End_Date": "June 29, 2022",
+      "Num": "NULL",
+      "Annotation": "Trinidad and Tobago"
+    },
+    {
+      "Administrative_Areas": "Costa Rica",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Elsewhere"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Homeless": [
+    {
+      "Administrative_Area": "Trinidad and Tobago",
+      "Locations": [
+        "Tobago"
+      ],
+      "Start_Date": "June 29, 2022",
+      "End_Date": "NULL",
+      "Num": "1",
+      "Annotation": "Trinidad and Tobago"
+    },
+    {
+      "Administrative_Area": "Trinidad and Tobago",
+      "Locations": [
+        "Grande Riviere"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "40",
+      "Annotation": "Trinidad and Tobago"
+    },
+    {
+      "Administrative_Area": "Costa Rica",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Elsewhere"
+    }
+  ],
+  "Total_Summary_Injuries": {
+    "Total_Injuries": "NULL",
+    "Total_Injuries_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Injuries": [
+    {
+      "Administrative_Areas": "Trinidad and Tobago",
+      "Start_Date": "June 28, 2022",
+      "End_Date": "June 29, 2022",
+      "Num": "NULL",
+      "Annotation": "Trinidad and Tobago"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Injuries": [
+    {
+      "Administrative_Area": "Trinidad and Tobago",
+      "Locations": [
+        "Tobago"
+      ],
+      "Start_Date": "June 29, 2022",
+      "End_Date": "June 29, 2022",
+      "Num": "1",
+      "Annotation": "Trinidad and Tobago"
+    }
+  ],
+  "Total_Summary_Insured_Damage": {
+    "Total_Insured_Damage": "NULL",
+    "Total_Insured_Damage_Unit": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Insured_Damage_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Insured_Damage": [
+    {
+      "Administrative_Areas": "NULL",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+    {
+      "Administrative_Area": "NULL",
+      "Locations": "NULL",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Total_Summary_Damage": {
+    "Total_Damage": "$25 million",
+    "Total_Damage_Unit": "USD",
+    "Total_Damage_Inflation_Adjusted": "No",
+    "Total_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Damage_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Damage": [
+    {
+      "Administrative_Areas": "Trinidad and Tobago",
+      "Start_Date": "June 28, 2022",
+      "End_Date": "June 29, 2022",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Trinidad and Tobago"
+    },
+    {
+      "Administrative_Areas": "Mexico",
+      "Start_Date": "July 4, 2022",
+      "End_Date": "July 7, 2022",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Mexico"
+    },
+    {
+      "Administrative_Areas": "Costa Rica",
+      "Start_Date": "July 1, 2022",
+      "End_Date": "July 2, 2022",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Elsewhere"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Damage": [
+    {
+      "Administrative_Area": "Trinidad and Tobago",
+      "Locations": [
+        "Grande Riviere",
+        "Monte Video",
+        "Matelot"
+      ],
+      "Start_Date": "June 28, 2022",
+      "End_Date": "June 29, 2022",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Trinidad and Tobago"
+    }
+  ],
+  "Main_Event": "Tropical Storm/Cyclone",
+  "Main_Event_Annotation": "Info_Box",
+  "Hazards": "Wind|Flood",
+  "Hazards_Annotation": "Info_Box|Trinidad and Tobago|Mexico|Elsewhere",
+  "Start_Date": "July 1, 2022",
+  "End_Date": "July 11, 2022",
+  "Time_Annotation": "Info_Box",
+  "Administrative_Areas": [
+    "Trinidad and Tobago",
+    "Grenada",
+    "Venezuela",
+    "Colombia",
+    "Costa Rica",
+    "Nicaragua",
+    "Panama",
+    "El Salvador",
+    "Mexico"
+  ],
+  "Administrative_Areas_Annotation": "Info_Box"
+}

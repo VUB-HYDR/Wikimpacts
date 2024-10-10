@@ -1,0 +1,890 @@
+{
+  "Event_ID": "7M9ntEn",
+  "Sources": "https://en.wikipedia.org/wiki/Hurricane_Michelle",
+  "Event_Names": "Hurricane Michelle",
+  "Total_Summary_Affected": {
+    "Total_Affected": "NULL",
+    "Total_Affected_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Affected": [
+    {
+      "Administrative_Areas": "Jamaica",
+      "Start_Date": "October 29, 2001",
+      "End_Date": "NULL",
+      "Num": "340 people",
+      "Annotation": "Jamaica"
+    },
+    {
+      "Administrative_Areas": "Honduras",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "100,000 people",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Areas": "Nicaragua",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "6,000 people",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Areas": "Cuba",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "750,000 people",
+      "Annotation": "Cuba"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Affected": [
+    {
+      "Administrative_Area": "Jamaica",
+      "Locations": [
+        "Annotto Bay",
+        "Port Maria",
+        "Portland",
+        "Saint Catherine",
+        "Saint Andrew",
+        "Saint Ann",
+        "Spur Tree Hill",
+        "Spanish River",
+        "Swift River",
+        "Bybrook"
+      ],
+      "Start_Date": "October 29, 2001",
+      "End_Date": "NULL",
+      "Num": "163 evacuees; 6,000 homes without power; 500 homes destroyed; 561 homes damaged; 340 people displaced",
+      "Annotation": "Jamaica"
+    },
+    {
+      "Administrative_Area": "Honduras",
+      "Locations": [
+        "Gracias a Dios Department",
+        "Yoro",
+        "Cuyamapa River"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "100 villages isolated; 27,300 people evacuated; 4,393 people displaced",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "Bonaza",
+        "Rosita",
+        "Siuna",
+        "Puerto Cabezas",
+        "Waspam",
+        "Prinzapolka"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "6,000 people evacuated",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Area": "Cuba",
+      "Locations": [
+        "Pinar del R\u00edo",
+        "La Habana",
+        "Matanzas",
+        "Isla de la Juventud",
+        "Ciego de \u00c1vila",
+        "Havana",
+        "Cayo Largo",
+        "Isla de la Juventud",
+        "Surgidero de Bataban\u00f3"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "590,000 people evacuated; 150,000 people evacuated in Havana; 500 tourists evacuated",
+      "Annotation": "Cuba"
+    }
+  ],
+  "Total_Summary_Buildings_Damaged": {
+    "Total_Buildings_Damaged": "NULL",
+    "Total_Buildings_Damaged_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+    {
+      "Administrative_Areas": "Jamaica",
+      "Start_Date": "October 29, 2001",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Jamaica"
+    },
+    {
+      "Administrative_Areas": "Honduras",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Areas": "Cuba",
+      "Start_Date": "November 4, 2001",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Cuba"
+    },
+    {
+      "Administrative_Areas": "Florida",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Florida"
+    },
+    {
+      "Administrative_Areas": "Bahamas",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Bahamas"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+    {
+      "Administrative_Area": "Jamaica",
+      "Locations": [
+        "Annotto Bay",
+        "Port Maria",
+        "Portland",
+        "Saint Catherine",
+        "Saint Andrew",
+        "Saint Ann",
+        "Spur Tree Hill",
+        "Spanish River",
+        "Swift River",
+        "Bybrook"
+      ],
+      "Start_Date": "October 29, 2001",
+      "End_Date": "NULL",
+      "Num": "163 residences; 6 homes; 30 homes; 500 homes; 561 homes; 1 school; 6 schools",
+      "Annotation": "Jamaica"
+    },
+    {
+      "Administrative_Area": "Honduras",
+      "Locations": [
+        "Gracias a Dios Department",
+        "Yoro",
+        "Cuyamapa River"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "245 homes; 6 bridges",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "Bonaza",
+        "Rosita",
+        "Siuna",
+        "Puerto Cabezas",
+        "Waspam",
+        "Prinzapolka"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Area": "Cuba",
+      "Locations": [
+        "Matanzas",
+        "Villa Clara",
+        "Cienfuegos",
+        "Havana",
+        "Varadero"
+      ],
+      "Start_Date": "November 4, 2001",
+      "End_Date": "NULL",
+      "Num": "10,000 homes; 100,000 homes; 23 buildings",
+      "Annotation": "Cuba"
+    },
+    {
+      "Administrative_Area": "Florida",
+      "Locations": [
+        "Hollywood Beach",
+        "Hallandale Beach",
+        "Sombrero Key",
+        "Bill Baggs Beach",
+        "Palm Beach County"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "2 Chikee huts; vehicles and buildings",
+      "Annotation": "Florida"
+    },
+    {
+      "Administrative_Area": "Bahamas",
+      "Locations": [
+        "Nassau",
+        "New Providence"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "few homes; roof of a shopping center",
+      "Annotation": "Bahamas"
+    }
+  ],
+  "Total_Summary_Deaths": {
+    "Total_Deaths": "48",
+    "Total_Deaths_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Deaths": [
+    {
+      "Administrative_Areas": "Jamaica",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "5",
+      "Annotation": "Jamaica"
+    },
+    {
+      "Administrative_Areas": "Honduras",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "21",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Areas": "Nicaragua",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "16",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Areas": "Cuba",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "5",
+      "Annotation": "Cuba"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Deaths": [
+    {
+      "Administrative_Area": "Jamaica",
+      "Locations": [
+        "Annotto Bay",
+        "Port Maria",
+        "Portland",
+        "Saint Catherine",
+        "Saint Andrew",
+        "Saint Ann"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "5",
+      "Annotation": "Jamaica"
+    },
+    {
+      "Administrative_Area": "Honduras",
+      "Locations": [
+        "Gracias a Dios Department",
+        "Yoro"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "21",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "Bonaza",
+        "Rosita",
+        "Siuna",
+        "Puerto Cabezas",
+        "Waspam",
+        "Prinzapolka"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "16",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Area": "Cuba",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "5",
+      "Annotation": "Cuba"
+    }
+  ],
+  "Total_Summary_Displaced": {
+    "Total_Displaced": "NULL",
+    "Total_Displaced_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Displaced": [
+    {
+      "Administrative_Areas": "Cuba",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "750,000 people",
+      "Annotation": "Cuba"
+    },
+    {
+      "Administrative_Areas": "Honduras",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "100,000 people",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Areas": "Nicaragua",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "6,000 people",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Areas": "Jamaica",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "163 evacuees",
+      "Annotation": "Jamaica"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Displaced": [
+    {
+      "Administrative_Area": "Cuba",
+      "Locations": [
+        "Pinar del R\u00edo",
+        "Havana",
+        "Zapata Peninsula",
+        "Cayo Largo",
+        "Isla de la Juventud",
+        "Surgidero de Bataban\u00f3"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "590,000 people",
+      "Annotation": "Cuba"
+    },
+    {
+      "Administrative_Area": "Honduras",
+      "Locations": [
+        "Gracias a Dios Department",
+        "Yoro"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "27,300 people",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Area": "Jamaica",
+      "Locations": [
+        "Annotto Bay",
+        "Port Maria",
+        "Portland"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "163 evacuees",
+      "Annotation": "Jamaica"
+    }
+  ],
+  "Total_Summary_Homeless": {
+    "Total_Homeless": "NULL",
+    "Total_Homeless_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Homeless": [
+    {
+      "Administrative_Areas": "Jamaica",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "340 people",
+      "Annotation": "Jamaica"
+    },
+    {
+      "Administrative_Areas": "Honduras",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "100,000 people",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Areas": "Nicaragua",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "6,000 people",
+      "Annotation": "Central America"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Homeless": [
+    {
+      "Administrative_Area": "Jamaica",
+      "Locations": [
+        "Annotto Bay",
+        "Port Maria",
+        "Portland",
+        "Saint Catherine",
+        "Saint Andrew",
+        "Saint Ann",
+        "Spur Tree Hill",
+        "Spanish River",
+        "Swift River",
+        "Bybrook"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": [
+        "163 evacuees",
+        "500 homes destroyed",
+        "561 homes damaged"
+      ],
+      "Annotation": "Jamaica"
+    },
+    {
+      "Administrative_Area": "Honduras",
+      "Locations": [
+        "Gracias a Dios Department",
+        "Yoro"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": [
+        "100 villages isolated",
+        "4,393 people displaced",
+        "245 homes damaged"
+      ],
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "Bonaza",
+        "Rosita",
+        "Siuna",
+        "Puerto Cabezas",
+        "Waspam",
+        "Prinzapolka"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": [
+        "NULL"
+      ],
+      "Annotation": "Central America"
+    }
+  ],
+  "Total_Summary_Injuries": {
+    "Total_Injuries": "NULL",
+    "Total_Injuries_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Injuries": [
+    {
+      "Administrative_Areas": "Jamaica",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Jamaica"
+    },
+    {
+      "Administrative_Areas": "Honduras",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Areas": "Nicaragua",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Areas": "Costa Rica",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Areas": "Cayman Islands",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Cayman Islands"
+    },
+    {
+      "Administrative_Areas": "Cuba",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Cuba"
+    },
+    {
+      "Administrative_Areas": "Florida",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Florida"
+    },
+    {
+      "Administrative_Areas": "Bahamas",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Bahamas"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Injuries": [
+    {
+      "Administrative_Area": "Jamaica",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Jamaica"
+    },
+    {
+      "Administrative_Area": "Honduras",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Area": "Costa Rica",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Area": "Cayman Islands",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Cayman Islands"
+    },
+    {
+      "Administrative_Area": "Cuba",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Cuba"
+    },
+    {
+      "Administrative_Area": "Florida",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Florida"
+    },
+    {
+      "Administrative_Area": "Bahamas",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Bahamas"
+    }
+  ],
+  "Total_Summary_Insured_Damage": {
+    "Total_Insured_Damage": "NULL",
+    "Total_Insured_Damage_Unit": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Insured_Damage_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Insured_Damage": [
+    {
+      "Administrative_Areas": "NULL",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+    {
+      "Administrative_Area": "NULL",
+      "Locations": "NULL",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Total_Summary_Damage": {
+    "Total_Damage": "$2.43 billion",
+    "Total_Damage_Unit": "USD",
+    "Total_Damage_Inflation_Adjusted": "Yes",
+    "Total_Damage_Inflation_Adjusted_Year": "2024",
+    "Total_Damage_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Damage": [
+    {
+      "Administrative_Areas": [
+        "Jamaica"
+      ],
+      "Start_Date": "October 29, 2001",
+      "End_Date": "November 6, 2001",
+      "Num": "$18 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Jamaica"
+    },
+    {
+      "Administrative_Areas": [
+        "Honduras"
+      ],
+      "Start_Date": "October 29, 2001",
+      "End_Date": "November 6, 2001",
+      "Num": "$5 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Areas": [
+        "Nicaragua"
+      ],
+      "Start_Date": "October 29, 2001",
+      "End_Date": "November 6, 2001",
+      "Num": "$1 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Areas": [
+        "Costa Rica"
+      ],
+      "Start_Date": "October 29, 2001",
+      "End_Date": "November 6, 2001",
+      "Num": "$1 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Areas": [
+        "Cayman Islands"
+      ],
+      "Start_Date": "October 29, 2001",
+      "End_Date": "November 6, 2001",
+      "Num": "$60 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Cayman Islands"
+    },
+    {
+      "Administrative_Areas": [
+        "Cuba"
+      ],
+      "Start_Date": "October 29, 2001",
+      "End_Date": "November 6, 2001",
+      "Num": "$1.8 billion",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Cuba"
+    },
+    {
+      "Administrative_Areas": [
+        "Florida"
+      ],
+      "Start_Date": "October 29, 2001",
+      "End_Date": "November 6, 2001",
+      "Num": "$50,000",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Florida"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Damage": [
+    {
+      "Administrative_Area": "Jamaica",
+      "Locations": [
+        "Annotto Bay",
+        "Port Maria",
+        "Portland",
+        "Saint Catherine",
+        "Saint Andrew",
+        "Saint Ann",
+        "Spur Tree Hill",
+        "Spanish River",
+        "Swift River",
+        "Bybrook"
+      ],
+      "Start_Date": "October 29, 2001",
+      "End_Date": "November 6, 2001",
+      "Num": "$18 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Jamaica"
+    },
+    {
+      "Administrative_Area": "Honduras",
+      "Locations": [
+        "Gracias a Dios Department",
+        "Col\u00f3n",
+        "Atl\u00e1ntida",
+        "Yoro",
+        "Cort\u00e9s",
+        "Santa B\u00e1rbara"
+      ],
+      "Start_Date": "October 29, 2001",
+      "End_Date": "November 6, 2001",
+      "Num": "$5 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "Bonaza",
+        "Rosita",
+        "Siuna",
+        "Puerto Cabezas",
+        "Waspam",
+        "Prinzapolka"
+      ],
+      "Start_Date": "October 29, 2001",
+      "End_Date": "November 6, 2001",
+      "Num": "$1 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Area": "Costa Rica",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "October 29, 2001",
+      "End_Date": "November 6, 2001",
+      "Num": "$1 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Area": "Cayman Islands",
+      "Locations": [
+        "Grand Cayman",
+        "Cayman Brac"
+      ],
+      "Start_Date": "October 29, 2001",
+      "End_Date": "November 6, 2001",
+      "Num": "$60 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Cayman Islands"
+    },
+    {
+      "Administrative_Area": "Cuba",
+      "Locations": [
+        "Cayo Largo del Sur",
+        "Isle of Youth",
+        "Matanzas",
+        "Villa Clara",
+        "Cienfuegos",
+        "Havana",
+        "Varadero"
+      ],
+      "Start_Date": "October 29, 2001",
+      "End_Date": "November 6, 2001",
+      "Num": "$1.8 billion",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Cuba"
+    },
+    {
+      "Administrative_Area": "Florida",
+      "Locations": [
+        "Hollywood Beach",
+        "Hallandale Beach",
+        "Sombrero Key",
+        "Bill Baggs Beach",
+        "Palm Beach County"
+      ],
+      "Start_Date": "October 29, 2001",
+      "End_Date": "November 6, 2001",
+      "Num": "$50,000",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Florida"
+    }
+  ],
+  "Main_Event": "Tropical Storm/Cyclone",
+  "Main_Event_Annotation": "Info_Box",
+  "Hazards": "Wind|Flood",
+  "Hazards_Annotation": "Info_Box|Impact",
+  "Start_Date": "October 29, 2001",
+  "End_Date": "November 6, 2001",
+  "Time_Annotation": "Info_Box",
+  "Administrative_Areas": [
+    "Jamaica",
+    "Costa Rica",
+    "Nicaragua",
+    "Honduras",
+    "Cayman Islands",
+    "Cuba",
+    "Florida",
+    "The Bahamas",
+    "Turks and Caicos Islands",
+    "Bermuda"
+  ],
+  "Administrative_Areas_Annotation": "Info_Box"
+}

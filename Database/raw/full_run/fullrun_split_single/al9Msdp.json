@@ -1,0 +1,667 @@
+{
+  "Event_ID": "al9Msdp",
+  "Sources": "https://en.wikipedia.org/wiki/Hurricane_Sandra_(2015)",
+  "Event_Names": "Hurricane Sandra (2015)",
+  "Total_Summary_Affected": {
+    "Total_Affected": "NULL",
+    "Total_Affected_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Affected": [
+    {
+      "Administrative_Areas": [
+        "Nicaragua"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "56 families",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Areas": [
+        "Honduras"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Areas": [
+        "El Salvador"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Areas": [
+        "Mexico"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "180 people",
+      "Annotation": "Mexico"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Affected": [
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "Managua"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "55 homes affected, 1 home destroyed",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "Nueva Segovia Department"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "5 people injured",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Area": "Honduras",
+      "Locations": [
+        "Cucuyagua"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "1 baby killed, 4 people injured",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Area": "El Salvador",
+      "Locations": [
+        "Nueva Esparta"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "2 people drowned",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Area": "El Salvador",
+      "Locations": [
+        "Ozatl\u00e1n"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "1 person killed",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Area": "El Salvador",
+      "Locations": [
+        "Jiquilisco"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "14 families evacuated",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Dallas\u2013Fort Worth metroplex"
+      ],
+      "Start_Date": "November 27",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Boca Camichin, Nayarit"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "180 people evacuated",
+      "Annotation": "Mexico"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Cabo San Lucas"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "3 people injured",
+      "Annotation": "Mexico"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Chihuahua"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Mexico"
+    }
+  ],
+  "Total_Summary_Buildings_Damaged": {
+    "Total_Buildings_Damaged": "NULL",
+    "Total_Buildings_Damaged_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+    {
+      "Administrative_Areas": "Nicaragua",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "55 homes",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Areas": "El Salvador",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Areas": "Mexico",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Mexico"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "Managua"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "55 homes",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Area": "El Salvador",
+      "Locations": [
+        "Jiquilisco"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Cabo San Lucas"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Mexico"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "San Jos\u00e9 del Cabo"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Mexico"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Chihuahua"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Mexico"
+    }
+  ],
+  "Total_Summary_Deaths": {
+    "Total_Deaths": "4",
+    "Total_Deaths_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Deaths": [
+    {
+      "Administrative_Areas": "El Salvador",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "3",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Areas": "Honduras",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "1",
+      "Annotation": "Preparations and impact"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Deaths": [
+    {
+      "Administrative_Area": "El Salvador",
+      "Locations": [
+        "Nueva Esparta",
+        "Ozatl\u00e1n"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "2",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Area": "El Salvador",
+      "Locations": [
+        "Ozatl\u00e1n"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "1",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Area": "Honduras",
+      "Locations": [
+        "Cucuyagua"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "1",
+      "Annotation": "Preparations and impact"
+    }
+  ],
+  "Total_Summary_Displaced": {
+    "Total_Displaced": "NULL",
+    "Total_Displaced_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Displaced": [
+    {
+      "Administrative_Areas": "Nicaragua",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "56 families",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Areas": "El Salvador",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "14 families",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Areas": "Mexico",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "180 people",
+      "Annotation": "Mexico"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Displaced": [
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "Managua"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "56 families",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Area": "El Salvador",
+      "Locations": [
+        "Jiquilisco"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "14 families",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Boca Camichin, Nayarit"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "180 people",
+      "Annotation": "Mexico"
+    }
+  ],
+  "Total_Summary_Homeless": {
+    "Total_Homeless": "NULL",
+    "Total_Homeless_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Homeless": [
+    {
+      "Administrative_Areas": "Nicaragua",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "56 families",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Areas": "El Salvador",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "14 families",
+      "Annotation": "Preparations and impact"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Homeless": [
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "Managua"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "55 homes affected and 1 destroyed",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Area": "El Salvador",
+      "Locations": [
+        "Jiquilisco"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "14 families",
+      "Annotation": "Preparations and impact"
+    }
+  ],
+  "Total_Summary_Injuries": {
+    "Total_Injuries": "NULL",
+    "Total_Injuries_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Injuries": [
+    {
+      "Administrative_Areas": "Nicaragua",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "Five",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Areas": "Honduras",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "Four",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Areas": "Mexico",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "Three",
+      "Annotation": "Mexico"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Injuries": [
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "Nueva Segovia Department"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "Five",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Area": "Honduras",
+      "Locations": [
+        "Cucuyagua"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "Four",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Cabo San Lucas"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "Three",
+      "Annotation": "Mexico"
+    }
+  ],
+  "Total_Summary_Insured_Damage": {
+    "Total_Insured_Damage": "NULL",
+    "Total_Insured_Damage_Unit": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Insured_Damage_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Insured_Damage": [
+    {
+      "Administrative_Areas": [
+        "Nicaragua",
+        "Honduras",
+        "El Salvador",
+        "Mexico"
+      ],
+      "Start_Date": "November 23, 2015",
+      "End_Date": "November 29, 2015",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Preparations and impact"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "Managua"
+      ],
+      "Start_Date": "November 23, 2015",
+      "End_Date": "November 29, 2015",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Area": "Honduras",
+      "Locations": [
+        "Cucuyagua"
+      ],
+      "Start_Date": "November 23, 2015",
+      "End_Date": "November 29, 2015",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Area": "El Salvador",
+      "Locations": [
+        "Nueva Esparta",
+        "Ozatl\u00e1n",
+        "Jiquilisco"
+      ],
+      "Start_Date": "November 23, 2015",
+      "End_Date": "November 29, 2015",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Cabo San Lucas",
+        "San Jos\u00e9 del Cabo",
+        "La Paz",
+        "Mazatl\u00e1n",
+        "Boca Camichin",
+        "Socorro Island",
+        "Chihuahua"
+      ],
+      "Start_Date": "November 23, 2015",
+      "End_Date": "November 29, 2015",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Mexico"
+    }
+  ],
+  "Total_Summary_Damage": {
+    "Total_Damage": "Minimal",
+    "Total_Damage_Unit": "NULL",
+    "Total_Damage_Inflation_Adjusted": "No",
+    "Total_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Damage_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Damage": [
+    {
+      "Administrative_Areas": [
+        "Nicaragua"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Areas": [
+        "Honduras"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Areas": [
+        "El Salvador"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Areas": [
+        "Mexico"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Mexico"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Damage": [
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "Managua"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Area": "Honduras",
+      "Locations": [
+        "Cucuyagua"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Area": "El Salvador",
+      "Locations": [
+        "Nueva Esparta",
+        "Ozatl\u00e1n",
+        "Jiquilisco"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Preparations and impact"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Cabo San Lucas",
+        "San Jos\u00e9 del Cabo",
+        "La Paz",
+        "Mazatl\u00e1n",
+        "Boca Camichin",
+        "Socorro Island",
+        "Chihuahua"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Mexico"
+    }
+  ],
+  "Main_Event": "Tropical Storm/Cyclone",
+  "Main_Event_Annotation": "Info_Box",
+  "Hazards": "Wind|Flood|Lightning",
+  "Hazards_Annotation": "Info_Box|Meteorological history|Preparations and impact",
+  "Start_Date": "November 23, 2015",
+  "End_Date": "November 29, 2015",
+  "Time_Annotation": "Info_Box",
+  "Administrative_Areas": [
+    "Central America",
+    "Mexico"
+  ],
+  "Administrative_Areas_Annotation": "Info_Box"
+}

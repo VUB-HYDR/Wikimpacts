@@ -1,0 +1,514 @@
+{
+  "Event_ID": "tHE2Cf5",
+  "Sources": "https://en.wikipedia.org/wiki/Cyclone_Batsirai",
+  "Event_Names": "Cyclone Batsirai",
+  "Total_Summary_Affected": {
+    "Total_Affected": "4.4 million",
+    "Total_Affected_Annotation": "Madagascar"
+  },
+  "Instance_Per_Administrative_Areas_Affected": [
+    {
+      "Administrative_Areas": [
+        "Madagascar"
+      ],
+      "Start_Date": "5 February 2022",
+      "End_Date": "NULL",
+      "Num": "4.4 million",
+      "Annotation": "Madagascar"
+    },
+    {
+      "Administrative_Areas": [
+        "Mauritius"
+      ],
+      "Start_Date": "2 February 2022",
+      "End_Date": "NULL",
+      "Num": "454 people, in 182 affected families",
+      "Annotation": "Mauritius"
+    },
+    {
+      "Administrative_Areas": [
+        "R\u00e9union"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "36,000 people",
+      "Annotation": "R\u00e9union"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Affected": [
+    {
+      "Administrative_Area": "Madagascar",
+      "Locations": [
+        "Mananjary"
+      ],
+      "Start_Date": "5 February 2022",
+      "End_Date": "NULL",
+      "Num": "26,000 displaced",
+      "Annotation": "Madagascar"
+    },
+    {
+      "Administrative_Area": "Madagascar",
+      "Locations": [
+        "Ikongo"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "87 deaths",
+      "Annotation": "Madagascar"
+    },
+    {
+      "Administrative_Area": "Madagascar",
+      "Locations": [
+        "Nosy Varika"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "95% of buildings destroyed",
+      "Annotation": "Madagascar"
+    },
+    {
+      "Administrative_Area": "Madagascar",
+      "Locations": [
+        "Fianarantsoa"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Madagascar"
+    },
+    {
+      "Administrative_Area": "Madagascar",
+      "Locations": [
+        "Antsirabe"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Madagascar"
+    },
+    {
+      "Administrative_Area": "Madagascar",
+      "Locations": [
+        "Vatovavy",
+        "Fitovinany",
+        "Atsimo Atisinanana"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "75,000 people",
+      "Annotation": "Madagascar"
+    },
+    {
+      "Administrative_Area": "Mauritius",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "2 February 2022",
+      "End_Date": "NULL",
+      "Num": "138 people",
+      "Annotation": "Mauritius"
+    },
+    {
+      "Administrative_Area": "R\u00e9union",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "7 February 2022",
+      "Num": "10,000 people",
+      "Annotation": "R\u00e9union"
+    }
+  ],
+  "Total_Summary_Buildings_Damaged": {
+    "Total_Buildings_Damaged": "NULL",
+    "Total_Buildings_Damaged_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+    {
+      "Administrative_Areas": [
+        "Madagascar"
+      ],
+      "Start_Date": "5 February 2022",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Madagascar"
+    },
+    {
+      "Administrative_Areas": [
+        "Mauritius"
+      ],
+      "Start_Date": "2 February 2022",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Mauritius"
+    },
+    {
+      "Administrative_Areas": [
+        "R\u00e9union"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "R\u00e9union"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+    {
+      "Administrative_Area": "Madagascar",
+      "Locations": [
+        "Mananjary",
+        "Manakara"
+      ],
+      "Start_Date": "5 February 2022",
+      "End_Date": "NULL",
+      "Num": "over 6,000 buildings",
+      "Annotation": "Madagascar"
+    },
+    {
+      "Administrative_Area": "Madagascar",
+      "Locations": [
+        "Nosy Varika"
+      ],
+      "Start_Date": "5 February 2022",
+      "End_Date": "NULL",
+      "Num": "95% of buildings",
+      "Annotation": "Madagascar"
+    },
+    {
+      "Administrative_Area": "Madagascar",
+      "Locations": [
+        "Fianarantsoa"
+      ],
+      "Start_Date": "5 February 2022",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Madagascar"
+    },
+    {
+      "Administrative_Area": "Madagascar",
+      "Locations": [
+        "Ikongo"
+      ],
+      "Start_Date": "5 February 2022",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Madagascar"
+    },
+    {
+      "Administrative_Area": "Madagascar",
+      "Locations": [
+        "Vatovavy",
+        "Fitovinany",
+        "Atsimo Atisinanana"
+      ],
+      "Start_Date": "5 February 2022",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Madagascar"
+    },
+    {
+      "Administrative_Area": "Mauritius",
+      "Locations": [
+        "Mah\u00e9bourg"
+      ],
+      "Start_Date": "2 February 2022",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Mauritius"
+    }
+  ],
+  "Total_Summary_Deaths": {
+    "Total_Deaths": "123",
+    "Total_Deaths_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Deaths": [
+    {
+      "Administrative_Areas": [
+        "Madagascar"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "121",
+      "Annotation": "Madagascar"
+    },
+    {
+      "Administrative_Areas": [
+        "Mauritius"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "2",
+      "Annotation": "Mauritius"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Deaths": [
+    {
+      "Administrative_Area": "Madagascar",
+      "Locations": [
+        "Ikongo"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "87",
+      "Annotation": "Madagascar"
+    }
+  ],
+  "Total_Summary_Displaced": {
+    "Total_Displaced": "112,000",
+    "Total_Displaced_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Displaced": [
+    {
+      "Administrative_Areas": [
+        "Madagascar"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "112,000",
+      "Annotation": "Madagascar"
+    },
+    {
+      "Administrative_Areas": [
+        "Mauritius"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "138",
+      "Annotation": "Mauritius"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Displaced": [
+    {
+      "Administrative_Area": "Madagascar",
+      "Locations": [
+        "Mananjary"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "26,000",
+      "Annotation": "Madagascar"
+    },
+    {
+      "Administrative_Area": "Madagascar",
+      "Locations": [
+        "Ikongo"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "87",
+      "Annotation": "Madagascar"
+    },
+    {
+      "Administrative_Area": "Mauritius",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "138",
+      "Annotation": "Mauritius"
+    }
+  ],
+  "Total_Summary_Homeless": {
+    "Total_Homeless": "91,000",
+    "Total_Homeless_Annotation": "Madagascar"
+  },
+  "Instance_Per_Administrative_Areas_Homeless": [
+    {
+      "Administrative_Areas": "Madagascar",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "91,000",
+      "Annotation": "Madagascar"
+    },
+    {
+      "Administrative_Areas": "Mauritius",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "138",
+      "Annotation": "Mauritius"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Homeless": [
+    {
+      "Administrative_Area": "Madagascar",
+      "Locations": [
+        "Mananjary"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "26,000",
+      "Annotation": "Madagascar"
+    },
+    {
+      "Administrative_Area": "Madagascar",
+      "Locations": [
+        "Nosy Varika"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "95% of buildings destroyed",
+      "Annotation": "Madagascar"
+    },
+    {
+      "Administrative_Area": "Madagascar",
+      "Locations": [
+        "Ikongo"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "87",
+      "Annotation": "Madagascar"
+    },
+    {
+      "Administrative_Area": "Madagascar",
+      "Locations": [
+        "Fitovinany"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "Several communities",
+      "Annotation": "Madagascar"
+    },
+    {
+      "Administrative_Area": "Madagascar",
+      "Locations": [
+        "Vatovavy",
+        "Fitovinany",
+        "Atsimo Atisinanana"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "75,000",
+      "Annotation": "Madagascar"
+    },
+    {
+      "Administrative_Area": "Mauritius",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "138",
+      "Annotation": "Mauritius"
+    }
+  ],
+  "Total_Summary_Injuries": {
+    "Total_Injuries": "NULL",
+    "Total_Injuries_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Injuries": [
+    {
+      "Administrative_Areas": "R\u00e9union",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "Several people",
+      "Annotation": "R\u00e9union"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Injuries": [
+    {
+      "Administrative_Area": "R\u00e9union",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "10 people",
+      "Annotation": "R\u00e9union"
+    }
+  ],
+  "Total_Summary_Insured_Damage": {
+    "Total_Insured_Damage": "NULL",
+    "Total_Insured_Damage_Unit": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Insured_Damage_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Insured_Damage": [
+    {
+      "Administrative_Areas": "NULL",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+    {
+      "Administrative_Area": "NULL",
+      "Locations": "NULL",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Total_Summary_Damage": {
+    "Total_Damage": "$190 million",
+    "Total_Damage_Unit": "USD",
+    "Total_Damage_Inflation_Adjusted": "No",
+    "Total_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Damage_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Damage": [
+    {
+      "Administrative_Areas": [
+        "Madagascar"
+      ],
+      "Start_Date": "5 February 2022",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Madagascar"
+    },
+    {
+      "Administrative_Areas": [
+        "R\u00e9union"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$53.3 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "R\u00e9union"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Damage": [
+    {
+      "Administrative_Area": "R\u00e9union",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$53.3 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "R\u00e9union"
+    }
+  ],
+  "Main_Event": "Tropical Storm/Cyclone",
+  "Main_Event_Annotation": "Info_Box",
+  "Hazards": "Wind|Flood",
+  "Hazards_Annotation": "Info_Box|Madagascar",
+  "Start_Date": "24 January 2022",
+  "End_Date": "11 February 2022",
+  "Time_Annotation": "Info_Box",
+  "Administrative_Areas": [
+    "Mauritius",
+    "Reunion",
+    "Madagascar"
+  ],
+  "Administrative_Areas_Annotation": "Info_Box"
+}

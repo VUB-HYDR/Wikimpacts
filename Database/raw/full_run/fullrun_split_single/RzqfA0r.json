@@ -1,0 +1,833 @@
+{
+  "Event_ID": "RzqfA0r",
+  "Sources": "https://en.wikipedia.org/wiki/2014_Southeast_Europe_floods",
+  "Event_Names": "2014 Southeast Europe floods",
+  "Total_Summary_Affected": {
+    "Total_Affected": "over 1.6 million",
+    "Total_Affected_Annotation": "2014 Southeast Europe floods"
+  },
+  "Instance_Per_Administrative_Areas_Affected": [
+    {
+      "Administrative_Areas": "Serbia",
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "over 1.6 million",
+      "Annotation": "2014 Southeast Europe floods"
+    },
+    {
+      "Administrative_Areas": "Bosnia and Herzegovina",
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "over 1.6 million",
+      "Annotation": "2014 Southeast Europe floods"
+    },
+    {
+      "Administrative_Areas": "Croatia",
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "around 15,000",
+      "Annotation": "Croatia"
+    },
+    {
+      "Administrative_Areas": "Romania",
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "8,000",
+      "Annotation": "Romania"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Affected": [
+    {
+      "Administrative_Area": "Serbia",
+      "Locations": [
+        "Obrenovac",
+        "Krupanj",
+        "Rebelj",
+        "Mali Zvornik",
+        "\u0160abac",
+        "Sremska Mitrovica",
+        "Para\u0107in",
+        "Petrovac na Mlavi",
+        "Svilajnac",
+        "Smederevska Palanka"
+      ],
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "30,000",
+      "Annotation": "Serbia"
+    },
+    {
+      "Administrative_Area": "Bosnia and Herzegovina",
+      "Locations": [
+        "Doboj",
+        "Maglaj",
+        "Zavidovi\u0107i",
+        "\u0160amac",
+        "Pari\u0107i",
+        "Hrasno Donje",
+        "Kalesija"
+      ],
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "NULL",
+      "Annotation": "Bosnia and Herzegovina"
+    },
+    {
+      "Administrative_Area": "Croatia",
+      "Locations": [
+        "Gunja",
+        "Rajevo Selo",
+        "Ra\u010dinovci",
+        "Slavonski \u0160amac",
+        "Hrvatska Kostajnica",
+        "Dvor"
+      ],
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "15,000",
+      "Annotation": "Croatia"
+    },
+    {
+      "Administrative_Area": "Romania",
+      "Locations": [
+        "Vrancea County",
+        "Bucharest"
+      ],
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "8,000",
+      "Annotation": "Romania"
+    }
+  ],
+  "Total_Summary_Buildings_Damaged": {
+    "Total_Buildings_Damaged": "NULL",
+    "Total_Buildings_Damaged_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+    {
+      "Administrative_Areas": "Serbia",
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "NULL",
+      "Annotation": "Serbia"
+    },
+    {
+      "Administrative_Areas": "Bosnia and Herzegovina",
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "NULL",
+      "Annotation": "Bosnia and Herzegovina"
+    },
+    {
+      "Administrative_Areas": "Croatia",
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "NULL",
+      "Annotation": "Croatia"
+    },
+    {
+      "Administrative_Areas": "Romania",
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "NULL",
+      "Annotation": "Romania"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+    {
+      "Administrative_Area": "Serbia",
+      "Locations": [
+        "Obrenovac",
+        "Krupanj",
+        "Rebelj",
+        "Mali Zvornik",
+        "\u0160abac",
+        "Sremska Mitrovica",
+        "Para\u0107in",
+        "Petrovac na Mlavi",
+        "Svilajnac",
+        "Smederevska Palanka"
+      ],
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "500 houses were seriously damaged and at least 20 houses are completely uninhabitable",
+      "Annotation": "Serbia"
+    },
+    {
+      "Administrative_Area": "Bosnia and Herzegovina",
+      "Locations": [
+        "Doboj",
+        "Maglaj",
+        "Zavidovi\u0107i",
+        "\u0160amac",
+        "Pari\u0107i in Hrasno Donje"
+      ],
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "NULL",
+      "Annotation": "Bosnia and Herzegovina"
+    },
+    {
+      "Administrative_Area": "Croatia",
+      "Locations": [
+        "Gunja",
+        "Rajevo Selo",
+        "Ra\u010dinovci",
+        "Slavonski \u0160amac",
+        "Hrvatska Kostajnica",
+        "Dvor"
+      ],
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "NULL",
+      "Annotation": "Croatia"
+    },
+    {
+      "Administrative_Area": "Romania",
+      "Locations": [
+        "Vrancea County",
+        "Bucharest"
+      ],
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "NULL",
+      "Annotation": "Romania"
+    }
+  ],
+  "Total_Summary_Deaths": {
+    "Total_Deaths": "At least 86",
+    "Total_Deaths_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Deaths": [
+    {
+      "Administrative_Areas": "Serbia",
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "57",
+      "Annotation": "Info_Box"
+    },
+    {
+      "Administrative_Areas": "Bosnia and Herzegovina",
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "24",
+      "Annotation": "Info_Box"
+    },
+    {
+      "Administrative_Areas": "Croatia",
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "2",
+      "Annotation": "Info_Box"
+    },
+    {
+      "Administrative_Areas": "Romania",
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "2",
+      "Annotation": "Info_Box"
+    },
+    {
+      "Administrative_Areas": "Slovakia",
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "1",
+      "Annotation": "Info_Box"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Deaths": [
+    {
+      "Administrative_Area": "Serbia",
+      "Locations": [
+        "Obrenovac"
+      ],
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "NULL",
+      "Annotation": "Serbia"
+    },
+    {
+      "Administrative_Area": "Bosnia and Herzegovina",
+      "Locations": [
+        "Doboj",
+        "\u0160amac",
+        "Modri\u010da",
+        "Bijeljina",
+        "Vlasenica",
+        "Donji \u017dabar"
+      ],
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "17",
+      "Annotation": "Bosnia and Herzegovina"
+    },
+    {
+      "Administrative_Area": "Bosnia and Herzegovina",
+      "Locations": [
+        "Republika Srpska"
+      ],
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "17",
+      "Annotation": "Bosnia and Herzegovina"
+    },
+    {
+      "Administrative_Area": "Bosnia and Herzegovina",
+      "Locations": [
+        "Federation"
+      ],
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "7",
+      "Annotation": "Bosnia and Herzegovina"
+    },
+    {
+      "Administrative_Area": "Romania",
+      "Locations": [
+        "Vrancea County"
+      ],
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "1",
+      "Annotation": "Romania"
+    }
+  ],
+  "Total_Summary_Displaced": {
+    "Total_Displaced": "hundreds of thousands",
+    "Total_Displaced_Annotation": "2014 Southeast Europe floods"
+  },
+  "Instance_Per_Administrative_Areas_Displaced": [
+    {
+      "Administrative_Areas": "Serbia",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Serbia"
+    },
+    {
+      "Administrative_Areas": "Bosnia and Herzegovina",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Bosnia and Herzegovina"
+    },
+    {
+      "Administrative_Areas": "Croatia",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Croatia"
+    },
+    {
+      "Administrative_Areas": "Romania",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Romania"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Displaced": [
+    {
+      "Administrative_Area": "Serbia",
+      "Locations": [
+        "Obrenovac"
+      ],
+      "Start_Date": "15 May 2014",
+      "End_Date": "16 May 2014",
+      "Num": "30,000",
+      "Annotation": "Serbia"
+    },
+    {
+      "Administrative_Area": "Serbia",
+      "Locations": [
+        "Krupanj"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "18 May 2014",
+      "Num": "NULL",
+      "Annotation": "Serbia"
+    },
+    {
+      "Administrative_Area": "Croatia",
+      "Locations": [
+        "Gunja",
+        "Rajevo Selo",
+        "Ra\u010dinovci"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "19 May 2014",
+      "Num": "15,000",
+      "Annotation": "Croatia"
+    },
+    {
+      "Administrative_Area": "Romania",
+      "Locations": [
+        "125 villages"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "8,000",
+      "Annotation": "Romania"
+    }
+  ],
+  "Total_Summary_Homeless": {
+    "Total_Homeless": "hundreds of thousands",
+    "Total_Homeless_Annotation": "2014 Southeast Europe floods"
+  },
+  "Instance_Per_Administrative_Areas_Homeless": [
+    {
+      "Administrative_Areas": "Serbia",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Serbia"
+    },
+    {
+      "Administrative_Areas": "Bosnia and Herzegovina",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Bosnia and Herzegovina"
+    },
+    {
+      "Administrative_Areas": "Croatia",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Croatia"
+    },
+    {
+      "Administrative_Areas": "Romania",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Romania"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Homeless": [
+    {
+      "Administrative_Area": "Serbia",
+      "Locations": [
+        "Obrenovac"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "30,000",
+      "Annotation": "Serbia"
+    },
+    {
+      "Administrative_Area": "Serbia",
+      "Locations": [
+        "Krupanj"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "500 houses seriously damaged",
+      "Annotation": "Serbia"
+    },
+    {
+      "Administrative_Area": "Serbia",
+      "Locations": [
+        "Rebelj"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Serbia"
+    },
+    {
+      "Administrative_Area": "Bosnia and Herzegovina",
+      "Locations": [
+        "Pari\u0107i in Hrasno Donje"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Bosnia and Herzegovina"
+    },
+    {
+      "Administrative_Area": "Croatia",
+      "Locations": [
+        "Gunja",
+        "Rajevo Selo",
+        "Ra\u010dinovci"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "15,000",
+      "Annotation": "Croatia"
+    },
+    {
+      "Administrative_Area": "Romania",
+      "Locations": [
+        "125 villages"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Romania"
+    }
+  ],
+  "Total_Summary_Injuries": {
+    "Total_Injuries": "NULL",
+    "Total_Injuries_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Injuries": [
+    {
+      "Administrative_Areas": "Serbia",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Serbia"
+    },
+    {
+      "Administrative_Areas": "Bosnia and Herzegovina",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Bosnia and Herzegovina"
+    },
+    {
+      "Administrative_Areas": "Croatia",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Croatia"
+    },
+    {
+      "Administrative_Areas": "Romania",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Romania"
+    },
+    {
+      "Administrative_Areas": "Slovakia",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Slovakia"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Injuries": [
+    {
+      "Administrative_Area": "Serbia",
+      "Locations": [
+        "Obrenovac",
+        "Krupanj",
+        "Rebelj",
+        "Mali Zvornik",
+        "\u0160abac",
+        "Sremska Mitrovica",
+        "Para\u0107in",
+        "Petrovac na Mlavi",
+        "Svilajnac",
+        "Smederevska Palanka"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Serbia"
+    },
+    {
+      "Administrative_Area": "Bosnia and Herzegovina",
+      "Locations": [
+        "Doboj",
+        "Maglaj",
+        "Zavidovi\u0107i",
+        "\u0160amac",
+        "Pari\u0107i",
+        "Republika Srpska",
+        "Federation"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Bosnia and Herzegovina"
+    },
+    {
+      "Administrative_Area": "Croatia",
+      "Locations": [
+        "Rajevo Selo",
+        "Ra\u010dinovci",
+        "Gunja",
+        "Slavonski \u0160amac",
+        "Hrvatska Kostajnica",
+        "Dvor"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Croatia"
+    },
+    {
+      "Administrative_Area": "Romania",
+      "Locations": [
+        "Vrancea County",
+        "Bucharest"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Romania"
+    },
+    {
+      "Administrative_Area": "Slovakia",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Slovakia"
+    }
+  ],
+  "Total_Summary_Insured_Damage": {
+    "Total_Insured_Damage": "NULL",
+    "Total_Insured_Damage_Unit": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Insured_Damage_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Insured_Damage": [
+    {
+      "Administrative_Areas": "NULL",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+    {
+      "Administrative_Area": "NULL",
+      "Locations": "NULL",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Total_Summary_Damage": {
+    "Total_Damage": "More than one billion euros",
+    "Total_Damage_Unit": "EUR",
+    "Total_Damage_Inflation_Adjusted": "No",
+    "Total_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Damage_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Damage": [
+    {
+      "Administrative_Areas": "Serbia",
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "1.55 billion euros",
+      "Num_Unit": "EUR",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Affected regions"
+    },
+    {
+      "Administrative_Areas": "Bosnia and Herzegovina",
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "Damage could exceed that of the Bosnian War",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Affected regions"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Damage": [
+    {
+      "Administrative_Area": "Serbia",
+      "Locations": [
+        "Obrenovac"
+      ],
+      "Start_Date": "15 May 2014",
+      "End_Date": "16 May 2014",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Serbia"
+    },
+    {
+      "Administrative_Area": "Serbia",
+      "Locations": [
+        "Krupanj"
+      ],
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Serbia"
+    },
+    {
+      "Administrative_Area": "Serbia",
+      "Locations": [
+        "Rebelj"
+      ],
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Serbia"
+    },
+    {
+      "Administrative_Area": "Serbia",
+      "Locations": [
+        "Mali Zvornik"
+      ],
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Serbia"
+    },
+    {
+      "Administrative_Area": "Serbia",
+      "Locations": [
+        "\u0160abac"
+      ],
+      "Start_Date": "18 May 2014",
+      "End_Date": "18 May 2014",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Serbia"
+    },
+    {
+      "Administrative_Area": "Serbia",
+      "Locations": [
+        "Para\u0107in",
+        "Petrovac na Mlavi",
+        "Svilajnac",
+        "Smederevska Palanka"
+      ],
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Serbia"
+    },
+    {
+      "Administrative_Area": "Bosnia and Herzegovina",
+      "Locations": [
+        "Doboj",
+        "Maglaj",
+        "Zavidovi\u0107i",
+        "\u0160amac"
+      ],
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Bosnia and Herzegovina"
+    },
+    {
+      "Administrative_Area": "Bosnia and Herzegovina",
+      "Locations": [
+        "Pari\u0107i"
+      ],
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Bosnia and Herzegovina"
+    },
+    {
+      "Administrative_Area": "Croatia",
+      "Locations": [
+        "Rajevo Selo",
+        "Ra\u010dinovci",
+        "Gunja"
+      ],
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Croatia"
+    },
+    {
+      "Administrative_Area": "Croatia",
+      "Locations": [
+        "Slavonski \u0160amac"
+      ],
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Croatia"
+    },
+    {
+      "Administrative_Area": "Croatia",
+      "Locations": [
+        "Hrvatska Kostajnica",
+        "Dvor"
+      ],
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Croatia"
+    },
+    {
+      "Administrative_Area": "Romania",
+      "Locations": [
+        "Vrancea County"
+      ],
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Romania"
+    },
+    {
+      "Administrative_Area": "Romania",
+      "Locations": [
+        "Bucharest"
+      ],
+      "Start_Date": "13 May 2014",
+      "End_Date": "27 May 2014",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Romania"
+    }
+  ],
+  "Main_Event": "Extratropical Storm/Cyclone",
+  "Main_Event_Annotation": "Meteorological history",
+  "Hazards": "Wind|Flood|Landslide",
+  "Hazards_Annotation": "Info_Box|Meteorological history|Hydrology",
+  "Start_Date": "13 May 2014",
+  "End_Date": "27 May 2014",
+  "Time_Annotation": "Info_Box"
+}

@@ -1,0 +1,1520 @@
+{
+  "Event_ID": "dqSt0AQ",
+  "Sources": "https://en.wikipedia.org/wiki/2022_Atlantic_hurricane_season",
+  "Event_Names": "2022 Atlantic hurricane season",
+  "Total_Summary_Affected": {
+    "Total_Affected": "NULL",
+    "Total_Affected_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Affected": [
+    {
+      "Administrative_Areas": "Cuba",
+      "Start_Date": "June 2, 2022",
+      "End_Date": "June 3, 2022",
+      "Num": "750 homes",
+      "Annotation": "Tropical Storm Alex"
+    },
+    {
+      "Administrative_Areas": "Costa Rica",
+      "Start_Date": "July 1, 2022",
+      "End_Date": "July 2, 2022",
+      "Num": "3,000 people",
+      "Annotation": "Tropical Storm Bonnie"
+    },
+    {
+      "Administrative_Areas": "Nicaragua",
+      "Start_Date": "July 1, 2022",
+      "End_Date": "July 2, 2022",
+      "Num": "10,000 people",
+      "Annotation": "Tropical Storm Bonnie"
+    },
+    {
+      "Administrative_Areas": "Puerto Rico",
+      "Start_Date": "September 18, 2022",
+      "End_Date": "September 19, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Fiona"
+    },
+    {
+      "Administrative_Areas": "Dominican Republic",
+      "Start_Date": "September 19, 2022",
+      "End_Date": "NULL",
+      "Num": "43,000 people",
+      "Annotation": "Hurricane Fiona"
+    },
+    {
+      "Administrative_Areas": "Dominican Republic",
+      "Start_Date": "November 5, 2022",
+      "End_Date": "November 6, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Nicole"
+    },
+    {
+      "Administrative_Areas": "Belize",
+      "Start_Date": "November 2, 2022",
+      "End_Date": "NULL",
+      "Num": "1,221 people",
+      "Annotation": "Hurricane Lisa"
+    },
+    {
+      "Administrative_Areas": "Guatemala",
+      "Start_Date": "November 2, 2022",
+      "End_Date": "NULL",
+      "Num": "143 people",
+      "Annotation": "Hurricane Lisa"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Affected": [
+    {
+      "Administrative_Area": "Cuba",
+      "Locations": [
+        "Paso Real de San Diego",
+        "Playa Gir\u00f3n"
+      ],
+      "Start_Date": "June 2, 2022",
+      "End_Date": "June 3, 2022",
+      "Num": "750 homes",
+      "Annotation": "Tropical Storm Alex"
+    },
+    {
+      "Administrative_Area": "Costa Rica",
+      "Locations": [
+        "Chiriqu\u00ed Province"
+      ],
+      "Start_Date": "July 1, 2022",
+      "End_Date": "July 2, 2022",
+      "Num": "several families",
+      "Annotation": "Tropical Storm Bonnie"
+    },
+    {
+      "Administrative_Area": "Costa Rica",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "July 1, 2022",
+      "End_Date": "July 2, 2022",
+      "Num": "3,000 people",
+      "Annotation": "Tropical Storm Bonnie"
+    },
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "July 1, 2022",
+      "End_Date": "July 2, 2022",
+      "Num": "10,000 people",
+      "Annotation": "Tropical Storm Bonnie"
+    },
+    {
+      "Administrative_Area": "Puerto Rico",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "September 18, 2022",
+      "End_Date": "September 19, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Fiona"
+    },
+    {
+      "Administrative_Area": "Dominican Republic",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "September 19, 2022",
+      "End_Date": "NULL",
+      "Num": "43,000 people",
+      "Annotation": "Hurricane Fiona"
+    },
+    {
+      "Administrative_Area": "Dominican Republic",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "November 5, 2022",
+      "End_Date": "November 6, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Nicole"
+    },
+    {
+      "Administrative_Area": "Belize",
+      "Locations": [
+        "Belize City"
+      ],
+      "Start_Date": "November 2, 2022",
+      "End_Date": "NULL",
+      "Num": "1,221 people",
+      "Annotation": "Hurricane Lisa"
+    },
+    {
+      "Administrative_Area": "Guatemala",
+      "Locations": [
+        "Melchor de Mencos",
+        "San Jos\u00e9"
+      ],
+      "Start_Date": "November 2, 2022",
+      "End_Date": "NULL",
+      "Num": "143 people",
+      "Annotation": "Hurricane Lisa"
+    }
+  ],
+  "Total_Summary_Buildings_Damaged": {
+    "Total_Buildings_Damaged": "NULL",
+    "Total_Buildings_Damaged_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+    {
+      "Administrative_Areas": "Cuba",
+      "Start_Date": "June 2, 2022",
+      "End_Date": "June 3, 2022",
+      "Num": "750 homes",
+      "Annotation": "Tropical Storm Alex"
+    },
+    {
+      "Administrative_Areas": "Florida",
+      "Start_Date": "June 2, 2022",
+      "End_Date": "June 3, 2022",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Alex"
+    },
+    {
+      "Administrative_Areas": "Costa Rica",
+      "Start_Date": "July 1, 2022",
+      "End_Date": "July 2, 2022",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Bonnie"
+    },
+    {
+      "Administrative_Areas": "Nicaragua",
+      "Start_Date": "July 1, 2022",
+      "End_Date": "July 2, 2022",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Bonnie"
+    },
+    {
+      "Administrative_Areas": "South Carolina",
+      "Start_Date": "July 1, 2022",
+      "End_Date": "July 2, 2022",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Colin"
+    },
+    {
+      "Administrative_Areas": "Portugal",
+      "Start_Date": "September 12, 2022",
+      "End_Date": "September 13, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Danielle"
+    },
+    {
+      "Administrative_Areas": "Puerto Rico",
+      "Start_Date": "September 18, 2022",
+      "End_Date": "September 19, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Fiona"
+    },
+    {
+      "Administrative_Areas": "Dominican Republic",
+      "Start_Date": "September 19, 2022",
+      "End_Date": "September 19, 2022",
+      "Num": "2,000 homes",
+      "Annotation": "Hurricane Fiona"
+    },
+    {
+      "Administrative_Areas": "Turks and Caicos Islands",
+      "Start_Date": "September 20, 2022",
+      "End_Date": "September 21, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Fiona"
+    },
+    {
+      "Administrative_Areas": "Bermuda",
+      "Start_Date": "September 23, 2022",
+      "End_Date": "September 23, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Fiona"
+    },
+    {
+      "Administrative_Areas": "Canada",
+      "Start_Date": "September 24, 2022",
+      "End_Date": "September 25, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Fiona"
+    },
+    {
+      "Administrative_Areas": "Florida",
+      "Start_Date": "September 28, 2022",
+      "End_Date": "September 29, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Ian"
+    },
+    {
+      "Administrative_Areas": "South Carolina",
+      "Start_Date": "September 30, 2022",
+      "End_Date": "September 30, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Ian"
+    },
+    {
+      "Administrative_Areas": "North Carolina",
+      "Start_Date": "September 30, 2022",
+      "End_Date": "October 1, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Ian"
+    },
+    {
+      "Administrative_Areas": "Virginia",
+      "Start_Date": "September 30, 2022",
+      "End_Date": "October 1, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Ian"
+    },
+    {
+      "Administrative_Areas": "Canary Islands",
+      "Start_Date": "September 24, 2022",
+      "End_Date": "September 26, 2022",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Hermine"
+    },
+    {
+      "Administrative_Areas": "Nicaragua",
+      "Start_Date": "October 9, 2022",
+      "End_Date": "October 10, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Julia"
+    },
+    {
+      "Administrative_Areas": "Panama",
+      "Start_Date": "October 9, 2022",
+      "End_Date": "October 10, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Julia"
+    },
+    {
+      "Administrative_Areas": "Mexico",
+      "Start_Date": "October 14, 2022",
+      "End_Date": "October 15, 2022",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Karl"
+    },
+    {
+      "Administrative_Areas": "Belize",
+      "Start_Date": "November 2, 2022",
+      "End_Date": "November 3, 2022",
+      "Num": "500 homes",
+      "Annotation": "Hurricane Lisa"
+    },
+    {
+      "Administrative_Areas": "Guatemala",
+      "Start_Date": "November 2, 2022",
+      "End_Date": "November 3, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Lisa"
+    },
+    {
+      "Administrative_Areas": "Mexico",
+      "Start_Date": "November 2, 2022",
+      "End_Date": "November 3, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Lisa"
+    },
+    {
+      "Administrative_Areas": "Dominican Republic",
+      "Start_Date": "November 5, 2022",
+      "End_Date": "November 6, 2022",
+      "Num": "several hundred homes",
+      "Annotation": "Hurricane Nicole"
+    },
+    {
+      "Administrative_Areas": "Florida",
+      "Start_Date": "November 10, 2022",
+      "End_Date": "November 11, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Nicole"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+    {
+      "Administrative_Area": "Cuba",
+      "Locations": [
+        "Pinar del R\u00edo Province"
+      ],
+      "Start_Date": "June 2, 2022",
+      "End_Date": "June 3, 2022",
+      "Num": "750 homes",
+      "Annotation": "Tropical Storm Alex"
+    },
+    {
+      "Administrative_Area": "Florida",
+      "Locations": [
+        "Upper Keys",
+        "Miami metropolitan area"
+      ],
+      "Start_Date": "June 2, 2022",
+      "End_Date": "June 3, 2022",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Alex"
+    },
+    {
+      "Administrative_Area": "Costa Rica",
+      "Locations": [
+        "Chiriqu\u00ed Province"
+      ],
+      "Start_Date": "July 1, 2022",
+      "End_Date": "July 2, 2022",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Bonnie"
+    },
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "July 1, 2022",
+      "End_Date": "July 2, 2022",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Bonnie"
+    },
+    {
+      "Administrative_Area": "South Carolina",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "July 1, 2022",
+      "End_Date": "July 2, 2022",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Colin"
+    },
+    {
+      "Administrative_Area": "Portugal",
+      "Locations": [
+        "Guarda",
+        "Manteigas",
+        "Lisbon",
+        "Set\u00fabal"
+      ],
+      "Start_Date": "September 12, 2022",
+      "End_Date": "September 13, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Danielle"
+    },
+    {
+      "Administrative_Area": "Puerto Rico",
+      "Locations": [
+        "Island-wide"
+      ],
+      "Start_Date": "September 18, 2022",
+      "End_Date": "September 19, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Fiona"
+    },
+    {
+      "Administrative_Area": "Dominican Republic",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "September 19, 2022",
+      "End_Date": "September 19, 2022",
+      "Num": "2,000 homes",
+      "Annotation": "Hurricane Fiona"
+    },
+    {
+      "Administrative_Area": "Turks and Caicos Islands",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "September 20, 2022",
+      "End_Date": "September 21, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Fiona"
+    },
+    {
+      "Administrative_Area": "Bermuda",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "September 23, 2022",
+      "End_Date": "September 23, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Fiona"
+    },
+    {
+      "Administrative_Area": "Canada",
+      "Locations": [
+        "Nova Scotia",
+        "Newfoundland",
+        "Magdalen Islands"
+      ],
+      "Start_Date": "September 24, 2022",
+      "End_Date": "September 25, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Fiona"
+    },
+    {
+      "Administrative_Area": "Florida",
+      "Locations": [
+        "Lee County",
+        "Collier County",
+        "Osceola County",
+        "Seminole County",
+        "Volusia County"
+      ],
+      "Start_Date": "September 28, 2022",
+      "End_Date": "September 29, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Ian"
+    },
+    {
+      "Administrative_Area": "South Carolina",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "September 30, 2022",
+      "End_Date": "September 30, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Ian"
+    },
+    {
+      "Administrative_Area": "North Carolina",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "September 30, 2022",
+      "End_Date": "October 1, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Ian"
+    },
+    {
+      "Administrative_Area": "Virginia",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "September 30, 2022",
+      "End_Date": "October 1, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Ian"
+    },
+    {
+      "Administrative_Area": "Canary Islands",
+      "Locations": [
+        "La Palma",
+        "Gran Canaria Airport",
+        "Santa Cruz de Tenerife"
+      ],
+      "Start_Date": "September 24, 2022",
+      "End_Date": "September 26, 2022",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Hermine"
+    },
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "October 9, 2022",
+      "End_Date": "October 10, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Julia"
+    },
+    {
+      "Administrative_Area": "Panama",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "October 9, 2022",
+      "End_Date": "October 10, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Julia"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Tabasco",
+        "Chiapas"
+      ],
+      "Start_Date": "October 14, 2022",
+      "End_Date": "October 15, 2022",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Karl"
+    },
+    {
+      "Administrative_Area": "Belize",
+      "Locations": [
+        "Belize City"
+      ],
+      "Start_Date": "November 2, 2022",
+      "End_Date": "November 3, 2022",
+      "Num": "500 homes",
+      "Annotation": "Hurricane Lisa"
+    },
+    {
+      "Administrative_Area": "Guatemala",
+      "Locations": [
+        "Melchor de Mencos",
+        "San Jos\u00e9"
+      ],
+      "Start_Date": "November 2, 2022",
+      "End_Date": "November 3, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Lisa"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "November 2, 2022",
+      "End_Date": "November 3, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Lisa"
+    },
+    {
+      "Administrative_Area": "Dominican Republic",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "November 5, 2022",
+      "End_Date": "November 6, 2022",
+      "Num": "several hundred homes",
+      "Annotation": "Hurricane Nicole"
+    },
+    {
+      "Administrative_Area": "Florida",
+      "Locations": [
+        "Brevard County",
+        "Flagler County",
+        "St. Johns County",
+        "Volusia County"
+      ],
+      "Start_Date": "November 10, 2022",
+      "End_Date": "November 11, 2022",
+      "Num": "NULL",
+      "Annotation": "Hurricane Nicole"
+    }
+  ],
+  "Total_Summary_Deaths": {
+    "Total_Deaths": "304 total",
+    "Total_Deaths_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Deaths": [
+    {
+      "Administrative_Areas": "Cuba",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "four storm-related deaths",
+      "Annotation": "Tropical Storm Alex"
+    },
+    {
+      "Administrative_Areas": "Nicaragua",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "Four deaths",
+      "Annotation": "Tropical Storm Bonnie"
+    },
+    {
+      "Administrative_Areas": "North Carolina",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "one person drowned",
+      "Annotation": "Tropical Storm Colin"
+    },
+    {
+      "Administrative_Areas": "Puerto Rico",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "23 deaths",
+      "Annotation": "Hurricane Fiona"
+    },
+    {
+      "Administrative_Areas": "Dominican Republic",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "Two deaths",
+      "Annotation": "Hurricane Fiona"
+    },
+    {
+      "Administrative_Areas": "Atlantic Canada",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "Eight deaths",
+      "Annotation": "Hurricane Fiona"
+    },
+    {
+      "Administrative_Areas": "Florida",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "150 fatalities",
+      "Annotation": "Hurricane Ian"
+    },
+    {
+      "Administrative_Areas": "North Carolina",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "five fatalities",
+      "Annotation": "Hurricane Ian"
+    },
+    {
+      "Administrative_Areas": "Virginia",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "one fatality",
+      "Annotation": "Hurricane Ian"
+    },
+    {
+      "Administrative_Areas": "Venezuela",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "54 indirect flood fatalities",
+      "Annotation": "Hurricane Julia"
+    },
+    {
+      "Administrative_Areas": "Guatemala",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "14 deaths",
+      "Annotation": "Hurricane Julia"
+    },
+    {
+      "Administrative_Areas": "El Salvador",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "10 deaths",
+      "Annotation": "Hurricane Julia"
+    },
+    {
+      "Administrative_Areas": "Nicaragua",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "5 deaths",
+      "Annotation": "Hurricane Julia"
+    },
+    {
+      "Administrative_Areas": "Honduras",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "4 deaths",
+      "Annotation": "Hurricane Julia"
+    },
+    {
+      "Administrative_Areas": "Panama",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "2 deaths",
+      "Annotation": "Hurricane Julia"
+    },
+    {
+      "Administrative_Areas": "Chiapas",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "three storm-related fatalities",
+      "Annotation": "Tropical Storm Karl"
+    },
+    {
+      "Administrative_Areas": "Dominican Republic",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "six deaths",
+      "Annotation": "Hurricane Nicole"
+    },
+    {
+      "Administrative_Areas": "Florida",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "Five indirect deaths",
+      "Annotation": "Hurricane Nicole"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Deaths": [
+    {
+      "Administrative_Area": "Cuba",
+      "Locations": [
+        "Paso Real de San Diego",
+        "Playa Gir\u00f3n"
+      ],
+      "Start_Date": "June 2",
+      "End_Date": "June 3",
+      "Num": "four storm-related deaths",
+      "Annotation": "Tropical Storm Alex"
+    },
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "Four deaths",
+      "Annotation": "Tropical Storm Bonnie"
+    },
+    {
+      "Administrative_Area": "North Carolina",
+      "Locations": [
+        "Oak Island"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "one person drowned",
+      "Annotation": "Tropical Storm Colin"
+    },
+    {
+      "Administrative_Area": "Puerto Rico",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "September 18",
+      "End_Date": "September 19",
+      "Num": "23 deaths",
+      "Annotation": "Hurricane Fiona"
+    },
+    {
+      "Administrative_Area": "Dominican Republic",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "Two deaths",
+      "Annotation": "Hurricane Fiona"
+    },
+    {
+      "Administrative_Area": "Atlantic Canada",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "Eight deaths",
+      "Annotation": "Hurricane Fiona"
+    },
+    {
+      "Administrative_Area": "Florida",
+      "Locations": [
+        "Lee County"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "36 direct deaths",
+      "Annotation": "Hurricane Ian"
+    },
+    {
+      "Administrative_Area": "Florida",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "150 fatalities",
+      "Annotation": "Hurricane Ian"
+    },
+    {
+      "Administrative_Area": "North Carolina",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "five fatalities",
+      "Annotation": "Hurricane Ian"
+    },
+    {
+      "Administrative_Area": "Virginia",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "one fatality",
+      "Annotation": "Hurricane Ian"
+    },
+    {
+      "Administrative_Area": "Venezuela",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "54 indirect flood fatalities",
+      "Annotation": "Hurricane Julia"
+    },
+    {
+      "Administrative_Area": "Guatemala",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "14 deaths",
+      "Annotation": "Hurricane Julia"
+    },
+    {
+      "Administrative_Area": "El Salvador",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "10 deaths",
+      "Annotation": "Hurricane Julia"
+    },
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "5 deaths",
+      "Annotation": "Hurricane Julia"
+    },
+    {
+      "Administrative_Area": "Honduras",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "4 deaths",
+      "Annotation": "Hurricane Julia"
+    },
+    {
+      "Administrative_Area": "Panama",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "2 deaths",
+      "Annotation": "Hurricane Julia"
+    },
+    {
+      "Administrative_Area": "Chiapas",
+      "Locations": [
+        "Pichucalco",
+        "Ju\u00e1rez"
+      ],
+      "Start_Date": "October 14",
+      "End_Date": "October 15",
+      "Num": "three storm-related fatalities",
+      "Annotation": "Tropical Storm Karl"
+    },
+    {
+      "Administrative_Area": "Dominican Republic",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "six deaths",
+      "Annotation": "Hurricane Nicole"
+    },
+    {
+      "Administrative_Area": "Florida",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "Five indirect deaths",
+      "Annotation": "Hurricane Nicole"
+    }
+  ],
+  "Total_Summary_Displaced": {
+    "Total_Displaced": "NULL",
+    "Total_Displaced_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Displaced": [
+    {
+      "Administrative_Areas": "Costa Rica",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "over 3,000 people",
+      "Annotation": "Tropical Storm Bonnie"
+    },
+    {
+      "Administrative_Areas": "Dominican Republic",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "over 43,000 people",
+      "Annotation": "Hurricane Fiona"
+    },
+    {
+      "Administrative_Areas": "Guatemala",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "143 people",
+      "Annotation": "Hurricane Lisa"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Displaced": [
+    {
+      "Administrative_Area": "Costa Rica",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "over 3,000 people",
+      "Annotation": "Tropical Storm Bonnie"
+    },
+    {
+      "Administrative_Area": "Dominican Republic",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "over 43,000 people",
+      "Annotation": "Hurricane Fiona"
+    },
+    {
+      "Administrative_Area": "Guatemala",
+      "Locations": [
+        "Melchor de Mencos",
+        "San Jos\u00e9"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "143 people",
+      "Annotation": "Hurricane Lisa"
+    }
+  ],
+  "Total_Summary_Homeless": {
+    "Total_Homeless": "NULL",
+    "Total_Homeless_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Homeless": [
+    {
+      "Administrative_Areas": "Costa Rica",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "over 3,000 people",
+      "Annotation": "Tropical Storm Bonnie"
+    },
+    {
+      "Administrative_Areas": "Dominican Republic",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "over 43,000 people",
+      "Annotation": "Hurricane Fiona"
+    },
+    {
+      "Administrative_Areas": "Belize",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "about 500 homes destroyed and around 5,000 others damaged",
+      "Annotation": "Hurricane Lisa"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Homeless": [
+    {
+      "Administrative_Area": "Cuba",
+      "Locations": [
+        "Pinar del R\u00edo Province"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "more than 100,000 dwellings damaged or destroyed",
+      "Annotation": "Hurricane Ian"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Lee County",
+        "Collier County",
+        "Osceola County",
+        "Seminole County",
+        "Volusia County"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "52,514 structures impacted in Lee County, with 5,369 demolished and 14,245 extensively damaged; more than 3,500 buildings damaged in Collier County; thousands of buildings and homes damaged or destroyed in Osceola, Seminole, and Volusia counties",
+      "Annotation": "Hurricane Ian"
+    },
+    {
+      "Administrative_Area": "Guatemala",
+      "Locations": [
+        "Melchor de Mencos",
+        "San Jos\u00e9"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "143 people evacuated to shelters",
+      "Annotation": "Hurricane Lisa"
+    }
+  ],
+  "Total_Summary_Injuries": {
+    "Total_Injuries": "NULL",
+    "Total_Injuries_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Injuries": [
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Hurricane Ian"
+    },
+    {
+      "Administrative_Areas": "Mexico",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Karl"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Injuries": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Kings Point, Florida"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "2",
+      "Annotation": "Hurricane Ian"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Pichucalco, Chiapas",
+        "Ju\u00e1rez, Chiapas"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "3",
+      "Annotation": "Tropical Storm Karl"
+    }
+  ],
+  "Total_Summary_Insured_Damage": {
+    "Total_Insured_Damage": "NULL",
+    "Total_Insured_Damage_Unit": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Insured_Damage_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Insured_Damage": [
+    {
+      "Administrative_Areas": [
+        "Canada"
+      ],
+      "Start_Date": "September 23, 2022",
+      "End_Date": "September 25, 2022",
+      "Num": "$800 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Fiona"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+    {
+      "Administrative_Area": "Canada",
+      "Locations": [
+        "Nova Scotia",
+        "Newfoundland",
+        "Magdalen Islands"
+      ],
+      "Start_Date": "September 23, 2022",
+      "End_Date": "September 25, 2022",
+      "Num": "$800 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Fiona"
+    }
+  ],
+  "Total_Summary_Damage": {
+    "Total_Damage": "> $117.708 billion",
+    "Total_Damage_Unit": "USD",
+    "Total_Damage_Inflation_Adjusted": "No",
+    "Total_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Damage_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Damage": [
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$112.9 billion",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Ian"
+    },
+    {
+      "Administrative_Areas": "Puerto Rico",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$2.5 billion",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Fiona"
+    },
+    {
+      "Administrative_Areas": "Dominican Republic",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$375 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Fiona"
+    },
+    {
+      "Administrative_Areas": "Atlantic Canada",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$800 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Fiona"
+    },
+    {
+      "Administrative_Areas": "Cuba",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$200 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Ian"
+    },
+    {
+      "Administrative_Areas": "Belize",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$100 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Lisa"
+    },
+    {
+      "Administrative_Areas": "Panama",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$6 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Julia"
+    },
+    {
+      "Administrative_Areas": "Canary Islands",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "10 million euro",
+      "Num_Unit": "EUR",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Tropical Storm Hermine"
+    },
+    {
+      "Administrative_Areas": "Mexico",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "MXN$1.394 billion",
+      "Num_Unit": "MXN",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Tropical Storm Karl"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Damage": [
+    {
+      "Administrative_Area": "Cuba",
+      "Locations": [
+        "Pinar del R\u00edo Province"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$25 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Tropical Storm Alex"
+    },
+    {
+      "Administrative_Area": "Florida",
+      "Locations": [
+        "Upper Keys",
+        "Miami metropolitan area"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$350 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Tropical Storm Alex"
+    },
+    {
+      "Administrative_Area": "Trinidad and Tobago",
+      "Locations": [
+        "Trinidad"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$25 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Tropical Storm Bonnie"
+    },
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$25 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Tropical Storm Bonnie"
+    },
+    {
+      "Administrative_Area": "Portugal",
+      "Locations": [
+        "Guarda",
+        "Manteigas",
+        "Lisbon",
+        "Set\u00fabal"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Danielle"
+    },
+    {
+      "Administrative_Area": "Puerto Rico",
+      "Locations": [
+        "Island-wide"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$2.5 billion",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Fiona"
+    },
+    {
+      "Administrative_Area": "Dominican Republic",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$375 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Fiona"
+    },
+    {
+      "Administrative_Area": "Atlantic Canada",
+      "Locations": [
+        "Nova Scotia",
+        "Newfoundland",
+        "Magdalen Islands"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$800 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Fiona"
+    },
+    {
+      "Administrative_Area": "Florida",
+      "Locations": [
+        "Lee County",
+        "Collier County",
+        "Osceola County",
+        "Seminole County",
+        "Volusia County"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$112.9 billion",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Ian"
+    },
+    {
+      "Administrative_Area": "North Carolina",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Ian"
+    },
+    {
+      "Administrative_Area": "Virginia",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Ian"
+    },
+    {
+      "Administrative_Area": "Venezuela",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Julia"
+    },
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$400 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Julia"
+    },
+    {
+      "Administrative_Area": "Costa Rica",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Julia"
+    },
+    {
+      "Administrative_Area": "Honduras",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Julia"
+    },
+    {
+      "Administrative_Area": "Panama",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$6 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Julia"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Tabasco",
+        "Chiapas"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "MXN$1.394 billion",
+      "Num_Unit": "MXN",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Tropical Storm Karl"
+    },
+    {
+      "Administrative_Area": "Belize",
+      "Locations": [
+        "Belize City"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$100 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Lisa"
+    },
+    {
+      "Administrative_Area": "Guatemala",
+      "Locations": [
+        "Melchor de Mencos",
+        "San Jos\u00e9"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Lisa"
+    },
+    {
+      "Administrative_Area": "Dominican Republic",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Nicole"
+    },
+    {
+      "Administrative_Area": "Florida",
+      "Locations": [
+        "Brevard County",
+        "Flagler County",
+        "St. Johns County"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$1 billion",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Nicole"
+    }
+  ],
+  "Main_Event": "Tropical Storm/Cyclone",
+  "Main_Event_Annotation": "Info_Box",
+  "Hazards": "Wind|Flood|Lightning",
+  "Hazards_Annotation": "Info_Box",
+  "Start_Date": "June 1, 2022",
+  "End_Date": "November 30, 2022",
+  "Time_Annotation": "Info_Box"
+}

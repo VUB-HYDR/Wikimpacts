@@ -1,0 +1,680 @@
+{
+  "Event_ID": "mCir10E",
+  "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Barry_(2001)",
+  "Event_Names": "Tropical Storm Barry (2001)",
+  "Total_Summary_Affected": {
+    "Total_Affected": "NULL",
+    "Total_Affected_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Affected": [
+    {
+      "Administrative_Areas": [
+        "Cuba"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "6",
+      "Annotation": "Cuba and Florida"
+    },
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "3",
+      "Annotation": "Cuba and Florida"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Affected": [
+    {
+      "Administrative_Area": "Cuba",
+      "Locations": [
+        "Offshore"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "6",
+      "Annotation": "Cuba and Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Florida"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "3",
+      "Annotation": "Cuba and Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Jackson County"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "1",
+      "Annotation": "Cuba and Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Jacksonville"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "1",
+      "Annotation": "Cuba and Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Sanibel Island"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "1",
+      "Annotation": "Cuba and Florida"
+    }
+  ],
+  "Total_Summary_Buildings_Damaged": {
+    "Total_Buildings_Damaged": "NULL",
+    "Total_Buildings_Damaged_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "August 2, 2001",
+      "End_Date": "August 8, 2001",
+      "Num": "NULL",
+      "Annotation": "Cuba and Florida"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Martin County"
+      ],
+      "Start_Date": "August 2, 2001",
+      "End_Date": "August 2, 2001",
+      "Num": "300 homes",
+      "Annotation": "Cuba and Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Martin County"
+      ],
+      "Start_Date": "August 2, 2001",
+      "End_Date": "August 2, 2001",
+      "Num": "63 structures and 6 mobile homes",
+      "Annotation": "Cuba and Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Bay County"
+      ],
+      "Start_Date": "August 5, 2001",
+      "End_Date": "August 6, 2001",
+      "Num": "several structures",
+      "Annotation": "Cuba and Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Tallahassee"
+      ],
+      "Start_Date": "August 5, 2001",
+      "End_Date": "August 6, 2001",
+      "Num": "100 vehicles",
+      "Annotation": "Cuba and Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Allen Road, Tallahassee"
+      ],
+      "Start_Date": "August 5, 2001",
+      "End_Date": "August 6, 2001",
+      "Num": "4 residents of an apartment complex",
+      "Annotation": "Cuba and Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Freeport Elementary School, Walton County"
+      ],
+      "Start_Date": "August 5, 2001",
+      "End_Date": "August 6, 2001",
+      "Num": "minor roof damage",
+      "Annotation": "Cuba and Florida"
+    }
+  ],
+  "Total_Summary_Deaths": {
+    "Total_Deaths": "9",
+    "Total_Deaths_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Deaths": [
+    {
+      "Administrative_Areas": "Cuba",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "6",
+      "Annotation": "Cuba and Florida"
+    },
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "3",
+      "Annotation": "Cuba and Florida"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Deaths": [
+    {
+      "Administrative_Area": "Cuba",
+      "Locations": [
+        "Offshore"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "6",
+      "Annotation": "Cuba and Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Florida"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "3",
+      "Annotation": "Cuba and Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Jackson County"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "1",
+      "Annotation": "Cuba and Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Jacksonville"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "1",
+      "Annotation": "Cuba and Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Sanibel Island"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "1",
+      "Annotation": "Cuba and Florida"
+    }
+  ],
+  "Total_Summary_Displaced": {
+    "Total_Displaced": "NULL",
+    "Total_Displaced_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Displaced": [
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Displaced": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Franklin County"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Okaloosa County"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Hurlburt Field"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "about 300 personnel",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Tallahassee"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Grand Isle State Park"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "several offshore oil platforms"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "thousands of personnel",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "New Orleans"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "southeastern Louisiana"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "roughly 500 Red Cross volunteers and staff members",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Allen Road, Tallahassee"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "four residents",
+      "Annotation": "Cuba and Florida"
+    }
+  ],
+  "Total_Summary_Homeless": {
+    "Total_Homeless": "NULL",
+    "Total_Homeless_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Homeless": [
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Homeless": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Martin County"
+      ],
+      "Start_Date": "August 2, 2001",
+      "End_Date": "NULL",
+      "Num": "300 homes received water damage",
+      "Annotation": "Cuba and Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Martin County"
+      ],
+      "Start_Date": "August 2, 2001",
+      "End_Date": "NULL",
+      "Num": "63 structures and 6 mobile homes sustained major damage",
+      "Annotation": "Cuba and Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Tallahassee"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "4 residents of an apartment complex on Allen Road were forced to evacuate",
+      "Annotation": "Cuba and Florida"
+    }
+  ],
+  "Total_Summary_Injuries": {
+    "Total_Injuries": "NULL",
+    "Total_Injuries_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Injuries": [
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Cuba and Florida"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Injuries": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Jackson County, Florida"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "1",
+      "Annotation": "Cuba and Florida"
+    }
+  ],
+  "Total_Summary_Insured_Damage": {
+    "Total_Insured_Damage": "NULL",
+    "Total_Insured_Damage_Unit": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Insured_Damage_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Insured_Damage": [
+    {
+      "Administrative_Areas": [
+        "Cuba",
+        "United States"
+      ],
+      "Start_Date": "August 2, 2001",
+      "End_Date": "August 8, 2001",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Cuba and Florida"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Martin County",
+        "Treasure Coast",
+        "Bay County",
+        "Leon County",
+        "Apalachicola National Forest",
+        "Walton County",
+        "Washington County",
+        "Bay County",
+        "Tallahassee",
+        "Franklin County",
+        "Wakulla County",
+        "Jackson County",
+        "Eglin Air Force Base Range Station C-72",
+        "Destin",
+        "Mid-Bay Bridge",
+        "Freeport Elementary School",
+        "Jacksonville",
+        "Sanibel Island"
+      ],
+      "Start_Date": "August 2, 2001",
+      "End_Date": "August 8, 2001",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Cuba and Florida"
+    }
+  ],
+  "Total_Summary_Damage": {
+    "Total_Damage": "$30 million",
+    "Total_Damage_Unit": "USD",
+    "Total_Damage_Inflation_Adjusted": "No",
+    "Total_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Damage_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Damage": [
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$30 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Cuba and Florida"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Damage": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Martin County"
+      ],
+      "Start_Date": "August 2, 2001",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Cuba and Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Bay County"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Cuba and Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Leon County"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Cuba and Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Apalachicola National Forest"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Cuba and Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Walton County"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Cuba and Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Washington County"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Cuba and Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Tallahassee"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Cuba and Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Franklin County"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Cuba and Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Wakulla County"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Cuba and Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Jackson County"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Cuba and Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Destin"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Cuba and Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Freeport Elementary School"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Cuba and Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Geneva",
+        "Enterprise",
+        "New Brockton"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Elsewhere"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Florala"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Elsewhere"
+    }
+  ],
+  "Main_Event": "Tropical Storm/Cyclone",
+  "Main_Event_Annotation": "Info_Box",
+  "Hazards": "Wind|Flood|Lightning",
+  "Hazards_Annotation": "Info_Box|Cuba and Florida",
+  "Start_Date": "August 2, 2001",
+  "End_Date": "August 8, 2001",
+  "Time_Annotation": "Info_Box",
+  "Administrative_Areas": [
+    "Cuba",
+    "United States"
+  ],
+  "Administrative_Areas_Annotation": "Info_Box"
+}
