@@ -329,7 +329,8 @@ class NormalizeJsonOutput:
         Handles cases:
             - "time_information" nesting: ["start_date", "end_date", "time_with_annotation"]
             - "location_information" nesting: ["location", "location_with_annotation"]
-            - "Administrative_Areas" : when it's a str, convert to a list
+            - "Administrative_Areas" : when it's a str, convert to a list, or when this item is not in the raw output, add it in the fixed output as an empty list
+            - "Administrative_Areas_Annotation": when this item is not in the raw output, add it as a str NULL
             - "Locations" : when it's a str, convert to a list
 
         """
@@ -338,6 +339,7 @@ class NormalizeJsonOutput:
 
         nested_keys = ["time_information", "location_information"]
         incorrect_type_keys = ["Administrative_Areas"]
+        missing_keys = ["Administrative_Areas", "Administrative_Areas_Annotation"]
         output_json = []
         for entry in raw_sys_output:
             output = {}
@@ -380,6 +382,12 @@ class NormalizeJsonOutput:
                         output[k] = entry[k]
                 else:
                     output[k] = entry[k]
+            for k in missing_keys:
+                if k not in entry.keys() and k not in output.keys():
+                    if k == "Administrative_Areas":
+                        output[k] = []
+                    elif k == "Administrative_Areas_Annotation":
+                        output[k] = "NULL"
 
             output_json.append(output)
 
