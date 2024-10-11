@@ -180,8 +180,8 @@ def plot_main_events_per_admin_area(df, country, geojson_file, custom_colors, ev
 
     # Plotting
     fig, ax = plt.subplots(figsize=(15, 10))
-
-    country.plot(ax=ax, color="lightgray", edgecolor="gray", linewidth=0.5)
+    world = gpd.read_file(country)
+    world.plot(ax=ax, color="lightgray", edgecolor="gray", linewidth=0.5)
 
     # Plot using GeoPandas
     merged_gdf.plot(

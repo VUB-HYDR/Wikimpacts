@@ -9,6 +9,7 @@ from matplotlib.font_manager import FontProperties
 from Database.scr.log_utils import Logging
 from Visualizations.codes import (
     bar,
+    em_dat,
     map_L1_different_events,
     map_L1_overview,
     map_L2,
@@ -96,6 +97,8 @@ if __name__ == "__main__":
     ]
     if instance_dfs:
         L2 = pd.concat(instance_dfs, ignore_index=True)
+    # Filter records after 1900
+    filtered_L2 = L2[L2["Start_Date_Year"] >= 1900]
     Specific_instance_dfs = [
         df for key, df in tables_data.items() if key.startswith("Specific") and isinstance(df, pd.DataFrame)
     ]
@@ -119,6 +122,16 @@ if __name__ == "__main__":
         "Extratropical Storm/Cyclone",
         "Tropical Storm/Cyclone",
         "Extreme Temperature",
+    ]
+    # List of columns to create individual DataFrames for EM_DAT
+    target_columns = [
+        "Total Deaths",
+        "No. Injured",
+        "No. Affected",
+        "No. Homeless",
+        "Total Affected",
+        "Insured Damage ('000 US$)",
+        "Total Damage ('000 US$)",
     ]
 
     # plot pie chart for L1
@@ -173,3 +186,18 @@ if __name__ == "__main__":
     )
 
     # plot the difference between EM-DAT (1900-20240229) with Wikimpacts L2 same time period
+    impact_ed, ed = em_dat.filter_and_save_dataframes(args.EM_DAT_path, target_columns)
+
+    em_dat.plot_emdat(ed, args.country_path, f"{args.outputdir}/Spatial_distribution_em-dat_overview.pdf")
+
+    # plot L2 in the same time period as em-dat, use the same color schema ( todo)
+    event_count_per_admin_area = map_L2.count_events_per_admin_area(filtered_L2)
+    map_L2.plot_main_events_per_admin_area(
+        filtered_L2,
+        nid_to_geo_obj,
+        args.country_path,
+        event_count_per_admin_area,
+        f"{args.outputdir}/Spatial_distribution_L2_same_time_em_dat.pdf",
+    )
+
+    # plot the diffrience from L2 and EM-DAT
