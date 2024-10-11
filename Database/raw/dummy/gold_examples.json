@@ -1,0 +1,528 @@
+[
+  {
+    "Event_ID": "JmaKdfZ",
+    "Sources": "https://en.wikipedia.org/wiki/Hurricane_Floyd",
+    "Event_Names": "Hurricane Floyd",
+    "Main_Event": "Tropical Storm Cyclone",
+    "Hazards": "Wind|Flood|Lighting",
+    "Start_Date": "7 September, 1999",
+    "End_Date": "19 September, 1999",
+    "Administrative_Areas": [
+      "United States",
+      "caribbean",
+      "Bahamas",
+      "Canada"
+    ],
+    "Total_Summary_Affected": {
+      "Total_Affected": "15000"
+    },
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL"
+    },
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "85"
+    },
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL"
+    },
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL"
+    },
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL"
+    },
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL"
+    },
+    "Total_Summary_Damage": {
+      "Total_Damage": "6500000000",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [],
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [],
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "84"
+      },
+      {
+        "Administrative_Areas": [
+          "Bahamas"
+        ],
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "1"
+      }
+    ],
+    "Instance_Per_Administrative_Areas_Displaced": [],
+    "Instance_Per_Administrative_Areas_Homeless": [],
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "Bahamas"
+        ],
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "2-6"
+      }
+    ],
+    "Instance_Per_Administrative_Areas_Insured_Damage": [],
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "6500000000"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Volusia County, Florida, United States",
+          "Florida, United States"
+        ],
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "337"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina, United States"
+        ],
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "80000"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Virginia, United States"
+        ],
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "9250"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Delaware, United States"
+        ],
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "204"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Bound Brook",
+          "New Jersey, United States"
+        ],
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "200"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Manville",
+          "New Jersey, United States"
+        ],
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "1784"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Delaware, United States",
+          "Pennsylvania, United States"
+        ],
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "10000"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Freeport"
+        ],
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "1"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina, United States"
+        ],
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "51"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Virginia, United States"
+        ],
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "4"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Maryland, United States"
+        ],
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "2"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New Jersey, United States"
+        ],
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "7"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Pennsylvania, United States"
+        ],
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "13"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New York, United States"
+        ],
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "2"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Connecticut, United States"
+        ],
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "1"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Randolph County, Missouri, United States",
+          "Vermont, United States"
+        ],
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "1"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina, United States"
+        ],
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "10000"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Manville",
+          "New Jersey, United States"
+        ],
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "1000"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Pennsylvania, United States"
+        ],
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "4000"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Maryland, United States"
+        ],
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "2"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Pennsylvania, United States"
+        ],
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "40"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida, United States"
+        ],
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "50000000"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "South Carolina, United States"
+        ],
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "17000000"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Pitt County, North Carolina, United States",
+          "North Carolina, United States"
+        ],
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "1999",
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "1600000000"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Virginia, United States"
+        ],
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "101000000"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Maryland, United States"
+        ],
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "7900000"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Delaware, United States"
+        ],
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "8420000"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New Jersey, United States"
+        ],
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "250000000"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Pennsylvania, United States"
+        ],
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "60000000"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New York, United States"
+        ],
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Start_Date": "1999/9/7",
+        "End_Date": "1999/9/19",
+        "Num": "14600000"
+      }
+    ]
+  },
+  {
+    "Event_ID": "euvNjqT",
+    "Sources": "https://en.wikipedia.org/wiki?curid=30855389",
+    "Event_Names": "2010-2011 China Drought",
+    "Main_Event": "Drought",
+    "Hazards": "Drought",
+    "Start_Date": "September, 2010",
+    "End_Date": "30 June, 2011",
+    "Administrative_Areas": [
+      "China"
+    ],
+    "Total_Summary_Affected": {
+      "Total_Affected": "35000000"
+    },
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL"
+    },
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "NULL"
+    },
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "3234"
+    },
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL"
+    },
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL"
+    },
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL"
+    },
+    "Total_Summary_Damage": {
+      "Total_Damage": "2300000000",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [],
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [],
+    "Instance_Per_Administrative_Areas_Deaths": [],
+    "Instance_Per_Administrative_Areas_Displaced": [],
+    "Instance_Per_Administrative_Areas_Homeless": [],
+    "Instance_Per_Administrative_Areas_Injuries": [],
+    "Instance_Per_Administrative_Areas_Insured_Damage": [],
+    "Instance_Per_Administrative_Areas_Damage": [],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": [
+          "Anhui",
+          "Gansu",
+          "\u6cb3\u5357\u7701",
+          "Hubei",
+          "Jiangsu",
+          "Shaanxi",
+          "Shandong",
+          "Shanxi"
+        ],
+        "Start_Date": "2010/9/1",
+        "End_Date": "2010/9/30",
+        "Num": "35000000"
+      },
+      {
+        "Administrative_Area": "NULL",
+        "Locations": [
+          "\u5b81\u590f\u56de\u65cf\u81ea\u6cbb\u533a",
+          "Gansu",
+          "Shanxi"
+        ],
+        "Start_Date": "2011/6/24",
+        "End_Date": "2011/6/24",
+        "Num": "3650000"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "lake hong",
+          "Hubei"
+        ],
+        "Start_Date": "2011/2/1",
+        "End_Date": "2011/2/28",
+        "Num": "3234"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": [
+          "Anhui",
+          "Gansu",
+          "\u6cb3\u5357\u7701",
+          "Hubei",
+          "Jiangsu",
+          "Shaanxi",
+          "Shandong",
+          "Shanxi"
+        ],
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Start_Date": "2010/9/1",
+        "End_Date": "2010/9/30",
+        "Num": "2300000000"
+      }
+    ]
+  }
+]
