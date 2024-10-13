@@ -458,7 +458,7 @@ class NormalizeJsonOutput:
             output = {}
             target_keys = [x for x in entry.keys() if x.startswith("Specific_Instance_") or x.startswith("Instance_")]
 
-            for k in entry.keys():
+            for k in [x for x in entry.keys() if entry[x] is not None]:
                 if k in target_keys:
                     for rec in range(len(entry[k])):
                         records = []
