@@ -161,11 +161,15 @@ class NormalizeUtils:
             target_dir: local directory where parquet files are written to
             chunk_size: number of rows stored in one chunk of parquet file. Defaults to 2000.
         """
+        pathlib.Path(target_dir).mkdir(parents=True, exist_ok=True)
+        existing_chunks = os.listdir(target_dir)
+        begin_at = 0
+        if existing_chunks:
+            begin_at = int(sorted(existing_chunks)[-1].split(".")[0]) + 1
         for i in range(0, len(df), chunk_size):
             slc = df.iloc[i : i + chunk_size]
-            chunk = int(i / chunk_size)
+            chunk = int(i / chunk_size) + begin_at
             fname = os.path.join(target_dir, f"{chunk:04d}.parquet")
-            pathlib.Path(target_dir).mkdir(parents=True, exist_ok=True)
             slc.to_parquet(fname, engine="fastparquet", **parquet_wargs)
 
     @staticmethod
