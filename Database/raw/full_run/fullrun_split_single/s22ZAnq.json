@@ -1,299 +1,301 @@
-{
-  "Event_ID": "s22ZAnq",
-  "Sources": "https://en.wikipedia.org/wiki/1856_Philadelphia_tornado",
-  "Event_Names": "1856 Philadelphia tornado",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 12, 1856",
-      "End_Date": "April 12, 1856",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "North Philadelphia"
-      ],
-      "Start_Date": "April 12, 1856",
-      "End_Date": "April 12, 1856",
-      "Num": "9",
-      "Annotation": "Aftermath"
+[
+  {
+    "Event_ID": "s22ZAnq",
+    "Sources": "https://en.wikipedia.org/wiki/1856_Philadelphia_tornado",
+    "Event_Names": "1856 Philadelphia tornado",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Elkton"
-      ],
-      "Start_Date": "April 12, 1856",
-      "End_Date": "April 12, 1856",
-      "Num": "2",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 12, 1856",
-      "End_Date": "April 12, 1856",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Norristown",
-        "Northeast Philadelphia",
-        "Kensington",
-        "Camden",
-        "Tacony",
-        "Newark",
-        "Elkton",
-        "Bridgewater",
-        "Beaver",
-        "York Furnace"
-      ],
-      "Start_Date": "April 12, 1856",
-      "End_Date": "April 12, 1856",
-      "Num": "200 houses, several trains, two large brick churches, three factories, five houses, a large boiler house, many buildings, a house, a church, a bridge",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "NULL",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 12, 1856",
-      "End_Date": "April 12, 1856",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "West Chester"
-      ],
-      "Start_Date": "April 12, 1856",
-      "End_Date": "April 12, 1856",
-      "Num": "1",
-      "Annotation": "header-content pair article"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 12, 1856",
+        "End_Date": "April 12, 1856",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Philadelphia"
+        ],
+        "Start_Date": "April 12, 1856",
+        "End_Date": "April 12, 1856",
+        "Num": "9",
+        "Annotation": "Aftermath"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Elkton"
+        ],
+        "Start_Date": "April 12, 1856",
+        "End_Date": "April 12, 1856",
+        "Num": "2",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "near Elkton"
-      ],
-      "Start_Date": "April 12, 1856",
-      "End_Date": "April 12, 1856",
-      "Num": "2",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 12, 1856",
-      "End_Date": "April 12, 1856",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Northeast Philadelphia",
-        "Kensington"
-      ],
-      "Start_Date": "April 12, 1856",
-      "End_Date": "April 12, 1856",
-      "Num": "6 children",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 12, 1856",
-      "End_Date": "April 12, 1856",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Northeast Philadelphia",
-        "Kensington"
-      ],
-      "Start_Date": "April 12, 1856",
-      "End_Date": "April 12, 1856",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "9",
-    "Total_Injuries_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 12, 1856",
-      "End_Date": "April 12, 1856",
-      "Num": "9",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "North Philadelphia"
-      ],
-      "Start_Date": "April 12, 1856",
-      "End_Date": "April 12, 1856",
-      "Num": "9",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "1856-04-12",
-      "End_Date": "1856-04-12",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Philadelphia",
-        "Norristown",
-        "Camden",
-        "Kensington",
-        "Tacony",
-        "Newark",
-        "Elkton",
-        "Bridgewater",
-        "Beaver",
-        "York Furnace"
-      ],
-      "Start_Date": "1856-04-12",
-      "End_Date": "1856-04-12",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$100,000",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "Yes",
-    "Total_Damage_Inflation_Adjusted_Year": "2018",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 12, 1856",
-      "End_Date": "April 12, 1856",
-      "Num": "$100,000",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "Yes",
-      "Num_Inflation_Adjusted_Year": "2018",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Norristown",
-        "Northeast Philadelphia",
-        "Camden",
-        "Kensington",
-        "Tacony",
-        "Newark",
-        "Elkton",
-        "Bridgewater",
-        "Beaver",
-        "York Furnace Bridge"
-      ],
-      "Start_Date": "April 12, 1856",
-      "End_Date": "April 12, 1856",
-      "Num": "$100,000",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "Yes",
-      "Num_Inflation_Adjusted_Year": "2018",
-      "Annotation": "Impact"
-    }
-  ],
-  "Main_Event": "Tornado",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "April 12, 1856",
-  "End_Date": "April 12, 1856",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "United States"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 12, 1856",
+        "End_Date": "April 12, 1856",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Norristown",
+          "Northeast Philadelphia",
+          "Kensington",
+          "Camden",
+          "Tacony",
+          "Newark",
+          "Elkton",
+          "Bridgewater",
+          "Beaver",
+          "York Furnace"
+        ],
+        "Start_Date": "April 12, 1856",
+        "End_Date": "April 12, 1856",
+        "Num": "200 houses, several trains, two large brick churches, three factories, five houses, a large boiler house, many buildings, a house, a church, a bridge",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "NULL",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 12, 1856",
+        "End_Date": "April 12, 1856",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "West Chester"
+        ],
+        "Start_Date": "April 12, 1856",
+        "End_Date": "April 12, 1856",
+        "Num": "1",
+        "Annotation": "header-content pair article"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "near Elkton"
+        ],
+        "Start_Date": "April 12, 1856",
+        "End_Date": "April 12, 1856",
+        "Num": "2",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 12, 1856",
+        "End_Date": "April 12, 1856",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Northeast Philadelphia",
+          "Kensington"
+        ],
+        "Start_Date": "April 12, 1856",
+        "End_Date": "April 12, 1856",
+        "Num": "6 children",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 12, 1856",
+        "End_Date": "April 12, 1856",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Northeast Philadelphia",
+          "Kensington"
+        ],
+        "Start_Date": "April 12, 1856",
+        "End_Date": "April 12, 1856",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "9",
+      "Total_Injuries_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 12, 1856",
+        "End_Date": "April 12, 1856",
+        "Num": "9",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Philadelphia"
+        ],
+        "Start_Date": "April 12, 1856",
+        "End_Date": "April 12, 1856",
+        "Num": "9",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "1856-04-12",
+        "End_Date": "1856-04-12",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Philadelphia",
+          "Norristown",
+          "Camden",
+          "Kensington",
+          "Tacony",
+          "Newark",
+          "Elkton",
+          "Bridgewater",
+          "Beaver",
+          "York Furnace"
+        ],
+        "Start_Date": "1856-04-12",
+        "End_Date": "1856-04-12",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$100,000",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "Yes",
+      "Total_Damage_Inflation_Adjusted_Year": "2018",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 12, 1856",
+        "End_Date": "April 12, 1856",
+        "Num": "$100,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "Yes",
+        "Num_Inflation_Adjusted_Year": "2018",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Norristown",
+          "Northeast Philadelphia",
+          "Camden",
+          "Kensington",
+          "Tacony",
+          "Newark",
+          "Elkton",
+          "Bridgewater",
+          "Beaver",
+          "York Furnace Bridge"
+        ],
+        "Start_Date": "April 12, 1856",
+        "End_Date": "April 12, 1856",
+        "Num": "$100,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "Yes",
+        "Num_Inflation_Adjusted_Year": "2018",
+        "Annotation": "Impact"
+      }
+    ],
+    "Main_Event": "Tornado",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "April 12, 1856",
+    "End_Date": "April 12, 1856",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "United States"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

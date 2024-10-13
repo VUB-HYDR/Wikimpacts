@@ -1,464 +1,466 @@
-{
-  "Event_ID": "XLwy8Od",
-  "Sources": "https://en.wikipedia.org/wiki/Hurricane_Igor",
-  "Event_Names": "Hurricane Igor",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "United States"
+[
+  {
+    "Event_ID": "XLwy8Od",
+    "Sources": "https://en.wikipedia.org/wiki/Hurricane_Igor",
+    "Event_Names": "Hurricane Igor",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": [
-        "Canada"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Canada"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Surf City, North Carolina"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "One person drowned",
-      "Annotation": "United States"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Canada"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Surf City, North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "One person drowned",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Newfoundland"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "50,000 residences without electricity",
+        "Annotation": "Canada"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Newfoundland"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "150 communities temporarily isolated",
+        "Annotation": "Canada"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Newfoundland"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "30 communities declared state of emergency",
+        "Annotation": "Aftermath"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Newfoundland"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "50 families relocated to evacuation shelters",
+        "Annotation": "Aftermath"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Newfoundland"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Newfoundland"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "50,000 residences without electricity",
-      "Annotation": "Canada"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Bermuda",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Bermuda"
+      },
+      {
+        "Administrative_Areas": "Canada",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Canada"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Bermuda",
+        "Locations": [
+          "St. George's Islands"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Bermuda"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "St. Bernard's \u2013 Jacques Fontaine",
+          "Clarenville",
+          "Sunnyside",
+          "Glovertown",
+          "South East Bight",
+          "Random Island"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Canada"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "4",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Newfoundland"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "150 communities temporarily isolated",
-      "Annotation": "Canada"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "Caribbean"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Cape Verde and Leeward Islands"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Canada"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Caribbean",
+        "Locations": [
+          "St. Croix",
+          "Puerto Rico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Cape Verde and Leeward Islands"
+      },
+      {
+        "Administrative_Area": "Caribbean",
+        "Locations": [
+          "Puerto Rico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Cape Verde and Leeward Islands"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Surf City, North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Random Island, Newfoundland"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Canada"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Newfoundland"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "30 communities declared state of emergency",
-      "Annotation": "Aftermath"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "More than 50 families",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "St. Bernard's \u2013 Jacques Fontaine"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Canada"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Clarenville"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Canada"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Sunnyside"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Canada"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "South East Bight"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Canada"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Newfoundland"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "50 families relocated to evacuation shelters",
-      "Annotation": "Aftermath"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "More than 50 families",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "St. Bernard's \u2013 Jacques Fontaine",
+          "Clarenville"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Canada"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Marystown",
+          "Port Union"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "200 workers",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Newfoundland"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Bermuda",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Bermuda"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Bermuda",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Bermuda"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Bermuda",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Bermuda"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "65 million",
+      "Total_Insured_Damage_Unit": "USD",
+      "Total_Insured_Damage_Inflation_Adjusted": "No",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "Aftermath"
     },
-    {
-      "Administrative_Areas": "Canada",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Canada"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Bermuda",
-      "Locations": [
-        "St. George's Islands"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Bermuda"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "65 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Newfoundland"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "65 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$200 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "St. Bernard's \u2013 Jacques Fontaine",
-        "Clarenville",
-        "Sunnyside",
-        "Glovertown",
-        "South East Bight",
-        "Random Island"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Canada"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "4",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "Caribbean"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "Cape Verde and Leeward Islands"
-    },
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Areas": [
-        "Canada"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Canada"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Caribbean",
-      "Locations": [
-        "St. Croix",
-        "Puerto Rico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Cape Verde and Leeward Islands"
-    },
-    {
-      "Administrative_Area": "Caribbean",
-      "Locations": [
-        "Puerto Rico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Cape Verde and Leeward Islands"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Surf City, North Carolina"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Random Island, Newfoundland"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Canada"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Canada"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "More than 50 families",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "St. Bernard's \u2013 Jacques Fontaine"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Canada"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Clarenville"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Canada"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Sunnyside"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Canada"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "South East Bight"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Canada"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "Canada"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "More than 50 families",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "St. Bernard's \u2013 Jacques Fontaine",
-        "Clarenville"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Canada"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Marystown",
-        "Port Union"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "200 workers",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Bermuda",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Bermuda"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Bermuda",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Bermuda"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "65 million",
-    "Total_Insured_Damage_Unit": "USD",
-    "Total_Insured_Damage_Inflation_Adjusted": "No",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "Aftermath"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Canada"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "65 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Newfoundland"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "65 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$200 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Areas": [
-        "Canada"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$200 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Canada"
-    },
-    {
-      "Administrative_Areas": [
-        "Bermuda"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "less than $500,000",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Bermuda"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Surf City, North Carolina"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Newfoundland"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$200 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Canada"
-    },
-    {
-      "Administrative_Area": "Bermuda",
-      "Locations": [
-        "Bermuda"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "less than $500,000",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Bermuda"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Canada",
-  "Start_Date": "September 8, 2010",
-  "End_Date": "September 23, 2010",
-  "Time_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$200 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Canada"
+      },
+      {
+        "Administrative_Areas": [
+          "Bermuda"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "less than $500,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Bermuda"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Surf City, North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Newfoundland"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$200 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Canada"
+      },
+      {
+        "Administrative_Area": "Bermuda",
+        "Locations": [
+          "Bermuda"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "less than $500,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Bermuda"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Canada",
+    "Start_Date": "September 8, 2010",
+    "End_Date": "September 23, 2010",
+    "Time_Annotation": "Info_Box"
+  }
+]

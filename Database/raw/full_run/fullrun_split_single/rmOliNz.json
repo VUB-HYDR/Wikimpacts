@@ -1,302 +1,304 @@
-{
-  "Event_ID": "rmOliNz",
-  "Sources": "https://en.wikipedia.org/wiki/2008_Santa_Catarina_floods",
-  "Event_Names": "2008 Santa Catarina floods",
-  "Total_Summary_Affected": {
-    "Total_Affected": "over 1.5 million",
-    "Total_Affected_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Brazil"
-      ],
-      "Start_Date": "late November 2008",
-      "End_Date": "NULL",
-      "Num": "over 1.5 million",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Santa Catarina"
-      ],
-      "Start_Date": "late November 2008",
-      "End_Date": "NULL",
-      "Num": "over 1.5 million",
-      "Annotation": "Info_Box"
+[
+  {
+    "Event_ID": "rmOliNz",
+    "Sources": "https://en.wikipedia.org/wiki/2008_Santa_Catarina_floods",
+    "Event_Names": "2008 Santa Catarina floods",
+    "Total_Summary_Affected": {
+      "Total_Affected": "over 1.5 million",
+      "Total_Affected_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "60 towns"
-      ],
-      "Start_Date": "late November 2008",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Info_Box"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Brazil"
+        ],
+        "Start_Date": "late November 2008",
+        "End_Date": "NULL",
+        "Num": "over 1.5 million",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Santa Catarina"
+        ],
+        "Start_Date": "late November 2008",
+        "End_Date": "NULL",
+        "Num": "over 1.5 million",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "60 towns"
+        ],
+        "Start_Date": "late November 2008",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Blumenau"
+        ],
+        "Start_Date": "November 23, 2008",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Vale do Itaja\u00ed"
+        ],
+        "Start_Date": "late November 2008",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "at least one town"
+        ],
+        "Start_Date": "late November 2008",
+        "End_Date": "NULL",
+        "Num": "150,000",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Santa Catarina"
+        ],
+        "Start_Date": "late November 2008",
+        "End_Date": "NULL",
+        "Num": "78,700",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Blumenau"
-      ],
-      "Start_Date": "November 23, 2008",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Info_Box"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "Brazil"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Blumenau"
+        ],
+        "Start_Date": "20-11-2008",
+        "End_Date": "23-11-2008",
+        "Num": "NULL",
+        "Annotation": "2008 Santa Catarina floods"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "128",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Vale do Itaja\u00ed"
-      ],
-      "Start_Date": "late November 2008",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Info_Box"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "Brazil"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "128",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Santa Catarina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "128",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "over 78,700",
+      "Total_Displaced_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "at least one town"
-      ],
-      "Start_Date": "late November 2008",
-      "End_Date": "NULL",
-      "Num": "150,000",
-      "Annotation": "Info_Box"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Brazil"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "over 78,700",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Santa Catarina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "over 78,700",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Santa Catarina"
-      ],
-      "Start_Date": "late November 2008",
-      "End_Date": "NULL",
-      "Num": "78,700",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "Brazil"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Blumenau"
-      ],
-      "Start_Date": "20-11-2008",
-      "End_Date": "23-11-2008",
-      "Num": "NULL",
-      "Annotation": "2008 Santa Catarina floods"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "128",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "Brazil"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "128",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Santa Catarina"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "128",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "over 78,700",
-    "Total_Displaced_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Brazil"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "over 78,700",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Santa Catarina"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "over 78,700",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "Brazil"
-      ],
-      "Start_Date": "late November 2008",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "2008 Santa Catarina floods"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Santa Catarina"
-      ],
-      "Start_Date": "late November 2008",
-      "End_Date": "NULL",
-      "Num": "over 78,700",
-      "Annotation": "2008 Santa Catarina floods"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "Brazil"
-      ],
-      "Start_Date": "late November 2008",
-      "End_Date": "late November 2008",
-      "Num": "NULL",
-      "Annotation": "2008 Santa Catarina floods"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Santa Catarina"
-      ],
-      "Start_Date": "late November 2008",
-      "End_Date": "late November 2008",
-      "Num": "NULL",
-      "Annotation": "2008 Santa Catarina floods"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Brazil"
-      ],
-      "Start_Date": "late November 2008",
-      "End_Date": "late November 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "2008 Santa Catarina floods"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Itajai Valley",
-        "Santa Catarina"
-      ],
-      "Start_Date": "late November 2008",
-      "End_Date": "late November 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "2008 Santa Catarina floods"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "unknown",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "NULL",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "Brazil"
-      ],
-      "Start_Date": "late November 2008",
-      "End_Date": "late November 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Itajai Valley",
-        "Santa Catarina"
-      ],
-      "Start_Date": "late November 2008",
-      "End_Date": "late November 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Main_Event": "Flood",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Flood|Landslide",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "November 2008",
-  "End_Date": "late November 2008",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Brazil"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Brazil"
+        ],
+        "Start_Date": "late November 2008",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "2008 Santa Catarina floods"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Santa Catarina"
+        ],
+        "Start_Date": "late November 2008",
+        "End_Date": "NULL",
+        "Num": "over 78,700",
+        "Annotation": "2008 Santa Catarina floods"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "Brazil"
+        ],
+        "Start_Date": "late November 2008",
+        "End_Date": "late November 2008",
+        "Num": "NULL",
+        "Annotation": "2008 Santa Catarina floods"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Santa Catarina"
+        ],
+        "Start_Date": "late November 2008",
+        "End_Date": "late November 2008",
+        "Num": "NULL",
+        "Annotation": "2008 Santa Catarina floods"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Brazil"
+        ],
+        "Start_Date": "late November 2008",
+        "End_Date": "late November 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "2008 Santa Catarina floods"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Itajai Valley",
+          "Santa Catarina"
+        ],
+        "Start_Date": "late November 2008",
+        "End_Date": "late November 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "2008 Santa Catarina floods"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "unknown",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Brazil"
+        ],
+        "Start_Date": "late November 2008",
+        "End_Date": "late November 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Itajai Valley",
+          "Santa Catarina"
+        ],
+        "Start_Date": "late November 2008",
+        "End_Date": "late November 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Main_Event": "Flood",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Flood|Landslide",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "November 2008",
+    "End_Date": "late November 2008",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Brazil"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

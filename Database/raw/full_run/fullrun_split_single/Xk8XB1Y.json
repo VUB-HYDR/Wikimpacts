@@ -1,392 +1,394 @@
-{
-  "Event_ID": "Xk8XB1Y",
-  "Sources": "https://en.wikipedia.org/wiki/Hurricane_Anita",
-  "Event_Names": "Hurricane Anita",
-  "Total_Summary_Affected": {
-    "Total_Affected": "at least 50,000",
-    "Total_Affected_Annotation": "Mexico"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "at least 50,000",
-      "Annotation": "Mexico"
+[
+  {
+    "Event_ID": "Xk8XB1Y",
+    "Sources": "https://en.wikipedia.org/wiki/Hurricane_Anita",
+    "Event_Names": "Hurricane Anita",
+    "Total_Summary_Affected": {
+      "Total_Affected": "at least 50,000",
+      "Total_Affected_Annotation": "Mexico"
     },
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "58,000",
-      "Annotation": "Preparations"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Cameron Parish, Louisiana"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "20,000",
-      "Annotation": "Preparations"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 50,000",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "58,000",
+        "Annotation": "Preparations"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Cameron Parish, Louisiana"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "20,000",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Louisiana",
+          "Texas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "58,000",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Tamaulipas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "25,000",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Louisiana",
-        "Texas"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "58,000",
-      "Annotation": "Preparations"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "September 2, 1977",
+        "End_Date": "September 3, 1977",
+        "Num": "NULL",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "northeastern Mexico"
+        ],
+        "Start_Date": "September 2, 1977",
+        "End_Date": "September 3, 1977",
+        "Num": "thousands of homes",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "near where the hurricane moved ashore"
+        ],
+        "Start_Date": "September 2, 1977",
+        "End_Date": "September 3, 1977",
+        "Num": "most buildings",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "11 direct",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Tamaulipas"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "25,000",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "September 2, 1977",
-      "End_Date": "September 3, 1977",
-      "Num": "NULL",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "northeastern Mexico"
-      ],
-      "Start_Date": "September 2, 1977",
-      "End_Date": "September 3, 1977",
-      "Num": "thousands of homes",
-      "Annotation": "Mexico"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "11",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Tamaulipas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "11",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "near where the hurricane moved ashore"
-      ],
-      "Start_Date": "September 2, 1977",
-      "End_Date": "September 3, 1977",
-      "Num": "most buildings",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "11 direct",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "11",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Tamaulipas"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "11",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "58,000",
-      "Annotation": "Preparations"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "58,000",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "35,000",
+        "Annotation": "Preparations"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Cameron Parish, Louisiana"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "20,000",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Louisiana",
+          "Texas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "58,000",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Northeastern coastline"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "35,000",
+        "Annotation": "Preparations"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "about 25,000 people",
+      "Total_Homeless_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "35,000",
-      "Annotation": "Preparations"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Cameron Parish, Louisiana"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "20,000",
-      "Annotation": "Preparations"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "about 25,000 people",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "villages in northeastern Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "about 25,000 people",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Louisiana",
-        "Texas"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "58,000",
-      "Annotation": "Preparations"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Miami",
+          "Galliano",
+          "Grand Isle",
+          "South Padre Island"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Tamaulipas",
+          "Tampico",
+          "Ciudad Victoria"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Northeastern coastline"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "35,000",
-      "Annotation": "Preparations"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "about 25,000 people",
-    "Total_Homeless_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "about 25,000 people",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "villages in northeastern Mexico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "about 25,000 people",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "United States"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States",
+          "Mexico"
+        ],
+        "Start_Date": "August 29, 1977",
+        "End_Date": "September 4, 1977",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Miami",
+          "Galliano",
+          "Grand Isle",
+          "South Padre Island",
+          "Rio Grande City"
+        ],
+        "Start_Date": "August 29, 1977",
+        "End_Date": "September 4, 1977",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Soto la Marina",
+          "Tampico",
+          "Ciudad Victoria"
+        ],
+        "Start_Date": "August 29, 1977",
+        "End_Date": "September 4, 1977",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "NULL",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Miami",
-        "Galliano",
-        "Grand Isle",
-        "South Padre Island"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Tamaulipas",
-        "Tampico",
-        "Ciudad Victoria"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States",
-        "Mexico"
-      ],
-      "Start_Date": "August 29, 1977",
-      "End_Date": "September 4, 1977",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Miami",
-        "Galliano",
-        "Grand Isle",
-        "South Padre Island",
-        "Rio Grande City"
-      ],
-      "Start_Date": "August 29, 1977",
-      "End_Date": "September 4, 1977",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Soto la Marina",
-        "Tampico",
-        "Ciudad Victoria"
-      ],
-      "Start_Date": "August 29, 1977",
-      "End_Date": "September 4, 1977",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "NULL",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "NULL",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "August 29, 1977",
-      "End_Date": "September 4, 1977",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "August 29, 1977",
-      "End_Date": "September 4, 1977",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Miami",
-        "Galliano",
-        "Grand Isle",
-        "Texas coastline",
-        "South Padre Island"
-      ],
-      "Start_Date": "August 29, 1977",
-      "End_Date": "September 4, 1977",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Tamaulipas",
-        "Tampico",
-        "Ciudad Victoria"
-      ],
-      "Start_Date": "August 29, 1977",
-      "End_Date": "September 4, 1977",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Mexico",
-  "Start_Date": "August 29, 1977",
-  "End_Date": "September 4, 1977",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "United States",
-    "Mexico"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "August 29, 1977",
+        "End_Date": "September 4, 1977",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "August 29, 1977",
+        "End_Date": "September 4, 1977",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Miami",
+          "Galliano",
+          "Grand Isle",
+          "Texas coastline",
+          "South Padre Island"
+        ],
+        "Start_Date": "August 29, 1977",
+        "End_Date": "September 4, 1977",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Tamaulipas",
+          "Tampico",
+          "Ciudad Victoria"
+        ],
+        "Start_Date": "August 29, 1977",
+        "End_Date": "September 4, 1977",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Mexico",
+    "Start_Date": "August 29, 1977",
+    "End_Date": "September 4, 1977",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "United States",
+      "Mexico"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

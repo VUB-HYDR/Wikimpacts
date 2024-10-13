@@ -1,404 +1,406 @@
-{
-  "Event_ID": "TksIJ9y",
-  "Sources": "https://en.wikipedia.org/wiki/Great_flood_of_99",
-  "Event_Names": "Great flood of 99",
-  "Total_Summary_Affected": {
-    "Total_Affected": "at least 1,000",
-    "Total_Affected_Annotation": "Aftermath"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "India"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Ambalapuzha",
-        "Alleppey",
-        "Kottayam",
-        "Changanassery",
-        "Parur"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "4000",
-      "Annotation": "Aftermath"
+[
+  {
+    "Event_ID": "TksIJ9y",
+    "Sources": "https://en.wikipedia.org/wiki/Great_flood_of_99",
+    "Event_Names": "Great flood of 99",
+    "Total_Summary_Affected": {
+      "Total_Affected": "at least 1,000",
+      "Total_Affected_Annotation": "Aftermath"
     },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Alleppey"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3000",
-      "Annotation": "Aftermath"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "India"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Ambalapuzha",
+          "Alleppey",
+          "Kottayam",
+          "Changanassery",
+          "Parur"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4000",
+        "Annotation": "Aftermath"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Alleppey"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3000",
+        "Annotation": "Aftermath"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Kottayam"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5000",
+        "Annotation": "Aftermath"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Changanassery"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3000",
+        "Annotation": "Aftermath"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Parur"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8000",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Kottayam"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "5000",
-      "Annotation": "Aftermath"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "India"
+        ],
+        "Start_Date": "July 1924",
+        "End_Date": "August 1924",
+        "Num": "NULL",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Travancore",
+          "Cochin",
+          "Malabar"
+        ],
+        "Start_Date": "July 1924",
+        "End_Date": "August 1924",
+        "Num": "NULL",
+        "Annotation": "Aftermath"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Munnar"
+        ],
+        "Start_Date": "July 1924",
+        "End_Date": "August 1924",
+        "Num": "NULL",
+        "Annotation": "Aftermath"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Aluva",
+          "Perumbavoor"
+        ],
+        "Start_Date": "July 1924",
+        "End_Date": "August 1924",
+        "Num": "NULL",
+        "Annotation": "Aftermath"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Ambalapuzha",
+          "Alleppey",
+          "Kottayam",
+          "Changanassery",
+          "Parur"
+        ],
+        "Start_Date": "July 1924",
+        "End_Date": "August 1924",
+        "Num": "NULL",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "at least 1,000",
+      "Total_Deaths_Annotation": "Aftermath"
     },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Changanassery"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3000",
-      "Annotation": "Aftermath"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "India"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Alwaye"
+        ],
+        "Start_Date": "16 July 1924",
+        "End_Date": "17 July 1924",
+        "Num": "NULL",
+        "Annotation": "Reports"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Parur"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "8000",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "India"
-      ],
-      "Start_Date": "July 1924",
-      "End_Date": "August 1924",
-      "Num": "NULL",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Travancore",
-        "Cochin",
-        "Malabar"
-      ],
-      "Start_Date": "July 1924",
-      "End_Date": "August 1924",
-      "Num": "NULL",
-      "Annotation": "Aftermath"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "India"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Ambalapuzha"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4000",
+        "Annotation": "Aftermath"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Alleppey"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3000",
+        "Annotation": "Aftermath"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Kottayam"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5000",
+        "Annotation": "Aftermath"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Changanassery"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3000",
+        "Annotation": "Aftermath"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Parur"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8000",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Munnar"
-      ],
-      "Start_Date": "July 1924",
-      "End_Date": "August 1924",
-      "Num": "NULL",
-      "Annotation": "Aftermath"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "India"
+        ],
+        "Start_Date": "July 1924",
+        "End_Date": "August 1924",
+        "Num": "NULL",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Ambalapuzha",
+          "Alleppey",
+          "Kottayam",
+          "Changanassery",
+          "Parur"
+        ],
+        "Start_Date": "July 1924",
+        "End_Date": "August 1924",
+        "Num": "4000 at Ambalapuzha, 3000 at Alleppey, 5000 in Kottayam, 3000 in Changanassery, 8000 in Parur",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Aluva",
-        "Perumbavoor"
-      ],
-      "Start_Date": "July 1924",
-      "End_Date": "August 1924",
-      "Num": "NULL",
-      "Annotation": "Aftermath"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "India"
+        ],
+        "Start_Date": "July 1924",
+        "End_Date": "August 1924",
+        "Num": "NULL",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Alwaye"
+        ],
+        "Start_Date": "16 July 1924",
+        "End_Date": "17 July 1924",
+        "Num": "NULL",
+        "Annotation": "Reports"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Ambalapuzha",
-        "Alleppey",
-        "Kottayam",
-        "Changanassery",
-        "Parur"
-      ],
-      "Start_Date": "July 1924",
-      "End_Date": "August 1924",
-      "Num": "NULL",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "at least 1,000",
-    "Total_Deaths_Annotation": "Aftermath"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "India"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Alwaye"
-      ],
-      "Start_Date": "16 July 1924",
-      "End_Date": "17 July 1924",
-      "Num": "NULL",
-      "Annotation": "Reports"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "India"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Ambalapuzha"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "4000",
-      "Annotation": "Aftermath"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "India"
+        ],
+        "Start_Date": "July 1924",
+        "End_Date": "August 1924",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Karimkulam",
+          "Karimtharuvi"
+        ],
+        "Start_Date": "July 1924",
+        "End_Date": "August 1924",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Cause"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "NULL",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Alleppey"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3000",
-      "Annotation": "Aftermath"
-    },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Kottayam"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "5000",
-      "Annotation": "Aftermath"
-    },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Changanassery"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3000",
-      "Annotation": "Aftermath"
-    },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Parur"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "8000",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "India"
-      ],
-      "Start_Date": "July 1924",
-      "End_Date": "August 1924",
-      "Num": "NULL",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Ambalapuzha",
-        "Alleppey",
-        "Kottayam",
-        "Changanassery",
-        "Parur"
-      ],
-      "Start_Date": "July 1924",
-      "End_Date": "August 1924",
-      "Num": "4000 at Ambalapuzha, 3000 at Alleppey, 5000 in Kottayam, 3000 in Changanassery, 8000 in Parur",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "India"
-      ],
-      "Start_Date": "July 1924",
-      "End_Date": "August 1924",
-      "Num": "NULL",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Alwaye"
-      ],
-      "Start_Date": "16 July 1924",
-      "End_Date": "17 July 1924",
-      "Num": "NULL",
-      "Annotation": "Reports"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "India"
-      ],
-      "Start_Date": "July 1924",
-      "End_Date": "August 1924",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Karimkulam",
-        "Karimtharuvi"
-      ],
-      "Start_Date": "July 1924",
-      "End_Date": "August 1924",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Cause"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "NULL",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "NULL",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "India"
-      ],
-      "Start_Date": "July 1924",
-      "End_Date": "August 1924",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Karimkulam",
-        "Karimtharuvi"
-      ],
-      "Start_Date": "July 1924",
-      "End_Date": "August 1924",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Cause"
-    },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Munnar"
-      ],
-      "Start_Date": "July 1924",
-      "End_Date": "August 1924",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Aftermath"
-    },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Aluva",
-        "Perumbavoor"
-      ],
-      "Start_Date": "July 1924",
-      "End_Date": "August 1924",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Main_Event": "Flood",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Flood",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "July 1924",
-  "End_Date": "August 1924",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "India"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "India"
+        ],
+        "Start_Date": "July 1924",
+        "End_Date": "August 1924",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Karimkulam",
+          "Karimtharuvi"
+        ],
+        "Start_Date": "July 1924",
+        "End_Date": "August 1924",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Cause"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Munnar"
+        ],
+        "Start_Date": "July 1924",
+        "End_Date": "August 1924",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Aftermath"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Aluva",
+          "Perumbavoor"
+        ],
+        "Start_Date": "July 1924",
+        "End_Date": "August 1924",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Main_Event": "Flood",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Flood",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "July 1924",
+    "End_Date": "August 1924",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "India"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

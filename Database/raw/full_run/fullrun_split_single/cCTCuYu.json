@@ -1,772 +1,774 @@
-{
-  "Event_ID": "cCTCuYu",
-  "Sources": "https://en.wikipedia.org/wiki/1970_Atlantic_hurricane_season",
-  "Event_Names": "1970 Atlantic hurricane season",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Cuba"
-      ],
-      "Start_Date": "May 24",
-      "End_Date": "May 24",
-      "Num": "3,000 people evacuated",
-      "Annotation": "Hurricane Alma"
+[
+  {
+    "Event_ID": "cCTCuYu",
+    "Sources": "https://en.wikipedia.org/wiki/1970_Atlantic_hurricane_season",
+    "Event_Names": "1970 Atlantic hurricane season",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "July 22",
-      "End_Date": "July 23",
-      "Num": "104 families",
-      "Annotation": "Tropical Storm Becky"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Cuba"
+        ],
+        "Start_Date": "May 24",
+        "End_Date": "May 24",
+        "Num": "3,000 people evacuated",
+        "Annotation": "Hurricane Alma"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "July 22",
+        "End_Date": "July 23",
+        "Num": "104 families",
+        "Annotation": "Tropical Storm Becky"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "August 3",
+        "End_Date": "August 5",
+        "Num": "NULL",
+        "Annotation": "Hurricane Celia"
+      },
+      {
+        "Administrative_Areas": [
+          "Martinique"
+        ],
+        "Start_Date": "August 20",
+        "End_Date": "August 22",
+        "Num": "700 people homeless",
+        "Annotation": "Tropical Storm Dorothy"
+      },
+      {
+        "Administrative_Areas": [
+          "Puerto Rico"
+        ],
+        "Start_Date": "October",
+        "End_Date": "October",
+        "Num": "10,000 people homeless",
+        "Annotation": "October hurricane"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Oriente Province"
+        ],
+        "Start_Date": "May 24",
+        "End_Date": "May 24",
+        "Num": "3,000 people evacuated",
+        "Annotation": "Hurricane Alma"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Tallahassee"
+        ],
+        "Start_Date": "July 22",
+        "End_Date": "July 23",
+        "Num": "104 families",
+        "Annotation": "Tropical Storm Becky"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Corpus Christi"
+        ],
+        "Start_Date": "August 3",
+        "End_Date": "August 5",
+        "Num": "NULL",
+        "Annotation": "Hurricane Celia"
+      },
+      {
+        "Administrative_Area": "Martinique",
+        "Locations": [
+          "Martinique"
+        ],
+        "Start_Date": "August 20",
+        "End_Date": "August 22",
+        "Num": "700 people homeless",
+        "Annotation": "Tropical Storm Dorothy"
+      },
+      {
+        "Administrative_Area": "Puerto Rico",
+        "Locations": [
+          "Jayuya"
+        ],
+        "Start_Date": "October",
+        "End_Date": "October",
+        "Num": "10,000 people homeless",
+        "Annotation": "October hurricane"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "August 3",
-      "End_Date": "August 5",
-      "Num": "NULL",
-      "Annotation": "Hurricane Celia"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "May 24",
+        "End_Date": "May 24",
+        "Num": "several homes",
+        "Annotation": "Hurricane Alma"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "July 22",
+        "End_Date": "July 23",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm Becky"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "August 3",
+        "End_Date": "August 5",
+        "Num": "8,950 homes, 55,650 others, 252 small businesses, 331 boats, 310 farm buildings",
+        "Annotation": "Hurricane Celia"
+      },
+      {
+        "Administrative_Areas": "Martinique",
+        "Start_Date": "August 20",
+        "End_Date": "August 22",
+        "Num": "186 homes",
+        "Annotation": "Tropical Storm Dorothy"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "September 12",
+        "End_Date": "September 13",
+        "Num": "several homes",
+        "Annotation": "Hurricane Ella"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "September 15",
+        "End_Date": "September 18",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm Felice"
+      },
+      {
+        "Administrative_Areas": "Barbados",
+        "Start_Date": "October 2",
+        "End_Date": "October 5",
+        "Num": "NULL",
+        "Annotation": "October hurricane"
+      },
+      {
+        "Administrative_Areas": "Puerto Rico",
+        "Start_Date": "October 2",
+        "End_Date": "October 5",
+        "Num": "600 houses, 1,000 sustained damage",
+        "Annotation": "October hurricane"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Oriente Province"
+        ],
+        "Start_Date": "May 24",
+        "End_Date": "May 24",
+        "Num": "several homes",
+        "Annotation": "Hurricane Alma"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Tallahassee",
+          "Wakulla County",
+          "Panacea",
+          "Fort Myers",
+          "Miami",
+          "Columbia"
+        ],
+        "Start_Date": "July 22",
+        "End_Date": "July 23",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm Becky"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Corpus Christi",
+          "Nueces County"
+        ],
+        "Start_Date": "August 3",
+        "End_Date": "August 5",
+        "Num": "8,950 homes, 55,650 others, 252 small businesses, 331 boats, 310 farm buildings",
+        "Annotation": "Hurricane Celia"
+      },
+      {
+        "Administrative_Area": "Martinique",
+        "Locations": [
+          "Martinique"
+        ],
+        "Start_Date": "August 20",
+        "End_Date": "August 22",
+        "Num": "186 homes",
+        "Annotation": "Tropical Storm Dorothy"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "San Marcos River"
+        ],
+        "Start_Date": "September 12",
+        "End_Date": "September 13",
+        "Num": "several homes",
+        "Annotation": "Hurricane Ella"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Galveston",
+          "southern Florida",
+          "Louisiana",
+          "northern Texas",
+          "Oklahoma"
+        ],
+        "Start_Date": "September 15",
+        "End_Date": "September 18",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm Felice"
+      },
+      {
+        "Administrative_Area": "Barbados",
+        "Locations": [
+          "Barbados"
+        ],
+        "Start_Date": "October 2",
+        "End_Date": "October 5",
+        "Num": "NULL",
+        "Annotation": "October hurricane"
+      },
+      {
+        "Administrative_Area": "Puerto Rico",
+        "Locations": [
+          "Jayuya"
+        ],
+        "Start_Date": "October 2",
+        "End_Date": "October 5",
+        "Num": "600 houses, 1,000 sustained damage",
+        "Annotation": "October hurricane"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "115",
+      "Total_Deaths_Annotation": "Season summary"
     },
-    {
-      "Administrative_Areas": [
-        "Martinique"
-      ],
-      "Start_Date": "August 20",
-      "End_Date": "August 22",
-      "Num": "700 people homeless",
-      "Annotation": "Tropical Storm Dorothy"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": "Florida",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": "Texas",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": "Martinique",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": "Puerto Rico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": "North Carolina",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": "Virginia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": "United States Virgin Islands",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Oriente Province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "7",
+        "Annotation": "Hurricane Alma"
+      },
+      {
+        "Administrative_Area": "Florida",
+        "Locations": [
+          "Miami"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Hurricane Alma"
+      },
+      {
+        "Administrative_Area": "Florida",
+        "Locations": [
+          "Tallahassee"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Tropical Storm Becky"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5",
+        "Annotation": "Hurricane Celia"
+      },
+      {
+        "Administrative_Area": "Florida",
+        "Locations": [
+          "Panhandle"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8",
+        "Annotation": "Hurricane Celia"
+      },
+      {
+        "Administrative_Area": "Texas",
+        "Locations": [
+          "Nueces County"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "15",
+        "Annotation": "Hurricane Celia"
+      },
+      {
+        "Administrative_Area": "Martinique",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "51",
+        "Annotation": "Tropical Storm Dorothy"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Hurricane Ella"
+      },
+      {
+        "Administrative_Area": "North Carolina",
+        "Locations": [
+          "Atlantic Beach",
+          "Rodanthe"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "August hurricane"
+      },
+      {
+        "Administrative_Area": "Virginia",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "August hurricane"
+      },
+      {
+        "Administrative_Area": "Puerto Rico",
+        "Locations": [
+          "Jayuya"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "18",
+        "Annotation": "October hurricane"
+      },
+      {
+        "Administrative_Area": "United States Virgin Islands",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "October hurricane"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": [
-        "Puerto Rico"
-      ],
-      "Start_Date": "October",
-      "End_Date": "October",
-      "Num": "10,000 people homeless",
-      "Annotation": "October hurricane"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Oriente Province"
-      ],
-      "Start_Date": "May 24",
-      "End_Date": "May 24",
-      "Num": "3,000 people evacuated",
-      "Annotation": "Hurricane Alma"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "May 24",
+        "End_Date": "NULL",
+        "Num": "3,000 people",
+        "Annotation": "Hurricane Alma"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "July 22",
+        "End_Date": "NULL",
+        "Num": "104 families",
+        "Annotation": "Tropical Storm Becky"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "July 22",
+        "End_Date": "NULL",
+        "Num": "15 households",
+        "Annotation": "Tropical Storm Becky"
+      },
+      {
+        "Administrative_Areas": "Puerto Rico",
+        "Start_Date": "October",
+        "End_Date": "NULL",
+        "Num": "10,000 people",
+        "Annotation": "October hurricane"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Oriente Province"
+        ],
+        "Start_Date": "May 24",
+        "End_Date": "NULL",
+        "Num": "3,000 people",
+        "Annotation": "Hurricane Alma"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Tallahassee"
+        ],
+        "Start_Date": "July 22",
+        "End_Date": "NULL",
+        "Num": "104 families",
+        "Annotation": "Tropical Storm Becky"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Tallahassee"
+        ],
+        "Start_Date": "July 22",
+        "End_Date": "NULL",
+        "Num": "15 households",
+        "Annotation": "Tropical Storm Becky"
+      },
+      {
+        "Administrative_Area": "Puerto Rico",
+        "Locations": [
+          "Jayuya"
+        ],
+        "Start_Date": "October",
+        "End_Date": "NULL",
+        "Num": "10,000 people",
+        "Annotation": "October hurricane"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Tallahassee"
-      ],
-      "Start_Date": "July 22",
-      "End_Date": "July 23",
-      "Num": "104 families",
-      "Annotation": "Tropical Storm Becky"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "104 families",
+        "Annotation": "Tropical Storm Becky"
+      },
+      {
+        "Administrative_Areas": "Martinique",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "700 people",
+        "Annotation": "Tropical Storm Dorothy"
+      },
+      {
+        "Administrative_Areas": "Puerto Rico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "about 10,000 people",
+        "Annotation": "October hurricane"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Tallahassee"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "104 families",
+        "Annotation": "Tropical Storm Becky"
+      },
+      {
+        "Administrative_Area": "Martinique",
+        "Locations": [
+          "Martinique"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "700 people",
+        "Annotation": "Tropical Storm Dorothy"
+      },
+      {
+        "Administrative_Area": "Puerto Rico",
+        "Locations": [
+          "Puerto Rico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "about 10,000 people",
+        "Annotation": "October hurricane"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Corpus Christi"
-      ],
-      "Start_Date": "August 3",
-      "End_Date": "August 5",
-      "Num": "NULL",
-      "Annotation": "Hurricane Celia"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "July 20",
+        "End_Date": "July 23",
+        "Num": "2",
+        "Annotation": "Tropical Storm Becky"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Tallahassee"
+        ],
+        "Start_Date": "July 20",
+        "End_Date": "July 23",
+        "Num": "2",
+        "Annotation": "Tropical Storm Becky"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Martinique",
-      "Locations": [
-        "Martinique"
-      ],
-      "Start_Date": "August 20",
-      "End_Date": "August 22",
-      "Num": "700 people homeless",
-      "Annotation": "Tropical Storm Dorothy"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$1.03 billion",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Puerto Rico",
-      "Locations": [
-        "Jayuya"
-      ],
-      "Start_Date": "October",
-      "End_Date": "October",
-      "Num": "10,000 people homeless",
-      "Annotation": "October hurricane"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "May 24",
-      "End_Date": "May 24",
-      "Num": "several homes",
-      "Annotation": "Hurricane Alma"
-    },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "July 22",
-      "End_Date": "July 23",
-      "Num": "NULL",
-      "Annotation": "Tropical Storm Becky"
-    },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "August 3",
-      "End_Date": "August 5",
-      "Num": "8,950 homes, 55,650 others, 252 small businesses, 331 boats, 310 farm buildings",
-      "Annotation": "Hurricane Celia"
-    },
-    {
-      "Administrative_Areas": "Martinique",
-      "Start_Date": "August 20",
-      "End_Date": "August 22",
-      "Num": "186 homes",
-      "Annotation": "Tropical Storm Dorothy"
-    },
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "September 12",
-      "End_Date": "September 13",
-      "Num": "several homes",
-      "Annotation": "Hurricane Ella"
-    },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "September 15",
-      "End_Date": "September 18",
-      "Num": "NULL",
-      "Annotation": "Tropical Storm Felice"
-    },
-    {
-      "Administrative_Areas": "Barbados",
-      "Start_Date": "October 2",
-      "End_Date": "October 5",
-      "Num": "NULL",
-      "Annotation": "October hurricane"
-    },
-    {
-      "Administrative_Areas": "Puerto Rico",
-      "Start_Date": "October 2",
-      "End_Date": "October 5",
-      "Num": "600 houses, 1,000 sustained damage",
-      "Annotation": "October hurricane"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Oriente Province"
-      ],
-      "Start_Date": "May 24",
-      "End_Date": "May 24",
-      "Num": "several homes",
-      "Annotation": "Hurricane Alma"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Tallahassee",
-        "Wakulla County",
-        "Panacea",
-        "Fort Myers",
-        "Miami",
-        "Columbia"
-      ],
-      "Start_Date": "July 22",
-      "End_Date": "July 23",
-      "Num": "NULL",
-      "Annotation": "Tropical Storm Becky"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Corpus Christi",
-        "Nueces County"
-      ],
-      "Start_Date": "August 3",
-      "End_Date": "August 5",
-      "Num": "8,950 homes, 55,650 others, 252 small businesses, 331 boats, 310 farm buildings",
-      "Annotation": "Hurricane Celia"
-    },
-    {
-      "Administrative_Area": "Martinique",
-      "Locations": [
-        "Martinique"
-      ],
-      "Start_Date": "August 20",
-      "End_Date": "August 22",
-      "Num": "186 homes",
-      "Annotation": "Tropical Storm Dorothy"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "San Marcos River"
-      ],
-      "Start_Date": "September 12",
-      "End_Date": "September 13",
-      "Num": "several homes",
-      "Annotation": "Hurricane Ella"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Galveston",
-        "southern Florida",
-        "Louisiana",
-        "northern Texas",
-        "Oklahoma"
-      ],
-      "Start_Date": "September 15",
-      "End_Date": "September 18",
-      "Num": "NULL",
-      "Annotation": "Tropical Storm Felice"
-    },
-    {
-      "Administrative_Area": "Barbados",
-      "Locations": [
-        "Barbados"
-      ],
-      "Start_Date": "October 2",
-      "End_Date": "October 5",
-      "Num": "NULL",
-      "Annotation": "October hurricane"
-    },
-    {
-      "Administrative_Area": "Puerto Rico",
-      "Locations": [
-        "Jayuya"
-      ],
-      "Start_Date": "October 2",
-      "End_Date": "October 5",
-      "Num": "600 houses, 1,000 sustained damage",
-      "Annotation": "October hurricane"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "115",
-    "Total_Deaths_Annotation": "Season summary"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    },
-    {
-      "Administrative_Areas": "Florida",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    },
-    {
-      "Administrative_Areas": "Texas",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    },
-    {
-      "Administrative_Areas": "Martinique",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    },
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    },
-    {
-      "Administrative_Areas": "Puerto Rico",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    },
-    {
-      "Administrative_Areas": "North Carolina",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    },
-    {
-      "Administrative_Areas": "Virginia",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    },
-    {
-      "Administrative_Areas": "United States Virgin Islands",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Oriente Province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "7",
-      "Annotation": "Hurricane Alma"
-    },
-    {
-      "Administrative_Area": "Florida",
-      "Locations": [
-        "Miami"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Hurricane Alma"
-    },
-    {
-      "Administrative_Area": "Florida",
-      "Locations": [
-        "Tallahassee"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Tropical Storm Becky"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "5",
-      "Annotation": "Hurricane Celia"
-    },
-    {
-      "Administrative_Area": "Florida",
-      "Locations": [
-        "Panhandle"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "8",
-      "Annotation": "Hurricane Celia"
-    },
-    {
-      "Administrative_Area": "Texas",
-      "Locations": [
-        "Nueces County"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "15",
-      "Annotation": "Hurricane Celia"
-    },
-    {
-      "Administrative_Area": "Martinique",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "51",
-      "Annotation": "Tropical Storm Dorothy"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Hurricane Ella"
-    },
-    {
-      "Administrative_Area": "North Carolina",
-      "Locations": [
-        "Atlantic Beach",
-        "Rodanthe"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "August hurricane"
-    },
-    {
-      "Administrative_Area": "Virginia",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "August hurricane"
-    },
-    {
-      "Administrative_Area": "Puerto Rico",
-      "Locations": [
-        "Jayuya"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "18",
-      "Annotation": "October hurricane"
-    },
-    {
-      "Administrative_Area": "United States Virgin Islands",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "October hurricane"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "May 24",
-      "End_Date": "NULL",
-      "Num": "3,000 people",
-      "Annotation": "Hurricane Alma"
-    },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "July 22",
-      "End_Date": "NULL",
-      "Num": "104 families",
-      "Annotation": "Tropical Storm Becky"
-    },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "July 22",
-      "End_Date": "NULL",
-      "Num": "15 households",
-      "Annotation": "Tropical Storm Becky"
-    },
-    {
-      "Administrative_Areas": "Puerto Rico",
-      "Start_Date": "October",
-      "End_Date": "NULL",
-      "Num": "10,000 people",
-      "Annotation": "October hurricane"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Oriente Province"
-      ],
-      "Start_Date": "May 24",
-      "End_Date": "NULL",
-      "Num": "3,000 people",
-      "Annotation": "Hurricane Alma"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Tallahassee"
-      ],
-      "Start_Date": "July 22",
-      "End_Date": "NULL",
-      "Num": "104 families",
-      "Annotation": "Tropical Storm Becky"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Tallahassee"
-      ],
-      "Start_Date": "July 22",
-      "End_Date": "NULL",
-      "Num": "15 households",
-      "Annotation": "Tropical Storm Becky"
-    },
-    {
-      "Administrative_Area": "Puerto Rico",
-      "Locations": [
-        "Jayuya"
-      ],
-      "Start_Date": "October",
-      "End_Date": "NULL",
-      "Num": "10,000 people",
-      "Annotation": "October hurricane"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "104 families",
-      "Annotation": "Tropical Storm Becky"
-    },
-    {
-      "Administrative_Areas": "Martinique",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "700 people",
-      "Annotation": "Tropical Storm Dorothy"
-    },
-    {
-      "Administrative_Areas": "Puerto Rico",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "about 10,000 people",
-      "Annotation": "October hurricane"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Tallahassee"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "104 families",
-      "Annotation": "Tropical Storm Becky"
-    },
-    {
-      "Administrative_Area": "Martinique",
-      "Locations": [
-        "Martinique"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "700 people",
-      "Annotation": "Tropical Storm Dorothy"
-    },
-    {
-      "Administrative_Area": "Puerto Rico",
-      "Locations": [
-        "Puerto Rico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "about 10,000 people",
-      "Annotation": "October hurricane"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "July 20",
-      "End_Date": "July 23",
-      "Num": "2",
-      "Annotation": "Tropical Storm Becky"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Tallahassee"
-      ],
-      "Start_Date": "July 20",
-      "End_Date": "July 23",
-      "Num": "2",
-      "Annotation": "Tropical Storm Becky"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "NULL",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$1.03 billion",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$930 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Celia"
-    },
-    {
-      "Administrative_Areas": [
-        "Martinique"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$34 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Tropical Storm Dorothy"
-    },
-    {
-      "Administrative_Areas": [
-        "Puerto Rico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$65.5 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "October hurricane"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Corpus Christi",
-        "Nueces County"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$930 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Celia"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Tallahassee",
-        "Wakulla County"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$500,000",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Tropical Storm Becky"
-    },
-    {
-      "Administrative_Area": "Martinique",
-      "Locations": [
-        "Martinique"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$34 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Tropical Storm Dorothy"
-    },
-    {
-      "Administrative_Area": "Puerto Rico",
-      "Locations": [
-        "Jayuya"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$65.5 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "October hurricane"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood|Lightning",
-  "Hazards_Annotation": "Info_Box|Hurricane Alma|Tropical Storm Becky|Hurricane Celia|August hurricane|Tropical Storm Dorothy|Hurricane Ella|Tropical Storm Felice|Late September tropical storm|October hurricane|Late October hurricane|November tropical storm|Tropical depressions",
-  "Start_Date": "June 1, 1970",
-  "End_Date": "November 30, 1970",
-  "Time_Annotation": "Season summary",
-  "Administrative_Areas": [
-    "United States",
-    "Cuba",
-    "Mexico",
-    "Martinique",
-    "Puerto Rico",
-    "Dominica",
-    "Guadeloupe",
-    "Honduras",
-    "Dominican Republic",
-    "Barbados",
-    "Saint Pierre and Miquelon"
-  ],
-  "Administrative_Areas_Annotation": "Season summary"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$930 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Celia"
+      },
+      {
+        "Administrative_Areas": [
+          "Martinique"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$34 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tropical Storm Dorothy"
+      },
+      {
+        "Administrative_Areas": [
+          "Puerto Rico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$65.5 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "October hurricane"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Corpus Christi",
+          "Nueces County"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$930 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Celia"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Tallahassee",
+          "Wakulla County"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$500,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tropical Storm Becky"
+      },
+      {
+        "Administrative_Area": "Martinique",
+        "Locations": [
+          "Martinique"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$34 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tropical Storm Dorothy"
+      },
+      {
+        "Administrative_Area": "Puerto Rico",
+        "Locations": [
+          "Jayuya"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$65.5 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "October hurricane"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood|Lightning",
+    "Hazards_Annotation": "Info_Box|Hurricane Alma|Tropical Storm Becky|Hurricane Celia|August hurricane|Tropical Storm Dorothy|Hurricane Ella|Tropical Storm Felice|Late September tropical storm|October hurricane|Late October hurricane|November tropical storm|Tropical depressions",
+    "Start_Date": "June 1, 1970",
+    "End_Date": "November 30, 1970",
+    "Time_Annotation": "Season summary",
+    "Administrative_Areas": [
+      "United States",
+      "Cuba",
+      "Mexico",
+      "Martinique",
+      "Puerto Rico",
+      "Dominica",
+      "Guadeloupe",
+      "Honduras",
+      "Dominican Republic",
+      "Barbados",
+      "Saint Pierre and Miquelon"
+    ],
+    "Administrative_Areas_Annotation": "Season summary"
+  }
+]

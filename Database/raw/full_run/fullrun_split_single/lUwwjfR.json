@@ -1,700 +1,702 @@
-{
-  "Event_ID": "lUwwjfR",
-  "Sources": "https://en.wikipedia.org/wiki/Typhoon_Nanmadol_(2011)",
-  "Event_Names": "Typhoon Nanmadol (2011)",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "August 23, 2011",
-      "End_Date": "September 2, 2011",
-      "Num": "108,788 people",
-      "Annotation": "Philippines"
+[
+  {
+    "Event_ID": "lUwwjfR",
+    "Sources": "https://en.wikipedia.org/wiki/Typhoon_Nanmadol_(2011)",
+    "Event_Names": "Typhoon Nanmadol (2011)",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Taiwan",
-      "Start_Date": "August 26, 2011",
-      "End_Date": "August 30, 2011",
-      "Num": "several thousands of people",
-      "Annotation": "Taiwan"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "August 23, 2011",
+        "End_Date": "September 2, 2011",
+        "Num": "108,788 people",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Taiwan",
+        "Start_Date": "August 26, 2011",
+        "End_Date": "August 30, 2011",
+        "Num": "several thousands of people",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "August 31, 2011",
+        "End_Date": "September 1, 2011",
+        "Num": "138,000 people",
+        "Annotation": "China"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Zamboanga del Sur province"
+        ],
+        "Start_Date": "August 23, 2011",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Biliran Province"
+        ],
+        "Start_Date": "August 26, 2011",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Cagayan province"
+        ],
+        "Start_Date": "August 27, 2011",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Isabela province"
+        ],
+        "Start_Date": "August 27, 2011",
+        "End_Date": "NULL",
+        "Num": "13 families",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Ilocos Norte province"
+        ],
+        "Start_Date": "August 27, 2011",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Ilocos Sur",
+          "La Union",
+          "Pangasinan"
+        ],
+        "Start_Date": "August 27, 2011",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Benguet",
+          "Cagayan",
+          "Apayao",
+          "Kalinga",
+          "Mountain Provinces"
+        ],
+        "Start_Date": "August 27, 2011",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Aurora"
+        ],
+        "Start_Date": "August 28, 2011",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "Hualien County",
+          "Hengchun, Pingtung County",
+          "Taitung County",
+          "Pinglin, New Taipei",
+          "Kaohsiung",
+          "Taiping Mountain, Yilan County"
+        ],
+        "Start_Date": "August 28, 2011",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "southern and eastern Taiwan"
+        ],
+        "Start_Date": "August 28, 2011",
+        "End_Date": "NULL",
+        "Num": "30,000 households",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "Pingtung County"
+        ],
+        "Start_Date": "August 30, 2011",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Putian City"
+        ],
+        "Start_Date": "August 31, 2011",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "China"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Fujian Province"
+        ],
+        "Start_Date": "August 31, 2011",
+        "End_Date": "NULL",
+        "Num": "138,000 people",
+        "Annotation": "China"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Zhejiang Province"
+        ],
+        "Start_Date": "September 1, 2011",
+        "End_Date": "NULL",
+        "Num": "65,600 people",
+        "Annotation": "China"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "China",
-      "Start_Date": "August 31, 2011",
-      "End_Date": "September 1, 2011",
-      "Num": "138,000 people",
-      "Annotation": "China"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Zamboanga del Sur province"
-      ],
-      "Start_Date": "August 23, 2011",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "August 23, 2011",
+        "End_Date": "September 2, 2011",
+        "Num": "1,316",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Taiwan",
+        "Start_Date": "August 28, 2011",
+        "End_Date": "August 30, 2011",
+        "Num": "NULL",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "August 30, 2011",
+        "End_Date": "September 1, 2011",
+        "Num": "270",
+        "Annotation": "China"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Biliran Province",
+          "Ilocos Norte",
+          "Isabela Province",
+          "Baguio",
+          "Benguet"
+        ],
+        "Start_Date": "August 23, 2011",
+        "End_Date": "September 2, 2011",
+        "Num": "18 houses",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Isabela Province"
+        ],
+        "Start_Date": "August 23, 2011",
+        "End_Date": "September 2, 2011",
+        "Num": "93 houses",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Isabela Province"
+        ],
+        "Start_Date": "August 23, 2011",
+        "End_Date": "September 2, 2011",
+        "Num": "1,316 houses",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "Hualien County",
+          "Hengchun",
+          "Pingtung County",
+          "Taitung County",
+          "Pinglin",
+          "New Taipei",
+          "Kaohsiung",
+          "Taiping Mountain",
+          "Yilan County"
+        ],
+        "Start_Date": "August 28, 2011",
+        "End_Date": "August 30, 2011",
+        "Num": "NULL",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Putian City",
+          "Fujian Province",
+          "Zhejiang Province"
+        ],
+        "Start_Date": "August 30, 2011",
+        "End_Date": "September 1, 2011",
+        "Num": "270 houses",
+        "Annotation": "China"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "38",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Biliran Province"
-      ],
-      "Start_Date": "August 26, 2011",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "35",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "China"
+      },
+      {
+        "Administrative_Areas": "Taiwan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Taiwan"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Baguio",
+          "Benguet"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Putian City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "China"
+      },
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "Hualien County"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Taiwan"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Cagayan province"
-      ],
-      "Start_Date": "August 27, 2011",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "108,788",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Taiwan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "several thousands",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "138,000",
+        "Annotation": "China"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Cagayan province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Isabela province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "13 families",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "Pingtung County",
+          "Taitung County"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8,000",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Putian City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "China"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Isabela province"
-      ],
-      "Start_Date": "August 27, 2011",
-      "End_Date": "NULL",
-      "Num": "13 families",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Taiwan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "China"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Isabela province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "thirteen families",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Cagayan province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "108,788 people",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Benguet",
+          "Baguio"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "Hengchun Township"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Putian City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "138,000 people",
+        "Annotation": "China"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Ilocos Norte province"
-      ],
-      "Start_Date": "August 27, 2011",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "August 27, 2011",
+        "End_Date": "September 2, 2011",
+        "Num": "37",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "August 31, 2011",
+        "End_Date": "September 1, 2011",
+        "Num": "20",
+        "Annotation": "China"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Baguio",
+          "Benguet"
+        ],
+        "Start_Date": "August 29, 2011",
+        "End_Date": "August 29, 2011",
+        "Num": "2",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "August 29, 2011",
+        "End_Date": "August 29, 2011",
+        "Num": "21",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "August 30, 2011",
+        "End_Date": "August 30, 2011",
+        "Num": "23",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "September 1, 2011",
+        "End_Date": "September 1, 2011",
+        "Num": "37",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Fujian Province"
+        ],
+        "Start_Date": "September 1, 2011",
+        "End_Date": "September 1, 2011",
+        "Num": "20",
+        "Annotation": "China"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "US$500 million",
+      "Total_Insured_Damage_Unit": "USD",
+      "Total_Insured_Damage_Inflation_Adjusted": "No",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "Taiwan"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Ilocos Sur",
-        "La Union",
-        "Pangasinan"
-      ],
-      "Start_Date": "August 27, 2011",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Taiwan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "US$500 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Taiwan"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "Taiwan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "US$500 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Taiwan"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$1.49 billion",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Benguet",
-        "Cagayan",
-        "Apayao",
-        "Kalinga",
-        "Mountain Provinces"
-      ],
-      "Start_Date": "August 27, 2011",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Aurora"
-      ],
-      "Start_Date": "August 28, 2011",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "Hualien County",
-        "Hengchun, Pingtung County",
-        "Taitung County",
-        "Pinglin, New Taipei",
-        "Kaohsiung",
-        "Taiping Mountain, Yilan County"
-      ],
-      "Start_Date": "August 28, 2011",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Taiwan"
-    },
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "southern and eastern Taiwan"
-      ],
-      "Start_Date": "August 28, 2011",
-      "End_Date": "NULL",
-      "Num": "30,000 households",
-      "Annotation": "Taiwan"
-    },
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "Pingtung County"
-      ],
-      "Start_Date": "August 30, 2011",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Taiwan"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Putian City"
-      ],
-      "Start_Date": "August 31, 2011",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "China"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Fujian Province"
-      ],
-      "Start_Date": "August 31, 2011",
-      "End_Date": "NULL",
-      "Num": "138,000 people",
-      "Annotation": "China"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Zhejiang Province"
-      ],
-      "Start_Date": "September 1, 2011",
-      "End_Date": "NULL",
-      "Num": "65,600 people",
-      "Annotation": "China"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "August 23, 2011",
-      "End_Date": "September 2, 2011",
-      "Num": "1,316",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": "Taiwan",
-      "Start_Date": "August 28, 2011",
-      "End_Date": "August 30, 2011",
-      "Num": "NULL",
-      "Annotation": "Taiwan"
-    },
-    {
-      "Administrative_Areas": "China",
-      "Start_Date": "August 30, 2011",
-      "End_Date": "September 1, 2011",
-      "Num": "270",
-      "Annotation": "China"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Biliran Province",
-        "Ilocos Norte",
-        "Isabela Province",
-        "Baguio",
-        "Benguet"
-      ],
-      "Start_Date": "August 23, 2011",
-      "End_Date": "September 2, 2011",
-      "Num": "18 houses",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Isabela Province"
-      ],
-      "Start_Date": "August 23, 2011",
-      "End_Date": "September 2, 2011",
-      "Num": "93 houses",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Isabela Province"
-      ],
-      "Start_Date": "August 23, 2011",
-      "End_Date": "September 2, 2011",
-      "Num": "1,316 houses",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "Hualien County",
-        "Hengchun",
-        "Pingtung County",
-        "Taitung County",
-        "Pinglin",
-        "New Taipei",
-        "Kaohsiung",
-        "Taiping Mountain",
-        "Yilan County"
-      ],
-      "Start_Date": "August 28, 2011",
-      "End_Date": "August 30, 2011",
-      "Num": "NULL",
-      "Annotation": "Taiwan"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Putian City",
-        "Fujian Province",
-        "Zhejiang Province"
-      ],
-      "Start_Date": "August 30, 2011",
-      "End_Date": "September 1, 2011",
-      "Num": "270 houses",
-      "Annotation": "China"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "38",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "35",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": "China",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "China"
-    },
-    {
-      "Administrative_Areas": "Taiwan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Taiwan"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Baguio",
-        "Benguet"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Putian City"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "China"
-    },
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "Hualien County"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Taiwan"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "108,788",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": "Taiwan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "several thousands",
-      "Annotation": "Taiwan"
-    },
-    {
-      "Administrative_Areas": "China",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "138,000",
-      "Annotation": "China"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Cagayan province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Isabela province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "13 families",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "Pingtung County",
-        "Taitung County"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "8,000",
-      "Annotation": "Taiwan"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Putian City"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "China"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": "Taiwan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Taiwan"
-    },
-    {
-      "Administrative_Areas": "China",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "China"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Isabela province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "thirteen families",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Cagayan province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "108,788 people",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Benguet",
-        "Baguio"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "Hengchun Township"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Taiwan"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Putian City"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "138,000 people",
-      "Annotation": "China"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "August 27, 2011",
-      "End_Date": "September 2, 2011",
-      "Num": "37",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": "China",
-      "Start_Date": "August 31, 2011",
-      "End_Date": "September 1, 2011",
-      "Num": "20",
-      "Annotation": "China"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Baguio",
-        "Benguet"
-      ],
-      "Start_Date": "August 29, 2011",
-      "End_Date": "August 29, 2011",
-      "Num": "2",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "August 29, 2011",
-      "End_Date": "August 29, 2011",
-      "Num": "21",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "August 30, 2011",
-      "End_Date": "August 30, 2011",
-      "Num": "23",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "September 1, 2011",
-      "End_Date": "September 1, 2011",
-      "Num": "37",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Fujian Province"
-      ],
-      "Start_Date": "September 1, 2011",
-      "End_Date": "September 1, 2011",
-      "Num": "20",
-      "Annotation": "China"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "US$500 million",
-    "Total_Insured_Damage_Unit": "USD",
-    "Total_Insured_Damage_Inflation_Adjusted": "No",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "Taiwan"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Taiwan"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "US$500 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Taiwan"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "Taiwan"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "US$500 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Taiwan"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$1.49 billion",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Php 40.9 billion",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": "Taiwan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NT$75.5 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Taiwan"
-    },
-    {
-      "Administrative_Areas": "China",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "130 million yuan",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "China"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Benguet",
-        "Baguio"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "US$33,711,271",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "Hualien County",
-        "Hengchun",
-        "Pingtung County",
-        "Taitung County",
-        "Pinglin",
-        "New Taipei",
-        "Kaohsiung",
-        "Taiping Mountain",
-        "Yilan County"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "US$2.6 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Taiwan"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Fujian Province",
-        "Zhejiang Province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "532 million yuan",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "China"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood|Lightning",
-  "Hazards_Annotation": "Info_Box|Philippines|Taiwan|China",
-  "Start_Date": "August 21, 2011",
-  "End_Date": "August 31, 2011",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Philippines",
-    "Taiwan",
-    "China"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Php 40.9 billion",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Taiwan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NT$75.5 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "130 million yuan",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "China"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Benguet",
+          "Baguio"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "US$33,711,271",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "Hualien County",
+          "Hengchun",
+          "Pingtung County",
+          "Taitung County",
+          "Pinglin",
+          "New Taipei",
+          "Kaohsiung",
+          "Taiping Mountain",
+          "Yilan County"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "US$2.6 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Fujian Province",
+          "Zhejiang Province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "532 million yuan",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "China"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood|Lightning",
+    "Hazards_Annotation": "Info_Box|Philippines|Taiwan|China",
+    "Start_Date": "August 21, 2011",
+    "End_Date": "August 31, 2011",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Philippines",
+      "Taiwan",
+      "China"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

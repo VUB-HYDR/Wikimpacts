@@ -1,687 +1,689 @@
-{
-  "Event_ID": "OzSN6a4",
-  "Sources": "https://en.wikipedia.org/wiki/1960_North_Indian_Ocean_cyclone_season",
-  "Event_Names": "1960 North Indian Ocean cyclone season",
-  "Total_Summary_Affected": {
-    "Total_Affected": "200,000\u2013300,000 people homeless",
-    "Total_Affected_Annotation": "1960 North Indian Ocean cyclone season"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": "East Pakistan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "200,000\u2013300,000 people homeless",
-      "Annotation": "1960 North Indian Ocean cyclone season"
+[
+  {
+    "Event_ID": "OzSN6a4",
+    "Sources": "https://en.wikipedia.org/wiki/1960_North_Indian_Ocean_cyclone_season",
+    "Event_Names": "1960 North Indian Ocean cyclone season",
+    "Total_Summary_Affected": {
+      "Total_Affected": "200,000\u2013300,000 people homeless",
+      "Total_Affected_Annotation": "1960 North Indian Ocean cyclone season"
     },
-    {
-      "Administrative_Areas": "India",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "1960 North Indian Ocean cyclone season"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "East Pakistan",
-      "Locations": [
-        "Ramgati Island"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "6,000 people homeless",
-      "Annotation": "Severe Cyclonic Storm Nine"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "East Pakistan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "200,000\u2013300,000 people homeless",
+        "Annotation": "1960 North Indian Ocean cyclone season"
+      },
+      {
+        "Administrative_Areas": "India",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "1960 North Indian Ocean cyclone season"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "East Pakistan",
+        "Locations": [
+          "Ramgati Island"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "6,000 people homeless",
+        "Annotation": "Severe Cyclonic Storm Nine"
+      },
+      {
+        "Administrative_Area": "East Pakistan",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "200,000 people homeless",
+        "Annotation": "Very Severe Cyclonic Storm Ten"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Saurashtra region of Gujarat"
+        ],
+        "Start_Date": "July 2",
+        "End_Date": "July 4",
+        "Num": "6,000 people homeless",
+        "Annotation": "Depression Four"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Madurai"
+        ],
+        "Start_Date": "November 5",
+        "End_Date": "November 10",
+        "Num": "10,000 people homeless",
+        "Annotation": "Shallow Depression Twelve"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Orissa"
+        ],
+        "Start_Date": "August 12",
+        "End_Date": "August 30",
+        "Num": "2.5 million people homeless",
+        "Annotation": "Deep Depression Six"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "East Pakistan",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "200,000 people homeless",
-      "Annotation": "Very Severe Cyclonic Storm Ten"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "India",
+        "Start_Date": "May 14",
+        "End_Date": "May 17",
+        "Num": "NULL",
+        "Annotation": "Very Severe Cyclonic Storm One"
+      },
+      {
+        "Administrative_Areas": "India",
+        "Start_Date": "May 28",
+        "End_Date": "May 30",
+        "Num": "NULL",
+        "Annotation": "Deep Depression Two"
+      },
+      {
+        "Administrative_Areas": "India",
+        "Start_Date": "July 2",
+        "End_Date": "July 4",
+        "Num": "NULL",
+        "Annotation": "Deep Depression Three"
+      },
+      {
+        "Administrative_Areas": "India",
+        "Start_Date": "July 2",
+        "End_Date": "July 5",
+        "Num": "NULL",
+        "Annotation": "Depression Four"
+      },
+      {
+        "Administrative_Areas": "India",
+        "Start_Date": "August 8",
+        "End_Date": "August 14",
+        "Num": "NULL",
+        "Annotation": "Depression Five"
+      },
+      {
+        "Administrative_Areas": "India",
+        "Start_Date": "August 12",
+        "End_Date": "August 30",
+        "Num": "NULL",
+        "Annotation": "Deep Depression Six"
+      },
+      {
+        "Administrative_Areas": "India",
+        "Start_Date": "August 24",
+        "End_Date": "August 28",
+        "Num": "NULL",
+        "Annotation": "Depression Seven"
+      },
+      {
+        "Administrative_Areas": "India",
+        "Start_Date": "September 24",
+        "End_Date": "September 28",
+        "Num": "NULL",
+        "Annotation": "Deep Depression Eight"
+      },
+      {
+        "Administrative_Areas": "East Pakistan",
+        "Start_Date": "October 10",
+        "End_Date": "October 12",
+        "Num": "35,000 homes",
+        "Annotation": "Severe Cyclonic Storm Nine"
+      },
+      {
+        "Administrative_Areas": "East Pakistan",
+        "Start_Date": "October 31",
+        "End_Date": "November 1",
+        "Num": "NULL",
+        "Annotation": "Very Severe Cyclonic Storm Ten"
+      },
+      {
+        "Administrative_Areas": "India",
+        "Start_Date": "November 5",
+        "End_Date": "November 10",
+        "Num": "NULL",
+        "Annotation": "Depression Eleven"
+      },
+      {
+        "Administrative_Areas": "India",
+        "Start_Date": "November 9",
+        "End_Date": "November 12",
+        "Num": "NULL",
+        "Annotation": "Shallow Depression Twelve"
+      },
+      {
+        "Administrative_Areas": "India",
+        "Start_Date": "November 20",
+        "End_Date": "November 21",
+        "Num": "NULL",
+        "Annotation": "Cyclonic Storm Fourteen"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "West Bengal"
+        ],
+        "Start_Date": "May 28",
+        "End_Date": "May 30",
+        "Num": "numerous homes",
+        "Annotation": "Deep Depression Two"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Saurashtra"
+        ],
+        "Start_Date": "July 2",
+        "End_Date": "July 5",
+        "Num": "500 homes",
+        "Annotation": "Depression Four"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Orissa"
+        ],
+        "Start_Date": "August 12",
+        "End_Date": "August 30",
+        "Num": "85 villages",
+        "Annotation": "Deep Depression Six"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Punjab"
+        ],
+        "Start_Date": "August 24",
+        "End_Date": "August 28",
+        "Num": "significant crop and property damage",
+        "Annotation": "Depression Seven"
+      },
+      {
+        "Administrative_Area": "East Pakistan",
+        "Locations": [
+          "Ramgati Island"
+        ],
+        "Start_Date": "October 10",
+        "End_Date": "October 12",
+        "Num": "95 percent of the island's structures",
+        "Annotation": "Severe Cyclonic Storm Nine"
+      },
+      {
+        "Administrative_Area": "East Pakistan",
+        "Locations": [
+          "Chittagong"
+        ],
+        "Start_Date": "October 31",
+        "End_Date": "November 1",
+        "Num": "most buildings",
+        "Annotation": "Very Severe Cyclonic Storm Ten"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Madurai"
+        ],
+        "Start_Date": "November 9",
+        "End_Date": "November 12",
+        "Num": "numerous poorly constructed homes",
+        "Annotation": "Shallow Depression Twelve"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Madras City"
+        ],
+        "Start_Date": "November 20",
+        "End_Date": "November 21",
+        "Num": "numerous poorly constructed homes",
+        "Annotation": "Cyclonic Storm Fourteen"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "20,341 total",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Saurashtra region of Gujarat"
-      ],
-      "Start_Date": "July 2",
-      "End_Date": "July 4",
-      "Num": "6,000 people homeless",
-      "Annotation": "Depression Four"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "East Pakistan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "approximately 20,000",
+        "Annotation": "1960 North Indian Ocean cyclone season"
+      },
+      {
+        "Administrative_Areas": "India",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "167",
+        "Annotation": "1960 North Indian Ocean cyclone season"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "East Pakistan",
+        "Locations": [
+          "Ramgati Island"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3,500",
+        "Annotation": "Severe Cyclonic Storm Nine"
+      },
+      {
+        "Administrative_Area": "East Pakistan",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "6,000",
+        "Annotation": "Severe Cyclonic Storm Nine"
+      },
+      {
+        "Administrative_Area": "East Pakistan",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "14,174",
+        "Annotation": "Very Severe Cyclonic Storm Ten"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "West Bengal"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "7",
+        "Annotation": "Deep Depression Two"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Gujarat"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "35",
+        "Annotation": "Depression Four"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Orissa"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "65",
+        "Annotation": "Deep Depression Six"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Punjab"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "55",
+        "Annotation": "Depression Seven"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Madras State"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5",
+        "Annotation": "Shallow Depression Twelve"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "200,000\u2013300,000 people",
+      "Total_Displaced_Annotation": "1960 North Indian Ocean cyclone season"
     },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Madurai"
-      ],
-      "Start_Date": "November 5",
-      "End_Date": "November 10",
-      "Num": "10,000 people homeless",
-      "Annotation": "Shallow Depression Twelve"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "East Pakistan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "200,000\u2013300,000 people",
+        "Annotation": "1960 North Indian Ocean cyclone season"
+      },
+      {
+        "Administrative_Areas": [
+          "India"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2.5 million people",
+        "Annotation": "Deep Depression Six"
+      },
+      {
+        "Administrative_Areas": [
+          "India"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "150,000 people",
+        "Annotation": "Shallow Depression Twelve"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "East Pakistan",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "200,000\u2013300,000 people",
+        "Annotation": "1960 North Indian Ocean cyclone season"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Orissa"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2.5 million people",
+        "Annotation": "Deep Depression Six"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Madurai"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "150,000 people",
+        "Annotation": "Shallow Depression Twelve"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "200,000\u2013300,000",
+      "Total_Homeless_Annotation": "1960 North Indian Ocean cyclone season"
     },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Orissa"
-      ],
-      "Start_Date": "August 12",
-      "End_Date": "August 30",
-      "Num": "2.5 million people homeless",
-      "Annotation": "Deep Depression Six"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "India",
-      "Start_Date": "May 14",
-      "End_Date": "May 17",
-      "Num": "NULL",
-      "Annotation": "Very Severe Cyclonic Storm One"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "East Pakistan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "200,000\u2013300,000",
+        "Annotation": "1960 North Indian Ocean cyclone season"
+      },
+      {
+        "Administrative_Areas": "India",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2.5 million",
+        "Annotation": "Deep Depression Six"
+      },
+      {
+        "Administrative_Areas": "India",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "150,000",
+        "Annotation": "Shallow Depression Twelve"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "East Pakistan",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "200,000\u2013300,000",
+        "Annotation": "1960 North Indian Ocean cyclone season"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Orissa"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2.5 million",
+        "Annotation": "Deep Depression Six"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Madurai"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "10,000",
+        "Annotation": "Shallow Depression Twelve"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "150,000",
+        "Annotation": "Shallow Depression Twelve"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "India",
-      "Start_Date": "May 28",
-      "End_Date": "May 30",
-      "Num": "NULL",
-      "Annotation": "Deep Depression Two"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "India",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": "East Pakistan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Area": "East Pakistan",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "India",
-      "Start_Date": "July 2",
-      "End_Date": "July 4",
-      "Num": "NULL",
-      "Annotation": "Deep Depression Three"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "At least $9.24 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": "India",
-      "Start_Date": "July 2",
-      "End_Date": "July 5",
-      "Num": "NULL",
-      "Annotation": "Depression Four"
-    },
-    {
-      "Administrative_Areas": "India",
-      "Start_Date": "August 8",
-      "End_Date": "August 14",
-      "Num": "NULL",
-      "Annotation": "Depression Five"
-    },
-    {
-      "Administrative_Areas": "India",
-      "Start_Date": "August 12",
-      "End_Date": "August 30",
-      "Num": "NULL",
-      "Annotation": "Deep Depression Six"
-    },
-    {
-      "Administrative_Areas": "India",
-      "Start_Date": "August 24",
-      "End_Date": "August 28",
-      "Num": "NULL",
-      "Annotation": "Depression Seven"
-    },
-    {
-      "Administrative_Areas": "India",
-      "Start_Date": "September 24",
-      "End_Date": "September 28",
-      "Num": "NULL",
-      "Annotation": "Deep Depression Eight"
-    },
-    {
-      "Administrative_Areas": "East Pakistan",
-      "Start_Date": "October 10",
-      "End_Date": "October 12",
-      "Num": "35,000 homes",
-      "Annotation": "Severe Cyclonic Storm Nine"
-    },
-    {
-      "Administrative_Areas": "East Pakistan",
-      "Start_Date": "October 31",
-      "End_Date": "November 1",
-      "Num": "NULL",
-      "Annotation": "Very Severe Cyclonic Storm Ten"
-    },
-    {
-      "Administrative_Areas": "India",
-      "Start_Date": "November 5",
-      "End_Date": "November 10",
-      "Num": "NULL",
-      "Annotation": "Depression Eleven"
-    },
-    {
-      "Administrative_Areas": "India",
-      "Start_Date": "November 9",
-      "End_Date": "November 12",
-      "Num": "NULL",
-      "Annotation": "Shallow Depression Twelve"
-    },
-    {
-      "Administrative_Areas": "India",
-      "Start_Date": "November 20",
-      "End_Date": "November 21",
-      "Num": "NULL",
-      "Annotation": "Cyclonic Storm Fourteen"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "West Bengal"
-      ],
-      "Start_Date": "May 28",
-      "End_Date": "May 30",
-      "Num": "numerous homes",
-      "Annotation": "Deep Depression Two"
-    },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Saurashtra"
-      ],
-      "Start_Date": "July 2",
-      "End_Date": "July 5",
-      "Num": "500 homes",
-      "Annotation": "Depression Four"
-    },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Orissa"
-      ],
-      "Start_Date": "August 12",
-      "End_Date": "August 30",
-      "Num": "85 villages",
-      "Annotation": "Deep Depression Six"
-    },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Punjab"
-      ],
-      "Start_Date": "August 24",
-      "End_Date": "August 28",
-      "Num": "significant crop and property damage",
-      "Annotation": "Depression Seven"
-    },
-    {
-      "Administrative_Area": "East Pakistan",
-      "Locations": [
-        "Ramgati Island"
-      ],
-      "Start_Date": "October 10",
-      "End_Date": "October 12",
-      "Num": "95 percent of the island's structures",
-      "Annotation": "Severe Cyclonic Storm Nine"
-    },
-    {
-      "Administrative_Area": "East Pakistan",
-      "Locations": [
-        "Chittagong"
-      ],
-      "Start_Date": "October 31",
-      "End_Date": "November 1",
-      "Num": "most buildings",
-      "Annotation": "Very Severe Cyclonic Storm Ten"
-    },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Madurai"
-      ],
-      "Start_Date": "November 9",
-      "End_Date": "November 12",
-      "Num": "numerous poorly constructed homes",
-      "Annotation": "Shallow Depression Twelve"
-    },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Madras City"
-      ],
-      "Start_Date": "November 20",
-      "End_Date": "November 21",
-      "Num": "numerous poorly constructed homes",
-      "Annotation": "Cyclonic Storm Fourteen"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "20,341 total",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "East Pakistan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "approximately 20,000",
-      "Annotation": "1960 North Indian Ocean cyclone season"
-    },
-    {
-      "Administrative_Areas": "India",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "167",
-      "Annotation": "1960 North Indian Ocean cyclone season"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "East Pakistan",
-      "Locations": [
-        "Ramgati Island"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3,500",
-      "Annotation": "Severe Cyclonic Storm Nine"
-    },
-    {
-      "Administrative_Area": "East Pakistan",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "6,000",
-      "Annotation": "Severe Cyclonic Storm Nine"
-    },
-    {
-      "Administrative_Area": "East Pakistan",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "14,174",
-      "Annotation": "Very Severe Cyclonic Storm Ten"
-    },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "West Bengal"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "7",
-      "Annotation": "Deep Depression Two"
-    },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Gujarat"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "35",
-      "Annotation": "Depression Four"
-    },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Orissa"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "65",
-      "Annotation": "Deep Depression Six"
-    },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Punjab"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "55",
-      "Annotation": "Depression Seven"
-    },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Madras State"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "5",
-      "Annotation": "Shallow Depression Twelve"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "200,000\u2013300,000 people",
-    "Total_Displaced_Annotation": "1960 North Indian Ocean cyclone season"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "East Pakistan"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "200,000\u2013300,000 people",
-      "Annotation": "1960 North Indian Ocean cyclone season"
-    },
-    {
-      "Administrative_Areas": [
-        "India"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2.5 million people",
-      "Annotation": "Deep Depression Six"
-    },
-    {
-      "Administrative_Areas": [
-        "India"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "150,000 people",
-      "Annotation": "Shallow Depression Twelve"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "East Pakistan",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "200,000\u2013300,000 people",
-      "Annotation": "1960 North Indian Ocean cyclone season"
-    },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Orissa"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2.5 million people",
-      "Annotation": "Deep Depression Six"
-    },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Madurai"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "150,000 people",
-      "Annotation": "Shallow Depression Twelve"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "200,000\u2013300,000",
-    "Total_Homeless_Annotation": "1960 North Indian Ocean cyclone season"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "East Pakistan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "200,000\u2013300,000",
-      "Annotation": "1960 North Indian Ocean cyclone season"
-    },
-    {
-      "Administrative_Areas": "India",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2.5 million",
-      "Annotation": "Deep Depression Six"
-    },
-    {
-      "Administrative_Areas": "India",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "150,000",
-      "Annotation": "Shallow Depression Twelve"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "East Pakistan",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "200,000\u2013300,000",
-      "Annotation": "1960 North Indian Ocean cyclone season"
-    },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Orissa"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2.5 million",
-      "Annotation": "Deep Depression Six"
-    },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Madurai"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "10,000",
-      "Annotation": "Shallow Depression Twelve"
-    },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "150,000",
-      "Annotation": "Shallow Depression Twelve"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "India",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    },
-    {
-      "Administrative_Areas": "East Pakistan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    },
-    {
-      "Administrative_Area": "East Pakistan",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "NULL",
-      "Locations": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "At least $9.24 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "India"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "\u20b9112 million",
-      "Num_Unit": "INR",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Deep Depression Six"
-    },
-    {
-      "Administrative_Areas": [
-        "India"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$9.24 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Deep Depression Seven"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Saurashtra"
-      ],
-      "Start_Date": "July 2",
-      "End_Date": "July 4",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Depression Four"
-    },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Orissa"
-      ],
-      "Start_Date": "August 12",
-      "End_Date": "August 30",
-      "Num": "\u20b9112 million",
-      "Num_Unit": "INR",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Deep Depression Six"
-    },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Punjab"
-      ],
-      "Start_Date": "August 24",
-      "End_Date": "August 28",
-      "Num": "$9.24 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Deep Depression Seven"
-    },
-    {
-      "Administrative_Area": "India",
-      "Locations": [
-        "Madurai"
-      ],
-      "Start_Date": "November 5",
-      "End_Date": "November 10",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Shallow Depression Twelve"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Start_Date": "May 10, 1960",
-  "End_Date": "December 3, 1960",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Bangladesh",
-    "India",
-    "Sri Lanka",
-    "Yemen",
-    "Pakistan",
-    "Vietnam",
-    "Thailand",
-    "Burma",
-    "Nepal"
-  ],
-  "Administrative_Areas_Annotation": [
-    "Info_Box",
-    "Very Severe Cyclonic Storm One",
-    "Deep Depression Two",
-    "Deep Depression Three",
-    "Depression Four",
-    "Depression Five",
-    "Deep Depression Six",
-    "Depression Seven",
-    "Deep Depression Eight",
-    "Severe Cyclonic Storm Nine",
-    "Very Severe Cyclonic Storm Ten",
-    "Depression Eleven",
-    "Shallow Depression Twelve",
-    "Cyclonic Storm Thirteen",
-    "Cyclonic Storm Fourteen",
-    "Depression Fifteen"
-  ]
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "India"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "\u20b9112 million",
+        "Num_Unit": "INR",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Deep Depression Six"
+      },
+      {
+        "Administrative_Areas": [
+          "India"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$9.24 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Deep Depression Seven"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Saurashtra"
+        ],
+        "Start_Date": "July 2",
+        "End_Date": "July 4",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Depression Four"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Orissa"
+        ],
+        "Start_Date": "August 12",
+        "End_Date": "August 30",
+        "Num": "\u20b9112 million",
+        "Num_Unit": "INR",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Deep Depression Six"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Punjab"
+        ],
+        "Start_Date": "August 24",
+        "End_Date": "August 28",
+        "Num": "$9.24 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Deep Depression Seven"
+      },
+      {
+        "Administrative_Area": "India",
+        "Locations": [
+          "Madurai"
+        ],
+        "Start_Date": "November 5",
+        "End_Date": "November 10",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Shallow Depression Twelve"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Start_Date": "May 10, 1960",
+    "End_Date": "December 3, 1960",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Bangladesh",
+      "India",
+      "Sri Lanka",
+      "Yemen",
+      "Pakistan",
+      "Vietnam",
+      "Thailand",
+      "Burma",
+      "Nepal"
+    ],
+    "Administrative_Areas_Annotation": [
+      "Info_Box",
+      "Very Severe Cyclonic Storm One",
+      "Deep Depression Two",
+      "Deep Depression Three",
+      "Depression Four",
+      "Depression Five",
+      "Deep Depression Six",
+      "Depression Seven",
+      "Deep Depression Eight",
+      "Severe Cyclonic Storm Nine",
+      "Very Severe Cyclonic Storm Ten",
+      "Depression Eleven",
+      "Shallow Depression Twelve",
+      "Cyclonic Storm Thirteen",
+      "Cyclonic Storm Fourteen",
+      "Depression Fifteen"
+    ]
+  }
+]

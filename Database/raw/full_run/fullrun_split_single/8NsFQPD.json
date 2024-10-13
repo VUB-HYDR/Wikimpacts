@@ -1,367 +1,369 @@
-{
-  "Event_ID": "8NsFQPD",
-  "Sources": "https://en.wikipedia.org/wiki/Highest_temperature_recorded_on_Earth",
-  "Event_Names": "Highest temperature recorded on Earth",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "History"
+[
+  {
+    "Event_ID": "8NsFQPD",
+    "Sources": "https://en.wikipedia.org/wiki/Highest_temperature_recorded_on_Earth",
+    "Event_Names": "Highest temperature recorded on Earth",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": [
-        "Libya"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "History"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "History"
+      },
+      {
+        "Administrative_Areas": [
+          "Libya"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "History"
+      },
+      {
+        "Administrative_Areas": [
+          "Kuwait"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "History"
+      },
+      {
+        "Administrative_Areas": [
+          "Iran"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "History"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Furnace Creek Ranch, Death Valley, California"
+        ],
+        "Start_Date": "10 July 1913",
+        "End_Date": "10 July 1913",
+        "Num": "NULL",
+        "Annotation": "History"
+      },
+      {
+        "Administrative_Area": "Libya",
+        "Locations": [
+          "\u02bdAziziya"
+        ],
+        "Start_Date": "13 September 1922",
+        "End_Date": "13 September 1922",
+        "Num": "NULL",
+        "Annotation": "History"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Furnace Creek Ranch, Death Valley, California"
+        ],
+        "Start_Date": "20 June 2013",
+        "End_Date": "20 June 2013",
+        "Num": "NULL",
+        "Annotation": "History"
+      },
+      {
+        "Administrative_Area": "Kuwait",
+        "Locations": [
+          "Mitribah"
+        ],
+        "Start_Date": "21 July 2016",
+        "End_Date": "21 July 2016",
+        "Num": "NULL",
+        "Annotation": "History"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Furnace Creek Ranch, Death Valley, California"
+        ],
+        "Start_Date": "August 2020",
+        "End_Date": "August 2020",
+        "Num": "NULL",
+        "Annotation": "History"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Furnace Creek Ranch, Death Valley, California"
+        ],
+        "Start_Date": "July 2021",
+        "End_Date": "July 2021",
+        "Num": "NULL",
+        "Annotation": "History"
+      },
+      {
+        "Administrative_Area": "Iran",
+        "Locations": [
+          "Lut Desert"
+        ],
+        "Start_Date": "2005",
+        "End_Date": "2005",
+        "Num": "NULL",
+        "Annotation": "History"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": [
-        "Kuwait"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "History"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "NULL",
+      "Total_Deaths_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": [
-        "Iran"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "History"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Furnace Creek Ranch, Death Valley, California"
-      ],
-      "Start_Date": "10 July 1913",
-      "End_Date": "10 July 1913",
-      "Num": "NULL",
-      "Annotation": "History"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Libya",
-      "Locations": [
-        "\u02bdAziziya"
-      ],
-      "Start_Date": "13 September 1922",
-      "End_Date": "13 September 1922",
-      "Num": "NULL",
-      "Annotation": "History"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "United States",
+          "Libya",
+          "Kuwait",
+          "Iran"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Furnace Creek Ranch",
+          "Death Valley"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Area": "Libya",
+        "Locations": [
+          "\u02bdAziziya"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Area": "Kuwait",
+        "Locations": [
+          "Mitribah"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Area": "Iran",
+        "Locations": [
+          "Lut Desert"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Furnace Creek Ranch, Death Valley, California"
-      ],
-      "Start_Date": "20 June 2013",
-      "End_Date": "20 June 2013",
-      "Num": "NULL",
-      "Annotation": "History"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Kuwait",
-      "Locations": [
-        "Mitribah"
-      ],
-      "Start_Date": "21 July 2016",
-      "End_Date": "21 July 2016",
-      "Num": "NULL",
-      "Annotation": "History"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Furnace Creek Ranch, Death Valley, California"
-      ],
-      "Start_Date": "August 2020",
-      "End_Date": "August 2020",
-      "Num": "NULL",
-      "Annotation": "History"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States",
+          "Libya",
+          "Kuwait",
+          "Iran"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Furnace Creek Ranch",
+          "Death Valley"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Area": "Libya",
+        "Locations": [
+          "\u02bdAziziya"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Area": "Kuwait",
+        "Locations": [
+          "Mitribah"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Area": "Iran",
+        "Locations": [
+          "Lut Desert"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "NULL",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Furnace Creek Ranch, Death Valley, California"
-      ],
-      "Start_Date": "July 2021",
-      "End_Date": "July 2021",
-      "Num": "NULL",
-      "Annotation": "History"
-    },
-    {
-      "Administrative_Area": "Iran",
-      "Locations": [
-        "Lut Desert"
-      ],
-      "Start_Date": "2005",
-      "End_Date": "2005",
-      "Num": "NULL",
-      "Annotation": "History"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "NULL",
-      "Locations": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "NULL",
-    "Total_Deaths_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "NULL",
-      "Locations": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "United States",
-        "Libya",
-        "Kuwait",
-        "Iran"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Furnace Creek Ranch",
-        "Death Valley"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    },
-    {
-      "Administrative_Area": "Libya",
-      "Locations": [
-        "\u02bdAziziya"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    },
-    {
-      "Administrative_Area": "Kuwait",
-      "Locations": [
-        "Mitribah"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    },
-    {
-      "Administrative_Area": "Iran",
-      "Locations": [
-        "Lut Desert"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "NULL",
-      "Locations": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "NULL",
-      "Locations": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States",
-        "Libya",
-        "Kuwait",
-        "Iran"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Furnace Creek Ranch",
-        "Death Valley"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    },
-    {
-      "Administrative_Area": "Libya",
-      "Locations": [
-        "\u02bdAziziya"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    },
-    {
-      "Administrative_Area": "Kuwait",
-      "Locations": [
-        "Mitribah"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    },
-    {
-      "Administrative_Area": "Iran",
-      "Locations": [
-        "Lut Desert"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "NULL",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "NULL",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [],
-  "Specific_Instance_Per_Administrative_Area_Damage": [],
-  "Main_Event": "Extreme Temperature",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Heatwave",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "10 July 1913",
-  "End_Date": "10 July 1913",
-  "Time_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [],
+    "Specific_Instance_Per_Administrative_Area_Damage": [],
+    "Main_Event": "Extreme Temperature",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Heatwave",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "10 July 1913",
+    "End_Date": "10 July 1913",
+    "Time_Annotation": "Info_Box"
+  }
+]

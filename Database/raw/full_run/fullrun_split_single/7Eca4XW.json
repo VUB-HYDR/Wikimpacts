@@ -1,368 +1,370 @@
-{
-  "Event_ID": "7Eca4XW",
-  "Sources": "https://en.wikipedia.org/wiki/Cyclone_Ivy",
-  "Event_Names": "Cyclone Ivy",
-  "Total_Summary_Affected": {
-    "Total_Affected": "54,000",
-    "Total_Affected_Annotation": "Preparations and impact"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Vanuatu"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "54,000",
-      "Annotation": "Preparations and impact"
+[
+  {
+    "Event_ID": "7Eca4XW",
+    "Sources": "https://en.wikipedia.org/wiki/Cyclone_Ivy",
+    "Event_Names": "Cyclone Ivy",
+    "Total_Summary_Affected": {
+      "Total_Affected": "54,000",
+      "Total_Affected_Annotation": "Preparations and impact"
     },
-    {
-      "Administrative_Areas": [
-        "New Zealand"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Vanuatu",
-      "Locations": [
-        "Paama",
-        "Epi",
-        "Ambrym",
-        "eastern Malekula",
-        "northern Aoba",
-        "northern Maewo"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "54,000",
-      "Annotation": "Preparations and impact"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Vanuatu"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "54,000",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Areas": [
+          "New Zealand"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Vanuatu",
+        "Locations": [
+          "Paama",
+          "Epi",
+          "Ambrym",
+          "eastern Malekula",
+          "northern Aoba",
+          "northern Maewo"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "54,000",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Vanuatu",
+        "Locations": [
+          "Port Vila"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2,000",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "New Zealand",
+        "Locations": [
+          "Whakat\u0101ne"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Vanuatu",
-      "Locations": [
-        "Port Vila"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2,000",
-      "Annotation": "Preparations and impact"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Vanuatu",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "about 11,000 houses",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Vanuatu",
+        "Locations": [
+          "Ambrym island"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Vanuatu",
+        "Locations": [
+          "Port Vila"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Vanuatu",
+        "Locations": [
+          "various islands"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "about 11,000 houses",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Vanuatu",
+        "Locations": [
+          "various islands"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "112 schools",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "4",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "New Zealand",
-      "Locations": [
-        "Whakat\u0101ne"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Vanuatu",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "about 11,000 houses",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Vanuatu",
-      "Locations": [
-        "Ambrym island"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Preparations and impact"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Vanuatu",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Areas": "New Zealand",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Vanuatu",
+        "Locations": [
+          "Malakula island"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Vanuatu",
-      "Locations": [
-        "Port Vila"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Preparations and impact"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Vanuatu"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "over 2,000",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Vanuatu",
+        "Locations": [
+          "Port Vila"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "over 2,000",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "a large proportion of the 24,000 people in Ivy's path became homeless",
+      "Total_Homeless_Annotation": "Preparations and impact"
     },
-    {
-      "Administrative_Area": "Vanuatu",
-      "Locations": [
-        "various islands"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "about 11,000 houses",
-      "Annotation": "Preparations and impact"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Vanuatu",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "a large proportion of the 24,000 people in Ivy's path became homeless",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Vanuatu",
+        "Locations": [
+          "Port Vila"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "about 2,000 people evacuated",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "several people",
+      "Total_Injuries_Annotation": "Preparations and impact"
     },
-    {
-      "Administrative_Area": "Vanuatu",
-      "Locations": [
-        "various islands"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "112 schools",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "4",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Vanuatu",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "Preparations and impact"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Vanuatu",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "several people",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Vanuatu",
+        "Locations": [
+          "Port Vila"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "one person was severely injured",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "New Zealand",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Vanuatu",
-      "Locations": [
-        "Malakula island"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Vanuatu"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "over 2,000",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Vanuatu",
-      "Locations": [
-        "Port Vila"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "over 2,000",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "a large proportion of the 24,000 people in Ivy's path became homeless",
-    "Total_Homeless_Annotation": "Preparations and impact"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Vanuatu",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "a large proportion of the 24,000 people in Ivy's path became homeless",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Vanuatu",
-      "Locations": [
-        "Port Vila"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "about 2,000 people evacuated",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "several people",
-    "Total_Injuries_Annotation": "Preparations and impact"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Vanuatu",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "several people",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Vanuatu",
-      "Locations": [
-        "Port Vila"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "one person was severely injured",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Vanuatu",
-        "Solomon Islands",
-        "New Caledonia",
-        "New Zealand"
-      ],
-      "Start_Date": "February 21, 2004",
-      "End_Date": "March 2, 2004",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Vanuatu",
-      "Locations": [
-        "Port Vila",
-        "Paama",
-        "Epi",
-        "Ambrym",
-        "eastern Malekula",
-        "northern Aoba",
-        "northern Maewo"
-      ],
-      "Start_Date": "February 21, 2004",
-      "End_Date": "March 2, 2004",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Vanuatu",
+          "Solomon Islands",
+          "New Caledonia",
+          "New Zealand"
+        ],
+        "Start_Date": "February 21, 2004",
+        "End_Date": "March 2, 2004",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Vanuatu",
+        "Locations": [
+          "Port Vila",
+          "Paama",
+          "Epi",
+          "Ambrym",
+          "eastern Malekula",
+          "northern Aoba",
+          "northern Maewo"
+        ],
+        "Start_Date": "February 21, 2004",
+        "End_Date": "March 2, 2004",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Solomon Islands",
+        "Locations": [
+          "Tikopia",
+          "Anuta"
+        ],
+        "Start_Date": "February 21, 2004",
+        "End_Date": "March 2, 2004",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "New Caledonia",
+        "Locations": [
+          "Loyalty Islands"
+        ],
+        "Start_Date": "February 21, 2004",
+        "End_Date": "March 2, 2004",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "New Zealand",
+        "Locations": [
+          "Whakat\u0101ne",
+          "Bay of Plenty",
+          "Omaio",
+          "Papamoa"
+        ],
+        "Start_Date": "February 21, 2004",
+        "End_Date": "March 2, 2004",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$3.8 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Solomon Islands",
-      "Locations": [
-        "Tikopia",
-        "Anuta"
-      ],
-      "Start_Date": "February 21, 2004",
-      "End_Date": "March 2, 2004",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "New Caledonia",
-      "Locations": [
-        "Loyalty Islands"
-      ],
-      "Start_Date": "February 21, 2004",
-      "End_Date": "March 2, 2004",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "New Zealand",
-      "Locations": [
-        "Whakat\u0101ne",
-        "Bay of Plenty",
-        "Omaio",
-        "Papamoa"
-      ],
-      "Start_Date": "February 21, 2004",
-      "End_Date": "March 2, 2004",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$3.8 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "Vanuatu"
-      ],
-      "Start_Date": "February 21, 2004",
-      "End_Date": "March 2, 2004",
-      "Num": "VT427.6 million",
-      "Num_Unit": "VUV",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Vanuatu",
-      "Locations": [
-        "Port Vila"
-      ],
-      "Start_Date": "February 21, 2004",
-      "End_Date": "March 2, 2004",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Preparations and impact",
-  "Start_Date": "February 21, 2004",
-  "End_Date": "March 2, 2004",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Vanuatu",
-    "Solomon Islands",
-    "New Caledonia",
-    "New Zealand"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Vanuatu"
+        ],
+        "Start_Date": "February 21, 2004",
+        "End_Date": "March 2, 2004",
+        "Num": "VT427.6 million",
+        "Num_Unit": "VUV",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Vanuatu",
+        "Locations": [
+          "Port Vila"
+        ],
+        "Start_Date": "February 21, 2004",
+        "End_Date": "March 2, 2004",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Preparations and impact",
+    "Start_Date": "February 21, 2004",
+    "End_Date": "March 2, 2004",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Vanuatu",
+      "Solomon Islands",
+      "New Caledonia",
+      "New Zealand"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

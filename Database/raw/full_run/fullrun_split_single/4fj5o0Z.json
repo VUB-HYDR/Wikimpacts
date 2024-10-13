@@ -1,257 +1,259 @@
-{
-  "Event_ID": "4fj5o0Z",
-  "Sources": "https://en.wikipedia.org/wiki/Tornado_outbreak_sequence_of_June_1966",
-  "Event_Names": "Tornado outbreak sequence of June 1966",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "June 2",
-      "End_Date": "June 12",
-      "Num": "NULL",
-      "Annotation": "Tornado outbreak sequence of June 1966"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Topeka, Kansas"
-      ],
-      "Start_Date": "June 8",
-      "End_Date": "June 8",
-      "Num": "16 fatalities, 450 injuries",
-      "Annotation": "Topeka, Kansas"
+[
+  {
+    "Event_ID": "4fj5o0Z",
+    "Sources": "https://en.wikipedia.org/wiki/Tornado_outbreak_sequence_of_June_1966",
+    "Event_Names": "Tornado outbreak sequence of June 1966",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Southern and Midwestern United States",
-        "Great Plains"
-      ],
-      "Start_Date": "June 2",
-      "End_Date": "June 12",
-      "Num": "18 fatalities, 543 injuries",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "June 3",
-      "End_Date": "June 12",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Topeka, Kansas"
-      ],
-      "Start_Date": "June 8",
-      "End_Date": "June 8",
-      "Num": "820 homes destroyed, 3,000 others damaged, 250 businesses destroyed, 2,390 businesses damaged, hundreds of apartments destroyed, 330 homes and businesses suffered major damage, 5,000 homes and businesses received lesser degrees of damage",
-      "Annotation": "Topeka, Kansas"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "18",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "June 2",
-      "End_Date": "June 12",
-      "Num": "18",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Topeka, Kansas"
-      ],
-      "Start_Date": "June 8",
-      "End_Date": "June 8",
-      "Num": "16",
-      "Annotation": "Topeka, Kansas"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "June 2, 1966",
-      "End_Date": "June 12, 1966",
-      "Num": "NULL",
-      "Annotation": "Tornado outbreak sequence of June 1966"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Topeka, Kansas"
-      ],
-      "Start_Date": "June 8, 1966",
-      "End_Date": "June 8, 1966",
-      "Num": "NULL",
-      "Annotation": "Topeka, Kansas"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "June 3",
-      "End_Date": "June 12",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Topeka, Kansas"
-      ],
-      "Start_Date": "June 8",
-      "End_Date": "June 8",
-      "Num": "820 homes were destroyed and 3,000 others were damaged",
-      "Annotation": "Topeka, Kansas"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "543",
-    "Total_Injuries_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "June 3",
-      "End_Date": "June 12",
-      "Num": "543",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Topeka, Kansas"
-      ],
-      "Start_Date": "June 8",
-      "End_Date": "June 8",
-      "Num": "450",
-      "Annotation": "Topeka, Kansas"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "June 2, 1966",
-      "End_Date": "June 12, 1966",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Topeka, Kansas"
-      ],
-      "Start_Date": "June 8, 1966",
-      "End_Date": "June 8, 1966",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Topeka, Kansas"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "250 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "Yes",
-    "Total_Damage_Inflation_Adjusted_Year": "2023",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "June 2, 1966",
-      "End_Date": "June 12, 1966",
-      "Num": "250 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "Yes",
-      "Num_Inflation_Adjusted_Year": "2023",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Topeka, Kansas"
-      ],
-      "Start_Date": "June 8, 1966",
-      "End_Date": "June 8, 1966",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Topeka, Kansas"
-    }
-  ],
-  "Main_Event": "Tornado",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "June 2, 1966",
-  "End_Date": "June 12, 1966",
-  "Time_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "June 2",
+        "End_Date": "June 12",
+        "Num": "NULL",
+        "Annotation": "Tornado outbreak sequence of June 1966"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Topeka, Kansas"
+        ],
+        "Start_Date": "June 8",
+        "End_Date": "June 8",
+        "Num": "16 fatalities, 450 injuries",
+        "Annotation": "Topeka, Kansas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Southern and Midwestern United States",
+          "Great Plains"
+        ],
+        "Start_Date": "June 2",
+        "End_Date": "June 12",
+        "Num": "18 fatalities, 543 injuries",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "June 3",
+        "End_Date": "June 12",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Topeka, Kansas"
+        ],
+        "Start_Date": "June 8",
+        "End_Date": "June 8",
+        "Num": "820 homes destroyed, 3,000 others damaged, 250 businesses destroyed, 2,390 businesses damaged, hundreds of apartments destroyed, 330 homes and businesses suffered major damage, 5,000 homes and businesses received lesser degrees of damage",
+        "Annotation": "Topeka, Kansas"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "18",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "June 2",
+        "End_Date": "June 12",
+        "Num": "18",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Topeka, Kansas"
+        ],
+        "Start_Date": "June 8",
+        "End_Date": "June 8",
+        "Num": "16",
+        "Annotation": "Topeka, Kansas"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "June 2, 1966",
+        "End_Date": "June 12, 1966",
+        "Num": "NULL",
+        "Annotation": "Tornado outbreak sequence of June 1966"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Topeka, Kansas"
+        ],
+        "Start_Date": "June 8, 1966",
+        "End_Date": "June 8, 1966",
+        "Num": "NULL",
+        "Annotation": "Topeka, Kansas"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "June 3",
+        "End_Date": "June 12",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Topeka, Kansas"
+        ],
+        "Start_Date": "June 8",
+        "End_Date": "June 8",
+        "Num": "820 homes were destroyed and 3,000 others were damaged",
+        "Annotation": "Topeka, Kansas"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "543",
+      "Total_Injuries_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "June 3",
+        "End_Date": "June 12",
+        "Num": "543",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Topeka, Kansas"
+        ],
+        "Start_Date": "June 8",
+        "End_Date": "June 8",
+        "Num": "450",
+        "Annotation": "Topeka, Kansas"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "June 2, 1966",
+        "End_Date": "June 12, 1966",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Topeka, Kansas"
+        ],
+        "Start_Date": "June 8, 1966",
+        "End_Date": "June 8, 1966",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Topeka, Kansas"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "250 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "Yes",
+      "Total_Damage_Inflation_Adjusted_Year": "2023",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "June 2, 1966",
+        "End_Date": "June 12, 1966",
+        "Num": "250 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "Yes",
+        "Num_Inflation_Adjusted_Year": "2023",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Topeka, Kansas"
+        ],
+        "Start_Date": "June 8, 1966",
+        "End_Date": "June 8, 1966",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Topeka, Kansas"
+      }
+    ],
+    "Main_Event": "Tornado",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "June 2, 1966",
+    "End_Date": "June 12, 1966",
+    "Time_Annotation": "Info_Box"
+  }
+]

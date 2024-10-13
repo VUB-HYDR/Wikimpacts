@@ -1,536 +1,538 @@
-{
-  "Event_ID": "xRpbSCq",
-  "Sources": "https://en.wikipedia.org/wiki/Tornado_outbreak_of_April_4%E2%80%935,_1966",
-  "Event_Names": "Tornado outbreak of April 4\u20135, 1966",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 5, 1966",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Florida"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 5, 1966",
-      "Num": "530 injuries",
-      "Annotation": "Info_Box"
+[
+  {
+    "Event_ID": "xRpbSCq",
+    "Sources": "https://en.wikipedia.org/wiki/Tornado_outbreak_of_April_4%E2%80%935,_1966",
+    "Event_Names": "Tornado outbreak of April 4\u20135, 1966",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Tampa"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 4, 1966",
-      "Num": "3 fatalities",
-      "Annotation": "Largo\u2013Clearwater\u2013Carrollwood\u2013Temple Terrace\u2013Galloway\u2013Gibsonia\u2013Loughman, Florida"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 5, 1966",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 5, 1966",
+        "Num": "530 injuries",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Tampa"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 4, 1966",
+        "Num": "3 fatalities",
+        "Annotation": "Largo\u2013Clearwater\u2013Carrollwood\u2013Temple Terrace\u2013Galloway\u2013Gibsonia\u2013Loughman, Florida"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Polk County"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 4, 1966",
+        "Num": "7 fatalities",
+        "Annotation": "Largo\u2013Clearwater\u2013Carrollwood\u2013Temple Terrace\u2013Galloway\u2013Gibsonia\u2013Loughman, Florida"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Galloway and Gibsonia"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 4, 1966",
+        "Num": "280 injuries",
+        "Annotation": "Largo\u2013Clearwater\u2013Carrollwood\u2013Temple Terrace\u2013Galloway\u2013Gibsonia\u2013Loughman, Florida"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Pinellas Point"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 4, 1966",
+        "Num": "9 injuries",
+        "Annotation": "St. Petersburg\u2013Lakeland\u2013Winter Haven\u2013Haines City\u2013Auburndale\u2013Holopaw\u2013Rockledge\u2013Cocoa\u2013Cocoa Beach, Florida"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Lakeland"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 4, 1966",
+        "Num": "18 injuries",
+        "Annotation": "St. Petersburg\u2013Lakeland\u2013Winter Haven\u2013Haines City\u2013Auburndale\u2013Holopaw\u2013Rockledge\u2013Cocoa\u2013Cocoa Beach, Florida"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Cocoa Beach\u2013Rockledge"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 4, 1966",
+        "Num": "100 injuries",
+        "Annotation": "St. Petersburg\u2013Lakeland\u2013Winter Haven\u2013Haines City\u2013Auburndale\u2013Holopaw\u2013Rockledge\u2013Cocoa\u2013Cocoa Beach, Florida"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Polk County"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 4, 1966",
-      "Num": "7 fatalities",
-      "Annotation": "Largo\u2013Clearwater\u2013Carrollwood\u2013Temple Terrace\u2013Galloway\u2013Gibsonia\u2013Loughman, Florida"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 5, 1966",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Largo",
+          "Clearwater",
+          "Carrollwood",
+          "Temple Terrace",
+          "Galloway",
+          "Gibsonia",
+          "Loughman",
+          "Cocoa",
+          "Courtenay",
+          "Merritt Island"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 4, 1966",
+        "Num": "36\u201340 houses in Clearwater; 150\u2013158 homes in Carrollwood and Temple Terrace; 93\u2013100 homes in Galloway and Gibsonia; 480 homes in Polk County; many trailers and a restaurant in Loughman; total damages reached $75 million",
+        "Annotation": "Largo\u2013Clearwater\u2013Carrollwood\u2013Temple Terrace\u2013Galloway\u2013Gibsonia\u2013Loughman, Florida"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "St. Petersburg",
+          "Lakeland",
+          "Winter Haven",
+          "Haines City",
+          "Auburndale",
+          "Holopaw",
+          "Rockledge",
+          "Cocoa",
+          "Cocoa Beach"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 4, 1966",
+        "Num": "43 homes in Pinellas Point; 15 homes in Lakeland; homes and businesses in northern Winter Haven; warehouses, Citrus trees, and trailers from Auburndale and northern Winter Haven to just south of Haines City; 150 trailers in six different trailer parks in Cocoa Beach\u2013Rockledge area; a shopping center and 20\u201323 frame homes in Cocoa Beach\u2013Rockledge area",
+        "Annotation": "St. Petersburg\u2013Lakeland\u2013Winter Haven\u2013Haines City\u2013Auburndale\u2013Holopaw\u2013Rockledge\u2013Cocoa\u2013Cocoa Beach, Florida"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "11",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Galloway and Gibsonia"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 4, 1966",
-      "Num": "280 injuries",
-      "Annotation": "Largo\u2013Clearwater\u2013Carrollwood\u2013Temple Terrace\u2013Galloway\u2013Gibsonia\u2013Loughman, Florida"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 5, 1966",
+        "Num": "11",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Tampa",
+          "Polk County"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 4, 1966",
+        "Num": "10",
+        "Annotation": "Largo\u2013Clearwater\u2013Carrollwood\u2013Temple Terrace\u2013Galloway\u2013Gibsonia\u2013Loughman, Florida"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Davenport"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 4, 1966",
+        "Num": "1",
+        "Annotation": "Largo\u2013Clearwater\u2013Carrollwood\u2013Temple Terrace\u2013Galloway\u2013Gibsonia\u2013Loughman, Florida"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Pinellas Point"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 4, 1966",
-      "Num": "9 injuries",
-      "Annotation": "St. Petersburg\u2013Lakeland\u2013Winter Haven\u2013Haines City\u2013Auburndale\u2013Holopaw\u2013Rockledge\u2013Cocoa\u2013Cocoa Beach, Florida"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 5, 1966",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Largo",
+          "Clearwater",
+          "Carrollwood",
+          "Temple Terrace",
+          "Galloway",
+          "Gibsonia",
+          "Loughman",
+          "Tampa",
+          "Polk County",
+          "Cocoa",
+          "Courtenay",
+          "Merritt Island"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 5, 1966",
+        "Num": "NULL",
+        "Annotation": "Largo\u2013Clearwater\u2013Carrollwood\u2013Temple Terrace\u2013Galloway\u2013Gibsonia\u2013Loughman, Florida"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "St. Petersburg",
+          "Lakeland",
+          "Winter Haven",
+          "Haines City",
+          "Auburndale",
+          "Holopaw",
+          "Rockledge",
+          "Cocoa",
+          "Cocoa Beach"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 5, 1966",
+        "Num": "NULL",
+        "Annotation": "St. Petersburg\u2013Lakeland\u2013Winter Haven\u2013Haines City\u2013Auburndale\u2013Holopaw\u2013Rockledge\u2013Cocoa\u2013Cocoa Beach, Florida"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Lakeland"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 4, 1966",
-      "Num": "18 injuries",
-      "Annotation": "St. Petersburg\u2013Lakeland\u2013Winter Haven\u2013Haines City\u2013Auburndale\u2013Holopaw\u2013Rockledge\u2013Cocoa\u2013Cocoa Beach, Florida"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 5, 1966",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Clearwater"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 5, 1966",
+        "Num": "36-40 houses damaged",
+        "Annotation": "Largo\u2013Clearwater\u2013Carrollwood\u2013Temple Terrace\u2013Galloway\u2013Gibsonia\u2013Loughman, Florida"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Carrollwood",
+          "Temple Terrace"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 5, 1966",
+        "Num": "150-158 homes demolished, 186 residences damaged",
+        "Annotation": "Largo\u2013Clearwater\u2013Carrollwood\u2013Temple Terrace\u2013Galloway\u2013Gibsonia\u2013Loughman, Florida"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Galloway",
+          "Gibsonia"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 5, 1966",
+        "Num": "at least 93 homes demolished, possibly more than 100 homes demolished",
+        "Annotation": "Largo\u2013Clearwater\u2013Carrollwood\u2013Temple Terrace\u2013Galloway\u2013Gibsonia\u2013Loughman, Florida"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Loughman"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 5, 1966",
+        "Num": "many trailers destroyed",
+        "Annotation": "Largo\u2013Clearwater\u2013Carrollwood\u2013Temple Terrace\u2013Galloway\u2013Gibsonia\u2013Loughman, Florida"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Pinellas Point"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 5, 1966",
+        "Num": "43 homes damaged or destroyed",
+        "Annotation": "St. Petersburg\u2013Lakeland\u2013Winter Haven\u2013Haines City\u2013Auburndale\u2013Holopaw\u2013Rockledge\u2013Cocoa\u2013Cocoa Beach, Florida"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Lakeland"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 5, 1966",
+        "Num": "15 homes destroyed",
+        "Annotation": "St. Petersburg\u2013Lakeland\u2013Winter Haven\u2013Haines City\u2013Auburndale\u2013Holopaw\u2013Rockledge\u2013Cocoa\u2013Cocoa Beach, Florida"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Auburndale",
+          "northern Winter Haven"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 5, 1966",
+        "Num": "homes and businesses demolished",
+        "Annotation": "St. Petersburg\u2013Lakeland\u2013Winter Haven\u2013Haines City\u2013Auburndale\u2013Holopaw\u2013Rockledge\u2013Cocoa\u2013Cocoa Beach, Florida"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Cocoa Beach",
+          "Rockledge"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 5, 1966",
+        "Num": "150 trailers destroyed, 20-23 frame homes demolished",
+        "Annotation": "St. Petersburg\u2013Lakeland\u2013Winter Haven\u2013Haines City\u2013Auburndale\u2013Holopaw\u2013Rockledge\u2013Cocoa\u2013Cocoa Beach, Florida"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "530",
+      "Total_Injuries_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Cocoa Beach\u2013Rockledge"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 4, 1966",
-      "Num": "100 injuries",
-      "Annotation": "St. Petersburg\u2013Lakeland\u2013Winter Haven\u2013Haines City\u2013Auburndale\u2013Holopaw\u2013Rockledge\u2013Cocoa\u2013Cocoa Beach, Florida"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 5, 1966",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Largo",
-        "Clearwater",
-        "Carrollwood",
-        "Temple Terrace",
-        "Galloway",
-        "Gibsonia",
-        "Loughman",
-        "Cocoa",
-        "Courtenay",
-        "Merritt Island"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 4, 1966",
-      "Num": "36\u201340 houses in Clearwater; 150\u2013158 homes in Carrollwood and Temple Terrace; 93\u2013100 homes in Galloway and Gibsonia; 480 homes in Polk County; many trailers and a restaurant in Loughman; total damages reached $75 million",
-      "Annotation": "Largo\u2013Clearwater\u2013Carrollwood\u2013Temple Terrace\u2013Galloway\u2013Gibsonia\u2013Loughman, Florida"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 5, 1966",
+        "Num": "530",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Clearwater",
+          "Carrollwood",
+          "Temple Terrace",
+          "University of South Florida",
+          "Galloway",
+          "Gibsonia",
+          "Loughman",
+          "Cocoa",
+          "Pinellas Point",
+          "Lakeland",
+          "Winter Haven",
+          "Auburndale",
+          "Haines City",
+          "Holopaw",
+          "Rockledge",
+          "Cocoa Beach"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 5, 1966",
+        "Num": "280",
+        "Annotation": "Largo\u2013Clearwater\u2013Carrollwood\u2013Temple Terrace\u2013Galloway\u2013Gibsonia\u2013Loughman, Florida"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Pinellas Point"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 5, 1966",
+        "Num": "9",
+        "Annotation": "St. Petersburg\u2013Lakeland\u2013Winter Haven\u2013Haines City\u2013Auburndale\u2013Holopaw\u2013Rockledge\u2013Cocoa\u2013Cocoa Beach, Florida"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Lakeland"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 5, 1966",
+        "Num": "18",
+        "Annotation": "St. Petersburg\u2013Lakeland\u2013Winter Haven\u2013Haines City\u2013Auburndale\u2013Holopaw\u2013Rockledge\u2013Cocoa\u2013Cocoa Beach, Florida"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Cocoa Beach",
+          "Rockledge"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 5, 1966",
+        "Num": "100",
+        "Annotation": "St. Petersburg\u2013Lakeland\u2013Winter Haven\u2013Haines City\u2013Auburndale\u2013Holopaw\u2013Rockledge\u2013Cocoa\u2013Cocoa Beach, Florida"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "St. Petersburg",
-        "Lakeland",
-        "Winter Haven",
-        "Haines City",
-        "Auburndale",
-        "Holopaw",
-        "Rockledge",
-        "Cocoa",
-        "Cocoa Beach"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 4, 1966",
-      "Num": "43 homes in Pinellas Point; 15 homes in Lakeland; homes and businesses in northern Winter Haven; warehouses, Citrus trees, and trailers from Auburndale and northern Winter Haven to just south of Haines City; 150 trailers in six different trailer parks in Cocoa Beach\u2013Rockledge area; a shopping center and 20\u201323 frame homes in Cocoa Beach\u2013Rockledge area",
-      "Annotation": "St. Petersburg\u2013Lakeland\u2013Winter Haven\u2013Haines City\u2013Auburndale\u2013Holopaw\u2013Rockledge\u2013Cocoa\u2013Cocoa Beach, Florida"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "11",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 5, 1966",
-      "Num": "11",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Tampa",
-        "Polk County"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 4, 1966",
-      "Num": "10",
-      "Annotation": "Largo\u2013Clearwater\u2013Carrollwood\u2013Temple Terrace\u2013Galloway\u2013Gibsonia\u2013Loughman, Florida"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "1966-04-04",
+        "End_Date": "1966-04-05",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Largo",
+          "Clearwater",
+          "Carrollwood",
+          "Temple Terrace",
+          "Galloway",
+          "Gibsonia",
+          "Loughman",
+          "St. Petersburg",
+          "Lakeland",
+          "Winter Haven",
+          "Haines City",
+          "Auburndale",
+          "Holopaw",
+          "Rockledge",
+          "Cocoa",
+          "Cocoa Beach"
+        ],
+        "Start_Date": "1966-04-04",
+        "End_Date": "1966-04-05",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$75,252,000 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "Yes",
+      "Total_Damage_Inflation_Adjusted_Year": "2024",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Davenport"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 4, 1966",
-      "Num": "1",
-      "Annotation": "Largo\u2013Clearwater\u2013Carrollwood\u2013Temple Terrace\u2013Galloway\u2013Gibsonia\u2013Loughman, Florida"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 5, 1966",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Largo",
-        "Clearwater",
-        "Carrollwood",
-        "Temple Terrace",
-        "Galloway",
-        "Gibsonia",
-        "Loughman",
-        "Tampa",
-        "Polk County",
-        "Cocoa",
-        "Courtenay",
-        "Merritt Island"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 5, 1966",
-      "Num": "NULL",
-      "Annotation": "Largo\u2013Clearwater\u2013Carrollwood\u2013Temple Terrace\u2013Galloway\u2013Gibsonia\u2013Loughman, Florida"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "St. Petersburg",
-        "Lakeland",
-        "Winter Haven",
-        "Haines City",
-        "Auburndale",
-        "Holopaw",
-        "Rockledge",
-        "Cocoa",
-        "Cocoa Beach"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 5, 1966",
-      "Num": "NULL",
-      "Annotation": "St. Petersburg\u2013Lakeland\u2013Winter Haven\u2013Haines City\u2013Auburndale\u2013Holopaw\u2013Rockledge\u2013Cocoa\u2013Cocoa Beach, Florida"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 5, 1966",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Clearwater"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 5, 1966",
-      "Num": "36-40 houses damaged",
-      "Annotation": "Largo\u2013Clearwater\u2013Carrollwood\u2013Temple Terrace\u2013Galloway\u2013Gibsonia\u2013Loughman, Florida"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Carrollwood",
-        "Temple Terrace"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 5, 1966",
-      "Num": "150-158 homes demolished, 186 residences damaged",
-      "Annotation": "Largo\u2013Clearwater\u2013Carrollwood\u2013Temple Terrace\u2013Galloway\u2013Gibsonia\u2013Loughman, Florida"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Galloway",
-        "Gibsonia"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 5, 1966",
-      "Num": "at least 93 homes demolished, possibly more than 100 homes demolished",
-      "Annotation": "Largo\u2013Clearwater\u2013Carrollwood\u2013Temple Terrace\u2013Galloway\u2013Gibsonia\u2013Loughman, Florida"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Loughman"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 5, 1966",
-      "Num": "many trailers destroyed",
-      "Annotation": "Largo\u2013Clearwater\u2013Carrollwood\u2013Temple Terrace\u2013Galloway\u2013Gibsonia\u2013Loughman, Florida"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Pinellas Point"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 5, 1966",
-      "Num": "43 homes damaged or destroyed",
-      "Annotation": "St. Petersburg\u2013Lakeland\u2013Winter Haven\u2013Haines City\u2013Auburndale\u2013Holopaw\u2013Rockledge\u2013Cocoa\u2013Cocoa Beach, Florida"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Lakeland"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 5, 1966",
-      "Num": "15 homes destroyed",
-      "Annotation": "St. Petersburg\u2013Lakeland\u2013Winter Haven\u2013Haines City\u2013Auburndale\u2013Holopaw\u2013Rockledge\u2013Cocoa\u2013Cocoa Beach, Florida"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Auburndale",
-        "northern Winter Haven"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 5, 1966",
-      "Num": "homes and businesses demolished",
-      "Annotation": "St. Petersburg\u2013Lakeland\u2013Winter Haven\u2013Haines City\u2013Auburndale\u2013Holopaw\u2013Rockledge\u2013Cocoa\u2013Cocoa Beach, Florida"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Cocoa Beach",
-        "Rockledge"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 5, 1966",
-      "Num": "150 trailers destroyed, 20-23 frame homes demolished",
-      "Annotation": "St. Petersburg\u2013Lakeland\u2013Winter Haven\u2013Haines City\u2013Auburndale\u2013Holopaw\u2013Rockledge\u2013Cocoa\u2013Cocoa Beach, Florida"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "530",
-    "Total_Injuries_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 5, 1966",
-      "Num": "530",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Clearwater",
-        "Carrollwood",
-        "Temple Terrace",
-        "University of South Florida",
-        "Galloway",
-        "Gibsonia",
-        "Loughman",
-        "Cocoa",
-        "Pinellas Point",
-        "Lakeland",
-        "Winter Haven",
-        "Auburndale",
-        "Haines City",
-        "Holopaw",
-        "Rockledge",
-        "Cocoa Beach"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 5, 1966",
-      "Num": "280",
-      "Annotation": "Largo\u2013Clearwater\u2013Carrollwood\u2013Temple Terrace\u2013Galloway\u2013Gibsonia\u2013Loughman, Florida"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Pinellas Point"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 5, 1966",
-      "Num": "9",
-      "Annotation": "St. Petersburg\u2013Lakeland\u2013Winter Haven\u2013Haines City\u2013Auburndale\u2013Holopaw\u2013Rockledge\u2013Cocoa\u2013Cocoa Beach, Florida"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Lakeland"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 5, 1966",
-      "Num": "18",
-      "Annotation": "St. Petersburg\u2013Lakeland\u2013Winter Haven\u2013Haines City\u2013Auburndale\u2013Holopaw\u2013Rockledge\u2013Cocoa\u2013Cocoa Beach, Florida"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Cocoa Beach",
-        "Rockledge"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 5, 1966",
-      "Num": "100",
-      "Annotation": "St. Petersburg\u2013Lakeland\u2013Winter Haven\u2013Haines City\u2013Auburndale\u2013Holopaw\u2013Rockledge\u2013Cocoa\u2013Cocoa Beach, Florida"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "1966-04-04",
-      "End_Date": "1966-04-05",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Largo",
-        "Clearwater",
-        "Carrollwood",
-        "Temple Terrace",
-        "Galloway",
-        "Gibsonia",
-        "Loughman",
-        "St. Petersburg",
-        "Lakeland",
-        "Winter Haven",
-        "Haines City",
-        "Auburndale",
-        "Holopaw",
-        "Rockledge",
-        "Cocoa",
-        "Cocoa Beach"
-      ],
-      "Start_Date": "1966-04-04",
-      "End_Date": "1966-04-05",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$75,252,000 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "Yes",
-    "Total_Damage_Inflation_Adjusted_Year": "2024",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 5, 1966",
-      "Num": "$75,252,000 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "Yes",
-      "Num_Inflation_Adjusted_Year": "2024",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Tampa Bay Area",
-        "Carrollwood",
-        "Temple Terrace",
-        "Galloway",
-        "Gibsonia",
-        "Loughman",
-        "Cocoa"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 5, 1966",
-      "Num": "$20 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Largo\u2013Clearwater\u2013Carrollwood\u2013Temple Terrace\u2013Galloway\u2013Gibsonia\u2013Loughman, Florida"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Lakeland",
-        "Winter Haven",
-        "Haines City",
-        "Auburndale",
-        "Holopaw",
-        "Rockledge",
-        "Cocoa",
-        "Cocoa Beach"
-      ],
-      "Start_Date": "April 4, 1966",
-      "End_Date": "April 5, 1966",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "St. Petersburg\u2013Lakeland\u2013Winter Haven\u2013Haines City\u2013Auburndale\u2013Holopaw\u2013Rockledge\u2013Cocoa\u2013Cocoa Beach, Florida"
-    }
-  ],
-  "Main_Event": "Tornado",
-  "Main_Event_Annotation": "Info_Box",
-  "Start_Date": "April 4, 1966",
-  "End_Date": "April 5, 1966",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "United States"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 5, 1966",
+        "Num": "$75,252,000 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "Yes",
+        "Num_Inflation_Adjusted_Year": "2024",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Tampa Bay Area",
+          "Carrollwood",
+          "Temple Terrace",
+          "Galloway",
+          "Gibsonia",
+          "Loughman",
+          "Cocoa"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 5, 1966",
+        "Num": "$20 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Largo\u2013Clearwater\u2013Carrollwood\u2013Temple Terrace\u2013Galloway\u2013Gibsonia\u2013Loughman, Florida"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Lakeland",
+          "Winter Haven",
+          "Haines City",
+          "Auburndale",
+          "Holopaw",
+          "Rockledge",
+          "Cocoa",
+          "Cocoa Beach"
+        ],
+        "Start_Date": "April 4, 1966",
+        "End_Date": "April 5, 1966",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "St. Petersburg\u2013Lakeland\u2013Winter Haven\u2013Haines City\u2013Auburndale\u2013Holopaw\u2013Rockledge\u2013Cocoa\u2013Cocoa Beach, Florida"
+      }
+    ],
+    "Main_Event": "Tornado",
+    "Main_Event_Annotation": "Info_Box",
+    "Start_Date": "April 4, 1966",
+    "End_Date": "April 5, 1966",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "United States"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

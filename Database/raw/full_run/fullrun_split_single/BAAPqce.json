@@ -1,347 +1,349 @@
-{
-  "Event_ID": "BAAPqce",
-  "Sources": "https://en.wikipedia.org/wiki/Hurricane_Jova_(2023)",
-  "Event_Names": "Hurricane Jova (2023)",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mexico"
+[
+  {
+    "Event_ID": "BAAPqce",
+    "Sources": "https://en.wikipedia.org/wiki/Hurricane_Jova_(2023)",
+    "Event_Names": "Hurricane Jova (2023)",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Southwestern United States"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Baja California Sur"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mexico"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Southwestern United States"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Baja California Sur"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Colorado City, Arizona"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$250,000 in damage",
+        "Annotation": "Southwestern United States"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Ocean Beach, San Francisco"
+        ],
+        "Start_Date": "September 10",
+        "End_Date": "NULL",
+        "Num": "Five people",
+        "Annotation": "Southwestern United States"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Colorado City, Arizona"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$250,000 in damage",
-      "Annotation": "Southwestern United States"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "September 10, 2023",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Southwestern United States"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Colorado City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Southwestern United States"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "None reported",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Ocean Beach, San Francisco"
-      ],
-      "Start_Date": "September 10",
-      "End_Date": "NULL",
-      "Num": "Five people",
-      "Annotation": "Southwestern United States"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "September 10, 2023",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Southwestern United States"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Colorado City"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Southwestern United States"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "None reported",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "None reported",
-      "Annotation": "Mexico"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "None reported",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "None reported",
+        "Annotation": "Southwestern United States"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Baja California Sur",
+          "Colima",
+          "Jalisco",
+          "Nayarit",
+          "Sinaloa"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "None reported",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "California",
+          "Arizona",
+          "Nevada"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "None reported",
+        "Annotation": "Southwestern United States"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "None reported",
-      "Annotation": "Southwestern United States"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Baja California Sur",
-        "Colima",
-        "Jalisco",
-        "Nayarit",
-        "Sinaloa"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "None reported",
-      "Annotation": "Mexico"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Southwestern United States"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Los Cabos"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Colorado City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Southwestern United States"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "California",
-        "Arizona",
-        "Nevada"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "None reported",
-      "Annotation": "Southwestern United States"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mexico"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Southwestern United States"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Baja California Sur"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Colorado City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Southwestern United States"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Southwestern United States"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Los Cabos"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mexico"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Southwestern United States"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Ocean Beach, San Francisco"
+        ],
+        "Start_Date": "September 10, 2023",
+        "End_Date": "September 10, 2023",
+        "Num": "Five people",
+        "Annotation": "Southwestern United States"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Colorado City"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Southwestern United States"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mexico"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "September 10, 2023",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Southwestern United States"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Colorado City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Southwestern United States"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$251,000",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Southwestern United States"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Baja California Sur"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mexico"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Colorado City"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Southwestern United States"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Southwestern United States"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Ocean Beach, San Francisco"
-      ],
-      "Start_Date": "September 10, 2023",
-      "End_Date": "September 10, 2023",
-      "Num": "Five people",
-      "Annotation": "Southwestern United States"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "September 10, 2023",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Southwestern United States"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Colorado City"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Southwestern United States"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$251,000",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$250,000",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Southwestern United States"
-    },
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Colorado City"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$250,000",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Southwestern United States"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood|Lightning",
-  "Hazards_Annotation": "Info_Box|Mexico|Southwestern United States",
-  "Start_Date": "September 4, 2023",
-  "End_Date": "September 14, 2023",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Mexico",
-    "United States"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$250,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Southwestern United States"
+      },
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Colorado City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$250,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Southwestern United States"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood|Lightning",
+    "Hazards_Annotation": "Info_Box|Mexico|Southwestern United States",
+    "Start_Date": "September 4, 2023",
+    "End_Date": "September 14, 2023",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Mexico",
+      "United States"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

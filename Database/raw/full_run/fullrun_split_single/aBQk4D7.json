@@ -1,967 +1,969 @@
-{
-  "Event_ID": "aBQk4D7",
-  "Sources": "https://en.wikipedia.org/wiki/1950_Atlantic_hurricane_season",
-  "Event_Names": "1950 Atlantic hurricane season",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Seasonal summary"
-    },
-    {
-      "Administrative_Areas": [
-        "Canada"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Able"
-    },
-    {
-      "Administrative_Areas": [
-        "Cuba"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Baker"
-    },
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Item"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "New York City"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "nine traffic fatalities",
-      "Annotation": "Hurricane Able"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Birmingham, Alabama"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "one death and two injuries",
-      "Annotation": "Hurricane Baker"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mid-Atlantic states"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "five deaths",
-      "Annotation": "Hurricane Dog"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "New England"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "12 people",
-      "Annotation": "Hurricane Dog"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Florida"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "three deaths",
-      "Annotation": "Hurricane King"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Georgia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "one additional death",
-      "Annotation": "Hurricane King"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Nova Scotia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "two people",
-      "Annotation": "Hurricane Able"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "off the coast of Canada"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "12 others",
-      "Annotation": "Hurricane Dog"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Cuba"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "37 people",
-      "Annotation": "Hurricane Baker"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Cuba"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "seven people",
-      "Annotation": "Hurricane King"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Veracruz"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "15 injuries",
-      "Annotation": "Hurricane Item"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "Antigua"
-      ],
-      "Start_Date": "August 21",
-      "End_Date": "August 22",
-      "Num": "More than 100 homes",
-      "Annotation": "Hurricane Baker"
-    },
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "October 18",
-      "End_Date": "October 19",
-      "Num": "12,290 houses damaged",
-      "Annotation": "Hurricane King"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "New York City"
-      ],
-      "Start_Date": "August 17",
-      "End_Date": "August 24",
-      "Num": "NULL",
-      "Annotation": "Hurricane Able"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Nova Scotia"
-      ],
-      "Start_Date": "August 17",
-      "End_Date": "August 24",
-      "Num": "NULL",
-      "Annotation": "Hurricane Able"
-    },
-    {
-      "Administrative_Area": "Antigua",
-      "Locations": [
-        "Antigua"
-      ],
-      "Start_Date": "August 21",
-      "End_Date": "August 22",
-      "Num": "More than 100 homes",
-      "Annotation": "Hurricane Baker"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Eastern Cuba"
-      ],
-      "Start_Date": "August 24",
-      "End_Date": "August 25",
-      "Num": "NULL",
-      "Annotation": "Hurricane Baker"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mobile, Alabama",
-        "Saint Marks, Florida"
-      ],
-      "Start_Date": "August 31",
-      "End_Date": "September 1",
-      "Num": "NULL",
-      "Annotation": "Hurricane Baker"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Cedar Key, Florida"
-      ],
-      "Start_Date": "September 6",
-      "End_Date": "September 9",
-      "Num": "Half of the houses",
-      "Annotation": "Hurricane Easy"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Miami, Florida"
-      ],
-      "Start_Date": "October 18",
-      "End_Date": "October 19",
-      "Num": "12,290 houses damaged",
-      "Annotation": "Hurricane King"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "93 total",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Seasonal summary"
-    },
-    {
-      "Administrative_Areas": [
-        "Canada"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Able"
-    },
-    {
-      "Administrative_Areas": [
-        "Cuba"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "37",
-      "Annotation": "Hurricane Baker"
-    },
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Dog"
-    },
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Easy"
-    },
-    {
-      "Administrative_Areas": [
-        "Cuba"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "7",
-      "Annotation": "Hurricane King"
-    },
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane King"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "New York City"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "9",
-      "Annotation": "Hurricane Able"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Nova Scotia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "Hurricane Able"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "37",
-      "Annotation": "Hurricane Baker"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mid-Atlantic states"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "5",
-      "Annotation": "Hurricane Dog"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "New England"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "12",
-      "Annotation": "Hurricane Dog"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Off the coast of Canada"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "12",
-      "Annotation": "Hurricane Dog"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Florida"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "Hurricane Easy"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "7",
-      "Annotation": "Hurricane King"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Georgia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Hurricane King"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Florida"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3",
-      "Annotation": "Hurricane King"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Antigua"
-      ],
-      "Start_Date": "August 21",
-      "End_Date": "August 22",
-      "Num": "thousands",
-      "Annotation": "Hurricane Baker"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Antigua",
-      "Locations": [
-        "Antigua"
-      ],
-      "Start_Date": "August 21",
-      "End_Date": "August 22",
-      "Num": "thousands",
-      "Annotation": "Hurricane Baker"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Antigua",
-      "Start_Date": "August 21",
-      "End_Date": "August 22",
-      "Num": "thousands",
-      "Annotation": "Hurricane Baker"
-    },
-    {
-      "Administrative_Areas": "Antigua",
-      "Start_Date": "September 6",
-      "End_Date": "September 6",
-      "Num": "thousands",
-      "Annotation": "Hurricane Dog"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Antigua",
-      "Locations": [
-        "Antigua"
-      ],
-      "Start_Date": "August 21",
-      "End_Date": "August 22",
-      "Num": "thousands",
-      "Annotation": "Hurricane Baker"
-    },
-    {
-      "Administrative_Area": "Antigua",
-      "Locations": [
-        "Antigua"
-      ],
-      "Start_Date": "September 6",
-      "End_Date": "September 6",
-      "Num": "thousands",
-      "Annotation": "Hurricane Dog"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    },
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    },
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Birmingham, Alabama"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "Hurricane Baker"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Item"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "15",
-      "Annotation": "Hurricane Item"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Canada"
-      ],
-      "Start_Date": "August 24",
-      "End_Date": "August 24",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Able"
-    },
-    {
-      "Administrative_Areas": [
-        "Cuba"
-      ],
-      "Start_Date": "August 24",
-      "End_Date": "August 25",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Baker"
-    },
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "August 31",
-      "End_Date": "September 1",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Baker"
-    },
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "September 6",
-      "End_Date": "September 9",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Easy"
-    },
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "October 11",
-      "End_Date": "October 11",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Item"
-    },
-    {
-      "Administrative_Areas": [
-        "Cuba"
-      ],
-      "Start_Date": "October 17",
-      "End_Date": "October 18",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane King"
-    },
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "October 18",
-      "End_Date": "October 20",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane King"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Nova Scotia"
-      ],
-      "Start_Date": "August 24",
-      "End_Date": "August 24",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Able"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Eastern Cuba"
-      ],
-      "Start_Date": "August 24",
-      "End_Date": "August 25",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Baker"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Gulf Shores, Alabama"
-      ],
-      "Start_Date": "August 31",
-      "End_Date": "September 1",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Baker"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Cedar Key, Florida",
-        "Hernando Beach, Florida"
-      ],
-      "Start_Date": "September 6",
-      "End_Date": "September 9",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Easy"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Nautla, Veracruz"
-      ],
-      "Start_Date": "October 11",
-      "End_Date": "October 11",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Item"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Camag\u00fcey"
-      ],
-      "Start_Date": "October 17",
-      "End_Date": "October 18",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane King"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Miami, Florida",
-        "Lake Okeechobee, Florida",
-        "Clewiston, Florida"
-      ],
-      "Start_Date": "October 18",
-      "End_Date": "October 20",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane King"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$43.39 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$38.5 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "1950 Atlantic hurricane season"
-    },
-    {
-      "Administrative_Areas": [
-        "Canada"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "over $1 million",
-      "Num_Unit": "CAD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Able"
-    },
-    {
-      "Administrative_Areas": [
-        "Cuba"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "several million dollars",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Baker"
-    },
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$1.5 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Item"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "New York City"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Able"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mobile, Alabama",
-        "Saint Marks, Florida"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$2.55 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Baker"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Caryville, Florida"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Baker"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Apalachicola, Florida"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Baker"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Birmingham, Alabama"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Baker"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Cedar Key, Florida"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$3 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Easy"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Miami, Florida"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$15 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane King"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Florida"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$27.75 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane King"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Nova Scotia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Able"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Baker"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Veracruz"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$1.5 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Item"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Tuxpam"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Item"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "June 15, 1950",
-  "End_Date": "November 15, 1950",
-  "Time_Annotation": "Seasonal summary"
-}
+[
+  {
+    "Event_ID": "aBQk4D7",
+    "Sources": "https://en.wikipedia.org/wiki/1950_Atlantic_hurricane_season",
+    "Event_Names": "1950 Atlantic hurricane season",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Seasonal summary"
+      },
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Able"
+      },
+      {
+        "Administrative_Areas": [
+          "Cuba"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Baker"
+      },
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Item"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New York City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "nine traffic fatalities",
+        "Annotation": "Hurricane Able"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Birmingham, Alabama"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "one death and two injuries",
+        "Annotation": "Hurricane Baker"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mid-Atlantic states"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "five deaths",
+        "Annotation": "Hurricane Dog"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New England"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "12 people",
+        "Annotation": "Hurricane Dog"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "three deaths",
+        "Annotation": "Hurricane King"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Georgia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "one additional death",
+        "Annotation": "Hurricane King"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Nova Scotia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "two people",
+        "Annotation": "Hurricane Able"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "off the coast of Canada"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "12 others",
+        "Annotation": "Hurricane Dog"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Cuba"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "37 people",
+        "Annotation": "Hurricane Baker"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Cuba"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "seven people",
+        "Annotation": "Hurricane King"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Veracruz"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "15 injuries",
+        "Annotation": "Hurricane Item"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "Antigua"
+        ],
+        "Start_Date": "August 21",
+        "End_Date": "August 22",
+        "Num": "More than 100 homes",
+        "Annotation": "Hurricane Baker"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "October 18",
+        "End_Date": "October 19",
+        "Num": "12,290 houses damaged",
+        "Annotation": "Hurricane King"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New York City"
+        ],
+        "Start_Date": "August 17",
+        "End_Date": "August 24",
+        "Num": "NULL",
+        "Annotation": "Hurricane Able"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Nova Scotia"
+        ],
+        "Start_Date": "August 17",
+        "End_Date": "August 24",
+        "Num": "NULL",
+        "Annotation": "Hurricane Able"
+      },
+      {
+        "Administrative_Area": "Antigua",
+        "Locations": [
+          "Antigua"
+        ],
+        "Start_Date": "August 21",
+        "End_Date": "August 22",
+        "Num": "More than 100 homes",
+        "Annotation": "Hurricane Baker"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Eastern Cuba"
+        ],
+        "Start_Date": "August 24",
+        "End_Date": "August 25",
+        "Num": "NULL",
+        "Annotation": "Hurricane Baker"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mobile, Alabama",
+          "Saint Marks, Florida"
+        ],
+        "Start_Date": "August 31",
+        "End_Date": "September 1",
+        "Num": "NULL",
+        "Annotation": "Hurricane Baker"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Cedar Key, Florida"
+        ],
+        "Start_Date": "September 6",
+        "End_Date": "September 9",
+        "Num": "Half of the houses",
+        "Annotation": "Hurricane Easy"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Miami, Florida"
+        ],
+        "Start_Date": "October 18",
+        "End_Date": "October 19",
+        "Num": "12,290 houses damaged",
+        "Annotation": "Hurricane King"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "93 total",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Seasonal summary"
+      },
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Able"
+      },
+      {
+        "Administrative_Areas": [
+          "Cuba"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "37",
+        "Annotation": "Hurricane Baker"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Dog"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Easy"
+      },
+      {
+        "Administrative_Areas": [
+          "Cuba"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "7",
+        "Annotation": "Hurricane King"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane King"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New York City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "9",
+        "Annotation": "Hurricane Able"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Nova Scotia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Hurricane Able"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "37",
+        "Annotation": "Hurricane Baker"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mid-Atlantic states"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5",
+        "Annotation": "Hurricane Dog"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New England"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "12",
+        "Annotation": "Hurricane Dog"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Off the coast of Canada"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "12",
+        "Annotation": "Hurricane Dog"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Hurricane Easy"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "7",
+        "Annotation": "Hurricane King"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Georgia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Hurricane King"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Hurricane King"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Antigua"
+        ],
+        "Start_Date": "August 21",
+        "End_Date": "August 22",
+        "Num": "thousands",
+        "Annotation": "Hurricane Baker"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Antigua",
+        "Locations": [
+          "Antigua"
+        ],
+        "Start_Date": "August 21",
+        "End_Date": "August 22",
+        "Num": "thousands",
+        "Annotation": "Hurricane Baker"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Antigua",
+        "Start_Date": "August 21",
+        "End_Date": "August 22",
+        "Num": "thousands",
+        "Annotation": "Hurricane Baker"
+      },
+      {
+        "Administrative_Areas": "Antigua",
+        "Start_Date": "September 6",
+        "End_Date": "September 6",
+        "Num": "thousands",
+        "Annotation": "Hurricane Dog"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Antigua",
+        "Locations": [
+          "Antigua"
+        ],
+        "Start_Date": "August 21",
+        "End_Date": "August 22",
+        "Num": "thousands",
+        "Annotation": "Hurricane Baker"
+      },
+      {
+        "Administrative_Area": "Antigua",
+        "Locations": [
+          "Antigua"
+        ],
+        "Start_Date": "September 6",
+        "End_Date": "September 6",
+        "Num": "thousands",
+        "Annotation": "Hurricane Dog"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Birmingham, Alabama"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Hurricane Baker"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Item"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "15",
+        "Annotation": "Hurricane Item"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "August 24",
+        "End_Date": "August 24",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Able"
+      },
+      {
+        "Administrative_Areas": [
+          "Cuba"
+        ],
+        "Start_Date": "August 24",
+        "End_Date": "August 25",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Baker"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "August 31",
+        "End_Date": "September 1",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Baker"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "September 6",
+        "End_Date": "September 9",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Easy"
+      },
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "October 11",
+        "End_Date": "October 11",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Item"
+      },
+      {
+        "Administrative_Areas": [
+          "Cuba"
+        ],
+        "Start_Date": "October 17",
+        "End_Date": "October 18",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane King"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "October 18",
+        "End_Date": "October 20",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane King"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Nova Scotia"
+        ],
+        "Start_Date": "August 24",
+        "End_Date": "August 24",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Able"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Eastern Cuba"
+        ],
+        "Start_Date": "August 24",
+        "End_Date": "August 25",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Baker"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Gulf Shores, Alabama"
+        ],
+        "Start_Date": "August 31",
+        "End_Date": "September 1",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Baker"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Cedar Key, Florida",
+          "Hernando Beach, Florida"
+        ],
+        "Start_Date": "September 6",
+        "End_Date": "September 9",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Easy"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Nautla, Veracruz"
+        ],
+        "Start_Date": "October 11",
+        "End_Date": "October 11",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Item"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Camag\u00fcey"
+        ],
+        "Start_Date": "October 17",
+        "End_Date": "October 18",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane King"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Miami, Florida",
+          "Lake Okeechobee, Florida",
+          "Clewiston, Florida"
+        ],
+        "Start_Date": "October 18",
+        "End_Date": "October 20",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane King"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$43.39 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$38.5 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "1950 Atlantic hurricane season"
+      },
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "over $1 million",
+        "Num_Unit": "CAD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Able"
+      },
+      {
+        "Administrative_Areas": [
+          "Cuba"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "several million dollars",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Baker"
+      },
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$1.5 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Item"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New York City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Able"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mobile, Alabama",
+          "Saint Marks, Florida"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$2.55 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Baker"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Caryville, Florida"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Baker"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Apalachicola, Florida"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Baker"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Birmingham, Alabama"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Baker"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Cedar Key, Florida"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$3 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Easy"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Miami, Florida"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$15 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane King"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$27.75 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane King"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Nova Scotia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Able"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Baker"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Veracruz"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$1.5 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Item"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Tuxpam"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Item"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "June 15, 1950",
+    "End_Date": "November 15, 1950",
+    "Time_Annotation": "Seasonal summary"
+  }
+]

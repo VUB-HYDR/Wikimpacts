@@ -1,606 +1,608 @@
-{
-  "Event_ID": "MXcx2Bq",
-  "Sources": "https://en.wikipedia.org/wiki/Typhoon_Betty_(1980)",
-  "Event_Names": "Typhoon Betty (1980)",
-  "Total_Summary_Affected": {
-    "Total_Affected": "245,064 families",
-    "Total_Affected_Annotation": "Preparations and impact"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Philippines"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "245,064 families",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Albay province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "440 people",
-      "Annotation": "Preparations and impact"
+[
+  {
+    "Event_ID": "MXcx2Bq",
+    "Sources": "https://en.wikipedia.org/wiki/Typhoon_Betty_(1980)",
+    "Event_Names": "Typhoon Betty (1980)",
+    "Total_Summary_Affected": {
+      "Total_Affected": "245,064 families",
+      "Total_Affected_Annotation": "Preparations and impact"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Tarlac province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$2.7 million damage to rice",
-      "Annotation": "Preparations and impact"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "245,064 families",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Albay province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "440 people",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Tarlac province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$2.7 million damage to rice",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Aurora province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "455 homes destroyed, 2,000 others damaged",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Manila"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "750 people evacuated",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Isabela province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "30,000 citizens homeless",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Cabagan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Half the town underwater",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Cagayan Valley"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8,000 pupils stranded",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Baler in Quezon province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Nueva Ecija"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5 people drowned",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Maliling in Nueva Vizcaya province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "50 fatalities, 22 bodies recovered",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "Over 29,000 homes were damaged",
+      "Total_Buildings_Damaged_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Aurora province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "455 homes destroyed, 2,000 others damaged",
-      "Annotation": "Preparations and impact"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "November 4, 1980",
+        "End_Date": "November 8, 1980",
+        "Num": "Over 29,000 homes were damaged",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Albay province"
+        ],
+        "Start_Date": "November 4, 1980",
+        "End_Date": "November 8, 1980",
+        "Num": "440 people lost their homes due to flooding",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Tarlac province"
+        ],
+        "Start_Date": "November 4, 1980",
+        "End_Date": "November 8, 1980",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Aurora province"
+        ],
+        "Start_Date": "November 4, 1980",
+        "End_Date": "November 8, 1980",
+        "Num": "455 homes were destroyed and 2,000 others were damaged",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Manila"
+        ],
+        "Start_Date": "November 4, 1980",
+        "End_Date": "November 8, 1980",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Isabela province"
+        ],
+        "Start_Date": "November 4, 1980",
+        "End_Date": "November 8, 1980",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Cabagan"
+        ],
+        "Start_Date": "November 4, 1980",
+        "End_Date": "November 8, 1980",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Cagayan Valley"
+        ],
+        "Start_Date": "November 4, 1980",
+        "End_Date": "November 8, 1980",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Baler in Quezon province"
+        ],
+        "Start_Date": "November 4, 1980",
+        "End_Date": "November 8, 1980",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Nueva Ecija"
+        ],
+        "Start_Date": "November 4, 1980",
+        "End_Date": "November 8, 1980",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Maliling in Nueva Vizcaya province"
+        ],
+        "Start_Date": "November 4, 1980",
+        "End_Date": "November 8, 1980",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "101",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Manila"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "750 people evacuated",
-      "Annotation": "Preparations and impact"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "101",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Nueva Ecija"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Maliling, Nueva Vizcaya"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "50",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "245,064 families",
+      "Total_Displaced_Annotation": "Preparations and impact"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Isabela province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "30,000 citizens homeless",
-      "Annotation": "Preparations and impact"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "245,064 families",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Albay province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "440 people",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Manila"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "750 people",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Isabela province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "30,000 citizens",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Cagayan Valley"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8,000 pupils",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "290,000",
+      "Total_Homeless_Annotation": "Preparations and impact"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Cabagan"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Half the town underwater",
-      "Annotation": "Preparations and impact"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "290,000",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Albay province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "440",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Isabela province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "30,000",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Cagayan Valley"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "8,000 pupils stranded",
-      "Annotation": "Preparations and impact"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Tayug"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Seven children were rescued",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Cagayan Valley"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8,000 pupils were stranded",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Baler in Quezon province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Preparations and impact"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "October 28, 1980",
+        "End_Date": "November 8, 1980",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Albay province",
+          "Tayug",
+          "Tarlac province",
+          "Aurora province",
+          "Manila",
+          "Isabela province",
+          "Cabagan",
+          "Cagayan Valley",
+          "Baler",
+          "Quezon province",
+          "Nueva Ecija",
+          "Nueva Vizcaya province"
+        ],
+        "Start_Date": "October 28, 1980",
+        "End_Date": "November 8, 1980",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$181 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Nueva Ecija"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "5 people drowned",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Maliling in Nueva Vizcaya province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "50 fatalities, 22 bodies recovered",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "Over 29,000 homes were damaged",
-    "Total_Buildings_Damaged_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "Philippines"
-      ],
-      "Start_Date": "November 4, 1980",
-      "End_Date": "November 8, 1980",
-      "Num": "Over 29,000 homes were damaged",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Albay province"
-      ],
-      "Start_Date": "November 4, 1980",
-      "End_Date": "November 8, 1980",
-      "Num": "440 people lost their homes due to flooding",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Tarlac province"
-      ],
-      "Start_Date": "November 4, 1980",
-      "End_Date": "November 8, 1980",
-      "Num": "NULL",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Aurora province"
-      ],
-      "Start_Date": "November 4, 1980",
-      "End_Date": "November 8, 1980",
-      "Num": "455 homes were destroyed and 2,000 others were damaged",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Manila"
-      ],
-      "Start_Date": "November 4, 1980",
-      "End_Date": "November 8, 1980",
-      "Num": "NULL",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Isabela province"
-      ],
-      "Start_Date": "November 4, 1980",
-      "End_Date": "November 8, 1980",
-      "Num": "NULL",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Cabagan"
-      ],
-      "Start_Date": "November 4, 1980",
-      "End_Date": "November 8, 1980",
-      "Num": "NULL",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Cagayan Valley"
-      ],
-      "Start_Date": "November 4, 1980",
-      "End_Date": "November 8, 1980",
-      "Num": "NULL",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Baler in Quezon province"
-      ],
-      "Start_Date": "November 4, 1980",
-      "End_Date": "November 8, 1980",
-      "Num": "NULL",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Nueva Ecija"
-      ],
-      "Start_Date": "November 4, 1980",
-      "End_Date": "November 8, 1980",
-      "Num": "NULL",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Maliling in Nueva Vizcaya province"
-      ],
-      "Start_Date": "November 4, 1980",
-      "End_Date": "November 8, 1980",
-      "Num": "NULL",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "101",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "Philippines"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "101",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Nueva Ecija"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "5",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Maliling, Nueva Vizcaya"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "50",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "245,064 families",
-    "Total_Displaced_Annotation": "Preparations and impact"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Philippines"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "245,064 families",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Albay province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "440 people",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Manila"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "750 people",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Isabela province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "30,000 citizens",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Cagayan Valley"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "8,000 pupils",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "290,000",
-    "Total_Homeless_Annotation": "Preparations and impact"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "Philippines"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "290,000",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Albay province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "440",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Isabela province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "30,000",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "Philippines"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Tayug"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Seven children were rescued",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Cagayan Valley"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "8,000 pupils were stranded",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Philippines"
-      ],
-      "Start_Date": "October 28, 1980",
-      "End_Date": "November 8, 1980",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Albay province",
-        "Tayug",
-        "Tarlac province",
-        "Aurora province",
-        "Manila",
-        "Isabela province",
-        "Cabagan",
-        "Cagayan Valley",
-        "Baler",
-        "Quezon province",
-        "Nueva Ecija",
-        "Nueva Vizcaya province"
-      ],
-      "Start_Date": "October 28, 1980",
-      "End_Date": "November 8, 1980",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$181 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "Philippines"
-      ],
-      "Start_Date": "October 28, 1980",
-      "End_Date": "November 8, 1980",
-      "Num": "$181 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Albay province"
-      ],
-      "Start_Date": "October 28, 1980",
-      "End_Date": "November 8, 1980",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Tarlac province"
-      ],
-      "Start_Date": "October 28, 1980",
-      "End_Date": "November 8, 1980",
-      "Num": "$2.7 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Aurora province"
-      ],
-      "Start_Date": "October 28, 1980",
-      "End_Date": "November 8, 1980",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Manila"
-      ],
-      "Start_Date": "October 28, 1980",
-      "End_Date": "November 8, 1980",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Isabela province"
-      ],
-      "Start_Date": "October 28, 1980",
-      "End_Date": "November 8, 1980",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Cagayan Valley"
-      ],
-      "Start_Date": "October 28, 1980",
-      "End_Date": "November 8, 1980",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Quezon province"
-      ],
-      "Start_Date": "October 28, 1980",
-      "End_Date": "November 8, 1980",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Nueva Ecija"
-      ],
-      "Start_Date": "October 28, 1980",
-      "End_Date": "November 8, 1980",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Nueva Vizcaya"
-      ],
-      "Start_Date": "October 28, 1980",
-      "End_Date": "November 8, 1980",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Preparations and impact",
-  "Start_Date": "October 28, 1980",
-  "End_Date": "November 8, 1980",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Guam",
-    "Philippines"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "October 28, 1980",
+        "End_Date": "November 8, 1980",
+        "Num": "$181 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Albay province"
+        ],
+        "Start_Date": "October 28, 1980",
+        "End_Date": "November 8, 1980",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Tarlac province"
+        ],
+        "Start_Date": "October 28, 1980",
+        "End_Date": "November 8, 1980",
+        "Num": "$2.7 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Aurora province"
+        ],
+        "Start_Date": "October 28, 1980",
+        "End_Date": "November 8, 1980",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Manila"
+        ],
+        "Start_Date": "October 28, 1980",
+        "End_Date": "November 8, 1980",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Isabela province"
+        ],
+        "Start_Date": "October 28, 1980",
+        "End_Date": "November 8, 1980",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Cagayan Valley"
+        ],
+        "Start_Date": "October 28, 1980",
+        "End_Date": "November 8, 1980",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Quezon province"
+        ],
+        "Start_Date": "October 28, 1980",
+        "End_Date": "November 8, 1980",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Nueva Ecija"
+        ],
+        "Start_Date": "October 28, 1980",
+        "End_Date": "November 8, 1980",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Nueva Vizcaya"
+        ],
+        "Start_Date": "October 28, 1980",
+        "End_Date": "November 8, 1980",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Preparations and impact",
+    "Start_Date": "October 28, 1980",
+    "End_Date": "November 8, 1980",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Guam",
+      "Philippines"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

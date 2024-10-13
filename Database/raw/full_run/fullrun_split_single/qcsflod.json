@@ -1,416 +1,418 @@
-{
-  "Event_ID": "qcsflod",
-  "Sources": "https://en.wikipedia.org/wiki/Tornado_outbreak_sequence_of_April_19%E2%80%9324,_2011",
-  "Event_Names": "Tornado outbreak sequence of April 19\u201324, 2011",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 19, 2011",
-      "End_Date": "April 24, 2011",
-      "Num": "NULL",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Bowling Green, Missouri",
-        "Girard, Illinois"
-      ],
-      "Start_Date": "April 19, 2011",
-      "End_Date": "April 20, 2011",
-      "Num": "NULL",
-      "Annotation": "April 19\u201320"
+[
+  {
+    "Event_ID": "qcsflod",
+    "Sources": "https://en.wikipedia.org/wiki/Tornado_outbreak_sequence_of_April_19%E2%80%9324,_2011",
+    "Event_Names": "Tornado outbreak sequence of April 19\u201324, 2011",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "St. Louis metropolitan area",
-        "Bridgeton",
-        "Ferguson",
-        "Florissant",
-        "Hazelwood",
-        "Maryland Heights",
-        "New Melle",
-        "Lambert\u2013St. Louis International Airport",
-        "Berkeley",
-        "Dellwood",
-        "Madison County, Illinois",
-        "Granite City, Illinois"
-      ],
-      "Start_Date": "April 22, 2011",
-      "End_Date": "April 22, 2011",
-      "Num": "NULL",
-      "Annotation": "April 22"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 19, 2011",
+        "End_Date": "April 24, 2011",
+        "Num": "NULL",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Bowling Green, Missouri",
+          "Girard, Illinois"
+        ],
+        "Start_Date": "April 19, 2011",
+        "End_Date": "April 20, 2011",
+        "Num": "NULL",
+        "Annotation": "April 19\u201320"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "St. Louis metropolitan area",
+          "Bridgeton",
+          "Ferguson",
+          "Florissant",
+          "Hazelwood",
+          "Maryland Heights",
+          "New Melle",
+          "Lambert\u2013St. Louis International Airport",
+          "Berkeley",
+          "Dellwood",
+          "Madison County, Illinois",
+          "Granite City, Illinois"
+        ],
+        "Start_Date": "April 22, 2011",
+        "End_Date": "April 22, 2011",
+        "Num": "NULL",
+        "Annotation": "April 22"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Bardwell, Kentucky",
+          "Cairo, Illinois"
+        ],
+        "Start_Date": "April 23, 2011",
+        "End_Date": "April 24, 2011",
+        "Num": "NULL",
+        "Annotation": "April 23\u201324"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Bardwell, Kentucky",
-        "Cairo, Illinois"
-      ],
-      "Start_Date": "April 23, 2011",
-      "End_Date": "April 24, 2011",
-      "Num": "NULL",
-      "Annotation": "April 23\u201324"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "April 19, 2011",
-      "End_Date": "April 24, 2011",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Bowling Green",
-        "Girard"
-      ],
-      "Start_Date": "April 19, 2011",
-      "End_Date": "April 20, 2011",
-      "Num": "Significant damage",
-      "Annotation": "April 19\u201320"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "April 19, 2011",
+        "End_Date": "April 24, 2011",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Bowling Green",
+          "Girard"
+        ],
+        "Start_Date": "April 19, 2011",
+        "End_Date": "April 20, 2011",
+        "Num": "Significant damage",
+        "Annotation": "April 19\u201320"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Bridgeton",
+          "Ferguson",
+          "Florissant",
+          "Hazelwood",
+          "Maryland Heights",
+          "New Melle"
+        ],
+        "Start_Date": "April 22, 2011",
+        "End_Date": "April 22, 2011",
+        "Num": "several communities",
+        "Annotation": "April 22"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Lambert\u2013St. Louis International Airport"
+        ],
+        "Start_Date": "April 22, 2011",
+        "End_Date": "April 22, 2011",
+        "Num": "numerous facilities",
+        "Annotation": "April 22"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Bridgeton"
+        ],
+        "Start_Date": "April 22, 2011",
+        "End_Date": "April 22, 2011",
+        "Num": "a number of houses",
+        "Annotation": "St. Louis, Missouri\u2013Madison County, Illinois"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Berkeley"
+        ],
+        "Start_Date": "April 22, 2011",
+        "End_Date": "April 22, 2011",
+        "Num": "several homes",
+        "Annotation": "St. Louis, Missouri\u2013Madison County, Illinois"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Ferguson"
+        ],
+        "Start_Date": "April 22, 2011",
+        "End_Date": "April 22, 2011",
+        "Num": "two businesses",
+        "Annotation": "St. Louis, Missouri\u2013Madison County, Illinois"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Dellwood"
+        ],
+        "Start_Date": "April 22, 2011",
+        "End_Date": "April 22, 2011",
+        "Num": "three homes",
+        "Annotation": "St. Louis, Missouri\u2013Madison County, Illinois"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Madison County"
+        ],
+        "Start_Date": "April 22, 2011",
+        "End_Date": "April 22, 2011",
+        "Num": "about a hundred homes",
+        "Annotation": "St. Louis, Missouri\u2013Madison County, Illinois"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Bardwell"
+        ],
+        "Start_Date": "April 23, 2011",
+        "End_Date": "April 24, 2011",
+        "Num": "NULL",
+        "Annotation": "April 23\u201324"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Cairo"
+        ],
+        "Start_Date": "April 23, 2011",
+        "End_Date": "April 24, 2011",
+        "Num": "airplane hangars",
+        "Annotation": "April 23\u201324"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "0",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Bridgeton",
-        "Ferguson",
-        "Florissant",
-        "Hazelwood",
-        "Maryland Heights",
-        "New Melle"
-      ],
-      "Start_Date": "April 22, 2011",
-      "End_Date": "April 22, 2011",
-      "Num": "several communities",
-      "Annotation": "April 22"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "0",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "0",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Lambert\u2013St. Louis International Airport"
-      ],
-      "Start_Date": "April 22, 2011",
-      "End_Date": "April 22, 2011",
-      "Num": "numerous facilities",
-      "Annotation": "April 22"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 19, 2011",
+        "End_Date": "April 24, 2011",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Bridgeton",
+          "Ferguson",
+          "Florissant",
+          "Hazelwood",
+          "Maryland Heights",
+          "New Melle",
+          "Lambert\u2013St. Louis International Airport",
+          "Berkeley",
+          "Ferguson",
+          "Dellwood",
+          "Madison County",
+          "Granite City"
+        ],
+        "Start_Date": "April 22, 2011",
+        "End_Date": "April 22, 2011",
+        "Num": "NULL",
+        "Annotation": "April 22"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Bridgeton"
-      ],
-      "Start_Date": "April 22, 2011",
-      "End_Date": "April 22, 2011",
-      "Num": "a number of houses",
-      "Annotation": "St. Louis, Missouri\u2013Madison County, Illinois"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 19, 2011",
+        "End_Date": "April 24, 2011",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Bridgeton",
+          "Ferguson",
+          "Florissant",
+          "Hazelwood",
+          "Maryland Heights",
+          "New Melle",
+          "Lambert\u2013St. Louis International Airport",
+          "Berkeley",
+          "Ferguson",
+          "Dellwood",
+          "Madison County"
+        ],
+        "Start_Date": "April 22, 2011",
+        "End_Date": "April 22, 2011",
+        "Num": "NULL",
+        "Annotation": "April 22"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "14",
+      "Total_Injuries_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Berkeley"
-      ],
-      "Start_Date": "April 22, 2011",
-      "End_Date": "April 22, 2011",
-      "Num": "several homes",
-      "Annotation": "St. Louis, Missouri\u2013Madison County, Illinois"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 19, 2011",
+        "End_Date": "April 24, 2011",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Lambert\u2013St. Louis International Airport"
+        ],
+        "Start_Date": "April 22, 2011",
+        "End_Date": "April 22, 2011",
+        "Num": "NULL",
+        "Annotation": "April 22"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Ferguson"
-      ],
-      "Start_Date": "April 22, 2011",
-      "End_Date": "April 22, 2011",
-      "Num": "two businesses",
-      "Annotation": "St. Louis, Missouri\u2013Madison County, Illinois"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 19, 2011",
+        "End_Date": "April 24, 2011",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Lambert\u2013St. Louis International Airport"
+        ],
+        "Start_Date": "April 22, 2011",
+        "End_Date": "April 22, 2011",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "April 22"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": ">= $300 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Dellwood"
-      ],
-      "Start_Date": "April 22, 2011",
-      "End_Date": "April 22, 2011",
-      "Num": "three homes",
-      "Annotation": "St. Louis, Missouri\u2013Madison County, Illinois"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Madison County"
-      ],
-      "Start_Date": "April 22, 2011",
-      "End_Date": "April 22, 2011",
-      "Num": "about a hundred homes",
-      "Annotation": "St. Louis, Missouri\u2013Madison County, Illinois"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Bardwell"
-      ],
-      "Start_Date": "April 23, 2011",
-      "End_Date": "April 24, 2011",
-      "Num": "NULL",
-      "Annotation": "April 23\u201324"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Cairo"
-      ],
-      "Start_Date": "April 23, 2011",
-      "End_Date": "April 24, 2011",
-      "Num": "airplane hangars",
-      "Annotation": "April 23\u201324"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "0",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "0",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "0",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 19, 2011",
-      "End_Date": "April 24, 2011",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Bridgeton",
-        "Ferguson",
-        "Florissant",
-        "Hazelwood",
-        "Maryland Heights",
-        "New Melle",
-        "Lambert\u2013St. Louis International Airport",
-        "Berkeley",
-        "Ferguson",
-        "Dellwood",
-        "Madison County",
-        "Granite City"
-      ],
-      "Start_Date": "April 22, 2011",
-      "End_Date": "April 22, 2011",
-      "Num": "NULL",
-      "Annotation": "April 22"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 19, 2011",
-      "End_Date": "April 24, 2011",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Bridgeton",
-        "Ferguson",
-        "Florissant",
-        "Hazelwood",
-        "Maryland Heights",
-        "New Melle",
-        "Lambert\u2013St. Louis International Airport",
-        "Berkeley",
-        "Ferguson",
-        "Dellwood",
-        "Madison County"
-      ],
-      "Start_Date": "April 22, 2011",
-      "End_Date": "April 22, 2011",
-      "Num": "NULL",
-      "Annotation": "April 22"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "14",
-    "Total_Injuries_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 19, 2011",
-      "End_Date": "April 24, 2011",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Lambert\u2013St. Louis International Airport"
-      ],
-      "Start_Date": "April 22, 2011",
-      "End_Date": "April 22, 2011",
-      "Num": "NULL",
-      "Annotation": "April 22"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 19, 2011",
-      "End_Date": "April 24, 2011",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Lambert\u2013St. Louis International Airport"
-      ],
-      "Start_Date": "April 22, 2011",
-      "End_Date": "April 22, 2011",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "April 22"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": ">= $300 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 19, 2011",
-      "End_Date": "April 24, 2011",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "header-content pair article header"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "St. Louis metropolitan area",
-        "Bridgeton",
-        "Ferguson",
-        "Florissant",
-        "Hazelwood",
-        "Maryland Heights",
-        "New Melle",
-        "Lambert\u2013St. Louis International Airport",
-        "Henderson",
-        "Webster",
-        "Union counties",
-        "Bardwell",
-        "Cairo",
-        "Creve Coeur Lake",
-        "Maryland Heights",
-        "Bridgeton",
-        "Interstate 70",
-        "Lambert\u2013St. Louis International Airport",
-        "Berkeley",
-        "Ferguson",
-        "Dellwood",
-        "Madison County",
-        "Granite City"
-      ],
-      "Start_Date": "April 22, 2011",
-      "End_Date": "April 22, 2011",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "April 22"
-    }
-  ],
-  "Main_Event": "Tornado",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "April 19, 2011",
-  "End_Date": "April 24, 2011",
-  "Time_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 19, 2011",
+        "End_Date": "April 24, 2011",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "header-content pair article header"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "St. Louis metropolitan area",
+          "Bridgeton",
+          "Ferguson",
+          "Florissant",
+          "Hazelwood",
+          "Maryland Heights",
+          "New Melle",
+          "Lambert\u2013St. Louis International Airport",
+          "Henderson",
+          "Webster",
+          "Union counties",
+          "Bardwell",
+          "Cairo",
+          "Creve Coeur Lake",
+          "Maryland Heights",
+          "Bridgeton",
+          "Interstate 70",
+          "Lambert\u2013St. Louis International Airport",
+          "Berkeley",
+          "Ferguson",
+          "Dellwood",
+          "Madison County",
+          "Granite City"
+        ],
+        "Start_Date": "April 22, 2011",
+        "End_Date": "April 22, 2011",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "April 22"
+      }
+    ],
+    "Main_Event": "Tornado",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "April 19, 2011",
+    "End_Date": "April 24, 2011",
+    "Time_Annotation": "Info_Box"
+  }
+]

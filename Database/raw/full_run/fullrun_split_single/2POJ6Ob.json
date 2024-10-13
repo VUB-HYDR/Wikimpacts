@@ -1,585 +1,587 @@
-{
-  "Event_ID": "2POJ6Ob",
-  "Sources": "https://en.wikipedia.org/wiki/January_2017_European_cold_wave",
-  "Event_Names": "January 2017 European cold wave",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": "Poland",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "46",
-      "Annotation": "Affected areas"
+[
+  {
+    "Event_ID": "2POJ6Ob",
+    "Sources": "https://en.wikipedia.org/wiki/January_2017_European_cold_wave",
+    "Event_Names": "January 2017 European cold wave",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Italy",
-      "Start_Date": "NULL",
-      "End_Date": "9 January",
-      "Num": "7",
-      "Annotation": "Affected areas"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Poland",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "46",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Areas": "Italy",
+        "Start_Date": "NULL",
+        "End_Date": "9 January",
+        "Num": "7",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Areas": "Czech Republic",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Areas": "Bulgaria",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Areas": "Greece",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Areas": "Russia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Areas": "Ukraine",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Areas": "Albania",
+        "Start_Date": "11 January",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Affected areas"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Poland",
+        "Locations": [
+          "Warsaw",
+          "Krak\u00f3w",
+          "Kielce",
+          "Wroc\u0142aw"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Area": "Italy",
+        "Locations": [
+          "Sicily",
+          "Bari",
+          "Brindisi",
+          "Adriatic Sea",
+          "Southern Italy"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Area": "Romania",
+        "Locations": [
+          "Danube"
+        ],
+        "Start_Date": "10 January",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Area": "Croatia",
+        "Locations": [
+          "Danube"
+        ],
+        "Start_Date": "10 January",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Area": "Serbia",
+        "Locations": [
+          "Danube"
+        ],
+        "Start_Date": "10 January",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Area": "Turkey",
+        "Locations": [
+          "Istanbul",
+          "Bosphorus"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Area": "Greece",
+        "Locations": [
+          "Athens",
+          "Santorini",
+          "Aegean Sea",
+          "Thessaloniki",
+          "Euboea",
+          "Skopelos",
+          "Alonnisos",
+          "Mytilene"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Area": "Russia",
+        "Locations": [
+          "Moscow Oblast",
+          "Lyubertsy",
+          "Lytkarino",
+          "Dzerzhinsky",
+          "Kotelniki"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "100,000 residents",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Area": "Albania",
+        "Locations": [
+          "Gjirokast\u00ebr",
+          "Tirana"
+        ],
+        "Start_Date": "11 January",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Affected areas"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Czech Republic",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "8",
-      "Annotation": "Affected areas"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Greece",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Areas": "Russia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Affected areas"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Greece",
+        "Locations": [
+          "Euboea",
+          "Skopelos",
+          "Alonnisos"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "serious power failures and collapse of traffic due to snowfall",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Area": "Russia",
+        "Locations": [
+          "Lyubertsy",
+          "Lytkarino",
+          "Dzerzhinsky",
+          "Kotelniki"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "100,000 residents lost electricity",
+        "Annotation": "Affected areas"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "At least 73",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": "Bulgaria",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3",
-      "Annotation": "Affected areas"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Poland",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "46",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Areas": "Italy",
+        "Start_Date": "NULL",
+        "End_Date": "9 January",
+        "Num": "7",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Areas": "Czech Republic",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Areas": "Bulgaria",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Areas": "Greece",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Areas": "Russia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Areas": "Ukraine",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Areas": "Albania",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Deaths"
+      },
+      {
+        "Administrative_Areas": "North Macedonia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Deaths"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Poland",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "46",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Area": "Italy",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "9 January",
+        "Num": "7",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Area": "Czech Republic",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Area": "Bulgaria",
+        "Locations": [
+          "Near the border between Bulgaria and Turkey"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Area": "Greece",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Affected areas"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Greece",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Affected areas"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Greece",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "many migrants",
+        "Annotation": "Affected areas"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Greece",
+        "Locations": [
+          "islands in the Aegean Sea"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "many migrants",
+        "Annotation": "Affected areas"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Russia",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Affected areas"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Poland",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Areas": "Italy",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Areas": "Czech Republic",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Areas": "Greece",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Affected areas"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Poland",
+        "Locations": [
+          "Warsaw",
+          "Krak\u00f3w",
+          "Kielce",
+          "Wroc\u0142aw"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "46 (mainly homeless) people died",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Area": "Italy",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "9 January",
+        "Num": "Seven cold-related deaths, mainly of homeless people",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Area": "Czech Republic",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Eight deaths, mainly of homeless people",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Area": "Greece",
+        "Locations": [
+          "Athens",
+          "Santorini",
+          "Aegean Sea islands"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "One migrant died of cold, many migrants moved into heated tents",
+        "Annotation": "Affected areas"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Ukraine",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Affected areas"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Albania",
-      "Start_Date": "11 January",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Affected areas"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Poland",
-      "Locations": [
-        "Warsaw",
-        "Krak\u00f3w",
-        "Kielce",
-        "Wroc\u0142aw"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Affected areas"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [],
+    "Total_Summary_Damage": {
+      "Total_Damage": "NULL",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Italy",
-      "Locations": [
-        "Sicily",
-        "Bari",
-        "Brindisi",
-        "Adriatic Sea",
-        "Southern Italy"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Affected areas"
-    },
-    {
-      "Administrative_Area": "Romania",
-      "Locations": [
-        "Danube"
-      ],
-      "Start_Date": "10 January",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Affected areas"
-    },
-    {
-      "Administrative_Area": "Croatia",
-      "Locations": [
-        "Danube"
-      ],
-      "Start_Date": "10 January",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Affected areas"
-    },
-    {
-      "Administrative_Area": "Serbia",
-      "Locations": [
-        "Danube"
-      ],
-      "Start_Date": "10 January",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Affected areas"
-    },
-    {
-      "Administrative_Area": "Turkey",
-      "Locations": [
-        "Istanbul",
-        "Bosphorus"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Affected areas"
-    },
-    {
-      "Administrative_Area": "Greece",
-      "Locations": [
-        "Athens",
-        "Santorini",
-        "Aegean Sea",
-        "Thessaloniki",
-        "Euboea",
-        "Skopelos",
-        "Alonnisos",
-        "Mytilene"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Affected areas"
-    },
-    {
-      "Administrative_Area": "Russia",
-      "Locations": [
-        "Moscow Oblast",
-        "Lyubertsy",
-        "Lytkarino",
-        "Dzerzhinsky",
-        "Kotelniki"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "100,000 residents",
-      "Annotation": "Affected areas"
-    },
-    {
-      "Administrative_Area": "Albania",
-      "Locations": [
-        "Gjirokast\u00ebr",
-        "Tirana"
-      ],
-      "Start_Date": "11 January",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Affected areas"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Greece",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Affected areas"
-    },
-    {
-      "Administrative_Areas": "Russia",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Affected areas"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Greece",
-      "Locations": [
-        "Euboea",
-        "Skopelos",
-        "Alonnisos"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "serious power failures and collapse of traffic due to snowfall",
-      "Annotation": "Affected areas"
-    },
-    {
-      "Administrative_Area": "Russia",
-      "Locations": [
-        "Lyubertsy",
-        "Lytkarino",
-        "Dzerzhinsky",
-        "Kotelniki"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "100,000 residents lost electricity",
-      "Annotation": "Affected areas"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "At least 73",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Poland",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "46",
-      "Annotation": "Affected areas"
-    },
-    {
-      "Administrative_Areas": "Italy",
-      "Start_Date": "NULL",
-      "End_Date": "9 January",
-      "Num": "7",
-      "Annotation": "Affected areas"
-    },
-    {
-      "Administrative_Areas": "Czech Republic",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "8",
-      "Annotation": "Affected areas"
-    },
-    {
-      "Administrative_Areas": "Bulgaria",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3",
-      "Annotation": "Affected areas"
-    },
-    {
-      "Administrative_Areas": "Greece",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Affected areas"
-    },
-    {
-      "Administrative_Areas": "Russia",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Affected areas"
-    },
-    {
-      "Administrative_Areas": "Ukraine",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Affected areas"
-    },
-    {
-      "Administrative_Areas": "Albania",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Deaths"
-    },
-    {
-      "Administrative_Areas": "North Macedonia",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Deaths"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Poland",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "46",
-      "Annotation": "Affected areas"
-    },
-    {
-      "Administrative_Area": "Italy",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "9 January",
-      "Num": "7",
-      "Annotation": "Affected areas"
-    },
-    {
-      "Administrative_Area": "Czech Republic",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "8",
-      "Annotation": "Affected areas"
-    },
-    {
-      "Administrative_Area": "Bulgaria",
-      "Locations": [
-        "Near the border between Bulgaria and Turkey"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3",
-      "Annotation": "Affected areas"
-    },
-    {
-      "Administrative_Area": "Greece",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Affected areas"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": "Greece",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "many migrants",
-      "Annotation": "Affected areas"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Greece",
-      "Locations": [
-        "islands in the Aegean Sea"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "many migrants",
-      "Annotation": "Affected areas"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Poland",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Affected areas"
-    },
-    {
-      "Administrative_Areas": "Italy",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Affected areas"
-    },
-    {
-      "Administrative_Areas": "Czech Republic",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Affected areas"
-    },
-    {
-      "Administrative_Areas": "Greece",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Affected areas"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Poland",
-      "Locations": [
-        "Warsaw",
-        "Krak\u00f3w",
-        "Kielce",
-        "Wroc\u0142aw"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "46 (mainly homeless) people died",
-      "Annotation": "Affected areas"
-    },
-    {
-      "Administrative_Area": "Italy",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "9 January",
-      "Num": "Seven cold-related deaths, mainly of homeless people",
-      "Annotation": "Affected areas"
-    },
-    {
-      "Administrative_Area": "Czech Republic",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Eight deaths, mainly of homeless people",
-      "Annotation": "Affected areas"
-    },
-    {
-      "Administrative_Area": "Greece",
-      "Locations": [
-        "Athens",
-        "Santorini",
-        "Aegean Sea islands"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "One migrant died of cold, many migrants moved into heated tents",
-      "Annotation": "Affected areas"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "NULL",
-      "Locations": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [],
-  "Total_Summary_Damage": {
-    "Total_Damage": "NULL",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "NULL",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": "Romania",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Affected areas"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Romania",
-      "Locations": [
-        "Danube"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Affected areas"
-    },
-    {
-      "Administrative_Area": "Greece",
-      "Locations": [
-        "Thessaloniki"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Affected areas"
-    },
-    {
-      "Administrative_Area": "Greece",
-      "Locations": [
-        "Euboea",
-        "Skopelos",
-        "Alonnisos"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Affected areas"
-    },
-    {
-      "Administrative_Area": "Russia",
-      "Locations": [
-        "Moscow Oblast"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Affected areas"
-    }
-  ],
-  "Main_Event": "Extreme Temperature",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Cold Spell",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "5 January 2017",
-  "End_Date": "January 2017",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Russia",
-    "Poland",
-    "Italy",
-    "Romania",
-    "Croatia",
-    "Serbia",
-    "Czech Republic",
-    "Bulgaria",
-    "Turkey",
-    "Greece",
-    "Ukraine",
-    "Albania",
-    "Switzerland",
-    "Hungary",
-    "North Macedonia"
-  ],
-  "Administrative_Areas_Annotation": "Affected areas"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Romania",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Affected areas"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Romania",
+        "Locations": [
+          "Danube"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Area": "Greece",
+        "Locations": [
+          "Thessaloniki"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Area": "Greece",
+        "Locations": [
+          "Euboea",
+          "Skopelos",
+          "Alonnisos"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Affected areas"
+      },
+      {
+        "Administrative_Area": "Russia",
+        "Locations": [
+          "Moscow Oblast"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Affected areas"
+      }
+    ],
+    "Main_Event": "Extreme Temperature",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Cold Spell",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "5 January 2017",
+    "End_Date": "January 2017",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Russia",
+      "Poland",
+      "Italy",
+      "Romania",
+      "Croatia",
+      "Serbia",
+      "Czech Republic",
+      "Bulgaria",
+      "Turkey",
+      "Greece",
+      "Ukraine",
+      "Albania",
+      "Switzerland",
+      "Hungary",
+      "North Macedonia"
+    ],
+    "Administrative_Areas_Annotation": "Affected areas"
+  }
+]

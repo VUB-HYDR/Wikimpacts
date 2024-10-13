@@ -1,381 +1,383 @@
-{
-  "Event_ID": "ZNj03a4",
-  "Sources": "https://en.wikipedia.org/wiki/1985%E2%80%9386_Australian_region_cyclone_season",
-  "Event_Names": "1985\u201386 Australian region cyclone season",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Solomon Islands"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "approximately 90,000 people",
-      "Annotation": "Severe Tropical Cyclone Namu"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Solomon Islands",
-      "Locations": [
-        "Malaita",
-        "Guadalcanal"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Severe Tropical Cyclone Namu"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "17 January 1986",
-      "End_Date": "24 January 1986",
-      "Num": "NULL",
-      "Annotation": "Tropical Cyclone Hector"
+[
+  {
+    "Event_ID": "ZNj03a4",
+    "Sources": "https://en.wikipedia.org/wiki/1985%E2%80%9386_Australian_region_cyclone_season",
+    "Event_Names": "1985\u201386 Australian region cyclone season",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "27 January 1986",
-      "End_Date": "6 February 1986",
-      "Num": "NULL",
-      "Annotation": "Severe Tropical Cyclone Winifred"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Solomon Islands"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "approximately 90,000 people",
+        "Annotation": "Severe Tropical Cyclone Namu"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Solomon Islands",
+        "Locations": [
+          "Malaita",
+          "Guadalcanal"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Severe Tropical Cyclone Namu"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "17 February 1986",
-      "End_Date": "21 February 1986",
-      "Num": "NULL",
-      "Annotation": "Severe Tropical Cyclone Rhonda"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "17 January 1986",
+        "End_Date": "24 January 1986",
+        "Num": "NULL",
+        "Annotation": "Tropical Cyclone Hector"
+      },
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "27 January 1986",
+        "End_Date": "6 February 1986",
+        "Num": "NULL",
+        "Annotation": "Severe Tropical Cyclone Winifred"
+      },
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "17 February 1986",
+        "End_Date": "21 February 1986",
+        "Num": "NULL",
+        "Annotation": "Severe Tropical Cyclone Rhonda"
+      },
+      {
+        "Administrative_Areas": [
+          "Solomon Islands"
+        ],
+        "Start_Date": "21 April 1986",
+        "End_Date": "27 April 1986",
+        "Num": "NULL",
+        "Annotation": "Severe Tropical Cyclone Namu"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Kimberley region"
+        ],
+        "Start_Date": "17 January 1986",
+        "End_Date": "24 January 1986",
+        "Num": "NULL",
+        "Annotation": "Tropical Cyclone Hector"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Innisfail"
+        ],
+        "Start_Date": "27 January 1986",
+        "End_Date": "6 February 1986",
+        "Num": "NULL",
+        "Annotation": "Severe Tropical Cyclone Winifred"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Perth"
+        ],
+        "Start_Date": "17 February 1986",
+        "End_Date": "21 February 1986",
+        "Num": "NULL",
+        "Annotation": "Severe Tropical Cyclone Rhonda"
+      },
+      {
+        "Administrative_Area": "Solomon Islands",
+        "Locations": [
+          "Malaita",
+          "Guadalcanal"
+        ],
+        "Start_Date": "21 April 1986",
+        "End_Date": "27 April 1986",
+        "Num": "22% of homes on the island were either damaged or destroyed",
+        "Annotation": "Severe Tropical Cyclone Namu"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "153",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": [
-        "Solomon Islands"
-      ],
-      "Start_Date": "21 April 1986",
-      "End_Date": "27 April 1986",
-      "Num": "NULL",
-      "Annotation": "Severe Tropical Cyclone Namu"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Kimberley region"
-      ],
-      "Start_Date": "17 January 1986",
-      "End_Date": "24 January 1986",
-      "Num": "NULL",
-      "Annotation": "Tropical Cyclone Hector"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Severe Tropical Cyclone Winifred"
+      },
+      {
+        "Administrative_Areas": [
+          "Solomon Islands"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Severe Tropical Cyclone Namu"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Innisfail, Queensland"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Severe Tropical Cyclone Winifred"
+      },
+      {
+        "Administrative_Area": "Solomon Islands",
+        "Locations": [
+          "Guadalcanal"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "38",
+        "Annotation": "Severe Tropical Cyclone Namu"
+      },
+      {
+        "Administrative_Area": "Solomon Islands",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "103",
+        "Annotation": "Severe Tropical Cyclone Namu"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Innisfail"
-      ],
-      "Start_Date": "27 January 1986",
-      "End_Date": "6 February 1986",
-      "Num": "NULL",
-      "Annotation": "Severe Tropical Cyclone Winifred"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Solomon Islands"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "approximately 90,000 people",
+        "Annotation": "Severe Tropical Cyclone Namu"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Solomon Islands",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "approximately 90,000 people",
+        "Annotation": "Severe Tropical Cyclone Namu"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Perth"
-      ],
-      "Start_Date": "17 February 1986",
-      "End_Date": "21 February 1986",
-      "Num": "NULL",
-      "Annotation": "Severe Tropical Cyclone Rhonda"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Solomon Islands"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "approximately 90,000 people",
+        "Annotation": "Severe Tropical Cyclone Namu"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Solomon Islands",
+        "Locations": [
+          "Guadalcanal"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "22% of homes on the island were either damaged or destroyed",
+        "Annotation": "Severe Tropical Cyclone Namu"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Solomon Islands",
-      "Locations": [
-        "Malaita",
-        "Guadalcanal"
-      ],
-      "Start_Date": "21 April 1986",
-      "End_Date": "27 April 1986",
-      "Num": "22% of homes on the island were either damaged or destroyed",
-      "Annotation": "Severe Tropical Cyclone Namu"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "153",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Severe Tropical Cyclone Winifred"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "Solomon Islands"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Severe Tropical Cyclone Namu"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Solomon Islands",
+        "Locations": [
+          "Guadalcanal"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Severe Tropical Cyclone Namu"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": [
-        "Solomon Islands"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Severe Tropical Cyclone Namu"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Innisfail, Queensland"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3",
-      "Annotation": "Severe Tropical Cyclone Winifred"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Solomon Islands"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Severe Tropical Cyclone Namu"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Solomon Islands",
+        "Locations": [
+          "Malaita",
+          "Guadalcanal"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Severe Tropical Cyclone Namu"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$250 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Solomon Islands",
-      "Locations": [
-        "Guadalcanal"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "38",
-      "Annotation": "Severe Tropical Cyclone Namu"
-    },
-    {
-      "Administrative_Area": "Solomon Islands",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "103",
-      "Annotation": "Severe Tropical Cyclone Namu"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Solomon Islands"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "approximately 90,000 people",
-      "Annotation": "Severe Tropical Cyclone Namu"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Solomon Islands",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "approximately 90,000 people",
-      "Annotation": "Severe Tropical Cyclone Namu"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "Solomon Islands"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "approximately 90,000 people",
-      "Annotation": "Severe Tropical Cyclone Namu"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Solomon Islands",
-      "Locations": [
-        "Guadalcanal"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "22% of homes on the island were either damaged or destroyed",
-      "Annotation": "Severe Tropical Cyclone Namu"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "Solomon Islands"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Severe Tropical Cyclone Namu"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Solomon Islands",
-      "Locations": [
-        "Guadalcanal"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Severe Tropical Cyclone Namu"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Solomon Islands"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Severe Tropical Cyclone Namu"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Solomon Islands",
-      "Locations": [
-        "Malaita",
-        "Guadalcanal"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Severe Tropical Cyclone Namu"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$250 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "Solomon Islands"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$100 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Severe Tropical Cyclone Namu"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Kimberley region"
-      ],
-      "Start_Date": "17 January 1986",
-      "End_Date": "24 January 1986",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Tropical Cyclone Hector"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Innisfail, Queensland"
-      ],
-      "Start_Date": "1 February 1986",
-      "End_Date": "6 February 1986",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Severe Tropical Cyclone Winifred"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Perth"
-      ],
-      "Start_Date": "17 February 1986",
-      "End_Date": "21 February 1986",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Severe Tropical Cyclone Rhonda"
-    },
-    {
-      "Administrative_Area": "Solomon Islands",
-      "Locations": [
-        "Malaita",
-        "Guadalcanal",
-        "Honiara International Airport"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$100 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Severe Tropical Cyclone Namu"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Severe Tropical Cyclone Winifred|Severe Tropical Cyclone Namu",
-  "Start_Date": "1 November 1985",
-  "End_Date": "30 April 1986",
-  "Time_Annotation": "1985\u201386 Australian region cyclone season",
-  "Administrative_Areas": [
-    "Australia",
-    "Solomon Islands"
-  ],
-  "Administrative_Areas_Annotation": "Severe Tropical Cyclone Winifred, Severe Tropical Cyclone Namu"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Solomon Islands"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$100 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Severe Tropical Cyclone Namu"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Kimberley region"
+        ],
+        "Start_Date": "17 January 1986",
+        "End_Date": "24 January 1986",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tropical Cyclone Hector"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Innisfail, Queensland"
+        ],
+        "Start_Date": "1 February 1986",
+        "End_Date": "6 February 1986",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Severe Tropical Cyclone Winifred"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Perth"
+        ],
+        "Start_Date": "17 February 1986",
+        "End_Date": "21 February 1986",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Severe Tropical Cyclone Rhonda"
+      },
+      {
+        "Administrative_Area": "Solomon Islands",
+        "Locations": [
+          "Malaita",
+          "Guadalcanal",
+          "Honiara International Airport"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$100 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Severe Tropical Cyclone Namu"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Severe Tropical Cyclone Winifred|Severe Tropical Cyclone Namu",
+    "Start_Date": "1 November 1985",
+    "End_Date": "30 April 1986",
+    "Time_Annotation": "1985\u201386 Australian region cyclone season",
+    "Administrative_Areas": [
+      "Australia",
+      "Solomon Islands"
+    ],
+    "Administrative_Areas_Annotation": "Severe Tropical Cyclone Winifred, Severe Tropical Cyclone Namu"
+  }
+]

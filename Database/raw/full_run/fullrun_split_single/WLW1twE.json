@@ -1,748 +1,750 @@
-{
-  "Event_ID": "WLW1twE",
-  "Sources": "https://en.wikipedia.org/wiki/Great_storm_of_1703",
-  "Event_Names": "Great storm of 1703",
-  "Total_Summary_Affected": {
-    "Total_Affected": "Between 8,000 and 15,000 people died overall. Some sources cite a figure between 10,000 and 30,000.",
-    "Total_Affected_Annotation": "Damage"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "England"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "10 December 1703",
-      "Num": "NULL",
-      "Annotation": "Damage"
+[
+  {
+    "Event_ID": "WLW1twE",
+    "Sources": "https://en.wikipedia.org/wiki/Great_storm_of_1703",
+    "Event_Names": "Great storm of 1703",
+    "Total_Summary_Affected": {
+      "Total_Affected": "Between 8,000 and 15,000 people died overall. Some sources cite a figure between 10,000 and 30,000.",
+      "Total_Affected_Annotation": "Damage"
     },
-    {
-      "Administrative_Areas": [
-        "Wales"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "10 December 1703",
-      "Num": "NULL",
-      "Annotation": "Damage"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "England"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "10 December 1703",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Areas": [
+          "Wales"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "10 December 1703",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Areas": [
+          "Netherlands"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "10 December 1703",
+        "Num": "NULL",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Areas": [
+          "France"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "10 December 1703",
+        "Num": "NULL",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Areas": [
+          "Belgium"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "10 December 1703",
+        "Num": "NULL",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Areas": [
+          "Germany"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "10 December 1703",
+        "Num": "NULL",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "England",
+        "Locations": [
+          "London",
+          "New Forest",
+          "Thames",
+          "Chatham",
+          "Harwich",
+          "Gothenburg",
+          "Cambridge",
+          "West Country",
+          "Bristol",
+          "Somerset Levels",
+          "Wells",
+          "Cardiff",
+          "Goodwin Sands",
+          "Plymouth",
+          "Hull",
+          "Cowes",
+          "Portsmouth"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "10 December 1703",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "Wales",
+        "Locations": [
+          "Cardiff"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "10 December 1703",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": [
-        "Netherlands"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "10 December 1703",
-      "Num": "NULL",
-      "Annotation": "Info_Box"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "England",
+        "Start_Date": "26 November 1703",
+        "End_Date": "10 December 1703",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Areas": "Wales",
+        "Start_Date": "26 November 1703",
+        "End_Date": "10 December 1703",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "England",
+        "Locations": [
+          "London",
+          "Westminster Abbey",
+          "St James's Palace",
+          "Thames",
+          "Chatham",
+          "King's College Chapel",
+          "Somerset Levels",
+          "New Forest",
+          "Plymouth",
+          "Hull",
+          "Cowes",
+          "Portsmouth",
+          "Bristol"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "10 December 1703",
+        "Num": [
+          "2,000 chimney stacks",
+          "Lead roofing",
+          "NULL",
+          "5,000 homes",
+          "NULL",
+          "NULL",
+          "NULL",
+          "4,000 oaks",
+          "NULL",
+          "NULL",
+          "NULL",
+          "NULL",
+          "NULL"
+        ],
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "Wales",
+        "Locations": [
+          "Llandaff Cathedral"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "10 December 1703",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "Between 8,000 and 15,000 people",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": [
-        "France"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "10 December 1703",
-      "Num": "NULL",
-      "Annotation": "Info_Box"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "England"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "10 December 1703",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Areas": [
+          "Wales"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "10 December 1703",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Areas": [
+          "Netherlands"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "10 December 1703",
+        "Num": "NULL",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Areas": [
+          "France"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "10 December 1703",
+        "Num": "NULL",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Areas": [
+          "Belgium"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "10 December 1703",
+        "Num": "NULL",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Areas": [
+          "Germany"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "10 December 1703",
+        "Num": "NULL",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "England",
+        "Locations": [
+          "Goodwin Sands"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "10 December 1703",
+        "Num": "Over 1,000 seamen",
+        "Annotation": "Great storm of 1703"
+      },
+      {
+        "Administrative_Area": "England",
+        "Locations": [
+          "Somerset Levels"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "10 December 1703",
+        "Num": "Hundreds of people",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "England",
+        "Locations": [
+          "Goodwin Sands"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "10 December 1703",
+        "Num": "About 1,500 seamen",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "England",
+        "Locations": [
+          "New Forest"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "10 December 1703",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "England",
+        "Locations": [
+          "Wells"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "10 December 1703",
+        "Num": "Bishop Richard Kidder and his wife",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "England",
+        "Locations": [
+          "Eddystone Lighthouse"
+        ],
+        "Start_Date": "8 December 1703",
+        "End_Date": "8 December 1703",
+        "Num": "Six occupants",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "England",
+        "Locations": [
+          "Milford Haven"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "10 December 1703",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "Wales",
+        "Locations": [
+          "Llandaff Cathedral"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "10 December 1703",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": [
-        "Belgium"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "10 December 1703",
-      "Num": "NULL",
-      "Annotation": "Info_Box"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "England"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "29 November 1703",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Areas": [
+          "Wales"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "29 November 1703",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "England",
+        "Locations": [
+          "London",
+          "New Forest",
+          "Thames River",
+          "Chatham",
+          "Cambridge",
+          "Somerset Levels",
+          "Bristol",
+          "Plymouth",
+          "Hull",
+          "Cowes",
+          "Portsmouth"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "29 November 1703",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "Wales",
+        "Locations": [
+          "Cardiff"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "29 November 1703",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": [
-        "Germany"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "10 December 1703",
-      "Num": "NULL",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "England",
-      "Locations": [
-        "London",
-        "New Forest",
-        "Thames",
-        "Chatham",
-        "Harwich",
-        "Gothenburg",
-        "Cambridge",
-        "West Country",
-        "Bristol",
-        "Somerset Levels",
-        "Wells",
-        "Cardiff",
-        "Goodwin Sands",
-        "Plymouth",
-        "Hull",
-        "Cowes",
-        "Portsmouth"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "10 December 1703",
-      "Num": "NULL",
-      "Annotation": "Damage"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "England",
+        "Start_Date": "26 November 1703",
+        "End_Date": "10 December 1703",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "England",
+        "Locations": [
+          "London"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "10 December 1703",
+        "Num": "more than 5,000 homes",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "England",
+        "Locations": [
+          "Somerset Levels"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "10 December 1703",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Wales",
-      "Locations": [
-        "Cardiff"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "10 December 1703",
-      "Num": "NULL",
-      "Annotation": "Damage"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "England",
-      "Start_Date": "26 November 1703",
-      "End_Date": "10 December 1703",
-      "Num": "NULL",
-      "Annotation": "Damage"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "England"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "29 November 1703",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Areas": [
+          "Wales"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "29 November 1703",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "England",
+        "Locations": [
+          "London",
+          "Westminster Abbey",
+          "St James's Palace",
+          "Thames",
+          "Chatham",
+          "Cambridge",
+          "Somerset Levels",
+          "New Forest",
+          "Plymouth",
+          "Hull",
+          "Cowes",
+          "Portsmouth",
+          "Bristol"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "29 November 1703",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "Wales",
+        "Locations": [
+          "Cardiff"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "29 November 1703",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Wales",
-      "Start_Date": "26 November 1703",
-      "End_Date": "10 December 1703",
-      "Num": "NULL",
-      "Annotation": "Damage"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "England",
-      "Locations": [
-        "London",
-        "Westminster Abbey",
-        "St James's Palace",
-        "Thames",
-        "Chatham",
-        "King's College Chapel",
-        "Somerset Levels",
-        "New Forest",
-        "Plymouth",
-        "Hull",
-        "Cowes",
-        "Portsmouth",
-        "Bristol"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "10 December 1703",
-      "Num": [
-        "2,000 chimney stacks",
-        "Lead roofing",
-        "NULL",
-        "5,000 homes",
-        "NULL",
-        "NULL",
-        "NULL",
-        "4,000 oaks",
-        "NULL",
-        "NULL",
-        "NULL",
-        "NULL",
-        "NULL"
-      ],
-      "Annotation": "Damage"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "England",
+          "Wales",
+          "Netherlands",
+          "France",
+          "Belgium",
+          "Germany"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "29 November 1703",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "England",
+        "Locations": [
+          "London",
+          "New Forest",
+          "Thames",
+          "Chatham",
+          "Harwich",
+          "Gothenburg",
+          "Cambridge",
+          "Somerset Levels",
+          "Wells",
+          "Cardiff",
+          "Goodwin Sands",
+          "Plymouth",
+          "Helford River",
+          "Isle of Wight",
+          "Milford Haven",
+          "Plymouth",
+          "Hull",
+          "Cowes",
+          "Portsmouth",
+          "Bristol"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "29 November 1703",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "NULL",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Wales",
-      "Locations": [
-        "Llandaff Cathedral"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "10 December 1703",
-      "Num": "NULL",
-      "Annotation": "Damage"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "Between 8,000 and 15,000 people",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "England"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "10 December 1703",
-      "Num": "NULL",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Areas": [
-        "Wales"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "10 December 1703",
-      "Num": "NULL",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Areas": [
-        "Netherlands"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "10 December 1703",
-      "Num": "NULL",
-      "Annotation": "Info_Box"
-    },
-    {
-      "Administrative_Areas": [
-        "France"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "10 December 1703",
-      "Num": "NULL",
-      "Annotation": "Info_Box"
-    },
-    {
-      "Administrative_Areas": [
-        "Belgium"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "10 December 1703",
-      "Num": "NULL",
-      "Annotation": "Info_Box"
-    },
-    {
-      "Administrative_Areas": [
-        "Germany"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "10 December 1703",
-      "Num": "NULL",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "England",
-      "Locations": [
-        "Goodwin Sands"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "10 December 1703",
-      "Num": "Over 1,000 seamen",
-      "Annotation": "Great storm of 1703"
-    },
-    {
-      "Administrative_Area": "England",
-      "Locations": [
-        "Somerset Levels"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "10 December 1703",
-      "Num": "Hundreds of people",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "England",
-      "Locations": [
-        "Goodwin Sands"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "10 December 1703",
-      "Num": "About 1,500 seamen",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "England",
-      "Locations": [
-        "New Forest"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "10 December 1703",
-      "Num": "NULL",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "England",
-      "Locations": [
-        "Wells"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "10 December 1703",
-      "Num": "Bishop Richard Kidder and his wife",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "England",
-      "Locations": [
-        "Eddystone Lighthouse"
-      ],
-      "Start_Date": "8 December 1703",
-      "End_Date": "8 December 1703",
-      "Num": "Six occupants",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "England",
-      "Locations": [
-        "Milford Haven"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "10 December 1703",
-      "Num": "NULL",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "Wales",
-      "Locations": [
-        "Llandaff Cathedral"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "10 December 1703",
-      "Num": "NULL",
-      "Annotation": "Damage"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "England"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "29 November 1703",
-      "Num": "NULL",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Areas": [
-        "Wales"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "29 November 1703",
-      "Num": "NULL",
-      "Annotation": "Damage"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "England",
-      "Locations": [
-        "London",
-        "New Forest",
-        "Thames River",
-        "Chatham",
-        "Cambridge",
-        "Somerset Levels",
-        "Bristol",
-        "Plymouth",
-        "Hull",
-        "Cowes",
-        "Portsmouth"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "29 November 1703",
-      "Num": "NULL",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "Wales",
-      "Locations": [
-        "Cardiff"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "29 November 1703",
-      "Num": "NULL",
-      "Annotation": "Damage"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "England",
-      "Start_Date": "26 November 1703",
-      "End_Date": "10 December 1703",
-      "Num": "NULL",
-      "Annotation": "Damage"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "England",
-      "Locations": [
-        "London"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "10 December 1703",
-      "Num": "more than 5,000 homes",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "England",
-      "Locations": [
-        "Somerset Levels"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "10 December 1703",
-      "Num": "NULL",
-      "Annotation": "Damage"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "England"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "29 November 1703",
-      "Num": "NULL",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Areas": [
-        "Wales"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "29 November 1703",
-      "Num": "NULL",
-      "Annotation": "Damage"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "England",
-      "Locations": [
-        "London",
-        "Westminster Abbey",
-        "St James's Palace",
-        "Thames",
-        "Chatham",
-        "Cambridge",
-        "Somerset Levels",
-        "New Forest",
-        "Plymouth",
-        "Hull",
-        "Cowes",
-        "Portsmouth",
-        "Bristol"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "29 November 1703",
-      "Num": "NULL",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "Wales",
-      "Locations": [
-        "Cardiff"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "29 November 1703",
-      "Num": "NULL",
-      "Annotation": "Damage"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "England",
-        "Wales",
-        "Netherlands",
-        "France",
-        "Belgium",
-        "Germany"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "29 November 1703",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "England",
-      "Locations": [
-        "London",
-        "New Forest",
-        "Thames",
-        "Chatham",
-        "Harwich",
-        "Gothenburg",
-        "Cambridge",
-        "Somerset Levels",
-        "Wells",
-        "Cardiff",
-        "Goodwin Sands",
-        "Plymouth",
-        "Helford River",
-        "Isle of Wight",
-        "Milford Haven",
-        "Plymouth",
-        "Hull",
-        "Cowes",
-        "Portsmouth",
-        "Bristol"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "29 November 1703",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "NULL",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "NULL",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "England",
-        "Wales",
-        "Netherlands",
-        "France",
-        "Belgium",
-        "Germany"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "29 November 1703",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "England",
-      "Locations": [
-        "London"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "29 November 1703",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "England",
-      "Locations": [
-        "New Forest"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "29 November 1703",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "England",
-      "Locations": [
-        "Thames River"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "29 November 1703",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "England",
-      "Locations": [
-        "Chatham"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "29 November 1703",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "England",
-      "Locations": [
-        "Cambridge"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "29 November 1703",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "England",
-      "Locations": [
-        "Somerset Levels"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "29 November 1703",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "England",
-      "Locations": [
-        "Wells"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "29 November 1703",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "Wales",
-      "Locations": [
-        "Cardiff"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "29 November 1703",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "England",
-      "Locations": [
-        "Goodwin Sands"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "29 November 1703",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "England",
-      "Locations": [
-        "Plymouth"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "29 November 1703",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "England",
-      "Locations": [
-        "Hull"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "29 November 1703",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "England",
-      "Locations": [
-        "Cowes"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "29 November 1703",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "England",
-      "Locations": [
-        "Portsmouth"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "29 November 1703",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "England",
-      "Locations": [
-        "Bristol"
-      ],
-      "Start_Date": "26 November 1703",
-      "End_Date": "29 November 1703",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Damage"
-    }
-  ],
-  "Main_Event": "Extratropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Damage",
-  "Start_Date": "7 December 1703",
-  "End_Date": "10 December 1703",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "England",
-    "Wales",
-    "Netherlands",
-    "France",
-    "Belgium",
-    "Germany"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "England",
+          "Wales",
+          "Netherlands",
+          "France",
+          "Belgium",
+          "Germany"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "29 November 1703",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "England",
+        "Locations": [
+          "London"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "29 November 1703",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "England",
+        "Locations": [
+          "New Forest"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "29 November 1703",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "England",
+        "Locations": [
+          "Thames River"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "29 November 1703",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "England",
+        "Locations": [
+          "Chatham"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "29 November 1703",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "England",
+        "Locations": [
+          "Cambridge"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "29 November 1703",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "England",
+        "Locations": [
+          "Somerset Levels"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "29 November 1703",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "England",
+        "Locations": [
+          "Wells"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "29 November 1703",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "Wales",
+        "Locations": [
+          "Cardiff"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "29 November 1703",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "England",
+        "Locations": [
+          "Goodwin Sands"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "29 November 1703",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "England",
+        "Locations": [
+          "Plymouth"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "29 November 1703",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "England",
+        "Locations": [
+          "Hull"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "29 November 1703",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "England",
+        "Locations": [
+          "Cowes"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "29 November 1703",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "England",
+        "Locations": [
+          "Portsmouth"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "29 November 1703",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "England",
+        "Locations": [
+          "Bristol"
+        ],
+        "Start_Date": "26 November 1703",
+        "End_Date": "29 November 1703",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Damage"
+      }
+    ],
+    "Main_Event": "Extratropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Damage",
+    "Start_Date": "7 December 1703",
+    "End_Date": "10 December 1703",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "England",
+      "Wales",
+      "Netherlands",
+      "France",
+      "Belgium",
+      "Germany"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

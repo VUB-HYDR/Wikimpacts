@@ -1,776 +1,778 @@
-{
-  "Event_ID": "mFVAGuL",
-  "Sources": "https://en.wikipedia.org/wiki/Hurricane_Hilda",
-  "Event_Names": "Hurricane Hilda",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Louisiana"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "150,000 people evacuated",
-      "Annotation": "Preparations"
+[
+  {
+    "Event_ID": "mFVAGuL",
+    "Sources": "https://en.wikipedia.org/wiki/Hurricane_Hilda",
+    "Event_Names": "Hurricane Hilda",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Louisiana"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "5,000 people injured",
-      "Annotation": "Louisiana"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Louisiana"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "357 hospitalized",
-      "Annotation": "Louisiana"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mississippi"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "20 people injured",
-      "Annotation": "Elsewhere"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Alabama"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "12 people injured",
-      "Annotation": "Elsewhere"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "North Carolina"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "4,000 people evacuated",
-      "Annotation": "East Coast"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "October 3",
-      "End_Date": "October 5",
-      "Num": "NULL",
-      "Annotation": "Louisiana"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Larose, Louisiana"
-      ],
-      "Start_Date": "October 3",
-      "End_Date": "October 3",
-      "Num": "35 homes",
-      "Annotation": "Louisiana"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "New Orleans, Louisiana"
-      ],
-      "Start_Date": "October 3",
-      "End_Date": "October 3",
-      "Num": "several automobiles and buildings",
-      "Annotation": "Louisiana"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Erath, Louisiana"
-      ],
-      "Start_Date": "October 3",
-      "End_Date": "October 3",
-      "Num": "town hall",
-      "Annotation": "Louisiana"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Louisiana"
-      ],
-      "Start_Date": "October 3",
-      "End_Date": "October 5",
-      "Num": "nearly 2,600 residences",
-      "Annotation": "Louisiana"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Louisiana"
-      ],
-      "Start_Date": "October 3",
-      "End_Date": "October 5",
-      "Num": "19,000 residences",
-      "Annotation": "Louisiana"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mississippi"
-      ],
-      "Start_Date": "October 3",
-      "End_Date": "October 5",
-      "Num": "over 14,000 homes",
-      "Annotation": "Elsewhere"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mississippi"
-      ],
-      "Start_Date": "October 3",
-      "End_Date": "October 5",
-      "Num": "3,000 homes",
-      "Annotation": "Elsewhere"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Russell and Lee counties, Alabama"
-      ],
-      "Start_Date": "October 4",
-      "End_Date": "October 5",
-      "Num": "several buildings",
-      "Annotation": "Elsewhere"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "six counties, Alabama"
-      ],
-      "Start_Date": "October 4",
-      "End_Date": "October 5",
-      "Num": "five homes, a hospital, and a plant",
-      "Annotation": "Elsewhere"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Waynesboro, Georgia"
-      ],
-      "Start_Date": "October 4",
-      "End_Date": "October 5",
-      "Num": "NULL",
-      "Annotation": "East Coast"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Rabun County, Georgia"
-      ],
-      "Start_Date": "October 4",
-      "End_Date": "October 5",
-      "Num": "NULL",
-      "Annotation": "East Coast"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Raleigh, North Carolina"
-      ],
-      "Start_Date": "October 4",
-      "End_Date": "October 5",
-      "Num": "roughly 4,000 homes",
-      "Annotation": "East Coast"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Wayne County, North Carolina"
-      ],
-      "Start_Date": "October 4",
-      "End_Date": "October 5",
-      "Num": "NULL",
-      "Annotation": "East Coast"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "South Carolina"
-      ],
-      "Start_Date": "October 4",
-      "End_Date": "October 6",
-      "Num": "NULL",
-      "Annotation": "East Coast"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "38",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "38",
-      "Annotation": "Louisiana"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Larose, Louisiana"
-      ],
-      "Start_Date": "October 3",
-      "End_Date": "NULL",
-      "Num": "22",
-      "Annotation": "Louisiana"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Erath, Louisiana"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "8",
-      "Annotation": "Louisiana"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Pensacola, Florida"
-      ],
-      "Start_Date": "October 4",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Elsewhere"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "North Carolina"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "East Coast"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "South Carolina"
-      ],
-      "Start_Date": "October 4",
-      "End_Date": "October 6",
-      "Num": "1",
-      "Annotation": "East Coast"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "approximately 150,000",
-    "Total_Displaced_Annotation": "Preparations"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "September 29, 1964",
-      "End_Date": "October 4, 1964",
-      "Num": "approximately 150,000",
-      "Annotation": "Preparations"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "offshore oil platforms"
-      ],
-      "Start_Date": "September 29, 1964",
-      "End_Date": "October 1, 1964",
-      "Num": "2,000 oil workers",
-      "Annotation": "Preparations"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Lake Pontchartrain"
-      ],
-      "Start_Date": "October 1, 1964",
-      "End_Date": "October 4, 1964",
-      "Num": "almost entirely evacuated",
-      "Annotation": "Preparations"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "New Orleans",
-        "Franklin, Louisiana"
-      ],
-      "Start_Date": "October 1, 1964",
-      "End_Date": "October 4, 1964",
-      "Num": "3,400 evacuees",
-      "Annotation": "Preparations"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "St. Mary Parish, Louisiana"
-      ],
-      "Start_Date": "October 1, 1964",
-      "End_Date": "October 4, 1964",
-      "Num": "NULL",
-      "Annotation": "Preparations"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Opelousas, Louisiana"
-      ],
-      "Start_Date": "October 1, 1964",
-      "End_Date": "October 4, 1964",
-      "Num": "10,000 cots transported",
-      "Annotation": "Preparations"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Morgan City",
-        "Cameron, Louisiana"
-      ],
-      "Start_Date": "October 1, 1964",
-      "End_Date": "October 4, 1964",
-      "Num": "NULL",
-      "Annotation": "Preparations"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Cameron Parish"
-      ],
-      "Start_Date": "October 1, 1964",
-      "End_Date": "October 4, 1964",
-      "Num": "NULL",
-      "Annotation": "Preparations"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Pecan Island, Louisiana"
-      ],
-      "Start_Date": "October 1, 1964",
-      "End_Date": "October 4, 1964",
-      "Num": "all residents",
-      "Annotation": "Preparations"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Grand Isle, Louisiana"
-      ],
-      "Start_Date": "October 1, 1964",
-      "End_Date": "October 4, 1964",
-      "Num": "approximately 80% of the population",
-      "Annotation": "Preparations"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Sabine Pass, Texas"
-      ],
-      "Start_Date": "October 1, 1964",
-      "End_Date": "October 4, 1964",
-      "Num": "NULL",
-      "Annotation": "Preparations"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Louisiana"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "nearly 2,600 residences destroyed or heavily damaged",
-      "Annotation": "Louisiana"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mississippi"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "over 14,000 homes damaged, of which 3,000 were either heavily damaged or completely destroyed",
-      "Annotation": "Elsewhere"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "North Carolina"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "roughly 4,000 people were forced to evacuate their homes",
-      "Annotation": "East Coast"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Louisiana"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "165",
-      "Annotation": "Louisiana"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Louisiana"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "5",
-      "Annotation": "Louisiana"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Louisiana"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "357",
-      "Annotation": "Louisiana"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mississippi"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "20",
-      "Annotation": "Mississippi"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mississippi"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3",
-      "Annotation": "Mississippi"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Alabama"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "5",
-      "Annotation": "Alabama"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Alabama"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "4",
-      "Annotation": "Alabama"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Alabama"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3",
-      "Annotation": "Alabama"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "North Carolina"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "North Carolina"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "September 28, 1964",
-      "End_Date": "October 5, 1964",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Louisiana"
-      ],
-      "Start_Date": "September 28, 1964",
-      "End_Date": "October 5, 1964",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Louisiana"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mississippi"
-      ],
-      "Start_Date": "September 28, 1964",
-      "End_Date": "October 5, 1964",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Mississippi"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Alabama"
-      ],
-      "Start_Date": "September 28, 1964",
-      "End_Date": "October 5, 1964",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Alabama"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Florida"
-      ],
-      "Start_Date": "September 28, 1964",
-      "End_Date": "October 5, 1964",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Florida"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Georgia"
-      ],
-      "Start_Date": "September 28, 1964",
-      "End_Date": "October 5, 1964",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Georgia"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "North Carolina"
-      ],
-      "Start_Date": "September 28, 1964",
-      "End_Date": "October 5, 1964",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "North Carolina"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "South Carolina"
-      ],
-      "Start_Date": "September 28, 1964",
-      "End_Date": "October 5, 1964",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "South Carolina"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$126 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "September 28, 1964",
-      "End_Date": "October 5, 1964",
-      "Num": "$126 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Louisiana"
-      ],
-      "Start_Date": "September 28, 1964",
-      "End_Date": "October 5, 1964",
-      "Num": "$100 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Gulf of Mexico"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Louisiana"
-      ],
-      "Start_Date": "September 28, 1964",
-      "End_Date": "October 5, 1964",
-      "Num": "$10 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Louisiana"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mississippi"
-      ],
-      "Start_Date": "September 28, 1964",
-      "End_Date": "October 5, 1964",
-      "Num": "$50,000",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Elsewhere"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Georgia"
-      ],
-      "Start_Date": "September 28, 1964",
-      "End_Date": "October 5, 1964",
-      "Num": "$100,000",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "East Coast"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Time_Information": {
-    "Start_Date": "September 28, 1964",
-    "End_Date": "October 5, 1964",
-    "Time_Annotation": "Info_Box"
-  },
-  "Administrative_Areas": {
-    "Administrative_Areas": [
-      "Cuba",
-      "United States"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
     ],
-    "Administrative_Areas_Annotation": "Info_Box"
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Louisiana"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "150,000 people evacuated",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Louisiana"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5,000 people injured",
+        "Annotation": "Louisiana"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Louisiana"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "357 hospitalized",
+        "Annotation": "Louisiana"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mississippi"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "20 people injured",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Alabama"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "12 people injured",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4,000 people evacuated",
+        "Annotation": "East Coast"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "October 3",
+        "End_Date": "October 5",
+        "Num": "NULL",
+        "Annotation": "Louisiana"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Larose, Louisiana"
+        ],
+        "Start_Date": "October 3",
+        "End_Date": "October 3",
+        "Num": "35 homes",
+        "Annotation": "Louisiana"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New Orleans, Louisiana"
+        ],
+        "Start_Date": "October 3",
+        "End_Date": "October 3",
+        "Num": "several automobiles and buildings",
+        "Annotation": "Louisiana"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Erath, Louisiana"
+        ],
+        "Start_Date": "October 3",
+        "End_Date": "October 3",
+        "Num": "town hall",
+        "Annotation": "Louisiana"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Louisiana"
+        ],
+        "Start_Date": "October 3",
+        "End_Date": "October 5",
+        "Num": "nearly 2,600 residences",
+        "Annotation": "Louisiana"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Louisiana"
+        ],
+        "Start_Date": "October 3",
+        "End_Date": "October 5",
+        "Num": "19,000 residences",
+        "Annotation": "Louisiana"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mississippi"
+        ],
+        "Start_Date": "October 3",
+        "End_Date": "October 5",
+        "Num": "over 14,000 homes",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mississippi"
+        ],
+        "Start_Date": "October 3",
+        "End_Date": "October 5",
+        "Num": "3,000 homes",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Russell and Lee counties, Alabama"
+        ],
+        "Start_Date": "October 4",
+        "End_Date": "October 5",
+        "Num": "several buildings",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "six counties, Alabama"
+        ],
+        "Start_Date": "October 4",
+        "End_Date": "October 5",
+        "Num": "five homes, a hospital, and a plant",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Waynesboro, Georgia"
+        ],
+        "Start_Date": "October 4",
+        "End_Date": "October 5",
+        "Num": "NULL",
+        "Annotation": "East Coast"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Rabun County, Georgia"
+        ],
+        "Start_Date": "October 4",
+        "End_Date": "October 5",
+        "Num": "NULL",
+        "Annotation": "East Coast"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Raleigh, North Carolina"
+        ],
+        "Start_Date": "October 4",
+        "End_Date": "October 5",
+        "Num": "roughly 4,000 homes",
+        "Annotation": "East Coast"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Wayne County, North Carolina"
+        ],
+        "Start_Date": "October 4",
+        "End_Date": "October 5",
+        "Num": "NULL",
+        "Annotation": "East Coast"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "South Carolina"
+        ],
+        "Start_Date": "October 4",
+        "End_Date": "October 6",
+        "Num": "NULL",
+        "Annotation": "East Coast"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "38",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "38",
+        "Annotation": "Louisiana"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Larose, Louisiana"
+        ],
+        "Start_Date": "October 3",
+        "End_Date": "NULL",
+        "Num": "22",
+        "Annotation": "Louisiana"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Erath, Louisiana"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8",
+        "Annotation": "Louisiana"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Pensacola, Florida"
+        ],
+        "Start_Date": "October 4",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "East Coast"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "South Carolina"
+        ],
+        "Start_Date": "October 4",
+        "End_Date": "October 6",
+        "Num": "1",
+        "Annotation": "East Coast"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "approximately 150,000",
+      "Total_Displaced_Annotation": "Preparations"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "September 29, 1964",
+        "End_Date": "October 4, 1964",
+        "Num": "approximately 150,000",
+        "Annotation": "Preparations"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "offshore oil platforms"
+        ],
+        "Start_Date": "September 29, 1964",
+        "End_Date": "October 1, 1964",
+        "Num": "2,000 oil workers",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Lake Pontchartrain"
+        ],
+        "Start_Date": "October 1, 1964",
+        "End_Date": "October 4, 1964",
+        "Num": "almost entirely evacuated",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New Orleans",
+          "Franklin, Louisiana"
+        ],
+        "Start_Date": "October 1, 1964",
+        "End_Date": "October 4, 1964",
+        "Num": "3,400 evacuees",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "St. Mary Parish, Louisiana"
+        ],
+        "Start_Date": "October 1, 1964",
+        "End_Date": "October 4, 1964",
+        "Num": "NULL",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Opelousas, Louisiana"
+        ],
+        "Start_Date": "October 1, 1964",
+        "End_Date": "October 4, 1964",
+        "Num": "10,000 cots transported",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Morgan City",
+          "Cameron, Louisiana"
+        ],
+        "Start_Date": "October 1, 1964",
+        "End_Date": "October 4, 1964",
+        "Num": "NULL",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Cameron Parish"
+        ],
+        "Start_Date": "October 1, 1964",
+        "End_Date": "October 4, 1964",
+        "Num": "NULL",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Pecan Island, Louisiana"
+        ],
+        "Start_Date": "October 1, 1964",
+        "End_Date": "October 4, 1964",
+        "Num": "all residents",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Grand Isle, Louisiana"
+        ],
+        "Start_Date": "October 1, 1964",
+        "End_Date": "October 4, 1964",
+        "Num": "approximately 80% of the population",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Sabine Pass, Texas"
+        ],
+        "Start_Date": "October 1, 1964",
+        "End_Date": "October 4, 1964",
+        "Num": "NULL",
+        "Annotation": "Preparations"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Louisiana"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "nearly 2,600 residences destroyed or heavily damaged",
+        "Annotation": "Louisiana"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mississippi"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "over 14,000 homes damaged, of which 3,000 were either heavily damaged or completely destroyed",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "roughly 4,000 people were forced to evacuate their homes",
+        "Annotation": "East Coast"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Louisiana"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "165",
+        "Annotation": "Louisiana"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Louisiana"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5",
+        "Annotation": "Louisiana"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Louisiana"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "357",
+        "Annotation": "Louisiana"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mississippi"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "20",
+        "Annotation": "Mississippi"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mississippi"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Mississippi"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Alabama"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5",
+        "Annotation": "Alabama"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Alabama"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4",
+        "Annotation": "Alabama"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Alabama"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Alabama"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "North Carolina"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "September 28, 1964",
+        "End_Date": "October 5, 1964",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Louisiana"
+        ],
+        "Start_Date": "September 28, 1964",
+        "End_Date": "October 5, 1964",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Louisiana"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mississippi"
+        ],
+        "Start_Date": "September 28, 1964",
+        "End_Date": "October 5, 1964",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Mississippi"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Alabama"
+        ],
+        "Start_Date": "September 28, 1964",
+        "End_Date": "October 5, 1964",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Alabama"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida"
+        ],
+        "Start_Date": "September 28, 1964",
+        "End_Date": "October 5, 1964",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Florida"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Georgia"
+        ],
+        "Start_Date": "September 28, 1964",
+        "End_Date": "October 5, 1964",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Georgia"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina"
+        ],
+        "Start_Date": "September 28, 1964",
+        "End_Date": "October 5, 1964",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "North Carolina"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "South Carolina"
+        ],
+        "Start_Date": "September 28, 1964",
+        "End_Date": "October 5, 1964",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "South Carolina"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$126 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "September 28, 1964",
+        "End_Date": "October 5, 1964",
+        "Num": "$126 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Louisiana"
+        ],
+        "Start_Date": "September 28, 1964",
+        "End_Date": "October 5, 1964",
+        "Num": "$100 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Gulf of Mexico"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Louisiana"
+        ],
+        "Start_Date": "September 28, 1964",
+        "End_Date": "October 5, 1964",
+        "Num": "$10 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Louisiana"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mississippi"
+        ],
+        "Start_Date": "September 28, 1964",
+        "End_Date": "October 5, 1964",
+        "Num": "$50,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Georgia"
+        ],
+        "Start_Date": "September 28, 1964",
+        "End_Date": "October 5, 1964",
+        "Num": "$100,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "East Coast"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Time_Information": {
+      "Start_Date": "September 28, 1964",
+      "End_Date": "October 5, 1964",
+      "Time_Annotation": "Info_Box"
+    },
+    "Administrative_Areas": {
+      "Administrative_Areas": [
+        "Cuba",
+        "United States"
+      ],
+      "Administrative_Areas_Annotation": "Info_Box"
+    }
   }
-}
+]

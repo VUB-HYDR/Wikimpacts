@@ -1,413 +1,415 @@
-{
-  "Event_ID": "EEUpmfK",
-  "Sources": "https://en.wikipedia.org/wiki/Hurricane_Floyd_(1987)",
-  "Event_Names": "Hurricane Floyd (1987)",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "100,000 people evacuated",
-      "Annotation": "Preparations and impact"
+[
+  {
+    "Event_ID": "EEUpmfK",
+    "Sources": "https://en.wikipedia.org/wiki/Hurricane_Floyd_(1987)",
+    "Event_Names": "Hurricane Floyd (1987)",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2,000 people housed in shelters",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Pinar del R\u00edo Province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "100,000 people evacuated",
-      "Annotation": "Preparations and impact"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "100,000 people evacuated",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2,000 people housed in shelters",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Pinar del R\u00edo Province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "100,000 people evacuated",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Lee County"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2,000 people housed in shelters",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Lee County"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2,000 people housed in shelters",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Preparations and impact"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Areas": "Bahamas",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Rock Harbor"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "a few boats and homes",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "1",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": "Bahamas",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Rock Harbor"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "a few boats and homes",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "1",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "South Padre Island, Texas"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Cuba"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "100,000 people",
-      "Annotation": "Preparations and impact"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "South Padre Island, Texas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2,000 people",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Pinar del R\u00edo Province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "100,000 people",
-      "Annotation": "Preparations and impact"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Cuba"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "100,000 people",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2,000 people",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Pinar del R\u00edo Province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "100,000 people",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Lee County"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2,000 people",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Lee County"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2,000 people",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Preparations and impact"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Areas": "The Bahamas",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Pinar del R\u00edo Province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "The Bahamas",
+        "Locations": [
+          "Grand Bahama"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Preparations and impact"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Areas": "The Bahamas",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Pinar del R\u00edo Province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "The Bahamas",
+        "Locations": [
+          "Grand Bahama"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "The Bahamas",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Pinar del R\u00edo Province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Preparations and impact"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "October 12, 1987",
+        "End_Date": "October 13, 1987",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Areas": [
+          "Cuba"
+        ],
+        "Start_Date": "October 12, 1987",
+        "End_Date": "October 12, 1987",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Areas": [
+          "Bahamas"
+        ],
+        "Start_Date": "October 13, 1987",
+        "End_Date": "October 14, 1987",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida"
+        ],
+        "Start_Date": "October 12, 1987",
+        "End_Date": "October 13, 1987",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Pinar del R\u00edo Province"
+        ],
+        "Start_Date": "October 12, 1987",
+        "End_Date": "October 12, 1987",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Freeport, Grand Bahama"
+        ],
+        "Start_Date": "October 13, 1987",
+        "End_Date": "October 14, 1987",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$500,000",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Florida"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "The Bahamas",
-      "Locations": [
-        "Grand Bahama"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Areas": "The Bahamas",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Florida"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Pinar del R\u00edo Province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "The Bahamas",
-      "Locations": [
-        "Grand Bahama"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "October 12, 1987",
-      "End_Date": "October 13, 1987",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Areas": [
-        "Cuba"
-      ],
-      "Start_Date": "October 12, 1987",
-      "End_Date": "October 12, 1987",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Areas": [
-        "Bahamas"
-      ],
-      "Start_Date": "October 13, 1987",
-      "End_Date": "October 14, 1987",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Florida"
-      ],
-      "Start_Date": "October 12, 1987",
-      "End_Date": "October 13, 1987",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Pinar del R\u00edo Province"
-      ],
-      "Start_Date": "October 12, 1987",
-      "End_Date": "October 12, 1987",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "Bahamas",
-      "Locations": [
-        "Freeport, Grand Bahama"
-      ],
-      "Start_Date": "October 13, 1987",
-      "End_Date": "October 14, 1987",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$500,000",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$500,000",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Areas": [
-        "Bahamas"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Florida"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$500,000",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Start_Date": "October 9, 1987",
-  "End_Date": "October 13, 1987",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Cuba",
-    "United States",
-    "The Bahamas"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$500,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Areas": [
+          "Bahamas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$500,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Start_Date": "October 9, 1987",
+    "End_Date": "October 13, 1987",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Cuba",
+      "United States",
+      "The Bahamas"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

@@ -1,453 +1,455 @@
-{
-  "Event_ID": "J0IFodB",
-  "Sources": "https://en.wikipedia.org/wiki/Typhoon_Bilis_(2000)",
-  "Event_Names": "Typhoon Bilis (2000)",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": "Taiwan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Tens of thousands of people",
-      "Annotation": "Taiwan"
+[
+  {
+    "Event_ID": "J0IFodB",
+    "Sources": "https://en.wikipedia.org/wiki/Typhoon_Bilis_(2000)",
+    "Event_Names": "Typhoon Bilis (2000)",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "China",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1,077 people",
-      "Annotation": "Mainland China"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "Taipei"
-      ],
-      "Start_Date": "August 22",
-      "End_Date": "NULL",
-      "Num": "1 person",
-      "Annotation": "Taiwan"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Taiwan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Tens of thousands of people",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,077 people",
+        "Annotation": "Mainland China"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "Taipei"
+        ],
+        "Start_Date": "August 22",
+        "End_Date": "NULL",
+        "Num": "1 person",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "Cheng-Kung"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "Jenai"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "9 farmers",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "Kaohsiung"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8 people",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "Hualien County"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "250 houses",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Fujian Province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "57 people",
+        "Annotation": "Mainland China"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Yueqing"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "20 buildings",
+        "Annotation": "Mainland China"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "Cheng-Kung"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Taiwan"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Taiwan",
+        "Start_Date": "August 22, 2000",
+        "End_Date": "August 23, 2000",
+        "Num": "400 homes",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Areas": "Mainland China",
+        "Start_Date": "August 24, 2000",
+        "End_Date": "NULL",
+        "Num": "20 buildings",
+        "Annotation": "Mainland China"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "Cheng-Kung",
+          "Jenai",
+          "Kaohsiung",
+          "Hualien County"
+        ],
+        "Start_Date": "August 22, 2000",
+        "End_Date": "August 23, 2000",
+        "Num": [
+          "400 homes",
+          "250 houses"
+        ],
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Area": "Mainland China",
+        "Locations": [
+          "Yueqing"
+        ],
+        "Start_Date": "August 24, 2000",
+        "End_Date": "NULL",
+        "Num": "20 buildings",
+        "Annotation": "Mainland China"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "71 total",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "Jenai"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "9 farmers",
-      "Annotation": "Taiwan"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Taiwan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "14",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "57",
+        "Annotation": "Mainland China"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "Taipei"
+        ],
+        "Start_Date": "August 22",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "Jenai"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "9",
+        "Annotation": "Taiwan"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "Kaohsiung"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "8 people",
-      "Annotation": "Taiwan"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Taiwan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Tens of thousands of people",
+        "Annotation": "Taiwan"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Tens of thousands of people",
+        "Annotation": "Taiwan"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "Hualien County"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "250 houses",
-      "Annotation": "Taiwan"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Taiwan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "400 homes across Taiwan were destroyed",
+        "Annotation": "Taiwan"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "Taiwan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "400 homes across Taiwan were destroyed",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "Cheng-Kung"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "Jenai"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Nine farmers buried by a landslide",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "Hualien County"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "250 houses succumbed to strong winds",
+        "Annotation": "Taiwan"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Fujian Province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "57 people",
-      "Annotation": "Mainland China"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Taiwan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "80",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,077",
+        "Annotation": "Mainland China"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "80",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,077",
+        "Annotation": "Mainland China"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Yueqing"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "20 buildings",
-      "Annotation": "Mainland China"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Taiwan",
-      "Start_Date": "August 22, 2000",
-      "End_Date": "August 23, 2000",
-      "Num": "400 homes",
-      "Annotation": "Taiwan"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Taiwan"
+        ],
+        "Start_Date": "August 22, 2000",
+        "End_Date": "August 23, 2000",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Areas": [
+          "China"
+        ],
+        "Start_Date": "August 24, 2000",
+        "End_Date": "August 25, 2000",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Mainland China"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "Taipei",
+          "Cheng-Kung",
+          "Jenai",
+          "Kaohsiung",
+          "Hualien County"
+        ],
+        "Start_Date": "August 22, 2000",
+        "End_Date": "August 23, 2000",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Fujian Province",
+          "Xiamen",
+          "Yueqing"
+        ],
+        "Start_Date": "August 24, 2000",
+        "End_Date": "August 25, 2000",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Mainland China"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$668 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": "Mainland China",
-      "Start_Date": "August 24, 2000",
-      "End_Date": "NULL",
-      "Num": "20 buildings",
-      "Annotation": "Mainland China"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "Cheng-Kung",
-        "Jenai",
-        "Kaohsiung",
-        "Hualien County"
-      ],
-      "Start_Date": "August 22, 2000",
-      "End_Date": "August 23, 2000",
-      "Num": [
-        "400 homes",
-        "250 houses"
-      ],
-      "Annotation": "Taiwan"
-    },
-    {
-      "Administrative_Area": "Mainland China",
-      "Locations": [
-        "Yueqing"
-      ],
-      "Start_Date": "August 24, 2000",
-      "End_Date": "NULL",
-      "Num": "20 buildings",
-      "Annotation": "Mainland China"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "71 total",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Taiwan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "14",
-      "Annotation": "Taiwan"
-    },
-    {
-      "Administrative_Areas": "China",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "57",
-      "Annotation": "Mainland China"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "Taipei"
-      ],
-      "Start_Date": "August 22",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Taiwan"
-    },
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "Jenai"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "9",
-      "Annotation": "Taiwan"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": "Taiwan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Tens of thousands of people",
-      "Annotation": "Taiwan"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Tens of thousands of people",
-      "Annotation": "Taiwan"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Taiwan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "400 homes across Taiwan were destroyed",
-      "Annotation": "Taiwan"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "Taiwan"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "400 homes across Taiwan were destroyed",
-      "Annotation": "Taiwan"
-    },
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "Cheng-Kung"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Taiwan"
-    },
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "Jenai"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Nine farmers buried by a landslide",
-      "Annotation": "Taiwan"
-    },
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "Hualien County"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "250 houses succumbed to strong winds",
-      "Annotation": "Taiwan"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Taiwan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "80",
-      "Annotation": "Taiwan"
-    },
-    {
-      "Administrative_Areas": "China",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1,077",
-      "Annotation": "Mainland China"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "80",
-      "Annotation": "Taiwan"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1,077",
-      "Annotation": "Mainland China"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Taiwan"
-      ],
-      "Start_Date": "August 22, 2000",
-      "End_Date": "August 23, 2000",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Taiwan"
-    },
-    {
-      "Administrative_Areas": [
-        "China"
-      ],
-      "Start_Date": "August 24, 2000",
-      "End_Date": "August 25, 2000",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Mainland China"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "Taipei",
-        "Cheng-Kung",
-        "Jenai",
-        "Kaohsiung",
-        "Hualien County"
-      ],
-      "Start_Date": "August 22, 2000",
-      "End_Date": "August 23, 2000",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Taiwan"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Fujian Province",
-        "Xiamen",
-        "Yueqing"
-      ],
-      "Start_Date": "August 24, 2000",
-      "End_Date": "August 25, 2000",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Mainland China"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$668 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": "Taiwan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$133.5 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Taiwan"
-    },
-    {
-      "Administrative_Areas": "China",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$534 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Mainland China"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "Cheng-Kung",
-        "Jenai",
-        "Kaohsiung",
-        "Hualien County"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$133.5 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Taiwan"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Fujian Province",
-        "Yueqing"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$534 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Mainland China"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Taiwan|Mainland China|Elsewhere",
-  "Start_Date": "August 18, 2000",
-  "End_Date": "August 27, 2000",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Philippines",
-    "Taiwan",
-    "China",
-    "South Korea",
-    "Ryukyu Islands",
-    "Guam"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Taiwan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$133.5 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$534 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Mainland China"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "Cheng-Kung",
+          "Jenai",
+          "Kaohsiung",
+          "Hualien County"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$133.5 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Fujian Province",
+          "Yueqing"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$534 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Mainland China"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Taiwan|Mainland China|Elsewhere",
+    "Start_Date": "August 18, 2000",
+    "End_Date": "August 27, 2000",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Philippines",
+      "Taiwan",
+      "China",
+      "South Korea",
+      "Ryukyu Islands",
+      "Guam"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

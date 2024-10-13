@@ -1,487 +1,489 @@
-{
-  "Event_ID": "SovHjZr",
-  "Sources": "https://en.wikipedia.org/wiki/April_1924_tornado_outbreak",
-  "Event_Names": "April 1924 tornado outbreak",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 30, 1924",
-      "Num": "NULL",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "South Carolina"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 30, 1924",
-      "Num": "76 deaths",
-      "Annotation": "April 1924 tornado outbreak"
+[
+  {
+    "Event_ID": "SovHjZr",
+    "Sources": "https://en.wikipedia.org/wiki/April_1924_tornado_outbreak",
+    "Event_Names": "April 1924 tornado outbreak",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Georgia"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 30, 1924",
-      "Num": "16 deaths",
-      "Annotation": "April 1924 tornado outbreak"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 30, 1924",
+        "Num": "NULL",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "South Carolina"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 30, 1924",
+        "Num": "76 deaths",
+        "Annotation": "April 1924 tornado outbreak"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Georgia"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 30, 1924",
+        "Num": "16 deaths",
+        "Annotation": "April 1924 tornado outbreak"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Alabama"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 30, 1924",
+        "Num": "13 deaths",
+        "Annotation": "April 1924 tornado outbreak"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Anderson, South Carolina"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 30, 1924",
+        "Num": "9 deaths, about 100 injured, roughly 600 homeless",
+        "Annotation": "Hartwell, Georgia/Anderson\u2013Walnut Grove, South Carolina"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Walnut Grove, South Carolina"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 30, 1924",
+        "Num": "21 injured",
+        "Annotation": "Hartwell, Georgia/Anderson\u2013Walnut Grove, South Carolina"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Richland County, South Carolina"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 30, 1924",
+        "Num": "24 deaths",
+        "Annotation": "Steedman\u2013Horrell Hill\u2013Gaillard Crossroads, South Carolina"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Sumter County, South Carolina"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 30, 1924",
+        "Num": "20 deaths",
+        "Annotation": "Steedman\u2013Horrell Hill\u2013Gaillard Crossroads, South Carolina"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Lee County, South Carolina"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 30, 1924",
+        "Num": "1 death",
+        "Annotation": "Steedman\u2013Horrell Hill\u2013Gaillard Crossroads, South Carolina"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Alabama"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 30, 1924",
-      "Num": "13 deaths",
-      "Annotation": "April 1924 tornado outbreak"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 30, 1924",
+        "Num": "NULL",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Anderson, South Carolina"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 29, 1924",
+        "Num": "about 100 little homes, two cotton mills, and many businesses",
+        "Annotation": "Hartwell, Georgia/Anderson\u2013Walnut Grove, South Carolina"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Walnut Grove, South Carolina"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 29, 1924",
+        "Num": "14 homes",
+        "Annotation": "Hartwell, Georgia/Anderson\u2013Walnut Grove, South Carolina"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Steedman, South Carolina"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 29, 1924",
+        "Num": "a school",
+        "Annotation": "Steedman\u2013Horrell Hill\u2013Gaillard Crossroads, South Carolina"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Horrell Hill, South Carolina"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 29, 1924",
+        "Num": "a school",
+        "Annotation": "Steedman\u2013Horrell Hill\u2013Gaillard Crossroads, South Carolina"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Gaillard Crossroads, South Carolina"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 29, 1924",
+        "Num": "rural homes",
+        "Annotation": "Steedman\u2013Horrell Hill\u2013Gaillard Crossroads, South Carolina"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "114",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Anderson, South Carolina"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 30, 1924",
-      "Num": "9 deaths, about 100 injured, roughly 600 homeless",
-      "Annotation": "Hartwell, Georgia/Anderson\u2013Walnut Grove, South Carolina"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 30, 1924",
+        "Num": "114",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "South Carolina"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 30, 1924",
+        "Num": "76",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Georgia"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 30, 1924",
+        "Num": "16",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Alabama"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 30, 1924",
+        "Num": "13",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Anderson"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 30, 1924",
+        "Num": "9",
+        "Annotation": "Hartwell, Georgia/Anderson\u2013Walnut Grove, South Carolina"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Richland County"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 30, 1924",
+        "Num": "24",
+        "Annotation": "Steedman\u2013Horrell Hill\u2013Gaillard Crossroads, South Carolina"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Sumter County"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 30, 1924",
+        "Num": "20",
+        "Annotation": "Steedman\u2013Horrell Hill\u2013Gaillard Crossroads, South Carolina"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Lee County"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 30, 1924",
+        "Num": "1",
+        "Annotation": "Steedman\u2013Horrell Hill\u2013Gaillard Crossroads, South Carolina"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Walnut Grove, South Carolina"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 30, 1924",
-      "Num": "21 injured",
-      "Annotation": "Hartwell, Georgia/Anderson\u2013Walnut Grove, South Carolina"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 30, 1924",
+        "Num": "NULL",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Anderson, South Carolina"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 30, 1924",
+        "Num": "roughly 600",
+        "Annotation": "Hartwell, Georgia/Anderson\u2013Walnut Grove, South Carolina"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Richland County, South Carolina"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 30, 1924",
-      "Num": "24 deaths",
-      "Annotation": "Steedman\u2013Horrell Hill\u2013Gaillard Crossroads, South Carolina"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 30, 1924",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Anderson, South Carolina"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 29, 1924",
+        "Num": "roughly 600",
+        "Annotation": "Hartwell, Georgia/Anderson\u2013Walnut Grove, South Carolina"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "at least 1,166",
+      "Total_Injuries_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Sumter County, South Carolina"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 30, 1924",
-      "Num": "20 deaths",
-      "Annotation": "Steedman\u2013Horrell Hill\u2013Gaillard Crossroads, South Carolina"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Southern United States",
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 30, 1924",
+        "Num": "at least 1,166",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Anderson, South Carolina"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 29, 1924",
+        "Num": "about 100",
+        "Annotation": "Hartwell, Georgia/Anderson\u2013Walnut Grove, South Carolina"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Walnut Grove, South Carolina"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 29, 1924",
+        "Num": "21",
+        "Annotation": "Hartwell, Georgia/Anderson\u2013Walnut Grove, South Carolina"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Richland County, South Carolina"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 29, 1924",
+        "Num": "NULL",
+        "Annotation": "Steedman\u2013Horrell Hill\u2013Gaillard Crossroads, South Carolina"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Sumter County, South Carolina"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 29, 1924",
+        "Num": "NULL",
+        "Annotation": "Steedman\u2013Horrell Hill\u2013Gaillard Crossroads, South Carolina"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Lee County, South Carolina"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 30, 1924",
-      "Num": "1 death",
-      "Annotation": "Steedman\u2013Horrell Hill\u2013Gaillard Crossroads, South Carolina"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 30, 1924",
-      "Num": "NULL",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Anderson, South Carolina"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 29, 1924",
-      "Num": "about 100 little homes, two cotton mills, and many businesses",
-      "Annotation": "Hartwell, Georgia/Anderson\u2013Walnut Grove, South Carolina"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 30, 1924",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Anderson, South Carolina"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 29, 1924",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hartwell, Georgia/Anderson\u2013Walnut Grove, South Carolina"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Walnut Grove, South Carolina"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 29, 1924",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hartwell, Georgia/Anderson\u2013Walnut Grove, South Carolina"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Steedman, South Carolina",
+          "Horrell Hill, South Carolina",
+          "Gaillard Crossroads, South Carolina"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 29, 1924",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Steedman\u2013Horrell Hill\u2013Gaillard Crossroads, South Carolina"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "Unknown",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Walnut Grove, South Carolina"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 29, 1924",
-      "Num": "14 homes",
-      "Annotation": "Hartwell, Georgia/Anderson\u2013Walnut Grove, South Carolina"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Steedman, South Carolina"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 29, 1924",
-      "Num": "a school",
-      "Annotation": "Steedman\u2013Horrell Hill\u2013Gaillard Crossroads, South Carolina"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Horrell Hill, South Carolina"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 29, 1924",
-      "Num": "a school",
-      "Annotation": "Steedman\u2013Horrell Hill\u2013Gaillard Crossroads, South Carolina"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Gaillard Crossroads, South Carolina"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 29, 1924",
-      "Num": "rural homes",
-      "Annotation": "Steedman\u2013Horrell Hill\u2013Gaillard Crossroads, South Carolina"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "114",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 30, 1924",
-      "Num": "114",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "South Carolina"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 30, 1924",
-      "Num": "76",
-      "Annotation": "Info_Box"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Georgia"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 30, 1924",
-      "Num": "16",
-      "Annotation": "Info_Box"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Alabama"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 30, 1924",
-      "Num": "13",
-      "Annotation": "Info_Box"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Anderson"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 30, 1924",
-      "Num": "9",
-      "Annotation": "Hartwell, Georgia/Anderson\u2013Walnut Grove, South Carolina"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Richland County"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 30, 1924",
-      "Num": "24",
-      "Annotation": "Steedman\u2013Horrell Hill\u2013Gaillard Crossroads, South Carolina"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Sumter County"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 30, 1924",
-      "Num": "20",
-      "Annotation": "Steedman\u2013Horrell Hill\u2013Gaillard Crossroads, South Carolina"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Lee County"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 30, 1924",
-      "Num": "1",
-      "Annotation": "Steedman\u2013Horrell Hill\u2013Gaillard Crossroads, South Carolina"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 30, 1924",
-      "Num": "NULL",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Anderson, South Carolina"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 30, 1924",
-      "Num": "roughly 600",
-      "Annotation": "Hartwell, Georgia/Anderson\u2013Walnut Grove, South Carolina"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 30, 1924",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Anderson, South Carolina"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 29, 1924",
-      "Num": "roughly 600",
-      "Annotation": "Hartwell, Georgia/Anderson\u2013Walnut Grove, South Carolina"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "at least 1,166",
-    "Total_Injuries_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Southern United States",
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 30, 1924",
-      "Num": "at least 1,166",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Anderson, South Carolina"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 29, 1924",
-      "Num": "about 100",
-      "Annotation": "Hartwell, Georgia/Anderson\u2013Walnut Grove, South Carolina"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Walnut Grove, South Carolina"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 29, 1924",
-      "Num": "21",
-      "Annotation": "Hartwell, Georgia/Anderson\u2013Walnut Grove, South Carolina"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Richland County, South Carolina"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 29, 1924",
-      "Num": "NULL",
-      "Annotation": "Steedman\u2013Horrell Hill\u2013Gaillard Crossroads, South Carolina"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Sumter County, South Carolina"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 29, 1924",
-      "Num": "NULL",
-      "Annotation": "Steedman\u2013Horrell Hill\u2013Gaillard Crossroads, South Carolina"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 30, 1924",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Anderson, South Carolina"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 29, 1924",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hartwell, Georgia/Anderson\u2013Walnut Grove, South Carolina"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Walnut Grove, South Carolina"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 29, 1924",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hartwell, Georgia/Anderson\u2013Walnut Grove, South Carolina"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Steedman, South Carolina",
-        "Horrell Hill, South Carolina",
-        "Gaillard Crossroads, South Carolina"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 29, 1924",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Steedman\u2013Horrell Hill\u2013Gaillard Crossroads, South Carolina"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "Unknown",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "NULL",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 30, 1924",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "April 1924 tornado outbreak"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Anderson"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 30, 1924",
-      "Num": "about $1.5 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hartwell, Georgia/Anderson\u2013Walnut Grove, South Carolina"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Walnut Grove"
-      ],
-      "Start_Date": "April 29, 1924",
-      "End_Date": "April 30, 1924",
-      "Num": "$2 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hartwell, Georgia/Anderson\u2013Walnut Grove, South Carolina"
-    }
-  ],
-  "Main_Event": "Tornado",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "April 29, 1924",
-  "End_Date": "April 30, 1924",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "United States"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 30, 1924",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "April 1924 tornado outbreak"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Anderson"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 30, 1924",
+        "Num": "about $1.5 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hartwell, Georgia/Anderson\u2013Walnut Grove, South Carolina"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Walnut Grove"
+        ],
+        "Start_Date": "April 29, 1924",
+        "End_Date": "April 30, 1924",
+        "Num": "$2 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hartwell, Georgia/Anderson\u2013Walnut Grove, South Carolina"
+      }
+    ],
+    "Main_Event": "Tornado",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "April 29, 1924",
+    "End_Date": "April 30, 1924",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "United States"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

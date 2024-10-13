@@ -1,714 +1,716 @@
-{
-  "Event_ID": "MtUsF0L",
-  "Sources": "https://en.wikipedia.org/wiki/2009%E2%80%9310_Australian_bushfire_season",
-  "Event_Names": "2009\u201310 Australian bushfire season",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "June 2009",
-      "End_Date": "May 2010",
-      "Num": "NULL",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "South Australia"
-      ],
-      "Start_Date": "Early November 2009",
-      "End_Date": "Early November 2009",
-      "Num": "6 people",
-      "Annotation": "2009\u201310 Australian bushfire season"
+[
+  {
+    "Event_ID": "MtUsF0L",
+    "Sources": "https://en.wikipedia.org/wiki/2009%E2%80%9310_Australian_bushfire_season",
+    "Event_Names": "2009\u201310 Australian bushfire season",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "New South Wales"
-      ],
-      "Start_Date": "December 2009",
-      "End_Date": "December 2009",
-      "Num": "5 people",
-      "Annotation": "2009\u201310 Australian bushfire season"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "June 2009",
+        "End_Date": "May 2010",
+        "Num": "NULL",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "South Australia"
+        ],
+        "Start_Date": "Early November 2009",
+        "End_Date": "Early November 2009",
+        "Num": "6 people",
+        "Annotation": "2009\u201310 Australian bushfire season"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "New South Wales"
+        ],
+        "Start_Date": "December 2009",
+        "End_Date": "December 2009",
+        "Num": "5 people",
+        "Annotation": "2009\u201310 Australian bushfire season"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Southern NSW"
+        ],
+        "Start_Date": "December 2009",
+        "End_Date": "December 2009",
+        "Num": "4 people",
+        "Annotation": "2009\u201310 Australian bushfire season"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Victoria"
+        ],
+        "Start_Date": "10 January 2010",
+        "End_Date": "10 January 2010",
+        "Num": "3 people",
+        "Annotation": "2009\u201310 Australian bushfire season"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "South Australia"
+        ],
+        "Start_Date": "19 November 2009",
+        "End_Date": "19 November 2009",
+        "Num": "5 people",
+        "Annotation": "November"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "NSW"
+        ],
+        "Start_Date": "19-20 November 2009",
+        "End_Date": "19-20 November 2009",
+        "Num": "NULL",
+        "Annotation": "November"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Tasmania"
+        ],
+        "Start_Date": "19-20 November 2009",
+        "End_Date": "19-20 November 2009",
+        "Num": "NULL",
+        "Annotation": "November"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "NSW"
+        ],
+        "Start_Date": "8 December 2009",
+        "End_Date": "8 December 2009",
+        "Num": "2 people",
+        "Annotation": "December"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "NSW"
+        ],
+        "Start_Date": "9-10 December 2009",
+        "End_Date": "9-10 December 2009",
+        "Num": "2 people",
+        "Annotation": "December"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Southern NSW"
+        ],
+        "Start_Date": "17 December 2009",
+        "End_Date": "17 December 2009",
+        "Num": "1 person",
+        "Annotation": "December"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Southern NSW"
+        ],
+        "Start_Date": "17 December 2009",
+        "End_Date": "17 December 2009",
+        "Num": "3 people",
+        "Annotation": "December"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Victoria"
+        ],
+        "Start_Date": "10 January 2010",
+        "End_Date": "10 January 2010",
+        "Num": "3 people",
+        "Annotation": "January (2010)"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Victoria"
+        ],
+        "Start_Date": "11 January 2010",
+        "End_Date": "11 January 2010",
+        "Num": "NULL",
+        "Annotation": "January (2010)"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Victoria"
+        ],
+        "Start_Date": "12 January 2010",
+        "End_Date": "12 January 2010",
+        "Num": "NULL",
+        "Annotation": "January (2010)"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Victoria"
+        ],
+        "Start_Date": "13 January 2010",
+        "End_Date": "13 January 2010",
+        "Num": "NULL",
+        "Annotation": "January (2010)"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Victoria"
+        ],
+        "Start_Date": "22 January 2010",
+        "End_Date": "22 January 2010",
+        "Num": "NULL",
+        "Annotation": "January (2010)"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "South Australia"
+        ],
+        "Start_Date": "11 January 2010",
+        "End_Date": "11 January 2010",
+        "Num": "NULL",
+        "Annotation": "January (2010)"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "South Australia"
+        ],
+        "Start_Date": "12 January 2010",
+        "End_Date": "12 January 2010",
+        "Num": "NULL",
+        "Annotation": "January (2010)"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "NSW"
+        ],
+        "Start_Date": "12 January 2010",
+        "End_Date": "12 January 2010",
+        "Num": "NULL",
+        "Annotation": "January (2010)"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "NSW"
+        ],
+        "Start_Date": "23 January 2010",
+        "End_Date": "27 January 2010",
+        "Num": "NULL",
+        "Annotation": "January (2010)"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "NSW"
+        ],
+        "Start_Date": "2 February 2010",
+        "End_Date": "2 February 2010",
+        "Num": "NULL",
+        "Annotation": "February"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Coolup"
+        ],
+        "Start_Date": "12 March 2010",
+        "End_Date": "12 March 2010",
+        "Num": "NULL",
+        "Annotation": "March"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Albany"
+        ],
+        "Start_Date": "13 March 2010",
+        "End_Date": "13 March 2010",
+        "Num": "NULL",
+        "Annotation": "March"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "70+ total",
+      "Total_Buildings_Damaged_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Southern NSW"
-      ],
-      "Start_Date": "December 2009",
-      "End_Date": "December 2009",
-      "Num": "4 people",
-      "Annotation": "2009\u201310 Australian bushfire season"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Australia",
+        "Start_Date": "June 2009",
+        "End_Date": "May 2010",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "northern and central Wheatbelt of Western Australia"
+        ],
+        "Start_Date": "Between Christmas and New Years 2009",
+        "End_Date": "NULL",
+        "Num": "37 homes",
+        "Annotation": "header: December"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Koongal"
+        ],
+        "Start_Date": "mid-October",
+        "End_Date": "NULL",
+        "Num": "1 house",
+        "Annotation": "header: October"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Swansea",
+          "St Helens"
+        ],
+        "Start_Date": "19-20 November",
+        "End_Date": "NULL",
+        "Num": "5 houses",
+        "Annotation": "header: November"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Gerogery"
+        ],
+        "Start_Date": "17 December",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "header: December"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Tooma"
+        ],
+        "Start_Date": "17 December",
+        "End_Date": "NULL",
+        "Num": "6 homes",
+        "Annotation": "header: December"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Michelago"
+        ],
+        "Start_Date": "17 December",
+        "End_Date": "NULL",
+        "Num": "3 houses",
+        "Annotation": "header: December"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Port Lincoln"
+        ],
+        "Start_Date": "23 December",
+        "End_Date": "NULL",
+        "Num": "6 houses",
+        "Annotation": "header: December"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Toodyay"
+        ],
+        "Start_Date": "29 December",
+        "End_Date": "30 December",
+        "Num": "37 homes",
+        "Annotation": "header: December"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "2",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Victoria"
-      ],
-      "Start_Date": "10 January 2010",
-      "End_Date": "10 January 2010",
-      "Num": "3 people",
-      "Annotation": "2009\u201310 Australian bushfire season"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "June 2009",
+        "End_Date": "May 2010",
+        "Num": "2",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "NSW"
+        ],
+        "Start_Date": "December 2009",
+        "End_Date": "December 2009",
+        "Num": "1",
+        "Annotation": "December"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Victoria"
+        ],
+        "Start_Date": "January 2010",
+        "End_Date": "January 2010",
+        "Num": "1",
+        "Annotation": "January (2010)"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "South Australia"
-      ],
-      "Start_Date": "19 November 2009",
-      "End_Date": "19 November 2009",
-      "Num": "5 people",
-      "Annotation": "November"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Halls Gap"
+        ],
+        "Start_Date": "11 January 2010",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "January (2010)"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Robinson",
+          "Little Grove"
+        ],
+        "Start_Date": "13 March 2010",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "March"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "NSW"
-      ],
-      "Start_Date": "19-20 November 2009",
-      "End_Date": "19-20 November 2009",
-      "Num": "NULL",
-      "Annotation": "November"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "June 2009",
+        "End_Date": "May 2010",
+        "Num": "NULL",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "northern and central Wheatbelt of Western Australia"
+        ],
+        "Start_Date": "Between Christmas and New Years 2009",
+        "End_Date": "NULL",
+        "Num": "37 homes",
+        "Annotation": "header: December"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Koongal"
+        ],
+        "Start_Date": "mid-October",
+        "End_Date": "NULL",
+        "Num": "1 house",
+        "Annotation": "header: October"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Swansea",
+          "St Helens"
+        ],
+        "Start_Date": "19-20 November",
+        "End_Date": "NULL",
+        "Num": "5 houses",
+        "Annotation": "header: November"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Gerogery"
+        ],
+        "Start_Date": "17 December",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "header: December"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Tooma"
+        ],
+        "Start_Date": "17 December",
+        "End_Date": "NULL",
+        "Num": "6 homes",
+        "Annotation": "header: December"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Michelago"
+        ],
+        "Start_Date": "17 December",
+        "End_Date": "NULL",
+        "Num": "3 houses",
+        "Annotation": "header: December"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Port Lincoln"
+        ],
+        "Start_Date": "23 December",
+        "End_Date": "NULL",
+        "Num": "6 houses",
+        "Annotation": "header: December"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Toodyay"
+        ],
+        "Start_Date": "29 December",
+        "End_Date": "30 December",
+        "Num": "37 homes",
+        "Annotation": "header: December"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "20",
+      "Total_Injuries_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Tasmania"
-      ],
-      "Start_Date": "19-20 November 2009",
-      "End_Date": "19-20 November 2009",
-      "Num": "NULL",
-      "Annotation": "November"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Australia",
+        "Start_Date": "June 2009",
+        "End_Date": "May 2010",
+        "Num": "20",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "South Australia"
+        ],
+        "Start_Date": "Early November 2009",
+        "End_Date": "Early November 2009",
+        "Num": "6",
+        "Annotation": "November"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "New South Wales"
+        ],
+        "Start_Date": "December 2009",
+        "End_Date": "December 2009",
+        "Num": "5",
+        "Annotation": "December"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Southern NSW"
+        ],
+        "Start_Date": "December 2009",
+        "End_Date": "December 2009",
+        "Num": "4",
+        "Annotation": "December"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Yorke Peninsula, South Australia"
+        ],
+        "Start_Date": "19 November 2009",
+        "End_Date": "20 November 2009",
+        "Num": "5",
+        "Annotation": "November"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Kingston, South Australia"
+        ],
+        "Start_Date": "19 November 2009",
+        "End_Date": "20 November 2009",
+        "Num": "1",
+        "Annotation": "November"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Tatong, Victoria"
+        ],
+        "Start_Date": "10 January 2010",
+        "End_Date": "10 January 2010",
+        "Num": "2",
+        "Annotation": "January (2010)"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "NSW"
-      ],
-      "Start_Date": "8 December 2009",
-      "End_Date": "8 December 2009",
-      "Num": "2 people",
-      "Annotation": "December"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "Australia",
+        "Start_Date": "June 2009",
+        "End_Date": "May 2010",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Context"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Port Lincoln"
+        ],
+        "Start_Date": "23 December 2009",
+        "End_Date": "23 December 2009",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "December"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Toodyay"
+        ],
+        "Start_Date": "29 December 2009",
+        "End_Date": "30 December 2009",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "December"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "NULL",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "NSW"
-      ],
-      "Start_Date": "9-10 December 2009",
-      "End_Date": "9-10 December 2009",
-      "Num": "2 people",
-      "Annotation": "December"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Southern NSW"
-      ],
-      "Start_Date": "17 December 2009",
-      "End_Date": "17 December 2009",
-      "Num": "1 person",
-      "Annotation": "December"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Southern NSW"
-      ],
-      "Start_Date": "17 December 2009",
-      "End_Date": "17 December 2009",
-      "Num": "3 people",
-      "Annotation": "December"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Victoria"
-      ],
-      "Start_Date": "10 January 2010",
-      "End_Date": "10 January 2010",
-      "Num": "3 people",
-      "Annotation": "January (2010)"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Victoria"
-      ],
-      "Start_Date": "11 January 2010",
-      "End_Date": "11 January 2010",
-      "Num": "NULL",
-      "Annotation": "January (2010)"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Victoria"
-      ],
-      "Start_Date": "12 January 2010",
-      "End_Date": "12 January 2010",
-      "Num": "NULL",
-      "Annotation": "January (2010)"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Victoria"
-      ],
-      "Start_Date": "13 January 2010",
-      "End_Date": "13 January 2010",
-      "Num": "NULL",
-      "Annotation": "January (2010)"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Victoria"
-      ],
-      "Start_Date": "22 January 2010",
-      "End_Date": "22 January 2010",
-      "Num": "NULL",
-      "Annotation": "January (2010)"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "South Australia"
-      ],
-      "Start_Date": "11 January 2010",
-      "End_Date": "11 January 2010",
-      "Num": "NULL",
-      "Annotation": "January (2010)"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "South Australia"
-      ],
-      "Start_Date": "12 January 2010",
-      "End_Date": "12 January 2010",
-      "Num": "NULL",
-      "Annotation": "January (2010)"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "NSW"
-      ],
-      "Start_Date": "12 January 2010",
-      "End_Date": "12 January 2010",
-      "Num": "NULL",
-      "Annotation": "January (2010)"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "NSW"
-      ],
-      "Start_Date": "23 January 2010",
-      "End_Date": "27 January 2010",
-      "Num": "NULL",
-      "Annotation": "January (2010)"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "NSW"
-      ],
-      "Start_Date": "2 February 2010",
-      "End_Date": "2 February 2010",
-      "Num": "NULL",
-      "Annotation": "February"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Coolup"
-      ],
-      "Start_Date": "12 March 2010",
-      "End_Date": "12 March 2010",
-      "Num": "NULL",
-      "Annotation": "March"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Albany"
-      ],
-      "Start_Date": "13 March 2010",
-      "End_Date": "13 March 2010",
-      "Num": "NULL",
-      "Annotation": "March"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "70+ total",
-    "Total_Buildings_Damaged_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Australia",
-      "Start_Date": "June 2009",
-      "End_Date": "May 2010",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "northern and central Wheatbelt of Western Australia"
-      ],
-      "Start_Date": "Between Christmas and New Years 2009",
-      "End_Date": "NULL",
-      "Num": "37 homes",
-      "Annotation": "header: December"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Koongal"
-      ],
-      "Start_Date": "mid-October",
-      "End_Date": "NULL",
-      "Num": "1 house",
-      "Annotation": "header: October"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Swansea",
-        "St Helens"
-      ],
-      "Start_Date": "19-20 November",
-      "End_Date": "NULL",
-      "Num": "5 houses",
-      "Annotation": "header: November"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Gerogery"
-      ],
-      "Start_Date": "17 December",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "header: December"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Tooma"
-      ],
-      "Start_Date": "17 December",
-      "End_Date": "NULL",
-      "Num": "6 homes",
-      "Annotation": "header: December"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Michelago"
-      ],
-      "Start_Date": "17 December",
-      "End_Date": "NULL",
-      "Num": "3 houses",
-      "Annotation": "header: December"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Port Lincoln"
-      ],
-      "Start_Date": "23 December",
-      "End_Date": "NULL",
-      "Num": "6 houses",
-      "Annotation": "header: December"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Toodyay"
-      ],
-      "Start_Date": "29 December",
-      "End_Date": "30 December",
-      "Num": "37 homes",
-      "Annotation": "header: December"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "2",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "June 2009",
-      "End_Date": "May 2010",
-      "Num": "2",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "NSW"
-      ],
-      "Start_Date": "December 2009",
-      "End_Date": "December 2009",
-      "Num": "1",
-      "Annotation": "December"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Victoria"
-      ],
-      "Start_Date": "January 2010",
-      "End_Date": "January 2010",
-      "Num": "1",
-      "Annotation": "January (2010)"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Halls Gap"
-      ],
-      "Start_Date": "11 January 2010",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "January (2010)"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Robinson",
-        "Little Grove"
-      ],
-      "Start_Date": "13 March 2010",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "March"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "June 2009",
-      "End_Date": "May 2010",
-      "Num": "NULL",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "northern and central Wheatbelt of Western Australia"
-      ],
-      "Start_Date": "Between Christmas and New Years 2009",
-      "End_Date": "NULL",
-      "Num": "37 homes",
-      "Annotation": "header: December"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Koongal"
-      ],
-      "Start_Date": "mid-October",
-      "End_Date": "NULL",
-      "Num": "1 house",
-      "Annotation": "header: October"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Swansea",
-        "St Helens"
-      ],
-      "Start_Date": "19-20 November",
-      "End_Date": "NULL",
-      "Num": "5 houses",
-      "Annotation": "header: November"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Gerogery"
-      ],
-      "Start_Date": "17 December",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "header: December"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Tooma"
-      ],
-      "Start_Date": "17 December",
-      "End_Date": "NULL",
-      "Num": "6 homes",
-      "Annotation": "header: December"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Michelago"
-      ],
-      "Start_Date": "17 December",
-      "End_Date": "NULL",
-      "Num": "3 houses",
-      "Annotation": "header: December"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Port Lincoln"
-      ],
-      "Start_Date": "23 December",
-      "End_Date": "NULL",
-      "Num": "6 houses",
-      "Annotation": "header: December"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Toodyay"
-      ],
-      "Start_Date": "29 December",
-      "End_Date": "30 December",
-      "Num": "37 homes",
-      "Annotation": "header: December"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "20",
-    "Total_Injuries_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Australia",
-      "Start_Date": "June 2009",
-      "End_Date": "May 2010",
-      "Num": "20",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "South Australia"
-      ],
-      "Start_Date": "Early November 2009",
-      "End_Date": "Early November 2009",
-      "Num": "6",
-      "Annotation": "November"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "New South Wales"
-      ],
-      "Start_Date": "December 2009",
-      "End_Date": "December 2009",
-      "Num": "5",
-      "Annotation": "December"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Southern NSW"
-      ],
-      "Start_Date": "December 2009",
-      "End_Date": "December 2009",
-      "Num": "4",
-      "Annotation": "December"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Yorke Peninsula, South Australia"
-      ],
-      "Start_Date": "19 November 2009",
-      "End_Date": "20 November 2009",
-      "Num": "5",
-      "Annotation": "November"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Kingston, South Australia"
-      ],
-      "Start_Date": "19 November 2009",
-      "End_Date": "20 November 2009",
-      "Num": "1",
-      "Annotation": "November"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Tatong, Victoria"
-      ],
-      "Start_Date": "10 January 2010",
-      "End_Date": "10 January 2010",
-      "Num": "2",
-      "Annotation": "January (2010)"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": "Australia",
-      "Start_Date": "June 2009",
-      "End_Date": "May 2010",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Context"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Port Lincoln"
-      ],
-      "Start_Date": "23 December 2009",
-      "End_Date": "23 December 2009",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "December"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Toodyay"
-      ],
-      "Start_Date": "29 December 2009",
-      "End_Date": "30 December 2009",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "December"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "NULL",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "NULL",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": "Australia",
-      "Start_Date": "June 2009",
-      "End_Date": "May 2010",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Port Lincoln"
-      ],
-      "Start_Date": "23 December 2009",
-      "End_Date": "23 December 2009",
-      "Num": "$15,000",
-      "Num_Unit": "AUD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "December"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Toodyay"
-      ],
-      "Start_Date": "29 December 2009",
-      "End_Date": "30 December 2009",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "December"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Coolup"
-      ],
-      "Start_Date": "12 March 2010",
-      "End_Date": "12 March 2010",
-      "Num": "$15,000",
-      "Num_Unit": "AUD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "March"
-    }
-  ],
-  "Main_Event": "Wildfire",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wildfire",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "June 2009",
-  "End_Date": "May 2010",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Australia"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Australia",
+        "Start_Date": "June 2009",
+        "End_Date": "May 2010",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Port Lincoln"
+        ],
+        "Start_Date": "23 December 2009",
+        "End_Date": "23 December 2009",
+        "Num": "$15,000",
+        "Num_Unit": "AUD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "December"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Toodyay"
+        ],
+        "Start_Date": "29 December 2009",
+        "End_Date": "30 December 2009",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "December"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Coolup"
+        ],
+        "Start_Date": "12 March 2010",
+        "End_Date": "12 March 2010",
+        "Num": "$15,000",
+        "Num_Unit": "AUD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "March"
+      }
+    ],
+    "Main_Event": "Wildfire",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wildfire",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "June 2009",
+    "End_Date": "May 2010",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Australia"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

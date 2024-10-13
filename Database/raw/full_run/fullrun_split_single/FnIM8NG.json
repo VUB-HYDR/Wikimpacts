@@ -1,771 +1,773 @@
-{
-  "Event_ID": "FnIM8NG",
-  "Sources": "https://en.wikipedia.org/wiki/Tornadoes_of_1981",
-  "Event_Names": "Tornadoes of 1981",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "U.S."
-      ],
-      "Start_Date": "January",
-      "End_Date": "December",
-      "Num": "NULL",
-      "Annotation": "Info_Box"
+[
+  {
+    "Event_ID": "FnIM8NG",
+    "Sources": "https://en.wikipedia.org/wiki/Tornadoes_of_1981",
+    "Event_Names": "Tornadoes of 1981",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": [
-        "U.K."
-      ],
-      "Start_Date": "November 23",
-      "End_Date": "November 23",
-      "Num": "NULL",
-      "Annotation": "November 23 (U.K.)"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "U.S.",
-      "Locations": [
-        "California"
-      ],
-      "Start_Date": "January",
-      "End_Date": "January",
-      "Num": "NULL",
-      "Annotation": "January"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "U.S."
+        ],
+        "Start_Date": "January",
+        "End_Date": "December",
+        "Num": "NULL",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Areas": [
+          "U.K."
+        ],
+        "Start_Date": "November 23",
+        "End_Date": "November 23",
+        "Num": "NULL",
+        "Annotation": "November 23 (U.K.)"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "U.S.",
+        "Locations": [
+          "California"
+        ],
+        "Start_Date": "January",
+        "End_Date": "January",
+        "Num": "NULL",
+        "Annotation": "January"
+      },
+      {
+        "Administrative_Area": "U.S.",
+        "Locations": [
+          "Walker County, Texas",
+          "Hoke/Cumberland County, North Carolina"
+        ],
+        "Start_Date": "February 10",
+        "End_Date": "February 11",
+        "Num": "2",
+        "Annotation": "February 10\u201311"
+      },
+      {
+        "Administrative_Area": "U.S.",
+        "Locations": [
+          "Hertford County, North Carolina"
+        ],
+        "Start_Date": "March 30",
+        "End_Date": "March 30",
+        "Num": "1",
+        "Annotation": "March 30"
+      },
+      {
+        "Administrative_Area": "U.S.",
+        "Locations": [
+          "West Bend, Wisconsin"
+        ],
+        "Start_Date": "April 4",
+        "End_Date": "April 4",
+        "Num": "56",
+        "Annotation": "April 4"
+      },
+      {
+        "Administrative_Area": "U.S.",
+        "Locations": [
+          "Bixby, Oklahoma"
+        ],
+        "Start_Date": "April 19",
+        "End_Date": "April 19",
+        "Num": "5",
+        "Annotation": "April 19"
+      },
+      {
+        "Administrative_Area": "U.S.",
+        "Locations": [
+          "Scott, Oklahoma"
+        ],
+        "Start_Date": "May 22",
+        "End_Date": "May 23",
+        "Num": "12",
+        "Annotation": "May 22\u201323"
+      },
+      {
+        "Administrative_Area": "U.S.",
+        "Locations": [
+          "Cardington, Ohio"
+        ],
+        "Start_Date": "June 13",
+        "End_Date": "June 13",
+        "Num": "4",
+        "Annotation": "June 13"
+      },
+      {
+        "Administrative_Area": "U.S.",
+        "Locations": [
+          "Bismarck",
+          "Mandan, North Dakota"
+        ],
+        "Start_Date": "July 30",
+        "End_Date": "July 30",
+        "Num": "NULL",
+        "Annotation": "July 30"
+      },
+      {
+        "Administrative_Area": "U.K.",
+        "Locations": [
+          "Central England",
+          "Wales"
+        ],
+        "Start_Date": "November 23",
+        "End_Date": "November 23",
+        "Num": "NULL",
+        "Annotation": "November 23 (U.K.)"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "U.S.",
-      "Locations": [
-        "Walker County, Texas",
-        "Hoke/Cumberland County, North Carolina"
-      ],
-      "Start_Date": "February 10",
-      "End_Date": "February 11",
-      "Num": "2",
-      "Annotation": "February 10\u201311"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": "United Kingdom",
+        "Start_Date": "November 23",
+        "End_Date": "November 23",
+        "Num": "NULL",
+        "Annotation": "November 23 (U.K.)"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "West Bend, Wisconsin"
+        ],
+        "Start_Date": "April 4",
+        "End_Date": "April 4",
+        "Num": "NULL",
+        "Annotation": "April 4"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Bixby, Oklahoma"
+        ],
+        "Start_Date": "April 19",
+        "End_Date": "April 19",
+        "Num": "NULL",
+        "Annotation": "April 19"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Scott, Oklahoma"
+        ],
+        "Start_Date": "May 22",
+        "End_Date": "May 23",
+        "Num": "NULL",
+        "Annotation": "May 22\u201323"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Cardington, Ohio"
+        ],
+        "Start_Date": "June 13",
+        "End_Date": "June 13",
+        "Num": "NULL",
+        "Annotation": "June 13"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Bismarck",
+          "Mandan"
+        ],
+        "Start_Date": "July 30",
+        "End_Date": "July 30",
+        "Num": "NULL",
+        "Annotation": "July 30"
+      },
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Central England",
+          "Wales"
+        ],
+        "Start_Date": "November 23",
+        "End_Date": "November 23",
+        "Num": "NULL",
+        "Annotation": "November 23 (U.K.)"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "24",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "U.S.",
-      "Locations": [
-        "Hertford County, North Carolina"
-      ],
-      "Start_Date": "March 30",
-      "End_Date": "March 30",
-      "Num": "1",
-      "Annotation": "March 30"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "24",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Walker County, Texas",
+          "Hoke/Cumberland County, North Carolina"
+        ],
+        "Start_Date": "February 10",
+        "End_Date": "February 11",
+        "Num": "2",
+        "Annotation": "February 10\u201311"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hertford County, North Carolina"
+        ],
+        "Start_Date": "March 30",
+        "End_Date": "March 30",
+        "Num": "1",
+        "Annotation": "March 30"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "West Bend, Wisconsin"
+        ],
+        "Start_Date": "April 4",
+        "End_Date": "April 4",
+        "Num": "3",
+        "Annotation": "April 4"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Bixby, Oklahoma"
+        ],
+        "Start_Date": "April 19",
+        "End_Date": "April 19",
+        "Num": "5",
+        "Annotation": "April 19"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Cardington, Ohio"
+        ],
+        "Start_Date": "June 13",
+        "End_Date": "June 13",
+        "Num": "4",
+        "Annotation": "June 13"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "U.S.",
-      "Locations": [
-        "West Bend, Wisconsin"
-      ],
-      "Start_Date": "April 4",
-      "End_Date": "April 4",
-      "Num": "56",
-      "Annotation": "April 4"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": [
+          "United Kingdom"
+        ],
+        "Start_Date": "November 23",
+        "End_Date": "November 23",
+        "Num": "NULL",
+        "Annotation": "November 23 (U.K.)"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Walker County, Texas",
+          "Hoke/Cumberland County, North Carolina"
+        ],
+        "Start_Date": "February 10",
+        "End_Date": "February 11",
+        "Num": "NULL",
+        "Annotation": "February 10\u201311"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hertford County, North Carolina"
+        ],
+        "Start_Date": "March 30",
+        "End_Date": "March 30",
+        "Num": "NULL",
+        "Annotation": "March 30"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "West Bend, Wisconsin"
+        ],
+        "Start_Date": "April 4",
+        "End_Date": "April 4",
+        "Num": "NULL",
+        "Annotation": "April 4"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Bixby, Oklahoma"
+        ],
+        "Start_Date": "April 19",
+        "End_Date": "April 19",
+        "Num": "NULL",
+        "Annotation": "April 19"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Scott, Oklahoma"
+        ],
+        "Start_Date": "May 22",
+        "End_Date": "May 23",
+        "Num": "NULL",
+        "Annotation": "May 22\u201323"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Cardington, Ohio"
+        ],
+        "Start_Date": "June 13",
+        "End_Date": "June 13",
+        "Num": "NULL",
+        "Annotation": "June 13"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Bismarck",
+          "Mandan, North Dakota"
+        ],
+        "Start_Date": "July 30",
+        "End_Date": "July 30",
+        "Num": "NULL",
+        "Annotation": "July 30"
+      },
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Central England",
+          "Wales"
+        ],
+        "Start_Date": "November 23",
+        "End_Date": "November 23",
+        "Num": "NULL",
+        "Annotation": "November 23 (U.K.)"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "U.S.",
-      "Locations": [
-        "Bixby, Oklahoma"
-      ],
-      "Start_Date": "April 19",
-      "End_Date": "April 19",
-      "Num": "5",
-      "Annotation": "April 19"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": [
+          "United Kingdom"
+        ],
+        "Start_Date": "November 23",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "November 23 (U.K.)"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "West Bend, Wisconsin"
+        ],
+        "Start_Date": "April 4",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "April 4"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Bixby, Oklahoma"
+        ],
+        "Start_Date": "April 19",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "April 19"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Cardington, Ohio"
+        ],
+        "Start_Date": "June 13",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "June 13"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Bismarck, North Dakota",
+          "Mandan, North Dakota"
+        ],
+        "Start_Date": "July 30",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "July 30"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "U.S.",
-      "Locations": [
-        "Scott, Oklahoma"
-      ],
-      "Start_Date": "May 22",
-      "End_Date": "May 23",
-      "Num": "12",
-      "Annotation": "May 22\u201323"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "U.S."
+        ],
+        "Start_Date": "February",
+        "End_Date": "February",
+        "Num": "82",
+        "Annotation": "February"
+      },
+      {
+        "Administrative_Areas": [
+          "U.S."
+        ],
+        "Start_Date": "April 4",
+        "End_Date": "April 4",
+        "Num": "53",
+        "Annotation": "April 4"
+      },
+      {
+        "Administrative_Areas": [
+          "U.S."
+        ],
+        "Start_Date": "April 4",
+        "End_Date": "April 4",
+        "Num": "10",
+        "Annotation": "April 4"
+      },
+      {
+        "Administrative_Areas": [
+          "U.S."
+        ],
+        "Start_Date": "May 22",
+        "End_Date": "May 23",
+        "Num": "12",
+        "Annotation": "May 22\u201323"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "U.S.",
+        "Locations": [
+          "California"
+        ],
+        "Start_Date": "January",
+        "End_Date": "January",
+        "Num": "NULL",
+        "Annotation": "January"
+      },
+      {
+        "Administrative_Area": "U.S.",
+        "Locations": [
+          "Walker County, Texas",
+          "Hoke/Cumberland County, North Carolina"
+        ],
+        "Start_Date": "February 10",
+        "End_Date": "February 11",
+        "Num": "NULL",
+        "Annotation": "February 10\u201311"
+      },
+      {
+        "Administrative_Area": "U.S.",
+        "Locations": [
+          "Hertford County, North Carolina"
+        ],
+        "Start_Date": "March 30",
+        "End_Date": "March 30",
+        "Num": "NULL",
+        "Annotation": "March 30"
+      },
+      {
+        "Administrative_Area": "U.S.",
+        "Locations": [
+          "West Bend, Wisconsin"
+        ],
+        "Start_Date": "April 4",
+        "End_Date": "April 4",
+        "Num": "53",
+        "Annotation": "April 4"
+      },
+      {
+        "Administrative_Area": "U.S.",
+        "Locations": [
+          "West Bend, Wisconsin"
+        ],
+        "Start_Date": "April 4",
+        "End_Date": "April 4",
+        "Num": "10",
+        "Annotation": "April 4"
+      },
+      {
+        "Administrative_Area": "U.S.",
+        "Locations": [
+          "Bixby, Oklahoma"
+        ],
+        "Start_Date": "April 19",
+        "End_Date": "April 19",
+        "Num": "NULL",
+        "Annotation": "April 19"
+      },
+      {
+        "Administrative_Area": "U.S.",
+        "Locations": [
+          "Scott, Oklahoma"
+        ],
+        "Start_Date": "May 22",
+        "End_Date": "May 23",
+        "Num": "12",
+        "Annotation": "May 22\u201323"
+      },
+      {
+        "Administrative_Area": "U.S.",
+        "Locations": [
+          "Colorado"
+        ],
+        "Start_Date": "June 3",
+        "End_Date": "June 3",
+        "Num": "NULL",
+        "Annotation": "June 3"
+      },
+      {
+        "Administrative_Area": "U.S.",
+        "Locations": [
+          "Cardington, Ohio"
+        ],
+        "Start_Date": "June 13",
+        "End_Date": "June 13",
+        "Num": "NULL",
+        "Annotation": "June 13"
+      },
+      {
+        "Administrative_Area": "U.S.",
+        "Locations": [
+          "Bismarck",
+          "Mandan, North Dakota"
+        ],
+        "Start_Date": "July 30",
+        "End_Date": "July 30",
+        "Num": "NULL",
+        "Annotation": "July 30"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "U.S.",
-      "Locations": [
-        "Cardington, Ohio"
-      ],
-      "Start_Date": "June 13",
-      "End_Date": "June 13",
-      "Num": "4",
-      "Annotation": "June 13"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "January 1981",
+        "End_Date": "December 1981",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Areas": [
+          "United Kingdom"
+        ],
+        "Start_Date": "November 23, 1981",
+        "End_Date": "November 23, 1981",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "November 23 (U.K.)"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "California"
+        ],
+        "Start_Date": "January 1981",
+        "End_Date": "January 1981",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "January"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Walker County, Texas",
+          "Hoke/Cumberland County, North Carolina"
+        ],
+        "Start_Date": "February 10, 1981",
+        "End_Date": "February 11, 1981",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "February 10\u201311"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hertford County, North Carolina"
+        ],
+        "Start_Date": "March 30, 1981",
+        "End_Date": "March 30, 1981",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "March 30"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "West Bend, Wisconsin"
+        ],
+        "Start_Date": "April 4, 1981",
+        "End_Date": "April 4, 1981",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "April 4"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Bixby, Oklahoma"
+        ],
+        "Start_Date": "April 19, 1981",
+        "End_Date": "April 19, 1981",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "April 19"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Scott, Oklahoma"
+        ],
+        "Start_Date": "May 22, 1981",
+        "End_Date": "May 23, 1981",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "May 22\u201323"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Cardington, Ohio"
+        ],
+        "Start_Date": "June 13, 1981",
+        "End_Date": "June 13, 1981",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "June 13"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Bismarck, North Dakota",
+          "Mandan, North Dakota"
+        ],
+        "Start_Date": "July 30, 1981",
+        "End_Date": "July 30, 1981",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "July 30"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "Unknown",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "U.S.",
-      "Locations": [
-        "Bismarck",
-        "Mandan, North Dakota"
-      ],
-      "Start_Date": "July 30",
-      "End_Date": "July 30",
-      "Num": "NULL",
-      "Annotation": "July 30"
-    },
-    {
-      "Administrative_Area": "U.K.",
-      "Locations": [
-        "Central England",
-        "Wales"
-      ],
-      "Start_Date": "November 23",
-      "End_Date": "November 23",
-      "Num": "NULL",
-      "Annotation": "November 23 (U.K.)"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    },
-    {
-      "Administrative_Areas": "United Kingdom",
-      "Start_Date": "November 23",
-      "End_Date": "November 23",
-      "Num": "NULL",
-      "Annotation": "November 23 (U.K.)"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "West Bend, Wisconsin"
-      ],
-      "Start_Date": "April 4",
-      "End_Date": "April 4",
-      "Num": "NULL",
-      "Annotation": "April 4"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Bixby, Oklahoma"
-      ],
-      "Start_Date": "April 19",
-      "End_Date": "April 19",
-      "Num": "NULL",
-      "Annotation": "April 19"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Scott, Oklahoma"
-      ],
-      "Start_Date": "May 22",
-      "End_Date": "May 23",
-      "Num": "NULL",
-      "Annotation": "May 22\u201323"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Cardington, Ohio"
-      ],
-      "Start_Date": "June 13",
-      "End_Date": "June 13",
-      "Num": "NULL",
-      "Annotation": "June 13"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Bismarck",
-        "Mandan"
-      ],
-      "Start_Date": "July 30",
-      "End_Date": "July 30",
-      "Num": "NULL",
-      "Annotation": "July 30"
-    },
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Central England",
-        "Wales"
-      ],
-      "Start_Date": "November 23",
-      "End_Date": "November 23",
-      "Num": "NULL",
-      "Annotation": "November 23 (U.K.)"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "24",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "24",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Walker County, Texas",
-        "Hoke/Cumberland County, North Carolina"
-      ],
-      "Start_Date": "February 10",
-      "End_Date": "February 11",
-      "Num": "2",
-      "Annotation": "February 10\u201311"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Hertford County, North Carolina"
-      ],
-      "Start_Date": "March 30",
-      "End_Date": "March 30",
-      "Num": "1",
-      "Annotation": "March 30"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "West Bend, Wisconsin"
-      ],
-      "Start_Date": "April 4",
-      "End_Date": "April 4",
-      "Num": "3",
-      "Annotation": "April 4"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Bixby, Oklahoma"
-      ],
-      "Start_Date": "April 19",
-      "End_Date": "April 19",
-      "Num": "5",
-      "Annotation": "April 19"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Cardington, Ohio"
-      ],
-      "Start_Date": "June 13",
-      "End_Date": "June 13",
-      "Num": "4",
-      "Annotation": "June 13"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    },
-    {
-      "Administrative_Areas": [
-        "United Kingdom"
-      ],
-      "Start_Date": "November 23",
-      "End_Date": "November 23",
-      "Num": "NULL",
-      "Annotation": "November 23 (U.K.)"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Walker County, Texas",
-        "Hoke/Cumberland County, North Carolina"
-      ],
-      "Start_Date": "February 10",
-      "End_Date": "February 11",
-      "Num": "NULL",
-      "Annotation": "February 10\u201311"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Hertford County, North Carolina"
-      ],
-      "Start_Date": "March 30",
-      "End_Date": "March 30",
-      "Num": "NULL",
-      "Annotation": "March 30"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "West Bend, Wisconsin"
-      ],
-      "Start_Date": "April 4",
-      "End_Date": "April 4",
-      "Num": "NULL",
-      "Annotation": "April 4"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Bixby, Oklahoma"
-      ],
-      "Start_Date": "April 19",
-      "End_Date": "April 19",
-      "Num": "NULL",
-      "Annotation": "April 19"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Scott, Oklahoma"
-      ],
-      "Start_Date": "May 22",
-      "End_Date": "May 23",
-      "Num": "NULL",
-      "Annotation": "May 22\u201323"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Cardington, Ohio"
-      ],
-      "Start_Date": "June 13",
-      "End_Date": "June 13",
-      "Num": "NULL",
-      "Annotation": "June 13"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Bismarck",
-        "Mandan, North Dakota"
-      ],
-      "Start_Date": "July 30",
-      "End_Date": "July 30",
-      "Num": "NULL",
-      "Annotation": "July 30"
-    },
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Central England",
-        "Wales"
-      ],
-      "Start_Date": "November 23",
-      "End_Date": "November 23",
-      "Num": "NULL",
-      "Annotation": "November 23 (U.K.)"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    },
-    {
-      "Administrative_Areas": [
-        "United Kingdom"
-      ],
-      "Start_Date": "November 23",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "November 23 (U.K.)"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "West Bend, Wisconsin"
-      ],
-      "Start_Date": "April 4",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "April 4"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Bixby, Oklahoma"
-      ],
-      "Start_Date": "April 19",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "April 19"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Cardington, Ohio"
-      ],
-      "Start_Date": "June 13",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "June 13"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Bismarck, North Dakota",
-        "Mandan, North Dakota"
-      ],
-      "Start_Date": "July 30",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "July 30"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "U.S."
-      ],
-      "Start_Date": "February",
-      "End_Date": "February",
-      "Num": "82",
-      "Annotation": "February"
-    },
-    {
-      "Administrative_Areas": [
-        "U.S."
-      ],
-      "Start_Date": "April 4",
-      "End_Date": "April 4",
-      "Num": "53",
-      "Annotation": "April 4"
-    },
-    {
-      "Administrative_Areas": [
-        "U.S."
-      ],
-      "Start_Date": "April 4",
-      "End_Date": "April 4",
-      "Num": "10",
-      "Annotation": "April 4"
-    },
-    {
-      "Administrative_Areas": [
-        "U.S."
-      ],
-      "Start_Date": "May 22",
-      "End_Date": "May 23",
-      "Num": "12",
-      "Annotation": "May 22\u201323"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "U.S.",
-      "Locations": [
-        "California"
-      ],
-      "Start_Date": "January",
-      "End_Date": "January",
-      "Num": "NULL",
-      "Annotation": "January"
-    },
-    {
-      "Administrative_Area": "U.S.",
-      "Locations": [
-        "Walker County, Texas",
-        "Hoke/Cumberland County, North Carolina"
-      ],
-      "Start_Date": "February 10",
-      "End_Date": "February 11",
-      "Num": "NULL",
-      "Annotation": "February 10\u201311"
-    },
-    {
-      "Administrative_Area": "U.S.",
-      "Locations": [
-        "Hertford County, North Carolina"
-      ],
-      "Start_Date": "March 30",
-      "End_Date": "March 30",
-      "Num": "NULL",
-      "Annotation": "March 30"
-    },
-    {
-      "Administrative_Area": "U.S.",
-      "Locations": [
-        "West Bend, Wisconsin"
-      ],
-      "Start_Date": "April 4",
-      "End_Date": "April 4",
-      "Num": "53",
-      "Annotation": "April 4"
-    },
-    {
-      "Administrative_Area": "U.S.",
-      "Locations": [
-        "West Bend, Wisconsin"
-      ],
-      "Start_Date": "April 4",
-      "End_Date": "April 4",
-      "Num": "10",
-      "Annotation": "April 4"
-    },
-    {
-      "Administrative_Area": "U.S.",
-      "Locations": [
-        "Bixby, Oklahoma"
-      ],
-      "Start_Date": "April 19",
-      "End_Date": "April 19",
-      "Num": "NULL",
-      "Annotation": "April 19"
-    },
-    {
-      "Administrative_Area": "U.S.",
-      "Locations": [
-        "Scott, Oklahoma"
-      ],
-      "Start_Date": "May 22",
-      "End_Date": "May 23",
-      "Num": "12",
-      "Annotation": "May 22\u201323"
-    },
-    {
-      "Administrative_Area": "U.S.",
-      "Locations": [
-        "Colorado"
-      ],
-      "Start_Date": "June 3",
-      "End_Date": "June 3",
-      "Num": "NULL",
-      "Annotation": "June 3"
-    },
-    {
-      "Administrative_Area": "U.S.",
-      "Locations": [
-        "Cardington, Ohio"
-      ],
-      "Start_Date": "June 13",
-      "End_Date": "June 13",
-      "Num": "NULL",
-      "Annotation": "June 13"
-    },
-    {
-      "Administrative_Area": "U.S.",
-      "Locations": [
-        "Bismarck",
-        "Mandan, North Dakota"
-      ],
-      "Start_Date": "July 30",
-      "End_Date": "July 30",
-      "Num": "NULL",
-      "Annotation": "July 30"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "January 1981",
-      "End_Date": "December 1981",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Info_Box"
-    },
-    {
-      "Administrative_Areas": [
-        "United Kingdom"
-      ],
-      "Start_Date": "November 23, 1981",
-      "End_Date": "November 23, 1981",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "November 23 (U.K.)"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "California"
-      ],
-      "Start_Date": "January 1981",
-      "End_Date": "January 1981",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "January"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Walker County, Texas",
-        "Hoke/Cumberland County, North Carolina"
-      ],
-      "Start_Date": "February 10, 1981",
-      "End_Date": "February 11, 1981",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "February 10\u201311"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Hertford County, North Carolina"
-      ],
-      "Start_Date": "March 30, 1981",
-      "End_Date": "March 30, 1981",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "March 30"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "West Bend, Wisconsin"
-      ],
-      "Start_Date": "April 4, 1981",
-      "End_Date": "April 4, 1981",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "April 4"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Bixby, Oklahoma"
-      ],
-      "Start_Date": "April 19, 1981",
-      "End_Date": "April 19, 1981",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "April 19"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Scott, Oklahoma"
-      ],
-      "Start_Date": "May 22, 1981",
-      "End_Date": "May 23, 1981",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "May 22\u201323"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Cardington, Ohio"
-      ],
-      "Start_Date": "June 13, 1981",
-      "End_Date": "June 13, 1981",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "June 13"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Bismarck, North Dakota",
-        "Mandan, North Dakota"
-      ],
-      "Start_Date": "July 30, 1981",
-      "End_Date": "July 30, 1981",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "July 30"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "Unknown",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "NULL",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "U.S."
-      ],
-      "Start_Date": "January 1981",
-      "End_Date": "December 1981",
-      "Num": "Unknown",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [],
-  "Main_Event": "Tornado",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "January 1981",
-  "End_Date": "December 1981",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "United States",
-    "United Kingdom"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box, November 23 (U.K.)"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "U.S."
+        ],
+        "Start_Date": "January 1981",
+        "End_Date": "December 1981",
+        "Num": "Unknown",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [],
+    "Main_Event": "Tornado",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "January 1981",
+    "End_Date": "December 1981",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "United States",
+      "United Kingdom"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box, November 23 (U.K.)"
+  }
+]

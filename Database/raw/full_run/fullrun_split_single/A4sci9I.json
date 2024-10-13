@@ -1,521 +1,523 @@
-{
-  "Event_ID": "A4sci9I",
-  "Sources": "https://en.wikipedia.org/wiki/2024_Rio_Grande_do_Sul_floods",
-  "Event_Names": "2024 Rio Grande do Sul floods",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Brazil"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "580,000",
-      "Annotation": "Victims"
+[
+  {
+    "Event_ID": "A4sci9I",
+    "Sources": "https://en.wikipedia.org/wiki/2024_Rio_Grande_do_Sul_floods",
+    "Event_Names": "2024 Rio Grande do Sul floods",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": [
-        "Uruguay"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "700",
-      "Annotation": "Other impacts"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Rio Grande do Sul"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "580,000",
-      "Annotation": "Victims"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Brazil"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "580,000",
+        "Annotation": "Victims"
+      },
+      {
+        "Administrative_Areas": [
+          "Uruguay"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "700",
+        "Annotation": "Other impacts"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Rio Grande do Sul"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "580,000",
+        "Annotation": "Victims"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Porto Alegre"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "2",
+        "Annotation": "Victims"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Santa Catarina"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "1",
+        "Annotation": "Victims"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Eldorado do Sul"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "NULL",
+        "Annotation": "Other impacts"
+      },
+      {
+        "Administrative_Area": "Uruguay",
+        "Locations": [
+          "Northern Uruguay"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "700",
+        "Annotation": "Other impacts"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Porto Alegre"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "2",
-      "Annotation": "Victims"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "Brazil"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "NULL",
+        "Annotation": "Victims"
+      },
+      {
+        "Administrative_Areas": [
+          "Uruguay"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "NULL",
+        "Annotation": "Victims"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Rio Grande do Sul"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "386 schools",
+        "Annotation": "Other impacts"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Porto Alegre"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "NULL",
+        "Annotation": "Other impacts"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Eldorado do Sul"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "NULL",
+        "Annotation": "Other impacts"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Taquari River valley",
+          "Lajeado",
+          "Estrela",
+          "Mu\u00e7um",
+          "Cruzeiro do Sul",
+          "Arroio do Meio"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "NULL",
+        "Annotation": "Other impacts"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Gravata\u00ed"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "NULL",
+        "Annotation": "Other impacts"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Canoas"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "NULL",
+        "Annotation": "Civil society"
+      },
+      {
+        "Administrative_Area": "Uruguay",
+        "Locations": [
+          "Northern Uruguay"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "NULL",
+        "Annotation": "Victims"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "181",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Santa Catarina"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "1",
-      "Annotation": "Victims"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "Brazil"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "181",
+        "Annotation": "Victims"
+      },
+      {
+        "Administrative_Areas": [
+          "Uruguay"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "NULL",
+        "Annotation": "Victims"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Rio Grande do Sul"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "169",
+        "Annotation": "Victims"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Porto Alegre"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "2",
+        "Annotation": "Victims"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Das Antas River"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "30",
+        "Annotation": "Victims"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Santa Catarina"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "1",
+        "Annotation": "Victims"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "580,000",
+      "Total_Displaced_Annotation": "Victims"
     },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Eldorado do Sul"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "NULL",
-      "Annotation": "Other impacts"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Brazil"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "580,000",
+        "Annotation": "Victims"
+      },
+      {
+        "Administrative_Areas": [
+          "Uruguay"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "700",
+        "Annotation": "Victims"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Rio Grande do Sul"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "580,000",
+        "Annotation": "Victims"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Shelters in Rio Grande do Sul"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "68,500",
+        "Annotation": "Victims"
+      },
+      {
+        "Administrative_Area": "Uruguay",
+        "Locations": [
+          "Northern Uruguay"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "700",
+        "Annotation": "Victims"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "580,000",
+      "Total_Homeless_Annotation": "Victims"
     },
-    {
-      "Administrative_Area": "Uruguay",
-      "Locations": [
-        "Northern Uruguay"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "700",
-      "Annotation": "Other impacts"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "Brazil"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "NULL",
-      "Annotation": "Victims"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Brazil"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "580,000",
+        "Annotation": "Victims"
+      },
+      {
+        "Administrative_Areas": [
+          "Uruguay"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "700",
+        "Annotation": "Victims"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Rio Grande do Sul"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "580,000",
+        "Annotation": "Victims"
+      },
+      {
+        "Administrative_Area": "Uruguay",
+        "Locations": [
+          "Northern Uruguay"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "700",
+        "Annotation": "Victims"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "806+",
+      "Total_Injuries_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": [
-        "Uruguay"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "NULL",
-      "Annotation": "Victims"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Rio Grande do Sul"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "386 schools",
-      "Annotation": "Other impacts"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "Brazil"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "806",
+        "Annotation": "Victims"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Porto Alegre"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "2",
+        "Annotation": "Victims"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Porto Alegre"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "NULL",
-      "Annotation": "Other impacts"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "Brazil",
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": "Uruguay",
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Porto Alegre"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Cotipor\u00e3",
+          "Bento Gon\u00e7alves"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Santa Catarina"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "R$19 billion",
+      "Total_Damage_Unit": "BRL",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Eldorado do Sul"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "NULL",
-      "Annotation": "Other impacts"
-    },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Taquari River valley",
-        "Lajeado",
-        "Estrela",
-        "Mu\u00e7um",
-        "Cruzeiro do Sul",
-        "Arroio do Meio"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "NULL",
-      "Annotation": "Other impacts"
-    },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Gravata\u00ed"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "NULL",
-      "Annotation": "Other impacts"
-    },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Canoas"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "NULL",
-      "Annotation": "Civil society"
-    },
-    {
-      "Administrative_Area": "Uruguay",
-      "Locations": [
-        "Northern Uruguay"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "NULL",
-      "Annotation": "Victims"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "181",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "Brazil"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "181",
-      "Annotation": "Victims"
-    },
-    {
-      "Administrative_Areas": [
-        "Uruguay"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "NULL",
-      "Annotation": "Victims"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Rio Grande do Sul"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "169",
-      "Annotation": "Victims"
-    },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Porto Alegre"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "2",
-      "Annotation": "Victims"
-    },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Das Antas River"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "30",
-      "Annotation": "Victims"
-    },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Santa Catarina"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "1",
-      "Annotation": "Victims"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "580,000",
-    "Total_Displaced_Annotation": "Victims"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Brazil"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "580,000",
-      "Annotation": "Victims"
-    },
-    {
-      "Administrative_Areas": [
-        "Uruguay"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "700",
-      "Annotation": "Victims"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Rio Grande do Sul"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "580,000",
-      "Annotation": "Victims"
-    },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Shelters in Rio Grande do Sul"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "68,500",
-      "Annotation": "Victims"
-    },
-    {
-      "Administrative_Area": "Uruguay",
-      "Locations": [
-        "Northern Uruguay"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "700",
-      "Annotation": "Victims"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "580,000",
-    "Total_Homeless_Annotation": "Victims"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "Brazil"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "580,000",
-      "Annotation": "Victims"
-    },
-    {
-      "Administrative_Areas": [
-        "Uruguay"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "700",
-      "Annotation": "Victims"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Rio Grande do Sul"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "580,000",
-      "Annotation": "Victims"
-    },
-    {
-      "Administrative_Area": "Uruguay",
-      "Locations": [
-        "Northern Uruguay"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "700",
-      "Annotation": "Victims"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "806+",
-    "Total_Injuries_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "Brazil"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "806",
-      "Annotation": "Victims"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Porto Alegre"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "2",
-      "Annotation": "Victims"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": "Brazil",
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    },
-    {
-      "Administrative_Areas": "Uruguay",
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Porto Alegre"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Cotipor\u00e3",
-        "Bento Gon\u00e7alves"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Santa Catarina"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "R$19 billion",
-    "Total_Damage_Unit": "BRL",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "Brazil"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "R$19 billion",
-      "Num_Unit": "BRL",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Other impacts"
-    },
-    {
-      "Administrative_Areas": [
-        "Uruguay"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Other impacts"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Rio Grande do Sul"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "R$2.7 billion",
-      "Num_Unit": "BRL",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Other impacts"
-    },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Rio Grande do Sul"
-      ],
-      "Start_Date": "29 April 2024",
-      "End_Date": "May 2024",
-      "Num": "R$245.4 million",
-      "Num_Unit": "BRL",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Other impacts"
-    }
-  ],
-  "Main_Event": "Flood",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Flood",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "29 April 2024",
-  "End_Date": "May 2024",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Brazil",
-    "Uruguay"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Brazil"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "R$19 billion",
+        "Num_Unit": "BRL",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Other impacts"
+      },
+      {
+        "Administrative_Areas": [
+          "Uruguay"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Other impacts"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Rio Grande do Sul"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "R$2.7 billion",
+        "Num_Unit": "BRL",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Other impacts"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Rio Grande do Sul"
+        ],
+        "Start_Date": "29 April 2024",
+        "End_Date": "May 2024",
+        "Num": "R$245.4 million",
+        "Num_Unit": "BRL",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Other impacts"
+      }
+    ],
+    "Main_Event": "Flood",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Flood",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "29 April 2024",
+    "End_Date": "May 2024",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Brazil",
+      "Uruguay"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

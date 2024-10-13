@@ -1,398 +1,400 @@
-{
-  "Event_ID": "ZHbUBTN",
-  "Sources": "https://en.wikipedia.org/wiki/Waldo_Canyon_Fire",
-  "Event_Names": "Waldo Canyon Fire",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "June 23, 2012",
-      "End_Date": "July 10, 2012",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Colorado Springs",
-        "Manitou Springs",
-        "Woodland Park",
-        "United States Air Force Academy"
-      ],
-      "Start_Date": "June 23, 2012",
-      "End_Date": "July 10, 2012",
-      "Num": "over 32,000",
-      "Annotation": "Waldo Canyon Fire"
+[
+  {
+    "Event_ID": "ZHbUBTN",
+    "Sources": "https://en.wikipedia.org/wiki/Waldo_Canyon_Fire",
+    "Event_Names": "Waldo Canyon Fire",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Colorado Springs"
-      ],
-      "Start_Date": "June 23, 2012",
-      "End_Date": "July 10, 2012",
-      "Num": "35,000",
-      "Annotation": "Intensification"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "June 23, 2012",
+        "End_Date": "July 10, 2012",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Colorado Springs",
+          "Manitou Springs",
+          "Woodland Park",
+          "United States Air Force Academy"
+        ],
+        "Start_Date": "June 23, 2012",
+        "End_Date": "July 10, 2012",
+        "Num": "over 32,000",
+        "Annotation": "Waldo Canyon Fire"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Colorado Springs"
+        ],
+        "Start_Date": "June 23, 2012",
+        "End_Date": "July 10, 2012",
+        "Num": "35,000",
+        "Annotation": "Intensification"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Colorado Springs"
+        ],
+        "Start_Date": "June 23, 2012",
+        "End_Date": "July 10, 2012",
+        "Num": "300 or more homes",
+        "Annotation": "Intensification"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Colorado Springs"
+        ],
+        "Start_Date": "June 23, 2012",
+        "End_Date": "July 10, 2012",
+        "Num": "50 families",
+        "Annotation": "Communities"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "346 homes",
+      "Total_Buildings_Damaged_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Colorado Springs"
-      ],
-      "Start_Date": "June 23, 2012",
-      "End_Date": "July 10, 2012",
-      "Num": "300 or more homes",
-      "Annotation": "Intensification"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "June 23, 2012",
+        "End_Date": "July 10, 2012",
+        "Num": "346 homes",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Colorado Springs"
+        ],
+        "Start_Date": "June 23, 2012",
+        "End_Date": "July 10, 2012",
+        "Num": "346 homes",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mountain Shadows",
+          "Oak Valley Ranch",
+          "Peregrine"
+        ],
+        "Start_Date": "June 26, 2012",
+        "End_Date": "June 26, 2012",
+        "Num": "346 homes",
+        "Annotation": "Intensification"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mountain Shadows",
+          "Peregrine",
+          "Rockrimmon"
+        ],
+        "Start_Date": "June 27, 2012",
+        "End_Date": "June 27, 2012",
+        "Num": "300 or more homes",
+        "Annotation": "Intensification"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mountain Shadows"
+        ],
+        "Start_Date": "June 2014",
+        "End_Date": "June 2014",
+        "Num": "347 houses",
+        "Annotation": "Communities"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mountain Shadows",
+          "Peregrine",
+          "Rockrimmon"
+        ],
+        "Start_Date": "January 2013",
+        "End_Date": "January 2013",
+        "Num": "nearly 50 families",
+        "Annotation": "Communities"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mountain Shadows",
+          "Peregrine",
+          "Rockrimmon"
+        ],
+        "Start_Date": "June 2013",
+        "End_Date": "June 2013",
+        "Num": "450 houses",
+        "Annotation": "Communities"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "2",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Colorado Springs"
-      ],
-      "Start_Date": "June 23, 2012",
-      "End_Date": "July 10, 2012",
-      "Num": "50 families",
-      "Annotation": "Communities"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "346 homes",
-    "Total_Buildings_Damaged_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "June 23, 2012",
-      "End_Date": "July 10, 2012",
-      "Num": "346 homes",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Colorado Springs"
-      ],
-      "Start_Date": "June 23, 2012",
-      "End_Date": "July 10, 2012",
-      "Num": "346 homes",
-      "Annotation": "Info_Box"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Damage"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Colorado Springs"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Intensification"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "over 32,000",
+      "Total_Displaced_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mountain Shadows",
-        "Oak Valley Ranch",
-        "Peregrine"
-      ],
-      "Start_Date": "June 26, 2012",
-      "End_Date": "June 26, 2012",
-      "Num": "346 homes",
-      "Annotation": "Intensification"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "June 23, 2012",
+        "End_Date": "July 10, 2012",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Colorado Springs",
+          "Manitou Springs",
+          "Woodland Park",
+          "small mountain communities along the southwestern side of U.S. Highway 24",
+          "United States Air Force Academy"
+        ],
+        "Start_Date": "June 23, 2012",
+        "End_Date": "July 10, 2012",
+        "Num": "over 32,000",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Colorado Springs",
+          "Woodland Park"
+        ],
+        "Start_Date": "June 24, 2012",
+        "End_Date": "NULL",
+        "Num": "eleven thousand",
+        "Annotation": "Beginning"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Colorado Springs"
+        ],
+        "Start_Date": "June 27, 2012",
+        "End_Date": "NULL",
+        "Num": "30,000 or more",
+        "Annotation": "Intensification"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Northwestern Colorado Springs"
+        ],
+        "Start_Date": "July 1, 2012",
+        "End_Date": "NULL",
+        "Num": "3,000",
+        "Annotation": "Intensification"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mountain Shadows",
-        "Peregrine",
-        "Rockrimmon"
-      ],
-      "Start_Date": "June 27, 2012",
-      "End_Date": "June 27, 2012",
-      "Num": "300 or more homes",
-      "Annotation": "Intensification"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "June 23, 2012",
+        "End_Date": "July 10, 2012",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Colorado Springs"
+        ],
+        "Start_Date": "June 23, 2012",
+        "End_Date": "July 10, 2012",
+        "Num": "346 homes destroyed",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mountain Shadows",
+          "Peregrine",
+          "Rockrimmon"
+        ],
+        "Start_Date": "June 23, 2012",
+        "End_Date": "July 10, 2012",
+        "Num": "nearly 50 families",
+        "Annotation": "Communities"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mountain Shadows"
-      ],
-      "Start_Date": "June 2014",
-      "End_Date": "June 2014",
-      "Num": "347 houses",
-      "Annotation": "Communities"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "June 23, 2012",
+        "End_Date": "July 10, 2012",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Colorado Springs"
+        ],
+        "Start_Date": "June 23, 2012",
+        "End_Date": "July 10, 2012",
+        "Num": "Six firefighters",
+        "Annotation": "Intensification"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Colorado Springs"
+        ],
+        "Start_Date": "June 23, 2012",
+        "End_Date": "July 10, 2012",
+        "Num": "52 firefighters",
+        "Annotation": "Intensification"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "more than US $453.7 million",
+      "Total_Insured_Damage_Unit": "USD",
+      "Total_Insured_Damage_Inflation_Adjusted": "No",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "header: Waldo Canyon Fire"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mountain Shadows",
-        "Peregrine",
-        "Rockrimmon"
-      ],
-      "Start_Date": "January 2013",
-      "End_Date": "January 2013",
-      "Num": "nearly 50 families",
-      "Annotation": "Communities"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "June 23, 2012",
+        "End_Date": "July 10, 2012",
+        "Num": "more than US $453.7 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "header: Waldo Canyon Fire"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Colorado Springs"
+        ],
+        "Start_Date": "June 23, 2012",
+        "End_Date": "July 10, 2012",
+        "Num": "more than US $453.7 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "header: Waldo Canyon Fire"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "more than US $453.7 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "header-content pair article header"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mountain Shadows",
-        "Peregrine",
-        "Rockrimmon"
-      ],
-      "Start_Date": "June 2013",
-      "End_Date": "June 2013",
-      "Num": "450 houses",
-      "Annotation": "Communities"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "2",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "Damage"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Colorado Springs"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "Intensification"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "over 32,000",
-    "Total_Displaced_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "June 23, 2012",
-      "End_Date": "July 10, 2012",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Colorado Springs",
-        "Manitou Springs",
-        "Woodland Park",
-        "small mountain communities along the southwestern side of U.S. Highway 24",
-        "United States Air Force Academy"
-      ],
-      "Start_Date": "June 23, 2012",
-      "End_Date": "July 10, 2012",
-      "Num": "over 32,000",
-      "Annotation": "Info_Box"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Colorado Springs",
-        "Woodland Park"
-      ],
-      "Start_Date": "June 24, 2012",
-      "End_Date": "NULL",
-      "Num": "eleven thousand",
-      "Annotation": "Beginning"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Colorado Springs"
-      ],
-      "Start_Date": "June 27, 2012",
-      "End_Date": "NULL",
-      "Num": "30,000 or more",
-      "Annotation": "Intensification"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Northwestern Colorado Springs"
-      ],
-      "Start_Date": "July 1, 2012",
-      "End_Date": "NULL",
-      "Num": "3,000",
-      "Annotation": "Intensification"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "June 23, 2012",
-      "End_Date": "July 10, 2012",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Colorado Springs"
-      ],
-      "Start_Date": "June 23, 2012",
-      "End_Date": "July 10, 2012",
-      "Num": "346 homes destroyed",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mountain Shadows",
-        "Peregrine",
-        "Rockrimmon"
-      ],
-      "Start_Date": "June 23, 2012",
-      "End_Date": "July 10, 2012",
-      "Num": "nearly 50 families",
-      "Annotation": "Communities"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "June 23, 2012",
-      "End_Date": "July 10, 2012",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Colorado Springs"
-      ],
-      "Start_Date": "June 23, 2012",
-      "End_Date": "July 10, 2012",
-      "Num": "Six firefighters",
-      "Annotation": "Intensification"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Colorado Springs"
-      ],
-      "Start_Date": "June 23, 2012",
-      "End_Date": "July 10, 2012",
-      "Num": "52 firefighters",
-      "Annotation": "Intensification"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "more than US $453.7 million",
-    "Total_Insured_Damage_Unit": "USD",
-    "Total_Insured_Damage_Inflation_Adjusted": "No",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "header: Waldo Canyon Fire"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "June 23, 2012",
-      "End_Date": "July 10, 2012",
-      "Num": "more than US $453.7 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "header: Waldo Canyon Fire"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Colorado Springs"
-      ],
-      "Start_Date": "June 23, 2012",
-      "End_Date": "July 10, 2012",
-      "Num": "more than US $453.7 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "header: Waldo Canyon Fire"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "more than US $453.7 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "header-content pair article header"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "June 23, 2012",
-      "End_Date": "July 10, 2012",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "header-content pair article header"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Colorado Springs"
-      ],
-      "Start_Date": "June 23, 2012",
-      "End_Date": "July 10, 2012",
-      "Num": "more than US $453.7 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "header-content pair article header"
-    }
-  ],
-  "Main_Event": "Wildfire",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wildfire",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "June 23, 2012",
-  "End_Date": "July 10, 2012",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "United States"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "June 23, 2012",
+        "End_Date": "July 10, 2012",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "header-content pair article header"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Colorado Springs"
+        ],
+        "Start_Date": "June 23, 2012",
+        "End_Date": "July 10, 2012",
+        "Num": "more than US $453.7 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "header-content pair article header"
+      }
+    ],
+    "Main_Event": "Wildfire",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wildfire",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "June 23, 2012",
+    "End_Date": "July 10, 2012",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "United States"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

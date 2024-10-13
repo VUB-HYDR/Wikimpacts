@@ -1,653 +1,655 @@
-{
-  "Event_ID": "KtJmLVG",
-  "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Kai-tak",
-  "Event_Names": "Tropical Storm Kai-tak",
-  "Total_Summary_Affected": {
-    "Total_Affected": "1,800,000 individuals",
-    "Total_Affected_Annotation": "Philippines"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Philippines"
-      ],
-      "Start_Date": "December 12, 2017",
-      "End_Date": "December 23, 2017",
-      "Num": "1,800,000 individuals",
-      "Annotation": "Philippines"
+[
+  {
+    "Event_ID": "KtJmLVG",
+    "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Kai-tak",
+    "Event_Names": "Tropical Storm Kai-tak",
+    "Total_Summary_Affected": {
+      "Total_Affected": "1,800,000 individuals",
+      "Total_Affected_Annotation": "Philippines"
     },
-    {
-      "Administrative_Areas": [
-        "Brunei"
-      ],
-      "Start_Date": "December 19, 2017",
-      "End_Date": "December 20, 2017",
-      "Num": "94 people",
-      "Annotation": "Brunei and Malaysia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Tacloban"
-      ],
-      "Start_Date": "December 12, 2017",
-      "End_Date": "December 23, 2017",
-      "Num": "80 of the 130 villages",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "December 12, 2017",
+        "End_Date": "December 23, 2017",
+        "Num": "1,800,000 individuals",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": [
+          "Brunei"
+        ],
+        "Start_Date": "December 19, 2017",
+        "End_Date": "December 20, 2017",
+        "Num": "94 people",
+        "Annotation": "Brunei and Malaysia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Tacloban"
+        ],
+        "Start_Date": "December 12, 2017",
+        "End_Date": "December 23, 2017",
+        "Num": "80 of the 130 villages",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Biliran"
+        ],
+        "Start_Date": "December 12, 2017",
+        "End_Date": "December 23, 2017",
+        "Num": "23 people",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Naval barangay of Lucso-on"
+        ],
+        "Start_Date": "December 12, 2017",
+        "End_Date": "December 23, 2017",
+        "Num": "27 people",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Mimaropa"
+        ],
+        "Start_Date": "December 12, 2017",
+        "End_Date": "December 23, 2017",
+        "Num": "2 people",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Leyte"
+        ],
+        "Start_Date": "December 12, 2017",
+        "End_Date": "December 23, 2017",
+        "Num": "3 people",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Ormoc"
+        ],
+        "Start_Date": "December 12, 2017",
+        "End_Date": "December 23, 2017",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Boracay"
+        ],
+        "Start_Date": "December 12, 2017",
+        "End_Date": "December 23, 2017",
+        "Num": "98%",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Cagayan de Oro",
+          "Lanao del Sur",
+          "Lanao del Norte",
+          "Zamboanga Peninsula"
+        ],
+        "Start_Date": "December 12, 2017",
+        "End_Date": "December 23, 2017",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Brunei",
+        "Locations": [
+          "Kampong Ayer"
+        ],
+        "Start_Date": "December 19, 2017",
+        "End_Date": "December 20, 2017",
+        "Num": "1 person",
+        "Annotation": "Brunei and Malaysia"
+      },
+      {
+        "Administrative_Area": "Brunei",
+        "Locations": [
+          "22 communities"
+        ],
+        "Start_Date": "December 19, 2017",
+        "End_Date": "December 20, 2017",
+        "Num": "137 houses",
+        "Annotation": "Brunei and Malaysia"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "35,286 homes",
+      "Total_Buildings_Damaged_Annotation": "Philippines"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Biliran"
-      ],
-      "Start_Date": "December 12, 2017",
-      "End_Date": "December 23, 2017",
-      "Num": "23 people",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "December 12, 2017",
+        "End_Date": "December 23, 2017",
+        "Num": "35,286 homes",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": [
+          "Brunei"
+        ],
+        "Start_Date": "December 19, 2017",
+        "End_Date": "December 20, 2017",
+        "Num": "137 houses",
+        "Annotation": "Brunei and Malaysia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Tacloban"
+        ],
+        "Start_Date": "December 12, 2017",
+        "End_Date": "December 23, 2017",
+        "Num": "80 of the 130 villages",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Biliran"
+        ],
+        "Start_Date": "December 12, 2017",
+        "End_Date": "December 23, 2017",
+        "Num": "2 of the main bridges",
+        "Annotation": "National"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Ormoc"
+        ],
+        "Start_Date": "December 12, 2017",
+        "End_Date": "December 23, 2017",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Brunei",
+        "Locations": [
+          "Kampong Ayer"
+        ],
+        "Start_Date": "December 19, 2017",
+        "End_Date": "December 20, 2017",
+        "Num": "137 houses",
+        "Annotation": "Brunei and Malaysia"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "83 total",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Naval barangay of Lucso-on"
-      ],
-      "Start_Date": "December 12, 2017",
-      "End_Date": "December 23, 2017",
-      "Num": "27 people",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "83 people",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": [
+          "Brunei"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1 person",
+        "Annotation": "Brunei and Malaysia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Biliran"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "23 people",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Naval barangay of Lucso-on"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "27 people",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Mimaropa"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2 people",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Leyte"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3 people",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Brunei",
+        "Locations": [
+          "Kampong Ayer"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1 person",
+        "Annotation": "Brunei and Malaysia"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Mimaropa"
-      ],
-      "Start_Date": "December 12, 2017",
-      "End_Date": "December 23, 2017",
-      "Num": "2 people",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 89,000",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": [
+          "Brunei"
+        ],
+        "Start_Date": "December 19, 2017",
+        "End_Date": "December 20, 2017",
+        "Num": "94",
+        "Annotation": "Brunei and Malaysia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "evacuation centers or schools"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "728 families (1,418 individuals)",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Tacloban"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "ports around the country"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "11,000",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Catbalogan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Boracay"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Ormoc"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Brunei",
+        "Locations": [
+          "Kampong Ayer"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Brunei and Malaysia"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "1,800,000 individuals",
+      "Total_Homeless_Annotation": "Philippines"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Leyte"
-      ],
-      "Start_Date": "December 12, 2017",
-      "End_Date": "December 23, 2017",
-      "Num": "3 people",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,800,000 individuals",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": [
+          "Brunei"
+        ],
+        "Start_Date": "December 19, 2017",
+        "End_Date": "December 20, 2017",
+        "Num": "94 people",
+        "Annotation": "Brunei and Malaysia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Tacloban"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "80 of the 130 villages were flooded",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Biliran"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "23 people",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Naval barangay of Lucso-on"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "27 people",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Leyte"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3 people",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Ormoc"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Boracay"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "98% flooded",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Brunei",
+        "Locations": [
+          "Kampong Ayer"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1 person",
+        "Annotation": "Brunei and Malaysia"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "78",
+      "Total_Injuries_Annotation": "Philippines"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Ormoc"
-      ],
-      "Start_Date": "December 12, 2017",
-      "End_Date": "December 23, 2017",
-      "Num": "NULL",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "78",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Mimaropa"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "78",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Boracay"
-      ],
-      "Start_Date": "December 12, 2017",
-      "End_Date": "December 23, 2017",
-      "Num": "98%",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "December 12, 2017",
+        "End_Date": "December 23, 2017",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": [
+          "Brunei"
+        ],
+        "Start_Date": "December 19, 2017",
+        "End_Date": "December 20, 2017",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Brunei and Malaysia"
+      },
+      {
+        "Administrative_Areas": [
+          "Malaysia"
+        ],
+        "Start_Date": "December 19, 2017",
+        "End_Date": "December 23, 2017",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Brunei and Malaysia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Tacloban"
+        ],
+        "Start_Date": "December 12, 2017",
+        "End_Date": "December 23, 2017",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Biliran"
+        ],
+        "Start_Date": "December 12, 2017",
+        "End_Date": "December 23, 2017",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Ormoc"
+        ],
+        "Start_Date": "December 12, 2017",
+        "End_Date": "December 23, 2017",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Brunei",
+        "Locations": [
+          "Kampong Ayer"
+        ],
+        "Start_Date": "December 19, 2017",
+        "End_Date": "December 20, 2017",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Brunei and Malaysia"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "US$74.3 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Cagayan de Oro",
-        "Lanao del Sur",
-        "Lanao del Norte",
-        "Zamboanga Peninsula"
-      ],
-      "Start_Date": "December 12, 2017",
-      "End_Date": "December 23, 2017",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Brunei",
-      "Locations": [
-        "Kampong Ayer"
-      ],
-      "Start_Date": "December 19, 2017",
-      "End_Date": "December 20, 2017",
-      "Num": "1 person",
-      "Annotation": "Brunei and Malaysia"
-    },
-    {
-      "Administrative_Area": "Brunei",
-      "Locations": [
-        "22 communities"
-      ],
-      "Start_Date": "December 19, 2017",
-      "End_Date": "December 20, 2017",
-      "Num": "137 houses",
-      "Annotation": "Brunei and Malaysia"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "35,286 homes",
-    "Total_Buildings_Damaged_Annotation": "Philippines"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "Philippines"
-      ],
-      "Start_Date": "December 12, 2017",
-      "End_Date": "December 23, 2017",
-      "Num": "35,286 homes",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": [
-        "Brunei"
-      ],
-      "Start_Date": "December 19, 2017",
-      "End_Date": "December 20, 2017",
-      "Num": "137 houses",
-      "Annotation": "Brunei and Malaysia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Tacloban"
-      ],
-      "Start_Date": "December 12, 2017",
-      "End_Date": "December 23, 2017",
-      "Num": "80 of the 130 villages",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Biliran"
-      ],
-      "Start_Date": "December 12, 2017",
-      "End_Date": "December 23, 2017",
-      "Num": "2 of the main bridges",
-      "Annotation": "National"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Ormoc"
-      ],
-      "Start_Date": "December 12, 2017",
-      "End_Date": "December 23, 2017",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Brunei",
-      "Locations": [
-        "Kampong Ayer"
-      ],
-      "Start_Date": "December 19, 2017",
-      "End_Date": "December 20, 2017",
-      "Num": "137 houses",
-      "Annotation": "Brunei and Malaysia"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "83 total",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "Philippines"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "83 people",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": [
-        "Brunei"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1 person",
-      "Annotation": "Brunei and Malaysia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Biliran"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "23 people",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Naval barangay of Lucso-on"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "27 people",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Mimaropa"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2 people",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Leyte"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3 people",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Brunei",
-      "Locations": [
-        "Kampong Ayer"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1 person",
-      "Annotation": "Brunei and Malaysia"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Philippines"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "at least 89,000",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": [
-        "Brunei"
-      ],
-      "Start_Date": "December 19, 2017",
-      "End_Date": "December 20, 2017",
-      "Num": "94",
-      "Annotation": "Brunei and Malaysia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "evacuation centers or schools"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "728 families (1,418 individuals)",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Tacloban"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "ports around the country"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "11,000",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Catbalogan"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Boracay"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Ormoc"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Brunei",
-      "Locations": [
-        "Kampong Ayer"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Brunei and Malaysia"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "1,800,000 individuals",
-    "Total_Homeless_Annotation": "Philippines"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "Philippines"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1,800,000 individuals",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": [
-        "Brunei"
-      ],
-      "Start_Date": "December 19, 2017",
-      "End_Date": "December 20, 2017",
-      "Num": "94 people",
-      "Annotation": "Brunei and Malaysia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Tacloban"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "80 of the 130 villages were flooded",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Biliran"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "23 people",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Naval barangay of Lucso-on"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "27 people",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Leyte"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3 people",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Ormoc"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Boracay"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "98% flooded",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Brunei",
-      "Locations": [
-        "Kampong Ayer"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1 person",
-      "Annotation": "Brunei and Malaysia"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "78",
-    "Total_Injuries_Annotation": "Philippines"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "78",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Mimaropa"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "78",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Philippines"
-      ],
-      "Start_Date": "December 12, 2017",
-      "End_Date": "December 23, 2017",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": [
-        "Brunei"
-      ],
-      "Start_Date": "December 19, 2017",
-      "End_Date": "December 20, 2017",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Brunei and Malaysia"
-    },
-    {
-      "Administrative_Areas": [
-        "Malaysia"
-      ],
-      "Start_Date": "December 19, 2017",
-      "End_Date": "December 23, 2017",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Brunei and Malaysia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Tacloban"
-      ],
-      "Start_Date": "December 12, 2017",
-      "End_Date": "December 23, 2017",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Biliran"
-      ],
-      "Start_Date": "December 12, 2017",
-      "End_Date": "December 23, 2017",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Ormoc"
-      ],
-      "Start_Date": "December 12, 2017",
-      "End_Date": "December 23, 2017",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Brunei",
-      "Locations": [
-        "Kampong Ayer"
-      ],
-      "Start_Date": "December 19, 2017",
-      "End_Date": "December 20, 2017",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Brunei and Malaysia"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "US$74.3 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Php3.747 billion",
-      "Num_Unit": "PHP",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Tacloban"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Php543,000",
-      "Num_Unit": "PHP",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Tacloban"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Php400 million",
-      "Num_Unit": "PHP",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Philippines",
-  "Start_Date": "December 13, 2017",
-  "End_Date": "December 23, 2017",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Caroline Islands",
-    "Philippines",
-    "Malaysia",
-    "Brunei"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Php3.747 billion",
+        "Num_Unit": "PHP",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Tacloban"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Php543,000",
+        "Num_Unit": "PHP",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Tacloban"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Php400 million",
+        "Num_Unit": "PHP",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Philippines",
+    "Start_Date": "December 13, 2017",
+    "End_Date": "December 23, 2017",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Caroline Islands",
+      "Philippines",
+      "Malaysia",
+      "Brunei"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

@@ -1,827 +1,829 @@
-{
-  "Event_ID": "BC9Wcls",
-  "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Fay_(2020)",
-  "Event_Names": "Tropical Storm Fay (2020)",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "July 9, 2020",
-      "End_Date": "July 12, 2020",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Augusta, Georgia"
-      ],
-      "Start_Date": "July 6, 2020",
-      "End_Date": "July 6, 2020",
-      "Num": "NULL",
-      "Annotation": "Southeastern United States"
+[
+  {
+    "Event_ID": "BC9Wcls",
+    "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Fay_(2020)",
+    "Event_Names": "Tropical Storm Fay (2020)",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Ringgold, Georgia"
-      ],
-      "Start_Date": "July 6, 2020",
-      "End_Date": "July 6, 2020",
-      "Num": "NULL",
-      "Annotation": "Southeastern United States"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "July 9, 2020",
+        "End_Date": "July 12, 2020",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Augusta, Georgia"
+        ],
+        "Start_Date": "July 6, 2020",
+        "End_Date": "July 6, 2020",
+        "Num": "NULL",
+        "Annotation": "Southeastern United States"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Ringgold, Georgia"
+        ],
+        "Start_Date": "July 6, 2020",
+        "End_Date": "July 6, 2020",
+        "Num": "NULL",
+        "Annotation": "Southeastern United States"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hunting Island State Park, South Carolina"
+        ],
+        "Start_Date": "July 6, 2020",
+        "End_Date": "July 6, 2020",
+        "Num": "NULL",
+        "Annotation": "Southeastern United States"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Long Neck, Delaware"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "Delaware and Pennsylvania"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Nassau, Delaware"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "Delaware and Pennsylvania"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Sussex County, Delaware"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "Delaware and Pennsylvania"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Bethany Beach, Delaware"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "Delaware and Pennsylvania"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New Castle County, Delaware"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "Delaware and Pennsylvania"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Wynnewood, Pennsylvania"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "Delaware and Pennsylvania"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Philadelphia, Pennsylvania"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "Delaware and Pennsylvania"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Wildwood Crest, New Jersey"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Wildwood, New Jersey"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Wildwood, New Jersey"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Sea Isle City, New Jersey"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Ocean City, New Jersey"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New Jersey Turnpike, New Jersey"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Interstates 287 and 295, New Jersey"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "U.S. Routes 9, 30, 202, 322, New Jersey"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Strathmere, New Jersey"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Monmouth County, New Jersey"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Stone Harbor, New Jersey"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Avalon, New Jersey"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Rio Grande, New Jersey"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Cape May County, New Jersey"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New Jersey Routes 10, 35, 45, 66, and 77, New Jersey"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Margate City, New Jersey"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Gloucester City, New Jersey"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hoboken, New Jersey"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Newark, New Jersey"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "18",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New York City, New York"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Central Park, New York"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Midtown Manhattan, New York"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Brooklyn, New York"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Staten Island, New York"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "The Bronx, New York"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Queens, New York"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 10, 2020",
+        "Num": "NULL",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Atlantic City, New Jersey"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 11, 2020",
+        "Num": "1",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Eastern New Jersey"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 11, 2020",
+        "Num": "1",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Raritan Bay, New Jersey"
+        ],
+        "Start_Date": "July 11, 2020",
+        "End_Date": "July 11, 2020",
+        "Num": "1",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Ocean City, New Jersey"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 11, 2020",
+        "Num": "1",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Long Beach, New York"
+        ],
+        "Start_Date": "July 10, 2020",
+        "End_Date": "July 11, 2020",
+        "Num": "1",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Baker Lake, Maine"
+        ],
+        "Start_Date": "July 11, 2020",
+        "End_Date": "July 11, 2020",
+        "Num": "NULL",
+        "Annotation": "New England"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hiram, Maine"
+        ],
+        "Start_Date": "July 11, 2020",
+        "End_Date": "July 11, 2020",
+        "Num": "NULL",
+        "Annotation": "New England"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Naples, Maine"
+        ],
+        "Start_Date": "July 11, 2020",
+        "End_Date": "July 11, 2020",
+        "Num": "NULL",
+        "Annotation": "New England"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Norwalk, Connecticut"
+        ],
+        "Start_Date": "July 11, 2020",
+        "End_Date": "July 11, 2020",
+        "Num": "NULL",
+        "Annotation": "New England"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Bridgeport, Connecticut"
+        ],
+        "Start_Date": "July 11, 2020",
+        "End_Date": "July 11, 2020",
+        "Num": "NULL",
+        "Annotation": "New England"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Rhode Island"
+        ],
+        "Start_Date": "July 12, 2020",
+        "End_Date": "July 12, 2020",
+        "Num": "1",
+        "Annotation": "New England"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Hunting Island State Park, South Carolina"
-      ],
-      "Start_Date": "July 6, 2020",
-      "End_Date": "July 6, 2020",
-      "Num": "NULL",
-      "Annotation": "Southeastern United States"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "July 9, 2020",
+        "End_Date": "July 12, 2020",
+        "Num": "NULL",
+        "Annotation": "Northeastern United States"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Ringgold"
+        ],
+        "Start_Date": "July 6, 2020",
+        "End_Date": "July 6, 2020",
+        "Num": "NULL",
+        "Annotation": "Southeastern United States"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hunting Island State Park"
+        ],
+        "Start_Date": "July 6, 2020",
+        "End_Date": "July 6, 2020",
+        "Num": "over 100 sea turtle nests",
+        "Annotation": "Southeastern United States"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Baker Lake",
+          "Hiram",
+          "Naples"
+        ],
+        "Start_Date": "July 11, 2020",
+        "End_Date": "July 11, 2020",
+        "Num": "NULL",
+        "Annotation": "New England"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "6 total",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Long Neck, Delaware"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "Delaware and Pennsylvania"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Northeastern United States"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Atlantic City, New Jersey",
+          "Eastern New Jersey",
+          "Atlantic City",
+          "Raritan Bay",
+          "Ocean City, New Jersey",
+          "Long Beach, New York"
+        ],
+        "Start_Date": "July 11, 2020",
+        "End_Date": "July 18, 2020",
+        "Num": "1",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Atlantic City, New Jersey",
+          "Eastern New Jersey",
+          "Atlantic City",
+          "Raritan Bay",
+          "Ocean City, New Jersey",
+          "Long Beach, New York"
+        ],
+        "Start_Date": "July 11, 2020",
+        "End_Date": "July 18, 2020",
+        "Num": "1",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Atlantic City, New Jersey",
+          "Eastern New Jersey",
+          "Atlantic City",
+          "Raritan Bay",
+          "Ocean City, New Jersey",
+          "Long Beach, New York"
+        ],
+        "Start_Date": "July 11, 2020",
+        "End_Date": "July 18, 2020",
+        "Num": "1",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Atlantic City, New Jersey",
+          "Eastern New Jersey",
+          "Atlantic City",
+          "Raritan Bay",
+          "Ocean City, New Jersey",
+          "Long Beach, New York"
+        ],
+        "Start_Date": "July 11, 2020",
+        "End_Date": "July 18, 2020",
+        "Num": "1",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Atlantic City, New Jersey",
+          "Eastern New Jersey",
+          "Atlantic City",
+          "Raritan Bay",
+          "Ocean City, New Jersey",
+          "Long Beach, New York"
+        ],
+        "Start_Date": "July 11, 2020",
+        "End_Date": "July 18, 2020",
+        "Num": "1",
+        "Annotation": "New Jersey and New York State"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Atlantic City, New Jersey",
+          "Eastern New Jersey",
+          "Atlantic City",
+          "Raritan Bay",
+          "Ocean City, New Jersey",
+          "Long Beach, New York"
+        ],
+        "Start_Date": "July 11, 2020",
+        "End_Date": "July 18, 2020",
+        "Num": "1",
+        "Annotation": "New Jersey and New York State"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Nassau, Delaware"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "Delaware and Pennsylvania"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Newark, New Jersey"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "18",
+        "Annotation": "New Jersey and New York State"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Sussex County, Delaware"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "Delaware and Pennsylvania"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Bethany Beach, Delaware"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "Delaware and Pennsylvania"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Atlantic City, New Jersey",
+          "Raritan Bay, New Jersey"
+        ],
+        "Start_Date": "July 11, 2020",
+        "End_Date": "July 11, 2020",
+        "Num": "2",
+        "Annotation": "New Jersey and New York State"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "New Castle County, Delaware"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "Delaware and Pennsylvania"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "July 9, 2020",
+        "End_Date": "July 12, 2020",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Georgia",
+          "South Carolina",
+          "Pennsylvania",
+          "New Jersey",
+          "New York",
+          "Delaware"
+        ],
+        "Start_Date": "July 9, 2020",
+        "End_Date": "July 12, 2020",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "US$220 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Wynnewood, Pennsylvania"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "Delaware and Pennsylvania"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Philadelphia, Pennsylvania"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "Delaware and Pennsylvania"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Wildwood Crest, New Jersey"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Wildwood, New Jersey"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "North Wildwood, New Jersey"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Sea Isle City, New Jersey"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Ocean City, New Jersey"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "New Jersey Turnpike, New Jersey"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Interstates 287 and 295, New Jersey"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "U.S. Routes 9, 30, 202, 322, New Jersey"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Strathmere, New Jersey"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Monmouth County, New Jersey"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Stone Harbor, New Jersey"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Avalon, New Jersey"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Rio Grande, New Jersey"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Cape May County, New Jersey"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "New Jersey Routes 10, 35, 45, 66, and 77, New Jersey"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Margate City, New Jersey"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Gloucester City, New Jersey"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Hoboken, New Jersey"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Newark, New Jersey"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "18",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "New York City, New York"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Central Park, New York"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Midtown Manhattan, New York"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Brooklyn, New York"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Staten Island, New York"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "The Bronx, New York"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Queens, New York"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 10, 2020",
-      "Num": "NULL",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Atlantic City, New Jersey"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 11, 2020",
-      "Num": "1",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Eastern New Jersey"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 11, 2020",
-      "Num": "1",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Raritan Bay, New Jersey"
-      ],
-      "Start_Date": "July 11, 2020",
-      "End_Date": "July 11, 2020",
-      "Num": "1",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Ocean City, New Jersey"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 11, 2020",
-      "Num": "1",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Long Beach, New York"
-      ],
-      "Start_Date": "July 10, 2020",
-      "End_Date": "July 11, 2020",
-      "Num": "1",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Baker Lake, Maine"
-      ],
-      "Start_Date": "July 11, 2020",
-      "End_Date": "July 11, 2020",
-      "Num": "NULL",
-      "Annotation": "New England"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Hiram, Maine"
-      ],
-      "Start_Date": "July 11, 2020",
-      "End_Date": "July 11, 2020",
-      "Num": "NULL",
-      "Annotation": "New England"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Naples, Maine"
-      ],
-      "Start_Date": "July 11, 2020",
-      "End_Date": "July 11, 2020",
-      "Num": "NULL",
-      "Annotation": "New England"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Norwalk, Connecticut"
-      ],
-      "Start_Date": "July 11, 2020",
-      "End_Date": "July 11, 2020",
-      "Num": "NULL",
-      "Annotation": "New England"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Bridgeport, Connecticut"
-      ],
-      "Start_Date": "July 11, 2020",
-      "End_Date": "July 11, 2020",
-      "Num": "NULL",
-      "Annotation": "New England"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Rhode Island"
-      ],
-      "Start_Date": "July 12, 2020",
-      "End_Date": "July 12, 2020",
-      "Num": "1",
-      "Annotation": "New England"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "July 9, 2020",
-      "End_Date": "July 12, 2020",
-      "Num": "NULL",
-      "Annotation": "Northeastern United States"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Ringgold"
-      ],
-      "Start_Date": "July 6, 2020",
-      "End_Date": "July 6, 2020",
-      "Num": "NULL",
-      "Annotation": "Southeastern United States"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Hunting Island State Park"
-      ],
-      "Start_Date": "July 6, 2020",
-      "End_Date": "July 6, 2020",
-      "Num": "over 100 sea turtle nests",
-      "Annotation": "Southeastern United States"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Baker Lake",
-        "Hiram",
-        "Naples"
-      ],
-      "Start_Date": "July 11, 2020",
-      "End_Date": "July 11, 2020",
-      "Num": "NULL",
-      "Annotation": "New England"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "6 total",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Northeastern United States"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Atlantic City, New Jersey",
-        "Eastern New Jersey",
-        "Atlantic City",
-        "Raritan Bay",
-        "Ocean City, New Jersey",
-        "Long Beach, New York"
-      ],
-      "Start_Date": "July 11, 2020",
-      "End_Date": "July 18, 2020",
-      "Num": "1",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Atlantic City, New Jersey",
-        "Eastern New Jersey",
-        "Atlantic City",
-        "Raritan Bay",
-        "Ocean City, New Jersey",
-        "Long Beach, New York"
-      ],
-      "Start_Date": "July 11, 2020",
-      "End_Date": "July 18, 2020",
-      "Num": "1",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Atlantic City, New Jersey",
-        "Eastern New Jersey",
-        "Atlantic City",
-        "Raritan Bay",
-        "Ocean City, New Jersey",
-        "Long Beach, New York"
-      ],
-      "Start_Date": "July 11, 2020",
-      "End_Date": "July 18, 2020",
-      "Num": "1",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Atlantic City, New Jersey",
-        "Eastern New Jersey",
-        "Atlantic City",
-        "Raritan Bay",
-        "Ocean City, New Jersey",
-        "Long Beach, New York"
-      ],
-      "Start_Date": "July 11, 2020",
-      "End_Date": "July 18, 2020",
-      "Num": "1",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Atlantic City, New Jersey",
-        "Eastern New Jersey",
-        "Atlantic City",
-        "Raritan Bay",
-        "Ocean City, New Jersey",
-        "Long Beach, New York"
-      ],
-      "Start_Date": "July 11, 2020",
-      "End_Date": "July 18, 2020",
-      "Num": "1",
-      "Annotation": "New Jersey and New York State"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Atlantic City, New Jersey",
-        "Eastern New Jersey",
-        "Atlantic City",
-        "Raritan Bay",
-        "Ocean City, New Jersey",
-        "Long Beach, New York"
-      ],
-      "Start_Date": "July 11, 2020",
-      "End_Date": "July 18, 2020",
-      "Num": "1",
-      "Annotation": "New Jersey and New York State"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Newark, New Jersey"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "18",
-      "Annotation": "New Jersey and New York State"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Atlantic City, New Jersey",
-        "Raritan Bay, New Jersey"
-      ],
-      "Start_Date": "July 11, 2020",
-      "End_Date": "July 11, 2020",
-      "Num": "2",
-      "Annotation": "New Jersey and New York State"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "July 9, 2020",
-      "End_Date": "July 12, 2020",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Georgia",
-        "South Carolina",
-        "Pennsylvania",
-        "New Jersey",
-        "New York",
-        "Delaware"
-      ],
-      "Start_Date": "July 9, 2020",
-      "End_Date": "July 12, 2020",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "US$220 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "July 9, 2020",
-      "End_Date": "July 12, 2020",
-      "Num": "US$220 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Info_Box"
-    },
-    {
-      "Administrative_Areas": [
-        "Northeastern United States"
-      ],
-      "Start_Date": "July 9, 2020",
-      "End_Date": "July 12, 2020",
-      "Num": "at least US$350 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Northeastern United States"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Georgia"
-      ],
-      "Start_Date": "July 6, 2020",
-      "End_Date": "July 6, 2020",
-      "Num": "US$4,000",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Southeastern United States"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Northeastern United States|Delaware and Pennsylvania|New Jersey and New York State",
-  "Start_Date": "July 9, 2020",
-  "End_Date": "July 12, 2020",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "United States",
-    "Canada"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "July 9, 2020",
+        "End_Date": "July 12, 2020",
+        "Num": "US$220 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Areas": [
+          "Northeastern United States"
+        ],
+        "Start_Date": "July 9, 2020",
+        "End_Date": "July 12, 2020",
+        "Num": "at least US$350 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Northeastern United States"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Georgia"
+        ],
+        "Start_Date": "July 6, 2020",
+        "End_Date": "July 6, 2020",
+        "Num": "US$4,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Southeastern United States"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Northeastern United States|Delaware and Pennsylvania|New Jersey and New York State",
+    "Start_Date": "July 9, 2020",
+    "End_Date": "July 12, 2020",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "United States",
+      "Canada"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

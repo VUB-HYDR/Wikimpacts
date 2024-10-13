@@ -1,374 +1,376 @@
-{
-  "Event_ID": "97IW6ou",
-  "Sources": "https://en.wikipedia.org/wiki/Typhoon_Fung-wong_(2008)",
-  "Event_Names": "Typhoon Fung-wong (2008)",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "22,079 persons",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "93 barangays in three provinces"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "22,079 persons",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Mainland China",
-      "Start_Date": "July 28, 2008",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mainland China"
+[
+  {
+    "Event_ID": "97IW6ou",
+    "Sources": "https://en.wikipedia.org/wiki/Typhoon_Fung-wong_(2008)",
+    "Event_Names": "Typhoon Fung-wong (2008)",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Taiwan",
-      "Start_Date": "July 27, 2008",
-      "End_Date": "July 28, 2008",
-      "Num": "NULL",
-      "Annotation": "Taiwan"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "22,079 persons",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "93 barangays in three provinces"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "22,079 persons",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "July 28, 2008",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Mainland China",
-      "Locations": [
-        "Fujian Province"
-      ],
-      "Start_Date": "July 28, 2008",
-      "End_Date": "NULL",
-      "Num": "8,667 homes destroyed and 38,300 others damaged",
-      "Annotation": "Mainland China"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Mainland China",
+        "Start_Date": "July 28, 2008",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mainland China"
+      },
+      {
+        "Administrative_Areas": "Taiwan",
+        "Start_Date": "July 27, 2008",
+        "End_Date": "July 28, 2008",
+        "Num": "NULL",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "July 28, 2008",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Mainland China",
+        "Locations": [
+          "Fujian Province"
+        ],
+        "Start_Date": "July 28, 2008",
+        "End_Date": "NULL",
+        "Num": "8,667 homes destroyed and 38,300 others damaged",
+        "Annotation": "Mainland China"
+      },
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "Hualien County",
+          "Taitung County",
+          "Changhua County",
+          "Taiwan Strait",
+          "Ilan County",
+          "Hsinchu County",
+          "Taichung County",
+          "Hualien City",
+          "Taipei City"
+        ],
+        "Start_Date": "July 27, 2008",
+        "End_Date": "July 28, 2008",
+        "Num": "NULL",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Luzon",
+          "Metro Manila",
+          "Ilocos",
+          "Cordillera Administrative Region"
+        ],
+        "Start_Date": "July 28, 2008",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "23",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "Hualien County",
-        "Taitung County",
-        "Changhua County",
-        "Taiwan Strait",
-        "Ilan County",
-        "Hsinchu County",
-        "Taichung County",
-        "Hualien City",
-        "Taipei City"
-      ],
-      "Start_Date": "July 27, 2008",
-      "End_Date": "July 28, 2008",
-      "Num": "NULL",
-      "Annotation": "Taiwan"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "July 28, 2008",
+        "End_Date": "NULL",
+        "Num": "7",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "July 28, 2008",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Mainland China"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Northern Luzon",
+          "Ilocos",
+          "Cordillera Administrative Region"
+        ],
+        "Start_Date": "July 28, 2008",
+        "End_Date": "NULL",
+        "Num": "4",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "7",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Fujian Province"
+        ],
+        "Start_Date": "July 28, 2008",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Mainland China"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Luzon",
-        "Metro Manila",
-        "Ilocos",
-        "Cordillera Administrative Region"
-      ],
-      "Start_Date": "July 28, 2008",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "23",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "July 28, 2008",
-      "End_Date": "NULL",
-      "Num": "7",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "751,600",
+        "Annotation": "Mainland China"
+      },
+      {
+        "Administrative_Areas": "Taiwan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,236",
+        "Annotation": "Taiwan"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Fujian Province",
+          "Zhejiang Province",
+          "Guangdong Province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "751,600",
+        "Annotation": "Mainland China"
+      },
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "Numerous locations"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,236",
+        "Annotation": "Taiwan"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "China",
-      "Start_Date": "July 28, 2008",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Mainland China"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Northern Luzon",
-        "Ilocos",
-        "Cordillera Administrative Region"
-      ],
-      "Start_Date": "July 28, 2008",
-      "End_Date": "NULL",
-      "Num": "4",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Mainland China",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mainland China"
+      },
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Mainland China",
+        "Locations": [
+          "Fujian Province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8,667 homes destroyed and 38,300 others damaged",
+        "Annotation": "Mainland China"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "7",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "July 28, 2008",
+        "End_Date": "NULL",
+        "Num": "two injured",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Mainland China",
+        "Start_Date": "July 28, 2008",
+        "End_Date": "NULL",
+        "Num": "six injured",
+        "Annotation": "Mainland China"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Northern Luzon (mostly in Ilocos and Cordillera Administrative Region)"
+        ],
+        "Start_Date": "July 28, 2008",
+        "End_Date": "NULL",
+        "Num": "two injured",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Mainland China",
+        "Locations": [
+          "Fujian Province"
+        ],
+        "Start_Date": "July 28, 2008",
+        "End_Date": "NULL",
+        "Num": "six injured",
+        "Annotation": "Mainland China"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Fujian Province"
-      ],
-      "Start_Date": "July 28, 2008",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Mainland China"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": "China",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "751,600",
-      "Annotation": "Mainland China"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "541 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": "Taiwan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1,236",
-      "Annotation": "Taiwan"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Fujian Province",
-        "Zhejiang Province",
-        "Guangdong Province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "751,600",
-      "Annotation": "Mainland China"
-    },
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "Numerous locations"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1,236",
-      "Annotation": "Taiwan"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Mainland China",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mainland China"
-    },
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Mainland China",
-      "Locations": [
-        "Fujian Province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "8,667 homes destroyed and 38,300 others damaged",
-      "Annotation": "Mainland China"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "July 28, 2008",
-      "End_Date": "NULL",
-      "Num": "two injured",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": "Mainland China",
-      "Start_Date": "July 28, 2008",
-      "End_Date": "NULL",
-      "Num": "six injured",
-      "Annotation": "Mainland China"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Northern Luzon (mostly in Ilocos and Cordillera Administrative Region)"
-      ],
-      "Start_Date": "July 28, 2008",
-      "End_Date": "NULL",
-      "Num": "two injured",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Mainland China",
-      "Locations": [
-        "Fujian Province"
-      ],
-      "Start_Date": "July 28, 2008",
-      "End_Date": "NULL",
-      "Num": "six injured",
-      "Annotation": "Mainland China"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "NULL",
-      "Locations": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "541 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": "China",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3.37 billion",
-      "Num_Unit": "CNY",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Mainland China"
-    },
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1.9 million",
-      "Num_Unit": "PHP",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Fujian Province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "503 million",
-      "Num_Unit": "CNY",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Mainland China"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Anhui Province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "5.1 million",
-      "Num_Unit": "CNY",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Taiwan|Mainland China|Philippines",
-  "Start_Date": "July 23, 2008",
-  "End_Date": "July 30, 2008",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Philippines",
-    "Taiwan",
-    "China"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3.37 billion",
+        "Num_Unit": "CNY",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Mainland China"
+      },
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1.9 million",
+        "Num_Unit": "PHP",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Fujian Province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "503 million",
+        "Num_Unit": "CNY",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Mainland China"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Anhui Province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5.1 million",
+        "Num_Unit": "CNY",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Taiwan|Mainland China|Philippines",
+    "Start_Date": "July 23, 2008",
+    "End_Date": "July 30, 2008",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Philippines",
+      "Taiwan",
+      "China"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

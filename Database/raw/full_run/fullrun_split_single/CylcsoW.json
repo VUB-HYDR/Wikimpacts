@@ -1,623 +1,625 @@
-{
-  "Event_ID": "CylcsoW",
-  "Sources": "https://en.wikipedia.org/wiki/Hurricane_Lee_(2023)",
-  "Event_Names": "Hurricane Lee (2023)",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": "Bermuda",
-      "Start_Date": "September 12, 2023",
-      "End_Date": "September 16, 2023",
-      "Num": "11,342 people lost power",
-      "Annotation": "Bermuda"
+[
+  {
+    "Event_ID": "CylcsoW",
+    "Sources": "https://en.wikipedia.org/wiki/Hurricane_Lee_(2023)",
+    "Event_Names": "Hurricane Lee (2023)",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "September 13, 2023",
-      "End_Date": "September 16, 2023",
-      "Num": "NULL",
-      "Annotation": "United States"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Bermuda",
+        "Start_Date": "September 12, 2023",
+        "End_Date": "September 16, 2023",
+        "Num": "11,342 people lost power",
+        "Annotation": "Bermuda"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "September 13, 2023",
+        "End_Date": "September 16, 2023",
+        "Num": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Areas": "Canada",
+        "Start_Date": "September 15, 2023",
+        "End_Date": "September 17, 2023",
+        "Num": "140,000 in Nova Scotia, 37,000 in New Brunswick",
+        "Annotation": "Canada"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Bermuda",
+        "Locations": [
+          "Devonshire",
+          "St. George's"
+        ],
+        "Start_Date": "September 12, 2023",
+        "End_Date": "September 16, 2023",
+        "Num": "11,342 people lost power",
+        "Annotation": "Bermuda"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Fernandina Beach, Florida",
+          "Searsport, Maine",
+          "Manasquan Inlet, New Jersey"
+        ],
+        "Start_Date": "September 13, 2023",
+        "End_Date": "September 16, 2023",
+        "Num": "3 fatalities",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Maine"
+        ],
+        "Start_Date": "September 16, 2023",
+        "End_Date": "September 16, 2023",
+        "Num": "92,000 power outages",
+        "Annotation": "Maine"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Nova Scotia",
+          "New Brunswick"
+        ],
+        "Start_Date": "September 15, 2023",
+        "End_Date": "September 17, 2023",
+        "Num": "140,000 in Nova Scotia, 37,000 in New Brunswick",
+        "Annotation": "Canada"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Canada",
-      "Start_Date": "September 15, 2023",
-      "End_Date": "September 17, 2023",
-      "Num": "140,000 in Nova Scotia, 37,000 in New Brunswick",
-      "Annotation": "Canada"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Bermuda",
-      "Locations": [
-        "Devonshire",
-        "St. George's"
-      ],
-      "Start_Date": "September 12, 2023",
-      "End_Date": "September 16, 2023",
-      "Num": "11,342 people lost power",
-      "Annotation": "Bermuda"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Bermuda",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Bermuda"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Areas": "Canada",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Canada"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Bermuda",
+        "Locations": [
+          "Devonshire",
+          "St. George's",
+          "Royal Naval Dockyard"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Bermuda"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New York",
+          "Massachusetts",
+          "Rhode Island",
+          "New Hampshire",
+          "Maine"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "New Brunswick",
+          "Nova Scotia",
+          "Prince Edward Island"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Canada"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "4",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Fernandina Beach, Florida",
-        "Searsport, Maine",
-        "Manasquan Inlet, New Jersey"
-      ],
-      "Start_Date": "September 13, 2023",
-      "End_Date": "September 16, 2023",
-      "Num": "3 fatalities",
-      "Annotation": "United States"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Maine"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Fernandina Beach, Florida",
+          "Searsport, Maine",
+          "Manasquan Inlet, New Jersey"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Searsport, Maine"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Manasquan Inlet, New Jersey"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Searsport, Maine"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Maine"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Maine"
-      ],
-      "Start_Date": "September 16, 2023",
-      "End_Date": "September 16, 2023",
-      "Num": "92,000 power outages",
-      "Annotation": "Maine"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Bermuda",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Bermuda"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Areas": "Canada",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Canada"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Bermuda",
+        "Locations": [
+          "Devonshire",
+          "St. George's"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Bermuda"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Long Island",
+          "Southampton",
+          "East Hampton",
+          "Nantucket",
+          "Martha's Vineyard",
+          "Hyannis",
+          "Boston",
+          "Cohasset",
+          "Rhode Island",
+          "New Hampshire",
+          "Mount Washington",
+          "Maine",
+          "Portland International Jetport",
+          "Bangor International Airport",
+          "Acadia National Park",
+          "Winter Harbor",
+          "Bar Harbor"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Nova Scotia",
+          "New Brunswick",
+          "Prince Edward Island",
+          "Saint John",
+          "Fredericton",
+          "Halifax Stanfield International Airport",
+          "Stoney Island",
+          "Eastern Shore",
+          "Rissers Beach Provincial Park"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Canada"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Nova Scotia",
-        "New Brunswick"
-      ],
-      "Start_Date": "September 15, 2023",
-      "End_Date": "September 17, 2023",
-      "Num": "140,000 in Nova Scotia, 37,000 in New Brunswick",
-      "Annotation": "Canada"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Bermuda",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Bermuda"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "United States"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Areas": "Canada",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Canada"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Moro Plantation, Maine"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Maine"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Canada",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Canada"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Bermuda",
-      "Locations": [
-        "Devonshire",
-        "St. George's",
-        "Royal Naval Dockyard"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Bermuda"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Areas": "Canada",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Canada"
+      },
+      {
+        "Administrative_Areas": "Bermuda",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Bermuda"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New Jersey",
+          "Florida",
+          "Maine"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Nova Scotia",
+          "New Brunswick",
+          "Prince Edward Island"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Canada"
+      },
+      {
+        "Administrative_Area": "Bermuda",
+        "Locations": [
+          "Devonshire",
+          "St. George's"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Bermuda"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$80 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "New York",
-        "Massachusetts",
-        "Rhode Island",
-        "New Hampshire",
-        "Maine"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "New Brunswick",
-        "Nova Scotia",
-        "Prince Edward Island"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Canada"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "4",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Areas": [
-        "Canada"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Maine"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Fernandina Beach, Florida",
-        "Searsport, Maine",
-        "Manasquan Inlet, New Jersey"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Searsport, Maine"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Manasquan Inlet, New Jersey"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Searsport, Maine"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Maine"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": "Bermuda",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Bermuda"
-    },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Areas": "Canada",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Canada"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Bermuda",
-      "Locations": [
-        "Devonshire",
-        "St. George's"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Bermuda"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Long Island",
-        "Southampton",
-        "East Hampton",
-        "Nantucket",
-        "Martha's Vineyard",
-        "Hyannis",
-        "Boston",
-        "Cohasset",
-        "Rhode Island",
-        "New Hampshire",
-        "Mount Washington",
-        "Maine",
-        "Portland International Jetport",
-        "Bangor International Airport",
-        "Acadia National Park",
-        "Winter Harbor",
-        "Bar Harbor"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Nova Scotia",
-        "New Brunswick",
-        "Prince Edward Island",
-        "Saint John",
-        "Fredericton",
-        "Halifax Stanfield International Airport",
-        "Stoney Island",
-        "Eastern Shore",
-        "Rissers Beach Provincial Park"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Canada"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "NULL",
-      "Locations": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Areas": "Canada",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Canada"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Moro Plantation, Maine"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Maine"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Areas": "Canada",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Canada"
-    },
-    {
-      "Administrative_Areas": "Bermuda",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Bermuda"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "New Jersey",
-        "Florida",
-        "Maine"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Nova Scotia",
-        "New Brunswick",
-        "Prince Edward Island"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Canada"
-    },
-    {
-      "Administrative_Area": "Bermuda",
-      "Locations": [
-        "Devonshire",
-        "St. George's"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Bermuda"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$80 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$50 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Areas": [
-        "Canada",
-        "Bermuda"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$30 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Canada"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Bermuda",
-      "Locations": [
-        "Devonshire",
-        "St. George's",
-        "Royal Naval Dockyard"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Bermuda"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "New Jersey",
-        "Fernandina Beach",
-        "Logan International Airport",
-        "Hancock County\u2013Bar Harbor Airport"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Area": "New York",
-      "Locations": [
-        "Long Island",
-        "Southampton",
-        "East Hampton"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "New York"
-    },
-    {
-      "Administrative_Area": "Massachusetts",
-      "Locations": [
-        "Nantucket",
-        "Martha's Vineyard",
-        "Hyannis",
-        "Boston",
-        "Cohasset"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Massachusetts"
-    },
-    {
-      "Administrative_Area": "Rhode Island",
-      "Locations": [
-        "Providence"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Rhode Island"
-    },
-    {
-      "Administrative_Area": "New Hampshire",
-      "Locations": [
-        "White Mountains",
-        "Mount Washington"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "New Hampshire"
-    },
-    {
-      "Administrative_Area": "Maine",
-      "Locations": [
-        "Portland International Jetport",
-        "Bangor International Airport",
-        "Acadia National Park",
-        "Aroostook County",
-        "Winter Harbor",
-        "Bar Harbor",
-        "Steuben"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Maine"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Nova Scotia",
-        "New Brunswick",
-        "Prince Edward Island",
-        "Charlotte County",
-        "Grand Manan Island",
-        "Digby",
-        "Yarmouth",
-        "Shelburne",
-        "Queens",
-        "Saint John",
-        "Fredericton",
-        "Halifax Stanfield International Airport",
-        "Stoney Island",
-        "Eastern Shore",
-        "Rissers Beach Provincial Park",
-        "Charlottetown Airport"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Canada"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Bermuda|United States|New York|Massachusetts|Rhode Island|New Hampshire|Maine|Canada|New Brunswick|Nova Scotia|Prince Edward Island",
-  "Start_Date": "September 5, 2023",
-  "End_Date": "September 18, 2023",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Bermuda",
-    "United States",
-    "Canada"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$50 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Areas": [
+          "Canada",
+          "Bermuda"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$30 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Canada"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Bermuda",
+        "Locations": [
+          "Devonshire",
+          "St. George's",
+          "Royal Naval Dockyard"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Bermuda"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New Jersey",
+          "Fernandina Beach",
+          "Logan International Airport",
+          "Hancock County\u2013Bar Harbor Airport"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "New York",
+        "Locations": [
+          "Long Island",
+          "Southampton",
+          "East Hampton"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "New York"
+      },
+      {
+        "Administrative_Area": "Massachusetts",
+        "Locations": [
+          "Nantucket",
+          "Martha's Vineyard",
+          "Hyannis",
+          "Boston",
+          "Cohasset"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Massachusetts"
+      },
+      {
+        "Administrative_Area": "Rhode Island",
+        "Locations": [
+          "Providence"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Rhode Island"
+      },
+      {
+        "Administrative_Area": "New Hampshire",
+        "Locations": [
+          "White Mountains",
+          "Mount Washington"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "New Hampshire"
+      },
+      {
+        "Administrative_Area": "Maine",
+        "Locations": [
+          "Portland International Jetport",
+          "Bangor International Airport",
+          "Acadia National Park",
+          "Aroostook County",
+          "Winter Harbor",
+          "Bar Harbor",
+          "Steuben"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Maine"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Nova Scotia",
+          "New Brunswick",
+          "Prince Edward Island",
+          "Charlotte County",
+          "Grand Manan Island",
+          "Digby",
+          "Yarmouth",
+          "Shelburne",
+          "Queens",
+          "Saint John",
+          "Fredericton",
+          "Halifax Stanfield International Airport",
+          "Stoney Island",
+          "Eastern Shore",
+          "Rissers Beach Provincial Park",
+          "Charlottetown Airport"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Canada"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Bermuda|United States|New York|Massachusetts|Rhode Island|New Hampshire|Maine|Canada|New Brunswick|Nova Scotia|Prince Edward Island",
+    "Start_Date": "September 5, 2023",
+    "End_Date": "September 18, 2023",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Bermuda",
+      "United States",
+      "Canada"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

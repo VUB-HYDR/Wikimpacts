@@ -1,336 +1,338 @@
-{
-  "Event_ID": "mEB8j4S",
-  "Sources": "https://en.wikipedia.org/wiki/Tornadoes_in_New_England",
-  "Event_Names": "Tornadoes in New England",
-  "Total_Summary_Affected": {
-    "Total_Affected": "Almost 200 people",
-    "Total_Affected_Annotation": "Tornadoes in New England"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Worcester, Massachusetts"
-      ],
-      "Start_Date": "June 9, 1953",
-      "End_Date": "NULL",
-      "Num": "as many as 94 people",
-      "Annotation": "Deadliest"
+[
+  {
+    "Event_ID": "mEB8j4S",
+    "Sources": "https://en.wikipedia.org/wiki/Tornadoes_in_New_England",
+    "Event_Names": "Tornadoes in New England",
+    "Total_Summary_Affected": {
+      "Total_Affected": "Almost 200 people",
+      "Total_Affected_Annotation": "Tornadoes in New England"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Wallingford, Connecticut"
-      ],
-      "Start_Date": "August 8, 1878",
-      "End_Date": "NULL",
-      "Num": "as many as 34",
-      "Annotation": "Deadliest"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Worcester"
-      ],
-      "Start_Date": "June 9, 1953",
-      "End_Date": "June 9, 1953",
-      "Num": "thousands of homes",
-      "Annotation": "Costliest"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Worcester, Massachusetts"
+        ],
+        "Start_Date": "June 9, 1953",
+        "End_Date": "NULL",
+        "Num": "as many as 94 people",
+        "Annotation": "Deadliest"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Wallingford, Connecticut"
+        ],
+        "Start_Date": "August 8, 1878",
+        "End_Date": "NULL",
+        "Num": "as many as 34",
+        "Annotation": "Deadliest"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Windsor Locks"
-      ],
-      "Start_Date": "1979",
-      "End_Date": "1979",
-      "Num": "dozens of expensive and historic aircraft",
-      "Annotation": "Costliest"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "almost 200",
-    "Total_Deaths_Annotation": "Tornadoes in New England"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Worcester, Massachusetts"
-      ],
-      "Start_Date": "June 9, 1953",
-      "End_Date": "June 9, 1953",
-      "Num": "as many as 94",
-      "Annotation": "Deadliest"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Worcester"
+        ],
+        "Start_Date": "June 9, 1953",
+        "End_Date": "June 9, 1953",
+        "Num": "thousands of homes",
+        "Annotation": "Costliest"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Windsor Locks"
+        ],
+        "Start_Date": "1979",
+        "End_Date": "1979",
+        "Num": "dozens of expensive and historic aircraft",
+        "Annotation": "Costliest"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "almost 200",
+      "Total_Deaths_Annotation": "Tornadoes in New England"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Wallingford, Connecticut"
-      ],
-      "Start_Date": "August 8, 1878",
-      "End_Date": "August 8, 1878",
-      "Num": "as many as 34",
-      "Annotation": "Deadliest"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Worcester, Massachusetts"
-      ],
-      "Start_Date": "June 9, 1953",
-      "End_Date": "June 9, 1953",
-      "Num": "NULL",
-      "Annotation": "Deadliest"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Worcester, Massachusetts"
+        ],
+        "Start_Date": "June 9, 1953",
+        "End_Date": "June 9, 1953",
+        "Num": "as many as 94",
+        "Annotation": "Deadliest"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Wallingford, Connecticut"
+        ],
+        "Start_Date": "August 8, 1878",
+        "End_Date": "August 8, 1878",
+        "Num": "as many as 34",
+        "Annotation": "Deadliest"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Wallingford, Connecticut"
-      ],
-      "Start_Date": "August 8, 1878",
-      "End_Date": "August 8, 1878",
-      "Num": "NULL",
-      "Annotation": "Deadliest"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Worcester, Massachusetts"
-      ],
-      "Start_Date": "June 9, 1953",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Deadliest"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Worcester, Massachusetts"
+        ],
+        "Start_Date": "June 9, 1953",
+        "End_Date": "June 9, 1953",
+        "Num": "NULL",
+        "Annotation": "Deadliest"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Wallingford, Connecticut"
+        ],
+        "Start_Date": "August 8, 1878",
+        "End_Date": "August 8, 1878",
+        "Num": "NULL",
+        "Annotation": "Deadliest"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Wallingford, Connecticut"
-      ],
-      "Start_Date": "August 8, 1878",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Deadliest"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Worcester, Massachusetts"
-      ],
-      "Start_Date": "June 9, 1953",
-      "End_Date": "June 9, 1953",
-      "Num": "NULL",
-      "Annotation": "Deadliest"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Worcester, Massachusetts"
+        ],
+        "Start_Date": "June 9, 1953",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Deadliest"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Wallingford, Connecticut"
+        ],
+        "Start_Date": "August 8, 1878",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Deadliest"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Wallingford, Connecticut"
-      ],
-      "Start_Date": "August 8, 1878",
-      "End_Date": "August 8, 1878",
-      "Num": "NULL",
-      "Annotation": "Deadliest"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Worcester, Massachusetts"
-      ],
-      "Start_Date": "June 9, 1953",
-      "End_Date": "June 9, 1953",
-      "Num": "$52 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "Yes",
-      "Num_Inflation_Adjusted_Year": "2024",
-      "Annotation": "Costliest"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Worcester, Massachusetts"
+        ],
+        "Start_Date": "June 9, 1953",
+        "End_Date": "June 9, 1953",
+        "Num": "NULL",
+        "Annotation": "Deadliest"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Wallingford, Connecticut"
+        ],
+        "Start_Date": "August 8, 1878",
+        "End_Date": "August 8, 1878",
+        "Num": "NULL",
+        "Annotation": "Deadliest"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Windsor Locks, Connecticut"
-      ],
-      "Start_Date": "1979",
-      "End_Date": "1979",
-      "Num": "$200 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "Yes",
-      "Num_Inflation_Adjusted_Year": "2024",
-      "Annotation": "Costliest"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "NULL",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "NULL",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Windsor Locks, Connecticut"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "200 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "Yes",
-      "Num_Inflation_Adjusted_Year": "2024",
-      "Annotation": "Costliest"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Worcester, Massachusetts"
+        ],
+        "Start_Date": "June 9, 1953",
+        "End_Date": "June 9, 1953",
+        "Num": "$52 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "Yes",
+        "Num_Inflation_Adjusted_Year": "2024",
+        "Annotation": "Costliest"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Windsor Locks, Connecticut"
+        ],
+        "Start_Date": "1979",
+        "End_Date": "1979",
+        "Num": "$200 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "Yes",
+        "Num_Inflation_Adjusted_Year": "2024",
+        "Annotation": "Costliest"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "NULL",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Worcester, Massachusetts"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "52 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "Yes",
-      "Num_Inflation_Adjusted_Year": "2024",
-      "Annotation": "Costliest"
-    }
-  ],
-  "Main_Event": "Tornado",
-  "Main_Event_Annotation": "Tornadoes in New England",
-  "Hazards": "Wind",
-  "Hazards_Annotation": "Tornadoes in New England",
-  "Start_Date": "1950",
-  "End_Date": "2008",
-  "Time_Annotation": "Climatology",
-  "Administrative_Areas": [
-    "United States"
-  ],
-  "Administrative_Areas_Annotation": "Climatology"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Windsor Locks, Connecticut"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "200 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "Yes",
+        "Num_Inflation_Adjusted_Year": "2024",
+        "Annotation": "Costliest"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Worcester, Massachusetts"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "52 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "Yes",
+        "Num_Inflation_Adjusted_Year": "2024",
+        "Annotation": "Costliest"
+      }
+    ],
+    "Main_Event": "Tornado",
+    "Main_Event_Annotation": "Tornadoes in New England",
+    "Hazards": "Wind",
+    "Hazards_Annotation": "Tornadoes in New England",
+    "Start_Date": "1950",
+    "End_Date": "2008",
+    "Time_Annotation": "Climatology",
+    "Administrative_Areas": [
+      "United States"
+    ],
+    "Administrative_Areas_Annotation": "Climatology"
+  }
+]

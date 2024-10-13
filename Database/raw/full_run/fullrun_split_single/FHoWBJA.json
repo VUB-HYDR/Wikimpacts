@@ -1,610 +1,612 @@
-{
-  "Event_ID": "FHoWBJA",
-  "Sources": "https://en.wikipedia.org/wiki/Typhoon_Nina_(1987)",
-  "Event_Names": "Typhoon Nina (1987)",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": "Federated States of Micronesia",
-      "Start_Date": "November 20, 1987",
-      "End_Date": "November 21, 1987",
-      "Num": "NULL",
-      "Annotation": "Federated States of Micronesia"
+[
+  {
+    "Event_ID": "FHoWBJA",
+    "Sources": "https://en.wikipedia.org/wiki/Typhoon_Nina_(1987)",
+    "Event_Names": "Typhoon Nina (1987)",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "November 25, 1987",
-      "End_Date": "November 26, 1987",
-      "Num": "153,339",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Federated States of Micronesia",
-      "Locations": [
-        "Weno",
-        "Chuuk Lagoon"
-      ],
-      "Start_Date": "November 20, 1987",
-      "End_Date": "November 21, 1987",
-      "Num": "1,000",
-      "Annotation": "Federated States of Micronesia"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Federated States of Micronesia",
+        "Start_Date": "November 20, 1987",
+        "End_Date": "November 21, 1987",
+        "Num": "NULL",
+        "Annotation": "Federated States of Micronesia"
+      },
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "November 25, 1987",
+        "End_Date": "November 26, 1987",
+        "Num": "153,339",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Federated States of Micronesia",
+        "Locations": [
+          "Weno",
+          "Chuuk Lagoon"
+        ],
+        "Start_Date": "November 20, 1987",
+        "End_Date": "November 21, 1987",
+        "Num": "1,000",
+        "Annotation": "Federated States of Micronesia"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Matnog",
+          "Sorsogon City",
+          "Sorsogon province",
+          "Albay province",
+          "Laguna province",
+          "San Pablo",
+          "Batangas",
+          "Marinduque",
+          "Mindoro Oriental",
+          "Camarines Sur province",
+          "Camarines Norte",
+          "Masbate province",
+          "Boac",
+          "Bacacay",
+          "Samar Island"
+        ],
+        "Start_Date": "November 25, 1987",
+        "End_Date": "November 26, 1987",
+        "Num": "153,339",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Matnog",
-        "Sorsogon City",
-        "Sorsogon province",
-        "Albay province",
-        "Laguna province",
-        "San Pablo",
-        "Batangas",
-        "Marinduque",
-        "Mindoro Oriental",
-        "Camarines Sur province",
-        "Camarines Norte",
-        "Masbate province",
-        "Boac",
-        "Bacacay",
-        "Samar Island"
-      ],
-      "Start_Date": "November 25, 1987",
-      "End_Date": "November 26, 1987",
-      "Num": "153,339",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Federated States of Micronesia",
-      "Start_Date": "November 20, 1987",
-      "End_Date": "November 21, 1987",
-      "Num": "roughly 1,000 homes",
-      "Annotation": "Federated States of Micronesia"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Federated States of Micronesia",
+        "Start_Date": "November 20, 1987",
+        "End_Date": "November 21, 1987",
+        "Num": "roughly 1,000 homes",
+        "Annotation": "Federated States of Micronesia"
+      },
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "November 25, 1987",
+        "End_Date": "November 26, 1987",
+        "Num": "90,173 homes",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Federated States of Micronesia",
+        "Locations": [
+          "Weno"
+        ],
+        "Start_Date": "November 20, 1987",
+        "End_Date": "November 21, 1987",
+        "Num": "85% of homes and 50% of government buildings",
+        "Annotation": "Federated States of Micronesia"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Matnog"
+        ],
+        "Start_Date": "November 25, 1987",
+        "End_Date": "November 26, 1987",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Sorsogon City"
+        ],
+        "Start_Date": "November 25, 1987",
+        "End_Date": "November 26, 1987",
+        "Num": "98% of the city's buildings",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Sorsogon province"
+        ],
+        "Start_Date": "November 25, 1987",
+        "End_Date": "November 26, 1987",
+        "Num": "90% of all homes",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Albay province"
+        ],
+        "Start_Date": "November 25, 1987",
+        "End_Date": "November 26, 1987",
+        "Num": "80% of all schools and 50% of all public buildings",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Boac"
+        ],
+        "Start_Date": "November 25, 1987",
+        "End_Date": "November 26, 1987",
+        "Num": "80% of homes",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bacacay"
+        ],
+        "Start_Date": "November 25, 1987",
+        "End_Date": "November 26, 1987",
+        "Num": "18 of the village's 200 homes",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "1,036 total",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "November 25, 1987",
-      "End_Date": "November 26, 1987",
-      "Num": "90,173 homes",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Federated States of Micronesia",
-      "Locations": [
-        "Weno"
-      ],
-      "Start_Date": "November 20, 1987",
-      "End_Date": "November 21, 1987",
-      "Num": "85% of homes and 50% of government buildings",
-      "Annotation": "Federated States of Micronesia"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Federated States of Micronesia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4",
+        "Annotation": "Federated States of Micronesia"
+      },
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "979",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Federated States of Micronesia",
+        "Locations": [
+          "Weno"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4",
+        "Annotation": "Federated States of Micronesia"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Matnog"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "287",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Sorsogon City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "61",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Sorsogon province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "400",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Albay province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "73",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Laguna province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "7",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "San Pablo"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Batangas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Marinduque"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Mindoro Oriental"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Camarines Sur province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "32",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Camarines Norte"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "23",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Masbate province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Marinduque"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Lucena City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Offshore"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Matnog"
-      ],
-      "Start_Date": "November 25, 1987",
-      "End_Date": "November 26, 1987",
-      "Num": "NULL",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Federated States of Micronesia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Federated States of Micronesia"
+      },
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "114,000",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Federated States of Micronesia",
+        "Locations": [
+          "Weno"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "hundreds of people",
+        "Annotation": "Federated States of Micronesia"
+      },
+      {
+        "Administrative_Area": "Federated States of Micronesia",
+        "Locations": [
+          "Chuuk Lagoon"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,000 people",
+        "Annotation": "Federated States of Micronesia"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Manila"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "800",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Nationwide"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "114,000",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Sorsogon City"
-      ],
-      "Start_Date": "November 25, 1987",
-      "End_Date": "November 26, 1987",
-      "Num": "98% of the city's buildings",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Federated States of Micronesia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "over 1,000 people",
+        "Annotation": "Federated States of Micronesia"
+      },
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "153,339",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Federated States of Micronesia",
+        "Locations": [
+          "Weno"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "over 1,000 people",
+        "Annotation": "Federated States of Micronesia"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Nationwide"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "153,339",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "1,075",
+      "Total_Injuries_Annotation": "Philippines"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Sorsogon province"
-      ],
-      "Start_Date": "November 25, 1987",
-      "End_Date": "November 26, 1987",
-      "Num": "90% of all homes",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Federated States of Micronesia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "39",
+        "Annotation": "Federated States of Micronesia"
+      },
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,075",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Federated States of Micronesia",
+        "Locations": [
+          "Weno"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "39",
+        "Annotation": "Federated States of Micronesia"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Albay province"
-      ],
-      "Start_Date": "November 25, 1987",
-      "End_Date": "November 26, 1987",
-      "Num": "80% of all schools and 50% of all public buildings",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": ">= $84.5 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Boac"
-      ],
-      "Start_Date": "November 25, 1987",
-      "End_Date": "November 26, 1987",
-      "Num": "80% of homes",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bacacay"
-      ],
-      "Start_Date": "November 25, 1987",
-      "End_Date": "November 26, 1987",
-      "Num": "18 of the village's 200 homes",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "1,036 total",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Federated States of Micronesia",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "4",
-      "Annotation": "Federated States of Micronesia"
-    },
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "979",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Federated States of Micronesia",
-      "Locations": [
-        "Weno"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "4",
-      "Annotation": "Federated States of Micronesia"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Matnog"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "287",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Sorsogon City"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "61",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Sorsogon province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "400",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Albay province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "73",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Laguna province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "7",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "San Pablo"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Batangas"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Marinduque"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Mindoro Oriental"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Camarines Sur province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "32",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Camarines Norte"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "23",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Masbate province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "5",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Marinduque"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Lucena City"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Offshore"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "5",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Federated States of Micronesia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Federated States of Micronesia"
-    },
-    {
-      "Administrative_Areas": [
-        "Philippines"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "114,000",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Federated States of Micronesia",
-      "Locations": [
-        "Weno"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "hundreds of people",
-      "Annotation": "Federated States of Micronesia"
-    },
-    {
-      "Administrative_Area": "Federated States of Micronesia",
-      "Locations": [
-        "Chuuk Lagoon"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1,000 people",
-      "Annotation": "Federated States of Micronesia"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Manila"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "800",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Nationwide"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "114,000",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Federated States of Micronesia",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "over 1,000 people",
-      "Annotation": "Federated States of Micronesia"
-    },
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "153,339",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Federated States of Micronesia",
-      "Locations": [
-        "Weno"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "over 1,000 people",
-      "Annotation": "Federated States of Micronesia"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Nationwide"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "153,339",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "1,075",
-    "Total_Injuries_Annotation": "Philippines"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Federated States of Micronesia",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "39",
-      "Annotation": "Federated States of Micronesia"
-    },
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1,075",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Federated States of Micronesia",
-      "Locations": [
-        "Weno"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "39",
-      "Annotation": "Federated States of Micronesia"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "NULL",
-      "Locations": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": ">= $84.5 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "Federated States of Micronesia"
-      ],
-      "Start_Date": "November 20, 1987",
-      "End_Date": "November 21, 1987",
-      "Num": "$30-40 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Federated States of Micronesia"
-    },
-    {
-      "Administrative_Areas": [
-        "Philippines"
-      ],
-      "Start_Date": "November 25, 1987",
-      "End_Date": "November 26, 1987",
-      "Num": "$54.5 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Federated States of Micronesia",
-      "Locations": [
-        "Weno"
-      ],
-      "Start_Date": "November 20, 1987",
-      "End_Date": "November 21, 1987",
-      "Num": "$30-40 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Federated States of Micronesia"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Sorsogon province"
-      ],
-      "Start_Date": "November 25, 1987",
-      "End_Date": "November 26, 1987",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Albay province"
-      ],
-      "Start_Date": "November 25, 1987",
-      "End_Date": "November 26, 1987",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "November 25, 1987",
-      "End_Date": "November 26, 1987",
-      "Num": "$7.9 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Philippines",
-  "Start_Date": "November 19, 1987",
-  "End_Date": "November 30, 1987",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Federated States of Micronesia",
-    "Philippines",
-    "China",
-    "Hong Kong",
-    "Macau"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Federated States of Micronesia"
+        ],
+        "Start_Date": "November 20, 1987",
+        "End_Date": "November 21, 1987",
+        "Num": "$30-40 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Federated States of Micronesia"
+      },
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "November 25, 1987",
+        "End_Date": "November 26, 1987",
+        "Num": "$54.5 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Federated States of Micronesia",
+        "Locations": [
+          "Weno"
+        ],
+        "Start_Date": "November 20, 1987",
+        "End_Date": "November 21, 1987",
+        "Num": "$30-40 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Federated States of Micronesia"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Sorsogon province"
+        ],
+        "Start_Date": "November 25, 1987",
+        "End_Date": "November 26, 1987",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Albay province"
+        ],
+        "Start_Date": "November 25, 1987",
+        "End_Date": "November 26, 1987",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "November 25, 1987",
+        "End_Date": "November 26, 1987",
+        "Num": "$7.9 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Philippines",
+    "Start_Date": "November 19, 1987",
+    "End_Date": "November 30, 1987",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Federated States of Micronesia",
+      "Philippines",
+      "China",
+      "Hong Kong",
+      "Macau"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

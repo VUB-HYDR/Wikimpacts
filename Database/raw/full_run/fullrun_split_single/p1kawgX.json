@@ -1,320 +1,322 @@
-{
-  "Event_ID": "p1kawgX",
-  "Sources": "https://en.wikipedia.org/wiki/Cyclone_Tracy",
-  "Event_Names": "Cyclone Tracy",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "24 December 1974",
-      "End_Date": "26 December 1974",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Darwin"
-      ],
-      "Start_Date": "24 December 1974",
-      "End_Date": "26 December 1974",
-      "Num": "More than 25,000 out of the 47,000 inhabitants of the city homeless",
-      "Annotation": "Cyclone Tracy"
+[
+  {
+    "Event_ID": "p1kawgX",
+    "Sources": "https://en.wikipedia.org/wiki/Cyclone_Tracy",
+    "Event_Names": "Cyclone Tracy",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Darwin"
-      ],
-      "Start_Date": "24 December 1974",
-      "End_Date": "26 December 1974",
-      "Num": "NULL",
-      "Annotation": "Impact"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "24 December 1974",
+        "End_Date": "26 December 1974",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Darwin"
+        ],
+        "Start_Date": "24 December 1974",
+        "End_Date": "26 December 1974",
+        "Num": "More than 25,000 out of the 47,000 inhabitants of the city homeless",
+        "Annotation": "Cyclone Tracy"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Darwin"
+        ],
+        "Start_Date": "24 December 1974",
+        "End_Date": "26 December 1974",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Darwin"
+        ],
+        "Start_Date": "24 December 1974",
+        "End_Date": "26 December 1974",
+        "Num": "NULL",
+        "Annotation": "Deaths"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Darwin"
+        ],
+        "Start_Date": "24 December 1974",
+        "End_Date": "26 December 1974",
+        "Num": "NULL",
+        "Annotation": "Health and essential services crisis"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Darwin"
+        ],
+        "Start_Date": "24 December 1974",
+        "End_Date": "31 December 1974",
+        "Num": "35,362 people were evacuated from Darwin",
+        "Annotation": "Evacuation and the public response"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "more than 70 percent of Darwin's buildings",
+      "Total_Buildings_Damaged_Annotation": "Cyclone Tracy"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Darwin"
-      ],
-      "Start_Date": "24 December 1974",
-      "End_Date": "26 December 1974",
-      "Num": "NULL",
-      "Annotation": "Deaths"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "24 December 1974",
+        "End_Date": "25 December 1974",
+        "Num": "NULL",
+        "Annotation": "Cyclone Tracy"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Darwin"
+        ],
+        "Start_Date": "24 December 1974",
+        "End_Date": "25 December 1974",
+        "Num": "more than 70 percent of Darwin's buildings, including 80 percent of houses",
+        "Annotation": "Cyclone Tracy"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Darwin Airport"
+        ],
+        "Start_Date": "24 December 1974",
+        "End_Date": "25 December 1974",
+        "Num": "thirty-one aircraft were destroyed and another twenty-five badly damaged",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "66",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Darwin"
-      ],
-      "Start_Date": "24 December 1974",
-      "End_Date": "26 December 1974",
-      "Num": "NULL",
-      "Annotation": "Health and essential services crisis"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "24 December 1974",
+        "End_Date": "25 December 1974",
+        "Num": "66",
+        "Annotation": "Deaths"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Darwin"
+        ],
+        "Start_Date": "24 December 1974",
+        "End_Date": "25 December 1974",
+        "Num": "45",
+        "Annotation": "Deaths"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Darwin Harbour"
+        ],
+        "Start_Date": "24 December 1974",
+        "End_Date": "25 December 1974",
+        "Num": "21",
+        "Annotation": "Deaths"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "30,000",
+      "Total_Displaced_Annotation": "Evacuation and the public response"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Darwin"
-      ],
-      "Start_Date": "24 December 1974",
-      "End_Date": "31 December 1974",
-      "Num": "35,362 people were evacuated from Darwin",
-      "Annotation": "Evacuation and the public response"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "more than 70 percent of Darwin's buildings",
-    "Total_Buildings_Damaged_Annotation": "Cyclone Tracy"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "24 December 1974",
-      "End_Date": "25 December 1974",
-      "Num": "NULL",
-      "Annotation": "Cyclone Tracy"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Darwin"
-      ],
-      "Start_Date": "24 December 1974",
-      "End_Date": "25 December 1974",
-      "Num": "more than 70 percent of Darwin's buildings, including 80 percent of houses",
-      "Annotation": "Cyclone Tracy"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "26 December 1974",
+        "End_Date": "31 December 1974",
+        "Num": "35,362",
+        "Annotation": "Evacuation and the public response"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Darwin"
+        ],
+        "Start_Date": "26 December 1974",
+        "End_Date": "31 December 1974",
+        "Num": "25,628",
+        "Annotation": "Evacuation and the public response"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Darwin"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "10,000",
+        "Annotation": "Evacuation and the public response"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "more than 25,000",
+      "Total_Homeless_Annotation": "Cyclone Tracy"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Darwin Airport"
-      ],
-      "Start_Date": "24 December 1974",
-      "End_Date": "25 December 1974",
-      "Num": "thirty-one aircraft were destroyed and another twenty-five badly damaged",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "66",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "24 December 1974",
-      "End_Date": "25 December 1974",
-      "Num": "66",
-      "Annotation": "Deaths"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Darwin"
-      ],
-      "Start_Date": "24 December 1974",
-      "End_Date": "25 December 1974",
-      "Num": "45",
-      "Annotation": "Deaths"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Darwin"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "more than 25,000",
+        "Annotation": "Cyclone Tracy"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "well over five hundred patients",
+      "Total_Injuries_Annotation": "Health and essential services crisis"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Darwin Harbour"
-      ],
-      "Start_Date": "24 December 1974",
-      "End_Date": "25 December 1974",
-      "Num": "21",
-      "Annotation": "Deaths"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "30,000",
-    "Total_Displaced_Annotation": "Evacuation and the public response"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "26 December 1974",
-      "End_Date": "31 December 1974",
-      "Num": "35,362",
-      "Annotation": "Evacuation and the public response"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Darwin"
-      ],
-      "Start_Date": "26 December 1974",
-      "End_Date": "31 December 1974",
-      "Num": "25,628",
-      "Annotation": "Evacuation and the public response"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "well over five hundred patients",
+        "Annotation": "Health and essential services crisis"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Darwin"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "well over five hundred patients",
+        "Annotation": "Health and essential services crisis"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Darwin"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "10,000",
-      "Annotation": "Evacuation and the public response"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "more than 25,000",
-    "Total_Homeless_Annotation": "Cyclone Tracy"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Darwin"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "more than 25,000",
-      "Annotation": "Cyclone Tracy"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "well over five hundred patients",
-    "Total_Injuries_Annotation": "Health and essential services crisis"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "well over five hundred patients",
-      "Annotation": "Health and essential services crisis"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Darwin"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "well over five hundred patients",
-      "Annotation": "Health and essential services crisis"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "21 December 1974",
-      "End_Date": "26 December 1974",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Darwin"
-      ],
-      "Start_Date": "21 December 1974",
-      "End_Date": "26 December 1974",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$837 million",
-    "Total_Damage_Unit": "AUD",
-    "Total_Damage_Inflation_Adjusted": "Yes",
-    "Total_Damage_Inflation_Adjusted_Year": "2022",
-    "Total_Damage_Annotation": "Cyclone Tracy"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "21 December 1974",
-      "End_Date": "26 December 1974",
-      "Num": "$837 million",
-      "Num_Unit": "AUD",
-      "Num_Inflation_Adjusted": "Yes",
-      "Num_Inflation_Adjusted_Year": "2022",
-      "Annotation": "Cyclone Tracy"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Darwin"
-      ],
-      "Start_Date": "21 December 1974",
-      "End_Date": "26 December 1974",
-      "Num": "$837 million",
-      "Num_Unit": "AUD",
-      "Num_Inflation_Adjusted": "Yes",
-      "Num_Inflation_Adjusted_Year": "2022",
-      "Annotation": "Cyclone Tracy"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Meteorological history",
-  "Start_Date": "21 December 1974",
-  "End_Date": "26 December 1974",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Australia"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "21 December 1974",
+        "End_Date": "26 December 1974",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Darwin"
+        ],
+        "Start_Date": "21 December 1974",
+        "End_Date": "26 December 1974",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$837 million",
+      "Total_Damage_Unit": "AUD",
+      "Total_Damage_Inflation_Adjusted": "Yes",
+      "Total_Damage_Inflation_Adjusted_Year": "2022",
+      "Total_Damage_Annotation": "Cyclone Tracy"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "21 December 1974",
+        "End_Date": "26 December 1974",
+        "Num": "$837 million",
+        "Num_Unit": "AUD",
+        "Num_Inflation_Adjusted": "Yes",
+        "Num_Inflation_Adjusted_Year": "2022",
+        "Annotation": "Cyclone Tracy"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Darwin"
+        ],
+        "Start_Date": "21 December 1974",
+        "End_Date": "26 December 1974",
+        "Num": "$837 million",
+        "Num_Unit": "AUD",
+        "Num_Inflation_Adjusted": "Yes",
+        "Num_Inflation_Adjusted_Year": "2022",
+        "Annotation": "Cyclone Tracy"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Meteorological history",
+    "Start_Date": "21 December 1974",
+    "End_Date": "26 December 1974",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Australia"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

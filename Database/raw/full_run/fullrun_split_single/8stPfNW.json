@@ -1,805 +1,807 @@
-{
-  "Event_ID": "8stPfNW",
-  "Sources": "https://en.wikipedia.org/wiki/2020%E2%80%9321_Australian_bushfire_season",
-  "Event_Names": "2020\u201321 Australian bushfire season",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": "Australia",
-      "Start_Date": "August 2020",
-      "End_Date": "June 2021",
-      "Num": "NULL",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Duranbah"
-      ],
-      "Start_Date": "mid-August 2020",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "New South Wales"
+[
+  {
+    "Event_ID": "8stPfNW",
+    "Sources": "https://en.wikipedia.org/wiki/2020%E2%80%9321_Australian_bushfire_season",
+    "Event_Names": "2020\u201321 Australian bushfire season",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Royal National Park near Waterfall on Kangaroo Ridge"
-      ],
-      "Start_Date": "10 October 2020",
-      "End_Date": "11 October 2020",
-      "Num": "NULL",
-      "Annotation": "New South Wales"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Australia",
+        "Start_Date": "August 2020",
+        "End_Date": "June 2021",
+        "Num": "NULL",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Duranbah"
+        ],
+        "Start_Date": "mid-August 2020",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "New South Wales"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Royal National Park near Waterfall on Kangaroo Ridge"
+        ],
+        "Start_Date": "10 October 2020",
+        "End_Date": "11 October 2020",
+        "Num": "NULL",
+        "Annotation": "New South Wales"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Glenugie south of Grafton"
+        ],
+        "Start_Date": "23 November 2020",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "New South Wales"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Northmead",
+          "Faulconbridge",
+          "Kenthurst"
+        ],
+        "Start_Date": "29 November 2020",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "New South Wales"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Northern Territory"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Northern Territory"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Fraser Island"
+        ],
+        "Start_Date": "14 October 2020",
+        "End_Date": "15 December 2020",
+        "Num": "NULL",
+        "Annotation": "Queensland (Fraser Island)"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Yorke Peninsula"
+        ],
+        "Start_Date": "10 November 2020",
+        "End_Date": "NULL",
+        "Num": "23,000 customers affected by power outages",
+        "Annotation": "South Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Templers",
+          "Freeling",
+          "Lyndoch",
+          "Roseworthy"
+        ],
+        "Start_Date": "27 November 2020",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "South Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Lower South East of South Australia near the township of Lucindale"
+        ],
+        "Start_Date": "11 January 2021",
+        "End_Date": "12 January 2021",
+        "Num": "NULL",
+        "Annotation": "South Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Cherry Gardens"
+        ],
+        "Start_Date": "24 January 2021",
+        "End_Date": "25 January 2021",
+        "Num": "NULL",
+        "Annotation": "South Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "City of Swan"
+        ],
+        "Start_Date": "24 December 2020",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Western Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Gingin",
+          "Dandaragan",
+          "Ocean Farms Estate",
+          "east of Lancelin"
+        ],
+        "Start_Date": "2 January 2021",
+        "End_Date": "7 January 2021",
+        "Num": "NULL",
+        "Annotation": "Western Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Postans",
+          "The Spectacles",
+          "Hope Valley",
+          "Kwinana Beach"
+        ],
+        "Start_Date": "3 January 2021",
+        "End_Date": "4 January 2021",
+        "Num": "NULL",
+        "Annotation": "Western Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "High Wycombe"
+        ],
+        "Start_Date": "15 January 2021",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Western Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "York"
+        ],
+        "Start_Date": "15 January 2021",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Western Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Oakford"
+        ],
+        "Start_Date": "16 January 2021",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Western Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Wooroloo",
+          "Wundowie",
+          "Gidgegannup",
+          "Chidlow",
+          "Bullsbrook",
+          "Shady hills"
+        ],
+        "Start_Date": "1 February 2021",
+        "End_Date": "6 February 2021",
+        "Num": "NULL",
+        "Annotation": "Western Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Injidup",
+          "Yallingup"
+        ],
+        "Start_Date": "5 February 2021",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Western Australia"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "88",
+      "Total_Buildings_Damaged_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Glenugie south of Grafton"
-      ],
-      "Start_Date": "23 November 2020",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "New South Wales"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Australia",
+        "Start_Date": "August 2020",
+        "End_Date": "June 2021",
+        "Num": "88",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "York"
+        ],
+        "Start_Date": "15 January",
+        "End_Date": "15 January",
+        "Num": "1 home and shed",
+        "Annotation": "Western Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Oakford"
+        ],
+        "Start_Date": "16 January",
+        "End_Date": "16 January",
+        "Num": "1 house",
+        "Annotation": "Western Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Wooroloo",
+          "Wundowie",
+          "Gidgegannup",
+          "Chidlow"
+        ],
+        "Start_Date": "1 February",
+        "End_Date": "6 February",
+        "Num": "86 houses and 2 fire trucks",
+        "Annotation": "Western Australia"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "0",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Northmead",
-        "Faulconbridge",
-        "Kenthurst"
-      ],
-      "Start_Date": "29 November 2020",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "New South Wales"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "0",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "0",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Northern Territory"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Northern Territory"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Australia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Duranbah"
+        ],
+        "Start_Date": "mid-August 2020",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "New South Wales"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Waterfall on Kangaroo Ridge, south of Sydney"
+        ],
+        "Start_Date": "10 October 2020",
+        "End_Date": "11 October 2020",
+        "Num": "NULL",
+        "Annotation": "New South Wales"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Glenugie south of Grafton"
+        ],
+        "Start_Date": "23 November 2020",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "New South Wales"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Northmead",
+          "Faulconbridge",
+          "Kenthurst"
+        ],
+        "Start_Date": "29 November 2020",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "New South Wales"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Fraser Island"
+        ],
+        "Start_Date": "14 October 2020",
+        "End_Date": "15 December 2020",
+        "Num": "NULL",
+        "Annotation": "Queensland (Fraser Island)"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Templers",
+          "Freeling",
+          "Lyndoch",
+          "Roseworthy"
+        ],
+        "Start_Date": "27 November 2020",
+        "End_Date": "27 November 2020",
+        "Num": "NULL",
+        "Annotation": "South Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Lucindale"
+        ],
+        "Start_Date": "11 January 2021",
+        "End_Date": "12 January 2021",
+        "Num": "NULL",
+        "Annotation": "South Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Cherry Gardens"
+        ],
+        "Start_Date": "24 January 2021",
+        "End_Date": "25 January 2021",
+        "Num": "NULL",
+        "Annotation": "South Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "City of Swan"
+        ],
+        "Start_Date": "24 December 2020",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Western Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Gingin",
+          "Dandaragan",
+          "Ocean Farms Estate",
+          "east of Lancelin"
+        ],
+        "Start_Date": "2 January 2021",
+        "End_Date": "7 January 2021",
+        "Num": "NULL",
+        "Annotation": "Western Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Postans",
+          "The Spectacles",
+          "Hope Valley",
+          "Kwinana Beach"
+        ],
+        "Start_Date": "3 January 2021",
+        "End_Date": "4 January 2021",
+        "Num": "NULL",
+        "Annotation": "Western Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "High Wycombe"
+        ],
+        "Start_Date": "15 January 2021",
+        "End_Date": "15 January 2021",
+        "Num": "NULL",
+        "Annotation": "Western Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "York"
+        ],
+        "Start_Date": "15 January 2021",
+        "End_Date": "15 January 2021",
+        "Num": "NULL",
+        "Annotation": "Western Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Oakford"
+        ],
+        "Start_Date": "16 January 2021",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Western Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Wooroloo",
+          "Wundowie",
+          "Gidgegannup",
+          "Chidlow",
+          "Bullsbrook",
+          "Shady hills"
+        ],
+        "Start_Date": "1 February 2021",
+        "End_Date": "6 February 2021",
+        "Num": "NULL",
+        "Annotation": "Western Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Injidup",
+          "Yallingup"
+        ],
+        "Start_Date": "5 February 2021",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Western Australia"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Fraser Island"
-      ],
-      "Start_Date": "14 October 2020",
-      "End_Date": "15 December 2020",
-      "Num": "NULL",
-      "Annotation": "Queensland (Fraser Island)"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Australia",
+        "Start_Date": "August 2020",
+        "End_Date": "June 2021",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Northmead"
+        ],
+        "Start_Date": "29 November 2020",
+        "End_Date": "29 November 2020",
+        "Num": "One home was fire damaged",
+        "Annotation": "New South Wales"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "York"
+        ],
+        "Start_Date": "15 January 2021",
+        "End_Date": "15 January 2021",
+        "Num": "One home and shed on a hobby farm",
+        "Annotation": "Western Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Oakford"
+        ],
+        "Start_Date": "16 January 2021",
+        "End_Date": "16 January 2021",
+        "Num": "One house",
+        "Annotation": "Western Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Wooroloo",
+          "Wundowie",
+          "Gidgegannup",
+          "Chidlow",
+          "Bullsbrook",
+          "Shady Hills"
+        ],
+        "Start_Date": "1 February 2021",
+        "End_Date": "6 February 2021",
+        "Num": "At least 86 houses",
+        "Annotation": "Western Australia"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Yorke Peninsula"
-      ],
-      "Start_Date": "10 November 2020",
-      "End_Date": "NULL",
-      "Num": "23,000 customers affected by power outages",
-      "Annotation": "South Australia"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Australia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Templers",
-        "Freeling",
-        "Lyndoch",
-        "Roseworthy"
-      ],
-      "Start_Date": "27 November 2020",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "South Australia"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "Australia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "NULL",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Lower South East of South Australia near the township of Lucindale"
-      ],
-      "Start_Date": "11 January 2021",
-      "End_Date": "12 January 2021",
-      "Num": "NULL",
-      "Annotation": "South Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Cherry Gardens"
-      ],
-      "Start_Date": "24 January 2021",
-      "End_Date": "25 January 2021",
-      "Num": "NULL",
-      "Annotation": "South Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "City of Swan"
-      ],
-      "Start_Date": "24 December 2020",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Western Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Gingin",
-        "Dandaragan",
-        "Ocean Farms Estate",
-        "east of Lancelin"
-      ],
-      "Start_Date": "2 January 2021",
-      "End_Date": "7 January 2021",
-      "Num": "NULL",
-      "Annotation": "Western Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Postans",
-        "The Spectacles",
-        "Hope Valley",
-        "Kwinana Beach"
-      ],
-      "Start_Date": "3 January 2021",
-      "End_Date": "4 January 2021",
-      "Num": "NULL",
-      "Annotation": "Western Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "High Wycombe"
-      ],
-      "Start_Date": "15 January 2021",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Western Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "York"
-      ],
-      "Start_Date": "15 January 2021",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Western Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Oakford"
-      ],
-      "Start_Date": "16 January 2021",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Western Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Wooroloo",
-        "Wundowie",
-        "Gidgegannup",
-        "Chidlow",
-        "Bullsbrook",
-        "Shady hills"
-      ],
-      "Start_Date": "1 February 2021",
-      "End_Date": "6 February 2021",
-      "Num": "NULL",
-      "Annotation": "Western Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Injidup",
-        "Yallingup"
-      ],
-      "Start_Date": "5 February 2021",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Western Australia"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "88",
-    "Total_Buildings_Damaged_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Australia",
-      "Start_Date": "August 2020",
-      "End_Date": "June 2021",
-      "Num": "88",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "York"
-      ],
-      "Start_Date": "15 January",
-      "End_Date": "15 January",
-      "Num": "1 home and shed",
-      "Annotation": "Western Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Oakford"
-      ],
-      "Start_Date": "16 January",
-      "End_Date": "16 January",
-      "Num": "1 house",
-      "Annotation": "Western Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Wooroloo",
-        "Wundowie",
-        "Gidgegannup",
-        "Chidlow"
-      ],
-      "Start_Date": "1 February",
-      "End_Date": "6 February",
-      "Num": "86 houses and 2 fire trucks",
-      "Annotation": "Western Australia"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "0",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "0",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "0",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": "Australia",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Duranbah"
-      ],
-      "Start_Date": "mid-August 2020",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "New South Wales"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Waterfall on Kangaroo Ridge, south of Sydney"
-      ],
-      "Start_Date": "10 October 2020",
-      "End_Date": "11 October 2020",
-      "Num": "NULL",
-      "Annotation": "New South Wales"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Glenugie south of Grafton"
-      ],
-      "Start_Date": "23 November 2020",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "New South Wales"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Northmead",
-        "Faulconbridge",
-        "Kenthurst"
-      ],
-      "Start_Date": "29 November 2020",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "New South Wales"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Fraser Island"
-      ],
-      "Start_Date": "14 October 2020",
-      "End_Date": "15 December 2020",
-      "Num": "NULL",
-      "Annotation": "Queensland (Fraser Island)"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Templers",
-        "Freeling",
-        "Lyndoch",
-        "Roseworthy"
-      ],
-      "Start_Date": "27 November 2020",
-      "End_Date": "27 November 2020",
-      "Num": "NULL",
-      "Annotation": "South Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Lucindale"
-      ],
-      "Start_Date": "11 January 2021",
-      "End_Date": "12 January 2021",
-      "Num": "NULL",
-      "Annotation": "South Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Cherry Gardens"
-      ],
-      "Start_Date": "24 January 2021",
-      "End_Date": "25 January 2021",
-      "Num": "NULL",
-      "Annotation": "South Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "City of Swan"
-      ],
-      "Start_Date": "24 December 2020",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Western Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Gingin",
-        "Dandaragan",
-        "Ocean Farms Estate",
-        "east of Lancelin"
-      ],
-      "Start_Date": "2 January 2021",
-      "End_Date": "7 January 2021",
-      "Num": "NULL",
-      "Annotation": "Western Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Postans",
-        "The Spectacles",
-        "Hope Valley",
-        "Kwinana Beach"
-      ],
-      "Start_Date": "3 January 2021",
-      "End_Date": "4 January 2021",
-      "Num": "NULL",
-      "Annotation": "Western Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "High Wycombe"
-      ],
-      "Start_Date": "15 January 2021",
-      "End_Date": "15 January 2021",
-      "Num": "NULL",
-      "Annotation": "Western Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "York"
-      ],
-      "Start_Date": "15 January 2021",
-      "End_Date": "15 January 2021",
-      "Num": "NULL",
-      "Annotation": "Western Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Oakford"
-      ],
-      "Start_Date": "16 January 2021",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Western Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Wooroloo",
-        "Wundowie",
-        "Gidgegannup",
-        "Chidlow",
-        "Bullsbrook",
-        "Shady hills"
-      ],
-      "Start_Date": "1 February 2021",
-      "End_Date": "6 February 2021",
-      "Num": "NULL",
-      "Annotation": "Western Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Injidup",
-        "Yallingup"
-      ],
-      "Start_Date": "5 February 2021",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Western Australia"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Australia",
-      "Start_Date": "August 2020",
-      "End_Date": "June 2021",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Northmead"
-      ],
-      "Start_Date": "29 November 2020",
-      "End_Date": "29 November 2020",
-      "Num": "One home was fire damaged",
-      "Annotation": "New South Wales"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "York"
-      ],
-      "Start_Date": "15 January 2021",
-      "End_Date": "15 January 2021",
-      "Num": "One home and shed on a hobby farm",
-      "Annotation": "Western Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Oakford"
-      ],
-      "Start_Date": "16 January 2021",
-      "End_Date": "16 January 2021",
-      "Num": "One house",
-      "Annotation": "Western Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Wooroloo",
-        "Wundowie",
-        "Gidgegannup",
-        "Chidlow",
-        "Bullsbrook",
-        "Shady Hills"
-      ],
-      "Start_Date": "1 February 2021",
-      "End_Date": "6 February 2021",
-      "Num": "At least 86 houses",
-      "Annotation": "Western Australia"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Australia",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": "Australia",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "NULL",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "NULL",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": "Australia",
-      "Start_Date": "August 2020",
-      "End_Date": "June 2021",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Fraser Island"
-      ],
-      "Start_Date": "14 October 2020",
-      "End_Date": "15 December 2020",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Queensland (Fraser Island)"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Templers",
-        "Freeling",
-        "Lyndoch",
-        "Roseworthy"
-      ],
-      "Start_Date": "27 November 2020",
-      "End_Date": "27 November 2020",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "South Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Lucindale"
-      ],
-      "Start_Date": "11 January 2021",
-      "End_Date": "12 January 2021",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "South Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Cherry Gardens"
-      ],
-      "Start_Date": "24 January 2021",
-      "End_Date": "25 January 2021",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "South Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "City of Swan"
-      ],
-      "Start_Date": "24 December 2020",
-      "End_Date": "24 December 2020",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Western Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Gingin",
-        "Dandaragan",
-        "Ocean Farms Estate",
-        "Lancelin"
-      ],
-      "Start_Date": "2 January 2021",
-      "End_Date": "7 January 2021",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Western Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Postans",
-        "The Spectacles",
-        "Hope Valley",
-        "Kwinana Beach"
-      ],
-      "Start_Date": "3 January 2021",
-      "End_Date": "4 January 2021",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Western Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "High Wycombe"
-      ],
-      "Start_Date": "15 January 2021",
-      "End_Date": "15 January 2021",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Western Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "York"
-      ],
-      "Start_Date": "15 January 2021",
-      "End_Date": "15 January 2021",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Western Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Oakford"
-      ],
-      "Start_Date": "16 January 2021",
-      "End_Date": "16 January 2021",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Western Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Wooroloo",
-        "Wundowie",
-        "Gidgegannup",
-        "Chidlow",
-        "The Vines",
-        "Bullsbrook",
-        "Shady Hills"
-      ],
-      "Start_Date": "1 February 2021",
-      "End_Date": "6 February 2021",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Western Australia"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Injidup",
-        "Yallingup"
-      ],
-      "Start_Date": "5 February 2021",
-      "End_Date": "5 February 2021",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Western Australia"
-    }
-  ],
-  "Main_Event": "Wildfire",
-  "Main_Event_Annotation": "Info_Box",
-  "Start_Date": "August 2020",
-  "End_Date": "June 2021",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Australia"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Australia",
+        "Start_Date": "August 2020",
+        "End_Date": "June 2021",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Fraser Island"
+        ],
+        "Start_Date": "14 October 2020",
+        "End_Date": "15 December 2020",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Queensland (Fraser Island)"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Templers",
+          "Freeling",
+          "Lyndoch",
+          "Roseworthy"
+        ],
+        "Start_Date": "27 November 2020",
+        "End_Date": "27 November 2020",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "South Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Lucindale"
+        ],
+        "Start_Date": "11 January 2021",
+        "End_Date": "12 January 2021",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "South Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Cherry Gardens"
+        ],
+        "Start_Date": "24 January 2021",
+        "End_Date": "25 January 2021",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "South Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "City of Swan"
+        ],
+        "Start_Date": "24 December 2020",
+        "End_Date": "24 December 2020",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Western Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Gingin",
+          "Dandaragan",
+          "Ocean Farms Estate",
+          "Lancelin"
+        ],
+        "Start_Date": "2 January 2021",
+        "End_Date": "7 January 2021",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Western Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Postans",
+          "The Spectacles",
+          "Hope Valley",
+          "Kwinana Beach"
+        ],
+        "Start_Date": "3 January 2021",
+        "End_Date": "4 January 2021",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Western Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "High Wycombe"
+        ],
+        "Start_Date": "15 January 2021",
+        "End_Date": "15 January 2021",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Western Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "York"
+        ],
+        "Start_Date": "15 January 2021",
+        "End_Date": "15 January 2021",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Western Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Oakford"
+        ],
+        "Start_Date": "16 January 2021",
+        "End_Date": "16 January 2021",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Western Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Wooroloo",
+          "Wundowie",
+          "Gidgegannup",
+          "Chidlow",
+          "The Vines",
+          "Bullsbrook",
+          "Shady Hills"
+        ],
+        "Start_Date": "1 February 2021",
+        "End_Date": "6 February 2021",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Western Australia"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Injidup",
+          "Yallingup"
+        ],
+        "Start_Date": "5 February 2021",
+        "End_Date": "5 February 2021",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Western Australia"
+      }
+    ],
+    "Main_Event": "Wildfire",
+    "Main_Event_Annotation": "Info_Box",
+    "Start_Date": "August 2020",
+    "End_Date": "June 2021",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Australia"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

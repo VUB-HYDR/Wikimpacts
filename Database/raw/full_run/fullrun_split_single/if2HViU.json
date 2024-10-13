@@ -1,519 +1,521 @@
-{
-  "Event_ID": "if2HViU",
-  "Sources": "https://en.wikipedia.org/wiki/Cyclone_Narelle",
-  "Event_Names": "Cyclone Narelle",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Indonesia"
-      ],
-      "Start_Date": "9 January 2013",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Indonesia"
+[
+  {
+    "Event_ID": "if2HViU",
+    "Sources": "https://en.wikipedia.org/wiki/Cyclone_Narelle",
+    "Event_Names": "Cyclone Narelle",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": [
-        "Western Australia"
-      ],
-      "Start_Date": "9 January 2013",
-      "End_Date": "13 January 2013",
-      "Num": "NULL",
-      "Annotation": "Western Australia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Indonesia",
-      "Locations": [
-        "Selayar Islands"
-      ],
-      "Start_Date": "9 January 2013",
-      "End_Date": "16 January 2013",
-      "Num": "11",
-      "Annotation": "Indonesia"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Indonesia"
+        ],
+        "Start_Date": "9 January 2013",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Indonesia"
+      },
+      {
+        "Administrative_Areas": [
+          "Western Australia"
+        ],
+        "Start_Date": "9 January 2013",
+        "End_Date": "13 January 2013",
+        "Num": "NULL",
+        "Annotation": "Western Australia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Indonesia",
+        "Locations": [
+          "Selayar Islands"
+        ],
+        "Start_Date": "9 January 2013",
+        "End_Date": "16 January 2013",
+        "Num": "11",
+        "Annotation": "Indonesia"
+      },
+      {
+        "Administrative_Area": "Indonesia",
+        "Locations": [
+          "Bali"
+        ],
+        "Start_Date": "10 January 2013",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Indonesia"
+      },
+      {
+        "Administrative_Area": "Indonesia",
+        "Locations": [
+          "Denpasar"
+        ],
+        "Start_Date": "10 January 2013",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Indonesia"
+      },
+      {
+        "Administrative_Area": "Indonesia",
+        "Locations": [
+          "Selemadeg Village"
+        ],
+        "Start_Date": "10 January 2013",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Indonesia"
+      },
+      {
+        "Administrative_Area": "Indonesia",
+        "Locations": [
+          "Jakarta"
+        ],
+        "Start_Date": "10 January 2013",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Indonesia"
+      },
+      {
+        "Administrative_Area": "Indonesia",
+        "Locations": [
+          "Banten"
+        ],
+        "Start_Date": "10 January 2013",
+        "End_Date": "NULL",
+        "Num": "4",
+        "Annotation": "Indonesia"
+      },
+      {
+        "Administrative_Area": "Indonesia",
+        "Locations": [
+          "Banten"
+        ],
+        "Start_Date": "10 January 2013",
+        "End_Date": "NULL",
+        "Num": "10,470 homes",
+        "Annotation": "Indonesia"
+      },
+      {
+        "Administrative_Area": "Western Australia",
+        "Locations": [
+          "North West Australia",
+          "Exmouth"
+        ],
+        "Start_Date": "13 January 2013",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Western Australia"
+      },
+      {
+        "Administrative_Area": "Western Australia",
+        "Locations": [
+          "Karlgarin"
+        ],
+        "Start_Date": "15 January 2013",
+        "End_Date": "16 January 2013",
+        "Num": "NULL",
+        "Annotation": "Western Australia"
+      },
+      {
+        "Administrative_Area": "Western Australia",
+        "Locations": [
+          "Lake Grace"
+        ],
+        "Start_Date": "15 January 2013",
+        "End_Date": "16 January 2013",
+        "Num": "NULL",
+        "Annotation": "Western Australia"
+      },
+      {
+        "Administrative_Area": "Western Australia",
+        "Locations": [
+          "Capel"
+        ],
+        "Start_Date": "15 January 2013",
+        "End_Date": "16 January 2013",
+        "Num": "NULL",
+        "Annotation": "Western Australia"
+      },
+      {
+        "Administrative_Area": "Western Australia",
+        "Locations": [
+          "Perth"
+        ],
+        "Start_Date": "15 January 2013",
+        "End_Date": "16 January 2013",
+        "Num": "NULL",
+        "Annotation": "Western Australia"
+      },
+      {
+        "Administrative_Area": "South Australia",
+        "Locations": [
+          "Lameroo"
+        ],
+        "Start_Date": "15 January 2013",
+        "End_Date": "16 January 2013",
+        "Num": "NULL",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Area": "South Australia",
+        "Locations": [
+          "Adelaide Hills"
+        ],
+        "Start_Date": "15 January 2013",
+        "End_Date": "16 January 2013",
+        "Num": "NULL",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Area": "Tasmania",
+        "Locations": [
+          "Off the coast of Tasmania"
+        ],
+        "Start_Date": "18 January 2013",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Indonesia",
-      "Locations": [
-        "Bali"
-      ],
-      "Start_Date": "10 January 2013",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Indonesia"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Indonesia",
+        "Start_Date": "9 January 2013",
+        "End_Date": "10 January 2013",
+        "Num": "NULL",
+        "Annotation": "Indonesia"
+      },
+      {
+        "Administrative_Areas": "Western Australia",
+        "Start_Date": "11 January 2013",
+        "End_Date": "13 January 2013",
+        "Num": "NULL",
+        "Annotation": "Western Australia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Indonesia",
+        "Locations": [
+          "Bali",
+          "Denpasar",
+          "Jakarta",
+          "Banten"
+        ],
+        "Start_Date": "9 January 2013",
+        "End_Date": "10 January 2013",
+        "Num": "three homes",
+        "Annotation": "Indonesia"
+      },
+      {
+        "Administrative_Area": "Indonesia",
+        "Locations": [
+          "Banten"
+        ],
+        "Start_Date": "9 January 2013",
+        "End_Date": "10 January 2013",
+        "Num": "10,470 homes",
+        "Annotation": "Indonesia"
+      },
+      {
+        "Administrative_Area": "Western Australia",
+        "Locations": [
+          "Karlgarin"
+        ],
+        "Start_Date": "15 January 2013",
+        "End_Date": "16 January 2013",
+        "Num": "eight buildings",
+        "Annotation": "Western Australia"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "14",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Indonesia",
-      "Locations": [
-        "Denpasar"
-      ],
-      "Start_Date": "10 January 2013",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Indonesia"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Indonesia",
+        "Start_Date": "9 January 2013",
+        "End_Date": "10 January 2013",
+        "Num": "14",
+        "Annotation": "Indonesia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Indonesia",
+        "Locations": [
+          "Selayar Islands",
+          "Selemadeg Village",
+          "Banten"
+        ],
+        "Start_Date": "9 January 2013",
+        "End_Date": "10 January 2013",
+        "Num": "14",
+        "Annotation": "Indonesia"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Indonesia",
-      "Locations": [
-        "Selemadeg Village"
-      ],
-      "Start_Date": "10 January 2013",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Indonesia"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Indonesia"
+        ],
+        "Start_Date": "9 January 2013",
+        "End_Date": "10 January 2013",
+        "Num": "NULL",
+        "Annotation": "Indonesia"
+      },
+      {
+        "Administrative_Areas": [
+          "Western Australia"
+        ],
+        "Start_Date": "9 January 2013",
+        "End_Date": "13 January 2013",
+        "Num": "NULL",
+        "Annotation": "Western Australia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Indonesia",
+        "Locations": [
+          "Selayar Islands"
+        ],
+        "Start_Date": "9 January 2013",
+        "End_Date": "16 January 2013",
+        "Num": "11",
+        "Annotation": "Indonesia"
+      },
+      {
+        "Administrative_Area": "Indonesia",
+        "Locations": [
+          "Bali",
+          "West Nusa Tenggara",
+          "Java",
+          "Nusa Penida",
+          "Nusa Lembongan",
+          "Nusa Ceningan"
+        ],
+        "Start_Date": "10 January 2013",
+        "End_Date": "10 January 2013",
+        "Num": "NULL",
+        "Annotation": "Indonesia"
+      },
+      {
+        "Administrative_Area": "Indonesia",
+        "Locations": [
+          "Banten"
+        ],
+        "Start_Date": "10 January 2013",
+        "End_Date": "10 January 2013",
+        "Num": "NULL",
+        "Annotation": "Indonesia"
+      },
+      {
+        "Administrative_Area": "Western Australia",
+        "Locations": [
+          "Whim Creek",
+          "Coral Bay",
+          "Mardie",
+          "Cape Cuvier",
+          "Carnarvon",
+          "Roebourne",
+          "Denham",
+          "Onslow",
+          "Busselton",
+          "Exmouth",
+          "Pilbara",
+          "Karratha",
+          "Carnarvon",
+          "North West Australia",
+          "Ravensthorpe",
+          "Karlgarin",
+          "Lake Grace",
+          "Capel",
+          "Perth"
+        ],
+        "Start_Date": "9 January 2013",
+        "End_Date": "13 January 2013",
+        "Num": "NULL",
+        "Annotation": "Western Australia"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Indonesia",
-      "Locations": [
-        "Jakarta"
-      ],
-      "Start_Date": "10 January 2013",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Indonesia"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Indonesia"
+        ],
+        "Start_Date": "9 January 2013",
+        "End_Date": "10 January 2013",
+        "Num": "NULL",
+        "Annotation": "Indonesia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Indonesia",
+        "Locations": [
+          "Banten"
+        ],
+        "Start_Date": "10 January 2013",
+        "End_Date": "NULL",
+        "Num": "10,470 homes",
+        "Annotation": "Indonesia"
+      },
+      {
+        "Administrative_Area": "Indonesia",
+        "Locations": [
+          "Jakarta"
+        ],
+        "Start_Date": "10 January 2013",
+        "End_Date": "NULL",
+        "Num": "three homes",
+        "Annotation": "Indonesia"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Indonesia",
-      "Locations": [
-        "Banten"
-      ],
-      "Start_Date": "10 January 2013",
-      "End_Date": "NULL",
-      "Num": "4",
-      "Annotation": "Indonesia"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Indonesia",
+        "Start_Date": "9 January 2013",
+        "End_Date": "10 January 2013",
+        "Num": "NULL",
+        "Annotation": "Indonesia"
+      },
+      {
+        "Administrative_Areas": "Western Australia",
+        "Start_Date": "11 January 2013",
+        "End_Date": "13 January 2013",
+        "Num": "NULL",
+        "Annotation": "Western Australia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Indonesia",
+        "Locations": [
+          "Bali",
+          "Jakarta",
+          "Banten"
+        ],
+        "Start_Date": "9 January 2013",
+        "End_Date": "10 January 2013",
+        "Num": "NULL",
+        "Annotation": "Indonesia"
+      },
+      {
+        "Administrative_Area": "Western Australia",
+        "Locations": [
+          "Karlgarin"
+        ],
+        "Start_Date": "15 January 2013",
+        "End_Date": "16 January 2013",
+        "Num": "NULL",
+        "Annotation": "Western Australia"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Indonesia",
-      "Locations": [
-        "Banten"
-      ],
-      "Start_Date": "10 January 2013",
-      "End_Date": "NULL",
-      "Num": "10,470 homes",
-      "Annotation": "Indonesia"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "5 January 2013",
+        "End_Date": "15 January 2013",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Western Australia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Karlgarin"
+        ],
+        "Start_Date": "15 January 2013",
+        "End_Date": "16 January 2013",
+        "Num": "A$70,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Western Australia"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$74,000",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Western Australia",
-      "Locations": [
-        "North West Australia",
-        "Exmouth"
-      ],
-      "Start_Date": "13 January 2013",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Western Australia"
-    },
-    {
-      "Administrative_Area": "Western Australia",
-      "Locations": [
-        "Karlgarin"
-      ],
-      "Start_Date": "15 January 2013",
-      "End_Date": "16 January 2013",
-      "Num": "NULL",
-      "Annotation": "Western Australia"
-    },
-    {
-      "Administrative_Area": "Western Australia",
-      "Locations": [
-        "Lake Grace"
-      ],
-      "Start_Date": "15 January 2013",
-      "End_Date": "16 January 2013",
-      "Num": "NULL",
-      "Annotation": "Western Australia"
-    },
-    {
-      "Administrative_Area": "Western Australia",
-      "Locations": [
-        "Capel"
-      ],
-      "Start_Date": "15 January 2013",
-      "End_Date": "16 January 2013",
-      "Num": "NULL",
-      "Annotation": "Western Australia"
-    },
-    {
-      "Administrative_Area": "Western Australia",
-      "Locations": [
-        "Perth"
-      ],
-      "Start_Date": "15 January 2013",
-      "End_Date": "16 January 2013",
-      "Num": "NULL",
-      "Annotation": "Western Australia"
-    },
-    {
-      "Administrative_Area": "South Australia",
-      "Locations": [
-        "Lameroo"
-      ],
-      "Start_Date": "15 January 2013",
-      "End_Date": "16 January 2013",
-      "Num": "NULL",
-      "Annotation": "Elsewhere"
-    },
-    {
-      "Administrative_Area": "South Australia",
-      "Locations": [
-        "Adelaide Hills"
-      ],
-      "Start_Date": "15 January 2013",
-      "End_Date": "16 January 2013",
-      "Num": "NULL",
-      "Annotation": "Elsewhere"
-    },
-    {
-      "Administrative_Area": "Tasmania",
-      "Locations": [
-        "Off the coast of Tasmania"
-      ],
-      "Start_Date": "18 January 2013",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Elsewhere"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Indonesia",
-      "Start_Date": "9 January 2013",
-      "End_Date": "10 January 2013",
-      "Num": "NULL",
-      "Annotation": "Indonesia"
-    },
-    {
-      "Administrative_Areas": "Western Australia",
-      "Start_Date": "11 January 2013",
-      "End_Date": "13 January 2013",
-      "Num": "NULL",
-      "Annotation": "Western Australia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Indonesia",
-      "Locations": [
-        "Bali",
-        "Denpasar",
-        "Jakarta",
-        "Banten"
-      ],
-      "Start_Date": "9 January 2013",
-      "End_Date": "10 January 2013",
-      "Num": "three homes",
-      "Annotation": "Indonesia"
-    },
-    {
-      "Administrative_Area": "Indonesia",
-      "Locations": [
-        "Banten"
-      ],
-      "Start_Date": "9 January 2013",
-      "End_Date": "10 January 2013",
-      "Num": "10,470 homes",
-      "Annotation": "Indonesia"
-    },
-    {
-      "Administrative_Area": "Western Australia",
-      "Locations": [
-        "Karlgarin"
-      ],
-      "Start_Date": "15 January 2013",
-      "End_Date": "16 January 2013",
-      "Num": "eight buildings",
-      "Annotation": "Western Australia"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "14",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Indonesia",
-      "Start_Date": "9 January 2013",
-      "End_Date": "10 January 2013",
-      "Num": "14",
-      "Annotation": "Indonesia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Indonesia",
-      "Locations": [
-        "Selayar Islands",
-        "Selemadeg Village",
-        "Banten"
-      ],
-      "Start_Date": "9 January 2013",
-      "End_Date": "10 January 2013",
-      "Num": "14",
-      "Annotation": "Indonesia"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Indonesia"
-      ],
-      "Start_Date": "9 January 2013",
-      "End_Date": "10 January 2013",
-      "Num": "NULL",
-      "Annotation": "Indonesia"
-    },
-    {
-      "Administrative_Areas": [
-        "Western Australia"
-      ],
-      "Start_Date": "9 January 2013",
-      "End_Date": "13 January 2013",
-      "Num": "NULL",
-      "Annotation": "Western Australia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Indonesia",
-      "Locations": [
-        "Selayar Islands"
-      ],
-      "Start_Date": "9 January 2013",
-      "End_Date": "16 January 2013",
-      "Num": "11",
-      "Annotation": "Indonesia"
-    },
-    {
-      "Administrative_Area": "Indonesia",
-      "Locations": [
-        "Bali",
-        "West Nusa Tenggara",
-        "Java",
-        "Nusa Penida",
-        "Nusa Lembongan",
-        "Nusa Ceningan"
-      ],
-      "Start_Date": "10 January 2013",
-      "End_Date": "10 January 2013",
-      "Num": "NULL",
-      "Annotation": "Indonesia"
-    },
-    {
-      "Administrative_Area": "Indonesia",
-      "Locations": [
-        "Banten"
-      ],
-      "Start_Date": "10 January 2013",
-      "End_Date": "10 January 2013",
-      "Num": "NULL",
-      "Annotation": "Indonesia"
-    },
-    {
-      "Administrative_Area": "Western Australia",
-      "Locations": [
-        "Whim Creek",
-        "Coral Bay",
-        "Mardie",
-        "Cape Cuvier",
-        "Carnarvon",
-        "Roebourne",
-        "Denham",
-        "Onslow",
-        "Busselton",
-        "Exmouth",
-        "Pilbara",
-        "Karratha",
-        "Carnarvon",
-        "North West Australia",
-        "Ravensthorpe",
-        "Karlgarin",
-        "Lake Grace",
-        "Capel",
-        "Perth"
-      ],
-      "Start_Date": "9 January 2013",
-      "End_Date": "13 January 2013",
-      "Num": "NULL",
-      "Annotation": "Western Australia"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "Indonesia"
-      ],
-      "Start_Date": "9 January 2013",
-      "End_Date": "10 January 2013",
-      "Num": "NULL",
-      "Annotation": "Indonesia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Indonesia",
-      "Locations": [
-        "Banten"
-      ],
-      "Start_Date": "10 January 2013",
-      "End_Date": "NULL",
-      "Num": "10,470 homes",
-      "Annotation": "Indonesia"
-    },
-    {
-      "Administrative_Area": "Indonesia",
-      "Locations": [
-        "Jakarta"
-      ],
-      "Start_Date": "10 January 2013",
-      "End_Date": "NULL",
-      "Num": "three homes",
-      "Annotation": "Indonesia"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Indonesia",
-      "Start_Date": "9 January 2013",
-      "End_Date": "10 January 2013",
-      "Num": "NULL",
-      "Annotation": "Indonesia"
-    },
-    {
-      "Administrative_Areas": "Western Australia",
-      "Start_Date": "11 January 2013",
-      "End_Date": "13 January 2013",
-      "Num": "NULL",
-      "Annotation": "Western Australia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Indonesia",
-      "Locations": [
-        "Bali",
-        "Jakarta",
-        "Banten"
-      ],
-      "Start_Date": "9 January 2013",
-      "End_Date": "10 January 2013",
-      "Num": "NULL",
-      "Annotation": "Indonesia"
-    },
-    {
-      "Administrative_Area": "Western Australia",
-      "Locations": [
-        "Karlgarin"
-      ],
-      "Start_Date": "15 January 2013",
-      "End_Date": "16 January 2013",
-      "Num": "NULL",
-      "Annotation": "Western Australia"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "5 January 2013",
-      "End_Date": "15 January 2013",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Western Australia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Karlgarin"
-      ],
-      "Start_Date": "15 January 2013",
-      "End_Date": "16 January 2013",
-      "Num": "A$70,000",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Western Australia"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$74,000",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "Western Australia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$74,000",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Western Australia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Western Australia",
-      "Locations": [
-        "Karlgarin"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$74,000",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Western Australia"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood|Lightning",
-  "Hazards_Annotation": "Info_Box|Indonesia|Western Australia",
-  "Start_Date": "5 January 2013",
-  "End_Date": "15 January 2013",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "East Timor",
-    "Indonesia",
-    "Australia"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Western Australia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$74,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Western Australia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Western Australia",
+        "Locations": [
+          "Karlgarin"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$74,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Western Australia"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood|Lightning",
+    "Hazards_Annotation": "Info_Box|Indonesia|Western Australia",
+    "Start_Date": "5 January 2013",
+    "End_Date": "15 January 2013",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "East Timor",
+      "Indonesia",
+      "Australia"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

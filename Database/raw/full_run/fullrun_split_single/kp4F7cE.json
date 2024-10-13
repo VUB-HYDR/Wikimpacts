@@ -1,306 +1,308 @@
-{
-  "Event_ID": "kp4F7cE",
-  "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Aere_(2011)",
-  "Event_Names": "Tropical Storm Aere (2011)",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Philippines"
-      ],
-      "Start_Date": "8 May 2011",
-      "End_Date": "NULL",
-      "Num": "More than 100,000 villagers",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Albay province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "63,964",
-      "Annotation": "Philippines"
+[
+  {
+    "Event_ID": "kp4F7cE",
+    "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Aere_(2011)",
+    "Event_Names": "Tropical Storm Aere (2011)",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Catanduanes and surrounding areas"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1,379",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "8 May 2011",
+        "End_Date": "NULL",
+        "Num": "More than 100,000 villagers",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Albay province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "63,964",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Catanduanes and surrounding areas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,379",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Port of Lucena"
+        ],
+        "Start_Date": "8 May 2011",
+        "End_Date": "NULL",
+        "Num": "210",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Port of Romblon"
+        ],
+        "Start_Date": "8 May 2011",
+        "End_Date": "NULL",
+        "Num": "125",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Port of Lucena"
-      ],
-      "Start_Date": "8 May 2011",
-      "End_Date": "NULL",
-      "Num": "210",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "8 May 2011",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Catarman, Northern Samar"
+        ],
+        "Start_Date": "8 May 2011",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "44 direct, 4 indirect",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Port of Romblon"
-      ],
-      "Start_Date": "8 May 2011",
-      "End_Date": "NULL",
-      "Num": "125",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "8 May 2011",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Catarman, Northern Samar"
-      ],
-      "Start_Date": "8 May 2011",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "44 direct, 4 indirect",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "Philippines"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "at least 35",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "at least 35",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "More than 100,000 villagers",
-    "Total_Displaced_Annotation": "Philippines"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "8 May",
-      "End_Date": "NULL",
-      "Num": "More than 100,000 villagers",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Albay province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "63,964",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 35",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 35",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "More than 100,000 villagers",
+      "Total_Displaced_Annotation": "Philippines"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Mayon volcano in Albay province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Thousands",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "More than 100,000 villagers",
-    "Total_Homeless_Annotation": "Philippines"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "8 May",
-      "End_Date": "NULL",
-      "Num": "More than 100,000 villagers",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "towns threatened by landslides",
-        "farms around Mayon volcano in Albay province"
-      ],
-      "Start_Date": "8 May",
-      "End_Date": "NULL",
-      "Num": "More than 100,000 villagers",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Catanduanes",
-        "Lucena",
-        "Romblon",
-        "Albay",
-        "Sorsogon",
-        "Northern Samar"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Philippines"
-      ],
-      "Start_Date": "8 May 2011",
-      "End_Date": "15 May 2011",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "8 May",
+        "End_Date": "NULL",
+        "Num": "More than 100,000 villagers",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Albay province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "63,964",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Mayon volcano in Albay province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Thousands",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "More than 100,000 villagers",
+      "Total_Homeless_Annotation": "Philippines"
     },
-    {
-      "Administrative_Areas": [
-        "Japan"
-      ],
-      "Start_Date": "8 May 2011",
-      "End_Date": "15 May 2011",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Luzon",
-        "Visayas",
-        "Albay province",
-        "Catanduanes",
-        "Northern Samar"
-      ],
-      "Start_Date": "8 May 2011",
-      "End_Date": "15 May 2011",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$34.4 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "Philippines"
-      ],
-      "Start_Date": "5 May 2011",
-      "End_Date": "15 May 2011",
-      "Num": "PHP1.37 billion",
-      "Num_Unit": "PHP",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Luzon"
-      ],
-      "Start_Date": "5 May 2011",
-      "End_Date": "15 May 2011",
-      "Num": "118 million pesos",
-      "Num_Unit": "PHP",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Philippines",
-  "Start_Date": "5 May 2011",
-  "End_Date": "15 May 2011",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Philippines",
-    "Japan",
-    "Taiwan"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "8 May",
+        "End_Date": "NULL",
+        "Num": "More than 100,000 villagers",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "towns threatened by landslides",
+          "farms around Mayon volcano in Albay province"
+        ],
+        "Start_Date": "8 May",
+        "End_Date": "NULL",
+        "Num": "More than 100,000 villagers",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Catanduanes",
+          "Lucena",
+          "Romblon",
+          "Albay",
+          "Sorsogon",
+          "Northern Samar"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "8 May 2011",
+        "End_Date": "15 May 2011",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": [
+          "Japan"
+        ],
+        "Start_Date": "8 May 2011",
+        "End_Date": "15 May 2011",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Luzon",
+          "Visayas",
+          "Albay province",
+          "Catanduanes",
+          "Northern Samar"
+        ],
+        "Start_Date": "8 May 2011",
+        "End_Date": "15 May 2011",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$34.4 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "5 May 2011",
+        "End_Date": "15 May 2011",
+        "Num": "PHP1.37 billion",
+        "Num_Unit": "PHP",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Luzon"
+        ],
+        "Start_Date": "5 May 2011",
+        "End_Date": "15 May 2011",
+        "Num": "118 million pesos",
+        "Num_Unit": "PHP",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Philippines",
+    "Start_Date": "5 May 2011",
+    "End_Date": "15 May 2011",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Philippines",
+      "Japan",
+      "Taiwan"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

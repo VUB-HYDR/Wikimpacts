@@ -1,511 +1,513 @@
-{
-  "Event_ID": "DPloYBq",
-  "Sources": "https://en.wikipedia.org/wiki/2013_Southwest_China_floods",
-  "Event_Names": "2013 Southwest China floods",
-  "Total_Summary_Affected": {
-    "Total_Affected": "6 million",
-    "Total_Affected_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "China"
-      ],
-      "Start_Date": "6 July 2013",
-      "End_Date": "September 2013",
-      "Num": "6 million",
-      "Annotation": "Floods and damage"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Sichuan"
-      ],
-      "Start_Date": "6 July 2013",
-      "End_Date": "11 July 2013",
-      "Num": "220,000",
-      "Annotation": "Floods and damage"
+[
+  {
+    "Event_ID": "DPloYBq",
+    "Sources": "https://en.wikipedia.org/wiki/2013_Southwest_China_floods",
+    "Event_Names": "2013 Southwest China floods",
+    "Total_Summary_Affected": {
+      "Total_Affected": "6 million",
+      "Total_Affected_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Sichuan"
-      ],
-      "Start_Date": "10 July 2013",
-      "End_Date": "10 July 2013",
-      "Num": "2000",
-      "Annotation": "Floods and damage"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "China"
+        ],
+        "Start_Date": "6 July 2013",
+        "End_Date": "September 2013",
+        "Num": "6 million",
+        "Annotation": "Floods and damage"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Sichuan"
+        ],
+        "Start_Date": "6 July 2013",
+        "End_Date": "11 July 2013",
+        "Num": "220,000",
+        "Annotation": "Floods and damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Sichuan"
+        ],
+        "Start_Date": "10 July 2013",
+        "End_Date": "10 July 2013",
+        "Num": "2000",
+        "Annotation": "Floods and damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Yunnan"
+        ],
+        "Start_Date": "6 July 2013",
+        "End_Date": "11 July 2013",
+        "Num": "NULL",
+        "Annotation": "Floods and damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Shanxi"
+        ],
+        "Start_Date": "9 July 2013",
+        "End_Date": "9 July 2013",
+        "Num": "12",
+        "Annotation": "Floods and damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Beijing"
+        ],
+        "Start_Date": "6 July 2013",
+        "End_Date": "11 July 2013",
+        "Num": "NULL",
+        "Annotation": "Floods and damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Inner Mongolia"
+        ],
+        "Start_Date": "6 July 2013",
+        "End_Date": "11 July 2013",
+        "Num": "NULL",
+        "Annotation": "Floods and damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Gansu"
+        ],
+        "Start_Date": "6 July 2013",
+        "End_Date": "11 July 2013",
+        "Num": "NULL",
+        "Annotation": "Floods and damage"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Yunnan"
-      ],
-      "Start_Date": "6 July 2013",
-      "End_Date": "11 July 2013",
-      "Num": "NULL",
-      "Annotation": "Floods and damage"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "6 July 2013",
+        "End_Date": "September 2013",
+        "Num": "NULL",
+        "Annotation": "Floods and damage"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Sichuan"
+        ],
+        "Start_Date": "6 July 2013",
+        "End_Date": "September 2013",
+        "Num": "300 dings",
+        "Annotation": "Floods and damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Yunnan"
+        ],
+        "Start_Date": "6 July 2013",
+        "End_Date": "September 2013",
+        "Num": "5,280 homes",
+        "Annotation": "Floods and damage"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "73",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Shanxi"
-      ],
-      "Start_Date": "9 July 2013",
-      "End_Date": "9 July 2013",
-      "Num": "12",
-      "Annotation": "Floods and damage"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "6 July 2013",
+        "End_Date": "September 2013",
+        "Num": "46",
+        "Annotation": "Floods and damage"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Sichuan"
+        ],
+        "Start_Date": "6 July 2013",
+        "End_Date": "11 July 2013",
+        "Num": "31",
+        "Annotation": "Floods and damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Dujiangyan, Sichuan"
+        ],
+        "Start_Date": "10 July 2013",
+        "End_Date": "11 July 2013",
+        "Num": "18",
+        "Annotation": "Floods and damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Aba, Sichuan"
+        ],
+        "Start_Date": "6 July 2013",
+        "End_Date": "11 July 2013",
+        "Num": "3",
+        "Annotation": "Floods and damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Suijiang, Yunnan"
+        ],
+        "Start_Date": "6 July 2013",
+        "End_Date": "11 July 2013",
+        "Num": "4",
+        "Annotation": "Floods and damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Shouyang, Shanxi"
+        ],
+        "Start_Date": "9 July 2013",
+        "End_Date": "9 July 2013",
+        "Num": "12",
+        "Annotation": "Floods and damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Outside Beijing"
+        ],
+        "Start_Date": "6 July 2013",
+        "End_Date": "11 July 2013",
+        "Num": "3",
+        "Annotation": "Floods and damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Guangdong Province"
+        ],
+        "Start_Date": "August 2013",
+        "End_Date": "15\u201316 August 2013",
+        "Num": "4",
+        "Annotation": "August storms"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Dongguan, Guangdong Province"
+        ],
+        "Start_Date": "15\u201316 August 2013",
+        "End_Date": "15\u201316 August 2013",
+        "Num": "1",
+        "Annotation": "August storms"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Guangxi"
+        ],
+        "Start_Date": "16 August 2013",
+        "End_Date": "16 August 2013",
+        "Num": "6",
+        "Annotation": "August storms"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Hunan"
+        ],
+        "Start_Date": "August 2013",
+        "End_Date": "August 2013",
+        "Num": "5",
+        "Annotation": "August storms"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Fujian Province"
+        ],
+        "Start_Date": "22 August 2013",
+        "End_Date": "22 August 2013",
+        "Num": "NULL",
+        "Annotation": "August storms"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Guangxi"
+        ],
+        "Start_Date": "22 August 2013",
+        "End_Date": "22 August 2013",
+        "Num": "2",
+        "Annotation": "August storms"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Beijing"
-      ],
-      "Start_Date": "6 July 2013",
-      "End_Date": "11 July 2013",
-      "Num": "NULL",
-      "Annotation": "Floods and damage"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "China"
+        ],
+        "Start_Date": "6 July 2013",
+        "End_Date": "September 2013",
+        "Num": "NULL",
+        "Annotation": "Floods and damage"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Sichuan"
+        ],
+        "Start_Date": "6 July 2013",
+        "End_Date": "September 2013",
+        "Num": "more than 220,000",
+        "Annotation": "Floods and damage"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Inner Mongolia"
-      ],
-      "Start_Date": "6 July 2013",
-      "End_Date": "11 July 2013",
-      "Num": "NULL",
-      "Annotation": "Floods and damage"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "6 July 2013",
+        "End_Date": "September 2013",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Sichuan"
+        ],
+        "Start_Date": "6 July 2013",
+        "End_Date": "September 2013",
+        "Num": "more than 220,000 people",
+        "Annotation": "Floods and damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Yunnan"
+        ],
+        "Start_Date": "6 July 2013",
+        "End_Date": "September 2013",
+        "Num": "5,280 homes",
+        "Annotation": "Floods and damage"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Gansu"
-      ],
-      "Start_Date": "6 July 2013",
-      "End_Date": "11 July 2013",
-      "Num": "NULL",
-      "Annotation": "Floods and damage"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "China",
-      "Start_Date": "6 July 2013",
-      "End_Date": "September 2013",
-      "Num": "NULL",
-      "Annotation": "Floods and damage"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Sichuan"
-      ],
-      "Start_Date": "6 July 2013",
-      "End_Date": "September 2013",
-      "Num": "300 dings",
-      "Annotation": "Floods and damage"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "China"
+        ],
+        "Start_Date": "6 July 2013",
+        "End_Date": "September 2013",
+        "Num": "NULL",
+        "Annotation": "Floods and damage"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Dujiangyan City, Sichuan"
+        ],
+        "Start_Date": "10 July 2013",
+        "End_Date": "10 July 2013",
+        "Num": "NULL",
+        "Annotation": "Floods and damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Aba, Sichuan"
+        ],
+        "Start_Date": "6 July 2013",
+        "End_Date": "September 2013",
+        "Num": "NULL",
+        "Annotation": "Floods and damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Shouyang, Shanxi"
+        ],
+        "Start_Date": "9 July 2013",
+        "End_Date": "9 July 2013",
+        "Num": "NULL",
+        "Annotation": "Floods and damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Outside Beijing"
+        ],
+        "Start_Date": "6 July 2013",
+        "End_Date": "September 2013",
+        "Num": "NULL",
+        "Annotation": "Floods and damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Inner Mongolia"
+        ],
+        "Start_Date": "6 July 2013",
+        "End_Date": "September 2013",
+        "Num": "NULL",
+        "Annotation": "Floods and damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Gansu"
+        ],
+        "Start_Date": "6 July 2013",
+        "End_Date": "September 2013",
+        "Num": "NULL",
+        "Annotation": "Floods and damage"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Yunnan"
-      ],
-      "Start_Date": "6 July 2013",
-      "End_Date": "September 2013",
-      "Num": "5,280 homes",
-      "Annotation": "Floods and damage"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "73",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "China",
-      "Start_Date": "6 July 2013",
-      "End_Date": "September 2013",
-      "Num": "46",
-      "Annotation": "Floods and damage"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Sichuan"
-      ],
-      "Start_Date": "6 July 2013",
-      "End_Date": "11 July 2013",
-      "Num": "31",
-      "Annotation": "Floods and damage"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "China"
+        ],
+        "Start_Date": "6 July 2013",
+        "End_Date": "September 2013",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "2013 Southwest China floods"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Sichuan",
+          "Yunnan"
+        ],
+        "Start_Date": "6 July 2013",
+        "End_Date": "September 2013",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Floods and damage"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$7.52 billion",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Dujiangyan, Sichuan"
-      ],
-      "Start_Date": "10 July 2013",
-      "End_Date": "11 July 2013",
-      "Num": "18",
-      "Annotation": "Floods and damage"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Aba, Sichuan"
-      ],
-      "Start_Date": "6 July 2013",
-      "End_Date": "11 July 2013",
-      "Num": "3",
-      "Annotation": "Floods and damage"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Suijiang, Yunnan"
-      ],
-      "Start_Date": "6 July 2013",
-      "End_Date": "11 July 2013",
-      "Num": "4",
-      "Annotation": "Floods and damage"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Shouyang, Shanxi"
-      ],
-      "Start_Date": "9 July 2013",
-      "End_Date": "9 July 2013",
-      "Num": "12",
-      "Annotation": "Floods and damage"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Outside Beijing"
-      ],
-      "Start_Date": "6 July 2013",
-      "End_Date": "11 July 2013",
-      "Num": "3",
-      "Annotation": "Floods and damage"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Guangdong Province"
-      ],
-      "Start_Date": "August 2013",
-      "End_Date": "15\u201316 August 2013",
-      "Num": "4",
-      "Annotation": "August storms"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Dongguan, Guangdong Province"
-      ],
-      "Start_Date": "15\u201316 August 2013",
-      "End_Date": "15\u201316 August 2013",
-      "Num": "1",
-      "Annotation": "August storms"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Guangxi"
-      ],
-      "Start_Date": "16 August 2013",
-      "End_Date": "16 August 2013",
-      "Num": "6",
-      "Annotation": "August storms"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Hunan"
-      ],
-      "Start_Date": "August 2013",
-      "End_Date": "August 2013",
-      "Num": "5",
-      "Annotation": "August storms"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Fujian Province"
-      ],
-      "Start_Date": "22 August 2013",
-      "End_Date": "22 August 2013",
-      "Num": "NULL",
-      "Annotation": "August storms"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Guangxi"
-      ],
-      "Start_Date": "22 August 2013",
-      "End_Date": "22 August 2013",
-      "Num": "2",
-      "Annotation": "August storms"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "China"
-      ],
-      "Start_Date": "6 July 2013",
-      "End_Date": "September 2013",
-      "Num": "NULL",
-      "Annotation": "Floods and damage"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Sichuan"
-      ],
-      "Start_Date": "6 July 2013",
-      "End_Date": "September 2013",
-      "Num": "more than 220,000",
-      "Annotation": "Floods and damage"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "China",
-      "Start_Date": "6 July 2013",
-      "End_Date": "September 2013",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Sichuan"
-      ],
-      "Start_Date": "6 July 2013",
-      "End_Date": "September 2013",
-      "Num": "more than 220,000 people",
-      "Annotation": "Floods and damage"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Yunnan"
-      ],
-      "Start_Date": "6 July 2013",
-      "End_Date": "September 2013",
-      "Num": "5,280 homes",
-      "Annotation": "Floods and damage"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "China"
-      ],
-      "Start_Date": "6 July 2013",
-      "End_Date": "September 2013",
-      "Num": "NULL",
-      "Annotation": "Floods and damage"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Dujiangyan City, Sichuan"
-      ],
-      "Start_Date": "10 July 2013",
-      "End_Date": "10 July 2013",
-      "Num": "NULL",
-      "Annotation": "Floods and damage"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Aba, Sichuan"
-      ],
-      "Start_Date": "6 July 2013",
-      "End_Date": "September 2013",
-      "Num": "NULL",
-      "Annotation": "Floods and damage"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Shouyang, Shanxi"
-      ],
-      "Start_Date": "9 July 2013",
-      "End_Date": "9 July 2013",
-      "Num": "NULL",
-      "Annotation": "Floods and damage"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Outside Beijing"
-      ],
-      "Start_Date": "6 July 2013",
-      "End_Date": "September 2013",
-      "Num": "NULL",
-      "Annotation": "Floods and damage"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Inner Mongolia"
-      ],
-      "Start_Date": "6 July 2013",
-      "End_Date": "September 2013",
-      "Num": "NULL",
-      "Annotation": "Floods and damage"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Gansu"
-      ],
-      "Start_Date": "6 July 2013",
-      "End_Date": "September 2013",
-      "Num": "NULL",
-      "Annotation": "Floods and damage"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "China"
-      ],
-      "Start_Date": "6 July 2013",
-      "End_Date": "September 2013",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "2013 Southwest China floods"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Sichuan",
-        "Yunnan"
-      ],
-      "Start_Date": "6 July 2013",
-      "End_Date": "September 2013",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Floods and damage"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$7.52 billion",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "China"
-      ],
-      "Start_Date": "6 July 2013",
-      "End_Date": "September 2013",
-      "Num": "$7.52 billion",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Guangdong Province"
-      ],
-      "Start_Date": "August 2013",
-      "End_Date": "August 2013",
-      "Num": "$6.6 billion",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "August storms"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Guangxi"
-      ],
-      "Start_Date": "August 2013",
-      "End_Date": "August 2013",
-      "Num": "$62.5 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "August storms"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Fujian Province"
-      ],
-      "Start_Date": "22 August 2013",
-      "End_Date": "22 August 2013",
-      "Num": "$406 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "August storms"
-    }
-  ],
-  "Main_Event": "Flood",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Flood",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "6 July 2013",
-  "End_Date": "September 2013",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "China"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "China"
+        ],
+        "Start_Date": "6 July 2013",
+        "End_Date": "September 2013",
+        "Num": "$7.52 billion",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Guangdong Province"
+        ],
+        "Start_Date": "August 2013",
+        "End_Date": "August 2013",
+        "Num": "$6.6 billion",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "August storms"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Guangxi"
+        ],
+        "Start_Date": "August 2013",
+        "End_Date": "August 2013",
+        "Num": "$62.5 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "August storms"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Fujian Province"
+        ],
+        "Start_Date": "22 August 2013",
+        "End_Date": "22 August 2013",
+        "Num": "$406 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "August storms"
+      }
+    ],
+    "Main_Event": "Flood",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Flood",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "6 July 2013",
+    "End_Date": "September 2013",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "China"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

@@ -1,526 +1,528 @@
-{
-  "Event_ID": "rmjm7nI",
-  "Sources": "https://en.wikipedia.org/wiki/1928_Haiti_hurricane",
-  "Event_Names": "1928 Haiti hurricane",
-  "Total_Summary_Affected": {
-    "Total_Affected": "approximately 10,000 people homeless",
-    "Total_Affected_Annotation": "Greater Antilles"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Haiti"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "approximately 10,000 people homeless",
-      "Annotation": "Greater Antilles"
+[
+  {
+    "Event_ID": "rmjm7nI",
+    "Sources": "https://en.wikipedia.org/wiki/1928_Haiti_hurricane",
+    "Event_Names": "1928 Haiti hurricane",
+    "Total_Summary_Affected": {
+      "Total_Affected": "approximately 10,000 people homeless",
+      "Total_Affected_Annotation": "Greater Antilles"
     },
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "United States"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Haiti",
-      "Locations": [
-        "Saint-Louis-du-Sud",
-        "Grand-Boucan",
-        "Petit Trou",
-        "Mirago\u00e2ne",
-        "Belle-Riviere"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": [
-        "over 10,000 people homeless",
-        "at least 200 deaths",
-        "26 in Mirago\u00e2ne",
-        "12 at a single dwelling in Belle-Riviere"
-      ],
-      "Annotation": "Greater Antilles"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Haiti"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "approximately 10,000 people homeless",
+        "Annotation": "Greater Antilles"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "United States"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Saint-Louis-du-Sud",
+          "Grand-Boucan",
+          "Petit Trou",
+          "Mirago\u00e2ne",
+          "Belle-Riviere"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": [
+          "over 10,000 people homeless",
+          "at least 200 deaths",
+          "26 in Mirago\u00e2ne",
+          "12 at a single dwelling in Belle-Riviere"
+        ],
+        "Annotation": "Greater Antilles"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina",
+          "South Carolina",
+          "Virginia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": [
+          "Six people were killed in North Carolina",
+          "Two deaths occurred in South Carolina",
+          "Two deaths occurred in Virginia"
+        ],
+        "Annotation": "United States"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "North Carolina",
-        "South Carolina",
-        "Virginia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": [
-        "Six people were killed in North Carolina",
-        "Two deaths occurred in South Carolina",
-        "Two deaths occurred in Virginia"
-      ],
-      "Annotation": "United States"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Haiti",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Greater Antilles"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Haiti",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Greater Antilles"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "United States"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Saint-Louis-du-Sud"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "only two buildings retaining their roofs",
+        "Annotation": "Greater Antilles"
+      },
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Grand-Boucan",
+          "Petit Trou"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "approximately 80% of buildings flattened",
+        "Annotation": "Greater Antilles"
+      },
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Mirago\u00e2ne"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Greater Antilles"
+      },
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Belle-Riviere"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Greater Antilles"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Boca Grande"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Seaboard Air Line Railroad station destroyed",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Sarasota"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Plate glass damaged and signs, trees, and telephone poles knocked down",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "St. Petersburg"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Several streets closed due to flooding or debris",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Bath"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 50 homes destroyed",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Newberry County"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "scores of dwellings severely damaged",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Ashley Heights"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Altavista"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "11 buildings flooded",
+        "Annotation": "United States"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "at least 210",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "United States"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Haiti",
-      "Locations": [
-        "Saint-Louis-du-Sud"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "only two buildings retaining their roofs",
-      "Annotation": "Greater Antilles"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Haiti",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 200",
+        "Annotation": "Greater Antilles"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "6",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "United States"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Mirago\u00e2ne",
+          "Belle-Riviere"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "26",
+        "Annotation": "Greater Antilles"
+      },
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Belle-Riviere"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "12",
+        "Annotation": "Greater Antilles"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "6",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "South Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Virginia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "United States"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Haiti",
-      "Locations": [
-        "Grand-Boucan",
-        "Petit Trou"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "approximately 80% of buildings flattened",
-      "Annotation": "Greater Antilles"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Haiti"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "approximately 10,000 people",
+        "Annotation": "Greater Antilles"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "200 families",
+        "Annotation": "United States"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Saint-Louis-du-Sud"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Greater Antilles"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Augusta"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "200 families",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Tryon"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Asheville"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "hundreds of",
+        "Annotation": "United States"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "approximately 10,000 people",
+      "Total_Homeless_Annotation": "Greater Antilles"
     },
-    {
-      "Administrative_Area": "Haiti",
-      "Locations": [
-        "Mirago\u00e2ne"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Greater Antilles"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Haiti",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "approximately 10,000 people",
+        "Annotation": "Greater Antilles"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Saint-Louis-du-Sud",
+          "Grand-Boucan",
+          "Petit Trou",
+          "Mirago\u00e2ne",
+          "Belle-Riviere"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Greater Antilles"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Haiti",
-      "Locations": [
-        "Belle-Riviere"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Greater Antilles"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "United States"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Bath"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "one",
+        "Annotation": "United States"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Boca Grande"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Seaboard Air Line Railroad station destroyed",
-      "Annotation": "United States"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$2 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Sarasota"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Plate glass damaged and signs, trees, and telephone poles knocked down",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "St. Petersburg"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Several streets closed due to flooding or debris",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Bath"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "at least 50 homes destroyed",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Newberry County"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "scores of dwellings severely damaged",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Ashley Heights"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Altavista"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "11 buildings flooded",
-      "Annotation": "United States"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "at least 210",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Haiti",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "at least 200",
-      "Annotation": "Greater Antilles"
-    },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "6",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "United States"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Haiti",
-      "Locations": [
-        "Mirago\u00e2ne",
-        "Belle-Riviere"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "26",
-      "Annotation": "Greater Antilles"
-    },
-    {
-      "Administrative_Area": "Haiti",
-      "Locations": [
-        "Belle-Riviere"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "12",
-      "Annotation": "Greater Antilles"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "North Carolina"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "6",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "South Carolina"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Virginia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "United States"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Haiti"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "approximately 10,000 people",
-      "Annotation": "Greater Antilles"
-    },
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "200 families",
-      "Annotation": "United States"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Haiti",
-      "Locations": [
-        "Saint-Louis-du-Sud"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Greater Antilles"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Augusta"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "200 families",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Tryon"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Asheville"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "hundreds of",
-      "Annotation": "United States"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "approximately 10,000 people",
-    "Total_Homeless_Annotation": "Greater Antilles"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Haiti",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "approximately 10,000 people",
-      "Annotation": "Greater Antilles"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Haiti",
-      "Locations": [
-        "Saint-Louis-du-Sud",
-        "Grand-Boucan",
-        "Petit Trou",
-        "Mirago\u00e2ne",
-        "Belle-Riviere"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Greater Antilles"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "United States"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Bath"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "one",
-      "Annotation": "United States"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "NULL",
-      "Locations": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$2 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": "Haiti",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$1 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Greater Antilles"
-    },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "over $1 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "United States"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Haiti",
-      "Locations": [
-        "Saint-Louis-du-Sud",
-        "Grand-Boucan",
-        "Petit Trou",
-        "Mirago\u00e2ne",
-        "Belle-Riviere"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$1 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Greater Antilles"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Boca Grande",
-        "Sarasota",
-        "St. Petersburg",
-        "Cedar Key",
-        "Florida Panhandle",
-        "Quitman",
-        "Macon",
-        "Milledgeville",
-        "Augusta",
-        "Spartanburg",
-        "Bath",
-        "Newberry County",
-        "Tryon",
-        "Asheville",
-        "Marshall",
-        "Burke County",
-        "Brookneal",
-        "Roanoke",
-        "Altavista",
-        "Fincastle",
-        "Clifton Forge",
-        "Covington"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "over $1 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "United States"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Greater Antilles|United States",
-  "Start_Date": "August 7, 1928",
-  "End_Date": "August 17, 1928",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Haiti",
-    "Cuba",
-    "United States"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Haiti",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$1 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Greater Antilles"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "over $1 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "United States"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Saint-Louis-du-Sud",
+          "Grand-Boucan",
+          "Petit Trou",
+          "Mirago\u00e2ne",
+          "Belle-Riviere"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$1 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Greater Antilles"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Boca Grande",
+          "Sarasota",
+          "St. Petersburg",
+          "Cedar Key",
+          "Florida Panhandle",
+          "Quitman",
+          "Macon",
+          "Milledgeville",
+          "Augusta",
+          "Spartanburg",
+          "Bath",
+          "Newberry County",
+          "Tryon",
+          "Asheville",
+          "Marshall",
+          "Burke County",
+          "Brookneal",
+          "Roanoke",
+          "Altavista",
+          "Fincastle",
+          "Clifton Forge",
+          "Covington"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "over $1 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "United States"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Greater Antilles|United States",
+    "Start_Date": "August 7, 1928",
+    "End_Date": "August 17, 1928",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Haiti",
+      "Cuba",
+      "United States"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

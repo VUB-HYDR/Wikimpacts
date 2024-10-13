@@ -1,424 +1,426 @@
-{
-  "Event_ID": "iLWPUY3",
-  "Sources": "https://en.wikipedia.org/wiki/Cameron_Peak_Fire",
-  "Event_Names": "Cameron Peak Fire",
-  "Total_Summary_Affected": {
-    "Total_Affected": "over 20,000 people",
-    "Total_Affected_Annotation": "Damage"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "August 13, 2020",
-      "End_Date": "December 2, 2020",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Estes Park",
-        "Chambers Lake",
-        "Rustic",
-        "Glacier View Meadows",
-        "Red Feather Lakes",
-        "Masonville",
-        "Glen Haven",
-        "Spring Canyon",
-        "Highway 14",
-        "Stove Prairie Landing Road",
-        "Colorado State University Mountain Campus"
-      ],
-      "Start_Date": "August 13, 2020",
-      "End_Date": "December 2, 2020",
-      "Num": "over 6,000 residents",
-      "Annotation": "Cameron Peak Fire"
+[
+  {
+    "Event_ID": "iLWPUY3",
+    "Sources": "https://en.wikipedia.org/wiki/Cameron_Peak_Fire",
+    "Event_Names": "Cameron Peak Fire",
+    "Total_Summary_Affected": {
+      "Total_Affected": "over 20,000 people",
+      "Total_Affected_Annotation": "Damage"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Lady Moon",
-        "Red Feather Highlands",
-        "Red Feather Lakes",
-        "Crystal Lakes",
-        "County Road 27 to Big Bear Road",
-        "Rist Canyon Road",
-        "Highway 14 from Gateway to Stove Prairie Park"
-      ],
-      "Start_Date": "September 6, 2020",
-      "End_Date": "September 8, 2020",
-      "Num": "NULL",
-      "Annotation": "September"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "August 13, 2020",
+        "End_Date": "December 2, 2020",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Estes Park",
+          "Chambers Lake",
+          "Rustic",
+          "Glacier View Meadows",
+          "Red Feather Lakes",
+          "Masonville",
+          "Glen Haven",
+          "Spring Canyon",
+          "Highway 14",
+          "Stove Prairie Landing Road",
+          "Colorado State University Mountain Campus"
+        ],
+        "Start_Date": "August 13, 2020",
+        "End_Date": "December 2, 2020",
+        "Num": "over 6,000 residents",
+        "Annotation": "Cameron Peak Fire"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Lady Moon",
+          "Red Feather Highlands",
+          "Red Feather Lakes",
+          "Crystal Lakes",
+          "County Road 27 to Big Bear Road",
+          "Rist Canyon Road",
+          "Highway 14 from Gateway to Stove Prairie Park"
+        ],
+        "Start_Date": "September 6, 2020",
+        "End_Date": "September 8, 2020",
+        "Num": "NULL",
+        "Annotation": "September"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Estes Park",
+          "Grand Lake",
+          "Granby"
+        ],
+        "Start_Date": "October 22, 2020",
+        "End_Date": "October 31, 2020",
+        "Num": "over 16,000 people",
+        "Annotation": "October"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "469",
+      "Total_Buildings_Damaged_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Estes Park",
-        "Grand Lake",
-        "Granby"
-      ],
-      "Start_Date": "October 22, 2020",
-      "End_Date": "October 31, 2020",
-      "Num": "over 16,000 people",
-      "Annotation": "October"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "469",
-    "Total_Buildings_Damaged_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "August 13, 2020",
-      "End_Date": "December 2, 2020",
-      "Num": "469",
-      "Annotation": "Damage"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Redstone Canyon"
-      ],
-      "Start_Date": "August 13, 2020",
-      "End_Date": "December 2, 2020",
-      "Num": "42 primary residences",
-      "Annotation": "Damage"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "August 13, 2020",
+        "End_Date": "December 2, 2020",
+        "Num": "469",
+        "Annotation": "Damage"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Redstone Canyon"
+        ],
+        "Start_Date": "August 13, 2020",
+        "End_Date": "December 2, 2020",
+        "Num": "42 primary residences",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Shambhala Mountain Center"
+        ],
+        "Start_Date": "August 13, 2020",
+        "End_Date": "December 2, 2020",
+        "Num": "17 business structures",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Poudre Canyon",
+          "Monument Gulch"
+        ],
+        "Start_Date": "Labor Day weekend",
+        "End_Date": "Labor Day weekend",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Poudre Canyon",
+          "Fish Hatchery",
+          "Rustic",
+          "Manhattan Road",
+          "Boy Scout Ranch Road"
+        ],
+        "Start_Date": "September 26, 2020",
+        "End_Date": "September 28, 2020",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Upper Buckhorn",
+          "Lower Buckhorn",
+          "Crystal Mountain",
+          "Bobcat Ridge",
+          "Buckskin Heights",
+          "Redstone Canyon",
+          "Storm Mountain",
+          "The Retreat",
+          "Pingree Park"
+        ],
+        "Start_Date": "October 14, 2020",
+        "End_Date": "October 14, 2020",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "0",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Shambhala Mountain Center"
-      ],
-      "Start_Date": "August 13, 2020",
-      "End_Date": "December 2, 2020",
-      "Num": "17 business structures",
-      "Annotation": "Damage"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "0",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Roosevelt National Forest",
+          "Larimer County",
+          "Colorado"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "0",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "over 20,000 people",
+      "Total_Displaced_Annotation": "Damage"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Poudre Canyon",
-        "Monument Gulch"
-      ],
-      "Start_Date": "Labor Day weekend",
-      "End_Date": "Labor Day weekend",
-      "Num": "NULL",
-      "Annotation": "Damage"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "August 13, 2020",
+        "End_Date": "December 2, 2020",
+        "Num": "over 20,000 people",
+        "Annotation": "Damage"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Estes Park",
+          "Grand Lake",
+          "Granby"
+        ],
+        "Start_Date": "October 2020",
+        "End_Date": "October 2020",
+        "Num": "over 16,000 people",
+        "Annotation": "October"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Estes Park",
+          "Chambers Lake",
+          "Rustic",
+          "Glacier View Meadows",
+          "Red Feather Lakes",
+          "Masonville",
+          "Glen Haven",
+          "Spring Canyon",
+          "Highway 14",
+          "Stove Prairie Landing Road",
+          "Colorado State University Mountain Campus"
+        ],
+        "Start_Date": "August 2020",
+        "End_Date": "August 2020",
+        "Num": "over 6,000 residents",
+        "Annotation": "Cameron Peak Fire"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Lady Moon",
+          "Red Feather Highlands",
+          "Red Feather Lakes",
+          "Crystal Lakes",
+          "County Road 27 to Big Bear Road",
+          "Rist Canyon Road",
+          "Highway 14 from Gateway to Stove Prairie Park"
+        ],
+        "Start_Date": "September 2020",
+        "End_Date": "September 2020",
+        "Num": "NULL",
+        "Annotation": "September"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Upper and Lower Buckhorn areas",
+          "Crystal Mountain",
+          "Bobcat Ridge",
+          "Buckskin Heights",
+          "Redstone Canyon",
+          "Storm Mountain",
+          "The Retreat",
+          "Pingree Park"
+        ],
+        "Start_Date": "October 14, 2020",
+        "End_Date": "October 14, 2020",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Poudre Canyon",
-        "Fish Hatchery",
-        "Rustic",
-        "Manhattan Road",
-        "Boy Scout Ranch Road"
-      ],
-      "Start_Date": "September 26, 2020",
-      "End_Date": "September 28, 2020",
-      "Num": "NULL",
-      "Annotation": "Damage"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "August 13, 2020",
+        "End_Date": "December 2, 2020",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Redstone Canyon"
+        ],
+        "Start_Date": "August 13, 2020",
+        "End_Date": "December 2, 2020",
+        "Num": "42 primary residences",
+        "Annotation": "Damage"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Upper Buckhorn",
-        "Lower Buckhorn",
-        "Crystal Mountain",
-        "Bobcat Ridge",
-        "Buckskin Heights",
-        "Redstone Canyon",
-        "Storm Mountain",
-        "The Retreat",
-        "Pingree Park"
-      ],
-      "Start_Date": "October 14, 2020",
-      "End_Date": "October 14, 2020",
-      "Num": "NULL",
-      "Annotation": "Damage"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "0",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "0",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Roosevelt National Forest",
-        "Larimer County",
-        "Colorado"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "0",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "over 20,000 people",
-    "Total_Displaced_Annotation": "Damage"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "August 13, 2020",
-      "End_Date": "December 2, 2020",
-      "Num": "over 20,000 people",
-      "Annotation": "Damage"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Estes Park",
-        "Grand Lake",
-        "Granby"
-      ],
-      "Start_Date": "October 2020",
-      "End_Date": "October 2020",
-      "Num": "over 16,000 people",
-      "Annotation": "October"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Estes Park",
-        "Chambers Lake",
-        "Rustic",
-        "Glacier View Meadows",
-        "Red Feather Lakes",
-        "Masonville",
-        "Glen Haven",
-        "Spring Canyon",
-        "Highway 14",
-        "Stove Prairie Landing Road",
-        "Colorado State University Mountain Campus"
-      ],
-      "Start_Date": "August 2020",
-      "End_Date": "August 2020",
-      "Num": "over 6,000 residents",
-      "Annotation": "Cameron Peak Fire"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "August 13, 2020",
+        "End_Date": "December 2, 2020",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "NULL",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Lady Moon",
-        "Red Feather Highlands",
-        "Red Feather Lakes",
-        "Crystal Lakes",
-        "County Road 27 to Big Bear Road",
-        "Rist Canyon Road",
-        "Highway 14 from Gateway to Stove Prairie Park"
-      ],
-      "Start_Date": "September 2020",
-      "End_Date": "September 2020",
-      "Num": "NULL",
-      "Annotation": "September"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Upper and Lower Buckhorn areas",
-        "Crystal Mountain",
-        "Bobcat Ridge",
-        "Buckskin Heights",
-        "Redstone Canyon",
-        "Storm Mountain",
-        "The Retreat",
-        "Pingree Park"
-      ],
-      "Start_Date": "October 14, 2020",
-      "End_Date": "October 14, 2020",
-      "Num": "NULL",
-      "Annotation": "Damage"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "August 13, 2020",
-      "End_Date": "December 2, 2020",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Redstone Canyon"
-      ],
-      "Start_Date": "August 13, 2020",
-      "End_Date": "December 2, 2020",
-      "Num": "42 primary residences",
-      "Annotation": "Damage"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "August 13, 2020",
-      "End_Date": "December 2, 2020",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "NULL",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "NULL",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "August 13, 2020",
-      "End_Date": "December 2, 2020",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Colorado"
-      ],
-      "Start_Date": "August 13, 2020",
-      "End_Date": "December 2, 2020",
-      "Num": "$132 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Economic"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Colorado"
-      ],
-      "Start_Date": "August 13, 2020",
-      "End_Date": "December 2, 2020",
-      "Num": "$6.3 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Economic"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Colorado"
-      ],
-      "Start_Date": "August 13, 2020",
-      "End_Date": "December 2, 2020",
-      "Num": "$100 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Economic"
-    }
-  ],
-  "Main_Event": "Wildfire",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wildfire",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "August 13, 2020",
-  "End_Date": "December 2, 2020",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "United States"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "August 13, 2020",
+        "End_Date": "December 2, 2020",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Colorado"
+        ],
+        "Start_Date": "August 13, 2020",
+        "End_Date": "December 2, 2020",
+        "Num": "$132 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Economic"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Colorado"
+        ],
+        "Start_Date": "August 13, 2020",
+        "End_Date": "December 2, 2020",
+        "Num": "$6.3 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Economic"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Colorado"
+        ],
+        "Start_Date": "August 13, 2020",
+        "End_Date": "December 2, 2020",
+        "Num": "$100 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Economic"
+      }
+    ],
+    "Main_Event": "Wildfire",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wildfire",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "August 13, 2020",
+    "End_Date": "December 2, 2020",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "United States"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

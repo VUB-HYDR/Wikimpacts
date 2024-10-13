@@ -1,405 +1,407 @@
-{
-  "Event_ID": "yWe0sqo",
-  "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Maliksi_(2018)",
-  "Event_Names": "Tropical Storm Maliksi (2018)",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Philippines"
-      ],
-      "Start_Date": "June 5, 2018",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Philippines"
+[
+  {
+    "Event_ID": "yWe0sqo",
+    "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Maliksi_(2018)",
+    "Event_Names": "Tropical Storm Maliksi (2018)",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": [
-        "Japan"
-      ],
-      "Start_Date": "June 9, 2018",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Japan"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Calabarzon"
-      ],
-      "Start_Date": "June 5, 2018",
-      "End_Date": "NULL",
-      "Num": "73",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "June 5, 2018",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": [
+          "Japan"
+        ],
+        "Start_Date": "June 9, 2018",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Calabarzon"
+        ],
+        "Start_Date": "June 5, 2018",
+        "End_Date": "NULL",
+        "Num": "73",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "San Fernando, Pampanga",
+          "Santa Cruz, Zambales"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "132",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "San Fernando, Pampanga",
-        "Santa Cruz, Zambales"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "132",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "June 5, 2018",
-      "End_Date": "June 9, 2018",
-      "Num": "NULL",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "June 5, 2018",
+        "End_Date": "June 9, 2018",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "June 9, 2018",
+        "End_Date": "June 10, 2018",
+        "Num": "NULL",
+        "Annotation": "Japan"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "San Fernando, Romblon",
+          "Tablas Island",
+          "University of Santo Tomas Hospital",
+          "Quezon City",
+          "Coron, Palawan",
+          "Calintaan",
+          "San Fernando, Pampanga",
+          "Metro Manila"
+        ],
+        "Start_Date": "June 5, 2018",
+        "End_Date": "June 9, 2018",
+        "Num": "16 houses",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Kitadait\u014djima"
+        ],
+        "Start_Date": "June 9, 2018",
+        "End_Date": "June 10, 2018",
+        "Num": "some sugarcane crop",
+        "Annotation": "Japan"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "2",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": "Japan",
-      "Start_Date": "June 9, 2018",
-      "End_Date": "June 10, 2018",
-      "Num": "NULL",
-      "Annotation": "Japan"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "San Fernando, Romblon",
-        "Tablas Island",
-        "University of Santo Tomas Hospital",
-        "Quezon City",
-        "Coron, Palawan",
-        "Calintaan",
-        "San Fernando, Pampanga",
-        "Metro Manila"
-      ],
-      "Start_Date": "June 5, 2018",
-      "End_Date": "June 9, 2018",
-      "Num": "16 houses",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Palawan",
+          "Albay"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Kitadait\u014djima"
-      ],
-      "Start_Date": "June 9, 2018",
-      "End_Date": "June 10, 2018",
-      "Num": "some sugarcane crop",
-      "Annotation": "Japan"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "2",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Palawan",
-        "Albay"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Philippines"
-      ],
-      "Start_Date": "June 5, 2018",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "June 5, 2018",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": [
+          "Japan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Calabarzon"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "73",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "San Fernando, Pampanga",
+          "Santa Cruz, Zambales"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "132",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Kitadait\u014djima"
+        ],
+        "Start_Date": "June 9, 2018",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": [
-        "Japan"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Japan"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Calabarzon"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "73",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "San Fernando, Pampanga"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "16 houses were damaged in San Fernando, Pampanga, six of which were completely damaged",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "San Fernando, Pampanga",
-        "Santa Cruz, Zambales"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "132",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Francisco B. Reyes Airport"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Kitadait\u014djima"
-      ],
-      "Start_Date": "June 9, 2018",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Japan"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "San Fernando, Pampanga"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "16 houses were damaged in San Fernando, Pampanga, six of which were completely damaged",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Philippines",
+          "Japan"
+        ],
+        "Start_Date": "June 5, 2018",
+        "End_Date": "June 13, 2018",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": [
+          "Japan"
+        ],
+        "Start_Date": "June 9, 2018",
+        "End_Date": "June 13, 2018",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "San Fernando, Romblon",
+          "Tablas Island",
+          "University of Santo Tomas Hospital",
+          "Quezon City",
+          "Coron, Palawan",
+          "Calintaan",
+          "San Fernando, Pampanga",
+          "Metro Manila",
+          "Palawan",
+          "Albay",
+          "Legazpi, Albay",
+          "Rapu-Rapu",
+          "Oriental Mindoro",
+          "Santa Cruz, Zambales"
+        ],
+        "Start_Date": "June 5, 2018",
+        "End_Date": "June 13, 2018",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Okinawa",
+          "Kitadait\u014djima",
+          "Dait\u014d Islands",
+          "Hachij\u014d-jima",
+          "Chichibu, Saitama"
+        ],
+        "Start_Date": "June 9, 2018",
+        "End_Date": "June 13, 2018",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "NULL",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Japan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Japan"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Francisco B. Reyes Airport"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Philippines",
-        "Japan"
-      ],
-      "Start_Date": "June 5, 2018",
-      "End_Date": "June 13, 2018",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": [
-        "Japan"
-      ],
-      "Start_Date": "June 9, 2018",
-      "End_Date": "June 13, 2018",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Japan"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "San Fernando, Romblon",
-        "Tablas Island",
-        "University of Santo Tomas Hospital",
-        "Quezon City",
-        "Coron, Palawan",
-        "Calintaan",
-        "San Fernando, Pampanga",
-        "Metro Manila",
-        "Palawan",
-        "Albay",
-        "Legazpi, Albay",
-        "Rapu-Rapu",
-        "Oriental Mindoro",
-        "Santa Cruz, Zambales"
-      ],
-      "Start_Date": "June 5, 2018",
-      "End_Date": "June 13, 2018",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Okinawa",
-        "Kitadait\u014djima",
-        "Dait\u014d Islands",
-        "Hachij\u014d-jima",
-        "Chichibu, Saitama"
-      ],
-      "Start_Date": "June 9, 2018",
-      "End_Date": "June 13, 2018",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Japan"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "NULL",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "NULL",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "June 5, 2018",
-      "End_Date": "June 9, 2018",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": "Japan",
-      "Start_Date": "June 9, 2018",
-      "End_Date": "June 10, 2018",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Japan"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "San Fernando, Romblon",
-        "Tablas Island",
-        "University of Santo Tomas Hospital",
-        "Quezon City",
-        "Coron, Palawan",
-        "Calintaan",
-        "San Fernando, Pampanga",
-        "Metro Manila",
-        "Batangas",
-        "Palawan",
-        "Albay",
-        "Legazpi, Albay",
-        "Rapu-Rapu",
-        "Oriental Mindoro",
-        "Santa Cruz, Zambales"
-      ],
-      "Start_Date": "June 5, 2018",
-      "End_Date": "June 9, 2018",
-      "Num": "\u20b141 thousand",
-      "Num_Unit": "PHP",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Kitadait\u014djima",
-        "Hachij\u014d-jima",
-        "Chichibu, Saitama"
-      ],
-      "Start_Date": "June 9, 2018",
-      "End_Date": "June 10, 2018",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Japan"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Philippines|Japan",
-  "Start_Date": "June 3, 2018",
-  "End_Date": "June 13, 2018",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Philippines",
-    "Japan"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "June 5, 2018",
+        "End_Date": "June 9, 2018",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "June 9, 2018",
+        "End_Date": "June 10, 2018",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "San Fernando, Romblon",
+          "Tablas Island",
+          "University of Santo Tomas Hospital",
+          "Quezon City",
+          "Coron, Palawan",
+          "Calintaan",
+          "San Fernando, Pampanga",
+          "Metro Manila",
+          "Batangas",
+          "Palawan",
+          "Albay",
+          "Legazpi, Albay",
+          "Rapu-Rapu",
+          "Oriental Mindoro",
+          "Santa Cruz, Zambales"
+        ],
+        "Start_Date": "June 5, 2018",
+        "End_Date": "June 9, 2018",
+        "Num": "\u20b141 thousand",
+        "Num_Unit": "PHP",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Kitadait\u014djima",
+          "Hachij\u014d-jima",
+          "Chichibu, Saitama"
+        ],
+        "Start_Date": "June 9, 2018",
+        "End_Date": "June 10, 2018",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Philippines|Japan",
+    "Start_Date": "June 3, 2018",
+    "End_Date": "June 13, 2018",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Philippines",
+      "Japan"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

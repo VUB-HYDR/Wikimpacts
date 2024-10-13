@@ -1,534 +1,536 @@
-{
-  "Event_ID": "SRVLwkF",
-  "Sources": "https://en.wikipedia.org/wiki/Typhoon_Yancy_(1990)",
-  "Event_Names": "Typhoon Yancy (1990)",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Over 60,000 residents",
-      "Annotation": "Impacts"
+[
+  {
+    "Event_ID": "SRVLwkF",
+    "Sources": "https://en.wikipedia.org/wiki/Typhoon_Yancy_(1990)",
+    "Event_Names": "Typhoon Yancy (1990)",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Taiwan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "525,000 families",
-      "Annotation": "Impacts"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Over 60,000 residents",
+        "Annotation": "Impacts"
+      },
+      {
+        "Administrative_Areas": "Taiwan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "525,000 families",
+        "Annotation": "Impacts"
+      },
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4 million residents",
+        "Annotation": "Impacts"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Northern Luzon"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Over 60,000 residents",
+        "Annotation": "Impacts"
+      },
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "Taipei"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "525,000 families",
+        "Annotation": "Impacts"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Fujian"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4 million residents",
+        "Annotation": "Impacts"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Fujian"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "40,000 houses",
+        "Annotation": "Impacts"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Zhejiang"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "20,700 homes",
+        "Annotation": "Impacts"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Wenzhou"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "99,000 ha of land",
+        "Annotation": "Impacts"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Guangdong"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4,800 homes",
+        "Annotation": "Impacts"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "China",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "4 million residents",
-      "Annotation": "Impacts"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Northern Luzon"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Over 60,000 residents",
-      "Annotation": "Impacts"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impacts"
+      },
+      {
+        "Administrative_Areas": "Taiwan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impacts"
+      },
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impacts"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Offshore"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Two ships",
+        "Annotation": "Impacts"
+      },
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "Taipei",
+          "Port of Keelung"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "One house collapsed and seven other homes damaged",
+        "Annotation": "Impacts"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Fujian"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "More than 40,000 houses",
+        "Annotation": "Impacts"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Zhejiang"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "About 20,700 homes",
+        "Annotation": "Impacts"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Eastern Guangdong"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4,800 homes",
+        "Annotation": "Impacts"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "284",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "Taipei"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "525,000 families",
-      "Annotation": "Impacts"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "6",
+        "Annotation": "Impacts"
+      },
+      {
+        "Administrative_Areas": "Taiwan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "13",
+        "Annotation": "Impacts"
+      },
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "161",
+        "Annotation": "Impacts"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Offshore"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "6",
+        "Annotation": "Impacts"
+      },
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "Taipei",
+          "Port of Keelung"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "13",
+        "Annotation": "Impacts"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Fujian"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "161",
+        "Annotation": "Impacts"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Zhejiang"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "96",
+        "Annotation": "Impacts"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Guangdong"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8",
+        "Annotation": "Impacts"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Fujian"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "4 million residents",
-      "Annotation": "Impacts"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Over 60,000 residents",
+        "Annotation": "Impacts"
+      },
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "400,000 residents",
+        "Annotation": "Impacts"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Northern Luzon"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Over 60,000 residents",
+        "Annotation": "Impacts"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Fujian",
+          "Zhejiang",
+          "Guangdong"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "400,000 residents",
+        "Annotation": "Impacts"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "400,000 residents",
+      "Total_Homeless_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Fujian"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "40,000 houses",
-      "Annotation": "Impacts"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "China"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "400,000 residents",
+        "Annotation": "Impacts"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Fujian",
+          "Zhejiang",
+          "Guangdong"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impacts"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "927",
+      "Total_Injuries_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Zhejiang"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "20,700 homes",
-      "Annotation": "Impacts"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8",
+        "Annotation": "Impacts"
+      },
+      {
+        "Administrative_Areas": "Taiwan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "14",
+        "Annotation": "Impacts"
+      },
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "905",
+        "Annotation": "Impacts"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Offshore"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8",
+        "Annotation": "Impacts"
+      },
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "Taipei"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "14",
+        "Annotation": "Impacts"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Fujian"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "468",
+        "Annotation": "Impacts"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Zhejiang"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "400",
+        "Annotation": "Impacts"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Guangdong"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "37",
+        "Annotation": "Impacts"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Wenzhou"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "99,000 ha of land",
-      "Annotation": "Impacts"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$384 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Guangdong"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "4,800 homes",
-      "Annotation": "Impacts"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impacts"
-    },
-    {
-      "Administrative_Areas": "Taiwan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impacts"
-    },
-    {
-      "Administrative_Areas": "China",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impacts"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Offshore"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Two ships",
-      "Annotation": "Impacts"
-    },
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "Taipei",
-        "Port of Keelung"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "One house collapsed and seven other homes damaged",
-      "Annotation": "Impacts"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Fujian"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "More than 40,000 houses",
-      "Annotation": "Impacts"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Zhejiang"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "About 20,700 homes",
-      "Annotation": "Impacts"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Eastern Guangdong"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "4,800 homes",
-      "Annotation": "Impacts"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "284",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "6",
-      "Annotation": "Impacts"
-    },
-    {
-      "Administrative_Areas": "Taiwan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "13",
-      "Annotation": "Impacts"
-    },
-    {
-      "Administrative_Areas": "China",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "161",
-      "Annotation": "Impacts"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Offshore"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "6",
-      "Annotation": "Impacts"
-    },
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "Taipei",
-        "Port of Keelung"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "13",
-      "Annotation": "Impacts"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Fujian"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "161",
-      "Annotation": "Impacts"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Zhejiang"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "96",
-      "Annotation": "Impacts"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Guangdong"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "8",
-      "Annotation": "Impacts"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Over 60,000 residents",
-      "Annotation": "Impacts"
-    },
-    {
-      "Administrative_Areas": "China",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "400,000 residents",
-      "Annotation": "Impacts"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Northern Luzon"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Over 60,000 residents",
-      "Annotation": "Impacts"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Fujian",
-        "Zhejiang",
-        "Guangdong"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "400,000 residents",
-      "Annotation": "Impacts"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "400,000 residents",
-    "Total_Homeless_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "China"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "400,000 residents",
-      "Annotation": "Impacts"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Fujian",
-        "Zhejiang",
-        "Guangdong"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impacts"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "927",
-    "Total_Injuries_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "8",
-      "Annotation": "Impacts"
-    },
-    {
-      "Administrative_Areas": "Taiwan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "14",
-      "Annotation": "Impacts"
-    },
-    {
-      "Administrative_Areas": "China",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "905",
-      "Annotation": "Impacts"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Offshore"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "8",
-      "Annotation": "Impacts"
-    },
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "Taipei"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "14",
-      "Annotation": "Impacts"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Fujian"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "468",
-      "Annotation": "Impacts"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Zhejiang"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "400",
-      "Annotation": "Impacts"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Guangdong"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "37",
-      "Annotation": "Impacts"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "NULL",
-      "Locations": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$384 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "Philippines"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impacts"
-    },
-    {
-      "Administrative_Areas": [
-        "Taiwan"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NT$2.7 billion",
-      "Num_Unit": "NTD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impacts"
-    },
-    {
-      "Administrative_Areas": [
-        "China"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impacts"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Fujian"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$900 million RMB",
-      "Num_Unit": "RMB",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impacts"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Zhejiang"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$450 million RMB",
-      "Num_Unit": "RMB",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impacts"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Impacts",
-  "Start_Date": "1990-08-11",
-  "End_Date": "1990-08-23",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Philippines",
-    "Taiwan",
-    "China"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impacts"
+      },
+      {
+        "Administrative_Areas": [
+          "Taiwan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NT$2.7 billion",
+        "Num_Unit": "NTD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impacts"
+      },
+      {
+        "Administrative_Areas": [
+          "China"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impacts"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Fujian"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$900 million RMB",
+        "Num_Unit": "RMB",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impacts"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Zhejiang"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$450 million RMB",
+        "Num_Unit": "RMB",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impacts"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Impacts",
+    "Start_Date": "1990-08-11",
+    "End_Date": "1990-08-23",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Philippines",
+      "Taiwan",
+      "China"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

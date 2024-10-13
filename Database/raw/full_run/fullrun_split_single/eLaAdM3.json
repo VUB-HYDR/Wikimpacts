@@ -1,450 +1,452 @@
-{
-  "Event_ID": "eLaAdM3",
-  "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Soulik_(2024)",
-  "Event_Names": "Tropical Storm Soulik (2024)",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1,629,519",
-      "Annotation": "Philippines"
+[
+  {
+    "Event_ID": "eLaAdM3",
+    "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Soulik_(2024)",
+    "Event_Names": "Tropical Storm Soulik (2024)",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Vietnam",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Elsewhere"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,629,519",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Areas": "Thailand",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Areas": "Myanmar",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Palanan, Isabela",
+          "Ilocos Norte",
+          "Ilocos Sur",
+          "La Union",
+          "Pangasinan",
+          "Zambales",
+          "Tarlac",
+          "Nueva Ecija",
+          "Pampanga",
+          "Bulacan",
+          "Bataan",
+          "Metro Manila",
+          "Palawan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "9,000",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Qu\u1ea3ng B\u00ecnh",
+          "V\u0129nh Linh District",
+          "Ngh\u1ec7 An",
+          "Thua Thien Hue"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3,000",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Area": "Thailand",
+        "Locations": [
+          "Nakhon Phanom",
+          "Ao Phang Nga National Park"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Area": "Myanmar",
+        "Locations": [
+          "Southeastern areas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Thailand",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Elsewhere"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "September 17, 2024",
+        "End_Date": "September 18, 2024",
+        "Num": "3,649 homes",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Palanan, Isabela"
+        ],
+        "Start_Date": "September 17, 2024",
+        "End_Date": "September 18, 2024",
+        "Num": "3,649 homes",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Qu\u1ea3ng B\u00ecnh",
+          "Minh H\u00f3a district"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "600 households",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "29",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": "Myanmar",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Elsewhere"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Palanan, Isabela",
-        "Ilocos Norte",
-        "Ilocos Sur",
-        "La Union",
-        "Pangasinan",
-        "Zambales",
-        "Tarlac",
-        "Nueva Ecija",
-        "Pampanga",
-        "Bulacan",
-        "Bataan",
-        "Metro Manila",
-        "Palawan"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "9,000",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 26",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 26",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Ngh\u1ec7 An"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Vietnam",
-      "Locations": [
-        "Qu\u1ea3ng B\u00ecnh",
-        "V\u0129nh Linh District",
-        "Ngh\u1ec7 An",
-        "Thua Thien Hue"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3,000",
-      "Annotation": "Elsewhere"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "15,875",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "over 3,000",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Palanan, Isabela"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Qu\u1ea3ng B\u00ecnh province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "nearly 900 households\u2014over 3,000 people",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Thailand",
-      "Locations": [
-        "Nakhon Phanom",
-        "Ao Phang Nga National Park"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Elsewhere"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3,649 homes destroyed",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Palanan, Isabela"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3,649 homes destroyed",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Qu\u1ea3ng B\u00ecnh",
+          "Vinh Linh District",
+          "Minh H\u00f3a district"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "19",
+      "Total_Injuries_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Myanmar",
-      "Locations": [
-        "Southeastern areas"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Elsewhere"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "September 17, 2024",
-      "End_Date": "September 18, 2024",
-      "Num": "3,649 homes",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "18",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "18",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Thua Thien Hue"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Vietnam",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Elsewhere"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Palanan, Isabela"
-      ],
-      "Start_Date": "September 17, 2024",
-      "End_Date": "September 18, 2024",
-      "Num": "3,649 homes",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "September 17, 2024",
+        "End_Date": "September 18, 2024",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "September 19, 2024",
+        "End_Date": "September 20, 2024",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Palanan, Isabela",
+          "Cordillera Central",
+          "Palawan"
+        ],
+        "Start_Date": "September 17, 2024",
+        "End_Date": "September 18, 2024",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Quang Binh",
+          "Qu\u1ea3ng Tr\u1ecb",
+          "V\u0129nh Linh District",
+          "Ngh\u1ec7 An",
+          "Thua Thien Hue"
+        ],
+        "Start_Date": "September 19, 2024",
+        "End_Date": "September 20, 2024",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$22.63 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Vietnam",
-      "Locations": [
-        "Qu\u1ea3ng B\u00ecnh",
-        "Minh H\u00f3a district"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "600 households",
-      "Annotation": "Elsewhere"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "29",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "at least 26",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": "Vietnam",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3",
-      "Annotation": "Elsewhere"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "at least 26",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Vietnam",
-      "Locations": [
-        "Ngh\u1ec7 An"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3",
-      "Annotation": "Elsewhere"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "15,875",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": "Vietnam",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "over 3,000",
-      "Annotation": "Elsewhere"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Palanan, Isabela"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Vietnam",
-      "Locations": [
-        "Qu\u1ea3ng B\u00ecnh province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "nearly 900 households\u2014over 3,000 people",
-      "Annotation": "Elsewhere"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3,649 homes destroyed",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": "Vietnam",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Elsewhere"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Palanan, Isabela"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3,649 homes destroyed",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Vietnam",
-      "Locations": [
-        "Qu\u1ea3ng B\u00ecnh",
-        "Vinh Linh District",
-        "Minh H\u00f3a district"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Elsewhere"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "19",
-    "Total_Injuries_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "18",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": "Vietnam",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Elsewhere"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "18",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Vietnam",
-      "Locations": [
-        "Thua Thien Hue"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Elsewhere"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "September 17, 2024",
-      "End_Date": "September 18, 2024",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": "Vietnam",
-      "Start_Date": "September 19, 2024",
-      "End_Date": "September 20, 2024",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Elsewhere"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Palanan, Isabela",
-        "Cordillera Central",
-        "Palawan"
-      ],
-      "Start_Date": "September 17, 2024",
-      "End_Date": "September 18, 2024",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Vietnam",
-      "Locations": [
-        "Quang Binh",
-        "Qu\u1ea3ng Tr\u1ecb",
-        "V\u0129nh Linh District",
-        "Ngh\u1ec7 An",
-        "Thua Thien Hue"
-      ],
-      "Start_Date": "September 19, 2024",
-      "End_Date": "September 20, 2024",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Elsewhere"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$22.63 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "September 17, 2024",
-      "End_Date": "September 18, 2024",
-      "Num": "$22.63 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": "Vietnam",
-      "Start_Date": "September 19, 2024",
-      "End_Date": "September 20, 2024",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Elsewhere"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Palanan, Isabela",
-        "Cordillera Central",
-        "Palawan"
-      ],
-      "Start_Date": "September 17, 2024",
-      "End_Date": "September 18, 2024",
-      "Num": "$22.63 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Vietnam",
-      "Locations": [
-        "Quang Binh",
-        "Qu\u1ea3ng Tr\u1ecb",
-        "V\u0129nh Linh District",
-        "Ngh\u1ec7 An",
-        "Thua Thien Hue"
-      ],
-      "Start_Date": "September 19, 2024",
-      "End_Date": "September 20, 2024",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Elsewhere"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Philippines|Elsewhere",
-  "Start_Date": "September 15, 2024",
-  "End_Date": "September 20, 2024",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Philippines",
-    "Vietnam",
-    "Thailand",
-    "Myanmar"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "September 17, 2024",
+        "End_Date": "September 18, 2024",
+        "Num": "$22.63 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "September 19, 2024",
+        "End_Date": "September 20, 2024",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Palanan, Isabela",
+          "Cordillera Central",
+          "Palawan"
+        ],
+        "Start_Date": "September 17, 2024",
+        "End_Date": "September 18, 2024",
+        "Num": "$22.63 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Quang Binh",
+          "Qu\u1ea3ng Tr\u1ecb",
+          "V\u0129nh Linh District",
+          "Ngh\u1ec7 An",
+          "Thua Thien Hue"
+        ],
+        "Start_Date": "September 19, 2024",
+        "End_Date": "September 20, 2024",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Philippines|Elsewhere",
+    "Start_Date": "September 15, 2024",
+    "End_Date": "September 20, 2024",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Philippines",
+      "Vietnam",
+      "Thailand",
+      "Myanmar"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

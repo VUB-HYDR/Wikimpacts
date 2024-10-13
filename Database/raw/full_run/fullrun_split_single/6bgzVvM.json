@@ -1,319 +1,321 @@
-{
-  "Event_ID": "6bgzVvM",
-  "Sources": "https://en.wikipedia.org/wiki/2024_Chile_wildfires",
-  "Event_Names": "2024 Chile wildfires",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Chile"
-      ],
-      "Start_Date": "1 February 2024",
-      "End_Date": "5 February 2024",
-      "Num": "NULL",
-      "Annotation": "Overview"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Chile",
-      "Locations": [
-        "Vi\u00f1a del Mar"
-      ],
-      "Start_Date": "1 February 2024",
-      "End_Date": "5 February 2024",
-      "Num": "370 people reported missing",
-      "Annotation": "Casualties and damage"
+[
+  {
+    "Event_ID": "6bgzVvM",
+    "Sources": "https://en.wikipedia.org/wiki/2024_Chile_wildfires",
+    "Event_Names": "2024 Chile wildfires",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Chile",
-      "Locations": [
-        "Vi\u00f1a del Mar",
-        "Quilpu\u00e9"
-      ],
-      "Start_Date": "1 February 2024",
-      "End_Date": "5 February 2024",
-      "Num": "14,000 houses affected",
-      "Annotation": "Casualties and damage"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Chile"
+        ],
+        "Start_Date": "1 February 2024",
+        "End_Date": "5 February 2024",
+        "Num": "NULL",
+        "Annotation": "Overview"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Chile",
+        "Locations": [
+          "Vi\u00f1a del Mar"
+        ],
+        "Start_Date": "1 February 2024",
+        "End_Date": "5 February 2024",
+        "Num": "370 people reported missing",
+        "Annotation": "Casualties and damage"
+      },
+      {
+        "Administrative_Area": "Chile",
+        "Locations": [
+          "Vi\u00f1a del Mar",
+          "Quilpu\u00e9"
+        ],
+        "Start_Date": "1 February 2024",
+        "End_Date": "5 February 2024",
+        "Num": "14,000 houses affected",
+        "Annotation": "Casualties and damage"
+      },
+      {
+        "Administrative_Area": "Chile",
+        "Locations": [
+          "Vi\u00f1a del Mar"
+        ],
+        "Start_Date": "1 February 2024",
+        "End_Date": "5 February 2024",
+        "Num": "1,600 people displaced",
+        "Annotation": "Casualties and damage"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "14,000+",
+      "Total_Buildings_Damaged_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Chile",
-      "Locations": [
-        "Vi\u00f1a del Mar"
-      ],
-      "Start_Date": "1 February 2024",
-      "End_Date": "5 February 2024",
-      "Num": "1,600 people displaced",
-      "Annotation": "Casualties and damage"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "14,000+",
-    "Total_Buildings_Damaged_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Chile",
-      "Start_Date": "1 February 2024",
-      "End_Date": "5 February 2024",
-      "Num": "14,000+",
-      "Annotation": "Casualties and damage"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Chile",
-      "Locations": [
-        "Vi\u00f1a del Mar",
-        "Quilpu\u00e9"
-      ],
-      "Start_Date": "1 February 2024",
-      "End_Date": "5 February 2024",
-      "Num": "14,000 houses",
-      "Annotation": "Casualties and damage"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Chile",
+        "Start_Date": "1 February 2024",
+        "End_Date": "5 February 2024",
+        "Num": "14,000+",
+        "Annotation": "Casualties and damage"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Chile",
+        "Locations": [
+          "Vi\u00f1a del Mar",
+          "Quilpu\u00e9"
+        ],
+        "Start_Date": "1 February 2024",
+        "End_Date": "5 February 2024",
+        "Num": "14,000 houses",
+        "Annotation": "Casualties and damage"
+      },
+      {
+        "Administrative_Area": "Chile",
+        "Locations": [
+          "Valpara\u00edso"
+        ],
+        "Start_Date": "1 February 2024",
+        "End_Date": "5 February 2024",
+        "Num": "four hospitals and three nursing homes",
+        "Annotation": "Casualties and damage"
+      },
+      {
+        "Administrative_Area": "Chile",
+        "Locations": [
+          "Vi\u00f1a del Mar"
+        ],
+        "Start_Date": "1 February 2024",
+        "End_Date": "5 February 2024",
+        "Num": "two bus terminals",
+        "Annotation": "Casualties and damage"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "137",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Chile",
-      "Locations": [
-        "Valpara\u00edso"
-      ],
-      "Start_Date": "1 February 2024",
-      "End_Date": "5 February 2024",
-      "Num": "four hospitals and three nursing homes",
-      "Annotation": "Casualties and damage"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "Chile"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "131",
+        "Annotation": "Casualties and damage"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Chile",
+        "Locations": [
+          "Vi\u00f1a del Mar"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Casualties and damage"
+      },
+      {
+        "Administrative_Area": "Chile",
+        "Locations": [
+          "Valpara\u00edso"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Casualties and damage"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Chile",
-      "Locations": [
-        "Vi\u00f1a del Mar"
-      ],
-      "Start_Date": "1 February 2024",
-      "End_Date": "5 February 2024",
-      "Num": "two bus terminals",
-      "Annotation": "Casualties and damage"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "137",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "Chile"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "131",
-      "Annotation": "Casualties and damage"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Chile",
-      "Locations": [
-        "Vi\u00f1a del Mar"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Casualties and damage"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Chile"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Chile",
+        "Locations": [
+          "Vi\u00f1a del Mar"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,600",
+        "Annotation": "Casualties and damage"
+      },
+      {
+        "Administrative_Area": "Chile",
+        "Locations": [
+          "Puerto Montt"
+        ],
+        "Start_Date": "28 January 2024",
+        "End_Date": "28 January 2024",
+        "Num": "74",
+        "Annotation": "Los Lagos Region"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "1,600",
+      "Total_Homeless_Annotation": "Casualties and damage"
     },
-    {
-      "Administrative_Area": "Chile",
-      "Locations": [
-        "Valpara\u00edso"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Casualties and damage"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Chile"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Chile",
-      "Locations": [
-        "Vi\u00f1a del Mar"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1,600",
-      "Annotation": "Casualties and damage"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Chile",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,600",
+        "Annotation": "Casualties and damage"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Chile",
+        "Locations": [
+          "Vi\u00f1a del Mar"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,600",
+        "Annotation": "Casualties and damage"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "1,100+",
+      "Total_Injuries_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Chile",
-      "Locations": [
-        "Puerto Montt"
-      ],
-      "Start_Date": "28 January 2024",
-      "End_Date": "28 January 2024",
-      "Num": "74",
-      "Annotation": "Los Lagos Region"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "1,600",
-    "Total_Homeless_Annotation": "Casualties and damage"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Chile",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1,600",
-      "Annotation": "Casualties and damage"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Chile",
-      "Locations": [
-        "Vi\u00f1a del Mar"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1,600",
-      "Annotation": "Casualties and damage"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "1,100+",
-    "Total_Injuries_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "Chile"
-      ],
-      "Start_Date": "1 February 2024",
-      "End_Date": "5 February 2024",
-      "Num": "1,100+",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Chile",
-      "Locations": [
-        "Valpara\u00edso Region",
-        "O'Higgins Region",
-        "Maule Region",
-        "Biob\u00edo Region",
-        "Araucan\u00eda Region",
-        "Los Lagos Region"
-      ],
-      "Start_Date": "1 February 2024",
-      "End_Date": "5 February 2024",
-      "Num": "NULL",
-      "Annotation": "Casualties and damage"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Chile"
-      ],
-      "Start_Date": "1 February 2024",
-      "End_Date": "5 February 2024",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Chile",
-      "Locations": [
-        "Valpara\u00edso Region",
-        "O'Higgins Region",
-        "Maule Region",
-        "Biob\u00edo Region",
-        "Araucan\u00eda Region",
-        "Los Lagos Region"
-      ],
-      "Start_Date": "1 February 2024",
-      "End_Date": "5 February 2024",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "4.39 billion",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "Chile"
-      ],
-      "Start_Date": "1 February 2024",
-      "End_Date": "5 February 2024",
-      "Num": "4.39 billion",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Chile",
-      "Locations": [
-        "Vi\u00f1a del Mar",
-        "Quilpu\u00e9"
-      ],
-      "Start_Date": "1 February 2024",
-      "End_Date": "5 February 2024",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Casualties and damage"
-    }
-  ],
-  "Main_Event": "Wildfire",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wildfire",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "1 February 2024",
-  "End_Date": "5 February 2024",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Chile"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "Chile"
+        ],
+        "Start_Date": "1 February 2024",
+        "End_Date": "5 February 2024",
+        "Num": "1,100+",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Chile",
+        "Locations": [
+          "Valpara\u00edso Region",
+          "O'Higgins Region",
+          "Maule Region",
+          "Biob\u00edo Region",
+          "Araucan\u00eda Region",
+          "Los Lagos Region"
+        ],
+        "Start_Date": "1 February 2024",
+        "End_Date": "5 February 2024",
+        "Num": "NULL",
+        "Annotation": "Casualties and damage"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Chile"
+        ],
+        "Start_Date": "1 February 2024",
+        "End_Date": "5 February 2024",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Chile",
+        "Locations": [
+          "Valpara\u00edso Region",
+          "O'Higgins Region",
+          "Maule Region",
+          "Biob\u00edo Region",
+          "Araucan\u00eda Region",
+          "Los Lagos Region"
+        ],
+        "Start_Date": "1 February 2024",
+        "End_Date": "5 February 2024",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "4.39 billion",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Chile"
+        ],
+        "Start_Date": "1 February 2024",
+        "End_Date": "5 February 2024",
+        "Num": "4.39 billion",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Chile",
+        "Locations": [
+          "Vi\u00f1a del Mar",
+          "Quilpu\u00e9"
+        ],
+        "Start_Date": "1 February 2024",
+        "End_Date": "5 February 2024",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Casualties and damage"
+      }
+    ],
+    "Main_Event": "Wildfire",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wildfire",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "1 February 2024",
+    "End_Date": "5 February 2024",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Chile"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

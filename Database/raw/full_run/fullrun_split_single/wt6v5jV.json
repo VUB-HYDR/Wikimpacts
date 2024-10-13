@@ -1,306 +1,308 @@
-{
-  "Event_ID": "wt6v5jV",
-  "Sources": "https://en.wikipedia.org/wiki/2019_Durban_Easter_floods",
-  "Event_Names": "2019 Durban Easter floods",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "South Africa"
-      ],
-      "Start_Date": "18 April 2019",
-      "End_Date": "22 April 2019",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "South Africa",
-      "Locations": [
-        "Durban"
-      ],
-      "Start_Date": "18 April 2019",
-      "End_Date": "22 April 2019",
-      "Num": "at least 1000 people",
-      "Annotation": "Death toll"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "South Africa",
-      "Start_Date": "18 April 2019",
-      "End_Date": "22 April 2019",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "South Africa",
-      "Locations": [
-        "eMlazi",
-        "eManzimtoti",
-        "Chatsworth",
-        "Malvern",
-        "Queensburgh",
-        "Mount Edgecombe",
-        "Virginia Airport",
-        "Ballito",
-        "Port Edward",
-        "Margate",
-        "Pennington",
-        "Paddock",
-        "Port St Johns"
-      ],
-      "Start_Date": "18 April 2019",
-      "End_Date": "22 April 2019",
-      "Num": "NULL",
-      "Annotation": "Impacted areas"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "85+",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "South Africa"
-      ],
-      "Start_Date": "18 April 2019",
-      "End_Date": "22 April 2019",
-      "Num": "85",
-      "Annotation": "Death toll"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "South Africa",
-      "Locations": [
-        "Durban",
-        "Ballito",
-        "Eastern Cape"
-      ],
-      "Start_Date": "18 April 2019",
-      "End_Date": "22 April 2019",
-      "Num": "70",
-      "Annotation": "2019 Durban Easter floods"
+[
+  {
+    "Event_ID": "wt6v5jV",
+    "Sources": "https://en.wikipedia.org/wiki/2019_Durban_Easter_floods",
+    "Event_Names": "2019 Durban Easter floods",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "South Africa",
-      "Locations": [
-        "Durban",
-        "Ballito",
-        "Eastern Cape"
-      ],
-      "Start_Date": "18 April 2019",
-      "End_Date": "22 April 2019",
-      "Num": "85",
-      "Annotation": "Death toll"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "at least 1000",
-    "Total_Displaced_Annotation": "Death toll"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "South Africa"
-      ],
-      "Start_Date": "18 April 2019",
-      "End_Date": "22 April 2019",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "South Africa",
-      "Locations": [
-        "Durban",
-        "Ballito",
-        "Eastern Cape"
-      ],
-      "Start_Date": "18 April 2019",
-      "End_Date": "22 April 2019",
-      "Num": "at least 1000",
-      "Annotation": "Death toll"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "at least 1000",
-    "Total_Homeless_Annotation": "Death toll"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "South Africa"
-      ],
-      "Start_Date": "18 April 2019",
-      "End_Date": "22 April 2019",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "South Africa",
-      "Locations": [
-        "Durban",
-        "Ballito",
-        "Eastern Cape"
-      ],
-      "Start_Date": "18 April 2019",
-      "End_Date": "22 April 2019",
-      "Num": "at least 1000",
-      "Annotation": "Death toll"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "South Africa"
-      ],
-      "Start_Date": "18 April 2019",
-      "End_Date": "22 April 2019",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "South Africa",
-      "Locations": [
-        "Durban",
-        "Ballito",
-        "Eastern Cape"
-      ],
-      "Start_Date": "18 April 2019",
-      "End_Date": "22 April 2019",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "South Africa"
-      ],
-      "Start_Date": "2019-04-18",
-      "End_Date": "2019-04-22",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "South Africa",
-      "Locations": [
-        "Durban",
-        "Ballito",
-        "Eastern Cape"
-      ],
-      "Start_Date": "2019-04-18",
-      "End_Date": "2019-04-22",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "R 650 million",
-    "Total_Damage_Unit": "ZAR",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "South Africa"
-      ],
-      "Start_Date": "18 April 2019",
-      "End_Date": "22 April 2019",
-      "Num": "R 650 million",
-      "Num_Unit": "ZAR",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Damage cost"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "South Africa",
-      "Locations": [
-        "eThekwini Metro"
-      ],
-      "Start_Date": "18 April 2019",
-      "End_Date": "22 April 2019",
-      "Num": "R 248 400 000",
-      "Num_Unit": "ZAR",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Damage cost"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "South Africa"
+        ],
+        "Start_Date": "18 April 2019",
+        "End_Date": "22 April 2019",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "South Africa",
+        "Locations": [
+          "Durban"
+        ],
+        "Start_Date": "18 April 2019",
+        "End_Date": "22 April 2019",
+        "Num": "at least 1000 people",
+        "Annotation": "Death toll"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "South Africa",
-      "Locations": [
-        "eThekwini Metro"
-      ],
-      "Start_Date": "18 April 2019",
-      "End_Date": "22 April 2019",
-      "Num": "R 19 530 000",
-      "Num_Unit": "ZAR",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Damage cost"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "South Africa",
+        "Start_Date": "18 April 2019",
+        "End_Date": "22 April 2019",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "South Africa",
+        "Locations": [
+          "eMlazi",
+          "eManzimtoti",
+          "Chatsworth",
+          "Malvern",
+          "Queensburgh",
+          "Mount Edgecombe",
+          "Virginia Airport",
+          "Ballito",
+          "Port Edward",
+          "Margate",
+          "Pennington",
+          "Paddock",
+          "Port St Johns"
+        ],
+        "Start_Date": "18 April 2019",
+        "End_Date": "22 April 2019",
+        "Num": "NULL",
+        "Annotation": "Impacted areas"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "85+",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "South Africa",
-      "Locations": [
-        "eThekwini Metro"
-      ],
-      "Start_Date": "18 April 2019",
-      "End_Date": "22 April 2019",
-      "Num": "R 3 000 000",
-      "Num_Unit": "ZAR",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Damage cost"
-    }
-  ],
-  "Main_Event": "Flood",
-  "Main_Event_Annotation": "Info_Box",
-  "Start_Date": "18 April 2019",
-  "End_Date": "22 April 2019",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "South Africa"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "South Africa"
+        ],
+        "Start_Date": "18 April 2019",
+        "End_Date": "22 April 2019",
+        "Num": "85",
+        "Annotation": "Death toll"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "South Africa",
+        "Locations": [
+          "Durban",
+          "Ballito",
+          "Eastern Cape"
+        ],
+        "Start_Date": "18 April 2019",
+        "End_Date": "22 April 2019",
+        "Num": "70",
+        "Annotation": "2019 Durban Easter floods"
+      },
+      {
+        "Administrative_Area": "South Africa",
+        "Locations": [
+          "Durban",
+          "Ballito",
+          "Eastern Cape"
+        ],
+        "Start_Date": "18 April 2019",
+        "End_Date": "22 April 2019",
+        "Num": "85",
+        "Annotation": "Death toll"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "at least 1000",
+      "Total_Displaced_Annotation": "Death toll"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "South Africa"
+        ],
+        "Start_Date": "18 April 2019",
+        "End_Date": "22 April 2019",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "South Africa",
+        "Locations": [
+          "Durban",
+          "Ballito",
+          "Eastern Cape"
+        ],
+        "Start_Date": "18 April 2019",
+        "End_Date": "22 April 2019",
+        "Num": "at least 1000",
+        "Annotation": "Death toll"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "at least 1000",
+      "Total_Homeless_Annotation": "Death toll"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "South Africa"
+        ],
+        "Start_Date": "18 April 2019",
+        "End_Date": "22 April 2019",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "South Africa",
+        "Locations": [
+          "Durban",
+          "Ballito",
+          "Eastern Cape"
+        ],
+        "Start_Date": "18 April 2019",
+        "End_Date": "22 April 2019",
+        "Num": "at least 1000",
+        "Annotation": "Death toll"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "South Africa"
+        ],
+        "Start_Date": "18 April 2019",
+        "End_Date": "22 April 2019",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "South Africa",
+        "Locations": [
+          "Durban",
+          "Ballito",
+          "Eastern Cape"
+        ],
+        "Start_Date": "18 April 2019",
+        "End_Date": "22 April 2019",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "South Africa"
+        ],
+        "Start_Date": "2019-04-18",
+        "End_Date": "2019-04-22",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "South Africa",
+        "Locations": [
+          "Durban",
+          "Ballito",
+          "Eastern Cape"
+        ],
+        "Start_Date": "2019-04-18",
+        "End_Date": "2019-04-22",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "R 650 million",
+      "Total_Damage_Unit": "ZAR",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "South Africa"
+        ],
+        "Start_Date": "18 April 2019",
+        "End_Date": "22 April 2019",
+        "Num": "R 650 million",
+        "Num_Unit": "ZAR",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Damage cost"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "South Africa",
+        "Locations": [
+          "eThekwini Metro"
+        ],
+        "Start_Date": "18 April 2019",
+        "End_Date": "22 April 2019",
+        "Num": "R 248 400 000",
+        "Num_Unit": "ZAR",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Damage cost"
+      },
+      {
+        "Administrative_Area": "South Africa",
+        "Locations": [
+          "eThekwini Metro"
+        ],
+        "Start_Date": "18 April 2019",
+        "End_Date": "22 April 2019",
+        "Num": "R 19 530 000",
+        "Num_Unit": "ZAR",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Damage cost"
+      },
+      {
+        "Administrative_Area": "South Africa",
+        "Locations": [
+          "eThekwini Metro"
+        ],
+        "Start_Date": "18 April 2019",
+        "End_Date": "22 April 2019",
+        "Num": "R 3 000 000",
+        "Num_Unit": "ZAR",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Damage cost"
+      }
+    ],
+    "Main_Event": "Flood",
+    "Main_Event_Annotation": "Info_Box",
+    "Start_Date": "18 April 2019",
+    "End_Date": "22 April 2019",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "South Africa"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

@@ -1,571 +1,573 @@
-{
-  "Event_ID": "BO8bsuN",
-  "Sources": "https://en.wikipedia.org/wiki/Hurricane_Paula",
-  "Event_Names": "Hurricane Paula",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": "Honduras",
-      "Start_Date": "October 11, 2010",
-      "End_Date": "October 12, 2010",
-      "Num": "NULL",
-      "Annotation": "Honduras and Nicaragua"
+[
+  {
+    "Event_ID": "BO8bsuN",
+    "Sources": "https://en.wikipedia.org/wiki/Hurricane_Paula",
+    "Event_Names": "Hurricane Paula",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": "Nicaragua",
-      "Start_Date": "October 11, 2010",
-      "End_Date": "October 12, 2010",
-      "Num": "NULL",
-      "Annotation": "Honduras and Nicaragua"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "October 11, 2010",
+        "End_Date": "October 12, 2010",
+        "Num": "NULL",
+        "Annotation": "Honduras and Nicaragua"
+      },
+      {
+        "Administrative_Areas": "Nicaragua",
+        "Start_Date": "October 11, 2010",
+        "End_Date": "October 12, 2010",
+        "Num": "NULL",
+        "Annotation": "Honduras and Nicaragua"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "October 12, 2010",
+        "End_Date": "October 13, 2010",
+        "Num": "NULL",
+        "Annotation": "Mexico and Belize"
+      },
+      {
+        "Administrative_Areas": "Belize",
+        "Start_Date": "October 12, 2010",
+        "End_Date": "October 13, 2010",
+        "Num": "NULL",
+        "Annotation": "Mexico and Belize"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "October 14, 2010",
+        "End_Date": "October 15, 2010",
+        "Num": "NULL",
+        "Annotation": "Cuba and Florida"
+      },
+      {
+        "Administrative_Areas": "Florida",
+        "Start_Date": "October 13, 2010",
+        "End_Date": "October 15, 2010",
+        "Num": "NULL",
+        "Annotation": "Cuba and Florida"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Puerto Lempira",
+          "Cauquira",
+          "La Mosquitia"
+        ],
+        "Start_Date": "October 11, 2010",
+        "End_Date": "October 12, 2010",
+        "Num": "NULL",
+        "Annotation": "Honduras and Nicaragua"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Isla Holbox",
+          "Isla Contoy",
+          "Cozumel",
+          "Canc\u00fan"
+        ],
+        "Start_Date": "October 12, 2010",
+        "End_Date": "October 13, 2010",
+        "Num": "1",
+        "Annotation": "Mexico and Belize"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Pinar del R\u00edo Province",
+          "Vi\u00f1ales",
+          "La Palma",
+          "Bah\u00eda Honda",
+          "San Crist\u00f3bal",
+          "Havana"
+        ],
+        "Start_Date": "October 14, 2010",
+        "End_Date": "October 15, 2010",
+        "Num": "NULL",
+        "Annotation": "Cuba and Florida"
+      },
+      {
+        "Administrative_Area": "Florida",
+        "Locations": [
+          "Key West",
+          "Upper Florida Keys"
+        ],
+        "Start_Date": "October 13, 2010",
+        "End_Date": "October 15, 2010",
+        "Num": "NULL",
+        "Annotation": "Cuba and Florida"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "October 12, 2010",
-      "End_Date": "October 13, 2010",
-      "Num": "NULL",
-      "Annotation": "Mexico and Belize"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "October 11, 2010",
+        "End_Date": "October 12, 2010",
+        "Num": "NULL",
+        "Annotation": "Honduras and Nicaragua"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "October 14, 2010",
+        "End_Date": "October 15, 2010",
+        "Num": "NULL",
+        "Annotation": "Cuba and Florida"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Puerto Lempira"
+        ],
+        "Start_Date": "October 11, 2010",
+        "End_Date": "October 12, 2010",
+        "Num": "four homes and two roads",
+        "Annotation": "Honduras and Nicaragua"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Cauquira"
+        ],
+        "Start_Date": "October 11, 2010",
+        "End_Date": "October 12, 2010",
+        "Num": "more than a dozen structures, including a school and police station",
+        "Annotation": "Honduras and Nicaragua"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Havana"
+        ],
+        "Start_Date": "October 14, 2010",
+        "End_Date": "October 15, 2010",
+        "Num": "a few homes",
+        "Annotation": "Cuba and Florida"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "1 direct",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": "Belize",
-      "Start_Date": "October 12, 2010",
-      "End_Date": "October 13, 2010",
-      "Num": "NULL",
-      "Annotation": "Mexico and Belize"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Mexico and Belize"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "offshore Cozumel"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Mexico and Belize"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "October 14, 2010",
-      "End_Date": "October 15, 2010",
-      "Num": "NULL",
-      "Annotation": "Cuba and Florida"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "October 11",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Honduras and Nicaragua"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "October 12",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mexico and Belize"
+      },
+      {
+        "Administrative_Areas": "Belize",
+        "Start_Date": "October 12",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mexico and Belize"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "October 12",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Cuba and Florida"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Bay Islands"
+        ],
+        "Start_Date": "October 11",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Honduras and Nicaragua"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Low-lying areas"
+        ],
+        "Start_Date": "October 11",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Honduras and Nicaragua"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Isla Holbox",
+          "Isla Contoy"
+        ],
+        "Start_Date": "October 12",
+        "End_Date": "NULL",
+        "Num": "about 1,560",
+        "Annotation": "Mexico and Belize"
+      },
+      {
+        "Administrative_Area": "Belize",
+        "Locations": [
+          "Coastal cayes"
+        ],
+        "Start_Date": "October 12",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mexico and Belize"
+      },
+      {
+        "Administrative_Area": "Belize",
+        "Locations": [
+          "Punta Negra"
+        ],
+        "Start_Date": "October 13",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mexico and Belize"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Low-lying areas"
+        ],
+        "Start_Date": "October 12",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Cuba and Florida"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Florida",
-      "Start_Date": "October 13, 2010",
-      "End_Date": "October 15, 2010",
-      "Num": "NULL",
-      "Annotation": "Cuba and Florida"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Puerto Lempira",
-        "Cauquira",
-        "La Mosquitia"
-      ],
-      "Start_Date": "October 11, 2010",
-      "End_Date": "October 12, 2010",
-      "Num": "NULL",
-      "Annotation": "Honduras and Nicaragua"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "October 11, 2010",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Honduras and Nicaragua"
+      },
+      {
+        "Administrative_Areas": "Nicaragua",
+        "Start_Date": "October 11, 2010",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Honduras and Nicaragua"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "October 14, 2010",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Cuba and Florida"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Puerto Lempira"
+        ],
+        "Start_Date": "October 11, 2010",
+        "End_Date": "NULL",
+        "Num": "four homes",
+        "Annotation": "Honduras and Nicaragua"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Cauquira"
+        ],
+        "Start_Date": "October 11, 2010",
+        "End_Date": "NULL",
+        "Num": "more than a dozen structures",
+        "Annotation": "Honduras and Nicaragua"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Havana"
+        ],
+        "Start_Date": "October 14, 2010",
+        "End_Date": "NULL",
+        "Num": "a few homes",
+        "Annotation": "Cuba and Florida"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Isla Holbox",
-        "Isla Contoy",
-        "Cozumel",
-        "Canc\u00fan"
-      ],
-      "Start_Date": "October 12, 2010",
-      "End_Date": "October 13, 2010",
-      "Num": "1",
-      "Annotation": "Mexico and Belize"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Honduras and Nicaragua"
+      },
+      {
+        "Administrative_Areas": "Nicaragua",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Honduras and Nicaragua"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mexico and Belize"
+      },
+      {
+        "Administrative_Areas": "Belize",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mexico and Belize"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Cuba and Florida"
+      },
+      {
+        "Administrative_Areas": "Florida",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Cuba and Florida"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Puerto Lempira"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Honduras and Nicaragua"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Cauquira"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Honduras and Nicaragua"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Pinar del R\u00edo Province",
-        "Vi\u00f1ales",
-        "La Palma",
-        "Bah\u00eda Honda",
-        "San Crist\u00f3bal",
-        "Havana"
-      ],
-      "Start_Date": "October 14, 2010",
-      "End_Date": "October 15, 2010",
-      "Num": "NULL",
-      "Annotation": "Cuba and Florida"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "Unknown",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Florida",
-      "Locations": [
-        "Key West",
-        "Upper Florida Keys"
-      ],
-      "Start_Date": "October 13, 2010",
-      "End_Date": "October 15, 2010",
-      "Num": "NULL",
-      "Annotation": "Cuba and Florida"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Honduras",
-      "Start_Date": "October 11, 2010",
-      "End_Date": "October 12, 2010",
-      "Num": "NULL",
-      "Annotation": "Honduras and Nicaragua"
-    },
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "October 14, 2010",
-      "End_Date": "October 15, 2010",
-      "Num": "NULL",
-      "Annotation": "Cuba and Florida"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Puerto Lempira"
-      ],
-      "Start_Date": "October 11, 2010",
-      "End_Date": "October 12, 2010",
-      "Num": "four homes and two roads",
-      "Annotation": "Honduras and Nicaragua"
-    },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Cauquira"
-      ],
-      "Start_Date": "October 11, 2010",
-      "End_Date": "October 12, 2010",
-      "Num": "more than a dozen structures, including a school and police station",
-      "Annotation": "Honduras and Nicaragua"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Havana"
-      ],
-      "Start_Date": "October 14, 2010",
-      "End_Date": "October 15, 2010",
-      "Num": "a few homes",
-      "Annotation": "Cuba and Florida"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "1 direct",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Mexico and Belize"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "offshore Cozumel"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Mexico and Belize"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": "Honduras",
-      "Start_Date": "October 11",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Honduras and Nicaragua"
-    },
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "October 12",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mexico and Belize"
-    },
-    {
-      "Administrative_Areas": "Belize",
-      "Start_Date": "October 12",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mexico and Belize"
-    },
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "October 12",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Cuba and Florida"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Bay Islands"
-      ],
-      "Start_Date": "October 11",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Honduras and Nicaragua"
-    },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Low-lying areas"
-      ],
-      "Start_Date": "October 11",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Honduras and Nicaragua"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Isla Holbox",
-        "Isla Contoy"
-      ],
-      "Start_Date": "October 12",
-      "End_Date": "NULL",
-      "Num": "about 1,560",
-      "Annotation": "Mexico and Belize"
-    },
-    {
-      "Administrative_Area": "Belize",
-      "Locations": [
-        "Coastal cayes"
-      ],
-      "Start_Date": "October 12",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mexico and Belize"
-    },
-    {
-      "Administrative_Area": "Belize",
-      "Locations": [
-        "Punta Negra"
-      ],
-      "Start_Date": "October 13",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mexico and Belize"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Low-lying areas"
-      ],
-      "Start_Date": "October 12",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Cuba and Florida"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Honduras",
-      "Start_Date": "October 11, 2010",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Honduras and Nicaragua"
-    },
-    {
-      "Administrative_Areas": "Nicaragua",
-      "Start_Date": "October 11, 2010",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Honduras and Nicaragua"
-    },
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "October 14, 2010",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Cuba and Florida"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Puerto Lempira"
-      ],
-      "Start_Date": "October 11, 2010",
-      "End_Date": "NULL",
-      "Num": "four homes",
-      "Annotation": "Honduras and Nicaragua"
-    },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Cauquira"
-      ],
-      "Start_Date": "October 11, 2010",
-      "End_Date": "NULL",
-      "Num": "more than a dozen structures",
-      "Annotation": "Honduras and Nicaragua"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Havana"
-      ],
-      "Start_Date": "October 14, 2010",
-      "End_Date": "NULL",
-      "Num": "a few homes",
-      "Annotation": "Cuba and Florida"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Honduras",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Honduras and Nicaragua"
-    },
-    {
-      "Administrative_Areas": "Nicaragua",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Honduras and Nicaragua"
-    },
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mexico and Belize"
-    },
-    {
-      "Administrative_Areas": "Belize",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mexico and Belize"
-    },
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Cuba and Florida"
-    },
-    {
-      "Administrative_Areas": "Florida",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Cuba and Florida"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Puerto Lempira"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Honduras and Nicaragua"
-    },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Cauquira"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Honduras and Nicaragua"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "NULL",
-      "Locations": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "Unknown",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "NULL",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": "Honduras",
-      "Start_Date": "October 11, 2010",
-      "End_Date": "October 12, 2010",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Honduras and Nicaragua"
-    },
-    {
-      "Administrative_Areas": "Nicaragua",
-      "Start_Date": "October 11, 2010",
-      "End_Date": "October 12, 2010",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Honduras and Nicaragua"
-    },
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "October 12, 2010",
-      "End_Date": "October 13, 2010",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Mexico and Belize"
-    },
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "October 14, 2010",
-      "End_Date": "October 15, 2010",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Cuba and Florida"
-    },
-    {
-      "Administrative_Areas": "Florida",
-      "Start_Date": "October 13, 2010",
-      "End_Date": "October 15, 2010",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Cuba and Florida"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Puerto Lempira",
-        "Cauquira",
-        "La Mosquitia"
-      ],
-      "Start_Date": "October 11, 2010",
-      "End_Date": "October 12, 2010",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Honduras and Nicaragua"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Cozumel",
-        "Canc\u00fan"
-      ],
-      "Start_Date": "October 12, 2010",
-      "End_Date": "October 13, 2010",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Mexico and Belize"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Pinar del R\u00edo",
-        "Artemisa",
-        "Havana",
-        "Vi\u00f1ales",
-        "La Palma",
-        "Bah\u00eda Honda",
-        "San Crist\u00f3bal"
-      ],
-      "Start_Date": "October 14, 2010",
-      "End_Date": "October 15, 2010",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Cuba and Florida"
-    },
-    {
-      "Administrative_Area": "Florida",
-      "Locations": [
-        "Key West",
-        "Upper Florida Keys"
-      ],
-      "Start_Date": "October 13, 2010",
-      "End_Date": "October 15, 2010",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Cuba and Florida"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Honduras and Nicaragua|Cuba and Florida",
-  "Start_Date": "October 10, 2010",
-  "End_Date": "October 16, 2010",
-  "Time_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "October 11, 2010",
+        "End_Date": "October 12, 2010",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Honduras and Nicaragua"
+      },
+      {
+        "Administrative_Areas": "Nicaragua",
+        "Start_Date": "October 11, 2010",
+        "End_Date": "October 12, 2010",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Honduras and Nicaragua"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "October 12, 2010",
+        "End_Date": "October 13, 2010",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Mexico and Belize"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "October 14, 2010",
+        "End_Date": "October 15, 2010",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Cuba and Florida"
+      },
+      {
+        "Administrative_Areas": "Florida",
+        "Start_Date": "October 13, 2010",
+        "End_Date": "October 15, 2010",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Cuba and Florida"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Puerto Lempira",
+          "Cauquira",
+          "La Mosquitia"
+        ],
+        "Start_Date": "October 11, 2010",
+        "End_Date": "October 12, 2010",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Honduras and Nicaragua"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Cozumel",
+          "Canc\u00fan"
+        ],
+        "Start_Date": "October 12, 2010",
+        "End_Date": "October 13, 2010",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Mexico and Belize"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Pinar del R\u00edo",
+          "Artemisa",
+          "Havana",
+          "Vi\u00f1ales",
+          "La Palma",
+          "Bah\u00eda Honda",
+          "San Crist\u00f3bal"
+        ],
+        "Start_Date": "October 14, 2010",
+        "End_Date": "October 15, 2010",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Cuba and Florida"
+      },
+      {
+        "Administrative_Area": "Florida",
+        "Locations": [
+          "Key West",
+          "Upper Florida Keys"
+        ],
+        "Start_Date": "October 13, 2010",
+        "End_Date": "October 15, 2010",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Cuba and Florida"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Honduras and Nicaragua|Cuba and Florida",
+    "Start_Date": "October 10, 2010",
+    "End_Date": "October 16, 2010",
+    "Time_Annotation": "Info_Box"
+  }
+]

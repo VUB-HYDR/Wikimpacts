@@ -1,323 +1,325 @@
-{
-  "Event_ID": "9tBls47",
-  "Sources": "https://en.wikipedia.org/wiki/2018_Japan_floods",
-  "Event_Names": "2018 Japan floods",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Japan"
-      ],
-      "Start_Date": "28 June 2018",
-      "End_Date": "9 July 2018",
-      "Num": "More than 8 million people were advised or urged to evacuate",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Higashihiroshima"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "7 July 2018",
-      "Num": "At least ten people were buried inside their homes",
-      "Annotation": "Victims"
+[
+  {
+    "Event_ID": "9tBls47",
+    "Sources": "https://en.wikipedia.org/wiki/2018_Japan_floods",
+    "Event_Names": "2018 Japan floods",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Okayama Prefecture"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1,850 people were rescued from rooftops",
-      "Annotation": "Rescue efforts"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Japan"
+        ],
+        "Start_Date": "28 June 2018",
+        "End_Date": "9 July 2018",
+        "Num": "More than 8 million people were advised or urged to evacuate",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Higashihiroshima"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "7 July 2018",
+        "Num": "At least ten people were buried inside their homes",
+        "Annotation": "Victims"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Okayama Prefecture"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,850 people were rescued from rooftops",
+        "Annotation": "Rescue efforts"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Mabi Memorial Hospital"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "160 patients and staff required rescue",
+        "Annotation": "Rescue efforts"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Mabi Memorial Hospital"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "160 patients and staff required rescue",
-      "Annotation": "Rescue efforts"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Japan",
-      "Start_Date": "28 June 2018",
-      "End_Date": "9 July 2018",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Higashihiroshima"
-      ],
-      "Start_Date": "28 June 2018",
-      "End_Date": "9 July 2018",
-      "Num": "At least ten homes",
-      "Annotation": "Victims"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "28 June 2018",
+        "End_Date": "9 July 2018",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Higashihiroshima"
+        ],
+        "Start_Date": "28 June 2018",
+        "End_Date": "9 July 2018",
+        "Num": "At least ten homes",
+        "Annotation": "Victims"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Okayama"
+        ],
+        "Start_Date": "28 June 2018",
+        "End_Date": "9 July 2018",
+        "Num": "1,850 rooftops",
+        "Annotation": "Rescue efforts"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Mabi Memorial Hospital"
+        ],
+        "Start_Date": "28 June 2018",
+        "End_Date": "9 July 2018",
+        "Num": "160 patients and staff",
+        "Annotation": "Rescue efforts"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "225",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Okayama"
-      ],
-      "Start_Date": "28 June 2018",
-      "End_Date": "9 July 2018",
-      "Num": "1,850 rooftops",
-      "Annotation": "Rescue efforts"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "28 June 2018",
+        "End_Date": "9 July 2018",
+        "Num": "225",
+        "Annotation": "Victims"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Higashihiroshima"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "7 July 2018",
+        "Num": "10",
+        "Annotation": "Victims"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "More than 8 million",
+      "Total_Displaced_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Mabi Memorial Hospital"
-      ],
-      "Start_Date": "28 June 2018",
-      "End_Date": "9 July 2018",
-      "Num": "160 patients and staff",
-      "Annotation": "Rescue efforts"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "225",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Japan",
-      "Start_Date": "28 June 2018",
-      "End_Date": "9 July 2018",
-      "Num": "225",
-      "Annotation": "Victims"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Higashihiroshima"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "7 July 2018",
-      "Num": "10",
-      "Annotation": "Victims"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "More than 8 million",
-    "Total_Displaced_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Japan"
-      ],
-      "Start_Date": "28 June 2018",
-      "End_Date": "9 July 2018",
-      "Num": "More than 8 million",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "23 prefectures"
-      ],
-      "Start_Date": "28 June 2018",
-      "End_Date": "9 July 2018",
-      "Num": "More than 8 million",
-      "Annotation": "Info_Box"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Japan"
+        ],
+        "Start_Date": "28 June 2018",
+        "End_Date": "9 July 2018",
+        "Num": "More than 8 million",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "23 prefectures"
+        ],
+        "Start_Date": "28 June 2018",
+        "End_Date": "9 July 2018",
+        "Num": "More than 8 million",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "23 prefectures"
+        ],
+        "Start_Date": "28 June 2018",
+        "End_Date": "9 July 2018",
+        "Num": "Evacuations were ordered for 2.82 million and advised for a further 4.22 million",
+        "Annotation": "Rescue efforts"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "23 prefectures"
-      ],
-      "Start_Date": "28 June 2018",
-      "End_Date": "9 July 2018",
-      "Num": "Evacuations were ordered for 2.82 million and advised for a further 4.22 million",
-      "Annotation": "Rescue efforts"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Japan",
-      "Start_Date": "28 June 2018",
-      "End_Date": "9 July 2018",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Okayama Prefecture"
-      ],
-      "Start_Date": "28 June 2018",
-      "End_Date": "9 July 2018",
-      "Num": "1,850 people were rescued from rooftops",
-      "Annotation": "Rescue efforts"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "28 June 2018",
+        "End_Date": "9 July 2018",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Okayama Prefecture"
+        ],
+        "Start_Date": "28 June 2018",
+        "End_Date": "9 July 2018",
+        "Num": "1,850 people were rescued from rooftops",
+        "Annotation": "Rescue efforts"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Mabi Memorial Hospital, Okayama Prefecture"
+        ],
+        "Start_Date": "28 June 2018",
+        "End_Date": "9 July 2018",
+        "Num": "160 patients and staff required rescue",
+        "Annotation": "Rescue efforts"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Mabi Memorial Hospital, Okayama Prefecture"
-      ],
-      "Start_Date": "28 June 2018",
-      "End_Date": "9 July 2018",
-      "Num": "160 patients and staff required rescue",
-      "Annotation": "Rescue efforts"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Japan",
-      "Start_Date": "28 June 2018",
-      "End_Date": "9 July 2018",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Higashihiroshima"
-      ],
-      "Start_Date": "7 July 2018",
-      "End_Date": "7 July 2018",
-      "Num": "7",
-      "Annotation": "Victims"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "28 June 2018",
+        "End_Date": "9 July 2018",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Higashihiroshima"
+        ],
+        "Start_Date": "7 July 2018",
+        "End_Date": "7 July 2018",
+        "Num": "7",
+        "Annotation": "Victims"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Mabi Memorial Hospital, Okayama Prefecture"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "160",
+        "Annotation": "Rescue efforts"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Mabi Memorial Hospital, Okayama Prefecture"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "160",
-      "Annotation": "Rescue efforts"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Japan"
-      ],
-      "Start_Date": "28 June 2018",
-      "End_Date": "9 July 2018",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Okayama"
-      ],
-      "Start_Date": "28 June 2018",
-      "End_Date": "9 July 2018",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Industry"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "\u00a51.09 trillion",
-    "Total_Damage_Unit": "JPY",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "Japan"
-      ],
-      "Start_Date": "28 June 2018",
-      "End_Date": "9 July 2018",
-      "Num": "\u00a51.09 trillion",
-      "Num_Unit": "JPY",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Industry"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Agriculture, forestry, and fishery industries"
-      ],
-      "Start_Date": "28 June 2018",
-      "End_Date": "9 July 2018",
-      "Num": "\u00a5629 billion",
-      "Num_Unit": "JPY",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Industry"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Japan"
+        ],
+        "Start_Date": "28 June 2018",
+        "End_Date": "9 July 2018",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Okayama"
+        ],
+        "Start_Date": "28 June 2018",
+        "End_Date": "9 July 2018",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Industry"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "\u00a51.09 trillion",
+      "Total_Damage_Unit": "JPY",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Public infrastructure, including levees, railways, and roads"
-      ],
-      "Start_Date": "28 June 2018",
-      "End_Date": "9 July 2018",
-      "Num": "\u00a5465 billion",
-      "Num_Unit": "JPY",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Industry"
-    }
-  ],
-  "Main_Event": "Flood",
-  "Main_Event_Annotation": "Info_Box",
-  "Start_Date": "28 June 2018",
-  "End_Date": "9 July 2018",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Japan"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Japan"
+        ],
+        "Start_Date": "28 June 2018",
+        "End_Date": "9 July 2018",
+        "Num": "\u00a51.09 trillion",
+        "Num_Unit": "JPY",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Industry"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Agriculture, forestry, and fishery industries"
+        ],
+        "Start_Date": "28 June 2018",
+        "End_Date": "9 July 2018",
+        "Num": "\u00a5629 billion",
+        "Num_Unit": "JPY",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Industry"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Public infrastructure, including levees, railways, and roads"
+        ],
+        "Start_Date": "28 June 2018",
+        "End_Date": "9 July 2018",
+        "Num": "\u00a5465 billion",
+        "Num_Unit": "JPY",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Industry"
+      }
+    ],
+    "Main_Event": "Flood",
+    "Main_Event_Annotation": "Info_Box",
+    "Start_Date": "28 June 2018",
+    "End_Date": "9 July 2018",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Japan"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

@@ -1,963 +1,965 @@
-{
-  "Event_ID": "wjcO5Ss",
-  "Sources": "https://en.wikipedia.org/wiki/Hurricane_Gert",
-  "Event_Names": "Hurricane Gert",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": "Costa Rica",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1,000 people",
-      "Annotation": "Costa Rica"
-    },
-    {
-      "Administrative_Areas": "Nicaragua",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "123,000 people",
-      "Annotation": "Nicaragua"
-    },
-    {
-      "Administrative_Areas": "Honduras",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "67,447 people",
-      "Annotation": "Honduras"
-    },
-    {
-      "Administrative_Areas": "El Salvador",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "8,000 residents",
-      "Annotation": "Elsewhere in Central America"
-    },
-    {
-      "Administrative_Areas": "Guatemala",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "20,000 people",
-      "Annotation": "Elsewhere in Central America"
-    },
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "203,500 people",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Costa Rica",
-      "Locations": [
-        "Quepos",
-        "P\u00e9rez Zeled\u00f3n",
-        "Osa"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1,000 people",
-      "Annotation": "Costa Rica"
-    },
-    {
-      "Administrative_Area": "Nicaragua",
-      "Locations": [
-        "Rama",
-        "Rivas",
-        "C\u00e1rdenas",
-        "Chontales",
-        "Boaco"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "123,000 people",
-      "Annotation": "Nicaragua"
-    },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Mosquitia Region",
-        "San Pedro Sula",
-        "Cort\u00e9s Department",
-        "Puerto Cort\u00e9s",
-        "Choloma"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "67,447 people",
-      "Annotation": "Honduras"
-    },
-    {
-      "Administrative_Area": "El Salvador",
-      "Locations": [
-        "San Marcos",
-        "San Vicente",
-        "San Miguel"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "8,000 residents",
-      "Annotation": "Elsewhere in Central America"
-    },
-    {
-      "Administrative_Area": "Guatemala",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "20,000 people",
-      "Annotation": "Elsewhere in Central America"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Huasteca region",
-        "Tuxpan",
-        "Naranjos",
-        "Cerro Azul",
-        "Poza Rica",
-        "Tempoal",
-        "El Higo",
-        "Plat\u00f3n S\u00e1nchez",
-        "P\u00e1nuco",
-        "Tampico",
-        "Madero",
-        "Altamira",
-        "San Luis Potos\u00ed",
-        "Hidalgo"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "203,500 people",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Costa Rica",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "659",
-      "Annotation": "Costa Rica"
-    },
-    {
-      "Administrative_Areas": "Nicaragua",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "545",
-      "Annotation": "Nicaragua"
-    },
-    {
-      "Administrative_Areas": "Honduras",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Honduras"
-    },
-    {
-      "Administrative_Areas": "El Salvador",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "12",
-      "Annotation": "Elsewhere in Central America"
-    },
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "29,075",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Costa Rica",
-      "Locations": [
-        "Quepos",
-        "P\u00e9rez Zeled\u00f3n",
-        "Osa"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "27",
-      "Annotation": "Costa Rica"
-    },
-    {
-      "Administrative_Area": "Nicaragua",
-      "Locations": [
-        "Rama",
-        "Rivas",
-        "C\u00e1rdenas",
-        "Chontales",
-        "Boaco",
-        "Granada"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "252",
-      "Annotation": "Nicaragua"
-    },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "San Pedro Sula",
-        "Puerto Cort\u00e9s",
-        "Choloma"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Honduras"
-    },
-    {
-      "Administrative_Area": "El Salvador",
-      "Locations": [
-        "San Marcos",
-        "San Vicente",
-        "San Miguel"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Elsewhere in Central America"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Tuxpan",
-        "Naranjos",
-        "Cerro Azul",
-        "Poza Rica",
-        "Tempoal",
-        "El Higo",
-        "Plat\u00f3n S\u00e1nchez",
-        "P\u00e1nuco",
-        "Tampico",
-        "Madero",
-        "Altamira",
-        "San Luis Potos\u00ed",
-        "Hidalgo"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "116",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Costa Rica",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Costa Rica"
-    },
-    {
-      "Administrative_Areas": "Nicaragua",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "37",
-      "Annotation": "Nicaragua"
-    },
-    {
-      "Administrative_Areas": "Honduras",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "27",
-      "Annotation": "Honduras"
-    },
-    {
-      "Administrative_Areas": "El Salvador",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "5",
-      "Annotation": "Elsewhere in Central America"
-    },
-    {
-      "Administrative_Areas": "Guatemala",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Elsewhere in Central America"
-    },
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "45",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Costa Rica",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Costa Rica"
-    },
-    {
-      "Administrative_Area": "Nicaragua",
-      "Locations": [
-        "Boaco",
-        "Granada city"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "5",
-      "Annotation": "Nicaragua"
-    },
-    {
-      "Administrative_Area": "Nicaragua",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "37",
-      "Annotation": "Nicaragua"
-    },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Choloma"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "6",
-      "Annotation": "Honduras"
-    },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "27",
-      "Annotation": "Honduras"
-    },
-    {
-      "Administrative_Area": "El Salvador",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "5",
-      "Annotation": "Elsewhere in Central America"
-    },
-    {
-      "Administrative_Area": "Guatemala",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Elsewhere in Central America"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "San Luis Potos\u00ed"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "25",
-      "Annotation": "Mexico"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Hidalgo"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "15",
-      "Annotation": "Mexico"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "45",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": "Costa Rica",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Roughly 1,000 people",
-      "Annotation": "Costa Rica"
-    },
-    {
-      "Administrative_Areas": "Nicaragua",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "123,000 people",
-      "Annotation": "Nicaragua"
-    },
-    {
-      "Administrative_Areas": "Honduras",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "67,447 people",
-      "Annotation": "Honduras"
-    },
-    {
-      "Administrative_Areas": "El Salvador",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Nearly 8,000 residents",
-      "Annotation": "Elsewhere in Central America"
-    },
-    {
-      "Administrative_Areas": "Guatemala",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Approximately 20,000 people",
-      "Annotation": "Elsewhere in Central America"
-    },
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "203,500 people",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Costa Rica",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Roughly 1,000 people",
-      "Annotation": "Costa Rica"
-    },
-    {
-      "Administrative_Area": "Nicaragua",
-      "Locations": [
-        "Rama"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "17,000 citizens",
-      "Annotation": "Nicaragua"
-    },
-    {
-      "Administrative_Area": "Nicaragua",
-      "Locations": [
-        "Boaco"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "6,000 others",
-      "Annotation": "Nicaragua"
-    },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Mosquitia Region"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "24,000 people",
-      "Annotation": "Honduras"
-    },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Cort\u00e9s Department"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Honduras"
-    },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "San Pedro Sula"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Honduras"
-    },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "67,447 people",
-      "Annotation": "Honduras"
-    },
-    {
-      "Administrative_Area": "El Salvador",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Nearly 8,000 residents",
-      "Annotation": "Elsewhere in Central America"
-    },
-    {
-      "Administrative_Area": "Guatemala",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Approximately 20,000 people",
-      "Annotation": "Elsewhere in Central America"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "El Higo"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Thousands of residents",
-      "Annotation": "Mexico"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Plat\u00f3n S\u00e1nchez"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mexico"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "P\u00e1nuco"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "8,000 residents",
-      "Annotation": "Mexico"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Southern Tamaulipas"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "5,000 people",
-      "Annotation": "Mexico"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "203,500 people",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "203,500",
-    "Total_Homeless_Annotation": "Mexico"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Costa Rica",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1,000",
-      "Annotation": "Costa Rica"
-    },
-    {
-      "Administrative_Areas": "Nicaragua",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "123,000",
-      "Annotation": "Nicaragua"
-    },
-    {
-      "Administrative_Areas": "Honduras",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "67,447",
-      "Annotation": "Honduras"
-    },
-    {
-      "Administrative_Areas": "El Salvador",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "8,000",
-      "Annotation": "Elsewhere in Central America"
-    },
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "203,500",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Costa Rica",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1,000",
-      "Annotation": "Costa Rica"
-    },
-    {
-      "Administrative_Area": "Nicaragua",
-      "Locations": [
-        "Rama"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "17,000",
-      "Annotation": "Nicaragua"
-    },
-    {
-      "Administrative_Area": "Nicaragua",
-      "Locations": [
-        "Boaco"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "6,000",
-      "Annotation": "Nicaragua"
-    },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Mosquitia Region"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "24,000",
-      "Annotation": "Honduras"
-    },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Cort\u00e9s Department"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "60%",
-      "Annotation": "Honduras"
-    },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "27,000",
-      "Annotation": "Honduras"
-    },
-    {
-      "Administrative_Area": "El Salvador",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "8,000",
-      "Annotation": "Elsewhere in Central America"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "El Higo"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "90%",
-      "Annotation": "Mexico"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "P\u00e1nuco"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "8,000",
-      "Annotation": "Mexico"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Tampico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "5,000",
-      "Annotation": "Mexico"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "203,500",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Honduras",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "12 missing persons remained unaccounted for",
-      "Annotation": "Honduras"
-    },
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "eight people sustained injuries",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "12 missing persons remained unaccounted for",
-      "Annotation": "Honduras"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Hidalgo"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "eight people sustained injuries",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "NULL",
-      "Locations": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$170 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": "Costa Rica",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$3.1 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Costa Rica"
-    },
-    {
-      "Administrative_Areas": "Nicaragua",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$10.7 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Nicaragua"
-    },
-    {
-      "Administrative_Areas": "Honduras",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$10 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Honduras"
-    },
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$156 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Costa Rica",
-      "Locations": [
-        "Quepos",
-        "P\u00e9rez Zeled\u00f3n",
-        "Osa"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$1.7 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Costa Rica"
-    },
-    {
-      "Administrative_Area": "Nicaragua",
-      "Locations": [
-        "Rama",
-        "Rivas",
-        "Chontales",
-        "Boaco"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Nicaragua"
-    },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "San Pedro Sula",
-        "Puerto Cort\u00e9s",
-        "Choloma"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Honduras"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Tuxpan",
-        "Naranjos",
-        "Cerro Azul",
-        "Poza Rica",
-        "Tempoal",
-        "El Higo",
-        "Plat\u00f3n S\u00e1nchez",
-        "P\u00e1nuco",
-        "Tampico",
-        "Madero",
-        "Altamira",
-        "San Luis Potos\u00ed",
-        "Hidalgo"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Impact",
-  "Start_Date": "September 14, 1993",
-  "End_Date": "September 26, 1993",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Costa Rica",
-    "Nicaragua",
-    "Honduras",
-    "El Salvador",
-    "Guatemala",
-    "Belize",
-    "Mexico"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+[
+  {
+    "Event_ID": "wjcO5Ss",
+    "Sources": "https://en.wikipedia.org/wiki/Hurricane_Gert",
+    "Event_Names": "Hurricane Gert",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Costa Rica",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,000 people",
+        "Annotation": "Costa Rica"
+      },
+      {
+        "Administrative_Areas": "Nicaragua",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "123,000 people",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "67,447 people",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Areas": "El Salvador",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8,000 residents",
+        "Annotation": "Elsewhere in Central America"
+      },
+      {
+        "Administrative_Areas": "Guatemala",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "20,000 people",
+        "Annotation": "Elsewhere in Central America"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "203,500 people",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Costa Rica",
+        "Locations": [
+          "Quepos",
+          "P\u00e9rez Zeled\u00f3n",
+          "Osa"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,000 people",
+        "Annotation": "Costa Rica"
+      },
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "Rama",
+          "Rivas",
+          "C\u00e1rdenas",
+          "Chontales",
+          "Boaco"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "123,000 people",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Mosquitia Region",
+          "San Pedro Sula",
+          "Cort\u00e9s Department",
+          "Puerto Cort\u00e9s",
+          "Choloma"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "67,447 people",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Area": "El Salvador",
+        "Locations": [
+          "San Marcos",
+          "San Vicente",
+          "San Miguel"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8,000 residents",
+        "Annotation": "Elsewhere in Central America"
+      },
+      {
+        "Administrative_Area": "Guatemala",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "20,000 people",
+        "Annotation": "Elsewhere in Central America"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Huasteca region",
+          "Tuxpan",
+          "Naranjos",
+          "Cerro Azul",
+          "Poza Rica",
+          "Tempoal",
+          "El Higo",
+          "Plat\u00f3n S\u00e1nchez",
+          "P\u00e1nuco",
+          "Tampico",
+          "Madero",
+          "Altamira",
+          "San Luis Potos\u00ed",
+          "Hidalgo"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "203,500 people",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Costa Rica",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "659",
+        "Annotation": "Costa Rica"
+      },
+      {
+        "Administrative_Areas": "Nicaragua",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "545",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Areas": "El Salvador",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "12",
+        "Annotation": "Elsewhere in Central America"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "29,075",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Costa Rica",
+        "Locations": [
+          "Quepos",
+          "P\u00e9rez Zeled\u00f3n",
+          "Osa"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "27",
+        "Annotation": "Costa Rica"
+      },
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "Rama",
+          "Rivas",
+          "C\u00e1rdenas",
+          "Chontales",
+          "Boaco",
+          "Granada"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "252",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "San Pedro Sula",
+          "Puerto Cort\u00e9s",
+          "Choloma"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Area": "El Salvador",
+        "Locations": [
+          "San Marcos",
+          "San Vicente",
+          "San Miguel"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Elsewhere in Central America"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Tuxpan",
+          "Naranjos",
+          "Cerro Azul",
+          "Poza Rica",
+          "Tempoal",
+          "El Higo",
+          "Plat\u00f3n S\u00e1nchez",
+          "P\u00e1nuco",
+          "Tampico",
+          "Madero",
+          "Altamira",
+          "San Luis Potos\u00ed",
+          "Hidalgo"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "116",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Costa Rica",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Costa Rica"
+      },
+      {
+        "Administrative_Areas": "Nicaragua",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "37",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "27",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Areas": "El Salvador",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5",
+        "Annotation": "Elsewhere in Central America"
+      },
+      {
+        "Administrative_Areas": "Guatemala",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Elsewhere in Central America"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "45",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Costa Rica",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Costa Rica"
+      },
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "Boaco",
+          "Granada city"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "37",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Choloma"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "6",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "27",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Area": "El Salvador",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5",
+        "Annotation": "Elsewhere in Central America"
+      },
+      {
+        "Administrative_Area": "Guatemala",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Elsewhere in Central America"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "San Luis Potos\u00ed"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "25",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Hidalgo"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "15",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "45",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Costa Rica",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Roughly 1,000 people",
+        "Annotation": "Costa Rica"
+      },
+      {
+        "Administrative_Areas": "Nicaragua",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "123,000 people",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "67,447 people",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Areas": "El Salvador",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Nearly 8,000 residents",
+        "Annotation": "Elsewhere in Central America"
+      },
+      {
+        "Administrative_Areas": "Guatemala",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Approximately 20,000 people",
+        "Annotation": "Elsewhere in Central America"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "203,500 people",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Costa Rica",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Roughly 1,000 people",
+        "Annotation": "Costa Rica"
+      },
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "Rama"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "17,000 citizens",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "Boaco"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "6,000 others",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Mosquitia Region"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "24,000 people",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Cort\u00e9s Department"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "San Pedro Sula"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "67,447 people",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Area": "El Salvador",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Nearly 8,000 residents",
+        "Annotation": "Elsewhere in Central America"
+      },
+      {
+        "Administrative_Area": "Guatemala",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Approximately 20,000 people",
+        "Annotation": "Elsewhere in Central America"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "El Higo"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Thousands of residents",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Plat\u00f3n S\u00e1nchez"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "P\u00e1nuco"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8,000 residents",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Southern Tamaulipas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5,000 people",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "203,500 people",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "203,500",
+      "Total_Homeless_Annotation": "Mexico"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Costa Rica",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,000",
+        "Annotation": "Costa Rica"
+      },
+      {
+        "Administrative_Areas": "Nicaragua",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "123,000",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "67,447",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Areas": "El Salvador",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8,000",
+        "Annotation": "Elsewhere in Central America"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "203,500",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Costa Rica",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,000",
+        "Annotation": "Costa Rica"
+      },
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "Rama"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "17,000",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "Boaco"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "6,000",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Mosquitia Region"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "24,000",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Cort\u00e9s Department"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "60%",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "27,000",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Area": "El Salvador",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8,000",
+        "Annotation": "Elsewhere in Central America"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "El Higo"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "90%",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "P\u00e1nuco"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8,000",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Tampico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5,000",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "203,500",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "12 missing persons remained unaccounted for",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "eight people sustained injuries",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "12 missing persons remained unaccounted for",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Hidalgo"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "eight people sustained injuries",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$170 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Costa Rica",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$3.1 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Costa Rica"
+      },
+      {
+        "Administrative_Areas": "Nicaragua",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$10.7 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$10 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$156 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Costa Rica",
+        "Locations": [
+          "Quepos",
+          "P\u00e9rez Zeled\u00f3n",
+          "Osa"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$1.7 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Costa Rica"
+      },
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "Rama",
+          "Rivas",
+          "Chontales",
+          "Boaco"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "San Pedro Sula",
+          "Puerto Cort\u00e9s",
+          "Choloma"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Tuxpan",
+          "Naranjos",
+          "Cerro Azul",
+          "Poza Rica",
+          "Tempoal",
+          "El Higo",
+          "Plat\u00f3n S\u00e1nchez",
+          "P\u00e1nuco",
+          "Tampico",
+          "Madero",
+          "Altamira",
+          "San Luis Potos\u00ed",
+          "Hidalgo"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Impact",
+    "Start_Date": "September 14, 1993",
+    "End_Date": "September 26, 1993",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Costa Rica",
+      "Nicaragua",
+      "Honduras",
+      "El Salvador",
+      "Guatemala",
+      "Belize",
+      "Mexico"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

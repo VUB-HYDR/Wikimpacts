@@ -1,302 +1,304 @@
-{
-  "Event_ID": "2XWJ0JW",
-  "Sources": "https://en.wikipedia.org/wiki/2018_Northern_Vietnam_floods",
-  "Event_Names": "2018 Northern Vietnam floods",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Vietnam"
-      ],
-      "Start_Date": "23 June",
-      "End_Date": "25 June",
-      "Num": "NULL",
-      "Annotation": "2018 Northern Vietnam floods"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Vietnam",
-      "Locations": [
-        "Lai Chau"
-      ],
-      "Start_Date": "23 June",
-      "End_Date": "25 June",
-      "Num": "16",
-      "Annotation": "2018 Northern Vietnam floods"
+[
+  {
+    "Event_ID": "2XWJ0JW",
+    "Sources": "https://en.wikipedia.org/wiki/2018_Northern_Vietnam_floods",
+    "Event_Names": "2018 Northern Vietnam floods",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Vietnam",
-      "Locations": [
-        "Ha Giang"
-      ],
-      "Start_Date": "23 June",
-      "End_Date": "25 June",
-      "Num": "5",
-      "Annotation": "2018 Northern Vietnam floods"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Vietnam"
+        ],
+        "Start_Date": "23 June",
+        "End_Date": "25 June",
+        "Num": "NULL",
+        "Annotation": "2018 Northern Vietnam floods"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Lai Chau"
+        ],
+        "Start_Date": "23 June",
+        "End_Date": "25 June",
+        "Num": "16",
+        "Annotation": "2018 Northern Vietnam floods"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Ha Giang"
+        ],
+        "Start_Date": "23 June",
+        "End_Date": "25 June",
+        "Num": "5",
+        "Annotation": "2018 Northern Vietnam floods"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Other provinces"
+        ],
+        "Start_Date": "23 June",
+        "End_Date": "25 June",
+        "Num": "2",
+        "Annotation": "2018 Northern Vietnam floods"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "over 80 houses",
+      "Total_Buildings_Damaged_Annotation": "2018 Northern Vietnam floods"
     },
-    {
-      "Administrative_Area": "Vietnam",
-      "Locations": [
-        "Other provinces"
-      ],
-      "Start_Date": "23 June",
-      "End_Date": "25 June",
-      "Num": "2",
-      "Annotation": "2018 Northern Vietnam floods"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "over 80 houses",
-    "Total_Buildings_Damaged_Annotation": "2018 Northern Vietnam floods"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "Vietnam"
-      ],
-      "Start_Date": "23 June",
-      "End_Date": "25 June",
-      "Num": "NULL",
-      "Annotation": "2018 Northern Vietnam floods"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Vietnam",
-      "Locations": [
-        "Lao Cai",
-        "Ha Giang",
-        "Lai Chau"
-      ],
-      "Start_Date": "23 June",
-      "End_Date": "25 June",
-      "Num": "over 80 houses",
-      "Annotation": "2018 Northern Vietnam floods"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "23",
-    "Total_Deaths_Annotation": "2018 Northern Vietnam floods"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "Vietnam"
-      ],
-      "Start_Date": "23 June",
-      "End_Date": "25 June",
-      "Num": "23",
-      "Annotation": "2018 Northern Vietnam floods"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Vietnam",
-      "Locations": [
-        "Lai Chau"
-      ],
-      "Start_Date": "23 June",
-      "End_Date": "25 June",
-      "Num": "16",
-      "Annotation": "2018 Northern Vietnam floods"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "Vietnam"
+        ],
+        "Start_Date": "23 June",
+        "End_Date": "25 June",
+        "Num": "NULL",
+        "Annotation": "2018 Northern Vietnam floods"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Lao Cai",
+          "Ha Giang",
+          "Lai Chau"
+        ],
+        "Start_Date": "23 June",
+        "End_Date": "25 June",
+        "Num": "over 80 houses",
+        "Annotation": "2018 Northern Vietnam floods"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "23",
+      "Total_Deaths_Annotation": "2018 Northern Vietnam floods"
     },
-    {
-      "Administrative_Area": "Vietnam",
-      "Locations": [
-        "Ha Giang Province"
-      ],
-      "Start_Date": "23 June",
-      "End_Date": "25 June",
-      "Num": "5",
-      "Annotation": "2018 Northern Vietnam floods"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "Vietnam"
+        ],
+        "Start_Date": "23 June",
+        "End_Date": "25 June",
+        "Num": "23",
+        "Annotation": "2018 Northern Vietnam floods"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Lai Chau"
+        ],
+        "Start_Date": "23 June",
+        "End_Date": "25 June",
+        "Num": "16",
+        "Annotation": "2018 Northern Vietnam floods"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Ha Giang Province"
+        ],
+        "Start_Date": "23 June",
+        "End_Date": "25 June",
+        "Num": "5",
+        "Annotation": "2018 Northern Vietnam floods"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Other provinces"
+        ],
+        "Start_Date": "23 June",
+        "End_Date": "25 June",
+        "Num": "2",
+        "Annotation": "2018 Northern Vietnam floods"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Vietnam",
-      "Locations": [
-        "Other provinces"
-      ],
-      "Start_Date": "23 June",
-      "End_Date": "25 June",
-      "Num": "2",
-      "Annotation": "2018 Northern Vietnam floods"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Vietnam"
-      ],
-      "Start_Date": "23 June",
-      "End_Date": "25 June",
-      "Num": "NULL",
-      "Annotation": "2018 Northern Vietnam floods"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Vietnam",
-      "Locations": [
-        "Lai Chau",
-        "Ha Giang",
-        "Lao Cai"
-      ],
-      "Start_Date": "23 June",
-      "End_Date": "25 June",
-      "Num": "NULL",
-      "Annotation": "2018 Northern Vietnam floods"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "Vietnam"
-      ],
-      "Start_Date": "23 June",
-      "End_Date": "25 June",
-      "Num": "NULL",
-      "Annotation": "2018 Northern Vietnam floods"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Vietnam",
-      "Locations": [
-        "Lao Cai",
-        "Ha Giang",
-        "Lai Chau"
-      ],
-      "Start_Date": "23 June",
-      "End_Date": "25 June",
-      "Num": "over 80 houses had been destroyed",
-      "Annotation": "2018 Northern Vietnam floods"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "Vietnam"
-      ],
-      "Start_Date": "23 June",
-      "End_Date": "25 June",
-      "Num": "NULL",
-      "Annotation": "2018 Northern Vietnam floods"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Vietnam",
-      "Locations": [
-        "Lai Chau",
-        "Ha Giang",
-        "Lao Cai"
-      ],
-      "Start_Date": "23 June",
-      "End_Date": "25 June",
-      "Num": "NULL",
-      "Annotation": "2018 Northern Vietnam floods"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Vietnam"
-      ],
-      "Start_Date": "23 June",
-      "End_Date": "25 June",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "2018 Northern Vietnam floods"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Vietnam",
-      "Locations": [
-        "Lai Chau",
-        "Ha Giang",
-        "Lao Cai"
-      ],
-      "Start_Date": "23 June",
-      "End_Date": "25 June",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "2018 Northern Vietnam floods"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "VND530 billion",
-    "Total_Damage_Unit": "VND",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "2018 Northern Vietnam floods"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "Vietnam"
-      ],
-      "Start_Date": "23 June",
-      "End_Date": "25 June",
-      "Num": "VND530 billion",
-      "Num_Unit": "VND",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "2018 Northern Vietnam floods"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Vietnam",
-      "Locations": [
-        "Lao Cai",
-        "Ha Giang",
-        "Lai Chau"
-      ],
-      "Start_Date": "23 June",
-      "End_Date": "25 June",
-      "Num": "VND530 billion",
-      "Num_Unit": "VND",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "2018 Northern Vietnam floods"
-    }
-  ],
-  "Main_Event": "Flood",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Flood",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "23 June",
-  "End_Date": "25 June",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Vietnam"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Vietnam"
+        ],
+        "Start_Date": "23 June",
+        "End_Date": "25 June",
+        "Num": "NULL",
+        "Annotation": "2018 Northern Vietnam floods"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Lai Chau",
+          "Ha Giang",
+          "Lao Cai"
+        ],
+        "Start_Date": "23 June",
+        "End_Date": "25 June",
+        "Num": "NULL",
+        "Annotation": "2018 Northern Vietnam floods"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Vietnam"
+        ],
+        "Start_Date": "23 June",
+        "End_Date": "25 June",
+        "Num": "NULL",
+        "Annotation": "2018 Northern Vietnam floods"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Lao Cai",
+          "Ha Giang",
+          "Lai Chau"
+        ],
+        "Start_Date": "23 June",
+        "End_Date": "25 June",
+        "Num": "over 80 houses had been destroyed",
+        "Annotation": "2018 Northern Vietnam floods"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "Vietnam"
+        ],
+        "Start_Date": "23 June",
+        "End_Date": "25 June",
+        "Num": "NULL",
+        "Annotation": "2018 Northern Vietnam floods"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Lai Chau",
+          "Ha Giang",
+          "Lao Cai"
+        ],
+        "Start_Date": "23 June",
+        "End_Date": "25 June",
+        "Num": "NULL",
+        "Annotation": "2018 Northern Vietnam floods"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Vietnam"
+        ],
+        "Start_Date": "23 June",
+        "End_Date": "25 June",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "2018 Northern Vietnam floods"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Lai Chau",
+          "Ha Giang",
+          "Lao Cai"
+        ],
+        "Start_Date": "23 June",
+        "End_Date": "25 June",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "2018 Northern Vietnam floods"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "VND530 billion",
+      "Total_Damage_Unit": "VND",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "2018 Northern Vietnam floods"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Vietnam"
+        ],
+        "Start_Date": "23 June",
+        "End_Date": "25 June",
+        "Num": "VND530 billion",
+        "Num_Unit": "VND",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "2018 Northern Vietnam floods"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Lao Cai",
+          "Ha Giang",
+          "Lai Chau"
+        ],
+        "Start_Date": "23 June",
+        "End_Date": "25 June",
+        "Num": "VND530 billion",
+        "Num_Unit": "VND",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "2018 Northern Vietnam floods"
+      }
+    ],
+    "Main_Event": "Flood",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Flood",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "23 June",
+    "End_Date": "25 June",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Vietnam"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

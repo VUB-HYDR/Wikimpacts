@@ -1,471 +1,473 @@
-{
-  "Event_ID": "D5BEm2V",
-  "Sources": "https://en.wikipedia.org/wiki/Cyclone_Nargis",
-  "Event_Names": "Cyclone Nargis",
-  "Total_Summary_Affected": {
-    "Total_Affected": "1.5 million",
-    "Total_Affected_Annotation": "Myanmar"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Myanmar"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1.5 million",
-      "Annotation": "Myanmar"
+[
+  {
+    "Event_ID": "D5BEm2V",
+    "Sources": "https://en.wikipedia.org/wiki/Cyclone_Nargis",
+    "Event_Names": "Cyclone Nargis",
+    "Total_Summary_Affected": {
+      "Total_Affected": "1.5 million",
+      "Total_Affected_Annotation": "Myanmar"
     },
-    {
-      "Administrative_Areas": [
-        "Sri Lanka"
-      ],
-      "Start_Date": "27 April 2008",
-      "End_Date": "28 April 2008",
-      "Num": "35,000",
-      "Annotation": "Western Bay of Bengal"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Myanmar",
-      "Locations": [
-        "Labutta Township"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "80,000",
-      "Annotation": "Cyclone Nargis"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Myanmar"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1.5 million",
+        "Annotation": "Myanmar"
+      },
+      {
+        "Administrative_Areas": [
+          "Sri Lanka"
+        ],
+        "Start_Date": "27 April 2008",
+        "End_Date": "28 April 2008",
+        "Num": "35,000",
+        "Annotation": "Western Bay of Bengal"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Myanmar",
+        "Locations": [
+          "Labutta Township"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "80,000",
+        "Annotation": "Cyclone Nargis"
+      },
+      {
+        "Administrative_Area": "Myanmar",
+        "Locations": [
+          "Bogale"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "10,000",
+        "Annotation": "Cyclone Nargis"
+      },
+      {
+        "Administrative_Area": "Myanmar",
+        "Locations": [
+          "Irrawaddy Delta"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "95% of buildings destroyed",
+        "Annotation": "Myanmar"
+      },
+      {
+        "Administrative_Area": "Myanmar",
+        "Locations": [
+          "Ayeyarwady Division"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,163 temples destroyed",
+        "Annotation": "Myanmar"
+      },
+      {
+        "Administrative_Area": "Myanmar",
+        "Locations": [
+          "Yangon Division"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "284 temples destroyed",
+        "Annotation": "Myanmar"
+      },
+      {
+        "Administrative_Area": "Sri Lanka",
+        "Locations": [
+          "Western Province",
+          "Sabaragamuwa Province",
+          "Southern Province"
+        ],
+        "Start_Date": "27 April 2008",
+        "End_Date": "28 April 2008",
+        "Num": "3,000 families displaced",
+        "Annotation": "Western Bay of Bengal"
+      },
+      {
+        "Administrative_Area": "Sri Lanka",
+        "Locations": [
+          "Ratnapura",
+          "Kegalle"
+        ],
+        "Start_Date": "27 April 2008",
+        "End_Date": "28 April 2008",
+        "Num": "4,500 people homeless",
+        "Annotation": "Western Bay of Bengal"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Myanmar",
-      "Locations": [
-        "Bogale"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "10,000",
-      "Annotation": "Cyclone Nargis"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Sri Lanka",
+        "Start_Date": "27 April 2008",
+        "End_Date": "28 April 2008",
+        "Num": "Thousands of houses",
+        "Annotation": "Western Bay of Bengal"
+      },
+      {
+        "Administrative_Areas": "Myanmar",
+        "Start_Date": "2 May 2008",
+        "End_Date": "NULL",
+        "Num": "Thousands of buildings",
+        "Annotation": "Myanmar"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Sri Lanka",
+        "Locations": [
+          "Ratnapura",
+          "Kegalle"
+        ],
+        "Start_Date": "27 April 2008",
+        "End_Date": "28 April 2008",
+        "Num": "21 houses",
+        "Annotation": "Western Bay of Bengal"
+      },
+      {
+        "Administrative_Area": "Myanmar",
+        "Locations": [
+          "Labutta",
+          "Irrawaddy Delta"
+        ],
+        "Start_Date": "2 May 2008",
+        "End_Date": "NULL",
+        "Num": "75 percent of buildings in Labutta; 95 percent of buildings in Irrawaddy Delta",
+        "Annotation": "Myanmar"
+      },
+      {
+        "Administrative_Area": "Myanmar",
+        "Locations": [
+          "Ayeyarwady Division"
+        ],
+        "Start_Date": "2 May 2008",
+        "End_Date": "NULL",
+        "Num": "1,163 temples",
+        "Annotation": "Myanmar"
+      },
+      {
+        "Administrative_Area": "Myanmar",
+        "Locations": [
+          "Yangon Division"
+        ],
+        "Start_Date": "2 May 2008",
+        "End_Date": "NULL",
+        "Num": "284 temples",
+        "Annotation": "Myanmar"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "138,373",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Myanmar",
-      "Locations": [
-        "Irrawaddy Delta"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "95% of buildings destroyed",
-      "Annotation": "Myanmar"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Myanmar",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "84,537",
+        "Annotation": "Myanmar"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Myanmar",
+        "Locations": [
+          "Labutta Township"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "80,000",
+        "Annotation": "Cyclone Nargis"
+      },
+      {
+        "Administrative_Area": "Myanmar",
+        "Locations": [
+          "Bogale"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "10,000",
+        "Annotation": "Cyclone Nargis"
+      },
+      {
+        "Administrative_Area": "Sri Lanka",
+        "Locations": [
+          "Western Province",
+          "Sabaragamuwa Province",
+          "Southern Province"
+        ],
+        "Start_Date": "27 April 2008",
+        "End_Date": "28 April 2008",
+        "Num": "2",
+        "Annotation": "Western Bay of Bengal"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Myanmar",
-      "Locations": [
-        "Ayeyarwady Division"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1,163 temples destroyed",
-      "Annotation": "Myanmar"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Sri Lanka"
+        ],
+        "Start_Date": "27 April 2008",
+        "End_Date": "28 April 2008",
+        "Num": "more than 35,000 people",
+        "Annotation": "Western Bay of Bengal"
+      },
+      {
+        "Administrative_Areas": [
+          "Myanmar"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2 million to 3 million",
+        "Annotation": "Myanmar"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Sri Lanka",
+        "Locations": [
+          "Western",
+          "Sabaragamuwa",
+          "Southern provinces",
+          "Ratnapura",
+          "Kegalle"
+        ],
+        "Start_Date": "27 April 2008",
+        "End_Date": "28 April 2008",
+        "Num": "more than 35,000 people",
+        "Annotation": "Western Bay of Bengal"
+      },
+      {
+        "Administrative_Area": "Myanmar",
+        "Locations": [
+          "Irrawaddy Delta",
+          "Labutta",
+          "Bogale"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2 million to 3 million",
+        "Annotation": "Myanmar"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "2 million to 3 million",
+      "Total_Homeless_Annotation": "Myanmar"
     },
-    {
-      "Administrative_Area": "Myanmar",
-      "Locations": [
-        "Yangon Division"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "284 temples destroyed",
-      "Annotation": "Myanmar"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Sri Lanka"
+        ],
+        "Start_Date": "27 April 2008",
+        "End_Date": "28 April 2008",
+        "Num": "4,500 people",
+        "Annotation": "Western Bay of Bengal"
+      },
+      {
+        "Administrative_Areas": [
+          "Myanmar"
+        ],
+        "Start_Date": "2 May 2008",
+        "End_Date": "NULL",
+        "Num": "2 million to 3 million",
+        "Annotation": "Myanmar"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Sri Lanka",
+        "Locations": [
+          "Western Province",
+          "Sabaragamuwa Province",
+          "Southern Province",
+          "Ratnapura",
+          "Kegalle"
+        ],
+        "Start_Date": "27 April 2008",
+        "End_Date": "28 April 2008",
+        "Num": "4,500 people",
+        "Annotation": "Western Bay of Bengal"
+      },
+      {
+        "Administrative_Area": "Myanmar",
+        "Locations": [
+          "Labutta",
+          "Ayeyarwady Division"
+        ],
+        "Start_Date": "2 May 2008",
+        "End_Date": "NULL",
+        "Num": "75 percent of buildings had collapsed and 20 percent had their roofs ripped off",
+        "Annotation": "Myanmar"
+      },
+      {
+        "Administrative_Area": "Myanmar",
+        "Locations": [
+          "Irrawaddy Delta"
+        ],
+        "Start_Date": "2 May 2008",
+        "End_Date": "NULL",
+        "Num": "95 percent of buildings were destroyed",
+        "Annotation": "Myanmar"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Sri Lanka",
-      "Locations": [
-        "Western Province",
-        "Sabaragamuwa Province",
-        "Southern Province"
-      ],
-      "Start_Date": "27 April 2008",
-      "End_Date": "28 April 2008",
-      "Num": "3,000 families displaced",
-      "Annotation": "Western Bay of Bengal"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Sri Lanka",
+        "Start_Date": "27 April 2008",
+        "End_Date": "28 April 2008",
+        "Num": "Three people were reported injured",
+        "Annotation": "Western Bay of Bengal"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Sri Lanka",
+        "Locations": [
+          "Western",
+          "Sabaragamuwa",
+          "Southern provinces"
+        ],
+        "Start_Date": "27 April 2008",
+        "End_Date": "28 April 2008",
+        "Num": "Three people were reported injured",
+        "Annotation": "Western Bay of Bengal"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Sri Lanka",
-      "Locations": [
-        "Ratnapura",
-        "Kegalle"
-      ],
-      "Start_Date": "27 April 2008",
-      "End_Date": "28 April 2008",
-      "Num": "4,500 people homeless",
-      "Annotation": "Western Bay of Bengal"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Sri Lanka",
-      "Start_Date": "27 April 2008",
-      "End_Date": "28 April 2008",
-      "Num": "Thousands of houses",
-      "Annotation": "Western Bay of Bengal"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Myanmar"
+        ],
+        "Start_Date": "2 May 2008",
+        "End_Date": "3 May 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Myanmar"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Myanmar",
+        "Locations": [
+          "Labutta Township",
+          "Bogale"
+        ],
+        "Start_Date": "2 May 2008",
+        "End_Date": "3 May 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Myanmar"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$12.9 billion",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": "Myanmar",
-      "Start_Date": "2 May 2008",
-      "End_Date": "NULL",
-      "Num": "Thousands of buildings",
-      "Annotation": "Myanmar"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Sri Lanka",
-      "Locations": [
-        "Ratnapura",
-        "Kegalle"
-      ],
-      "Start_Date": "27 April 2008",
-      "End_Date": "28 April 2008",
-      "Num": "21 houses",
-      "Annotation": "Western Bay of Bengal"
-    },
-    {
-      "Administrative_Area": "Myanmar",
-      "Locations": [
-        "Labutta",
-        "Irrawaddy Delta"
-      ],
-      "Start_Date": "2 May 2008",
-      "End_Date": "NULL",
-      "Num": "75 percent of buildings in Labutta; 95 percent of buildings in Irrawaddy Delta",
-      "Annotation": "Myanmar"
-    },
-    {
-      "Administrative_Area": "Myanmar",
-      "Locations": [
-        "Ayeyarwady Division"
-      ],
-      "Start_Date": "2 May 2008",
-      "End_Date": "NULL",
-      "Num": "1,163 temples",
-      "Annotation": "Myanmar"
-    },
-    {
-      "Administrative_Area": "Myanmar",
-      "Locations": [
-        "Yangon Division"
-      ],
-      "Start_Date": "2 May 2008",
-      "End_Date": "NULL",
-      "Num": "284 temples",
-      "Annotation": "Myanmar"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "138,373",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Myanmar",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "84,537",
-      "Annotation": "Myanmar"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Myanmar",
-      "Locations": [
-        "Labutta Township"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "80,000",
-      "Annotation": "Cyclone Nargis"
-    },
-    {
-      "Administrative_Area": "Myanmar",
-      "Locations": [
-        "Bogale"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "10,000",
-      "Annotation": "Cyclone Nargis"
-    },
-    {
-      "Administrative_Area": "Sri Lanka",
-      "Locations": [
-        "Western Province",
-        "Sabaragamuwa Province",
-        "Southern Province"
-      ],
-      "Start_Date": "27 April 2008",
-      "End_Date": "28 April 2008",
-      "Num": "2",
-      "Annotation": "Western Bay of Bengal"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Sri Lanka"
-      ],
-      "Start_Date": "27 April 2008",
-      "End_Date": "28 April 2008",
-      "Num": "more than 35,000 people",
-      "Annotation": "Western Bay of Bengal"
-    },
-    {
-      "Administrative_Areas": [
-        "Myanmar"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2 million to 3 million",
-      "Annotation": "Myanmar"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Sri Lanka",
-      "Locations": [
-        "Western",
-        "Sabaragamuwa",
-        "Southern provinces",
-        "Ratnapura",
-        "Kegalle"
-      ],
-      "Start_Date": "27 April 2008",
-      "End_Date": "28 April 2008",
-      "Num": "more than 35,000 people",
-      "Annotation": "Western Bay of Bengal"
-    },
-    {
-      "Administrative_Area": "Myanmar",
-      "Locations": [
-        "Irrawaddy Delta",
-        "Labutta",
-        "Bogale"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2 million to 3 million",
-      "Annotation": "Myanmar"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "2 million to 3 million",
-    "Total_Homeless_Annotation": "Myanmar"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "Sri Lanka"
-      ],
-      "Start_Date": "27 April 2008",
-      "End_Date": "28 April 2008",
-      "Num": "4,500 people",
-      "Annotation": "Western Bay of Bengal"
-    },
-    {
-      "Administrative_Areas": [
-        "Myanmar"
-      ],
-      "Start_Date": "2 May 2008",
-      "End_Date": "NULL",
-      "Num": "2 million to 3 million",
-      "Annotation": "Myanmar"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Sri Lanka",
-      "Locations": [
-        "Western Province",
-        "Sabaragamuwa Province",
-        "Southern Province",
-        "Ratnapura",
-        "Kegalle"
-      ],
-      "Start_Date": "27 April 2008",
-      "End_Date": "28 April 2008",
-      "Num": "4,500 people",
-      "Annotation": "Western Bay of Bengal"
-    },
-    {
-      "Administrative_Area": "Myanmar",
-      "Locations": [
-        "Labutta",
-        "Ayeyarwady Division"
-      ],
-      "Start_Date": "2 May 2008",
-      "End_Date": "NULL",
-      "Num": "75 percent of buildings had collapsed and 20 percent had their roofs ripped off",
-      "Annotation": "Myanmar"
-    },
-    {
-      "Administrative_Area": "Myanmar",
-      "Locations": [
-        "Irrawaddy Delta"
-      ],
-      "Start_Date": "2 May 2008",
-      "End_Date": "NULL",
-      "Num": "95 percent of buildings were destroyed",
-      "Annotation": "Myanmar"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Sri Lanka",
-      "Start_Date": "27 April 2008",
-      "End_Date": "28 April 2008",
-      "Num": "Three people were reported injured",
-      "Annotation": "Western Bay of Bengal"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Sri Lanka",
-      "Locations": [
-        "Western",
-        "Sabaragamuwa",
-        "Southern provinces"
-      ],
-      "Start_Date": "27 April 2008",
-      "End_Date": "28 April 2008",
-      "Num": "Three people were reported injured",
-      "Annotation": "Western Bay of Bengal"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Myanmar"
-      ],
-      "Start_Date": "2 May 2008",
-      "End_Date": "3 May 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Myanmar"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Myanmar",
-      "Locations": [
-        "Labutta Township",
-        "Bogale"
-      ],
-      "Start_Date": "2 May 2008",
-      "End_Date": "3 May 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Myanmar"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$12.9 billion",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "Myanmar"
-      ],
-      "Start_Date": "2 May 2008",
-      "End_Date": "3 May 2008",
-      "Num": "$12 billion",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Myanmar"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Myanmar",
-      "Locations": [
-        "Irrawaddy Delta"
-      ],
-      "Start_Date": "2 May 2008",
-      "End_Date": "3 May 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Myanmar"
-    },
-    {
-      "Administrative_Area": "Myanmar",
-      "Locations": [
-        "Labutta"
-      ],
-      "Start_Date": "2 May 2008",
-      "End_Date": "3 May 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Myanmar"
-    },
-    {
-      "Administrative_Area": "Myanmar",
-      "Locations": [
-        "Yangon"
-      ],
-      "Start_Date": "2 May 2008",
-      "End_Date": "3 May 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Myanmar"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Myanmar",
-  "Start_Date": "27 April 2008",
-  "End_Date": "3 May 2008",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Bangladesh",
-    "Myanmar",
-    "India",
-    "Sri Lanka",
-    "Thailand",
-    "Laos",
-    "China"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Myanmar"
+        ],
+        "Start_Date": "2 May 2008",
+        "End_Date": "3 May 2008",
+        "Num": "$12 billion",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Myanmar"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Myanmar",
+        "Locations": [
+          "Irrawaddy Delta"
+        ],
+        "Start_Date": "2 May 2008",
+        "End_Date": "3 May 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Myanmar"
+      },
+      {
+        "Administrative_Area": "Myanmar",
+        "Locations": [
+          "Labutta"
+        ],
+        "Start_Date": "2 May 2008",
+        "End_Date": "3 May 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Myanmar"
+      },
+      {
+        "Administrative_Area": "Myanmar",
+        "Locations": [
+          "Yangon"
+        ],
+        "Start_Date": "2 May 2008",
+        "End_Date": "3 May 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Myanmar"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Myanmar",
+    "Start_Date": "27 April 2008",
+    "End_Date": "3 May 2008",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Bangladesh",
+      "Myanmar",
+      "India",
+      "Sri Lanka",
+      "Thailand",
+      "Laos",
+      "China"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

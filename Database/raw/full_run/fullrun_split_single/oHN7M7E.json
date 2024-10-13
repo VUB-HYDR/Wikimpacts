@@ -1,324 +1,326 @@
-{
-  "Event_ID": "oHN7M7E",
-  "Sources": "https://en.wikipedia.org/wiki/2010_Gascoyne_River_flood",
-  "Event_Names": "2010 Gascoyne River flood",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "16 December 2010",
-      "End_Date": "21 December 2010",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Carnarvon"
-      ],
-      "Start_Date": "19 December 2010",
-      "End_Date": "21 December 2010",
-      "Num": "200",
-      "Annotation": "Impact"
+[
+  {
+    "Event_ID": "oHN7M7E",
+    "Sources": "https://en.wikipedia.org/wiki/2010_Gascoyne_River_flood",
+    "Event_Names": "2010 Gascoyne River flood",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Yalgoo"
-      ],
-      "Start_Date": "20 December 2010",
-      "End_Date": "20 December 2010",
-      "Num": "6",
-      "Annotation": "Impact"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "16 December 2010",
+        "End_Date": "21 December 2010",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Carnarvon"
+        ],
+        "Start_Date": "19 December 2010",
+        "End_Date": "21 December 2010",
+        "Num": "200",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Yalgoo"
+        ],
+        "Start_Date": "20 December 2010",
+        "End_Date": "20 December 2010",
+        "Num": "6",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Gascoyne Junction"
+        ],
+        "Start_Date": "20 December 2010",
+        "End_Date": "20 December 2010",
+        "Num": "30",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "several homes",
+      "Total_Buildings_Damaged_Annotation": "2010 Gascoyne River flood"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Gascoyne Junction"
-      ],
-      "Start_Date": "20 December 2010",
-      "End_Date": "20 December 2010",
-      "Num": "30",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "several homes",
-    "Total_Buildings_Damaged_Annotation": "2010 Gascoyne River flood"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "16 December 2010",
-      "End_Date": "21 December 2010",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Carnarvon"
-      ],
-      "Start_Date": "16 December 2010",
-      "End_Date": "21 December 2010",
-      "Num": "entire homes",
-      "Annotation": "2010 Gascoyne River flood"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "16 December 2010",
+        "End_Date": "21 December 2010",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Carnarvon"
+        ],
+        "Start_Date": "16 December 2010",
+        "End_Date": "21 December 2010",
+        "Num": "entire homes",
+        "Annotation": "2010 Gascoyne River flood"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Gascoyne Junction"
+        ],
+        "Start_Date": "16 December 2010",
+        "End_Date": "21 December 2010",
+        "Num": "several homesteads",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "None",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Gascoyne Junction"
-      ],
-      "Start_Date": "16 December 2010",
-      "End_Date": "21 December 2010",
-      "Num": "several homesteads",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "None",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "None",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "None",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Carnarvon"
-      ],
-      "Start_Date": "19 December 2010",
-      "End_Date": "NULL",
-      "Num": "200 residents",
-      "Annotation": "Impact"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "None",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "None",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Yalgoo"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "6 residents",
-      "Annotation": "Impact"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Carnarvon"
+        ],
+        "Start_Date": "19 December 2010",
+        "End_Date": "NULL",
+        "Num": "200 residents",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Yalgoo"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "6 residents",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Gascoyne Junction"
+        ],
+        "Start_Date": "20 December 2010",
+        "End_Date": "NULL",
+        "Num": "30 people",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Gascoyne Junction"
+        ],
+        "Start_Date": "22 December 2010",
+        "End_Date": "NULL",
+        "Num": "entire town",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Gascoyne Junction"
-      ],
-      "Start_Date": "20 December 2010",
-      "End_Date": "NULL",
-      "Num": "30 people",
-      "Annotation": "Impact"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "16 December 2010",
+        "End_Date": "21 December 2010",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Carnarvon"
+        ],
+        "Start_Date": "19 December 2010",
+        "End_Date": "21 December 2010",
+        "Num": "200 residents",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Gascoyne Junction"
+        ],
+        "Start_Date": "20 December 2010",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Gascoyne Junction"
-      ],
-      "Start_Date": "22 December 2010",
-      "End_Date": "NULL",
-      "Num": "entire town",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "16 December 2010",
-      "End_Date": "21 December 2010",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Carnarvon"
-      ],
-      "Start_Date": "19 December 2010",
-      "End_Date": "21 December 2010",
-      "Num": "200 residents",
-      "Annotation": "Impact"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "16 December 2010",
+        "End_Date": "21 December 2010",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Carnarvon",
+          "Yalgoo",
+          "Gascoyne Junction"
+        ],
+        "Start_Date": "16 December 2010",
+        "End_Date": "21 December 2010",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Gascoyne Junction"
-      ],
-      "Start_Date": "20 December 2010",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "16 December 2010",
-      "End_Date": "21 December 2010",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Carnarvon",
-        "Yalgoo",
-        "Gascoyne Junction"
-      ],
-      "Start_Date": "16 December 2010",
-      "End_Date": "21 December 2010",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "16 December 2010",
-      "End_Date": "21 December 2010",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Carnarvon",
-        "Gascoyne Junction"
-      ],
-      "Start_Date": "16 December 2010",
-      "End_Date": "21 December 2010",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "A$100 million",
-    "Total_Damage_Unit": "AUD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "16 December 2010",
-      "End_Date": "21 December 2010",
-      "Num": "A$100 million",
-      "Num_Unit": "AUD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Carnarvon",
-        "Gascoyne Junction"
-      ],
-      "Start_Date": "16 December 2010",
-      "End_Date": "21 December 2010",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Main_Event": "Flood",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Flood",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "16 December 2010",
-  "End_Date": "21 December 2010",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Australia"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "16 December 2010",
+        "End_Date": "21 December 2010",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Carnarvon",
+          "Gascoyne Junction"
+        ],
+        "Start_Date": "16 December 2010",
+        "End_Date": "21 December 2010",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "A$100 million",
+      "Total_Damage_Unit": "AUD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "16 December 2010",
+        "End_Date": "21 December 2010",
+        "Num": "A$100 million",
+        "Num_Unit": "AUD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Carnarvon",
+          "Gascoyne Junction"
+        ],
+        "Start_Date": "16 December 2010",
+        "End_Date": "21 December 2010",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Main_Event": "Flood",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Flood",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "16 December 2010",
+    "End_Date": "21 December 2010",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Australia"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

@@ -1,332 +1,334 @@
-{
-  "Event_ID": "PcZGWIf",
-  "Sources": "https://en.wikipedia.org/wiki/January_2012_Fiji_floods",
-  "Event_Names": "January 2012 Fiji floods",
-  "Total_Summary_Affected": {
-    "Total_Affected": "over 178,000",
-    "Total_Affected_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Fiji"
-      ],
-      "Start_Date": "January 21, 2012",
-      "End_Date": "February 12, 2012",
-      "Num": "over 178,000",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Fiji",
-      "Locations": [
-        "Nadi",
-        "Lautoka",
-        "Ba",
-        "Tavua",
-        "Rakiraki"
-      ],
-      "Start_Date": "January 21, 2012",
-      "End_Date": "February 12, 2012",
-      "Num": "NULL",
-      "Annotation": "January 2012 Fiji floods"
+[
+  {
+    "Event_ID": "PcZGWIf",
+    "Sources": "https://en.wikipedia.org/wiki/January_2012_Fiji_floods",
+    "Event_Names": "January 2012 Fiji floods",
+    "Total_Summary_Affected": {
+      "Total_Affected": "over 178,000",
+      "Total_Affected_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Fiji",
-      "Locations": [
-        "Lakilaki",
-        "Ba",
-        "Nadi"
-      ],
-      "Start_Date": "January 24, 2012",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Meteorological causes of 2012 Fiji flood"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Fiji"
+        ],
+        "Start_Date": "January 21, 2012",
+        "End_Date": "February 12, 2012",
+        "Num": "over 178,000",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Fiji",
+        "Locations": [
+          "Nadi",
+          "Lautoka",
+          "Ba",
+          "Tavua",
+          "Rakiraki"
+        ],
+        "Start_Date": "January 21, 2012",
+        "End_Date": "February 12, 2012",
+        "Num": "NULL",
+        "Annotation": "January 2012 Fiji floods"
+      },
+      {
+        "Administrative_Area": "Fiji",
+        "Locations": [
+          "Lakilaki",
+          "Ba",
+          "Nadi"
+        ],
+        "Start_Date": "January 24, 2012",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Meteorological causes of 2012 Fiji flood"
+      },
+      {
+        "Administrative_Area": "Fiji",
+        "Locations": [
+          "western region of the main island of Vitu Levu",
+          "Vanua Levu"
+        ],
+        "Start_Date": "January 21, 2012",
+        "End_Date": "February 12, 2012",
+        "Num": "NULL",
+        "Annotation": "Geographical impact"
+      },
+      {
+        "Administrative_Area": "Fiji",
+        "Locations": [
+          "western Fiji"
+        ],
+        "Start_Date": "January 21, 2012",
+        "End_Date": "February 12, 2012",
+        "Num": "NULL",
+        "Annotation": "Infrastructure system strengthening"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Fiji",
-      "Locations": [
-        "western region of the main island of Vitu Levu",
-        "Vanua Levu"
-      ],
-      "Start_Date": "January 21, 2012",
-      "End_Date": "February 12, 2012",
-      "Num": "NULL",
-      "Annotation": "Geographical impact"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "Fiji"
+        ],
+        "Start_Date": "January 21, 2012",
+        "End_Date": "February 12, 2012",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Fiji",
+        "Locations": [
+          "Nadi",
+          "Lautoka",
+          "Ba",
+          "Tavua",
+          "Rakiraki"
+        ],
+        "Start_Date": "January 21, 2012",
+        "End_Date": "February 12, 2012",
+        "Num": "NULL",
+        "Annotation": "Geographical impact"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "At least 8",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Fiji",
-      "Locations": [
-        "western Fiji"
-      ],
-      "Start_Date": "January 21, 2012",
-      "End_Date": "February 12, 2012",
-      "Num": "NULL",
-      "Annotation": "Infrastructure system strengthening"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "Fiji"
-      ],
-      "Start_Date": "January 21, 2012",
-      "End_Date": "February 12, 2012",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Fiji",
-      "Locations": [
-        "Nadi",
-        "Lautoka",
-        "Ba",
-        "Tavua",
-        "Rakiraki"
-      ],
-      "Start_Date": "January 21, 2012",
-      "End_Date": "February 12, 2012",
-      "Num": "NULL",
-      "Annotation": "Geographical impact"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "At least 8",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "Fiji"
-      ],
-      "Start_Date": "January 21, 2012",
-      "End_Date": "February 12, 2012",
-      "Num": "At least 8",
-      "Annotation": "Displacement and mortality"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Fiji",
-      "Locations": [
-        "Nadi",
-        "Lautoka",
-        "Ba",
-        "Tavua",
-        "Rakiraki"
-      ],
-      "Start_Date": "January 21, 2012",
-      "End_Date": "February 12, 2012",
-      "Num": "At least 8",
-      "Annotation": "Displacement and mortality"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "Fiji"
+        ],
+        "Start_Date": "January 21, 2012",
+        "End_Date": "February 12, 2012",
+        "Num": "At least 8",
+        "Annotation": "Displacement and mortality"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Fiji",
+        "Locations": [
+          "Nadi",
+          "Lautoka",
+          "Ba",
+          "Tavua",
+          "Rakiraki"
+        ],
+        "Start_Date": "January 21, 2012",
+        "End_Date": "February 12, 2012",
+        "Num": "At least 8",
+        "Annotation": "Displacement and mortality"
+      },
+      {
+        "Administrative_Area": "Fiji",
+        "Locations": [
+          "Nadi",
+          "Lautoka",
+          "Ba",
+          "Tavua",
+          "Rakiraki"
+        ],
+        "Start_Date": "January 21, 2012",
+        "End_Date": "February 12, 2012",
+        "Num": "44",
+        "Annotation": "Displacement and mortality"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "over 4,500",
+      "Total_Displaced_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Fiji",
-      "Locations": [
-        "Nadi",
-        "Lautoka",
-        "Ba",
-        "Tavua",
-        "Rakiraki"
-      ],
-      "Start_Date": "January 21, 2012",
-      "End_Date": "February 12, 2012",
-      "Num": "44",
-      "Annotation": "Displacement and mortality"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "over 4,500",
-    "Total_Displaced_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Fiji"
-      ],
-      "Start_Date": "January 21, 2012",
-      "End_Date": "February 12, 2012",
-      "Num": "NULL",
-      "Annotation": "Displacement and mortality"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Fiji",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "January 21, 2012",
-      "End_Date": "February 12, 2012",
-      "Num": "4,561",
-      "Annotation": "Displacement and mortality"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Fiji"
+        ],
+        "Start_Date": "January 21, 2012",
+        "End_Date": "February 12, 2012",
+        "Num": "NULL",
+        "Annotation": "Displacement and mortality"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Fiji",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "January 21, 2012",
+        "End_Date": "February 12, 2012",
+        "Num": "4,561",
+        "Annotation": "Displacement and mortality"
+      },
+      {
+        "Administrative_Area": "Fiji",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "March 2012",
+        "End_Date": "NULL",
+        "Num": "15,000",
+        "Annotation": "Displacement and mortality"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Fiji",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "March 2012",
-      "End_Date": "NULL",
-      "Num": "15,000",
-      "Annotation": "Displacement and mortality"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "Fiji"
-      ],
-      "Start_Date": "January 21, 2012",
-      "End_Date": "February 12, 2012",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Fiji",
-      "Locations": [
-        "Viti Levu",
-        "Vanua Levu"
-      ],
-      "Start_Date": "January 21, 2012",
-      "End_Date": "February 12, 2012",
-      "Num": "4,561",
-      "Annotation": "Displacement and mortality"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "Fiji"
-      ],
-      "Start_Date": "January 21, 2012",
-      "End_Date": "February 12, 2012",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Fiji",
-      "Locations": [
-        "Nadi",
-        "Lautoka",
-        "Ba",
-        "Tavua",
-        "Rakiraki"
-      ],
-      "Start_Date": "January 21, 2012",
-      "End_Date": "February 12, 2012",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Fiji"
-      ],
-      "Start_Date": "January 21, 2012",
-      "End_Date": "February 12, 2012",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Fiji",
-      "Locations": [
-        "Nadi",
-        "Lautoka",
-        "Ba",
-        "Tavua",
-        "Rakiraki"
-      ],
-      "Start_Date": "January 21, 2012",
-      "End_Date": "February 12, 2012",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "FJ$50,047,344.00",
-    "Total_Damage_Unit": "FJ$",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "Fiji"
-      ],
-      "Start_Date": "January 21, 2012",
-      "End_Date": "February 12, 2012",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Fiji",
-      "Locations": [
-        "Nadi",
-        "Lautoka",
-        "Ba",
-        "Tavua",
-        "Rakiraki"
-      ],
-      "Start_Date": "January 21, 2012",
-      "End_Date": "February 12, 2012",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Geographical impact"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Meteorological causes of 2012 Fiji flood",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Meteorological causes of 2012 Fiji flood",
-  "Start_Date": "January 21, 2012",
-  "End_Date": "February 12, 2012",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Fiji"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Fiji"
+        ],
+        "Start_Date": "January 21, 2012",
+        "End_Date": "February 12, 2012",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Fiji",
+        "Locations": [
+          "Viti Levu",
+          "Vanua Levu"
+        ],
+        "Start_Date": "January 21, 2012",
+        "End_Date": "February 12, 2012",
+        "Num": "4,561",
+        "Annotation": "Displacement and mortality"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "Fiji"
+        ],
+        "Start_Date": "January 21, 2012",
+        "End_Date": "February 12, 2012",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Fiji",
+        "Locations": [
+          "Nadi",
+          "Lautoka",
+          "Ba",
+          "Tavua",
+          "Rakiraki"
+        ],
+        "Start_Date": "January 21, 2012",
+        "End_Date": "February 12, 2012",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Fiji"
+        ],
+        "Start_Date": "January 21, 2012",
+        "End_Date": "February 12, 2012",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Fiji",
+        "Locations": [
+          "Nadi",
+          "Lautoka",
+          "Ba",
+          "Tavua",
+          "Rakiraki"
+        ],
+        "Start_Date": "January 21, 2012",
+        "End_Date": "February 12, 2012",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "FJ$50,047,344.00",
+      "Total_Damage_Unit": "FJ$",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Fiji"
+        ],
+        "Start_Date": "January 21, 2012",
+        "End_Date": "February 12, 2012",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Fiji",
+        "Locations": [
+          "Nadi",
+          "Lautoka",
+          "Ba",
+          "Tavua",
+          "Rakiraki"
+        ],
+        "Start_Date": "January 21, 2012",
+        "End_Date": "February 12, 2012",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Geographical impact"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Meteorological causes of 2012 Fiji flood",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Meteorological causes of 2012 Fiji flood",
+    "Start_Date": "January 21, 2012",
+    "End_Date": "February 12, 2012",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Fiji"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

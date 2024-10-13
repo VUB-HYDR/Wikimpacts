@@ -1,344 +1,346 @@
-{
-  "Event_ID": "MKzzu6a",
-  "Sources": "https://en.wikipedia.org/wiki/Hurricane_Alex_(2004)",
-  "Event_Names": "Hurricane Alex (2004)",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impact"
+[
+  {
+    "Event_ID": "MKzzu6a",
+    "Sources": "https://en.wikipedia.org/wiki/Hurricane_Alex_(2004)",
+    "Event_Names": "Hurricane Alex (2004)",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": [
-        "Canada"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Outer Banks",
-        "North Carolina"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3,500 tourists",
-      "Annotation": "Preparations"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Outer Banks",
+          "North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3,500 tourists",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Outer Banks",
+          "North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "10,000 buildings without power",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Nags Head"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "One man drowned",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Rehoboth Beach",
+          "Delaware"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Three people injured",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New Jersey"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "At least five swimmers hospitalized",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Newfoundland"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Four British rowers",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "over 100 houses and buildings",
+      "Total_Buildings_Damaged_Annotation": "Impact"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Outer Banks",
-        "North Carolina"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "10,000 buildings without power",
-      "Annotation": "Impact"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "August 3, 2004",
+        "End_Date": "August 6, 2004",
+        "Num": "over 100 houses and buildings",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Outer Banks",
+          "Ocracoke Island",
+          "Cape Fear"
+        ],
+        "Start_Date": "August 3, 2004",
+        "End_Date": "August 6, 2004",
+        "Num": "over 100 houses and buildings",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "1",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Nags Head"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "One man drowned",
-      "Annotation": "Impact"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Nags Head"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Rehoboth Beach",
-        "Delaware"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Three people injured",
-      "Annotation": "Impact"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Ocracoke Island"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "thousands of tourists",
+        "Annotation": "Aftermath and records"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "New Jersey"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "At least five swimmers hospitalized",
-      "Annotation": "Impact"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Outer Banks"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "over 100 houses",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Newfoundland"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Four British rowers",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "over 100 houses and buildings",
-    "Total_Buildings_Damaged_Annotation": "Impact"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "August 3, 2004",
-      "End_Date": "August 6, 2004",
-      "Num": "over 100 houses and buildings",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Outer Banks",
-        "Ocracoke Island",
-        "Cape Fear"
-      ],
-      "Start_Date": "August 3, 2004",
-      "End_Date": "August 6, 2004",
-      "Num": "over 100 houses and buildings",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "1",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Nags Head"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Ocracoke Island"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "thousands of tourists",
-      "Annotation": "Aftermath and records"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Outer Banks"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "over 100 houses",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "North Carolina"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "several",
-      "Annotation": "Impact"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "several",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Rehoboth Beach, Delaware"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "three",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New Jersey"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least five",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Rehoboth Beach, Delaware"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "three",
-      "Annotation": "Impact"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "July 31, 2004",
+        "End_Date": "August 6, 2004",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Outer Banks",
+          "Ocracoke Island",
+          "Cape Fear",
+          "Morehead City",
+          "Nags Head",
+          "Virginia",
+          "Rehoboth Beach",
+          "New Jersey"
+        ],
+        "Start_Date": "July 31, 2004",
+        "End_Date": "August 6, 2004",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$7.5 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "New Jersey"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "at least five",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "July 31, 2004",
-      "End_Date": "August 6, 2004",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Outer Banks",
-        "Ocracoke Island",
-        "Cape Fear",
-        "Morehead City",
-        "Nags Head",
-        "Virginia",
-        "Rehoboth Beach",
-        "New Jersey"
-      ],
-      "Start_Date": "July 31, 2004",
-      "End_Date": "August 6, 2004",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$7.5 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$7.5 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Outer Banks",
-        "Ocracoke Island",
-        "Cape Fear",
-        "Morehead City",
-        "Virginia",
-        "Rehoboth Beach",
-        "New Jersey"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$7.5 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Impact",
-  "Start_Date": "July 31, 2004",
-  "End_Date": "August 6, 2004",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "United States",
-    "Canada"
-  ],
-  "Administrative_Areas_Annotation": "header: Impact"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$7.5 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Outer Banks",
+          "Ocracoke Island",
+          "Cape Fear",
+          "Morehead City",
+          "Virginia",
+          "Rehoboth Beach",
+          "New Jersey"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$7.5 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Impact",
+    "Start_Date": "July 31, 2004",
+    "End_Date": "August 6, 2004",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "United States",
+      "Canada"
+    ],
+    "Administrative_Areas_Annotation": "header: Impact"
+  }
+]

@@ -1,555 +1,557 @@
-{
-  "Event_ID": "0mdJUtm",
-  "Sources": "https://en.wikipedia.org/wiki/2008_Chinese_winter_storms",
-  "Event_Names": "2008 Chinese winter storms",
-  "Total_Summary_Affected": {
-    "Total_Affected": "78 million",
-    "Total_Affected_Annotation": "Damage"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "China"
-      ],
-      "Start_Date": "25 January 2008",
-      "End_Date": "6 February 2008",
-      "Num": "78 million",
-      "Annotation": "Damage"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Chenzhou"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "4.6 million",
-      "Annotation": "Damage"
+[
+  {
+    "Event_ID": "0mdJUtm",
+    "Sources": "https://en.wikipedia.org/wiki/2008_Chinese_winter_storms",
+    "Event_Names": "2008 Chinese winter storms",
+    "Total_Summary_Affected": {
+      "Total_Affected": "78 million",
+      "Total_Affected_Annotation": "Damage"
     },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Fuzhou, Jiangxi"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Damage"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "China"
+        ],
+        "Start_Date": "25 January 2008",
+        "End_Date": "6 February 2008",
+        "Num": "78 million",
+        "Annotation": "Damage"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Chenzhou"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4.6 million",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Fuzhou, Jiangxi"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Guangxi"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "239,000",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Fourteen provinces"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "827,000",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Various locations"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1.8 million",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Guangzhou railway station"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "500,000 to 800,000",
+        "Annotation": "Railway"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Guangdong area"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "11 million",
+        "Annotation": "Railway"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Various highways"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "60,000",
+        "Annotation": "Airport"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Baiyun Airport in Guangzhou"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "10,000",
+        "Annotation": "Airport"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Various locations"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "200,000",
+        "Annotation": "Fatalities"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "223,000 homes destroyed and 862,000 others damaged",
+      "Total_Buildings_Damaged_Annotation": "Damage"
     },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Guangxi"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "239,000",
-      "Annotation": "Damage"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "China"
+        ],
+        "Start_Date": "25 January 2008",
+        "End_Date": "6 February 2008",
+        "Num": "223,000 homes destroyed and 862,000 others damaged",
+        "Annotation": "Damage"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Xiangtan"
+        ],
+        "Start_Date": "25 January 2008",
+        "End_Date": "6 February 2008",
+        "Num": "500 meter-long auto plant roof collapse",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Chenzhou"
+        ],
+        "Start_Date": "25 January 2008",
+        "End_Date": "6 February 2008",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Fuzhou"
+        ],
+        "Start_Date": "25 January 2008",
+        "End_Date": "6 February 2008",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Wuhan"
+        ],
+        "Start_Date": "25 January 2008",
+        "End_Date": "6 February 2008",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Guangxi"
+        ],
+        "Start_Date": "25 January 2008",
+        "End_Date": "6 February 2008",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "at least 129",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Fourteen provinces"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "827,000",
-      "Annotation": "Damage"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 107",
+        "Annotation": "Fatalities"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Anhui"
+        ],
+        "Start_Date": "January 21",
+        "End_Date": "January 21",
+        "Num": "11",
+        "Annotation": "Fatalities"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "near Zunyi City"
+        ],
+        "Start_Date": "January 28",
+        "End_Date": "January 28",
+        "Num": "at least 25",
+        "Annotation": "Fatalities"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Hunan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Fatalities"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Guangzhou"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 1",
+        "Annotation": "Fatalities"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Various locations"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "60",
+        "Annotation": "Fatalities"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Various locations"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "11",
+        "Annotation": "Fatalities"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "1.8 million",
+      "Total_Displaced_Annotation": "Damage"
     },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Various locations"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1.8 million",
-      "Annotation": "Damage"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "China"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1.8 million",
+        "Annotation": "Damage"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "fourteen provinces"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "827,000",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Guangzhou railway station"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "500,000 to 800,000",
+        "Annotation": "Railway"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Guangdong area"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "11 million",
+        "Annotation": "Railway"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Guangzhou railway station"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "500,000 to 800,000",
-      "Annotation": "Railway"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Chenzhou"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4.6 million",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Fuzhou, Jiangxi"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Wuhan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "100,000",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Guangxi"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "239,000",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Fourteen provinces"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "827,000",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Various regions"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1.8 million",
+        "Annotation": "Damage"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "about 200,000",
+      "Total_Injuries_Annotation": "Fatalities"
     },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Guangdong area"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "11 million",
-      "Annotation": "Railway"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "about 200,000",
+        "Annotation": "Fatalities"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "about 200,000",
+        "Annotation": "Fatalities"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "tens of thousands of compensation cases including half a million from the hardest-hit regions",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "No",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "Economic impact and costs"
     },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Various highways"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "60,000",
-      "Annotation": "Airport"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "China"
+        ],
+        "Start_Date": "25 January 2008",
+        "End_Date": "6 February 2008",
+        "Num": "tens of thousands of compensation cases including half a million from the hardest-hit regions",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Economic impact and costs"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "hardest-hit regions"
+        ],
+        "Start_Date": "25 January 2008",
+        "End_Date": "6 February 2008",
+        "Num": "tens of thousands of compensation cases including half a million",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Economic impact and costs"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "151.65 billion Chinese yuan",
+      "Total_Damage_Unit": "Chinese yuan",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Baiyun Airport in Guangzhou"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "10,000",
-      "Annotation": "Airport"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Various locations"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "200,000",
-      "Annotation": "Fatalities"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "223,000 homes destroyed and 862,000 others damaged",
-    "Total_Buildings_Damaged_Annotation": "Damage"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "China"
-      ],
-      "Start_Date": "25 January 2008",
-      "End_Date": "6 February 2008",
-      "Num": "223,000 homes destroyed and 862,000 others damaged",
-      "Annotation": "Damage"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Xiangtan"
-      ],
-      "Start_Date": "25 January 2008",
-      "End_Date": "6 February 2008",
-      "Num": "500 meter-long auto plant roof collapse",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Chenzhou"
-      ],
-      "Start_Date": "25 January 2008",
-      "End_Date": "6 February 2008",
-      "Num": "NULL",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Fuzhou"
-      ],
-      "Start_Date": "25 January 2008",
-      "End_Date": "6 February 2008",
-      "Num": "NULL",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Wuhan"
-      ],
-      "Start_Date": "25 January 2008",
-      "End_Date": "6 February 2008",
-      "Num": "NULL",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Guangxi"
-      ],
-      "Start_Date": "25 January 2008",
-      "End_Date": "6 February 2008",
-      "Num": "NULL",
-      "Annotation": "Damage"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "at least 129",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "China",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "at least 107",
-      "Annotation": "Fatalities"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Anhui"
-      ],
-      "Start_Date": "January 21",
-      "End_Date": "January 21",
-      "Num": "11",
-      "Annotation": "Fatalities"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "near Zunyi City"
-      ],
-      "Start_Date": "January 28",
-      "End_Date": "January 28",
-      "Num": "at least 25",
-      "Annotation": "Fatalities"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Hunan"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3",
-      "Annotation": "Fatalities"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Guangzhou"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "at least 1",
-      "Annotation": "Fatalities"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Various locations"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "60",
-      "Annotation": "Fatalities"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Various locations"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "11",
-      "Annotation": "Fatalities"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "1.8 million",
-    "Total_Displaced_Annotation": "Damage"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "China"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1.8 million",
-      "Annotation": "Damage"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "fourteen provinces"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "827,000",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Guangzhou railway station"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "500,000 to 800,000",
-      "Annotation": "Railway"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Guangdong area"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "11 million",
-      "Annotation": "Railway"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "China",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Chenzhou"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "4.6 million",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Fuzhou, Jiangxi"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Wuhan"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "100,000",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Guangxi"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "239,000",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Fourteen provinces"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "827,000",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Various regions"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1.8 million",
-      "Annotation": "Damage"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "about 200,000",
-    "Total_Injuries_Annotation": "Fatalities"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "China",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "about 200,000",
-      "Annotation": "Fatalities"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "about 200,000",
-      "Annotation": "Fatalities"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "tens of thousands of compensation cases including half a million from the hardest-hit regions",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "No",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "Economic impact and costs"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "China"
-      ],
-      "Start_Date": "25 January 2008",
-      "End_Date": "6 February 2008",
-      "Num": "tens of thousands of compensation cases including half a million from the hardest-hit regions",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Economic impact and costs"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "hardest-hit regions"
-      ],
-      "Start_Date": "25 January 2008",
-      "End_Date": "6 February 2008",
-      "Num": "tens of thousands of compensation cases including half a million",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Economic impact and costs"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "151.65 billion Chinese yuan",
-    "Total_Damage_Unit": "Chinese yuan",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "China"
-      ],
-      "Start_Date": "25 January 2008",
-      "End_Date": "6 February 2008",
-      "Num": "111 billion Chinese yuan",
-      "Num_Unit": "Chinese yuan",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Economic impact and costs"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Hunan"
-      ],
-      "Start_Date": "25 January 2008",
-      "End_Date": "6 February 2008",
-      "Num": "50,000 tonnes of lead and zinc production loss",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Economic impact and costs"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Chenzhou"
-      ],
-      "Start_Date": "25 January 2008",
-      "End_Date": "6 February 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Fuzhou"
-      ],
-      "Start_Date": "25 January 2008",
-      "End_Date": "6 February 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Wuhan"
-      ],
-      "Start_Date": "25 January 2008",
-      "End_Date": "6 February 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Guangxi"
-      ],
-      "Start_Date": "25 January 2008",
-      "End_Date": "6 February 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Damage"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Xiangtan"
-      ],
-      "Start_Date": "25 January 2008",
-      "End_Date": "6 February 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Damage"
-    }
-  ],
-  "Main_Event": "Extreme Temperature",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Cold Spell|Blizzard",
-  "Hazards_Annotation": "Info_Box|Cold snap and blizzard",
-  "Start_Date": "25 January 2008",
-  "End_Date": "6 February 2008",
-  "Time_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "China"
+        ],
+        "Start_Date": "25 January 2008",
+        "End_Date": "6 February 2008",
+        "Num": "111 billion Chinese yuan",
+        "Num_Unit": "Chinese yuan",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Economic impact and costs"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Hunan"
+        ],
+        "Start_Date": "25 January 2008",
+        "End_Date": "6 February 2008",
+        "Num": "50,000 tonnes of lead and zinc production loss",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Economic impact and costs"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Chenzhou"
+        ],
+        "Start_Date": "25 January 2008",
+        "End_Date": "6 February 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Fuzhou"
+        ],
+        "Start_Date": "25 January 2008",
+        "End_Date": "6 February 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Wuhan"
+        ],
+        "Start_Date": "25 January 2008",
+        "End_Date": "6 February 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Guangxi"
+        ],
+        "Start_Date": "25 January 2008",
+        "End_Date": "6 February 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Damage"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Xiangtan"
+        ],
+        "Start_Date": "25 January 2008",
+        "End_Date": "6 February 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Damage"
+      }
+    ],
+    "Main_Event": "Extreme Temperature",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Cold Spell|Blizzard",
+    "Hazards_Annotation": "Info_Box|Cold snap and blizzard",
+    "Start_Date": "25 January 2008",
+    "End_Date": "6 February 2008",
+    "Time_Annotation": "Info_Box"
+  }
+]

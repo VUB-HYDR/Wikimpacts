@@ -1,543 +1,545 @@
-{
-  "Event_ID": "RFYIrHe",
-  "Sources": "https://en.wikipedia.org/wiki/Hurricane_Greta%E2%80%93Olivia",
-  "Event_Names": "Hurricane Greta\u2013Olivia",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": "Honduras",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impact"
+[
+  {
+    "Event_ID": "RFYIrHe",
+    "Sources": "https://en.wikipedia.org/wiki/Hurricane_Greta%E2%80%93Olivia",
+    "Event_Names": "Hurricane Greta\u2013Olivia",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Belize",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Puerto Castilla"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "about 2,000 people",
-      "Annotation": "Impact"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Areas": "Belize",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Puerto Castilla"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "about 2,000 people",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Puerto Lempira"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "roughly 1,500 of the town's 7,000 residents",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Punta Potuca"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "278 homes",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Guanaja"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "26 houses",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Roat\u00e1n"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "75% of the houses",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Belize",
+        "Locations": [
+          "Dangriga"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "50 houses destroyed and 75 unroofed",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Belize",
+        "Locations": [
+          "Belize City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4 houses",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Belize",
+        "Locations": [
+          "Ambergris Caye"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Belize",
+        "Locations": [
+          "Half Moon Caye"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Belize",
+        "Locations": [
+          "Guanacaste National Park"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Puerto Lempira"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "roughly 1,500 of the town's 7,000 residents",
-      "Annotation": "Impact"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "about 1,200 homes",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Areas": "Belize",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "125 houses",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Roat\u00e1n"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "about 75% of the houses",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Puerto Lempira"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "656 homes",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Guanaja"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "26 houses",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Belize",
+        "Locations": [
+          "Dangriga"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "50 houses destroyed and 75 unroofed",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Belize",
+        "Locations": [
+          "Belize City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "four houses",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "5",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Punta Potuca"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "278 homes",
-      "Annotation": "Impact"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Areas": "Belize",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Belize",
+        "Locations": [
+          "offshore islands",
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Belize",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Guanaja"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "26 houses",
-      "Annotation": "Impact"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Areas": "Belize",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Puerto Castilla"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "about 2,000 people",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Puerto Lempira"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "roughly 1,500 of the town's 7,000 residents",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Roat\u00e1n"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "75% of the houses",
-      "Annotation": "Impact"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Honduras"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "about 1,200 homes",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Areas": [
+          "Belize"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "125 houses",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Puerto Lempira"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "656 homes",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Punta Potuca"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "278 homes",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Guanaja"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "26 houses",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Roat\u00e1n"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "75% of the houses",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Belize",
+        "Locations": [
+          "Dangriga"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "50 houses destroyed and 75 unroofed",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Belize",
+        "Locations": [
+          "Belize City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4 houses",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Belize",
-      "Locations": [
-        "Dangriga"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "50 houses destroyed and 75 unroofed",
-      "Annotation": "Impact"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Areas": "Belize",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Puerto Lempira"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,500 of the town's 7,000 residents sought refuge in five large structures",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Belize",
-      "Locations": [
-        "Belize City"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "4 houses",
-      "Annotation": "Impact"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Honduras",
+          "Belize"
+        ],
+        "Start_Date": "September 13, 1978",
+        "End_Date": "September 23, 1978",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Puerto Castilla",
+          "Puerto Lempira",
+          "Punta Potuca",
+          "Guanaja",
+          "Roat\u00e1n"
+        ],
+        "Start_Date": "September 13, 1978",
+        "End_Date": "September 23, 1978",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Belize",
+        "Locations": [
+          "Dangriga",
+          "Belize City",
+          "Ambergris Caye",
+          "Half Moon Caye",
+          "Carrie Bow Caye"
+        ],
+        "Start_Date": "September 13, 1978",
+        "End_Date": "September 23, 1978",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$26 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Belize",
-      "Locations": [
-        "Ambergris Caye"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Area": "Belize",
-      "Locations": [
-        "Half Moon Caye"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Area": "Belize",
-      "Locations": [
-        "Guanacaste National Park"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Honduras",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "about 1,200 homes",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Areas": "Belize",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "125 houses",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Roat\u00e1n"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "about 75% of the houses",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Puerto Lempira"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "656 homes",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Guanaja"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "26 houses",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Area": "Belize",
-      "Locations": [
-        "Dangriga"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "50 houses destroyed and 75 unroofed",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Area": "Belize",
-      "Locations": [
-        "Belize City"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "four houses",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "5",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Honduras",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Areas": "Belize",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "4",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Area": "Belize",
-      "Locations": [
-        "offshore islands",
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Area": "Belize",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": "Honduras",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Areas": "Belize",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Puerto Castilla"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "about 2,000 people",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Puerto Lempira"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "roughly 1,500 of the town's 7,000 residents",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "Honduras"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "about 1,200 homes",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Areas": [
-        "Belize"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "125 houses",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Puerto Lempira"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "656 homes",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Punta Potuca"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "278 homes",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Guanaja"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "26 houses",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Roat\u00e1n"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "75% of the houses",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Area": "Belize",
-      "Locations": [
-        "Dangriga"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "50 houses destroyed and 75 unroofed",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Area": "Belize",
-      "Locations": [
-        "Belize City"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "4 houses",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Honduras",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Areas": "Belize",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Puerto Lempira"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1,500 of the town's 7,000 residents sought refuge in five large structures",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Honduras",
-        "Belize"
-      ],
-      "Start_Date": "September 13, 1978",
-      "End_Date": "September 23, 1978",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Puerto Castilla",
-        "Puerto Lempira",
-        "Punta Potuca",
-        "Guanaja",
-        "Roat\u00e1n"
-      ],
-      "Start_Date": "September 13, 1978",
-      "End_Date": "September 23, 1978",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Area": "Belize",
-      "Locations": [
-        "Dangriga",
-        "Belize City",
-        "Ambergris Caye",
-        "Half Moon Caye",
-        "Carrie Bow Caye"
-      ],
-      "Start_Date": "September 13, 1978",
-      "End_Date": "September 23, 1978",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$26 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": "Honduras",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Areas": "Belize",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$25 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Roat\u00e1n",
-        "Puerto Castilla",
-        "Puerto Lempira",
-        "Punta Potuca",
-        "Guanaja"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Area": "Belize",
-      "Locations": [
-        "Dangriga",
-        "Belize City",
-        "Ambergris Caye",
-        "Half Moon Caye",
-        "Carrie Bow Caye",
-        "Guanacaste National Park"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Impact",
-  "Start_Date": "September 13, 1978",
-  "End_Date": "September 23, 1978",
-  "Time_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Areas": "Belize",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$25 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Roat\u00e1n",
+          "Puerto Castilla",
+          "Puerto Lempira",
+          "Punta Potuca",
+          "Guanaja"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Belize",
+        "Locations": [
+          "Dangriga",
+          "Belize City",
+          "Ambergris Caye",
+          "Half Moon Caye",
+          "Carrie Bow Caye",
+          "Guanacaste National Park"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Impact",
+    "Start_Date": "September 13, 1978",
+    "End_Date": "September 23, 1978",
+    "Time_Annotation": "Info_Box"
+  }
+]

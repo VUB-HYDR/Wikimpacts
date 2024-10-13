@@ -1,498 +1,500 @@
-{
-  "Event_ID": "mUkWLJe",
-  "Sources": "https://en.wikipedia.org/wiki/2009_Red_River_flood",
-  "Event_Names": "2009 Red River flood",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "March 2009",
-      "End_Date": "April 2009",
-      "Num": "NULL",
-      "Annotation": "NULL"
+[
+  {
+    "Event_ID": "mUkWLJe",
+    "Sources": "https://en.wikipedia.org/wiki/2009_Red_River_flood",
+    "Event_Names": "2009 Red River flood",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": [
-        "Canada"
-      ],
-      "Start_Date": "March 2009",
-      "End_Date": "April 2009",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Fargo-Moorhead",
-        "Wahpeton-Breckenridge",
-        "Grand Forks",
-        "Bismarck"
-      ],
-      "Start_Date": "March 2009",
-      "End_Date": "April 2009",
-      "Num": "NULL",
-      "Annotation": "Fargo-Moorhead"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "March 2009",
+        "End_Date": "April 2009",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "March 2009",
+        "End_Date": "April 2009",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Fargo-Moorhead",
+          "Wahpeton-Breckenridge",
+          "Grand Forks",
+          "Bismarck"
+        ],
+        "Start_Date": "March 2009",
+        "End_Date": "April 2009",
+        "Num": "NULL",
+        "Annotation": "Fargo-Moorhead"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Winnipeg",
+          "Selkirk",
+          "Peguis First Nation",
+          "St. Andrews",
+          "St. Clements",
+          "East St. Paul",
+          "West St. Paul"
+        ],
+        "Start_Date": "March 2009",
+        "End_Date": "April 2009",
+        "Num": "NULL",
+        "Annotation": "Manitoba"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Peguis First Nation"
+        ],
+        "Start_Date": "April 2009",
+        "End_Date": "April 2009",
+        "Num": "740 people",
+        "Annotation": "Manitoba"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Roseau River Anishinabe First Nation"
+        ],
+        "Start_Date": "March 26, 2009",
+        "End_Date": "March 26, 2009",
+        "Num": "95 elderly and special needs people",
+        "Annotation": "Ice jams"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "St. Andrews",
+          "St. Clements"
+        ],
+        "Start_Date": "April 10, 2009",
+        "End_Date": "April 12, 2009",
+        "Num": "NULL",
+        "Annotation": "Ice jams"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Winnipeg",
-        "Selkirk",
-        "Peguis First Nation",
-        "St. Andrews",
-        "St. Clements",
-        "East St. Paul",
-        "West St. Paul"
-      ],
-      "Start_Date": "March 2009",
-      "End_Date": "April 2009",
-      "Num": "NULL",
-      "Annotation": "Manitoba"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "March 2009",
+        "End_Date": "April 2009",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "March 2009",
+        "End_Date": "April 2009",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Fargo",
+          "Moorhead",
+          "Harwood",
+          "Grafton",
+          "Richland County"
+        ],
+        "Start_Date": "March 2009",
+        "End_Date": "April 2009",
+        "Num": "NULL",
+        "Annotation": "Fargo-Moorhead"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Grand Forks"
+        ],
+        "Start_Date": "March 2009",
+        "End_Date": "April 2009",
+        "Num": "NULL",
+        "Annotation": "Grand Forks"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Winnipeg",
+          "Selkirk",
+          "St. Andrews",
+          "St. Clements",
+          "East St. Paul",
+          "West St. Paul",
+          "Dominion City",
+          "Roseau River Anishinabe First Nation",
+          "Peguis First Nation"
+        ],
+        "Start_Date": "March 2009",
+        "End_Date": "April 2009",
+        "Num": "NULL",
+        "Annotation": "Manitoba"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "3",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Peguis First Nation"
-      ],
-      "Start_Date": "April 2009",
-      "End_Date": "April 2009",
-      "Num": "740 people",
-      "Annotation": "Manitoba"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": "Canada",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Westroc Hutterite Colony near Portage la Prairie"
+        ],
+        "Start_Date": "April 9",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Manitoba"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Woody River"
+        ],
+        "Start_Date": "April 12",
+        "End_Date": "May 19",
+        "Num": "2",
+        "Annotation": "Manitoba"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Roseau River Anishinabe First Nation"
-      ],
-      "Start_Date": "March 26, 2009",
-      "End_Date": "March 26, 2009",
-      "Num": "95 elderly and special needs people",
-      "Annotation": "Ice jams"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "March 9, 2009",
+        "End_Date": "April 2009",
+        "Num": "NULL",
+        "Annotation": "Fargo-Moorhead"
+      },
+      {
+        "Administrative_Areas": "Canada",
+        "Start_Date": "April 7, 2009",
+        "End_Date": "April 20, 2009",
+        "Num": "28,000",
+        "Annotation": "Manitoba"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Fargo",
+          "Moorhead",
+          "Harwood",
+          "Grafton",
+          "Richland County"
+        ],
+        "Start_Date": "March 9, 2009",
+        "End_Date": "April 2009",
+        "Num": "NULL",
+        "Annotation": "Fargo-Moorhead"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Peguis First Nation",
+          "St. Andrews",
+          "St. Clements",
+          "East St. Paul",
+          "West St. Paul",
+          "Selkirk",
+          "Dominion City",
+          "Roseau River Anishinabe First Nation"
+        ],
+        "Start_Date": "April 7, 2009",
+        "End_Date": "April 20, 2009",
+        "Num": "740",
+        "Annotation": "Manitoba"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "St. Andrews",
-        "St. Clements"
-      ],
-      "Start_Date": "April 10, 2009",
-      "End_Date": "April 12, 2009",
-      "Num": "NULL",
-      "Annotation": "Ice jams"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "March 2009",
-      "End_Date": "April 2009",
-      "Num": "NULL",
-      "Annotation": "NULL"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Canada",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Manitoba"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Fargo-Moorhead"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "St. Andrews",
+          "St. Clements",
+          "East St. Paul",
+          "West St. Paul"
+        ],
+        "Start_Date": "March 25, 2009",
+        "End_Date": "NULL",
+        "Num": "about thirty homes",
+        "Annotation": "Ice jams"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Selkirk"
+        ],
+        "Start_Date": "March 31, 2009",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Ice jams"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Dominion City"
+        ],
+        "Start_Date": "March 23, 2009",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Ice jams"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "north of Winnipeg"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Forty homes",
+        "Annotation": "Ice jams"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Roseau River Anishinabe First Nation"
+        ],
+        "Start_Date": "March 26, 2009",
+        "End_Date": "NULL",
+        "Num": "95 elderly and special needs people",
+        "Annotation": "Ice jams"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Peguis First Nation"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "740 people",
+        "Annotation": "Manitoba"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": [
-        "Canada"
-      ],
-      "Start_Date": "March 2009",
-      "End_Date": "April 2009",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Fargo",
-        "Moorhead",
-        "Harwood",
-        "Grafton",
-        "Richland County"
-      ],
-      "Start_Date": "March 2009",
-      "End_Date": "April 2009",
-      "Num": "NULL",
-      "Annotation": "Fargo-Moorhead"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "April 9, 2009",
+        "End_Date": "April 22, 2009",
+        "Num": "NULL",
+        "Annotation": "Manitoba"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Westroc Hutterite Colony near Portage la Prairie"
+        ],
+        "Start_Date": "April 9, 2009",
+        "End_Date": "April 22, 2009",
+        "Num": "1",
+        "Annotation": "Manitoba"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Grand Forks"
-      ],
-      "Start_Date": "March 2009",
-      "End_Date": "April 2009",
-      "Num": "NULL",
-      "Annotation": "Grand Forks"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States",
+          "Canada"
+        ],
+        "Start_Date": "March 2009",
+        "End_Date": "April 2009",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Winnipeg"
+        ],
+        "Start_Date": "April 7, 2009",
+        "End_Date": "May 13, 2009",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Manitoba"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "Damages were expected to be in the millions.",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Manitoba"
     },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Winnipeg",
-        "Selkirk",
-        "St. Andrews",
-        "St. Clements",
-        "East St. Paul",
-        "West St. Paul",
-        "Dominion City",
-        "Roseau River Anishinabe First Nation",
-        "Peguis First Nation"
-      ],
-      "Start_Date": "March 2009",
-      "End_Date": "April 2009",
-      "Num": "NULL",
-      "Annotation": "Manitoba"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "3",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    },
-    {
-      "Administrative_Areas": "Canada",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Westroc Hutterite Colony near Portage la Prairie"
-      ],
-      "Start_Date": "April 9",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Manitoba"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Woody River"
-      ],
-      "Start_Date": "April 12",
-      "End_Date": "May 19",
-      "Num": "2",
-      "Annotation": "Manitoba"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "March 9, 2009",
-      "End_Date": "April 2009",
-      "Num": "NULL",
-      "Annotation": "Fargo-Moorhead"
-    },
-    {
-      "Administrative_Areas": "Canada",
-      "Start_Date": "April 7, 2009",
-      "End_Date": "April 20, 2009",
-      "Num": "28,000",
-      "Annotation": "Manitoba"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Fargo",
-        "Moorhead",
-        "Harwood",
-        "Grafton",
-        "Richland County"
-      ],
-      "Start_Date": "March 9, 2009",
-      "End_Date": "April 2009",
-      "Num": "NULL",
-      "Annotation": "Fargo-Moorhead"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Peguis First Nation",
-        "St. Andrews",
-        "St. Clements",
-        "East St. Paul",
-        "West St. Paul",
-        "Selkirk",
-        "Dominion City",
-        "Roseau River Anishinabe First Nation"
-      ],
-      "Start_Date": "April 7, 2009",
-      "End_Date": "April 20, 2009",
-      "Num": "740",
-      "Annotation": "Manitoba"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Canada",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Manitoba"
-    },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Fargo-Moorhead"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "St. Andrews",
-        "St. Clements",
-        "East St. Paul",
-        "West St. Paul"
-      ],
-      "Start_Date": "March 25, 2009",
-      "End_Date": "NULL",
-      "Num": "about thirty homes",
-      "Annotation": "Ice jams"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Selkirk"
-      ],
-      "Start_Date": "March 31, 2009",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Ice jams"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Dominion City"
-      ],
-      "Start_Date": "March 23, 2009",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Ice jams"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "north of Winnipeg"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Forty homes",
-      "Annotation": "Ice jams"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Roseau River Anishinabe First Nation"
-      ],
-      "Start_Date": "March 26, 2009",
-      "End_Date": "NULL",
-      "Num": "95 elderly and special needs people",
-      "Annotation": "Ice jams"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Peguis First Nation"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "740 people",
-      "Annotation": "Manitoba"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "Canada"
-      ],
-      "Start_Date": "April 9, 2009",
-      "End_Date": "April 22, 2009",
-      "Num": "NULL",
-      "Annotation": "Manitoba"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Westroc Hutterite Colony near Portage la Prairie"
-      ],
-      "Start_Date": "April 9, 2009",
-      "End_Date": "April 22, 2009",
-      "Num": "1",
-      "Annotation": "Manitoba"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States",
-        "Canada"
-      ],
-      "Start_Date": "March 2009",
-      "End_Date": "April 2009",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Winnipeg"
-      ],
-      "Start_Date": "April 7, 2009",
-      "End_Date": "May 13, 2009",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Manitoba"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "Damages were expected to be in the millions.",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Manitoba"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "March 2009",
-      "End_Date": "April 2009",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    },
-    {
-      "Administrative_Areas": "Canada",
-      "Start_Date": "March 2009",
-      "End_Date": "April 2009",
-      "Num": "Damages were expected to be in the millions.",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Manitoba"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Winnipeg"
-      ],
-      "Start_Date": "April 7, 2009",
-      "End_Date": "May 13, 2009",
-      "Num": "thousands of dollars in additional travel costs",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Manitoba"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Morris"
-      ],
-      "Start_Date": "April 7, 2009",
-      "End_Date": "May 13, 2009",
-      "Num": "severely hurt the economy",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Manitoba"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Winnipeg"
-      ],
-      "Start_Date": "April 15, 2009",
-      "End_Date": "NULL",
-      "Num": "$5 million for sandbag flood prevention costs",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Manitoba"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Peguis First Nation"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$3 million for evacuation and dike construction",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Manitoba"
-    }
-  ],
-  "Main_Event": "Flood",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Flood",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "March 2009",
-  "End_Date": "April 2009",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "United States",
-    "Canada"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "March 2009",
+        "End_Date": "April 2009",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": "Canada",
+        "Start_Date": "March 2009",
+        "End_Date": "April 2009",
+        "Num": "Damages were expected to be in the millions.",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Manitoba"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Winnipeg"
+        ],
+        "Start_Date": "April 7, 2009",
+        "End_Date": "May 13, 2009",
+        "Num": "thousands of dollars in additional travel costs",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Manitoba"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Morris"
+        ],
+        "Start_Date": "April 7, 2009",
+        "End_Date": "May 13, 2009",
+        "Num": "severely hurt the economy",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Manitoba"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Winnipeg"
+        ],
+        "Start_Date": "April 15, 2009",
+        "End_Date": "NULL",
+        "Num": "$5 million for sandbag flood prevention costs",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Manitoba"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Peguis First Nation"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$3 million for evacuation and dike construction",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Manitoba"
+      }
+    ],
+    "Main_Event": "Flood",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Flood",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "March 2009",
+    "End_Date": "April 2009",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "United States",
+      "Canada"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

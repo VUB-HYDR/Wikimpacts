@@ -1,557 +1,559 @@
-{
-  "Event_ID": "Fo6IXKo",
-  "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Agatha",
-  "Event_Names": "Tropical Storm Agatha",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": "Guatemala",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "392,600",
-      "Annotation": "Aftermath"
+[
+  {
+    "Event_ID": "Fo6IXKo",
+    "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Agatha",
+    "Event_Names": "Tropical Storm Agatha",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "El Salvador",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "120,000",
-      "Annotation": "El Salvador"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Guatemala",
-      "Locations": [
-        "Guatemala City"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "300",
-      "Annotation": "Guatemala"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Guatemala",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "392,600",
+        "Annotation": "Aftermath"
+      },
+      {
+        "Administrative_Areas": "El Salvador",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "120,000",
+        "Annotation": "El Salvador"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Guatemala",
+        "Locations": [
+          "Guatemala City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "300",
+        "Annotation": "Guatemala"
+      },
+      {
+        "Administrative_Area": "Guatemala",
+        "Locations": [
+          "San Miguel Escobar"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "12",
+        "Annotation": "Guatemala"
+      },
+      {
+        "Administrative_Area": "Guatemala",
+        "Locations": [
+          "Almolonga"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4",
+        "Annotation": "Guatemala"
+      },
+      {
+        "Administrative_Area": "Guatemala",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "112,000",
+        "Annotation": "Guatemala"
+      },
+      {
+        "Administrative_Area": "Guatemala",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "20,000",
+        "Annotation": "Guatemala"
+      },
+      {
+        "Administrative_Area": "El Salvador",
+        "Locations": [
+          "San Salvador",
+          "five other cities"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "15,000",
+        "Annotation": "El Salvador"
+      },
+      {
+        "Administrative_Area": "El Salvador",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "712",
+        "Annotation": "El Salvador"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Guatemala",
-      "Locations": [
-        "San Miguel Escobar"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "12",
-      "Annotation": "Guatemala"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Guatemala",
+        "Start_Date": "May 29, 2010",
+        "End_Date": "NULL",
+        "Num": "3,500 homes",
+        "Annotation": "Guatemala"
+      },
+      {
+        "Administrative_Areas": "El Salvador",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "378 schools",
+        "Annotation": "El Salvador"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "Estel\u00ed Department"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Many homes and bridges",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Area": "Guatemala",
+        "Locations": [
+          "San Miguel Escobar"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Guatemala"
+      },
+      {
+        "Administrative_Area": "Guatemala",
+        "Locations": [
+          "Almolonga"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Guatemala"
+      },
+      {
+        "Administrative_Area": "Guatemala",
+        "Locations": [
+          "Guatemala City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "A three-story building",
+        "Annotation": "Guatemala"
+      },
+      {
+        "Administrative_Area": "Guatemala",
+        "Locations": [
+          "Guatemala City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "A three-story house",
+        "Annotation": "Guatemala"
+      },
+      {
+        "Administrative_Area": "Guatemala",
+        "Locations": [
+          "Guatemala City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "144 schools",
+        "Annotation": "Aftermath"
+      },
+      {
+        "Administrative_Area": "Guatemala",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Guatemala"
+      },
+      {
+        "Administrative_Area": "El Salvador",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "El Salvador"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "204",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Guatemala",
-      "Locations": [
-        "Almolonga"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "4",
-      "Annotation": "Guatemala"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Nicaragua",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Areas": "Guatemala",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "165",
+        "Annotation": "Guatemala"
+      },
+      {
+        "Administrative_Areas": "El Salvador",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "12",
+        "Annotation": "El Salvador"
+      },
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Honduras"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Area": "Guatemala",
+        "Locations": [
+          "San Miguel Escobar",
+          "Almolonga",
+          "Guatemala City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "15",
+        "Annotation": "Guatemala"
+      },
+      {
+        "Administrative_Area": "El Salvador",
+        "Locations": [
+          "San Salvador"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "6",
+        "Annotation": "El Salvador"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Honduras"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Guatemala",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "112,000",
-      "Annotation": "Guatemala"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Guatemala",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "112,000 people",
+        "Annotation": "Guatemala"
+      },
+      {
+        "Administrative_Areas": "El Salvador",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "15,000 people",
+        "Annotation": "El Salvador"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Guatemala",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "20,000 people",
+        "Annotation": "Guatemala"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "southeastern Chiapas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "120 families",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Area": "El Salvador",
+        "Locations": [
+          "San Salvador",
+          "five other cities"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2,000 residents",
+        "Annotation": "El Salvador"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "20,000",
+      "Total_Homeless_Annotation": "Guatemala"
     },
-    {
-      "Administrative_Area": "Guatemala",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "20,000",
-      "Annotation": "Guatemala"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Guatemala",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "20,000",
+        "Annotation": "Guatemala"
+      },
+      {
+        "Administrative_Areas": "El Salvador",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "15,000",
+        "Annotation": "El Salvador"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Guatemala",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "20,000",
+        "Annotation": "Guatemala"
+      },
+      {
+        "Administrative_Area": "El Salvador",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "June 9",
+        "Num": "15,000",
+        "Annotation": "El Salvador"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "95 people injured",
+      "Total_Injuries_Annotation": "Guatemala"
     },
-    {
-      "Administrative_Area": "El Salvador",
-      "Locations": [
-        "San Salvador",
-        "five other cities"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "15,000",
-      "Annotation": "El Salvador"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Guatemala",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "95 people injured",
+        "Annotation": "Guatemala"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Guatemala",
+        "Locations": [
+          "Guatemala City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "95 people injured",
+        "Annotation": "Guatemala"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "El Salvador",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "712",
-      "Annotation": "El Salvador"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Guatemala",
-      "Start_Date": "May 29, 2010",
-      "End_Date": "NULL",
-      "Num": "3,500 homes",
-      "Annotation": "Guatemala"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Guatemala"
+        ],
+        "Start_Date": "May 29, 2010",
+        "End_Date": "June 1, 2010",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Guatemala"
+      },
+      {
+        "Administrative_Areas": [
+          "El Salvador"
+        ],
+        "Start_Date": "May 29, 2010",
+        "End_Date": "June 1, 2010",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "El Salvador"
+      },
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "May 29, 2010",
+        "End_Date": "June 1, 2010",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Areas": [
+          "Honduras"
+        ],
+        "Start_Date": "May 29, 2010",
+        "End_Date": "June 1, 2010",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Areas": [
+          "Nicaragua"
+        ],
+        "Start_Date": "May 29, 2010",
+        "End_Date": "June 1, 2010",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Nicaragua"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Guatemala",
+        "Locations": [
+          "Guatemala City"
+        ],
+        "Start_Date": "May 29, 2010",
+        "End_Date": "June 1, 2010",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Guatemala"
+      },
+      {
+        "Administrative_Area": "Guatemala",
+        "Locations": [
+          "San Miguel Escobar"
+        ],
+        "Start_Date": "May 29, 2010",
+        "End_Date": "June 1, 2010",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Guatemala"
+      },
+      {
+        "Administrative_Area": "Guatemala",
+        "Locations": [
+          "Almolonga"
+        ],
+        "Start_Date": "May 29, 2010",
+        "End_Date": "June 1, 2010",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Guatemala"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$1.1 billion",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": "El Salvador",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "378 schools",
-      "Annotation": "El Salvador"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Nicaragua",
-      "Locations": [
-        "Estel\u00ed Department"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Many homes and bridges",
-      "Annotation": "Nicaragua"
-    },
-    {
-      "Administrative_Area": "Guatemala",
-      "Locations": [
-        "San Miguel Escobar"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Guatemala"
-    },
-    {
-      "Administrative_Area": "Guatemala",
-      "Locations": [
-        "Almolonga"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Guatemala"
-    },
-    {
-      "Administrative_Area": "Guatemala",
-      "Locations": [
-        "Guatemala City"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "A three-story building",
-      "Annotation": "Guatemala"
-    },
-    {
-      "Administrative_Area": "Guatemala",
-      "Locations": [
-        "Guatemala City"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "A three-story house",
-      "Annotation": "Guatemala"
-    },
-    {
-      "Administrative_Area": "Guatemala",
-      "Locations": [
-        "Guatemala City"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "144 schools",
-      "Annotation": "Aftermath"
-    },
-    {
-      "Administrative_Area": "Guatemala",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Guatemala"
-    },
-    {
-      "Administrative_Area": "El Salvador",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "El Salvador"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "204",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Nicaragua",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Nicaragua"
-    },
-    {
-      "Administrative_Areas": "Guatemala",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "165",
-      "Annotation": "Guatemala"
-    },
-    {
-      "Administrative_Areas": "El Salvador",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "12",
-      "Annotation": "El Salvador"
-    },
-    {
-      "Administrative_Areas": "Honduras",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Honduras"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Nicaragua",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Nicaragua"
-    },
-    {
-      "Administrative_Area": "Guatemala",
-      "Locations": [
-        "San Miguel Escobar",
-        "Almolonga",
-        "Guatemala City"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "15",
-      "Annotation": "Guatemala"
-    },
-    {
-      "Administrative_Area": "El Salvador",
-      "Locations": [
-        "San Salvador"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "6",
-      "Annotation": "El Salvador"
-    },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Honduras"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": "Guatemala",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "112,000 people",
-      "Annotation": "Guatemala"
-    },
-    {
-      "Administrative_Areas": "El Salvador",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "15,000 people",
-      "Annotation": "El Salvador"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Guatemala",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "20,000 people",
-      "Annotation": "Guatemala"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "southeastern Chiapas"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "120 families",
-      "Annotation": "Mexico"
-    },
-    {
-      "Administrative_Area": "El Salvador",
-      "Locations": [
-        "San Salvador",
-        "five other cities"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2,000 residents",
-      "Annotation": "El Salvador"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "20,000",
-    "Total_Homeless_Annotation": "Guatemala"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Guatemala",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "20,000",
-      "Annotation": "Guatemala"
-    },
-    {
-      "Administrative_Areas": "El Salvador",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "15,000",
-      "Annotation": "El Salvador"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Guatemala",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "20,000",
-      "Annotation": "Guatemala"
-    },
-    {
-      "Administrative_Area": "El Salvador",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "June 9",
-      "Num": "15,000",
-      "Annotation": "El Salvador"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "95 people injured",
-    "Total_Injuries_Annotation": "Guatemala"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Guatemala",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "95 people injured",
-      "Annotation": "Guatemala"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Guatemala",
-      "Locations": [
-        "Guatemala City"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "95 people injured",
-      "Annotation": "Guatemala"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Guatemala"
-      ],
-      "Start_Date": "May 29, 2010",
-      "End_Date": "June 1, 2010",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Guatemala"
-    },
-    {
-      "Administrative_Areas": [
-        "El Salvador"
-      ],
-      "Start_Date": "May 29, 2010",
-      "End_Date": "June 1, 2010",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "El Salvador"
-    },
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "May 29, 2010",
-      "End_Date": "June 1, 2010",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Mexico"
-    },
-    {
-      "Administrative_Areas": [
-        "Honduras"
-      ],
-      "Start_Date": "May 29, 2010",
-      "End_Date": "June 1, 2010",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Honduras"
-    },
-    {
-      "Administrative_Areas": [
-        "Nicaragua"
-      ],
-      "Start_Date": "May 29, 2010",
-      "End_Date": "June 1, 2010",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Nicaragua"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Guatemala",
-      "Locations": [
-        "Guatemala City"
-      ],
-      "Start_Date": "May 29, 2010",
-      "End_Date": "June 1, 2010",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Guatemala"
-    },
-    {
-      "Administrative_Area": "Guatemala",
-      "Locations": [
-        "San Miguel Escobar"
-      ],
-      "Start_Date": "May 29, 2010",
-      "End_Date": "June 1, 2010",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Guatemala"
-    },
-    {
-      "Administrative_Area": "Guatemala",
-      "Locations": [
-        "Almolonga"
-      ],
-      "Start_Date": "May 29, 2010",
-      "End_Date": "June 1, 2010",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Guatemala"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$1.1 billion",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": "El Salvador",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$31.1 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "El Salvador"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "El Salvador",
-      "Locations": [
-        "Farmland"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$6 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "El Salvador"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Guatemala|Mexico|Honduras|El Salvador",
-  "Start_Date": "May 29, 2010",
-  "End_Date": "June 1, 2010",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Mexico",
-    "Guatemala",
-    "El Salvador",
-    "Nicaragua",
-    "Honduras"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "El Salvador",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$31.1 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "El Salvador"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "El Salvador",
+        "Locations": [
+          "Farmland"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$6 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "El Salvador"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Guatemala|Mexico|Honduras|El Salvador",
+    "Start_Date": "May 29, 2010",
+    "End_Date": "June 1, 2010",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Mexico",
+      "Guatemala",
+      "El Salvador",
+      "Nicaragua",
+      "Honduras"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

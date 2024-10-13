@@ -1,341 +1,343 @@
-{
-  "Event_ID": "JpJ1XpX",
-  "Sources": "https://en.wikipedia.org/wiki/November_2000_Hawaii_floods",
-  "Event_Names": "November 2000 Hawaii floods",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "November 1, 2000",
-      "End_Date": "November 3, 2000",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Hilo",
-        "Ka\u2019u",
-        "Puna",
-        "Pahala"
-      ],
-      "Start_Date": "November 1, 2000",
-      "End_Date": "November 3, 2000",
-      "Num": "dozens of people",
-      "Annotation": "Impact and records"
+[
+  {
+    "Event_ID": "JpJ1XpX",
+    "Sources": "https://en.wikipedia.org/wiki/November_2000_Hawaii_floods",
+    "Event_Names": "November 2000 Hawaii floods",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Hilo",
-        "Pahala"
-      ],
-      "Start_Date": "November 13, 2000",
-      "End_Date": "November 15, 2000",
-      "Num": "1,168 people",
-      "Annotation": "Aftermath"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "November 1, 2000",
+        "End_Date": "November 3, 2000",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hilo",
+          "Ka\u2019u",
+          "Puna",
+          "Pahala"
+        ],
+        "Start_Date": "November 1, 2000",
+        "End_Date": "November 3, 2000",
+        "Num": "dozens of people",
+        "Annotation": "Impact and records"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hilo",
+          "Pahala"
+        ],
+        "Start_Date": "November 13, 2000",
+        "End_Date": "November 15, 2000",
+        "Num": "1,168 people",
+        "Annotation": "Aftermath"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hilo",
+          "Pahala"
+        ],
+        "Start_Date": "November 1, 2000",
+        "End_Date": "December 4, 2000",
+        "Num": "1,131 island residents",
+        "Annotation": "Aftermath"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hilo",
+          "Pahala"
+        ],
+        "Start_Date": "November 1, 2000",
+        "End_Date": "January 8, 2001",
+        "Num": "over 2,000 people",
+        "Annotation": "Aftermath"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hilo",
+          "Pahala"
+        ],
+        "Start_Date": "November 1, 2000",
+        "End_Date": "December 4, 2000",
+        "Num": "over 1,100 people",
+        "Annotation": "Aftermath"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hilo",
+          "Pahala"
+        ],
+        "Start_Date": "November 1, 2000",
+        "End_Date": "December 4, 2000",
+        "Num": "over 1,100 people",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Hilo",
-        "Pahala"
-      ],
-      "Start_Date": "November 1, 2000",
-      "End_Date": "December 4, 2000",
-      "Num": "1,131 island residents",
-      "Annotation": "Aftermath"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "November 1, 2000",
+        "End_Date": "November 3, 2000",
+        "Num": "NULL",
+        "Annotation": "Impact and records"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hilo",
+          "Ka\u2019u",
+          "Puna",
+          "Pahala"
+        ],
+        "Start_Date": "November 1, 2000",
+        "End_Date": "November 3, 2000",
+        "Num": "33 homes and apartments destroyed, 265 sustaining damage",
+        "Annotation": "Impact and records"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "None",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Hilo",
-        "Pahala"
-      ],
-      "Start_Date": "November 1, 2000",
-      "End_Date": "January 8, 2001",
-      "Num": "over 2,000 people",
-      "Annotation": "Aftermath"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "None",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hawaii"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "None",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Hilo",
-        "Pahala"
-      ],
-      "Start_Date": "November 1, 2000",
-      "End_Date": "December 4, 2000",
-      "Num": "over 1,100 people",
-      "Annotation": "Aftermath"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hilo",
+          "Pahala"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "dozens of people",
+        "Annotation": "Impact and records"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hilo"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "214 people",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Hilo",
-        "Pahala"
-      ],
-      "Start_Date": "November 1, 2000",
-      "End_Date": "December 4, 2000",
-      "Num": "over 1,100 people",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "November 1, 2000",
-      "End_Date": "November 3, 2000",
-      "Num": "NULL",
-      "Annotation": "Impact and records"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Hilo",
-        "Ka\u2019u",
-        "Puna",
-        "Pahala"
-      ],
-      "Start_Date": "November 1, 2000",
-      "End_Date": "November 3, 2000",
-      "Num": "33 homes and apartments destroyed, 265 sustaining damage",
-      "Annotation": "Impact and records"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "None",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "None",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Hawaii"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "None",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Hilo",
-        "Pahala"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "dozens of people",
-      "Annotation": "Impact and records"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hilo",
+          "Ka\u2019u",
+          "Puna"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "33 homes and apartments were destroyed, and another 265 sustaining damage",
+        "Annotation": "Impact and records"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Hilo"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "214 people",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Hilo",
-        "Ka\u2019u",
-        "Puna"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "33 homes and apartments were destroyed, and another 265 sustaining damage",
-      "Annotation": "Impact and records"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "November 1, 2000",
-      "End_Date": "November 3, 2000",
-      "Num": "NULL",
-      "Annotation": "Impact and records"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Hawaii"
-      ],
-      "Start_Date": "November 1, 2000",
-      "End_Date": "November 3, 2000",
-      "Num": "Four",
-      "Annotation": "Impact and records"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "November 1, 2000",
-      "End_Date": "November 3, 2000",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impact and records"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Hilo",
-        "Ka\u2019u",
-        "Puna",
-        "Pahala"
-      ],
-      "Start_Date": "November 1, 2000",
-      "End_Date": "November 3, 2000",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impact and records"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$70 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "Yes",
-    "Total_Damage_Inflation_Adjusted_Year": "2024",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "November 1, 2000",
-      "End_Date": "November 3, 2000",
-      "Num": "$70 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "Yes",
-      "Num_Inflation_Adjusted_Year": "2024",
-      "Annotation": "Impact and records"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Hilo",
-        "Ka\u2019u",
-        "Puna",
-        "Pahala"
-      ],
-      "Start_Date": "November 1, 2000",
-      "End_Date": "November 3, 2000",
-      "Num": "$70 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "Yes",
-      "Num_Inflation_Adjusted_Year": "2024",
-      "Annotation": "Impact and records"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "November 1, 2000",
+        "End_Date": "November 3, 2000",
+        "Num": "NULL",
+        "Annotation": "Impact and records"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hawaii"
+        ],
+        "Start_Date": "November 1, 2000",
+        "End_Date": "November 3, 2000",
+        "Num": "Four",
+        "Annotation": "Impact and records"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Hilo"
-      ],
-      "Start_Date": "November 1, 2000",
-      "End_Date": "November 3, 2000",
-      "Num": "$8.7 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Flood",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "November 1, 2000",
-  "End_Date": "November 3, 2000",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "United States"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "November 1, 2000",
+        "End_Date": "November 3, 2000",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact and records"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hilo",
+          "Ka\u2019u",
+          "Puna",
+          "Pahala"
+        ],
+        "Start_Date": "November 1, 2000",
+        "End_Date": "November 3, 2000",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact and records"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$70 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "Yes",
+      "Total_Damage_Inflation_Adjusted_Year": "2024",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "November 1, 2000",
+        "End_Date": "November 3, 2000",
+        "Num": "$70 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "Yes",
+        "Num_Inflation_Adjusted_Year": "2024",
+        "Annotation": "Impact and records"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hilo",
+          "Ka\u2019u",
+          "Puna",
+          "Pahala"
+        ],
+        "Start_Date": "November 1, 2000",
+        "End_Date": "November 3, 2000",
+        "Num": "$70 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "Yes",
+        "Num_Inflation_Adjusted_Year": "2024",
+        "Annotation": "Impact and records"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hilo"
+        ],
+        "Start_Date": "November 1, 2000",
+        "End_Date": "November 3, 2000",
+        "Num": "$8.7 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Flood",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "November 1, 2000",
+    "End_Date": "November 3, 2000",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "United States"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

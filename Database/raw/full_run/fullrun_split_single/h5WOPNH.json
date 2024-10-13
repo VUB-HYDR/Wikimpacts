@@ -1,646 +1,648 @@
-{
-  "Event_ID": "h5WOPNH",
-  "Sources": "https://en.wikipedia.org/wiki/1904_Atlantic_hurricane_season",
-  "Event_Names": "1904 Atlantic hurricane season",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "June 10",
-      "End_Date": "June 14",
-      "Num": "at least 87",
-      "Annotation": "Hurricane One"
+[
+  {
+    "Event_ID": "h5WOPNH",
+    "Sources": "https://en.wikipedia.org/wiki/1904_Atlantic_hurricane_season",
+    "Event_Names": "1904 Atlantic hurricane season",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "September 8",
-      "End_Date": "September 15",
-      "Num": "NULL",
-      "Annotation": "Hurricane Two"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "June 10",
+        "End_Date": "June 14",
+        "Num": "at least 87",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "September 8",
+        "End_Date": "September 15",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Areas": "Canada",
+        "Start_Date": "September 8",
+        "End_Date": "September 15",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Santiago de Cuba",
+          "El Cobre"
+        ],
+        "Start_Date": "June 10",
+        "End_Date": "June 14",
+        "Num": "at least 87",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "South Carolina",
+          "North Carolina",
+          "Maryland",
+          "Delaware",
+          "New York City",
+          "Boston",
+          "Southern New England"
+        ],
+        "Start_Date": "September 8",
+        "End_Date": "September 15",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Halifax",
+          "New Brunswick",
+          "Newfoundland",
+          "Nova Scotia"
+        ],
+        "Start_Date": "September 8",
+        "End_Date": "September 15",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Canada",
-      "Start_Date": "September 8",
-      "End_Date": "September 15",
-      "Num": "NULL",
-      "Annotation": "Hurricane Two"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Santiago de Cuba",
-        "El Cobre"
-      ],
-      "Start_Date": "June 10",
-      "End_Date": "June 14",
-      "Num": "at least 87",
-      "Annotation": "Hurricane One"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "June 13",
+        "End_Date": "June 14",
+        "Num": "150 homes",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "September 14",
+        "End_Date": "September 15",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Areas": "Canada",
+        "Start_Date": "September 15",
+        "End_Date": "September 15",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "October 16",
+        "End_Date": "October 16",
+        "Num": "NULL",
+        "Annotation": "Hurricane Four"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "October 17",
+        "End_Date": "October 20",
+        "Num": "NULL",
+        "Annotation": "Hurricane Four"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Santiago de Cuba",
+          "El Cobre"
+        ],
+        "Start_Date": "June 13",
+        "End_Date": "June 14",
+        "Num": "150 homes",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mount Olive",
+          "Faison"
+        ],
+        "Start_Date": "September 14",
+        "End_Date": "September 15",
+        "Num": "20 homes",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Lewes"
+        ],
+        "Start_Date": "September 14",
+        "End_Date": "September 15",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New York City"
+        ],
+        "Start_Date": "September 14",
+        "End_Date": "September 15",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Boston"
+        ],
+        "Start_Date": "September 14",
+        "End_Date": "September 15",
+        "Num": "15 vessels",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Halifax"
+        ],
+        "Start_Date": "September 15",
+        "End_Date": "September 15",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "New Brunswick",
+          "Newfoundland",
+          "Nova Scotia"
+        ],
+        "Start_Date": "September 15",
+        "End_Date": "September 15",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Trinidad"
+        ],
+        "Start_Date": "October 16",
+        "End_Date": "October 16",
+        "Num": "NULL",
+        "Annotation": "Hurricane Four"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Miami",
+          "Colored Town",
+          "Fort Lauderdale"
+        ],
+        "Start_Date": "October 17",
+        "End_Date": "October 20",
+        "Num": "NULL",
+        "Annotation": "Hurricane Four"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "112-275",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "South Carolina",
-        "North Carolina",
-        "Maryland",
-        "Delaware",
-        "New York City",
-        "Boston",
-        "Southern New England"
-      ],
-      "Start_Date": "September 8",
-      "End_Date": "September 15",
-      "Num": "NULL",
-      "Annotation": "Hurricane Two"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "June 10",
+        "End_Date": "June 14",
+        "Num": "at least 87",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "September 8",
+        "End_Date": "September 15",
+        "Num": "at least 18",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Areas": "Canada",
+        "Start_Date": "September 8",
+        "End_Date": "September 15",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Santiago de Cuba",
+          "El Cobre"
+        ],
+        "Start_Date": "June 10",
+        "End_Date": "June 14",
+        "Num": "at least 87",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Charleston",
+          "Wrightsville Beach",
+          "Mount Olive",
+          "Faison",
+          "Baltimore",
+          "Delaware",
+          "Lewes",
+          "New York City"
+        ],
+        "Start_Date": "September 8",
+        "End_Date": "September 15",
+        "Num": "at least 18",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Halifax"
+        ],
+        "Start_Date": "September 8",
+        "End_Date": "September 15",
+        "Num": "1",
+        "Annotation": "Hurricane Two"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Halifax",
-        "New Brunswick",
-        "Newfoundland",
-        "Nova Scotia"
-      ],
-      "Start_Date": "September 8",
-      "End_Date": "September 15",
-      "Num": "NULL",
-      "Annotation": "Hurricane Two"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "June 13",
-      "End_Date": "June 14",
-      "Num": "150 homes",
-      "Annotation": "Hurricane One"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Cuba"
+        ],
+        "Start_Date": "June 13",
+        "End_Date": "June 14",
+        "Num": "NULL",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "September 14",
+        "End_Date": "September 15",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "September 15",
+        "End_Date": "September 15",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Areas": [
+          "Cuba"
+        ],
+        "Start_Date": "October 15",
+        "End_Date": "October 16",
+        "Num": "NULL",
+        "Annotation": "Hurricane Four"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "October 17",
+        "End_Date": "October 20",
+        "Num": "NULL",
+        "Annotation": "Hurricane Four"
+      },
+      {
+        "Administrative_Areas": [
+          "Bahamas"
+        ],
+        "Start_Date": "October 20",
+        "End_Date": "October 20",
+        "Num": "NULL",
+        "Annotation": "Hurricane Four"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Santiago de Cuba",
+          "El Cobre"
+        ],
+        "Start_Date": "June 13",
+        "End_Date": "June 14",
+        "Num": "NULL",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mount Olive",
+          "Faison",
+          "Smiths Mills",
+          "Baltimore",
+          "Lewes",
+          "Philadelphia",
+          "New York City",
+          "New York Harbor",
+          "Boston"
+        ],
+        "Start_Date": "September 14",
+        "End_Date": "September 15",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Halifax",
+          "New Brunswick",
+          "Newfoundland",
+          "Nova Scotia"
+        ],
+        "Start_Date": "September 15",
+        "End_Date": "September 15",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Trinidad",
+          "Sancti Sp\u00edritus"
+        ],
+        "Start_Date": "October 15",
+        "End_Date": "October 16",
+        "Num": "NULL",
+        "Annotation": "Hurricane Four"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Key Largo",
+          "Miami",
+          "Fort Lauderdale",
+          "Boca Grande",
+          "Monroe County",
+          "Miami Beach"
+        ],
+        "Start_Date": "October 17",
+        "End_Date": "October 20",
+        "Num": "NULL",
+        "Annotation": "Hurricane Four"
+      },
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Grand Bahama",
+          "Abaco Islands"
+        ],
+        "Start_Date": "October 20",
+        "End_Date": "October 20",
+        "Num": "NULL",
+        "Annotation": "Hurricane Four"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "September 14",
-      "End_Date": "September 15",
-      "Num": "NULL",
-      "Annotation": "Hurricane Two"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "June 13",
+        "End_Date": "June 14",
+        "Num": "150 homes were damaged or destroyed",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "October 17",
+        "End_Date": "October 18",
+        "Num": "Several homes were unroofed",
+        "Annotation": "Hurricane Four"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Santiago de Cuba",
+          "El Cobre"
+        ],
+        "Start_Date": "June 13",
+        "End_Date": "June 14",
+        "Num": "150 homes were damaged or destroyed",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Miami",
+          "Colored Town (Overtown)"
+        ],
+        "Start_Date": "October 17",
+        "End_Date": "October 18",
+        "Num": "Several homes were unroofed",
+        "Annotation": "Hurricane Four"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": "Canada",
-      "Start_Date": "September 15",
-      "End_Date": "September 15",
-      "Num": "NULL",
-      "Annotation": "Hurricane Two"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "September 14",
+        "End_Date": "September 15",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mount Olive",
+          "Faison"
+        ],
+        "Start_Date": "September 14",
+        "End_Date": "September 15",
+        "Num": "1",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Baltimore"
+        ],
+        "Start_Date": "September 14",
+        "End_Date": "September 15",
+        "Num": "1",
+        "Annotation": "Hurricane Two"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "October 16",
-      "End_Date": "October 16",
-      "Num": "NULL",
-      "Annotation": "Hurricane Four"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "September 14, 1904",
+        "End_Date": "September 15, 1904",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Two"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mount Olive",
+          "Faison"
+        ],
+        "Start_Date": "September 14, 1904",
+        "End_Date": "September 15, 1904",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Two"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$2.5 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "October 17",
-      "End_Date": "October 20",
-      "Num": "NULL",
-      "Annotation": "Hurricane Four"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Santiago de Cuba",
-        "El Cobre"
-      ],
-      "Start_Date": "June 13",
-      "End_Date": "June 14",
-      "Num": "150 homes",
-      "Annotation": "Hurricane One"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mount Olive",
-        "Faison"
-      ],
-      "Start_Date": "September 14",
-      "End_Date": "September 15",
-      "Num": "20 homes",
-      "Annotation": "Hurricane Two"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Lewes"
-      ],
-      "Start_Date": "September 14",
-      "End_Date": "September 15",
-      "Num": "NULL",
-      "Annotation": "Hurricane Two"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "New York City"
-      ],
-      "Start_Date": "September 14",
-      "End_Date": "September 15",
-      "Num": "NULL",
-      "Annotation": "Hurricane Two"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Boston"
-      ],
-      "Start_Date": "September 14",
-      "End_Date": "September 15",
-      "Num": "15 vessels",
-      "Annotation": "Hurricane Two"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Halifax"
-      ],
-      "Start_Date": "September 15",
-      "End_Date": "September 15",
-      "Num": "NULL",
-      "Annotation": "Hurricane Two"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "New Brunswick",
-        "Newfoundland",
-        "Nova Scotia"
-      ],
-      "Start_Date": "September 15",
-      "End_Date": "September 15",
-      "Num": "NULL",
-      "Annotation": "Hurricane Two"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Trinidad"
-      ],
-      "Start_Date": "October 16",
-      "End_Date": "October 16",
-      "Num": "NULL",
-      "Annotation": "Hurricane Four"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Miami",
-        "Colored Town",
-        "Fort Lauderdale"
-      ],
-      "Start_Date": "October 17",
-      "End_Date": "October 20",
-      "Num": "NULL",
-      "Annotation": "Hurricane Four"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "112-275",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "June 10",
-      "End_Date": "June 14",
-      "Num": "at least 87",
-      "Annotation": "Hurricane One"
-    },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "September 8",
-      "End_Date": "September 15",
-      "Num": "at least 18",
-      "Annotation": "Hurricane Two"
-    },
-    {
-      "Administrative_Areas": "Canada",
-      "Start_Date": "September 8",
-      "End_Date": "September 15",
-      "Num": "NULL",
-      "Annotation": "Hurricane Two"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Santiago de Cuba",
-        "El Cobre"
-      ],
-      "Start_Date": "June 10",
-      "End_Date": "June 14",
-      "Num": "at least 87",
-      "Annotation": "Hurricane One"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Charleston",
-        "Wrightsville Beach",
-        "Mount Olive",
-        "Faison",
-        "Baltimore",
-        "Delaware",
-        "Lewes",
-        "New York City"
-      ],
-      "Start_Date": "September 8",
-      "End_Date": "September 15",
-      "Num": "at least 18",
-      "Annotation": "Hurricane Two"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Halifax"
-      ],
-      "Start_Date": "September 8",
-      "End_Date": "September 15",
-      "Num": "1",
-      "Annotation": "Hurricane Two"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Cuba"
-      ],
-      "Start_Date": "June 13",
-      "End_Date": "June 14",
-      "Num": "NULL",
-      "Annotation": "Hurricane One"
-    },
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "September 14",
-      "End_Date": "September 15",
-      "Num": "NULL",
-      "Annotation": "Hurricane Two"
-    },
-    {
-      "Administrative_Areas": [
-        "Canada"
-      ],
-      "Start_Date": "September 15",
-      "End_Date": "September 15",
-      "Num": "NULL",
-      "Annotation": "Hurricane Two"
-    },
-    {
-      "Administrative_Areas": [
-        "Cuba"
-      ],
-      "Start_Date": "October 15",
-      "End_Date": "October 16",
-      "Num": "NULL",
-      "Annotation": "Hurricane Four"
-    },
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "October 17",
-      "End_Date": "October 20",
-      "Num": "NULL",
-      "Annotation": "Hurricane Four"
-    },
-    {
-      "Administrative_Areas": [
-        "Bahamas"
-      ],
-      "Start_Date": "October 20",
-      "End_Date": "October 20",
-      "Num": "NULL",
-      "Annotation": "Hurricane Four"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Santiago de Cuba",
-        "El Cobre"
-      ],
-      "Start_Date": "June 13",
-      "End_Date": "June 14",
-      "Num": "NULL",
-      "Annotation": "Hurricane One"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mount Olive",
-        "Faison",
-        "Smiths Mills",
-        "Baltimore",
-        "Lewes",
-        "Philadelphia",
-        "New York City",
-        "New York Harbor",
-        "Boston"
-      ],
-      "Start_Date": "September 14",
-      "End_Date": "September 15",
-      "Num": "NULL",
-      "Annotation": "Hurricane Two"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Halifax",
-        "New Brunswick",
-        "Newfoundland",
-        "Nova Scotia"
-      ],
-      "Start_Date": "September 15",
-      "End_Date": "September 15",
-      "Num": "NULL",
-      "Annotation": "Hurricane Two"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Trinidad",
-        "Sancti Sp\u00edritus"
-      ],
-      "Start_Date": "October 15",
-      "End_Date": "October 16",
-      "Num": "NULL",
-      "Annotation": "Hurricane Four"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Key Largo",
-        "Miami",
-        "Fort Lauderdale",
-        "Boca Grande",
-        "Monroe County",
-        "Miami Beach"
-      ],
-      "Start_Date": "October 17",
-      "End_Date": "October 20",
-      "Num": "NULL",
-      "Annotation": "Hurricane Four"
-    },
-    {
-      "Administrative_Area": "Bahamas",
-      "Locations": [
-        "Grand Bahama",
-        "Abaco Islands"
-      ],
-      "Start_Date": "October 20",
-      "End_Date": "October 20",
-      "Num": "NULL",
-      "Annotation": "Hurricane Four"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "June 13",
-      "End_Date": "June 14",
-      "Num": "150 homes were damaged or destroyed",
-      "Annotation": "Hurricane One"
-    },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "October 17",
-      "End_Date": "October 18",
-      "Num": "Several homes were unroofed",
-      "Annotation": "Hurricane Four"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Santiago de Cuba",
-        "El Cobre"
-      ],
-      "Start_Date": "June 13",
-      "End_Date": "June 14",
-      "Num": "150 homes were damaged or destroyed",
-      "Annotation": "Hurricane One"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Miami",
-        "Colored Town (Overtown)"
-      ],
-      "Start_Date": "October 17",
-      "End_Date": "October 18",
-      "Num": "Several homes were unroofed",
-      "Annotation": "Hurricane Four"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "September 14",
-      "End_Date": "September 15",
-      "Num": "NULL",
-      "Annotation": "Hurricane Two"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mount Olive",
-        "Faison"
-      ],
-      "Start_Date": "September 14",
-      "End_Date": "September 15",
-      "Num": "1",
-      "Annotation": "Hurricane Two"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Baltimore"
-      ],
-      "Start_Date": "September 14",
-      "End_Date": "September 15",
-      "Num": "1",
-      "Annotation": "Hurricane Two"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "September 14, 1904",
-      "End_Date": "September 15, 1904",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Two"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mount Olive",
-        "Faison"
-      ],
-      "Start_Date": "September 14, 1904",
-      "End_Date": "September 15, 1904",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Two"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$2.5 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "September 8",
-      "End_Date": "September 15",
-      "Num": "$2 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Two"
-    },
-    {
-      "Administrative_Areas": "Canada",
-      "Start_Date": "September 8",
-      "End_Date": "September 15",
-      "Num": "$500,000",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Two"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Santiago de Cuba",
-        "El Cobre"
-      ],
-      "Start_Date": "June 10",
-      "End_Date": "June 14",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane One"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mount Olive",
-        "Faison",
-        "Smiths Mills",
-        "Baltimore",
-        "Lewes",
-        "Philadelphia",
-        "New York City",
-        "New York Harbor",
-        "Boston",
-        "Southern New England"
-      ],
-      "Start_Date": "September 8",
-      "End_Date": "September 15",
-      "Num": "$2 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Two"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Halifax",
-        "New Brunswick",
-        "Newfoundland",
-        "Nova Scotia"
-      ],
-      "Start_Date": "September 8",
-      "End_Date": "September 15",
-      "Num": "$500,000",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Two"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Miami",
-        "Colored Town (Overtown)",
-        "Fort Lauderdale",
-        "South Florida"
-      ],
-      "Start_Date": "October 12",
-      "End_Date": "October 20",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Four"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Hurricane One|Hurricane Two|Hurricane Four",
-  "Start_Date": "June 10, 1904",
-  "End_Date": "November 4, 1904",
-  "Time_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "September 8",
+        "End_Date": "September 15",
+        "Num": "$2 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Areas": "Canada",
+        "Start_Date": "September 8",
+        "End_Date": "September 15",
+        "Num": "$500,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Two"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Santiago de Cuba",
+          "El Cobre"
+        ],
+        "Start_Date": "June 10",
+        "End_Date": "June 14",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mount Olive",
+          "Faison",
+          "Smiths Mills",
+          "Baltimore",
+          "Lewes",
+          "Philadelphia",
+          "New York City",
+          "New York Harbor",
+          "Boston",
+          "Southern New England"
+        ],
+        "Start_Date": "September 8",
+        "End_Date": "September 15",
+        "Num": "$2 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Halifax",
+          "New Brunswick",
+          "Newfoundland",
+          "Nova Scotia"
+        ],
+        "Start_Date": "September 8",
+        "End_Date": "September 15",
+        "Num": "$500,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Miami",
+          "Colored Town (Overtown)",
+          "Fort Lauderdale",
+          "South Florida"
+        ],
+        "Start_Date": "October 12",
+        "End_Date": "October 20",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Four"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Hurricane One|Hurricane Two|Hurricane Four",
+    "Start_Date": "June 10, 1904",
+    "End_Date": "November 4, 1904",
+    "Time_Annotation": "Info_Box"
+  }
+]

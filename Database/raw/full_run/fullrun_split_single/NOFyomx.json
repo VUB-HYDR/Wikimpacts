@@ -1,1069 +1,1071 @@
-{
-  "Event_ID": "NOFyomx",
-  "Sources": "https://en.wikipedia.org/wiki/1996_Atlantic_hurricane_season",
-  "Event_Names": "1996 Atlantic hurricane season",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Nicaragua"
-      ],
-      "Start_Date": "July 28, 1996",
-      "End_Date": "NULL",
-      "Num": "100,000 homeless",
-      "Annotation": "Hurricane Cesar"
-    },
-    {
-      "Administrative_Areas": [
-        "Costa Rica"
-      ],
-      "Start_Date": "July 28, 1996",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Cesar"
-    },
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "August 20, 1996",
-      "End_Date": "NULL",
-      "Num": "35,000 displaced",
-      "Annotation": "Hurricane Dolly"
-    },
-    {
-      "Administrative_Areas": [
-        "Puerto Rico"
-      ],
-      "Start_Date": "September 10, 1996",
-      "End_Date": "NULL",
-      "Num": "1.4 million without electricity",
-      "Annotation": "Hurricane Hortense"
-    },
-    {
-      "Administrative_Areas": [
-        "Honduras"
-      ],
-      "Start_Date": "November 20, 1996",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Marco"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "North Carolina"
-      ],
-      "Start_Date": "July 12, 1996",
-      "End_Date": "NULL",
-      "Num": "5,000 homes and buildings damaged",
-      "Annotation": "Hurricane Bertha"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "North Carolina"
-      ],
-      "Start_Date": "September 5, 1996",
-      "End_Date": "NULL",
-      "Num": "1.7 million without electricity",
-      "Annotation": "Hurricane Fran"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Virginia"
-      ],
-      "Start_Date": "September 5, 1996",
-      "End_Date": "NULL",
-      "Num": "400,000 without electricity",
-      "Annotation": "Hurricane Fran"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "New York",
-        "Massachusetts"
-      ],
-      "Start_Date": "September 1, 1996",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Edouard"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "New Jersey"
-      ],
-      "Start_Date": "September 1, 1996",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Edouard"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Maine"
-      ],
-      "Start_Date": "September 1, 1996",
-      "End_Date": "NULL",
-      "Num": "1,900 without power",
-      "Annotation": "Hurricane Edouard"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Texas"
-      ],
-      "Start_Date": "October 6, 1996",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Tropical Storm Josephine"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Louisiana"
-      ],
-      "Start_Date": "October 6, 1996",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Tropical Storm Josephine"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Florida"
-      ],
-      "Start_Date": "October 8, 1996",
-      "End_Date": "NULL",
-      "Num": "3,600 houses flooded",
-      "Annotation": "Tropical Storm Josephine"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Virginia"
-      ],
-      "Start_Date": "October 8, 1996",
-      "End_Date": "NULL",
-      "Num": "26,000 without power",
-      "Annotation": "Tropical Storm Josephine"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "New Jersey"
-      ],
-      "Start_Date": "October 8, 1996",
-      "End_Date": "NULL",
-      "Num": "31,000 without power",
-      "Annotation": "Tropical Storm Josephine"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "October 17, 1996",
-      "End_Date": "NULL",
-      "Num": "269,995 evacuated",
-      "Annotation": "Hurricane Lili"
-    },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "November 20, 1996",
-      "End_Date": "NULL",
-      "Num": "4,000 homes destroyed",
-      "Annotation": "Hurricane Marco"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Bertha"
-    },
-    {
-      "Administrative_Areas": "Nicaragua",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Cesar"
-    },
-    {
-      "Administrative_Areas": "Costa Rica",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Cesar"
-    },
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Dolly"
-    },
-    {
-      "Administrative_Areas": "Puerto Rico",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Hortense"
-    },
-    {
-      "Administrative_Areas": "Dominican Republic",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Hortense"
-    },
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Lili"
-    },
-    {
-      "Administrative_Areas": "Honduras",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Marco"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "North Carolina"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "over 5,000 homes and buildings",
-      "Annotation": "Hurricane Bertha"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "North Carolina"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "at least 10,000 homes",
-      "Annotation": "Hurricane Fran"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Florida"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3,600 houses",
-      "Annotation": "Tropical Storm Josephine"
-    },
-    {
-      "Administrative_Area": "Nicaragua",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "more than 2,500 homes",
-      "Annotation": "Hurricane Cesar"
-    },
-    {
-      "Administrative_Area": "Costa Rica",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3,874 homes",
-      "Annotation": "Hurricane Cesar"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Pueblo Viejo"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "hundreds of homes",
-      "Annotation": "Hurricane Dolly"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Tampico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "6,500 homes",
-      "Annotation": "Hurricane Dolly"
-    },
-    {
-      "Administrative_Area": "Puerto Rico",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "11,463 houses",
-      "Annotation": "Hurricane Hortense"
-    },
-    {
-      "Administrative_Area": "Dominican Republic",
-      "Locations": [
-        "Saman\u00e1 Province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Hortense"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "92,542 houses",
-      "Annotation": "Hurricane Lili"
-    },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "4,000 homes",
-      "Annotation": "Hurricane Marco"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "256 total",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Bertha"
-    },
-    {
-      "Administrative_Areas": "Nicaragua",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "42",
-      "Annotation": "Hurricane Cesar"
-    },
-    {
-      "Administrative_Areas": "Costa Rica",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "39",
-      "Annotation": "Hurricane Cesar"
-    },
-    {
-      "Administrative_Areas": "El Salvador",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "12",
-      "Annotation": "Hurricane Cesar"
-    },
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "14",
-      "Annotation": "Hurricane Dolly"
-    },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Edouard"
-    },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "37",
-      "Annotation": "Hurricane Fran"
-    },
-    {
-      "Administrative_Areas": "Puerto Rico",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "19",
-      "Annotation": "Hurricane Hortense"
-    },
-    {
-      "Administrative_Areas": "Dominican Republic",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3",
-      "Annotation": "Hurricane Hortense"
-    },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Tropical Storm Josephine"
-    },
-    {
-      "Administrative_Areas": "Honduras",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "9",
-      "Annotation": "Hurricane Marco"
-    },
-    {
-      "Administrative_Areas": "Dominican Republic",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3",
-      "Annotation": "Hurricane Marco"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "North Carolina"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "12",
-      "Annotation": "Hurricane Bertha"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Puerto Rico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3",
-      "Annotation": "Hurricane Bertha"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Saint Martin"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "Hurricane Bertha"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Florida"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "4",
-      "Annotation": "Hurricane Bertha"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "New Jersey"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Hurricane Bertha"
-    },
-    {
-      "Administrative_Area": "Venezuela",
-      "Locations": [
-        "offshore Venezuela"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3",
-      "Annotation": "Hurricane Cesar"
-    },
-    {
-      "Administrative_Area": "Colombia",
-      "Locations": [
-        "Pueblo Bello"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "Hurricane Cesar"
-    },
-    {
-      "Administrative_Area": "Colombia",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3",
-      "Annotation": "Hurricane Cesar"
-    },
-    {
-      "Administrative_Area": "Colombia",
-      "Locations": [
-        "Archipelago of San Andr\u00e9s, Providencia and Santa Catalina"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "11",
-      "Annotation": "Hurricane Cesar"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Veracruz"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "6",
-      "Annotation": "Hurricane Dolly"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Nuevo Le\u00f3n"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3",
-      "Annotation": "Hurricane Dolly"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Monterrey"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Hurricane Dolly"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "New Jersey"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "Hurricane Edouard"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "North Carolina"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "24",
-      "Annotation": "Hurricane Fran"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Virginia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Fran"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "West Virginia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Fran"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Maryland"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Fran"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Ohio"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Fran"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Pennsylvania"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Fran"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Washington, D.C."
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Fran"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Georgia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Tropical Storm Josephine"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "North Carolina"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Tropical Storm Josephine"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Virginia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Tropical Storm Josephine"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Florida"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Hurricane Lili"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Maine"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Hurricane Lili"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Nicaragua"
-      ],
-      "Start_Date": "July 28",
-      "End_Date": "NULL",
-      "Num": "100,000",
-      "Annotation": "Hurricane Cesar"
-    },
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "August 23",
-      "End_Date": "NULL",
-      "Num": "35,000",
-      "Annotation": "Hurricane Dolly"
-    },
-    {
-      "Administrative_Areas": [
-        "Cuba"
-      ],
-      "Start_Date": "October 18",
-      "End_Date": "NULL",
-      "Num": "269,995",
-      "Annotation": "Hurricane Lili"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Nicaragua",
-      "Locations": [
-        "Nicaragua"
-      ],
-      "Start_Date": "July 28",
-      "End_Date": "NULL",
-      "Num": "100,000",
-      "Annotation": "Hurricane Cesar"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Pueblo Viejo",
-        "San Luis Potos\u00ed",
-        "Tampico"
-      ],
-      "Start_Date": "August 23",
-      "End_Date": "NULL",
-      "Num": "35,000",
-      "Annotation": "Hurricane Dolly"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Cuba"
-      ],
-      "Start_Date": "October 18",
-      "End_Date": "NULL",
-      "Num": "269,995",
-      "Annotation": "Hurricane Lili"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Nicaragua",
-      "Start_Date": "July 28, 1996",
-      "End_Date": "July 29, 1996",
-      "Num": "100,000 homeless",
-      "Annotation": "Hurricane Cesar"
-    },
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "August 23, 1996",
-      "End_Date": "August 24, 1996",
-      "Num": "35,000 people displaced",
-      "Annotation": "Hurricane Dolly"
-    },
-    {
-      "Administrative_Areas": "Honduras",
-      "Start_Date": "November 19, 1996",
-      "End_Date": "November 26, 1996",
-      "Num": "4,000 homes destroyed",
-      "Annotation": "Hurricane Marco"
-    },
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "October 18, 1996",
-      "End_Date": "October 19, 1996",
-      "Num": "92,542 houses damaged, 6,369 houses destroyed",
-      "Annotation": "Hurricane Lili"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Nicaragua",
-      "Locations": [
-        "Bluefields"
-      ],
-      "Start_Date": "July 28, 1996",
-      "End_Date": "July 29, 1996",
-      "Num": "100,000 homeless",
-      "Annotation": "Hurricane Cesar"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Pueblo Viejo",
-        "San Luis Potos\u00ed",
-        "Tampico"
-      ],
-      "Start_Date": "August 23, 1996",
-      "End_Date": "August 24, 1996",
-      "Num": "35,000 people displaced",
-      "Annotation": "Hurricane Dolly"
-    },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "November 19, 1996",
-      "End_Date": "November 26, 1996",
-      "Num": "4,000 homes destroyed",
-      "Annotation": "Hurricane Marco"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Matanzas Province"
-      ],
-      "Start_Date": "October 18, 1996",
-      "End_Date": "October 19, 1996",
-      "Num": "92,542 houses damaged, 6,369 houses destroyed",
-      "Annotation": "Hurricane Lili"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Bertha"
-    },
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Fran"
-    },
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Tropical Storm Josephine"
-    },
-    {
-      "Administrative_Areas": [
-        "United Kingdom"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Lili"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "North Carolina"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Bertha"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "North Carolina"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Fran"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Virginia",
-        "New Jersey"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Tropical Storm Josephine"
-    },
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Ireland",
-        "Great Britain"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Lili"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    },
-    {
-      "Administrative_Areas": [
-        "Cuba"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    },
-    {
-      "Administrative_Areas": [
-        "United Kingdom"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "North Carolina"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Fran"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Virginia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Annotation": "Hurricane Fran"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Matanzas Province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Lili"
-    },
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Ireland",
-        "Great Britain"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Lili"
-    }
-  ],
-  "Json_Error": "{\n  \"Total_Summary_Damage\": {\n    \"Total_Damage\": \"$6.52 billion\",\n    \"Total_Damage_Unit\": \"USD\",\n    \"Total_Damage_Inflation_Adjusted\": \"No\",\n    \"Total_Damage_Inflation_Adjusted_Year\": \"NULL\",\n    \"Total_Damage_Annotation\": \"Info_Box\"\n  },\n  \"Instance_Per_Administrative_Areas_Damage\": [\n    {\n      \"Administrative_Areas\": \"United States\",\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$5 billion\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Fran\"\n    },\n    {\n      \"Administrative_Areas\": \"Nicaragua\",\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$50.5 million\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Cesar\"\n    },\n    {\n      \"Administrative_Areas\": \"Costa Rica\",\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$151 million\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Cesar\"\n    },\n    {\n      \"Administrative_Areas\": \"Cuba\",\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$362 million\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Lili\"\n    },\n    {\n      \"Administrative_Areas\": \"United Kingdom\",\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$300 million\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Lili\"\n    }\n  ],\n  \"Specific_Instance_Per_Administrative_Area_Damage\": [\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"North Carolina\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$5.1 billion\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Fran\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Raleigh, North Carolina\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$2 billion\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Fran\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Virginia\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$350 million\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Fran\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Puerto Rico\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$153.4 million\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Hortense\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New York\", \"Massachusetts\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$20 million\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Edouard\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"South Carolina\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$40 million\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Fran\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Florida\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$130 million\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Tropical Storm Josephine\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Jersey\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Edouard\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Georgia\", \"North Carolina\", \"Virginia\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Tropical Storm Josephine\"\n    },\n    {\n      \"Administrative_Area\": \"Nicaragua\",\n      \"Locations\": [\"Bluefields\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$50.5 million\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Cesar\"\n    },\n    {\n      \"Administrative_Area\": \"Costa Rica\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$151 million\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Cesar\"\n    },\n    {\n      \"Administrative_Area\": \"Cuba\",\n      \"Locations\": [\"Matanzas Province\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$362 million\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Lili\"\n    },\n    {\n      \"Administrative_Area\": \"United Kingdom\",\n      \"Locations\": [\"Ireland\", \"Great Britain\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$300 million\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Lili\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"Quintana Roo\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"San Luis Potos\u00ed\", \"Tampico\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"Mazatl\u00e1n\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"Pueblo Viejo\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"Tulum\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Tropical Storm Kyle\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"Yucat\u00e1n Peninsula\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Tropical Storm Kyle\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area",
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Seasonal summary",
-  "Start_Date": "June 1, 1996",
-  "End_Date": "November 30, 1996",
-  "Time_Annotation": "1996 Atlantic hurricane season",
-  "Administrative_Areas": [
-    "United States",
-    "Nicaragua",
-    "Costa Rica",
-    "El Salvador",
-    "Mexico",
-    "Canada",
-    "Venezuela",
-    "Colombia",
-    "Cura\u00e7ao",
-    "Puerto Rico",
-    "Dominican Republic",
-    "Bahamas",
-    "Turks and Caicos Islands",
-    "Bermuda",
-    "Guadeloupe",
-    "Martinique",
-    "Antigua and Barbuda",
-    "Saint Martin",
-    "Honduras",
-    "Cuba",
-    "Ireland",
-    "United Kingdom",
-    "Jamaica"
-  ],
-  "Administrative_Areas_Annotation": "1996 Atlantic hurricane season"
-}
+[
+  {
+    "Event_ID": "NOFyomx",
+    "Sources": "https://en.wikipedia.org/wiki/1996_Atlantic_hurricane_season",
+    "Event_Names": "1996 Atlantic hurricane season",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Nicaragua"
+        ],
+        "Start_Date": "July 28, 1996",
+        "End_Date": "NULL",
+        "Num": "100,000 homeless",
+        "Annotation": "Hurricane Cesar"
+      },
+      {
+        "Administrative_Areas": [
+          "Costa Rica"
+        ],
+        "Start_Date": "July 28, 1996",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Cesar"
+      },
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "August 20, 1996",
+        "End_Date": "NULL",
+        "Num": "35,000 displaced",
+        "Annotation": "Hurricane Dolly"
+      },
+      {
+        "Administrative_Areas": [
+          "Puerto Rico"
+        ],
+        "Start_Date": "September 10, 1996",
+        "End_Date": "NULL",
+        "Num": "1.4 million without electricity",
+        "Annotation": "Hurricane Hortense"
+      },
+      {
+        "Administrative_Areas": [
+          "Honduras"
+        ],
+        "Start_Date": "November 20, 1996",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Marco"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina"
+        ],
+        "Start_Date": "July 12, 1996",
+        "End_Date": "NULL",
+        "Num": "5,000 homes and buildings damaged",
+        "Annotation": "Hurricane Bertha"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina"
+        ],
+        "Start_Date": "September 5, 1996",
+        "End_Date": "NULL",
+        "Num": "1.7 million without electricity",
+        "Annotation": "Hurricane Fran"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Virginia"
+        ],
+        "Start_Date": "September 5, 1996",
+        "End_Date": "NULL",
+        "Num": "400,000 without electricity",
+        "Annotation": "Hurricane Fran"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New York",
+          "Massachusetts"
+        ],
+        "Start_Date": "September 1, 1996",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Edouard"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New Jersey"
+        ],
+        "Start_Date": "September 1, 1996",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Edouard"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Maine"
+        ],
+        "Start_Date": "September 1, 1996",
+        "End_Date": "NULL",
+        "Num": "1,900 without power",
+        "Annotation": "Hurricane Edouard"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Texas"
+        ],
+        "Start_Date": "October 6, 1996",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm Josephine"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Louisiana"
+        ],
+        "Start_Date": "October 6, 1996",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm Josephine"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida"
+        ],
+        "Start_Date": "October 8, 1996",
+        "End_Date": "NULL",
+        "Num": "3,600 houses flooded",
+        "Annotation": "Tropical Storm Josephine"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Virginia"
+        ],
+        "Start_Date": "October 8, 1996",
+        "End_Date": "NULL",
+        "Num": "26,000 without power",
+        "Annotation": "Tropical Storm Josephine"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New Jersey"
+        ],
+        "Start_Date": "October 8, 1996",
+        "End_Date": "NULL",
+        "Num": "31,000 without power",
+        "Annotation": "Tropical Storm Josephine"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "October 17, 1996",
+        "End_Date": "NULL",
+        "Num": "269,995 evacuated",
+        "Annotation": "Hurricane Lili"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "November 20, 1996",
+        "End_Date": "NULL",
+        "Num": "4,000 homes destroyed",
+        "Annotation": "Hurricane Marco"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Bertha"
+      },
+      {
+        "Administrative_Areas": "Nicaragua",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Cesar"
+      },
+      {
+        "Administrative_Areas": "Costa Rica",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Cesar"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Dolly"
+      },
+      {
+        "Administrative_Areas": "Puerto Rico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Hortense"
+      },
+      {
+        "Administrative_Areas": "Dominican Republic",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Hortense"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Lili"
+      },
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Marco"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "over 5,000 homes and buildings",
+        "Annotation": "Hurricane Bertha"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 10,000 homes",
+        "Annotation": "Hurricane Fran"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3,600 houses",
+        "Annotation": "Tropical Storm Josephine"
+      },
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "more than 2,500 homes",
+        "Annotation": "Hurricane Cesar"
+      },
+      {
+        "Administrative_Area": "Costa Rica",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3,874 homes",
+        "Annotation": "Hurricane Cesar"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Pueblo Viejo"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "hundreds of homes",
+        "Annotation": "Hurricane Dolly"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Tampico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "6,500 homes",
+        "Annotation": "Hurricane Dolly"
+      },
+      {
+        "Administrative_Area": "Puerto Rico",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "11,463 houses",
+        "Annotation": "Hurricane Hortense"
+      },
+      {
+        "Administrative_Area": "Dominican Republic",
+        "Locations": [
+          "Saman\u00e1 Province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Hortense"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "92,542 houses",
+        "Annotation": "Hurricane Lili"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4,000 homes",
+        "Annotation": "Hurricane Marco"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "256 total",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Bertha"
+      },
+      {
+        "Administrative_Areas": "Nicaragua",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "42",
+        "Annotation": "Hurricane Cesar"
+      },
+      {
+        "Administrative_Areas": "Costa Rica",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "39",
+        "Annotation": "Hurricane Cesar"
+      },
+      {
+        "Administrative_Areas": "El Salvador",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "12",
+        "Annotation": "Hurricane Cesar"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "14",
+        "Annotation": "Hurricane Dolly"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Edouard"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "37",
+        "Annotation": "Hurricane Fran"
+      },
+      {
+        "Administrative_Areas": "Puerto Rico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "19",
+        "Annotation": "Hurricane Hortense"
+      },
+      {
+        "Administrative_Areas": "Dominican Republic",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Hurricane Hortense"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm Josephine"
+      },
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "9",
+        "Annotation": "Hurricane Marco"
+      },
+      {
+        "Administrative_Areas": "Dominican Republic",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Hurricane Marco"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "12",
+        "Annotation": "Hurricane Bertha"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Puerto Rico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Hurricane Bertha"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Saint Martin"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Hurricane Bertha"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4",
+        "Annotation": "Hurricane Bertha"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New Jersey"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Hurricane Bertha"
+      },
+      {
+        "Administrative_Area": "Venezuela",
+        "Locations": [
+          "offshore Venezuela"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Hurricane Cesar"
+      },
+      {
+        "Administrative_Area": "Colombia",
+        "Locations": [
+          "Pueblo Bello"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Hurricane Cesar"
+      },
+      {
+        "Administrative_Area": "Colombia",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Hurricane Cesar"
+      },
+      {
+        "Administrative_Area": "Colombia",
+        "Locations": [
+          "Archipelago of San Andr\u00e9s, Providencia and Santa Catalina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "11",
+        "Annotation": "Hurricane Cesar"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Veracruz"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "6",
+        "Annotation": "Hurricane Dolly"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Nuevo Le\u00f3n"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Hurricane Dolly"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Monterrey"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Hurricane Dolly"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New Jersey"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Hurricane Edouard"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "24",
+        "Annotation": "Hurricane Fran"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Virginia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Fran"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "West Virginia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Fran"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Maryland"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Fran"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Ohio"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Fran"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Pennsylvania"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Fran"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Washington, D.C."
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Fran"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Georgia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Tropical Storm Josephine"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Tropical Storm Josephine"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Virginia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Tropical Storm Josephine"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Hurricane Lili"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Maine"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Hurricane Lili"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Nicaragua"
+        ],
+        "Start_Date": "July 28",
+        "End_Date": "NULL",
+        "Num": "100,000",
+        "Annotation": "Hurricane Cesar"
+      },
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "August 23",
+        "End_Date": "NULL",
+        "Num": "35,000",
+        "Annotation": "Hurricane Dolly"
+      },
+      {
+        "Administrative_Areas": [
+          "Cuba"
+        ],
+        "Start_Date": "October 18",
+        "End_Date": "NULL",
+        "Num": "269,995",
+        "Annotation": "Hurricane Lili"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "Nicaragua"
+        ],
+        "Start_Date": "July 28",
+        "End_Date": "NULL",
+        "Num": "100,000",
+        "Annotation": "Hurricane Cesar"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Pueblo Viejo",
+          "San Luis Potos\u00ed",
+          "Tampico"
+        ],
+        "Start_Date": "August 23",
+        "End_Date": "NULL",
+        "Num": "35,000",
+        "Annotation": "Hurricane Dolly"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Cuba"
+        ],
+        "Start_Date": "October 18",
+        "End_Date": "NULL",
+        "Num": "269,995",
+        "Annotation": "Hurricane Lili"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Nicaragua",
+        "Start_Date": "July 28, 1996",
+        "End_Date": "July 29, 1996",
+        "Num": "100,000 homeless",
+        "Annotation": "Hurricane Cesar"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "August 23, 1996",
+        "End_Date": "August 24, 1996",
+        "Num": "35,000 people displaced",
+        "Annotation": "Hurricane Dolly"
+      },
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "November 19, 1996",
+        "End_Date": "November 26, 1996",
+        "Num": "4,000 homes destroyed",
+        "Annotation": "Hurricane Marco"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "October 18, 1996",
+        "End_Date": "October 19, 1996",
+        "Num": "92,542 houses damaged, 6,369 houses destroyed",
+        "Annotation": "Hurricane Lili"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "Bluefields"
+        ],
+        "Start_Date": "July 28, 1996",
+        "End_Date": "July 29, 1996",
+        "Num": "100,000 homeless",
+        "Annotation": "Hurricane Cesar"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Pueblo Viejo",
+          "San Luis Potos\u00ed",
+          "Tampico"
+        ],
+        "Start_Date": "August 23, 1996",
+        "End_Date": "August 24, 1996",
+        "Num": "35,000 people displaced",
+        "Annotation": "Hurricane Dolly"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "November 19, 1996",
+        "End_Date": "November 26, 1996",
+        "Num": "4,000 homes destroyed",
+        "Annotation": "Hurricane Marco"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Matanzas Province"
+        ],
+        "Start_Date": "October 18, 1996",
+        "End_Date": "October 19, 1996",
+        "Num": "92,542 houses damaged, 6,369 houses destroyed",
+        "Annotation": "Hurricane Lili"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Bertha"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Fran"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm Josephine"
+      },
+      {
+        "Administrative_Areas": [
+          "United Kingdom"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Lili"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Bertha"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Fran"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Virginia",
+          "New Jersey"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm Josephine"
+      },
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Ireland",
+          "Great Britain"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Lili"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": [
+          "Cuba"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": [
+          "United Kingdom"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Fran"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Virginia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Annotation": "Hurricane Fran"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Matanzas Province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Lili"
+      },
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Ireland",
+          "Great Britain"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Lili"
+      }
+    ],
+    "Json_Error": "{\n  \"Total_Summary_Damage\": {\n    \"Total_Damage\": \"$6.52 billion\",\n    \"Total_Damage_Unit\": \"USD\",\n    \"Total_Damage_Inflation_Adjusted\": \"No\",\n    \"Total_Damage_Inflation_Adjusted_Year\": \"NULL\",\n    \"Total_Damage_Annotation\": \"Info_Box\"\n  },\n  \"Instance_Per_Administrative_Areas_Damage\": [\n    {\n      \"Administrative_Areas\": \"United States\",\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$5 billion\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Fran\"\n    },\n    {\n      \"Administrative_Areas\": \"Nicaragua\",\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$50.5 million\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Cesar\"\n    },\n    {\n      \"Administrative_Areas\": \"Costa Rica\",\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$151 million\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Cesar\"\n    },\n    {\n      \"Administrative_Areas\": \"Cuba\",\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$362 million\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Lili\"\n    },\n    {\n      \"Administrative_Areas\": \"United Kingdom\",\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$300 million\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Lili\"\n    }\n  ],\n  \"Specific_Instance_Per_Administrative_Area_Damage\": [\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"North Carolina\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$5.1 billion\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Fran\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Raleigh, North Carolina\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$2 billion\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Fran\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Virginia\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$350 million\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Fran\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Puerto Rico\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$153.4 million\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Hortense\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New York\", \"Massachusetts\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$20 million\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Edouard\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"South Carolina\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$40 million\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Fran\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Florida\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$130 million\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Tropical Storm Josephine\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Jersey\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Edouard\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Georgia\", \"North Carolina\", \"Virginia\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Tropical Storm Josephine\"\n    },\n    {\n      \"Administrative_Area\": \"Nicaragua\",\n      \"Locations\": [\"Bluefields\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$50.5 million\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Cesar\"\n    },\n    {\n      \"Administrative_Area\": \"Costa Rica\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$151 million\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Cesar\"\n    },\n    {\n      \"Administrative_Area\": \"Cuba\",\n      \"Locations\": [\"Matanzas Province\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$362 million\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Lili\"\n    },\n    {\n      \"Administrative_Area\": \"United Kingdom\",\n      \"Locations\": [\"Ireland\", \"Great Britain\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"$300 million\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Lili\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"Quintana Roo\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"San Luis Potos\u00ed\", \"Tampico\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"Mazatl\u00e1n\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"Pueblo Viejo\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"Tulum\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Tropical Storm Kyle\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"Yucat\u00e1n Peninsula\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Tropical Storm Kyle\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area\": \"Mexico\",\n      \"Locations\": [\"NULL\"],\n      \"Start_Date\": \"NULL\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Hurricane Dolly\"\n    },\n    {\n      \"Administrative_Area",
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Seasonal summary",
+    "Start_Date": "June 1, 1996",
+    "End_Date": "November 30, 1996",
+    "Time_Annotation": "1996 Atlantic hurricane season",
+    "Administrative_Areas": [
+      "United States",
+      "Nicaragua",
+      "Costa Rica",
+      "El Salvador",
+      "Mexico",
+      "Canada",
+      "Venezuela",
+      "Colombia",
+      "Cura\u00e7ao",
+      "Puerto Rico",
+      "Dominican Republic",
+      "Bahamas",
+      "Turks and Caicos Islands",
+      "Bermuda",
+      "Guadeloupe",
+      "Martinique",
+      "Antigua and Barbuda",
+      "Saint Martin",
+      "Honduras",
+      "Cuba",
+      "Ireland",
+      "United Kingdom",
+      "Jamaica"
+    ],
+    "Administrative_Areas_Annotation": "1996 Atlantic hurricane season"
+  }
+]

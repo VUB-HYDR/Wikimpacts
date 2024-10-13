@@ -1,568 +1,570 @@
-{
-  "Event_ID": "2drZwQt",
-  "Sources": "https://en.wikipedia.org/wiki/Texas%E2%80%93Oklahoma_wildfires_of_2005%E2%80%9306",
-  "Event_Names": "Texas\u2013Oklahoma wildfires of 2005\u201306",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "November 27, 2005",
-      "End_Date": "April 2006",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Texas"
-      ],
-      "Start_Date": "November 27, 2005",
-      "End_Date": "April 2006",
-      "Num": "12 people were killed",
-      "Annotation": "Info_Box"
+[
+  {
+    "Event_ID": "2drZwQt",
+    "Sources": "https://en.wikipedia.org/wiki/Texas%E2%80%93Oklahoma_wildfires_of_2005%E2%80%9306",
+    "Event_Names": "Texas\u2013Oklahoma wildfires of 2005\u201306",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Oklahoma"
-      ],
-      "Start_Date": "November 27, 2005",
-      "End_Date": "April 2006",
-      "Num": "NULL",
-      "Annotation": "Info_Box"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "November 27, 2005",
+        "End_Date": "April 2006",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Texas"
+        ],
+        "Start_Date": "November 27, 2005",
+        "End_Date": "April 2006",
+        "Num": "12 people were killed",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Oklahoma"
+        ],
+        "Start_Date": "November 27, 2005",
+        "End_Date": "April 2006",
+        "Num": "NULL",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Callisburg, Texas",
+          "Walnut Bend, Texas"
+        ],
+        "Start_Date": "December 29, 2005",
+        "End_Date": "NULL",
+        "Num": "One person was killed",
+        "Annotation": "Callisburg, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Cross Plains, Texas"
+        ],
+        "Start_Date": "December 27, 2005",
+        "End_Date": "NULL",
+        "Num": "Two people died",
+        "Annotation": "Cross Plains, Texas"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Callisburg, Texas",
-        "Walnut Bend, Texas"
-      ],
-      "Start_Date": "December 29, 2005",
-      "End_Date": "NULL",
-      "Num": "One person was killed",
-      "Annotation": "Callisburg, Texas"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "November 27, 2005",
+        "End_Date": "April 2006",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Texas"
+        ],
+        "Start_Date": "December 26, 2005",
+        "End_Date": "April 3, 2006",
+        "Num": "423 homes",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Oklahoma"
+        ],
+        "Start_Date": "November 27, 2005",
+        "End_Date": "April 2006",
+        "Num": "869 homes damaged; 300 of them were destroyed",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Callisburg, Texas",
+          "Walnut Bend, Texas"
+        ],
+        "Start_Date": "December 29, 2005",
+        "End_Date": "December 29, 2005",
+        "Num": "10 to 30 buildings",
+        "Annotation": "Callisburg, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Cross Plains, Texas"
+        ],
+        "Start_Date": "December 27, 2005",
+        "End_Date": "December 29, 2005",
+        "Num": "116 homes; 85 single-family homes, 25 mobile homes, 6 apartment units",
+        "Annotation": "Cross Plains, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mustang, Oklahoma"
+        ],
+        "Start_Date": "Unknown",
+        "End_Date": "Unknown",
+        "Num": "Several houses",
+        "Annotation": "Mustang, Oklahoma"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Guthrie, Oklahoma"
+        ],
+        "Start_Date": "January 1, 2006",
+        "End_Date": "January 1, 2006",
+        "Num": "Many buildings",
+        "Annotation": "Guthrie, Oklahoma"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Oklahoma City, Oklahoma"
+        ],
+        "Start_Date": "January 2006",
+        "End_Date": "April 7, 2006",
+        "Num": "Several buildings",
+        "Annotation": "Oklahoma City, Oklahoma"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "NULL",
+      "Total_Deaths_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Cross Plains, Texas"
-      ],
-      "Start_Date": "December 27, 2005",
-      "End_Date": "NULL",
-      "Num": "Two people died",
-      "Annotation": "Cross Plains, Texas"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "November 27, 2005",
-      "End_Date": "April 2006",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Texas"
-      ],
-      "Start_Date": "December 26, 2005",
-      "End_Date": "April 3, 2006",
-      "Num": "423 homes",
-      "Annotation": "Info_Box"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Texas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "12",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Callisburg, Texas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Callisburg, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Cross Plains, Texas"
+        ],
+        "Start_Date": "December 27, 2005",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Cross Plains, Texas"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Oklahoma"
-      ],
-      "Start_Date": "November 27, 2005",
-      "End_Date": "April 2006",
-      "Num": "869 homes damaged; 300 of them were destroyed",
-      "Annotation": "Info_Box"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Cross Plains, Texas"
+        ],
+        "Start_Date": "December 27, 2005",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Cross Plains, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Guthrie, Oklahoma"
+        ],
+        "Start_Date": "January 1, 2006",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Guthrie, Oklahoma"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Oklahoma City, Oklahoma"
+        ],
+        "Start_Date": "April 6, 2006",
+        "End_Date": "April 7, 2006",
+        "Num": "NULL",
+        "Annotation": "Oklahoma City, Oklahoma"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Kingfisher, Oklahoma"
+        ],
+        "Start_Date": "April 6, 2006",
+        "End_Date": "April 7, 2006",
+        "Num": "NULL",
+        "Annotation": "Oklahoma City, Oklahoma"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Cement, Oklahoma",
+          "Reydon, Oklahoma",
+          "Cheyenne, Oklahoma"
+        ],
+        "Start_Date": "April 6, 2006",
+        "End_Date": "April 7, 2006",
+        "Num": "NULL",
+        "Annotation": "Oklahoma City, Oklahoma"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Callisburg, Texas",
-        "Walnut Bend, Texas"
-      ],
-      "Start_Date": "December 29, 2005",
-      "End_Date": "December 29, 2005",
-      "Num": "10 to 30 buildings",
-      "Annotation": "Callisburg, Texas"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "November 27, 2005",
+        "End_Date": "April 2006",
+        "Num": "NULL",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Texas"
+        ],
+        "Start_Date": "December 26, 2005",
+        "End_Date": "April 3, 2006",
+        "Num": "423 homes destroyed",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Oklahoma"
+        ],
+        "Start_Date": "November 27, 2005",
+        "End_Date": "April 2006",
+        "Num": "869 homes damaged; 300 of them were destroyed",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Callisburg, Texas",
+          "Walnut Bend, Texas"
+        ],
+        "Start_Date": "December 29, 2005",
+        "End_Date": "December 29, 2005",
+        "Num": "10 to 30 buildings destroyed",
+        "Annotation": "Callisburg, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Cross Plains, Texas"
+        ],
+        "Start_Date": "December 27, 2005",
+        "End_Date": "December 29, 2005",
+        "Num": "116 homes destroyed; 36 homes damaged",
+        "Annotation": "Cross Plains, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mustang, Oklahoma"
+        ],
+        "Start_Date": "January 1, 2006",
+        "End_Date": "January 1, 2006",
+        "Num": "Several houses burned",
+        "Annotation": "Mustang, Oklahoma"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Guthrie, Oklahoma"
+        ],
+        "Start_Date": "January 1, 2006",
+        "End_Date": "January 1, 2006",
+        "Num": "Many buildings burned",
+        "Annotation": "Guthrie, Oklahoma"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Oklahoma City, Oklahoma"
+        ],
+        "Start_Date": "January 2006",
+        "End_Date": "April 7, 2006",
+        "Num": "Several buildings consumed; six homes burned",
+        "Annotation": "Oklahoma City, Oklahoma"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Cross Plains, Texas"
-      ],
-      "Start_Date": "December 27, 2005",
-      "End_Date": "December 29, 2005",
-      "Num": "116 homes; 85 single-family homes, 25 mobile homes, 6 apartment units",
-      "Annotation": "Cross Plains, Texas"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Callisburg, Texas",
+          "Cross Plains, Texas",
+          "Mustang, Oklahoma",
+          "Guthrie, Oklahoma",
+          "Oklahoma City, Oklahoma"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mustang, Oklahoma"
-      ],
-      "Start_Date": "Unknown",
-      "End_Date": "Unknown",
-      "Num": "Several houses",
-      "Annotation": "Mustang, Oklahoma"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "November 27, 2005",
+        "End_Date": "April 2006",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Callisburg, Texas"
+        ],
+        "Start_Date": "November 27, 2005",
+        "End_Date": "April 2006",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Callisburg, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Cross Plains, Texas"
+        ],
+        "Start_Date": "November 27, 2005",
+        "End_Date": "April 2006",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Cross Plains, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mustang, Oklahoma"
+        ],
+        "Start_Date": "November 27, 2005",
+        "End_Date": "April 2006",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Mustang, Oklahoma"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Guthrie, Oklahoma"
+        ],
+        "Start_Date": "November 27, 2005",
+        "End_Date": "April 2006",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Guthrie, Oklahoma"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Oklahoma City, Oklahoma"
+        ],
+        "Start_Date": "November 27, 2005",
+        "End_Date": "April 2006",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Oklahoma City, Oklahoma"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "NULL",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Guthrie, Oklahoma"
-      ],
-      "Start_Date": "January 1, 2006",
-      "End_Date": "January 1, 2006",
-      "Num": "Many buildings",
-      "Annotation": "Guthrie, Oklahoma"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Oklahoma City, Oklahoma"
-      ],
-      "Start_Date": "January 2006",
-      "End_Date": "April 7, 2006",
-      "Num": "Several buildings",
-      "Annotation": "Oklahoma City, Oklahoma"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "NULL",
-    "Total_Deaths_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Texas"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "12",
-      "Annotation": "Info_Box"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Callisburg, Texas"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Callisburg, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Cross Plains, Texas"
-      ],
-      "Start_Date": "December 27, 2005",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "Cross Plains, Texas"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Cross Plains, Texas"
-      ],
-      "Start_Date": "December 27, 2005",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Cross Plains, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Guthrie, Oklahoma"
-      ],
-      "Start_Date": "January 1, 2006",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Guthrie, Oklahoma"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Oklahoma City, Oklahoma"
-      ],
-      "Start_Date": "April 6, 2006",
-      "End_Date": "April 7, 2006",
-      "Num": "NULL",
-      "Annotation": "Oklahoma City, Oklahoma"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Kingfisher, Oklahoma"
-      ],
-      "Start_Date": "April 6, 2006",
-      "End_Date": "April 7, 2006",
-      "Num": "NULL",
-      "Annotation": "Oklahoma City, Oklahoma"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Cement, Oklahoma",
-        "Reydon, Oklahoma",
-        "Cheyenne, Oklahoma"
-      ],
-      "Start_Date": "April 6, 2006",
-      "End_Date": "April 7, 2006",
-      "Num": "NULL",
-      "Annotation": "Oklahoma City, Oklahoma"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "November 27, 2005",
-      "End_Date": "April 2006",
-      "Num": "NULL",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Texas"
-      ],
-      "Start_Date": "December 26, 2005",
-      "End_Date": "April 3, 2006",
-      "Num": "423 homes destroyed",
-      "Annotation": "Info_Box"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Oklahoma"
-      ],
-      "Start_Date": "November 27, 2005",
-      "End_Date": "April 2006",
-      "Num": "869 homes damaged; 300 of them were destroyed",
-      "Annotation": "Info_Box"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Callisburg, Texas",
-        "Walnut Bend, Texas"
-      ],
-      "Start_Date": "December 29, 2005",
-      "End_Date": "December 29, 2005",
-      "Num": "10 to 30 buildings destroyed",
-      "Annotation": "Callisburg, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Cross Plains, Texas"
-      ],
-      "Start_Date": "December 27, 2005",
-      "End_Date": "December 29, 2005",
-      "Num": "116 homes destroyed; 36 homes damaged",
-      "Annotation": "Cross Plains, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mustang, Oklahoma"
-      ],
-      "Start_Date": "January 1, 2006",
-      "End_Date": "January 1, 2006",
-      "Num": "Several houses burned",
-      "Annotation": "Mustang, Oklahoma"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Guthrie, Oklahoma"
-      ],
-      "Start_Date": "January 1, 2006",
-      "End_Date": "January 1, 2006",
-      "Num": "Many buildings burned",
-      "Annotation": "Guthrie, Oklahoma"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Oklahoma City, Oklahoma"
-      ],
-      "Start_Date": "January 2006",
-      "End_Date": "April 7, 2006",
-      "Num": "Several buildings consumed; six homes burned",
-      "Annotation": "Oklahoma City, Oklahoma"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Callisburg, Texas",
-        "Cross Plains, Texas",
-        "Mustang, Oklahoma",
-        "Guthrie, Oklahoma",
-        "Oklahoma City, Oklahoma"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "November 27, 2005",
-      "End_Date": "April 2006",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Callisburg, Texas"
-      ],
-      "Start_Date": "November 27, 2005",
-      "End_Date": "April 2006",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Callisburg, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Cross Plains, Texas"
-      ],
-      "Start_Date": "November 27, 2005",
-      "End_Date": "April 2006",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Cross Plains, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mustang, Oklahoma"
-      ],
-      "Start_Date": "November 27, 2005",
-      "End_Date": "April 2006",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Mustang, Oklahoma"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Guthrie, Oklahoma"
-      ],
-      "Start_Date": "November 27, 2005",
-      "End_Date": "April 2006",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Guthrie, Oklahoma"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Oklahoma City, Oklahoma"
-      ],
-      "Start_Date": "November 27, 2005",
-      "End_Date": "April 2006",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Oklahoma City, Oklahoma"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "NULL",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "NULL",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "November 27, 2005",
-      "End_Date": "April 2006",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Callisburg, Texas",
-        "Walnut Bend, Texas"
-      ],
-      "Start_Date": "November 27, 2005",
-      "End_Date": "April 2006",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Callisburg, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Cross Plains, Texas"
-      ],
-      "Start_Date": "December 27, 2005",
-      "End_Date": "December 29, 2005",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Cross Plains, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mustang, Oklahoma"
-      ],
-      "Start_Date": "November 27, 2005",
-      "End_Date": "April 2006",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Mustang, Oklahoma"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Guthrie, Oklahoma"
-      ],
-      "Start_Date": "January 1, 2006",
-      "End_Date": "January 1, 2006",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Guthrie, Oklahoma"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Oklahoma City, Oklahoma"
-      ],
-      "Start_Date": "January 2006",
-      "End_Date": "April 7, 2006",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Oklahoma City, Oklahoma"
-    }
-  ],
-  "Main_Event": "Wildfire",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wildfire",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "November 27, 2005",
-  "End_Date": "April 2006",
-  "Time_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "November 27, 2005",
+        "End_Date": "April 2006",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Callisburg, Texas",
+          "Walnut Bend, Texas"
+        ],
+        "Start_Date": "November 27, 2005",
+        "End_Date": "April 2006",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Callisburg, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Cross Plains, Texas"
+        ],
+        "Start_Date": "December 27, 2005",
+        "End_Date": "December 29, 2005",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Cross Plains, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mustang, Oklahoma"
+        ],
+        "Start_Date": "November 27, 2005",
+        "End_Date": "April 2006",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Mustang, Oklahoma"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Guthrie, Oklahoma"
+        ],
+        "Start_Date": "January 1, 2006",
+        "End_Date": "January 1, 2006",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Guthrie, Oklahoma"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Oklahoma City, Oklahoma"
+        ],
+        "Start_Date": "January 2006",
+        "End_Date": "April 7, 2006",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Oklahoma City, Oklahoma"
+      }
+    ],
+    "Main_Event": "Wildfire",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wildfire",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "November 27, 2005",
+    "End_Date": "April 2006",
+    "Time_Annotation": "Info_Box"
+  }
+]

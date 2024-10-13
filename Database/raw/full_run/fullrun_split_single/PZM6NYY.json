@@ -1,378 +1,380 @@
-{
-  "Event_ID": "PZM6NYY",
-  "Sources": "https://en.wikipedia.org/wiki/Typhoon_Herb",
-  "Event_Names": "Typhoon Herb",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Taiwan"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "at least 51 people were killed and 22 went missing",
-      "Annotation": "Taiwan"
+[
+  {
+    "Event_ID": "PZM6NYY",
+    "Sources": "https://en.wikipedia.org/wiki/Typhoon_Herb",
+    "Event_Names": "Typhoon Herb",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": [
-        "China"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "over 13,000 people were injured or killed, including 779 deaths",
-      "Annotation": "Mainland China"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Ishigaki Island"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Ry\u016bky\u016b Islands"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Taiwan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 51 people were killed and 22 went missing",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Areas": [
+          "China"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "over 13,000 people were injured or killed, including 779 deaths",
+        "Annotation": "Mainland China"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Ishigaki Island"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Ry\u016bky\u016b Islands"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Okinawa"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Ry\u016bky\u016b Islands"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Okinawa"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Ry\u016bky\u016b Islands"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Japan",
-      "Start_Date": "July 31, 1996",
-      "End_Date": "July 31, 1996",
-      "Num": "NULL",
-      "Annotation": "Ry\u016bky\u016b Islands"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "July 31, 1996",
+        "End_Date": "July 31, 1996",
+        "Num": "NULL",
+        "Annotation": "Ry\u016bky\u016b Islands"
+      },
+      {
+        "Administrative_Areas": "Taiwan",
+        "Start_Date": "July 31, 1996",
+        "End_Date": "July 31, 1996",
+        "Num": "NULL",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "July 31, 1996",
+        "End_Date": "August 3, 1996",
+        "Num": "NULL",
+        "Annotation": "Mainland China"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Ishigaki Island"
+        ],
+        "Start_Date": "July 31, 1996",
+        "End_Date": "July 31, 1996",
+        "Num": "one home was destroyed and eighteen others were damaged",
+        "Annotation": "Ry\u016bky\u016b Islands"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "284 total",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": "Taiwan",
-      "Start_Date": "July 31, 1996",
-      "End_Date": "July 31, 1996",
-      "Num": "NULL",
-      "Annotation": "Taiwan"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "Taiwan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 51",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Areas": [
+          "China"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "779",
+        "Annotation": "Mainland China"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 51",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "779",
+        "Annotation": "Mainland China"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "China",
-      "Start_Date": "July 31, 1996",
-      "End_Date": "August 3, 1996",
-      "Num": "NULL",
-      "Annotation": "Mainland China"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Ishigaki Island"
-      ],
-      "Start_Date": "July 31, 1996",
-      "End_Date": "July 31, 1996",
-      "Num": "one home was destroyed and eighteen others were damaged",
-      "Annotation": "Ry\u016bky\u016b Islands"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "284 total",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "Taiwan"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "at least 51",
-      "Annotation": "Taiwan"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Ryukyu Islands"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Ry\u016bky\u016b Islands"
+      },
+      {
+        "Administrative_Areas": [
+          "Taiwan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Areas": [
+          "China"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mainland China"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Ryukyu Islands",
+        "Locations": [
+          "Iriomote Island",
+          "Yonaguni",
+          "Ishigaki Island",
+          "Okinawa"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Ry\u016bky\u016b Islands"
+      },
+      {
+        "Administrative_Area": "Taiwan",
+        "Locations": [
+          "Taipei"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mainland China"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": [
-        "China"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "779",
-      "Annotation": "Mainland China"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "at least 51",
-      "Annotation": "Taiwan"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Japan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Ry\u016bky\u016b Islands"
+      },
+      {
+        "Administrative_Areas": [
+          "Taiwan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Taiwan"
+      },
+      {
+        "Administrative_Areas": [
+          "China"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mainland China"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Ishigaki Island"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "one home was destroyed and eighteen others were damaged",
+        "Annotation": "Ry\u016bky\u016b Islands"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "779",
-      "Annotation": "Mainland China"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Ryukyu Islands"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Ry\u016bky\u016b Islands"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "over 13,000",
+        "Annotation": "Mainland China"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "over 13,000",
+        "Annotation": "Mainland China"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": [
-        "Taiwan"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Taiwan"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Ryukyu Islands",
+          "Taiwan",
+          "China"
+        ],
+        "Start_Date": "July 21, 1996",
+        "End_Date": "August 3, 1996",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Ishigaki Island"
+        ],
+        "Start_Date": "July 31, 1996",
+        "End_Date": "July 31, 1996",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Ry\u016bky\u016b Islands"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$5 billion",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": [
-        "China"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mainland China"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Ryukyu Islands",
-      "Locations": [
-        "Iriomote Island",
-        "Yonaguni",
-        "Ishigaki Island",
-        "Okinawa"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Ry\u016bky\u016b Islands"
-    },
-    {
-      "Administrative_Area": "Taiwan",
-      "Locations": [
-        "Taipei"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Taiwan"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mainland China"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "Japan"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Ry\u016bky\u016b Islands"
-    },
-    {
-      "Administrative_Areas": [
-        "Taiwan"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Taiwan"
-    },
-    {
-      "Administrative_Areas": [
-        "China"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mainland China"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Ishigaki Island"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "one home was destroyed and eighteen others were damaged",
-      "Annotation": "Ry\u016bky\u016b Islands"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "China",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "over 13,000",
-      "Annotation": "Mainland China"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "over 13,000",
-      "Annotation": "Mainland China"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Ryukyu Islands",
-        "Taiwan",
-        "China"
-      ],
-      "Start_Date": "July 21, 1996",
-      "End_Date": "August 3, 1996",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Ishigaki Island"
-      ],
-      "Start_Date": "July 31, 1996",
-      "End_Date": "July 31, 1996",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Ry\u016bky\u016b Islands"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$5 billion",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "China"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$5 billion",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Mainland China"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Ry\u016bky\u016b Islands",
-        "Iriomote Island",
-        "Yonaguni",
-        "Ishigaki Island",
-        "Okinawa"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "\u00a5667 million",
-      "Num_Unit": "JPY",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Ry\u016bky\u016b Islands"
-    },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Ishigaki Island"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "\u00a5630 million",
-      "Num_Unit": "JPY",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Ry\u016bky\u016b Islands"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Taiwan|Mainland China",
-  "Start_Date": "July 21, 1996",
-  "End_Date": "August 3, 1996",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Japan",
-    "Taiwan",
-    "China"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "China"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$5 billion",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Mainland China"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Ry\u016bky\u016b Islands",
+          "Iriomote Island",
+          "Yonaguni",
+          "Ishigaki Island",
+          "Okinawa"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "\u00a5667 million",
+        "Num_Unit": "JPY",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Ry\u016bky\u016b Islands"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Ishigaki Island"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "\u00a5630 million",
+        "Num_Unit": "JPY",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Ry\u016bky\u016b Islands"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Taiwan|Mainland China",
+    "Start_Date": "July 21, 1996",
+    "End_Date": "August 3, 1996",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Japan",
+      "Taiwan",
+      "China"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

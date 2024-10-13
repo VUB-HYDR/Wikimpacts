@@ -1,601 +1,603 @@
-{
-  "Event_ID": "ApFcnT0",
-  "Sources": "https://en.wikipedia.org/wiki/Storm_Ciar%C3%A1n",
-  "Event_Names": "Storm Ciar\u221a\u00b0n",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": "France",
-      "Start_Date": "29 October 2023",
-      "End_Date": "4 November 2023",
-      "Num": "1.2 million French households",
-      "Annotation": "Storm Ciar\u221a\u00b0n"
+[
+  {
+    "Event_ID": "ApFcnT0",
+    "Sources": "https://en.wikipedia.org/wiki/Storm_Ciar%C3%A1n",
+    "Event_Names": "Storm Ciar\u221a\u00b0n",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "United Kingdom",
-      "Start_Date": "29 October 2023",
-      "End_Date": "4 November 2023",
-      "Num": "4,000 properties in Cornwall",
-      "Annotation": "The event"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "France",
+        "Start_Date": "29 October 2023",
+        "End_Date": "4 November 2023",
+        "Num": "1.2 million French households",
+        "Annotation": "Storm Ciar\u221a\u00b0n"
+      },
+      {
+        "Administrative_Areas": "United Kingdom",
+        "Start_Date": "29 October 2023",
+        "End_Date": "4 November 2023",
+        "Num": "4,000 properties in Cornwall",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Areas": "Netherlands",
+        "Start_Date": "29 October 2023",
+        "End_Date": "4 November 2023",
+        "Num": "NULL",
+        "Annotation": "The event"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Cornwall"
+        ],
+        "Start_Date": "29 October 2023",
+        "End_Date": "4 November 2023",
+        "Num": "4,000 properties",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Devon"
+        ],
+        "Start_Date": "29 October 2023",
+        "End_Date": "4 November 2023",
+        "Num": "250 schools",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Dorset"
+        ],
+        "Start_Date": "29 October 2023",
+        "End_Date": "4 November 2023",
+        "Num": "NULL",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Tenby"
+        ],
+        "Start_Date": "29 October 2023",
+        "End_Date": "4 November 2023",
+        "Num": "NULL",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "New Forest"
+        ],
+        "Start_Date": "29 October 2023",
+        "End_Date": "4 November 2023",
+        "Num": "NULL",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Area": "Netherlands",
+        "Locations": [
+          "Breda"
+        ],
+        "Start_Date": "29 October 2023",
+        "End_Date": "4 November 2023",
+        "Num": "NULL",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Netherlands",
-      "Start_Date": "29 October 2023",
-      "End_Date": "4 November 2023",
-      "Num": "NULL",
-      "Annotation": "The event"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Cornwall"
-      ],
-      "Start_Date": "29 October 2023",
-      "End_Date": "4 November 2023",
-      "Num": "4,000 properties",
-      "Annotation": "The event"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "United Kingdom",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Areas": "France",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Areas": "Netherlands",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Aftermath"
+      },
+      {
+        "Administrative_Areas": "Italy",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "The event"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Cornwall",
+          "Devon",
+          "Dorset",
+          "Tenby",
+          "New Forest"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4,000 properties",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Area": "France",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1.2 million French households",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Area": "Netherlands",
+        "Locations": [
+          "Breda"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Aftermath"
+      },
+      {
+        "Administrative_Area": "Italy",
+        "Locations": [
+          "Tuscany",
+          "Veneto",
+          "Campobasso",
+          "Molise",
+          "Abruzzo",
+          "Rome",
+          "Campania",
+          "Sardinia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "The event"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "21",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Devon"
-      ],
-      "Start_Date": "29 October 2023",
-      "End_Date": "4 November 2023",
-      "Num": "250 schools",
-      "Annotation": "The event"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Italy",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "eleven",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Areas": "France",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "four",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Areas": "Germany",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "one",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Areas": "Belgium",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "two",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Areas": "Spain",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "one",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Areas": "Netherlands",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "one",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Areas": "Albania",
+        "Start_Date": "3 November",
+        "End_Date": "3 November",
+        "Num": "one",
+        "Annotation": "The event"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Germany",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Area": "Belgium",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Area": "Spain",
+        "Locations": [
+          "Madrid"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Area": "Netherlands",
+        "Locations": [
+          "Venray"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Area": "Albania",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "3 November",
+        "End_Date": "3 November",
+        "Num": "1",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Area": "France",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Area": "Italy",
+        "Locations": [
+          "Tuscany",
+          "Veneto",
+          "Belluno",
+          "Campobasso",
+          "Molise",
+          "Abruzzo",
+          "Rome",
+          "Campania",
+          "Sardinia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "11",
+        "Annotation": "The event"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Dorset"
-      ],
-      "Start_Date": "29 October 2023",
-      "End_Date": "4 November 2023",
-      "Num": "NULL",
-      "Annotation": "The event"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Wales",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Areas": "Netherlands",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Wales",
+        "Locations": [
+          "Tenby"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Area": "Netherlands",
+        "Locations": [
+          "Breda"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Tenby"
-      ],
-      "Start_Date": "29 October 2023",
-      "End_Date": "4 November 2023",
-      "Num": "NULL",
-      "Annotation": "The event"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "United Kingdom",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Areas": "France",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Areas": "Netherlands",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Cornwall"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4,000 properties were left without power",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Devon"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "250 schools were closed",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Dorset"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Freshwater Beach Holiday Park at Burton Bradstock was destroyed",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Tenby, Wales"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "A caravan park was evacuated due to flooding",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "New Forest"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Moyles Court School was closed due to flooding",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Area": "France",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1.2 million French households were left without electricity",
+        "Annotation": "Storm Ciar\u221a\u00b0n"
+      },
+      {
+        "Administrative_Area": "Netherlands",
+        "Locations": [
+          "Breda"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "An apartment complex was evacuated due to flooding",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "New Forest"
-      ],
-      "Start_Date": "29 October 2023",
-      "End_Date": "4 November 2023",
-      "Num": "NULL",
-      "Annotation": "The event"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Netherlands",
-      "Locations": [
-        "Breda"
-      ],
-      "Start_Date": "29 October 2023",
-      "End_Date": "4 November 2023",
-      "Num": "NULL",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "United Kingdom",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "The event"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "Netherlands",
+        "Start_Date": "29 October 2023",
+        "End_Date": "4 November 2023",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Netherlands",
+        "Locations": [
+          "Breda"
+        ],
+        "Start_Date": "29 October 2023",
+        "End_Date": "4 November 2023",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "NULL",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "France",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "The event"
-    },
-    {
-      "Administrative_Areas": "Netherlands",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Aftermath"
-    },
-    {
-      "Administrative_Areas": "Italy",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "The event"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Cornwall",
-        "Devon",
-        "Dorset",
-        "Tenby",
-        "New Forest"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "4,000 properties",
-      "Annotation": "The event"
-    },
-    {
-      "Administrative_Area": "France",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1.2 million French households",
-      "Annotation": "The event"
-    },
-    {
-      "Administrative_Area": "Netherlands",
-      "Locations": [
-        "Breda"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Aftermath"
-    },
-    {
-      "Administrative_Area": "Italy",
-      "Locations": [
-        "Tuscany",
-        "Veneto",
-        "Campobasso",
-        "Molise",
-        "Abruzzo",
-        "Rome",
-        "Campania",
-        "Sardinia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "The event"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "21",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Italy",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "eleven",
-      "Annotation": "The event"
-    },
-    {
-      "Administrative_Areas": "France",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "four",
-      "Annotation": "The event"
-    },
-    {
-      "Administrative_Areas": "Germany",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "one",
-      "Annotation": "The event"
-    },
-    {
-      "Administrative_Areas": "Belgium",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "two",
-      "Annotation": "The event"
-    },
-    {
-      "Administrative_Areas": "Spain",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "one",
-      "Annotation": "The event"
-    },
-    {
-      "Administrative_Areas": "Netherlands",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "one",
-      "Annotation": "The event"
-    },
-    {
-      "Administrative_Areas": "Albania",
-      "Start_Date": "3 November",
-      "End_Date": "3 November",
-      "Num": "one",
-      "Annotation": "The event"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Germany",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "The event"
-    },
-    {
-      "Administrative_Area": "Belgium",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "The event"
-    },
-    {
-      "Administrative_Area": "Spain",
-      "Locations": [
-        "Madrid"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "The event"
-    },
-    {
-      "Administrative_Area": "Netherlands",
-      "Locations": [
-        "Venray"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "The event"
-    },
-    {
-      "Administrative_Area": "Albania",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "3 November",
-      "End_Date": "3 November",
-      "Num": "1",
-      "Annotation": "The event"
-    },
-    {
-      "Administrative_Area": "France",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "4",
-      "Annotation": "The event"
-    },
-    {
-      "Administrative_Area": "Italy",
-      "Locations": [
-        "Tuscany",
-        "Veneto",
-        "Belluno",
-        "Campobasso",
-        "Molise",
-        "Abruzzo",
-        "Rome",
-        "Campania",
-        "Sardinia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "11",
-      "Annotation": "The event"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": "Wales",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "The event"
-    },
-    {
-      "Administrative_Areas": "Netherlands",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Wales",
-      "Locations": [
-        "Tenby"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "The event"
-    },
-    {
-      "Administrative_Area": "Netherlands",
-      "Locations": [
-        "Breda"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "United Kingdom",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "The event"
-    },
-    {
-      "Administrative_Areas": "France",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "The event"
-    },
-    {
-      "Administrative_Areas": "Netherlands",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Cornwall"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "4,000 properties were left without power",
-      "Annotation": "The event"
-    },
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Devon"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "250 schools were closed",
-      "Annotation": "The event"
-    },
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Dorset"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Freshwater Beach Holiday Park at Burton Bradstock was destroyed",
-      "Annotation": "The event"
-    },
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Tenby, Wales"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "A caravan park was evacuated due to flooding",
-      "Annotation": "The event"
-    },
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "New Forest"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Moyles Court School was closed due to flooding",
-      "Annotation": "The event"
-    },
-    {
-      "Administrative_Area": "France",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1.2 million French households were left without electricity",
-      "Annotation": "Storm Ciar\u221a\u00b0n"
-    },
-    {
-      "Administrative_Area": "Netherlands",
-      "Locations": [
-        "Breda"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "An apartment complex was evacuated due to flooding",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "NULL",
-      "Locations": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": "Netherlands",
-      "Start_Date": "29 October 2023",
-      "End_Date": "4 November 2023",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Netherlands",
-      "Locations": [
-        "Breda"
-      ],
-      "Start_Date": "29 October 2023",
-      "End_Date": "4 November 2023",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "NULL",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "NULL",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": "Netherlands",
-      "Start_Date": "29 October 2023",
-      "End_Date": "4 November 2023",
-      "Num": "more than \u20ac15 million",
-      "Num_Unit": "EUR",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Cornwall"
-      ],
-      "Start_Date": "29 October 2023",
-      "End_Date": "4 November 2023",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "The event"
-    },
-    {
-      "Administrative_Area": "Italy",
-      "Locations": [
-        "Tuscany",
-        "Veneto",
-        "Campobasso",
-        "Molise",
-        "Abruzzo",
-        "Rome",
-        "Campania",
-        "Sardinia"
-      ],
-      "Start_Date": "29 October 2023",
-      "End_Date": "4 November 2023",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "The event"
-    },
-    {
-      "Administrative_Area": "Netherlands",
-      "Locations": [
-        "Breda"
-      ],
-      "Start_Date": "29 October 2023",
-      "End_Date": "4 November 2023",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Main_Event": "Extratropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood|Hail",
-  "Hazards_Annotation": "Info_Box|Prelude|The event",
-  "Start_Date": "29 October 2023",
-  "End_Date": "4 November 2023",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Ireland",
-    "United Kingdom",
-    "Benelux",
-    "France",
-    "Spain",
-    "Czech Republic",
-    "Italy",
-    "Channel Islands",
-    "Germany",
-    "Albania"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Netherlands",
+        "Start_Date": "29 October 2023",
+        "End_Date": "4 November 2023",
+        "Num": "more than \u20ac15 million",
+        "Num_Unit": "EUR",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Cornwall"
+        ],
+        "Start_Date": "29 October 2023",
+        "End_Date": "4 November 2023",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Area": "Italy",
+        "Locations": [
+          "Tuscany",
+          "Veneto",
+          "Campobasso",
+          "Molise",
+          "Abruzzo",
+          "Rome",
+          "Campania",
+          "Sardinia"
+        ],
+        "Start_Date": "29 October 2023",
+        "End_Date": "4 November 2023",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "The event"
+      },
+      {
+        "Administrative_Area": "Netherlands",
+        "Locations": [
+          "Breda"
+        ],
+        "Start_Date": "29 October 2023",
+        "End_Date": "4 November 2023",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Main_Event": "Extratropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood|Hail",
+    "Hazards_Annotation": "Info_Box|Prelude|The event",
+    "Start_Date": "29 October 2023",
+    "End_Date": "4 November 2023",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Ireland",
+      "United Kingdom",
+      "Benelux",
+      "France",
+      "Spain",
+      "Czech Republic",
+      "Italy",
+      "Channel Islands",
+      "Germany",
+      "Albania"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

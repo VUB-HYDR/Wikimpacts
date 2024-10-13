@@ -1,541 +1,543 @@
-{
-  "Event_ID": "khNTE1b",
-  "Sources": "https://en.wikipedia.org/wiki/Cyclone_Elita",
-  "Event_Names": "Cyclone Elita",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": "Madagascar",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "55,983 people homeless",
-      "Annotation": "Madagascar"
+[
+  {
+    "Event_ID": "khNTE1b",
+    "Sources": "https://en.wikipedia.org/wiki/Cyclone_Elita",
+    "Event_Names": "Cyclone Elita",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Malawi",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Preparations and impact"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Madagascar",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "55,983 people homeless",
+        "Annotation": "Madagascar"
+      },
+      {
+        "Administrative_Areas": "Malawi",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Areas": "Mozambique",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Malawi",
+        "Locations": [
+          "Karonga district"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "More than 80 houses and a clinic destroyed",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Mozambique",
+        "Locations": [
+          "Nampula province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Over 2,000 buildings destroyed",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Mozambique",
+        "Locations": [
+          "Nampula city"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "A school badly damaged",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Mozambique",
+        "Locations": [
+          "Nacala-a-Velha"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Some residents had to spend the night outside",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Madagascar",
+        "Locations": [
+          "Mahajanga and Toliara provinces"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "55,983 people homeless",
+        "Annotation": "Madagascar"
+      },
+      {
+        "Administrative_Area": "Madagascar",
+        "Locations": [
+          "Mahajanga Province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "90 percent of the buildings damaged",
+        "Annotation": "Madagascar"
+      },
+      {
+        "Administrative_Area": "Madagascar",
+        "Locations": [
+          "Morondava"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Much of the city flooded",
+        "Annotation": "Madagascar"
+      },
+      {
+        "Administrative_Area": "Madagascar",
+        "Locations": [
+          "Maintirano"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Madagascar"
+      },
+      {
+        "Administrative_Area": "Madagascar",
+        "Locations": [
+          "Soavinandriana"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Madagascar"
+      },
+      {
+        "Administrative_Area": "Madagascar",
+        "Locations": [
+          "Antananarivo"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Madagascar"
+      },
+      {
+        "Administrative_Area": "Madagascar",
+        "Locations": [
+          "Midongy Atismo"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "80% of rice crop flooded",
+        "Annotation": "Madagascar"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Mozambique",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Malawi",
-      "Locations": [
-        "Karonga district"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "More than 80 houses and a clinic destroyed",
-      "Annotation": "Preparations and impact"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "Madagascar"
+        ],
+        "Start_Date": "January 28, 2004",
+        "End_Date": "February 3, 2004",
+        "Num": "12,408 homes",
+        "Annotation": "Madagascar"
+      },
+      {
+        "Administrative_Areas": [
+          "Mozambique"
+        ],
+        "Start_Date": "January 29, 2004",
+        "End_Date": "NULL",
+        "Num": "over 2,000 buildings",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Areas": [
+          "Malawi"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "more than 80 houses and a clinic",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Madagascar",
+        "Locations": [
+          "Mahajanga Province",
+          "Toliara Province",
+          "Antananarivo",
+          "Morondava",
+          "Maintirano",
+          "Soavinandriana",
+          "Midongy Atismo"
+        ],
+        "Start_Date": "January 28, 2004",
+        "End_Date": "February 3, 2004",
+        "Num": "NULL",
+        "Annotation": "Madagascar"
+      },
+      {
+        "Administrative_Area": "Mozambique",
+        "Locations": [
+          "Nampula",
+          "Nacala-a-Velha"
+        ],
+        "Start_Date": "January 29, 2004",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Malawi",
+        "Locations": [
+          "Karonga district"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "more than 80 houses and a clinic",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "33",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Mozambique",
-      "Locations": [
-        "Nampula province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Over 2,000 buildings destroyed",
-      "Annotation": "Preparations and impact"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Madagascar",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "33",
+        "Annotation": "Madagascar"
+      },
+      {
+        "Administrative_Areas": "Mayotte",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Madagascar",
+        "Locations": [
+          "Mahajanga"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Madagascar"
+      },
+      {
+        "Administrative_Area": "Mayotte",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "55,983",
+      "Total_Displaced_Annotation": "Madagascar"
     },
-    {
-      "Administrative_Area": "Mozambique",
-      "Locations": [
-        "Nampula city"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "A school badly damaged",
-      "Annotation": "Preparations and impact"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Madagascar",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "55,983",
+        "Annotation": "Madagascar"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Madagascar",
+        "Locations": [
+          "Mahajanga",
+          "Toliara"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5,000",
+        "Annotation": "Madagascar"
+      },
+      {
+        "Administrative_Area": "Madagascar",
+        "Locations": [
+          "stadiums",
+          "remaining standing buildings"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "7,000",
+        "Annotation": "Madagascar"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "55,983",
+      "Total_Homeless_Annotation": "Madagascar"
     },
-    {
-      "Administrative_Area": "Mozambique",
-      "Locations": [
-        "Nacala-a-Velha"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Some residents had to spend the night outside",
-      "Annotation": "Preparations and impact"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Madagascar"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "55,983",
+        "Annotation": "Madagascar"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Madagascar",
+        "Locations": [
+          "Mahajanga",
+          "Toliara"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Madagascar"
+      },
+      {
+        "Administrative_Area": "Madagascar",
+        "Locations": [
+          "vicinity of its first landfall"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5,000",
+        "Annotation": "Madagascar"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "886",
+      "Total_Injuries_Annotation": "Madagascar"
     },
-    {
-      "Administrative_Area": "Madagascar",
-      "Locations": [
-        "Mahajanga and Toliara provinces"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "55,983 people homeless",
-      "Annotation": "Madagascar"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Madagascar",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "886",
+        "Annotation": "Madagascar"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Madagascar",
+        "Locations": [
+          "Mahajanga",
+          "Toliara"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Madagascar"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Madagascar",
-      "Locations": [
-        "Mahajanga Province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "90 percent of the buildings damaged",
-      "Annotation": "Madagascar"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Madagascar",
+          "Mozambique",
+          "Malawi"
+        ],
+        "Start_Date": "January 26, 2004",
+        "End_Date": "February 13, 2004",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Madagascar",
+        "Locations": [
+          "Mahajanga",
+          "Toliara",
+          "Antananarivo",
+          "Morondava",
+          "Maintirano",
+          "Soavinandriana",
+          "Midongy Atismo"
+        ],
+        "Start_Date": "January 26, 2004",
+        "End_Date": "February 13, 2004",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Madagascar"
+      },
+      {
+        "Administrative_Area": "Mozambique",
+        "Locations": [
+          "Nampula",
+          "Nacala-a-Velha"
+        ],
+        "Start_Date": "January 26, 2004",
+        "End_Date": "February 13, 2004",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Malawi",
+        "Locations": [
+          "Karonga"
+        ],
+        "Start_Date": "January 26, 2004",
+        "End_Date": "February 13, 2004",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "NULL",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Madagascar",
-      "Locations": [
-        "Morondava"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Much of the city flooded",
-      "Annotation": "Madagascar"
-    },
-    {
-      "Administrative_Area": "Madagascar",
-      "Locations": [
-        "Maintirano"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Madagascar"
-    },
-    {
-      "Administrative_Area": "Madagascar",
-      "Locations": [
-        "Soavinandriana"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Madagascar"
-    },
-    {
-      "Administrative_Area": "Madagascar",
-      "Locations": [
-        "Antananarivo"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Madagascar"
-    },
-    {
-      "Administrative_Area": "Madagascar",
-      "Locations": [
-        "Midongy Atismo"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "80% of rice crop flooded",
-      "Annotation": "Madagascar"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "Madagascar"
-      ],
-      "Start_Date": "January 28, 2004",
-      "End_Date": "February 3, 2004",
-      "Num": "12,408 homes",
-      "Annotation": "Madagascar"
-    },
-    {
-      "Administrative_Areas": [
-        "Mozambique"
-      ],
-      "Start_Date": "January 29, 2004",
-      "End_Date": "NULL",
-      "Num": "over 2,000 buildings",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Areas": [
-        "Malawi"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "more than 80 houses and a clinic",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Madagascar",
-      "Locations": [
-        "Mahajanga Province",
-        "Toliara Province",
-        "Antananarivo",
-        "Morondava",
-        "Maintirano",
-        "Soavinandriana",
-        "Midongy Atismo"
-      ],
-      "Start_Date": "January 28, 2004",
-      "End_Date": "February 3, 2004",
-      "Num": "NULL",
-      "Annotation": "Madagascar"
-    },
-    {
-      "Administrative_Area": "Mozambique",
-      "Locations": [
-        "Nampula",
-        "Nacala-a-Velha"
-      ],
-      "Start_Date": "January 29, 2004",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "Malawi",
-      "Locations": [
-        "Karonga district"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "more than 80 houses and a clinic",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "33",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Madagascar",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "33",
-      "Annotation": "Madagascar"
-    },
-    {
-      "Administrative_Areas": "Mayotte",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Madagascar",
-      "Locations": [
-        "Mahajanga"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "Madagascar"
-    },
-    {
-      "Administrative_Area": "Mayotte",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "55,983",
-    "Total_Displaced_Annotation": "Madagascar"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": "Madagascar",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "55,983",
-      "Annotation": "Madagascar"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Madagascar",
-      "Locations": [
-        "Mahajanga",
-        "Toliara"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "5,000",
-      "Annotation": "Madagascar"
-    },
-    {
-      "Administrative_Area": "Madagascar",
-      "Locations": [
-        "stadiums",
-        "remaining standing buildings"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "7,000",
-      "Annotation": "Madagascar"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "55,983",
-    "Total_Homeless_Annotation": "Madagascar"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "Madagascar"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "55,983",
-      "Annotation": "Madagascar"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Madagascar",
-      "Locations": [
-        "Mahajanga",
-        "Toliara"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Madagascar"
-    },
-    {
-      "Administrative_Area": "Madagascar",
-      "Locations": [
-        "vicinity of its first landfall"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "5,000",
-      "Annotation": "Madagascar"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "886",
-    "Total_Injuries_Annotation": "Madagascar"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Madagascar",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "886",
-      "Annotation": "Madagascar"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Madagascar",
-      "Locations": [
-        "Mahajanga",
-        "Toliara"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Madagascar"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Madagascar",
-        "Mozambique",
-        "Malawi"
-      ],
-      "Start_Date": "January 26, 2004",
-      "End_Date": "February 13, 2004",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Madagascar",
-      "Locations": [
-        "Mahajanga",
-        "Toliara",
-        "Antananarivo",
-        "Morondava",
-        "Maintirano",
-        "Soavinandriana",
-        "Midongy Atismo"
-      ],
-      "Start_Date": "January 26, 2004",
-      "End_Date": "February 13, 2004",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Madagascar"
-    },
-    {
-      "Administrative_Area": "Mozambique",
-      "Locations": [
-        "Nampula",
-        "Nacala-a-Velha"
-      ],
-      "Start_Date": "January 26, 2004",
-      "End_Date": "February 13, 2004",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "Malawi",
-      "Locations": [
-        "Karonga"
-      ],
-      "Start_Date": "January 26, 2004",
-      "End_Date": "February 13, 2004",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "NULL",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "NULL",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "Madagascar"
-      ],
-      "Start_Date": "January 28, 2004",
-      "End_Date": "February 3, 2004",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Madagascar"
-    },
-    {
-      "Administrative_Areas": [
-        "Mozambique"
-      ],
-      "Start_Date": "January 29, 2004",
-      "End_Date": "February 3, 2004",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Areas": [
-        "Malawi"
-      ],
-      "Start_Date": "January 29, 2004",
-      "End_Date": "February 3, 2004",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Madagascar",
-      "Locations": [
-        "Mahajanga",
-        "Toliara",
-        "Antananarivo",
-        "Morondava",
-        "Maintirano",
-        "Soavinandriana",
-        "Midongy Atismo"
-      ],
-      "Start_Date": "January 28, 2004",
-      "End_Date": "February 3, 2004",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Madagascar"
-    },
-    {
-      "Administrative_Area": "Mozambique",
-      "Locations": [
-        "Nampula",
-        "Zambezia",
-        "Sofala",
-        "Inhambane"
-      ],
-      "Start_Date": "January 29, 2004",
-      "End_Date": "February 3, 2004",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    },
-    {
-      "Administrative_Area": "Malawi",
-      "Locations": [
-        "Karonga"
-      ],
-      "Start_Date": "January 29, 2004",
-      "End_Date": "February 3, 2004",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Preparations and impact"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Madagascar",
-  "Start_Date": "2004-01-26",
-  "End_Date": "2004-02-13",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Madagascar",
-    "Mozambique",
-    "Malawi",
-    "Seychelles",
-    "Mauritius",
-    "Reunion"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Madagascar"
+        ],
+        "Start_Date": "January 28, 2004",
+        "End_Date": "February 3, 2004",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Madagascar"
+      },
+      {
+        "Administrative_Areas": [
+          "Mozambique"
+        ],
+        "Start_Date": "January 29, 2004",
+        "End_Date": "February 3, 2004",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Areas": [
+          "Malawi"
+        ],
+        "Start_Date": "January 29, 2004",
+        "End_Date": "February 3, 2004",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Madagascar",
+        "Locations": [
+          "Mahajanga",
+          "Toliara",
+          "Antananarivo",
+          "Morondava",
+          "Maintirano",
+          "Soavinandriana",
+          "Midongy Atismo"
+        ],
+        "Start_Date": "January 28, 2004",
+        "End_Date": "February 3, 2004",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Madagascar"
+      },
+      {
+        "Administrative_Area": "Mozambique",
+        "Locations": [
+          "Nampula",
+          "Zambezia",
+          "Sofala",
+          "Inhambane"
+        ],
+        "Start_Date": "January 29, 2004",
+        "End_Date": "February 3, 2004",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Malawi",
+        "Locations": [
+          "Karonga"
+        ],
+        "Start_Date": "January 29, 2004",
+        "End_Date": "February 3, 2004",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Madagascar",
+    "Start_Date": "2004-01-26",
+    "End_Date": "2004-02-13",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Madagascar",
+      "Mozambique",
+      "Malawi",
+      "Seychelles",
+      "Mauritius",
+      "Reunion"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

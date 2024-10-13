@@ -1,278 +1,280 @@
-{
-  "Event_ID": "w2rHPUG",
-  "Sources": "https://en.wikipedia.org/wiki/2020_Ashby%E2%80%93Dalton_tornado",
-  "Event_Names": "2020 Ashby\u2013Dalton tornado",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "July 8, 2020",
-      "End_Date": "July 8, 2020",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Grant County",
-        "Otter Tail County"
-      ],
-      "Start_Date": "July 8, 2020",
-      "End_Date": "July 8, 2020",
-      "Num": "1",
-      "Annotation": "Info_Box"
+[
+  {
+    "Event_ID": "w2rHPUG",
+    "Sources": "https://en.wikipedia.org/wiki/2020_Ashby%E2%80%93Dalton_tornado",
+    "Event_Names": "2020 Ashby\u2013Dalton tornado",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Grant County",
-        "Otter Tail County"
-      ],
-      "Start_Date": "July 8, 2020",
-      "End_Date": "July 8, 2020",
-      "Num": "2",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "July 8, 2020",
-      "End_Date": "July 8, 2020",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Ashby",
-        "Dalton"
-      ],
-      "Start_Date": "July 8, 2020",
-      "End_Date": "July 8, 2020",
-      "Num": "a machine shop, a well-built two-story house",
-      "Annotation": "Tornado summary"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "1",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "July 8, 2020",
-      "End_Date": "July 8, 2020",
-      "Num": "1",
-      "Annotation": "Tornado summary"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Machine shop in Otter Tail County"
-      ],
-      "Start_Date": "July 8, 2020",
-      "End_Date": "July 8, 2020",
-      "Num": "1",
-      "Annotation": "Tornado summary"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "July 8, 2020",
-      "End_Date": "July 8, 2020",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Grant County",
-        "Otter Tail County"
-      ],
-      "Start_Date": "July 8, 2020",
-      "End_Date": "July 8, 2020",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "July 8, 2020",
-      "End_Date": "July 8, 2020",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Ashby",
-        "Dalton"
-      ],
-      "Start_Date": "July 8, 2020",
-      "End_Date": "July 8, 2020",
-      "Num": "NULL",
-      "Annotation": "Tornado summary"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "2",
-    "Total_Injuries_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "July 8, 2020",
-      "End_Date": "July 8, 2020",
-      "Num": "2",
-      "Annotation": "Tornado summary"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "machine shop",
-        "rural homestead along 120th Street"
-      ],
-      "Start_Date": "July 8, 2020",
-      "End_Date": "July 8, 2020",
-      "Num": "1",
-      "Annotation": "Tornado summary"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "July 8, 2020",
+        "End_Date": "July 8, 2020",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Grant County",
+          "Otter Tail County"
+        ],
+        "Start_Date": "July 8, 2020",
+        "End_Date": "July 8, 2020",
+        "Num": "1",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Grant County",
+          "Otter Tail County"
+        ],
+        "Start_Date": "July 8, 2020",
+        "End_Date": "July 8, 2020",
+        "Num": "2",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "rural homestead along 120th Street"
-      ],
-      "Start_Date": "July 8, 2020",
-      "End_Date": "July 8, 2020",
-      "Num": "1",
-      "Annotation": "Tornado summary"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "2020-07-08",
-      "End_Date": "2020-07-08",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Grant County",
-        "Otter Tail County"
-      ],
-      "Start_Date": "2020-07-08",
-      "End_Date": "2020-07-08",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "1.855 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "July 8, 2020",
-      "End_Date": "July 8, 2020",
-      "Num": "1.855 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Tornado summary"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Grant County",
-        "Otter Tail County"
-      ],
-      "Start_Date": "July 8, 2020",
-      "End_Date": "July 8, 2020",
-      "Num": "1.855 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Tornado summary"
-    }
-  ],
-  "Main_Event": "Tornado",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "July 8, 2020",
-  "End_Date": "July 8, 2020",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "United States"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "July 8, 2020",
+        "End_Date": "July 8, 2020",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Ashby",
+          "Dalton"
+        ],
+        "Start_Date": "July 8, 2020",
+        "End_Date": "July 8, 2020",
+        "Num": "a machine shop, a well-built two-story house",
+        "Annotation": "Tornado summary"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "1",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "July 8, 2020",
+        "End_Date": "July 8, 2020",
+        "Num": "1",
+        "Annotation": "Tornado summary"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Machine shop in Otter Tail County"
+        ],
+        "Start_Date": "July 8, 2020",
+        "End_Date": "July 8, 2020",
+        "Num": "1",
+        "Annotation": "Tornado summary"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "July 8, 2020",
+        "End_Date": "July 8, 2020",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Grant County",
+          "Otter Tail County"
+        ],
+        "Start_Date": "July 8, 2020",
+        "End_Date": "July 8, 2020",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "July 8, 2020",
+        "End_Date": "July 8, 2020",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Ashby",
+          "Dalton"
+        ],
+        "Start_Date": "July 8, 2020",
+        "End_Date": "July 8, 2020",
+        "Num": "NULL",
+        "Annotation": "Tornado summary"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "2",
+      "Total_Injuries_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "July 8, 2020",
+        "End_Date": "July 8, 2020",
+        "Num": "2",
+        "Annotation": "Tornado summary"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "machine shop",
+          "rural homestead along 120th Street"
+        ],
+        "Start_Date": "July 8, 2020",
+        "End_Date": "July 8, 2020",
+        "Num": "1",
+        "Annotation": "Tornado summary"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "rural homestead along 120th Street"
+        ],
+        "Start_Date": "July 8, 2020",
+        "End_Date": "July 8, 2020",
+        "Num": "1",
+        "Annotation": "Tornado summary"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "2020-07-08",
+        "End_Date": "2020-07-08",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Grant County",
+          "Otter Tail County"
+        ],
+        "Start_Date": "2020-07-08",
+        "End_Date": "2020-07-08",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "1.855 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "July 8, 2020",
+        "End_Date": "July 8, 2020",
+        "Num": "1.855 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tornado summary"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Grant County",
+          "Otter Tail County"
+        ],
+        "Start_Date": "July 8, 2020",
+        "End_Date": "July 8, 2020",
+        "Num": "1.855 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tornado summary"
+      }
+    ],
+    "Main_Event": "Tornado",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "July 8, 2020",
+    "End_Date": "July 8, 2020",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "United States"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

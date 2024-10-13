@@ -1,382 +1,384 @@
-{
-  "Event_ID": "7WC9HcN",
-  "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Maysak_(2008)",
-  "Event_Names": "Tropical Storm Maysak (2008)",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Philippines"
-      ],
-      "Start_Date": "November 6, 2008",
-      "End_Date": "November 12, 2008",
-      "Num": "over 4800",
-      "Annotation": "Philippines"
+[
+  {
+    "Event_ID": "7WC9HcN",
+    "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Maysak_(2008)",
+    "Event_Names": "Tropical Storm Maysak (2008)",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": [
-        "Vietnam"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Vietnam"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Luzon",
-        "Visayas",
-        "Mindanao"
-      ],
-      "Start_Date": "November 6, 2008",
-      "End_Date": "November 7, 2008",
-      "Num": "16 municipalities reported power interruptions",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "November 6, 2008",
+        "End_Date": "November 12, 2008",
+        "Num": "over 4800",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": [
+          "Vietnam"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Luzon",
+          "Visayas",
+          "Mindanao"
+        ],
+        "Start_Date": "November 6, 2008",
+        "End_Date": "November 7, 2008",
+        "Num": "16 municipalities reported power interruptions",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Philippines"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "92 homes were either partially or totally destroyed",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Philippines"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "19 people were killed and 14 people injured",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Ho Chi Minh City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 11 people dead",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Philippines"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "92 homes were either partially or totally destroyed",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "November 6, 2008",
+        "End_Date": "November 12, 2008",
+        "Num": "92 homes",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Luzon",
+          "Visayas",
+          "Mindanao"
+        ],
+        "Start_Date": "November 6, 2008",
+        "End_Date": "November 12, 2008",
+        "Num": "92 homes",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Ho Chi Minh City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "30 total",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Philippines"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "19 people were killed and 14 people injured",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "19 people",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 11 people",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "19 people",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Ho Chi Minh City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 11 people",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Vietnam",
-      "Locations": [
-        "Ho Chi Minh City"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "at least 11 people dead",
-      "Annotation": "Vietnam"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "November 6, 2008",
-      "End_Date": "November 12, 2008",
-      "Num": "92 homes",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "November 6, 2008",
+        "End_Date": "November 7, 2008",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Luzon",
+          "Visayas",
+          "Mindanao"
+        ],
+        "Start_Date": "November 6, 2008",
+        "End_Date": "November 7, 2008",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Vietnam",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Vietnam"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Luzon",
-        "Visayas",
-        "Mindanao"
-      ],
-      "Start_Date": "November 6, 2008",
-      "End_Date": "November 12, 2008",
-      "Num": "92 homes",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "November 6, 2008",
+        "End_Date": "November 12, 2008",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Luzon",
+          "Visayas",
+          "Mindanao"
+        ],
+        "Start_Date": "November 6, 2008",
+        "End_Date": "November 12, 2008",
+        "Num": "92 homes were either partially or totally destroyed",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "14",
+      "Total_Injuries_Annotation": "Philippines"
     },
-    {
-      "Administrative_Area": "Vietnam",
-      "Locations": [
-        "Ho Chi Minh City"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Vietnam"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "30 total",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "19 people",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "14",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "14",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Vietnam",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "at least 11 people",
-      "Annotation": "Vietnam"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "19 people",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "November 6, 2008",
+        "End_Date": "November 14, 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "November 6, 2008",
+        "End_Date": "November 14, 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Luzon",
+          "Visayas",
+          "Mindanao"
+        ],
+        "Start_Date": "November 6, 2008",
+        "End_Date": "November 14, 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Ho Chi Minh City"
+        ],
+        "Start_Date": "November 6, 2008",
+        "End_Date": "November 14, 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "Unknown",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Vietnam",
-      "Locations": [
-        "Ho Chi Minh City"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "at least 11 people",
-      "Annotation": "Vietnam"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "November 6, 2008",
-      "End_Date": "November 7, 2008",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": "Vietnam",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Vietnam"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Luzon",
-        "Visayas",
-        "Mindanao"
-      ],
-      "Start_Date": "November 6, 2008",
-      "End_Date": "November 7, 2008",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "November 6, 2008",
-      "End_Date": "November 12, 2008",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": "Vietnam",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Vietnam"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Luzon",
-        "Visayas",
-        "Mindanao"
-      ],
-      "Start_Date": "November 6, 2008",
-      "End_Date": "November 12, 2008",
-      "Num": "92 homes were either partially or totally destroyed",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "14",
-    "Total_Injuries_Annotation": "Philippines"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "14",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "14",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "November 6, 2008",
-      "End_Date": "November 14, 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": "Vietnam",
-      "Start_Date": "November 6, 2008",
-      "End_Date": "November 14, 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Vietnam"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Luzon",
-        "Visayas",
-        "Mindanao"
-      ],
-      "Start_Date": "November 6, 2008",
-      "End_Date": "November 14, 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Vietnam",
-      "Locations": [
-        "Ho Chi Minh City"
-      ],
-      "Start_Date": "November 6, 2008",
-      "End_Date": "November 14, 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Vietnam"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "Unknown",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "NULL",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "November 6, 2008",
-      "End_Date": "November 14, 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": "Vietnam",
-      "Start_Date": "November 6, 2008",
-      "End_Date": "November 14, 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Vietnam"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Luzon",
-        "Visayas",
-        "Mindanao"
-      ],
-      "Start_Date": "November 6, 2008",
-      "End_Date": "November 7, 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Vietnam",
-      "Locations": [
-        "Ho Chi Minh City"
-      ],
-      "Start_Date": "November 6, 2008",
-      "End_Date": "November 14, 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Vietnam"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Philippines|Vietnam",
-  "Start_Date": "November 6, 2008",
-  "End_Date": "November 14, 2008",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Philippines",
-    "Vietnam"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "November 6, 2008",
+        "End_Date": "November 14, 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "November 6, 2008",
+        "End_Date": "November 14, 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Luzon",
+          "Visayas",
+          "Mindanao"
+        ],
+        "Start_Date": "November 6, 2008",
+        "End_Date": "November 7, 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Ho Chi Minh City"
+        ],
+        "Start_Date": "November 6, 2008",
+        "End_Date": "November 14, 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Philippines|Vietnam",
+    "Start_Date": "November 6, 2008",
+    "End_Date": "November 14, 2008",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Philippines",
+      "Vietnam"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

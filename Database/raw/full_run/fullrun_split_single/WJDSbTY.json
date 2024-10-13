@@ -1,388 +1,390 @@
-{
-  "Event_ID": "WJDSbTY",
-  "Sources": "https://en.wikipedia.org/wiki/2016_Fort_McMurray_wildfire",
-  "Event_Names": "2016 Fort McMurray wildfire",
-  "Total_Summary_Affected": {
-    "Total_Affected": "88,000 people",
-    "Total_Affected_Annotation": "2016 Fort McMurray wildfire"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Canada"
-      ],
-      "Start_Date": "May 1, 2016",
-      "End_Date": "August 2, 2017",
-      "Num": "88,000 people",
-      "Annotation": "2016 Fort McMurray wildfire"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Fort McMurray"
-      ],
-      "Start_Date": "May 1, 2016",
-      "End_Date": "August 2, 2017",
-      "Num": "88,000 people",
-      "Annotation": "2016 Fort McMurray wildfire"
+[
+  {
+    "Event_ID": "WJDSbTY",
+    "Sources": "https://en.wikipedia.org/wiki/2016_Fort_McMurray_wildfire",
+    "Event_Names": "2016 Fort McMurray wildfire",
+    "Total_Summary_Affected": {
+      "Total_Affected": "88,000 people",
+      "Total_Affected_Annotation": "2016 Fort McMurray wildfire"
     },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Anzac",
-        "Gregoire Lake Estates",
-        "Fort McMurray First Nation"
-      ],
-      "Start_Date": "May 4, 2016",
-      "End_Date": "NULL",
-      "Num": "2,000 residents",
-      "Annotation": "2016 Fort McMurray wildfire"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "May 1, 2016",
+        "End_Date": "August 2, 2017",
+        "Num": "88,000 people",
+        "Annotation": "2016 Fort McMurray wildfire"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Fort McMurray"
+        ],
+        "Start_Date": "May 1, 2016",
+        "End_Date": "August 2, 2017",
+        "Num": "88,000 people",
+        "Annotation": "2016 Fort McMurray wildfire"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Anzac",
+          "Gregoire Lake Estates",
+          "Fort McMurray First Nation"
+        ],
+        "Start_Date": "May 4, 2016",
+        "End_Date": "NULL",
+        "Num": "2,000 residents",
+        "Annotation": "2016 Fort McMurray wildfire"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Fort McKay"
+        ],
+        "Start_Date": "May 7, 2016",
+        "End_Date": "NULL",
+        "Num": "5,000 evacuees",
+        "Annotation": "Spread to Fort McMurray"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Oil Sands Work Camps"
+        ],
+        "Start_Date": "May 16, 2016",
+        "End_Date": "NULL",
+        "Num": "8,000 workers",
+        "Annotation": "Remote growth, control and extinguishment"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "3,244",
+      "Total_Buildings_Damaged_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Fort McKay"
-      ],
-      "Start_Date": "May 7, 2016",
-      "End_Date": "NULL",
-      "Num": "5,000 evacuees",
-      "Annotation": "Spread to Fort McMurray"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "May 1, 2016",
+        "End_Date": "August 2, 2017",
+        "Num": "3,244",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Fort McMurray",
+          "Beacon Hill",
+          "Abasand",
+          "Waterways",
+          "Thickwood",
+          "Dickensfield",
+          "Blacksands Executive Lodge"
+        ],
+        "Start_Date": "May 1, 2016",
+        "End_Date": "August 2, 2017",
+        "Num": "3,244",
+        "Annotation": "Communities and infrastructure"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "2",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Oil Sands Work Camps"
-      ],
-      "Start_Date": "May 16, 2016",
-      "End_Date": "NULL",
-      "Num": "8,000 workers",
-      "Annotation": "Remote growth, control and extinguishment"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "3,244",
-    "Total_Buildings_Damaged_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "Canada"
-      ],
-      "Start_Date": "May 1, 2016",
-      "End_Date": "August 2, 2017",
-      "Num": "3,244",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Fort McMurray",
-        "Beacon Hill",
-        "Abasand",
-        "Waterways",
-        "Thickwood",
-        "Dickensfield",
-        "Blacksands Executive Lodge"
-      ],
-      "Start_Date": "May 1, 2016",
-      "End_Date": "August 2, 2017",
-      "Num": "3,244",
-      "Annotation": "Communities and infrastructure"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "2",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "Canada"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Fort McMurray"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "Spread to Fort McMurray"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "upwards of 88,000",
-    "Total_Displaced_Annotation": "2016 Fort McMurray wildfire"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Canada"
-      ],
-      "Start_Date": "May 3, 2016",
-      "End_Date": "NULL",
-      "Num": "upwards of 88,000",
-      "Annotation": "2016 Fort McMurray wildfire"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Fort McMurray"
-      ],
-      "Start_Date": "May 3, 2016",
-      "End_Date": "NULL",
-      "Num": "upwards of 88,000",
-      "Annotation": "2016 Fort McMurray wildfire"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Fort McMurray"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Spread to Fort McMurray"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "upwards of 88,000",
+      "Total_Displaced_Annotation": "2016 Fort McMurray wildfire"
     },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "three communities"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2,000",
-      "Annotation": "2016 Fort McMurray wildfire"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "May 3, 2016",
+        "End_Date": "NULL",
+        "Num": "upwards of 88,000",
+        "Annotation": "2016 Fort McMurray wildfire"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Fort McMurray"
+        ],
+        "Start_Date": "May 3, 2016",
+        "End_Date": "NULL",
+        "Num": "upwards of 88,000",
+        "Annotation": "2016 Fort McMurray wildfire"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "three communities"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2,000",
+        "Annotation": "2016 Fort McMurray wildfire"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Anzac",
+          "Gregoire Lake Estates",
+          "Fort McMurray First Nation"
+        ],
+        "Start_Date": "May 4, 2016",
+        "End_Date": "NULL",
+        "Num": "8,000",
+        "Annotation": "Spread to Fort McMurray"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "oil sands work camps north of Fort McMurray"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "25,000",
+        "Annotation": "Spread to Fort McMurray"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Fort McKay"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5,000",
+        "Annotation": "Spread to Fort McMurray"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "oil sites and camps south of Fort MacKay"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8,000",
+        "Annotation": "Remote growth, control and extinguishment"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Anzac",
-        "Gregoire Lake Estates",
-        "Fort McMurray First Nation"
-      ],
-      "Start_Date": "May 4, 2016",
-      "End_Date": "NULL",
-      "Num": "8,000",
-      "Annotation": "Spread to Fort McMurray"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "May 1, 2016",
+        "End_Date": "August 2, 2017",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Fort McMurray"
+        ],
+        "Start_Date": "May 1, 2016",
+        "End_Date": "August 2, 2017",
+        "Num": "2,400 homes and buildings destroyed",
+        "Annotation": "2016 Fort McMurray wildfire"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Three communities"
+        ],
+        "Start_Date": "May 1, 2016",
+        "End_Date": "August 2, 2017",
+        "Num": "2,000 residents displaced",
+        "Annotation": "2016 Fort McMurray wildfire"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Beacon Hill",
+          "Abasand",
+          "Waterways"
+        ],
+        "Start_Date": "May 4, 2016",
+        "End_Date": "August 2, 2017",
+        "Num": "1,600 buildings destroyed",
+        "Annotation": "Spread to Fort McMurray"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Thickwood",
+          "Dickensfield"
+        ],
+        "Start_Date": "May 16, 2016",
+        "End_Date": "May 17, 2016",
+        "Num": "10 buildings damaged, 3 destroyed",
+        "Annotation": "Communities and infrastructure"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Waterways",
+          "Abasand",
+          "Beacon Hill"
+        ],
+        "Start_Date": "May 1, 2016",
+        "End_Date": "October 24, 2016",
+        "Num": "2,000 residents displaced",
+        "Annotation": "Re-entry and recovery"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "0",
+      "Total_Injuries_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "oil sands work camps north of Fort McMurray"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "25,000",
-      "Annotation": "Spread to Fort McMurray"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Canada",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "0",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Fort McMurray"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "0",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "$3.58 billion",
+      "Total_Insured_Damage_Unit": "CAD",
+      "Total_Insured_Damage_Inflation_Adjusted": "No",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "Costs"
     },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Fort McKay"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "5,000",
-      "Annotation": "Spread to Fort McMurray"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "Canada",
+        "Start_Date": "May 1, 2016",
+        "End_Date": "August 2, 2017",
+        "Num": "$3.58 billion",
+        "Num_Unit": "CAD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Costs"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Fort McMurray"
+        ],
+        "Start_Date": "May 1, 2016",
+        "End_Date": "August 2, 2017",
+        "Num": "$3.58 billion",
+        "Num_Unit": "CAD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Costs"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "C$9.9 billion",
+      "Total_Damage_Unit": "CAD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "oil sites and camps south of Fort MacKay"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "8,000",
-      "Annotation": "Remote growth, control and extinguishment"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "Canada"
-      ],
-      "Start_Date": "May 1, 2016",
-      "End_Date": "August 2, 2017",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Fort McMurray"
-      ],
-      "Start_Date": "May 1, 2016",
-      "End_Date": "August 2, 2017",
-      "Num": "2,400 homes and buildings destroyed",
-      "Annotation": "2016 Fort McMurray wildfire"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Three communities"
-      ],
-      "Start_Date": "May 1, 2016",
-      "End_Date": "August 2, 2017",
-      "Num": "2,000 residents displaced",
-      "Annotation": "2016 Fort McMurray wildfire"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Beacon Hill",
-        "Abasand",
-        "Waterways"
-      ],
-      "Start_Date": "May 4, 2016",
-      "End_Date": "August 2, 2017",
-      "Num": "1,600 buildings destroyed",
-      "Annotation": "Spread to Fort McMurray"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Thickwood",
-        "Dickensfield"
-      ],
-      "Start_Date": "May 16, 2016",
-      "End_Date": "May 17, 2016",
-      "Num": "10 buildings damaged, 3 destroyed",
-      "Annotation": "Communities and infrastructure"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Waterways",
-        "Abasand",
-        "Beacon Hill"
-      ],
-      "Start_Date": "May 1, 2016",
-      "End_Date": "October 24, 2016",
-      "Num": "2,000 residents displaced",
-      "Annotation": "Re-entry and recovery"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "0",
-    "Total_Injuries_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Canada",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "0",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Fort McMurray"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "0",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "$3.58 billion",
-    "Total_Insured_Damage_Unit": "CAD",
-    "Total_Insured_Damage_Inflation_Adjusted": "No",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "Costs"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": "Canada",
-      "Start_Date": "May 1, 2016",
-      "End_Date": "August 2, 2017",
-      "Num": "$3.58 billion",
-      "Num_Unit": "CAD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Costs"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Fort McMurray"
-      ],
-      "Start_Date": "May 1, 2016",
-      "End_Date": "August 2, 2017",
-      "Num": "$3.58 billion",
-      "Num_Unit": "CAD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Costs"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "C$9.9 billion",
-    "Total_Damage_Unit": "CAD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "Canada"
-      ],
-      "Start_Date": "May 1, 2016",
-      "End_Date": "August 2, 2017",
-      "Num": "C$9.9 billion",
-      "Num_Unit": "CAD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Fort McMurray"
-      ],
-      "Start_Date": "May 1, 2016",
-      "End_Date": "August 2, 2017",
-      "Num": "C$3.58 billion",
-      "Num_Unit": "CAD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Costs"
-    },
-    {
-      "Administrative_Area": "Canada",
-      "Locations": [
-        "Fort McMurray"
-      ],
-      "Start_Date": "May 1, 2016",
-      "End_Date": "August 2, 2017",
-      "Num": "C$4.7 billion",
-      "Num_Unit": "CAD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Costs"
-    }
-  ],
-  "Main_Event": "Wildfire",
-  "Main_Event_Annotation": "Info_Box",
-  "Start_Date": "May 1, 2016",
-  "End_Date": "August 2, 2017",
-  "Time_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "May 1, 2016",
+        "End_Date": "August 2, 2017",
+        "Num": "C$9.9 billion",
+        "Num_Unit": "CAD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Fort McMurray"
+        ],
+        "Start_Date": "May 1, 2016",
+        "End_Date": "August 2, 2017",
+        "Num": "C$3.58 billion",
+        "Num_Unit": "CAD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Costs"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Fort McMurray"
+        ],
+        "Start_Date": "May 1, 2016",
+        "End_Date": "August 2, 2017",
+        "Num": "C$4.7 billion",
+        "Num_Unit": "CAD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Costs"
+      }
+    ],
+    "Main_Event": "Wildfire",
+    "Main_Event_Annotation": "Info_Box",
+    "Start_Date": "May 1, 2016",
+    "End_Date": "August 2, 2017",
+    "Time_Annotation": "Info_Box"
+  }
+]

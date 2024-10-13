@@ -1,389 +1,391 @@
-{
-  "Event_ID": "27HMFlf",
-  "Sources": "https://en.wikipedia.org/wiki/Hurricane_Barry_(1983)",
-  "Event_Names": "Hurricane Barry (1983)",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "United States"
+[
+  {
+    "Event_ID": "27HMFlf",
+    "Sources": "https://en.wikipedia.org/wiki/Hurricane_Barry_(1983)",
+    "Event_Names": "Hurricane Barry (1983)",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "over 400",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "South Padre Island",
-        "Port Aransas",
-        "Brownsville",
-        "Harlingen",
-        "San Benito",
-        "Santa Rosa",
-        "Los Fresnos"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Over 4,000 people evacuated from South Padre Island; Several thousand people evacuated from beaches in Port Aransas; 700 people took refuge in shelters in Brownsville; 800 people fled to schools in Harlingen; 2,000 residents evacuated from Harlingen; Shelters opened in San Benito, Santa Rosa, and Los Fresnos",
-      "Annotation": "United States"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "over 400",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "South Padre Island",
+          "Port Aransas",
+          "Brownsville",
+          "Harlingen",
+          "San Benito",
+          "Santa Rosa",
+          "Los Fresnos"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Over 4,000 people evacuated from South Padre Island; Several thousand people evacuated from beaches in Port Aransas; 700 people took refuge in shelters in Brownsville; 800 people fled to schools in Harlingen; 2,000 residents evacuated from Harlingen; Shelters opened in San Benito, Santa Rosa, and Los Fresnos",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Matamoros",
+          "El Mezquital",
+          "Santa Teresa"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Over 400 people made homeless; At least ten people left homeless in El Mezquital; Homes in Santa Teresa sustained some damage",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "hundreds of homes",
+      "Total_Buildings_Damaged_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Matamoros",
-        "El Mezquital",
-        "Santa Teresa"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Over 400 people made homeless; At least ten people left homeless in El Mezquital; Homes in Santa Teresa sustained some damage",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "hundreds of homes",
-    "Total_Buildings_Damaged_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "hundreds of homes",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Matamoros",
-        "El Mezquital",
-        "Santa Teresa"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "several hundred homes",
-      "Annotation": "Mexico"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "hundreds of homes",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Matamoros",
+          "El Mezquital",
+          "Santa Teresa"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "several hundred homes",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "El Mezquital"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "ten homes",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Santa Teresa"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "some homes",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "None",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "El Mezquital"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "ten homes",
-      "Annotation": "Mexico"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "None",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "None",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Matamoros",
+          "El Mezquital",
+          "Santa Teresa"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "None",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Santa Teresa"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "some homes",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "None",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "None",
-      "Annotation": "United States"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "South Padre Island",
+          "Port Aransas",
+          "Brownsville",
+          "Harlingen",
+          "San Benito",
+          "Santa Rosa",
+          "Los Fresnos"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Over 4,000; Several thousand; 700; 800; 2,000; NULL; NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Matamoros",
+          "El Mezquital"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL; At least ten",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "over 400",
+      "Total_Homeless_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "None",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Matamoros",
-        "El Mezquital",
-        "Santa Teresa"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "None",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "United States"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "over 400",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Matamoros",
+          "El Mezquital",
+          "Santa Teresa"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "over 400",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "El Mezquital"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least ten",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "South Padre Island",
-        "Port Aransas",
-        "Brownsville",
-        "Harlingen",
-        "San Benito",
-        "Santa Rosa",
-        "Los Fresnos"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Over 4,000; Several thousand; 700; 800; 2,000; NULL; NULL",
-      "Annotation": "United States"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Only one person was injured",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Only one person was injured",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Matamoros",
-        "El Mezquital"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL; At least ten",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "over 400",
-    "Total_Homeless_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "over 400",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Matamoros",
-        "El Mezquital",
-        "Santa Teresa"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "over 400",
-      "Annotation": "Mexico"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "1983-08-23",
+        "End_Date": "1983-08-29",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "1983-08-23",
+        "End_Date": "1983-08-29",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida",
+          "Texas"
+        ],
+        "Start_Date": "1983-08-23",
+        "End_Date": "1983-08-29",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Matamoros",
+          "El Mezquital",
+          "Santa Teresa"
+        ],
+        "Start_Date": "1983-08-23",
+        "End_Date": "1983-08-29",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "Minimal",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "El Mezquital"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "at least ten",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Only one person was injured",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Only one person was injured",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "1983-08-23",
-      "End_Date": "1983-08-29",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "1983-08-23",
-      "End_Date": "1983-08-29",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Florida",
-        "Texas"
-      ],
-      "Start_Date": "1983-08-23",
-      "End_Date": "1983-08-29",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Matamoros",
-        "El Mezquital",
-        "Santa Teresa"
-      ],
-      "Start_Date": "1983-08-23",
-      "End_Date": "1983-08-29",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "Minimal",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "August 23, 1983",
-      "End_Date": "August 29, 1983",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "August 23, 1983",
-      "End_Date": "August 29, 1983",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Lake Okeechobee",
-        "Orlando",
-        "Miami",
-        "Wauchula",
-        "Key West",
-        "San Antonio",
-        "South Padre Island",
-        "Brownsville"
-      ],
-      "Start_Date": "August 23, 1983",
-      "End_Date": "August 29, 1983",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Matamoros",
-        "El Mezquital",
-        "Santa Teresa"
-      ],
-      "Start_Date": "August 23, 1983",
-      "End_Date": "August 29, 1983",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|United States|Mexico",
-  "Start_Date": "August 23, 1983",
-  "End_Date": "August 29, 1983",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "United States",
-    "Mexico"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "August 23, 1983",
+        "End_Date": "August 29, 1983",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "August 23, 1983",
+        "End_Date": "August 29, 1983",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Lake Okeechobee",
+          "Orlando",
+          "Miami",
+          "Wauchula",
+          "Key West",
+          "San Antonio",
+          "South Padre Island",
+          "Brownsville"
+        ],
+        "Start_Date": "August 23, 1983",
+        "End_Date": "August 29, 1983",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Matamoros",
+          "El Mezquital",
+          "Santa Teresa"
+        ],
+        "Start_Date": "August 23, 1983",
+        "End_Date": "August 29, 1983",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|United States|Mexico",
+    "Start_Date": "August 23, 1983",
+    "End_Date": "August 29, 1983",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "United States",
+      "Mexico"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

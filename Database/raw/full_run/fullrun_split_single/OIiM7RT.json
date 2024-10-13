@@ -1,468 +1,470 @@
-{
-  "Event_ID": "OIiM7RT",
-  "Sources": "https://en.wikipedia.org/wiki/Typhoon_Utor_(2006)",
-  "Event_Names": "Typhoon Utor (2006)",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "December 9, 2006",
-      "End_Date": "December 18, 2006",
-      "Num": "91,121",
-      "Annotation": "Philippines"
+[
+  {
+    "Event_ID": "OIiM7RT",
+    "Sources": "https://en.wikipedia.org/wiki/Typhoon_Utor_(2006)",
+    "Event_Names": "Typhoon Utor (2006)",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Malaysia",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Elsewhere in Southeastern Asia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Albay"
-      ],
-      "Start_Date": "December 9, 2006",
-      "End_Date": "December 18, 2006",
-      "Num": "91,121",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "December 9, 2006",
+        "End_Date": "December 18, 2006",
+        "Num": "91,121",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Malaysia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Elsewhere in Southeastern Asia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Albay"
+        ],
+        "Start_Date": "December 9, 2006",
+        "End_Date": "December 18, 2006",
+        "Num": "91,121",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Tacloban"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2 children",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Capiz"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2 children",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Capiz"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3 people feared drowned",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Boracay"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1 boat operator",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Batangas",
+          "Puerto Galera, Oriental Mindoro"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "104 passengers and crew",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Malaysia",
+        "Locations": [
+          "Segamat",
+          "Kota Tinggi"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8 fatalities",
+        "Annotation": "Elsewhere in Southeastern Asia"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "36,542 houses",
+      "Total_Buildings_Damaged_Annotation": "Philippines"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Tacloban"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2 children",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "December 9, 2006",
+        "End_Date": "December 15, 2006",
+        "Num": "36,542 houses",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Paracel Islands",
+        "Start_Date": "December 10, 2006",
+        "End_Date": "December 15, 2006",
+        "Num": "140 sheds",
+        "Annotation": "Elsewhere in Southeastern Asia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Occidental Mindoro"
+        ],
+        "Start_Date": "December 9, 2006",
+        "End_Date": "December 15, 2006",
+        "Num": "422 homes destroyed and 1,421 damaged",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Capiz",
+          "Aklan"
+        ],
+        "Start_Date": "December 9, 2006",
+        "End_Date": "December 15, 2006",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Paracel Islands",
+        "Locations": [
+          "Yongxing",
+          "Yayong",
+          "Zhaoshu",
+          "Bei Dao"
+        ],
+        "Start_Date": "December 10, 2006",
+        "End_Date": "December 15, 2006",
+        "Num": "140 sheds",
+        "Annotation": "Elsewhere in Southeastern Asia"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "38",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Capiz"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2 children",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "30",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Malaysia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8",
+        "Annotation": "Elsewhere in Southeastern Asia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Tacloban",
+          "Capiz"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Capiz"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Malaysia",
+        "Locations": [
+          "Segamat",
+          "Kota Tinggi"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8",
+        "Annotation": "Elsewhere in Southeastern Asia"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Capiz"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3 people feared drowned",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "December 9, 2006",
+        "End_Date": "December 18, 2006",
+        "Num": "91,121",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Elsewhere in Southeastern Asia"
+      },
+      {
+        "Administrative_Areas": "Paracel Islands",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "49",
+        "Annotation": "Elsewhere in Southeastern Asia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Albay"
+        ],
+        "Start_Date": "December 9, 2006",
+        "End_Date": "December 18, 2006",
+        "Num": "91,121",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "central coastline"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Elsewhere in Southeastern Asia"
+      },
+      {
+        "Administrative_Area": "Paracel Islands",
+        "Locations": [
+          "Yongxing",
+          "Yayong",
+          "Zhaoshu",
+          "Bei Dao"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "49",
+        "Annotation": "Elsewhere in Southeastern Asia"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Boracay"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1 boat operator",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "36,542 houses were damaged by Utor, of which 9,439 were destroyed",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Occidental Mindoro"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "422 homes were destroyed and an additional 1,421 damaged",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Capiz",
+          "Aklan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "44",
+      "Total_Injuries_Annotation": "Philippines"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Batangas",
-        "Puerto Galera, Oriental Mindoro"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "104 passengers and crew",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "44",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "44",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Malaysia",
-      "Locations": [
-        "Segamat",
-        "Kota Tinggi"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "8 fatalities",
-      "Annotation": "Elsewhere in Southeastern Asia"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "36,542 houses",
-    "Total_Buildings_Damaged_Annotation": "Philippines"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "December 9, 2006",
-      "End_Date": "December 15, 2006",
-      "Num": "36,542 houses",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "December 9, 2006",
+        "End_Date": "December 15, 2006",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": [
+          "Malaysia"
+        ],
+        "Start_Date": "December 9, 2006",
+        "End_Date": "December 15, 2006",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Elsewhere in Southeastern Asia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Albay",
+          "Cebu",
+          "Leyte",
+          "Boracay",
+          "Tacloban",
+          "Capiz",
+          "Occidental Mindoro",
+          "Oriental Mindoro",
+          "Aklan",
+          "Central Visayas"
+        ],
+        "Start_Date": "December 9, 2006",
+        "End_Date": "December 15, 2006",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Malaysia",
+        "Locations": [
+          "Pahang",
+          "Johor",
+          "Malacca",
+          "Segamat",
+          "Kota Tinggi"
+        ],
+        "Start_Date": "December 9, 2006",
+        "End_Date": "December 15, 2006",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Elsewhere in Southeastern Asia"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$15.8 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": "Paracel Islands",
-      "Start_Date": "December 10, 2006",
-      "End_Date": "December 15, 2006",
-      "Num": "140 sheds",
-      "Annotation": "Elsewhere in Southeastern Asia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Occidental Mindoro"
-      ],
-      "Start_Date": "December 9, 2006",
-      "End_Date": "December 15, 2006",
-      "Num": "422 homes destroyed and 1,421 damaged",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Capiz",
-        "Aklan"
-      ],
-      "Start_Date": "December 9, 2006",
-      "End_Date": "December 15, 2006",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Paracel Islands",
-      "Locations": [
-        "Yongxing",
-        "Yayong",
-        "Zhaoshu",
-        "Bei Dao"
-      ],
-      "Start_Date": "December 10, 2006",
-      "End_Date": "December 15, 2006",
-      "Num": "140 sheds",
-      "Annotation": "Elsewhere in Southeastern Asia"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "38",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "30",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": "Malaysia",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "8",
-      "Annotation": "Elsewhere in Southeastern Asia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Tacloban",
-        "Capiz"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Capiz"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Malaysia",
-      "Locations": [
-        "Segamat",
-        "Kota Tinggi"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "8",
-      "Annotation": "Elsewhere in Southeastern Asia"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "December 9, 2006",
-      "End_Date": "December 18, 2006",
-      "Num": "91,121",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": "Vietnam",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Elsewhere in Southeastern Asia"
-    },
-    {
-      "Administrative_Areas": "Paracel Islands",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "49",
-      "Annotation": "Elsewhere in Southeastern Asia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Albay"
-      ],
-      "Start_Date": "December 9, 2006",
-      "End_Date": "December 18, 2006",
-      "Num": "91,121",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Vietnam",
-      "Locations": [
-        "central coastline"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Elsewhere in Southeastern Asia"
-    },
-    {
-      "Administrative_Area": "Paracel Islands",
-      "Locations": [
-        "Yongxing",
-        "Yayong",
-        "Zhaoshu",
-        "Bei Dao"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "49",
-      "Annotation": "Elsewhere in Southeastern Asia"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "36,542 houses were damaged by Utor, of which 9,439 were destroyed",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Occidental Mindoro"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "422 homes were destroyed and an additional 1,421 damaged",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Capiz",
-        "Aklan"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "44",
-    "Total_Injuries_Annotation": "Philippines"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "44",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "44",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Philippines"
-      ],
-      "Start_Date": "December 9, 2006",
-      "End_Date": "December 15, 2006",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": [
-        "Malaysia"
-      ],
-      "Start_Date": "December 9, 2006",
-      "End_Date": "December 15, 2006",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Elsewhere in Southeastern Asia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Albay",
-        "Cebu",
-        "Leyte",
-        "Boracay",
-        "Tacloban",
-        "Capiz",
-        "Occidental Mindoro",
-        "Oriental Mindoro",
-        "Aklan",
-        "Central Visayas"
-      ],
-      "Start_Date": "December 9, 2006",
-      "End_Date": "December 15, 2006",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Malaysia",
-      "Locations": [
-        "Pahang",
-        "Johor",
-        "Malacca",
-        "Segamat",
-        "Kota Tinggi"
-      ],
-      "Start_Date": "December 9, 2006",
-      "End_Date": "December 15, 2006",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Elsewhere in Southeastern Asia"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$15.8 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "December 9, 2006",
-      "End_Date": "December 15, 2006",
-      "Num": "$15.8 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Aklan"
-      ],
-      "Start_Date": "December 9, 2006",
-      "End_Date": "December 15, 2006",
-      "Num": "$1 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Central Visayas"
-      ],
-      "Start_Date": "December 9, 2006",
-      "End_Date": "December 15, 2006",
-      "Num": "$7 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Philippines|Elsewhere in Southeastern Asia",
-  "Start_Date": "December 7, 2006",
-  "End_Date": "December 15, 2006",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Philippines",
-    "Paracel Islands",
-    "Malaysia",
-    "Vietnam",
-    "Thailand"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "December 9, 2006",
+        "End_Date": "December 15, 2006",
+        "Num": "$15.8 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Aklan"
+        ],
+        "Start_Date": "December 9, 2006",
+        "End_Date": "December 15, 2006",
+        "Num": "$1 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Central Visayas"
+        ],
+        "Start_Date": "December 9, 2006",
+        "End_Date": "December 15, 2006",
+        "Num": "$7 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Philippines|Elsewhere in Southeastern Asia",
+    "Start_Date": "December 7, 2006",
+    "End_Date": "December 15, 2006",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Philippines",
+      "Paracel Islands",
+      "Malaysia",
+      "Vietnam",
+      "Thailand"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

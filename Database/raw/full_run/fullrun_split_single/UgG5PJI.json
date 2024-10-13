@@ -1,424 +1,426 @@
-{
-  "Event_ID": "UgG5PJI",
-  "Sources": "https://en.wikipedia.org/wiki/1999_Las_Vegas_flood",
-  "Event_Names": "1999 Las Vegas flood",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Las Vegas Valley"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "NULL",
-      "Num": "353 homes damaged, 5 homes destroyed, 163 rescues, 2 deaths",
-      "Annotation": "Damage and effects"
+[
+  {
+    "Event_ID": "UgG5PJI",
+    "Sources": "https://en.wikipedia.org/wiki/1999_Las_Vegas_flood",
+    "Event_Names": "1999 Las Vegas flood",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Miracle Mile Mobile Home Park"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "NULL",
-      "Num": "540 trailers affected, two dozen declared uninhabitable",
-      "Annotation": "Damage and effects"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Las Vegas Valley"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "NULL",
+        "Num": "353 homes damaged, 5 homes destroyed, 163 rescues, 2 deaths",
+        "Annotation": "Damage and effects"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Miracle Mile Mobile Home Park"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "NULL",
+        "Num": "540 trailers affected, two dozen declared uninhabitable",
+        "Annotation": "Damage and effects"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Caesars Palace"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Damage and effects"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Imperial Palace"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Damage and effects"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "McCarran International Airport"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "NULL",
+        "Num": "20 departing flights delayed, 4 incoming flights diverted",
+        "Annotation": "Damage and effects"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Las Vegas Airport"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Damage and effects"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Sunrise Hospital & Medical Center"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Damage and effects"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "MountainView Hospital"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Damage and effects"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Meadows Mall",
+          "Boulevard Mall"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "NULL",
+        "Num": "Roughly half of retailers closed",
+        "Annotation": "Damage and effects"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "353 homes and destroyed 5 others",
+      "Total_Buildings_Damaged_Annotation": "Damage and effects"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Caesars Palace"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Damage and effects"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "July 8, 1999",
+        "Num": "353 homes and destroyed 5 others",
+        "Annotation": "Damage and effects"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Las Vegas Valley"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "July 8, 1999",
+        "Num": "353 homes and destroyed 5 others",
+        "Annotation": "Damage and effects"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Miracle Mile Mobile Home Park"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "July 8, 1999",
+        "Num": "two dozen mobile homes declared uninhabitable",
+        "Annotation": "Damage and effects"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Caesars Palace"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "July 8, 1999",
+        "Num": "NULL",
+        "Annotation": "Damage and effects"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Imperial Palace"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "July 8, 1999",
+        "Num": "NULL",
+        "Annotation": "Damage and effects"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "The Resort at Summerlin"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "July 8, 1999",
+        "Num": "NULL",
+        "Annotation": "Damage and effects"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Sunrise Hospital & Medical Center"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "July 8, 1999",
+        "Num": "NULL",
+        "Annotation": "Damage and effects"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "MountainView Hospital"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "July 8, 1999",
+        "Num": "NULL",
+        "Annotation": "Damage and effects"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Meadows Mall"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "July 8, 1999",
+        "Num": "NULL",
+        "Annotation": "Damage and effects"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Boulevard Mall"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "July 8, 1999",
+        "Num": "NULL",
+        "Annotation": "Damage and effects"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "2",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Imperial Palace"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Damage and effects"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "July 8, 1999",
+        "Num": "2",
+        "Annotation": "Damage and effects"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Las Vegas Valley"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "July 8, 1999",
+        "Num": "2",
+        "Annotation": "Damage and effects"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "McCarran International Airport"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "NULL",
-      "Num": "20 departing flights delayed, 4 incoming flights diverted",
-      "Annotation": "Damage and effects"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Response and aftermath"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Miracle Mile Mobile Home Park"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Damage and effects"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "North Las Vegas Airport"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Damage and effects"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Miracle Mile Mobile Home Park"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "NULL",
+        "Num": "two dozen",
+        "Annotation": "Damage and effects"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Sunrise Hospital & Medical Center"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Damage and effects"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "July 8, 1999",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Las Vegas Valley"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "July 8, 1999",
+        "Num": "NULL",
+        "Annotation": "Damage and effects"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "MountainView Hospital"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Damage and effects"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "July 8, 1999",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Las Vegas Valley"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "July 8, 1999",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Damage and effects"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "NULL",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Meadows Mall",
-        "Boulevard Mall"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "NULL",
-      "Num": "Roughly half of retailers closed",
-      "Annotation": "Damage and effects"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "353 homes and destroyed 5 others",
-    "Total_Buildings_Damaged_Annotation": "Damage and effects"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "July 8, 1999",
-      "Num": "353 homes and destroyed 5 others",
-      "Annotation": "Damage and effects"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Las Vegas Valley"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "July 8, 1999",
-      "Num": "353 homes and destroyed 5 others",
-      "Annotation": "Damage and effects"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Miracle Mile Mobile Home Park"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "July 8, 1999",
-      "Num": "two dozen mobile homes declared uninhabitable",
-      "Annotation": "Damage and effects"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Caesars Palace"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "July 8, 1999",
-      "Num": "NULL",
-      "Annotation": "Damage and effects"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Imperial Palace"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "July 8, 1999",
-      "Num": "NULL",
-      "Annotation": "Damage and effects"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "The Resort at Summerlin"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "July 8, 1999",
-      "Num": "NULL",
-      "Annotation": "Damage and effects"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Sunrise Hospital & Medical Center"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "July 8, 1999",
-      "Num": "NULL",
-      "Annotation": "Damage and effects"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "MountainView Hospital"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "July 8, 1999",
-      "Num": "NULL",
-      "Annotation": "Damage and effects"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Meadows Mall"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "July 8, 1999",
-      "Num": "NULL",
-      "Annotation": "Damage and effects"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Boulevard Mall"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "July 8, 1999",
-      "Num": "NULL",
-      "Annotation": "Damage and effects"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "2",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "July 8, 1999",
-      "Num": "2",
-      "Annotation": "Damage and effects"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Las Vegas Valley"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "July 8, 1999",
-      "Num": "2",
-      "Annotation": "Damage and effects"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Response and aftermath"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Miracle Mile Mobile Home Park"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Damage and effects"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Miracle Mile Mobile Home Park"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "NULL",
-      "Num": "two dozen",
-      "Annotation": "Damage and effects"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "July 8, 1999",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Las Vegas Valley"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "July 8, 1999",
-      "Num": "NULL",
-      "Annotation": "Damage and effects"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "July 8, 1999",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Las Vegas Valley"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "July 8, 1999",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Damage and effects"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "NULL",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "NULL",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "July 8, 1999",
-      "Num": "$20.5 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Las Vegas Valley"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "July 8, 1999",
-      "Num": "$20.5 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Info_Box"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Miracle Mile Mobile Home Park"
-      ],
-      "Start_Date": "July 8, 1999",
-      "End_Date": "July 8, 1999",
-      "Num": "$1.1 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Response and aftermath"
-    }
-  ],
-  "Main_Event": "Flood",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Flood",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "July 8, 1999",
-  "End_Date": "July 8, 1999",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "United States"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "July 8, 1999",
+        "Num": "$20.5 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Las Vegas Valley"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "July 8, 1999",
+        "Num": "$20.5 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Miracle Mile Mobile Home Park"
+        ],
+        "Start_Date": "July 8, 1999",
+        "End_Date": "July 8, 1999",
+        "Num": "$1.1 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Response and aftermath"
+      }
+    ],
+    "Main_Event": "Flood",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Flood",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "July 8, 1999",
+    "End_Date": "July 8, 1999",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "United States"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

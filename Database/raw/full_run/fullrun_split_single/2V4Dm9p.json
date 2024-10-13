@@ -1,353 +1,355 @@
-{
-  "Event_ID": "2V4Dm9p",
-  "Sources": "https://en.wikipedia.org/wiki/St._Francis_Dam",
-  "Event_Names": "St. Francis Dam",
-  "Total_Summary_Affected": {
-    "Total_Affected": "at least 431",
-    "Total_Affected_Annotation": "St. Francis Dam"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "March 12, 1928",
-      "End_Date": "NULL",
-      "Num": "at least 431",
-      "Annotation": "St. Francis Dam"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "San Francisquito Canyon",
-        "Santa Clara River Valley",
-        "Santa Paula",
-        "Ventura",
-        "Oxnard",
-        "Valencia",
-        "Newhall",
-        "Fillmore",
-        "Bardsdale"
-      ],
-      "Start_Date": "March 12, 1928",
-      "End_Date": "NULL",
-      "Num": "at least 431",
-      "Annotation": "Collapse and flood wave"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "1928-03-12",
-      "End_Date": "1928-03-13",
-      "Num": "NULL",
-      "Annotation": "Collapse and flood wave"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Powerhouse No. 2"
-      ],
-      "Start_Date": "1928-03-12",
-      "End_Date": "1928-03-12",
-      "Num": "NULL",
-      "Annotation": "Collapse and flood wave"
+[
+  {
+    "Event_ID": "2V4Dm9p",
+    "Sources": "https://en.wikipedia.org/wiki/St._Francis_Dam",
+    "Event_Names": "St. Francis Dam",
+    "Total_Summary_Affected": {
+      "Total_Affected": "at least 431",
+      "Total_Affected_Annotation": "St. Francis Dam"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Valencia",
-        "Newhall"
-      ],
-      "Start_Date": "1928-03-12",
-      "End_Date": "1928-03-12",
-      "Num": "NULL",
-      "Annotation": "Collapse and flood wave"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "March 12, 1928",
+        "End_Date": "NULL",
+        "Num": "at least 431",
+        "Annotation": "St. Francis Dam"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "San Francisquito Canyon",
+          "Santa Clara River Valley",
+          "Santa Paula",
+          "Ventura",
+          "Oxnard",
+          "Valencia",
+          "Newhall",
+          "Fillmore",
+          "Bardsdale"
+        ],
+        "Start_Date": "March 12, 1928",
+        "End_Date": "NULL",
+        "Num": "at least 431",
+        "Annotation": "Collapse and flood wave"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Castaic Junction"
-      ],
-      "Start_Date": "1928-03-12",
-      "End_Date": "1928-03-12",
-      "Num": "NULL",
-      "Annotation": "Collapse and flood wave"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "1928-03-12",
+        "End_Date": "1928-03-13",
+        "Num": "NULL",
+        "Annotation": "Collapse and flood wave"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Powerhouse No. 2"
+        ],
+        "Start_Date": "1928-03-12",
+        "End_Date": "1928-03-12",
+        "Num": "NULL",
+        "Annotation": "Collapse and flood wave"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Valencia",
+          "Newhall"
+        ],
+        "Start_Date": "1928-03-12",
+        "End_Date": "1928-03-12",
+        "Num": "NULL",
+        "Annotation": "Collapse and flood wave"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Castaic Junction"
+        ],
+        "Start_Date": "1928-03-12",
+        "End_Date": "1928-03-12",
+        "Num": "NULL",
+        "Annotation": "Collapse and flood wave"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Fillmore",
+          "Bardsdale",
+          "Santa Paula"
+        ],
+        "Start_Date": "1928-03-12",
+        "End_Date": "1928-03-12",
+        "Num": "NULL",
+        "Annotation": "Collapse and flood wave"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "at least 431",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Fillmore",
-        "Bardsdale",
-        "Santa Paula"
-      ],
-      "Start_Date": "1928-03-12",
-      "End_Date": "1928-03-12",
-      "Num": "NULL",
-      "Annotation": "Collapse and flood wave"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "at least 431",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "March 12, 1928",
-      "End_Date": "March 13, 1928",
-      "Num": "at least 431",
-      "Annotation": "Collapse and flood wave"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Powerhouse No. 2",
-        "Santa Clara River Valley",
-        "Santa Paula",
-        "Pacific Ocean"
-      ],
-      "Start_Date": "March 12, 1928",
-      "End_Date": "March 13, 1928",
-      "Num": "64",
-      "Annotation": "Collapse and flood wave"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "March 12, 1928",
+        "End_Date": "March 13, 1928",
+        "Num": "at least 431",
+        "Annotation": "Collapse and flood wave"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Powerhouse No. 2",
+          "Santa Clara River Valley",
+          "Santa Paula",
+          "Pacific Ocean"
+        ],
+        "Start_Date": "March 12, 1928",
+        "End_Date": "March 13, 1928",
+        "Num": "64",
+        "Annotation": "Collapse and flood wave"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Santa Clara River Valley"
+        ],
+        "Start_Date": "March 12, 1928",
+        "End_Date": "March 13, 1928",
+        "Num": "84",
+        "Annotation": "Collapse and flood wave"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Santa Paula"
+        ],
+        "Start_Date": "March 12, 1928",
+        "End_Date": "March 13, 1928",
+        "Num": "NULL",
+        "Annotation": "Collapse and flood wave"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Pacific Ocean"
+        ],
+        "Start_Date": "March 12, 1928",
+        "End_Date": "March 13, 1928",
+        "Num": "NULL",
+        "Annotation": "Collapse and flood wave"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Santa Clara River Valley"
-      ],
-      "Start_Date": "March 12, 1928",
-      "End_Date": "March 13, 1928",
-      "Num": "84",
-      "Annotation": "Collapse and flood wave"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "March 12, 1928",
+        "End_Date": "March 13, 1928",
+        "Num": "NULL",
+        "Annotation": "Collapse and flood wave"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Santa Clara River Valley",
+          "Fillmore",
+          "Bardsdale",
+          "Santa Paula"
+        ],
+        "Start_Date": "March 12, 1928",
+        "End_Date": "March 13, 1928",
+        "Num": "NULL",
+        "Annotation": "Collapse and flood wave"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Santa Paula"
-      ],
-      "Start_Date": "March 12, 1928",
-      "End_Date": "March 13, 1928",
-      "Num": "NULL",
-      "Annotation": "Collapse and flood wave"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "March 12, 1928",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Collapse and flood wave"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Santa Clara River Valley",
+          "Fillmore",
+          "Bardsdale",
+          "Santa Paula"
+        ],
+        "Start_Date": "March 12, 1928",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Collapse and flood wave"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Pacific Ocean"
-      ],
-      "Start_Date": "March 12, 1928",
-      "End_Date": "March 13, 1928",
-      "Num": "NULL",
-      "Annotation": "Collapse and flood wave"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "March 12, 1928",
-      "End_Date": "March 13, 1928",
-      "Num": "NULL",
-      "Annotation": "Collapse and flood wave"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Santa Clara River Valley",
-        "Fillmore",
-        "Bardsdale",
-        "Santa Paula"
-      ],
-      "Start_Date": "March 12, 1928",
-      "End_Date": "March 13, 1928",
-      "Num": "NULL",
-      "Annotation": "Collapse and flood wave"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "March 12, 1928",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Collapse and flood wave"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Santa Clara River Valley",
-        "Fillmore",
-        "Bardsdale",
-        "Santa Paula"
-      ],
-      "Start_Date": "March 12, 1928",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Collapse and flood wave"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "March 12, 1928",
-      "End_Date": "March 13, 1928",
-      "Num": "NULL",
-      "Annotation": "Collapse and flood wave"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "San Francisquito Canyon"
-      ],
-      "Start_Date": "March 12, 1928",
-      "End_Date": "March 13, 1928",
-      "Num": "NULL",
-      "Annotation": "Collapse and flood wave"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "March 12, 1928",
+        "End_Date": "March 13, 1928",
+        "Num": "NULL",
+        "Annotation": "Collapse and flood wave"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "San Francisquito Canyon"
+        ],
+        "Start_Date": "March 12, 1928",
+        "End_Date": "March 13, 1928",
+        "Num": "NULL",
+        "Annotation": "Collapse and flood wave"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Santa Clara River Valley"
+        ],
+        "Start_Date": "March 12, 1928",
+        "End_Date": "March 13, 1928",
+        "Num": "NULL",
+        "Annotation": "Collapse and flood wave"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Santa Paula"
+        ],
+        "Start_Date": "March 12, 1928",
+        "End_Date": "March 13, 1928",
+        "Num": "NULL",
+        "Annotation": "Collapse and flood wave"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Santa Clara River Valley"
-      ],
-      "Start_Date": "March 12, 1928",
-      "End_Date": "March 13, 1928",
-      "Num": "NULL",
-      "Annotation": "Collapse and flood wave"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "1928-03-12",
+        "End_Date": "1928-03-13",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Collapse and flood wave"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "San Francisquito Canyon",
+          "Santa Clara River Valley",
+          "Santa Paula",
+          "Ventura"
+        ],
+        "Start_Date": "1928-03-12",
+        "End_Date": "1928-03-13",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Collapse and flood wave"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "NULL",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Santa Paula"
-      ],
-      "Start_Date": "March 12, 1928",
-      "End_Date": "March 13, 1928",
-      "Num": "NULL",
-      "Annotation": "Collapse and flood wave"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "1928-03-12",
-      "End_Date": "1928-03-13",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Collapse and flood wave"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "San Francisquito Canyon",
-        "Santa Clara River Valley",
-        "Santa Paula",
-        "Ventura"
-      ],
-      "Start_Date": "1928-03-12",
-      "End_Date": "1928-03-13",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Collapse and flood wave"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "NULL",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "NULL",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "March 12, 1928",
-      "End_Date": "March 13, 1928",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Collapse and flood wave"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "San Francisquito Canyon",
-        "Santa Clara River Valley",
-        "Santa Paula",
-        "Ventura",
-        "Oxnard"
-      ],
-      "Start_Date": "March 12, 1928",
-      "End_Date": "March 13, 1928",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Collapse and flood wave"
-    }
-  ],
-  "Main_Event": "Flood",
-  "Main_Event_Annotation": "header: Collapse and flood wave",
-  "Hazards": "Flood",
-  "Hazards_Annotation": "header: Collapse and flood wave",
-  "Start_Date": "1924",
-  "End_Date": "1929",
-  "Time_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "March 12, 1928",
+        "End_Date": "March 13, 1928",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Collapse and flood wave"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "San Francisquito Canyon",
+          "Santa Clara River Valley",
+          "Santa Paula",
+          "Ventura",
+          "Oxnard"
+        ],
+        "Start_Date": "March 12, 1928",
+        "End_Date": "March 13, 1928",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Collapse and flood wave"
+      }
+    ],
+    "Main_Event": "Flood",
+    "Main_Event_Annotation": "header: Collapse and flood wave",
+    "Hazards": "Flood",
+    "Hazards_Annotation": "header: Collapse and flood wave",
+    "Start_Date": "1924",
+    "End_Date": "1929",
+    "Time_Annotation": "Info_Box"
+  }
+]

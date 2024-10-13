@@ -1,595 +1,597 @@
-{
-  "Event_ID": "3E8Dmb9",
-  "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Gert_(2005)",
-  "Event_Names": "Tropical Storm Gert (2005)",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "July 23, 2005",
-      "End_Date": "July 25, 2005",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Naranjos Amatl\u00e1n",
-        "Tamiahua"
-      ],
-      "Start_Date": "July 23, 2005",
-      "End_Date": "July 25, 2005",
-      "Num": "about 1,000 people",
-      "Annotation": "Preparations"
+[
+  {
+    "Event_ID": "3E8Dmb9",
+    "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Gert_(2005)",
+    "Event_Names": "Tropical Storm Gert (2005)",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Tamaulipas"
-      ],
-      "Start_Date": "July 23, 2005",
-      "End_Date": "July 25, 2005",
-      "Num": "about 6,000 people",
-      "Annotation": "Preparations"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "July 23, 2005",
+        "End_Date": "July 25, 2005",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Naranjos Amatl\u00e1n",
+          "Tamiahua"
+        ],
+        "Start_Date": "July 23, 2005",
+        "End_Date": "July 25, 2005",
+        "Num": "about 1,000 people",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Tamaulipas"
+        ],
+        "Start_Date": "July 23, 2005",
+        "End_Date": "July 25, 2005",
+        "Num": "about 6,000 people",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Reynosa"
+        ],
+        "Start_Date": "July 23, 2005",
+        "End_Date": "July 25, 2005",
+        "Num": "180 people",
+        "Annotation": "Tamaulipas"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "R\u00edo Bravo"
+        ],
+        "Start_Date": "July 23, 2005",
+        "End_Date": "July 25, 2005",
+        "Num": "50 families",
+        "Annotation": "Tamaulipas"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Altamira"
+        ],
+        "Start_Date": "July 23, 2005",
+        "End_Date": "July 25, 2005",
+        "Num": "200 families",
+        "Annotation": "Tamaulipas"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Nuevo Le\u00f3n"
+        ],
+        "Start_Date": "July 23, 2005",
+        "End_Date": "July 25, 2005",
+        "Num": "about 6,000 residents",
+        "Annotation": "Nuevo Le\u00f3n"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Montemorelos"
+        ],
+        "Start_Date": "July 23, 2005",
+        "End_Date": "July 25, 2005",
+        "Num": "100 collective farms",
+        "Annotation": "Nuevo Le\u00f3n"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "San Vicente Tancuayalab",
+          "Valles",
+          "Ebano"
+        ],
+        "Start_Date": "July 23, 2005",
+        "End_Date": "July 25, 2005",
+        "Num": "100 people",
+        "Annotation": "Nuevo Le\u00f3n"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Reynosa"
-      ],
-      "Start_Date": "July 23, 2005",
-      "End_Date": "July 25, 2005",
-      "Num": "180 people",
-      "Annotation": "Tamaulipas"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "July 23, 2005",
+        "End_Date": "July 25, 2005",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Valle Hermoso"
+        ],
+        "Start_Date": "July 23, 2005",
+        "End_Date": "July 25, 2005",
+        "Num": "two schools",
+        "Annotation": "Tamaulipas"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Reynosa"
+        ],
+        "Start_Date": "July 23, 2005",
+        "End_Date": "July 25, 2005",
+        "Num": "NULL",
+        "Annotation": "Tamaulipas"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "R\u00edo Bravo"
+        ],
+        "Start_Date": "July 23, 2005",
+        "End_Date": "July 25, 2005",
+        "Num": "approximately 90% of the residences in the farms",
+        "Annotation": "Tamaulipas"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Altamira"
+        ],
+        "Start_Date": "July 23, 2005",
+        "End_Date": "July 25, 2005",
+        "Num": "NULL",
+        "Annotation": "Tamaulipas"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Burgos",
+          "Cruillas",
+          "M\u00e9ndez"
+        ],
+        "Start_Date": "July 23, 2005",
+        "End_Date": "July 25, 2005",
+        "Num": "NULL",
+        "Annotation": "Tamaulipas"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Mier"
+        ],
+        "Start_Date": "July 23, 2005",
+        "End_Date": "July 25, 2005",
+        "Num": "a river bridge",
+        "Annotation": "Tamaulipas"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Montemorelos"
+        ],
+        "Start_Date": "July 23, 2005",
+        "End_Date": "July 25, 2005",
+        "Num": "one building",
+        "Annotation": "Nuevo Le\u00f3n"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "1",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "R\u00edo Bravo"
-      ],
-      "Start_Date": "July 23, 2005",
-      "End_Date": "July 25, 2005",
-      "Num": "50 families",
-      "Annotation": "Tamaulipas"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "La Silla River"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Altamira"
-      ],
-      "Start_Date": "July 23, 2005",
-      "End_Date": "July 25, 2005",
-      "Num": "200 families",
-      "Annotation": "Tamaulipas"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Naranjos Amatl\u00e1n",
+          "Tamiahua"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "about 1,000 people",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Tamaulipas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "about 6,000 people",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Reynosa"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "180 people",
+        "Annotation": "Tamaulipas"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "R\u00edo Bravo"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "50 families",
+        "Annotation": "Tamaulipas"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Altamira"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "200 families",
+        "Annotation": "Tamaulipas"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Nuevo Le\u00f3n"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "about 6,000 residents",
+        "Annotation": "Nuevo Le\u00f3n"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "San Vicente Tancuayalab",
+          "Valles",
+          "Ebano"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "100 people",
+        "Annotation": "Nuevo Le\u00f3n"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Nuevo Le\u00f3n"
-      ],
-      "Start_Date": "July 23, 2005",
-      "End_Date": "July 25, 2005",
-      "Num": "about 6,000 residents",
-      "Annotation": "Nuevo Le\u00f3n"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Naranjos Amatl\u00e1n",
+          "Tamiahua"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "about 1,000 people",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Tamaulipas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "about 6,000 people",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Reynosa"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "180 people",
+        "Annotation": "Tamaulipas"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "R\u00edo Bravo"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "50 families",
+        "Annotation": "Tamaulipas"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Altamira"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "200 families",
+        "Annotation": "Tamaulipas"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Nuevo Le\u00f3n"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "about 6,000 residents",
+        "Annotation": "Nuevo Le\u00f3n"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Montemorelos"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "100 collective farms",
+        "Annotation": "Nuevo Le\u00f3n"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "San Vicente Tancuayalab",
+          "Valles",
+          "Ebano"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "100 people",
+        "Annotation": "Nuevo Le\u00f3n"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Montemorelos"
-      ],
-      "Start_Date": "July 23, 2005",
-      "End_Date": "July 25, 2005",
-      "Num": "100 collective farms",
-      "Annotation": "Nuevo Le\u00f3n"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Matamoros",
+          "Valle Hermoso",
+          "Reynosa",
+          "San Fernando",
+          "Mier",
+          "R\u00edo Bravo",
+          "Altamira",
+          "Burgos",
+          "Cruillas",
+          "M\u00e9ndez",
+          "Soto la Marina",
+          "Mante",
+          "San Carlos"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Tamaulipas"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Montemorelos",
+          "San Vicente Tancuayalab",
+          "Valles",
+          "Ebano"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Nuevo Le\u00f3n"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "San Vicente Tancuayalab",
-        "Valles",
-        "Ebano"
-      ],
-      "Start_Date": "July 23, 2005",
-      "End_Date": "July 25, 2005",
-      "Num": "100 people",
-      "Annotation": "Nuevo Le\u00f3n"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "July 23, 2005",
-      "End_Date": "July 25, 2005",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Valle Hermoso"
-      ],
-      "Start_Date": "July 23, 2005",
-      "End_Date": "July 25, 2005",
-      "Num": "two schools",
-      "Annotation": "Tamaulipas"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "July 23, 2005",
+        "End_Date": "July 25, 2005",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Matamoros",
+          "Valle Hermoso",
+          "Reynosa",
+          "San Fernando",
+          "Mier",
+          "R\u00edo Bravo",
+          "Altamira",
+          "Burgos",
+          "Cruillas",
+          "M\u00e9ndez",
+          "Soto la Marina",
+          "Mante",
+          "San Carlos"
+        ],
+        "Start_Date": "July 23, 2005",
+        "End_Date": "July 25, 2005",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tamaulipas"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Montemorelos"
+        ],
+        "Start_Date": "July 23, 2005",
+        "End_Date": "July 25, 2005",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Nuevo Le\u00f3n"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$6 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Reynosa"
-      ],
-      "Start_Date": "July 23, 2005",
-      "End_Date": "July 25, 2005",
-      "Num": "NULL",
-      "Annotation": "Tamaulipas"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "R\u00edo Bravo"
-      ],
-      "Start_Date": "July 23, 2005",
-      "End_Date": "July 25, 2005",
-      "Num": "approximately 90% of the residences in the farms",
-      "Annotation": "Tamaulipas"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Altamira"
-      ],
-      "Start_Date": "July 23, 2005",
-      "End_Date": "July 25, 2005",
-      "Num": "NULL",
-      "Annotation": "Tamaulipas"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Burgos",
-        "Cruillas",
-        "M\u00e9ndez"
-      ],
-      "Start_Date": "July 23, 2005",
-      "End_Date": "July 25, 2005",
-      "Num": "NULL",
-      "Annotation": "Tamaulipas"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Mier"
-      ],
-      "Start_Date": "July 23, 2005",
-      "End_Date": "July 25, 2005",
-      "Num": "a river bridge",
-      "Annotation": "Tamaulipas"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Montemorelos"
-      ],
-      "Start_Date": "July 23, 2005",
-      "End_Date": "July 25, 2005",
-      "Num": "one building",
-      "Annotation": "Nuevo Le\u00f3n"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "1",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "La Silla River"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Naranjos Amatl\u00e1n",
-        "Tamiahua"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "about 1,000 people",
-      "Annotation": "Preparations"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Tamaulipas"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "about 6,000 people",
-      "Annotation": "Preparations"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Reynosa"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "180 people",
-      "Annotation": "Tamaulipas"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "R\u00edo Bravo"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "50 families",
-      "Annotation": "Tamaulipas"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Altamira"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "200 families",
-      "Annotation": "Tamaulipas"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Nuevo Le\u00f3n"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "about 6,000 residents",
-      "Annotation": "Nuevo Le\u00f3n"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "San Vicente Tancuayalab",
-        "Valles",
-        "Ebano"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "100 people",
-      "Annotation": "Nuevo Le\u00f3n"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Naranjos Amatl\u00e1n",
-        "Tamiahua"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "about 1,000 people",
-      "Annotation": "Preparations"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Tamaulipas"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "about 6,000 people",
-      "Annotation": "Preparations"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Reynosa"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "180 people",
-      "Annotation": "Tamaulipas"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "R\u00edo Bravo"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "50 families",
-      "Annotation": "Tamaulipas"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Altamira"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "200 families",
-      "Annotation": "Tamaulipas"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Nuevo Le\u00f3n"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "about 6,000 residents",
-      "Annotation": "Nuevo Le\u00f3n"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Montemorelos"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "100 collective farms",
-      "Annotation": "Nuevo Le\u00f3n"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "San Vicente Tancuayalab",
-        "Valles",
-        "Ebano"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "100 people",
-      "Annotation": "Nuevo Le\u00f3n"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Matamoros",
-        "Valle Hermoso",
-        "Reynosa",
-        "San Fernando",
-        "Mier",
-        "R\u00edo Bravo",
-        "Altamira",
-        "Burgos",
-        "Cruillas",
-        "M\u00e9ndez",
-        "Soto la Marina",
-        "Mante",
-        "San Carlos"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Tamaulipas"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Montemorelos",
-        "San Vicente Tancuayalab",
-        "Valles",
-        "Ebano"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Nuevo Le\u00f3n"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "July 23, 2005",
-      "End_Date": "July 25, 2005",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Matamoros",
-        "Valle Hermoso",
-        "Reynosa",
-        "San Fernando",
-        "Mier",
-        "R\u00edo Bravo",
-        "Altamira",
-        "Burgos",
-        "Cruillas",
-        "M\u00e9ndez",
-        "Soto la Marina",
-        "Mante",
-        "San Carlos"
-      ],
-      "Start_Date": "July 23, 2005",
-      "End_Date": "July 25, 2005",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Tamaulipas"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Montemorelos"
-      ],
-      "Start_Date": "July 23, 2005",
-      "End_Date": "July 25, 2005",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Nuevo Le\u00f3n"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$6 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "July 23, 2005",
-      "End_Date": "July 25, 2005",
-      "Num": "$6 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Matamoros",
-        "Valle Hermoso",
-        "Reynosa",
-        "San Fernando",
-        "Mier",
-        "R\u00edo Bravo",
-        "Altamira",
-        "Burgos",
-        "Cruillas",
-        "M\u00e9ndez",
-        "Soto la Marina",
-        "Mante",
-        "San Carlos"
-      ],
-      "Start_Date": "July 23, 2005",
-      "End_Date": "July 25, 2005",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Tamaulipas"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Montemorelos",
-        "San Vicente Tancuayalab",
-        "Valles",
-        "Ebano"
-      ],
-      "Start_Date": "July 23, 2005",
-      "End_Date": "July 25, 2005",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Nuevo Le\u00f3n"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Impact",
-  "Start_Date": "July 23, 2005",
-  "End_Date": "July 25, 2005",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Mexico"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "July 23, 2005",
+        "End_Date": "July 25, 2005",
+        "Num": "$6 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Matamoros",
+          "Valle Hermoso",
+          "Reynosa",
+          "San Fernando",
+          "Mier",
+          "R\u00edo Bravo",
+          "Altamira",
+          "Burgos",
+          "Cruillas",
+          "M\u00e9ndez",
+          "Soto la Marina",
+          "Mante",
+          "San Carlos"
+        ],
+        "Start_Date": "July 23, 2005",
+        "End_Date": "July 25, 2005",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tamaulipas"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Montemorelos",
+          "San Vicente Tancuayalab",
+          "Valles",
+          "Ebano"
+        ],
+        "Start_Date": "July 23, 2005",
+        "End_Date": "July 25, 2005",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Nuevo Le\u00f3n"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Impact",
+    "Start_Date": "July 23, 2005",
+    "End_Date": "July 25, 2005",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Mexico"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

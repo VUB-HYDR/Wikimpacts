@@ -1,275 +1,277 @@
-{
-  "Event_ID": "LNUewKh",
-  "Sources": "https://en.wikipedia.org/wiki/Portland_Gale",
-  "Event_Names": "Portland Gale",
-  "Total_Summary_Affected": {
-    "Total_Affected": "more than 400 people",
-    "Total_Affected_Annotation": "Portland Gale"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "November 26, 1898",
-      "End_Date": "November 27, 1898",
-      "Num": "NULL",
-      "Annotation": "Portland Gale"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "New England"
-      ],
-      "Start_Date": "November 26, 1898",
-      "End_Date": "November 27, 1898",
-      "Num": "more than 400 people",
-      "Annotation": "Portland Gale"
+[
+  {
+    "Event_ID": "LNUewKh",
+    "Sources": "https://en.wikipedia.org/wiki/Portland_Gale",
+    "Event_Names": "Portland Gale",
+    "Total_Summary_Affected": {
+      "Total_Affected": "more than 400 people",
+      "Total_Affected_Annotation": "Portland Gale"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Boston, Massachusetts"
-      ],
-      "Start_Date": "November 26, 1898",
-      "End_Date": "November 26, 1898",
-      "Num": "192 passengers and crew",
-      "Annotation": "Loss of the SS Portland"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "Dozens of houses",
-    "Total_Buildings_Damaged_Annotation": "Damage to coastal towns"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "November 26, 1898",
-      "End_Date": "November 27, 1898",
-      "Num": "NULL",
-      "Annotation": "Damage to coastal towns"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Scituate",
-        "Hull"
-      ],
-      "Start_Date": "November 26, 1898",
-      "End_Date": "November 27, 1898",
-      "Num": "Dozens of houses",
-      "Annotation": "Damage to coastal towns"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "more than 400",
-    "Total_Deaths_Annotation": "Portland Gale"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "November 26, 1898",
-      "End_Date": "November 27, 1898",
-      "Num": "more than 400",
-      "Annotation": "Portland Gale"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "off the coast of New England"
-      ],
-      "Start_Date": "November 26, 1898",
-      "End_Date": "November 27, 1898",
-      "Num": "more than 400",
-      "Annotation": "Portland Gale"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "November 26, 1898",
+        "End_Date": "November 27, 1898",
+        "Num": "NULL",
+        "Annotation": "Portland Gale"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New England"
+        ],
+        "Start_Date": "November 26, 1898",
+        "End_Date": "November 27, 1898",
+        "Num": "more than 400 people",
+        "Annotation": "Portland Gale"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Boston, Massachusetts"
+        ],
+        "Start_Date": "November 26, 1898",
+        "End_Date": "November 26, 1898",
+        "Num": "192 passengers and crew",
+        "Annotation": "Loss of the SS Portland"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "Dozens of houses",
+      "Total_Buildings_Damaged_Annotation": "Damage to coastal towns"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "off the coast of New England"
-      ],
-      "Start_Date": "November 26, 1898",
-      "End_Date": "November 26, 1898",
-      "Num": "192",
-      "Annotation": "Loss of the SS Portland"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "November 26, 1898",
-      "End_Date": "November 27, 1898",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Scituate, Massachusetts"
-      ],
-      "Start_Date": "November 26, 1898",
-      "End_Date": "November 27, 1898",
-      "Num": "NULL",
-      "Annotation": "Change to the course of the North River"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "November 26, 1898",
-      "End_Date": "November 27, 1898",
-      "Num": "NULL",
-      "Annotation": "Damage to coastal towns"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "South Shore of Massachusetts"
-      ],
-      "Start_Date": "November 26, 1898",
-      "End_Date": "November 27, 1898",
-      "Num": "Dozens of houses were destroyed in each of the towns",
-      "Annotation": "Damage to coastal towns"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "NULL",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "1898-11-26",
-      "End_Date": "1898-11-27",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Scituate",
-        "Hull",
-        "Duxbury"
-      ],
-      "Start_Date": "1898-11-26",
-      "End_Date": "1898-11-27",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Damage to coastal towns"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "NULL",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "NULL",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "1898-11-26",
-      "End_Date": "1898-11-27",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Damage to coastal towns"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Scituate",
-        "Hull",
-        "Duxbury"
-      ],
-      "Start_Date": "1898-11-26",
-      "End_Date": "1898-11-27",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Damage to coastal towns"
-    }
-  ],
-  "Main_Event": "Extratropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Damage to coastal towns",
-  "Start_Date": "November 26, 1898",
-  "End_Date": "November 27, 1898",
-  "Time_Annotation": "Portland Gale",
-  "Administrative_Areas": [
-    "United States"
-  ],
-  "Administrative_Areas_Annotation": "Portland Gale"
-}
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "November 26, 1898",
+        "End_Date": "November 27, 1898",
+        "Num": "NULL",
+        "Annotation": "Damage to coastal towns"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Scituate",
+          "Hull"
+        ],
+        "Start_Date": "November 26, 1898",
+        "End_Date": "November 27, 1898",
+        "Num": "Dozens of houses",
+        "Annotation": "Damage to coastal towns"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "more than 400",
+      "Total_Deaths_Annotation": "Portland Gale"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "November 26, 1898",
+        "End_Date": "November 27, 1898",
+        "Num": "more than 400",
+        "Annotation": "Portland Gale"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "off the coast of New England"
+        ],
+        "Start_Date": "November 26, 1898",
+        "End_Date": "November 27, 1898",
+        "Num": "more than 400",
+        "Annotation": "Portland Gale"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "off the coast of New England"
+        ],
+        "Start_Date": "November 26, 1898",
+        "End_Date": "November 26, 1898",
+        "Num": "192",
+        "Annotation": "Loss of the SS Portland"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "November 26, 1898",
+        "End_Date": "November 27, 1898",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Scituate, Massachusetts"
+        ],
+        "Start_Date": "November 26, 1898",
+        "End_Date": "November 27, 1898",
+        "Num": "NULL",
+        "Annotation": "Change to the course of the North River"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "November 26, 1898",
+        "End_Date": "November 27, 1898",
+        "Num": "NULL",
+        "Annotation": "Damage to coastal towns"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "South Shore of Massachusetts"
+        ],
+        "Start_Date": "November 26, 1898",
+        "End_Date": "November 27, 1898",
+        "Num": "Dozens of houses were destroyed in each of the towns",
+        "Annotation": "Damage to coastal towns"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "1898-11-26",
+        "End_Date": "1898-11-27",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Scituate",
+          "Hull",
+          "Duxbury"
+        ],
+        "Start_Date": "1898-11-26",
+        "End_Date": "1898-11-27",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Damage to coastal towns"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "NULL",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "1898-11-26",
+        "End_Date": "1898-11-27",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Damage to coastal towns"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Scituate",
+          "Hull",
+          "Duxbury"
+        ],
+        "Start_Date": "1898-11-26",
+        "End_Date": "1898-11-27",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Damage to coastal towns"
+      }
+    ],
+    "Main_Event": "Extratropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Damage to coastal towns",
+    "Start_Date": "November 26, 1898",
+    "End_Date": "November 27, 1898",
+    "Time_Annotation": "Portland Gale",
+    "Administrative_Areas": [
+      "United States"
+    ],
+    "Administrative_Areas_Annotation": "Portland Gale"
+  }
+]

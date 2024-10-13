@@ -1,495 +1,497 @@
-{
-  "Event_ID": "7ICYLdS",
-  "Sources": "https://en.wikipedia.org/wiki/1898_Windward_Islands_hurricane",
-  "Event_Names": "1898 Windward Islands hurricane",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": "Barbados",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "40,000\u201345,000",
-      "Annotation": "Barbados"
+[
+  {
+    "Event_ID": "7ICYLdS",
+    "Sources": "https://en.wikipedia.org/wiki/1898_Windward_Islands_hurricane",
+    "Event_Names": "1898 Windward Islands hurricane",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "St. Vincent",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "20,000",
-      "Annotation": "St. Vincent and St. Lucia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Barbados",
-      "Locations": [
-        "Bridgetown",
-        "St. Michael",
-        "Belleville"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "40,000\u201345,000",
-      "Annotation": "Barbados"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Barbados",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "40,000\u201345,000",
+        "Annotation": "Barbados"
+      },
+      {
+        "Administrative_Areas": "St. Vincent",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "20,000",
+        "Annotation": "St. Vincent and St. Lucia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Barbados",
+        "Locations": [
+          "Bridgetown",
+          "St. Michael",
+          "Belleville"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "40,000\u201345,000",
+        "Annotation": "Barbados"
+      },
+      {
+        "Administrative_Area": "St. Vincent",
+        "Locations": [
+          "Kingstown",
+          "Richmond",
+          "Wallibou",
+          "Chateaubelair",
+          "Cumberland",
+          "Barrouallie",
+          "Layou"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "20,000",
+        "Annotation": "St. Vincent and St. Lucia"
+      },
+      {
+        "Administrative_Area": "St. Lucia",
+        "Locations": [
+          "Castries Harbour"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "St. Vincent and St. Lucia"
+      },
+      {
+        "Administrative_Area": "Guadeloupe",
+        "Locations": [
+          "Trois-Rivi\u00e8res",
+          "Goyave"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "18",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "St. Vincent",
-      "Locations": [
-        "Kingstown",
-        "Richmond",
-        "Wallibou",
-        "Chateaubelair",
-        "Cumberland",
-        "Barrouallie",
-        "Layou"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "20,000",
-      "Annotation": "St. Vincent and St. Lucia"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Barbados",
+        "Start_Date": "September 10, 1898",
+        "End_Date": "September 11, 1898",
+        "Num": "NULL",
+        "Annotation": "Barbados"
+      },
+      {
+        "Administrative_Areas": "St. Vincent",
+        "Start_Date": "September 11, 1898",
+        "End_Date": "September 11, 1898",
+        "Num": "NULL",
+        "Annotation": "St. Vincent and St. Lucia"
+      },
+      {
+        "Administrative_Areas": "St. Lucia",
+        "Start_Date": "September 11, 1898",
+        "End_Date": "September 11, 1898",
+        "Num": "NULL",
+        "Annotation": "St. Vincent and St. Lucia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Barbados",
+        "Locations": [
+          "Bridgetown",
+          "St. Michael",
+          "Belleville"
+        ],
+        "Start_Date": "September 10, 1898",
+        "End_Date": "September 11, 1898",
+        "Num": "5,062 houses completely destroyed and another 2,359 sustained at least partial damage",
+        "Annotation": "Barbados"
+      },
+      {
+        "Administrative_Area": "Barbados",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "September 10, 1898",
+        "End_Date": "September 11, 1898",
+        "Num": "11,400 destroyed homes",
+        "Annotation": "Barbados"
+      },
+      {
+        "Administrative_Area": "St. Vincent",
+        "Locations": [
+          "Kingstown",
+          "Richmond",
+          "Wallibou",
+          "Chateaubelair",
+          "Cumberland",
+          "Barrouallie",
+          "Layou"
+        ],
+        "Start_Date": "September 11, 1898",
+        "End_Date": "September 11, 1898",
+        "Num": "6,000 homes destroyed or irreparably damaged",
+        "Annotation": "St. Vincent and St. Lucia"
+      },
+      {
+        "Administrative_Area": "St. Lucia",
+        "Locations": [
+          "Castries Harbour"
+        ],
+        "Start_Date": "September 11, 1898",
+        "End_Date": "September 11, 1898",
+        "Num": "NULL",
+        "Annotation": "St. Vincent and St. Lucia"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "An estimated 392 people",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "St. Lucia",
-      "Locations": [
-        "Castries Harbour"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "St. Vincent and St. Lucia"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Barbados",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "83-115 people",
+        "Annotation": "Barbados"
+      },
+      {
+        "Administrative_Areas": "St. Vincent",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "around 200-300 people",
+        "Annotation": "St. Vincent and St. Lucia"
+      },
+      {
+        "Administrative_Areas": "Guadeloupe",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "18 people",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Barbados",
+        "Locations": [
+          "Bridgetown"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "83-115 people",
+        "Annotation": "Barbados"
+      },
+      {
+        "Administrative_Area": "St. Vincent",
+        "Locations": [
+          "Richmond",
+          "Wallibou",
+          "Chateaubelair",
+          "Cumberland",
+          "Barrouallie",
+          "Layou"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "around 200-300 people",
+        "Annotation": "St. Vincent and St. Lucia"
+      },
+      {
+        "Administrative_Area": "Guadeloupe",
+        "Locations": [
+          "Trois-Rivi\u00e8res",
+          "Goyave"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "18 people",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Guadeloupe",
-      "Locations": [
-        "Trois-Rivi\u00e8res",
-        "Goyave"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "18",
-      "Annotation": "Elsewhere"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Barbados",
-      "Start_Date": "September 10, 1898",
-      "End_Date": "September 11, 1898",
-      "Num": "NULL",
-      "Annotation": "Barbados"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Barbados",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "40,000\u201345,000",
+        "Annotation": "Barbados"
+      },
+      {
+        "Administrative_Areas": "St. Vincent",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "20,000",
+        "Annotation": "St. Vincent and St. Lucia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Barbados",
+        "Locations": [
+          "Bridgetown",
+          "St. Michael",
+          "Belleville"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "40,000\u201345,000",
+        "Annotation": "Barbados"
+      },
+      {
+        "Administrative_Area": "St. Vincent",
+        "Locations": [
+          "Richmond",
+          "Wallibou",
+          "Chateaubelair",
+          "Cumberland",
+          "Barrouallie",
+          "Layou"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "20,000",
+        "Annotation": "St. Vincent and St. Lucia"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "St. Vincent",
-      "Start_Date": "September 11, 1898",
-      "End_Date": "September 11, 1898",
-      "Num": "NULL",
-      "Annotation": "St. Vincent and St. Lucia"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Barbados",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "40,000\u201345,000 people",
+        "Annotation": "Barbados"
+      },
+      {
+        "Administrative_Areas": "St. Vincent",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "20,000 people",
+        "Annotation": "St. Vincent and St. Lucia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Barbados",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "40,000\u201345,000 people",
+        "Annotation": "Barbados"
+      },
+      {
+        "Administrative_Area": "St. Vincent",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "20,000 people",
+        "Annotation": "St. Vincent and St. Lucia"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "St. Lucia",
-      "Start_Date": "September 11, 1898",
-      "End_Date": "September 11, 1898",
-      "Num": "NULL",
-      "Annotation": "St. Vincent and St. Lucia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Barbados",
-      "Locations": [
-        "Bridgetown",
-        "St. Michael",
-        "Belleville"
-      ],
-      "Start_Date": "September 10, 1898",
-      "End_Date": "September 11, 1898",
-      "Num": "5,062 houses completely destroyed and another 2,359 sustained at least partial damage",
-      "Annotation": "Barbados"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Barbados",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "150",
+        "Annotation": "Barbados"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Barbados",
+        "Locations": [
+          "Bridgetown"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "150",
+        "Annotation": "Barbados"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Barbados",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "September 10, 1898",
-      "End_Date": "September 11, 1898",
-      "Num": "11,400 destroyed homes",
-      "Annotation": "Barbados"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Barbados",
+          "St. Vincent",
+          "St. Lucia"
+        ],
+        "Start_Date": "September 10, 1898",
+        "End_Date": "September 11, 1898",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Barbados"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Barbados",
+        "Locations": [
+          "Bridgetown",
+          "Carlisle Bay",
+          "St. Michael",
+          "Belleville"
+        ],
+        "Start_Date": "September 10, 1898",
+        "End_Date": "September 11, 1898",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Barbados"
+      },
+      {
+        "Administrative_Area": "St. Vincent",
+        "Locations": [
+          "Kingstown",
+          "Richmond",
+          "Wallibou",
+          "Chateaubelair",
+          "Cumberland",
+          "Barrouallie",
+          "Layou"
+        ],
+        "Start_Date": "September 11, 1898",
+        "End_Date": "September 11, 1898",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "St. Vincent and St. Lucia"
+      },
+      {
+        "Administrative_Area": "St. Lucia",
+        "Locations": [
+          "Castries Harbour"
+        ],
+        "Start_Date": "September 11, 1898",
+        "End_Date": "September 11, 1898",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "St. Vincent and St. Lucia"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "NULL",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "St. Vincent",
-      "Locations": [
-        "Kingstown",
-        "Richmond",
-        "Wallibou",
-        "Chateaubelair",
-        "Cumberland",
-        "Barrouallie",
-        "Layou"
-      ],
-      "Start_Date": "September 11, 1898",
-      "End_Date": "September 11, 1898",
-      "Num": "6,000 homes destroyed or irreparably damaged",
-      "Annotation": "St. Vincent and St. Lucia"
-    },
-    {
-      "Administrative_Area": "St. Lucia",
-      "Locations": [
-        "Castries Harbour"
-      ],
-      "Start_Date": "September 11, 1898",
-      "End_Date": "September 11, 1898",
-      "Num": "NULL",
-      "Annotation": "St. Vincent and St. Lucia"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "An estimated 392 people",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Barbados",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "83-115 people",
-      "Annotation": "Barbados"
-    },
-    {
-      "Administrative_Areas": "St. Vincent",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "around 200-300 people",
-      "Annotation": "St. Vincent and St. Lucia"
-    },
-    {
-      "Administrative_Areas": "Guadeloupe",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "18 people",
-      "Annotation": "Elsewhere"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Barbados",
-      "Locations": [
-        "Bridgetown"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "83-115 people",
-      "Annotation": "Barbados"
-    },
-    {
-      "Administrative_Area": "St. Vincent",
-      "Locations": [
-        "Richmond",
-        "Wallibou",
-        "Chateaubelair",
-        "Cumberland",
-        "Barrouallie",
-        "Layou"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "around 200-300 people",
-      "Annotation": "St. Vincent and St. Lucia"
-    },
-    {
-      "Administrative_Area": "Guadeloupe",
-      "Locations": [
-        "Trois-Rivi\u00e8res",
-        "Goyave"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "18 people",
-      "Annotation": "Elsewhere"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": "Barbados",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "40,000\u201345,000",
-      "Annotation": "Barbados"
-    },
-    {
-      "Administrative_Areas": "St. Vincent",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "20,000",
-      "Annotation": "St. Vincent and St. Lucia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Barbados",
-      "Locations": [
-        "Bridgetown",
-        "St. Michael",
-        "Belleville"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "40,000\u201345,000",
-      "Annotation": "Barbados"
-    },
-    {
-      "Administrative_Area": "St. Vincent",
-      "Locations": [
-        "Richmond",
-        "Wallibou",
-        "Chateaubelair",
-        "Cumberland",
-        "Barrouallie",
-        "Layou"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "20,000",
-      "Annotation": "St. Vincent and St. Lucia"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Barbados",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "40,000\u201345,000 people",
-      "Annotation": "Barbados"
-    },
-    {
-      "Administrative_Areas": "St. Vincent",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "20,000 people",
-      "Annotation": "St. Vincent and St. Lucia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Barbados",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "40,000\u201345,000 people",
-      "Annotation": "Barbados"
-    },
-    {
-      "Administrative_Area": "St. Vincent",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "20,000 people",
-      "Annotation": "St. Vincent and St. Lucia"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Barbados",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "150",
-      "Annotation": "Barbados"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Barbados",
-      "Locations": [
-        "Bridgetown"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "150",
-      "Annotation": "Barbados"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Barbados",
-        "St. Vincent",
-        "St. Lucia"
-      ],
-      "Start_Date": "September 10, 1898",
-      "End_Date": "September 11, 1898",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Barbados"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Barbados",
-      "Locations": [
-        "Bridgetown",
-        "Carlisle Bay",
-        "St. Michael",
-        "Belleville"
-      ],
-      "Start_Date": "September 10, 1898",
-      "End_Date": "September 11, 1898",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Barbados"
-    },
-    {
-      "Administrative_Area": "St. Vincent",
-      "Locations": [
-        "Kingstown",
-        "Richmond",
-        "Wallibou",
-        "Chateaubelair",
-        "Cumberland",
-        "Barrouallie",
-        "Layou"
-      ],
-      "Start_Date": "September 11, 1898",
-      "End_Date": "September 11, 1898",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "St. Vincent and St. Lucia"
-    },
-    {
-      "Administrative_Area": "St. Lucia",
-      "Locations": [
-        "Castries Harbour"
-      ],
-      "Start_Date": "September 11, 1898",
-      "End_Date": "September 11, 1898",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "St. Vincent and St. Lucia"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "NULL",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "NULL",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": "Barbados",
-      "Start_Date": "September 10, 1898",
-      "End_Date": "September 11, 1898",
-      "Num": "2.5 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Barbados"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Barbados",
-      "Locations": [
-        "Bridgetown",
-        "St. Michael",
-        "Belleville"
-      ],
-      "Start_Date": "September 10, 1898",
-      "End_Date": "September 11, 1898",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Barbados"
-    },
-    {
-      "Administrative_Area": "St. Vincent",
-      "Locations": [
-        "Kingstown",
-        "Richmond",
-        "Wallibou",
-        "Chateaubelair",
-        "Cumberland",
-        "Barrouallie",
-        "Layou"
-      ],
-      "Start_Date": "September 11, 1898",
-      "End_Date": "September 11, 1898",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "St. Vincent and St. Lucia"
-    },
-    {
-      "Administrative_Area": "St. Lucia",
-      "Locations": [
-        "Castries Harbour"
-      ],
-      "Start_Date": "September 11, 1898",
-      "End_Date": "September 11, 1898",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "St. Vincent and St. Lucia"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Barbados|St. Vincent and St. Lucia",
-  "Start_Date": "September 5, 1898",
-  "End_Date": "September 20, 1898",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Barbados",
-    "St. Lucia",
-    "St. Vincent",
-    "Grenada",
-    "Dominica",
-    "Guadeloupe",
-    "St. Kitts",
-    "Antigua",
-    "Nevis",
-    "Montserrat"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Barbados",
+        "Start_Date": "September 10, 1898",
+        "End_Date": "September 11, 1898",
+        "Num": "2.5 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Barbados"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Barbados",
+        "Locations": [
+          "Bridgetown",
+          "St. Michael",
+          "Belleville"
+        ],
+        "Start_Date": "September 10, 1898",
+        "End_Date": "September 11, 1898",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Barbados"
+      },
+      {
+        "Administrative_Area": "St. Vincent",
+        "Locations": [
+          "Kingstown",
+          "Richmond",
+          "Wallibou",
+          "Chateaubelair",
+          "Cumberland",
+          "Barrouallie",
+          "Layou"
+        ],
+        "Start_Date": "September 11, 1898",
+        "End_Date": "September 11, 1898",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "St. Vincent and St. Lucia"
+      },
+      {
+        "Administrative_Area": "St. Lucia",
+        "Locations": [
+          "Castries Harbour"
+        ],
+        "Start_Date": "September 11, 1898",
+        "End_Date": "September 11, 1898",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "St. Vincent and St. Lucia"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Barbados|St. Vincent and St. Lucia",
+    "Start_Date": "September 5, 1898",
+    "End_Date": "September 20, 1898",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Barbados",
+      "St. Lucia",
+      "St. Vincent",
+      "Grenada",
+      "Dominica",
+      "Guadeloupe",
+      "St. Kitts",
+      "Antigua",
+      "Nevis",
+      "Montserrat"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

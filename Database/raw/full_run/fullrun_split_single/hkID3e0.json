@@ -1,524 +1,526 @@
-{
-  "Event_ID": "hkID3e0",
-  "Sources": "https://en.wikipedia.org/wiki/2013_New_South_Wales_bushfires",
-  "Event_Names": "2013 New South Wales bushfires",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "17 October 2013",
-      "End_Date": "28 October 2013",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Springwood",
-        "Winmalee",
-        "Yellow Rock"
-      ],
-      "Start_Date": "17 October 2013",
-      "End_Date": "28 October 2013",
-      "Num": "193 properties destroyed and 109 damaged",
-      "Annotation": "Damage and effects"
+[
+  {
+    "Event_ID": "hkID3e0",
+    "Sources": "https://en.wikipedia.org/wiki/2013_New_South_Wales_bushfires",
+    "Event_Names": "2013 New South Wales bushfires",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Lithgow",
-        "Bilpin"
-      ],
-      "Start_Date": "16 October 2013",
-      "End_Date": "28 October 2013",
-      "Num": "NULL",
-      "Annotation": "Lithgow"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "17 October 2013",
+        "End_Date": "28 October 2013",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Springwood",
+          "Winmalee",
+          "Yellow Rock"
+        ],
+        "Start_Date": "17 October 2013",
+        "End_Date": "28 October 2013",
+        "Num": "193 properties destroyed and 109 damaged",
+        "Annotation": "Damage and effects"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Lithgow",
+          "Bilpin"
+        ],
+        "Start_Date": "16 October 2013",
+        "End_Date": "28 October 2013",
+        "Num": "NULL",
+        "Annotation": "Lithgow"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Mount Victoria"
+        ],
+        "Start_Date": "17 October 2013",
+        "End_Date": "28 October 2013",
+        "Num": "Seven houses destroyed",
+        "Annotation": "Mount Victoria"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Hawkesbury"
+        ],
+        "Start_Date": "17 October 2013",
+        "End_Date": "28 October 2013",
+        "Num": "NULL",
+        "Annotation": "Hawkesbury"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Hunter Valley",
+          "Central Coast"
+        ],
+        "Start_Date": "17 October 2013",
+        "End_Date": "28 October 2013",
+        "Num": "One fatality",
+        "Annotation": "Hunter and Central Coast regions"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Great Lakes",
+          "Upper Hunter"
+        ],
+        "Start_Date": "17 October 2013",
+        "End_Date": "28 October 2013",
+        "Num": "NULL",
+        "Annotation": "Great Lakes and Upper Hunter"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Port Stephens"
+        ],
+        "Start_Date": "13 October 2013",
+        "End_Date": "21 October 2013",
+        "Num": "Six homes destroyed",
+        "Annotation": "Port Stephens"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Newcastle"
+        ],
+        "Start_Date": "23 October 2013",
+        "End_Date": "25 October 2013",
+        "Num": "NULL",
+        "Annotation": "Newcastle"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Lake Macquarie"
+        ],
+        "Start_Date": "23 October 2013",
+        "End_Date": "25 October 2013",
+        "Num": "NULL",
+        "Annotation": "Lake Macquarie"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Lake Munmorah"
+        ],
+        "Start_Date": "17 October 2013",
+        "End_Date": "23 October 2013",
+        "Num": "One fatality",
+        "Annotation": "Central Coast"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Southern Highlands"
+        ],
+        "Start_Date": "17 October 2013",
+        "End_Date": "21 October 2013",
+        "Num": "Two houses and ten other buildings destroyed",
+        "Annotation": "Southern Highlands"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Wirritin",
+          "Shoalhaven"
+        ],
+        "Start_Date": "13 October 2013",
+        "End_Date": "28 October 2013",
+        "Num": "One fatality",
+        "Annotation": "Other areas"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Dungay Creek",
+          "Kempsey Shire"
+        ],
+        "Start_Date": "13 October 2013",
+        "End_Date": "28 October 2013",
+        "Num": "NULL",
+        "Annotation": "Other areas"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Chaelundi National Park",
+          "Dalmorton State Forest",
+          "Clarence Valley"
+        ],
+        "Start_Date": "13 October 2013",
+        "End_Date": "28 October 2013",
+        "Num": "NULL",
+        "Annotation": "Other areas"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "500",
+      "Total_Buildings_Damaged_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Mount Victoria"
-      ],
-      "Start_Date": "17 October 2013",
-      "End_Date": "28 October 2013",
-      "Num": "Seven houses destroyed",
-      "Annotation": "Mount Victoria"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Australia",
+        "Start_Date": "17 October 2013",
+        "End_Date": "28 October 2013",
+        "Num": "248",
+        "Annotation": "Damage and effects"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Springwood",
+          "Winmalee",
+          "Yellow Rock"
+        ],
+        "Start_Date": "17 October 2013",
+        "End_Date": "28 October 2013",
+        "Num": "193",
+        "Annotation": "Springwood"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Mount Victoria"
+        ],
+        "Start_Date": "17 October 2013",
+        "End_Date": "28 October 2013",
+        "Num": "7",
+        "Annotation": "Mount Victoria"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Lithgow"
+        ],
+        "Start_Date": "16 October 2013",
+        "End_Date": "28 October 2013",
+        "Num": "NULL",
+        "Annotation": "Lithgow"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Southern Highlands"
+        ],
+        "Start_Date": "17 October 2013",
+        "End_Date": "21 October 2013",
+        "Num": "12",
+        "Annotation": "Southern Highlands"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Port Stephens"
+        ],
+        "Start_Date": "13 October 2013",
+        "End_Date": "21 October 2013",
+        "Num": "6",
+        "Annotation": "Port Stephens"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "2",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Hawkesbury"
-      ],
-      "Start_Date": "17 October 2013",
-      "End_Date": "28 October 2013",
-      "Num": "NULL",
-      "Annotation": "Hawkesbury"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Australia",
+        "Start_Date": "17 October 2013",
+        "End_Date": "28 October 2013",
+        "Num": "2",
+        "Annotation": "Damage and effects"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Lake Munmorah",
+          "Shoalhaven"
+        ],
+        "Start_Date": "17 October 2013",
+        "End_Date": "28 October 2013",
+        "Num": "1",
+        "Annotation": "Hunter and Central Coast regions"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Shoalhaven"
+        ],
+        "Start_Date": "17 October 2013",
+        "End_Date": "28 October 2013",
+        "Num": "1",
+        "Annotation": "Other areas"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Hunter Valley",
-        "Central Coast"
-      ],
-      "Start_Date": "17 October 2013",
-      "End_Date": "28 October 2013",
-      "Num": "One fatality",
-      "Annotation": "Hunter and Central Coast regions"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "17 October 2013",
+        "End_Date": "28 October 2013",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Lithgow"
+        ],
+        "Start_Date": "16 October 2013",
+        "End_Date": "17 October 2013",
+        "Num": "most of the Lithgow region",
+        "Annotation": "Lithgow"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Springwood",
+          "Winmalee"
+        ],
+        "Start_Date": "17 October 2013",
+        "End_Date": "17 October 2013",
+        "Num": "several hundred children from schools",
+        "Annotation": "Springwood"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Blue Mountains"
+        ],
+        "Start_Date": "22 October 2013",
+        "End_Date": "23 October 2013",
+        "Num": "Hundreds of mountains residents",
+        "Annotation": "Mount Victoria"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Yanderra"
+        ],
+        "Start_Date": "17 October 2013",
+        "End_Date": "17 October 2013",
+        "Num": "school children from Yanderra Public School",
+        "Annotation": "Southern Highlands"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Blue Mountains"
+        ],
+        "Start_Date": "23 October 2013",
+        "End_Date": "23 October 2013",
+        "Num": "every school in the Blue Mountains",
+        "Annotation": "Damage and effects"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Great Lakes",
-        "Upper Hunter"
-      ],
-      "Start_Date": "17 October 2013",
-      "End_Date": "28 October 2013",
-      "Num": "NULL",
-      "Annotation": "Great Lakes and Upper Hunter"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "17 October 2013",
+        "End_Date": "28 October 2013",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Springwood",
+          "Winmalee",
+          "Yellow Rock"
+        ],
+        "Start_Date": "17 October 2013",
+        "End_Date": "28 October 2013",
+        "Num": "193 properties destroyed and 109 damaged",
+        "Annotation": "Damage and effects"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Lithgow",
+          "Bilpin"
+        ],
+        "Start_Date": "16 October 2013",
+        "End_Date": "28 October 2013",
+        "Num": "Some properties were lost",
+        "Annotation": "Lithgow"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Mount Victoria"
+        ],
+        "Start_Date": "17 October 2013",
+        "End_Date": "28 October 2013",
+        "Num": "Seven houses destroyed",
+        "Annotation": "Mount Victoria"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Southern Highlands"
+        ],
+        "Start_Date": "17 October 2013",
+        "End_Date": "21 October 2013",
+        "Num": "Two houses and ten other buildings destroyed",
+        "Annotation": "Southern Highlands"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Port Stephens"
+        ],
+        "Start_Date": "13 October 2013",
+        "End_Date": "21 October 2013",
+        "Num": "Six homes destroyed",
+        "Annotation": "Port Stephens"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "2",
+      "Total_Injuries_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Port Stephens"
-      ],
-      "Start_Date": "13 October 2013",
-      "End_Date": "21 October 2013",
-      "Num": "Six homes destroyed",
-      "Annotation": "Port Stephens"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Australia",
+        "Start_Date": "17 October 2013",
+        "End_Date": "28 October 2013",
+        "Num": "2",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "New South Wales"
+        ],
+        "Start_Date": "17 October 2013",
+        "End_Date": "28 October 2013",
+        "Num": "2",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Newcastle"
-      ],
-      "Start_Date": "23 October 2013",
-      "End_Date": "25 October 2013",
-      "Num": "NULL",
-      "Annotation": "Newcastle"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "17 October 2013",
+        "End_Date": "28 October 2013",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Springwood",
+          "Winmalee",
+          "Yellow Rock"
+        ],
+        "Start_Date": "17 October 2013",
+        "End_Date": "28 October 2013",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Damage and effects"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "A$94 million",
+      "Total_Damage_Unit": "AUD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Lake Macquarie"
-      ],
-      "Start_Date": "23 October 2013",
-      "End_Date": "25 October 2013",
-      "Num": "NULL",
-      "Annotation": "Lake Macquarie"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Lake Munmorah"
-      ],
-      "Start_Date": "17 October 2013",
-      "End_Date": "23 October 2013",
-      "Num": "One fatality",
-      "Annotation": "Central Coast"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Southern Highlands"
-      ],
-      "Start_Date": "17 October 2013",
-      "End_Date": "21 October 2013",
-      "Num": "Two houses and ten other buildings destroyed",
-      "Annotation": "Southern Highlands"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Wirritin",
-        "Shoalhaven"
-      ],
-      "Start_Date": "13 October 2013",
-      "End_Date": "28 October 2013",
-      "Num": "One fatality",
-      "Annotation": "Other areas"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Dungay Creek",
-        "Kempsey Shire"
-      ],
-      "Start_Date": "13 October 2013",
-      "End_Date": "28 October 2013",
-      "Num": "NULL",
-      "Annotation": "Other areas"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Chaelundi National Park",
-        "Dalmorton State Forest",
-        "Clarence Valley"
-      ],
-      "Start_Date": "13 October 2013",
-      "End_Date": "28 October 2013",
-      "Num": "NULL",
-      "Annotation": "Other areas"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "500",
-    "Total_Buildings_Damaged_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Australia",
-      "Start_Date": "17 October 2013",
-      "End_Date": "28 October 2013",
-      "Num": "248",
-      "Annotation": "Damage and effects"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Springwood",
-        "Winmalee",
-        "Yellow Rock"
-      ],
-      "Start_Date": "17 October 2013",
-      "End_Date": "28 October 2013",
-      "Num": "193",
-      "Annotation": "Springwood"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Mount Victoria"
-      ],
-      "Start_Date": "17 October 2013",
-      "End_Date": "28 October 2013",
-      "Num": "7",
-      "Annotation": "Mount Victoria"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Lithgow"
-      ],
-      "Start_Date": "16 October 2013",
-      "End_Date": "28 October 2013",
-      "Num": "NULL",
-      "Annotation": "Lithgow"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Southern Highlands"
-      ],
-      "Start_Date": "17 October 2013",
-      "End_Date": "21 October 2013",
-      "Num": "12",
-      "Annotation": "Southern Highlands"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Port Stephens"
-      ],
-      "Start_Date": "13 October 2013",
-      "End_Date": "21 October 2013",
-      "Num": "6",
-      "Annotation": "Port Stephens"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "2",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Australia",
-      "Start_Date": "17 October 2013",
-      "End_Date": "28 October 2013",
-      "Num": "2",
-      "Annotation": "Damage and effects"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Lake Munmorah",
-        "Shoalhaven"
-      ],
-      "Start_Date": "17 October 2013",
-      "End_Date": "28 October 2013",
-      "Num": "1",
-      "Annotation": "Hunter and Central Coast regions"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Shoalhaven"
-      ],
-      "Start_Date": "17 October 2013",
-      "End_Date": "28 October 2013",
-      "Num": "1",
-      "Annotation": "Other areas"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "17 October 2013",
-      "End_Date": "28 October 2013",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Lithgow"
-      ],
-      "Start_Date": "16 October 2013",
-      "End_Date": "17 October 2013",
-      "Num": "most of the Lithgow region",
-      "Annotation": "Lithgow"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Springwood",
-        "Winmalee"
-      ],
-      "Start_Date": "17 October 2013",
-      "End_Date": "17 October 2013",
-      "Num": "several hundred children from schools",
-      "Annotation": "Springwood"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Blue Mountains"
-      ],
-      "Start_Date": "22 October 2013",
-      "End_Date": "23 October 2013",
-      "Num": "Hundreds of mountains residents",
-      "Annotation": "Mount Victoria"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Yanderra"
-      ],
-      "Start_Date": "17 October 2013",
-      "End_Date": "17 October 2013",
-      "Num": "school children from Yanderra Public School",
-      "Annotation": "Southern Highlands"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Blue Mountains"
-      ],
-      "Start_Date": "23 October 2013",
-      "End_Date": "23 October 2013",
-      "Num": "every school in the Blue Mountains",
-      "Annotation": "Damage and effects"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "17 October 2013",
-      "End_Date": "28 October 2013",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Springwood",
-        "Winmalee",
-        "Yellow Rock"
-      ],
-      "Start_Date": "17 October 2013",
-      "End_Date": "28 October 2013",
-      "Num": "193 properties destroyed and 109 damaged",
-      "Annotation": "Damage and effects"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Lithgow",
-        "Bilpin"
-      ],
-      "Start_Date": "16 October 2013",
-      "End_Date": "28 October 2013",
-      "Num": "Some properties were lost",
-      "Annotation": "Lithgow"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Mount Victoria"
-      ],
-      "Start_Date": "17 October 2013",
-      "End_Date": "28 October 2013",
-      "Num": "Seven houses destroyed",
-      "Annotation": "Mount Victoria"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Southern Highlands"
-      ],
-      "Start_Date": "17 October 2013",
-      "End_Date": "21 October 2013",
-      "Num": "Two houses and ten other buildings destroyed",
-      "Annotation": "Southern Highlands"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Port Stephens"
-      ],
-      "Start_Date": "13 October 2013",
-      "End_Date": "21 October 2013",
-      "Num": "Six homes destroyed",
-      "Annotation": "Port Stephens"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "2",
-    "Total_Injuries_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Australia",
-      "Start_Date": "17 October 2013",
-      "End_Date": "28 October 2013",
-      "Num": "2",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "New South Wales"
-      ],
-      "Start_Date": "17 October 2013",
-      "End_Date": "28 October 2013",
-      "Num": "2",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "17 October 2013",
-      "End_Date": "28 October 2013",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Springwood",
-        "Winmalee",
-        "Yellow Rock"
-      ],
-      "Start_Date": "17 October 2013",
-      "End_Date": "28 October 2013",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Damage and effects"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "A$94 million",
-    "Total_Damage_Unit": "AUD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "17 October 2013",
-      "End_Date": "28 October 2013",
-      "Num": "A$94 million",
-      "Num_Unit": "AUD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Springwood",
-        "Mt Victoria",
-        "Lithgow"
-      ],
-      "Start_Date": "17 October 2013",
-      "End_Date": "28 October 2013",
-      "Num": "around $170 million",
-      "Num_Unit": "AUD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Springwood"
-    }
-  ],
-  "Main_Event": "Wildfire",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wildfire",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "17 October 2013",
-  "End_Date": "28 October 2013",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Australia"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "17 October 2013",
+        "End_Date": "28 October 2013",
+        "Num": "A$94 million",
+        "Num_Unit": "AUD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Springwood",
+          "Mt Victoria",
+          "Lithgow"
+        ],
+        "Start_Date": "17 October 2013",
+        "End_Date": "28 October 2013",
+        "Num": "around $170 million",
+        "Num_Unit": "AUD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Springwood"
+      }
+    ],
+    "Main_Event": "Wildfire",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wildfire",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "17 October 2013",
+    "End_Date": "28 October 2013",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Australia"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

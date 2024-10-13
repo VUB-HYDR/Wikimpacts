@@ -1,316 +1,318 @@
-{
-  "Event_ID": "2lDHkni",
-  "Sources": "https://en.wikipedia.org/wiki/2019_United_Kingdom_wildfires",
-  "Event_Names": "2019 United Kingdom wildfires",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "United Kingdom"
-      ],
-      "Start_Date": "26 February 2019",
-      "End_Date": "18 May 2019",
-      "Num": "NULL",
-      "Annotation": "2019 United Kingdom wildfires"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Glyndyfrdwy, Denbighshire"
-      ],
-      "Start_Date": "27 February 2019",
-      "End_Date": "27 February 2019",
-      "Num": "a man was taken to hospital",
-      "Annotation": "February"
+[
+  {
+    "Event_ID": "2lDHkni",
+    "Sources": "https://en.wikipedia.org/wiki/2019_United_Kingdom_wildfires",
+    "Event_Names": "2019 United Kingdom wildfires",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Saddleworth Moor, West Yorkshire"
-      ],
-      "Start_Date": "26 February 2019",
-      "End_Date": "27 February 2019",
-      "Num": "Public Health England advised residents of communities close to Saddleworth Moor to remain indoors and close windows to avoid inhaling smoke",
-      "Annotation": "February"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "United Kingdom"
+        ],
+        "Start_Date": "26 February 2019",
+        "End_Date": "18 May 2019",
+        "Num": "NULL",
+        "Annotation": "2019 United Kingdom wildfires"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Glyndyfrdwy, Denbighshire"
+        ],
+        "Start_Date": "27 February 2019",
+        "End_Date": "27 February 2019",
+        "Num": "a man was taken to hospital",
+        "Annotation": "February"
+      },
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Saddleworth Moor, West Yorkshire"
+        ],
+        "Start_Date": "26 February 2019",
+        "End_Date": "27 February 2019",
+        "Num": "Public Health England advised residents of communities close to Saddleworth Moor to remain indoors and close windows to avoid inhaling smoke",
+        "Annotation": "February"
+      },
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Arthur's Seat, Edinburgh"
+        ],
+        "Start_Date": "26 February 2019",
+        "End_Date": "27 February 2019",
+        "Num": "concerns were raised over the fire's impact on rare species living at the site",
+        "Annotation": "February"
+      },
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Marsden Moor, West Yorkshire"
+        ],
+        "Start_Date": "21 April 2019",
+        "End_Date": "23 April 2019",
+        "Num": "destroying more than \u00a3200,000 of habitat restoration work and imperiling the nesting sites of some species of birds",
+        "Annotation": "April"
+      },
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Knockando, Scotland"
+        ],
+        "Start_Date": "22 April 2019",
+        "End_Date": "9 May 2019",
+        "Num": "several nearby properties to be evacuated",
+        "Annotation": "April"
+      },
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Flow Country peatland, Caithness and Sutherland"
+        ],
+        "Start_Date": "12 May 2019",
+        "End_Date": "18 May 2019",
+        "Num": "Electricity to 800 households in Sutherland was also disrupted",
+        "Annotation": "May"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Arthur's Seat, Edinburgh"
-      ],
-      "Start_Date": "26 February 2019",
-      "End_Date": "27 February 2019",
-      "Num": "concerns were raised over the fire's impact on rare species living at the site",
-      "Annotation": "February"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "United Kingdom"
+        ],
+        "Start_Date": "26 February 2019",
+        "End_Date": "18 May 2019",
+        "Num": "NULL",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Knockando"
+        ],
+        "Start_Date": "22 April 2019",
+        "End_Date": "9 May 2019",
+        "Num": "several nearby properties",
+        "Annotation": "April"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "NULL",
+      "Total_Deaths_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Marsden Moor, West Yorkshire"
-      ],
-      "Start_Date": "21 April 2019",
-      "End_Date": "23 April 2019",
-      "Num": "destroying more than \u00a3200,000 of habitat restoration work and imperiling the nesting sites of some species of birds",
-      "Annotation": "April"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "United Kingdom",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Knockando, Scotland"
-      ],
-      "Start_Date": "22 April 2019",
-      "End_Date": "9 May 2019",
-      "Num": "several nearby properties to be evacuated",
-      "Annotation": "April"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "United Kingdom",
+        "Start_Date": "26 February 2019",
+        "End_Date": "18 May 2019",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Knockando, Scotland"
+        ],
+        "Start_Date": "22 April 2019",
+        "End_Date": "9 May 2019",
+        "Num": "several nearby properties",
+        "Annotation": "April"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Flow Country peatland, Caithness and Sutherland"
-      ],
-      "Start_Date": "12 May 2019",
-      "End_Date": "18 May 2019",
-      "Num": "Electricity to 800 households in Sutherland was also disrupted",
-      "Annotation": "May"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "United Kingdom"
-      ],
-      "Start_Date": "26 February 2019",
-      "End_Date": "18 May 2019",
-      "Num": "NULL",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Knockando"
-      ],
-      "Start_Date": "22 April 2019",
-      "End_Date": "9 May 2019",
-      "Num": "several nearby properties",
-      "Annotation": "April"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "NULL",
-    "Total_Deaths_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "United Kingdom",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": "United Kingdom",
-      "Start_Date": "26 February 2019",
-      "End_Date": "18 May 2019",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Knockando, Scotland"
-      ],
-      "Start_Date": "22 April 2019",
-      "End_Date": "9 May 2019",
-      "Num": "several nearby properties",
-      "Annotation": "April"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "United Kingdom"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Knockando"
-      ],
-      "Start_Date": "22 April 2019",
-      "End_Date": "9 May 2019",
-      "Num": "NULL",
-      "Annotation": "April"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "United Kingdom",
-      "Start_Date": "26 February 2019",
-      "End_Date": "18 May 2019",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Glyndyfrdwy, Denbighshire"
-      ],
-      "Start_Date": "27 February 2019",
-      "End_Date": "27 February 2019",
-      "Num": "1",
-      "Annotation": "February"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United Kingdom"
-      ],
-      "Start_Date": "26 February 2019",
-      "End_Date": "18 May 2019",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Ashdown Forest",
-        "Lancashire",
-        "Glyndyfrdwy",
-        "Aberdare",
-        "Cornwall's Lizard peninsula",
-        "Saddleworth Moor",
-        "Arthur's Seat",
-        "Ilkley Moor",
-        "Marsden Moor",
-        "Dartmoor",
-        "Tintwistle",
-        "Loch Bradan",
-        "Loch Doon",
-        "Ballindalloch",
-        "Kinbrace",
-        "John O'Groats",
-        "Isle of Bute",
-        "Lochaber",
-        "West Dunbartonshire",
-        "Knockando",
-        "Gower peninsula",
-        "Rhondda Cynon Taff",
-        "Rhigos",
-        "Melvich",
-        "Strathy",
-        "Forres",
-        "Ilkley Moor"
-      ],
-      "Start_Date": "26 February 2019",
-      "End_Date": "18 May 2019",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "NULL",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "NULL",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "United Kingdom"
-      ],
-      "Start_Date": "26 February 2019",
-      "End_Date": "18 May 2019",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "2019 United Kingdom wildfires"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Marsden Moor"
-      ],
-      "Start_Date": "21 April 2019",
-      "End_Date": "23 April 2019",
-      "Num": "\u00a3200,000",
-      "Num_Unit": "GBP",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "April"
-    }
-  ],
-  "Main_Event": "Wildfire",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wildfire",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "2019-02-26",
-  "End_Date": "2019-05-18",
-  "Time_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "United Kingdom"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Knockando"
+        ],
+        "Start_Date": "22 April 2019",
+        "End_Date": "9 May 2019",
+        "Num": "NULL",
+        "Annotation": "April"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "United Kingdom",
+        "Start_Date": "26 February 2019",
+        "End_Date": "18 May 2019",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Glyndyfrdwy, Denbighshire"
+        ],
+        "Start_Date": "27 February 2019",
+        "End_Date": "27 February 2019",
+        "Num": "1",
+        "Annotation": "February"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United Kingdom"
+        ],
+        "Start_Date": "26 February 2019",
+        "End_Date": "18 May 2019",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Ashdown Forest",
+          "Lancashire",
+          "Glyndyfrdwy",
+          "Aberdare",
+          "Cornwall's Lizard peninsula",
+          "Saddleworth Moor",
+          "Arthur's Seat",
+          "Ilkley Moor",
+          "Marsden Moor",
+          "Dartmoor",
+          "Tintwistle",
+          "Loch Bradan",
+          "Loch Doon",
+          "Ballindalloch",
+          "Kinbrace",
+          "John O'Groats",
+          "Isle of Bute",
+          "Lochaber",
+          "West Dunbartonshire",
+          "Knockando",
+          "Gower peninsula",
+          "Rhondda Cynon Taff",
+          "Rhigos",
+          "Melvich",
+          "Strathy",
+          "Forres",
+          "Ilkley Moor"
+        ],
+        "Start_Date": "26 February 2019",
+        "End_Date": "18 May 2019",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "NULL",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United Kingdom"
+        ],
+        "Start_Date": "26 February 2019",
+        "End_Date": "18 May 2019",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "2019 United Kingdom wildfires"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Marsden Moor"
+        ],
+        "Start_Date": "21 April 2019",
+        "End_Date": "23 April 2019",
+        "Num": "\u00a3200,000",
+        "Num_Unit": "GBP",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "April"
+      }
+    ],
+    "Main_Event": "Wildfire",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wildfire",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "2019-02-26",
+    "End_Date": "2019-05-18",
+    "Time_Annotation": "Info_Box"
+  }
+]

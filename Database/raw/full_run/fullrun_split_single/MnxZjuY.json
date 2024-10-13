@@ -1,369 +1,371 @@
-{
-  "Event_ID": "MnxZjuY",
-  "Sources": "https://en.wikipedia.org/wiki/1930_Pacific_hurricane_season",
-  "Event_Names": "1930 Pacific hurricane season",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "June 4, 1930",
-      "End_Date": "October 20, 1930",
-      "Num": "NULL",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Mazatl\u00e1n"
-      ],
-      "Start_Date": "June 4, 1930",
-      "End_Date": "June 11, 1930",
-      "Num": "NULL",
-      "Annotation": "Hurricane One"
+[
+  {
+    "Event_ID": "MnxZjuY",
+    "Sources": "https://en.wikipedia.org/wiki/1930_Pacific_hurricane_season",
+    "Event_Names": "1930 Pacific hurricane season",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Acapulco"
-      ],
-      "Start_Date": "October 9, 1930",
-      "End_Date": "October 11, 1930",
-      "Num": "NULL",
-      "Annotation": "Hurricane Four"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "1930-06-04",
-      "End_Date": "1930-10-20",
-      "Num": "NULL",
-      "Annotation": "Hurricane One"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Mazatl\u00e1n"
-      ],
-      "Start_Date": "1930-06-04",
-      "End_Date": "1930-06-11",
-      "Num": "some",
-      "Annotation": "Hurricane One"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "June 4, 1930",
+        "End_Date": "October 20, 1930",
+        "Num": "NULL",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Mazatl\u00e1n"
+        ],
+        "Start_Date": "June 4, 1930",
+        "End_Date": "June 11, 1930",
+        "Num": "NULL",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Acapulco"
+        ],
+        "Start_Date": "October 9, 1930",
+        "End_Date": "October 11, 1930",
+        "Num": "NULL",
+        "Annotation": "Hurricane Four"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Acapulco"
-      ],
-      "Start_Date": "1930-10-09",
-      "End_Date": "1930-10-11",
-      "Num": "Many buildings",
-      "Annotation": "Hurricane Four"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "Unknown",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Four"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Acapulco"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Four"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane One"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "1930-06-04",
+        "End_Date": "1930-10-20",
+        "Num": "NULL",
+        "Annotation": "Hurricane One"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Mazatl\u00e1n"
+        ],
+        "Start_Date": "1930-06-04",
+        "End_Date": "1930-06-11",
+        "Num": "some",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Acapulco"
+        ],
+        "Start_Date": "1930-10-09",
+        "End_Date": "1930-10-11",
+        "Num": "Many buildings",
+        "Annotation": "Hurricane Four"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "Unknown",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Three"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Four"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Acapulco"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Four"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Four"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Four"
+      },
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Five"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Mazatl\u00e1n"
+        ],
+        "Start_Date": "June 11",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Mazatl\u00e1n"
+        ],
+        "Start_Date": "October 4 or October 5",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Acapulco"
+        ],
+        "Start_Date": "October 9",
+        "End_Date": "October 11",
+        "Num": "NULL",
+        "Annotation": "Hurricane Four"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "La Manzanilla"
+        ],
+        "Start_Date": "October 18",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Five"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Five"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Mazatl\u00e1n"
-      ],
-      "Start_Date": "June 11",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane One"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Mazatl\u00e1n"
+        ],
+        "Start_Date": "June 11",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Acapulco"
+        ],
+        "Start_Date": "October 9",
+        "End_Date": "October 11",
+        "Num": "NULL",
+        "Annotation": "Hurricane Four"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Mazatl\u00e1n"
-      ],
-      "Start_Date": "October 4 or October 5",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Three"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Four"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Acapulco"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Four"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Acapulco"
-      ],
-      "Start_Date": "October 9",
-      "End_Date": "October 11",
-      "Num": "NULL",
-      "Annotation": "Hurricane Four"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "> $10,000",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "La Manzanilla"
-      ],
-      "Start_Date": "October 18",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Five"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Mazatl\u00e1n"
-      ],
-      "Start_Date": "June 11",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane One"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Acapulco"
-      ],
-      "Start_Date": "October 9",
-      "End_Date": "October 11",
-      "Num": "NULL",
-      "Annotation": "Hurricane Four"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Four"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Acapulco"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Four"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "> $10,000",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Mazatl\u00e1n"
-      ],
-      "Start_Date": "June 11, 1930",
-      "End_Date": "June 11, 1930",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane One"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Mazatl\u00e1n"
-      ],
-      "Start_Date": "October 4, 1930",
-      "End_Date": "October 5, 1930",
-      "Num": "$10,000",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Three"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Acapulco"
-      ],
-      "Start_Date": "October 9, 1930",
-      "End_Date": "October 11, 1930",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Four"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Hurricane One|Hurricane Three|Hurricane Four|Hurricane Five",
-  "Start_Date": "June 4, 1930",
-  "End_Date": "October 20, 1930",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Mexico",
-    "United States"
-  ],
-  "Administrative_Areas_Annotation": [
-    "Hurricane One",
-    "Hurricane Three",
-    "Hurricane Four",
-    "Hurricane Five"
-  ]
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Mazatl\u00e1n"
+        ],
+        "Start_Date": "June 11, 1930",
+        "End_Date": "June 11, 1930",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Mazatl\u00e1n"
+        ],
+        "Start_Date": "October 4, 1930",
+        "End_Date": "October 5, 1930",
+        "Num": "$10,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Acapulco"
+        ],
+        "Start_Date": "October 9, 1930",
+        "End_Date": "October 11, 1930",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Four"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Hurricane One|Hurricane Three|Hurricane Four|Hurricane Five",
+    "Start_Date": "June 4, 1930",
+    "End_Date": "October 20, 1930",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Mexico",
+      "United States"
+    ],
+    "Administrative_Areas_Annotation": [
+      "Hurricane One",
+      "Hurricane Three",
+      "Hurricane Four",
+      "Hurricane Five"
+    ]
+  }
+]

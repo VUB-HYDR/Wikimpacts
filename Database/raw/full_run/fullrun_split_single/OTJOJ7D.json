@@ -1,1001 +1,1003 @@
-{
-  "Event_ID": "OTJOJ7D",
-  "Sources": "https://en.wikipedia.org/wiki/1886_Atlantic_hurricane_season",
-  "Event_Names": "1886 Atlantic hurricane season",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Seasonal summary"
-    },
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Seasonal summary"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Galveston, Texas",
-        "Sabine Pass, Texas",
-        "Calcasieu Pass, Louisiana",
-        "Alexandria, Louisiana"
-      ],
-      "Start_Date": "June 13",
-      "End_Date": "June 15",
-      "Num": "NULL",
-      "Annotation": "Hurricane One"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Vuelta Abajo"
-      ],
-      "Start_Date": "June 18",
-      "End_Date": "June 23",
-      "Num": "NULL",
-      "Annotation": "Hurricane Two"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Cedar Key, Florida",
-        "Apalachicola, Florida",
-        "Tallahassee, Florida",
-        "Gainesville\u2013Lake City area, Florida",
-        "Lynchburg, Virginia",
-        "Washington, D.C."
-      ],
-      "Start_Date": "June 18",
-      "End_Date": "June 23",
-      "Num": "NULL",
-      "Annotation": "Hurricane Two"
-    },
-    {
-      "Administrative_Area": "Jamaica",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "June 27",
-      "End_Date": "July 2",
-      "Num": "at least 18",
-      "Annotation": "Hurricane Three"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Bataban\u00f3",
-        "Pinar del R\u00edo Province"
-      ],
-      "Start_Date": "June 27",
-      "End_Date": "July 2",
-      "Num": "NULL",
-      "Annotation": "Hurricane Three"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Apalachicola, Florida",
-        "Cedar Key, Florida",
-        "Tallahassee, Florida",
-        "Jefferson County, Florida",
-        "North Florida",
-        "Georgia",
-        "Kitty Hawk, North Carolina",
-        "Fort Macon, North Carolina",
-        "Richmond, Virginia"
-      ],
-      "Start_Date": "June 27",
-      "End_Date": "July 2",
-      "Num": "NULL",
-      "Annotation": "Hurricane Three"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "July 16",
-      "End_Date": "July 17",
-      "Num": "NULL",
-      "Annotation": "Hurricane Four"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Ozello, Florida",
-        "Cape Lookout, North Carolina"
-      ],
-      "Start_Date": "July 17",
-      "End_Date": "July 24",
-      "Num": "NULL",
-      "Annotation": "Hurricane Four"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Indianola, Texas",
-        "Quintana, Texas",
-        "Houston, Texas",
-        "Galveston, Texas"
-      ],
-      "Start_Date": "August 20",
-      "End_Date": "August 21",
-      "Num": "NULL",
-      "Annotation": "Hurricane Five"
-    },
-    {
-      "Administrative_Area": "Saint Vincent",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "August 16",
-      "End_Date": "August 27",
-      "Num": "NULL",
-      "Annotation": "Hurricane Six"
-    },
-    {
-      "Administrative_Area": "Jamaica",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "August 19",
-      "End_Date": "August 20",
-      "Num": "NULL",
-      "Annotation": "Hurricane Six"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Ciego de \u00c1vila",
-        "Moron"
-      ],
-      "Start_Date": "August 21",
-      "End_Date": "August 22",
-      "Num": "NULL",
-      "Annotation": "Hurricane Six"
-    },
-    {
-      "Administrative_Area": "Bahamas",
-      "Locations": [
-        "Nassau",
-        "Andros",
-        "Berry Islands"
-      ],
-      "Start_Date": "August 22",
-      "End_Date": "August 27",
-      "Num": "NULL",
-      "Annotation": "Hurricane Six"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "August 21",
-      "End_Date": "August 24",
-      "Num": "NULL",
-      "Annotation": "Hurricane Seven"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Matamoros",
-        "Monterrey"
-      ],
-      "Start_Date": "September 21",
-      "End_Date": "September 23",
-      "Num": "500 families",
-      "Annotation": "Hurricane Eight"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Brownsville, Texas",
-        "Indianola, Texas"
-      ],
-      "Start_Date": "September 21",
-      "End_Date": "September 23",
-      "Num": "NULL",
-      "Annotation": "Hurricane Eight"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "September 22",
-      "End_Date": "September 30",
-      "Num": "NULL",
-      "Annotation": "Hurricane Nine"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Port Eads, Louisiana",
-        "New Orleans, Louisiana",
-        "Sabine Pass, Texas",
-        "Johnson Bayou, Louisiana"
-      ],
-      "Start_Date": "October 12",
-      "End_Date": "October 13",
-      "Num": "196",
-      "Annotation": "Hurricane Ten"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "June 13, 1886",
-      "End_Date": "October 26, 1886",
-      "Num": "NULL",
-      "Annotation": "Seasonal summary"
-    },
-    {
-      "Administrative_Areas": [
-        "Cuba"
-      ],
-      "Start_Date": "June 13, 1886",
-      "End_Date": "October 26, 1886",
-      "Num": "NULL",
-      "Annotation": "Seasonal summary"
-    },
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "June 13, 1886",
-      "End_Date": "October 26, 1886",
-      "Num": "NULL",
-      "Annotation": "Seasonal summary"
-    },
-    {
-      "Administrative_Areas": [
-        "Jamaica"
-      ],
-      "Start_Date": "June 13, 1886",
-      "End_Date": "October 26, 1886",
-      "Num": "NULL",
-      "Annotation": "Seasonal summary"
-    },
-    {
-      "Administrative_Areas": [
-        "Bahamas"
-      ],
-      "Start_Date": "June 13, 1886",
-      "End_Date": "October 26, 1886",
-      "Num": "NULL",
-      "Annotation": "Seasonal summary"
-    },
-    {
-      "Administrative_Areas": [
-        "Venezuela"
-      ],
-      "Start_Date": "June 13, 1886",
-      "End_Date": "October 26, 1886",
-      "Num": "NULL",
-      "Annotation": "Seasonal summary"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Galveston",
-        "Sabine Pass",
-        "Calcasieu Pass",
-        "Alexandria",
-        "St. Marks",
-        "Apalachicola",
-        "Tallahassee",
-        "Cedar Key",
-        "Indian Pass",
-        "Houston",
-        "Indianola",
-        "Quintana",
-        "Port Eads",
-        "New Orleans",
-        "Sabine Pass",
-        "Johnson Bayou",
-        "Brownsville"
-      ],
-      "Start_Date": "June 13, 1886",
-      "End_Date": "October 26, 1886",
-      "Num": "NULL",
-      "Annotation": "Hurricane One, Hurricane Two, Hurricane Three, Hurricane Four, Hurricane Five, Hurricane Six, Hurricane Eight, Hurricane Ten"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Pinar del R\u00edo Province",
-        "Vuelta Abajo",
-        "Matanzas",
-        "Ciego de \u00c1vila",
-        "Moron",
-        "Las Tunas"
-      ],
-      "Start_Date": "June 13, 1886",
-      "End_Date": "October 26, 1886",
-      "Num": "NULL",
-      "Annotation": "Hurricane Two, Hurricane Three, Hurricane Four, Hurricane Five, Hurricane Six, Hurricane Eight"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Tamaulipas",
-        "Matamoros",
-        "Monterrey"
-      ],
-      "Start_Date": "June 13, 1886",
-      "End_Date": "October 26, 1886",
-      "Num": "NULL",
-      "Annotation": "Hurricane One, Hurricane Eight"
-    },
-    {
-      "Administrative_Area": "Jamaica",
-      "Locations": [
-        "Kingston"
-      ],
-      "Start_Date": "June 13, 1886",
-      "End_Date": "October 26, 1886",
-      "Num": "NULL",
-      "Annotation": "Hurricane Two, Hurricane Three, Hurricane Six"
-    },
-    {
-      "Administrative_Area": "Bahamas",
-      "Locations": [
-        "Nassau",
-        "Andros",
-        "Berry Islands"
-      ],
-      "Start_Date": "June 13, 1886",
-      "End_Date": "October 26, 1886",
-      "Num": "NULL",
-      "Annotation": "Hurricane Six"
-    },
-    {
-      "Administrative_Area": "Venezuela",
-      "Locations": [
-        "Cura\u00e7ao"
-      ],
-      "Start_Date": "June 13, 1886",
-      "End_Date": "October 26, 1886",
-      "Num": "NULL",
-      "Annotation": "Hurricane Six"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "200 to 225 total",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "at least 196",
-      "Annotation": "Hurricane Ten"
-    },
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Two"
-    },
-    {
-      "Administrative_Areas": "Jamaica",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Three"
-    },
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Three"
-    },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Three"
-    },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Five"
-    },
-    {
-      "Administrative_Areas": "Saint Vincent",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Six"
-    },
-    {
-      "Administrative_Areas": "Jamaica",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Six"
-    },
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Hurricane Six"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Sabine Pass, Texas",
-        "Johnson Bayou, Louisiana"
-      ],
-      "Start_Date": "October 12",
-      "End_Date": "October 12",
-      "Num": "at least 196",
-      "Annotation": "Hurricane Ten"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "western Cuba"
-      ],
-      "Start_Date": "June 18",
-      "End_Date": "June 23",
-      "Num": "NULL",
-      "Annotation": "Hurricane Two"
-    },
-    {
-      "Administrative_Area": "Jamaica",
-      "Locations": [
-        "west of the island"
-      ],
-      "Start_Date": "June 27",
-      "End_Date": "July 2",
-      "Num": "at least 18",
-      "Annotation": "Hurricane Three"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Bataban\u00f3",
-        "Pinar del R\u00edo Province"
-      ],
-      "Start_Date": "June 27",
-      "End_Date": "July 2",
-      "Num": "NULL",
-      "Annotation": "Hurricane Three"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Apalachicola, Florida",
-        "Jefferson County, Florida"
-      ],
-      "Start_Date": "June 27",
-      "End_Date": "July 2",
-      "Num": "NULL",
-      "Annotation": "Hurricane Three"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Indianola, Texas"
-      ],
-      "Start_Date": "August 20",
-      "End_Date": "August 21",
-      "Num": "NULL",
-      "Annotation": "Hurricane Five"
-    },
-    {
-      "Administrative_Area": "Saint Vincent",
-      "Locations": [
-        "south of the island"
-      ],
-      "Start_Date": "August 16",
-      "End_Date": "August 27",
-      "Num": "NULL",
-      "Annotation": "Hurricane Six"
-    },
-    {
-      "Administrative_Area": "Jamaica",
-      "Locations": [
-        "Kingston"
-      ],
-      "Start_Date": "August 16",
-      "End_Date": "August 27",
-      "Num": "NULL",
-      "Annotation": "Hurricane Six"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Ciego de \u00c1vila",
-        "Moron"
-      ],
-      "Start_Date": "August 16",
-      "End_Date": "August 27",
-      "Num": "NULL",
-      "Annotation": "Hurricane Six"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "August 20",
-      "End_Date": "August 21",
-      "Num": "NULL",
-      "Annotation": "Hurricane Five"
-    },
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "September 21",
-      "End_Date": "September 23",
-      "Num": "NULL",
-      "Annotation": "Hurricane Eight"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Indianola, Texas"
-      ],
-      "Start_Date": "August 20",
-      "End_Date": "August 21",
-      "Num": "NULL",
-      "Annotation": "Hurricane Five"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Matamoros"
-      ],
-      "Start_Date": "September 21",
-      "End_Date": "September 23",
-      "Num": "500 families",
-      "Annotation": "Hurricane Eight"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Brownsville, Texas"
-      ],
-      "Start_Date": "September 21",
-      "End_Date": "September 23",
-      "Num": "NULL",
-      "Annotation": "Hurricane Eight"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Indianola, Texas"
-      ],
-      "Start_Date": "September 21",
-      "End_Date": "September 23",
-      "Num": "NULL",
-      "Annotation": "Hurricane Eight"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "Mexico"
-      ],
-      "Start_Date": "September 21",
-      "End_Date": "September 23",
-      "Num": "500 families",
-      "Annotation": "Hurricane Eight"
-    },
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "September 21",
-      "End_Date": "September 23",
-      "Num": "200 houses",
-      "Annotation": "Hurricane Eight"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Matamoros"
-      ],
-      "Start_Date": "September 21",
-      "End_Date": "September 23",
-      "Num": "500 families",
-      "Annotation": "Hurricane Eight"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Brownsville"
-      ],
-      "Start_Date": "September 21",
-      "End_Date": "September 23",
-      "Num": "200 houses",
-      "Annotation": "Hurricane Eight"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Jamaica",
-      "Start_Date": "August 19",
-      "End_Date": "August 20",
-      "Num": "NULL",
-      "Annotation": "Hurricane Six"
-    },
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "August 21",
-      "End_Date": "August 22",
-      "Num": "NULL",
-      "Annotation": "Hurricane Six"
-    },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Jamaica",
-      "Locations": [
-        "Kingston"
-      ],
-      "Start_Date": "August 19",
-      "End_Date": "August 20",
-      "Num": "NULL",
-      "Annotation": "Hurricane Six"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Ciego de \u00c1vila",
-        "Moron"
-      ],
-      "Start_Date": "August 21",
-      "End_Date": "August 22",
-      "Num": "NULL",
-      "Annotation": "Hurricane Six"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Indianola, Texas"
-      ],
-      "Start_Date": "August 20",
-      "End_Date": "August 21",
-      "Num": "NULL",
-      "Annotation": "Hurricane Five"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Sabine Pass, Texas"
-      ],
-      "Start_Date": "October 12",
-      "End_Date": "October 12",
-      "Num": "NULL",
-      "Annotation": "Hurricane Ten"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Johnson Bayou, Louisiana"
-      ],
-      "Start_Date": "October 12",
-      "End_Date": "October 12",
-      "Num": "NULL",
-      "Annotation": "Hurricane Ten"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Indianola, Texas"
-      ],
-      "Start_Date": "August 20, 1886",
-      "End_Date": "August 21, 1886",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Five"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Sabine Pass, Texas"
-      ],
-      "Start_Date": "October 12, 1886",
-      "End_Date": "October 12, 1886",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Ten"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Johnson Bayou, Louisiana"
-      ],
-      "Start_Date": "October 12, 1886",
-      "End_Date": "October 12, 1886",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Ten"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "~ $2.25 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Seasonal summary"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Galveston, Texas"
-      ],
-      "Start_Date": "June 14, 1886",
-      "End_Date": "June 15, 1886",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane One"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Sabine Pass, Texas"
-      ],
-      "Start_Date": "June 14, 1886",
-      "End_Date": "June 15, 1886",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane One"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Calcasieu Pass, Louisiana"
-      ],
-      "Start_Date": "June 14, 1886",
-      "End_Date": "June 15, 1886",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane One"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Apalachicola, Florida"
-      ],
-      "Start_Date": "June 21, 1886",
-      "End_Date": "June 23, 1886",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Two"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Tallahassee, Florida"
-      ],
-      "Start_Date": "June 21, 1886",
-      "End_Date": "June 23, 1886",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Two"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Indianola, Texas"
-      ],
-      "Start_Date": "August 20, 1886",
-      "End_Date": "August 21, 1886",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Five"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Quintana, Texas"
-      ],
-      "Start_Date": "August 20, 1886",
-      "End_Date": "August 21, 1886",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Five"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Houston, Texas"
-      ],
-      "Start_Date": "August 19, 1886",
-      "End_Date": "August 20, 1886",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Five"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Galveston, Texas"
-      ],
-      "Start_Date": "August 19, 1886",
-      "End_Date": "August 20, 1886",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Five"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Brownsville, Texas"
-      ],
-      "Start_Date": "September 21, 1886",
-      "End_Date": "September 23, 1886",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Eight"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Indianola, Texas"
-      ],
-      "Start_Date": "September 21, 1886",
-      "End_Date": "September 23, 1886",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Eight"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Sabine Pass, Texas"
-      ],
-      "Start_Date": "October 12, 1886",
-      "End_Date": "October 13, 1886",
-      "Num": "$250,000",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Ten"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Johnson Bayou, Louisiana"
-      ],
-      "Start_Date": "October 12, 1886",
-      "End_Date": "October 13, 1886",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Hurricane Ten"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Hurricane One|Hurricane Two|Hurricane Three|Hurricane Four|Hurricane Five|Hurricane Six|Hurricane Seven|Hurricane Eight|Hurricane Nine|Hurricane Ten",
-  "Start_Date": "June 13, 1886",
-  "End_Date": "October 26, 1886",
-  "Time_Annotation": "Info_Box"
-}
+[
+  {
+    "Event_ID": "OTJOJ7D",
+    "Sources": "https://en.wikipedia.org/wiki/1886_Atlantic_hurricane_season",
+    "Event_Names": "1886 Atlantic hurricane season",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Seasonal summary"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Seasonal summary"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Galveston, Texas",
+          "Sabine Pass, Texas",
+          "Calcasieu Pass, Louisiana",
+          "Alexandria, Louisiana"
+        ],
+        "Start_Date": "June 13",
+        "End_Date": "June 15",
+        "Num": "NULL",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Vuelta Abajo"
+        ],
+        "Start_Date": "June 18",
+        "End_Date": "June 23",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Cedar Key, Florida",
+          "Apalachicola, Florida",
+          "Tallahassee, Florida",
+          "Gainesville\u2013Lake City area, Florida",
+          "Lynchburg, Virginia",
+          "Washington, D.C."
+        ],
+        "Start_Date": "June 18",
+        "End_Date": "June 23",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "June 27",
+        "End_Date": "July 2",
+        "Num": "at least 18",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Bataban\u00f3",
+          "Pinar del R\u00edo Province"
+        ],
+        "Start_Date": "June 27",
+        "End_Date": "July 2",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Apalachicola, Florida",
+          "Cedar Key, Florida",
+          "Tallahassee, Florida",
+          "Jefferson County, Florida",
+          "North Florida",
+          "Georgia",
+          "Kitty Hawk, North Carolina",
+          "Fort Macon, North Carolina",
+          "Richmond, Virginia"
+        ],
+        "Start_Date": "June 27",
+        "End_Date": "July 2",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "July 16",
+        "End_Date": "July 17",
+        "Num": "NULL",
+        "Annotation": "Hurricane Four"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Ozello, Florida",
+          "Cape Lookout, North Carolina"
+        ],
+        "Start_Date": "July 17",
+        "End_Date": "July 24",
+        "Num": "NULL",
+        "Annotation": "Hurricane Four"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Indianola, Texas",
+          "Quintana, Texas",
+          "Houston, Texas",
+          "Galveston, Texas"
+        ],
+        "Start_Date": "August 20",
+        "End_Date": "August 21",
+        "Num": "NULL",
+        "Annotation": "Hurricane Five"
+      },
+      {
+        "Administrative_Area": "Saint Vincent",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "August 16",
+        "End_Date": "August 27",
+        "Num": "NULL",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "August 19",
+        "End_Date": "August 20",
+        "Num": "NULL",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Ciego de \u00c1vila",
+          "Moron"
+        ],
+        "Start_Date": "August 21",
+        "End_Date": "August 22",
+        "Num": "NULL",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Nassau",
+          "Andros",
+          "Berry Islands"
+        ],
+        "Start_Date": "August 22",
+        "End_Date": "August 27",
+        "Num": "NULL",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "August 21",
+        "End_Date": "August 24",
+        "Num": "NULL",
+        "Annotation": "Hurricane Seven"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Matamoros",
+          "Monterrey"
+        ],
+        "Start_Date": "September 21",
+        "End_Date": "September 23",
+        "Num": "500 families",
+        "Annotation": "Hurricane Eight"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Brownsville, Texas",
+          "Indianola, Texas"
+        ],
+        "Start_Date": "September 21",
+        "End_Date": "September 23",
+        "Num": "NULL",
+        "Annotation": "Hurricane Eight"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "September 22",
+        "End_Date": "September 30",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Port Eads, Louisiana",
+          "New Orleans, Louisiana",
+          "Sabine Pass, Texas",
+          "Johnson Bayou, Louisiana"
+        ],
+        "Start_Date": "October 12",
+        "End_Date": "October 13",
+        "Num": "196",
+        "Annotation": "Hurricane Ten"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "June 13, 1886",
+        "End_Date": "October 26, 1886",
+        "Num": "NULL",
+        "Annotation": "Seasonal summary"
+      },
+      {
+        "Administrative_Areas": [
+          "Cuba"
+        ],
+        "Start_Date": "June 13, 1886",
+        "End_Date": "October 26, 1886",
+        "Num": "NULL",
+        "Annotation": "Seasonal summary"
+      },
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "June 13, 1886",
+        "End_Date": "October 26, 1886",
+        "Num": "NULL",
+        "Annotation": "Seasonal summary"
+      },
+      {
+        "Administrative_Areas": [
+          "Jamaica"
+        ],
+        "Start_Date": "June 13, 1886",
+        "End_Date": "October 26, 1886",
+        "Num": "NULL",
+        "Annotation": "Seasonal summary"
+      },
+      {
+        "Administrative_Areas": [
+          "Bahamas"
+        ],
+        "Start_Date": "June 13, 1886",
+        "End_Date": "October 26, 1886",
+        "Num": "NULL",
+        "Annotation": "Seasonal summary"
+      },
+      {
+        "Administrative_Areas": [
+          "Venezuela"
+        ],
+        "Start_Date": "June 13, 1886",
+        "End_Date": "October 26, 1886",
+        "Num": "NULL",
+        "Annotation": "Seasonal summary"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Galveston",
+          "Sabine Pass",
+          "Calcasieu Pass",
+          "Alexandria",
+          "St. Marks",
+          "Apalachicola",
+          "Tallahassee",
+          "Cedar Key",
+          "Indian Pass",
+          "Houston",
+          "Indianola",
+          "Quintana",
+          "Port Eads",
+          "New Orleans",
+          "Sabine Pass",
+          "Johnson Bayou",
+          "Brownsville"
+        ],
+        "Start_Date": "June 13, 1886",
+        "End_Date": "October 26, 1886",
+        "Num": "NULL",
+        "Annotation": "Hurricane One, Hurricane Two, Hurricane Three, Hurricane Four, Hurricane Five, Hurricane Six, Hurricane Eight, Hurricane Ten"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Pinar del R\u00edo Province",
+          "Vuelta Abajo",
+          "Matanzas",
+          "Ciego de \u00c1vila",
+          "Moron",
+          "Las Tunas"
+        ],
+        "Start_Date": "June 13, 1886",
+        "End_Date": "October 26, 1886",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two, Hurricane Three, Hurricane Four, Hurricane Five, Hurricane Six, Hurricane Eight"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Tamaulipas",
+          "Matamoros",
+          "Monterrey"
+        ],
+        "Start_Date": "June 13, 1886",
+        "End_Date": "October 26, 1886",
+        "Num": "NULL",
+        "Annotation": "Hurricane One, Hurricane Eight"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Kingston"
+        ],
+        "Start_Date": "June 13, 1886",
+        "End_Date": "October 26, 1886",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two, Hurricane Three, Hurricane Six"
+      },
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Nassau",
+          "Andros",
+          "Berry Islands"
+        ],
+        "Start_Date": "June 13, 1886",
+        "End_Date": "October 26, 1886",
+        "Num": "NULL",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Area": "Venezuela",
+        "Locations": [
+          "Cura\u00e7ao"
+        ],
+        "Start_Date": "June 13, 1886",
+        "End_Date": "October 26, 1886",
+        "Num": "NULL",
+        "Annotation": "Hurricane Six"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "200 to 225 total",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 196",
+        "Annotation": "Hurricane Ten"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Areas": "Jamaica",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Five"
+      },
+      {
+        "Administrative_Areas": "Saint Vincent",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Areas": "Jamaica",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Six"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Sabine Pass, Texas",
+          "Johnson Bayou, Louisiana"
+        ],
+        "Start_Date": "October 12",
+        "End_Date": "October 12",
+        "Num": "at least 196",
+        "Annotation": "Hurricane Ten"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "western Cuba"
+        ],
+        "Start_Date": "June 18",
+        "End_Date": "June 23",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "west of the island"
+        ],
+        "Start_Date": "June 27",
+        "End_Date": "July 2",
+        "Num": "at least 18",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Bataban\u00f3",
+          "Pinar del R\u00edo Province"
+        ],
+        "Start_Date": "June 27",
+        "End_Date": "July 2",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Apalachicola, Florida",
+          "Jefferson County, Florida"
+        ],
+        "Start_Date": "June 27",
+        "End_Date": "July 2",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Indianola, Texas"
+        ],
+        "Start_Date": "August 20",
+        "End_Date": "August 21",
+        "Num": "NULL",
+        "Annotation": "Hurricane Five"
+      },
+      {
+        "Administrative_Area": "Saint Vincent",
+        "Locations": [
+          "south of the island"
+        ],
+        "Start_Date": "August 16",
+        "End_Date": "August 27",
+        "Num": "NULL",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Kingston"
+        ],
+        "Start_Date": "August 16",
+        "End_Date": "August 27",
+        "Num": "NULL",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Ciego de \u00c1vila",
+          "Moron"
+        ],
+        "Start_Date": "August 16",
+        "End_Date": "August 27",
+        "Num": "NULL",
+        "Annotation": "Hurricane Six"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "August 20",
+        "End_Date": "August 21",
+        "Num": "NULL",
+        "Annotation": "Hurricane Five"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "September 21",
+        "End_Date": "September 23",
+        "Num": "NULL",
+        "Annotation": "Hurricane Eight"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Indianola, Texas"
+        ],
+        "Start_Date": "August 20",
+        "End_Date": "August 21",
+        "Num": "NULL",
+        "Annotation": "Hurricane Five"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Matamoros"
+        ],
+        "Start_Date": "September 21",
+        "End_Date": "September 23",
+        "Num": "500 families",
+        "Annotation": "Hurricane Eight"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Brownsville, Texas"
+        ],
+        "Start_Date": "September 21",
+        "End_Date": "September 23",
+        "Num": "NULL",
+        "Annotation": "Hurricane Eight"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Indianola, Texas"
+        ],
+        "Start_Date": "September 21",
+        "End_Date": "September 23",
+        "Num": "NULL",
+        "Annotation": "Hurricane Eight"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "September 21",
+        "End_Date": "September 23",
+        "Num": "500 families",
+        "Annotation": "Hurricane Eight"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "September 21",
+        "End_Date": "September 23",
+        "Num": "200 houses",
+        "Annotation": "Hurricane Eight"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Matamoros"
+        ],
+        "Start_Date": "September 21",
+        "End_Date": "September 23",
+        "Num": "500 families",
+        "Annotation": "Hurricane Eight"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Brownsville"
+        ],
+        "Start_Date": "September 21",
+        "End_Date": "September 23",
+        "Num": "200 houses",
+        "Annotation": "Hurricane Eight"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Jamaica",
+        "Start_Date": "August 19",
+        "End_Date": "August 20",
+        "Num": "NULL",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "August 21",
+        "End_Date": "August 22",
+        "Num": "NULL",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Kingston"
+        ],
+        "Start_Date": "August 19",
+        "End_Date": "August 20",
+        "Num": "NULL",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Ciego de \u00c1vila",
+          "Moron"
+        ],
+        "Start_Date": "August 21",
+        "End_Date": "August 22",
+        "Num": "NULL",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Indianola, Texas"
+        ],
+        "Start_Date": "August 20",
+        "End_Date": "August 21",
+        "Num": "NULL",
+        "Annotation": "Hurricane Five"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Sabine Pass, Texas"
+        ],
+        "Start_Date": "October 12",
+        "End_Date": "October 12",
+        "Num": "NULL",
+        "Annotation": "Hurricane Ten"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Johnson Bayou, Louisiana"
+        ],
+        "Start_Date": "October 12",
+        "End_Date": "October 12",
+        "Num": "NULL",
+        "Annotation": "Hurricane Ten"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Indianola, Texas"
+        ],
+        "Start_Date": "August 20, 1886",
+        "End_Date": "August 21, 1886",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Five"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Sabine Pass, Texas"
+        ],
+        "Start_Date": "October 12, 1886",
+        "End_Date": "October 12, 1886",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Ten"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Johnson Bayou, Louisiana"
+        ],
+        "Start_Date": "October 12, 1886",
+        "End_Date": "October 12, 1886",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Ten"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "~ $2.25 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Seasonal summary"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Galveston, Texas"
+        ],
+        "Start_Date": "June 14, 1886",
+        "End_Date": "June 15, 1886",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Sabine Pass, Texas"
+        ],
+        "Start_Date": "June 14, 1886",
+        "End_Date": "June 15, 1886",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Calcasieu Pass, Louisiana"
+        ],
+        "Start_Date": "June 14, 1886",
+        "End_Date": "June 15, 1886",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Apalachicola, Florida"
+        ],
+        "Start_Date": "June 21, 1886",
+        "End_Date": "June 23, 1886",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Tallahassee, Florida"
+        ],
+        "Start_Date": "June 21, 1886",
+        "End_Date": "June 23, 1886",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Indianola, Texas"
+        ],
+        "Start_Date": "August 20, 1886",
+        "End_Date": "August 21, 1886",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Five"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Quintana, Texas"
+        ],
+        "Start_Date": "August 20, 1886",
+        "End_Date": "August 21, 1886",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Five"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Houston, Texas"
+        ],
+        "Start_Date": "August 19, 1886",
+        "End_Date": "August 20, 1886",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Five"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Galveston, Texas"
+        ],
+        "Start_Date": "August 19, 1886",
+        "End_Date": "August 20, 1886",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Five"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Brownsville, Texas"
+        ],
+        "Start_Date": "September 21, 1886",
+        "End_Date": "September 23, 1886",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Eight"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Indianola, Texas"
+        ],
+        "Start_Date": "September 21, 1886",
+        "End_Date": "September 23, 1886",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Eight"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Sabine Pass, Texas"
+        ],
+        "Start_Date": "October 12, 1886",
+        "End_Date": "October 13, 1886",
+        "Num": "$250,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Ten"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Johnson Bayou, Louisiana"
+        ],
+        "Start_Date": "October 12, 1886",
+        "End_Date": "October 13, 1886",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Ten"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Hurricane One|Hurricane Two|Hurricane Three|Hurricane Four|Hurricane Five|Hurricane Six|Hurricane Seven|Hurricane Eight|Hurricane Nine|Hurricane Ten",
+    "Start_Date": "June 13, 1886",
+    "End_Date": "October 26, 1886",
+    "Time_Annotation": "Info_Box"
+  }
+]

@@ -1,383 +1,385 @@
-{
-  "Event_ID": "tljVnFm",
-  "Sources": "https://en.wikipedia.org/wiki/Grande_Seca",
-  "Event_Names": "Grande Seca",
-  "Total_Summary_Affected": {
-    "Total_Affected": "between 400,000 and 500,000 people",
-    "Total_Affected_Annotation": "Grande Seca"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Brazil"
-      ],
-      "Start_Date": "1877",
-      "End_Date": "1878",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Northeastern region"
-      ],
-      "Start_Date": "1877",
-      "End_Date": "1878",
-      "Num": "800,000 people",
-      "Annotation": "Grande Seca"
+[
+  {
+    "Event_ID": "tljVnFm",
+    "Sources": "https://en.wikipedia.org/wiki/Grande_Seca",
+    "Event_Names": "Grande Seca",
+    "Total_Summary_Affected": {
+      "Total_Affected": "between 400,000 and 500,000 people",
+      "Total_Affected_Annotation": "Grande Seca"
     },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Amazon"
-      ],
-      "Start_Date": "1877",
-      "End_Date": "1878",
-      "Num": "120,000 people",
-      "Annotation": "Grande Seca"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Brazil"
+        ],
+        "Start_Date": "1877",
+        "End_Date": "1878",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Northeastern region"
+        ],
+        "Start_Date": "1877",
+        "End_Date": "1878",
+        "Num": "800,000 people",
+        "Annotation": "Grande Seca"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Amazon"
+        ],
+        "Start_Date": "1877",
+        "End_Date": "1878",
+        "Num": "120,000 people",
+        "Annotation": "Grande Seca"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Other parts of Brazil"
+        ],
+        "Start_Date": "1877",
+        "End_Date": "1878",
+        "Num": "68,000 people",
+        "Annotation": "Grande Seca"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Cear\u00e1"
+        ],
+        "Start_Date": "1877",
+        "End_Date": "1878",
+        "Num": "NULL",
+        "Annotation": "Grande Seca"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Fortaleza"
+        ],
+        "Start_Date": "1877",
+        "End_Date": "1878",
+        "Num": "400 per day",
+        "Annotation": "Death toll"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Inhamuns' sert\u00e3o"
+        ],
+        "Start_Date": "1877",
+        "End_Date": "1878",
+        "Num": "10% of the population",
+        "Annotation": "Emigration"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Other parts of Brazil"
-      ],
-      "Start_Date": "1877",
-      "End_Date": "1878",
-      "Num": "68,000 people",
-      "Annotation": "Grande Seca"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "Brazil"
+        ],
+        "Start_Date": "1877",
+        "End_Date": "1878",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Cear\u00e1"
+        ],
+        "Start_Date": "1877",
+        "End_Date": "1878",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "between 400,000 and 500,000",
+      "Total_Deaths_Annotation": "Grande Seca"
     },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Cear\u00e1"
-      ],
-      "Start_Date": "1877",
-      "End_Date": "1878",
-      "Num": "NULL",
-      "Annotation": "Grande Seca"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "Brazil"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Cear\u00e1"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "nearly 500,000",
+        "Annotation": "Death toll"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Fortaleza"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "December 20, 1878",
+        "Num": "400 per day",
+        "Annotation": "Death toll"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Fortaleza"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 200,000 refugees",
+        "Annotation": "Death toll"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Cear\u00e1"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "150,000",
+        "Annotation": "Death toll"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Fortaleza"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "over 15,000",
+        "Annotation": "Death toll"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Fortaleza"
-      ],
-      "Start_Date": "1877",
-      "End_Date": "1878",
-      "Num": "400 per day",
-      "Annotation": "Death toll"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Brazil"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Northeastern region"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "around 120,000 migrated to the Amazon while 68,000 migrated to other parts of Brazil",
+        "Annotation": "Grande Seca"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Inhamuns' sert\u00e3o"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "only 10% of the population waited at their homes for the drought to be over",
+        "Annotation": "Emigration"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Inhamuns' sert\u00e3o"
-      ],
-      "Start_Date": "1877",
-      "End_Date": "1878",
-      "Num": "10% of the population",
-      "Annotation": "Emigration"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "Brazil"
-      ],
-      "Start_Date": "1877",
-      "End_Date": "1878",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Cear\u00e1"
-      ],
-      "Start_Date": "1877",
-      "End_Date": "1878",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "between 400,000 and 500,000",
-    "Total_Deaths_Annotation": "Grande Seca"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "Brazil"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Cear\u00e1"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "nearly 500,000",
-      "Annotation": "Death toll"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Brazil"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Cear\u00e1"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "an estimated 90 percent",
+        "Annotation": "Emigration"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Inhamuns' sert\u00e3o"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "only 10% of the population waited at their homes",
+        "Annotation": "Emigration"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Fortaleza"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "December 20, 1878",
-      "Num": "400 per day",
-      "Annotation": "Death toll"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "Brazil"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Fortaleza"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "400 per day",
+        "Annotation": "Death toll"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Fortaleza"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 200,000 refugees",
+        "Annotation": "Death toll"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Fortaleza"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "at least 200,000 refugees",
-      "Annotation": "Death toll"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Brazil"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Cear\u00e1"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "NULL",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Cear\u00e1"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "150,000",
-      "Annotation": "Death toll"
-    },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Fortaleza"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "over 15,000",
-      "Annotation": "Death toll"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Brazil"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Northeastern region"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "around 120,000 migrated to the Amazon while 68,000 migrated to other parts of Brazil",
-      "Annotation": "Grande Seca"
-    },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Inhamuns' sert\u00e3o"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "only 10% of the population waited at their homes for the drought to be over",
-      "Annotation": "Emigration"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "Brazil"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Cear\u00e1"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "an estimated 90 percent",
-      "Annotation": "Emigration"
-    },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Inhamuns' sert\u00e3o"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "only 10% of the population waited at their homes",
-      "Annotation": "Emigration"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "Brazil"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Fortaleza"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "400 per day",
-      "Annotation": "Death toll"
-    },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Fortaleza"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "at least 200,000 refugees",
-      "Annotation": "Death toll"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Brazil"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Cear\u00e1"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "NULL",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "NULL",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "Brazil"
-      ],
-      "Start_Date": "1877",
-      "End_Date": "1878",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Economy"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Cear\u00e1"
-      ],
-      "Start_Date": "1877",
-      "End_Date": "1878",
-      "Num": "-275% change in per capita product value",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Social climate"
-    },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "S\u00e3o Paulo"
-      ],
-      "Start_Date": "1877",
-      "End_Date": "1878",
-      "Num": "+506% change in per capita product value",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Social climate"
-    }
-  ],
-  "Main_Event": "Drought",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Drought",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "1877",
-  "End_Date": "1878",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Brazil"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Brazil"
+        ],
+        "Start_Date": "1877",
+        "End_Date": "1878",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Economy"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Cear\u00e1"
+        ],
+        "Start_Date": "1877",
+        "End_Date": "1878",
+        "Num": "-275% change in per capita product value",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Social climate"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "S\u00e3o Paulo"
+        ],
+        "Start_Date": "1877",
+        "End_Date": "1878",
+        "Num": "+506% change in per capita product value",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Social climate"
+      }
+    ],
+    "Main_Event": "Drought",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Drought",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "1877",
+    "End_Date": "1878",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Brazil"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

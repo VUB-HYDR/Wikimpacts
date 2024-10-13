@@ -1,419 +1,421 @@
-{
-  "Event_ID": "hw7PDim",
-  "Sources": "https://en.wikipedia.org/wiki/Cyclone_Gene",
-  "Event_Names": "Cyclone Gene",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Fiji"
-      ],
-      "Start_Date": "January 27, 2008",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Fiji"
+[
+  {
+    "Event_ID": "hw7PDim",
+    "Sources": "https://en.wikipedia.org/wiki/Cyclone_Gene",
+    "Event_Names": "Cyclone Gene",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": [
-        "Vanuatu"
-      ],
-      "Start_Date": "January 31, 2008",
-      "End_Date": "February 2, 2008",
-      "Num": "NULL",
-      "Annotation": "Vanuatu"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Fiji",
-      "Locations": [
-        "Suva",
-        "Nadi"
-      ],
-      "Start_Date": "January 27, 2008",
-      "End_Date": "NULL",
-      "Num": "over 340 people",
-      "Annotation": "Fiji"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Fiji"
+        ],
+        "Start_Date": "January 27, 2008",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Fiji"
+      },
+      {
+        "Administrative_Areas": [
+          "Vanuatu"
+        ],
+        "Start_Date": "January 31, 2008",
+        "End_Date": "February 2, 2008",
+        "Num": "NULL",
+        "Annotation": "Vanuatu"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Fiji",
+        "Locations": [
+          "Suva",
+          "Nadi"
+        ],
+        "Start_Date": "January 27, 2008",
+        "End_Date": "NULL",
+        "Num": "over 340 people",
+        "Annotation": "Fiji"
+      },
+      {
+        "Administrative_Area": "Fiji",
+        "Locations": [
+          "Viti Levu"
+        ],
+        "Start_Date": "January 27, 2008",
+        "End_Date": "NULL",
+        "Num": "several cases of Typhoid",
+        "Annotation": "Fiji"
+      },
+      {
+        "Administrative_Area": "Fiji",
+        "Locations": [
+          "Viti Levu"
+        ],
+        "Start_Date": "January 27, 2008",
+        "End_Date": "NULL",
+        "Num": "1 person",
+        "Annotation": "Fiji"
+      },
+      {
+        "Administrative_Area": "Fiji",
+        "Locations": [
+          "Viti Levu"
+        ],
+        "Start_Date": "January 27, 2008",
+        "End_Date": "NULL",
+        "Num": "7 other deaths",
+        "Annotation": "Fiji"
+      },
+      {
+        "Administrative_Area": "Vanuatu",
+        "Locations": [
+          "Futuna Island"
+        ],
+        "Start_Date": "January 31, 2008",
+        "End_Date": "February 2, 2008",
+        "Num": "NULL",
+        "Annotation": "Vanuatu"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Fiji",
-      "Locations": [
-        "Viti Levu"
-      ],
-      "Start_Date": "January 27, 2008",
-      "End_Date": "NULL",
-      "Num": "several cases of Typhoid",
-      "Annotation": "Fiji"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Fiji",
+        "Start_Date": "January 27, 2008",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Fiji"
+      },
+      {
+        "Administrative_Areas": "Vanuatu",
+        "Start_Date": "January 31, 2008",
+        "End_Date": "February 2, 2008",
+        "Num": "NULL",
+        "Annotation": "Vanuatu"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Fiji",
+        "Locations": [
+          "Vanua Levu",
+          "Viti Levu",
+          "Taveuni",
+          "Yasawa"
+        ],
+        "Start_Date": "January 27, 2008",
+        "End_Date": "NULL",
+        "Num": "61 houses completely flattened",
+        "Annotation": "Fiji"
+      },
+      {
+        "Administrative_Area": "Vanuatu",
+        "Locations": [
+          "Futuna Island"
+        ],
+        "Start_Date": "January 31, 2008",
+        "End_Date": "February 2, 2008",
+        "Num": "NULL",
+        "Annotation": "Vanuatu"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "8",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Fiji",
-      "Locations": [
-        "Viti Levu"
-      ],
-      "Start_Date": "January 27, 2008",
-      "End_Date": "NULL",
-      "Num": "1 person",
-      "Annotation": "Fiji"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Fiji",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8",
+        "Annotation": "Fiji"
+      },
+      {
+        "Administrative_Areas": "Vanuatu",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Vanuatu"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Fiji",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "7",
+        "Annotation": "Fiji"
+      },
+      {
+        "Administrative_Area": "Fiji",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Fiji"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Fiji",
-      "Locations": [
-        "Viti Levu"
-      ],
-      "Start_Date": "January 27, 2008",
-      "End_Date": "NULL",
-      "Num": "7 other deaths",
-      "Annotation": "Fiji"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Fiji",
+        "Start_Date": "January 27",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Fiji"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Fiji",
+        "Locations": [
+          "Suva",
+          "Nadi"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "over 340 people",
+        "Annotation": "Fiji"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Vanuatu",
-      "Locations": [
-        "Futuna Island"
-      ],
-      "Start_Date": "January 31, 2008",
-      "End_Date": "February 2, 2008",
-      "Num": "NULL",
-      "Annotation": "Vanuatu"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Fiji",
-      "Start_Date": "January 27, 2008",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Fiji"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Fiji",
+        "Start_Date": "January 27, 2008",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Fiji"
+      },
+      {
+        "Administrative_Areas": "Vanuatu",
+        "Start_Date": "January 31, 2008",
+        "End_Date": "February 2, 2008",
+        "Num": "NULL",
+        "Annotation": "Vanuatu"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Fiji",
+        "Locations": [
+          "Suva",
+          "Nadi"
+        ],
+        "Start_Date": "January 27, 2008",
+        "End_Date": "NULL",
+        "Num": "61 houses completely flattened",
+        "Annotation": "Fiji"
+      },
+      {
+        "Administrative_Area": "Vanuatu",
+        "Locations": [
+          "Futuna Island"
+        ],
+        "Start_Date": "January 31, 2008",
+        "End_Date": "February 2, 2008",
+        "Num": "NULL",
+        "Annotation": "Vanuatu"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Vanuatu",
-      "Start_Date": "January 31, 2008",
-      "End_Date": "February 2, 2008",
-      "Num": "NULL",
-      "Annotation": "Vanuatu"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Fiji",
-      "Locations": [
-        "Vanua Levu",
-        "Viti Levu",
-        "Taveuni",
-        "Yasawa"
-      ],
-      "Start_Date": "January 27, 2008",
-      "End_Date": "NULL",
-      "Num": "61 houses completely flattened",
-      "Annotation": "Fiji"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Fiji",
+        "Start_Date": "January 27, 2008",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Fiji"
+      },
+      {
+        "Administrative_Areas": "Vanuatu",
+        "Start_Date": "January 31, 2008",
+        "End_Date": "February 2, 2008",
+        "Num": "NULL",
+        "Annotation": "Vanuatu"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Fiji",
+        "Locations": [
+          "Suva",
+          "Nadi"
+        ],
+        "Start_Date": "January 27, 2008",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Fiji"
+      },
+      {
+        "Administrative_Area": "Vanuatu",
+        "Locations": [
+          "Futuna Island"
+        ],
+        "Start_Date": "January 31, 2008",
+        "End_Date": "February 2, 2008",
+        "Num": "NULL",
+        "Annotation": "Vanuatu"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Vanuatu",
-      "Locations": [
-        "Futuna Island"
-      ],
-      "Start_Date": "January 31, 2008",
-      "End_Date": "February 2, 2008",
-      "Num": "NULL",
-      "Annotation": "Vanuatu"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "8",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Fiji",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "8",
-      "Annotation": "Fiji"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Fiji"
+        ],
+        "Start_Date": "January 27, 2008",
+        "End_Date": "February 3, 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Fiji"
+      },
+      {
+        "Administrative_Areas": [
+          "Vanuatu"
+        ],
+        "Start_Date": "January 31, 2008",
+        "End_Date": "February 2, 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Vanuatu"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Fiji",
+        "Locations": [
+          "Viti Levu",
+          "Vanua Levu",
+          "Taveuni",
+          "Yasawa",
+          "Mamanuca"
+        ],
+        "Start_Date": "January 27, 2008",
+        "End_Date": "February 3, 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Fiji"
+      },
+      {
+        "Administrative_Area": "Vanuatu",
+        "Locations": [
+          "Futuna Island"
+        ],
+        "Start_Date": "January 31, 2008",
+        "End_Date": "February 2, 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Vanuatu"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$35 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": "Vanuatu",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Vanuatu"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Fiji",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "7",
-      "Annotation": "Fiji"
-    },
-    {
-      "Administrative_Area": "Fiji",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Fiji"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": "Fiji",
-      "Start_Date": "January 27",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Fiji"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Fiji",
-      "Locations": [
-        "Suva",
-        "Nadi"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "over 340 people",
-      "Annotation": "Fiji"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Fiji",
-      "Start_Date": "January 27, 2008",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Fiji"
-    },
-    {
-      "Administrative_Areas": "Vanuatu",
-      "Start_Date": "January 31, 2008",
-      "End_Date": "February 2, 2008",
-      "Num": "NULL",
-      "Annotation": "Vanuatu"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Fiji",
-      "Locations": [
-        "Suva",
-        "Nadi"
-      ],
-      "Start_Date": "January 27, 2008",
-      "End_Date": "NULL",
-      "Num": "61 houses completely flattened",
-      "Annotation": "Fiji"
-    },
-    {
-      "Administrative_Area": "Vanuatu",
-      "Locations": [
-        "Futuna Island"
-      ],
-      "Start_Date": "January 31, 2008",
-      "End_Date": "February 2, 2008",
-      "Num": "NULL",
-      "Annotation": "Vanuatu"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Fiji",
-      "Start_Date": "January 27, 2008",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Fiji"
-    },
-    {
-      "Administrative_Areas": "Vanuatu",
-      "Start_Date": "January 31, 2008",
-      "End_Date": "February 2, 2008",
-      "Num": "NULL",
-      "Annotation": "Vanuatu"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Fiji",
-      "Locations": [
-        "Suva",
-        "Nadi"
-      ],
-      "Start_Date": "January 27, 2008",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Fiji"
-    },
-    {
-      "Administrative_Area": "Vanuatu",
-      "Locations": [
-        "Futuna Island"
-      ],
-      "Start_Date": "January 31, 2008",
-      "End_Date": "February 2, 2008",
-      "Num": "NULL",
-      "Annotation": "Vanuatu"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Fiji"
-      ],
-      "Start_Date": "January 27, 2008",
-      "End_Date": "February 3, 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Fiji"
-    },
-    {
-      "Administrative_Areas": [
-        "Vanuatu"
-      ],
-      "Start_Date": "January 31, 2008",
-      "End_Date": "February 2, 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Vanuatu"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Fiji",
-      "Locations": [
-        "Viti Levu",
-        "Vanua Levu",
-        "Taveuni",
-        "Yasawa",
-        "Mamanuca"
-      ],
-      "Start_Date": "January 27, 2008",
-      "End_Date": "February 3, 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Fiji"
-    },
-    {
-      "Administrative_Area": "Vanuatu",
-      "Locations": [
-        "Futuna Island"
-      ],
-      "Start_Date": "January 31, 2008",
-      "End_Date": "February 2, 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Vanuatu"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$35 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": "Fiji",
-      "Start_Date": "January 27, 2008",
-      "End_Date": "NULL",
-      "Num": "F$51 million",
-      "Num_Unit": "FJD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Fiji"
-    },
-    {
-      "Administrative_Areas": "Vanuatu",
-      "Start_Date": "January 31, 2008",
-      "End_Date": "February 2, 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Vanuatu"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Fiji",
-      "Locations": [
-        "Vanua Levu",
-        "Viti Levu",
-        "Taveuni",
-        "Yasawa",
-        "Mamanuca"
-      ],
-      "Start_Date": "January 27, 2008",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Fiji"
-    },
-    {
-      "Administrative_Area": "Vanuatu",
-      "Locations": [
-        "Futuna Island"
-      ],
-      "Start_Date": "January 31, 2008",
-      "End_Date": "February 2, 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Vanuatu"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Fiji|Vanuatu",
-  "Start_Date": "January 26, 2008",
-  "End_Date": "February 9, 2008",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Fiji",
-    "Vanuatu"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Fiji",
+        "Start_Date": "January 27, 2008",
+        "End_Date": "NULL",
+        "Num": "F$51 million",
+        "Num_Unit": "FJD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Fiji"
+      },
+      {
+        "Administrative_Areas": "Vanuatu",
+        "Start_Date": "January 31, 2008",
+        "End_Date": "February 2, 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Vanuatu"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Fiji",
+        "Locations": [
+          "Vanua Levu",
+          "Viti Levu",
+          "Taveuni",
+          "Yasawa",
+          "Mamanuca"
+        ],
+        "Start_Date": "January 27, 2008",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Fiji"
+      },
+      {
+        "Administrative_Area": "Vanuatu",
+        "Locations": [
+          "Futuna Island"
+        ],
+        "Start_Date": "January 31, 2008",
+        "End_Date": "February 2, 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Vanuatu"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Fiji|Vanuatu",
+    "Start_Date": "January 26, 2008",
+    "End_Date": "February 9, 2008",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Fiji",
+      "Vanuatu"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

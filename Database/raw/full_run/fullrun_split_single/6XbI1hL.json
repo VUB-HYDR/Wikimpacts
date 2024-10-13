@@ -1,718 +1,720 @@
-{
-  "Event_ID": "6XbI1hL",
-  "Sources": "https://en.wikipedia.org/wiki/Tornado_outbreak_sequence_of_April_17%E2%80%9319,_1970",
-  "Event_Names": "Tornado outbreak sequence of April 17\u201319, 1970",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Hale Center\u2013Cotton Center area",
-        "Plainview",
-        "Seth Ward",
-        "Claytonville",
-        "Silverton",
-        "Hedley"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "7 injured, 40 injuries, 70 cattle killed or injured, 1 girl killed, 2 people killed",
-      "Annotation": "Cotton Center\u2013Plainview\u2013Seth Ward\u2013Silverton\u2013Hedley, Texas"
+[
+  {
+    "Event_ID": "6XbI1hL",
+    "Sources": "https://en.wikipedia.org/wiki/Tornado_outbreak_sequence_of_April_17%E2%80%9319,_1970",
+    "Event_Names": "Tornado outbreak sequence of April 17\u201319, 1970",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Lazbuddie",
-        "Canyon",
-        "Happy",
-        "Conway",
-        "Pampa",
-        "Hoover"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "1 woman killed, at least 3 injured, 10 injuries",
-      "Annotation": "Lazbuddie\u2013Conway\u2013Pampa\u2013Hoover, Texas"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hale Center\u2013Cotton Center area",
+          "Plainview",
+          "Seth Ward",
+          "Claytonville",
+          "Silverton",
+          "Hedley"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "7 injured, 40 injuries, 70 cattle killed or injured, 1 girl killed, 2 people killed",
+        "Annotation": "Cotton Center\u2013Plainview\u2013Seth Ward\u2013Silverton\u2013Hedley, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Lazbuddie",
+          "Canyon",
+          "Happy",
+          "Conway",
+          "Pampa",
+          "Hoover"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "1 woman killed, at least 3 injured, 10 injuries",
+        "Annotation": "Lazbuddie\u2013Conway\u2013Pampa\u2013Hoover, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Tulia",
+          "Clarendon",
+          "Sherwood Shores",
+          "McLean"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "1 woman injured, 1 man killed, 13 lives claimed, 35 injuries, a few more people killed",
+        "Annotation": "Tulia\u2013Clarendon\u2013Sherwood Shores\u2013McLean, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Ripley",
+          "Corinth",
+          "Counce"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "NULL",
+        "Annotation": "Ripley\u2013Corinth, Mississippi/Counce, Tennessee"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Tulia",
-        "Clarendon",
-        "Sherwood Shores",
-        "McLean"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "1 woman injured, 1 man killed, 13 lives claimed, 35 injuries, a few more people killed",
-      "Annotation": "Tulia\u2013Clarendon\u2013Sherwood Shores\u2013McLean, Texas"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hale Center",
+          "Cotton Center",
+          "Plainview",
+          "Seth Ward",
+          "Silverton",
+          "Hedley"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 17, 1970",
+        "Num": "eight homes, many outbuildings and barns, some buildings, tall structures, a few rural homes, eight homes, a farmhouse and barns",
+        "Annotation": "Cotton Center\u2013Plainview\u2013Seth Ward\u2013Silverton\u2013Hedley, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Lazbuddie",
+          "Canyon",
+          "Happy",
+          "Conway",
+          "Pampa",
+          "Hoover"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 17, 1970",
+        "Num": "three farmhouses, a trio of other homes, many barns and businesses, 20 homes, municipal buildings",
+        "Annotation": "Lazbuddie\u2013Conway\u2013Pampa\u2013Hoover, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Tulia",
+          "Clarendon",
+          "Sherwood Shores",
+          "McLean"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 17, 1970",
+        "Num": "a home, a third home, 173 mobile homes, a trailer, a trio of farmhouses, a cottage, five other cottages",
+        "Annotation": "Tulia\u2013Clarendon\u2013Sherwood Shores\u2013McLean, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Ripley",
+          "Corinth",
+          "Counce"
+        ],
+        "Start_Date": "April 19, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "many homes, many small outbuildings, a trailer, a barn, a CMU print shop, a school auditorium roof, 69 homes, 146 homes, eight businesses, a house, a trailer, a few agricultural outbuildings, a garage",
+        "Annotation": "Ripley\u2013Corinth, Mississippi/Counce, Tennessee"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "26",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Ripley",
-        "Corinth",
-        "Counce"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "NULL",
-      "Annotation": "Ripley\u2013Corinth, Mississippi/Counce, Tennessee"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Hale Center",
-        "Cotton Center",
-        "Plainview",
-        "Seth Ward",
-        "Silverton",
-        "Hedley"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 17, 1970",
-      "Num": "eight homes, many outbuildings and barns, some buildings, tall structures, a few rural homes, eight homes, a farmhouse and barns",
-      "Annotation": "Cotton Center\u2013Plainview\u2013Seth Ward\u2013Silverton\u2013Hedley, Texas"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hale Center\u2013Cotton Center area, Texas",
+          "Plainview, Texas",
+          "Seth Ward, Texas",
+          "Claytonville, Texas",
+          "Silverton, Texas",
+          "Hedley, Texas"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "NULL",
+        "Annotation": "Cotton Center\u2013Plainview\u2013Seth Ward\u2013Silverton\u2013Hedley, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Lazbuddie, Texas"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "1",
+        "Annotation": "Lazbuddie\u2013Conway\u2013Pampa\u2013Hoover, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Sherwood Shores, Texas"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "13",
+        "Annotation": "Tulia\u2013Clarendon\u2013Sherwood Shores\u2013McLean, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Clarendon, Texas"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "1",
+        "Annotation": "Tulia\u2013Clarendon\u2013Sherwood Shores\u2013McLean, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Ripley, Mississippi",
+          "Corinth, Mississippi"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "4",
+        "Annotation": "Ripley\u2013Corinth, Mississippi/Counce, Tennessee"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Lazbuddie",
-        "Canyon",
-        "Happy",
-        "Conway",
-        "Pampa",
-        "Hoover"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 17, 1970",
-      "Num": "three farmhouses, a trio of other homes, many barns and businesses, 20 homes, municipal buildings",
-      "Annotation": "Lazbuddie\u2013Conway\u2013Pampa\u2013Hoover, Texas"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Cotton Center",
+          "Plainview",
+          "Seth Ward",
+          "Silverton",
+          "Hedley, Texas"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "NULL",
+        "Annotation": "Cotton Center\u2013Plainview\u2013Seth Ward\u2013Silverton\u2013Hedley, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Lazbuddie",
+          "Conway",
+          "Pampa",
+          "Hoover, Texas"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "NULL",
+        "Annotation": "Lazbuddie\u2013Conway\u2013Pampa\u2013Hoover, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Tulia",
+          "Clarendon",
+          "Sherwood Shores",
+          "McLean, Texas"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "NULL",
+        "Annotation": "Tulia\u2013Clarendon\u2013Sherwood Shores\u2013McLean, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Ripley",
+          "Corinth, Mississippi",
+          "Counce, Tennessee"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "NULL",
+        "Annotation": "Ripley\u2013Corinth, Mississippi/Counce, Tennessee"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Tulia",
-        "Clarendon",
-        "Sherwood Shores",
-        "McLean"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 17, 1970",
-      "Num": "a home, a third home, 173 mobile homes, a trailer, a trio of farmhouses, a cottage, five other cottages",
-      "Annotation": "Tulia\u2013Clarendon\u2013Sherwood Shores\u2013McLean, Texas"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hale Center\u2013Cotton Center area",
+          "Plainview",
+          "Seth Ward",
+          "Claytonville",
+          "Silverton",
+          "Hedley"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "NULL",
+        "Annotation": "Cotton Center\u2013Plainview\u2013Seth Ward\u2013Silverton\u2013Hedley, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Lazbuddie",
+          "Canyon",
+          "Happy",
+          "Conway",
+          "White Deer",
+          "Pampa",
+          "Hoover"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "NULL",
+        "Annotation": "Lazbuddie\u2013Conway\u2013Pampa\u2013Hoover, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Tulia",
+          "Clarendon",
+          "Sherwood Shores",
+          "McLean"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "NULL",
+        "Annotation": "Tulia\u2013Clarendon\u2013Sherwood Shores\u2013McLean, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Ripley",
+          "Corinth",
+          "Counce"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "NULL",
+        "Annotation": "Ripley\u2013Corinth, Mississippi/Counce, Tennessee"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "222",
+      "Total_Injuries_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Ripley",
-        "Corinth",
-        "Counce"
-      ],
-      "Start_Date": "April 19, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "many homes, many small outbuildings, a trailer, a barn, a CMU print shop, a school auditorium roof, 69 homes, 146 homes, eight businesses, a house, a trailer, a few agricultural outbuildings, a garage",
-      "Annotation": "Ripley\u2013Corinth, Mississippi/Counce, Tennessee"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "26",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Hale Center\u2013Cotton Center area, Texas",
-        "Plainview, Texas",
-        "Seth Ward, Texas",
-        "Claytonville, Texas",
-        "Silverton, Texas",
-        "Hedley, Texas"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "NULL",
-      "Annotation": "Cotton Center\u2013Plainview\u2013Seth Ward\u2013Silverton\u2013Hedley, Texas"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "NULL",
+        "Annotation": "Confirmed tornadoes"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Cotton Center",
+          "Plainview",
+          "Seth Ward",
+          "Silverton",
+          "Hedley"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "47",
+        "Annotation": "Cotton Center\u2013Plainview\u2013Seth Ward\u2013Silverton\u2013Hedley, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Lazbuddie",
+          "Conway",
+          "Pampa",
+          "Hoover"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "13",
+        "Annotation": "Lazbuddie\u2013Conway\u2013Pampa\u2013Hoover, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Sherwood Shores"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "35",
+        "Annotation": "Tulia\u2013Clarendon\u2013Sherwood Shores\u2013McLean, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Corinth"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "NULL",
+        "Annotation": "Ripley\u2013Corinth, Mississippi/Counce, Tennessee"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Lazbuddie, Texas"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "1",
-      "Annotation": "Lazbuddie\u2013Conway\u2013Pampa\u2013Hoover, Texas"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Cotton Center",
+          "Plainview",
+          "Seth Ward",
+          "Silverton",
+          "Hedley"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Cotton Center\u2013Plainview\u2013Seth Ward\u2013Silverton\u2013Hedley, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Lazbuddie",
+          "Conway",
+          "Pampa",
+          "Hoover"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Lazbuddie\u2013Conway\u2013Pampa\u2013Hoover, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Tulia",
+          "Clarendon",
+          "Sherwood Shores",
+          "McLean"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tulia\u2013Clarendon\u2013Sherwood Shores\u2013McLean, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Ripley",
+          "Corinth",
+          "Counce"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Ripley\u2013Corinth, Mississippi/Counce, Tennessee"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": ">$271/2 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "Yes",
+      "Total_Damage_Inflation_Adjusted_Year": "2024",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Sherwood Shores, Texas"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "13",
-      "Annotation": "Tulia\u2013Clarendon\u2013Sherwood Shores\u2013McLean, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Clarendon, Texas"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "1",
-      "Annotation": "Tulia\u2013Clarendon\u2013Sherwood Shores\u2013McLean, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Ripley, Mississippi",
-        "Corinth, Mississippi"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "4",
-      "Annotation": "Ripley\u2013Corinth, Mississippi/Counce, Tennessee"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Cotton Center",
-        "Plainview",
-        "Seth Ward",
-        "Silverton",
-        "Hedley, Texas"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "NULL",
-      "Annotation": "Cotton Center\u2013Plainview\u2013Seth Ward\u2013Silverton\u2013Hedley, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Lazbuddie",
-        "Conway",
-        "Pampa",
-        "Hoover, Texas"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "NULL",
-      "Annotation": "Lazbuddie\u2013Conway\u2013Pampa\u2013Hoover, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Tulia",
-        "Clarendon",
-        "Sherwood Shores",
-        "McLean, Texas"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "NULL",
-      "Annotation": "Tulia\u2013Clarendon\u2013Sherwood Shores\u2013McLean, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Ripley",
-        "Corinth, Mississippi",
-        "Counce, Tennessee"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "NULL",
-      "Annotation": "Ripley\u2013Corinth, Mississippi/Counce, Tennessee"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Hale Center\u2013Cotton Center area",
-        "Plainview",
-        "Seth Ward",
-        "Claytonville",
-        "Silverton",
-        "Hedley"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "NULL",
-      "Annotation": "Cotton Center\u2013Plainview\u2013Seth Ward\u2013Silverton\u2013Hedley, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Lazbuddie",
-        "Canyon",
-        "Happy",
-        "Conway",
-        "White Deer",
-        "Pampa",
-        "Hoover"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "NULL",
-      "Annotation": "Lazbuddie\u2013Conway\u2013Pampa\u2013Hoover, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Tulia",
-        "Clarendon",
-        "Sherwood Shores",
-        "McLean"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "NULL",
-      "Annotation": "Tulia\u2013Clarendon\u2013Sherwood Shores\u2013McLean, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Ripley",
-        "Corinth",
-        "Counce"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "NULL",
-      "Annotation": "Ripley\u2013Corinth, Mississippi/Counce, Tennessee"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "222",
-    "Total_Injuries_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "NULL",
-      "Annotation": "Confirmed tornadoes"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Cotton Center",
-        "Plainview",
-        "Seth Ward",
-        "Silverton",
-        "Hedley"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "47",
-      "Annotation": "Cotton Center\u2013Plainview\u2013Seth Ward\u2013Silverton\u2013Hedley, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Lazbuddie",
-        "Conway",
-        "Pampa",
-        "Hoover"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "13",
-      "Annotation": "Lazbuddie\u2013Conway\u2013Pampa\u2013Hoover, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Sherwood Shores"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "35",
-      "Annotation": "Tulia\u2013Clarendon\u2013Sherwood Shores\u2013McLean, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Corinth"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "NULL",
-      "Annotation": "Ripley\u2013Corinth, Mississippi/Counce, Tennessee"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Cotton Center",
-        "Plainview",
-        "Seth Ward",
-        "Silverton",
-        "Hedley"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Cotton Center\u2013Plainview\u2013Seth Ward\u2013Silverton\u2013Hedley, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Lazbuddie",
-        "Conway",
-        "Pampa",
-        "Hoover"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Lazbuddie\u2013Conway\u2013Pampa\u2013Hoover, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Tulia",
-        "Clarendon",
-        "Sherwood Shores",
-        "McLean"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Tulia\u2013Clarendon\u2013Sherwood Shores\u2013McLean, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Ripley",
-        "Corinth",
-        "Counce"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Ripley\u2013Corinth, Mississippi/Counce, Tennessee"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": ">$271/2 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "Yes",
-    "Total_Damage_Inflation_Adjusted_Year": "2024",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Background"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Hale Center",
-        "Cotton Center",
-        "Plainview",
-        "Seth Ward",
-        "Silverton",
-        "Hedley, Texas"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "$750,000",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Cotton Center\u2013Plainview\u2013Seth Ward\u2013Silverton\u2013Hedley, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Plainview, Texas"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "$4.5 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Cotton Center\u2013Plainview\u2013Seth Ward\u2013Silverton\u2013Hedley, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Seth Ward, Texas"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "$445,000",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Cotton Center\u2013Plainview\u2013Seth Ward\u2013Silverton\u2013Hedley, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Silverton, Texas"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "$1.5 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Cotton Center\u2013Plainview\u2013Seth Ward\u2013Silverton\u2013Hedley, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Hedley, Texas"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "$35,000",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Cotton Center\u2013Plainview\u2013Seth Ward\u2013Silverton\u2013Hedley, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Lazbuddie, Texas"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "$500,000",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Lazbuddie\u2013Conway\u2013Pampa\u2013Hoover, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Pampa, Texas"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "$1.5 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Lazbuddie\u2013Conway\u2013Pampa\u2013Hoover, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Tulia",
-        "Clarendon",
-        "Sherwood Shores",
-        "McLean, Texas"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "$100,000",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Tulia\u2013Clarendon\u2013Sherwood Shores\u2013McLean, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Sherwood Shores, Texas"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "$1.3 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Tulia\u2013Clarendon\u2013Sherwood Shores\u2013McLean, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Gray County, Texas"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "$400,000",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Tulia\u2013Clarendon\u2013Sherwood Shores\u2013McLean, Texas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Ripley, Mississippi"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "$50,000",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Ripley\u2013Corinth, Mississippi/Counce, Tennessee"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Corinth, Mississippi"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "$1.8 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Ripley\u2013Corinth, Mississippi/Counce, Tennessee"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Counce, Tennessee"
-      ],
-      "Start_Date": "April 17, 1970",
-      "End_Date": "April 19, 1970",
-      "Num": "$30,000",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Ripley\u2013Corinth, Mississippi/Counce, Tennessee"
-    }
-  ],
-  "Main_Event": "Tornado",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "April 17, 1970",
-  "End_Date": "April 19, 1970",
-  "Time_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Background"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hale Center",
+          "Cotton Center",
+          "Plainview",
+          "Seth Ward",
+          "Silverton",
+          "Hedley, Texas"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "$750,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Cotton Center\u2013Plainview\u2013Seth Ward\u2013Silverton\u2013Hedley, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Plainview, Texas"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "$4.5 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Cotton Center\u2013Plainview\u2013Seth Ward\u2013Silverton\u2013Hedley, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Seth Ward, Texas"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "$445,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Cotton Center\u2013Plainview\u2013Seth Ward\u2013Silverton\u2013Hedley, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Silverton, Texas"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "$1.5 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Cotton Center\u2013Plainview\u2013Seth Ward\u2013Silverton\u2013Hedley, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hedley, Texas"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "$35,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Cotton Center\u2013Plainview\u2013Seth Ward\u2013Silverton\u2013Hedley, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Lazbuddie, Texas"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "$500,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Lazbuddie\u2013Conway\u2013Pampa\u2013Hoover, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Pampa, Texas"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "$1.5 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Lazbuddie\u2013Conway\u2013Pampa\u2013Hoover, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Tulia",
+          "Clarendon",
+          "Sherwood Shores",
+          "McLean, Texas"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "$100,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tulia\u2013Clarendon\u2013Sherwood Shores\u2013McLean, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Sherwood Shores, Texas"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "$1.3 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tulia\u2013Clarendon\u2013Sherwood Shores\u2013McLean, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Gray County, Texas"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "$400,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tulia\u2013Clarendon\u2013Sherwood Shores\u2013McLean, Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Ripley, Mississippi"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "$50,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Ripley\u2013Corinth, Mississippi/Counce, Tennessee"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Corinth, Mississippi"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "$1.8 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Ripley\u2013Corinth, Mississippi/Counce, Tennessee"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Counce, Tennessee"
+        ],
+        "Start_Date": "April 17, 1970",
+        "End_Date": "April 19, 1970",
+        "Num": "$30,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Ripley\u2013Corinth, Mississippi/Counce, Tennessee"
+      }
+    ],
+    "Main_Event": "Tornado",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "April 17, 1970",
+    "End_Date": "April 19, 1970",
+    "Time_Annotation": "Info_Box"
+  }
+]

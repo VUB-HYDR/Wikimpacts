@@ -1,402 +1,404 @@
-{
-  "Event_ID": "ZPd2yjd",
-  "Sources": "https://en.wikipedia.org/wiki/Climate_of_Adelaide",
-  "Event_Names": "Climate of Adelaide",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Adelaide"
-      ],
-      "Start_Date": "January 2009",
-      "End_Date": "February 2009",
-      "Num": "NULL",
-      "Annotation": "January\u2013February 2009 heatwave"
+[
+  {
+    "Event_ID": "ZPd2yjd",
+    "Sources": "https://en.wikipedia.org/wiki/Climate_of_Adelaide",
+    "Event_Names": "Climate of Adelaide",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Adelaide"
-      ],
-      "Start_Date": "November 2009",
-      "End_Date": "November 2009",
-      "Num": "NULL",
-      "Annotation": "November 2009 heatwave"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Adelaide"
-      ],
-      "Start_Date": "December 2015",
-      "End_Date": "December 2015",
-      "Num": "NULL",
-      "Annotation": "December 2015: Hottest December on record and second heatwave for the summer"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Adelaide"
-      ],
-      "Start_Date": "March 2016",
-      "End_Date": "March 2016",
-      "Num": "NULL",
-      "Annotation": "March 2016 heatwave"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Adelaide"
-      ],
-      "Start_Date": "February 2017",
-      "End_Date": "February 2017",
-      "Num": "NULL",
-      "Annotation": "Hottest Christmas Day in 75 years and February 2017 heatwave"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Adelaide"
-      ],
-      "Start_Date": "January 2018",
-      "End_Date": "January 2018",
-      "Num": "NULL",
-      "Annotation": "Summer 2017\u20132018: fourteen consecutive days above 30 degrees and various heatwaves"
-    },
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Adelaide"
-      ],
-      "Start_Date": "December 2019",
-      "End_Date": "December 2019",
-      "Num": "NULL",
-      "Annotation": "December 2019 Heatwave"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "NULL",
-      "Locations": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "NULL",
-    "Total_Deaths_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "NULL",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Adelaide"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "NULL",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Adelaide"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Adelaide"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "NULL",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "NULL",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "Australia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Australia",
-      "Locations": [
-        "Adelaide"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Main_Event": "Extreme Temperature",
-  "Main_Event_Annotation": "Climate of Adelaide",
-  "Hazards": "Heatwave|Cold Spell",
-  "Hazards_Annotation": "Climate of Adelaide|August 2020 - Coldest August night on record",
-  "Time_Information": [
-    {
-      "Start_Date": "February 2007",
-      "End_Date": "February 2007",
-      "Time_Annotation": "February 2007: Average maximums not seen since 1906"
-    },
-    {
-      "Start_Date": "30 August 2007",
-      "End_Date": "30 August 2007",
-      "Time_Annotation": "August 2007: Highest winter temperature ever"
-    },
-    {
-      "Start_Date": "3 March 2008",
-      "End_Date": "17 March 2008",
-      "Time_Annotation": "March 2008 heatwave"
-    },
-    {
-      "Start_Date": "26 January 2009",
-      "End_Date": "8 February 2009",
-      "Time_Annotation": "January\u2013February 2009 heatwave"
-    },
-    {
-      "Start_Date": "November 2009",
-      "End_Date": "November 2009",
-      "Time_Annotation": "November 2009 heatwave"
-    },
-    {
-      "Start_Date": "Summer 2013\u20132014",
-      "End_Date": "Summer 2013\u20132014",
-      "Time_Annotation": "Summer 2013\u20132014 heatwave"
-    },
-    {
-      "Start_Date": "Autumn 2014",
-      "End_Date": "Autumn 2014",
-      "Time_Annotation": "Autumn 2014: Above average temperatures for Adelaide"
-    },
-    {
-      "Start_Date": "Spring 2015",
-      "End_Date": "Spring 2015",
-      "Time_Annotation": "Spring 2015: hottest October on record and 2nd warmest spring on record"
-    },
-    {
-      "Start_Date": "December 2015",
-      "End_Date": "December 2015",
-      "Time_Annotation": "December 2015: Hottest December on record and second heatwave for the summer"
-    },
-    {
-      "Start_Date": "March 2016",
-      "End_Date": "March 2016",
-      "Time_Annotation": "March 2016 heatwave"
-    },
-    {
-      "Start_Date": "25 December 2016",
-      "End_Date": "February 2017",
-      "Time_Annotation": "Hottest Christmas Day in 75 years and February 2017 heatwave"
-    },
-    {
-      "Start_Date": "Winter 2017",
-      "End_Date": "Winter 2017",
-      "Time_Annotation": "Winter 2017: Equal lowest June rainfall in Adelaide's recorded history"
-    },
-    {
-      "Start_Date": "Summer 2017\u20132018",
-      "End_Date": "Summer 2017\u20132018",
-      "Time_Annotation": "Summer 2017\u20132018: fourteen consecutive days above 30 degrees and various heatwaves"
-    },
-    {
-      "Start_Date": "April 2018",
-      "End_Date": "April 2018",
-      "Time_Annotation": "Exceptional Autumn Warmth - April 2018"
-    },
-    {
-      "Start_Date": "24 January 2019",
-      "End_Date": "24 January 2019",
-      "Time_Annotation": "New record Hottest Day \u2013 January 2019"
-    },
-    {
-      "Start_Date": "January 2019",
-      "End_Date": "April 2019",
-      "Time_Annotation": "January - April 2019: Driest start to a year in recent memory"
-    },
-    {
-      "Start_Date": "17 December 2019",
-      "End_Date": "20 December 2019",
-      "Time_Annotation": "December 2019 Heatwave"
-    },
-    {
-      "Start_Date": "5 August 2020",
-      "End_Date": "5 August 2020",
-      "Time_Annotation": "August 2020 - Coldest August night on record"
-    },
-    {
-      "Start_Date": "November 2020",
-      "End_Date": "November 2020",
-      "Time_Annotation": "November 2020 - 2nd hottest on record"
-    }
-  ],
-  "Administrative_Areas": {
-    "Administrative_Areas": [
-      "Australia"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
     ],
-    "Administrative_Areas_Annotation": "Info_Box"
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Adelaide"
+        ],
+        "Start_Date": "January 2009",
+        "End_Date": "February 2009",
+        "Num": "NULL",
+        "Annotation": "January\u2013February 2009 heatwave"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Adelaide"
+        ],
+        "Start_Date": "November 2009",
+        "End_Date": "November 2009",
+        "Num": "NULL",
+        "Annotation": "November 2009 heatwave"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Adelaide"
+        ],
+        "Start_Date": "December 2015",
+        "End_Date": "December 2015",
+        "Num": "NULL",
+        "Annotation": "December 2015: Hottest December on record and second heatwave for the summer"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Adelaide"
+        ],
+        "Start_Date": "March 2016",
+        "End_Date": "March 2016",
+        "Num": "NULL",
+        "Annotation": "March 2016 heatwave"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Adelaide"
+        ],
+        "Start_Date": "February 2017",
+        "End_Date": "February 2017",
+        "Num": "NULL",
+        "Annotation": "Hottest Christmas Day in 75 years and February 2017 heatwave"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Adelaide"
+        ],
+        "Start_Date": "January 2018",
+        "End_Date": "January 2018",
+        "Num": "NULL",
+        "Annotation": "Summer 2017\u20132018: fourteen consecutive days above 30 degrees and various heatwaves"
+      },
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Adelaide"
+        ],
+        "Start_Date": "December 2019",
+        "End_Date": "December 2019",
+        "Num": "NULL",
+        "Annotation": "December 2019 Heatwave"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "NULL",
+      "Total_Deaths_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Adelaide"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Adelaide"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Adelaide"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "NULL",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Australia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Australia",
+        "Locations": [
+          "Adelaide"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Main_Event": "Extreme Temperature",
+    "Main_Event_Annotation": "Climate of Adelaide",
+    "Hazards": "Heatwave|Cold Spell",
+    "Hazards_Annotation": "Climate of Adelaide|August 2020 - Coldest August night on record",
+    "Time_Information": [
+      {
+        "Start_Date": "February 2007",
+        "End_Date": "February 2007",
+        "Time_Annotation": "February 2007: Average maximums not seen since 1906"
+      },
+      {
+        "Start_Date": "30 August 2007",
+        "End_Date": "30 August 2007",
+        "Time_Annotation": "August 2007: Highest winter temperature ever"
+      },
+      {
+        "Start_Date": "3 March 2008",
+        "End_Date": "17 March 2008",
+        "Time_Annotation": "March 2008 heatwave"
+      },
+      {
+        "Start_Date": "26 January 2009",
+        "End_Date": "8 February 2009",
+        "Time_Annotation": "January\u2013February 2009 heatwave"
+      },
+      {
+        "Start_Date": "November 2009",
+        "End_Date": "November 2009",
+        "Time_Annotation": "November 2009 heatwave"
+      },
+      {
+        "Start_Date": "Summer 2013\u20132014",
+        "End_Date": "Summer 2013\u20132014",
+        "Time_Annotation": "Summer 2013\u20132014 heatwave"
+      },
+      {
+        "Start_Date": "Autumn 2014",
+        "End_Date": "Autumn 2014",
+        "Time_Annotation": "Autumn 2014: Above average temperatures for Adelaide"
+      },
+      {
+        "Start_Date": "Spring 2015",
+        "End_Date": "Spring 2015",
+        "Time_Annotation": "Spring 2015: hottest October on record and 2nd warmest spring on record"
+      },
+      {
+        "Start_Date": "December 2015",
+        "End_Date": "December 2015",
+        "Time_Annotation": "December 2015: Hottest December on record and second heatwave for the summer"
+      },
+      {
+        "Start_Date": "March 2016",
+        "End_Date": "March 2016",
+        "Time_Annotation": "March 2016 heatwave"
+      },
+      {
+        "Start_Date": "25 December 2016",
+        "End_Date": "February 2017",
+        "Time_Annotation": "Hottest Christmas Day in 75 years and February 2017 heatwave"
+      },
+      {
+        "Start_Date": "Winter 2017",
+        "End_Date": "Winter 2017",
+        "Time_Annotation": "Winter 2017: Equal lowest June rainfall in Adelaide's recorded history"
+      },
+      {
+        "Start_Date": "Summer 2017\u20132018",
+        "End_Date": "Summer 2017\u20132018",
+        "Time_Annotation": "Summer 2017\u20132018: fourteen consecutive days above 30 degrees and various heatwaves"
+      },
+      {
+        "Start_Date": "April 2018",
+        "End_Date": "April 2018",
+        "Time_Annotation": "Exceptional Autumn Warmth - April 2018"
+      },
+      {
+        "Start_Date": "24 January 2019",
+        "End_Date": "24 January 2019",
+        "Time_Annotation": "New record Hottest Day \u2013 January 2019"
+      },
+      {
+        "Start_Date": "January 2019",
+        "End_Date": "April 2019",
+        "Time_Annotation": "January - April 2019: Driest start to a year in recent memory"
+      },
+      {
+        "Start_Date": "17 December 2019",
+        "End_Date": "20 December 2019",
+        "Time_Annotation": "December 2019 Heatwave"
+      },
+      {
+        "Start_Date": "5 August 2020",
+        "End_Date": "5 August 2020",
+        "Time_Annotation": "August 2020 - Coldest August night on record"
+      },
+      {
+        "Start_Date": "November 2020",
+        "End_Date": "November 2020",
+        "Time_Annotation": "November 2020 - 2nd hottest on record"
+      }
+    ],
+    "Administrative_Areas": {
+      "Administrative_Areas": [
+        "Australia"
+      ],
+      "Administrative_Areas_Annotation": "Info_Box"
+    }
   }
-}
+]

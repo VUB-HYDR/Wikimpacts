@@ -1,592 +1,594 @@
-{
-  "Event_ID": "LcHB4PG",
-  "Sources": "https://en.wikipedia.org/wiki/Typhoon_Caitlin",
-  "Event_Names": "Typhoon Caitlin",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "more than 20,000",
-      "Annotation": "Philippines"
+[
+  {
+    "Event_ID": "LcHB4PG",
+    "Sources": "https://en.wikipedia.org/wiki/Typhoon_Caitlin",
+    "Event_Names": "Typhoon Caitlin",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Japan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Japan"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "more than 20,000",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Areas": "South Korea",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "South Korea"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Manila",
+          "valleys near Mount Pinatubo"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "more than 20,000",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Nagasaki Prefecture",
+          "Goto Islands",
+          "Kagoshima Prefecture",
+          "K\u014dchi Prefecture",
+          "Kyushu",
+          "Kumamoto Prefecture",
+          "Oita Prefecture",
+          "Saga Prefecture",
+          "Fukuoka Prefecture",
+          "Kyoto Prefecture",
+          "Tottori Prefecture",
+          "Shimane Prefecture",
+          "Fukui Prefecture",
+          "Nagano Prefecture"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "South Korea",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "South Korea"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "South Korea",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "South Korea"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Manila",
-        "valleys near Mount Pinatubo"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "more than 20,000",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "July 26, 1991",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Areas": "South Korea",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "South Korea"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Manila"
+        ],
+        "Start_Date": "July 26, 1991",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Kagoshima Prefecture",
+          "Nagasaki Prefecture",
+          "Goto Islands",
+          "K\u014dchi Prefecture",
+          "Kyushu",
+          "Kumamoto Prefecture",
+          "Oita Prefecture",
+          "Saga Prefecture",
+          "Fukuoka Prefecture",
+          "Kyoto Prefecture",
+          "Tottori Prefecture",
+          "Shimane Prefecture",
+          "Fukui Prefecture",
+          "Nagano Prefecture"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "72 homes; 64 houses; 1,472 others; 32 homes; 7 homes; 326 homes; 3 homes; 6 homes; 47 dwellings; 18 homes; 5 homes",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "South Korea",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "South Korea"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "26",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Nagasaki Prefecture",
-        "Goto Islands",
-        "Kagoshima Prefecture",
-        "K\u014dchi Prefecture",
-        "Kyushu",
-        "Kumamoto Prefecture",
-        "Oita Prefecture",
-        "Saga Prefecture",
-        "Fukuoka Prefecture",
-        "Kyoto Prefecture",
-        "Tottori Prefecture",
-        "Shimane Prefecture",
-        "Fukui Prefecture",
-        "Nagano Prefecture"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Japan"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "16",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "6",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Areas": "South Korea",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "South Korea"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Manila",
+          "Mount Pinatubo"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "16",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Okinawa",
+          "Hy\u016bga",
+          "Oita Prefecture",
+          "Fukuoka Prefecture",
+          "Kyoto Prefecture"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "6",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "South Korea",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "South Korea"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "South Korea",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "South Korea"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "July 26, 1991",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "more than 20,000",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Areas": "South Korea",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "South Korea"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "valleys near Mount Pinatubo"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "more than 20,000",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Goto Islands"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "32",
+        "Annotation": "Japan"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Japan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Japan"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Goto Islands"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "32",
+        "Annotation": "Japan"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "South Korea",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "South Korea"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Manila"
-      ],
-      "Start_Date": "July 26, 1991",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Philippines"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "thirty-nine",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Areas": "South Korea",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "South Korea"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Nagasaki Prefecture"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "twenty-three",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Oita Prefecture"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "three",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Saga Prefecture"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "three",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Fukuoka Prefecture"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "two",
+        "Annotation": "Japan"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Kagoshima Prefecture",
-        "Nagasaki Prefecture",
-        "Goto Islands",
-        "K\u014dchi Prefecture",
-        "Kyushu",
-        "Kumamoto Prefecture",
-        "Oita Prefecture",
-        "Saga Prefecture",
-        "Fukuoka Prefecture",
-        "Kyoto Prefecture",
-        "Tottori Prefecture",
-        "Shimane Prefecture",
-        "Fukui Prefecture",
-        "Nagano Prefecture"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "72 homes; 64 houses; 1,472 others; 32 homes; 7 homes; 326 homes; 3 homes; 6 homes; 47 dwellings; 18 homes; 5 homes",
-      "Annotation": "Japan"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$81.3 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "South Korea",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "South Korea"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "26",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "16",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": "Japan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "6",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Areas": "South Korea",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "South Korea"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Manila",
-        "Mount Pinatubo"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "16",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Okinawa",
-        "Hy\u016bga",
-        "Oita Prefecture",
-        "Fukuoka Prefecture",
-        "Kyoto Prefecture"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "6",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Area": "South Korea",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "South Korea"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "more than 20,000",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": "Japan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Areas": "South Korea",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "South Korea"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "valleys near Mount Pinatubo"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "more than 20,000",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Goto Islands"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "32",
-      "Annotation": "Japan"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Japan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Japan"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Goto Islands"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "32",
-      "Annotation": "Japan"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Japan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "thirty-nine",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Areas": "South Korea",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "South Korea"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Nagasaki Prefecture"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "twenty-three",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Oita Prefecture"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "three",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Saga Prefecture"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "three",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Fukuoka Prefecture"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "two",
-      "Annotation": "Japan"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "NULL",
-      "Locations": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$81.3 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "July 21, 1991",
-      "End_Date": "July 30, 1991",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": "Japan",
-      "Start_Date": "July 21, 1991",
-      "End_Date": "July 30, 1991",
-      "Num": "\u00a510.1 billion",
-      "Num_Unit": "JPY",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Areas": "South Korea",
-      "Start_Date": "July 21, 1991",
-      "End_Date": "July 30, 1991",
-      "Num": "$6.3 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "South Korea"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Okinawa"
-      ],
-      "Start_Date": "July 21, 1991",
-      "End_Date": "July 30, 1991",
-      "Num": "$7.4 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Kagoshima Prefecture"
-      ],
-      "Start_Date": "July 21, 1991",
-      "End_Date": "July 30, 1991",
-      "Num": "\u00a5768 million",
-      "Num_Unit": "JPY",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "K\u014dchi Prefecture"
-      ],
-      "Start_Date": "July 21, 1991",
-      "End_Date": "July 30, 1991",
-      "Num": "\u00a5132 million",
-      "Num_Unit": "JPY",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Nagasaki Prefecture"
-      ],
-      "Start_Date": "July 21, 1991",
-      "End_Date": "July 30, 1991",
-      "Num": "\u00a53.86 billion",
-      "Num_Unit": "JPY",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Oita Prefecture"
-      ],
-      "Start_Date": "July 21, 1991",
-      "End_Date": "July 30, 1991",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Saga Prefecture"
-      ],
-      "Start_Date": "July 21, 1991",
-      "End_Date": "July 30, 1991",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Fukuoka Prefecture"
-      ],
-      "Start_Date": "July 21, 1991",
-      "End_Date": "July 30, 1991",
-      "Num": "\u00a5294 million",
-      "Num_Unit": "JPY",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Kyoto Prefecture"
-      ],
-      "Start_Date": "July 21, 1991",
-      "End_Date": "July 30, 1991",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Tottori Prefecture"
-      ],
-      "Start_Date": "July 21, 1991",
-      "End_Date": "July 30, 1991",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Shimane Prefecture"
-      ],
-      "Start_Date": "July 21, 1991",
-      "End_Date": "July 30, 1991",
-      "Num": "\u00a5146 million",
-      "Num_Unit": "JPY",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Fukui Prefecture"
-      ],
-      "Start_Date": "July 21, 1991",
-      "End_Date": "July 30, 1991",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Nagano Prefecture"
-      ],
-      "Start_Date": "July 21, 1991",
-      "End_Date": "July 30, 1991",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Japan"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood|Lightning",
-  "Hazards_Annotation": "Info_Box|Philippines|Japan|South Korea",
-  "Start_Date": "July 21, 1991",
-  "End_Date": "July 30, 1991",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Philippines",
-    "Japan",
-    "South Korea"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "July 21, 1991",
+        "End_Date": "July 30, 1991",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "July 21, 1991",
+        "End_Date": "July 30, 1991",
+        "Num": "\u00a510.1 billion",
+        "Num_Unit": "JPY",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Areas": "South Korea",
+        "Start_Date": "July 21, 1991",
+        "End_Date": "July 30, 1991",
+        "Num": "$6.3 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "South Korea"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Okinawa"
+        ],
+        "Start_Date": "July 21, 1991",
+        "End_Date": "July 30, 1991",
+        "Num": "$7.4 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Kagoshima Prefecture"
+        ],
+        "Start_Date": "July 21, 1991",
+        "End_Date": "July 30, 1991",
+        "Num": "\u00a5768 million",
+        "Num_Unit": "JPY",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "K\u014dchi Prefecture"
+        ],
+        "Start_Date": "July 21, 1991",
+        "End_Date": "July 30, 1991",
+        "Num": "\u00a5132 million",
+        "Num_Unit": "JPY",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Nagasaki Prefecture"
+        ],
+        "Start_Date": "July 21, 1991",
+        "End_Date": "July 30, 1991",
+        "Num": "\u00a53.86 billion",
+        "Num_Unit": "JPY",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Oita Prefecture"
+        ],
+        "Start_Date": "July 21, 1991",
+        "End_Date": "July 30, 1991",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Saga Prefecture"
+        ],
+        "Start_Date": "July 21, 1991",
+        "End_Date": "July 30, 1991",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Fukuoka Prefecture"
+        ],
+        "Start_Date": "July 21, 1991",
+        "End_Date": "July 30, 1991",
+        "Num": "\u00a5294 million",
+        "Num_Unit": "JPY",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Kyoto Prefecture"
+        ],
+        "Start_Date": "July 21, 1991",
+        "End_Date": "July 30, 1991",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Tottori Prefecture"
+        ],
+        "Start_Date": "July 21, 1991",
+        "End_Date": "July 30, 1991",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Shimane Prefecture"
+        ],
+        "Start_Date": "July 21, 1991",
+        "End_Date": "July 30, 1991",
+        "Num": "\u00a5146 million",
+        "Num_Unit": "JPY",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Fukui Prefecture"
+        ],
+        "Start_Date": "July 21, 1991",
+        "End_Date": "July 30, 1991",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Nagano Prefecture"
+        ],
+        "Start_Date": "July 21, 1991",
+        "End_Date": "July 30, 1991",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood|Lightning",
+    "Hazards_Annotation": "Info_Box|Philippines|Japan|South Korea",
+    "Start_Date": "July 21, 1991",
+    "End_Date": "July 30, 1991",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Philippines",
+      "Japan",
+      "South Korea"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

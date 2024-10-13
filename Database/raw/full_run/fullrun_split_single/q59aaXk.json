@@ -1,388 +1,390 @@
-{
-  "Event_ID": "q59aaXk",
-  "Sources": "https://en.wikipedia.org/wiki/Typhoon_Fitow_(2007)",
-  "Event_Names": "Typhoon Fitow (2007)",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": "Japan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "229,916 families",
-      "Annotation": "Japan"
+[
+  {
+    "Event_ID": "q59aaXk",
+    "Sources": "https://en.wikipedia.org/wiki/Typhoon_Fitow_(2007)",
+    "Event_Names": "Typhoon Fitow (2007)",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Russia",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "at least 2,000",
-      "Annotation": "Russia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Tokyo",
-        "Miyagi Prefecture",
-        "Tama River"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "80,000 people",
-      "Annotation": "Japan"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "229,916 families",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Areas": "Russia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 2,000",
+        "Annotation": "Russia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Tokyo",
+          "Miyagi Prefecture",
+          "Tama River"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "80,000 people",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Tama River"
+        ],
+        "Start_Date": "September 7",
+        "End_Date": "NULL",
+        "Num": "29 people",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "87 people",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "229,916 families",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Russia",
+        "Locations": [
+          "four villages"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 2,000",
+        "Annotation": "Russia"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Tama River"
-      ],
-      "Start_Date": "September 7",
-      "End_Date": "NULL",
-      "Num": "29 people",
-      "Annotation": "Japan"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Areas": "Russia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Russia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Fourteen structures were destroyed, 62 were damaged, and another 1,941 were affected.",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Russia",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Russia"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "3",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "87 people",
-      "Annotation": "Japan"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Japan"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Tokyo"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Japan"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "229,916 families",
-      "Annotation": "Japan"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Japan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Areas": [
+          "Russia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Russia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "west of Tokyo",
+          "Tama River"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "Russia",
+        "Locations": [
+          "four villages"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "most of the residents",
+        "Annotation": "Russia"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Russia",
-      "Locations": [
-        "four villages"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "at least 2,000",
-      "Annotation": "Russia"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Japan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Japan"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Areas": "Russia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Russia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Fourteen structures were destroyed, 62 were damaged, and another 1,941 were affected.",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Russia",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Russia"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "87",
+      "Total_Injuries_Annotation": "Japan"
     },
-    {
-      "Administrative_Areas": "Russia",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Russia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Fourteen structures were destroyed, 62 were damaged, and another 1,941 were affected.",
-      "Annotation": "Japan"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "87",
+        "Annotation": "Japan"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "87",
+        "Annotation": "Japan"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Russia",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Russia"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "3",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Japan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3",
-      "Annotation": "Japan"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Tokyo"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "Japan"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "August 26, 2007",
+        "End_Date": "September 8, 2007",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Areas": "Russia",
+        "Start_Date": "September 8, 2007",
+        "End_Date": "September 11, 2007",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Russia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Tokyo",
+          "Miyagi Prefecture",
+          "Tama River"
+        ],
+        "Start_Date": "August 26, 2007",
+        "End_Date": "September 8, 2007",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Russia",
+        "Locations": [
+          "Eastern Russia",
+          "Four villages"
+        ],
+        "Start_Date": "September 8, 2007",
+        "End_Date": "September 11, 2007",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Russia"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "1 billion",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Japan"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Japan"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Areas": [
-        "Russia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Russia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "west of Tokyo",
-        "Tama River"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Preparations"
-    },
-    {
-      "Administrative_Area": "Russia",
-      "Locations": [
-        "four villages"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "most of the residents",
-      "Annotation": "Russia"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Japan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Areas": "Russia",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Russia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Fourteen structures were destroyed, 62 were damaged, and another 1,941 were affected.",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Area": "Russia",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Russia"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "87",
-    "Total_Injuries_Annotation": "Japan"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Japan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "87",
-      "Annotation": "Japan"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "87",
-      "Annotation": "Japan"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": "Japan",
-      "Start_Date": "August 26, 2007",
-      "End_Date": "September 8, 2007",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Areas": "Russia",
-      "Start_Date": "September 8, 2007",
-      "End_Date": "September 11, 2007",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Russia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Tokyo",
-        "Miyagi Prefecture",
-        "Tama River"
-      ],
-      "Start_Date": "August 26, 2007",
-      "End_Date": "September 8, 2007",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Area": "Russia",
-      "Locations": [
-        "Eastern Russia",
-        "Four villages"
-      ],
-      "Start_Date": "September 8, 2007",
-      "End_Date": "September 11, 2007",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Russia"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "1 billion",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": "Japan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1 billion",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Areas": "Russia",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Russia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Tama River",
-        "Tokyo",
-        "Miyagi Prefecture"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "137 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Japan"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Japan",
-  "Start_Date": "August 26, 2007",
-  "End_Date": "September 11, 2007",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Japan",
-    "Russia"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1 billion",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Areas": "Russia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Russia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Tama River",
+          "Tokyo",
+          "Miyagi Prefecture"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "137 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Japan",
+    "Start_Date": "August 26, 2007",
+    "End_Date": "September 11, 2007",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Japan",
+      "Russia"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

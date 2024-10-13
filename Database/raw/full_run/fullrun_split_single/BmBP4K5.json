@@ -1,417 +1,419 @@
-{
-  "Event_ID": "BmBP4K5",
-  "Sources": "https://en.wikipedia.org/wiki/Cyclone_Olaf",
-  "Event_Names": "Cyclone Olaf",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": "American Samoa",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "thousands",
-      "Annotation": "Samoa and American Samoa"
+[
+  {
+    "Event_ID": "BmBP4K5",
+    "Sources": "https://en.wikipedia.org/wiki/Cyclone_Olaf",
+    "Event_Names": "Cyclone Olaf",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Cook Islands",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "nearly 30\u201340 percent of the population",
-      "Annotation": "Cook Islands"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "American Samoa",
-      "Locations": [
-        "Manua Islands"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2,000",
-      "Annotation": "Preparations"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "American Samoa",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "thousands",
+        "Annotation": "Samoa and American Samoa"
+      },
+      {
+        "Administrative_Areas": "Cook Islands",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "nearly 30\u201340 percent of the population",
+        "Annotation": "Cook Islands"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "American Samoa",
+        "Locations": [
+          "Manua Islands"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2,000",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "American Samoa",
+        "Locations": [
+          "Tutuila"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,000",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "American Samoa",
+        "Locations": [
+          "Tau"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "80\u201390 percent of the infrastructure",
+        "Annotation": "Samoa and American Samoa"
+      },
+      {
+        "Administrative_Area": "Cook Islands",
+        "Locations": [
+          "Rarotonga"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "60% of the structures",
+        "Annotation": "Cook Islands"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "American Samoa",
-      "Locations": [
-        "Tutuila"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1,000",
-      "Annotation": "Preparations"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "American Samoa",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Samoa and American Samoa"
+      },
+      {
+        "Administrative_Areas": "Cook Islands",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Cook Islands"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "American Samoa",
+        "Locations": [
+          "Manua Islands"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "several seaside homes",
+        "Annotation": "Samoa and American Samoa"
+      },
+      {
+        "Administrative_Area": "American Samoa",
+        "Locations": [
+          "Tau"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "80\u201390 percent of the infrastructure",
+        "Annotation": "Samoa and American Samoa"
+      },
+      {
+        "Administrative_Area": "Cook Islands",
+        "Locations": [
+          "Rarotonga"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "60% of the structures",
+        "Annotation": "Cook Islands"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "None",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "American Samoa",
-      "Locations": [
-        "Tau"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "80\u201390 percent of the infrastructure",
-      "Annotation": "Samoa and American Samoa"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Samoa",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Areas": "American Samoa",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Samoa",
+        "Locations": [
+          "Offshore"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Cook Islands",
-      "Locations": [
-        "Rarotonga"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "60% of the structures",
-      "Annotation": "Cook Islands"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "American Samoa",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Samoa and American Samoa"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "American Samoa",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Areas": "Cook Islands",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "American Samoa",
+        "Locations": [
+          "Tutuila"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,000",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "American Samoa",
+        "Locations": [
+          "Manu'a group islands"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2,000",
+        "Annotation": "Preparations"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Cook Islands",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Cook Islands"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "American Samoa",
-      "Locations": [
-        "Manua Islands"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "several seaside homes",
-      "Annotation": "Samoa and American Samoa"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "American Samoa",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Samoa and American Samoa"
+      },
+      {
+        "Administrative_Areas": "Cook Islands",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Cook Islands"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "American Samoa",
+        "Locations": [
+          "Manua Islands"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "80\u201390 percent of the infrastructure was destroyed",
+        "Annotation": "Samoa and American Samoa"
+      },
+      {
+        "Administrative_Area": "Cook Islands",
+        "Locations": [
+          "Rarotonga"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "60% of the structures sustained damage",
+        "Annotation": "Cook Islands"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "American Samoa",
-      "Locations": [
-        "Tau"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "80\u201390 percent of the infrastructure",
-      "Annotation": "Samoa and American Samoa"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "American Samoa",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Samoa and American Samoa"
+      },
+      {
+        "Administrative_Areas": "Samoa",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Samoa and American Samoa"
+      },
+      {
+        "Administrative_Areas": "Cook Islands",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Cook Islands"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Samoa",
+        "Locations": [
+          "Offshore"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "21",
+        "Annotation": "Samoa and American Samoa"
+      },
+      {
+        "Administrative_Area": "American Samoa",
+        "Locations": [
+          "Pago Pago"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Samoa and American Samoa"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Cook Islands",
-      "Locations": [
-        "Rarotonga"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "60% of the structures",
-      "Annotation": "Cook Islands"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "None",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Samoa",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impact"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "American Samoa",
+          "Samoa",
+          "Cook Islands"
+        ],
+        "Start_Date": "February 10, 2005",
+        "End_Date": "February 25, 2005",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "American Samoa",
+        "Locations": [
+          "Manua Islands",
+          "Tau"
+        ],
+        "Start_Date": "February 10, 2005",
+        "End_Date": "February 25, 2005",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Samoa and American Samoa"
+      },
+      {
+        "Administrative_Area": "Cook Islands",
+        "Locations": [
+          "Rarotonga"
+        ],
+        "Start_Date": "February 10, 2005",
+        "End_Date": "February 25, 2005",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Cook Islands"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$10 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": "American Samoa",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Samoa",
-      "Locations": [
-        "Offshore"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": "American Samoa",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Areas": "Cook Islands",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "American Samoa",
-      "Locations": [
-        "Tutuila"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1,000",
-      "Annotation": "Preparations"
-    },
-    {
-      "Administrative_Area": "American Samoa",
-      "Locations": [
-        "Manu'a group islands"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2,000",
-      "Annotation": "Preparations"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "American Samoa",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Samoa and American Samoa"
-    },
-    {
-      "Administrative_Areas": "Cook Islands",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Cook Islands"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "American Samoa",
-      "Locations": [
-        "Manua Islands"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "80\u201390 percent of the infrastructure was destroyed",
-      "Annotation": "Samoa and American Samoa"
-    },
-    {
-      "Administrative_Area": "Cook Islands",
-      "Locations": [
-        "Rarotonga"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "60% of the structures sustained damage",
-      "Annotation": "Cook Islands"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "American Samoa",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Samoa and American Samoa"
-    },
-    {
-      "Administrative_Areas": "Samoa",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Samoa and American Samoa"
-    },
-    {
-      "Administrative_Areas": "Cook Islands",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Cook Islands"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Samoa",
-      "Locations": [
-        "Offshore"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "21",
-      "Annotation": "Samoa and American Samoa"
-    },
-    {
-      "Administrative_Area": "American Samoa",
-      "Locations": [
-        "Pago Pago"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3",
-      "Annotation": "Samoa and American Samoa"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "American Samoa",
-        "Samoa",
-        "Cook Islands"
-      ],
-      "Start_Date": "February 10, 2005",
-      "End_Date": "February 25, 2005",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "American Samoa",
-      "Locations": [
-        "Manua Islands",
-        "Tau"
-      ],
-      "Start_Date": "February 10, 2005",
-      "End_Date": "February 25, 2005",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Samoa and American Samoa"
-    },
-    {
-      "Administrative_Area": "Cook Islands",
-      "Locations": [
-        "Rarotonga"
-      ],
-      "Start_Date": "February 10, 2005",
-      "End_Date": "February 25, 2005",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Cook Islands"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$10 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": "American Samoa",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Samoa and American Samoa"
-    },
-    {
-      "Administrative_Areas": "Samoa",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Samoa and American Samoa"
-    },
-    {
-      "Administrative_Areas": "Cook Islands",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Cook Islands"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "American Samoa",
-      "Locations": [
-        "Manua Islands",
-        "Tau"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Samoa and American Samoa"
-    },
-    {
-      "Administrative_Area": "Cook Islands",
-      "Locations": [
-        "Rarotonga"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Cook Islands"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Impact",
-  "Start_Date": "February 10, 2005",
-  "End_Date": "February 25, 2005",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "American Samoa",
-    "Samoa",
-    "Cook Islands"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "American Samoa",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Samoa and American Samoa"
+      },
+      {
+        "Administrative_Areas": "Samoa",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Samoa and American Samoa"
+      },
+      {
+        "Administrative_Areas": "Cook Islands",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Cook Islands"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "American Samoa",
+        "Locations": [
+          "Manua Islands",
+          "Tau"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Samoa and American Samoa"
+      },
+      {
+        "Administrative_Area": "Cook Islands",
+        "Locations": [
+          "Rarotonga"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Cook Islands"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Impact",
+    "Start_Date": "February 10, 2005",
+    "End_Date": "February 25, 2005",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "American Samoa",
+      "Samoa",
+      "Cook Islands"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

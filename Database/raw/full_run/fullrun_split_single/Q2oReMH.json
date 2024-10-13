@@ -1,458 +1,460 @@
-{
-  "Event_ID": "Q2oReMH",
-  "Sources": "https://en.wikipedia.org/wiki/Tornado_outbreak_of_April_28%E2%80%9329,_1950",
-  "Event_Names": "Tornado outbreak of April 28\u201329, 1950",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 28, 1950",
-      "End_Date": "April 29, 1950",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Texas",
-        "Oklahoma"
-      ],
-      "Start_Date": "April 28, 1950",
-      "End_Date": "April 29, 1950",
-      "Num": "5",
-      "Annotation": "Tornado outbreak of April 28\u201329, 1950"
+[
+  {
+    "Event_ID": "Q2oReMH",
+    "Sources": "https://en.wikipedia.org/wiki/Tornado_outbreak_of_April_28%E2%80%9329,_1950",
+    "Event_Names": "Tornado outbreak of April 28\u201329, 1950",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Texas",
-        "Oklahoma"
-      ],
-      "Start_Date": "April 28, 1950",
-      "End_Date": "April 29, 1950",
-      "Num": "5",
-      "Annotation": "Tornado outbreak of April 28\u201329, 1950"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 28, 1950",
+        "End_Date": "April 29, 1950",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Texas",
+          "Oklahoma"
+        ],
+        "Start_Date": "April 28, 1950",
+        "End_Date": "April 29, 1950",
+        "Num": "5",
+        "Annotation": "Tornado outbreak of April 28\u201329, 1950"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Texas",
+          "Oklahoma"
+        ],
+        "Start_Date": "April 28, 1950",
+        "End_Date": "April 29, 1950",
+        "Num": "5",
+        "Annotation": "Tornado outbreak of April 28\u201329, 1950"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Oklahoma"
+        ],
+        "Start_Date": "April 28, 1950",
+        "End_Date": "April 29, 1950",
+        "Num": "1",
+        "Annotation": "Non-tornadic events"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Oklahoma"
+        ],
+        "Start_Date": "April 28, 1950",
+        "End_Date": "April 29, 1950",
+        "Num": "1",
+        "Annotation": "Non-tornadic events"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Oklahoma"
-      ],
-      "Start_Date": "April 28, 1950",
-      "End_Date": "April 29, 1950",
-      "Num": "1",
-      "Annotation": "Non-tornadic events"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "April 28, 1950",
+        "End_Date": "April 29, 1950",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "St. Louis, Missouri"
+        ],
+        "Start_Date": "April 28, 1950",
+        "End_Date": "April 28, 1950",
+        "Num": "several streetcars",
+        "Annotation": "Non-tornadic events"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Clyde, Texas"
+        ],
+        "Start_Date": "April 28, 1950",
+        "End_Date": "April 28, 1950",
+        "Num": "NULL",
+        "Annotation": "Non-tornadic events"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Lincoln County, Mississippi"
+        ],
+        "Start_Date": "April 29, 1950",
+        "End_Date": "April 29, 1950",
+        "Num": "NULL",
+        "Annotation": "Non-tornadic events"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Woodville, Mississippi",
+          "Liberty, Mississippi"
+        ],
+        "Start_Date": "April 29, 1950",
+        "End_Date": "April 29, 1950",
+        "Num": "NULL",
+        "Annotation": "Non-tornadic events"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Copiah County, Mississippi"
+        ],
+        "Start_Date": "April 29, 1950",
+        "End_Date": "April 29, 1950",
+        "Num": "NULL",
+        "Annotation": "Non-tornadic events"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Claiborne Parish, Louisiana"
+        ],
+        "Start_Date": "April 29, 1950",
+        "End_Date": "April 29, 1950",
+        "Num": "NULL",
+        "Annotation": "Non-tornadic events"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "11",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Oklahoma"
-      ],
-      "Start_Date": "April 28, 1950",
-      "End_Date": "April 29, 1950",
-      "Num": "1",
-      "Annotation": "Non-tornadic events"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "April 28, 1950",
-      "End_Date": "April 29, 1950",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "St. Louis, Missouri"
-      ],
-      "Start_Date": "April 28, 1950",
-      "End_Date": "April 28, 1950",
-      "Num": "several streetcars",
-      "Annotation": "Non-tornadic events"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 28, 1950",
+        "End_Date": "April 29, 1950",
+        "Num": "11",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Texas",
+          "Oklahoma"
+        ],
+        "Start_Date": "April 28, 1950",
+        "End_Date": "April 29, 1950",
+        "Num": "5",
+        "Annotation": "Tornado outbreak of April 28\u201329, 1950"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Texas",
+          "Oklahoma"
+        ],
+        "Start_Date": "April 28, 1950",
+        "End_Date": "April 29, 1950",
+        "Num": "5",
+        "Annotation": "Tornado outbreak of April 28\u201329, 1950"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Lake Texoma, Oklahoma"
+        ],
+        "Start_Date": "April 28, 1950",
+        "End_Date": "April 29, 1950",
+        "Num": "1",
+        "Annotation": "Non-tornadic events"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Clyde, Texas"
-      ],
-      "Start_Date": "April 28, 1950",
-      "End_Date": "April 28, 1950",
-      "Num": "NULL",
-      "Annotation": "Non-tornadic events"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 28, 1950",
+        "End_Date": "April 29, 1950",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Oklahoma",
+          "Kansas",
+          "Texas",
+          "Mississippi"
+        ],
+        "Start_Date": "April 28, 1950",
+        "End_Date": "April 29, 1950",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Lincoln County, Mississippi"
-      ],
-      "Start_Date": "April 29, 1950",
-      "End_Date": "April 29, 1950",
-      "Num": "NULL",
-      "Annotation": "Non-tornadic events"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 28, 1950",
+        "End_Date": "April 29, 1950",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Montana"
+        ],
+        "Start_Date": "April 27, 1950",
+        "End_Date": "April 29, 1950",
+        "Num": "NULL",
+        "Annotation": "Non-tornadic events"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "South Dakota"
+        ],
+        "Start_Date": "April 29, 1950",
+        "End_Date": "April 29, 1950",
+        "Num": "NULL",
+        "Annotation": "Non-tornadic events"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": 38,
+      "Total_Injuries_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Woodville, Mississippi",
-        "Liberty, Mississippi"
-      ],
-      "Start_Date": "April 29, 1950",
-      "End_Date": "April 29, 1950",
-      "Num": "NULL",
-      "Annotation": "Non-tornadic events"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 28, 1950",
+        "End_Date": "April 29, 1950",
+        "Num": 38,
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Lake Texoma, Oklahoma"
+        ],
+        "Start_Date": "April 28, 1950",
+        "End_Date": "April 29, 1950",
+        "Num": 1,
+        "Annotation": "Non-tornadic events"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Copiah County, Mississippi"
-      ],
-      "Start_Date": "April 29, 1950",
-      "End_Date": "April 29, 1950",
-      "Num": "NULL",
-      "Annotation": "Non-tornadic events"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "1950-04-28",
+        "End_Date": "1950-04-29",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Oklahoma",
+          "Kansas",
+          "Texas",
+          "Mississippi"
+        ],
+        "Start_Date": "1950-04-28",
+        "End_Date": "1950-04-29",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "1.575 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "Yes",
+      "Total_Damage_Inflation_Adjusted_Year": "2024",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Claiborne Parish, Louisiana"
-      ],
-      "Start_Date": "April 29, 1950",
-      "End_Date": "April 29, 1950",
-      "Num": "NULL",
-      "Annotation": "Non-tornadic events"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "11",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 28, 1950",
-      "End_Date": "April 29, 1950",
-      "Num": "11",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Texas",
-        "Oklahoma"
-      ],
-      "Start_Date": "April 28, 1950",
-      "End_Date": "April 29, 1950",
-      "Num": "5",
-      "Annotation": "Tornado outbreak of April 28\u201329, 1950"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Texas",
-        "Oklahoma"
-      ],
-      "Start_Date": "April 28, 1950",
-      "End_Date": "April 29, 1950",
-      "Num": "5",
-      "Annotation": "Tornado outbreak of April 28\u201329, 1950"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Lake Texoma, Oklahoma"
-      ],
-      "Start_Date": "April 28, 1950",
-      "End_Date": "April 29, 1950",
-      "Num": "1",
-      "Annotation": "Non-tornadic events"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 28, 1950",
-      "End_Date": "April 29, 1950",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Oklahoma",
-        "Kansas",
-        "Texas",
-        "Mississippi"
-      ],
-      "Start_Date": "April 28, 1950",
-      "End_Date": "April 29, 1950",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 28, 1950",
-      "End_Date": "April 29, 1950",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Montana"
-      ],
-      "Start_Date": "April 27, 1950",
-      "End_Date": "April 29, 1950",
-      "Num": "NULL",
-      "Annotation": "Non-tornadic events"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "South Dakota"
-      ],
-      "Start_Date": "April 29, 1950",
-      "End_Date": "April 29, 1950",
-      "Num": "NULL",
-      "Annotation": "Non-tornadic events"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": 38,
-    "Total_Injuries_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 28, 1950",
-      "End_Date": "April 29, 1950",
-      "Num": 38,
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Lake Texoma, Oklahoma"
-      ],
-      "Start_Date": "April 28, 1950",
-      "End_Date": "April 29, 1950",
-      "Num": 1,
-      "Annotation": "Non-tornadic events"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "1950-04-28",
-      "End_Date": "1950-04-29",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Oklahoma",
-        "Kansas",
-        "Texas",
-        "Mississippi"
-      ],
-      "Start_Date": "1950-04-28",
-      "End_Date": "1950-04-29",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "1.575 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "Yes",
-    "Total_Damage_Inflation_Adjusted_Year": "2024",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 28, 1950",
-      "End_Date": "April 29, 1950",
-      "Num": "1.575 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "Yes",
-      "Num_Inflation_Adjusted_Year": "2024",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "St. Louis, Missouri"
-      ],
-      "Start_Date": "April 28, 1950",
-      "End_Date": "April 28, 1950",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Non-tornadic events"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Clyde, Texas"
-      ],
-      "Start_Date": "April 28, 1950",
-      "End_Date": "April 28, 1950",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Non-tornadic events"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Lincoln County, Mississippi",
-        "Woodville, Mississippi",
-        "Liberty, Mississippi"
-      ],
-      "Start_Date": "April 29, 1950",
-      "End_Date": "April 29, 1950",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Non-tornadic events"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Copiah County, Mississippi"
-      ],
-      "Start_Date": "April 29, 1950",
-      "End_Date": "April 29, 1950",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Non-tornadic events"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Claiborne Parish, Louisiana"
-      ],
-      "Start_Date": "April 29, 1950",
-      "End_Date": "April 29, 1950",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Non-tornadic events"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Lake Texoma, Bryan County, Oklahoma"
-      ],
-      "Start_Date": "April 29, 1950",
-      "End_Date": "April 29, 1950",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Non-tornadic events"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Montana"
-      ],
-      "Start_Date": "April 27, 1950",
-      "End_Date": "April 29, 1950",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Non-tornadic events"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "South Dakota"
-      ],
-      "Start_Date": "April 29, 1950",
-      "End_Date": "April 29, 1950",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Non-tornadic events"
-    }
-  ],
-  "Main_Event": "Tornado",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "April 28, 1950",
-  "End_Date": "April 29, 1950",
-  "Time_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 28, 1950",
+        "End_Date": "April 29, 1950",
+        "Num": "1.575 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "Yes",
+        "Num_Inflation_Adjusted_Year": "2024",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "St. Louis, Missouri"
+        ],
+        "Start_Date": "April 28, 1950",
+        "End_Date": "April 28, 1950",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Non-tornadic events"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Clyde, Texas"
+        ],
+        "Start_Date": "April 28, 1950",
+        "End_Date": "April 28, 1950",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Non-tornadic events"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Lincoln County, Mississippi",
+          "Woodville, Mississippi",
+          "Liberty, Mississippi"
+        ],
+        "Start_Date": "April 29, 1950",
+        "End_Date": "April 29, 1950",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Non-tornadic events"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Copiah County, Mississippi"
+        ],
+        "Start_Date": "April 29, 1950",
+        "End_Date": "April 29, 1950",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Non-tornadic events"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Claiborne Parish, Louisiana"
+        ],
+        "Start_Date": "April 29, 1950",
+        "End_Date": "April 29, 1950",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Non-tornadic events"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Lake Texoma, Bryan County, Oklahoma"
+        ],
+        "Start_Date": "April 29, 1950",
+        "End_Date": "April 29, 1950",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Non-tornadic events"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Montana"
+        ],
+        "Start_Date": "April 27, 1950",
+        "End_Date": "April 29, 1950",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Non-tornadic events"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "South Dakota"
+        ],
+        "Start_Date": "April 29, 1950",
+        "End_Date": "April 29, 1950",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Non-tornadic events"
+      }
+    ],
+    "Main_Event": "Tornado",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "April 28, 1950",
+    "End_Date": "April 29, 1950",
+    "Time_Annotation": "Info_Box"
+  }
+]

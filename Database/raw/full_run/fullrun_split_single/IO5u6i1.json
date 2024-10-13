@@ -1,866 +1,868 @@
-{
-  "Event_ID": "IO5u6i1",
-  "Sources": "https://en.wikipedia.org/wiki/Hurricane_Inez",
-  "Event_Names": "Hurricane Inez",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": "Guadeloupe",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "10,000 people homeless",
-      "Annotation": "Hurricane Inez"
-    },
-    {
-      "Administrative_Areas": "Dominican Republic",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "5,000 people homeless",
-      "Annotation": "Hurricane Inez"
-    },
-    {
-      "Administrative_Areas": "Haiti",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "60,000 people homeless",
-      "Annotation": "Hurricane Inez"
-    },
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "125,000 people evacuated",
-      "Annotation": "Hurricane Inez"
-    },
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "84,000 people homeless",
-      "Annotation": "Hurricane Inez"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Guadeloupe",
-      "Locations": [
-        "Pointe-\u00e0-Pitre"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "10,000 people homeless",
-      "Annotation": "Hurricane Inez"
-    },
-    {
-      "Administrative_Area": "Dominican Republic",
-      "Locations": [
-        "Barahona Peninsula"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "800 houses destroyed",
-      "Annotation": "Hurricane Inez"
-    },
-    {
-      "Administrative_Area": "Dominican Republic",
-      "Locations": [
-        "Nationwide"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "5,000 people homeless",
-      "Annotation": "Hurricane Inez"
-    },
-    {
-      "Administrative_Area": "Haiti",
-      "Locations": [
-        "Jacmel"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "60,000 people homeless",
-      "Annotation": "Hurricane Inez"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Oriente Province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "125,000 people evacuated",
-      "Annotation": "Hurricane Inez"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Tampico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "84,000 people homeless",
-      "Annotation": "Hurricane Inez"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Guadeloupe",
-      "Start_Date": "September 27, 1966",
-      "End_Date": "September 27, 1966",
-      "Num": "NULL",
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Areas": "Dominican Republic",
-      "Start_Date": "September 28, 1966",
-      "End_Date": "September 28, 1966",
-      "Num": "NULL",
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Areas": "Haiti",
-      "Start_Date": "September 28, 1966",
-      "End_Date": "September 28, 1966",
-      "Num": "NULL",
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "September 30, 1966",
-      "End_Date": "October 2, 1966",
-      "Num": "NULL",
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Areas": "Bahamas",
-      "Start_Date": "October 2, 1966",
-      "End_Date": "October 3, 1966",
-      "Num": "NULL",
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "October 3, 1966",
-      "End_Date": "October 3, 1966",
-      "Num": "NULL",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "October 10, 1966",
-      "End_Date": "October 11, 1966",
-      "Num": "NULL",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Guadeloupe",
-      "Locations": [
-        "Pointe-\u00e0-Pitre"
-      ],
-      "Start_Date": "September 27, 1966",
-      "End_Date": "September 27, 1966",
-      "Num": "thousands of houses",
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Area": "Dominican Republic",
-      "Locations": [
-        "Barahona Peninsula",
-        "Santo Domingo"
-      ],
-      "Start_Date": "September 28, 1966",
-      "End_Date": "September 28, 1966",
-      "Num": [
-        "more than 800 homes",
-        "hundreds of homes"
-      ],
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Area": "Haiti",
-      "Locations": [
-        "Jacmel"
-      ],
-      "Start_Date": "September 28, 1966",
-      "End_Date": "September 28, 1966",
-      "Num": "thousands of homes",
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Guant\u00e1namo",
-        "Havana"
-      ],
-      "Start_Date": "September 30, 1966",
-      "End_Date": "October 2, 1966",
-      "Num": [
-        "500 houses",
-        "one building"
-      ],
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Area": "Bahamas",
-      "Locations": [
-        "Nassau"
-      ],
-      "Start_Date": "October 2, 1966",
-      "End_Date": "October 3, 1966",
-      "Num": "NULL",
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Florida Keys"
-      ],
-      "Start_Date": "October 3, 1966",
-      "End_Date": "October 3, 1966",
-      "Num": [
-        "160 homes",
-        "190 trailers"
-      ],
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Tampico",
-        "Ciudad Madero"
-      ],
-      "Start_Date": "October 10, 1966",
-      "End_Date": "October 11, 1966",
-      "Num": [
-        "at least 2,500 houses"
-      ],
-      "Annotation": "Mexico"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "over 1,000",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Guadeloupe",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "40",
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Areas": "Dominican Republic",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "about 100",
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Areas": "Haiti",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "over 1,000",
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "five",
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Areas": "Bahamas",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "five",
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "four",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "74",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Guadeloupe",
-      "Locations": [
-        "Pointe-\u00e0-Pitre"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "40",
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Area": "Dominican Republic",
-      "Locations": [
-        "Juancho"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "55",
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Area": "Haiti",
-      "Locations": [
-        "Jacmel"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "750",
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Guant\u00e1namo Bay"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "three",
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Area": "Bahamas",
-      "Locations": [
-        "Nassau"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "one",
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Florida Keys"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "four",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Tamaulipas"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "15",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "250,000 people",
-    "Total_Displaced_Annotation": "Preparations"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "125,000 people",
-      "Annotation": "Preparations"
-    },
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "31,000 people",
-      "Annotation": "Preparations"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Guadeloupe",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "10,000 people",
-      "Annotation": "Hurricane Inez"
-    },
-    {
-      "Administrative_Area": "Dominican Republic",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "5,000 people",
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Oriente Province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "125,000 people",
-      "Annotation": "Preparations"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "La Habana Province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "21,000 people",
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Area": "Florida",
-      "Locations": [
-        "Key West"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "hundreds of people",
-      "Annotation": "Preparations"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Progreso"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "15,000 people",
-      "Annotation": "Preparations"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Port Isabel"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "at least 2,000 people",
-      "Annotation": "Preparations"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Tampico"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "31,000 people",
-      "Annotation": "Preparations"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Guadeloupe",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "10,000 people",
-      "Annotation": "Hurricane Inez"
-    },
-    {
-      "Administrative_Areas": "Dominican Republic",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "5,000 people",
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Areas": "Haiti",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "60,000 people",
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "84,000 people",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Guadeloupe",
-      "Locations": [
-        "Pointe-\u00e0-Pitre"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "10,000 people",
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Area": "Dominican Republic",
-      "Locations": [
-        "Barahona Peninsula"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "800 houses destroyed",
-      "Annotation": "Hurricane Inez"
-    },
-    {
-      "Administrative_Area": "Dominican Republic",
-      "Locations": [
-        "Nationwide"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "5,000 people",
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Area": "Haiti",
-      "Locations": [
-        "Nationwide"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "60,000 people",
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Tamaulipas"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "84,000 people",
-      "Annotation": "Mexico"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "1,500 people were seriously injured",
-    "Total_Injuries_Annotation": "Caribbean and Bahamas"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Haiti",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1,000 people were injured",
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "at least 38 people",
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Areas": "Bahamas",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "three people",
-      "Annotation": "Caribbean and Bahamas"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Guadeloupe",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "hundreds of people",
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Area": "Haiti",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1,000 people",
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "at least 38 people",
-      "Annotation": "Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Area": "Bahamas",
-      "Locations": [
-        "Nassau"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "three people",
-      "Annotation": "Caribbean and Bahamas"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "NULL",
-      "Locations": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$223 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": "Guadeloupe",
-      "Start_Date": "September 27, 1966",
-      "End_Date": "NULL",
-      "Num": "$50 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "header: Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Areas": "Dominican Republic",
-      "Start_Date": "September 28, 1966",
-      "End_Date": "NULL",
-      "Num": "$12 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "header: Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Areas": "Haiti",
-      "Start_Date": "September 28, 1966",
-      "End_Date": "NULL",
-      "Num": "$20.35 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "header: Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "September 30, 1966",
-      "End_Date": "NULL",
-      "Num": "$20 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "header: Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Areas": "Bahamas",
-      "Start_Date": "October 2, 1966",
-      "End_Date": "NULL",
-      "Num": "$15.5 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "header: Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "October 2, 1966",
-      "End_Date": "NULL",
-      "Num": "$5 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "header: United States"
-    },
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "October 10, 1966",
-      "End_Date": "NULL",
-      "Num": "$104 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "header: Mexico"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Guadeloupe",
-      "Locations": [
-        "Pointe-\u00e0-Pitre"
-      ],
-      "Start_Date": "September 27, 1966",
-      "End_Date": "NULL",
-      "Num": "$50 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "header: Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Area": "Dominican Republic",
-      "Locations": [
-        "Barahona Peninsula",
-        "Santo Domingo"
-      ],
-      "Start_Date": "September 28, 1966",
-      "End_Date": "NULL",
-      "Num": "$12 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "header: Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Area": "Haiti",
-      "Locations": [
-        "Jacmel",
-        "L\u00e9og\u00e2ne"
-      ],
-      "Start_Date": "September 28, 1966",
-      "End_Date": "NULL",
-      "Num": "$20.35 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "header: Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Guant\u00e1namo Bay",
-        "Guant\u00e1namo",
-        "La Habana Province"
-      ],
-      "Start_Date": "September 30, 1966",
-      "End_Date": "NULL",
-      "Num": "$20 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "header: Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Area": "Bahamas",
-      "Locations": [
-        "Nassau",
-        "Freeport",
-        "West End, Grand Bahama"
-      ],
-      "Start_Date": "October 2, 1966",
-      "End_Date": "NULL",
-      "Num": "$15.5 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "header: Caribbean and Bahamas"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Florida Keys",
-        "Miami",
-        "Big Pine Key",
-        "Key West"
-      ],
-      "Start_Date": "October 2, 1966",
-      "End_Date": "NULL",
-      "Num": "$5 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "header: United States"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Tampico",
-        "Ciudad Madero",
-        "Progreso",
-        "Telchac Puerto",
-        "M\u00e9rida"
-      ],
-      "Start_Date": "October 10, 1966",
-      "End_Date": "NULL",
-      "Num": "$104 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "header: Mexico"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Impact",
-  "Start_Date": "September 21, 1966",
-  "End_Date": "October 11, 1966",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Lesser Antilles",
-    "Haiti",
-    "Cuba",
-    "Bahamas",
-    "Florida",
-    "Mexico"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+[
+  {
+    "Event_ID": "IO5u6i1",
+    "Sources": "https://en.wikipedia.org/wiki/Hurricane_Inez",
+    "Event_Names": "Hurricane Inez",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Guadeloupe",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "10,000 people homeless",
+        "Annotation": "Hurricane Inez"
+      },
+      {
+        "Administrative_Areas": "Dominican Republic",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5,000 people homeless",
+        "Annotation": "Hurricane Inez"
+      },
+      {
+        "Administrative_Areas": "Haiti",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "60,000 people homeless",
+        "Annotation": "Hurricane Inez"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "125,000 people evacuated",
+        "Annotation": "Hurricane Inez"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "84,000 people homeless",
+        "Annotation": "Hurricane Inez"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Guadeloupe",
+        "Locations": [
+          "Pointe-\u00e0-Pitre"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "10,000 people homeless",
+        "Annotation": "Hurricane Inez"
+      },
+      {
+        "Administrative_Area": "Dominican Republic",
+        "Locations": [
+          "Barahona Peninsula"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "800 houses destroyed",
+        "Annotation": "Hurricane Inez"
+      },
+      {
+        "Administrative_Area": "Dominican Republic",
+        "Locations": [
+          "Nationwide"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5,000 people homeless",
+        "Annotation": "Hurricane Inez"
+      },
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Jacmel"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "60,000 people homeless",
+        "Annotation": "Hurricane Inez"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Oriente Province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "125,000 people evacuated",
+        "Annotation": "Hurricane Inez"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Tampico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "84,000 people homeless",
+        "Annotation": "Hurricane Inez"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Guadeloupe",
+        "Start_Date": "September 27, 1966",
+        "End_Date": "September 27, 1966",
+        "Num": "NULL",
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Areas": "Dominican Republic",
+        "Start_Date": "September 28, 1966",
+        "End_Date": "September 28, 1966",
+        "Num": "NULL",
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Areas": "Haiti",
+        "Start_Date": "September 28, 1966",
+        "End_Date": "September 28, 1966",
+        "Num": "NULL",
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "September 30, 1966",
+        "End_Date": "October 2, 1966",
+        "Num": "NULL",
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Areas": "Bahamas",
+        "Start_Date": "October 2, 1966",
+        "End_Date": "October 3, 1966",
+        "Num": "NULL",
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "October 3, 1966",
+        "End_Date": "October 3, 1966",
+        "Num": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "October 10, 1966",
+        "End_Date": "October 11, 1966",
+        "Num": "NULL",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Guadeloupe",
+        "Locations": [
+          "Pointe-\u00e0-Pitre"
+        ],
+        "Start_Date": "September 27, 1966",
+        "End_Date": "September 27, 1966",
+        "Num": "thousands of houses",
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Area": "Dominican Republic",
+        "Locations": [
+          "Barahona Peninsula",
+          "Santo Domingo"
+        ],
+        "Start_Date": "September 28, 1966",
+        "End_Date": "September 28, 1966",
+        "Num": [
+          "more than 800 homes",
+          "hundreds of homes"
+        ],
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Jacmel"
+        ],
+        "Start_Date": "September 28, 1966",
+        "End_Date": "September 28, 1966",
+        "Num": "thousands of homes",
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Guant\u00e1namo",
+          "Havana"
+        ],
+        "Start_Date": "September 30, 1966",
+        "End_Date": "October 2, 1966",
+        "Num": [
+          "500 houses",
+          "one building"
+        ],
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Nassau"
+        ],
+        "Start_Date": "October 2, 1966",
+        "End_Date": "October 3, 1966",
+        "Num": "NULL",
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida Keys"
+        ],
+        "Start_Date": "October 3, 1966",
+        "End_Date": "October 3, 1966",
+        "Num": [
+          "160 homes",
+          "190 trailers"
+        ],
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Tampico",
+          "Ciudad Madero"
+        ],
+        "Start_Date": "October 10, 1966",
+        "End_Date": "October 11, 1966",
+        "Num": [
+          "at least 2,500 houses"
+        ],
+        "Annotation": "Mexico"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "over 1,000",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Guadeloupe",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "40",
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Areas": "Dominican Republic",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "about 100",
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Areas": "Haiti",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "over 1,000",
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "five",
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Areas": "Bahamas",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "five",
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "four",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "74",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Guadeloupe",
+        "Locations": [
+          "Pointe-\u00e0-Pitre"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "40",
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Area": "Dominican Republic",
+        "Locations": [
+          "Juancho"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "55",
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Jacmel"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "750",
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Guant\u00e1namo Bay"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "three",
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Nassau"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "one",
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida Keys"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "four",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Tamaulipas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "15",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "250,000 people",
+      "Total_Displaced_Annotation": "Preparations"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "125,000 people",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "31,000 people",
+        "Annotation": "Preparations"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Guadeloupe",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "10,000 people",
+        "Annotation": "Hurricane Inez"
+      },
+      {
+        "Administrative_Area": "Dominican Republic",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5,000 people",
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Oriente Province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "125,000 people",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "La Habana Province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "21,000 people",
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Area": "Florida",
+        "Locations": [
+          "Key West"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "hundreds of people",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Progreso"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "15,000 people",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Port Isabel"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 2,000 people",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Tampico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "31,000 people",
+        "Annotation": "Preparations"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Guadeloupe",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "10,000 people",
+        "Annotation": "Hurricane Inez"
+      },
+      {
+        "Administrative_Areas": "Dominican Republic",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5,000 people",
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Areas": "Haiti",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "60,000 people",
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "84,000 people",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Guadeloupe",
+        "Locations": [
+          "Pointe-\u00e0-Pitre"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "10,000 people",
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Area": "Dominican Republic",
+        "Locations": [
+          "Barahona Peninsula"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "800 houses destroyed",
+        "Annotation": "Hurricane Inez"
+      },
+      {
+        "Administrative_Area": "Dominican Republic",
+        "Locations": [
+          "Nationwide"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5,000 people",
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Nationwide"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "60,000 people",
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Tamaulipas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "84,000 people",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "1,500 people were seriously injured",
+      "Total_Injuries_Annotation": "Caribbean and Bahamas"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Haiti",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,000 people were injured",
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 38 people",
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Areas": "Bahamas",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "three people",
+        "Annotation": "Caribbean and Bahamas"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Guadeloupe",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "hundreds of people",
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,000 people",
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 38 people",
+        "Annotation": "Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Nassau"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "three people",
+        "Annotation": "Caribbean and Bahamas"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$223 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Guadeloupe",
+        "Start_Date": "September 27, 1966",
+        "End_Date": "NULL",
+        "Num": "$50 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "header: Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Areas": "Dominican Republic",
+        "Start_Date": "September 28, 1966",
+        "End_Date": "NULL",
+        "Num": "$12 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "header: Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Areas": "Haiti",
+        "Start_Date": "September 28, 1966",
+        "End_Date": "NULL",
+        "Num": "$20.35 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "header: Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "September 30, 1966",
+        "End_Date": "NULL",
+        "Num": "$20 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "header: Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Areas": "Bahamas",
+        "Start_Date": "October 2, 1966",
+        "End_Date": "NULL",
+        "Num": "$15.5 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "header: Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "October 2, 1966",
+        "End_Date": "NULL",
+        "Num": "$5 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "header: United States"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "October 10, 1966",
+        "End_Date": "NULL",
+        "Num": "$104 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "header: Mexico"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Guadeloupe",
+        "Locations": [
+          "Pointe-\u00e0-Pitre"
+        ],
+        "Start_Date": "September 27, 1966",
+        "End_Date": "NULL",
+        "Num": "$50 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "header: Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Area": "Dominican Republic",
+        "Locations": [
+          "Barahona Peninsula",
+          "Santo Domingo"
+        ],
+        "Start_Date": "September 28, 1966",
+        "End_Date": "NULL",
+        "Num": "$12 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "header: Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Jacmel",
+          "L\u00e9og\u00e2ne"
+        ],
+        "Start_Date": "September 28, 1966",
+        "End_Date": "NULL",
+        "Num": "$20.35 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "header: Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Guant\u00e1namo Bay",
+          "Guant\u00e1namo",
+          "La Habana Province"
+        ],
+        "Start_Date": "September 30, 1966",
+        "End_Date": "NULL",
+        "Num": "$20 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "header: Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Nassau",
+          "Freeport",
+          "West End, Grand Bahama"
+        ],
+        "Start_Date": "October 2, 1966",
+        "End_Date": "NULL",
+        "Num": "$15.5 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "header: Caribbean and Bahamas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida Keys",
+          "Miami",
+          "Big Pine Key",
+          "Key West"
+        ],
+        "Start_Date": "October 2, 1966",
+        "End_Date": "NULL",
+        "Num": "$5 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "header: United States"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Tampico",
+          "Ciudad Madero",
+          "Progreso",
+          "Telchac Puerto",
+          "M\u00e9rida"
+        ],
+        "Start_Date": "October 10, 1966",
+        "End_Date": "NULL",
+        "Num": "$104 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "header: Mexico"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Impact",
+    "Start_Date": "September 21, 1966",
+    "End_Date": "October 11, 1966",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Lesser Antilles",
+      "Haiti",
+      "Cuba",
+      "Bahamas",
+      "Florida",
+      "Mexico"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

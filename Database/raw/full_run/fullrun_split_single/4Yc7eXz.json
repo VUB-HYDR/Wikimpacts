@@ -1,346 +1,348 @@
-{
-  "Event_ID": "4Yc7eXz",
-  "Sources": "https://en.wikipedia.org/wiki/Tornado_outbreak_of_April_20,_2004",
-  "Event_Names": "Tornado outbreak of April 20, 2004",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 20, 2004",
-      "End_Date": "April 20, 2004",
-      "Num": "NULL",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Granville, Illinois"
-      ],
-      "Start_Date": "April 20, 2004",
-      "End_Date": "April 20, 2004",
-      "Num": "5",
-      "Annotation": "Granville\u2013Utica, Illinois"
+[
+  {
+    "Event_ID": "4Yc7eXz",
+    "Sources": "https://en.wikipedia.org/wiki/Tornado_outbreak_of_April_20,_2004",
+    "Event_Names": "Tornado outbreak of April 20, 2004",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Utica, Illinois"
-      ],
-      "Start_Date": "April 20, 2004",
-      "End_Date": "April 20, 2004",
-      "Num": "8",
-      "Annotation": "Granville\u2013Utica, Illinois"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 20, 2004",
+        "End_Date": "April 20, 2004",
+        "Num": "NULL",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Granville, Illinois"
+        ],
+        "Start_Date": "April 20, 2004",
+        "End_Date": "April 20, 2004",
+        "Num": "5",
+        "Annotation": "Granville\u2013Utica, Illinois"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Utica, Illinois"
+        ],
+        "Start_Date": "April 20, 2004",
+        "End_Date": "April 20, 2004",
+        "Num": "8",
+        "Annotation": "Granville\u2013Utica, Illinois"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Utica, Illinois"
+        ],
+        "Start_Date": "April 20, 2004",
+        "End_Date": "April 20, 2004",
+        "Num": "1",
+        "Annotation": "Granville\u2013Utica, Illinois"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Utica, Illinois"
-      ],
-      "Start_Date": "April 20, 2004",
-      "End_Date": "April 20, 2004",
-      "Num": "1",
-      "Annotation": "Granville\u2013Utica, Illinois"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "April 20, 2004",
-      "End_Date": "April 20, 2004",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Granville",
-        "Utica"
-      ],
-      "Start_Date": "April 20, 2004",
-      "End_Date": "April 20, 2004",
-      "Num": "12 buildings destroyed, 45 with major damage, and 26 with minor damage",
-      "Annotation": "Granville\u2013Utica, Illinois"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "April 20, 2004",
+        "End_Date": "April 20, 2004",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Granville",
+          "Utica"
+        ],
+        "Start_Date": "April 20, 2004",
+        "End_Date": "April 20, 2004",
+        "Num": "12 buildings destroyed, 45 with major damage, and 26 with minor damage",
+        "Annotation": "Granville\u2013Utica, Illinois"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Granville"
+        ],
+        "Start_Date": "April 20, 2004",
+        "End_Date": "April 20, 2004",
+        "Num": "Granville State National Bank, Hopkins Elementary School, Granville Drugs",
+        "Annotation": "Granville\u2013Utica, Illinois"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Subdivision near the intersection of East 250th and 2569th Roads"
+        ],
+        "Start_Date": "April 20, 2004",
+        "End_Date": "April 20, 2004",
+        "Num": "Several homes",
+        "Annotation": "Granville\u2013Utica, Illinois"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Utica"
+        ],
+        "Start_Date": "April 20, 2004",
+        "End_Date": "April 20, 2004",
+        "Num": "Several homes, garages, brick buildings, church steeple, machinery building, semi-tractor trailer, large grain bin, mobile home",
+        "Annotation": "Granville\u2013Utica, Illinois"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "8 fatalities (+1 indirect)",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Granville"
-      ],
-      "Start_Date": "April 20, 2004",
-      "End_Date": "April 20, 2004",
-      "Num": "Granville State National Bank, Hopkins Elementary School, Granville Drugs",
-      "Annotation": "Granville\u2013Utica, Illinois"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 20, 2004",
+        "End_Date": "April 20, 2004",
+        "Num": "8 fatalities (+1 indirect)",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Utica, Illinois"
+        ],
+        "Start_Date": "April 20, 2004",
+        "End_Date": "April 20, 2004",
+        "Num": "8",
+        "Annotation": "Granville\u2013Utica, Illinois"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Utica, Illinois"
+        ],
+        "Start_Date": "April 20, 2004",
+        "End_Date": "June 2, 2004",
+        "Num": "1 indirect",
+        "Annotation": "Granville\u2013Utica, Illinois"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Subdivision near the intersection of East 250th and 2569th Roads"
-      ],
-      "Start_Date": "April 20, 2004",
-      "End_Date": "April 20, 2004",
-      "Num": "Several homes",
-      "Annotation": "Granville\u2013Utica, Illinois"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 20, 2004",
+        "End_Date": "April 20, 2004",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Granville",
+          "Utica"
+        ],
+        "Start_Date": "April 20, 2004",
+        "End_Date": "April 20, 2004",
+        "Num": "NULL",
+        "Annotation": "Granville\u2013Utica, Illinois"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Utica"
-      ],
-      "Start_Date": "April 20, 2004",
-      "End_Date": "April 20, 2004",
-      "Num": "Several homes, garages, brick buildings, church steeple, machinery building, semi-tractor trailer, large grain bin, mobile home",
-      "Annotation": "Granville\u2013Utica, Illinois"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "8 fatalities (+1 indirect)",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 20, 2004",
-      "End_Date": "April 20, 2004",
-      "Num": "8 fatalities (+1 indirect)",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Utica, Illinois"
-      ],
-      "Start_Date": "April 20, 2004",
-      "End_Date": "April 20, 2004",
-      "Num": "8",
-      "Annotation": "Granville\u2013Utica, Illinois"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 20, 2004",
+        "End_Date": "April 20, 2004",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Granville"
+        ],
+        "Start_Date": "April 20, 2004",
+        "End_Date": "April 20, 2004",
+        "Num": "12 buildings destroyed, 45 with major damage, and 26 with minor damage",
+        "Annotation": "Granville\u2013Utica, Illinois"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Utica"
+        ],
+        "Start_Date": "April 20, 2004",
+        "End_Date": "April 20, 2004",
+        "Num": "Several homes were severely damaged, garages were destroyed, and brick buildings collapsed",
+        "Annotation": "Granville\u2013Utica, Illinois"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "21",
+      "Total_Injuries_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Utica, Illinois"
-      ],
-      "Start_Date": "April 20, 2004",
-      "End_Date": "June 2, 2004",
-      "Num": "1 indirect",
-      "Annotation": "Granville\u2013Utica, Illinois"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 20, 2004",
-      "End_Date": "April 20, 2004",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Granville",
-        "Utica"
-      ],
-      "Start_Date": "April 20, 2004",
-      "End_Date": "April 20, 2004",
-      "Num": "NULL",
-      "Annotation": "Granville\u2013Utica, Illinois"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 20, 2004",
-      "End_Date": "April 20, 2004",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Granville"
-      ],
-      "Start_Date": "April 20, 2004",
-      "End_Date": "April 20, 2004",
-      "Num": "12 buildings destroyed, 45 with major damage, and 26 with minor damage",
-      "Annotation": "Granville\u2013Utica, Illinois"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 20, 2004",
+        "End_Date": "April 20, 2004",
+        "Num": "21",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Granville"
+        ],
+        "Start_Date": "April 20, 2004",
+        "End_Date": "April 20, 2004",
+        "Num": "5",
+        "Annotation": "Granville\u2013Utica, Illinois"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Utica"
-      ],
-      "Start_Date": "April 20, 2004",
-      "End_Date": "April 20, 2004",
-      "Num": "Several homes were severely damaged, garages were destroyed, and brick buildings collapsed",
-      "Annotation": "Granville\u2013Utica, Illinois"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "21",
-    "Total_Injuries_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 20, 2004",
-      "End_Date": "April 20, 2004",
-      "Num": "21",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Granville"
-      ],
-      "Start_Date": "April 20, 2004",
-      "End_Date": "April 20, 2004",
-      "Num": "5",
-      "Annotation": "Granville\u2013Utica, Illinois"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 20, 2004",
-      "End_Date": "April 20, 2004",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Granville"
-      ],
-      "Start_Date": "April 20, 2004",
-      "End_Date": "April 20, 2004",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Granville\u2013Utica, Illinois"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 20, 2004",
+        "End_Date": "April 20, 2004",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Granville"
+        ],
+        "Start_Date": "April 20, 2004",
+        "End_Date": "April 20, 2004",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Granville\u2013Utica, Illinois"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Utica"
+        ],
+        "Start_Date": "April 20, 2004",
+        "End_Date": "April 20, 2004",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Granville\u2013Utica, Illinois"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "NULL",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Utica"
-      ],
-      "Start_Date": "April 20, 2004",
-      "End_Date": "April 20, 2004",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Granville\u2013Utica, Illinois"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "NULL",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "NULL",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 20, 2004",
-      "End_Date": "April 20, 2004",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Granville"
-      ],
-      "Start_Date": "April 20, 2004",
-      "End_Date": "April 20, 2004",
-      "Num": "8 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Granville\u2013Utica, Illinois"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Granville"
-      ],
-      "Start_Date": "April 20, 2004",
-      "End_Date": "April 20, 2004",
-      "Num": "3.5 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Granville\u2013Utica, Illinois"
-    }
-  ],
-  "Main_Event": "Tornado",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "April 20, 2004",
-  "End_Date": "April 20, 2004",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "United States"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 20, 2004",
+        "End_Date": "April 20, 2004",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Granville"
+        ],
+        "Start_Date": "April 20, 2004",
+        "End_Date": "April 20, 2004",
+        "Num": "8 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Granville\u2013Utica, Illinois"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Granville"
+        ],
+        "Start_Date": "April 20, 2004",
+        "End_Date": "April 20, 2004",
+        "Num": "3.5 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Granville\u2013Utica, Illinois"
+      }
+    ],
+    "Main_Event": "Tornado",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "April 20, 2004",
+    "End_Date": "April 20, 2004",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "United States"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

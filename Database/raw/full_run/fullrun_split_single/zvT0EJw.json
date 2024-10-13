@@ -1,646 +1,648 @@
-{
-  "Event_ID": "zvT0EJw",
-  "Sources": "https://en.wikipedia.org/wiki/Typhoon_Francisco_(2019)",
-  "Event_Names": "Typhoon Francisco (2019)",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": "Japan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Japan"
+[
+  {
+    "Event_ID": "zvT0EJw",
+    "Sources": "https://en.wikipedia.org/wiki/Typhoon_Francisco_(2019)",
+    "Event_Names": "Typhoon Francisco (2019)",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Korean Peninsula",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Korean Peninsula"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Areas": "Korean Peninsula",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Korean Peninsula"
+      },
+      {
+        "Administrative_Areas": "Russia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Russia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Kokuraminami-ku",
+          "Moji-ku"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "20,020 people",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Fukuoka",
+          "Kitakyushu",
+          "Chukugo"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "10,500 households",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Miyazaki"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "24,710 households",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Kokonoe"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1 person",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Miyazaki"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3 people",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Minamib\u014ds\u014d"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1 person",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Kobe University"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "23 students",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Fukagawa",
+          "Numata"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "320 households",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Korean Peninsula",
+        "Locations": [
+          "Busan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "12 structures",
+        "Annotation": "Korean Peninsula"
+      },
+      {
+        "Administrative_Area": "Korean Peninsula",
+        "Locations": [
+          "Busan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2 people",
+        "Annotation": "Korean Peninsula"
+      },
+      {
+        "Administrative_Area": "Korean Peninsula",
+        "Locations": [
+          "Gangwon Province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "several people",
+        "Annotation": "Korean Peninsula"
+      },
+      {
+        "Administrative_Area": "Russia",
+        "Locations": [
+          "Olga Bay"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "25 North Korean fishing boats",
+        "Annotation": "Russia"
+      },
+      {
+        "Administrative_Area": "Russia",
+        "Locations": [
+          "Yezhovaya Bay"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "18 tourists",
+        "Annotation": "Russia"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Russia",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Russia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Kokuraminami-ku",
-        "Moji-ku"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "20,020 people",
-      "Annotation": "Japan"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "August 5, 2019",
+        "End_Date": "August 6, 2019",
+        "Num": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Areas": "Korean Peninsula",
+        "Start_Date": "August 6, 2019",
+        "End_Date": "August 6, 2019",
+        "Num": "NULL",
+        "Annotation": "Korean Peninsula"
+      },
+      {
+        "Administrative_Areas": "Russia",
+        "Start_Date": "August 7, 2019",
+        "End_Date": "August 7, 2019",
+        "Num": "NULL",
+        "Annotation": "Russia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Nobeoka"
+        ],
+        "Start_Date": "August 5, 2019",
+        "End_Date": "August 6, 2019",
+        "Num": "four homes",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Fukuoka"
+        ],
+        "Start_Date": "August 5, 2019",
+        "End_Date": "August 6, 2019",
+        "Num": "a home",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Korean Peninsula",
+        "Locations": [
+          "Busan"
+        ],
+        "Start_Date": "August 6, 2019",
+        "End_Date": "August 6, 2019",
+        "Num": "twelve structures",
+        "Annotation": "Korean Peninsula"
+      },
+      {
+        "Administrative_Area": "Russia",
+        "Locations": [
+          "Novostroyka"
+        ],
+        "Start_Date": "August 7, 2019",
+        "End_Date": "August 7, 2019",
+        "Num": "several structures",
+        "Annotation": "Russia"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "2",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Fukuoka",
-        "Kitakyushu",
-        "Chukugo"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "10,500 households",
-      "Annotation": "Japan"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Japan"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Kokonoe",
+          "Minamib\u014ds\u014d"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Minamib\u014ds\u014d"
+        ],
+        "Start_Date": "August 5",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Japan"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Miyazaki"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "24,710 households",
-      "Annotation": "Japan"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Areas": "Russia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Russia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Kokuraminami-ku",
+          "Moji-ku"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "20,020",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Fukuoka",
+          "Kitakyushu",
+          "Chukugo"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "10,500 households",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Fukagawa",
+          "Numata"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "240 households in Fukagawa and 80 more in Numata",
+        "Annotation": "Japan"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Kokonoe"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1 person",
-      "Annotation": "Japan"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Areas": "South Korea",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Korean Peninsula"
+      },
+      {
+        "Administrative_Areas": "Russia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Russia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Nobeoka"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "four homes",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Russia",
+        "Locations": [
+          "Novostroyka"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "several structures",
+        "Annotation": "Russia"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Miyazaki"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3 people",
-      "Annotation": "Japan"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Areas": "South Korea",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Korean Peninsula"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Miyazaki City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Minamib\u014ds\u014d"
+        ],
+        "Start_Date": "August 5, 2019",
+        "End_Date": "August 5, 2019",
+        "Num": "1",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "South Korea",
+        "Locations": [
+          "Busan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Korean Peninsula"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Minamib\u014ds\u014d"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1 person",
-      "Annotation": "Japan"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Japan",
+          "Korean Peninsula",
+          "Russia"
+        ],
+        "Start_Date": "August 1, 2019",
+        "End_Date": "August 11, 2019",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Kyushu",
+          "Miyazaki",
+          "Fukuoka",
+          "Kitakyushu",
+          "Chukugo",
+          "Kagoshima Prefecture",
+          "Miyazaki City",
+          "Kumamoto Castle",
+          "Nobeoka",
+          "Saiki",
+          "Kokonoe",
+          "Saga Prefecture",
+          "Shikoku",
+          "Cape Ashizuri",
+          "Tosashimizu",
+          "Minamib\u014ds\u014d",
+          "Chiba",
+          "Kobe University",
+          "Hokkaido",
+          "Ury\u016b",
+          "Fukagawa",
+          "Numata"
+        ],
+        "Start_Date": "August 1, 2019",
+        "End_Date": "August 11, 2019",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Korean Peninsula",
+        "Locations": [
+          "Busan",
+          "Gangwon Province",
+          "Seoraksan",
+          "North Korea",
+          "Rason"
+        ],
+        "Start_Date": "August 1, 2019",
+        "End_Date": "August 11, 2019",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Korean Peninsula"
+      },
+      {
+        "Administrative_Area": "Russia",
+        "Locations": [
+          "Primorsky Krai",
+          "Vladivostok",
+          "Khasansky",
+          "Lazovsky",
+          "Ussuriysk",
+          "Partizansk",
+          "Krounovka",
+          "Yezhovaya Bay",
+          "Novostroyka"
+        ],
+        "Start_Date": "August 1, 2019",
+        "End_Date": "August 11, 2019",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Russia"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "NULL",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Kobe University"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "23 students",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Fukagawa",
-        "Numata"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "320 households",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Area": "Korean Peninsula",
-      "Locations": [
-        "Busan"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "12 structures",
-      "Annotation": "Korean Peninsula"
-    },
-    {
-      "Administrative_Area": "Korean Peninsula",
-      "Locations": [
-        "Busan"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2 people",
-      "Annotation": "Korean Peninsula"
-    },
-    {
-      "Administrative_Area": "Korean Peninsula",
-      "Locations": [
-        "Gangwon Province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "several people",
-      "Annotation": "Korean Peninsula"
-    },
-    {
-      "Administrative_Area": "Russia",
-      "Locations": [
-        "Olga Bay"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "25 North Korean fishing boats",
-      "Annotation": "Russia"
-    },
-    {
-      "Administrative_Area": "Russia",
-      "Locations": [
-        "Yezhovaya Bay"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "18 tourists",
-      "Annotation": "Russia"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Japan",
-      "Start_Date": "August 5, 2019",
-      "End_Date": "August 6, 2019",
-      "Num": "NULL",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Areas": "Korean Peninsula",
-      "Start_Date": "August 6, 2019",
-      "End_Date": "August 6, 2019",
-      "Num": "NULL",
-      "Annotation": "Korean Peninsula"
-    },
-    {
-      "Administrative_Areas": "Russia",
-      "Start_Date": "August 7, 2019",
-      "End_Date": "August 7, 2019",
-      "Num": "NULL",
-      "Annotation": "Russia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Nobeoka"
-      ],
-      "Start_Date": "August 5, 2019",
-      "End_Date": "August 6, 2019",
-      "Num": "four homes",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Fukuoka"
-      ],
-      "Start_Date": "August 5, 2019",
-      "End_Date": "August 6, 2019",
-      "Num": "a home",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Area": "Korean Peninsula",
-      "Locations": [
-        "Busan"
-      ],
-      "Start_Date": "August 6, 2019",
-      "End_Date": "August 6, 2019",
-      "Num": "twelve structures",
-      "Annotation": "Korean Peninsula"
-    },
-    {
-      "Administrative_Area": "Russia",
-      "Locations": [
-        "Novostroyka"
-      ],
-      "Start_Date": "August 7, 2019",
-      "End_Date": "August 7, 2019",
-      "Num": "several structures",
-      "Annotation": "Russia"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "2",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Japan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "Japan"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Kokonoe",
-        "Minamib\u014ds\u014d"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Minamib\u014ds\u014d"
-      ],
-      "Start_Date": "August 5",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Japan"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": "Japan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Areas": "Russia",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Russia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Kokuraminami-ku",
-        "Moji-ku"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "20,020",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Fukuoka",
-        "Kitakyushu",
-        "Chukugo"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "10,500 households",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Fukagawa",
-        "Numata"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "240 households in Fukagawa and 80 more in Numata",
-      "Annotation": "Japan"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Japan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Areas": "South Korea",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Korean Peninsula"
-    },
-    {
-      "Administrative_Areas": "Russia",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Russia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Nobeoka"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "four homes",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Area": "Russia",
-      "Locations": [
-        "Novostroyka"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "several structures",
-      "Annotation": "Russia"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Japan",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "4",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Areas": "South Korea",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "Korean Peninsula"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Miyazaki City"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Minamib\u014ds\u014d"
-      ],
-      "Start_Date": "August 5, 2019",
-      "End_Date": "August 5, 2019",
-      "Num": "1",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Area": "South Korea",
-      "Locations": [
-        "Busan"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "Korean Peninsula"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Japan",
-        "Korean Peninsula",
-        "Russia"
-      ],
-      "Start_Date": "August 1, 2019",
-      "End_Date": "August 11, 2019",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Kyushu",
-        "Miyazaki",
-        "Fukuoka",
-        "Kitakyushu",
-        "Chukugo",
-        "Kagoshima Prefecture",
-        "Miyazaki City",
-        "Kumamoto Castle",
-        "Nobeoka",
-        "Saiki",
-        "Kokonoe",
-        "Saga Prefecture",
-        "Shikoku",
-        "Cape Ashizuri",
-        "Tosashimizu",
-        "Minamib\u014ds\u014d",
-        "Chiba",
-        "Kobe University",
-        "Hokkaido",
-        "Ury\u016b",
-        "Fukagawa",
-        "Numata"
-      ],
-      "Start_Date": "August 1, 2019",
-      "End_Date": "August 11, 2019",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Area": "Korean Peninsula",
-      "Locations": [
-        "Busan",
-        "Gangwon Province",
-        "Seoraksan",
-        "North Korea",
-        "Rason"
-      ],
-      "Start_Date": "August 1, 2019",
-      "End_Date": "August 11, 2019",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Korean Peninsula"
-    },
-    {
-      "Administrative_Area": "Russia",
-      "Locations": [
-        "Primorsky Krai",
-        "Vladivostok",
-        "Khasansky",
-        "Lazovsky",
-        "Ussuriysk",
-        "Partizansk",
-        "Krounovka",
-        "Yezhovaya Bay",
-        "Novostroyka"
-      ],
-      "Start_Date": "August 1, 2019",
-      "End_Date": "August 11, 2019",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Russia"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "NULL",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "NULL",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": "Japan",
-      "Start_Date": "August 5, 2019",
-      "End_Date": "August 6, 2019",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Areas": "South Korea",
-      "Start_Date": "August 6, 2019",
-      "End_Date": "August 6, 2019",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Korean Peninsula"
-    },
-    {
-      "Administrative_Areas": "Russia",
-      "Start_Date": "August 7, 2019",
-      "End_Date": "August 7, 2019",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Russia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Nobeoka",
-        "Saiki",
-        "Miyazaki City",
-        "Fukuoka",
-        "Kitakyushu",
-        "Chukugo",
-        "Kagoshima Prefecture",
-        "Kumamoto Castle",
-        "Ainan",
-        "Minamib\u014ds\u014d",
-        "Kobe University",
-        "Hokkaido",
-        "Ury\u016b",
-        "Fukagawa",
-        "Numata"
-      ],
-      "Start_Date": "August 5, 2019",
-      "End_Date": "August 9, 2019",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Japan"
-    },
-    {
-      "Administrative_Area": "South Korea",
-      "Locations": [
-        "Busan",
-        "Gangwon Province",
-        "Seoraksan",
-        "Rason"
-      ],
-      "Start_Date": "August 6, 2019",
-      "End_Date": "August 6, 2019",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Korean Peninsula"
-    },
-    {
-      "Administrative_Area": "Russia",
-      "Locations": [
-        "Primorsky Krai",
-        "Vladivostok",
-        "Khasansky",
-        "Lazovsky",
-        "Ussuriysk",
-        "Partizansk",
-        "Krounovka",
-        "Yezhovaya Bay",
-        "Novostroyka"
-      ],
-      "Start_Date": "August 7, 2019",
-      "End_Date": "August 7, 2019",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Russia"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Japan|Korean Peninsula|Russia",
-  "Start_Date": "August 1, 2019",
-  "End_Date": "August 11, 2019",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Japan",
-    "South Korea",
-    "North Korea",
-    "Russia"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "August 5, 2019",
+        "End_Date": "August 6, 2019",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Areas": "South Korea",
+        "Start_Date": "August 6, 2019",
+        "End_Date": "August 6, 2019",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Korean Peninsula"
+      },
+      {
+        "Administrative_Areas": "Russia",
+        "Start_Date": "August 7, 2019",
+        "End_Date": "August 7, 2019",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Russia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Nobeoka",
+          "Saiki",
+          "Miyazaki City",
+          "Fukuoka",
+          "Kitakyushu",
+          "Chukugo",
+          "Kagoshima Prefecture",
+          "Kumamoto Castle",
+          "Ainan",
+          "Minamib\u014ds\u014d",
+          "Kobe University",
+          "Hokkaido",
+          "Ury\u016b",
+          "Fukagawa",
+          "Numata"
+        ],
+        "Start_Date": "August 5, 2019",
+        "End_Date": "August 9, 2019",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "South Korea",
+        "Locations": [
+          "Busan",
+          "Gangwon Province",
+          "Seoraksan",
+          "Rason"
+        ],
+        "Start_Date": "August 6, 2019",
+        "End_Date": "August 6, 2019",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Korean Peninsula"
+      },
+      {
+        "Administrative_Area": "Russia",
+        "Locations": [
+          "Primorsky Krai",
+          "Vladivostok",
+          "Khasansky",
+          "Lazovsky",
+          "Ussuriysk",
+          "Partizansk",
+          "Krounovka",
+          "Yezhovaya Bay",
+          "Novostroyka"
+        ],
+        "Start_Date": "August 7, 2019",
+        "End_Date": "August 7, 2019",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Russia"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Japan|Korean Peninsula|Russia",
+    "Start_Date": "August 1, 2019",
+    "End_Date": "August 11, 2019",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Japan",
+      "South Korea",
+      "North Korea",
+      "Russia"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

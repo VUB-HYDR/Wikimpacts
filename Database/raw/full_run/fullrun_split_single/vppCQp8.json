@@ -1,753 +1,755 @@
-{
-  "Event_ID": "vppCQp8",
-  "Sources": "https://en.wikipedia.org/wiki/Cyclone_Andrea",
-  "Event_Names": "Cyclone Andrea",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": "United Kingdom",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "100,000 homes",
-      "Annotation": "British Isles"
+[
+  {
+    "Event_ID": "vppCQp8",
+    "Sources": "https://en.wikipedia.org/wiki/Cyclone_Andrea",
+    "Event_Names": "Cyclone Andrea",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "United Kingdom",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "100,000 Scottish homes and businesses",
-      "Annotation": "British Isles"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "United Kingdom",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "100,000 homes",
+        "Annotation": "British Isles"
+      },
+      {
+        "Administrative_Areas": "United Kingdom",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "100,000 Scottish homes and businesses",
+        "Annotation": "British Isles"
+      },
+      {
+        "Administrative_Areas": "Belgium",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5800 homes",
+        "Annotation": "Belgium, France"
+      },
+      {
+        "Administrative_Areas": "France",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "20,000 homes",
+        "Annotation": "Central Europe and European Alps"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Nottinghamshire"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "900 homes",
+        "Annotation": "British Isles"
+      },
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Lincolnshire"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "British Isles"
+      },
+      {
+        "Administrative_Area": "Netherlands",
+        "Locations": [
+          "Hook of Holland",
+          "Rotterdam"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Netherlands"
+      },
+      {
+        "Administrative_Area": "Netherlands",
+        "Locations": [
+          "Northern Netherlands"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Netherlands"
+      },
+      {
+        "Administrative_Area": "Germany",
+        "Locations": [
+          "Nord Rhein Westphalia",
+          "Cologne",
+          "Saxony",
+          "Middle Saxony",
+          "Bautzen",
+          "Regensburg",
+          "Munich",
+          "Reken",
+          "M\u00fcnsterland",
+          "Geltendorf",
+          "Augsburg"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Germany"
+      },
+      {
+        "Administrative_Area": "Belgium",
+        "Locations": [
+          "Quenast",
+          "Walloon Brabant",
+          "Li\u00e8ge"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Belgium, France"
+      },
+      {
+        "Administrative_Area": "France",
+        "Locations": [
+          "Nord Pas De Calais",
+          "Calais",
+          "\u00c9taples",
+          "Haute-Savoie",
+          "Is\u00e8re",
+          "Savoy"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Belgium, France"
+      },
+      {
+        "Administrative_Area": "Switzerland",
+        "Locations": [
+          "Zurich",
+          "Central Switzerland",
+          "Zurich wine growing areas",
+          "Great St Bernard Pass"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Central Europe and European Alps"
+      },
+      {
+        "Administrative_Area": "Austria",
+        "Locations": [
+          "Western Austria",
+          "Tyrol",
+          "Vorarlberg",
+          "Innsbruck",
+          "Hochfilzen",
+          "Langen am Arlberg",
+          "Ischgl"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Central Europe and European Alps"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Belgium",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "5800 homes",
-      "Annotation": "Belgium, France"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "United Kingdom",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "British Isles"
+      },
+      {
+        "Administrative_Areas": "Netherlands",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Netherlands"
+      },
+      {
+        "Administrative_Areas": "Germany",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Germany"
+      },
+      {
+        "Administrative_Areas": "Belgium",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Belgium, France"
+      },
+      {
+        "Administrative_Areas": "France",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Belgium, France"
+      },
+      {
+        "Administrative_Areas": "Switzerland",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Central Europe and European Alps"
+      },
+      {
+        "Administrative_Areas": "Austria",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Central Europe and European Alps"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Nottinghamshire",
+          "Lincolnshire",
+          "Southern Scotland"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": [
+          "more than 900 homes",
+          "two houses",
+          "NULL"
+        ],
+        "Annotation": "British Isles"
+      },
+      {
+        "Administrative_Area": "Germany",
+        "Locations": [
+          "Regensburg",
+          "Munich",
+          "Reken",
+          "Geltendorf"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": [
+          "one furniture store",
+          "NULL",
+          "NULL",
+          "NULL"
+        ],
+        "Annotation": "Germany"
+      },
+      {
+        "Administrative_Area": "Belgium",
+        "Locations": [
+          "Quenast",
+          "Li\u00e8ge"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": [
+          "one school",
+          "NULL"
+        ],
+        "Annotation": "Belgium, France"
+      },
+      {
+        "Administrative_Area": "France",
+        "Locations": [
+          "Nord Pas De Calais",
+          "Calais",
+          "\u00c9taples",
+          "Haute-Savoie",
+          "Is\u00e8re",
+          "Savoy"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": [
+          "5800 homes",
+          "NULL",
+          "one wind turbine",
+          "20,000 homes",
+          "NULL",
+          "NULL"
+        ],
+        "Annotation": "Belgium, France"
+      },
+      {
+        "Administrative_Area": "Switzerland",
+        "Locations": [
+          "Zurich"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": [
+          "NULL"
+        ],
+        "Annotation": "Central Europe and European Alps"
+      },
+      {
+        "Administrative_Area": "Austria",
+        "Locations": [
+          "Ostallg\u00e4u",
+          "Hochfilzen",
+          "Langen am Arlberg",
+          "Ischgl"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": [
+          "one church tower",
+          "NULL",
+          "NULL",
+          "NULL"
+        ],
+        "Annotation": "Central Europe and European Alps"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "1 direct",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": "France",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "20,000 homes",
-      "Annotation": "Central Europe and European Alps"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Nottinghamshire"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "900 homes",
-      "Annotation": "British Isles"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Germany",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Central Europe and European Alps"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Germany",
+        "Locations": [
+          "Upper Franconia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Central Europe and European Alps"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Lincolnshire"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "British Isles"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Netherlands"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Netherlands"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Netherlands",
+        "Locations": [
+          "northern Netherlands"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Netherlands"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Netherlands",
-      "Locations": [
-        "Hook of Holland",
-        "Rotterdam"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Netherlands"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "United Kingdom",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "100,000 homes without electricity",
+        "Annotation": "British Isles"
+      },
+      {
+        "Administrative_Areas": "Netherlands",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Netherlands"
+      },
+      {
+        "Administrative_Areas": "Germany",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Germany"
+      },
+      {
+        "Administrative_Areas": "Belgium",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Belgium, France"
+      },
+      {
+        "Administrative_Areas": "France",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Belgium, France"
+      },
+      {
+        "Administrative_Areas": "Switzerland",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Central Europe and European Alps"
+      },
+      {
+        "Administrative_Areas": "Austria",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Central Europe and European Alps"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Nottinghamshire",
+          "Lincolnshire",
+          "Southern Scotland"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "900 homes without power in Nottinghamshire",
+        "Annotation": "British Isles"
+      },
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Southern Scotland"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "100,000 homes and businesses without electricity",
+        "Annotation": "British Isles"
+      },
+      {
+        "Administrative_Area": "Netherlands",
+        "Locations": [
+          "West coast",
+          "Rotterdam",
+          "Northern Netherlands"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Netherlands"
+      },
+      {
+        "Administrative_Area": "Germany",
+        "Locations": [
+          "Nord Rhein Westphalia",
+          "Saxony",
+          "Middle Saxony",
+          "Bautzen",
+          "Regensburg",
+          "Munich",
+          "Reken",
+          "M\u00fcnsterland",
+          "Geltendorf",
+          "Augsburg"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Germany"
+      },
+      {
+        "Administrative_Area": "Belgium",
+        "Locations": [
+          "Quenast",
+          "Walloon Brabant",
+          "Li\u00e8ge"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Belgium, France"
+      },
+      {
+        "Administrative_Area": "France",
+        "Locations": [
+          "Nord Pas De Calais",
+          "Calais",
+          "\u00c9taples",
+          "Haute-Savoie",
+          "Is\u00e8re",
+          "Savoy"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5800 homes without power in Nord Pas De Calais",
+        "Annotation": "Belgium, France"
+      },
+      {
+        "Administrative_Area": "Switzerland",
+        "Locations": [
+          "Zurich",
+          "Central Switzerland",
+          "Zurich wine growing areas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Central Europe and European Alps"
+      },
+      {
+        "Administrative_Area": "Austria",
+        "Locations": [
+          "Western Tyrol",
+          "Vorarlberg",
+          "Innsbruck",
+          "Hochfilzen",
+          "Langen am Arlberg",
+          "Ischgl"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Central Europe and European Alps"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Netherlands",
-      "Locations": [
-        "Northern Netherlands"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Netherlands"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Germany",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "four passengers and the driver escaped without harm",
+        "Annotation": "Germany"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Germany",
+        "Locations": [
+          "Reken in M\u00fcnsterland"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "four passengers and the driver escaped without harm",
+        "Annotation": "Germany"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Germany",
-      "Locations": [
-        "Nord Rhein Westphalia",
-        "Cologne",
-        "Saxony",
-        "Middle Saxony",
-        "Bautzen",
-        "Regensburg",
-        "Munich",
-        "Reken",
-        "M\u00fcnsterland",
-        "Geltendorf",
-        "Augsburg"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Germany"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Netherlands"
+        ],
+        "Start_Date": "3 January 2012",
+        "End_Date": "9 January 2012",
+        "Num": "2 million euros",
+        "Num_Unit": "EUR",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Netherlands",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "3 January 2012",
+        "End_Date": "9 January 2012",
+        "Num": "2 million euros",
+        "Num_Unit": "EUR",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$350 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Belgium",
-      "Locations": [
-        "Quenast",
-        "Walloon Brabant",
-        "Li\u00e8ge"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Belgium, France"
-    },
-    {
-      "Administrative_Area": "France",
-      "Locations": [
-        "Nord Pas De Calais",
-        "Calais",
-        "\u00c9taples",
-        "Haute-Savoie",
-        "Is\u00e8re",
-        "Savoy"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Belgium, France"
-    },
-    {
-      "Administrative_Area": "Switzerland",
-      "Locations": [
-        "Zurich",
-        "Central Switzerland",
-        "Zurich wine growing areas",
-        "Great St Bernard Pass"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Central Europe and European Alps"
-    },
-    {
-      "Administrative_Area": "Austria",
-      "Locations": [
-        "Western Austria",
-        "Tyrol",
-        "Vorarlberg",
-        "Innsbruck",
-        "Hochfilzen",
-        "Langen am Arlberg",
-        "Ischgl"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Central Europe and European Alps"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "United Kingdom",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "British Isles"
-    },
-    {
-      "Administrative_Areas": "Netherlands",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Netherlands"
-    },
-    {
-      "Administrative_Areas": "Germany",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Germany"
-    },
-    {
-      "Administrative_Areas": "Belgium",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Belgium, France"
-    },
-    {
-      "Administrative_Areas": "France",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Belgium, France"
-    },
-    {
-      "Administrative_Areas": "Switzerland",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Central Europe and European Alps"
-    },
-    {
-      "Administrative_Areas": "Austria",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Central Europe and European Alps"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Nottinghamshire",
-        "Lincolnshire",
-        "Southern Scotland"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": [
-        "more than 900 homes",
-        "two houses",
-        "NULL"
-      ],
-      "Annotation": "British Isles"
-    },
-    {
-      "Administrative_Area": "Germany",
-      "Locations": [
-        "Regensburg",
-        "Munich",
-        "Reken",
-        "Geltendorf"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": [
-        "one furniture store",
-        "NULL",
-        "NULL",
-        "NULL"
-      ],
-      "Annotation": "Germany"
-    },
-    {
-      "Administrative_Area": "Belgium",
-      "Locations": [
-        "Quenast",
-        "Li\u00e8ge"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": [
-        "one school",
-        "NULL"
-      ],
-      "Annotation": "Belgium, France"
-    },
-    {
-      "Administrative_Area": "France",
-      "Locations": [
-        "Nord Pas De Calais",
-        "Calais",
-        "\u00c9taples",
-        "Haute-Savoie",
-        "Is\u00e8re",
-        "Savoy"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": [
-        "5800 homes",
-        "NULL",
-        "one wind turbine",
-        "20,000 homes",
-        "NULL",
-        "NULL"
-      ],
-      "Annotation": "Belgium, France"
-    },
-    {
-      "Administrative_Area": "Switzerland",
-      "Locations": [
-        "Zurich"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": [
-        "NULL"
-      ],
-      "Annotation": "Central Europe and European Alps"
-    },
-    {
-      "Administrative_Area": "Austria",
-      "Locations": [
-        "Ostallg\u00e4u",
-        "Hochfilzen",
-        "Langen am Arlberg",
-        "Ischgl"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": [
-        "one church tower",
-        "NULL",
-        "NULL",
-        "NULL"
-      ],
-      "Annotation": "Central Europe and European Alps"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "1 direct",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Germany",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Central Europe and European Alps"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Germany",
-      "Locations": [
-        "Upper Franconia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Central Europe and European Alps"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Netherlands"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Netherlands"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Netherlands",
-      "Locations": [
-        "northern Netherlands"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Netherlands"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "United Kingdom",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "100,000 homes without electricity",
-      "Annotation": "British Isles"
-    },
-    {
-      "Administrative_Areas": "Netherlands",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Netherlands"
-    },
-    {
-      "Administrative_Areas": "Germany",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Germany"
-    },
-    {
-      "Administrative_Areas": "Belgium",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Belgium, France"
-    },
-    {
-      "Administrative_Areas": "France",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Belgium, France"
-    },
-    {
-      "Administrative_Areas": "Switzerland",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Central Europe and European Alps"
-    },
-    {
-      "Administrative_Areas": "Austria",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Central Europe and European Alps"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Nottinghamshire",
-        "Lincolnshire",
-        "Southern Scotland"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "900 homes without power in Nottinghamshire",
-      "Annotation": "British Isles"
-    },
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Southern Scotland"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "100,000 homes and businesses without electricity",
-      "Annotation": "British Isles"
-    },
-    {
-      "Administrative_Area": "Netherlands",
-      "Locations": [
-        "West coast",
-        "Rotterdam",
-        "Northern Netherlands"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Netherlands"
-    },
-    {
-      "Administrative_Area": "Germany",
-      "Locations": [
-        "Nord Rhein Westphalia",
-        "Saxony",
-        "Middle Saxony",
-        "Bautzen",
-        "Regensburg",
-        "Munich",
-        "Reken",
-        "M\u00fcnsterland",
-        "Geltendorf",
-        "Augsburg"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Germany"
-    },
-    {
-      "Administrative_Area": "Belgium",
-      "Locations": [
-        "Quenast",
-        "Walloon Brabant",
-        "Li\u00e8ge"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Belgium, France"
-    },
-    {
-      "Administrative_Area": "France",
-      "Locations": [
-        "Nord Pas De Calais",
-        "Calais",
-        "\u00c9taples",
-        "Haute-Savoie",
-        "Is\u00e8re",
-        "Savoy"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "5800 homes without power in Nord Pas De Calais",
-      "Annotation": "Belgium, France"
-    },
-    {
-      "Administrative_Area": "Switzerland",
-      "Locations": [
-        "Zurich",
-        "Central Switzerland",
-        "Zurich wine growing areas"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Central Europe and European Alps"
-    },
-    {
-      "Administrative_Area": "Austria",
-      "Locations": [
-        "Western Tyrol",
-        "Vorarlberg",
-        "Innsbruck",
-        "Hochfilzen",
-        "Langen am Arlberg",
-        "Ischgl"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Central Europe and European Alps"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Germany",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "four passengers and the driver escaped without harm",
-      "Annotation": "Germany"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Germany",
-      "Locations": [
-        "Reken in M\u00fcnsterland"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "four passengers and the driver escaped without harm",
-      "Annotation": "Germany"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Netherlands"
-      ],
-      "Start_Date": "3 January 2012",
-      "End_Date": "9 January 2012",
-      "Num": "2 million euros",
-      "Num_Unit": "EUR",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Netherlands",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "3 January 2012",
-      "End_Date": "9 January 2012",
-      "Num": "2 million euros",
-      "Num_Unit": "EUR",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$350 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "Netherlands"
-      ],
-      "Start_Date": "3 January 2012",
-      "End_Date": "9 January 2012",
-      "Num": "2 million euros",
-      "Num_Unit": "EUR",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United Kingdom",
-      "Locations": [
-        "Nottinghamshire",
-        "Lincolnshire",
-        "Southern Scotland",
-        "Edinburgh"
-      ],
-      "Start_Date": "3 January 2012",
-      "End_Date": "9 January 2012",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "British Isles"
-    },
-    {
-      "Administrative_Area": "Netherlands",
-      "Locations": [
-        "Hook of Holland",
-        "Rotterdam",
-        "Amsterdam Schiphol airport",
-        "Islands off the Dutch coast",
-        "northern Netherlands"
-      ],
-      "Start_Date": "3 January 2012",
-      "End_Date": "9 January 2012",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Netherlands"
-    },
-    {
-      "Administrative_Area": "Germany",
-      "Locations": [
-        "Nord Rhein Westphalia",
-        "Cologne",
-        "Saxony",
-        "middle Saxony",
-        "Bautzen",
-        "Regensburg",
-        "Munich",
-        "Reken in M\u00fcnsterland",
-        "Geltendorf, Augsburg"
-      ],
-      "Start_Date": "3 January 2012",
-      "End_Date": "9 January 2012",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Germany"
-    },
-    {
-      "Administrative_Area": "Belgium",
-      "Locations": [
-        "Quenast, Walloon Brabant",
-        "Li\u00e8ge Airport"
-      ],
-      "Start_Date": "3 January 2012",
-      "End_Date": "9 January 2012",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Belgium, France"
-    },
-    {
-      "Administrative_Area": "France",
-      "Locations": [
-        "Nord Pas De Calais",
-        "Calais",
-        "\u00c9taples",
-        "Haute-Savoie",
-        "Is\u00e8re",
-        "Savoy"
-      ],
-      "Start_Date": "3 January 2012",
-      "End_Date": "9 January 2012",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Belgium, France"
-    },
-    {
-      "Administrative_Area": "Switzerland",
-      "Locations": [
-        "Zurich",
-        "Great St Bernard Pass"
-      ],
-      "Start_Date": "3 January 2012",
-      "End_Date": "9 January 2012",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Central Europe and European Alps"
-    },
-    {
-      "Administrative_Area": "Austria",
-      "Locations": [
-        "western Tyrol",
-        "Vorarlberg",
-        "Innsbruck",
-        "Hochfilzen",
-        "Langen am Arlberg",
-        "Ischgl"
-      ],
-      "Start_Date": "3 January 2012",
-      "End_Date": "9 January 2012",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Central Europe and European Alps"
-    }
-  ],
-  "Main_Event": "Extratropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood|Blizzard|Hail",
-  "Hazards_Annotation": "Info_Box|Netherlands|Germany|Central Europe and European Alps",
-  "Start_Date": "3 January 2012",
-  "End_Date": "9 January 2012",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Iceland",
-    "Ireland",
-    "United Kingdom",
-    "Netherlands",
-    "Belgium",
-    "France",
-    "Germany",
-    "Denmark",
-    "Austria",
-    "Switzerland"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Netherlands"
+        ],
+        "Start_Date": "3 January 2012",
+        "End_Date": "9 January 2012",
+        "Num": "2 million euros",
+        "Num_Unit": "EUR",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United Kingdom",
+        "Locations": [
+          "Nottinghamshire",
+          "Lincolnshire",
+          "Southern Scotland",
+          "Edinburgh"
+        ],
+        "Start_Date": "3 January 2012",
+        "End_Date": "9 January 2012",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "British Isles"
+      },
+      {
+        "Administrative_Area": "Netherlands",
+        "Locations": [
+          "Hook of Holland",
+          "Rotterdam",
+          "Amsterdam Schiphol airport",
+          "Islands off the Dutch coast",
+          "northern Netherlands"
+        ],
+        "Start_Date": "3 January 2012",
+        "End_Date": "9 January 2012",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Netherlands"
+      },
+      {
+        "Administrative_Area": "Germany",
+        "Locations": [
+          "Nord Rhein Westphalia",
+          "Cologne",
+          "Saxony",
+          "middle Saxony",
+          "Bautzen",
+          "Regensburg",
+          "Munich",
+          "Reken in M\u00fcnsterland",
+          "Geltendorf, Augsburg"
+        ],
+        "Start_Date": "3 January 2012",
+        "End_Date": "9 January 2012",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Germany"
+      },
+      {
+        "Administrative_Area": "Belgium",
+        "Locations": [
+          "Quenast, Walloon Brabant",
+          "Li\u00e8ge Airport"
+        ],
+        "Start_Date": "3 January 2012",
+        "End_Date": "9 January 2012",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Belgium, France"
+      },
+      {
+        "Administrative_Area": "France",
+        "Locations": [
+          "Nord Pas De Calais",
+          "Calais",
+          "\u00c9taples",
+          "Haute-Savoie",
+          "Is\u00e8re",
+          "Savoy"
+        ],
+        "Start_Date": "3 January 2012",
+        "End_Date": "9 January 2012",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Belgium, France"
+      },
+      {
+        "Administrative_Area": "Switzerland",
+        "Locations": [
+          "Zurich",
+          "Great St Bernard Pass"
+        ],
+        "Start_Date": "3 January 2012",
+        "End_Date": "9 January 2012",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Central Europe and European Alps"
+      },
+      {
+        "Administrative_Area": "Austria",
+        "Locations": [
+          "western Tyrol",
+          "Vorarlberg",
+          "Innsbruck",
+          "Hochfilzen",
+          "Langen am Arlberg",
+          "Ischgl"
+        ],
+        "Start_Date": "3 January 2012",
+        "End_Date": "9 January 2012",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Central Europe and European Alps"
+      }
+    ],
+    "Main_Event": "Extratropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood|Blizzard|Hail",
+    "Hazards_Annotation": "Info_Box|Netherlands|Germany|Central Europe and European Alps",
+    "Start_Date": "3 January 2012",
+    "End_Date": "9 January 2012",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Iceland",
+      "Ireland",
+      "United Kingdom",
+      "Netherlands",
+      "Belgium",
+      "France",
+      "Germany",
+      "Denmark",
+      "Austria",
+      "Switzerland"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

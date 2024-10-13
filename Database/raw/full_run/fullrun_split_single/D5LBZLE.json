@@ -1,587 +1,589 @@
-{
-  "Event_ID": "D5LBZLE",
-  "Sources": "https://en.wikipedia.org/wiki/Cyclone_Dovi_(2022)",
-  "Event_Names": "Cyclone Dovi (2022)",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": "Vanuatu",
-      "Start_Date": "9 February 2022",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
+[
+  {
+    "Event_ID": "D5LBZLE",
+    "Sources": "https://en.wikipedia.org/wiki/Cyclone_Dovi_(2022)",
+    "Event_Names": "Cyclone Dovi (2022)",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Norfolk Island",
-      "Start_Date": "11 February 2022",
-      "End_Date": "12 February 2022",
-      "Num": "NULL",
-      "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Vanuatu",
+        "Start_Date": "9 February 2022",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
+      },
+      {
+        "Administrative_Areas": "Norfolk Island",
+        "Start_Date": "11 February 2022",
+        "End_Date": "12 February 2022",
+        "Num": "NULL",
+        "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
+      },
+      {
+        "Administrative_Areas": "New Caledonia",
+        "Start_Date": "9 February 2022",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
+      },
+      {
+        "Administrative_Areas": "New Zealand",
+        "Start_Date": "13 February 2022",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "New Zealand"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Vanuatu",
+        "Locations": [
+          "Teouma Valley",
+          "Port Vila",
+          "Efate",
+          "Erromango River"
+        ],
+        "Start_Date": "9 February 2022",
+        "End_Date": "NULL",
+        "Num": "Over 400 people",
+        "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
+      },
+      {
+        "Administrative_Area": "New Caledonia",
+        "Locations": [
+          "Yahou\u00e9",
+          "Noum\u00e9a",
+          "southern part of New Caledonia",
+          "Isle of Pines",
+          "Goro",
+          "southern Grande Terre"
+        ],
+        "Start_Date": "9 February 2022",
+        "End_Date": "NULL",
+        "Num": "Over 100 families",
+        "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
+      },
+      {
+        "Administrative_Area": "New Zealand",
+        "Locations": [
+          "North Island",
+          "Auckland Harbour Bridge",
+          "Wellington",
+          "Cook Strait",
+          "State Highway 2 near Melling",
+          "Aro Valley",
+          "Plimmerton",
+          "Mount Kaukau",
+          "Evans Bay",
+          "Wadestown",
+          "Houghton Bay",
+          "Hornsey",
+          "Melrose",
+          "M\u0101kara",
+          "Ohariu",
+          "Carterton",
+          "Raglan",
+          "Hamilton",
+          "Wairarapa",
+          "Masterton",
+          "Featherston",
+          "Martinborough",
+          "Taranaki",
+          "H\u0101wera",
+          "New Plymouth",
+          "\u014cakura",
+          "Port Taranaki",
+          "Piha",
+          "Auckland Region",
+          "Great Barrier Island",
+          "Russell",
+          "Opua",
+          "Kauri",
+          "Whang\u0101rei",
+          "Marlborough District",
+          "Kaik\u014dura",
+          "Waipara",
+          "South Island",
+          "Westport"
+        ],
+        "Start_Date": "13 February 2022",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "New Zealand"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "New Caledonia",
-      "Start_Date": "9 February 2022",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Vanuatu",
+        "Start_Date": "9 February 2022",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
+      },
+      {
+        "Administrative_Areas": "New Caledonia",
+        "Start_Date": "9 February 2022",
+        "End_Date": "12 February 2022",
+        "Num": "NULL",
+        "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
+      },
+      {
+        "Administrative_Areas": "New Zealand",
+        "Start_Date": "13 February 2022",
+        "End_Date": "14 February 2022",
+        "Num": "NULL",
+        "Annotation": "New Zealand"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Vanuatu",
+        "Locations": [
+          "Teouma Valley",
+          "Port Vila",
+          "Efate"
+        ],
+        "Start_Date": "9 February 2022",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
+      },
+      {
+        "Administrative_Area": "New Caledonia",
+        "Locations": [
+          "Yahou\u00e9",
+          "Noum\u00e9a",
+          "southern New Caledonia"
+        ],
+        "Start_Date": "9 February 2022",
+        "End_Date": "12 February 2022",
+        "Num": "NULL",
+        "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
+      },
+      {
+        "Administrative_Area": "New Zealand",
+        "Locations": [
+          "Wellington",
+          "Aro Valley",
+          "Plimmerton",
+          "Evans Bay",
+          "Wadestown",
+          "Houghton Bay",
+          "Hornsey",
+          "Melrose",
+          "M\u0101kara",
+          "Ohariu",
+          "Carterton",
+          "H\u0101wera",
+          "New Plymouth",
+          "\u014cakura",
+          "Russell",
+          "Opua",
+          "Kauri",
+          "Whang\u0101rei",
+          "Marlborough District",
+          "Kaik\u014dura",
+          "Waipara",
+          "Westport"
+        ],
+        "Start_Date": "13 February 2022",
+        "End_Date": "14 February 2022",
+        "Num": "NULL",
+        "Annotation": "New Zealand"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "1 indirect",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Areas": "New Zealand",
-      "Start_Date": "13 February 2022",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "New Zealand"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Vanuatu",
-      "Locations": [
-        "Teouma Valley",
-        "Port Vila",
-        "Efate",
-        "Erromango River"
-      ],
-      "Start_Date": "9 February 2022",
-      "End_Date": "NULL",
-      "Num": "Over 400 people",
-      "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "New Caledonia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "New Caledonia",
+        "Locations": [
+          "southern Grande Terre"
+        ],
+        "Start_Date": "12 February 2022",
+        "End_Date": "12 February 2022",
+        "Num": "1",
+        "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "New Caledonia",
-      "Locations": [
-        "Yahou\u00e9",
-        "Noum\u00e9a",
-        "southern part of New Caledonia",
-        "Isle of Pines",
-        "Goro",
-        "southern Grande Terre"
-      ],
-      "Start_Date": "9 February 2022",
-      "End_Date": "NULL",
-      "Num": "Over 100 families",
-      "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Vanuatu",
+        "Start_Date": "9 February 2022",
+        "End_Date": "NULL",
+        "Num": "Over 400 people",
+        "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
+      },
+      {
+        "Administrative_Areas": "New Caledonia",
+        "Start_Date": "10 February 2022",
+        "End_Date": "NULL",
+        "Num": "Over 100 families",
+        "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
+      },
+      {
+        "Administrative_Areas": "New Zealand",
+        "Start_Date": "13 February 2022",
+        "End_Date": "NULL",
+        "Num": "Hundreds of residents",
+        "Annotation": "New Zealand"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Vanuatu",
+        "Locations": [
+          "Teouma Valley",
+          "Port Vila",
+          "Efate"
+        ],
+        "Start_Date": "9 February 2022",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
+      },
+      {
+        "Administrative_Area": "New Caledonia",
+        "Locations": [
+          "Noum\u00e9a"
+        ],
+        "Start_Date": "10 February 2022",
+        "End_Date": "NULL",
+        "Num": "Over 100 families",
+        "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
+      },
+      {
+        "Administrative_Area": "New Zealand",
+        "Locations": [
+          "North Island",
+          "South Island",
+          "Wellington",
+          "Auckland Region",
+          "Northland Region",
+          "Marlborough District"
+        ],
+        "Start_Date": "13 February 2022",
+        "End_Date": "NULL",
+        "Num": "Hundreds of residents",
+        "Annotation": "New Zealand"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "New Zealand",
-      "Locations": [
-        "North Island",
-        "Auckland Harbour Bridge",
-        "Wellington",
-        "Cook Strait",
-        "State Highway 2 near Melling",
-        "Aro Valley",
-        "Plimmerton",
-        "Mount Kaukau",
-        "Evans Bay",
-        "Wadestown",
-        "Houghton Bay",
-        "Hornsey",
-        "Melrose",
-        "M\u0101kara",
-        "Ohariu",
-        "Carterton",
-        "Raglan",
-        "Hamilton",
-        "Wairarapa",
-        "Masterton",
-        "Featherston",
-        "Martinborough",
-        "Taranaki",
-        "H\u0101wera",
-        "New Plymouth",
-        "\u014cakura",
-        "Port Taranaki",
-        "Piha",
-        "Auckland Region",
-        "Great Barrier Island",
-        "Russell",
-        "Opua",
-        "Kauri",
-        "Whang\u0101rei",
-        "Marlborough District",
-        "Kaik\u014dura",
-        "Waipara",
-        "South Island",
-        "Westport"
-      ],
-      "Start_Date": "13 February 2022",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "New Zealand"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Vanuatu",
-      "Start_Date": "9 February 2022",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Vanuatu",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Over 400 people",
+        "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
+      },
+      {
+        "Administrative_Areas": "New Caledonia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Over 100 families",
+        "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
+      },
+      {
+        "Administrative_Areas": "New Zealand",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "New Zealand"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Vanuatu",
+        "Locations": [
+          "Teouma Valley"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
+      },
+      {
+        "Administrative_Area": "Vanuatu",
+        "Locations": [
+          "Port Vila",
+          "Efate",
+          "Other islands"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
+      },
+      {
+        "Administrative_Area": "New Caledonia",
+        "Locations": [
+          "Noum\u00e9a"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Over 100 families",
+        "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
+      },
+      {
+        "Administrative_Area": "New Zealand",
+        "Locations": [
+          "Plimmerton"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Four households",
+        "Annotation": "New Zealand"
+      },
+      {
+        "Administrative_Area": "New Zealand",
+        "Locations": [
+          "Evans Bay"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "New Zealand"
+      },
+      {
+        "Administrative_Area": "New Zealand",
+        "Locations": [
+          "Wadestown"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "One house",
+        "Annotation": "New Zealand"
+      },
+      {
+        "Administrative_Area": "New Zealand",
+        "Locations": [
+          "Houghton Bay"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "One house",
+        "Annotation": "New Zealand"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "New Caledonia",
-      "Start_Date": "9 February 2022",
-      "End_Date": "12 February 2022",
-      "Num": "NULL",
-      "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "New Zealand",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "New Zealand"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "New Zealand",
+        "Locations": [
+          "Raglan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "New Zealand"
+      },
+      {
+        "Administrative_Area": "New Zealand",
+        "Locations": [
+          "southern Grande Terre"
+        ],
+        "Start_Date": "12 February 2022",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "New Zealand",
-      "Start_Date": "13 February 2022",
-      "End_Date": "14 February 2022",
-      "Num": "NULL",
-      "Annotation": "New Zealand"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Vanuatu",
-      "Locations": [
-        "Teouma Valley",
-        "Port Vila",
-        "Efate"
-      ],
-      "Start_Date": "9 February 2022",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "New Zealand",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$54,840,000",
+        "Num_Unit": "NZD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "New Zealand"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "New Zealand",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$54,840,000",
+        "Num_Unit": "NZD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "New Zealand"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$80 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "New Caledonia",
-      "Locations": [
-        "Yahou\u00e9",
-        "Noum\u00e9a",
-        "southern New Caledonia"
-      ],
-      "Start_Date": "9 February 2022",
-      "End_Date": "12 February 2022",
-      "Num": "NULL",
-      "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
-    },
-    {
-      "Administrative_Area": "New Zealand",
-      "Locations": [
-        "Wellington",
-        "Aro Valley",
-        "Plimmerton",
-        "Evans Bay",
-        "Wadestown",
-        "Houghton Bay",
-        "Hornsey",
-        "Melrose",
-        "M\u0101kara",
-        "Ohariu",
-        "Carterton",
-        "H\u0101wera",
-        "New Plymouth",
-        "\u014cakura",
-        "Russell",
-        "Opua",
-        "Kauri",
-        "Whang\u0101rei",
-        "Marlborough District",
-        "Kaik\u014dura",
-        "Waipara",
-        "Westport"
-      ],
-      "Start_Date": "13 February 2022",
-      "End_Date": "14 February 2022",
-      "Num": "NULL",
-      "Annotation": "New Zealand"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "1 indirect",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "New Caledonia",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "New Caledonia",
-      "Locations": [
-        "southern Grande Terre"
-      ],
-      "Start_Date": "12 February 2022",
-      "End_Date": "12 February 2022",
-      "Num": "1",
-      "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": "Vanuatu",
-      "Start_Date": "9 February 2022",
-      "End_Date": "NULL",
-      "Num": "Over 400 people",
-      "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
-    },
-    {
-      "Administrative_Areas": "New Caledonia",
-      "Start_Date": "10 February 2022",
-      "End_Date": "NULL",
-      "Num": "Over 100 families",
-      "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
-    },
-    {
-      "Administrative_Areas": "New Zealand",
-      "Start_Date": "13 February 2022",
-      "End_Date": "NULL",
-      "Num": "Hundreds of residents",
-      "Annotation": "New Zealand"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Vanuatu",
-      "Locations": [
-        "Teouma Valley",
-        "Port Vila",
-        "Efate"
-      ],
-      "Start_Date": "9 February 2022",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
-    },
-    {
-      "Administrative_Area": "New Caledonia",
-      "Locations": [
-        "Noum\u00e9a"
-      ],
-      "Start_Date": "10 February 2022",
-      "End_Date": "NULL",
-      "Num": "Over 100 families",
-      "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
-    },
-    {
-      "Administrative_Area": "New Zealand",
-      "Locations": [
-        "North Island",
-        "South Island",
-        "Wellington",
-        "Auckland Region",
-        "Northland Region",
-        "Marlborough District"
-      ],
-      "Start_Date": "13 February 2022",
-      "End_Date": "NULL",
-      "Num": "Hundreds of residents",
-      "Annotation": "New Zealand"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Vanuatu",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Over 400 people",
-      "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
-    },
-    {
-      "Administrative_Areas": "New Caledonia",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Over 100 families",
-      "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
-    },
-    {
-      "Administrative_Areas": "New Zealand",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "New Zealand"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Vanuatu",
-      "Locations": [
-        "Teouma Valley"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
-    },
-    {
-      "Administrative_Area": "Vanuatu",
-      "Locations": [
-        "Port Vila",
-        "Efate",
-        "Other islands"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
-    },
-    {
-      "Administrative_Area": "New Caledonia",
-      "Locations": [
-        "Noum\u00e9a"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Over 100 families",
-      "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
-    },
-    {
-      "Administrative_Area": "New Zealand",
-      "Locations": [
-        "Plimmerton"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Four households",
-      "Annotation": "New Zealand"
-    },
-    {
-      "Administrative_Area": "New Zealand",
-      "Locations": [
-        "Evans Bay"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "New Zealand"
-    },
-    {
-      "Administrative_Area": "New Zealand",
-      "Locations": [
-        "Wadestown"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "One house",
-      "Annotation": "New Zealand"
-    },
-    {
-      "Administrative_Area": "New Zealand",
-      "Locations": [
-        "Houghton Bay"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "One house",
-      "Annotation": "New Zealand"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "New Zealand",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "New Zealand"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "New Zealand",
-      "Locations": [
-        "Raglan"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "New Zealand"
-    },
-    {
-      "Administrative_Area": "New Zealand",
-      "Locations": [
-        "southern Grande Terre"
-      ],
-      "Start_Date": "12 February 2022",
-      "End_Date": "NULL",
-      "Num": "2",
-      "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": "New Zealand",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$54,840,000",
-      "Num_Unit": "NZD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "New Zealand"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "New Zealand",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$54,840,000",
-      "Num_Unit": "NZD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "New Zealand"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$80 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "Vanuatu",
-        "Norfolk Island",
-        "New Caledonia",
-        "New Zealand"
-      ],
-      "Start_Date": "8 February 2022",
-      "End_Date": "13 February 2022",
-      "Num": "$80 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impacts"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Vanuatu",
-      "Locations": [
-        "Teouma Valley",
-        "Port Vila",
-        "Efate",
-        "Erromango River"
-      ],
-      "Start_Date": "8 February 2022",
-      "End_Date": "13 February 2022",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
-    },
-    {
-      "Administrative_Area": "New Caledonia",
-      "Locations": [
-        "Yahou\u00e9",
-        "Noum\u00e9a",
-        "Isle of Pines",
-        "Goro",
-        "southern Grande Terre"
-      ],
-      "Start_Date": "8 February 2022",
-      "End_Date": "13 February 2022",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
-    },
-    {
-      "Administrative_Area": "New Zealand",
-      "Locations": [
-        "North Island",
-        "Auckland",
-        "Wellington",
-        "Kelburn",
-        "State Highway 2",
-        "State Highway 1",
-        "Aro Valley",
-        "Plimmerton",
-        "Mount Kaukau",
-        "Evans Bay",
-        "Wadestown",
-        "Houghton Bay",
-        "Hornsey",
-        "Melrose",
-        "M\u0101kara",
-        "Ohariu",
-        "Carterton",
-        "Raglan",
-        "Hamilton",
-        "Waipoua River",
-        "Wairarapa",
-        "Masterton",
-        "Featherston",
-        "Martinborough",
-        "Taranaki",
-        "H\u0101wera",
-        "New Plymouth",
-        "\u014cakura",
-        "Port Taranaki",
-        "Piha",
-        "Auckland Region",
-        "Great Barrier Island",
-        "Russell",
-        "Opua",
-        "Kauri",
-        "Whang\u0101rei",
-        "Marlborough District",
-        "Kaik\u014dura",
-        "Waipara",
-        "Westport"
-      ],
-      "Start_Date": "8 February 2022",
-      "End_Date": "13 February 2022",
-      "Num": "$54,840,000",
-      "Num_Unit": "NZD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "New Zealand"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Impacts",
-  "Start_Date": "2022-02-08",
-  "End_Date": "2022-02-13",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Vanuatu",
-    "New Caledonia",
-    "Norfolk Island",
-    "New Zealand"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Vanuatu",
+          "Norfolk Island",
+          "New Caledonia",
+          "New Zealand"
+        ],
+        "Start_Date": "8 February 2022",
+        "End_Date": "13 February 2022",
+        "Num": "$80 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impacts"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Vanuatu",
+        "Locations": [
+          "Teouma Valley",
+          "Port Vila",
+          "Efate",
+          "Erromango River"
+        ],
+        "Start_Date": "8 February 2022",
+        "End_Date": "13 February 2022",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
+      },
+      {
+        "Administrative_Area": "New Caledonia",
+        "Locations": [
+          "Yahou\u00e9",
+          "Noum\u00e9a",
+          "Isle of Pines",
+          "Goro",
+          "southern Grande Terre"
+        ],
+        "Start_Date": "8 February 2022",
+        "End_Date": "13 February 2022",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Vanuatu, Norfolk Island, and New Caledonia"
+      },
+      {
+        "Administrative_Area": "New Zealand",
+        "Locations": [
+          "North Island",
+          "Auckland",
+          "Wellington",
+          "Kelburn",
+          "State Highway 2",
+          "State Highway 1",
+          "Aro Valley",
+          "Plimmerton",
+          "Mount Kaukau",
+          "Evans Bay",
+          "Wadestown",
+          "Houghton Bay",
+          "Hornsey",
+          "Melrose",
+          "M\u0101kara",
+          "Ohariu",
+          "Carterton",
+          "Raglan",
+          "Hamilton",
+          "Waipoua River",
+          "Wairarapa",
+          "Masterton",
+          "Featherston",
+          "Martinborough",
+          "Taranaki",
+          "H\u0101wera",
+          "New Plymouth",
+          "\u014cakura",
+          "Port Taranaki",
+          "Piha",
+          "Auckland Region",
+          "Great Barrier Island",
+          "Russell",
+          "Opua",
+          "Kauri",
+          "Whang\u0101rei",
+          "Marlborough District",
+          "Kaik\u014dura",
+          "Waipara",
+          "Westport"
+        ],
+        "Start_Date": "8 February 2022",
+        "End_Date": "13 February 2022",
+        "Num": "$54,840,000",
+        "Num_Unit": "NZD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "New Zealand"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Impacts",
+    "Start_Date": "2022-02-08",
+    "End_Date": "2022-02-13",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Vanuatu",
+      "New Caledonia",
+      "Norfolk Island",
+      "New Zealand"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

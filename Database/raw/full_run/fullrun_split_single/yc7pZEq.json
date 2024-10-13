@@ -1,963 +1,965 @@
-{
-  "Event_ID": "yc7pZEq",
-  "Sources": "https://en.wikipedia.org/wiki/Typhoon_Goni",
-  "Event_Names": "Typhoon Goni",
-  "Total_Summary_Affected": {
-    "Total_Affected": "68.6 million",
-    "Total_Affected_Annotation": "Philippines"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Philippines"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1,612,893 individuals",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": [
-        "Vietnam"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Vietnam"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "346,000 individuals",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Aurora"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "9,747 individuals",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Legazpi"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Bicol"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Guinobatan",
-        "Tabaco",
-        "Santo Domingo",
-        "Camalig"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Bicol"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Catanduanes"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Laguna de Bay"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3,000 families",
-      "Annotation": "Calabarzon"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Batangas City"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "300 families",
-      "Annotation": "Calabarzon"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Marinduque"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mimaropa"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Oriental Mindoro"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mimaropa"
-    },
-    {
-      "Administrative_Area": "Vietnam",
-      "Locations": [
-        "Qu\u1ea3ng Ng\u00e3i",
-        "Qu\u1ea3ng Nam Province",
-        "B\u00ecnh \u0110\u1ecbnh"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1,074 houses",
-      "Annotation": "Vietnam"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": "Vietnam",
-      "Start_Date": "November 5, 2020",
-      "End_Date": "November 6, 2020",
-      "Num": "NULL",
-      "Annotation": "Vietnam"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Catanduanes"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "10,000 or about 65% of houses made of light materials destroyed, and 3,000 or 20% of larger houses either destroyed or damaged",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Pandan"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "222 partially damaged houses",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "Two evacuation centers lost their roofs",
-      "Annotation": "Bicol"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "226 schools",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "7,169 learning materials and 194 computer sets",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "October 31, 2020",
-      "End_Date": "November 1, 2020",
-      "Num": "NULL",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Vietnam",
-      "Locations": [
-        "Qu\u1ea3ng Nam Province"
-      ],
-      "Start_Date": "November 5, 2020",
-      "End_Date": "November 6, 2020",
-      "Num": "Twenty houses in Qu\u1ea3ng Nam Province collapsed into a river and a school was damaged",
-      "Annotation": "Vietnam"
-    },
-    {
-      "Administrative_Area": "Vietnam",
-      "Locations": [
-        "B\u00ecnh \u0110\u1ecbnh"
-      ],
-      "Start_Date": "November 5, 2020",
-      "End_Date": "November 6, 2020",
-      "Num": "22 houses and infrastructures were destroyed by landslides",
-      "Annotation": "Vietnam"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "32",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "31",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": "Vietnam",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Vietnam"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "14",
-      "Annotation": "Bicol"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Catanduanes"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "6",
-      "Annotation": "Bicol"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Oriental Mindoro"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Mimaropa"
-    },
-    {
-      "Administrative_Area": "Vietnam",
-      "Locations": [
-        "Qu\u1ea3ng Ng\u00e3i"
-      ],
-      "Start_Date": "November 6",
-      "End_Date": "November 6",
-      "Num": "1",
-      "Annotation": "Vietnam"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "390,000",
-    "Total_Displaced_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Philippines"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1,612,893",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "390,028",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Aurora"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "9,747",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Laguna de Bay"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "3,000 families",
-      "Annotation": "Calabarzon"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Batangas City"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "300 families",
-      "Annotation": "Calabarzon"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Marinduque"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mimaropa"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1,612,893 individuals over 6 regions were affected by the typhoon",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Areas": "Vietnam",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Vietnam"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "390,028 individuals were displaced from their homes",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Aurora"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "9,747 individuals were displaced from their homes",
-      "Annotation": "Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Laguna de Bay"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "nearly 3,000 families were forced to evacuate",
-      "Annotation": "Calabarzon"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Batangas City"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "at least 300 families",
-      "Annotation": "Calabarzon"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Marinduque"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mimaropa"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Catanduanes"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "10,000 or about 65% of houses made of light materials destroyed, and 3,000 or 20% of larger houses either destroyed or damaged",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "399",
-    "Total_Injuries_Annotation": "Philippines"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "Philippines"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "399",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "399",
-      "Annotation": "Philippines"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "NULL",
-      "Locations": "NULL",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$1.02 billion",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "\u20b120 billion",
-      "Num_Unit": "PHP",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "header-content pair article header: Typhoon Goni"
-    },
-    {
-      "Administrative_Areas": "Vietnam",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "\u20ab543 billion",
-      "Num_Unit": "VND",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "header-content pair article header: Typhoon Goni"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Cordillera Administrative Region",
-        "National Capital Region",
-        "Ilocos",
-        "Cagayan Valley",
-        "Central Luzon",
-        "Calabarzon",
-        "Mimaropa",
-        "Bicol",
-        "Eastern Visayas"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "\u20b18.47 billion",
-      "Num_Unit": "PHP",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "header: Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "\u20b112.9 billion",
-      "Num_Unit": "PHP",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "header: Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Bicol Region"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "\u20b15 billion",
-      "Num_Unit": "PHP",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "header: Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Catanduanes"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "\u20b1400 million",
-      "Num_Unit": "PHP",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "header: Philippines"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "Catanduanes"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "\u20b1200 million",
-      "Num_Unit": "PHP",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "header: Philippines"
-    },
-    {
-      "Administrative_Area": "Vietnam",
-      "Locations": [
-        "B\u00ecnh \u0110\u1ecbnh Province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "\u20ab543 billion",
-      "Num_Unit": "VND",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "header: Vietnam"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Philippines|Bicol|Calabarzon|Mimaropa|Vietnam",
-  "Time_Information": {
-    "Start_Date": "October 26, 2020",
-    "End_Date": "November 6, 2020",
-    "Time_Annotation": "Info_Box"
-  },
-  "Administrative_Areas": {
-    "Administrative_Areas": [
-      "Philippines",
-      "Vietnam",
-      "Cambodia",
-      "Laos"
+[
+  {
+    "Event_ID": "yc7pZEq",
+    "Sources": "https://en.wikipedia.org/wiki/Typhoon_Goni",
+    "Event_Names": "Typhoon Goni",
+    "Total_Summary_Affected": {
+      "Total_Affected": "68.6 million",
+      "Total_Affected_Annotation": "Philippines"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,612,893 individuals",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": [
+          "Vietnam"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Vietnam"
+      }
     ],
-    "Administrative_Areas_Annotation": "Info_Box"
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "346,000 individuals",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Aurora"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "9,747 individuals",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Legazpi"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Bicol"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Guinobatan",
+          "Tabaco",
+          "Santo Domingo",
+          "Camalig"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Bicol"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Catanduanes"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Laguna de Bay"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3,000 families",
+        "Annotation": "Calabarzon"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Batangas City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "300 families",
+        "Annotation": "Calabarzon"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Marinduque"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mimaropa"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Oriental Mindoro"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mimaropa"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Qu\u1ea3ng Ng\u00e3i",
+          "Qu\u1ea3ng Nam Province",
+          "B\u00ecnh \u0110\u1ecbnh"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,074 houses",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "November 5, 2020",
+        "End_Date": "November 6, 2020",
+        "Num": "NULL",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Catanduanes"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "10,000 or about 65% of houses made of light materials destroyed, and 3,000 or 20% of larger houses either destroyed or damaged",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Pandan"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "222 partially damaged houses",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "Two evacuation centers lost their roofs",
+        "Annotation": "Bicol"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "226 schools",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "7,169 learning materials and 194 computer sets",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "October 31, 2020",
+        "End_Date": "November 1, 2020",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Qu\u1ea3ng Nam Province"
+        ],
+        "Start_Date": "November 5, 2020",
+        "End_Date": "November 6, 2020",
+        "Num": "Twenty houses in Qu\u1ea3ng Nam Province collapsed into a river and a school was damaged",
+        "Annotation": "Vietnam"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "B\u00ecnh \u0110\u1ecbnh"
+        ],
+        "Start_Date": "November 5, 2020",
+        "End_Date": "November 6, 2020",
+        "Num": "22 houses and infrastructures were destroyed by landslides",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "32",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "31",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "14",
+        "Annotation": "Bicol"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Catanduanes"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "6",
+        "Annotation": "Bicol"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Oriental Mindoro"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Mimaropa"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Qu\u1ea3ng Ng\u00e3i"
+        ],
+        "Start_Date": "November 6",
+        "End_Date": "November 6",
+        "Num": "1",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "390,000",
+      "Total_Displaced_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,612,893",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "390,028",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Aurora"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "9,747",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Laguna de Bay"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3,000 families",
+        "Annotation": "Calabarzon"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Batangas City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "300 families",
+        "Annotation": "Calabarzon"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Marinduque"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mimaropa"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,612,893 individuals over 6 regions were affected by the typhoon",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "390,028 individuals were displaced from their homes",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Aurora"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "9,747 individuals were displaced from their homes",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Laguna de Bay"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "nearly 3,000 families were forced to evacuate",
+        "Annotation": "Calabarzon"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Batangas City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 300 families",
+        "Annotation": "Calabarzon"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Marinduque"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mimaropa"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Catanduanes"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "10,000 or about 65% of houses made of light materials destroyed, and 3,000 or 20% of larger houses either destroyed or damaged",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "399",
+      "Total_Injuries_Annotation": "Philippines"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "399",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "399",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$1.02 billion",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "\u20b120 billion",
+        "Num_Unit": "PHP",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "header-content pair article header: Typhoon Goni"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "\u20ab543 billion",
+        "Num_Unit": "VND",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "header-content pair article header: Typhoon Goni"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Cordillera Administrative Region",
+          "National Capital Region",
+          "Ilocos",
+          "Cagayan Valley",
+          "Central Luzon",
+          "Calabarzon",
+          "Mimaropa",
+          "Bicol",
+          "Eastern Visayas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "\u20b18.47 billion",
+        "Num_Unit": "PHP",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "header: Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "\u20b112.9 billion",
+        "Num_Unit": "PHP",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "header: Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "\u20b15 billion",
+        "Num_Unit": "PHP",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "header: Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Catanduanes"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "\u20b1400 million",
+        "Num_Unit": "PHP",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "header: Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Catanduanes"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "\u20b1200 million",
+        "Num_Unit": "PHP",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "header: Philippines"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "B\u00ecnh \u0110\u1ecbnh Province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "\u20ab543 billion",
+        "Num_Unit": "VND",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "header: Vietnam"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Philippines|Bicol|Calabarzon|Mimaropa|Vietnam",
+    "Time_Information": {
+      "Start_Date": "October 26, 2020",
+      "End_Date": "November 6, 2020",
+      "Time_Annotation": "Info_Box"
+    },
+    "Administrative_Areas": {
+      "Administrative_Areas": [
+        "Philippines",
+        "Vietnam",
+        "Cambodia",
+        "Laos"
+      ],
+      "Administrative_Areas_Annotation": "Info_Box"
+    }
   }
-}
+]

@@ -1,377 +1,379 @@
-{
-  "Event_ID": "ZrMpAES",
-  "Sources": "https://en.wikipedia.org/wiki/Sayre_Fire",
-  "Event_Names": "Sayre Fire",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "November 14, 2008",
-      "End_Date": "November 20, 2008",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Sylmar",
-        "Granada Hills",
-        "Olive View-UCLA Medical Center",
-        "Oakridge Mobile Home Park",
-        "San Fernando Valley",
-        "Porter Ranch",
-        "Stetson Ranch",
-        "El Cariso",
-        "Wilson Canyon Park",
-        "Placerita Canyon Nature Center",
-        "Whitney Canyon Park",
-        "Elsmere Canyon",
-        "O'Melveny Park",
-        "Veterans Memorial Park"
-      ],
-      "Start_Date": "November 14, 2008",
-      "End_Date": "November 20, 2008",
-      "Num": "more than 10,000 people",
-      "Annotation": "Evacuation and shelters"
+[
+  {
+    "Event_ID": "ZrMpAES",
+    "Sources": "https://en.wikipedia.org/wiki/Sayre_Fire",
+    "Event_Names": "Sayre Fire",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Olive View-UCLA Medical Center"
-      ],
-      "Start_Date": "November 15, 2008",
-      "End_Date": "November 15, 2008",
-      "Num": "200 patients",
-      "Annotation": "Flames surrounded Olive View Medical Center"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "November 14, 2008",
+        "End_Date": "November 20, 2008",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Sylmar",
+          "Granada Hills",
+          "Olive View-UCLA Medical Center",
+          "Oakridge Mobile Home Park",
+          "San Fernando Valley",
+          "Porter Ranch",
+          "Stetson Ranch",
+          "El Cariso",
+          "Wilson Canyon Park",
+          "Placerita Canyon Nature Center",
+          "Whitney Canyon Park",
+          "Elsmere Canyon",
+          "O'Melveny Park",
+          "Veterans Memorial Park"
+        ],
+        "Start_Date": "November 14, 2008",
+        "End_Date": "November 20, 2008",
+        "Num": "more than 10,000 people",
+        "Annotation": "Evacuation and shelters"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Olive View-UCLA Medical Center"
+        ],
+        "Start_Date": "November 15, 2008",
+        "End_Date": "November 15, 2008",
+        "Num": "200 patients",
+        "Annotation": "Flames surrounded Olive View Medical Center"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Oakridge Mobile Home Park"
+        ],
+        "Start_Date": "November 15, 2008",
+        "End_Date": "November 15, 2008",
+        "Num": "480 households",
+        "Annotation": "Devastation at Oakridge Mobile Home Park"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Downtown Los Angeles"
+        ],
+        "Start_Date": "November 15, 2008",
+        "End_Date": "November 15, 2008",
+        "Num": "8,000 protesters",
+        "Annotation": "Impact on gay marriage rally"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "more than 600 structures",
+      "Total_Buildings_Damaged_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Oakridge Mobile Home Park"
-      ],
-      "Start_Date": "November 15, 2008",
-      "End_Date": "November 15, 2008",
-      "Num": "480 households",
-      "Annotation": "Devastation at Oakridge Mobile Home Park"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "November 14, 2008",
+        "End_Date": "November 20, 2008",
+        "Num": "more than 600 structures",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Sylmar",
+          "Granada Hills"
+        ],
+        "Start_Date": "November 14, 2008",
+        "End_Date": "November 20, 2008",
+        "Num": "480 mobile homes, nine single-family homes, 104 outbuildings and 10 commercial buildings",
+        "Annotation": "Worst loss of homes due to fire in City of Los Angeles history"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Oakridge Mobile Home Park"
+        ],
+        "Start_Date": "November 15, 2008",
+        "End_Date": "November 15, 2008",
+        "Num": "480 of the park's 600 mobile homes",
+        "Annotation": "Devastation at Oakridge Mobile Home Park"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Olive View-UCLA Medical Center"
+        ],
+        "Start_Date": "November 15, 2008",
+        "End_Date": "November 15, 2008",
+        "Num": "more than 40 buildings on the Olive View campus",
+        "Annotation": "Flames surrounded Olive View Medical Center"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Veterans Memorial Park"
+        ],
+        "Start_Date": "November 14, 2008",
+        "End_Date": "November 20, 2008",
+        "Num": "2,000-square-foot (190 m2) administration building",
+        "Annotation": "Damage to park lands"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "NULL",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Downtown Los Angeles"
-      ],
-      "Start_Date": "November 15, 2008",
-      "End_Date": "November 15, 2008",
-      "Num": "8,000 protesters",
-      "Annotation": "Impact on gay marriage rally"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "more than 600 structures",
-    "Total_Buildings_Damaged_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "November 14, 2008",
-      "End_Date": "November 20, 2008",
-      "Num": "more than 600 structures",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Sylmar",
-        "Granada Hills"
-      ],
-      "Start_Date": "November 14, 2008",
-      "End_Date": "November 20, 2008",
-      "Num": "480 mobile homes, nine single-family homes, 104 outbuildings and 10 commercial buildings",
-      "Annotation": "Worst loss of homes due to fire in City of Los Angeles history"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Sylmar, Los Angeles, California"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "more than 10,000 people",
+      "Total_Displaced_Annotation": "Evacuation and shelters"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Oakridge Mobile Home Park"
-      ],
-      "Start_Date": "November 15, 2008",
-      "End_Date": "November 15, 2008",
-      "Num": "480 of the park's 600 mobile homes",
-      "Annotation": "Devastation at Oakridge Mobile Home Park"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "November 15, 2008",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Evacuation and shelters"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Sylmar",
+          "Granada Hills"
+        ],
+        "Start_Date": "November 15, 2008",
+        "End_Date": "NULL",
+        "Num": "more than 10,000 people",
+        "Annotation": "Evacuation and shelters"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Olive View-UCLA Medical Center"
-      ],
-      "Start_Date": "November 15, 2008",
-      "End_Date": "November 15, 2008",
-      "Num": "more than 40 buildings on the Olive View campus",
-      "Annotation": "Flames surrounded Olive View Medical Center"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "November 14, 2008",
+        "End_Date": "November 20, 2008",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Oakridge Mobile Home Park"
+        ],
+        "Start_Date": "November 15, 2008",
+        "End_Date": "November 15, 2008",
+        "Num": "480 mobile homes",
+        "Annotation": "Devastation at Oakridge Mobile Home Park"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Olive View-UCLA Medical Center"
+        ],
+        "Start_Date": "November 15, 2008",
+        "End_Date": "November 15, 2008",
+        "Num": "200 patients sheltered in place",
+        "Annotation": "Flames surrounded Olive View Medical Center"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "6",
+      "Total_Injuries_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Veterans Memorial Park"
-      ],
-      "Start_Date": "November 14, 2008",
-      "End_Date": "November 20, 2008",
-      "Num": "2,000-square-foot (190 m2) administration building",
-      "Annotation": "Damage to park lands"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "NULL",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Sylmar, Los Angeles, California"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "more than 10,000 people",
-    "Total_Displaced_Annotation": "Evacuation and shelters"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "November 15, 2008",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Evacuation and shelters"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Sylmar",
-        "Granada Hills"
-      ],
-      "Start_Date": "November 15, 2008",
-      "End_Date": "NULL",
-      "Num": "more than 10,000 people",
-      "Annotation": "Evacuation and shelters"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "November 14, 2008",
-      "End_Date": "November 20, 2008",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Oakridge Mobile Home Park"
-      ],
-      "Start_Date": "November 15, 2008",
-      "End_Date": "November 15, 2008",
-      "Num": "480 mobile homes",
-      "Annotation": "Devastation at Oakridge Mobile Home Park"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "November 14, 2008",
+        "End_Date": "November 20, 2008",
+        "Num": "6",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Sylmar, Los Angeles, California"
+        ],
+        "Start_Date": "November 14, 2008",
+        "End_Date": "November 20, 2008",
+        "Num": "6",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Olive View-UCLA Medical Center"
-      ],
-      "Start_Date": "November 15, 2008",
-      "End_Date": "November 15, 2008",
-      "Num": "200 patients sheltered in place",
-      "Annotation": "Flames surrounded Olive View Medical Center"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "6",
-    "Total_Injuries_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "November 14, 2008",
-      "End_Date": "November 20, 2008",
-      "Num": "6",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Sylmar, Los Angeles, California"
-      ],
-      "Start_Date": "November 14, 2008",
-      "End_Date": "November 20, 2008",
-      "Num": "6",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "November 14, 2008",
-      "End_Date": "November 20, 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Sylmar",
-        "Granada Hills",
-        "Oakridge Mobile Home Park",
-        "Olive View-UCLA Medical Center"
-      ],
-      "Start_Date": "November 14, 2008",
-      "End_Date": "November 20, 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "Unknown",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "NULL",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "November 14, 2008",
-      "End_Date": "November 20, 2008",
-      "Num": "Unknown",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Oakridge Mobile Home Park"
-      ],
-      "Start_Date": "November 14, 2008",
-      "End_Date": "November 20, 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Devastation at Oakridge Mobile Home Park"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "November 14, 2008",
+        "End_Date": "November 20, 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Sylmar",
+          "Granada Hills",
+          "Oakridge Mobile Home Park",
+          "Olive View-UCLA Medical Center"
+        ],
+        "Start_Date": "November 14, 2008",
+        "End_Date": "November 20, 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "Unknown",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Olive View-UCLA Medical Center"
-      ],
-      "Start_Date": "November 14, 2008",
-      "End_Date": "November 20, 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Flames surrounded Olive View Medical Center"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Sylmar ponds"
-      ],
-      "Start_Date": "November 14, 2008",
-      "End_Date": "November 20, 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Death of mosquito-killing fish"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Veterans Memorial Park"
-      ],
-      "Start_Date": "November 14, 2008",
-      "End_Date": "November 20, 2008",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Damage to park lands"
-    }
-  ],
-  "Main_Event": "Wildfire",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wildfire",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "November 14, 2008",
-  "End_Date": "November 20, 2008",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "United States"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "November 14, 2008",
+        "End_Date": "November 20, 2008",
+        "Num": "Unknown",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Oakridge Mobile Home Park"
+        ],
+        "Start_Date": "November 14, 2008",
+        "End_Date": "November 20, 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Devastation at Oakridge Mobile Home Park"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Olive View-UCLA Medical Center"
+        ],
+        "Start_Date": "November 14, 2008",
+        "End_Date": "November 20, 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Flames surrounded Olive View Medical Center"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Sylmar ponds"
+        ],
+        "Start_Date": "November 14, 2008",
+        "End_Date": "November 20, 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Death of mosquito-killing fish"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Veterans Memorial Park"
+        ],
+        "Start_Date": "November 14, 2008",
+        "End_Date": "November 20, 2008",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Damage to park lands"
+      }
+    ],
+    "Main_Event": "Wildfire",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wildfire",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "November 14, 2008",
+    "End_Date": "November 20, 2008",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "United States"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

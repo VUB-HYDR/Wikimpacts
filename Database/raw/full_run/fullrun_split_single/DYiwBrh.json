@@ -1,1101 +1,1103 @@
-{
-  "Event_ID": "DYiwBrh",
-  "Sources": "https://en.wikipedia.org/wiki/Hurricane_Helene",
-  "Event_Names": "Hurricane Helene",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "At least four million people lost power",
-      "Annotation": "United States"
+[
+  {
+    "Event_ID": "DYiwBrh",
+    "Sources": "https://en.wikipedia.org/wiki/Hurricane_Helene",
+    "Event_Names": "Hurricane Helene",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Over 120,000 customers lost power",
-      "Annotation": "Mexico"
-    },
-    {
-      "Administrative_Areas": "Cayman Islands",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "118 customers lost power",
-      "Annotation": "Cayman Islands"
-    },
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "Around 70,000 customers experienced power outages in Pinar del Rio, with another 160,000 residents affected in Artemisa",
-      "Annotation": "Cuba"
-    },
-    {
-      "Administrative_Areas": "Honduras",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "120 families were affected in the coastal town of Marcovia, Choluteca",
-      "Annotation": "Honduras"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Pinellas County, Florida",
-        "Tampa, Florida",
-        "Dixie County, Florida",
-        "Taylor County, Florida",
-        "Citrus County, Florida",
-        "Tampa Bay area, Florida",
-        "Clearwater Beach, Florida",
-        "Keaton Beach, Florida",
-        "Gulfport, Florida",
-        "Manatee County, Florida",
-        "Volusia County, Florida",
-        "Edgewater, Florida",
-        "Seminole County, Florida",
-        "Orange County, Florida",
-        "Apopka, Florida",
-        "Flagler County, Florida",
-        "Palm Coast, Florida",
-        "Palm Beach, Florida",
-        "Atlanta, Georgia",
-        "Buckhead, Georgia",
-        "Fulton County, Georgia",
-        "Coweta County, Georgia",
-        "Wheeler County, Georgia",
-        "Columbus, Georgia",
-        "Macon, Georgia",
-        "Augusta, Georgia",
-        "Rabun County, Georgia",
-        "White County, Georgia",
-        "Habersham County, Georgia",
-        "Towns County, Georgia",
-        "Valdosta, Georgia",
-        "Richmond County, Georgia",
-        "McDuffie County, Georgia",
-        "Colquitt County, Georgia",
-        "Laurens County, Georgia",
-        "Blackshear, Georgia",
-        "Jeff Davis County, Georgia",
-        "Liberty County, Georgia",
-        "Washington County, Georgia",
-        "Columbia County, Georgia",
-        "Pierce County, Georgia",
-        "Buncombe County, North Carolina",
-        "Claremont, North Carolina",
-        "Gastonia, North Carolina",
-        "Charlotte, North Carolina",
-        "Winston-Salem, North Carolina",
-        "Lake Lure, North Carolina",
-        "Swannanoa, North Carolina",
-        "Chimney Rock, North Carolina",
-        "Elkin, North Carolina",
-        "Morganton, North Carolina",
-        "Asheville, North Carolina",
-        "Boone, North Carolina",
-        "Busick, North Carolina",
-        "Spartanburg County, South Carolina",
-        "Greenville County, South Carolina",
-        "Aiken County, South Carolina",
-        "Anderson County, South Carolina",
-        "Laurens County, South Carolina",
-        "Newberry County, South Carolina",
-        "Chesterfield County, South Carolina",
-        "Saluda County, South Carolina",
-        "Greenwood County, South Carolina",
-        "Unicoi County, Tennessee",
-        "Erwin, Tennessee",
-        "Nolichucky River, Tennessee",
-        "Morristown, Tennessee",
-        "Newport, Tennessee",
-        "Nolichucky Dam, Tennessee",
-        "Kinser Bridge, Tennessee",
-        "Bumpus Cove, Tennessee",
-        "Craig County, Virginia",
-        "Tazewell County, Virginia",
-        "Grayson Highlands, Virginia",
-        "Galax, Virginia",
-        "New River Valley, Virginia",
-        "Albemarle County, Virginia",
-        "Madison County, Virginia",
-        "Greene County, Virginia",
-        "Pulaski County, Virginia",
-        "Giles County, Virginia",
-        "Independence, Virginia",
-        "Pittsylvania County, Virginia",
-        "LaRue County, Kentucky",
-        "Lexington, Kentucky",
-        "Morgan County, Kentucky",
-        "Jessamine County, Kentucky",
-        "Bluefield, West Virginia",
-        "Fayette County, West Virginia",
-        "Mercer County, West Virginia",
-        "Scioto County, Ohio",
-        "Cincinnati, Ohio",
-        "Geneva County, Alabama",
-        "Houston County, Alabama"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Quintana Roo",
-        "Isla Mujeres",
-        "Canc\u00fan",
-        "Cozumel",
-        "M\u00e9rida"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mexico"
-    },
-    {
-      "Administrative_Area": "Cayman Islands",
-      "Locations": [
-        "Grand Cayman",
-        "George Town"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Cayman Islands"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Pinar del R\u00edo Province",
-        "El Palenque",
-        "Havana",
-        "Pinar del R\u00edo",
-        "Mayabeque Province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Cuba"
-    },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "Valle",
-        "Choluteca",
-        "El Cubulero, Alianza, Valle",
-        "Marcovia, Choluteca",
-        "El Para\u00edso"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Honduras"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mexico"
-    },
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Cuba"
-    },
-    {
-      "Administrative_Areas": "Honduras",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Honduras"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Keaton Beach",
-        "Gulfport",
-        "Manatee County",
-        "Volusia County",
-        "Seminole County",
-        "Flagler County",
-        "Atlanta",
-        "Buckhead",
-        "Fulton County",
-        "Coweta County",
-        "Valdosta",
-        "Buncombe County",
-        "Charlotte",
-        "Winston-Salem",
-        "Lake Lure",
-        "Swannanoa",
-        "Chimney Rock",
-        "Elkin",
-        "Morganton",
-        "Asheville",
-        "Boone",
-        "Canton",
-        "Erwin",
-        "Morristown",
-        "Newport",
-        "Craig County",
-        "Tazewell County",
-        "Pulaski County",
-        "Giles County",
-        "Grayson County",
-        "Pittsylvania County",
-        "Bedford County",
-        "Scioto County",
-        "Jessamine County",
-        "Lexington",
-        "Bluefield",
-        "Fayette County",
-        "Mercer County"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "90% of homes in Keaton Beach; 24 businesses and 70 homes in Gulfport; 230,471 structures in Manatee County; several trees downed in Volusia County; a large tree fell into a duplex style home in Seminole County; a tree fell through a roof at a home in Flagler County; multiple surrounding apartment complexes in Buckhead; four homes in White County and Habersham County; 115 structures in Valdosta; 14 buildings in Rocky Mount; half of the village in Chimney Rock; downtown of Elkin; thousands of residents in Morganton; almost the entirety of Biltmore Village and the River Arts District in Asheville; four homes in White County and Habersham County; 45 homes in Pulaski County; more than 35 buildings in Giles County; most of US 21 along the mountainside outside of Independence in Grayson County; 30 structures in Pittsylvania County; 1,000 households in Scioto County; 45 homes in Pulaski County; more than 35 buildings in Giles County; most of US 21 along the mountainside outside of Independence in Grayson County; 30 structures in Pittsylvania County; 1,000 households in Scioto County",
-      "Annotation": "Florida; Georgia; North Carolina; Tennessee; Virginia; Elsewhere"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Isla Mujeres",
-        "Canc\u00fan",
-        "Cozumel",
-        "Yucat\u00e1n Peninsula"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mexico"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Pinar del R\u00edo Province",
-        "El Palenque",
-        "Havana",
-        "Mayabeque Province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Cuba"
-    },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "El Cubulero",
-        "Marcovia",
-        "El Para\u00edso"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Honduras"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": ">=191",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "191",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Areas": "North Carolina",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "95",
-      "Annotation": "North Carolina"
-    },
-    {
-      "Administrative_Areas": "South Carolina",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "36",
-      "Annotation": "South Carolina"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Pinellas County, Florida",
-        "Tampa, Florida",
-        "Dixie County, Florida",
-        "Valdosta, Georgia",
-        "Wheeler County, Georgia",
-        "Richmond County, Georgia",
-        "McDuffie County, Georgia",
-        "Colquitt County, Georgia",
-        "Laurens County, Georgia",
-        "Blackshear, Georgia",
-        "Jeff Davis County, Georgia",
-        "Liberty County, Georgia",
-        "Washington County, Georgia",
-        "Columbia County, Georgia",
-        "Pierce County, Georgia",
-        "Claremont, North Carolina",
-        "Gastonia, North Carolina",
-        "Charlotte, North Carolina",
-        "Spartanburg County, South Carolina",
-        "Greenville County, South Carolina",
-        "Aiken County, South Carolina",
-        "Anderson County, South Carolina",
-        "Laurens County, South Carolina",
-        "Newberry County, South Carolina",
-        "Chesterfield County, South Carolina",
-        "Saluda County, South Carolina",
-        "Greenwood County, South Carolina",
-        "Craig County, Virginia",
-        "Tazewell County, Virginia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Area": "North Carolina",
-      "Locations": [
-        "Buncombe County",
-        "Claremont",
-        "Gastonia",
-        "Charlotte",
-        "Swannanoa",
-        "Chimney Rock",
-        "Elkin",
-        "Morganton",
-        "Asheville",
-        "Boone",
-        "Busick"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "North Carolina"
-    },
-    {
-      "Administrative_Area": "South Carolina",
-      "Locations": [
-        "Spartanburg County",
-        "Greenville County",
-        "Aiken County",
-        "Anderson County",
-        "Laurens County",
-        "Newberry County",
-        "Chesterfield County",
-        "Saluda County",
-        "Greenwood County"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "South Carolina"
-    },
-    {
-      "Administrative_Area": "Georgia",
-      "Locations": [
-        "Valdosta",
-        "Wheeler County",
-        "Richmond County",
-        "McDuffie County",
-        "Colquitt County",
-        "Laurens County",
-        "Blackshear",
-        "Jeff Davis County",
-        "Liberty County",
-        "Washington County",
-        "Columbia County",
-        "Pierce County"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Georgia"
-    },
-    {
-      "Administrative_Area": "Florida",
-      "Locations": [
-        "Pinellas County",
-        "Tampa",
-        "Dixie County"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Florida"
-    },
-    {
-      "Administrative_Area": "Virginia",
-      "Locations": [
-        "Craig County",
-        "Tazewell County"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Virginia"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": "Mexico",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mexico"
-    },
-    {
-      "Administrative_Areas": "Cayman Islands",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Cayman Islands"
-    },
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Cuba"
-    },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Areas": "Honduras",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Honduras"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Isla Mujeres"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mexico"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Isla Holbox"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Mexico"
-    },
-    {
-      "Administrative_Area": "Cayman Islands",
-      "Locations": [
-        "Grand Cayman",
-        "Cayman Brac"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Cayman Islands"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Cuba"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Florida"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Florida"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Georgia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Georgia"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "North Carolina"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "North Carolina"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "South Carolina"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "South Carolina"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Tennessee"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Tennessee"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Virginia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Virginia"
-    },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "San Marcos de Col\u00f3n",
-        "El Cubulero",
-        "Marcovia",
-        "El Para\u00edso"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Honduras"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Honduras",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "50 people",
-      "Annotation": "Honduras"
-    },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Areas": "Cuba",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Cuba"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "El Para\u00edso"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "50 people",
-      "Annotation": "Honduras"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Keaton Beach",
-        "Gulfport",
-        "Manatee County",
-        "Swannanoa",
-        "Chimney Rock",
-        "Elkin",
-        "Morganton",
-        "Asheville",
-        "Biltmore Village",
-        "River Arts District",
-        "Boone",
-        "Watauga County",
-        "Busick"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": [
-        "90% of homes in Keaton Beach",
-        "24 businesses and 70 homes in Gulfport",
-        "230,471 structures in Manatee County",
-        "NULL",
-        "NULL",
-        "NULL",
-        "NULL",
-        "NULL",
-        "NULL",
-        "NULL",
-        "NULL",
-        "NULL",
-        "NULL"
-      ],
-      "Annotation": "Florida, North Carolina"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Pinar del R\u00edo Province",
-        "Artemisa",
-        "Havana",
-        "Pinar del R\u00edo",
-        "Mayabeque Province"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": [
-        "70,000 customers in Pinar del R\u00edo Province",
-        "160,000 residents in Artemisa",
-        "NULL",
-        "NULL",
-        "NULL"
-      ],
-      "Annotation": "Cuba"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "United States"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Rocky Mount"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "15",
-      "Annotation": "North Carolina"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Rocky Mount"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "4 critically",
-      "Annotation": "North Carolina"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Charlotte"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1 seriously",
-      "Annotation": "North Carolina"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Pittsylvania County"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "1",
-      "Annotation": "Virginia"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "US$3\u20136 billion",
-    "Total_Insured_Damage_Unit": "USD",
-    "Total_Insured_Damage_Inflation_Adjusted": "No",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "United States"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "US$3\u20136 billion",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "United States"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "NULL"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "US$3\u20136 billion",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "United States"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": ">$27.1 billion",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "US$20\u201334 billion",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "United States"
-    },
-    {
-      "Administrative_Areas": "United States",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "US$145\u2013160 billion",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "United States"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Manatee County, Florida"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$155.1 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Florida"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Georgia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Georgia"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "North Carolina"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "North Carolina"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "South Carolina"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "South Carolina"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Tennessee"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Tennessee"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Virginia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Virginia"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Kentucky"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Elsewhere"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "West Virginia"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Elsewhere"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Illinois"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Elsewhere"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Indiana"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Elsewhere"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Ohio"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Elsewhere"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Alabama"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Elsewhere"
-    },
-    {
-      "Administrative_Area": "Mexico",
-      "Locations": [
-        "Canc\u00fan",
-        "Cozumel",
-        "Isla Mujeres",
-        "Yucat\u00e1n Peninsula"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Mexico"
-    },
-    {
-      "Administrative_Area": "Honduras",
-      "Locations": [
-        "San Marcos de Col\u00f3n",
-        "El Cubulero",
-        "Alianza",
-        "Marcovia",
-        "El Para\u00edso"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Honduras"
-    },
-    {
-      "Administrative_Area": "Cayman Islands",
-      "Locations": [
-        "Grand Cayman",
-        "Cayman Brac",
-        "George Town"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Cayman Islands"
-    },
-    {
-      "Administrative_Area": "Cuba",
-      "Locations": [
-        "Pinar del R\u00edo",
-        "Havana",
-        "Mayabeque Province",
-        "Presa Herradura",
-        "Palacios",
-        "Punta del Este",
-        "Isla de la Juventud",
-        "Paso Real de San Diego",
-        "El Palenque",
-        "San Juan",
-        "Mart\u00ednez",
-        "Guane",
-        "Mantua",
-        "Minas de Matahambre",
-        "Artemisa",
-        "Bataban\u00f3",
-        "Melena del Sur",
-        "San Nicol\u00e1s de Bari"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Cuba"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood|Lightning",
-  "Hazards_Annotation": "Info_Box",
-  "Time_Information": {
-    "Start_Date": "September 24, 2024",
-    "End_Date": "September 29, 2024",
-    "Time_Annotation": "Info_Box"
-  },
-  "Administrative_Areas": {
-    "Administrative_Areas": [
-      "Mexico",
-      "Cayman Islands",
-      "Cuba",
-      "United States",
-      "Honduras"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "At least four million people lost power",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Over 120,000 customers lost power",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Areas": "Cayman Islands",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "118 customers lost power",
+        "Annotation": "Cayman Islands"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Around 70,000 customers experienced power outages in Pinar del Rio, with another 160,000 residents affected in Artemisa",
+        "Annotation": "Cuba"
+      },
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "120 families were affected in the coastal town of Marcovia, Choluteca",
+        "Annotation": "Honduras"
+      }
     ],
-    "Administrative_Areas_Annotation": "Info_Box"
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Pinellas County, Florida",
+          "Tampa, Florida",
+          "Dixie County, Florida",
+          "Taylor County, Florida",
+          "Citrus County, Florida",
+          "Tampa Bay area, Florida",
+          "Clearwater Beach, Florida",
+          "Keaton Beach, Florida",
+          "Gulfport, Florida",
+          "Manatee County, Florida",
+          "Volusia County, Florida",
+          "Edgewater, Florida",
+          "Seminole County, Florida",
+          "Orange County, Florida",
+          "Apopka, Florida",
+          "Flagler County, Florida",
+          "Palm Coast, Florida",
+          "Palm Beach, Florida",
+          "Atlanta, Georgia",
+          "Buckhead, Georgia",
+          "Fulton County, Georgia",
+          "Coweta County, Georgia",
+          "Wheeler County, Georgia",
+          "Columbus, Georgia",
+          "Macon, Georgia",
+          "Augusta, Georgia",
+          "Rabun County, Georgia",
+          "White County, Georgia",
+          "Habersham County, Georgia",
+          "Towns County, Georgia",
+          "Valdosta, Georgia",
+          "Richmond County, Georgia",
+          "McDuffie County, Georgia",
+          "Colquitt County, Georgia",
+          "Laurens County, Georgia",
+          "Blackshear, Georgia",
+          "Jeff Davis County, Georgia",
+          "Liberty County, Georgia",
+          "Washington County, Georgia",
+          "Columbia County, Georgia",
+          "Pierce County, Georgia",
+          "Buncombe County, North Carolina",
+          "Claremont, North Carolina",
+          "Gastonia, North Carolina",
+          "Charlotte, North Carolina",
+          "Winston-Salem, North Carolina",
+          "Lake Lure, North Carolina",
+          "Swannanoa, North Carolina",
+          "Chimney Rock, North Carolina",
+          "Elkin, North Carolina",
+          "Morganton, North Carolina",
+          "Asheville, North Carolina",
+          "Boone, North Carolina",
+          "Busick, North Carolina",
+          "Spartanburg County, South Carolina",
+          "Greenville County, South Carolina",
+          "Aiken County, South Carolina",
+          "Anderson County, South Carolina",
+          "Laurens County, South Carolina",
+          "Newberry County, South Carolina",
+          "Chesterfield County, South Carolina",
+          "Saluda County, South Carolina",
+          "Greenwood County, South Carolina",
+          "Unicoi County, Tennessee",
+          "Erwin, Tennessee",
+          "Nolichucky River, Tennessee",
+          "Morristown, Tennessee",
+          "Newport, Tennessee",
+          "Nolichucky Dam, Tennessee",
+          "Kinser Bridge, Tennessee",
+          "Bumpus Cove, Tennessee",
+          "Craig County, Virginia",
+          "Tazewell County, Virginia",
+          "Grayson Highlands, Virginia",
+          "Galax, Virginia",
+          "New River Valley, Virginia",
+          "Albemarle County, Virginia",
+          "Madison County, Virginia",
+          "Greene County, Virginia",
+          "Pulaski County, Virginia",
+          "Giles County, Virginia",
+          "Independence, Virginia",
+          "Pittsylvania County, Virginia",
+          "LaRue County, Kentucky",
+          "Lexington, Kentucky",
+          "Morgan County, Kentucky",
+          "Jessamine County, Kentucky",
+          "Bluefield, West Virginia",
+          "Fayette County, West Virginia",
+          "Mercer County, West Virginia",
+          "Scioto County, Ohio",
+          "Cincinnati, Ohio",
+          "Geneva County, Alabama",
+          "Houston County, Alabama"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Quintana Roo",
+          "Isla Mujeres",
+          "Canc\u00fan",
+          "Cozumel",
+          "M\u00e9rida"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Area": "Cayman Islands",
+        "Locations": [
+          "Grand Cayman",
+          "George Town"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Cayman Islands"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Pinar del R\u00edo Province",
+          "El Palenque",
+          "Havana",
+          "Pinar del R\u00edo",
+          "Mayabeque Province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Cuba"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Valle",
+          "Choluteca",
+          "El Cubulero, Alianza, Valle",
+          "Marcovia, Choluteca",
+          "El Para\u00edso"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Honduras"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Cuba"
+      },
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Honduras"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Keaton Beach",
+          "Gulfport",
+          "Manatee County",
+          "Volusia County",
+          "Seminole County",
+          "Flagler County",
+          "Atlanta",
+          "Buckhead",
+          "Fulton County",
+          "Coweta County",
+          "Valdosta",
+          "Buncombe County",
+          "Charlotte",
+          "Winston-Salem",
+          "Lake Lure",
+          "Swannanoa",
+          "Chimney Rock",
+          "Elkin",
+          "Morganton",
+          "Asheville",
+          "Boone",
+          "Canton",
+          "Erwin",
+          "Morristown",
+          "Newport",
+          "Craig County",
+          "Tazewell County",
+          "Pulaski County",
+          "Giles County",
+          "Grayson County",
+          "Pittsylvania County",
+          "Bedford County",
+          "Scioto County",
+          "Jessamine County",
+          "Lexington",
+          "Bluefield",
+          "Fayette County",
+          "Mercer County"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "90% of homes in Keaton Beach; 24 businesses and 70 homes in Gulfport; 230,471 structures in Manatee County; several trees downed in Volusia County; a large tree fell into a duplex style home in Seminole County; a tree fell through a roof at a home in Flagler County; multiple surrounding apartment complexes in Buckhead; four homes in White County and Habersham County; 115 structures in Valdosta; 14 buildings in Rocky Mount; half of the village in Chimney Rock; downtown of Elkin; thousands of residents in Morganton; almost the entirety of Biltmore Village and the River Arts District in Asheville; four homes in White County and Habersham County; 45 homes in Pulaski County; more than 35 buildings in Giles County; most of US 21 along the mountainside outside of Independence in Grayson County; 30 structures in Pittsylvania County; 1,000 households in Scioto County; 45 homes in Pulaski County; more than 35 buildings in Giles County; most of US 21 along the mountainside outside of Independence in Grayson County; 30 structures in Pittsylvania County; 1,000 households in Scioto County",
+        "Annotation": "Florida; Georgia; North Carolina; Tennessee; Virginia; Elsewhere"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Isla Mujeres",
+          "Canc\u00fan",
+          "Cozumel",
+          "Yucat\u00e1n Peninsula"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Pinar del R\u00edo Province",
+          "El Palenque",
+          "Havana",
+          "Mayabeque Province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Cuba"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "El Cubulero",
+          "Marcovia",
+          "El Para\u00edso"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Honduras"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": ">=191",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "191",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Areas": "North Carolina",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "95",
+        "Annotation": "North Carolina"
+      },
+      {
+        "Administrative_Areas": "South Carolina",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "36",
+        "Annotation": "South Carolina"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Pinellas County, Florida",
+          "Tampa, Florida",
+          "Dixie County, Florida",
+          "Valdosta, Georgia",
+          "Wheeler County, Georgia",
+          "Richmond County, Georgia",
+          "McDuffie County, Georgia",
+          "Colquitt County, Georgia",
+          "Laurens County, Georgia",
+          "Blackshear, Georgia",
+          "Jeff Davis County, Georgia",
+          "Liberty County, Georgia",
+          "Washington County, Georgia",
+          "Columbia County, Georgia",
+          "Pierce County, Georgia",
+          "Claremont, North Carolina",
+          "Gastonia, North Carolina",
+          "Charlotte, North Carolina",
+          "Spartanburg County, South Carolina",
+          "Greenville County, South Carolina",
+          "Aiken County, South Carolina",
+          "Anderson County, South Carolina",
+          "Laurens County, South Carolina",
+          "Newberry County, South Carolina",
+          "Chesterfield County, South Carolina",
+          "Saluda County, South Carolina",
+          "Greenwood County, South Carolina",
+          "Craig County, Virginia",
+          "Tazewell County, Virginia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "North Carolina",
+        "Locations": [
+          "Buncombe County",
+          "Claremont",
+          "Gastonia",
+          "Charlotte",
+          "Swannanoa",
+          "Chimney Rock",
+          "Elkin",
+          "Morganton",
+          "Asheville",
+          "Boone",
+          "Busick"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "North Carolina"
+      },
+      {
+        "Administrative_Area": "South Carolina",
+        "Locations": [
+          "Spartanburg County",
+          "Greenville County",
+          "Aiken County",
+          "Anderson County",
+          "Laurens County",
+          "Newberry County",
+          "Chesterfield County",
+          "Saluda County",
+          "Greenwood County"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "South Carolina"
+      },
+      {
+        "Administrative_Area": "Georgia",
+        "Locations": [
+          "Valdosta",
+          "Wheeler County",
+          "Richmond County",
+          "McDuffie County",
+          "Colquitt County",
+          "Laurens County",
+          "Blackshear",
+          "Jeff Davis County",
+          "Liberty County",
+          "Washington County",
+          "Columbia County",
+          "Pierce County"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Georgia"
+      },
+      {
+        "Administrative_Area": "Florida",
+        "Locations": [
+          "Pinellas County",
+          "Tampa",
+          "Dixie County"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Florida"
+      },
+      {
+        "Administrative_Area": "Virginia",
+        "Locations": [
+          "Craig County",
+          "Tazewell County"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Virginia"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Areas": "Cayman Islands",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Cayman Islands"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Cuba"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Honduras"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Isla Mujeres"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Isla Holbox"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Area": "Cayman Islands",
+        "Locations": [
+          "Grand Cayman",
+          "Cayman Brac"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Cayman Islands"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Cuba"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Florida"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Georgia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Georgia"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "North Carolina"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "South Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "South Carolina"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Tennessee"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Tennessee"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Virginia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Virginia"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "San Marcos de Col\u00f3n",
+          "El Cubulero",
+          "Marcovia",
+          "El Para\u00edso"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Honduras"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "50 people",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Cuba"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "El Para\u00edso"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "50 people",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Keaton Beach",
+          "Gulfport",
+          "Manatee County",
+          "Swannanoa",
+          "Chimney Rock",
+          "Elkin",
+          "Morganton",
+          "Asheville",
+          "Biltmore Village",
+          "River Arts District",
+          "Boone",
+          "Watauga County",
+          "Busick"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": [
+          "90% of homes in Keaton Beach",
+          "24 businesses and 70 homes in Gulfport",
+          "230,471 structures in Manatee County",
+          "NULL",
+          "NULL",
+          "NULL",
+          "NULL",
+          "NULL",
+          "NULL",
+          "NULL",
+          "NULL",
+          "NULL",
+          "NULL"
+        ],
+        "Annotation": "Florida, North Carolina"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Pinar del R\u00edo Province",
+          "Artemisa",
+          "Havana",
+          "Pinar del R\u00edo",
+          "Mayabeque Province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": [
+          "70,000 customers in Pinar del R\u00edo Province",
+          "160,000 residents in Artemisa",
+          "NULL",
+          "NULL",
+          "NULL"
+        ],
+        "Annotation": "Cuba"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "United States"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Rocky Mount"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "15",
+        "Annotation": "North Carolina"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Rocky Mount"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4 critically",
+        "Annotation": "North Carolina"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Charlotte"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1 seriously",
+        "Annotation": "North Carolina"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Pittsylvania County"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Virginia"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "US$3\u20136 billion",
+      "Total_Insured_Damage_Unit": "USD",
+      "Total_Insured_Damage_Inflation_Adjusted": "No",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "United States"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "US$3\u20136 billion",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "United States"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "US$3\u20136 billion",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "United States"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": ">$27.1 billion",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "US$20\u201334 billion",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "US$145\u2013160 billion",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "United States"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Manatee County, Florida"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$155.1 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Florida"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Georgia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Georgia"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "North Carolina"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "South Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "South Carolina"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Tennessee"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tennessee"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Virginia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Virginia"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Kentucky"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "West Virginia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Illinois"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Indiana"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Ohio"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Alabama"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Canc\u00fan",
+          "Cozumel",
+          "Isla Mujeres",
+          "Yucat\u00e1n Peninsula"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "San Marcos de Col\u00f3n",
+          "El Cubulero",
+          "Alianza",
+          "Marcovia",
+          "El Para\u00edso"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Area": "Cayman Islands",
+        "Locations": [
+          "Grand Cayman",
+          "Cayman Brac",
+          "George Town"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Cayman Islands"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Pinar del R\u00edo",
+          "Havana",
+          "Mayabeque Province",
+          "Presa Herradura",
+          "Palacios",
+          "Punta del Este",
+          "Isla de la Juventud",
+          "Paso Real de San Diego",
+          "El Palenque",
+          "San Juan",
+          "Mart\u00ednez",
+          "Guane",
+          "Mantua",
+          "Minas de Matahambre",
+          "Artemisa",
+          "Bataban\u00f3",
+          "Melena del Sur",
+          "San Nicol\u00e1s de Bari"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Cuba"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood|Lightning",
+    "Hazards_Annotation": "Info_Box",
+    "Time_Information": {
+      "Start_Date": "September 24, 2024",
+      "End_Date": "September 29, 2024",
+      "Time_Annotation": "Info_Box"
+    },
+    "Administrative_Areas": {
+      "Administrative_Areas": [
+        "Mexico",
+        "Cayman Islands",
+        "Cuba",
+        "United States",
+        "Honduras"
+      ],
+      "Administrative_Areas_Annotation": "Info_Box"
+    }
   }
-}
+]

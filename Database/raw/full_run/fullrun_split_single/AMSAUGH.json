@@ -1,483 +1,485 @@
-{
-  "Event_ID": "AMSAUGH",
-  "Sources": "https://en.wikipedia.org/wiki/April_1920_tornado_outbreak",
-  "Event_Names": "April 1920 tornado outbreak",
-  "Total_Summary_Affected": {
-    "Total_Affected": ">= 1,617",
-    "Total_Affected_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 19, 1920",
-      "End_Date": "April 21, 1920",
-      "Num": ">= 1,617",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Starkville",
-        "Cedarbluff",
-        "Aberdeen",
-        "Bexar",
-        "Hackleburg",
-        "Phil Campbell",
-        "Spruce Pine",
-        "Waco",
-        "Mehama"
-      ],
-      "Start_Date": "April 20, 1920",
-      "End_Date": "April 20, 1920",
-      "Num": "7 dead near Starkville; 10 dead near Cedarbluff; 22 dead in Aberdeen; 5 dead in Monroe County; 9 dead south of Bexar; 20 dead in Marion County; 19 dead near Waco quarry; 4 dead in Mehama; 1 dead southeast of Town Creek",
-      "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 19, 1920",
-      "End_Date": "April 21, 1920",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Starkville",
-        "Cedarbluff",
-        "Aberdeen",
-        "Bexar",
-        "Hackleburg",
-        "Phil Campbell",
-        "Spruce Pine",
-        "Waco",
-        "Mehama"
-      ],
-      "Start_Date": "April 19, 1920",
-      "End_Date": "April 21, 1920",
-      "Num": "more than 200 homes",
-      "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+[
+  {
+    "Event_ID": "AMSAUGH",
+    "Sources": "https://en.wikipedia.org/wiki/April_1920_tornado_outbreak",
+    "Event_Names": "April 1920 tornado outbreak",
+    "Total_Summary_Affected": {
+      "Total_Affected": ">= 1,617",
+      "Total_Affected_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Hackleburg"
-      ],
-      "Start_Date": "April 19, 1920",
-      "End_Date": "April 21, 1920",
-      "Num": "87 homes",
-      "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 19, 1920",
+        "End_Date": "April 21, 1920",
+        "Num": ">= 1,617",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Starkville",
+          "Cedarbluff",
+          "Aberdeen",
+          "Bexar",
+          "Hackleburg",
+          "Phil Campbell",
+          "Spruce Pine",
+          "Waco",
+          "Mehama"
+        ],
+        "Start_Date": "April 20, 1920",
+        "End_Date": "April 20, 1920",
+        "Num": "7 dead near Starkville; 10 dead near Cedarbluff; 22 dead in Aberdeen; 5 dead in Monroe County; 9 dead south of Bexar; 20 dead in Marion County; 19 dead near Waco quarry; 4 dead in Mehama; 1 dead southeast of Town Creek",
+        "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Hackleburg"
-      ],
-      "Start_Date": "April 19, 1920",
-      "End_Date": "April 21, 1920",
-      "Num": "100 homes",
-      "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 19, 1920",
+        "End_Date": "April 21, 1920",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Starkville",
+          "Cedarbluff",
+          "Aberdeen",
+          "Bexar",
+          "Hackleburg",
+          "Phil Campbell",
+          "Spruce Pine",
+          "Waco",
+          "Mehama"
+        ],
+        "Start_Date": "April 19, 1920",
+        "End_Date": "April 21, 1920",
+        "Num": "more than 200 homes",
+        "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hackleburg"
+        ],
+        "Start_Date": "April 19, 1920",
+        "End_Date": "April 21, 1920",
+        "Num": "87 homes",
+        "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hackleburg"
+        ],
+        "Start_Date": "April 19, 1920",
+        "End_Date": "April 21, 1920",
+        "Num": "100 homes",
+        "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Phil Campbell",
+          "Spruce Pine",
+          "Waco"
+        ],
+        "Start_Date": "April 19, 1920",
+        "End_Date": "April 21, 1920",
+        "Num": "small homes",
+        "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mehama"
+        ],
+        "Start_Date": "April 19, 1920",
+        "End_Date": "April 21, 1920",
+        "Num": "many homes",
+        "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Wolf Springs"
+        ],
+        "Start_Date": "April 19, 1920",
+        "End_Date": "April 21, 1920",
+        "Num": "one home",
+        "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "at least 243",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Phil Campbell",
-        "Spruce Pine",
-        "Waco"
-      ],
-      "Start_Date": "April 19, 1920",
-      "End_Date": "April 21, 1920",
-      "Num": "small homes",
-      "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 19, 1920",
+        "End_Date": "April 21, 1920",
+        "Num": "at least 243",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Starkville, Mississippi",
+          "Cedarbluff, Mississippi",
+          "Aberdeen, Mississippi",
+          "Bexar, Alabama",
+          "Hackleburg, Alabama",
+          "Phil Campbell, Alabama",
+          "Spruce Pine, Alabama",
+          "Waco, Alabama",
+          "Mehama, Alabama",
+          "Wolf Springs, Alabama",
+          "Town Creek, Alabama"
+        ],
+        "Start_Date": "April 20, 1920",
+        "End_Date": "April 20, 1920",
+        "Num": "7",
+        "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Cedarbluff, Mississippi"
+        ],
+        "Start_Date": "April 20, 1920",
+        "End_Date": "April 20, 1920",
+        "Num": "10",
+        "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Aberdeen, Mississippi"
+        ],
+        "Start_Date": "April 20, 1920",
+        "End_Date": "April 20, 1920",
+        "Num": "22",
+        "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Monroe County, Mississippi"
+        ],
+        "Start_Date": "April 20, 1920",
+        "End_Date": "April 20, 1920",
+        "Num": "5",
+        "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Bexar, Alabama"
+        ],
+        "Start_Date": "April 20, 1920",
+        "End_Date": "April 20, 1920",
+        "Num": "9",
+        "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Marion County, Alabama"
+        ],
+        "Start_Date": "April 20, 1920",
+        "End_Date": "April 20, 1920",
+        "Num": "20",
+        "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Waco quarry, Alabama"
+        ],
+        "Start_Date": "April 20, 1920",
+        "End_Date": "April 20, 1920",
+        "Num": "19",
+        "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mehama, Alabama"
+        ],
+        "Start_Date": "April 20, 1920",
+        "End_Date": "April 20, 1920",
+        "Num": "4",
+        "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Town Creek, Alabama"
+        ],
+        "Start_Date": "April 20, 1920",
+        "End_Date": "April 20, 1920",
+        "Num": "1",
+        "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mehama"
-      ],
-      "Start_Date": "April 19, 1920",
-      "End_Date": "April 21, 1920",
-      "Num": "many homes",
-      "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 19, 1920",
+        "End_Date": "April 21, 1920",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Starkville",
+          "Cedarbluff",
+          "Aberdeen",
+          "Bexar",
+          "Hackleburg",
+          "Phil Campbell",
+          "Spruce Pine",
+          "Waco",
+          "Mehama"
+        ],
+        "Start_Date": "April 19, 1920",
+        "End_Date": "April 21, 1920",
+        "Num": "NULL",
+        "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Wolf Springs"
-      ],
-      "Start_Date": "April 19, 1920",
-      "End_Date": "April 21, 1920",
-      "Num": "one home",
-      "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "at least 243",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 19, 1920",
-      "End_Date": "April 21, 1920",
-      "Num": "at least 243",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Starkville, Mississippi",
-        "Cedarbluff, Mississippi",
-        "Aberdeen, Mississippi",
-        "Bexar, Alabama",
-        "Hackleburg, Alabama",
-        "Phil Campbell, Alabama",
-        "Spruce Pine, Alabama",
-        "Waco, Alabama",
-        "Mehama, Alabama",
-        "Wolf Springs, Alabama",
-        "Town Creek, Alabama"
-      ],
-      "Start_Date": "April 20, 1920",
-      "End_Date": "April 20, 1920",
-      "Num": "7",
-      "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 19, 1920",
+        "End_Date": "April 21, 1920",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mississippi"
+        ],
+        "Start_Date": "April 19, 1920",
+        "End_Date": "April 21, 1920",
+        "Num": "more than 200 homes",
+        "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Alabama"
+        ],
+        "Start_Date": "April 19, 1920",
+        "End_Date": "April 21, 1920",
+        "Num": "87 homes",
+        "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hackleburg"
+        ],
+        "Start_Date": "April 19, 1920",
+        "End_Date": "April 21, 1920",
+        "Num": "87 homes",
+        "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Phil Campbell",
+          "Spruce Pine"
+        ],
+        "Start_Date": "April 19, 1920",
+        "End_Date": "April 21, 1920",
+        "Num": "NULL",
+        "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Waco quarry"
+        ],
+        "Start_Date": "April 19, 1920",
+        "End_Date": "April 21, 1920",
+        "Num": "NULL",
+        "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mehama"
+        ],
+        "Start_Date": "April 19, 1920",
+        "End_Date": "April 21, 1920",
+        "Num": "many homes",
+        "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Wolf Springs"
+        ],
+        "Start_Date": "April 19, 1920",
+        "End_Date": "April 21, 1920",
+        "Num": "one home",
+        "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": ">= 1,374",
+      "Total_Injuries_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Cedarbluff, Mississippi"
-      ],
-      "Start_Date": "April 20, 1920",
-      "End_Date": "April 20, 1920",
-      "Num": "10",
-      "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 19, 1920",
+        "End_Date": "April 21, 1920",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Marion County, Alabama"
+        ],
+        "Start_Date": "April 20, 1920",
+        "End_Date": "April 20, 1920",
+        "Num": "about 200",
+        "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Aberdeen, Mississippi"
-      ],
-      "Start_Date": "April 20, 1920",
-      "End_Date": "April 20, 1920",
-      "Num": "22",
-      "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 19, 1920",
+        "End_Date": "April 21, 1920",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mississippi",
+          "Alabama",
+          "Tennessee"
+        ],
+        "Start_Date": "April 19, 1920",
+        "End_Date": "April 21, 1920",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "Unknown",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Monroe County, Mississippi"
-      ],
-      "Start_Date": "April 20, 1920",
-      "End_Date": "April 20, 1920",
-      "Num": "5",
-      "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Bexar, Alabama"
-      ],
-      "Start_Date": "April 20, 1920",
-      "End_Date": "April 20, 1920",
-      "Num": "9",
-      "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Marion County, Alabama"
-      ],
-      "Start_Date": "April 20, 1920",
-      "End_Date": "April 20, 1920",
-      "Num": "20",
-      "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Waco quarry, Alabama"
-      ],
-      "Start_Date": "April 20, 1920",
-      "End_Date": "April 20, 1920",
-      "Num": "19",
-      "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mehama, Alabama"
-      ],
-      "Start_Date": "April 20, 1920",
-      "End_Date": "April 20, 1920",
-      "Num": "4",
-      "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Town Creek, Alabama"
-      ],
-      "Start_Date": "April 20, 1920",
-      "End_Date": "April 20, 1920",
-      "Num": "1",
-      "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 19, 1920",
-      "End_Date": "April 21, 1920",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Starkville",
-        "Cedarbluff",
-        "Aberdeen",
-        "Bexar",
-        "Hackleburg",
-        "Phil Campbell",
-        "Spruce Pine",
-        "Waco",
-        "Mehama"
-      ],
-      "Start_Date": "April 19, 1920",
-      "End_Date": "April 21, 1920",
-      "Num": "NULL",
-      "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 19, 1920",
-      "End_Date": "April 21, 1920",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mississippi"
-      ],
-      "Start_Date": "April 19, 1920",
-      "End_Date": "April 21, 1920",
-      "Num": "more than 200 homes",
-      "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Alabama"
-      ],
-      "Start_Date": "April 19, 1920",
-      "End_Date": "April 21, 1920",
-      "Num": "87 homes",
-      "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Hackleburg"
-      ],
-      "Start_Date": "April 19, 1920",
-      "End_Date": "April 21, 1920",
-      "Num": "87 homes",
-      "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Phil Campbell",
-        "Spruce Pine"
-      ],
-      "Start_Date": "April 19, 1920",
-      "End_Date": "April 21, 1920",
-      "Num": "NULL",
-      "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Waco quarry"
-      ],
-      "Start_Date": "April 19, 1920",
-      "End_Date": "April 21, 1920",
-      "Num": "NULL",
-      "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mehama"
-      ],
-      "Start_Date": "April 19, 1920",
-      "End_Date": "April 21, 1920",
-      "Num": "many homes",
-      "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
-    },
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Wolf Springs"
-      ],
-      "Start_Date": "April 19, 1920",
-      "End_Date": "April 21, 1920",
-      "Num": "one home",
-      "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": ">= 1,374",
-    "Total_Injuries_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 19, 1920",
-      "End_Date": "April 21, 1920",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Marion County, Alabama"
-      ],
-      "Start_Date": "April 20, 1920",
-      "End_Date": "April 20, 1920",
-      "Num": "about 200",
-      "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 19, 1920",
-      "End_Date": "April 21, 1920",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Mississippi",
-        "Alabama",
-        "Tennessee"
-      ],
-      "Start_Date": "April 19, 1920",
-      "End_Date": "April 21, 1920",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "Unknown",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "NULL",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "United States"
-      ],
-      "Start_Date": "April 19, 1920",
-      "End_Date": "April 21, 1920",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "April 1920 tornado outbreak"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "United States",
-      "Locations": [
-        "Starkville",
-        "Cedarbluff",
-        "Aberdeen",
-        "Bexar",
-        "Hackleburg",
-        "Phil Campbell",
-        "Spruce Pine",
-        "Waco",
-        "Mehama"
-      ],
-      "Start_Date": "April 20, 1920",
-      "End_Date": "April 20, 1920",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
-    }
-  ],
-  "Main_Event": "Tornado",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "April 19, 1920",
-  "End_Date": "April 21, 1920",
-  "Time_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "April 19, 1920",
+        "End_Date": "April 21, 1920",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "April 1920 tornado outbreak"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Starkville",
+          "Cedarbluff",
+          "Aberdeen",
+          "Bexar",
+          "Hackleburg",
+          "Phil Campbell",
+          "Spruce Pine",
+          "Waco",
+          "Mehama"
+        ],
+        "Start_Date": "April 20, 1920",
+        "End_Date": "April 20, 1920",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Starkville\u2013Cedarbluff\u2013Aberdeen, Mississippi/Bexar\u2013Hackleburg\u2013Phil Campbell\u2013Spruce Pine\u2013Waco\u2013Mehama, Alabama"
+      }
+    ],
+    "Main_Event": "Tornado",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "April 19, 1920",
+    "End_Date": "April 21, 1920",
+    "Time_Annotation": "Info_Box"
+  }
+]

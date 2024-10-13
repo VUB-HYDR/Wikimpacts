@@ -1,321 +1,323 @@
-{
-  "Event_ID": "E8Maawe",
-  "Sources": "https://en.wikipedia.org/wiki/1967_Portugal_floods",
-  "Event_Names": "1967 Portugal floods",
-  "Total_Summary_Affected": {
-    "Total_Affected": "2045 people",
-    "Total_Affected_Annotation": "Flood details"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Portugal"
-      ],
-      "Start_Date": "25 November 1967",
-      "End_Date": "26 November 1967",
-      "Num": "2045 people",
-      "Annotation": "Flood details"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Portugal",
-      "Locations": [
-        "Lisbon Metropolitan Area"
-      ],
-      "Start_Date": "25 November 1967",
-      "End_Date": "26 November 1967",
-      "Num": "2045 people",
-      "Annotation": "Flood details"
+[
+  {
+    "Event_ID": "E8Maawe",
+    "Sources": "https://en.wikipedia.org/wiki/1967_Portugal_floods",
+    "Event_Names": "1967 Portugal floods",
+    "Total_Summary_Affected": {
+      "Total_Affected": "2045 people",
+      "Total_Affected_Annotation": "Flood details"
     },
-    {
-      "Administrative_Area": "Portugal",
-      "Locations": [
-        "Aldeia de Quintas"
-      ],
-      "Start_Date": "25 November 1967",
-      "End_Date": "26 November 1967",
-      "Num": "100 dead",
-      "Annotation": "Flood details"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Portugal"
+        ],
+        "Start_Date": "25 November 1967",
+        "End_Date": "26 November 1967",
+        "Num": "2045 people",
+        "Annotation": "Flood details"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Portugal",
+        "Locations": [
+          "Lisbon Metropolitan Area"
+        ],
+        "Start_Date": "25 November 1967",
+        "End_Date": "26 November 1967",
+        "Num": "2045 people",
+        "Annotation": "Flood details"
+      },
+      {
+        "Administrative_Area": "Portugal",
+        "Locations": [
+          "Aldeia de Quintas"
+        ],
+        "Start_Date": "25 November 1967",
+        "End_Date": "26 November 1967",
+        "Num": "100 dead",
+        "Annotation": "Flood details"
+      },
+      {
+        "Administrative_Area": "Portugal",
+        "Locations": [
+          "Santa Cruz da Urmeira neighborhood in Odivelas"
+        ],
+        "Start_Date": "25 November 1967",
+        "End_Date": "26 November 1967",
+        "Num": "20 killed, 30 injured, 100 homeless",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Portugal",
-      "Locations": [
-        "Santa Cruz da Urmeira neighborhood in Odivelas"
-      ],
-      "Start_Date": "25 November 1967",
-      "End_Date": "26 November 1967",
-      "Num": "20 killed, 30 injured, 100 homeless",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": [
-        "Portugal"
-      ],
-      "Start_Date": "25 November 1967",
-      "End_Date": "26 November 1967",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Portugal",
-      "Locations": [
-        "Odivelas"
-      ],
-      "Start_Date": "25 November 1967",
-      "End_Date": "26 November 1967",
-      "Num": "NULL",
-      "Annotation": "Flood details"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "Portugal"
+        ],
+        "Start_Date": "25 November 1967",
+        "End_Date": "26 November 1967",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Portugal",
+        "Locations": [
+          "Odivelas"
+        ],
+        "Start_Date": "25 November 1967",
+        "End_Date": "26 November 1967",
+        "Num": "NULL",
+        "Annotation": "Flood details"
+      },
+      {
+        "Administrative_Area": "Portugal",
+        "Locations": [
+          "Tranc\u00e3o"
+        ],
+        "Start_Date": "25 November 1967",
+        "End_Date": "26 November 1967",
+        "Num": "NULL",
+        "Annotation": "Flood details"
+      },
+      {
+        "Administrative_Area": "Portugal",
+        "Locations": [
+          "Santa Cruz da Urmeira"
+        ],
+        "Start_Date": "25 November 1967",
+        "End_Date": "26 November 1967",
+        "Num": "NULL",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "500-700+",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Portugal",
-      "Locations": [
-        "Tranc\u00e3o"
-      ],
-      "Start_Date": "25 November 1967",
-      "End_Date": "26 November 1967",
-      "Num": "NULL",
-      "Annotation": "Flood details"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "Portugal"
+        ],
+        "Start_Date": "25 November 1967",
+        "End_Date": "26 November 1967",
+        "Num": "500-700",
+        "Annotation": "Flood details"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Portugal",
+        "Locations": [
+          "Aldeia de Quintas"
+        ],
+        "Start_Date": "25 November 1967",
+        "End_Date": "26 November 1967",
+        "Num": "100",
+        "Annotation": "Flood details"
+      },
+      {
+        "Administrative_Area": "Portugal",
+        "Locations": [
+          "Santa Cruz da Urmeira neighborhood in Odivelas"
+        ],
+        "Start_Date": "25 November 1967",
+        "End_Date": "26 November 1967",
+        "Num": "20",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Portugal",
-      "Locations": [
-        "Santa Cruz da Urmeira"
-      ],
-      "Start_Date": "25 November 1967",
-      "End_Date": "26 November 1967",
-      "Num": "NULL",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "500-700+",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "Portugal"
-      ],
-      "Start_Date": "25 November 1967",
-      "End_Date": "26 November 1967",
-      "Num": "500-700",
-      "Annotation": "Flood details"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Portugal",
-      "Locations": [
-        "Aldeia de Quintas"
-      ],
-      "Start_Date": "25 November 1967",
-      "End_Date": "26 November 1967",
-      "Num": "100",
-      "Annotation": "Flood details"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Portugal"
+        ],
+        "Start_Date": "25 November 1967",
+        "End_Date": "26 November 1967",
+        "Num": "NULL",
+        "Annotation": "Flood details"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Portugal",
+        "Locations": [
+          "Lisbon Metropolitan Area"
+        ],
+        "Start_Date": "25 November 1967",
+        "End_Date": "26 November 1967",
+        "Num": "885",
+        "Annotation": "Flood details"
+      },
+      {
+        "Administrative_Area": "Portugal",
+        "Locations": [
+          "Odivelas"
+        ],
+        "Start_Date": "25 November 1967",
+        "End_Date": "26 November 1967",
+        "Num": "NULL",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "885",
+      "Total_Homeless_Annotation": "Flood details"
     },
-    {
-      "Administrative_Area": "Portugal",
-      "Locations": [
-        "Santa Cruz da Urmeira neighborhood in Odivelas"
-      ],
-      "Start_Date": "25 November 1967",
-      "End_Date": "26 November 1967",
-      "Num": "20",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Portugal"
-      ],
-      "Start_Date": "25 November 1967",
-      "End_Date": "26 November 1967",
-      "Num": "NULL",
-      "Annotation": "Flood details"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Portugal",
-      "Locations": [
-        "Lisbon Metropolitan Area"
-      ],
-      "Start_Date": "25 November 1967",
-      "End_Date": "26 November 1967",
-      "Num": "885",
-      "Annotation": "Flood details"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Portugal"
+        ],
+        "Start_Date": "25 November 1967",
+        "End_Date": "26 November 1967",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Portugal",
+        "Locations": [
+          "Lisbon Metropolitan Area"
+        ],
+        "Start_Date": "25 November 1967",
+        "End_Date": "26 November 1967",
+        "Num": "885",
+        "Annotation": "Flood details"
+      },
+      {
+        "Administrative_Area": "Portugal",
+        "Locations": [
+          "Santa Cruz da Urmeira neighborhood in Odivelas"
+        ],
+        "Start_Date": "25 November 1967",
+        "End_Date": "26 November 1967",
+        "Num": "100 homeless",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "330",
+      "Total_Injuries_Annotation": "Flood details"
     },
-    {
-      "Administrative_Area": "Portugal",
-      "Locations": [
-        "Odivelas"
-      ],
-      "Start_Date": "25 November 1967",
-      "End_Date": "26 November 1967",
-      "Num": "NULL",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "885",
-    "Total_Homeless_Annotation": "Flood details"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": [
-        "Portugal"
-      ],
-      "Start_Date": "25 November 1967",
-      "End_Date": "26 November 1967",
-      "Num": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Portugal",
-      "Locations": [
-        "Lisbon Metropolitan Area"
-      ],
-      "Start_Date": "25 November 1967",
-      "End_Date": "26 November 1967",
-      "Num": "885",
-      "Annotation": "Flood details"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "Portugal"
+        ],
+        "Start_Date": "25 November 1967",
+        "End_Date": "26 November 1967",
+        "Num": "330",
+        "Annotation": "Flood details"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Portugal",
+        "Locations": [
+          "Lisbon Metropolitan Area"
+        ],
+        "Start_Date": "25 November 1967",
+        "End_Date": "26 November 1967",
+        "Num": "330",
+        "Annotation": "Flood details"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Portugal",
-      "Locations": [
-        "Santa Cruz da Urmeira neighborhood in Odivelas"
-      ],
-      "Start_Date": "25 November 1967",
-      "End_Date": "26 November 1967",
-      "Num": "100 homeless",
-      "Annotation": "Aftermath"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "330",
-    "Total_Injuries_Annotation": "Flood details"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": [
-        "Portugal"
-      ],
-      "Start_Date": "25 November 1967",
-      "End_Date": "26 November 1967",
-      "Num": "330",
-      "Annotation": "Flood details"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Portugal",
-      "Locations": [
-        "Lisbon Metropolitan Area"
-      ],
-      "Start_Date": "25 November 1967",
-      "End_Date": "26 November 1967",
-      "Num": "330",
-      "Annotation": "Flood details"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Portugal"
-      ],
-      "Start_Date": "1967-11-25",
-      "End_Date": "1967-11-26",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Portugal",
-      "Locations": [
-        "Lisbon Metropolitan Area"
-      ],
-      "Start_Date": "1967-11-25",
-      "End_Date": "1967-11-26",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "NULL",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "NULL",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "Portugal"
-      ],
-      "Start_Date": "25 November 1967",
-      "End_Date": "26 November 1967",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "NULL"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Portugal",
-      "Locations": [
-        "Odivelas",
-        "Tranc\u00e3o"
-      ],
-      "Start_Date": "25 November 1967",
-      "End_Date": "26 November 1967",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Flood details"
-    }
-  ],
-  "Main_Event": "Flood",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Flood",
-  "Hazards_Annotation": "Info_Box",
-  "Start_Date": "25 November 1967",
-  "End_Date": "26 November 1967",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Portugal"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Portugal"
+        ],
+        "Start_Date": "1967-11-25",
+        "End_Date": "1967-11-26",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Portugal",
+        "Locations": [
+          "Lisbon Metropolitan Area"
+        ],
+        "Start_Date": "1967-11-25",
+        "End_Date": "1967-11-26",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "NULL",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Portugal"
+        ],
+        "Start_Date": "25 November 1967",
+        "End_Date": "26 November 1967",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Portugal",
+        "Locations": [
+          "Odivelas",
+          "Tranc\u00e3o"
+        ],
+        "Start_Date": "25 November 1967",
+        "End_Date": "26 November 1967",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Flood details"
+      }
+    ],
+    "Main_Event": "Flood",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Flood",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "25 November 1967",
+    "End_Date": "26 November 1967",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Portugal"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

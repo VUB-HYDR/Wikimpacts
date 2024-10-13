@@ -1,331 +1,333 @@
-{
-  "Event_ID": "ZWMqP4G",
-  "Sources": "https://en.wikipedia.org/wiki/2020_Brazilian_floods_and_mudslides",
-  "Event_Names": "2020 Brazilian floods and mudslides",
-  "Total_Summary_Affected": {
-    "Total_Affected": "30,000 to 46,500",
-    "Total_Affected_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Brazil"
-      ],
-      "Start_Date": "17 January 2020",
-      "End_Date": "29 January 2020",
-      "Num": "NULL",
-      "Annotation": "Flooding"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Minas Gerais"
-      ],
-      "Start_Date": "17 January 2020",
-      "End_Date": "29 January 2020",
-      "Num": "15,000",
-      "Annotation": "Flooding"
+[
+  {
+    "Event_ID": "ZWMqP4G",
+    "Sources": "https://en.wikipedia.org/wiki/2020_Brazilian_floods_and_mudslides",
+    "Event_Names": "2020 Brazilian floods and mudslides",
+    "Total_Summary_Affected": {
+      "Total_Affected": "30,000 to 46,500",
+      "Total_Affected_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Espirito Santo"
-      ],
-      "Start_Date": "17 January 2020",
-      "End_Date": "29 January 2020",
-      "Num": "10,000",
-      "Annotation": "Flooding"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Brazil"
+        ],
+        "Start_Date": "17 January 2020",
+        "End_Date": "29 January 2020",
+        "Num": "NULL",
+        "Annotation": "Flooding"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Minas Gerais"
+        ],
+        "Start_Date": "17 January 2020",
+        "End_Date": "29 January 2020",
+        "Num": "15,000",
+        "Annotation": "Flooding"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Espirito Santo"
+        ],
+        "Start_Date": "17 January 2020",
+        "End_Date": "29 January 2020",
+        "Num": "10,000",
+        "Annotation": "Flooding"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Rio de Janeiro"
+        ],
+        "Start_Date": "17 January 2020",
+        "End_Date": "29 January 2020",
+        "Num": "6,000",
+        "Annotation": "Flooding"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Rio de Janeiro"
-      ],
-      "Start_Date": "17 January 2020",
-      "End_Date": "29 January 2020",
-      "Num": "6,000",
-      "Annotation": "Flooding"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Brazil",
-      "Start_Date": "2020-01-17",
-      "End_Date": "2020-01-29",
-      "Num": "NULL",
-      "Annotation": "Flooding"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Belo Horizonte"
-      ],
-      "Start_Date": "2020-01-23",
-      "End_Date": "2020-01-24",
-      "Num": "several collapsed bridges and damaged roads",
-      "Annotation": "Flooding"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Brazil",
+        "Start_Date": "2020-01-17",
+        "End_Date": "2020-01-29",
+        "Num": "NULL",
+        "Annotation": "Flooding"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Belo Horizonte"
+        ],
+        "Start_Date": "2020-01-23",
+        "End_Date": "2020-01-24",
+        "Num": "several collapsed bridges and damaged roads",
+        "Annotation": "Flooding"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Belo Horizonte"
+        ],
+        "Start_Date": "2020-01-29",
+        "End_Date": "2020-01-29",
+        "Num": "collapse of the roof of a mall",
+        "Annotation": "Flooding"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "at least 70",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Belo Horizonte"
-      ],
-      "Start_Date": "2020-01-29",
-      "End_Date": "2020-01-29",
-      "Num": "collapse of the roof of a mall",
-      "Annotation": "Flooding"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "at least 70",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": "Brazil",
-      "Start_Date": "17 January 2020",
-      "End_Date": "29 January 2020",
-      "Num": "at least 70",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Minas Gerais",
-        "Esp\u00edrito Santo",
-        "Rio de Janeiro"
-      ],
-      "Start_Date": "17 January 2020",
-      "End_Date": "29 January 2020",
-      "Num": "at least 70",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "30,000 to 46,500",
-    "Total_Displaced_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Brazil"
-      ],
-      "Start_Date": "17 January 2020",
-      "End_Date": "29 January 2020",
-      "Num": "NULL",
-      "Annotation": "Flooding"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Minas Gerais"
-      ],
-      "Start_Date": "17 January 2020",
-      "End_Date": "29 January 2020",
-      "Num": "15,000",
-      "Annotation": "Flooding"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Brazil",
+        "Start_Date": "17 January 2020",
+        "End_Date": "29 January 2020",
+        "Num": "at least 70",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Minas Gerais",
+          "Esp\u00edrito Santo",
+          "Rio de Janeiro"
+        ],
+        "Start_Date": "17 January 2020",
+        "End_Date": "29 January 2020",
+        "Num": "at least 70",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "30,000 to 46,500",
+      "Total_Displaced_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Espirito Santo"
-      ],
-      "Start_Date": "17 January 2020",
-      "End_Date": "29 January 2020",
-      "Num": "10,000",
-      "Annotation": "Flooding"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Brazil"
+        ],
+        "Start_Date": "17 January 2020",
+        "End_Date": "29 January 2020",
+        "Num": "NULL",
+        "Annotation": "Flooding"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Minas Gerais"
+        ],
+        "Start_Date": "17 January 2020",
+        "End_Date": "29 January 2020",
+        "Num": "15,000",
+        "Annotation": "Flooding"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Espirito Santo"
+        ],
+        "Start_Date": "17 January 2020",
+        "End_Date": "29 January 2020",
+        "Num": "10,000",
+        "Annotation": "Flooding"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Rio de Janeiro"
+        ],
+        "Start_Date": "17 January 2020",
+        "End_Date": "29 January 2020",
+        "Num": "6,000",
+        "Annotation": "Flooding"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "30,000 to 46,500",
+      "Total_Homeless_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Rio de Janeiro"
-      ],
-      "Start_Date": "17 January 2020",
-      "End_Date": "29 January 2020",
-      "Num": "6,000",
-      "Annotation": "Flooding"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "30,000 to 46,500",
-    "Total_Homeless_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Brazil",
-      "Start_Date": "17 January 2020",
-      "End_Date": "29 January 2020",
-      "Num": "30,000 to 46,500",
-      "Annotation": "Info_Box"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Minas Gerais"
-      ],
-      "Start_Date": "17 January 2020",
-      "End_Date": "29 January 2020",
-      "Num": "more than 15,000",
-      "Annotation": "Flooding"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Brazil",
+        "Start_Date": "17 January 2020",
+        "End_Date": "29 January 2020",
+        "Num": "30,000 to 46,500",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Minas Gerais"
+        ],
+        "Start_Date": "17 January 2020",
+        "End_Date": "29 January 2020",
+        "Num": "more than 15,000",
+        "Annotation": "Flooding"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Espirito Santo"
+        ],
+        "Start_Date": "17 January 2020",
+        "End_Date": "29 January 2020",
+        "Num": "10,000",
+        "Annotation": "Flooding"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Rio de Janeiro"
+        ],
+        "Start_Date": "17 January 2020",
+        "End_Date": "29 January 2020",
+        "Num": "6,000",
+        "Annotation": "Flooding"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Espirito Santo"
-      ],
-      "Start_Date": "17 January 2020",
-      "End_Date": "29 January 2020",
-      "Num": "10,000",
-      "Annotation": "Flooding"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Brazil",
+        "Start_Date": "17 January 2020",
+        "End_Date": "29 January 2020",
+        "Num": "NULL",
+        "Annotation": "Flooding"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Minas Gerais",
+          "Esp\u00edrito Santo",
+          "Rio de Janeiro"
+        ],
+        "Start_Date": "17 January 2020",
+        "End_Date": "29 January 2020",
+        "Num": "NULL",
+        "Annotation": "Flooding"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Rio de Janeiro"
-      ],
-      "Start_Date": "17 January 2020",
-      "End_Date": "29 January 2020",
-      "Num": "6,000",
-      "Annotation": "Flooding"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "NULL",
-    "Total_Injuries_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "Brazil",
-      "Start_Date": "17 January 2020",
-      "End_Date": "29 January 2020",
-      "Num": "NULL",
-      "Annotation": "Flooding"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Minas Gerais",
-        "Esp\u00edrito Santo",
-        "Rio de Janeiro"
-      ],
-      "Start_Date": "17 January 2020",
-      "End_Date": "29 January 2020",
-      "Num": "NULL",
-      "Annotation": "Flooding"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Brazil"
-      ],
-      "Start_Date": "2020-01-17",
-      "End_Date": "2020-01-29",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Flooding"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Minas Gerais",
-        "Esp\u00edrito Santo",
-        "Rio de Janeiro"
-      ],
-      "Start_Date": "2020-01-17",
-      "End_Date": "2020-01-29",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Flooding"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "NULL",
-    "Total_Damage_Unit": "NULL",
-    "Total_Damage_Inflation_Adjusted": "NULL",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": "Brazil",
-      "Start_Date": "2020-01-17",
-      "End_Date": "2020-01-29",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Flooding"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Minas Gerais"
-      ],
-      "Start_Date": "2020-01-17",
-      "End_Date": "2020-01-29",
-      "Num": "US$80 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Flooding"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Brazil"
+        ],
+        "Start_Date": "2020-01-17",
+        "End_Date": "2020-01-29",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Flooding"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Minas Gerais",
+          "Esp\u00edrito Santo",
+          "Rio de Janeiro"
+        ],
+        "Start_Date": "2020-01-17",
+        "End_Date": "2020-01-29",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Flooding"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "NULL",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Brazil",
-      "Locations": [
-        "Minas Gerais",
-        "Esp\u00edrito Santo",
-        "Rio de Janeiro"
-      ],
-      "Start_Date": "2020-01-17",
-      "End_Date": "2020-01-29",
-      "Num": "US$20 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Flooding"
-    }
-  ],
-  "Main_Event": "Extratropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Flood|Wind",
-  "Hazards_Annotation": "Info_Box|Flooding",
-  "Start_Date": "2020-01-17",
-  "End_Date": "2020-01-29",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Brazil"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Brazil",
+        "Start_Date": "2020-01-17",
+        "End_Date": "2020-01-29",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Flooding"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Minas Gerais"
+        ],
+        "Start_Date": "2020-01-17",
+        "End_Date": "2020-01-29",
+        "Num": "US$80 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Flooding"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Minas Gerais",
+          "Esp\u00edrito Santo",
+          "Rio de Janeiro"
+        ],
+        "Start_Date": "2020-01-17",
+        "End_Date": "2020-01-29",
+        "Num": "US$20 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Flooding"
+      }
+    ],
+    "Main_Event": "Extratropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Flood|Wind",
+    "Hazards_Annotation": "Info_Box|Flooding",
+    "Start_Date": "2020-01-17",
+    "End_Date": "2020-01-29",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Brazil"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

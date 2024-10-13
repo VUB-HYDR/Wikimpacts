@@ -1,510 +1,512 @@
-{
-  "Event_ID": "HVBXCBv",
-  "Sources": "https://en.wikipedia.org/wiki/Typhoon_Percy_(1990)",
-  "Event_Names": "Typhoon Percy (1990)",
-  "Total_Summary_Affected": {
-    "Total_Affected": "NULL",
-    "Total_Affected_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Affected": [
-    {
-      "Administrative_Areas": [
-        "Philippines"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "31,206 people in 6,143 families",
-      "Annotation": "Impact"
+[
+  {
+    "Event_ID": "HVBXCBv",
+    "Sources": "https://en.wikipedia.org/wiki/Typhoon_Percy_(1990)",
+    "Event_Names": "Typhoon Percy (1990)",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": [
-        "China"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Affected": [
-    {
-      "Administrative_Area": "Caroline Islands",
-      "Locations": [
-        "Yap",
-        "Ngulu Atoll",
-        "Koror"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impact"
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "31,206 people in 6,143 families",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Areas": [
+          "China"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Caroline Islands",
+        "Locations": [
+          "Yap",
+          "Ngulu Atoll",
+          "Koror"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "La Union",
+          "Quezon City",
+          "Ilocos Region"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Quanzhou",
+          "Zhangzhou",
+          "Dongshan",
+          "Shantou"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Saga Prefecture"
+        ],
+        "Start_Date": "July 2",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "La Union",
-        "Quezon City",
-        "Ilocos Region"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impact"
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Caroline Islands",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Caroline Islands",
+        "Locations": [
+          "Yap",
+          "Ngulu Atoll",
+          "Koror"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "30 homes; 7 homes; several houses",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "La Union",
+          "Quezon City",
+          "Ilocos Region"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Quanzhou",
+          "Zhangzhou",
+          "Dongshan",
+          "Shantou"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "27 total",
+      "Total_Deaths_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Quanzhou",
-        "Zhangzhou",
-        "Dongshan",
-        "Shantou"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impact"
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "eight people",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Areas": [
+          "China"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "16 people",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Areas": [
+          "Japan"
+        ],
+        "Start_Date": "July 2",
+        "End_Date": "NULL",
+        "Num": "two deaths",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Caroline Islands",
+        "Locations": [
+          "Koror"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "one boy",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "La Union",
+          "Quezon City",
+          "Ilocos Region"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Quanzhou",
+          "Zhangzhou",
+          "Dongshan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Saga Prefecture"
-      ],
-      "Start_Date": "July 2",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Buildings_Damaged": {
-    "Total_Buildings_Damaged": "NULL",
-    "Total_Buildings_Damaged_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
-    {
-      "Administrative_Areas": "Caroline Islands",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impact"
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "31,206 people in 6,143 families",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Areas": [
+          "Hong Kong"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "eleven people",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "La Union",
+          "Quezon City",
+          "Ilocos Region"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "31,206 people in 6,143 families",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Hong Kong",
+        "Locations": [
+          "Kwai Chung",
+          "two other villages"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "eleven people",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
     },
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impact"
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "31,206 people in 6,143 families",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "greater than 6,650 homes",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Caroline Islands",
+        "Locations": [
+          "Yap",
+          "Ngulu Atoll",
+          "Koror"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "30 homes damaged; seven homes demolished; several houses lost their roofs",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "La Union",
+          "Quezon City",
+          "Ilocos Region"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "31,206 people in 6,143 families lost their homes",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Quanzhou",
+          "Zhangzhou",
+          "Dongshan",
+          "Shantou"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "100,000 trees damaged; tens of millions in damage; one third of the trees downed; 95 structures destroyed and 201 damaged; greater than 6,650 homes damaged",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Saga Prefecture"
+        ],
+        "Start_Date": "July 2",
+        "End_Date": "NULL",
+        "Num": "15 buildings partially destroyed",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "more than 100",
+      "Total_Injuries_Annotation": "Impact"
     },
-    {
-      "Administrative_Areas": "China",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
-    {
-      "Administrative_Area": "Caroline Islands",
-      "Locations": [
-        "Yap",
-        "Ngulu Atoll",
-        "Koror"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "30 homes; 7 homes; several houses",
-      "Annotation": "Impact"
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "more than 100",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Dongshan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "four",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Saga Prefecture"
+        ],
+        "Start_Date": "July 2",
+        "End_Date": "July 2",
+        "Num": "five",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
     },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "La Union",
-        "Quezon City",
-        "Ilocos Region"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impact"
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Philippines",
+          "China",
+          "Japan"
+        ],
+        "Start_Date": "June 20, 1990",
+        "End_Date": "June 30, 1990",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "La Union",
+          "Quezon City",
+          "Ilocos Region"
+        ],
+        "Start_Date": "June 20, 1990",
+        "End_Date": "June 30, 1990",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Quanzhou",
+          "Zhangzhou",
+          "Dongshan",
+          "Shantou"
+        ],
+        "Start_Date": "June 20, 1990",
+        "End_Date": "June 30, 1990",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Saga Prefecture"
+        ],
+        "Start_Date": "July 2, 1990",
+        "End_Date": "July 2, 1990",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$426 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
     },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Quanzhou",
-        "Zhangzhou",
-        "Dongshan",
-        "Shantou"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Deaths": {
-    "Total_Deaths": "27 total",
-    "Total_Deaths_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Deaths": [
-    {
-      "Administrative_Areas": [
-        "Philippines"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "eight people",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Areas": [
-        "China"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "16 people",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Areas": [
-        "Japan"
-      ],
-      "Start_Date": "July 2",
-      "End_Date": "NULL",
-      "Num": "two deaths",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Deaths": [
-    {
-      "Administrative_Area": "Caroline Islands",
-      "Locations": [
-        "Koror"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "one boy",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "La Union",
-        "Quezon City",
-        "Ilocos Region"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Quanzhou",
-        "Zhangzhou",
-        "Dongshan"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Displaced": {
-    "Total_Displaced": "NULL",
-    "Total_Displaced_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Displaced": [
-    {
-      "Administrative_Areas": [
-        "Philippines"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "31,206 people in 6,143 families",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Areas": [
-        "Hong Kong"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "eleven people",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Displaced": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "La Union",
-        "Quezon City",
-        "Ilocos Region"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "31,206 people in 6,143 families",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Area": "Hong Kong",
-      "Locations": [
-        "Kwai Chung",
-        "two other villages"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "eleven people",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Homeless": {
-    "Total_Homeless": "NULL",
-    "Total_Homeless_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Homeless": [
-    {
-      "Administrative_Areas": "Philippines",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "31,206 people in 6,143 families",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Areas": "China",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "greater than 6,650 homes",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Homeless": [
-    {
-      "Administrative_Area": "Caroline Islands",
-      "Locations": [
-        "Yap",
-        "Ngulu Atoll",
-        "Koror"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "30 homes damaged; seven homes demolished; several houses lost their roofs",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "La Union",
-        "Quezon City",
-        "Ilocos Region"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "31,206 people in 6,143 families lost their homes",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Quanzhou",
-        "Zhangzhou",
-        "Dongshan",
-        "Shantou"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "100,000 trees damaged; tens of millions in damage; one third of the trees downed; 95 structures destroyed and 201 damaged; greater than 6,650 homes damaged",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Saga Prefecture"
-      ],
-      "Start_Date": "July 2",
-      "End_Date": "NULL",
-      "Num": "15 buildings partially destroyed",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Injuries": {
-    "Total_Injuries": "more than 100",
-    "Total_Injuries_Annotation": "Impact"
-  },
-  "Instance_Per_Administrative_Areas_Injuries": [
-    {
-      "Administrative_Areas": "China",
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "more than 100",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Injuries": [
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Dongshan"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "four",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Saga Prefecture"
-      ],
-      "Start_Date": "July 2",
-      "End_Date": "July 2",
-      "Num": "five",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Insured_Damage": {
-    "Total_Insured_Damage": "NULL",
-    "Total_Insured_Damage_Unit": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
-    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Insured_Damage_Annotation": "NULL"
-  },
-  "Instance_Per_Administrative_Areas_Insured_Damage": [
-    {
-      "Administrative_Areas": [
-        "Philippines",
-        "China",
-        "Japan"
-      ],
-      "Start_Date": "June 20, 1990",
-      "End_Date": "June 30, 1990",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
-    {
-      "Administrative_Area": "Philippines",
-      "Locations": [
-        "La Union",
-        "Quezon City",
-        "Ilocos Region"
-      ],
-      "Start_Date": "June 20, 1990",
-      "End_Date": "June 30, 1990",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Quanzhou",
-        "Zhangzhou",
-        "Dongshan",
-        "Shantou"
-      ],
-      "Start_Date": "June 20, 1990",
-      "End_Date": "June 30, 1990",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Area": "Japan",
-      "Locations": [
-        "Saga Prefecture"
-      ],
-      "Start_Date": "July 2, 1990",
-      "End_Date": "July 2, 1990",
-      "Num": "NULL",
-      "Num_Unit": "NULL",
-      "Num_Inflation_Adjusted": "NULL",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Total_Summary_Damage": {
-    "Total_Damage": "$426 million",
-    "Total_Damage_Unit": "USD",
-    "Total_Damage_Inflation_Adjusted": "No",
-    "Total_Damage_Inflation_Adjusted_Year": "NULL",
-    "Total_Damage_Annotation": "Info_Box"
-  },
-  "Instance_Per_Administrative_Areas_Damage": [
-    {
-      "Administrative_Areas": [
-        "China"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "$28 million",
-      "Num_Unit": "USD",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Areas": [
-        "Japan"
-      ],
-      "Start_Date": "July 2, 1990",
-      "End_Date": "NULL",
-      "Num": "57.976 billion yen",
-      "Num_Unit": "JPY",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Specific_Instance_Per_Administrative_Area_Damage": [
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Quanzhou"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "\u00a527 million",
-      "Num_Unit": "CNY",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impact"
-    },
-    {
-      "Administrative_Area": "China",
-      "Locations": [
-        "Shantou"
-      ],
-      "Start_Date": "NULL",
-      "End_Date": "NULL",
-      "Num": "\u00a549 million",
-      "Num_Unit": "CNY",
-      "Num_Inflation_Adjusted": "No",
-      "Num_Inflation_Adjusted_Year": "NULL",
-      "Annotation": "Impact"
-    }
-  ],
-  "Main_Event": "Tropical Storm/Cyclone",
-  "Main_Event_Annotation": "Info_Box",
-  "Hazards": "Wind|Flood",
-  "Hazards_Annotation": "Info_Box|Impact",
-  "Start_Date": "June 20, 1990",
-  "End_Date": "June 30, 1990",
-  "Time_Annotation": "Info_Box",
-  "Administrative_Areas": [
-    "Caroline Islands",
-    "Philippines",
-    "Taiwan",
-    "China"
-  ],
-  "Administrative_Areas_Annotation": "Info_Box"
-}
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "China"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$28 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Areas": [
+          "Japan"
+        ],
+        "Start_Date": "July 2, 1990",
+        "End_Date": "NULL",
+        "Num": "57.976 billion yen",
+        "Num_Unit": "JPY",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Quanzhou"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "\u00a527 million",
+        "Num_Unit": "CNY",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Shantou"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "\u00a549 million",
+        "Num_Unit": "CNY",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Impact",
+    "Start_Date": "June 20, 1990",
+    "End_Date": "June 30, 1990",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Caroline Islands",
+      "Philippines",
+      "Taiwan",
+      "China"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]
