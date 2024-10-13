@@ -435,7 +435,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                                 logger.warning(f"Could not get gadm as area. Error: {err}")
                                 return []
                     else:
-                        logger.warning(f"admin_area {admin_area} of type {type(admin_area)} is not supporetd")
+                        logger.warning(f"admin_area {admin_area} of type {type(admin_area)} is not supported.")
                         return []
 
                 sub_event[f"{administrative_area_col}_GID"] = sub_event[
