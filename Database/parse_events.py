@@ -763,3 +763,5 @@ if __name__ == "__main__":
         else:
             if lvl in args.event_levels:
                 logger.error(f"Could not parse level {lvl}")
+
+    logger.info("PARSING COMPLETE")
