@@ -1,0 +1,485 @@
+{
+  "Event_ID": "HQU0YTn",
+  "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Irina",
+  "Event_Names": "Tropical Storm Irina",
+  "Total_Summary_Affected": {
+    "Total_Affected": "NULL",
+    "Total_Affected_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Affected": [
+    {
+      "Administrative_Areas": [
+        "Madagascar"
+      ],
+      "Start_Date": "27 February 2012",
+      "End_Date": "6 March 2012",
+      "Num": "NULL",
+      "Annotation": "Preparation and impact"
+    },
+    {
+      "Administrative_Areas": [
+        "Mozambique"
+      ],
+      "Start_Date": "6 March 2012",
+      "End_Date": "14 March 2012",
+      "Num": "NULL",
+      "Annotation": "Preparation and impact"
+    },
+    {
+      "Administrative_Areas": [
+        "South Africa"
+      ],
+      "Start_Date": "6 March 2012",
+      "End_Date": "14 March 2012",
+      "Num": "NULL",
+      "Annotation": "Preparation and impact"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Affected": [
+    {
+      "Administrative_Area": "Madagascar",
+      "Locations": [
+        "Antananarivo",
+        "Ifanadiana district"
+      ],
+      "Start_Date": "27 February 2012",
+      "End_Date": "6 March 2012",
+      "Num": "72",
+      "Annotation": "Preparation and impact"
+    },
+    {
+      "Administrative_Area": "Mozambique",
+      "Locations": [
+        "Coast of Mozambique",
+        "South of Mozambique"
+      ],
+      "Start_Date": "6 March 2012",
+      "End_Date": "14 March 2012",
+      "Num": "8",
+      "Annotation": "Preparation and impact"
+    },
+    {
+      "Administrative_Area": "South Africa",
+      "Locations": [
+        "Durban"
+      ],
+      "Start_Date": "6 March 2012",
+      "End_Date": "14 March 2012",
+      "Num": "4",
+      "Annotation": "Preparation and impact"
+    }
+  ],
+  "Total_Summary_Buildings_Damaged": {
+    "Total_Buildings_Damaged": "NULL",
+    "Total_Buildings_Damaged_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+    {
+      "Administrative_Areas": "Madagascar",
+      "Start_Date": "27 February 2012",
+      "End_Date": "6 March 2012",
+      "Num": "nearly 1,348 homes",
+      "Annotation": "Preparation and impact"
+    },
+    {
+      "Administrative_Areas": "Mozambique",
+      "Start_Date": "5 March 2012",
+      "End_Date": "14 March 2012",
+      "Num": "NULL",
+      "Annotation": "Preparation and impact"
+    },
+    {
+      "Administrative_Areas": "South Africa",
+      "Start_Date": "5 March 2012",
+      "End_Date": "14 March 2012",
+      "Num": "NULL",
+      "Annotation": "Preparation and impact"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+    {
+      "Administrative_Area": "Madagascar",
+      "Locations": [
+        "Antananarivo",
+        "Ifanadiana district"
+      ],
+      "Start_Date": "27 February 2012",
+      "End_Date": "6 March 2012",
+      "Num": "nearly 1,348 homes",
+      "Annotation": "Preparation and impact"
+    },
+    {
+      "Administrative_Area": "Mozambique",
+      "Locations": [
+        "coast of Mozambique",
+        "south of the country"
+      ],
+      "Start_Date": "5 March 2012",
+      "End_Date": "14 March 2012",
+      "Num": "NULL",
+      "Annotation": "Preparation and impact"
+    },
+    {
+      "Administrative_Area": "South Africa",
+      "Locations": [
+        "port of Durban"
+      ],
+      "Start_Date": "5 March 2012",
+      "End_Date": "14 March 2012",
+      "Num": "NULL",
+      "Annotation": "Preparation and impact"
+    }
+  ],
+  "Total_Summary_Deaths": {
+    "Total_Deaths": "77",
+    "Total_Deaths_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Deaths": [
+    {
+      "Administrative_Areas": "Madagascar",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "at least 65",
+      "Annotation": "Preparation and impact"
+    },
+    {
+      "Administrative_Areas": "Mozambique",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "at least 8",
+      "Annotation": "Preparation and impact"
+    },
+    {
+      "Administrative_Areas": "South Africa",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "4",
+      "Annotation": "Preparation and impact"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Deaths": [
+    {
+      "Administrative_Area": "Madagascar",
+      "Locations": [
+        "Ifanadiana district"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "most of them",
+      "Annotation": "Preparation and impact"
+    },
+    {
+      "Administrative_Area": "Mozambique",
+      "Locations": [
+        "coast",
+        "south of the country"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "5;3",
+      "Annotation": "Preparation and impact"
+    },
+    {
+      "Administrative_Area": "South Africa",
+      "Locations": [
+        "port of Durban"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "4",
+      "Annotation": "Preparation and impact"
+    }
+  ],
+  "Total_Summary_Displaced": {
+    "Total_Displaced": "911",
+    "Total_Displaced_Annotation": "Preparation and impact"
+  },
+  "Instance_Per_Administrative_Areas_Displaced": [
+    {
+      "Administrative_Areas": [
+        "Madagascar"
+      ],
+      "Start_Date": "27 February 2012",
+      "End_Date": "6 March 2012",
+      "Num": "911",
+      "Annotation": "Preparation and impact"
+    },
+    {
+      "Administrative_Areas": [
+        "Mozambique"
+      ],
+      "Start_Date": "5 March 2012",
+      "End_Date": "6 March 2012",
+      "Num": "NULL",
+      "Annotation": "Preparation and impact"
+    },
+    {
+      "Administrative_Areas": [
+        "South Africa"
+      ],
+      "Start_Date": "5 March 2012",
+      "End_Date": "6 March 2012",
+      "Num": "NULL",
+      "Annotation": "Preparation and impact"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Displaced": [
+    {
+      "Administrative_Area": "Madagascar",
+      "Locations": [
+        "Antananarivo",
+        "Ifanadiana district"
+      ],
+      "Start_Date": "27 February 2012",
+      "End_Date": "6 March 2012",
+      "Num": "911",
+      "Annotation": "Preparation and impact"
+    },
+    {
+      "Administrative_Area": "Mozambique",
+      "Locations": [
+        "Coast of Mozambique",
+        "South of Mozambique"
+      ],
+      "Start_Date": "5 March 2012",
+      "End_Date": "6 March 2012",
+      "Num": "NULL",
+      "Annotation": "Preparation and impact"
+    },
+    {
+      "Administrative_Area": "South Africa",
+      "Locations": [
+        "Port of Durban"
+      ],
+      "Start_Date": "5 March 2012",
+      "End_Date": "6 March 2012",
+      "Num": "NULL",
+      "Annotation": "Preparation and impact"
+    }
+  ],
+  "Total_Summary_Homeless": {
+    "Total_Homeless": "NULL",
+    "Total_Homeless_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Homeless": [
+    {
+      "Administrative_Areas": "Madagascar",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Preparation and impact"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Homeless": [
+    {
+      "Administrative_Area": "Madagascar",
+      "Locations": [
+        "near Antananarivo"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "911",
+      "Annotation": "Preparation and impact"
+    }
+  ],
+  "Total_Summary_Injuries": {
+    "Total_Injuries": "NULL",
+    "Total_Injuries_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Injuries": [
+    {
+      "Administrative_Areas": "Madagascar",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Preparation and impact"
+    },
+    {
+      "Administrative_Areas": "Mozambique",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Preparation and impact"
+    },
+    {
+      "Administrative_Areas": "South Africa",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Preparation and impact"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Injuries": [
+    {
+      "Administrative_Area": "Madagascar",
+      "Locations": [
+        "Antananarivo"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "911 misplaced",
+      "Annotation": "Preparation and impact"
+    }
+  ],
+  "Total_Summary_Insured_Damage": {
+    "Total_Insured_Damage": "NULL",
+    "Total_Insured_Damage_Unit": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Insured_Damage_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Insured_Damage": [
+    {
+      "Administrative_Areas": [
+        "Madagascar",
+        "Mozambique",
+        "South Africa"
+      ],
+      "Start_Date": "27 February 2012",
+      "End_Date": "14 March 2012",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Preparation and impact"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+    {
+      "Administrative_Area": "Madagascar",
+      "Locations": [
+        "Antananarivo",
+        "Ifanadiana district"
+      ],
+      "Start_Date": "27 February 2012",
+      "End_Date": "6 March 2012",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Preparation and impact"
+    },
+    {
+      "Administrative_Area": "Mozambique",
+      "Locations": [
+        "Coast of Mozambique",
+        "South of Mozambique"
+      ],
+      "Start_Date": "27 February 2012",
+      "End_Date": "6 March 2012",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Preparation and impact"
+    },
+    {
+      "Administrative_Area": "South Africa",
+      "Locations": [
+        "Port of Durban"
+      ],
+      "Start_Date": "27 February 2012",
+      "End_Date": "6 March 2012",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Preparation and impact"
+    }
+  ],
+  "Total_Summary_Damage": {
+    "Total_Damage": "Unknown",
+    "Total_Damage_Unit": "NULL",
+    "Total_Damage_Inflation_Adjusted": "NULL",
+    "Total_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Damage_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Damage": [
+    {
+      "Administrative_Areas": "Madagascar",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Preparation and impact"
+    },
+    {
+      "Administrative_Areas": "Mozambique",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Preparation and impact"
+    },
+    {
+      "Administrative_Areas": "South Africa",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Preparation and impact"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Damage": [
+    {
+      "Administrative_Area": "Madagascar",
+      "Locations": [
+        "Antananarivo",
+        "Ifanadiana district"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Preparation and impact"
+    },
+    {
+      "Administrative_Area": "Mozambique",
+      "Locations": [
+        "Coast of Mozambique",
+        "South of Mozambique"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Preparation and impact"
+    },
+    {
+      "Administrative_Area": "South Africa",
+      "Locations": [
+        "Port of Durban"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Preparation and impact"
+    }
+  ],
+  "Main_Event": "Tropical Storm/Cyclone",
+  "Main_Event_Annotation": "Info_Box",
+  "Hazards": "Wind|Flood",
+  "Hazards_Annotation": "Preparation and impact",
+  "Start_Date": "25 February 2012",
+  "End_Date": "14 March 2012",
+  "Time_Annotation": "Info_Box",
+  "Administrative_Areas": [
+    "Madagascar",
+    "Mozambique",
+    "South Africa"
+  ],
+  "Administrative_Areas_Annotation": "Info_Box"
+}

@@ -1,0 +1,755 @@
+{
+  "Event_ID": "EbRieya",
+  "Sources": "https://en.wikipedia.org/wiki/Hurricane_Connie",
+  "Event_Names": "Hurricane Connie",
+  "Total_Summary_Affected": {
+    "Total_Affected": "NULL",
+    "Total_Affected_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Affected": [
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "August 12, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "295,000 people lost electric power",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Areas": [
+        "Canada"
+      ],
+      "Start_Date": "August 14, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "NULL",
+      "Annotation": "United States and Canada"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Affected": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "North Carolina"
+      ],
+      "Start_Date": "August 12, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "14,000 people evacuated the coastline",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "New Bern, North Carolina"
+      ],
+      "Start_Date": "August 12, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "2,000 people evacuated from flood-prone areas",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Philadelphia"
+      ],
+      "Start_Date": "August 12, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "800 scouts evacuated from Camp Delmont",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "North Jersey"
+      ],
+      "Start_Date": "August 12, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "300 residents evacuated",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "North Carolina"
+      ],
+      "Start_Date": "August 12, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "1,000 people evacuated along the Pamlico River in Washington",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Pennsylvania"
+      ],
+      "Start_Date": "August 12, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "63 Girl Scouts evacuated from Camp Helena near Bethlehem",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "New York City"
+      ],
+      "Start_Date": "August 12, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "100,000 people lost power",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Area": "Canada",
+      "Locations": [
+        "Burlington, Ontario"
+      ],
+      "Start_Date": "August 14, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "27 boats destroyed",
+      "Annotation": "United States and Canada"
+    }
+  ],
+  "Total_Summary_Buildings_Damaged": {
+    "Total_Buildings_Damaged": "NULL",
+    "Total_Buildings_Damaged_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "August 12, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "NULL",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Areas": "Canada",
+      "Start_Date": "August 14, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "NULL",
+      "Annotation": "United States and Canada"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "North Carolina"
+      ],
+      "Start_Date": "August 12, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "40 buildings",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Myrtle Beach, South Carolina"
+      ],
+      "Start_Date": "August 12, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "40 buildings",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Puerto Rico"
+      ],
+      "Start_Date": "August 3, 1955",
+      "End_Date": "August 7, 1955",
+      "Num": "60 poorly-built houses",
+      "Annotation": "Caribbean"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Saint Thomas"
+      ],
+      "Start_Date": "August 3, 1955",
+      "End_Date": "August 7, 1955",
+      "Num": "a few shacks and boats",
+      "Annotation": "Caribbean"
+    },
+    {
+      "Administrative_Area": "Canada",
+      "Locations": [
+        "Burlington, Ontario"
+      ],
+      "Start_Date": "August 14, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "27 boats",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Area": "Canada",
+      "Locations": [
+        "Ontario"
+      ],
+      "Start_Date": "August 14, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "6 houses",
+      "Annotation": "United States and Canada"
+    }
+  ],
+  "Total_Summary_Deaths": {
+    "Total_Deaths": "77",
+    "Total_Deaths_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Deaths": [
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Areas": "Canada",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "United States and Canada"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Deaths": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "North Carolina"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "27",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Washington, D.C."
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "4",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Chesapeake Bay"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "14",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Pennsylvania"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "6",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "New Jersey"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "6",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "New York"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "14",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Area": "Canada",
+      "Locations": [
+        "Ontario"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "3",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "United States Virgin Islands"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "3",
+      "Annotation": "Caribbean"
+    }
+  ],
+  "Total_Summary_Displaced": {
+    "Total_Displaced": "NULL",
+    "Total_Displaced_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Displaced": [
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Displaced": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Northern coast of Puerto Rico"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "40,000",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Four towns along beaches"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "14,000",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "New Bern, North Carolina"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "2,000",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Philadelphia"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "800",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "North Jersey"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "300",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Washington, North Carolina"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "1,000",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Manville, New Jersey"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Philadelphia"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "Hundreds",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Camp Helena near Bethlehem, Pennsylvania"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "63",
+      "Annotation": "United States and Canada"
+    }
+  ],
+  "Total_Summary_Homeless": {
+    "Total_Homeless": "NULL",
+    "Total_Homeless_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Homeless": [
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "NULL"
+    },
+    {
+      "Administrative_Areas": "Canada",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Homeless": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Puerto Rico"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "60",
+      "Annotation": "Caribbean"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "North Carolina"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "about 1,000",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Pennsylvania"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "hundreds",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "New Jersey"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "300",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Area": "Canada",
+      "Locations": [
+        "Ontario"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "several",
+      "Annotation": "United States and Canada"
+    }
+  ],
+  "Total_Summary_Injuries": {
+    "Total_Injuries": "NULL",
+    "Total_Injuries_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Injuries": [
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Areas": "Canada",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "United States and Canada"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Injuries": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Bethany Beach, Delaware"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "one",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Tenafly, New Jersey"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "one",
+      "Annotation": "United States and Canada"
+    }
+  ],
+  "Total_Summary_Insured_Damage": {
+    "Total_Insured_Damage": "NULL",
+    "Total_Insured_Damage_Unit": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Insured_Damage_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Insured_Damage": [
+    {
+      "Administrative_Areas": [
+        "United States",
+        "Canada"
+      ],
+      "Start_Date": "August 3, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "United States and Canada"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "North Carolina",
+        "Virginia",
+        "Maryland",
+        "Washington D.C.",
+        "New Jersey",
+        "Pennsylvania",
+        "New York"
+      ],
+      "Start_Date": "August 3, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Area": "Canada",
+      "Locations": [
+        "Ontario"
+      ],
+      "Start_Date": "August 3, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "United States and Canada"
+    }
+  ],
+  "Total_Summary_Damage": {
+    "Total_Damage": "$86 million",
+    "Total_Damage_Unit": "USD",
+    "Total_Damage_Inflation_Adjusted": "No",
+    "Total_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Damage_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Damage": [
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "August 12, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "$86,065,000",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Areas": [
+        "Canada"
+      ],
+      "Start_Date": "August 14, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "United States and Canada"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Damage": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "North Carolina"
+      ],
+      "Start_Date": "August 12, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "$40 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "South Carolina"
+      ],
+      "Start_Date": "August 12, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Virginia"
+      ],
+      "Start_Date": "August 12, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Maryland"
+      ],
+      "Start_Date": "August 12, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Delaware"
+      ],
+      "Start_Date": "August 12, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "New Jersey"
+      ],
+      "Start_Date": "August 12, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Pennsylvania"
+      ],
+      "Start_Date": "August 12, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "New York"
+      ],
+      "Start_Date": "August 12, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Connecticut"
+      ],
+      "Start_Date": "August 12, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Area": "Canada",
+      "Locations": [
+        "Ontario"
+      ],
+      "Start_Date": "August 14, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "United States and Canada"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Michigan"
+      ],
+      "Start_Date": "August 14, 1955",
+      "End_Date": "August 15, 1955",
+      "Num": "$150,000",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "United States and Canada"
+    }
+  ],
+  "Main_Event": "Tropical Storm/Cyclone",
+  "Main_Event_Annotation": "Info_Box",
+  "Hazards": "Wind|Flood|Lightning",
+  "Hazards_Annotation": "Info_Box|Caribbean|United States and Canada",
+  "Start_Date": "August 3, 1955",
+  "End_Date": "August 15, 1955",
+  "Time_Annotation": "Info_Box"
+}

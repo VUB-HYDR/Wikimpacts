@@ -1,0 +1,610 @@
+{
+  "Event_ID": "q1CoBU6",
+  "Sources": "https://en.wikipedia.org/wiki/2011_T%C5%8Dhoku_earthquake_and_tsunami",
+  "Event_Names": "2011 T\u014dhoku earthquake and tsunami",
+  "Json_Error": "{\n  \"Total_Summary_Affected\": {\n    \"Total_Affected\": \"NULL\",\n    \"Total_Affected_Annotation\": \"NULL\"\n  },\n  \"Instance_Per_Administrative_Areas_Affected\": [\n    {\n      \"Administrative_Areas\": [\"Japan\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"340,000 displaced people\",\n      \"Annotation\": \"Aftermath\"\n    },\n    {\n      \"Administrative_Areas\": [\"Japan\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"228,863 people were still living away from their home in either temporary housing or due to permanent relocation\",\n      \"Annotation\": \"2011 T\u014dhoku earthquake and tsunami\"\n    }\n  ],\n  \"Specific_Instance_Per_Administrative_Area_Affected\": [\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Miyagi\", \"Iwate\", \"Fukushima\", \"Ibaraki\", \"Chiba\", \"Tokyo\", \"Kanagawa\", \"Tochigi\", \"Aomori\", \"Yamagata\", \"Gunma\", \"Saitama\", \"Hokkaido\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"19,759 deaths\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Miyagi\", \"Iwate\", \"Fukushima\", \"Ibaraki\", \"Chiba\", \"Tokyo\", \"Kanagawa\", \"Tochigi\", \"Aomori\", \"Yamagata\", \"Gunma\", \"Saitama\", \"Hokkaido\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"6,242 injured\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Miyagi\", \"Iwate\", \"Fukushima\", \"Ibaraki\", \"Chiba\", \"Tokyo\", \"Kanagawa\", \"Tochigi\", \"Aomori\", \"Yamagata\", \"Gunma\", \"Saitama\", \"Hokkaido\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"2,553 people missing\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Iwate\", \"Miyagi\", \"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"58% of people in coastal areas heeded tsunami warnings immediately after the quake and headed for higher ground\",\n      \"Annotation\": \"Tsunami\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Iwate\", \"Miyagi\", \"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"1,580 children lost either one or both parents\",\n      \"Annotation\": \"Others\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Iwate\", \"Miyagi\", \"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"236 children were orphaned\",\n      \"Annotation\": \"Others\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Iwate\", \"Miyagi\", \"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"378 elementary, middle-school, and high school students killed\",\n      \"Annotation\": \"Others\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Iwate\", \"Miyagi\", \"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"158 elementary, middle-school, and high school students missing\",\n      \"Annotation\": \"Others\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Okawa Elementary School, Ishinomaki, Miyagi\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"84 drowned\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Okawa Elementary School, Ishinomaki, Miyagi\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"74 of 108 students and 10 of 13 teachers lost\",\n      \"Annotation\": \"Others\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"More deaths from indirect causes than direct causes\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima\"],\n      \"Start_Date\": \"11 March 2011\",\n      \"End_Date\": \"NULL\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Key statistics\"\n    },\n    {\n      \"Administrative_Area\": \"Japan\",\n      \"Locations\": [\"Fukushima",
+  "Total_Summary_Buildings_Damaged": {
+    "Total_Buildings_Damaged": "121,778 buildings as 'total collapsed', 280,926 buildings 'half collapsed', and 699,180 buildings 'partially damaged'",
+    "Total_Buildings_Damaged_Annotation": "Damage and effects"
+  },
+  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+    {
+      "Administrative_Areas": "Japan",
+      "Start_Date": "2011-03-11",
+      "End_Date": "NULL",
+      "Num": "121,778 buildings as 'total collapsed', 280,926 buildings 'half collapsed', and 699,180 buildings 'partially damaged'",
+      "Annotation": "Damage and effects"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Miyagi Prefecture"
+      ],
+      "Start_Date": "2011-03-11",
+      "End_Date": "NULL",
+      "Num": "29,500 structures",
+      "Annotation": "Damage and effects"
+    },
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Iwate Prefecture"
+      ],
+      "Start_Date": "2011-03-11",
+      "End_Date": "NULL",
+      "Num": "12,500 structures",
+      "Annotation": "Damage and effects"
+    },
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Fukushima Prefecture"
+      ],
+      "Start_Date": "2011-03-11",
+      "End_Date": "NULL",
+      "Num": "2,400 structures",
+      "Annotation": "Damage and effects"
+    },
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Tokyo"
+      ],
+      "Start_Date": "2011-03-11",
+      "End_Date": "NULL",
+      "Num": "30 homes or buildings destroyed and 1,046 other buildings damaged",
+      "Annotation": "Geophysical effects"
+    },
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Urayasu",
+        "Chiba City",
+        "Funabashi",
+        "Narashino",
+        "Koto",
+        "Edogawa",
+        "Minato",
+        "Ch\u016b\u014d",
+        "\u014cta Wards of Tokyo"
+      ],
+      "Start_Date": "2011-03-11",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Geophysical effects"
+    },
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Higashimatsushima"
+      ],
+      "Start_Date": "2011-03-11",
+      "End_Date": "NULL",
+      "Num": "Hundreds of bodies found",
+      "Annotation": "Others"
+    }
+  ],
+  "Total_Summary_Deaths": {
+    "Total_Deaths": "19,759",
+    "Total_Deaths_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Deaths": [
+    {
+      "Administrative_Areas": "Japan",
+      "Start_Date": "2011-03-11",
+      "End_Date": "NULL",
+      "Num": "19,759",
+      "Annotation": "Info_Box"
+    },
+    {
+      "Administrative_Areas": "Indonesia",
+      "Start_Date": "2011-03-11",
+      "End_Date": "NULL",
+      "Num": "1",
+      "Annotation": "Overseas"
+    },
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "2011-03-11",
+      "End_Date": "NULL",
+      "Num": "1",
+      "Annotation": "Overseas"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Deaths": [
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Miyagi",
+        "Iwate",
+        "Fukushima",
+        "Ibaraki",
+        "Chiba",
+        "Tokyo",
+        "Kanagawa",
+        "Tochigi",
+        "Aomori",
+        "Yamagata",
+        "Gunma",
+        "Saitama",
+        "Hokkaido"
+      ],
+      "Start_Date": "2011-03-11",
+      "End_Date": "NULL",
+      "Num": "19,759",
+      "Annotation": "Key statistics"
+    },
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Okawa Elementary School"
+      ],
+      "Start_Date": "2011-03-11",
+      "End_Date": "NULL",
+      "Num": "84",
+      "Annotation": "Key statistics"
+    },
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Minamisanriku"
+      ],
+      "Start_Date": "2011-03-11",
+      "End_Date": "NULL",
+      "Num": "9,500 missing",
+      "Annotation": "Japan"
+    },
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Ishinomaki"
+      ],
+      "Start_Date": "2011-03-11",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Japan"
+    },
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Fukushima Prefecture"
+      ],
+      "Start_Date": "2011-03-11",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Key statistics"
+    },
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Fukushima Daiichi Nuclear Power Plant"
+      ],
+      "Start_Date": "2011-03-11",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Fukushima meltdowns"
+    },
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Higashimatsushima"
+      ],
+      "Start_Date": "2011-03-11",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Others"
+    },
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "T\u014dhoku region"
+      ],
+      "Start_Date": "2011-03-11",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Aftermath"
+    },
+    {
+      "Administrative_Area": "Indonesia",
+      "Locations": [
+        "Jayapura"
+      ],
+      "Start_Date": "2011-03-11",
+      "End_Date": "NULL",
+      "Num": "1",
+      "Annotation": "Overseas"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Klamath River",
+        "Crescent City",
+        "Fort Stevens State Park"
+      ],
+      "Start_Date": "2011-03-11",
+      "End_Date": "2011-04-02",
+      "Num": "1",
+      "Annotation": "Overseas"
+    }
+  ],
+  "Total_Summary_Displaced": {
+    "Total_Displaced": "over 340,000",
+    "Total_Displaced_Annotation": "Aftermath"
+  },
+  "Instance_Per_Administrative_Areas_Displaced": [
+    {
+      "Administrative_Areas": "Japan",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "over 340,000",
+      "Annotation": "Aftermath"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Displaced": [
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "T\u014dhoku region"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "over 340,000",
+      "Annotation": "Aftermath"
+    },
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Iwate",
+        "Miyagi",
+        "Fukushima"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "228,863",
+      "Annotation": "2011 T\u014dhoku earthquake and tsunami"
+    },
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Kuril Islands"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "11,000",
+      "Annotation": "Elsewhere across the Pacific"
+    },
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Boram Hospital, Wewak, East Sepik, Papua New Guinea"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "100",
+      "Annotation": "Elsewhere across the Pacific"
+    },
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Gal\u00e1pagos Islands"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "260 families",
+      "Annotation": "Elsewhere across the Pacific"
+    }
+  ],
+  "Total_Summary_Homeless": {
+    "Total_Homeless": "NULL",
+    "Total_Homeless_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Homeless": [
+    {
+      "Administrative_Areas": [
+        "Japan"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "340,000 displaced people",
+      "Annotation": "Aftermath"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Homeless": [
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Iwate",
+        "Miyagi",
+        "Fukushima"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "228,863 people were still living away from their home in either temporary housing or due to permanent relocation",
+      "Annotation": "2011 T\u014dhoku earthquake and tsunami"
+    }
+  ],
+  "Total_Summary_Injuries": {
+    "Total_Injuries": "6,242",
+    "Total_Injuries_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Injuries": [
+    {
+      "Administrative_Areas": "Japan",
+      "Start_Date": "2011-03-11",
+      "End_Date": "NULL",
+      "Num": "6,242",
+      "Annotation": "Info_Box"
+    },
+    {
+      "Administrative_Areas": "Japan",
+      "Start_Date": "2011-03-11",
+      "End_Date": "NULL",
+      "Num": "420",
+      "Annotation": "Others"
+    },
+    {
+      "Administrative_Areas": "Japan",
+      "Start_Date": "2011-03-11",
+      "End_Date": "NULL",
+      "Num": "185",
+      "Annotation": "Aftershocks"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Injuries": [
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Fukushima"
+      ],
+      "Start_Date": "2011-03-11",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Fukushima meltdowns"
+    },
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Higashid\u014dri Nuclear Power Plant",
+        "Rokkasho Reprocessing Plant"
+      ],
+      "Start_Date": "2011-04-07",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Nuclear power plants"
+    },
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Sendai"
+      ],
+      "Start_Date": "2011-03-11",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Aftershocks"
+    },
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Miyagi",
+        "Fukushima"
+      ],
+      "Start_Date": "2021-02-13",
+      "End_Date": "NULL",
+      "Num": "185",
+      "Annotation": "Aftershocks"
+    },
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Boram Hospital, Wewak, East Sepik, Papua New Guinea"
+      ],
+      "Start_Date": "2011-03-11",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Elsewhere across the Pacific"
+    }
+  ],
+  "Total_Summary_Insured_Damage": {
+    "Total_Insured_Damage": "US$14.5 to $34.6 billion",
+    "Total_Insured_Damage_Unit": "USD",
+    "Total_Insured_Damage_Inflation_Adjusted": "No",
+    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Insured_Damage_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Insured_Damage": [
+    {
+      "Administrative_Areas": "Japan",
+      "Start_Date": "11 March 2011",
+      "End_Date": "NULL",
+      "Num": "US$14.5 to $34.6 billion",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Info_Box"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Fukushima Daiichi Nuclear Power Plant"
+      ],
+      "Start_Date": "11 March 2011",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Fukushima meltdowns"
+    }
+  ],
+  "Total_Summary_Damage": {
+    "Total_Damage": "$360 billion USD",
+    "Total_Damage_Unit": "USD",
+    "Total_Damage_Inflation_Adjusted": "No",
+    "Total_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Damage_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Damage": [
+    {
+      "Administrative_Areas": "Japan",
+      "Start_Date": "11 March 2011",
+      "End_Date": "NULL",
+      "Num": "$300 billion",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Damage and effects"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Damage": [
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Miyagi Prefecture",
+        "Iwate Prefecture",
+        "Fukushima Prefecture"
+      ],
+      "Start_Date": "11 March 2011",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Damage and effects"
+    },
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Tokyo"
+      ],
+      "Start_Date": "11 March 2011",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Damage and effects"
+    },
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Sendai"
+      ],
+      "Start_Date": "11 March 2011",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Damage and effects"
+    },
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Hachinohe",
+        "Sendai",
+        "Ishinomaki",
+        "Onahama",
+        "Chiba",
+        "Kashima",
+        "Hitachinaka",
+        "Hitachi",
+        "Soma",
+        "Shiogama",
+        "Kesennuma",
+        "Ofunato",
+        "Kamashi",
+        "Miyako"
+      ],
+      "Start_Date": "11 March 2011",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Ports"
+    },
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Tokyo Disneyland"
+      ],
+      "Start_Date": "11 March 2011",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Transport"
+    },
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Matsushima Air Field"
+      ],
+      "Start_Date": "11 March 2011",
+      "End_Date": "NULL",
+      "Num": "$1 billion",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Defense"
+    },
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "Cosmo Oil Company refinery in Ichihara, Chiba Prefecture"
+      ],
+      "Start_Date": "11 March 2011",
+      "End_Date": "21 March 2011",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Oil, gas and coal"
+    },
+    {
+      "Administrative_Area": "Japan",
+      "Locations": [
+        "JX Nippon Oil & Energy refinery in Sendai"
+      ],
+      "Start_Date": "11 March 2011",
+      "End_Date": "14 March 2011",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Oil, gas and coal"
+    }
+  ],
+  "Main_Event": "Flood",
+  "Main_Event_Annotation": "Info_Box",
+  "Hazards": "Flood",
+  "Hazards_Annotation": "Info_Box",
+  "Start_Date": "2011-03-11",
+  "End_Date": "2011-03-11",
+  "Time_Annotation": "Info_Box",
+  "Administrative_Areas": [
+    "Japan",
+    "Russia",
+    "United States",
+    "Canada",
+    "Philippines",
+    "Indonesia",
+    "Papua New Guinea",
+    "Hawaii",
+    "Tonga",
+    "New Zealand",
+    "American Samoa",
+    "Guam",
+    "Mexico",
+    "Peru",
+    "Chile",
+    "Gal\u00e1pagos Islands",
+    "Norway"
+  ],
+  "Administrative_Areas_Annotation": "Elsewhere across the Pacific"
+}

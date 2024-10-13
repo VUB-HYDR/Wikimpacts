@@ -115,26 +115,31 @@ if __name__ == "__main__":
                 batch_id = batch.id
                 output_file_id = batch.output_file_id
                 # Retrieve the batch details
-                client.batches.retrieve(batch_id)
-                # Retrieve the file content associated with the output_file_id
-                file_response = client.files.content(output_file_id)
-                batch_responses = file_response.text
+                try:
+                    client.batches.retrieve(batch_id)
+                    # Retrieve the file content associated with the output_file_id
+                    file_response = client.files.content(output_file_id)
+                    batch_responses = file_response.text
 
-                # Iterate over the parsed JSON lines and find all matching custom_ids
-                res = [json.loads(line) for line in batch_responses.strip().splitlines()]
-                for i in res:
-                    custom_id = i.get("custom_id", "")
-                    if Event_ID in custom_id:
-                        try:
-                            # Retrieve the message content for the matching custom_id
-                            message_content = get_message_by_custom_id(res, custom_id)
+                    # Iterate over the parsed JSON lines and find all matching custom_ids
+                    res = [json.loads(line) for line in batch_responses.strip().splitlines()]
+                    for i in res:
+                        custom_id = i.get("custom_id", "")
 
-                            # Update the df dictionary with the message content directly
-                            df.update(message_content)
-                        except json.JSONDecodeError as e:
-                            # If a JSONDecodeError occurs, log the error in the df
-                            df["Json_Error"] = str(e)
+                        if custom_id is not None and Event_ID in custom_id:
+                            try:
+                                # Retrieve the message content for the matching custom_id
+                                message_content = get_message_by_custom_id(res, custom_id)
+
+                                # Update the df dictionary with the message content directly
+                                df.update(message_content)
+                            except json.JSONDecodeError as e:
+                                # If a JSONDecodeError occurs, log the error in the df
+                                df["Json_Error"] = str(e)
                     # Append the dictionary to the response list
+                except ValueError:
+                    pass
+
         response.append(df)
 
     out_file_path = (

@@ -1,0 +1,473 @@
+{
+  "Event_ID": "CTxMipV",
+  "Sources": "https://en.wikipedia.org/wiki/Cyclone_Sarai",
+  "Event_Names": "Cyclone Sarai",
+  "Total_Summary_Affected": {
+    "Total_Affected": "NULL",
+    "Total_Affected_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Affected": [
+    {
+      "Administrative_Areas": "Fiji",
+      "Start_Date": "December 26",
+      "End_Date": "December 30",
+      "Num": "2,121 people",
+      "Annotation": "Fiji"
+    },
+    {
+      "Administrative_Areas": "Tonga",
+      "Start_Date": "December 27",
+      "End_Date": "December 31",
+      "Num": "NULL",
+      "Annotation": "Tonga"
+    },
+    {
+      "Administrative_Areas": "Niue",
+      "Start_Date": "December 31",
+      "End_Date": "December 31",
+      "Num": "NULL",
+      "Annotation": "Niue and the southern Cook Islands"
+    },
+    {
+      "Administrative_Areas": "Cook Islands",
+      "Start_Date": "January 1",
+      "End_Date": "January 2",
+      "Num": "NULL",
+      "Annotation": "Niue and the southern Cook Islands"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Affected": [
+    {
+      "Administrative_Area": "Fiji",
+      "Locations": [
+        "Lautoka",
+        "Ovalau"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "360 people",
+      "Annotation": "Fiji"
+    },
+    {
+      "Administrative_Area": "Fiji",
+      "Locations": [
+        "Various shelters throughout Fiji"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "2,121 people",
+      "Annotation": "Fiji"
+    },
+    {
+      "Administrative_Area": "Cook Islands",
+      "Locations": [
+        "Rarotonga"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Niue and the southern Cook Islands"
+    }
+  ],
+  "Total_Summary_Buildings_Damaged": {
+    "Total_Buildings_Damaged": "NULL",
+    "Total_Buildings_Damaged_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+    {
+      "Administrative_Areas": "Tonga",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Tonga"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+    {
+      "Administrative_Area": "Tonga",
+      "Locations": [
+        "Ha'ateiho"
+      ],
+      "Start_Date": "December 30",
+      "End_Date": "December 30",
+      "Num": "NULL",
+      "Annotation": "Tonga"
+    }
+  ],
+  "Total_Summary_Deaths": {
+    "Total_Deaths": "2",
+    "Total_Deaths_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Deaths": [
+    {
+      "Administrative_Areas": "Fiji",
+      "Start_Date": "December 26",
+      "End_Date": "December 30",
+      "Num": "2",
+      "Annotation": "Fiji"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Deaths": [
+    {
+      "Administrative_Area": "Fiji",
+      "Locations": [
+        "Kadavu Island",
+        "Vunidawa"
+      ],
+      "Start_Date": "December 26",
+      "End_Date": "December 30",
+      "Num": "1",
+      "Annotation": "Fiji"
+    },
+    {
+      "Administrative_Area": "Fiji",
+      "Locations": [
+        "Vunidawa"
+      ],
+      "Start_Date": "December 26",
+      "End_Date": "December 30",
+      "Num": "1",
+      "Annotation": "Fiji"
+    }
+  ],
+  "Total_Summary_Displaced": {
+    "Total_Displaced": "NULL",
+    "Total_Displaced_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Displaced": [
+    {
+      "Administrative_Areas": "Fiji",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "2,121 people",
+      "Annotation": "Fiji"
+    },
+    {
+      "Administrative_Areas": "Tonga",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Tonga"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Displaced": [
+    {
+      "Administrative_Area": "Fiji",
+      "Locations": [
+        "Lautoka",
+        "Ovalau"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "360 people",
+      "Annotation": "Fiji"
+    },
+    {
+      "Administrative_Area": "Fiji",
+      "Locations": [
+        "Various locations throughout Fiji"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "2,121 people",
+      "Annotation": "Fiji"
+    }
+  ],
+  "Total_Summary_Homeless": {
+    "Total_Homeless": "NULL",
+    "Total_Homeless_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Homeless": [
+    {
+      "Administrative_Areas": "Fiji",
+      "Start_Date": "December 26",
+      "End_Date": "December 30",
+      "Num": "2,121 people sought shelter in 55 shelters",
+      "Annotation": "Fiji"
+    },
+    {
+      "Administrative_Areas": "Tonga",
+      "Start_Date": "December 27",
+      "End_Date": "December 31",
+      "Num": "NULL",
+      "Annotation": "Tonga"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Homeless": [
+    {
+      "Administrative_Area": "Fiji",
+      "Locations": [
+        "Lautoka",
+        "Ovalau"
+      ],
+      "Start_Date": "December 26",
+      "End_Date": "December 30",
+      "Num": "360 people evacuated to 15 shelters",
+      "Annotation": "Fiji"
+    },
+    {
+      "Administrative_Area": "Fiji",
+      "Locations": [
+        "Fiji"
+      ],
+      "Start_Date": "December 26",
+      "End_Date": "December 30",
+      "Num": "2,121 people sought shelter in 55 shelters",
+      "Annotation": "Fiji"
+    }
+  ],
+  "Total_Summary_Injuries": {
+    "Total_Injuries": "NULL",
+    "Total_Injuries_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Injuries": [
+    {
+      "Administrative_Areas": "Fiji",
+      "Start_Date": "December 26",
+      "End_Date": "December 30",
+      "Num": "NULL",
+      "Annotation": "Fiji"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Injuries": [
+    {
+      "Administrative_Area": "Fiji",
+      "Locations": [
+        "Nadi"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "One person was hospitalised after being struck by a falling tree",
+      "Annotation": "Fiji"
+    }
+  ],
+  "Total_Summary_Insured_Damage": {
+    "Total_Insured_Damage": "NULL",
+    "Total_Insured_Damage_Unit": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Insured_Damage_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Insured_Damage": [
+    {
+      "Administrative_Areas": "Fiji",
+      "Start_Date": "December 26, 2019",
+      "End_Date": "December 30, 2019",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Fiji"
+    },
+    {
+      "Administrative_Areas": "Tonga",
+      "Start_Date": "December 27, 2019",
+      "End_Date": "December 31, 2019",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Tonga"
+    },
+    {
+      "Administrative_Areas": "Niue",
+      "Start_Date": "December 31, 2019",
+      "End_Date": "January 1, 2020",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Niue and the southern Cook Islands"
+    },
+    {
+      "Administrative_Areas": "Cook Islands",
+      "Start_Date": "January 1, 2020",
+      "End_Date": "January 2, 2020",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Niue and the southern Cook Islands"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+    {
+      "Administrative_Area": "Fiji",
+      "Locations": [
+        "Nadi",
+        "Lautoka",
+        "Ovalau",
+        "Naitasiri",
+        "Kadavu"
+      ],
+      "Start_Date": "December 26, 2019",
+      "End_Date": "December 30, 2019",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Fiji"
+    },
+    {
+      "Administrative_Area": "Tonga",
+      "Locations": [
+        "Tongatapu",
+        "Ha'ateiho",
+        "Ha'apai"
+      ],
+      "Start_Date": "December 27, 2019",
+      "End_Date": "December 31, 2019",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Tonga"
+    },
+    {
+      "Administrative_Area": "Niue",
+      "Locations": [
+        "Niue"
+      ],
+      "Start_Date": "December 31, 2019",
+      "End_Date": "January 1, 2020",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Niue and the southern Cook Islands"
+    },
+    {
+      "Administrative_Area": "Cook Islands",
+      "Locations": [
+        "Rarotonga",
+        "Avatiu Harbour"
+      ],
+      "Start_Date": "January 1, 2020",
+      "End_Date": "January 2, 2020",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Niue and the southern Cook Islands"
+    }
+  ],
+  "Total_Summary_Damage": {
+    "Total_Damage": "$2.3 million",
+    "Total_Damage_Unit": "USD",
+    "Total_Damage_Inflation_Adjusted": "No",
+    "Total_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Damage_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Damage": [
+    {
+      "Administrative_Areas": "Fiji",
+      "Start_Date": "December 26, 2019",
+      "End_Date": "December 30, 2019",
+      "Num": "FJ$5 million (US$2.3 million)",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Fiji"
+    },
+    {
+      "Administrative_Areas": "Tonga",
+      "Start_Date": "December 30, 2019",
+      "End_Date": "December 31, 2019",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Tonga"
+    },
+    {
+      "Administrative_Areas": "Niue",
+      "Start_Date": "December 31, 2019",
+      "End_Date": "January 1, 2020",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Niue and the southern Cook Islands"
+    },
+    {
+      "Administrative_Areas": "Cook Islands",
+      "Start_Date": "January 1, 2020",
+      "End_Date": "January 2, 2020",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Niue and the southern Cook Islands"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Damage": [
+    {
+      "Administrative_Area": "Fiji",
+      "Locations": [
+        "Nadi",
+        "Central Division",
+        "Northern Division",
+        "Western Division",
+        "Kadavu Island",
+        "Vunidawa",
+        "Naqelewai",
+        "Matuku Island",
+        "Nadarivatu District",
+        "Nadi International Airport",
+        "Levuka"
+      ],
+      "Start_Date": "December 26, 2019",
+      "End_Date": "December 30, 2019",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Fiji"
+    },
+    {
+      "Administrative_Area": "Tonga",
+      "Locations": [
+        "Tongatapu",
+        "Ha\u2018ateiho",
+        "Ha\u2019apai"
+      ],
+      "Start_Date": "December 30, 2019",
+      "End_Date": "December 31, 2019",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Tonga"
+    },
+    {
+      "Administrative_Area": "Cook Islands",
+      "Locations": [
+        "Rarotonga",
+        "Avatiu Harbour"
+      ],
+      "Start_Date": "January 1, 2020",
+      "End_Date": "January 2, 2020",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Niue and the southern Cook Islands"
+    }
+  ],
+  "Main_Event": "Tropical Storm/Cyclone",
+  "Main_Event_Annotation": "Info_Box",
+  "Hazards": "Wind|Flood",
+  "Hazards_Annotation": "Info_Box|Fiji|Tonga|Niue and the southern Cook Islands",
+  "Start_Date": "December 23, 2019",
+  "End_Date": "January 2, 2020",
+  "Time_Annotation": "Info_Box",
+  "Administrative_Areas": [
+    "Tuvalu",
+    "Vanuatu",
+    "Fiji",
+    "Tonga",
+    "Niue",
+    "Cook Islands"
+  ],
+  "Administrative_Areas_Annotation": "Info_Box"
+}

@@ -1,0 +1,559 @@
+{
+  "Event_ID": "EHMghN9",
+  "Sources": "https://en.wikipedia.org/wiki/Hurricane_Felix",
+  "Event_Names": "Hurricane Felix",
+  "Total_Summary_Affected": {
+    "Total_Affected": "over 160,000",
+    "Total_Affected_Annotation": "Aftermath"
+  },
+  "Instance_Per_Administrative_Areas_Affected": [
+    {
+      "Administrative_Areas": "Nicaragua",
+      "Start_Date": null,
+      "End_Date": null,
+      "Num": "at least 130",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Areas": "Honduras",
+      "Start_Date": null,
+      "End_Date": null,
+      "Num": "NULL",
+      "Annotation": "Central America"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Affected": [
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "Puerto Cabezas",
+        "Mosquito Coast",
+        "Miskito Cays",
+        "Bilwi"
+      ],
+      "Start_Date": null,
+      "End_Date": null,
+      "Num": "40,000",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Area": "Honduras",
+      "Locations": [
+        "Tegucigalpa",
+        "northwestern regions",
+        "Bay Islands department"
+      ],
+      "Start_Date": null,
+      "End_Date": null,
+      "Num": "NULL",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Area": "Guatemala",
+      "Locations": [
+        "Izabal"
+      ],
+      "Start_Date": null,
+      "End_Date": null,
+      "Num": "850",
+      "Annotation": "Central America"
+    }
+  ],
+  "Total_Summary_Buildings_Damaged": {
+    "Total_Buildings_Damaged": "NULL",
+    "Total_Buildings_Damaged_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+    {
+      "Administrative_Areas": "Trinidad and Tobago",
+      "Start_Date": "September 1, 2007",
+      "End_Date": "September 1, 2007",
+      "Num": "NULL",
+      "Annotation": "Caribbean Islands"
+    },
+    {
+      "Administrative_Areas": "Nicaragua",
+      "Start_Date": "September 4, 2007",
+      "End_Date": "September 4, 2007",
+      "Num": "NULL",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Areas": "Honduras",
+      "Start_Date": "September 4, 2007",
+      "End_Date": "September 4, 2007",
+      "Num": "NULL",
+      "Annotation": "Central America"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+    {
+      "Administrative_Area": "Trinidad and Tobago",
+      "Locations": [
+        "Trinidad"
+      ],
+      "Start_Date": "September 1, 2007",
+      "End_Date": "September 1, 2007",
+      "Num": "several buildings",
+      "Annotation": "Caribbean Islands"
+    },
+    {
+      "Administrative_Area": "Trinidad and Tobago",
+      "Locations": [
+        "Tobago"
+      ],
+      "Start_Date": "September 1, 2007",
+      "End_Date": "September 1, 2007",
+      "Num": "NULL",
+      "Annotation": "Caribbean Islands"
+    },
+    {
+      "Administrative_Area": "Trinidad and Tobago",
+      "Locations": [
+        "Grenada"
+      ],
+      "Start_Date": "September 1, 2007",
+      "End_Date": "September 1, 2007",
+      "Num": "two houses",
+      "Annotation": "Caribbean Islands"
+    },
+    {
+      "Administrative_Area": "Saint Lucia",
+      "Locations": [
+        "Castries"
+      ],
+      "Start_Date": "September 1, 2007",
+      "End_Date": "September 1, 2007",
+      "Num": "one store",
+      "Annotation": "Caribbean Islands"
+    },
+    {
+      "Administrative_Area": "Aruba",
+      "Locations": [
+        "northern town"
+      ],
+      "Start_Date": "September 1, 2007",
+      "End_Date": "September 1, 2007",
+      "Num": "one house",
+      "Annotation": "Caribbean Islands"
+    },
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "Puerto Cabezas"
+      ],
+      "Start_Date": "September 4, 2007",
+      "End_Date": "September 4, 2007",
+      "Num": "nearly every structure",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "Mosquito Coast"
+      ],
+      "Start_Date": "September 4, 2007",
+      "End_Date": "September 4, 2007",
+      "Num": "many houses",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "Miskito Cays"
+      ],
+      "Start_Date": "September 4, 2007",
+      "End_Date": "September 4, 2007",
+      "Num": "NULL",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "Bilwi"
+      ],
+      "Start_Date": "September 4, 2007",
+      "End_Date": "September 4, 2007",
+      "Num": "9,000 houses",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Area": "Honduras",
+      "Locations": [
+        "Tegucigalpa"
+      ],
+      "Start_Date": "September 4, 2007",
+      "End_Date": "September 4, 2007",
+      "Num": "NULL",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Area": "Honduras",
+      "Locations": [
+        "northwestern regions"
+      ],
+      "Start_Date": "September 4, 2007",
+      "End_Date": "September 4, 2007",
+      "Num": "NULL",
+      "Annotation": "Central America"
+    }
+  ],
+  "Total_Summary_Deaths": {
+    "Total_Deaths": "133",
+    "Total_Deaths_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Deaths": [
+    {
+      "Administrative_Areas": "Nicaragua",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "at least 130",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Areas": "Honduras",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "3",
+      "Annotation": "Central America"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Deaths": [
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "Miskito Cays"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "at least 25",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "1",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "1",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "1",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Area": "Honduras",
+      "Locations": [
+        "Tegucigalpa"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "2",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Area": "Honduras",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "1",
+      "Annotation": "Central America"
+    }
+  ],
+  "Total_Summary_Displaced": {
+    "Total_Displaced": "NULL",
+    "Total_Displaced_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Displaced": [
+    {
+      "Administrative_Areas": "Honduras",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "about 20,000",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Areas": "Guatemala",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "850",
+      "Annotation": "Central America"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Displaced": [
+    {
+      "Administrative_Area": "Tobago",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "79 shelters opened",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Area": "Honduras",
+      "Locations": [
+        "Bay Islands department"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "300 tourists evacuated",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Area": "Honduras",
+      "Locations": [
+        "Bay Islands department"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "400 preparing to leave by plane",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Area": "Honduras",
+      "Locations": [
+        "coastal areas"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "approximately 2,000",
+      "Annotation": "Preparations"
+    }
+  ],
+  "Total_Summary_Homeless": {
+    "Total_Homeless": "NULL",
+    "Total_Homeless_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Homeless": [
+    {
+      "Administrative_Areas": "Nicaragua",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "40,000 people were affected",
+      "Annotation": "Central America"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Homeless": [
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "Bilwi (Puerto Cabezas)"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "9,000 houses destroyed",
+      "Annotation": "Central America"
+    }
+  ],
+  "Total_Summary_Injuries": {
+    "Total_Injuries": "NULL",
+    "Total_Injuries_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Injuries": [
+    {
+      "Administrative_Areas": [
+        "Nicaragua"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Areas": [
+        "Honduras"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Central America"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Injuries": [
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "Puerto Cabezas"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "Mosquito Coast"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Area": "Honduras",
+      "Locations": [
+        "Tegucigalpa"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Area": "Honduras",
+      "Locations": [
+        "northwestern regions"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Central America"
+    }
+  ],
+  "Total_Summary_Insured_Damage": {
+    "Total_Insured_Damage": "NULL",
+    "Total_Insured_Damage_Unit": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Insured_Damage_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Insured_Damage": [
+    {
+      "Administrative_Areas": "NULL",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+    {
+      "Administrative_Area": "NULL",
+      "Locations": "NULL",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Total_Summary_Damage": {
+    "Total_Damage": "$720 million",
+    "Total_Damage_Unit": "USD",
+    "Total_Damage_Inflation_Adjusted": "No",
+    "Total_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Damage_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Damage": [
+    {
+      "Administrative_Areas": "Nicaragua",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$716.3 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Areas": "Honduras",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$3.64 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Central America"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Damage": [
+    {
+      "Administrative_Area": "Trinidad and Tobago",
+      "Locations": [
+        "Tobago"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$40,000",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Caribbean Islands"
+    },
+    {
+      "Administrative_Area": "Nicaragua",
+      "Locations": [
+        "Bilwi (Puerto Cabezas)"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Area": "Honduras",
+      "Locations": [
+        "Tegucigalpa",
+        "northwestern regions"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Central America"
+    },
+    {
+      "Administrative_Area": "Guatemala",
+      "Locations": [
+        "Izabal"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Central America"
+    }
+  ],
+  "Main_Event": "Tropical Storm/Cyclone",
+  "Main_Event_Annotation": "Info_Box",
+  "Hazards": "Wind|Flood",
+  "Hazards_Annotation": "Info_Box|Central America",
+  "Start_Date": "August 31, 2007",
+  "End_Date": "September 7, 2007",
+  "Time_Annotation": "Info_Box"
+}

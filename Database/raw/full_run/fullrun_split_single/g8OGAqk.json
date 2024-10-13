@@ -1,0 +1,533 @@
+{
+  "Event_ID": "g8OGAqk",
+  "Sources": "https://en.wikipedia.org/wiki/1855_Atlantic_hurricane_season",
+  "Event_Names": "1855 Atlantic hurricane season",
+  "Total_Summary_Affected": {
+    "Total_Affected": "NULL",
+    "Total_Affected_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Affected": [
+    {
+      "Administrative_Areas": [
+        "Mexico"
+      ],
+      "Start_Date": "August 6",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Hurricane One"
+    },
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "September 15",
+      "End_Date": "September 17",
+      "Num": "NULL",
+      "Annotation": "Hurricane Five"
+    },
+    {
+      "Administrative_Areas": [
+        "Dominican Republic",
+        "Haiti"
+      ],
+      "Start_Date": "August 27",
+      "End_Date": "August 27",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Four"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Affected": [
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Tampico"
+      ],
+      "Start_Date": "August 6",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Hurricane One"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Louisiana",
+        "Mississippi"
+      ],
+      "Start_Date": "September 15",
+      "End_Date": "September 17",
+      "Num": "NULL",
+      "Annotation": "Hurricane Five"
+    },
+    {
+      "Administrative_Area": "Dominican Republic",
+      "Locations": [
+        "San Pedro de Macor\u00eds"
+      ],
+      "Start_Date": "August 27",
+      "End_Date": "August 27",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Four"
+    },
+    {
+      "Administrative_Area": "Haiti",
+      "Locations": [
+        "Bombardopolis"
+      ],
+      "Start_Date": "August 27",
+      "End_Date": "August 27",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Four"
+    },
+    {
+      "Administrative_Area": "Saint Vincent and the Grenadines",
+      "Locations": [
+        "Saint Vincent"
+      ],
+      "Start_Date": "August 24",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Four"
+    },
+    {
+      "Administrative_Area": "Barbados",
+      "Locations": [
+        "Barbados"
+      ],
+      "Start_Date": "August 24",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Four"
+    },
+    {
+      "Administrative_Area": "Dominica",
+      "Locations": [
+        "Dominica"
+      ],
+      "Start_Date": "August 24",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Four"
+    },
+    {
+      "Administrative_Area": "Martinique",
+      "Locations": [
+        "Martinique"
+      ],
+      "Start_Date": "August 24",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Four"
+    },
+    {
+      "Administrative_Area": "United States Virgin Islands",
+      "Locations": [
+        "Saint Croix"
+      ],
+      "Start_Date": "August 24",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Four"
+    },
+    {
+      "Administrative_Area": "Puerto Rico",
+      "Locations": [
+        "Puerto Rico"
+      ],
+      "Start_Date": "August 24",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Four"
+    }
+  ],
+  "Total_Summary_Buildings_Damaged": {
+    "Total_Buildings_Damaged": "NULL",
+    "Total_Buildings_Damaged_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+    {
+      "Administrative_Areas": "Mexico",
+      "Start_Date": "August 6",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Hurricane One"
+    },
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "September 15",
+      "End_Date": "September 17",
+      "Num": "NULL",
+      "Annotation": "Hurricane Five"
+    },
+    {
+      "Administrative_Areas": "Lesser Antilles",
+      "Start_Date": "August 24",
+      "End_Date": "August 27",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Four"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Tampico"
+      ],
+      "Start_Date": "August 6",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Hurricane One"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Proctorville",
+        "Proctor's Landing",
+        "Lake Borgne",
+        "Mississippi City"
+      ],
+      "Start_Date": "September 15",
+      "End_Date": "September 17",
+      "Num": [
+        "a number of houses",
+        "most structures",
+        "several ships"
+      ],
+      "Annotation": "Hurricane Five"
+    },
+    {
+      "Administrative_Area": "Lesser Antilles",
+      "Locations": [
+        "Saint Vincent",
+        "Barbados",
+        "Dominica",
+        "Martinique",
+        "Saint Croix"
+      ],
+      "Start_Date": "August 24",
+      "End_Date": "August 27",
+      "Num": [
+        "a number of houses",
+        "several vessels"
+      ],
+      "Annotation": "Tropical Storm Four"
+    }
+  ],
+  "Total_Summary_Deaths": {
+    "Total_Deaths": "1",
+    "Total_Deaths_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Deaths": [
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "1",
+      "Annotation": "Hurricane Five"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Deaths": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Mississippi City"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "1",
+      "Annotation": "Hurricane Five"
+    }
+  ],
+  "Total_Summary_Displaced": {
+    "Total_Displaced": "NULL",
+    "Total_Displaced_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Displaced": [
+    {
+      "Administrative_Areas": [
+        "Mexico"
+      ],
+      "Start_Date": "August 6",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Hurricane One"
+    },
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "September 15",
+      "End_Date": "September 17",
+      "Num": "NULL",
+      "Annotation": "Hurricane Five"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Displaced": [
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Tampico"
+      ],
+      "Start_Date": "August 6",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Hurricane One"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Proctorville",
+        "Proctor's Landing",
+        "Lake Borgne",
+        "Mississippi City"
+      ],
+      "Start_Date": "September 15",
+      "End_Date": "September 17",
+      "Num": "NULL",
+      "Annotation": "Hurricane Five"
+    }
+  ],
+  "Total_Summary_Homeless": {
+    "Total_Homeless": "NULL",
+    "Total_Homeless_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Homeless": [
+    {
+      "Administrative_Areas": "Mexico",
+      "Start_Date": "August 6",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Hurricane One"
+    },
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "September 15",
+      "End_Date": "September 17",
+      "Num": "NULL",
+      "Annotation": "Hurricane Five"
+    },
+    {
+      "Administrative_Areas": "Dominican Republic",
+      "Start_Date": "August 27",
+      "End_Date": "August 27",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Four"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Homeless": [
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Tampico"
+      ],
+      "Start_Date": "August 6",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Hurricane One"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Proctorville",
+        "Proctor's Landing",
+        "Lake Borgne",
+        "Mississippi City"
+      ],
+      "Start_Date": "September 15",
+      "End_Date": "September 17",
+      "Num": "NULL",
+      "Annotation": "Hurricane Five"
+    },
+    {
+      "Administrative_Area": "Dominican Republic",
+      "Locations": [
+        "San Pedro de Macor\u00eds",
+        "Bombardopolis"
+      ],
+      "Start_Date": "August 27",
+      "End_Date": "August 27",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Four"
+    }
+  ],
+  "Total_Summary_Injuries": {
+    "Total_Injuries": "NULL",
+    "Total_Injuries_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Injuries": [
+    {
+      "Administrative_Areas": [
+        "Mexico"
+      ],
+      "Start_Date": "August 6",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Hurricane One"
+    },
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "September 15",
+      "End_Date": "September 17",
+      "Num": "NULL",
+      "Annotation": "Hurricane Five"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Injuries": [
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Tampico"
+      ],
+      "Start_Date": "August 6",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Hurricane One"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Proctorville",
+        "Proctor's Landing",
+        "Lake Borgne",
+        "Mississippi City"
+      ],
+      "Start_Date": "September 15",
+      "End_Date": "September 17",
+      "Num": "NULL",
+      "Annotation": "Hurricane Five"
+    }
+  ],
+  "Total_Summary_Insured_Damage": {
+    "Total_Insured_Damage": "NULL",
+    "Total_Insured_Damage_Unit": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Insured_Damage_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Insured_Damage": [
+    {
+      "Administrative_Areas": "NULL",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+    {
+      "Administrative_Area": "NULL",
+      "Locations": "NULL",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Total_Summary_Damage": {
+    "Total_Damage": "Unknown",
+    "Total_Damage_Unit": "NULL",
+    "Total_Damage_Inflation_Adjusted": "NULL",
+    "Total_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Damage_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Damage": [
+    {
+      "Administrative_Areas": [
+        "Mexico"
+      ],
+      "Start_Date": "August 6",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane One"
+    },
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "September 15",
+      "End_Date": "September 17",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Five"
+    },
+    {
+      "Administrative_Areas": [
+        "Lesser Antilles"
+      ],
+      "Start_Date": "August 24",
+      "End_Date": "August 27",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Tropical Storm Four"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Damage": [
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Tampico"
+      ],
+      "Start_Date": "August 6",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane One"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Louisiana",
+        "Mississippi"
+      ],
+      "Start_Date": "September 15",
+      "End_Date": "September 17",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Five"
+    },
+    {
+      "Administrative_Area": "Lesser Antilles",
+      "Locations": [
+        "Saint Vincent",
+        "Barbados",
+        "Dominica",
+        "Martinique",
+        "Saint Croix"
+      ],
+      "Start_Date": "August 24",
+      "End_Date": "August 27",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Tropical Storm Four"
+    }
+  ],
+  "Main_Event": "Tropical Storm/Cyclone",
+  "Main_Event_Annotation": "Info_Box",
+  "Hazards": "Wind|Flood",
+  "Hazards_Annotation": "Info_Box|Hurricane One|Hurricane Two|Hurricane Three|Tropical Storm Four|Hurricane Five",
+  "Start_Date": "August 5, 1855",
+  "End_Date": "September 17, 1855",
+  "Time_Annotation": "Info_Box"
+}

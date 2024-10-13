@@ -1,0 +1,765 @@
+{
+  "Event_ID": "1oHhBzg",
+  "Sources": "https://en.wikipedia.org/wiki/Hurricane_Eloise",
+  "Event_Names": "Hurricane Eloise",
+  "Total_Summary_Affected": {
+    "Total_Affected": "NULL",
+    "Total_Affected_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Affected": [
+    {
+      "Administrative_Areas": "Puerto Rico",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "over 6,000 residents",
+      "Annotation": "Caribbean Sea"
+    },
+    {
+      "Administrative_Areas": "Dominican Republic",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Caribbean Sea"
+    },
+    {
+      "Administrative_Areas": "Haiti",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Caribbean Sea"
+    },
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "100,000 people evacuated",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "20,000 residents",
+      "Annotation": "Elsewhere in the United States"
+    },
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "hundreds of families",
+      "Annotation": "Elsewhere in the United States"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Affected": [
+    {
+      "Administrative_Area": "Puerto Rico",
+      "Locations": [
+        "Dos Bocas",
+        "Utuado"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "over 6,000 residents",
+      "Annotation": "Caribbean Sea"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Pensacola"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "99% of residents along the beach",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Panama City Beach"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "8,000 people",
+      "Annotation": "Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Geneva County"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "several people",
+      "Annotation": "Elsewhere in the United States"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Harrisburg"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Elsewhere in the United States"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Frederick"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Elsewhere in the United States"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Ellicott City",
+        "Elkridge",
+        "Laurel"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Elsewhere in the United States"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Rocky Gorge Dam"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "500 residents",
+      "Annotation": "Elsewhere in the United States"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Washington, D.C."
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "thousands",
+      "Annotation": "Elsewhere in the United States"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Alexandria",
+        "Arlington"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "hundreds of families",
+      "Annotation": "Elsewhere in the United States"
+    }
+  ],
+  "Total_Summary_Buildings_Damaged": {
+    "Total_Buildings_Damaged": "NULL",
+    "Total_Buildings_Damaged_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Fort Walton Beach",
+        "Panama City Beach"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "hundreds of structures",
+      "Annotation": "Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Panama City Beach"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "500 businesses",
+      "Annotation": "Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Panama City Beach"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "several piers",
+      "Annotation": "Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Panama City Beach"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "300 feet (91 m) extension of the Okaloosa Island Pier",
+      "Annotation": "Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Panama City Beach"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "fishing pier at St. Andrews State Park",
+      "Annotation": "Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Panama City Beach"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "wooden pier at Mexico Beach",
+      "Annotation": "Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Panama City Beach"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "M.B. Miller Pier",
+      "Annotation": "Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "central Southern Tier region of New York"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "over 700 structures",
+      "Annotation": "Elsewhere in the United States"
+    }
+  ],
+  "Total_Summary_Deaths": {
+    "Total_Deaths": "80",
+    "Total_Deaths_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Deaths": [
+    {
+      "Administrative_Areas": "Puerto Rico",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "34",
+      "Annotation": "Caribbean Sea"
+    },
+    {
+      "Administrative_Areas": "Hispaniola",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "25",
+      "Annotation": "Caribbean Sea"
+    },
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "17",
+      "Annotation": "Elsewhere in the United States"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Deaths": [
+    {
+      "Administrative_Area": "Puerto Rico",
+      "Locations": [
+        "Dos Bocas",
+        "Utuado"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "34",
+      "Annotation": "Caribbean Sea"
+    },
+    {
+      "Administrative_Area": "Hispaniola",
+      "Locations": [
+        "Haiti",
+        "Dominican Republic"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "25",
+      "Annotation": "Caribbean Sea"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Mid-Atlantic States",
+        "Pennsylvania",
+        "New York",
+        "Maryland",
+        "Virginia"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "17",
+      "Annotation": "Elsewhere in the United States"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Florida"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "4",
+      "Annotation": "Florida"
+    }
+  ],
+  "Total_Summary_Displaced": {
+    "Total_Displaced": "NULL",
+    "Total_Displaced_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Displaced": [
+    {
+      "Administrative_Areas": "Puerto Rico",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "over 6,000 residents",
+      "Annotation": "Caribbean Sea"
+    },
+    {
+      "Administrative_Areas": "Florida",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "100,000 people",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Areas": "Pennsylvania",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "20,000 residents",
+      "Annotation": "Elsewhere in the United States"
+    },
+    {
+      "Administrative_Areas": "Washington, D.C.",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "thousands",
+      "Annotation": "Elsewhere in the United States"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Displaced": [
+    {
+      "Administrative_Area": "Puerto Rico",
+      "Locations": [
+        "Utuado"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Caribbean Sea"
+    },
+    {
+      "Administrative_Area": "Cuba",
+      "Locations": [
+        "Guantanamo Bay Naval Base"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "Personnel on the base",
+      "Annotation": "Caribbean Sea"
+    },
+    {
+      "Administrative_Area": "Florida",
+      "Locations": [
+        "Pensacola"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "99% of Pensacola residents along the beach",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Area": "Maryland",
+      "Locations": [
+        "Laurel"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "500 residents",
+      "Annotation": "Elsewhere in the United States"
+    },
+    {
+      "Administrative_Area": "Virginia",
+      "Locations": [
+        "Alexandria",
+        "Arlington"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "hundreds of families",
+      "Annotation": "Elsewhere in the United States"
+    }
+  ],
+  "Total_Summary_Homeless": {
+    "Total_Homeless": "NULL",
+    "Total_Homeless_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Homeless": [
+    {
+      "Administrative_Areas": [
+        "Puerto Rico"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "over 6,000 residents",
+      "Annotation": "Caribbean Sea"
+    },
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "20,000 residents",
+      "Annotation": "Elsewhere in the United States"
+    },
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "thousands further south in the Washington, D.C. area",
+      "Annotation": "Elsewhere in the United States"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Homeless": [
+    {
+      "Administrative_Area": "Puerto Rico",
+      "Locations": [
+        "Utuado"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Caribbean Sea"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Harrisburg, Pennsylvania"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Elsewhere in the United States"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Alexandria, Virginia",
+        "Arlington, Virginia"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "hundreds of families",
+      "Annotation": "Elsewhere in the United States"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Laurel, Maryland"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "500 residents",
+      "Annotation": "Elsewhere in the United States"
+    }
+  ],
+  "Total_Summary_Injuries": {
+    "Total_Injuries": "NULL",
+    "Total_Injuries_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Injuries": [
+    {
+      "Administrative_Areas": "Puerto Rico",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "several hundred people",
+      "Annotation": "Caribbean Sea"
+    },
+    {
+      "Administrative_Areas": "Dominican Republic",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Caribbean Sea"
+    },
+    {
+      "Administrative_Areas": "Florida",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "Numerous people",
+      "Annotation": "Florida"
+    },
+    {
+      "Administrative_Areas": "Alabama",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "several people",
+      "Annotation": "Elsewhere in the United States"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Injuries": [
+    {
+      "Administrative_Area": "Puerto Rico",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "several hundred people",
+      "Annotation": "Caribbean Sea"
+    },
+    {
+      "Administrative_Area": "Dominican Republic",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Caribbean Sea"
+    },
+    {
+      "Administrative_Area": "Florida",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "Numerous people",
+      "Annotation": "Florida"
+    },
+    {
+      "Administrative_Area": "Alabama",
+      "Locations": [
+        "Geneva County"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "several people",
+      "Annotation": "Elsewhere in the United States"
+    }
+  ],
+  "Total_Summary_Insured_Damage": {
+    "Total_Insured_Damage": "NULL",
+    "Total_Insured_Damage_Unit": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Insured_Damage_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Insured_Damage": [
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "September 13, 1975",
+      "End_Date": "September 24, 1975",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Florida"
+      ],
+      "Start_Date": "September 23, 1975",
+      "End_Date": "September 24, 1975",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Alabama"
+      ],
+      "Start_Date": "September 23, 1975",
+      "End_Date": "September 24, 1975",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Elsewhere in the United States"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Georgia"
+      ],
+      "Start_Date": "September 23, 1975",
+      "End_Date": "September 24, 1975",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Elsewhere in the United States"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Pennsylvania"
+      ],
+      "Start_Date": "September 22, 1975",
+      "End_Date": "September 26, 1975",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Elsewhere in the United States"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "New York"
+      ],
+      "Start_Date": "September 22, 1975",
+      "End_Date": "September 26, 1975",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Elsewhere in the United States"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Maryland"
+      ],
+      "Start_Date": "September 22, 1975",
+      "End_Date": "September 26, 1975",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Elsewhere in the United States"
+    }
+  ],
+  "Total_Summary_Damage": {
+    "Total_Damage": "$560 million",
+    "Total_Damage_Unit": "USD",
+    "Total_Damage_Inflation_Adjusted": "No",
+    "Total_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Damage_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Damage": [
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$560 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Elsewhere in the United States"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Damage": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Puerto Rico"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$60 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Caribbean Sea"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Florida"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$150 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Panama City Beach, Florida"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$50 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Florida"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Alabama"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$100 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Elsewhere in the United States"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Northeastern U.S."
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$300 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Elsewhere in the United States"
+    }
+  ],
+  "Main_Event": "Tropical Storm/Cyclone",
+  "Main_Event_Annotation": "Info_Box",
+  "Hazards": "Wind|Flood",
+  "Hazards_Annotation": "Info_Box|Caribbean Sea|Florida|Elsewhere in the United States",
+  "Start_Date": "September 13, 1975",
+  "End_Date": "September 24, 1975",
+  "Time_Annotation": "Info_Box"
+}

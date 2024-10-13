@@ -1,0 +1,475 @@
+{
+  "Event_ID": "BOSUgcE",
+  "Sources": "https://en.wikipedia.org/wiki/August_2020_California_lightning_wildfires",
+  "Event_Names": "August 2020 California lightning wildfires",
+  "Total_Summary_Affected": {
+    "Total_Affected": "NULL",
+    "Total_Affected_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Affected": [
+    {
+      "Administrative_Areas": [
+        "California"
+      ],
+      "Start_Date": "August 11, 2020",
+      "End_Date": "January 5, 2021",
+      "Num": "NULL",
+      "Annotation": "Info_Box"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Affected": [
+    {
+      "Administrative_Area": "California",
+      "Locations": [
+        "Bay Area"
+      ],
+      "Start_Date": "August 16, 2020",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Meteorological background"
+    },
+    {
+      "Administrative_Area": "California",
+      "Locations": [
+        "Vacaville"
+      ],
+      "Start_Date": "August 19, 2020",
+      "End_Date": "NULL",
+      "Num": "hundreds",
+      "Annotation": "LNU Lightning Complex"
+    },
+    {
+      "Administrative_Area": "California",
+      "Locations": [
+        "Travis Air Force Base",
+        "Healdsburg"
+      ],
+      "Start_Date": "August 20, 2020",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "LNU Lightning Complex"
+    },
+    {
+      "Administrative_Area": "California",
+      "Locations": [
+        "East San Jose foothills"
+      ],
+      "Start_Date": "August 20, 2020",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "SCU Lightning Complex"
+    },
+    {
+      "Administrative_Area": "California",
+      "Locations": [
+        "Fremont",
+        "Milpitas",
+        "Patterson",
+        "San Jose"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Impacts"
+    }
+  ],
+  "Total_Summary_Buildings_Damaged": {
+    "Total_Buildings_Damaged": "3,586+",
+    "Total_Buildings_Damaged_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+    {
+      "Administrative_Areas": "California",
+      "Start_Date": "August 11, 2020",
+      "End_Date": "January 5, 2021",
+      "Num": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+    {
+      "Administrative_Area": "California",
+      "Locations": [
+        "Big Basin Redwoods State Park"
+      ],
+      "Start_Date": "August 20, 2020",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "CZU Lightning Complex"
+    },
+    {
+      "Administrative_Area": "California",
+      "Locations": [
+        "Sonoma",
+        "Lake",
+        "Napa"
+      ],
+      "Start_Date": "August 17, 2020",
+      "End_Date": "August 20, 2020",
+      "Num": "480",
+      "Annotation": "LNU Lightning Complex"
+    },
+    {
+      "Administrative_Area": "California",
+      "Locations": [
+        "Santa Clara",
+        "Contra Costa",
+        "Alameda",
+        "Stanislaus",
+        "San Joaquin"
+      ],
+      "Start_Date": "August 18, 2020",
+      "End_Date": "August 21, 2020",
+      "Num": "NULL",
+      "Annotation": "SCU Lightning Complex"
+    },
+    {
+      "Administrative_Area": "California",
+      "Locations": [
+        "Vacaville"
+      ],
+      "Start_Date": "August 19, 2020",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "LNU Lightning Complex"
+    },
+    {
+      "Administrative_Area": "California",
+      "Locations": [
+        "Healdsburg"
+      ],
+      "Start_Date": "August 20, 2020",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "LNU Lightning Complex"
+    },
+    {
+      "Administrative_Area": "California",
+      "Locations": [
+        "East San Jose foothills"
+      ],
+      "Start_Date": "August 20, 2020",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "SCU Lightning Complex"
+    },
+    {
+      "Administrative_Area": "California",
+      "Locations": [
+        "Berry Creek"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Impacts"
+    }
+  ],
+  "Total_Summary_Deaths": {
+    "Total_Deaths": "23",
+    "Total_Deaths_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Deaths": [
+    {
+      "Administrative_Areas": [
+        "California"
+      ],
+      "Start_Date": "August 11, 2020",
+      "End_Date": "January 5, 2021",
+      "Num": "23",
+      "Annotation": "Info_Box"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Deaths": [
+    {
+      "Administrative_Area": "California",
+      "Locations": [
+        "Bay Area"
+      ],
+      "Start_Date": "August 11, 2020",
+      "End_Date": "January 5, 2021",
+      "Num": "6",
+      "Annotation": "header: Fires"
+    }
+  ],
+  "Total_Summary_Displaced": {
+    "Total_Displaced": "NULL",
+    "Total_Displaced_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Displaced": [
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Displaced": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Vacaville"
+      ],
+      "Start_Date": "August 19, 2020",
+      "End_Date": "NULL",
+      "Num": "hundreds",
+      "Annotation": "LNU Lightning Complex"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Travis Air Force Base",
+        "Healdsburg"
+      ],
+      "Start_Date": "August 20, 2020",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "LNU Lightning Complex"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "East San Jose foothills"
+      ],
+      "Start_Date": "August 20, 2020",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "SCU Lightning Complex"
+    }
+  ],
+  "Total_Summary_Homeless": {
+    "Total_Homeless": "NULL",
+    "Total_Homeless_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Homeless": [
+    {
+      "Administrative_Areas": [
+        "California"
+      ],
+      "Start_Date": "August 11, 2020",
+      "End_Date": "January 5, 2021",
+      "Num": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Homeless": [
+    {
+      "Administrative_Area": "California",
+      "Locations": [
+        "Vacaville"
+      ],
+      "Start_Date": "August 19, 2020",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "LNU Lightning Complex"
+    },
+    {
+      "Administrative_Area": "California",
+      "Locations": [
+        "Healdsburg"
+      ],
+      "Start_Date": "August 20, 2020",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "LNU Lightning Complex"
+    },
+    {
+      "Administrative_Area": "California",
+      "Locations": [
+        "Berry Creek"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Impacts"
+    }
+  ],
+  "Total_Summary_Injuries": {
+    "Total_Injuries": "43",
+    "Total_Injuries_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Injuries": [
+    {
+      "Administrative_Areas": [
+        "California"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Injuries": [
+    {
+      "Administrative_Area": "California",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Total_Summary_Insured_Damage": {
+    "Total_Insured_Damage": "NULL",
+    "Total_Insured_Damage_Unit": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Insured_Damage_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Insured_Damage": [
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "August 11, 2020",
+      "End_Date": "January 5, 2021",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "California"
+      ],
+      "Start_Date": "August 11, 2020",
+      "End_Date": "January 5, 2021",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Total_Summary_Damage": {
+    "Total_Damage": "Unknown",
+    "Total_Damage_Unit": "NULL",
+    "Total_Damage_Inflation_Adjusted": "NULL",
+    "Total_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Damage_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Damage": [
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "August 11, 2020",
+      "End_Date": "January 5, 2021",
+      "Num": "Unknown",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Info_Box"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Damage": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Big Basin Redwoods State Park"
+      ],
+      "Start_Date": "August 16, 2020",
+      "End_Date": "August 20, 2020",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "CZU Lightning Complex"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Pescadero",
+        "La Honda"
+      ],
+      "Start_Date": "August 16, 2020",
+      "End_Date": "August 20, 2020",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "CZU Lightning Complex"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Sonoma County",
+        "Lake County",
+        "Napa County"
+      ],
+      "Start_Date": "August 17, 2020",
+      "End_Date": "August 20, 2020",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "LNU Lightning Complex"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Santa Clara County",
+        "Contra Costa County",
+        "Alameda County",
+        "Stanislaus County",
+        "San Joaquin County"
+      ],
+      "Start_Date": "August 16, 2020",
+      "End_Date": "August 21, 2020",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "SCU Lightning Complex"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Berry Creek"
+      ],
+      "Start_Date": "August 16, 2020",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Impacts"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Fremont",
+        "Milpitas",
+        "Patterson",
+        "San Jose",
+        "Lick Observatory"
+      ],
+      "Start_Date": "August 16, 2020",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Impacts"
+    }
+  ],
+  "Main_Event": "Wildfire",
+  "Main_Event_Annotation": "Info_Box",
+  "Hazards": "Wildfire",
+  "Hazards_Annotation": "Info_Box",
+  "Start_Date": "August 11, 2020",
+  "End_Date": "January 5, 2021",
+  "Time_Annotation": "Info_Box",
+  "Administrative_Areas": [
+    "United States"
+  ],
+  "Administrative_Areas_Annotation": "Info_Box"
+}

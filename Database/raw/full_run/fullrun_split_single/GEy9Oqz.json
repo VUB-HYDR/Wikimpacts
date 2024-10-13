@@ -1,0 +1,526 @@
+{
+  "Event_ID": "GEy9Oqz",
+  "Sources": "https://en.wikipedia.org/wiki/Hurricane_Barry_(2019)",
+  "Event_Names": "Hurricane Barry (2019)",
+  "Json_Error": "{\n  \"Total_Summary_Affected\": {\n    \"Total_Affected\": \"NULL\",\n    \"Total_Affected_Annotation\": \"NULL\"\n  },\n  \"Instance_Per_Administrative_Areas_Affected\": [\n    {\n      \"Administrative_Areas\": \"United States\",\n      \"Start_Date\": \"July 11, 2019\",\n      \"End_Date\": \"July 19, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Impact\"\n    },\n    {\n      \"Administrative_Areas\": \"Canada\",\n      \"Start_Date\": \"July 16, 2019\",\n      \"End_Date\": \"July 17, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Mid-Atlantic and Northeastern United States\"\n    }\n  ],\n  \"Specific_Instance_Per_Administrative_Area_Affected\": [\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Plaquemines Parish\", \"Jefferson Parish\", \"Grand Isle\"],\n      \"Start_Date\": \"July 11, 2019\",\n      \"End_Date\": \"July 12, 2019\",\n      \"Num\": \"8,000\u201310,000 residents\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Orleans\"],\n      \"Start_Date\": \"July 10, 2019\",\n      \"End_Date\": \"July 10, 2019\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Louisiana\"\n    },",
+  "Total_Summary_Buildings_Damaged": {
+    "Total_Buildings_Damaged": "More than 50,000 buildings",
+    "Total_Buildings_Damaged_Annotation": "Impact"
+  },
+  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "July 10, 2019",
+      "End_Date": "July 19, 2019",
+      "Num": "NULL",
+      "Annotation": "Impact"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "New Orleans"
+      ],
+      "Start_Date": "July 10, 2019",
+      "End_Date": "July 10, 2019",
+      "Num": "Portions of the French Quarter were flooded",
+      "Annotation": "Louisiana"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "New Orleans"
+      ],
+      "Start_Date": "July 10, 2019",
+      "End_Date": "July 10, 2019",
+      "Num": "A EF1 tornado was reported near New Orleans on July 10, snapping several trees and ripping the roof off a house",
+      "Annotation": "Louisiana"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "New Iberia"
+      ],
+      "Start_Date": "July 13, 2019",
+      "End_Date": "July 13, 2019",
+      "Num": "NULL",
+      "Annotation": "Louisiana"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Gentilly neighborhood in New Orleans"
+      ],
+      "Start_Date": "July 13, 2019",
+      "End_Date": "July 13, 2019",
+      "Num": "A possible tornado damaged two homes",
+      "Annotation": "Louisiana"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Morgan City"
+      ],
+      "Start_Date": "July 12, 2019",
+      "End_Date": "July 12, 2019",
+      "Num": "NULL",
+      "Annotation": "Louisiana"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Golden Meadow"
+      ],
+      "Start_Date": "July 12, 2019",
+      "End_Date": "July 12, 2019",
+      "Num": "NULL",
+      "Annotation": "Louisiana"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Metairie"
+      ],
+      "Start_Date": "July 13, 2019",
+      "End_Date": "July 13, 2019",
+      "Num": "Power lines knocked down by fallen trees in the Metairie area cut power to 5,140 electricity customers",
+      "Annotation": "Louisiana"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Grand Isle"
+      ],
+      "Start_Date": "July 13, 2019",
+      "End_Date": "July 13, 2019",
+      "Num": "All electricity customers in Grand Isle lost power",
+      "Annotation": "Louisiana"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Arkadelphia"
+      ],
+      "Start_Date": "July 16, 2019",
+      "End_Date": "July 16, 2019",
+      "Num": "The Clark County Humane Society in Arkadelphia was drenched by floodwaters, killing a puppy",
+      "Annotation": "Arkansas"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Nashville"
+      ],
+      "Start_Date": "July 16, 2019",
+      "End_Date": "July 16, 2019",
+      "Num": "The police department building and the county jail were damaged by flash flooding",
+      "Annotation": "Arkansas"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Dierks"
+      ],
+      "Start_Date": "July 16, 2019",
+      "End_Date": "July 16, 2019",
+      "Num": "NULL",
+      "Annotation": "Arkansas"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Dierks"
+      ],
+      "Start_Date": "July 16, 2019",
+      "End_Date": "July 16, 2019",
+      "Num": "NULL",
+      "Annotation": "Arkansas"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Ewing"
+      ],
+      "Start_Date": "July 16, 2019",
+      "End_Date": "July 17, 2019",
+      "Num": "NULL",
+      "Annotation": "Mid-Atlantic and Northeastern United States"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Rome"
+      ],
+      "Start_Date": "July 16, 2019",
+      "End_Date": "July 17, 2019",
+      "Num": "NULL",
+      "Annotation": "Mid-Atlantic and Northeastern United States"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Lancaster"
+      ],
+      "Start_Date": "July 16, 2019",
+      "End_Date": "July 17, 2019",
+      "Num": "NULL",
+      "Annotation": "Mid-Atlantic and Northeastern United States"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Southington"
+      ],
+      "Start_Date": "July 16, 2019",
+      "End_Date": "July 17, 2019",
+      "Num": "NULL",
+      "Annotation": "Mid-Atlantic and Northeastern United States"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Fairfield"
+      ],
+      "Start_Date": "July 16, 2019",
+      "End_Date": "July 17, 2019",
+      "Num": "NULL",
+      "Annotation": "Mid-Atlantic and Northeastern United States"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Monroe"
+      ],
+      "Start_Date": "July 16, 2019",
+      "End_Date": "July 17, 2019",
+      "Num": "NULL",
+      "Annotation": "Mid-Atlantic and Northeastern United States"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Poplar Bluff"
+      ],
+      "Start_Date": "July 16, 2019",
+      "End_Date": "July 17, 2019",
+      "Num": "NULL",
+      "Annotation": "Elsewhere"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Cookeville"
+      ],
+      "Start_Date": "July 16, 2019",
+      "End_Date": "July 17, 2019",
+      "Num": "NULL",
+      "Annotation": "Elsewhere"
+    },
+    {
+      "Administrative_Area": "Canada",
+      "Locations": [
+        "Toronto"
+      ],
+      "Start_Date": "July 17, 2019",
+      "End_Date": "July 17, 2019",
+      "Num": "NULL",
+      "Annotation": "Elsewhere"
+    },
+    {
+      "Administrative_Area": "Canada",
+      "Locations": [
+        "Oro-Medonte"
+      ],
+      "Start_Date": "July 17, 2019",
+      "End_Date": "July 17, 2019",
+      "Num": "NULL",
+      "Annotation": "Elsewhere"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Indianapolis"
+      ],
+      "Start_Date": "July 16, 2019",
+      "End_Date": "July 17, 2019",
+      "Num": "NULL",
+      "Annotation": "Elsewhere"
+    }
+  ],
+  "Total_Summary_Deaths": {
+    "Total_Deaths": "3",
+    "Total_Deaths_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Deaths": [
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "2",
+      "Annotation": "Impact"
+    },
+    {
+      "Administrative_Areas": [
+        "Canada"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Deaths": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Florida"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "1",
+      "Annotation": "Impact"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Connecticut"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "1",
+      "Annotation": "Impact"
+    }
+  ],
+  "Total_Summary_Displaced": {
+    "Total_Displaced": "NULL",
+    "Total_Displaced_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Displaced": [
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "July 11, 2019",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Louisiana"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Displaced": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Plaquemines Parish"
+      ],
+      "Start_Date": "July 11, 2019",
+      "End_Date": "NULL",
+      "Num": "approximately 8,000\u201310,000 residents",
+      "Annotation": "Louisiana"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Jefferson Parish"
+      ],
+      "Start_Date": "July 11, 2019",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Louisiana"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Grand Isle"
+      ],
+      "Start_Date": "July 11, 2019",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Louisiana"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Arkadelphia"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Arkansas"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Nashville"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "Arkansas"
+    }
+  ],
+  "Total_Summary_Homeless": {
+    "Total_Homeless": "NULL",
+    "Total_Homeless_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Homeless": [
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Homeless": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Howard County",
+        "Hempstead County",
+        "Nevada County",
+        "Clark County",
+        "Nashville",
+        "Dierks"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "30-40 structures damaged",
+      "Annotation": "Arkansas"
+    }
+  ],
+  "Total_Summary_Injuries": {
+    "Total_Injuries": "NULL",
+    "Total_Injuries_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Injuries": [
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Injuries": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Lancaster, Pennsylvania"
+      ],
+      "Start_Date": "July 17",
+      "End_Date": "July 17",
+      "Num": "2",
+      "Annotation": "Mid-Atlantic and Northeastern United States"
+    }
+  ],
+  "Total_Summary_Insured_Damage": {
+    "Total_Insured_Damage": "nearly $300 million",
+    "Total_Insured_Damage_Unit": "USD",
+    "Total_Insured_Damage_Inflation_Adjusted": "No",
+    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Insured_Damage_Annotation": "Impact"
+  },
+  "Instance_Per_Administrative_Areas_Insured_Damage": [
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "July 11, 2019",
+      "End_Date": "July 19, 2019",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Louisiana"
+      ],
+      "Start_Date": "July 11, 2019",
+      "End_Date": "July 19, 2019",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "NULL"
+    }
+  ],
+  "Total_Summary_Damage": {
+    "Total_Damage": "$600 million",
+    "Total_Damage_Unit": "USD",
+    "Total_Damage_Inflation_Adjusted": "No",
+    "Total_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Damage_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Damage": [
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$600 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Impact"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Damage": [
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "New Orleans"
+      ],
+      "Start_Date": "July 10, 2019",
+      "End_Date": "July 11, 2019",
+      "Num": "$300,000",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Louisiana"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "West Jackson"
+      ],
+      "Start_Date": "July 14, 2019",
+      "End_Date": "July 14, 2019",
+      "Num": "$20,000",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Remainder of the Gulf Coast"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Adams County"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$10,000",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Remainder of the Gulf Coast"
+    }
+  ],
+  "Main_Event": "Tropical Storm/Cyclone",
+  "Main_Event_Annotation": "Info_Box",
+  "Hazards": "Wind|Flood|Lightning",
+  "Hazards_Annotation": "Info_Box|Louisiana|Remainder of the Gulf Coast|Arkansas|Mid-Atlantic and Northeastern United States",
+  "Start_Date": "July 11, 2019",
+  "End_Date": "July 19, 2019",
+  "Time_Annotation": "Info_Box"
+}

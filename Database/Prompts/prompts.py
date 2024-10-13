@@ -3,7 +3,7 @@
 # V_2 is the list of prompts for L1-3 with annotation gives the header names, finalized in 20240715
 # V_3_1 is a version based on V2, but with freezed variable names as the schema we confirmed, 20240823
 # V_3_2 is the version based on V3, but in L1, only prompt the model to capture countries, and we use this as the final version for test and full run
-# V_3_2 is the version based on V3_2, but the infobox and the whole text are feed in the end of the prompt.
+# V_3_3 is the version based on V3_2, but the infobox and the whole text are feed in the end of the prompt.
 # V_4 is the one with two prompts for each impact category, one prompt for L1/2 and one for L3
 # V_5 is the one with three prompts for each impact category
 # V_6 is a version based on V3 but force the model not to generate null for non-nullable items, and also for the L1 only ask for country information
@@ -1177,7 +1177,7 @@ V_3_2: dict = {
       Ensure to capture all instances of affected people mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. """
     ],
     "buildings_damaged": [
-        """Based on the provided article {Info_Box} {Whole_Text},
+        """Based on information box {Info_Box} and header-content pair article {Whole_Text},
       extract the number of damaged buildings associated with the {Event_Name},
       covering a wide range of building types such as structures, homes, houses, households, apartments, office buildings, retail stores, hotels, schools, hospitals, and more,
       along with supporting annotations from the article. The number of damaged buildings information can be splited into 3 parts,

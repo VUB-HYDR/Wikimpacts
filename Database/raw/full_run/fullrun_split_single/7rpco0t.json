@@ -1,0 +1,945 @@
+{
+  "Event_ID": "7rpco0t",
+  "Sources": "https://en.wikipedia.org/wiki/2011_Atlantic_hurricane_season",
+  "Event_Names": "2011 Atlantic hurricane season",
+  "Total_Summary_Affected": {
+    "Total_Affected": "NULL",
+    "Total_Affected_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Affected": [
+    {
+      "Administrative_Areas": [
+        "Mexico"
+      ],
+      "Start_Date": "June 29, 2011",
+      "End_Date": "July 1, 2011",
+      "Num": "22 people",
+      "Annotation": "Tropical Storm Arlene"
+    },
+    {
+      "Administrative_Areas": [
+        "Central America"
+      ],
+      "Start_Date": "August 20, 2011",
+      "End_Date": "August 22, 2011",
+      "Num": "3 deaths",
+      "Annotation": "Tropical Storm Harvey"
+    },
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "September 2, 2011",
+      "End_Date": "September 6, 2011",
+      "Num": "21 deaths",
+      "Annotation": "Tropical Storm Lee"
+    },
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "August 21, 2011",
+      "End_Date": "August 30, 2011",
+      "Num": "58 deaths",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Areas": [
+        "Canada"
+      ],
+      "Start_Date": "August 29, 2011",
+      "End_Date": "August 30, 2011",
+      "Num": "1 death",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Areas": [
+        "United Kingdom"
+      ],
+      "Start_Date": "September 10, 2011",
+      "End_Date": "September 13, 2011",
+      "Num": "2 deaths",
+      "Annotation": "Hurricane Katia"
+    },
+    {
+      "Administrative_Areas": [
+        "Dominican Republic"
+      ],
+      "Start_Date": "August 21, 2011",
+      "End_Date": "August 30, 2011",
+      "Num": "5 deaths",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Areas": [
+        "Haiti"
+      ],
+      "Start_Date": "August 21, 2011",
+      "End_Date": "August 30, 2011",
+      "Num": "2 deaths",
+      "Annotation": "Hurricane Irene"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Affected": [
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Cabo Rojo, Veracruz"
+      ],
+      "Start_Date": "June 29, 2011",
+      "End_Date": "July 1, 2011",
+      "Num": "22 people",
+      "Annotation": "Tropical Storm Arlene"
+    },
+    {
+      "Administrative_Area": "Central America",
+      "Locations": [
+        "Belize",
+        "Chiapas",
+        "Veracruz"
+      ],
+      "Start_Date": "August 20, 2011",
+      "End_Date": "August 22, 2011",
+      "Num": "3 deaths",
+      "Annotation": "Tropical Storm Harvey"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Louisiana",
+        "Mississippi",
+        "Georgia",
+        "Pennsylvania",
+        "New York"
+      ],
+      "Start_Date": "September 2, 2011",
+      "End_Date": "September 6, 2011",
+      "Num": "21 deaths",
+      "Annotation": "Tropical Storm Lee"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "North Carolina",
+        "New Jersey",
+        "New York",
+        "Vermont"
+      ],
+      "Start_Date": "August 21, 2011",
+      "End_Date": "August 30, 2011",
+      "Num": "58 deaths",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Area": "Canada",
+      "Locations": [
+        "Quebec"
+      ],
+      "Start_Date": "August 29, 2011",
+      "End_Date": "August 30, 2011",
+      "Num": "1 death",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Area": "United Kingdom",
+      "Locations": [
+        "County Durham",
+        "M54 motorway"
+      ],
+      "Start_Date": "September 10, 2011",
+      "End_Date": "September 13, 2011",
+      "Num": "2 deaths",
+      "Annotation": "Hurricane Katia"
+    },
+    {
+      "Administrative_Area": "Dominican Republic",
+      "Locations": [
+        "Various locations"
+      ],
+      "Start_Date": "August 21, 2011",
+      "End_Date": "August 30, 2011",
+      "Num": "5 deaths",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Area": "Haiti",
+      "Locations": [
+        "Port-au-Prince"
+      ],
+      "Start_Date": "August 21, 2011",
+      "End_Date": "August 30, 2011",
+      "Num": "2 deaths",
+      "Annotation": "Hurricane Irene"
+    }
+  ],
+  "Total_Summary_Buildings_Damaged": {
+    "Total_Buildings_Damaged": "NULL",
+    "Total_Buildings_Damaged_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+    {
+      "Administrative_Areas": "Mexico",
+      "Start_Date": "June 29, 2011",
+      "End_Date": "July 1, 2011",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Arlene"
+    },
+    {
+      "Administrative_Areas": "Belize",
+      "Start_Date": "August 20, 2011",
+      "End_Date": "August 22, 2011",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Harvey"
+    },
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "August 27, 2011",
+      "End_Date": "August 30, 2011",
+      "Num": "NULL",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Areas": "Canada",
+      "Start_Date": "August 29, 2011",
+      "End_Date": "August 30, 2011",
+      "Num": "NULL",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Areas": "Puerto Rico",
+      "Start_Date": "September 6, 2011",
+      "End_Date": "September 16, 2011",
+      "Num": "150 dwellings",
+      "Annotation": "Hurricane Maria"
+    },
+    {
+      "Administrative_Areas": "Mexico",
+      "Start_Date": "September 7, 2011",
+      "End_Date": "September 12, 2011",
+      "Num": "839 homes",
+      "Annotation": "Hurricane Nate"
+    },
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "September 2, 2011",
+      "End_Date": "September 6, 2011",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Lee"
+    },
+    {
+      "Administrative_Areas": "United Kingdom",
+      "Start_Date": "September 10, 2011",
+      "End_Date": "September 13, 2011",
+      "Num": "NULL",
+      "Annotation": "Hurricane Katia"
+    },
+    {
+      "Administrative_Areas": "Ireland",
+      "Start_Date": "October 2, 2011",
+      "End_Date": "October 4, 2011",
+      "Num": "NULL",
+      "Annotation": "Hurricane Ophelia"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Cabo Rojo, Veracruz"
+      ],
+      "Start_Date": "June 29, 2011",
+      "End_Date": "July 1, 2011",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Arlene"
+    },
+    {
+      "Administrative_Area": "Belize",
+      "Locations": [
+        "Crooked Tree"
+      ],
+      "Start_Date": "August 20, 2011",
+      "End_Date": "August 22, 2011",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Harvey"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "North Carolina",
+        "New Jersey",
+        "New York",
+        "Vermont"
+      ],
+      "Start_Date": "August 27, 2011",
+      "End_Date": "August 30, 2011",
+      "Num": "NULL",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Area": "Canada",
+      "Locations": [
+        "Quebec"
+      ],
+      "Start_Date": "August 29, 2011",
+      "End_Date": "August 30, 2011",
+      "Num": "NULL",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Area": "Puerto Rico",
+      "Locations": [
+        "Yabucoa"
+      ],
+      "Start_Date": "September 6, 2011",
+      "End_Date": "September 16, 2011",
+      "Num": "150 dwellings",
+      "Annotation": "Hurricane Maria"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Veracruz"
+      ],
+      "Start_Date": "September 7, 2011",
+      "End_Date": "September 12, 2011",
+      "Num": "839 homes",
+      "Annotation": "Hurricane Nate"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Louisiana",
+        "Mississippi",
+        "Georgia",
+        "Pennsylvania",
+        "New York"
+      ],
+      "Start_Date": "September 2, 2011",
+      "End_Date": "September 6, 2011",
+      "Num": "NULL",
+      "Annotation": "Tropical Storm Lee"
+    },
+    {
+      "Administrative_Area": "United Kingdom",
+      "Locations": [
+        "County Durham",
+        "M54 motorway"
+      ],
+      "Start_Date": "September 10, 2011",
+      "End_Date": "September 13, 2011",
+      "Num": "NULL",
+      "Annotation": "Hurricane Katia"
+    },
+    {
+      "Administrative_Area": "Ireland",
+      "Locations": [
+        "Northern regions"
+      ],
+      "Start_Date": "October 2, 2011",
+      "End_Date": "October 4, 2011",
+      "Num": "NULL",
+      "Annotation": "Hurricane Ophelia"
+    }
+  ],
+  "Total_Summary_Deaths": {
+    "Total_Deaths": "118 total",
+    "Total_Deaths_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Deaths": [
+    {
+      "Administrative_Areas": "Mexico",
+      "Start_Date": "June 29, 2011",
+      "End_Date": "July 1, 2011",
+      "Num": "22",
+      "Annotation": "Tropical Storm Arlene"
+    },
+    {
+      "Administrative_Areas": "Central America",
+      "Start_Date": "August 2011",
+      "End_Date": "August 2011",
+      "Num": "3",
+      "Annotation": "Tropical Storm Harvey"
+    },
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "September 2011",
+      "End_Date": "September 2011",
+      "Num": "18",
+      "Annotation": "Tropical Storm Lee"
+    },
+    {
+      "Administrative_Areas": "Mexico",
+      "Start_Date": "September 2011",
+      "End_Date": "September 2011",
+      "Num": "5",
+      "Annotation": "Hurricane Nate"
+    },
+    {
+      "Administrative_Areas": "Caribbean Islands",
+      "Start_Date": "August 21, 2011",
+      "End_Date": "August 30, 2011",
+      "Num": "NULL",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "August 21, 2011",
+      "End_Date": "August 30, 2011",
+      "Num": "58",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Areas": "Canada",
+      "Start_Date": "August 21, 2011",
+      "End_Date": "August 30, 2011",
+      "Num": "1",
+      "Annotation": "Hurricane Irene"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Deaths": [
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Cabo Rojo, Veracruz"
+      ],
+      "Start_Date": "June 29, 2011",
+      "End_Date": "July 1, 2011",
+      "Num": "22",
+      "Annotation": "Tropical Storm Arlene"
+    },
+    {
+      "Administrative_Area": "Central America",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "August 2011",
+      "End_Date": "August 2011",
+      "Num": "3",
+      "Annotation": "Tropical Storm Harvey"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Northeast United States",
+        "New York",
+        "Pennsylvania"
+      ],
+      "Start_Date": "September 2011",
+      "End_Date": "September 2011",
+      "Num": "18",
+      "Annotation": "Tropical Storm Lee"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "central Mexico"
+      ],
+      "Start_Date": "September 2011",
+      "End_Date": "September 2011",
+      "Num": "5",
+      "Annotation": "Hurricane Nate"
+    },
+    {
+      "Administrative_Area": "Puerto Rico",
+      "Locations": [
+        "Maunabo",
+        "Yabucoa"
+      ],
+      "Start_Date": "August 21, 2011",
+      "End_Date": "August 30, 2011",
+      "Num": "1",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Area": "Dominican Republic",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "August 21, 2011",
+      "End_Date": "August 30, 2011",
+      "Num": "5",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Area": "Haiti",
+      "Locations": [
+        "Port-au-Prince"
+      ],
+      "Start_Date": "August 21, 2011",
+      "End_Date": "August 30, 2011",
+      "Num": "2",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Florida",
+        "Georgia",
+        "South Carolina",
+        "North Carolina",
+        "New Jersey",
+        "New York",
+        "Vermont"
+      ],
+      "Start_Date": "August 21, 2011",
+      "End_Date": "August 30, 2011",
+      "Num": "58",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Area": "Canada",
+      "Locations": [
+        "Quebec"
+      ],
+      "Start_Date": "August 21, 2011",
+      "End_Date": "August 30, 2011",
+      "Num": "1",
+      "Annotation": "Hurricane Irene"
+    }
+  ],
+  "Total_Summary_Displaced": {
+    "Total_Displaced": "NULL",
+    "Total_Displaced_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Displaced": [
+    {
+      "Administrative_Areas": [
+        "Dominican Republic"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "more than 37,700",
+      "Annotation": "Hurricane Irene"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Displaced": [
+    {
+      "Administrative_Area": "Dominican Republic",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "more than 37,700",
+      "Annotation": "Hurricane Irene"
+    }
+  ],
+  "Total_Summary_Homeless": {
+    "Total_Homeless": "NULL",
+    "Total_Homeless_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Homeless": [
+    {
+      "Administrative_Areas": "Dominican Republic",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "56 communities isolated",
+      "Annotation": "Tropical Storm Emily"
+    },
+    {
+      "Administrative_Areas": "Dominican Republic",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "37,700 people displaced",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Areas": "Bahamas",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "dozens of homes destroyed",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Areas": "Bahamas",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "many people homeless",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "1,100 homes destroyed",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "200,000 buildings and homes damaged",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "800 homes damaged or destroyed",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "5,000 dwellings damaged or demolished",
+      "Annotation": "Tropical Storm Lee"
+    },
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "839 homes damaged",
+      "Annotation": "Hurricane Nate"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Homeless": [
+    {
+      "Administrative_Area": "Dominican Republic",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "56 communities isolated",
+      "Annotation": "Tropical Storm Emily"
+    },
+    {
+      "Administrative_Area": "Dominican Republic",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "37,700 people displaced",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Area": "Bahamas",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "dozens of homes destroyed",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Area": "Bahamas",
+      "Locations": [
+        "Cat Island"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "many people homeless",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "North Carolina"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "1,100 homes destroyed",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "New Jersey"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "200,000 buildings and homes damaged",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Vermont"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "800 homes damaged or destroyed",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Dauphin and Lebanon counties"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "5,000 dwellings damaged or demolished",
+      "Annotation": "Tropical Storm Lee"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Veracruz"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "839 homes damaged",
+      "Annotation": "Hurricane Nate"
+    }
+  ],
+  "Total_Summary_Injuries": {
+    "Total_Injuries": "NULL",
+    "Total_Injuries_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Injuries": [
+    {
+      "Administrative_Areas": [
+        "Puerto Rico"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "18,500 people lost electricity",
+      "Annotation": "Tropical Storm Emily"
+    },
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "400 homes damaged",
+      "Annotation": "Tropical Storm Lee"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Injuries": [
+    {
+      "Administrative_Area": "Puerto Rico",
+      "Locations": [
+        "NULL"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "18,500 people lost electricity",
+      "Annotation": "Tropical Storm Emily"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Cherokee County, Georgia"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "400 homes damaged",
+      "Annotation": "Tropical Storm Lee"
+    }
+  ],
+  "Total_Summary_Insured_Damage": {
+    "Total_Insured_Damage": "about $130 million",
+    "Total_Insured_Damage_Unit": "USD",
+    "Total_Insured_Damage_Inflation_Adjusted": "No",
+    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Insured_Damage_Annotation": "Hurricane Irene"
+  },
+  "Instance_Per_Administrative_Areas_Insured_Damage": [
+    {
+      "Administrative_Areas": [
+        "Canada"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "about $130 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Irene"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+    {
+      "Administrative_Area": "Canada",
+      "Locations": [
+        "Quebec"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "about $130 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Irene"
+    }
+  ],
+  "Total_Summary_Damage": {
+    "Total_Damage": "nearly $17.4 billion",
+    "Total_Damage_Unit": "USD",
+    "Total_Damage_Inflation_Adjusted": "No",
+    "Total_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Damage_Annotation": "2011 Atlantic hurricane season"
+  },
+  "Instance_Per_Administrative_Areas_Damage": [
+    {
+      "Administrative_Areas": "Mexico",
+      "Start_Date": "June 29, 2011",
+      "End_Date": "NULL",
+      "Num": "$223 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "2011 Atlantic hurricane season"
+    },
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "August 21, 2011",
+      "End_Date": "August 30, 2011",
+      "Num": "$14.2 billion",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "2011 Atlantic hurricane season"
+    },
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "September 2, 2011",
+      "End_Date": "September 6, 2011",
+      "Num": "$1.6 billion",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "2011 Atlantic hurricane season"
+    },
+    {
+      "Administrative_Areas": "United Kingdom",
+      "Start_Date": "September 13, 2011",
+      "End_Date": "NULL",
+      "Num": "$157 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Katia"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Damage": [
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Cabo Rojo, Veracruz"
+      ],
+      "Start_Date": "June 29, 2011",
+      "End_Date": "NULL",
+      "Num": "$223 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Tropical Storm Arlene"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "North Carolina"
+      ],
+      "Start_Date": "August 27, 2011",
+      "End_Date": "NULL",
+      "Num": "$1.2 billion",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "New Jersey"
+      ],
+      "Start_Date": "August 28, 2011",
+      "End_Date": "NULL",
+      "Num": "$1 billion",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "New York"
+      ],
+      "Start_Date": "August 28, 2011",
+      "End_Date": "NULL",
+      "Num": "$1.3 billion",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Vermont"
+      ],
+      "Start_Date": "August 28, 2011",
+      "End_Date": "NULL",
+      "Num": "$733 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Irene"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Pennsylvania"
+      ],
+      "Start_Date": "September 2, 2011",
+      "End_Date": "September 6, 2011",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Tropical Storm Lee"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "New York"
+      ],
+      "Start_Date": "September 2, 2011",
+      "End_Date": "September 6, 2011",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Tropical Storm Lee"
+    },
+    {
+      "Administrative_Area": "United Kingdom",
+      "Locations": [
+        "County Durham",
+        "M54 motorway"
+      ],
+      "Start_Date": "September 13, 2011",
+      "End_Date": "NULL",
+      "Num": "$157 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Hurricane Katia"
+    }
+  ],
+  "Main_Event": "Tropical Storm/Cyclone",
+  "Main_Event_Annotation": "Info_Box",
+  "Start_Date": "June 1, 2011",
+  "End_Date": "November 30, 2011",
+  "Time_Annotation": "2011 Atlantic hurricane season",
+  "Administrative_Areas": [
+    "Mexico",
+    "United States",
+    "Central America",
+    "Caribbean Islands",
+    "Puerto Rico",
+    "Dominican Republic",
+    "Haiti",
+    "Bahamas",
+    "Canada",
+    "United Kingdom",
+    "Ireland"
+  ],
+  "Administrative_Areas_Annotation": "2011 Atlantic hurricane season"
+}

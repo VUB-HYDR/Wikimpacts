@@ -1,0 +1,420 @@
+{
+  "Event_ID": "VYCMecD",
+  "Sources": "https://en.wikipedia.org/wiki/Hurricane_Isidore",
+  "Event_Names": "Hurricane Isidore",
+  "Total_Summary_Affected": {
+    "Total_Affected": "NULL",
+    "Total_Affected_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Affected": [
+    {
+      "Administrative_Areas": [
+        "Cuba"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "292,000 people",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Areas": [
+        "Mexico"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "500,000 people",
+      "Annotation": "Southeast Mexico"
+    },
+    {
+      "Administrative_Areas": [
+        "Guatemala"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "350 households",
+      "Annotation": "Central America"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Affected": [
+    {
+      "Administrative_Area": "Cuba",
+      "Locations": [
+        "Pinar del R\u00edo province"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "292,000 people",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Yucat\u00e1n Peninsula"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "500,000 people",
+      "Annotation": "Southeast Mexico"
+    },
+    {
+      "Administrative_Area": "Guatemala",
+      "Locations": [
+        "southern and western portions of the country"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "350 households",
+      "Annotation": "Central America"
+    }
+  ],
+  "Total_Summary_Buildings_Damaged": {
+    "Total_Buildings_Damaged": "NULL",
+    "Total_Buildings_Damaged_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+    {
+      "Administrative_Areas": "Cuba",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "77 houses",
+      "Annotation": "Cuba"
+    },
+    {
+      "Administrative_Areas": "Mexico",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "36,500 houses",
+      "Annotation": "Southeast Mexico"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+    {
+      "Administrative_Area": "Cuba",
+      "Locations": [
+        "Isabel Rubio"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "77 houses",
+      "Annotation": "Cuba"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Yucat\u00e1n"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "36,500 houses",
+      "Annotation": "Southeast Mexico"
+    }
+  ],
+  "Total_Summary_Deaths": {
+    "Total_Deaths": "22",
+    "Total_Deaths_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Deaths": [
+    {
+      "Administrative_Areas": [
+        "Mexico"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "17",
+      "Annotation": "Southeast Mexico"
+    },
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "5",
+      "Annotation": "Eastern United States"
+    },
+    {
+      "Administrative_Areas": [
+        "Guatemala"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "2",
+      "Annotation": "Central America"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Deaths": [
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Yucat\u00e1n Peninsula"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "17",
+      "Annotation": "Southeast Mexico"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Louisiana",
+        "Mississippi"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "5",
+      "Annotation": "Eastern United States"
+    },
+    {
+      "Administrative_Area": "Guatemala",
+      "Locations": [
+        "Southern Guatemala",
+        "Western Guatemala"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "2",
+      "Annotation": "Central America"
+    }
+  ],
+  "Total_Summary_Displaced": {
+    "Total_Displaced": "NULL",
+    "Total_Displaced_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Displaced": [
+    {
+      "Administrative_Areas": "Cuba",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "about 292,000 people",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Areas": "Mexico",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "More than 70,000 people",
+      "Annotation": "Preparations"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Displaced": [
+    {
+      "Administrative_Area": "Cuba",
+      "Locations": [
+        "Pinar del R\u00edo province"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "about 292,000 people",
+      "Annotation": "Preparations"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Gulf coast of Yucat\u00e1n"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "More than 70,000 people",
+      "Annotation": "Preparations"
+    }
+  ],
+  "Total_Summary_Homeless": {
+    "Total_Homeless": "NULL",
+    "Total_Homeless_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Homeless": [
+    {
+      "Administrative_Areas": "Mexico",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "500,000",
+      "Annotation": "Southeast Mexico"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Homeless": [
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Yucat\u00e1n"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "500,000",
+      "Annotation": "Southeast Mexico"
+    }
+  ],
+  "Total_Summary_Injuries": {
+    "Total_Injuries": "NULL",
+    "Total_Injuries_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Injuries": [
+    {
+      "Administrative_Areas": "Guatemala",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "350 households reported losses",
+      "Annotation": "Central America"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Injuries": [
+    {
+      "Administrative_Area": "Guatemala",
+      "Locations": [
+        "southern and western portions of the country"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "350 households reported losses",
+      "Annotation": "Central America"
+    }
+  ],
+  "Total_Summary_Insured_Damage": {
+    "Total_Insured_Damage": "NULL",
+    "Total_Insured_Damage_Unit": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+    "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Insured_Damage_Annotation": "NULL"
+  },
+  "Instance_Per_Administrative_Areas_Insured_Damage": [
+    {
+      "Administrative_Areas": [
+        "Mexico"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Southeast Mexico"
+    },
+    {
+      "Administrative_Areas": [
+        "United States"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Eastern United States"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Yucat\u00e1n"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Southeast Mexico"
+    },
+    {
+      "Administrative_Area": "United States",
+      "Locations": [
+        "Louisiana",
+        "Mississippi"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "NULL",
+      "Num_Unit": "NULL",
+      "Num_Inflation_Adjusted": "NULL",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Eastern United States"
+    }
+  ],
+  "Total_Summary_Damage": {
+    "Total_Damage": "$1.28 billion",
+    "Total_Damage_Unit": "USD",
+    "Total_Damage_Inflation_Adjusted": "No",
+    "Total_Damage_Inflation_Adjusted_Year": "NULL",
+    "Total_Damage_Annotation": "Info_Box"
+  },
+  "Instance_Per_Administrative_Areas_Damage": [
+    {
+      "Administrative_Areas": "Mexico",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$950 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Southeast Mexico"
+    },
+    {
+      "Administrative_Areas": "United States",
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$330 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Eastern United States"
+    }
+  ],
+  "Specific_Instance_Per_Administrative_Area_Damage": [
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "PEMEX oil production"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$108.7 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Southeast Mexico"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Power grid"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$19.76 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Southeast Mexico"
+    },
+    {
+      "Administrative_Area": "Mexico",
+      "Locations": [
+        "Roads across the peninsula"
+      ],
+      "Start_Date": "NULL",
+      "End_Date": "NULL",
+      "Num": "$9.88 million",
+      "Num_Unit": "USD",
+      "Num_Inflation_Adjusted": "No",
+      "Num_Inflation_Adjusted_Year": "NULL",
+      "Annotation": "Southeast Mexico"
+    }
+  ],
+  "Main_Event": "Tropical Storm/Cyclone",
+  "Main_Event_Annotation": "Info_Box",
+  "Hazards": "Wind|Flood",
+  "Hazards_Annotation": "Info_Box|Caribbean islands|Cuba|Southeast Mexico|Eastern United States",
+  "Start_Date": "September 14, 2002",
+  "End_Date": "September 27, 2002",
+  "Time_Annotation": "Info_Box",
+  "Administrative_Areas": [
+    "Venezuela",
+    "Jamaica",
+    "Cayman Islands",
+    "Cuba",
+    "Mexico",
+    "United States",
+    "Guatemala"
+  ],
+  "Administrative_Areas_Annotation": "Info_Box"
+}
