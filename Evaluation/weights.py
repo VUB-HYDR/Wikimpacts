@@ -44,6 +44,40 @@ default_weights = {
         # Area
         "Administrative_Areas_Norm": 1,  # list
     },
+    "l1_test": {
+        "Event_ID": 0,
+        "Event_Names": 0,
+        # Deaths
+        "Total_Deaths_Min": 1,
+        "Total_Deaths_Max": 1,
+        # Injuries
+        "Total_Injuries_Max": 1,
+        "Total_Injuries_Min": 1,
+        # Buildings Damaged
+        "Total_Buildings_Damaged_Min": 1,
+        "Total_Buildings_Damaged_Max": 1,
+        # Affected
+        "Total_Affected_Min": 1,
+        "Total_Affected_Max": 1,
+        # Homeless
+        "Total_Homeless_Min": 1,
+        "Total_Homeless_Max": 1,
+        # Displaced
+        "Total_Displaced_Min": 1,
+        "Total_Displaced_Max": 1,
+        # Damage
+        "Total_Damage_Min": 1,
+        "Total_Damage_Max": 1,
+        "Total_Damage_Unit": 1,
+        "Total_Damage_Inflation_Adjusted": 1,
+        "Total_Damage_Inflation_Adjusted_Year": 1,
+        # Insured Damage
+        "Total_Insured_Damage_Min": 1,
+        "Total_Insured_Damage_Max": 1,
+        "Total_Insured_Damage_Unit": 1,
+        "Total_Insured_Damage_Inflation_Adjusted": 1,
+        "Total_Insured_Damage_Inflation_Adjusted_Year": 1,
+    },
     "l2_monetary": {
         "Event_ID": 0,
         # Date
@@ -139,6 +173,7 @@ weights = {
         "Total_Homeless_Max": 1,
     },
     "ESSD_2024_l1": default_weights["l1"],  # default weights
+    "ESSD_2024_l1_test": default_weights["l1_test"],  # for V4 and V5 prompts evaluation only
     "ESSD_2024_l2_numerical": default_weights["l2_numerical"],  # default weights
     "ESSD_2024_l2_monetary": default_weights["l2_monetary"],  # default weights
     "ESSD_2024_l3_numerical": default_weights["l3_numerical"],  # default weights

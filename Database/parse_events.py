@@ -69,8 +69,13 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
     )
     for inflation_adjusted_col in [col for col in events.columns if col.endswith("_Adjusted")]:
         logger.info(f"Normalizing boolean column {inflation_adjusted_col}")
-        events[inflation_adjusted_col] = events[inflation_adjusted_col].replace({_no: False, _yes: True}, regex=True)
-
+        events[inflation_adjusted_col] = events[inflation_adjusted_col].progress_apply(
+            lambda value: (
+                True
+                if value and not isinstance(value, bool) and re.match(_yes, value)
+                else (False if value and not isinstance(value, bool) and re.match(_no, value) else value)
+            )
+        )
     logger.info("STEP: Normalizing nulls")
     events = utils.replace_nulls(events)
 
@@ -212,9 +217,6 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
         )
     logger.info("Converting annotation columns to strings to store in sqlite3")
     annotation_cols = [col for col in events.columns if col.endswith(("_with_annotation", "_Annotation"))]
-    for col in annotation_cols:
-        events[col] = events[col].astype(str)
-    logger.info("Converting list columns to strings to store in sqlite3")
 
     logger.info(f"Storing parsed results for l1 events. Target columns: {target_columns}")
     df_to_parquet(
@@ -306,17 +308,19 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
             logger.info(f"Normalizing nulls for {level} {col}")
             sub_event = utils.replace_nulls(sub_event)
 
-            _yes, _no = re.compile(r"^(yes)$|^(y)$|^(true)$", re.IGNORECASE | re.MULTILINE), re.compile(
-                r"^(no)$|^(n)$|^(false)$", re.IGNORECASE | re.MULTILINE
-            )
-            for inflation_adjusted_col in [col for col in sub_event.columns if col.endswith("_Adjusted")]:
-                try:
-                    logger.info(f"Normalizing boolean column {inflation_adjusted_col} for {level} {col}")
-                    sub_event[inflation_adjusted_col] = sub_event[inflation_adjusted_col].replace(
-                        {_no: False, _yes: True}, regex=True
-                    )
-                except:
-                    logger.warning(f"Could not normalize boolean column {inflation_adjusted_col} for {level} {col}")
+
+        _yes, _no = re.compile(r"^(yes)$|^(y)$|^(true)$", re.IGNORECASE | re.MULTILINE), re.compile(
+            r"^(no)$|^(n)$|^(false)$", re.IGNORECASE | re.MULTILINE
+        )
+        for inflation_adjusted_col in [col for col in sub_event.columns if col.endswith("_Adjusted")]:
+            logger.info(f"Normalizing boolean column {inflation_adjusted_col} for {level} {col}")
+            sub_event[inflation_adjusted_col] = sub_event[inflation_adjusted_col].progress_apply(
+                lambda value: (
+                    True
+                    if value and not isinstance(value, bool) and re.match(_yes, value)
+                    else (False if value and not isinstance(value, bool) and re.match(_no, value) else value)
+                )
+
 
             logger.info(f"Normalizing dates for subevet {col}")
             start_date_col, end_date_col = [col for col in sub_event.columns if col.startswith("Start_Date")], [
@@ -514,7 +518,8 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
             logger.info(f"Dropped {rows_before-rows_after} row(s) in {col}")
             del rows_before, rows_after
 
-            logger.info(f"Storing parsed results for sunbvent {col}")
+            
+            logger.info(f"Storing parsed results for subevent {col}")
             for c in sub_event.columns:
                 sub_event[c] = sub_event[c].astype(str)
             if target_columns:
@@ -524,6 +529,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                 target_dir=f"{args.output_dir}/{level}/{col}",
                 chunk_size=200,
             )
+
 
 
 def df_to_parquet(

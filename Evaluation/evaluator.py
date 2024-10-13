@@ -12,6 +12,8 @@ from Evaluation.matcher import CurrencyMatcher, SpecificInstanceMatcher
 from Evaluation.utils import Logging
 from Evaluation.weights import weights as weights_dict
 
+pd.options.display.max_rows = 999
+
 if __name__ == "__main__":
     logger = Logging.get_logger("evaluator")
 
@@ -130,9 +132,12 @@ if __name__ == "__main__":
             )
             logger.info(f"Files in {args.system_output}: {list(sys_f.iterdir())}")
 
+
         sys = pd.read_parquet(args.system_output, engine="fastparquet").replace(
             {float("nan"): None, "NULL ": None, "NULL": None, "None": None}
+
         )
+
     except BaseException as err:
         logger.error(f"Loading the gold or sys files unsuccessful. Error: {err}")
         exit()
@@ -183,6 +188,7 @@ if __name__ == "__main__":
     elif args.event_level in ["l1"]:
         logger.info("Only including events in the gold file!")
         sys = sys[sys.Event_ID.isin(gold["Event_ID"].to_list())]
+
     logger.info(f"The following events exist in gold:\n{pformat(gold['Event_ID'].unique())}")
 
     if args.score in ("wikipedia", "artemis"):
@@ -269,7 +275,7 @@ if __name__ == "__main__":
             f"sys_unit_col_{mc}",
             f"aligned_{mc}",
         )
-        gold[sys_unit_col] = sys[unit_col]
+        gold[sys_unit_col] = sys[unit_col].to_numpy()
         gold[aliged_col] = gold.apply(
             lambda row: (
                 currency.get_best_currency_match(row[sys_unit_col], row[unit_col])
@@ -283,6 +289,7 @@ if __name__ == "__main__":
                 lambda row: (row[col][row[aliged_col]] if row[aliged_col] >= 0 and row[col] is not None else None),
                 axis=1,
             )
+
         gold.drop(columns=[sys_unit_col, aliged_col], inplace=True)
 
     # Specify null penalty
