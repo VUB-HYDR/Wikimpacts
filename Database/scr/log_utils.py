@@ -12,5 +12,6 @@ class Logging:
             format="%(name)s: %(asctime)s %(levelname)-8s %(message)s",
             level=level,
             datefmt="%Y-%m-%d %H:%M:%S",
+            filename="sys.log",
         )
         return logging.getLogger(name)
