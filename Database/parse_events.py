@@ -418,19 +418,29 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                     .progress_apply(pd.Series)
                 )
                 logger.info(f"Getting GID from GADM for Administrative Areas in subevent {col}")
+
+                def get_gid(admin_area: str | None):
+                    if admin_area is None:
+                        return []
+                    if isinstance(admin_area, str):
+                        try:
+                            res = norm_loc.get_gadm_gid(country=admin_area)
+                            assert res
+                        except BaseException as err:
+                            logger.warning(f"Could not get gadm as country. Admin area: {admin_area} Error: {err}")
+                            res = norm_loc.get_gadm_gid(area=admin_area)
+                            try:
+                                assert res
+                            except BaseException as err:
+                                logger.warning(f"Could not get gadm as area. Error: {err}")
+                                return []
+                    else:
+                        logger.warning(f"admin_area {admin_area} of type {type(admin_area)} is not supporetd")
+                        return []
+
                 sub_event[f"{administrative_area_col}_GID"] = sub_event[
                     f"{administrative_area_col}_Norm"
-                ].progress_apply(
-                    lambda admin_area: (
-                        (
-                            norm_loc.get_gadm_gid(country=admin_area)
-                            if norm_loc.get_gadm_gid(country=admin_area)
-                            else norm_loc.get_gadm_gid(area=admin_area)
-                        )
-                        if isinstance(admin_area, str)
-                        else []
-                    )
-                )
+                ].progress_apply(lambda admin_area: (get_gid(admin_area=admin_area)))
                 if location_col in sub_event.columns:
                     logger.info(f"Normalizing location names for {level} {col}")
                     sub_event[f"{location_col}_Tmp"] = sub_event.progress_apply(
@@ -533,6 +543,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
             target_dir=f"{args.output_dir}/{level}/{col}",
             chunk_size=200,
         )
+
 
 def get_target_cols() -> tuple[list]:
     date_cols = [
