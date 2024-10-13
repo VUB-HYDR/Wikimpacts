@@ -485,7 +485,7 @@ class NormalizeJsonOutput:
 
             output_json.append(output)
         with open(output_file_path, "w") as fp:
-            json.dump(output_json, fp)
+            json.dump(output_json, fp, indent=3)
 
         self.logger.info(f"Stored output in {output_file_path}")
 
