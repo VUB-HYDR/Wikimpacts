@@ -429,6 +429,12 @@ class NormalizeJsonOutput:
                 else:
                     output[k] = entry[k]
             for k in missing_keys:
+                if k in entry.keys():
+                    if isinstance(entry[k], dict):
+                        for key_name in missing_keys:
+                            if key_name in entry[k].keys():
+                                output[key_name] = entry[k][key_name]
+
                 if k not in entry.keys() and k not in output.keys():
                     if k == "Administrative_Areas":
                         output[k] = []
