@@ -20,7 +20,7 @@ Visualizations/**/plots
 
 # ... except for this excel file (gold flat-format annotation table)
 !Database/gold/ImpactDB_DataTable_Validation.xlsx
-
+!Database/data/currency_conversion.xlsx
 # ignore pycache
 **/__pycache__
 
