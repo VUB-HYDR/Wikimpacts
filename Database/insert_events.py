@@ -5,10 +5,12 @@ import pathlib
 import sqlite3
 
 import pandas as pd
+from pandarallel import pandarallel
 from tqdm import tqdm
 
-tqdm.pandas()
 from Database.scr.normalize_utils import GeoJsonUtils, Logging
+
+pandarallel.initialize(progress_bar=True, nb_workers=5)
 
 if __name__ == "__main__":
     event_levels = {
@@ -132,16 +134,15 @@ if __name__ == "__main__":
 
             # geojson in l1 is always of type list
             if args.dump_geojson_to_file:
-                logger.info(f"Popping GeoJson files out of {args.database_name} and onto disk")
                 for col in event_levels[args.event_level]["location_columns"].keys():
                     logger.info(f"Processing GeoJson column {col}_GeoJson in {args.event_level}")
 
                     for i in ["GeoJson", "Norm"]:
-                        data[f"{col}_{i}"] = data[f"{col}_{i}"].apply(
+                        data[f"{col}_{i}"] = data[f"{col}_{i}"].parallel_apply(
                             lambda x: ast.literal_eval(x) if isinstance(x, str) else []
                         )
 
-                    data[f"{col}_GeoJson"] = data.progress_apply(
+                    data[f"{col}_GeoJson"] = data.parallel_apply(
                         lambda row: (
                             [
                                 geojson_utils.geojson_to_file(row[f"{col}_GeoJson"][i], row[f"{col}_Norm"][i])
@@ -194,17 +195,17 @@ if __name__ == "__main__":
             for c in data.columns:
                 data[c] = data[c].astype(str)
 
-            logger.info(f"Popping GeoJson files out of {args.database_name} and onto disk")
+            logger.info(f"Popping GeoJson files out for level {args.event_level} and onto disk")
             if args.dump_geojson_to_file:
                 for col, _type in event_levels[args.event_level]["location_columns"].items():
                     logger.info(f"Processing GeoJson column {col} in {args.event_level}; File: {f}")
                     if _type == list:
                         for i in ["GeoJson", "Norm"]:
-                            data[f"{col}_{i}"] = data[f"{col}_{i}"].apply(
+                            data[f"{col}_{i}"] = data[f"{col}_{i}"].parallel_apply(
                                 lambda x: ast.literal_eval(x) if isinstance(x, str) else []
                             )
 
-                        data[f"{col}_GeoJson"] = data.progress_apply(
+                        data[f"{col}_GeoJson"] = data.parallel_apply(
                             lambda row: (
                                 [
                                     geojson_utils.geojson_to_file(row[f"{col}_GeoJson"][i], row[f"{col}_Norm"][i])
@@ -220,7 +221,7 @@ if __name__ == "__main__":
                             data[f"{col}_{i}"] = data[f"{col}_{i}"].astype(str)
 
                     elif _type == str:
-                        data[f"{col}_GeoJson"] = data.progress_apply(
+                        data[f"{col}_GeoJson"] = data.parallel_apply(
                             lambda row: (
                                 geojson_utils.geojson_to_file(row[f"{col}_GeoJson"], row[f"{col}_Norm"])
                                 if isinstance(row[f"{col}_GeoJson"], str)
