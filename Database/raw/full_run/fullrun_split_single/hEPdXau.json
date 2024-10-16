@@ -1,0 +1,515 @@
+[
+  {
+    "Event_ID": "hEPdXau",
+    "Sources": "https://en.wikipedia.org/wiki/1934_Central_America_hurricane",
+    "Event_Names": "1934 Central America hurricane",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Central America",
+        "Start_Date": "June 5, 1934",
+        "End_Date": "June 8, 1934",
+        "Num": "several thousand people",
+        "Annotation": "Central America and Southeastern Mexico"
+      },
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "June 5, 1934",
+        "End_Date": "June 8, 1934",
+        "Num": "1,000 to 3,000 casualties",
+        "Annotation": "Central America and Southeastern Mexico"
+      },
+      {
+        "Administrative_Areas": "El Salvador",
+        "Start_Date": "June 5, 1934",
+        "End_Date": "June 8, 1934",
+        "Num": "at least 2,000 deaths",
+        "Annotation": "Central America and Southeastern Mexico"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "June 16, 1934",
+        "End_Date": "June 18, 1934",
+        "Num": "10 fatalities",
+        "Annotation": "Northern Mexico and Northern America"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "El Salvador",
+        "Locations": [
+          "San Salvador"
+        ],
+        "Start_Date": "June 5, 1934",
+        "End_Date": "June 8, 1934",
+        "Num": "at least 2,000 people may have perished",
+        "Annotation": "Central America and Southeastern Mexico"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Ocotepeque"
+        ],
+        "Start_Date": "June 5, 1934",
+        "End_Date": "June 8, 1934",
+        "Num": "468 people",
+        "Annotation": "Central America and Southeastern Mexico"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Pimienta"
+        ],
+        "Start_Date": "June 5, 1934",
+        "End_Date": "June 8, 1934",
+        "Num": "NULL",
+        "Annotation": "Central America and Southeastern Mexico"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Louisiana"
+        ],
+        "Start_Date": "June 16, 1934",
+        "End_Date": "June 18, 1934",
+        "Num": "6 people",
+        "Annotation": "Northern Mexico and Northern America"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mississippi"
+        ],
+        "Start_Date": "June 16, 1934",
+        "End_Date": "June 18, 1934",
+        "Num": "4 people",
+        "Annotation": "Northern Mexico and Northern America"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "El Salvador",
+        "Start_Date": "June 5, 1934",
+        "End_Date": "June 8, 1934",
+        "Num": "NULL",
+        "Annotation": "Central America and Southeastern Mexico"
+      },
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "June 5, 1934",
+        "End_Date": "June 8, 1934",
+        "Num": "NULL",
+        "Annotation": "Central America and Southeastern Mexico"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "June 16, 1934",
+        "End_Date": "June 17, 1934",
+        "Num": "3,000\u20137,000 homes",
+        "Annotation": "Northern Mexico and Northern America"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "El Salvador",
+        "Locations": [
+          "San Salvador",
+          "Ilopango",
+          "Soyapango",
+          "Acajutla",
+          "Verapaz"
+        ],
+        "Start_Date": "June 5, 1934",
+        "End_Date": "June 8, 1934",
+        "Num": "500 people rendered homeless near the city",
+        "Annotation": "Central America and Southeastern Mexico"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Ocotepeque",
+          "San Juancito",
+          "Santiago",
+          "Pimienta",
+          "Villanueva"
+        ],
+        "Start_Date": "June 5, 1934",
+        "End_Date": "June 8, 1934",
+        "Num": "More than 125 buildings",
+        "Annotation": "Central America and Southeastern Mexico"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Louisiana",
+          "Mississippi"
+        ],
+        "Start_Date": "June 16, 1934",
+        "End_Date": "June 17, 1934",
+        "Num": "75\u2013150 homes",
+        "Annotation": "Northern Mexico and Northern America"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "at least 506",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Central America",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 506",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Areas": "U.S.",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "10",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "El Salvador",
+        "Locations": [
+          "San Salvador"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 2,000",
+        "Annotation": "Central America and Southeastern Mexico"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Ocotepeque"
+        ],
+        "Start_Date": "June 4, 1934",
+        "End_Date": "June 7, 1934",
+        "Num": "468",
+        "Annotation": "Central America and Southeastern Mexico"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Pimienta"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Central America and Southeastern Mexico"
+      },
+      {
+        "Administrative_Area": "Louisiana",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "6",
+        "Annotation": "Northern Mexico and Northern America"
+      },
+      {
+        "Administrative_Area": "Mississippi",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4",
+        "Annotation": "Northern Mexico and Northern America"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "El Salvador",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Central America and Southeastern Mexico"
+      },
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Central America and Southeastern Mexico"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "El Salvador",
+        "Locations": [
+          "San Salvador"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "500 people",
+        "Annotation": "Central America and Southeastern Mexico"
+      },
+      {
+        "Administrative_Area": "El Salvador",
+        "Locations": [
+          "San Salvador"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Central America and Southeastern Mexico"
+      },
+      {
+        "Administrative_Area": "El Salvador",
+        "Locations": [
+          "San Salvador"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Central America and Southeastern Mexico"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Ocotepeque"
+        ],
+        "Start_Date": "June 4, 1934",
+        "End_Date": "June 7, 1934",
+        "Num": "NULL",
+        "Annotation": "Central America and Southeastern Mexico"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Pimienta"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Central America and Southeastern Mexico"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "El Salvador",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "500 people rendered homeless near the city",
+        "Annotation": "Central America and Southeastern Mexico"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "El Salvador",
+        "Locations": [
+          "San Salvador"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "500 people rendered homeless near the city",
+        "Annotation": "Central America and Southeastern Mexico"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "many",
+        "Annotation": "Northern Mexico and Northern America"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Mississippi"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "many",
+        "Annotation": "Northern Mexico and Northern America"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$9.46 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "El Salvador"
+        ],
+        "Start_Date": "June 4, 1934",
+        "End_Date": "June 21, 1934",
+        "Num": "$2 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Central America and Southeastern Mexico"
+      },
+      {
+        "Administrative_Areas": [
+          "Louisiana"
+        ],
+        "Start_Date": "June 4, 1934",
+        "End_Date": "June 21, 1934",
+        "Num": "$2.605 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Northern Mexico and Northern America"
+      },
+      {
+        "Administrative_Areas": [
+          "Mississippi"
+        ],
+        "Start_Date": "June 4, 1934",
+        "End_Date": "June 21, 1934",
+        "Num": "$3 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Northern Mexico and Northern America"
+      },
+      {
+        "Administrative_Areas": [
+          "Tennessee"
+        ],
+        "Start_Date": "June 4, 1934",
+        "End_Date": "June 21, 1934",
+        "Num": "$250,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Northern Mexico and Northern America"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "El Salvador",
+        "Locations": [
+          "San Salvador"
+        ],
+        "Start_Date": "June 4, 1934",
+        "End_Date": "June 21, 1934",
+        "Num": "$2 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Central America and Southeastern Mexico"
+      },
+      {
+        "Administrative_Area": "Louisiana",
+        "Locations": [
+          "Morgan City"
+        ],
+        "Start_Date": "June 4, 1934",
+        "End_Date": "June 21, 1934",
+        "Num": "$2.605 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Northern Mexico and Northern America"
+      },
+      {
+        "Administrative_Area": "Mississippi",
+        "Locations": [
+          "Natchez"
+        ],
+        "Start_Date": "June 4, 1934",
+        "End_Date": "June 21, 1934",
+        "Num": "$3 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Northern Mexico and Northern America"
+      },
+      {
+        "Administrative_Area": "Tennessee",
+        "Locations": [
+          "Red River Valley"
+        ],
+        "Start_Date": "June 4, 1934",
+        "End_Date": "June 21, 1934",
+        "Num": "$250,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Northern Mexico and Northern America"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Central America and Southeastern Mexico|Northern Mexico and Northern America",
+    "Start_Date": "1934-06-04",
+    "End_Date": "1934-06-21",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "British Honduras",
+      "Central America",
+      "Honduras",
+      "El Salvador",
+      "Mexico",
+      "United States",
+      "Canada"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

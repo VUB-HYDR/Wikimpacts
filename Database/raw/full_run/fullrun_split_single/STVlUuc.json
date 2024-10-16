@@ -1,0 +1,636 @@
+[
+  {
+    "Event_ID": "STVlUuc",
+    "Sources": "https://en.wikipedia.org/wiki/Hurricane_Kilo",
+    "Event_Names": "Hurricane Kilo",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Hawaii",
+        "Start_Date": "August 23, 2015",
+        "End_Date": "August 25, 2015",
+        "Num": "NULL",
+        "Annotation": "Hawaii"
+      },
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan and Russia"
+      },
+      {
+        "Administrative_Areas": "Russia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan and Russia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Hawaii",
+        "Locations": [
+          "Honolulu",
+          "Kauai",
+          "Maui",
+          "Oahu",
+          "Kohala Mountain Road",
+          "Piilani Highway",
+          "Kipahulu",
+          "Hana Highway",
+          "Ala Moana Center",
+          "Walmart store",
+          "Interstate H-1 near the University of Hawaii",
+          "Waimalu"
+        ],
+        "Start_Date": "August 23, 2015",
+        "End_Date": "August 25, 2015",
+        "Num": "NULL",
+        "Annotation": "Hawaii"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan and Russia"
+      },
+      {
+        "Administrative_Area": "Russia",
+        "Locations": [
+          "Preobrazheniye",
+          "Olga",
+          "Vladivostok"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan and Russia"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Hawaii",
+        "Start_Date": "August 23, 2015",
+        "End_Date": "August 25, 2015",
+        "Num": "NULL",
+        "Annotation": "Hawaii"
+      },
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan and Russia"
+      },
+      {
+        "Administrative_Areas": "Russia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan and Russia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Hawaii",
+        "Locations": [
+          "Honolulu",
+          "Kauai",
+          "Maui",
+          "Oahu",
+          "Kipahulu",
+          "Kahana",
+          "Honokowai",
+          "Ala Moana"
+        ],
+        "Start_Date": "August 23, 2015",
+        "End_Date": "August 25, 2015",
+        "Num": "NULL",
+        "Annotation": "Hawaii"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan and Russia"
+      },
+      {
+        "Administrative_Area": "Russia",
+        "Locations": [
+          "Preobrazheniye",
+          "Olga",
+          "Vladivostok"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan and Russia"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "None",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "Hawaii",
+          "Johnston Atoll",
+          "Japan",
+          "Russian Far East"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "None",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Hawaii",
+        "Locations": [
+          "Kauai",
+          "Maui",
+          "Oahu"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "None",
+        "Annotation": "Hawaii"
+      },
+      {
+        "Administrative_Area": "Johnston Atoll",
+        "Locations": [
+          "Johnston Atoll"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "None",
+        "Annotation": "Johnston Atoll"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Japan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "None",
+        "Annotation": "Japan and Russia"
+      },
+      {
+        "Administrative_Area": "Russian Far East",
+        "Locations": [
+          "Preobrazheniye",
+          "Olga",
+          "Vladivostok"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "None",
+        "Annotation": "Japan and Russia"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Hawaii",
+        "Start_Date": "August 23, 2015",
+        "End_Date": "August 24, 2015",
+        "Num": "NULL",
+        "Annotation": "Hawaii"
+      },
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan and Russia"
+      },
+      {
+        "Administrative_Areas": "Russia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan and Russia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Hawaii",
+        "Locations": [
+          "Kohala Mountain Road",
+          "Piilani Highway",
+          "Kipahulu",
+          "Hana Highway",
+          "Wai\u02bbanapanapa State Park",
+          "Iao Valley State Park",
+          "Kahana",
+          "Honokowai",
+          "Ala Moana Center",
+          "Walmart store in Ala Moana",
+          "Interstate H-1 near the University of Hawaii",
+          "Highway near Waimalu"
+        ],
+        "Start_Date": "August 23, 2015",
+        "End_Date": "August 24, 2015",
+        "Num": "NULL",
+        "Annotation": "Hawaii"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Hawaii",
+        "Start_Date": "August 23, 2015",
+        "End_Date": "August 25, 2015",
+        "Num": "NULL",
+        "Annotation": "Hawaii"
+      },
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan and Russia"
+      },
+      {
+        "Administrative_Areas": "Russia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan and Russia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Hawaii",
+        "Locations": [
+          "Kauai",
+          "Maui",
+          "Oahu",
+          "Honolulu",
+          "Kohala Mountain Road",
+          "Piilani Highway",
+          "Kipahulu",
+          "Hana Highway",
+          "Kahana",
+          "Honokowai",
+          "Ala Moana Center",
+          "Walmart store",
+          "Interstate H-1 near the University of Hawaii",
+          "Waimalu"
+        ],
+        "Start_Date": "August 23, 2015",
+        "End_Date": "August 25, 2015",
+        "Num": "NULL",
+        "Annotation": "Hawaii"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan and Russia"
+      },
+      {
+        "Administrative_Area": "Russia",
+        "Locations": [
+          "Preobrazheniye",
+          "Olga",
+          "Vladivostok"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan and Russia"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Hawaii",
+        "Start_Date": "August 23, 2015",
+        "End_Date": "August 25, 2015",
+        "Num": "NULL",
+        "Annotation": "Hawaii"
+      },
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan and Russia"
+      },
+      {
+        "Administrative_Areas": "Russia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan and Russia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Hawaii",
+        "Locations": [
+          "Kauai",
+          "Maui",
+          "Oahu",
+          "Honolulu",
+          "Kohala Mountain Road",
+          "Piilani Highway",
+          "Kipahulu",
+          "Hana Highway",
+          "Ala Moana Center",
+          "Walmart store",
+          "Interstate H-1",
+          "Waimalu"
+        ],
+        "Start_Date": "August 23, 2015",
+        "End_Date": "August 25, 2015",
+        "Num": "NULL",
+        "Annotation": "Hawaii"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Hawaii"
+        ],
+        "Start_Date": "August 23, 2015",
+        "End_Date": "August 25, 2015",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hawaii"
+      },
+      {
+        "Administrative_Areas": [
+          "Johnston Atoll"
+        ],
+        "Start_Date": "August 23, 2015",
+        "End_Date": "August 25, 2015",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Johnston Atoll"
+      },
+      {
+        "Administrative_Areas": [
+          "Japan"
+        ],
+        "Start_Date": "September 11, 2015",
+        "End_Date": "September 15, 2015",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan and Russia"
+      },
+      {
+        "Administrative_Areas": [
+          "Russia"
+        ],
+        "Start_Date": "September 11, 2015",
+        "End_Date": "September 15, 2015",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan and Russia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Hawaii",
+        "Locations": [
+          "Honolulu",
+          "Kauai",
+          "Maui",
+          "Oahu",
+          "Kohala Mountain Road",
+          "Piilani Highway",
+          "Kipahulu",
+          "Hana Highway",
+          "Ala Moana Center",
+          "Waimalu"
+        ],
+        "Start_Date": "August 23, 2015",
+        "End_Date": "August 25, 2015",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hawaii"
+      },
+      {
+        "Administrative_Area": "Johnston Atoll",
+        "Locations": [
+          "Johnston Atoll"
+        ],
+        "Start_Date": "August 23, 2015",
+        "End_Date": "August 25, 2015",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Johnston Atoll"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Preobrazheniye",
+          "Olga",
+          "Vladivostok"
+        ],
+        "Start_Date": "September 11, 2015",
+        "End_Date": "September 15, 2015",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan and Russia"
+      },
+      {
+        "Administrative_Area": "Russia",
+        "Locations": [
+          "Preobrazheniye",
+          "Olga",
+          "Vladivostok"
+        ],
+        "Start_Date": "September 11, 2015",
+        "End_Date": "September 15, 2015",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan and Russia"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "Minimal",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Hawaii",
+        "Start_Date": "August 23, 2015",
+        "End_Date": "August 25, 2015",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hawaii"
+      },
+      {
+        "Administrative_Areas": "Johnston Atoll",
+        "Start_Date": "August 23, 2015",
+        "End_Date": "August 25, 2015",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Johnston Atoll"
+      },
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "September 11, 2015",
+        "End_Date": "September 15, 2015",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan and Russia"
+      },
+      {
+        "Administrative_Areas": "Russia",
+        "Start_Date": "September 11, 2015",
+        "End_Date": "September 15, 2015",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan and Russia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Hawaii",
+        "Locations": [
+          "Kauai",
+          "Maui",
+          "Oahu",
+          "Honolulu",
+          "Kohala Mountain Road",
+          "Piilani Highway",
+          "Kipahulu",
+          "Hana Highway",
+          "Wai\u02bbanapanapa",
+          "Iao Valley",
+          "Kahana",
+          "Honokowai",
+          "Ala Moana Center",
+          "Walmart store",
+          "Interstate H-1",
+          "Waimalu"
+        ],
+        "Start_Date": "August 23, 2015",
+        "End_Date": "August 25, 2015",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hawaii"
+      },
+      {
+        "Administrative_Area": "Johnston Atoll",
+        "Locations": [
+          "Johnston Atoll"
+        ],
+        "Start_Date": "August 23, 2015",
+        "End_Date": "August 25, 2015",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Johnston Atoll"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Japan"
+        ],
+        "Start_Date": "September 11, 2015",
+        "End_Date": "September 15, 2015",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan and Russia"
+      },
+      {
+        "Administrative_Area": "Russia",
+        "Locations": [
+          "Preobrazheniye",
+          "Olga",
+          "Vladivostok"
+        ],
+        "Start_Date": "September 11, 2015",
+        "End_Date": "September 15, 2015",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan and Russia"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood|Lightning",
+    "Hazards_Annotation": "Hawaii",
+    "Start_Date": "August 22, 2015",
+    "End_Date": "September 15, 2015",
+    "Time_Annotation": "Info_Box"
+  }
+]

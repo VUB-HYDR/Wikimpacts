@@ -1,0 +1,588 @@
+[
+  {
+    "Event_ID": "cdYvC7O",
+    "Sources": "https://en.wikipedia.org/wiki/1977_Atlantic_hurricane_season",
+    "Event_Names": "1977 Atlantic hurricane season",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "September 1, 1977",
+        "End_Date": "September 3, 1977",
+        "Num": "at least 25,000 people",
+        "Annotation": "Hurricane Anita"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "September 5, 1977",
+        "End_Date": "September 9, 1977",
+        "Num": "NULL",
+        "Annotation": "Hurricane Babe"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "November 3, 1977",
+        "End_Date": "November 11, 1977",
+        "Num": "NULL",
+        "Annotation": "Tropical Depression Nine"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Soto la Marina, Tamaulipas"
+        ],
+        "Start_Date": "September 1, 1977",
+        "End_Date": "September 3, 1977",
+        "Num": "at least 25,000 people",
+        "Annotation": "Hurricane Anita"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Louisiana",
+          "Alabama",
+          "Mississippi",
+          "South Carolina"
+        ],
+        "Start_Date": "September 5, 1977",
+        "End_Date": "September 9, 1977",
+        "Num": "NULL",
+        "Annotation": "Hurricane Babe"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina",
+          "Georgia",
+          "Virginia",
+          "Tennessee",
+          "New Jersey"
+        ],
+        "Start_Date": "November 3, 1977",
+        "End_Date": "November 11, 1977",
+        "Num": "NULL",
+        "Annotation": "Tropical Depression Nine"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hammond, Louisiana"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "six wood-frame homes",
+        "Annotation": "Hurricane Babe"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Yancey County, North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "nearly every bridge",
+        "Annotation": "Tropical Depression Nine"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "384 homes",
+        "Annotation": "Tropical Depression Nine"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Virginia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "100 homes",
+        "Annotation": "Tropical Depression Nine"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Georgia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Tropical Depression Nine"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Tennessee"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Tropical Depression Nine"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Soto la Marina, Tamaulipas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "most buildings",
+        "Annotation": "Hurricane Anita"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "11 total",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "11",
+        "Annotation": "Hurricane Anita"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "53",
+        "Annotation": "Tropical Depression Nine"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Tamaulipas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "11",
+        "Annotation": "Hurricane Anita"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Georgia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "39",
+        "Annotation": "Tropical Depression Nine"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "13",
+        "Annotation": "Tropical Depression Nine"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Tennessee"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Tropical Depression Nine"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "hundreds of families",
+        "Annotation": "Hurricane Anita"
+      },
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "25,000 people",
+        "Annotation": "Hurricane Anita"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Grand Isle, Louisiana"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "hundreds of families",
+        "Annotation": "Hurricane Anita"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "northeastern Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "25,000 people",
+        "Annotation": "Hurricane Anita"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "about 25,000 people",
+        "Annotation": "Hurricane Anita"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "northeastern Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "about 25,000 people",
+        "Annotation": "Hurricane Anita"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Louisiana"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "hundreds of families",
+        "Annotation": "Hurricane Anita"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Louisiana"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Babe"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Louisiana"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Clara"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Tropical Depression Nine"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Georgia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Tropical Depression Nine"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Virginia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Tropical Depression Nine"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Tennessee"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Tropical Depression Nine"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New Jersey"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Tropical Depression Nine"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Tamaulipas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "25,000 people left homeless",
+        "Annotation": "Hurricane Anita"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Louisiana"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Babe"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tropical Depression Nine"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New Jersey"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tropical Depression Nine"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Tamaulipas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Anita"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "more than $13 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$203 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tropical Depression Nine"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$13 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Babe"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Louisiana"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$2.5 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Babe"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New Jersey"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$100 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tropical Depression Nine"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Hurricane Anita|Hurricane Babe|Hurricane Clara|Hurricane Dorothy|Hurricane Evelyn|Tropical Storm Frieda|Tropical Depression Nine",
+    "Start_Date": "June 1, 1977",
+    "End_Date": "November 30, 1977",
+    "Time_Annotation": "Season summary",
+    "Administrative_Areas": [
+      "Mexico",
+      "United States",
+      "Canada",
+      "Belize"
+    ],
+    "Administrative_Areas_Annotation": "header: Hurricane Anita, header: Hurricane Babe, header: Hurricane Clara, header: Hurricane Dorothy, header: Hurricane Evelyn, header: Tropical Storm Frieda, header: Tropical Depression Nine"
+  }
+]

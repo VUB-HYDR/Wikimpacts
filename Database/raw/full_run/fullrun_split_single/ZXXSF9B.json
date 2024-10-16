@@ -1,0 +1,1058 @@
+[
+  {
+    "Event_ID": "ZXXSF9B",
+    "Sources": "https://en.wikipedia.org/wiki/Hurricane_Dennis",
+    "Event_Names": "Hurricane Dennis",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Haiti"
+        ],
+        "Start_Date": "July 6, 2005",
+        "End_Date": "NULL",
+        "Num": "15,000 people",
+        "Annotation": "Haiti"
+      },
+      {
+        "Administrative_Areas": [
+          "Jamaica"
+        ],
+        "Start_Date": "July 5, 2005",
+        "End_Date": "NULL",
+        "Num": "6,000 people",
+        "Annotation": "Caribbean"
+      },
+      {
+        "Administrative_Areas": [
+          "Cuba"
+        ],
+        "Start_Date": "July 6, 2005",
+        "End_Date": "NULL",
+        "Num": "1.5 million people",
+        "Annotation": "Caribbean"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "July 7, 2005",
+        "End_Date": "NULL",
+        "Num": "1.8 million people",
+        "Annotation": "United States"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Les Cayes",
+          "Port-Salut",
+          "Grand'Anse"
+        ],
+        "Start_Date": "July 5, 2005",
+        "End_Date": "NULL",
+        "Num": "700 people",
+        "Annotation": "Caribbean"
+      },
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Les Cayes"
+        ],
+        "Start_Date": "July 6, 2005",
+        "End_Date": "NULL",
+        "Num": "34 homes",
+        "Annotation": "Haiti"
+      },
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Grand'Anse"
+        ],
+        "Start_Date": "July 6, 2005",
+        "End_Date": "NULL",
+        "Num": "1,500 families",
+        "Annotation": "Haiti"
+      },
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Grand-Go\u00e2ve"
+        ],
+        "Start_Date": "July 6, 2005",
+        "End_Date": "NULL",
+        "Num": "25 homes",
+        "Annotation": "Haiti"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Pedro Bank",
+          "Morant Cays"
+        ],
+        "Start_Date": "July 5, 2005",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Caribbean"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Montego Bay"
+        ],
+        "Start_Date": "July 5, 2005",
+        "End_Date": "NULL",
+        "Num": "100,000 customers",
+        "Annotation": "Jamaica"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Saint Thomas Parish"
+        ],
+        "Start_Date": "July 5, 2005",
+        "End_Date": "NULL",
+        "Num": "200 houses",
+        "Annotation": "Jamaica"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Bull Bay"
+        ],
+        "Start_Date": "July 5, 2005",
+        "End_Date": "NULL",
+        "Num": "67 homes",
+        "Annotation": "Jamaica"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Mill Bank"
+        ],
+        "Start_Date": "July 5, 2005",
+        "End_Date": "NULL",
+        "Num": "8 homes",
+        "Annotation": "Jamaica"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Saint Andrew Parish"
+        ],
+        "Start_Date": "July 5, 2005",
+        "End_Date": "NULL",
+        "Num": "2 homes",
+        "Annotation": "Jamaica"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Saint Mary Parish"
+        ],
+        "Start_Date": "July 5, 2005",
+        "End_Date": "NULL",
+        "Num": "500 people",
+        "Annotation": "Jamaica"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Saint Catherine Parish"
+        ],
+        "Start_Date": "July 5, 2005",
+        "End_Date": "NULL",
+        "Num": "8 people",
+        "Annotation": "Jamaica"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Halse Hall"
+        ],
+        "Start_Date": "July 5, 2005",
+        "End_Date": "NULL",
+        "Num": "35 homes",
+        "Annotation": "Jamaica"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Granma Province"
+        ],
+        "Start_Date": "July 6, 2005",
+        "End_Date": "NULL",
+        "Num": "4,260 homes",
+        "Annotation": "Cuba"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Granma Province"
+        ],
+        "Start_Date": "July 6, 2005",
+        "End_Date": "NULL",
+        "Num": "9,785 homes",
+        "Annotation": "Cuba"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Granma Province"
+        ],
+        "Start_Date": "July 6, 2005",
+        "End_Date": "NULL",
+        "Num": "70% of water sources",
+        "Annotation": "Cuba"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Cienfuegos",
+          "Granma"
+        ],
+        "Start_Date": "July 6, 2005",
+        "End_Date": "NULL",
+        "Num": "27,000 hectares of agricultural land",
+        "Annotation": "Cuba"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida"
+        ],
+        "Start_Date": "July 7, 2005",
+        "End_Date": "NULL",
+        "Num": "50,000 people",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida"
+        ],
+        "Start_Date": "July 7, 2005",
+        "End_Date": "NULL",
+        "Num": "439,600 people",
+        "Annotation": "Florida"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida"
+        ],
+        "Start_Date": "July 7, 2005",
+        "End_Date": "NULL",
+        "Num": "322,275 people",
+        "Annotation": "Florida"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Alabama"
+        ],
+        "Start_Date": "July 7, 2005",
+        "End_Date": "NULL",
+        "Num": "291,128 people",
+        "Annotation": "Rest of the Gulf Coast"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Georgia"
+        ],
+        "Start_Date": "July 7, 2005",
+        "End_Date": "NULL",
+        "Num": "55,000 people",
+        "Annotation": "Other areas"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Haiti",
+        "Start_Date": "July 6, 2005",
+        "End_Date": "NULL",
+        "Num": "3,058",
+        "Annotation": "Caribbean"
+      },
+      {
+        "Administrative_Areas": "Jamaica",
+        "Start_Date": "July 5, 2005",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Jamaica"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "July 8, 2005",
+        "End_Date": "NULL",
+        "Num": "120,000",
+        "Annotation": "Cuba"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "July 10, 2005",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "United States"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Les Cayes",
+          "Petit-Go\u00e2ve",
+          "Grand-Go\u00e2ve",
+          "Gon\u00e2ve Island",
+          "Grand'Anse",
+          "Beaumont"
+        ],
+        "Start_Date": "July 6, 2005",
+        "End_Date": "NULL",
+        "Num": "929",
+        "Annotation": "Haiti"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Montego Bay",
+          "Saint Thomas Parish",
+          "Kingston Harbour",
+          "Yallahs",
+          "Mahoneyvale",
+          "Rio Grande",
+          "Eight Miles",
+          "Bull Bay",
+          "Mill Bank",
+          "Saint Andrew Parish",
+          "Saint Mary Parish",
+          "Saint Catherine Parish",
+          "Halse Hall"
+        ],
+        "Start_Date": "July 5, 2005",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Jamaica"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Granma Province",
+          "Cienfuegos",
+          "Matanzas Province",
+          "Cape Cruz",
+          "Uni\u00f3n de Reyes",
+          "Topes de Collantes",
+          "Niquero",
+          "Cape Cruz",
+          "Santiago de Cuba Province",
+          "Pico Turquino",
+          "Havana"
+        ],
+        "Start_Date": "July 8, 2005",
+        "End_Date": "NULL",
+        "Num": "120,000",
+        "Annotation": "Cuba"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida",
+          "Alabama",
+          "Georgia",
+          "Mississippi",
+          "Louisiana",
+          "Tennessee",
+          "Kentucky",
+          "Indiana",
+          "Michigan"
+        ],
+        "Start_Date": "July 10, 2005",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "United States"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "88",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Haiti",
+        "Start_Date": "July 6, 2005",
+        "End_Date": "NULL",
+        "Num": "56",
+        "Annotation": "Haiti"
+      },
+      {
+        "Administrative_Areas": "Jamaica",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Jamaica"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "16",
+        "Annotation": "Cuba"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "16",
+        "Annotation": "United States"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Sud department",
+          "Les Cayes",
+          "Ouest department",
+          "Petit-Go\u00e2ve",
+          "Grand-Go\u00e2ve",
+          "Gon\u00e2ve Island",
+          "Grand'Anse",
+          "Beaumont"
+        ],
+        "Start_Date": "July 6, 2005",
+        "End_Date": "NULL",
+        "Num": "56",
+        "Annotation": "Haiti"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Negro River"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Jamaica"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Granma Province",
+          "Santiago de Cuba Province",
+          "Sancti Sp\u00edritus Province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "16",
+        "Annotation": "Cuba"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida",
+          "Alabama",
+          "Georgia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "16",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida Keys",
+          "Dania Beach",
+          "Port Charlotte",
+          "Walton County",
+          "Alabama",
+          "Flomaton",
+          "Clay County",
+          "Decatur"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "16",
+        "Annotation": "United States"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Haiti",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "15,000 people",
+        "Annotation": "Haiti"
+      },
+      {
+        "Administrative_Areas": "Jamaica",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "6,000 people",
+        "Annotation": "Caribbean"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1.5 million people",
+        "Annotation": "Caribbean"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1.8 million people",
+        "Annotation": "United States"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Les Cayes",
+          "Port-Salut",
+          "Grand'Anse"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "700 people",
+        "Annotation": "Caribbean"
+      },
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Grand'Anse"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "675 families",
+        "Annotation": "Haiti"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Pedro Bank",
+          "Morant Cays"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Caribbean"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Saint Mary Parish"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "500 people",
+        "Annotation": "Jamaica"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Worth County"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "300 homes",
+        "Annotation": "Other areas"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Colquitt County"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "100 homes and businesses",
+        "Annotation": "Other areas"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Clayton County"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "52 residents",
+        "Annotation": "Other areas"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "17,000 foreign tourists",
+        "Annotation": "Caribbean"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida Keys"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "50,000 people",
+        "Annotation": "United States"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Haiti",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "15,000 people",
+        "Annotation": "Haiti"
+      },
+      {
+        "Administrative_Areas": "Jamaica",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Jamaica"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "73,000 people",
+        "Annotation": "Cuba"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Les Cayes",
+          "Grand'Anse",
+          "Beaumont"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": [
+          "34 homes",
+          "1,500 families",
+          "NULL"
+        ],
+        "Annotation": "Haiti"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Saint Thomas Parish",
+          "Bull Bay",
+          "Mill Bank",
+          "Saint Andrew Parish",
+          "Saint Mary Parish",
+          "Saint Catherine Parish",
+          "Halse Hall"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": [
+          "200 houses",
+          "67 homes",
+          "8 homes",
+          "2 homes",
+          "500 people",
+          "8 people",
+          "35 homes"
+        ],
+        "Annotation": "Jamaica"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Granma Province",
+          "Cienfuegos",
+          "Granma",
+          "Niquero",
+          "Cape Cruz",
+          "Santiago de Cuba Province",
+          "Pico Turquino"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": [
+          "4,260 homes",
+          "27,000 hectares of agriculture land",
+          "NULL",
+          "NULL",
+          "NULL",
+          "NULL",
+          "NULL"
+        ],
+        "Annotation": "Cuba"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida",
+          "Franklin County",
+          "Wakulla County",
+          "Key West",
+          "Navarre Beach",
+          "Holiday Island",
+          "McDavid"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": [
+          "448 buildings",
+          "NULL",
+          "487 buildings",
+          "NULL",
+          "200 houses",
+          "NULL",
+          "NULL"
+        ],
+        "Annotation": "Florida"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Alabama",
+          "Escambia",
+          "Monroe counties",
+          "Dallas County",
+          "Montgomery counties",
+          "Clay County",
+          "Calhoun County",
+          "Greene",
+          "Randolph",
+          "Russell counties"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": [
+          "NULL",
+          "NULL",
+          "NULL",
+          "NULL",
+          "NULL",
+          "NULL",
+          "NULL",
+          "NULL",
+          "NULL",
+          "NULL"
+        ],
+        "Annotation": "Rest of the Gulf Coast"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Georgia",
+          "Decatur",
+          "Mableton",
+          "Milledgeville",
+          "Upson County",
+          "Cobb",
+          "Douglas counties",
+          "Worth County",
+          "Colquitt County",
+          "Clayton County",
+          "Atlanta",
+          "Forsyth County",
+          "Fayetteville",
+          "Tift County",
+          "Stockbridge",
+          "White County"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": [
+          "NULL",
+          "NULL",
+          "NULL",
+          "NULL",
+          "NULL",
+          "NULL",
+          "300 homes",
+          "100 homes and businesses",
+          "14 mobile homes",
+          "NULL",
+          "NULL",
+          "NULL",
+          "NULL",
+          "NULL",
+          "2 barns"
+        ],
+        "Annotation": "Rest of the Gulf Coast"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Haiti",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "36",
+        "Annotation": "Haiti"
+      },
+      {
+        "Administrative_Areas": "Georgia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Rest of the Gulf Coast"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "36",
+        "Annotation": "Haiti"
+      },
+      {
+        "Administrative_Area": "Georgia",
+        "Locations": [
+          "Milledgeville",
+          "Upson County"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Rest of the Gulf Coast"
+      },
+      {
+        "Administrative_Area": "Alabama",
+        "Locations": [
+          "Dallas County",
+          "Montgomery County",
+          "Clay County"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Rest of the Gulf Coast"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "July 10, 2005",
+        "End_Date": "July 18, 2005",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "United States"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida"
+        ],
+        "Start_Date": "July 10, 2005",
+        "End_Date": "July 18, 2005",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Florida"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$3.98 billion",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Haiti",
+        "Start_Date": "July 6, 2005",
+        "End_Date": "July 6, 2005",
+        "Num": "$50 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Haiti"
+      },
+      {
+        "Administrative_Areas": "Jamaica",
+        "Start_Date": "July 6, 2005",
+        "End_Date": "July 6, 2005",
+        "Num": "$34.5 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Jamaica"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "July 8, 2005",
+        "End_Date": "July 8, 2005",
+        "Num": "$1.4 billion",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Cuba"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "July 10, 2005",
+        "End_Date": "July 10, 2005",
+        "Num": "$2.5 billion",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "United States"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Les Cayes",
+          "Port-Salut",
+          "Grand'Anse",
+          "Sud department",
+          "Ouest department",
+          "Petit-Go\u00e2ve",
+          "Grand-Go\u00e2ve",
+          "Gon\u00e2ve Island",
+          "Beaumont"
+        ],
+        "Start_Date": "July 6, 2005",
+        "End_Date": "July 6, 2005",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Haiti"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Montego Bay",
+          "Mavis Bank",
+          "Saint Thomas Parish",
+          "Kingston Harbour",
+          "Yallahs",
+          "Mahoneyvale",
+          "Rio Grande",
+          "Eight Miles",
+          "Bull Bay",
+          "Mill Bank",
+          "Saint Andrew Parish",
+          "Saint Mary Parish",
+          "Saint Catherine Parish",
+          "Halse Hall"
+        ],
+        "Start_Date": "July 6, 2005",
+        "End_Date": "July 6, 2005",
+        "Num": "J$2.128 billion",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Jamaica"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Granma Province",
+          "Cienfuegos",
+          "Matanzas Province",
+          "Santiago de Cuba Province",
+          "Sancti Sp\u00edritus Province",
+          "Cape Cruz",
+          "Uni\u00f3n de Reyes",
+          "Topes de Collantes",
+          "Niquero",
+          "Cape Cruz",
+          "R\u00edo Mogote",
+          "Pico Turquino",
+          "Havana"
+        ],
+        "Start_Date": "July 8, 2005",
+        "End_Date": "July 8, 2005",
+        "Num": "US$1.4 billion",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Cuba"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida",
+          "Alabama",
+          "Mississippi",
+          "Georgia",
+          "Indiana",
+          "Michigan",
+          "Kentucky",
+          "Tennessee",
+          "North Carolina",
+          "South Carolina"
+        ],
+        "Start_Date": "July 10, 2005",
+        "End_Date": "July 10, 2005",
+        "Num": "US$2.5 billion",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "United States"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood|Lightning",
+    "Hazards_Annotation": "Info_Box|Caribbean|Jamaica|Cuba|United States",
+    "Start_Date": "July 4, 2005",
+    "End_Date": "July 18, 2005",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Haiti",
+      "Jamaica",
+      "Cuba",
+      "United States",
+      "Canada"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

@@ -1,0 +1,421 @@
+[
+  {
+    "Event_ID": "DGCZw8m",
+    "Sources": "https://en.wikipedia.org/wiki/2013_Alberta_floods",
+    "Event_Names": "2013 Alberta floods",
+    "Total_Summary_Affected": {
+      "Total_Affected": "over 100,000 people",
+      "Total_Affected_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "June 19, 2013",
+        "End_Date": "July 12, 2013",
+        "Num": "over 100,000 people",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Calgary"
+        ],
+        "Start_Date": "June 20, 2013",
+        "End_Date": "June 21, 2013",
+        "Num": "75,000 people",
+        "Annotation": "Calgary"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "High River"
+        ],
+        "Start_Date": "June 20, 2013",
+        "End_Date": "NULL",
+        "Num": "13,000 residents",
+        "Annotation": "High River"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Siksika First Nation"
+        ],
+        "Start_Date": "June 20, 2013",
+        "End_Date": "June 23, 2013",
+        "Num": "1,000 residents",
+        "Annotation": "Southern Alberta"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Medicine Hat"
+        ],
+        "Start_Date": "June 23, 2013",
+        "End_Date": "NULL",
+        "Num": "10,000 residents",
+        "Annotation": "Southern Alberta"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Cumberland House area"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2,200 people",
+        "Annotation": "Saskatchewan and Manitoba"
+      }
+    ],
+    "Json_Error": "{\n  \"Total_Summary_Buildings_Damaged\": {\n    \"Total_Buildings_Damaged\": \"NULL\",\n    \"Total_Buildings_Damaged_Annotation\": \"NULL\"\n  },\n  \"Instance_Per_Administrative_Areas_Buildings_Damaged\": [\n    {\n      \"Administrative_Areas\": \"Canada\",\n      \"Start_Date\": \"June 19, 2013\",\n      \"End_Date\": \"July 12, 2013\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"NULL\"\n    }\n  ],\n  \"Specific_Instance_Per_Administrative_Area_Buildings_Damaged\": [\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 20, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area\": \"Canada\",\n      \"Locations\": [\"Calgary\"],\n      \"Start_Date\": \"June 21, 2013\",\n      \"End_Date\": \"June 21, 2013\",\n      \"Num\": \"several houses\",\n      \"Annotation\": \"Calgary\"\n    },\n    {\n      \"Administrative_Area",
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "5",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5",
+        "Annotation": "Fatalities"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Highwood River near High River",
+          "Calgary's Mission neighbourhood",
+          "Okotoks"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Fatalities"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Calgary's Mission neighbourhood"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Fatalities"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Okotoks"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Fatalities"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "over 100,000 people",
+      "Total_Displaced_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "June 19, 2013",
+        "End_Date": "July 12, 2013",
+        "Num": "over 100,000 people",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Calgary"
+        ],
+        "Start_Date": "June 20, 2013",
+        "End_Date": "June 21, 2013",
+        "Num": "75,000 people",
+        "Annotation": "Calgary"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "High River"
+        ],
+        "Start_Date": "June 20, 2013",
+        "End_Date": "NULL",
+        "Num": "13,000 residents",
+        "Annotation": "High River"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Siksika First Nation"
+        ],
+        "Start_Date": "June 20, 2013",
+        "End_Date": "June 23, 2013",
+        "Num": "1,000 residents",
+        "Annotation": "Southern Alberta"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Medicine Hat"
+        ],
+        "Start_Date": "June 23, 2013",
+        "End_Date": "NULL",
+        "Num": "10,000 residents",
+        "Annotation": "Southern Alberta"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Cumberland House area"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2,200 people",
+        "Annotation": "Saskatchewan and Manitoba"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "over 100,000 people",
+      "Total_Homeless_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "June 19, 2013",
+        "End_Date": "July 12, 2013",
+        "Num": "over 100,000 people",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Calgary"
+        ],
+        "Start_Date": "June 20, 2013",
+        "End_Date": "June 21, 2013",
+        "Num": "75,000 people",
+        "Annotation": "Calgary"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "High River"
+        ],
+        "Start_Date": "June 20, 2013",
+        "End_Date": "June 23, 2013",
+        "Num": "13,000 residents",
+        "Annotation": "High River"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Siksika First Nation"
+        ],
+        "Start_Date": "June 20, 2013",
+        "End_Date": "June 23, 2013",
+        "Num": "1,000 residents",
+        "Annotation": "Southern Alberta"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Medicine Hat"
+        ],
+        "Start_Date": "June 23, 2013",
+        "End_Date": "NULL",
+        "Num": "10,000 residents",
+        "Annotation": "Southern Alberta"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Cumberland House area"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2,200 people",
+        "Annotation": "Saskatchewan and Manitoba"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Canada",
+        "Start_Date": "June 19, 2013",
+        "End_Date": "July 12, 2013",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Calgary"
+        ],
+        "Start_Date": "June 20, 2013",
+        "End_Date": "June 21, 2013",
+        "Num": "NULL",
+        "Annotation": "Calgary"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "High River"
+        ],
+        "Start_Date": "June 20, 2013",
+        "End_Date": "June 23, 2013",
+        "Num": "NULL",
+        "Annotation": "High River"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Siksika First Nation"
+        ],
+        "Start_Date": "June 20, 2013",
+        "End_Date": "June 23, 2013",
+        "Num": "NULL",
+        "Annotation": "First Nations"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "$1.7 billion",
+      "Total_Insured_Damage_Unit": "CAD",
+      "Total_Insured_Damage_Inflation_Adjusted": "No",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "Estimated costs"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "June 19, 2013",
+        "End_Date": "July 12, 2013",
+        "Num": "$1.7 billion",
+        "Num_Unit": "CAD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Estimated costs"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Alberta"
+        ],
+        "Start_Date": "June 19, 2013",
+        "End_Date": "July 12, 2013",
+        "Num": "$1.7 billion",
+        "Num_Unit": "CAD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Estimated costs"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "exceeded C$5 billion",
+      "Total_Damage_Unit": "CAD",
+      "Total_Damage_Inflation_Adjusted": "Yes",
+      "Total_Damage_Inflation_Adjusted_Year": "2023",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "June 19, 2013",
+        "End_Date": "July 12, 2013",
+        "Num": "exceeded C$5 billion",
+        "Num_Unit": "CAD",
+        "Num_Inflation_Adjusted": "Yes",
+        "Num_Inflation_Adjusted_Year": "2023",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Calgary"
+        ],
+        "Start_Date": "June 19, 2013",
+        "End_Date": "July 12, 2013",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Calgary"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "High River"
+        ],
+        "Start_Date": "June 19, 2013",
+        "End_Date": "July 12, 2013",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "High River"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Southern Alberta"
+        ],
+        "Start_Date": "June 19, 2013",
+        "End_Date": "July 12, 2013",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Southern Alberta"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Siksika First Nation"
+        ],
+        "Start_Date": "June 19, 2013",
+        "End_Date": "July 12, 2013",
+        "Num": "$93M",
+        "Num_Unit": "CAD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "First Nations"
+      }
+    ],
+    "Main_Event": "Flood",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Flood",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "June 19, 2013",
+    "End_Date": "July 12, 2013",
+    "Time_Annotation": "Info_Box"
+  }
+]
