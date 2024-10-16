@@ -1,0 +1,443 @@
+[
+  {
+    "Event_ID": "qowbsF5",
+    "Sources": "https://en.wikipedia.org/wiki/Typhoon_Durian",
+    "Event_Names": "Typhoon Durian",
+    "Total_Summary_Affected": {
+      "Total_Affected": "3.5 million",
+      "Total_Affected_Annotation": "Philippines"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3.5 million",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region",
+          "Naga City",
+          "Legazpi City",
+          "Albay",
+          "Sorsogon",
+          "Camarines Sur",
+          "Camarines Norte",
+          "Catanduanes",
+          "Mindoro",
+          "Quezon",
+          "Virac",
+          "Bacagay",
+          "Maipon",
+          "Daraga"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1.3 million evacuated",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Ninh Thu\u1eadn province",
+          "B\u00ecnh Thu\u1eadn Province",
+          "B\u00e0 R\u1ecba\u2013V\u0169ng T\u00e0u province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "90,000 evacuated",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "November 30, 2006",
+        "End_Date": "December 1, 2006",
+        "Num": "588,037 houses",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "December 5, 2006",
+        "End_Date": "December 6, 2006",
+        "Num": "200,000 houses",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "November 30, 2006",
+        "End_Date": "December 1, 2006",
+        "Num": "588,037 houses",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "November 30, 2006",
+        "End_Date": "December 1, 2006",
+        "Num": "5,685 schools",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Albay"
+        ],
+        "Start_Date": "November 30, 2006",
+        "End_Date": "December 1, 2006",
+        "Num": "702 schools",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "B\u00ecnh Thu\u1eadn Province"
+        ],
+        "Start_Date": "December 5, 2006",
+        "End_Date": "December 6, 2006",
+        "Num": "1,120 houses",
+        "Annotation": "Vietnam"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "B\u00e0 R\u1ecba\u2013V\u0169ng T\u00e0u Province"
+        ],
+        "Start_Date": "December 5, 2006",
+        "End_Date": "December 6, 2006",
+        "Num": "500 houses",
+        "Annotation": "Vietnam"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Vietnam"
+        ],
+        "Start_Date": "December 5, 2006",
+        "End_Date": "December 6, 2006",
+        "Num": "34,000 homes",
+        "Annotation": "Vietnam"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Vietnam"
+        ],
+        "Start_Date": "December 5, 2006",
+        "End_Date": "December 6, 2006",
+        "Num": "22 schools",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "almost 2,000",
+      "Total_Deaths_Annotation": "Typhoon Durian"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,399",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "85",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Albay"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "604",
+        "Annotation": "Mayon Volcano"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Daraga"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "149",
+        "Annotation": "Mayon Volcano"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1.3 million people",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "90,000 people",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Naga City",
+          "Legazpi City",
+          "Manila"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,500 citizens in Naga City; 800 in Legazpi City; 120 in Manila",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Ninh Thu\u1eadn province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "6,800 people",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "about 120,000",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "34,000",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Albay"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "13,000 families",
+        "Annotation": "Mayon Volcano"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Albay",
+          "Camarines Sur"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "over 10,000 families",
+        "Annotation": "Philippines"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,465",
+        "Annotation": "Mayon Volcano"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,379",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Albay"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,465",
+        "Annotation": "Mayon Volcano"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "B\u00e0 R\u1ecba\u2013V\u0169ng T\u00e0u"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": ">$580 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "\u20b15.45 billion",
+        "Num_Unit": "PHP",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "7.234 trillion",
+        "Num_Unit": "VND",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Bicol Region"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$110 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Albay"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$71 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Mayon Volcano"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Philippines|Mayon Volcano|Vietnam",
+    "Start_Date": "November 25, 2006",
+    "End_Date": "December 9, 2006",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Yap State",
+      "Philippines",
+      "Vietnam",
+      "Thailand",
+      "Malaysia",
+      "Andaman Islands",
+      "India"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

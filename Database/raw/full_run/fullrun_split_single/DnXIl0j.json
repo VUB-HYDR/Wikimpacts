@@ -1,0 +1,492 @@
+[
+  {
+    "Event_ID": "DnXIl0j",
+    "Sources": "https://en.wikipedia.org/wiki/Cyclone_Gati",
+    "Event_Names": "Cyclone Gati",
+    "Total_Summary_Affected": {
+      "Total_Affected": "180,000",
+      "Total_Affected_Annotation": "Somalia"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Somalia"
+        ],
+        "Start_Date": "22 November 2020",
+        "End_Date": "23 November 2020",
+        "Num": "180,000",
+        "Annotation": "Somalia"
+      },
+      {
+        "Administrative_Areas": [
+          "Yemen"
+        ],
+        "Start_Date": "22 November 2020",
+        "End_Date": "23 November 2020",
+        "Num": "NULL",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Areas": [
+          "Ethiopia"
+        ],
+        "Start_Date": "22 November 2020",
+        "End_Date": "23 November 2020",
+        "Num": "NULL",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Somalia",
+        "Locations": [
+          "Bosaso"
+        ],
+        "Start_Date": "22 November 2020",
+        "End_Date": "23 November 2020",
+        "Num": "9,000",
+        "Annotation": "Aftermath"
+      },
+      {
+        "Administrative_Area": "Somalia",
+        "Locations": [
+          "Hafun",
+          "Hurdiya",
+          "Iskushuban"
+        ],
+        "Start_Date": "22 November 2020",
+        "End_Date": "23 November 2020",
+        "Num": "10,000 households",
+        "Annotation": "Aftermath"
+      },
+      {
+        "Administrative_Area": "Somalia",
+        "Locations": [
+          "Bari"
+        ],
+        "Start_Date": "22 November 2020",
+        "End_Date": "23 November 2020",
+        "Num": "42,000",
+        "Annotation": "Somalia"
+      },
+      {
+        "Administrative_Area": "Somalia",
+        "Locations": [
+          "Hafun"
+        ],
+        "Start_Date": "22 November 2020",
+        "End_Date": "23 November 2020",
+        "Num": "6",
+        "Annotation": "Somalia"
+      },
+      {
+        "Administrative_Area": "Somalia",
+        "Locations": [
+          "Hafun"
+        ],
+        "Start_Date": "22 November 2020",
+        "End_Date": "23 November 2020",
+        "Num": "8 fishermen",
+        "Annotation": "Somalia"
+      },
+      {
+        "Administrative_Area": "Somalia",
+        "Locations": [
+          "Hafun"
+        ],
+        "Start_Date": "22 November 2020",
+        "End_Date": "23 November 2020",
+        "Num": "30 fishermen",
+        "Annotation": "Somalia"
+      },
+      {
+        "Administrative_Area": "Somalia",
+        "Locations": [
+          "Bossaso"
+        ],
+        "Start_Date": "22 November 2020",
+        "End_Date": "23 November 2020",
+        "Num": "66,000",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Somalia",
+        "Start_Date": "22 November 2020",
+        "End_Date": "23 November 2020",
+        "Num": "NULL",
+        "Annotation": "Somalia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Somalia",
+        "Locations": [
+          "Bari"
+        ],
+        "Start_Date": "22 November 2020",
+        "End_Date": "23 November 2020",
+        "Num": "642 homes",
+        "Annotation": "Somalia"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "9",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Somalia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "9",
+        "Annotation": "Somalia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Somalia",
+        "Locations": [
+          "Hafun"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8",
+        "Annotation": "Somalia"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "approximately 42,000",
+      "Total_Displaced_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Somalia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "approximately 42,000",
+        "Annotation": "Somalia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Somalia",
+        "Locations": [
+          "Bari"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Somalia"
+      },
+      {
+        "Administrative_Area": "Somalia",
+        "Locations": [
+          "Bosaso"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "about 9,000",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "approximately 42,000",
+      "Total_Homeless_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Somalia",
+        "Start_Date": "22 November 2020",
+        "End_Date": "NULL",
+        "Num": "approximately 42,000",
+        "Annotation": "Somalia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Somalia",
+        "Locations": [
+          "Bari"
+        ],
+        "Start_Date": "22 November 2020",
+        "End_Date": "NULL",
+        "Num": "at least 642 homes destroyed",
+        "Annotation": "Somalia"
+      },
+      {
+        "Administrative_Area": "Somalia",
+        "Locations": [
+          "Bosaso"
+        ],
+        "Start_Date": "22 November 2020",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Somalia"
+      },
+      {
+        "Administrative_Area": "Somalia",
+        "Locations": [
+          "Hafun",
+          "Taageer",
+          "Qandala"
+        ],
+        "Start_Date": "22 November 2020",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Somalia"
+      },
+      {
+        "Administrative_Area": "Somalia",
+        "Locations": [
+          "Ashira",
+          "Hordio"
+        ],
+        "Start_Date": "22 November 2020",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Somalia"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "Somalia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Somalia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Somalia",
+        "Locations": [
+          "Hafun"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least six",
+        "Annotation": "Somalia"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Somalia",
+          "Yemen",
+          "Ethiopia"
+        ],
+        "Start_Date": "21 November 2020",
+        "End_Date": "24 November 2020",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Somalia",
+        "Locations": [
+          "Bosaso",
+          "Balidhidhin District",
+          "Bari",
+          "Hafun",
+          "Taageer",
+          "Qandala",
+          "Ashira",
+          "Hordio",
+          "Ufeyn",
+          "Sanaag",
+          "Maydh",
+          "Heis",
+          "Badhan",
+          "Erigavo"
+        ],
+        "Start_Date": "21 November 2020",
+        "End_Date": "24 November 2020",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Somalia"
+      },
+      {
+        "Administrative_Area": "Yemen",
+        "Locations": [
+          "Socotra"
+        ],
+        "Start_Date": "21 November 2020",
+        "End_Date": "24 November 2020",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Area": "Ethiopia",
+        "Locations": [
+          "Ethiopian Highlands"
+        ],
+        "Start_Date": "21 November 2020",
+        "End_Date": "24 November 2020",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "millions",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Somalia",
+        "Start_Date": "21 November 2020",
+        "End_Date": "24 November 2020",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Somalia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Somalia",
+        "Locations": [
+          "Bari"
+        ],
+        "Start_Date": "21 November 2020",
+        "End_Date": "24 November 2020",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Somalia"
+      },
+      {
+        "Administrative_Area": "Somalia",
+        "Locations": [
+          "Bosaso"
+        ],
+        "Start_Date": "21 November 2020",
+        "End_Date": "24 November 2020",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Somalia"
+      },
+      {
+        "Administrative_Area": "Somalia",
+        "Locations": [
+          "Hafun",
+          "Taageer",
+          "Qandala"
+        ],
+        "Start_Date": "21 November 2020",
+        "End_Date": "24 November 2020",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Somalia"
+      },
+      {
+        "Administrative_Area": "Somalia",
+        "Locations": [
+          "Ashira",
+          "Hordio"
+        ],
+        "Start_Date": "21 November 2020",
+        "End_Date": "24 November 2020",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Somalia"
+      },
+      {
+        "Administrative_Area": "Somalia",
+        "Locations": [
+          "Ufeyn"
+        ],
+        "Start_Date": "21 November 2020",
+        "End_Date": "24 November 2020",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Somalia"
+      },
+      {
+        "Administrative_Area": "Somalia",
+        "Locations": [
+          "Sanaag"
+        ],
+        "Start_Date": "21 November 2020",
+        "End_Date": "24 November 2020",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Somalia"
+      },
+      {
+        "Administrative_Area": "Somalia",
+        "Locations": [
+          "Maydh",
+          "Heis"
+        ],
+        "Start_Date": "21 November 2020",
+        "End_Date": "24 November 2020",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Somalia"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Somalia",
+    "Start_Date": "21 November 2020",
+    "End_Date": "24 November 2020",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Somalia",
+      "Yemen",
+      "Ethiopia"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

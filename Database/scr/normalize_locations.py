@@ -498,11 +498,12 @@ class NormalizeLocation:
                 return gadm_df.loc[gadm_df[name_col] == area][gid_col].unique().tolist()
 
             # clean out additional parts of a location name (like "county" or "city")
-            alt_name = re.sub(
-                r"(county)|(city)|(prefecture)|(district)|(city of)|(region)", "", area, flags=re.IGNORECASE
-            ).strip()
-            if alt_name in gadm_df[name_col].to_list():
-                return gadm_df.loc[gadm_df[name_col] == alt_name][gid_col].unique().tolist()
+            if isinstance(area, str):
+                alt_name = re.sub(
+                    r"(county)|(city)|(prefecture)|(district)|(city of)|(region)", "", area, flags=re.IGNORECASE
+                ).strip()
+                if alt_name in gadm_df[name_col].to_list():
+                    return gadm_df.loc[gadm_df[name_col] == alt_name][gid_col].unique().tolist()
 
         for level in range(1, 5):
             varname_col, gid_col = f"VARNAME_{level}", f"GID_{level}"

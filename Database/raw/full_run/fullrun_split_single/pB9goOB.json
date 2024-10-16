@@ -1,0 +1,765 @@
+[
+  {
+    "Event_ID": "pB9goOB",
+    "Sources": "https://en.wikipedia.org/wiki/1954_Atlantic_hurricane_season",
+    "Event_Names": "1954 Atlantic hurricane season",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Haiti"
+        ],
+        "Start_Date": "October",
+        "End_Date": "October",
+        "Num": "thousands",
+        "Annotation": "Hurricane Hazel"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "June 25",
+        "End_Date": "June 27",
+        "Num": "NULL",
+        "Annotation": "Hurricane Alice (June)"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "August 31",
+        "End_Date": "August 31",
+        "Num": "NULL",
+        "Annotation": "Hurricane Carol"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "September 11",
+        "End_Date": "September 11",
+        "Num": "NULL",
+        "Annotation": "Hurricane Edna"
+      },
+      {
+        "Administrative_Areas": [
+          "Honduras"
+        ],
+        "Start_Date": "September 26",
+        "End_Date": "September 27",
+        "Num": "3,000 people homeless",
+        "Annotation": "Tropical Storm Gilda"
+      },
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "October",
+        "End_Date": "October",
+        "Num": "81",
+        "Annotation": "Hurricane Hazel"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "northeastern Mexico"
+        ],
+        "Start_Date": "June 25",
+        "End_Date": "June 27",
+        "Num": "1",
+        "Annotation": "Hurricane Alice (June)"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Ozona, Texas",
+          "Eagle Pass, Texas"
+        ],
+        "Start_Date": "June 25",
+        "End_Date": "June 27",
+        "Num": "55",
+        "Annotation": "Hurricane Alice (June)"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Connecticut",
+          "Rhode Island",
+          "Massachusetts",
+          "Maine"
+        ],
+        "Start_Date": "August 31",
+        "End_Date": "August 31",
+        "Num": "60",
+        "Annotation": "Hurricane Carol"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Massachusetts",
+          "Maine"
+        ],
+        "Start_Date": "September 11",
+        "End_Date": "September 11",
+        "Num": "20",
+        "Annotation": "Hurricane Edna"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Chamelec\u00f3n",
+          "Ul\u00faa rivers"
+        ],
+        "Start_Date": "September 26",
+        "End_Date": "September 27",
+        "Num": "29",
+        "Annotation": "Tropical Storm Gilda"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Toronto"
+        ],
+        "Start_Date": "October",
+        "End_Date": "October",
+        "Num": "81",
+        "Annotation": "Hurricane Hazel"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Season summary"
+      },
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Season summary"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Ozona"
+        ],
+        "Start_Date": "June 25",
+        "End_Date": "June 27",
+        "Num": "NULL",
+        "Annotation": "Hurricane Alice (June)"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Connecticut"
+        ],
+        "Start_Date": "August 31",
+        "End_Date": "August 31",
+        "Num": "NULL",
+        "Annotation": "Hurricane Carol"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Long Island"
+        ],
+        "Start_Date": "August 31",
+        "End_Date": "August 31",
+        "Num": "275,000 homes without power",
+        "Annotation": "Hurricane Carol"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New England"
+        ],
+        "Start_Date": "August 31",
+        "End_Date": "August 31",
+        "Num": "4,000 homes",
+        "Annotation": "Hurricane Carol"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Maine"
+        ],
+        "Start_Date": "August 31",
+        "End_Date": "August 31",
+        "Num": "NULL",
+        "Annotation": "Hurricane Carol"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Martha's Vineyard",
+          "Nantucket",
+          "Cape Cod"
+        ],
+        "Start_Date": "September 11",
+        "End_Date": "September 11",
+        "Num": "NULL",
+        "Annotation": "Hurricane Edna"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Massachusetts",
+          "Rhode Island"
+        ],
+        "Start_Date": "September 11",
+        "End_Date": "September 11",
+        "Num": "NULL",
+        "Annotation": "Hurricane Edna"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina"
+        ],
+        "Start_Date": "October",
+        "End_Date": "October",
+        "Num": "NULL",
+        "Annotation": "Hurricane Hazel"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Delaware",
+          "Maryland",
+          "New Jersey",
+          "New York",
+          "Pennsylvania",
+          "Virginia",
+          "West Virginia"
+        ],
+        "Start_Date": "October",
+        "End_Date": "October",
+        "Num": "NULL",
+        "Annotation": "Hurricane Hazel"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Toronto"
+        ],
+        "Start_Date": "October",
+        "End_Date": "October",
+        "Num": "NULL",
+        "Annotation": "Hurricane Hazel"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "1,069",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Haiti",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "as many as 1,000",
+        "Annotation": "Hurricane Hazel"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "193",
+        "Annotation": "Season summary"
+      },
+      {
+        "Administrative_Areas": "Canada",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "81",
+        "Annotation": "Hurricane Hazel"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Hurricane Alice (June)"
+      },
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "29",
+        "Annotation": "Tropical Storm Gilda"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "as many as 1,000",
+        "Annotation": "Hurricane Hazel"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "193",
+        "Annotation": "Season summary"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Toronto"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "81",
+        "Annotation": "Hurricane Hazel"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Hurricane Alice (June)"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "29",
+        "Annotation": "Tropical Storm Gilda"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "June 24",
+        "End_Date": "June 27",
+        "Num": "NULL",
+        "Annotation": "Hurricane Alice (June)"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "June 24",
+        "End_Date": "June 27",
+        "Num": "NULL",
+        "Annotation": "Hurricane Alice (June)"
+      },
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "September 11",
+        "End_Date": "September 12",
+        "Num": "90,000 people",
+        "Annotation": "Tropical Storm Florence"
+      },
+      {
+        "Administrative_Areas": [
+          "Honduras"
+        ],
+        "Start_Date": "September 24",
+        "End_Date": "September 29",
+        "Num": "3,000 people",
+        "Annotation": "Tropical Storm Gilda"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "June 24",
+        "End_Date": "June 27",
+        "Num": "NULL",
+        "Annotation": "Hurricane Alice (June)"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Ozona, Texas",
+          "Eagle Pass, Texas"
+        ],
+        "Start_Date": "June 24",
+        "End_Date": "June 27",
+        "Num": "NULL",
+        "Annotation": "Hurricane Alice (June)"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Veracruz"
+        ],
+        "Start_Date": "September 11",
+        "End_Date": "September 12",
+        "Num": "90,000 people",
+        "Annotation": "Tropical Storm Florence"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Chamelec\u00f3n",
+          "Ul\u00faa"
+        ],
+        "Start_Date": "September 24",
+        "End_Date": "September 29",
+        "Num": "3,000 people",
+        "Annotation": "Tropical Storm Gilda"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Honduras"
+        ],
+        "Start_Date": "September 26",
+        "End_Date": "September 27",
+        "Num": "about 3,000 people",
+        "Annotation": "Tropical Storm Gilda"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Chamelec\u00f3n and Ul\u00faa rivers"
+        ],
+        "Start_Date": "September 26",
+        "End_Date": "September 27",
+        "Num": "about 3,000 people",
+        "Annotation": "Tropical Storm Gilda"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": "Canada",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "October 15, 1954",
+        "End_Date": "October 16, 1954",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Hazel"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Toronto"
+        ],
+        "Start_Date": "October 15, 1954",
+        "End_Date": "October 16, 1954",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Hazel"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$751.6 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$756 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Season summary"
+      },
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "over C$135 million",
+        "Num_Unit": "CAD",
+        "Num_Inflation_Adjusted": "Yes",
+        "Num_Inflation_Adjusted_Year": "2009",
+        "Annotation": "Hurricane Hazel"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Ozona, Texas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$2 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Alice (June)"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$228,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Carol"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Long Island"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$3 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Carol"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New England"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$460 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Carol"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New England"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$42 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Edna"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Maine"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$6 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Edna"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Delaware",
+          "Maryland",
+          "New Jersey",
+          "New York",
+          "Pennsylvania",
+          "Virginia",
+          "West Virginia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$308 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Hazel"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Toronto"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "over C$135 million",
+        "Num_Unit": "CAD",
+        "Num_Inflation_Adjusted": "Yes",
+        "Num_Inflation_Adjusted_Year": "2009",
+        "Annotation": "Hurricane Hazel"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Poza Rica"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$1.5 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tropical Storm Florence"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Saba",
+          "Anguilla"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$623,500",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Alice (December)"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Hurricane Hazel|Hurricane Carol|Hurricane Edna",
+    "Start_Date": "June 15, 1954",
+    "End_Date": "January 6, 1955",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "United States",
+      "Haiti",
+      "Canada",
+      "Mexico",
+      "Honduras",
+      "Belize",
+      "Puerto Rico",
+      "Bahamas",
+      "Cuba",
+      "Newfoundland",
+      "Bermuda",
+      "Azores"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

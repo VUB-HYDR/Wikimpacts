@@ -7,12 +7,10 @@ from pathlib import Path
 import openai
 from dotenv import load_dotenv
 
-# the prompt list need to use the same variable names in our schema, and each key contains 1+ prompts
-
-from Database.Prompts.prompts import V_3_3 as target_prompts
-
+from Database.Prompts.prompts import V_3_2 as target_prompts
 from Database.scr.log_utils import Logging
 
+# the prompt list need to use the same variable names in our schema, and each key contains 1+ prompts
 if __name__ == "__main__":
     logger = Logging.get_logger("run prompts")
 
