@@ -35,3 +35,8 @@ geopy_cache.sqlite
 
 # vscode
 .vscode
+
+# full runs
+**/*.json.fixed.json
+**/geojson
+*full_run*/
