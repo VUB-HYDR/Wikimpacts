@@ -229,6 +229,7 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
 
     logger.info(f"Storing parsed results for l1 events. Target columns: {target_columns}")
     utils.df_to_parquet(
+    utils.df_to_parquet(
         events[[x for x in target_columns if x in events.columns]],
         f"{args.output_dir}/l1",
         200,
@@ -409,45 +410,64 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                 ),
             )
 
-        elif level == "l3" and administrative_area_col in sub_event.columns:
-            sub_event[
-                [
-                    f"{administrative_area_col}_Norm",
-                    f"{administrative_area_col}_Type",
-                    f"{administrative_area_col}_GeoJson",
-                ]
-            ] = (
-                sub_event[administrative_area_col]
-                .progress_apply(
-                    lambda admin_area: (
-                        norm_loc.normalize_locations(admin_area, is_country=True)
-                        if isinstance(admin_area, str)
-                        else (None, None, None)
+            elif level == "l3" and administrative_area_col in sub_event.columns:
+                sub_event[
+                    [
+                        f"{administrative_area_col}_Norm",
+                        f"{administrative_area_col}_Type",
+                        f"{administrative_area_col}_GeoJson",
+                    ]
+                ] = (
+                    sub_event[administrative_area_col]
+                    .progress_apply(
+                        lambda admin_area: (
+                            norm_loc.normalize_locations(admin_area, is_country=True)
+                            if isinstance(admin_area, str)
+                            else (None, None, None)
+                        )
                     )
+                    .progress_apply(pd.Series)
                 )
-                .progress_apply(pd.Series)
-            )
-            logger.info(f"Getting GID from GADM for Administrative Areas in subevent {col}")
+                logger.info(f"Getting GID from GADM for Administrative Areas in subevent {col}")
 
-            sub_event[f"{administrative_area_col}_GID"] = sub_event[f"{administrative_area_col}_Norm"].progress_apply(
-                lambda area: norm_loc.get_gadm_gid(country=area) if area else []
-            )
-            if location_col in sub_event.columns:
-                logger.info(f"Normalizing location names for {level} {col}")
-                sub_event[f"{location_col}_Tmp"] = sub_event.progress_apply(
-                    lambda row: (
-                        [
-                            norm_loc.normalize_locations(
-                                area=row[location_col][i],
-                                in_country=row[f"{administrative_area_col}_Norm"],
-                            )
-                            for i in range(len(row[location_col]))
-                        ]
-                        if isinstance(row[location_col], list)
-                        else []
-                    ),
-                    axis=1,
-                )
+                def get_gid(admin_area: str | None):
+                    if admin_area is None:
+                        return []
+                    if isinstance(admin_area, str):
+                        try:
+                            res = norm_loc.get_gadm_gid(country=admin_area)
+                            assert res
+                        except BaseException as err:
+                            logger.warning(f"Could not get gadm as country. Admin area: {admin_area} Error: {err}")
+                            res = norm_loc.get_gadm_gid(area=admin_area)
+                            try:
+                                assert res
+                            except BaseException as err:
+                                logger.warning(f"Could not get gadm as area. Error: {err}")
+                                return []
+                    else:
+                        logger.warning(f"admin_area {admin_area} of type {type(admin_area)} is not supported.")
+                        return []
+
+                sub_event[f"{administrative_area_col}_GID"] = sub_event[
+                    f"{administrative_area_col}_Norm"
+                ].progress_apply(lambda admin_area: (get_gid(admin_area=admin_area)))
+                if location_col in sub_event.columns:
+                    logger.info(f"Normalizing location names for {level} {col}")
+                    sub_event[f"{location_col}_Tmp"] = sub_event.progress_apply(
+                        lambda row: (
+                            [
+                                norm_loc.normalize_locations(
+                                    area=row[location_col][i],
+                                    in_country=row[f"{administrative_area_col}_Norm"],
+                                )
+                                for i in range(len(row[location_col]))
+                            ]
+                            if isinstance(row[location_col], list)
+                            else []
+                        ),
+                        axis=1,
+                    )
 
                 sub_event[
                     [
@@ -484,33 +504,53 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                             )
                             if row[f"{location_col}_Norm"][i]
                             else []
-                            for i in range(len(row[f"{location_col}_Norm"]))
-                        ]
-                    ),
-                    axis=1,
-                )
-        logger.info(f"Dropping empty rows in {col}")
-        rows_before = sub_event.shape[0]
-        null_mask = (
-            sub_event[[x for x in sub_event.columns if x != "Event_ID"]]
-            .progress_apply(lambda row: [True if v in (None, [], float("nan")) else False for _, v in row.items()])
-            .all(axis=1)
-        )
-        sub_event = sub_event[~null_mask]
-        rows_after = sub_event.shape[0]
-        logger.info(f"Dropped {rows_before-rows_after} row(s) in {col}")
-        del rows_before, rows_after
-        logger.info(f"Storing parsed results for subevent {col}")
-        for c in sub_event.columns:
-            sub_event[c] = sub_event[c].astype(str)
-        if target_columns:
-            sub_event = sub_event[[x for x in target_columns if x in sub_event.columns]]
-        utils.df_to_parquet(
-            sub_event,
-            target_dir=f"{args.output_dir}/{level}/{col}",
-            chunk_size=200,
-        )
+                        ),
+                        axis=1,
+                    )
 
+            logger.info(f"Dropping empty rows in {col}")
+            rows_before = sub_event.shape[0]
+            null_mask = (
+                sub_event[[x for x in sub_event.columns if x != "Event_ID"]]
+                .apply(lambda row: [True if v in (None, [], float("nan")) else False for _, v in row.items()])
+                .all(axis=1)
+            )
+            sub_event = sub_event[~null_mask]
+            rows_after = sub_event.shape[0]
+            logger.info(f"Dropped {rows_before-rows_after} row(s) in {col}")
+            del rows_before, rows_after
+
+            logger.info(f"Storing parsed results for subevent {col}")
+            for c in sub_event.columns:
+                sub_event[c] = sub_event[c].astype(str)
+            if target_columns:
+                sub_event = sub_event[[x for x in target_columns if x in sub_event.columns]]
+            utils.df_to_parquet(
+                sub_event,
+                target_dir=f"{args.output_dir}/{level}/{col}",
+                chunk_size=200,
+            )
+
+
+def df_to_parquet(
+    df: pd.DataFrame,
+    target_dir: str,
+    chunk_size: int = 2000,
+    **parquet_wargs,
+):
+    """Writes pandas DataFrame to parquet format with pyarrow.
+        Credit: https://stackoverflow.com/a/72010262/14123992
+    Args:
+        df: DataFrame
+        target_dir: local directory where parquet files are written to
+        chunk_size: number of rows stored in one chunk of parquet file. Defaults to 2000.
+    """
+    for i in range(0, len(df), chunk_size):
+        slc = df.iloc[i : i + chunk_size]
+        chunk = int(i / chunk_size)
+        fname = os.path.join(target_dir, f"{chunk:04d}.parquet")
+        pathlib.Path(target_dir).mkdir(parents=True, exist_ok=True)
+        slc.to_parquet(fname, engine="fastparquet", **parquet_wargs)
 
 def get_target_cols() -> tuple[list]:
     date_cols = [
@@ -740,5 +780,7 @@ if __name__ == "__main__":
         else:
             if lvl in args.event_levels:
                 logger.error(f"Could not parse level {lvl}")
+
+    logger.info("PARSING COMPLETE")
 
     logger.info("PARSING COMPLETE")
