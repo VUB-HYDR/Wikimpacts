@@ -1,5 +1,4 @@
 import argparse
-import os
 import pathlib
 import re
 
@@ -219,7 +218,7 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
     annotation_cols = [col for col in events.columns if col.endswith(("_with_annotation", "_Annotation"))]
 
     logger.info(f"Storing parsed results for l1 events. Target columns: {target_columns}")
-    df_to_parquet(
+    utils.df_to_parquet(
         events[[x for x in target_columns if x in events.columns]],
         f"{args.output_dir}/l1",
         200,
@@ -423,19 +422,29 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                     .progress_apply(pd.Series)
                 )
                 logger.info(f"Getting GID from GADM for Administrative Areas in subevent {col}")
+
+                def get_gid(admin_area: str | None):
+                    if admin_area is None:
+                        return []
+                    if isinstance(admin_area, str):
+                        try:
+                            res = norm_loc.get_gadm_gid(country=admin_area)
+                            assert res
+                        except BaseException as err:
+                            logger.warning(f"Could not get gadm as country. Admin area: {admin_area} Error: {err}")
+                            res = norm_loc.get_gadm_gid(area=admin_area)
+                            try:
+                                assert res
+                            except BaseException as err:
+                                logger.warning(f"Could not get gadm as area. Error: {err}")
+                                return []
+                    else:
+                        logger.warning(f"admin_area {admin_area} of type {type(admin_area)} is not supported.")
+                        return []
+
                 sub_event[f"{administrative_area_col}_GID"] = sub_event[
                     f"{administrative_area_col}_Norm"
-                ].progress_apply(
-                    lambda admin_area: (
-                        (
-                            norm_loc.get_gadm_gid(country=admin_area)
-                            if norm_loc.get_gadm_gid(country=admin_area)
-                            else norm_loc.get_gadm_gid(area=admin_area)
-                        )
-                        if isinstance(admin_area, str)
-                        else []
-                    )
-                )
+                ].progress_apply(lambda admin_area: (get_gid(admin_area=admin_area)))
                 if location_col in sub_event.columns:
                     logger.info(f"Normalizing location names for {level} {col}")
                     sub_event[f"{location_col}_Tmp"] = sub_event.progress_apply(
@@ -518,18 +527,16 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
             logger.info(f"Dropped {rows_before-rows_after} row(s) in {col}")
             del rows_before, rows_after
 
-            
             logger.info(f"Storing parsed results for subevent {col}")
             for c in sub_event.columns:
                 sub_event[c] = sub_event[c].astype(str)
             if target_columns:
                 sub_event = sub_event[[x for x in target_columns if x in sub_event.columns]]
-            df_to_parquet(
+            utils.df_to_parquet(
                 sub_event,
                 target_dir=f"{args.output_dir}/{level}/{col}",
                 chunk_size=200,
             )
-
 
 
 def df_to_parquet(
@@ -551,7 +558,6 @@ def df_to_parquet(
         fname = os.path.join(target_dir, f"{chunk:04d}.parquet")
         pathlib.Path(target_dir).mkdir(parents=True, exist_ok=True)
         slc.to_parquet(fname, engine="fastparquet", **parquet_wargs)
-
 
 def get_target_cols() -> tuple[list]:
     date_cols = [
@@ -781,3 +787,5 @@ if __name__ == "__main__":
         else:
             if lvl in args.event_levels:
                 logger.error(f"Could not parse level {lvl}")
+
+    logger.info("PARSING COMPLETE")

@@ -1,0 +1,692 @@
+[
+  {
+    "Event_ID": "upEJqdA",
+    "Sources": "https://en.wikipedia.org/wiki/Cyclone_Idai",
+    "Event_Names": "Cyclone Idai",
+    "Total_Summary_Affected": {
+      "Total_Affected": "more than 3 million",
+      "Total_Affected_Annotation": "header-content pair article header"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Mozambique"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1.85 million",
+        "Annotation": "Mozambique"
+      },
+      {
+        "Administrative_Areas": [
+          "Malawi"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "922,900",
+        "Annotation": "Malawi"
+      },
+      {
+        "Administrative_Areas": [
+          "Zimbabwe"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "270,000",
+        "Annotation": "Zimbabwe"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Mozambique",
+        "Locations": [
+          "Beira"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "500,000",
+        "Annotation": "Mozambique"
+      },
+      {
+        "Administrative_Area": "Mozambique",
+        "Locations": [
+          "Beira"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "100,000",
+        "Annotation": "Mozambique"
+      },
+      {
+        "Administrative_Area": "Mozambique",
+        "Locations": [
+          "Sofala Province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "three-fourths of the displaced persons",
+        "Annotation": "Local aid and response"
+      },
+      {
+        "Administrative_Area": "Malawi",
+        "Locations": [
+          "Chikwawa",
+          "Nsanje",
+          "Zomba",
+          "Mulanje",
+          "Phalombe",
+          "Mangochi"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "120,000",
+        "Annotation": "Local aid and response"
+      },
+      {
+        "Administrative_Area": "Malawi",
+        "Locations": [
+          "Chikwawa",
+          "Nsanje",
+          "Phalombe"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "United Nations"
+      },
+      {
+        "Administrative_Area": "Zimbabwe",
+        "Locations": [
+          "Chimanimani District",
+          "Chipinge District"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Zimbabwe"
+      },
+      {
+        "Administrative_Area": "Zimbabwe",
+        "Locations": [
+          "Chimanimani"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "232",
+        "Annotation": "Zimbabwe"
+      },
+      {
+        "Administrative_Area": "Zimbabwe",
+        "Locations": [
+          "Chipinge"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "20,000",
+        "Annotation": "Zimbabwe"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Mozambique",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mozambique"
+      },
+      {
+        "Administrative_Areas": "Malawi",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Malawi"
+      },
+      {
+        "Administrative_Areas": "Madagascar",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Madagascar"
+      },
+      {
+        "Administrative_Areas": "Zimbabwe",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Zimbabwe"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Mozambique",
+        "Locations": [
+          "Niassa",
+          "Tete",
+          "Zambezia"
+        ],
+        "Start_Date": "6 March",
+        "End_Date": "NULL",
+        "Num": "5,756 homes destroyed, 15,467 homes affected, 8 hospitals, 938 classrooms",
+        "Annotation": "First landfall"
+      },
+      {
+        "Administrative_Area": "Mozambique",
+        "Locations": [
+          "Beira"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "7 April",
+        "Num": "111,163 homes destroyed, 112,735 houses damaged, 15,784 structures flooded, 17 hospitals and health centers",
+        "Annotation": "Second landfall"
+      },
+      {
+        "Administrative_Area": "Malawi",
+        "Locations": [
+          "Blantyre"
+        ],
+        "Start_Date": "9 March",
+        "End_Date": "NULL",
+        "Num": "1,400 homes",
+        "Annotation": "Malawi"
+      },
+      {
+        "Administrative_Area": "Malawi",
+        "Locations": [
+          "Nsanje",
+          "Phalombe"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Malawi"
+      },
+      {
+        "Administrative_Area": "Madagascar",
+        "Locations": [
+          "Besalampy"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "137 homes",
+        "Annotation": "Madagascar"
+      },
+      {
+        "Administrative_Area": "Zimbabwe",
+        "Locations": [
+          "Chimanimani",
+          "Chipinge"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "7 April",
+        "Num": "600 houses destroyed, 20,000 damaged",
+        "Annotation": "Zimbabwe"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "1,593",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Mozambique",
+        "Start_Date": null,
+        "End_Date": null,
+        "Num": "602",
+        "Annotation": "Mozambique"
+      },
+      {
+        "Administrative_Areas": "Malawi",
+        "Start_Date": null,
+        "End_Date": null,
+        "Num": "60",
+        "Annotation": "Malawi"
+      },
+      {
+        "Administrative_Areas": "Madagascar",
+        "Start_Date": null,
+        "End_Date": null,
+        "Num": "1",
+        "Annotation": "Madagascar"
+      },
+      {
+        "Administrative_Areas": "Zimbabwe",
+        "Start_Date": null,
+        "End_Date": null,
+        "Num": "634",
+        "Annotation": "Zimbabwe"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Mozambique",
+        "Locations": [
+          "Niassa",
+          "Tete",
+          "Zambezia"
+        ],
+        "Start_Date": null,
+        "End_Date": null,
+        "Num": "66",
+        "Annotation": "First landfall"
+      },
+      {
+        "Administrative_Area": "Mozambique",
+        "Locations": [
+          "Beira"
+        ],
+        "Start_Date": null,
+        "End_Date": null,
+        "Num": "532",
+        "Annotation": "Second landfall"
+      },
+      {
+        "Administrative_Area": "Madagascar",
+        "Locations": [
+          "Besalampy"
+        ],
+        "Start_Date": null,
+        "End_Date": null,
+        "Num": "1",
+        "Annotation": "Madagascar"
+      },
+      {
+        "Administrative_Area": "Zimbabwe",
+        "Locations": [
+          "Chimanimani District",
+          "Chipinge District"
+        ],
+        "Start_Date": null,
+        "End_Date": null,
+        "Num": "169",
+        "Annotation": "Zimbabwe"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Mozambique",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "128,941",
+        "Annotation": "Local aid and response"
+      },
+      {
+        "Administrative_Areas": "Malawi",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "125,382",
+        "Annotation": "Malawi"
+      },
+      {
+        "Administrative_Areas": "Zimbabwe",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Zimbabwe"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Mozambique",
+        "Locations": [
+          "Sofala Province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Three-fourths of the displaced persons reside in Sofala Province",
+        "Annotation": "Local aid and response"
+      },
+      {
+        "Administrative_Area": "Malawi",
+        "Locations": [
+          "Chikwawa",
+          "Nsanje"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Large portions of Chikwawa and Nsanje districts remained inaccessible by land",
+        "Annotation": "Malawi"
+      },
+      {
+        "Administrative_Area": "Malawi",
+        "Locations": [
+          "Blantyre"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,400 homes were destroyed",
+        "Annotation": "Malawi"
+      },
+      {
+        "Administrative_Area": "Zimbabwe",
+        "Locations": [
+          "Chimanimani District",
+          "Chipinge District"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Zimbabwe"
+      },
+      {
+        "Administrative_Area": "Zimbabwe",
+        "Locations": [
+          "Chipinge"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "600 houses have been destroyed and 20,000 damaged",
+        "Annotation": "Zimbabwe"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Mozambique"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mozambique"
+      },
+      {
+        "Administrative_Areas": [
+          "Malawi"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "125,382",
+        "Annotation": "Malawi"
+      },
+      {
+        "Administrative_Areas": [
+          "Zimbabwe"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Zimbabwe"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Mozambique",
+        "Locations": [
+          "Beira"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "500 families",
+        "Annotation": "Local aid and response"
+      },
+      {
+        "Administrative_Area": "Mozambique",
+        "Locations": [
+          "Beira"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "128,941",
+        "Annotation": "Local aid and response"
+      },
+      {
+        "Administrative_Area": "Malawi",
+        "Locations": [
+          "Blantyre"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,400",
+        "Annotation": "Malawi"
+      },
+      {
+        "Administrative_Area": "Malawi",
+        "Locations": [
+          "Chikwawa",
+          "Nsanje"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Malawi"
+      },
+      {
+        "Administrative_Area": "Malawi",
+        "Locations": [
+          "Chikwawa",
+          "Nsanje"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Local aid and response"
+      },
+      {
+        "Administrative_Area": "Zimbabwe",
+        "Locations": [
+          "Chipinge"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "600",
+        "Annotation": "Zimbabwe"
+      },
+      {
+        "Administrative_Area": "Zimbabwe",
+        "Locations": [
+          "Chipinge"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "20,000",
+        "Annotation": "Zimbabwe"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Mozambique",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,641",
+        "Annotation": "Mozambique"
+      },
+      {
+        "Administrative_Areas": "Malawi",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "577",
+        "Annotation": "Malawi"
+      },
+      {
+        "Administrative_Areas": "Zimbabwe",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "232",
+        "Annotation": "Zimbabwe"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Mozambique",
+        "Locations": [
+          "Beira"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "More than 1,500",
+        "Annotation": "Second landfall"
+      },
+      {
+        "Administrative_Area": "Malawi",
+        "Locations": [
+          "Blantyre"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Malawi"
+      },
+      {
+        "Administrative_Area": "Zimbabwe",
+        "Locations": [
+          "Chimanimani"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "232",
+        "Annotation": "Zimbabwe"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$3.3 billion",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Mozambique",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$773 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Mozambique"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Mozambique",
+        "Locations": [
+          "Niassa",
+          "Tete",
+          "Zambezia"
+        ],
+        "Start_Date": "6 March 2019",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "First landfall"
+      },
+      {
+        "Administrative_Area": "Mozambique",
+        "Locations": [
+          "Beira"
+        ],
+        "Start_Date": "15 March 2019",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Second landfall"
+      },
+      {
+        "Administrative_Area": "Malawi",
+        "Locations": [
+          "Blantyre"
+        ],
+        "Start_Date": "9 March 2019",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Malawi"
+      },
+      {
+        "Administrative_Area": "Madagascar",
+        "Locations": [
+          "Besalampy"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Madagascar"
+      },
+      {
+        "Administrative_Area": "Zimbabwe",
+        "Locations": [
+          "Chimanimani",
+          "Chipinge",
+          "Murambinda"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Zimbabwe"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Impact",
+    "Start_Date": "4 March 2019",
+    "End_Date": "21 March 2019",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Mozambique",
+      "Malawi",
+      "Madagascar",
+      "Zimbabwe"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

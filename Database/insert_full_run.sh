@@ -52,16 +52,15 @@ nidPath=${3}
 
 echo Input: ${inputFilesDir}
 echo Inserting into ${dbName}
+echo Nids will be stored in ${nidPath}
 
 for lvl in "${levels[@]}"; do
+    echo Inserting ${lvl}
     if [[ ${lvl} == "l1" ]]
     then
         poetry run python3 Database/insert_events.py -m append -f ${inputFilesDir}/${lvl} -db ${dbName} -lvl ${lvl} -gj -nid ${nidPath}
-        echo Inserting ${lvl}
-
     else
         for filePath in ${inputFilesDir}/${lvl}/*; do
-            echo Inserting ${lvl}
             echo File Path ${filePath}
             tblName=$(basename $filePath)
             echo Table Name ${tblName}

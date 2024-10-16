@@ -147,6 +147,52 @@ class NormalizeUtils:
                     return False
         return True if exists else False
 
+    @staticmethod
+    def df_to_parquet(
+        df: pd.DataFrame,
+        target_dir: str,
+        chunk_size: int = 2000,
+        **parquet_wargs,
+    ):
+        """Writes pandas DataFrame to parquet format with pyarrow.
+            Credit: https://stackoverflow.com/a/72010262/14123992
+        Args:
+            df: DataFrame
+            target_dir: local directory where parquet files are written to
+            chunk_size: number of rows stored in one chunk of parquet file. Defaults to 2000.
+        """
+        pathlib.Path(target_dir).mkdir(parents=True, exist_ok=True)
+        existing_chunks = os.listdir(target_dir)
+        begin_at = 0
+        if existing_chunks:
+            begin_at = int(sorted(existing_chunks)[-1].split(".")[0]) + 1
+        for i in range(0, len(df), chunk_size):
+            slc = df.iloc[i : i + chunk_size]
+            chunk = int(i / chunk_size) + begin_at
+            fname = os.path.join(target_dir, f"{chunk:04d}.parquet")
+            slc.to_parquet(fname, engine="fastparquet", **parquet_wargs)
+
+    @staticmethod
+    def df_to_json(
+        df: pd.DataFrame,
+        target_dir: str,
+        chunk_size: int = 2000,
+        **json_wargs,
+    ):
+        """Writes pandas DataFrame to json format
+            Credit: https://stackoverflow.com/a/72010262/14123992
+        Args:
+            df: DataFrame
+            target_dir: local directory where parquet files are written to
+            chunk_size: number of rows stored in one chunk of parquet file. Defaults to 2000.
+        """
+        for i in range(0, len(df), chunk_size):
+            slc = df.iloc[i : i + chunk_size]
+            chunk = int(i / chunk_size)
+            fname = os.path.join(target_dir, f"{chunk:04d}.json")
+            pathlib.Path(target_dir).mkdir(parents=True, exist_ok=True)
+            slc.to_json(fname, **json_wargs)
+
 
 class NormalizeJsonOutput:
     def __init__(self):
@@ -383,6 +429,12 @@ class NormalizeJsonOutput:
                 else:
                     output[k] = entry[k]
             for k in missing_keys:
+                if k in entry.keys():
+                    if isinstance(entry[k], dict):
+                        for key_name in missing_keys:
+                            if key_name in entry[k].keys():
+                                output[key_name] = entry[k][key_name]
+
                 if k not in entry.keys() and k not in output.keys():
                     if k == "Administrative_Areas":
                         output[k] = []
@@ -406,7 +458,7 @@ class NormalizeJsonOutput:
             output = {}
             target_keys = [x for x in entry.keys() if x.startswith("Specific_Instance_") or x.startswith("Instance_")]
 
-            for k in entry.keys():
+            for k in [x for x in entry.keys() if entry[x] is not None]:
                 if k in target_keys:
                     for rec in range(len(entry[k])):
                         records = []
@@ -433,7 +485,7 @@ class NormalizeJsonOutput:
 
             output_json.append(output)
         with open(output_file_path, "w") as fp:
-            json.dump(output_json, fp)
+            json.dump(output_json, fp, indent=3)
 
         self.logger.info(f"Stored output in {output_file_path}")
 

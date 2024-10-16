@@ -1,0 +1,455 @@
+[
+  {
+    "Event_ID": "s4TMUys",
+    "Sources": "https://en.wikipedia.org/wiki/1909_Greater_Antilles_hurricane",
+    "Event_Names": "1909 Greater Antilles hurricane",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Jamaica",
+        "Start_Date": "November 5, 1909",
+        "End_Date": "November 11, 1909",
+        "Num": "NULL",
+        "Annotation": "Jamaica"
+      },
+      {
+        "Administrative_Areas": "Haiti",
+        "Start_Date": "November 12, 1909",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Haiti"
+      },
+      {
+        "Administrative_Areas": "Dominican Republic",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Kingston",
+          "Silver Hill Plantation",
+          "Annott Bay"
+        ],
+        "Start_Date": "November 5, 1909",
+        "End_Date": "November 11, 1909",
+        "Num": "30",
+        "Annotation": "Jamaica"
+      },
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Cap-Ha\u00eftien",
+          "Port-au-Prince",
+          "Gona\u00efves",
+          "Port-de-Paix",
+          "Nord-Ouest"
+        ],
+        "Start_Date": "November 12, 1909",
+        "End_Date": "NULL",
+        "Num": "at least 166",
+        "Annotation": "Haiti"
+      },
+      {
+        "Administrative_Area": "Dominican Republic",
+        "Locations": [
+          "Puerto Plata",
+          "Santiago de los Caballeros",
+          "Moca"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Jamaica",
+        "Start_Date": "November 5, 1909",
+        "End_Date": "November 11, 1909",
+        "Num": "NULL",
+        "Annotation": "Jamaica"
+      },
+      {
+        "Administrative_Areas": "Haiti",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Haiti"
+      },
+      {
+        "Administrative_Areas": "Dominican Republic",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Kingston",
+          "Annott Bay"
+        ],
+        "Start_Date": "November 5, 1909",
+        "End_Date": "November 11, 1909",
+        "Num": "several tunnels and railways, many bridges and roads",
+        "Annotation": "Jamaica"
+      },
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Port-au-Prince",
+          "Gona\u00efves",
+          "Port-de-Paix",
+          "Cap-Ha\u00eftien",
+          "Yaqui River"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "All of the city's roads, many villages",
+        "Annotation": "Haiti"
+      },
+      {
+        "Administrative_Area": "Dominican Republic",
+        "Locations": [
+          "Puerto Plata",
+          "Santiago de los Caballeros",
+          "Moca"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "two bridges",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "At least 198 direct",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Jamaica",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "30",
+        "Annotation": "Jamaica"
+      },
+      {
+        "Administrative_Areas": "Haiti",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "At least 166",
+        "Annotation": "Haiti"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Gona\u00efves"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "16",
+        "Annotation": "Haiti"
+      },
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Port-de-Paix"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "19",
+        "Annotation": "Haiti"
+      },
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Nord-Ouest"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "150",
+        "Annotation": "Haiti"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Haiti",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Haiti"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Gona\u00efves"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Residents sought safety from the flood waters in the upper floors and roofs of their homes",
+        "Annotation": "Haiti"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Jamaica",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Jamaica"
+      },
+      {
+        "Administrative_Areas": "Haiti",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Haiti"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Gona\u00efves"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Residents sought safety from the flood waters in the upper floors and roofs of their homes.",
+        "Annotation": "Haiti"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Jamaica",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Jamaica"
+      },
+      {
+        "Administrative_Areas": "Haiti",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Haiti"
+      },
+      {
+        "Administrative_Areas": "Dominican Republic",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Kingston",
+          "Annott Bay"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Jamaica"
+      },
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Port-au-Prince",
+          "Gona\u00efves",
+          "Port-de-Paix",
+          "Cap-Ha\u00eftien",
+          "Yaqui River"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Haiti"
+      },
+      {
+        "Administrative_Area": "Dominican Republic",
+        "Locations": [
+          "Puerto Plata",
+          "Santiago de los Caballeros",
+          "Moca"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "Jamaica",
+        "Start_Date": "November 5, 1909",
+        "End_Date": "November 11, 1909",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Jamaica"
+      },
+      {
+        "Administrative_Areas": "Haiti",
+        "Start_Date": "November 12, 1909",
+        "End_Date": "November 14, 1909",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Haiti"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Kingston",
+          "Silver Hill Plantation",
+          "Annott Bay"
+        ],
+        "Start_Date": "November 5, 1909",
+        "End_Date": "November 11, 1909",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Jamaica"
+      },
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Cap-Ha\u00eftien",
+          "Port-au-Prince",
+          "Gona\u00efves",
+          "Port-de-Paix",
+          "Yaqui River"
+        ],
+        "Start_Date": "November 12, 1909",
+        "End_Date": "November 14, 1909",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Haiti"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$10 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Jamaica",
+        "Start_Date": "November 5, 1909",
+        "End_Date": "November 11, 1909",
+        "Num": "$7 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Jamaica"
+      },
+      {
+        "Administrative_Areas": "Haiti",
+        "Start_Date": "November 12, 1909",
+        "End_Date": "November 14, 1909",
+        "Num": "$3 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Haiti"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Kingston",
+          "Annott Bay",
+          "Silver Hill Plantation"
+        ],
+        "Start_Date": "November 5, 1909",
+        "End_Date": "November 11, 1909",
+        "Num": "$7 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Jamaica"
+      },
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Cap-Ha\u00eftien",
+          "Port-au-Prince",
+          "Gona\u00efves",
+          "Port-de-Paix",
+          "Yaqui River"
+        ],
+        "Start_Date": "November 12, 1909",
+        "End_Date": "November 14, 1909",
+        "Num": "$3 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Haiti"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Jamaica|Haiti",
+    "Start_Date": "November 8, 1909",
+    "End_Date": "November 14, 1909",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Jamaica",
+      "Cuba",
+      "Haiti",
+      "Dominican Republic"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

@@ -1,0 +1,422 @@
+[
+  {
+    "Event_ID": "KYbmoc6",
+    "Sources": "https://en.wikipedia.org/wiki/Typhoon_Son-Tinh",
+    "Event_Names": "Typhoon Son-Tinh",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "October 21, 2012",
+        "End_Date": "October 29, 2012",
+        "Num": "more than 13,000 passengers were stranded at ferry terminals and ports",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "October 21, 2012",
+        "End_Date": "October 29, 2012",
+        "Num": "more than 82,000 people were relocated to temporary shelters",
+        "Annotation": "China"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Tacloban City",
+          "Cebu City",
+          "Zamboanga City",
+          "Quezon"
+        ],
+        "Start_Date": "October 21, 2012",
+        "End_Date": "October 29, 2012",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Hainan province",
+          "Leizhou peninsula",
+          "Beihai",
+          "Qinzhou",
+          "Fangchenggang"
+        ],
+        "Start_Date": "October 21, 2012",
+        "End_Date": "October 29, 2012",
+        "Num": "NULL",
+        "Annotation": "China"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Ngh\u1ec7 An",
+          "Thanh H\u00f3a",
+          "Ninh B\u00ecnh",
+          "Th\u00e1i B\u00ecnh",
+          "Nam \u0110\u1ecbnh"
+        ],
+        "Start_Date": "October 21, 2012",
+        "End_Date": "October 29, 2012",
+        "Num": "NULL",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "October 24, 2012",
+        "End_Date": "October 25, 2012",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "October 29, 2012",
+        "End_Date": "October 29, 2012",
+        "Num": "429 homes",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Tacloban City",
+          "Cebu City",
+          "Quezon"
+        ],
+        "Start_Date": "October 24, 2012",
+        "End_Date": "October 25, 2012",
+        "Num": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Nam \u0110\u1ecbnh",
+          "Ngh\u1ec7 An",
+          "Thanh H\u00f3a",
+          "Ninh B\u00ecnh",
+          "Th\u00e1i B\u00ecnh"
+        ],
+        "Start_Date": "October 29, 2012",
+        "End_Date": "October 29, 2012",
+        "Num": "429 homes",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "42 total",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "27 people",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "7 people",
+        "Annotation": "China"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8 people",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Tacloban City",
+          "Cebu City",
+          "Quezon",
+          "Zamboanga City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4 people",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Hainan province",
+          "Leizhou peninsula",
+          "Beihai",
+          "Qinzhou",
+          "Fangchenggang"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "China"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Ngh\u1ec7 An",
+          "Thanh H\u00f3a",
+          "Ninh B\u00ecnh",
+          "Th\u00e1i B\u00ecnh",
+          "Nam \u0110\u1ecbnh"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "more than 82,000",
+        "Annotation": "China"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Hainan province",
+          "Leizhou peninsula"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "more than 82,000",
+        "Annotation": "China"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "more than 82,00 people were relocated to temporary shelters",
+        "Annotation": "China"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "429 homes collapsed and 55,251 were damaged",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Hainan province",
+          "Leizhou peninsula"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "more than 82,00 people were relocated to temporary shelters",
+        "Annotation": "China"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Ngh\u1ec7 An",
+          "Thanh H\u00f3a",
+          "Ninh B\u00ecnh",
+          "Th\u00e1i B\u00ecnh",
+          "Nam \u0110\u1ecbnh"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "429 homes collapsed and 55,251 were damaged",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "90",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Various locations"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "90",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$776 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "PHP155 million",
+        "Num_Unit": "PHP",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "CN\u00a51.52 billion",
+        "Num_Unit": "CN\u00a5",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "China"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "\u20ab11 trillion",
+        "Num_Unit": "\u20ab",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Tacloban City",
+          "Cebu City",
+          "Zamboanga City",
+          "Quezon"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Hainan province",
+          "Leizhou peninsula",
+          "Beihai",
+          "Qinzhou",
+          "Fangchenggang"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "China"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Ngh\u1ec7 An",
+          "Thanh H\u00f3a",
+          "Ninh B\u00ecnh",
+          "Th\u00e1i B\u00ecnh",
+          "Nam \u0110\u1ecbnh"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Vietnam"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Philippines|China|Vietnam",
+    "Start_Date": "October 21, 2012",
+    "End_Date": "October 29, 2012",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Philippines",
+      "Vietnam",
+      "China"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

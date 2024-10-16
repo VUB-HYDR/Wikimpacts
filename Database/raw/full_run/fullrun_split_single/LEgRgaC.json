@@ -1,0 +1,402 @@
+[
+  {
+    "Event_ID": "LEgRgaC",
+    "Sources": "https://en.wikipedia.org/wiki/Tropical_Depression_One_(1979)",
+    "Event_Names": "Tropical Depression One (1979)",
+    "Total_Summary_Affected": {
+      "Total_Affected": "40,000",
+      "Total_Affected_Annotation": "Impact"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Jamaica",
+        "Start_Date": "June 11, 1979",
+        "End_Date": "June 16, 1979",
+        "Num": "40,000",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "June 11, 1979",
+        "End_Date": "June 16, 1979",
+        "Num": "One person",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Savanna-la-Mar"
+        ],
+        "Start_Date": "June 11, 1979",
+        "End_Date": "June 16, 1979",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Friendship"
+        ],
+        "Start_Date": "June 11, 1979",
+        "End_Date": "June 16, 1979",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "New Market"
+        ],
+        "Start_Date": "June 11, 1979",
+        "End_Date": "June 16, 1979",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Chigwell",
+          "Enfield",
+          "Exeter",
+          "Leamington"
+        ],
+        "Start_Date": "June 11, 1979",
+        "End_Date": "June 16, 1979",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "South Carolina"
+        ],
+        "Start_Date": "June 11, 1979",
+        "End_Date": "June 16, 1979",
+        "Num": "One person",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Jamaica",
+        "Start_Date": "June 11, 1979",
+        "End_Date": "June 16, 1979",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Westmoreland Parish"
+        ],
+        "Start_Date": "June 11, 1979",
+        "End_Date": "June 16, 1979",
+        "Num": "about 1,000 homes",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "New Market"
+        ],
+        "Start_Date": "June 11, 1979",
+        "End_Date": "June 16, 1979",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "41",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Jamaica",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "40",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "40",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "South Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "40,000",
+      "Total_Displaced_Annotation": "Impact"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Jamaica",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "40,000",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Savanna-la-Mar",
+          "Friendship",
+          "Chigwell",
+          "Enfield",
+          "Exeter",
+          "Leamington",
+          "New Market"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Surfside Beach, South Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "40,000",
+      "Total_Homeless_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Jamaica",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "40,000",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Savanna-la-Mar"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "New Market"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Jamaica",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "South Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "One person was listed as missing and later presumed to have died",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$27 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Jamaica"
+        ],
+        "Start_Date": "June 11, 1979",
+        "End_Date": "June 16, 1979",
+        "Num": "$27 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Friendship",
+          "Savanna-la-Mar",
+          "Westmoreland Parish",
+          "New Market",
+          "Chigwell",
+          "Enfield",
+          "Exeter",
+          "Leamington"
+        ],
+        "Start_Date": "June 11, 1979",
+        "End_Date": "June 16, 1979",
+        "Num": "$5.89 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Westmoreland Parish"
+        ],
+        "Start_Date": "June 11, 1979",
+        "End_Date": "June 16, 1979",
+        "Num": "$2.25 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Westmoreland Parish"
+        ],
+        "Start_Date": "June 11, 1979",
+        "End_Date": "June 16, 1979",
+        "Num": "$1 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Westmoreland Parish"
+        ],
+        "Start_Date": "June 11, 1979",
+        "End_Date": "June 16, 1979",
+        "Num": "$39.3 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Impact",
+    "Start_Date": "June 11, 1979",
+    "End_Date": "June 16, 1979",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Bahamas",
+      "Cuba",
+      "United States",
+      "Jamaica"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

@@ -1,0 +1,597 @@
+[
+  {
+    "Event_ID": "rWS3Byc",
+    "Sources": "https://en.wikipedia.org/wiki/Hurricane_Bawbag",
+    "Event_Names": "Hurricane Bawbag",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Scotland",
+        "Start_Date": "8 December 2011",
+        "End_Date": "9 December 2011",
+        "Num": "150,000 households",
+        "Annotation": "Scotland"
+      },
+      {
+        "Administrative_Areas": "Ireland",
+        "Start_Date": "8 December 2011",
+        "End_Date": "9 December 2011",
+        "Num": "NULL",
+        "Annotation": "Ireland"
+      },
+      {
+        "Administrative_Areas": "England",
+        "Start_Date": "8 December 2011",
+        "End_Date": "9 December 2011",
+        "Num": "NULL",
+        "Annotation": "England and Wales"
+      },
+      {
+        "Administrative_Areas": "Wales",
+        "Start_Date": "8 December 2011",
+        "End_Date": "9 December 2011",
+        "Num": "NULL",
+        "Annotation": "England and Wales"
+      },
+      {
+        "Administrative_Areas": "Sweden",
+        "Start_Date": "9 December 2011",
+        "End_Date": "10 December 2011",
+        "Num": "14,000 customers",
+        "Annotation": "Scandinavia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Scotland",
+        "Locations": [
+          "Cairn Gorm",
+          "populous areas",
+          "The Belford and Victoria Hospital",
+          "West Highland Line",
+          "Glasgow Airport",
+          "Edinburgh Airport",
+          "Western Isles",
+          "Central Belt",
+          "North Sea",
+          "Campbeltown",
+          "Falkirk",
+          "Stirling",
+          "Dalry",
+          "Ardrossan",
+          "Aberdeen",
+          "Glasgow"
+        ],
+        "Start_Date": "8 December 2011",
+        "End_Date": "9 December 2011",
+        "Num": "150,000 households",
+        "Annotation": "Scotland"
+      },
+      {
+        "Administrative_Area": "Ireland",
+        "Locations": [
+          "County Donegal",
+          "Dublin",
+          "Fanad Peninsula",
+          "Carrigart"
+        ],
+        "Start_Date": "8 December 2011",
+        "End_Date": "9 December 2011",
+        "Num": "NULL",
+        "Annotation": "Ireland"
+      },
+      {
+        "Administrative_Area": "England",
+        "Locations": [
+          "Cumbria",
+          "North Yorkshire",
+          "Swaledale",
+          "Grinton"
+        ],
+        "Start_Date": "8 December 2011",
+        "End_Date": "9 December 2011",
+        "Num": "NULL",
+        "Annotation": "England and Wales"
+      },
+      {
+        "Administrative_Area": "Wales",
+        "Locations": [
+          "Aberdaron",
+          "Swansea"
+        ],
+        "Start_Date": "8 December 2011",
+        "End_Date": "9 December 2011",
+        "Num": "NULL",
+        "Annotation": "England and Wales"
+      },
+      {
+        "Administrative_Area": "Sweden",
+        "Locations": [
+          "Gothenburg"
+        ],
+        "Start_Date": "9 December 2011",
+        "End_Date": "10 December 2011",
+        "Num": "14,000 customers",
+        "Annotation": "Scandinavia"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Scotland",
+        "Start_Date": "8 December 2011",
+        "End_Date": "8 December 2011",
+        "Num": "NULL",
+        "Annotation": "Scotland"
+      },
+      {
+        "Administrative_Areas": "Ireland",
+        "Start_Date": "8 December 2011",
+        "End_Date": "8 December 2011",
+        "Num": "NULL",
+        "Annotation": "Ireland"
+      },
+      {
+        "Administrative_Areas": "England and Wales",
+        "Start_Date": "8 December 2011",
+        "End_Date": "8 December 2011",
+        "Num": "NULL",
+        "Annotation": "England and Wales"
+      },
+      {
+        "Administrative_Areas": "Scandinavia",
+        "Start_Date": "9 December 2011",
+        "End_Date": "10 December 2011",
+        "Num": "NULL",
+        "Annotation": "Scandinavia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Scotland",
+        "Locations": [
+          "Campbeltown",
+          "Falkirk",
+          "Stirling",
+          "Dalry",
+          "Ardrossan",
+          "Aberdeen",
+          "Glasgow"
+        ],
+        "Start_Date": "8 December 2011",
+        "End_Date": "8 December 2011",
+        "Num": "NULL",
+        "Annotation": "Scotland"
+      },
+      {
+        "Administrative_Area": "Ireland",
+        "Locations": [
+          "County Donegal",
+          "Dublin",
+          "Fanad Peninsula",
+          "Carrigart"
+        ],
+        "Start_Date": "8 December 2011",
+        "End_Date": "8 December 2011",
+        "Num": "NULL",
+        "Annotation": "Ireland"
+      },
+      {
+        "Administrative_Area": "England and Wales",
+        "Locations": [
+          "Cumbria",
+          "North Yorkshire",
+          "Swaledale",
+          "Grinton",
+          "Aberdaron",
+          "Swansea"
+        ],
+        "Start_Date": "8 December 2011",
+        "End_Date": "8 December 2011",
+        "Num": "NULL",
+        "Annotation": "England and Wales"
+      },
+      {
+        "Administrative_Area": "Scandinavia",
+        "Locations": [
+          "Gothenburg"
+        ],
+        "Start_Date": "9 December 2011",
+        "End_Date": "10 December 2011",
+        "Num": "NULL",
+        "Annotation": "Scandinavia"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "1",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "Scotland"
+        ],
+        "Start_Date": "8 December 2011",
+        "End_Date": "8 December 2011",
+        "Num": "1",
+        "Annotation": "Impacts"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Scotland",
+        "Locations": [
+          "Scotland"
+        ],
+        "Start_Date": "8 December 2011",
+        "End_Date": "8 December 2011",
+        "Num": "1",
+        "Annotation": "Impacts"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Scotland",
+        "Start_Date": "8 December 2011",
+        "End_Date": "9 December 2011",
+        "Num": "NULL",
+        "Annotation": "Scotland"
+      },
+      {
+        "Administrative_Areas": "Ireland",
+        "Start_Date": "8 December 2011",
+        "End_Date": "8 December 2011",
+        "Num": "NULL",
+        "Annotation": "Ireland"
+      },
+      {
+        "Administrative_Areas": "England",
+        "Start_Date": "8 December 2011",
+        "End_Date": "8 December 2011",
+        "Num": "NULL",
+        "Annotation": "England and Wales"
+      },
+      {
+        "Administrative_Areas": "Wales",
+        "Start_Date": "8 December 2011",
+        "End_Date": "8 December 2011",
+        "Num": "NULL",
+        "Annotation": "England and Wales"
+      },
+      {
+        "Administrative_Areas": "Sweden",
+        "Start_Date": "9 December 2011",
+        "End_Date": "10 December 2011",
+        "Num": "NULL",
+        "Annotation": "Scandinavia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Scotland",
+        "Locations": [
+          "Crianlarich"
+        ],
+        "Start_Date": "8 December 2011",
+        "End_Date": "8 December 2011",
+        "Num": "64",
+        "Annotation": "Scotland"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Scotland",
+        "Start_Date": "8 December 2011",
+        "End_Date": "8 December 2011",
+        "Num": "NULL",
+        "Annotation": "Scotland"
+      },
+      {
+        "Administrative_Areas": "Ireland",
+        "Start_Date": "8 December 2011",
+        "End_Date": "8 December 2011",
+        "Num": "NULL",
+        "Annotation": "Ireland"
+      },
+      {
+        "Administrative_Areas": "England and Wales",
+        "Start_Date": "8 December 2011",
+        "End_Date": "8 December 2011",
+        "Num": "NULL",
+        "Annotation": "England and Wales"
+      },
+      {
+        "Administrative_Areas": "Scandinavia",
+        "Start_Date": "9 December 2011",
+        "End_Date": "10 December 2011",
+        "Num": "NULL",
+        "Annotation": "Scandinavia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Scotland",
+        "Locations": [
+          "A737 near Dalry, North Ayrshire"
+        ],
+        "Start_Date": "8 December 2011",
+        "End_Date": "8 December 2011",
+        "Num": "NULL",
+        "Annotation": "Scotland"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Scotland",
+          "Ireland",
+          "England",
+          "Wales",
+          "Sweden"
+        ],
+        "Start_Date": "8 December 2011",
+        "End_Date": "13 December 2011",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impacts"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Scotland",
+        "Locations": [
+          "Cairngorm Summit",
+          "Campbeltown",
+          "Falkirk",
+          "Stirling",
+          "Dalry",
+          "Ardrossan",
+          "Aberdeen",
+          "Glasgow"
+        ],
+        "Start_Date": "8 December 2011",
+        "End_Date": "13 December 2011",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Scotland"
+      },
+      {
+        "Administrative_Area": "Ireland",
+        "Locations": [
+          "County Donegal",
+          "Dublin",
+          "Fanad Peninsula",
+          "Carrigart"
+        ],
+        "Start_Date": "8 December 2011",
+        "End_Date": "13 December 2011",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Ireland"
+      },
+      {
+        "Administrative_Area": "England",
+        "Locations": [
+          "Cumbria",
+          "Windermere",
+          "Newcastle",
+          "North Yorkshire",
+          "Swaledale",
+          "Grinton"
+        ],
+        "Start_Date": "8 December 2011",
+        "End_Date": "13 December 2011",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "England and Wales"
+      },
+      {
+        "Administrative_Area": "Wales",
+        "Locations": [
+          "Aberdaron",
+          "Swansea"
+        ],
+        "Start_Date": "8 December 2011",
+        "End_Date": "13 December 2011",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "England and Wales"
+      },
+      {
+        "Administrative_Area": "Sweden",
+        "Locations": [
+          "Gothenburg"
+        ],
+        "Start_Date": "8 December 2011",
+        "End_Date": "13 December 2011",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Scandinavia"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "NULL",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Scotland",
+        "Start_Date": "8 December 2011",
+        "End_Date": "8 December 2011",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Scotland"
+      },
+      {
+        "Administrative_Areas": "Ireland",
+        "Start_Date": "8 December 2011",
+        "End_Date": "8 December 2011",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Ireland"
+      },
+      {
+        "Administrative_Areas": "England and Wales",
+        "Start_Date": "8 December 2011",
+        "End_Date": "8 December 2011",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "England and Wales"
+      },
+      {
+        "Administrative_Areas": "Scandinavia",
+        "Start_Date": "9 December 2011",
+        "End_Date": "10 December 2011",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Scandinavia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Scotland",
+        "Locations": [
+          "Cairn Gorm",
+          "West Highland Line",
+          "Glasgow Airport",
+          "Edinburgh Airport",
+          "Western Isles",
+          "Central Belt",
+          "North Ayrshire",
+          "Ardrossan",
+          "Aberdeen",
+          "Glasgow"
+        ],
+        "Start_Date": "8 December 2011",
+        "End_Date": "8 December 2011",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Scotland"
+      },
+      {
+        "Administrative_Area": "Ireland",
+        "Locations": [
+          "County Donegal",
+          "Dublin",
+          "Fanad Peninsula",
+          "Carrigart"
+        ],
+        "Start_Date": "8 December 2011",
+        "End_Date": "8 December 2011",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Ireland"
+      },
+      {
+        "Administrative_Area": "England and Wales",
+        "Locations": [
+          "Cumbria",
+          "North Yorkshire",
+          "Swaledale",
+          "Grinton",
+          "Wales",
+          "Aberdaron",
+          "Swansea"
+        ],
+        "Start_Date": "8 December 2011",
+        "End_Date": "8 December 2011",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "England and Wales"
+      },
+      {
+        "Administrative_Area": "Scandinavia",
+        "Locations": [
+          "Gothenburg"
+        ],
+        "Start_Date": "9 December 2011",
+        "End_Date": "10 December 2011",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Scandinavia"
+      }
+    ],
+    "Main_Event": "Extratropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind | Flood",
+    "Hazards_Annotation": "Impacts",
+    "Start_Date": "7 December 2011",
+    "End_Date": "13 December 2011",
+    "Time_Annotation": "Info_Box"
+  }
+]
