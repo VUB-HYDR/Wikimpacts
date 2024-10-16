@@ -160,22 +160,22 @@ if __name__ == "__main__":
 
             # change if_exists to "append" to avoid overwriting the database
             # choose "replace" to overwrite the database with a fresh copy of the data
-        for i in tqdm(range(len(data))):
-            try:
-                data.iloc[i : i + 1].to_sql(
-                    name=args.target_table,
-                    con=connection,
-                    if_exists=args.method,
-                    index=False,
-                )
-            except sqlite3.IntegrityError as err:
-                logger.debug(
-                    f"""Could not insert event for level {args.event_level}. Error {err}.
-                             The problematic row will be stored in /tmp/ with the error. GeoJson columns will not be included."""
-                )
-                err_row = data.iloc[i : i + 1][[x for x in data.columns if "GeoJson" not in x]].copy()
-                err_row["ERROR"] = err
-                errors = pd.concat([errors, err_row], ignore_index=True)
+            for i in tqdm(range(len(data)), desc=f"Inserting {f} into {args.database_name}"):
+                try:
+                    data.iloc[i : i + 1].to_sql(
+                        name=args.target_table,
+                        con=connection,
+                        if_exists=args.method,
+                        index=False,
+                    )
+                except sqlite3.IntegrityError as err:
+                    logger.debug(
+                        f"""Could not insert event for level {args.event_level}. Error {err}.
+                                The problematic row will be stored in /tmp/ with the error. GeoJson columns will not be included."""
+                    )
+                    err_row = data.iloc[i : i + 1][[x for x in data.columns if "GeoJson" not in x]].copy()
+                    err_row["ERROR"] = err
+                    errors = pd.concat([errors, err_row], ignore_index=True)
 
     elif args.event_level in sub_levels:
         logger.info(f"Inserting {args.event_level}...\n")
@@ -188,7 +188,7 @@ if __name__ == "__main__":
 
         assert len(check_table) == 1, f"Table name {args.target_table} incorrect! Found {check_table} instead."
 
-        for f in files:
+        for f in tqdm(files, desc="Files"):
             data = pd.read_parquet(f"{args.file_dir}/{f}", engine="fastparquet")
 
             logger.info("Converting everything to strings...")
