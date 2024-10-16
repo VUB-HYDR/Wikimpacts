@@ -68,8 +68,13 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
     )
     for inflation_adjusted_col in [col for col in events.columns if col.endswith("_Adjusted")]:
         logger.info(f"Normalizing boolean column {inflation_adjusted_col}")
-        events[inflation_adjusted_col] = events[inflation_adjusted_col].replace({_no: False, _yes: True}, regex=True)
-
+        events[inflation_adjusted_col] = events[inflation_adjusted_col].progress_apply(
+            lambda value: (
+                True
+                if value and not isinstance(value, bool) and re.match(_yes, value)
+                else (False if value and not isinstance(value, bool) and re.match(_no, value) else value)
+            )
+        )
     logger.info("STEP: Normalizing nulls")
     events = utils.replace_nulls(events)
 
@@ -211,9 +216,6 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
         )
     logger.info("Converting annotation columns to strings to store in sqlite3")
     annotation_cols = [col for col in events.columns if col.endswith(("_with_annotation", "_Annotation"))]
-    for col in annotation_cols:
-        events[col] = events[col].astype(str)
-    logger.info("Converting list columns to strings to store in sqlite3")
 
     logger.info(f"Storing parsed results for l1 events. Target columns: {target_columns}")
     utils.df_to_parquet(
@@ -305,17 +307,19 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
             logger.info(f"Normalizing nulls for {level} {col}")
             sub_event = utils.replace_nulls(sub_event)
 
-            _yes, _no = re.compile(r"^(yes)$|^(y)$|^(true)$", re.IGNORECASE | re.MULTILINE), re.compile(
-                r"^(no)$|^(n)$|^(false)$", re.IGNORECASE | re.MULTILINE
-            )
-            for inflation_adjusted_col in [col for col in sub_event.columns if col.endswith("_Adjusted")]:
-                try:
-                    logger.info(f"Normalizing boolean column {inflation_adjusted_col} for {level} {col}")
-                    sub_event[inflation_adjusted_col] = sub_event[inflation_adjusted_col].replace(
-                        {_no: False, _yes: True}, regex=True
-                    )
-                except:
-                    logger.warning(f"Could not normalize boolean column {inflation_adjusted_col} for {level} {col}")
+
+        _yes, _no = re.compile(r"^(yes)$|^(y)$|^(true)$", re.IGNORECASE | re.MULTILINE), re.compile(
+            r"^(no)$|^(n)$|^(false)$", re.IGNORECASE | re.MULTILINE
+        )
+        for inflation_adjusted_col in [col for col in sub_event.columns if col.endswith("_Adjusted")]:
+            logger.info(f"Normalizing boolean column {inflation_adjusted_col} for {level} {col}")
+            sub_event[inflation_adjusted_col] = sub_event[inflation_adjusted_col].progress_apply(
+                lambda value: (
+                    True
+                    if value and not isinstance(value, bool) and re.match(_yes, value)
+                    else (False if value and not isinstance(value, bool) and re.match(_no, value) else value)
+                )
+
 
             logger.info(f"Normalizing dates for subevet {col}")
             start_date_col, end_date_col = [col for col in sub_event.columns if col.startswith("Start_Date")], [
@@ -534,6 +538,26 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                 chunk_size=200,
             )
 
+
+def df_to_parquet(
+    df: pd.DataFrame,
+    target_dir: str,
+    chunk_size: int = 2000,
+    **parquet_wargs,
+):
+    """Writes pandas DataFrame to parquet format with pyarrow.
+        Credit: https://stackoverflow.com/a/72010262/14123992
+    Args:
+        df: DataFrame
+        target_dir: local directory where parquet files are written to
+        chunk_size: number of rows stored in one chunk of parquet file. Defaults to 2000.
+    """
+    for i in range(0, len(df), chunk_size):
+        slc = df.iloc[i : i + chunk_size]
+        chunk = int(i / chunk_size)
+        fname = os.path.join(target_dir, f"{chunk:04d}.parquet")
+        pathlib.Path(target_dir).mkdir(parents=True, exist_ok=True)
+        slc.to_parquet(fname, engine="fastparquet", **parquet_wargs)
 
 def get_target_cols() -> tuple[list]:
     date_cols = [
