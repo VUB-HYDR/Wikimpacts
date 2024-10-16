@@ -10,7 +10,7 @@ from tqdm import tqdm
 
 from Database.scr.normalize_utils import GeoJsonUtils, Logging
 
-pandarallel.initialize(progress_bar=True, nb_workers=5)
+pandarallel.initialize(progress_bar=False, nb_workers=5)
 
 if __name__ == "__main__":
     event_levels = {
@@ -109,7 +109,7 @@ if __name__ == "__main__":
     )
 
     args = parser.parse_args()
-    logger = Logging.get_logger(f"database-insertion", level="INFO")
+    logger = Logging.get_logger(f"database-insertion", level="INFO", filename="v1_full_run_insertion_raw.log")
 
     connection = sqlite3.connect(args.database_name)
     cursor = connection.cursor()
@@ -125,7 +125,7 @@ if __name__ == "__main__":
     if args.event_level == main_level:
         args.target_table = "Total_Summary"
         logger.info(f"Inserting {main_level}...\n")
-        for f in files:
+        for f in tqdm(files, desc="Files"):
             data = pd.read_parquet(f"{args.file_dir}/{f}", engine="fastparquet")
 
             logger.info("Converting everything to strings...")
@@ -135,7 +135,7 @@ if __name__ == "__main__":
             # geojson in l1 is always of type list
             if args.dump_geojson_to_file:
                 for col in event_levels[args.event_level]["location_columns"].keys():
-                    logger.info(f"Processing GeoJson column {col}_GeoJson in {args.event_level}")
+                    logger.info(f"Processing GeoJson column {col}_GeoJson in {args.event_level}; File: {f}")
 
                     for i in ["GeoJson", "Norm"]:
                         data[f"{col}_{i}"] = data[f"{col}_{i}"].parallel_apply(
@@ -234,7 +234,7 @@ if __name__ == "__main__":
 
             # change if_exists to "append" to avoid overwriting the database
             # choose "replace" to overwrite the database with a fresh copy of the data
-            for i in tqdm(range(len(data))):
+            for i in tqdm(range(len(data)), desc=f"Inserting {f} into {args.database_name}"):
                 try:
                     data.iloc[i : i + 1].to_sql(
                         name=args.target_table,
