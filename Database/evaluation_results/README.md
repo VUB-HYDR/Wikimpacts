@@ -12,3 +12,5 @@ setting 5 & 1.0 for location, 0 for others & 0.6 & 1.0 \
 
 Based on the evaluation result of V3 cross these experiments, we select setting 2 for the further processing.
 For the V4 and V5, we only use setting 2 for evaluation.
+
+For double annotation, we have two annotators: one for the gold data and one for the output data. The annotator for the gold data worked prior to the implementation of the L1-3 guideline, while the annotator for the output data followed the new guideline. The L2 and L3 information in the gold data is extracted from the Location field. Information at the country level is assigned to L2, while sub-national level information is assigned to L3.
