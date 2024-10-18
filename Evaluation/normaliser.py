@@ -29,7 +29,9 @@ class Normaliser:
         """Normalise boolean value. Return None if ill-defined.
         Examples: " Yes" -> True, "0  " -> False, True -> True, "goat" -> None."""
         v = self.string(v)
-        return True if v in {"1", "yes", "y", "true"} else False if v in {"0", "no", "n", "false"} else None
+        return (
+            True if v in {"1", "1.0", "yes", "y", "true"} else False if v in {"0", "0.0", "no", "n", "false"} else None
+        )
 
     def sequence(self, v):
         """Normalise a string of elements separated by "&" or "|". Return an ordered list of
