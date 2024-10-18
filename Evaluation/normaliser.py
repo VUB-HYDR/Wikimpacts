@@ -8,7 +8,6 @@ class Normaliser:
     def string(self, v):
         """Normalise string. Discard leading and trailing whitespaces and convert to lower case.
         Examples: "Example" -> "example", "  example " -> "example"."""
-        print(str(v).strip().lower())
         return str(v).strip().lower()
 
     def integer(self, v):
