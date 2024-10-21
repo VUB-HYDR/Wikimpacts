@@ -428,11 +428,13 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                         try:
                             res = norm_loc.get_gadm_gid(country=admin_area)
                             assert res
+                            return res
                         except BaseException as err:
                             logger.warning(f"Could not get gadm as country. Admin area: {admin_area} Error: {err}")
                             res = norm_loc.get_gadm_gid(area=admin_area)
                             try:
                                 assert res
+                                return res
                             except BaseException as err:
                                 logger.warning(f"Could not get gadm as area. Error: {err}")
                                 return []
