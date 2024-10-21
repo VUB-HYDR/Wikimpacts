@@ -8,7 +8,7 @@ setting1 & 1.0 for non-nullable items, 0.125 for nullable items & 0.6 & 0.5 \
 setting2 & 1.0 for non-nullable items, 0.125 for nullable items & 0.6 & 1.0 \
 setting3 & 1.0 for non-nullable items, 0.125 for nullable items & 0.6 & 0.0 \
 setting4 & 1.0 for non-nullable items, 0.125 for nullable items & 0.0 & 1.0 \
-setting 5 & 1.0 for location, 0 for others & 0.6 & 1.0 \
+
 
 Based on the evaluation result of V3 cross these experiments, we select setting 2 for the further processing.
 For the V4 and V5, we only use setting 2 for evaluation.
