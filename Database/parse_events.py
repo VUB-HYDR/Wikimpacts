@@ -539,27 +539,6 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
             )
 
 
-def df_to_parquet(
-    df: pd.DataFrame,
-    target_dir: str,
-    chunk_size: int = 2000,
-    **parquet_wargs,
-):
-    """Writes pandas DataFrame to parquet format with pyarrow.
-        Credit: https://stackoverflow.com/a/72010262/14123992
-    Args:
-        df: DataFrame
-        target_dir: local directory where parquet files are written to
-        chunk_size: number of rows stored in one chunk of parquet file. Defaults to 2000.
-    """
-    for i in range(0, len(df), chunk_size):
-        slc = df.iloc[i : i + chunk_size]
-        chunk = int(i / chunk_size)
-        fname = os.path.join(target_dir, f"{chunk:04d}.parquet")
-        pathlib.Path(target_dir).mkdir(parents=True, exist_ok=True)
-        slc.to_parquet(fname, engine="fastparquet", **parquet_wargs)
-
-
 def get_target_cols() -> tuple[list]:
     date_cols = [
         "Start_Date_Day",
