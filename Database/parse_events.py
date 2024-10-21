@@ -146,12 +146,12 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
             lambda admin_areas: (
                 [
                     (
-                        norm_loc.get_gadm_gid(country=c)
-                        if norm_loc.get_gadm_gid(country=c)
-                        else norm_loc.get_gadm_gid(area=c)
+                        norm_loc.get_gadm_gid(country=area)
+                        if norm_loc.get_gadm_gid(country=area)
+                        else norm_loc.get_gadm_gid(area=area)
                     )
-                    for c in admin_areas
-                    if c
+                    for area in admin_areas
+                    if area
                 ]
                 if isinstance(admin_areas, list)
                 else []
@@ -200,7 +200,17 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
         logger.info("Getting GID from GADM for Administrative Areas after purging areas above GID_0 level...")
         events[f"{admin_area_col}_GID"] = events[f"{admin_area_col}_Norm"].progress_apply(
             lambda admin_areas: (
-                [(norm_loc.get_gadm_gid(country=c)) for c in admin_areas if c] if isinstance(admin_areas, list) else []
+                [
+                    (
+                        norm_loc.get_gadm_gid(country=area)
+                        if norm_loc.get_gadm_gid(country=area)
+                        else norm_loc.get_gadm_gid(area=area)
+                    )
+                    for area in admin_areas
+                    if area
+                ]
+                if isinstance(admin_areas, list)
+                else []
             ),
         )
 
@@ -389,12 +399,12 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                     lambda admin_areas: (
                         [
                             (
-                                norm_loc.get_gadm_gid(country=c)
-                                if norm_loc.get_gadm_gid(country=c)
-                                else norm_loc.get_gadm_gid(area=c)
+                                norm_loc.get_gadm_gid(country=area)
+                                if norm_loc.get_gadm_gid(country=area)
+                                else norm_loc.get_gadm_gid(area=area)
                             )
-                            for c in admin_areas
-                            if c
+                            for area in admin_areas
+                            if area
                         ]
                         if isinstance(admin_areas, list)
                         else [[] for _ in admin_areas]
@@ -421,30 +431,9 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                 )
                 logger.info(f"Getting GID from GADM for Administrative Areas in subevent {col}")
 
-                def get_gid(admin_area: str | None):
-                    if admin_area is None:
-                        return []
-                    if isinstance(admin_area, str):
-                        try:
-                            res = norm_loc.get_gadm_gid(country=admin_area)
-                            assert res
-                            return res
-                        except BaseException as err:
-                            logger.warning(f"Could not get gadm as country. Admin area: {admin_area} Error: {err}")
-                            res = norm_loc.get_gadm_gid(area=admin_area)
-                            try:
-                                assert res
-                                return res
-                            except BaseException as err:
-                                logger.warning(f"Could not get gadm as area. Error: {err}")
-                                return []
-                    else:
-                        logger.warning(f"admin_area {admin_area} of type {type(admin_area)} is not supported.")
-                        return []
-
                 sub_event[f"{administrative_area_col}_GID"] = sub_event[
                     f"{administrative_area_col}_Norm"
-                ].progress_apply(lambda admin_area: (get_gid(admin_area=admin_area)))
+                ].progress_apply(lambda area: norm_loc.get_gadm_gid(country=area) if area else [])
                 if location_col in sub_event.columns:
                     logger.info(f"Normalizing location names for {level} {col}")
                     sub_event[f"{location_col}_Tmp"] = sub_event.progress_apply(
@@ -491,26 +480,14 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                         lambda row: (
                             [
                                 (
-                                    (
-                                        norm_loc.get_gadm_gid(
-                                            area=row[f"{location_col}_Norm"][i],
-                                            country=row[f"{administrative_area_col}_Norm"],
-                                        )
-                                        if norm_loc.get_gadm_gid(
-                                            area=row[f"{location_col}_Norm"][i],
-                                            country=row[f"{administrative_area_col}_Norm"],
-                                        )
-                                        else norm_loc.get_gadm_gid(
-                                            area=row[f"{location_col}_Norm"][i],
-                                        )
-                                    )
-                                    if i
-                                    else []
+                                    norm_loc.get_gadm_gid(area=row[f"{location_col}_Norm"][i])
+                                    if norm_loc.get_gadm_gid(area=row[f"{location_col}_Norm"][i])
+                                    else norm_loc.get_gadm_gid(country=row[f"{location_col}_Norm"][i])
                                 )
+                                if row[f"{location_col}_Norm"][i]
+                                else []
                                 for i in range(len(row[f"{location_col}_Norm"]))
                             ]
-                            if isinstance(row[f"{location_col}_Norm"], list)
-                            else []
                         ),
                         axis=1,
                     )

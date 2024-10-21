@@ -362,24 +362,22 @@ class NormalizeLocation:
                     )
 
     @cache
-    def _get_american_area(self, area: str, country: str = None) -> list | None:
+    def _get_american_area(self, area: str) -> list | None:
         # TODO: slim down
         areas = []
         if not area:
             return None
 
-        if area == self.united_states and (not country or country == self.united_states):
+        if area == self.united_states:
             return [self.USA_GID]
 
-        address = [x.strip() for x in area.split(",")] if area else [x.strip() for x in country.split(",")]
+        address = [x.strip() for x in area.split(",")] if area else [x.strip() for x in area.split(",")]
 
         # remove postal codes from the address list (common on OSM)
         address = [i for i in address if not re.match(r"^\d{5}(?:[-\s]\d{4})?$", i)]
 
-        if country == self.united_states and address[-1] != self.united_states:
-            address.append(country)
-
-        assert address[-1] == self.united_states
+        if address[-1] != self.united_states:
+            address.append(self.united_states)
 
         # county level
         if len(address) == 3:
@@ -433,7 +431,7 @@ class NormalizeLocation:
 
             areas = [f"{i}:{','.join(address[:-3]).strip()}" for i in areas]
 
-        return areas
+        return areas if areas else None
 
     @cache
     def get_gadm_gid(
@@ -453,13 +451,19 @@ class NormalizeLocation:
         if unsd_search_output:
             return unsd_search_output
 
-        # handle American States
-        us_address_split = area.split(",")[-1].strip() if area else None
-        us_search_output = (
-            self._get_american_area(area, country)
-            if area and (country == self.united_states or us_address_split == self.united_states)
-            else None
-        )
+        # find US-areas: country, states, and counties
+        if country and not area:
+            us_search = country
+        elif area and not country:
+            us_search = area
+        elif area and country:
+            us_search = (
+                area
+                if (self.united_states in country and self.united_states in area)
+                else (country if not area else (f"{area}, {country}" if country and area else None))
+            )
+
+        us_search_output = self._get_american_area(us_search)
         if us_search_output:
             return us_search_output
 
