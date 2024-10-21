@@ -134,7 +134,7 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
                         [i[2] for i in x],
                     )
                     if isinstance(x, list)
-                    else (None, None, None)
+                    else ([], [], [])
                 )
             )
             .progress_apply(pd.Series)
@@ -190,7 +190,7 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
                         [i[2] for i in x],
                     )
                     if isinstance(x, list)
-                    else (None, None, None)
+                    else ([], [], [])
                 )
             )
             .progress_apply(pd.Series)
@@ -307,7 +307,6 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
             logger.info(f"Normalizing nulls for {level} {col}")
             sub_event = utils.replace_nulls(sub_event)
 
-
         _yes, _no = re.compile(r"^(yes)$|^(y)$|^(true)$", re.IGNORECASE | re.MULTILINE), re.compile(
             r"^(no)$|^(n)$|^(false)$", re.IGNORECASE | re.MULTILINE
         )
@@ -319,8 +318,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                     if value and not isinstance(value, bool) and re.match(_yes, value)
                     else (False if value and not isinstance(value, bool) and re.match(_no, value) else value)
                 )
-
-
+            )
             logger.info(f"Normalizing dates for subevet {col}")
             start_date_col, end_date_col = [col for col in sub_event.columns if col.startswith("Start_Date")], [
                 col for col in sub_event.columns if col.startswith("End_Date")
@@ -377,7 +375,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                                 [i[2] for i in x],
                             )
                             if isinstance(x, list)
-                            else (None, None, None)
+                            else ([], [], [])
                         )
                     )
                     .progress_apply(pd.Series)
@@ -478,7 +476,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                                     [i[2] for i in x],
                                 )
                                 if isinstance(x, list)
-                                else (None, None, None)
+                                else ([], [], [])
                             )
                         )
                         .progress_apply(pd.Series)
@@ -558,6 +556,7 @@ def df_to_parquet(
         fname = os.path.join(target_dir, f"{chunk:04d}.parquet")
         pathlib.Path(target_dir).mkdir(parents=True, exist_ok=True)
         slc.to_parquet(fname, engine="fastparquet", **parquet_wargs)
+
 
 def get_target_cols() -> tuple[list]:
     date_cols = [
