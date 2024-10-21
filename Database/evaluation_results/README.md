@@ -1,6 +1,6 @@
 For ESSD_2024 folders, we use the same name as the output folder, but add the experiment name in the end.
 The "filter" means that the records are with L2 and L3 annotation.
-ESSD_2024_V3_filter_dft is the evaluation result under the default setting
+ESSD_2024_V3_filter_default is the evaluation result under the default setting
 In total we have 5 experiments, and the settings are listed as below
 experiment & Weight & Threshold & NULL Penalty \
 default & 1.0 for all & 0.6 & 0.5\
