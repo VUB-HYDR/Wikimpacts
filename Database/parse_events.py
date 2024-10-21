@@ -320,8 +320,8 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                 )
             )
             logger.info(f"Normalizing dates for subevet {col}")
-            start_date_col, end_date_col = [col for col in sub_event.columns if col.startswith("Start_Date")], [
-                col for col in sub_event.columns if col.startswith("End_Date")
+            start_date_col, end_date_col = [c for c in sub_event.columns if col.startswith("Start_Date")], [
+                c for c in sub_event.columns if col.startswith("End_Date")
             ]
             assert len(start_date_col) == len(end_date_col), "Check the start and end date columns"
             assert len(start_date_col) <= 1, "Check the start and end date columns, there might be too many"
