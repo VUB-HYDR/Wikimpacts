@@ -52,6 +52,8 @@ class TestNormalizeLocations:
             ("Orange County, California, United States", None, ["USA.5.30_1"]),
             (None, "Orange County, California, United States", ["USA.5.30_1"]),
             (None, "Netherlands", ["NLD"]),
+            ("India", None, []),
+            (None, "India", ["Z07", "IND", "Z01", "Z04", "Z05", "Z09"]),
         ],
     )
     def test_get_gadm_gid(self, area, country, expected):
