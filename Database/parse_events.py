@@ -13,7 +13,7 @@ from Database.scr.normalize_utils import NormalizeUtils
 
 tqdm.pandas()
 
-pandarallel.initialize(progress_bar=True, nb_workers=10)
+pandarallel.initialize(progress_bar=True, nb_workers=4, verbose=2, use_memory_fs=None)
 
 
 def infer_countries(
@@ -313,7 +313,11 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                     sub_event[[f"{i}_Min", f"{i}_Max", f"{i}_Approx"]] = (
                         sub_event[i]
                         .parallel_apply(
-                            lambda x: (norm_num.extract_numbers(str(x)) if x is not None else (None, None, None))
+                            lambda x: (
+                                print(str(x)) or norm_num.extract_numbers(str(x))
+                                if x is not None
+                                else (None, None, None)
+                            )
                         )
                         .apply(pd.Series)
                     )
