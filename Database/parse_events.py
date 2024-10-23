@@ -332,54 +332,134 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                     else (False if value and not isinstance(value, bool) and re.match(_no, value) else value)
                 )
             )
-            logger.info(f"Normalizing dates for subevet {col}")
-            start_date_col, end_date_col = [c for c in sub_event.columns if col.startswith("Start_Date")], [
-                c for c in sub_event.columns if col.startswith("End_Date")
-            ]
-            assert len(start_date_col) == len(end_date_col), "Check the start and end date columns"
-            assert len(start_date_col) <= 1, "Check the start and end date columns, there might be too many"
+        logger.info(f"Normalizing dates for subevet {col}")
+        start_date_col, end_date_col = [c for c in sub_event.columns if col.startswith("Start_Date")], [
+            c for c in sub_event.columns if col.startswith("End_Date")
+        ]
+        assert len(start_date_col) == len(end_date_col), "Check the start and end date columns"
+        assert len(start_date_col) <= 1, "Check the start and end date columns, there might be too many"
 
-            if start_date_col and end_date_col:
-                logger.info(f"Normalizing start and end date in columns {start_date_col} and {end_date_col}")
-                start_date_col, end_date_col = start_date_col[0], end_date_col[0]
-                start_dates = sub_event[start_date_col].parallel_apply(utils.normalize_date)
-                end_dates = sub_event[end_date_col].parallel_apply(utils.normalize_date)
-                start_date_cols = pd.DataFrame(
-                    start_dates.to_list(),
-                    columns=[
-                        f"{start_date_col}_Day",
-                        f"{start_date_col}_Month",
-                        f"{start_date_col}_Year",
-                    ],
-                )
-                end_date_cols = pd.DataFrame(
-                    end_dates.to_list(),
-                    columns=[
-                        f"{end_date_col}_Day",
-                        f"{end_date_col}_Month",
-                        f"{end_date_col}_Year",
-                    ],
-                )
-                sub_event.reset_index(inplace=True, drop=True)
-                sub_event = pd.concat([sub_event, start_date_cols, end_date_cols], axis=1)
+        if start_date_col and end_date_col:
+            logger.info(f"Normalizing start and end date in columns {start_date_col} and {end_date_col}")
+            start_date_col, end_date_col = start_date_col[0], end_date_col[0]
+            start_dates = sub_event[start_date_col].parallel_apply(utils.normalize_date)
+            end_dates = sub_event[end_date_col].parallel_apply(utils.normalize_date)
+            start_date_cols = pd.DataFrame(
+                start_dates.to_list(),
+                columns=[
+                    f"{start_date_col}_Day",
+                    f"{start_date_col}_Month",
+                    f"{start_date_col}_Year",
+                ],
+            )
+            end_date_cols = pd.DataFrame(
+                end_dates.to_list(),
+                columns=[
+                    f"{end_date_col}_Day",
+                    f"{end_date_col}_Month",
+                    f"{end_date_col}_Year",
+                ],
+            )
+            sub_event.reset_index(inplace=True, drop=True)
+            sub_event = pd.concat([sub_event, start_date_cols, end_date_cols], axis=1)
 
-            if level == "l2" and administrative_area_col in sub_event.columns:
-                logger.info(f"Normalizing administrative area names for {level} {col}")
-                sub_event[f"{administrative_area_col}_Tmp"] = sub_event[administrative_area_col].progress_apply(
-                    lambda admin_areas: (
-                        [norm_loc.normalize_locations(c, is_country=True) for c in admin_areas]
-                        if isinstance(admin_areas, list)
-                        else []
+        if level == "l2" and administrative_area_col in sub_event.columns:
+            logger.info(f"Normalizing administrative area names for {level} {col}")
+            sub_event[f"{administrative_area_col}_Tmp"] = sub_event[administrative_area_col].progress_apply(
+                lambda admin_areas: (
+                    [norm_loc.normalize_locations(c, is_country=True) for c in admin_areas]
+                    if isinstance(admin_areas, list)
+                    else []
+                )
+            )
+            sub_event[
+                [
+                    f"{administrative_area_col}_Norm",
+                    f"{administrative_area_col}_Type",
+                    f"{administrative_area_col}_GeoJson",
+                ]
+            ] = (
+                sub_event[f"{administrative_area_col}_Tmp"]
+                .parallel_apply(
+                    lambda x: (
+                        (
+                            [i[0] for i in x],
+                            [i[1] for i in x],
+                            [i[2] for i in x],
+                        )
+                        if isinstance(x, list)
+                        else ([], [], [])
                     )
                 )
+                .parallel_apply(pd.Series)
+            )
+
+            sub_event.drop(columns=[f"{administrative_area_col}_Tmp"], inplace=True)
+            logger.info(f"Getting GID from GADM for Administrative Areas in {level} {col}")
+            sub_event[f"{administrative_area_col}_GID"] = sub_event[f"{administrative_area_col}_Norm"].parallel_apply(
+                lambda admin_areas: (
+                    [
+                        (
+                            norm_loc.get_gadm_gid(country=area)
+                            if norm_loc.get_gadm_gid(country=area)
+                            else norm_loc.get_gadm_gid(area=area)
+                        )
+                        for area in admin_areas
+                        if area
+                    ]
+                    if isinstance(admin_areas, list)
+                    else [[] for _ in admin_areas]
+                ),
+            )
+
+        elif level == "l3" and administrative_area_col in sub_event.columns:
+            sub_event[
+                [
+                    f"{administrative_area_col}_Norm",
+                    f"{administrative_area_col}_Type",
+                    f"{administrative_area_col}_GeoJson",
+                ]
+            ] = (
+                sub_event[administrative_area_col]
+                .progress_apply(
+                    lambda admin_area: (
+                        norm_loc.normalize_locations(admin_area, is_country=True)
+                        if isinstance(admin_area, str)
+                        else (None, None, None)
+                    )
+                )
+                .progress_apply(pd.Series)
+            )
+            logger.info(f"Getting GID from GADM for Administrative Areas in subevent {col}")
+
+            sub_event[f"{administrative_area_col}_GID"] = sub_event[f"{administrative_area_col}_Norm"].parallel_apply(
+                lambda area: norm_loc.get_gadm_gid(country=area) if area else []
+            )
+            if location_col in sub_event.columns:
+                logger.info(f"Normalizing location names for {level} {col}")
+                sub_event[f"{location_col}_Tmp"] = sub_event.progress_apply(
+                    lambda row: (
+                        [
+                            norm_loc.normalize_locations(
+                                area=row[location_col][i],
+                                in_country=row[f"{administrative_area_col}_Norm"],
+                            )
+                            for i in range(len(row[location_col]))
+                        ]
+                        if isinstance(row[location_col], list)
+                        else []
+                    ),
+                    axis=1,
+                )
+
                 sub_event[
                     [
-                        f"{administrative_area_col}_Norm",
-                        f"{administrative_area_col}_Type",
-                        f"{administrative_area_col}_GeoJson",
+                        f"{location_col}_Norm",
+                        f"{location_col}_Type",
+                        f"{location_col}_GeoJson",
                     ]
                 ] = (
-                    sub_event[f"{administrative_area_col}_Tmp"]
+                    sub_event[f"{location_col}_Tmp"]
                     .parallel_apply(
                         lambda x: (
                             (
@@ -394,129 +474,45 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                     .parallel_apply(pd.Series)
                 )
 
-                sub_event.drop(columns=[f"{administrative_area_col}_Tmp"], inplace=True)
-                logger.info(f"Getting GID from GADM for Administrative Areas in {level} {col}")
-                sub_event[f"{administrative_area_col}_GID"] = sub_event[
-                    f"{administrative_area_col}_Norm"
-                ].parallel_apply(
-                    lambda admin_areas: (
+                sub_event.drop(columns=[f"{location_col}_Tmp"], inplace=True)
+                logger.info(f"Getting GID from GADM for locations in {level} {col}")
+
+                sub_event[f"{location_col}_GID"] = sub_event.parallel_apply(
+                    lambda row: (
                         [
                             (
-                                norm_loc.get_gadm_gid(country=area)
-                                if norm_loc.get_gadm_gid(country=area)
-                                else norm_loc.get_gadm_gid(area=area)
+                                norm_loc.get_gadm_gid(area=row[f"{location_col}_Norm"][i])
+                                if norm_loc.get_gadm_gid(area=row[f"{location_col}_Norm"][i])
+                                else norm_loc.get_gadm_gid(country=row[f"{location_col}_Norm"][i])
                             )
-                            for area in admin_areas
-                            if area
-                        ]
-                        if isinstance(admin_areas, list)
-                        else [[] for _ in admin_areas]
-                    ),
-                )
-
-            elif level == "l3" and administrative_area_col in sub_event.columns:
-                sub_event[
-                    [
-                        f"{administrative_area_col}_Norm",
-                        f"{administrative_area_col}_Type",
-                        f"{administrative_area_col}_GeoJson",
-                    ]
-                ] = (
-                    sub_event[administrative_area_col]
-                    .progress_apply(
-                        lambda admin_area: (
-                            norm_loc.normalize_locations(admin_area, is_country=True)
-                            if isinstance(admin_area, str)
-                            else (None, None, None)
-                        )
-                    )
-                    .progress_apply(pd.Series)
-                )
-                logger.info(f"Getting GID from GADM for Administrative Areas in subevent {col}")
-
-                sub_event[f"{administrative_area_col}_GID"] = sub_event[
-                    f"{administrative_area_col}_Norm"
-                ].parallel_apply(lambda area: norm_loc.get_gadm_gid(country=area) if area else [])
-                if location_col in sub_event.columns:
-                    logger.info(f"Normalizing location names for {level} {col}")
-                    sub_event[f"{location_col}_Tmp"] = sub_event.progress_apply(
-                        lambda row: (
-                            [
-                                norm_loc.normalize_locations(
-                                    area=row[location_col][i],
-                                    in_country=row[f"{administrative_area_col}_Norm"],
-                                )
-                                for i in range(len(row[location_col]))
-                            ]
-                            if isinstance(row[location_col], list)
+                            if row[f"{location_col}_Norm"][i]
                             else []
-                        ),
-                        axis=1,
-                    )
-
-                    sub_event[
-                        [
-                            f"{location_col}_Norm",
-                            f"{location_col}_Type",
-                            f"{location_col}_GeoJson",
+                            for i in range(len(row[f"{location_col}_Norm"]))
                         ]
-                    ] = (
-                        sub_event[f"{location_col}_Tmp"]
-                        .parallel_apply(
-                            lambda x: (
-                                (
-                                    [i[0] for i in x],
-                                    [i[1] for i in x],
-                                    [i[2] for i in x],
-                                )
-                                if isinstance(x, list)
-                                else ([], [], [])
-                            )
-                        )
-                        .parallel_apply(pd.Series)
-                    )
-
-                    sub_event.drop(columns=[f"{location_col}_Tmp"], inplace=True)
-                    logger.info(f"Getting GID from GADM for locations in {level} {col}")
-
-                    sub_event[f"{location_col}_GID"] = sub_event.parallel_apply(
-                        lambda row: (
-                            [
-                                (
-                                    norm_loc.get_gadm_gid(area=row[f"{location_col}_Norm"][i])
-                                    if norm_loc.get_gadm_gid(area=row[f"{location_col}_Norm"][i])
-                                    else norm_loc.get_gadm_gid(country=row[f"{location_col}_Norm"][i])
-                                )
-                                if row[f"{location_col}_Norm"][i]
-                                else []
-                                for i in range(len(row[f"{location_col}_Norm"]))
-                            ]
-                        ),
-                        axis=1,
-                    )
-
-            logger.info(f"Dropping empty rows in {col}")
-            rows_before = sub_event.shape[0]
-            null_mask = (
-                sub_event[[x for x in sub_event.columns if x != "Event_ID"]]
-                .parallel_apply(lambda row: [True if v in (None, [], float("nan")) else False for _, v in row.items()])
-                .all(axis=1)
-            )
-            sub_event = sub_event[~null_mask]
-            rows_after = sub_event.shape[0]
-            logger.info(f"Dropped {rows_before-rows_after} row(s) in {col}")
-            del rows_before, rows_after
-
-            logger.info(f"Storing parsed results for subevent {col}")
-            for c in sub_event.columns:
-                sub_event[c] = sub_event[c].astype(str)
-            if target_columns:
-                sub_event = sub_event[[x for x in target_columns if x in sub_event.columns]]
-            utils.df_to_parquet(
-                sub_event,
-                target_dir=f"{args.output_dir}/{level}/{col}",
-                chunk_size=200,
-            )
+                    ),
+                    axis=1,
+                )
+        logger.info(f"Dropping empty rows in {col}")
+        rows_before = sub_event.shape[0]
+        null_mask = (
+            sub_event[[x for x in sub_event.columns if x != "Event_ID"]]
+            .parallel_apply(lambda row: [True if v in (None, [], float("nan")) else False for _, v in row.items()])
+            .all(axis=1)
+        )
+        sub_event = sub_event[~null_mask]
+        rows_after = sub_event.shape[0]
+        logger.info(f"Dropped {rows_before-rows_after} row(s) in {col}")
+        del rows_before, rows_after
+        logger.info(f"Storing parsed results for subevent {col}")
+        for c in sub_event.columns:
+            sub_event[c] = sub_event[c].astype(str)
+        if target_columns:
+            sub_event = sub_event[[x for x in target_columns if x in sub_event.columns]]
+        utils.df_to_parquet(
+            sub_event,
+            target_dir=f"{args.output_dir}/{level}/{col}",
+            chunk_size=200,
+        )
 
 
 def get_target_cols() -> tuple[list]:
