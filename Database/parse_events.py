@@ -95,7 +95,7 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
             events[[f"{i}_Min", f"{i}_Max", f"{i}_Approx"]] = (
                 events[i]
                 .parallel_apply(lambda x: (norm_num.extract_numbers(x) if isinstance(x, str) else (None, None, None)))
-                .parallel_apply(pd.Series)
+                .apply(pd.Series)
             )
 
     split_by_pipe_cols = ["Hazards"]
@@ -140,7 +140,7 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
                     else ([], [], [])
                 )
             )
-            .parallel_apply(pd.Series)
+            .apply(pd.Series)
         )
 
         events.drop(columns=[f"{admin_area_col}_Tmp"], inplace=True)
@@ -196,7 +196,7 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
                     else ([], [], [])
                 )
             )
-            .parallel_apply(pd.Series)
+            .apply(pd.Series)
         )
 
         events.drop(columns=[f"{admin_area_col}_GID_0_Tmp"], inplace=True)
@@ -283,7 +283,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
 
         # drop any events that have no subevents (aka [] exploded into NaN)
         sub_event.dropna(how="all", inplace=True)
-        sub_event = pd.concat([sub_event.Event_ID, sub_event[col].parallel_apply(pd.Series)], axis=1)
+        sub_event = pd.concat([sub_event.Event_ID, sub_event[col].apply(pd.Series)], axis=1)
 
         logger.info(
             f"Dropping any columns with non-str column names due to None types in the dicts {[c for c in sub_event.columns if not isinstance(c, str)]}"
@@ -315,7 +315,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                         .parallel_apply(
                             lambda x: (norm_num.extract_numbers(str(x)) if x is not None else (None, None, None))
                         )
-                        .parallel_apply(pd.Series)
+                        .apply(pd.Series)
                     )
             logger.info(f"Normalizing nulls for {level} {col}")
             sub_event = utils.replace_nulls(sub_event)
@@ -391,7 +391,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                         else ([], [], [])
                     )
                 )
-                .parallel_apply(pd.Series)
+                .apply(pd.Series)
             )
 
             sub_event.drop(columns=[f"{administrative_area_col}_Tmp"], inplace=True)
@@ -471,7 +471,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                             else ([], [], [])
                         )
                     )
-                    .parallel_apply(pd.Series)
+                    .apply(pd.Series)
                 )
 
                 sub_event.drop(columns=[f"{location_col}_Tmp"], inplace=True)
