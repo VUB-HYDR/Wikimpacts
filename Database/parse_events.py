@@ -3,7 +3,6 @@ import pathlib
 import re
 
 import pandas as pd
-from pandarallel import pandarallel
 from tqdm import tqdm
 
 from Database.scr.log_utils import Logging
@@ -12,8 +11,6 @@ from Database.scr.normalize_numbers import NormalizeNumber
 from Database.scr.normalize_utils import NormalizeUtils
 
 tqdm.pandas()
-
-pandarallel.initialize(progress_bar=True, nb_workers=4, verbose=2, use_memory_fs=None)
 
 
 def infer_countries(
@@ -48,7 +45,7 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
     logger.info("Unpacking Total_Summary_* columns")
     total_summary_cols = [col for col in df.columns if col.startswith("Total_Summary_")]
     for i in total_summary_cols:
-        df[i] = df[i].parallel_apply(utils.eval)
+        df[i] = df[i].progress_apply(utils.eval)
     events = utils.unpack_col(df, columns=total_summary_cols)
     logger.info(f"Total summary columns: {total_summary_cols}")
     del df
@@ -57,7 +54,7 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
         logger.info("STEP: Normalizing start and end dates if present")
         for d_col in ["Start_Date", "End_Date"]:
             logger.info(f"Normalizing date column: {d_col}")
-            dates = events[d_col].parallel_apply(utils.normalize_date)
+            dates = events[d_col].progress_apply(utils.normalize_date)
             date_cols = pd.DataFrame(
                 dates.to_list(),
                 columns=[f"{d_col}_Day", f"{d_col}_Month", f"{d_col}_Year"],
@@ -71,7 +68,7 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
     )
     for inflation_adjusted_col in [col for col in events.columns if col.endswith("_Adjusted")]:
         logger.info(f"Normalizing boolean column {inflation_adjusted_col}")
-        events[inflation_adjusted_col] = events[inflation_adjusted_col].parallel_apply(
+        events[inflation_adjusted_col] = events[inflation_adjusted_col].progress_apply(
             lambda value: (
                 True
                 if value and not isinstance(value, bool) and re.match(_yes, value)
@@ -94,14 +91,14 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
             logger.info(f"Normalizing ranges in {i}")
             events[[f"{i}_Min", f"{i}_Max", f"{i}_Approx"]] = (
                 events[i]
-                .parallel_apply(lambda x: (norm_num.extract_numbers(x) if isinstance(x, str) else (None, None, None)))
+                .progress_apply(lambda x: (norm_num.extract_numbers(x) if isinstance(x, str) else (None, None, None)))
                 .apply(pd.Series)
             )
 
     split_by_pipe_cols = ["Hazards"]
     for str_col in [x for x in events.columns if x in split_by_pipe_cols]:
         logger.info(f"Splitting column {str_col} by pipe")
-        events[str_col] = events[str_col].parallel_apply(
+        events[str_col] = events[str_col].progress_apply(
             lambda x: (x.split("|") if isinstance(x, str) else (x if isinstance(x, str) else None))
         )
 
@@ -109,7 +106,7 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
 
     if "Administrative_Areas" in events.columns:
         logger.info(f"Ensuring that all admin area data in Administrative_Areas is of type <list>")
-        events["Administrative_Areas"] = events["Administrative_Areas"].parallel_apply(
+        events["Administrative_Areas"] = events["Administrative_Areas"].progress_apply(
             lambda x: utils.eval(x) if x is not None else []
         )
 
@@ -129,7 +126,7 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
             ]
         ] = (
             events[f"{admin_area_col}_Tmp"]
-            .parallel_apply(
+            .progress_apply(
                 lambda x: (
                     (
                         [i[0] for i in x],
@@ -145,7 +142,7 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
 
         events.drop(columns=[f"{admin_area_col}_Tmp"], inplace=True)
         logger.info("Getting GID from GADM for Administrative Areas")
-        events[f"{admin_area_col}_GID"] = events[f"{admin_area_col}_Norm"].parallel_apply(
+        events[f"{admin_area_col}_GID"] = events[f"{admin_area_col}_Norm"].progress_apply(
             lambda admin_areas: (
                 [
                     (
@@ -163,7 +160,7 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
 
         logger.info(f"""STEP: Infer country from list of locations""")
 
-        events[f"{admin_area_col}_GID_0_Tmp"] = events.parallel_apply(
+        events[f"{admin_area_col}_GID_0_Tmp"] = events.progress_apply(
             lambda x: infer_countries(x, admin_area_col=admin_area_col), axis=1
         )
 
@@ -185,7 +182,7 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
             ]
         ] = (
             events[f"{admin_area_col}_GID_0_Tmp"]
-            .parallel_apply(
+            .progress_apply(
                 lambda x: (
                     (
                         [i[0] for i in x],
@@ -201,7 +198,7 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
 
         events.drop(columns=[f"{admin_area_col}_GID_0_Tmp"], inplace=True)
         logger.info("Getting GID from GADM for Administrative Areas after purging areas above GID_0 level...")
-        events[f"{admin_area_col}_GID"] = events[f"{admin_area_col}_Norm"].parallel_apply(
+        events[f"{admin_area_col}_GID"] = events[f"{admin_area_col}_Norm"].progress_apply(
             lambda admin_areas: (
                 [
                     (
@@ -224,7 +221,7 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
     event_name_col = [x for x in events.columns if "Event_Name" in x]
     if len(event_name_col) == 1:
         event_name_col = event_name_col[0]
-        events["Event_Names"] = events[event_name_col].parallel_apply(
+        events["Event_Names"] = events[event_name_col].progress_apply(
             lambda x: ([x.strip()] if isinstance(x, str) else ([y.strip() for y in x]) if isinstance(x, list) else None)
         )
     logger.info("Converting annotation columns to strings to store in sqlite3")
@@ -276,7 +273,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
 
     for col in specific_summary_cols:
         # evaluate string bytes to python datatype (hopefully dict, str, or list)
-        df[col] = df[col].parallel_apply(utils.eval)
+        df[col] = df[col].progress_apply(utils.eval)
 
         # unpack subevents
         sub_event = df[["Event_ID", col]].explode(col)
@@ -312,7 +309,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                 for i in specific_total_cols:
                     sub_event[[f"{i}_Min", f"{i}_Max", f"{i}_Approx"]] = (
                         sub_event[i]
-                        .parallel_apply(
+                        .progress_apply(
                             lambda x: (norm_num.extract_numbers(str(x)) if x is not None else (None, None, None))
                         )
                         .apply(pd.Series)
@@ -325,7 +322,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
         )
         for inflation_adjusted_col in [col for col in sub_event.columns if col.endswith("_Adjusted")]:
             logger.info(f"Normalizing boolean column {inflation_adjusted_col} for {level} {col}")
-            sub_event[inflation_adjusted_col] = sub_event[inflation_adjusted_col].parallel_apply(
+            sub_event[inflation_adjusted_col] = sub_event[inflation_adjusted_col].progress_apply(
                 lambda value: (
                     True
                     if value and not isinstance(value, bool) and re.match(_yes, value)
@@ -342,8 +339,8 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
         if start_date_col and end_date_col:
             logger.info(f"Normalizing start and end date in columns {start_date_col} and {end_date_col}")
             start_date_col, end_date_col = start_date_col[0], end_date_col[0]
-            start_dates = sub_event[start_date_col].parallel_apply(utils.normalize_date)
-            end_dates = sub_event[end_date_col].parallel_apply(utils.normalize_date)
+            start_dates = sub_event[start_date_col].progress_apply(utils.normalize_date)
+            end_dates = sub_event[end_date_col].progress_apply(utils.normalize_date)
             start_date_cols = pd.DataFrame(
                 start_dates.to_list(),
                 columns=[
@@ -380,7 +377,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                 ]
             ] = (
                 sub_event[f"{administrative_area_col}_Tmp"]
-                .parallel_apply(
+                .progress_apply(
                     lambda x: (
                         (
                             [i[0] for i in x],
@@ -396,7 +393,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
 
             sub_event.drop(columns=[f"{administrative_area_col}_Tmp"], inplace=True)
             logger.info(f"Getting GID from GADM for Administrative Areas in {level} {col}")
-            sub_event[f"{administrative_area_col}_GID"] = sub_event[f"{administrative_area_col}_Norm"].parallel_apply(
+            sub_event[f"{administrative_area_col}_GID"] = sub_event[f"{administrative_area_col}_Norm"].progress_apply(
                 lambda admin_areas: (
                     [
                         (
@@ -432,7 +429,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
             )
             logger.info(f"Getting GID from GADM for Administrative Areas in subevent {col}")
 
-            sub_event[f"{administrative_area_col}_GID"] = sub_event[f"{administrative_area_col}_Norm"].parallel_apply(
+            sub_event[f"{administrative_area_col}_GID"] = sub_event[f"{administrative_area_col}_Norm"].progress_apply(
                 lambda area: norm_loc.get_gadm_gid(country=area) if area else []
             )
             if location_col in sub_event.columns:
@@ -460,7 +457,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                     ]
                 ] = (
                     sub_event[f"{location_col}_Tmp"]
-                    .parallel_apply(
+                    .progress_apply(
                         lambda x: (
                             (
                                 [i[0] for i in x],
@@ -477,7 +474,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                 sub_event.drop(columns=[f"{location_col}_Tmp"], inplace=True)
                 logger.info(f"Getting GID from GADM for locations in {level} {col}")
 
-                sub_event[f"{location_col}_GID"] = sub_event.parallel_apply(
+                sub_event[f"{location_col}_GID"] = sub_event.progress_apply(
                     lambda row: (
                         [
                             (
@@ -496,7 +493,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
         rows_before = sub_event.shape[0]
         null_mask = (
             sub_event[[x for x in sub_event.columns if x != "Event_ID"]]
-            .parallel_apply(lambda row: [True if v in (None, [], float("nan")) else False for _, v in row.items()])
+            .progress_apply(lambda row: [True if v in (None, [], float("nan")) else False for _, v in row.items()])
             .all(axis=1)
         )
         sub_event = sub_event[~null_mask]
