@@ -13,7 +13,7 @@ from Database.scr.normalize_utils import NormalizeUtils
 
 tqdm.pandas()
 
-pandarallel.initialize(progress_bar=True, nb_workers=5)
+pandarallel.initialize(progress_bar=True, nb_workers=10)
 
 
 def infer_countries(
