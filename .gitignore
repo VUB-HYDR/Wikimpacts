@@ -14,9 +14,10 @@
 **/*.jsonl
 
 
-# ... except for this excel file (gold flat-format annotation table)
+# ... except for this excel file (gold flat-format annotation table) and currency conversion table
 !Database/gold/ImpactDB_DataTable_Validation.xlsx
-
+!Database/data/Currency_Conversion.xlsx
+!Database/data/Currency_conversion_yearly_averages.xlsx
 # ignore pycache
 **/__pycache__
 
