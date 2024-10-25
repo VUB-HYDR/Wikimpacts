@@ -2,7 +2,7 @@ CREATE TABLE Total_Summary (
     Event_ID TEXT PRIMARY KEY NOT NULL CHECK (length(Event_ID) == 7), /* COMMENT 'UID' */
     Event_Names OBJECT NOT NULL, /* COMMENT 'Array' */
     Sources OBJECT NOT NULL, /* COMMENT 'Array' */
-    Main_Event TEXT NOT NULL, /* COMMENT 'Categorical' */
+    Main_Event TEXT NOT NULL CHECK (Main_Event IN ("Flood", "Extratropical Storm/Cyclone", "Tropical Storm/Cyclone", "Extreme Temperature", "Drought", "Wildfire", "Tornado",)); /* COMMENT 'Categorical' */
     Hazards OBJECT NOT NULL, /* COMMENT 'Array', categorical */
 
     Administrative_Areas_Norm OBJECT NOT NULL, /* COMMENT 'Array' of TEXT/NULL */
