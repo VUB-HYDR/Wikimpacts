@@ -616,9 +616,9 @@ class CategoricalValidation:
             "Wildfire",
         ]
 
-    def validate_categorical(self, text: str, categories: list = []) -> str:
+    def validate_categorical(self, text: str, categories: list = []) -> str | None:
         try:
-            cat_idx = [x.lower() for x in categories].index(text)
+            cat_idx = [x.lower() for x in categories].index(text.lower())
             return categories[cat_idx]
         except BaseException as err:
             self.logger.warning(f"Value `{text}` may be invalid for this category. Error: {err}")

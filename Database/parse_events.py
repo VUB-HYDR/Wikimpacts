@@ -231,10 +231,12 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
             lambda hazard_list: [
                 y
                 for y in [
-                    validation.validate_categorical(x, categories=validation.hazards_categories) for x in hazard_list
+                    validation.validate_categorical(h, categories=validation.hazards_categories) for h in hazard_list
                 ]
                 if y
             ]
+            if hazard_list
+            else None
         )
 
     if "Main_Event" in events.columns:
