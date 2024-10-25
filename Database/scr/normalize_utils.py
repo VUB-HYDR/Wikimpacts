@@ -618,8 +618,8 @@ class CategoricalValidation:
 
     def validate_categorical(self, text: str, categories: list = []) -> str:
         try:
-            cat_idx = [x.lower() for x in categories].index()
+            cat_idx = [x.lower() for x in categories].index(text)
             return categories[cat_idx]
         except BaseException as err:
-            self.logger.warning(f"Value may be invalid for this category. Error: {err}")
+            self.logger.warning(f"Value `{text}` may be invalid for this category. Error: {err}")
             return
