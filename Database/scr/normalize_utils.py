@@ -590,3 +590,36 @@ class GeoJsonUtils:
             self.logger.debug(f"Could not process GeoJson to file. Error: {err}")
             return None
         return nid
+
+
+class CategoricalValidation:
+    def __init__(self):
+        self.logger = Logging.get_logger("categorical-validation-utils")
+        self.main_event_categories = [
+            "Flood",
+            "Extratropical Storm/Cyclone",
+            "Tropical Storm/Cyclone",
+            "Extreme Temperature",
+            "Drought",
+            "Wildfire",
+            "Tornado",
+        ]
+        self.hazards_categories = [
+            "Wind",
+            "Flood",
+            "Blizzard",
+            "Hail",
+            "Drought",
+            "Heatwave",
+            "Lightning",
+            "Cold Spell",
+            "Wildfire",
+        ]
+
+    def validate_categorical(self, text: str, categories: list = []) -> str:
+        try:
+            cat_idx = [x.lower() for x in categories].index()
+            return categories[cat_idx]
+        except BaseException as err:
+            self.logger.warning(f"Value may be invalid for this category. Error: {err}")
+            return
