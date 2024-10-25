@@ -616,7 +616,7 @@ class CategoricalValidation:
             "Wildfire",
         ]
 
-    def validate_categorical(self, text: str, categories: list = []) -> str | None:
+    def validate_categorical(self, text: str, categories: list) -> str | None:
         try:
             cat_idx = [x.lower() for x in categories].index(text.lower())
             return categories[cat_idx]

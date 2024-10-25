@@ -225,9 +225,10 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
             lambda x: ([x.strip()] if isinstance(x, str) else ([y.strip() for y in x]) if isinstance(x, list) else None)
         )
 
-    logger.info("STEP: Validation of Categorical Types")
-    if "Hazards" in events.columns:
-        events["Hazards"] = events["Hazards"].apply(
+    hazards, main_event = "Hazards", "Main_Event"
+    if hazards in events.columns:
+        logger.info(f"STEP: Validation of Categorical Types for col {hazards}")
+        events[hazards] = events[hazards].apply(
             lambda hazard_list: [
                 y
                 for y in [
@@ -239,9 +240,12 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
             else None
         )
 
-    if "Main_Event" in events.columns:
-        events["Main_Event"] = events["Main_Event"].apply(
-            lambda main_event: validation.validate_categorical(main_event, categories=validation.main_event_categories)
+    if main_event in events.columns:
+        logger.info(f"STEP: Validation of Categorical Types for col {main_event}")
+        events[main_event] = events[main_event].apply(
+            lambda main_event_type: validation.validate_categorical(
+                main_event_type, categories=validation.main_event_categories
+            )
         )
 
     logger.info("Converting annotation columns to strings to store in sqlite3")
