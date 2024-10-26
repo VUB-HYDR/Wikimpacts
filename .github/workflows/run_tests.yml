@@ -18,6 +18,13 @@ jobs:
           fetch-depth: 0
         env:
           GIT_LFS_SKIP_SMUDGE: 1
+          steps:
+      - name: Install poetry
+        run: |
+            curl -O -sSL https://install.python-poetry.org/install-poetry.py
+            python install-poetry.py -y --version 1.1.12
+            echo "PATH=${HOME}/.poetry/bin:${PATH}" >> $GITHUB_ENV
+            rm install-poetry.py
       - name: Set up Python 3.11
         uses: actions/setup-python@v2.3.1
         with:
@@ -25,7 +32,6 @@ jobs:
           cache: poetry
       - name: Install dependencies
         run: |
-          python3 -m pip install -U pip poetry
           poetry --version
           poetry check --no-interaction
           poetry config virtualenvs.in-project true
