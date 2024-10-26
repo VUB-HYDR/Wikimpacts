@@ -37,8 +37,8 @@ jobs:
           poetry install --no-interaction
       - name: Pull LFS files for testing
         run: git lfs pull --include "Database/data/*"
-        timeout-minutes: 30
+        timeout-minutes: 60
         env:
-          GIT_TRACE: 1
+          GIT_TRACE: 0
       - name: Run tests
         run: poetry run pytest -ra -s tests
