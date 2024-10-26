@@ -35,8 +35,12 @@ jobs:
           poetry check --no-interaction
           poetry config virtualenvs.in-project true
           poetry install --no-interaction
-      - name: Pull LFS files for testing
-        run: git lfs pull --include "Database/data/*"
+      - name: Cache git lfs
+        uses: actions/cache@v1.1.0
+        with:
+          path: .git/lfs
+      - name: Pull LFS files for testing, if not cached
+        run: git lfs pull --include "Database/data/*.csv"
         timeout-minutes: 60
         env:
           GIT_TRACE: 1
