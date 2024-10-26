@@ -16,6 +16,8 @@ jobs:
       - uses: actions/checkout@v2.4.0
         with:
           fetch-depth: 0
+        env:
+          GIT_LFS_SKIP_SMUDGE: 1
       - name: Set up Python 3.11
         uses: actions/setup-python@v2.3.1
         with:
@@ -35,10 +37,6 @@ jobs:
           poetry check --no-interaction
           poetry config virtualenvs.in-project true
           poetry install --no-interaction
-      - name: Cache git lfs
-        uses: actions/cache@v1.1.0
-        with:
-          path: .git/lfs
       - name: Pull LFS files for testing, if not cached
         run: git lfs pull --include "Database/data/*.csv"
         timeout-minutes: 60
