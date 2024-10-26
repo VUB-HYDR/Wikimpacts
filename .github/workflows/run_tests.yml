@@ -29,7 +29,6 @@ jobs:
         uses: actions/setup-python@v2.3.1
         with:
           python-version: 3.11
-          cache: poetry
       - name: Install dependencies
         run: |
           poetry --version
