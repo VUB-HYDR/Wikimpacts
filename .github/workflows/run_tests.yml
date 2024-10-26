@@ -37,8 +37,13 @@ jobs:
           poetry check --no-interaction
           poetry config virtualenvs.in-project true
           poetry install --no-interaction
-      - name: Pull LFS files for testing, if not cached
-        run: git lfs pull --include "Database/data/*.csv"
+      - name: Pull LFS (GADM) files for unit tests
+        run: git lfs pull --include "Database/data/gadm_world.csv"
+        timeout-minutes: 60
+        env:
+          GIT_TRACE: 1
+      - name: Pull LFS (UNSD) files for unit tests
+        run: git lfs pull --include "Database/data/UNSD — Methodology.csv"
         timeout-minutes: 60
         env:
           GIT_TRACE: 1
