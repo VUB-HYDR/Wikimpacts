@@ -22,7 +22,7 @@ jobs:
           python-version: 3.11
       - id: cache-dependencies
         name: Cache dependencies
-        uses: actions/cache@v2.1.7
+        uses: actions/cache@v4.1.2
         with:
           path: ${{ github.workspace }}/.venv
           key: dependencies-${{ hashFiles('**/poetry.lock') }}
@@ -39,6 +39,6 @@ jobs:
         run: git lfs pull --include "Database/data/*"
         timeout-minutes: 60
         env:
-          GIT_TRACE: 0
+          GIT_TRACE: 1
       - name: Run tests
         run: poetry run pytest -ra -s tests
