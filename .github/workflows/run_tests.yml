@@ -35,8 +35,16 @@ jobs:
           poetry check --no-interaction
           poetry config virtualenvs.in-project true
           poetry install --no-interaction
+      - id: cache-lfs
+        name: Cache LFS files
+        uses: actions/cache@v2.1.7
+        with:
+          path: ${{ github.workspace }}/.lfs
+          key: lfs-${{ hashFiles('Database/data/*.csv') }}
+          restore-keys: lfs-
       - name: Pull LFS files for testing
-        run: git lfs pull --include "Database/data/*"
+        if: steps.cache-lfs.cache-hit != 'true'
+        run: git lfs pull --include "Database/data/*.csv"
         env:
           GIT_TRACE: 1
       - name: Run tests
