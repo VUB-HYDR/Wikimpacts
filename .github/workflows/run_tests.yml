@@ -15,7 +15,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: pipx install poetry==1.8.3
-      - run: echo "/root/.local/bin" >> $GITHUB_PATH
       - uses: actions/setup-python@v5
         with:
           python-version: 3.11
@@ -35,4 +34,4 @@ jobs:
         env:
           GIT_TRACE: 1
       - name: Run tests
-        run: poetry run pytest -ra -s tests
+        run: poetry run pytest -ra -s tests -vv
