@@ -13,15 +13,11 @@ jobs:
     name: Run Tests
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.4.0
-        with:
-          fetch-depth: 0
-        env:
-          GIT_LFS_SKIP_SMUDGE: 1
-      - name: Checkout code
+      - name: Checkout code with lfs caching
         uses: nschloe/action-cached-lfs-checkout@v1
         with:
           include: "Database/data/.*csv"
+          fetch-depth: 0
         env:
           GIT_TRACE: 0
       - name: Install poetry@1.8.3
