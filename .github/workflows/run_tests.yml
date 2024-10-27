@@ -33,6 +33,6 @@ jobs:
       - name: Run location normalization unit tests
         run: poetry run pytest -ra -s tests/test_normalize_locations.py -vv
       - name: Run number normalization unit tests
-        run: poetry run pytest -ra -s tests/test_normalize_numbers.py.py -vv
+        run: poetry run pytest -ra -s tests/test_normalize_numbers.py -vv
       - name: Run l2/l3 matcher unit tests
         run: poetry run pytest -ra -s tests/test_specific_instance_matcher.py -vv
