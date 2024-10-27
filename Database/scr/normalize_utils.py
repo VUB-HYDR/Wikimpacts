@@ -595,15 +595,16 @@ class GeoJsonUtils:
 class CategoricalValidation:
     def __init__(self):
         self.logger = Logging.get_logger("categorical-validation-utils")
-        self.main_event_categories = [
-            "Flood",
-            "Extratropical Storm/Cyclone",
-            "Tropical Storm/Cyclone",
-            "Extreme Temperature",
-            "Drought",
-            "Wildfire",
-            "Tornado",
-        ]
+        self.main_event_categories = {
+            "Flood": ["Flood"],
+            "Extratropical Storm/Cyclone": ["Wind", "Flood", "Blizzard", "Hail"],
+            "Tropical Storm/Cyclone": ["Wind", "Flood", "Lightning"],
+            "Extreme Temperature": ["Heatwave", "Cold Spell"],
+            "Drought": ["Drought"],
+            "Wildfire": ["Wildfire"],
+            "Tornado": ["Wind"],
+        }
+
         self.hazards_categories = [
             "Wind",
             "Flood",
@@ -623,3 +624,13 @@ class CategoricalValidation:
         except BaseException as err:
             self.logger.warning(f"Value `{text}` may be invalid for this category. Error: {err}")
             return
+
+    def validate_main_event_hazard_relation(
+        self, row: dict, hazards: str = "Hazards", main_event: str = "Main_Event"
+    ) -> dict:
+        try:
+            related_hazards = [x for x in self.main_event_categories[row[main_event]]]
+            row[hazards] = list(set([h for h in row[hazards] if h.lower() in [x.lower() for x in related_hazards]]))
+        except BaseException as err:
+            self.logger.error(f"Could not validate relationship between {hazards} and {main_event}. Error: {err}")
+        return row

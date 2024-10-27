@@ -242,11 +242,14 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
 
     if main_event in events.columns:
         logger.info(f"STEP: Validation of Categorical Types for col {main_event}")
-        events[main_event] = events[main_event].apply(
+        events[main_event] = events[main_event].progress_apply(
             lambda main_event_type: validation.validate_categorical(
-                main_event_type, categories=validation.main_event_categories
+                main_event_type, categories=list(validation.main_event_categories.keys())
             )
         )
+    if all([x in events.columns for x in [hazards, main_event]]):
+        logger.info(f"STEP: Validation relationship between col {hazards} and col {main_event}")
+        events = events.progress_apply(lambda row: validation.validate_main_event_hazard_relation(row), axis=1)
 
     logger.info("Converting annotation columns to strings to store in sqlite3")
     annotation_cols = [col for col in events.columns if col.endswith(("_with_annotation", "_Annotation"))]
