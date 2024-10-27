@@ -13,28 +13,15 @@ jobs:
     name: Run Tests
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.4.0
-        with:
-          fetch-depth: 1
-      - name: Set up Python 3.11
-        uses: actions/setup-python@v2.3.1
+      - uses: actions/checkout@v4
+      - run: pipx install poetry==1.8.3
+      - run: echo "/root/.local/bin" >> $GITHUB_PATH
+      - uses: actions/setup-python@v5
         with:
           python-version: 3.11
-      - id: cache-dependencies
-        name: Cache dependencies
-        uses: actions/cache@v2.1.7
-        with:
-          path: ${{ github.workspace }}/.venv
-          key: dependencies-${{ hashFiles('**/poetry.lock') }}
-          restore-keys: dependencies-
-      - name: Install dependencies
-        if: steps.cache-dependencies.cache-hit != 'true'
-        run: |
-          python3 -m pip install -U pip poetry
-          poetry --version
-          poetry check --no-interaction
-          poetry config virtualenvs.in-project true
-          poetry install --no-interaction
+          cache: poetry
+      - run: pipx install poetry==1.8.3
+      - run: poetry install
       - id: cache-lfs
         name: Cache LFS files
         uses: actions/cache@v2.1.7
