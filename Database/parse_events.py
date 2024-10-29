@@ -542,6 +542,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
         del rows_before, rows_after
         logger.info(f"Storing parsed results for subevent {col}")
         if target_columns:
+            logger.info(f"Storing the following target columns for {col} {level}: {target_columns}")
             sub_event = sub_event[[x for x in target_columns if x in sub_event.columns]]
         logger.info(f"Normalizing nulls for {level} {col}")
         sub_event = utils.replace_nulls(sub_event)
