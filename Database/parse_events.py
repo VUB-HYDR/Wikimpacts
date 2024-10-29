@@ -8,7 +8,7 @@ from tqdm import tqdm
 from Database.scr.log_utils import Logging
 from Database.scr.normalize_locations import NormalizeLocation
 from Database.scr.normalize_numbers import NormalizeNumber
-from Database.scr.normalize_utils import NormalizeUtils
+from Database.scr.normalize_utils import CategoricalValidation, NormalizeUtils
 
 tqdm.pandas()
 
@@ -224,6 +224,33 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
         events["Event_Names"] = events[event_name_col].progress_apply(
             lambda x: ([x.strip()] if isinstance(x, str) else ([y.strip() for y in x]) if isinstance(x, list) else None)
         )
+
+    hazards, main_event = "Hazards", "Main_Event"
+    if hazards in events.columns:
+        logger.info(f"STEP: Validation of Categorical Types for col {hazards}")
+        events[hazards] = events[hazards].apply(
+            lambda hazard_list: [
+                y
+                for y in [
+                    validation.validate_categorical(h, categories=validation.hazards_categories) for h in hazard_list
+                ]
+                if y
+            ]
+            if hazard_list
+            else None
+        )
+
+    if main_event in events.columns:
+        logger.info(f"STEP: Validation of Categorical Types for col {main_event}")
+        events[main_event] = events[main_event].progress_apply(
+            lambda main_event_type: validation.validate_categorical(
+                main_event_type, categories=list(validation.main_event_categories.keys())
+            )
+        )
+    if all([x in events.columns for x in [hazards, main_event]]):
+        logger.info(f"STEP: Validation relationship between col {hazards} and col {main_event}")
+        events = events.progress_apply(lambda row: validation.validate_main_event_hazard_relation(row), axis=1)
+
     logger.info("Converting annotation columns to strings to store in sqlite3")
     annotation_cols = [col for col in events.columns if col.endswith(("_with_annotation", "_Annotation"))]
 
@@ -702,6 +729,7 @@ if __name__ == "__main__":
     pathlib.Path(args.output_dir).mkdir(parents=True, exist_ok=True)
 
     utils = NormalizeUtils()
+    validation = CategoricalValidation()
     nlp = utils.load_spacy_model(args.spaCy_model_name)
 
     norm_num = NormalizeNumber(nlp, locale_config=args.locale_config)
