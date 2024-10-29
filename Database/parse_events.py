@@ -354,17 +354,14 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                 )
             )
         logger.info(f"Normalizing dates for subevet {col}")
-        start_date_col, end_date_col = [c for c in sub_event.columns if col.startswith("Start_Date")], [
-            c for c in sub_event.columns if col.startswith("End_Date")
-        ]
-        assert len(start_date_col) == len(end_date_col), "Check the start and end date columns"
-        assert len(start_date_col) <= 1, "Check the start and end date columns, there might be too many"
-
-        if start_date_col and end_date_col:
-            logger.info(f"Normalizing start and end date in columns {start_date_col} and {end_date_col}")
-            start_date_col, end_date_col = start_date_col[0], end_date_col[0]
+        start_date_col, end_date_col = (
+            "Start_Date" if "Start_Date" in sub_event.columns else None,
+            "End_Date" if "End_Date" in sub_event.columns else None,
+        )
+        concat_list = [sub_event]
+        if start_date_col:
+            logger.info(f"Normalizing start date column {start_date_col}")
             start_dates = sub_event[start_date_col].progress_apply(utils.normalize_date)
-            end_dates = sub_event[end_date_col].progress_apply(utils.normalize_date)
             start_date_cols = pd.DataFrame(
                 start_dates.to_list(),
                 columns=[
@@ -373,6 +370,11 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                     f"{start_date_col}_Year",
                 ],
             )
+            concat_list.append(start_date_cols)
+
+        if start_date_col:
+            logger.info(f"Normalizing end date column {end_date_col}")
+            end_dates = sub_event[end_date_col].progress_apply(utils.normalize_date)
             end_date_cols = pd.DataFrame(
                 end_dates.to_list(),
                 columns=[
@@ -381,8 +383,10 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                     f"{end_date_col}_Year",
                 ],
             )
-            sub_event.reset_index(inplace=True, drop=True)
-            sub_event = pd.concat([sub_event, start_date_cols, end_date_cols], axis=1)
+            concat_list.append(end_date_cols)
+        sub_event.reset_index(inplace=True, drop=True)
+        sub_event = pd.concat(concat_list, axis=1)
+        del concat_list
 
         if level == "l2" and administrative_area_col in sub_event.columns:
             logger.info(f"Normalizing nulls in {administrative_area_col} for {level} {col}")
