@@ -99,7 +99,7 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
     for str_col in [x for x in events.columns if x in split_by_pipe_cols]:
         logger.info(f"Splitting column {str_col} by pipe")
         events[str_col] = events[str_col].progress_apply(
-            lambda x: (x.split("|") if isinstance(x, str) else (x if isinstance(x, str) else None))
+            lambda x: (x.split("|") if isinstance(x, str) else (x if isinstance(x, str) else []))
         )
 
     logger.info("STEP: Normalizing country-level administrative areas if present")
@@ -113,7 +113,7 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
         logger.info("Normalizing administrative areas...")
         events[f"{admin_area_col}_Tmp"] = events["Administrative_Areas"].progress_apply(
             lambda admin_areas: (
-                [norm_loc.normalize_locations(c, is_country=True) for c in admin_areas]
+                [norm_loc.normalize_locations(area=c, is_country=True) for c in admin_areas]
                 if isinstance(admin_areas, list)
                 else []
             )
@@ -222,7 +222,7 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
     if len(event_name_col) == 1:
         event_name_col = event_name_col[0]
         events["Event_Names"] = events[event_name_col].progress_apply(
-            lambda x: ([x.strip()] if isinstance(x, str) else ([y.strip() for y in x]) if isinstance(x, list) else None)
+            lambda x: ([x.strip()] if isinstance(x, str) else ([y.strip() for y in x]) if isinstance(x, list) else [])
         )
 
     hazards, main_event = "Hazards", "Main_Event"
@@ -260,7 +260,7 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
         f"{args.output_dir}/l1",
         200,
     )
-    del total_summary_cols, annotation_cols, total_cols
+    del total_summary_cols, total_cols
     return events
 
 
@@ -388,6 +388,10 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
             sub_event = pd.concat([sub_event, start_date_cols, end_date_cols], axis=1)
 
         if level == "l2" and administrative_area_col in sub_event.columns:
+            logger.info(f"Normalizing nulls in {administrative_area_col} for {level} {col}")
+            sub_event[administrative_area_col] = sub_event[administrative_area_col].progress_apply(
+                lambda admin_areas: utils.clean_list_from_nulls(admin_areas) if isinstance(admin_areas, list) else []
+            )
             logger.info(f"Normalizing administrative area names for {level} {col}")
             sub_event[f"{administrative_area_col}_Tmp"] = sub_event[administrative_area_col].progress_apply(
                 lambda admin_areas: (
@@ -437,6 +441,10 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
             )
 
         elif level == "l3" and administrative_area_col in sub_event.columns:
+            logger.info(f"Normalizing nulls in {administrative_area_col} for {level} {col}")
+            sub_event[administrative_area_col] = sub_event[administrative_area_col].apply(
+                lambda admin_area: utils.clean_single_value_from_null(admin_area)
+            )
             sub_event[
                 [
                     f"{administrative_area_col}_Norm",
@@ -460,6 +468,10 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                 lambda area: norm_loc.get_gadm_gid(country=area) if area else []
             )
             if location_col in sub_event.columns:
+                logger.info(f"Normalizing nulls in {location_col} for {level} {col}")
+                sub_event[location_col] = sub_event[location_col].progress_apply(
+                    lambda locations: utils.clean_list_from_nulls(locations) if isinstance(locations, list) else []
+                )
                 logger.info(f"Normalizing location names for {level} {col}")
                 sub_event[f"{location_col}_Tmp"] = sub_event.progress_apply(
                     lambda row: (
@@ -528,14 +540,12 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
         logger.info(f"Dropped {rows_before-rows_after} row(s) in {col}")
         del rows_before, rows_after
         logger.info(f"Storing parsed results for subevent {col}")
-        for c in sub_event.columns:
-            sub_event[c] = sub_event[c].astype(str)
         if target_columns:
             sub_event = sub_event[[x for x in target_columns if x in sub_event.columns]]
+        logger.info(f"Normalizing nulls for {level} {col}")
+        sub_event = utils.replace_nulls(sub_event)
         utils.df_to_parquet(
-            sub_event,
-            target_dir=f"{args.output_dir}/{level}/{col}",
-            chunk_size=200,
+            sub_event, target_dir=f"{args.output_dir}/{level}/{col}", chunk_size=200, object_encoding="infer"
         )
 
 

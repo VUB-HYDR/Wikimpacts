@@ -133,6 +133,29 @@ class NormalizeUtils:
             return None
 
     @staticmethod
+    def clean_list_from_nulls(lst: list) -> list:
+        new_list = []
+        for l in lst:
+            if isinstance(l, str):
+                if l.lower().strip() in ["null", "none"]:
+                    new_list.append(None)
+            elif l == float("nan"):
+                new_list.append(None)
+            else:
+                new_list.append(l)
+        return new_list
+
+    @staticmethod
+    def clean_single_value_from_null(l: str | None) -> str:
+        if isinstance(l, str):
+            if l.lower().strip() in ["null", "none"]:
+                return None
+        elif l == float("nan"):
+            return None
+        else:
+            return l
+
+    @staticmethod
     def simple_country_check(c: str):
         try:
             exists = pycountry.countries.search_fuzzy(c)[0].official_name
