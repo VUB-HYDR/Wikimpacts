@@ -251,9 +251,6 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
         logger.info(f"STEP: Validation relationship between col {hazards} and col {main_event}")
         events = events.progress_apply(lambda row: validation.validate_main_event_hazard_relation(row), axis=1)
 
-    logger.info("Converting annotation columns to strings to store in sqlite3")
-    annotation_cols = [col for col in events.columns if col.endswith(("_with_annotation", "_Annotation"))]
-
     logger.info(f"Storing parsed results for l1 events. Target columns: {target_columns}")
     utils.df_to_parquet(
         events[[x for x in target_columns if x in events.columns]],
