@@ -140,8 +140,9 @@ class NormalizeLocation:
 
     def normalize_locations(
         self, area: str, is_country: bool = False, in_country: str = None
-    ) -> tuple[str, str, dict] | None:
+    ) -> tuple[str, str | None, dict | None]:
         """Queries a geocode service for a location (country or smaller) and returns the top result"""
+        original_area = area
         try:
             try:
                 if area:
@@ -164,7 +165,7 @@ class NormalizeLocation:
             unsd_search_output = self._get_unsd_region(area, return_name=True) if area and is_country else None
             if unsd_search_output:
                 # TODO: add geojson for unsd regions
-                return [unsd_search_output, "UNSD region", None]
+                return [unsd_search_output.title(), "UNSD region", None]
 
             area = area.lower().strip()
             if "_" in area:
@@ -336,7 +337,7 @@ class NormalizeLocation:
                 f"Could not find location {area}; is_country: {is_country}; in_country: {in_country}. Error message: {err}."
             )
             # return un-normalized area name
-            return (area, None, None)
+            return (original_area, None, None)
 
     def _get_unsd_region(
         self, area, fuzzy_match_n: int = 1, fuzzy_match_cuttoff: float = 0.8, return_name: bool = False
