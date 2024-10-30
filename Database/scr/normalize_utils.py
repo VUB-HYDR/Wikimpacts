@@ -139,7 +139,7 @@ class NormalizeUtils:
             if isinstance(l, str):
                 if l.lower().strip() not in ["null", "none"]:
                     new_list.append(l)
-            elif l == float("nan"):
+            elif l == float("nan") or l is None:
                 pass
             else:
                 new_list.append(l)
@@ -150,7 +150,7 @@ class NormalizeUtils:
         if isinstance(l, str):
             if l.lower().strip() in ["null", "none"]:
                 return None
-        elif l == float("nan"):
+        if l == float("nan") or l is None:
             return None
         else:
             return l
