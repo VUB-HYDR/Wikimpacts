@@ -268,7 +268,7 @@ class NormalizeNumber:
 
         return text
 
-    def _extract_single_number(self, text: str) -> List[float] | BaseException:
+    def _extract_single_number(self, text: str) -> List[float | None] | BaseException:
         number = None
 
         for z in self.zero_phrases:
@@ -478,7 +478,7 @@ class NormalizeNumber:
 
             return 0
 
-    def _extract_simple_range(self, text: str) -> Tuple[float]:
+    def _extract_simple_range(self, text: str) -> Tuple[float, float] | None:
         sep = "-"
         for i in ("and", "to", "&"):
             if i in text:
@@ -500,6 +500,7 @@ class NormalizeNumber:
                     return (self.atof(nums[0].strip()), self.atof(nums[1].strip()))
                 except:
                     return None
+        return None
 
     def _get_scale(self, n_init: float | int):
         """
@@ -508,6 +509,7 @@ class NormalizeNumber:
         n = int(n_init) if isinstance(n_init, float) and n_init.is_integer() else n_init
         abs_n = abs(n)
         n_str = str(abs_n)
+        scale = 0
 
         if isinstance(n, int):
             # Check if the last digit is zero
@@ -556,12 +558,12 @@ class NormalizeNumber:
                             num = self._extract_single_number(" ".join(norm_text))[0]
                         except BaseException as err:
                             self.logger.error(f"Could not infer number from {norm_text}. Error: {err}")
-                            return
+                            return None
                     else:
                         if len(digits) == 1:
                             num = digits[0]
                         else:
-                            return
+                            return None
                     lower_mod, upper_mod = (
                         (3, 5)
                         if any([x in [y.lower() for y in text.split()] for x in self.family_synonyms])
@@ -581,6 +583,7 @@ class NormalizeNumber:
                             max(0, n - scale - inc) * lower_mod,
                             max(0, n - inc) * upper_mod,
                         )
+        return None
 
     def _extract_approximate_quantifiers(self, text: str) -> Tuple[float, float] | None:
         one, ten, hun, tho, mil, bil, tri = (
