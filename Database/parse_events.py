@@ -220,8 +220,8 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
     logger.info("Cleaning event names...")
     event_name_col = [x for x in events.columns if "Event_Name" in x]
     if len(event_name_col) == 1:
-        event_name_col = event_name_col[0]
-        events["Event_Names"] = events[event_name_col].progress_apply(
+        event_name_col_str: str = event_name_col[0]
+        events["Event_Names"] = events[event_name_col_str].progress_apply(
             lambda x: ([x.strip()] if isinstance(x, str) else ([y.strip() for y in x]) if isinstance(x, list) else [])
         )
 
@@ -391,7 +391,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
         if level == "l2" and administrative_area_col in sub_event.columns:
             logger.info(f"Normalizing nulls in {administrative_area_col} for {level} {col}")
             sub_event[administrative_area_col] = sub_event[administrative_area_col].progress_apply(
-                lambda admin_areas: utils.clean_list_from_nulls(admin_areas) if isinstance(admin_areas, list) else []
+                lambda admin_areas: utils.filter_null_list(admin_areas) if isinstance(admin_areas, list) else []
             )
             logger.info(f"Normalizing administrative area names for {level} {col}")
             sub_event[f"{administrative_area_col}_Tmp"] = sub_event[administrative_area_col].progress_apply(
@@ -444,7 +444,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
         elif level == "l3" and administrative_area_col in sub_event.columns:
             logger.info(f"Normalizing nulls in {administrative_area_col} for {level} {col}")
             sub_event[administrative_area_col] = sub_event[administrative_area_col].apply(
-                lambda admin_area: utils.clean_single_value_from_null(admin_area)
+                lambda admin_area: utils.filter_null_str(admin_area)
             )
             sub_event[
                 [
@@ -468,10 +468,11 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
             sub_event[f"{administrative_area_col}_GID"] = sub_event[f"{administrative_area_col}_Norm"].progress_apply(
                 lambda area: norm_loc.get_gadm_gid(country=area) if area else []
             )
+
             if location_col in sub_event.columns:
                 logger.info(f"Normalizing nulls in {location_col} for {level} {col}")
                 sub_event[location_col] = sub_event[location_col].progress_apply(
-                    lambda locations: utils.clean_list_from_nulls(locations) if isinstance(locations, list) else []
+                    lambda locations: utils.filter_null_list(locations) if isinstance(locations, list) else []
                 )
                 logger.info(f"Normalizing location names for {level} {col}")
                 sub_event[f"{location_col}_Tmp"] = sub_event.progress_apply(

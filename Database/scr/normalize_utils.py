@@ -133,7 +133,7 @@ class NormalizeUtils:
             return None
 
     @staticmethod
-    def clean_list_from_nulls(lst: list) -> list:
+    def filter_null_list(lst: list) -> list:
         new_list = []
         for l in lst:
             if isinstance(l, str):
@@ -146,14 +146,13 @@ class NormalizeUtils:
         return new_list
 
     @staticmethod
-    def clean_single_value_from_null(l: str | None) -> str:
+    def filter_null_str(l: str | None) -> str | None:
         if isinstance(l, str):
             if l.lower().strip() in ["null", "none"]:
                 return None
         if l == float("nan") or l is None:
             return None
-        else:
-            return l
+        return l
 
     @staticmethod
     def simple_country_check(c: str):
