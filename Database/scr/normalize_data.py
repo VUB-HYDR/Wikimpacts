@@ -23,6 +23,7 @@ class DataGapUtils:
         l2_categories = [f'{x.split("_Areas_")[-1]}' for x in l2_filenames]
         l3_categories = [f'{x.split("_Area_")[-1]}' for x in l3_filenames]
 
+        self.logger.info("Loading l1 files...")
         l1 = pd.read_parquet(l1_filename, engine="fastparquet")
         l1 = norm_utils.replace_nulls(l1).replace({float("nan"): None})
         l2 = {}
