@@ -160,10 +160,6 @@ class NormalizeLocation:
                     is_country and in_country
                 ), f"An area cannot be a country (is_country={is_country}) and in a country (in_country={in_country}) simultaneously"
 
-                # if area is None, replace by country name
-                area = in_country if not area and in_country else area
-                assert isinstance(area, str), f"Area is {area}; in_country: {in_country}"
-
             except BaseException as err:
                 self.logger.error(err)
                 return (None, None, None)
