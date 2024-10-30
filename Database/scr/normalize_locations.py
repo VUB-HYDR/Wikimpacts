@@ -140,7 +140,7 @@ class NormalizeLocation:
 
     def normalize_locations(
         self, area: str, is_country: bool = False, in_country: str = None
-    ) -> tuple[str, str | None, dict | None]:
+    ) -> tuple[str | None, str | None, dict | None]:
         """Queries a geocode service for a location (country or smaller) and returns the top result"""
         original_area = area
         try:
@@ -346,7 +346,7 @@ class NormalizeLocation:
 
     def _get_unsd_region(
         self, area, fuzzy_match_n: int = 1, fuzzy_match_cuttoff: float = 0.8, return_name: bool = False
-    ) -> list | None:
+    ) -> str | list | None:
         regions = {
             self.region: self.unsd_regions,
             self.subregion: self.unsd_subregions,
@@ -366,6 +366,7 @@ class NormalizeLocation:
                         if return_name
                         else self.unsd.loc[self.unsd[level] == fuzzy_area_match[0]][self.iso].unique().tolist()
                     )
+        return None
 
     @cache
     def _get_american_area(self, area: str) -> list | None:
@@ -442,9 +443,9 @@ class NormalizeLocation:
     @cache
     def get_gadm_gid(
         self,
-        area: str = None,
-        country: str = None,
-    ) -> str:
+        area: str | None = None,
+        country: str | None = None,
+    ) -> list:
         # remove cardinals when getting gid
         # TODO: this should probably be handled by something other than symbols in strings, fix
         country = country.split(":")[0] if country and ":" in country else country
@@ -458,6 +459,7 @@ class NormalizeLocation:
             return unsd_search_output
 
         # find US-areas: country, states, and counties
+        us_search: str | None = None
         if country and not area:
             us_search = country
         elif area and not country:
@@ -531,7 +533,7 @@ class NormalizeLocation:
                     )
         return []
 
-    def get_gid_0(self, gid: str) -> str:
+    def get_gid_0(self, gid: str) -> str | None:
         """Returns a country name by GID_0"""
         try:
             assert len(gid) == 3
@@ -539,12 +541,12 @@ class NormalizeLocation:
             assert len(gid_0) == 1
             return gid_0[0]
         except:
-            None
+            return None
 
     @staticmethod
     def extract_locations(
         text: str,
-    ) -> tuple[list[str]]:
+    ) -> tuple[list[str]] | tuple[list, list]:
         """
         Extracts countries and sublocations from the '|, &' string format
         Example:
