@@ -8,7 +8,7 @@ import pandas as pd
 from pandarallel import pandarallel
 from tqdm import tqdm
 
-from Database.scr.normalize_utils import GeoJsonUtils, Logging
+from Database.scr.normalize_utils import GeoJsonUtils, Logging, NormalizeUtils
 
 pandarallel.initialize(progress_bar=False, nb_workers=5)
 
@@ -110,6 +110,7 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     logger = Logging.get_logger(f"database-insertion", level="INFO", filename="v1_full_run_insertion_raw.log")
+    utils = NormalizeUtils()
 
     connection = sqlite3.connect(args.database_name)
     cursor = connection.cursor()
@@ -190,6 +191,7 @@ if __name__ == "__main__":
 
         for f in tqdm(files, desc="Files"):
             data = pd.read_parquet(f"{args.file_dir}/{f}", engine="fastparquet")
+            data = utils.replace_nulls(data)
 
             logger.info("Converting everything to strings...")
             for c in data.columns:
@@ -261,5 +263,5 @@ if __name__ == "__main__":
         )
         logger.error(f"Insert errors were found! THIS ROW WAS NOT INSERTED! Storing in {tmp_errors_filename}")
         pathlib.Path(args.error_path).mkdir(parents=True, exist_ok=True)
-        errors.to_json(tmp_errors_filename, orient="records")
+        errors.to_json(tmp_errors_filename, orient="records", indent=3)
     connection.close()
