@@ -146,16 +146,19 @@ class NormalizeLocation:
         try:
             try:
                 if area:
-                    assert isinstance(area, str), f"Area is not a string: {area}"
+                    assert isinstance(area, str), f"Area `{area}` is not a string; type: {type(area)}"
+                if re.match(
+                    "(country|location|area|adminarea|admin|admin_area|administrative area|administrative_area|none|null)(\s)*(s)*[0-9]*$",
+                    area,
+                    flags=re.IGNORECASE,
+                ):
+                    self.logger.error(f"Input `{area}` of type {type(area)} is not a valid area name")
+                    return (None, None, None)
                 if in_country:
                     assert isinstance(in_country, str), f"Country is not a string: {in_country}"
                 assert not (
                     is_country and in_country
                 ), f"An area cannot be a country (is_country={is_country}) and in a country (in_country={in_country}) simultaneously"
-
-                # if area is None, replace by country name
-                area = in_country if not area and in_country else area
-                assert isinstance(area, str), f"Area is {area}; in_country: {in_country}"
 
             except BaseException as err:
                 self.logger.error(err)
