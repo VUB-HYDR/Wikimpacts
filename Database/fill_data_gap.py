@@ -15,11 +15,11 @@ if __name__ == "__main__":
     args = parser.parse_args()
     dg_util = DataGapUtils()
     l1, l2, l3 = dg_util.load_data(input_dir=args.input_dir)
-    event_id, date_split = "Event_ID", "_Date_"
+    event_id, date_year_suffix = "Event_ID", "_Date_Year"
 
     for event_id in list(l1[event_id].unique()):
         replace_with_date = (
-            l1.loc[l1[event_id] == event_id][[x for x in l1.columns if date_split in x]].iloc[0].to_dict()
+            l1.loc[l1[event_id] == event_id][[x for x in l1.columns if date_year_suffix in x]].iloc[0].to_dict()
         )
 
         for level in [l2, l3]:

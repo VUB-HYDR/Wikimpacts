@@ -56,9 +56,9 @@ class DataGapUtils:
 
     @staticmethod
     def fill_date(row: dict, replace_with_date: dict):
-        date_cols = [x for x in row.keys() if "_Date_" in x]
-        if all([True if row[d] is None else False for d in date_cols]):
-            for c in date_cols:
+        year_cols = [x for x in row.keys() if "_Date_Year" in x]
+        if all([True if row[d] is None else False for d in year_cols]):
+            for c in year_cols:
                 row[c] = replace_with_date[c]
         return row
 
