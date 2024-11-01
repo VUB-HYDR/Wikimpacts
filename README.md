@@ -289,9 +289,17 @@ To perform this on the existing dummy data:
 
 ```shell
 # format:
-# source Database/insert_full_run.sh Database/output/dummy SQL_DB PATH_TO_STORE_NIDs
+# source Database/insert_full_run.sh Database/output/dummy SQL_DB PATH_TO_STORE_NIDs DRY_RUN_FLAG SAVE_OUTPUT_FLAG SAVE_OUTPUT_DIR
 
+# normal run (full insertion into the database)
 source Database/insert_full_run.sh Database/output/dummy impact.v1.db tmp/files
+
+# dry run (aka only stores the data after de-duplicating geojson objects)
+source Database/insert_full_run.sh Database/output/dummy impact.v1.db tmp/files --dry_run --save_output Database/output/dummy_deduplciated
+
+# normal run with saving the output (notice that the `-d`/`--dry_run` flag is replaced with an empty string)
+source Database/insert_full_run.sh Database/output/dummy impact.v1.db tmp/files "" --save_outout Database/output/dummy_deduplciated
+
 ```
 
 ### Database-related
