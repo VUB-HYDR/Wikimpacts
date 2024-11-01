@@ -49,25 +49,46 @@ levels=("l1" "l2" "l3")
 inputFilesDir=${1}
 dbName=${2}
 nidPath=${3}
+dryRun=${4}
+saveOutput=${5}
+saveOutputDir=${6}
 
 echo Input: ${inputFilesDir}
-echo Inserting into ${dbName}
+echo Target database: ${dbName} - NOTE: will be ignored if dryRun!
 echo Nids will be stored in ${nidPath}
 
 for lvl in "${levels[@]}"; do
-    echo Inserting ${lvl}
+    echo Processing ${lvl}
+
     if [[ ${lvl} == "l1" ]]
     then
-        poetry run python3 Database/insert_events.py -m append -f ${inputFilesDir}/${lvl} -db ${dbName} -lvl ${lvl} -gj -nid ${nidPath}
+
+        if [[ -n ${saveOutputDir} ]]
+            then
+                saveOutputDirLvl=${saveOutputDir}/${lvl}
+                echo Storing output in ${saveOutputDirLvl}
+        fi
+        poetry run python3 Database/insert_events.py -m append -f ${inputFilesDir}/${lvl} -db ${dbName} -lvl ${lvl} -gj -nid ${nidPath} ${dryRun} ${saveOutput} ${saveOutputDirLvl}
     else
         for filePath in ${inputFilesDir}/${lvl}/*; do
+
             echo File Path ${filePath}
             tblName=$(basename $filePath)
             echo Table Name ${tblName}
-            poetry run python3 Database/insert_events.py -m "append" -f ${filePath}  -db ${dbName} -lvl ${lvl} -t ${tblName} -gj -nid ${nidPath}
+
+            if [[ -n ${saveOutputDir} ]]
+                then
+                    saveOutputDirLvl=${saveOutputDir}/${lvl}/${tblName}
+                    echo Storing output in ${saveOutputDirLvl}
+            fi
+
+            poetry run python3 Database/insert_events.py -m "append" -f ${filePath}  -db ${dbName} -lvl ${lvl} -t ${tblName} -gj -nid ${nidPath} ${dryRun} ${saveOutput} ${saveOutputDirLvl}
         done
     fi
 done
 
-echo Inserting geojson to table GeoJson_Obj
-poetry run python3 Database/schema/populate_geojson_table.py -db ${dbName} -tbl Database/schema/geojson_tbl.sql -f ${nidPath}/geojson
+if [[ ${dryRun} != "-d" && ${dryRun} != "--dry_run"]]
+then
+    echo Inserting geojson to table GeoJson_Obj
+    poetry run python3 Database/schema/populate_geojson_table.py -db ${dbName} -tbl Database/schema/geojson_tbl.sql -f ${nidPath}/geojson
+fi
