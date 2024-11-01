@@ -182,6 +182,9 @@ if __name__ == "__main__":
             # change if_exists to "append" to avoid overwriting the database
             # choose "replace" to overwrite the database with a fresh copy of the data
             if not args.dry_run:
+                for c in data.columns:
+                    data[c] = data[c].astype(str)
+
                 for i in tqdm(range(len(data)), desc=f"Inserting {f} into {args.database_name}"):
                     try:
                         data.iloc[i : i + 1].to_sql(
@@ -251,6 +254,8 @@ if __name__ == "__main__":
             # change if_exists to "append" to avoid overwriting the database
             # choose "replace" to overwrite the database with a fresh copy of the data
             if not args.dry_run:
+                for c in data.columns:
+                    data[c] = data[c].astype(str)
                 for i in tqdm(range(len(data)), desc=f"Inserting {f} into {args.database_name}"):
                     try:
                         data.iloc[i : i + 1].to_sql(
