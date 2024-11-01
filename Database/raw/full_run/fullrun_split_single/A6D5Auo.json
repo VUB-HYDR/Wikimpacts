@@ -1,0 +1,351 @@
+[
+  {
+    "Event_ID": "A6D5Auo",
+    "Sources": "https://en.wikipedia.org/wiki/1954_Pacific_hurricane_season",
+    "Event_Names": "1954 Pacific hurricane season",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "October 12",
+        "End_Date": "October 14",
+        "Num": "thousands",
+        "Annotation": "Tropical Storm Ten"
+      },
+      {
+        "Administrative_Areas": [
+          "Guatemala"
+        ],
+        "Start_Date": "October 12",
+        "End_Date": "October 14",
+        "Num": "thousands",
+        "Annotation": "Tropical Storm Ten"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Panuco",
+          "Revenadero",
+          "coastal towns near Tampico"
+        ],
+        "Start_Date": "October 12",
+        "End_Date": "October 14",
+        "Num": "160; thousands of acres of crops; 5 direct, 35 indirect",
+        "Annotation": "Tropical Storm Ten"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "October 12",
+        "End_Date": "October 14",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm Ten"
+      },
+      {
+        "Administrative_Areas": "Guatemala",
+        "Start_Date": "October 12",
+        "End_Date": "October 14",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm Ten"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Panuco",
+          "Revenadero"
+        ],
+        "Start_Date": "October 12",
+        "End_Date": "October 14",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm Ten"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "coastal towns near Tampico"
+        ],
+        "Start_Date": "October 12",
+        "End_Date": "October 14",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm Ten"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "40",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "October 12",
+        "End_Date": "October 14",
+        "Num": "40",
+        "Annotation": "Tropical Storm Ten"
+      },
+      {
+        "Administrative_Areas": [
+          "Guatemala"
+        ],
+        "Start_Date": "October 12",
+        "End_Date": "October 14",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm Ten"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "coastal towns near Tampico"
+        ],
+        "Start_Date": "October 12",
+        "End_Date": "October 14",
+        "Num": "5",
+        "Annotation": "Tropical Storm Ten"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "unknown locations"
+        ],
+        "Start_Date": "October 12",
+        "End_Date": "October 14",
+        "Num": "35",
+        "Annotation": "Tropical Storm Ten"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "October 12",
+        "End_Date": "October 14",
+        "Num": "160",
+        "Annotation": "Tropical Storm Ten"
+      },
+      {
+        "Administrative_Areas": [
+          "Guatemala"
+        ],
+        "Start_Date": "October 12",
+        "End_Date": "October 14",
+        "Num": "thousands",
+        "Annotation": "Tropical Storm Ten"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Panuco",
+          "Revenadero"
+        ],
+        "Start_Date": "October 12",
+        "End_Date": "October 14",
+        "Num": "160",
+        "Annotation": "Tropical Storm Ten"
+      },
+      {
+        "Administrative_Area": "Guatemala",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "October 12",
+        "End_Date": "October 14",
+        "Num": "thousands",
+        "Annotation": "Tropical Storm Ten"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "October 12",
+        "End_Date": "October 14",
+        "Num": "160",
+        "Annotation": "Tropical Storm Ten"
+      },
+      {
+        "Administrative_Areas": [
+          "Guatemala"
+        ],
+        "Start_Date": "October 12",
+        "End_Date": "October 14",
+        "Num": "thousands",
+        "Annotation": "Tropical Storm Ten"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Panuco",
+          "Revenadero"
+        ],
+        "Start_Date": "October 12",
+        "End_Date": "October 14",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm Ten"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "Mexico",
+          "Guatemala"
+        ],
+        "Start_Date": "October 12",
+        "End_Date": "October 14",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm Ten"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Panuco",
+          "Revenadero"
+        ],
+        "Start_Date": "October 12",
+        "End_Date": "October 14",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm Ten"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Mexico",
+          "Guatemala"
+        ],
+        "Start_Date": "October 12",
+        "End_Date": "October 14",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tropical Storm Ten"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Panuco",
+          "Revenadero"
+        ],
+        "Start_Date": "October 12",
+        "End_Date": "October 14",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tropical Storm Ten"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "Unknown",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Mexico",
+          "Guatemala"
+        ],
+        "Start_Date": "October 12",
+        "End_Date": "October 14",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tropical Storm Ten"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "P\u00e1nuco River",
+          "Panuco",
+          "Revenadero",
+          "Tampico"
+        ],
+        "Start_Date": "October 12",
+        "End_Date": "October 14",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tropical Storm Ten"
+      },
+      {
+        "Administrative_Area": "Guatemala",
+        "Locations": [
+          "Guatemala"
+        ],
+        "Start_Date": "October 12",
+        "End_Date": "October 14",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tropical Storm Ten"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Tropical Storm One|Tropical Storm Ten|Hurricane Three",
+    "Start_Date": "May 15, 1954",
+    "End_Date": "November 30, 1954",
+    "Time_Annotation": "1954 Pacific hurricane season",
+    "Administrative_Areas": [
+      "Mexico",
+      "Guatemala",
+      "United States"
+    ],
+    "Administrative_Areas_Annotation": "1954 Pacific hurricane season"
+  }
+]

@@ -10,22 +10,21 @@ class SpecificInstanceMatcher:
 
     def __init__(self, threshold: float = 0.6, null_penalty: float = 0.5):
         self.logger = Logging.get_logger("specific instance matcher")
-
+        self.logger.info(f"Null penalty: {null_penalty}; Threshold: {threshold}")
         self.threshold = threshold
-        self.int_cat: list[str] = [
-            "Num_Min",
-            "Num_Max",
-            "Adjusted_Year",
-            "Start_Date_Day",
-            "Start_Date_Month",
-            "Start_Date_Year",
-            "End_Date_Day",
-            "End_Date_Month",
-            "End_Date_Year",
-        ]
-        self.bool_cat: list[str] = ["Adjusted"]
-        self.str_cat: list[str] = ["Country_Norm", "Unit"]
-        self.list_cat: list[str] = ["Location_Norm"]
+        self.int_cat: dict[str, int] = {
+            "Num_Min": 1,
+            "Num_Max": 1,
+            "Start_Date_Day": 0.125,
+            "Start_Date_Month": 0.125,
+            "Start_Date_Year": 0.125,
+            "End_Date_Day": 0.125,
+            "End_Date_Month": 0.125,
+            "End_Date_Year": 0.125,
+        }
+        self.bool_cat: list[str] = []
+        self.str_cat: dict[str, int] = {"Administrative_Area_Norm": 1}
+        self.list_cat: dict[str, int] = {"Locations_Norm": 1, "Administrative_Areas_Norm": 1}
 
         self.comp = Comparer(null_penalty, [])
 
@@ -43,19 +42,24 @@ class SpecificInstanceMatcher:
             scores = []
             for k in gold_instance.keys():
                 if k in self.int_cat:
-                    r = self.comp.integer(gold_instance[k], si[k])
-                elif k in self.bool_cat:
-                    r = self.comp.boolean(gold_instance[k], si[k])
+                    # Only include gold_instance[k] from numerical categories
+                    # For monetary categories, gold_instance[k] is a list
+                    # For numerical caterogies, it is always an int (or can be cast to an int)
+                    try:
+                        if isinstance(int(gold_instance[k]), int):
+                            r = self.comp.integer(gold_instance[k], si[k])
+                    except:
+                        pass
                 elif k in self.str_cat:
                     r = self.comp.string(gold_instance[k], si[k])
                 elif k in self.list_cat:
                     r = self.comp.sequence(gold_instance[k], si[k])
                 try:
-                    scores.append(1 - r)
+                    scores.append(1 - (r * self.int_cat[k]))
                     del r
                 except Exception:
                     if k != "Event_ID":
-                        self.logger.warning(f"Unsupported column name: {k} will be ignored during matching.")
+                        self.logger.debug(f"Unsupported column name: {k} will be ignored during matching.")
 
             score_list.append(mean(scores))
 
@@ -132,3 +136,15 @@ class SpecificInstanceMatcher:
                 counter += 1
 
         return (gold, sys)
+
+
+class CurrencyMatcher:
+    def __init__(self):
+        pass
+
+    @staticmethod
+    def get_best_currency_match(sys_str: str, gold_list: list) -> int:
+        for i in range(len(gold_list)):
+            if gold_list[i] == sys_str:
+                return i
+        return -1

@@ -1,0 +1,991 @@
+[
+  {
+    "Event_ID": "bdshaEM",
+    "Sources": "https://en.wikipedia.org/wiki/1867_Atlantic_hurricane_season",
+    "Event_Names": "1867 Atlantic hurricane season",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "June 21",
+        "End_Date": "June 23",
+        "Num": "NULL",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "July 28",
+        "End_Date": "August 3",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "October 2",
+        "End_Date": "October 9",
+        "Num": "NULL",
+        "Annotation": "Hurricane Seven"
+      },
+      {
+        "Administrative_Areas": [
+          "British Virgin Islands",
+          "United States Virgin Islands",
+          "Puerto Rico",
+          "Dominican Republic"
+        ],
+        "Start_Date": "October 27",
+        "End_Date": "October 31",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Charleston, South Carolina",
+          "Raleigh, North Carolina"
+        ],
+        "Start_Date": "June 21",
+        "End_Date": "June 23",
+        "Num": "NULL",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Marblehead, Massachusetts",
+          "Nantucket",
+          "East Coast of the United States"
+        ],
+        "Start_Date": "July 28",
+        "End_Date": "August 3",
+        "Num": "13",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Brownsville, Texas",
+          "Matamoros",
+          "Bagdad",
+          "Brazos Santiago",
+          "Clarksville",
+          "Galveston",
+          "New Orleans",
+          "Milneberg",
+          "Pilottown, Louisiana"
+        ],
+        "Start_Date": "October 2",
+        "End_Date": "October 9",
+        "Num": "NULL",
+        "Annotation": "Hurricane Seven"
+      },
+      {
+        "Administrative_Area": "British Virgin Islands",
+        "Locations": [
+          "Virgin Gorda",
+          "Tortola",
+          "Peter Island"
+        ],
+        "Start_Date": "October 27",
+        "End_Date": "October 31",
+        "Num": "39",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Area": "United States Virgin Islands",
+        "Locations": [
+          "Saint Thomas"
+        ],
+        "Start_Date": "October 27",
+        "End_Date": "October 31",
+        "Num": "600",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Area": "Puerto Rico",
+        "Locations": [
+          "Fajardo"
+        ],
+        "Start_Date": "October 27",
+        "End_Date": "October 31",
+        "Num": "211",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Area": "Dominican Republic",
+        "Locations": [
+          "Santo Domingo"
+        ],
+        "Start_Date": "October 27",
+        "End_Date": "October 31",
+        "Num": "200",
+        "Annotation": "Hurricane Nine"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "June 21",
+        "End_Date": "June 23",
+        "Num": "NULL",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "July 28",
+        "End_Date": "August 3",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "October 2",
+        "End_Date": "October 9",
+        "Num": "NULL",
+        "Annotation": "Hurricane Seven"
+      },
+      {
+        "Administrative_Areas": "British Virgin Islands",
+        "Start_Date": "October 27",
+        "End_Date": "October 31",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Areas": "United States Virgin Islands",
+        "Start_Date": "October 27",
+        "End_Date": "October 31",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Areas": "Puerto Rico",
+        "Start_Date": "October 27",
+        "End_Date": "October 31",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Areas": "Dominican Republic",
+        "Start_Date": "October 27",
+        "End_Date": "October 31",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Charleston"
+        ],
+        "Start_Date": "June 21",
+        "End_Date": "June 23",
+        "Num": "a number of roofs",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Nantucket"
+        ],
+        "Start_Date": "July 28",
+        "End_Date": "August 3",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Galveston"
+        ],
+        "Start_Date": "October 2",
+        "End_Date": "October 9",
+        "Num": "hundreds of homes",
+        "Annotation": "Hurricane Seven"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New Orleans"
+        ],
+        "Start_Date": "October 2",
+        "End_Date": "October 9",
+        "Num": "NULL",
+        "Annotation": "Hurricane Seven"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Milneberg",
+          "Pilottown"
+        ],
+        "Start_Date": "October 2",
+        "End_Date": "October 9",
+        "Num": "houses",
+        "Annotation": "Hurricane Seven"
+      },
+      {
+        "Administrative_Area": "British Virgin Islands",
+        "Locations": [
+          "Virgin Gorda",
+          "Tortola"
+        ],
+        "Start_Date": "October 27",
+        "End_Date": "October 31",
+        "Num": "about 100 homes on Virgin Gorda and 60 out of 123 homes on Tortola",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Area": "United States Virgin Islands",
+        "Locations": [
+          "Saint Thomas"
+        ],
+        "Start_Date": "October 27",
+        "End_Date": "October 31",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Area": "Puerto Rico",
+        "Locations": [
+          "Fajardo"
+        ],
+        "Start_Date": "October 27",
+        "End_Date": "October 31",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Area": "Dominican Republic",
+        "Locations": [
+          "Santo Domingo"
+        ],
+        "Start_Date": "October 27",
+        "End_Date": "October 31",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "811+",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "June 21",
+        "End_Date": "June 23",
+        "Num": "NULL",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "July 28",
+        "End_Date": "August 3",
+        "Num": "13",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "October 2",
+        "End_Date": "October 9",
+        "Num": "NULL",
+        "Annotation": "Hurricane Seven"
+      },
+      {
+        "Administrative_Areas": "British Virgin Islands",
+        "Start_Date": "October 27",
+        "End_Date": "October 31",
+        "Num": "39",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Areas": "United States Virgin Islands",
+        "Start_Date": "October 27",
+        "End_Date": "October 31",
+        "Num": "600",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Areas": "Puerto Rico",
+        "Start_Date": "October 27",
+        "End_Date": "October 31",
+        "Num": "211",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Areas": "Dominican Republic",
+        "Start_Date": "October 27",
+        "End_Date": "October 31",
+        "Num": "200",
+        "Annotation": "Hurricane Nine"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Marblehead, Massachusetts",
+          "Offshore the East Coast of the United States"
+        ],
+        "Start_Date": "July 28",
+        "End_Date": "August 3",
+        "Num": "13",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Brownsville, Texas",
+          "Matamoros",
+          "Bagdad",
+          "Brazos Santiago",
+          "Clarksville",
+          "Galveston",
+          "New Orleans",
+          "Milneberg",
+          "Pilottown, Louisiana"
+        ],
+        "Start_Date": "October 2",
+        "End_Date": "October 9",
+        "Num": "NULL",
+        "Annotation": "Hurricane Seven"
+      },
+      {
+        "Administrative_Area": "British Virgin Islands",
+        "Locations": [
+          "Virgin Gorda",
+          "Tortola",
+          "Peter Island"
+        ],
+        "Start_Date": "October 27",
+        "End_Date": "October 31",
+        "Num": "39",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Area": "United States Virgin Islands",
+        "Locations": [
+          "Saint Thomas"
+        ],
+        "Start_Date": "October 27",
+        "End_Date": "October 31",
+        "Num": "600",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Area": "Puerto Rico",
+        "Locations": [
+          "Puerto Rico"
+        ],
+        "Start_Date": "October 27",
+        "End_Date": "October 31",
+        "Num": "211",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Area": "Dominican Republic",
+        "Locations": [
+          "Santo Domingo"
+        ],
+        "Start_Date": "October 27",
+        "End_Date": "October 31",
+        "Num": "200",
+        "Annotation": "Hurricane Nine"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Entire population of Bagdad fled",
+        "Annotation": "Hurricane Seven"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Bagdad"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Entire population of Bagdad fled",
+        "Annotation": "Hurricane Seven"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Seven"
+      },
+      {
+        "Administrative_Areas": "British Virgin Islands",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Areas": "United States Virgin Islands",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Areas": "Puerto Rico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Areas": "Dominican Republic",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Charleston"
+        ],
+        "Start_Date": "June 23",
+        "End_Date": "June 23",
+        "Num": "NULL",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Nantucket"
+        ],
+        "Start_Date": "August 2",
+        "End_Date": "August 2",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Galveston",
+          "Brownsville",
+          "Matamoros",
+          "Bagdad",
+          "Brazos Santiago",
+          "Clarksville",
+          "New Orleans",
+          "Milneberg",
+          "Pilottown"
+        ],
+        "Start_Date": "October 2",
+        "End_Date": "October 6",
+        "Num": "NULL",
+        "Annotation": "Hurricane Seven"
+      },
+      {
+        "Administrative_Area": "British Virgin Islands",
+        "Locations": [
+          "Virgin Gorda",
+          "Tortola",
+          "Peter Island"
+        ],
+        "Start_Date": "October 29",
+        "End_Date": "October 29",
+        "Num": "100 homes on Virgin Gorda, 60 out of 123 homes on Tortola",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Area": "United States Virgin Islands",
+        "Locations": [
+          "Saint Thomas"
+        ],
+        "Start_Date": "October 29",
+        "End_Date": "October 29",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Area": "Puerto Rico",
+        "Locations": [
+          "Fajardo"
+        ],
+        "Start_Date": "October 29",
+        "End_Date": "October 30",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Area": "Dominican Republic",
+        "Locations": [
+          "Santo Domingo"
+        ],
+        "Start_Date": "October 30",
+        "End_Date": "October 31",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Seven"
+      },
+      {
+        "Administrative_Areas": "British Virgin Islands",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Areas": "United States Virgin Islands",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Areas": "Puerto Rico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Areas": "Dominican Republic",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Charleston"
+        ],
+        "Start_Date": "June 21",
+        "End_Date": "June 23",
+        "Num": "NULL",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Nantucket"
+        ],
+        "Start_Date": "August 2",
+        "End_Date": "August 3",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Galveston",
+          "New Orleans",
+          "Milneberg",
+          "Pilottown"
+        ],
+        "Start_Date": "October 2",
+        "End_Date": "October 6",
+        "Num": "NULL",
+        "Annotation": "Hurricane Seven"
+      },
+      {
+        "Administrative_Area": "British Virgin Islands",
+        "Locations": [
+          "Virgin Gorda",
+          "Tortola",
+          "Peter Island"
+        ],
+        "Start_Date": "October 29",
+        "End_Date": "October 29",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Area": "United States Virgin Islands",
+        "Locations": [
+          "Saint Thomas"
+        ],
+        "Start_Date": "October 29",
+        "End_Date": "October 29",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Area": "Puerto Rico",
+        "Locations": [
+          "Fajardo"
+        ],
+        "Start_Date": "October 29",
+        "End_Date": "October 30",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Area": "Dominican Republic",
+        "Locations": [
+          "Santo Domingo"
+        ],
+        "Start_Date": "October 30",
+        "End_Date": "October 31",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States",
+          "Dominican Republic",
+          "Puerto Rico",
+          "British Virgin Islands"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Charleston",
+          "Raleigh",
+          "Wilmington",
+          "Sable Island",
+          "Nantucket",
+          "Galveston",
+          "New Orleans",
+          "Milneberg",
+          "Pilottown",
+          "Ship Shoal Light",
+          "Shell Keys lighthouse"
+        ],
+        "Start_Date": "June 21",
+        "End_Date": "October 9",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane One, Hurricane Two, Hurricane Seven"
+      },
+      {
+        "Administrative_Area": "Dominican Republic",
+        "Locations": [
+          "Santo Domingo"
+        ],
+        "Start_Date": "October 30",
+        "End_Date": "October 31",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Area": "Puerto Rico",
+        "Locations": [
+          "Fajardo"
+        ],
+        "Start_Date": "October 29",
+        "End_Date": "October 30",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Area": "British Virgin Islands",
+        "Locations": [
+          "Virgin Gorda",
+          "Tortola",
+          "Peter Island"
+        ],
+        "Start_Date": "October 29",
+        "End_Date": "October 30",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Nine"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "at least $1 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "June 21",
+        "End_Date": "June 23",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "July 28",
+        "End_Date": "August 3",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "October 2",
+        "End_Date": "October 9",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Seven"
+      },
+      {
+        "Administrative_Areas": "British Virgin Islands",
+        "Start_Date": "October 27",
+        "End_Date": "October 31",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Areas": "United States Virgin Islands",
+        "Start_Date": "October 27",
+        "End_Date": "October 31",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Areas": "Puerto Rico",
+        "Start_Date": "October 27",
+        "End_Date": "October 31",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Areas": "Dominican Republic",
+        "Start_Date": "October 27",
+        "End_Date": "October 31",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Nine"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Charleston",
+          "Raleigh"
+        ],
+        "Start_Date": "June 21",
+        "End_Date": "June 23",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Marblehead",
+          "Nantucket"
+        ],
+        "Start_Date": "July 28",
+        "End_Date": "August 3",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Brownsville",
+          "Matamoros",
+          "Bagdad",
+          "Brazos Santiago",
+          "Clarksville",
+          "Galveston",
+          "New Orleans",
+          "Milneberg",
+          "Pilottown"
+        ],
+        "Start_Date": "October 2",
+        "End_Date": "October 9",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Seven"
+      },
+      {
+        "Administrative_Area": "British Virgin Islands",
+        "Locations": [
+          "Virgin Gorda",
+          "Tortola",
+          "Peter Island"
+        ],
+        "Start_Date": "October 27",
+        "End_Date": "October 31",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Area": "United States Virgin Islands",
+        "Locations": [
+          "Saint Thomas"
+        ],
+        "Start_Date": "October 27",
+        "End_Date": "October 31",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Area": "Puerto Rico",
+        "Locations": [
+          "Fajardo"
+        ],
+        "Start_Date": "October 27",
+        "End_Date": "October 31",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Area": "Dominican Republic",
+        "Locations": [
+          "Santo Domingo"
+        ],
+        "Start_Date": "October 27",
+        "End_Date": "October 31",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Nine"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Hurricane One|Hurricane Two|Hurricane Seven|Hurricane Nine",
+    "Start_Date": "June 21, 1867",
+    "End_Date": "October 31, 1867",
+    "Time_Annotation": "Info_Box"
+  }
+]

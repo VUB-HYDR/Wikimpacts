@@ -1,0 +1,810 @@
+[
+  {
+    "Event_ID": "vEkG9L1",
+    "Sources": "https://en.wikipedia.org/wiki/1908_Atlantic_hurricane_season",
+    "Event_Names": "1908 Atlantic hurricane season",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Turks and Caicos Islands",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 19",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Areas": "Bahamas",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Areas": "Nicaragua",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Areas": "Atlantic Canada",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Turks and Caicos Islands",
+        "Locations": [
+          "Grand Turk Island"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 19",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Acklins",
+          "Crooked Island",
+          "Inagua",
+          "Long Cay",
+          "Long Island",
+          "Rum Cay",
+          "San Salvador Island",
+          "Clarence Town",
+          "Matthew Town"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina",
+          "New Jersey",
+          "Rhode Island"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "Prinzapolka",
+          "Rio Grande"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Area": "Atlantic Canada",
+        "Locations": [
+          "Nova Scotia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Saint Barth\u00e9lemy",
+        "Start_Date": "March 6, 1908",
+        "End_Date": "March 9, 1908",
+        "Num": "some buildings",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Areas": "Saint Martin",
+        "Start_Date": "March 6, 1908",
+        "End_Date": "March 9, 1908",
+        "Num": "NULL",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Areas": "Rhode Island",
+        "Start_Date": "May 24, 1908",
+        "End_Date": "May 31, 1908",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Areas": "North Carolina",
+        "Start_Date": "July 24, 1908",
+        "End_Date": "August 2, 1908",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Areas": "Nova Scotia",
+        "Start_Date": "July 24, 1908",
+        "End_Date": "August 3, 1908",
+        "Num": "many properties",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Areas": "Louisiana",
+        "Start_Date": "July 29, 1908",
+        "End_Date": "August 3, 1908",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm Four"
+      },
+      {
+        "Administrative_Areas": "Turks and Caicos Islands",
+        "Start_Date": "September 7, 1908",
+        "End_Date": "September 19, 1908",
+        "Num": "many buildings and homes",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Areas": "Bahamas",
+        "Start_Date": "September 7, 1908",
+        "End_Date": "September 19, 1908",
+        "Num": "significant damage",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Areas": "Bermuda",
+        "Start_Date": "September 7, 1908",
+        "End_Date": "September 19, 1908",
+        "Num": "NULL",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Areas": "Haiti",
+        "Start_Date": "September 21, 1908",
+        "End_Date": "October 6, 1908",
+        "Num": "NULL",
+        "Annotation": "Hurricane Eight"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "September 21, 1908",
+        "End_Date": "October 6, 1908",
+        "Num": "several buildings",
+        "Annotation": "Hurricane Eight"
+      },
+      {
+        "Administrative_Areas": "Bahamas",
+        "Start_Date": "September 21, 1908",
+        "End_Date": "October 6, 1908",
+        "Num": "several buildings",
+        "Annotation": "Hurricane Eight"
+      },
+      {
+        "Administrative_Areas": "Nicaragua",
+        "Start_Date": "October 14, 1908",
+        "End_Date": "October 19, 1908",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Areas": "South Carolina",
+        "Start_Date": "October 20, 1908",
+        "End_Date": "October 23, 1908",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm Ten"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Saint Barth\u00e9lemy",
+        "Locations": [
+          "Saint Barth\u00e9lemy"
+        ],
+        "Start_Date": "March 6, 1908",
+        "End_Date": "March 9, 1908",
+        "Num": "some buildings",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Area": "Saint Martin",
+        "Locations": [
+          "Saint Martin"
+        ],
+        "Start_Date": "March 6, 1908",
+        "End_Date": "March 9, 1908",
+        "Num": "NULL",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Area": "Rhode Island",
+        "Locations": [
+          "Narragansett Bay"
+        ],
+        "Start_Date": "May 24, 1908",
+        "End_Date": "May 31, 1908",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "North Carolina",
+        "Locations": [
+          "Wrightsville"
+        ],
+        "Start_Date": "July 24, 1908",
+        "End_Date": "August 2, 1908",
+        "Num": "cottages and boardwalks",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Nova Scotia",
+        "Locations": [
+          "Halifax"
+        ],
+        "Start_Date": "July 24, 1908",
+        "End_Date": "August 3, 1908",
+        "Num": "many properties",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Louisiana",
+        "Locations": [
+          "Franklin"
+        ],
+        "Start_Date": "July 29, 1908",
+        "End_Date": "August 3, 1908",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm Four"
+      },
+      {
+        "Administrative_Area": "Turks and Caicos Islands",
+        "Locations": [
+          "Grand Turk Island"
+        ],
+        "Start_Date": "September 7, 1908",
+        "End_Date": "September 19, 1908",
+        "Num": "many buildings and homes",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Acklins",
+          "Crooked Island",
+          "Inagua",
+          "Long Cay",
+          "Long Island",
+          "Rum Cay",
+          "San Salvador Island"
+        ],
+        "Start_Date": "September 7, 1908",
+        "End_Date": "September 19, 1908",
+        "Num": "significant damage",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Clarence Town"
+        ],
+        "Start_Date": "September 7, 1908",
+        "End_Date": "September 19, 1908",
+        "Num": "churches, courthouse, jail, 97 percent of homes",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Matthew Town"
+        ],
+        "Start_Date": "September 7, 1908",
+        "End_Date": "September 19, 1908",
+        "Num": "many wood-frame homes",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Guant\u00e1namo Province"
+        ],
+        "Start_Date": "September 21, 1908",
+        "End_Date": "October 6, 1908",
+        "Num": "several buildings",
+        "Annotation": "Hurricane Eight"
+      },
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "New Providence"
+        ],
+        "Start_Date": "September 21, 1908",
+        "End_Date": "October 6, 1908",
+        "Num": "smaller dwellings and outbuildings",
+        "Annotation": "Hurricane Eight"
+      },
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Abaco Islands"
+        ],
+        "Start_Date": "September 21, 1908",
+        "End_Date": "October 6, 1908",
+        "Num": "several buildings",
+        "Annotation": "Hurricane Eight"
+      },
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Eleuthera"
+        ],
+        "Start_Date": "September 21, 1908",
+        "End_Date": "October 6, 1908",
+        "Num": "mission house, chapel, several other buildings",
+        "Annotation": "Hurricane Eight"
+      },
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "Prinzapolka",
+          "Rio Grande"
+        ],
+        "Start_Date": "October 14, 1908",
+        "End_Date": "October 19, 1908",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "at least 37",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Turks and Caicos Islands",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 19",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Areas": "Bahamas",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Season summary"
+      },
+      {
+        "Administrative_Areas": "Nicaragua",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 2",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Areas": "Atlantic Canada",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Turks and Caicos Islands",
+        "Locations": [
+          "Grand Turk Island",
+          "Hawk's Nest"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 19",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Acklins",
+          "Crooked Island",
+          "Inagua",
+          "Long Cay",
+          "Long Island",
+          "Rum Cay",
+          "San Salvador Island",
+          "Clarence Town",
+          "Matthew Town"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Northeastern United States",
+          "North Carolina",
+          "Greater Antilles",
+          "Bahamas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Season summary"
+      },
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "Prinzapolka",
+          "Rio Grande"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 2",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Area": "Atlantic Canada",
+        "Locations": [
+          "Nova Scotia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8",
+        "Annotation": "Hurricane Three"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Bahamas",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Six"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Clarence Town"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "97 percent of homes",
+        "Annotation": "Hurricane Six"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Bahamas",
+        "Start_Date": "September 12",
+        "End_Date": "September 14",
+        "Num": "97 percent of homes in Clarence Town",
+        "Annotation": "Hurricane Six"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Clarence Town"
+        ],
+        "Start_Date": "September 12",
+        "End_Date": "September 14",
+        "Num": "97 percent of homes",
+        "Annotation": "Hurricane Six"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "May 29",
+        "End_Date": "May 31",
+        "Num": "One person",
+        "Annotation": "Hurricane Two"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Rhode Island"
+        ],
+        "Start_Date": "May 29",
+        "End_Date": "May 31",
+        "Num": "One person",
+        "Annotation": "Hurricane Two"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "Unknown",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "May 24, 1908",
+        "End_Date": "May 31, 1908",
+        "Num": "thousands of dollars",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Areas": [
+          "Nicaragua"
+        ],
+        "Start_Date": "October 17, 1908",
+        "End_Date": "October 18, 1908",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Nine"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina"
+        ],
+        "Start_Date": "May 24, 1908",
+        "End_Date": "May 31, 1908",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New Jersey"
+        ],
+        "Start_Date": "May 24, 1908",
+        "End_Date": "May 31, 1908",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Rhode Island"
+        ],
+        "Start_Date": "May 24, 1908",
+        "End_Date": "May 31, 1908",
+        "Num": "thousands of dollars",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina"
+        ],
+        "Start_Date": "July 24, 1908",
+        "End_Date": "August 2, 1908",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Virginia"
+        ],
+        "Start_Date": "July 24, 1908",
+        "End_Date": "August 2, 1908",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Nova Scotia"
+        ],
+        "Start_Date": "July 24, 1908",
+        "End_Date": "August 2, 1908",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Louisiana"
+        ],
+        "Start_Date": "July 29, 1908",
+        "End_Date": "August 3, 1908",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tropical Storm Four"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New Orleans"
+        ],
+        "Start_Date": "July 29, 1908",
+        "End_Date": "August 3, 1908",
+        "Num": "$12,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tropical Storm Four"
+      },
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Acklins",
+          "Crooked Island",
+          "Inagua",
+          "Long Cay",
+          "Long Island",
+          "Rum Cay",
+          "San Salvador Island"
+        ],
+        "Start_Date": "September 7, 1908",
+        "End_Date": "September 18, 1908",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Clarence Town"
+        ],
+        "Start_Date": "September 7, 1908",
+        "End_Date": "September 18, 1908",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Matthew Town"
+        ],
+        "Start_Date": "September 7, 1908",
+        "End_Date": "September 18, 1908",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "South Carolina"
+        ],
+        "Start_Date": "October 20, 1908",
+        "End_Date": "October 23, 1908",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tropical Storm Ten"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Hurricane One|Hurricane Two|Hurricane Three|Hurricane Six|Hurricane Eight|Hurricane Nine",
+    "Start_Date": "March 6, 1908",
+    "End_Date": "October 23, 1908",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "United States",
+      "Turks and Caicos Islands",
+      "Bahamas",
+      "Nicaragua",
+      "Haiti",
+      "Cuba",
+      "Puerto Rico",
+      "Bermuda",
+      "Canada",
+      "Dominican Republic",
+      "Saint Kitts and Nevis",
+      "Saint Barth\u00e9lemy",
+      "Saint Martin",
+      "Guadeloupe"
+    ],
+    "Administrative_Areas_Annotation": "header: 1908 Atlantic hurricane season"
+  }
+]

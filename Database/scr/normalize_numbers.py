@@ -7,7 +7,7 @@ from iso4217 import Currency
 from num2words import num2words
 from text_to_num import alpha2digit, text2num
 
-from .normalize_utils import Logging
+from .log_utils import Logging
 
 
 class NormalizeNumber:

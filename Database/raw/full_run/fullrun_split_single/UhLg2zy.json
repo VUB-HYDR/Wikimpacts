@@ -1,0 +1,989 @@
+[
+  {
+    "Event_ID": "UhLg2zy",
+    "Sources": "https://en.wikipedia.org/wiki/1899_Atlantic_hurricane_season",
+    "Event_Names": "1899 Atlantic hurricane season",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Thousands of people",
+        "Annotation": "Tropical Storm One"
+      },
+      {
+        "Administrative_Areas": "Puerto Rico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Approximately 250,000 people",
+        "Annotation": "Hurricane Three"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Granbury",
+          "Waco",
+          "Hearne"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Thousands of people",
+        "Annotation": "Tropical Storm One"
+      },
+      {
+        "Administrative_Area": "Puerto Rico",
+        "Locations": [
+          "Guayama"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Approximately 250,000 people",
+        "Annotation": "Hurricane Three"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "June 26, 1899",
+        "End_Date": "November 10, 1899",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": "Dominican Republic",
+        "Start_Date": "July 28, 1899",
+        "End_Date": "July 29, 1899",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Areas": "Puerto Rico",
+        "Start_Date": "August 8, 1899",
+        "End_Date": "August 8, 1899",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Areas": "Bahamas",
+        "Start_Date": "August 14, 1899",
+        "End_Date": "August 15, 1899",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Areas": "North Carolina",
+        "Start_Date": "August 18, 1899",
+        "End_Date": "August 18, 1899",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Areas": "Azores",
+        "Start_Date": "September 3, 1899",
+        "End_Date": "September 3, 1899",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Areas": "Montserrat",
+        "Start_Date": "August 7, 1899",
+        "End_Date": "August 7, 1899",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Areas": "Saint Kitts",
+        "Start_Date": "August 7, 1899",
+        "End_Date": "August 7, 1899",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Areas": "Saint Croix",
+        "Start_Date": "August 7, 1899",
+        "End_Date": "August 7, 1899",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Areas": "Bermuda",
+        "Start_Date": "September 12, 1899",
+        "End_Date": "September 13, 1899",
+        "Num": "NULL",
+        "Annotation": "Hurricane Five"
+      },
+      {
+        "Administrative_Areas": "Newfoundland",
+        "Start_Date": "September 15, 1899",
+        "End_Date": "September 15, 1899",
+        "Num": "NULL",
+        "Annotation": "Hurricane Five"
+      },
+      {
+        "Administrative_Areas": "Jamaica",
+        "Start_Date": "October 26, 1899",
+        "End_Date": "October 29, 1899",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "October 29, 1899",
+        "End_Date": "October 31, 1899",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Carrabelle",
+          "Curtis Mill",
+          "McIntyre",
+          "St. Teresa"
+        ],
+        "Start_Date": "July 30, 1899",
+        "End_Date": "August 2, 1899",
+        "Num": "no more than a score of 'unimportant' houses",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Diamond City"
+        ],
+        "Start_Date": "August 18, 1899",
+        "End_Date": "August 18, 1899",
+        "Num": "a great proportion of homes",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Dominican Republic",
+        "Locations": [
+          "Santo Domingo"
+        ],
+        "Start_Date": "July 28, 1899",
+        "End_Date": "July 29, 1899",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "Puerto Rico",
+        "Locations": [
+          "Guayama"
+        ],
+        "Start_Date": "August 8, 1899",
+        "End_Date": "August 8, 1899",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Andros",
+          "Grand Bahama",
+          "Nassau",
+          "Bimini"
+        ],
+        "Start_Date": "August 14, 1899",
+        "End_Date": "August 15, 1899",
+        "Num": "over 100 buildings",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "North Carolina",
+        "Locations": [
+          "Hatteras Island",
+          "Diamond City"
+        ],
+        "Start_Date": "August 18, 1899",
+        "End_Date": "August 18, 1899",
+        "Num": "a great proportion of homes",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Azores",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "September 3, 1899",
+        "End_Date": "September 3, 1899",
+        "Num": "significant damage on some islands",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Montserrat",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "August 7, 1899",
+        "End_Date": "August 7, 1899",
+        "Num": "nearly every building",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Saint Kitts",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "August 7, 1899",
+        "End_Date": "August 7, 1899",
+        "Num": "about 200 small houses",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Saint Croix",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "August 7, 1899",
+        "End_Date": "August 7, 1899",
+        "Num": "nearly all estates",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Bermuda",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "September 12, 1899",
+        "End_Date": "September 13, 1899",
+        "Num": "some houses",
+        "Annotation": "Hurricane Five"
+      },
+      {
+        "Administrative_Area": "Newfoundland",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "September 15, 1899",
+        "End_Date": "September 15, 1899",
+        "Num": "severe damage at fishing premises",
+        "Annotation": "Hurricane Five"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Black River"
+        ],
+        "Start_Date": "October 26, 1899",
+        "End_Date": "October 29, 1899",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Sancti Sp\u00edritus Province",
+          "Santa Clara Province"
+        ],
+        "Start_Date": "October 29, 1899",
+        "End_Date": "October 31, 1899",
+        "Num": "several houses",
+        "Annotation": "Hurricane Nine"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "3,885",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Puerto Rico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3,369",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Areas": "Bahamas",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "125",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "284",
+        "Annotation": "Tropical Storm One"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "7",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "20",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Areas": "Montserrat",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "100",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Areas": "Saint Kitts",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "11",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Areas": "Newfoundland",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "16",
+        "Annotation": "Hurricane Five"
+      },
+      {
+        "Administrative_Areas": "Jamaica",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4",
+        "Annotation": "Tropical Storm Ten"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Granbury",
+          "Waco",
+          "Hearne"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "284",
+        "Annotation": "Tropical Storm One"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Carrabelle"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "7",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hatteras",
+          "Diamond City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "20",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Montserrat",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "100",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Saint Kitts",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "11",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Newfoundland",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "16",
+        "Annotation": "Hurricane Five"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Manzanillo"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4",
+        "Annotation": "Tropical Storm Ten"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Thousands of people",
+        "Annotation": "Tropical Storm One"
+      },
+      {
+        "Administrative_Areas": "Puerto Rico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Approximately 250,000 people",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Granbury",
+          "Waco",
+          "Hearne"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Thousands of people",
+        "Annotation": "Tropical Storm One"
+      },
+      {
+        "Administrative_Area": "Puerto Rico",
+        "Locations": [
+          "Guayama"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Approximately 250,000 people",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Sancti Sp\u00edritus Province",
+          "Santa Clara Province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "June 26, 1899",
+        "End_Date": "June 27, 1899",
+        "Num": "Thousands of people",
+        "Annotation": "Tropical Storm One"
+      },
+      {
+        "Administrative_Areas": "Puerto Rico",
+        "Start_Date": "August 8, 1899",
+        "End_Date": "NULL",
+        "Num": "Approximately 250,000 people",
+        "Annotation": "Hurricane Three"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Granbury",
+          "Waco",
+          "Hearne"
+        ],
+        "Start_Date": "June 26, 1899",
+        "End_Date": "June 27, 1899",
+        "Num": "Thousands of people",
+        "Annotation": "Tropical Storm One"
+      },
+      {
+        "Administrative_Area": "Puerto Rico",
+        "Locations": [
+          "Guayama"
+        ],
+        "Start_Date": "August 8, 1899",
+        "End_Date": "NULL",
+        "Num": "Approximately 250,000 people",
+        "Annotation": "Hurricane Three"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm One"
+      },
+      {
+        "Administrative_Areas": "Dominican Republic",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Areas": "Puerto Rico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Areas": "Bahamas",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Areas": "Azores",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Areas": "Bermuda",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Four"
+      },
+      {
+        "Administrative_Areas": "Bermuda",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Five"
+      },
+      {
+        "Administrative_Areas": "Newfoundland",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Five"
+      },
+      {
+        "Administrative_Areas": "Jamaica",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Areas": "Jamaica",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm Ten"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm Ten"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Granbury",
+          "Waco",
+          "Hearne"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm One"
+      },
+      {
+        "Administrative_Area": "Dominican Republic",
+        "Locations": [
+          "Santo Domingo"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Carrabelle",
+          "Lanark",
+          "Curtis Mill",
+          "McIntyre",
+          "St. Teresa"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "Puerto Rico",
+        "Locations": [
+          "Guayama"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Andros",
+          "Grand Bahama",
+          "Nassau",
+          "Bimini"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hatteras",
+          "Diamond City"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Azores",
+        "Locations": [
+          "Flores Island"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Bermuda",
+        "Locations": [
+          "Bermuda"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Four"
+      },
+      {
+        "Administrative_Area": "Bermuda",
+        "Locations": [
+          "Bermuda"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Five"
+      },
+      {
+        "Administrative_Area": "Newfoundland",
+        "Locations": [
+          "Avalon Peninsula"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Five"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Black River"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Sancti Sp\u00edritus Province",
+          "Santa Clara Province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Wrightsville Beach",
+          "Wilmington",
+          "New Bern",
+          "Morehead City",
+          "Beaufort"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Nine"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Port Antonio",
+          "Saint Thomas Parish",
+          "Morant Bay"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm Ten"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Santiago de Cuba",
+          "Manzanillo"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm Ten"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": ">= $21.21 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$9 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tropical Storm One"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$1 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Areas": "Puerto Rico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$20 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$200,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Nine"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Granbury",
+          "Waco",
+          "Hearne"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$9 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tropical Storm One"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Carrabelle",
+          "Curtis Mill",
+          "McIntyre",
+          "St. Teresa"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$1 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "Puerto Rico",
+        "Locations": [
+          "Guayama"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$20 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Wrightsville Beach",
+          "Wilmington",
+          "New Bern",
+          "Morehead City",
+          "Beaufort"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$200,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Nine"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Hurricane Three|Hurricane Two|Hurricane Nine",
+    "Start_Date": "June 26, 1899",
+    "End_Date": "November 10, 1899",
+    "Time_Annotation": "Info_Box"
+  }
+]

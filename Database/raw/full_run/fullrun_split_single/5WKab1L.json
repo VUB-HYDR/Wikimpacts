@@ -1,0 +1,339 @@
+[
+  {
+    "Event_ID": "5WKab1L",
+    "Sources": "https://en.wikipedia.org/wiki/Cyclone_Ron",
+    "Event_Names": "Cyclone Ron",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Tonga"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "99 families",
+        "Annotation": "Tonga"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Tonga",
+        "Locations": [
+          "Niuafo'ou"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "99 families",
+        "Annotation": "Tonga"
+      },
+      {
+        "Administrative_Area": "Tonga",
+        "Locations": [
+          "Niuafo'ou"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "43 families",
+        "Annotation": "Tonga"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Wallis and Futuna",
+        "Start_Date": "January 4, 1998",
+        "End_Date": "January 6, 1998",
+        "Num": "NULL",
+        "Annotation": "Wallis and Futuna"
+      },
+      {
+        "Administrative_Areas": "Tonga",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Tonga"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Wallis and Futuna",
+        "Locations": [
+          "Wallis"
+        ],
+        "Start_Date": "January 4, 1998",
+        "End_Date": "January 6, 1998",
+        "Num": "Widespread damage to roofs, trees, coastal roads, fales and food crops",
+        "Annotation": "Wallis and Futuna"
+      },
+      {
+        "Administrative_Area": "Wallis and Futuna",
+        "Locations": [
+          "Futuna"
+        ],
+        "Start_Date": "January 4, 1998",
+        "End_Date": "January 6, 1998",
+        "Num": "NULL",
+        "Annotation": "Wallis and Futuna"
+      },
+      {
+        "Administrative_Area": "Tonga",
+        "Locations": [
+          "Niuafo'ou"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "99 families without home and 43 ones in need of tarpaulins to repair damages",
+        "Annotation": "Tonga"
+      },
+      {
+        "Administrative_Area": "Tonga",
+        "Locations": [
+          "Niuatoputapu",
+          "Tafahi",
+          "Vava'u"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "some damage",
+        "Annotation": "Tonga"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "None",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "Samoan Islands",
+          "Tonga",
+          "Wallis and Futuna"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "None",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Samoan Islands",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "None",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Tonga",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "None",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Wallis and Futuna",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "None",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Tonga"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Tonga"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Swains Island"
+        ],
+        "Start_Date": "January 2, 1998",
+        "End_Date": "January 3, 1998",
+        "Num": "49",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "France",
+        "Locations": [
+          "Futuna"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Wallis and Futuna"
+      },
+      {
+        "Administrative_Area": "Tonga",
+        "Locations": [
+          "Niuafo'ou",
+          "Niuatoputapu",
+          "Tafahi"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "99 families",
+        "Annotation": "Tonga"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "99 families",
+      "Total_Homeless_Annotation": "Tonga"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Tonga",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "99 families",
+        "Annotation": "Tonga"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Tonga",
+        "Locations": [
+          "Niuafo'ou"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "99 families",
+        "Annotation": "Tonga"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$566,000",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Tonga"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tonga"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Tonga",
+        "Locations": [
+          "Niuafo'ou",
+          "Niuatoputapu",
+          "Tafahi"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tonga"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Preparations and impact|Wallis and Futuna|Tonga|Aftermath and records",
+    "Start_Date": "January 1, 1998",
+    "End_Date": "January 9, 1998",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Samoan Islands",
+      "Tonga",
+      "Wallis and Futuna"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]
