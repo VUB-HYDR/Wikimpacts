@@ -1,0 +1,724 @@
+[
+  {
+    "Event_ID": "qYgSeAM",
+    "Sources": "https://en.wikipedia.org/wiki/1880_Atlantic_hurricane_season",
+    "Event_Names": "1880 Atlantic hurricane season",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Mexico",
+          "United States",
+          "Jamaica"
+        ],
+        "Start_Date": "August 9",
+        "End_Date": "August 14",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Areas": [
+          "Jamaica",
+          "Cuba",
+          "Bahamas"
+        ],
+        "Start_Date": "August 19",
+        "End_Date": "August 20",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "August 29",
+        "End_Date": "September 1",
+        "Num": "NULL",
+        "Annotation": "Hurricane Four"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Matamoros"
+        ],
+        "Start_Date": "August 13",
+        "End_Date": "August 14",
+        "Num": "300 homes destroyed",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Brownsville",
+          "Fort Brown",
+          "Port Isabel",
+          "Padre Island"
+        ],
+        "Start_Date": "August 13",
+        "End_Date": "August 14",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Kingston",
+          "Yallahs",
+          "Saint George Parish",
+          "Richmond",
+          "Morant Bay",
+          "Saint John Parish",
+          "Up-Park Camp",
+          "Port Maria"
+        ],
+        "Start_Date": "August 19",
+        "End_Date": "August 19",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Pil\u00f3n",
+          "Manzanillo"
+        ],
+        "Start_Date": "August 20",
+        "End_Date": "August 20",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "August 20",
+        "End_Date": "August 20",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Cocoa Beach",
+          "Florida Panhandle",
+          "Central Florida",
+          "Cedar Key",
+          "Pensacola"
+        ],
+        "Start_Date": "August 29",
+        "End_Date": "September 1",
+        "Num": "68 deaths",
+        "Annotation": "Hurricane Four"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "August 13",
+        "End_Date": "August 14",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "August 13",
+        "End_Date": "August 14",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Areas": [
+          "Jamaica"
+        ],
+        "Start_Date": "August 19",
+        "End_Date": "August 19",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "August 29",
+        "End_Date": "September 1",
+        "Num": "NULL",
+        "Annotation": "Hurricane Four"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Matamoros"
+        ],
+        "Start_Date": "August 13",
+        "End_Date": "August 14",
+        "Num": "three hundred homes",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Brownsville"
+        ],
+        "Start_Date": "August 13",
+        "End_Date": "August 14",
+        "Num": "twenty structures",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Yallahs"
+        ],
+        "Start_Date": "August 19",
+        "End_Date": "August 19",
+        "Num": "fifty-nine houses",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Saint George Parish"
+        ],
+        "Start_Date": "August 19",
+        "End_Date": "August 19",
+        "Num": "116 homes",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Richmond"
+        ],
+        "Start_Date": "August 19",
+        "End_Date": "August 19",
+        "Num": "hundreds of homes",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Morant Bay"
+        ],
+        "Start_Date": "August 19",
+        "End_Date": "August 19",
+        "Num": "hospital, chapels, and a church",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Saint John Parish"
+        ],
+        "Start_Date": "August 19",
+        "End_Date": "August 19",
+        "Num": "forty houses",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Up-Park Camp"
+        ],
+        "Start_Date": "August 19",
+        "End_Date": "August 19",
+        "Num": "military barracks",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida"
+        ],
+        "Start_Date": "August 29",
+        "End_Date": "September 1",
+        "Num": "NULL",
+        "Annotation": "Hurricane Four"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "133+",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Areas": "Jamaica",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "30",
+        "Annotation": "Hurricane Three"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Matamoros"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Brownsville",
+          "Port Isabel",
+          "Padre Island"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Port Isabel"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Texas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "68",
+        "Annotation": "Hurricane Four"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": [
+          "Jamaica"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Brownsville"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Fort Brown"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Kingston",
+          "Yallahs",
+          "Saint George Parish",
+          "Richmond",
+          "Morant Bay",
+          "Saint John Parish",
+          "Up-Park Camp",
+          "Port Maria"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Jamaica"
+        ],
+        "Start_Date": "August 19",
+        "End_Date": "NULL",
+        "Num": "Hundreds of homes were destroyed at Richmond",
+        "Annotation": "Hurricane Three"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Yallahs"
+        ],
+        "Start_Date": "August 19",
+        "End_Date": "NULL",
+        "Num": "fifty-nine houses",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Saint George Parish"
+        ],
+        "Start_Date": "August 19",
+        "End_Date": "NULL",
+        "Num": "116 homes",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Richmond"
+        ],
+        "Start_Date": "August 19",
+        "End_Date": "NULL",
+        "Num": "Hundreds of homes",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Morant Bay"
+        ],
+        "Start_Date": "August 19",
+        "End_Date": "NULL",
+        "Num": "The local hospital, chapels, and a church",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Saint John Parish"
+        ],
+        "Start_Date": "August 19",
+        "End_Date": "NULL",
+        "Num": "forty houses",
+        "Annotation": "Hurricane Three"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Areas": "Jamaica",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Brownsville"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Fort Brown"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Padre Island"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Matamoros"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Kingston",
+          "Yallahs",
+          "Saint George Parish",
+          "Richmond",
+          "Morant Bay",
+          "Saint John Parish",
+          "Up-Park Camp",
+          "Port Maria"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States",
+          "Mexico",
+          "Jamaica"
+        ],
+        "Start_Date": "1880-06-21",
+        "End_Date": "1880-10-23",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Seasonal summary"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Brownsville",
+          "Fort Brown",
+          "Padre Island",
+          "Texas",
+          "Florida",
+          "Cedar Key",
+          "Pensacola",
+          "Jacksonville",
+          "Savannah"
+        ],
+        "Start_Date": "1880-08-13",
+        "End_Date": "1880-10-10",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Two, Hurricane Four, Hurricane Nine"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Matamoros"
+        ],
+        "Start_Date": "1880-08-13",
+        "End_Date": "1880-08-14",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Kingston",
+          "Yallahs",
+          "Saint George Parish",
+          "Richmond",
+          "Morant Bay",
+          "Saint John Parish",
+          "Up-Park Camp",
+          "Port Maria"
+        ],
+        "Start_Date": "1880-08-19",
+        "End_Date": "1880-08-20",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Three"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "Unknown",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States",
+          "Mexico",
+          "Jamaica"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Seasonal summary"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Brownsville",
+          "Fort Brown",
+          "Padre Island",
+          "Texas",
+          "Central Florida",
+          "Ocala",
+          "Tampa"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$50,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Matamoros"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Kingston",
+          "Yallahs",
+          "Saint George Parish",
+          "Richmond",
+          "Morant Bay",
+          "Saint John Parish",
+          "Up-Park Camp",
+          "Port Maria"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$50,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Three"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Seasonal summary",
+    "Start_Date": "June 21, 1880",
+    "End_Date": "October 23, 1880",
+    "Time_Annotation": "Info_Box"
+  }
+]

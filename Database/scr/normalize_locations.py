@@ -2,26 +2,24 @@ import difflib
 import json
 import re
 from functools import cache
+from time import sleep
 
 import pandas as pd
 import pycountry
 import requests_cache
-from geopy.extra.rate_limiter import RateLimiter
 from geopy.geocoders import Nominatim
 
-from .normalize_utils import Logging
+from .log_utils import Logging
 
 
 class NormalizeLocation:
-    def __init__(
-        self,
-        gadm_path: str,
-        unsd_path: str,
-    ):
-        requests_cache.install_cache("Database/data/geopy_cache", filter_fn=self._debug)
-
+    def __init__(self, gadm_path: str, unsd_path: str):
+        self.geopy_cache_path = "Database/data/geopy_cache"
+        requests_cache.install_cache(
+            self.geopy_cache_path, allowable_methods=["GET"], allowable_codes=[200], filter_fn=self._rate_limiter
+        )
         geolocator = Nominatim(user_agent="wikimpacts - impactdb; beta. Github: VUB-HYDR/Wikimpacts")
-        self.geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1)
+        self.geocode = geolocator.geocode
         self.gadm = pd.read_csv(gadm_path, sep=None, engine="python")
         self.unsd = pd.read_csv(unsd_path, sep=None, engine="python")
 
@@ -29,7 +27,7 @@ class NormalizeLocation:
             if "Code" not in col:
                 self.unsd[col] = self.unsd[col].apply(lambda s: s.lower() if type(s) == str else s)
 
-        self.logger = Logging.get_logger("normalize_locations")
+        self.logger = Logging.get_logger("normalize_locations", level="INFO")
         self.logger.info("Installed GeoPy cache")
         # frequently used literals
         (
@@ -94,12 +92,22 @@ class NormalizeLocation:
 
         self.us_gadm = self.gadm.loc[self.gadm.COUNTRY == self.united_states]
 
-        self.cardinals = ["north", "south", "east", "west"]
-        self.cardinals.extend(f"{i}ern" for i in ["north", "south", "east", "west"])
-
-    @staticmethod
-    def uninstall_cache():
-        requests_cache.uninstall_cache()
+        self.cardinals = ["north", "south", "east", "west", "north east", "north west", "south east", "south west"]
+        self.cardinals.extend([f"{i}ern" for i in self.cardinals])
+        self.cardinals.extend(
+            [
+                "central",
+                "centre",
+                "center",
+                "downtown",
+                "remote",
+                "isolated",
+                "distant",
+                "urban",
+                "suburban",
+                "regional",
+            ]
+        )
 
     def _clean_cardinal_directions(self, area: str) -> tuple[str, list[str]]:
         area = area.split()
@@ -130,24 +138,27 @@ class NormalizeLocation:
             self.logger.error(f"API call unsuccessful. Error message: {err}")
             return []
 
-    @cache
     def normalize_locations(
         self, area: str, is_country: bool = False, in_country: str = None
-    ) -> tuple[str, str, dict] | None:
+    ) -> tuple[str, str | None, dict | None]:
         """Queries a geocode service for a location (country or smaller) and returns the top result"""
+        original_area = area
         try:
             try:
                 if area:
-                    assert isinstance(area, str), f"Area is not a string: {area}"
+                    assert isinstance(area, str), f"Area `{area}` is not a string; type: {type(area)}"
+                if re.match(
+                    "(country|location|area|adminarea|admin|admin_area|administrative area|administrative_area|none|null)(\s)*(s)*[0-9]*$",
+                    area,
+                    flags=re.IGNORECASE,
+                ):
+                    self.logger.error(f"Input `{area}` of type {type(area)} is not a valid area name")
+                    return (None, None, None)
                 if in_country:
                     assert isinstance(in_country, str), f"Country is not a string: {in_country}"
                 assert not (
                     is_country and in_country
                 ), f"An area cannot be a country (is_country={is_country}) and in a country (in_country={in_country}) simultaneously"
-
-                # if area is None, replace by country name
-                area = in_country if not area and in_country else area
-                assert isinstance(area, str), f"Area is {area}; in_country: {in_country}"
 
             except BaseException as err:
                 self.logger.error(err)
@@ -157,7 +168,7 @@ class NormalizeLocation:
             unsd_search_output = self._get_unsd_region(area, return_name=True) if area and is_country else None
             if unsd_search_output:
                 # TODO: add geojson for unsd regions
-                return [unsd_search_output, "UNSD region", None]
+                return [unsd_search_output.title(), "UNSD region", None]
 
             area = area.lower().strip()
             if "_" in area:
@@ -216,6 +227,23 @@ class NormalizeLocation:
                 )
             else:
                 cardinals = None
+
+            # if results fail again, clean out additional parts of a location name (like "county" or "city")
+            if not l:
+                alt_name = re.sub(
+                    r"(county)|(prefecture)|(district)|(district of)|(city)|(city of)|(region)|(region of)",
+                    "",
+                    area,
+                    flags=re.IGNORECASE,
+                ).strip()
+                l = self.geocode_api_request(
+                    alt_name,
+                    exactly_one=False,
+                    namedetails=True,
+                    geometry="geojson",
+                    extratags=True,
+                    country_codes=country_codes,
+                )
 
             # if results fail again, get results for each possible segment and sort by rank without country restraints
             if not l:
@@ -305,15 +333,14 @@ class NormalizeLocation:
             if cardinals and not is_country:
                 normalized_area_name = f"{normalized_area_name}:<{cardinals}>"
             geojson = json.dumps(location.raw["geojson"]) if isinstance(location.raw["geojson"], dict) else None
-
-            return (normalized_area_name, location.raw["type"], geojson)
+            return (normalized_area_name, f'{location.raw["type"]}:{location.raw["addresstype"]}', geojson)
 
         except BaseException as err:
             self.logger.error(
                 f"Could not find location {area}; is_country: {is_country}; in_country: {in_country}. Error message: {err}."
             )
             # return un-normalized area name
-            return (area, None, None)
+            return (original_area, None, None)
 
     def _get_unsd_region(
         self, area, fuzzy_match_n: int = 1, fuzzy_match_cuttoff: float = 0.8, return_name: bool = False
@@ -339,24 +366,22 @@ class NormalizeLocation:
                     )
 
     @cache
-    def _get_american_area(self, area: str, country: str = None) -> list | None:
+    def _get_american_area(self, area: str) -> list | None:
         # TODO: slim down
         areas = []
         if not area:
             return None
 
-        if area == self.united_states and not country:
+        if area == self.united_states:
             return [self.USA_GID]
 
-        address = [x.strip() for x in area.split(",")] if area else [x.strip() for x in country.split(",")]
+        address = [x.strip() for x in area.split(",")] if area else [x.strip() for x in area.split(",")]
 
         # remove postal codes from the address list (common on OSM)
         address = [i for i in address if not re.match(r"^\d{5}(?:[-\s]\d{4})?$", i)]
 
-        if country == self.united_states and address[-1] != self.united_states:
-            address.append(country)
-
-        assert address[-1] == self.united_states
+        if address[-1] != self.united_states:
+            address.append(self.united_states)
 
         # county level
         if len(address) == 3:
@@ -410,7 +435,7 @@ class NormalizeLocation:
 
             areas = [f"{i}:{','.join(address[:-3]).strip()}" for i in areas]
 
-        return areas
+        return areas if areas else None
 
     @cache
     def get_gadm_gid(
@@ -430,40 +455,49 @@ class NormalizeLocation:
         if unsd_search_output:
             return unsd_search_output
 
-        # handle American States
-        us_address_split = area.split(",")[-1].strip() if area else None
-        us_search_output = (
-            self._get_american_area(area, country)
-            if area and (country == self.united_states or us_address_split == self.united_states)
-            else None
-        )
+        # find US-areas: country, states, and counties
+        if country and not area:
+            us_search = country
+        elif area and not country:
+            us_search = area
+        elif area and country:
+            us_search = (
+                area
+                if (self.united_states in country and self.united_states in area)
+                else (country if not area else (f"{area}, {country}" if country and area else None))
+            )
+
+        us_search_output = self._get_american_area(us_search)
         if us_search_output:
             return us_search_output
 
         # limit GADM search to one country
         gadm_df = pd.DataFrame()
         for col in country_cols:
-            if country in self.gadm[col].unique().tolist() and not area:
+            if country in self.gadm[col].unique().tolist():  # and not area:
                 gadm_df = self.gadm.loc[self.gadm[col] == country]
-                if gadm_df.shape != (0, 0):
+                if gadm_df.shape[0] != 0:
                     break
 
-        gadm_df = self.gadm if gadm_df.shape == (0, 0) else gadm_df
+        gadm_df = self.gadm if gadm_df.shape[0] == 0 else gadm_df
 
         # handle countries, match in order by country column, name at level 0, or alternative names at level 0
         for col in country_cols:
-            if country in gadm_df[col].to_list() and not area:
+            if country in gadm_df[col].unique().tolist() and not area:
                 return gadm_df.loc[gadm_df[col] == country].GID_0.unique().tolist()
 
         # if trying to get matches in a single country, do fuzzy search
         if country and area:
             unique_area_sets = [gadm_df[f"NAME_{l}"].dropna().unique().tolist() for l in range(1, 6)]
-            level = 1
-            for area_set in unique_area_sets:
-                closest_match = difflib.get_close_matches(area, area_set, n=1, cutoff=0.65)
-                if closest_match:
-                    return gadm_df.loc[gadm_df[f"NAME_{level}"] == closest_match[0]][f"GID_{level}"].unique().tolist()
-                level += 1
+            for cutoff in [0.75, 0.70]:
+                level = 1
+                for area_set in unique_area_sets:
+                    closest_match = difflib.get_close_matches(area, area_set, n=1, cutoff=cutoff)
+                    if closest_match:
+                        return (
+                            gadm_df.loc[gadm_df[f"NAME_{level}"] == closest_match[0]][f"GID_{level}"].unique().tolist()
+                        )
+                    level += 1
 
         area = country if (country and not area) else area
         for level in range(1, 6):
@@ -472,11 +506,38 @@ class NormalizeLocation:
                 return gadm_df.loc[gadm_df[name_col] == area][gid_col].unique().tolist()
 
             # clean out additional parts of a location name (like "county" or "city")
-            alt_name = re.sub(
-                r"(county)|(city)|(prefecture)|(district)|(city of)|(region)", "", area, flags=re.IGNORECASE
-            ).strip()
-            if alt_name in gadm_df[name_col].to_list():
-                return gadm_df.loc[gadm_df[name_col] == alt_name][gid_col].unique().tolist()
+            if isinstance(area, str):
+                alt_name = re.sub(
+                    r"(county)|(city)|(prefecture)|(district)|(city of)|(region)", "", area, flags=re.IGNORECASE
+                ).strip()
+                if alt_name in gadm_df[name_col].to_list():
+                    return gadm_df.loc[gadm_df[name_col] == alt_name][gid_col].unique().tolist()
+
+        for level in range(1, 5):
+            varname_col, gid_col = f"VARNAME_{level}", f"GID_{level}"
+            varnames_list = [x for x in gadm_df[varname_col].to_list() if isinstance(x, str)]
+            varnames_list = list(set(varnames_list))
+            varnames_list = [x.split("|") for x in varnames_list]
+            for varnames in varnames_list:
+                if area in varnames:
+                    return (
+                        gadm_df.loc[
+                            gadm_df[varname_col].apply(lambda x: True if isinstance(x, str) and area in x else False)
+                        ][gid_col]
+                        .unique()
+                        .tolist()
+                    )
+        return []
+
+    def get_gid_0(self, gid: str) -> str:
+        """Returns a country name by GID_0"""
+        try:
+            assert len(gid) == 3
+            gid_0 = list(set(self.gadm.loc[self.gadm["GID_0"] == gid]["NAME_0"]))
+            assert len(gid_0) == 1
+            return gid_0[0]
+        except:
+            None
 
     @staticmethod
     def extract_locations(
@@ -505,6 +566,14 @@ class NormalizeLocation:
         except BaseException:
             return [], []
 
-    def _debug(self, response):
+    def _rate_limiter(
+        self,
+        response,
+    ):
         self.logger.debug(type(response))
+        if type(response) == requests_cache.models.response.CachedResponse:
+            self.logger.debug("Response cached!")
+        else:
+            self.logger.debug(f"Ratelimiting by 1 second. Response type: {type(response)}")
+            sleep(1)
         return True

@@ -1,7 +1,5 @@
 # ignore raw files
-Database/raw/*/**/dev
-Database/raw/*/**/test
-results
+**tmp
 
 # ignore notebooks
 **.ipynb
@@ -11,6 +9,10 @@ results
 
 # ignore openai api keys
 **/*.env
+
+#ignore .jsonl file for batch process
+**/*.jsonl
+
 
 # ... except for this excel file (gold flat-format annotation table)
 !Database/gold/ImpactDB_DataTable_Validation.xlsx
@@ -26,3 +28,11 @@ geopy_cache.sqlite
 
 # pytest
 .pytest_*
+
+# vscode
+.vscode
+
+# full runs
+**/*.json.fixed.json
+**/geojson
+*full_run*/

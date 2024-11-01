@@ -1,0 +1,884 @@
+[
+  {
+    "Event_ID": "1jaO5Hy",
+    "Sources": "https://en.wikipedia.org/wiki/Tornadoes_of_1958",
+    "Event_Names": "Tornadoes of 1958",
+    "Json_Error": "{\n  \"Total_Summary_Damage\": {\n    \"Total_Damage\": \"NULL\",\n    \"Total_Damage_Unit\": \"NULL\",\n    \"Total_Damage_Inflation_Adjusted\": \"NULL\",\n    \"Total_Damage_Inflation_Adjusted_Year\": \"NULL\",\n    \"Total_Damage_Annotation\": \"NULL\"\n  },\n  \"Instance_Per_Administrative_Areas_Damage\": [\n    {\n      \"Administrative_Areas\": [\"United States\"],\n      \"Start_Date\": \"January 1\",\n      \"End_Date\": \"December 11\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"Info_Box\"\n    }\n  ],\n  \"Specific_Instance_Per_Administrative_Area_Damage\": [\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Wildwood\", \"Southern Knapp\", \"Cedar Falls\", \"Tainter Lake\", \"Northwestern Colfax\"],\n      \"Start_Date\": \"June 4\",\n      \"End_Date\": \"June 4\",\n      \"Num\": \"83.275 million\",\n      \"Num_Unit\": \"USD\",\n      \"Num_Inflation_Adjusted\": \"No\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"June 3\u20134\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"San Francisco International Airport\"],\n      \"Start_Date\": \"April 1\",\n      \"End_Date\": \"April 1\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"April 1\u20136\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Cortez\"],\n      \"Start_Date\": \"April 1\",\n      \"End_Date\": \"April 1\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"April 1\u20136\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Laguna Beach\"],\n      \"Start_Date\": \"April 1\",\n      \"End_Date\": \"April 1\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"April 1\u20136\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Fletcher\", \"Cement\"],\n      \"Start_Date\": \"April 2\",\n      \"End_Date\": \"April 2\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"April 1\u20136\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Wichita Falls\"],\n      \"Start_Date\": \"April 2\",\n      \"End_Date\": \"April 2\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"April 1\u20136\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Stoneburg\"],\n      \"Start_Date\": \"April 2\",\n      \"End_Date\": \"April 2\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"April 1\u20136\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Remsen\", \"Eastern Alton\", \"Western Newkirk\"],\n      \"Start_Date\": \"April 5\",\n      \"End_Date\": \"April 5\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"April 1\u20136\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"New Athens\", \"Fayetteville\", \"New Memphis Station\", \"Damiansville\", \"Breese\", \"Hagarstown\", \"Western Vandalia\"],\n      \"Start_Date\": \"April 5\",\n      \"End_Date\": \"April 5\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"April 1\u20136\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Perry County\"],\n      \"Start_Date\": \"April 5\",\n      \"End_Date\": \"April 5\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"April 1\u20136\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Vergennes\", \"DuQuoin State Fairgrounds\", \"Southern Du Quoin\", \"Sesser\"],\n      \"Start_Date\": \"April 5\",\n      \"End_Date\": \"April 5\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"April 1\u20136\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Leighton\", \"Wheeler Darn Village\", \"Rogersville\"],\n      \"Start_Date\": \"April 5\",\n      \"End_Date\": \"April 5\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"April 1\u20136\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Lawrence County\", \"Limestone County\"],\n      \"Start_Date\": \"April 5\",\n      \"End_Date\": \"April 5\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"April 1\u20136\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Albertville\", \"Hustleville\", \"Asbury\", \"Grove Oak\", \"Section\"],\n      \"Start_Date\": \"April 6\",\n      \"End_Date\": \"April 6\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"April 1\u20136\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Hampton\"],\n      \"Start_Date\": \"April 6\",\n      \"End_Date\": \"April 6\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"April 1\u20136\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Berea\"],\n      \"Start_Date\": \"April 15\",\n      \"End_Date\": \"April 15\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"April 15\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Northern Anastasia Island\"],\n      \"Start_Date\": \"April 15\",\n      \"End_Date\": \"April 15\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"April 15\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Anglevillas\", \"Fort Pierce\"],\n      \"Start_Date\": \"April 15\",\n      \"End_Date\": \"April 15\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"April 15\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Midlothian\", \"Forreston\"],\n      \"Start_Date\": \"April 21\",\n      \"End_Date\": \"April 21\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"April 21\u201322\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Southern Lone Star\", \"Northern Summerton\"],\n      \"Start_Date\": \"April 22\",\n      \"End_Date\": \"April 22\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"April 21\u201322\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Downtown West Palm Beach\"],\n      \"Start_Date\": \"April 22\",\n      \"End_Date\": \"April 22\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"April 21\u201322\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Downtown Delray Beach\"],\n      \"Start_Date\": \"April 22\",\n      \"End_Date\": \"April 22\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"April 21\u201322\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Bridgeton\"],\n      \"Start_Date\": \"April 23\",\n      \"End_Date\": \"April 23\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"April 23\u201324\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Walla Walla County\"],\n      \"Start_Date\": \"April 24\",\n      \"End_Date\": \"April 24\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"April 23\u201324\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Arlington Plantation\", \"Mayersville\", \"Belzoni\"],\n      \"Start_Date\": \"April 24\",\n      \"End_Date\": \"April 24\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"April 23\u201324\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Logan Elm Village\", \"Circleville\", \"Stoutsville\"],\n      \"Start_Date\": \"May 22\",\n      \"End_Date\": \"May 22\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"May 22\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Tule Lake\"],\n      \"Start_Date\": \"May 22\",\n      \"End_Date\": \"May 22\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"May 22\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Eastern Hugo\", \"Withrow\", \"Stillwater\", \"Oak Park Heights\", \"Bayport\", \"Northern Lakeland\", \"Southern Hudson\", \"Northern River Falls\", \"Lawton\", \"El Paso\", \"Waverly\", \"Exile\", \"Arkansaw\"],\n      \"Start_Date\": \"May 24\",\n      \"End_Date\": \"May 24\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"May 24\u201325\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Will Rogers World Airport\"],\n      \"Start_Date\": \"May 25\",\n      \"End_Date\": \"May 25\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"May 24\u201325\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Decatur\"],\n      \"Start_Date\": \"May 25\",\n      \"End_Date\": \"May 25\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"May 24\u201325\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Benson County\"],\n      \"Start_Date\": \"May 30\",\n      \"End_Date\": \"May 30\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"May 27 \u2013 June 2\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Kampville\"],\n      \"Start_Date\": \"May 31\",\n      \"End_Date\": \"May 31\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"May 27 \u2013 June 2\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Rolling Prairie\"],\n      \"Start_Date\": \"May 31\",\n      \"End_Date\": \"May 31\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"May 27 \u2013 June 2\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Labette\"],\n      \"Start_Date\": \"May 31\",\n      \"End_Date\": \"May 31\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"May 27 \u2013 June 2\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Valley Ford\", \"Fredericks\", \"Roseland\", \"Santa Rosa\"],\n      \"Start_Date\": \"June 1\",\n      \"End_Date\": \"June 1\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"May 27 \u2013 June 2\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Columbia\"],\n      \"Start_Date\": \"June 2\",\n      \"End_Date\": \"June 2\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"May 27 \u2013 June 2\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Avon\", \"Collegeville\"],\n      \"Start_Date\": \"June 4\",\n      \"End_Date\": \"June 4\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"June 3\u20134\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"St. Martin\"],\n      \"Start_Date\": \"June 4\",\n      \"End_Date\": \"June 4\",\n      \"Num\": \"NULL\",\n      \"Num_Unit\": \"NULL\",\n      \"Num_Inflation_Adjusted\": \"NULL\",\n      \"Num_Inflation_Adjusted_Year\": \"NULL\",\n      \"Annotation\": \"June 3\u20134\"\n    },\n    {\n      \"Administrative_Area\": \"United States\",\n      \"Locations\": [\"Chippewa Falls\"],\n      \"Start_Date\": \"June 4\",\n      \"End_Date\": \"June 4",
+    "Total_Summary_Deaths": {
+      "Total_Deaths": ">70",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "67",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Areas": "Poland",
+        "Start_Date": "May 15",
+        "End_Date": "May 16",
+        "Num": "3",
+        "Annotation": "May 15\u201316 (Poland)"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Jackson, Mississippi"
+        ],
+        "Start_Date": "February 26",
+        "End_Date": "February 27",
+        "Num": "8",
+        "Annotation": "February 26\u201327"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Harrisville, Piney Woods, Walnut Grove, Madden, Mississippi"
+        ],
+        "Start_Date": "February 26",
+        "End_Date": "February 27",
+        "Num": "1",
+        "Annotation": "February 26\u201327"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Perry, Greene, Wayne Counties, Mississippi"
+        ],
+        "Start_Date": "February 26",
+        "End_Date": "February 27",
+        "Num": "4",
+        "Annotation": "February 26\u201327"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New Athens, Fayetteville, New Memphis Station, Damiansville, Breese, Hagarstown, Western Vandalia, Illinois"
+        ],
+        "Start_Date": "April 5",
+        "End_Date": "April 5",
+        "Num": "1",
+        "Annotation": "April 1\u20136"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Leighton, Wheeler Darn Village, Rogersville, Alabama"
+        ],
+        "Start_Date": "April 5",
+        "End_Date": "April 5",
+        "Num": "1",
+        "Annotation": "April 1\u20136"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Wildwood, Southern Knapp, Cedar Falls, Tainter Lake, Northwestern Colfax, Wisconsin"
+        ],
+        "Start_Date": "June 4",
+        "End_Date": "June 4",
+        "Num": "21",
+        "Annotation": "June 3\u20134"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Chippewa Falls, Wisconsin"
+        ],
+        "Start_Date": "June 4",
+        "End_Date": "June 4",
+        "Num": "4",
+        "Annotation": "June 3\u20134"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Fall Creek, Eau Claire, Clark, Marathon Counties, Wisconsin"
+        ],
+        "Start_Date": "June 4",
+        "End_Date": "June 4",
+        "Num": "4",
+        "Annotation": "June 3\u20134"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "El Dorado, Kansas"
+        ],
+        "Start_Date": "June 10",
+        "End_Date": "June 10",
+        "Num": "15",
+        "Annotation": "June 10"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Leander Lake, Minnesota"
+        ],
+        "Start_Date": "July 1",
+        "End_Date": "July 2",
+        "Num": "1",
+        "Annotation": "July 1\u20132"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Lucan, Minnesota"
+        ],
+        "Start_Date": "August 4",
+        "End_Date": "August 4",
+        "Num": "1",
+        "Annotation": "August 4"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Oxford, Missouri"
+        ],
+        "Start_Date": "October 8",
+        "End_Date": "October 9",
+        "Num": "2",
+        "Annotation": "October 8\u20139"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Davis, Harrison, Roscoe, Hunter, Chemung, Harvard, Greenwood, Ringwood, Pistakke Highlands, Fox Lake, Ingleside Shore, Round Lake Heights, Round Lake Beach, Venetian Village, Grandwood Park, Gurnee, Northwestern Waukegan, Illinois"
+        ],
+        "Start_Date": "October 8",
+        "End_Date": "October 9",
+        "Num": "1",
+        "Annotation": "October 8\u20139"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Pahokee, Canal Point, Indiantown, Florida"
+        ],
+        "Start_Date": "October 19",
+        "End_Date": "October 19",
+        "Num": "1",
+        "Annotation": "October 19"
+      },
+      {
+        "Administrative_Area": "Poland",
+        "Locations": [
+          "Rawa Mazowiecka, Nowe Miasto"
+        ],
+        "Start_Date": "May 15",
+        "End_Date": "May 16",
+        "Num": "3",
+        "Annotation": "May 15\u201316 (Poland)"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Poland",
+        "Start_Date": "May 15",
+        "End_Date": "May 16",
+        "Num": "NULL",
+        "Annotation": "May 15\u201316 (Poland)"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Poland",
+        "Locations": [
+          "Rawa Mazowiecka",
+          "Nowe Miasto"
+        ],
+        "Start_Date": "May 15",
+        "End_Date": "May 16",
+        "Num": "NULL",
+        "Annotation": "May 15\u201316 (Poland)"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Poland",
+        "Start_Date": "May 15",
+        "End_Date": "May 16",
+        "Num": "NULL",
+        "Annotation": "May 15\u201316 (Poland)"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Poland",
+        "Locations": [
+          "Rawa Mazowiecka",
+          "Nowe Miasto"
+        ],
+        "Start_Date": "May 15",
+        "End_Date": "May 16",
+        "Num": "NULL",
+        "Annotation": "May 15\u201316 (Poland)"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": "Poland",
+        "Start_Date": "May 15",
+        "End_Date": "May 16",
+        "Num": "over 100",
+        "Annotation": "May 15\u201316 (Poland)"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Cochran, Georgia"
+        ],
+        "Start_Date": "January 24",
+        "End_Date": "January 24",
+        "Num": "16",
+        "Annotation": "January 24"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Hosston, Louisiana"
+        ],
+        "Start_Date": "February 26",
+        "End_Date": "February 26",
+        "Num": "2",
+        "Annotation": "February 26\u201327"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Jackson, Mississippi"
+        ],
+        "Start_Date": "February 26",
+        "End_Date": "February 26",
+        "Num": "26",
+        "Annotation": "February 26\u201327"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Harrisville, Piney Woods, Walnut Grove, Madden, Mississippi"
+        ],
+        "Start_Date": "February 26",
+        "End_Date": "February 26",
+        "Num": "34",
+        "Annotation": "February 26\u201327"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "White Sand, Hillsdale, Eastern Lumberton, Mississippi"
+        ],
+        "Start_Date": "February 26",
+        "End_Date": "February 26",
+        "Num": "9",
+        "Annotation": "February 26\u201327"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Gulf Hills, Vancleave, Hurley, Mississippi"
+        ],
+        "Start_Date": "February 26",
+        "End_Date": "February 26",
+        "Num": "1",
+        "Annotation": "February 26\u201327"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Perry, Greene, Wayne Counties, Mississippi"
+        ],
+        "Start_Date": "February 26",
+        "End_Date": "February 26",
+        "Num": "20",
+        "Annotation": "February 26\u201327"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Savannah, Tennessee"
+        ],
+        "Start_Date": "February 26",
+        "End_Date": "February 26",
+        "Num": "NULL",
+        "Annotation": "February 26\u201327"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "South Union, Kentucky"
+        ],
+        "Start_Date": "April 2",
+        "End_Date": "April 2",
+        "Num": "1",
+        "Annotation": "April 1\u20136"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Fletcher, Cement, Oklahoma"
+        ],
+        "Start_Date": "April 2",
+        "End_Date": "April 2",
+        "Num": "1",
+        "Annotation": "April 1\u20136"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Wichita Falls, Texas"
+        ],
+        "Start_Date": "April 2",
+        "End_Date": "April 2",
+        "Num": "14",
+        "Annotation": "April 1\u20136"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Stoneburg, Texas"
+        ],
+        "Start_Date": "April 2",
+        "End_Date": "April 2",
+        "Num": "1",
+        "Annotation": "April 1\u20136"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Remsen, Eastern Alton, Western Newkirk, Iowa"
+        ],
+        "Start_Date": "April 5",
+        "End_Date": "April 5",
+        "Num": "1",
+        "Annotation": "April 1\u20136"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New Athens, Fayetteville, New Memphis Station, Damiansville, Breese, Hagarstown, Western Vandalia, Illinois"
+        ],
+        "Start_Date": "April 5",
+        "End_Date": "April 5",
+        "Num": "8",
+        "Annotation": "April 1\u20136"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Perry County, Missouri"
+        ],
+        "Start_Date": "April 5",
+        "End_Date": "April 5",
+        "Num": "1",
+        "Annotation": "April 1\u20136"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Vergennes, DuQuoin State Fairgrounds, Southern Du Quoin, Sesser, Illinois"
+        ],
+        "Start_Date": "April 5",
+        "End_Date": "April 5",
+        "Num": "11",
+        "Annotation": "April 1\u20136"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Leighton, Wheeler Darn Village, Rogersville, Alabama"
+        ],
+        "Start_Date": "April 5",
+        "End_Date": "April 5",
+        "Num": "1",
+        "Annotation": "April 1\u20136"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Albertville, Hustleville, Asbury, Grove Oak, Section, Alabama"
+        ],
+        "Start_Date": "April 6",
+        "End_Date": "April 6",
+        "Num": "1",
+        "Annotation": "April 1\u20136"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Bereah, Florida"
+        ],
+        "Start_Date": "April 15",
+        "End_Date": "April 15",
+        "Num": "7",
+        "Annotation": "April 15"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Northern Anastasia Island, Florida"
+        ],
+        "Start_Date": "April 15",
+        "End_Date": "April 15",
+        "Num": "9",
+        "Annotation": "April 15"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Anglevillas, Fort Pierce, Florida"
+        ],
+        "Start_Date": "April 15",
+        "End_Date": "April 15",
+        "Num": "20",
+        "Annotation": "April 15"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Midlothian, Forreston, Texas"
+        ],
+        "Start_Date": "April 21",
+        "End_Date": "April 21",
+        "Num": "18",
+        "Annotation": "April 21\u201322"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Southern Lone Star, Northern Summerton, South Carolina"
+        ],
+        "Start_Date": "April 22",
+        "End_Date": "April 22",
+        "Num": "1",
+        "Annotation": "April 21\u201322"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "West Palm Beach, Florida"
+        ],
+        "Start_Date": "April 22",
+        "End_Date": "April 22",
+        "Num": "3",
+        "Annotation": "April 21\u201322"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "El Dorado, Kansas"
+        ],
+        "Start_Date": "June 10",
+        "End_Date": "June 10",
+        "Num": "5",
+        "Annotation": "June 10"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "O'Fallon, Missouri"
+        ],
+        "Start_Date": "June 10",
+        "End_Date": "June 10",
+        "Num": "NULL",
+        "Annotation": "June 10"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Leander Lake, Minnesota"
+        ],
+        "Start_Date": "July 1",
+        "End_Date": "July 1",
+        "Num": "2",
+        "Annotation": "July 1\u20132"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Billings, Montana"
+        ],
+        "Start_Date": "July 2",
+        "End_Date": "July 2",
+        "Num": "2",
+        "Annotation": "July 1\u20132"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Bennington, Maple Grove, West Salem, Illinois"
+        ],
+        "Start_Date": "July 11",
+        "End_Date": "July 11",
+        "Num": "2",
+        "Annotation": "July 10\u201311"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Western Cincinnati, Ohio; Ludlow, Kentucky"
+        ],
+        "Start_Date": "July 11",
+        "End_Date": "July 11",
+        "Num": "8",
+        "Annotation": "July 10\u201311"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Charleston, Illinois"
+        ],
+        "Start_Date": "July 11",
+        "End_Date": "July 11",
+        "Num": "3",
+        "Annotation": "July 10\u201311"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Lucan, Minnesota"
+        ],
+        "Start_Date": "August 4",
+        "End_Date": "August 4",
+        "Num": "2",
+        "Annotation": "August 4"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Northwestern Milwaukee, Wisconsin"
+        ],
+        "Start_Date": "August 7",
+        "End_Date": "August 7",
+        "Num": "4",
+        "Annotation": "August 7"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Willington, Connecticut"
+        ],
+        "Start_Date": "September 7",
+        "End_Date": "September 7",
+        "Num": "2",
+        "Annotation": "September 6\u20137"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Duxbury, Massachusetts"
+        ],
+        "Start_Date": "September 7",
+        "End_Date": "September 7",
+        "Num": "1",
+        "Annotation": "September 6\u20137"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Oxford, Missouri"
+        ],
+        "Start_Date": "October 8",
+        "End_Date": "October 8",
+        "Num": "7",
+        "Annotation": "October 8\u20139"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Burkhardt, Wisconsin"
+        ],
+        "Start_Date": "October 9",
+        "End_Date": "October 9",
+        "Num": "NULL",
+        "Annotation": "October 8\u20139"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Osprey, Florida"
+        ],
+        "Start_Date": "October 19",
+        "End_Date": "October 19",
+        "Num": "NULL",
+        "Annotation": "October 19"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Pahokee, Canal Point, Indiantown, Florida"
+        ],
+        "Start_Date": "October 19",
+        "End_Date": "October 19",
+        "Num": "24",
+        "Annotation": "October 19"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Snead Island, Palmetto Historic District, Palmetto, Florida"
+        ],
+        "Start_Date": "October 31",
+        "End_Date": "October 31",
+        "Num": "4",
+        "Annotation": "October 31"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Pace, Louisiana"
+        ],
+        "Start_Date": "November 14",
+        "End_Date": "November 14",
+        "Num": "1",
+        "Annotation": "November 13\u201317"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Weinert, Texas"
+        ],
+        "Start_Date": "November 17",
+        "End_Date": "November 17",
+        "Num": "7",
+        "Annotation": "November 13\u201317"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Throckmorton, Texas"
+        ],
+        "Start_Date": "November 17",
+        "End_Date": "November 17",
+        "Num": "4",
+        "Annotation": "November 13\u201317"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Olney, Texas"
+        ],
+        "Start_Date": "November 17",
+        "End_Date": "November 17",
+        "Num": "1",
+        "Annotation": "November 13\u201317"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Loveland, Walters, Oklahoma"
+        ],
+        "Start_Date": "November 17",
+        "End_Date": "November 17",
+        "Num": "4",
+        "Annotation": "November 13\u201317"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Dickson, Oklahoma"
+        ],
+        "Start_Date": "November 17",
+        "End_Date": "November 17",
+        "Num": "4",
+        "Annotation": "November 13\u201317"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Bowlegs, Sportsman Lake, Oklahoma"
+        ],
+        "Start_Date": "November 17",
+        "End_Date": "November 17",
+        "Num": "15",
+        "Annotation": "November 13\u201317"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Grenola, Kansas"
+        ],
+        "Start_Date": "November 17",
+        "End_Date": "November 17",
+        "Num": "NULL",
+        "Annotation": "November 13\u201317"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Leavenworth County, Kansas"
+        ],
+        "Start_Date": "November 17",
+        "End_Date": "November 17",
+        "Num": "NULL",
+        "Annotation": "November 13\u201317"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Pomona, Kansas"
+        ],
+        "Start_Date": "November 17",
+        "End_Date": "November 17",
+        "Num": "NULL",
+        "Annotation": "November 13\u201317"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Moundville, Nevada, Missouri"
+        ],
+        "Start_Date": "November 17",
+        "End_Date": "November 17",
+        "Num": "1",
+        "Annotation": "November 13\u201317"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Galt, Missouri"
+        ],
+        "Start_Date": "November 17",
+        "End_Date": "November 17",
+        "Num": "NULL",
+        "Annotation": "November 13\u201317"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Blue Ridge, Missouri"
+        ],
+        "Start_Date": "November 17",
+        "End_Date": "November 17",
+        "Num": "NULL",
+        "Annotation": "November 13\u201317"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Marcus, Lambert, Bismarck, Arkansas"
+        ],
+        "Start_Date": "November 17",
+        "End_Date": "November 17",
+        "Num": "NULL",
+        "Annotation": "November 13\u201317"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Listonia, Georgia"
+        ],
+        "Start_Date": "November 28",
+        "End_Date": "November 28",
+        "Num": "NULL",
+        "Annotation": "November 28"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Chauncey, Georgia"
+        ],
+        "Start_Date": "November 28",
+        "End_Date": "November 28",
+        "Num": "1",
+        "Annotation": "November 28"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "South Sarasota, Florida"
+        ],
+        "Start_Date": "December 11",
+        "End_Date": "December 11",
+        "Num": "1",
+        "Annotation": "December 11"
+      },
+      {
+        "Administrative_Area": "Poland",
+        "Locations": [
+          "Rawa Mazowiecka, Nowe Miasto"
+        ],
+        "Start_Date": "May 15",
+        "End_Date": "May 16",
+        "Num": "over 100",
+        "Annotation": "May 15\u201316 (Poland)"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Main_Event": "Tornado",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind",
+    "Hazards_Annotation": "Info_Box",
+    "Time_Information": {
+      "Start_Date": "January 1, 1958",
+      "End_Date": "December 11, 1958",
+      "Time_Annotation": "Info_Box"
+    },
+    "Administrative_Areas": {
+      "Administrative_Areas": [
+        "United States",
+        "Canada",
+        "Poland",
+        "United Kingdom"
+      ],
+      "Administrative_Areas_Annotation": "Info_Box"
+    }
+  }
+]

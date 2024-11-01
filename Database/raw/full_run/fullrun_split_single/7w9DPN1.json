@@ -1,0 +1,458 @@
+[
+  {
+    "Event_ID": "7w9DPN1",
+    "Sources": "https://en.wikipedia.org/wiki/1866_Atlantic_hurricane_season",
+    "Event_Names": "1866 Atlantic hurricane season",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "July 11",
+        "End_Date": "July 16",
+        "Num": "NULL",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "August 13",
+        "End_Date": "August 18",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "September 4",
+        "End_Date": "September 7",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Areas": [
+          "Bahamas"
+        ],
+        "Start_Date": "September 30",
+        "End_Date": "October 1",
+        "Num": "NULL",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "October 28",
+        "End_Date": "October 30",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm Seven"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New Orleans",
+          "Timbalier Bay",
+          "Matagorda Bay"
+        ],
+        "Start_Date": "July 11",
+        "End_Date": "July 16",
+        "Num": "NULL",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Eastern Yucat\u00e1n Peninsula",
+          "Veracruz"
+        ],
+        "Start_Date": "August 13",
+        "End_Date": "August 18",
+        "Num": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Newfoundland"
+        ],
+        "Start_Date": "September 4",
+        "End_Date": "September 7",
+        "Num": "NULL",
+        "Annotation": "Hurricane Three"
+      },
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Turks and Caicos Islands",
+          "Eleuthera",
+          "Nassau"
+        ],
+        "Start_Date": "September 30",
+        "End_Date": "October 1",
+        "Num": "at least 383",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Long Beach Island",
+          "Jersey City",
+          "Hoboken",
+          "Brooklyn",
+          "Providence"
+        ],
+        "Start_Date": "October 28",
+        "End_Date": "October 30",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm Seven"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Bahamas",
+        "Start_Date": "September 30",
+        "End_Date": "October 1",
+        "Num": "Every building in Nassau was damaged or destroyed.",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "October 30",
+        "End_Date": "October 30",
+        "Num": "three buildings",
+        "Annotation": "Tropical Storm Seven"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Nassau"
+        ],
+        "Start_Date": "September 30",
+        "End_Date": "October 1",
+        "Num": "Every building in Nassau was damaged or destroyed.",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Providence"
+        ],
+        "Start_Date": "October 30",
+        "End_Date": "October 30",
+        "Num": "three buildings",
+        "Annotation": "Tropical Storm Seven"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "391",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "Bahamas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 383",
+        "Annotation": "Hurricane Six"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Nassau"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 383",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "off the coast of Nova Scotia"
+        ],
+        "Start_Date": "September 22",
+        "End_Date": "September 22",
+        "Num": "8",
+        "Annotation": "Hurricane Five"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "Bahamas"
+        ],
+        "Start_Date": "September 30",
+        "End_Date": "October 1",
+        "Num": "75% of the population",
+        "Annotation": "Hurricane Six"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Turks and Caicos Islands"
+        ],
+        "Start_Date": "September 30",
+        "End_Date": "October 1",
+        "Num": "75% of the population",
+        "Annotation": "Hurricane Six"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Bahamas"
+        ],
+        "Start_Date": "September 30",
+        "End_Date": "October 1",
+        "Num": "75% of the population was left homeless and moneyless",
+        "Annotation": "Hurricane Six"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Turks and Caicos Islands"
+        ],
+        "Start_Date": "September 30",
+        "End_Date": "October 1",
+        "Num": "75% of the population was left homeless and moneyless",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Nassau"
+        ],
+        "Start_Date": "September 30",
+        "End_Date": "October 1",
+        "Num": "Every building in Nassau was damaged or destroyed",
+        "Annotation": "Hurricane Six"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "September 22",
+        "End_Date": "September 22",
+        "Num": "slightly injuring fifty others",
+        "Annotation": "Hurricane Five"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Baltimore, Maryland"
+        ],
+        "Start_Date": "September 22",
+        "End_Date": "September 22",
+        "Num": "slightly injuring fifty others",
+        "Annotation": "Hurricane Five"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "Unknown",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "July 11, 1866",
+        "End_Date": "July 16, 1866",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "August 13, 1866",
+        "End_Date": "August 18, 1866",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Areas": [
+          "Bahamas"
+        ],
+        "Start_Date": "September 30, 1866",
+        "End_Date": "October 1, 1866",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "October 28, 1866",
+        "End_Date": "October 30, 1866",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tropical Storm Seven"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Matagorda Bay, Texas"
+        ],
+        "Start_Date": "July 15, 1866",
+        "End_Date": "July 16, 1866",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane One"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Eastern Yucat\u00e1n Peninsula",
+          "Veracruz"
+        ],
+        "Start_Date": "August 16, 1866",
+        "End_Date": "August 18, 1866",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Two"
+      },
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Eleuthera",
+          "Nassau"
+        ],
+        "Start_Date": "September 30, 1866",
+        "End_Date": "October 1, 1866",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Six"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Long Beach Island, New Jersey",
+          "Jersey City, New Jersey",
+          "Hoboken, New Jersey",
+          "Brooklyn, New York",
+          "Providence, Rhode Island"
+        ],
+        "Start_Date": "October 28, 1866",
+        "End_Date": "October 30, 1866",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tropical Storm Seven"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Hurricane One|Hurricane Two|Hurricane Three|Hurricane Four|Hurricane Five|Hurricane Six|Tropical Storm Seven",
+    "Start_Date": "July 11, 1866",
+    "End_Date": "October 30, 1866",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "United States",
+      "Mexico",
+      "Bahamas",
+      "Turks and Caicos Islands",
+      "Canada",
+      "Jamaica",
+      "British Virgin Islands",
+      "St. Thomas"
+    ],
+    "Administrative_Areas_Annotation": "1866 Atlantic hurricane season"
+  }
+]

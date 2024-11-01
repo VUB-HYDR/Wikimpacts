@@ -1,0 +1,908 @@
+[
+  {
+    "Event_ID": "bXqGa8y",
+    "Sources": "https://en.wikipedia.org/wiki/Hurricane_Iota",
+    "Event_Names": "Hurricane Iota",
+    "Total_Summary_Affected": {
+      "Total_Affected": "5.2 million",
+      "Total_Affected_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4 million",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "366,123",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Areas": "Nicaragua",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "63,000",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Areas": "El Salvador",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "700",
+        "Annotation": "El Salvador"
+      },
+      {
+        "Administrative_Areas": "Colombia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "497",
+        "Annotation": "Mainland"
+      },
+      {
+        "Administrative_Areas": "Colombia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "28,000",
+        "Annotation": "Mainland"
+      },
+      {
+        "Administrative_Areas": "Colombia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "155,000",
+        "Annotation": "Mainland"
+      },
+      {
+        "Administrative_Areas": "Colombia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "112",
+        "Annotation": "Colombia"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "297,000",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Venezuela",
+        "Locations": [
+          "Silva municipality"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "288 homes",
+        "Annotation": "Venezuela"
+      },
+      {
+        "Administrative_Area": "Colombia",
+        "Locations": [
+          "Moh\u00e1n sector of Dabeiba"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "497",
+        "Annotation": "Mainland"
+      },
+      {
+        "Administrative_Area": "Colombia",
+        "Locations": [
+          "Choc\u00f3 Department"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "28,000",
+        "Annotation": "Mainland"
+      },
+      {
+        "Administrative_Area": "Colombia",
+        "Locations": [
+          "Cartagena"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "155,000",
+        "Annotation": "Mainland"
+      },
+      {
+        "Administrative_Area": "Colombia",
+        "Locations": [
+          "Providencia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "112",
+        "Annotation": "Colombia"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Chiapas",
+          "Tabasco",
+          "Veracruz"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "297,000",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Venezuela",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Venezuela"
+      },
+      {
+        "Administrative_Areas": "Colombia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mainland"
+      },
+      {
+        "Administrative_Areas": "Colombia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "98\u201399 percent of structures on the island were damaged or destroyed",
+        "Annotation": "Providencia and San Andr\u00e9s"
+      },
+      {
+        "Administrative_Areas": "Nicaragua",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Nearly 44,000 homes",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "almost 59,000 homes",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Venezuela",
+        "Locations": [
+          "Silva municipality",
+          "El Cayude",
+          "El Tranquero",
+          "Santa Ana"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "288 homes",
+        "Annotation": "Venezuela"
+      },
+      {
+        "Administrative_Area": "Colombia",
+        "Locations": [
+          "Moh\u00e1n sector of Dabeiba"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "67 homes destroyed, 104 others damaged",
+        "Annotation": "Mainland"
+      },
+      {
+        "Administrative_Area": "Colombia",
+        "Locations": [
+          "Choc\u00f3 Department"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mainland"
+      },
+      {
+        "Administrative_Area": "Colombia",
+        "Locations": [
+          "Atl\u00e1ntico Department"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "more than 1,000 homes",
+        "Annotation": "Mainland"
+      },
+      {
+        "Administrative_Area": "Colombia",
+        "Locations": [
+          "Cartagena"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Numerous homes",
+        "Annotation": "Mainland"
+      },
+      {
+        "Administrative_Area": "Colombia",
+        "Locations": [
+          "Providencia"
+        ],
+        "Start_Date": "November 15",
+        "End_Date": "November 16",
+        "Num": "98\u201399 percent of structures on the island were damaged or destroyed",
+        "Annotation": "Providencia and San Andr\u00e9s"
+      },
+      {
+        "Administrative_Area": "Colombia",
+        "Locations": [
+          "San Andr\u00e9s"
+        ],
+        "Start_Date": "November 15",
+        "End_Date": "November 16",
+        "Num": "several homes",
+        "Annotation": "Providencia and San Andr\u00e9s"
+      },
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "Puerto Cabezas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "Haulover"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "Wawa Bar"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "Santa Teresa",
+          "Carazo"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "Wiwil\u00ed de Jinotega"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "Quilal\u00ed"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "Macizo de Penas Blancas"
+        ],
+        "Start_Date": "November 17",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Tocoa"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "San Manuel Colohete"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Los Trapiches"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Brus Laguna"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Various concrete and wooden houses",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Cop\u00e1n Ruinas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Chiapas",
+          "Tabasco",
+          "Veracruz"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "almost 59,000 homes",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "84 total",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Nicaragua",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 28",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 16",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Areas": "Panama",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "Santa Teresa, Carazo",
+          "Wiwil\u00ed de Jinotega",
+          "Quilal\u00ed",
+          "Macizo de Penas Blancas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 28",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "San Manuel Colohete",
+          "Los Trapiches"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 16",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Area": "Panama",
+        "Locations": [
+          "Nole Duima in the Ng\u00e4be-Bugl\u00e9 Comarca"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Nicaragua",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "63,000",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "80,000",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Areas": "El Salvador",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "700",
+        "Annotation": "El Salvador"
+      },
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "185,000",
+        "Annotation": "Honduras"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "63,000",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "80,000",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Area": "El Salvador",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "700",
+        "Annotation": "El Salvador"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "185,000",
+        "Annotation": "Honduras"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Nicaragua",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Nearly 44,000 homes suffered total or partial damage",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Areas": "Colombia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "98\u201399 percent of structures on the island were damaged or destroyed",
+        "Annotation": "Providencia and San Andr\u00e9s"
+      },
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Honduras"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Venezuela",
+        "Locations": [
+          "Silva municipality",
+          "El Cayude",
+          "El Tranquero",
+          "Santa Ana"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "288 homes",
+        "Annotation": "Venezuela"
+      },
+      {
+        "Administrative_Area": "Colombia",
+        "Locations": [
+          "Moh\u00e1n sector of Dabeiba",
+          "Choc\u00f3 Department",
+          "Carmen de Atrato",
+          "Santander Department",
+          "Cimitarra",
+          "Atl\u00e1ntico Department",
+          "Cartagena"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mainland"
+      },
+      {
+        "Administrative_Area": "Colombia",
+        "Locations": [
+          "Providencia",
+          "San Andr\u00e9s"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "98\u201399 percent of structures on the island were damaged or destroyed",
+        "Annotation": "Providencia and San Andr\u00e9s"
+      },
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "Puerto Cabezas",
+          "Haulover",
+          "Santa Teresa",
+          "Wiwil\u00ed de Jinotega",
+          "Quilal\u00ed",
+          "Macizo de Penas Blancas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Nearly 44,000 homes suffered total or partial damage",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Tocoa",
+          "San Manuel Colohete",
+          "Los Trapiches",
+          "Brus Laguna",
+          "Cop\u00e1n Ruinas",
+          "Ram\u00f3n Villeda Morales International Airport"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Chiapas",
+          "Tabasco",
+          "Veracruz"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "almost 59,000 homes being damaged",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Colombia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "20",
+        "Annotation": "Mainland"
+      },
+      {
+        "Administrative_Areas": "Colombia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "6",
+        "Annotation": "Providencia and San Andr\u00e9s"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Colombia",
+        "Locations": [
+          "Moh\u00e1n sector of Dabeiba"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "20",
+        "Annotation": "Mainland"
+      },
+      {
+        "Administrative_Area": "Colombia",
+        "Locations": [
+          "Providencia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "6",
+        "Annotation": "Providencia and San Andr\u00e9s"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$1.4 billion",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Nicaragua",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$564 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "more than 10 billion dollars",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Areas": "Colombia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "150 billion pesos",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Colombia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Venezuela",
+        "Locations": [
+          "Silva municipality",
+          "El Cayude",
+          "El Tranquero",
+          "Santa Ana",
+          "Mat\u00edcora reservoir",
+          "Mauroa",
+          "Barrancas river",
+          "Quebrada de Uca river",
+          "Miranda"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Venezuela"
+      },
+      {
+        "Administrative_Area": "Colombia",
+        "Locations": [
+          "Moh\u00e1n sector of Dabeiba",
+          "Choc\u00f3 Department",
+          "Carmen de Atrato",
+          "Santander Department",
+          "Cimitarra",
+          "Carcas\u00ed",
+          "Enciso",
+          "Atl\u00e1ntico Department",
+          "Malambo",
+          "Candelaria",
+          "Carreto",
+          "Cartagena",
+          "San Pedro neighborhood"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Mainland"
+      },
+      {
+        "Administrative_Area": "Colombia",
+        "Locations": [
+          "Providencia",
+          "San Andr\u00e9s"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Providencia and San Andr\u00e9s"
+      },
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "Puerto Cabezas",
+          "Haulover",
+          "Santa Teresa",
+          "Carazo",
+          "Wiwil\u00ed de Jinotega",
+          "Quilal\u00ed",
+          "Macizo de Penas Blancas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "12.3 billion c\u00f3rdobas",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Nicaragua"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "Tocoa",
+          "San Manuel Colohete",
+          "Los Trapiches",
+          "Brus Laguna",
+          "Cop\u00e1n Ruinas",
+          "Ram\u00f3n Villeda Morales International Airport"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Honduras"
+      },
+      {
+        "Administrative_Area": "Panama",
+        "Locations": [
+          "Nole Duima",
+          "Soloy"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Chiapas",
+          "Tabasco",
+          "Veracruz"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood|Lightning",
+    "Hazards_Annotation": "Info_Box|Meteorological history|Mainland",
+    "Start_Date": "November 13, 2020",
+    "End_Date": "November 18, 2020",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "ABC islands",
+      "Colombia",
+      "Jamaica",
+      "Honduras",
+      "Nicaragua",
+      "El Salvador",
+      "Panama",
+      "Mexico",
+      "Venezuela"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

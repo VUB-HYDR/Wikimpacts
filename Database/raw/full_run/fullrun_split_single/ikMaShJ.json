@@ -1,0 +1,593 @@
+[
+  {
+    "Event_ID": "ikMaShJ",
+    "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Gladys_(1991)",
+    "Event_Names": "Tropical Storm Gladys (1991)",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "67,000 people",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Areas": "South Korea",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "40,000 homeless",
+        "Annotation": "South Korea"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Tarlac",
+          "Pampanga",
+          "Zambales",
+          "Manila"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "67,000 people",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Kyushu",
+          "Kagoshima Prefecture",
+          "Kanagawa Prefecture",
+          "Hakone",
+          "Odawara",
+          "Tokyo",
+          "Okutama",
+          "Izu",
+          "Chiba Prefecture",
+          "Otsuki",
+          "Ibaraki Prefecture",
+          "Saitama Prefecture",
+          "Gunma Prefecture",
+          "Tochigi Prefecture",
+          "Fukushima Prefecture"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "South Korea",
+        "Locations": [
+          "Pusan",
+          "Ulsan",
+          "Kyongju",
+          "Changwon",
+          "Masan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "40,000 homeless",
+        "Annotation": "South Korea"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Areas": "South Korea",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "South Korea"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Kagoshima Prefecture"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "168 homes damaged and 12 others destroyed",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Kanagawa Prefecture"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "62 homes damaged and 3 more destroyed",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Tokyo"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "19 homes damaged and 5 destroyed",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Okutama"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2 wooden houses and a hotel buried",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Izu"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Ibaraki Prefecture"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "18 homes damaged and 1 destroyed",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Saitama Prefecture"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,495 homes damaged and 224 others destroyed",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Tochigi Prefecture"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "658 homes damaged and 76 others destroyed",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Fukushima Prefecture"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "50 homes sustained damage",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "South Korea",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "6,700 houses flooded and over 1,500 houses damaged",
+        "Annotation": "South Korea"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "113 total",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "23 fatalities",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Areas": "South Korea",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 90 people",
+        "Annotation": "South Korea"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Hakone"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1 person",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Okutama"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5 people",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Izu"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3 people",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Otsuki"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "7 people",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "South Korea",
+        "Locations": [
+          "Punsan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8 people",
+        "Annotation": "South Korea"
+      },
+      {
+        "Administrative_Area": "South Korea",
+        "Locations": [
+          "Changwon"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5 people",
+        "Annotation": "South Korea"
+      },
+      {
+        "Administrative_Area": "South Korea",
+        "Locations": [
+          "Masan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2 people",
+        "Annotation": "South Korea"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "67,000",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Areas": "South Korea",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "40,000",
+        "Annotation": "South Korea"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "six villages in Zambales",
+          "nine cities in Pampanga"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "15,000;52,000",
+        "Annotation": "Philippines"
+      },
+      {
+        "Administrative_Area": "South Korea",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "500",
+        "Annotation": "South Korea"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Areas": "South Korea",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "40,000 homeless",
+        "Annotation": "South Korea"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Kagoshima Prefecture"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "six people homeless",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Saitama Prefecture"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "668 homeless",
+        "Annotation": "Japan"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Japan",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "11",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Areas": "South Korea",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "62",
+        "Annotation": "South Korea"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Kagoshima Prefecture"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Tokyo"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Saitama Prefecture"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "South Korea",
+        "Locations": [
+          "Punsan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "South Korea"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$253 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Japan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "\u00a511.9 billion",
+        "Num_Unit": "JPY",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Areas": [
+          "South Korea"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "US$164 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "South Korea"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Tokushima Prefecture"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "\u00a5160 million",
+        "Num_Unit": "JPY",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Gunma Prefecture"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "\u00a53.8 billion",
+        "Num_Unit": "JPY",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "Japan",
+        "Locations": [
+          "Tochigi Prefecture"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "\u00a514.3 billion",
+        "Num_Unit": "JPY",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Japan"
+      },
+      {
+        "Administrative_Area": "South Korea",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "US$146 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "South Korea"
+      },
+      {
+        "Administrative_Area": "South Korea",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "property damage exceeding $44 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "South Korea"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Japan|South Korea",
+    "Start_Date": "August 15, 1991",
+    "End_Date": "August 24, 1991",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Japan",
+      "South Korea",
+      "Philippines"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

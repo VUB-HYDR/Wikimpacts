@@ -1,0 +1,482 @@
+[
+  {
+    "Event_ID": "oXAO3fd",
+    "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Koni",
+    "Event_Names": "Tropical Storm Koni",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "July 17, 2003",
+        "End_Date": "July 18, 2003",
+        "Num": "Four people",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Areas": [
+          "China"
+        ],
+        "Start_Date": "July 21, 2003",
+        "End_Date": "July 21, 2003",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Areas": [
+          "Vietnam"
+        ],
+        "Start_Date": "July 22, 2003",
+        "End_Date": "July 22, 2003",
+        "Num": "Three people",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "July 17, 2003",
+        "End_Date": "July 18, 2003",
+        "Num": "Four people",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Hainan"
+        ],
+        "Start_Date": "July 21, 2003",
+        "End_Date": "July 21, 2003",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Do Son",
+          "Tam Diep",
+          "Thanh H\u00f3a Province",
+          "Th\u00e1i B\u00ecnh",
+          "Hanoi"
+        ],
+        "Start_Date": "July 22, 2003",
+        "End_Date": "July 22, 2003",
+        "Num": [
+          "One person in Do Son",
+          "One person in Tam Diep",
+          "Eighteen people in four northern provinces",
+          "Ten people in Th\u00e1i B\u00ecnh"
+        ],
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 1,400 homes",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "approximately 1,000 homes",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Hainan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 1,400 homes",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Thanh H\u00f3a Province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "300 homes",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Th\u00e1i B\u00ecnh"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "250 residences",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Hanoi"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "5 total",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Do Son",
+          "Tam Diep"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Tam Diep"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Hainan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3,000 vehicles stranded",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "China",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 1,400 homes collapsed",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "approximately 1,000 homes were destroyed",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Hainan"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 1,400 homes collapsed",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Thanh H\u00f3a Province"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "the roofs of 300 homes were torn apart",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Th\u00e1i B\u00ecnh"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "250 residences damaged",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Philippines",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "18",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Th\u00e1i B\u00ecnh"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "10",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "18",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Philippines",
+          "China",
+          "Vietnam"
+        ],
+        "Start_Date": "July 15, 2003",
+        "End_Date": "July 23, 2003",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Philippines"
+        ],
+        "Start_Date": "July 15, 2003",
+        "End_Date": "July 17, 2003",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Hainan"
+        ],
+        "Start_Date": "July 21, 2003",
+        "End_Date": "July 21, 2003",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Vietnam"
+        ],
+        "Start_Date": "July 22, 2003",
+        "End_Date": "July 22, 2003",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$16.9 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Philippines"
+        ],
+        "Start_Date": "July 15, 2003",
+        "End_Date": "July 17, 2003",
+        "Num": "$1.26 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Areas": [
+          "China"
+        ],
+        "Start_Date": "July 21, 2003",
+        "End_Date": "July 21, 2003",
+        "Num": "$16.9 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Philippines",
+        "Locations": [
+          "Central Philippines"
+        ],
+        "Start_Date": "July 15, 2003",
+        "End_Date": "July 17, 2003",
+        "Num": "$1.26 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      },
+      {
+        "Administrative_Area": "China",
+        "Locations": [
+          "Hainan"
+        ],
+        "Start_Date": "July 21, 2003",
+        "End_Date": "July 21, 2003",
+        "Num": "$16.9 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Preparations and impact"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Start_Date": "July 15, 2003",
+    "End_Date": "July 23, 2003",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Philippines",
+      "China",
+      "Vietnam"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]
