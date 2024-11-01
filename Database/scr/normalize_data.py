@@ -55,7 +55,7 @@ class DataGapUtils:
         return l1, l2, l3
 
     @staticmethod
-    def fill_date(row: dict, replace_with_date: dict):
+    def fill_date(row: dict, replace_with_date: dict) -> dict:
         year_cols = [x for x in row.keys() if "_Date_Year" in x]
         if all([True if row[d] is None else False for d in year_cols]):
             for c in year_cols:
@@ -63,8 +63,11 @@ class DataGapUtils:
         return row
 
     @staticmethod
-    def fill_area(row: dict, replace_with_area: dict):
-        pass
+    def fill_area(row: dict, missing_areas: dict[str, list], area_col: str) -> dict:
+        l1_area_col: str = "Administrative_Areas"
+        for c in ["Norm", "Type", "GID"]:
+            row[f"{l1_area_col}_{c}"] = row[f"{l1_area_col}_{c}"].extend(missing_areas[f"{area_col}_{c}"])
+        return row
 
     @staticmethod
     def fill_count(row: dict, replace_with_count: dict):
