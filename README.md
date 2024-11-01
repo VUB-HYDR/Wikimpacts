@@ -295,10 +295,10 @@ To perform this on the existing dummy data:
 source Database/insert_full_run.sh Database/output/dummy impact.v1.db tmp/files
 
 # dry run (aka only stores the data after de-duplicating geojson objects)
-source Database/insert_full_run.sh Database/output/dummy impact.v1.db tmp/files --dry_run --save_output Database/output/dummy_deduplciated
+source Database/insert_full_run.sh Database/output/dummy impact.v1.db tmp/files --dry_run --save_output --output_dir=Database/output/dummy_deduplciated
 
 # normal run with saving the output (notice that the `-d`/`--dry_run` flag is replaced with an empty string)
-source Database/insert_full_run.sh Database/output/dummy impact.v1.db tmp/files "" --save_outout Database/output/dummy_deduplciated
+source Database/insert_full_run.sh Database/output/dummy impact.v1.db tmp/files "" --save_outout  --output_dir=Database/output/dummy_deduplciated
 
 ```
 
