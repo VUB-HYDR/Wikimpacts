@@ -3,6 +3,7 @@ import json
 import os
 import pathlib
 import re
+from datetime import datetime
 from typing import Tuple, Union
 
 import pandas as pd
@@ -10,6 +11,7 @@ import pycountry
 import shortuuid
 from dateparser.date import DateDataParser
 from dateparser.search import search_dates
+from iso4217 import Currency
 from spacy import language as spacy_language
 from unidecode import unidecode
 
@@ -214,6 +216,22 @@ class NormalizeUtils:
             fname = os.path.join(target_dir, f"{chunk:04d}.json")
             pathlib.Path(target_dir).mkdir(parents=True, exist_ok=True)
             slc.to_json(fname, **json_wargs)
+
+    def check_currency(self, currency_text: str) -> bool:
+        try:
+            Currency(currency_text)
+            return True
+        except ValueError as err:
+            self.logger.error(f"Bad currency found: `{currency_text}`: {err}")
+            return False
+
+    def check_date(self, year: int, month: int, day: int) -> bool:
+        try:
+            datetime(year, month, day)
+            return True
+        except ValueError as err:
+            self.logger.error(f"Y: {year}; M: {month}; D: {day}. Error: {err}")
+            return False
 
 
 class NormalizeJsonOutput:
