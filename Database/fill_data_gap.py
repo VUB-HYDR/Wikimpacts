@@ -34,12 +34,7 @@ if __name__ == "__main__":
 
     for e_id in list(l1[event_id].unique()):
         l1_areas = l1.loc[l1[event_id] == e_id][f"{admin_areas}_Norm"].iloc[0]
-        area_col_suffix = [
-            "Norm",
-            "Type",
-            "GID",
-            # "GeoJson"
-        ]
+        area_col_suffix = ["Norm", "Type", "GID", "GeoJson"]
         l1_target_area_cols = [f"{admin_areas}_{s}" for s in area_col_suffix]
 
         for impact in l2.keys():
@@ -54,7 +49,7 @@ if __name__ == "__main__":
                         l2_idx = [l2_list.index(area) for area in l2_list if area not in l1_areas]
 
                         if l2_idx:
-                            logger.info(f"Filling dapa gap for Event_ID {e_id} for {impact} at l2")
+                            logger.info(f"Filling area data gap for Event_ID {e_id} for {impact} at l2")
                             target_area_cols = [f"{admin_areas}_{s}" for s in area_col_suffix]
                             l2_areas = l2[impact][l2[impact][event_id] == e_id][target_area_cols].to_dict(orient="list")
                             for k, v in l2_areas.items():
@@ -74,7 +69,7 @@ if __name__ == "__main__":
                         l3_area = {}
                         l3_str = l3_series.iloc[n]
                         if isinstance(l3_str, str) and l3_str not in l1_areas:
-                            logger.info(f"Filling dapa gap for Event_ID {e_id} for {impact} at l3")
+                            logger.info(f"Filling area data gap for Event_ID {e_id} for {impact} at l3")
                             target_area_cols = [f"{admin_area}_{s}" for s in area_col_suffix]
                             l3_area = l3[impact][l3[impact][event_id] == e_id][target_area_cols].iloc[n].to_dict()
                             for k, v in l3_area.items():
