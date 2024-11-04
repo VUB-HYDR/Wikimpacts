@@ -674,3 +674,16 @@ class CategoricalValidation:
         except BaseException as err:
             self.logger.error(f"Could not validate relationship between {hazards} and {main_event}. Error: {err}")
         return row
+
+    def validate_currency_monetary_impact(self, row: dict) -> dict:
+        cols = ["Total_{}_Min", "Total_{}_Max", "Total_{}_Approx", "Total_{}_Unit", "Total_{}_Inflation_Adjusted"]
+
+        for category in ["Damage", "Insured_Damage"]:
+            try:
+                Currency(row[f"Total_{category}_Unit"])
+            except ValueError as err:
+                self.logger.error(f"""Invalid currency {row[f"Total_{category}_Unit"]}. Error: {err}""")
+                for c in cols:
+                    cat = c.format(category)
+                    row[cat] = None
+        return row
