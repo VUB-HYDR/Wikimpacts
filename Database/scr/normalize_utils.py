@@ -4,7 +4,7 @@ import os
 import pathlib
 import re
 from datetime import datetime
-from typing import Tuple, Union
+from typing import Any, Tuple, Union
 
 import pandas as pd
 import pycountry
@@ -239,7 +239,7 @@ class NormalizeJsonOutput:
         self.logger = Logging.get_logger("normalize-utils-json")
 
     @staticmethod
-    def infer_date_from_dict(x: any) -> str:
+    def infer_date_from_dict(x: Any) -> str:
         """
         This function normalizes date output in various formats by some LLMs.
         Current usecases:
