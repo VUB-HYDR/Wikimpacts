@@ -3,13 +3,15 @@ import json
 import os
 import pathlib
 import re
-from typing import Tuple, Union
+from datetime import datetime
+from typing import Any, Tuple, Union
 
 import pandas as pd
 import pycountry
 import shortuuid
 from dateparser.date import DateDataParser
 from dateparser.search import search_dates
+from iso4217 import Currency
 from spacy import language as spacy_language
 from unidecode import unidecode
 
@@ -215,13 +217,29 @@ class NormalizeUtils:
             pathlib.Path(target_dir).mkdir(parents=True, exist_ok=True)
             slc.to_json(fname, **json_wargs)
 
+    def check_currency(self, currency_text: str) -> bool:
+        try:
+            Currency(currency_text)
+            return True
+        except ValueError as err:
+            self.logger.error(f"Bad currency found: `{currency_text}`: {err}")
+            return False
+
+    def check_date(self, year: int, month: int, day: int) -> bool:
+        try:
+            datetime(year, month, day)
+            return True
+        except ValueError as err:
+            self.logger.error(f"Y: {year}; M: {month}; D: {day}. Error: {err}")
+            return False
+
 
 class NormalizeJsonOutput:
     def __init__(self):
         self.logger = Logging.get_logger("normalize-utils-json")
 
     @staticmethod
-    def infer_date_from_dict(x: any) -> str:
+    def infer_date_from_dict(x: Any) -> str:
         """
         This function normalizes date output in various formats by some LLMs.
         Current usecases:
@@ -655,4 +673,17 @@ class CategoricalValidation:
             row[hazards] = list(set([h for h in row[hazards] if h.lower() in [x.lower() for x in related_hazards]]))
         except BaseException as err:
             self.logger.error(f"Could not validate relationship between {hazards} and {main_event}. Error: {err}")
+        return row
+
+    def validate_currency_monetary_impact(self, row: dict) -> dict:
+        cols = ["Total_{}_Min", "Total_{}_Max", "Total_{}_Approx", "Total_{}_Unit", "Total_{}_Inflation_Adjusted"]
+
+        for category in ["Damage", "Insured_Damage"]:
+            try:
+                Currency(row[f"Total_{category}_Unit"])
+            except ValueError as err:
+                self.logger.error(f"""Invalid currency {row[f"Total_{category}_Unit"]}. Error: {err}""")
+                for c in cols:
+                    cat = c.format(category)
+                    row[cat] = None
         return row

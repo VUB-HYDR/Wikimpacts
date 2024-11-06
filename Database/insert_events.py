@@ -8,7 +8,12 @@ import pandas as pd
 from pandarallel import pandarallel
 from tqdm import tqdm
 
-from Database.scr.normalize_utils import GeoJsonUtils, Logging, NormalizeUtils
+from Database.scr.normalize_utils import (
+    CategoricalValidation,
+    GeoJsonUtils,
+    Logging,
+    NormalizeUtils,
+)
 
 pandarallel.initialize(progress_bar=False, nb_workers=5)
 
@@ -111,6 +116,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     logger = Logging.get_logger(f"database-insertion", level="INFO", filename="v1_full_run_insertion_raw.log")
     utils = NormalizeUtils()
+    validation = CategoricalValidation()
 
     connection = sqlite3.connect(args.database_name)
     cursor = connection.cursor()
@@ -128,10 +134,10 @@ if __name__ == "__main__":
         logger.info(f"Inserting {main_level}...\n")
         for f in tqdm(files, desc="Files"):
             data = pd.read_parquet(f"{args.file_dir}/{f}", engine="fastparquet")
+            data = utils.replace_nulls(data)
 
-            logger.info("Converting everything to strings...")
-            for c in data.columns:
-                data[c] = data[c].astype(str)
+            # turn invalid currencies to None (for L1 only)
+            data = data.parallel_apply(lambda row: validation.validate_currency_monetary_impact(row), axis=1)
 
             # geojson in l1 is always of type list
             if args.dump_geojson_to_file:
@@ -156,12 +162,14 @@ if __name__ == "__main__":
                         axis=1,
                     )
 
-                    for i in ["GeoJson", "Norm"]:
-                        data[f"{col}_{i}"] = data[f"{col}_{i}"].astype(str)
+            logger.info("Converting everything to strings...")
+            data.replace(float("nan"), None, inplace=True)
+            for c in data.columns:
+                data[c] = data[c].astype(str)
 
             # change if_exists to "append" to avoid overwriting the database
             # choose "replace" to overwrite the database with a fresh copy of the data
-            for i in tqdm(range(len(data)), desc=f"Inserting {f} into {args.database_name}"):
+            for i in tqdm(range(len(data)), desc=f"Inserting {args.event_level} into {args.database_name}"):
                 try:
                     data.iloc[i : i + 1].to_sql(
                         name=args.target_table,
@@ -193,20 +201,11 @@ if __name__ == "__main__":
             data = pd.read_parquet(f"{args.file_dir}/{f}", engine="fastparquet")
             data = utils.replace_nulls(data)
 
-            logger.info("Converting everything to strings...")
-            for c in data.columns:
-                data[c] = data[c].astype(str)
-
             logger.info(f"Popping GeoJson files out for level {args.event_level} and onto disk")
             if args.dump_geojson_to_file:
                 for col, _type in event_levels[args.event_level]["location_columns"].items():
                     logger.info(f"Processing GeoJson column {col} in {args.event_level}; File: {f}")
                     if _type == list:
-                        for i in ["GeoJson", "Norm"]:
-                            data[f"{col}_{i}"] = data[f"{col}_{i}"].parallel_apply(
-                                lambda x: ast.literal_eval(x) if isinstance(x, str) else []
-                            )
-
                         data[f"{col}_GeoJson"] = data.parallel_apply(
                             lambda row: (
                                 [
@@ -219,8 +218,6 @@ if __name__ == "__main__":
                             ),
                             axis=1,
                         )
-                        for i in ["GeoJson", "Norm"]:
-                            data[f"{col}_{i}"] = data[f"{col}_{i}"].astype(str)
 
                     elif _type == str:
                         data[f"{col}_GeoJson"] = data.parallel_apply(
@@ -231,12 +228,15 @@ if __name__ == "__main__":
                             ),
                             axis=1,
                         )
-                        for i in ["GeoJson", "Norm"]:
-                            data[f"{col}_{i}"] = data[f"{col}_{i}"].astype(str)
 
             # change if_exists to "append" to avoid overwriting the database
             # choose "replace" to overwrite the database with a fresh copy of the data
-            for i in tqdm(range(len(data)), desc=f"Inserting {f} into {args.database_name}"):
+            logger.info("Converting everything to strings...")
+            data.replace(float("nan"), None, inplace=True)
+            for c in data.columns:
+                data[c] = data[c].astype(str)
+
+            for i in tqdm(range(len(data)), desc=f"Inserting {args.event_level} into {args.database_name}"):
                 try:
                     data.iloc[i : i + 1].to_sql(
                         name=args.target_table,
@@ -253,7 +253,8 @@ if __name__ == "__main__":
                     err_row["ERROR"] = err
                     errors = pd.concat([errors, err_row], ignore_index=True)
 
-    geojson_utils.store_non_english_nids()
+    if args.dump_geojson_to_file:
+        geojson_utils.store_non_english_nids()
 
     if errors.shape != (0, 0):
         from time import time

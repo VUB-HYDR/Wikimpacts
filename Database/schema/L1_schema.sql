@@ -2,7 +2,7 @@ CREATE TABLE Total_Summary (
     Event_ID TEXT PRIMARY KEY NOT NULL CHECK (length(Event_ID) == 7), /* COMMENT 'UID' */
     Event_Names OBJECT NOT NULL, /* COMMENT 'Array' */
     Sources OBJECT NOT NULL, /* COMMENT 'Array' */
-    Main_Event TEXT NOT NULL CHECK (Main_Event IN ("Flood", "Extratropical Storm/Cyclone", "Tropical Storm/Cyclone", "Extreme Temperature", "Drought", "Wildfire", "Tornado",)); /* COMMENT 'Categorical' */
+    Main_Event TEXT NOT NULL CHECK (Main_Event IN ('Flood', 'Extratropical Storm/Cyclone', 'Tropical Storm/Cyclone', 'Extreme Temperature', 'Drought', 'Wildfire', 'Tornado')), /* COMMENT 'Categorical' */
     Hazards OBJECT NOT NULL, /* COMMENT 'Array', categorical */
 
     Administrative_Areas_Norm OBJECT NOT NULL, /* COMMENT 'Array' of TEXT/NULL */
@@ -51,7 +51,7 @@ CREATE TABLE Total_Summary (
     Total_Insured_Damage_Min REAL CHECK (Total_Insured_Damage_Min > 0 OR Total_Insured_Damage_Min == NULL),
     Total_Insured_Damage_Max REAL CHECK (Total_Insured_Damage_Max > 0 OR Total_Insured_Damage_Max == NULL),
     Total_Insured_Damage_Approx INTEGER CHECK (Total_Insured_Damage_Approx == 1 OR Total_Insured_Damage_Approx == 0 OR Total_Insured_Damage_Approx == NULL), /* COMMENT 'Boolean' */
-    Total_Insured_Damage_Unit TEXT, /* COMMENT 'currency' */
+    Total_Insured_Damage_Unit TEXT CHECK (Total_Insured_Damage_Unit in ('None', 'AFN', 'EUR', 'ALL', 'DZD', 'USD', 'AOA', 'XCD', 'ARS', 'AMD', 'AWG', 'AUD', 'AZN', 'BSD', 'BHD', 'BDT', 'BBD', 'BYN', 'BZD', 'XOF', 'BMD', 'INR', 'BTN', 'BOB', 'BOV', 'BAM', 'BWP', 'NOK', 'BRL', 'BND', 'BGN', 'BIF', 'CVE', 'KHR', 'XAF', 'CAD', 'KYD', 'CLP', 'CLF', 'CNY', 'COP', 'COU', 'KMF', 'CDF', 'NZD', 'CRC', 'HRK', 'CUP', 'CUC', 'ANG', 'CZK', 'DKK', 'DJF', 'DOP', 'EGP', 'SVC', 'ERN', 'SZL', 'ETB', 'FKP', 'FJD', 'XPF', 'GMD', 'GEL', 'GHS', 'GIP', 'GTQ', 'GBP', 'GNF', 'GYD', 'HTG', 'HNL', 'HKD', 'HUF', 'ISK', 'IDR', 'XDR', 'IRR', 'IQD', 'ILS', 'JMD', 'JPY', 'JOD', 'KZT', 'KES', 'KPW', 'KRW', 'KWD', 'KGS', 'LAK', 'LBP', 'LSL', 'ZAR', 'LRD', 'LYD', 'CHF', 'MOP', 'MKD', 'MGA', 'MWK', 'MYR', 'MVR', 'MRU', 'MUR', 'XUA', 'MXN', 'MXV', 'MDL', 'MNT', 'MAD', 'MZN', 'MMK', 'NAD', 'NPR', 'NIO', 'NGN', 'OMR', 'PKR', 'PAB', 'PGK', 'PYG', 'PEN', 'PHP', 'PLN', 'QAR', 'RON', 'RUB', 'RWF', 'SHP', 'WST', 'STN', 'SAR', 'RSD', 'SCR', 'SLL', 'SLE', 'SGD', 'XSU', 'SBD', 'SOS', 'SSP', 'LKR', 'SDG', 'SRD', 'SEK', 'CHE', 'CHW', 'SYP', 'TWD', 'TJS', 'TZS', 'THB', 'TOP', 'TTD', 'TND', 'TRY', 'TMT', 'UGX', 'UAH', 'AED', 'USN', 'UYU', 'UYI', 'UYW', 'UZS', 'VUV', 'VES', 'VED', 'VND', 'YER', 'ZMW', 'ZWL', 'XBA', 'XBB', 'XBC', 'XBD', 'XTS', 'XXX', 'XAU', 'XPD', 'XPT', 'XAG')), /* COMMENT 'currency' */
     Total_Insured_Damage_Inflation_Adjusted INTEGER, /* COMMENT 'Boolean' */
     Total_Insured_Damage_Inflation_Adjusted_Year INTEGER CHECK (
         length(Total_Insured_Damage_Inflation_Adjusted_Year) == 4
@@ -62,7 +62,7 @@ CREATE TABLE Total_Summary (
     Total_Damage_Min REAL CHECK (Total_Damage_Min > 0 OR Total_Damage_Min == NULL),
     Total_Damage_Max REAL CHECK (Total_Damage_Max > 0 OR Total_Damage_Max == NULL),
     Total_Damage_Approx INTEGER CHECK (Total_Damage_Approx == 1 OR Total_Damage_Approx == 0 OR Total_Damage_Approx == NULL), /* COMMENT 'Boolean' */
-    Total_Damage_Unit TEXT, /* COMMENT 'currency' */
+    Total_Damage_Unit TEXT CHECK (Total_Damage_Unit in ('None', 'AFN', 'EUR', 'ALL', 'DZD', 'USD', 'AOA', 'XCD', 'ARS', 'AMD', 'AWG', 'AUD', 'AZN', 'BSD', 'BHD', 'BDT', 'BBD', 'BYN', 'BZD', 'XOF', 'BMD', 'INR', 'BTN', 'BOB', 'BOV', 'BAM', 'BWP', 'NOK', 'BRL', 'BND', 'BGN', 'BIF', 'CVE', 'KHR', 'XAF', 'CAD', 'KYD', 'CLP', 'CLF', 'CNY', 'COP', 'COU', 'KMF', 'CDF', 'NZD', 'CRC', 'HRK', 'CUP', 'CUC', 'ANG', 'CZK', 'DKK', 'DJF', 'DOP', 'EGP', 'SVC', 'ERN', 'SZL', 'ETB', 'FKP', 'FJD', 'XPF', 'GMD', 'GEL', 'GHS', 'GIP', 'GTQ', 'GBP', 'GNF', 'GYD', 'HTG', 'HNL', 'HKD', 'HUF', 'ISK', 'IDR', 'XDR', 'IRR', 'IQD', 'ILS', 'JMD', 'JPY', 'JOD', 'KZT', 'KES', 'KPW', 'KRW', 'KWD', 'KGS', 'LAK', 'LBP', 'LSL', 'ZAR', 'LRD', 'LYD', 'CHF', 'MOP', 'MKD', 'MGA', 'MWK', 'MYR', 'MVR', 'MRU', 'MUR', 'XUA', 'MXN', 'MXV', 'MDL', 'MNT', 'MAD', 'MZN', 'MMK', 'NAD', 'NPR', 'NIO', 'NGN', 'OMR', 'PKR', 'PAB', 'PGK', 'PYG', 'PEN', 'PHP', 'PLN', 'QAR', 'RON', 'RUB', 'RWF', 'SHP', 'WST', 'STN', 'SAR', 'RSD', 'SCR', 'SLL', 'SLE', 'SGD', 'XSU', 'SBD', 'SOS', 'SSP', 'LKR', 'SDG', 'SRD', 'SEK', 'CHE', 'CHW', 'SYP', 'TWD', 'TJS', 'TZS', 'THB', 'TOP', 'TTD', 'TND', 'TRY', 'TMT', 'UGX', 'UAH', 'AED', 'USN', 'UYU', 'UYI', 'UYW', 'UZS', 'VUV', 'VES', 'VED', 'VND', 'YER', 'ZMW', 'ZWL', 'XBA', 'XBB', 'XBC', 'XBD', 'XTS', 'XXX', 'XAU', 'XPD', 'XPT', 'XAG')), /* COMMENT 'currency' */
     Total_Damage_Inflation_Adjusted INTEGER, /* COMMENT 'Boolean' */
     Total_Damage_Inflation_Adjusted_Year INTEGER CHECK (
         length(Total_Damage_Inflation_Adjusted_Year) == 4
