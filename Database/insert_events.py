@@ -253,7 +253,8 @@ if __name__ == "__main__":
                     err_row["ERROR"] = err
                     errors = pd.concat([errors, err_row], ignore_index=True)
 
-    geojson_utils.store_non_english_nids()
+    if args.dump_geojson_to_file:
+        geojson_utils.store_non_english_nids()
 
     if errors.shape != (0, 0):
         from time import time
