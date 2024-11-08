@@ -658,7 +658,7 @@ def get_target_cols() -> tuple[list]:
 
 
 if __name__ == "__main__":
-    logger = Logging.get_logger("parse_events", level="INFO")
+    logger = Logging.get_logger("parse_events", level="INFO", filename="parse_events.log")
     available_event_levels = ["l1", "l2", "l3"]
     l1_target_columns, l2_target_columns, l3_target_columns = get_target_cols()
 
