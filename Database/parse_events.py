@@ -74,6 +74,8 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
                 if value and not isinstance(value, bool) and re.match(_yes, value)
                 else (False if value and not isinstance(value, bool) and re.match(_no, value) else value)
             )
+            if not pd.isna(value)
+            else None
         )
     logger.info("STEP: Normalizing nulls")
     events = utils.replace_nulls(events)
