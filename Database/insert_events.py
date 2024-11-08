@@ -1,5 +1,4 @@
 import argparse
-import ast
 import os
 import pathlib
 import sqlite3
@@ -143,11 +142,6 @@ if __name__ == "__main__":
             if args.dump_geojson_to_file:
                 for col in event_levels[args.event_level]["location_columns"].keys():
                     logger.info(f"Processing GeoJson column {col}_GeoJson in {args.event_level}; File: {f}")
-
-                    for i in ["GeoJson", "Norm"]:
-                        data[f"{col}_{i}"] = data[f"{col}_{i}"].parallel_apply(
-                            lambda x: ast.literal_eval(x) if isinstance(x, str) else []
-                        )
 
                     data[f"{col}_GeoJson"] = data.parallel_apply(
                         lambda row: (
