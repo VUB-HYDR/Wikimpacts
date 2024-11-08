@@ -681,6 +681,8 @@ class CategoricalValidation:
         cols = ["Total_{}_Min", "Total_{}_Max", "Total_{}_Approx", "Total_{}_Unit", "Total_{}_Inflation_Adjusted"]
 
         for category in ["Damage", "Insured_Damage"]:
+            if row[f"Total_{category}_Unit"] is None:
+                return row
             try:
                 Currency(row[f"Total_{category}_Unit"])
             except ValueError as err:
