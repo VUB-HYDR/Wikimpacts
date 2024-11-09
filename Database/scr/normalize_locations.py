@@ -170,6 +170,8 @@ class NormalizeLocation:
                 # TODO: add geojson for unsd regions
                 return [unsd_search_output.title(), "UNSD region", None]
 
+            # corner case
+            area = "China" if area == "Mainland China" else area
             area = area.lower().strip()
             if "_" in area:
                 area = area.replace("_", " ")

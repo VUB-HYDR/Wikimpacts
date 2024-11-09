@@ -171,8 +171,8 @@ class NormalizeUtils:
                     return False
         return True if exists else False
 
-    @staticmethod
     def df_to_parquet(
+        self,
         df: pd.DataFrame,
         target_dir: str,
         chunk_size: int = 2000,
@@ -194,7 +194,9 @@ class NormalizeUtils:
             slc = df.iloc[i : i + chunk_size]
             chunk = int(i / chunk_size) + begin_at
             fname = os.path.join(target_dir, f"{chunk:04d}.parquet")
+
             slc.to_parquet(fname, engine="fastparquet", **parquet_wargs)
+            self.logger.info(f"Output file stored in {fname}")
 
     @staticmethod
     def df_to_json(
@@ -679,6 +681,8 @@ class CategoricalValidation:
         cols = ["Total_{}_Min", "Total_{}_Max", "Total_{}_Approx", "Total_{}_Unit", "Total_{}_Inflation_Adjusted"]
 
         for category in ["Damage", "Insured_Damage"]:
+            if row[f"Total_{category}_Unit"] is None:
+                return row
             try:
                 Currency(row[f"Total_{category}_Unit"])
             except ValueError as err:

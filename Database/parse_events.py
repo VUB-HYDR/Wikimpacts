@@ -74,6 +74,8 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
                 if value and not isinstance(value, bool) and re.match(_yes, value)
                 else (False if value and not isinstance(value, bool) and re.match(_no, value) else value)
             )
+            if not pd.isna(value)
+            else None
         )
     logger.info("STEP: Normalizing nulls")
     events = utils.replace_nulls(events)
@@ -658,7 +660,7 @@ def get_target_cols() -> tuple[list]:
 
 
 if __name__ == "__main__":
-    logger = Logging.get_logger("parse_events", level="INFO")
+    logger = Logging.get_logger("parse_events", level="INFO", filename="parse_events.log")
     available_event_levels = ["l1", "l2", "l3"]
     l1_target_columns, l2_target_columns, l3_target_columns = get_target_cols()
 
