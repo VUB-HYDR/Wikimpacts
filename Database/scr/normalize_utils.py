@@ -684,7 +684,8 @@ class CategoricalValidation:
             if row[f"Total_{category}_Unit"] is None:
                 return row
             try:
-                Currency(row[f"Total_{category}_Unit"])
+                if row[f"Total_{category}_Unit"] is not None:
+                    Currency(row[f"Total_{category}_Unit"])
             except ValueError as err:
                 self.logger.error(f"""Invalid currency {row[f"Total_{category}_Unit"]}. Error: {err}""")
                 for c in cols:
