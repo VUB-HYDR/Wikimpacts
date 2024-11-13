@@ -25,14 +25,16 @@ class DataGapUtils:
 
         self.logger.info("Loading l1 files...")
         l1 = pd.read_parquet(l1_filename, engine="fastparquet")
-        l1 = norm_utils.replace_nulls(l1).replace({float("nan"): None})
+        l1 = norm_utils.replace_nulls(l1)
+        l1.replace({float("nan"): None}, inplace=True)
         l2 = {}
         self.logger.info("Loading l2 files...")
 
         for f, c in tqdm(zip(l2_filenames, l2_categories), desc="L2 files..."):
             try:
                 tmp_df = pd.read_parquet(f"{input_dir}/l2/{f}", engine="fastparquet")
-                tmp_df = norm_utils.replace_nulls(tmp_df).replace({float("nan"): None})
+                tmp_df = norm_utils.replace_nulls(tmp_df)
+                tmp_df.replace({float("nan"): None}, inplace=True)
 
                 l2[c] = tmp_df
                 del tmp_df
@@ -44,7 +46,8 @@ class DataGapUtils:
         for f, c in tqdm(zip(l3_filenames, l3_categories), desc="L3 files..."):
             try:
                 tmp_df = pd.read_parquet(f"{input_dir}/l3/{f}", engine="fastparquet")
-                tmp_df = norm_utils.replace_nulls(tmp_df).replace({float("nan"): None})
+                tmp_df = norm_utils.replace_nulls(tmp_df)
+                tmp_df.replace({float("nan"): None}, inplace=True)
 
                 l3[c] = tmp_df
                 del tmp_df
@@ -70,5 +73,17 @@ class DataGapUtils:
         return row
 
     @staticmethod
-    def fill_count(row: dict, replace_with_count: dict):
-        pass
+    def l3_to_l2(l3_row: dict) -> dict:
+        l2_row = {}
+        for k in l3_row.keys():
+            if "Administrative_Area" in k:
+                l2_name = k.replace("Area", "Areas")
+                l2_row[l2_name] = [l3_row[k]]
+                del l2_name
+            elif "Location" not in k:
+                l2_row[k] = l3_row[k]
+        return l2_row
+
+    @staticmethod
+    def flatten(xss: list[list]) -> list:
+        return [x for xs in xss for x in xs]
