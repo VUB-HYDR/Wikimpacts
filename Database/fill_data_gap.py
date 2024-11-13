@@ -1,5 +1,7 @@
 import argparse
 
+import pandas as pd
+
 from Database.scr.normalize_data import DataGapUtils
 from Database.scr.normalize_utils import Logging
 
@@ -75,5 +77,6 @@ if __name__ == "__main__":
                     for r in l3_rows:
                         new_l2_rows[impact].append(dg_util.l3_to_l2(l3_row=r))
 
-    print(new_l2_rows)
-    # TODO: append new_l2_rows
+    logger.info("Appending l3->l2 impact data...")
+    for impact in new_l2_rows.keys():
+        l2[impact] = pd.concat([l2[impact], pd.DataFrame(new_l2_rows[impact])])
