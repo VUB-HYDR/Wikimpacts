@@ -63,7 +63,7 @@ if __name__ == "__main__":
             )
 
             # check l3 impacts not found in l2
-            areas_not_in_l2 = [x for x in l3_areas if x not in l2_areas]
+            areas_not_in_l2 = list(set([x for x in l3_areas if x not in l2_areas]))
             if areas_not_in_l2:
                 for area in areas_not_in_l2:
                     logger.info(
