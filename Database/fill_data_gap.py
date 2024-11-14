@@ -63,16 +63,14 @@ if __name__ == "__main__":
             )
 
             # check l3 impacts not found in l2
-            areas_not_in_l2 = list(set([x for x in l3_areas if x not in l2_areas]))
+            areas_not_in_l2 = [x for x in l3_areas if x not in l2_areas]
             if areas_not_in_l2:
                 for area in areas_not_in_l2:
                     logger.info(
                         f"Administrative Area in l3 missing in l2 found for impact {impact} in Event_ID {e_id}. Area(s): {area}"
                     )
                     l3_rows = l3[impact][
-                        (~l3[impact][dg_util.num_min].isna())
-                        & (l3[impact][dg_util.event_id] == e_id)
-                        & (l3[impact][f"{dg_util.admin_area}_Norm"] == area)
+                        (l3[impact][dg_util.event_id] == e_id) & (l3[impact][f"{dg_util.admin_area}_Norm"] == area)
                     ].to_dict(orient="records")
                     for r in l3_rows:
                         new_l2_rows[impact].append(dg_util.l3_to_l2(l3_row=r))
@@ -85,9 +83,12 @@ if __name__ == "__main__":
     for e_id in list(l1[dg_util.event_id].unique()):
         for impact in l3.keys():
             # check if l3 impact values > l2 impact values
-            l3_impacts = l3[impact][l3[impact][dg_util.event_id] == e_id]
+            l3_impacts = (
+                l3[impact][l3[impact][dg_util.event_id] == e_id][cols]
+                .groupby(f"{dg_util.admin_area}_Norm", as_index=False)
+                .sum()
+            )
             before = l2[impact][l2[impact][dg_util.event_id] == e_id].copy().to_dict(orient="records")
-
             l2[impact][l2[impact][dg_util.event_id] == e_id] = l2[impact][l2[impact][dg_util.event_id] == e_id].apply(
                 lambda row: dg_util.check_impacts(l2_row=row, l3_row=l3_impacts, impact=impact), axis=1
             )
@@ -115,13 +116,16 @@ if __name__ == "__main__":
                         l2_idx = [l2_list.index(area) for area in l2_list if area not in l1_areas]
 
                         if l2_idx:
-                            logger.info(f"Filling area data gap for Event_ID {e_id} for {impact} at l2->l1")
                             target_area_cols = [f"{dg_util.admin_areas}_{s}" for s in area_col_suffix]
                             l2_areas = l2[impact][l2[impact][dg_util.event_id] == e_id][target_area_cols].to_dict(
                                 orient="list"
                             )
+
                             for k, v in l2_areas.items():
                                 l2_areas[k] = [v[n][idx] for idx in l2_idx]
+                            logger.info(
+                                f"Filling area data gap for Event_ID {e_id} for {impact} at l2->l1. Area(s): {l2_areas[f'{dg_util.admin_areas}_Norm']}"
+                            )
                             l1.loc[l1[dg_util.event_id] == e_id][l1_target_area_cols].apply(
                                 lambda row: dg_util.fill_area(row, l2_areas, area_col=dg_util.admin_areas),
                                 axis=1,

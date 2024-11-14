@@ -121,13 +121,13 @@ class DataGapUtils:
                     if l2_row[i] is None:
                         new_l2_row[i] = l3_tgt_row[i][0]
                         self.logger.info(
-                            f"Discrapancy in {i} found at {l2_row[self.event_id]} for impact {impact}: {l2_row[i]} vs {l3_tgt_row[i][0]} (l2 vs l3)"
+                            f"Discrepancy in {i} found at {l2_row[self.event_id]} for impact {impact}: {l2_row[i]} vs {l3_tgt_row[i][0]} (l2 vs l3)"
                         )
                     else:
                         if l2_row[i] < l3_tgt_row[i][0] and impact not in monetary_categories:
                             new_l2_row[i] = l3_tgt_row[i][0]
                             self.logger.info(
-                                f"Discrapancy in {i} found at {l2_row[self.event_id]} for impact {impact}: {l2_row[i]} vs {l3_tgt_row[i][0]} (l2 vs l3)"
+                                f"Discrepancy in {i} found at {l2_row[self.event_id]} for impact {impact}: {l2_row[i]} vs {l3_tgt_row[i][0]} (l2 vs l3)"
                             )
 
             if dict(l2_row) != dict(new_l2_row):
