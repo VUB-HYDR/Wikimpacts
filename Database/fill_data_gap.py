@@ -21,7 +21,7 @@ if __name__ == "__main__":
     l1, l2, l3 = dg_util.load_data(input_dir=args.input_dir)
     logger.info("Data loaded!")
 
-    logger.info("Filling the time gap...")
+    logger.info("Filling the time (year) gap...")
     for e_id in list(l1[dg_util.event_id].unique()):
         replace_with_date = (
             l1.loc[l1[dg_util.event_id] == e_id][[x for x in l1.columns if dg_util.date_year_suffix in x]]
