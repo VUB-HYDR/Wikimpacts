@@ -84,7 +84,6 @@ if __name__ == "__main__":
     logger.info("Comparing impacts between l3 and l2 and using l3 values if they are larger than l2")
     for e_id in list(l1[dg_util.event_id].unique()):
         for impact in l3.keys():
-            print("impact....", impact)
             # check if l3 impact values > l2 impact values
             l3_impacts = l3[impact][l3[impact][dg_util.event_id] == e_id]
             before = l2[impact][l2[impact][dg_util.event_id] == e_id].copy().to_dict(orient="records")
