@@ -96,3 +96,57 @@ if __name__ == "__main__":
     for level in [l2, l3]:
         for impact in level.keys():
             level[impact].replace(float("nan"), None, inplace=True)
+
+    logger.info("Appending areas from l2/l3 to l1 if missing")
+    for e_id in list(l1[dg_util.event_id].unique()):
+        l1_areas = l1.loc[l1[dg_util.event_id] == e_id][f"{dg_util.admin_areas}_Norm"].iloc[0]
+        area_col_suffix = ["Norm", "Type", "GID", "GeoJson"]
+        l1_target_area_cols = [f"{dg_util.admin_areas}_{s}" for s in area_col_suffix]
+
+        for impact in l2.keys():
+            try:
+                l2_series = l2[impact][l2[impact][dg_util.event_id] == e_id][f"{dg_util.admin_areas}_Norm"]
+
+                if not l2_series.empty:
+                    for n in range(len(l2_series)):
+                        l2_areas, l2_idx = {}, []
+
+                        l2_list = l2_series.iloc[n]
+                        l2_idx = [l2_list.index(area) for area in l2_list if area not in l1_areas]
+
+                        if l2_idx:
+                            logger.info(f"Filling area data gap for Event_ID {e_id} for {impact} at l2->l1")
+                            target_area_cols = [f"{dg_util.admin_areas}_{s}" for s in area_col_suffix]
+                            l2_areas = l2[impact][l2[impact][dg_util.event_id] == e_id][target_area_cols].to_dict(
+                                orient="list"
+                            )
+                            for k, v in l2_areas.items():
+                                l2_areas[k] = [v[n][idx] for idx in l2_idx]
+                            l1.loc[l1[dg_util.event_id] == e_id][l1_target_area_cols].apply(
+                                lambda row: dg_util.fill_area(row, l2_areas, area_col=dg_util.admin_areas),
+                                axis=1,
+                            )
+            except BaseException as err:
+                logger.error(f"Could not fill area data gap for {impact} at l2. Error: {err}")
+
+        for impact in l3.keys():
+            try:
+                l3_series = l3[impact][l3[impact][dg_util.event_id] == e_id][f"{dg_util.admin_area}_Norm"]
+                if not l3_series.empty:
+                    for n in range(len(l3_series)):
+                        l3_area = {}
+                        l3_str = l3_series.iloc[n]
+                        if isinstance(l3_str, str) and l3_str not in l1_areas:
+                            logger.info(f"Filling area data gap for Event_ID {e_id} for {impact} at l3->l1")
+                            target_area_cols = [f"{dg_util.admin_area}_{s}" for s in area_col_suffix]
+                            l3_area = (
+                                l3[impact][l3[impact][dg_util.event_id] == e_id][target_area_cols].iloc[n].to_dict()
+                            )
+                            for k, v in l3_area.items():
+                                l3_area[k] = [v]
+                            l1.loc[l1[dg_util.event_id] == e_id][l1_target_area_cols].apply(
+                                lambda row: dg_util.fill_area(row, l3_area, area_col=dg_util.admin_area),
+                                axis=1,
+                            )
+            except BaseException as err:
+                logger.error(f"Could not fill area data gap for {impact} at l3. Error: {err}")
