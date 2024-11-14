@@ -67,26 +67,22 @@ class DataGapUtils:
 
         return l1, l2, l3
 
-    @staticmethod
-    def fill_date(row: dict, replace_with_date: dict) -> dict:
-        year_cols = [x for x in row.keys() if "_Date_Year" in x]
+    def fill_date(self, row: dict, replace_with_date: dict) -> dict:
+        year_cols = [x for x in row.keys() if self.date_year_suffix in x]
         if all([True if row[d] is None else False for d in year_cols]):
             for c in year_cols:
                 row[c] = replace_with_date[c]
         return row
 
-    @staticmethod
-    def fill_area(row: dict, missing_areas: dict[str, list], area_col: str) -> dict:
-        l1_area_col: str = "Administrative_Areas"
-        for c in ["Norm", "Type", "GID"]:
-            row[f"{l1_area_col}_{c}"] = row[f"{l1_area_col}_{c}"].extend(missing_areas[f"{area_col}_{c}"])
+    def fill_area(self, row: dict, missing_areas: dict[str, list], area_col: str) -> dict:
+        for c in ["Norm", "Type", "GID", "GeoJson"]:
+            row[f"{self.admin_areas}_{c}"] = row[f"{self.admin_areas}_{c}"].extend(missing_areas[f"{area_col}_{c}"])
         return row
 
-    @staticmethod
-    def l3_to_l2(l3_row: dict) -> dict:
+    def l3_to_l2(self, l3_row: dict) -> dict:
         l2_row = {}
         for k in l3_row.keys():
-            if "Administrative_Area" in k:
+            if self.admin_area in k:
                 l2_name = k.replace("Area", "Areas")
                 l2_row[l2_name] = [l3_row[k]]
                 del l2_name
@@ -118,20 +114,30 @@ class DataGapUtils:
             ].reset_index()
 
         new_l2_row = l2_row.copy()
-        if not l3_tgt_row.empty:
+        # TODO: lift monetary category exception after applying inflation adjustment and conversion!
+        if (not l3_tgt_row.empty) and (impact.lower() not in monetary_categories):
             for i in (self.num_min, self.num_max):
                 if l3_tgt_row[i][0] is not None:
                     if l2_row[i] is None:
                         new_l2_row[i] = l3_tgt_row[i][0]
+                        self.logger.info(
+                            f"Discrapancy in {i} found at {l2_row[self.event_id]} for impact {impact}: {l2_row[i]} vs {l3_tgt_row[i][0]} (l2 vs l3)"
+                        )
                     else:
-                        if l2_row[i] < l3_tgt_row[i][0]:
+                        if l2_row[i] < l3_tgt_row[i][0] and impact not in monetary_categories:
                             new_l2_row[i] = l3_tgt_row[i][0]
+                            self.logger.info(
+                                f"Discrapancy in {i} found at {l2_row[self.event_id]} for impact {impact}: {l2_row[i]} vs {l3_tgt_row[i][0]} (l2 vs l3)"
+                            )
 
             if dict(l2_row) != dict(new_l2_row):
                 new_l2_row[self.num_approx] = 1
 
                 # in case of any updates to l2, transfer monetary impact values upwards (l3->l2)
                 if impact.lower() in monetary_categories:
+                    self.logger.info(
+                        f"""Updating `{self.num_unit} ({new_l2_row[self.num_unit]} -> {l3_tgt_row[self.num_unit][0]})`, `{self.num_inflation_adjusted} ({new_l2_row[self.num_inflation_adjusted]} -> {l3_tgt_row[self.num_inflation_adjusted][0]})`, and `{self.num_inflation_adjusted_year}({new_l2_row[self.num_inflation_adjusted_year]} -> {l3_tgt_row[self.num_inflation_adjusted_year][0]})` at {l2_row[self.event_id]} for monetary impact {impact}"""
+                    )
                     new_l2_row[self.num_unit] = l3_tgt_row[self.num_unit][0]
                     new_l2_row[self.num_inflation_adjusted] = l3_tgt_row[self.num_inflation_adjusted][0]
                     new_l2_row[self.num_inflation_adjusted_year] = l3_tgt_row[self.num_inflation_adjusted_year][0]
