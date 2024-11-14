@@ -6,6 +6,16 @@ from .log_utils import Logging
 class DataGapUtils:
     def __init__(self):
         self.logger = Logging.get_logger("data-gap-utils")
+        self.event_id: str = "Event_ID"
+        self.date_year_suffix: str = "_Date_Year"
+        self.admin_areas: str = "Administrative_Areas"
+        self.admin_area: str = "Administrative_Area"
+        self.num_min: str = "Num_Min"
+        self.num_max: str = "Num_Max"
+        self.num_approx: str = "Num_Approx"
+        self.num_unit: str = "Num_Unit"
+        self.num_inflation_adjusted: str = "Num_Inflation_Adjusted"
+        self.num_inflation_adjusted_year: str = "Num_Inflation_Adjusted_Year"
 
     def load_data(self, input_dir: str) -> tuple[pd.DataFrame, dict[str, pd.DataFrame], dict[str, pd.DataFrame]]:
         import os
@@ -87,3 +97,43 @@ class DataGapUtils:
     @staticmethod
     def flatten(xss: list[list]) -> list:
         return [x for xs in xss for x in xs]
+
+    def check_impacts(self, l2_row: dict, l3_row, impact: str) -> dict:
+        l2_aa = l2_row[f"{self.admin_areas}_Norm"][0]
+        monetary_categories = ["damage", "insured_damage"]
+        if impact.lower() in monetary_categories:
+            l3_tgt_row = l3_row[l3_row[f"{self.admin_area}_Norm"] == l2_aa][
+                [
+                    f"{self.admin_area}_Norm",
+                    self.num_min,
+                    self.num_max,
+                    self.num_unit,
+                    self.num_inflation_adjusted,
+                    self.num_inflation_adjusted_year,
+                ]
+            ].reset_index()
+        else:
+            l3_tgt_row = l3_row[l3_row[f"{self.admin_area}_Norm"] == l2_aa][
+                [f"{self.admin_area}_Norm", self.num_min, self.num_max]
+            ].reset_index()
+
+        new_l2_row = l2_row.copy()
+        if not l3_tgt_row.empty:
+            for i in (self.num_min, self.num_max):
+                if l3_tgt_row[i][0] is not None:
+                    if l2_row[i] is None:
+                        new_l2_row[i] = l3_tgt_row[i][0]
+                    else:
+                        if l2_row[i] < l3_tgt_row[i][0]:
+                            new_l2_row[i] = l3_tgt_row[i][0]
+
+            if dict(l2_row) != dict(new_l2_row):
+                new_l2_row[self.num_approx] = 1
+
+                # in case of any updates to l2, transfer monetary impact values upwards (l3->l2)
+                if impact.lower() in monetary_categories:
+                    new_l2_row[self.num_unit] = l3_tgt_row[self.num_unit][0]
+                    new_l2_row[self.num_inflation_adjusted] = l3_tgt_row[self.num_inflation_adjusted][0]
+                    new_l2_row[self.num_inflation_adjusted_year] = l3_tgt_row[self.num_inflation_adjusted_year][0]
+
+        return new_l2_row
