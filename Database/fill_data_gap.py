@@ -19,10 +19,11 @@ if __name__ == "__main__":
     args = parser.parse_args()
     dg_util = DataGapUtils()
     l1, l2, l3 = dg_util.load_data(input_dir=args.input_dir)
+    event_ids = list(l1[dg_util.event_id].unique())
     logger.info("Data loaded!")
 
     logger.info("Filling the time (year) gap...")
-    for e_id in list(l1[dg_util.event_id].unique()):
+    for e_id in event_ids:
         replace_with_date = (
             l1.loc[l1[dg_util.event_id] == e_id][[x for x in l1.columns if dg_util.date_year_suffix in x]]
             .iloc[0]
@@ -54,7 +55,7 @@ if __name__ == "__main__":
         "Insured_Damage": [],
     }
 
-    for e_id in list(l1[dg_util.event_id].unique()):
+    for e_id in event_ids:
         for impact in l3.keys():
             l3_areas = l3[impact][l3[impact][dg_util.event_id] == e_id][f"{dg_util.admin_area}_Norm"].tolist()
 
@@ -80,15 +81,19 @@ if __name__ == "__main__":
         l2[impact] = pd.concat([l2[impact], pd.DataFrame(new_l2_rows[impact])])
 
     logger.info("Comparing impacts between l3 and l2 and using l3 values if they are larger than l2")
-    for e_id in list(l1[dg_util.event_id].unique()):
+    for e_id in event_ids:
         for impact in l3.keys():
+            cols = [f"{dg_util.admin_area}_Norm", dg_util.num_min, dg_util.num_max, dg_util.num_approx]
+            if impact in ["Damage", "Insured_Damage"]:
+                cols.extend([dg_util.num_unit, dg_util.num_inflation_adjusted, dg_util.num_inflation_adjusted_year])
+
             # check if l3 impact values > l2 impact values
+            l3[impact][cols] = l3[impact][cols].replace({None: float("nan")})
             l3_impacts = (
-                l3[impact][l3[impact][dg_util.event_id] == e_id][cols]
-                .groupby(f"{dg_util.admin_area}_Norm", as_index=False)
+                l3[impact][(l3[impact][dg_util.event_id] == e_id) & (~l3[impact][dg_util.num_min].isna())][cols]
+                .groupby(f"{dg_util.admin_area}_Norm", as_index=False, dropna=True)
                 .sum()
             )
-            before = l2[impact][l2[impact][dg_util.event_id] == e_id].copy().to_dict(orient="records")
             l2[impact][l2[impact][dg_util.event_id] == e_id] = l2[impact][l2[impact][dg_util.event_id] == e_id].apply(
                 lambda row: dg_util.check_impacts(l2_row=row, l3_row=l3_impacts, impact=impact), axis=1
             )
@@ -99,7 +104,7 @@ if __name__ == "__main__":
             level[impact].replace(float("nan"), None, inplace=True)
 
     logger.info("Appending areas from l2/l3 to l1 if missing")
-    for e_id in list(l1[dg_util.event_id].unique()):
+    for e_id in event_ids:
         l1_areas = l1.loc[l1[dg_util.event_id] == e_id][f"{dg_util.admin_areas}_Norm"].iloc[0]
         area_col_suffix = ["Norm", "Type", "GID", "GeoJson"]
         l1_target_area_cols = [f"{dg_util.admin_areas}_{s}" for s in area_col_suffix]
