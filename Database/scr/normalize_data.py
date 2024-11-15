@@ -79,6 +79,13 @@ class DataGapUtils:
             row[f"{self.admin_areas}_{c}"] = row[f"{self.admin_areas}_{c}"].extend(missing_areas[f"{area_col}_{c}"])
         return row
 
+    @staticmethod
+    def l2_to_l1(row: dict, agg_min: float, agg_max: float, impact: str) -> dict:
+        row[f"Total_{impact}_Min"] = agg_min
+        row[f"Total_{impact}_Max"] = agg_max
+        row[f"Total_{impact}_Approx"] = 1
+        return row
+
     def l3_to_l2(self, l3_row: dict) -> dict:
         l2_row = {}
         for k in l3_row.keys():

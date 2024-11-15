@@ -159,3 +159,21 @@ if __name__ == "__main__":
                             )
             except BaseException as err:
                 logger.error(f"Could not fill area data gap for {impact} at l3. Error: {err}")
+
+    logger.info("Filling data gap upwards (l2 -> l1) for NULL impacts")
+    for impact in l2.keys():
+        empty_l1_events = l1[
+            [dg_util.event_id, f"Total_{impact}_Min", f"Total_{impact}_Max", f"Total_{impact}_Approx"]
+        ][l1[f"Total_{impact}_Min"].isna()][dg_util.event_id].unique()
+        for e_id in empty_l1_events:
+            impact_per_event_id = l2[impact][[dg_util.num_min, dg_util.num_max]][
+                (l2[impact][dg_util.event_id] == e_id) & (~l2[impact][dg_util.num_min].isna())
+            ]
+            if not impact_per_event_id.empty:
+                agg_min, agg_max = impact_per_event_id.sum()
+                l1[l1[dg_util.event_id] == e_id] = l1[l1[dg_util.event_id] == e_id].apply(
+                    lambda row: dg_util.l2_to_l1(row, agg_min, agg_max, impact), axis=1
+                )
+                logger.info(
+                    f"Aggregated values found for {e_id} in impact category {impact}: agg_min = {agg_min}, agg_max = {agg_max}"
+                )
