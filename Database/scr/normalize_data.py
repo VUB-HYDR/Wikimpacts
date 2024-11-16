@@ -17,6 +17,8 @@ class DataGapUtils:
         self.num_inflation_adjusted: str = "Num_Inflation_Adjusted"
         self.num_inflation_adjusted_year: str = "Num_Inflation_Adjusted_Year"
 
+        self.monetary_categories = ["damage", "insured_damage"]
+
     def load_data(self, input_dir: str) -> tuple[pd.DataFrame, dict[str, pd.DataFrame], dict[str, pd.DataFrame]]:
         import os
 
@@ -79,11 +81,38 @@ class DataGapUtils:
             row[f"{self.admin_areas}_{c}"] = row[f"{self.admin_areas}_{c}"].extend(missing_areas[f"{area_col}_{c}"])
         return row
 
-    @staticmethod
-    def l2_to_l1(row: dict, agg_min: float, agg_max: float, impact: str) -> dict:
-        row[f"Total_{impact}_Min"] = agg_min
-        row[f"Total_{impact}_Max"] = agg_max
-        row[f"Total_{impact}_Approx"] = 1
+    def l2_to_l1(
+        self, row: dict, agg_min: float, agg_max: float, impact: str, e_id: str, unit=None, ia=None, ia_year=None
+    ) -> dict:
+        total_min, total_max, total_approx = f"Total_{impact}_Min", f"Total_{impact}_Max", f"Total_{impact}_Approx"
+
+        total_unit, total_ia, total_ia_year = (
+            f"Total_{impact}_Unit",
+            f"Total_{impact}_Inflation_Adjusted",
+            f"Total_{impact}_Inflation_Adjusted_Year",
+        )
+        original_row = row.copy()
+
+        changed_min, changed_max = False, False
+        if row[total_min] == None or row[total_min] < agg_min:
+            row[total_min] = agg_min
+            changed_min = True
+        if row[total_max] == None or row[total_max] < agg_max:
+            row[total_max] = agg_max
+            changed_max = True
+        if changed_min and changed_max:
+            self.logger.info(
+                f"Discrepancy between l2 and l1 found in {e_id} in {total_min}-{total_max}; L1: {original_row[total_min]}-{original_row[total_max]}; L2 (aggregated): {agg_min}-{agg_max}."
+            )
+            row[total_approx] = 1
+            if impact.lower() in self.monetary_categories:
+                row[total_unit] = unit if unit else row[total_unit]
+                row[total_ia] = ia if ia else row[total_ia]
+                row[total_ia_year] = ia_year if ia_year else row[total_ia_year]
+                if unit or ia or ia_year:
+                    self.logger.info(
+                        f"Discrepancy between l2 and l1 found in {e_id} in {total_unit}, {total_ia}, and {total_ia_year}; L1: {original_row[total_unit]}, {original_row[total_ia]}, and {original_row[total_ia_year]}; L2: {row[total_unit]}, {row[total_ia]}, and {row[total_ia_year]}"
+                    )
         return row
 
     def l3_to_l2(self, l3_row: dict) -> dict:
@@ -103,8 +132,7 @@ class DataGapUtils:
 
     def check_impacts(self, l2_row: dict, l3_row, impact: str) -> dict:
         l2_aa = l2_row[f"{self.admin_areas}_Norm"][0]
-        monetary_categories = ["damage", "insured_damage"]
-        if impact.lower() in monetary_categories:
+        if impact.lower() in self.monetary_categories:
             l3_tgt_row = l3_row[l3_row[f"{self.admin_area}_Norm"] == l2_aa][
                 [
                     f"{self.admin_area}_Norm",
@@ -122,7 +150,7 @@ class DataGapUtils:
 
         new_l2_row = l2_row.copy()
         # TODO: lift monetary category exception after applying inflation adjustment and conversion!
-        if (not l3_tgt_row.empty) and (impact.lower() not in monetary_categories):
+        if (not l3_tgt_row.empty) and (impact.lower() not in self.monetary_categories):
             for i in (self.num_min, self.num_max):
                 if l3_tgt_row[i][0] is not None:
                     if l2_row[i] is None:
@@ -131,7 +159,7 @@ class DataGapUtils:
                             f"Discrepancy in {i} found at {l2_row[self.event_id]} for impact {impact}: {l2_row[i]} vs {l3_tgt_row[i][0]} (l2 vs l3)"
                         )
                     else:
-                        if l2_row[i] < l3_tgt_row[i][0] and impact not in monetary_categories:
+                        if l2_row[i] < l3_tgt_row[i][0] and impact not in self.monetary_categories:
                             new_l2_row[i] = l3_tgt_row[i][0]
                             self.logger.info(
                                 f"Discrepancy in {i} found at {l2_row[self.event_id]} for impact {impact}: {l2_row[i]} vs {l3_tgt_row[i][0]} (l2 vs l3)"
@@ -141,7 +169,7 @@ class DataGapUtils:
                 new_l2_row[self.num_approx] = 1
 
                 # in case of any updates to l2, transfer monetary impact values upwards (l3->l2)
-                if impact.lower() in monetary_categories:
+                if impact.lower() in self.monetary_categories:
                     self.logger.info(
                         f"""Updating `{self.num_unit} ({new_l2_row[self.num_unit]} -> {l3_tgt_row[self.num_unit][0]})`, `{self.num_inflation_adjusted} ({new_l2_row[self.num_inflation_adjusted]} -> {l3_tgt_row[self.num_inflation_adjusted][0]})`, and `{self.num_inflation_adjusted_year}({new_l2_row[self.num_inflation_adjusted_year]} -> {l3_tgt_row[self.num_inflation_adjusted_year][0]})` at {l2_row[self.event_id]} for monetary impact {impact}"""
                     )

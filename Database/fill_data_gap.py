@@ -84,7 +84,7 @@ if __name__ == "__main__":
     for e_id in event_ids:
         for impact in l3.keys():
             cols = [f"{dg_util.admin_area}_Norm", dg_util.num_min, dg_util.num_max, dg_util.num_approx]
-            if impact in ["Damage", "Insured_Damage"]:
+            if impact.lower() in dg_util.monetary_categories:
                 cols.extend([dg_util.num_unit, dg_util.num_inflation_adjusted, dg_util.num_inflation_adjusted_year])
 
             # check if l3 impact values > l2 impact values
@@ -166,14 +166,26 @@ if __name__ == "__main__":
             [dg_util.event_id, f"Total_{impact}_Min", f"Total_{impact}_Max", f"Total_{impact}_Approx"]
         ][l1[f"Total_{impact}_Min"].isna()][dg_util.event_id].unique()
         for e_id in empty_l1_events:
-            impact_per_event_id = l2[impact][[dg_util.num_min, dg_util.num_max]][
-                (l2[impact][dg_util.event_id] == e_id) & (~l2[impact][dg_util.num_min].isna())
-            ]
+            impact_per_event_id = l2[impact][[dg_util.num_min, dg_util.num_max]][l2[impact][dg_util.event_id] == e_id]
             if not impact_per_event_id.empty:
                 agg_min, agg_max = impact_per_event_id.sum()
+                unit, ia, ia_year = None, None, None
+
+                if impact.lower() in dg_util.monetary_categories:
+                    monetary_impacts = l2[impact][
+                        (l2[impact][dg_util.event_id] == e_id) & (~l2[impact][dg_util.num_unit].isna())
+                    ][
+                        [dg_util.num_unit, dg_util.num_inflation_adjusted, dg_util.num_inflation_adjusted_year]
+                    ].reset_index()
+
+                    if not monetary_impacts.empty:
+                        # assumes all currencies/inflation adjustment/year are identical, grabs the first only
+                        unit, ia, ia_year = (
+                            monetary_impacts[dg_util.num_unit][0],
+                            monetary_impacts[dg_util.num_inflation_adjusted][0],
+                            monetary_impacts[dg_util.num_inflation_adjusted_year][0],
+                        )
+
                 l1[l1[dg_util.event_id] == e_id] = l1[l1[dg_util.event_id] == e_id].apply(
-                    lambda row: dg_util.l2_to_l1(row, agg_min, agg_max, impact), axis=1
-                )
-                logger.info(
-                    f"Aggregated values found for {e_id} in impact category {impact}: agg_min = {agg_min}, agg_max = {agg_max}"
+                    lambda row: dg_util.l2_to_l1(row, agg_min, agg_max, impact, e_id, unit, ia, ia_year), axis=1
                 )
