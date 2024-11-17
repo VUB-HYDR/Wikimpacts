@@ -302,6 +302,14 @@ source Database/insert_full_run.sh Database/output/dummy impact.v1.db tmp/files 
 
 ```
 
+### Filling the data-gap
+
+Filling the data gap is a post-processing step described in Issue [#173](https://github.com/VUB-HYDR/Wikimpacts/issues/173) and PR [#174](https://github.com/VUB-HYDR/Wikimpacts/pull/174).
+
+```shell
+poetry run python3 Database/fill_data_gap.py -i Database/output/full_run_25_deduplicated -o Database/output/full_run_25_deduplicated_data_gap
+```
+
 ### Database-related
 - To generate the database according to [`Database/schema.sql`](Database/schema.sql):
 
