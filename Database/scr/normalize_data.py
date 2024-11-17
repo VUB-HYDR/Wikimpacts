@@ -43,29 +43,39 @@ class DataGapUtils:
         self.logger.info("Loading l2 files...")
 
         for f, c in tqdm(zip(l2_filenames, l2_categories), desc="L2 files..."):
-            try:
-                tmp_df = pd.read_parquet(f"{input_dir}/l2/{f}", engine="fastparquet")
-                tmp_df = norm_utils.replace_nulls(tmp_df)
-                tmp_df.replace({float("nan"): None}, inplace=True)
+            p_files = os.listdir(f"{input_dir}/l2/{f}")
+            for p_file in p_files:
+                try:
+                    tmp_df = pd.read_parquet(f"{input_dir}/l2/{f}/{p_file}", engine="fastparquet")
+                    tmp_df = norm_utils.replace_nulls(tmp_df)
+                    tmp_df.replace({float("nan"): None}, inplace=True)
 
-                l2[c] = tmp_df
-                del tmp_df
+                    if c not in l2.keys():
+                        l2[c] = tmp_df
+                    else:
+                        l2[c] = pd.concat([l2[c], tmp_df])
+                    del tmp_df
 
-            except BaseException as err:
-                self.logger.error(f"Could not read {input_dir}/l2/{f}. Error: {err}")
+                except BaseException as err:
+                    self.logger.error(f"Could not read {input_dir}/l2/{f}/{p_file}. Error: {err}")
         l3 = {}
         self.logger.info("Loading l3 files...")
         for f, c in tqdm(zip(l3_filenames, l3_categories), desc="L3 files..."):
-            try:
-                tmp_df = pd.read_parquet(f"{input_dir}/l3/{f}", engine="fastparquet")
-                tmp_df = norm_utils.replace_nulls(tmp_df)
-                tmp_df.replace({float("nan"): None}, inplace=True)
+            p_files = os.listdir(f"{input_dir}/l3/{f}")
+            for p_file in p_files:
+                try:
+                    tmp_df = pd.read_parquet(f"{input_dir}/l3/{f}/{p_file}", engine="fastparquet")
+                    tmp_df = norm_utils.replace_nulls(tmp_df)
+                    tmp_df.replace({float("nan"): None}, inplace=True)
 
-                l3[c] = tmp_df
-                del tmp_df
+                    if c not in l3.keys():
+                        l3[c] = tmp_df
+                    else:
+                        l3[c] = pd.concat([l3[c], tmp_df])
+                    del tmp_df
 
-            except BaseException as err:
-                self.logger.error(f"Could not read {input_dir}/l3/{f}. Error: {err}")
+                except BaseException as err:
+                    self.logger.error(f"Could not read {input_dir}/l3/{f}/{p_file}. Error: {err}")
 
         return l1, l2, l3
 
