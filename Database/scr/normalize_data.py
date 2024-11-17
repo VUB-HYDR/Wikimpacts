@@ -141,50 +141,55 @@ class DataGapUtils:
         return [x for xs in xss for x in xs]
 
     def check_impacts(self, l2_row: dict, l3_row, impact: str) -> dict:
-        l2_aa = l2_row[f"{self.admin_areas}_Norm"][0]
-        if impact.lower() in self.monetary_categories:
-            l3_tgt_row = l3_row[l3_row[f"{self.admin_area}_Norm"] == l2_aa][
-                [
-                    f"{self.admin_area}_Norm",
-                    self.num_min,
-                    self.num_max,
-                    self.num_unit,
-                    self.num_inflation_adjusted,
-                    self.num_inflation_adjusted_year,
-                ]
-            ].reset_index()
-        else:
-            l3_tgt_row = l3_row[l3_row[f"{self.admin_area}_Norm"] == l2_aa][
-                [f"{self.admin_area}_Norm", self.num_min, self.num_max]
-            ].reset_index()
+        try:
+            l2_aa = l2_row[f"{self.admin_areas}_Norm"][0]
+            if impact.lower() in self.monetary_categories:
+                l3_tgt_row = l3_row[l3_row[f"{self.admin_area}_Norm"] == l2_aa][
+                    [
+                        f"{self.admin_area}_Norm",
+                        self.num_min,
+                        self.num_max,
+                        self.num_unit,
+                        self.num_inflation_adjusted,
+                        self.num_inflation_adjusted_year,
+                    ]
+                ].reset_index()
+            else:
+                l3_tgt_row = l3_row[l3_row[f"{self.admin_area}_Norm"] == l2_aa][
+                    [f"{self.admin_area}_Norm", self.num_min, self.num_max]
+                ].reset_index()
 
-        new_l2_row = l2_row.copy()
-        # TODO: lift monetary category exception after applying inflation adjustment and conversion!
-        if (not l3_tgt_row.empty) and (impact.lower() not in self.monetary_categories):
-            for i in (self.num_min, self.num_max):
-                if l3_tgt_row[i][0] is not None:
-                    if l2_row[i] is None:
-                        new_l2_row[i] = l3_tgt_row[i][0]
-                        self.logger.info(
-                            f"Discrepancy in {i} found at {l2_row[self.event_id]} for impact {impact}: {l2_row[i]} vs {l3_tgt_row[i][0]} (l2 vs l3)"
-                        )
-                    else:
-                        if l2_row[i] < l3_tgt_row[i][0] and impact not in self.monetary_categories:
+            new_l2_row = l2_row.copy()
+            # TODO: lift monetary category exception after applying inflation adjustment and conversion!
+            if (not l3_tgt_row.empty) and (impact.lower() not in self.monetary_categories):
+                for i in (self.num_min, self.num_max):
+                    if l3_tgt_row[i][0] is not None:
+                        if l2_row[i] is None:
                             new_l2_row[i] = l3_tgt_row[i][0]
                             self.logger.info(
                                 f"Discrepancy in {i} found at {l2_row[self.event_id]} for impact {impact}: {l2_row[i]} vs {l3_tgt_row[i][0]} (l2 vs l3)"
                             )
+                        else:
+                            if l2_row[i] < l3_tgt_row[i][0] and impact not in self.monetary_categories:
+                                new_l2_row[i] = l3_tgt_row[i][0]
+                                self.logger.info(
+                                    f"Discrepancy in {i} found at {l2_row[self.event_id]} for impact {impact}: {l2_row[i]} vs {l3_tgt_row[i][0]} (l2 vs l3)"
+                                )
 
-            if dict(l2_row) != dict(new_l2_row):
-                new_l2_row[self.num_approx] = 1
+                if dict(l2_row) != dict(new_l2_row):
+                    new_l2_row[self.num_approx] = 1
 
-                # in case of any updates to l2, transfer monetary impact values upwards (l3->l2)
-                if impact.lower() in self.monetary_categories:
-                    self.logger.info(
-                        f"""Updating `{self.num_unit} ({new_l2_row[self.num_unit]} -> {l3_tgt_row[self.num_unit][0]})`, `{self.num_inflation_adjusted} ({new_l2_row[self.num_inflation_adjusted]} -> {l3_tgt_row[self.num_inflation_adjusted][0]})`, and `{self.num_inflation_adjusted_year}({new_l2_row[self.num_inflation_adjusted_year]} -> {l3_tgt_row[self.num_inflation_adjusted_year][0]})` at {l2_row[self.event_id]} for monetary impact {impact}"""
-                    )
-                    new_l2_row[self.num_unit] = l3_tgt_row[self.num_unit][0]
-                    new_l2_row[self.num_inflation_adjusted] = l3_tgt_row[self.num_inflation_adjusted][0]
-                    new_l2_row[self.num_inflation_adjusted_year] = l3_tgt_row[self.num_inflation_adjusted_year][0]
-
+                    # in case of any updates to l2, transfer monetary impact values upwards (l3->l2)
+                    if impact.lower() in self.monetary_categories:
+                        self.logger.info(
+                            f"""Updating `{self.num_unit} ({new_l2_row[self.num_unit]} -> {l3_tgt_row[self.num_unit][0]})`, `{self.num_inflation_adjusted} ({new_l2_row[self.num_inflation_adjusted]} -> {l3_tgt_row[self.num_inflation_adjusted][0]})`, and `{self.num_inflation_adjusted_year}({new_l2_row[self.num_inflation_adjusted_year]} -> {l3_tgt_row[self.num_inflation_adjusted_year][0]})` at {l2_row[self.event_id]} for monetary impact {impact}"""
+                        )
+                        new_l2_row[self.num_unit] = l3_tgt_row[self.num_unit][0]
+                        new_l2_row[self.num_inflation_adjusted] = l3_tgt_row[self.num_inflation_adjusted][0]
+                        new_l2_row[self.num_inflation_adjusted_year] = l3_tgt_row[self.num_inflation_adjusted_year][0]
+        except:
+            self.logger.error(
+                f"Could not check impacts because Area list is empty: {l2_row[f'{self.admin_areas}_Norm']}. No changes were applied to the row: {dict(l2_row)}"
+            )
+            return l2_row
         return new_l2_row
