@@ -13,31 +13,26 @@ jobs:
     name: Run Tests
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.4.0
-        with:
-          fetch-depth: 0
-      - name: Set up Python 3.11
-        uses: actions/setup-python@v2.3.1
+      - name: Checkout
+        uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: 3.11
-      - id: cache-dependencies
-        name: Cache dependencies
-        uses: actions/cache@v2.1.7
+      - name: Install and configure Poetry
+        uses: snok/install-poetry@v1
         with:
-          path: ${{ github.workspace }}/.venv
-          key: dependencies-${{ hashFiles('**/poetry.lock') }}
-          restore-keys: dependencies-
+          version: 1.8.3
+          virtualenvs-create: true
+          virtualenvs-in-project: true
       - name: Install dependencies
-        if: steps.cache-dependencies.cache-hit != 'true'
-        run: |
-          python3 -m pip install -U pip poetry
-          poetry --version
-          poetry check --no-interaction
-          poetry config virtualenvs.in-project true
-          poetry install --no-interaction
+        run: poetry install --without dev
       - name: Pull LFS files for testing
-        run: git lfs pull --include "Database/data/*"
+        run: git lfs pull --include "Database/data/*.csv"
         env:
           GIT_TRACE: 1
-      - name: Run tests
-        run: poetry run pytest -ra -s tests
+      - name: Run location normalization unit tests
+        run: poetry run pytest -ra -s tests/test_normalize_locations.py -vv
+      - name: Run number normalization unit tests
+        run: poetry run pytest -ra -s tests/test_normalize_numbers.py -vv
+      - name: Run l2/l3 matcher unit tests
+        run: poetry run pytest -ra -s tests/test_specific_instance_matcher.py -vv

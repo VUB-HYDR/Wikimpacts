@@ -3,13 +3,15 @@ import json
 import os
 import pathlib
 import re
-from typing import Tuple, Union
+from datetime import datetime
+from typing import Any, Tuple, Union
 
 import pandas as pd
 import pycountry
 import shortuuid
 from dateparser.date import DateDataParser
 from dateparser.search import search_dates
+from iso4217 import Currency
 from spacy import language as spacy_language
 from unidecode import unidecode
 
@@ -133,6 +135,28 @@ class NormalizeUtils:
             return None
 
     @staticmethod
+    def filter_null_list(lst: list) -> list:
+        new_list = []
+        for l in lst:
+            if isinstance(l, str):
+                if l.lower().strip() not in ["null", "none"]:
+                    new_list.append(l)
+            elif l == float("nan") or l is None:
+                pass
+            else:
+                new_list.append(l)
+        return new_list
+
+    @staticmethod
+    def filter_null_str(l: str | None) -> str | None:
+        if isinstance(l, str):
+            if l.lower().strip() in ["null", "none"]:
+                return None
+        if l == float("nan") or l is None:
+            return None
+        return l
+
+    @staticmethod
     def simple_country_check(c: str):
         try:
             exists = pycountry.countries.search_fuzzy(c)[0].official_name
@@ -147,13 +171,77 @@ class NormalizeUtils:
                     return False
         return True if exists else False
 
+    def df_to_parquet(
+        self,
+        df: pd.DataFrame,
+        target_dir: str,
+        chunk_size: int = 2000,
+        **parquet_wargs,
+    ):
+        """Writes pandas DataFrame to parquet format with pyarrow.
+            Credit: https://stackoverflow.com/a/72010262/14123992
+        Args:
+            df: DataFrame
+            target_dir: local directory where parquet files are written to
+            chunk_size: number of rows stored in one chunk of parquet file. Defaults to 2000.
+        """
+        pathlib.Path(target_dir).mkdir(parents=True, exist_ok=True)
+        existing_chunks = os.listdir(target_dir)
+        begin_at = 0
+        if existing_chunks:
+            begin_at = int(sorted(existing_chunks)[-1].split(".")[0]) + 1
+        for i in range(0, len(df), chunk_size):
+            slc = df.iloc[i : i + chunk_size]
+            chunk = int(i / chunk_size) + begin_at
+            fname = os.path.join(target_dir, f"{chunk:04d}.parquet")
+
+            slc.to_parquet(fname, engine="fastparquet", **parquet_wargs)
+            self.logger.info(f"Output file stored in {fname}")
+
+    @staticmethod
+    def df_to_json(
+        df: pd.DataFrame,
+        target_dir: str,
+        chunk_size: int = 2000,
+        **json_wargs,
+    ):
+        """Writes pandas DataFrame to json format
+            Credit: https://stackoverflow.com/a/72010262/14123992
+        Args:
+            df: DataFrame
+            target_dir: local directory where parquet files are written to
+            chunk_size: number of rows stored in one chunk of parquet file. Defaults to 2000.
+        """
+        for i in range(0, len(df), chunk_size):
+            slc = df.iloc[i : i + chunk_size]
+            chunk = int(i / chunk_size)
+            fname = os.path.join(target_dir, f"{chunk:04d}.json")
+            pathlib.Path(target_dir).mkdir(parents=True, exist_ok=True)
+            slc.to_json(fname, **json_wargs)
+
+    def check_currency(self, currency_text: str) -> bool:
+        try:
+            Currency(currency_text)
+            return True
+        except ValueError as err:
+            self.logger.error(f"Bad currency found: `{currency_text}`: {err}")
+            return False
+
+    def check_date(self, year: int, month: int, day: int) -> bool:
+        try:
+            datetime(year, month, day)
+            return True
+        except ValueError as err:
+            self.logger.error(f"Y: {year}; M: {month}; D: {day}. Error: {err}")
+            return False
+
 
 class NormalizeJsonOutput:
     def __init__(self):
         self.logger = Logging.get_logger("normalize-utils-json")
 
     @staticmethod
-    def infer_date_from_dict(x: any) -> str:
+    def infer_date_from_dict(x: Any) -> str:
         """
         This function normalizes date output in various formats by some LLMs.
         Current usecases:
@@ -383,6 +471,12 @@ class NormalizeJsonOutput:
                 else:
                     output[k] = entry[k]
             for k in missing_keys:
+                if k in entry.keys():
+                    if isinstance(entry[k], dict):
+                        for key_name in missing_keys:
+                            if key_name in entry[k].keys():
+                                output[key_name] = entry[k][key_name]
+
                 if k not in entry.keys() and k not in output.keys():
                     if k == "Administrative_Areas":
                         output[k] = []
@@ -406,7 +500,7 @@ class NormalizeJsonOutput:
             output = {}
             target_keys = [x for x in entry.keys() if x.startswith("Specific_Instance_") or x.startswith("Instance_")]
 
-            for k in entry.keys():
+            for k in [x for x in entry.keys() if entry[x] is not None]:
                 if k in target_keys:
                     for rec in range(len(entry[k])):
                         records = []
@@ -433,7 +527,7 @@ class NormalizeJsonOutput:
 
             output_json.append(output)
         with open(output_file_path, "w") as fp:
-            json.dump(output_json, fp)
+            json.dump(output_json, fp, indent=3)
 
         self.logger.info(f"Stored output in {output_file_path}")
 
@@ -538,3 +632,62 @@ class GeoJsonUtils:
             self.logger.debug(f"Could not process GeoJson to file. Error: {err}")
             return None
         return nid
+
+
+class CategoricalValidation:
+    def __init__(self):
+        self.logger = Logging.get_logger("categorical-validation-utils")
+        self.main_event_categories = {
+            "Flood": ["Flood"],
+            "Extratropical Storm/Cyclone": ["Wind", "Flood", "Blizzard", "Hail"],
+            "Tropical Storm/Cyclone": ["Wind", "Flood", "Lightning"],
+            "Extreme Temperature": ["Heatwave", "Cold Spell"],
+            "Drought": ["Drought"],
+            "Wildfire": ["Wildfire"],
+            "Tornado": ["Wind"],
+        }
+
+        self.hazards_categories = [
+            "Wind",
+            "Flood",
+            "Blizzard",
+            "Hail",
+            "Drought",
+            "Heatwave",
+            "Lightning",
+            "Cold Spell",
+            "Wildfire",
+        ]
+
+    def validate_categorical(self, text: str, categories: list) -> str | None:
+        try:
+            cat_idx = [x.lower() for x in categories].index(text.lower())
+            return categories[cat_idx]
+        except BaseException as err:
+            self.logger.warning(f"Value `{text}` may be invalid for this category. Error: {err}")
+            return
+
+    def validate_main_event_hazard_relation(
+        self, row: dict, hazards: str = "Hazards", main_event: str = "Main_Event"
+    ) -> dict:
+        try:
+            related_hazards = [x for x in self.main_event_categories[row[main_event]]]
+            row[hazards] = list(set([h for h in row[hazards] if h.lower() in [x.lower() for x in related_hazards]]))
+        except BaseException as err:
+            self.logger.error(f"Could not validate relationship between {hazards} and {main_event}. Error: {err}")
+        return row
+
+    def validate_currency_monetary_impact(self, row: dict) -> dict:
+        cols = ["Total_{}_Min", "Total_{}_Max", "Total_{}_Approx", "Total_{}_Unit", "Total_{}_Inflation_Adjusted"]
+
+        for category in ["Damage", "Insured_Damage"]:
+            if row[f"Total_{category}_Unit"] is None:
+                return row
+            try:
+                Currency(row[f"Total_{category}_Unit"])
+            except ValueError as err:
+                self.logger.error(f"""Invalid currency {row[f"Total_{category}_Unit"]}. Error: {err}""")
+                for c in cols:
+                    cat = c.format(category)
+                    row[cat] = None
+        return row

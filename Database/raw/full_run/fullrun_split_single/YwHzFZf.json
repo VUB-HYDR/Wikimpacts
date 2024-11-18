@@ -1,0 +1,461 @@
+[
+  {
+    "Event_ID": "YwHzFZf",
+    "Sources": "https://en.wikipedia.org/wiki/Hurricane_Bret",
+    "Event_Names": "Hurricane Bret",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "180,000",
+        "Annotation": "Texas"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "7,000",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Corpus Christi",
+          "San Antonio",
+          "Nueces County",
+          "Mustang Island",
+          "Padre Island",
+          "Kenedy County",
+          "Duval County"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "325 prisoners",
+        "Annotation": "Texas"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Matamoros",
+          "Cadereyta",
+          "Nuevo Le\u00f3n",
+          "Tamaulipas",
+          "Coahuila",
+          "Nogales"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "150 families",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Texas"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Cadereyta"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "150 families",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Duval County"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "200 homes",
+        "Annotation": "Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Corpus Christi"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Texas"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "7",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "Texas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4",
+        "Annotation": "Hurricane Bret"
+      },
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Hurricane Bret"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Area": "Texas",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4",
+        "Annotation": "Texas"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "August 22, 1999",
+        "End_Date": "NULL",
+        "Num": "180,000",
+        "Annotation": "Texas"
+      },
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "7,000",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Corpus Christi",
+          "Mustang Island",
+          "Padre Island",
+          "Nueces County",
+          "San Antonio"
+        ],
+        "Start_Date": "August 22, 1999",
+        "End_Date": "NULL",
+        "Num": "180,000",
+        "Annotation": "Texas"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Matamoros"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "7,000",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Cadereyta"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "150 families",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "roughly 150 people",
+      "Total_Homeless_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 150 families",
+        "Annotation": "Mexico"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Cadereyta"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 150 families",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Mexico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Mexico",
+        "Locations": [
+          "Nogales"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Ten people",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States",
+          "Mexico"
+        ],
+        "Start_Date": "August 18, 1999",
+        "End_Date": "August 25, 1999",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Corpus Christi"
+        ],
+        "Start_Date": "August 18, 1999",
+        "End_Date": "August 25, 1999",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Texas"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$15 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "August 18, 1999",
+        "End_Date": "August 25, 1999",
+        "Num": "$15 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Texas"
+      },
+      {
+        "Administrative_Areas": [
+          "Mexico"
+        ],
+        "Start_Date": "August 18, 1999",
+        "End_Date": "August 25, 1999",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Mexico"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Corpus Christi"
+        ],
+        "Start_Date": "August 18, 1999",
+        "End_Date": "August 25, 1999",
+        "Num": "$100,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Duval County"
+        ],
+        "Start_Date": "August 18, 1999",
+        "End_Date": "August 25, 1999",
+        "Num": "$2 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Corpus Christi"
+        ],
+        "Start_Date": "August 18, 1999",
+        "End_Date": "August 25, 1999",
+        "Num": "$500,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Corpus Christi"
+        ],
+        "Start_Date": "August 18, 1999",
+        "End_Date": "August 25, 1999",
+        "Num": "$1 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Corpus Christi"
+        ],
+        "Start_Date": "August 18, 1999",
+        "End_Date": "August 25, 1999",
+        "Num": "$500,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "U.S. Route 281"
+        ],
+        "Start_Date": "August 18, 1999",
+        "End_Date": "August 25, 1999",
+        "Num": "$50,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Texas"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Corpus Christi"
+        ],
+        "Start_Date": "August 18, 1999",
+        "End_Date": "August 25, 1999",
+        "Num": "$200,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Texas|Mexico",
+    "Start_Date": "August 18, 1999",
+    "End_Date": "August 25, 1999",
+    "Time_Annotation": "Info_Box"
+  }
+]

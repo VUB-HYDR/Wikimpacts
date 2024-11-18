@@ -4,13 +4,14 @@ import re
 from datetime import datetime
 
 import pandas as pd
-from iso4217 import Currency
 from tqdm import tqdm
 
 from Database.scr.log_utils import Logging
 from Database.scr.normalize_locations import NormalizeLocation
+from Database.scr.normalize_utils import NormalizeUtils
 
 tqdm.pandas()
+utils = NormalizeUtils()
 
 
 def flatten(xss):
@@ -34,25 +35,7 @@ def fix_column_names(df):
     return df
 
 
-def _check_currency(currency_text: str) -> bool:
-    try:
-        Currency(currency_text)
-        return True
-    except ValueError as err:
-        logger.error(err)
-        return False
-
-
-def _check_date(year: int, month: int, day: int) -> bool:
-    try:
-        datetime(year, month, day)
-        return True
-    except ValueError as err:
-        logger.error(f"Y: {year}; M: {month}; D: {day}. Error: {err}")
-        return False
-
-
-def _split_range(text: str) -> tuple[float, None]:
+def _split_range(text: str) -> tuple[str | None, str | None]:
     r = text.split("-")
     if len(r) == 1:
         return (r[0], r[0])
@@ -223,7 +206,7 @@ def flatten_data_table():
     logger.info(f"Validating Units for monetary type columns...")
     for col in currency_unit_cols:
         data_table[f"{col}_valid_currency"] = data_table[col].progress_apply(
-            lambda x: all([_check_currency(y) for y in x]) if x else True
+            lambda x: all([utils.check_currency(y) for y in x]) if x else True
         )
         assert all(data_table[f"{col}_valid_currency"])
         data_table.drop(columns=[f"{col}_valid_currency"], inplace=True)
@@ -253,7 +236,7 @@ def flatten_data_table():
                 f"{date_type}_Date_Month",
                 f"{date_type}_Date_Day",
             ]
-        ].progress_apply(lambda x: _check_date(x[0], x[1], x[2]) if all(x) else True)
+        ].progress_apply(lambda x: utils.check_date(year=x[0], month=x[1], day=x[2]) if all(x) else True)
 
         assert all(data_table[f"{date_type}_valid_date"])
         data_table.drop(columns=[f"{date_type}_valid_date"], inplace=True)

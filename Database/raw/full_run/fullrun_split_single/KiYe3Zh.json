@@ -1,0 +1,735 @@
+[
+  {
+    "Event_ID": "KiYe3Zh",
+    "Sources": "https://en.wikipedia.org/wiki/2020_Central_Vietnam_floods",
+    "Event_Names": "2020 Central Vietnam floods",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "5 October 2020",
+        "End_Date": "21 November 2020",
+        "Num": "NULL",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Areas": "Cambodia",
+        "Start_Date": "5 October 2020",
+        "End_Date": "21 November 2020",
+        "Num": "NULL",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Th\u1eeba Thi\u00ean Hu\u1ebf"
+        ],
+        "Start_Date": "10 October 2020",
+        "End_Date": "13 October 2020",
+        "Num": "NULL",
+        "Annotation": "Th\u1eeba Thi\u00ean Hu\u1ebf"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "H\u00e0 T\u0129nh"
+        ],
+        "Start_Date": "16 October 2020",
+        "End_Date": "19 October 2020",
+        "Num": "NULL",
+        "Annotation": "H\u00e0 T\u0129nh"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Qu\u1ea3ng B\u00ecnh"
+        ],
+        "Start_Date": "6 October 2020",
+        "End_Date": "13 October 2020",
+        "Num": "NULL",
+        "Annotation": "Qu\u1ea3ng B\u00ecnh"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Qu\u1ea3ng Tr\u1ecb"
+        ],
+        "Start_Date": "10 October 2020",
+        "End_Date": "19 October 2020",
+        "Num": "NULL",
+        "Annotation": "Qu\u1ea3ng Tr\u1ecb"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Da Nang"
+        ],
+        "Start_Date": "5 October 2020",
+        "End_Date": "21 November 2020",
+        "Num": "NULL",
+        "Annotation": "Da Nang"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Qu\u1ea3ng Nam"
+        ],
+        "Start_Date": "5 October 2020",
+        "End_Date": "21 November 2020",
+        "Num": "NULL",
+        "Annotation": "Qu\u1ea3ng Nam"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Ngh\u1ec7 An"
+        ],
+        "Start_Date": "5 October 2020",
+        "End_Date": "21 November 2020",
+        "Num": "NULL",
+        "Annotation": "Ngh\u1ec7 An"
+      }
+    ],
+    "Json_Error": "{\n  \"Total_Summary_Buildings_Damaged\": {\n    \"Total_Buildings_Damaged\": \"NULL\",\n    \"Total_Buildings_Damaged_Annotation\": \"NULL\"\n  },\n  \"Instance_Per_Administrative_Areas_Buildings_Damaged\": [\n    {\n      \"Administrative_Areas\": \"Vietnam\",\n      \"Start_Date\": \"5 October 2020\",\n      \"End_Date\": \"21 November 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Info_Box\"\n    },\n    {\n      \"Administrative_Areas\": \"Cambodia\",\n      \"Start_Date\": \"5 October 2020\",\n      \"End_Date\": \"21 November 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Info_Box\"\n    }\n  ],\n  \"Specific_Instance_Per_Administrative_Area_Buildings_Damaged\": [\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng Ng\u00e3i\"],\n      \"Start_Date\": \"9 October 2020\",\n      \"End_Date\": \"12 October 2020\",\n      \"Num\": \"382 houses destroyed, 109,034 houses flooded\",\n      \"Annotation\": \"Tropical Storm Linfa\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng Ng\u00e3i\"],\n      \"Start_Date\": \"27 October 2020\",\n      \"End_Date\": \"28 October 2020\",\n      \"Num\": \"56,163 houses damaged or destroyed\",\n      \"Annotation\": \"Typhoon Molave\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng Nam\"],\n      \"Start_Date\": \"10 November 2020\",\n      \"End_Date\": \"10 November 2020\",\n      \"Num\": \"31 houses damaged\",\n      \"Annotation\": \"Tropical Storm Etau\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng Nam\"],\n      \"Start_Date\": \"5 November 2020\",\n      \"End_Date\": \"6 November 2020\",\n      \"Num\": \"20 houses collapsed\",\n      \"Annotation\": \"Tropical Storm Goni\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng Nam\"],\n      \"Start_Date\": \"5 November 2020\",\n      \"End_Date\": \"6 November 2020\",\n      \"Num\": \"2 houses destroyed\",\n      \"Annotation\": \"Tropical Storm Goni\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Th\u1eeba Thi\u00ean Hu\u1ebf\"],\n      \"Start_Date\": \"10 October 2020\",\n      \"End_Date\": \"13 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Th\u1eeba Thi\u00ean Hu\u1ebf\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"6 October 2020\",\n      \"End_Date\": \"13 October 2020\",\n      \"Num\": \"95,000 houses flooded\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020\",\n      \"End_Date\": \"19 October 2020\",\n      \"Num\": \"NULL\",\n      \"Annotation\": \"Qu\u1ea3ng B\u00ecnh\"\n    },\n    {\n      \"Administrative_Area\": \"Vietnam\",\n      \"Locations\": [\"Qu\u1ea3ng B\u00ecnh\"],\n      \"Start_Date\": \"16 October 2020",
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "243",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "189",
+        "Annotation": "Info_Box"
+      },
+      {
+        "Administrative_Areas": "Cambodia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "44",
+        "Annotation": "Info_Box"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Sa Hu\u1ef3nh (Qu\u1ea3ng Ng\u00e3i)"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "11 October",
+        "Num": "9",
+        "Annotation": "Seasonal monsoon associated with tropical depressions (6\u20139 October)"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "A L\u01b0\u1edbi (Hu\u1ebf)"
+        ],
+        "Start_Date": "9 October",
+        "End_Date": "11 October",
+        "Num": "174",
+        "Annotation": "Tropical Storm Linfa"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Phong \u0110i\u1ec1n District (Thua Thien Hue province)"
+        ],
+        "Start_Date": "11 October",
+        "End_Date": "12 October",
+        "Num": "17",
+        "Annotation": "R\u00e0o Tr\u0103ng 3 landslides"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "H\u01b0\u1edbng Ph\u00f9ng Commune, H\u01b0\u1edbng Ho\u00e1 District (Qu\u1ea3ng Tr\u1ecb province)"
+        ],
+        "Start_Date": "18 October",
+        "End_Date": "18 October",
+        "Num": "22",
+        "Annotation": "H\u01b0\u1edbng H\u00f3a landslides"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Nam Tr\u00e0 My District (Qu\u1ea3ng Nam province)"
+        ],
+        "Start_Date": "27 October",
+        "End_Date": "28 October",
+        "Num": "28",
+        "Annotation": "Qu\u1ea3ng Nam landslides"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Phuoc Son District (Qu\u1ea3ng Nam province)"
+        ],
+        "Start_Date": "27 October",
+        "End_Date": "28 October",
+        "Num": "11",
+        "Annotation": "Qu\u1ea3ng Nam landslides"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Th\u1eeba Thi\u00ean-Hu\u1ebf Province"
+        ],
+        "Start_Date": "14 November",
+        "End_Date": "16 November",
+        "Num": "1",
+        "Annotation": "Typhoon Vamco"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Ngh\u1ec7 An"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Ngh\u1ec7 An"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "H\u00e0 T\u0129nh"
+        ],
+        "Start_Date": "16 October",
+        "End_Date": "19 October",
+        "Num": "6",
+        "Annotation": "H\u00e0 T\u0129nh"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Qu\u1ea3ng B\u00ecnh"
+        ],
+        "Start_Date": "6 October",
+        "End_Date": "19 October",
+        "Num": "19",
+        "Annotation": "Qu\u1ea3ng B\u00ecnh"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Qu\u1ea3ng Tr\u1ecb"
+        ],
+        "Start_Date": "10 October",
+        "End_Date": "19 October",
+        "Num": "52",
+        "Annotation": "Qu\u1ea3ng Tr\u1ecb"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Th\u1eeba Thi\u00ean Hu\u1ebf"
+        ],
+        "Start_Date": "10 October",
+        "End_Date": "13 October",
+        "Num": "31",
+        "Annotation": "Th\u1eeba Thi\u00ean Hu\u1ebf"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Da Nang"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Da Nang"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Qu\u1ea3ng Nam"
+        ],
+        "Start_Date": "7 October",
+        "End_Date": "8 October",
+        "Num": "13",
+        "Annotation": "Qu\u1ea3ng Nam"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Qu\u1ea3ng Ng\u00e3i",
+          "Gia Lai",
+          "\u0110\u1eafk L\u1eafk",
+          "L\u00e2m \u0110\u1ed3ng",
+          "Kon Tum"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "6",
+        "Annotation": "Other regions"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Vietnam"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Vietnam"
+        ],
+        "Start_Date": "14 October",
+        "End_Date": "NULL",
+        "Num": "more than 150,000 people",
+        "Annotation": "Tropical Storm Nangka"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Vietnam"
+        ],
+        "Start_Date": "27 October",
+        "End_Date": "NULL",
+        "Num": "Nearly 1.3 million people",
+        "Annotation": "Typhoon Molave"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Vietnam"
+        ],
+        "Start_Date": "14 November",
+        "End_Date": "16 November",
+        "Num": "at least 460,000 people",
+        "Annotation": "Typhoon Vamco"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Vietnam"
+        ],
+        "Start_Date": "16 November",
+        "End_Date": "NULL",
+        "Num": "325,000 people",
+        "Annotation": "Typhoon Vamco"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Qu\u1ea3ng Ng\u00e3i"
+        ],
+        "Start_Date": "9 October",
+        "End_Date": "12 October",
+        "Num": "109,034",
+        "Annotation": "Tropical Storm Linfa"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Qu\u1ea3ng Ng\u00e3i"
+        ],
+        "Start_Date": "27 October",
+        "End_Date": "28 October",
+        "Num": "56,163",
+        "Annotation": "Typhoon Molave"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Qu\u1ea3ng Nam"
+        ],
+        "Start_Date": "27 October",
+        "End_Date": "28 October",
+        "Num": "NULL",
+        "Annotation": "Qu\u1ea3ng Nam landslides"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Qu\u1ea3ng Nam"
+        ],
+        "Start_Date": "10 November",
+        "End_Date": "10 November",
+        "Num": "31",
+        "Annotation": "Tropical Storm Etau"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "B\u00ecnh \u0110\u1ecbnh"
+        ],
+        "Start_Date": "10 November",
+        "End_Date": "10 November",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm Etau"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Th\u1eeba Thi\u00ean Hu\u1ebf"
+        ],
+        "Start_Date": "10 October",
+        "End_Date": "13 October",
+        "Num": "NULL",
+        "Annotation": "Th\u1eeba Thi\u00ean Hu\u1ebf"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Qu\u1ea3ng B\u00ecnh"
+        ],
+        "Start_Date": "6 October",
+        "End_Date": "13 October",
+        "Num": "95,000",
+        "Annotation": "Qu\u1ea3ng B\u00ecnh"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Qu\u1ea3ng B\u00ecnh"
+        ],
+        "Start_Date": "16 October",
+        "End_Date": "19 October",
+        "Num": "NULL",
+        "Annotation": "Qu\u1ea3ng B\u00ecnh"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Qu\u1ea3ng Tr\u1ecb"
+        ],
+        "Start_Date": "10 October",
+        "End_Date": "19 October",
+        "Num": "NULL",
+        "Annotation": "Qu\u1ea3ng Tr\u1ecb"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Da Nang"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Da Nang"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Ngh\u1ec7 An"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Ngh\u1ec7 An"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "H\u00e0 T\u0129nh"
+        ],
+        "Start_Date": "16 October",
+        "End_Date": "19 October",
+        "Num": "NULL",
+        "Annotation": "H\u00e0 T\u0129nh"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Qu\u1ea3ng Nam"
+        ],
+        "Start_Date": "27 October 2020",
+        "End_Date": "28 October 2020",
+        "Num": "16",
+        "Annotation": "Typhoon Molave"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Th\u1eeba Thi\u00ean-Hu\u1ebf"
+        ],
+        "Start_Date": "14 November 2020",
+        "End_Date": "16 November 2020",
+        "Num": "5",
+        "Annotation": "Typhoon Vamco"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "Vietnam",
+        "Start_Date": "5 October 2020",
+        "End_Date": "21 November 2020",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": "Cambodia",
+        "Start_Date": "5 October 2020",
+        "End_Date": "21 November 2020",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": "Laos",
+        "Start_Date": "5 October 2020",
+        "End_Date": "21 November 2020",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Th\u1eeba Thi\u00ean Hu\u1ebf",
+          "H\u00e0 T\u0129nh",
+          "Qu\u1ea3ng B\u00ecnh",
+          "Qu\u1ea3ng Tr\u1ecb",
+          "Qu\u1ea3ng Ng\u00e3i"
+        ],
+        "Start_Date": "5 October 2020",
+        "End_Date": "21 November 2020",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "\u011135.8 trillion (US$1.57 billion)",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "Vietnam"
+        ],
+        "Start_Date": "5 October 2020",
+        "End_Date": "21 November 2020",
+        "Num": "\u011135.2 trillion (US$1.52 billion)",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "2020 Central Vietnam floods"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Ngh\u1ec7 An"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3 trillion VND ($129.44 million)",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Ngh\u1ec7 An"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "H\u00e0 T\u0129nh"
+        ],
+        "Start_Date": "16 October 2020",
+        "End_Date": "19 October 2020",
+        "Num": "5.5 trillion VND ($237.47 million)",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "H\u00e0 T\u0129nh"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Qu\u1ea3ng B\u00ecnh"
+        ],
+        "Start_Date": "6 October 2020",
+        "End_Date": "13 October 2020",
+        "Num": "3,511 billion VND ($151.49 million)",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Qu\u1ea3ng B\u00ecnh"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Qu\u1ea3ng Tr\u1ecb"
+        ],
+        "Start_Date": "10 October 2020",
+        "End_Date": "19 October 2020",
+        "Num": "3,000 billion VND ($129.4 million)",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Qu\u1ea3ng Tr\u1ecb"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Th\u1eeba Thi\u00ean Hu\u1ebf"
+        ],
+        "Start_Date": "10 October 2020",
+        "End_Date": "13 October 2020",
+        "Num": "2,000 billion VND ($86.29 million)",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Th\u1eeba Thi\u00ean Hu\u1ebf"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Qu\u1ea3ng Nam"
+        ],
+        "Start_Date": "7 October 2020",
+        "End_Date": "8 October 2020",
+        "Num": "11 trillion VND ($478 million)",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Qu\u1ea3ng Nam"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "B\u00ecnh \u0110\u1ecbnh"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "\u20ab543 billion (US$23.5 million)",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tropical Storm Goni"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Tuy An, Ph\u00fa Y\u00ean"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "122 billion VND (US$5.26 million)",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tropical Storm Etau"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Qu\u1ea3ng B\u00ecnh"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "450 billion \u0111\u1ed3ng (US$19.4 million)",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Typhoon Vamco"
+      },
+      {
+        "Administrative_Area": "Vietnam",
+        "Locations": [
+          "Central Vietnam"
+        ],
+        "Start_Date": "27 October 2020",
+        "End_Date": "1 November 2020",
+        "Num": "10 trillion VND ($430 million)",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Typhoon Molave"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "5 October 2020",
+    "End_Date": "21 November 2020",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Vietnam",
+      "Cambodia",
+      "Laos"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

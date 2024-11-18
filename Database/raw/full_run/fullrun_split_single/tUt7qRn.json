@@ -1,0 +1,959 @@
+[
+  {
+    "Event_ID": "tUt7qRn",
+    "Sources": "https://en.wikipedia.org/wiki/1963_Atlantic_hurricane_season",
+    "Event_Names": "1963 Atlantic hurricane season",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Trinidad and Tobago",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2,750 houses destroyed, 3,500 others impacted",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Areas": "Grenada",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Areas": "Dominican Republic",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Areas": "Haiti",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "30,000 dwellings destroyed",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Areas": "Jamaica",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Areas": "Bahamas",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Areas": "Guadeloupe",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "500 people homeless",
+        "Annotation": "Tropical Storm Helena"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Ocean City, Maryland",
+          "Norfolk, Virginia",
+          "Washington, D.C."
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Unnamed tropical storm"
+      },
+      {
+        "Administrative_Area": "Bermuda",
+        "Locations": [
+          "Bermuda"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Arlene"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Port Arthur, Texas",
+          "Port Acres, Texas",
+          "Jefferson County, Texas",
+          "Newton County, Texas",
+          "Orange County, Texas",
+          "Guthrie, Oklahoma"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4,000 homes affected",
+        "Annotation": "Tropical Storm Cindy"
+      },
+      {
+        "Administrative_Area": "Martinique",
+        "Locations": [
+          "Le Lamentin Airport"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "6,000 homes demolished, 13,000 others severely impacted",
+        "Annotation": "Hurricane Edith"
+      },
+      {
+        "Administrative_Area": "Dominica",
+        "Locations": [
+          "Dominica"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Edith"
+      },
+      {
+        "Administrative_Area": "Saint Lucia",
+        "Locations": [
+          "Saint Lucia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Edith"
+      },
+      {
+        "Administrative_Area": "Puerto Rico",
+        "Locations": [
+          "Salinas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Edith"
+      },
+      {
+        "Administrative_Area": "Trinidad and Tobago",
+        "Locations": [
+          "Scarborough harbor"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Area": "Grenada",
+        "Locations": [
+          "Grenada"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Area": "Dominican Republic",
+        "Locations": [
+          "Dominican Republic"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Haiti"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Santiago de Cuba"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Spring Hill"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Bahamas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida",
+          "Georgia",
+          "South Carolina",
+          "North Carolina",
+          "Massachusetts",
+          "Maine"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,000 homes lost power in Chatham",
+        "Annotation": "Hurricane Ginny"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Nova Scotia",
+          "Prince Edward Island"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Ginny"
+      },
+      {
+        "Administrative_Area": "Guadeloupe",
+        "Locations": [
+          "Guadeloupe"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "500 people homeless",
+        "Annotation": "Tropical Storm Helena"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Bermuda",
+        "Start_Date": "August 9",
+        "End_Date": "August 9",
+        "Num": "NULL",
+        "Annotation": "Hurricane Arlene"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "June 2",
+        "End_Date": "June 4",
+        "Num": "NULL",
+        "Annotation": "Unnamed tropical storm"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "September 16",
+        "End_Date": "September 20",
+        "Num": "4,000 homes",
+        "Annotation": "Tropical Storm Cindy"
+      },
+      {
+        "Administrative_Areas": "Martinique",
+        "Start_Date": "September 25",
+        "End_Date": "September 25",
+        "Num": "19,000 homes",
+        "Annotation": "Hurricane Edith"
+      },
+      {
+        "Administrative_Areas": "Trinidad and Tobago",
+        "Start_Date": "October 3",
+        "End_Date": "October 3",
+        "Num": "6,250 houses",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "October 4",
+        "End_Date": "October 7",
+        "Num": "30,000 dwellings",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Areas": "Guadeloupe",
+        "Start_Date": "October 26",
+        "End_Date": "October 29",
+        "Num": "500 homes",
+        "Annotation": "Tropical Storm Helena"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Bermuda",
+        "Locations": [
+          "Bermuda"
+        ],
+        "Start_Date": "August 9",
+        "End_Date": "August 9",
+        "Num": "NULL",
+        "Annotation": "Hurricane Arlene"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina",
+          "Virginia",
+          "Maryland",
+          "Pennsylvania"
+        ],
+        "Start_Date": "June 2",
+        "End_Date": "June 4",
+        "Num": "NULL",
+        "Annotation": "Unnamed tropical storm"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Port Arthur",
+          "Jefferson",
+          "Newton",
+          "Orange counties",
+          "Guthrie"
+        ],
+        "Start_Date": "September 16",
+        "End_Date": "September 20",
+        "Num": "4,000 homes",
+        "Annotation": "Tropical Storm Cindy"
+      },
+      {
+        "Administrative_Area": "Martinique",
+        "Locations": [
+          "Le Lamentin Airport"
+        ],
+        "Start_Date": "September 25",
+        "End_Date": "September 25",
+        "Num": "19,000 homes",
+        "Annotation": "Hurricane Edith"
+      },
+      {
+        "Administrative_Area": "Trinidad and Tobago",
+        "Locations": [
+          "Scarborough harbor"
+        ],
+        "Start_Date": "October 3",
+        "End_Date": "October 3",
+        "Num": "6,250 houses",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Southeastern Cuba"
+        ],
+        "Start_Date": "October 4",
+        "End_Date": "October 7",
+        "Num": "30,000 dwellings",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Area": "Guadeloupe",
+        "Locations": [
+          "Guadeloupe"
+        ],
+        "Start_Date": "October 26",
+        "End_Date": "October 29",
+        "Num": "500 homes",
+        "Annotation": "Tropical Storm Helena"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "7,214",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Season summary"
+      },
+      {
+        "Administrative_Areas": "Martinique",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "10",
+        "Annotation": "Hurricane Edith"
+      },
+      {
+        "Administrative_Areas": "Trinidad and Tobago",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "24",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Areas": "Grenada",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "6",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Areas": "Dominican Republic",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "over 400",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Areas": "Haiti",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "about 3,500",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 1,750",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Areas": "Jamaica",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "11",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Areas": "Bahamas",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Areas": "Guadeloupe",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5",
+        "Annotation": "Tropical Storm Helena"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Texas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Tropical Storm Cindy"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Hurricane Ginny"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Maine"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Hurricane Ginny"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Oklahoma"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm Cindy"
+      },
+      {
+        "Administrative_Area": "Martinique",
+        "Locations": [
+          "Le Lamentin Airport"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Edith"
+      },
+      {
+        "Administrative_Area": "Trinidad and Tobago",
+        "Locations": [
+          "Scarborough harbor"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Area": "Grenada",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Area": "Dominican Republic",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Santiago de Cuba"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Spring Hill"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Area": "Guadeloupe",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm Helena"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "300 residents",
+        "Annotation": "Tropical Storm Cindy"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Guthrie, Oklahoma"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "300 residents",
+        "Annotation": "Tropical Storm Cindy"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": [
+          "Trinidad and Tobago"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Areas": [
+          "Guadeloupe"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Tropical Storm Helena"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Trinidad and Tobago",
+        "Locations": [
+          "Scarborough"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "About 2,750 houses were destroyed, while 3,500 others were impacted.",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Area": "Guadeloupe",
+        "Locations": [
+          "Guadeloupe"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "500 people homeless",
+        "Annotation": "Tropical Storm Helena"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Guadeloupe",
+        "Start_Date": "October 25",
+        "End_Date": "October 30",
+        "Num": "14",
+        "Annotation": "Tropical Storm Helena"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Guadeloupe",
+        "Locations": [
+          "Guadeloupe"
+        ],
+        "Start_Date": "October 25",
+        "End_Date": "October 30",
+        "Num": "14",
+        "Annotation": "Tropical Storm Helena"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$833.8 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$12.5 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tropical Storm Cindy"
+      },
+      {
+        "Administrative_Areas": "Martinique",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$46.6 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Edith"
+      },
+      {
+        "Administrative_Areas": "Dominican Republic",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$60 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Areas": "Haiti",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$125 million to $180 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$500 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Areas": "Jamaica",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$11.9 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Areas": "Bahamas",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$1.5 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$400,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Ginny"
+      },
+      {
+        "Administrative_Areas": "Guadeloupe",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$500,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tropical Storm Helena"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Port Arthur",
+          "Jefferson",
+          "Newton",
+          "Orange counties",
+          "Guthrie"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$12.5 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tropical Storm Cindy"
+      },
+      {
+        "Administrative_Area": "Martinique",
+        "Locations": [
+          "Le Lamentin Airport"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$46.6 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Edith"
+      },
+      {
+        "Administrative_Area": "Dominican Republic",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$60 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$125 million to $180 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Santiago de Cuba",
+          "San Antonio del Sur"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$500 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Area": "Jamaica",
+        "Locations": [
+          "Spring Hill"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$11.9 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$1.5 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Flora"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina",
+          "Nantucket",
+          "Chatham",
+          "Maine"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$400,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Hurricane Ginny"
+      },
+      {
+        "Administrative_Area": "Guadeloupe",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$500,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Tropical Storm Helena"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Info_Box|Season summary",
+    "Start_Date": "June 1, 1963",
+    "End_Date": "October 30, 1963",
+    "Time_Annotation": "Info_Box"
+  }
+]

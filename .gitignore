@@ -4,10 +4,6 @@
 # ignore notebooks
 **.ipynb
 
-#ignore draft figures
-Visualizations/**/plots
-
-
 # ignore excel files
 **.xlsx
 
@@ -15,8 +11,8 @@ Visualizations/**/plots
 **/*.env
 
 #ignore .jsonl file for batch process
-**/*basic.jsonl
-**/*impact.jsonl
+**/*.jsonl
+
 
 # ... except for this excel file (gold flat-format annotation table)
 !Database/gold/ImpactDB_DataTable_Validation.xlsx
@@ -35,3 +31,8 @@ geopy_cache.sqlite
 
 # vscode
 .vscode
+
+# full runs
+**/*.json.fixed.json
+**/geojson
+*full_run*/

@@ -1,0 +1,438 @@
+[
+  {
+    "Event_ID": "JQBi8Er",
+    "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Bret_(2017)",
+    "Event_Names": "Tropical Storm Bret (2017)",
+    "Total_Summary_Affected": {
+      "Total_Affected": "14,075 people",
+      "Total_Affected_Annotation": "Venezuela"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "Trinidad and Tobago"
+        ],
+        "Start_Date": "June 20, 2017",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Trinidad and Tobago"
+      },
+      {
+        "Administrative_Areas": [
+          "Venezuela"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "14,075 people",
+        "Annotation": "Venezuela"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Trinidad and Tobago",
+        "Locations": [
+          "Barrackpore",
+          "Port-of-Spain",
+          "Aranguez"
+        ],
+        "Start_Date": "June 20, 2017",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Trinidad and Tobago"
+      },
+      {
+        "Administrative_Area": "Venezuela",
+        "Locations": [
+          "Margarita Island",
+          "Miranda state",
+          "Pampatar"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "14,075 people",
+        "Annotation": "Venezuela"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Trinidad and Tobago",
+        "Start_Date": "June 19, 2017",
+        "End_Date": "June 20, 2017",
+        "Num": "NULL",
+        "Annotation": "Trinidad and Tobago"
+      },
+      {
+        "Administrative_Areas": "Venezuela",
+        "Start_Date": "June 20, 2017",
+        "End_Date": "June 20, 2017",
+        "Num": "NULL",
+        "Annotation": "Venezuela"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Trinidad and Tobago",
+        "Locations": [
+          "Barrackpore",
+          "Port-of-Spain",
+          "Aranguez"
+        ],
+        "Start_Date": "June 19, 2017",
+        "End_Date": "June 20, 2017",
+        "Num": "hundreds of homes",
+        "Annotation": "Trinidad and Tobago"
+      },
+      {
+        "Administrative_Area": "Trinidad and Tobago",
+        "Locations": [
+          "Port-of-Spain General Hospital"
+        ],
+        "Start_Date": "June 19, 2017",
+        "End_Date": "June 20, 2017",
+        "Num": "NULL",
+        "Annotation": "Trinidad and Tobago"
+      },
+      {
+        "Administrative_Area": "Trinidad and Tobago",
+        "Locations": [
+          "five schools"
+        ],
+        "Start_Date": "June 19, 2017",
+        "End_Date": "June 20, 2017",
+        "Num": "five schools",
+        "Annotation": "Trinidad and Tobago"
+      },
+      {
+        "Administrative_Area": "Venezuela",
+        "Locations": [
+          "Miranda state"
+        ],
+        "Start_Date": "June 20, 2017",
+        "End_Date": "June 20, 2017",
+        "Num": "many homes",
+        "Annotation": "Venezuela"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "2",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Trinidad and Tobago",
+        "Start_Date": "June 20, 2017",
+        "End_Date": "June 21, 2017",
+        "Num": "2",
+        "Annotation": "Trinidad and Tobago"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Trinidad and Tobago",
+        "Locations": [
+          "Trinidad",
+          "Tobago"
+        ],
+        "Start_Date": "June 20, 2017",
+        "End_Date": "June 21, 2017",
+        "Num": "1",
+        "Annotation": "Trinidad and Tobago"
+      },
+      {
+        "Administrative_Area": "Trinidad and Tobago",
+        "Locations": [
+          "Tobago"
+        ],
+        "Start_Date": "June 21, 2017",
+        "End_Date": "June 28, 2017",
+        "Num": "1",
+        "Annotation": "Trinidad and Tobago"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Trinidad and Tobago",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Trinidad and Tobago"
+      },
+      {
+        "Administrative_Areas": "Venezuela",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "14,075 people",
+        "Annotation": "Venezuela"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Trinidad and Tobago",
+        "Locations": [
+          "Tobago"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "72 shelters opened",
+        "Annotation": "Trinidad and Tobago"
+      },
+      {
+        "Administrative_Area": "Venezuela",
+        "Locations": [
+          "Miranda state"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "400 families",
+        "Annotation": "Venezuela"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Trinidad and Tobago",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Trinidad and Tobago"
+      },
+      {
+        "Administrative_Areas": "Venezuela",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "14,075 people",
+        "Annotation": "Venezuela"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Trinidad and Tobago",
+        "Locations": [
+          "Barrackpore"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "millions of dollars",
+        "Annotation": "Trinidad and Tobago"
+      },
+      {
+        "Administrative_Area": "Venezuela",
+        "Locations": [
+          "Miranda state"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "400 families",
+        "Annotation": "Venezuela"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Venezuela",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Two people",
+        "Annotation": "Venezuela"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Venezuela",
+        "Locations": [
+          "Margarita Island"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "Two people",
+        "Annotation": "Venezuela"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "Trinidad and Tobago"
+        ],
+        "Start_Date": "June 19, 2017",
+        "End_Date": "June 20, 2017",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Trinidad and Tobago"
+      },
+      {
+        "Administrative_Areas": [
+          "Venezuela"
+        ],
+        "Start_Date": "June 19, 2017",
+        "End_Date": "June 20, 2017",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Venezuela"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "Trinidad and Tobago",
+        "Locations": [
+          "Barrackpore"
+        ],
+        "Start_Date": "June 19, 2017",
+        "End_Date": "June 20, 2017",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Trinidad and Tobago"
+      },
+      {
+        "Administrative_Area": "Venezuela",
+        "Locations": [
+          "Margarita Island",
+          "Miranda state"
+        ],
+        "Start_Date": "June 19, 2017",
+        "End_Date": "June 20, 2017",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Venezuela"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": ">= $3 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Trinidad and Tobago",
+        "Start_Date": "June 19, 2017",
+        "End_Date": "June 20, 2017",
+        "Num": "TT$20 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Trinidad and Tobago"
+      },
+      {
+        "Administrative_Areas": "Venezuela",
+        "Start_Date": "June 19, 2017",
+        "End_Date": "June 20, 2017",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Venezuela"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Trinidad and Tobago",
+        "Locations": [
+          "Barrackpore"
+        ],
+        "Start_Date": "June 19, 2017",
+        "End_Date": "June 20, 2017",
+        "Num": "millions of dollars",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Trinidad and Tobago"
+      },
+      {
+        "Administrative_Area": "Trinidad and Tobago",
+        "Locations": [
+          "Port-of-Spain"
+        ],
+        "Start_Date": "June 19, 2017",
+        "End_Date": "June 20, 2017",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Trinidad and Tobago"
+      },
+      {
+        "Administrative_Area": "Trinidad and Tobago",
+        "Locations": [
+          "San Juan\u2013Laventille"
+        ],
+        "Start_Date": "June 19, 2017",
+        "End_Date": "June 20, 2017",
+        "Num": "TT$25 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Trinidad and Tobago"
+      },
+      {
+        "Administrative_Area": "Trinidad and Tobago",
+        "Locations": [
+          "Aranguez"
+        ],
+        "Start_Date": "June 19, 2017",
+        "End_Date": "June 20, 2017",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Trinidad and Tobago"
+      },
+      {
+        "Administrative_Area": "Venezuela",
+        "Locations": [
+          "Miranda"
+        ],
+        "Start_Date": "June 19, 2017",
+        "End_Date": "June 20, 2017",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Venezuela"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood",
+    "Hazards_Annotation": "Trinidad and Tobago|Venezuela",
+    "Start_Date": "June 19, 2017",
+    "End_Date": "June 20, 2017",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Trinidad and Tobago",
+      "Guyana",
+      "Venezuela",
+      "Windward Islands"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

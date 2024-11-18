@@ -1,0 +1,654 @@
+[
+  {
+    "Event_ID": "7H3kTSP",
+    "Sources": "https://en.wikipedia.org/wiki/2016%E2%80%9317_South_American_floods",
+    "Event_Names": "2016\u201317 South American floods",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Colombia",
+        "Start_Date": "December 1, 2016",
+        "End_Date": "April 6, 2017",
+        "Num": "NULL",
+        "Annotation": "Colombia"
+      },
+      {
+        "Administrative_Areas": "Ecuador",
+        "Start_Date": "January 2017",
+        "End_Date": "April 2017",
+        "Num": "NULL",
+        "Annotation": "Ecuador"
+      },
+      {
+        "Administrative_Areas": "Peru",
+        "Start_Date": "January 2017",
+        "End_Date": "May 2017",
+        "Num": "1.1 million",
+        "Annotation": "Peru"
+      },
+      {
+        "Administrative_Areas": "Brazil",
+        "Start_Date": "March 11, 2017",
+        "End_Date": "March 13, 2017",
+        "Num": "NULL",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Areas": "Chile",
+        "Start_Date": "February 2017",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Colombia",
+        "Locations": [
+          "Siloe neighborhood, Cali",
+          "Mocoa"
+        ],
+        "Start_Date": "December 1, 2016",
+        "End_Date": "April 6, 2017",
+        "Num": "301 known dead, more than 400 injured, 314 missing",
+        "Annotation": "Colombia"
+      },
+      {
+        "Administrative_Area": "Ecuador",
+        "Locations": [
+          "Coastal Manab\u00ed",
+          "Guayaquil",
+          "Quito"
+        ],
+        "Start_Date": "January 2017",
+        "End_Date": "April 2017",
+        "Num": "At least 16 people killed",
+        "Annotation": "Ecuador"
+      },
+      {
+        "Administrative_Area": "Peru",
+        "Locations": [
+          "Tumbes",
+          "Piura",
+          "Lambayeque",
+          "La Libertad",
+          "\u00c1ncash",
+          "Lima",
+          "Trujillo",
+          "Huarmey"
+        ],
+        "Start_Date": "January 2017",
+        "End_Date": "May 2017",
+        "Num": "113 people killed, 354 injured, 18 missing, 115,000 homes demolished, 178,000 people homeless, 2,500 kilometers of roads destroyed, 3 million at-risk for waterborne diseases",
+        "Annotation": "Peru"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Rio Grande do Sul"
+        ],
+        "Start_Date": "March 11, 2017",
+        "End_Date": "March 13, 2017",
+        "Num": "2 people killed, 70 injured, 10 missing",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Area": "Chile",
+        "Locations": [
+          "Santiago"
+        ],
+        "Start_Date": "February 2017",
+        "End_Date": "NULL",
+        "Num": "At least 18 people killed",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Peru",
+        "Start_Date": "January 2017",
+        "End_Date": "May 2017",
+        "Num": "More than 115,000 homes",
+        "Annotation": "Peru"
+      },
+      {
+        "Administrative_Areas": "Colombia",
+        "Start_Date": "December 1, 2016",
+        "End_Date": "April 6, 2017",
+        "Num": "14 homes",
+        "Annotation": "Colombia"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Colombia",
+        "Locations": [
+          "Siloe neighborhood, Cali"
+        ],
+        "Start_Date": "December 1, 2016",
+        "End_Date": "December 1, 2016",
+        "Num": "14 homes",
+        "Annotation": "Colombia"
+      },
+      {
+        "Administrative_Area": "Peru",
+        "Locations": [
+          "Tumbes",
+          "Piura",
+          "Lambayeque"
+        ],
+        "Start_Date": "January 2017",
+        "End_Date": "May 2017",
+        "Num": "More than 115,000 homes",
+        "Annotation": "Peru"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": ">=418 deaths",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Colombia",
+        "Start_Date": "December 1, 2016",
+        "End_Date": "April 6, 2017",
+        "Num": "301",
+        "Annotation": "Colombia"
+      },
+      {
+        "Administrative_Areas": "Ecuador",
+        "Start_Date": "January 2017",
+        "End_Date": "April 2017",
+        "Num": "16",
+        "Annotation": "Ecuador"
+      },
+      {
+        "Administrative_Areas": "Peru",
+        "Start_Date": "January 2017",
+        "End_Date": "May 2017",
+        "Num": "113",
+        "Annotation": "Peru"
+      },
+      {
+        "Administrative_Areas": "Chile",
+        "Start_Date": "February 2017",
+        "End_Date": "NULL",
+        "Num": "18",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Areas": "Brazil",
+        "Start_Date": "March 11, 2017",
+        "End_Date": "March 13, 2017",
+        "Num": "2",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Colombia",
+        "Locations": [
+          "Siloe neighborhood, Cali"
+        ],
+        "Start_Date": "December 1, 2016",
+        "End_Date": "NULL",
+        "Num": "6",
+        "Annotation": "Colombia"
+      },
+      {
+        "Administrative_Area": "Colombia",
+        "Locations": [
+          "Mocoa"
+        ],
+        "Start_Date": "March 31, 2017",
+        "End_Date": "April 6, 2017",
+        "Num": "301",
+        "Annotation": "Colombia"
+      },
+      {
+        "Administrative_Area": "Ecuador",
+        "Locations": [
+          "Coastal Manab\u00ed",
+          "Guayaquil",
+          "Quito"
+        ],
+        "Start_Date": "January 2017",
+        "End_Date": "April 2017",
+        "Num": "16",
+        "Annotation": "Ecuador"
+      },
+      {
+        "Administrative_Area": "Peru",
+        "Locations": [
+          "Tumbes",
+          "Piura",
+          "Lambayeque",
+          "La Libertad",
+          "\u00c1ncash",
+          "Lima",
+          "Trujillo",
+          "Huarmey"
+        ],
+        "Start_Date": "January 2017",
+        "End_Date": "May 2017",
+        "Num": "113",
+        "Annotation": "Peru"
+      },
+      {
+        "Administrative_Area": "Chile",
+        "Locations": [
+          "Santiago"
+        ],
+        "Start_Date": "February 2017",
+        "End_Date": "NULL",
+        "Num": "18",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Rio Grande do Sul"
+        ],
+        "Start_Date": "March 11, 2017",
+        "End_Date": "March 13, 2017",
+        "Num": "2",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Colombia",
+        "Start_Date": "December 1, 2016",
+        "End_Date": "April 6, 2017",
+        "Num": "NULL",
+        "Annotation": "Colombia"
+      },
+      {
+        "Administrative_Areas": "Ecuador",
+        "Start_Date": "January 2017",
+        "End_Date": "April 2017",
+        "Num": "NULL",
+        "Annotation": "Ecuador"
+      },
+      {
+        "Administrative_Areas": "Peru",
+        "Start_Date": "January 2017",
+        "End_Date": "May 2017",
+        "Num": "NULL",
+        "Annotation": "Peru"
+      },
+      {
+        "Administrative_Areas": "Brazil",
+        "Start_Date": "March 11, 2017",
+        "End_Date": "March 13, 2017",
+        "Num": "NULL",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Areas": "Chile",
+        "Start_Date": "February 2017",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Colombia",
+        "Locations": [
+          "Siloe neighborhood, Cali",
+          "Mocoa"
+        ],
+        "Start_Date": "December 1, 2016",
+        "End_Date": "April 6, 2017",
+        "Num": "NULL",
+        "Annotation": "Colombia"
+      },
+      {
+        "Administrative_Area": "Ecuador",
+        "Locations": [
+          "Coastal Manab\u00ed",
+          "Guayaquil",
+          "Quito"
+        ],
+        "Start_Date": "January 2017",
+        "End_Date": "April 2017",
+        "Num": "NULL",
+        "Annotation": "Ecuador"
+      },
+      {
+        "Administrative_Area": "Peru",
+        "Locations": [
+          "Tumbes",
+          "Piura",
+          "Lambayeque",
+          "La Libertad",
+          "\u00c1ncash",
+          "Lima",
+          "Trujillo",
+          "Huarmey"
+        ],
+        "Start_Date": "January 2017",
+        "End_Date": "May 2017",
+        "Num": "178,000 people homeless",
+        "Annotation": "Peru"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Rio Grande do Sul"
+        ],
+        "Start_Date": "March 11, 2017",
+        "End_Date": "March 13, 2017",
+        "Num": "NULL",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Area": "Chile",
+        "Locations": [
+          "Santiago"
+        ],
+        "Start_Date": "February 2017",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "approximately 178,000",
+      "Total_Homeless_Annotation": "Peru"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Peru",
+        "Start_Date": "January 2017",
+        "End_Date": "NULL",
+        "Num": "approximately 178,000",
+        "Annotation": "Peru"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Peru",
+        "Locations": [
+          "Tumbes",
+          "Piura",
+          "Lambayeque"
+        ],
+        "Start_Date": "January 2017",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Peru"
+      },
+      {
+        "Administrative_Area": "Peru",
+        "Locations": [
+          "Piura",
+          "Catacaos",
+          "Pedregal Chico"
+        ],
+        "Start_Date": "March 27, 2017",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Peru"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": ">824 injuries",
+      "Total_Injuries_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Colombia",
+        "Start_Date": "December 1, 2016",
+        "End_Date": "April 6, 2017",
+        "Num": "more than 400",
+        "Annotation": "Colombia"
+      },
+      {
+        "Administrative_Areas": "Peru",
+        "Start_Date": "January 2017",
+        "End_Date": "May 2017",
+        "Num": "354",
+        "Annotation": "Peru"
+      },
+      {
+        "Administrative_Areas": "Brazil",
+        "Start_Date": "March 11, 2017",
+        "End_Date": "March 13, 2017",
+        "Num": "70",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Colombia",
+        "Locations": [
+          "Mocoa"
+        ],
+        "Start_Date": "March 31, 2017",
+        "End_Date": "April 1, 2017",
+        "Num": "more than 400 (including 167 children)",
+        "Annotation": "Colombia"
+      },
+      {
+        "Administrative_Area": "Peru",
+        "Locations": [
+          "Piura",
+          "Catacaos",
+          "Pedregal Chico"
+        ],
+        "Start_Date": "March 27, 2017",
+        "End_Date": "March 27, 2017",
+        "Num": "NULL",
+        "Annotation": "Peru"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Rio Grande do Sul"
+        ],
+        "Start_Date": "March 11, 2017",
+        "End_Date": "March 13, 2017",
+        "Num": "70",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "NULL",
+      "Total_Damage_Unit": "NULL",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Peru",
+        "Start_Date": "January 2017",
+        "End_Date": "May 2017",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Peru"
+      },
+      {
+        "Administrative_Areas": "Ecuador",
+        "Start_Date": "January 2017",
+        "End_Date": "April 2017",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Ecuador"
+      },
+      {
+        "Administrative_Areas": "Colombia",
+        "Start_Date": "December 1, 2016",
+        "End_Date": "April 6, 2017",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Colombia"
+      },
+      {
+        "Administrative_Areas": "Brazil",
+        "Start_Date": "March 11, 2017",
+        "End_Date": "March 13, 2017",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Areas": "Chile",
+        "Start_Date": "February 2017",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Peru",
+        "Locations": [
+          "Tumbes",
+          "Piura",
+          "Lambayeque",
+          "La Libertad",
+          "\u00c1ncash",
+          "Lima",
+          "Trujillo",
+          "Huarmey"
+        ],
+        "Start_Date": "January 2017",
+        "End_Date": "May 2017",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Peru"
+      },
+      {
+        "Administrative_Area": "Ecuador",
+        "Locations": [
+          "Manab\u00ed",
+          "Guayaquil",
+          "Quito"
+        ],
+        "Start_Date": "January 2017",
+        "End_Date": "April 2017",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Ecuador"
+      },
+      {
+        "Administrative_Area": "Colombia",
+        "Locations": [
+          "Cali",
+          "Mocoa"
+        ],
+        "Start_Date": "December 1, 2016",
+        "End_Date": "April 6, 2017",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Colombia"
+      },
+      {
+        "Administrative_Area": "Brazil",
+        "Locations": [
+          "Rio Grande do Sul"
+        ],
+        "Start_Date": "March 11, 2017",
+        "End_Date": "March 13, 2017",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Elsewhere"
+      },
+      {
+        "Administrative_Area": "Chile",
+        "Locations": [
+          "Santiago"
+        ],
+        "Start_Date": "February 2017",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Elsewhere"
+      }
+    ],
+    "Main_Event": "Flood",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Flood",
+    "Hazards_Annotation": "Info_Box",
+    "Start_Date": "December 2016",
+    "End_Date": "May 2017",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Ecuador",
+      "Peru",
+      "Colombia",
+      "Brazil",
+      "Chile"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

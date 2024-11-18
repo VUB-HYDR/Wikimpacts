@@ -1,14 +1,20 @@
 import argparse
-import ast
 import os
 import pathlib
 import sqlite3
 
 import pandas as pd
+from pandarallel import pandarallel
 from tqdm import tqdm
 
-tqdm.pandas()
-from Database.scr.normalize_utils import GeoJsonUtils, Logging
+from Database.scr.normalize_utils import (
+    CategoricalValidation,
+    GeoJsonUtils,
+    Logging,
+    NormalizeUtils,
+)
+
+pandarallel.initialize(progress_bar=False, nb_workers=5)
 
 if __name__ == "__main__":
     event_levels = {
@@ -107,7 +113,9 @@ if __name__ == "__main__":
     )
 
     args = parser.parse_args()
-    logger = Logging.get_logger(f"database-insertion", level="INFO")
+    logger = Logging.get_logger(f"database-insertion", level="INFO", filename="v1_full_run_insertion_raw.log")
+    utils = NormalizeUtils()
+    validation = CategoricalValidation()
 
     connection = sqlite3.connect(args.database_name)
     cursor = connection.cursor()
@@ -123,25 +131,19 @@ if __name__ == "__main__":
     if args.event_level == main_level:
         args.target_table = "Total_Summary"
         logger.info(f"Inserting {main_level}...\n")
-        for f in files:
+        for f in tqdm(files, desc="Files"):
             data = pd.read_parquet(f"{args.file_dir}/{f}", engine="fastparquet")
+            data = utils.replace_nulls(data)
 
-            logger.info("Converting everything to strings...")
-            for c in data.columns:
-                data[c] = data[c].astype(str)
+            # turn invalid currencies to None (for L1 only)
+            data = data.parallel_apply(lambda row: validation.validate_currency_monetary_impact(row), axis=1)
 
             # geojson in l1 is always of type list
             if args.dump_geojson_to_file:
-                logger.info(f"Popping GeoJson files out of {args.database_name} and onto disk")
                 for col in event_levels[args.event_level]["location_columns"].keys():
-                    logger.info(f"Processing GeoJson column {col}_GeoJson in {args.event_level}")
+                    logger.info(f"Processing GeoJson column {col}_GeoJson in {args.event_level}; File: {f}")
 
-                    for i in ["GeoJson", "Norm"]:
-                        data[f"{col}_{i}"] = data[f"{col}_{i}"].apply(
-                            lambda x: ast.literal_eval(x) if isinstance(x, str) else []
-                        )
-
-                    data[f"{col}_GeoJson"] = data.progress_apply(
+                    data[f"{col}_GeoJson"] = data.parallel_apply(
                         lambda row: (
                             [
                                 geojson_utils.geojson_to_file(row[f"{col}_GeoJson"][i], row[f"{col}_Norm"][i])
@@ -154,27 +156,29 @@ if __name__ == "__main__":
                         axis=1,
                     )
 
-                    for i in ["GeoJson", "Norm"]:
-                        data[f"{col}_{i}"] = data[f"{col}_{i}"].astype(str)
+            logger.info("Converting everything to strings...")
+            data.replace(float("nan"), None, inplace=True)
+            for c in data.columns:
+                data[c] = data[c].astype(str)
 
             # change if_exists to "append" to avoid overwriting the database
             # choose "replace" to overwrite the database with a fresh copy of the data
-        for i in tqdm(range(len(data))):
-            try:
-                data.iloc[i : i + 1].to_sql(
-                    name=args.target_table,
-                    con=connection,
-                    if_exists=args.method,
-                    index=False,
-                )
-            except sqlite3.IntegrityError as err:
-                logger.debug(
-                    f"""Could not insert event for level {args.event_level}. Error {err}.
-                             The problematic row will be stored in /tmp/ with the error. GeoJson columns will not be included."""
-                )
-                err_row = data.iloc[i : i + 1][[x for x in data.columns if "GeoJson" not in x]].copy()
-                err_row["ERROR"] = err
-                errors = pd.concat([errors, err_row], ignore_index=True)
+            for i in tqdm(range(len(data)), desc=f"Inserting {args.event_level} into {args.database_name}"):
+                try:
+                    data.iloc[i : i + 1].to_sql(
+                        name=args.target_table,
+                        con=connection,
+                        if_exists=args.method,
+                        index=False,
+                    )
+                except sqlite3.IntegrityError as err:
+                    logger.debug(
+                        f"""Could not insert event for level {args.event_level}. Error {err}.
+                                The problematic row will be stored in /tmp/ with the error. GeoJson columns will not be included."""
+                    )
+                    err_row = data.iloc[i : i + 1][[x for x in data.columns if "GeoJson" not in x]].copy()
+                    err_row["ERROR"] = err
+                    errors = pd.concat([errors, err_row], ignore_index=True)
 
     elif args.event_level in sub_levels:
         logger.info(f"Inserting {args.event_level}...\n")
@@ -187,24 +191,16 @@ if __name__ == "__main__":
 
         assert len(check_table) == 1, f"Table name {args.target_table} incorrect! Found {check_table} instead."
 
-        for f in files:
+        for f in tqdm(files, desc="Files"):
             data = pd.read_parquet(f"{args.file_dir}/{f}", engine="fastparquet")
+            data = utils.replace_nulls(data)
 
-            logger.info("Converting everything to strings...")
-            for c in data.columns:
-                data[c] = data[c].astype(str)
-
-            logger.info(f"Popping GeoJson files out of {args.database_name} and onto disk")
+            logger.info(f"Popping GeoJson files out for level {args.event_level} and onto disk")
             if args.dump_geojson_to_file:
                 for col, _type in event_levels[args.event_level]["location_columns"].items():
                     logger.info(f"Processing GeoJson column {col} in {args.event_level}; File: {f}")
                     if _type == list:
-                        for i in ["GeoJson", "Norm"]:
-                            data[f"{col}_{i}"] = data[f"{col}_{i}"].apply(
-                                lambda x: ast.literal_eval(x) if isinstance(x, str) else []
-                            )
-
-                        data[f"{col}_GeoJson"] = data.progress_apply(
+                        data[f"{col}_GeoJson"] = data.parallel_apply(
                             lambda row: (
                                 [
                                     geojson_utils.geojson_to_file(row[f"{col}_GeoJson"][i], row[f"{col}_Norm"][i])
@@ -216,11 +212,9 @@ if __name__ == "__main__":
                             ),
                             axis=1,
                         )
-                        for i in ["GeoJson", "Norm"]:
-                            data[f"{col}_{i}"] = data[f"{col}_{i}"].astype(str)
 
                     elif _type == str:
-                        data[f"{col}_GeoJson"] = data.progress_apply(
+                        data[f"{col}_GeoJson"] = data.parallel_apply(
                             lambda row: (
                                 geojson_utils.geojson_to_file(row[f"{col}_GeoJson"], row[f"{col}_Norm"])
                                 if isinstance(row[f"{col}_GeoJson"], str)
@@ -228,12 +222,15 @@ if __name__ == "__main__":
                             ),
                             axis=1,
                         )
-                        for i in ["GeoJson", "Norm"]:
-                            data[f"{col}_{i}"] = data[f"{col}_{i}"].astype(str)
 
             # change if_exists to "append" to avoid overwriting the database
             # choose "replace" to overwrite the database with a fresh copy of the data
-            for i in tqdm(range(len(data))):
+            logger.info("Converting everything to strings...")
+            data.replace(float("nan"), None, inplace=True)
+            for c in data.columns:
+                data[c] = data[c].astype(str)
+
+            for i in tqdm(range(len(data)), desc=f"Inserting {args.event_level} into {args.database_name}"):
                 try:
                     data.iloc[i : i + 1].to_sql(
                         name=args.target_table,
@@ -250,7 +247,8 @@ if __name__ == "__main__":
                     err_row["ERROR"] = err
                     errors = pd.concat([errors, err_row], ignore_index=True)
 
-    geojson_utils.store_non_english_nids()
+    if args.dump_geojson_to_file:
+        geojson_utils.store_non_english_nids()
 
     if errors.shape != (0, 0):
         from time import time
@@ -260,5 +258,5 @@ if __name__ == "__main__":
         )
         logger.error(f"Insert errors were found! THIS ROW WAS NOT INSERTED! Storing in {tmp_errors_filename}")
         pathlib.Path(args.error_path).mkdir(parents=True, exist_ok=True)
-        errors.to_json(tmp_errors_filename, orient="records")
+        errors.to_json(tmp_errors_filename, orient="records", indent=3)
     connection.close()

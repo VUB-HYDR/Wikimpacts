@@ -1,3 +1,5 @@
+[![Run Unit Tests via Pytest](https://github.com/VUB-HYDR/Wikimpacts/actions/workflows/run_tests.yml/badge.svg)](https://github.com/VUB-HYDR/Wikimpacts/actions/workflows/run_tests.yml)
+
 # Wikimpacts
 Wikimapcts is the first version of climate impact dataset creating by generative AI GPT4.0
 

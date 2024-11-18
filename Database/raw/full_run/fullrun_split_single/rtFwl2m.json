@@ -1,0 +1,566 @@
+[
+  {
+    "Event_ID": "rtFwl2m",
+    "Sources": "https://en.wikipedia.org/wiki/Tropical_Storm_Bret_(1993)",
+    "Event_Names": "Tropical Storm Bret (1993)",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Venezuela",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "over 11,000",
+        "Annotation": "Venezuela"
+      },
+      {
+        "Administrative_Areas": "Nicaragua",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "around 60,000",
+        "Annotation": "Central America"
+      },
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "16,000",
+        "Annotation": "Central America"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Trinidad and Tobago",
+        "Locations": [
+          "Trinidad",
+          "Tobago"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "35,000",
+        "Annotation": "Southern Caribbean"
+      },
+      {
+        "Administrative_Area": "Venezuela",
+        "Locations": [
+          "Barinas state"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "6,000",
+        "Annotation": "Venezuela"
+      },
+      {
+        "Administrative_Area": "Venezuela",
+        "Locations": [
+          "Caracas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3,500",
+        "Annotation": "Venezuela"
+      },
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "Bluefields"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Aftermath"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "Trinidad and Tobago",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Southern Caribbean"
+      },
+      {
+        "Administrative_Areas": "Venezuela",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Venezuela"
+      },
+      {
+        "Administrative_Areas": "Nicaragua",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Central America"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "Trinidad and Tobago",
+        "Locations": [
+          "southern Trinidad",
+          "central Tobago"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Southern Caribbean"
+      },
+      {
+        "Administrative_Area": "Venezuela",
+        "Locations": [
+          "Petare"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "one home",
+        "Annotation": "Venezuela"
+      },
+      {
+        "Administrative_Area": "Venezuela",
+        "Locations": [
+          "Isla Margarita"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Venezuela"
+      },
+      {
+        "Administrative_Area": "Venezuela",
+        "Locations": [
+          "Caracas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Venezuela"
+      },
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,500 houses damaged and 850 houses destroyed",
+        "Annotation": "Central America"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "213 total",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Venezuela",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "173",
+        "Annotation": "Venezuela"
+      },
+      {
+        "Administrative_Areas": "Nicaragua",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "31",
+        "Annotation": "Central America"
+      },
+      {
+        "Administrative_Areas": "Costa Rica",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Central America"
+      },
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "7",
+        "Annotation": "Central America"
+      },
+      {
+        "Administrative_Areas": "Colombia",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Southern Caribbean"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Venezuela",
+        "Locations": [
+          "Petare",
+          "Miranda state",
+          "Aragua",
+          "Caracas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "4",
+        "Annotation": "Venezuela"
+      },
+      {
+        "Administrative_Area": "Venezuela",
+        "Locations": [
+          "Miranda state"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "19",
+        "Annotation": "Venezuela"
+      },
+      {
+        "Administrative_Area": "Venezuela",
+        "Locations": [
+          "Aragua"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Venezuela"
+      },
+      {
+        "Administrative_Area": "Venezuela",
+        "Locations": [
+          "Caracas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "120",
+        "Annotation": "Venezuela"
+      },
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "Corn Islands"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "9",
+        "Annotation": "Central America"
+      },
+      {
+        "Administrative_Area": "Colombia",
+        "Locations": [
+          "Maicao"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Southern Caribbean"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Costa Rica",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "about 1,000",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Areas": "Nicaragua",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "40,000",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "16,000",
+        "Annotation": "Central America"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Venezuela",
+        "Locations": [
+          "Caracas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3,500",
+        "Annotation": "Venezuela"
+      },
+      {
+        "Administrative_Area": "Venezuela",
+        "Locations": [
+          "Barinas state"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "6,000",
+        "Annotation": "Venezuela"
+      },
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "Bluefields"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Aftermath"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,700",
+        "Annotation": "Central America"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Venezuela",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "over 11,000",
+        "Annotation": "Venezuela"
+      },
+      {
+        "Administrative_Areas": "Nicaragua",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "around 60,000",
+        "Annotation": "Central America"
+      },
+      {
+        "Administrative_Areas": "Honduras",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "16,000",
+        "Annotation": "Central America"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Venezuela",
+        "Locations": [
+          "Barinas state"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "6,000",
+        "Annotation": "Venezuela"
+      },
+      {
+        "Administrative_Area": "Venezuela",
+        "Locations": [
+          "Caracas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3,500",
+        "Annotation": "Venezuela"
+      },
+      {
+        "Administrative_Area": "Nicaragua",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "around 60,000",
+        "Annotation": "Central America"
+      },
+      {
+        "Administrative_Area": "Honduras",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "16,000",
+        "Annotation": "Central America"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "at least 500",
+      "Total_Injuries_Annotation": "Venezuela"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "Venezuela",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 500",
+        "Annotation": "Venezuela"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "Trinidad and Tobago",
+        "Locations": [
+          "Tobago"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "10",
+        "Annotation": "Southern Caribbean"
+      },
+      {
+        "Administrative_Area": "Colombia",
+        "Locations": [
+          "Maicao"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Southern Caribbean"
+      },
+      {
+        "Administrative_Area": "Venezuela",
+        "Locations": [
+          "Caracas"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 500",
+        "Annotation": "Venezuela"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$35.7 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "Venezuela",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$25 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Venezuela"
+      },
+      {
+        "Administrative_Areas": "Nicaragua",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$3 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Central America"
+      },
+      {
+        "Administrative_Areas": "Costa Rica",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$7.7 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Central America"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "Trinidad and Tobago",
+        "Locations": [
+          "Trinidad",
+          "Tobago"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "TT$4 million",
+        "Num_Unit": "TTD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Southern Caribbean"
+      },
+      {
+        "Administrative_Area": "Trinidad and Tobago",
+        "Locations": [
+          "Trinidad",
+          "Tobago"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "TT$979,000",
+        "Num_Unit": "TTD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Southern Caribbean"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Start_Date": "August 4, 1993",
+    "End_Date": "August 11, 1993",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Windward Islands",
+      "Venezuela",
+      "Colombia",
+      "Costa Rica",
+      "Nicaragua",
+      "Honduras",
+      "Trinidad and Tobago",
+      "Cura\u00e7ao",
+      "Grenada",
+      "Bonaire",
+      "El Salvador"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

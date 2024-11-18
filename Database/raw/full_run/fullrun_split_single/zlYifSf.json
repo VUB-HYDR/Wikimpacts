@@ -1,0 +1,509 @@
+[
+  {
+    "Event_ID": "zlYifSf",
+    "Sources": "https://en.wikipedia.org/wiki/North_American_blizzard_of_2006",
+    "Event_Names": "North American blizzard of 2006",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "District of Columbia"
+        ],
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "3,000",
+        "Annotation": "District of Columbia"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Maryland"
+        ],
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "115,000",
+        "Annotation": "Maryland"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New Jersey"
+        ],
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "16,000",
+        "Annotation": "New Jersey"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New York"
+        ],
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "300,000",
+        "Annotation": "New York"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Pennsylvania"
+        ],
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "10,000",
+        "Annotation": "Pennsylvania"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Virginia"
+        ],
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "64,000",
+        "Annotation": "Virginia"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Nova Scotia"
+        ],
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "NULL",
+        "Annotation": "Atlantic Canada"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": "Canada",
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Baltimore"
+        ],
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "few houses",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Massachusetts"
+        ],
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "NULL",
+        "Annotation": "Massachusetts"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New York City"
+        ],
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "NULL",
+        "Annotation": "New York"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Nova Scotia"
+        ],
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "NULL",
+        "Annotation": "Atlantic Canada"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "3",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Virginia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Baltimore"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Nova Scotia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": [
+          "United States",
+          "Canada"
+        ],
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New York City"
+        ],
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "300,000",
+        "Annotation": "New York"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Baltimore",
+          "Montgomery County",
+          "Prince George's County"
+        ],
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "115,000",
+        "Annotation": "Maryland"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "District of Columbia"
+        ],
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "3,000",
+        "Annotation": "District of Columbia"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Northern Virginia"
+        ],
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "64,000",
+        "Annotation": "Virginia"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New Jersey"
+        ],
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "16,000",
+        "Annotation": "New Jersey"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Philadelphia"
+        ],
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "10,000",
+        "Annotation": "Pennsylvania"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Nova Scotia"
+        ],
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "NULL",
+        "Annotation": "Atlantic Canada"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "NULL",
+        "Locations": "NULL",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": "Canada",
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Virginia"
+        ],
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Baltimore"
+        ],
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      },
+      {
+        "Administrative_Area": "Canada",
+        "Locations": [
+          "Nova Scotia"
+        ],
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "NULL",
+        "Annotation": "Impact"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States",
+          "Canada"
+        ],
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Massachusetts"
+        ],
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Massachusetts"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New York"
+        ],
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "New York"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$5 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      },
+      {
+        "Administrative_Areas": [
+          "Canada"
+        ],
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Massachusetts"
+        ],
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "$1.9 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Massachusetts"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New York"
+        ],
+        "Start_Date": "February 11, 2006",
+        "End_Date": "February 13, 2006",
+        "Num": "$3 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "New York"
+      }
+    ],
+    "Main_Event": "Extratropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood|Blizzard",
+    "Hazards_Annotation": "Info_Box|Meteorological synopsis|Impact",
+    "Start_Date": "February 11, 2006",
+    "End_Date": "February 13, 2006",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "United States",
+      "Canada"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]

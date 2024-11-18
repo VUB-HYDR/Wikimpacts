@@ -13,20 +13,21 @@ def refresh_fixture():
 
 class TestNormalizeLocations:
     @pytest.mark.parametrize(
-        "area, country, expected",
+        "area, expected",
         [
-            ("Arizona", "United States", ["USA.3_1"]),
-            ("United States", None, ["USA"]),
-            ("United States", "United States", ["USA"]),
-            ("Kings, California", "United States", ["USA.5.16_1"]),
-            ("Amman", "United States", []),
-            ("Kansas, United States", "United States", ["USA.17_1"]),
-            ("Kansas", "United States", ["USA.17_1"]),
+            ("Arizona, United States", ["USA.3_1"]),
+            ("United States", ["USA"]),
+            ("Kings, California, United States", ["USA.5.16_1"]),
+            ("Amman, United States", None),
+            ("Kansas, United States", ["USA.17_1"]),
+            ("Kansas, United States", ["USA.17_1"]),
+            ("Orange County, California, United States", ["USA.5.30_1"]),
+            ("India", None),
         ],
     )
-    def test__get_american_area(self, area, country, expected):
+    def test__get_american_area(self, area, expected):
         norm = refresh_fixture()
-        assert norm._get_american_area(area, country) == expected
+        assert norm._get_american_area(area) == expected
 
     @pytest.mark.parametrize(
         "area, country, expected",
@@ -48,6 +49,11 @@ class TestNormalizeLocations:
             ("Penjab", None, ["PAK.7_1"]),
             ("Punjab", "India", ["IND.28_1"]),
             (None, "Pakistan", ["Z06", "PAK"]),
+            ("Orange County, California, United States", None, ["USA.5.30_1"]),
+            (None, "Orange County, California, United States", ["USA.5.30_1"]),
+            (None, "Netherlands", ["NLD"]),
+            ("India", None, []),
+            (None, "India", ["Z07", "IND", "Z01", "Z04", "Z05", "Z09"]),
         ],
     )
     def test_get_gadm_gid(self, area, country, expected):

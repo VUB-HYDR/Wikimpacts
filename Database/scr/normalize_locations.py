@@ -140,21 +140,25 @@ class NormalizeLocation:
 
     def normalize_locations(
         self, area: str, is_country: bool = False, in_country: str = None
-    ) -> tuple[str, str, dict] | None:
+    ) -> tuple[str, str | None, dict | None]:
         """Queries a geocode service for a location (country or smaller) and returns the top result"""
+        original_area = area
         try:
             try:
                 if area:
-                    assert isinstance(area, str), f"Area is not a string: {area}"
+                    assert isinstance(area, str), f"Area `{area}` is not a string; type: {type(area)}"
+                if re.match(
+                    "(country|location|area|adminarea|admin|admin_area|administrative area|administrative_area|none|null)(\s)*(s)*[0-9]*$",
+                    area,
+                    flags=re.IGNORECASE,
+                ):
+                    self.logger.error(f"Input `{area}` of type {type(area)} is not a valid area name")
+                    return (None, None, None)
                 if in_country:
                     assert isinstance(in_country, str), f"Country is not a string: {in_country}"
                 assert not (
                     is_country and in_country
                 ), f"An area cannot be a country (is_country={is_country}) and in a country (in_country={in_country}) simultaneously"
-
-                # if area is None, replace by country name
-                area = in_country if not area and in_country else area
-                assert isinstance(area, str), f"Area is {area}; in_country: {in_country}"
 
             except BaseException as err:
                 self.logger.error(err)
@@ -164,8 +168,10 @@ class NormalizeLocation:
             unsd_search_output = self._get_unsd_region(area, return_name=True) if area and is_country else None
             if unsd_search_output:
                 # TODO: add geojson for unsd regions
-                return [unsd_search_output, "UNSD region", None]
+                return [unsd_search_output.title(), "UNSD region", None]
 
+            # corner case
+            area = "China" if area == "Mainland China" else area
             area = area.lower().strip()
             if "_" in area:
                 area = area.replace("_", " ")
@@ -336,7 +342,7 @@ class NormalizeLocation:
                 f"Could not find location {area}; is_country: {is_country}; in_country: {in_country}. Error message: {err}."
             )
             # return un-normalized area name
-            return (area, None, None)
+            return (original_area, None, None)
 
     def _get_unsd_region(
         self, area, fuzzy_match_n: int = 1, fuzzy_match_cuttoff: float = 0.8, return_name: bool = False
@@ -362,24 +368,22 @@ class NormalizeLocation:
                     )
 
     @cache
-    def _get_american_area(self, area: str, country: str = None) -> list | None:
+    def _get_american_area(self, area: str) -> list | None:
         # TODO: slim down
         areas = []
         if not area:
             return None
 
-        if area == self.united_states and (not country or country == self.united_states):
+        if area == self.united_states:
             return [self.USA_GID]
 
-        address = [x.strip() for x in area.split(",")] if area else [x.strip() for x in country.split(",")]
+        address = [x.strip() for x in area.split(",")] if area else [x.strip() for x in area.split(",")]
 
         # remove postal codes from the address list (common on OSM)
         address = [i for i in address if not re.match(r"^\d{5}(?:[-\s]\d{4})?$", i)]
 
-        if country == self.united_states and address[-1] != self.united_states:
-            address.append(country)
-
-        assert address[-1] == self.united_states
+        if address[-1] != self.united_states:
+            address.append(self.united_states)
 
         # county level
         if len(address) == 3:
@@ -433,7 +437,7 @@ class NormalizeLocation:
 
             areas = [f"{i}:{','.join(address[:-3]).strip()}" for i in areas]
 
-        return areas
+        return areas if areas else None
 
     @cache
     def get_gadm_gid(
@@ -453,13 +457,19 @@ class NormalizeLocation:
         if unsd_search_output:
             return unsd_search_output
 
-        # handle American States
-        us_address_split = area.split(",")[-1].strip() if area else None
-        us_search_output = (
-            self._get_american_area(area, country)
-            if area and (country == self.united_states or us_address_split == self.united_states)
-            else None
-        )
+        # find US-areas: country, states, and counties
+        if country and not area:
+            us_search = country
+        elif area and not country:
+            us_search = area
+        elif area and country:
+            us_search = (
+                area
+                if (self.united_states in country and self.united_states in area)
+                else (country if not area else (f"{area}, {country}" if country and area else None))
+            )
+
+        us_search_output = self._get_american_area(us_search)
         if us_search_output:
             return us_search_output
 
@@ -498,11 +508,12 @@ class NormalizeLocation:
                 return gadm_df.loc[gadm_df[name_col] == area][gid_col].unique().tolist()
 
             # clean out additional parts of a location name (like "county" or "city")
-            alt_name = re.sub(
-                r"(county)|(city)|(prefecture)|(district)|(city of)|(region)", "", area, flags=re.IGNORECASE
-            ).strip()
-            if alt_name in gadm_df[name_col].to_list():
-                return gadm_df.loc[gadm_df[name_col] == alt_name][gid_col].unique().tolist()
+            if isinstance(area, str):
+                alt_name = re.sub(
+                    r"(county)|(city)|(prefecture)|(district)|(city of)|(region)", "", area, flags=re.IGNORECASE
+                ).strip()
+                if alt_name in gadm_df[name_col].to_list():
+                    return gadm_df.loc[gadm_df[name_col] == alt_name][gid_col].unique().tolist()
 
         for level in range(1, 5):
             varname_col, gid_col = f"VARNAME_{level}", f"GID_{level}"

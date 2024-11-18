@@ -1,0 +1,815 @@
+[
+  {
+    "Event_ID": "HJo6QDv",
+    "Sources": "https://en.wikipedia.org/wiki/Hurricane_Donna",
+    "Event_Names": "Hurricane Donna",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Affected": [
+      {
+        "Administrative_Areas": "Senegal",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "63",
+        "Annotation": "West Africa"
+      },
+      {
+        "Administrative_Areas": "Sint Maarten",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "quarter of the island's population homeless",
+        "Annotation": "Caribbean"
+      },
+      {
+        "Administrative_Areas": "Puerto Rico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2,500",
+        "Annotation": "Caribbean"
+      },
+      {
+        "Administrative_Areas": "Florida",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "12,000",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Areas": "Florida",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "152,000",
+        "Annotation": "Florida"
+      },
+      {
+        "Administrative_Areas": "Florida",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,188",
+        "Annotation": "Florida"
+      },
+      {
+        "Administrative_Areas": "North Carolina",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "100",
+        "Annotation": "Southeastern United States and Mid-Atlantic"
+      },
+      {
+        "Administrative_Areas": "Connecticut",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "88,000",
+        "Annotation": "Elsewhere in North America"
+      },
+      {
+        "Administrative_Areas": "Connecticut",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "15,000",
+        "Annotation": "Elsewhere in North America"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Affected": [
+      {
+        "Administrative_Area": "Senegal",
+        "Locations": [
+          "Dakar"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "63",
+        "Annotation": "West Africa"
+      },
+      {
+        "Administrative_Area": "Sint Maarten",
+        "Locations": [
+          "Sint Maarten"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "quarter of the island's population homeless",
+        "Annotation": "Caribbean"
+      },
+      {
+        "Administrative_Area": "Puerto Rico",
+        "Locations": [
+          "Humacao"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "84",
+        "Annotation": "Caribbean"
+      },
+      {
+        "Administrative_Area": "Puerto Rico",
+        "Locations": [
+          "Puerto Rico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2,500",
+        "Annotation": "Caribbean"
+      },
+      {
+        "Administrative_Area": "Florida",
+        "Locations": [
+          "Florida"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "12,000",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "Florida",
+        "Locations": [
+          "Miami-Dade County"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "152,000",
+        "Annotation": "Florida"
+      },
+      {
+        "Administrative_Area": "Florida",
+        "Locations": [
+          "Florida"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,188",
+        "Annotation": "Florida"
+      },
+      {
+        "Administrative_Area": "North Carolina",
+        "Locations": [
+          "North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "100",
+        "Annotation": "Southeastern United States and Mid-Atlantic"
+      },
+      {
+        "Administrative_Area": "Connecticut",
+        "Locations": [
+          "Connecticut"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "88,000",
+        "Annotation": "Elsewhere in North America"
+      },
+      {
+        "Administrative_Area": "Connecticut",
+        "Locations": [
+          "Connecticut"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "15,000",
+        "Annotation": "Elsewhere in North America"
+      }
+    ],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Buildings_Damaged": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Areas": "Bahamas",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Turks and Caicos and Bahamas"
+      },
+      {
+        "Administrative_Areas": "Puerto Rico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Caribbean"
+      },
+      {
+        "Administrative_Areas": "Cuba",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Caribbean"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida Keys",
+          "Marathon",
+          "Fort Myers Beach",
+          "Everglades City",
+          "Homestead",
+          "Miami",
+          "Broward County",
+          "Boca Raton",
+          "Delray Beach",
+          "Boynton Beach",
+          "North Palm Beach",
+          "Juno Beach",
+          "Everglades National Park",
+          "Flamingo",
+          "Cape Sable",
+          "Collier County",
+          "Chokoloskee",
+          "Ochopee",
+          "Immokalee",
+          "Naples",
+          "Gordon Pass",
+          "Vanderbilt Beach",
+          "Fort Myers",
+          "Bradenton",
+          "Winter Haven",
+          "Dade City",
+          "Volusia County",
+          "Brunswick",
+          "Charleston",
+          "Garden City Beach",
+          "Bladen County",
+          "Sampson County",
+          "Wilmington",
+          "Nags Head",
+          "Topsail Beach",
+          "Southport",
+          "Virginia Beach",
+          "Ocean City",
+          "Cliffwood Beach",
+          "Long Island",
+          "New York City",
+          "Greene County",
+          "Connecticut",
+          "Rhode Island",
+          "Narragansett Bay",
+          "Warwick Cove",
+          "Newport",
+          "Portsmouth",
+          "Massachusetts",
+          "Vermont",
+          "New Hampshire",
+          "Falmouth",
+          "Auburn-Lewiston"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "United States"
+      },
+      {
+        "Administrative_Area": "Bahamas",
+        "Locations": [
+          "Abraham's Bay",
+          "Andros",
+          "Fortune Island",
+          "Ragged Island",
+          "Mayaguana"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Turks and Caicos and Bahamas"
+      },
+      {
+        "Administrative_Area": "Puerto Rico",
+        "Locations": [
+          "Humacao"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Annotation": "Caribbean"
+      },
+      {
+        "Administrative_Area": "Cuba",
+        "Locations": [
+          "Gibara"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "80 houses",
+        "Annotation": "Caribbean"
+      }
+    ],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "439",
+      "Total_Deaths_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Deaths": [
+      {
+        "Administrative_Areas": "Senegal",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "63",
+        "Annotation": "West Africa"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "50",
+        "Annotation": "United States"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Senegal",
+        "Locations": [
+          "Dakar"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "63",
+        "Annotation": "West Africa"
+      },
+      {
+        "Administrative_Area": "Sint Maarten",
+        "Locations": [
+          "Sint Maarten"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "7",
+        "Annotation": "Caribbean"
+      },
+      {
+        "Administrative_Area": "Anguilla",
+        "Locations": [
+          "Anguilla"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "5",
+        "Annotation": "Caribbean"
+      },
+      {
+        "Administrative_Area": "Virgin Islands",
+        "Locations": [
+          "Virgin Islands"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "7",
+        "Annotation": "Caribbean"
+      },
+      {
+        "Administrative_Area": "Puerto Rico",
+        "Locations": [
+          "Humacao"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "85",
+        "Annotation": "Caribbean"
+      },
+      {
+        "Administrative_Area": "Puerto Rico",
+        "Locations": [
+          "Puerto Rico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "107",
+        "Annotation": "Caribbean"
+      },
+      {
+        "Administrative_Area": "Haiti",
+        "Locations": [
+          "Port au Prince"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Caribbean"
+      },
+      {
+        "Administrative_Area": "Florida",
+        "Locations": [
+          "Florida"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "14",
+        "Annotation": "Florida"
+      },
+      {
+        "Administrative_Area": "North Carolina",
+        "Locations": [
+          "North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "8",
+        "Annotation": "Southeastern United States and Mid-Atlantic"
+      },
+      {
+        "Administrative_Area": "Virginia",
+        "Locations": [
+          "Virginia"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Southeastern United States and Mid-Atlantic"
+      },
+      {
+        "Administrative_Area": "Pennsylvania",
+        "Locations": [
+          "Sharon Hill"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Southeastern United States and Mid-Atlantic"
+      },
+      {
+        "Administrative_Area": "New Jersey",
+        "Locations": [
+          "New Jersey"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "9",
+        "Annotation": "Southeastern United States and Mid-Atlantic"
+      },
+      {
+        "Administrative_Area": "New York",
+        "Locations": [
+          "New York"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "Southeastern United States and Mid-Atlantic"
+      },
+      {
+        "Administrative_Area": "Quebec",
+        "Locations": [
+          "Quebec"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Elsewhere in North America"
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Displaced": [
+      {
+        "Administrative_Areas": "Puerto Rico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2,500",
+        "Annotation": "Caribbean"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "12,000",
+        "Annotation": "Preparations"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Displaced": [
+      {
+        "Administrative_Area": "Puerto Rico",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "2,500",
+        "Annotation": "Caribbean"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida Keys"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,700",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida Keys"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3,000",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida Keys"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "12,000",
+        "Annotation": "Preparations"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Miami-Dade County"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "10,000",
+        "Annotation": "Preparations"
+      }
+    ],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Homeless": [
+      {
+        "Administrative_Areas": "Sint Maarten",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least a quarter of the island's population homeless",
+        "Annotation": "Caribbean"
+      },
+      {
+        "Administrative_Areas": "Puerto Rico",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "about 2,500 people homeless",
+        "Annotation": "Caribbean"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Homeless": [
+      {
+        "Administrative_Area": "Sint Maarten",
+        "Locations": [
+          "Sint Maarten"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least a quarter of the island's population homeless",
+        "Annotation": "Caribbean"
+      },
+      {
+        "Administrative_Area": "Puerto Rico",
+        "Locations": [
+          "Puerto Rico"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "about 2,500 people homeless",
+        "Annotation": "Caribbean"
+      }
+    ],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Injuries": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 100",
+        "Annotation": "Southeastern United States and Mid-Atlantic"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1,188",
+        "Annotation": "Florida"
+      },
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "10",
+        "Annotation": "Southeastern United States and Mid-Atlantic"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Injuries": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Key West"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "71",
+        "Annotation": "Florida"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "North Carolina"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "at least 100",
+        "Annotation": "Southeastern United States and Mid-Atlantic"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Charleston"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "10",
+        "Annotation": "Southeastern United States and Mid-Atlantic"
+      }
+    ],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Insured_Damage_Annotation": "NULL"
+    },
+    "Instance_Per_Administrative_Areas_Insured_Damage": [
+      {
+        "Administrative_Areas": [
+          "United States"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "NULL"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "NULL"
+      }
+    ],
+    "Total_Summary_Damage": {
+      "Total_Damage": "$980 million",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "No",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL",
+      "Total_Damage_Annotation": "Info_Box"
+    },
+    "Instance_Per_Administrative_Areas_Damage": [
+      {
+        "Administrative_Areas": "United States",
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$3.35 billion",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "United States"
+      }
+    ],
+    "Specific_Instance_Per_Administrative_Area_Damage": [
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Florida"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$350 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Florida"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Ocean City, Maryland"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$300,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Southeastern United States and Mid-Atlantic"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New Jersey"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Southeastern United States and Mid-Atlantic"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "New York"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Southeastern United States and Mid-Atlantic"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Connecticut"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "NULL",
+        "Num_Unit": "NULL",
+        "Num_Inflation_Adjusted": "NULL",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Southeastern United States and Mid-Atlantic"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Rhode Island"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$2 million",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Southeastern United States and Mid-Atlantic"
+      },
+      {
+        "Administrative_Area": "United States",
+        "Locations": [
+          "Maine"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "$250,000",
+        "Num_Unit": "USD",
+        "Num_Inflation_Adjusted": "No",
+        "Num_Inflation_Adjusted_Year": "NULL",
+        "Annotation": "Southeastern United States and Mid-Atlantic"
+      }
+    ],
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "Info_Box",
+    "Hazards": "Wind|Flood|Lightning",
+    "Hazards_Annotation": "Info_Box|Caribbean|Florida",
+    "Start_Date": "August 29, 1960",
+    "End_Date": "September 14, 1960",
+    "Time_Annotation": "Info_Box",
+    "Administrative_Areas": [
+      "Senegal",
+      "Cape Verde",
+      "Saint Martin",
+      "Antigua",
+      "Anguilla",
+      "United States Virgin Islands",
+      "Puerto Rico",
+      "Haiti",
+      "Cuba",
+      "Bahamas",
+      "United States",
+      "Canada"
+    ],
+    "Administrative_Areas_Annotation": "Info_Box"
+  }
+]
