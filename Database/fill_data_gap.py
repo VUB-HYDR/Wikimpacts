@@ -88,7 +88,7 @@ if __name__ == "__main__":
                         new_l2_rows[impact].append(dg_utils.l3_to_l2(l3_row=r))
 
     logger.info("Appending l3->l2 impact data...")
-    for impact in new_l2_rows.keys():
+    for impact in [x for x in list(new_l2_rows.keys()) if x in list(l2.keys())]:
         l2[impact] = pd.concat([l2[impact], pd.DataFrame(new_l2_rows[impact])])
 
     logger.info("Comparing impacts between l3 and l2 and using l3 values if they are larger than l2")
