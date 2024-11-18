@@ -1,4 +1,5 @@
 import math
+import os
 
 import pandas as pd
 
@@ -275,3 +276,39 @@ class DataGapUtils:
             self.logger.error(err)
             return l2_row
         return new_l2_row
+
+class CurrencyConversion:
+    def __init__(self):
+        self.logger = Logging.get_logger("currency-conversion-utils")
+        self.currency_conversion_path = "Database/data/currency/currency_conversion"
+        self.currency_conversion = {}
+        files = os.listdir(self.currency_conversion_path)
+
+        for f in files:
+            self.currency_conversion[f.split("-")[0]] = pd.read_csv(f"{self.currency_conversion_path}/{f}")
+
+    def convert_to_USD(self, currency: str, amount: float, year: int, month: int) -> float:
+        # ensure the currency is availble
+        assert currency in self.currency_conversion.keys()
+
+        # validate year range based on the currency
+        assert year <= self.currency_conversion[currency].Year.max()
+        assert year >= self.currency_conversion[currency].Year.min()
+
+        # ensure conversion data for the selected months exist
+        assert month <= 12
+        assert (
+            month
+            in self.currency_conversion[currency].loc[(self.currency_conversion[currency].Year == year)].Month.tolist()
+        )
+
+        # extract rate
+        rate = (
+            self.currency_conversion[currency]
+            .loc[
+                (self.currency_conversion[currency].Year == year) & (self.currency_conversion[currency].Month == month)
+            ]
+            .Rate.tolist()[0]
+        )
+
+        return amount * rate
