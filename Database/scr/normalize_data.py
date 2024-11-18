@@ -77,6 +77,20 @@ class DataGapUtils:
                 except BaseException as err:
                     self.logger.error(f"Could not read {input_dir}/l3/{f}/{p_file}. Error: {err}")
 
+        self.logger.info("Converting any bytes to str for l1")
+        for col in l1.columns:
+            l1[col] = l1[col].apply(lambda x: str(x) if isinstance(x, bytes) else x)
+
+        self.logger.info("Converting any bytes to str for l2")
+        for impact in l2.keys():
+            for col in l2[impact].columns:
+                l2[impact][col] = l2[impact][col].apply(lambda x: str(x) if isinstance(x, bytes) else x)
+
+        self.logger.info("Converting any bytes to str for l3")
+        for impact in l3.keys():
+            for col in l3[impact].columns:
+                l3[impact][col] = l3[impact][col].apply(lambda x: str(x) if isinstance(x, bytes) else x)
+
         return l1, l2, l3
 
     def fill_date(self, row: dict, replace_with_date: dict) -> dict:
