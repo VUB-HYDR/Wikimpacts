@@ -311,4 +311,4 @@ class CurrencyConversion:
             .Rate.tolist()[0]
         )
 
-        return amount * rate
+        return amount / rate
