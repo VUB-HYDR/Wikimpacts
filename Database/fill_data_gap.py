@@ -213,16 +213,25 @@ if __name__ == "__main__":
 
     l1_output_dir = f"{args.output_dir}/l1"
     pathlib.Path(l1_output_dir).mkdir(parents=True, exist_ok=True)
+
+    for col in l1.columns:
+        l1[col] = l1[col].apply(lambda x: print(x) or str(x) if isinstance(x, bytes) else x)
+
     norm_utils.df_to_parquet(l1, l1_output_dir, 200, object_encoding="json")
 
     for impact in l2.keys():
         l2_output_dir = f"{args.output_dir}/l2/Instance_Per_Administrative_Areas_{impact}"
         pathlib.Path(l2_output_dir).mkdir(parents=True, exist_ok=True)
+        for col in l2[impact].columns:
+            l2[impact][col] = l2[impact][col].apply(lambda x: print(x) or str(x) if isinstance(x, bytes) else x)
+
         norm_utils.df_to_parquet(l2[impact], l2_output_dir, 200, object_encoding="json")
 
     for impact in l3.keys():
         l3_output_dir = f"{args.output_dir}/l3/Specific_Instance_Per_Administrative_Area_{impact}"
         pathlib.Path(l3_output_dir).mkdir(parents=True, exist_ok=True)
+        for col in l3[impact].columns:
+            l3[impact][col] = l3[impact][col].apply(lambda x: print(x) or str(x) if isinstance(x, bytes) else x)
         norm_utils.df_to_parquet(l3[impact], l3_output_dir, 200, object_encoding="json")
 
     logger.info("Done!")
