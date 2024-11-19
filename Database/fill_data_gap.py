@@ -1,5 +1,6 @@
 import argparse
 import pathlib
+from datetime import datetime
 
 import pandas as pd
 
@@ -23,8 +24,8 @@ if __name__ == "__main__":
         dest="output_dir",
         help="Provide the llm output directory",
     )
-
-    logger = Logging.get_logger("fill-data-gap", "INFO", "data_gap.log")
+    timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+    logger = Logging.get_logger("fill-data-gap", "INFO", f"data_gap_{timestamp}.log")
     args = parser.parse_args()
     dg_utils = DataGapUtils()
     norm_utils = NormalizeUtils()
@@ -211,17 +212,17 @@ if __name__ == "__main__":
     l1_output_dir = f"{args.output_dir}/l1"
     pathlib.Path(l1_output_dir).mkdir(parents=True, exist_ok=True)
 
-    norm_utils.df_to_parquet(l1, l1_output_dir, 25, object_encoding="json")
+    norm_utils.df_to_parquet(l1, l1_output_dir, 25, object_encoding="json", index=False)
 
     for impact in l2.keys():
         l2_output_dir = f"{args.output_dir}/l2/Instance_Per_Administrative_Areas_{impact}"
         pathlib.Path(l2_output_dir).mkdir(parents=True, exist_ok=True)
 
-        norm_utils.df_to_parquet(l2[impact], l2_output_dir, 25, object_encoding="json")
+        norm_utils.df_to_parquet(l2[impact], l2_output_dir, 25, object_encoding="json", index=False)
 
     for impact in l3.keys():
         l3_output_dir = f"{args.output_dir}/l3/Specific_Instance_Per_Administrative_Area_{impact}"
         pathlib.Path(l3_output_dir).mkdir(parents=True, exist_ok=True)
-        norm_utils.df_to_parquet(l3[impact], l3_output_dir, 25, object_encoding="json")
+        norm_utils.df_to_parquet(l3[impact], l3_output_dir, 25, object_encoding="json", index=False)
 
     logger.info("Done!")
