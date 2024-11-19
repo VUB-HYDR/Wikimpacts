@@ -118,10 +118,10 @@ class DataGapUtils:
         original_row = row.copy()
 
         changed_min, changed_max = False, False
-        if row[total_min] == None or row[total_min] < agg_min:
+        if any([row[total_min] == None, row[total_min] == float("nan"), row[total_min] < agg_min]):
             row[total_min] = agg_min
             changed_min = True
-        if row[total_max] == None or row[total_max] < agg_max:
+        if any([row[total_max] == None, row[total_max] == float("nan"), row[total_max] < agg_min]):
             row[total_max] = agg_max
             changed_max = True
         if changed_min and changed_max:

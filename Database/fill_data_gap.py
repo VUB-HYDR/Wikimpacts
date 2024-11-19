@@ -173,10 +173,7 @@ if __name__ == "__main__":
 
     logger.info("Filling data gap upwards (l2 -> l1) for NULL impacts")
     for impact in l2.keys():
-        empty_l1_events = l1[
-            [dg_utils.event_id, f"Total_{impact}_Min", f"Total_{impact}_Max", f"Total_{impact}_Approx"]
-        ][l1[f"Total_{impact}_Min"].isna()][dg_utils.event_id].unique()
-        for e_id in empty_l1_events:
+        for e_id in event_ids:
             impact_per_event_id = l2[impact][[dg_utils.num_min, dg_utils.num_max]][
                 l2[impact][dg_utils.event_id] == e_id
             ]
