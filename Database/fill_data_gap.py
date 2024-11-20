@@ -46,7 +46,7 @@ if __name__ == "__main__":
                 level[impact][level[impact][dg_utils.event_id] == e_id] = level[impact][
                     level[impact][dg_utils.event_id] == e_id
                 ].apply(
-                    lambda row: dg_utils.fill_date(row, replace_with_date=replace_with_date),
+                    lambda row: dg_utils.fill_date(row=row, replace_with_date=replace_with_date, impact=impact),
                     axis=1,
                 )
 

@@ -102,11 +102,14 @@ class DataGapUtils:
 
         return l1, l2, l3
 
-    def fill_date(self, row: dict, replace_with_date: dict) -> dict:
+    def fill_date(self, row: dict, replace_with_date: dict, impact: str) -> dict:
         year_cols = [x for x in row.keys() if self.date_year_suffix in x]
-        if all([True if row[d] is None else False for d in year_cols]):
+        if all([True if (row[d] is None or self.safe_isnan(row[d])) else False for d in year_cols]):
             for c in year_cols:
                 row[c] = replace_with_date[c]
+                self.logger.info(
+                    f"Filling year {replace_with_date[c]} for {row[self.event_id]} record for impact {impact} in column {c} for level {'l2' if 'Administrative_Areas_Norm' in dict(row).keys() else 'l3'}"
+                )
         return row
 
     def fill_area(self, row: dict, missing_areas: dict[str, list], area_col: str) -> dict:
