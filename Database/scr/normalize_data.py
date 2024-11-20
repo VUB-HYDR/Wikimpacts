@@ -1,3 +1,5 @@
+import math
+
 import pandas as pd
 
 from .log_utils import Logging
@@ -18,6 +20,13 @@ class DataGapUtils:
         self.num_inflation_adjusted_year: str = "Num_Inflation_Adjusted_Year"
 
         self.monetary_categories = ["damage", "insured_damage"]
+
+    @staticmethod
+    def safe_isnan(x):
+        try:
+            return math.isnan(x)
+        except:
+            return False
 
     def load_data(self, input_dir: str) -> tuple[pd.DataFrame, dict[str, pd.DataFrame], dict[str, pd.DataFrame]]:
         import os
@@ -118,13 +127,13 @@ class DataGapUtils:
         original_row = row.copy()
 
         changed_min, changed_max = False, False
-        if any([row[total_min] == None, row[total_min] == float("nan"), row[total_min] < agg_min]):
+        if any([row[total_min] == None, self.safe_isnan(row[total_min]), row[total_min] < agg_min]):
             row[total_min] = agg_min
             changed_min = True
-        if any([row[total_max] == None, row[total_max] == float("nan"), row[total_max] < agg_min]):
+        if any([row[total_max] == None, self.safe_isnan(row[total_max]), row[total_max] < agg_max]):
             row[total_max] = agg_max
             changed_max = True
-        if changed_min and changed_max:
+        if changed_min or changed_max:
             self.logger.info(
                 f"Discrepancy between l2 and l1 found in {e_id} in {total_min}-{total_max}; L1: {original_row[total_min]}-{original_row[total_max]}; L2 (aggregated): {agg_min}-{agg_max}."
             )
