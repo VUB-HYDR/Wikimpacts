@@ -106,10 +106,11 @@ class DataGapUtils:
         year_cols = [x for x in row.keys() if self.date_year_suffix in x]
         if all([True if (row[d] is None or self.safe_isnan(row[d])) else False for d in year_cols]):
             for c in year_cols:
-                row[c] = replace_with_date[c]
-                self.logger.info(
-                    f"Filling year {replace_with_date[c]} for {row[self.event_id]} record for impact {impact} in column {c} for level {'l2' if 'Administrative_Areas_Norm' in dict(row).keys() else 'l3'}"
-                )
+                if replace_with_date[c] is not None and not self.safe_isnan(replace_with_date[c]):
+                    row[c] = replace_with_date[c]
+                    self.logger.info(
+                        f"Filling year {replace_with_date[c]} for {row[self.event_id]} record for impact {impact} in column {c} for level {'l2' if 'Administrative_Areas_Norm' in dict(row).keys() else 'l3'}"
+                    )
         return row
 
     def fill_area(self, row: dict, missing_areas: dict[str, list], area_col: str) -> dict:
