@@ -96,6 +96,7 @@ if __name__ == "__main__":
     for e_id in event_ids:
         for impact in l3.keys():
             cols = [f"{dg_utils.admin_area}_Norm", dg_utils.num_min, dg_utils.num_max, dg_utils.num_approx]
+            cols.extend([dg_utils.s_d, dg_utils.s_m, dg_utils.s_y, dg_utils.e_d, dg_utils.e_m, dg_utils.e_y])
             if impact.lower() in dg_utils.monetary_categories:
                 cols.extend([dg_utils.num_unit, dg_utils.num_inflation_adjusted, dg_utils.num_inflation_adjusted_year])
 
@@ -103,7 +104,19 @@ if __name__ == "__main__":
             l3[impact][cols] = l3[impact][cols].replace({None: float("nan")})
             l3_impacts = (
                 l3[impact][(l3[impact][dg_utils.event_id] == e_id) & (~l3[impact][dg_utils.num_min].isna())][cols]
-                .groupby(f"{dg_utils.admin_area}_Norm", as_index=False, dropna=True)
+                .groupby(
+                    [
+                        f"{dg_utils.admin_area}_Norm",
+                        dg_utils.s_d,
+                        dg_utils.s_m,
+                        dg_utils.s_y,
+                        dg_utils.e_d,
+                        dg_utils.e_m,
+                        dg_utils.e_y,
+                    ],
+                    as_index=False,
+                    dropna=False,
+                )
                 .sum()
             )
             l2[impact][l2[impact][dg_utils.event_id] == e_id] = l2[impact][l2[impact][dg_utils.event_id] == e_id].apply(

@@ -21,6 +21,16 @@ class DataGapUtils:
 
         self.monetary_categories = ["damage", "insured_damage"]
 
+        start, end, day, month, year = "Start_Date", "End_Date", "Day", "Month", "Year"
+        self.s_d, self.s_m, self.s_y, self.e_d, self.e_m, self.e_y = (
+            f"{start}_{day}",
+            f"{start}_{month}",
+            f"{start}_{year}",
+            f"{end}_{day}",
+            f"{end}_{month}",
+            f"{end}_{year}",
+        )
+
     @staticmethod
     def safe_isnan(x):
         try:
@@ -104,6 +114,7 @@ class DataGapUtils:
 
     def fill_date(self, row: pd.DataFrame, replace_with_date: dict, impact: str) -> pd.DataFrame:
         if all([True if (row[d] is None or self.safe_isnan(row[d])) else False for d in [self.s_y, self.e_y]]):
+            for c in [self.s_y, self.e_y]:
                 if replace_with_date[c] is not None and not self.safe_isnan(replace_with_date[c]):
                     row[c] = replace_with_date[c]
                     self.logger.info(
@@ -117,7 +128,15 @@ class DataGapUtils:
         return row
 
     def l2_to_l1(
-        self, row: pd.DataFrame, agg_min: float, agg_max: float, impact: str, e_id: str, unit=None, ia=None, ia_year=None
+        self,
+        row: pd.DataFrame,
+        agg_min: float,
+        agg_max: float,
+        impact: str,
+        e_id: str,
+        unit=None,
+        ia=None,
+        ia_year=None,
     ) -> pd.DataFrame:
         total_min, total_max, total_approx = f"Total_{impact}_Min", f"Total_{impact}_Max", f"Total_{impact}_Approx"
 
@@ -168,6 +187,9 @@ class DataGapUtils:
     def check_impacts(self, l2_row: pd.DataFrame, l3_row: pd.DataFrame, impact: str) -> dict | pd.DataFrame:
         try:
             l2_aa = l2_row[f"{self.admin_areas}_Norm"][0]
+            l3_row = l3_row.replace(float("nan"), None)
+            l2_row = l2_row.replace(float("nan"), None)
+
             if impact.lower() in self.monetary_categories:
                 l3_tgt_row = l3_row[l3_row[f"{self.admin_area}_Norm"] == l2_aa][
                     [
@@ -183,7 +205,6 @@ class DataGapUtils:
                 l3_tgt_row = l3_row[l3_row[f"{self.admin_area}_Norm"] == l2_aa][
                     [f"{self.admin_area}_Norm", self.num_min, self.num_max]
                 ].reset_index()
-
             new_l2_row = l2_row.copy()
             # TODO: lift monetary category exception after applying inflation adjustment and conversion!
             if (not l3_tgt_row.empty) and (impact.lower() not in self.monetary_categories):
@@ -212,9 +233,10 @@ class DataGapUtils:
                         new_l2_row[self.num_unit] = l3_tgt_row[self.num_unit][0]
                         new_l2_row[self.num_inflation_adjusted] = l3_tgt_row[self.num_inflation_adjusted][0]
                         new_l2_row[self.num_inflation_adjusted_year] = l3_tgt_row[self.num_inflation_adjusted_year][0]
-        except:
+        except BaseException as err:
             self.logger.error(
                 f"Could not check impacts because Area list is empty: {l2_row[f'{self.admin_areas}_Norm']}. No changes were applied to the row: {dict(l2_row)}"
             )
+            self.logger.error(err)
             return l2_row
         return new_l2_row
