@@ -102,10 +102,8 @@ class DataGapUtils:
 
         return l1, l2, l3
 
-    def fill_date(self, row: dict, replace_with_date: dict, impact: str) -> dict:
-        year_cols = [x for x in row.keys() if self.date_year_suffix in x]
-        if all([True if (row[d] is None or self.safe_isnan(row[d])) else False for d in year_cols]):
-            for c in year_cols:
+    def fill_date(self, row: pd.DataFrame, replace_with_date: dict, impact: str) -> pd.DataFrame:
+        if all([True if (row[d] is None or self.safe_isnan(row[d])) else False for d in [self.s_y, self.e_y]]):
                 if replace_with_date[c] is not None and not self.safe_isnan(replace_with_date[c]):
                     row[c] = replace_with_date[c]
                     self.logger.info(
@@ -113,14 +111,14 @@ class DataGapUtils:
                     )
         return row
 
-    def fill_area(self, row: dict, missing_areas: dict[str, list], area_col: str) -> dict:
+    def fill_area(self, row: pd.DataFrame, missing_areas: dict[str, list], area_col: str) -> pd.DataFrame:
         for c in ["Norm", "Type", "GID", "GeoJson"]:
             row[f"{self.admin_areas}_{c}"] = row[f"{self.admin_areas}_{c}"].extend(missing_areas[f"{area_col}_{c}"])
         return row
 
     def l2_to_l1(
-        self, row: dict, agg_min: float, agg_max: float, impact: str, e_id: str, unit=None, ia=None, ia_year=None
-    ) -> dict:
+        self, row: pd.DataFrame, agg_min: float, agg_max: float, impact: str, e_id: str, unit=None, ia=None, ia_year=None
+    ) -> pd.DataFrame:
         total_min, total_max, total_approx = f"Total_{impact}_Min", f"Total_{impact}_Max", f"Total_{impact}_Approx"
 
         total_unit, total_ia, total_ia_year = (
@@ -152,7 +150,7 @@ class DataGapUtils:
                     )
         return row
 
-    def l3_to_l2(self, l3_row: dict) -> dict:
+    def l3_to_l2(self, l3_row: pd.DataFrame) -> dict:
         l2_row = {}
         for k in l3_row.keys():
             if self.admin_area in k:
@@ -167,7 +165,7 @@ class DataGapUtils:
     def flatten(xss: list[list]) -> list:
         return [x for xs in xss for x in xs]
 
-    def check_impacts(self, l2_row: dict, l3_row, impact: str) -> dict:
+    def check_impacts(self, l2_row: pd.DataFrame, l3_row: pd.DataFrame, impact: str) -> dict | pd.DataFrame:
         try:
             l2_aa = l2_row[f"{self.admin_areas}_Norm"][0]
             if impact.lower() in self.monetary_categories:
