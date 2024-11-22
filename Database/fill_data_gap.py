@@ -24,6 +24,7 @@ if __name__ == "__main__":
         dest="output_dir",
         help="Provide the llm output directory",
     )
+
     timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
     logger = Logging.get_logger("fill-data-gap", "INFO", f"data_gap_{timestamp}.log")
     args = parser.parse_args()
@@ -189,7 +190,9 @@ if __name__ == "__main__":
     for impact in l2.keys():
         for e_id in event_ids:
             impact_per_event_id = l2[impact][[dg_utils.num_min, dg_utils.num_max]][
-                l2[impact][dg_utils.event_id] == e_id
+                (l2[impact][dg_utils.event_id] == e_id)
+                & (~l2[impact][dg_utils.num_min].isna())
+                & (~l2[impact][dg_utils.num_max].isna())
             ]
             if not impact_per_event_id.empty:
                 agg_min, agg_max = impact_per_event_id.sum()
@@ -224,18 +227,22 @@ if __name__ == "__main__":
 
     l1_output_dir = f"{args.output_dir}/l1"
     pathlib.Path(l1_output_dir).mkdir(parents=True, exist_ok=True)
-
+    l1 = l1[~l1.astype(str).duplicated()]
+    l1 = l1.replace(float("nan"), None)
     norm_utils.df_to_parquet(l1, l1_output_dir, 25, object_encoding="json", index=False)
 
     for impact in l2.keys():
         l2_output_dir = f"{args.output_dir}/l2/Instance_Per_Administrative_Areas_{impact}"
         pathlib.Path(l2_output_dir).mkdir(parents=True, exist_ok=True)
-
+        l2[impact] = l2[impact][~l2[impact].astype(str).duplicated()]
+        l2[impact] = l2[impact].replace(float("nan"), None)
         norm_utils.df_to_parquet(l2[impact], l2_output_dir, 25, object_encoding="json", index=False)
 
     for impact in l3.keys():
         l3_output_dir = f"{args.output_dir}/l3/Specific_Instance_Per_Administrative_Area_{impact}"
         pathlib.Path(l3_output_dir).mkdir(parents=True, exist_ok=True)
+        l3[impact] = l3[impact][~l3[impact].astype(str).duplicated()]
+        l3[impact] = l3[impact].replace(float("nan"), None)
         norm_utils.df_to_parquet(l3[impact], l3_output_dir, 25, object_encoding="json", index=False)
 
     logger.info("Done!")

@@ -100,15 +100,19 @@ class DataGapUtils:
         for col in l1.columns:
             l1[col] = l1[col].apply(lambda x: str(x) if isinstance(x, bytes) else x)
 
+        l1 = l1.replace(float("nan"), None)
+
         self.logger.info("Converting any bytes to str for l2")
         for impact in l2.keys():
             for col in l2[impact].columns:
                 l2[impact][col] = l2[impact][col].apply(lambda x: str(x) if isinstance(x, bytes) else x)
+            l2[impact] = l2[impact].replace(float("nan"), None)
 
         self.logger.info("Converting any bytes to str for l3")
         for impact in l3.keys():
             for col in l3[impact].columns:
                 l3[impact][col] = l3[impact][col].apply(lambda x: str(x) if isinstance(x, bytes) else x)
+            l3[impact] = l3[impact].replace(float("nan"), None)
 
         return l1, l2, l3
 
@@ -148,12 +152,21 @@ class DataGapUtils:
         original_row = row.copy()
 
         changed_min, changed_max = False, False
-        if any([row[total_min] == None, self.safe_isnan(row[total_min]), row[total_min] < agg_min]):
+
+        if row[total_min] is None or self.safe_isnan(row[total_min]):
             row[total_min] = agg_min
             changed_min = True
-        if any([row[total_max] == None, self.safe_isnan(row[total_max]), row[total_max] < agg_max]):
+        elif isinstance(row[total_min], int) or isinstance(row[total_min], float):
+            if row[total_min] < agg_min:
+                row[total_min] = agg_min
+                changed_min = True
+        if row[total_max] is None or self.safe_isnan(row[total_max]):
             row[total_max] = agg_max
-            changed_max = True
+            changed_min = True
+        elif isinstance(row[total_max], int) or isinstance(row[total_max], float):
+            if row[total_max] < agg_max:
+                row[total_max] = agg_max
+                changed_max = True
         if changed_min or changed_max:
             self.logger.info(
                 f"Discrepancy between l2 and l1 found in {e_id} in {total_min}-{total_max}; L1: {original_row[total_min]}-{original_row[total_max]}; L2 (aggregated): {agg_min}-{agg_max}."
@@ -191,7 +204,15 @@ class DataGapUtils:
             l2_row = l2_row.replace(float("nan"), None)
 
             if impact.lower() in self.monetary_categories:
-                l3_tgt_row = l3_row[l3_row[f"{self.admin_area}_Norm"] == l2_aa][
+                l3_tgt_row = l3_row[
+                    (l3_row[f"{self.admin_area}_Norm"] == l2_aa)
+                    & ((l3_row[self.s_d] == l2_row[self.s_d]) | (l3_row[self.s_d] is None))
+                    & ((l3_row[self.s_m] == l2_row[self.s_m]) | (l3_row[self.s_m] is None))
+                    & ((l3_row[self.s_y] == l2_row[self.s_y]) | (l3_row[self.s_y] is None))
+                    & ((l3_row[self.e_d] == l2_row[self.e_d]) | (l3_row[self.e_d] is None))
+                    & ((l3_row[self.e_m] == l2_row[self.e_m]) | (l3_row[self.e_m] is None))
+                    & ((l3_row[self.e_y] == l2_row[self.e_y]) | (l3_row[self.e_y] is None))
+                ][
                     [
                         f"{self.admin_area}_Norm",
                         self.num_min,
@@ -202,10 +223,17 @@ class DataGapUtils:
                     ]
                 ].reset_index()
             else:
-                l3_tgt_row = l3_row[l3_row[f"{self.admin_area}_Norm"] == l2_aa][
-                    [f"{self.admin_area}_Norm", self.num_min, self.num_max]
-                ].reset_index()
+                l3_tgt_row = l3_row[
+                    (l3_row[f"{self.admin_area}_Norm"] == l2_aa)
+                    & ((l3_row[self.s_d] == l2_row[self.s_d]) | (l3_row[self.s_d] is None))
+                    & ((l3_row[self.s_m] == l2_row[self.s_m]) | (l3_row[self.s_m] is None))
+                    & ((l3_row[self.s_y] == l2_row[self.s_y]) | (l3_row[self.s_y] is None))
+                    & ((l3_row[self.e_d] == l2_row[self.e_d]) | (l3_row[self.e_d] is None))
+                    & ((l3_row[self.e_m] == l2_row[self.e_m]) | (l3_row[self.e_m] is None))
+                    & ((l3_row[self.e_y] == l2_row[self.e_y]) | (l3_row[self.e_y] is None))
+                ][[f"{self.admin_area}_Norm", self.num_min, self.num_max]].reset_index()
             new_l2_row = l2_row.copy()
+
             # TODO: lift monetary category exception after applying inflation adjustment and conversion!
             if (not l3_tgt_row.empty) and (impact.lower() not in self.monetary_categories):
                 for i in (self.num_min, self.num_max):
@@ -235,7 +263,7 @@ class DataGapUtils:
                         new_l2_row[self.num_inflation_adjusted_year] = l3_tgt_row[self.num_inflation_adjusted_year][0]
         except BaseException as err:
             self.logger.error(
-                f"Could not check impacts because Area list is empty: {l2_row[f'{self.admin_areas}_Norm']}. No changes were applied to the row: {dict(l2_row)}"
+                f"Could not check impacts: {l2_row[f'{self.admin_areas}_Norm']}. No changes were applied to the row: {dict(l2_row)}"
             )
             self.logger.error(err)
             return l2_row
