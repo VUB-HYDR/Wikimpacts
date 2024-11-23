@@ -98,20 +98,20 @@ class DataGapUtils:
 
         self.logger.info("Converting any bytes to str for l1")
         for col in l1.columns:
-            l1[col] = l1[col].apply(lambda x: str(x) if isinstance(x, bytes) else x)
+            l1[col] = l1[col].apply(lambda x: x.decode("utf-8") if isinstance(x, bytes) else x)
 
         l1 = l1.replace(float("nan"), None)
 
         self.logger.info("Converting any bytes to str for l2")
         for impact in l2.keys():
             for col in l2[impact].columns:
-                l2[impact][col] = l2[impact][col].apply(lambda x: str(x) if isinstance(x, bytes) else x)
+                l2[impact][col] = l2[impact][col].apply(lambda x: x.decode("utf-8") if isinstance(x, bytes) else x)
             l2[impact] = l2[impact].replace(float("nan"), None)
 
         self.logger.info("Converting any bytes to str for l3")
         for impact in l3.keys():
             for col in l3[impact].columns:
-                l3[impact][col] = l3[impact][col].apply(lambda x: str(x) if isinstance(x, bytes) else x)
+                l3[impact][col] = l3[impact][col].apply(lambda x: x.decode("utf-8") if isinstance(x, bytes) else x)
             l3[impact] = l3[impact].replace(float("nan"), None)
 
         return l1, l2, l3
