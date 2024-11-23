@@ -12,6 +12,7 @@ class DataGapUtils:
         self.date_year_suffix: str = "_Date_Year"
         self.admin_areas: str = "Administrative_Areas"
         self.admin_area: str = "Administrative_Area"
+        self.main_event: str = "Main_Event"
         self.num_min: str = "Num_Min"
         self.num_max: str = "Num_Max"
         self.num_approx: str = "Num_Approx"

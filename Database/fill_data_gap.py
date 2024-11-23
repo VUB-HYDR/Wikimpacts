@@ -36,8 +36,8 @@ if __name__ == "__main__":
 
     # Dropping all records with Event_ID or no Main_Event and purging the records from L2/L3 (assumption: irreelvant events have no Main_Event value)
     logger.info(f"Dropping all records with no Event_ID or no Main_Event in L1. Shape before: {l1.shape}")
-    event_ids_to_drop = l1[l1["Main_Event"].isnull()]["Event_ID"].tolist()
-    l1 = l1.dropna(how="any", subset=["Event_ID", "Main_Event"])
+    event_ids_to_drop = l1[l1[dg_utils.main_event].isna()][dg_utils.event_id].tolist()
+    l1 = l1.dropna(how="any", subset=[dg_utils.event_id, dg_utils.main_event])
     logger.info(f"Dropped all records with no Event_ID or no Main_Event records in L1. Shape after: {l1.shape}")
 
     for name, level in {"L2": l2, "L3": l3}.items():
