@@ -32,9 +32,26 @@ if __name__ == "__main__":
     norm_utils = NormalizeUtils()
 
     l1, l2, l3 = dg_utils.load_data(input_dir=args.input_dir)
-    event_ids = list(l1[dg_utils.event_id].unique())
     logger.info("Data loaded!")
 
+    # Dropping all records with Event_ID or no Main_Event and purging the records from L2/L3 (assumption: irreelvant events have no Main_Event value)
+    logger.info(f"Dropping all records with no Event_ID or no Main_Event in L1. Shape before: {l1.shape}")
+    event_ids_to_drop = l1[l1["Main_Event"].isnull()]["Event_ID"].tolist()
+    l1 = l1.dropna(how="any", subset=["Event_ID", "Main_Event"])
+    logger.info(f"Dropped all records with no Event_ID or no Main_Event records in L1. Shape after: {l1.shape}")
+
+    for name, level in {"L2": l2, "L3": l3}.items():
+        for impact in level.keys():
+            for e in event_ids_to_drop:
+                logger.info(
+                    f"Dropping any records of {e} in {name} for impact {impact}. Shape before: {level[impact].shape}"
+                )
+                level[impact] = level[impact][~(level[impact]["Event_ID"] == e)]
+                logger.info(
+                    f"Dropped any records of {e} in {name} for impact {impact}. Shape after: {level[impact].shape}"
+                )
+
+    event_ids = list(l1[dg_utils.event_id].unique())
     logger.info("Filling the time (year) gap...")
     for e_id in event_ids:
         replace_with_date = (
