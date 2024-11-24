@@ -134,7 +134,7 @@ if __name__ == "__main__":
     validation = CategoricalValidation()
 
     if not args.dry_run:
-        connection = sqlite3.connect(args.database_name)
+        connection = sqlite3.connect(args.database_name, detect_types=sqlite3.PARSE_DECLTYPES)
         cursor = connection.cursor()
 
     errors = pd.DataFrame()
@@ -153,10 +153,10 @@ if __name__ == "__main__":
         logger.info(f"Processing {main_level}...\n")
         for f in tqdm(files, desc="Files"):
             data = pd.read_parquet(f"{args.file_dir}/{f}", engine="fastparquet")
-            data = utils.replace_nulls(data)
 
             # turn invalid currencies to None (for L1 only)
             data = data.parallel_apply(lambda row: validation.validate_currency_monetary_impact(row), axis=1)
+            data = data.fillna(float("nan"))
 
             # geojson in l1 is always of type list
             if args.dump_geojson_to_file:
@@ -177,13 +177,17 @@ if __name__ == "__main__":
                     )
 
             if args.save_output:
+                data = data.replace(float("nan"), None)
                 data.to_parquet(f"{args.output_dir}/{f}", engine="fastparquet")
 
             # change if_exists to "append" to avoid overwriting the database
             # choose "replace" to overwrite the database with a fresh copy of the data
             if not args.dry_run:
-                for c in data.columns:
+                for c in [
+                    x for x in data.columns if "Area" in x or "Location" in x or "Event_Names" in x or x == "Hazards"
+                ]:
                     data[c] = data[c].astype(str)
+                    data[c] = data[c].replace("nan", float("nan"))
 
                 for i in tqdm(range(len(data)), desc=f"Inserting {f} into {args.database_name}"):
                     try:
@@ -217,10 +221,9 @@ if __name__ == "__main__":
 
         for f in tqdm(files, desc="Files"):
             data = pd.read_parquet(f"{args.file_dir}/{f}", engine="fastparquet")
-            data = utils.replace_nulls(data)
-
-            logger.info(f"Popping GeoJson files out for level {args.event_level} and onto disk")
+            data = data.fillna(float("nan"))
             if args.dump_geojson_to_file:
+                logger.info(f"Popping GeoJson files out for level {args.event_level} and onto disk")
                 for col, _type in event_levels[args.event_level].items():
                     eval_type: Any = eval(_type)
                     logger.info(f"Processing GeoJson column {col} in {args.event_level}; File: {f}")
@@ -249,13 +252,15 @@ if __name__ == "__main__":
                         )
 
             if args.save_output:
+                data = data.replace(float("nan"), None)
                 data.to_parquet(f"{args.output_dir}/{f}", engine="fastparquet")
 
             # change if_exists to "append" to avoid overwriting the database
             # choose "replace" to overwrite the database with a fresh copy of the data
             if not args.dry_run:
-                for c in data.columns:
+                for c in [x for x in data.columns if "Area" in x or "Location" in x]:
                     data[c] = data[c].astype(str)
+                    data[c] = data[c].replace("nan", float("nan"))
                 for i in tqdm(range(len(data)), desc=f"Inserting {f} into {args.database_name}"):
                     try:
                         data.iloc[i : i + 1].to_sql(
