@@ -375,4 +375,6 @@ class CurrencyConversion:
             row[self.num_unit] = "USD"
             row[self.num_inflation_adjusted] = 1
             row[self.num_inflation_adjusted_year] = year
+        else:
+            self.logger.warning(f"Could not convert to USD. Row: {row}")
         return row
