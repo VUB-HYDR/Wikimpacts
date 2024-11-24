@@ -296,6 +296,8 @@ class CurrencyConversion:
                 f"{self.currency_converstion_yearly_avg_path}/{f}"
             )
 
+        self.inflation_index_2024 = pd.read_csv("Database/data/currency/inflation_Index_2024.csv")
+
         self.num_min: str = "Num_Min"
         self.num_max: str = "Num_Max"
         self.num_approx: str = "Num_Approx"
@@ -348,6 +350,11 @@ class CurrencyConversion:
         )
 
         return amount / rate
+
+    def adjust_inflation_USD(self, amount: float, year: int):
+        assert year in self.inflation_index_2024.Year.to_list()
+        x_index = self.inflation_index_2024.loc[self.inflation_index_2024.Year == year].CPI_2024_base[0]
+        return amount * (100 / x_index)
 
     def normalize_row_USD(self, row: dict) -> dict:
         year, month = None, None
