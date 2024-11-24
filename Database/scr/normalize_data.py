@@ -1,51 +1,13 @@
 import math
-import os
 
 import pandas as pd
 
 from .log_utils import Logging
 
 
-class DataGapUtils:
-    def __init__(self):
-        self.logger = Logging.get_logger("data-gap-utils")
-        self.event_id: str = "Event_ID"
-        self.date_year_suffix: str = "_Date_Year"
-        self.admin_areas: str = "Administrative_Areas"
-        self.admin_area: str = "Administrative_Area"
-        self.main_event: str = "Main_Event"
-        self.num_min: str = "Num_Min"
-        self.num_max: str = "Num_Max"
-        self.num_approx: str = "Num_Approx"
-        self.num_unit: str = "Num_Unit"
-        self.num_inflation_adjusted: str = "Num_Inflation_Adjusted"
-        self.num_inflation_adjusted_year: str = "Num_Inflation_Adjusted_Year"
-
-        self.monetary_categories = ["damage", "insured_damage"]
-
-        start, end, day, month, year = "Start_Date", "End_Date", "Day", "Month", "Year"
-        self.s_d, self.s_m, self.s_y, self.e_d, self.e_m, self.e_y = (
-            f"{start}_{day}",
-            f"{start}_{month}",
-            f"{start}_{year}",
-            f"{end}_{day}",
-            f"{end}_{month}",
-            f"{end}_{year}",
-        )
-
-    @staticmethod
-    def safe_isnan(x):
-        try:
-            return math.isnan(x)
-        except:
-            return False
-
-    @staticmethod
-    def safe_isnull(x):
-        try:
-            return x.isnull()
-        except:
-            return False
+class DataUtils:
+    def __init__(self) -> None:
+        self.logger = Logging.get_logger("data-utils")
 
     def load_data(self, input_dir: str) -> tuple[pd.DataFrame, dict[str, pd.DataFrame], dict[str, pd.DataFrame]]:
         import os
@@ -124,6 +86,48 @@ class DataGapUtils:
             l3[impact] = l3[impact].replace(float("nan"), None)
 
         return l1, l2, l3
+
+
+class DataGapUtils:
+    def __init__(self):
+        self.logger = Logging.get_logger("data-gap-utils")
+        self.event_id: str = "Event_ID"
+        self.date_year_suffix: str = "_Date_Year"
+        self.admin_areas: str = "Administrative_Areas"
+        self.admin_area: str = "Administrative_Area"
+        self.main_event: str = "Main_Event"
+        self.num_min: str = "Num_Min"
+        self.num_max: str = "Num_Max"
+        self.num_approx: str = "Num_Approx"
+        self.num_unit: str = "Num_Unit"
+        self.num_inflation_adjusted: str = "Num_Inflation_Adjusted"
+        self.num_inflation_adjusted_year: str = "Num_Inflation_Adjusted_Year"
+
+        self.monetary_categories = ["damage", "insured_damage"]
+
+        start, end, day, month, year = "Start_Date", "End_Date", "Day", "Month", "Year"
+        self.s_d, self.s_m, self.s_y, self.e_d, self.e_m, self.e_y = (
+            f"{start}_{day}",
+            f"{start}_{month}",
+            f"{start}_{year}",
+            f"{end}_{day}",
+            f"{end}_{month}",
+            f"{end}_{year}",
+        )
+
+    @staticmethod
+    def safe_isnan(x):
+        try:
+            return math.isnan(x)
+        except:
+            return False
+
+    @staticmethod
+    def safe_isnull(x):
+        try:
+            return x.isnull()
+        except:
+            return False
 
     def fill_date(self, row: pd.DataFrame, replace_with_date: dict, impact: str) -> pd.DataFrame:
         if all([True if (row[d] is None or self.safe_isnan(row[d])) else False for d in [self.s_y, self.e_y]]):
@@ -276,112 +280,3 @@ class DataGapUtils:
             self.logger.error(err)
             return l2_row
         return new_l2_row
-
-
-class CurrencyConversion:
-    def __init__(self):
-        self.logger = Logging.get_logger("currency-conversion-utils")
-        self.currency_conversion_path = "Database/data/currency/currency_conversion"
-        self.currency_converstion_yearly_avg_path = "Database/data/currency/currency_conversion_yearly_avg"
-        self.currency_conversion_yearly_avg = {}
-        self.currency_conversion = {}
-        currency_conversion_files = os.listdir(self.currency_conversion_path)
-        currency_conversion_yearly_avg_files = os.listdir(self.currency_converstion_yearly_avg_path)
-
-        for f in currency_conversion_files:
-            self.currency_conversion[f.split("-")[0]] = pd.read_csv(f"{self.currency_conversion_path}/{f}", header=0)
-
-        for f in currency_conversion_yearly_avg_files:
-            self.currency_conversion_yearly_avg[f.split("-")[0]] = pd.read_csv(
-                f"{self.currency_converstion_yearly_avg_path}/{f}", header=0
-            )
-
-        self.inflation_index_2024 = pd.read_csv("Database/data/currency/inflation_Index_2024.csv", header=0)
-
-        self.num_min: str = "Num_Min"
-        self.num_max: str = "Num_Max"
-        self.num_approx: str = "Num_Approx"
-        self.num_unit: str = "Num_Unit"
-        self.num_inflation_adjusted: str = "Num_Inflation_Adjusted"
-        self.num_inflation_adjusted_year: str = "Num_Inflation_Adjusted_Year"
-        self.start_date_year: str = "Start_Date_Year"
-        self.end_date_year: str = "End_Date_Year"
-        self.start_date_month: str = "Start_Date_Month"
-        self.end_date_month: str = "End_Date_Month"
-
-    def convert_to_USD(self, currency: str, amount: float, year: int, month: int) -> float:
-        # ensure the currency is availble
-        assert currency in self.currency_conversion.keys()
-
-        # validate year range based on the currency
-        assert year <= self.currency_conversion[currency].Year.max()
-        assert year >= self.currency_conversion[currency].Year.min()
-
-        # ensure conversion data for the selected months exist
-        assert month <= 12
-        assert (
-            month
-            in self.currency_conversion[currency].loc[(self.currency_conversion[currency].Year == year)].Month.tolist()
-        )
-
-        # extract rate
-        rate = (
-            self.currency_conversion[currency]
-            .loc[
-                (self.currency_conversion[currency].Year == year) & (self.currency_conversion[currency].Month == month)
-            ]
-            .Rate.tolist()[0]
-        )
-
-        return amount / rate
-
-    def convert_to_USD_yearly_avg(self, currency: str, amount: float, year: int):
-        # ensure the currency is availble
-        assert currency in self.currency_conversion_yearly_avg.keys()
-        # validate year range based on the currency
-        assert year <= self.currency_conversion_yearly_avg[currency].Year.max()
-        assert year >= self.currency_conversion_yearly_avg[currency].Year.min()
-
-        # extract rate
-        rate = (
-            self.currency_conversion_yearly_avg[currency]
-            .loc[self.currency_conversion_yearly_avg[currency].Year == year]
-            .Rate.tolist()[0]
-        )
-
-        return amount / rate
-
-    def adjust_inflation_USD(self, amount: float, year: int):
-        assert year in self.inflation_index_2024.Year.to_list()
-        x_index = self.inflation_index_2024.loc[self.inflation_index_2024.Year == year].reset_index().CPI_2024_base[0]
-        return amount * (100 / x_index)
-
-    def normalize_row_USD(self, row: dict) -> dict:
-        year, month = None, None
-        if row[self.num_inflation_adjusted_year] and row[self.num_inflation_adjusted]:
-            year = row[self.num_inflation_adjusted_year]
-        elif row[self.end_date_year]:
-            year = row[self.end_date_year]
-        elif row[self.start_date_year]:
-            year = row[self.start_date_year]
-
-        if row[self.num_inflation_adjusted_year] and row[self.num_inflation_adjusted]:
-            if row[self.num_inflation_adjusted_year] == row[self.end_date_year]:
-                month = row[self.end_date_month]
-            elif row[self.num_inflation_adjusted_year] == row[self.start_date_year]:
-                month = row[self.start_date_month]
-
-        if year:
-            if month:
-                row[self.num_min] = self.convert_to_USD(row[self.num_unit], row[self.num_min], year=year, month=month)
-                row[self.num_max] = self.convert_to_USD(row[self.num_unit], row[self.num_max], year=year, month=month)
-            elif not month:
-                row[self.num_min] = self.convert_to_USD_yearly_avg(row[self.num_unit], row[self.num_min], year=year)
-                row[self.num_max] = self.convert_to_USD_yearly_avg(row[self.num_unit], row[self.num_max], year=year)
-            row[self.num_approx] = 1
-            row[self.num_unit] = "USD"
-            row[self.num_inflation_adjusted] = 1
-            row[self.num_inflation_adjusted_year] = year
-        else:
-            self.logger.warning(f"Could not convert to USD. Row: {row}")
-        return row

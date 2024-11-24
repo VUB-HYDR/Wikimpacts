@@ -4,7 +4,7 @@ from datetime import datetime
 
 import pandas as pd
 
-from Database.scr.normalize_data import DataGapUtils
+from Database.scr.normalize_data import DataGapUtils, DataUtils
 from Database.scr.normalize_utils import Logging, NormalizeUtils
 
 if __name__ == "__main__":
@@ -29,9 +29,10 @@ if __name__ == "__main__":
     logger = Logging.get_logger("fill-data-gap", "INFO", f"data_gap_{timestamp}.log")
     args = parser.parse_args()
     dg_utils = DataGapUtils()
+    data_utils = DataUtils()
     norm_utils = NormalizeUtils()
 
-    l1, l2, l3 = dg_utils.load_data(input_dir=args.input_dir)
+    l1, l2, l3 = data_utils.load_data(input_dir=args.input_dir)
     logger.info("Data loaded!")
 
     # Dropping all records with Event_ID or no Main_Event and purging the records from L2/L3 (assumption: irreelvant events have no Main_Event value)
@@ -68,6 +69,12 @@ if __name__ == "__main__":
                         lambda row: dg_utils.fill_date(row=row, replace_with_date=replace_with_date, impact=impact),
                         axis=1,
                     )
+    # TODO:
+    # DROP RECORDS WITH NO START OR END YEAR
+    # APPLY CURRENCY CONVERSION
+    # DROP RECORDS WITH NON-US CURRENCY
+    # APPLY INFLATION ADJUSTMENT (INFER YEAR IN THE SAME WAY AS CURRENCY CONVERSION)
+    # CHECK THAT DATA GAP FILLING MAKES SENSE FOR DAMAGE AND INSURED DAMAGE
 
     # Replace NaNs will NoneType
     for level in [l2, l3]:
