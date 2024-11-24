@@ -39,6 +39,13 @@ class DataGapUtils:
         except:
             return False
 
+    @staticmethod
+    def safe_isnull(x):
+        try:
+            return x.isnull()
+        except:
+            return False
+
     def load_data(self, input_dir: str) -> tuple[pd.DataFrame, dict[str, pd.DataFrame], dict[str, pd.DataFrame]]:
         import os
 
@@ -207,12 +214,12 @@ class DataGapUtils:
             if impact.lower() in self.monetary_categories:
                 l3_tgt_row = l3_row[
                     (l3_row[f"{self.admin_area}_Norm"] == l2_aa)
-                    & ((l3_row[self.s_d] == l2_row[self.s_d]) | (l3_row[self.s_d] is None))
-                    & ((l3_row[self.s_m] == l2_row[self.s_m]) | (l3_row[self.s_m] is None))
-                    & ((l3_row[self.s_y] == l2_row[self.s_y]) | (l3_row[self.s_y] is None))
-                    & ((l3_row[self.e_d] == l2_row[self.e_d]) | (l3_row[self.e_d] is None))
-                    & ((l3_row[self.e_m] == l2_row[self.e_m]) | (l3_row[self.e_m] is None))
-                    & ((l3_row[self.e_y] == l2_row[self.e_y]) | (l3_row[self.e_y] is None))
+                    & ((l3_row[self.s_d] == l2_row[self.s_d]) | (self.safe_isnull(l3_row[self.s_d])))
+                    & ((l3_row[self.s_m] == l2_row[self.s_m]) | (self.safe_isnull(l3_row[self.s_m])))
+                    & ((l3_row[self.s_y] == l2_row[self.s_y]) | (self.safe_isnull(l3_row[self.s_y])))
+                    & ((l3_row[self.e_d] == l2_row[self.e_d]) | (self.safe_isnull(l3_row[self.e_d])))
+                    & ((l3_row[self.e_m] == l2_row[self.e_m]) | (self.safe_isnull(l3_row[self.e_m])))
+                    & ((l3_row[self.e_y] == l2_row[self.e_y]) | (self.safe_isnull(l3_row[self.e_y])))
                 ][
                     [
                         f"{self.admin_area}_Norm",
@@ -226,15 +233,14 @@ class DataGapUtils:
             else:
                 l3_tgt_row = l3_row[
                     (l3_row[f"{self.admin_area}_Norm"] == l2_aa)
-                    & ((l3_row[self.s_d] == l2_row[self.s_d]) | (l3_row[self.s_d] is None))
-                    & ((l3_row[self.s_m] == l2_row[self.s_m]) | (l3_row[self.s_m] is None))
-                    & ((l3_row[self.s_y] == l2_row[self.s_y]) | (l3_row[self.s_y] is None))
-                    & ((l3_row[self.e_d] == l2_row[self.e_d]) | (l3_row[self.e_d] is None))
-                    & ((l3_row[self.e_m] == l2_row[self.e_m]) | (l3_row[self.e_m] is None))
-                    & ((l3_row[self.e_y] == l2_row[self.e_y]) | (l3_row[self.e_y] is None))
+                    & ((l3_row[self.s_d] == l2_row[self.s_d]) | (self.safe_isnull(l3_row[self.s_d])))
+                    & ((l3_row[self.s_m] == l2_row[self.s_m]) | (self.safe_isnull(l3_row[self.s_m])))
+                    & ((l3_row[self.s_y] == l2_row[self.s_y]) | (self.safe_isnull(l3_row[self.s_y])))
+                    & ((l3_row[self.e_d] == l2_row[self.e_d]) | (self.safe_isnull(l3_row[self.e_d])))
+                    & ((l3_row[self.e_m] == l2_row[self.e_m]) | (self.safe_isnull(l3_row[self.e_m])))
+                    & ((l3_row[self.e_y] == l2_row[self.e_y]) | (self.safe_isnull(l3_row[self.e_y])))
                 ][[f"{self.admin_area}_Norm", self.num_min, self.num_max]].reset_index()
             new_l2_row = l2_row.copy()
-
             # TODO: lift monetary category exception after applying inflation adjustment and conversion!
             if (not l3_tgt_row.empty) and (impact.lower() not in self.monetary_categories):
                 for i in (self.num_min, self.num_max):
