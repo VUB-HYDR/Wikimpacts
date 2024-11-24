@@ -61,12 +61,13 @@ if __name__ == "__main__":
         )
         for level in [l2, l3]:
             for impact in level.keys():
-                level[impact][level[impact][dg_utils.event_id] == e_id] = level[impact][
-                    level[impact][dg_utils.event_id] == e_id
-                ].apply(
-                    lambda row: dg_utils.fill_date(row=row, replace_with_date=replace_with_date, impact=impact),
-                    axis=1,
-                )
+                if e_id in level[impact][dg_utils.event_id].unique().tolist():
+                    level[impact][level[impact][dg_utils.event_id] == e_id] = level[impact][
+                        level[impact][dg_utils.event_id] == e_id
+                    ].apply(
+                        lambda row: dg_utils.fill_date(row=row, replace_with_date=replace_with_date, impact=impact),
+                        axis=1,
+                    )
 
     # Replace NaNs will NoneType
     for level in [l2, l3]:
