@@ -289,9 +289,25 @@ To perform this on the existing dummy data:
 
 ```shell
 # format:
-# source Database/insert_full_run.sh Database/output/dummy SQL_DB PATH_TO_STORE_NIDs
+# source Database/insert_full_run.sh Database/output/dummy SQL_DB PATH_TO_STORE_NIDs DRY_RUN_FLAG SAVE_OUTPUT_FLAG SAVE_OUTPUT_DIR
 
+# normal run (full insertion into the database)
 source Database/insert_full_run.sh Database/output/dummy impact.v1.db tmp/files
+
+# dry run (aka only stores the data after de-duplicating geojson objects)
+source Database/insert_full_run.sh Database/output/dummy impact.v1.db tmp/files --dry_run --save_output --output_dir=Database/output/dummy_deduplciated
+
+# normal run with saving the output (notice that the `-d`/`--dry_run` flag is replaced with an empty string)
+source Database/insert_full_run.sh Database/output/dummy impact.v1.db tmp/files "" --save_outout  --output_dir=Database/output/dummy_deduplciated
+
+```
+
+### Filling the data-gap
+
+Filling the data gap is a post-processing step described in Issue [#173](https://github.com/VUB-HYDR/Wikimpacts/issues/173) and PR [#174](https://github.com/VUB-HYDR/Wikimpacts/pull/174).
+
+```shell
+poetry run python3 Database/fill_data_gap.py -i Database/output/full_run_25_deduplicated -o Database/output/full_run_25_deduplicated_data_gap
 ```
 
 ### Database-related
