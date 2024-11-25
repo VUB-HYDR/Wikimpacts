@@ -15,7 +15,7 @@ CREATE TABLE Total_Summary (
     Start_Date_Year INTEGER NOT NULL CHECK (length(Start_Date_Year) == 4 OR Start_Date_Year == NULL),
     End_Date_Day INTEGER CHECK (End_Date_Day <= 31 OR End_Date_Day == NULL),
     End_Date_Month INTEGER CHECK (End_Date_Month <= 12 OR End_Date_Month == NULL),
-    End_Date_Year INTEGER NOT NULL CHECK (length(End_Date_Year) == 4),
+    End_Date_Year INTEGER CHECK (length(End_Date_Year) == 4 OR End_Date_Year == NULL),
 
     /* Numerical: Deaths */
     Total_Deaths_Min REAL CHECK (Total_Deaths_Min > 0 OR Total_Deaths_Min == NULL),
