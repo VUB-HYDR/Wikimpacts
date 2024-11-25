@@ -40,17 +40,15 @@ if __name__ == "__main__":
 
     # Dropping all records with Event_ID or no Main_Event and purging the records from L2/L3 (assumption: irreelvant events have no Main_Event value)
     logger.info(
-        f"Dropping all records with no {dg_utils.event_id} or no {dg_utils.main_event} in L1. Shape before: {l1.shape}"
+        f"Dropping all rows with no {dg_utils.event_id} or no {dg_utils.main_event} in L1. Shape before: {l1.shape}"
     )
     event_ids_to_drop = l1[l1[dg_utils.main_event].isna()][dg_utils.event_id].tolist()
     l1 = l1.dropna(how="any", subset=[dg_utils.event_id, dg_utils.main_event])
     logger.info(
-        f"Dropped all records with no {dg_utils.event_id} or no {dg_utils.main_event} records in L1. Shape after: {l1.shape}"
+        f"Dropped all rows with no {dg_utils.event_id} or no {dg_utils.main_event} records in L1. Shape after: {l1.shape}"
     )
     l1 = l1.dropna(how="all", subset=[dg_utils.s_y, dg_utils.e_y])
-    logger.info(
-        f"Dropped all records with no {dg_utils.s_y} and no {dg_utils.e_y} records in L1. Shape after: {l1.shape}"
-    )
+    logger.info(f"Dropped all row with no {dg_utils.s_y} and no {dg_utils.e_y} records in L1. Shape after: {l1.shape}")
 
     for name, level in {"L2": l2, "L3": l3}.items():
         for impact in level.keys():
@@ -87,46 +85,64 @@ if __name__ == "__main__":
         for impact in level.keys():
             level[impact].replace(float("nan"), None, inplace=True)
 
+    for name, level in {"L2": l2, "L3": l3}.items():
+        logger.info(f"Dropping all records with no {dg_utils.s_y} and no {dg_utils.e_y} in {name}.")
+        for impact in level.keys():
+            level[impact] = level[impact].dropna(how="all", subset=[dg_utils.s_y, dg_utils.e_y])
+
     logger.info("Converting currencies to USD")
     for cat in ia_utils.monetary_categories:
         logger.info(f"Converting currencies in L1 for category {cat}")
-        l1 = l1.apply(lambda x: cc_utils.normalize_row_USD(x, l1_impact=cat), axis=1)
+        l1 = l1.apply(lambda x: cc_utils.normalize_row_USD(x, l1_impact=cat, level="l1", impact=cat), axis=1)
         logger.info(f"Converting currencies in L2 for category {cat}")
-        l2[cat] = l2[cat].apply(lambda x: cc_utils.normalize_row_USD(x, l1_impact=None), axis=1)
+        l2[cat] = l2[cat].apply(lambda x: cc_utils.normalize_row_USD(x, l1_impact=None, level="l2", impact=cat), axis=1)
         logger.info(f"Converting currencies in L3 for category {cat}")
-        l3[cat] = l3[cat].apply(lambda x: cc_utils.normalize_row_USD(x, l1_impact=None), axis=1)
+        l3[cat] = l3[cat].apply(lambda x: cc_utils.normalize_row_USD(x, l1_impact=None, level="l3", impact=cat), axis=1)
+
+    # Replace NaNs will NoneType
+    l1 = l1.replace(float("nan"), None)
+    for level in [l2, l3]:
+        for impact in level.keys():
+            level[impact].replace(float("nan"), None, inplace=True)
 
     for cat in ia_utils.monetary_categories:
-        # TODO: inspect, then drop!!!
-        logger.info(f"Unconverted currencies for {cat} for L1")
-        logger.warning(
-            f"-----\n{l1[(l1[cc_utils.t_num_unit.format(cat)] != cc_utils.usd)][~l1[cc_utils.t_num_unit.format(cat)].isnull()][[x for x in l1.columns if cat in x and 'Buildings' not in x]]}"
-        )
-
-        logger.info(f"Unconverted currencies for {cat} for L2")
-        logger.warning(
-            f"------\n{l2[cat][(l2[cat][cc_utils.num_unit] != cc_utils.usd) & (~l2[cat][cc_utils.num_unit].isnull())][[x for x in l2[cat].columns if 'Areas' not in x]]}"
-        )
-
-        logger.info(f"Unconverted currencies for {cat} for L3")
-        logger.warning(
-            f"------\n{l3[cat][(l3[cat][cc_utils.num_unit] != cc_utils.usd) & (~l3[cat][cc_utils.num_unit].isnull())][[x for x in l2[cat].columns if 'Area' not in x and 'Locations' not in x]]}"
-        )
+        try:
+            assert l1[(l1[cc_utils.t_num_unit.format(cat)] != cc_utils.usd)][
+                ~l1[cc_utils.t_num_unit.format(cat)].isnull()
+            ].empty
+        except AssertionError as err:
+            logger.error(f"Unconverted currencies for {cat} for L1")
+            logger.error(
+                f"\n{l1[(l1[cc_utils.t_num_unit.format(cat)] != cc_utils.usd)][~l1[cc_utils.t_num_unit.format(cat)].isnull()][[x for x in l1.columns if f'Total_{cat}_' in x]]}"
+            )
+        try:
+            assert l2[cat][(l2[cat][cc_utils.num_unit] != cc_utils.usd) & (~l2[cat][cc_utils.num_unit].isnull())].empty
+        except AssertionError as err:
+            logger.error(f"Unconverted currencies for {cat} for L2")
+            logger.error(
+                f"\n{l2[cat][(l2[cat][cc_utils.num_unit] != cc_utils.usd) & (~l2[cat][cc_utils.num_unit].isnull())][[x for x in l2[cat].columns if 'Areas' not in x]]}"
+            )
+        try:
+            assert l3[cat][(l3[cat][cc_utils.num_unit] != cc_utils.usd) & (~l3[cat][cc_utils.num_unit].isnull())].empty
+        except AssertionError as err:
+            logger.error(f"Unconverted currencies for {cat} for L3")
+            logger.error(
+                f"\n{l3[cat][(l3[cat][cc_utils.num_unit] != cc_utils.usd) & (~l3[cat][cc_utils.num_unit].isnull())][[x for x in l3[cat].columns if 'Area' not in x and 'Locations' not in x]]}"
+            )
 
     for cat in ia_utils.monetary_categories:
         logger.info(f"Adjusting inflation for USD values in L1 to 2024 for category {cat}")
-        l1 = l1.apply(lambda x: ia_utils.adjust_inflation_row_USD_2024(x, l1_impact=cat), axis=1)
+        l1 = l1.apply(
+            lambda x: ia_utils.adjust_inflation_row_USD_2024(x, l1_impact=cat, level="l1", impact=cat), axis=1
+        )
         logger.info(f"Adjusting inflation for USD values in L2 to 2024 for category {cat}")
-        l2[cat] = l2[cat].apply(lambda x: ia_utils.adjust_inflation_row_USD_2024(x, l1_impact=None), axis=1)
+        l2[cat] = l2[cat].apply(
+            lambda x: ia_utils.adjust_inflation_row_USD_2024(x, l1_impact=None, level="l2", impact=cat), axis=1
+        )
         logger.info(f"Adjusting inflation for USD values in L3 to 2024 for category {cat}")
-        l3[cat] = l3[cat].apply(lambda x: ia_utils.adjust_inflation_row_USD_2024(x, l1_impact=None), axis=1)
-
-    # TODO:
-    # DROP RECORDS WITH NO START OR END YEAR
-    # APPLY CURRENCY CONVERSION
-    # DROP RECORDS WITH NON-US CURRENCY
-    # APPLY INFLATION ADJUSTMENT (INFER YEAR IN THE SAME WAY AS CURRENCY CONVERSION)
-    # CHECK THAT DATA GAP FILLING MAKES SENSE FOR DAMAGE AND INSURED DAMAGE
+        l3[cat] = l3[cat].apply(
+            lambda x: ia_utils.adjust_inflation_row_USD_2024(x, l1_impact=None, level="l3", impact=cat), axis=1
+        )
 
     # Replace NaNs will NoneType
     for level in [l2, l3]:

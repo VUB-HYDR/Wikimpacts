@@ -1,4 +1,5 @@
 import os
+from math import isnan
 
 import pandas as pd
 
@@ -24,6 +25,7 @@ class CurrencyBase:
         self.end_date_year: str = "End_Date_Year"
         self.start_date_month: str = "Start_Date_Month"
         self.end_date_month: str = "End_Date_Month"
+        self.event_id: str = "Event_ID"
 
         # valid categories
         self.monetary_categories: tuple = ("Damage", "Insured_Damage")
@@ -31,33 +33,53 @@ class CurrencyBase:
         # currencies
         self.usd = "USD"
 
+    @staticmethod
+    def safe_isnan(x):
+        try:
+            return isnan(x)
+        except:
+            return False
+
 
 class InflationAdjustment(CurrencyBase):
     def __init__(self) -> None:
         super().__init__()
-        self.logger = Logging.get_logger("inflation-adjustment-utils")
+        self.logger = Logging.get_logger("inflation-adjustment-utils", level="DEBUG")
         self.inflation_index_2024: pd.DataFrame = pd.read_csv(
             "Database/data/currency/inflation_Index_2024.csv", header=0
         )
 
-    def adjust_inflation_USD_2024(self, amount: float, year: int) -> float | None:
+    def adjust_inflation_USD_2024(
+        self, amount: float, year: int, event_id: str, level: str, impact: str
+    ) -> float | None:
         try:
-            if isinstance(year, str):
+            if isinstance(amount, str):
+                amount = float(amount)
+
+            if isinstance(year, str) or isinstance(year, float):
                 year = int(year)
+
+            assert (isinstance(amount, float) or isinstance(amount, int)) and not self.safe_isnan(
+                amount
+            ), f"Ammount is missing or invalid: '{amount}' of type '{type(amount)}'"
+
             assert year, "Year is missing"
             assert (
                 year in self.inflation_index_2024.Year.to_list()
-            ), f"Year is not available. Available years: {self.inflation_index_2024.Year.min} - {self.inflation_index_2024.Year.max}"
+            ), f"Year '{year}' of type '{type(year)}' is not available. Available years: from '{self.inflation_index_2024.Year.min()}' to '{self.inflation_index_2024.Year.max()}'"
             x_index = (
                 self.inflation_index_2024.loc[self.inflation_index_2024.Year == year].reset_index().CPI_2024_base[0]
             )
-            return amount * (100 / x_index)
+            return round(amount * (100 / x_index))
         except BaseException as err:
-            self.logger.error(f"Could not adjust amount {amount} for year {year}. Error: {err}")
+            self.logger.debug(
+                f"{event_id} - {level} - {impact}: Could not adjust amount {amount} for year {year}. Error: {err}"
+            )
             return None
-            # return amount
 
-    def adjust_inflation_row_USD_2024(self, row: pd.DataFrame, l1_impact: None | str) -> pd.DataFrame:
+    def adjust_inflation_row_USD_2024(
+        self, row: pd.DataFrame, l1_impact: None | str, level: str, impact: str
+    ) -> pd.DataFrame:
         num_min, num_max, num_approx, num_inflation_adjusted, num_inflation_adjusted_year = (
             self.num_min,
             self.num_max,
@@ -85,18 +107,20 @@ class InflationAdjustment(CurrencyBase):
         elif row[self.start_date_year]:
             year = row[self.start_date_year]
 
-        if year and row[num_min] and row[num_max]:
-            _min, _max = self.adjust_inflation_USD_2024(row[num_min], year=year), self.adjust_inflation_USD_2024(
-                row[num_max], year=year
+        if year and row[num_min] is not None and row[num_max] is not None:
+            _min, _max = self.adjust_inflation_USD_2024(
+                row[num_min], year=year, event_id=row[self.event_id], level=level, impact=impact
+            ), self.adjust_inflation_USD_2024(
+                row[num_max], year=year, event_id=row[self.event_id], level=level, impact=impact
             )
-            if _min and _max:
+            if _min is not None and _max is not None:
                 row[num_min] = _min
                 row[num_max] = _max
                 row[num_approx] = 1  # adjusted value are all approximations
                 row[num_inflation_adjusted] = 1
                 row[num_inflation_adjusted_year] = 2024
         else:
-            self.logger.debug(
+            self.logger.info(
                 f"Could not adjust inflation to USD 2024 since no year can be inferred or because the min and max values are None. Row: {dict(row)}"
             )
         return row
@@ -105,7 +129,7 @@ class InflationAdjustment(CurrencyBase):
 class CurrencyConversion(CurrencyBase):
     def __init__(self) -> None:
         super().__init__()
-        self.logger = Logging.get_logger("currency-conversion-utils")
+        self.logger = Logging.get_logger("currency-conversion-utils", level="DEBUG")
         self.currency_conversion_path: str = "Database/data/currency/currency_conversion"
         self.currency_converstion_yearly_avg_path: str = "Database/data/currency/currency_conversion_yearly_avg"
         self.currency_conversion_yearly_avg: dict[str, pd.DataFrame] = {}
@@ -121,7 +145,9 @@ class CurrencyConversion(CurrencyBase):
                 f"{self.currency_converstion_yearly_avg_path}/{f}", header=0
             )
 
-    def convert_to_USD(self, currency: str, amount: float, year: int, month: int) -> float:
+    def convert_to_USD(
+        self, currency: str, amount: float, year: int, month: int, event_id: str, level: str, impact: str
+    ) -> float:
         try:
             # ensure the currency is availble
             assert currency, "Currency is missing"
@@ -129,19 +155,23 @@ class CurrencyConversion(CurrencyBase):
                 currency in self.currency_conversion.keys()
             ), f"Currency '{currency}' not available! Available currencies: {sorted(list(self.currency_conversion.keys()))}"
 
-            if isinstance(year, str):
+            if isinstance(amount, str):
+                amount = float(amount)
+
+            if isinstance(year, str) or isinstance(year, float):
                 year = int(year)
 
-            if isinstance(month, str):
-                month = int(month)
+            assert (isinstance(amount, float) or isinstance(amount, int)) and not self.safe_isnan(
+                amount
+            ), f"Ammount is missing or invalid: '{amount}' of type '{type(amount)}'"
 
             # validate year range based on the currency
             assert (
                 year <= self.currency_conversion[currency].Year.max()
-            ), f"Year is above the available maximum {self.currency_conversion[currency].Year.max()}"
+            ), f"Year '{year}' is above the available maximum {self.currency_conversion[currency].Year.max()} for currency '{currency}'"
             assert (
                 year >= self.currency_conversion[currency].Year.min()
-            ), f"Year is above the available maximum {self.currency_conversion[currency].Year.min()}"
+            ), f"Year '{year}' is above the available maximum {self.currency_conversion[currency].Year.min()} for currency '{currency}'"
 
             # ensure conversion data for the selected months exist
             assert month <= 12 and month > 0, f"Month value is invalid: {month}. Must be between 1 and 12."
@@ -161,20 +191,26 @@ class CurrencyConversion(CurrencyBase):
                 ]
                 .Rate.tolist()[0]
             )
-            return amount / rate
+            return round(amount / rate)
         except BaseException as err:
-            self.logger.error(f"Could not convert to USD (monthly average). Error: {err}")
+            self.logger.debug(
+                f"{event_id} - {level} - {impact}: Could not convert to USD (monthly average). Error: {err}"
+            )
             return amount
 
-    def convert_to_USD_yearly_avg(self, currency: str, amount: float, year: int):
+    def convert_to_USD_yearly_avg(
+        self, currency: str, amount: float, year: int, event_id: str, level: str, impact: str
+    ):
         try:
-            if isinstance(year, str):
+            if isinstance(year, str) or isinstance(year, float):
                 year = int(year)
             if isinstance(amount, str):
                 amount = float(amount)
 
             assert year, "Year is missing"
-            assert amount, "Ammount is missing"
+            assert (isinstance(amount, float) or isinstance(amount, int)) and not self.safe_isnan(
+                amount
+            ), f"Amount is missing or invalid: '{amount}' of type '{type(amount)}'"
             assert currency, "Currency is missing"
             # ensure the currency is availble
             assert (
@@ -183,10 +219,10 @@ class CurrencyConversion(CurrencyBase):
             # validate year range based on the currency
             assert (
                 year <= self.currency_conversion_yearly_avg[currency].Year.max()
-            ), f"Year is above the available maximum {self.currency_conversion_yearly_avg[currency].Year.max()}"
+            ), f"Year '{year}' is above the available maximum {self.currency_conversion_yearly_avg[currency].Year.max()} for currency '{currency}'"
             assert (
                 year >= self.currency_conversion_yearly_avg[currency].Year.min()
-            ), f"Year is below the available minimum {self.currency_conversion_yearly_avg[currency].Year.min()}"
+            ), f"Year '{year}' is below the available minimum {self.currency_conversion_yearly_avg[currency].Year.min()} for currency '{currency}'"
 
             # extract rate
             rate = (
@@ -194,12 +230,14 @@ class CurrencyConversion(CurrencyBase):
                 .loc[self.currency_conversion_yearly_avg[currency].Year == year]
                 .Rate.tolist()[0]
             )
-            return amount / rate
+            return round(amount / rate)
         except BaseException as err:
-            self.logger.error(f"Could not convert to USD (yearly average). Error: {err}")
+            self.logger.debug(
+                f"{event_id} - {level} - {impact}: Could not convert to USD (yearly average) for year '{year}', currency '{currency}' and amount '{amount}'. Error: {err}"
+            )
             return amount
 
-    def normalize_row_USD(self, row: pd.DataFrame, l1_impact: None | str) -> pd.DataFrame:
+    def normalize_row_USD(self, row: pd.DataFrame, l1_impact: None | str, level: str, impact: str) -> pd.DataFrame:
         num_min, num_max, num_unit, num_approx, num_inflation_adjusted, num_inflation_adjusted_year = (
             self.num_min,
             self.num_max,
@@ -248,15 +286,35 @@ class CurrencyConversion(CurrencyBase):
 
         if year:
             if month:
-                row[num_min] = self.convert_to_USD(row[num_unit], row[num_min], year=year, month=month)
-                row[num_max] = self.convert_to_USD(row[num_unit], row[num_max], year=year, month=month)
+                row[num_min] = self.convert_to_USD(
+                    row[num_unit],
+                    row[num_min],
+                    year=year,
+                    month=month,
+                    event_id=row[self.event_id],
+                    level=level,
+                    impact=impact,
+                )
+                row[num_max] = self.convert_to_USD(
+                    row[num_unit],
+                    row[num_max],
+                    year=year,
+                    month=month,
+                    event_id=row[self.event_id],
+                    level=level,
+                    impact=impact,
+                )
             elif not month:
-                row[num_min] = self.convert_to_USD_yearly_avg(row[num_unit], row[num_min], year=year)
-                row[num_max] = self.convert_to_USD_yearly_avg(row[num_unit], row[num_max], year=year)
+                row[num_min] = self.convert_to_USD_yearly_avg(
+                    row[num_unit], row[num_min], year=year, event_id=row[self.event_id], level=level, impact=impact
+                )
+                row[num_max] = self.convert_to_USD_yearly_avg(
+                    row[num_unit], row[num_max], year=year, event_id=row[self.event_id], level=level, impact=impact
+                )
             row[num_approx] = 1  # adjusted value are all approximations
             row[num_unit] = self.usd
             row[num_inflation_adjusted] = 1
             row[num_inflation_adjusted_year] = year
         else:
-            self.logger.debug(f"Could not convert to USD since no year can be inferred. Row: {dict(row)}")
+            self.logger.info(f"Could not convert to USD since no year can be inferred. Row: {dict(row)}")
         return row

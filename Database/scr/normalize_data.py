@@ -7,7 +7,7 @@ from .log_utils import Logging
 
 class DataUtils:
     def __init__(self) -> None:
-        self.logger = Logging.get_logger("data-utils")
+        self.logger = Logging.get_logger("data-utils", level="DEBUG")
 
     def load_data(self, input_dir: str) -> tuple[pd.DataFrame, dict[str, pd.DataFrame], dict[str, pd.DataFrame]]:
         import os
@@ -90,7 +90,7 @@ class DataUtils:
 
 class DataGapUtils:
     def __init__(self):
-        self.logger = Logging.get_logger("data-gap-utils")
+        self.logger = Logging.get_logger("data-gap-utils", level="DEBUG")
         self.event_id: str = "Event_ID"
         self.date_year_suffix: str = "_Date_Year"
         self.admin_areas: str = "Administrative_Areas"
