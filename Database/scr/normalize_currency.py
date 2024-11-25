@@ -113,7 +113,7 @@ class InflationAdjustment(CurrencyBase):
             ), self.adjust_inflation_USD_2024(
                 row[num_max], year=year, event_id=row[self.event_id], level=level, impact=impact
             )
-            if _min is not None and _max is not None:
+            if (_min is not None and not self.safe_isnan(_min)) and (_max is not None and not self.safe_isnan(_max)):
                 row[num_min] = _min
                 row[num_max] = _max
                 row[num_approx] = 1  # adjusted value are all approximations
