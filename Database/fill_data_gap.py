@@ -27,7 +27,7 @@ if __name__ == "__main__":
     )
 
     timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
-    logger = Logging.get_logger("fill-data-gap", "INFO", f"data_gap_{timestamp}.log")
+    logger = Logging.get_logger("fill-data-gap", "DEBUG", f"data_gap_{timestamp}.log")
     args = parser.parse_args()
     dg_utils = DataGapUtils()
     data_utils = DataUtils()
