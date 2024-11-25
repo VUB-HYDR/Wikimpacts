@@ -36,3 +36,5 @@ geopy_cache.sqlite
 **/*.json.fixed.json
 **/geojson
 *full_run*/
+!**full_run_25_deduplicated**
+!**full_run_25_deduplicated/geojson

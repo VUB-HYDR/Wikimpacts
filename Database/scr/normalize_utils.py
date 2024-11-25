@@ -3,7 +3,6 @@ import json
 import os
 import pathlib
 import re
-from datetime import datetime
 from typing import Any, Tuple, Union
 
 import pandas as pd
@@ -23,7 +22,7 @@ class NormalizeUtils:
     def __init__(self):
         self.logger = Logging.get_logger("normalize-utils")
 
-    def load_spacy_model(self, spacy_model: str = "en_core_web_trf") -> spacy_language:
+    def load_spacy_model(self, spacy_model: str = "en_core_web_trf") -> spacy_language.Language:
         import spacy
 
         try:
@@ -53,7 +52,7 @@ class NormalizeUtils:
         df = df.astype(object).where(pd.notnull(df), None)
         return df
 
-    def normalize_date(self, row: Union[str, None]) -> Tuple[int, int, int]:
+    def normalize_date(self, row: Union[str, None]) -> Tuple[str | None, str | None, str | None]:
         """
         See https://github.com/scrapinghub/dateparser/issues/700
         and https://dateparser.readthedocs.io/en/latest/dateparser.html#dateparser.date.DateDataParser.get_date_data
@@ -101,6 +100,7 @@ class NormalizeUtils:
             except BaseException as err:
                 self.logger.error(f"Date parsing error in {row} with date\n{err}\n")
                 return (None, None, None)
+        return (None, None, None)
 
     @staticmethod
     def unpack_col(df: pd.DataFrame, columns: list = []) -> pd.DataFrame:
@@ -255,6 +255,7 @@ class NormalizeJsonOutput:
 
         If no date is found, an empty string is returned.
         """
+        day, month, year, date, time = None, None, None, None, None
         if isinstance(x, str):
             return x
         if isinstance(x, list):
@@ -263,7 +264,6 @@ class NormalizeJsonOutput:
             normalized_x = {}
             for k, v in x.items():
                 normalized_x[k.strip().lower()] = str(v)
-            day, month, year, date, time = None, None, None, None, None
             if "year" in normalized_x.keys():
                 if "year" in normalized_x.keys():
                     year = normalized_x["year"]
@@ -312,7 +312,7 @@ class NormalizeJsonOutput:
         file_list = os.listdir(file_path_dir)
         file_list_relative = [f"{file_path_dir}/{i}" for i in file_list if i and i.endswith(".json")]
 
-        dfs = []
+        dfs, json_file = [], None
         for idx in range(len(file_list_relative)):
             try:
                 json_file = json.load(open(file_list_relative[idx]))
@@ -540,7 +540,7 @@ class GeoJsonUtils:
         self.non_english_nids_path = f"{nid_path}/non-english-locations.csv"
         self.non_english_nids_columns = ["location_name", "nid"]
         pathlib.Path(self.nid_path).mkdir(parents=True, exist_ok=True)
-        self.nid_list = self.update_nid_list()
+        self.update_nid_list()
         try:
             self.non_english_nids_df = pd.read_csv(
                 self.non_english_nids_path,
@@ -563,8 +563,8 @@ class GeoJsonUtils:
         """Generates a short lowercase UID"""
         return shortuuid.ShortUUID().random(length=length)
 
-    def generate_nid(self, text: str) -> tuple[str, None]:
-        nid = None
+    def generate_nid(self, text: str) -> str:
+        nid: str = ""
         try:
             assert text
             text = unidecode(text)
@@ -593,8 +593,8 @@ class GeoJsonUtils:
         self.logger.info(f"Storing non english location names and their generated nids to {self.non_english_nids_path}")
         self.non_english_nids_df.to_csv(self.non_english_nids_path, sep=",", index=False, mode="w")
 
-    def check_duplicate(self, nid: str, obj: json) -> tuple[str, bool]:
-        nid_path = f"{self.nid_path}/{nid}"
+    def check_duplicate(self, nid: str, obj: Any) -> tuple[str, bool]:
+        nid_path: str = f"{self.nid_path}/{nid}"
         self.update_nid_list()
 
         if nid_path in self.nid_list or nid in self.non_english_nids_df["location_name"].tolist():
@@ -608,7 +608,7 @@ class GeoJsonUtils:
                 return alt_nid, False
         return nid, False
 
-    def geojson_to_file(self, geojson_obj: str, area_name: str) -> str:
+    def geojson_to_file(self, geojson_obj: str, area_name: str) -> str | None:
         """Checks if a GeoJson object is stored by a specific nid. Handles three cases:
         - If the nid and file content match, nothing is written to file.
         - If the there is no record of the nid in self.nid_path, a new file is written.
@@ -665,7 +665,7 @@ class CategoricalValidation:
             return categories[cat_idx]
         except BaseException as err:
             self.logger.warning(f"Value `{text}` may be invalid for this category. Error: {err}")
-            return
+            return None
 
     def validate_main_event_hazard_relation(
         self, row: dict, hazards: str = "Hazards", main_event: str = "Main_Event"
@@ -684,7 +684,8 @@ class CategoricalValidation:
             if row[f"Total_{category}_Unit"] is None:
                 return row
             try:
-                Currency(row[f"Total_{category}_Unit"])
+                if row[f"Total_{category}_Unit"] is not None:
+                    Currency(row[f"Total_{category}_Unit"])
             except ValueError as err:
                 self.logger.error(f"""Invalid currency {row[f"Total_{category}_Unit"]}. Error: {err}""")
                 for c in cols:

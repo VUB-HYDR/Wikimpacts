@@ -67,7 +67,7 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     parser = argparse.ArgumentParser()
-    connection = sqlite3.connect(args.database)
+    connection = sqlite3.connect(args.database, detect_types=sqlite3.PARSE_DECLTYPES)
     cursor = connection.cursor()
     generate_db(
         l1_schema="Database/schema/L1_schema.sql",
