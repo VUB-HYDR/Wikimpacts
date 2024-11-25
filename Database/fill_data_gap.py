@@ -4,6 +4,7 @@ from datetime import datetime
 
 import pandas as pd
 
+from Database.scr.normalize_currency import CurrencyConversion, InflationAdjustment
 from Database.scr.normalize_data import DataGapUtils, DataUtils
 from Database.scr.normalize_utils import Logging, NormalizeUtils
 
@@ -31,15 +32,25 @@ if __name__ == "__main__":
     dg_utils = DataGapUtils()
     data_utils = DataUtils()
     norm_utils = NormalizeUtils()
+    ia_utils = InflationAdjustment()
+    cc_utils = CurrencyConversion()
 
     l1, l2, l3 = data_utils.load_data(input_dir=args.input_dir)
     logger.info("Data loaded!")
 
     # Dropping all records with Event_ID or no Main_Event and purging the records from L2/L3 (assumption: irreelvant events have no Main_Event value)
-    logger.info(f"Dropping all records with no Event_ID or no Main_Event in L1. Shape before: {l1.shape}")
+    logger.info(
+        f"Dropping all records with no {dg_utils.event_id} or no {dg_utils.main_event} in L1. Shape before: {l1.shape}"
+    )
     event_ids_to_drop = l1[l1[dg_utils.main_event].isna()][dg_utils.event_id].tolist()
     l1 = l1.dropna(how="any", subset=[dg_utils.event_id, dg_utils.main_event])
-    logger.info(f"Dropped all records with no Event_ID or no Main_Event records in L1. Shape after: {l1.shape}")
+    logger.info(
+        f"Dropped all records with no {dg_utils.event_id} or no {dg_utils.main_event} records in L1. Shape after: {l1.shape}"
+    )
+    l1 = l1.dropna(how="all", subset=[dg_utils.s_y, dg_utils.e_y])
+    logger.info(
+        f"Dropped all records with no {dg_utils.s_y} and no {dg_utils.e_y} records in L1. Shape after: {l1.shape}"
+    )
 
     for name, level in {"L2": l2, "L3": l3}.items():
         for impact in level.keys():
@@ -69,6 +80,47 @@ if __name__ == "__main__":
                         lambda row: dg_utils.fill_date(row=row, replace_with_date=replace_with_date, impact=impact),
                         axis=1,
                     )
+
+    # Replace NaNs will NoneType
+    l1 = l1.replace(float("nan"), None)
+    for level in [l2, l3]:
+        for impact in level.keys():
+            level[impact].replace(float("nan"), None, inplace=True)
+
+    logger.info("Converting currencies to USD")
+    for cat in ia_utils.monetary_categories:
+        logger.info(f"Converting currencies in L1 for category {cat}")
+        l1 = l1.apply(lambda x: cc_utils.normalize_row_USD(x, l1_impact=cat), axis=1)
+        logger.info(f"Converting currencies in L2 for category {cat}")
+        l2[cat] = l2[cat].apply(lambda x: cc_utils.normalize_row_USD(x, l1_impact=None), axis=1)
+        logger.info(f"Converting currencies in L3 for category {cat}")
+        l3[cat] = l3[cat].apply(lambda x: cc_utils.normalize_row_USD(x, l1_impact=None), axis=1)
+
+    for cat in ia_utils.monetary_categories:
+        # TODO: inspect, then drop!!!
+        logger.info(f"Unconverted currencies for {cat} for L1")
+        logger.warning(
+            f"-----\n{l1[(l1[cc_utils.t_num_unit.format(cat)] != cc_utils.usd)][~l1[cc_utils.t_num_unit.format(cat)].isnull()][[x for x in l1.columns if cat in x and 'Buildings' not in x]]}"
+        )
+
+        logger.info(f"Unconverted currencies for {cat} for L2")
+        logger.warning(
+            f"------\n{l2[cat][(l2[cat][cc_utils.num_unit] != cc_utils.usd) & (~l2[cat][cc_utils.num_unit].isnull())][[x for x in l2[cat].columns if 'Areas' not in x]]}"
+        )
+
+        logger.info(f"Unconverted currencies for {cat} for L3")
+        logger.warning(
+            f"------\n{l3[cat][(l3[cat][cc_utils.num_unit] != cc_utils.usd) & (~l3[cat][cc_utils.num_unit].isnull())][[x for x in l2[cat].columns if 'Area' not in x and 'Locations' not in x]]}"
+        )
+
+    for cat in ia_utils.monetary_categories:
+        logger.info(f"Adjusting inflation for USD values in L1 to 2024 for category {cat}")
+        l1 = l1.apply(lambda x: ia_utils.adjust_inflation_row_USD_2024(x, l1_impact=cat), axis=1)
+        logger.info(f"Adjusting inflation for USD values in L2 to 2024 for category {cat}")
+        l2[cat] = l2[cat].apply(lambda x: ia_utils.adjust_inflation_row_USD_2024(x, l1_impact=None), axis=1)
+        logger.info(f"Adjusting inflation for USD values in L3 to 2024 for category {cat}")
+        l3[cat] = l3[cat].apply(lambda x: ia_utils.adjust_inflation_row_USD_2024(x, l1_impact=None), axis=1)
+
     # TODO:
     # DROP RECORDS WITH NO START OR END YEAR
     # APPLY CURRENCY CONVERSION
@@ -97,12 +149,12 @@ if __name__ == "__main__":
         for impact in l3.keys():
             l3_areas = l3[impact][l3[impact][dg_utils.event_id] == e_id][f"{dg_utils.admin_area}_Norm"].tolist()
 
-            l2_areas = dg_utils.flatten(
+            l2_areas_list: list = dg_utils.flatten(
                 l2[impact][l2[impact][dg_utils.event_id] == e_id][f"{dg_utils.admin_areas}_Norm"].tolist()
             )
 
             # check l3 impacts not found in l2
-            areas_not_in_l2 = [x for x in l3_areas if x not in l2_areas]
+            areas_not_in_l2 = [x for x in l3_areas if x not in l2_areas_list]
             if areas_not_in_l2:
                 for area in areas_not_in_l2:
                     logger.info(
@@ -125,21 +177,27 @@ if __name__ == "__main__":
             cols.extend([dg_utils.s_d, dg_utils.s_m, dg_utils.s_y, dg_utils.e_d, dg_utils.e_m, dg_utils.e_y])
             if impact.lower() in dg_utils.monetary_categories:
                 cols.extend([dg_utils.num_unit, dg_utils.num_inflation_adjusted, dg_utils.num_inflation_adjusted_year])
+            group_by_cols = [
+                f"{dg_utils.admin_area}_Norm",
+                dg_utils.s_d,
+                dg_utils.s_m,
+                dg_utils.s_y,
+                dg_utils.e_d,
+                dg_utils.e_m,
+                dg_utils.e_y,
+            ]
+            # assuming all currencies have been converted to USD, and all USD values have been adjusted to 2024
+            if impact.lower() in dg_utils.monetary_categories:
+                group_by_cols.extend(
+                    [dg_utils.num_unit, dg_utils.num_inflation_adjusted, dg_utils.num_inflation_adjusted_year]
+                )
 
             # check if l3 impact values > l2 impact values
             l3[impact][cols] = l3[impact][cols].replace({None: float("nan")})
             l3_impacts = (
                 l3[impact][(l3[impact][dg_utils.event_id] == e_id) & (~l3[impact][dg_utils.num_min].isna())][cols]
                 .groupby(
-                    [
-                        f"{dg_utils.admin_area}_Norm",
-                        dg_utils.s_d,
-                        dg_utils.s_m,
-                        dg_utils.s_y,
-                        dg_utils.e_d,
-                        dg_utils.e_m,
-                        dg_utils.e_y,
-                    ],
+                    group_by_cols,
                     as_index=False,
                     dropna=False,
                 )
@@ -166,7 +224,8 @@ if __name__ == "__main__":
 
                 if not l2_series.empty:
                     for n in range(len(l2_series)):
-                        l2_areas, l2_idx = {}, []
+                        l2_areas: dict = {}
+                        l2_idx: list = []
 
                         l2_list = l2_series.iloc[n]
                         l2_idx = [l2_list.index(area) for area in l2_list if area not in l1_areas]

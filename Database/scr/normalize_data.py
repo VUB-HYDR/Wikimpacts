@@ -246,8 +246,7 @@ class DataGapUtils:
                     & ((l3_row[self.e_y] == l2_row[self.e_y]) | (self.safe_isnull(l3_row[self.e_y])))
                 ][[f"{self.admin_area}_Norm", self.num_min, self.num_max]].reset_index()
             new_l2_row = l2_row.copy()
-            # TODO: lift monetary category exception after applying inflation adjustment and conversion!
-            if (not l3_tgt_row.empty) and (impact.lower() not in self.monetary_categories):
+            if not l3_tgt_row.empty:
                 for i in (self.num_min, self.num_max):
                     if l3_tgt_row[i][0] is not None:
                         if l2_row[i] is None:
