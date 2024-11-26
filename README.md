@@ -43,8 +43,8 @@ We developed a series of prompts for our database as follows:
 - V_0 is a list of prompts used in the NLP2024 paper
 - V_1 is the list of prompts used for L1-3 and the annotation is directly quoted from the article
 - V_2 is the list of prompts for L1-3 with annotation gives the header names
-**(V_0-2 are not recommanded, because the variable names are not matched with following pipeline)**
-- V_3_1 is a version based on V2, but with freezed variable names as the schema we confirmed
+**(V_0-2 are not recommended, because the variable names are not matched with following pipeline)**
+- V_3_1 is a version based on V2, but with frozen variable names as the schema we confirmed
 - V_3_2 is a version based on V3, but in L1, we prompt the model to only capture affected countries
 - V_4 is the one with two prompts for each impact category, one prompt for L1/2 and one for L3
 - V_5 is the one with three prompts for each impact category
