@@ -341,7 +341,7 @@ if __name__ == "__main__":
         drop_l3 = True
         for impact in l3.keys():
             null_mask_l3 = l3[impact][[dg_utils.num_min, dg_utils.num_max]].isnull().all(axis=1)
-            if not l3[impact][(null_mask_l3) & (l3[impact][dg_utils.event_id] == e_id)].empty:
+            if not l3[impact][(~null_mask_l3) & (l3[impact][dg_utils.event_id] == e_id)].empty:
                 drop_l3 = False
                 logger.warning(
                     f"L3 contains impacts not propagated to L1!\n{l3[impact][l3[impact][dg_utils.event_id] == e_id]}"
