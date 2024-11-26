@@ -38,7 +38,8 @@ The process below describes crucial parts of our pipeline.
 
 ##### Run prompt experiments on OpenAI models
 If you use OpenAI models, there is a way to save your cost with running experiments in batch.
-We developed a series of prompts for our database as follows
+We developed a series of prompts for our database as follows:
+
 - V_0 is a list of prompts used in the NLP2024 paper
 - V_1 is the list of prompts used for L1-3 and the annotation is directly quoted from the article
 - V_2 is the list of prompts for L1-3 with annotation gives the header names
@@ -47,6 +48,9 @@ We developed a series of prompts for our database as follows
 - V_3_2 is a version based on V3, but in L1, we prompt the model to only capture affected countries
 - V_4 is the one with two prompts for each impact category, one prompt for L1/2 and one for L3
 - V_5 is the one with three prompts for each impact category
+
+The prompts can be found in [Database/Prompts/prompts.py](Database/Prompts/prompts.py).
+
 Before you run our pipeline, please choose a version of prompts to proceed, which can be revised in the beginning of **run_prompts.py**
 
 ```shell
@@ -54,7 +58,9 @@ from Database.Prompts.prompts import V_3 as target_prompts
 ```
 
 #### (Step 1) Raw input
-Choose the raw file contains the text you need to process, please use the clear raw file name, for example "wiki_dev_whole_infobox_20240729_70single_events" which indicates the article resource (wiki), the experiment set (dev), the article structure (whole_infobox), the generation date (20240729) and the number of events (70single_events); the api env you want to use, specially for OpenAI models, it's mandatory; the decription of the experiment such as "all_categories_V3", the prompt category such as "all", and the batch file location you want to store the batch file (this is not mandatory, but it's good to check if you create correct batch file)
+Choose the raw file which contains the text you need to process. Please use clear file names. For example, the filename `wiki_dev_whole_infobox_20240729_70single_events` indicates the article resource (wiki), the experiment set (dev), the article structure (whole_infobox), the generation date (20240729) and the number of events (70single_events).
+
+the api env you want to use, specially for OpenAI models, it's mandatory; the description of the experiment such as "all_categories_V3", the prompt category such as "all", and the batch file location you want to store the batch file (this is not mandatory, but it's good to check if you create correct batch file)
 
 #### (Step 2) GPT models
 Choose the model you want to apply. The default model is `gpt-4o-2024-05-13`
