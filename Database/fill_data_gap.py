@@ -327,23 +327,22 @@ if __name__ == "__main__":
     missing_event_ids_to_drop: list[str] = []
     logger.info(f"Found {len(e_ids_missing_l1_impacts)} Event IDs without impacts")
     for e_id in e_ids_missing_l1_impacts:
-        drop_l2 = True
+        drop_l2, drop_l3 = True, True
         for impact in l2.keys():
             null_mask_l2 = l2[impact][[dg_utils.num_min, dg_utils.num_max]].isnull().all(axis=1)
-            if not l2[impact][(~null_mask_l2) & (l2[impact][dg_utils.event_id] == e_id)].empty:
-                logger.warning(
-                    f"L2 {e_id} contains impacts not propagated to L1!\n{l2[impact][l2[impact][dg_utils.event_id] == e_id]}"
-                )
+            l2_df = l2[impact][(~null_mask_l2) & (l2[impact][dg_utils.event_id] == e_id)]
+            if not l2_df.empty:
+                logger.warning(f"L2 {e_id} contains impacts not propagated to L1!\n{l2_df}")
                 drop_l2 = False
+            del l2_df
 
-        drop_l3 = True
-        for impact in l3.keys():
             null_mask_l3 = l3[impact][[dg_utils.num_min, dg_utils.num_max]].isnull().all(axis=1)
-            if not l3[impact][(~null_mask_l3) & (l3[impact][dg_utils.event_id] == e_id)].empty:
+            l3_df = l3[impact][(~null_mask_l3) & (l3[impact][dg_utils.event_id] == e_id)]
+            if not l3_df.empty:
+                logger.warning(f"L3 {e_id} contains impacts not propagated to L1!\n{l3_df}")
                 drop_l3 = False
-                logger.warning(
-                    f"L3 {e_id} contains impacts not propagated to L1!\n{l3[impact][l3[impact][dg_utils.event_id] == e_id]}"
-                )
+                l3[impact].to_json(f"l3-{impact}-{e_id}.json", orient="records")
+            del l3_df
 
         if drop_l3 and drop_l2:
             missing_event_ids_to_drop.append(e_id)
@@ -363,13 +362,6 @@ if __name__ == "__main__":
     for level in [l2, l3]:
         for impact in level.keys():
             level[impact].replace(float("nan"), None, inplace=True)
-
-    # LIST L1 EVENTS WITH NO IMPACTS IN TOTAL_*
-    # FOR EACH EVENT_ID:
-    # CHECK IF NON-NULL IMPACTS EXIST FOR THIS IN L2/L3 (NONE SHOULD EXIST AFTER APPLYING THE DATA GAP FIX UNLESS SOMETHING IS WRONG)
-    # IF NO NON-NULL L2/L3 RECORDS EXIST, ADD TO LIST FOR DROPPING
-    # DROP THE EVENT ID FROM L1/L2/L3
-    # REPLACE NANS WITH NONETYPE
 
     logger.info(f"Storing results in {args.output_dir}")
     pathlib.Path(args.output_dir).mkdir(parents=True, exist_ok=True)
