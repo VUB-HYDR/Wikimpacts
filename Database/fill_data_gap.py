@@ -56,7 +56,7 @@ if __name__ == "__main__":
                 logger.info(
                     f"Dropping any records of {e} in {name} for impact {impact}. Shape before: {level[impact].shape}"
                 )
-                level[impact] = level[impact][~(level[impact]["Event_ID"] == e)]
+                level[impact] = level[impact][~(level[impact][dg_utils.event_id] == e)]
                 logger.info(
                     f"Dropped any records of {e} in {name} for impact {impact}. Shape after: {level[impact].shape}"
                 )
@@ -316,6 +316,46 @@ if __name__ == "__main__":
                 l1[l1[dg_utils.event_id] == e_id] = l1[l1[dg_utils.event_id] == e_id].apply(
                     lambda row: dg_utils.l2_to_l1(row, agg_min, agg_max, impact, e_id, unit, ia, ia_year), axis=1
                 )
+
+    # Replace NaNs will NoneType
+    for level in [l2, l3]:
+        for impact in level.keys():
+            level[impact].replace(float("nan"), None, inplace=True)
+
+    null_mask_total = l1[[x for x in l1.columns if "Total_" in x]].isnull().all(axis=1)
+    e_ids_missing_l1_impacts: list[str] = list(l1[null_mask_total].Event_ID.unique())
+    missing_event_ids_to_drop: list[str] = []
+    logger.info(f"Found {len(e_ids_missing_l1_impacts)} Event IDs without impacts")
+    for e_id in e_ids_missing_l1_impacts:
+        drop_l2, drop_l3 = True, True
+        for impact in l2.keys():
+            null_mask_l2 = l2[impact][[dg_utils.num_min, dg_utils.num_max]].isnull().all(axis=1)
+            l2_df = l2[impact][(~null_mask_l2) & (l2[impact][dg_utils.event_id] == e_id)]
+            if not l2_df.empty:
+                logger.warning(f"L2 {e_id} contains impacts not propagated to L1!\n{l2_df}")
+                drop_l2 = False
+            del l2_df
+
+            null_mask_l3 = l3[impact][[dg_utils.num_min, dg_utils.num_max]].isnull().all(axis=1)
+            l3_df = l3[impact][(~null_mask_l3) & (l3[impact][dg_utils.event_id] == e_id)]
+            if not l3_df.empty:
+                logger.warning(f"L3 {e_id} contains impacts not propagated to L1!\n{l3_df}")
+                drop_l3 = False
+            del l3_df
+
+        if drop_l3 and drop_l2:
+            missing_event_ids_to_drop.append(e_id)
+
+    missing_event_ids_to_drop = list(set(missing_event_ids_to_drop))
+
+    logger.warning(
+        f"Dropping the following {len(missing_event_ids_to_drop)} IDs from L1/L2/L3: {missing_event_ids_to_drop}"
+    )
+    l1 = l1[~l1[dg_utils.event_id].isin(missing_event_ids_to_drop)]
+    for level in [l2, l3]:
+        for impact in level.keys():
+            for e in missing_event_ids_to_drop:
+                level[impact] = level[impact][~(level[impact][dg_utils.event_id] == e)]
 
     # Replace NaNs will NoneType
     for level in [l2, l3]:

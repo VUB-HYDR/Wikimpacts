@@ -17,7 +17,8 @@
 ## Data-Gap Filled
 
 | [releases/impactdb.v1.0.dg_filled.db](releases/impactdb.v1.0.dg_filled.db)  | A **post-processed** database after applying a final layer of post-processing, excluding the handling of currencies and inflation adjustment (has missing validation rules) |
-| [releases/impactdb.v1.1.dg_filled.db](releases/impactdb.v1.1.dg_filled.db) **LATEST** | A **post-processed** database after applying a final layer of post-processing, excluding the handling of currencies and inflation adjustment. In this release, end years of events are nullable. |
+| [releases/impactdb.v1.1.dg_filled.db](releases/impactdb.v1.1.dg_filled.db) | A **post-processed** database after applying a final layer of post-processing, including the handling of currencies and inflation adjustment. In this release, end years of events are nullable. |
+| [releases/impactdb.v1.2.dg_filled.db](releases/impactdb.v1.1.dg_filled.db) **LATEST** | A **post-processed** database that improves on [releases/impactdb.v1.1.dg_filled.db](releases/impactdb.v1.1.dg_filled.db) by removing events that have no L1/L2/L3 impacts (ie. all impact data in L1 is NULL) |
 
 ### Additional files and metadata
 | File    | Description |
