@@ -34,9 +34,9 @@ The process below describes crucial parts of our pipeline.
 
 ### Running prompts and experiments on OpenAI models
 
-#### (Step 0) Run your experiments!
 
-##### Run prompt experiments on OpenAI models
+
+#### Run prompt experiments on OpenAI models
 If you use OpenAI models, there is a way to save your cost with running experiments in batch.
 We developed a series of prompts for our database as follows:
 
@@ -56,7 +56,7 @@ Before you run our pipeline, please choose a version of prompts to proceed, whic
 ```shell
 from Database.Prompts.prompts import V_3 as target_prompts
 ```
-### Step 1: Experiment Settings
+##### Step 1: Experiment Settings
 
 1. **Raw File Selection**: Choose a clear and descriptive filename for the raw file you want to process, such as `wiki_dev_whole_infobox_20240729_70single_events`.
 
@@ -68,7 +68,7 @@ from Database.Prompts.prompts import V_3 as target_prompts
 
 5. **Batch File Location** (Optional): Specify where to store the batch file. This helps verify the batch file's creation.
 
-### Step 2: Model and Command Setup
+##### Step 2: Model and Command Setup
 
 - **Model Selection**: Choose the GPT model to apply. The default is `gpt-4o-2024-05-13`, but you can specify another model if needed.
 
@@ -86,7 +86,7 @@ poetry run python3 Database/Prompts/run_prompts.py \
   --prompt_category <prompt_category>
 ```
 
-#### Example Command
+###### Example Command
 
 ```shell
 poetry run python3 Database/Prompts/run_prompts.py \
@@ -100,7 +100,7 @@ poetry run python3 Database/Prompts/run_prompts.py \
   --prompt_category all
 ```
 
-### Explanation of Parameters
+###### Explanation of Parameters
 
 - `--filename`: Name of the raw file to process.
 - `--raw_dir`: Directory of the raw files.
@@ -111,11 +111,11 @@ poetry run python3 Database/Prompts/run_prompts.py \
 - `--max_tokens`: Maximum tokens for processing.
 - `--prompt_category`: Prompt category.
 
-### Step 3: Retrieve Results
+##### Step 3: Retrieve Results
 
 Use the same raw file and API environment to access your OpenAI server and specify the output directory for results.
 
-#### Command Example
+###### Command Example
 
 ```shell
 poetry run python3 Database/Prompts/batch_output_retrivel.py \
