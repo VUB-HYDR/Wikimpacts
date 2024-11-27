@@ -341,7 +341,6 @@ if __name__ == "__main__":
             if not l3_df.empty:
                 logger.warning(f"L3 {e_id} contains impacts not propagated to L1!\n{l3_df}")
                 drop_l3 = False
-                l3[impact].to_json(f"l3-{impact}-{e_id}.json", orient="records")
             del l3_df
 
         if drop_l3 and drop_l2:
