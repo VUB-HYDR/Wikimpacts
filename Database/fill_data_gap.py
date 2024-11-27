@@ -329,14 +329,12 @@ if __name__ == "__main__":
     for e_id in e_ids_missing_l1_impacts:
         drop_l2 = True
         for impact in l2.keys():
-            null_mask_l2 = l2[impact][[dg_utils.num_min, dg_utils.num_max]].isnull().any(axis=1)
+            null_mask_l2 = l2[impact][[dg_utils.num_min, dg_utils.num_max]].isnull().all(axis=1)
             if not l2[impact][(~null_mask_l2) & (l2[impact][dg_utils.event_id] == e_id)].empty:
                 logger.warning(
-                    f"L2 contains impacts not propagated to L1!\n{l2[impact][l2[impact][dg_utils.event_id] == e_id]}"
+                    f"L2 {e_id} contains impacts not propagated to L1!\n{l2[impact][l2[impact][dg_utils.event_id] == e_id]}"
                 )
                 drop_l2 = False
-        if drop_l2:
-            missing_event_ids_to_drop.append(e_id)
 
         drop_l3 = True
         for impact in l3.keys():
@@ -344,9 +342,10 @@ if __name__ == "__main__":
             if not l3[impact][(~null_mask_l3) & (l3[impact][dg_utils.event_id] == e_id)].empty:
                 drop_l3 = False
                 logger.warning(
-                    f"L3 contains impacts not propagated to L1!\n{l3[impact][l3[impact][dg_utils.event_id] == e_id]}"
+                    f"L3 {e_id} contains impacts not propagated to L1!\n{l3[impact][l3[impact][dg_utils.event_id] == e_id]}"
                 )
-        if drop_l3:
+
+        if drop_l3 and drop_l2:
             missing_event_ids_to_drop.append(e_id)
 
     missing_event_ids_to_drop = list(set(missing_event_ids_to_drop))
