@@ -43,7 +43,7 @@ We developed a series of prompts for our database as follows:
 - V_0 is a list of prompts used in the NLP2024 paper
 - V_1 is the list of prompts used for L1-3 and the annotation is directly quoted from the article
 - V_2 is the list of prompts for L1-3 with annotation gives the header names
-**(V_0-2 are not recommended, because the variable names are not matched with following pipeline)**
+**(V_0-2 are not used in the test, because the variable names are not matched with following pipeline)**
 - V_3_1 is a version based on V2, but with frozen variable names as the schema we confirmed
 - V_3_2 is a version based on V3, but in L1, we prompt the model to only capture affected countries
 - V_4 is the one with two prompts for each impact category, one prompt for L1/2 and one for L3
@@ -56,28 +56,77 @@ Before you run our pipeline, please choose a version of prompts to proceed, whic
 ```shell
 from Database.Prompts.prompts import V_3 as target_prompts
 ```
+### Step 1: Experiment Settings
 
-#### (Step 1) Raw input
-Choose the raw file which contains the text you need to process. Please use clear file names. For example, the filename `wiki_dev_whole_infobox_20240729_70single_events` indicates the article resource (wiki), the experiment set (dev), the article structure (whole_infobox), the generation date (20240729) and the number of events (70single_events).
+1. **Raw File Selection**: Choose a clear and descriptive filename for the raw file you want to process, such as `wiki_dev_whole_infobox_20240729_70single_events`.
 
-the api env you want to use, specially for OpenAI models, it's mandatory; the description of the experiment such as "all_categories_V3", the prompt category such as "all", and the batch file location you want to store the batch file (this is not mandatory, but it's good to check if you create correct batch file)
+2. **API Environment**: Specify the API environment, which is mandatory for OpenAI models.
 
-#### (Step 2) GPT models
-Choose the model you want to apply. The default model is `gpt-4o-2024-05-13`
+3. **Experiment Description**: Provide a description of the experiment, like "all_categories_V3", to clarify its purpose and scope.
 
-Below is a command example you can refer to run the script:
+4. **Prompt Category**: Indicate the prompt category, such as "all".
+
+5. **Batch File Location** (Optional): Specify where to store the batch file. This helps verify the batch file's creation.
+
+### Step 2: Model and Command Setup
+
+- **Model Selection**: Choose the GPT model to apply. The default is `gpt-4o-2024-05-13`, but you can specify another model if needed.
+
+- **Command Structure**: Use the following template to run your script, replacing placeholders with your details:
 
 ```shell
-poetry run python3 Database/Prompts/run_prompts.py --filename wiki_dev_whole_infobox_20240729_70single_events.json --raw_dir Database/Wiki_dev_test_articles --batch_dir Database/Prompts/batch --api_env .env --description all_categories_V3  --model_name gpt-4o-2024-08-06 --max_tokens 16384  --prompt_category all
+poetry run python3 Database/Prompts/run_prompts.py \
+  --filename <filename>.json \
+  --raw_dir <raw_directory> \
+  --batch_dir <batch_directory> \
+  --api_env <api_environment_file> \
+  --description <experiment_description> \
+  --model_name <model_name> \
+  --max_tokens <max_tokens> \
+  --prompt_category <prompt_category>
 ```
-#### (Step 3) Retrieve results
-Choose the same raw file as you run the experiment, the same api env to access your remote OpenAI server and the output directory to store your result.
 
-Below is a command example you can refer to run the script:
+#### Example Command
 
 ```shell
-poetry run python3  Database/Prompts/batch_output_retrivel.py  --api_env .env  --output_dir  Database/raw/batch_test  --file_name wiki_dev_whole_infobox_20240729_70single_events.json  --raw_dir  Database/Wiki_dev_test_articles --description all_categories_V3
+poetry run python3 Database/Prompts/run_prompts.py \
+  --filename wiki_dev_whole_infobox_20240729_70single_events.json \
+  --raw_dir Database/Wiki_dev_test_articles \
+  --batch_dir Database/Prompts/batch \
+  --api_env .env \
+  --description all_categories_V3 \
+  --model_name gpt-4o-2024-08-06 \
+  --max_tokens 16384 \
+  --prompt_category all
 ```
+
+### Explanation of Parameters
+
+- `--filename`: Name of the raw file to process.
+- `--raw_dir`: Directory of the raw files.
+- `--batch_dir`: Directory to store the batch file.
+- `--api_env`: Environment file with API credentials.
+- `--description`: Experiment description.
+- `--model_name`: GPT model name.
+- `--max_tokens`: Maximum tokens for processing.
+- `--prompt_category`: Prompt category.
+
+### Step 3: Retrieve Results
+
+Use the same raw file and API environment to access your OpenAI server and specify the output directory for results.
+
+#### Command Example
+
+```shell
+poetry run python3 Database/Prompts/batch_output_retrivel.py \
+  --api_env .env \
+  --output_dir Database/raw/batch_test \
+  --file_name wiki_dev_whole_infobox_20240729_70single_events.json \
+  --raw_dir Database/Wiki_dev_test_articles \
+  --description all_categories_V3
+```
+
+
 ### Parsing and evaluation pipeline
 
 If you have generated some LLM output and would like to test it against the dev and test gold sets, here is a list of command to enable you to experiment with this yourself.
