@@ -187,7 +187,7 @@ if __name__ == "__main__":
                     x for x in data.columns if "Area" in x or "Location" in x or "Event_Names" in x or x == "Hazards"
                 ]:
                     data[c] = data[c].astype(str)
-                    data[c] = data[c].replace("nan", float("nan"))
+                    data[c] = data[c].apply(lambda x: x.replace("nan", "None"))
 
                 for i in tqdm(range(len(data)), desc=f"Inserting {f} into {args.database_name}"):
                     try:
@@ -260,7 +260,7 @@ if __name__ == "__main__":
             if not args.dry_run:
                 for c in [x for x in data.columns if "Area" in x or "Location" in x]:
                     data[c] = data[c].astype(str)
-                    data[c] = data[c].replace("nan", float("nan"))
+                    data[c] = data[c].apply(lambda x: x.replace("nan", "None"))
                 for i in tqdm(range(len(data)), desc=f"Inserting {f} into {args.database_name}"):
                     try:
                         data.iloc[i : i + 1].to_sql(

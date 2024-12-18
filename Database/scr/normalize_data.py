@@ -5,46 +5,9 @@ import pandas as pd
 from .log_utils import Logging
 
 
-class DataGapUtils:
-    def __init__(self):
-        self.logger = Logging.get_logger("data-gap-utils")
-        self.event_id: str = "Event_ID"
-        self.date_year_suffix: str = "_Date_Year"
-        self.admin_areas: str = "Administrative_Areas"
-        self.admin_area: str = "Administrative_Area"
-        self.main_event: str = "Main_Event"
-        self.num_min: str = "Num_Min"
-        self.num_max: str = "Num_Max"
-        self.num_approx: str = "Num_Approx"
-        self.num_unit: str = "Num_Unit"
-        self.num_inflation_adjusted: str = "Num_Inflation_Adjusted"
-        self.num_inflation_adjusted_year: str = "Num_Inflation_Adjusted_Year"
-
-        self.monetary_categories = ["damage", "insured_damage"]
-
-        start, end, day, month, year = "Start_Date", "End_Date", "Day", "Month", "Year"
-        self.s_d, self.s_m, self.s_y, self.e_d, self.e_m, self.e_y = (
-            f"{start}_{day}",
-            f"{start}_{month}",
-            f"{start}_{year}",
-            f"{end}_{day}",
-            f"{end}_{month}",
-            f"{end}_{year}",
-        )
-
-    @staticmethod
-    def safe_isnan(x):
-        try:
-            return math.isnan(x)
-        except:
-            return False
-
-    @staticmethod
-    def safe_isnull(x):
-        try:
-            return x.isnull()
-        except:
-            return False
+class DataUtils:
+    def __init__(self) -> None:
+        self.logger = Logging.get_logger("data-utils", level="DEBUG")
 
     def load_data(self, input_dir: str) -> tuple[pd.DataFrame, dict[str, pd.DataFrame], dict[str, pd.DataFrame]]:
         import os
@@ -123,6 +86,48 @@ class DataGapUtils:
             l3[impact] = l3[impact].replace(float("nan"), None)
 
         return l1, l2, l3
+
+
+class DataGapUtils:
+    def __init__(self):
+        self.logger = Logging.get_logger("data-gap-utils", level="DEBUG")
+        self.event_id: str = "Event_ID"
+        self.date_year_suffix: str = "_Date_Year"
+        self.admin_areas: str = "Administrative_Areas"
+        self.admin_area: str = "Administrative_Area"
+        self.main_event: str = "Main_Event"
+        self.num_min: str = "Num_Min"
+        self.num_max: str = "Num_Max"
+        self.num_approx: str = "Num_Approx"
+        self.num_unit: str = "Num_Unit"
+        self.num_inflation_adjusted: str = "Num_Inflation_Adjusted"
+        self.num_inflation_adjusted_year: str = "Num_Inflation_Adjusted_Year"
+
+        self.monetary_categories = ["damage", "insured_damage"]
+
+        start, end, day, month, year = "Start_Date", "End_Date", "Day", "Month", "Year"
+        self.s_d, self.s_m, self.s_y, self.e_d, self.e_m, self.e_y = (
+            f"{start}_{day}",
+            f"{start}_{month}",
+            f"{start}_{year}",
+            f"{end}_{day}",
+            f"{end}_{month}",
+            f"{end}_{year}",
+        )
+
+    @staticmethod
+    def safe_isnan(x):
+        try:
+            return math.isnan(x)
+        except:
+            return False
+
+    @staticmethod
+    def safe_isnull(x):
+        try:
+            return x.isnull()
+        except:
+            return False
 
     def fill_date(self, row: pd.DataFrame, replace_with_date: dict, impact: str) -> pd.DataFrame:
         if all([True if (row[d] is None or self.safe_isnan(row[d])) else False for d in [self.s_y, self.e_y]]):
@@ -241,8 +246,7 @@ class DataGapUtils:
                     & ((l3_row[self.e_y] == l2_row[self.e_y]) | (self.safe_isnull(l3_row[self.e_y])))
                 ][[f"{self.admin_area}_Norm", self.num_min, self.num_max]].reset_index()
             new_l2_row = l2_row.copy()
-            # TODO: lift monetary category exception after applying inflation adjustment and conversion!
-            if (not l3_tgt_row.empty) and (impact.lower() not in self.monetary_categories):
+            if not l3_tgt_row.empty:
                 for i in (self.num_min, self.num_max):
                     if l3_tgt_row[i][0] is not None:
                         if l2_row[i] is None:
