@@ -238,7 +238,8 @@ class CurrencyConversion(CurrencyBase):
             )
             return amount
 
-    def convert_to_EUR_yearly_avg(
+    # only provide EUR in lastest year in the database
+    def convert_USD_to_EUR_latest_year_avg(
         self, currency: str, amount: float, year: int, event_id: str, level: str, impact: str
     ):
         try:
@@ -253,9 +254,15 @@ class CurrencyConversion(CurrencyBase):
             ), f"Amount is missing or invalid: '{amount}' of type '{type(amount)}'"
             assert currency, "Currency is missing"
 
-            # always use the current year of EUR-USD conversion rate
-            rate = 0.919600999999999
+            # always use the lastest year of EUR-USD conversion rate
+            # extract rate
+            rate = (
+                self.currency_conversion_yearly_avg[self.eur]
+                .loc[self.currency_conversion_yearly_avg[self.eur].Year == year]
+                .Rate.tolist()[0]
+            )
             return round(amount * rate)
+
         except BaseException as err:
             self.logger.debug(
                 f"{event_id} - {level} - {impact}: Could not convert to EUR (yearly average) for year '{year}', currency '{currency}' and amount '{amount}'. Error: {err}"
@@ -344,7 +351,9 @@ class CurrencyConversion(CurrencyBase):
             self.logger.info(f"Could not convert to USD since no year can be inferred. Row: {dict(row)}")
         return row
 
-    def USD_to_EUR(self, row: pd.DataFrame, l1_impact: None | str, level: str, impact: str) -> pd.DataFrame:
+    def Lasted_Year_USD_Inflated_to_EUR(
+        self, row: pd.DataFrame, l1_impact: None | str, level: str, impact: str
+    ) -> pd.DataFrame:
         num_min, num_max, num_unit, num_approx, num_inflation_adjusted, num_inflation_adjusted_year = (
             self.num_min,
             self.num_max,
@@ -373,10 +382,10 @@ class CurrencyConversion(CurrencyBase):
 
         if year:
             if row[num_unit] == self.usd:
-                row[num_min] = self.convert_to_EUR_yearly_avg(
+                row[num_min] = self.convert_USD_to_EUR_latest_year_avg(
                     row[num_unit], row[num_min], year=year, event_id=row[self.event_id], level=level, impact=impact
                 )
-                row[num_max] = self.convert_to_EUR_yearly_avg(
+                row[num_max] = self.convert_USD_to_EUR_latest_year_avg(
                     row[num_unit], row[num_max], year=year, event_id=row[self.event_id], level=level, impact=impact
                 )
             row[num_approx] = 1  # adjusted value are all approximations

@@ -36,11 +36,17 @@ if __name__ == "__main__":
     logger.info("Converting USD to EUR")
     for cat in ia_utils.monetary_categories:
         logger.info(f"Converting currencies in L1 for category {cat}")
-        l1 = l1.apply(lambda x: cc_utils.USD_to_EUR(x, l1_impact=cat, level="l1", impact=cat), axis=1)
+        l1 = l1.apply(
+            lambda x: cc_utils.Lasted_Year_USD_Inflated_to_EUR(x, l1_impact=cat, level="l1", impact=cat), axis=1
+        )
         logger.info(f"Converting currencies in L2 for category {cat}")
-        l2[cat] = l2[cat].apply(lambda x: cc_utils.USD_to_EUR(x, l1_impact=None, level="l2", impact=cat), axis=1)
+        l2[cat] = l2[cat].apply(
+            lambda x: cc_utils.Lasted_Year_USD_Inflated_to_EUR(x, l1_impact=None, level="l2", impact=cat), axis=1
+        )
         logger.info(f"Converting currencies in L3 for category {cat}")
-        l3[cat] = l3[cat].apply(lambda x: cc_utils.USD_to_EUR(x, l1_impact=None, level="l3", impact=cat), axis=1)
+        l3[cat] = l3[cat].apply(
+            lambda x: cc_utils.Lasted_Year_USD_Inflated_to_EUR(x, l1_impact=None, level="l3", impact=cat), axis=1
+        )
 
     logger.info(f"Storing results in {args.output_dir}")
     pathlib.Path(args.output_dir).mkdir(parents=True, exist_ok=True)
