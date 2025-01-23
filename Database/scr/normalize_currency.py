@@ -238,8 +238,7 @@ class CurrencyConversion(CurrencyBase):
             )
             return amount
 
-    # only provide EUR in inflation year in the database
-    def normalize_row_EUR_inflation_year(
+    def convert_to_EUR_inflation_year(
         self, currency: str, amount: float, year: int, event_id: str, level: str, impact: str
     ):
         try:
@@ -351,7 +350,9 @@ class CurrencyConversion(CurrencyBase):
             self.logger.info(f"Could not convert to USD since no year can be inferred. Row: {dict(row)}")
         return row
 
-    def Convert_USD_to_EUR(self, row: pd.DataFrame, l1_impact: None | str, level: str, impact: str) -> pd.DataFrame:
+    def normalize_row_USD_to_EUR(
+        self, row: pd.DataFrame, l1_impact: None | str, level: str, impact: str
+    ) -> pd.DataFrame:
         num_min, num_max, num_unit, num_approx, num_inflation_adjusted, num_inflation_adjusted_year = (
             self.num_min,
             self.num_max,
@@ -380,10 +381,10 @@ class CurrencyConversion(CurrencyBase):
 
         if year:
             if row[num_unit] == self.usd:
-                row[num_min] = self.normalize_row_EUR_inflation_year(
+                row[num_min] = self.convert_to_EUR_inflation_year(
                     row[num_unit], row[num_min], year=year, event_id=row[self.event_id], level=level, impact=impact
                 )
-                row[num_max] = self.normalize_row_EUR_inflation_year(
+                row[num_max] = self.convert_to_EUR_inflation_year(
                     row[num_unit], row[num_max], year=year, event_id=row[self.event_id], level=level, impact=impact
                 )
             row[num_approx] = 1  # adjusted value are all approximations
