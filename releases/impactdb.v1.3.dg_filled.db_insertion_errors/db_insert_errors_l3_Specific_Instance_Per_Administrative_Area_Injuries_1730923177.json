@@ -1,0 +1,52 @@
+[
+  {
+    "Event_ID": "aa9q9F",
+    "Num_Min": "None",
+    "Num_Max": "None",
+    "Num_Approx": "None",
+    "Start_Date_Day": "None",
+    "Start_Date_Month": "None",
+    "Start_Date_Year": "None",
+    "End_Date_Day": "None",
+    "End_Date_Month": "None",
+    "End_Date_Year": "None",
+    "Administrative_Area_Norm": "United States",
+    "Administrative_Area_Type": "administrative:country",
+    "Administrative_Area_GID": "['USA']",
+    "Locations_Norm": "['Oregon, United States']",
+    "Locations_Type": "['administrative:state']",
+    "Locations_GID": "[[]]",
+    "ERROR": {
+      "args": [
+        "CHECK constraint failed: length(Event_ID) == 7"
+      ],
+      "sqlite_errorcode": 275,
+      "sqlite_errorname": "SQLITE_CONSTRAINT_CHECK"
+    }
+  },
+  {
+    "Event_ID": "aa9q9F",
+    "Num_Min": "None",
+    "Num_Max": "None",
+    "Num_Approx": "None",
+    "Start_Date_Day": "None",
+    "Start_Date_Month": "None",
+    "Start_Date_Year": "None",
+    "End_Date_Day": "None",
+    "End_Date_Month": "None",
+    "End_Date_Year": "None",
+    "Administrative_Area_Norm": "United States",
+    "Administrative_Area_Type": "administrative:country",
+    "Administrative_Area_GID": "['USA']",
+    "Locations_Norm": "['Seattle Area German School']",
+    "Locations_Type": "['school:amenity']",
+    "Locations_GID": "[[]]",
+    "ERROR": {
+      "args": [
+        "CHECK constraint failed: length(Event_ID) == 7"
+      ],
+      "sqlite_errorcode": 275,
+      "sqlite_errorname": "SQLITE_CONSTRAINT_CHECK"
+    }
+  }
+]
