@@ -132,10 +132,8 @@ if __name__ == "__main__":
             )
             logger.info(f"Files in {args.system_output}: {list(sys_f.iterdir())}")
 
-
         sys = pd.read_parquet(args.system_output, engine="fastparquet").replace(
             {float("nan"): None, "NULL ": None, "NULL": None, "None": None}
-
         )
 
     except BaseException as err:
