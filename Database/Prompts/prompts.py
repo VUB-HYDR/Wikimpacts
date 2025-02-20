@@ -10,6 +10,10 @@
 # V_3_Country is the version that only run prompt to extract the country in L1
 
 
+# Wikimpacts V2 prompt design
+# V_7 is the first version of wikimpacts V2 prompts, based on Version 1.0 Wikimpacts database, we  
+
+
 V_0: dict = {
     "deaths": [
         """Based on the provided article, which includes the information
@@ -2893,5 +2897,529 @@ V_6: dict = {
         - "Administrative_Areas": "List all countries mentioned in the text affected by {Event_Name}. The list should be formatted as ["Country1", "Country2"]."
         - "Administrative_Areas_Annotation":  "Cite "Info_Box" or the header name from the article provided where you find the information about the affected countries. The output should only include "Info_Box" or the header name."
          Only Give Json output, no extra explanation needed."""
+    ],
+}
+
+
+#for wikimpacts v2, we use structured output and batch api with o3 mini model 
+
+
+def generate_TotalLocationEvent() -> dict:
+   return {
+    "type": "json_schema",
+   
+
+    "json_schema": {
+       "name": "Location_time_response",
+      "strict": True,
+       "schema": {
+        "type": "object",
+        "properties": {
+           
+            "Start_Date": {"type": "string"},
+            "End_Date": {"type": "string"},
+            "Time_Annotation": {"type": "string"},
+            "Administrative_Areas": {
+                "type": "array",
+                "items": {"type": "string"}
+            },
+            "Administrative_Areas_Annotation": {"type": "string"}
+        },
+         "additionalProperties": False,
+        "required": ["Start_Date", "End_Date", "Administrative_Areas" ,"Time_Annotation","Administrative_Areas_Annotation"]}
+    }
+   
+}
+def generate_TotalMainEvent() -> dict:
+   return {
+    "type": "json_schema",
+ 
+    "json_schema": { 
+         "name": "Event_Hazards__response",
+      "strict": True,
+      "schema": {
+        "type": "object",
+        "properties": {
+           
+            "Main_Event": {"type": "string"},
+            "Main_Event_Annotation": {"type": "string"},
+            "Hazards": {"type": "string"},
+         
+            "Hazards_Annotation": {"type": "string"}
+        },
+         "additionalProperties": False,
+        "required": ["Main_Event", "Main_Event_Annotation", "Hazards" ,"Hazards_Annotation"]
+    }}
+}
+def generate_total_direct_schema(impact: str) -> dict:
+    
+    return {
+        "type": "json_schema",
+        "json_schema": {
+            "name": "Direct_impact_response",
+            "strict": True,
+            "schema": {
+                "type": "object",
+                "properties": {   
+                    f"Total_{impact}_Summary": {
+                        "type": "array",
+                        "items": { 
+                            "type": "object",
+                            "properties": {
+                                f"Total_{impact}": {"type": "string"},
+                                f"Total_{impact}_Annotation": {"type": "string"}
+                            },
+                            "required": [f"Total_{impact}", f"Total_{impact}_Annotation"],
+                            "additionalProperties": False
+                        }
+                    },
+                    f"Specific_Instance_Per_Administrative_Area_{impact}": {
+                        "type": "array",
+                        "items": { 
+                            "type": "object",
+                            "properties": {
+                                "Administrative_Area": {"type": "string"},
+                                "Locations": {
+                                    "type": "array",
+                                    "items": {"type": "string"}
+                                },
+                                "Start_Date": {"type": "string"},
+                                "End_Date": {"type": "string"},
+                                "Num": {"type": "string"},
+                                "Annotation": {"type": "string"}
+                            },
+                            "required": [
+                                "Start_Date", "End_Date", "Administrative_Area",
+                                "Annotation", "Locations", "Num"
+                            ],
+                            "additionalProperties": False
+                        }
+                    }
+                },
+                "required": [
+                    f"Total_{impact}_Summary", 
+                    f"Specific_Instance_Per_Administrative_Area_{impact}"
+                ],
+                "additionalProperties": False
+            }
+        }
+    }
+
+def generate_total_monetary_schema(impact: str) -> dict:
+    return {
+        "type": "json_schema",
+        "json_schema": {
+            "name": "Monetary_impact_response",
+            "strict": True,
+            "schema": {
+                "type": "object",
+                "properties": { 
+                    f"Total_{impact}_Summary": {
+                        "type": "array",
+                        "items": { 
+                            "type": "object",
+                            "properties": {
+                                f"Total_{impact}": {"type": "string"},
+                                f"Total_{impact}_Annotation": {"type": "string"},
+                                f"Total_{impact}_Unit": {"type": "string"},
+                                f"Total_{impact}_Inflation_Adjusted": {"type": "string"},
+                                f"Total_{impact}_Inflation_Adjusted_Year": {"type": "string"}
+                            },
+                            "required": [
+                                f"Total_{impact}", f"Total_{impact}_Annotation", 
+                                f"Total_{impact}_Unit", f"Total_{impact}_Inflation_Adjusted",
+                                f"Total_{impact}_Inflation_Adjusted_Year"
+                            ],
+                            "additionalProperties": False
+                        }
+                    }, 
+
+                    f"Specific_Instance_Per_Administrative_Area_{impact}": {
+                        "type": "array",
+                        "items": { 
+                            "type": "object",
+                            "properties": {
+                                "Administrative_Area": {"type": "string"},
+                                "Locations": {
+                                    "type": "array",
+                                    "items": {"type": "string"}
+                                },
+                                "Start_Date": {"type": "string"},
+                                "End_Date": {"type": "string"},
+                                "Num": {"type": "string"},
+                                "Num_Unit": {"type": "string"},
+                                "Num_Inflation_Adjusted": {"type": "string"},
+                                "Num_Inflation_Adjusted_Year": {"type": "string"},
+                                "Annotation": {"type": "string"}
+                            },
+                            "required": [
+                                "Start_Date", "End_Date", "Administrative_Area", "Annotation",
+                                "Locations", "Num", "Num_Unit", 
+                                "Num_Inflation_Adjusted", "Num_Inflation_Adjusted_Year"
+                            ],
+                            "additionalProperties": False
+                        }
+                    }
+                },
+                "required": [
+                    f"Specific_Instance_Per_Administrative_Area_{impact}", 
+                    f"Total_{impact}_Summary"
+                ],
+                "additionalProperties": False
+            }
+        }
+    }
+
+
+"""
+def generate_total_direct_schema(impact: str) -> dict:
+  
+    return {
+        "type": "json_schema",
+        "json_schema": {
+            "name": "Direct_impact_response",
+            "strict": True,
+            "schema": {
+                 "type": "object",
+               "properties": {   
+                  f"Total_{impact}_Summary":   {
+                  "type": "array",
+                     "items": { 
+                              "type": "object",
+                              "properties": {
+                                 f"Total_{impact}": {"type": "string"},
+                                 f"Total_{impact}_Annotation": {"type": "string"}
+                                 }},
+                     "required": [f"Total_{impact}", f"Total_{impact}_Annotation"],
+                     "additionalProperties": False },
+
+                     f"Specific_Instance_Per_Administrative_Area_{impact}":   {
+                              "type": "array",
+                              "items": { 
+                                 "type": "object",
+                                 "properties": {
+                                       "Administrative_Area": {"type": "string"},
+                                       "Locations": {
+                                          "type": "array",
+                                          "items": {"type": "string"}
+                                       },
+                                       "Start_Date": {"type": "string"},
+                                       "End_Date": {"type": "string"},
+                                       "Num": {"type": "string"},
+                                       "Annotation": {"type": "string"}
+                                       }},
+                                 "additionalProperties": False,
+                                 "required": [
+                                          "Start_Date", "End_Date", "Administrative_Area",
+                                          "Annotation", 
+                                          "Locations", "Num"]   
+                  },
+               
+            "additionalProperties": False,
+            "required": [
+                f"Specific_Instance_Per_Administrative_Area_{impact}", f"Total_{impact}_Summary"]
+                }
+         }}
+     }
+
+
+
+def generate_total_monetary_schema(impact: str) -> dict:
+   return {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "Monetary_impact_response",
+      "strict": True,
+       "schema": {
+        "type": "object",
+        "properties": { 
+          f"Total_{impact}_Summary":   {
+                 "type": "array",
+                  "items": { 
+                           "type": "object",
+                           "properties": {
+                                 f"Total_{impact}": {"type": "string"},
+                                 f"Total_{impact}_Annotation": {"type": "string"},
+                                    f"Total_{impact}_Unit": {"type": "string"},
+                                    f"Total_{impact}_Inflation_Adjusted": {"type": "string"},
+                                    f"Total_{impact}_Inflation_Adjusted_Year": {"type": "string"} 
+                                    }},
+                  "additionalProperties": False,
+                  "required": [f"Total_{impact}", f"Total_{impact}_Annotation",f"Total_{impact}_Unit", f"Total_{impact}_Inflation_Adjusted",f"Total_{impact}_Inflation_Adjusted_Year"] },
+          }, 
+
+           f"Specific_Instance_Per_Administrative_Area_{impact}":   {
+                 "type": "array",
+                  "items": { 
+                           "type": "object",
+                           "properties": {
+
+                           "Administrative_Area": {"type": "string"},
+                           "Locations":  {
+                           "type": "array",
+                           "items": {"type": "string"}
+                        },
+                           "Start_Date": {"type": "string"},
+                           "End_Date": {"type": "string"},
+                           "Num": {"type": "string"},
+                           "Num_Unit": {"type": "string"},
+                           "Num_Inflation_Adjusted": {"type": "string"},
+                           "Num_Inflation_Adjusted_Year": {"type": "string"},
+                           "Annotation": {"type": "string"}}},
+
+               "additionalProperties": False,
+            "required": ["Start_Date", "End_Date", "Administrative_Area" ,"Annotation",  "Locations","Num", "Num_Unit", "Num_Inflation_Adjusted",  "Num_Inflation_Adjusted_Year"]
+
+        },
+         "additionalProperties": False,
+        "required": [ f"Specific_Instance_Per_Administrative_Area_{impact}", f"Total_{impact}_Summary"]
+    }}
+}
+
+
+
+"""
+  
+
+
+
+   
+
+
+
+
+  
+
+  
+
+
+V_7: dict = {
+    "affected": [
+        """Based on the information box and header-content article given,
+      extract the number of affected people associated with the {Event_Name}, along with supporting source sections from the article.
+      The affected people information can be splited into 2 parts,
+      the first is the total number of affected people caused by the {Event_Name}, 
+      - "Total_Affected": "The total number of people who were affected, impacted, or influenced in the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         Do not sum the number of affected people in the article to present the total number of affected people,
+         and if no total number of affected people explicitly mentioned or the information is missing, assign 'NULL'."
+      - "Total_Affected_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total affected people. Besides, if the information is not from the Info_Box, cite the setences where you find the information."
+    
+      the second is the specific instance of affected people caused by the {Event_Name}, do not aggregate the information on affected people from different locations; instead, retain the data exactly as presented in the original text, make sure to capture all locations with affected people information,
+      - "Administrative_Area": "Name of the country."
+      - "Locations": "The specific place within the country where the affected people located, and no matter the affected people are in one or several places, order them in a list like ["Location1";"Location2";"Location3"]. If only the country name is available, leave this as 'NULL'. "
+      - "Start_Date": "The start date when the people were affected, if mentioned."
+      - "End_Date":"The end date when the people were affected, if mentioned."
+      - "Num": "The number of people who were affected, impacted, or influenced in the specific location/locations related to the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people')."
+      - "Annotation": "Cite the header name and the setences from the article provided where you find the information about the affected people,time, and locations if available."
+   
+      Take your time to read the whole text provided by the user, ensure to capture all instances of affected people mentioned in the article, including direct and indirect causes. 
+      """
+  
+    
+    ],
+
+    "buildings_damaged": [
+        """Based on information box and header-content pair article given,
+      extract the number of damaged buildings associated with the {Event_Name},
+      covering a wide range of building types such as structures, homes, houses, households, apartments, office buildings, retail stores, hotels, schools, hospitals, and more,
+      along with supporting source sections from the article. The number of damaged buildings information can be splited into 2 parts,
+      the first is the total number of damaged buildings caused by the {Event_Name}, and organize this information in JSON format as follows:
+
+      - "Total_Buildings_Damaged": "The total number of damaged buildings in the {Event_Name}.
+          Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., "hundreds of, "few houses", "several homes").
+          Do not sum the number of damaged buildings in the article to present the total number of damaged buildings,
+          and if no total number of damaged buildings explicitly mentioned or the information is missing, assign 'NULL'."
+      - "Total_Buildings_Damaged_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total number of damaged buildings. Besides, if the information is not from the Info_Box, cite the setences where you find the information."
+   
+      the second is the specific instance of damaged buildings caused by the {Event_Name}, do not aggregate the information on damaged buildings from different locations; instead, retain the data exactly as presented in the original text, make sure to capture all locations with damaged buildings information and organize this information in JSON format as follows:
+
+      - "Administrative_Area": "Name of the country."
+      - "Locations": "The specific place/places within the country where the damaged buildings occurred, and no matter the building damage is in one or several places, order it/them in a list like ["Location1";"Location2";"Location3"]. If only the country name is available, leave this as 'NULL'."
+      - "Start_Date": "The start date when the damaged buildings occurred, if mentioned."
+      - "End_Date":"The end date when the damaged buildings occurred, if mentioned."
+      - "Num": "The number of damaged buildings in the specific location/locations related to the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., "hundreds of, "few houses", "several homes"). "
+      - "Annotation": "Cite the header name and the sentences from the article provided where you find the information about the building damages, time and location if available. "
+      
+       Take your time to read the whole text provided by the user, ensure to capture all instances of damaged buildings mentioned in the article, including direct and indirect causes.  
+      """
+    ],
+
+    "deaths": [
+        """Based on information box and header-content pair article given, extract the number of deaths associated with the {Event_Name},
+      along with supporting source sections from the article. The death information can be splited into 2 parts,
+      the first is the total number of deaths caused by the {Event_Name}, 
+      - "Total_Deaths": "The total number of people who died in the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         Do not sum the number of death in the article to present the total number of death, and if no total number of death explicitly mentioned or the information is missing, assign 'NULL'."
+      - "Total_Deaths_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total death. Besides, if the information is not from the Info_Box, cite the setences where you find the information."
+      the second is the specific instance of deaths caused by the {Event_Name}, do not aggregate the information on deaths from different locations; instead, retain the data exactly as presented in the original text, make sure to capture all locations with death information,
+      - "Administrative_Area": "Name of the country."
+      - "Locations": "The specific place within the country where the deaths occurred, and no matter the deaths are in one or several places, order them in a list like ["Location1";"Location2";"Location3"]. If only the country name is available, leave this as 'NULL'."
+      - "Start_Date": "The start date when the deaths occurred, if mentioned."
+      - "End_Date":"The end date when the deaths occurred, if mentioned."
+      - "Num": "The number of people who died in the specific location/locations related to the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people'). "
+      - "Annotation": "Cite the header name and the sentences from the article provided where you find the information about the deaths, time and locations if available."
+       }}]
+       Take your time to read the whole text provided by the user, ensure to capture all instances of death mentioned in the article, including direct and indirect causes. Only Give Json output, no extra explanation needed. 
+"""
+    ],
+    "displaced": [
+        """Based on information box and header-content pair article given,
+      extract the number of displacement associated with the {Event_Name}, along with supporting source sections from the article.
+      The displacement information can be splited into 2 parts,
+      the first is the total number of displacement caused by the {Event_Name}, 
+      - "Total_Displaced": "The total number of people who were displaced, evacuated, transfered/moved to the shelter, relocated or fleed in the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         Do not sum the number of displacement in the article to present the total number of displacement,
+         and if no total number of displacement explicitly mentioned or the information is missing, assign 'NULL'."
+      - "Total_Displaced_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total displacement. Besides, if the information is not from the Info_Box, cite the setences where you find the information."
+
+      the second is the specific instance of displacement caused by the {Event_Name}, do not aggregate the information on displacement from different locations; instead, retain the data exactly as presented in the original text, make sure to capture all locations with displacement information:
+      - "Administrative_Area": "Name of the country."
+      - "Locations": "The specific place within the country where the displacement occurred, and no matter the displacement is in one or several places, order them in a list like ["Location1";"Location2";"Location3"]. If only the country name is available, leave this as 'NULL"
+      - "Start_Date": "The start date when the displacement occurred, if mentioned."
+      - "End_Date":"The end date when the displacement occurred, if mentioned."
+      - "Num": "The number of people who were displaced, evacuated, transfered/moved to the shelter, relocated or fleed in the specific location/locations related to the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people')."
+      - "Annotation": "Cite the header name and the sentences from the article provided where you find the information about the displacement, time and locations. "
+       Take your time to read the whole text provided by the user, ensure to capture all instances of displacement mentioned in the article, including direct and indirect causes.  """
+    ],
+
+    "homeless": [
+        """Based on information box and header-content pair article given,
+      extract the number of homelessness associated with the {Event_Name}, along with supporting source sections from the article.
+      The homelessness information can be splited into 2 parts,
+      the first is the total number of homelessness caused by the {Event_Name}, 
+      - "Total_Homeless": "The total number of people who were homeless, lost their homes, experienced house damage, had their homes destroyed, were unhoused, without shelter, houseless, or shelterless in the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         Do not sum the number of homelessness in the article to present the total number of homelessness,
+         and if no total number of homelessness explicitly mentioned or the information is missing, assign 'NULL'."
+      - "Total_Homeless_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total homelessness.  Besides, if the information is not from the Info_Box, cite the setences where you find the information."
+      the second is the specific instance of homelessness caused by the {Event_Name}, do not aggregate the information on homelessness from different locations; instead, retain the data exactly as presented in the original text, make sure to capture all locations with homelessness information:
+      - "Administrative_Area": "Name of the country."
+      - "Locations": "The specific place within the country where the homelessness occurred, and no matter the homelessness is in one or several places, order them in a list like ["Location1";"Location2";"Location3"]. If only the country name is available, leave this as 'NULL'."
+      - "Start_Date": "The start date when the homelessness occurred, if mentioned."
+      - "End_Date":"The end date when the homelessness occurred, if mentioned."
+      - "Num": "The number of people who were homeless, lost their homes, experienced house damage, had their homes destroyed, were unhoused, without shelter, houseless, or shelterless in the specific location/locations related to the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people'). "
+      - "Annotation": "Cite the header name and the sentences from the article provided where you find the information about the homelessness, time and location if available."
+       Take your time to read the whole text provided by the user, ensure to capture all instances of homelessness mentioned in the article, including direct and indirect causes.  """
+    ],
+    "injuries": [
+        """Based on information box and header-content pair article given,
+      extract the number of non-fatal injuries associated with the {Event_Name}, along with supporting source sections from the article.
+      The non-fatal injuries information can be splited into 2 parts,
+      the first is the total number of non-fatal injuries caused by the {Event_Name}, 
+      - "Total_Injuries": "The total number of people who got injured, hurt, wound, or hospitalized (excluding death) in the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         Do not sum the number of non-fatal injuries in the article to present the total number of non-fatal injuries,
+         and if no total number of non-fatal injuries explicitly mentioned or the information is missing, assign 'NULL'."
+      - "Total_Injuries_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total non-fatal injuries. Besides, if the information is not from the Info_Box, cite the setences where you find the information."
+      the second is the specific instance of non-fatal injuries caused by the {Event_Name}, do not aggregate the information on injuries from different locations; instead, retain the data exactly as presented in the original text, make sure to capture all locations with non-fatal injuries information:
+      - "Administrative_Area": "Name of the country."
+      - "Locations": "The specific place within the country where the non-fatal injuries occurred, and no matter the non-fatal injuries are in one or several places, order them in a list like ["Location1";"Location2";"Location3"]. If only the country name is available, leave this as 'NULL'. "
+      - "Start_Date": "The start date when the non-fatal injuries occurred, if mentioned."
+      - "End_Date":"The end date when the non-fatal injuries occurred, if mentioned."
+      - "Num": "The number of people who got injured, hurt, wound, or hospitalized (excluding death) in the specific location/locations related to the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people'). "
+      - "Annotation": "Cite the header name and the sentences from the article provided where you find the information about the non-fatal injuries, time and locations if available. "
+       Take your time to read the whole text provided by the user, ensure to capture all instances of non-fatal injuries mentioned in the article, including direct and indirect causes.  """
+    ],
+    "insured_damage": [
+        """
+           Based on information box and header-content pair article given,
+            extract the insured damage information associated with the {Event_Name}, along with supporting source sections from the article.
+            The insured damage information can be splited into 2 parts,
+            the first is the total insured damage caused by the {Event_Name}, including damage or loss to property, belongings, or persons covered under the terms of an insurance policy,
+            - "Total_Insured_Damage": "The total amount of insured damage and make sure the information extracted for this containing the keyword "insured" or "insurance".
+               Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion', "minimal").
+               Do not sum the number of insured damage in the article to present the total number of insured damage,
+               and if no total number of insured damage explicitly mentioned or the information is missing, assign 'NULL'."
+            - "Total_Insured_Damage_Unit": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Insured_Damage_Inflation_Adjusted": "Indicate 'Yes' if the total insured damage amount has been adjusted for inflation; otherwise "No", If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Insured_Damage_Inflation_Adjusted_Year": "The year of inflation adjustment for the total insured damage, if applicable; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Insured_Damage_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total insured damage. Besides, if the information is not from the Info_Box, cite the setences where you find the information."
+              the second is the specific instance of insured damage caused by the {Event_Name}, do not aggregate the information on insured damage from different locations; instead, retain the data exactly as presented in the original text, make sure to capture all locations with insured damage information:
+              - "Specific_Instance_Per_Administrative_Area_Insured_Damage":[{{
+              - "Administrative_Area": "Name of the country."
+              - "Locations": "The specific place/places within the country where the insured damage occurred, and no matter the insured damage is in one or several places, order it/them in a list like ["Location1";"Location2";"Location3"]. If only the country name is available, leave this as 'NULL'. "
+              - "Start_Date": "The start date when the insured damage occurred, if mentioned."
+              - "End_Date":"The end date when the insured damage occurred, if mentioned."
+              - "Num": "The amount of insured damage in the specific location/locations related to the {Event_Name} and make sure the information extracted for this containing the keyword "insured" or "insurance".
+                 Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion')."
+              - "Num_Unit": "The currency of the insured damage, like USD, EUR. "
+              - "Num_Inflation_Adjusted": "Indicate 'Yes' if the insured damage amount has been adjusted for inflation; otherwise "No"."
+              - "Num_Inflation_Adjusted_Year": "The year of inflation adjustment for the insured damage, if applicable."
+              - "Annotation": "Cite the header name and sentences from the article provided where you find the information about the insured damage, time and locations if available. "
+             Take your time to read the whole text provided by the user, ensure to capture all instances of insured damage mentioned in the article, including direct and indirect causes. """
+    ],
+    "damage": [
+        """
+            Based on information box and header-content pair article given,
+            extract the economic damage information associated with the {Event_Name}, along with supporting source sections from the article.
+            The economic damage information can be splited into 2 parts,
+            the first is the total economic damage caused by the {Event_Name},
+            - "Total_Damage": "The total amount of economic damage.
+               Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion', "minimal").
+               Do not sum the number of economic damage in the article to present the total number of economic damage,
+               and if no total number of economic damage explicitly mentioned or the information is missing, assign 'NULL'."
+            - "Total_Damage_Unit": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Damage_Inflation_Adjusted": "Indicate 'Yes' if the total economic damage amount has been adjusted for inflation; otherwise "No", If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Damage_Inflation_Adjusted_Year": "The year of inflation adjustment for the total economic damage, if applicable; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Damage_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total economic damage. Besides, if the information is not from the Info_Box, cite the setences where you find the information."
+              the second is the specific instance of economic damage in the sub-national level caused by the {Event_Name}, do not aggregate the information on economic damage from different locations; instead, retain the data exactly as presented in the original text, make sure to capture all locations with economic damage information:
+              - "Administrative_Area": "Name of the country."
+              - "Locations": "The specific place/places within the country where the economic damage occurred, and no matter the economic damage is in one or several places, order it/them in a list like ["Location1";"Location2";"Location3"]. If only the country name is available, leave this as 'NULL'."
+              - "Start_Date": "The start date when the economic damage occurred, if mentioned."
+              - "End_Date":"The end date when the economic damage occurred, if mentioned."
+              - "Num": "The amount of economic damage in the specific location/locations related to the {Event_Name}.
+                 Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion')."
+              - "Num_Unit": "The currency of the economic damage, like USD, EUR. "
+              - "Num_Inflation_Adjusted": "Indicate 'Yes' if the economic damage amount has been adjusted for inflation; otherwise "No"."
+              - "Num_Inflation_Adjusted_Year": "The year of inflation adjustment for the economic damage, if applicable."
+              - "Annotation": "Cite the header name and the sentences from the article provided where you find the information about the economic damage, time and locations if available."
+
+                 }}]
+             Take your time to read the whole text provided by the user, ensure to capture all instances of economic damage mentioned in the article, including direct and indirect causes. """
+    ],
+
+
+    "main_event_hazard": [
+        """
+         Based on information box and header-content pair article,
+         extract main_event category and hazard information associated with the {Event_Name}, along with supporting source sections from the article.
+         Below is the Main_Event--Hazard association table,
+         Main Event: Flood; Hazard: Flood
+         Main Event: Extratropical Storm/Cyclone; Hazards: Wind; Flood; Blizzard; Hail
+         Main Event: Tropical Storm/Cyclone; Hazards: Wind; Flood; Lightning
+         Main Event: Extreme Temperature; Hazards: Heatwave; Cold Spell
+         Main Event: Drought; Hazard: Drought
+         Main Event: Wildfire; Hazard: Wildfire
+         Main Event: Tornado; Hazard: Wind
+         first identify the Main_Event category information from the text, 
+           - "Main_Event": "identify the event category of the {Event_Name} referring the Main_Event--Hazard table, and only one Main_Event category should be assigned."
+           - "Main_Event_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the Main_Event category. Besides, if the information is not from the Info_Box, cite the setences where you find the information."
+         based on the result of the Main_Event category from the previous step and the Main_Event--Hazard table, identify the hazard information and organize this information in JSON format as follows:
+           - "Hazards": "Identify the hazards of the {Event_Name}, make sure the hazards are associated with the Main_Event category from the table, and if more than one hazard is detected from the text, separate them with '|'. "
+           - "Hazards_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the hazard information. Besides, if the information is not from the Info_Box, cite the setences where you find the information."
+        
+        Take your time to read the whole text provided by the user, and answer the questions."""
+    ],
+    # in this version, we ask the model to extract all the affected locations in L1, but in the post-processing, only extract the countries in this field.
+    "location_time": [
+        """
+        Based on information box and header-content pair article, extract time and location information associated with the {Event_Name}, along with supporting source sections from the article.
+        the first is to identify the time information of the event {Event_Name}:
+        - "Start_Date": "The start date of the event. If the specific day or month is not known, include at least the year if it's available. If no time information is available, enter 'NULL'. If the exact date is not clear (e.g., "summer of 2021", "June 2020"), please retain the text as mentioned."
+        - "End_Date": "The end date of the event. If the specific day or month is not known, include at least the year if it's available. If no time information is available, enter 'NULL'. If the exact date is not clear (e.g., "summer of 2021", "June 2020"), please retain the text as mentioned."
+        - "Time_Annotation": "Cite "Info_Box" or the header name or the sentences from the article provided where you find the information about the time."
+        the second is to identify all countries affected by {Event_Name}:
+        - "Administrative_Areas": "List all countries mentioned in the text affected by {Event_Name}. The list should be formatted as ["country1", "country2"]."
+        - "Administrative_Areas_Annotation":  "Cite "Info_Box" or the header name or the sentences from the article provided where you find the information about the affected countries."
+         Take your time to read the whole text provided by the user, and answer the questions."""
     ],
 }

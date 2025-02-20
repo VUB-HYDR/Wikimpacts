@@ -542,6 +542,7 @@ class NormalizeLocation:
             return gid_0[0]
         except:
             return None
+    
 
     @staticmethod
     def extract_locations(

@@ -534,11 +534,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                 )
         logger.info(f"Dropping empty rows in {col}")
         rows_before = sub_event.shape[0]
-        null_mask = (
-            sub_event[[x for x in sub_event.columns if x != "Event_ID"]]
-            .progress_apply(lambda row: [True if v in (None, [], float("nan")) else False for _, v in row.items()])
-            .all(axis=1)
-        )
+        null_mask = sub_event[[x for x in sub_event.columns if x != "Event_ID"]].isnull().all(axis=1)
         sub_event = sub_event[~null_mask]
         rows_after = sub_event.shape[0]
         logger.info(f"Dropped {rows_before-rows_after} row(s) in {col}")
