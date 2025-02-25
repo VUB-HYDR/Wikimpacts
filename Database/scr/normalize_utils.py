@@ -10,6 +10,7 @@ import pycountry
 import shortuuid
 from dateparser.date import DateDataParser
 from dateparser.search import search_dates
+from datetime import datetime
 from iso4217 import Currency
 from spacy import language as spacy_language
 from unidecode import unidecode
@@ -102,9 +103,14 @@ class NormalizeUtils:
                 return (None, None, None)
         return (None, None, None)
 
+
+ 
+   
+    
+    
     @staticmethod
     def unpack_col(df: pd.DataFrame, columns: list = []) -> pd.DataFrame:
-        """Unpacks Total_Summary_* columns"""
+        
         for c in columns:
             json_normalized_df = pd.json_normalize(df[c])
             cat = c.split("Total_Summary_")[1]
