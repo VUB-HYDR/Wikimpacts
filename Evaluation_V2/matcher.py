@@ -34,31 +34,161 @@ class SpecificInstanceMatcher:
     def create_pad(specific_instance: dict) -> dict:
         padded = {}
         for k in specific_instance.keys():
-            # preserve "Event_D"
+            # preserve "Event_ID"
             padded[k] = specific_instance[k] if k == "Event_ID" else None
         return padded
 
     def calc_similarity(self, gold_instance: dict, sys_list: list) -> list[float]:
-        score_list: float = []
+        score_list = []
+        event_id = gold_instance.get("Event_ID", "Unknown")
+
+        for si in sys_list:
+            scores = []
+            skip_instance = False  # Flag to skip further processing for this instance
+
+            for k in gold_instance.keys():
+                try:
+                    # Check str_cat and set_cat first
+                    if k in self.str_cat or k in self.set_cat:
+                        r1 = self.comp.string(gold_instance[k], si[k]) if k in self.str_cat else None
+                        r2 = self.comp.sequence(gold_instance[k], si[k]) if k in self.set_cat else None
+
+                        valid_scores = [x for x in [r1, r2] if x is not None]
+                        r = min(valid_scores) if valid_scores else None
+                        
+
+                        # If r is not None and not 0, skip this instance and set score to 0
+                        if r is not None and r != 0:
+                            scores = [0]  # Set score to 0 for this instance
+                            skip_instance = True
+                            break  # Exit the field loop for this instance
+
+                        if r == 0:
+                            continue  # Skip to the next field
+
+                    # Handle GID_cat and list_cat
+                    if k in self.GID_cat or k in self.list_cat:
+                        r1 = self.comp.compare_gid_lists(gold_instance[k], si[k]) if k in self.GID_cat else None
+                        r2 = self.comp.sequence(gold_instance[k], si[k]) if k in self.list_cat else None
+                        valid_scores = [x for x in [r1, r2] if x is not None]
+                        r = min(valid_scores) if valid_scores else None
+                        
+
+                    # Handle int_cat
+                    if k in self.int_cat:
+                        try:
+                            if isinstance(int(gold_instance[k]), int):
+                                r = self.comp.integer(gold_instance[k], si[k])
+                               
+                        except:
+                            pass
+
+                    # Append the computed score
+                    if r is not None:
+                        scores.append(1 - (r * self.int_cat.get(k)))  # Default weight of 1.0 if key not found
+                        
+
+                except Exception as e:
+                    if k != "Event_ID":
+                        self.logger.debug(f"Unsupported column name: {k} will be ignored during matching. Error: {e}")
+
+            # If the instance was skipped, append 0; otherwise, append the mean score
+            if skip_instance:
+                score_list.append(0)
+            else:
+                score_list.append(mean(scores) if scores else 0)
+
+        
+        return score_list
+        """
+    def calc_similarity(self, gold_instance: dict, sys_list: list) -> list[float]:
+        score_list = []
+        event_id = gold_instance.get("Event_ID", "Unknown")
         for si in sys_list:
             scores = []
             for k in gold_instance.keys():
-                if k in self.int_cat:
-                    # Only include gold_instance[k] from numerical categories
-                    # For monetary categories, gold_instance[k] is a list
-                    # For numerical caterogies, it is always an int (or can be cast to an int)
+                try: 
+                    if k in self.str_cat or k in self.set_cat:
+                        r1 = self.comp.string(gold_instance[k], si[k]) if k in self.str_cat else None
+                        r2 = self.comp.sequence(gold_instance[k], si[k]) if k in self.set_cat else None
+                        
+                        valid_scores = [x for x in [r1, r2] if x is not None]
+                        r = min(valid_scores) if valid_scores else None
+                        print(f"Event_ID: {event_id}, field :{k}, admin score: {r}")
+                    if r is not None and r != 0:
+                        scores=len[0] * len(sys_list)
+                        score_list.append(mean(scores))
+                        return score_list
+                        
+                    if r == 0:
+                            continue
+                except:  
+               
+                    if k in self.GID_cat or k in self.list_cat:
+                        r1 = self.comp.compare_gid_lists(gold_instance[k], si[k]) if k in self.GID_cat else None
+                        r2 = self.comp.sequence(gold_instance[k], si[k]) if k in self.list_cat else None
+                        valid_scores = [x for x in [r1, r2] if x is not None]
+                        r = min(valid_scores) if valid_scores else None
+                        print(f"Event_ID: {event_id}, field :{k},location score: {r}")
+                    
+                    if k in self.int_cat:
+                        try:
+                            if isinstance(int(gold_instance[k]), int):
+                                r = self.comp.integer(gold_instance[k], si[k])
+                                print(f"Event_ID: {event_id}, field :{k},int score: {r}")
+                        except:
+                            pass
+
                     try:
-                        if isinstance(int(gold_instance[k]), int):
-                            r = self.comp.integer(gold_instance[k], si[k])
+                        scores.append(1 - (r * self.int_cat[k]))
+                    
+                    except Exception:
+                        if k != "Event_ID":
+                            self.logger.debug(f"Unsupported column name: {k} will be ignored during matching.")
+
+                score_list.append(mean(scores))
+        print(f"Event_ID: {event_id},  score list: {score_list}")
+        return score_list
+
+        def calc_similarity(self, gold_instance: dict, sys_list: list) -> list[float]:
+            score_list: float = []
+            for si in sys_list:
+                scores = []
+                for k in gold_instance.keys():
+                    try: 
+                        if k in self.str_cat or k in self.set_cat:
+                            r1, r2 = None, None  # Initialize r1 and r2
+
+                            if k in self.str_cat:
+                                r1 = self.comp.string(gold_instance[k], si[k])
+
+                            if k in self.set_cat:
+                                r2 = self.comp.sequence(gold_instance[k], si[k])
+
+                            # If either r1 or r2 is 0, set r to 0
+                            if (r1 is not None and r1 == 0) or (r2 is not None and r2 == 0):
+                                r = 0
+                            else:
+                                # Get the minimum non-None value
+                                valid_scores = [x for x in [r1, r2] if x is not None]
+                                r = min(valid_scores) if valid_scores else None
+
+                            # If the minimum score is not 0, treat as mismatch and return similarity score of 1 for the entire list
+                            if r is not None and r != 0:
+                                score_list= [1] * len(sys_list)
+                                return score_list
                     except:
-                        pass
-                elif k in self.str_cat or k in self.set_cat:
+                            # If the minimum score is 0, continue with the next comparisons
+                            if r == 0:
+                                break
+
+                    if k in self.GID_cat or k in self.list_cat:
                         r1, r2 = None, None  # Initialize r1 and r2
 
-                        if k in self.str_cat:
-                            r1 = self.comp.string(gold_instance[k], si[k])
+                        if k in self.GID_cat:
+                            r1 = self.comp.compare_gid_lists(gold_instance[k], si[k])
 
-                        if k in self.set_cat:
+                        if k in self.list_cat:
                             r2 = self.comp.sequence(gold_instance[k], si[k])
 
                         # If either r1 or r2 is 0, set r to 0
@@ -69,35 +199,28 @@ class SpecificInstanceMatcher:
                             valid_scores = [x for x in [r1, r2] if x is not None]
                             r = min(valid_scores) if valid_scores else None
 
-                elif k in self.GID_cat or k in self.list_cat:
-                    r1, r2 = None, None  # Initialize r1 and r2
+                    if k in self.int_cat:
+                        # Only include gold_instance[k] from numerical categories
+                        # For monetary categories, gold_instance[k] is a list
+                        # For numerical caterogies, it is always an int (or can be cast to an int)
+                        try:
+                            if isinstance(int(gold_instance[k]), int):
+                                r = self.comp.integer(gold_instance[k], si[k])
+                        except:
+                            pass
 
-                    if k in self.GID_cat:
-                        r1 = self.comp.compare_gid_lists(gold_instance[k], si[k])
+                    try:
+                        scores.append(1 - (r * self.int_cat[k]))
+                        del r
+                    except Exception:
+                        if k != "Event_ID":
+                            self.logger.debug(f"Unsupported column name: {k} will be ignored during matching.")
 
-                    if k in self.list_cat:
-                        r2 = self.comp.sequence(gold_instance[k], si[k])
-
-                    # If either r1 or r2 is 0, set r to 0
-                    if (r1 is not None and r1 == 0) or (r2 is not None and r2 == 0):
-                        r = 0
-                    else:
-                        # Get the minimum non-None value
-                        valid_scores = [x for x in [r1, r2] if x is not None]
-                        r = min(valid_scores) if valid_scores else None
-
-                try:
-                    scores.append(1 - (r * self.int_cat[k]))
-                    del r
-                except Exception:
-                    if k != "Event_ID":
-                        self.logger.debug(f"Unsupported column name: {k} will be ignored during matching.")
-
-            score_list.append(mean(scores))
+                score_list.append(mean(scores))
 
         # index of mean score corresponds to sys_list item
         return score_list
-
+        """
     def schema_checker(self, gold_list: list[dict], sys_list: list[dict]) -> bool:
         # in case the sys output or gold is an empty list
         if len(gold_list) == 0 or len(sys_list) == 0:
@@ -126,7 +249,11 @@ class SpecificInstanceMatcher:
         if self.schema_checker(gold_list, sys_list) != True:
             self.logger.error("Please check the column names in your gold and sys files.")
             raise BaseException
+        event_id = "Unknown"  # Default value in case of failure
 
+        if isinstance(gold_list, list) and gold_list:  # Ensure gold_list is a non-empty list
+            if isinstance(gold_list[0], dict):  # Ensure first item is a dictionary
+                event_id = gold_list[0].get("Event_ID", "Unknown")
         gold, sys, similarity, gold_matched, sys_matched = [], [], [], [], []
         similarity_matrix = [self.calc_similarity(si, sys_list) for si in gold_list]
         best_matches = [
@@ -136,6 +263,7 @@ class SpecificInstanceMatcher:
             if similarity_matrix[gi][si] > self.threshold
         ]
         best_matches.sort(key=lambda x: x[2], reverse=True)
+        print(f"Event_ID: {event_id}, best_matches: {best_matches}")
 
         # find the best matches in the similarity matrix
         for gi, si, sim in best_matches:
@@ -164,7 +292,8 @@ class SpecificInstanceMatcher:
         for ds in [gold, sys]:
             counter = 0
             for si in ds:
-                si["Event_ID"] = f"{si['Event_ID']}-{counter}"
+                event_id = si.get("Event_ID", "Unknown")
+                si["Event_ID"] = f"{event_id}-{counter}"
                 counter += 1
 
         return (gold, sys)

@@ -162,7 +162,7 @@ class Comparer:
 
         # Penalty for length difference: remaining unmatched elements in the longer list
         length_diff = abs(len(gid_list_1) - len(gid_list_2))
-        length_penalty = length_diff * 0.001  # Each extra unmatched element adds a small penalty
+        length_penalty = length_diff * 0.0000000001  # Each extra unmatched element adds a small penalty
 
         # Normalize the score based on comparisons and add length penalty
         return ((score + length_penalty)/ max(comparisons, 1)) 
