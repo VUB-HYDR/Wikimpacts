@@ -14,3 +14,6 @@ Based on the evaluation result of V3 cross these experiments, we select setting 
 For the V4 and V5, we only use setting 2 for evaluation.
 
 For double annotation, we have two annotators: one for the gold data and one for the output data. The annotator for the gold data worked prior to the implementation of the L1-3 guideline, while the annotator for the output data followed the new guideline. The L2 and L3 information in the gold data is extracted from the Location field. Information at the country level is assigned to L2, while sub-national level information is assigned to L3.
+
+
+For Wikimpacts 2.0, the L3 evaluation incorporates an updated matching algorithm that prioritizes matching the **Administrative_Area** first. If the **Administrative_Area** does not match, further matching is halted. The rationale behind this approach is that if an impact did not occur in the same country, numerical comparisons would not be meaningful.
