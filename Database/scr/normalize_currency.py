@@ -32,6 +32,7 @@ class CurrencyBase:
 
         # currencies
         self.usd = "USD"
+        self.eur = "EUR"
 
     @staticmethod
     def safe_isnan(x):
@@ -237,6 +238,36 @@ class CurrencyConversion(CurrencyBase):
             )
             return amount
 
+    def convert_to_EUR_inflation_year(
+        self, currency: str, amount: float, year: int, event_id: str, level: str, impact: str
+    ):
+        try:
+            if isinstance(year, str) or isinstance(year, float):
+                year = int(year)
+            if isinstance(amount, str):
+                amount = float(amount)
+
+            assert year, "Year is missing"
+            assert (isinstance(amount, float) or isinstance(amount, int)) and not self.safe_isnan(
+                amount
+            ), f"Amount is missing or invalid: '{amount}' of type '{type(amount)}'"
+            assert currency, "Currency is missing"
+
+            # always use the inflation year of EUR-USD conversion rate
+            # extract rate
+            rate = (
+                self.currency_conversion_yearly_avg[self.eur]
+                .loc[self.currency_conversion_yearly_avg[self.eur].Year == year]
+                .Rate.tolist()[0]
+            )
+            return round(amount * rate)
+
+        except BaseException as err:
+            self.logger.debug(
+                f"{event_id} - {level} - {impact}: Could not convert to EUR (yearly average) for year '{year}', currency '{currency}' and amount '{amount}'. Error: {err}"
+            )
+            return amount
+
     def normalize_row_USD(self, row: pd.DataFrame, l1_impact: None | str, level: str, impact: str) -> pd.DataFrame:
         num_min, num_max, num_unit, num_approx, num_inflation_adjusted, num_inflation_adjusted_year = (
             self.num_min,
@@ -317,4 +348,49 @@ class CurrencyConversion(CurrencyBase):
             row[num_inflation_adjusted_year] = year
         else:
             self.logger.info(f"Could not convert to USD since no year can be inferred. Row: {dict(row)}")
+        return row
+
+    def normalize_row_USD_to_EUR(
+        self, row: pd.DataFrame, l1_impact: None | str, level: str, impact: str
+    ) -> pd.DataFrame:
+        num_min, num_max, num_unit, num_approx, num_inflation_adjusted, num_inflation_adjusted_year = (
+            self.num_min,
+            self.num_max,
+            self.num_unit,
+            self.num_approx,
+            self.num_inflation_adjusted,
+            self.num_inflation_adjusted_year,
+        )
+        if l1_impact in self.monetary_categories:
+            num_min, num_max, num_unit, num_approx, num_inflation_adjusted, num_inflation_adjusted_year = (
+                self.t_num_min.format(l1_impact),
+                self.t_num_max.format(l1_impact),
+                self.t_num_unit.format(l1_impact),
+                self.t_num_approx.format(l1_impact),
+                self.t_num_inflation_adjusted.format(l1_impact),
+                self.t_num_inflation_adjusted_year.format(l1_impact),
+            )
+
+        if not row[num_unit]:
+            self.logger.debug(f"Row has no currency. The row will be returned unchanged: {dict(row)}")
+            return row
+        year = None
+        # use the inflation adjustment year
+        if row[num_inflation_adjusted_year] and row[num_inflation_adjusted]:
+            year = row[num_inflation_adjusted_year]
+
+        if year:
+            if row[num_unit] == self.usd:
+                row[num_min] = self.convert_to_EUR_inflation_year(
+                    row[num_unit], row[num_min], year=year, event_id=row[self.event_id], level=level, impact=impact
+                )
+                row[num_max] = self.convert_to_EUR_inflation_year(
+                    row[num_unit], row[num_max], year=year, event_id=row[self.event_id], level=level, impact=impact
+                )
+            row[num_approx] = 1  # adjusted value are all approximations
+            row[num_unit] = self.eur
+            row[num_inflation_adjusted] = 1
+            row[num_inflation_adjusted_year] = year
+        else:
+            self.logger.info(f"Could not convert to EUR since no inflation year can be inferred. Row: {dict(row)}")
         return row
