@@ -136,14 +136,14 @@ if __name__ == "__main__":
     # list of keys for prompt of basic and impact information
     prompt_basic_list = ["location_time", "main_event_hazard"]
     prompt_impact_list = [
-        "deaths",
-        "homeless",
-        "injuries",
-        "buildings_damaged",
-        "displaced",
-        "affected",
-        "damage",
-        "insured_damage",
+        "Deaths",
+        "Homeless",
+        "Injuries",
+        "Buildings_Damaged",
+        "Displaced",
+        "Affected",
+        "Damage",
+        "Insured_Damage",
     ]
 
     # Define the file path for the JSONL file

@@ -117,7 +117,48 @@ default_weights = {
         "Num_Min": 1,
         "Num_Max": 1,
     },
+     "l3_numerical_v2": {
+        "Event_ID": 0,
+        # Date
+        "Start_Date_Day": 0.1,
+        "Start_Date_Month": 0.15,
+        "Start_Date_Year": 0.2,
+        "End_Date_Day": 0.1,
+        "End_Date_Month": 0.15,
+        "End_Date_Year": 0.2,
+        # Area
+        "Administrative_Area_Norm": 1,  # str
+         "Administrative_Area_GID": 1,
+        "Locations_Norm": 1,  # list
+"Locations_GID": 1,  # list
+        # Impact
+        "Num_Min": 1,
+        "Num_Max": 1,
+    },
+        "l3_monetary_v2": {
+        "Event_ID": 0,
+        # Date
+        "Start_Date_Day": 0.1,
+        "Start_Date_Month": 0.15,
+        "Start_Date_Year": 0.2,
+        "End_Date_Day": 0.1,
+        "End_Date_Month": 0.15,
+        "End_Date_Year": 0.2,
+        # Area
+        "Administrative_Area_Norm": 1,  # str
+        "Locations_Norm": 1,  # list
+          "Administrative_Area_GID": 1,
+      
+        "Locations_GID": 1,  # list
+        # Impact
+        "Num_Min": 1,
+        "Num_Max": 1,
+        "Num_Unit": 1,
+        "Num_Inflation_Adjusted": 0.2,
+        "Num_Inflation_Adjusted_Year": 0.2,
+    },
 }
+
 
 weights = {
     "nlp4climate": {
@@ -137,15 +178,13 @@ weights = {
         "End_Date_Year": 1,
         "Country_Norm": 1,
     },
-    "Homeless": {
-        # Homeless
-        "Event_ID": 0,
-        "Total_Homeless_Min": 1,
-        "Total_Homeless_Max": 1,
-    },
+   
     "ESSD_2024_l1": default_weights["l1"],  # default weights
     "ESSD_2024_l2_numerical": default_weights["l2_numerical"],  # default weights
     "ESSD_2024_l2_monetary": default_weights["l2_monetary"],  # default weights
     "ESSD_2024_l3_numerical": default_weights["l3_numerical"],  # default weights
     "ESSD_2024_l3_monetary": default_weights["l3_monetary"],  # default weights
+    "WikimpactsV2_l1": default_weights["l1"],  # default weights
+     "WikimpactsV2_l3_numerical": default_weights["l3_numerical_v2"],  # default weights
+    "WikimpactsV2_l3_monetary": default_weights["l3_monetary_v2"],  # default weights
 }
