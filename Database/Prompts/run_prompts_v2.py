@@ -11,7 +11,7 @@ import openai
 from dotenv import load_dotenv
 from pydantic import BaseModel, create_model
 from typing import List
-from Database.Prompts.prompts import V_7 as target_prompts
+from Database.Prompts.prompts import V_7_1 as target_prompts
 from Database.Prompts.prompts import  generate_total_direct_schema, generate_total_monetary_schema, generate_TotalMainEvent, generate_TotalLocationEvent
 from Database.scr.log_utils import Logging
 
@@ -202,7 +202,7 @@ if __name__ == "__main__":
                     event_name = str(item.get("Event_Name"))
                     info_box = str(item.get("Info_Box"))
                     whole_text = process_whole_text(item)
-                    if "damage" in key and "building" not in key:
+                    if "Damage" in key and "Building" not in key:
                         # Iterate over each prompt in the list and format them
                         for idx, prompt_template in enumerate(prompt_list_for_key, start=1):
                             
@@ -310,7 +310,7 @@ if __name__ == "__main__":
 
     elif args.prompt_category == "basic":
         # Process data for basic
-        basic_data = process_data(raw_text, target_prompts, prompt_basic_list, batch_gpt_basic)
+        basic_data = process_data(raw_text, target_prompts, prompt_basic_list)
         process_save_upload(
             basic_data,
             jsonl_file_path_basic,
