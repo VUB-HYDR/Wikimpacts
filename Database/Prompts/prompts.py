@@ -2968,10 +2968,10 @@ def generate_total_direct_schema(impact: str) -> dict:
                             "properties": {
                                 f"Total_{impact}": {"type": "string"},
                                 f"Total_{impact}_Annotation": {"type": "string"}
-                            ,
+                                },
                             "required": [f"Total_{impact}", f"Total_{impact}_Annotation"],
                             "additionalProperties": False
-                        }
+                        
                     },
                     f"Specific_Instance_Per_Administrative_Area_{impact}": {
                         "type": "array",
@@ -3023,7 +3023,7 @@ def generate_total_monetary_schema(impact: str) -> dict:
                                 f"Total_{impact}_Annotation": {"type": "string"},
                                 f"Total_{impact}_Unit": {"type": "string"},
                                 f"Total_{impact}_Inflation_Adjusted": {"type": "string"},
-                                f"Total_{impact}_Inflation_Adjusted_Year": {"type": "string"}
+                                f"Total_{impact}_Inflation_Adjusted_Year": {"type": "string"}}
                             ,
                             "required": [
                                 f"Total_{impact}", f"Total_{impact}_Annotation", 
@@ -3031,7 +3031,7 @@ def generate_total_monetary_schema(impact: str) -> dict:
                                 f"Total_{impact}_Inflation_Adjusted_Year"
                             ],
                             "additionalProperties": False
-                        }
+                        
                     }, 
 
                     f"Specific_Instance_Per_Administrative_Area_{impact}": {
@@ -3302,7 +3302,7 @@ V_7: dict = {
     ],
 }
 
-# v7_1 is the version that based on V7, but require the model give one confirmed massage for the same location and same time. 
+# v7_1 is the version that based on V7, but require the model give one confirmed massage for the same location and same time (retain records separately if different time information is mentioned. If time is missing, consider it the same unless explicitly stated otherwise) and same time. 
 V_7_1: dict = {
     "Affected": [
         """Based on the information box and header-content article given,
@@ -3319,7 +3319,7 @@ V_7_1: dict = {
       do not aggregate the information on affected people from different locations; instead, 
       retain the data exactly as presented in the original text, 
       make sure to capture all locations with affected people information, 
-      if multiple sentences mention the affected people information for the same location, 
+      if multiple sentences mention the affected people information for the same location and same time (retain records separately if different time information is mentioned. If time is missing, consider it the same unless explicitly stated otherwise) and same time (retain records separately if different time information is mentioned. If time is missing, consider it the same unless explicitly stated otherwise), 
       retain all sentences in the 'Annotation' and use reasoning to select the most confirmed one.
       - "Administrative_Area": "Name of the country."
       - "Locations": "The specific place within the country where the affected people located, and no matter the affected people are in one or several places, order them in a list like ["Location1";"Location2";"Location3"]. If only the country name is available, leave this as 'NULL'. "
@@ -3352,7 +3352,7 @@ V_7_1: dict = {
       do not aggregate the information on damaged buildings from different locations; 
       instead, retain the data exactly as presented in the original text, 
       make sure to capture all locations with damaged buildings information,  
-      if multiple sentences mention the buildings damaged information for the same location, 
+      if multiple sentences mention the buildings damaged information for the same location and same time (retain records separately if different time information is mentioned. If time is missing, consider it the same unless explicitly stated otherwise), 
       retain all sentences in the 'Annotation' and use reasoning to select the most confirmed one.
       - "Administrative_Area": "Name of the country."
       - "Locations": "The specific place/places within the country where the damaged buildings occurred, and no matter the building damage is in one or several places, order it/them in a list like ["Location1";"Location2";"Location3"]. If only the country name is available, leave this as 'NULL'."
@@ -3378,7 +3378,7 @@ V_7_1: dict = {
       do not aggregate the information on deaths from different locations; 
       instead, retain the data exactly as presented in the original text,
        make sure to capture all locations with death information,
-       if multiple sentences mention the deaths information for the same location, 
+       if multiple sentences mention the deaths information for the same location and same time (retain records separately if different time information is mentioned. If time is missing, consider it the same unless explicitly stated otherwise), 
       retain all sentences in the 'Annotation' and use reasoning to select the most confirmed one.
       - "Administrative_Area": "Name of the country."
       - "Locations": "The specific place within the country where the deaths occurred, and no matter the deaths are in one or several places, order them in a list like ["Location1";"Location2";"Location3"]. If only the country name is available, leave this as 'NULL'."
@@ -3406,7 +3406,7 @@ V_7_1: dict = {
        do not aggregate the information on displacement from different locations; 
        instead, retain the data exactly as presented in the original text, 
        make sure to capture all locations with displacement information,
-       if multiple sentences mention the displaced people information for the same location, 
+       if multiple sentences mention the displaced people information for the same location and same time (retain records separately if different time information is mentioned. If time is missing, consider it the same unless explicitly stated otherwise), 
       retain all sentences in the 'Annotation' and use reasoning to select the most confirmed one.
       - "Administrative_Area": "Name of the country."
       - "Locations": "The specific place within the country where the displacement occurred, and no matter the displacement is in one or several places, order them in a list like ["Location1";"Location2";"Location3"]. If only the country name is available, leave this as 'NULL"
@@ -3432,7 +3432,7 @@ V_7_1: dict = {
       do not aggregate the information on homelessness from different locations;
        instead, retain the data exactly as presented in the original text, 
        make sure to capture all locations with homelessness information,
-       if multiple sentences mention the homeless people information for the same location, 
+       if multiple sentences mention the homeless people information for the same location and same time (retain records separately if different time information is mentioned. If time is missing, consider it the same unless explicitly stated otherwise), 
       retain all sentences in the 'Annotation' and use reasoning to select the most confirmed one.
       - "Administrative_Area": "Name of the country."
       - "Locations": "The specific place within the country where the homelessness occurred, and no matter the homelessness is in one or several places, order them in a list like ["Location1";"Location2";"Location3"]. If only the country name is available, leave this as 'NULL'."
@@ -3458,7 +3458,7 @@ V_7_1: dict = {
       do not aggregate the information on injuries from different locations; 
       instead, retain the data exactly as presented in the original text, 
       make sure to capture all locations with non-fatal injuries information,
-      if multiple sentences mention the non-fatal injuries information for the same location, 
+      if multiple sentences mention the non-fatal injuries information for the same location and same time (retain records separately if different time information is mentioned. If time is missing, consider it the same unless explicitly stated otherwise), 
       retain all sentences in the 'Annotation' and use reasoning to select the most confirmed one.
       - "Administrative_Area": "Name of the country."
       - "Locations": "The specific place within the country where the non-fatal injuries occurred, and no matter the non-fatal injuries are in one or several places, order them in a list like ["Location1";"Location2";"Location3"]. If only the country name is available, leave this as 'NULL'. "
@@ -3487,7 +3487,7 @@ V_7_1: dict = {
               do not aggregate the information on insured damage from different locations; 
               instead, retain the data exactly as presented in the original text,
                make sure to capture all locations with insured damage information,
-               if multiple sentences mention the  insured damage information for the same location, 
+               if multiple sentences mention the  insured damage information for the same location and same time (retain records separately if different time information is mentioned. If time is missing, consider it the same unless explicitly stated otherwise), 
                 retain all sentences in the 'Annotation' and use reasoning to select the most confirmed one.
               - "Specific_Instance_Per_Administrative_Area_Insured_Damage":[{{
               - "Administrative_Area": "Name of the country."
@@ -3520,7 +3520,7 @@ V_7_1: dict = {
                do not aggregate the information on economic damage from different locations;
                 instead, retain the data exactly as presented in the original text, 
                 make sure to capture all locations with economic damage information,
-                if multiple sentences mention the economic damage information for the same location, 
+                if multiple sentences mention the economic damage information for the same location and same time (retain records separately if different time information is mentioned. If time is missing, consider it the same unless explicitly stated otherwise), 
                  retain all sentences in the 'Annotation' and use reasoning to select the most confirmed one.
               - "Administrative_Area": "Name of the country."
               - "Locations": "The specific place/places within the country where the economic damage occurred, and no matter the economic damage is in one or several places, order it/them in a list like ["Location1";"Location2";"Location3"]. If only the country name is available, leave this as 'NULL'."
