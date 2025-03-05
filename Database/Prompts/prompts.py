@@ -3071,6 +3071,31 @@ def generate_total_monetary_schema(impact: str) -> dict:
     }
 
 
+# for the location post-processing 
+def generate_LocationEvent() -> dict:
+   return {
+    "type": "json_schema",
+   
+
+    "json_schema": {
+       "name": "Location_response",
+      "strict": True,
+       "schema": {
+        "type": "object",
+        "properties": {
+           
+            "Location_Chain": {
+                "type": "array",
+                "items": {"type": "string"}
+            },
+            
+        },
+         "additionalProperties": False,
+        "required": ["Location_Chain"]}
+    }
+   
+}
+
 V_7: dict = {
     "affected": [
         """Based on the information box and header-content article given,
