@@ -3071,30 +3071,34 @@ def generate_total_monetary_schema(impact: str) -> dict:
     }
 
 
-# for the location post-processing 
 def generate_LocationEvent() -> dict:
-   return {
-    "type": "json_schema",
-   
-
-    "json_schema": {
-       "name": "Location_response",
-      "strict": True,
-       "schema": {
-        "type": "object",
-        "properties": {
-           
-            "Location_Chain": {
-                "type": "array",
-                "items": {"type": "string"}
-            },
-            
-        },
-         "additionalProperties": False,
-        "required": ["Location_Chain"]}
+    return {
+        "type": "json_schema",
+        "json_schema": {
+            "name": "Location_response",
+            "strict": True,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "Location_Chains": {
+                        "type": "array",
+                        "items": {
+                            "type": "array",
+                            "items": {"type": "string"}
+                        }
+                    },
+                },
+                "additionalProperties": False,
+                "required": ["Location_Chains"]
+            }
+        }
     }
-   
-}
+
+
+
+Post_location ="""Using the provided country {Administrative_Area} and a list of locations {Locations}, 
+trace the administrative hierarchy for each location back to one level below the country. 
+For each location, construct an array that represents the hierarchy, ensuring no duplicate administrative units within the same level. """
 
 V_7: dict = {
     "affected": [
