@@ -127,7 +127,7 @@ if __name__ == "__main__":
 
 # user input information box {Info_Box} and header-content pair article {Whole_Text}
 # output Specific_Instance_Per_Administrative_Area_// Total_Summary_
-    # Function to process the raw article
+    # Function to process the raw single event article
     def process_whole_text(data):
         filtered_data = [item for item in data["Whole_Text"] if item["content"] not in [None, ""]]
         result = " ".join([f"header: {item['header']}, content: {item['content']}" for item in filtered_data])
