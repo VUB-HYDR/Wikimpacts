@@ -3,6 +3,7 @@ import json
 import os
 import pathlib
 from pathlib import Path
+import pandas as pd
 
 from fastapi.encoders import jsonable_encoder
 from fastapi import FastAPI
@@ -169,7 +170,8 @@ if __name__ == "__main__":
                             country = item['Administrative_Area']
                             locations = item['Locations']
                             user_input= f"Country: {country}, a list of locations: {locations}."
-                            location_chain = gpt_completion(generate_LocationEvent,user_input, Post_location )
+                            res_format= generate_LocationEvent()
+                            location_chain = gpt_completion(res_format,user_input, Post_location )
                             item['Location_Chain'] = location_chain
         return df
 
