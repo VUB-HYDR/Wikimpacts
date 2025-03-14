@@ -96,11 +96,11 @@ if __name__ == "__main__":
     env_path = Path(args.api_env)
     load_dotenv(dotenv_path=env_path)
     client = openai.OpenAI(api_key=os.getenv("API_KEY"))
-
-    # input the raw articles for processing
+    
     with open(f"{args.raw_dir}/{args.filename}", "r") as file:
         # Step 2: Load the JSON data into a Python dictionary
         raw_text = json.load(file)
+   
 
     # define the gpt setting for "gpt-4o-2024-05-13", because the setting in the "gpt-4o-2024-08-06" is different, we divide two functions to run them
     def batch_gpt(prompt, event_id,user_input,re_format):
