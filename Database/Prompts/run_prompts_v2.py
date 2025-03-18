@@ -3,6 +3,7 @@ import json
 import os
 import pathlib
 from pathlib import Path
+import pandas as pd
 
 from fastapi.encoders import jsonable_encoder
 from fastapi import FastAPI
@@ -12,7 +13,7 @@ from dotenv import load_dotenv
 from pydantic import BaseModel, create_model
 from typing import List
 from Database.Prompts.prompts import V_7_1 as target_prompts
-from Database.Prompts.prompts import  generate_total_direct_schema, generate_total_monetary_schema, generate_TotalMainEvent, generate_TotalLocationEvent
+from Database.Prompts.prompts import  generate_LocationEvent, Post_location, generate_total_direct_schema, generate_total_monetary_schema, generate_TotalMainEvent, generate_TotalLocationEvent
 from Database.scr.log_utils import Logging
 
 # the prompt list need to use the same variable names in our schema, and each key contains 1+ prompts
@@ -81,7 +82,7 @@ if __name__ == "__main__":
         "-p",
         "--prompt_category",
         dest="prompt_category",
-        help="The prompt category of the experiment, can only choose from impact, basic, and all",
+        help="The prompt category of the experiment, can only choose from impact, basic, all and location_chain",
         type=str,
     )
     args = parser.parse_args()
@@ -95,11 +96,11 @@ if __name__ == "__main__":
     env_path = Path(args.api_env)
     load_dotenv(dotenv_path=env_path)
     client = openai.OpenAI(api_key=os.getenv("API_KEY"))
-
-    # input the raw articles for processing
+    
     with open(f"{args.raw_dir}/{args.filename}", "r") as file:
         # Step 2: Load the JSON data into a Python dictionary
         raw_text = json.load(file)
+   
 
     # define the gpt setting for "gpt-4o-2024-05-13", because the setting in the "gpt-4o-2024-08-06" is different, we divide two functions to run them
     def batch_gpt(prompt, event_id,user_input,re_format):
@@ -123,6 +124,55 @@ if __name__ == "__main__":
                 "stop": None,
             },
         }
+        return df
+    
+    def gpt_completion(res_format, user_input, sys_prompt):
+         response = client.chat.completions.create(
+        # gpt4-mini-model 
+        
+                response_format=res_format,
+                model="gpt-4o-mini-2024-07-18",
+                    messages=[
+
+            {
+            "role": "developer",
+            "content": sys_prompt
+        },
+        
+                { "role": "user",
+                    "content": user_input}
+                
+            ],
+            
+                temperature=0,# randomness
+                max_tokens=4096,
+                n=1,
+                stop=None
+            )
+         message = response.choices[0].message.content
+         return message
+    
+
+    def update_location_chains_for_specific_columns(df):
+        """
+        Updates all columns starting with 'Specific' in the DataFrame with location chains.
+        """
+        # Iterate through all columns in the DataFrame
+        for column_name in df.columns:
+            # Check if column name starts with 'Specific'
+            if column_name.startswith("Specific"):
+                # Iterate through each row in the column
+                for index, row in df.iterrows():
+                    specific_list = row[column_name]
+                    if isinstance(specific_list, list):
+                        # Iterate through each dictionary in the list
+                        for item in specific_list:
+                            country = item['Administrative_Area']
+                            locations = item['Locations']
+                            user_input= f"Country: {country}, a list of locations: {locations}."
+                            res_format= generate_LocationEvent()
+                            location_chain = gpt_completion(res_format,user_input, Post_location )
+                            item['Location_Chain'] = location_chain
         return df
 
 # user input information box {Info_Box} and header-content pair article {Whole_Text}
@@ -154,30 +204,7 @@ if __name__ == "__main__":
         f"{args.batch_dir}/{args.filename.replace('.json', '')}_{args.description}_{args.model_name}_impact.jsonl"
     )
 
-    def generate_batch_data(raw_text, target_prompts, prompt_basic_list, prompt_impact_list):
-        """
-        Generates basic and impact batch data using target prompts for each category.
-
-        Parameters:
-        - raw_text: list of events containing 'Event_ID', 'Event_Name', 'Info_Box', etc.
-        - target_prompts: dictionary where keys are categories (e.g., 'deaths', 'injuries') and values are lists of prompts
-        - prompt_basic_list: list of categories that should be processed for basic data
-        - prompt_impact_list: list of categories that should be processed for impact data
-
-        Returns:
-        - basic_data: list of formatted batch lines for basic data processing
-        - impact_data: list of formatted batch lines for impact data processing
-        """
-        basic_data = []
-        impact_data = []
-
-        # Process basic data
-        basic_data = process_data(raw_text, target_prompts, prompt_basic_list)
-
-        # Process impact data
-        impact_data = process_data(raw_text, target_prompts, prompt_impact_list)
-
-        return basic_data, impact_data
+  
   
     def process_data(raw_text, target_prompts, prompt_list):
         """
@@ -296,8 +323,17 @@ if __name__ == "__main__":
             client=client,  # OpenAI API client instance
             metadata_description=metadata_description,  # metadata description
         )
+    if args.prompt_category == "location_chain":
+    # Convert the JSON data into a DataFrame
+        df = pd.DataFrame(raw_text)
 
-    if args.prompt_category == "impact":
+        # Apply the function to update specific columns in the DataFrame
+        Processed_df = update_location_chains_for_specific_columns(df)
+
+        json_output_path = f"{args.raw_dir}/{args.filename.replace('.json', '_location_processed.json')}"
+
+        df.to_json(json_output_path, orient='records', indent=2)
+    elif args.prompt_category == "impact":
         # Process data for impact
         impact_data = process_data(raw_text, target_prompts, prompt_impact_list)
         process_save_upload(

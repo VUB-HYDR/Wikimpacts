@@ -3098,7 +3098,7 @@ def generate_LocationEvent() -> dict:
 
 Post_location ="""Using the provided country {Administrative_Area} and a list of locations {Locations}, 
 trace the administrative hierarchy for each location back to one level below the country. 
-For each location, construct an array that represents the hierarchy, ensuring no duplicate administrative units within the same level. """
+For each location, construct an array that represents the hierarchy. """
 
 V_7: dict = {
     "affected": [
