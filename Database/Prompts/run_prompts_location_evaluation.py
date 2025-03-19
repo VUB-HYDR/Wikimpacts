@@ -125,9 +125,12 @@ if __name__ == "__main__":
         if v == None and w != None or v != None and w == None:
             return null_penalty
         v = set(v)
+        print(f"set v:{v}")
         w = set(w)
+        print(f"set w:{w}")
 
         union_len = len(v.union(w))
+        print(f"union len:{union_len}")
         if union_len == 0:
             return 0.0
         return 1.0 - len(v.intersection(w)) / union_len
@@ -170,7 +173,8 @@ if __name__ == "__main__":
          
         LLM_norm = sorted(LLM_locations)
         print(LLM_norm)
-        gold = Norm.sequence(item["Locations_chain"])
+        gold = [s.strip() for s in item["Locations_chain"].split("&")]
+
         #print(LLM_norm, gold)
         score = sequence(LLM_norm, gold)
         df.loc[index, "Score"] = score
