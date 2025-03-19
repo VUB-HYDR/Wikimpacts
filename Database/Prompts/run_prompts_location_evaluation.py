@@ -9,11 +9,9 @@ from fastapi.encoders import jsonable_encoder
 import json 
 import pathlib
 from pathlib import Path
-from Evaluation_V2.comparer import Comparer
+
 from Database.Prompts.prompts import generate_LocationEvent, Post_location
 
-
-from Evaluation_V2.normaliser import Normaliser
 
 import pandas as pd 
 from Database.scr.log_utils import Logging
@@ -75,7 +73,7 @@ if __name__ == "__main__":
         # gpt4-mini-model 
         
                 response_format=res_format,
-                model="gpt-4o-mini-2024-07-18",
+                model="gpt-4o-2024-11-20",
                     messages=[
 
             {
@@ -113,8 +111,7 @@ if __name__ == "__main__":
 
 
 
-    # Normalizer object (initialized once)
-    Norm = Normaliser()
+
     null_penalty = args.null_penalty
     
     def sequence( v, w):
@@ -125,12 +122,12 @@ if __name__ == "__main__":
         if v == None and w != None or v != None and w == None:
             return null_penalty
         v = set(v)
-        print(f"set v:{v}")
+       
         w = set(w)
-        print(f"set w:{w}")
+      
 
         union_len = len(v.union(w))
-        print(f"union len:{union_len}")
+       
         if union_len == 0:
             return 0.0
         return 1.0 - len(v.intersection(w)) / union_len
@@ -151,8 +148,7 @@ if __name__ == "__main__":
         
        
         data_list=item["Locations_chain_LLM"]
-        print(data_list)
-        print(type(data_list))
+    
         if isinstance(data_list, str):
             try:
                 data_list = json.loads(data_list)  # Convert to dict
@@ -172,7 +168,7 @@ if __name__ == "__main__":
         
          
         LLM_norm = sorted(LLM_locations)
-        print(LLM_norm)
+      
         gold = [s.strip() for s in item["Locations_chain"].split("&")]
 
         #print(LLM_norm, gold)
