@@ -57,6 +57,7 @@ class Normaliser:
         # return [self.string(s) for s in v.replace("&", "|").split("|")]
         if isinstance(v, list):
             return [[str(item) for item in sublist] for sublist in v]
+     
         return v
 
     def date(self, v):
