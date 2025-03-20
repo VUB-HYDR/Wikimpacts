@@ -67,7 +67,7 @@ if __name__ == "__main__":
             },
             {
                 "role": "user",
-                "content": user_input
+                "content": f"Provide only the translated output without any additional text, explanations, or formatting. {user_input}"
             }
         ],
         temperature=0,  # randomness
@@ -89,8 +89,8 @@ if __name__ == "__main__":
     def translate_whole_text(whole_text):
         translated_texts = []
         for item in whole_text:
-            translated_header = gpt_completion(generate_translation, f"text: {item['header']}")
-            translated_content = gpt_completion(generate_translation,  f"text: {item['content']}")
+            translated_header = None if not item['header'] or item['header'].strip() == '' else gpt_completion(generate_translation, f"Text: {item['header']}")
+            translated_content = None if not item['content'] or item['content'].strip() == '' else gpt_completion(generate_translation, f"Text: {item['content']}")
             translated_texts.append({
                 'header': translated_header,
                 'content': translated_content
@@ -102,15 +102,13 @@ if __name__ == "__main__":
         for table in all_tables:
             translated_table = []
             for entry in table:
-                translated_entry = {key: gpt_completion(generate_translation, value) for key, value in entry.items()}
+                translated_entry = {key: None if value is None else gpt_completion(generate_translation, value) for key, value in entry.items()}
                 translated_table.append(translated_entry)
             translated_tables.append(translated_table)
         return translated_tables
 
     def translate_infobox(info_box):
-     
-        translated_infobox= gpt_completion(generate_translation, f"text: {info_box}")
-            
+        translated_infobox = None if not info_box or info_box.strip() == '' else gpt_completion(generate_translation, f"Text: {info_box}")
         return translated_infobox
 
     translated_df = []
