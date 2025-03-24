@@ -102,7 +102,10 @@ if __name__ == "__main__":
         for table in all_tables:
             translated_table = []
             for entry in table:
-                translated_entry = {key: None if value is None else gpt_completion(generate_translation, value) for key, value in entry.items()}
+                translated_entry = {
+    gpt_completion(generate_translation, key): None if value is None else gpt_completion(generate_translation, value)
+    for key, value in entry.items()
+}
                 translated_table.append(translated_entry)
             translated_tables.append(translated_table)
         return translated_tables
@@ -112,7 +115,7 @@ if __name__ == "__main__":
         return translated_infobox
 
     translated_df = []
-    for item in df[:5]:
+    for item in df[:100]:
         translated_event = {}
         event_id = item["Event_ID"]
         source = item["Source"]
