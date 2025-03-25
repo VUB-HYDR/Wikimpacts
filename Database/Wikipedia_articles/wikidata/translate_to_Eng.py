@@ -59,7 +59,7 @@ if __name__ == "__main__":
     logger.info(f"Creating {args.output_dir} if it does not exist!")
     def gpt_completion(res_format, user_input):
         response = client.chat.completions.create(
-        model="gpt-4o-mini-2024-07-18",
+        model="gpt-4o-2024-11-20",
         messages=[
             {
                 "role": "developer",
@@ -103,12 +103,15 @@ if __name__ == "__main__":
             translated_table = []
             for entry in table:
                 translated_entry = {
-    gpt_completion(generate_translation, key): None if value is None else gpt_completion(generate_translation, value)
-    for key, value in entry.items()
-}
+                    key if key is None or key.strip() == '' else gpt_completion(generate_translation, key): 
+                    value if value is None or value.strip() == '' else gpt_completion(generate_translation, value)
+                    for key, value in entry.items()
+                }
                 translated_table.append(translated_entry)
             translated_tables.append(translated_table)
         return translated_tables
+
+
 
     def translate_infobox(info_box):
         translated_infobox = None if not info_box or info_box.strip() == '' else gpt_completion(generate_translation, f"Text: {info_box}")
