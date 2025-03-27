@@ -118,7 +118,7 @@ if __name__ == "__main__":
         return translated_infobox
 
     translated_df = []
-    for item in df[500:700]:
+    for item in df[700:]:
         translated_event = {}
         event_id = item["Event_ID"]
         source = item["Source"]
