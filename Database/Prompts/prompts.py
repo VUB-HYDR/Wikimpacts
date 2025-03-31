@@ -2902,7 +2902,25 @@ V_6: dict = {
 
 
 #for wikimpacts v2, we use structured output and batch api with o3 mini model 
-
+def generate_translation() -> dict:
+   return {
+    "type": "json_schema",
+ 
+    "json_schema": { 
+         "name": "translation__response",
+      "strict": True,
+      "schema": {
+        "type": "object",
+        "properties": {
+           
+            "Text_Translation": {"type": "string"},
+           
+         
+        },
+         "additionalProperties": False,
+        "required": ["Text_Translation"]
+    }}
+}
 
 def generate_TotalLocationEvent() -> dict:
    return {

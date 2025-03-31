@@ -13,6 +13,8 @@
 #ignore .jsonl file for batch process
 **/*.jsonl
 
+# ignore pre-json files 
+**#*
 
 # ... except for this excel file (gold flat-format annotation table)
 !Database/gold/ImpactDB_DataTable_Validation.xlsx
