@@ -22,3 +22,5 @@ For ESSD_2024, we have different folders for storing the parsed output
 ESSD_2024_V3 is the folder for the result from V3 prompts and other versions (V4, V5, etc).
 
 ESSD_2024_V3_filter, is the folder for the result from V3 prompts except that we filter out the events without L2/L3 annotations. We do the same for other versions (V4, V5, etc)
+
+In Wikimpacts V2, we tested two reasoning models, o1 and o3-mini, for prompting. Within the single-event development set, we maintain the original folder containing all 70 events, as well as the **filter_for_L3** folder, which includes 56 events with L3 annotation.

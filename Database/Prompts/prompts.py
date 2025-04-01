@@ -3366,7 +3366,7 @@ V_7_1: dict = {
       do not aggregate the information on affected people from different locations; instead, 
       retain the data exactly as presented in the original text, 
       make sure to capture all locations with affected people information, 
-      if multiple sentences mention the affected people information for the same location and same time (retain records separately if different time information is mentioned. If time is missing, consider it the same unless explicitly stated otherwise) and same time (retain records separately if different time information is mentioned. If time is missing, consider it the same unless explicitly stated otherwise), 
+      if multiple sentences mention the affected people information for the same location and same time (retain records separately if different time information is mentioned. If time is missing, consider it the same unless explicitly stated otherwise), 
       retain all sentences in the 'Annotation' and use reasoning to select the most confirmed one.
       - "Administrative_Area": "Name of the country."
       - "Locations": "The specific place within the country where the affected people located, and no matter the affected people are in one or several places, order them in a list like ["Location1";"Location2";"Location3"]. If only the country name is available, leave this as 'NULL'. "
