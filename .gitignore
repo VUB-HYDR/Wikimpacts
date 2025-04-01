@@ -16,6 +16,8 @@
 # ignore pre-json files 
 **#*
 
+# ignore unused evaluation results
+*Database/evaluation_results/WikimpactsV2/Single_Event_Weight_setting_Unused
 # ... except for this excel file (gold flat-format annotation table)
 !Database/gold/ImpactDB_DataTable_Validation.xlsx
 # ... except for this ipynb file (for visualization used in the ESSD2025 paper)

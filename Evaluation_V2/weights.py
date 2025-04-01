@@ -121,11 +121,11 @@ default_weights = {
         "Event_ID": 0,
         # Date
         "Start_Date_Day": 0.1,
-        "Start_Date_Month": 0.15,
-        "Start_Date_Year": 0.2,
+        "Start_Date_Month": 0.2,
+        "Start_Date_Year": 0.5,
         "End_Date_Day": 0.1,
-        "End_Date_Month": 0.15,
-        "End_Date_Year": 0.2,
+        "End_Date_Month": 0.2,
+        "End_Date_Year": 0.5,
         # Area
         "Administrative_Area_Norm": 1,  # str
          "Administrative_Area_GID": 1,
@@ -139,11 +139,11 @@ default_weights = {
         "Event_ID": 0,
         # Date
         "Start_Date_Day": 0.1,
-        "Start_Date_Month": 0.15,
-        "Start_Date_Year": 0.2,
+        "Start_Date_Month": 0.2,
+        "Start_Date_Year": 0.5,
         "End_Date_Day": 0.1,
-        "End_Date_Month": 0.15,
-        "End_Date_Year": 0.2,
+        "End_Date_Month": 0.2,
+        "End_Date_Year": 0.5,
         # Area
         "Administrative_Area_Norm": 1,  # str
         "Locations_Norm": 1,  # list

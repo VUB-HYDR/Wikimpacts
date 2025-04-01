@@ -17,3 +17,8 @@ For double annotation, we have two annotators: one for the gold data and one for
 
 
 For Wikimpacts 2.0, the L3 evaluation incorporates an updated matching algorithm that prioritizes matching the **Administrative_Area** first. If the **Administrative_Area** does not match, further matching is halted. The rationale behind this approach is that if an impact did not occur in the same country, numerical comparisons would not be meaningful.
+
+In Wikimpacts 2.0, the weights for L3 evaluation are adjusted for these nullable items, 
+*_Day is adjusted from 1 to 0.1, 
+*_Month, *_Adjusted* is adjusted from 1 to 0.2
+*_Year is adjusted from 1 to 0.5
