@@ -69,7 +69,7 @@ CREATE TABLE Total_Summary (
         OR Total_Damage_Inflation_Adjusted_Year == NULL
     ),
 
-    FOREIGN KEY(Event_ID) REFERENCES Total_Summary(Event_ID)
+    PRIMARY KEY(Event_ID)
 );
 CREATE TABLE Instance_Per_Administrative_Areas_Injuries (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) == 7), /* COMMENT 'UID' */
