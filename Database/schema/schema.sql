@@ -69,7 +69,7 @@ CREATE TABLE Total_Summary (
         OR Total_Damage_Inflation_Adjusted_Year == NULL
     ),
 
-    FOREIGN KEY(Event_ID) REFERENCES Total_Summary_Events(Event_ID)
+    FOREIGN KEY(Event_ID) REFERENCES Total_Summary(Event_ID)
 );
 CREATE TABLE Instance_Per_Administrative_Areas_Injuries (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) == 7), /* COMMENT 'UID' */
@@ -88,7 +88,7 @@ CREATE TABLE Instance_Per_Administrative_Areas_Injuries (
     Num_Min REAL NOT NULL CHECK (Num_Min >= 0),
     Num_Max REAL NOT NULL CHECK (Num_Max >= 0),
     Num_Approx INTEGER NOT NULL CHECK (Num_Approx == 1 OR Num_Approx ==  0), /* COMMENT 'Boolean' */
-    FOREIGN KEY(Event_ID) REFERENCES Total_Summary_Events(Event_ID)
+    FOREIGN KEY(Event_ID) REFERENCES Total_Summary(Event_ID)
 );
 CREATE TABLE Instance_Per_Administrative_Areas_Deaths (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) == 7), /* COMMENT 'UID' */
@@ -107,7 +107,7 @@ CREATE TABLE Instance_Per_Administrative_Areas_Deaths (
     Num_Min REAL NOT NULL CHECK (Num_Min >= 0),
     Num_Max REAL NOT NULL CHECK (Num_Max >= 0),
     Num_Approx INTEGER NOT NULL CHECK (Num_Approx == 1 OR Num_Approx ==  0), /* COMMENT 'Boolean' */
-    FOREIGN KEY(Event_ID) REFERENCES Total_Summary_Events(Event_ID)
+    FOREIGN KEY(Event_ID) REFERENCES Total_Summary(Event_ID)
 );
 CREATE TABLE Instance_Per_Administrative_Areas_Displaced (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) == 7), /* COMMENT 'UID' */
@@ -126,7 +126,7 @@ CREATE TABLE Instance_Per_Administrative_Areas_Displaced (
     Num_Min REAL NOT NULL CHECK (Num_Min >= 0),
     Num_Max REAL NOT NULL CHECK (Num_Max >= 0),
     Num_Approx INTEGER NOT NULL CHECK (Num_Approx == 1 OR Num_Approx ==  0), /* COMMENT 'Boolean' */
-    FOREIGN KEY(Event_ID) REFERENCES Total_Summary_Events(Event_ID)
+    FOREIGN KEY(Event_ID) REFERENCES Total_Summary(Event_ID)
 );
 CREATE TABLE Instance_Per_Administrative_Areas_Homeless (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) == 7), /* COMMENT 'UID' */
@@ -145,7 +145,7 @@ CREATE TABLE Instance_Per_Administrative_Areas_Homeless (
     Num_Min REAL NOT NULL CHECK (Num_Min >= 0),
     Num_Max REAL NOT NULL CHECK (Num_Max >= 0),
     Num_Approx INTEGER NOT NULL CHECK (Num_Approx == 1 OR Num_Approx ==  0), /* COMMENT 'Boolean' */
-    FOREIGN KEY(Event_ID) REFERENCES Total_Summary_Events(Event_ID)
+    FOREIGN KEY(Event_ID) REFERENCES Total_Summary(Event_ID)
 );
 CREATE TABLE Instance_Per_Administrative_Areas_Buildings_Damaged (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) == 7), /* COMMENT 'UID' */
@@ -164,7 +164,7 @@ CREATE TABLE Instance_Per_Administrative_Areas_Buildings_Damaged (
     Num_Min REAL NOT NULL CHECK (Num_Min >= 0),
     Num_Max REAL NOT NULL CHECK (Num_Max >= 0),
     Num_Approx INTEGER NOT NULL CHECK (Num_Approx == 1 OR Num_Approx ==  0), /* COMMENT 'Boolean' */
-    FOREIGN KEY(Event_ID) REFERENCES Total_Summary_Events(Event_ID)
+    FOREIGN KEY(Event_ID) REFERENCES Total_Summary(Event_ID)
 );
 CREATE TABLE Instance_Per_Administrative_Areas_Affected (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) == 7), /* COMMENT 'UID' */
@@ -183,7 +183,7 @@ CREATE TABLE Instance_Per_Administrative_Areas_Affected (
     Num_Min REAL NOT NULL CHECK (Num_Min >= 0),
     Num_Max REAL NOT NULL CHECK (Num_Max >= 0),
     Num_Approx INTEGER NOT NULL CHECK (Num_Approx == 1 OR Num_Approx ==  0), /* COMMENT 'Boolean' */
-    FOREIGN KEY(Event_ID) REFERENCES Total_Summary_Events(Event_ID)
+    FOREIGN KEY(Event_ID) REFERENCES Total_Summary(Event_ID)
 );
 CREATE TABLE Instance_Per_Administrative_Areas_Insured_Damage (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) == 7), /* COMMENT 'UID' */
@@ -210,7 +210,7 @@ CREATE TABLE Instance_Per_Administrative_Areas_Insured_Damage (
         OR Num_Inflation_Adjusted_Year == NULL
     ),
 
-    FOREIGN KEY(Event_ID) REFERENCES Total_Summary_Events(Event_ID)
+    FOREIGN KEY(Event_ID) REFERENCES Total_Summary(Event_ID)
 );
 CREATE TABLE Instance_Per_Administrative_Areas_Damage (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) == 7), /* COMMENT 'UID' */
@@ -237,7 +237,7 @@ CREATE TABLE Instance_Per_Administrative_Areas_Damage (
         OR Num_Inflation_Adjusted_Year == NULL
     ),
 
-    FOREIGN KEY(Event_ID) REFERENCES Total_Summary_Events(Event_ID)
+    FOREIGN KEY(Event_ID) REFERENCES Total_Summary(Event_ID)
 );
 CREATE TABLE Specific_Instance_Per_Administrative_Area_Injuries (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) == 7), /* COMMENT 'UID' */
@@ -262,7 +262,7 @@ CREATE TABLE Specific_Instance_Per_Administrative_Area_Injuries (
     Num_Min REAL NOT NULL CHECK (Num_Min >= 0),
     Num_Max REAL NOT NULL CHECK (Num_Max >= 0),
     Num_Approx INTEGER NOT NULL CHECK (Num_Approx == 1 OR Num_Approx == 0 OR Num_Approx == NULL), /* COMMENT 'Boolean' */
-    FOREIGN KEY(Event_ID) REFERENCES Total_Summary_Events(Event_ID)
+    FOREIGN KEY(Event_ID) REFERENCES Total_Summary(Event_ID)
 );
 CREATE TABLE Specific_Instance_Per_Administrative_Area_Deaths (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) == 7), /* COMMENT 'UID' */
@@ -287,7 +287,7 @@ CREATE TABLE Specific_Instance_Per_Administrative_Area_Deaths (
     Num_Min REAL NOT NULL CHECK (Num_Min >= 0),
     Num_Max REAL NOT NULL CHECK (Num_Max >= 0),
     Num_Approx INTEGER NOT NULL CHECK (Num_Approx == 1 OR Num_Approx == 0 OR Num_Approx == NULL), /* COMMENT 'Boolean' */
-    FOREIGN KEY(Event_ID) REFERENCES Total_Summary_Events(Event_ID)
+    FOREIGN KEY(Event_ID) REFERENCES Total_Summary(Event_ID)
 );
 CREATE TABLE Specific_Instance_Per_Administrative_Area_Displaced (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) == 7), /* COMMENT 'UID' */
@@ -312,7 +312,7 @@ CREATE TABLE Specific_Instance_Per_Administrative_Area_Displaced (
     Num_Min REAL NOT NULL CHECK (Num_Min >= 0),
     Num_Max REAL NOT NULL CHECK (Num_Max >= 0),
     Num_Approx INTEGER NOT NULL CHECK (Num_Approx == 1 OR Num_Approx == 0 OR Num_Approx == NULL), /* COMMENT 'Boolean' */
-    FOREIGN KEY(Event_ID) REFERENCES Total_Summary_Events(Event_ID)
+    FOREIGN KEY(Event_ID) REFERENCES Total_Summary(Event_ID)
 );
 CREATE TABLE Specific_Instance_Per_Administrative_Area_Homeless (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) == 7), /* COMMENT 'UID' */
@@ -337,7 +337,7 @@ CREATE TABLE Specific_Instance_Per_Administrative_Area_Homeless (
     Num_Min REAL NOT NULL CHECK (Num_Min >= 0),
     Num_Max REAL NOT NULL CHECK (Num_Max >= 0),
     Num_Approx INTEGER NOT NULL CHECK (Num_Approx == 1 OR Num_Approx == 0 OR Num_Approx == NULL), /* COMMENT 'Boolean' */
-    FOREIGN KEY(Event_ID) REFERENCES Total_Summary_Events(Event_ID)
+    FOREIGN KEY(Event_ID) REFERENCES Total_Summary(Event_ID)
 );
 CREATE TABLE Specific_Instance_Per_Administrative_Area_Buildings_Damaged (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) == 7), /* COMMENT 'UID' */
@@ -362,7 +362,7 @@ CREATE TABLE Specific_Instance_Per_Administrative_Area_Buildings_Damaged (
     Num_Min REAL NOT NULL CHECK (Num_Min >= 0),
     Num_Max REAL NOT NULL CHECK (Num_Max >= 0),
     Num_Approx INTEGER NOT NULL CHECK (Num_Approx == 1 OR Num_Approx == 0 OR Num_Approx == NULL), /* COMMENT 'Boolean' */
-    FOREIGN KEY(Event_ID) REFERENCES Total_Summary_Events(Event_ID)
+    FOREIGN KEY(Event_ID) REFERENCES Total_Summary(Event_ID)
 );
 CREATE TABLE Specific_Instance_Per_Administrative_Area_Affected (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) == 7), /* COMMENT 'UID' */
@@ -387,7 +387,7 @@ CREATE TABLE Specific_Instance_Per_Administrative_Area_Affected (
     Num_Min REAL NOT NULL CHECK (Num_Min >= 0),
     Num_Max REAL NOT NULL CHECK (Num_Max >= 0),
     Num_Approx INTEGER NOT NULL CHECK (Num_Approx == 1 OR Num_Approx == 0 OR Num_Approx == NULL), /* COMMENT 'Boolean' */
-    FOREIGN KEY(Event_ID) REFERENCES Total_Summary_Events(Event_ID)
+    FOREIGN KEY(Event_ID) REFERENCES Total_Summary(Event_ID)
 );
 CREATE TABLE Specific_Instance_Per_Administrative_Area_Insured_Damage (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) == 7), /* COMMENT 'UID' */
@@ -419,7 +419,7 @@ CREATE TABLE Specific_Instance_Per_Administrative_Area_Insured_Damage (
         OR Num_Inflation_Adjusted_Year == NULL
     ),
 
-    FOREIGN KEY(Event_ID) REFERENCES Total_Summary_Events(Event_ID)
+    FOREIGN KEY(Event_ID) REFERENCES Total_Summary(Event_ID)
 );
 CREATE TABLE Specific_Instance_Per_Administrative_Area_Damage (
     Event_ID TEXT NOT NULL CHECK (length(Event_ID) == 7), /* COMMENT 'UID' */
@@ -451,7 +451,7 @@ CREATE TABLE Specific_Instance_Per_Administrative_Area_Damage (
         OR Num_Inflation_Adjusted_Year == NULL
     ),
 
-    FOREIGN KEY(Event_ID) REFERENCES Total_Summary_Events(Event_ID)
+    FOREIGN KEY(Event_ID) REFERENCES Total_Summary(Event_ID)
 );
 CREATE TABLE GeoJson_Obj (
     nid TEXT PRIMARY KEY NOT NULL, /* COMMENT 'NID' */
