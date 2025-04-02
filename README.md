@@ -314,7 +314,7 @@ poetry run python3 Database/fill_data_gap.py -i Database/output/full_run_25_dedu
 - To generate the database according to [`Database/schema.sql`](Database/schema.sql):
 
     ```shell
-    poetry run python3 Database/create_db.py -db impact.v1.db
+    poetry run python3 Database/schema/create_db.py -db impact.v1.db
     ```
 
 #### SPECIAL USECASE: Converting the manual annotation table from a flat format to Events and Specific Impacts
