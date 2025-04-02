@@ -9,19 +9,23 @@
 ## Raw
 
 | Database    | Description |
-| [releases/impactdb.v1.0.raw.db](impactdb.v1.0.raw.db)  | A **raw database** before applying a final layer of post-processing to ensure consistency across all levels. In this release, currencies and inflation adjustment years are mixed. The database contains data after parsing LLM output but before applying: (a) data gap filling (see #173 and #101), and (2) currency conversion and inflation adjustment to USD (2024) (see #111). |
-| [releases/impactdb.v1.1.raw.db](releases/impactdb.v1.1.raw.db)  | A **raw database** that improves on [releases/impactdb.v1.0.raw.db](impactdb.v1.0.raw.db) by adding stricter validation. |
-| [releases/impactdb.v1.2.raw.db](impactdb.v1.2.raw.db)  | A **raw database** that improves on [releases/impactdb.v1.1.raw.db](impactdb.v1.0.raw.db) that fixes a major bug in raw=<v.1.1 where None/NULL values end up inside the databases in non-nullable columns |
-| [releases/impactdb.v1.3.raw.db](impactdb.v1.3.raw.db) **LATEST** | A **raw database** that modifies the schema of [releases/impactdb.v1.2.raw.db](impactdb.v1.0.raw.db) so that end years of events are nullable.  |
+| -------- | ------- |
+| [releases/impactdb.v1.0.0.raw.db](impactdb.v1.0.0.raw.db)  | A **raw database** before applying a final layer of post-processing to ensure consistency across all levels. In this release, currencies and inflation adjustment years are mixed. The database contains data after parsing LLM output but before applying: (a) data gap filling (see #173 and #101), and (2) currency conversion and inflation adjustment to USD (2024) (see #111). |
+| [releases/impactdb.v1.0.1.raw.db](impactdb.v1.0.1.raw.db)  | A **raw database** that improves on [releases/impactdb.v1.0.raw.db](impactdb.v1.0.0.raw.db) by adding stricter validation. |
+| [releases/impactdb.v1.0.2.raw.db](impactdb.v1.0.2.raw.db)  | A **raw database** that improves on [releases/impactdb.v1.0.1.raw.db](impactdb.v1.0.1.raw.db) that fixes a major bug in raw=<v.1.1 where None/NULL values end up inside the databases in non-nullable columns |
+| [releases/impactdb.v1.0.3.raw.db](impactdb.v1.0.3.raw.db) | A **raw database** that modifies the schema of [releases/impactdb.v1.0.2.raw.db](impactdb.v1.0.2.raw.db) so that end years of events are nullable.  |
 
 ## Data-Gap Filled
 
-| [releases/impactdb.v1.0.dg_filled.db](impactdb.v1.0.dg_filled.db)  | A **post-processed** database after applying a final layer of post-processing, excluding the handling of currencies and inflation adjustment (has missing validation rules) |
-| [releases/impactdb.v1.1.dg_filled.db](impactdb.v1.1.dg_filled.db) | A **post-processed** database after applying a final layer of post-processing, including the handling of currencies and inflation adjustment. In this release, end years of events are nullable. |
-| [releases/impactdb.v1.2.dg_filled.db](impactdb.v1.2.dg_filled.db) **Inflation to 2024 USD version** | A **post-processed** database that improves on [releases/impactdb.v1.1.dg_filled.db](impactdb.v1.1.dg_filled.db) by removing events that have no L1/L2/L3 impacts (ie. all impact data in L1 is NULL), most currencies are converted to USD in the database and inflated to 2024 value. |
-| [releases/impactdb.v1.3.dg_filled.db](impactdb.v1.3.dg_filled.db) **Inflation to 2024 EUR version** | A **post-processed** database that convert 2024 USD to 2024 EUR on [releases/impactdb.v1.2.dg_filled.db](impactdb.v1.2.dg_filled.db) by using a constant conversion rate in 2024 |
+| Database    | Description |
+| -------- | ------- |
+| [releases/impactdb.v1.0.0.dg_filled.db](releases/impactdb.v1.0.0.dg_filled.db)  | A **post-processed** database after applying a final layer of post-processing, excluding the handling of currencies and inflation adjustment (has missing validation rules) |
+| [releases/impactdb.v1.0.1.dg_filled.db](releases/impactdb.v1.0.1.dg_filled.db) | A **post-processed** database after applying a final layer of post-processing, including the handling of currencies and inflation adjustment. In this release, end years of events are nullable. |
+| [releases/impactdb.v1.0.2.dg_filled.db](releases/impactdb.v1.0.2.dg_filled.db) **Inflation to 2024 USD version** | A **post-processed** database that improves on [releases/impactdb.v1.0.1.dg_filled.db](releases/impactdb.v1.0.1.dg_filled.db) by removing events that have no L1/L2/L3 impacts (ie. all impact data in L1 is NULL), most currencies are converted to USD in the database and inflated to 2024 value. |
+| [releases/impactdb.v1.0.3.dg_filled.db](releases/impactdb.v1.0.3.dg_filled.db) **Inflation to 2024 EUR version** | A **post-processed** database that convert 2024 USD to 2024 EUR on [releases/impactdb.v1.0.2.dg_filled.db](releases/impactdb.v1.0.2.dg_filled.db) by using a constant conversion rate in 2024 |
 
 ### Additional files and metadata
+
 | File    | Description |
 | -------- | ------- |
 | `*_insertion_errors` files in [releases](releases) | Database insertion errors in addition to the post-processing log file if present -- the version is in the filename |
