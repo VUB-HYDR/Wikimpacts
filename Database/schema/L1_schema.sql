@@ -69,5 +69,5 @@ CREATE TABLE Total_Summary (
         OR Total_Damage_Inflation_Adjusted_Year == NULL
     ),
 
-    FOREIGN KEY(Event_ID) REFERENCES Total_Summary_Events(Event_ID)
+    FOREIGN KEY(Event_ID) REFERENCES Total_Summary(Event_ID)
 );
