@@ -32,6 +32,8 @@ seaborn = "^0.13.2"
 pandarallel = "^1.6.5"
 typing-extensions = "^4.12.2"
 fastapi = "^0.115.8"
+beautifulsoup4 = "^4.13.3"
+lxml = "^5.3.2"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.3"
