@@ -2901,27 +2901,330 @@ V_6: dict = {
 }
 
 
+
 #for wikimpacts v2, we use structured output and batch api with o3 mini model 
-def generate_translation() -> dict:
+
+
+
+# the schema for multi event prompting, include all output in one schema 
+def generate_MultiEvent() -> dict: 
    return {
     "type": "json_schema",
- 
-    "json_schema": { 
-         "name": "translation__response",
+   
+
+    "json_schema": {
+       "name": "MultiEvent_response",
       "strict": True,
-      "schema": {
+       "schema": {
         "type": "object",
         "properties": {
            
-            "Text_Translation": {"type": "string"},
-           
-         
-        },
-         "additionalProperties": False,
-        "required": ["Text_Translation"]
-    }}
+            "Start_Date": {"type": "string"},
+            "End_Date": {"type": "string"},
+            "Time_Annotation": {"type": "string"},
+            "Administrative_Areas": {
+                "type": "array",
+                "items": {"type": "string"}
+            },
+            "Administrative_Areas_Annotation": {"type": "string"},
+            "Main_Event": {"type": "string"},
+            "Main_Event_Annotation": {"type": "string"},
+            "Hazards": {"type": "string"},
+            "Hazards_Annotation": {"type": "string"},
+             "Total_Summary_Affected": {
+                            "type": "object",
+                            "properties": {
+                                f"Total_Affected": {"type": "string"},
+                                f"Total_Affected_Annotation": {"type": "string"}
+                                },
+                            "required": [f"Total_Affected", f"Total_Affected_Annotation"],
+                            "additionalProperties": False 
+                    },
+               "Specific_Instance_Per_Administrative_Area_Affected": {
+                        "type": "array",
+                        "items": { 
+                            "type": "object",
+                            "properties": {
+                                "Administrative_Area": {"type": "string"},
+                                "Locations": {
+                                    "type": "array",
+                                    "items": {"type": "string"}
+                                },
+                                "Start_Date": {"type": "string"},
+                                "End_Date": {"type": "string"},
+                                "Num": {"type": "string"},
+                                "Annotation": {"type": "string"}
+                            },
+                            "required": [
+                                "Start_Date", "End_Date", "Administrative_Area",
+                                "Annotation", "Locations", "Num"
+                            ],
+                            "additionalProperties": False
+                        },
+                  
+                  "Total_Summary_Buildings_Damaged": {
+                            "type": "object",
+                            "properties": {
+                                f"Total_Buildings_Damaged": {"type": "string"},
+                                f"Total_Buildings_Damaged_Annotation": {"type": "string"}
+                                },
+                            "required": [f"Total_Buildings_Damaged", f"Total_Buildings_Damaged_Annotation"],
+                            "additionalProperties": False 
+                    },
+               "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": {
+                        "type": "array",
+                        "items": { 
+                            "type": "object",
+                            "properties": {
+                                "Administrative_Area": {"type": "string"},
+                                "Locations": {
+                                    "type": "array",
+                                    "items": {"type": "string"}
+                                },
+                                "Start_Date": {"type": "string"},
+                                "End_Date": {"type": "string"},
+                                "Num": {"type": "string"},
+                                "Annotation": {"type": "string"}
+                            },
+                            "required": [
+                                "Start_Date", "End_Date", "Administrative_Area",
+                                "Annotation", "Locations", "Num"
+                            ],
+                            "additionalProperties": False
+                        },
+                  
+                  "Total_Summary_Deaths": {
+                            "type": "object",
+                            "properties": {
+                                f"Total_Deaths": {"type": "string"},
+                                f"Total_Deaths_Annotation": {"type": "string"}
+                                },
+                            "required": [f"Total_Deaths", f"Total_Deaths_Annotation"],
+                            "additionalProperties": False 
+                    },
+               "Specific_Instance_Per_Administrative_Area_Deaths": {
+                        "type": "array",
+                        "items": { 
+                            "type": "object",
+                            "properties": {
+                                "Administrative_Area": {"type": "string"},
+                                "Locations": {
+                                    "type": "array",
+                                    "items": {"type": "string"}
+                                },
+                                "Start_Date": {"type": "string"},
+                                "End_Date": {"type": "string"},
+                                "Num": {"type": "string"},
+                                "Annotation": {"type": "string"}
+                            },
+                            "required": [
+                                "Start_Date", "End_Date", "Administrative_Area",
+                                "Annotation", "Locations", "Num"
+                            ],
+                            "additionalProperties": False
+                        },
+                  
+                  "Total_Summary_Displaced": {
+                            "type": "object",
+                            "properties": {
+                                f"Total_Displaced": {"type": "string"},
+                                f"Total_Displaced_Annotation": {"type": "string"}
+                                },
+                            "required": [f"Total_Displaced", f"Total_Displaced_Annotation"],
+                            "additionalProperties": False 
+                    },
+               "Specific_Instance_Per_Administrative_Area_Displaced": {
+                        "type": "array",
+                        "items": { 
+                            "type": "object",
+                            "properties": {
+                                "Administrative_Area": {"type": "string"},
+                                "Locations": {
+                                    "type": "array",
+                                    "items": {"type": "string"}
+                                },
+                                "Start_Date": {"type": "string"},
+                                "End_Date": {"type": "string"},
+                                "Num": {"type": "string"},
+                                "Annotation": {"type": "string"}
+                            },
+                            "required": [
+                                "Start_Date", "End_Date", "Administrative_Area",
+                                "Annotation", "Locations", "Num"
+                            ],
+                            "additionalProperties": False
+                        },
+                  
+                  "Total_Summary_Homeless": {
+                            "type": "object",
+                            "properties": {
+                                f"Total_Homeless": {"type": "string"},
+                                f"Total_Homeless_Annotation": {"type": "string"}
+                                },
+                            "required": [f"Total_Homeless", f"Total_Homeless_Annotation"],
+                            "additionalProperties": False 
+                    },
+               "Specific_Instance_Per_Administrative_Area_Homeless": {
+                        "type": "array",
+                        "items": { 
+                            "type": "object",
+                            "properties": {
+                                "Administrative_Area": {"type": "string"},
+                                "Locations": {
+                                    "type": "array",
+                                    "items": {"type": "string"}
+                                },
+                                "Start_Date": {"type": "string"},
+                                "End_Date": {"type": "string"},
+                                "Num": {"type": "string"},
+                                "Annotation": {"type": "string"}
+                            },
+                            "required": [
+                                "Start_Date", "End_Date", "Administrative_Area",
+                                "Annotation", "Locations", "Num"
+                            ],
+                            "additionalProperties": False
+                        },
+                  
+                  "Total_Summary_Injuries": {
+                            "type": "object",
+                            "properties": {
+                                f"Total_Injuries": {"type": "string"},
+                                f"Total_Injuries_Annotation": {"type": "string"}
+                                },
+                            "required": [f"Total_Injuries", f"Total_Injuries_Annotation"],
+                            "additionalProperties": False 
+                    },
+               "Specific_Instance_Per_Administrative_Area_Injuries": {
+                        "type": "array",
+                        "items": { 
+                            "type": "object",
+                            "properties": {
+                                "Administrative_Area": {"type": "string"},
+                                "Locations": {
+                                    "type": "array",
+                                    "items": {"type": "string"}
+                                },
+                                "Start_Date": {"type": "string"},
+                                "End_Date": {"type": "string"},
+                                "Num": {"type": "string"},
+                                "Annotation": {"type": "string"}
+                            },
+                            "required": [
+                                "Start_Date", "End_Date", "Administrative_Area",
+                                "Annotation", "Locations", "Num"
+                            ],
+                            "additionalProperties": False
+                        },
+                  
+                "Total_Summary_Insured_Damage": {
+                      
+                      
+                            "type": "object",
+                            "properties": {
+                                "Total_Insured_Damage": {"type": "string"},
+                                "Total_Insured_Damage_Annotation": {"type": "string"},
+                                "Total_Insured_Damage_Unit": {"type": "string"},
+                                "Total_Insured_Damage_Inflation_Adjusted": {"type": "string"},
+                                "Total_Insured_Damage_Inflation_Adjusted_Year": {"type": "string"}}
+                            ,
+                            "required": [
+                                "Total_Insured_Damage", f"Total_Insured_Damage_Annotation", 
+                                "Total_Insured_Damage_Unit", f"Total_Insured_Damage_Inflation_Adjusted",
+                                "Total_Insured_Damage_Inflation_Adjusted_Year"
+                            ],
+                            "additionalProperties": False
+                        
+                    }, 
+
+                    "Specific_Instance_Per_Administrative_Area_Insured_Damage": {
+                        "type": "array",
+                        "items": { 
+                            "type": "object",
+                            "properties": {
+                                "Administrative_Area": {"type": "string"},
+                                "Locations": {
+                                    "type": "array",
+                                    "items": {"type": "string"}
+                                },
+                                "Start_Date": {"type": "string"},
+                                "End_Date": {"type": "string"},
+                                "Num": {"type": "string"},
+                                "Num_Unit": {"type": "string"},
+                                "Num_Inflation_Adjusted": {"type": "string"},
+                                "Num_Inflation_Adjusted_Year": {"type": "string"},
+                                "Annotation": {"type": "string"}
+                            },
+                            "required": [
+                                "Start_Date", "End_Date", "Administrative_Area", "Annotation",
+                                "Locations", "Num", "Num_Unit", 
+                                "Num_Inflation_Adjusted", "Num_Inflation_Adjusted_Year"
+                            ],
+                            "additionalProperties": False
+                        }
+                    },
+
+                     "Total_Summary_Damage": {
+                      
+                      
+                            "type": "object",
+                            "properties": {
+                                "Total_Damage": {"type": "string"},
+                                "Total_Damage_Annotation": {"type": "string"},
+                                "Total_Damage_Unit": {"type": "string"},
+                                "Total_Damage_Inflation_Adjusted": {"type": "string"},
+                                "Total_Damage_Inflation_Adjusted_Year": {"type": "string"}}
+                            ,
+                            "required": [
+                                f"Total_Damage", f"Total_Damage_Annotation", 
+                                f"Total_Damage_Unit", f"Total_Damage_Inflation_Adjusted",
+                                f"Total_Damage_Inflation_Adjusted_Year"
+                            ],
+                            "additionalProperties": False
+                        
+                    }, 
+
+                    "Specific_Instance_Per_Administrative_Area_Damage": {
+                        "type": "array",
+                        "items": { 
+                            "type": "object",
+                            "properties": {
+                                "Administrative_Area": {"type": "string"},
+                                "Locations": {
+                                    "type": "array",
+                                    "items": {"type": "string"}
+                                },
+                                "Start_Date": {"type": "string"},
+                                "End_Date": {"type": "string"},
+                                "Num": {"type": "string"},
+                                "Num_Unit": {"type": "string"},
+                                "Num_Inflation_Adjusted": {"type": "string"},
+                                "Num_Inflation_Adjusted_Year": {"type": "string"},
+                                "Annotation": {"type": "string"}
+                            },
+                            "required": [
+                                "Start_Date", "End_Date", "Administrative_Area", "Annotation",
+                                "Locations", "Num", "Num_Unit", 
+                                "Num_Inflation_Adjusted", "Num_Inflation_Adjusted_Year"
+                            ],
+                            "additionalProperties": False
+                        }
+                    }
+      
+                } "additionalProperties": False,
+        "required": ["Start_Date", "End_Date", "Administrative_Areas" ,"Time_Annotation","Administrative_Areas_Annotation",
+        "Main_Event", "Main_Event_Annotation", "Hazards" ,"Hazards_Annotation", "Total_Summary_Damage","Total_Summary_Buildings_Damaged",
+        "Total_Summary_Affected", "Total_Summary_Deaths","Total_Summary_Displaced","Total_Summary_Homeless","Total_Summary_Injuries", "Total_Summary_Insured_Damage" ,
+        "Specific_Instance_Per_Administrative_Area_Damage","Specific_Instance_Per_Administrative_Area_Damage","Specific_Instance_Per_Administrative_Area_Damage",
+        "Specific_Instance_Per_Administrative_Area_Damage","Specific_Instance_Per_Administrative_Area_Damage","Specific_Instance_Per_Administrative_Area_Damage",
+        "Specific_Instance_Per_Administrative_Area_Damage","Specific_Instance_Per_Administrative_Area_Damage"]}
+    }
+   
 }
 
+
+
+# the schema for single event prompting, for different categories 
 def generate_TotalLocationEvent() -> dict:
    return {
     "type": "json_schema",
@@ -3114,10 +3417,34 @@ def generate_LocationEvent() -> dict:
 
 
 
-Post_location ="""Using the provided country {Administrative_Area} and a list of locations {Locations}, 
+Post_location =f"""Using the provided country {Administrative_Area} and a list of locations {Locations}, 
 trace the administrative hierarchy for each location back to one level below the country. 
 For each location, construct an array that represents the hierarchy. """
 
+# the prompt to check if the item in the list or the section, or the tables are about climate extreme events, if yes, continue the rest prompts
+
+def check_Event() -> dict:
+    return {
+        "type": "json_schema",
+        "json_schema": {
+            "name": "Checking_event_response",
+            "strict": True,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "Checking_response": {"type": "string"},
+                    "Reason":{"type": "string"}
+                        
+                    },
+                },
+                "additionalProperties": False,
+                "required": ["Checking_response"]
+            }
+        }
+checking_event=    f"""Using the provided content {content}, 
+determine if it describes information related to a climate event. Respond with "Yes" or "No", 
+followed by the reason for your judgment."""
+# for single event: 
 V_7: dict = {
     "affected": [
         """Based on the information box and header-content article given,
@@ -3350,6 +3677,7 @@ V_7: dict = {
 }
 
 # v7_1 is the version that based on V7, but require the model give one confirmed massage for the same location and same time (retain records separately if different time information is mentioned. If time is missing, consider it the same unless explicitly stated otherwise) and same time. 
+# after evaluation, we will choose this version to continue , below is for single event
 V_7_1: dict = {
     "Affected": [
         """Based on the information box and header-content article given,
@@ -3620,3 +3948,272 @@ V_7_1: dict = {
          Take your time to read the whole text provided by the user, and answer the questions."""
     ],
 }
+
+
+
+
+
+# this is version for multi event article, because the content from multi event article are much shorter, so we join the prompt below together in one
+V_7_1_m= f"""Based on the content given by the user,
+
+       first, extract time and location information associated with the {Event_Name}, along with supporting citations from the article.
+        the first is to identify the time information of the event {Event_Name}:
+        - "Start_Date": "The start date of the event. If the specific day or month is not known, include at least the year if it's available. If no time information is available, enter 'NULL'. If the exact date is not clear (e.g., "summer of 2021", "June 2020"), please retain the text as mentioned."
+        - "End_Date": "The end date of the event. If the specific day or month is not known, include at least the year if it's available. If no time information is available, enter 'NULL'. If the exact date is not clear (e.g., "summer of 2021", "June 2020"), please retain the text as mentioned."
+        - "Time_Annotation": "Cite the sentences from the article provided where you find the information about the time."
+        the second is to identify all countries affected by {Event_Name}:
+        - "Administrative_Areas": "List all countries mentioned in the text affected by {Event_Name}. The list should be formatted as ["country1", "country2"]."
+        - "Administrative_Areas_Annotation":  "Cite the sentences from the article provided where you find the information about the affected countries."
+         Take your time to read the whole text provided by the user, and answer the questions above.
+
+         Next, extract main_event category and hazard information associated with the {Event_Name}, along with supporting citations from the article.
+         Below is the Main_Event--Hazard association table,
+         Main Event: Flood; Hazard: Flood
+         Main Event: Extratropical Storm/Cyclone; Hazards: Wind; Flood; Blizzard; Hail
+         Main Event: Tropical Storm/Cyclone; Hazards: Wind; Flood; Lightning
+         Main Event: Extreme Temperature; Hazards: Heatwave; Cold Spell
+         Main Event: Drought; Hazard: Drought
+         Main Event: Wildfire; Hazard: Wildfire
+         Main Event: Tornado; Hazard: Wind
+         first identify the Main_Event category information from the text, 
+           - "Main_Event": "identify the event category of the {Event_Name} referring the Main_Event--Hazard table, and only one Main_Event category should be assigned."
+           - "Main_Event_Annotation": "Cite the setences from the article provided where you find the information about the Main_Event category."
+         based on the result of the Main_Event category from the previous step and the Main_Event--Hazard table, identify the hazard information and organize this information in JSON format as follows:
+           - "Hazards": "Identify the hazards of the {Event_Name}, make sure the hazards are associated with the Main_Event category from the table, and if more than one hazard is detected from the text, separate them with '|'. "
+           - "Hazards_Annotation": "Cite the setences from the article provided where you find the information about the hazard information."
+        
+        Take your time to read the whole text provided by the user, and answer the questions above.
+ 
+    
+      Next, extract the number of affected people associated with the {Event_Name}, along with supporting citations from the article.
+      The affected people information can be splited into 2 parts,
+      the first is the total number of affected people caused by the {Event_Name}, 
+      - "Total_Affected": "The total number of people who were affected, impacted, or influenced in the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         Do not sum the number of affected people in the article to present the total number of affected people,
+         and if no total number of affected people explicitly mentioned or the information is missing, assign 'NULL'."
+      - "Total_Affected_Annotation": "Cite the setences from the content provided where you find the information about the total affected people. "
+    
+      the second is the specific instance of affected people caused by the {Event_Name}, 
+      do not aggregate the information on affected people from different locations; instead, 
+      retain the data exactly as presented in the original text, 
+      make sure to capture all locations with affected people information, 
+      if multiple sentences mention the affected people information for the same location and same time (retain records separately if different time information is mentioned. If time is missing, consider it the same unless explicitly stated otherwise), 
+      retain all sentences in the 'Annotation' and use reasoning to select the most confirmed one.
+      - "Specific_Instance_Per_Administrative_Area_Affected":[{{
+      - "Administrative_Area": "Name of the country."
+      - "Locations": "The specific place within the country where the affected people located, and no matter the affected people are in one or several places, order them in a list like ["Location1";"Location2";"Location3"]. If only the country name is available, leave this as 'NULL'. "
+      - "Start_Date": "The start date when the people were affected, if mentioned."
+      - "End_Date":"The end date when the people were affected, if mentioned."
+      - "Num": "The number of people who were affected, impacted, or influenced in the specific location/locations related to the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people')."
+      - "Annotation": "Cite the setences from the article provided where you find the information about the affected people, time, and locations if available."
+      }}] 
+      Take your time to read the whole text provided by the user, ensure to capture all instances of affected people mentioned in the article, including direct and indirect causes. 
+     
+
+      Next, extract the number of damaged buildings associated with the {Event_Name},
+      covering a wide range of building types such as structures, homes, houses, households, apartments, office buildings, retail stores, hotels, schools, hospitals, and more,
+      along with supporting citations from the article. The number of damaged buildings information can be splited into 2 parts,
+      the first is the total number of damaged buildings caused by the {Event_Name}, and organize this information in JSON format as follows:
+
+      - "Total_Buildings_Damaged": "The total number of damaged buildings in the {Event_Name}.
+          Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., "hundreds of, "few houses", "several homes").
+          Do not sum the number of damaged buildings in the article to present the total number of damaged buildings,
+          and if no total number of damaged buildings explicitly mentioned or the information is missing, assign 'NULL'."
+      - "Total_Buildings_Damaged_Annotation": "Cite the setences from the article provided where you find the information about the total number of damaged buildings."
+   
+      the second is the specific instance of damaged buildings caused by the {Event_Name}, 
+      do not aggregate the information on damaged buildings from different locations; 
+      instead, retain the data exactly as presented in the original text, 
+      make sure to capture all locations with damaged buildings information,  
+      if multiple sentences mention the buildings damaged information for the same location and same time (retain records separately if different time information is mentioned. If time is missing, consider it the same unless explicitly stated otherwise), 
+      retain all sentences in the 'Annotation' and use reasoning to select the most confirmed one.
+      - "Specific_Instance_Per_Administrative_Area_Buildings_Damaged":[{{
+      - "Administrative_Area": "Name of the country."
+      - "Locations": "The specific place/places within the country where the damaged buildings occurred, and no matter the building damage is in one or several places, order it/them in a list like ["Location1";"Location2";"Location3"]. If only the country name is available, leave this as 'NULL'."
+      - "Start_Date": "The start date when the damaged buildings occurred, if mentioned."
+      - "End_Date":"The end date when the damaged buildings occurred, if mentioned."
+      - "Num": "The number of damaged buildings in the specific location/locations related to the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., "hundreds of, "few houses", "several homes"). "
+      - "Annotation": "Cite the sentences from the article provided where you find the information about the building damages, time and location if available. "
+      }}]
+       Take your time to read the whole text provided by the user, ensure to capture all instances of damaged buildings mentioned in the article, including direct and indirect causes.  
+
+   
+      Next, extract the number of deaths associated with the {Event_Name},
+      along with supporting citations from the article. The death information can be splited into 2 parts,
+      the first is the total number of deaths caused by the {Event_Name}, 
+      - "Total_Deaths": "The total number of people who died in the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         Do not sum the number of death in the article to present the total number of death, and if no total number of death explicitly mentioned or the information is missing, assign 'NULL'."
+      - "Total_Deaths_Annotation": "Cite the setences from the article provided where you find the information about the total death."
+      the second is the specific instance of deaths caused by the {Event_Name}, 
+      do not aggregate the information on deaths from different locations; 
+      instead, retain the data exactly as presented in the original text,
+       make sure to capture all locations with death information,
+       if multiple sentences mention the deaths information for the same location and same time (retain records separately if different time information is mentioned. If time is missing, consider it the same unless explicitly stated otherwise), 
+      retain all sentences in the 'Annotation' and use reasoning to select the most confirmed one.
+      - "Specific_Instance_Per_Administrative_Area_Deaths":[{{
+      - "Administrative_Area": "Name of the country."
+      - "Locations": "The specific place within the country where the deaths occurred, and no matter the deaths are in one or several places, order them in a list like ["Location1";"Location2";"Location3"]. If only the country name is available, leave this as 'NULL'."
+      - "Start_Date": "The start date when the deaths occurred, if mentioned."
+      - "End_Date":"The end date when the deaths occurred, if mentioned."
+      - "Num": "The number of people who died in the specific location/locations related to the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people'). "
+      - "Annotation": "Cite the sentences from the article provided where you find the information about the deaths, time and locations if available."
+   }}]
+       Take your time to read the whole text provided by the user, ensure to capture all instances of death mentioned in the article, including direct and indirect causes. 
+
+ 
+      Next, extract the number of displacement associated with the {Event_Name}, along with supporting citations from the article.
+      The displacement information can be splited into 2 parts,
+      the first is the total number of displacement caused by the {Event_Name}, 
+      - "Total_Displaced": "The total number of people who were displaced, evacuated, transfered/moved to the shelter, relocated or fleed in the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         Do not sum the number of displacement in the article to present the total number of displacement,
+         and if no total number of displacement explicitly mentioned or the information is missing, assign 'NULL'."
+      - "Total_Displaced_Annotation": "Cite the setences from the article provided where you find the information about the total displacement."
+
+      the second is the specific instance of displacement caused by the {Event_Name},
+       do not aggregate the information on displacement from different locations; 
+       instead, retain the data exactly as presented in the original text, 
+       make sure to capture all locations with displacement information,
+       if multiple sentences mention the displaced people information for the same location and same time (retain records separately if different time information is mentioned. If time is missing, consider it the same unless explicitly stated otherwise), 
+      retain all sentences in the 'Annotation' and use reasoning to select the most confirmed one.
+      - "Specific_Instance_Per_Administrative_Area_Displaced":[{{
+      - "Administrative_Area": "Name of the country."
+      - "Locations": "The specific place within the country where the displacement occurred, and no matter the displacement is in one or several places, order them in a list like ["Location1";"Location2";"Location3"]. If only the country name is available, leave this as 'NULL"
+      - "Start_Date": "The start date when the displacement occurred, if mentioned."
+      - "End_Date":"The end date when the displacement occurred, if mentioned."
+      - "Num": "The number of people who were displaced, evacuated, transfered/moved to the shelter, relocated or fleed in the specific location/locations related to the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people')."
+      - "Annotation": "Cite the sentences from the article provided where you find the information about the displacement, time and locations. "
+       }}]
+       Take your time to read the whole text provided by the user, ensure to capture all instances of displacement mentioned in the article, including direct and indirect causes.  
+   
+
+  
+       Next, extract the number of homelessness associated with the {Event_Name}, along with supporting citations from the article.
+      The homelessness information can be splited into 2 parts,
+      the first is the total number of homelessness caused by the {Event_Name}, 
+      - "Total_Homeless": "The total number of people who were homeless, lost their homes, experienced house damage, had their homes destroyed, were unhoused, without shelter, houseless, or shelterless in the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         Do not sum the number of homelessness in the article to present the total number of homelessness,
+         and if no total number of homelessness explicitly mentioned or the information is missing, assign 'NULL'."
+      - "Total_Homeless_Annotation": "Cite the setences from the article provided where you find the information about the total homelessness."
+      
+      the second is the specific instance of homelessness caused by the {Event_Name}, 
+      do not aggregate the information on homelessness from different locations;
+       instead, retain the data exactly as presented in the original text, 
+       make sure to capture all locations with homelessness information,
+       if multiple sentences mention the homeless people information for the same location and same time (retain records separately if different time information is mentioned. If time is missing, consider it the same unless explicitly stated otherwise), 
+      retain all sentences in the 'Annotation' and use reasoning to select the most confirmed one.
+      - "Specific_Instance_Per_Administrative_Area_Homeless":[{{
+      - "Administrative_Area": "Name of the country."
+      - "Locations": "The specific place within the country where the homelessness occurred, and no matter the homelessness is in one or several places, order them in a list like ["Location1";"Location2";"Location3"]. If only the country name is available, leave this as 'NULL'."
+      - "Start_Date": "The start date when the homelessness occurred, if mentioned."
+      - "End_Date":"The end date when the homelessness occurred, if mentioned."
+      - "Num": "The number of people who were homeless, lost their homes, experienced house damage, had their homes destroyed, were unhoused, without shelter, houseless, or shelterless in the specific location/locations related to the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people'). "
+      - "Annotation": "Cite the sentences from the article provided where you find the information about the homelessness, time and location if available."
+      }}]
+       Take your time to read the whole text provided by the user, ensure to capture all instances of homelessness mentioned in the article, including direct and indirect causes.  
+ 
+
+ 
+  
+      Next, extract the number of non-fatal injuries associated with the {Event_Name}, along with supporting citations from the article.
+      The non-fatal injuries information can be splited into 2 parts,
+      the first is the total number of non-fatal injuries caused by the {Event_Name}, 
+      - "Total_Injuries": "The total number of people who got injured, hurt, wound, or hospitalized (excluding death) in the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people').
+         Do not sum the number of non-fatal injuries in the article to present the total number of non-fatal injuries,
+         and if no total number of non-fatal injuries explicitly mentioned or the information is missing, assign 'NULL'."
+      - "Total_Injuries_Annotation": "Cite the setences from the article provided where you find the information about the total non-fatal injuries."
+      the second is the specific instance of non-fatal injuries caused by the {Event_Name}, 
+      do not aggregate the information on injuries from different locations; 
+      instead, retain the data exactly as presented in the original text, 
+      make sure to capture all locations with non-fatal injuries information,
+      if multiple sentences mention the non-fatal injuries information for the same location and same time (retain records separately if different time information is mentioned. If time is missing, consider it the same unless explicitly stated otherwise), 
+      retain all sentences in the 'Annotation' and use reasoning to select the most confirmed one.
+      - "Specific_Instance_Per_Administrative_Area_Injuries":[{{
+      - "Administrative_Area": "Name of the country."
+      - "Locations": "The specific place within the country where the non-fatal injuries occurred, and no matter the non-fatal injuries are in one or several places, order them in a list like ["Location1";"Location2";"Location3"]. If only the country name is available, leave this as 'NULL'. "
+      - "Start_Date": "The start date when the non-fatal injuries occurred, if mentioned."
+      - "End_Date":"The end date when the non-fatal injuries occurred, if mentioned."
+      - "Num": "The number of people who got injured, hurt, wound, or hospitalized (excluding death) in the specific location/locations related to the {Event_Name}.
+         Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundreds of,' '500 families,' 'at least 200', '300-500 people'). "
+      - "Annotation": "Cite the sentences from the article provided where you find the information about the non-fatal injuries, time and locations if available. "
+       }}]
+       Take your time to read the whole text provided by the user, ensure to capture all instances of non-fatal injuries mentioned in the article, including direct and indirect causes. 
+
+        
+         Next, extract the insured damage information associated with the {Event_Name}, along with supporting citations from the article.
+            The insured damage information can be splited into 2 parts,
+            the first is the total insured damage caused by the {Event_Name}, including damage or loss to property, belongings, or persons covered under the terms of an insurance policy,
+            - "Total_Insured_Damage": "The total amount of insured damage and make sure the information extracted for this containing the keyword "insured" or "insurance".
+               Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion', "minimal").
+               Do not sum the number of insured damage in the article to present the total number of insured damage,
+               and if no total number of insured damage explicitly mentioned or the information is missing, assign 'NULL'."
+            - "Total_Insured_Damage_Unit": "The currency of the total insured damage, like USD, EUR; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Insured_Damage_Inflation_Adjusted": "Indicate 'Yes' if the total insured damage amount has been adjusted for inflation; otherwise "No", If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Insured_Damage_Inflation_Adjusted_Year": "The year of inflation adjustment for the total insured damage, if applicable; If Total_Insured_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Insured_Damage_Annotation": "Cite the sentences from the article provided where you find the information about the total insured damage."
+              the second is the specific instance of insured damage caused by the {Event_Name}, 
+              do not aggregate the information on insured damage from different locations; 
+              instead, retain the data exactly as presented in the original text,
+               make sure to capture all locations with insured damage information,
+               if multiple sentences mention the  insured damage information for the same location and same time (retain records separately if different time information is mentioned. If time is missing, consider it the same unless explicitly stated otherwise), 
+                retain all sentences in the 'Annotation' and use reasoning to select the most confirmed one.
+                
+              - "Specific_Instance_Per_Administrative_Area_Insured_Damage":[{{
+              - "Administrative_Area": "Name of the country."
+              - "Locations": "The specific place/places within the country where the insured damage occurred, and no matter the insured damage is in one or several places, order it/them in a list like ["Location1";"Location2";"Location3"]. If only the country name is available, leave this as 'NULL'. "
+              - "Start_Date": "The start date when the insured damage occurred, if mentioned."
+              - "End_Date":"The end date when the insured damage occurred, if mentioned."
+              - "Num": "The amount of insured damage in the specific location/locations related to the {Event_Name} and make sure the information extracted for this containing the keyword "insured" or "insurance".
+                 Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion')."
+              - "Num_Unit": "The currency of the insured damage, like USD, EUR. "
+              - "Num_Inflation_Adjusted": "Indicate 'Yes' if the insured damage amount has been adjusted for inflation; otherwise "No"."
+              - "Num_Inflation_Adjusted_Year": "The year of inflation adjustment for the insured damage, if applicable."
+              - "Annotation": "Cite sentences from the article provided where you find the information about the insured damage, time and locations if available. "
+             }}]
+             Take your time to read the whole text provided by the user, ensure to capture all instances of insured damage mentioned in the article, including direct and indirect causes. 
+  
+           
+            Next, extract the economic damage information associated with the {Event_Name}, along with supporting source sections from the article.
+            The economic damage information can be splited into 2 parts,
+            the first is the total economic damage caused by the {Event_Name},
+            - "Total_Damage": "The total amount of economic damage.
+               Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion', "minimal").
+               Do not sum the number of economic damage in the article to present the total number of economic damage,
+               and if no total number of economic damage explicitly mentioned or the information is missing, assign 'NULL'."
+            - "Total_Damage_Unit": "The currency of the total economic damage, like USD, EUR; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Damage_Inflation_Adjusted": "Indicate 'Yes' if the total economic damage amount has been adjusted for inflation; otherwise "No", If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Damage_Inflation_Adjusted_Year": "The year of inflation adjustment for the total economic damage, if applicable; If Total_Economic_Damage is missing from the previous step, assign 'NULL'."
+            - "Total_Damage_Annotation": "Cite "Info_Box" or the header name from the article provided where you find the information about the total economic damage. Besides, if the information is not from the Info_Box, cite the setences where you find the information."
+              the second is the specific instance of economic damage caused by the {Event_Name},
+               do not aggregate the information on economic damage from different locations;
+                instead, retain the data exactly as presented in the original text, 
+                make sure to capture all locations with economic damage information,
+                if multiple sentences mention the economic damage information for the same location and same time (retain records separately if different time information is mentioned. If time is missing, consider it the same unless explicitly stated otherwise), 
+                 retain all sentences in the 'Annotation' and use reasoning to select the most confirmed one.
+             - "Specific_Instance_Per_Administrative_Area_Damage":[{{
+              - "Administrative_Area": "Name of the country."
+              - "Locations": "The specific place/places within the country where the economic damage occurred, and no matter the economic damage is in one or several places, order it/them in a list like ["Location1";"Location2";"Location3"]. If only the country name is available, leave this as 'NULL'."
+              - "Start_Date": "The start date when the economic damage occurred, if mentioned."
+              - "End_Date":"The end date when the economic damage occurred, if mentioned."
+              - "Num": "The amount of economic damage in the specific location/locations related to the {Event_Name}.
+                 Use the exact number if mentioned, or retain the text or range as provided for vague numbers (e.g., 'hundred million,''several billion')."
+              - "Num_Unit": "The currency of the economic damage, like USD, EUR. "
+              - "Num_Inflation_Adjusted": "Indicate 'Yes' if the economic damage amount has been adjusted for inflation; otherwise "No"."
+              - "Num_Inflation_Adjusted_Year": "The year of inflation adjustment for the economic damage, if applicable."
+              - "Annotation": "Cite the header name and the sentences from the article provided where you find the information about the economic damage, time and locations if available."
+
+                 }}]
+             Take your time to read the whole text provided by the user, ensure to capture all instances of economic damage mentioned in the article, including direct and indirect causes. 
+    
+      """
+    
+
