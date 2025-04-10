@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 from pydantic import BaseModel, create_model
 from typing import List
 from Database.Prompts.prompts import V_7_1 as target_prompts
-from Database.Prompts.prompts import  generate_LocationEvent, Post_location, generate_total_direct_schema, generate_total_monetary_schema, generate_TotalMainEvent, generate_TotalLocationEvent
+from Database.Prompts.prompts import  check_Event, checking_event, generate_MultiEvent, generate_LocationEvent, checking_event, Post_location, generate_total_direct_schema, generate_total_monetary_schema, generate_TotalMainEvent, generate_TotalLocationEvent
 from Database.scr.log_utils import Logging
 
 # the prompt list need to use the same variable names in our schema, and each key contains 1+ prompts
@@ -57,7 +57,7 @@ if __name__ == "__main__":
         "-t",
         "--max_tokens",
         dest="max_tokens",
-        default=100000,  # This default model supports at most 4096 completion tokens
+        default=100000,  # This default model supports more completion tokens than GPT4o model 
         help="The max tokens of the model selected",
         type=int,
     )
@@ -85,6 +85,16 @@ if __name__ == "__main__":
         help="The prompt category of the experiment, can only choose from impact, basic, all and location_chain",
         type=str,
     )
+
+    parser.add_argument(
+        "-a",
+        "--article_category",
+        dest="article_category",
+        help="The article category of the experiment, can only choose from single and multi",
+        type=str,
+    )
+
+
     args = parser.parse_args()
     logger.info(f"Passed args: {args}")
 
@@ -126,6 +136,7 @@ if __name__ == "__main__":
         }
         return df
     
+    # for location chain completion 
     def gpt_completion(res_format, user_input, sys_prompt):
          response = client.chat.completions.create(
         # gpt4-mini-model 
@@ -151,8 +162,8 @@ if __name__ == "__main__":
             )
          message = response.choices[0].message.content
          return message
-    
-
+     
+   
     def update_location_chains_for_specific_columns(df):
         """
         Updates all columns starting with 'Specific' in the DataFrame with location chains.
@@ -182,7 +193,7 @@ if __name__ == "__main__":
         filtered_data = [item for item in data["Whole_Text"] if item["content"] not in [None, ""]]
         result = " ".join([f"header: {item['header']}, content: {item['content']}" for item in filtered_data])
         return result
-
+  
     # list of keys for prompt of basic and impact information
     prompt_basic_list = ["location_time", "main_event_hazard"]
     prompt_impact_list = [
@@ -205,8 +216,8 @@ if __name__ == "__main__":
     )
 
   
-  
-    def process_data(raw_text, target_prompts, prompt_list):
+    # single event 
+    def process_single_data(raw_text, target_prompts, prompt_list):
         """
         Processes data based on a prompt list and batch function.
 
@@ -225,10 +236,13 @@ if __name__ == "__main__":
             if key in prompt_list:
                 
                 for item in raw_text:
+                    
                     event_id_base = str(item.get("Event_ID"))
                     event_name = str(item.get("Event_Name"))
                     info_box = str(item.get("Info_Box"))
                     whole_text = process_whole_text(item)
+                
+
                     if "Damage" in key and "Building" not in key:
                         # Iterate over each prompt in the list and format them
                         for idx, prompt_template in enumerate(prompt_list_for_key, start=1):
@@ -269,6 +283,50 @@ if __name__ == "__main__":
                             line = batch_gpt(sys_prompt, event_id,user_input,re_format_obj)  # define the line of API request
                             data.append(line)
 
+        return data
+
+     # multi event 
+    
+    def process_multi_data(raw_text, target_prompts):
+        """
+        Processes data based on a prompt list and batch function.
+
+        Parameters:
+        - raw_text: list of events containing 'Event_ID', 'Event_Name', 'Info_Box', etc.
+        - target_prompts: dictionary where keys are categories (e.g., 'deaths', 'injuries') and values are lists of prompts
+        - prompt_list: list of categories to be processed
+        - batch_function: function to call for generating the batch line (either batch_gpt_basic or batch_gpt_impact)
+
+        Returns:
+        - data: list of formatted batch lines
+        """
+        data = []
+  
+                
+        for item in raw_text:
+            
+            event_id_base = str(item.get("Event_ID"))
+            
+            info_box = str(item.get("Info_Box"))
+            whole_text = item.get("Whole_Text")
+            All_tables= item.get("All_Tables")
+            List=item.get("Lists")
+            if Whole_text: 
+                for idx, i in whole_text: 
+                    event_name = str(i.get("Header"))
+                    content= str(i.get("Content"))
+                    if content is not None and content.strip() != '': 
+                        event_id = f"{event_id_base}_{idx}"  # unique event id with key and index
+                        sys_prompt = target_prompts.format(Event_Name=event_name if event_name else Event_Name="Event")
+                        user_input=f" Content: {content}"
+                        re_format_obj = generate_MultiEvent()  
+                        line = batch_gpt(sys_prompt, event_id,user_input,re_format_obj)  # define the line of API request
+                        data.append(line)
+            if All_tables is not None and All_tables.strip() != '': 
+                for idx, i in All_tables:
+                    
+                               
+                   
         return data
 
 
@@ -325,6 +383,8 @@ if __name__ == "__main__":
             client=client,  # OpenAI API client instance
             metadata_description=metadata_description,  # metadata description
         )
+   
+
     if args.prompt_category == "location_chain":
     # Convert the JSON data into a DataFrame
         df = pd.DataFrame(raw_text)
@@ -377,3 +437,6 @@ if __name__ == "__main__":
             client,
             f"{args.description}_{args.model_name}_{args.filename}",
         )
+
+    
+

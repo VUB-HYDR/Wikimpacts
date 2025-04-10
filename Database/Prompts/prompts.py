@@ -2905,7 +2905,7 @@ V_6: dict = {
 #for wikimpacts v2, we use structured output and batch api with o3 mini model 
 
 
-
+"""
 # the schema for multi event prompting, include all output in one schema 
 def generate_MultiEvent() -> dict: 
    return {
@@ -2991,7 +2991,7 @@ def generate_MultiEvent() -> dict:
                                 "Annotation", "Locations", "Num"
                             ],
                             "additionalProperties": False
-                        },
+                        } },
                   
                   "Total_Summary_Deaths": {
                             "type": "object",
@@ -3211,7 +3211,7 @@ def generate_MultiEvent() -> dict:
                         }
                     }
       
-                } "additionalProperties": False,
+                 "additionalProperties": False,
         "required": ["Start_Date", "End_Date", "Administrative_Areas" ,"Time_Annotation","Administrative_Areas_Annotation",
         "Main_Event", "Main_Event_Annotation", "Hazards" ,"Hazards_Annotation", "Total_Summary_Damage","Total_Summary_Buildings_Damaged",
         "Total_Summary_Affected", "Total_Summary_Deaths","Total_Summary_Displaced","Total_Summary_Homeless","Total_Summary_Injuries", "Total_Summary_Insured_Damage" ,
@@ -3222,6 +3222,319 @@ def generate_MultiEvent() -> dict:
    
 }
 
+"""
+def generate_MultiEvent() -> dict:
+    return {
+        "type": "json_schema",
+        "json_schema": {
+            "name": "MultiEvent_response",
+            "strict": True,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "Start_Date": {"type": "string"},
+                    "End_Date": {"type": "string"},
+                    "Time_Annotation": {"type": "string"},
+                    "Administrative_Areas": {
+                        "type": "array",
+                        "items": {"type": "string"}
+                    },
+                    "Administrative_Areas_Annotation": {"type": "string"},
+                    "Main_Event": {"type": "string"},
+                    "Main_Event_Annotation": {"type": "string"},
+                    "Hazards": {"type": "string"},
+                    "Hazards_Annotation": {"type": "string"},
+                    "Total_Summary_Affected": {
+                        "type": "object",
+                        "properties": {
+                            "Total_Affected": {"type": "string"},
+                            "Total_Affected_Annotation": {"type": "string"}
+                        },
+                        "required": ["Total_Affected", "Total_Affected_Annotation"],
+                        "additionalProperties": False
+                    },
+                    "Specific_Instance_Per_Administrative_Area_Affected": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "Administrative_Area": {"type": "string"},
+                                "Locations": {
+                                    "type": "array",
+                                    "items": {"type": "string"}
+                                },
+                                "Start_Date": {"type": "string"},
+                                "End_Date": {"type": "string"},
+                                "Num": {"type": "string"},
+                                "Annotation": {"type": "string"}
+                            },
+                            "required": [
+                                "Start_Date", "End_Date", "Administrative_Area",
+                                "Annotation", "Locations", "Num"
+                            ],
+                            "additionalProperties": False
+                        }
+                    },
+                    "Total_Summary_Buildings_Damaged": {
+                        "type": "object",
+                        "properties": {
+                            "Total_Buildings_Damaged": {"type": "string"},
+                            "Total_Buildings_Damaged_Annotation": {"type": "string"}
+                        },
+                        "required": ["Total_Buildings_Damaged", "Total_Buildings_Damaged_Annotation"],
+                        "additionalProperties": False
+                    },
+                    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "Administrative_Area": {"type": "string"},
+                                "Locations": {
+                                    "type": "array",
+                                    "items": {"type": "string"}
+                                },
+                                "Start_Date": {"type": "string"},
+                                "End_Date": {"type": "string"},
+                                "Num": {"type": "string"},
+                                "Annotation": {"type": "string"}
+                            },
+                            "required": [
+                                "Start_Date", "End_Date", "Administrative_Area",
+                                "Annotation", "Locations", "Num"
+                            ],
+                            "additionalProperties": False
+                        }
+                    },
+                    "Total_Summary_Deaths": {
+                        "type": "object",
+                        "properties": {
+                            "Total_Deaths": {"type": "string"},
+                            "Total_Deaths_Annotation": {"type": "string"}
+                        },
+                        "required": ["Total_Deaths", "Total_Deaths_Annotation"],
+                        "additionalProperties": False
+                    },
+                    "Specific_Instance_Per_Administrative_Area_Deaths": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "Administrative_Area": {"type": "string"},
+                                "Locations": {
+                                    "type": "array",
+                                    "items": {"type": "string"}
+                                },
+                                "Start_Date": {"type": "string"},
+                                "End_Date": {"type": "string"},
+                                "Num": {"type": "string"},
+                                "Annotation": {"type": "string"}
+                            },
+                            "required": [
+                                "Start_Date", "End_Date", "Administrative_Area",
+                                "Annotation", "Locations", "Num"
+                            ],
+                            "additionalProperties": False
+                        }
+                    },
+                    "Total_Summary_Displaced": {
+                        "type": "object",
+                        "properties": {
+                            "Total_Displaced": {"type": "string"},
+                            "Total_Displaced_Annotation": {"type": "string"}
+                        },
+                        "required": ["Total_Displaced", "Total_Displaced_Annotation"],
+                        "additionalProperties": False
+                    },
+                    "Specific_Instance_Per_Administrative_Area_Displaced": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "Administrative_Area": {"type": "string"},
+                                "Locations": {
+                                    "type": "array",
+                                    "items": {"type": "string"}
+                                },
+                                "Start_Date": {"type": "string"},
+                                "End_Date": {"type": "string"},
+                                "Num": {"type": "string"},
+                                "Annotation": {"type": "string"}
+                            },
+                            "required": [
+                                "Start_Date", "End_Date", "Administrative_Area",
+                                "Annotation", "Locations", "Num"
+                            ],
+                            "additionalProperties": False
+                        }
+                    },
+                    "Total_Summary_Homeless": {
+                        "type": "object",
+                        "properties": {
+                            "Total_Homeless": {"type": "string"},
+                            "Total_Homeless_Annotation": {"type": "string"}
+                        },
+                        "required": ["Total_Homeless", "Total_Homeless_Annotation"],
+                        "additionalProperties": False
+                    },
+                    "Specific_Instance_Per_Administrative_Area_Homeless": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "Administrative_Area": {"type": "string"},
+                                "Locations": {
+                                    "type": "array",
+                                    "items": {"type": "string"}
+                                },
+                                "Start_Date": {"type": "string"},
+                                "End_Date": {"type": "string"},
+                                "Num": {"type": "string"},
+                                "Annotation": {"type": "string"}
+                            },
+                            "required": [
+                                "Start_Date", "End_Date", "Administrative_Area",
+                                "Annotation", "Locations", "Num"
+                            ],
+                            "additionalProperties": False
+                        }
+                    },
+                    "Total_Summary_Injuries": {
+                        "type": "object",
+                        "properties": {
+                            "Total_Injuries": {"type": "string"},
+                            "Total_Injuries_Annotation": {"type": "string"}
+                        },
+                        "required": ["Total_Injuries", "Total_Injuries_Annotation"],
+                        "additionalProperties": False
+                    },
+                    "Specific_Instance_Per_Administrative_Area_Injuries": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "Administrative_Area": {"type": "string"},
+                                "Locations": {
+                                    "type": "array",
+                                    "items": {"type": "string"}
+                                },
+                                "Start_Date": {"type": "string"},
+                                "End_Date": {"type": "string"},
+                                "Num": {"type": "string"},
+                                "Annotation": {"type": "string"}
+                            },
+                            "required": [
+                                "Start_Date", "End_Date", "Administrative_Area",
+                                "Annotation", "Locations", "Num"
+                            ],
+                            "additionalProperties": False
+                        }
+                    },
+                    "Total_Summary_Insured_Damage": {
+                        "type": "object",
+                        "properties": {
+                            "Total_Insured_Damage": {"type": "string"},
+                            "Total_Insured_Damage_Annotation": {"type": "string"},
+                            "Total_Insured_Damage_Unit": {"type": "string"},
+                            "Total_Insured_Damage_Inflation_Adjusted": {"type": "string"},
+                            "Total_Insured_Damage_Inflation_Adjusted_Year": {"type": "string"}
+                        },
+                        "required": [
+                            "Total_Insured_Damage", "Total_Insured_Damage_Annotation",
+                            "Total_Insured_Damage_Unit", "Total_Insured_Damage_Inflation_Adjusted",
+                            "Total_Insured_Damage_Inflation_Adjusted_Year"
+                        ],
+                        "additionalProperties": False
+                    },
+                    "Specific_Instance_Per_Administrative_Area_Insured_Damage": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "Administrative_Area": {"type": "string"},
+                                "Locations": {
+                                    "type": "array",
+                                    "items": {"type": "string"}
+                                },
+                                "Start_Date": {"type": "string"},
+                                "End_Date": {"type": "string"},
+                                "Num": {"type": "string"},
+                                "Num_Unit": {"type": "string"},
+                                "Num_Inflation_Adjusted": {"type": "string"},
+                                "Num_Inflation_Adjusted_Year": {"type": "string"},
+                                "Annotation": {"type": "string"}
+                            },
+                            "required": [
+                                "Start_Date", "End_Date", "Administrative_Area", "Annotation",
+                                "Locations", "Num", "Num_Unit",
+                                "Num_Inflation_Adjusted", "Num_Inflation_Adjusted_Year"
+                            ],
+                            "additionalProperties": False
+                        }
+                    },
+                    "Total_Summary_Damage": {
+                        "type": "object",
+                        "properties": {
+                            "Total_Damage": {"type": "string"},
+                            "Total_Damage_Annotation": {"type": "string"},
+                            "Total_Damage_Unit": {"type": "string"},
+                            "Total_Damage_Inflation_Adjusted": {"type": "string"},
+                            "Total_Damage_Inflation_Adjusted_Year": {"type": "string"}
+                        },
+                        "required": [
+                            "Total_Damage", "Total_Damage_Annotation",
+                            "Total_Damage_Unit", "Total_Damage_Inflation_Adjusted",
+                            "Total_Damage_Inflation_Adjusted_Year"
+                        ],
+                        "additionalProperties": False
+                    },
+                    "Specific_Instance_Per_Administrative_Area_Damage": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "Administrative_Area": {"type": "string"},
+                                "Locations": {
+                                    "type": "array",
+                                    "items": {"type": "string"}
+                                },
+                                "Start_Date": {"type": "string"},
+                                "End_Date": {"type": "string"},
+                                "Num": {"type": "string"},
+                                "Num_Unit": {"type": "string"},
+                                "Num_Inflation_Adjusted": {"type": "string"},
+                                "Num_Inflation_Adjusted_Year": {"type": "string"},
+                                "Annotation": {"type": "string"}
+                            },
+                            "required": [
+                                "Start_Date", "End_Date", "Administrative_Area", "Annotation",
+                                "Locations", "Num", "Num_Unit",
+                                "Num_Inflation_Adjusted", "Num_Inflation_Adjusted_Year"
+                            ],
+                            "additionalProperties": False
+                        }
+                    }
+                },
+                "additionalProperties": False,
+                "required": [
+                    "Start_Date", "End_Date", "Administrative_Areas", "Time_Annotation",
+                    "Administrative_Areas_Annotation", "Main_Event", "Main_Event_Annotation",
+                    "Hazards", "Hazards_Annotation", "Total_Summary_Damage",
+                    "Total_Summary_Buildings_Damaged", "Total_Summary_Affected",
+                    "Total_Summary_Deaths", "Total_Summary_Displaced",
+                    "Total_Summary_Homeless", "Total_Summary_Injuries",
+                    "Total_Summary_Insured_Damage", "Specific_Instance_Per_Administrative_Area_Damage",
+                    "Specific_Instance_Per_Administrative_Area_Affected",
+                    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged",
+                    "Specific_Instance_Per_Administrative_Area_Deaths",
+                    "Specific_Instance_Per_Administrative_Area_Displaced",
+                    "Specific_Instance_Per_Administrative_Area_Homeless",
+                    "Specific_Instance_Per_Administrative_Area_Injuries",
+                    "Specific_Instance_Per_Administrative_Area_Insured_Damage"
+                ]
+            }
+        }
+    }
 
 
 # the schema for single event prompting, for different categories 
@@ -3417,7 +3730,7 @@ def generate_LocationEvent() -> dict:
 
 
 
-Post_location =f"""Using the provided country {Administrative_Area} and a list of locations {Locations}, 
+Post_location =f"""Using the provided country and a list of locations by the user, 
 trace the administrative hierarchy for each location back to one level below the country. 
 For each location, construct an array that represents the hierarchy. """
 
@@ -3436,12 +3749,12 @@ def check_Event() -> dict:
                     "Reason":{"type": "string"}
                         
                     },
-                },
+                
                 "additionalProperties": False,
-                "required": ["Checking_response"]
+                "required": ["Checking_response","Reason"]}
             }
         }
-checking_event=    f"""Using the provided content {content}, 
+checking_event=    f"""Using the provided content by the user, 
 determine if it describes information related to a climate event. Respond with "Yes" or "No", 
 followed by the reason for your judgment."""
 # for single event: 
@@ -3954,7 +4267,7 @@ V_7_1: dict = {
 
 
 # this is version for multi event article, because the content from multi event article are much shorter, so we join the prompt below together in one
-V_7_1_m= f"""Based on the content given by the user,
+V_7_1_m= """Based on the content given by the user,
 
        first, extract time and location information associated with the {Event_Name}, along with supporting citations from the article.
         the first is to identify the time information of the event {Event_Name}:
