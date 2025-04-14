@@ -5,7 +5,7 @@ import pathlib
 from pathlib import Path
 import openai
 from dotenv import load_dotenv
-from Database.Prompts.prompts import check_Event, checking_event
+from Database.Prompts.prompts import check_Event, checking_event_V2
 from Database.scr.log_utils import Logging
 import argparse
 import json
@@ -60,7 +60,9 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     logger.info(f"Passed args: {args}")
+    logger.info(f"Creating {args.output_dir} if it does not exist!")
 
+    pathlib.Path(args.output_dir).mkdir(parents=True, exist_ok=True)
     # Set up the environment
     env_path = Path(args.api_env)
     load_dotenv(dotenv_path=env_path)
@@ -80,25 +82,30 @@ if __name__ == "__main__":
 
         all_tables_new = []
         list_new = []
+        re_note= []
 
         for i in item.get("All_Tables", []):
-            user_input = f"Content: {str(i)}"
-            sys_prompt = checking_event
-            res_format = check_Event()
-            RE = gpt_checking(res_format, user_input, sys_prompt, client)
-            if "Yes" in RE.get("Checking_response"):
-                all_tables_new.append(i)
-
+            for table in i:
+                user_input = f"Content: {str(table)}"
+                sys_prompt = checking_event_V2
+                res_format = check_Event()
+                RE = gpt_checking(res_format, user_input, sys_prompt, client)
+                if "Yes" in RE.get("Checking_response"):
+                    all_tables_new.append(i)
+                    i_re=f"{user_input}+{RE}"
+                    re_note.append(i_re)
         for i in item.get("Lists", []):
             user_input = f"Content: {str(i)}"
             res_format = check_Event()
             RE = gpt_checking(res_format, user_input, sys_prompt, client)
-            print(f"response from the model:{RE}")
+           
             if "Yes" in RE.get("Checking_response"):
                 list_new.append(i)
-
+                i_re=f"{user_input}+{RE}"
+                re_note.append(i_re)
         event["All_Tables"] = all_tables_new
         event["Lists"] = list_new
+        event["re_note"]=re_note
 
         raw_text_new.append(event)
 

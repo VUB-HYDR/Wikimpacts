@@ -3754,9 +3754,14 @@ def check_Event() -> dict:
                 "required": ["Checking_response","Reason"]}
             }
         }
-checking_event=    f"""Using the provided content by the user, 
+# first version of checking events, but it's not working for filtering some event names
+checking_event_V1=    f"""Using the provided content by the user, 
 determine if it describes information related to a climate event. Respond with "Yes" or "No", 
 followed by the reason for your judgment."""
+# second version of checking events 
+checking_event_V2=    f"""Using the provided content by the user, 
+determine if it describes a climate event and its impacts. If the text doesn't mention any impacts, respond with 'No'.
+ Respond with "Yes" or "No", followed by the reason for your judgment."""
 # for single event: 
 V_7: dict = {
     "affected": [

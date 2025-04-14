@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 from pydantic import BaseModel, create_model
 from typing import List
 from Database.Prompts.prompts import V_7_1 as target_prompts
-from Database.Prompts.prompts import  check_Event, checking_event, generate_MultiEvent, generate_LocationEvent, checking_event, Post_location, generate_total_direct_schema, generate_total_monetary_schema, generate_TotalMainEvent, generate_TotalLocationEvent
+from Database.Prompts.prompts import  V_7_1_m, generate_MultiEvent, generate_LocationEvent, checking_event, Post_location, generate_total_direct_schema, generate_total_monetary_schema, generate_TotalMainEvent, generate_TotalLocationEvent
 from Database.scr.log_utils import Logging
 
 # the prompt list need to use the same variable names in our schema, and each key contains 1+ prompts
@@ -294,8 +294,6 @@ if __name__ == "__main__":
         Parameters:
         - raw_text: list of events containing 'Event_ID', 'Event_Name', 'Info_Box', etc.
         - target_prompts: dictionary where keys are categories (e.g., 'deaths', 'injuries') and values are lists of prompts
-        - prompt_list: list of categories to be processed
-        - batch_function: function to call for generating the batch line (either batch_gpt_basic or batch_gpt_impact)
 
         Returns:
         - data: list of formatted batch lines
@@ -310,21 +308,41 @@ if __name__ == "__main__":
             info_box = str(item.get("Info_Box"))
             whole_text = item.get("Whole_Text")
             All_tables= item.get("All_Tables")
-            List=item.get("Lists")
+            Lists=item.get("Lists")
             if Whole_text: 
                 for idx, i in whole_text: 
                     event_name = str(i.get("Header"))
                     content= str(i.get("Content"))
                     if content is not None and content.strip() != '': 
                         event_id = f"{event_id_base}_{idx}"  # unique event id with key and index
-                        sys_prompt = target_prompts.format(Event_Name=event_name if event_name else Event_Name="Event")
+                        sys_prompt = target_prompts.format(Event_Name=event_name if event_name else "event")
                         user_input=f" Content: {content}"
                         re_format_obj = generate_MultiEvent()  
                         line = batch_gpt(sys_prompt, event_id,user_input,re_format_obj)  # define the line of API request
                         data.append(line)
+            #  for tables, the event_name is not easy to obtain directly, therefore, just use "event"
             if All_tables is not None and All_tables.strip() != '': 
-                for idx, i in All_tables:
-                    
+                for table in All_Tables:
+                    for idx, i in table:
+                        if i is not None and i.strip() != '': 
+                            event_id = f"{event_id_base}_{idx}"  # unique event id with key and index
+                            sys_prompt = target_prompts.format(Event_Name="event")
+                            user_input=f" Content: {i}"
+                            re_format_obj = generate_MultiEvent()  
+                            line = batch_gpt(sys_prompt, event_id,user_input,re_format_obj)  # define the line of API request
+                            data.append(line)
+
+            if Lists is not None and Lists.strip() != '': 
+            
+                    for idx, i in Lists:
+                        if i is not None and i.strip() != '': 
+                            event_id = f"{event_id_base}_{idx}"  # unique event id with key and index
+                            sys_prompt = target_prompts.format(Event_Name="event")
+                            user_input=f" Content: {i}"
+                            re_format_obj = generate_MultiEvent()  
+                            line = batch_gpt(sys_prompt, event_id,user_input,re_format_obj)  # define the line of API request
+                            data.append(line)
+                        
                                
                    
         return data
@@ -395,9 +413,9 @@ if __name__ == "__main__":
         json_output_path = f"{args.raw_dir}/{args.filename.replace('.json', '_location_processed.json')}"
 
         df.to_json(json_output_path, orient='records', indent=2)
-    elif args.prompt_category == "impact":
+    elif args.prompt_category == "impact" and args.article_category == "single":
         # Process data for impact
-        impact_data = process_data(raw_text, target_prompts, prompt_impact_list)
+        impact_data = process_single_data(raw_text, target_prompts, prompt_impact_list)
         process_save_upload(
             impact_data,
             jsonl_file_path_impact,
@@ -406,9 +424,9 @@ if __name__ == "__main__":
             f"{args.description}_{args.model_name}_{args.filename}",
         )
 
-    elif args.prompt_category == "basic":
+    elif args.prompt_category == "basic"and args.article_category == "single":
         # Process data for basic
-        basic_data = process_data(raw_text, target_prompts, prompt_basic_list)
+        basic_data = process_single_data(raw_text, target_prompts, prompt_basic_list)
         process_save_upload(
             basic_data,
             jsonl_file_path_basic,
@@ -418,25 +436,37 @@ if __name__ == "__main__":
         )
 
     elif args.prompt_category == "all":
-        # Process and upload basic data
-        basic_data = process_data(raw_text, target_prompts, prompt_basic_list)
-        process_save_upload(
-            basic_data,
-            jsonl_file_path_basic,
-            args.description,
-            client,
-            f"{args.description}_{args.model_name}_{args.filename}",
-        )
+        if  args.article_category == "single":
+            # Process and upload basic data
+            basic_data = process_single_data(raw_text, target_prompts, prompt_basic_list)
+            process_save_upload(
+                basic_data,
+                jsonl_file_path_basic,
+                args.description,
+                client,
+                f"{args.description}_{args.model_name}_{args.filename}",
+            )
 
-        # Process and upload impact data
-        impact_data = process_data(raw_text, target_prompts, prompt_impact_list)
-        process_save_upload(
-            impact_data,
-            jsonl_file_path_impact,
-            args.description,
-            client,
-            f"{args.description}_{args.model_name}_{args.filename}",
-        )
+            # Process and upload impact data
+            impact_data = process_single_data(raw_text, target_prompts, prompt_impact_list)
+            process_save_upload(
+                impact_data,
+                jsonl_file_path_impact,
+                args.description,
+                client,
+                f"{args.description}_{args.model_name}_{args.filename}",
+            )
+
+        elif  args.article_category == "multi":
+            
+             data = process_multi_data(raw_text, V_7_1_m)
+             process_save_upload(
+                            data,
+                            jsonl_file_path_impact,
+                            args.description,
+                            client,
+                            f"{args.description}_{args.model_name}_{args.filename}",
+                        )
 
     
 
