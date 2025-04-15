@@ -71,32 +71,33 @@ if __name__ == "__main__":
         
         except :
             return ''
-
-    def process_tables(soup):
     
-
+    def process_tables(soup):
         # Find all tables
         tables = soup.find_all("table", {"class": "wikitable"})  # Adjust class if needed
-
         all_tables_data = []
         if tables:
             # Iterate over all tables found
             for table in tables:
                 headers = [header.text.strip() for header in table.find_all("th")]
                 data = []
-                
+
                 for row in table.find_all("tr")[1:]:  # Skip header row
-                    cells = row.find_all("td")
-                    if cells:
-                        row_data = {headers[i] if i < len(headers) else f"Column_{i}": cells[i].text.strip() for i in range(len(cells))}
-                        data.append(row_data)
+                    row_data = {}
+                    cells = row.find_all(["td", "th"])  # Include both td and th
+
+                    for i in range(min(len(headers), len(cells))):
+                        row_data[headers[i]] = cells[i].text.strip()
+
+                    data.append(row_data)
 
                 all_tables_data.append(data)
 
-                return all_tables_data
-        else :
-                return {}
+            return all_tables_data
+        else:
+            return {}
 
+    
 
     def get_wikipedia_infobox(url):
             response = requests.get(url)
