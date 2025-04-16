@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 from pydantic import BaseModel, create_model
 from typing import List
 from Database.Prompts.prompts import V_7_1 as target_prompts
-from Database.Prompts.prompts import  V_7_1_m, generate_MultiEvent, generate_LocationEvent, checking_event, Post_location, generate_total_direct_schema, generate_total_monetary_schema, generate_TotalMainEvent, generate_TotalLocationEvent
+from Database.Prompts.prompts import  V_7_1_m, generate_MultiEvent, generate_LocationEvent, Post_location, generate_total_direct_schema, generate_total_monetary_schema, generate_TotalMainEvent, generate_TotalLocationEvent
 from Database.scr.log_utils import Logging
 
 # the prompt list need to use the same variable names in our schema, and each key contains 1+ prompts
@@ -286,9 +286,9 @@ if __name__ == "__main__":
         return data
 
      # multi event 
-    
+    """
     def process_multi_data(raw_text, target_prompts):
-        """
+      
         Processes data based on a prompt list and batch function.
 
         Parameters:
@@ -297,7 +297,7 @@ if __name__ == "__main__":
 
         Returns:
         - data: list of formatted batch lines
-        """
+     
         data = []
   
                 
@@ -309,29 +309,33 @@ if __name__ == "__main__":
             whole_text = item.get("Whole_Text")
             All_tables= item.get("All_Tables")
             Lists=item.get("Lists")
-            if Whole_text: 
-                for idx, i in whole_text: 
-                    event_name = str(i.get("Header"))
-                    content= str(i.get("Content"))
+            if whole_text: 
+                for idx, i in enumerate(whole_text):
+                    # Defensive: Ensure i is dict before calling .get
+                    if not isinstance(i, dict):
+                        continue  # or handle error
+                    event_name = str(i.get("header") or i.get("Header"))
+                    content    = str(i.get("content") or i.get("Content"))
                     if content is not None and content.strip() != '': 
-                        event_id = f"{event_id_base}_{idx}"  # unique event id with key and index
+                        event_id = f"{event_id_base}_{idx}"  # unique id with key and index
                         sys_prompt = target_prompts.format(Event_Name=event_name if event_name else "event")
                         user_input=f" Content: {content}"
                         re_format_obj = generate_MultiEvent()  
-                        line = batch_gpt(sys_prompt, event_id,user_input,re_format_obj)  # define the line of API request
+                        line = batch_gpt(sys_prompt, event_id, user_input, re_format_obj)  # define the line of API request
                         data.append(line)
             #  for tables, the event_name is not easy to obtain directly, therefore, just use "event"
-            if All_tables is not None and All_tables.strip() != '': 
-                for table in All_Tables:
-                    for idx, i in table:
-                        if i is not None and i.strip() != '': 
+            if All_tables:  # Checks All_tables is not None and not empty list
+                for table in All_tables:
+                    # Assuming 'table' is an iterable of rows or items you want to process
+                    for idx, i in enumerate(table):
+                        # Defensive: Ensure 'i' is a string before applying strip()
+                        if isinstance(i, str) and i.strip() != '': 
                             event_id = f"{event_id_base}_{idx}"  # unique event id with key and index
                             sys_prompt = target_prompts.format(Event_Name="event")
-                            user_input=f" Content: {i}"
+                            user_input = f" Content: {i}"
                             re_format_obj = generate_MultiEvent()  
-                            line = batch_gpt(sys_prompt, event_id,user_input,re_format_obj)  # define the line of API request
+                            line = batch_gpt(sys_prompt, event_id, user_input, re_format_obj)
                             data.append(line)
-
             if Lists is not None and Lists.strip() != '': 
             
                     for idx, i in Lists:
@@ -346,7 +350,75 @@ if __name__ == "__main__":
                                
                    
         return data
+    """
+    def process_multi_data(raw_text, target_prompts):
+        """
+        Processes data based on a prompt list and batch function.
 
+        Parameters:
+        - raw_text: list of events containing 'Event_ID', 'Event_Name', 'Info_Box', etc.
+        - target_prompts: dictionary where keys are categories (e.g., 'deaths', 'injuries') and values are lists of prompts
+
+        Returns:
+        - data: list of formatted batch lines
+        """
+        data = []
+        for item in raw_text:
+            event_id_base = str(item.get("Event_ID"))
+            
+            info_box = str(item.get("Info_Box"))
+            whole_text = item.get("Whole_Text")
+            All_tables = item.get("All_Tables")
+            Lists = item.get("Lists")
+            
+            # --- Use a single counter for this item ---
+            idx = 0
+            
+            # Process whole_text
+            if whole_text:
+                for i in whole_text:
+                    if not isinstance(i, dict):
+                        continue
+                    event_name = str(i.get("header") or i.get("Header"))
+                    content    = str(i.get("content") or i.get("Content"))
+                    if content is not None and content.strip() != '':
+                        event_id = f"{event_id_base}_{idx}"
+                        sys_prompt = target_prompts.format(Event_Name=event_name if event_name else "event")
+                        user_input = f" Content: {content}"
+                        re_format_obj = generate_MultiEvent()
+                        line = batch_gpt(sys_prompt, event_id, user_input, re_format_obj)
+                        data.append(line)
+                        idx += 1  # increment main index
+            
+            # Process All_tables
+            if All_tables:
+                for table in All_tables:
+                    for i in table:
+                        if isinstance(i, str) and i.strip() != '':
+                            event_id = f"{event_id_base}_{idx}"
+                            sys_prompt = target_prompts.format(Event_Name="event")
+                            user_input = f" Content: {i}"
+                            re_format_obj = generate_MultiEvent()
+                            line = batch_gpt(sys_prompt, event_id, user_input, re_format_obj)
+                            data.append(line)
+                            idx += 1
+
+            # Process Lists
+            if Lists:
+                # If Lists is a string (should be list ideally)
+                if isinstance(Lists, str):
+                    Lists = [Lists]
+                for i in Lists:
+                    if isinstance(i, str) and i.strip() != '':
+                        event_id = f"{event_id_base}_{idx}"
+                        sys_prompt = target_prompts.format(Event_Name="event")
+                        user_input = f" Content: {i}"
+                        re_format_obj = generate_MultiEvent()
+                        line = batch_gpt(sys_prompt, event_id, user_input, re_format_obj)
+                        data.append(line)
+                        idx += 1
+
+        return data
 
 
     def save_batch_file(data, file_path, description):
