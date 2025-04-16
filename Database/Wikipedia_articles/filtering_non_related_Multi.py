@@ -27,14 +27,15 @@ def gpt_checking(res_format, user_input, sys_prompt, client):
     try:
         response = client.chat.completions.create(
             response_format=res_format,
-            model="gpt-4o-mini-2024-07-18",
+            #model="gpt-4o-mini-2024-07-18",
+            model="o3-mini-2025-01-31",
             messages=[
                 {"role": "developer", "content": sys_prompt},
                 {"role": "user", "content": user_input}
             ],
-            temperature=0,
-            max_tokens=4096,
-            n=1,
+           
+            max_completion_tokens=100000,
+            
             stop=None
         )
         message = response.choices[0].message.content
@@ -85,15 +86,15 @@ if __name__ == "__main__":
         re_note= []
 
         for i in item.get("All_Tables", []):
-            for table in i:
-                user_input = f"Content: {str(table)}"
-                sys_prompt = checking_event_V2
-                res_format = check_Event()
-                RE = gpt_checking(res_format, user_input, sys_prompt, client)
-                if "Yes" in RE.get("Checking_response"):
-                    all_tables_new.append(i)
-                    i_re=f"{user_input}+{RE}"
-                    re_note.append(i_re)
+           
+            user_input = f"Content: {str(i)}"
+            sys_prompt = checking_event_V2
+            res_format = check_Event()
+            RE = gpt_checking(res_format, user_input, sys_prompt, client)
+            if "Yes" in RE.get("Checking_response"):
+                all_tables_new.append(i)
+                i_re=f"{user_input}+{RE}"
+                re_note.append(i_re)
         for i in item.get("Lists", []):
             user_input = f"Content: {str(i)}"
             res_format = check_Event()

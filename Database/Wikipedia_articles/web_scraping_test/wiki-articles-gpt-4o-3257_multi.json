@@ -83,55 +83,64 @@
         "content": ""
       }
     ],
-    "Info_Box": "Formed: 8 November 1970 (1970-11-8)\nDissipated: 13 November 1970 (1970-11-13)\nHighest winds: 240 km/h (150 mph)\nLowest pressure: 960 hPa (mbar); 28.35 inHg\nFatalities: 300,000-500,000 (Deadliest tropical cyclone on record)\nDamage: $86.4 million (1970 USD)\nAreas affected: East Pakistan and India",
+    "Info_Box": "Formed: 8 November 1970 (1970-11-08)\nDissipated: 13 November 1970 (1970-11-13)\nHighest winds: 240 km/h (150 mph)\nLowest pressure: 960 hPa (mbar); 28.35 inHg\nFatalities: 300,000-500,000 (Deadliest tropical cyclone on record)\nDamage: $86.4 million (1970 USD)\nAreas affected: East Pakistan and India",
     "Event_ID": "M6WhOZz",
     "Article_Name": "1970 Bhola cyclone",
     "All_Tables": [
       [
         {
-          "Rank": "Bhola 1970",
-          "Name/Year": "Bangladesh",
-          "Region": "300,000"
+          "Rank": "1",
+          "Name/Year": "Bhola 1970",
+          "Region": "Bangladesh",
+          "Fatalities": "300,000"
         },
         {
-          "Rank": "Bangladesh 1991",
-          "Name/Year": "Bangladesh",
-          "Region": "138,866"
+          "Rank": "2",
+          "Name/Year": "Bangladesh 1991",
+          "Region": "Bangladesh",
+          "Fatalities": "138,866"
         },
         {
-          "Rank": "Nargis 2008",
-          "Name/Year": "Myanmar",
-          "Region": "138,373"
+          "Rank": "3",
+          "Name/Year": "Nargis 2008",
+          "Region": "Myanmar",
+          "Fatalities": "138,373"
         },
         {
-          "Rank": "Unnamed 1911",
-          "Name/Year": "Bangladesh",
-          "Region": "120,000"
+          "Rank": "4",
+          "Name/Year": "Unnamed 1911",
+          "Region": "Bangladesh",
+          "Fatalities": "120,000"
         },
         {
-          "Rank": "Unnamed 1917",
-          "Name/Year": "Bangladesh",
-          "Region": "70,000"
+          "Rank": "5",
+          "Name/Year": "Unnamed 1917",
+          "Region": "Bangladesh",
+          "Fatalities": "70,000"
         },
         {
-          "Rank": "Harriet 1962",
-          "Name/Year": "Thailand, Bangladesh",
-          "Region": "50,935"
+          "Rank": "6",
+          "Name/Year": "Harriet 1962",
+          "Region": "Thailand, Bangladesh",
+          "Fatalities": "50,935"
         },
         {
-          "Rank": "Unnamed 1919",
-          "Name/Year": "Bangladesh",
-          "Region": "40,000"
+          "Rank": "7",
+          "Name/Year": "Unnamed 1919",
+          "Region": "Bangladesh",
+          "Fatalities": "40,000"
         },
         {
-          "Rank": "Nina 1975",
-          "Name/Year": "China",
-          "Region": "26,000"
+          "Rank": "8",
+          "Name/Year": "Nina 1975",
+          "Region": "China",
+          "Fatalities": "26,000"
         },
         {
-          "Rank": "Unnamed 1958",
-          "Name/Year": "Bangladesh",
-          "Region": "12,000"
+          "Rank": "9",
+          "Name/Year": "Unnamed 1958",
+          "Region": "Bangladesh",
+          "Fatalities": "12,000"
         },
         {
           "Rank": "Unnamed 1965",
@@ -1700,24 +1709,34 @@
         "content": ""
       }
     ],
-    "Info_Box": "Formed: September 4, 1947 (1947-09-04)\nExtratropical: September 21\nDissipated: September 21, 1947 (1947-09-22)\nHighest winds: 145 mph (230 km/h)\nLowest pressure: 938 mbar (hPa); 27.70 inHg\nFatalities: 51 direct\nDamage: $84.2 million (1947 USD)($1.19 billion in 2025 USD)\nAreas affected: The Bahamas\nFlorida\nLouisiana\nMississippi",
+    "Info_Box": "Formed: September 4, 1947 (1947-09-04)\nExtratropical: September 21, 1947\nDissipated: September 21, 1947 (1947-09-22)\nHighest winds: 145 mph (230 km/h)\nLowest pressure: 938 mbar (hPa); 27.70 inHg\nFatalities: 51 direct\nDamage: $84.2 million (1947 USD)($1.19 billion in 2025 USD)\nAreas affected: The Bahamas\nFlorida\nLouisiana\nMississippi",
     "Event_ID": "bRT6j0l",
     "Article_Name": "1947 Fort Lauderdale hurricane",
     "All_Tables": [
       [
         {
-          "Impacts by region": "0",
-          "Region": "?",
-          "Deaths": "—",
-          "Injuries": "[38]",
-          "Locale": "—"
+          "Impacts by region": "Region",
+          "Region": "Deaths",
+          "Deaths": "Injuries",
+          "Injuries": "Damages",
+          "Locale": "Deaths",
+          "Damages": "Source"
         },
         {
-          "Impacts by region": "51",
-          "Region": "935",
-          "Deaths": "$31,800,000",
-          "Injuries": "[39]",
-          "Locale": "186"
+          "Impacts by region": "Caribbean and Bahamas",
+          "Region": "0",
+          "Deaths": "—",
+          "Injuries": "—",
+          "Locale": "0",
+          "Damages": "[38]"
+        },
+        {
+          "Impacts by region": "United States",
+          "Region": "51",
+          "Deaths": "186",
+          "Injuries": "$31,800,000",
+          "Locale": "17",
+          "Damages": "[39]"
         },
         {
           "Impacts by region": "Louisiana",
@@ -1732,6 +1751,13 @@
           "Deaths": "654",
           "Injuries": "$28,438,000",
           "Locale": "[40]"
+        },
+        {
+          "Impacts by region": "Total",
+          "Region": "51",
+          "Deaths": "935",
+          "Injuries": "$84,238,000",
+          "Locale": "[41]"
         }
       ]
     ],
@@ -2180,7 +2206,7 @@
       "Pages using obsolete storm path colors",
       "Pages using gadget WikiMiniAtlas",
       "CS1 maint: numeric names: authors list",
-      "This page was last edited on 21 March 2025, at 17:59(UTC).",
+      "This page was last edited on 12 April 2025, at 05:26(UTC).",
       "Text is available under theCreative Commons Attribution-ShareAlike 4.0 License;\nadditional terms may apply. By using this site, you agree to theTerms of UseandPrivacy Policy. Wikipedia® is a registered trademark of theWikimedia Foundation, Inc., a non-profit organization.",
       "Privacy policy",
       "About Wikipedia",

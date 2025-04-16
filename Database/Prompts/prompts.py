@@ -3762,6 +3762,12 @@ followed by the reason for your judgment."""
 checking_event_V2=    f"""Using the provided content by the user, 
 determine if it describes a climate event and its impacts. If the text doesn't mention any impacts, respond with 'No'.
  Respond with "Yes" or "No", followed by the reason for your judgment."""
+ 
+# second version of checking events 
+checking_event_V3=    f"""Using the provided content by the user, 
+determine if it describes the climate event with impacts. If the provided text doesn't mention any impacts, respond with 'No'.
+Respond with "Yes" or "No", followed by the reason for your judgment."""
+ 
 # for single event: 
 V_7: dict = {
     "affected": [
