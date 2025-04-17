@@ -165,8 +165,8 @@ if __name__ == "__main__":
             return structured_content
 
     event_info = []
-    for index, row in df[:10].iterrows():
-            url = str(row["Best_Hit"])
+    for index, row in df.iterrows():
+            url = str(row["Source"])
             event_id = str(row["Event_ID"])
             html = getHTMLText(url)
             if html: 
