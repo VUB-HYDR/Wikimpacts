@@ -3223,11 +3223,12 @@ def generate_MultiEvent() -> dict:
 }
 
 """
-def generate_MultiEvent() -> dict:
+
+def generate_MultiEvent_basic() -> dict:
     return {
         "type": "json_schema",
         "json_schema": {
-            "name": "MultiEvent_response",
+            "name": "MultiEvent_response_basic",
             "strict": True,
             "schema": {
                 "type": "object",
@@ -3243,7 +3244,33 @@ def generate_MultiEvent() -> dict:
                     "Main_Event": {"type": "string"},
                     "Main_Event_Annotation": {"type": "string"},
                     "Hazards": {"type": "string"},
-                    "Hazards_Annotation": {"type": "string"},
+                    "Hazards_Annotation": {"type": "string"}
+                },
+                "additionalProperties": False,
+                "required": [
+                    "Start_Date",
+                    "End_Date",
+                    "Administrative_Areas",
+                    "Time_Annotation",
+                    "Administrative_Areas_Annotation",
+                    "Main_Event",
+                    "Main_Event_Annotation",
+                    "Hazards",
+                    "Hazards_Annotation"
+                ]
+            }
+        }
+    }
+def generate_MultiEvent_impact() -> dict:
+    return {
+        "type": "json_schema",
+        "json_schema": {
+            "name": "MultiEvent_response_impact",
+            "strict": True,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    
                     "Total_Summary_Affected": {
                         "type": "object",
                         "properties": {
@@ -3517,9 +3544,7 @@ def generate_MultiEvent() -> dict:
                 },
                 "additionalProperties": False,
                 "required": [
-                    "Start_Date", "End_Date", "Administrative_Areas", "Time_Annotation",
-                    "Administrative_Areas_Annotation", "Main_Event", "Main_Event_Annotation",
-                    "Hazards", "Hazards_Annotation", "Total_Summary_Damage",
+                    "Total_Summary_Damage",
                     "Total_Summary_Buildings_Damaged", "Total_Summary_Affected",
                     "Total_Summary_Deaths", "Total_Summary_Displaced",
                     "Total_Summary_Homeless", "Total_Summary_Injuries",
@@ -4278,7 +4303,7 @@ V_7_1: dict = {
 
 
 # this is version for multi event article, because the content from multi event article are much shorter, so we join the prompt below together in one
-V_7_1_m= """Based on the content given by the user,
+V_7_1_m_basic= """Based on the content given by the user,
 
        first, extract time and location information associated with the {Event_Name}, along with supporting citations from the article.
         the first is to identify the time information of the event {Event_Name}:
@@ -4306,10 +4331,11 @@ V_7_1_m= """Based on the content given by the user,
            - "Hazards": "Identify the hazards of the {Event_Name}, make sure the hazards are associated with the Main_Event category from the table, and if more than one hazard is detected from the text, separate them with '|'. "
            - "Hazards_Annotation": "Cite the setences from the article provided where you find the information about the hazard information."
         
-        Take your time to read the whole text provided by the user, and answer the questions above.
- 
-    
-      Next, extract the number of affected people associated with the {Event_Name}, along with supporting citations from the article.
+        Take your time to read the whole text provided by the user, and answer the questions above."""
+
+V_7_1_m_impact= """Based on the content given by the user,
+
+      First, extract the number of affected people associated with the {Event_Name}, along with supporting citations from the article.
       The affected people information can be splited into 2 parts,
       the first is the total number of affected people caused by the {Event_Name}, 
       - "Total_Affected": "The total number of people who were affected, impacted, or influenced in the {Event_Name}.

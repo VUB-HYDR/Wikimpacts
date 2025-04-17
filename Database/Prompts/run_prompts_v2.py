@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 from pydantic import BaseModel, create_model
 from typing import List
 from Database.Prompts.prompts import V_7_1 as target_prompts
-from Database.Prompts.prompts import  V_7_1_m, generate_MultiEvent, generate_LocationEvent, Post_location, generate_total_direct_schema, generate_total_monetary_schema, generate_TotalMainEvent, generate_TotalLocationEvent
+from Database.Prompts.prompts import  V_7_1_m_basic,V_7_1_m_impact, generate_MultiEvent_basic,generate_MultiEvent_impact, generate_LocationEvent, Post_location, generate_total_direct_schema, generate_total_monetary_schema, generate_TotalMainEvent, generate_TotalLocationEvent
 from Database.scr.log_utils import Logging
 
 # the prompt list need to use the same variable names in our schema, and each key contains 1+ prompts
@@ -351,7 +351,7 @@ if __name__ == "__main__":
                    
         return data
     """
-    def process_multi_data(raw_text, target_prompts):
+    def process_multi_data(raw_text, target_prompts, re_format):
         """
         Processes data based on a prompt list and batch function.
 
@@ -385,7 +385,7 @@ if __name__ == "__main__":
                         event_id = f"{event_id_base}_{idx}"
                         sys_prompt = target_prompts.format(Event_Name=event_name if event_name else "event")
                         user_input = f" Content: {content}"
-                        re_format_obj = generate_MultiEvent()
+                        re_format_obj = re_format()
                         line = batch_gpt(sys_prompt, event_id, user_input, re_format_obj)
                         data.append(line)
                         idx += 1  # increment main index
@@ -398,7 +398,7 @@ if __name__ == "__main__":
                             event_id = f"{event_id_base}_{idx}"
                             sys_prompt = target_prompts.format(Event_Name="event")
                             user_input = f" Content: {i}"
-                            re_format_obj = generate_MultiEvent()
+                            re_format_obj = re_format()
                             line = batch_gpt(sys_prompt, event_id, user_input, re_format_obj)
                             data.append(line)
                             idx += 1
@@ -413,7 +413,7 @@ if __name__ == "__main__":
                         event_id = f"{event_id_base}_{idx}"
                         sys_prompt = target_prompts.format(Event_Name="event")
                         user_input = f" Content: {i}"
-                        re_format_obj = generate_MultiEvent()
+                        re_format_obj = re_format()
                         line = batch_gpt(sys_prompt, event_id, user_input, re_format_obj)
                         data.append(line)
                         idx += 1
@@ -531,14 +531,24 @@ if __name__ == "__main__":
 
         elif  args.article_category == "multi":
             
-             data = process_multi_data(raw_text, V_7_1_m)
-             process_save_upload(
-                            data,
-                            jsonl_file_path_impact,
-                            args.description,
-                            client,
-                            f"{args.description}_{args.model_name}_{args.filename}",
-                        )
+             # Process and upload basic data
+            basic_data = process_multi_data(raw_text, V_7_1_m_basic, generate_MultiEvent_basic)
+            process_save_upload(
+                basic_data,
+                jsonl_file_path_basic,
+                args.description,
+                client,
+                f"{args.description}_{args.model_name}_{args.filename}",
+            )
 
+            # Process and upload impact data
+            impact_data = process_multi_data(raw_text, V_7_1_m_impact,generate_MultiEvent_impact)
+            process_save_upload(
+                impact_data,
+                jsonl_file_path_impact,
+                args.description,
+                client,
+                f"{args.description}_{args.model_name}_{args.filename}",
+            )
     
 
