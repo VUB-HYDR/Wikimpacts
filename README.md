@@ -1,11 +1,13 @@
 [![Run Unit Tests via Pytest](https://github.com/VUB-HYDR/Wikimpacts/actions/workflows/run_tests.yml/badge.svg)](https://github.com/VUB-HYDR/Wikimpacts/actions/workflows/run_tests.yml)
 
 # Wikimpacts
+
 Wikimapcts is the first version of climate impact dataset creating by generative AI GPT4.0
 
-
 ## Dependencies
+
 Prerequisite:
+
 - Install [`poetry`](https://python-poetry.org/docs/#installation)
 Then activate a virtual environment and install the dependencies:
 
@@ -28,42 +30,137 @@ pre-commit installed at .git/hooks/pre-commit
 git lfs install
 ```
 
-## Quickstart
+## Development
 
-#### (Step 0) Run your experiments!
+Always pull a fresh copy of the `main` branch first! To add a new feature, check out a new branch from the `main` branch, make changes there, and push the new branch upstream to open a PR. PRs should result in a **squash commit** in the `main` branch. **It is recommended to code responsibly and ask someone to review your code. You can always tag [i-be-snek](https://github.com/i-be-snek) as a reviewer.**
 
-##### Run prompt experiments on OpenAI models
+Always _**rebase**_ your branch on the latest changes in `main` instead of merging using `git rebase main`. If you are having trouble with resolving merge conflicts when rebasing, consult [i-be-snek](https://github.com/i-be-snek).
+
+And don't forget to pull large files from Git Large File Storage!
+
+```shell
+# always pull first
+git pull main
+
+# fetch and merge all files for your current branch
+git lfs pull
+
+# fetch and merge all files for ALL branches
+git lfs pull --all
+```
+
+> [!TIP]
+> Consult this [StackOverflow answer on how to use `git lfs`](https://stackoverflow.com/a/72610495/14123992)
+
+Make sure any new dependencies are handled by `poetry`.You should be tracking and pushing both `poetry.lock` and `pyproject.toml` files.
+There is no need to manually add dependencies to the `pyproject.toml` file. Instead, use `poetry` commands:
+
+```shell
+# add pandas as a main dependency
+poetry add pandas -G main
+
+# add a specific version of ipykernel as a dev dependency
+poetry add ipykernel@6.29.4 -G dev
+```
+
+## Pipeline Docs
+
+The process below describes crucial parts of our pipeline.
+
+### Running prompts and experiments on OpenAI models
+
+#### Run prompt experiments on OpenAI models
+
 If you use OpenAI models, there is a way to save your cost with running experiments in batch.
-We developed a series of prompts for our database as follows
+We developed a series of prompts for our database as follows:
+
 - V_0 is a list of prompts used in the NLP2024 paper
 - V_1 is the list of prompts used for L1-3 and the annotation is directly quoted from the article
 - V_2 is the list of prompts for L1-3 with annotation gives the header names
-**(V_0-2 are not recommanded, because the variable names are not matched with following pipeline)**
-- V_3_1 is a version based on V2, but with freezed variable names as the schema we confirmed
+**(V_0-2 are not used in the test, because the variable names are not matched with following pipeline)**
+- V_3_1 is a version based on V2, but with frozen variable names as the schema we confirmed
 - V_3_2 is a version based on V3, but in L1, we prompt the model to only capture affected countries
 - V_4 is the one with two prompts for each impact category, one prompt for L1/2 and one for L3
 - V_5 is the one with three prompts for each impact category
+
+The prompts can be found in [Database/Prompts/prompts.py](Database/Prompts/prompts.py).
+
 Before you run our pipeline, please choose a version of prompts to proceed, which can be revised in the beginning of **run_prompts.py**
 
 ```shell
 from Database.Prompts.prompts import V_3 as target_prompts
 ```
 
-#### (Step 1) Raw output
-Choose the raw file contains the text you need to process, please use the clear raw file name to indicate your experiment, this name will be used as the output file, the api env you want to use, the decription of the experiment, the prompt category, and the batch file location you want to store the batch file (this is not mandatory, but it's good to check if you create correct batch file)
+##### Step 1: Experiment Settings
 
-#### (Step 2) GPT models
-Choose the model you want to apply. The default model is "gpt-4o-2024-05-13"
-- below is a command example you can refer to run the script:
+1. **Raw File Selection**: Choose a clear and descriptive filename for the raw file you want to process, such as `wiki_dev_whole_infobox_20240729_70single_events`.
+
+2. **API Environment**: Specify the API environment, which is mandatory for OpenAI models.
+
+3. **Experiment Description**: Provide a description of the experiment, like "all_categories_V3", to clarify its purpose and scope.
+
+4. **Prompt Category**: Indicate the prompt category, such as "all".
+
+5. **Batch File Location** (Optional): Specify where to store the batch file. This helps verify the batch file's creation.
+
+##### Step 2: Model and Command Setup
+
+- **Model Selection**: Choose the GPT model to apply. The default is `gpt-4o-2024-05-13`, but you can specify another model if needed.
+
+- **Command Structure**: Use the following template to run your script, replacing placeholders with your details:
+
 ```shell
-poetry run python3 Database/Prompts/run_prompts.py --filename wiki_dev_whole_infobox_20240729_70single_events.json --raw_dir Database/Wiki_dev_test_articles --batch_dir Database/Prompts/batch --api_env .env --description all_categories_V3  --model_name gpt-4o-2024-08-06 --max_tokens 16384  --prompt_category all
+poetry run python3 Database/Prompts/run_prompts.py \
+  --filename <filename>.json \
+  --raw_dir <raw_directory> \
+  --batch_dir <batch_directory> \
+  --api_env <api_environment_file> \
+  --description <experiment_description> \
+  --model_name <model_name> \
+  --max_tokens <max_tokens> \
+  --prompt_category <prompt_category>
 ```
-#### (Step 3) Retrieve results
-Choose the same raw file as you run the experiment, the same api env to access your remote OpenAI server and the output directory to store your result.
-- below is a command example you can refer to run the script:
+
+###### Example Command
+
 ```shell
-poetry run python3  Database/Prompts/batch_output_retrivel.py  --api_env .env  --output_dir  Database/raw/batch_test  --file_name wiki_dev_whole_infobox_20240729_70single_events.json  --raw_dir  Database/Wiki_dev_test_articles --description all_categories_V3
+poetry run python3 Database/Prompts/run_prompts.py \
+  --filename wiki_dev_whole_infobox_20240729_70single_events.json \
+  --raw_dir Database/Wiki_dev_test_articles \
+  --batch_dir Database/Prompts/batch \
+  --api_env .env \
+  --description all_categories_V3 \
+  --model_name gpt-4o-2024-08-06 \
+  --max_tokens 16384 \
+  --prompt_category all
 ```
+
+###### Explanation of Parameters
+
+- `--filename`: Name of the raw file to process.
+- `--raw_dir`: Directory of the raw files.
+- `--batch_dir`: Directory to store the batch file.
+- `--api_env`: Environment file with API credentials.
+- `--description`: Experiment description.
+- `--model_name`: GPT model name.
+- `--max_tokens`: Maximum tokens for processing.
+- `--prompt_category`: Prompt category.
+
+##### Step 3: Retrieve Results
+
+Use the same raw file and API environment to access your OpenAI server and specify the output directory for results.
+
+###### Command Example
+
+```shell
+poetry run python3 Database/Prompts/batch_output_retrivel.py \
+  --api_env .env \
+  --output_dir Database/raw/batch_test \
+  --file_name wiki_dev_whole_infobox_20240729_70single_events.json \
+  --raw_dir Database/Wiki_dev_test_articles \
+  --description all_categories_V3
+```
+
 ### Parsing and evaluation pipeline
 
 If you have generated some LLM output and would like to test it against the dev and test gold sets, here is a list of command to enable you to experiment with this yourself.
@@ -72,7 +169,8 @@ If you have generated some LLM output and would like to test it against the dev 
 
 Choose a new experiment name! You will use this <EXPERIMENT_NAME> for the whole pipeline.
 
-#### PRESTEP (before Step 2):
+#### (Step 2-a (Optional prestep!))
+
 If the system output is split across several files (such as Mixtral and Mistral system outputs), then first merge it:
 
 - Normalizing JSON output for Mistral/Mixtral
@@ -88,7 +186,6 @@ If the system output is split across several files (such as Mixtral and Mistral 
 - Normalizing JSON output for GPT4o
 
     GPT4o sometimes produces inconsistent JSON where it nests keys like "Location" under "Location_Information" and start and end date under the key "Time_Information". In this case, you need to unnest these using the script below:
-
 
     ```shell
     poetry run python3 Database/fix_json_inconsistencies.py \
@@ -110,13 +207,13 @@ If the system output is split across several files (such as Mixtral and Mistral 
 > Your raw system output files should always land in the `Database/raw/<EXPERIMENT_NAME>` directory!
 
 > [!TIP]
->  JSON files can be formatted easily with pre-commit:
+> JSON files can be formatted easily with pre-commit:
 >
 > ```shell
 > pre-commit run --files Database/raw/<EXPERIMENT_NAME>/> <JSON_FILE_THAT_NEEDS_FORMATTING>
 > ```
 
-#### (Step 2) Parsing l1, l2, and l3 events
+#### (Step 2-b) Parsing l1, l2, and l3 events
 
 Once all system output files are merged into a single JSON file (**or if this was already the case, such as with GPT4 output**), you can parse them so they are ready to be evaluated.
     The parsing script [`Database/parse_events.py`](Database/parse_events.py) will normalize numbers (to min and max) and locations (using OpenStreetMap) and output a JSON file.
@@ -133,7 +230,6 @@ poetry run python3 Database/parse_events.py \
 poetry run python3 Database/parse_events.py --help
 
 ```
-
 
 You can also parse l1 first and store a row file. Later on, you can parse l2 or l3 from the same file without having to re-tun all of the parsing for l1. This allows splitting jobs. You can try the example below on dummy data. It's best to delete the contents of [Database/output/dummy](Database/output/dummy) first to re-run the example!
 
@@ -165,10 +261,10 @@ poetry run python3 Database/parse_events.py \
 > [!WARNING]
 > Normalizing countries will go slow the first time. This is because we are using a free API (currently!). However, each time this script is run locally, geopy will cache the results, meaning that it will go faster the next time you run it on your local branch. Allow for 15-20 minutes the first time.
 
-
 #### (Step 2) Evaluate against the dev and test sets
 
 ##### (A) Choose your config and columns
+
 The python dictionary in <a href="Evaluation/weights.py"><code>weights.py</code></a> contains different weight configs. For example, the experiments nlp4climate weighs all the column types equally but excludes the "Event_Name" from evaluation.
 
 Also, this config will result in evaluating only on this smaller set of columns, so this list also functions as a set of columns that will be included in the evaluation script for this experiment.
@@ -199,8 +295,8 @@ Also, this config will result in evaluating only on this smaller set of columns,
     }
 ```
 
-
 ##### (B) Evaluate L1 (Total Summary) events
+
  When your config is ready, run the evaluation script:
 
 ```shell
@@ -234,6 +330,7 @@ poetry run python3 Evaluation/evaluator.py \
 --weights_config specific_instance \
 --impact_type deaths
 ```
+
 If run properly, you should see the results in `Database/evaluation_results/specific_instance_eval_test`:
 
 ```shell
@@ -249,7 +346,6 @@ Database/evaluation_results/specific_instance_eval_test
 
 > [!WARNING]
 > Do not commit these files to your branch or to `main`, big thanks!
-
 
 ### Evaluating L1, L2, and L3 in a single run
 
@@ -311,6 +407,7 @@ poetry run python3 Database/fill_data_gap.py -i Database/output/full_run_25_dedu
 ```
 
 ### Database-related
+
 - To generate the database according to [`Database/schema.sql`](Database/schema.sql):
 
     ```shell
@@ -319,7 +416,7 @@ poetry run python3 Database/fill_data_gap.py -i Database/output/full_run_25_dedu
 
 #### SPECIAL USECASE: Converting the manual annotation table from a flat format to Events and Specific Impacts
 
-1. Download the latest copy of the excel sheet. *The excel sheet must have the column names described in `Database/gold/ImpactDB_DataTable_Validation.xlsx` sheet `ImpactDB_v2_gold_template`.*
+1. Download the latest copy of the excel sheet. _The excel sheet must have the column names described in `Database/gold/ImpactDB_DataTable_Validation.xlsx` sheet `ImpactDB_v2_gold_template`._
 2. Choose the correct excel sheet and run the script:
 
 ```shell
@@ -334,40 +431,6 @@ poetry run python3 Database/gold_from_excel.py \
 > Please don't track or push excel sheets into the repository
 > The file `Database/gold/ImpactDB_DataTable_Validation.xlsx` has the latest gold annotations from 01/06/2024 and will be updated in the future.
 
-### Develop
-
-Always pull a fresh copy of the `main` branch first! To add a new feature, check out a new branch from the `main` branch, make changes there, and push the new branch upstream to open a PR. PRs should result in a **squash commit** in the `main` branch. **It is recommended to code responsibly and ask someone to review your code. You can always tag [i-be-snek](https://github.com/i-be-snek) as a reviewer.**
-
-Always _**rebase**_ your branch on the latest changes in `main` instead of merging using `git rebase main`. If you are having trouble with resolving merge conflicts when rebasing, consult [i-be-snek](https://github.com/i-be-snek).
-
-And don't forget to pull large files from Git Large File Storage!
-
-```
-# always pull first
-git pull main
-
-# fetch and merge all files for your current branch
-git lfs pull
-
-# fetch and merge all files for ALL branches
-git lfs pull --all
-```
-
-> [!TIP]
-> Consult this [StackOverflow answer on how to use `git lfs`](https://stackoverflow.com/a/72610495/14123992)
-
-
-Make sure any new dependencies are handled by `poetry`.You should be tracking and pushing both `poetry.lock` and `pyproject.toml` files.
-There is no need to manually add dependencies to the `pyproject.toml` file. Instead, use `poetry` commands:
-
-```shell
-# add pandas as a main dependency
-poetry add pandas -G main
-
-# add a specific version of ipykernel as a dev dependency
-poetry add ipykernel@6.29.4 -G dev
-```
-
 ### Problems?
 
 Start an Issue on GitHub if you find a bug in the code or have suggestions for a feature you need.
@@ -377,11 +440,12 @@ If you run into an error or problem, please include the error trace or logs! :D
 > Consult this [Github Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
 ### Sources & Citations
+
 - GADM world data | `Database/data/gadm_world.csv`
 
-    https://gadm.org/license.html
+    <https://gadm.org/license.html>
 
 - Regions by UNSD | `Database/data/UNSD — Methodology.csv`
 
     United Nations Standard Country Code, Series M: Miscellaneous Statistical Papers, No. 49, New York: United Nations. ST/ESA/STAT/SER.M/49
-    https://unstats.un.org/unsd/classifications/Family/Detail/12
+    <https://unstats.un.org/unsd/classifications/Family/Detail/12>
