@@ -111,7 +111,16 @@ if __name__ == "__main__":
             translated_tables.append(translated_table)
         return translated_tables
 
-
+    def translate_all_lists(lists):
+        translated_lists = []
+        for item in all_lists:
+                translated_entry = {
+                    item if item is None or item.strip() == '' else gpt_completion(generate_translation, item)
+           
+                }
+                translated_lists.append(translated_entry)
+          
+        return translated_lists
 
     def translate_infobox(info_box):
         translated_infobox = None if not info_box or info_box.strip() == '' else gpt_completion(generate_translation, f"Text: {info_box}")
@@ -126,11 +135,12 @@ if __name__ == "__main__":
         whole_text = item["Whole_Text"]
         info_box = item["Info_Box"]
         all_tables = item["All_Tables"]
+        all_lists=item["Lists"]
         
         translated_text = translate_whole_text(whole_text)
         translated_tables = translate_all_tables(all_tables)
         translated_infobox = translate_infobox(info_box)
-        
+        translated_lists=translate_all_lists(all_lists)
         translated_event = {
             "Event_ID": event_id,
             "Source": source,
@@ -138,6 +148,7 @@ if __name__ == "__main__":
             "Whole_Text": translated_text,
             "Info_Box": translated_infobox,
             "All_Tables": translated_tables
+            "Lists":translated_lists
         }
         
         translated_df.append(translated_event)
