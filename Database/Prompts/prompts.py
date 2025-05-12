@@ -4047,7 +4047,7 @@ V_7: dict = {
 # after evaluation, we will choose this version to continue , below is for single event
 V_7_1: dict = {
     "Affected": [
-        """Based on the information box and header-content article given,
+        """Based on the information box, tables, and header-content article given,
       extract the number of affected people associated with the {Event_Name}, along with supporting source sections from the article.
       The affected people information can be splited into 2 parts,
       the first is the total number of affected people caused by the {Event_Name}, 
@@ -4078,7 +4078,7 @@ V_7_1: dict = {
     ],
 
     "Buildings_Damaged": [
-        """Based on information box and header-content pair article given,
+        """Based on information box, tables, and header-content pair article given,
       extract the number of damaged buildings associated with the {Event_Name},
       covering a wide range of building types such as structures, homes, houses, households, apartments, office buildings, retail stores, hotels, schools, hospitals, and more,
       along with supporting source sections from the article. The number of damaged buildings information can be splited into 2 parts,
@@ -4109,7 +4109,7 @@ V_7_1: dict = {
     ],
 
     "Deaths": [
-        """Based on information box and header-content pair article given, extract the number of deaths associated with the {Event_Name},
+        """Based on information box, tables, and header-content pair article given, extract the number of deaths associated with the {Event_Name},
       along with supporting source sections from the article. The death information can be splited into 2 parts,
       the first is the total number of deaths caused by the {Event_Name}, 
       - "Total_Deaths": "The total number of people who died in the {Event_Name}.
@@ -4134,7 +4134,7 @@ V_7_1: dict = {
 """
     ],
     "Displaced": [
-        """Based on information box and header-content pair article given,
+        """Based on information box, tables, and header-content pair article given,
       extract the number of displacement associated with the {Event_Name}, along with supporting source sections from the article.
       The displacement information can be splited into 2 parts,
       the first is the total number of displacement caused by the {Event_Name}, 
@@ -4161,7 +4161,7 @@ V_7_1: dict = {
     ],
 
     "Homeless": [
-        """Based on information box and header-content pair article given,
+        """Based on information box, tables, and header-content pair article given,
       extract the number of homelessness associated with the {Event_Name}, along with supporting source sections from the article.
       The homelessness information can be splited into 2 parts,
       the first is the total number of homelessness caused by the {Event_Name}, 
@@ -4187,7 +4187,7 @@ V_7_1: dict = {
     ],
 
     "Injuries": [
-        """Based on information box and header-content pair article given,
+        """Based on information box, tables and header-content pair article given,
       extract the number of non-fatal injuries associated with the {Event_Name}, along with supporting source sections from the article.
       The non-fatal injuries information can be splited into 2 parts,
       the first is the total number of non-fatal injuries caused by the {Event_Name}, 
@@ -4213,7 +4213,7 @@ V_7_1: dict = {
     ],
     "Insured_Damage": [
         """
-           Based on information box and header-content pair article given,
+           Based on information box, tables and header-content pair article given,
             extract the insured damage information associated with the {Event_Name}, along with supporting source sections from the article.
             The insured damage information can be splited into 2 parts,
             the first is the total insured damage caused by the {Event_Name}, including damage or loss to property, belongings, or persons covered under the terms of an insurance policy,
@@ -4246,7 +4246,7 @@ V_7_1: dict = {
     ],
     "Damage": [
         """
-            Based on information box and header-content pair article given,
+            Based on information box, tables, and header-content pair article given,
             extract the economic damage information associated with the {Event_Name}, along with supporting source sections from the article.
             The economic damage information can be splited into 2 parts,
             the first is the total economic damage caused by the {Event_Name},
@@ -4282,7 +4282,7 @@ V_7_1: dict = {
 
     "main_event_hazard": [
         """
-         Based on information box and header-content pair article,
+         Based on information box, tables, and header-content pair article,
          extract main_event category and hazard information associated with the {Event_Name}, along with supporting source sections from the article.
          Below is the Main_Event--Hazard association table,
          Main Event: Flood; Hazard: Flood
@@ -4304,7 +4304,7 @@ V_7_1: dict = {
     # in this version, we ask the model to extract all the affected locations in L1, but in the post-processing, only extract the countries in this field.
     "location_time": [
         """
-        Based on information box and header-content pair article, extract time and location information associated with the {Event_Name}, along with supporting source sections from the article.
+        Based on information box, tables, and header-content pair article, extract time and location information associated with the {Event_Name}, along with supporting source sections from the article.
         the first is to identify the time information of the event {Event_Name}:
         - "Start_Date": "The start date of the event. If the specific day or month is not known, include at least the year if it's available. If no time information is available, enter 'NULL'. If the exact date is not clear (e.g., "summer of 2021", "June 2020"), please retain the text as mentioned."
         - "End_Date": "The end date of the event. If the specific day or month is not known, include at least the year if it's available. If no time information is available, enter 'NULL'. If the exact date is not clear (e.g., "summer of 2021", "June 2020"), please retain the text as mentioned."

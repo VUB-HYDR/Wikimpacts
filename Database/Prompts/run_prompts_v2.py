@@ -241,15 +241,14 @@ if __name__ == "__main__":
                     event_name = str(item.get("Event_Name"))
                     info_box = str(item.get("Info_Box"))
                     whole_text = process_whole_text(item)
-                
-
+                    tables = item.get("All_Tables")
                     if "Damage" in key and "Building" not in key:
                         # Iterate over each prompt in the list and format them
                         for idx, prompt_template in enumerate(prompt_list_for_key, start=1):
                             
                             event_id = f"{event_id_base}_{key}_{idx}"  # unique event id with key and index
                             sys_prompt = prompt_template.format(Event_Name=event_name)
-                            user_input=f"information box {info_box} and header-content pair article {whole_text}"
+                            user_input=f"information box {info_box}, tables {tables}, and header-content pair article {whole_text}"
                             re_format_obj = generate_total_monetary_schema(key)  
                             line = batch_gpt(sys_prompt, event_id,user_input,re_format_obj)  # define the line of API request
                             data.append(line)
@@ -258,7 +257,7 @@ if __name__ == "__main__":
                                     
                                     event_id = f"{event_id_base}_{key}_{idx}"  # unique event id with key and index
                                     sys_prompt = prompt_template.format(Event_Name=event_name)
-                                    user_input=f"information box {info_box} and header-content pair article {whole_text}"
+                                    user_input=f"information box {info_box},tables {tables}, and header-content pair article {whole_text}"
                               
                                   
                                     TotalMainEvent=generate_TotalMainEvent()
@@ -269,7 +268,7 @@ if __name__ == "__main__":
                                     
                                     event_id = f"{event_id_base}_{key}_{idx}"  # unique event id with key and index
                                     sys_prompt = prompt_template.format(Event_Name=event_name)
-                                    user_input=f"information box {info_box} and header-content pair article {whole_text}"
+                                    user_input=f"information box {info_box}, tables {tables}, and header-content pair article {whole_text}"
                                     TotalLocationEvent=generate_TotalLocationEvent()
                                     line = batch_gpt(sys_prompt, event_id,user_input,TotalLocationEvent)  # define the line of API request
                                     data.append(line)
@@ -278,7 +277,7 @@ if __name__ == "__main__":
                             
                             event_id = f"{event_id_base}_{key}_{idx}"  # unique event id with key and index
                             sys_prompt = prompt_template.format(Event_Name=event_name)
-                            user_input=f"information box {info_box} and header-content pair article {whole_text}"
+                            user_input=f"information box {info_box}, tables {tables}, and header-content pair article {whole_text}"
                             re_format_obj= generate_total_direct_schema(key)
                             line = batch_gpt(sys_prompt, event_id,user_input,re_format_obj)  # define the line of API request
                             data.append(line)
@@ -286,71 +285,8 @@ if __name__ == "__main__":
         return data
 
      # multi event 
-    """
-    def process_multi_data(raw_text, target_prompts):
-      
-        Processes data based on a prompt list and batch function.
+ 
 
-        Parameters:
-        - raw_text: list of events containing 'Event_ID', 'Event_Name', 'Info_Box', etc.
-        - target_prompts: dictionary where keys are categories (e.g., 'deaths', 'injuries') and values are lists of prompts
-
-        Returns:
-        - data: list of formatted batch lines
-     
-        data = []
-  
-                
-        for item in raw_text:
-            
-            event_id_base = str(item.get("Event_ID"))
-            
-            info_box = str(item.get("Info_Box"))
-            whole_text = item.get("Whole_Text")
-            All_tables= item.get("All_Tables")
-            Lists=item.get("Lists")
-            if whole_text: 
-                for idx, i in enumerate(whole_text):
-                    # Defensive: Ensure i is dict before calling .get
-                    if not isinstance(i, dict):
-                        continue  # or handle error
-                    event_name = str(i.get("header") or i.get("Header"))
-                    content    = str(i.get("content") or i.get("Content"))
-                    if content is not None and content.strip() != '': 
-                        event_id = f"{event_id_base}_{idx}"  # unique id with key and index
-                        sys_prompt = target_prompts.format(Event_Name=event_name if event_name else "event")
-                        user_input=f" Content: {content}"
-                        re_format_obj = generate_MultiEvent()  
-                        line = batch_gpt(sys_prompt, event_id, user_input, re_format_obj)  # define the line of API request
-                        data.append(line)
-            #  for tables, the event_name is not easy to obtain directly, therefore, just use "event"
-            if All_tables:  # Checks All_tables is not None and not empty list
-                for table in All_tables:
-                    # Assuming 'table' is an iterable of rows or items you want to process
-                    for idx, i in enumerate(table):
-                        # Defensive: Ensure 'i' is a string before applying strip()
-                        if isinstance(i, str) and i.strip() != '': 
-                            event_id = f"{event_id_base}_{idx}"  # unique event id with key and index
-                            sys_prompt = target_prompts.format(Event_Name="event")
-                            user_input = f" Content: {i}"
-                            re_format_obj = generate_MultiEvent()  
-                            line = batch_gpt(sys_prompt, event_id, user_input, re_format_obj)
-                            data.append(line)
-            if Lists is not None and Lists.strip() != '': 
-            
-                    for idx, i in Lists:
-                        if i is not None and i.strip() != '': 
-                            event_id = f"{event_id_base}_{idx}"  # unique event id with key and index
-                            sys_prompt = target_prompts.format(Event_Name="event")
-                            user_input=f" Content: {i}"
-                            re_format_obj = generate_MultiEvent()  
-                            line = batch_gpt(sys_prompt, event_id,user_input,re_format_obj)  # define the line of API request
-                            data.append(line)
-                        
-                               
-                   
-        return data
-    """
     def process_multi_data(raw_text, target_prompts, re_format):
         """
         Processes data based on a prompt list and batch function.
