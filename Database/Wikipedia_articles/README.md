@@ -1,0 +1,3 @@
+In Wikimapcts 1.0 database, we only use the **Database/Wikipedia_articles/wiki-articles-gpt-4o-mini-3368_single.csv** for the full run.
+
+In Wikimpacts 2.0 database, we use **Database/Wikipedia_articles/wiki-articles-gpt-4o-mini-3368_single.csv** , **Database/Wikipedia_articles/wiki_multi_event_2158articles.csv** , date to 2024/02/29 and **Database/Wikipedia_articles/wikidata/wikidata_non-en_704articles.csv** date to 2025/03/06 for the full run. 

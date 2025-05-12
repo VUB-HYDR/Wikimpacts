@@ -190,7 +190,10 @@ if __name__ == "__main__":
                 infobox_data = get_wikipedia_infobox(url)
                 info_box_text = "\n".join([f"{key}: {value}" for key, value in infobox_data.items()])
                 all_tables=process_tables(soup)
-                lists=get_wikipedia_list(url)
+                if isinstance(event_name, str) and "list" in event_name.lower():
+                    lists = get_wikipedia_list(url)
+                else:
+                    lists = []
 
                 event_data = {
                     "Source": url,

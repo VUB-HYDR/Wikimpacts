@@ -3753,7 +3753,25 @@ def generate_LocationEvent() -> dict:
         }
     }
 
+def generate_translation() -> dict:
+   return {
+    "type": "json_schema",
 
+    "json_schema": { 
+         "name": "translation__response",
+      "strict": True,
+      "schema": {
+        "type": "object",
+        "properties": {
+
+            "Text_Translation": {"type": "string"},
+
+
+        },
+         "additionalProperties": False,
+        "required": ["Text_Translation"]
+    }}
+}
 
 Post_location =f"""Using the provided country and a list of locations by the user, 
 trace the administrative hierarchy for each location back to one level below the country. 

@@ -113,14 +113,16 @@ if __name__ == "__main__":
 
     def translate_all_lists(lists):
         translated_lists = []
-        for item in all_lists:
-                translated_entry = {
-                    item if item is None or item.strip() == '' else gpt_completion(generate_translation, item)
-           
-                }
-                translated_lists.append(translated_entry)
-          
+        for sublist in lists:
+            translated_entry = []
+            for item in sublist:
+                if item is None or (isinstance(item, str) and item.strip() == ''):
+                    translated_entry.append(item)
+                else:
+                    translated_entry.append(gpt_completion(generate_translation, item))
+            translated_lists.append(translated_entry)
         return translated_lists
+
 
     def translate_infobox(info_box):
         translated_infobox = None if not info_box or info_box.strip() == '' else gpt_completion(generate_translation, f"Text: {info_box}")
@@ -147,7 +149,7 @@ if __name__ == "__main__":
             "Article_Name": article_name,
             "Whole_Text": translated_text,
             "Info_Box": translated_infobox,
-            "All_Tables": translated_tables
+            "All_Tables": translated_tables,
             "Lists":translated_lists
         }
         

@@ -373,8 +373,7 @@ def flatten_data_table():
     logger.info(f"Renaming columns to 'Total_...`. Mapping: {total_columns_map}")
 
     Events.rename(columns=total_columns_map, inplace=True)
-
-  
+    
 
     # Level 3 -- "Specific Instances per country-level Administrative Area"
     # single administrative area with multiple sub locations
