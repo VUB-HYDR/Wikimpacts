@@ -1829,3 +1829,204 @@ parse_events: 2025-02-27 14:31:34 INFO     Storing the following target columns 
 parse_events: 2025-02-27 14:31:34 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Damage
 normalize-utils: 2025-02-27 14:31:39 INFO     Output file stored in Database/output/WikimpactsV2/o3miniV7_1/dev/l3/Specific_Instance_Per_Administrative_Area_Damage/0000.parquet
 parse_events: 2025-02-27 14:31:39 INFO     PARSING COMPLETE
+parse_events: 2025-05-12 22:29:33 INFO     Passed args: Namespace(spaCy_model_name='en_core_web_trf', filename='Non_English_dev_43events_non_eng_dev_43articles_o3-mini-2025-01-31_rawoutput.json', raw_dir='Database/raw/WikimpactsV2/Non_Eng_Events/dev', output_dir='Database/output/WikimpactsV2/Non_Eng_Events/dev', locale_config='en_US.UTF-8', event_levels=['l1', 'l3'], raw_l1=None, store_raw_l1=False)
+parse_events: 2025-05-12 22:29:33 INFO     Creating Database/output/WikimpactsV2/Non_Eng_Events/dev if it does not exist!
+normalize-utils: 2025-05-12 22:29:58 INFO     SpaCy model 'en_core_web_trf' has been loaded
+normalize_locations: 2025-05-12 22:30:03 INFO     Installed GeoPy cache
+parse_events: 2025-05-12 22:30:03 INFO     JSON datafile loaded
+parse_events: 2025-05-12 22:30:03 INFO     STEP: Parsing main level events (l1)
+parse_events: 2025-05-12 22:30:03 INFO     Unpacking Total_Summary_* columns
+parse_events: 2025-05-12 22:30:04 INFO     Total summary columns: ['Total_Summary_Affected', 'Total_Summary_Buildings_Damaged', 'Total_Summary_Deaths', 'Total_Summary_Displaced', 'Total_Summary_Homeless', 'Total_Summary_Injuries', 'Total_Summary_Insured_Damage', 'Total_Summary_Damage']
+parse_events: 2025-05-12 22:30:04 INFO     STEP: Normalizing start and end dates if present
+parse_events: 2025-05-12 22:30:04 INFO     Normalizing date column: Start_Date
+parse_events: 2025-05-12 22:30:05 INFO     Normalizing date column: End_Date
+parse_events: 2025-05-12 22:30:06 INFO     STEP: Normalizing booleans if present
+parse_events: 2025-05-12 22:30:06 INFO     Normalizing boolean column Total_Damage_Inflation_Adjusted
+parse_events: 2025-05-12 22:30:06 INFO     Normalizing boolean column Total_Insured_Damage_Inflation_Adjusted
+parse_events: 2025-05-12 22:30:06 INFO     STEP: Normalizing nulls
+parse_events: 2025-05-12 22:30:06 INFO     STEP: Normalizing ranges if present in ['Total_Damage', 'Total_Insured_Damage', 'Total_Injuries', 'Total_Homeless', 'Total_Displaced', 'Total_Deaths', 'Total_Buildings_Damaged', 'Total_Affected']
+parse_events: 2025-05-12 22:30:06 INFO     Normalizing ranges in Total_Damage
+parse_events: 2025-05-12 22:30:08 INFO     Normalizing ranges in Total_Insured_Damage
+parse_events: 2025-05-12 22:30:08 INFO     Normalizing ranges in Total_Injuries
+parse_events: 2025-05-12 22:30:08 INFO     Normalizing ranges in Total_Homeless
+parse_events: 2025-05-12 22:30:09 INFO     Normalizing ranges in Total_Displaced
+parse_events: 2025-05-12 22:30:10 INFO     Normalizing ranges in Total_Deaths
+parse_events: 2025-05-12 22:30:12 INFO     Normalizing ranges in Total_Buildings_Damaged
+parse_events: 2025-05-12 22:30:13 INFO     Normalizing ranges in Total_Affected
+parse_events: 2025-05-12 22:30:16 INFO     Splitting column Hazards by pipe
+parse_events: 2025-05-12 22:30:16 INFO     STEP: Normalizing country-level administrative areas if present
+parse_events: 2025-05-12 22:30:16 INFO     Ensuring that all admin area data in Administrative_Areas is of type <list>
+parse_events: 2025-05-12 22:30:16 INFO     Normalizing administrative areas...
+parse_events: 2025-05-12 22:31:13 INFO     Getting GID from GADM for Administrative Areas
+parse_events: 2025-05-12 22:31:20 INFO     STEP: Infer country from list of locations
+parse_events: 2025-05-12 22:31:25 INFO     Normalizing administrative areas after purging areas above GID_0 level...
+parse_events: 2025-05-12 22:31:42 INFO     Getting GID from GADM for Administrative Areas after purging areas above GID_0 level...
+parse_events: 2025-05-12 22:31:43 INFO     STEP: Cleanup
+parse_events: 2025-05-12 22:31:43 INFO     Normalizing nulls
+parse_events: 2025-05-12 22:31:43 INFO     Cleaning event names...
+parse_events: 2025-05-12 22:31:43 INFO     STEP: Validation of Categorical Types for col Hazards
+parse_events: 2025-05-12 22:31:43 INFO     STEP: Validation of Categorical Types for col Main_Event
+parse_events: 2025-05-12 22:31:43 INFO     STEP: Validation relationship between col Hazards and col Main_Event
+parse_events: 2025-05-12 22:31:43 INFO     Storing parsed results for l1 events. Target columns: ['Event_ID', 'Hazards', 'Main_Event', 'Event_Names', 'Sources', 'Administrative_Areas_Norm', 'Administrative_Areas_Type', 'Administrative_Areas_GID', 'Administrative_Areas_GeoJson', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Total_Injuries_Min', 'Total_Injuries_Max', 'Total_Injuries_Approx', 'Total_Deaths_Min', 'Total_Deaths_Max', 'Total_Deaths_Approx', 'Total_Displaced_Min', 'Total_Displaced_Max', 'Total_Displaced_Approx', 'Total_Homeless_Min', 'Total_Homeless_Max', 'Total_Homeless_Approx', 'Total_Buildings_Damaged_Min', 'Total_Buildings_Damaged_Max', 'Total_Buildings_Damaged_Approx', 'Total_Affected_Min', 'Total_Affected_Max', 'Total_Affected_Approx', 'Total_Insured_Damage_Min', 'Total_Insured_Damage_Max', 'Total_Insured_Damage_Approx', 'Total_Insured_Damage_Unit', 'Total_Insured_Damage_Inflation_Adjusted', 'Total_Insured_Damage_Inflation_Adjusted_Year', 'Total_Damage_Min', 'Total_Damage_Max', 'Total_Damage_Approx', 'Total_Damage_Unit', 'Total_Damage_Inflation_Adjusted', 'Total_Damage_Inflation_Adjusted_Year']
+normalize-utils: 2025-05-12 22:31:45 INFO     Output file stored in Database/output/WikimpactsV2/Non_Eng_Events/dev/l1/0000.parquet
+parse_events: 2025-05-12 22:31:45 INFO     STEP: Parsing level l3 with column prefix Specific
+parse_events: 2025-05-12 22:31:45 INFO     STEP: Normalizing nulls and NaNs
+parse_events: 2025-05-12 22:31:45 INFO     STEP: Parsing l3. Columns: ['Specific_Instance_Per_Administrative_Area_Affected', 'Specific_Instance_Per_Administrative_Area_Buildings_Damaged', 'Specific_Instance_Per_Administrative_Area_Deaths', 'Specific_Instance_Per_Administrative_Area_Displaced', 'Specific_Instance_Per_Administrative_Area_Homeless', 'Specific_Instance_Per_Administrative_Area_Injuries', 'Specific_Instance_Per_Administrative_Area_Insured_Damage', 'Specific_Instance_Per_Administrative_Area_Damage']
+parse_events: 2025-05-12 22:31:45 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-05-12 22:31:45 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-05-12 22:31:45 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Affected and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-05-12 22:31:54 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-05-12 22:31:54 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-05-12 22:31:54 INFO     Normalizing start date column Start_Date
+parse_events: 2025-05-12 22:31:55 INFO     Normalizing end date column End_Date
+parse_events: 2025-05-12 22:31:55 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-05-12 22:32:23 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-05-12 22:32:23 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-05-12 22:32:23 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-05-12 22:38:26 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-05-12 22:39:19 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-05-12 22:39:19 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-05-12 22:39:19 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-05-12 22:39:19 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Affected l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-05-12 22:39:19 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Affected
+normalize-utils: 2025-05-12 22:39:23 INFO     Output file stored in Database/output/WikimpactsV2/Non_Eng_Events/dev/l3/Specific_Instance_Per_Administrative_Area_Affected/0000.parquet
+parse_events: 2025-05-12 22:39:23 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-05-12 22:39:23 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-05-12 22:39:23 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-05-12 22:39:32 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-05-12 22:39:32 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-05-12 22:39:32 INFO     Normalizing start date column Start_Date
+parse_events: 2025-05-12 22:39:32 INFO     Normalizing end date column End_Date
+parse_events: 2025-05-12 22:39:32 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-05-12 22:39:42 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-05-12 22:39:42 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-05-12 22:39:42 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-05-12 22:41:18 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-05-12 22:41:28 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-05-12 22:41:28 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-05-12 22:41:28 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-05-12 22:41:28 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Buildings_Damaged l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-05-12 22:41:28 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+normalize-utils: 2025-05-12 22:41:29 INFO     Output file stored in Database/output/WikimpactsV2/Non_Eng_Events/dev/l3/Specific_Instance_Per_Administrative_Area_Buildings_Damaged/0000.parquet
+parse_events: 2025-05-12 22:41:29 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-05-12 22:41:29 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-05-12 22:41:29 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Deaths and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-05-12 22:41:37 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-05-12 22:41:37 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-05-12 22:41:37 INFO     Normalizing start date column Start_Date
+parse_events: 2025-05-12 22:41:38 INFO     Normalizing end date column End_Date
+parse_events: 2025-05-12 22:41:38 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-05-12 22:41:57 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-05-12 22:41:57 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-05-12 22:41:57 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-05-12 22:42:19 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-05-12 22:42:20 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-05-12 22:42:20 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-05-12 22:42:20 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-05-12 22:42:20 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Deaths l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-05-12 22:42:20 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Deaths
+normalize-utils: 2025-05-12 22:42:22 INFO     Output file stored in Database/output/WikimpactsV2/Non_Eng_Events/dev/l3/Specific_Instance_Per_Administrative_Area_Deaths/0000.parquet
+parse_events: 2025-05-12 22:42:22 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-05-12 22:42:22 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-05-12 22:42:22 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Displaced and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-05-12 22:42:24 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-05-12 22:42:24 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-05-12 22:42:24 INFO     Normalizing start date column Start_Date
+parse_events: 2025-05-12 22:42:25 INFO     Normalizing end date column End_Date
+parse_events: 2025-05-12 22:42:25 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-05-12 22:42:42 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-05-12 22:42:42 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-05-12 22:42:42 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-05-12 22:43:59 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-05-12 22:44:05 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-05-12 22:44:05 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-05-12 22:44:05 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-05-12 22:44:05 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Displaced l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-05-12 22:44:05 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Displaced
+normalize-utils: 2025-05-12 22:44:07 INFO     Output file stored in Database/output/WikimpactsV2/Non_Eng_Events/dev/l3/Specific_Instance_Per_Administrative_Area_Displaced/0000.parquet
+parse_events: 2025-05-12 22:44:07 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-05-12 22:44:07 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-05-12 22:44:07 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Homeless and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-05-12 22:44:08 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-05-12 22:44:08 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-05-12 22:44:08 INFO     Normalizing start date column Start_Date
+parse_events: 2025-05-12 22:44:08 INFO     Normalizing end date column End_Date
+parse_events: 2025-05-12 22:44:08 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-05-12 22:44:21 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-05-12 22:44:21 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-05-12 22:44:21 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Homeless
+urllib3.connectionpool: 2025-05-12 22:44:25 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=5+de+mayo+street&format=json&countrycodes=MX&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-05-12 22:44:26 WARNING  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=5+de+mayo+street&format=json&countrycodes=MX&namedetails=1&extratags=True&polygon_geojson=1
+normalize_locations: 2025-05-12 22:44:27 ERROR    API call unsuccessful. Error message: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=5+de+mayo+street&format=json&countrycodes=MX&namedetails=1&extratags=True&polygon_geojson=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+urllib3.connectionpool: 2025-05-12 22:44:28 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=5+de+mayo+street&format=json&countrycodes=MX&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-05-12 22:44:29 WARNING  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=5+de+mayo+street&format=json&countrycodes=MX&namedetails=1&extratags=True&polygon_geojson=1
+normalize_locations: 2025-05-12 22:44:30 ERROR    API call unsuccessful. Error message: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=5+de+mayo+street&format=json&countrycodes=MX&namedetails=1&extratags=True&polygon_geojson=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+urllib3.connectionpool: 2025-05-12 22:44:32 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=5+de+mayo+street&format=json&countrycodes=MX&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-05-12 22:44:33 WARNING  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=5+de+mayo+street&format=json&countrycodes=MX&namedetails=1&extratags=True&polygon_geojson=1
+normalize_locations: 2025-05-12 22:44:34 ERROR    API call unsuccessful. Error message: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=5+de+mayo+street&format=json&countrycodes=MX&namedetails=1&extratags=True&polygon_geojson=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+parse_events: 2025-05-12 22:44:39 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-05-12 22:44:40 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-05-12 22:44:40 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-05-12 22:44:40 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-05-12 22:44:40 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Homeless l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-05-12 22:44:40 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Homeless
+normalize-utils: 2025-05-12 22:44:42 INFO     Output file stored in Database/output/WikimpactsV2/Non_Eng_Events/dev/l3/Specific_Instance_Per_Administrative_Area_Homeless/0000.parquet
+parse_events: 2025-05-12 22:44:42 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-05-12 22:44:42 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-05-12 22:44:42 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Injuries and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-05-12 22:44:43 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-05-12 22:44:43 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-05-12 22:44:43 INFO     Normalizing start date column Start_Date
+parse_events: 2025-05-12 22:44:43 INFO     Normalizing end date column End_Date
+parse_events: 2025-05-12 22:44:43 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-05-12 22:44:45 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-05-12 22:44:45 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-05-12 22:44:45 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-05-12 22:44:46 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-05-12 22:44:46 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-05-12 22:44:46 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-05-12 22:44:46 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-05-12 22:44:46 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Injuries l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-05-12 22:44:46 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Injuries
+normalize-utils: 2025-05-12 22:44:46 INFO     Output file stored in Database/output/WikimpactsV2/Non_Eng_Events/dev/l3/Specific_Instance_Per_Administrative_Area_Injuries/0000.parquet
+parse_events: 2025-05-12 22:44:46 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-05-12 22:44:46 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-05-12 22:44:46 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Insured_Damage and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-05-12 22:44:46 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-05-12 22:44:46 INFO     Normalizing boolean column Num_Inflation_Adjusted for l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-05-12 22:44:46 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-05-12 22:44:46 INFO     Normalizing start date column Start_Date
+parse_events: 2025-05-12 22:44:46 INFO     Normalizing end date column End_Date
+parse_events: 2025-05-12 22:44:46 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-05-12 22:44:46 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-05-12 22:44:46 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-05-12 22:44:46 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-05-12 22:44:46 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-05-12 22:44:46 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-05-12 22:44:46 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-05-12 22:44:46 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-05-12 22:44:46 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Insured_Damage l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-05-12 22:44:46 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+normalize-utils: 2025-05-12 22:44:46 INFO     Output file stored in Database/output/WikimpactsV2/Non_Eng_Events/dev/l3/Specific_Instance_Per_Administrative_Area_Insured_Damage/0000.parquet
+parse_events: 2025-05-12 22:44:46 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-05-12 22:44:46 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-05-12 22:44:46 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Damage and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-05-12 22:44:51 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-05-12 22:44:51 INFO     Normalizing boolean column Num_Inflation_Adjusted for l3 Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-05-12 22:44:51 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-05-12 22:44:51 INFO     Normalizing start date column Start_Date
+parse_events: 2025-05-12 22:44:51 INFO     Normalizing end date column End_Date
+parse_events: 2025-05-12 22:44:51 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-05-12 22:44:57 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-05-12 22:44:57 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-05-12 22:44:57 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Damage
+normalize_locations: 2025-05-12 22:46:00 ERROR    Could not find location central region; is_country: False; in_country: taiwan. Error message: 'name'.
+urllib3.connectionpool: 2025-05-12 22:46:09 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=plata&format=json&namedetails=1&extratags=True&polygon_geojson=1
+parse_events: 2025-05-12 22:46:12 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-05-12 22:46:25 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-05-12 22:46:25 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-05-12 22:46:25 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-05-12 22:46:25 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Damage l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-05-12 22:46:25 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Damage
+normalize-utils: 2025-05-12 22:46:26 INFO     Output file stored in Database/output/WikimpactsV2/Non_Eng_Events/dev/l3/Specific_Instance_Per_Administrative_Area_Damage/0000.parquet
+parse_events: 2025-05-12 22:46:26 INFO     PARSING COMPLETE
