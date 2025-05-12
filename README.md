@@ -314,7 +314,7 @@ poetry run python3 Database/fill_data_gap.py -i Database/output/full_run_25_dedu
 - To generate the database according to [`Database/schema.sql`](Database/schema.sql):
 
     ```shell
-    poetry run python3 Database/create_db.py -db impact.v1.db
+    poetry run python3 Database/schema/create_db.py -db impact.v1.db
     ```
 
 #### SPECIAL USECASE: Converting the manual annotation table from a flat format to Events and Specific Impacts
@@ -385,3 +385,16 @@ If you run into an error or problem, please include the error trace or logs! :D
 
     United Nations Standard Country Code, Series M: Miscellaneous Statistical Papers, No. 49, New York: United Nations. ST/ESA/STAT/SER.M/49
     https://unstats.un.org/unsd/classifications/Family/Detail/12
+
+
+
+Shield: [![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
+
+This work is licensed under a
+[Creative Commons Attribution-NonCommercial 4.0 International License][cc-by-nc].
+
+[![CC BY-NC 4.0][cc-by-nc-image]][cc-by-nc]
+
+[cc-by-nc]: https://creativecommons.org/licenses/by-nc/4.0/
+[cc-by-nc-image]: https://licensebuttons.net/l/by-nc/4.0/88x31.png
+[cc-by-nc-shield]: https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg

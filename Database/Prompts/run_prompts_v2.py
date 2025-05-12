@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 from pydantic import BaseModel, create_model
 from typing import List
 from Database.Prompts.prompts import V_7_1 as target_prompts
-from Database.Prompts.prompts import  generate_LocationEvent, Post_location, generate_total_direct_schema, generate_total_monetary_schema, generate_TotalMainEvent, generate_TotalLocationEvent
+from Database.Prompts.prompts import  V_7_1_m_basic,V_7_1_m_impact, generate_MultiEvent_basic,generate_MultiEvent_impact, generate_LocationEvent, Post_location, generate_total_direct_schema, generate_total_monetary_schema, generate_TotalMainEvent, generate_TotalLocationEvent
 from Database.scr.log_utils import Logging
 
 # the prompt list need to use the same variable names in our schema, and each key contains 1+ prompts
@@ -57,7 +57,7 @@ if __name__ == "__main__":
         "-t",
         "--max_tokens",
         dest="max_tokens",
-        default=100000,  # This default model supports at most 4096 completion tokens
+        default=100000,  # This default model supports more completion tokens than GPT4o model 
         help="The max tokens of the model selected",
         type=int,
     )
@@ -85,6 +85,16 @@ if __name__ == "__main__":
         help="The prompt category of the experiment, can only choose from impact, basic, all and location_chain",
         type=str,
     )
+
+    parser.add_argument(
+        "-a",
+        "--article_category",
+        dest="article_category",
+        help="The article category of the experiment, can only choose from single and multi",
+        type=str,
+    )
+
+
     args = parser.parse_args()
     logger.info(f"Passed args: {args}")
 
@@ -126,6 +136,7 @@ if __name__ == "__main__":
         }
         return df
     
+    # for location chain completion 
     def gpt_completion(res_format, user_input, sys_prompt):
          response = client.chat.completions.create(
         # gpt4-mini-model 
@@ -151,8 +162,8 @@ if __name__ == "__main__":
             )
          message = response.choices[0].message.content
          return message
-    
-
+     
+   
     def update_location_chains_for_specific_columns(df):
         """
         Updates all columns starting with 'Specific' in the DataFrame with location chains.
@@ -182,7 +193,7 @@ if __name__ == "__main__":
         filtered_data = [item for item in data["Whole_Text"] if item["content"] not in [None, ""]]
         result = " ".join([f"header: {item['header']}, content: {item['content']}" for item in filtered_data])
         return result
-
+  
     # list of keys for prompt of basic and impact information
     prompt_basic_list = ["location_time", "main_event_hazard"]
     prompt_impact_list = [
@@ -205,8 +216,8 @@ if __name__ == "__main__":
     )
 
   
-  
-    def process_data(raw_text, target_prompts, prompt_list):
+    # single event 
+    def process_single_data(raw_text, target_prompts, prompt_list):
         """
         Processes data based on a prompt list and batch function.
 
@@ -225,17 +236,19 @@ if __name__ == "__main__":
             if key in prompt_list:
                 
                 for item in raw_text:
+                    
                     event_id_base = str(item.get("Event_ID"))
                     event_name = str(item.get("Event_Name"))
                     info_box = str(item.get("Info_Box"))
                     whole_text = process_whole_text(item)
+                    tables = item.get("All_Tables")
                     if "Damage" in key and "Building" not in key:
                         # Iterate over each prompt in the list and format them
                         for idx, prompt_template in enumerate(prompt_list_for_key, start=1):
                             
                             event_id = f"{event_id_base}_{key}_{idx}"  # unique event id with key and index
                             sys_prompt = prompt_template.format(Event_Name=event_name)
-                            user_input=f"information box {info_box} and header-content pair article {whole_text}"
+                            user_input=f"information box {info_box}, tables {tables}, and header-content pair article {whole_text}"
                             re_format_obj = generate_total_monetary_schema(key)  
                             line = batch_gpt(sys_prompt, event_id,user_input,re_format_obj)  # define the line of API request
                             data.append(line)
@@ -244,7 +257,7 @@ if __name__ == "__main__":
                                     
                                     event_id = f"{event_id_base}_{key}_{idx}"  # unique event id with key and index
                                     sys_prompt = prompt_template.format(Event_Name=event_name)
-                                    user_input=f"information box {info_box} and header-content pair article {whole_text}"
+                                    user_input=f"information box {info_box},tables {tables}, and header-content pair article {whole_text}"
                               
                                   
                                     TotalMainEvent=generate_TotalMainEvent()
@@ -255,7 +268,7 @@ if __name__ == "__main__":
                                     
                                     event_id = f"{event_id_base}_{key}_{idx}"  # unique event id with key and index
                                     sys_prompt = prompt_template.format(Event_Name=event_name)
-                                    user_input=f"information box {info_box} and header-content pair article {whole_text}"
+                                    user_input=f"information box {info_box}, tables {tables}, and header-content pair article {whole_text}"
                                     TotalLocationEvent=generate_TotalLocationEvent()
                                     line = batch_gpt(sys_prompt, event_id,user_input,TotalLocationEvent)  # define the line of API request
                                     data.append(line)
@@ -264,12 +277,85 @@ if __name__ == "__main__":
                             
                             event_id = f"{event_id_base}_{key}_{idx}"  # unique event id with key and index
                             sys_prompt = prompt_template.format(Event_Name=event_name)
-                            user_input=f"information box {info_box} and header-content pair article {whole_text}"
+                            user_input=f"information box {info_box}, tables {tables}, and header-content pair article {whole_text}"
                             re_format_obj= generate_total_direct_schema(key)
                             line = batch_gpt(sys_prompt, event_id,user_input,re_format_obj)  # define the line of API request
                             data.append(line)
 
         return data
+
+     # multi event 
+ 
+
+    def process_multi_data(raw_text, target_prompts, re_format):
+        """
+        Processes data based on a prompt list and batch function.
+
+        Parameters:
+        - raw_text: list of events containing 'Event_ID', 'Event_Name', 'Info_Box', etc.
+        - target_prompts: dictionary where keys are categories (e.g., 'deaths', 'injuries') and values are lists of prompts
+
+        Returns:
+        - data: list of formatted batch lines
+        """
+        data = []
+        for item in raw_text:
+            event_id_base = str(item.get("Event_ID"))
+            
+            info_box = str(item.get("Info_Box"))
+            whole_text = item.get("Whole_Text")
+            All_tables = item.get("All_Tables")
+            Lists = item.get("Lists")
+            
+            # --- Use a single counter for this item ---
+            idx = 0
+            
+            # Process whole_text
+            if whole_text:
+                for i in whole_text:
+                    if not isinstance(i, dict):
+                        continue
+                    event_name = str(i.get("header") or i.get("Header"))
+                    content    = str(i.get("content") or i.get("Content"))
+                    if content is not None and content.strip() != '':
+                        event_id = f"{event_id_base}_{idx}"
+                        sys_prompt = target_prompts.format(Event_Name=event_name if event_name else "event")
+                        user_input = f" Content: {content}"
+                        re_format_obj = re_format()
+                        line = batch_gpt(sys_prompt, event_id, user_input, re_format_obj)
+                        data.append(line)
+                        idx += 1  # increment main index
+            
+            # Process All_tables
+            if All_tables:
+                for table in All_tables:
+                    for i in table:
+                        if isinstance(i, str) and i.strip() != '':
+                            event_id = f"{event_id_base}_{idx}"
+                            sys_prompt = target_prompts.format(Event_Name="event")
+                            user_input = f" Content: {i}"
+                            re_format_obj = re_format()
+                            line = batch_gpt(sys_prompt, event_id, user_input, re_format_obj)
+                            data.append(line)
+                            idx += 1
+
+            # Process Lists
+            if Lists:
+                # If Lists is a string (should be list ideally)
+                if isinstance(Lists, str):
+                    Lists = [Lists]
+                for i in Lists:
+                    if isinstance(i, str) and i.strip() != '':
+                        event_id = f"{event_id_base}_{idx}"
+                        sys_prompt = target_prompts.format(Event_Name="event")
+                        user_input = f" Content: {i}"
+                        re_format_obj = re_format()
+                        line = batch_gpt(sys_prompt, event_id, user_input, re_format_obj)
+                        data.append(line)
+                        idx += 1
+
+        return data
+
 
     def save_batch_file(data, file_path, description):
         """
@@ -323,6 +409,8 @@ if __name__ == "__main__":
             client=client,  # OpenAI API client instance
             metadata_description=metadata_description,  # metadata description
         )
+   
+
     if args.prompt_category == "location_chain":
     # Convert the JSON data into a DataFrame
         df = pd.DataFrame(raw_text)
@@ -333,9 +421,9 @@ if __name__ == "__main__":
         json_output_path = f"{args.raw_dir}/{args.filename.replace('.json', '_location_processed.json')}"
 
         df.to_json(json_output_path, orient='records', indent=2)
-    elif args.prompt_category == "impact":
+    elif args.prompt_category == "impact" and args.article_category == "single":
         # Process data for impact
-        impact_data = process_data(raw_text, target_prompts, prompt_impact_list)
+        impact_data = process_single_data(raw_text, target_prompts, prompt_impact_list)
         process_save_upload(
             impact_data,
             jsonl_file_path_impact,
@@ -344,9 +432,9 @@ if __name__ == "__main__":
             f"{args.description}_{args.model_name}_{args.filename}",
         )
 
-    elif args.prompt_category == "basic":
+    elif args.prompt_category == "basic"and args.article_category == "single":
         # Process data for basic
-        basic_data = process_data(raw_text, target_prompts, prompt_basic_list)
+        basic_data = process_single_data(raw_text, target_prompts, prompt_basic_list)
         process_save_upload(
             basic_data,
             jsonl_file_path_basic,
@@ -356,22 +444,47 @@ if __name__ == "__main__":
         )
 
     elif args.prompt_category == "all":
-        # Process and upload basic data
-        basic_data = process_data(raw_text, target_prompts, prompt_basic_list)
-        process_save_upload(
-            basic_data,
-            jsonl_file_path_basic,
-            args.description,
-            client,
-            f"{args.description}_{args.model_name}_{args.filename}",
-        )
+        if  args.article_category == "single":
+            # Process and upload basic data
+            basic_data = process_single_data(raw_text, target_prompts, prompt_basic_list)
+            process_save_upload(
+                basic_data,
+                jsonl_file_path_basic,
+                args.description,
+                client,
+                f"{args.description}_{args.model_name}_{args.filename}",
+            )
 
-        # Process and upload impact data
-        impact_data = process_data(raw_text, target_prompts, prompt_impact_list)
-        process_save_upload(
-            impact_data,
-            jsonl_file_path_impact,
-            args.description,
-            client,
-            f"{args.description}_{args.model_name}_{args.filename}",
-        )
+            # Process and upload impact data
+            impact_data = process_single_data(raw_text, target_prompts, prompt_impact_list)
+            process_save_upload(
+                impact_data,
+                jsonl_file_path_impact,
+                args.description,
+                client,
+                f"{args.description}_{args.model_name}_{args.filename}",
+            )
+
+        elif  args.article_category == "multi":
+            
+             # Process and upload basic data
+            basic_data = process_multi_data(raw_text, V_7_1_m_basic, generate_MultiEvent_basic)
+            process_save_upload(
+                basic_data,
+                jsonl_file_path_basic,
+                args.description,
+                client,
+                f"{args.description}_{args.model_name}_{args.filename}",
+            )
+
+            # Process and upload impact data
+            impact_data = process_multi_data(raw_text, V_7_1_m_impact,generate_MultiEvent_impact)
+            process_save_upload(
+                impact_data,
+                jsonl_file_path_impact,
+                args.description,
+                client,
+                f"{args.description}_{args.model_name}_{args.filename}",
+            )
+    
+

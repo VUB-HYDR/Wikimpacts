@@ -23,6 +23,8 @@
 | [releases/impactdb.v1.0.1.dg_filled.db](releases/impactdb.v1.0.1.dg_filled.db) | A **post-processed** database after applying a final layer of post-processing, including the handling of currencies and inflation adjustment. In this release, end years of events are nullable. |
 | [releases/impactdb.v1.0.2.dg_filled.db](releases/impactdb.v1.0.2.dg_filled.db) **Inflation to 2024 USD version** | A **post-processed** database that improves on [releases/impactdb.v1.0.1.dg_filled.db](releases/impactdb.v1.0.1.dg_filled.db) by removing events that have no L1/L2/L3 impacts (ie. all impact data in L1 is NULL), most currencies are converted to USD in the database and inflated to 2024 value. |
 | [releases/impactdb.v1.0.3.dg_filled.db](releases/impactdb.v1.0.3.dg_filled.db) **Inflation to 2024 EUR version** | A **post-processed** database that convert 2024 USD to 2024 EUR on [releases/impactdb.v1.0.2.dg_filled.db](releases/impactdb.v1.0.2.dg_filled.db) by using a constant conversion rate in 2024 |
+| [releases/impactdb.v1.1.0.dg_filled.db](releases/impactdb.v1.1.0.dg_filled.db) **Inflation to 2024 EUR version** | A new version of [releases/impactdb.v1.0.3.dg_filled.db](releases/impactdb.v1.0.3.dg_filled.db) with bug fixes (primary and foreign key relations in the database) |
+
 
 ### Additional files and metadata
 
