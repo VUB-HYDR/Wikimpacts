@@ -137,8 +137,9 @@ class NormalizeNumber:
         # TODO: implement this
         self.between = [
             "ranging between",
-            # "from", reconsider
-            # "to",
+            "from", #reconsider
+            "to",
+            "or",
             "between",
             "spanning from",
         ]
@@ -202,6 +203,12 @@ class NormalizeNumber:
             "unsettled",
             "unspecified",
         ]
+
+
+    
+
+       
+
 
     def _check_currency(self, currency_text: str) -> bool:
         try:
@@ -329,17 +336,23 @@ class NormalizeNumber:
             assert number is not None
         except:
             raise BaseException()
+        if (number == 0 or number == 0.0) and all(
+                    z not in text.lower() for z in self.zero_phrases
+            ):
+                return []
         return [number]
 
     def _extract_numbers_from_tokens(self, doc: spacy.tokens.doc.Doc) -> List[float] | BaseException:
         numbers = []
         tmp_num = ""
         num_ranges = []
+        
         try:
             for i, token in enumerate(doc):
                 if token.tag_ == "CD":
                     try:
-                        num = self._normalize_num(token.text, to_word=True)
+                        #num = self._normalize_num(token.text, to_word=True)
+                        num = self._normalize_num(self.nlp(token.text), to_word=True)
                     except:
                         num = token.text
                     tmp_num += num
@@ -480,10 +493,13 @@ class NormalizeNumber:
 
     def _extract_simple_range(self, text: str) -> Tuple[float, float] | None:
         sep = "-"
-        for i in ("and", "to", "&"):
+        text = alpha2digit(text, lang=self.lang, ordinal_threshold=0, relaxed=True)
+        text = regex.sub(r"\[[^\]]*]", " ", text) # drop the citation brackets such as [1], [23], (note) …
+        for i in ("and", "to", "&","or"):
             if i in text:
                 sep = i
                 break
+       
         try:
             nums = [x.replace(",", "") for x in text.split(sep)]
             if len(nums) == 2:
@@ -523,6 +539,12 @@ class NormalizeNumber:
         return n, scale
 
     def _extract_complex_range(self, text: str) -> Tuple[float, float] | None:
+        text = alpha2digit(
+        text,
+        lang=self.lang,
+        ordinal_threshold=0,
+        relaxed=True
+    )
         phrases = {
             "approx": {"list": sorted(self.approximately, reverse=True)},
             "over_inclusive": {"list": sorted(self.over_inclusive, reverse=True)},
@@ -619,6 +641,7 @@ class NormalizeNumber:
             },
             "few": {
                 "few dozen": one * 12,
+                "several dozen":    one * 12,
                 "group of": one,
                 "number of": one,
                 "few hundred": hun,
@@ -677,6 +700,7 @@ class NormalizeNumber:
             },
             "single_dozen": {
                 "a dozen": one * 12,
+                "dozen": one * 12,
             },
         }
 
@@ -742,6 +766,8 @@ class NormalizeNumber:
                     try:
                         numbers = self._extract_single_number(text)
                         assert numbers, BaseException
+                        if all(n is None for n in numbers):
+                            raise BaseException
                     except:
                         cleaned_text = regex.sub(r"(\d+),(\d+)", r"\1\2", text)
                         cleaned_text = " ".join(
@@ -758,7 +784,7 @@ class NormalizeNumber:
                             except BaseException:
                                 try:
                                     # try extraction by spaCy NERs
-                                    numbers = self.extract_numbers_from_entities(doc, labels)
+                                    numbers = self._extract_numbers_from_entities(doc, labels)
                                     assert numbers, BaseException
                                 except BaseException:
                                     try:
