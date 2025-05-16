@@ -7,6 +7,7 @@ on:
   pull_request:
     branches:
       - main
+      - WikimpactsV2
 
 jobs:
   test:
