@@ -181,6 +181,11 @@ class TestNormalizeNumbers:
             ("between 20.2 and 30.4", (20.2, 30.4, 1)),
             ("3,000 to 4,320", (3000, 4320, 1)),
             ("5,235 were killed", (5235, 5235, 0)),
+            ("several dozen people", (24, 72, 1)),
+            ("under investigation", (None, None, 1)),
+            ("more than eighty", (81, 91, 1)),
+            ("ten to eleven", (10, 11, 1)),
+            ("ten[2] or eleven", (10, 11, 1)),
         ],
     )
     def test_extract_numbers(self, test_input, expected):
