@@ -201,6 +201,7 @@ class NormalizeNumber:
             "unpredicted",
             "unsettled",
             "unspecified",
+            "under investigation",
         ]
 
     def _check_currency(self, currency_text: str) -> bool:
