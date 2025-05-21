@@ -201,7 +201,6 @@ class NormalizeNumber:
             "unpredicted",
             "unsettled",
             "unspecified",
-            "under investigation",
         ]
 
     def _check_currency(self, currency_text: str) -> bool:
@@ -217,7 +216,7 @@ class NormalizeNumber:
             return True
         except ValueError:
             return False
-      
+
     def _preprocess(self, text: str) -> str:
         lookup = {
             # case insensitive
@@ -233,14 +232,10 @@ class NormalizeNumber:
                 "tril": "trillion",
             },
         }
-        # remove bracketed references like "ten[2]" → "ten"
-        text = regex.sub(r"(\w+)\[\d+\]", r"\1", text)
+
         # remove currency
         text = " ".join(regex.sub(r"\p{Sc}|(~)|Rs\.|Rs", " \\g<1> ", text).split())
-        
-     
-       
-       
+
         # normalize shorthand style_1
         style_1_match_any = f"({'|'.join(lookup['style_1'].keys())}){{1}}"
         text = regex.sub(
@@ -273,16 +268,11 @@ class NormalizeNumber:
 
         return text
 
-
-
-    
-        
     def _extract_single_number(self, text: str) -> List[float | None] | BaseException:
         number = None
 
         for z in self.zero_phrases:
             if z in text.lower().strip():
-                print(f"zero case input {z}")
                 return [0]
 
         for u in self.unknown_phrases:
@@ -489,34 +479,25 @@ class NormalizeNumber:
             return 0
 
     def _extract_simple_range(self, text: str) -> Tuple[float, float] | None:
-       
         sep = "-"
-        for i in ("and", "to", "&", "or"):
+        for i in ("and", "to", "&"):
             if i in text:
                 sep = i
                 break
         try:
             nums = [x.replace(",", "") for x in text.split(sep)]
-         
             if len(nums) == 2:
-                
                 try:
-                    left_num=self._extract_single_number(nums[0])
-                    print(f"nums in simple range left {left_num}")
-                    right_num=self._extract_single_number(nums[1])
-                    print(f"nums in simple range right {right_num}")
-                    return (left_num[0], right_num[0])
+                    return (self.atof(nums[0].strip()), self.atof(nums[1].strip()))
                 except:
                     return None
         except:
             # try again but first normalize the number first
-            text = self._normalize_num(self.nlp(text), to_word=False)      
+            text = self._normalize_num(self.nlp(text), to_word=False)
             nums = text.split(sep)
             if len(nums) == 2:
                 try:
-                    left_num=self._extract_single_number(nums[0])
-                    right_num=self._extract_single_number(nums[1])
-                    return (left_num[0], right_num[0])
+                    return (self.atof(nums[0].strip()), self.atof(nums[1].strip()))
                 except:
                     return None
         return None
@@ -541,16 +522,7 @@ class NormalizeNumber:
 
         return n, scale
 
-    def debug_unicode(self,s):
-        print('repr:', repr(s))
-        print('ordinals:', [ord(c) for c in s])
-        print('chars:', ["%r" % c for c in s])
-
-
-
     def _extract_complex_range(self, text: str) -> Tuple[float, float] | None:
-        
-       
         phrases = {
             "approx": {"list": sorted(self.approximately, reverse=True)},
             "over_inclusive": {"list": sorted(self.over_inclusive, reverse=True)},
@@ -567,16 +539,7 @@ class NormalizeNumber:
                 scales="|".join(self.scales),
                 any_digit=any_digit,
             )
-   
             matches = regex.findall(expression, text, flags=regex.IGNORECASE | regex.MULTILINE)
-            print(f"matches of complex range{matches}")
-
-            if not matches:
-                digit_text = alpha2digit(text, lang=self.lang, relaxed=True)
-                print(f"digits of complex range after the digitation {digit_text}, data type:{type(digit_text)}")
-
-                matches = regex.findall(expression, digit_text, flags=regex.IGNORECASE | regex.MULTILINE)
-                print(f"matches of complex range after the digitation {matches}")
 
             for i in range(len(matches)):
                 matches[i] = [x.strip().replace(",", "") for x in matches[i] if x != ""]
@@ -656,7 +619,6 @@ class NormalizeNumber:
             },
             "few": {
                 "few dozen": one * 12,
-                "several dozen": one * 12,
                 "group of": one,
                 "number of": one,
                 "few hundred": hun,
@@ -715,7 +677,6 @@ class NormalizeNumber:
             },
             "single_dozen": {
                 "a dozen": one * 12,
-                "dozen": one * 12,
             },
         }
 
@@ -759,53 +720,36 @@ class NormalizeNumber:
             return (text, text, 0)
 
         text = self._preprocess(text)
-        print("After _preprocess:", text)
         doc = self.nlp(text.strip())
         approx = self._check_for_approximation(doc, labels)
 
         try:
             numbers = self._extract_simple_range(text)
-            print("After _extract_simple_range:", numbers)
             assert numbers, BaseException
             approx = 1
-        except BaseException as e:
-            print("Entering complex extraction block after exception:", e)
+        except BaseException:
             try:
                 numbers = self._extract_complex_range(text)
-                print("Entering _extract_complex_range with:", text)
-                print("After _extract_complex_range:", numbers)
                 assert numbers, BaseException
                 approx = 1
-                
             except BaseException:
                 try:
                     cleaned_text = " ".join(regex.sub(r"\s+[A-Z]{1,3}\s+", " ", text).split())
-                    print(" clean text, _extract_complex_range:", cleaned_text)
                     numbers = self._extract_complex_range(cleaned_text)
-                    print("After clean text, _extract_complex_range:", numbers)
                     assert numbers, BaseException
                     approx = 1
-                    
                 except BaseException:
                     try:
-                        print("before _extract_single_number text:", text)
                         numbers = self._extract_single_number(text)
-                        print("After _extract_single_number:", numbers)
                         assert numbers, BaseException
-                    except BaseException as ex:
-                        print("Exception in _extract_single_number:", ex, type(ex))
-                        
-                    
+                    except:
                         cleaned_text = regex.sub(r"(\d+),(\d+)", r"\1\2", text)
                         cleaned_text = " ".join(
                             [x for x in cleaned_text.split() if (self._isfloat(x) or x.isdigit() or (x in self.scales))]
                         )
                         try:
-                            print("before clean _extract_single_number text:", cleaned_text)
                             numbers = self._extract_single_number(cleaned_text)
-                            print("After clean text _extract_single_number:", numbers)
                             assert numbers, BaseException
-                            
                         except:
                             try:
                                 numbers = self._extract_approximate_quantifiers(text)
@@ -814,7 +758,7 @@ class NormalizeNumber:
                             except BaseException:
                                 try:
                                     # try extraction by spaCy NERs
-                                    numbers = self._extract_numbers_from_entities(doc, labels)
+                                    numbers = self.extract_numbers_from_entities(doc, labels)
                                     assert numbers, BaseException
                                 except BaseException:
                                     try:
@@ -826,7 +770,7 @@ class NormalizeNumber:
                                         try:
                                             # if all fails, try by normalizing the numbers to words
                                             doc = self.nlp(self._normalize_num(doc), to_words=True)
-                                            numbers = self._extract_numbers_from_entities(doc, labels)
+                                            numbers = self.extract_numbers_from_entities(doc, labels)
                                         except BaseException:
                                             return (None, None, None)
 
