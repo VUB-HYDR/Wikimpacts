@@ -554,7 +554,6 @@ class NormalizeNumber:
                 any_digit=any_digit,
             )
             matches = regex.findall(expression, text, flags=regex.IGNORECASE | regex.MULTILINE)
-
             for i in range(len(matches)):
                 matches[i] = [x.strip().replace(",", "") for x in matches[i] if x != ""]
             matches = [x for x in matches if x]
@@ -743,13 +742,17 @@ class NormalizeNumber:
             approx = 1
         except BaseException:
             try:
+          
                 numbers = self._extract_complex_range(text)
+               
                 assert numbers, BaseException
                 approx = 1
             except BaseException:
                 try:
                     cleaned_text = " ".join(regex.sub(r"\s+[A-Z]{1,3}\s+", " ", text).split())
+                
                     numbers = self._extract_complex_range(cleaned_text)
+                
                     assert numbers, BaseException
                     approx = 1
                 except BaseException:
