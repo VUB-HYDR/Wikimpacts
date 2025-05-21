@@ -233,7 +233,7 @@ class NormalizeNumber:
                 "tril": "trillion",
             },
         }
-
+        text = regex.sub(r"\[[^\]]*]", " ", text) # drop the citation brackets such as [1], [23], (note) …
         # remove currency
         text = " ".join(regex.sub(r"\p{Sc}|(~)|Rs\.|Rs", " \\g<1> ", text).split())
 
@@ -478,20 +478,27 @@ class NormalizeNumber:
                 return 0
 
             return 0
-
+    
     def _extract_simple_range(self, text: str) -> Tuple[float, float] | None:
         sep = "-"
-        for i in ("and", "to", "&"):
+        for i in ("and", "to", "&","or"): # add "or" in the sep sign
             if i in text:
                 sep = i
                 break
         try:
             nums = [x.replace(",", "") for x in text.split(sep)]
             if len(nums) == 2:
-                try:
+                try: # if the num is not digits, try to convert the word to digit 
+                    
                     return (self.atof(nums[0].strip()), self.atof(nums[1].strip()))
-                except:
-                    return None
+                except :
+                    try:
+                        # Fallback: try to extract single numbers manually
+                        left_num = self._extract_single_number(nums[0])
+                        right_num = self._extract_single_number(nums[1])
+                        return (left_num[0], right_num[0])
+                    except :
+                        return None
         except:
             # try again but first normalize the number first
             text = self._normalize_num(self.nlp(text), to_word=False)
@@ -499,10 +506,16 @@ class NormalizeNumber:
             if len(nums) == 2:
                 try:
                     return (self.atof(nums[0].strip()), self.atof(nums[1].strip()))
-                except:
-                    return None
+                except :
+                    try:
+                        # Fallback: try to extract single numbers manually
+                        left_num = self._extract_single_number(nums[0])
+                        right_num = self._extract_single_number(nums[1])
+                        return (left_num[0], right_num[0])
+                    except :
+                        return None
         return None
-
+    
     def _get_scale(self, n_init: float | int):
         """
         Determine the scale of a number

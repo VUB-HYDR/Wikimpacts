@@ -186,6 +186,8 @@ class TestNormalizeNumbers:
             ("more than eighty", (81, 91, 1)),
             ("ten to eleven", (10, 11, 1)),
             ("ten[2] or eleven", (10, 11, 1)),
+            ("more than two million", (2000001,3000001 , 1)),
+          
         ],
     )
     def test_extract_numbers(self, test_input, expected):
