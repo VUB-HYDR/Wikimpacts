@@ -112,7 +112,11 @@ if __name__ == "__main__":
             # Extract relevant details from each item in the data
             Event_ID = str(item.get("Event_ID"))
             Source = str(item.get("Source"))
-            Event_Name = str(item.get("Event_Name"))
+            if item.get("Event_Name"): 
+                Event_Name = str(item.get("Event_Name"))
+            else:
+                Event_Name = str(item.get("Articles_Name"))
+
 
             # Initialize the base dictionary for each event
             df = {"Event_ID": Event_ID, "Sources": Source, "Event_Names": Event_Name}
