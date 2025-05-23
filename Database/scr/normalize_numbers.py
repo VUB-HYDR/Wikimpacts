@@ -284,9 +284,6 @@ class NormalizeNumber:
             number = self.atof(text)
         except:
             try:
-                # try extracting the number from words (eg. "two million")
-                number = text2num(text, lang=self.lang, relaxed=True)
-            except:
                 # first process the case where a number followed by any exception scales
                 if len(regex.findall(r"\b(?<!\.)\d+(?:,\d+)*(?:\.\d+)?\b", text)) == 1:
                     other_scales = ["crore", "lakh", "crores", "lakhs"]
@@ -326,6 +323,9 @@ class NormalizeNumber:
                                         ]
                                     except BaseException:
                                         raise BaseException
+            except:
+                # try extracting the number from words (eg. "two million")
+                number = text2num(text, lang=self.lang, relaxed=True)
         try:
             assert number is not None
         except:
