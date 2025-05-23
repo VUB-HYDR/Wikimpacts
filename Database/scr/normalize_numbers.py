@@ -670,6 +670,7 @@ class NormalizeNumber:
                 "dozens of thousand": tho * 12,
                 "dozens of million": mil * 12,
                 "dozens of billion": bil * 12,
+                "several dozen": 12
             },
             "many": {
                 "large group of": ten,
