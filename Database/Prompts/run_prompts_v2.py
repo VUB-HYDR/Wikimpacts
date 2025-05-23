@@ -285,8 +285,6 @@ if __name__ == "__main__":
         return data
 
      # multi event 
- 
-
     def process_multi_data(raw_text, target_prompts, re_format):
         """
         Processes data based on a prompt list and batch function.
@@ -329,11 +327,13 @@ if __name__ == "__main__":
             # Process All_tables
             if All_tables:
                 for table in All_tables:
-                    for i in table:
-                        if isinstance(i, str) and i.strip() != '':
+                    for event_dict in table:
+                        # event_dict is a dictionary, check it's not empty (skip empty dicts)
+                        if event_dict and isinstance(event_dict, dict):
                             event_id = f"{event_id_base}_{idx}"
                             sys_prompt = target_prompts.format(Event_Name="event")
-                            user_input = f" Content: {i}"
+                            # Format user_input to show the dictionary in a consistent way
+                            user_input = f"Content: {event_dict}"
                             re_format_obj = re_format()
                             line = batch_gpt(sys_prompt, event_id, user_input, re_format_obj)
                             data.append(line)
