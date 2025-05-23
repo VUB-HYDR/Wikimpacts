@@ -151,7 +151,7 @@ class TestNormalizeNumbers:
     @pytest.mark.parametrize(
         "test_input, expected",
         [
-            # ("23mil dollars", (23000000, 23000000, 0)), # fails!
+            ("23mil dollars", (23000000, 23000000, 0)),
             ("23mil", (23000000, 23000000, 0)),
             ("110 - 352", (110, 352, 1)),
             ("between 11 and 17 people were affected", (11, 17, 1)),
@@ -186,9 +186,12 @@ class TestNormalizeNumbers:
             ("several dozen people", (24, 72, 1)),
             ("under investigation", (None, None, 1)),
             ("more than eighty", (81, 91, 1)),
+            ("more than 80", (81, 91, 1)),
             ("ten to eleven", (10, 11, 1)),
             ("ten[2] or eleven", (10, 11, 1)),
             ("more than two million", (2000001, 3000001, 1)),
+            ("more than 2mil", (2000001, 3000001, 1)),
+            ("more than 2,000,000", (2000001, 3000001, 1)),
             ("a dozen deaths were reported", (12, 12, 1)),
             ("dozens of hundreds of homes were completely destroyed", (2400, 7200, 1)),
             ("many were killed!", (20, 60, 1)),
