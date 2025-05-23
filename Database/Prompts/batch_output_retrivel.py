@@ -161,44 +161,7 @@ if __name__ == "__main__":
         with open(out_file_path, "w") as json_file:
             json.dump(response, json_file, indent=4)
     else:
-        """
-        responses = []
-        for item in data:
-            Event_ID = str(item.get("Event_ID"))
-            Source = str(item.get("Source"))
-            event_info = []   # list to collect all dicts for this item
-            for batch in batches:
-                des = batch.metadata
-                if str(f"{args.description}_{args.model_name}_{args.filename}") == des.get("description"):
-                    batch_id = batch.id
-                    output_file_id = batch.output_file_id
-                    try:
-                        client.batches.retrieve(batch_id)
-                        file_response = client.files.content(output_file_id)
-                        batch_responses = file_response.text
-                        res = [json.loads(line) for line in batch_responses.strip().splitlines()]
-                        for i in res:
-                            custom_id = i.get("custom_id", "")
-                            # Match Event_ID and any '_1', '_2', etc. variants
-                            if custom_id and (custom_id == Event_ID or custom_id.startswith(f"{Event_ID}_")):
-                                try:
-                                    
-                                    message_content = get_message_by_custom_id(res, custom_id)
-                                    # Create an "event row" for this specific output
-                                    df_row = {"Event_ID": custom_id, "Sources": Source}
-                                    df_row.update(message_content)
-                                    event_info.append(df_row)   # Add to list!
-                                except json.JSONDecodeError as e:
-                                    df_row = {
-                                        "Event_ID": custom_id,
-                                        "Sources": Source,
-                                        "Json_Error": str(e)
-                                    }
-                                    event_info.append(df_row)
-                    except ValueError:
-                        pass
-            responses.append(event_info)   # (flatten all to one list; or use append if you want groups by data item)
-        """
+        
         responses = [] 
         for item in data:
             Event_ID = str(item.get("Event_ID"))
@@ -237,7 +200,7 @@ if __name__ == "__main__":
                                         event_info[custom_id] = df_row
                     except ValueError:
                         pass
-            #responses.append(list(event_info.values()))
+      
             responses.extend(event_info.values())
 # responses now contains one entry per Event_ID/custom_id result
         out_file_path = (
