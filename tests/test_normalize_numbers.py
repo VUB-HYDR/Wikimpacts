@@ -136,10 +136,12 @@ class TestNormalizeNumbers:
             ("0 - 352", (0, 352)),
             ("23- 55", (23, 55)),
             ("24,501-61,672", (24501, 61672)),
+            ("twelve and one hundred", (12, 100)),
+            ("seven to thirteen", (7, 13)),
+            ("12 & 700", (12, 700)),
             # cases meant to fail
             (">=12", None),
             ("12", None),
-            ("twelve and one hundred", None),
         ],
     )
     def test__extract_simple_range(self, test_input, expected):
@@ -149,7 +151,7 @@ class TestNormalizeNumbers:
     @pytest.mark.parametrize(
         "test_input, expected",
         [
-            # ("23mil dollars", (23000000, 23000000, 0)), # fails!
+            ("23mil dollars", (23000000, 23000000, 0)),
             ("23mil", (23000000, 23000000, 0)),
             ("110 - 352", (110, 352, 1)),
             ("between 11 and 17 people were affected", (11, 17, 1)),
@@ -181,6 +183,19 @@ class TestNormalizeNumbers:
             ("between 20.2 and 30.4", (20.2, 30.4, 1)),
             ("3,000 to 4,320", (3000, 4320, 1)),
             ("5,235 were killed", (5235, 5235, 0)),
+            ("several dozen people", (24, 72, 1)),
+            ("under investigation", (None, None, 1)),
+            ("more than eighty", (81, 91, 1)),
+            ("more than 80", (81, 91, 1)),
+            ("ten to eleven", (10, 11, 1)),
+            ("ten[2] or eleven", (10, 11, 1)),
+            ("more than two million", (2000001, 3000001, 1)),
+            ("more than 2mil", (2000001, 3000001, 1)),
+            ("more than 2,000,000", (2000001, 3000001, 1)),
+            ("a dozen deaths were reported", (12, 12, 1)),
+            ("dozens of hundreds of homes were completely destroyed", (2400, 7200, 1)),
+            ("many were killed!", (20, 60, 1)),
+            ("Only a number of victims were found", (2, 6, 1)),
         ],
     )
     def test_extract_numbers(self, test_input, expected):
@@ -201,6 +216,7 @@ class TestNormalizeNumbers:
             ("there were several thousand reported injuries", (2000, 6000)),
             ("a dozen deaths were reported", (12, 12)),
             ("dozens of hundreds of homes were completely destroyed", (2 * 12 * 100, 6 * 12 * 100)),
+            ("several dozen people", (24, 72)),
             ("many were killed!", (20, 60)),
             ("Only a number of victims were found", (2, 6)),
             ("several millions of euros were wasted on this", (2000000, 9000000)),
