@@ -330,18 +330,12 @@ class NormalizeNumber:
                                             self.atof(numbers[0]) * text2num(numbers[1], lang=self.lang, relaxed=True)
                                         ]
                                     except BaseException:
-                                        raise BaseException
-            except:
-                # try extracting the number from words (eg. "two million")
-                number = text2num(text, lang=self.lang, relaxed=True)
-        try:
                                         try:
                                             # as a last resotr, attempt to extract with text2num
                                             number = text2num(text, lang=self.lang, relaxed=True)
                                         except:
                                             raise BaseException
         try:
-            print("-- testing the number", number)
             assert number is not None
         except:
             raise BaseException()
@@ -497,25 +491,21 @@ class NormalizeNumber:
     def _extract_simple_range(self, text: str) -> Tuple[float, float] | None:
         sep = "-"
         for i in ("and", "to", "&", "or"):  # add "or" in the sep sign
-            if f" {i} " in text: # must be surrounded by spaces
+            if f" {i} " in text:  # must be surrounded by spaces
                 sep = i
                 break
-        print("sep", sep)
         try:
             nums = [x.replace(",", "") for x in text.split(sep)]
             if len(nums) == 2:
                 try:  # if the num is not digits, try to convert the word to digit
-                    print("first attempt to find range", self.atof(nums[0].strip()), self.atof(nums[1].strip()))
                     return (self.atof(nums[0].strip()), self.atof(nums[1].strip()))
                 except:
                     try:
                         # Fallback: try to extract single numbers manually
                         left_num = self._extract_single_number(nums[0])
                         right_num = self._extract_single_number(nums[1])
-                        print("extracted simple range 2 using _extract_single_number", left_num, right_num)
                         return (left_num[0], right_num[0])
                     except:
-                        print("couldn't find any ranges!")
                         return None
         except:
             # try again but first normalize the number first
@@ -523,17 +513,14 @@ class NormalizeNumber:
             nums = text.split(sep)
             if len(nums) == 2:
                 try:
-                    print("try again but first normalize the number first", (self.atof(nums[0].strip()), self.atof(nums[1].strip())))
                     return (self.atof(nums[0].strip()), self.atof(nums[1].strip()))
                 except:
                     try:
                         # Fallback: try to extract single numbers manually
                         left_num = self._extract_single_number(nums[0])
                         right_num = self._extract_single_number(nums[1])
-                        print("fallback", left_num, right_num)
                         return (left_num[0], right_num[0])
                     except:
-                        print("nothing...")
                         return None
         return None
 
@@ -590,7 +577,6 @@ class NormalizeNumber:
                                 x for x in v["matches"][0] if x in self.scales or (x.isdigit() or self._isfloat(x))
                             ]
                             num = self._extract_single_number(" ".join(norm_text))[0]
-                            print("extracted complex range with using _extract_single_number", num)
                         except BaseException as err:
                             self.logger.error(f"Could not infer number from {norm_text}. Error: {err}")
                             return None
@@ -693,7 +679,7 @@ class NormalizeNumber:
                 "dozens of thousand": tho * 12,
                 "dozens of million": mil * 12,
                 "dozens of billion": bil * 12,
-                "several dozen": 12
+                "several dozen": 12,
             },
             "many": {
                 "large group of": ten,
@@ -744,8 +730,6 @@ class NormalizeNumber:
             for k in check_dict.keys():
                 output = _check(check_dict, k, text)
                 if output:
-                    print(check_dict.keys(), k, check_dict[k].keys())
-                    print(output)
                     return output
         return None
 
@@ -760,67 +744,67 @@ class NormalizeNumber:
         text = self._preprocess(text)
         doc = self.nlp(text.strip())
         approx = self._check_for_approximation(doc, labels)
-        print("text, doc, approx", text, doc, approx)
 
         try:
             numbers = self._extract_simple_range(text)
-            print("from _extract_simple_range", numbers)
             assert numbers, BaseException
             approx = 1
         except BaseException:
             try:
                 numbers = self._extract_complex_range(text)
-                print("from _extract_complex_range", numbers)
                 assert numbers, BaseException
                 approx = 1
             except BaseException:
                 try:
                     cleaned_text = " ".join(regex.sub(r"\s+[A-Z]{1,3}\s+", " ", text).split())
                     numbers = self._extract_complex_range(cleaned_text)
-                    print("from clean and _extract_complex_range", numbers)
                     assert numbers, BaseException
                     approx = 1
                 except BaseException:
                     try:
-                        numbers = self._extract_single_number(text)
-                        print("from _extract_single_number", numbers)
+                        spelled_out_text = alpha2digit(text, lang="en")
+                        numbers = self._extract_complex_range(spelled_out_text)
                         assert numbers, BaseException
-                    except:
-                        cleaned_text = regex.sub(r"(\d+),(\d+)", r"\1\2", text)
-                        cleaned_text = " ".join(
-                            [x for x in cleaned_text.split() if (self._isfloat(x) or x.isdigit() or (x in self.scales))]
-                        )
+                        approx = 1
+                    except BaseException:
                         try:
-                            numbers = self._extract_single_number(cleaned_text)
-                            print("from cleaned text and _extract_single_number", numbers)
+                            numbers = self._extract_single_number(text)
                             assert numbers, BaseException
                         except:
+                            cleaned_text = regex.sub(r"(\d+),(\d+)", r"\1\2", text)
+                            cleaned_text = " ".join(
+                                [
+                                    x
+                                    for x in cleaned_text.split()
+                                    if (self._isfloat(x) or x.isdigit() or (x in self.scales))
+                                ]
+                            )
                             try:
-                                numbers = self._extract_approximate_quantifiers(text)
-                                print("from cleaned text _extract_approximate_quantifiers", numbers)
+                                numbers = self._extract_single_number(cleaned_text)
                                 assert numbers, BaseException
-                                approx = 1
-                            except BaseException:
+                            except:
                                 try:
-                                    # try extraction by spaCy NERs
-                                    numbers = self.extract_numbers_from_entities(doc, labels)
-                                    print("from doc extract_numbers_from_entities", numbers)
+                                    numbers = self._extract_approximate_quantifiers(text)
                                     assert numbers, BaseException
+                                    approx = 1
                                 except BaseException:
                                     try:
-                                        # if no NERs were extacted or no NERs were useful, try extracting by token instead
-                                        numbers = self._extract_numbers_from_tokens(doc)
-                                        print("from doc _extract_numbers_from_tokens", numbers)
+                                        # try extraction by spaCy NERs
+                                        numbers = self.extract_numbers_from_entities(doc, labels)
                                         assert numbers, BaseException
-                                        approx = 1 if len(numbers) == 2 else approx
                                     except BaseException:
                                         try:
-                                            # if all fails, try by normalizing the numbers to words
-                                            doc = self.nlp(self._normalize_num(doc), to_words=True)
-                                            numbers = self.extract_numbers_from_entities(doc, labels)
-                                            print("from normalize and doc extract_numbers_from_entities", numbers)
+                                            # if no NERs were extacted or no NERs were useful, try extracting by token instead
+                                            numbers = self._extract_numbers_from_tokens(doc)
+                                            assert numbers, BaseException
+                                            approx = 1 if len(numbers) == 2 else approx
                                         except BaseException:
-                                            return (None, None, None)
+                                            try:
+                                                # if all fails, try by normalizing the numbers to words
+                                                doc = self.nlp(self._normalize_num(doc), to_words=True)
+                                                numbers = self.extract_numbers_from_entities(doc, labels)
+                                            except BaseException:
+                                                return (None, None, None)
 
         if numbers:
             numbers = sorted(numbers)
