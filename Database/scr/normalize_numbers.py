@@ -497,7 +497,7 @@ class NormalizeNumber:
     def _extract_simple_range(self, text: str) -> Tuple[float, float] | None:
         sep = "-"
         for i in ("and", "to", "&", "or"):  # add "or" in the sep sign
-            if i in text:
+            if f" {i} " in text: # must be surrounded by spaces
                 sep = i
                 break
         print("sep", sep)
