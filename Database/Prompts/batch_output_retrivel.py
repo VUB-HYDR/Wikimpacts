@@ -237,7 +237,8 @@ if __name__ == "__main__":
                                         event_info[custom_id] = df_row
                     except ValueError:
                         pass
-            responses.append(list(event_info.values()))
+            #responses.append(list(event_info.values()))
+            responses.extend(event_info.values())
 # responses now contains one entry per Event_ID/custom_id result
         out_file_path = (
             f"{args.output_dir}/{args.filename.replace('.json', '')}_{args.description}_{args.model_name}_rawoutput.json"
