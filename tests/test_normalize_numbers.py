@@ -136,10 +136,12 @@ class TestNormalizeNumbers:
             ("0 - 352", (0, 352)),
             ("23- 55", (23, 55)),
             ("24,501-61,672", (24501, 61672)),
+            ("twelve and one hundred", (12, 100)),
+            ("seven to thirteen", (7, 13)),
+            ("12 & 700", (12, 700)),
             # cases meant to fail
             (">=12", None),
             ("12", None),
-            ("twelve and one hundred", None),
         ],
     )
     def test__extract_simple_range(self, test_input, expected):
@@ -186,12 +188,11 @@ class TestNormalizeNumbers:
             ("more than eighty", (81, 91, 1)),
             ("ten to eleven", (10, 11, 1)),
             ("ten[2] or eleven", (10, 11, 1)),
-            ("more than two million", (2000001,3000001 , 1)),
-            ("a dozen deaths were reported", (12, 12,1)),
-            ("dozens of hundreds of homes were completely destroyed", (2400, 7200,1)),
-            ("many were killed!", (20, 60,1)),
-            ("Only a number of victims were found", (2, 6,1)),
-          
+            ("more than two million", (2000001, 3000001, 1)),
+            ("a dozen deaths were reported", (12, 12, 1)),
+            ("dozens of hundreds of homes were completely destroyed", (2400, 7200, 1)),
+            ("many were killed!", (20, 60, 1)),
+            ("Only a number of victims were found", (2, 6, 1)),
         ],
     )
     def test_extract_numbers(self, test_input, expected):
