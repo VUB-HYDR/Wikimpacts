@@ -2904,9 +2904,45 @@ V_6: dict = {
 
 #for wikimpacts v2, we use structured output and batch api with o3 mini model 
 
+def generate_MultiEvent_table_list_basic():
+    return {
+        "type": "json_schema",
+        "json_schema": {
+            "name": "MultiEvent_response_table_list_basic",
+            "strict": True,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "events": {
+                        "type": "array",
+                        "items": generate_MultiEvent_basic()["json_schema"]["schema"]  # Single event schema here
+                    }
+                },
+                "required": ["events"],
+                   "additionalProperties": False    # <--- Critical line!
+            }
+        }
+    }
 
-
-
+def generate_MultiEvent_table_list_impact():
+    return {
+        "type": "json_schema",
+        "json_schema": {
+            "name": "MultiEvent_response_table_list_impact",
+            "strict": True,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "events": {
+                        "type": "array",
+                        "items": generate_MultiEvent_impact()["json_schema"]["schema"]  # Use single event schema here
+                    }
+                },
+                "required": ["events"],
+                   "additionalProperties": False    # <--- Critical line!
+            }
+        }
+    }
 def generate_MultiEvent_basic() -> dict:
     return {
         "type": "json_schema",
@@ -2946,6 +2982,7 @@ def generate_MultiEvent_basic() -> dict:
             }
         }
     }
+
 def generate_MultiEvent_impact() -> dict:
     return {
         "type": "json_schema",
