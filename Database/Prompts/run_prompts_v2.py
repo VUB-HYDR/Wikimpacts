@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 from pydantic import BaseModel, create_model
 from typing import List
 from Database.Prompts.prompts import V_7_1 as target_prompts
-from Database.Prompts.prompts import  V_7_1_m_basic,V_7_1_m_impact, generate_MultiEvent_basic,generate_MultiEvent_impact, generate_LocationEvent, Post_location, generate_total_direct_schema, generate_total_monetary_schema, generate_TotalMainEvent, generate_TotalLocationEvent
+from Database.Prompts.prompts import  V_7_1_m_basic,V_7_1_m_impact, generate_MultiEvent_table_list_basic, generate_MultiEvent_table_list_impact,generate_MultiEvent_basic,generate_MultiEvent_impact, generate_LocationEvent, Post_location, generate_total_direct_schema, generate_total_monetary_schema, generate_TotalMainEvent, generate_TotalLocationEvent
 from Database.scr.log_utils import Logging
 
 # the prompt list need to use the same variable names in our schema, and each key contains 1+ prompts
@@ -285,7 +285,7 @@ if __name__ == "__main__":
         return data
 
      # multi event 
-    def process_multi_data(raw_text, target_prompts, re_format):
+    def process_multi_data(raw_text, target_prompts, re_format,re_format_table_list):
         """
         Processes data based on a prompt list and batch function.
 
@@ -323,36 +323,28 @@ if __name__ == "__main__":
                         line = batch_gpt(sys_prompt, event_id, user_input, re_format_obj)
                         data.append(line)
                         idx += 1  # increment main index
-            
-            # Process All_tables
+      
+        # Process All_tables, to feed one table instead of one row 
             if All_tables:
                 for table in All_tables:
-                    for event_dict in table:
                         # event_dict is a dictionary, check it's not empty (skip empty dicts)
-                        if event_dict and isinstance(event_dict, dict):
+                        if table and isinstance(table, list) and len(table) > 0:
                             event_id = f"{event_id_base}_{idx}"
                             sys_prompt = target_prompts.format(Event_Name="event")
                             # Format user_input to show the dictionary in a consistent way
-                            user_input = f"Content: {event_dict}"
-                            re_format_obj = re_format()
+                            user_input = f"Content: {table}"
+                            re_format_obj = re_format_table_list()
                             line = batch_gpt(sys_prompt, event_id, user_input, re_format_obj)
                             data.append(line)
                             idx += 1
-
-            # Process Lists
+            # Process List item as a whole list
             if Lists:
-                # If Lists is a string (should be list ideally)
-                if isinstance(Lists, str):
-                    Lists = [Lists]
-                for i in Lists:
-                    if isinstance(i, str) and i.strip() != '':
-                        event_id = f"{event_id_base}_{idx}"
-                        sys_prompt = target_prompts.format(Event_Name="event")
-                        user_input = f" Content: {i}"
-                        re_format_obj = re_format()
-                        line = batch_gpt(sys_prompt, event_id, user_input, re_format_obj)
-                        data.append(line)
-                        idx += 1
+                event_id = f"{event_id_base}_{idx}"
+                sys_prompt = target_prompts.format(Event_Name="event")
+                user_input = f" Content: {Lists}"
+                re_format_obj = re_format_table_list()
+                line = batch_gpt(sys_prompt, event_id, user_input, re_format_obj)
+                data.append(line)
 
         return data
 
@@ -468,7 +460,7 @@ if __name__ == "__main__":
         elif  args.article_category == "multi":
             
              # Process and upload basic data
-            basic_data = process_multi_data(raw_text, V_7_1_m_basic, generate_MultiEvent_basic)
+            basic_data = process_multi_data(raw_text, V_7_1_m_basic, generate_MultiEvent_basic,generate_MultiEvent_table_list_basic)
             process_save_upload(
                 basic_data,
                 jsonl_file_path_basic,
@@ -478,7 +470,7 @@ if __name__ == "__main__":
             )
 
             # Process and upload impact data
-            impact_data = process_multi_data(raw_text, V_7_1_m_impact,generate_MultiEvent_impact)
+            impact_data = process_multi_data(raw_text, V_7_1_m_impact,generate_MultiEvent_impact,generate_MultiEvent_table_list_impact)
             process_save_upload(
                 impact_data,
                 jsonl_file_path_impact,
