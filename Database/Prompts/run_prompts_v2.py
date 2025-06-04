@@ -284,6 +284,14 @@ if __name__ == "__main__":
 
         return data
 
+
+    def chunk_list(input_list, chunk_size):
+        """Yield successive chunk_size-sized chunks from input_list."""
+        for i in range(0, len(input_list), chunk_size):
+            yield input_list[i:i + chunk_size]
+ 
+
+
      # multi event 
     def process_multi_data(raw_text, target_prompts, re_format,re_format_table_list):
         """
@@ -324,28 +332,31 @@ if __name__ == "__main__":
                         data.append(line)
                         idx += 1  # increment main index
       
-        # Process All_tables, to feed one table instead of one row 
+        # Process All_tables, to feed one table instead of one row, and only feed 10 rows because get output error because large tables
+      
             if All_tables:
                 for table in All_tables:
-                        # event_dict is a dictionary, check it's not empty (skip empty dicts)
-                        if table and isinstance(table, list) and len(table) > 0:
+                    if table and isinstance(table, list) and len(table) > 0:
+                        # Split table into chunks of max 10 rows each
+                        for chunk in chunk_list(table, 10):
                             event_id = f"{event_id_base}_{idx}"
                             sys_prompt = target_prompts.format(Event_Name="event")
-                            # Format user_input to show the dictionary in a consistent way
-                            user_input = f"Content: {table}"
+                            user_input = f"Content: {chunk}"
                             re_format_obj = re_format_table_list()
                             line = batch_gpt(sys_prompt, event_id, user_input, re_format_obj)
                             data.append(line)
                             idx += 1
-            # Process List item as a whole list
+            # process Lists in chunks of 10
             if Lists:
-                event_id = f"{event_id_base}_{idx}"
-                sys_prompt = target_prompts.format(Event_Name="event")
-                user_input = f" Content: {Lists}"
-                re_format_obj = re_format_table_list()
-                line = batch_gpt(sys_prompt, event_id, user_input, re_format_obj)
-                data.append(line)
-
+                for chunk in chunk_list(Lists, 10):
+                    event_id = f"{event_id_base}_{idx}"
+                    sys_prompt = target_prompts.format(Event_Name="event")
+                    user_input = f"Content: {chunk}"
+                    re_format_obj = re_format_table_list()
+                    line = batch_gpt(sys_prompt, event_id, user_input, re_format_obj)
+                    data.append(line)
+                    idx += 1
+          
         return data
 
 
