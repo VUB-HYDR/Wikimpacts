@@ -807,6 +807,10 @@ class NormalizeNumber:
                                                 return (None, None, None)
 
         if numbers:
+            numbers = [n for n in numbers if n is not None]  # Remove all Nones
+            if not numbers:
+                return (None, None, approx)
+    #numbers = sorted(numbers)
             numbers = sorted(numbers)
             if len(numbers) == 1:
                 return (numbers[0], numbers[0], approx)
