@@ -334,11 +334,13 @@ if __name__ == "__main__":
                         idx += 1  # increment main index
       
         # Process All_tables, to feed one table instead of one row, and only feed 5 rows because get output error because large tables
+        # Process All_tables, to feed one table instead of one row, and only feed 5 rows because get output error because large tables
       
             if All_tables:
                 for table in All_tables:
                     if table and isinstance(table, list) and len(table) > 0:
                         # Split table into chunks of max 10 rows each
+                        for chunk in chunk_list(table, 5):
                         for chunk in chunk_list(table, 5):
                             event_id = f"{event_id_base}_{idx}"
                             question_prompt = target_prompts.format(Event_Name="event")
@@ -352,6 +354,7 @@ if __name__ == "__main__":
                             line = batch_gpt(sys_prompt, event_id, user_input, re_format_obj)
                             data.append(line)
                             idx += 1
+            # process Lists in chunks of 5
             # process Lists in chunks of 5
             if Lists:
                 for chunk in chunk_list(Lists, 3):
