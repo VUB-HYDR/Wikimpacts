@@ -325,34 +325,49 @@ if __name__ == "__main__":
                     content    = str(i.get("content") or i.get("Content"))
                     if content is not None and content.strip() != '':
                         event_id = f"{event_id_base}_{idx}"
-                        sys_prompt = target_prompts.format(Event_Name=event_name if event_name else "event")
-                        user_input = f" Content: {content}"
+                        question_prompt = target_prompts.format(Event_Name=event_name if event_name else "event")
+                        user_input = question_prompt + f" Content: {content}"
                         re_format_obj = re_format()
+                        sys_prompt="Using the prompt and content given by the user, answer the questions accordingly."
                         line = batch_gpt(sys_prompt, event_id, user_input, re_format_obj)
                         data.append(line)
                         idx += 1  # increment main index
       
-        # Process All_tables, to feed one table instead of one row, and only feed 10 rows because get output error because large tables
+        # Process All_tables, to feed one table instead of one row, and only feed 5 rows because get output error because large tables
+        # Process All_tables, to feed one table instead of one row, and only feed 5 rows because get output error because large tables
       
             if All_tables:
                 for table in All_tables:
                     if table and isinstance(table, list) and len(table) > 0:
                         # Split table into chunks of max 10 rows each
-                        for chunk in chunk_list(table, 10):
+                        for chunk in chunk_list(table, 5):
+                        for chunk in chunk_list(table, 5):
                             event_id = f"{event_id_base}_{idx}"
-                            sys_prompt = target_prompts.format(Event_Name="event")
-                            user_input = f"Content: {chunk}"
+                            question_prompt = target_prompts.format(Event_Name="event")
+                            user_input = question_prompt+ f"""Content: {chunk} 
+                                                 """
                             re_format_obj = re_format_table_list()
+                            sys_prompt=f"""Instructions:
+                                            - Parse the content given by the user and identify all events. 
+                                            - Do not aggregate events information together inside one object; instead, list each event as a separate object.
+                                   """
                             line = batch_gpt(sys_prompt, event_id, user_input, re_format_obj)
                             data.append(line)
                             idx += 1
-            # process Lists in chunks of 10
+            # process Lists in chunks of 5
+            # process Lists in chunks of 5
             if Lists:
-                for chunk in chunk_list(Lists, 10):
+                for chunk in chunk_list(Lists, 3):
                     event_id = f"{event_id_base}_{idx}"
-                    sys_prompt = target_prompts.format(Event_Name="event")
-                    user_input = f"Content: {chunk}"
+                    question_prompt = target_prompts.format(Event_Name="event")
+                    user_input =question_prompt+ f"""Content: {chunk}
+                                                       """
+                      
                     re_format_obj = re_format_table_list()
+                    sys_prompt=f"""Instructions:
+                                            - Parse the content given by the user and identify all events. 
+                                            - Do not aggregate events information together inside one object; instead, list each event as a separate object.
+                                   """
                     line = batch_gpt(sys_prompt, event_id, user_input, re_format_obj)
                     data.append(line)
                     idx += 1
