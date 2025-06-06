@@ -1,0 +1,1 @@
+In Wikimpacts 2.0, we have improved the matching algorithm. It first matches entries based on the administrative area (Country). Next, within those matched entries, the algorithm compares locations using two fields: name and GID. For each entry, it selects the field (either name or GID) that results in the lower error score, and uses that value for further computation.
