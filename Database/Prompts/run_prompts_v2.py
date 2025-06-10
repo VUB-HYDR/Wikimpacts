@@ -340,7 +340,7 @@ if __name__ == "__main__":
                 for table in All_tables:
                     if table and isinstance(table, list) and len(table) > 0:
                         # Split table into chunks of max 10 rows each
-                        for chunk in chunk_list(table, 5):
+                       
                         for chunk in chunk_list(table, 5):
                             event_id = f"{event_id_base}_{idx}"
                             question_prompt = target_prompts.format(Event_Name="event")
@@ -357,7 +357,7 @@ if __name__ == "__main__":
             # process Lists in chunks of 5
             # process Lists in chunks of 5
             if Lists:
-                for chunk in chunk_list(Lists, 3):
+                for chunk in chunk_list(Lists, 5):
                     event_id = f"{event_id_base}_{idx}"
                     question_prompt = target_prompts.format(Event_Name="event")
                     user_input =question_prompt+ f"""Content: {chunk}
