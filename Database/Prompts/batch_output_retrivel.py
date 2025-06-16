@@ -106,8 +106,10 @@ if __name__ == "__main__":
 
     # Retrieve the list of batches
     batches = client.batches.list()
+     
     if args.article_type =="single":
         # Iterate over the provided data
+        response = []
         for item in data:
             # Extract relevant details from each item in the data
             Event_ID = str(item.get("Event_ID"))
@@ -115,7 +117,7 @@ if __name__ == "__main__":
             if item.get("Event_Name"): 
                 Event_Name = str(item.get("Event_Name"))
             else:
-                Event_Name = str(item.get("Articles_Name"))
+                Event_Name = str(item.get("Article_Name"))
 
 
             # Initialize the base dictionary for each event
@@ -161,112 +163,7 @@ if __name__ == "__main__":
         with open(out_file_path, "w") as json_file:
             json.dump(response, json_file, indent=4)
     else:
-        """
-        responses = [] 
-        for item in data:
-            Event_ID = str(item.get("Event_ID"))
-            Source = str(item.get("Source"))
-            event_info = {}   # key: custom_id --> dict
-            for batch in batches:
-                des = batch.metadata
-                if str(f"{args.description}_{args.model_name}_{args.filename}") == des.get("description"):
-                    batch_id = batch.id
-                    output_file_id = batch.output_file_id
-                    try:
-                        client.batches.retrieve(batch_id)
-                        file_response = client.files.content(output_file_id)
-                        batch_responses = file_response.text
-                        res = [json.loads(line) for line in batch_responses.strip().splitlines()]
-                        for i in res:
-                            custom_id = i.get("custom_id", "")
-                            if custom_id and (custom_id == Event_ID or custom_id.startswith(f"{Event_ID}_")):
-                                try:
-                                    message_content = get_message_by_custom_id(res, custom_id)
-                                    new_info = {"Event_ID": custom_id, "Sources": Source}
-                                    new_info.update(message_content)
-                                    if custom_id in event_info:
-                                        event_info[custom_id].update(new_info)
-                                    else:
-                                        event_info[custom_id] = new_info
-                                except json.JSONDecodeError as e:
-                                    df_row = {
-                                        "Event_ID": custom_id,
-                                        "Sources": Source,
-                                        "Json_Error": str(e)
-                                    }
-                                    if custom_id in event_info:
-                                        event_info[custom_id].update(df_row)
-                                    else:
-                                        event_info[custom_id] = df_row
-                    except ValueError:
-                        pass
-      
-            responses.extend(event_info.values())
-        """
     
-        """
-        for item in data:
-            Event_ID = str(item.get("Event_ID"))
-            Source = str(item.get("Source"))
-            
-            for batch in batches:
-                des = batch.metadata
-                if str(f"{args.description}_{args.model_name}_{args.filename}") == des.get("description"):
-                    batch_id = batch.id
-                    output_file_id = batch.output_file_id
-                    try:
-                        client.batches.retrieve(batch_id)
-                        file_response = client.files.content(output_file_id)
-                        batch_responses = file_response.text
-                        res = [json.loads(line) for line in batch_responses.strip().splitlines()]
-                        for i in res:
-                            custom_id = i.get("custom_id", "")
-                            if custom_id and (custom_id == Event_ID or custom_id.startswith(f"{Event_ID}_")):
-                                try:
-                                    message_content = get_message_by_custom_id(res, custom_id)
-                                    event_info = {}   # key: custom_id --> dict
-                                    if isinstance(message_content, list):
-                                        for idx, event in enumerate(message_content, 1):
-                                            unique_custom_id = f"{custom_id}_{idx}"
-                                            new_info = {"Event_ID": unique_custom_id, "Sources": Source}
-                                            new_info.update(event)
-                                            event_info[unique_custom_id] = new_info
-
-                                    elif isinstance(message_content, dict) and isinstance(message_content.get("events"), list):
-                                        for idx, event in enumerate(message_content["events"], 1):
-                                            unique_custom_id = f"{custom_id}_{idx}"
-                                            # Add any other fields from message_content except "events"
-                                            new_info = {"Event_ID": unique_custom_id, "Sources": Source}
-                                            for k, v in message_content.items():
-                                                if k != "events":
-                                                    new_info[k] = v
-                                            new_info.update(event)
-                                            # Overwrite Event_ID even if the event has it (your rule)
-                                            new_info["Event_ID"] = unique_custom_id
-                                            event_info[unique_custom_id] = new_info
-
-                                    elif isinstance(message_content, dict):
-                                        # For standalone dicts keep custom_id as Event_ID
-                                        new_info = {"Event_ID": custom_id, "Sources": Source}
-                                        new_info.update(message_content)
-                                        event_info[custom_id] = new_info
-
-                                    else:
-                                        event_info[custom_id] = {"Event_ID": custom_id, "Sources": Source, "Error": "Unexpected message content"}
-                         
-
-                                except json.JSONDecodeError as e:
-                                    df_row = {
-                                        "Event_ID": custom_id,
-                                        "Sources": Source,
-                                        "Json_Error": str(e)
-                                    }
-                                    event_info[custom_id] = df_row
-                    except ValueError:
-                        pass
-
-            responses.extend(event_info.values())
-        """
         responses = []
 
         for item in data:
