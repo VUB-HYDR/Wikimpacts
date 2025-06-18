@@ -2314,3 +2314,718 @@ parse_events: 2025-06-05 11:31:02 INFO     Normalizing nulls for l3 Specific_Ins
 normalize-utils: 2025-06-05 11:31:04 INFO     Output file stored in Database/output/WikimpactsV2/Multi_Events/dev/l3/Specific_Instance_Per_Administrative_Area_Damage/0000.parquet
 normalize-utils: 2025-06-05 11:31:04 INFO     Output file stored in Database/output/WikimpactsV2/Multi_Events/dev/l3/Specific_Instance_Per_Administrative_Area_Damage/0001.parquet
 parse_events: 2025-06-05 11:31:04 INFO     PARSING COMPLETE
+parse_events: 2025-06-16 10:00:50 INFO     Passed args: Namespace(spaCy_model_name='en_core_web_trf', filename='wiki_test_whole_infobox_20240729_156single_events_single_events_test_set_v2_o3-mini-2025-01-31_rawoutput.json', raw_dir='Database/raw/WikimpactsV2/Single_Event/test', output_dir='Database/output/WikimpactsV2/Single_Event/test', locale_config='en_US.UTF-8', event_levels=['l1', 'l3'], raw_l1=None, store_raw_l1=False)
+parse_events: 2025-06-16 10:00:50 INFO     Creating Database/output/WikimpactsV2/Single_Event/test if it does not exist!
+normalize-utils: 2025-06-16 10:01:00 INFO     SpaCy model 'en_core_web_trf' has been loaded
+normalize_locations: 2025-06-16 10:01:05 INFO     Installed GeoPy cache
+parse_events: 2025-06-16 10:01:05 INFO     JSON datafile loaded
+parse_events: 2025-06-16 10:01:05 INFO     STEP: Parsing main level events (l1)
+parse_events: 2025-06-16 10:01:05 INFO     Unpacking Total_Summary_* columns
+parse_events: 2025-06-16 10:01:06 INFO     Total summary columns: ['Total_Summary_Affected', 'Total_Summary_Buildings_Damaged', 'Total_Summary_Deaths', 'Total_Summary_Displaced', 'Total_Summary_Homeless', 'Total_Summary_Injuries', 'Total_Summary_Insured_Damage', 'Total_Summary_Damage']
+parse_events: 2025-06-16 10:01:06 INFO     STEP: Normalizing start and end dates if present
+parse_events: 2025-06-16 10:01:06 INFO     Normalizing date column: Start_Date
+parse_events: 2025-06-16 10:01:06 INFO     Normalizing date column: End_Date
+parse_events: 2025-06-16 10:01:07 INFO     STEP: Normalizing booleans if present
+parse_events: 2025-06-16 10:01:07 INFO     Normalizing boolean column Total_Damage_Inflation_Adjusted
+parse_events: 2025-06-16 10:01:07 INFO     Normalizing boolean column Total_Insured_Damage_Inflation_Adjusted
+parse_events: 2025-06-16 10:01:07 INFO     STEP: Normalizing nulls
+parse_events: 2025-06-16 10:01:07 INFO     STEP: Normalizing ranges if present in ['Total_Damage', 'Total_Insured_Damage', 'Total_Injuries', 'Total_Homeless', 'Total_Displaced', 'Total_Deaths', 'Total_Buildings_Damaged', 'Total_Affected']
+parse_events: 2025-06-16 10:01:07 INFO     Normalizing ranges in Total_Damage
+parse_events: 2025-06-16 10:01:18 INFO     Normalizing ranges in Total_Insured_Damage
+parse_events: 2025-06-16 10:01:19 INFO     Normalizing ranges in Total_Injuries
+parse_events: 2025-06-16 10:01:20 INFO     Normalizing ranges in Total_Homeless
+parse_events: 2025-06-16 10:01:20 INFO     Normalizing ranges in Total_Displaced
+parse_events: 2025-06-16 10:01:21 INFO     Normalizing ranges in Total_Deaths
+parse_events: 2025-06-16 10:01:27 INFO     Normalizing ranges in Total_Buildings_Damaged
+parse_events: 2025-06-16 10:01:28 INFO     Normalizing ranges in Total_Affected
+parse_events: 2025-06-16 10:01:30 INFO     Splitting column Hazards by pipe
+parse_events: 2025-06-16 10:01:30 INFO     STEP: Normalizing country-level administrative areas if present
+parse_events: 2025-06-16 10:01:30 INFO     Ensuring that all admin area data in Administrative_Areas is of type <list>
+parse_events: 2025-06-16 10:01:30 INFO     Normalizing administrative areas...
+parse_events: 2025-06-16 10:03:53 INFO     Getting GID from GADM for Administrative Areas
+parse_events: 2025-06-16 10:04:15 INFO     STEP: Infer country from list of locations
+parse_events: 2025-06-16 10:04:42 INFO     Normalizing administrative areas after purging areas above GID_0 level...
+parse_events: 2025-06-16 10:06:00 INFO     Getting GID from GADM for Administrative Areas after purging areas above GID_0 level...
+parse_events: 2025-06-16 10:06:04 INFO     STEP: Cleanup
+parse_events: 2025-06-16 10:06:04 INFO     Normalizing nulls
+parse_events: 2025-06-16 10:06:04 INFO     Cleaning event names...
+parse_events: 2025-06-16 10:06:04 INFO     STEP: Validation of Categorical Types for col Hazards
+parse_events: 2025-06-16 10:06:04 INFO     STEP: Validation of Categorical Types for col Main_Event
+parse_events: 2025-06-16 10:06:04 INFO     STEP: Validation relationship between col Hazards and col Main_Event
+parse_events: 2025-06-16 10:06:04 INFO     Storing parsed results for l1 events. Target columns: ['Event_ID', 'Hazards', 'Main_Event', 'Event_Names', 'Sources', 'Administrative_Areas_Norm', 'Administrative_Areas_Type', 'Administrative_Areas_GID', 'Administrative_Areas_GeoJson', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Total_Injuries_Min', 'Total_Injuries_Max', 'Total_Injuries_Approx', 'Total_Deaths_Min', 'Total_Deaths_Max', 'Total_Deaths_Approx', 'Total_Displaced_Min', 'Total_Displaced_Max', 'Total_Displaced_Approx', 'Total_Homeless_Min', 'Total_Homeless_Max', 'Total_Homeless_Approx', 'Total_Buildings_Damaged_Min', 'Total_Buildings_Damaged_Max', 'Total_Buildings_Damaged_Approx', 'Total_Affected_Min', 'Total_Affected_Max', 'Total_Affected_Approx', 'Total_Insured_Damage_Min', 'Total_Insured_Damage_Max', 'Total_Insured_Damage_Approx', 'Total_Insured_Damage_Unit', 'Total_Insured_Damage_Inflation_Adjusted', 'Total_Insured_Damage_Inflation_Adjusted_Year', 'Total_Damage_Min', 'Total_Damage_Max', 'Total_Damage_Approx', 'Total_Damage_Unit', 'Total_Damage_Inflation_Adjusted', 'Total_Damage_Inflation_Adjusted_Year']
+normalize-utils: 2025-06-16 10:06:09 INFO     Output file stored in Database/output/WikimpactsV2/Single_Event/test/l1/0000.parquet
+parse_events: 2025-06-16 10:06:09 INFO     STEP: Parsing level l3 with column prefix Specific
+parse_events: 2025-06-16 10:06:09 INFO     STEP: Normalizing nulls and NaNs
+parse_events: 2025-06-16 10:06:09 INFO     STEP: Parsing l3. Columns: ['Specific_Instance_Per_Administrative_Area_Affected', 'Specific_Instance_Per_Administrative_Area_Buildings_Damaged', 'Specific_Instance_Per_Administrative_Area_Deaths', 'Specific_Instance_Per_Administrative_Area_Displaced', 'Specific_Instance_Per_Administrative_Area_Homeless', 'Specific_Instance_Per_Administrative_Area_Injuries', 'Specific_Instance_Per_Administrative_Area_Insured_Damage', 'Specific_Instance_Per_Administrative_Area_Damage']
+parse_events: 2025-06-16 10:06:09 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-06-16 10:06:09 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-06-16 10:06:09 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Affected and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-06-16 10:06:37 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-06-16 10:06:37 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-06-16 10:06:37 INFO     Normalizing start date column Start_Date
+parse_events: 2025-06-16 10:06:38 INFO     Normalizing end date column End_Date
+parse_events: 2025-06-16 10:06:39 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-06-16 10:08:59 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-06-16 10:09:00 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-06-16 10:09:00 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Affected
+urllib3.connectionpool: 2025-06-16 10:17:11 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=kyaukphyu&format=json&countrycodes=MM&namedetails=1&extratags=True&polygon_geojson=1
+normalize_locations: 2025-06-16 10:17:35 ERROR    Could not find location southeastern china; is_country: False; in_country: china. Error message: 'NoneType' object has no attribute 'keys'.
+normalize_locations: 2025-06-16 10:18:31 ERROR    Could not find location offshore; is_country: False; in_country: japan. Error message: 'name'.
+urllib3.connectionpool: 2025-06-16 10:19:14 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=nara&format=json&countrycodes=JP&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 10:25:41 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=southern+mindanao&format=json&countrycodes=PH&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 10:26:48 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=st.+johns+county&format=json&countrycodes=US&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 10:27:43 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=ciego+de+%C3%A1vila+province&format=json&countrycodes=CU&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 10:27:49 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=%C3%A1vila&format=json&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 10:27:50 WARNING  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=%C3%A1vila&format=json&namedetails=1&extratags=True&polygon_geojson=1
+normalize_locations: 2025-06-16 10:27:51 ERROR    API call unsuccessful. Error message: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=%C3%A1vila&format=json&namedetails=1&extratags=True&polygon_geojson=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+urllib3.connectionpool: 2025-06-16 10:28:23 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=mexico%27s&format=json&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 10:28:24 WARNING  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=mexico%27s&format=json&namedetails=1&extratags=True&polygon_geojson=1
+parse_events: 2025-06-16 10:29:55 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-06-16 10:32:43 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-06-16 10:32:43 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-06-16 10:32:43 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-06-16 10:32:43 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Affected l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-06-16 10:32:43 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Affected
+normalize-utils: 2025-06-16 10:32:53 INFO     Output file stored in Database/output/WikimpactsV2/Single_Event/test/l3/Specific_Instance_Per_Administrative_Area_Affected/0000.parquet
+normalize-utils: 2025-06-16 10:32:55 INFO     Output file stored in Database/output/WikimpactsV2/Single_Event/test/l3/Specific_Instance_Per_Administrative_Area_Affected/0001.parquet
+normalize-utils: 2025-06-16 10:32:57 INFO     Output file stored in Database/output/WikimpactsV2/Single_Event/test/l3/Specific_Instance_Per_Administrative_Area_Affected/0002.parquet
+normalize-utils: 2025-06-16 10:32:58 INFO     Output file stored in Database/output/WikimpactsV2/Single_Event/test/l3/Specific_Instance_Per_Administrative_Area_Affected/0003.parquet
+parse_events: 2025-06-16 10:32:58 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-06-16 10:32:58 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-06-16 10:32:58 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-06-16 10:33:28 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-06-16 10:33:28 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-06-16 10:33:28 INFO     Normalizing start date column Start_Date
+parse_events: 2025-06-16 10:33:28 INFO     Normalizing end date column End_Date
+parse_events: 2025-06-16 10:33:28 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-06-16 10:35:28 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-06-16 10:35:28 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-06-16 10:35:28 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+normalize_locations: 2025-06-16 10:36:02 ERROR    Could not find location zhiben hot springs; is_country: False; in_country: taiwan. Error message: 'NoneType' object has no attribute 'keys'.
+normalize_locations: 2025-06-16 10:36:03 ERROR    Could not find location zhiben hot springs; is_country: False; in_country: taiwan. Error message: 'NoneType' object has no attribute 'keys'.
+normalize_locations: 2025-06-16 10:36:16 ERROR    Could not find location zhiben hot springs; is_country: False; in_country: taiwan. Error message: 'NoneType' object has no attribute 'keys'.
+urllib3.connectionpool: 2025-06-16 10:38:58 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=ragged+island&format=json&countrycodes=BS&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 10:40:19 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=somerville&format=json&countrycodes=US&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 10:42:18 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=santiago+camotl%C3%A1n&format=json&countrycodes=MX&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 10:43:04 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=fargo&format=json&countrycodes=US&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 10:46:12 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=recovery&format=json&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 10:47:41 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=main+street+%28maryland+route+144%29&format=json&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 10:47:42 WARNING  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=main+street+%28maryland+route+144%29&format=json&namedetails=1&extratags=True&polygon_geojson=1
+normalize_locations: 2025-06-16 10:47:43 ERROR    API call unsuccessful. Error message: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=main+street+%28maryland+route+144%29&format=json&namedetails=1&extratags=True&polygon_geojson=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+urllib3.connectionpool: 2025-06-16 10:47:44 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=main+street+%28maryland+route+144%29&format=json&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 10:47:45 WARNING  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=main+street+%28maryland+route+144%29&format=json&namedetails=1&extratags=True&polygon_geojson=1
+normalize_locations: 2025-06-16 10:47:46 ERROR    API call unsuccessful. Error message: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=main+street+%28maryland+route+144%29&format=json&namedetails=1&extratags=True&polygon_geojson=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+urllib3.connectionpool: 2025-06-16 10:47:47 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=main+street+%28maryland+route+144%29&format=json&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 10:47:48 WARNING  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=main+street+%28maryland+route+144%29&format=json&namedetails=1&extratags=True&polygon_geojson=1
+normalize_locations: 2025-06-16 10:47:49 ERROR    API call unsuccessful. Error message: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=main+street+%28maryland+route+144%29&format=json&namedetails=1&extratags=True&polygon_geojson=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+urllib3.connectionpool: 2025-06-16 10:48:48 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=central+coastline%2C+north+carolina&format=json&countrycodes=US&namedetails=1&extratags=True&polygon_geojson=1
+parse_events: 2025-06-16 10:50:53 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-06-16 10:52:59 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-06-16 10:52:59 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-06-16 10:52:59 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-06-16 10:52:59 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Buildings_Damaged l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-06-16 10:52:59 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+normalize-utils: 2025-06-16 10:53:06 INFO     Output file stored in Database/output/WikimpactsV2/Single_Event/test/l3/Specific_Instance_Per_Administrative_Area_Buildings_Damaged/0000.parquet
+normalize-utils: 2025-06-16 10:53:07 INFO     Output file stored in Database/output/WikimpactsV2/Single_Event/test/l3/Specific_Instance_Per_Administrative_Area_Buildings_Damaged/0001.parquet
+normalize-utils: 2025-06-16 10:53:09 INFO     Output file stored in Database/output/WikimpactsV2/Single_Event/test/l3/Specific_Instance_Per_Administrative_Area_Buildings_Damaged/0002.parquet
+parse_events: 2025-06-16 10:53:09 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-06-16 10:53:09 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-06-16 10:53:09 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Deaths and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-06-16 10:53:22 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-06-16 10:53:22 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-06-16 10:53:22 INFO     Normalizing start date column Start_Date
+parse_events: 2025-06-16 10:53:23 INFO     Normalizing end date column End_Date
+parse_events: 2025-06-16 10:53:23 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-06-16 10:55:15 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-06-16 10:55:15 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-06-16 10:55:15 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Deaths
+normalize_locations: 2025-06-16 10:57:04 ERROR    Could not find location southern part; is_country: False; in_country: ethiopia. Error message: 'name'.
+urllib3.connectionpool: 2025-06-16 10:57:08 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=departments+in+the+of+france&format=json&countrycodes=FR&namedetails=1&extratags=True&polygon_geojson=1
+normalize_locations: 2025-06-16 10:57:18 ERROR    Could not find location central myanmar; is_country: False; in_country: myanmar. Error message: 'name'.
+normalize_locations: 2025-06-16 10:58:30 ERROR    Could not find location offshore; is_country: False; in_country: japan. Error message: 'name'.
+urllib3.connectionpool: 2025-06-16 10:58:40 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=150&format=json&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 10:58:48 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=jai+tai+nr3&format=json&countrycodes=TW&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 10:59:11 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=gauri+kund&format=json&countrycodes=IN&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 11:01:13 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=metro+manila+suburbs&format=json&countrycodes=PH&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 11:03:07 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=off+the+shore+of+new+york%27s+long+island&format=json&countrycodes=US&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 11:03:08 WARNING  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=off+the+shore+of+new+york%27s+long+island&format=json&countrycodes=US&namedetails=1&extratags=True&polygon_geojson=1
+parse_events: 2025-06-16 11:03:41 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-06-16 11:04:34 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-06-16 11:04:34 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-06-16 11:04:34 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-06-16 11:04:34 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Deaths l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-06-16 11:04:34 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Deaths
+normalize-utils: 2025-06-16 11:04:42 INFO     Output file stored in Database/output/WikimpactsV2/Single_Event/test/l3/Specific_Instance_Per_Administrative_Area_Deaths/0000.parquet
+normalize-utils: 2025-06-16 11:04:44 INFO     Output file stored in Database/output/WikimpactsV2/Single_Event/test/l3/Specific_Instance_Per_Administrative_Area_Deaths/0001.parquet
+normalize-utils: 2025-06-16 11:04:45 INFO     Output file stored in Database/output/WikimpactsV2/Single_Event/test/l3/Specific_Instance_Per_Administrative_Area_Deaths/0002.parquet
+parse_events: 2025-06-16 11:04:45 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-06-16 11:04:45 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-06-16 11:04:45 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Displaced and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-06-16 11:04:57 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-06-16 11:04:57 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-06-16 11:04:57 INFO     Normalizing start date column Start_Date
+parse_events: 2025-06-16 11:04:58 INFO     Normalizing end date column End_Date
+parse_events: 2025-06-16 11:04:58 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-06-16 11:05:54 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-06-16 11:05:54 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-06-16 11:05:54 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Displaced
+urllib3.connectionpool: 2025-06-16 11:06:57 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=st.+catherine+parish&format=json&countrycodes=JM&namedetails=1&extratags=True&polygon_geojson=1
+normalize_locations: 2025-06-16 11:08:07 ERROR    Could not find location southeastern china; is_country: False; in_country: china. Error message: 'NoneType' object has no attribute 'keys'.
+urllib3.connectionpool: 2025-06-16 11:08:36 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=st.+george%27s+island%2C+southern+st.+mary%27s+county%2C+maryland&format=json&countrycodes=US&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 11:08:37 WARNING  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=st.+george%27s+island%2C+southern+st.+mary%27s+county%2C+maryland&format=json&countrycodes=US&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 11:08:41 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=st.+george%27s+island%2C+st.+mary%27s+county%2C+maryland&format=json&countrycodes=US&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 11:08:42 WARNING  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=st.+george%27s+island%2C+st.+mary%27s+county%2C+maryland&format=json&countrycodes=US&namedetails=1&extratags=True&polygon_geojson=1
+normalize_locations: 2025-06-16 11:08:43 ERROR    API call unsuccessful. Error message: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=st.+george%27s+island%2C+st.+mary%27s+county%2C+maryland&format=json&countrycodes=US&namedetails=1&extratags=True&polygon_geojson=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+urllib3.connectionpool: 2025-06-16 11:08:49 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=island%2C&format=json&namedetails=1&extratags=True&polygon_geojson=1
+parse_events: 2025-06-16 11:11:35 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-06-16 11:12:06 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-06-16 11:12:06 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-06-16 11:12:06 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-06-16 11:12:06 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Displaced l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-06-16 11:12:06 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Displaced
+normalize-utils: 2025-06-16 11:12:11 INFO     Output file stored in Database/output/WikimpactsV2/Single_Event/test/l3/Specific_Instance_Per_Administrative_Area_Displaced/0000.parquet
+normalize-utils: 2025-06-16 11:12:13 INFO     Output file stored in Database/output/WikimpactsV2/Single_Event/test/l3/Specific_Instance_Per_Administrative_Area_Displaced/0001.parquet
+parse_events: 2025-06-16 11:12:13 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-06-16 11:12:13 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-16 11:12:13 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Homeless and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-06-16 11:12:21 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-16 11:12:21 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-16 11:12:21 INFO     Normalizing start date column Start_Date
+parse_events: 2025-06-16 11:12:21 INFO     Normalizing end date column End_Date
+parse_events: 2025-06-16 11:12:21 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-16 11:12:53 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-16 11:12:53 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-16 11:12:53 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-16 11:14:33 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-16 11:14:42 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-16 11:14:42 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-16 11:14:42 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-16 11:14:42 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Homeless l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-06-16 11:14:42 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Homeless
+normalize-utils: 2025-06-16 11:14:45 INFO     Output file stored in Database/output/WikimpactsV2/Single_Event/test/l3/Specific_Instance_Per_Administrative_Area_Homeless/0000.parquet
+normalize-utils: 2025-06-16 11:14:45 INFO     Output file stored in Database/output/WikimpactsV2/Single_Event/test/l3/Specific_Instance_Per_Administrative_Area_Homeless/0001.parquet
+parse_events: 2025-06-16 11:14:45 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-06-16 11:14:45 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-16 11:14:45 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Injuries and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-06-16 11:14:50 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-16 11:14:50 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-16 11:14:50 INFO     Normalizing start date column Start_Date
+parse_events: 2025-06-16 11:14:51 INFO     Normalizing end date column End_Date
+parse_events: 2025-06-16 11:14:51 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-16 11:15:24 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-16 11:15:24 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-16 11:15:24 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-16 11:17:23 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-16 11:17:33 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-16 11:17:33 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-16 11:17:33 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-16 11:17:33 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Injuries l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-06-16 11:17:33 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Injuries
+normalize-utils: 2025-06-16 11:17:36 INFO     Output file stored in Database/output/WikimpactsV2/Single_Event/test/l3/Specific_Instance_Per_Administrative_Area_Injuries/0000.parquet
+normalize-utils: 2025-06-16 11:17:36 INFO     Output file stored in Database/output/WikimpactsV2/Single_Event/test/l3/Specific_Instance_Per_Administrative_Area_Injuries/0001.parquet
+parse_events: 2025-06-16 11:17:36 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-06-16 11:17:36 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-16 11:17:36 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Insured_Damage and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-06-16 11:17:38 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-16 11:17:38 INFO     Normalizing boolean column Num_Inflation_Adjusted for l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-16 11:17:38 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-16 11:17:38 INFO     Normalizing start date column Start_Date
+parse_events: 2025-06-16 11:17:38 INFO     Normalizing end date column End_Date
+parse_events: 2025-06-16 11:17:38 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-16 11:17:45 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-16 11:17:45 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-16 11:17:45 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-16 11:17:52 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-16 11:17:53 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-16 11:17:53 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-16 11:17:53 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-16 11:17:53 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Insured_Damage l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-06-16 11:17:53 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+normalize-utils: 2025-06-16 11:17:53 INFO     Output file stored in Database/output/WikimpactsV2/Single_Event/test/l3/Specific_Instance_Per_Administrative_Area_Insured_Damage/0000.parquet
+parse_events: 2025-06-16 11:17:53 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-06-16 11:17:53 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-16 11:17:53 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Damage and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-06-16 11:18:19 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-16 11:18:19 INFO     Normalizing boolean column Num_Inflation_Adjusted for l3 Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-16 11:18:19 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-16 11:18:19 INFO     Normalizing start date column Start_Date
+parse_events: 2025-06-16 11:18:20 INFO     Normalizing end date column End_Date
+parse_events: 2025-06-16 11:18:20 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-16 11:20:13 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-16 11:20:14 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-16 11:20:14 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Damage
+urllib3.connectionpool: 2025-06-16 11:20:18 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=far-north+region&format=json&countrycodes=AU&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 11:20:19 WARNING  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=far-north+region&format=json&countrycodes=AU&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 11:21:20 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=la+habana+province&format=json&countrycodes=CU&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 11:23:35 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=morgan+hill&format=json&countrycodes=US&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 11:23:41 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=oroville+dam&format=json&countrycodes=US&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 11:23:49 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=maitland%27s+bridge+at+the+north+west+coastal+highway&format=json&countrycodes=AU&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 11:23:50 WARNING  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=maitland%27s+bridge+at+the+north+west+coastal+highway&format=json&countrycodes=AU&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 11:23:57 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=maitland%27s&format=json&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 11:23:58 WARNING  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=maitland%27s&format=json&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 11:24:05 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=san+blas&format=json&countrycodes=MX&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 11:24:34 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=aveiro&format=json&countrycodes=PT&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 11:25:09 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=six+counties&format=json&countrycodes=US&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 11:25:10 WARNING  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=six+counties&format=json&countrycodes=US&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 11:25:14 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=six&format=json&namedetails=1&extratags=True&polygon_geojson=1
+parse_events: 2025-06-16 11:26:24 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-16 11:26:54 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-16 11:26:54 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-16 11:26:54 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-16 11:26:54 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Damage l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-06-16 11:26:54 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Damage
+normalize-utils: 2025-06-16 11:27:00 INFO     Output file stored in Database/output/WikimpactsV2/Single_Event/test/l3/Specific_Instance_Per_Administrative_Area_Damage/0000.parquet
+normalize-utils: 2025-06-16 11:27:02 INFO     Output file stored in Database/output/WikimpactsV2/Single_Event/test/l3/Specific_Instance_Per_Administrative_Area_Damage/0001.parquet
+normalize-utils: 2025-06-16 11:27:02 INFO     Output file stored in Database/output/WikimpactsV2/Single_Event/test/l3/Specific_Instance_Per_Administrative_Area_Damage/0002.parquet
+parse_events: 2025-06-16 11:27:02 INFO     PARSING COMPLETE
+parse_events: 2025-06-16 12:02:24 INFO     Passed args: Namespace(spaCy_model_name='en_core_web_trf', filename='Non_English_test_99events_non_eng_events_test_set_0616_o3-mini-2025-01-31_rawoutput.json', raw_dir='Database/raw/WikimpactsV2/Non_Eng_Events/test', output_dir='Database/output/WikimpactsV2/Non_Eng_Events/test', locale_config='en_US.UTF-8', event_levels=['l1', 'l3'], raw_l1=None, store_raw_l1=False)
+parse_events: 2025-06-16 12:02:24 INFO     Creating Database/output/WikimpactsV2/Non_Eng_Events/test if it does not exist!
+normalize-utils: 2025-06-16 12:02:29 INFO     SpaCy model 'en_core_web_trf' has been loaded
+normalize_locations: 2025-06-16 12:02:34 INFO     Installed GeoPy cache
+parse_events: 2025-06-16 12:02:34 INFO     JSON datafile loaded
+parse_events: 2025-06-16 12:02:34 INFO     STEP: Parsing main level events (l1)
+parse_events: 2025-06-16 12:02:34 INFO     Unpacking Total_Summary_* columns
+parse_events: 2025-06-16 12:02:35 INFO     Total summary columns: ['Total_Summary_Affected', 'Total_Summary_Buildings_Damaged', 'Total_Summary_Deaths', 'Total_Summary_Displaced', 'Total_Summary_Homeless', 'Total_Summary_Injuries', 'Total_Summary_Insured_Damage', 'Total_Summary_Damage']
+parse_events: 2025-06-16 12:02:35 INFO     STEP: Normalizing start and end dates if present
+parse_events: 2025-06-16 12:02:35 INFO     Normalizing date column: Start_Date
+parse_events: 2025-06-16 12:02:36 INFO     Normalizing date column: End_Date
+parse_events: 2025-06-16 12:02:36 INFO     STEP: Normalizing booleans if present
+parse_events: 2025-06-16 12:02:36 INFO     Normalizing boolean column Total_Damage_Inflation_Adjusted
+parse_events: 2025-06-16 12:02:36 INFO     Normalizing boolean column Total_Insured_Damage_Inflation_Adjusted
+parse_events: 2025-06-16 12:02:36 INFO     STEP: Normalizing nulls
+parse_events: 2025-06-16 12:02:36 INFO     STEP: Normalizing ranges if present in ['Total_Damage', 'Total_Insured_Damage', 'Total_Injuries', 'Total_Homeless', 'Total_Displaced', 'Total_Deaths', 'Total_Buildings_Damaged', 'Total_Affected']
+parse_events: 2025-06-16 12:02:36 INFO     Normalizing ranges in Total_Damage
+parse_events: 2025-06-16 12:02:38 INFO     Normalizing ranges in Total_Insured_Damage
+parse_events: 2025-06-16 12:02:38 INFO     Normalizing ranges in Total_Injuries
+parse_events: 2025-06-16 12:02:39 INFO     Normalizing ranges in Total_Homeless
+parse_events: 2025-06-16 12:02:40 INFO     Normalizing ranges in Total_Displaced
+parse_events: 2025-06-16 12:02:40 INFO     Normalizing ranges in Total_Deaths
+parse_events: 2025-06-16 12:02:42 INFO     Normalizing ranges in Total_Buildings_Damaged
+parse_events: 2025-06-16 12:02:42 INFO     Normalizing ranges in Total_Affected
+parse_events: 2025-06-16 12:02:44 INFO     Splitting column Hazards by pipe
+parse_events: 2025-06-16 12:02:44 INFO     STEP: Normalizing country-level administrative areas if present
+parse_events: 2025-06-16 12:02:44 INFO     Ensuring that all admin area data in Administrative_Areas is of type <list>
+parse_events: 2025-06-16 12:02:44 INFO     Normalizing administrative areas...
+parse_events: 2025-06-16 12:04:16 INFO     Getting GID from GADM for Administrative Areas
+parse_events: 2025-06-16 12:04:24 INFO     STEP: Infer country from list of locations
+parse_events: 2025-06-16 12:04:40 INFO     Normalizing administrative areas after purging areas above GID_0 level...
+parse_events: 2025-06-16 12:05:44 INFO     Getting GID from GADM for Administrative Areas after purging areas above GID_0 level...
+parse_events: 2025-06-16 12:05:48 INFO     STEP: Cleanup
+parse_events: 2025-06-16 12:05:48 INFO     Normalizing nulls
+parse_events: 2025-06-16 12:05:48 INFO     Cleaning event names...
+parse_events: 2025-06-16 12:05:48 INFO     STEP: Validation of Categorical Types for col Hazards
+parse_events: 2025-06-16 12:05:48 INFO     STEP: Validation of Categorical Types for col Main_Event
+parse_events: 2025-06-16 12:05:48 INFO     STEP: Validation relationship between col Hazards and col Main_Event
+parse_events: 2025-06-16 12:05:48 INFO     Storing parsed results for l1 events. Target columns: ['Event_ID', 'Hazards', 'Main_Event', 'Event_Names', 'Sources', 'Administrative_Areas_Norm', 'Administrative_Areas_Type', 'Administrative_Areas_GID', 'Administrative_Areas_GeoJson', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Total_Injuries_Min', 'Total_Injuries_Max', 'Total_Injuries_Approx', 'Total_Deaths_Min', 'Total_Deaths_Max', 'Total_Deaths_Approx', 'Total_Displaced_Min', 'Total_Displaced_Max', 'Total_Displaced_Approx', 'Total_Homeless_Min', 'Total_Homeless_Max', 'Total_Homeless_Approx', 'Total_Buildings_Damaged_Min', 'Total_Buildings_Damaged_Max', 'Total_Buildings_Damaged_Approx', 'Total_Affected_Min', 'Total_Affected_Max', 'Total_Affected_Approx', 'Total_Insured_Damage_Min', 'Total_Insured_Damage_Max', 'Total_Insured_Damage_Approx', 'Total_Insured_Damage_Unit', 'Total_Insured_Damage_Inflation_Adjusted', 'Total_Insured_Damage_Inflation_Adjusted_Year', 'Total_Damage_Min', 'Total_Damage_Max', 'Total_Damage_Approx', 'Total_Damage_Unit', 'Total_Damage_Inflation_Adjusted', 'Total_Damage_Inflation_Adjusted_Year']
+normalize-utils: 2025-06-16 12:05:51 INFO     Output file stored in Database/output/WikimpactsV2/Non_Eng_Events/test/l1/0000.parquet
+parse_events: 2025-06-16 12:05:51 INFO     STEP: Parsing level l3 with column prefix Specific
+parse_events: 2025-06-16 12:05:51 INFO     STEP: Normalizing nulls and NaNs
+parse_events: 2025-06-16 12:05:51 INFO     STEP: Parsing l3. Columns: ['Specific_Instance_Per_Administrative_Area_Affected', 'Specific_Instance_Per_Administrative_Area_Buildings_Damaged', 'Specific_Instance_Per_Administrative_Area_Deaths', 'Specific_Instance_Per_Administrative_Area_Displaced', 'Specific_Instance_Per_Administrative_Area_Homeless', 'Specific_Instance_Per_Administrative_Area_Injuries', 'Specific_Instance_Per_Administrative_Area_Insured_Damage', 'Specific_Instance_Per_Administrative_Area_Damage']
+parse_events: 2025-06-16 12:05:51 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-06-16 12:05:51 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-06-16 12:05:51 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Affected and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-06-16 12:06:00 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-06-16 12:06:00 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-06-16 12:06:00 INFO     Normalizing start date column Start_Date
+parse_events: 2025-06-16 12:06:01 INFO     Normalizing end date column End_Date
+parse_events: 2025-06-16 12:06:01 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-06-16 12:07:04 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-06-16 12:07:04 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-06-16 12:07:04 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Affected
+urllib3.connectionpool: 2025-06-16 12:07:43 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=2&format=json&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 12:07:44 WARNING  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=2&format=json&namedetails=1&extratags=True&polygon_geojson=1
+normalize_locations: 2025-06-16 12:07:45 ERROR    API call unsuccessful. Error message: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=2&format=json&namedetails=1&extratags=True&polygon_geojson=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+urllib3.connectionpool: 2025-06-16 12:10:10 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=tsuen+wan&format=json&countrycodes=HK&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 12:10:52 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=chai&format=json&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 12:11:14 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=lam&format=json&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 12:12:28 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=durango&format=json&countrycodes=MX&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 12:15:27 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=the+rh%C3%B4ne-alpes&format=json&countrycodes=FR&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 12:15:28 WARNING  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=the+rh%C3%B4ne-alpes&format=json&countrycodes=FR&namedetails=1&extratags=True&polygon_geojson=1
+normalize_locations: 2025-06-16 12:17:05 ERROR    Could not find location 85 rue de patay; is_country: False; in_country: france. Error message: 'NoneType' object has no attribute 'keys'.
+normalize_locations: 2025-06-16 12:18:13 ERROR    Could not find location carabanchel bajo; is_country: False; in_country: spain. Error message: 'NoneType' object has no attribute 'keys'.
+urllib3.connectionpool: 2025-06-16 12:18:36 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=tunis+region&format=json&countrycodes=TN&namedetails=1&extratags=True&polygon_geojson=1
+parse_events: 2025-06-16 12:19:05 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-06-16 12:20:44 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-06-16 12:20:44 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-06-16 12:20:44 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-06-16 12:20:44 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Affected l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-06-16 12:20:44 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Affected
+normalize-utils: 2025-06-16 12:20:50 INFO     Output file stored in Database/output/WikimpactsV2/Non_Eng_Events/test/l3/Specific_Instance_Per_Administrative_Area_Affected/0000.parquet
+normalize-utils: 2025-06-16 12:20:51 INFO     Output file stored in Database/output/WikimpactsV2/Non_Eng_Events/test/l3/Specific_Instance_Per_Administrative_Area_Affected/0001.parquet
+parse_events: 2025-06-16 12:20:51 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-06-16 12:20:51 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-06-16 12:20:51 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-06-16 12:20:54 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-06-16 12:20:54 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-06-16 12:20:54 INFO     Normalizing start date column Start_Date
+parse_events: 2025-06-16 12:20:54 INFO     Normalizing end date column End_Date
+parse_events: 2025-06-16 12:20:54 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-06-16 12:21:21 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-06-16 12:21:21 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-06-16 12:21:21 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+urllib3.connectionpool: 2025-06-16 12:22:17 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=2&format=json&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 12:22:18 WARNING  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=2&format=json&namedetails=1&extratags=True&polygon_geojson=1
+normalize_locations: 2025-06-16 12:22:19 ERROR    API call unsuccessful. Error message: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=2&format=json&namedetails=1&extratags=True&polygon_geojson=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+normalize_locations: 2025-06-16 12:24:28 ERROR    Could not find location 85 rue de patay; is_country: False; in_country: france. Error message: 'NoneType' object has no attribute 'keys'.
+normalize_locations: 2025-06-16 12:25:05 ERROR    Could not find location carabanchel bajo; is_country: False; in_country: spain. Error message: 'NoneType' object has no attribute 'keys'.
+parse_events: 2025-06-16 12:25:36 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-06-16 12:25:56 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-06-16 12:25:56 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-06-16 12:25:56 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-06-16 12:25:56 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Buildings_Damaged l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-06-16 12:25:56 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+normalize-utils: 2025-06-16 12:25:58 INFO     Output file stored in Database/output/WikimpactsV2/Non_Eng_Events/test/l3/Specific_Instance_Per_Administrative_Area_Buildings_Damaged/0000.parquet
+parse_events: 2025-06-16 12:25:58 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-06-16 12:25:58 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-06-16 12:25:58 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Deaths and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-06-16 12:26:02 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-06-16 12:26:02 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-06-16 12:26:02 INFO     Normalizing start date column Start_Date
+parse_events: 2025-06-16 12:26:02 INFO     Normalizing end date column End_Date
+parse_events: 2025-06-16 12:26:02 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-06-16 12:26:37 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-06-16 12:26:37 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-06-16 12:26:37 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Deaths
+normalize_locations: 2025-06-16 12:28:55 ERROR    Could not find location carabanchel bajo; is_country: False; in_country: spain. Error message: 'NoneType' object has no attribute 'keys'.
+parse_events: 2025-06-16 12:29:00 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-06-16 12:29:09 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-06-16 12:29:09 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-06-16 12:29:09 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-06-16 12:29:09 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Deaths l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-06-16 12:29:09 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Deaths
+normalize-utils: 2025-06-16 12:29:12 INFO     Output file stored in Database/output/WikimpactsV2/Non_Eng_Events/test/l3/Specific_Instance_Per_Administrative_Area_Deaths/0000.parquet
+parse_events: 2025-06-16 12:29:12 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-06-16 12:29:12 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-06-16 12:29:12 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Displaced and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-06-16 12:29:14 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-06-16 12:29:14 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-06-16 12:29:14 INFO     Normalizing start date column Start_Date
+parse_events: 2025-06-16 12:29:15 INFO     Normalizing end date column End_Date
+parse_events: 2025-06-16 12:29:15 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-06-16 12:29:35 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-06-16 12:29:35 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-06-16 12:29:35 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Displaced
+urllib3.connectionpool: 2025-06-16 12:30:05 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=sierra+de+la+culebra+%28zamora%29&format=json&countrycodes=ES&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 12:30:10 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=ilha+verde+disaster+relief+center&format=json&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 12:30:11 WARNING  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=ilha+verde+disaster+relief+center&format=json&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 12:30:37 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=area+north+of+the+village+of+cazaux&format=json&countrycodes=FR&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 12:30:38 WARNING  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=area+north+of+the+village+of+cazaux&format=json&countrycodes=FR&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 12:32:43 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=la+teste-de-buch+forest&format=json&countrycodes=FR&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 12:32:44 WARNING  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=la+teste-de-buch+forest&format=json&countrycodes=FR&namedetails=1&extratags=True&polygon_geojson=1
+normalize_locations: 2025-06-16 12:32:45 ERROR    API call unsuccessful. Error message: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=la+teste-de-buch+forest&format=json&countrycodes=FR&namedetails=1&extratags=True&polygon_geojson=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+urllib3.connectionpool: 2025-06-16 12:32:46 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=la+teste-de-buch+forest&format=json&countrycodes=FR&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 12:32:47 WARNING  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=la+teste-de-buch+forest&format=json&countrycodes=FR&namedetails=1&extratags=True&polygon_geojson=1
+normalize_locations: 2025-06-16 12:32:48 ERROR    API call unsuccessful. Error message: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=la+teste-de-buch+forest&format=json&countrycodes=FR&namedetails=1&extratags=True&polygon_geojson=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+parse_events: 2025-06-16 12:32:54 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-06-16 12:33:16 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-06-16 12:33:16 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-06-16 12:33:16 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-06-16 12:33:16 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Displaced l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-06-16 12:33:16 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Displaced
+normalize-utils: 2025-06-16 12:33:18 INFO     Output file stored in Database/output/WikimpactsV2/Non_Eng_Events/test/l3/Specific_Instance_Per_Administrative_Area_Displaced/0000.parquet
+parse_events: 2025-06-16 12:33:18 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-06-16 12:33:18 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-16 12:33:18 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Homeless and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-06-16 12:33:20 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-16 12:33:20 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-16 12:33:20 INFO     Normalizing start date column Start_Date
+parse_events: 2025-06-16 12:33:20 INFO     Normalizing end date column End_Date
+parse_events: 2025-06-16 12:33:20 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-16 12:33:34 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-16 12:33:34 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-16 12:33:34 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-16 12:34:06 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-16 12:34:08 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-16 12:34:08 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-16 12:34:08 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-16 12:34:08 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Homeless l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-06-16 12:34:08 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Homeless
+normalize-utils: 2025-06-16 12:34:09 INFO     Output file stored in Database/output/WikimpactsV2/Non_Eng_Events/test/l3/Specific_Instance_Per_Administrative_Area_Homeless/0000.parquet
+parse_events: 2025-06-16 12:34:09 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-06-16 12:34:09 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-16 12:34:09 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Injuries and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-06-16 12:34:10 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-16 12:34:11 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-16 12:34:11 INFO     Normalizing start date column Start_Date
+parse_events: 2025-06-16 12:34:11 INFO     Normalizing end date column End_Date
+parse_events: 2025-06-16 12:34:11 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-16 12:34:19 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-16 12:34:19 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-16 12:34:19 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Injuries
+urllib3.connectionpool: 2025-06-16 12:34:29 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=seine&format=json&countrycodes=FR&namedetails=1&extratags=True&polygon_geojson=1
+parse_events: 2025-06-16 12:34:33 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-16 12:34:33 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-16 12:34:33 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-16 12:34:33 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-16 12:34:33 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Injuries l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-06-16 12:34:33 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Injuries
+normalize-utils: 2025-06-16 12:34:34 INFO     Output file stored in Database/output/WikimpactsV2/Non_Eng_Events/test/l3/Specific_Instance_Per_Administrative_Area_Injuries/0000.parquet
+parse_events: 2025-06-16 12:34:35 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-06-16 12:34:35 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-16 12:34:35 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Insured_Damage and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-06-16 12:34:35 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-16 12:34:35 INFO     Normalizing boolean column Num_Inflation_Adjusted for l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-16 12:34:35 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-16 12:34:35 INFO     Normalizing start date column Start_Date
+parse_events: 2025-06-16 12:34:35 INFO     Normalizing end date column End_Date
+parse_events: 2025-06-16 12:34:35 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-16 12:34:35 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-16 12:34:35 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-16 12:34:35 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-16 12:34:37 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-16 12:34:37 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-16 12:34:37 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-16 12:34:37 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-16 12:34:37 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Insured_Damage l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-06-16 12:34:37 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+normalize-utils: 2025-06-16 12:34:37 INFO     Output file stored in Database/output/WikimpactsV2/Non_Eng_Events/test/l3/Specific_Instance_Per_Administrative_Area_Insured_Damage/0000.parquet
+parse_events: 2025-06-16 12:34:37 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-06-16 12:34:37 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-16 12:34:37 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Damage and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-06-16 12:34:40 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-16 12:34:40 INFO     Normalizing boolean column Num_Inflation_Adjusted for l3 Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-16 12:34:40 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-16 12:34:40 INFO     Normalizing start date column Start_Date
+parse_events: 2025-06-16 12:34:40 INFO     Normalizing end date column End_Date
+parse_events: 2025-06-16 12:34:40 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-16 12:35:01 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-16 12:35:01 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-16 12:35:01 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Damage
+urllib3.connectionpool: 2025-06-16 12:35:19 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=taipei+city&format=json&countrycodes=TW&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 12:36:09 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=community+centers+outside+municipal+cemetery&format=json&countrycodes=CL&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-16 12:36:10 WARNING  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=community+centers+outside+municipal+cemetery&format=json&countrycodes=CL&namedetails=1&extratags=True&polygon_geojson=1
+normalize_locations: 2025-06-16 12:36:28 ERROR    Could not find location carabanchel bajo; is_country: False; in_country: spain. Error message: 'NoneType' object has no attribute 'keys'.
+parse_events: 2025-06-16 12:36:29 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-16 12:36:42 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-16 12:36:42 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-16 12:36:42 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-16 12:36:42 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Damage l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-06-16 12:36:42 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Damage
+normalize-utils: 2025-06-16 12:36:44 INFO     Output file stored in Database/output/WikimpactsV2/Non_Eng_Events/test/l3/Specific_Instance_Per_Administrative_Area_Damage/0000.parquet
+parse_events: 2025-06-16 12:36:44 INFO     PARSING COMPLETE
+parse_events: 2025-06-18 15:48:13 INFO     Passed args: Namespace(spaCy_model_name='en_core_web_trf', filename='wiki_multi_event_test_17articles_multi_events_test_set_0616_o3-mini-2025-01-31_rawoutput_matched.json', raw_dir='Database/raw/WikimpactsV2/Multi_Events/test', output_dir='Database/output/WikimpactsV2/Multi_Events/test', locale_config='en_US.UTF-8', event_levels=['l1', 'l3'], raw_l1=None, store_raw_l1=False)
+parse_events: 2025-06-18 15:48:13 INFO     Creating Database/output/WikimpactsV2/Multi_Events/test if it does not exist!
+normalize-utils: 2025-06-18 15:48:17 INFO     SpaCy model 'en_core_web_trf' has been loaded
+normalize_locations: 2025-06-18 15:48:23 INFO     Installed GeoPy cache
+parse_events: 2025-06-18 15:48:23 INFO     JSON datafile loaded
+parse_events: 2025-06-18 15:48:23 INFO     STEP: Parsing main level events (l1)
+parse_events: 2025-06-18 15:48:23 INFO     Unpacking Total_Summary_* columns
+parse_events: 2025-06-18 15:48:23 INFO     Total summary columns: ['Total_Summary_Affected', 'Total_Summary_Buildings_Damaged', 'Total_Summary_Deaths', 'Total_Summary_Displaced', 'Total_Summary_Homeless', 'Total_Summary_Injuries', 'Total_Summary_Insured_Damage', 'Total_Summary_Damage']
+parse_events: 2025-06-18 15:48:23 INFO     STEP: Normalizing start and end dates if present
+parse_events: 2025-06-18 15:48:23 INFO     Normalizing date column: Start_Date
+parse_events: 2025-06-18 15:48:29 INFO     Normalizing date column: End_Date
+parse_events: 2025-06-18 15:48:33 INFO     STEP: Normalizing booleans if present
+parse_events: 2025-06-18 15:48:33 INFO     Normalizing boolean column Total_Damage_Inflation_Adjusted
+parse_events: 2025-06-18 15:48:33 INFO     Normalizing boolean column Total_Insured_Damage_Inflation_Adjusted
+parse_events: 2025-06-18 15:48:33 INFO     STEP: Normalizing nulls
+parse_events: 2025-06-18 15:48:33 INFO     STEP: Normalizing ranges if present in ['Total_Damage', 'Total_Insured_Damage', 'Total_Injuries', 'Total_Homeless', 'Total_Displaced', 'Total_Deaths', 'Total_Buildings_Damaged', 'Total_Affected']
+parse_events: 2025-06-18 15:48:33 INFO     Normalizing ranges in Total_Damage
+parse_events: 2025-06-18 15:48:37 INFO     Normalizing ranges in Total_Insured_Damage
+parse_events: 2025-06-18 15:48:37 INFO     Normalizing ranges in Total_Injuries
+parse_events: 2025-06-18 15:48:39 INFO     Normalizing ranges in Total_Homeless
+parse_events: 2025-06-18 15:48:39 INFO     Normalizing ranges in Total_Displaced
+parse_events: 2025-06-18 15:48:39 INFO     Normalizing ranges in Total_Deaths
+parse_events: 2025-06-18 15:48:41 INFO     Normalizing ranges in Total_Buildings_Damaged
+parse_events: 2025-06-18 15:48:43 INFO     Normalizing ranges in Total_Affected
+parse_events: 2025-06-18 15:48:46 INFO     Splitting column Hazards by pipe
+parse_events: 2025-06-18 15:48:46 INFO     STEP: Normalizing country-level administrative areas if present
+parse_events: 2025-06-18 15:48:46 INFO     Ensuring that all admin area data in Administrative_Areas is of type <list>
+parse_events: 2025-06-18 15:48:46 INFO     Normalizing administrative areas...
+parse_events: 2025-06-18 15:53:10 INFO     Getting GID from GADM for Administrative Areas
+parse_events: 2025-06-18 15:53:21 INFO     STEP: Infer country from list of locations
+parse_events: 2025-06-18 15:53:39 INFO     Normalizing administrative areas after purging areas above GID_0 level...
+parse_events: 2025-06-18 15:55:28 INFO     Getting GID from GADM for Administrative Areas after purging areas above GID_0 level...
+parse_events: 2025-06-18 15:55:29 INFO     STEP: Cleanup
+parse_events: 2025-06-18 15:55:29 INFO     Normalizing nulls
+parse_events: 2025-06-18 15:55:29 INFO     Cleaning event names...
+parse_events: 2025-06-18 15:55:29 INFO     STEP: Validation of Categorical Types for col Hazards
+parse_events: 2025-06-18 15:55:29 INFO     STEP: Validation of Categorical Types for col Main_Event
+categorical-validation-utils: 2025-06-18 15:55:29 WARNING  Value `None` may be invalid for this category. Error: 'NoneType' object has no attribute 'lower'
+categorical-validation-utils: 2025-06-18 15:55:29 WARNING  Value `None` may be invalid for this category. Error: 'NoneType' object has no attribute 'lower'
+categorical-validation-utils: 2025-06-18 15:55:29 WARNING  Value `None` may be invalid for this category. Error: 'NoneType' object has no attribute 'lower'
+parse_events: 2025-06-18 15:55:29 INFO     STEP: Validation relationship between col Hazards and col Main_Event
+categorical-validation-utils: 2025-06-18 15:55:29 ERROR    Could not validate relationship between Hazards and Main_Event. Error: None
+categorical-validation-utils: 2025-06-18 15:55:29 ERROR    Could not validate relationship between Hazards and Main_Event. Error: None
+categorical-validation-utils: 2025-06-18 15:55:29 ERROR    Could not validate relationship between Hazards and Main_Event. Error: None
+categorical-validation-utils: 2025-06-18 15:55:29 ERROR    Could not validate relationship between Hazards and Main_Event. Error: 'NoneType' object is not iterable
+categorical-validation-utils: 2025-06-18 15:55:29 ERROR    Could not validate relationship between Hazards and Main_Event. Error: 'NoneType' object is not iterable
+categorical-validation-utils: 2025-06-18 15:55:29 ERROR    Could not validate relationship between Hazards and Main_Event. Error: 'NoneType' object is not iterable
+parse_events: 2025-06-18 15:55:29 INFO     Storing parsed results for l1 events. Target columns: ['Event_ID', 'Hazards', 'Main_Event', 'Event_Names', 'Sources', 'Administrative_Areas_Norm', 'Administrative_Areas_Type', 'Administrative_Areas_GID', 'Administrative_Areas_GeoJson', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Total_Injuries_Min', 'Total_Injuries_Max', 'Total_Injuries_Approx', 'Total_Deaths_Min', 'Total_Deaths_Max', 'Total_Deaths_Approx', 'Total_Displaced_Min', 'Total_Displaced_Max', 'Total_Displaced_Approx', 'Total_Homeless_Min', 'Total_Homeless_Max', 'Total_Homeless_Approx', 'Total_Buildings_Damaged_Min', 'Total_Buildings_Damaged_Max', 'Total_Buildings_Damaged_Approx', 'Total_Affected_Min', 'Total_Affected_Max', 'Total_Affected_Approx', 'Total_Insured_Damage_Min', 'Total_Insured_Damage_Max', 'Total_Insured_Damage_Approx', 'Total_Insured_Damage_Unit', 'Total_Insured_Damage_Inflation_Adjusted', 'Total_Insured_Damage_Inflation_Adjusted_Year', 'Total_Damage_Min', 'Total_Damage_Max', 'Total_Damage_Approx', 'Total_Damage_Unit', 'Total_Damage_Inflation_Adjusted', 'Total_Damage_Inflation_Adjusted_Year']
+normalize-utils: 2025-06-18 15:55:33 INFO     Output file stored in Database/output/WikimpactsV2/Multi_Events/test/l1/0000.parquet
+normalize-utils: 2025-06-18 15:55:36 INFO     Output file stored in Database/output/WikimpactsV2/Multi_Events/test/l1/0001.parquet
+parse_events: 2025-06-18 15:55:36 INFO     STEP: Parsing level l3 with column prefix Specific
+parse_events: 2025-06-18 15:55:36 INFO     STEP: Normalizing nulls and NaNs
+parse_events: 2025-06-18 15:55:36 INFO     STEP: Parsing l3. Columns: ['Specific_Instance_Per_Administrative_Area_Affected', 'Specific_Instance_Per_Administrative_Area_Buildings_Damaged', 'Specific_Instance_Per_Administrative_Area_Deaths', 'Specific_Instance_Per_Administrative_Area_Displaced', 'Specific_Instance_Per_Administrative_Area_Homeless', 'Specific_Instance_Per_Administrative_Area_Injuries', 'Specific_Instance_Per_Administrative_Area_Insured_Damage', 'Specific_Instance_Per_Administrative_Area_Damage']
+parse_events: 2025-06-18 15:55:36 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-06-18 15:55:36 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-06-18 15:55:36 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Affected and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-06-18 15:55:41 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-06-18 15:55:41 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-06-18 15:55:41 INFO     Normalizing start date column Start_Date
+parse_events: 2025-06-18 15:55:42 INFO     Normalizing end date column End_Date
+parse_events: 2025-06-18 15:55:42 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-06-18 15:56:14 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-06-18 15:56:14 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-06-18 15:56:14 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Affected
+urllib3.connectionpool: 2025-06-18 15:58:02 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=knob&format=json&namedetails=1&extratags=True&polygon_geojson=1
+parse_events: 2025-06-18 15:59:01 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-06-18 15:59:20 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-06-18 15:59:20 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-06-18 15:59:20 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Affected
+parse_events: 2025-06-18 15:59:20 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Affected l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-06-18 15:59:20 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Affected
+normalize-utils: 2025-06-18 15:59:22 INFO     Output file stored in Database/output/WikimpactsV2/Multi_Events/test/l3/Specific_Instance_Per_Administrative_Area_Affected/0000.parquet
+normalize-utils: 2025-06-18 15:59:23 INFO     Output file stored in Database/output/WikimpactsV2/Multi_Events/test/l3/Specific_Instance_Per_Administrative_Area_Affected/0001.parquet
+parse_events: 2025-06-18 15:59:23 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-06-18 15:59:23 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-06-18 15:59:23 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-06-18 15:59:36 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-06-18 15:59:36 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-06-18 15:59:36 INFO     Normalizing start date column Start_Date
+parse_events: 2025-06-18 15:59:39 INFO     Normalizing end date column End_Date
+parse_events: 2025-06-18 15:59:42 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+normalize_locations: 2025-06-18 16:00:34 ERROR    Could not find location thayer,fillmore,saline,seward; is_country: True; in_country: None. Error message: 'NoneType' object has no attribute 'raw'.
+normalize_locations: 2025-06-18 16:00:34 ERROR    Could not find location thayer,fillmore,saline,seward; is_country: True; in_country: None. Error message: 'NoneType' object has no attribute 'raw'.
+normalize_locations: 2025-06-18 16:00:43 ERROR    Could not find location wayne,dixon,dakota; is_country: True; in_country: None. Error message: 'NoneType' object has no attribute 'raw'.
+parse_events: 2025-06-18 16:02:08 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-06-18 16:02:09 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-06-18 16:02:09 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+urllib3.connectionpool: 2025-06-18 16:05:22 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=canova&format=json&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-18 16:07:19 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=broad+street+%28u.s.+70n%29&format=json&countrycodes=US&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-18 16:07:20 WARNING  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=broad+street+%28u.s.+70n%29&format=json&countrycodes=US&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-18 16:07:43 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=jackson+street&format=json&countrycodes=US&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-18 16:07:49 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=south+of+sycamore+elementary+school&format=json&countrycodes=US&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-18 16:07:50 WARNING  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=south+of+sycamore+elementary+school&format=json&countrycodes=US&namedetails=1&extratags=True&polygon_geojson=1
+normalize_locations: 2025-06-18 16:07:51 ERROR    API call unsuccessful. Error message: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=south+of+sycamore+elementary+school&format=json&countrycodes=US&namedetails=1&extratags=True&polygon_geojson=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+urllib3.connectionpool: 2025-06-18 16:07:52 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=of+sycamore+elementary+school&format=json&countrycodes=US&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-18 16:07:53 WARNING  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=of+sycamore+elementary+school&format=json&countrycodes=US&namedetails=1&extratags=True&polygon_geojson=1
+normalize_locations: 2025-06-18 16:07:54 ERROR    API call unsuccessful. Error message: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=of+sycamore+elementary+school&format=json&countrycodes=US&namedetails=1&extratags=True&polygon_geojson=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+urllib3.connectionpool: 2025-06-18 16:07:55 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=south+of+sycamore+elementary+school&format=json&countrycodes=US&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-18 16:07:56 WARNING  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=south+of+sycamore+elementary+school&format=json&countrycodes=US&namedetails=1&extratags=True&polygon_geojson=1
+normalize_locations: 2025-06-18 16:07:57 ERROR    API call unsuccessful. Error message: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=south+of+sycamore+elementary+school&format=json&countrycodes=US&namedetails=1&extratags=True&polygon_geojson=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+parse_events: 2025-06-18 16:12:37 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-06-18 16:13:34 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-06-18 16:13:34 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-06-18 16:13:34 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+parse_events: 2025-06-18 16:13:34 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Buildings_Damaged l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-06-18 16:13:34 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Buildings_Damaged
+normalize-utils: 2025-06-18 16:13:41 INFO     Output file stored in Database/output/WikimpactsV2/Multi_Events/test/l3/Specific_Instance_Per_Administrative_Area_Buildings_Damaged/0000.parquet
+normalize-utils: 2025-06-18 16:13:43 INFO     Output file stored in Database/output/WikimpactsV2/Multi_Events/test/l3/Specific_Instance_Per_Administrative_Area_Buildings_Damaged/0001.parquet
+normalize-utils: 2025-06-18 16:13:44 INFO     Output file stored in Database/output/WikimpactsV2/Multi_Events/test/l3/Specific_Instance_Per_Administrative_Area_Buildings_Damaged/0002.parquet
+parse_events: 2025-06-18 16:13:44 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-06-18 16:13:44 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-06-18 16:13:44 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Deaths and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-06-18 16:13:48 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-06-18 16:13:48 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-06-18 16:13:48 INFO     Normalizing start date column Start_Date
+parse_events: 2025-06-18 16:13:48 INFO     Normalizing end date column End_Date
+parse_events: 2025-06-18 16:13:48 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-06-18 16:14:34 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-06-18 16:14:34 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-06-18 16:14:34 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-06-18 16:15:58 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-06-18 16:16:12 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-06-18 16:16:12 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-06-18 16:16:12 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Deaths
+parse_events: 2025-06-18 16:16:12 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Deaths l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-06-18 16:16:12 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Deaths
+normalize-utils: 2025-06-18 16:16:15 INFO     Output file stored in Database/output/WikimpactsV2/Multi_Events/test/l3/Specific_Instance_Per_Administrative_Area_Deaths/0000.parquet
+normalize-utils: 2025-06-18 16:16:16 INFO     Output file stored in Database/output/WikimpactsV2/Multi_Events/test/l3/Specific_Instance_Per_Administrative_Area_Deaths/0001.parquet
+parse_events: 2025-06-18 16:16:16 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-06-18 16:16:16 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-06-18 16:16:16 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Displaced and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-06-18 16:16:16 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-06-18 16:16:16 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-06-18 16:16:16 INFO     Normalizing start date column Start_Date
+parse_events: 2025-06-18 16:16:16 INFO     Normalizing end date column End_Date
+parse_events: 2025-06-18 16:16:16 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-06-18 16:16:21 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-06-18 16:16:21 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-06-18 16:16:21 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-06-18 16:16:35 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-06-18 16:16:37 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-06-18 16:16:37 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-06-18 16:16:37 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Displaced
+parse_events: 2025-06-18 16:16:37 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Displaced l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-06-18 16:16:37 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Displaced
+normalize-utils: 2025-06-18 16:16:38 INFO     Output file stored in Database/output/WikimpactsV2/Multi_Events/test/l3/Specific_Instance_Per_Administrative_Area_Displaced/0000.parquet
+normalize-utils: 2025-06-18 16:16:38 INFO     Output file stored in Database/output/WikimpactsV2/Multi_Events/test/l3/Specific_Instance_Per_Administrative_Area_Displaced/0001.parquet
+parse_events: 2025-06-18 16:16:38 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-06-18 16:16:38 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-18 16:16:38 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Homeless and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-06-18 16:16:38 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-18 16:16:38 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-18 16:16:38 INFO     Normalizing start date column Start_Date
+parse_events: 2025-06-18 16:16:38 INFO     Normalizing end date column End_Date
+parse_events: 2025-06-18 16:16:38 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-18 16:16:40 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-18 16:16:40 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-18 16:16:40 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-18 16:16:40 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-18 16:16:40 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-18 16:16:40 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-18 16:16:40 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Homeless
+parse_events: 2025-06-18 16:16:40 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Homeless l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-06-18 16:16:40 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Homeless
+normalize-utils: 2025-06-18 16:16:40 INFO     Output file stored in Database/output/WikimpactsV2/Multi_Events/test/l3/Specific_Instance_Per_Administrative_Area_Homeless/0000.parquet
+normalize-utils: 2025-06-18 16:16:40 INFO     Output file stored in Database/output/WikimpactsV2/Multi_Events/test/l3/Specific_Instance_Per_Administrative_Area_Homeless/0001.parquet
+parse_events: 2025-06-18 16:16:41 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-06-18 16:16:41 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-18 16:16:41 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Injuries and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-06-18 16:16:43 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-18 16:16:43 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-18 16:16:43 INFO     Normalizing start date column Start_Date
+parse_events: 2025-06-18 16:16:44 INFO     Normalizing end date column End_Date
+parse_events: 2025-06-18 16:16:44 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-18 16:17:10 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-18 16:17:10 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-18 16:17:10 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-18 16:17:42 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-18 16:17:46 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-18 16:17:46 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-18 16:17:46 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Injuries
+parse_events: 2025-06-18 16:17:46 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Injuries l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-06-18 16:17:46 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Injuries
+normalize-utils: 2025-06-18 16:17:48 INFO     Output file stored in Database/output/WikimpactsV2/Multi_Events/test/l3/Specific_Instance_Per_Administrative_Area_Injuries/0000.parquet
+normalize-utils: 2025-06-18 16:17:48 INFO     Output file stored in Database/output/WikimpactsV2/Multi_Events/test/l3/Specific_Instance_Per_Administrative_Area_Injuries/0001.parquet
+parse_events: 2025-06-18 16:17:48 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-06-18 16:17:48 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-18 16:17:48 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Insured_Damage and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-06-18 16:17:48 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-18 16:17:48 INFO     Normalizing boolean column Num_Inflation_Adjusted for l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-18 16:17:48 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-18 16:17:48 INFO     Normalizing start date column Start_Date
+parse_events: 2025-06-18 16:17:48 INFO     Normalizing end date column End_Date
+parse_events: 2025-06-18 16:17:48 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-18 16:17:48 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-18 16:17:48 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-18 16:17:48 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-18 16:17:49 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-18 16:17:49 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-18 16:17:49 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-18 16:17:49 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Insured_Damage
+parse_events: 2025-06-18 16:17:49 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Insured_Damage l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-06-18 16:17:49 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Insured_Damage
+normalize-utils: 2025-06-18 16:17:49 INFO     Output file stored in Database/output/WikimpactsV2/Multi_Events/test/l3/Specific_Instance_Per_Administrative_Area_Insured_Damage/0000.parquet
+normalize-utils: 2025-06-18 16:17:49 INFO     Output file stored in Database/output/WikimpactsV2/Multi_Events/test/l3/Specific_Instance_Per_Administrative_Area_Insured_Damage/0001.parquet
+parse_events: 2025-06-18 16:17:49 INFO     Dropping any columns with non-str column names due to None types in the dicts [0]
+parse_events: 2025-06-18 16:17:49 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-18 16:17:49 INFO     Normalizing numbers to ranges in l3 Specific_Instance_Per_Administrative_Area_Damage and determining whether or not they are an approximate (min, max, approx). Columns: ['Num']
+parse_events: 2025-06-18 16:17:55 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-18 16:17:55 INFO     Normalizing boolean column Num_Inflation_Adjusted for l3 Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-18 16:17:55 INFO     Normalizing dates for subevet Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-18 16:17:55 INFO     Normalizing start date column Start_Date
+parse_events: 2025-06-18 16:17:55 INFO     Normalizing end date column End_Date
+parse_events: 2025-06-18 16:17:55 INFO     Normalizing nulls in Administrative_Area for l3 Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-18 16:18:19 INFO     Getting GID from GADM for Administrative Areas in subevent Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-18 16:18:19 INFO     Normalizing nulls in Locations for l3 Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-18 16:18:19 INFO     Normalizing location names for l3 Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-18 16:18:48 INFO     Getting GID from GADM for locations in l3 Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-18 16:18:50 INFO     Dropping empty rows in Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-18 16:18:50 INFO     Dropped 0 row(s) in Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-18 16:18:50 INFO     Storing parsed results for subevent Specific_Instance_Per_Administrative_Area_Damage
+parse_events: 2025-06-18 16:18:50 INFO     Storing the following target columns for Specific_Instance_Per_Administrative_Area_Damage l3: ['Event_ID', 'Hazards', 'Num_Min', 'Num_Max', 'Num_Approx', 'Num_Unit', 'Num_Inflation_Adjusted', 'Num_Inflation_Adjusted_Year', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Administrative_Area_Norm', 'Administrative_Area_Type', 'Administrative_Area_GID', 'Administrative_Area_GeoJson', 'Locations_Norm', 'Locations_Type', 'Locations_GID', 'Locations_GeoJson']
+parse_events: 2025-06-18 16:18:50 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Damage
+normalize-utils: 2025-06-18 16:18:52 INFO     Output file stored in Database/output/WikimpactsV2/Multi_Events/test/l3/Specific_Instance_Per_Administrative_Area_Damage/0000.parquet
+normalize-utils: 2025-06-18 16:18:52 INFO     Output file stored in Database/output/WikimpactsV2/Multi_Events/test/l3/Specific_Instance_Per_Administrative_Area_Damage/0001.parquet
+parse_events: 2025-06-18 16:18:52 INFO     PARSING COMPLETE
