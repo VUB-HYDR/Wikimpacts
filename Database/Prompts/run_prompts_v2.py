@@ -97,7 +97,7 @@ if __name__ == "__main__":
         "-ty",
         "--prompt_type",
         dest="prompt_type",
-        help="The prompt type of the experiment, can only choose from RAG and original",
+        help="The prompt type of the experiment, can only choose from RAG1, RAG2 and original",
         type=str,
     )
 
@@ -255,14 +255,15 @@ if __name__ == "__main__":
             line = batch_gpt_RAG( event_id,user_prompt,re_format_obj)  # define the line of API request
             data.append(line)
         return data
-    def process_impact_RAG(raw_text,impact_RAG):
+    def process_impact_RAG(raw_text):
         data = []   
         for item in raw_text:
             
             event_id = str(item.get("Event_ID"))
-            event_name = str(item.get("Event_Name"))
-            info_box = str(item.get("Info_Box"))
-            user_prompt=V_8_2.format(Event_Name=event_name,context=impact_RAG +"\n" + info_box)
+            event_name = str(item.get("Event_Names"))
+            #info_box = str(item.get("Info_Box"))
+            impact_RAG= str(item.get("Impact"))
+            user_prompt=V_8_2.format(Event_Name=event_name,context=impact_RAG )
             re_format_obj = generate_MultiEvent_impact()
             line = batch_gpt_RAG( event_id,user_prompt,re_format_obj)  # define the line of API request
             data.append(line)
@@ -479,8 +480,17 @@ if __name__ == "__main__":
             metadata_description=metadata_description,  # metadata description
         )
    
-    if args.prompt_type =="RAG":
+    if args.prompt_type =="RAG1":
         RAG_impact_data = process_whole_text_RAG(raw_text )
+        process_save_upload(
+            RAG_impact_data,
+            jsonl_file_path_impact,
+            args.description,
+            client,
+            f"{args.description}_{args.model_name}_{args.filename}",
+        )
+    if args.prompt_type =="RAG2":
+        RAG_impact_data = process_impact_RAG(raw_text )
         process_save_upload(
             RAG_impact_data,
             jsonl_file_path_impact,
