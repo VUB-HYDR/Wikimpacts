@@ -335,7 +335,7 @@ if __name__ == "__main__":
       
         # Process All_tables, to feed one table instead of one row, and only feed 5 rows because get output error because large tables
         # Process All_tables, to feed one table instead of one row, and only feed 5 rows because get output error because large tables
-      
+        '''
             if All_tables:
                 for table in All_tables:
                     if table and isinstance(table, list) and len(table) > 0:
@@ -371,7 +371,7 @@ if __name__ == "__main__":
                     line = batch_gpt(sys_prompt, event_id, user_input, re_format_obj)
                     data.append(line)
                     idx += 1
-          
+        '''
         return data
 
 
