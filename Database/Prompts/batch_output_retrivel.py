@@ -65,6 +65,14 @@ if __name__ == "__main__":
         help="The article type from Wikipedia, only single and multi allowed ",
         type=str,
     )
+    parser.add_argument(
+        "-ty",
+        "--prompt_type",
+        dest="prompt_type",
+        
+        help="The prompt_type, only RAG and original allowed ",
+        type=str,
+    )
 
     args = parser.parse_args()
     logger.info(f"Passed args: {args}")
@@ -82,32 +90,57 @@ if __name__ == "__main__":
 
     # Function to extract message content based on custom_id
 
+
     def get_message_by_custom_id(batch_responses, custom_id):
         for response in batch_responses:
             if response.get("custom_id") == custom_id:
                 # Extract the message content from the response
                 try:
                     message = response["response"]["body"]["choices"][0]["message"]["content"]
-                    message = message.replace("```json", "").replace("```", "").strip('"').strip()
-                    try:
-                        return json.loads(message)
-                    except:
+                    if message is not None:
+                        message = message.replace("```json", "").replace("```", "").strip('"').strip()
                         try:
-                            ## an ugly hack for a persistent json error
-                            message = message.replace("\n}\n\n\n{", ",")
                             return json.loads(message)
-                        except:
-                            return {"Json_Error": message}
+                        except Exception:
+                            try:
+                                # an ugly hack for a persistent json error
+                                message = message.replace("\n}\n\n\n{", ",")
+                                return json.loads(message)
+                            except Exception:
+                                return {"Json_Error": message}
+                    else:
+                        return "Message content is None"
                 except (KeyError, IndexError) as e:
                     return f"Error retrieving message: {str(e)}"
         return f"No response found for custom_id: {custom_id}"
-
+    """
+    def get_message_by_custom_id(batch_responses, custom_id):
+        for response in batch_responses:
+            if response.get("custom_id") == custom_id:
+                # Extract the message content from the response
+                try:
+                    message = response["response"]["body"]["choices"][0]["message"]["content"]
+                    if message is not None:
+                        message = message.replace("```json", "").replace("```", "").strip('"').strip()
+                        try:
+                            return json.loads(message)
+                        except:
+                            try:
+                                ## an ugly hack for a persistent json error
+                                message = message.replace("\n}\n\n\n{", ",")
+                                return json.loads(message)
+                            except:
+                                return {"Json_Error": message}
+                    except (KeyError, IndexError) as e:
+                    return f"Error retrieving message: {str(e)}"
+        return f"No response found for custom_id: {custom_id}"
+    """
 
 
     # Retrieve the list of batches
     batches = client.batches.list()
-     
-    if args.article_type =="single":
+  
+    if args.article_type =="single" or args.prompt_type == "RAG":
         # Iterate over the provided data
         response = []
         for item in data:

@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 from pydantic import BaseModel, create_model
 from typing import List
 from Database.Prompts.prompts import V_7_1 as target_prompts
-from Database.Prompts.prompts import  V_7_1_m_basic,V_7_1_m_impact, generate_MultiEvent_table_list_basic, generate_MultiEvent_table_list_impact,generate_MultiEvent_basic,generate_MultiEvent_impact, generate_LocationEvent, Post_location, generate_total_direct_schema, generate_total_monetary_schema, generate_TotalMainEvent, generate_TotalLocationEvent
+from Database.Prompts.prompts import  V_7_1_m_basic,V_7_1_m_impact, RAG_schema1, V_8_1, V_8_2, generate_MultiEvent_table_list_basic, generate_MultiEvent_table_list_impact,generate_MultiEvent_basic,generate_MultiEvent_impact, generate_LocationEvent, Post_location, generate_total_direct_schema, generate_total_monetary_schema, generate_TotalMainEvent, generate_TotalLocationEvent
 from Database.scr.log_utils import Logging
 
 # the prompt list need to use the same variable names in our schema, and each key contains 1+ prompts
@@ -93,6 +93,14 @@ if __name__ == "__main__":
         help="The article category of the experiment, can only choose from single and multi",
         type=str,
     )
+    parser.add_argument(
+        "-ty",
+        "--prompt_type",
+        dest="prompt_type",
+        help="The prompt type of the experiment, can only choose from RAG1, RAG2 and original",
+        type=str,
+    )
+
 
 
     args = parser.parse_args()
@@ -135,7 +143,25 @@ if __name__ == "__main__":
             },
         }
         return df
-    
+    def batch_gpt_RAG( event_id,user_input,re_format):
+        df = {
+            "custom_id": event_id,
+            "method": "POST",
+            "url": "/v1/chat/completions",
+            "body": {
+                "response_format": re_format,
+                "model": args.model_name,
+                "messages": [
+                    
+                    {"role": "user", "content": user_input},
+                ],
+                "reasoning_effort":"high",
+                "max_completion_tokens": args.max_tokens,
+              
+                "stop": None,
+            },
+        }
+        return df
     # for location chain completion 
     def gpt_completion(res_format, user_input, sys_prompt):
          response = client.chat.completions.create(
@@ -215,7 +241,33 @@ if __name__ == "__main__":
         f"{args.batch_dir}/{args.filename.replace('.json', '')}_{args.description}_{args.model_name}_impact.jsonl"
     )
 
-  
+    # RAG prompt 
+    def process_whole_text_RAG(raw_text):
+        data = []   
+        for item in raw_text:
+            
+            event_id = str(item.get("Event_ID"))
+            event_name = str(item.get("Event_Name"))
+            info_box = str(item.get("Info_Box"))
+            whole_text = process_whole_text(item)
+            user_prompt=V_8_1.format(Event_Name=event_name,context=whole_text)
+            re_format_obj = RAG_schema1()
+            line = batch_gpt_RAG( event_id,user_prompt,re_format_obj)  # define the line of API request
+            data.append(line)
+        return data
+    def process_impact_RAG(raw_text):
+        data = []   
+        for item in raw_text:
+            
+            event_id = str(item.get("Event_ID"))
+            event_name = str(item.get("Event_Names"))
+            #info_box = str(item.get("Info_Box"))
+            impact_RAG= str(item.get("Impact"))
+            user_prompt=V_8_2.format(Event_Name=event_name,context=impact_RAG )
+            re_format_obj = generate_MultiEvent_impact()
+            line = batch_gpt_RAG( event_id,user_prompt,re_format_obj)  # define the line of API request
+            data.append(line)
+        return data
     # single event 
     def process_single_data(raw_text, target_prompts, prompt_list):
         """
@@ -335,7 +387,7 @@ if __name__ == "__main__":
       
         # Process All_tables, to feed one table instead of one row, and only feed 5 rows because get output error because large tables
         # Process All_tables, to feed one table instead of one row, and only feed 5 rows because get output error because large tables
-      
+        '''
             if All_tables:
                 for table in All_tables:
                     if table and isinstance(table, list) and len(table) > 0:
@@ -371,7 +423,7 @@ if __name__ == "__main__":
                     line = batch_gpt(sys_prompt, event_id, user_input, re_format_obj)
                     data.append(line)
                     idx += 1
-          
+        '''
         return data
 
 
@@ -428,7 +480,24 @@ if __name__ == "__main__":
             metadata_description=metadata_description,  # metadata description
         )
    
-
+    if args.prompt_type =="RAG1":
+        RAG_impact_data = process_whole_text_RAG(raw_text )
+        process_save_upload(
+            RAG_impact_data,
+            jsonl_file_path_impact,
+            args.description,
+            client,
+            f"{args.description}_{args.model_name}_{args.filename}",
+        )
+    if args.prompt_type =="RAG2":
+        RAG_impact_data = process_impact_RAG(raw_text )
+        process_save_upload(
+            RAG_impact_data,
+            jsonl_file_path_impact,
+            args.description,
+            client,
+            f"{args.description}_{args.model_name}_{args.filename}",
+        )
     if args.prompt_category == "location_chain":
     # Convert the JSON data into a DataFrame
         df = pd.DataFrame(raw_text)
@@ -439,6 +508,7 @@ if __name__ == "__main__":
         json_output_path = f"{args.raw_dir}/{args.filename.replace('.json', '_location_processed.json')}"
 
         df.to_json(json_output_path, orient='records', indent=2)
+     
     elif args.prompt_category == "impact" and args.article_category == "single":
         # Process data for impact
         impact_data = process_single_data(raw_text, target_prompts, prompt_impact_list)

@@ -13,6 +13,9 @@
 # Wikimpacts V2 prompt design
 # V_7 is the first version of wikimpacts V2 prompts, based on Version 1.0 Wikimpacts database, we  
 
+# Wikimpacts V2 RAG prompt design 
+# V_8_1 is the RAG first prompt, to ask the model to find impact associated header and sentence in the content 
+# V_8_2 is thhe RAG second prompt, to feed the output from former prompt, and give the output format and ask for the impact  
 
 V_0: dict = {
     "deaths": [
@@ -4315,3 +4318,60 @@ V_7_1_m_impact= """Based on the content given by the user,
       """
     
 
+
+def RAG_schema1() -> dict:
+    return {
+        "type": "json_schema",
+        "json_schema": {
+            "name": "RAG_response1",
+            "strict": True,
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "Impact": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "header": {"type": "string"},
+                                "content": {"type": "string"}
+                            },
+                            "required": ["header", "content"],
+                            "additionalProperties": False
+                        }
+                    }
+                },
+                "required": ["Impact"],
+                "additionalProperties": False
+            }
+        }
+    }
+
+#for the text 
+V_8_1 ="""
+ Based on the provided context , extract only the original text that relates to impacts from the event {Event_Name}, specifically regarding: deaths, injuries, homeless people, displaced people, affected people, buildings damaged, economic damage, and insured damage.
+
+Format your output as follows for each piece of relevant information:
+
+"header": The section title or header where the impact information is found.
+"content": The exact original text containing the impact information.
+Only provide exact quotes from the context. Do not paraphrase or create new sentences.
+
+-----
+Context: {context}
+  """
+
+V_8_2 ="""
+You are given information about the event {Event_Name}, including impact details such as deaths, injuries, affected, homeless, displaced, buildings damaged, economic damage, and insured losses.
+Extract and organize all impact-related information into the structured JSON schema.
+
+Fill every field in the schema with the exact data extracted from the context; if no information is available for a field, set its value to an empty string or an empty array, as appropriate.
+For array fields (e.g., "Specific_Instance_Per_Administrative_Area_X"), include all relevant instances extracted from the context.
+For annotation fields (ending with _Annotation), include the original text or paragraph from which the value was taken.
+Do not generate any text outside of the JSON schema.
+Make sure your response strictly adheres to the given schema and all required fields are included.
+
+-----
+Impact-related information: {context}
+"""
+#for the table and list 
