@@ -161,7 +161,7 @@ if __name__ == "__main__":
 
     event_info = []
     for index, row in df.iterrows():
-            url = str(row["Source"])
+            url = str(row["Sources"])
             event_id = str(row["Event_ID"])
             html = getHTMLText(url)
             if html: 
