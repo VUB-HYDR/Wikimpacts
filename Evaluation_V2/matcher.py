@@ -50,12 +50,22 @@ class SpecificInstanceMatcher:
                 try:
                     # Check str_cat and set_cat first
                     if k in self.str_cat or k in self.set_cat:
-                        r1 = self.comp.string(gold_instance[k], si[k]) if k in self.str_cat else None
-                        r2 = self.comp.sequence(gold_instance[k], si[k]) if k in self.set_cat else None
+                        gold_val = gold_instance[k]
+                        sys_val = si[k]
+                        # Debug print/log!
+                        print(f"[DEBUG] Comparing {k}: gold='{gold_val}' sys='{sys_val}'")  # or use self.logger.debug
+                        
+                        r1 = self.comp.string(gold_val, sys_val) if k in self.str_cat else None
+                        print(f"[DEBUG] Result r1 = {r1}")  # Add this!
+                        r2 = self.comp.sequence(gold_val, sys_val) if k in self.set_cat else None
+                        valid_scores = [x for x in [r1, r2] if x is not None]
+                        print(f"[DEBUG] Result r2 = {r2}")  # Add this!
+                        #r1 = self.comp.string(gold_instance[k], si[k]) if k in self.str_cat else None
+                        #r2 = self.comp.sequence(gold_instance[k], si[k]) if k in self.set_cat else None
 
                         valid_scores = [x for x in [r1, r2] if x is not None]
                         r = min(valid_scores) if valid_scores else None
-                        
+                        print(f"[DEBUG] Result r = {r}")  # Add this!
 
                         # If r is not None and not 0, skip this instance and set score to 0
                         if r is not None and r != 0:
@@ -100,7 +110,26 @@ class SpecificInstanceMatcher:
 
         
         return score_list
-   
+    def schema_checker(self, gold_list: list[dict], sys_list: list[dict]) -> bool:
+        # In case the sys output or gold is an empty list
+        if len(gold_list) == 0 or len(sys_list) == 0:
+            return True
+
+        gold_keys_set = set(gold_list[0].keys())
+        for s, row in enumerate(sys_list):
+            sys_keys_set = set(row.keys())
+            extra_sys_keys = sys_keys_set - gold_keys_set
+            missing_keys = gold_keys_set - sys_keys_set
+
+            if extra_sys_keys or missing_keys:
+                self.logger.error(
+                    f"Inconsistent columns found in sys file at row {s}! "
+                    f"Extra columns: {list(extra_sys_keys)}, Missing columns: {list(missing_keys)}"
+                )
+                return False
+
+        return True
+    """
     def schema_checker(self, gold_list: list[dict], sys_list: list[dict]) -> bool:
         # in case the sys output or gold is an empty list
         if len(gold_list) == 0 or len(sys_list) == 0:
@@ -124,7 +153,7 @@ class SpecificInstanceMatcher:
                     f"Inconsistent columns found in sys file!: {[e for e in sys_list[s].keys() if e not in gold_list[0].keys()]}"
                 )
                 return False
-
+    """
     def match(self, gold_list: list[dict], sys_list: list[dict]) -> tuple[list[dict]]:
         if self.schema_checker(gold_list, sys_list) != True:
             self.logger.error("Please check the column names in your gold and sys files.")

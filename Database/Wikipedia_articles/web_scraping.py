@@ -71,7 +71,39 @@ if __name__ == "__main__":
         
         except :
             return ''
- 
+    def get_section_heading(table):
+        """
+        Traverse backwards in the document from the table to find the nearest heading tag (h1-h6).
+        Returns its text, or None if not found.
+        """
+        for tag in table.find_all_previous():
+            if tag.name and tag.name.lower() in ["h1", "h2", "h3", "h4", "h5", "h6"]:
+                return tag.get_text(strip=True)
+        return None
+
+    def process_tables(soup):
+        tables = soup.find_all("table", {"class": "wikitable"})
+        all_tables_data = []
+        if not tables:
+            return all_tables_data
+        for table in tables:
+            table_rows = []
+            rows = table.find_all("tr")
+            for row in rows:
+                cells = row.find_all(["td", "th"])
+                row_data = [cell.get_text(strip=True) for cell in cells]
+                table_rows.append(row_data)
+            # Try caption
+            caption = table.caption.get_text(strip=True) if table.caption else None
+            # Try section heading
+            section = get_section_heading(table)
+            all_tables_data.append({
+                "section": section,
+                "caption": caption,
+                "data": table_rows
+            })
+        return all_tables_data
+    """
     def process_tables(soup):
         # Find all tables (class can be adjusted if necessary)
         tables = soup.find_all("table", {"class": "wikitable"})
@@ -94,6 +126,7 @@ if __name__ == "__main__":
             all_tables_data.append(table_rows)
 
         return all_tables_data
+    """
     def get_wikipedia_infobox(url):
             response = requests.get(url)
             soup = BeautifulSoup(response.text, "lxml")  # the parser is bit different compare to the text
@@ -161,7 +194,7 @@ if __name__ == "__main__":
 
     event_info = []
     for index, row in df.iterrows():
-            url = str(row["Sources"])
+            url = str(row["Source"])
             event_id = str(row["Event_ID"])
             html = getHTMLText(url)
             if html: 
@@ -192,7 +225,7 @@ if __name__ == "__main__":
 
                 event_data = {
                     "Source": url,
-                    "Whole_Text": whole_text,
+                  #  "Whole_Text": whole_text,
                     "Info_Box": info_box_text,
                     "Event_ID": event_id,
                     "Article_Name": event_name,
