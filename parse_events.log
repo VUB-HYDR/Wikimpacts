@@ -3293,3 +3293,492 @@ parse_events: 2025-06-23 13:40:35 INFO     Storing the following target columns 
 parse_events: 2025-06-23 13:40:35 INFO     Normalizing nulls for l3 Specific_Instance_Per_Administrative_Area_Damage
 normalize-utils: 2025-06-23 13:40:37 INFO     Output file stored in Database/output/WikimpactsV2/Single_Event/dev/RAG/l3/Specific_Instance_Per_Administrative_Area_Damage/0000.parquet
 parse_events: 2025-06-23 13:40:37 INFO     PARSING COMPLETE
+parse_events: 2025-06-30 14:51:40 INFO     Passed args: Namespace(spaCy_model_name='en_core_web_trf', filename='jsonChunks', raw_dir='Database/raw/WikimpactsV2/fullrun/single_events', output_dir='Database/output/WikimpactsV2/fullrun/single_event', locale_config='en_US.UTF-8', event_levels=['l1', 'l3'], raw_l1=None, store_raw_l1=False)
+parse_events: 2025-06-30 14:51:40 INFO     Creating Database/output/WikimpactsV2/fullrun/single_event if it does not exist!
+normalize-utils: 2025-06-30 14:51:51 INFO     SpaCy model 'en_core_web_trf' has been loaded
+normalize_locations: 2025-06-30 14:51:58 INFO     Installed GeoPy cache
+parse_events: 2025-06-30 14:53:46 INFO     Passed args: Namespace(spaCy_model_name='en_core_web_trf', filename='inputFilesDir', raw_dir='Database/raw/WikimpactsV2/fullrun/single_events', output_dir='Database/output/WikimpactsV2/fullrun/single_event', locale_config='en_US.UTF-8', event_levels=['l1', 'l3'], raw_l1=None, store_raw_l1=False)
+parse_events: 2025-06-30 14:53:46 INFO     Creating Database/output/WikimpactsV2/fullrun/single_event if it does not exist!
+normalize-utils: 2025-06-30 14:53:51 INFO     SpaCy model 'en_core_web_trf' has been loaded
+normalize_locations: 2025-06-30 14:53:57 INFO     Installed GeoPy cache
+parse_events: 2025-06-30 14:55:24 INFO     Passed args: Namespace(spaCy_model_name='en_core_web_trf', filename='*.json', raw_dir='Database/raw/WikimpactsV2/fullrun/single_events', output_dir='Database/output/WikimpactsV2/fullrun/single_event', locale_config='en_US.UTF-8', event_levels=['l1', 'l3'], raw_l1=None, store_raw_l1=False)
+parse_events: 2025-06-30 14:55:24 INFO     Creating Database/output/WikimpactsV2/fullrun/single_event if it does not exist!
+normalize-utils: 2025-06-30 14:55:29 INFO     SpaCy model 'en_core_web_trf' has been loaded
+normalize_locations: 2025-06-30 14:55:36 INFO     Installed GeoPy cache
+parse_events: 2025-06-30 15:19:58 INFO     Passed args: Namespace(spaCy_model_name='en_core_web_trf', filename='0000_single_event_full_run1_o3-mini-2025-01-31_rawoutput.json', raw_dir='Database/raw/WikimpactsV2/fullrun/single_events', output_dir='Database/output/WikimpactsV2/fullrun/single_event', locale_config='en_US.UTF-8', event_levels=['l1', 'l3'], raw_l1=None, store_raw_l1=False)
+parse_events: 2025-06-30 15:19:58 INFO     Creating Database/output/WikimpactsV2/fullrun/single_event if it does not exist!
+normalize-utils: 2025-06-30 15:20:04 INFO     SpaCy model 'en_core_web_trf' has been loaded
+normalize_locations: 2025-06-30 15:20:11 INFO     Installed GeoPy cache
+parse_events: 2025-06-30 15:20:11 INFO     JSON datafile loaded
+parse_events: 2025-06-30 15:20:11 INFO     STEP: Parsing main level events (l1)
+parse_events: 2025-06-30 15:20:11 INFO     Unpacking Total_Summary_* columns
+parse_events: 2025-06-30 15:20:11 INFO     Total summary columns: ['Total_Summary_Affected', 'Total_Summary_Buildings_Damaged', 'Total_Summary_Deaths', 'Total_Summary_Displaced', 'Total_Summary_Homeless', 'Total_Summary_Injuries', 'Total_Summary_Insured_Damage', 'Total_Summary_Damage']
+parse_events: 2025-06-30 15:20:11 INFO     STEP: Normalizing start and end dates if present
+parse_events: 2025-06-30 15:20:11 INFO     Normalizing date column: Start_Date
+parse_events: 2025-06-30 15:20:14 INFO     Normalizing date column: End_Date
+parse_events: 2025-06-30 15:20:15 INFO     STEP: Normalizing booleans if present
+parse_events: 2025-06-30 15:20:15 INFO     Normalizing boolean column Total_Damage_Inflation_Adjusted
+parse_events: 2025-06-30 15:20:15 INFO     Normalizing boolean column Total_Insured_Damage_Inflation_Adjusted
+parse_events: 2025-06-30 15:20:15 INFO     STEP: Normalizing nulls
+parse_events: 2025-06-30 15:20:15 INFO     STEP: Normalizing ranges if present in ['Total_Damage', 'Total_Insured_Damage', 'Total_Injuries', 'Total_Homeless', 'Total_Displaced', 'Total_Deaths', 'Total_Buildings_Damaged', 'Total_Affected']
+parse_events: 2025-06-30 15:20:15 INFO     Normalizing ranges in Total_Damage
+parse_events: 2025-06-30 15:20:58 INFO     Normalizing ranges in Total_Insured_Damage
+parse_events: 2025-06-30 15:21:00 INFO     Normalizing ranges in Total_Injuries
+parse_events: 2025-06-30 15:21:05 INFO     Normalizing ranges in Total_Homeless
+parse_events: 2025-06-30 15:21:10 INFO     Normalizing ranges in Total_Displaced
+parse_events: 2025-06-30 15:21:15 INFO     Normalizing ranges in Total_Deaths
+parse_events: 2025-06-30 15:21:36 INFO     Normalizing ranges in Total_Buildings_Damaged
+parse_events: 2025-06-30 15:21:43 INFO     Normalizing ranges in Total_Affected
+parse_events: 2025-06-30 15:21:56 INFO     Splitting column Hazards by pipe
+parse_events: 2025-06-30 15:21:56 INFO     STEP: Normalizing country-level administrative areas if present
+parse_events: 2025-06-30 15:21:56 INFO     Ensuring that all admin area data in Administrative_Areas is of type <list>
+parse_events: 2025-06-30 15:21:56 INFO     Normalizing administrative areas...
+parse_events: 2025-06-30 15:27:34 INFO     Getting GID from GADM for Administrative Areas
+parse_events: 2025-06-30 15:28:03 INFO     STEP: Infer country from list of locations
+parse_events: 2025-06-30 15:28:50 INFO     Normalizing administrative areas after purging areas above GID_0 level...
+urllib3.connectionpool: 2025-06-30 15:31:04 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=virgin+islands%2C+u.s.&format=json&namedetails=1&extratags=True&polygon_geojson=1
+parse_events: 2025-06-30 15:31:46 INFO     Getting GID from GADM for Administrative Areas after purging areas above GID_0 level...
+parse_events: 2025-06-30 15:31:48 INFO     STEP: Cleanup
+parse_events: 2025-06-30 15:31:48 INFO     Normalizing nulls
+parse_events: 2025-06-30 15:31:48 INFO     Cleaning event names...
+parse_events: 2025-06-30 15:31:48 INFO     STEP: Validation of Categorical Types for col Hazards
+categorical-validation-utils: 2025-06-30 15:31:48 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+categorical-validation-utils: 2025-06-30 15:31:48 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+categorical-validation-utils: 2025-06-30 15:31:48 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+parse_events: 2025-06-30 15:31:48 INFO     STEP: Validation of Categorical Types for col Main_Event
+categorical-validation-utils: 2025-06-30 15:31:48 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+categorical-validation-utils: 2025-06-30 15:31:48 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+categorical-validation-utils: 2025-06-30 15:31:48 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+parse_events: 2025-06-30 15:31:48 INFO     STEP: Validation relationship between col Hazards and col Main_Event
+categorical-validation-utils: 2025-06-30 15:31:48 ERROR    Could not validate relationship between Hazards and Main_Event. Error: None
+categorical-validation-utils: 2025-06-30 15:31:48 ERROR    Could not validate relationship between Hazards and Main_Event. Error: None
+categorical-validation-utils: 2025-06-30 15:31:48 ERROR    Could not validate relationship between Hazards and Main_Event. Error: None
+parse_events: 2025-06-30 15:31:48 INFO     Storing parsed results for l1 events. Target columns: ['Event_ID', 'Hazards', 'Main_Event', 'Event_Names', 'Sources', 'Administrative_Areas_Norm', 'Administrative_Areas_Type', 'Administrative_Areas_GID', 'Administrative_Areas_GeoJson', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Total_Injuries_Min', 'Total_Injuries_Max', 'Total_Injuries_Approx', 'Total_Deaths_Min', 'Total_Deaths_Max', 'Total_Deaths_Approx', 'Total_Displaced_Min', 'Total_Displaced_Max', 'Total_Displaced_Approx', 'Total_Homeless_Min', 'Total_Homeless_Max', 'Total_Homeless_Approx', 'Total_Buildings_Damaged_Min', 'Total_Buildings_Damaged_Max', 'Total_Buildings_Damaged_Approx', 'Total_Affected_Min', 'Total_Affected_Max', 'Total_Affected_Approx', 'Total_Insured_Damage_Min', 'Total_Insured_Damage_Max', 'Total_Insured_Damage_Approx', 'Total_Insured_Damage_Unit', 'Total_Insured_Damage_Inflation_Adjusted', 'Total_Insured_Damage_Inflation_Adjusted_Year', 'Total_Damage_Min', 'Total_Damage_Max', 'Total_Damage_Approx', 'Total_Damage_Unit', 'Total_Damage_Inflation_Adjusted', 'Total_Damage_Inflation_Adjusted_Year']
+parse_events: 2025-06-30 15:32:52 INFO     Passed args: Namespace(spaCy_model_name='en_core_web_trf', filename='0001_single_event_full_run2_o3-mini-2025-01-31_rawoutput.json', raw_dir='Database/raw/WikimpactsV2/fullrun/single_events', output_dir='Database/output/WikimpactsV2/fullrun/single_event', locale_config='en_US.UTF-8', event_levels=['l1', 'l3'], raw_l1=None, store_raw_l1=False)
+parse_events: 2025-06-30 15:32:52 INFO     Creating Database/output/WikimpactsV2/fullrun/single_event if it does not exist!
+normalize-utils: 2025-06-30 15:33:05 INFO     SpaCy model 'en_core_web_trf' has been loaded
+normalize_locations: 2025-06-30 15:33:11 INFO     Installed GeoPy cache
+parse_events: 2025-06-30 15:33:12 INFO     JSON datafile loaded
+parse_events: 2025-06-30 15:33:12 INFO     STEP: Parsing main level events (l1)
+parse_events: 2025-06-30 15:33:12 INFO     Unpacking Total_Summary_* columns
+parse_events: 2025-06-30 15:33:12 INFO     Total summary columns: ['Total_Summary_Affected', 'Total_Summary_Buildings_Damaged', 'Total_Summary_Deaths', 'Total_Summary_Displaced', 'Total_Summary_Homeless', 'Total_Summary_Injuries', 'Total_Summary_Insured_Damage', 'Total_Summary_Damage']
+parse_events: 2025-06-30 15:33:12 INFO     STEP: Normalizing start and end dates if present
+parse_events: 2025-06-30 15:33:12 INFO     Normalizing date column: Start_Date
+parse_events: 2025-06-30 15:33:14 INFO     Normalizing date column: End_Date
+parse_events: 2025-06-30 15:33:15 INFO     STEP: Normalizing booleans if present
+parse_events: 2025-06-30 15:33:15 INFO     Normalizing boolean column Total_Damage_Inflation_Adjusted
+parse_events: 2025-06-30 15:33:15 INFO     Normalizing boolean column Total_Insured_Damage_Inflation_Adjusted
+parse_events: 2025-06-30 15:33:15 INFO     STEP: Normalizing nulls
+parse_events: 2025-06-30 15:33:15 INFO     STEP: Normalizing ranges if present in ['Total_Damage', 'Total_Insured_Damage', 'Total_Injuries', 'Total_Homeless', 'Total_Displaced', 'Total_Deaths', 'Total_Buildings_Damaged', 'Total_Affected']
+parse_events: 2025-06-30 15:33:15 INFO     Normalizing ranges in Total_Damage
+parse_events: 2025-06-30 15:33:59 INFO     Normalizing ranges in Total_Insured_Damage
+parse_events: 2025-06-30 15:34:02 INFO     Normalizing ranges in Total_Injuries
+parse_events: 2025-06-30 15:34:08 INFO     Normalizing ranges in Total_Homeless
+parse_events: 2025-06-30 15:34:14 INFO     Normalizing ranges in Total_Displaced
+parse_events: 2025-06-30 15:34:21 INFO     Normalizing ranges in Total_Deaths
+parse_events: 2025-06-30 15:34:49 INFO     Normalizing ranges in Total_Buildings_Damaged
+parse_events: 2025-06-30 15:34:55 INFO     Normalizing ranges in Total_Affected
+parse_events: 2025-06-30 15:35:09 INFO     Splitting column Hazards by pipe
+parse_events: 2025-06-30 15:35:09 INFO     STEP: Normalizing country-level administrative areas if present
+parse_events: 2025-06-30 15:35:09 INFO     Ensuring that all admin area data in Administrative_Areas is of type <list>
+parse_events: 2025-06-30 15:35:09 INFO     Normalizing administrative areas...
+parse_events: 2025-06-30 15:39:55 INFO     Getting GID from GADM for Administrative Areas
+parse_events: 2025-06-30 15:40:32 INFO     STEP: Infer country from list of locations
+parse_events: 2025-06-30 15:41:26 INFO     Normalizing administrative areas after purging areas above GID_0 level...
+parse_events: 2025-06-30 15:44:21 INFO     Getting GID from GADM for Administrative Areas after purging areas above GID_0 level...
+parse_events: 2025-06-30 15:44:23 INFO     STEP: Cleanup
+parse_events: 2025-06-30 15:44:23 INFO     Normalizing nulls
+parse_events: 2025-06-30 15:44:23 INFO     Cleaning event names...
+parse_events: 2025-06-30 15:44:23 INFO     STEP: Validation of Categorical Types for col Hazards
+categorical-validation-utils: 2025-06-30 15:44:23 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+categorical-validation-utils: 2025-06-30 15:44:23 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+categorical-validation-utils: 2025-06-30 15:44:23 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+categorical-validation-utils: 2025-06-30 15:44:23 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+categorical-validation-utils: 2025-06-30 15:44:23 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+parse_events: 2025-06-30 15:44:23 INFO     STEP: Validation of Categorical Types for col Main_Event
+categorical-validation-utils: 2025-06-30 15:44:23 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+categorical-validation-utils: 2025-06-30 15:44:23 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+categorical-validation-utils: 2025-06-30 15:44:23 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+categorical-validation-utils: 2025-06-30 15:44:23 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+categorical-validation-utils: 2025-06-30 15:44:23 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+parse_events: 2025-06-30 15:44:23 INFO     STEP: Validation relationship between col Hazards and col Main_Event
+categorical-validation-utils: 2025-06-30 15:44:23 ERROR    Could not validate relationship between Hazards and Main_Event. Error: None
+categorical-validation-utils: 2025-06-30 15:44:23 ERROR    Could not validate relationship between Hazards and Main_Event. Error: None
+categorical-validation-utils: 2025-06-30 15:44:23 ERROR    Could not validate relationship between Hazards and Main_Event. Error: None
+categorical-validation-utils: 2025-06-30 15:44:23 ERROR    Could not validate relationship between Hazards and Main_Event. Error: None
+categorical-validation-utils: 2025-06-30 15:44:23 ERROR    Could not validate relationship between Hazards and Main_Event. Error: None
+parse_events: 2025-06-30 15:44:23 INFO     Storing parsed results for l1 events. Target columns: ['Event_ID', 'Hazards', 'Main_Event', 'Event_Names', 'Sources', 'Administrative_Areas_Norm', 'Administrative_Areas_Type', 'Administrative_Areas_GID', 'Administrative_Areas_GeoJson', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Total_Injuries_Min', 'Total_Injuries_Max', 'Total_Injuries_Approx', 'Total_Deaths_Min', 'Total_Deaths_Max', 'Total_Deaths_Approx', 'Total_Displaced_Min', 'Total_Displaced_Max', 'Total_Displaced_Approx', 'Total_Homeless_Min', 'Total_Homeless_Max', 'Total_Homeless_Approx', 'Total_Buildings_Damaged_Min', 'Total_Buildings_Damaged_Max', 'Total_Buildings_Damaged_Approx', 'Total_Affected_Min', 'Total_Affected_Max', 'Total_Affected_Approx', 'Total_Insured_Damage_Min', 'Total_Insured_Damage_Max', 'Total_Insured_Damage_Approx', 'Total_Insured_Damage_Unit', 'Total_Insured_Damage_Inflation_Adjusted', 'Total_Insured_Damage_Inflation_Adjusted_Year', 'Total_Damage_Min', 'Total_Damage_Max', 'Total_Damage_Approx', 'Total_Damage_Unit', 'Total_Damage_Inflation_Adjusted', 'Total_Damage_Inflation_Adjusted_Year']
+parse_events: 2025-06-30 15:45:15 INFO     Passed args: Namespace(spaCy_model_name='en_core_web_trf', filename='0002_single_event_full_run3_o3-mini-2025-01-31_rawoutput.json', raw_dir='Database/raw/WikimpactsV2/fullrun/single_events', output_dir='Database/output/WikimpactsV2/fullrun/single_event', locale_config='en_US.UTF-8', event_levels=['l1', 'l3'], raw_l1=None, store_raw_l1=False)
+parse_events: 2025-06-30 15:45:15 INFO     Creating Database/output/WikimpactsV2/fullrun/single_event if it does not exist!
+normalize-utils: 2025-06-30 15:45:25 INFO     SpaCy model 'en_core_web_trf' has been loaded
+normalize_locations: 2025-06-30 15:45:30 INFO     Installed GeoPy cache
+parse_events: 2025-06-30 15:45:30 INFO     JSON datafile loaded
+parse_events: 2025-06-30 15:45:30 INFO     STEP: Parsing main level events (l1)
+parse_events: 2025-06-30 15:45:30 INFO     Unpacking Total_Summary_* columns
+parse_events: 2025-06-30 15:45:31 INFO     Total summary columns: ['Total_Summary_Affected', 'Total_Summary_Buildings_Damaged', 'Total_Summary_Deaths', 'Total_Summary_Displaced', 'Total_Summary_Homeless', 'Total_Summary_Injuries', 'Total_Summary_Insured_Damage', 'Total_Summary_Damage']
+parse_events: 2025-06-30 15:45:31 INFO     STEP: Normalizing start and end dates if present
+parse_events: 2025-06-30 15:45:31 INFO     Normalizing date column: Start_Date
+parse_events: 2025-06-30 15:45:33 INFO     Normalizing date column: End_Date
+parse_events: 2025-06-30 15:45:34 INFO     STEP: Normalizing booleans if present
+parse_events: 2025-06-30 15:45:34 INFO     Normalizing boolean column Total_Damage_Inflation_Adjusted
+parse_events: 2025-06-30 15:45:34 INFO     Normalizing boolean column Total_Insured_Damage_Inflation_Adjusted
+parse_events: 2025-06-30 15:45:34 INFO     STEP: Normalizing nulls
+parse_events: 2025-06-30 15:45:34 INFO     STEP: Normalizing ranges if present in ['Total_Damage', 'Total_Insured_Damage', 'Total_Injuries', 'Total_Homeless', 'Total_Displaced', 'Total_Deaths', 'Total_Buildings_Damaged', 'Total_Affected']
+parse_events: 2025-06-30 15:45:34 INFO     Normalizing ranges in Total_Damage
+normalize_numbers: 2025-06-30 15:46:14 ERROR    Could not infer number from ['1000', 'million']. Error: 
+normalize_numbers: 2025-06-30 15:46:14 ERROR    Could not infer number from ['1000', 'million']. Error: 
+parse_events: 2025-06-30 15:46:23 INFO     Normalizing ranges in Total_Insured_Damage
+parse_events: 2025-06-30 15:46:25 INFO     Normalizing ranges in Total_Injuries
+parse_events: 2025-06-30 15:46:32 INFO     Normalizing ranges in Total_Homeless
+parse_events: 2025-06-30 15:46:37 INFO     Normalizing ranges in Total_Displaced
+parse_events: 2025-06-30 15:46:43 INFO     Normalizing ranges in Total_Deaths
+parse_events: 2025-06-30 15:47:10 INFO     Normalizing ranges in Total_Buildings_Damaged
+parse_events: 2025-06-30 15:47:17 INFO     Normalizing ranges in Total_Affected
+parse_events: 2025-06-30 15:47:28 INFO     Splitting column Hazards by pipe
+parse_events: 2025-06-30 15:47:28 INFO     STEP: Normalizing country-level administrative areas if present
+parse_events: 2025-06-30 15:47:28 INFO     Ensuring that all admin area data in Administrative_Areas is of type <list>
+parse_events: 2025-06-30 15:47:28 INFO     Normalizing administrative areas...
+urllib3.connectionpool: 2025-06-30 15:48:20 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=indonesia+%28talaud+islands+regency%29&format=json&namedetails=1&extratags=True&polygon_geojson=1
+parse_events: 2025-06-30 15:53:12 INFO     Getting GID from GADM for Administrative Areas
+parse_events: 2025-06-30 15:53:59 INFO     STEP: Infer country from list of locations
+parse_events: 2025-06-30 15:54:51 INFO     Normalizing administrative areas after purging areas above GID_0 level...
+parse_events: 2025-06-30 15:58:07 INFO     Getting GID from GADM for Administrative Areas after purging areas above GID_0 level...
+parse_events: 2025-06-30 15:58:13 INFO     STEP: Cleanup
+parse_events: 2025-06-30 15:58:13 INFO     Normalizing nulls
+parse_events: 2025-06-30 15:58:13 INFO     Cleaning event names...
+parse_events: 2025-06-30 15:58:13 INFO     STEP: Validation of Categorical Types for col Hazards
+categorical-validation-utils: 2025-06-30 15:58:13 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+parse_events: 2025-06-30 15:58:13 INFO     STEP: Validation of Categorical Types for col Main_Event
+categorical-validation-utils: 2025-06-30 15:58:13 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+parse_events: 2025-06-30 15:58:13 INFO     STEP: Validation relationship between col Hazards and col Main_Event
+categorical-validation-utils: 2025-06-30 15:58:13 ERROR    Could not validate relationship between Hazards and Main_Event. Error: None
+parse_events: 2025-06-30 15:58:13 INFO     Storing parsed results for l1 events. Target columns: ['Event_ID', 'Hazards', 'Main_Event', 'Event_Names', 'Sources', 'Administrative_Areas_Norm', 'Administrative_Areas_Type', 'Administrative_Areas_GID', 'Administrative_Areas_GeoJson', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Total_Injuries_Min', 'Total_Injuries_Max', 'Total_Injuries_Approx', 'Total_Deaths_Min', 'Total_Deaths_Max', 'Total_Deaths_Approx', 'Total_Displaced_Min', 'Total_Displaced_Max', 'Total_Displaced_Approx', 'Total_Homeless_Min', 'Total_Homeless_Max', 'Total_Homeless_Approx', 'Total_Buildings_Damaged_Min', 'Total_Buildings_Damaged_Max', 'Total_Buildings_Damaged_Approx', 'Total_Affected_Min', 'Total_Affected_Max', 'Total_Affected_Approx', 'Total_Insured_Damage_Min', 'Total_Insured_Damage_Max', 'Total_Insured_Damage_Approx', 'Total_Insured_Damage_Unit', 'Total_Insured_Damage_Inflation_Adjusted', 'Total_Insured_Damage_Inflation_Adjusted_Year', 'Total_Damage_Min', 'Total_Damage_Max', 'Total_Damage_Approx', 'Total_Damage_Unit', 'Total_Damage_Inflation_Adjusted', 'Total_Damage_Inflation_Adjusted_Year']
+parse_events: 2025-06-30 15:59:05 INFO     Passed args: Namespace(spaCy_model_name='en_core_web_trf', filename='0003_single_event_full_run4_o3-mini-2025-01-31_rawoutput.json', raw_dir='Database/raw/WikimpactsV2/fullrun/single_events', output_dir='Database/output/WikimpactsV2/fullrun/single_event', locale_config='en_US.UTF-8', event_levels=['l1', 'l3'], raw_l1=None, store_raw_l1=False)
+parse_events: 2025-06-30 15:59:05 INFO     Creating Database/output/WikimpactsV2/fullrun/single_event if it does not exist!
+normalize-utils: 2025-06-30 15:59:16 INFO     SpaCy model 'en_core_web_trf' has been loaded
+normalize_locations: 2025-06-30 15:59:23 INFO     Installed GeoPy cache
+parse_events: 2025-06-30 15:59:23 INFO     JSON datafile loaded
+parse_events: 2025-06-30 15:59:23 INFO     STEP: Parsing main level events (l1)
+parse_events: 2025-06-30 15:59:23 INFO     Unpacking Total_Summary_* columns
+parse_events: 2025-06-30 15:59:23 INFO     Total summary columns: ['Total_Summary_Affected', 'Total_Summary_Buildings_Damaged', 'Total_Summary_Deaths', 'Total_Summary_Displaced', 'Total_Summary_Homeless', 'Total_Summary_Injuries', 'Total_Summary_Insured_Damage', 'Total_Summary_Damage']
+parse_events: 2025-06-30 15:59:23 INFO     STEP: Normalizing start and end dates if present
+parse_events: 2025-06-30 15:59:23 INFO     Normalizing date column: Start_Date
+parse_events: 2025-06-30 15:59:26 INFO     Normalizing date column: End_Date
+parse_events: 2025-06-30 15:59:27 INFO     STEP: Normalizing booleans if present
+parse_events: 2025-06-30 15:59:27 INFO     Normalizing boolean column Total_Damage_Inflation_Adjusted
+parse_events: 2025-06-30 15:59:27 INFO     Normalizing boolean column Total_Insured_Damage_Inflation_Adjusted
+parse_events: 2025-06-30 15:59:27 INFO     STEP: Normalizing nulls
+parse_events: 2025-06-30 15:59:27 INFO     STEP: Normalizing ranges if present in ['Total_Damage', 'Total_Insured_Damage', 'Total_Injuries', 'Total_Homeless', 'Total_Displaced', 'Total_Deaths', 'Total_Buildings_Damaged', 'Total_Affected']
+parse_events: 2025-06-30 15:59:27 INFO     Normalizing ranges in Total_Damage
+parse_events: 2025-06-30 16:00:16 INFO     Normalizing ranges in Total_Insured_Damage
+parse_events: 2025-06-30 16:00:19 INFO     Normalizing ranges in Total_Injuries
+parse_events: 2025-06-30 16:00:24 INFO     Normalizing ranges in Total_Homeless
+parse_events: 2025-06-30 16:00:29 INFO     Normalizing ranges in Total_Displaced
+parse_events: 2025-06-30 16:00:37 INFO     Normalizing ranges in Total_Deaths
+parse_events: 2025-06-30 16:01:06 INFO     Normalizing ranges in Total_Buildings_Damaged
+parse_events: 2025-06-30 16:01:12 INFO     Normalizing ranges in Total_Affected
+parse_events: 2025-06-30 16:01:24 INFO     Splitting column Hazards by pipe
+parse_events: 2025-06-30 16:01:24 INFO     STEP: Normalizing country-level administrative areas if present
+parse_events: 2025-06-30 16:01:24 INFO     Ensuring that all admin area data in Administrative_Areas is of type <list>
+parse_events: 2025-06-30 16:01:24 INFO     Normalizing administrative areas...
+parse_events: 2025-06-30 16:05:38 INFO     Getting GID from GADM for Administrative Areas
+parse_events: 2025-06-30 16:06:13 INFO     STEP: Infer country from list of locations
+parse_events: 2025-06-30 16:07:56 INFO     Normalizing administrative areas after purging areas above GID_0 level...
+parse_events: 2025-06-30 16:13:20 INFO     Passed args: Namespace(spaCy_model_name='en_core_web_trf', filename='0004_single_event_full_run5_o3-mini-2025-01-31_rawoutput.json', raw_dir='Database/raw/WikimpactsV2/fullrun/single_events', output_dir='Database/output/WikimpactsV2/fullrun/single_event', locale_config='en_US.UTF-8', event_levels=['l1', 'l3'], raw_l1=None, store_raw_l1=False)
+parse_events: 2025-06-30 16:13:20 INFO     Creating Database/output/WikimpactsV2/fullrun/single_event if it does not exist!
+normalize-utils: 2025-06-30 16:13:33 INFO     SpaCy model 'en_core_web_trf' has been loaded
+normalize_locations: 2025-06-30 16:13:42 INFO     Installed GeoPy cache
+parse_events: 2025-06-30 16:13:42 INFO     JSON datafile loaded
+parse_events: 2025-06-30 16:13:42 INFO     STEP: Parsing main level events (l1)
+parse_events: 2025-06-30 16:13:42 INFO     Unpacking Total_Summary_* columns
+parse_events: 2025-06-30 16:13:42 INFO     Total summary columns: ['Total_Summary_Affected', 'Total_Summary_Buildings_Damaged', 'Total_Summary_Deaths', 'Total_Summary_Displaced', 'Total_Summary_Homeless', 'Total_Summary_Injuries', 'Total_Summary_Insured_Damage', 'Total_Summary_Damage']
+parse_events: 2025-06-30 16:13:42 INFO     STEP: Normalizing start and end dates if present
+parse_events: 2025-06-30 16:13:42 INFO     Normalizing date column: Start_Date
+parse_events: 2025-06-30 16:13:46 INFO     Normalizing date column: End_Date
+parse_events: 2025-06-30 16:13:47 INFO     STEP: Normalizing booleans if present
+parse_events: 2025-06-30 16:13:47 INFO     Normalizing boolean column Total_Damage_Inflation_Adjusted
+parse_events: 2025-06-30 16:13:47 INFO     Normalizing boolean column Total_Insured_Damage_Inflation_Adjusted
+parse_events: 2025-06-30 16:13:47 INFO     STEP: Normalizing nulls
+parse_events: 2025-06-30 16:13:47 INFO     STEP: Normalizing ranges if present in ['Total_Damage', 'Total_Insured_Damage', 'Total_Injuries', 'Total_Homeless', 'Total_Displaced', 'Total_Deaths', 'Total_Buildings_Damaged', 'Total_Affected']
+parse_events: 2025-06-30 16:13:47 INFO     Normalizing ranges in Total_Damage
+parse_events: 2025-06-30 16:14:47 INFO     Normalizing ranges in Total_Insured_Damage
+parse_events: 2025-06-30 16:14:52 INFO     Normalizing ranges in Total_Injuries
+parse_events: 2025-06-30 16:15:00 INFO     Normalizing ranges in Total_Homeless
+parse_events: 2025-06-30 16:15:12 INFO     Normalizing ranges in Total_Displaced
+parse_events: 2025-06-30 16:15:25 INFO     Normalizing ranges in Total_Deaths
+parse_events: 2025-06-30 16:15:57 INFO     Normalizing ranges in Total_Buildings_Damaged
+parse_events: 2025-06-30 16:16:05 INFO     Normalizing ranges in Total_Affected
+parse_events: 2025-06-30 16:16:16 INFO     Splitting column Hazards by pipe
+parse_events: 2025-06-30 16:16:16 INFO     STEP: Normalizing country-level administrative areas if present
+parse_events: 2025-06-30 16:16:16 INFO     Ensuring that all admin area data in Administrative_Areas is of type <list>
+parse_events: 2025-06-30 16:16:16 INFO     Normalizing administrative areas...
+parse_events: 2025-06-30 16:20:43 INFO     Getting GID from GADM for Administrative Areas
+parse_events: 2025-06-30 16:21:25 INFO     STEP: Infer country from list of locations
+parse_events: 2025-06-30 16:22:12 INFO     Normalizing administrative areas after purging areas above GID_0 level...
+parse_events: 2025-06-30 16:24:47 INFO     Getting GID from GADM for Administrative Areas after purging areas above GID_0 level...
+parse_events: 2025-06-30 16:24:50 INFO     STEP: Cleanup
+parse_events: 2025-06-30 16:24:50 INFO     Normalizing nulls
+parse_events: 2025-06-30 16:24:51 INFO     Cleaning event names...
+parse_events: 2025-06-30 16:24:51 INFO     STEP: Validation of Categorical Types for col Hazards
+categorical-validation-utils: 2025-06-30 16:24:51 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+categorical-validation-utils: 2025-06-30 16:24:51 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+categorical-validation-utils: 2025-06-30 16:24:51 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+parse_events: 2025-06-30 16:24:51 INFO     STEP: Validation of Categorical Types for col Main_Event
+categorical-validation-utils: 2025-06-30 16:24:51 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+categorical-validation-utils: 2025-06-30 16:24:51 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+categorical-validation-utils: 2025-06-30 16:24:51 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+parse_events: 2025-06-30 16:24:51 INFO     STEP: Validation relationship between col Hazards and col Main_Event
+categorical-validation-utils: 2025-06-30 16:24:51 ERROR    Could not validate relationship between Hazards and Main_Event. Error: None
+categorical-validation-utils: 2025-06-30 16:24:51 ERROR    Could not validate relationship between Hazards and Main_Event. Error: None
+categorical-validation-utils: 2025-06-30 16:24:51 ERROR    Could not validate relationship between Hazards and Main_Event. Error: None
+parse_events: 2025-06-30 16:24:51 INFO     Storing parsed results for l1 events. Target columns: ['Event_ID', 'Hazards', 'Main_Event', 'Event_Names', 'Sources', 'Administrative_Areas_Norm', 'Administrative_Areas_Type', 'Administrative_Areas_GID', 'Administrative_Areas_GeoJson', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Total_Injuries_Min', 'Total_Injuries_Max', 'Total_Injuries_Approx', 'Total_Deaths_Min', 'Total_Deaths_Max', 'Total_Deaths_Approx', 'Total_Displaced_Min', 'Total_Displaced_Max', 'Total_Displaced_Approx', 'Total_Homeless_Min', 'Total_Homeless_Max', 'Total_Homeless_Approx', 'Total_Buildings_Damaged_Min', 'Total_Buildings_Damaged_Max', 'Total_Buildings_Damaged_Approx', 'Total_Affected_Min', 'Total_Affected_Max', 'Total_Affected_Approx', 'Total_Insured_Damage_Min', 'Total_Insured_Damage_Max', 'Total_Insured_Damage_Approx', 'Total_Insured_Damage_Unit', 'Total_Insured_Damage_Inflation_Adjusted', 'Total_Insured_Damage_Inflation_Adjusted_Year', 'Total_Damage_Min', 'Total_Damage_Max', 'Total_Damage_Approx', 'Total_Damage_Unit', 'Total_Damage_Inflation_Adjusted', 'Total_Damage_Inflation_Adjusted_Year']
+parse_events: 2025-06-30 16:25:51 INFO     Passed args: Namespace(spaCy_model_name='en_core_web_trf', filename='0005_single_event_full_run6_o3-mini-2025-01-31_rawoutput.json', raw_dir='Database/raw/WikimpactsV2/fullrun/single_events', output_dir='Database/output/WikimpactsV2/fullrun/single_event', locale_config='en_US.UTF-8', event_levels=['l1', 'l3'], raw_l1=None, store_raw_l1=False)
+parse_events: 2025-06-30 16:25:51 INFO     Creating Database/output/WikimpactsV2/fullrun/single_event if it does not exist!
+normalize-utils: 2025-06-30 16:26:03 INFO     SpaCy model 'en_core_web_trf' has been loaded
+normalize_locations: 2025-06-30 16:26:10 INFO     Installed GeoPy cache
+parse_events: 2025-06-30 16:26:10 INFO     JSON datafile loaded
+parse_events: 2025-06-30 16:26:10 INFO     STEP: Parsing main level events (l1)
+parse_events: 2025-06-30 16:26:10 INFO     Unpacking Total_Summary_* columns
+parse_events: 2025-06-30 16:26:10 INFO     Total summary columns: ['Total_Summary_Affected', 'Total_Summary_Buildings_Damaged', 'Total_Summary_Deaths', 'Total_Summary_Displaced', 'Total_Summary_Homeless', 'Total_Summary_Injuries', 'Total_Summary_Insured_Damage', 'Total_Summary_Damage']
+parse_events: 2025-06-30 16:26:10 INFO     STEP: Normalizing start and end dates if present
+parse_events: 2025-06-30 16:26:10 INFO     Normalizing date column: Start_Date
+parse_events: 2025-06-30 16:26:13 INFO     Normalizing date column: End_Date
+parse_events: 2025-06-30 16:26:14 INFO     STEP: Normalizing booleans if present
+parse_events: 2025-06-30 16:26:14 INFO     Normalizing boolean column Total_Damage_Inflation_Adjusted
+parse_events: 2025-06-30 16:26:14 INFO     Normalizing boolean column Total_Insured_Damage_Inflation_Adjusted
+parse_events: 2025-06-30 16:26:14 INFO     STEP: Normalizing nulls
+parse_events: 2025-06-30 16:26:14 INFO     STEP: Normalizing ranges if present in ['Total_Damage', 'Total_Insured_Damage', 'Total_Injuries', 'Total_Homeless', 'Total_Displaced', 'Total_Deaths', 'Total_Buildings_Damaged', 'Total_Affected']
+parse_events: 2025-06-30 16:26:14 INFO     Normalizing ranges in Total_Damage
+parse_events: 2025-06-30 16:27:07 INFO     Normalizing ranges in Total_Insured_Damage
+parse_events: 2025-06-30 16:27:11 INFO     Normalizing ranges in Total_Injuries
+parse_events: 2025-06-30 16:27:20 INFO     Normalizing ranges in Total_Homeless
+parse_events: 2025-06-30 16:27:25 INFO     Normalizing ranges in Total_Displaced
+parse_events: 2025-06-30 16:27:34 INFO     Normalizing ranges in Total_Deaths
+parse_events: 2025-06-30 16:27:59 INFO     Normalizing ranges in Total_Buildings_Damaged
+parse_events: 2025-06-30 16:28:07 INFO     Normalizing ranges in Total_Affected
+parse_events: 2025-06-30 16:28:18 INFO     Splitting column Hazards by pipe
+parse_events: 2025-06-30 16:28:18 INFO     STEP: Normalizing country-level administrative areas if present
+parse_events: 2025-06-30 16:28:18 INFO     Ensuring that all admin area data in Administrative_Areas is of type <list>
+parse_events: 2025-06-30 16:28:18 INFO     Normalizing administrative areas...
+urllib3.connectionpool: 2025-06-30 16:31:52 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=central+minnesota&format=json&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-30 16:31:53 WARNING  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=central+minnesota&format=json&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-30 16:32:13 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?country=st.+louis%2C+missouri&format=json&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-30 16:32:21 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=east+st.+louis%2C+illinois&format=json&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-30 16:32:23 WARNING  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=east+st.+louis%2C+illinois&format=json&namedetails=1&extratags=True&polygon_geojson=1
+normalize_locations: 2025-06-30 16:32:24 ERROR    API call unsuccessful. Error message: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=east+st.+louis%2C+illinois&format=json&namedetails=1&extratags=True&polygon_geojson=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+urllib3.connectionpool: 2025-06-30 16:32:35 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=roanoke%2C+illinois&format=json&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-30 16:33:02 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?country=philippine+sea&format=json&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-30 16:33:03 WARNING  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?country=philippine+sea&format=json&namedetails=1&extratags=True&polygon_geojson=1
+parse_events: 2025-06-30 16:33:26 INFO     Getting GID from GADM for Administrative Areas
+parse_events: 2025-06-30 16:34:03 INFO     STEP: Infer country from list of locations
+parse_events: 2025-06-30 16:34:57 INFO     Normalizing administrative areas after purging areas above GID_0 level...
+parse_events: 2025-06-30 16:38:07 INFO     Getting GID from GADM for Administrative Areas after purging areas above GID_0 level...
+parse_events: 2025-06-30 16:38:11 INFO     STEP: Cleanup
+parse_events: 2025-06-30 16:38:11 INFO     Normalizing nulls
+parse_events: 2025-06-30 16:38:11 INFO     Cleaning event names...
+parse_events: 2025-06-30 16:38:11 INFO     STEP: Validation of Categorical Types for col Hazards
+categorical-validation-utils: 2025-06-30 16:38:11 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+parse_events: 2025-06-30 16:38:11 INFO     STEP: Validation of Categorical Types for col Main_Event
+categorical-validation-utils: 2025-06-30 16:38:11 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+parse_events: 2025-06-30 16:38:11 INFO     STEP: Validation relationship between col Hazards and col Main_Event
+categorical-validation-utils: 2025-06-30 16:38:11 ERROR    Could not validate relationship between Hazards and Main_Event. Error: None
+parse_events: 2025-06-30 16:38:11 INFO     Storing parsed results for l1 events. Target columns: ['Event_ID', 'Hazards', 'Main_Event', 'Event_Names', 'Sources', 'Administrative_Areas_Norm', 'Administrative_Areas_Type', 'Administrative_Areas_GID', 'Administrative_Areas_GeoJson', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Total_Injuries_Min', 'Total_Injuries_Max', 'Total_Injuries_Approx', 'Total_Deaths_Min', 'Total_Deaths_Max', 'Total_Deaths_Approx', 'Total_Displaced_Min', 'Total_Displaced_Max', 'Total_Displaced_Approx', 'Total_Homeless_Min', 'Total_Homeless_Max', 'Total_Homeless_Approx', 'Total_Buildings_Damaged_Min', 'Total_Buildings_Damaged_Max', 'Total_Buildings_Damaged_Approx', 'Total_Affected_Min', 'Total_Affected_Max', 'Total_Affected_Approx', 'Total_Insured_Damage_Min', 'Total_Insured_Damage_Max', 'Total_Insured_Damage_Approx', 'Total_Insured_Damage_Unit', 'Total_Insured_Damage_Inflation_Adjusted', 'Total_Insured_Damage_Inflation_Adjusted_Year', 'Total_Damage_Min', 'Total_Damage_Max', 'Total_Damage_Approx', 'Total_Damage_Unit', 'Total_Damage_Inflation_Adjusted', 'Total_Damage_Inflation_Adjusted_Year']
+parse_events: 2025-06-30 16:39:16 INFO     Passed args: Namespace(spaCy_model_name='en_core_web_trf', filename='0006_single_event_full_run7_o3-mini-2025-01-31_rawoutput.json', raw_dir='Database/raw/WikimpactsV2/fullrun/single_events', output_dir='Database/output/WikimpactsV2/fullrun/single_event', locale_config='en_US.UTF-8', event_levels=['l1', 'l3'], raw_l1=None, store_raw_l1=False)
+parse_events: 2025-06-30 16:39:16 INFO     Creating Database/output/WikimpactsV2/fullrun/single_event if it does not exist!
+normalize-utils: 2025-06-30 16:39:28 INFO     SpaCy model 'en_core_web_trf' has been loaded
+normalize_locations: 2025-06-30 16:39:35 INFO     Installed GeoPy cache
+parse_events: 2025-06-30 16:39:35 INFO     JSON datafile loaded
+parse_events: 2025-06-30 16:39:35 INFO     STEP: Parsing main level events (l1)
+parse_events: 2025-06-30 16:39:35 INFO     Unpacking Total_Summary_* columns
+parse_events: 2025-06-30 16:39:36 INFO     Total summary columns: ['Total_Summary_Affected', 'Total_Summary_Buildings_Damaged', 'Total_Summary_Deaths', 'Total_Summary_Displaced', 'Total_Summary_Homeless', 'Total_Summary_Injuries', 'Total_Summary_Insured_Damage', 'Total_Summary_Damage']
+parse_events: 2025-06-30 16:39:36 INFO     STEP: Normalizing start and end dates if present
+parse_events: 2025-06-30 16:39:36 INFO     Normalizing date column: Start_Date
+parse_events: 2025-06-30 16:39:38 INFO     Normalizing date column: End_Date
+parse_events: 2025-06-30 16:39:40 INFO     STEP: Normalizing booleans if present
+parse_events: 2025-06-30 16:39:40 INFO     Normalizing boolean column Total_Damage_Inflation_Adjusted
+parse_events: 2025-06-30 16:39:40 INFO     Normalizing boolean column Total_Insured_Damage_Inflation_Adjusted
+parse_events: 2025-06-30 16:39:40 INFO     STEP: Normalizing nulls
+parse_events: 2025-06-30 16:39:40 INFO     STEP: Normalizing ranges if present in ['Total_Damage', 'Total_Insured_Damage', 'Total_Injuries', 'Total_Homeless', 'Total_Displaced', 'Total_Deaths', 'Total_Buildings_Damaged', 'Total_Affected']
+parse_events: 2025-06-30 16:39:40 INFO     Normalizing ranges in Total_Damage
+parse_events: 2025-06-30 16:40:23 INFO     Normalizing ranges in Total_Insured_Damage
+parse_events: 2025-06-30 16:40:26 INFO     Normalizing ranges in Total_Injuries
+parse_events: 2025-06-30 16:40:33 INFO     Normalizing ranges in Total_Homeless
+parse_events: 2025-06-30 16:40:40 INFO     Normalizing ranges in Total_Displaced
+parse_events: 2025-06-30 16:40:47 INFO     Normalizing ranges in Total_Deaths
+parse_events: 2025-06-30 16:41:14 INFO     Normalizing ranges in Total_Buildings_Damaged
+parse_events: 2025-06-30 16:41:21 INFO     Normalizing ranges in Total_Affected
+parse_events: 2025-06-30 16:41:33 INFO     Splitting column Hazards by pipe
+parse_events: 2025-06-30 16:41:33 INFO     STEP: Normalizing country-level administrative areas if present
+parse_events: 2025-06-30 16:41:33 INFO     Ensuring that all admin area data in Administrative_Areas is of type <list>
+parse_events: 2025-06-30 16:41:33 INFO     Normalizing administrative areas...
+urllib3.connectionpool: 2025-06-30 16:42:16 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=balearic+islands&format=json&namedetails=1&extratags=True&polygon_geojson=1
+parse_events: 2025-06-30 16:46:35 INFO     Getting GID from GADM for Administrative Areas
+parse_events: 2025-06-30 16:47:08 INFO     STEP: Infer country from list of locations
+parse_events: 2025-06-30 16:48:06 INFO     Normalizing administrative areas after purging areas above GID_0 level...
+parse_events: 2025-06-30 16:51:23 INFO     Getting GID from GADM for Administrative Areas after purging areas above GID_0 level...
+parse_events: 2025-06-30 16:51:27 INFO     STEP: Cleanup
+parse_events: 2025-06-30 16:51:27 INFO     Normalizing nulls
+parse_events: 2025-06-30 16:51:27 INFO     Cleaning event names...
+parse_events: 2025-06-30 16:51:27 INFO     STEP: Validation of Categorical Types for col Hazards
+categorical-validation-utils: 2025-06-30 16:51:27 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+categorical-validation-utils: 2025-06-30 16:51:27 WARNING  Value `Wind ` may be invalid for this category. Error: 'wind ' is not in list
+categorical-validation-utils: 2025-06-30 16:51:27 WARNING  Value ` Flood ` may be invalid for this category. Error: ' flood ' is not in list
+categorical-validation-utils: 2025-06-30 16:51:27 WARNING  Value ` Lightning` may be invalid for this category. Error: ' lightning' is not in list
+categorical-validation-utils: 2025-06-30 16:51:27 WARNING  Value `Wind ` may be invalid for this category. Error: 'wind ' is not in list
+categorical-validation-utils: 2025-06-30 16:51:27 WARNING  Value ` Flood ` may be invalid for this category. Error: ' flood ' is not in list
+categorical-validation-utils: 2025-06-30 16:51:27 WARNING  Value ` Lightning` may be invalid for this category. Error: ' lightning' is not in list
+categorical-validation-utils: 2025-06-30 16:51:27 WARNING  Value `Wind ` may be invalid for this category. Error: 'wind ' is not in list
+categorical-validation-utils: 2025-06-30 16:51:27 WARNING  Value ` Flood ` may be invalid for this category. Error: ' flood ' is not in list
+categorical-validation-utils: 2025-06-30 16:51:27 WARNING  Value ` Lightning` may be invalid for this category. Error: ' lightning' is not in list
+categorical-validation-utils: 2025-06-30 16:51:27 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+categorical-validation-utils: 2025-06-30 16:51:27 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+parse_events: 2025-06-30 16:51:27 INFO     STEP: Validation of Categorical Types for col Main_Event
+categorical-validation-utils: 2025-06-30 16:51:27 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+categorical-validation-utils: 2025-06-30 16:51:27 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+categorical-validation-utils: 2025-06-30 16:51:27 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+parse_events: 2025-06-30 16:51:27 INFO     STEP: Validation relationship between col Hazards and col Main_Event
+categorical-validation-utils: 2025-06-30 16:51:27 ERROR    Could not validate relationship between Hazards and Main_Event. Error: None
+categorical-validation-utils: 2025-06-30 16:51:27 ERROR    Could not validate relationship between Hazards and Main_Event. Error: None
+categorical-validation-utils: 2025-06-30 16:51:27 ERROR    Could not validate relationship between Hazards and Main_Event. Error: None
+parse_events: 2025-06-30 16:51:27 INFO     Storing parsed results for l1 events. Target columns: ['Event_ID', 'Hazards', 'Main_Event', 'Event_Names', 'Sources', 'Administrative_Areas_Norm', 'Administrative_Areas_Type', 'Administrative_Areas_GID', 'Administrative_Areas_GeoJson', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Total_Injuries_Min', 'Total_Injuries_Max', 'Total_Injuries_Approx', 'Total_Deaths_Min', 'Total_Deaths_Max', 'Total_Deaths_Approx', 'Total_Displaced_Min', 'Total_Displaced_Max', 'Total_Displaced_Approx', 'Total_Homeless_Min', 'Total_Homeless_Max', 'Total_Homeless_Approx', 'Total_Buildings_Damaged_Min', 'Total_Buildings_Damaged_Max', 'Total_Buildings_Damaged_Approx', 'Total_Affected_Min', 'Total_Affected_Max', 'Total_Affected_Approx', 'Total_Insured_Damage_Min', 'Total_Insured_Damage_Max', 'Total_Insured_Damage_Approx', 'Total_Insured_Damage_Unit', 'Total_Insured_Damage_Inflation_Adjusted', 'Total_Insured_Damage_Inflation_Adjusted_Year', 'Total_Damage_Min', 'Total_Damage_Max', 'Total_Damage_Approx', 'Total_Damage_Unit', 'Total_Damage_Inflation_Adjusted', 'Total_Damage_Inflation_Adjusted_Year']
+parse_events: 2025-06-30 16:52:21 INFO     Passed args: Namespace(spaCy_model_name='en_core_web_trf', filename='0007_single_event_full_run8_o3-mini-2025-01-31_rawoutput.json', raw_dir='Database/raw/WikimpactsV2/fullrun/single_events', output_dir='Database/output/WikimpactsV2/fullrun/single_event', locale_config='en_US.UTF-8', event_levels=['l1', 'l3'], raw_l1=None, store_raw_l1=False)
+parse_events: 2025-06-30 16:52:21 INFO     Creating Database/output/WikimpactsV2/fullrun/single_event if it does not exist!
+normalize-utils: 2025-06-30 16:52:31 INFO     SpaCy model 'en_core_web_trf' has been loaded
+normalize_locations: 2025-06-30 16:52:37 INFO     Installed GeoPy cache
+parse_events: 2025-06-30 16:52:38 INFO     JSON datafile loaded
+parse_events: 2025-06-30 16:52:38 INFO     STEP: Parsing main level events (l1)
+parse_events: 2025-06-30 16:52:38 INFO     Unpacking Total_Summary_* columns
+parse_events: 2025-06-30 16:52:38 INFO     Total summary columns: ['Total_Summary_Affected', 'Total_Summary_Buildings_Damaged', 'Total_Summary_Deaths', 'Total_Summary_Displaced', 'Total_Summary_Homeless', 'Total_Summary_Injuries', 'Total_Summary_Insured_Damage', 'Total_Summary_Damage']
+parse_events: 2025-06-30 16:52:38 INFO     STEP: Normalizing start and end dates if present
+parse_events: 2025-06-30 16:52:38 INFO     Normalizing date column: Start_Date
+parse_events: 2025-06-30 16:52:40 INFO     Normalizing date column: End_Date
+parse_events: 2025-06-30 16:52:41 INFO     STEP: Normalizing booleans if present
+parse_events: 2025-06-30 16:52:41 INFO     Normalizing boolean column Total_Damage_Inflation_Adjusted
+parse_events: 2025-06-30 16:52:41 INFO     Normalizing boolean column Total_Insured_Damage_Inflation_Adjusted
+parse_events: 2025-06-30 16:52:41 INFO     STEP: Normalizing nulls
+parse_events: 2025-06-30 16:52:41 INFO     STEP: Normalizing ranges if present in ['Total_Damage', 'Total_Insured_Damage', 'Total_Injuries', 'Total_Homeless', 'Total_Displaced', 'Total_Deaths', 'Total_Buildings_Damaged', 'Total_Affected']
+parse_events: 2025-06-30 16:52:41 INFO     Normalizing ranges in Total_Damage
+parse_events: 2025-06-30 16:53:31 INFO     Normalizing ranges in Total_Insured_Damage
+parse_events: 2025-06-30 16:53:33 INFO     Normalizing ranges in Total_Injuries
+parse_events: 2025-06-30 16:53:43 INFO     Normalizing ranges in Total_Homeless
+parse_events: 2025-06-30 16:53:49 INFO     Normalizing ranges in Total_Displaced
+parse_events: 2025-06-30 16:53:56 INFO     Normalizing ranges in Total_Deaths
+parse_events: 2025-06-30 16:54:19 INFO     Normalizing ranges in Total_Buildings_Damaged
+parse_events: 2025-06-30 16:54:27 INFO     Normalizing ranges in Total_Affected
+parse_events: 2025-06-30 16:54:39 INFO     Splitting column Hazards by pipe
+parse_events: 2025-06-30 16:54:39 INFO     STEP: Normalizing country-level administrative areas if present
+parse_events: 2025-06-30 16:54:39 INFO     Ensuring that all admin area data in Administrative_Areas is of type <list>
+parse_events: 2025-06-30 16:54:39 INFO     Normalizing administrative areas...
+parse_events: 2025-06-30 16:58:15 INFO     Getting GID from GADM for Administrative Areas
+parse_events: 2025-06-30 16:58:44 INFO     STEP: Infer country from list of locations
+parse_events: 2025-06-30 16:59:30 INFO     Normalizing administrative areas after purging areas above GID_0 level...
+parse_events: 2025-06-30 17:02:15 INFO     Getting GID from GADM for Administrative Areas after purging areas above GID_0 level...
+parse_events: 2025-06-30 17:02:17 INFO     STEP: Cleanup
+parse_events: 2025-06-30 17:02:17 INFO     Normalizing nulls
+parse_events: 2025-06-30 17:02:18 INFO     Cleaning event names...
+parse_events: 2025-06-30 17:02:18 INFO     STEP: Validation of Categorical Types for col Hazards
+categorical-validation-utils: 2025-06-30 17:02:18 WARNING  Value `Heatwave; Cold Spell` may be invalid for this category. Error: 'heatwave; cold spell' is not in list
+categorical-validation-utils: 2025-06-30 17:02:18 WARNING  Value `Wind ` may be invalid for this category. Error: 'wind ' is not in list
+categorical-validation-utils: 2025-06-30 17:02:18 WARNING  Value ` Flood ` may be invalid for this category. Error: ' flood ' is not in list
+categorical-validation-utils: 2025-06-30 17:02:18 WARNING  Value ` Blizzard ` may be invalid for this category. Error: ' blizzard ' is not in list
+categorical-validation-utils: 2025-06-30 17:02:18 WARNING  Value ` Hail` may be invalid for this category. Error: ' hail' is not in list
+parse_events: 2025-06-30 17:02:18 INFO     STEP: Validation of Categorical Types for col Main_Event
+parse_events: 2025-06-30 17:02:18 INFO     STEP: Validation relationship between col Hazards and col Main_Event
+parse_events: 2025-06-30 17:02:18 INFO     Storing parsed results for l1 events. Target columns: ['Event_ID', 'Hazards', 'Main_Event', 'Event_Names', 'Sources', 'Administrative_Areas_Norm', 'Administrative_Areas_Type', 'Administrative_Areas_GID', 'Administrative_Areas_GeoJson', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Total_Injuries_Min', 'Total_Injuries_Max', 'Total_Injuries_Approx', 'Total_Deaths_Min', 'Total_Deaths_Max', 'Total_Deaths_Approx', 'Total_Displaced_Min', 'Total_Displaced_Max', 'Total_Displaced_Approx', 'Total_Homeless_Min', 'Total_Homeless_Max', 'Total_Homeless_Approx', 'Total_Buildings_Damaged_Min', 'Total_Buildings_Damaged_Max', 'Total_Buildings_Damaged_Approx', 'Total_Affected_Min', 'Total_Affected_Max', 'Total_Affected_Approx', 'Total_Insured_Damage_Min', 'Total_Insured_Damage_Max', 'Total_Insured_Damage_Approx', 'Total_Insured_Damage_Unit', 'Total_Insured_Damage_Inflation_Adjusted', 'Total_Insured_Damage_Inflation_Adjusted_Year', 'Total_Damage_Min', 'Total_Damage_Max', 'Total_Damage_Approx', 'Total_Damage_Unit', 'Total_Damage_Inflation_Adjusted', 'Total_Damage_Inflation_Adjusted_Year']
+parse_events: 2025-06-30 17:03:18 INFO     Passed args: Namespace(spaCy_model_name='en_core_web_trf', filename='0008_single_event_full_run9_o3-mini-2025-01-31_rawoutput.json', raw_dir='Database/raw/WikimpactsV2/fullrun/single_events', output_dir='Database/output/WikimpactsV2/fullrun/single_event', locale_config='en_US.UTF-8', event_levels=['l1', 'l3'], raw_l1=None, store_raw_l1=False)
+parse_events: 2025-06-30 17:03:18 INFO     Creating Database/output/WikimpactsV2/fullrun/single_event if it does not exist!
+normalize-utils: 2025-06-30 17:03:31 INFO     SpaCy model 'en_core_web_trf' has been loaded
+normalize_locations: 2025-06-30 17:03:38 INFO     Installed GeoPy cache
+parse_events: 2025-06-30 17:03:38 INFO     JSON datafile loaded
+parse_events: 2025-06-30 17:03:38 INFO     STEP: Parsing main level events (l1)
+parse_events: 2025-06-30 17:03:38 INFO     Unpacking Total_Summary_* columns
+parse_events: 2025-06-30 17:03:38 INFO     Total summary columns: ['Total_Summary_Affected', 'Total_Summary_Buildings_Damaged', 'Total_Summary_Deaths', 'Total_Summary_Displaced', 'Total_Summary_Homeless', 'Total_Summary_Injuries', 'Total_Summary_Insured_Damage', 'Total_Summary_Damage']
+parse_events: 2025-06-30 17:03:38 INFO     STEP: Normalizing start and end dates if present
+parse_events: 2025-06-30 17:03:38 INFO     Normalizing date column: Start_Date
+parse_events: 2025-06-30 17:03:40 INFO     Normalizing date column: End_Date
+parse_events: 2025-06-30 17:03:41 INFO     STEP: Normalizing booleans if present
+parse_events: 2025-06-30 17:03:41 INFO     Normalizing boolean column Total_Damage_Inflation_Adjusted
+parse_events: 2025-06-30 17:03:41 INFO     Normalizing boolean column Total_Insured_Damage_Inflation_Adjusted
+parse_events: 2025-06-30 17:03:41 INFO     STEP: Normalizing nulls
+parse_events: 2025-06-30 17:03:41 INFO     STEP: Normalizing ranges if present in ['Total_Damage', 'Total_Insured_Damage', 'Total_Injuries', 'Total_Homeless', 'Total_Displaced', 'Total_Deaths', 'Total_Buildings_Damaged', 'Total_Affected']
+parse_events: 2025-06-30 17:03:41 INFO     Normalizing ranges in Total_Damage
+normalize_numbers: 2025-06-30 17:04:28 ERROR    Could not infer number from ['1000', 'billion']. Error: 
+normalize_numbers: 2025-06-30 17:04:29 ERROR    Could not infer number from ['1000', 'billion']. Error: 
+parse_events: 2025-06-30 17:04:31 INFO     Normalizing ranges in Total_Insured_Damage
+parse_events: 2025-06-30 17:04:35 INFO     Normalizing ranges in Total_Injuries
+parse_events: 2025-06-30 17:04:41 INFO     Normalizing ranges in Total_Homeless
+parse_events: 2025-06-30 17:04:46 INFO     Normalizing ranges in Total_Displaced
+parse_events: 2025-06-30 17:04:53 INFO     Normalizing ranges in Total_Deaths
+parse_events: 2025-06-30 17:05:17 INFO     Normalizing ranges in Total_Buildings_Damaged
+parse_events: 2025-06-30 17:05:26 INFO     Normalizing ranges in Total_Affected
+parse_events: 2025-06-30 17:05:41 INFO     Splitting column Hazards by pipe
+parse_events: 2025-06-30 17:05:41 INFO     STEP: Normalizing country-level administrative areas if present
+parse_events: 2025-06-30 17:05:41 INFO     Ensuring that all admin area data in Administrative_Areas is of type <list>
+parse_events: 2025-06-30 17:05:41 INFO     Normalizing administrative areas...
+urllib3.connectionpool: 2025-06-30 17:07:39 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?q=madeira+islands&format=json&namedetails=1&extratags=True&polygon_geojson=1
+urllib3.connectionpool: 2025-06-30 17:08:48 WARNING  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)")': /search?country=riverside+county&format=json&namedetails=1&extratags=True&polygon_geojson=1
+parse_events: 2025-06-30 17:10:13 INFO     Getting GID from GADM for Administrative Areas
+parse_events: 2025-06-30 17:10:51 INFO     STEP: Infer country from list of locations
+parse_events: 2025-06-30 17:11:39 INFO     Normalizing administrative areas after purging areas above GID_0 level...
+parse_events: 2025-06-30 17:14:19 INFO     Getting GID from GADM for Administrative Areas after purging areas above GID_0 level...
+parse_events: 2025-06-30 17:14:21 INFO     STEP: Cleanup
+parse_events: 2025-06-30 17:14:21 INFO     Normalizing nulls
+parse_events: 2025-06-30 17:14:21 INFO     Cleaning event names...
+parse_events: 2025-06-30 17:14:21 INFO     STEP: Validation of Categorical Types for col Hazards
+categorical-validation-utils: 2025-06-30 17:14:21 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+categorical-validation-utils: 2025-06-30 17:14:21 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+categorical-validation-utils: 2025-06-30 17:14:21 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+categorical-validation-utils: 2025-06-30 17:14:21 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+parse_events: 2025-06-30 17:14:21 INFO     STEP: Validation of Categorical Types for col Main_Event
+categorical-validation-utils: 2025-06-30 17:14:21 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+categorical-validation-utils: 2025-06-30 17:14:21 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+categorical-validation-utils: 2025-06-30 17:14:21 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+categorical-validation-utils: 2025-06-30 17:14:21 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+parse_events: 2025-06-30 17:14:21 INFO     STEP: Validation relationship between col Hazards and col Main_Event
+categorical-validation-utils: 2025-06-30 17:14:21 ERROR    Could not validate relationship between Hazards and Main_Event. Error: None
+categorical-validation-utils: 2025-06-30 17:14:21 ERROR    Could not validate relationship between Hazards and Main_Event. Error: None
+categorical-validation-utils: 2025-06-30 17:14:21 ERROR    Could not validate relationship between Hazards and Main_Event. Error: None
+categorical-validation-utils: 2025-06-30 17:14:21 ERROR    Could not validate relationship between Hazards and Main_Event. Error: None
+parse_events: 2025-06-30 17:14:21 INFO     Storing parsed results for l1 events. Target columns: ['Event_ID', 'Hazards', 'Main_Event', 'Event_Names', 'Sources', 'Administrative_Areas_Norm', 'Administrative_Areas_Type', 'Administrative_Areas_GID', 'Administrative_Areas_GeoJson', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Total_Injuries_Min', 'Total_Injuries_Max', 'Total_Injuries_Approx', 'Total_Deaths_Min', 'Total_Deaths_Max', 'Total_Deaths_Approx', 'Total_Displaced_Min', 'Total_Displaced_Max', 'Total_Displaced_Approx', 'Total_Homeless_Min', 'Total_Homeless_Max', 'Total_Homeless_Approx', 'Total_Buildings_Damaged_Min', 'Total_Buildings_Damaged_Max', 'Total_Buildings_Damaged_Approx', 'Total_Affected_Min', 'Total_Affected_Max', 'Total_Affected_Approx', 'Total_Insured_Damage_Min', 'Total_Insured_Damage_Max', 'Total_Insured_Damage_Approx', 'Total_Insured_Damage_Unit', 'Total_Insured_Damage_Inflation_Adjusted', 'Total_Insured_Damage_Inflation_Adjusted_Year', 'Total_Damage_Min', 'Total_Damage_Max', 'Total_Damage_Approx', 'Total_Damage_Unit', 'Total_Damage_Inflation_Adjusted', 'Total_Damage_Inflation_Adjusted_Year']
+parse_events: 2025-06-30 17:15:12 INFO     Passed args: Namespace(spaCy_model_name='en_core_web_trf', filename='0009_single_event_full_run10_o3-mini-2025-01-31_rawoutput.json', raw_dir='Database/raw/WikimpactsV2/fullrun/single_events', output_dir='Database/output/WikimpactsV2/fullrun/single_event', locale_config='en_US.UTF-8', event_levels=['l1', 'l3'], raw_l1=None, store_raw_l1=False)
+parse_events: 2025-06-30 17:15:12 INFO     Creating Database/output/WikimpactsV2/fullrun/single_event if it does not exist!
+normalize-utils: 2025-06-30 17:15:22 INFO     SpaCy model 'en_core_web_trf' has been loaded
+normalize_locations: 2025-06-30 17:15:28 INFO     Installed GeoPy cache
+parse_events: 2025-06-30 17:15:28 INFO     JSON datafile loaded
+parse_events: 2025-06-30 17:15:28 INFO     STEP: Parsing main level events (l1)
+parse_events: 2025-06-30 17:15:28 INFO     Unpacking Total_Summary_* columns
+parse_events: 2025-06-30 17:15:28 INFO     Total summary columns: ['Total_Summary_Affected', 'Total_Summary_Buildings_Damaged', 'Total_Summary_Deaths', 'Total_Summary_Displaced', 'Total_Summary_Homeless', 'Total_Summary_Injuries', 'Total_Summary_Insured_Damage', 'Total_Summary_Damage']
+parse_events: 2025-06-30 17:15:28 INFO     STEP: Normalizing start and end dates if present
+parse_events: 2025-06-30 17:15:28 INFO     Normalizing date column: Start_Date
+parse_events: 2025-06-30 17:15:30 INFO     Normalizing date column: End_Date
+parse_events: 2025-06-30 17:15:31 INFO     STEP: Normalizing booleans if present
+parse_events: 2025-06-30 17:15:31 INFO     Normalizing boolean column Total_Damage_Inflation_Adjusted
+parse_events: 2025-06-30 17:15:31 INFO     Normalizing boolean column Total_Insured_Damage_Inflation_Adjusted
+parse_events: 2025-06-30 17:15:31 INFO     STEP: Normalizing nulls
+parse_events: 2025-06-30 17:15:31 INFO     STEP: Normalizing ranges if present in ['Total_Damage', 'Total_Insured_Damage', 'Total_Injuries', 'Total_Homeless', 'Total_Displaced', 'Total_Deaths', 'Total_Buildings_Damaged', 'Total_Affected']
+parse_events: 2025-06-30 17:15:31 INFO     Normalizing ranges in Total_Damage
+parse_events: 2025-06-30 17:16:08 INFO     Normalizing ranges in Total_Insured_Damage
+parse_events: 2025-06-30 17:16:09 INFO     Normalizing ranges in Total_Injuries
+parse_events: 2025-06-30 17:16:14 INFO     Normalizing ranges in Total_Homeless
+parse_events: 2025-06-30 17:16:18 INFO     Normalizing ranges in Total_Displaced
+parse_events: 2025-06-30 17:16:24 INFO     Normalizing ranges in Total_Deaths
+parse_events: 2025-06-30 17:16:42 INFO     Normalizing ranges in Total_Buildings_Damaged
+parse_events: 2025-06-30 17:16:49 INFO     Normalizing ranges in Total_Affected
+parse_events: 2025-06-30 17:16:58 INFO     Splitting column Hazards by pipe
+parse_events: 2025-06-30 17:16:58 INFO     STEP: Normalizing country-level administrative areas if present
+parse_events: 2025-06-30 17:16:58 INFO     Ensuring that all admin area data in Administrative_Areas is of type <list>
+parse_events: 2025-06-30 17:16:58 INFO     Normalizing administrative areas...
+parse_events: 2025-06-30 17:19:29 INFO     Getting GID from GADM for Administrative Areas
+parse_events: 2025-06-30 17:19:56 INFO     STEP: Infer country from list of locations
+parse_events: 2025-06-30 17:20:34 INFO     Normalizing administrative areas after purging areas above GID_0 level...
+parse_events: 2025-06-30 17:22:42 INFO     Getting GID from GADM for Administrative Areas after purging areas above GID_0 level...
+parse_events: 2025-06-30 17:22:44 INFO     STEP: Cleanup
+parse_events: 2025-06-30 17:22:44 INFO     Normalizing nulls
+parse_events: 2025-06-30 17:22:44 INFO     Cleaning event names...
+parse_events: 2025-06-30 17:22:44 INFO     STEP: Validation of Categorical Types for col Hazards
+categorical-validation-utils: 2025-06-30 17:22:44 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+parse_events: 2025-06-30 17:22:44 INFO     STEP: Validation of Categorical Types for col Main_Event
+categorical-validation-utils: 2025-06-30 17:22:44 WARNING  Value `None` may be invalid for this category. Error: 'none' is not in list
+parse_events: 2025-06-30 17:22:44 INFO     STEP: Validation relationship between col Hazards and col Main_Event
+categorical-validation-utils: 2025-06-30 17:22:44 ERROR    Could not validate relationship between Hazards and Main_Event. Error: None
+parse_events: 2025-06-30 17:22:44 INFO     Storing parsed results for l1 events. Target columns: ['Event_ID', 'Hazards', 'Main_Event', 'Event_Names', 'Sources', 'Administrative_Areas_Norm', 'Administrative_Areas_Type', 'Administrative_Areas_GID', 'Administrative_Areas_GeoJson', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Total_Injuries_Min', 'Total_Injuries_Max', 'Total_Injuries_Approx', 'Total_Deaths_Min', 'Total_Deaths_Max', 'Total_Deaths_Approx', 'Total_Displaced_Min', 'Total_Displaced_Max', 'Total_Displaced_Approx', 'Total_Homeless_Min', 'Total_Homeless_Max', 'Total_Homeless_Approx', 'Total_Buildings_Damaged_Min', 'Total_Buildings_Damaged_Max', 'Total_Buildings_Damaged_Approx', 'Total_Affected_Min', 'Total_Affected_Max', 'Total_Affected_Approx', 'Total_Insured_Damage_Min', 'Total_Insured_Damage_Max', 'Total_Insured_Damage_Approx', 'Total_Insured_Damage_Unit', 'Total_Insured_Damage_Inflation_Adjusted', 'Total_Insured_Damage_Inflation_Adjusted_Year', 'Total_Damage_Min', 'Total_Damage_Max', 'Total_Damage_Approx', 'Total_Damage_Unit', 'Total_Damage_Inflation_Adjusted', 'Total_Damage_Inflation_Adjusted_Year']
