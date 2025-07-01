@@ -1,9 +1,13 @@
 #!/usr/bin/env bash
-
+count=0
 for file in Database/raw/WikimpactsV2/fullrun/single_events/*.json; do 
+   
+    count=$((count + 1))
+    if [ "$count" -lt 2 ]; then
+        continue
+    fi
     filename=$(basename "$file")
     echo file name: $filename
-  
     
     poetry run python3 Database/parse_events.py \
         -r Database/raw/WikimpactsV2/fullrun/single_events \
