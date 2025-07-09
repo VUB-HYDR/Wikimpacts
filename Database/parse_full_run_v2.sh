@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-for file in Database/raw/WikimpactsV2/fullrun/multi_events/table_list/filter/4_10/*.json; do 
+for file in Database/raw/WikimpactsV2/fullrun/multi_events/table_list/filter/4_2/*.json; do 
    
     #count=$((count + 1))
     #if [ "$count" -lt 21 ]; then
@@ -10,9 +10,9 @@ for file in Database/raw/WikimpactsV2/fullrun/multi_events/table_list/filter/4_1
     echo file name: $filename
     
     poetry run python3 Database/parse_events.py \
-        -r Database/raw/WikimpactsV2/fullrun/multi_events/table_list/filter/4_10\
+        -r Database/raw/WikimpactsV2/fullrun/multi_events/table_list/filter/4_2\
         -f "$filename" \
-        -o Database/output/WikimpactsV2/fullrun/multi_events/table_list_4_10 \
+        -o Database/output/WikimpactsV2/fullrun/multi_events/table_list_4_2 \
         -lvl l1,l3 \
        # echo Parsing $filename has failed!!
 done
