@@ -65,7 +65,7 @@
 #
 ###################
 
-levels=("l1" )
+levels=("l3" )
 monetary_impacts=("Damage" "Insured_Damage")
 numerical_impacts=("Deaths" "Injuries" "Affected" "Buildings_Damaged" "Homeless" "Displaced")
 goldFileDir=${1}
