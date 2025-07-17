@@ -28,7 +28,7 @@ class Comparer:
 
         # Sequences
         self.sequence_columns: list = self.target_col(
-            ["Administrative_Areas_Norm", "Locations_Norm","Event_Names", "Hazards","Administrative_Area_GID"]
+            ["Administrative_Areas_Norm", "Administrative_Areas_GID","Locations_Norm","Event_Names", "Hazards","Administrative_Area_GID"]
         )
 
         # GID in L3 
