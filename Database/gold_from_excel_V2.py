@@ -358,6 +358,7 @@ def flatten_data_table():
     )
 
     Events.rename(columns={"Administrative_Area_Norm": "Administrative_Areas_Norm"}, inplace=True)
+    Events.rename(columns={"Administrative_Area_GID": "Administrative_Areas_GID"}, inplace=True)
     Events.drop(columns=["Location_Norm"], inplace=True)
 
     total_columns_rename_keys = [

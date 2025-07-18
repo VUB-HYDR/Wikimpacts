@@ -152,6 +152,7 @@ if __name__ == "__main__":
         "Administrative_Areas_Norm",
         'Administrative_Area_GID',
         "Country_Norm",
+         "Administrative_Areas_GID",
     ]
     location_columns = ["Location_Norm", "Locations_Norm","Locations_GID"]
     any_area_columns = admin_area_columns + location_columns

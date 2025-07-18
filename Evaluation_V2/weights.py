@@ -43,6 +43,7 @@ default_weights = {
         "End_Date_Year": 1,
         # Area
         "Administrative_Areas_Norm": 1,  # list
+         "Administrative_Areas_GID": 1, # list  
     },
     "l2_monetary": {
         "Event_ID": 0,
@@ -91,7 +92,7 @@ default_weights = {
         "Locations_Norm": 1,  # list
           "Administrative_Area_GID": 1,
       
-"Locations_GID": 1,  # list
+"Locations_GID": 1,  # GID
         # Impact
         "Num_Min": 1,
         "Num_Max": 1,

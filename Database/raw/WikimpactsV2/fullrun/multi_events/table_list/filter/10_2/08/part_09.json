@@ -1,0 +1,165 @@
+[
+  {
+    "Event_ID": "ST0D3XJ_0_2",
+    "Sources": "https://en.wikipedia.org/wiki/List_of_named_storms_(I)",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "No explicit information on affected people is provided for Ida (2021)."
+    },
+    "Specific_Instance_Per_Administrative_Area_Affected": [],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "There is no information on the number of damaged buildings for Ida (2021)."
+    },
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "107",
+      "Total_Deaths_Annotation": "The event description states: 'caused 107 deaths.'"
+    },
+    "Specific_Instance_Per_Administrative_Area_Deaths": [],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "No displacement information is provided for Ida (2021)."
+    },
+    "Specific_Instance_Per_Administrative_Area_Displaced": [],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "No homelessness details are mentioned for Ida (2021)."
+    },
+    "Specific_Instance_Per_Administrative_Area_Homeless": [],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "The event does not mention any injury information for Ida (2021)."
+    },
+    "Specific_Instance_Per_Administrative_Area_Injuries": [],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Annotation": "There is no insured damage information provided for Ida (2021).",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL"
+    },
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [],
+    "Total_Summary_Damage": {
+      "Total_Damage": "\u2265$75.2 billion",
+      "Total_Damage_Annotation": "The text indicates: 'caused \u2265$75.2 billion in damages.'",
+      "Total_Damage_Unit": "USD",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL"
+    },
+    "Specific_Instance_Per_Administrative_Area_Damage": [],
+    "Event_Names": "Ialy",
+    "Start_Date": "2024",
+    "End_Date": "NULL",
+    "Time_Annotation": "Ialy (2024)\u2013 a Category 1 tropical cyclone that affected the Seychelles, Tanzania and Kenya.",
+    "Administrative_Areas": [
+      "Seychelles",
+      "Tanzania",
+      "Kenya"
+    ],
+    "Administrative_Areas_Annotation": "affected the Seychelles, Tanzania and Kenya",
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "described as a Category 1 tropical cyclone",
+    "Hazards": "Wind|Flood|Lightning",
+    "Hazards_Annotation": "For tropical cyclones, the hazards are Wind, Flood, and Lightning."
+  },
+  {
+    "Event_ID": "ST0D3XJ_0_3",
+    "Sources": "https://en.wikipedia.org/wiki/List_of_named_storms_(I)",
+    "Total_Summary_Affected": {
+      "Total_Affected": "NULL",
+      "Total_Affected_Annotation": "No information on affected people is provided for Igor (2010)."
+    },
+    "Specific_Instance_Per_Administrative_Area_Affected": [],
+    "Total_Summary_Buildings_Damaged": {
+      "Total_Buildings_Damaged": "NULL",
+      "Total_Buildings_Damaged_Annotation": "There is no data on damaged buildings for Igor (2010)."
+    },
+    "Specific_Instance_Per_Administrative_Area_Buildings_Damaged": [],
+    "Total_Summary_Deaths": {
+      "Total_Deaths": "NULL",
+      "Total_Deaths_Annotation": "An aggregated death count is not provided; details are given below as specific instances."
+    },
+    "Specific_Instance_Per_Administrative_Area_Deaths": [
+      {
+        "Administrative_Area": "Newfoundland",
+        "Locations": [
+          "Newfoundland"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "1",
+        "Annotation": "Igor struck Newfoundland causing one death."
+      },
+      {
+        "Administrative_Area": "Newfoundland",
+        "Locations": [
+          "Newfoundland"
+        ],
+        "Start_Date": "NULL",
+        "End_Date": "NULL",
+        "Num": "3",
+        "Annotation": "High waves produced by Igor resulted in three deaths."
+      }
+    ],
+    "Total_Summary_Displaced": {
+      "Total_Displaced": "NULL",
+      "Total_Displaced_Annotation": "No displacement information is provided for Igor (2010)."
+    },
+    "Specific_Instance_Per_Administrative_Area_Displaced": [],
+    "Total_Summary_Homeless": {
+      "Total_Homeless": "NULL",
+      "Total_Homeless_Annotation": "There is no homelessness data provided for Igor (2010)."
+    },
+    "Specific_Instance_Per_Administrative_Area_Homeless": [],
+    "Total_Summary_Injuries": {
+      "Total_Injuries": "NULL",
+      "Total_Injuries_Annotation": "No information on injuries is provided for Igor (2010)."
+    },
+    "Specific_Instance_Per_Administrative_Area_Injuries": [],
+    "Total_Summary_Insured_Damage": {
+      "Total_Insured_Damage": "NULL",
+      "Total_Insured_Damage_Annotation": "There is no insured damage information provided for Igor (2010).",
+      "Total_Insured_Damage_Unit": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted": "NULL",
+      "Total_Insured_Damage_Inflation_Adjusted_Year": "NULL"
+    },
+    "Specific_Instance_Per_Administrative_Area_Insured_Damage": [],
+    "Total_Summary_Damage": {
+      "Total_Damage": "C$200 million",
+      "Total_Damage_Annotation": "The description states that Igor caused C$200 million in damage.",
+      "Total_Damage_Unit": "CAD",
+      "Total_Damage_Inflation_Adjusted": "NULL",
+      "Total_Damage_Inflation_Adjusted_Year": "NULL"
+    },
+    "Specific_Instance_Per_Administrative_Area_Damage": [],
+    "Event_Names": "Ian",
+    "Start_Date": "1982",
+    "End_Date": "NULL",
+    "Time_Annotation": "1982\u2013 a Category 3 severe tropical cyclone which influenced Western Australia.",
+    "Administrative_Areas": [
+      "Australia"
+    ],
+    "Administrative_Areas_Annotation": "influenced Western Australia (interpreted as Australia)",
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "described as a Category 3 severe tropical cyclone",
+    "Hazards": "Wind|Flood|Lightning",
+    "Hazards_Annotation": "Based on its classification as a severe tropical cyclone, the associated hazards are Wind, Flood, and Lightning."
+  },
+  {
+    "Event_ID": "ST0D3XJ_0_4",
+    "Sources": "https://en.wikipedia.org/wiki/List_of_named_storms_(I)",
+    "Event_Names": "Iana",
+    "Start_Date": "1989",
+    "End_Date": "NULL",
+    "Time_Annotation": "Iana (1989)\u2013 passed through Madagascar as a tropical storm.",
+    "Administrative_Areas": [
+      "Madagascar"
+    ],
+    "Administrative_Areas_Annotation": "passed through Madagascar",
+    "Main_Event": "Tropical Storm/Cyclone",
+    "Main_Event_Annotation": "identified as a tropical storm",
+    "Hazards": "Wind|Flood|Lightning",
+    "Hazards_Annotation": "According to the Tropical Storm/Cyclone classification, the hazards include Wind, Flood, and Lightning."
+  }
+]

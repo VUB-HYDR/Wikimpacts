@@ -360,14 +360,14 @@ if __name__ == "__main__":
         for item in raw_text:
             event_id_base = str(item.get("Event_ID"))
             
-            info_box = str(item.get("Info_Box"))
-            whole_text = item.get("Whole_Text")
+            #info_box = str(item.get("Info_Box"))
+           # whole_text = item.get("Whole_Text")
             All_tables = item.get("All_Tables")
             Lists = item.get("Lists")
             
             # --- Use a single counter for this item ---
             idx = 0
-            
+            """
             # Process whole_text
             if whole_text:
                 for i in whole_text:
@@ -384,19 +384,17 @@ if __name__ == "__main__":
                         line = batch_gpt(sys_prompt, event_id, user_input, re_format_obj)
                         data.append(line)
                         idx += 1  # increment main index
-      
+            """
         # Process All_tables, to feed one table instead of one row, and only feed 5 rows because get output error because large tables
         # Process All_tables, to feed one table instead of one row, and only feed 5 rows because get output error because large tables
-        '''
+        
             if All_tables:
                 for table in All_tables:
                     if table and isinstance(table, list) and len(table) > 0:
                         # Split table into chunks of max 10 rows each
-                       
-                        for chunk in chunk_list(table, 5):
                             event_id = f"{event_id_base}_{idx}"
                             question_prompt = target_prompts.format(Event_Name="event")
-                            user_input = question_prompt+ f"""Content: {chunk} 
+                            user_input = question_prompt+ f"""Content: {table} 
                                                  """
                             re_format_obj = re_format_table_list()
                             sys_prompt=f"""Instructions:
@@ -406,13 +404,12 @@ if __name__ == "__main__":
                             line = batch_gpt(sys_prompt, event_id, user_input, re_format_obj)
                             data.append(line)
                             idx += 1
-            # process Lists in chunks of 5
-            # process Lists in chunks of 5
+      
             if Lists:
-                for chunk in chunk_list(Lists, 5):
+             
                     event_id = f"{event_id_base}_{idx}"
                     question_prompt = target_prompts.format(Event_Name="event")
-                    user_input =question_prompt+ f"""Content: {chunk}
+                    user_input =question_prompt+ f"""Content: {Lists}
                                                        """
                       
                     re_format_obj = re_format_table_list()
@@ -423,7 +420,7 @@ if __name__ == "__main__":
                     line = batch_gpt(sys_prompt, event_id, user_input, re_format_obj)
                     data.append(line)
                     idx += 1
-        '''
+        
         return data
 
 
