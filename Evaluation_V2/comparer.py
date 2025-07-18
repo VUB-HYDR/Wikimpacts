@@ -115,8 +115,8 @@ class Comparer:
     def sequence(self, v, w):
         """Compare sequences. Returns Jaccard distance between sets of elements in sequences.
         Note: ordering is not taken into consideration."""
-        if v == None and w == None:
-            return 0
+        if (v is None or v == []) and (w is None or w == []):
+            return 0.0
         if v == None and w != None or v != None and w == None:
             return self.null_penalty
         v = set(self.flatten_list(v))
