@@ -536,7 +536,7 @@ class NormalizeLocation:
     def get_gid_0(self, gid: str) -> str | None:
         """Returns a country name by GID_0"""
         try:
-            assert len(gid) == 3
+            assert len(gid) == 3 and gid.isalpha()
             gid_0 = list(set(self.gadm.loc[self.gadm["GID_0"] == gid]["NAME_0"]))
             assert len(gid_0) == 1
             return gid_0[0]

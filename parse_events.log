@@ -1,0 +1,41 @@
+parse_events: 2025-09-18 14:18:55 INFO     Passed args: Namespace(spaCy_model_name='en_core_web_trf', filename='lUwwjfR.json', raw_dir='Database/raw/full_run/fullrun_split_single', output_dir='Database/output/geo_parsing_fix_3', locale_config='en_US.UTF-8', event_levels=['l1'], raw_l1=None, store_raw_l1=False)
+parse_events: 2025-09-18 14:18:55 INFO     Creating Database/output/geo_parsing_fix_3 if it does not exist!
+normalize-utils: 2025-09-18 14:19:21 INFO     SpaCy model 'en_core_web_trf' has been loaded
+normalize_locations: 2025-09-18 14:19:26 INFO     Installed GeoPy cache
+parse_events: 2025-09-18 14:19:27 INFO     JSON datafile loaded
+parse_events: 2025-09-18 14:19:27 INFO     STEP: Parsing main level events (l1)
+parse_events: 2025-09-18 14:19:27 INFO     Unpacking Total_Summary_* columns
+parse_events: 2025-09-18 14:19:27 INFO     Total summary columns: ['Total_Summary_Affected', 'Total_Summary_Buildings_Damaged', 'Total_Summary_Deaths', 'Total_Summary_Displaced', 'Total_Summary_Homeless', 'Total_Summary_Injuries', 'Total_Summary_Insured_Damage', 'Total_Summary_Damage']
+parse_events: 2025-09-18 14:19:27 INFO     STEP: Normalizing start and end dates if present
+parse_events: 2025-09-18 14:19:27 INFO     Normalizing date column: Start_Date
+parse_events: 2025-09-18 14:19:27 INFO     Normalizing date column: End_Date
+parse_events: 2025-09-18 14:19:27 INFO     STEP: Normalizing booleans if present
+parse_events: 2025-09-18 14:19:27 INFO     Normalizing boolean column Total_Damage_Inflation_Adjusted
+parse_events: 2025-09-18 14:19:27 INFO     Normalizing boolean column Total_Insured_Damage_Inflation_Adjusted
+parse_events: 2025-09-18 14:19:27 INFO     STEP: Normalizing nulls
+parse_events: 2025-09-18 14:19:27 INFO     STEP: Normalizing ranges if present in ['Total_Damage', 'Total_Insured_Damage', 'Total_Injuries', 'Total_Homeless', 'Total_Displaced', 'Total_Deaths', 'Total_Buildings_Damaged', 'Total_Affected']
+parse_events: 2025-09-18 14:19:27 INFO     Normalizing ranges in Total_Damage
+parse_events: 2025-09-18 14:19:27 INFO     Normalizing ranges in Total_Insured_Damage
+parse_events: 2025-09-18 14:19:28 INFO     Normalizing ranges in Total_Injuries
+parse_events: 2025-09-18 14:19:28 INFO     Normalizing ranges in Total_Homeless
+parse_events: 2025-09-18 14:19:28 INFO     Normalizing ranges in Total_Displaced
+parse_events: 2025-09-18 14:19:28 INFO     Normalizing ranges in Total_Deaths
+parse_events: 2025-09-18 14:19:28 INFO     Normalizing ranges in Total_Buildings_Damaged
+parse_events: 2025-09-18 14:19:28 INFO     Normalizing ranges in Total_Affected
+parse_events: 2025-09-18 14:19:28 INFO     Splitting column Hazards by pipe
+parse_events: 2025-09-18 14:19:28 INFO     STEP: Normalizing country-level administrative areas if present
+parse_events: 2025-09-18 14:19:28 INFO     Ensuring that all admin area data in Administrative_Areas is of type <list>
+parse_events: 2025-09-18 14:19:28 INFO     Normalizing administrative areas...
+parse_events: 2025-09-18 14:19:35 INFO     Getting GID from GADM for Administrative Areas
+parse_events: 2025-09-18 14:19:35 INFO     STEP: Infer country from list of locations
+parse_events: 2025-09-18 14:19:35 INFO     Normalizing administrative areas after purging areas above GID_0 level...
+parse_events: 2025-09-18 14:19:35 INFO     Getting GID from GADM for Administrative Areas after purging areas above GID_0 level...
+parse_events: 2025-09-18 14:19:35 INFO     STEP: Cleanup
+parse_events: 2025-09-18 14:19:35 INFO     Normalizing nulls
+parse_events: 2025-09-18 14:19:35 INFO     Cleaning event names...
+parse_events: 2025-09-18 14:19:35 INFO     STEP: Validation of Categorical Types for col Hazards
+parse_events: 2025-09-18 14:19:35 INFO     STEP: Validation of Categorical Types for col Main_Event
+parse_events: 2025-09-18 14:19:35 INFO     STEP: Validation relationship between col Hazards and col Main_Event
+parse_events: 2025-09-18 14:19:35 INFO     Storing parsed results for l1 events. Target columns: ['Event_ID', 'Hazards', 'Main_Event', 'Event_Names', 'Sources', 'Administrative_Areas_Norm', 'Administrative_Areas_Type', 'Administrative_Areas_GID', 'Administrative_Areas_GeoJson', 'Start_Date_Day', 'Start_Date_Month', 'Start_Date_Year', 'End_Date_Day', 'End_Date_Month', 'End_Date_Year', 'Total_Injuries_Min', 'Total_Injuries_Max', 'Total_Injuries_Approx', 'Total_Deaths_Min', 'Total_Deaths_Max', 'Total_Deaths_Approx', 'Total_Displaced_Min', 'Total_Displaced_Max', 'Total_Displaced_Approx', 'Total_Homeless_Min', 'Total_Homeless_Max', 'Total_Homeless_Approx', 'Total_Buildings_Damaged_Min', 'Total_Buildings_Damaged_Max', 'Total_Buildings_Damaged_Approx', 'Total_Affected_Min', 'Total_Affected_Max', 'Total_Affected_Approx', 'Total_Insured_Damage_Min', 'Total_Insured_Damage_Max', 'Total_Insured_Damage_Approx', 'Total_Insured_Damage_Unit', 'Total_Insured_Damage_Inflation_Adjusted', 'Total_Insured_Damage_Inflation_Adjusted_Year', 'Total_Damage_Min', 'Total_Damage_Max', 'Total_Damage_Approx', 'Total_Damage_Unit', 'Total_Damage_Inflation_Adjusted', 'Total_Damage_Inflation_Adjusted_Year']
+normalize-utils: 2025-09-18 14:19:37 INFO     Output file stored in Database/output/geo_parsing_fix_3/l1/0000.parquet
+parse_events: 2025-09-18 14:19:37 INFO     PARSING COMPLETE
