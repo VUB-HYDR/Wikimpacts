@@ -12,6 +12,7 @@ from Database.scr.normalize_utils import CategoricalValidation, NormalizeUtils
 
 tqdm.pandas()
 
+tw_pat = re.compile(r"\btaiwan\b", re.I) # a condition to modify the admin_area_type for Taiwan to state 
 
 def infer_countries(
     row: dict,
@@ -175,7 +176,7 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
                 else []
             )
         )
-
+        
         events[
             [
                 f"{admin_area_col}_Norm",
@@ -188,7 +189,7 @@ def parse_main_events(df: pd.DataFrame, target_columns: list):
                 lambda x: (
                     (
                         [i[0] for i in x],
-                        [i[1] for i in x],
+                        [("administrative:state" if tw_pat.search(str(i[0]).lower()) else i[1]) for i in x],
                         [i[2] for i in x],
                     )
                     if isinstance(x, list)
@@ -415,7 +416,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                     lambda x: (
                         (
                             [i[0] for i in x],
-                            [i[1] for i in x],
+                            [("administrative:state" if tw_pat.search(str(i[0]).lower()) else i[1]) for i in x],
                             [i[2] for i in x],
                         )
                         if isinstance(x, list)
@@ -449,22 +450,31 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                 lambda admin_area: utils.filter_null_str(admin_area)
             )
             sub_event[
-                [
-                    f"{administrative_area_col}_Norm",
-                    f"{administrative_area_col}_Type",
-                    f"{administrative_area_col}_GeoJson",
-                ]
-            ] = (
-                sub_event[administrative_area_col]
-                .progress_apply(
-                    lambda admin_area: (
-                        norm_loc.normalize_locations(admin_area, is_country=True)
+                        [
+                        f"{administrative_area_col}_Norm",
+                        f"{administrative_area_col}_Type",
+                        f"{administrative_area_col}_GeoJson",
+                        ]
+                        ] =  (
+                        sub_event[administrative_area_col]
+                        .progress_apply(
+                        lambda admin_area: (
+                        (lambda n, t, g: (
+                        n,
+                        (
+                        ["administrative:state" if (isinstance(ni, str) and tw_pat.search(str(ni).lower())) else ti
+                        for ni, ti in zip(n, (t if isinstance(t, list) else [t] * len(n)))]
+                        if isinstance(n, list)
+                        else ("administrative:state" if isinstance(n, str) and tw_pat.search(str(n).lower()) else t)
+                        ),
+                        g,
+                        ))(*norm_loc.normalize_locations(admin_area, is_country=True))
                         if isinstance(admin_area, str)
                         else (None, None, None)
-                    )
-                )
-                .progress_apply(pd.Series)
-            )
+                        )
+                        ).progress_apply(pd.Series)
+                        )
+          
             logger.info(f"Getting GID from GADM for Administrative Areas in subevent {col}")
 
             sub_event[f"{administrative_area_col}_GID"] = sub_event[f"{administrative_area_col}_Norm"].progress_apply(
@@ -504,7 +514,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                         lambda x: (
                             (
                                 [i[0] for i in x],
-                                [i[1] for i in x],
+                                 [("administrative:state" if tw_pat.search(str(i[0]).lower()) else i[1]) for i in x],
                                 [i[2] for i in x],
                             )
                             if isinstance(x, list)
