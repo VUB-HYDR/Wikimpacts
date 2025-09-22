@@ -333,7 +333,7 @@ if __name__ == "__main__":
         save_title=clean_title(title)
         plt.savefig(f'{filepath}/{save_title}.png')
         plt.close()
-    """
+    
     def event_impact_with_error_bars(df, title, impact_type, filepath):
         dfp = prepare_numeric_for_plot(df,impact_type)
                 
@@ -431,6 +431,84 @@ if __name__ == "__main__":
         #h1, l1 = ax.get_legend_handles_labels()
         #h2, l2 = ax2.get_legend_handles_labels()
         #ax2.legend(h1 + h2, l1 + l2, loc='upper left')
+        save_title = clean_title(title)
+        plt.savefig(f'{filepath}/{save_title}.png')
+        plt.close()
+    """
+    def event_impact_with_error_bars(df, title, impact_type, filepath):
+        dfp = prepare_numeric_for_plot(df, impact_type)
+
+        if dfp.empty:
+            print(f"No data to plot for: {title}")
+            return
+
+        # Check if impact type is "Damage" and filter for USD
+        if impact_type.lower() == "damage":
+            dfp = dfp[dfp["Num_Unit"] == "USD"]
+            if dfp.empty:
+                print(f"No USD data to plot for: {title}")
+                return
+
+        # Sort the filtered data
+        df_sorted = dfp.sort_values('impact_num').reset_index(drop=True)
+        print(f"Length of matched events: {len(df_sorted)}")
+
+        fig, ax = plt.subplots(figsize=(14, 8))
+        em_lbl_shown = False
+        perfect_lbl_shown = False
+
+        # Calculate mean for Wiki values
+        wiki_mean = (df_sorted['Num_Min_num'] + df_sorted['Num_Max_num']) / 2
+
+        # Calculate RMSE using the mean instead of range
+        em = df_sorted['impact_num'].to_numpy(dtype=float)
+        dist = np.abs(em - wiki_mean.to_numpy(dtype=float))
+        rmse = float(np.sqrt(np.mean(dist**2)))
+        print(f"RMSE for {impact_type}: {rmse}")
+
+        for i, row in df_sorted.iterrows():
+            em_val = int(row['impact_num'])
+            wiki_val = (row['Num_Min_num'] + row['Num_Max_num']) / 2
+
+            if not np.isfinite(wiki_val) or not np.isfinite(em_val):
+                continue
+
+            # Plot Wiki mean value
+            ax.scatter(
+                i, wiki_val, color='royalblue', s=25, zorder=3,
+                label=f'Wikimpacts {impact_type.capitalize()} Value Average' if i == 0 else None
+            )
+
+            # Highlight perfect matches
+            if wiki_val == em_val:
+                ax.scatter(
+                    i, em_val, marker='s', color='green', s=45,
+                    edgecolor='black', linewidth=1, zorder=5,
+                    label='Perfect Match' if not perfect_lbl_shown else None
+                )
+                perfect_lbl_shown = True
+
+            # Plot EM-DAT value
+            ax.scatter(
+                i, em_val, color='orange', s=25, zorder=4,
+                label=f'EM-DAT {impact_type.capitalize()} Value' if not em_lbl_shown else None
+            )
+            em_lbl_shown = True
+
+        # Label and plot configuration
+        ax.axhline(0, color='k', linestyle='-', alpha=0.3)
+        linthresh_value = np.percentile(df_sorted['impact_num'], 50)
+        ax.set_xlabel(f'Event Index (Sorted by EM-DAT {impact_type.capitalize()} Value, symlog, scale threshold {linthresh_value})')
+        ax.set_ylabel(f'{impact_type.capitalize()} Value{" ($)" if impact_type == "Damage" else ""} (symlog, scale threshold {linthresh_value})')
+        ax.set_title(title)
+
+        ax.set_yscale('symlog', linthresh=linthresh_value, linscale=1.0)
+        ax.set_ylim(bottom=0.1)
+        ax.grid(True)
+        ax.set_xticks([])
+        ax.legend(loc='upper left', bbox_to_anchor=(1, 1))
+        plt.tight_layout()
+
         save_title = clean_title(title)
         plt.savefig(f'{filepath}/{save_title}.png')
         plt.close()
