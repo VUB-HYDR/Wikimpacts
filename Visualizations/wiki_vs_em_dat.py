@@ -343,9 +343,10 @@ if __name__ == "__main__":
         
         #plt.figure(figsize=(14, 8)) # Make it wide to accommodate many events
         # only filter rows where the Num_Unit is USD 
-        df_USD=dfp[dfp["Num_Unit"]=="USD"]
-        df_sorted = df_USD.sort_values('impact_num').reset_index(drop=True)
-
+        #df_USD=dfp[dfp["Num_Unit"]=="USD"]
+        df_sorted = dfp.sort_values('impact_num').reset_index(drop=True)
+        print(f"lenth of matched events {len(df_sorted)}")
+      
 
         fig, ax = plt.subplots(figsize=(14, 8))
         range_lbl_shown = False
@@ -359,11 +360,12 @@ if __name__ == "__main__":
         mx = np.maximum(mins, maxs)
         dist = np.where((em >= mn) & (em <= mx), 0.0, np.minimum(np.abs(em - mn), np.abs(em - mx)))
         rmse = float(np.sqrt(np.mean(dist**2)))
-        mae = float(np.mean(np.abs(dist)))
+        print(f"rmse for {impact_type} {rmse}")
+       
         for i, row in df_sorted.iterrows():
             min_val = int(row['Num_Min_num'])
             max_val = int(row['Num_Max_num'])
-            em_val  = int(row['impact_num'])*1000 # only for damage 
+            em_val  = int(row['impact_num'])
         
             # Skip bad rows
             if not (np.isfinite(min_val) and np.isfinite(max_val) and np.isfinite(em_val)):
@@ -384,7 +386,7 @@ if __name__ == "__main__":
                 # min == max: show a Wiki dot
                 ax.scatter(
                     i, min_val, color='royalblue', s=25, zorder=3,
-                    label=(f'Wikimpacts {impact_type.capitalize()} Value ($)' if not single_lbl_shown else None)
+                    label=(f'Wikimpacts {impact_type.capitalize()} Value' if not single_lbl_shown else None)
                 )
                 single_lbl_shown = True
 
@@ -400,7 +402,7 @@ if __name__ == "__main__":
             # EM-DAT point
             ax.scatter(
                 i, em_val, color='orange', s=25, zorder=4,
-                label=(f'EM-DAT {impact_type.capitalize()} Value ($)' if not em_lbl_shown else None)
+                label=(f'EM-DAT {impact_type.capitalize()} Value' if not em_lbl_shown else None)
             )
             em_lbl_shown = True
            
@@ -409,7 +411,7 @@ if __name__ == "__main__":
         linthresh_value = np.percentile(df_sorted['impact_num'], 50)  # 50th percentile = median
         ax.set_xlabel(f'Event Index (Sorted by EM-DAT {impact_type.capitalize()} Value, symlog, line scale threshold {linthresh_value})')
         ax.set_ylabel(f'{impact_type.capitalize()} Value (symlog, line scale threshold {linthresh_value} )')
-        ax.axhline(rmse, color='crimson', linestyle='--', linewidth=2, label=f'RMSE = {rmse:.2f}')
+        #ax.axhline(rmse, color='crimson', linestyle='--', linewidth=2, label=f'RMSE = {rmse:.2f}')
         ax.set_title(title)
         #ax2 = ax.twinx()
         #x = np.arange(len(em))
