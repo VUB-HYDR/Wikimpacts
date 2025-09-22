@@ -240,7 +240,7 @@ if __name__ == "__main__":
             col = impact_column_map[impact_type]
             if col in df.columns:
                 impact_col = col
-                print(f"impact_col is {impact_col}")
+                #print(f"impact_col is {impact_col}")
         
         if impact_col:
             df['impact_num'] = pd.to_numeric(df[impact_col], errors='coerce')
@@ -253,9 +253,10 @@ if __name__ == "__main__":
     def clean_title(title):
         # Replace special characters and spaces
         return title.replace(' ', '_').replace('/', '-')
+
     def scatter_impact_with_error_bars(df, title,impact_type,filepath):
         dfp = prepare_numeric_for_plot(df,impact_type)
-        print(dfp.columns)
+        
         if dfp.empty:
             print(f"No data to plot for: {title}")
             return
@@ -294,19 +295,167 @@ if __name__ == "__main__":
         save_title=clean_title(title)
         plt.savefig(f'{filepath}/{save_title}.png')
         plt.close()
+    """
+    def event_impact_with_error_bars(df, title, impact_type, filepath):
+        dfp = prepare_numeric_for_plot(df,impact_type)
+                
+        if dfp.empty:
+            print(f"No data to plot for: {title}")
+            return
+        
+        plt.figure(figsize=(14, 8)) # Make it wide to accommodate many events
 
-   
+        # Sort the dataframe for a cleaner plot
+        df_sorted = dfp.sort_values('impact_num').reset_index()
+        
+        for i, row in df_sorted.iterrows():
+            min_val = row['Num_Min_num']
+            max_val = row['Num_Max_num']
+            em_dat_val = row['impact_num']
+            
+            plt.plot([i, i], [min_val, max_val], 'blue', alpha=1)
+            
+            # Use different marker for perfect matches
+            if min_val == max_val == em_dat_val:
+                plt.plot(i, em_dat_val, 's', color='green', markersize=8, markeredgewidth=2, markeredgecolor='black')  # Square marker
+            else:
+                plt.plot(i, em_dat_val, 'o', color='orange', markersize=6)
+
+        plt.axhline(y=0, color='k', linestyle='-', alpha=0.3)
+        plt.xlabel(f'Event Index (Sorted by EM-DAT {impact_type} Value)')
+        plt.ylabel(f'{impact_type} Value')
+        #plt.yscale('log') # Add this line to your plotting code
+        plt.title(title)
+        plt.legend([f'Wikimpacts {impact_type.capitalize} Min-Max Range', f'EM-DAT {impact_type.capitalize} Value'])
+        plt.grid(True)
+        plt.xticks([]) # Hide the x-axis ticks as they are just indices
+        plt.tight_layout()
+        save_title=clean_title(title)
+        plt.savefig(f'{filepath}/{save_title}.png')
+        plt.close()
+    """
+    def event_impact_with_error_bars(df, title, impact_type, filepath):
+        dfp = prepare_numeric_for_plot(df,impact_type)
+                
+        if dfp.empty:
+            print(f"No data to plot for: {title}")
+            return
+        
+        #plt.figure(figsize=(14, 8)) # Make it wide to accommodate many events
+
+        df_sorted = dfp.sort_values('impact_num').reset_index(drop=True)
+
+        fig, ax = plt.subplots(figsize=(14, 8))
+        range_lbl_shown = False
+        single_lbl_shown = False
+        em_lbl_shown = False
+        perfect_lbl_shown = False
+        mins = df_sorted['Num_Min_num'].to_numpy(dtype=float)
+        maxs = df_sorted['Num_Max_num'].to_numpy(dtype=float)
+        em   = df_sorted['impact_num'].to_numpy(dtype=float)
+        mn = np.minimum(mins, maxs)
+        mx = np.maximum(mins, maxs)
+        dist = np.where((em >= mn) & (em <= mx), 0.0, np.minimum(np.abs(em - mn), np.abs(em - mx)))
+        rmse = float(np.sqrt(np.mean(dist**2)))
+        mae = float(np.mean(np.abs(dist)))
+        for i, row in df_sorted.iterrows():
+            min_val = int(row['Num_Min_num'])
+            max_val = int(row['Num_Max_num'])
+            em_val  = int(row['impact_num'])*1000 # only for damage 
+        
+            # Skip bad rows
+            if not (np.isfinite(min_val) and np.isfinite(max_val) and np.isfinite(em_val)):
+                continue
+
+            # Ensure correct order
+            if max_val < min_val:
+                min_val, max_val = max_val, min_val
+
+            # Draw Wiki min–max range or single-value dot
+            if max_val > min_val:
+                ax.vlines(
+                    i, min_val, max_val, color='blue', alpha=0.9, linewidth=2, zorder=3,
+                    label=(f'Wikimpacts {impact_type.capitalize()} Min–Max Range' if not range_lbl_shown else None)
+                )
+                range_lbl_shown = True
+            else:
+                # min == max: show a Wiki dot
+                ax.scatter(
+                    i, min_val, color='royalblue', s=25, zorder=3,
+                    label=(f'Wikimpacts {impact_type.capitalize()} Value ($)' if not single_lbl_shown else None)
+                )
+                single_lbl_shown = True
+
+            # Highlight perfect matches (optional)
+            # Highlight perfect matches (optional)
+            if min_val == max_val == em_val:
+                    ax.scatter(
+                    i, em_val, marker='s', color='green', s=45,
+                    edgecolor='black', linewidth=1, zorder=5,
+                    label='Perfect Match' if not perfect_lbl_shown else None
+                    )
+                    perfect_lbl_shown = True
+            # EM-DAT point
+            ax.scatter(
+                i, em_val, color='orange', s=25, zorder=4,
+                label=(f'EM-DAT {impact_type.capitalize()} Value ($)' if not em_lbl_shown else None)
+            )
+            em_lbl_shown = True
+           
+
+        ax.axhline(0, color='k', linestyle='-', alpha=0.3)
+        linthresh_value = np.percentile(df_sorted['impact_num'], 50)  # 50th percentile = median
+        ax.set_xlabel(f'Event Index (Sorted by EM-DAT {impact_type.capitalize()} Value, symlog, line scale threshold {linthresh_value})')
+        ax.set_ylabel(f'{impact_type.capitalize()} Value (symlog, line scale threshold {linthresh_value} )')
+        ax.axhline(rmse, color='crimson', linestyle='--', linewidth=2, label=f'RMSE = {rmse:.2f}')
+        ax.set_title(title)
+        #ax2 = ax.twinx()
+        #x = np.arange(len(em))
+       # ax2.bar(x, dist, color='crimson', alpha=0.25, width=0.8, label=f'Distance to Wikimpacts {impact_type.capitalize()} range')
+        #ax2.axhline(rmse, color='crimson', linestyle='--', linewidth=2, label=f'RMSE = {rmse:.2f}')
+        #ax2.set_ylabel(f'Distance to Wikimpacts {impact_type.capitalize()} range')
+        #ax2.set_ylim(0, np.nanpercentile(dist, 99) * 1.1)
+        # Make small ranges visible:
+        
+        ax.set_yscale('symlog', linthresh=linthresh_value,linscale=1.0)  # or use ax.set_ylim(top=np.nanpercentile(df_sorted[['Num_Max_num','impact_num']].to_numpy(), 99))
+        # ax.set_ylim(0, np.nanpercentile(np.r_[df_sorted['Num_Max_num'], df_sorted['impact_num']], 99))
+        ax.set_ylim(bottom=0.1)  # Set minimum to a small positive value
+        ax.grid(True)
+        ax.set_xticks([])
+        ax.legend(loc='upper left', bbox_to_anchor=(1, 1))
+        plt.tight_layout()
+        #h1, l1 = ax.get_legend_handles_labels()
+        #h2, l2 = ax2.get_legend_handles_labels()
+        #ax2.legend(h1 + h2, l1 + l2, loc='upper left')
+        save_title = clean_title(title)
+        plt.savefig(f'{filepath}/{save_title}.png')
+        plt.close()
     # Plot scatter with the updated ym_matches
     unique_events_ym = ym_matches['Main_Event_norm'].unique()
-
-    for event in unique_events_ym:
-        filtered_df = ym_matches[ym_matches['Main_Event_norm'] == event]
-        scatter_impact_with_error_bars(filtered_df, f"Wikimpacts vs EM-DAT (Year/Month-level matches) {args.impact_category} - {event.capitalize()}",args.impact_category,args.filepath)
+    
+    #for event in unique_events_ym:
+     #   filtered_df = ym_matches[ym_matches['Main_Event_norm'] == event]
+    #    scatter_impact_with_error_bars(filtered_df, f"Wikimpacts vs EM-DAT (Year/Month-level matches) {args.impact_category} - {event.capitalize()}",args.impact_category,args.filepath)
     
     #plot only year match 
-    unique_events_y = year_matches['Main_Event_norm'].unique()
+    #unique_events_y = year_matches['Main_Event_norm'].unique()
 
-    for event in unique_events_y:
-        filtered_df = year_matches[year_matches['Main_Event_norm'] == event]
-        scatter_impact_with_error_bars(filtered_df, f"Wikimpacts vs EM-DAT (Year-level matches) {args.impact_category} - {event.capitalize()}",args.impact_category,args.filepath)
+    #for event in unique_events_y:
+    #    filtered_df = year_matches[year_matches['Main_Event_norm'] == event]
+    #    scatter_impact_with_error_bars(filtered_df, f"Wikimpacts vs EM-DAT (Year-level matches) {args.impact_category} - {event.capitalize()}",args.impact_category,args.filepath)
+     
+     # Plot event impact comparison with the updated ym_matches
+    #unique_events_ym = ym_matches['Main_Event_norm'].unique()
+
+    for event in unique_events_ym:
+        print(f"for event {event}, print the matched impact values")
+        filtered_df = ym_matches[ym_matches['Main_Event_norm'] == event]
+        event_impact_with_error_bars(filtered_df, f"Wikimpacts vs EM-DAT {args.impact_category.capitalize()} Impact Comparison per Event  - {event.capitalize()}",args.impact_category,args.filepath)
+    
+    #plot only year match 
+    #unique_events_y = year_matches['Main_Event_norm'].unique()
+
+   # for event in unique_events_y:
+      #  filtered_df = year_matches[year_matches['Main_Event_norm'] == event]
+       # event_impact_with_error_bars(filtered_df, f"Wikimpacts vs EM-DAT (Year-level matches) per Event {args.impact_category} - {event.capitalize()}",args.impact_category,args.filepath)
     
