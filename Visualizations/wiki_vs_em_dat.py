@@ -342,8 +342,10 @@ if __name__ == "__main__":
             return
         
         #plt.figure(figsize=(14, 8)) # Make it wide to accommodate many events
+        # only filter rows where the Num_Unit is USD 
+        df_USD=dfp[dfp["Num_Unit"]=="USD"]
+        df_sorted = df_USD.sort_values('impact_num').reset_index(drop=True)
 
-        df_sorted = dfp.sort_values('impact_num').reset_index(drop=True)
 
         fig, ax = plt.subplots(figsize=(14, 8))
         range_lbl_shown = False
