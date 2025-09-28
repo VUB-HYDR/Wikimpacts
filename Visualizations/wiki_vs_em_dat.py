@@ -735,6 +735,7 @@ if __name__ == "__main__":
         }
 
         counts = {label: df_sorted[mask].shape[0] for label, mask in categories.items()}
+        print (f"the count for the match events in each category {counts}" )
 
         # Map colors to categories
         category_colors = {
@@ -752,11 +753,14 @@ if __name__ == "__main__":
         ax.bar(counts.keys(), counts.values(), color=[category_colors[label] for label in counts.keys()])
 
         # Configure plot aesthetics
-        ax.set_title(title)
-        ax.set_ylabel('Count of events')
-        ax.set_xlabel(f'Wikimpacts 1.0 {impact_type} - EM-DAT {impact_type} (%)')
+        ax.set_title(title,fontsize=18,fontweight="bold")
+        ax.set_ylabel('Count of events',fontsize=18)
+        ax.set_xlabel(f'(Wikimpacts 1.0 - EM-DAT)/EM-DAT {impact_type} (%)',fontsize=18)
         ax.set_xticks(range(len(counts)))
-        ax.set_xticklabels(counts.keys(), rotation=0, ha='center')
+        for size in ax.get_yticklabels():  
+   
+            size.set_fontsize('16')
+        ax.set_xticklabels(counts.keys(), rotation=0, ha='center',fontsize=13)
         ax.yaxis.set_major_locator(MaxNLocator(integer=True))
         ax.grid(False)
 
@@ -866,13 +870,14 @@ if __name__ == "__main__":
       #  print(f"for event {event}, print the matched impact values")
       #  filtered_df = ym_matches[ym_matches['Main_Event_norm'] == event]
       #  event_impact_with_error_bars(filtered_df, f"Wikimpacts 1.0 vs EM-DAT {args.impact_category} impact Comparison per Event  - {event.capitalize()}",args.impact_category,args.filepath)
-    
+    print(f"length of all matched events {len(ym_matches)}")
+
     for event in unique_events_ym:
         print(f"for event {event}, print the matched impact values")
         filtered_df = ym_matches[ym_matches['Main_Event_norm'] == event]
         event_impact_benchmark_comparison(filtered_df, f"Wikimpacts 1.0 vs EM-DAT {args.impact_category} impact comparison - {event}",args.impact_category,args.filepath)
     
-    event_impact_benchmark_comparison(ym_matches, f"Wikimpacts 1.0 vs EM-DAT {args.impact_category} impact comparison",args.impact_category,args.filepath)
+    event_impact_benchmark_comparison(ym_matches, f"(c) Wikimpacts 1.0 vs EM-DAT {args.impact_category} impact comparison",args.impact_category,args.filepath)
     
     #plot_dismatch(args.filepath, args.impact_category,f"Number of dismatch event entries between Wikimpacts 1.0 and EM-DAT in {args.impact_category} category")
     #plot only year match 
