@@ -13,7 +13,7 @@ from matplotlib.ticker import MaxNLocator
 from matplotlib import rcParams
 
 # Set the font path
-font_path = "/user/brussel/106/vsc10684/bvo00012/vsc10684/WikimpactsV1/Wikimpacts/Visualizations/fonts/DejaVuSerif.ttf"
+font_path = "Visualizations/fonts/DejaVuSerif.ttf"
 
 
 font_prop = FontProperties(fname=font_path)

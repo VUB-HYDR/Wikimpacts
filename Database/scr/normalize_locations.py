@@ -13,7 +13,7 @@ from .log_utils import Logging
 
 
 class NormalizeLocation:
-    def __init__(self, gadm_path: str, unsd_path: str):
+    def __init__(self, gadm_path: str, unsd_path: str, gaul_path:str):
         self.geopy_cache_path = "Database/data/geopy_cache"
         requests_cache.install_cache(
             self.geopy_cache_path, allowable_methods=["GET"], allowable_codes=[200], filter_fn=self._rate_limiter
@@ -22,6 +22,7 @@ class NormalizeLocation:
         self.geocode = geolocator.geocode
         self.gadm = pd.read_csv(gadm_path, sep=None, engine="python")
         self.unsd = pd.read_csv(unsd_path, sep=None, engine="python")
+        self.gaul = pd.read_csv(gaul_path, sep=None, engine="python")
 
         for col in self.unsd.columns:
             if "Code" not in col:
