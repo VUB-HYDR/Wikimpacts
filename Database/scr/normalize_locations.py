@@ -336,7 +336,12 @@ class NormalizeLocation:
             if cardinals and not is_country:
                 normalized_area_name = f"{normalized_area_name}:<{cardinals}>"
             geojson = json.dumps(location.raw["geojson"]) if isinstance(location.raw["geojson"], dict) else None
-            return (normalized_area_name, f'{location.raw["type"]}:{location.raw["addresstype"]}', geojson)
+            if "taiwan" in normalized_area_name.lower(): 
+               row = self.gaul[self.gaul['adm1_name'] == "Taiwan Sheng"]
+               location.raw["type"] = row.iloc[0]["status"]
+               return (normalized_area_name, location.raw["type"], geojson)
+            else: 
+                return (normalized_area_name, f'{location.raw["type"]}:{location.raw["addresstype"]}', geojson)
 
         except BaseException as err:
             self.logger.error(

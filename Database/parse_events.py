@@ -752,6 +752,7 @@ if __name__ == "__main__":
     norm_loc = NormalizeLocation(
         gadm_path="Database/data/gadm_world.csv",
         unsd_path="Database/data/UNSD — Methodology.csv",
+        gaul_path="Database/data/gaul_adm1.csv"
     )
 
     events = None
