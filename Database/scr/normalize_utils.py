@@ -13,7 +13,8 @@ from dateparser.search import search_dates
 from iso4217 import Currency
 from spacy import language as spacy_language
 from unidecode import unidecode
-
+from typing import Optional
+import math 
 from .log_utils import Logging
 from .normalize_numbers import NormalizeNumber
 
@@ -563,7 +564,9 @@ class GeoJsonUtils:
         """Generates a short lowercase UID"""
         return shortuuid.ShortUUID().random(length=length)
 
-    def generate_nid(self, text: str) -> str:
+    def generate_nid(self, text: str) -> Optional[str]:
+        if text is None or (isinstance(text, float) and math.isnan(text)):
+            return None
         nid: str = ""
         try:
             assert text

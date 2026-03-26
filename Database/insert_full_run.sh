@@ -53,6 +53,7 @@ dryRun=${4} # -d or ""
 saveOutput=${5} # -s or ""
 saveOutputDir=${6} # path to dir or ""
 geojson=${7} # -gj or ""
+errorpath=${8} # the insert error path or ""
 
 echo Input: ${inputFilesDir}
 echo Target database: ${dbName} - NOTE: will be ignored if dryRun!
@@ -69,7 +70,7 @@ for lvl in "${levels[@]}"; do
                 saveOutputDirLvl=${saveOutputDir}/${lvl}
                 echo Storing output in ${saveOutputDirLvl}
         fi
-        poetry run python3 Database/insert_events.py -m append -f ${inputFilesDir}/${lvl} -db ${dbName} -lvl ${lvl} ${geojson} -nid ${nidPath} ${dryRun} ${saveOutput} ${saveOutputDirLvl}
+        poetry run python3 Database/insert_events.py -m append -f ${inputFilesDir}/${lvl} -db ${dbName} -lvl ${lvl} ${geojson} -nid ${nidPath} ${dryRun} ${saveOutput} -o ${saveOutputDirLvl} -err ${errorpath}
     else
         for filePath in ${inputFilesDir}/${lvl}/*; do
 
@@ -83,7 +84,7 @@ for lvl in "${levels[@]}"; do
                     echo Storing output in ${saveOutputDirLvl}
             fi
 
-            poetry run python3 Database/insert_events.py -m "append" -f ${filePath}  -db ${dbName} -lvl ${lvl} -t ${tblName} ${geojson} -nid ${nidPath} ${dryRun} ${saveOutput} ${saveOutputDirLvl}
+            poetry run python3 Database/insert_events.py -m "append" -f ${filePath}  -db ${dbName} -lvl ${lvl} -t ${tblName} ${geojson} -nid ${nidPath} ${dryRun} ${saveOutput} -o ${saveOutputDirLvl} -err ${errorpath}
         done
     fi
 done

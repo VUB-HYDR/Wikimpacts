@@ -303,9 +303,12 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
 
         # unpack subevents
         sub_event = df[["Event_ID", col]].explode(col)
-
+        
         # drop any events that have no subevents (aka [] exploded into NaN)
         sub_event.dropna(how="all", inplace=True)
+        if sub_event.empty or col not in sub_event.columns:
+            logger.warning(f"No data found in {col}! Level: {level}")
+            continue
         sub_event = pd.concat([sub_event.Event_ID, sub_event[col].apply(pd.Series)], axis=1)
 
         logger.info(
@@ -444,6 +447,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
             )
 
         elif level == "l3" and administrative_area_col in sub_event.columns:
+            
             logger.info(f"Normalizing nulls in {administrative_area_col} for {level} {col}")
             sub_event[administrative_area_col] = sub_event[administrative_area_col].apply(
                 lambda admin_area: utils.filter_null_str(admin_area)
@@ -516,7 +520,7 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
 
                 sub_event.drop(columns=[f"{location_col}_Tmp"], inplace=True)
                 logger.info(f"Getting GID from GADM for locations in {level} {col}")
-
+                
                 sub_event[f"{location_col}_GID"] = sub_event.progress_apply(
                     lambda row: (
                         [
@@ -531,9 +535,10 @@ def parse_sub_level_event(df, level: str, target_columns: list = []):
                         ]
                     ),
                     axis=1,
-                )
+                )             
         logger.info(f"Dropping empty rows in {col}")
         rows_before = sub_event.shape[0]
+       
         null_mask = (
             sub_event[[x for x in sub_event.columns if x != "Event_ID"]]
             .progress_apply(lambda row: [True if v in (None, [], float("nan")) else False for _, v in row.items()])
@@ -754,6 +759,7 @@ if __name__ == "__main__":
         unsd_path="Database/data/UNSD — Methodology.csv",
         gaul_path="Database/data/gaul_adm1.csv"
     )
+    
 
     events = None
     tmp_dir = f"{args.output_dir}/tmp"

@@ -228,6 +228,18 @@ if __name__ == "__main__":
         '#800000'   #  red for 15% more
     ]
 
+    def prepare_numeric_for_plot(df,impact_type):
+        df = df.copy()
+        stem = impact_type[:5].lower()
+        df["impact_num"] = pd.to_numeric(
+    df[[col for col in df.columns if stem.lower() in col.lower()]].iloc[:, 0],
+    errors='coerce'
+)
+        for col in ['Num_Min', 'Num_Max']:
+            if col in df.columns:
+                df[col + '_num'] = pd.to_numeric(df[col], errors='coerce')
+        return df.dropna(subset=['impact_num'])
+
     def event_impact_benchmark_comparison(df, title, impact_type, filepath):
         dfp = prepare_numeric_for_plot(df, impact_type)
 
@@ -302,12 +314,9 @@ if __name__ == "__main__":
 
      # Plot event impact comparison with the updated ym_matches
     unique_events_ym = ym_matches['Main_Event_norm'].unique()
+    ym_matches.to_csv(f"Visualizations/wikimpacts_v1_re_v2/wiki_vs_em_dat_{args.impact_category}.csv")
 
-    for event in unique_events_ym:
-        print(f"for event {event}, print the matched impact values")
-        filtered_df = ym_matches[ym_matches['Main_Event_norm'] == event]
-        event_impact_benchmark_comparison(filtered_df, f"Wikimpacts 1.0 vs EM-DAT {args.impact_category} impact comparison - {event}",args.impact_category,args.filepath)
-    
-    event_impact_benchmark_comparison(ym_matches, f"(c) Wikimpacts 1.0 vs EM-DAT {args.impact_category} impact comparison",args.impact_category,args.filepath)
+   
+    event_impact_benchmark_comparison(ym_matches, f"(d) Wikimpacts 1.0 vs EM-DAT {args.impact_category} impact comparison",args.impact_category,args.filepath)
     
     

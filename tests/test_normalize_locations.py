@@ -39,9 +39,9 @@ class TestNormalizeLocations:
             ("Kansas, United States", "United States", ["USA.17_1"]),
             ("Kansas, United States", None, ["USA.17_1"]),
             ("Kansas", "United States", ["USA.17_1"]),
-            ("Kansas", None, ["USA.17_1"]),
-            ("Dijon", None, ["FRA.2.1.2_1"]),
-            ("Amajyaruguru", None, ["RWA.1_1"]),
+            ("Kansas", None, ["USA.17_1"]), # should return [] if the country is not given 
+            ("Dijon", None, ["FRA.2.1.2_1"]),# should return [] if the country is not given 
+            ("Amajyaruguru", None, ["RWA.1_1"]),# should return [] if the country is not given 
             ("Geumgwa", "South Korea", ["KOR.13.13.3_2"]),
             ("Geumgwa", None, ["KOR.13.13.3_2"]),
             ("Jerusalem", "Philippines", ["PHL.51.4.15_1"]),
@@ -53,10 +53,14 @@ class TestNormalizeLocations:
             ("Orange County, California, United States", None, ["USA.5.30_1"]),
             (None, "Orange County, California, United States", ["USA.5.30_1"]),
             (None, "Netherlands", ["NLD"]),
-            ("India", None, []),
+            ("India", None, []),# should return [] if the country is not given 
             (None, "India", ["Z07", "IND", "Z01", "Z04", "Z05", "Z09"]),
-        ],
-    )
+            ("La Ceiba", "Honduras", ["HND.1.5_1"]),
+            ("Manzanillo","Mexico",["MEX.8.7_2"]),
+            ("Maroantsetra","Madagascar", ["MDG.5.2.3_1"])]
+             )
+    
     def test_get_gadm_gid(self, area, country, expected):
         norm = refresh_fixture()
         assert norm.get_gadm_gid(area, country) == expected
+

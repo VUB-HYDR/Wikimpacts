@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Dependencies for parsing and normalizing environmental impact data"
 authors = ["Shorouq Zahra <shorouq.zahra@ri.se>", "Ni Li <ni.li@vub.be>", "Murathan Kurfali <murathan.kurfali@ri.se>"]
 readme = "README.md"
-package-mode = true
+
 packages = [{include = "Database/scr"}]
 
 [tool.poetry.dependencies]
@@ -33,6 +33,7 @@ seaborn = "^0.13.2"
 pandarallel = "^1.6.5"
 geopandas = "^1.1.1"
 jenkspy = "^0.4.1"
+pyecharts = "^2.0.9"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.3"

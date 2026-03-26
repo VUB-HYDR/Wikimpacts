@@ -1,1 +1,3 @@
 For the fullrun files, for a more efficient post-processing, we save a json file for each event, and put in the folder "Database/raw/full_run/fullrun_split_single". Other files in this folder are raw from the batch process, and we leave in the folder for a reference. The file Database/raw/full_run/wiki_fullrun_3368single_events.json contains all events, and the files in the folder fullrun_split_single are splited from it.
+
+The initial Wikimpacts 1.0 database contains 2928 events, and we idenfity 195 multi-event article entries from it, Database/raw/full_run/wiki_fullrun_2733single_events.json contains the updated raw output. 
