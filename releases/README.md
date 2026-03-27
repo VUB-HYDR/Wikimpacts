@@ -14,7 +14,7 @@
 | [releases/impactdb.v1.0.1.raw.db](impactdb.v1.0.1.raw.db)  | A **raw database** that improves on [releases/impactdb.v1.0.raw.db](impactdb.v1.0.0.raw.db) by adding stricter validation. |
 | [releases/impactdb.v1.0.2.raw.db](impactdb.v1.0.2.raw.db)  | A **raw database** that improves on [releases/impactdb.v1.0.1.raw.db](impactdb.v1.0.1.raw.db) that fixes a major bug in raw=<v.1.1 where None/NULL values end up inside the databases in non-nullable columns |
 | [releases/impactdb.v1.0.3.raw.db](impactdb.v1.0.3.raw.db) | A **raw database** that modifies the schema of [releases/impactdb.v1.0.2.raw.db](impactdb.v1.0.2.raw.db) so that end years of events are nullable.  |
-| [releases/impactdb.v1.1.1.raw.db](releases/impactdb.v1.1.0.dg_filled.db) A **raw database** | that removing the 195 multi-event articles identified, 20 events without Start_Date_Year, and with known geo-location error fixed |
+| [releases/impactdb.v1.1.1.raw.db](releases/impactdb.v1.1.0.dg_filled.db) A **raw database** | that removing the 195 multi-event articles identified, 17 events without Start_Date_Year, and with known geo-location error fixed |
 
 
 
