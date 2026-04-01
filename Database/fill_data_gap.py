@@ -47,9 +47,7 @@ if __name__ == "__main__":
     logger.info(
         f"Dropped all rows with no {dg_utils.event_id} or no {dg_utils.main_event} records in L1. Shape after: {l1.shape}"
     )
-    l1 = l1.dropna(how="all", subset=[dg_utils.s_y, dg_utils.e_y])
-    logger.info(f"Dropped all row with no {dg_utils.s_y} and no {dg_utils.e_y} records in L1. Shape after: {l1.shape}")
-
+    
     for name, level in {"L2": l2, "L3": l3}.items():
         for impact in level.keys():
             for e in event_ids_to_drop:
@@ -227,16 +225,37 @@ if __name__ == "__main__":
     for level in [l2, l3]:
         for impact in level.keys():
             level[impact].replace(float("nan"), None, inplace=True)
+  
+    logger.info("Appending areas and time information from l2/l3 to l1 if missing")
 
-    logger.info("Appending areas from l2/l3 to l1 if missing")
+    time_cols = [dg_utils.s_d, dg_utils.s_m, dg_utils.s_y, dg_utils.e_d, dg_utils.e_m, dg_utils.e_y]
+
     for e_id in event_ids:
         l1_areas = l1.loc[l1[dg_utils.event_id] == e_id][f"{dg_utils.admin_areas}_Norm"].iloc[0]
         area_col_suffix = ["Norm", "Type", "GID", "GeoJson"]
         l1_target_area_cols = [f"{dg_utils.admin_areas}_{s}" for s in area_col_suffix]
 
+        # Get l1 time values for this event
+        l1_time = l1.loc[l1[dg_utils.event_id] == e_id][time_cols].iloc[0]
+
         for impact in l2.keys():
             try:
-                l2_series = l2[impact][l2[impact][dg_utils.event_id] == e_id][f"{dg_utils.admin_areas}_Norm"]
+                l2_event_rows = l2[impact][l2[impact][dg_utils.event_id] == e_id]
+                l2_series = l2_event_rows[f"{dg_utils.admin_areas}_Norm"]
+
+                # --- Append time from l2 to l1 if missing ---
+                if not l2_event_rows.empty:
+                    for col in time_cols:
+                        if pd.isna(l1_time[col]):
+                            l2_time_val = l2_event_rows[col].dropna()
+                            if not l2_time_val.empty:
+                                l1.loc[l1[dg_utils.event_id] == e_id, col] = l2_time_val.iloc[0]
+                                logger.info(
+                                    f"Filling time data gap for Event_ID {e_id} for {impact} at l2->l1. "
+                                    f"Column: {col}, Value: {l2_time_val.iloc[0]}"
+                                )
+                    # Refresh l1 time after potential update
+                    l1_time = l1.loc[l1[dg_utils.event_id] == e_id][time_cols].iloc[0]
 
                 if not l2_series.empty:
                     for n in range(len(l2_series)):
@@ -255,7 +274,8 @@ if __name__ == "__main__":
                             for k, v in l2_areas.items():
                                 l2_areas[k] = [v[n][idx] for idx in l2_idx]
                             logger.info(
-                                f"Filling area data gap for Event_ID {e_id} for {impact} at l2->l1. Area(s): {l2_areas[f'{dg_utils.admin_areas}_Norm']}"
+                                f"Filling area data gap for Event_ID {e_id} for {impact} at l2->l1. "
+                                f"Area(s): {l2_areas[f'{dg_utils.admin_areas}_Norm']}"
                             )
                             l1.loc[l1[dg_utils.event_id] == e_id][l1_target_area_cols].apply(
                                 lambda row: dg_utils.fill_area(row, l2_areas, area_col=dg_utils.admin_areas),
@@ -266,7 +286,23 @@ if __name__ == "__main__":
 
         for impact in l3.keys():
             try:
-                l3_series = l3[impact][l3[impact][dg_utils.event_id] == e_id][f"{dg_utils.admin_area}_Norm"]
+                l3_event_rows = l3[impact][l3[impact][dg_utils.event_id] == e_id]
+                l3_series = l3_event_rows[f"{dg_utils.admin_area}_Norm"]
+
+                # --- Append time from l3 to l1 if missing ---
+                if not l3_event_rows.empty:
+                    for col in time_cols:
+                        if pd.isna(l1_time[col]):
+                            l3_time_val = l3_event_rows[col].dropna()
+                            if not l3_time_val.empty:
+                                l1.loc[l1[dg_utils.event_id] == e_id, col] = l3_time_val.iloc[0]
+                                logger.info(
+                                    f"Filling time data gap for Event_ID {e_id} for {impact} at l3->l1. "
+                                    f"Column: {col}, Value: {l3_time_val.iloc[0]}"
+                                )
+                    # Refresh l1 time after potential update
+                    l1_time = l1.loc[l1[dg_utils.event_id] == e_id][time_cols].iloc[0]
+
                 if not l3_series.empty:
                     for n in range(len(l3_series)):
                         l3_area = {}
