@@ -8646,116 +8646,6 @@
       }
    },
    {
-      "Event_ID":"WALBAfG",
-      "Num_Min":null,
-      "Num_Max":null,
-      "Num_Approx":null,
-      "Start_Date_Day":3.0,
-      "Start_Date_Month":1.0,
-      "Start_Date_Year":1993.0,
-      "End_Date_Day":4.0,
-      "End_Date_Month":1.0,
-      "End_Date_Year":1993.0,
-      "Administrative_Areas_Norm":"['Wallis and Futuna']",
-      "Administrative_Areas_Type":"['administrative:state']",
-      "Administrative_Areas_GID":"[['WLF']]",
-      "ERROR":{
-         "args":[
-            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Homeless.Num_Min"
-         ],
-         "sqlite_errorcode":1299,
-         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
-      }
-   },
-   {
-      "Event_ID":"WALBAfG",
-      "Num_Min":null,
-      "Num_Max":null,
-      "Num_Approx":null,
-      "Start_Date_Day":4.0,
-      "Start_Date_Month":1.0,
-      "Start_Date_Year":1993.0,
-      "End_Date_Day":null,
-      "End_Date_Month":null,
-      "End_Date_Year":null,
-      "Administrative_Areas_Norm":"['American Samoa, United States']",
-      "Administrative_Areas_Type":"['administrative:state']",
-      "Administrative_Areas_GID":"[[]]",
-      "ERROR":{
-         "args":[
-            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Homeless.Num_Min"
-         ],
-         "sqlite_errorcode":1299,
-         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
-      }
-   },
-   {
-      "Event_ID":"WALBAfG",
-      "Num_Min":null,
-      "Num_Max":null,
-      "Num_Approx":null,
-      "Start_Date_Day":4.0,
-      "Start_Date_Month":1.0,
-      "Start_Date_Year":1993.0,
-      "End_Date_Day":null,
-      "End_Date_Month":null,
-      "End_Date_Year":null,
-      "Administrative_Areas_Norm":"['Tonga']",
-      "Administrative_Areas_Type":"['administrative:country']",
-      "Administrative_Areas_GID":"[['TON']]",
-      "ERROR":{
-         "args":[
-            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Homeless.Num_Min"
-         ],
-         "sqlite_errorcode":1299,
-         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
-      }
-   },
-   {
-      "Event_ID":"WALBAfG",
-      "Num_Min":null,
-      "Num_Max":null,
-      "Num_Approx":null,
-      "Start_Date_Day":4.0,
-      "Start_Date_Month":1.0,
-      "Start_Date_Year":1993.0,
-      "End_Date_Day":null,
-      "End_Date_Month":null,
-      "End_Date_Year":null,
-      "Administrative_Areas_Norm":"['Niue']",
-      "Administrative_Areas_Type":"['administrative:country']",
-      "Administrative_Areas_GID":"[['NIU']]",
-      "ERROR":{
-         "args":[
-            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Homeless.Num_Min"
-         ],
-         "sqlite_errorcode":1299,
-         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
-      }
-   },
-   {
-      "Event_ID":"wHpQHd3",
-      "Num_Min":null,
-      "Num_Max":null,
-      "Num_Approx":null,
-      "Start_Date_Day":null,
-      "Start_Date_Month":null,
-      "Start_Date_Year":1969.0,
-      "End_Date_Day":null,
-      "End_Date_Month":null,
-      "End_Date_Year":1969.0,
-      "Administrative_Areas_Norm":"['Panama']",
-      "Administrative_Areas_Type":"['administrative:country']",
-      "Administrative_Areas_GID":"[['PAN']]",
-      "ERROR":{
-         "args":[
-            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Homeless.Num_Min"
-         ],
-         "sqlite_errorcode":1299,
-         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
-      }
-   },
-   {
       "Event_ID":"kEEJ4Nb",
       "Num_Min":null,
       "Num_Max":null,
@@ -12474,6 +12364,28 @@
       }
    },
    {
+      "Event_ID":"1duEq5I",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Start_Date_Day":null,
+      "Start_Date_Month":null,
+      "Start_Date_Year":2013.0,
+      "End_Date_Day":null,
+      "End_Date_Month":null,
+      "End_Date_Year":null,
+      "Administrative_Areas_Norm":"['Malaysia']",
+      "Administrative_Areas_Type":"['administrative:country']",
+      "Administrative_Areas_GID":"[['MYS']]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Homeless.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
       "Event_ID":"1J4YphU",
       "Num_Min":null,
       "Num_Max":null,
@@ -12531,28 +12443,6 @@
       "Administrative_Areas_Norm":"['China']",
       "Administrative_Areas_Type":"['administrative:country']",
       "Administrative_Areas_GID":"[['Z03', 'CHN', 'Z08', 'Z02']]",
-      "ERROR":{
-         "args":[
-            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Homeless.Num_Min"
-         ],
-         "sqlite_errorcode":1299,
-         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
-      }
-   },
-   {
-      "Event_ID":"6eiFPtI",
-      "Num_Min":null,
-      "Num_Max":null,
-      "Num_Approx":null,
-      "Start_Date_Day":null,
-      "Start_Date_Month":null,
-      "Start_Date_Year":2000.0,
-      "End_Date_Day":null,
-      "End_Date_Month":null,
-      "End_Date_Year":2000.0,
-      "Administrative_Areas_Norm":"['Senegal']",
-      "Administrative_Areas_Type":"['administrative:country']",
-      "Administrative_Areas_GID":"[['SEN']]",
       "ERROR":{
          "args":[
             "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Homeless.Num_Min"
@@ -24926,6 +24816,116 @@
       }
    },
    {
+      "Event_ID":"5kkaGsY",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Start_Date_Day":27.0,
+      "Start_Date_Month":4.0,
+      "Start_Date_Year":2011.0,
+      "End_Date_Day":null,
+      "End_Date_Month":null,
+      "End_Date_Year":null,
+      "Administrative_Areas_Norm":"['United States']",
+      "Administrative_Areas_Type":"['administrative:country']",
+      "Administrative_Areas_GID":"[['USA']]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Homeless.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
+      "Event_ID":"5kkaGsY",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Start_Date_Day":null,
+      "Start_Date_Month":11.0,
+      "Start_Date_Year":1989.0,
+      "End_Date_Day":null,
+      "End_Date_Month":null,
+      "End_Date_Year":null,
+      "Administrative_Areas_Norm":"['United States']",
+      "Administrative_Areas_Type":"['administrative:country']",
+      "Administrative_Areas_GID":"[['USA']]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Homeless.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
+      "Event_ID":"5kkaGsY",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Start_Date_Day":null,
+      "Start_Date_Month":null,
+      "Start_Date_Year":1995.0,
+      "End_Date_Day":null,
+      "End_Date_Month":null,
+      "End_Date_Year":null,
+      "Administrative_Areas_Norm":"['United States']",
+      "Administrative_Areas_Type":"['administrative:country']",
+      "Administrative_Areas_GID":"[['USA']]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Homeless.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
+      "Event_ID":"5kkaGsY",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Start_Date_Day":21.0,
+      "Start_Date_Month":1.0,
+      "Start_Date_Year":2010.0,
+      "End_Date_Day":null,
+      "End_Date_Month":null,
+      "End_Date_Year":null,
+      "Administrative_Areas_Norm":"['United States']",
+      "Administrative_Areas_Type":"['administrative:country']",
+      "Administrative_Areas_GID":"[['USA']]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Homeless.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
+      "Event_ID":"6eiFPtI",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Start_Date_Day":null,
+      "Start_Date_Month":null,
+      "Start_Date_Year":2000.0,
+      "End_Date_Day":null,
+      "End_Date_Month":null,
+      "End_Date_Year":2000.0,
+      "Administrative_Areas_Norm":"['Senegal']",
+      "Administrative_Areas_Type":"['administrative:country']",
+      "Administrative_Areas_GID":"[['SEN']]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Homeless.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
       "Event_ID":"dfesNwS",
       "Num_Min":null,
       "Num_Max":null,
@@ -25027,6 +25027,116 @@
       "Administrative_Areas_Norm":"['United States']",
       "Administrative_Areas_Type":"['administrative:country']",
       "Administrative_Areas_GID":"[['USA']]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Homeless.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
+      "Event_ID":"WALBAfG",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Start_Date_Day":3.0,
+      "Start_Date_Month":1.0,
+      "Start_Date_Year":1993.0,
+      "End_Date_Day":4.0,
+      "End_Date_Month":1.0,
+      "End_Date_Year":1993.0,
+      "Administrative_Areas_Norm":"['Wallis and Futuna']",
+      "Administrative_Areas_Type":"['administrative:state']",
+      "Administrative_Areas_GID":"[['WLF']]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Homeless.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
+      "Event_ID":"WALBAfG",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Start_Date_Day":4.0,
+      "Start_Date_Month":1.0,
+      "Start_Date_Year":1993.0,
+      "End_Date_Day":null,
+      "End_Date_Month":null,
+      "End_Date_Year":null,
+      "Administrative_Areas_Norm":"['American Samoa, United States']",
+      "Administrative_Areas_Type":"['administrative:state']",
+      "Administrative_Areas_GID":"[[]]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Homeless.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
+      "Event_ID":"WALBAfG",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Start_Date_Day":4.0,
+      "Start_Date_Month":1.0,
+      "Start_Date_Year":1993.0,
+      "End_Date_Day":null,
+      "End_Date_Month":null,
+      "End_Date_Year":null,
+      "Administrative_Areas_Norm":"['Tonga']",
+      "Administrative_Areas_Type":"['administrative:country']",
+      "Administrative_Areas_GID":"[['TON']]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Homeless.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
+      "Event_ID":"WALBAfG",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Start_Date_Day":4.0,
+      "Start_Date_Month":1.0,
+      "Start_Date_Year":1993.0,
+      "End_Date_Day":null,
+      "End_Date_Month":null,
+      "End_Date_Year":null,
+      "Administrative_Areas_Norm":"['Niue']",
+      "Administrative_Areas_Type":"['administrative:country']",
+      "Administrative_Areas_GID":"[['NIU']]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Homeless.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
+      "Event_ID":"wHpQHd3",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Start_Date_Day":null,
+      "Start_Date_Month":null,
+      "Start_Date_Year":1969.0,
+      "End_Date_Day":null,
+      "End_Date_Month":null,
+      "End_Date_Year":1969.0,
+      "Administrative_Areas_Norm":"['Panama']",
+      "Administrative_Areas_Type":"['administrative:country']",
+      "Administrative_Areas_GID":"[['PAN']]",
       "ERROR":{
          "args":[
             "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Homeless.Num_Min"

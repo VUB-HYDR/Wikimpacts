@@ -1,6 +1,7 @@
 # ignore raw files
 **tmp
-
+# ignore log files
+**.log
 # ignore notebooks
 **.ipynb
 

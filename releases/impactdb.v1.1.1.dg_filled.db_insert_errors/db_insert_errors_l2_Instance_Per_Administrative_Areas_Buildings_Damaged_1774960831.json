@@ -11242,28 +11242,6 @@
       }
    },
    {
-      "Event_ID":"NIKve4m",
-      "Num_Min":null,
-      "Num_Max":null,
-      "Num_Approx":null,
-      "Start_Date_Day":13.0,
-      "Start_Date_Month":10.0,
-      "Start_Date_Year":2017.0,
-      "End_Date_Day":18.0,
-      "End_Date_Month":10.0,
-      "End_Date_Year":2017.0,
-      "Administrative_Areas_Norm":"['Estonia']",
-      "Administrative_Areas_Type":"['administrative:country']",
-      "Administrative_Areas_GID":"[['EST']]",
-      "ERROR":{
-         "args":[
-            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Buildings_Damaged.Num_Min"
-         ],
-         "sqlite_errorcode":1299,
-         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
-      }
-   },
-   {
       "Event_ID":"HVBXCBv",
       "Num_Min":null,
       "Num_Max":null,
@@ -23826,28 +23804,6 @@
       }
    },
    {
-      "Event_ID":"1uRE7Ut",
-      "Num_Min":null,
-      "Num_Max":null,
-      "Num_Approx":null,
-      "Start_Date_Day":10.0,
-      "Start_Date_Month":1.0,
-      "Start_Date_Year":2007.0,
-      "End_Date_Day":11.0,
-      "End_Date_Month":1.0,
-      "End_Date_Year":2007.0,
-      "Administrative_Areas_Norm":"['Australia']",
-      "Administrative_Areas_Type":"['administrative:country']",
-      "Administrative_Areas_GID":"[['AUS']]",
-      "ERROR":{
-         "args":[
-            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Buildings_Damaged.Num_Min"
-         ],
-         "sqlite_errorcode":1299,
-         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
-      }
-   },
-   {
       "Event_ID":"1wceDIf",
       "Num_Min":null,
       "Num_Max":null,
@@ -32859,6 +32815,28 @@
       "Administrative_Areas_Norm":"['Italy']",
       "Administrative_Areas_Type":"['administrative:country']",
       "Administrative_Areas_GID":"[['ITA']]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Buildings_Damaged.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
+      "Event_ID":"NIKve4m",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Start_Date_Day":13.0,
+      "Start_Date_Month":10.0,
+      "Start_Date_Year":2017.0,
+      "End_Date_Day":18.0,
+      "End_Date_Month":10.0,
+      "End_Date_Year":2017.0,
+      "Administrative_Areas_Norm":"['Estonia']",
+      "Administrative_Areas_Type":"['administrative:country']",
+      "Administrative_Areas_GID":"[['EST']]",
       "ERROR":{
          "args":[
             "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Buildings_Damaged.Num_Min"

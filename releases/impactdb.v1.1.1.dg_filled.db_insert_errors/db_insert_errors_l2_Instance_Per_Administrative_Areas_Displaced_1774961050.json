@@ -9636,6 +9636,50 @@
       }
    },
    {
+      "Event_ID":"5kkaGsY",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Start_Date_Day":27.0,
+      "Start_Date_Month":4.0,
+      "Start_Date_Year":2011.0,
+      "End_Date_Day":null,
+      "End_Date_Month":null,
+      "End_Date_Year":null,
+      "Administrative_Areas_Norm":"['United States']",
+      "Administrative_Areas_Type":"['administrative:country']",
+      "Administrative_Areas_GID":"[['USA']]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Displaced.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
+      "Event_ID":"5kkaGsY",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Start_Date_Day":11.0,
+      "Start_Date_Month":4.0,
+      "Start_Date_Year":1862.0,
+      "End_Date_Day":null,
+      "End_Date_Month":null,
+      "End_Date_Year":null,
+      "Administrative_Areas_Norm":"['United States']",
+      "Administrative_Areas_Type":"['administrative:country']",
+      "Administrative_Areas_GID":"[['USA']]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Displaced.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
       "Event_ID":"5WKab1L",
       "Num_Min":null,
       "Num_Max":null,
@@ -9680,19 +9724,19 @@
       }
    },
    {
-      "Event_ID":"b2w4H3U",
+      "Event_ID":"m5KAVJW",
       "Num_Min":null,
       "Num_Max":null,
       "Num_Approx":null,
       "Start_Date_Day":null,
       "Start_Date_Month":null,
-      "Start_Date_Year":2007.0,
+      "Start_Date_Year":2015.0,
       "End_Date_Day":null,
       "End_Date_Month":null,
-      "End_Date_Year":2007.0,
-      "Administrative_Areas_Norm":"['Philippines']",
+      "End_Date_Year":2015.0,
+      "Administrative_Areas_Norm":"['Thailand']",
       "Administrative_Areas_Type":"['administrative:country']",
-      "Administrative_Areas_GID":"[['PHL']]",
+      "Administrative_Areas_GID":"[['THA']]",
       "ERROR":{
          "args":[
             "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Displaced.Num_Min"
@@ -12795,28 +12839,6 @@
       "Administrative_Areas_Norm":"['United States']",
       "Administrative_Areas_Type":"['administrative:country']",
       "Administrative_Areas_GID":"[['USA']]",
-      "ERROR":{
-         "args":[
-            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Displaced.Num_Min"
-         ],
-         "sqlite_errorcode":1299,
-         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
-      }
-   },
-   {
-      "Event_ID":"hJOZgOI",
-      "Num_Min":null,
-      "Num_Max":null,
-      "Num_Approx":null,
-      "Start_Date_Day":7.0,
-      "Start_Date_Month":6.0,
-      "Start_Date_Year":2017.0,
-      "End_Date_Day":null,
-      "End_Date_Month":null,
-      "End_Date_Year":null,
-      "Administrative_Areas_Norm":"['South Africa']",
-      "Administrative_Areas_Type":"['administrative:country']",
-      "Administrative_Areas_GID":"[['ZAF']]",
       "ERROR":{
          "args":[
             "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Displaced.Num_Min"
@@ -28204,6 +28226,28 @@
       }
    },
    {
+      "Event_ID":"b2w4H3U",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Start_Date_Day":null,
+      "Start_Date_Month":null,
+      "Start_Date_Year":2007.0,
+      "End_Date_Day":null,
+      "End_Date_Month":null,
+      "End_Date_Year":2007.0,
+      "Administrative_Areas_Norm":"['Philippines']",
+      "Administrative_Areas_Type":"['administrative:country']",
+      "Administrative_Areas_GID":"[['PHL']]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Displaced.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
       "Event_ID":"gGVWx7x",
       "Num_Min":null,
       "Num_Max":null,
@@ -28349,28 +28393,6 @@
       "Administrative_Areas_Norm":"['United Kingdom']",
       "Administrative_Areas_Type":"['administrative:country']",
       "Administrative_Areas_GID":"[['GBR']]",
-      "ERROR":{
-         "args":[
-            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Displaced.Num_Min"
-         ],
-         "sqlite_errorcode":1299,
-         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
-      }
-   },
-   {
-      "Event_ID":"m5KAVJW",
-      "Num_Min":null,
-      "Num_Max":null,
-      "Num_Approx":null,
-      "Start_Date_Day":null,
-      "Start_Date_Month":null,
-      "Start_Date_Year":2015.0,
-      "End_Date_Day":null,
-      "End_Date_Month":null,
-      "End_Date_Year":2015.0,
-      "Administrative_Areas_Norm":"['Thailand']",
-      "Administrative_Areas_Type":"['administrative:country']",
-      "Administrative_Areas_GID":"[['THA']]",
       "ERROR":{
          "args":[
             "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Displaced.Num_Min"

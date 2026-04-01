@@ -33675,6 +33675,81 @@
       }
    },
    {
+      "Event_ID":"4ngJYMi",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Num_Unit":null,
+      "Num_Inflation_Adjusted":null,
+      "Num_Inflation_Adjusted_Year":null,
+      "Start_Date_Day":4.0,
+      "Start_Date_Month":3.0,
+      "Start_Date_Year":1897.0,
+      "End_Date_Day":4.0,
+      "End_Date_Month":3.0,
+      "End_Date_Year":1897.0,
+      "Administrative_Areas_Norm":"['United States']",
+      "Administrative_Areas_Type":"['administrative:country']",
+      "Administrative_Areas_GID":"[['USA']]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Insured_Damage.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
+      "Event_ID":"4ngJYMi",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Num_Unit":null,
+      "Num_Inflation_Adjusted":null,
+      "Num_Inflation_Adjusted_Year":null,
+      "Start_Date_Day":6.0,
+      "Start_Date_Month":6.0,
+      "Start_Date_Year":1906.0,
+      "End_Date_Day":6.0,
+      "End_Date_Month":6.0,
+      "End_Date_Year":1906.0,
+      "Administrative_Areas_Norm":"['United States']",
+      "Administrative_Areas_Type":"['administrative:country']",
+      "Administrative_Areas_GID":"[['USA']]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Insured_Damage.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
+      "Event_ID":"4ngJYMi",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Num_Unit":null,
+      "Num_Inflation_Adjusted":null,
+      "Num_Inflation_Adjusted_Year":null,
+      "Start_Date_Day":4.0,
+      "Start_Date_Month":8.0,
+      "Start_Date_Year":1958.0,
+      "End_Date_Day":4.0,
+      "End_Date_Month":8.0,
+      "End_Date_Year":1958.0,
+      "Administrative_Areas_Norm":"['United States']",
+      "Administrative_Areas_Type":"['administrative:country']",
+      "Administrative_Areas_GID":"[['USA']]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Insured_Damage.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
       "Event_ID":"5NCwbfN",
       "Num_Min":null,
       "Num_Max":null,
@@ -33825,57 +33900,7 @@
       }
    },
    {
-      "Event_ID":"BTp3FvW",
-      "Num_Min":null,
-      "Num_Max":null,
-      "Num_Approx":null,
-      "Num_Unit":null,
-      "Num_Inflation_Adjusted":null,
-      "Num_Inflation_Adjusted_Year":null,
-      "Start_Date_Day":26.0,
-      "Start_Date_Month":8.0,
-      "Start_Date_Year":2017.0,
-      "End_Date_Day":28.0,
-      "End_Date_Month":8.0,
-      "End_Date_Year":2017.0,
-      "Administrative_Areas_Norm":"['United States']",
-      "Administrative_Areas_Type":"['administrative:country']",
-      "Administrative_Areas_GID":"[['USA']]",
-      "ERROR":{
-         "args":[
-            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Insured_Damage.Num_Min"
-         ],
-         "sqlite_errorcode":1299,
-         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
-      }
-   },
-   {
-      "Event_ID":"BTp3FvW",
-      "Num_Min":null,
-      "Num_Max":null,
-      "Num_Approx":null,
-      "Num_Unit":null,
-      "Num_Inflation_Adjusted":null,
-      "Num_Inflation_Adjusted_Year":null,
-      "Start_Date_Day":26.0,
-      "Start_Date_Month":8.0,
-      "Start_Date_Year":2017.0,
-      "End_Date_Day":26.0,
-      "End_Date_Month":8.0,
-      "End_Date_Year":2017.0,
-      "Administrative_Areas_Norm":"['United States']",
-      "Administrative_Areas_Type":"['administrative:country']",
-      "Administrative_Areas_GID":"[['USA']]",
-      "ERROR":{
-         "args":[
-            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Insured_Damage.Num_Min"
-         ],
-         "sqlite_errorcode":1299,
-         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
-      }
-   },
-   {
-      "Event_ID":"c4HsvUS",
+      "Event_ID":"Rd000KC",
       "Num_Min":null,
       "Num_Max":null,
       "Num_Approx":null,
@@ -33884,13 +33909,188 @@
       "Num_Inflation_Adjusted_Year":null,
       "Start_Date_Day":null,
       "Start_Date_Month":null,
-      "Start_Date_Year":2014.0,
+      "Start_Date_Year":2009.0,
       "End_Date_Day":null,
       "End_Date_Month":null,
-      "End_Date_Year":2014.0,
+      "End_Date_Year":2009.0,
       "Administrative_Areas_Norm":"['United States']",
       "Administrative_Areas_Type":"['administrative:country']",
       "Administrative_Areas_GID":"[['USA']]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Insured_Damage.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
+      "Event_ID":"RdSW0K0",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Num_Unit":null,
+      "Num_Inflation_Adjusted":null,
+      "Num_Inflation_Adjusted_Year":null,
+      "Start_Date_Day":12.0,
+      "Start_Date_Month":2.0,
+      "Start_Date_Year":2014.0,
+      "End_Date_Day":12.0,
+      "End_Date_Month":2.0,
+      "End_Date_Year":2014.0,
+      "Administrative_Areas_Norm":"['Wales']",
+      "Administrative_Areas_Type":"['administrative:state']",
+      "Administrative_Areas_GID":"[['GBR.4_1', 'GBR.1_1']]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Insured_Damage.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
+      "Event_ID":"RdSW0K0",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Num_Unit":null,
+      "Num_Inflation_Adjusted":null,
+      "Num_Inflation_Adjusted_Year":null,
+      "Start_Date_Day":12.0,
+      "Start_Date_Month":2.0,
+      "Start_Date_Year":2014.0,
+      "End_Date_Day":12.0,
+      "End_Date_Month":2.0,
+      "End_Date_Year":2014.0,
+      "Administrative_Areas_Norm":"['England']",
+      "Administrative_Areas_Type":"['administrative:state']",
+      "Administrative_Areas_GID":"[['GBR.1_1', None]]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Insured_Damage.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
+      "Event_ID":"S0xyi0d",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Num_Unit":null,
+      "Num_Inflation_Adjusted":null,
+      "Num_Inflation_Adjusted_Year":null,
+      "Start_Date_Day":null,
+      "Start_Date_Month":null,
+      "Start_Date_Year":2015.0,
+      "End_Date_Day":null,
+      "End_Date_Month":null,
+      "End_Date_Year":2015.0,
+      "Administrative_Areas_Norm":"['Madagascar']",
+      "Administrative_Areas_Type":"['administrative:country']",
+      "Administrative_Areas_GID":"[['MDG']]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Insured_Damage.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
+      "Event_ID":"tD5LZdY",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Num_Unit":null,
+      "Num_Inflation_Adjusted":null,
+      "Num_Inflation_Adjusted_Year":null,
+      "Start_Date_Day":null,
+      "Start_Date_Month":null,
+      "Start_Date_Year":2003.0,
+      "End_Date_Day":null,
+      "End_Date_Month":null,
+      "End_Date_Year":2003.0,
+      "Administrative_Areas_Norm":"['Japan']",
+      "Administrative_Areas_Type":"['administrative:country']",
+      "Administrative_Areas_GID":"[['JPN']]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Insured_Damage.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
+      "Event_ID":"TQhL4Pk",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Num_Unit":null,
+      "Num_Inflation_Adjusted":null,
+      "Num_Inflation_Adjusted_Year":null,
+      "Start_Date_Day":4.0,
+      "Start_Date_Month":7.0,
+      "Start_Date_Year":1969.0,
+      "End_Date_Day":4.0,
+      "End_Date_Month":7.0,
+      "End_Date_Year":1969.0,
+      "Administrative_Areas_Norm":"['United States']",
+      "Administrative_Areas_Type":"['administrative:country']",
+      "Administrative_Areas_GID":"[['USA']]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Insured_Damage.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
+      "Event_ID":"TQhL4Pk",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Num_Unit":null,
+      "Num_Inflation_Adjusted":null,
+      "Num_Inflation_Adjusted_Year":null,
+      "Start_Date_Day":25.0,
+      "Start_Date_Month":12.0,
+      "Start_Date_Year":1969.0,
+      "End_Date_Day":25.0,
+      "End_Date_Month":12.0,
+      "End_Date_Year":1969.0,
+      "Administrative_Areas_Norm":"['United States']",
+      "Administrative_Areas_Type":"['administrative:country']",
+      "Administrative_Areas_GID":"[['USA']]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Insured_Damage.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
+      "Event_ID":"uLcF7xu",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Num_Unit":null,
+      "Num_Inflation_Adjusted":null,
+      "Num_Inflation_Adjusted_Year":null,
+      "Start_Date_Day":12.0,
+      "Start_Date_Month":11.0,
+      "Start_Date_Year":1972.0,
+      "End_Date_Day":14.0,
+      "End_Date_Month":11.0,
+      "End_Date_Year":1972.0,
+      "Administrative_Areas_Norm":"['Germany']",
+      "Administrative_Areas_Type":"['administrative:country']",
+      "Administrative_Areas_GID":"[['DEU']]",
       "ERROR":{
          "args":[
             "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Insured_Damage.Num_Min"
@@ -67850,6 +68050,81 @@
       }
    },
    {
+      "Event_ID":"BTp3FvW",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Num_Unit":null,
+      "Num_Inflation_Adjusted":null,
+      "Num_Inflation_Adjusted_Year":null,
+      "Start_Date_Day":26.0,
+      "Start_Date_Month":8.0,
+      "Start_Date_Year":2017.0,
+      "End_Date_Day":28.0,
+      "End_Date_Month":8.0,
+      "End_Date_Year":2017.0,
+      "Administrative_Areas_Norm":"['United States']",
+      "Administrative_Areas_Type":"['administrative:country']",
+      "Administrative_Areas_GID":"[['USA']]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Insured_Damage.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
+      "Event_ID":"BTp3FvW",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Num_Unit":null,
+      "Num_Inflation_Adjusted":null,
+      "Num_Inflation_Adjusted_Year":null,
+      "Start_Date_Day":26.0,
+      "Start_Date_Month":8.0,
+      "Start_Date_Year":2017.0,
+      "End_Date_Day":26.0,
+      "End_Date_Month":8.0,
+      "End_Date_Year":2017.0,
+      "Administrative_Areas_Norm":"['United States']",
+      "Administrative_Areas_Type":"['administrative:country']",
+      "Administrative_Areas_GID":"[['USA']]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Insured_Damage.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
+      "Event_ID":"c4HsvUS",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Num_Unit":null,
+      "Num_Inflation_Adjusted":null,
+      "Num_Inflation_Adjusted_Year":null,
+      "Start_Date_Day":null,
+      "Start_Date_Month":null,
+      "Start_Date_Year":2014.0,
+      "End_Date_Day":null,
+      "End_Date_Month":null,
+      "End_Date_Year":2014.0,
+      "Administrative_Areas_Norm":"['United States']",
+      "Administrative_Areas_Type":"['administrative:country']",
+      "Administrative_Areas_GID":"[['USA']]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Insured_Damage.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
       "Event_ID":"D5Ae1iU",
       "Num_Min":null,
       "Num_Max":null,
@@ -68100,6 +68375,131 @@
       }
    },
    {
+      "Event_ID":"nq8fTvq",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Num_Unit":null,
+      "Num_Inflation_Adjusted":null,
+      "Num_Inflation_Adjusted_Year":null,
+      "Start_Date_Day":29.0,
+      "Start_Date_Month":2.0,
+      "Start_Date_Year":1952.0,
+      "End_Date_Day":29.0,
+      "End_Date_Month":2.0,
+      "End_Date_Year":1952.0,
+      "Administrative_Areas_Norm":"['United States']",
+      "Administrative_Areas_Type":"['administrative:country']",
+      "Administrative_Areas_GID":"[['USA']]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Insured_Damage.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
+      "Event_ID":"nq8fTvq",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Num_Unit":null,
+      "Num_Inflation_Adjusted":null,
+      "Num_Inflation_Adjusted_Year":null,
+      "Start_Date_Day":14.0,
+      "Start_Date_Month":3.0,
+      "Start_Date_Year":1851.0,
+      "End_Date_Day":14.0,
+      "End_Date_Month":3.0,
+      "End_Date_Year":1851.0,
+      "Administrative_Areas_Norm":"['United States']",
+      "Administrative_Areas_Type":"['administrative:country']",
+      "Administrative_Areas_GID":"[['USA']]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Insured_Damage.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
+      "Event_ID":"nq8fTvq",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Num_Unit":null,
+      "Num_Inflation_Adjusted":null,
+      "Num_Inflation_Adjusted_Year":null,
+      "Start_Date_Day":27.0,
+      "Start_Date_Month":3.0,
+      "Start_Date_Year":1890.0,
+      "End_Date_Day":27.0,
+      "End_Date_Month":3.0,
+      "End_Date_Year":1890.0,
+      "Administrative_Areas_Norm":"['United States']",
+      "Administrative_Areas_Type":"['administrative:country']",
+      "Administrative_Areas_GID":"[['USA']]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Insured_Damage.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
+      "Event_ID":"nq8fTvq",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Num_Unit":null,
+      "Num_Inflation_Adjusted":null,
+      "Num_Inflation_Adjusted_Year":null,
+      "Start_Date_Day":29.0,
+      "Start_Date_Month":4.0,
+      "Start_Date_Year":1909.0,
+      "End_Date_Day":29.0,
+      "End_Date_Month":4.0,
+      "End_Date_Year":1909.0,
+      "Administrative_Areas_Norm":"['United States']",
+      "Administrative_Areas_Type":"['administrative:country']",
+      "Administrative_Areas_GID":"[['USA']]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Insured_Damage.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
+      "Event_ID":"nq8fTvq",
+      "Num_Min":null,
+      "Num_Max":null,
+      "Num_Approx":null,
+      "Num_Unit":null,
+      "Num_Inflation_Adjusted":null,
+      "Num_Inflation_Adjusted_Year":null,
+      "Start_Date_Day":24.0,
+      "Start_Date_Month":3.0,
+      "Start_Date_Year":2023.0,
+      "End_Date_Day":24.0,
+      "End_Date_Month":3.0,
+      "End_Date_Year":2023.0,
+      "Administrative_Areas_Norm":"['United States']",
+      "Administrative_Areas_Type":"['administrative:country']",
+      "Administrative_Areas_GID":"[['USA']]",
+      "ERROR":{
+         "args":[
+            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Insured_Damage.Num_Min"
+         ],
+         "sqlite_errorcode":1299,
+         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
+      }
+   },
+   {
       "Event_ID":"OHHD13s",
       "Num_Min":null,
       "Num_Max":null,
@@ -68266,206 +68666,6 @@
       "Administrative_Areas_Norm":"['United Kingdom']",
       "Administrative_Areas_Type":"['administrative:country']",
       "Administrative_Areas_GID":"[['GBR']]",
-      "ERROR":{
-         "args":[
-            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Insured_Damage.Num_Min"
-         ],
-         "sqlite_errorcode":1299,
-         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
-      }
-   },
-   {
-      "Event_ID":"Rd000KC",
-      "Num_Min":null,
-      "Num_Max":null,
-      "Num_Approx":null,
-      "Num_Unit":null,
-      "Num_Inflation_Adjusted":null,
-      "Num_Inflation_Adjusted_Year":null,
-      "Start_Date_Day":null,
-      "Start_Date_Month":null,
-      "Start_Date_Year":2009.0,
-      "End_Date_Day":null,
-      "End_Date_Month":null,
-      "End_Date_Year":2009.0,
-      "Administrative_Areas_Norm":"['United States']",
-      "Administrative_Areas_Type":"['administrative:country']",
-      "Administrative_Areas_GID":"[['USA']]",
-      "ERROR":{
-         "args":[
-            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Insured_Damage.Num_Min"
-         ],
-         "sqlite_errorcode":1299,
-         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
-      }
-   },
-   {
-      "Event_ID":"RdSW0K0",
-      "Num_Min":null,
-      "Num_Max":null,
-      "Num_Approx":null,
-      "Num_Unit":null,
-      "Num_Inflation_Adjusted":null,
-      "Num_Inflation_Adjusted_Year":null,
-      "Start_Date_Day":12.0,
-      "Start_Date_Month":2.0,
-      "Start_Date_Year":2014.0,
-      "End_Date_Day":12.0,
-      "End_Date_Month":2.0,
-      "End_Date_Year":2014.0,
-      "Administrative_Areas_Norm":"['Wales']",
-      "Administrative_Areas_Type":"['administrative:state']",
-      "Administrative_Areas_GID":"[['GBR.4_1', 'GBR.1_1']]",
-      "ERROR":{
-         "args":[
-            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Insured_Damage.Num_Min"
-         ],
-         "sqlite_errorcode":1299,
-         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
-      }
-   },
-   {
-      "Event_ID":"RdSW0K0",
-      "Num_Min":null,
-      "Num_Max":null,
-      "Num_Approx":null,
-      "Num_Unit":null,
-      "Num_Inflation_Adjusted":null,
-      "Num_Inflation_Adjusted_Year":null,
-      "Start_Date_Day":12.0,
-      "Start_Date_Month":2.0,
-      "Start_Date_Year":2014.0,
-      "End_Date_Day":12.0,
-      "End_Date_Month":2.0,
-      "End_Date_Year":2014.0,
-      "Administrative_Areas_Norm":"['England']",
-      "Administrative_Areas_Type":"['administrative:state']",
-      "Administrative_Areas_GID":"[['GBR.1_1', None]]",
-      "ERROR":{
-         "args":[
-            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Insured_Damage.Num_Min"
-         ],
-         "sqlite_errorcode":1299,
-         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
-      }
-   },
-   {
-      "Event_ID":"S0xyi0d",
-      "Num_Min":null,
-      "Num_Max":null,
-      "Num_Approx":null,
-      "Num_Unit":null,
-      "Num_Inflation_Adjusted":null,
-      "Num_Inflation_Adjusted_Year":null,
-      "Start_Date_Day":null,
-      "Start_Date_Month":null,
-      "Start_Date_Year":2015.0,
-      "End_Date_Day":null,
-      "End_Date_Month":null,
-      "End_Date_Year":2015.0,
-      "Administrative_Areas_Norm":"['Madagascar']",
-      "Administrative_Areas_Type":"['administrative:country']",
-      "Administrative_Areas_GID":"[['MDG']]",
-      "ERROR":{
-         "args":[
-            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Insured_Damage.Num_Min"
-         ],
-         "sqlite_errorcode":1299,
-         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
-      }
-   },
-   {
-      "Event_ID":"tD5LZdY",
-      "Num_Min":null,
-      "Num_Max":null,
-      "Num_Approx":null,
-      "Num_Unit":null,
-      "Num_Inflation_Adjusted":null,
-      "Num_Inflation_Adjusted_Year":null,
-      "Start_Date_Day":null,
-      "Start_Date_Month":null,
-      "Start_Date_Year":2003.0,
-      "End_Date_Day":null,
-      "End_Date_Month":null,
-      "End_Date_Year":2003.0,
-      "Administrative_Areas_Norm":"['Japan']",
-      "Administrative_Areas_Type":"['administrative:country']",
-      "Administrative_Areas_GID":"[['JPN']]",
-      "ERROR":{
-         "args":[
-            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Insured_Damage.Num_Min"
-         ],
-         "sqlite_errorcode":1299,
-         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
-      }
-   },
-   {
-      "Event_ID":"TQhL4Pk",
-      "Num_Min":null,
-      "Num_Max":null,
-      "Num_Approx":null,
-      "Num_Unit":null,
-      "Num_Inflation_Adjusted":null,
-      "Num_Inflation_Adjusted_Year":null,
-      "Start_Date_Day":4.0,
-      "Start_Date_Month":7.0,
-      "Start_Date_Year":1969.0,
-      "End_Date_Day":4.0,
-      "End_Date_Month":7.0,
-      "End_Date_Year":1969.0,
-      "Administrative_Areas_Norm":"['United States']",
-      "Administrative_Areas_Type":"['administrative:country']",
-      "Administrative_Areas_GID":"[['USA']]",
-      "ERROR":{
-         "args":[
-            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Insured_Damage.Num_Min"
-         ],
-         "sqlite_errorcode":1299,
-         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
-      }
-   },
-   {
-      "Event_ID":"TQhL4Pk",
-      "Num_Min":null,
-      "Num_Max":null,
-      "Num_Approx":null,
-      "Num_Unit":null,
-      "Num_Inflation_Adjusted":null,
-      "Num_Inflation_Adjusted_Year":null,
-      "Start_Date_Day":25.0,
-      "Start_Date_Month":12.0,
-      "Start_Date_Year":1969.0,
-      "End_Date_Day":25.0,
-      "End_Date_Month":12.0,
-      "End_Date_Year":1969.0,
-      "Administrative_Areas_Norm":"['United States']",
-      "Administrative_Areas_Type":"['administrative:country']",
-      "Administrative_Areas_GID":"[['USA']]",
-      "ERROR":{
-         "args":[
-            "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Insured_Damage.Num_Min"
-         ],
-         "sqlite_errorcode":1299,
-         "sqlite_errorname":"SQLITE_CONSTRAINT_NOTNULL"
-      }
-   },
-   {
-      "Event_ID":"uLcF7xu",
-      "Num_Min":null,
-      "Num_Max":null,
-      "Num_Approx":null,
-      "Num_Unit":null,
-      "Num_Inflation_Adjusted":null,
-      "Num_Inflation_Adjusted_Year":null,
-      "Start_Date_Day":12.0,
-      "Start_Date_Month":11.0,
-      "Start_Date_Year":1972.0,
-      "End_Date_Day":14.0,
-      "End_Date_Month":11.0,
-      "End_Date_Year":1972.0,
-      "Administrative_Areas_Norm":"['Germany']",
-      "Administrative_Areas_Type":"['administrative:country']",
-      "Administrative_Areas_GID":"[['DEU']]",
       "ERROR":{
          "args":[
             "NOT NULL constraint failed: Instance_Per_Administrative_Areas_Insured_Damage.Num_Min"
