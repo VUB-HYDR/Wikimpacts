@@ -317,6 +317,6 @@ if __name__ == "__main__":
     ym_matches.to_csv(f"Visualizations/wikimpacts_v1_re_v2/wiki_vs_em_dat_{args.impact_category}.csv")
 
    
-    event_impact_benchmark_comparison(ym_matches, f"(d) Wikimpacts 1.0 vs EM-DAT {args.impact_category} impact comparison",args.impact_category,args.filepath)
+    event_impact_benchmark_comparison(ym_matches, f"(c) Wikimpacts 1.0 vs EM-DAT {args.impact_category} impact comparison",args.impact_category,args.filepath)
     
     

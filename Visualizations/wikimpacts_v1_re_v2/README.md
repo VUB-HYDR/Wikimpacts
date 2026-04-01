@@ -1,1 +1,0 @@
-This folder contains the figures for Wikimapcts V1, and for journal NHESS
