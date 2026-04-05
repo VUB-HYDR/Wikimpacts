@@ -13,7 +13,7 @@ from .log_utils import Logging
 
 
 class NormalizeLocation:
-    def __init__(self, gadm_path: str, unsd_path: str):
+    def __init__(self, gadm_path: str, unsd_path: str, gaul_path:str):
         self.geopy_cache_path = "Database/data/geopy_cache"
         requests_cache.install_cache(
             self.geopy_cache_path, allowable_methods=["GET"], allowable_codes=[200], filter_fn=self._rate_limiter
@@ -22,6 +22,7 @@ class NormalizeLocation:
         self.geocode = geolocator.geocode
         self.gadm = pd.read_csv(gadm_path, sep=None, engine="python")
         self.unsd = pd.read_csv(unsd_path, sep=None, engine="python")
+        self.gaul = pd.read_csv(gaul_path, sep=None, engine="python")
 
         for col in self.unsd.columns:
             if "Code" not in col:
@@ -335,7 +336,12 @@ class NormalizeLocation:
             if cardinals and not is_country:
                 normalized_area_name = f"{normalized_area_name}:<{cardinals}>"
             geojson = json.dumps(location.raw["geojson"]) if isinstance(location.raw["geojson"], dict) else None
-            return (normalized_area_name, f'{location.raw["type"]}:{location.raw["addresstype"]}', geojson)
+            if "taiwan" in normalized_area_name.lower(): 
+               row = self.gaul[self.gaul['adm1_name'] == "Taiwan Sheng"]
+               location.raw["type"] = row.iloc[0]["status"]
+               return (normalized_area_name, location.raw["type"], geojson)
+            else: 
+                return (normalized_area_name, f'{location.raw["type"]}:{location.raw["addresstype"]}', geojson)
 
         except BaseException as err:
             self.logger.error(
@@ -536,7 +542,7 @@ class NormalizeLocation:
     def get_gid_0(self, gid: str) -> str | None:
         """Returns a country name by GID_0"""
         try:
-            assert len(gid) == 3
+            assert len(gid) == 3 and gid.isalpha()
             gid_0 = list(set(self.gadm.loc[self.gadm["GID_0"] == gid]["NAME_0"]))
             assert len(gid_0) == 1
             return gid_0[0]

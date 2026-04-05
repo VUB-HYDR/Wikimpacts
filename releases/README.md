@@ -14,6 +14,9 @@
 | [releases/impactdb.v1.0.1.raw.db](impactdb.v1.0.1.raw.db)  | A **raw database** that improves on [releases/impactdb.v1.0.raw.db](impactdb.v1.0.0.raw.db) by adding stricter validation. |
 | [releases/impactdb.v1.0.2.raw.db](impactdb.v1.0.2.raw.db)  | A **raw database** that improves on [releases/impactdb.v1.0.1.raw.db](impactdb.v1.0.1.raw.db) that fixes a major bug in raw=<v.1.1 where None/NULL values end up inside the databases in non-nullable columns |
 | [releases/impactdb.v1.0.3.raw.db](impactdb.v1.0.3.raw.db) | A **raw database** that modifies the schema of [releases/impactdb.v1.0.2.raw.db](impactdb.v1.0.2.raw.db) so that end years of events are nullable.  |
+| [releases/impactdb.v1.1.1.raw.db](releases/impactdb.v1.1.0.dg_filled.db) A **raw database** | that removing the 195 multi-event articles identified, and with known geo-location error fixed |
+
+
 
 ## Data-Gap Filled
 
@@ -24,6 +27,7 @@
 | [releases/impactdb.v1.0.2.dg_filled.db](releases/impactdb.v1.0.2.dg_filled.db) **Inflation to 2024 USD version** | A **post-processed** database that improves on [releases/impactdb.v1.0.1.dg_filled.db](releases/impactdb.v1.0.1.dg_filled.db) by removing events that have no L1/L2/L3 impacts (ie. all impact data in L1 is NULL), most currencies are converted to USD in the database and inflated to 2024 value. |
 | [releases/impactdb.v1.0.3.dg_filled.db](releases/impactdb.v1.0.3.dg_filled.db) **Inflation to 2024 EUR version** | A **post-processed** database that convert 2024 USD to 2024 EUR on [releases/impactdb.v1.0.2.dg_filled.db](releases/impactdb.v1.0.2.dg_filled.db) by using a constant conversion rate in 2024 |
 | [releases/impactdb.v1.1.0.dg_filled.db](releases/impactdb.v1.1.0.dg_filled.db) **Inflation to 2024 EUR version** | A new version of [releases/impactdb.v1.0.3.dg_filled.db](releases/impactdb.v1.0.3.dg_filled.db) with bug fixes (primary and foreign key relations in the database) |
+| [releases/impactdb.v1.1.1.dg_filled.db](releases/impactdb.v1.1.1.dg_filled.db) **Inflation to 2024 USD version** | A new version of [releases/impactdb.v1.0.2.dg_filled.db](releases/impactdb.v1.0.2.dg_filled.db) with removing the 195 multi-event articles identified, 7 events without Start_Date_Year or impacts, and with known geo-location error fixed|
 
 
 ### Additional files and metadata

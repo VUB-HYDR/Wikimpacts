@@ -1,6 +1,7 @@
 # ignore raw files
 **tmp
-
+# ignore log files
+**.log
 # ignore notebooks
 **.ipynb
 
@@ -12,6 +13,9 @@
 
 #ignore .jsonl file for batch process
 **/*.jsonl
+
+#ignore batch file for HPC run 
+**batch.sh
 
 
 # ... except for this excel file (gold flat-format annotation table)

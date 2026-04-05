@@ -1,0 +1,1 @@
+Within the Wikimpacts 1.0 database visualization, we provide a detailed comparison of impact values between Wikimpacts 1.0 and EM-DAT. The four impact categories analyzed are deaths, injuries, homelessness, and total economic damage. For total economic damage, we report the original damage values and restrict the analysis to entries denominated in USD.
